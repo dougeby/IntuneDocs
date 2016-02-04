@@ -61,12 +61,9 @@
 ### [Configure apps with mobile app configuration policies in Microsoft Intune](Configure-apps-with-mobile-app-configuration-policies-in-Microsoft-Intune.md)
 
 ## [Protect data and devices with Microsoft Intune](Protect-data-and-devices-with-Microsoft-Intune.md)
-
-
-#### [Network infrastructure requirements for Microsoft Intune](Network-infrastructure-requirements-for-Microsoft-Intune.md)
-
-##### [Set up email access for iOS devices using Microsoft Intune](Set-up-email-access-for-iOS-devices-using-Microsoft-Intune.md)
-#### [Specify corporate-owned devices with international mobile equipment identity (IMEI) numbers](Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md)
+### [Network infrastructure requirements for Microsoft Intune](Network-infrastructure-requirements-for-Microsoft-Intune.md)
+### [Set up email access for iOS devices using Microsoft Intune](Set-up-email-access-for-iOS-devices-using-Microsoft-Intune.md)
+### [Specify corporate-owned devices with international mobile equipment identity (IMEI) numbers](Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md)
 ## [Protect apps with Intune](Configure-and-manage-devices-with-Microsoft-Intune.md)
 
 ### [Configure data loss prevention app policies with Microsoft Intune](Configure-data-loss-prevention-app-policies-with-Microsoft-Intune.md)
