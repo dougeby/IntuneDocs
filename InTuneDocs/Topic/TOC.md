@@ -144,15 +144,14 @@
 ### [Use groups to manage users and devices with Microsoft Intune](Use-groups-to-manage-users-and-devices-with-Microsoft-Intune.md)
 ### [Maintain Microsoft Intune](Maintain-Microsoft-Intune.md)
 ### [Release notes for Microsoft Intune](Release-notes-for-Microsoft-Intune.md)
-# WIT_WD_LCAnotices
+
 ## [What Happens if You Add a Personal Device to the Company Portal](What-Happens-if-You-Add-a-Personal-Device-to-the-Company-Portal.md)
 ## [What Happens if You Remove a Personal Device Using the Company Portal](What-Happens-if-You-Remove-a-Personal-Device-Using-the-Company-Portal.md)
 
-# Intune App SDK
+
 ## [Microsoft Intune App SDK](Microsoft-Intune-App-SDK.md)
 ### [Overview of the Microsoft Intune App SDK](Overview-of-the-Microsoft-Intune-App-SDK.md)
 ### [Getting Started With the Microsoft Intune App SDK](Getting-Started-With-the-Microsoft-Intune-App-SDK.md)
 ### [Microsoft Intune App SDK Frequently Asked Questions](Microsoft-Intune-App-SDK-Frequently-Asked-Questions.md)
 ### [Microsoft Intune App SDK for iOS Developer Guide](Microsoft-Intune-App-SDK-for-iOS-Developer-Guide.md)
 ### [Microsoft Intune App SDK for Android Developer Guide](Microsoft-Intune-App-SDK-for-Android-Developer-Guide.md)
-### Testing upload to the git repo
