@@ -148,7 +148,7 @@
 ## [What Happens if You Add a Personal Device to the Company Portal](What-Happens-if-You-Add-a-Personal-Device-to-the-Company-Portal.md)
 ## [What Happens if You Remove a Personal Device Using the Company Portal](What-Happens-if-You-Remove-a-Personal-Device-Using-the-Company-Portal.md)
 
-# Intune App SDK
+
 ## [Microsoft Intune App SDK](Microsoft-Intune-App-SDK.md)
 ### [Overview of the Microsoft Intune App SDK](Overview-of-the-Microsoft-Intune-App-SDK.md)
 ### [Getting Started With the Microsoft Intune App SDK](Getting-Started-With-the-Microsoft-Intune-App-SDK.md)
