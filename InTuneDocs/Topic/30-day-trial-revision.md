@@ -165,4 +165,3 @@ If you have already set up your Intune trial, you can skip the sections that don
 
 ## See Also
 [Get started with a paid subscription to Microsoft Intune](../Topic/Get-started-with-a-paid-subscription-to-Microsoft-Intune.md)
-
