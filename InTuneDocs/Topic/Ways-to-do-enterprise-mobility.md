@@ -10,6 +10,7 @@ ms.assetid: 2d91b8b5-bf44-4562-ab4a-6611584f9674
 author: robstackmsft
 ---
 # Ways to do enterprise mobility
+[Saldana] Test. Please delete me.
 Microsoft provides several options for managing your mobile devices. We’ve provided information on this page to help you decide between these different options for meeting your enterprise mobility needs:
 
 -   [Choose between Intune and MDM for Office 365](#BKMK_MDMOfferings)
