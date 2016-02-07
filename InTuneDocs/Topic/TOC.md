@@ -26,12 +26,17 @@
 ### [Start a Microsoft Intune trial and deploy iOS PIN policy](Start-a-Microsoft-Intune-trial-and-deploy-iOS-PIN-policy.md)
 
 # Plan & Design
+
 ## [Plan your user and device groups](Plan-your-user-and-device-groups.md)
 ## [Plan for app deployment in Microsoft Intune](Plan-for-app-deployment-in-Microsoft-Intune.md)
 ## [Control what admins can see in the Microsoft Intune admin console](Control-what-admins-can-see-in-the-Microsoft-Intune-admin-console.md)
+## [Architecture guidance for protecting company email and documents](Architecture-guidance-for-protecting-company-email-and-documents.md)
 ## [Reference for Tenant Administrator accounts for Microsoft Intune](Reference-for-Tenant-Administrator-accounts-for-Microsoft-Intune.md)
 
+
 # Deploy & Use
+
+## [Learn how to deploy a solution for protecting company email and documents](Learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
 ## [Manage device compliance policies for Microsoft Intune](Manage-device-compliance-policies-for-Microsoft-Intune.md)
 ### Create a compliance policy
 ### Deploy & monitor a compliance policy
@@ -112,45 +117,3 @@
 #### [Troubleshoot client setup in Microsoft Intune](Troubleshoot-client-setup-in-Microsoft-Intune.md)
 #### [Troubleshoot software updates in Microsoft Intune](Troubleshoot-software-updates-in-Microsoft-Intune.md)
 #### [Troubleshoot email profiles in Microsoft Intune](Troubleshoot-email-profiles-in-Microsoft-Intune.md)
-
-# EM or Intune top-level scenarois
-## [Architecture guidance for protecting company email and documents](Architecture-guidance-for-protecting-company-email-and-documents.md)
-## [Learn how to deploy a solution for protecting company email and documents](Learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
-
-# Other topics not in TOC
-## [Start using Microsoft Intune](Start-using-Microsoft-Intune.md)
-### [Configure apps with Microsoft Intune](Configure-apps-with-Microsoft-Intune.md)
-#### [Configure and deploy mobile application management policies in the Microsoft Intune console](Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md)
-#### [Use conditional access with Intune and Configuration Manager](Use-conditional-access-with-Intune-and-Configuration-Manager.md)
-#### [End-user experience of conditional access](End-user-experience-of-conditional-access.md)
-## [Technical reference for Microsoft Intune](Technical-reference-for-Microsoft-Intune.md)
-### [Use policies to manage computers and mobile devices with Microsoft Intune](Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
-#### [Windows Phone configuration policy settings in Microsoft Intune](Windows-Phone-configuration-policy-settings-in-Microsoft-Intune.md)
-#### [Windows configuration policy settings in Microsoft Intune](Windows-configuration-policy-settings-in-Microsoft-Intune.md)
-#### [Android configuration policy settings in Microsoft Intune](Android-configuration-policy-settings-in-Microsoft-Intune.md)
-#### [iOS configuration policy settings in Microsoft Intune](iOS-configuration-policy-settings-in-Microsoft-Intune.md)
-#### [Mac OS X configuration policy settings in Microsoft Intune](Mac-OS-X-configuration-policy-settings-in-Microsoft-Intune.md)
-#### [Windows 10 configuration policy settings in Microsoft Intune](Windows-10-configuration-policy-settings-in-Microsoft-Intune.md)
-#### [Windows 10 custom policy settings in Microsoft Intune](Windows-10-custom-policy-settings-in-Microsoft-Intune.md)
-##### [Custom URI settings for Windows 10 devices](Custom-URI-settings-for-Windows-10-devices.md)
-#### [Windows Team configuration policy settings in Microsoft Intune](Windows-Team-configuration-policy-settings-in-Microsoft-Intune.md)
-#### [Windows Phone custom policy settings in Microsoft Intune](Windows-Phone-custom-policy-settings-in-Microsoft-Intune.md)
-#### [Android custom policy settings in Microsoft Intune](Android-custom-policy-settings-in-Microsoft-Intune.md)
-#### [iOS custom policy settings in Microsoft Intune](iOS-custom-policy-settings-in-Microsoft-Intune.md)
-#### [Mac OS X custom policy settings in Microsoft Intune](Mac-OS-X-custom-policy-settings-in-Microsoft-Intune.md)
-#### [Exchange ActiveSync policy settings in Microsoft Intune](Exchange-ActiveSync-policy-settings-in-Microsoft-Intune.md)
-#### [Mobile device security policy settings in Microsoft Intune](Mobile-device-security-policy-settings-in-Microsoft-Intune.md)
-#### [Terms and condition policy settings in Microsoft Intune](Terms-and-condition-policy-settings-in-Microsoft-Intune.md)
-### [Use groups to manage users and devices with Microsoft Intune](Use-groups-to-manage-users-and-devices-with-Microsoft-Intune.md)
-### [Maintain Microsoft Intune](Maintain-Microsoft-Intune.md)
-### [Release notes for Microsoft Intune](Release-notes-for-Microsoft-Intune.md)
-
-## [What Happens if You Add a Personal Device to the Company Portal](What-Happens-if-You-Add-a-Personal-Device-to-the-Company-Portal.md)
-## [What Happens if You Remove a Personal Device Using the Company Portal](What-Happens-if-You-Remove-a-Personal-Device-Using-the-Company-Portal.md)
-
-## [Microsoft Intune App SDK](Microsoft-Intune-App-SDK.md)
-### [Overview of the Microsoft Intune App SDK](Overview-of-the-Microsoft-Intune-App-SDK.md)
-### [Getting Started With the Microsoft Intune App SDK](Getting-Started-With-the-Microsoft-Intune-App-SDK.md)
-### [Microsoft Intune App SDK Frequently Asked Questions](Microsoft-Intune-App-SDK-Frequently-Asked-Questions.md)
-### [Microsoft Intune App SDK for iOS Developer Guide](Microsoft-Intune-App-SDK-for-iOS-Developer-Guide.md)
-### [Microsoft Intune App SDK for Android Developer Guide](Microsoft-Intune-App-SDK-for-Android-Developer-Guide.md)
