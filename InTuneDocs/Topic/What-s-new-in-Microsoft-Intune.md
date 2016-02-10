@@ -16,28 +16,28 @@ author: Lindavr
 ### Take advantage of Windows 10 features
 * **Conditional access with Health Attestation Service**
 Intune administrators can now view the status of Windows 10 Device Health Attestation in the Intune Admin console. Device health attestation lets the administrator ensure that client computers have trustworthy BIOS, TPM, and boot software configurations. To support device health attestation, client devices must be running Windows 10 with TPM 2 enabled. Device health attestation displays the number of devices enabled for each of the following:
-	* Early-launch antimalware 
-	* BitLocker 
-	* Secure Boot 
-	* Code Integrity 
+	* Early-launch antimalware
+	* BitLocker
+	* Secure Boot
+	* Code Integrity
 
 	Read [Manage device compliance policies for Microsoft Intune](https://technet.microsoft.com/library/dn705843.aspx) for more details on the device health setting, collected data points, and the health attestation report. The [HAS service details](https://msdn.microsoft.com/en-us/library/dn934876.aspx) explains the service in depth.
 
 * **Windows 10 Passport for Work Policy and certificate management**
 With Intune, you can [integrate with Microsoft Passport for Work](https://technet.microsoft.com/library/mt445510.aspx), which is an alternative sign-in method for Windows 10 that uses Active Directory or an Azure Active Directory account to replace a password, smart card, or virtual smart card. Passport lets you use a user gesture to log in instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
- 
+
 * **VPN for specific apps**
-You can select apps that automatically connect to your corporate network over VPN. Create the list of apps when you set up the VPN profile, as described in Help users connect to their work using VPN profiles with Microsoft Intune. 
+You can select apps that automatically connect to your corporate network over VPN. Create the list of apps when you set up the VPN profile, as described in Help users connect to their work using VPN profiles with Microsoft Intune.
 
 * **Windows 10 Full Wipe support**
 You can now issue a remote full wipe of Windows 10 desktop devices enrolled in Intune through the Intune admin console. Windows 10 full wipe does a factory reset of the device.
 
 
 ### Apple Volume Purchase Program (VPP) update
-Intune can now help you [manage apps you purchased through the Apple Volume Purchase Program (VPP) for Business](https://technet.microsoft.com/library/mt587962.aspx). This includes synchronizing license information between Apple and Intune, and tracking how many copies of each app you have deployed. 
+Intune can now help you [manage apps you purchased through the Apple Volume Purchase Program (VPP) for Business](https://technet.microsoft.com/library/mt587962.aspx). This includes synchronizing license information between Apple and Intune, and tracking how many copies of each app you have deployed.
 
 ### Use IMEI numbers to identify corporate-owned devices
-You can now [import international mobile equipment identity (IMEI) numbers](https://technet.microsoft.com/library/mt631670.aspx) for mobile device platforms that have an IMEI number to help identify corporate-owned mobile devices. Once enrolled in Intune, devices with imported IMEI numbers are tagged as Corporate, which can be used for applying policies that are different than those applied to personally owned devices. 
+You can now [import international mobile equipment identity (IMEI) numbers](https://technet.microsoft.com/library/mt631670.aspx) for mobile device platforms that have an IMEI number to help identify corporate-owned mobile devices. Once enrolled in Intune, devices with imported IMEI numbers are tagged as Corporate, which can be used for applying policies that are different than those applied to personally owned devices.
 
 ### More apps are now compatible with Intune MAM policies
 Additional apps from Microsoft partners are now compatible with Intune mobile application management (MAM) policies (for devices managed by Intune):
@@ -59,24 +59,24 @@ When managing Windows 10 devices, Intune will be able to create and deploy confi
 > [!NOTE]
 > Enterprise data protection is currently being tested with a number of enterprise customers, and will become available to Windows Insiders soon.
 
-## See Also
-[Start using Microsoft Intune](../Topic/Start-using-Microsoft-Intune.md)
-[Microsoft Intune TechNet Library](http://go.microsoft.com/fwlink/?LinkID=247636)
-[Microsoft Intune Product Information](http://go.microsoft.com/fwlink/?LinkID=249135)
-[Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
+## See also
+* [Start using Microsoft Intune](../Topic/Start-using-Microsoft-Intune.md)
+* [Microsoft Intune TechNet Library](http://go.microsoft.com/fwlink/?LinkID=247636)
+* [Microsoft Intune Product Information](http://go.microsoft.com/fwlink/?LinkID=249135)
+* [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 
 
 ## Archive
-[December 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_Dec2015)
-[November 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_Nov2015)
-[October 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_Oct2015)
-[September 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_Sep2015)
-[August 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_Aug2015)
-[July 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_July2015)
+* [December 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_Dec2015)
+* [November 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_Nov2015)
+* [October 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_Oct2015)
+* [September 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_Sep2015)
+* [August 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_Aug2015)
+* [July 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_July2015)
 
 <a name="BKMK_Dec2015"></a>
-## December 2015
-### Changes and updates to Microsoft Company Portal
+### December 2015
+#### Changes and updates to Microsoft Company Portal
 The following changes have been made to the Company Portal in this release.
 
 **Android Company Portal app**
@@ -107,7 +107,7 @@ More information     |  For your users: [Send diagnostic data logs to your IT ad
 
 
 
-    
+
 **iOS Company Portal app**
 * Users can now use Microsoft Outlook or other mail apps to send diagnostic logs to the IT administrator. Previously, only the native app could be used.
 * Support has been improved for Apple's Device Enrollment Program (DEP) and corporate-enrolled devices. For details, see [You are asked to identify your device when you're trying to enroll](https://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_id_your_device).
@@ -118,8 +118,8 @@ More information     |  For your users: [Send diagnostic data logs to your IT ad
 Microsoft automatically collects anonymous data about the performance and use of the company portal to improve Microsoft products and services. End users can turn off data collection by using the Usage Data setting on their device, but administrators have no control over the data collection and cannot change the end user’s selection for this setting.
 
 <a name="BKMK_Nov2015"></a>
-## November 2015
-### App management
+### November 2015
+#### App management
 Intune supports mobile application management (MAM) policies that help prevent corporate data from being leaked to consumer apps or services. Historically, these policies would only be enforced on mobile apps running on devices that were also enrolled for mobile device management (MDM) into Intune.
 
 With this month's update, Intune is expanding its MAM capabilities to new classes of devices. In addition to devices enrolled into Intune, you can now enforce MAM policies on:
@@ -141,7 +141,7 @@ Additionally, here are some highlights and additional information about Intune's
 
 The list of [Microsoft apps you can use with Microsoft Intune mobile application management policies](https://technet.microsoft.com/library/dn708489.aspx) has been updated to show the latest apps.
 
-### Device management
+#### Device management
  **Mac OS X device management**
 With Intune, you can now enroll and manage Mac OS X devices. You can do the following with your Mac OS X devices:
 * Enroll devices to be managed by Intune. See [Set up iOS and Mac management with Microsoft Intune](https://technet.microsoft.com/library/dn408185.aspx).
@@ -166,7 +166,7 @@ You can apply conditional access policies to **all users** in either new or exis
 
 You can also specify that the conditional access policy applies to **all platforms**.  Any client application using the [Active Directory authentication based sign-in (modern authentication)](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/) is subject to the conditional access policy, and if the platform is not supported by Intune, it will be blocked.
 
-### Changes and updates to Microsoft Company Portal
+#### Changes and updates to Microsoft Company Portal
 The following changes have been made to the company portal apps in this release:
 
 * **Android**: A Welcome screen has been added to the Android Company Portal app to help users understand the purpose of the Company Portal app. This screen is intended to reduce downloads of the app by users whose companies are not Intune subscribers.
@@ -183,18 +183,18 @@ In October, we shared that Global Admins (also referred to as Tenant Admins) cou
     * download software that a Global Admin has deployed to the organization
     * find links published by the Global Admin for how to contact their IT department
 
-	[Learn about the Company Portal](https://technet.microsoft.com/library/dn646966.aspx#BKMK_CompanyPortal)  and about [ways to customize the Company Portal](https://technet.microsoft.com/library/dn646983.aspx#BKMK_ConfigureCompanyPortal). 
+	[Learn about the Company Portal](https://technet.microsoft.com/library/dn646966.aspx#BKMK_CompanyPortal)  and about [ways to customize the Company Portal](https://technet.microsoft.com/library/dn646983.aspx#BKMK_ConfigureCompanyPortal).
 * The person who signs up to purchase Intune or EMS on behalf of an organization automatically becomes the first Global Admin in their tenant. This fall, Intune started to auto-assign an Intune or EMS license to that very first Global Admin as part of the move to the [Office 365 Portal](http://portal.office.com/) and retirement of the [Intune Account Portal](http://account.manage.microsoft.com/). Any additional Global Admins added can continue to do day-to-day administration without a separate Intune or EMS license. Acting as an end user and enrolling their own (or corporate) device or downloading software from the company portal would then trigger a need for a license, just like any other user.
-* The change will be phased in and will now start in January, 2016. 
+* The change will be phased in and will now start in January, 2016.
 * For Microsoft Partners, this change should not affect your ability to administer the service on behalf of customers. For end-user tasks, a user will need to have an Intune or EMS license in order to enroll a device and access or download software from the Company Portal.
 
-If you have any questions about this change, feel free to contact your Intune support team: 
+If you have any questions about this change, feel free to contact your Intune support team:
 * [Microsoft Intune support channels](https://technet.microsoft.com/library/jj839713.aspx)
 * [Community support](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)
 
 For general Microsoft Intune feedback, including filing Design Change Requests (DCRs) or bugs, please visit [Intune user voice](https://microsoftintune.uservoice.com/).
 
-### What’s coming
+#### What’s coming
 Keep informed about upcoming developments for Intune with the [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&amp;dropValue=Intune).
 
 **Protect your company data using enterprise data protection (EDP)**
@@ -202,7 +202,7 @@ When managing Windows 10 devices, Intune will be able to create and deploy confi
 
 **Note**: Enterprise data protection is currently being tested with a number of enterprise customers, and will become available to Windows Insiders soon.
 
-### What's new in Intune documentation -- November 2015
+#### What's new in Intune documentation -- November 2015
 **New content**
 * [Mac OS X configuration policy settings in Microsoft Intune](https://technet.microsoft.com/library/mt627823.aspx): How to control device settings and features for Mac OS X devices.
 * [Mac OS X custom policy settings in Microsoft Intune](https://technet.microsoft.com/library/mt627820.aspx): How to deploy Mac OS X device settings that you created using the Apple Configurator tool.
@@ -224,7 +224,7 @@ When managing Windows 10 devices, Intune will be able to create and deploy confi
 * [Manage SharePoint Online access with Microsoft Intune](https://technet.microsoft.com/library/dn705844.aspx): Added information about the ability to apply conditional access policy to all platforms and all users.
 
 <a name="BKMK_Oct2015"></a>
-## October 2015
+### October 2015
 
 ### Updates to conditional access for Exchange on-premises
 **You can now allow access to Exchange Active Sync email for compliant devices enrolled in Intune when the global Exchange rule is set to block or quarantine** Until now, to allow email access on enrolled and compliant devices, you had to set the default global Exchange rule to **Allow**.
@@ -242,7 +242,7 @@ With this service update, this setting is no longer a requirement for conditiona
 
 ### Changes and updates to Microsoft Company Portal apps
 The following changes have been made to the company portal apps in this release:
-**iOS** 
+**iOS**
 New buttons have been added to the Company Portal app to make it easier for users to send diagnostic logs to their IT admins:
 
 |Button name|Where it appears|
@@ -252,7 +252,7 @@ New buttons have been added to the Company Portal app to make it easier for user
 
 
 <a name="BKMK_Sep2015"></a>
-## September 2015
+### September 2015
 ### Mobile device and app management updates
 **All Intune iOS management features now support iOS 9**
 For details about iOS 9 management capabilities, see [this blog post](http://blogs.technet.com/b/microsoftintune/archive/2015/09/09/day-zero-support-for-ios-9-with-intune.aspx).
@@ -292,7 +292,7 @@ The following changes have been made to the company portal apps in this release:
 |[Use policies to manage computers and mobile devices with Microsoft Intune](https://technet.microsoft.com/library/dn743712.aspx)|Updated to include the latest information to help you understand and create policies.|
 
 <a name="BKMK_Aug2015"></a>
-## August 2015
+### August 2015
 ### Mobile device and app management updates
 * **Terms and conditions** for Intune enrollment and company access are [now managed using policies](https://technet.microsoft.com/library/mt405893.aspx). You can target different sets of terms and conditions to meet specific user group requirements. For example, you can  deploy terms and conditions in different languages to geographically defined user groups. You can also [edit your terms and conditions](https://technet.microsoft.com/library/mt405893.aspx#BKMK_TCVers) and specify whether to increment the version numbers, requiring users to agree to the new terms and conditions before they can use the company portal.
 * **A number of Intune policies have been renamed** to make them more consistent across the product and easier for you to find. For a list of all available Intune policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](https://technet.microsoft.com/library/dn743712.aspx).
