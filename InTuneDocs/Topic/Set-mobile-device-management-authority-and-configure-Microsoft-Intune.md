@@ -26,7 +26,7 @@ This guidance assumes Intune is used without System Center Configuration Manager
 
 2.  In the **Tasks** list, click **Set Mobile Device Management Authority**. The **Set MDM Authority** dialog box opens.
 
-    ![](../Image/Intune-MDM-Authority.bmp)
+    ![](../Image/Intune-MDM-Authority.png)
 
 3.  Intune requests confirmation that you want Intune as your MDM authority. Check the box and then click **Yes** to use Microsoft Intune to manage mobile devices.
 
