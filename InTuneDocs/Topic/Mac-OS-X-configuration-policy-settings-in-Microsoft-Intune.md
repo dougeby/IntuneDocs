@@ -31,7 +31,7 @@ Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] **Mac OS X general
 
 4.  Use the information in the following sections to help you supply settings for the policy.
 
-5.  When you are finished, click **Save Policy**.
+5.  When you are done, click **Save Policy**.
 
 The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
 
@@ -57,7 +57,7 @@ In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed
 
 > [!NOTE]
 > A single policy can only contain a list of compliant, or a list of noncompliant apps. You cannot specify both in the same policy.
-> 
+>
 > [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] lets you report devices with noncompliant apps. It does not block installation, or remove noncompliant apps.
 
 |Setting name|Description|
@@ -92,4 +92,3 @@ Use the **Noncompliant Apps Reports** to view the compliance of apps you specifi
 
 ## See Also
 [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
-
