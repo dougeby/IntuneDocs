@@ -11,16 +11,10 @@
 
 ## [What's new](What-s-new-in-Microsoft-Intune.md)
 ## [Get started with a 30-day trial](Get-started-with-a-30-day-trial-of-Microsoft-Intune.md)
-## [Get started with a paid subscription](Get-started-with-a-paid-subscription-to-Microsoft-Intune.md)
+## [Get started with a paid subscription](Get-started-with-a-paid-subscription-to-Microsoft-Intune-test.md)
 ## [Get ready to enroll devices](Get-ready-to-enroll-devices-in-Microsoft-Intune.md)
 ### [Set MDM authority and configure Intune](Set-mobile-device-management-authority-and-configure-Microsoft-Intune.md)
-### [Set up iOS and Mac management](Set-up-iOS-and-Mac-management-with-Microsoft-Intune.md)
-### [Set up Android management](Set-up-Android-management-with-Microsoft-Intune.md)
-### [Set up Windows Phone management](Set-up-Windows-Phone-management-with-Microsoft-Intune.md)
-### [Set up Windows device management](Set-up-Windows-device-management-with-Microsoft-Intune.md)
-### [Enroll corporate-owned devices with the DEM](Enroll-corporate-owned-devices-with-the-Device-Enrollment-Manager-in-Microsoft-Intune.md)
 ### [Mobile device management with Exchange ActiveSync and Microsoft Intune](Mobile-device-management-with-Exchange-ActiveSync-and-Microsoft-Intune.md)
-## [What to tell your end users about Intune](What-to-tell-your-end-users-about-using-Microsoft-Intune.md)
 ## [Common Intune evaluation tasks](Common-Microsoft-Intune-evaluation-tasks.md)
 ### [Start a trial and deploy iOS PIN policy](Start-a-Microsoft-Intune-trial-and-deploy-iOS-PIN-policy.md)
 
