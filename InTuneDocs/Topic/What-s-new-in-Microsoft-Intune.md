@@ -59,12 +59,6 @@ When managing Windows 10 devices, Intune will be able to create and deploy confi
 > [!NOTE]
 > Enterprise data protection is currently being tested with a number of enterprise customers, and will become available to Windows Insiders soon.
 
-## See also
-* [Start using Microsoft Intune](../Topic/Start-using-Microsoft-Intune.md)
-* [Microsoft Intune TechNet Library](http://go.microsoft.com/fwlink/?LinkID=247636)
-* [Microsoft Intune Product Information](http://go.microsoft.com/fwlink/?LinkID=249135)
-* [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
-
 
 ## Archive
 * [December 2015](https://technet.microsoft.com/library/dn292747.aspx#BKMK_Dec2015)
@@ -330,7 +324,7 @@ Users will now see device enrollment instructions after signing in if they have 
 |[Use policies to manage computers and mobile devices with Microsoft Intune](http://technet.microsoft.com/library/dn743712.aspx)|Updated with the newest policies added to Intune.|
 
 <a name="BKMK_Jul2015"></a>
-## July 2015
+### July 2015
 July updates for Intune are limited to behind-the-scenes enhancements that allow us to continue providing you with a high-quality service experience. New features are not included in this service update.
 
 ### Intune Onboarding benefit
@@ -341,3 +335,9 @@ The following changes have been made to the company portal apps in this release.
 **Android**
 
 Microsoft automatically collects anonymous data about the performance and use of the company portal to improve Microsoft products and services. End users can turn off data collection by using the Usage Data setting on their device, but administrators have no control over the data collection and cannot change the end user’s selection for this setting.
+
+### See also
+* [Start using Microsoft Intune](../Topic/Start-using-Microsoft-Intune.md)
+* [Microsoft Intune TechNet Library](http://go.microsoft.com/fwlink/?LinkID=247636)
+* [Microsoft Intune Product Information](http://go.microsoft.com/fwlink/?LinkID=249135)
+* [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
