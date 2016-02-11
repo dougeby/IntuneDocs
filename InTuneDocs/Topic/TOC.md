@@ -11,7 +11,7 @@
 
 ## [What's new](What-s-new-in-Microsoft-Intune.md)
 ## [Get started with a 30-day trial](Get-started-with-a-30-day-trial-of-Microsoft-Intune.md)
-## [Get started with a paid subscription](Get-started-with-a-paid-subscription-to-Microsoft-Intune.md)
+## [Get started with a paid subscription](Get-started-with-a-paid-subscription-to-Microsoft-Intune-test.md)
 ## [Get ready to enroll devices](Get-ready-to-enroll-devices-in-Microsoft-Intune.md)
 ### [Set MDM authority and configure Intune](Set-mobile-device-management-authority-and-configure-Microsoft-Intune.md)
 ### [Mobile device management with Exchange ActiveSync and Microsoft Intune](Mobile-device-management-with-Exchange-ActiveSync-and-Microsoft-Intune.md)
