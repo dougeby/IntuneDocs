@@ -1,6 +1,5 @@
 # Understand & Explore
 
-## [Ways to do enterprise mobility](Ways-to-do-enterprise-mobility.md)
 ## [What to know before you set up Intune](What-to-know-before-setting-up-Microsoft-Intune.md)
 ## [Choose how to manage devices](Introduction-to-Microsoft-Intune.md)
 ### [Mobile device management capabilities](Mobile-device-management-capabilities-in-Microsoft-Intune.md)
