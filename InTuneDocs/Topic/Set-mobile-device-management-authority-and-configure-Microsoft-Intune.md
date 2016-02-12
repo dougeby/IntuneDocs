@@ -10,7 +10,7 @@ ms.assetid: 668d6460-9d34-47a7-8a85-bbe1ed89f8e1
 author: NathBarn
 ---
 # Set mobile device management authority and configure Microsoft Intune
-Before users  can enroll mobile devices with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], the IT administrator must declare [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] as the *mobile device management authority*, add uses, and set up the Company Portal for users.
+Before users  can enroll mobile devices with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], the IT administrator must declare [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] as the *mobile device management authority*, add users, and set up the Company Portal for users.
 
 ## Set MDM authority
 The  *mobile device management authority* defines the management service with permission to manage a set of devices.  Solutions for the mobile device management authority include [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], Configuration Manager with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], or Office 365 MDM solutions.
@@ -26,19 +26,10 @@ This guidance assumes Intune is used without System Center Configuration Manager
 
 2.  In the **Tasks** list, click **Set Mobile Device Management Authority**. The **Set MDM Authority** dialog box opens.
 
-    ![](../Image/Intune-MDM-Authority.png)
+    ![](../Image/Intune-MDM-Authority.bmp)
 
 3.  Intune requests confirmation that you want Intune as your MDM authority. Check the box and then click **Yes** to use Microsoft Intune to manage mobile devices.
 
-4.  Now that Intune is the MDM authority, you can enable device enrollment for devices:
-
-    -   [Enable iOS management](https://technet.microsoft.com/library/dn408185.aspx)
-
-    -   [Enable Android management](https://technet.microsoft.com/library/dn764960.aspx)
-
-    -   [Enable Windows Phone management](https://technet.microsoft.com/library/dn764959.aspx)
-
-    -   [Enable Windows management](https://technet.microsoft.com/library/mt346003.aspx)
 
 ## Prepare to manage mobile devices with Microsoft Intune
 The following steps and configurations let [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] manage devices using the Company Portal.
@@ -59,17 +50,18 @@ The following steps and configurations let [!INCLUDE[wit_nextref](../Token/wit_n
 
     Policies are deployed to groups making group hierarchies a key design considerations. A group’s parent group cannot be changed once the group is created, so the design of your groups hierarchy from the start.
 
-    Key considerations:
-
-    -   **Keep hierarchies simple** - If your organization doesn't require complex hierarchies for targeting devices with policy, use the default groups
-
-    -   **Think top-down** - Use **All Users** and **All devices** as parent groups if you'll want to apply policy applicable to all members
-
-    -   **Ownership** - If your organization has both corporate-owned (COD) and user-owned (BYOD) devices, you can create groups to target these categories separately by making them child groups of **All Users** and **All Groups**
-
-    -   **Use Active Directory** - If you have connected Azure Active Directory (AAD), you can use security groups to refine policy deployment by geography, department, or users known to use certain devices
-
-    -   **No dynamic operating system groups** - Groups cannot dynamically target device operating system. You must use AD or AAD Security groups to define users of device types.
+> [!Tips]
+>    Key considerations:
+>
+>    -   **Keep hierarchies simple** - If your organization doesn't require complex hierarchies for targeting devices with policy, use the default groups
+>
+>    -   **Think top-down** - Use **All Users** and **All devices** as parent groups if you'll want to apply policy applicable to all members
+>
+>    -   **Ownership** - If your organization has both corporate-owned (COD) and user-owned (BYOD) devices, you can create groups to target these categories separately by making them child groups of **All Users** and **All Groups**
+>
+>    -   **Use Active Directory** - If you have connected Azure Active Directory (AAD), you can use security groups to refine policy deployment by geography, department, or users known to use certain devices
+>
+>    -   **No dynamic operating system groups** - Groups cannot dynamically target device operating systems. You must use AD or AAD Security groups to define users of device types.
 
     You can create and manage groups after device enrollment. Creating groups beforehand lets you organize devices and target policy as they come into management.
 
@@ -84,11 +76,11 @@ The following steps and configurations let [!INCLUDE[wit_nextref](../Token/wit_n
 
     -   **Types of policy** - You can use:
 
-        -   [Configuration policies](https://technet.microsoft.com/library/dn743712.aspx) - Set platform-specific management of device settings
+        -   [Configuration policies](../Topic/Configure-apps-with-mobile-app-configuration-policies-in-Microsoft-Intune.md) - Set platform-specific management of device settings
 
-        -   [Compliance, policies](https://technet.microsoft.com/library/dn705843.aspx) - Monitor and remediate  compliance issues for devices
+        -   [Compliance policies](../Topic/Manage-device-compliance-policies-for-Microsoft-Intune.md) - Monitor and remediate compliance issues for devices
 
-        -   [Conditional access policies](https://technet.microsoft.com/library/dn818907.aspx) - Use with compliance issues to enable access to company resources like email and SharePoint
+        -   [Conditional access policies](../Topic/Manage-device-compliance-policies-for-Microsoft-Intune.md) - Use with compliance issues to enable access to company resources like email and SharePoint
 
     -   **Conflict monitoring** - As devices enroll, you can use reports to ensure policies are performing as expected
 
@@ -133,20 +125,16 @@ The following steps and configurations let [!INCLUDE[wit_nextref](../Token/wit_n
 
     You can see [details about  terms and conditions](https://technet.microsoft.com/library/mt405893.aspx).  You can also see which users have accepted the terms and conditions by using the [Terms and conditions reports](https://technet.microsoft.com/library/dn646977.aspx).
 
-7.  **Tell users how to get access to company resources with the company portal**
-    [What to tell your end users about using Microsoft Intune](../Topic/What-to-tell-your-end-users-about-using-Microsoft-Intune.md)
+7.  [Tell users how to get access to company resources with the company portal](../Topic/What-to-tell-your-end-users-about-using-Microsoft-Intune.md)
 
 ## Next steps: Enable device enrollment
 Now that Intune is your MDM authority and you've configured , you can enable device enrollment for devices:
 
--   [Enable iOS management](https://technet.microsoft.com/library/dn408185.aspx)
+    -   [Enable iOS management](../Topic/Set-up-iOS-and-Mac-management-with-Microsoft-Intune.html)
 
--   [Enable Android management](https://technet.microsoft.com/library/dn764960.aspx)
+    -   [Enable Android management](../Topic/Set-up-Android-management-with-Microsoft-Intune.html)
 
--   [Enable Windows Phone management](https://technet.microsoft.com/library/dn764959.aspx)
+    -   [Enable Windows Phone management](../Topic/Set-up-Windows-Phone-management-with-Microsoft-Intune.html)
 
--   [Enable Windows management](https://technet.microsoft.com/library/mt346003.aspx)
-
-## See Also
-[Get ready to enroll devices in Microsoft Intune](../Topic/Get-ready-to-enroll-devices-in-Microsoft-Intune.md)
+    -   [Enable Windows management](../Topic/Set-up-Windows-device-management-with-Microsoft-Intune.html)
 
