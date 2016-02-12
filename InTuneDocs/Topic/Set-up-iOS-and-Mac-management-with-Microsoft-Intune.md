@@ -15,7 +15,7 @@ With [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], you can enable BYOD ("
 As an alternative to enrollment with the Company Portal app, you can also [enroll corporate-owned iOS devices](https://technet.microsoft.com/library/dn408185.aspx#BKMK_CODiOS) .
 
 ## Prepare to manage iOS and Mac devices with Microsoft Intune
-The following steps allow [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] to manage iOS devices using the Company Portal.
+The following steps allow [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] to manage iOS and Mac devices using the Company Portal.
 
 #### Set up iOS and Mac enrollment with Intune
 
@@ -25,7 +25,7 @@ The following steps allow [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] to
 2.  **Get a certificate signing request**
     As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **iOS and Mac OS X** &gt; **Upload an APNs Certificate**, and click **Download the APNs certificate request**. Save the certificate signing request (.csr) file locally. The .csr file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
 
-    ![](../Image/Intune-iOS-enrollment-with-APNS.bmp)
+    ![](../Image/Intune-iOS-enrollment-with-APNS.png)
 
 3.  **Get an Apple Push Notification service certificate**
     Go to the [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844) and sign in with your company Apple ID to create the APNs certificate using the .csr file. This Apple ID must be used in future to renew your APNs certificate. Download the APNs (.pem) certificate and save the file locally. This APNs certificate file is used to establish a trust relationship between the Apple Push Notification server and Intune’s mobile device management authority.
@@ -47,11 +47,11 @@ You can enroll corporate-enrolled iOS devices in three ways:
 
 -   **Direct Enrollment** – Creates an Apple Configurator-compliant file for use during device preparation. The enrolled device isn’t factory reset. This method cannot be used for DEP enrollment. This method only works if user affiliation is set to "No user affinity."
 
-> [!CAUTION]
-> Devices enrolled with these methods require the Intune Company Portal app to enable certain Intune capabilities such as [Conditional Access](https://technet.microsoft.com/library/dn818907.aspx) and [Mobile Application Management](https://technet.microsoft.com/library/dn878026.aspx). Additional steps may be necessary to properly configure the Company Portal app. [Learn more](https://blogs.technet.microsoft.com/intunesupport/2015/12/28/update-to-company-portal-brings-benefits-to-corporate-owned-ios-devices/)
+> [!NOTE]
+> Devices enrolled with these methods require the Intune Company Portal app to enable certain Intune capabilities such as [Conditional Access](Manage-access-to-email-and-SharePoint-with-Microsoft-Intune.md) and [Mobile Application Management](Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md). Additional steps may be necessary to properly configure the Company Portal app. [Learn more](https://blogs.technet.microsoft.com/intunesupport/2015/12/28/update-to-company-portal-brings-benefits-to-corporate-owned-ios-devices/)
 
 ### <a name="BKMK_DEP"></a>Apple DEP  management for iOS devices with Microsoft Intune
-To manage corporate-owned iOS devices with Apple’s Device Enrollment Program (DEP), your organization must join Apple DEP and acquire devices through that program. Details of that process are available at:  [https://deploy.apple.com](https://deploy.apple.com). Advantages of the program include hands-free set up devices without USB-connecting each device to a computer.
+To manage corporate-owned iOS devices with Apple’s Device Enrollment Program (DEP), your organization must join Apple DEP and acquire devices through that program. Details of that process are available at:  [https://deploy.apple.com](https://deploy.apple.com). Advantages of the program include hands-free set up of devices without USB-connecting each device to a computer.
 
 Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token from Apple. This token allows Intune to sync information about DEP-participating devices owned by your corporation. It also permits Intune to perform Enrollment Profile uploads to Apple and to assign devices to those profiles.
 
@@ -90,24 +90,24 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
 
 8.  **Distribute devices to users**
     Your corporate-owned devices can now be distributed to users. When an iOS device is turned on it will be enrolled for management by Intune.
-    
+
 ### <a name="BKMK_SAE"></a>Setup Assistant  enrollment for iOS devices with Microsoft Intune
 Using Apple Configurator you can factory reset iOS devices and prepares them for setup by the device’s new user.  This method requires you to USB-connect the iOS device to a Mac computer to setup corporate enrollment and assumes you are using Apple Configurator 2.0.
 
 **Prerequisites**
 * Physical access to iOS devices - Devices must be unconfigured (factory reset) without password protection
 * Device serial numbers - [How to get an iOS serial number](https://support.apple.com/en-us/HT204308)
-* USB connection cables 
-* Mac computer with [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 
- 
+* USB connection cables
+* Mac computer with [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)
+
 
 #### <a name="BKMK_AC1"></a>Enable Setup Assistant enrollment with Intune
 
-1.  **Create mobile device group** (Optional) 
-    If your business requires mobile device groups to help manage devices, create those groups. [Use groups to manage users and devices with Microsoft Intune](../Topic/Use-groups-to-manage-users-and-devices-with-Microsoft-Intune.md). 
+1.  **Create mobile device group** (Optional)
+    If your business requires mobile device groups to help manage devices, create those groups. [Use groups to manage users and devices with Microsoft Intune](../Topic/Use-groups-to-manage-users-and-devices-with-Microsoft-Intune.md).
 
 2.  **Create a profile for devices**
-    A device enrollment profile defines the settings applied to a group of devices. If you have not already, create a device enrollment profile for iOS devices enrolled using Apple Configurator. 
+    A device enrollment profile defines the settings applied to a group of devices. If you have not already, create a device enrollment profile for iOS devices enrolled using Apple Configurator.
 
     ###### To create a profile
 
@@ -121,7 +121,7 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
         -   **Enrollment Details** – Specifies how devices are enrolled.
 
-            -   **Prompt for user affinity** – The iOS device can be affiliated with a user during initial setup and could then be permitted to access company data and email as that user. For most Setup Assistant scenarios, use **Prompt for user affinity**. 
+            -   **Prompt for user affinity** – The iOS device can be affiliated with a user during initial setup and could then be permitted to access company data and email as that user. For most Setup Assistant scenarios, use **Prompt for user affinity**.
             This mode supports a number of scenarios:
 
                 -   **Corporate-owned personal device** – “Choose Your Own Device” (CYOD) Similar to privately owned or personal devices but the administrator has certain privileges including permission to wipe, reset, administer, and unenroll the device. The device’s user can install apps and has most other permissions for device use where not blocked by management policy.
@@ -131,7 +131,7 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
             -   **No user affinity** – The device is user-less. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation are disabled or won’t work.
 
         -   **Device group pre-assignment** – All devices deployed this profile will initially belong to this group. You can reassign devices after enrollment.
-        
+
           -  **Device Enrollment Program** - The Apple Device Enrollment Program (DEP) cannot be used with Setup Assistant enrollment. Ensure the toggle is set to **off**.
 
     3.  Click **Save Profile** to add the profile.
@@ -167,38 +167,38 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
 6.  **Export a profile to deploy to iOS devices**
     In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then select the device profile to deploy to mobile devices. Click **Export…** in the taskbar. Copy and save the **Profile URL**. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
-    
+
     > [!NOTE]
-    > The enrollment profile URL is valid for two weeks from when it is exported. After two, you must export a new enrollment profile URL to enroll iOS devices with Setup Assistant. 
+    > The enrollment profile URL is valid for two weeks from when it is exported. After two, you must export a new enrollment profile URL to enroll iOS devices with Setup Assistant.
 
 7.  **Prepare the device with Apple Configurator**
     iOS devices are connected to the Mac computer and enrolled for mobile device management.
 
     1.  On a Mac computer, open **Apple Configurator 2**. In the menu bar, click **Apple Configurator 2**, and click **Preferences**.
-    
+
     2. In the preferences pane, select **Servers** and click the “+” symbol below the left pane to launch the MDM Server wizard. Click **Next**.
-    
+
     3. Enter the **Name** and **Enrollment URL** for the MDM server from Step #6 above. For the Enrollment URL enter the enrollment profile URL exported from Intune. Click **Next**.  
-    
+
        If you receive a warning about trust profile requirements for Apple TV, you may safely cancel the **Trust Profile** option by clicking the grey "X". You can also safely disregard any Anchor certificate warning. To continue, click **Next** until the wizard is complete.
-    
-    4.  On the **Servers**  pane, click “Edit” beside the new server’s profile. Ensure that the Enrollment URL exactly matches the URL exported from Intune. Reenter the original URL if it is different and **Save** the enrollment profile exported from Intune. 
+
+    4.  On the **Servers**  pane, click “Edit” beside the new server’s profile. Ensure that the Enrollment URL exactly matches the URL exported from Intune. Reenter the original URL if it is different and **Save** the enrollment profile exported from Intune.
 
     5.  Connect the iOS mobile devices to the Apple computer with a USB adapter.
-    
+
         > [!WARNING]
         > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and power it on. As a best practice, devices should be at the **Hello** screen when you start Setup Assistant.
 
     6.  Click **Prepare**. On the **Prepare iOS Device** pane, select **Manual** and then click **Next**.
-    
+
     7. On the **Enroll in MDM Server** pane, select the server name you created and then click **Next**.
-    
+
     8. On the **Supervise Devices** pane, select the level of supervision, and then click **Next**.
-    
+
     9. On the **Create an Organization** pane, choose the **Organization** or create a new organization,  and then click **Next**.
-    
+
     10. On the **Configure iOS Setup Assistant** pane, choose the steps presented to the user, and then click **Prepare**. If prompted, authenticate to update trust settings.  
-    
+
     11. When the iOS device finishes preparing, you can disconnect the USB cable.  
 
 8.  **Distribute devices**
@@ -228,7 +228,7 @@ Using Apple Configurator you can enroll iOS devices for management without reset
 
     3.  Click **Save Profile** to add the profile.
 
-2.  **Add iOS devices to enroll with Apple Configurator** 
+2.  **Add iOS devices to enroll with Apple Configurator**
     In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Groups** &gt; **All Devices** &gt; **Corporate pre-enrolled devices** &gt; **By iOS serial number**, and then click **Add devices…**. You can add devices in two ways:
 
     -   **Upload a CSV file containing serial numbers** – Create a comma-separated value (.csv) list of two columns without a header, limited to 5000 devices or 5MB per csv file.
@@ -261,7 +261,7 @@ Using Apple Configurator you can enroll iOS devices for management without reset
 6.  **Transfer the file**
     Copy the downloaded .mobileconfig file to a Mac computer.
     > [!NOTE]
-    > The enrollment profile URL is valid for two weeks from when it is exported. After two, you must export a new enrollment profile URL to enroll iOS devices with Setup Assistant. 
+    > The enrollment profile URL is valid for two weeks from when it is exported. After two, you must export a new enrollment profile URL to enroll iOS devices with Setup Assistant.
 7.  **Prepare the device with Apple Configurator**
     iOS devices are connected to the Mac computer and enrolled for mobile device management.
 
@@ -295,7 +295,3 @@ Using Apple Configurator you can enroll iOS devices for management without reset
 
 10. **Distribute devices**
     The iOS device is now enrolled with Intune and managed.
-
-## See Also
-[Get ready to enroll devices in Microsoft Intune](../Topic/Get-ready-to-enroll-devices-in-Microsoft-Intune.md)
-
