@@ -1,5 +1,5 @@
 ---
-title: Get started with a paid subscription to Microsoft Intune - Step 2
+title: Step 2: Configure a custom domain name
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
