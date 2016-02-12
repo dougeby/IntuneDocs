@@ -1,5 +1,5 @@
 ---
-title: Get started with a paid subscription to Microsoft Intune - Step 3
+title: Step 3: Synchronize Active Directory and add users to Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune

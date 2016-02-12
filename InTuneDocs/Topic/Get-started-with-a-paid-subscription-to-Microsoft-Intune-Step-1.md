@@ -12,7 +12,7 @@ author: Staciebarker
 
 <a name="Step1"></a>
 # Step 1: Sign up or sign in to Intune
-Before  you either sign up or sign in to Intune,  you should consider the following:
+Before  you either sign up or sign in to Intune, you should consider the following:
 
 -   Whether your organization already has a Microsoft Online Services work or school account
 
