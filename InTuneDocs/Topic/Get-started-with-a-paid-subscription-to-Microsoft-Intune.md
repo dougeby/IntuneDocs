@@ -325,6 +325,6 @@ After you complete the initial configuration steps for an Intune  paid subscript
 
 -   **Protecting company resources:** After you've configured Intune and enrolled your devices, you'll want to make sure that you're protecting devices against data loss and other threats. To learn more about protecting resources, see [Protect data and devices with Microsoft Intune](../Topic/Protect-data-and-devices-with-Microsoft-Intune.md).
 
-## See Also
+### See also
 [Start using Microsoft Intune](../Topic/Start-using-Microsoft-Intune.md)
 
