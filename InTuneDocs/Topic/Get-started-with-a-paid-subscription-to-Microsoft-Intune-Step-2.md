@@ -6,10 +6,12 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
-ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
+ms.assetid:
 author: Staciebarker
 ---
-# <a name="BKMK_ConfigureDomain"></a>Step 2: Configure a custom domain name
+
+<a name="BKMK_ConfigureDomain"></a>
+# Step 2: Configure a custom domain name
 By default, [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] uses the domain name that you select when you subscribe to the service, which looks like **&lt;domain&gt;.onmicrosoft.com**. When your organization owns a custom domain, you can configure your instance of [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] to use that domain instead of the domain name provided with your subscription.
 
 Before you create new user accounts or synchronize accounts from your on-premises Active Directory, we strongly recommend that you decide whether to use only the .onmicrosoft.com domain or to add one or more of your custom domain names. If you don't configure a custom domain name and suffix, each user account you import receives the onmicrosoft.com suffix for its user principal name (UPN). Configuring a custom domain before adding users can help simplify the management of user identities for your subscription by enabling users to sign in with the credentials they use to access other domain resources.
