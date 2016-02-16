@@ -10,7 +10,7 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 author: Staciebarker
 ---
 
-# <a name="Step3"></a>Step 5: Create groups to organize users and devices
+# Step 5: Create groups to organize users and devices
 Groups in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics) and use them to perform a wide variety of administrative tasks, from deploying policies for a set of users to deploying applications to a set of devices.
 
 ## Create a device group

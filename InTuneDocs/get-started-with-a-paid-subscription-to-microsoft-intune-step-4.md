@@ -9,7 +9,6 @@ ms.topic: get-started-article
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 author: Staciebarker
 ---
-<a name="BKMK_AssignWitLicenses"></a>
 # Step 4: Manage Intune licenses
 A user must have a license to your Intune subscription before they can sign in to use the service. When users have a license, they are a member of the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] user group. This group includes all users who have a license to use the subscription. **Each user license supports enrolling up to five devices**.
 

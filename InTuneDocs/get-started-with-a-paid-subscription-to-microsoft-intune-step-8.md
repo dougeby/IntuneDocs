@@ -10,7 +10,7 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 author: Staciebarker
 ---
 
-# <a name="Step5"></a>Step 8: Enroll computers in Intune
+# Step 8: Enroll computers in Intune
 You can install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software on computers in the following ways:
 
 -   Users can use an installer provided by the administrator to manually enroll
@@ -21,7 +21,7 @@ You can install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client
 
 Each enrolled computer is linked to the user account that was used to install the client software. Microsoft Intune Endpoint Protection is also installed by default during Intune client installation on computers. Endpoint Protection helps to secure the computers in your organization by providing real-time protection against potential threats, keeping malicious software definitions up to date, and automatically running scheduled scans. For added security, you can also use Intune policies to manage Windows Firewall settings on managed computers.
 
-## What to know before you start:
+## What to know before you start
 
 -   The user must be an administrator on the computer to install the client software.
 

@@ -10,7 +10,7 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 author: Staciebarker
 ---
 
-# <a name="BKMK_ConfigureCompanyPortal"></a>Step 7: Customize the company portal
+# Step 7: Customize the company portal
 The [!INCLUDE[wit_iwportal_1](./includes/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 
 When you customize the company portal, the configurations apply to both the company portal website and company portal apps.
