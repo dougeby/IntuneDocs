@@ -10,12 +10,12 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 author: NathBarn
 ---
 # Set up iOS and Mac management with Microsoft Intune
-With [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], you can enable BYOD ("bring your own device") iOS and Mac OS X device enrollment to give access to company email and apps to iPhone, iPad and Mac users. Once users install the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] company portal app, their devices can be targeted with policy using the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] administration console.  Before you can manage iOS and Mac devices, you must import an Apple Push Notification service (APNs) certificate from Apple. This certificate allows Intune to manage iOS and Mac devices and establishes an accredited and encrypted IP connection with the mobile device management authority services.
+With [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], you can enable BYOD ("bring your own device") iOS and Mac OS X device enrollment to give access to company email and apps to iPhone, iPad and Mac users. Once users install the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] company portal app, their devices can be targeted with policy using the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] administration console.  Before you can manage iOS and Mac devices, you must import an Apple Push Notification service (APNs) certificate from Apple. This certificate allows Intune to manage iOS and Mac devices and establishes an accredited and encrypted IP connection with the mobile device management authority services.
 
 As an alternative to enrollment with the Company Portal app, you can also [enroll corporate-owned iOS devices](https://technet.microsoft.com/library/dn408185.aspx#BKMK_CODiOS) .
 
 ## Prepare to manage iOS and Mac devices with Microsoft Intune
-The following steps allow [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] to manage iOS and Mac devices using the Company Portal.
+The following steps allow [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] to manage iOS and Mac devices using the Company Portal.
 
 #### Set up iOS and Mac enrollment with Intune
 
@@ -25,7 +25,7 @@ The following steps allow [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] to
 2.  **Get a certificate signing request**
     As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **iOS and Mac OS X** &gt; **Upload an APNs Certificate**, and click **Download the APNs certificate request**. Save the certificate signing request (.csr) file locally. The .csr file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
 
-    ![](../Image/Intune-iOS-enrollment-with-APNS.png)
+    ![](/media/Intune-iOS-enrollment-with-APNS.png)
 
 3.  **Get an Apple Push Notification service certificate**
     Go to the [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844) and sign in with your company Apple ID to create the APNs certificate using the .csr file. This Apple ID must be used in future to renew your APNs certificate. Download the APNs (.pem) certificate and save the file locally. This APNs certificate file is used to establish a trust relationship between the Apple Push Notification server and Intune’s mobile device management authority.
@@ -34,7 +34,7 @@ The following steps allow [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] to
     In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **iOS and Mac OS X** &gt; **Upload an APNs Certificate**, and click **Upload the APNs certificate**. **Browse** to the certificate (.pem) file and click **Open** and then enter your **Apple ID**. With the APNs certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices.
 
 5.  **Tell users how to get access to company resources with the company portal**
-    Your users will need to know how to enroll their devices and what to expect once they're brought into management. [What to tell your end users about using Microsoft Intune](../Topic/What-to-tell-your-end-users-about-using-Microsoft-Intune.md)
+    Your users will need to know how to enroll their devices and what to expect once they're brought into management. [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 ## <a name="BKMK_CODiOS"></a>Corporate-owned device (COD) management with Microsoft Intune
 As an alternative to enrollment with the Company Portal app, you can enroll corporate-owned devices purchased from Apple. Intune supports the enrollment of corporate-owned iOS devices using the Apple Device Enrollment Program (DEP) or the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer.
@@ -48,7 +48,7 @@ You can enroll corporate-enrolled iOS devices in three ways:
 -   **Direct Enrollment** – Creates an Apple Configurator-compliant file for use during device preparation. The enrolled device isn’t factory reset. This method cannot be used for DEP enrollment. This method only works if user affiliation is set to "No user affinity."
 
 > [!NOTE]
-> Devices enrolled with these methods require the Intune Company Portal app to enable certain Intune capabilities such as [Conditional Access](Manage-access-to-email-and-SharePoint-with-Microsoft-Intune.md) and [Mobile Application Management](Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md). Additional steps may be necessary to properly configure the Company Portal app. [Learn more](https://blogs.technet.microsoft.com/intunesupport/2015/12/28/update-to-company-portal-brings-benefits-to-corporate-owned-ios-devices/)
+> Devices enrolled with these methods require the Intune Company Portal app to enable certain Intune capabilities such as [Conditional Access](manage-access-to-email-and-sharepoint-with-microsoft-intune.md) and [Mobile Application Management](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md). Additional steps may be necessary to properly configure the Company Portal app. [Learn more](https://blogs.technet.microsoft.com/intunesupport/2015/12/28/update-to-company-portal-brings-benefits-to-corporate-owned-ios-devices/)
 
 ### <a name="BKMK_DEP"></a>Apple DEP  management for iOS devices with Microsoft Intune
 To manage corporate-owned iOS devices with Apple’s Device Enrollment Program (DEP), your organization must join Apple DEP and acquire devices through that program. Details of that process are available at:  [https://deploy.apple.com](https://deploy.apple.com). Advantages of the program include hands-free set up of devices without USB-connecting each device to a computer.
@@ -104,7 +104,7 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 #### <a name="BKMK_AC1"></a>Enable Setup Assistant enrollment with Intune
 
 1.  **Create mobile device group** (Optional)
-    If your business requires mobile device groups to help manage devices, create those groups. [Use groups to manage users and devices with Microsoft Intune](../Topic/Use-groups-to-manage-users-and-devices-with-Microsoft-Intune.md).
+    If your business requires mobile device groups to help manage devices, create those groups. [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
 2.  **Create a profile for devices**
     A device enrollment profile defines the settings applied to a group of devices. If you have not already, create a device enrollment profile for iOS devices enrolled using Apple Configurator.
@@ -126,7 +126,7 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
                 -   **Corporate-owned personal device** – “Choose Your Own Device” (CYOD) Similar to privately owned or personal devices but the administrator has certain privileges including permission to wipe, reset, administer, and unenroll the device. The device’s user can install apps and has most other permissions for device use where not blocked by management policy.
 
-                -   **Device enrollment manager account** – The device is enrolled using a special Intune administrator account. It can be managed as a private account, but only a user who knows the enrollment manager credentials can install apps, wipe, reset, administer, and unenroll the device. For information about enrolling a device shared by many users through a common account, see [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](../Topic/Enroll-corporate-owned-devices-with-the-Device-Enrollment-Manager-in-Microsoft-Intune.md).
+                -   **Device enrollment manager account** – The device is enrolled using a special Intune administrator account. It can be managed as a private account, but only a user who knows the enrollment manager credentials can install apps, wipe, reset, administer, and unenroll the device. For information about enrolling a device shared by many users through a common account, see [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 
             -   **No user affinity** – The device is user-less. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation are disabled or won’t work.
 

@@ -82,7 +82,7 @@ Here are some  challenges that you may encounter in the **Enterprise rollout** p
 
 -   **Challenge:** Users are resistant to change and push back on using new technology.
 
-    **Mitigation:**Use the positive experiences of your pilot users to promote the use of devices managed by [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
+    **Mitigation:**Use the positive experiences of your pilot users to promote the use of devices managed by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
 
 -   **Challenge:** Users feel if they have to be trained, the solution must be hard to use.
 

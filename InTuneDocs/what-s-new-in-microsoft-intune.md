@@ -337,7 +337,7 @@ The following changes have been made to the company portal apps in this release.
 Microsoft automatically collects anonymous data about the performance and use of the company portal to improve Microsoft products and services. End users can turn off data collection by using the Usage Data setting on their device, but administrators have no control over the data collection and cannot change the end user’s selection for this setting.
 
 ### See also
-* [Start using Microsoft Intune](../Topic/Start-using-Microsoft-Intune.md)
+* [Start using Microsoft Intune](start-using-microsoft-intune.md)
 * [Microsoft Intune TechNet Library](http://go.microsoft.com/fwlink/?LinkID=247636)
 * [Microsoft Intune Product Information](http://go.microsoft.com/fwlink/?LinkID=249135)
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)

@@ -11,7 +11,7 @@ author: Staciebarker
 ---
 
 # Get started with a paid subscription to Microsoft Intune
-Whether you start with a 30-day free trial, or start with a paid subscription, Microsoft Intune provides a quick and easy way for you to manage mobile devices and computers in your organization. This getting started topic leads you through the steps of setting up a cloud-only instance of [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)].
+Whether you start with a 30-day free trial, or start with a paid subscription, Microsoft Intune provides a quick and easy way for you to manage mobile devices and computers in your organization. This getting started topic leads you through the steps of setting up a cloud-only instance of [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)].
 
 Getting started with a paid subscription of Intune shares many of the same steps as starting with a [free 30-day trial](https://technet.microsoft.com/library/dn646983.aspx). However in this topic, you'll also cover some additional areas that most people might not need to address in trial deployments, including:
 
@@ -36,7 +36,7 @@ Ready to get started? You'll need the following when starting your paid subscrip
 
 -   A device with a Silverlight-enabled web browser that you can use to access the websites where you'll  create Intune user accounts (the **Intune Account Portal**) and where you'll manage devices, groups, and policies  (the **Intune administration console**).
 
--   A second device with a web browser, which you can use to access the company portal to see how most [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] users will enroll and manage their devices, find and install software, and request help from administrators. Instead of using a second device with a web browser, you can use the “privacy mode” setting on the same browser that you use for [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] administration (for example: in Internet Explorer, you can click **Tools** &gt; **InPrivate Browsing**).
+-   A second device with a web browser, which you can use to access the company portal to see how most [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] users will enroll and manage their devices, find and install software, and request help from administrators. Instead of using a second device with a web browser, you can use the “privacy mode” setting on the same browser that you use for [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] administration (for example: in Internet Explorer, you can click **Tools** &gt; **InPrivate Browsing**).
 
 -   If you have an existing Microsoft Online Services account, you'll need the administrator credentials for that account. If you don’t have such an account, or if you want to use this Intune tenant for evaluation purposes only, you don't need tenant administrator credentials.
 
@@ -44,9 +44,9 @@ Ready to get started? You'll need the following when starting your paid subscrip
 
     |Platform|Certificate Requirements|More information|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 and [!INCLUDE[winphone8_client_1](../Token/winphone8_client_1_md.md)]|No certificate is required for Windows Phone 8.1 users who install the company portal app from the Store. A Symantec certificate is required for Windows Phone 8.0 or to use Intune to deploy the company portal app to Windows Phone 8.1 devices.|This guidance assumes your users get the company portal app from the Store on a Windows Phone 8.1 or later device. For information about Windows Phone 8.0 support, see [Set up Windows Phone management with Microsoft Intune](../Topic/Set-up-Windows-Phone-management-with-Microsoft-Intune.md).|
-    |Windows 10, [!INCLUDE[winblue_winrt_2](../Token/winblue_winrt_2_md.md)], [!INCLUDE[win8RT_client_1](../Token/win8RT_client_1_md.md)], or [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)] devices|There are no certificate requirements for enrolling Windows RT and Windows devices.|[Install the Windows PC client with Microsoft Intune](../Topic/Install-the-Windows-PC-client-with-Microsoft-Intune.md).|
-    |iOS or Mac OS X|Get an Apple Push Notification service certificate.|Request an Apple Push Notification service certificate from Apple, as described here: [Set up iOS and Mac management with Microsoft Intune](../Topic/Set-up-iOS-and-Mac-management-with-Microsoft-Intune.md).|
+    |Windows Phone 8.1 and [!INCLUDE[winphone8_client_1](/includes/winphone8_client_1_md.md)]|No certificate is required for Windows Phone 8.1 users who install the company portal app from the Store. A Symantec certificate is required for Windows Phone 8.0 or to use Intune to deploy the company portal app to Windows Phone 8.1 devices.|This guidance assumes your users get the company portal app from the Store on a Windows Phone 8.1 or later device. For information about Windows Phone 8.0 support, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).|
+    |Windows 10, [!INCLUDE[winblue_winrt_2](/includes/winblue_winrt_2_md.md)], [!INCLUDE[win8RT_client_1](/includes/win8RT_client_1_md.md)], or [!INCLUDE[winblue_client_2](/includes/winblue_client_2_md.md)] devices|There are no certificate requirements for enrolling Windows RT and Windows devices.|[Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).|
+    |iOS or Mac OS X|Get an Apple Push Notification service certificate.|Request an Apple Push Notification service certificate from Apple, as described here: [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).|
 
 
 
@@ -54,7 +54,7 @@ Ready to get started? You'll need the following when starting your paid subscrip
 
 
 ## <a name="Step4"></a>Step 6: Create policies and publish an app
-[!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. If you are planning to use Intune for devices that you configure for production use after the trial, it's absolutely essential that you follow the instructions in [Manage settings and features on your devices with Microsoft Intune policies](../Topic/Manage-settings-and-features-on-your-devices-with-Microsoft-Intune-policies.md) and [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](../Topic/Help-secure-Windows-PCs-with-Endpoint-Protection-for-Microsoft-Intune.md).
+[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. If you are planning to use Intune for devices that you configure for production use after the trial, it's absolutely essential that you follow the instructions in [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) and [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 You can perform two types of app installations using Intune. The first is a **required install**, which automatically deploys the app to managed computers. The other is an **available install**, which deploys the app, or a link to the app, to the Intune company portal so that users can choose whether to install it on their computers or on their mobile devices.
 
@@ -78,7 +78,7 @@ Your policy appears in the list of configuration policies, and has been deployed
 
 #### Publish the Skype app for mobile devices
 
-1.  In the [Intune administration console](https://manage.microsoft.com/), click the **Apps** icon, then click **Apps** &gt; **Add App**. If prompted, enter your [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] credentials.
+1.  In the [Intune administration console](https://manage.microsoft.com/), click the **Apps** icon, then click **Apps** &gt; **Add App**. If prompted, enter your [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] credentials.
 
     > [!NOTE]
     > When you start the **Intune Software Publisher** for the first time, a short delay occurs while the application is installed.
@@ -121,10 +121,10 @@ Your policy appears in the list of configuration policies, and has been deployed
 
 11. Click **Finish**.
 
-The Skype app is now available to install on mobile devices from the company portal, but first you need to install [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] software on computers and mobile devices.
+The Skype app is now available to install on mobile devices from the company portal, but first you need to install [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] software on computers and mobile devices.
 
 ## <a name="BKMK_ConfigureCompanyPortal"></a>Step 7: Customize the company portal
-The [!INCLUDE[wit_iwportal_1](../Token/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
+The [!INCLUDE[wit_iwportal_1](/includes/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 
 When you customize the company portal, the configurations apply to both the company portal website and company portal apps.
 
@@ -146,20 +146,20 @@ When you customize the company portal, the configurations apply to both the comp
     ||Website name|40|This name is the friendly name that is displayed for the URL to the support website.<br /><br />If you specify a support website URL and no friendly name, then **Go to IT website** is displayed on the **Contact IT** page in the company portal.|
     |Customization|Theme color|Not applicable|Select a theme color to apply to the company portal.|
     ||Include company logo|Not applicable|When you enable this option, you can upload your company logo to show in your company portal. You can upload two logos: one logo that is displayed when the company portal background is white, and one logo that is displayed when the company portal background uses your selected theme color.<br /><br />Each logo must be a .png or .jpg file type and have a maximum resolution of 400 x 100 pixels and be 750 KB or less in size.|
-    ||Choose a background for [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)] company portal app|Not applicable|This setting affects the background for the [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)] company portal app only.|
+    ||Choose a background for [!INCLUDE[win8_client_2](/includes/win8_client_2_md.md)] company portal app|Not applicable|This setting affects the background for the [!INCLUDE[win8_client_2](/includes/win8_client_2_md.md)] company portal app only.|
 
 3.  Click **Save** to save your changes.
 
 After you save your changes, you can use the links provided at the bottom of the **Company Portal** page of the administration console to view the company portal website. These links cannot be changed. When a user signs in, these links display your subscriptions in the company portal.
 
 ## <a name="Step5"></a>Step 8: Enroll computers in Intune
-You can install the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] client software on computers in the following ways:
+You can install the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] client software on computers in the following ways:
 
 -   Users can use an installer provided by the administrator to manually enroll
 
--   [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] software can be included in an OS image or deployed using Group Policy
+-   [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] software can be included in an OS image or deployed using Group Policy
 
--   End users can also self-enroll their devices through the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] company portal
+-   End users can also self-enroll their devices through the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] company portal
 
 Each enrolled computer is linked to the user account that was used to install the client software. Microsoft Intune Endpoint Protection is also installed by default during Intune client installation on computers. Endpoint Protection helps to secure the computers in your organization by providing real-time protection against potential threats, keeping malicious software definitions up to date, and automatically running scheduled scans. For added security, you can also use Intune policies to manage Windows Firewall settings on managed computers.
 
@@ -169,7 +169,7 @@ What to know before you start:
 
 -   Self-enrolling requires that Internet Explorer is installed on the client computer.
 
--   Each time a user self-enrolls a computer, it uses a [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] license.
+-   Each time a user self-enrolls a computer, it uses a [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] license.
 
 -   You must use a Microsoft Online Services work or school account to self-enroll a computer. This is the account that you used to sign in, or the administrator account that was created when you signed up for the free trial.
 
@@ -183,13 +183,13 @@ For this example, you'll use the self-enrollment approach:
 
 4.  Click **Download Software** and then click **Run**.
 
-5.  Click **Next** to start the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] Setup wizard.
+5.  Click **Next** to start the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Setup wizard.
 
 6.  When the Setup wizard has completed, click **Finish**.
 
-To learn more about computer management using [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], see [Install the Windows PC client with Microsoft Intune](../Topic/Install-the-Windows-PC-client-with-Microsoft-Intune.md).
+To learn more about computer management using [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
-To learn more about software management using [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], see [Deploy and configure apps with Microsoft Intune](../Topic/Deploy-and-configure-apps-with-Microsoft-Intune.md).
+To learn more about software management using [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], see [Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md).
 
 ## <a name="Step6"></a>Step 9: Enroll mobile devices and install an app
 To set up mobile device management with Intune, you must  first set the mobile device management authority,  enable management for device platforms, and enroll your devices with the company portal app. You can then deploy the Microsoft Skype application that you published.
@@ -202,9 +202,9 @@ To set up mobile device management with Intune, you must  first set the mobile d
 2.  **Enable MDM for your device platform**
     Enable mobile device management for the device platform you want to manage. Depending on your platform, different requirements are needed:
 
-    -   **iOS and Mac OS X**: see [Set up iOS and Mac management with Microsoft Intune](../Topic/Set-up-iOS-and-Mac-management-with-Microsoft-Intune.md).
+    -   **iOS and Mac OS X**: see [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
-    -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](../Topic/Set-up-Windows-Phone-management-with-Microsoft-Intune.md).
+    -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
     -   **Android**: Android mobile devices allow users to enroll using the company portal app available from Google Play. No additional configuration in Intune is required.
 
@@ -222,16 +222,16 @@ To set up mobile device management with Intune, you must  first set the mobile d
 
 4.  Open the company portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.
 
-To learn more about mobile device management using [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](../Topic/Get-ready-to-enroll-devices-in-Microsoft-Intune.md).
+To learn more about mobile device management using [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md).
 
 ## Post-configuration tasks
 After you complete the initial configuration steps for an Intune  paid subscription, you should consider enabling additional mobile device management functionality.
 
--   **Connect Exchange to Intune:** For users with mobile devices  that haven't  enrolled in Intune, you can enable Exchange ActiveSync management using a connector for on-premises Exchange and for Exchange Online in  Microsoft Office 365. The Exchange connector connects you with your Exchange deployment and lets you manage mobile devices through the Intune administration console. To learn more about the Exchange connector, see [Mobile device management with Exchange ActiveSync and Microsoft Intune](../Topic/Mobile-device-management-with-Exchange-ActiveSync-and-Microsoft-Intune.md).
+-   **Connect Exchange to Intune:** For users with mobile devices  that haven't  enrolled in Intune, you can enable Exchange ActiveSync management using a connector for on-premises Exchange and for Exchange Online in  Microsoft Office 365. The Exchange connector connects you with your Exchange deployment and lets you manage mobile devices through the Intune administration console. To learn more about the Exchange connector, see [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md).
 
--   **Intune reports:** Microsoft Intune provides alerts and reports that you can use to help monitor devices, as well as software license status and actions that affect devices (such as wiping a device).  To learn more about reporting, see [Monitoring and reports with Microsoft Intune](../Topic/Monitoring-and-reports-with-Microsoft-Intune.md).
+-   **Intune reports:** Microsoft Intune provides alerts and reports that you can use to help monitor devices, as well as software license status and actions that affect devices (such as wiping a device).  To learn more about reporting, see [Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md).
 
--   **Protecting company resources:** After you've configured Intune and enrolled your devices, you'll want to make sure that you're protecting devices against data loss and other threats. To learn more about protecting resources, see [Protect data and devices with Microsoft Intune](../Topic/Protect-data-and-devices-with-Microsoft-Intune.md).
+-   **Protecting company resources:** After you've configured Intune and enrolled your devices, you'll want to make sure that you're protecting devices against data loss and other threats. To learn more about protecting resources, see [Protect data and devices with Microsoft Intune](protect-data-and-devices-with-microsoft-intune.md).
 
 ## See Also
-[Start using Microsoft Intune](../Topic/Start-using-Microsoft-Intune.md)
+[Start using Microsoft Intune](start-using-microsoft-intune.md)

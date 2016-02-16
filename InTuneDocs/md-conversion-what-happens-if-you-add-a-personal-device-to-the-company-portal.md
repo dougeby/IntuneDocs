@@ -11,7 +11,7 @@ ms.assetid: d55a0c1d-3e9f-40d8-a12f-2db46f4cbd43
 If you add a device to the company portal, you can easily find company apps to install, see other devices you’ve added, and find contact information for your IT administrator. You are also giving your IT administrator permission to manage your device to help protect the company information on the device. Each device is added a little differently, some from settings on the device and others by downloading an app from the device’s app store.
 
 ## <a name="BKMK_IT_can_see"></a>What IT can and can't see when you enroll your device in Intune
-For steps on how to enroll your device in Intune, see [Enroll your device in Microsoft Intune](../Topic/Enroll-your-device-in-Microsoft-Intune.md).
+For steps on how to enroll your device in Intune, see [Enroll your device in Microsoft Intune](enroll-your-device-in-microsoft-intune.md).
 
 **What IT cannot see**
 
@@ -66,7 +66,7 @@ When you add a computer:
 
 -   You’ll have some software installed on your computer to make it possible for your IT administrator to manage the computer, and make it possible for you to get to company resources like apps and support information. This software may be updated automatically by your IT administrator.
 
--   [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
+-   [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
 
 -   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
 

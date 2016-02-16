@@ -18,8 +18,8 @@ Using an email profile makes email access automatic for enrolled devices, which 
 ## What you need before starting this walkthrough
 * An Exchange Server, either on-premises or hosted on Azure as part of your Office/E3 subscription
 * The host name of your company’s Exchange server. This is the fully qualified domain name (FQDN). For example, **contosodemo55.onmicrosoft.com**.
-* A user group to deploy the email profile to. If you completed the [Start a Microsoft Intune trial and deploy iOS PIN policy](Start-a-Microsoft-Intune-trial-and-deploy-iOS-PIN-policy.md) walkthrough, you can use the **GroupDemo** user group you created for it. 
-* Enrolled iOS devices to deploy the profile to. Again, if you completed the [Start a Microsoft Intune trial and deploy iOS PIN policy](Start-a-Microsoft-Intune-trial-and-deploy-iOS-PIN-policy.md) walkthrough, you will have enrolled some iOS devices.
+* A user group to deploy the email profile to. If you completed the [Start a Microsoft Intune trial and deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md) walkthrough, you can use the **GroupDemo** user group you created for it. 
+* Enrolled iOS devices to deploy the profile to. Again, if you completed the [Start a Microsoft Intune trial and deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md) walkthrough, you will have enrolled some iOS devices.
 ## Steps for creating and deploying an email profile for iOS devices
 For this walkthrough we will be using the hosted Exchange server that comes with an E3 trial subscription. 
 1. In the [!INCLUDE[wit_firstref](/Token/wit_firstref.xml)] console, click **Policy**, and then click **Add Policy**.
@@ -59,8 +59,8 @@ The app will prompt you for the user’s email username and password.
 ![Email Walkthrough 11](/Image/Email-Walkthrough/Email-Walkthrough-11.png)
 After a few moments the email profile gets applied to the device. After that, you can follow the verification steps to make sure the profile was applied correctly.
 ## More information
-Learn more about email profiles, [Configure access to corporate email using email profiles with Microsoft Intune](Email-access.md)
-Learn more about policies, [Use policies to manage computers and mobile devices with Microsoft Intune](Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
+Learn more about email profiles, [Configure access to corporate email using email profiles with Microsoft Intune](email-access.md)
+Learn more about policies, [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
 ## See Also
-[Common Microsoft Intune evaluation tasks](Common-Microsoft-Intune-evaluation-tasks.md)
-[Start a Microsoft Intune trial and deploy iOS PIN policy](Start-a-Microsoft-Intune-trial-and-deploy-iOS-PIN-policy.md)
+[Common Microsoft Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)
+[Start a Microsoft Intune trial and deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)

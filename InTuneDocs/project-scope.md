@@ -9,7 +9,7 @@ ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
 author: Nbigman
 ---
 # Project scope
-In the project scope phase, you will outline your goals, timeline and success metrics, define key organizational readiness factors, assemble your project team, and begin initial preparations for all phases involved with successfully rolling out [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] across your organization and ensuring a great experience for end users.
+In the project scope phase, you will outline your goals, timeline and success metrics, define key organizational readiness factors, assemble your project team, and begin initial preparations for all phases involved with successfully rolling out [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] across your organization and ensuring a great experience for end users.
 Invest the right time and effort to define what long-term success looks like so that your plan reflects all the right steps along the way to achieve that vision. While there is always opportunity to fine tune along the way, having a comprehensive readiness plan that's tightly aligned with the core technical deployment is a key factor to overall success.
 
 ## Why is this important?
@@ -19,7 +19,7 @@ Begin by reviewing the discovery questions below to help scope and define your r
 ## Discovery questions
 Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in the  Rollout Planning Guide and Project Plan.
 
--   What are the core drivers behind your organization's decision to deploy [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]?
+-   What are the core drivers behind your organization's decision to deploy [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]?
 
 -   What is the scope of your deployment (number of users, devices)?
     What is your timeline for completing this rollout?
@@ -48,7 +48,7 @@ Goals
 The majority of your efforts in the Scope phase revolve around planning and preparation. When scoping your rolling project, consider both technology and organizational issues, as well as how users work today and the behavior change required. Start with your "big picture" end goal in mind, then create smaller goals in subsequent phases to stay on track.
 
 ### Help desk
-In order for knowledge workers to benefit from a productive [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] experience, the Help Desk should be well-prepared. As you scope your project, consider how help desk will play a part in each phase, and what resources you will need to execute and ensure your help desk is ready to support end users.
+In order for knowledge workers to benefit from a productive [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] experience, the Help Desk should be well-prepared. As you scope your project, consider how help desk will play a part in each phase, and what resources you will need to execute and ensure your help desk is ready to support end users.
 
 ### Awareness
 A well-defined awareness campaign is essential for driving change and sustained adoption. While defining your project scope, consider your target audiences for each phase and what messaging is required. Begin identifying resources from your marketing and communications teams, as well as any potential budget you may need to help execute the plan.
@@ -87,5 +87,5 @@ Here are some  challenges that you may encounter in the **Project scope** phase.
 
 -   **Challenge:** Neglecting to create, validate, and aggressively share a clear value prop that resonates for your organization, often results in limited adoption and lack of ROI.
 
-    **Mitigation:** While you may be excited to jump into your project, ensure you have a clearly-defined value message. Include this value messaging in all awareness and training activities to help ensure users understand why your organization selected [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
+    **Mitigation:** While you may be excited to jump into your project, ensure you have a clearly-defined value message. Include this value messaging in all awareness and training activities to help ensure users understand why your organization selected [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
 

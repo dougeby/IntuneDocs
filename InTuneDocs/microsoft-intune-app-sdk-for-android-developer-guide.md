@@ -9,7 +9,7 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 author: Msmbaldwin
 ---
 # Microsoft Intune App SDK for Android Developer Guide
-***Note**:  You may wish to first read the [Get Started with Intune App SDK Guide](Getting-Started-and-FAQ.md), which explains how to prepare for integration on each supported platform.* 
+***Note**:  You may wish to first read the [Get Started with Intune App SDK Guide](getting-started-and-faq.md), which explains how to prepare for integration on each supported platform.* 
 
 You can use the Microsoft Intune App SDK to enable mobile app management (MAM) features within your Android app. MAM policies allow IT administrators to deploy policies to enlightened apps (apps that have the Intune App SDK enabled) that are managed by Microsoft Intune.  
 

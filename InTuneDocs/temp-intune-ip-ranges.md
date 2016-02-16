@@ -12,7 +12,7 @@ author: robstackmsft
 
 The follwing table lists all domains and IP addresses that might be used by [!INCLUDE[wit_firstref](/Token/wit_firstref.xml)]. Depending on your configuration, you might need to allow one or more of these addresses access through your company firewall.
 
-The following table lists the domains and services that the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] client accesses.
+The following table lists the domains and services that the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] client accesses.
 
 |**Purpose**|**Domain**|**Ports**|**IP addresses**|
 |-|-|-|-|
@@ -54,5 +54,5 @@ The following table lists the domains and services that the [!INCLUDE[wit_nextre
 
 
 ## See Also
-[Introduction to Microsoft Intune](../Topic/Introduction-to-Microsoft-Intune.md)
+[Introduction to Microsoft Intune](introduction-to-microsoft-intune.md)
 

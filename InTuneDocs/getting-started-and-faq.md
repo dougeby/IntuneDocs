@@ -20,7 +20,7 @@ If you are an ISV developing an app that will be made available to customers thr
 
 To begin the registration process, review and sign the Microsoft Intune Partner Agreement. This agreement describes the terms your company must accept before becoming a Microsoft Intune app partner. You will need to sign in before you can view this document. You can find the agreement in the Intune App SDK Microsoft Connect site under the Surveys tab or located here. We will also ask you to provide the name of the app, your company’s name, as well as the Google or iTunes store deep link to your app.
 
-![](../Image/Microsoft-Connect.png)
+![](/media/Microsoft-Connect.png)
 
 We will use your registration email address to confirm and complete receipt of the registration process. Additionally, we use your registration email address to contact you should we have any concerns.
 
@@ -82,7 +82,7 @@ Once you’ve completed the necessary steps to enlighten (integrate the Intune A
 ### I found an issue with the Intune App SDK or documentation. How do I submit feedback or report issues?
 Feedback on the Intune App SDK can be submitted through the Microsoft Connect site here. You will see an option to submit the feedback or issue there. Please provide a priority for submitted issues, and the Microsoft Intune team will address them as soon as possible.
 
-![](../Image/App-Feedback-Form.png)
+![](/media/App-Feedback-Form.png)
 
 ### How does the Intune App SDK treat OS updates and compatibility?
 We will strive to ensure that existing SDK features will work on new OS version as soon as possible, and that the SDK will not cause application crashes or other serious end user impact due to new OS features accessible to end users from within existing applications.

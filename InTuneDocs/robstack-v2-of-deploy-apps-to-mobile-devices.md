@@ -9,7 +9,7 @@ ms.assetid: 4048cae7-8624-4f9c-b5c6-a2bbd21a63c6
 author: robstackmsft
 ---
 # robstack - V2 of Deploy apps to mobile devices
-Now that you've [learned the basics](https://technet.microsoft.com/library/dn646955.aspx) about [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] app deployment, you'll now learn how to configure and deploy apps to mobile devices you manage. This generally involves three steps:
+Now that you've [learned the basics](https://technet.microsoft.com/library/dn646955.aspx) about [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] app deployment, you'll now learn how to configure and deploy apps to mobile devices you manage. This generally involves three steps:
 
 -   [Configure the app](#BKMK_Conf)
 
@@ -17,10 +17,10 @@ Now that you've [learned the basics](https://technet.microsoft.com/library/dn646
 
 -   [Monitor the app](#BKMK_Monitor)
 
-For information about how to update and retire apps, see [Update apps using Microsoft Intune](../Topic/Update-apps-using-Microsoft-Intune.md).
+For information about how to update and retire apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
 
 > [!IMPORTANT]
-> The information in this topic helps you to deploy apps to [enrolled Windows PCs](https://technet.microsoft.com/library/mt346003.aspx) and other mobile devices. If you want to deploy apps to  [Windows PCs that you manage using the client software](https://technet.microsoft.com/library/dn646959.aspx), see [Deploy apps to Windows PCs in Microsoft Intune](../Topic/Deploy-apps-to-Windows-PCs-in-Microsoft-Intune.md).
+> The information in this topic helps you to deploy apps to [enrolled Windows PCs](https://technet.microsoft.com/library/mt346003.aspx) and other mobile devices. If you want to deploy apps to  [Windows PCs that you manage using the client software](https://technet.microsoft.com/library/dn646959.aspx), see [Deploy apps to Windows PCs in Microsoft Intune](deploy-apps-to-windows-pcs-in-microsoft-intune.md).
 
 ## <a name="BKMK_Conf"></a>Configure the app
 In this procedure, you'll use the Intune Software Publisher to configure the properties of the app and, where applicable, upload it to your cloud storage space.
@@ -80,7 +80,7 @@ In this procedure, you'll use the Intune Software Publisher to configure the pro
     > [!TIP]
     > The **Requirements** page is not displayed for all types of apps.
 
-5.  Further wizard pages are displayed when you choose the **Windows Installer** file type. This file type is not used by mobile devices. For more information, see [Deploy apps to Windows PCs in Microsoft Intune](../Topic/Deploy-apps-to-Windows-PCs-in-Microsoft-Intune.md).
+5.  Further wizard pages are displayed when you choose the **Windows Installer** file type. This file type is not used by mobile devices. For more information, see [Deploy apps to Windows PCs in Microsoft Intune](deploy-apps-to-windows-pcs-in-microsoft-intune.md).
 
 6.  On the **Summary** page, review the information you specified. Once you are ready, click **Upload**.
 
@@ -112,15 +112,15 @@ In this procedure, you'll deploy the app to selected devices or users.
     > [See which Microsoft apps are compatible with mobile application management policies](https://technet.microsoft.com/library/dn708489.aspx).
 
 6.  If the app you are deploying is compatible with Intune VPN profiles, the **VPN Profile** page is displayed. On this page, you can choose to associate iOS apps with a VPN profile you have deployed. The VPN connection will be automatically opened when the app is launched. To make a VPN profile available, it must have the **Per-app VPN** profile setting enabled.
-    For information about how to configure VPN profiles, including support for associating profiles with apps, see [Help users connect to their work using VPN profiles with Microsoft Intune](../Topic/Help-users-connect-to-their-work-using-VPN-profiles-with-Microsoft-Intune.md).
+    For information about how to configure VPN profiles, including support for associating profiles with apps, see [Help users connect to their work using VPN profiles with Microsoft Intune](help-users-connect-to-their-work-using-vpn-profiles-with-microsoft-intune.md).
 
 |||
 |-|-|
-|![](../Image/Available-install-on-iOS.png)|If you deployed the app as **Available**, it will be displayed in the company portal on users device from where they can install the app. For example, in this screenshot, the Bing for iOS app was deployed using the **External Link** installation type, with a custom icon, and the option **Display this as a featured app and highlight it in the company portal** was selected.|
-|![](../Image/iOS-Required-install.PNG)|If you deployed the app as required, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed using the **Managed iOS app from the app store** installation type.|
+|![](/media/Available-install-on-iOS.png)|If you deployed the app as **Available**, it will be displayed in the company portal on users device from where they can install the app. For example, in this screenshot, the Bing for iOS app was deployed using the **External Link** installation type, with a custom icon, and the option **Display this as a featured app and highlight it in the company portal** was selected.|
+|![](/media/iOS-Required-install.PNG)|If you deployed the app as required, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed using the **Managed iOS app from the app store** installation type.|
 
 ## <a name="BKMK_Monitor"></a>Monitor the app
-You can see the apps you manage, and their deployment status in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console.
+You can see the apps you manage, and their deployment status in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console.
 
 ### To view the apps you manage and their status
 In the **Apps** workspace, click the **Apps** node.
@@ -130,7 +130,7 @@ The list of apps you manage will be displayed. You can click on any app to see a
 > [!TIP]
 > You can use the **Filters** drop-down list to show only apps that meet the criteria you specify, like apps that failed to install, or apps that were successfully deployed.
 > 
-> ![](../Image/App-filters.JPG)
+> ![](/media/App-filters.JPG)
 
 Additionally, the **Dashboard** workspace shows an overview of the status of your apps. If you click anywhere in the overview, you'll be taken to the list of apps.
 
@@ -148,5 +148,5 @@ On the **Software Properties** page for the app, click one of these tabs:
 As before, you can use the **Filters** drop-down list to configure the values shown on each of the tabs.
 
 ## See Also
-[Deploy and configure apps with Microsoft Intune](../Topic/Deploy-and-configure-apps-with-Microsoft-Intune.md)
+[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
 

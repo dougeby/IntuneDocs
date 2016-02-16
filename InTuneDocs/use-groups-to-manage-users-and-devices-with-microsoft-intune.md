@@ -10,17 +10,17 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 author: Nbigman
 ---
 # Use groups to manage users and devices with Microsoft Intune
-**Groups** in [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics).
+**Groups** in [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics).
 
-Additionally, you can filter groups to allow your IT admins permissions to only perform operations on the groups you specify. For more information, see [Use filtered group views to help secure and manage users and devices](../Topic/Use-groups-to-manage-users-and-devices-with-Microsoft-Intune.md#BKMK_Filter) in this topic.
+Additionally, you can filter groups to allow your IT admins permissions to only perform operations on the groups you specify. For more information, see [Use filtered group views to help secure and manage users and devices](use-groups-to-manage-users-and-devices-with-microsoft-intune.md#BKMK_Filter) in this topic.
 
-To create and manage groups, you use the **Groups** workspace in the [!INCLUDE[wit_adminconsole](../Token/wit_adminconsole_md.md)]. The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
+To create and manage groups, you use the **Groups** workspace in the [!INCLUDE[wit_adminconsole](/includes/wit_adminconsole_md.md)]. The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
 
 -   Alerts
 
 -   Software updates
 
--   [!INCLUDE[epshort](../Token/epshort_md.md)]
+-   [!INCLUDE[epshort](/includes/epshort_md.md)]
 
 -   Policy
 
@@ -28,7 +28,7 @@ To create and manage groups, you use the **Groups** workspace in the [!INCLUDE[w
 
 Additionally, a hierarchical view of your groups is shown that lets you view status summaries and identify and resolve problems for members of a selected group.
 
-[!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] provides nine built-in groups that you cannot edit or delete:
+[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] provides nine built-in groups that you cannot edit or delete:
 
 -   **All Users**
 
@@ -60,13 +60,13 @@ Additionally, a hierarchical view of your groups is shown that lets you view sta
 
 -   A group can include and exclude members based on the following membership rules:
 
-    -   **Criteria Membership:** These are dynamic rules that [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] runs to include or exclude members.  These criteria use security groups and other information synchronized from your local Active Directory. When the security group or data that is synchronized changes, the group membership can change.
+    -   **Criteria Membership:** These are dynamic rules that [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] runs to include or exclude members.  These criteria use security groups and other information synchronized from your local Active Directory. When the security group or data that is synchronized changes, the group membership can change.
 
     -   **Direct Membership:** These are static rules that explicitly add or exclude members. The membership list is static.
 
 -   Active Directory Domain Services (AD DS) is not required to create user groups or device groups that include users or computers, but for device groups to include mobile devices, your environment must be configured to support mobile devices.
 
-    Additionally, the devices must be discovered and added to [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
+    Additionally, the devices must be discovered and added to [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
 
 ## Group relationships
 
@@ -96,7 +96,7 @@ Additionally, a hierarchical view of your groups is shown that lets you view sta
 
     -   The **Laptop Users** group is a member of the **Approved Users** security group.
 
-    -   You create a group in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] that uses a dynamic membership query that includes the members of the **Approved Users** group. The result is that your [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] user group includes **Pat**.
+    -   You create a group in [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] that uses a dynamic membership query that includes the members of the **Approved Users** group. The result is that your [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] user group includes **Pat**.
 
 > [!TIP]
 > When you're creating your groups consider how you will apply policy. For example, you may have policies specific to device operating systems, and policies specific to different roles in your organization, or to Organizational Units you've already defined in Active Directory. Some consider it useful to have device groups specific to iOS, Android, and Windows, as well as user groups for each organizational role.
@@ -119,7 +119,7 @@ Additionally, a hierarchical view of your groups is shown that lets you view sta
 
     -   **Computer:** Specify whether to include all members of the parent group, the Organizational Units you want to include or exclude and the domains you want to include or exclude. The OU and domain information for a computer is obtained from inventory.
 
-    -   **Mobile:** Specify to include only mobile devices that are managed by [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], those managed by Exchange ActiveSync, or both.
+    -   **Mobile:** Specify to include only mobile devices that are managed by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], those managed by Exchange ActiveSync, or both.
 
     -   **All devices:** This option includes all devices with no exclusions based on criteria.
 
@@ -150,7 +150,7 @@ The newly created group can be found in the **Groups** list, in the **Groups** w
 The newly created group can be found in the **Groups** list, in the **Groups** workspace, under the parent group. From here, you can also edit or delete the group.
 
 > [!TIP]
-> Security groups are a great resource for populating user groups. Since your security groups define who has access to which resources, that can translate well into  [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] user groups. Security groups that are synced from Active Directory to Azure Active Directory, or that are created directly in Azure Active Directory through the Office 365 admin center or the Azure Administration portal, are all available to you for creating user groups in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
+> Security groups are a great resource for populating user groups. Since your security groups define who has access to which resources, that can translate well into  [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] user groups. Security groups that are synced from Active Directory to Azure Active Directory, or that are created directly in Azure Active Directory through the Office 365 admin center or the Azure Administration portal, are all available to you for creating user groups in [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
 
 ## Managing your groups
 Once you’ve created your groups you will continue to manage them according to the needs of your organization.
@@ -162,7 +162,7 @@ Filtered group views let you restrict which groups each IT admin can manage. Thi
 
 -   You want to display only relevant groups to each IT admin.
 
-You can configure filtered group views for service administrators in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] administrator console. For details, see [What to know before setting up Microsoft Intune](../Topic/What-to-know-before-setting-up-Microsoft-Intune.md).
+You can configure filtered group views for service administrators in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] administrator console. For details, see [What to know before setting up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md).
 
 After configuring filtered group views for a service administrator, that administrator:
 
@@ -200,9 +200,9 @@ You can delete a group that no longer serves the needs of your organization. Del
 ## Groups and policy
 Once you've set up your groups and policies, you'll want to check the practical implications of your design. Here are some helpful tips and information about groups and policy.
 
-You can retrieve a lot of information regarding each device managed by [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. Select any device from a device group and browse through the categories of information at the top of the screen. Select **Policy** . You'll see something like this screenshot of an Android device's policy settings.
+You can retrieve a lot of information regarding each device managed by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]. Select any device from a device group and browse through the categories of information at the top of the screen. Select **Policy** . You'll see something like this screenshot of an Android device's policy settings.
 
-![](../Image/Intune-Device-Policy-v.2.jpg)
+![](/media/Intune-Device-Policy-v.2.jpg)
 
 Each policy has an **Intended Value** and a **Status**. The intended value is what you meant to achieve when assigning the policy. The status is what is actually achieved when all of the policies that apply to the device, as well as the restrictions and requirements of the hardware and the operating system, are considered together.  In the screenshot you can see two clear examples:
 
@@ -214,6 +214,6 @@ Each policy has an **Intended Value** and a **Status**. The intended value is wh
 > Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
 
 ## See Also
-[Get started with a paid subscription to Microsoft Intune](../Topic/Get-started-with-a-paid-subscription-to-Microsoft-Intune.md)
+[Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md)
 [How to buy Intune](http://technet.microsoft.com/en-us/library/dn646949.aspx)
 

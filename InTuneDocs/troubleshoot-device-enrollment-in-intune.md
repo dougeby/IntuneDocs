@@ -50,7 +50,7 @@ Administrators can delete devices in the Azure Active Directory portal:
 8.  Remove devices as appropriate, such as those that are no longer in use, or those that have inaccurate definitions.
 
 > [!NOTE]
-> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](../Topic/Enroll-corporate-owned-devices-with-the-Device-Enrollment-Manager-in-Microsoft-Intune.md).
+> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 > 
 > A user account which is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
@@ -87,10 +87,10 @@ Administrators can delete devices in the Azure Active Directory portal:
 
 ##### Troubleshooting MDM authority not defined error
 
-1.  Verify that the MDM Authority has been set appropriately for the version of the Intune service you are using  , that is, for Intune, O365 MDM, or System Center Configuration Manager with Intune. For [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)],  the MDM Authority is set in **Admin** &gt; **Mobile Device Management**. For [!INCLUDE[cmshort](../Token/cmshort_md.md)] with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], you set it when configuring the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] connector,  and in O365 it's a setting **Mobile Devices**.
+1.  Verify that the MDM Authority has been set appropriately for the version of the Intune service you are using  , that is, for Intune, O365 MDM, or System Center Configuration Manager with Intune. For [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)],  the MDM Authority is set in **Admin** &gt; **Mobile Device Management**. For [!INCLUDE[cmshort](/includes/cmshort_md.md)] with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], you set it when configuring the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] connector,  and in O365 it's a setting **Mobile Devices**.
 
     > [!NOTE]
-    > One you set the MDM authority, you can only change it by contacting Support, as described in [How to get support for Microsoft Intune](../Topic/How-to-get-support-for-Microsoft-Intune.md).
+    > One you set the MDM authority, you can only change it by contacting Support, as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 2.  Verify that the user’s credentials have synced correctly with Azure Active Directory, by checking that their UPN matches the Active Directory information in the Account Portal.
     If the UPN does not match the Active Directory information:
@@ -137,10 +137,10 @@ Administrators can delete devices in the Azure Active Directory portal:
 
 4.  Find the device in question and review how the device was removed. The Example below shows the account SCCMInstall deleted the device via an Unknown Application.
 
-    ![](../Image/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
+    ![](/media/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
 5.  Check that Configuration Manager does not have a scheduled task, script, or other process which could be automatically purging non-domain, mobile, or related devices.
 
 ## iOS enrollment errors
-A list of other iOS enrollment errors is provided in our device-user documentation, in   [You see errors while trying to enroll your device in Intune](../Topic/Using-your-iOS-device-with-Intune.md#BKMK_ios_error_enrolling_tbl).
+A list of other iOS enrollment errors is provided in our device-user documentation, in   [You see errors while trying to enroll your device in Intune](using-your-ios-device-with-intune.md#BKMK_ios_error_enrolling_tbl).
 

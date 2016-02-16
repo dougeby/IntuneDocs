@@ -8,21 +8,21 @@ ms.topic: article
 ms.assetid: 8d830b04-e1f6-46ab-aa85-88db7917510f
 ---
 # MD Conversion - Troubleshoot app deployment problems in Microsoft Intune
-This topic provides resources to help you solve app deployment problems with[!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)].
+This topic provides resources to help you solve app deployment problems with[!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)].
 
 ## <a name="BKMK_TypicalProblems"></a>Help for typical app deployment problems
 
-#### If you can’t log in to the [!INCLUDE[wit_iwportal_1](../Token/wit_iwportal_1_md.md)]
+#### If you can’t log in to the [!INCLUDE[wit_iwportal_1](/includes/wit_iwportal_1_md.md)]
 
-1.  Check to see if your account exists in the [!INCLUDE[wit_icp_1](../Token/wit_icp_1_md.md)] or if it is disabled.
+1.  Check to see if your account exists in the [!INCLUDE[wit_icp_1](/includes/wit_icp_1_md.md)] or if it is disabled.
 
-2.  Make sure that you are provisioned on this account in the [!INCLUDE[wit_icp_1](../Token/wit_icp_1_md.md)].
+2.  Make sure that you are provisioned on this account in the [!INCLUDE[wit_icp_1](/includes/wit_icp_1_md.md)].
 
-3.  In the [!INCLUDE[wit_icp_1](../Token/wit_icp_1_md.md)], make sure that you are using the right user name and password to log in to [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] and that it is in the format: **joe@domain.com**.
+3.  In the [!INCLUDE[wit_icp_1](/includes/wit_icp_1_md.md)], make sure that you are using the right user name and password to log in to [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] and that it is in the format: **joe@domain.com**.
 
 #### If the Contact IT information is missing in the company portal
 
-1.  In the [!INCLUDE[wit_adminconsole](../Token/wit_adminconsole_md.md)], click **Admin** &gt; **Company Portal**.
+1.  In the [!INCLUDE[wit_adminconsole](/includes/wit_adminconsole_md.md)], click **Admin** &gt; **Company Portal**.
 
 2.  Set the **Contact IT** details.
 
@@ -66,10 +66,10 @@ This topic provides resources to help you solve app deployment problems with[!IN
 
 #### If managed apps are not reporting installation status
 
--   Installation status was not collected for managed app installations prior to the Microsoft Intune service update in November 2014. For devices that installed managed apps prior to this service update, update each associated app deployment with the appropriate deployment action (for example, **Available install**). Each device will update the app during the automatic check for available apps. For more information, see [Update apps using Microsoft Intune](../Topic/Update-apps-using-Microsoft-Intune.md).
+-   Installation status was not collected for managed app installations prior to the Microsoft Intune service update in November 2014. For devices that installed managed apps prior to this service update, update each associated app deployment with the appropriate deployment action (for example, **Available install**). Each device will update the app during the automatic check for available apps. For more information, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
 
 ## <a name="BKMK_SoftDistErrorCodes"></a>App deployment error codes
-The following table lists common errors that may occur during [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] app deployment, the likely causes, and possible solutions to help you troubleshoot them.
+The following table lists common errors that may occur during [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] app deployment, the likely causes, and possible solutions to help you troubleshoot them.
 
 |Error code|Possible problem|Suggested resolution|
 |--------------|--------------------|------------------------|
@@ -79,6 +79,6 @@ The following table lists common errors that may occur during [!INCLUDE[wit_next
 |0x80073CFB|The provided package is already installed, and reinstallation of the package is blocked|You might receive this error if you are installing a package that is not identical to the package that is already installed. Confirm the digital signature is also part of the package. When a package is rebuilt or re-signed, that package is no longer bitwise identical to the previously installed package. Two possible options to fix this error are to increment the version number of the app, then rebuild and re-sign the package. Or, remove the old package for every user on the system before you install the new package.|
 
 ## See Also
-[Troubleshoot Microsoft Intune](../Topic/Troubleshoot-Microsoft-Intune.md)
-[Deploy and configure apps with Microsoft Intune](../Topic/Deploy-and-configure-apps-with-Microsoft-Intune.md)
+[Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md)
+[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
 

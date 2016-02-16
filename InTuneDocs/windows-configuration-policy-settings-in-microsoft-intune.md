@@ -10,7 +10,7 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 author: robstackmsft
 ---
 # Windows configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] **Windows general configuration policy** to configure settings for enrolled Windows 8, and Windows 8.1 devices:
+Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] **Windows general configuration policy** to configure settings for enrolled Windows 8, and Windows 8.1 devices:
 
 ## Create a Windows general configuration policy
 
@@ -121,10 +121,10 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 
 1.  Deploy the configuration policy to one or more groups of users or devices in your organization.
 
-For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 A status summary and alerts in the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
 ## See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
+[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
 

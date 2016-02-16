@@ -10,7 +10,7 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 author: robstackmsft
 ---
 # Exchange ActiveSync policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] **Exchange ActiveSync** policy to configure settings that let you control a range of features and functionality on devices that are managed by Exchange ActiveSync.
+Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] **Exchange ActiveSync** policy to configure settings that let you control a range of features and functionality on devices that are managed by Exchange ActiveSync.
 
 ## Create an Exchange ActiveSync policy
 
@@ -87,10 +87,10 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 
 1.  Deploy the configuration policy to one or more groups of users or devices in your organization.
 
-For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 A status summary and alerts In the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
 ## See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
+[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
 

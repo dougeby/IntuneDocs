@@ -11,6 +11,6 @@ author: Nbigman
 robots: noindex,nofollow
 ---
 # How to enroll your device in Microsoft Intune
-This content is no longer available. For instructions on enrolling devices with Microsoft Intune, see [Enroll your device in Microsoft Intune](../Topic/Enroll-your-device-in-Microsoft-Intune.md).
+This content is no longer available. For instructions on enrolling devices with Microsoft Intune, see [Enroll your device in Microsoft Intune](enroll-your-device-in-microsoft-intune.md).
 
 ## <a name="BKMK_enroll"></a>

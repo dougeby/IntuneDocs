@@ -10,9 +10,9 @@ ms.assetid: f64674ff-f2a6-471c-82a5-bcff23c7514d
 author: robstackmsft
 ---
 # Windows Phone custom policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] **Windows Phone custom configuration policy** to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on **Windows Phone 8.1 devices**. These are standard settings that many mobile device manufacturers use to control device features.
+Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] **Windows Phone custom configuration policy** to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on **Windows Phone 8.1 devices**. These are standard settings that many mobile device manufacturers use to control device features.
 
-This capability is intended to allow you to deploy Windows Phone settings that are not configurable with an [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] policy. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](../Topic/Manage-settings-and-features-on-your-devices-with-Microsoft-Intune-policies.md).
+This capability is intended to allow you to deploy Windows Phone settings that are not configurable with an [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policy. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 For help creating OMA-URI settings for Windows Phone devices, see [Windows Phone 8.1 MDM protocol documentation](http://technet.microsoft.com/library/dn499787.aspx).
 
@@ -22,7 +22,7 @@ For help creating OMA-URI settings for Windows Phone devices, see [Windows Phone
 
 2.  Under **Windows**, configure a **Custom Configuration (Windows Phone 8.1 and later)** policy.
 
-    For help creating and deploying policies, see the [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    For help creating and deploying policies, see the [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
     You can only create and deploy a custom policy. Recommended settings are not available.
 
@@ -30,7 +30,7 @@ For help creating OMA-URI settings for Windows Phone devices, see [Windows Phone
 
     |Setting name|More information|
     |----------------|--------------------|
-    |**Name**|Enter a unique name for the policy to help you identify it in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console.|
+    |**Name**|Enter a unique name for the policy to help you identify it in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console.|
     |**Description**|Provide a description that gives an overview of the policy and other relevant information that helps you to locate it.|
 
 4.  In the **OMA-URI Settings** section, click **Add** to add a setting. You can also edit or delete an existing setting.
@@ -55,10 +55,10 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 
 1.  Deploy the policy to one or more groups of users or devices in your organization.
 
-For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
 ## See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
+[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
 

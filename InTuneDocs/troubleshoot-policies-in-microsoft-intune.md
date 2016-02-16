@@ -11,7 +11,7 @@ author: Nbigman
 # Troubleshoot policies in Microsoft Intune
 
 ## Policy issues
-Listed here are some issues that may arise from your [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] policy configuration and troubleshooting recommendations for those issues.
+Listed here are some issues that may arise from your [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] policy configuration and troubleshooting recommendations for those issues.
 
 ### Is policy applied to device?
 **Issue:** It's not clear if a particular policy is being applied to a device, or a device behaves contrary to a policy.
@@ -32,7 +32,7 @@ In the screenshot below you can see two clear examples:
 
 -   Similarly, the expanded policy item**Email settings for iOS devices** is not applied to this device, as it is an Android device.
 
-![](../Image/Intune-Device-Policy-v.2.jpg)
+![](/media/Intune-Device-Policy-v.2.jpg)
 
 > [!NOTE]
 > Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
@@ -53,7 +53,7 @@ For non-MDM Windows devices, policy errors in the policyplatform.log file may be
 
 ##### To resolve UAC issues
 
-1.  Retire the computer, as described in [Retire data and devices from Microsoft Intune management](../Topic/Retire-data-and-devices-from-Microsoft-Intune-management.md).
+1.  Retire the computer, as described in [Retire data and devices from Microsoft Intune management](retire-data-and-devices-from-microsoft-intune-management.md).
 
 2.  Wait 20 minutes for the client software to be removed.
 
@@ -91,5 +91,5 @@ Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may ne
 Android MDM does not allow the service to force initial policy changes on devices as other platforms allow. This is due to Android functionality, and is not related to the Intune service. Android devices will prompt the end user via the notification window of the related policy change (i.e. Password, Encryption, etc.).  The end user must respond to the prompt and once accepted the policy should be applied.
 
 ## See Also
-[Troubleshoot software updates in Microsoft Intune](../Topic/Troubleshoot-software-updates-in-Microsoft-Intune.md)
+[Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
 

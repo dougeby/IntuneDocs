@@ -49,7 +49,7 @@ Device enrollment manager accounts are user accounts with permission to enroll l
 
 7.  Enter the **User ID** of the Intune account and then click **OK**. The device enrollment manager user cannot be an Intune administrator.
 
-8.  The device enrollment manager can now enroll mobile devices using the same procedure an end user uses for a BYOD scenario in the company portal. To enroll devices using the company portal, see [Enable mobile device enrollment with the Microsoft Intune Account Portal](../Topic/Enable-mobile-device-enrollment-with-the-Microsoft-Intune-Account-Portal.md).
+8.  The device enrollment manager can now enroll mobile devices using the same procedure an end user uses for a BYOD scenario in the company portal. To enroll devices using the company portal, see [Enable mobile device enrollment with the Microsoft Intune Account Portal](enable-mobile-device-enrollment-with-the-microsoft-intune-account-portal.md).
 
 #### Delete a device enrollment manager from Intune
 
@@ -74,7 +74,7 @@ Deleting a device enrollment manager does not affect enrolled devices. When a de
 -   The deleted device enrollment manager account’s relationship to enrolled devices remains but no additional devices can be enrolled
 
 ## See Also
-[Get started with a paid subscription to Microsoft Intune](../Topic/Get-started-with-a-paid-subscription-to-Microsoft-Intune.md)
-[Get ready to enroll devices in Microsoft Intune](../Topic/Get-ready-to-enroll-devices-in-Microsoft-Intune.md)
-[Enable mobile device enrollment with the Microsoft Intune Account Portal](../Topic/Enable-mobile-device-enrollment-with-the-Microsoft-Intune-Account-Portal.md)
+[Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md)
+[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Enable mobile device enrollment with the Microsoft Intune Account Portal](enable-mobile-device-enrollment-with-the-microsoft-intune-account-portal.md)
 

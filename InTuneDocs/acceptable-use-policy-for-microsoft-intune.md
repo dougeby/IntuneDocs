@@ -10,7 +10,7 @@ ms.assetid: f89bd1c9-b5b0-4683-b442-4cf25ff83af4
 author: robstackmsft
 ---
 # Acceptable Use Policy for Microsoft Intune
-This Acceptable Use Policy for [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] (“Policy”) identifies activities that you and your organization are prohibited from engaging in when using [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] or any subsequent release of [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] ("Service") which link to this Policy.
+This Acceptable Use Policy for [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] (“Policy”) identifies activities that you and your organization are prohibited from engaging in when using [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] or any subsequent release of [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] ("Service") which link to this Policy.
 
 Please report violations of this Policy to [Intune Support](http://go.microsoft.com/fwlink/?LinkID=242283). When reporting by email, please include the words "Acceptable Use Policy" in the subject.
 

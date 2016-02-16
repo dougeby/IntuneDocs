@@ -34,19 +34,19 @@ To enroll your device:
 
 1.  Go to Windows  **Settings** and tap **Accounts**.
 
-    ![](../Image/IW-Help-pics/W10-enroll-1-settings-accounts.png)
+    ![](/media/IW-Help-pics/W10-enroll-1-settings-accounts.png)
 
 2.  Tap **Your account**.
 
-    ![](../Image/IW-Help-pics/W10-enroll-2-accounts-your-account.png)
+    ![](/media/IW-Help-pics/W10-enroll-2-accounts-your-account.png)
 
 3.  Tap **Add a work or school account**.
 
-    ![](../Image/IW-Help-pics/W10-enroll-3-add-work-school-acct.png)
+    ![](/media/IW-Help-pics/W10-enroll-3-add-work-school-acct.png)
 
 4.  Sign in with your work or school credentials.
 
-    ![](../Image/IW-Help-pics/W10-enroll-4-sign-in.png)
+    ![](/media/IW-Help-pics/W10-enroll-4-sign-in.png)
 
 If you followed the steps above, but still can't access your work or school email, files, and other data, go back to **Accounts** and tap **Work access**.
 
@@ -69,7 +69,7 @@ To enroll your device:
 
 1.  On the device, tap **Settings** &gt; **PC Settings** &gt; **Network** &gt; **Workplace**.
 
-    ![](../Image/IW-Help-pics/W81-1-workplacejoin.png)
+    ![](/media/IW-Help-pics/W81-1-workplacejoin.png)
 
 2.  Enter your work or school email for the User ID, if required, and then tap **Join**.
 
@@ -77,19 +77,19 @@ To enroll your device:
 
 3.  Type the password for your work or school email.
 
-    ![](../Image/IW-Help-pics/W81-2-workplacesettings_signin.png)
+    ![](/media/IW-Help-pics/W81-2-workplacesettings_signin.png)
 
 4.  Under **Turn on device management**, tap **Turn on**.
 
-    ![](../Image/IW-Help-pics/W81-3-dev-mgt-turn-on.png)
+    ![](/media/IW-Help-pics/W81-3-dev-mgt-turn-on.png)
 
 5.  In the **Allow apps and services from IT admin** dialog,  select the  **I agree** check box, and then tap **Turn on**.
 
-    ![](../Image/IW-Help-pics/W81-4-agree-allow-apps-services.png)
+    ![](/media/IW-Help-pics/W81-4-agree-allow-apps-services.png)
 
     When you have successfully enrolled, you'll see the following screen.
 
-    ![](../Image/IW-Help-pics/W81-5-enrolled-done.png)
+    ![](/media/IW-Help-pics/W81-5-enrolled-done.png)
 
 We also recommend that you install the Company Portal app, which lets you easily identify and get the company apps that are relevant to you and your role. Depending on how your company  configured Intune, the Company Portal app may have been installed as part of your enrollment process. To check if you have the app, look for **Company Portal** in your apps list. If you don't see the Company Portal in your list of apps, follow these steps to install it.
 
@@ -136,11 +136,11 @@ Install the Company Portal app on your device:
 
 3.  In the list of results, tap **Company Portal**.
 
-    ![](../Image/IW-Help-pics/WP81-1-CP-search-store-v2.png)
+    ![](/media/IW-Help-pics/WP81-1-CP-search-store-v2.png)
 
 4.  Tap **Company Portal**  &gt; **Install**.
 
-    ![](../Image/IW-Help-pics/WP81-2-CP-install-v2.png)
+    ![](/media/IW-Help-pics/WP81-2-CP-install-v2.png)
 
 Enroll your device:
 
@@ -152,19 +152,19 @@ Enroll your device:
 
 4.  Tap **Tap to enroll or identify this device**.
 
-    ![](../Image/IW-Help-pics/WP81-enroll-1-swipe-my-devices.png)
+    ![](/media/IW-Help-pics/WP81-enroll-1-swipe-my-devices.png)
 
 5.  Tap **Enroll this device**.
 
-    ![](../Image/IW-Help-pics/WP81-enroll-2-enroll-this-device.png)
+    ![](/media/IW-Help-pics/WP81-enroll-2-enroll-this-device.png)
 
 6.  Tap **Add account**.
 
-    ![](../Image/IW-Help-pics/WP81-enroll-3-workplace-add-acct.png)
+    ![](/media/IW-Help-pics/WP81-enroll-3-workplace-add-acct.png)
 
 7.  Enter additional information as requested and then tap **sign in** to complete the enrollment. You should now see your workplace account listed on the **Settings** &gt; **Workplace** page.
 
-    ![](../Image/IW-Help-pics/WP81-enroll-4-account-added.png)
+    ![](/media/IW-Help-pics/WP81-enroll-4-account-added.png)
 
 #### <a name="BKMK_comp_doesnt_allow_cp"></a>If you aren’t allowed to access the Windows Store from your Windows Phone, or if you don’t have a Microsoft Account
 
@@ -208,7 +208,7 @@ When you add a computer:
 
 -   You’ll have some software installed on your computer to make it possible for your IT administrator to manage the computer, and make it possible for you to get to company resources like apps and support information. This software may be updated automatically by your IT administrator.
 
--   [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
+-   [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
 
 -   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
 
@@ -237,7 +237,7 @@ When you add a computer:
 
 -   You’ll have some software installed on your computer to make it possible for your IT administrator to manage the computer, and make it possible for you to get to company resources like apps and support information. This software may be updated automatically by your IT administrator.
 
--   [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
+-   [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
 
 -   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
 
@@ -303,7 +303,7 @@ When you add a computer:
 
 -   You’ll have some software installed on your computer to make it possible for your IT administrator to manage the computer, and make it possible for you to get to company resources like apps and support information. This software may be updated automatically by your IT administrator.
 
--   [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
+-   [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
 
 -   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
 
@@ -346,7 +346,7 @@ You can encrypt your device either by adding a Microsoft account or by enabling 
 
 3.  Follow the instructions shown.
 
-4.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
+4.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
 
 **Option 2: Enable BitLocker**
 
@@ -354,7 +354,7 @@ You can encrypt your device either by adding a Microsoft account or by enabling 
 
 2.  Click **Turn on BitLocker**, then follow the instructions shown to encrypt each of your drives.
 
-3.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
+3.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
 
 ## <a name="BKMK_win_erase_lost_device"></a>Reset (erase) your lost or stolen device
 If your device is enrolled in Intune, and your device is lost or stolen, you can reset it to factory defaults.
@@ -421,7 +421,7 @@ To unenroll your device, use the steps that match the device you're using.
 |---------------|------------------------------------------------------------------|
 |Windows Phone 8.1 or Windows Phone 8|-   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal app or Company Portal website.<br />-   You can’t use company apps and company data on your device anymore.<br />-   Any settings that were changed on your device when you added it, for example disabling the camera, or requiring a certain password length, will no longer apply. **Important:**     The only exception to this is encryption policies, which will still apply. If your company policy required that your Windows Phone be encrypted, the only way to unencrypt your phone is to reset your phone using the **Settings** menu on your Windows Phone.|
 |Windows RT running Windows 8.1 or Windows RT|When you remove your Windows RT device running Windows 8.1, the following happens:<br /><br />-   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal.<br />-   You can’t use company apps and company data on your device anymore.<br />-   Any settings that were changed on your device when you added it, for example disabling the camera, or requiring a certain password length, will no longer apply.<br />-   You might not be able to connect to your company network using Wi-Fi or a Virtual Private Network anymore.<br />-   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.<br />-   Some mail apps, such as Windows Mail, won’t be able to access company email that is stored on your device anymore.<br /><br />When you remove your Windows RT device, the following happens:<br /><br />-   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal.<br />-   You can’t use company apps and company data on your device anymore.<br />-   Any settings that were changed on your device when you added it, for example disabling the camera, or requiring a certain password length, will no longer apply.|
-|Windows 8.1, Windows 8, Windows 7, Vista|-   Your device won’t appear in the company portal anymore, and you can’t install apps from the company portal anymore.<br />-   If you installed the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] client software, it’s removed from your computer.<br />-   The [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] Endpoint Protection software is removed from your computer. If your computer has other virus protection software installed and it is disabled, that software may be re-enabled after [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] Endpoint Protection is removed. You should check your computer after removing it from the company portal. **Important:**     If the other virus protection software is not re-enabled or no other virus protection software is installed, your computer may be vulnerable to viruses and malware.<br />-   Any settings that were changed on your device when you added it (for example, disabling the camera, will no longer apply).<br />-   Your computer will no longer receive automatic software updates or antivirus software updates from the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] service. However, depending on how it is configured, your computer may still receive updates from the Windows Server Update Services, Windows Update, or Microsoft Update.<br /><br />In addition, for Windows 8.1:<br /><br />-   You can’t use company apps and company data on your device anymore.<br />-   Some mail apps, such as Windows Mail, won’t be able to access company email that is stored on your device anymore.<br />-   You might not be able to connect to your company network using Wi-Fi or a Virtual Private Network.<br />-   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.|
+|Windows 8.1, Windows 8, Windows 7, Vista|-   Your device won’t appear in the company portal anymore, and you can’t install apps from the company portal anymore.<br />-   If you installed the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] client software, it’s removed from your computer.<br />-   The [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] Endpoint Protection software is removed from your computer. If your computer has other virus protection software installed and it is disabled, that software may be re-enabled after [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] Endpoint Protection is removed. You should check your computer after removing it from the company portal. **Important:**     If the other virus protection software is not re-enabled or no other virus protection software is installed, your computer may be vulnerable to viruses and malware.<br />-   Any settings that were changed on your device when you added it (for example, disabling the camera, will no longer apply).<br />-   Your computer will no longer receive automatic software updates or antivirus software updates from the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] service. However, depending on how it is configured, your computer may still receive updates from the Windows Server Update Services, Windows Update, or Microsoft Update.<br /><br />In addition, for Windows 8.1:<br /><br />-   You can’t use company apps and company data on your device anymore.<br />-   Some mail apps, such as Windows Mail, won’t be able to access company email that is stored on your device anymore.<br />-   You might not be able to connect to your company network using Wi-Fi or a Virtual Private Network.<br />-   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.|
 
 ## <a name="BKMK_windows_pc_data_collect"></a>Turn off Microsoft usage data collection
 In order to improve its products and services, Microsoft automatically collects anonymous data about the reliability and performance of the Company Portal app and how it is used. You can turn off the collection of that data by using the Usage Data setting in the Company Portal app. IT administrators have no control over the collection of the data, and they cannot change your selection for the setting.

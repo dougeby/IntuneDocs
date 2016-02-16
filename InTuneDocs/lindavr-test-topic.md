@@ -9,7 +9,7 @@ ms.assetid: 6d388b97-7a2e-4ad9-92b1-2c0c7d51217a
 author: Lindavr
 ---
 # Lindavr test topic
-![](../Image/WIT_Nav_OverviewGray.png)![](../Image/WIT_Nav_GetStartedGray.png)![](../Image/WIT_Nav_EnrollDevicesGray.png)![](../Image/WIT_Nav_ConfigureDevicesGray.png)![](../Image/WIT_Nav_DeployAppsGray.png)![](../Image/WIT_Nav_ProtectResourcesGray.png)![](../Image/WIT_Nav_RetireDataDevices.png)![](../Image/WIT_Nav_TroubleshootingGray.png)![](../Image/WIT_Nav_RealworldSolutionsGray.png)![](../Image/WIT_Nav_TechnicalReferenceGray.png)
+![](/media/WIT_Nav_OverviewGray.png)![](/media/WIT_Nav_GetStartedGray.png)![](/media/WIT_Nav_EnrollDevicesGray.png)![](/media/WIT_Nav_ConfigureDevicesGray.png)![](/media/WIT_Nav_DeployAppsGray.png)![](/media/WIT_Nav_ProtectResourcesGray.png)![](/media/WIT_Nav_RetireDataDevices.png)![](/media/WIT_Nav_TroubleshootingGray.png)![](/media/WIT_Nav_RealworldSolutionsGray.png)![](/media/WIT_Nav_TechnicalReferenceGray.png)
 
 There comes a point when an employee either parts ways with the company, or with their device. In such cases, you need to be able to ensure
 		   that neither the employee nor anyone using their device can access company resources. You may also want to make sure that any company 
@@ -36,5 +36,5 @@ Sometimes, it’s the device itself that has reached its end of life. In such ca
 You can keep track of changes to inventory and licenses through the built-in [inventory reports](https://technet.microsoft.com/library/dn646977.aspx).
 
 ## See Also
-[Documentation for Microsoft Intune](../Topic/Documentation-for-Microsoft-Intune.md)
+[Documentation for Microsoft Intune](documentation-for-microsoft-intune.md)
 

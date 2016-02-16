@@ -18,5 +18,5 @@ Insert section body here.
 Insert subsection body here.
 
 ## See Also
-[Monitoring and reports with Microsoft Intune](../Topic/Monitoring-and-reports-with-Microsoft-Intune.md)
+[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 

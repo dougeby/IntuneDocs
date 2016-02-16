@@ -9,7 +9,7 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 author: Msmbaldwin
 ---
 # Microsoft Intune App SDK for iOS Developer Guide
-***Note**:  You may wish to first read the [Get Started with Intune App SDK Guide](Getting-Started-and-FAQ.md), which explains how to prepare for integration on each supported platform.* 
+***Note**:  You may wish to first read the [Get Started with Intune App SDK Guide](getting-started-and-faq.md), which explains how to prepare for integration on each supported platform.* 
 
 The Microsoft Intune App SDK for iOS allows you to incorporate Intune Mobile App Management (MAM) into your iOS app. A MAM-enabled application is one integrated with the Intune App SDK, and allows IT administrators to deploy policies to your mobile app when the app is actively managed.
 

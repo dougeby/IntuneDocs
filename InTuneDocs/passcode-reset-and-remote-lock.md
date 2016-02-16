@@ -19,14 +19,14 @@ If a user forgets their passcode, you can help them by removing the passcode fro
 |iOS|Supported for clearing the passcode from a device. Does not create a new temporary passcode.|
 |Android|Supported and a temporary passcode is created.|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
-|[!INCLUDE[winblue_winrt_2](../Token/winblue_winrt_2_md.md)] and [!INCLUDE[win8RT_client_1](../Token/win8RT_client_1_md.md)]|Not Supported|
+|[!INCLUDE[winblue_winrt_2](/includes/winblue_winrt_2_md.md)] and [!INCLUDE[win8RT_client_1](/includes/win8RT_client_1_md.md)]|Not Supported|
 |Windows 8.1|Not Supported|
 
 #### To reset the passcode on a mobile device remotely through the Microsoft Intune Console
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **All Devices** &gt; **All Mobile Devices**.
 
-2.  Click **All Direct Managed Devices** for devices enrolled to [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] or **All Exchange ActiveSync Managed Devices**.
+2.  Click **All Direct Managed Devices** for devices enrolled to [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] or **All Exchange ActiveSync Managed Devices**.
 
     > [!TIP]
     > You can also navigate to a device by user. Click **All Users** and on the properties page for the user, click the **Devices** tab, and then click the name of the mobile device that you want to wipe.
@@ -41,14 +41,14 @@ If a user loses their device you can lock the device remotely. The table below l
 |iOS|Supported|
 |Android|Supported|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
-|[!INCLUDE[winblue_winrt_2](../Token/winblue_winrt_2_md.md)] and [!INCLUDE[win8RT_client_1](../Token/win8RT_client_1_md.md)]|Supported if the current user of the device is the same user who enrolled the device.|
+|[!INCLUDE[winblue_winrt_2](/includes/winblue_winrt_2_md.md)] and [!INCLUDE[win8RT_client_1](/includes/win8RT_client_1_md.md)]|Supported if the current user of the device is the same user who enrolled the device.|
 |Windows 8.1|Supported if the current user of the device is the same user who enrolled the device.|
 
 ##### To lock a mobile device remotely through the Microsoft Intune Console
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **All Devices** &gt; **All Mobile Devices**.
 
-2.  Click **All Direct Managed Devices** for devices enrolled to [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] or **All Exchange ActiveSync Managed Devices**.
+2.  Click **All Direct Managed Devices** for devices enrolled to [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] or **All Exchange ActiveSync Managed Devices**.
 
     > [!TIP]
     > You can also navigate to a device by user. Click **All Users** and on the properties page for the user, click the **Devices** tab, and then click the name of the mobile device that you want to wipe.

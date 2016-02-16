@@ -19,6 +19,6 @@ author: Staciebarker
 |Company Portal website     |**On mobile devices:** use the default web browser for each supported platform   <br /><br />**On Windows PCs:** Internet Explorer 10 or later, or Microsoft Edge<br /><br />**On Mac OS X 10.9 or later:** Apple Safari    |
 
 ### See also
-[What to know before you set up Microsoft Intune](../Topic/What-to-know-before-setting-up-Microsoft-Intune.md)</br>
-[Network infrastructure requirements for Microsoft Intune](../Topic/Network-infrastructure-requirements-for-Microsoft-Intune.md)
+[What to know before you set up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md)</br>
+[Network infrastructure requirements for Microsoft Intune](network-infrastructure-requirements-for-microsoft-intune.md)
 

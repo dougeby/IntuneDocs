@@ -15,7 +15,7 @@ Use the information in this topic to help you monitor your mobile application ma
 ### Monitoring mobile application management policy compliance
 The **User status** tile in the **Intune mobile application management** blade displays the compliance status of your app policies as described below:
 
-![](../Image/AppManagement/AzurePortal_MAM_MonitorUsers.png)
+![](/media/AppManagement/AzurePortal_MAM_MonitorUsers.png)
 
 -   **Users**- The total number of users in your company who are using work apps on their devices.
 
@@ -25,13 +25,13 @@ The **User status** tile in the **Intune mobile application management** blade d
 
     The **Flagged users** tile gives you the aggregated information on how many users are experiencing issues. Currently only users with jailbroken devices are marked as flagged.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_FlaggedUserDetails.png)
+    ![](/media/AppManagement/AzurePortal_MAM_FlaggedUserDetails.png)
 
--   The **Wipe requests** tile shows you the summary report of the status of the wipe requests you made. Clicking on this tile will open a new blade that has more detailed information. For a detailed description of the wipe request information that is displayed in this blade, read the [Wipe managed company app data with Microsoft Intune](../Topic/Wipe-managed-company-app-data-with-Microsoft-Intune.md) topic.
+-   The **Wipe requests** tile shows you the summary report of the status of the wipe requests you made. Clicking on this tile will open a new blade that has more detailed information. For a detailed description of the wipe request information that is displayed in this blade, read the [Wipe managed company app data with Microsoft Intune](wipe-managed-company-app-data-with-microsoft-intune.md) topic.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
+    ![](/media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 ## See Also
-[Create and deploy mobile app management policies with Microsoft Intune](../Topic/Create-and-deploy-mobile-app-management-policies-with-Microsoft-Intune.md)
-[Configure data loss prevention app policies with Microsoft Intune](../Topic/Configure-data-loss-prevention-app-policies-with-Microsoft-Intune.md)
+[Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+[Configure data loss prevention app policies with Microsoft Intune](configure-data-loss-prevention-app-policies-with-microsoft-intune.md)
 

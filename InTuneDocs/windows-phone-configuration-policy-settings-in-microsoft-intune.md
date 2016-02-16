@@ -10,7 +10,7 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 author: robstackmsft
 ---
 # Windows Phone configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] **Windows Phone general configuration policy** to configure the following settings for Windows Phone 8.1 devices:
+Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] **Windows Phone general configuration policy** to configure the following settings for Windows Phone 8.1 devices:
 
 -   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
@@ -119,7 +119,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |----------------|--------------------|
 |**Block devices from opening the listed apps**|Lists the apps that are not managed by Intune which users are not allowed to install and run.|
 |**Allow devices to install only the listed apps**|Lists the apps that users are allowed to install. Users cannot install any other apps. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />[How to specify URLs to app stores](../Topic/Windows-Phone-configuration-policy-settings-in-Microsoft-Intune.md#BKMK_URL)|
+|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />[How to specify URLs to app stores](windows-phone-configuration-policy-settings-in-microsoft-intune.md#BKMK_URL)|
 |**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|
 |**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
@@ -130,7 +130,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 
 1.  Deploy the configuration policy to one or more groups of users or devices in your organization.
 
-For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 A status summary and alerts In the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
@@ -146,5 +146,5 @@ Open the app’s page, and copy the URL to the clipboard. You can now use this a
 **Example:** Search the store for the Skype app. The URL you use will be **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 ## See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
+[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
 

@@ -13,23 +13,23 @@ author: Staciebarker
 
 ## Company Portal FAQ
 
--   [What is the company portal?](../Topic/Company-Portal-Frequently-Asked-Questions.md#BKMK_WhatIs)
+-   [What is the company portal?](company-portal-frequently-asked-questions.md#BKMK_WhatIs)
 
--   [What can I do with the company portal?](../Topic/Company-Portal-Frequently-Asked-Questions.md#BKMK_WhatCanIDo)
+-   [What can I do with the company portal?](company-portal-frequently-asked-questions.md#BKMK_WhatCanIDo)
 
--   [What happens when I add a computer or device to the company portal?](../Topic/Company-Portal-Frequently-Asked-Questions.md#BKMK_AddDevice)
+-   [What happens when I add a computer or device to the company portal?](company-portal-frequently-asked-questions.md#BKMK_AddDevice)
 
--   [What kind of computers or devices can I add to the company portal?](../Topic/Company-Portal-Frequently-Asked-Questions.md#BKMK_WhatCanIAdd)
+-   [What kind of computers or devices can I add to the company portal?](company-portal-frequently-asked-questions.md#BKMK_WhatCanIAdd)
 
--   [Can I remove a computer or device from the company portal?](../Topic/Company-Portal-Frequently-Asked-Questions.md#BKMK_RemoveDevice)
+-   [Can I remove a computer or device from the company portal?](company-portal-frequently-asked-questions.md#BKMK_RemoveDevice)
 
--   [Why don’t I see all of my devices in the company portal?](../Topic/Company-Portal-Frequently-Asked-Questions.md#BKMK_CantSeeDevices)
+-   [Why don’t I see all of my devices in the company portal?](company-portal-frequently-asked-questions.md#BKMK_CantSeeDevices)
 
--   [I need to install a new version of the company portal](../Topic/Company-Portal-Frequently-Asked-Questions.md#BKMK_InstallNewVersion)
+-   [I need to install a new version of the company portal](company-portal-frequently-asked-questions.md#BKMK_InstallNewVersion)
 
--   [I receive an error that my computer is already enrolled](../Topic/Company-Portal-Frequently-Asked-Questions.md#BKMK_NotEnrolled)
+-   [I receive an error that my computer is already enrolled](company-portal-frequently-asked-questions.md#BKMK_NotEnrolled)
 
--   [Troubleshooting iPhone error messages during enrollment](../Topic/Company-Portal-Frequently-Asked-Questions.md#BKMK_TroubleshootingiOS)
+-   [Troubleshooting iPhone error messages during enrollment](company-portal-frequently-asked-questions.md#BKMK_TroubleshootingiOS)
 
 ### <a name="BKMK_WhatIs"></a>What is the company portal?
 The company portal is your company’s interface that lets you manage your work computers and devices, or manage your personal computers or devices that you choose to use at work.  The company portal can be a website that you go to, or can be an app that you install to your device.

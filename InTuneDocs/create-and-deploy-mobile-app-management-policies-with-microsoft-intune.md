@@ -10,7 +10,7 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 author: karthikaraman
 ---
 # Create and deploy mobile app management policies with Microsoft Intune
-You can create mobile app management policies (MAM) policies and deploy them to users in the Azure  portal.  The MAM policies that you create here are independent of device enrollment, meaning that they can be used on devices that are not managed at all, or managed by [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] or another third-party solution.
+You can create mobile app management policies (MAM) policies and deploy them to users in the Azure  portal.  The MAM policies that you create here are independent of device enrollment, meaning that they can be used on devices that are not managed at all, or managed by [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] or another third-party solution.
 
 **In this topic**
 
@@ -28,22 +28,22 @@ You can create mobile app management policies (MAM) policies and deploy them to 
 
 1.  Click **Intune mobile application management &gt; Settings** to open the **Settings** blade.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_Mainblade.png)
+    ![](/media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
     > [!TIP]
-    > If this is the first time you are using the Azure portal, read [Get started with mobile app management policies in the Azure portal](../Topic/Get-started-with-mobile-app-management-policies-in-the-Azure-portal.md) first to get familiar with the portal.
+    > If this is the first time you are using the Azure portal, read [Get started with mobile app management policies in the Azure portal](get-started-with-mobile-app-management-policies-in-the-azure-portal.md) first to get familiar with the portal.
 
 2.  In the **Settings** blade, click **App policy**.  This opens the **App policy** blade where you'll  create new policies and edit existing policies.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_AppPolicy.png)
+    ![](/media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
 3.  Click **Add a policy**.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_AddPolicy.png)
+    ![](/media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
 4.  Type  a name for the policy, add  a brief description, and select the platform type to create a policy for iOS or Android.  You can create more than one policy for each platform.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
+    ![](/media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
 5.  Click **Apps** to open the **Apps blade** where a list of available apps is displayed. You can select one or more apps from the list that you want to associate with the policy that you are creating. One you have selected the apps, click the **Select** button at the bottom of the **Apps** blade to save your selection.
 
@@ -58,15 +58,15 @@ You can create mobile app management policies (MAM) policies and deploy them to 
     > [!TIP]
     > These policy settings are enforced only when using apps in the work context.  When the end-user uses the app to do a personal task, they will not be affected by these policies.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_PolicySettings.png)
+    ![](/media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
     Refer to [Policy Settings](#bkmk_policysettings)section in this topic for the full list of the policy settings and default values.
 
 7.  Click **OK** to save this configuration.  You are now back in the **Add a policy** blade. Click **Create** to create the policy and save your settings.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_CreatePolicy.png)
+    ![](/media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-    ![](../Image/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
+    ![](/media/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
 
 When you finish creating a policy as described in the previous procedure, it is not deployed to any users.  Follow the steps described below to deploy the policy.
 
@@ -83,21 +83,21 @@ When you finish creating a policy as described in the previous procedure, it is 
 
 1.  In the **Policy**blade, click  **User groups**, which opens the **User groups**blade. Click **Add user group** in the **User groups** blade to open the **Add user group** blade.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_AddUserstoPolicy.png)
+    ![](/media/AppManagement/AzurePortal_MAM_AddUserstoPolicy.png)
 
 2.  A list of user groups is displayed on the **Add user group** blade. This is a list of all the security groups in your **Azure Active Directory**.  You can select the user groups you want this policy to apply to and click **Select**. **Clicking Select deploys the policy to users**.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_SelectUserstoDeploy.png)
+    ![](/media/AppManagement/AzurePortal_MAM_SelectUserstoDeploy.png)
 
     > [!NOTE]
-    > Only users with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] licenses assigned to them will be affected by the policy.  Users who are in the security group that you selected that don’t have a [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] license assigned to them are not affected.
+    > Only users with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] licenses assigned to them will be affected by the policy.  Users who are in the security group that you selected that don’t have a [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] license assigned to them are not affected.
 
     > [!NOTE]
     > If you are using Intune with Configuration Manager to manage your iOS and Android devices, the policy is only applied to the users directly in the group that you selected.  Members of child groups  nested within the group you selected will not be affected.
 
 You have now created a policy and deployed it to users.
 
-The end users can download the apps from the App store or Google Play. For a detailed walkthrough of the end user experience, see [End-user experience for apps associated with Microsoft Intune mobile app management policies](../Topic/End-user-experience-for-apps-associated-with-Microsoft-Intune-mobile-app-management-policies.md).
+The end users can download the apps from the App store or Google Play. For a detailed walkthrough of the end user experience, see [End-user experience for apps associated with Microsoft Intune mobile app management policies](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies.md).
 
 ### <a name="bkmk_changepolicy"></a>Change existing policies
 When you change existing policies,  users who are already signed  in to the apps won’t see the changes for a 8-hour period.
@@ -108,7 +108,7 @@ If you are testing and would like to see the changed policy immediately, sign ou
 
 1.  In  the **App policy** blade, click the policy you want to change. This opens a blade specific to the policy you just selected.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_OpenPolicy.png)
+    ![](/media/AppManagement/AzurePortal_MAM_OpenPolicy.png)
 
 2.  In the policy blade, click **Targeted apps** to open the list of apps.
 
@@ -122,23 +122,23 @@ If you are testing and would like to see the changed policy immediately, sign ou
 
 3.  To **add a new user group** to the policy, click **Add user group**, and select the user group. Click **Select** to deploy the policy to the group you selected.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_ChangePolicy_SelectUser.png)
+    ![](/media/AppManagement/AzurePortal_MAM_ChangePolicy_SelectUser.png)
 
 4.  To **delete a user group**, highlight the user group you want to remove, click the ellipses (…), then click **Delete** to remove the user group.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_ChangePolicy_DeleteUser.png)
+    ![](/media/AppManagement/AzurePortal_MAM_ChangePolicy_DeleteUser.png)
 
 ##### Change policy settings
 
 1.  In the **App policy** blade, click the policy you want to change. This opens a blade specific to the policy you just selected.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_OpenPolicy.png)
+    ![](/media/AppManagement/AzurePortal_MAM_OpenPolicy.png)
 
 2.  Click **Policy settings** to open the **Policy settings** blade.
 
 3.  Change the settings, and click the **Save icon** to save your changes.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_ChangePolicy_ChangeSettings.png)
+    ![](/media/AppManagement/AzurePortal_MAM_ChangePolicy_ChangeSettings.png)
 
 ### <a name="bkmk_policysettings"></a>Policy Settings
 **IOS data relocation policies**
@@ -151,8 +151,8 @@ If you are testing and would like to see the changed policy immediately, sign ou
 |**Allow app to receive data from other apps**|Specify  from which apps  can transfer data to the policy managed apps:<br /><br />-   **Policy managed apps**: Allow data transfers only from other restricted apps<br />-   **All apps**: Allow data transfer from any app<br />-   **None**: Do not allow data transfer from any app|**All apps**|
 |**Prevent Save As**|Select **Yes** to disable the use of the Save As option in any app that uses this policy. Select **No** if you want to allow the use of Save As.|**Yes**|
 |**Restrict cut, copy and paste with other apps**|Specify when  cut, copy, and paste operations should be restricted. Choose from:<br /><br />-   **Blocked:** Do not allow cut, copy, and paste operations between policy managed apps.<br />-   **Policy Managed Apps**: Only allow cut, copy, and paste operations between policy managed apps.<br />-   **Policy Managed Apps with paste In**: Allow data cut or copied between policy managed apps. Allow data cut or copied from any app to be pasted into this app.<br />-   **Any App**: No restrictions for  cut, copy, and paste operations between any apps.|**Policy managed apps with paste in**|
-|**Restrict web content to display in the Managed Browser**|When this setting is enabled, any links in the app will be opened in the Managed Browser.<br /><br />For devices that are not enrolled in Intune, you can restrict web links in policy-managed apps to only open in the Managed Browser app using the mobile app management policy.<br />If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](../Topic/Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md).|**Yes**|
-|**Encrypt app data**|For apps that are associated with a [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] mobile app management policy, data is encrypted at rest using device level encryption provided by the OS. When a PIN is required, the data is encrypted per the settings in the mobile app management policy. As stated in Apple documentation, [the modules used by iOS 7 are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />In the policy settings, you can specify PIN encryption values.  These values determine when the data is encrypted. The options are:<br /><br />-   **When device is locked:** All app data associated with this policy is encrypted while the device is locked.<br />-   **When device is locked (except for open files):** All app data associated with this policy is encrypted while the device is locked, except for data that in the files that are opened in the app.<br />-   **After device restart:** All app data associated with this policy is encrypted when the device is restarted, until the device is unlocked for the first time.<br />-   **Use device settings:** App data is encrypted based on the default settings on the device.<br /><br />When you enable this setting, the end-user is required to setup and use a PIN to access their device.  If there is not PIN setup for device access, the apps will not launch and the end-user will be prompted to set a PIN with a message -“Your company has required that you must first enable a device PIN to access this application.”|Encryption option is not selected|
+|**Restrict web content to display in the Managed Browser**|When this setting is enabled, any links in the app will be opened in the Managed Browser.<br /><br />For devices that are not enrolled in Intune, you can restrict web links in policy-managed apps to only open in the Managed Browser app using the mobile app management policy.<br />If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md).|**Yes**|
+|**Encrypt app data**|For apps that are associated with a [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] mobile app management policy, data is encrypted at rest using device level encryption provided by the OS. When a PIN is required, the data is encrypted per the settings in the mobile app management policy. As stated in Apple documentation, [the modules used by iOS 7 are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />In the policy settings, you can specify PIN encryption values.  These values determine when the data is encrypted. The options are:<br /><br />-   **When device is locked:** All app data associated with this policy is encrypted while the device is locked.<br />-   **When device is locked (except for open files):** All app data associated with this policy is encrypted while the device is locked, except for data that in the files that are opened in the app.<br />-   **After device restart:** All app data associated with this policy is encrypted when the device is restarted, until the device is unlocked for the first time.<br />-   **Use device settings:** App data is encrypted based on the default settings on the device.<br /><br />When you enable this setting, the end-user is required to setup and use a PIN to access their device.  If there is not PIN setup for device access, the apps will not launch and the end-user will be prompted to set a PIN with a message -“Your company has required that you must first enable a device PIN to access this application.”|Encryption option is not selected|
 **iOS Access policy settings**
 
 ||||
@@ -175,8 +175,8 @@ If you are testing and would like to see the changed policy immediately, sign ou
 |**Allow app to receive data from other apps**|Specify  from which apps  can transfer data to the policy managed apps:<br /><br />-   **Policy managed apps**: Allow data transfers only from other restricted apps<br />-   **All apps**: Allow data transfer from any app<br />-   **None**: Do not allow data transfer from any app|**All apps**|
 |**Prevent Save As**|Select **Yes** to disable the use of the Save As option in any app that uses this policy. Select **No** if you want to allow the use of Save As.|**Yes**|
 |**Restrict cut, copy and paste with other apps**|Specify when  cut, copy, and paste operations should be restricted. Choose from:<br /><br />-   **Blocked:** Do not allow cut, copy, and paste operations between policy managed apps.<br />-   **Policy Managed Apps**: Only allow cut, copy, and paste operations between policy managed apps.<br />-   **Policy Managed Apps with paste In**: Allow data cut or copied between policy managed apps. Allow data cut or copied from any app to be pasted into this app.<br />-   **Any App**: No restrictions for  cut, copy, and paste operations between any apps.|**Policy managed apps with paste in**|
-|**Restrict web content to display in the Managed Browser**|When this setting is enabled, any links in the app will be opened in the Managed Browser.<br /><br />For devices that are not enrolled in Intune, you can restrict web links in policy-managed apps to only open in the Managed Browser app using the mobile app management policy.<br />If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](../Topic/Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md).|**Yes**|
-|**Encrypt app data**|For apps that are associated with a [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] mobile app management policy, encryption is provided by Microsoft. Data is encrypted synchronously during file I/O operations according to the setting in the mobile app management policy.<br /><br />Managed apps on Android use AES-128 encryption in CBC mode utilizing the platform cryptography libraries. The encryption method is not FIPS 140-2 certified. SHA-256 encryption is supported as an explicit instruction using the SigAlg parameter and will only work on devices 4.2 and above. Content on the device storage is always be encrypted.<br /><br />When you set this to **Yes**, the end-user is required to setup and use a PIN to access their device.  If there is not PIN setup for device access, the apps will not launch and the end-user will be prompted to set a PIN with a message -*“Your company has required that you must first enable a device PIN to access this application.”*|Encryption option is not selected|
+|**Restrict web content to display in the Managed Browser**|When this setting is enabled, any links in the app will be opened in the Managed Browser.<br /><br />For devices that are not enrolled in Intune, you can restrict web links in policy-managed apps to only open in the Managed Browser app using the mobile app management policy.<br />If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md).|**Yes**|
+|**Encrypt app data**|For apps that are associated with a [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] mobile app management policy, encryption is provided by Microsoft. Data is encrypted synchronously during file I/O operations according to the setting in the mobile app management policy.<br /><br />Managed apps on Android use AES-128 encryption in CBC mode utilizing the platform cryptography libraries. The encryption method is not FIPS 140-2 certified. SHA-256 encryption is supported as an explicit instruction using the SigAlg parameter and will only work on devices 4.2 and above. Content on the device storage is always be encrypted.<br /><br />When you set this to **Yes**, the end-user is required to setup and use a PIN to access their device.  If there is not PIN setup for device access, the apps will not launch and the end-user will be prompted to set a PIN with a message -*“Your company has required that you must first enable a device PIN to access this application.”*|Encryption option is not selected|
 **Android access policy settings**
 
 ||||
@@ -191,8 +191,8 @@ If you are testing and would like to see the changed policy immediately, sign ou
 |**Block screen capture and Android Assistant (Android 6 Marshmallow or later)**|Select **Yes** to specify that the screen capture and **Android Assistant** capabilities of the device are blocked when using this app.||
 
 ### <a name="bkmk_nextsteps"></a>Next steps
-[Monitor mobile app management policies with Microsoft Intune](../Topic/Monitor-mobile-app-management-policies-with-Microsoft-Intune.md)
+[Monitor mobile app management policies with Microsoft Intune](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ## See Also
-[Configure data loss prevention app policies with Microsoft Intune](../Topic/Configure-data-loss-prevention-app-policies-with-Microsoft-Intune.md)
+[Configure data loss prevention app policies with Microsoft Intune](configure-data-loss-prevention-app-policies-with-microsoft-intune.md)
 

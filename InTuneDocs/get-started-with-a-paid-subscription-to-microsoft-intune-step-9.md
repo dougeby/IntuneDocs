@@ -20,9 +20,9 @@ To set up mobile device management with Intune, you must  first set the mobile d
 2.  **Enable MDM for your device platform**
     Enable mobile device management for the device platform you want to manage. Depending on your platform, different requirements are needed:
 
-    -   **iOS and Mac OS X**: see [Set up iOS and Mac management with Microsoft Intune](../Topic/Set-up-iOS-and-Mac-management-with-Microsoft-Intune.md).
+    -   **iOS and Mac OS X**: see [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
-    -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](../Topic/Set-up-Windows-Phone-management-with-Microsoft-Intune.md).
+    -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
     -   **Android**: Android mobile devices allow users to enroll using the company portal app available from Google Play. No additional configuration in Intune is required.
 
@@ -40,7 +40,7 @@ To set up mobile device management with Intune, you must  first set the mobile d
 
 4.  Open the company portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.
 
-To learn more about mobile device management using [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](../Topic/Get-ready-to-enroll-devices-in-Microsoft-Intune.md).
+To learn more about mobile device management using [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md).
 
 **Prev** Step 8
 **Next** Post-configuration tasks

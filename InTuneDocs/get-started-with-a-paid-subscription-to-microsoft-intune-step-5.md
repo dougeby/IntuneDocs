@@ -11,7 +11,7 @@ author: Staciebarker
 ---
 
 # <a name="Step3"></a>Step 5: Create groups to organize users and devices
-Groups in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics) and use them to perform a wide variety of administrative tasks, from deploying policies for a set of users to deploying applications to a set of devices.
+Groups in [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics) and use them to perform a wide variety of administrative tasks, from deploying policies for a set of users to deploying applications to a set of devices.
 
 ## Create a device group
 Use device groups to deploy apps and updates, and configure other features. For example, set up a "My Devices" group using the following steps:
@@ -45,7 +45,7 @@ Use user groups to deploy software and device policies. For example, set up an "
 
 You can find the newly created group in the **Groups** list, in the **Groups** workspace, under **All Users**. From here, you can also edit or delete the group.
 
-To learn more about using groups, see [Use groups to manage users and devices with Microsoft Intune](../Topic/Use-groups-to-manage-users-and-devices-with-Microsoft-Intune.md).
+To learn more about using groups, see [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
 **Prev** Step 6
 **Next** Step 8

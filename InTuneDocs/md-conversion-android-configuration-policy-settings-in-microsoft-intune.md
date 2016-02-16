@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 33a7dae7-5fee-431c-bfcf-698abf356075
 ---
 # MD Conversion - Android configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)]**Android general configuration policy** to configure settings for:
+Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)]**Android general configuration policy** to configure settings for:
 
 -   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
@@ -39,7 +39,7 @@ Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)]**Android general c
 The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
 
 ## <a name="BKMK_Settings"></a>Mobile device security policy settings for Android devices
-If the setting you are looking for does not appear in this list, you might be able to create it using an Android custom policy that lets you use OMA-URI settings to control the device. For more information, see [Android custom policy settings in Microsoft Intune](../Topic/Android-custom-policy-settings-in-Microsoft-Intune.md).
+If the setting you are looking for does not appear in this list, you might be able to create it using an Android custom policy that lets you use OMA-URI settings to control the device. For more information, see [Android custom policy settings in Microsoft Intune](android-custom-policy-settings-in-microsoft-intune.md).
 
 ### <a name="BKMK_sec"></a>Password settings
 
@@ -139,7 +139,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |----------------|--------------------|
 |**Report noncompliance when users install the listed apps**|Lists the apps that are not managed by Intune which users are not allowed to install and run.|
 |**Do not report noncompliance when users install the listed apps**|Lists the apps that users are allowed to install. Users cannot install any other apps. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />[How to specify URLs to app stores](../Topic/iOS-configuration-policy-settings-in-Microsoft-Intune.md#BKMK_URL)|
+|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />[How to specify URLs to app stores](ios-configuration-policy-settings-in-microsoft-intune.md#BKMK_URL)|
 |**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|
 |**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
@@ -149,7 +149,7 @@ Specify the following settings for **Samsung KNOX devices**:
 
 |Setting name|More information|
 |----------------|--------------------|
-|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then select the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.<br /><br />[How to specify URLs to app stores](../Topic/iOS-configuration-policy-settings-in-Microsoft-Intune.md#BKMK_URL)|
+|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then select the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.<br /><br />[How to specify URLs to app stores](ios-configuration-policy-settings-in-microsoft-intune.md#BKMK_URL)|
 |**Allow volume buttons**|Enables or disables the use of the volume buttons on the device.|
 |**Allow screen sleep wake button**|Enables or disables the screen sleep wake button on the device.|
 
@@ -157,7 +157,7 @@ Specify the following settings for **Samsung KNOX devices**:
 
 1.  Deploy the configuration policy to one or more groups of users or devices in your organization.
 
-For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 A status summary and alerts In the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
@@ -184,5 +184,5 @@ Open the installation page for the app, and copy the URL to the clipboard. You c
 ## Next Steps
 
 ## See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
+[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
 

@@ -13,9 +13,9 @@ robots: noindex,nofollow
 # Help for Managed Apps
 
 ## What are managed apps?
-To help protect company data on a device that has been enrolled with [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)], your IT department can use managed apps.
+To help protect company data on a device that has been enrolled with [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)], your IT department can use managed apps.
 
-Managed apps work similar to other apps, but must be installed by your IT department after your device enrolls with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. A managed app that you install directly on a device will not work with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] and will need to be removed and then reinstalled by your IT department using [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
+Managed apps work similar to other apps, but must be installed by your IT department after your device enrolls with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]. A managed app that you install directly on a device will not work with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] and will need to be removed and then reinstalled by your IT department using [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
 
 ## How do they work?
 When data, for example a document, spreadsheet, etc., is protected by managed apps, you must use a managed app to access that data. If a managed app is required (and installed), it will open automatically. If a required app is not available, certain operations, like opening a document or accessing a web link from within a managed document, might not be available.

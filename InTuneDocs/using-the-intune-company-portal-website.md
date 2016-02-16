@@ -32,9 +32,9 @@ You can do most of the same tasks on the **Company Portal website** that you can
 
 |Device type|What happens when I install and Company Portal and enroll a device in Intune?|How do I enroll my device?|What is the Company Portal app?|
 |---------------|---------------------------------------------------------------------------------|------------------------------|-----------------------------------|
-|![](../Image/Enroll-Android-logo.JPG)|[ What happens when I install the Android Company Portal app and enroll a device in Intune?](http://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_what_happs_add)|[Enroll your Android device in Intune](http://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_enroll_devc)|[Install and sign in to the Android Intune Company portal app](http://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_install_cp_app)|
-|![](../Image/Enroll-Apple-logo.JPG)|[What happens when I install the iOS Company Portal app and enroll a device in Intune?](http://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_what_happ_enroll)|[Enroll your iOS device in Intune](http://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_enroll_your_device)|[Install and sign in to the iOS Intune Company portal](http://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_signin_cp)|
-|![](../Image/Enroll-windows-logo.JPG)|[What happens when I install the Windows Company Portal app and enroll a device in Intune?](http://technet.microsoft.com/library/mt427782.aspx#BKMK_what_happns_enroll_all)|[Enroll your Windows device in Intune](http://technet.microsoft.com/library/mt427782.aspx#BKMK_windows_enroll_instrucs)|[Enroll your Windows device in Intune](http://technet.microsoft.com/library/mt427782.aspx#BKMK_windows_enroll_instrucs) (also describes the Company Portal app)|
+|![](/media/Enroll-Android-logo.JPG)|[ What happens when I install the Android Company Portal app and enroll a device in Intune?](http://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_what_happs_add)|[Enroll your Android device in Intune](http://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_enroll_devc)|[Install and sign in to the Android Intune Company portal app](http://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_install_cp_app)|
+|![](/media/Enroll-Apple-logo.JPG)|[What happens when I install the iOS Company Portal app and enroll a device in Intune?](http://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_what_happ_enroll)|[Enroll your iOS device in Intune](http://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_enroll_your_device)|[Install and sign in to the iOS Intune Company portal](http://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_signin_cp)|
+|![](/media/Enroll-windows-logo.JPG)|[What happens when I install the Windows Company Portal app and enroll a device in Intune?](http://technet.microsoft.com/library/mt427782.aspx#BKMK_what_happns_enroll_all)|[Enroll your Windows device in Intune](http://technet.microsoft.com/library/mt427782.aspx#BKMK_windows_enroll_instrucs)|[Enroll your Windows device in Intune](http://technet.microsoft.com/library/mt427782.aspx#BKMK_windows_enroll_instrucs) (also describes the Company Portal app)|
 
 ## <a name="BKMK_iwp_reset_passcode"></a>Reset your passcode
 If you lose your device passcode for a device that you have enrolled in Intune, you can use the Company Portal website to reset it.
@@ -48,15 +48,15 @@ To reset your passcode:
 
 2.  Tap **Reset Passcode**.
 
-    ![](../Image/IW-Help-pics/iwp-1-tap-reset-passcode.png)
+    ![](/media/IW-Help-pics/iwp-1-tap-reset-passcode.png)
 
 3.  Tap **Sign out**, and then sign back in with your work or school credentials. You have to sign back in within five minutes.
 
-    ![](../Image/IW-Help-pics/iwp-2-sign-out.png)
+    ![](/media/IW-Help-pics/iwp-2-sign-out.png)
 
 4.  Tap **Reset Passcode**.
 
-    ![](../Image/IW-Help-pics/iwp-3-tap-reset-passcode-after-signin.png)
+    ![](/media/IW-Help-pics/iwp-3-tap-reset-passcode-after-signin.png)
 
     Check the table to see how Reset Passcode works on your device.
 

@@ -12,11 +12,11 @@ author: Staciebarker
 # Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool
 Use the **Microsoft Intune App Wrapping Tool for Android** to modify the behavior of your in-house Android apps to let you configure features of the app without modifying the code of the app itself.
 
-The tool is a Windows command line application that runs in PowerShell and creates a ‘wrapper’ around your app. Once the app is processed, you can then change the app’s functionality using an [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] mobile application management policy (see [Configure and deploy mobile application management policies in the Microsoft Intune console](../Topic/Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md)).
+The tool is a Windows command line application that runs in PowerShell and creates a ‘wrapper’ around your app. Once the app is processed, you can then change the app’s functionality using an [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] mobile application management policy (see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)).
 
 If your app is using the Azure Active Directory Authentication Library (ADAL), you must complete the steps in [How to wrap apps that use the Azure Active Directory Library (ADAL)](#BKMK_ADAL_android) before you wrap your app. If you are unsure if your app uses this library, contact the developer of the app.
 
-Before running the tool, review the [Security considerations for running the app wrapping tool](../Topic/Prepare-Android-apps-for-mobile-application-management-with-the-Microsoft-Intune-App-Wrapping-Tool.md#BKMK_androidappwraptool). To download the tool, see [Microsoft Intune App Wrapping Tool for Android](http://www.microsoft.com/en-us/download/details.aspx?id=47267).
+Before running the tool, review the [Security considerations for running the app wrapping tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#BKMK_androidappwraptool). To download the tool, see [Microsoft Intune App Wrapping Tool for Android](http://www.microsoft.com/en-us/download/details.aspx?id=47267).
 
 ## Step 1: Fulfill the prerequisites for using the app wrapping tool
 
@@ -111,10 +111,10 @@ For apps that use ADAL, the following must be true:
 
 -   The app must incorporate an ADAL version greater than or equal to 1.0.2.
 
--   The developer must [grant their app access to the Intune Mobile Application Management resource](../Topic/Prepare-iOS-apps-for-mobile-application-management-with-the-Microsoft-Intune-App-Wrapping-Tool.md#BKMK_AD).
+-   The developer must [grant their app access to the Intune Mobile Application Management resource](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#BKMK_AD).
 
 ### <a name="BKMK_review_IDs"></a>Step 2: Review the identifiers that you need to get when you register the app
-In the next step, you will use the Azure management portal to register your apps (which are using  ADAL with Azure Active Directory (AAD)) to get the unique identifiers listed in the following table. You then give the identifiers to the developer when you integrate ADAL with the app. For more information about these identifier values, see [Microsoft Azure Active Directory Authentication Library (ADAL) for Android](https://github.com/AzureAD/azure-activedirectory-library-for-android/blob/master/README.md).
+In the next step, you will use the Azure management portal to register your apps (which are using  ADAL with Azure Active Directory (AAD)) to get the unique identifiers listed in the following table. You then give the identifiers to the developer when you integrate ADAL with the app. For more information about these identifier values, see [Microsoft Azure Active Directory Authentication Library (ADAL) for Android](https://github.com/AzureAD/azure-activedirectory-library-for-android/blob/master/readme.md).
 
 |Identifier|More information|Default value|
 |--------------|--------------------|-----------------|
@@ -152,15 +152,15 @@ Keep the following points in mind as you wrap your app:
 -   The app wrapping tool does not search for ADAL binaries (if any) within the app. If the app links to an outdated version of the binaries, runtime errors may occur during login if you enabled authentication policies.
 
 -   To verify that the authentication was successful,
-                        [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] fetches the AAD token that is associated with the MAM resource-id. However, the token is not used in any call that would in turn verify the validity of the token. [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] only reads the user principal name (UPN) of the signed-in user to determine app access. The AAD token is not used for any further service calls.
+                        [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] fetches the AAD token that is associated with the MAM resource-id. However, the token is not used in any call that would in turn verify the validity of the token. [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] only reads the user principal name (UPN) of the signed-in user to determine app access. The AAD token is not used for any further service calls.
 
 -   Authentication tokens are shared between apps from the same publisher since they are stored in a shared keychain. To isolate a specific app, use a different signing certificate, provisioning profile keystore, and key alias for that app.
 
--   Double login prompts are prevented if you provide your client application’s Client ID and Authority URI. You need to register the Client ID to enable it to access the published [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] MAM resource ID in the AAD Dashboard. If you don't register the Client ID, users get a login failure when the app runs.
+-   Double login prompts are prevented if you provide your client application’s Client ID and Authority URI. You need to register the Client ID to enable it to access the published [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] MAM resource ID in the AAD Dashboard. If you don't register the Client ID, users get a login failure when the app runs.
 
 ## Next Steps
-To learn more about how to deploy your wrapped apps, see [Deploy apps to mobile devices in Microsoft Intune - deleted](../Topic/Deploy-apps-to-mobile-devices-in-Microsoft-Intune---deleted.md).
+To learn more about how to deploy your wrapped apps, see [Deploy apps to mobile devices in Microsoft Intune - deleted](deploy-apps-to-mobile-devices-in-microsoft-intune---deleted.md).
 
 ## See Also
-[Configure and deploy mobile application management policies in the Microsoft Intune console](../Topic/Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md)
+[Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 

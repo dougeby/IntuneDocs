@@ -11,7 +11,7 @@ author: Staciebarker
 ---
 
 # <a name="BKMK_ConfigureCompanyPortal"></a>Step 7: Customize the company portal
-The [!INCLUDE[wit_iwportal_1](../Token/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
+The [!INCLUDE[wit_iwportal_1](/includes/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 
 When you customize the company portal, the configurations apply to both the company portal website and company portal apps.
 
@@ -33,7 +33,7 @@ When you customize the company portal, the configurations apply to both the comp
     ||Website name|40|This name is the friendly name that is displayed for the URL to the support website.<br /><br />If you specify a support website URL and no friendly name, then **Go to IT website** is displayed on the **Contact IT** page in the company portal.|
     |Customization|Theme color|Not applicable|Select a theme color to apply to the company portal.|
     ||Include company logo|Not applicable|When you enable this option, you can upload your company logo to show in your company portal. You can upload two logos: one logo that is displayed when the company portal background is white, and one logo that is displayed when the company portal background uses your selected theme color.<br /><br />Each logo must be a .png or .jpg file type and have a maximum resolution of 400 x 100 pixels and be 750 KB or less in size.|
-    ||Choose a background for [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)] company portal app|Not applicable|This setting affects the background for the [!INCLUDE[win8_client_2](../Token/win8_client_2_md.md)] company portal app only.|
+    ||Choose a background for [!INCLUDE[win8_client_2](/includes/win8_client_2_md.md)] company portal app|Not applicable|This setting affects the background for the [!INCLUDE[win8_client_2](/includes/win8_client_2_md.md)] company portal app only.|
 
 3.  Click **Save** to save your changes.
 

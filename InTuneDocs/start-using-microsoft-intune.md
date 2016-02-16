@@ -10,8 +10,8 @@ ms.assetid: 1bfd1a23-681d-4cc8-834c-c7856d69d409
 author: Lindavr
 ---
 # Start using Microsoft Intune
-[![](../Image/Nav-Icons/WIT_Tile_W_Overview.png)](https://technet.microsoft.com/library/dn646960.aspx/?WT.mc_id=IntuneOverview20150801)![](../Image/Nav-Icons/WIT_Tile_W_GetStartedHightlight.png)[![](../Image/Nav-Icons/WIT_Tile_W_EnrollDevices.png)](https://technet.microsoft.com/library/dn646962.aspx/?WT.mc_id=IntuneEnroll20150801)[![](../Image/Nav-Icons/WIT_Tile_W_ManageDevices.png)](https://technet.microsoft.com/library/mt313202.aspx/?WT.mc_id=IntuneConfig20150801)[![](../Image/Nav-Icons/WIT_Tile_W_ManageApps.png)](https://technet.microsoft.com/library/dn646965.aspx/?WT.mc_id=IntuneDeploy20150801)[![](../Image/Nav-Icons/WIT_Tile_W_ProtectResources.png)](https://technet.microsoft.com/library/mt313203.aspx/?WT.mc_id=IntuneProtect20150801)[![](../Image/Nav-Icons/WIT_Tile_W_RetireData.png)](https://technet.microsoft.com/library/mt313204.aspx/?WT.mc_id=IntuneRetire20150801)[![](../Image/Nav-Icons/WIT_Tile_W_TechnicalReference.png)](https://technet.microsoft.com/library/mt282239.aspx/?WT.mc_id=IntuneTR20150801)[![](../Image/Nav-Icons/WIT_Tile_W_Troubleshooting.png)](https://technet.microsoft.com/library/mt345521.aspx)
-![](../Image/Nav-Icons/WIT_Tile_Bar_GetStarted.png)
+[![](/media/Nav-Icons/WIT_Tile_W_Overview.png)](https://technet.microsoft.com/library/dn646960.aspx/?WT.mc_id=IntuneOverview20150801)![](/media/Nav-Icons/WIT_Tile_W_GetStartedHightlight.png)[![](/media/Nav-Icons/WIT_Tile_W_EnrollDevices.png)](https://technet.microsoft.com/library/dn646962.aspx/?WT.mc_id=IntuneEnroll20150801)[![](/media/Nav-Icons/WIT_Tile_W_ManageDevices.png)](https://technet.microsoft.com/library/mt313202.aspx/?WT.mc_id=IntuneConfig20150801)[![](/media/Nav-Icons/WIT_Tile_W_ManageApps.png)](https://technet.microsoft.com/library/dn646965.aspx/?WT.mc_id=IntuneDeploy20150801)[![](/media/Nav-Icons/WIT_Tile_W_ProtectResources.png)](https://technet.microsoft.com/library/mt313203.aspx/?WT.mc_id=IntuneProtect20150801)[![](/media/Nav-Icons/WIT_Tile_W_RetireData.png)](https://technet.microsoft.com/library/mt313204.aspx/?WT.mc_id=IntuneRetire20150801)[![](/media/Nav-Icons/WIT_Tile_W_TechnicalReference.png)](https://technet.microsoft.com/library/mt282239.aspx/?WT.mc_id=IntuneTR20150801)[![](/media/Nav-Icons/WIT_Tile_W_Troubleshooting.png)](https://technet.microsoft.com/library/mt345521.aspx)
+![](/media/Nav-Icons/WIT_Tile_Bar_GetStarted.png)
 
 ## Start with a free trial
 Use the [Start with a 30-day trial](https://technet.microsoft.com/library/dn646967.aspx) guidance to get your trial version of Intune set up quickly. The free trial allows you to test up to 100 user licenses and comes with free support.
@@ -48,5 +48,5 @@ With every Microsoft Intune subscription, Microsoft Support provides global tech
 If your company has more than 150 Intune licenses, and you're looking for help with Intune deployment, consider signing up for the [Intune Onboarding benefit](https://technet.microsoft.com/library/mt228265.aspx).
 
 ## See Also
-[Documentation for Microsoft Intune](../Topic/Documentation-for-Microsoft-Intune.md)
+[Documentation for Microsoft Intune](documentation-for-microsoft-intune.md)
 

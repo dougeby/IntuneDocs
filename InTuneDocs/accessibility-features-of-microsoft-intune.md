@@ -10,12 +10,12 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 author: robstackmsft
 ---
 # Accessibility Features of Microsoft Intune
-In addition to accessibility features and tools in Microsoft Windows, the following features make [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] more accessible for people with disabilities:
+In addition to accessibility features and tools in Microsoft Windows, the following features make [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] more accessible for people with disabilities:
 
 -   Using keyboard shortcuts
 
 > [!NOTE]
-> [!INCLUDE[accessibility6](../Token/accessibility6_md.md)]
+> [!INCLUDE[accessibility6](/includes/accessibility6_md.md)]
 
 ## Using Keyboard Shortcuts
 
@@ -33,5 +33,5 @@ In addition to accessibility features and tools in Microsoft Windows, the follow
 |Move to the next application group|Up arrow|
 |Display the actions for a selected device|Right arrow|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] portals are navigable using the standard Internet Explorer keyboard shortcuts.
+> [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] portals are navigable using the standard Internet Explorer keyboard shortcuts.
 

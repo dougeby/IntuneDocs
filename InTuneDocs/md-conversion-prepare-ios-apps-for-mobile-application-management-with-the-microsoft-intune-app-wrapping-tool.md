@@ -10,7 +10,7 @@ ms.assetid: 7c228330-dc83-4da2-87c0-1991a267a90b
 # MD Conversion - Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool
 Use the **Microsoft Intune App Wrapping Tool for iOS** to modify the behavior of in-house iOS apps by restricting features of the app without changing the code of the app itself.
 
-The tool is a Mac OS command line application that creates a ‘wrapper’ around an app. Once an app is processed, you can then change the apps functionality using an  [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] mobile application management policy that you configure (see [Configure and deploy mobile application management policies in the Microsoft Intune console](../Topic/Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md)).
+The tool is a Mac OS command line application that creates a ‘wrapper’ around an app. Once an app is processed, you can then change the apps functionality using an  [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] mobile application management policy that you configure (see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)).
 
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
@@ -22,7 +22,7 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://ww
 |Signing certificate and provisioning profile|You must have an Apple signing certificate and provisioning profile. See your [Apple developer documentation](https://developer.apple.com/).|
 |Processing an app with the App Wrapping Tool|Apps must be developed and signed by your company, or an independent software vendor (ISV). You cannot use this tool to process apps from the Apple Store. Apps must be written for iOS 7.0 or later. Apps must also be in the Position Independent Executable (PIE) format. For more information about the PIE format, see your Apple developer documentation. Lastly, the app must have the extension **.app**, or **.ipa** format.|
 |Apps the wrapping tool cannot process|Encrypted apps, unsigned apps, and apps with extended file attributes.|
-|Apps that use the Azure Active Directory Library (ADAL)|If your app uses ADAL, the app must incorporate an ADAL version greater than or equal to 1.0.2, and the developer must grant their app access to the Intune Mobile Application Management resource.<br /><br />See [Information for apps that use the Azure Active Directory Library (ADAL)](../Topic/Prepare-iOS-apps-for-mobile-application-management-with-the-Microsoft-Intune-App-Wrapping-Tool.md#BKMK_ADAL) in this article for details about how to use ADAL.|
+|Apps that use the Azure Active Directory Library (ADAL)|If your app uses ADAL, the app must incorporate an ADAL version greater than or equal to 1.0.2, and the developer must grant their app access to the Intune Mobile Application Management resource.<br /><br />See [Information for apps that use the Azure Active Directory Library (ADAL)](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#BKMK_ADAL) in this article for details about how to use ADAL.|
 |Setting entitlements for your app|You must set entitlements, which give the app additional permissions and capabilities beyond those typically granted, before you wrap the app. See [Setting app entitlements](#BKMK_ios_entitlements) for instructions.|
 
 ## Step 2: Install the app wrapping tool
@@ -67,14 +67,14 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://ww
 
 2.  After processing completes, the message **The application was successfully wrapped** will be displayed.
 
-    If an error occurs, see [Error messages](../Topic/Prepare-iOS-apps-for-mobile-application-management-with-the-Microsoft-Intune-App-Wrapping-Tool.md#BKMK_Error) for help.
+    If an error occurs, see [Error messages](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#BKMK_Error) for help.
 
-3.  The wrapped app is saved in the output folder you specified previously. You can now upload the app into [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] and associate it with a mobile application management policy. To learn more, see [Deploy apps to mobile devices in Microsoft Intune - deleted](../Topic/Deploy-apps-to-mobile-devices-in-Microsoft-Intune---deleted.md).
+3.  The wrapped app is saved in the output folder you specified previously. You can now upload the app into [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] and associate it with a mobile application management policy. To learn more, see [Deploy apps to mobile devices in Microsoft Intune - deleted](deploy-apps-to-mobile-devices-in-microsoft-intune---deleted.md).
 
     > [!IMPORTANT]
     > You must upload the app as a new app. You cannot update an older, unwrapped version of the app.
 
-    You can now deploy the app to your [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] groups, and the app will now run on the device using the app restrictions you specify.
+    You can now deploy the app to your [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] groups, and the app will now run on the device using the app restrictions you specify.
 
 ## Error messages and log files
 Use the following information to troubleshoot issues you have with the app wrapping tool.
@@ -171,7 +171,7 @@ When you do not supply the above values to the tool; the following additional va
 |---------------|-----------|
 |Provisioning profile|**Make sure that the provisioning profile is valid before you include it** - The app wrapping tool does not check whether the provisioning profile is expired when processing an iOS app. If an expired provisioning profile is specified, the app wrapping tool will include the expired provisioning profile, and you will not know there is a problem until the app fails to install on an iOS device.|
 |Certificate|**Make sure that the certificate is valid before you specify it** - The tool does not check whether a certificate is expired when processing iOS apps. If the hash for an expired certificate is provided, the tool will process and sign the app, but it will fail to install on devices.<br /><br />**Make sure that the certificate provided for signing the packaged application has a match in the provisioning profile** - The tool does not validate if the provisioning profile has a match for the certificate provided for signing the wrapped application.|
-|Authentication|A device must have a pin set for encryption to work. On devices to which you have deployed a wrapped application, touching the status bar on the device will require the user to re-authenticate with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. The default policy in a wrapped application is *authentication on re-launch*. iOS handles any external notification (for example a phone call) as exiting the app and then re-launching it.<br /><br />For wrapped apps, the first user who signs into any wrapped app from the same publisher is cached. After this point, only that user is allowed to access the app. To reset the user, the device has to be unenrolled and then re-enrolled.|
+|Authentication|A device must have a pin set for encryption to work. On devices to which you have deployed a wrapped application, touching the status bar on the device will require the user to re-authenticate with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]. The default policy in a wrapped application is *authentication on re-launch*. iOS handles any external notification (for example a phone call) as exiting the app and then re-launching it.<br /><br />For wrapped apps, the first user who signs into any wrapped app from the same publisher is cached. After this point, only that user is allowed to access the app. To reset the user, the device has to be unenrolled and then re-enrolled.|
 
 #### Troubleshooting and technical notes about ADAP
 
@@ -179,11 +179,11 @@ When you do not supply the above values to the tool; the following additional va
 
 -   The tool does not search for ADAL binaries (if any) within the app. If the app links to an outdated version, there may be runtime errors during login if authentication policies are enabled.
 
--   [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] fetches the AAD token to the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] MAM resource-id for authentication. However, it is not used in any call that would in-turn verify the validity of the token. [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] only reads the UPN of the signed-in user to determine app access. The AAD token is not used for any further service calls.
+-   [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] fetches the AAD token to the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] MAM resource-id for authentication. However, it is not used in any call that would in-turn verify the validity of the token. [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] only reads the UPN of the signed-in user to determine app access. The AAD token is not used for any further service calls.
 
 -   Authentication tokens are shared between apps from the same publisher since they are stored in shared keychain. If you want to isolate a specific app, then you must use a different signing certificate and provisioning profile for that app.
 
--   Double login prompts are prevented if you provide your client application’s Client ID and Redirect URI. This Client ID needs to be registered to access the published [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] MAM resource ID in the AAD Dashboard. Failure to do so will result in a login failure when the app runs.
+-   Double login prompts are prevented if you provide your client application’s Client ID and Redirect URI. This Client ID needs to be registered to access the published [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] MAM resource ID in the AAD Dashboard. Failure to do so will result in a login failure when the app runs.
 
 ## <a name="BKMK_ios_entitlements"></a>Setting app entitlements
 Before wrapping your app, you can grant **entitlements** to give the app  additional permissions and capabilities that exceed what an app typically can do.   An **entitlement file** is used during code signing to specify special permissions within your app (for example, access to a shared keychain). Specific app services, called **capabilities**, are enabled within Xcode during app development. Once enabled, the capabilities are reflected in your entitlements file. For more information about entitlements and capabilities, see [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in the iOS Developer Library. For a complete list of supported capabilities, see [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
@@ -266,7 +266,7 @@ Use the following security and privacy best practices when you use the app wrapp
 
 -   The signing certificate, provisioning profile and the line-of-business app you specify must be on the same Mac computer that you use to run the app wrapping tool. If the files are on a UNC path, ensure that these are accessible from the Mac computer. The path must be secured via IPsec or SMB signing.
 
-    The wrapped application imported into the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console should be on the same computer that you run the tool on. If the file is on a UNC path, ensure that it is accessible on the computer running the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console. The path must be secured via IPsec or SMB signing.
+    The wrapped application imported into the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console should be on the same computer that you run the tool on. If the file is on a UNC path, ensure that it is accessible on the computer running the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console. The path must be secured via IPsec or SMB signing.
 
 -   The environment where the app wrapping tool is downloaded from the Microsoft Download Center site needs to be secured via IPsec or SMB signing.
 
@@ -279,5 +279,5 @@ Use the following security and privacy best practices when you use the app wrapp
 -   When users monitor the documents folder on their device from within a wrapped app, they might see a folder named **.msftintuneapplauncher**. If this folder is changed or deleted, this might affect the correct functioning of restricted apps.
 
 ## See Also
-[Configure and deploy mobile application management policies in the Microsoft Intune console](../Topic/Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md)
+[Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 

@@ -16,9 +16,9 @@ In most scenarios, you will [enroll your Windows device with Intune](http://docs
 
 -   **Windows Firewall policy** - This helps to ensure that no PC used by your company has an inactive or improperly-configured Windows Firewall.
 
--   **Anti-malware protection** - [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] includes Endpoint Protection, which helps protect your PCs from malware.
+-   **Anti-malware protection** - [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] includes Endpoint Protection, which helps protect your PCs from malware.
 
--   **Remote assistance** - [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] allows users to contact IT support staff, who can then provide assistance using a remote desktop feature that is included with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
+-   **Remote assistance** - [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] allows users to contact IT support staff, who can then provide assistance using a remote desktop feature that is included with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
 
 -   **Software license management** - Track how many software licenses are available, and how many available licenses are being used.
 
@@ -35,7 +35,7 @@ Consider using the Intune computer client when you want to:
 
 ## <a name="BKMK_ClientReqs"></a>Requirements for PC management
 ###**Operating Systems**
-These PC operating systems (both x86 and x64) support the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] PC client:
+These PC operating systems (both x86 and x64) support the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] PC client:
 
 -   **Windows Vista** - Business, Enterprise and Ultimate versions.
 
@@ -48,7 +48,7 @@ These PC operating systems (both x86 and x64) support the [!INCLUDE[wit_nextref]
 -   **Windows 10** - Professional and Enterprise versions.
 
 ###**Hardware**:
-The following are minimum hardware requirements for installing the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] client:
+The following are minimum hardware requirements for installing the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] client:
 
 |Requirement|More information|
 |---------------|--------------------|
@@ -56,17 +56,17 @@ The following are minimum hardware requirements for installing the [!INCLUDE[wit
 |Processor and Memory|Refer to the processor and RAM requirements for the PC's operating system.|
 |Disk space|200 MB available disk space before the client software is installed.|
 ###**Further requirements**: 
-The following are software requirements for installing the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] client:
+The following are software requirements for installing the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] client:
 
 |Requirement|More information|
 |---------------|--------------------|
 |Administrative permissions|The account that installs the client software must have local administrator permissions to that PC.|
 |Windows Installer 3.1|The PC must have, at a minimum, Windows Installer 3.1 installed.|
-|Remove incompatible client software|Before you install the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] client software, you must uninstall the following client software from that PC:<br /><br />-   Any version of [!INCLUDE[cm5short](../Token/cm5short_md.md)]<br />-   Any version of [!INCLUDE[sccmshortname](../Token/sccmshortname_md.md)]<br />-   Any version of Microsoft Systems Management Server (SMS)|
+|Remove incompatible client software|Before you install the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] client software, you must uninstall the following client software from that PC:<br /><br />-   Any version of [!INCLUDE[cm5short](/includes/cm5short_md.md)]<br />-   Any version of [!INCLUDE[sccmshortname](/includes/sccmshortname_md.md)]<br />-   Any version of Microsoft Systems Management Server (SMS)|
 
 
 
 ## See Also
-[Introduction to Microsoft Intune](../Topic/Introduction-to-Microsoft-Intune.md)
-[Manage Windows PCs with Microsoft Intune](../Topic/Manage-Windows-PCs-with-Microsoft-Intune.md)
+[Introduction to Microsoft Intune](introduction-to-microsoft-intune.md)
+[Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 

@@ -30,10 +30,10 @@ Intune supports “bring your own device” (BYOD) by letting users enroll their
     You can also enable Active Directory or Azure Active Directory synchronization. For more information about integrating other Azure Active Directory users with Intune, see [Directory synchronization roadmap](http://go.microsoft.com/fwlink/?LinkId=511540) or click **Other ways to add users** in the Intune Account Portal.
 
 2.  **Create groups**  (Optional)
-    Groups give flexibility for managing devices and users. You can set up groups to suit your organizational needs by geographic location, department, or hardware characteristics, for example.   See [Use groups to manage users and devices with Microsoft Intune](../Topic/Use-groups-to-manage-users-and-devices-with-Microsoft-Intune.md).
+    Groups give flexibility for managing devices and users. You can set up groups to suit your organizational needs by geographic location, department, or hardware characteristics, for example.   See [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
 3.  **Add policies for devices** (Optional)
-    Policies are groups of settings that control features on devices. Most MDM policies are platform specific. You create policies using templates  containing recommended or customized settings, and then deploy them to groups. See [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    Policies are groups of settings that control features on devices. Most MDM policies are platform specific. You create policies using templates  containing recommended or customized settings, and then deploy them to groups. See [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 4.  **Set device enrollment limit** (Optional) 
     To limit the number of mobile devices a user can enroll, log in to the [Microsoft Intune administration console](http://manage.microsoft.com), click **Admin** &gt; **Mobile Device Management** &gt; **Enrollment rules**. Select the maximum number of devices a user can enroll and then click **Save**.
@@ -64,10 +64,10 @@ You can publish terms and conditions that your users will see when they first us
 Terms and conditions apply to users, not to devices, so users will only have to accept each version once to visit the company portal from any of their devices.
 
 #### Terms and conditions reports
-**Terms and Conditions** reports show which users accepted your terms and conditions, the most recent version number they accepted, and the date they accepted that version. Export the report to keep an archive of when users accepted previous versions. See [Understand Microsoft Intune operations by using reports](../Topic/Understand-Microsoft-Intune-operations-by-using-reports.md).
+**Terms and Conditions** reports show which users accepted your terms and conditions, the most recent version number they accepted, and the date they accepted that version. Export the report to keep an archive of when users accepted previous versions. See [Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md).
 
 ### How users enroll their mobile devices
-Once you’ve set up enrollment, you can invite users to enroll their devices. For guidance helping users to enroll their personal devices, download [Microsoft Intune Enrollment Instructions](http://go.microsoft.com/fwlink/?LinkID=534864).  You can also refer to [What to tell your end users about using Microsoft Intune](../Topic/What-to-tell-your-end-users-about-using-Microsoft-Intune.md).
+Once you’ve set up enrollment, you can invite users to enroll their devices. For guidance helping users to enroll their personal devices, download [Microsoft Intune Enrollment Instructions](http://go.microsoft.com/fwlink/?LinkID=534864).  You can also refer to [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md).
 
 General instructions:
 
@@ -100,18 +100,18 @@ General instructions:
 
 **Once devices are enrolled you can:**
 
--   [Understand your devices with inventory in Microsoft Intune](../Topic/Understand-your-devices-with-inventory-in-Microsoft-Intune.md)
+-   [Understand your devices with inventory in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md)
 
--   [Enable access to company resources with Microsoft Intune - deleted](../Topic/Enable-access-to-company-resources-with-Microsoft-Intune---deleted.md)
+-   [Enable access to company resources with Microsoft Intune - deleted](enable-access-to-company-resources-with-microsoft-intune---deleted.md)
 
--   [Deploy apps to mobile devices in Microsoft Intune - deleted](../Topic/Deploy-apps-to-mobile-devices-in-Microsoft-Intune---deleted.md)
+-   [Deploy apps to mobile devices in Microsoft Intune - deleted](deploy-apps-to-mobile-devices-in-microsoft-intune---deleted.md)
 
--   [Manage settings and features on your devices with Microsoft Intune policies](../Topic/Manage-settings-and-features-on-your-devices-with-Microsoft-Intune-policies.md)
+-   [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
--   [Help protect your data with remote wipe, remote lock, or passcode reset using Microsoft Intune](../Topic/Help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-Microsoft-Intune.md)
+-   [Help protect your data with remote wipe, remote lock, or passcode reset using Microsoft Intune](Help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-microsoft-intune.md)
 
 ## See Also
-[Get ready to enroll devices in Microsoft Intune](../Topic/Get-ready-to-enroll-devices-in-Microsoft-Intune.md)
-[Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](../Topic/Enroll-corporate-owned-devices-with-the-Device-Enrollment-Manager-in-Microsoft-Intune.md)
+[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 [How to buy Intune](http://technet.microsoft.com/library/dn646949.aspx)
 

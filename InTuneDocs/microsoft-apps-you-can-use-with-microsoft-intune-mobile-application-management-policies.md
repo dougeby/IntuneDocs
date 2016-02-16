@@ -10,14 +10,14 @@ ms.assetid: 49023822-0aa7-4508-8119-3be8976d21d1
 author: robstackmsft
 ---
 # Microsoft apps you can use with Microsoft Intune mobile application management policies
-Use this topic to find out which Microsoft apps you can use with [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] mobile application management (MAM) policies.
+Use this topic to find out which Microsoft apps you can use with [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] mobile application management (MAM) policies.
 
-For information about how to use mobile application management policies, see [Configure and deploy mobile application management policies in the Microsoft Intune console](../Topic/Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md).
+For information about how to use mobile application management policies, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 > [!IMPORTANT]
 > The [Microsoft Intune application partners](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) page contains the latest information about apps from Microsoft and other companies that you can use with mobile application management policies and will, in future, replace this topic.
 
-If you have devices that are not enrolled in Intune, see [Get started with mobile app management policies in the Azure portal](../Topic/Get-started-with-mobile-app-management-policies-in-the-Azure-portal.md).
+If you have devices that are not enrolled in Intune, see [Get started with mobile app management policies in the Azure portal](get-started-with-mobile-app-management-policies-in-the-azure-portal.md).
 
 ## <a name="BKMK_Availapps"></a>List of Microsoft apps you can use with mobile application management (MAM) policies
 
@@ -25,7 +25,7 @@ If you have devices that are not enrolled in Intune, see [Get started with mobil
 
 -   [Intune Managed Browser](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) - A web browser that lets you manage the actions that users can perform, including the sites they can visit, and how links to content within the browser are opened.
 
-    When you deploy the managed browser, you can also configure a managed browser policy which lets you restrict the websites that users can visit. For more information, see [Manage Internet access using managed browser policies with Microsoft Intune](../Topic/Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md).
+    When you deploy the managed browser, you can also configure a managed browser policy which lets you restrict the websites that users can visit. For more information, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md).
 
 -   [Microsoft Word](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8)<sup>*</sup>
 
@@ -55,13 +55,13 @@ If you have devices that are not enrolled in Intune, see [Get started with mobil
 
 -   [Intune Managed Browser](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser&hl=en) - A web browser that lets you manage the actions that users can perform, including the sites they can visit, and how links to content within the browser are opened.
 
-    When you deploy the managed browser, you can also configure a managed browser policy which lets you restrict the websites that users can visit. For more information, see [Manage Internet access using managed browser policies with Microsoft Intune](../Topic/Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md).
+    When you deploy the managed browser, you can also configure a managed browser policy which lets you restrict the websites that users can visit. For more information, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md).
 
--   [Intune PDF Viewer](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.pdfviewer)<sup>**</sup> – Lets users view PDF files from [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] managed apps.
+-   [Intune PDF Viewer](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.pdfviewer)<sup>**</sup> – Lets users view PDF files from [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] managed apps.
 
--   [Intune AV Player](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.avplayer)<sup>**</sup> – Lets users access audio and video content from [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] managed apps.
+-   [Intune AV Player](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.avplayer)<sup>**</sup> – Lets users access audio and video content from [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] managed apps.
 
--   [Intune Image Viewer](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.imageviewer)<sup>**</sup> – Lets users view images from [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] managed apps.
+-   [Intune Image Viewer](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.imageviewer)<sup>**</sup> – Lets users view images from [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] managed apps.
 
 -   [Microsoft Office Mobile](https://play.google.com/store/apps/details?id=com.microsoft.office.officehub)
 
@@ -85,8 +85,8 @@ If you have devices that are not enrolled in Intune, see [Get started with mobil
 
 <sup>*</sup>Supports multi-identity. This means that Intune only applies management settings to corporate accounts or data in the app.
 
-<sup>**</sup> These viewer apps are only supported for devices that are enrolled in Intune. For devices that are not enrolled in Intune, you can use the Microsoft Rights Management (RMS) sharing app instead. For more information see [Create and deploy mobile app management policies with Microsoft Intune](../Topic/Create-and-deploy-mobile-app-management-policies-with-Microsoft-Intune.md) and [Viewing media files with the Rights Management sharing app](../Topic/End-user-experience-for-apps-associated-with-Microsoft-Intune-mobile-app-management-policies.md#bkmk_RMS).
+<sup>**</sup> These viewer apps are only supported for devices that are enrolled in Intune. For devices that are not enrolled in Intune, you can use the Microsoft Rights Management (RMS) sharing app instead. For more information see [Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) and [Viewing media files with the Rights Management sharing app](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies.md#bkmk_RMS).
 
 ## See Also
-[Configure and deploy mobile application management policies in the Microsoft Intune console](../Topic/Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md)
+[Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 

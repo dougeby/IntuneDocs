@@ -10,7 +10,7 @@ ms.assetid: 0c529f1e-2930-4ea8-91e1-024369076ba5
 author: robstackmsft
 ---
 # IP Ranges Version 2
-The following table lists the domains and services that [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] might access.
+The following table lists the domains and services that [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] might access.
 
 |**Purpose**|**Domain**|**Ports**|**IP address**|
 |-|-|-|-|

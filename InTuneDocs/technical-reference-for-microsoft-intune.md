@@ -10,43 +10,43 @@ ms.assetid: 110cbdbf-8f9b-4c1b-9e3e-184113cd711c
 author: Lindavr
 ---
 # Technical reference for Microsoft Intune
-[![](../Image/Nav-Icons/WIT_Tile_W_Overview.png)](https://technet.microsoft.com/library/dn646960.aspx/?WT.mc_id=IntuneOverview20150801)[![](../Image/Nav-Icons/WIT_Tile_W_GetStarted.png)](https://technet.microsoft.com/library/dn646953.aspx/?WT.mc_id=IntuneGS20150801)[![](../Image/Nav-Icons/WIT_Tile_W_EnrollDevices.png)](https://technet.microsoft.com/library/dn646962.aspx/?WT.mc_id=IntuneEnroll20150801)[![](../Image/Nav-Icons/WIT_Tile_W_ManageDevices.png)](https://technet.microsoft.com/library/mt313202.aspx/?WT.mc_id=IntuneConfig20150801)[![](../Image/Nav-Icons/WIT_Tile_W_ManageApps.png)](https://technet.microsoft.com/library/dn646965.aspx/?WT.mc_id=IntuneDeploy20150801)[![](../Image/Nav-Icons/WIT_Tile_W_ProtectResources.png)](https://technet.microsoft.com/library/mt313203.aspx/?WT.mc_id=IntuneProtect20150801)[![](../Image/Nav-Icons/WIT_Tile_W_RetireData.png)](https://technet.microsoft.com/library/mt313204.aspx/?WT.mc_id=IntuneRetire20150801)![](../Image/Nav-Icons/WIT_Tile_W_TechnicalReferenceHighlight.png)[![](../Image/Nav-Icons/WIT_Tile_W_Troubleshooting.png)](https://technet.microsoft.com/library/mt345521.aspx)
-![](../Image/Nav-Icons/WIT_Banner_TechnicalReference.png)
+[![](/media/Nav-Icons/WIT_Tile_W_Overview.png)](https://technet.microsoft.com/library/dn646960.aspx/?WT.mc_id=IntuneOverview20150801)[![](/media/Nav-Icons/WIT_Tile_W_GetStarted.png)](https://technet.microsoft.com/library/dn646953.aspx/?WT.mc_id=IntuneGS20150801)[![](/media/Nav-Icons/WIT_Tile_W_EnrollDevices.png)](https://technet.microsoft.com/library/dn646962.aspx/?WT.mc_id=IntuneEnroll20150801)[![](/media/Nav-Icons/WIT_Tile_W_ManageDevices.png)](https://technet.microsoft.com/library/mt313202.aspx/?WT.mc_id=IntuneConfig20150801)[![](/media/Nav-Icons/WIT_Tile_W_ManageApps.png)](https://technet.microsoft.com/library/dn646965.aspx/?WT.mc_id=IntuneDeploy20150801)[![](/media/Nav-Icons/WIT_Tile_W_ProtectResources.png)](https://technet.microsoft.com/library/mt313203.aspx/?WT.mc_id=IntuneProtect20150801)[![](/media/Nav-Icons/WIT_Tile_W_RetireData.png)](https://technet.microsoft.com/library/mt313204.aspx/?WT.mc_id=IntuneRetire20150801)![](/media/Nav-Icons/WIT_Tile_W_TechnicalReferenceHighlight.png)[![](/media/Nav-Icons/WIT_Tile_W_Troubleshooting.png)](https://technet.microsoft.com/library/mt345521.aspx)
+![](/media/Nav-Icons/WIT_Banner_TechnicalReference.png)
 
--   [Release notes for Microsoft Intune](../Topic/Release-notes-for-Microsoft-Intune.md)
+-   [Release notes for Microsoft Intune](release-notes-for-microsoft-intune.md)
 
--   [Microsoft Intune Service Description](../Topic/Microsoft-Intune-Service-Description.md)
+-   [Microsoft Intune Service Description](microsoft-intune-service-description.md)
 
--   [Frequently asked questions for Microsoft Intune](../Topic/Frequently-asked-questions-for-Microsoft-Intune.md)
+-   [Frequently asked questions for Microsoft Intune](frequently-asked-questions-for-microsoft-intune.md)
 
 ## Policies
-[Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
+[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
 
 ## Groups
-[Use groups to manage users and devices with Microsoft Intune](../Topic/Use-groups-to-manage-users-and-devices-with-Microsoft-Intune.md)
+[Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 ## Monitoring and reports
 
--   [Understand your devices with inventory in Microsoft Intune](../Topic/Understand-your-devices-with-inventory-in-Microsoft-Intune.md)
+-   [Understand your devices with inventory in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md)
 
--   [Get notified by Microsoft Intune alerts](../Topic/Get-notified-by-Microsoft-Intune-alerts.md)
+-   [Get notified by Microsoft Intune alerts](get-notified-by-microsoft-intune-alerts.md)
 
--   [Manage alerts in Microsoft Intune](../Topic/Manage-alerts-in-Microsoft-Intune.md)
+-   [Manage alerts in Microsoft Intune](manage-alerts-in-microsoft-intune.md)
 
--   [Understand Microsoft Intune operations by using reports](../Topic/Understand-Microsoft-Intune-operations-by-using-reports.md)
+-   [Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md)
 
--   [Understand your devices with inventory in Microsoft Intune](../Topic/Understand-your-devices-with-inventory-in-Microsoft-Intune.md)
+-   [Understand your devices with inventory in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md)
 
 ## Admin roles
 
--   [Control what admins can see in the Microsoft Intune admin console](../Topic/Control-what-admins-can-see-in-the-Microsoft-Intune-admin-console.md)
+-   [Control what admins can see in the Microsoft Intune admin console](control-what-admins-can-see-in-the-microsoft-intune-admin-console.md)
 
--   [Reference for Tenant Administrator accounts for Microsoft Intune](../Topic/Reference-for-Tenant-Administrator-accounts-for-Microsoft-Intune.md)
+-   [Reference for Tenant Administrator accounts for Microsoft Intune](reference-for-tenant-administrator-accounts-for-microsoft-intune.md)
 
 ## Configuration
 
--   [Maintain Microsoft Intune](../Topic/Maintain-Microsoft-Intune.md)
+-   [Maintain Microsoft Intune](maintain-microsoft-intune.md)
 
 ## See Also
-[Documentation for Microsoft Intune](../Topic/Documentation-for-Microsoft-Intune.md)
+[Documentation for Microsoft Intune](documentation-for-microsoft-intune.md)
 

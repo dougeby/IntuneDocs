@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: c70c5549-07ef-4d79-8270-dc7c7b8979a6
 ---
 # MD Conversion - Help users connect to company networks using Wi-Fi profiles with Microsoft
-Use [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. These settings simplify connecting to wireless networks for end-users.
+Use [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. These settings simplify connecting to wireless networks for end-users.
 
 For example:
 
@@ -28,7 +28,7 @@ You can deploy Wi-Fi profiles to the following platforms:
 
 -   Mac OS X 10.9 and later
 
-Additionally, for devices that run Windows 8.1 and later, you can import a Wi-Fi configuration profile that was previously exported to a file. For details, see [Import a Wi-Fi configuration profile (Windows 8.1 and later only)](../Topic/Help-users-connect-to-company-networks-using-Wi-Fi-profiles-with-Microsoft-Intune.md#BKMK_Import).
+Additionally, for devices that run Windows 8.1 and later, you can import a Wi-Fi configuration profile that was previously exported to a file. For details, see [Import a Wi-Fi configuration profile (Windows 8.1 and later only)](help-users-connect-to-company-networks-using-wi-fi-profiles-with-microsoft-intune.md#BKMK_Import).
 
 ## Steps to create and deploy a Wi-Fi profile
 
@@ -50,7 +50,7 @@ Additionally, for devices that run Windows 8.1 and later, you can import a Wi-Fi
 
     |Setting|More information|
     |-----------|--------------------|
-    |**Name**|Enter a unique name for the Wi-Fi profile to help identify it in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console.|
+    |**Name**|Enter a unique name for the Wi-Fi profile to help identify it in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console.|
     |**Description**|Provide a description of the Wi-Fi profile that helps you to locate it.|
 
 ### Step 2: Configure network connection settings
@@ -72,11 +72,11 @@ Configure the **Security Settings** for the selected platform. The available set
 |----------------|--------------------|-------------|
 |**Security type**|Select the security protocol for the wireless network:<br /><br />**WPA-Enterprise/WPA2-Enterprise**<br /><br />**No authentication (Open)** if the network is unsecured.|Always|
 |**EAP Type**|Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections:<br /><br />**EAP-TLS**<br /><br />**PEAP**<br /><br />**EAP-TTLS**|You selected the **WPA-Enterprise/WPA2-Enterprise** security type.|
-|**Select root certificates for server validation**|Click **Select**, then choose the trusted root certificate profile used to authenticate the connection.<br /><br />To create the trusted root certificate profile, see [Enable access to company resources using certificate profiles with Microsoft Intune](../Topic/Enable-access-to-company-resources-using-certificate-profiles-with-Microsoft-Intune.md).|Any **EAP Type** is selected.|
+|**Select root certificates for server validation**|Click **Select**, then choose the trusted root certificate profile used to authenticate the connection.<br /><br />To create the trusted root certificate profile, see [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).|Any **EAP Type** is selected.|
 |**Authentication method**|Select the authentication method for the connection:<br /><br />**Certificates** to specify the client certificate<br /><br />**Username and Password** to specify a different method for authentication|The **EAP type** is **PEAP** or **EAP-TTLS**.|
 |**Select a non-EAP method for authentication (Inner identity)**|Select how you will authenticate the connection:<br /><br />**None**<br /><br />**Unencrypted password (PAP)**<br /><br />**Challenge Handshake Authentication Protocol (CHAP)**<br /><br />**Microsoft CHAP (MS-CHAP)**<br /><br />**Microsoft CHAP Version 2 (MS-CHAP v2)**<br /><br />The available options depend on the EAP type you selected.|The **Authentication method** is **Username and Password**.|
 |**Enable identity privacy (Outer Identity)**|Specify the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.|The **EAP type** is **PEAP** or **EAP-TTLS**.|
-|**Select a client certificate for client authentication (Identity Certificate)**|Click **Select**, then choose the SCEP certificate profile used to authenticate the connection.<br /><br />To create a SCEP certificate profile, see [Enable access to company resources using certificate profiles with Microsoft Intune](../Topic/Enable-access-to-company-resources-using-certificate-profiles-with-Microsoft-Intune.md).|The security type is **WPA-Enterprise/WPA2-Enterprise**, and any **EAP type** is selected.|
+|**Select a client certificate for client authentication (Identity Certificate)**|Click **Select**, then choose the SCEP certificate profile used to authenticate the connection.<br /><br />To create a SCEP certificate profile, see [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).|The security type is **WPA-Enterprise/WPA2-Enterprise**, and any **EAP type** is selected.|
 
 #### For iOS and Mac OS X devices
 
@@ -84,11 +84,11 @@ Configure the **Security Settings** for the selected platform. The available set
 |----------------|--------------------|-------------|
 |**Security type**|Select the wireless network security protocol:<br /><br />**WPA-Personal/WPA2-Personal**<br /><br />**WPA-Enterprise/WPA2-Enterprise**<br /><br />**WEP**<br /><br />**No authentication (Open)** if the network is unsecured.|Always|
 |**EAP Type**|Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections:<br /><br />**EAP-TLS**<br /><br />**PEAP**<br /><br />**EAP-TLS**<br /><br />**EAP-AST**<br /><br />**LEAP**<br /><br />**EAP-SIM**|You selected a security type of **WPA-Enterprise/WPA2-Enterprise**.|
-|**Trusted server certificate names**|Select the trusted root certificate profile used to authenticate the connection.<br /><br />To create the trusted root certificate profile, see [Enable access to company resources using certificate profiles with Microsoft Intune](../Topic/Enable-access-to-company-resources-using-certificate-profiles-with-Microsoft-Intune.md).|You selected an EAP type of **EAP-TLS**, **PEAP**, **EAP-TTLS** or **EAP-FAST**.|
+|**Trusted server certificate names**|Select the trusted root certificate profile used to authenticate the connection.<br /><br />To create the trusted root certificate profile, see [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).|You selected an EAP type of **EAP-TLS**, **PEAP**, **EAP-TTLS** or **EAP-FAST**.|
 |**Use Protected Access Credential (PAC)**|Select to use protected access credentials to establish an authenticated tunnel between the client and the authentication server. An existing PAC file is used if present.|The **EAP-type** is **EAP-FAST**.|
 |**Provision PAC**|Provisions the PAC file to your devices.<br /><br />When used, you can also select **Provision PAC Anonymously** to ensure that the PAC file is provisioned without authenticating the server.|**Use Protected Access Credential (PAC)** is selected.|
 |**Authentication method**|Select the authentication method used for the connection:<br /><br />**Certificates** to specify the client certificate<br /><br />**Username and Password** to specify one of the following non-EAP methods for authentication (also known as Inner identity):<br /><br />**None**<br /><br />**Unencrypted password (PAP)**<br /><br />**Challenge Handshake Authentication Protocol (CHAP)**<br /><br />**Microsoft CHAP (MS-CHAP)**<br /><br />**Microsoft CHAP Version 2 (MS-CHAP v2)**<br /><br />**EAP-TLS**|The **EAP type** is **PEAP**, or **EAP-TTLS**.|
-|**Select a client certificate for client authentication (Identity Certificate)**|Select the SCEP certificate profile used to authenticate the connection.<br /><br />To create a SCEP certificate profile, see [Enable access to company resources using certificate profiles with Microsoft Intune](../Topic/Enable-access-to-company-resources-using-certificate-profiles-with-Microsoft-Intune.md).|When the security type is **WPA-Enterprise/WPA2-Enterprise** and the **EAP type** is **EAP-TLS**, **PEAP** or **EAP-TTLS**.|
+|**Select a client certificate for client authentication (Identity Certificate)**|Select the SCEP certificate profile used to authenticate the connection.<br /><br />To create a SCEP certificate profile, see [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).|When the security type is **WPA-Enterprise/WPA2-Enterprise** and the **EAP type** is **EAP-TLS**, **PEAP** or **EAP-TTLS**.|
 |**Enable identity privacy (Outer Identity)**|Specify text that sent in response to an EAP identity request. This text can be any value.<br /><br />During authentication, this anonymous identity is initially sent, followed by the real identification sent in a secure tunnel.|When the **EAP type** is set to **PEAP**, **EAP-TTLS** or **EAP-FAST**.|
 
 ### Step 4: Configure proxy settings (iOS and MAC OS X only)
@@ -111,7 +111,7 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 
 1.  Deploy the Wi-Fi profile to one or more groups of users or devices in your organization.
 
-For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 A status summary and alerts in the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
@@ -121,7 +121,7 @@ After successful deployment, users devices can automatically connect to the corp
 Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that you can then deploy to the required user or device groups.
 
 > [!TIP]
-> In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi profile to an XML file readable by [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
+> In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi profile to an XML file readable by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
 > 
 > For example, to export a Wi-Fi connection named **MyConnection** to an XML file, type the following from a Windows command prompt:
 > 
@@ -133,20 +133,20 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
 
     You can only create and deploy a custom Windows Wi-Fi import policy. Recommended settings are not available.
 
-    For more information about how to create and deploy policies, see the [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md) topic.
+    For more information about how to create and deploy policies, see the [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md) topic.
 
 3.  Specify the following general values for the Windows Wi-Fi Import Policy:
 
     |Setting name|More information|
     |----------------|--------------------|
-    |**Name**|Enter a unique name for the Wi-Fi profile to identify it in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console.|
+    |**Name**|Enter a unique name for the Wi-Fi profile to identify it in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console.|
     |**Description**|Provide a description w of the Wi-Fi profile and other relevant information that helps you to locate it.|
 
 4.  Specify the following values under the **Custom Wi-Fi Profile** heading:
 
     |Setting name|More information|
     |----------------|--------------------|
-    |**Configuration profile file**|Click **Import** to select the XML file containing the Wi-Fi profile settings that you want to import into [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].|
+    |**Configuration profile file**|Click **Import** to select the XML file containing the Wi-Fi profile settings that you want to import into [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].|
     |**Custom configuration profile name (displayed to users)**|Displays the name of the Wi-Fi configuration profile as it will be shown to users on their device.|
     |**Configuration profile details**|Displays the XML code for the configuration profile you selected.|
 
@@ -157,5 +157,5 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
 You can now use the information in **Step 6** above to help you deploy the custom Wi-Fi profile.
 
 ## See Also
-[Enable access to company resources with Microsoft Intune - deleted](../Topic/Enable-access-to-company-resources-with-Microsoft-Intune---deleted.md)
+[Enable access to company resources with Microsoft Intune - deleted](enable-access-to-company-resources-with-microsoft-intune---deleted.md)
 

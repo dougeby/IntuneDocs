@@ -60,5 +60,5 @@ This configuration is required for devices that are managed by a third party MDM
 6.  Now the data transfer succeeds and the document is tagged as corporate identity in the app. In addition, the data is treated in a work context the policy settings are applied accordingly.
 
 ## See Also
-[Configure data loss prevention app policies with Microsoft Intune](../Topic/Configure-data-loss-prevention-app-policies-with-Microsoft-Intune.md)
+[Configure data loss prevention app policies with Microsoft Intune](configure-data-loss-prevention-app-policies-with-microsoft-intune.md)
 

@@ -26,7 +26,7 @@ The Company Portal is an app that you install on your device to give you access 
 
 2.  Download the **Microsoft Intune Company Portal** app.
 
-    ![](../Image/IW-Help-pics/ios-cpinstall-1-cpinstore.png)
+    ![](/media/IW-Help-pics/ios-cpinstall-1-cpinstore.png)
 
 3.  Open the Company Portal app, enter your work or school email and password, and then tap **Sign in**.
 
@@ -48,31 +48,31 @@ To enroll your device:
 
 2.  On the **Device Enrollment** screen in the Company Portal app, tap **Enroll**.
 
-    ![](../Image/IW-Help-pics/ios-enroll-1-tap-enroll.PNG)
+    ![](/media/IW-Help-pics/ios-enroll-1-tap-enroll.PNG)
 
 3.  On the **Install Profile** screen, tap **Install**, and enter your passcode, if prompted.
 
-    ![](../Image/IW-Help-pics/ios-enroll-2-mgt-profile-install.PNG)
+    ![](/media/IW-Help-pics/ios-enroll-2-mgt-profile-install.PNG)
 
 4.  Tap **Install**.
 
-    ![](../Image/IW-Help-pics/ios-enroll-3-mgt-profile-install-2.PNG)
+    ![](/media/IW-Help-pics/ios-enroll-3-mgt-profile-install-2.PNG)
 
 5.  Tap **Install** to indicate that you've read the warning.
 
-    ![](../Image/IW-Help-pics/ios-enroll-4-warning.PNG)
+    ![](/media/IW-Help-pics/ios-enroll-4-warning.PNG)
 
 6.  Tap **Trust**.
 
-    ![](../Image/IW-Help-pics/ios-enroll-5-trust.PNG)
+    ![](/media/IW-Help-pics/ios-enroll-5-trust.PNG)
 
 7.  Tap **Done**.
 
-    ![](../Image/IW-Help-pics/ios-enroll-6-done.PNG)
+    ![](/media/IW-Help-pics/ios-enroll-6-done.PNG)
 
 8.  Tap **OK**. Your device is now enrolled in Intune.
 
-    ![](../Image/IW-Help-pics/ios-enroll-8-enrolled.PNG)
+    ![](/media/IW-Help-pics/ios-enroll-8-enrolled.PNG)
 
 ### <a name="BKMK_ios_enroll_macosx_dev"></a>Enroll your Mac OS X device in Intune
 To enroll your Mac OS X device:
@@ -81,19 +81,19 @@ To enroll your Mac OS X device:
 
 2.  Tap **This device is either not enrolled or the Company Portal can't identify it**.
 
-    ![](../Image/IW-Help-pics/1-macosx-enroll-tap-enroll.png)
+    ![](/media/IW-Help-pics/1-macosx-enroll-tap-enroll.png)
 
 3.  Tap **Install** to start enrolling your device.
 
-    ![](../Image/IW-Help-pics/2-macosx-enroll--install-button.png)
+    ![](/media/IW-Help-pics/2-macosx-enroll--install-button.png)
 
 4.  On the **Install Management Profile** dialog, tap **Install**. If a dialog box appears asking you to enter your credentials, enter your username and password, and then tap **Continue** &gt; **Install**.
 
-    ![](../Image/IW-Help-pics/3-macosx-enroll-tap-install.png)
+    ![](/media/IW-Help-pics/3-macosx-enroll-tap-install.png)
 
     When you finish enrolling, you'll see a Management Profile page showing that your profile has been verified.
 
-    ![](../Image/IW-Help-pics/4-macosx-enroll-done.png)
+    ![](/media/IW-Help-pics/4-macosx-enroll-done.png)
 
 ## <a name="BKMK_ios_what_happ_enroll"></a>What happens when I install the Company Portal app and enroll my device in Intune?
 You start by installing the Company Portal app, and then use the app to enroll your device in Intune. Once your device is enrolled, you  can use the Company Portal app to:
@@ -192,7 +192,7 @@ Different managed apps can also work together on your device to allow you to do 
 
 When you access company data in a managed app, you see a message like the one below, which lets you know that the app you are opening is managed.
 
-![](../Image/IW-Help-pics/managed-apps-message.png)
+![](/media/IW-Help-pics/managed-apps-message.png)
 
 ### How do I get managed apps?
 You get managed apps in a couple of different ways:
@@ -336,11 +336,11 @@ The following table lists errors that you might see while enrolling your devices
 |Error message|Issue|Resolution for your IT administrator about this error<br /><br />Note to IT admins only: these resolutions also apply to System Center 2012 R2 Configuration Manager|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |DeviceCapReached|You have too many mobile devices enrolled already.|The user must remove one of his or her currently enrolled mobile devices from the Company Portal before enrolling another.|
-|APNSCertificateNotValid|There is a problem with the certificate that allows your mobile device to communicate with your company’s network.<br /><br />Contact your IT administrators and tell them that you received the message **APNSCertificateNotValid** while trying to enroll your mobile device, and tell them to see the resolution in this table.|The Apple Push Notification Service (APNS) provides a channel to reach out to enrolled iOS devices. If the steps to obtain an APNS certificate were not performed, or the APNS certificate has expired, then enrollment attempts will fail, and this message will appear.<br /><br />Review the section "Prepare to manage iOS mobile devices with Microsoft Intune" in [Set up iOS and Mac management with Microsoft Intune](../Topic/Set-up-iOS-and-Mac-management-with-Microsoft-Intune.md).|
-|AccountNotOnboarded|There is a problem with the certificate that allows your mobile device to communicate with your company’s network.<br /><br />Contact your IT administrators and tell them that you received the message **APNSNotOnboarded** while trying to enroll your mobile device, and tell them to see the resolution in this table.|The Apple Push Notification Service (APNS) provides a channel to reach out to enrolled iOS devices. If the steps to obtain an APNS certificate were not performed, or the APNS certificate has expired, then enrollment attempts will fail, and this message will appear.<br /><br />Review the section "Prepare to manage iOS mobile devices with Microsoft Intune" in [Set up iOS and Mac management with Microsoft Intune](../Topic/Set-up-iOS-and-Mac-management-with-Microsoft-Intune.md).|
+|APNSCertificateNotValid|There is a problem with the certificate that allows your mobile device to communicate with your company’s network.<br /><br />Contact your IT administrators and tell them that you received the message **APNSCertificateNotValid** while trying to enroll your mobile device, and tell them to see the resolution in this table.|The Apple Push Notification Service (APNS) provides a channel to reach out to enrolled iOS devices. If the steps to obtain an APNS certificate were not performed, or the APNS certificate has expired, then enrollment attempts will fail, and this message will appear.<br /><br />Review the section "Prepare to manage iOS mobile devices with Microsoft Intune" in [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).|
+|AccountNotOnboarded|There is a problem with the certificate that allows your mobile device to communicate with your company’s network.<br /><br />Contact your IT administrators and tell them that you received the message **APNSNotOnboarded** while trying to enroll your mobile device, and tell them to see the resolution in this table.|The Apple Push Notification Service (APNS) provides a channel to reach out to enrolled iOS devices. If the steps to obtain an APNS certificate were not performed, or the APNS certificate has expired, then enrollment attempts will fail, and this message will appear.<br /><br />Review the section "Prepare to manage iOS mobile devices with Microsoft Intune" in [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).|
 |DeviceTypeNotSupported|You may have tried to enroll using a non-iOS device. The mobile device type that you are trying to enroll is not supported.<br /><br />Ensure that your device is running iOS version 7.1 or later.<br /><br />Contact your IT administrators and tell them that you received the message **DeviceTypeNotSupported** while trying to enroll your mobile device, and tell them to see the resolution in this table.|Ensure that your user's device is running iOS version 7.1 or later.|
-|UserLicenseTypeInvalid|You cannot enroll your mobile device because your user account is not yet a member of a required user group.<br /><br />Contact your IT administrators and tell them that you received the message **UserLicenseTypeInvalid** while trying to enroll your mobile device, and tell them to see the resolution in this table.|Before users can enroll their devices, they  must be a member of the right user group. This message means that they have the wrong license type for the designated mobile device management authority. For example, if [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br /><br />Review the following for more information:<br /><br />Steps on adding users and groups in the section "Prepare to manage iOS mobile devices with Microsoft Intune" in [Set up iOS and Mac management with Microsoft Intune](../Topic/Set-up-iOS-and-Mac-management-with-Microsoft-Intune.md).<br /><br />"Step 2: Add user to Intune" and "Step 3: Create groups to organize users and devices" in [Get started with a 30-day trial of Microsoft Intune](../Topic/Get-started-with-a-30-day-trial-of-Microsoft-Intune.md).<br /><br />"Step 5: Create groups to organize users and devices" in [Get started with a paid subscription to Microsoft Intune](../Topic/Get-started-with-a-paid-subscription-to-Microsoft-Intune.md).|
-|MdmAuthorityNotDefined|Your IT administrator needs to configure the way that mobile devices in your company are managed.<br /><br />Contact your IT administrators and tell them that you received the message **MdmAuthorityNotDefined** while trying to enroll your mobile device, and tell them to see the resolution in this table.|The mobile device management authority has not been designated in [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)].<br /><br />Review item #1 in the section "Step 6: Enroll mobile devices and install an app" in [Get started with a 30-day trial of Microsoft Intune](../Topic/Get-started-with-a-30-day-trial-of-Microsoft-Intune.md).|
+|UserLicenseTypeInvalid|You cannot enroll your mobile device because your user account is not yet a member of a required user group.<br /><br />Contact your IT administrators and tell them that you received the message **UserLicenseTypeInvalid** while trying to enroll your mobile device, and tell them to see the resolution in this table.|Before users can enroll their devices, they  must be a member of the right user group. This message means that they have the wrong license type for the designated mobile device management authority. For example, if [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br /><br />Review the following for more information:<br /><br />Steps on adding users and groups in the section "Prepare to manage iOS mobile devices with Microsoft Intune" in [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).<br /><br />"Step 2: Add user to Intune" and "Step 3: Create groups to organize users and devices" in [Get started with a 30-day trial of Microsoft Intune](Get-started-with-a-30-day-trial-of-microsoft-intune.md).<br /><br />"Step 5: Create groups to organize users and devices" in [Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md).|
+|MdmAuthorityNotDefined|Your IT administrator needs to configure the way that mobile devices in your company are managed.<br /><br />Contact your IT administrators and tell them that you received the message **MdmAuthorityNotDefined** while trying to enroll your mobile device, and tell them to see the resolution in this table.|The mobile device management authority has not been designated in [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)].<br /><br />Review item #1 in the section "Step 6: Enroll mobile devices and install an app" in [Get started with a 30-day trial of Microsoft Intune](Get-started-with-a-30-day-trial-of-microsoft-intune.md).|
 
 ### <a name="BKMK_ios_id_your_device"></a>You are asked to identify your device when you're trying to enroll
 If you are trying to enroll your device in Intune, and you see a screen asking you to identify your device, it means that at least one of your devices has already been enrolled and assigned to your account using a method other than the Company Portal app. In order for the Company Portal app to work correctly, you must identify if the device you're using has already been enrolled in Intune.

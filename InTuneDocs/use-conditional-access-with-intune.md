@@ -18,7 +18,7 @@ Protecting your company's data is vitally important, and is an increasingly chal
 
 The Microsoft Enterprise Mobility Suite (EMS) solves this challenge by delivering comprehensive protection of corporate email and documents across four layers – Identity, Device, Application, and Data. Among other capabilities, EMS ensures that employees can access corporate email only from devices that are managed by Microsoft Intune and compliant with IT policies.
 
-Similar to how you [Use conditional access with Intune and Configuration Manager](../Topic/Use-conditional-access-with-Intune-and-Configuration-Manager.md), you can implement conditional access in Intune by configuring two policy types:
+Similar to how you [Use conditional access with Intune and Configuration Manager](use-conditional-access-with-intune-and-configuration-manager.md), you can implement conditional access in Intune by configuring two policy types:
 
 -   **Compliance policies** are optional policies you can deploy to users and devices and evaluate settings like passcode and encryption. The conditional access policies set in Intune ensure that the devices can only access email if they are compliant with the compliance policies you set.
     If no compliance policy is deployed to a device, then any applicable conditional access policies will treat the device as compliant.
@@ -39,7 +39,7 @@ With all of the different design and configuration options for managing mobile d
 ### High level end-user experience 
 After the solution is implemented, end-users will be able to access the company email only on managed **and** compliant devices. Access can be revoked at any time if the device becomes noncompliant.
 
-Specifically, the conditional access policies set in Intune ensure that the devices can only access email if they are compliant with the compliance policies you set. Actions such as copy and paste or saving to personal cloud storage services can be restricted using mobile application management policies. Azure Rights Managements service can be used to ensure that the sensitive email data, and forwarded attachments, can only be read by intended recipients. The end-user experience is described in more detail in [End-user experience of conditional access](../Topic/End-user-experience-of-conditional-access.md).
+Specifically, the conditional access policies set in Intune ensure that the devices can only access email if they are compliant with the compliance policies you set. Actions such as copy and paste or saving to personal cloud storage services can be restricted using mobile application management policies. Azure Rights Managements service can be used to ensure that the sensitive email data, and forwarded attachments, can only be read by intended recipients. The end-user experience is described in more detail in [End-user experience of conditional access](end-user-experience-of-conditional-access.md).
 
 ## Using conditional access with Intune
 Use conditional access in Intune to help secure email and other services depending on conditions you specify.
@@ -147,7 +147,7 @@ Compliance policies define the rules and settings that a device must comply with
 > [!NOTE]
 > If you want the ability to remove all corporate email from an iOS device after it is no longer part of your company, you must create and deploy an email profile and then set the compliance policy that specifies that email profiles are managed by Intune. You must deploy the email profile to the same set of users that you target with this compliance policy.
 > 
-> If you specify this compliance policy, a user who has already set up their email account must manually remove it and then Intune will add it back in through the registration process described in [End-user experience of conditional access](../Topic/End-user-experience-of-conditional-access.md).
+> If you specify this compliance policy, a user who has already set up their email account must manually remove it and then Intune will add it back in through the registration process described in [End-user experience of conditional access](end-user-experience-of-conditional-access.md).
 
 After the compliance policy is created, you can deploy it by following these steps:
 
@@ -177,7 +177,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 ### Step 5: Configure conditional access policy.
 The following flow is used by conditional access policies for an Exchange on-premises environment to evaluate whether to allow or block devices.
 
-![](../Image/ConditionalAccess8-2.png)
+![](/media/ConditionalAccess8-2.png)
 
 Follow the information provided under [Step 4: Configure the conditional access policy for Exchange on-premises ](https://technet.microsoft.com/en-us/library/dn705841.aspx) to set up your conditional access policy.
 
@@ -194,7 +194,7 @@ Compliance policies define the rules and settings that a device must comply with
 > [!NOTE]
 > If you want the ability to remove all corporate email from an iOS device after it is no longer part of your company, you must create and deploy an email profile and then set the compliance policy that specifies that email profiles are managed by Intune. You must deploy the email profile to the same set of users that you target with this compliance policy.
 > 
-> If you specify this compliance policy, a user who has already set up their email account must manually remove it and then Intune will add it back in through the registration process described in [End-user experience of conditional access](../Topic/End-user-experience-of-conditional-access.md).
+> If you specify this compliance policy, a user who has already set up their email account must manually remove it and then Intune will add it back in through the registration process described in [End-user experience of conditional access](end-user-experience-of-conditional-access.md).
 
 After the compliance policy is created, you can deploy it by following these steps:
 
@@ -224,7 +224,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 ### Step 4: Configure conditional access policy.
 The following flow is used by conditional access policies for Exchange Online to evaluate whether to allow or block devices.
 
-![](../Image/ConditionalAccess8-1.png)
+![](/media/ConditionalAccess8-1.png)
 
 Follow the information provided under [Step 4: Configure the conditional access policy for Exchange Online ](https://technet.microsoft.com/en-us/library/dn705841.aspx) to set up your conditional access policy.
 
@@ -250,6 +250,6 @@ When conflicts occur due to multiple Intune settings being applied to a device, 
 -   If you have deployed multiple compliance policies, the most secure of these policies will be used.
 
 ## See Also
-[Use conditional access with Intune and Configuration Manager](../Topic/Use-conditional-access-with-Intune-and-Configuration-Manager.md)
-[End-user experience of conditional access](../Topic/End-user-experience-of-conditional-access.md)
+[Use conditional access with Intune and Configuration Manager](use-conditional-access-with-intune-and-configuration-manager.md)
+[End-user experience of conditional access](end-user-experience-of-conditional-access.md)
 

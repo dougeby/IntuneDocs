@@ -12,8 +12,8 @@ author: Staciebarker
 
 These evaluation tasks provide illustrated, step-by-step instructions for common tasks that you are likely to do when you're evaluating Intune:
 
-- [Start a Microsoft Intune trial and deploy iOS PIN policy](Start-a-Microsoft-Intune-trial-and-deploy-iOS-PIN-policy.md)
-- [Set up email access for iOS devices using Microsoft Intune](Set-up-email-access-for-iOS-devices-using-Microsoft-Intune.md)
+- [Start a Microsoft Intune trial and deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
+- [Set up email access for iOS devices using Microsoft Intune](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 
 Check back soon, as more tasks will be added in the near future.
 

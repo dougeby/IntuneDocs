@@ -9,7 +9,7 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 author: Msmbaldwin
 ---
 # Getting Started With the Microsoft Intune App SDK
-This Getting Started guide will help you quickly enable your mobile app for Mobile Application Management with Microsoft Intune. You may find it useful to first understand the benefits of the Intune App SDK as enumerated in the [Overview](Overview-of-the-Microsoft-Intune-App-SDK.md).
+This Getting Started guide will help you quickly enable your mobile app for Mobile Application Management with Microsoft Intune. You may find it useful to first understand the benefits of the Intune App SDK as enumerated in the [Overview](overview-of-the-microsoft-intune-app-sdk.md).
 
 This guide walks through the major steps needed to enable mobile app management in your app with Microsoft Intune. The Intune App SDK supports similar scenarios across platforms, and is intended to create a consistent experience across the platforms for IT administrators. However, there are small differences in the support of certain features due to platform limitations.
 
@@ -41,12 +41,12 @@ We will use your registration email address to confirm and complete receipt of t
 
 To enable your iOS mobile app, you will need the following:
 
-1. **[Intune App SDK for iOS Developer Guide](Microsoft-Intune-App-SDK-for-iOS-Developer-Guide.md)**: this document will walk you step-by-step through enabling your mobile iOS app with the Intune App SDK. You can find this document in the documentation folder that you have downloaded as part of the Intune App SDK package.
+1. **[Intune App SDK for iOS Developer Guide](microsoft-intune-app-sdk-for-ios-developer-guide.md)**: this document will walk you step-by-step through enabling your mobile iOS app with the Intune App SDK. You can find this document in the documentation folder that you have downloaded as part of the Intune App SDK package.
 2. **Intune App SDK for iOS**: as part of the Intune App SDK package downloaded from Microsoft Intune, you will find a signed folder “Intune App SDK for iOS.” This folder has all the Intune App SDK for iOS content.
 
 To enable your android mobile app with Intune App SDK, you will need the following:
 
-1. **[Intune App SDK for Android Developer Guide](Microsoft-Intune-App-SDK-for-Android-Developer-Guide.md)**: This document will walk you step-by-step through enabling your mobile android app with Intune App SDK. You can find this document in the documentation folder that you have downloaded as part of the Intune App SDK package.
+1. **[Intune App SDK for Android Developer Guide](microsoft-intune-app-sdk-for-android-developer-guide.md)**: This document will walk you step-by-step through enabling your mobile android app with Intune App SDK. You can find this document in the documentation folder that you have downloaded as part of the Intune App SDK package.
 2. **Intune App SDK for Android**: As part of the Intune App SDK package downloaded from Microsoft Intune, you will find a signed folder “Intune App SDK for Android.” This folder has all the Intune App SDK for android content.
 
 ## Turning off Telemetry for your app

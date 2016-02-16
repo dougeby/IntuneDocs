@@ -29,7 +29,7 @@ Examples of categories might be:
 However, you can configure any categories you want.
 
 ## How to configure device group mapping
-1. For each device category you want to use, create an [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] device group. For information about how to create groups, see [Use groups to manage users and devices with Microsoft Intune](Use-groups-to-manage-users-and-devices-with-Microsoft-Intune.md).
+1. For each device category you want to use, create an [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] device group. For information about how to create groups, see [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 2. In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Admin**.
 3. In the **Administration** workspace, expand **Mobile Device Management**, and then click **Device Group Mapping**.
 4. On the **Device Group Mapping** page, enable device group mapping.
@@ -40,4 +40,4 @@ However, you can configure any categories you want.
 Now, when users enroll their device, they will be presented with a list of the categories you configured. After they choose a category and finish enrollment, their device will be added to the device group that corresponds with the category they chose.
 
 ## See also
-[Use groups to manage users and devices with Microsoft Intune](Use-groups-to-manage-users-and-devices-with-Microsoft-Intune.md)
+[Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)

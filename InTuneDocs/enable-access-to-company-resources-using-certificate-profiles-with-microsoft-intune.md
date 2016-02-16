@@ -10,7 +10,7 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 author: Nbigman
 ---
 # Enable access to company resources using certificate profiles with Microsoft Intune
-Certificate profiles are [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] policies that configure managed devices with the certificates they need so device users can connect to your on-premises company resources using connections like Wi-Fi or VPN. When you deploy certificate profiles, you provision devices with a trusted root certificate for your PKI, and configure them to request device specific certificates.
+Certificate profiles are [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policies that configure managed devices with the certificates they need so device users can connect to your on-premises company resources using connections like Wi-Fi or VPN. When you deploy certificate profiles, you provision devices with a trusted root certificate for your PKI, and configure them to request device specific certificates.
 
 You can create three types of certificate profiles:
 
@@ -31,7 +31,7 @@ You can create three types of certificate profiles:
 |**Trusted Root Certificate profile**|Use this profile to deploy the Trusted Root CA certificate or intermediate CA certificate to devices:<br /><br />Create a Trusted Root Certificate profile for each platform you use. You will pair this with each SCEP certificate profile you create for that same platform.|
 |**.PFX Certificate profile**|Use this profile to deploy platform specific settings for device certificate requests:<br /><br />Create a .PFX certificate profile for each platform you use, and pair it with the Trusted CA certificate profile.<br /><br />To complete the task of creating a .PFX certificate profile, you must select a previously created Trusted CA certificate profile.|
 |**Simple Certificate Enrollment Protocol (SCEP) settings profile**|Use this profile to deploy platform specific settings for device certificate requests:<br /><br />Create a SCEP certificate profile for each platform you use, and pair it with the Trusted CA certificate profile.<br /><br />To complete the task of creating a SCEP certificate profile, you must select a previously created Trusted CA certificate profile.|
-To use SCEP certificate profiles, you must integrate the following on-premises infrastructure with  [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]:
+To use SCEP certificate profiles, you must integrate the following on-premises infrastructure with  [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]:
 
 -   A server that runs the Network Device Enrollment Service
 
@@ -39,7 +39,7 @@ To use SCEP certificate profiles, you must integrate the following on-premises i
 
 -   The Intune Certificate Connector, which installs on the Windows Server 2012 R2 server that runs NDES
 
-To use .PFX Certificate profiles, you must integrate the following on-premises infrastructure with  [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]:
+To use .PFX Certificate profiles, you must integrate the following on-premises infrastructure with  [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]:
 
 -   An enterprise certification authority.
 
@@ -49,13 +49,13 @@ To use .PFX Certificate profiles, you must integrate the following on-premises i
 
 In this topic:
 
--   [Requirements for certificate profiles](../Topic/Enable-access-to-company-resources-using-certificate-profiles-with-Microsoft-Intune.md#BKMK_CertProfileRequirements)
+-   [Requirements for certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md#BKMK_CertProfileRequirements)
 
--   [Configure your infrastructure](../Topic/Enable-access-to-company-resources-using-certificate-profiles-with-Microsoft-Intune.md#BKMK_ConfigureInfrastructure)
+-   [Configure your infrastructure](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md#BKMK_ConfigureInfrastructure)
 
--   [Configure certificate profiles](../Topic/Enable-access-to-company-resources-using-certificate-profiles-with-Microsoft-Intune.md#BKMK_ConfigProfiles)
+-   [Configure certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md#BKMK_ConfigProfiles)
 
--   [Deploy certificate profiles](../Topic/Enable-access-to-company-resources-using-certificate-profiles-with-Microsoft-Intune.md#BKMK_Deploy)
+-   [Deploy certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md#BKMK_Deploy)
 
 ## <a name="BKMK_CertProfileRequirements"></a>Requirements for certificate profiles
 
@@ -64,11 +64,11 @@ In this topic:
 |Infrastructure|Details|
 |------------------|-----------|
 |**Active Directory domain**|All servers listed in this section (except for the Web Application Proxy Server) must be joined to your Active Directory domain.|
-|**Certification Authority server**|Referred to as the issuing CA, you must have an Enterprise Certification Authority (CA) that runs on an Enterprise edition of [!INCLUDE[nextref_server_7](../Token/nextref_server_7_md.md)] or later. A Standalone CA is not supported.<br /><br />For instructions on how to set up a Certification Authority, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).<br /><br />If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).|
-|For SCEP profile only:<br />                    **NDES Server**|On a server that runs [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] or later, you must setup up the Network Device Enrollment Service:<br /><br />[!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] does not support using the Network Device Enrollment Service when it runs on a server that also runs the Enterprise CA.<br /><br />See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] to host the Network Device Enrollment Service.|
+|**Certification Authority server**|Referred to as the issuing CA, you must have an Enterprise Certification Authority (CA) that runs on an Enterprise edition of [!INCLUDE[nextref_server_7](/includes/nextref_server_7_md.md)] or later. A Standalone CA is not supported.<br /><br />For instructions on how to set up a Certification Authority, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).<br /><br />If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).|
+|For SCEP profile only:<br />                    **NDES Server**|On a server that runs [!INCLUDE[winblue_server_2](/includes/winblue_server_2_md.md)] or later, you must setup up the Network Device Enrollment Service:<br /><br />[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] does not support using the Network Device Enrollment Service when it runs on a server that also runs the Enterprise CA.<br /><br />See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure [!INCLUDE[winblue_server_2](/includes/winblue_server_2_md.md)] to host the Network Device Enrollment Service.|
 |For .PFX Certificate profile only: **Computer that can communicate with Certification Authority**|Alternatively, use the Certification Authority computer itself.|
-|**Web Application Proxy Server** (optional)|You can use a server that runs [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] or later as a Web Application Proxy (WAP) server. This configuration:<br /><br />Allows devices to receive certificates using an Internet connection.<br /><br />Is a security recommendation when devices connect through the Internet to receive and renew certificates.<br /><br />The server that hosts WAP [must install an update](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) that enables support for the long URLs that are used by the Network Device Enrollment Service. This update is included with the [December 2014 update rollup](http://support.microsoft.com/kb/3013769), or individually from [KB3011135](http://support.microsoft.com/kb/3011135).<br /><br />Also, the server that hosts WAP must have a SSL certificate that matches the name being published to external clients as well as trust the SSL certificate that is used on the NDES server.<br /><br />These certificates enable the WAP server to terminate the SSL connection from clients, and create a new SSL connection to the NDES server.<br /><br />For information about certificates for WAP, see the **Plan certificates** section of [Planning to Publish Applications Using Web Application Proxy](https://technet.microsoft.com/library/dn383650.aspx). For general information about WAP servers, see [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx).|
-|**Microsoft Intune Certificate Connector**|You use the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] admin console to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. For .PFX Certificate profiles, install the Certificate Connector on the computer that communicates with the Certification Authority.|
+|**Web Application Proxy Server** (optional)|You can use a server that runs [!INCLUDE[winblue_server_2](/includes/winblue_server_2_md.md)] or later as a Web Application Proxy (WAP) server. This configuration:<br /><br />Allows devices to receive certificates using an Internet connection.<br /><br />Is a security recommendation when devices connect through the Internet to receive and renew certificates.<br /><br />The server that hosts WAP [must install an update](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) that enables support for the long URLs that are used by the Network Device Enrollment Service. This update is included with the [December 2014 update rollup](http://support.microsoft.com/kb/3013769), or individually from [KB3011135](http://support.microsoft.com/kb/3011135).<br /><br />Also, the server that hosts WAP must have a SSL certificate that matches the name being published to external clients as well as trust the SSL certificate that is used on the NDES server.<br /><br />These certificates enable the WAP server to terminate the SSL connection from clients, and create a new SSL connection to the NDES server.<br /><br />For information about certificates for WAP, see the **Plan certificates** section of [Planning to Publish Applications Using Web Application Proxy](https://technet.microsoft.com/library/dn383650.aspx). For general information about WAP servers, see [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx).|
+|**Microsoft Intune Certificate Connector**|You use the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] admin console to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. For .PFX Certificate profiles, install the Certificate Connector on the computer that communicates with the Certification Authority.|
 
 ### <a name="BKMK_CertsAndTemplates"></a>Certificates and Templates
 
@@ -92,7 +92,7 @@ Before you can configure certificate profiles you must complete the following ta
 **Task 2**, for SCEP profile only:
                      - Configure prerequisites on the NDES server 
 **Task 3**, for SCEP profile only:
-                     - Configure NDES for use with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]
+                     - Configure NDES for use with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]
 **Task 4** - Enable, install, and configure the Intune Certificate Connector
 
 ### <a name="BKMK_ConfigOnPremTask1"></a>Task 1 - Configure certificate templates on the certification authority
@@ -117,7 +117,7 @@ In this task you will:
 
     -   Specify a friendly **Template display name** for the template.
 
-    -   On the **Subject Name** tab, select **Supply in the request**. (Security is enforced by the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] policy module for NDES).
+    -   On the **Subject Name** tab, select **Supply in the request**. (Security is enforced by the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policy module for NDES).
 
     -   On the **Extensions** tab, ensure the **Description of Application Policies** includes **Client Authentication**.
 
@@ -126,7 +126,7 @@ In this task you will:
 
     -   On the **Security** tab, add the NDES service account, and give it **Enroll** permissions to the template.
 
-3.  Review the **Validity period** on the **General** tab of the template. By default, [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] uses the value configured in the template. However, you have the option to configure the CA to allow the requester to specify a different value, which you can then set from within the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] Administrator console. If you want to always use the value in the template, skip the remainder of this step.
+3.  Review the **Validity period** on the **General** tab of the template. By default, [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] uses the value configured in the template. However, you have the option to configure the CA to allow the requester to specify a different value, which you can then set from within the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] Administrator console. If you want to always use the value in the template, skip the remainder of this step.
 
     > [!IMPORTANT]
     > The iOS and Mac OS X platforms always uses the value set in the template regardless of other configurations you make.
@@ -187,7 +187,7 @@ In this task you will:
 
     -   **setspn –s http/Server01.contoso.com contoso\NDESService**
 
-### <a name="BKMK_ConfigOnPremTask3"></a>Task 3 (SCEP profile only) - Configure NDES for use with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]
+### <a name="BKMK_ConfigOnPremTask3"></a>Task 3 (SCEP profile only) - Configure NDES for use with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]
 In this task you will:
 
 -   Configure NDES for use with the issuing CA
@@ -196,7 +196,7 @@ In this task you will:
 
 -   Configure Request Filtering in IIS
 
-##### To configure NDES for use with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]
+##### To configure NDES for use with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]
 
 1.  On the NDES Server, open the AD CS Configuration wizard and then make the following configurations.
 
@@ -219,7 +219,7 @@ In this task you will:
 
     To edit this key, identify the certificate template's **Purpose**, as found on its **Request Handling** tab, and then edit the corresponding entry in the registry by replacing the existing data with the name of the certificate template (not the display name of the template) that you specified in Task 1. The following table maps the certificate template purpose to the values in the registry:
 
-    |Certificate template Purpose (On the Request Handling tab)|Registry value to edit|Value seen in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] admin console for the SCEP profile|
+    |Certificate template Purpose (On the Request Handling tab)|Registry value to edit|Value seen in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] admin console for the SCEP profile|
     |--------------------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------|
     |Signature|SignatureTemplate|Digital Signature|
     |Encryption|EncryptionTemplate|Key Encipherment|
@@ -237,7 +237,7 @@ In this task you will:
 
     1.  After you obtain the server authentication certificate, open **IIS Manager**, select the **Default Web Site** in the **Connections** pane, and then click **Bindings** in the **Actions** pane.
 
-    2.  Click **Add**, set **Type** to **https**, and then ensure the port is **443**. (Only port 443 is supported for standalone [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]).
+    2.  Click **Add**, set **Type** to **https**, and then ensure the port is **443**. (Only port 443 is supported for standalone [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]).
 
     3.  For **SSL certificate**, specify the server authentication certificate.
 
@@ -277,7 +277,7 @@ In this task you will:
 ### <a name="BKMK_ConfigOnPremTask4"></a>Task 4 - Enable, install, and configure the Intune Certificate Connector  - For SCEP and .PFX certificates.
 In this task you will:
 
-Enable support for NDES in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]
+Enable support for NDES in [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]
 
 Download, install, and configure the Certificate Connector on the NDES Server
 
@@ -295,14 +295,14 @@ Download, install, and configure the Certificate Connector on the NDES Server
 
 2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**):
 
-    -   For .PFX certificates, run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option then click Install. When the installation has completed, continue by creating a certificate profile as described in [Configure certificate profiles](../Topic/Enable-access-to-company-resources-using-certificate-profiles-with-Microsoft-Intune.md#BKMK_ConfigProfiles).
+    -   For .PFX certificates, run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option then click Install. When the installation has completed, continue by creating a certificate profile as described in [Configure certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md#BKMK_ConfigProfiles).
 
     -   For SCEP certificates, run the installer on a Windows Server 2012 R2 server
 
     For the SCEP option, the installer also installs the policy module for NDES and the CRP Web Service. (The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.)
 
     > [!NOTE]
-    > When you install NDES for standalone [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], the CRP service automatically installs with the Certificate Connector. When you use [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] with Configuration Manager, you install the Certificate Registration Point as a separate site system role.
+    > When you install NDES for standalone [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], the CRP service automatically installs with the Certificate Connector. When you use [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] with Configuration Manager, you install the Certificate Registration Point as a separate site system role.
 
 3.  When prompted for the client certificate for the Certificate Connector, click **Select**, and select the **client authentication** certificate you installed on your NDES Server in Task 3.
 
@@ -317,7 +317,7 @@ Download, install, and configure the Certificate Connector on the NDES Server
 
 5.  In the **Certificate Connector** UI:
 
-    Click **Sign In** and enter your [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] service administrator credentials, or credentials for a tenant administrator with the global administration permission.
+    Click **Sign In** and enter your [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] service administrator credentials, or credentials for a tenant administrator with the global administration permission.
 
     If your organization uses a proxy server and the proxy is required for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.
 
@@ -370,7 +370,7 @@ You must create a **Trusted CA certificate profile** before you can create a **S
 
     **Windows Phone and Enrolled Windows Devices &gt; Trusted Certificate Profile (Windows Phone 8.1 and later)**
 
-    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 3.  Use the following information to configure the trusted certificate profile settings for Android, iOS, Mac OS X, Windows 8.1, or Windows Phone 8.1:
 
@@ -404,7 +404,7 @@ After you have created a Trusted CA certificate profile, create SCEP or .PFX cer
 
     **Windows Phone and Enrolled Windows Devices &gt; SCEP Certificate Profile (Windows Phone 8.1 and later)**
 
-    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 3.  Use the following information to configure the SCEP certificate profile settings for Android, iOS, Mac OS X, Windows 8.1 and later, and Windows Phone 8.1 and later:
 
@@ -413,9 +413,9 @@ After you have created a Trusted CA certificate profile, create SCEP or .PFX cer
     |**Name**|All|Provide a descriptive name for the certificate profile.|
     |**Description**|All|Provide an optional description for the certificate.|
     |**Renewal threshold (%)**|All|Specify the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.|
-    |**Key Storage Provider (KSP)**|Android <br />Windows 8.1 <br />Windows Phone 8.1|Specify where the key to the certificate will be stored. Choose from one of the following:<br /><br />**Enroll to Trusted Platform Module (TPM) if present, otherwise enroll to software KSP** - Enrolls the key to the TPM. If the TPM is not present, the key will be installed to the storage provider for the software key.<br /><br />**Enroll to Trusted Platform Module (TPM), otherwise fail** - Enrolls the key to the TPM. If the TPM module is not present, the installation will fail<br /><br />**Enroll  to Passport for Work KSP, otherwise fail (Windows 10 and later)** - Enrolls the key to Passport for Work, described in [Control Microsoft Passport settings on devices with Microsoft Intune](../Topic/Control-Microsoft-Passport-settings-on-devices-with-Microsoft-Intune.md). This option also enables you to **Require multi-factor authentication** during enrollment of devices before issuing certificates to those devices. See [Protect Windows devices with multi-factor authentication](../Topic/Protect-Windows-devices-with-multi-factor-authentication.md) for more information.<br /><br />**Enroll to Software KSP** - Enrolls the key to the storage provider for the software key.|
+    |**Key Storage Provider (KSP)**|Android <br />Windows 8.1 <br />Windows Phone 8.1|Specify where the key to the certificate will be stored. Choose from one of the following:<br /><br />**Enroll to Trusted Platform Module (TPM) if present, otherwise enroll to software KSP** - Enrolls the key to the TPM. If the TPM is not present, the key will be installed to the storage provider for the software key.<br /><br />**Enroll to Trusted Platform Module (TPM), otherwise fail** - Enrolls the key to the TPM. If the TPM module is not present, the installation will fail<br /><br />**Enroll  to Passport for Work KSP, otherwise fail (Windows 10 and later)** - Enrolls the key to Passport for Work, described in [Control Microsoft Passport settings on devices with Microsoft Intune](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md). This option also enables you to **Require multi-factor authentication** during enrollment of devices before issuing certificates to those devices. See [Protect Windows devices with multi-factor authentication](protect-windows-devices-with-multi-factor-authentication.md) for more information.<br /><br />**Enroll to Software KSP** - Enrolls the key to the storage provider for the software key.|
     |**SCEP server URL**|All|Enter a URL (with the **http://** or **https://** prefix), then click **Add**; or select a URL, and then click **Delete**.<br /><br />For example, a SCEP server URL might resemble the following:: **https://mdmndes1.contoso.com/certsrv/mscep/mscep.dll**<br /><br />Each SCEP profile supports a single SCEP server URL.|
-    |**Subject name format**|Android <br />Windows 8.1 <br />Windows Phone 8.1|From the list, select how [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] automatically creates the subject name in the certificate request. If the certificate is for a user, you can also include the user's email address in the subject name.<br /><br />You can select **Common Name** or **Common Name and email address**.|
+    |**Subject name format**|Android <br />Windows 8.1 <br />Windows Phone 8.1|From the list, select how [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] automatically creates the subject name in the certificate request. If the certificate is for a user, you can also include the user's email address in the subject name.<br /><br />You can select **Common Name** or **Common Name and email address**.|
     |**Subject Alternative Name**|All|Select **Email Address**, **User principal name (UPN)**, or both.|
     |**Certificate validity period**|All|Specify the amount of time before the certificate expires.|
     |**Key Usage**|All|Specify key usage options for the certificate. You can choose from the following options:<br /><br />**Digital Signature** (SignatureTemplate) – Use to digitally sign data.<br /><br />**Key Encipherment** (EncryptionTemplate) - Use for encryption.<br /><br />**Key Encipherment + Digital Signature** (GeneralPurposeTemplate) – Use to digitally sign and encrypt data.|
@@ -440,7 +440,7 @@ The new policy displays in the **Policy** workspace, and can now be deployed.
 
     -   **Windows Phone and Enrolled Windows Devices &gt; .PFX Certificate Profile (Windows Phone 10 and later)**
 
-    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 3.  Use the following information to configure the .PFX  certificate profile settings for Android, Windows 10, and Windows Phone 10:
 
@@ -472,7 +472,7 @@ Certificate profiles install only on applicable devices based on the platform yo
 
 -   Although each profile is deployed separately, both the Trusted Root and the SCEP/.PFX profile must be deployed or else the SCEP/.PFX certificate policy will fail.
 
-You deploy certificate profiles the same way you deploy other policy for [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. For information about how to deploy and manage policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+You deploy certificate profiles the same way you deploy other policy for [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]. For information about how to deploy and manage policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 
 

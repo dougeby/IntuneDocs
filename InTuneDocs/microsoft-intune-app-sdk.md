@@ -14,13 +14,13 @@ The Microsoft Intune App SDK is available for both the iOS and Android platform,
 ## Documentation
 Learn more about the Microsoft Intune App SDK with the following articles:
 
--   [Overview of the Microsoft Intune App SDK](../Topic/Overview-of-the-Microsoft-Intune-App-SDK.md)
+-   [Overview of the Microsoft Intune App SDK](overview-of-the-microsoft-intune-app-sdk.md)
 
--   [Getting Started With the Microsoft Intune App SDK](../Topic/Getting-Started-With-the-Microsoft-Intune-App-SDK.md)
+-   [Getting Started With the Microsoft Intune App SDK](getting-started-with-the-microsoft-intune-app-sdk.md)
 
--   [Microsoft Intune App SDK Frequently Asked Questions](../Topic/Microsoft-Intune-App-SDK-Frequently-Asked-Questions.md)
+-   [Microsoft Intune App SDK Frequently Asked Questions](microsoft-intune-app-sdk-frequently-asked-questions.md)
 
--   [Microsoft Intune App SDK for iOS Developer Guide](../Topic/Microsoft-Intune-App-SDK-for-iOS-Developer-Guide.md)
+-   [Microsoft Intune App SDK for iOS Developer Guide](microsoft-intune-app-sdk-for-ios-developer-guide.md)
 
--   [Microsoft Intune App SDK for Android Developer Guide](../Topic/Microsoft-Intune-App-SDK-for-Android-Developer-Guide.md)
+-   [Microsoft Intune App SDK for Android Developer Guide](microsoft-intune-app-sdk-for-android-developer-guide.md)
 
