@@ -10,17 +10,17 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 author: robstackmsft
 ---
 # Mobile device management capabilities (for enrolled devices)  in Microsoft Intune
-[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] lets you manage a range of devices by *enrolling* them into the service. Users can then use a *company portal* to perform a range of operations such as enrolling their device, browsing and installing apps, making sure their device is compliant with company policies, and contacting their IT support.
+[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] lets you manage a range of devices by *enrolling* them into the service. Users can then use a *company portal* to perform a range of operations such as enrolling their device, browsing and installing apps, making sure their device is compliant with company policies, and contacting their IT support.
 See later in this topic for a full list of the capabilities that enrolling devices gives you.
 
 ## When to enroll devices
-For mobile device operating systems including iOS, Android and Windows Phone, you must always enroll devices. For Windows PCs, you can choose between enrolling them, or installing the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] PC client software which offers a few capabilities not available when you enroll devices.
+For mobile device operating systems including iOS, Android and Windows Phone, you must always enroll devices. For Windows PCs, you can choose between enrolling them, or installing the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] PC client software which offers a few capabilities not available when you enroll devices.
 Review the information in this topic and in the [Windows PC management capabilities (with the Microsoft Intune computer client)](windows-pc-management-capabilities-in-microsoft-intune.md) topic to help you decide which method you will use to manager you Windows PCs.
 
 ## <a name="BKMK_MobileDeviceReqs"></a>Requirements for device management
 ### Operating systems
 
-[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] can manage the following device platforms:
+[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] can manage the following device platforms:
 
 - Apple iOS 7.1 and later
 - Google Android 4.0 and later (including Samsung KNOX)
@@ -31,10 +31,10 @@ Review the information in this topic and in the [Windows PC management capabilit
 
 <div class="alert alert-tip">
   <h5><span class="icon-tip"></span> Tip</h5>
-  <p>If you previously enrolled devices that run an earlier version of iOS than the supported version above, these will remain enrolled. However, check the documentation for each [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] to ensure that version of iOS is supported by the feature.</p>
+  <p>If you previously enrolled devices that run an earlier version of iOS than the supported version above, these will remain enrolled. However, check the documentation for each [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to ensure that version of iOS is supported by the feature.</p>
 </div>
 
-[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] can manage users' devices, popularly known as "bring your own device" (BYOD). It can also manage company-owned devices including scenarios where the company provides a list of devices users may choose from, known as "choose your own device" (CYOD).
+[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] can manage users' devices, popularly known as "bring your own device" (BYOD). It can also manage company-owned devices including scenarios where the company provides a list of devices users may choose from, known as "choose your own device" (CYOD).
 
 How you enroll devices depends on your organization's needs:
 
@@ -57,7 +57,7 @@ To learn about using the On-Premises Connector or Service to Service Connector w
 ## Mobile device management features
 
 
-Management, inventory, app deployment, provisioning, and retirement are all handled through the [!INCLUDE[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] administration console. Users gain access to the company portal which allows them to install apps, enroll and remove devices, and helps them contact their IT department or helpdesk.
+Management, inventory, app deployment, provisioning, and retirement are all handled through the [!INCLUDE[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administration console. Users gain access to the company portal which allows them to install apps, enroll and remove devices, and helps them contact their IT department or helpdesk.
 
 **Mobile device management (MDM) capabilities** include the following:
 
@@ -88,7 +88,7 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 |Wi-Fi profiles|Deploy wireless network settings to your users. By deploying these settings, you minimize the end-user effort required to connect to the corporate network.|[Help users connect to company networks using Wi-Fi profiles with Microsoft Intune](help-users-connect-to-company-networks-using-wi-fi-profiles-with-microsoft-intune.md)|
 |Email profiles|Create and deploy email settings to devices. This lets users access corporate email on their personal devices without any required setup on their part.|[Configure access to corporate email using email profiles with Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)|
 |VPN profiles|Deploy VPN settings to users and devices in your organization. By deploying these settings, you minimize the end-user effort required to connect to resources on the company network.|[Help users connect to their work using VPN profiles with Microsoft Intune](help-users-connect-to-their-work-using-vpn-profiles-with-microsoft-intune.md)|
-|Conditional access policies|Manage access to Microsoft Exchange email and SharePoint Online from devices that are not managed by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].|[Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-sharepoint-with-microsoft-intune.md)|
+|Conditional access policies|Manage access to Microsoft Exchange email and SharePoint Online from devices that are not managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].|[Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-sharepoint-with-microsoft-intune.md)|
 
 ### Inventory and reporting
 
@@ -97,7 +97,7 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 |Inventory and reporting|Find information about the devices you manage and the software they are using.<br /><br />You can filter these reports in a number of ways, such as the device platform, and whether the device is compliant with corporate standards.|[Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md)|
 
 ##Next steps
-Now you've discovered some of the capabilities you can use when you enroll your devices with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], you'll need to [get ready to enroll your devices](get-ready-to-enroll-devices-in-microsoft-intune.md). After you have enrolled your devices, you can take advantage of all of the capabilities you've read about in this topic.
+Now you've discovered some of the capabilities you can use when you enroll your devices with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you'll need to [get ready to enroll your devices](get-ready-to-enroll-devices-in-microsoft-intune.md). After you have enrolled your devices, you can take advantage of all of the capabilities you've read about in this topic.
 
 ### See Also
 [Introduction to Microsoft Intune](introduction-to-microsoft-intune.md)

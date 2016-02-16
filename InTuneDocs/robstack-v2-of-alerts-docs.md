@@ -9,7 +9,7 @@ ms.assetid: 2da6acc2-e2d6-4bfa-bd7f-06a552f3cdca
 author: robstackmsft
 ---
 # robstack - V2 of Alerts docs
-Alerts keep you in touch with what's happening in [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)].
+Alerts keep you in touch with what's happening in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
 
 For example, alerts can notify you about the following events:
 
@@ -17,12 +17,12 @@ For example, alerts can notify you about the following events:
 
 -   Malware has been found on a computer
 
--   A conflict between two [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policies has been detected
+-   A conflict between two [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policies has been detected
 
--   The latest updates and information about the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] service (notices).
+-   The latest updates and information about the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service (notices).
 
 ## How alerts work
-Alerts are generated based on **alert types**, a set of preconfigured rules built into [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]. For example, the alert type **Cloud storage has 10% or less free space** alerts you when you are running out of space to store your apps in the cloud. You can enable or disable, and configure properties for each alert type, for example, using the above alert type, you can configure:
+Alerts are generated based on **alert types**, a set of preconfigured rules built into [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. For example, the alert type **Cloud storage has 10% or less free space** alerts you when you are running out of space to store your apps in the cloud. You can enable or disable, and configure properties for each alert type, for example, using the above alert type, you can configure:
 
 -   **State:** Whether this alert type is enabled or disabled
 
@@ -31,15 +31,15 @@ Alerts are generated based on **alert types**, a set of preconfigured rules buil
     |||
     |-|-|
     |Severity|Description|
-    |![](/media/Critical-Alert.jpg)|Indicates a serious issue that you should investigate as soon as possible, for example, if malware has been detected on a computer.|
-    |![](/media/Warning-Alert.jpg)|Indicates an issue that is not currently serious, but might become serious if you do not attend to it, for example, security updates are waiting to be installed.|
-    |![](/media/Informational-Alert.jpg)|Indicates information that is not critical to your operations, for example, a new version of the Exchange Connector is available.|
+    |![](./media/Critical-Alert.jpg)|Indicates a serious issue that you should investigate as soon as possible, for example, if malware has been detected on a computer.|
+    |![](./media/Warning-Alert.jpg)|Indicates an issue that is not currently serious, but might become serious if you do not attend to it, for example, security updates are waiting to be installed.|
+    |![](./media/Informational-Alert.jpg)|Indicates information that is not critical to your operations, for example, a new version of the Exchange Connector is available.|
 
 Other alert types might contain different items you can configure such as the percentage of devices that must be affected by an issue before an alert is generated.
 
-**When the criteria in an alert type is met, an alert is generated and displayed in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] admin console.**
+**When the criteria in an alert type is met, an alert is generated and displayed in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] admin console.**
 
-Additionally, you can configure [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] to notify you by email when an alert is generated.
+Additionally, you can configure [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to notify you by email when an alert is generated.
 
 ## Configuring alerts
 In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Admin** &gt; **Alerts and Notifications**, then choose one of the following configuration tasks:
@@ -59,7 +59,7 @@ Use the following options to help you work with alerts from the Intune admin con
 |View notices|Choose one of:<br /><br />-   In the **Dashboard** workspace, click **Notices**.<br />-   In the **Alerts** workspace, click **All Alerts** &gt; **Notices**.|
 |Close an alert|In the list of alerts, choose the alert to close, then click **Close Alert**.<br /><br />Closed alerts are permanently deleted after 90 days.|
 |Reactivate a closed alert|In the list of alerts, set the **Filters** drop-down to **Closed**.<br /><br />In the list of closed alerts, select the alert you want to reactivate, then click **Reactivate Alert**.|
-[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] alerts remain active until:
+[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] alerts remain active until:
 
 -   The issue that caused the alert is resolved
 

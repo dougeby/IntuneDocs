@@ -15,7 +15,7 @@ You can use a product key to redeem a subscription or add users to an existing s
 ## Redeem your product key
 To redeem your product key, enter the 25-character code.
 
--   If you are activating a [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] product key, go [here](https://account.manage.microsoft.com/commerce/productkeystart.aspx).
+-   If you are activating a [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] product key, go [here](https://account.manage.microsoft.com/commerce/productkeystart.aspx).
 
 -   If you are activating an Enterprise Mobility Suite product key, go [here](http://www.microsoft.com/ems/open).
 

@@ -87,7 +87,7 @@ Administrators can delete devices in the Azure Active Directory portal:
 
 ##### Troubleshooting MDM authority not defined error
 
-1.  Verify that the MDM Authority has been set appropriately for the version of the Intune service you are using  , that is, for Intune, O365 MDM, or System Center Configuration Manager with Intune. For [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)],  the MDM Authority is set in **Admin** &gt; **Mobile Device Management**. For [!INCLUDE[cmshort](/includes/cmshort_md.md)] with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], you set it when configuring the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] connector,  and in O365 it's a setting **Mobile Devices**.
+1.  Verify that the MDM Authority has been set appropriately for the version of the Intune service you are using  , that is, for Intune, O365 MDM, or System Center Configuration Manager with Intune. For [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)],  the MDM Authority is set in **Admin** &gt; **Mobile Device Management**. For [!INCLUDE[cmshort](./includes/cmshort_md.md)] with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you set it when configuring the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] connector,  and in O365 it's a setting **Mobile Devices**.
 
     > [!NOTE]
     > One you set the MDM authority, you can only change it by contacting Support, as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
@@ -137,7 +137,7 @@ Administrators can delete devices in the Azure Active Directory portal:
 
 4.  Find the device in question and review how the device was removed. The Example below shows the account SCCMInstall deleted the device via an Unknown Application.
 
-    ![](/media/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
+    ![](./media/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
 5.  Check that Configuration Manager does not have a scheduled task, script, or other process which could be automatically purging non-domain, mobile, or related devices.
 

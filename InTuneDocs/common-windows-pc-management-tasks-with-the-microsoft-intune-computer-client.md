@@ -10,7 +10,7 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 author: robstackmsft
 ---
 # Common Windows PC management tasks with the Microsoft Intune computer client
-Review the information in this topic to learn how to manage your computers that run the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] client. If you have not yet installed the client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+Review the information in this topic to learn how to manage your computers that run the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] client. If you have not yet installed the client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 ## <a name="BKMK_PolicyTasks"></a>Tasks that use Microsoft Intune policies
 
@@ -18,17 +18,17 @@ Review the information in this topic to learn how to manage your computers that 
 Policies simplify the administration of Windows Firewall settings on managed computers. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 ### Use policies to manage the Microsoft Intune Center
-The [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Center lets users:
+The [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Center lets users:
 
 -   Get applications from the company portal.
 
 -   Check for updates.
 
--   Manage [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] [!INCLUDE[epshort](/includes/epshort_md.md)].
+-   Manage [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] [!INCLUDE[epshort](./includes/epshort_md.md)].
 
 -   Request remote assistance.
 
-The [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Center is installed on all managed computers. You can configure the following settings in a [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Center policy and these are displayed to users in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] Center:
+The [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Center is installed on all managed computers. You can configure the following settings in a [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Center policy and these are displayed to users in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Center:
 
 |Policy setting|More information|
 |------------------|--------------------|
@@ -43,10 +43,10 @@ The [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Center is installed o
 Use policies to configure the settings that managed computers use to check for, and download software updates from Microsoft and from third-parties. For more information, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
 ### Use policies to manage Endpoint Protection settings
-Use policies to configure settings for [!INCLUDE[epshort](/includes/epshort_md.md)] that you then deploy to managed computers. This includes scan schedules, actions to take when malware is detected, and more. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+Use policies to configure settings for [!INCLUDE[epshort](./includes/epshort_md.md)] that you then deploy to managed computers. This includes scan schedules, actions to take when malware is detected, and more. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 ## <a name="BKMK_Inventory"></a>View hardware and software inventory
-[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] collects detailed information about the hardware and software of managed computers. Use the information in the following procedures to learn how to create:
+[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] collects detailed information about the hardware and software of managed computers. Use the information in the following procedures to learn how to create:
 
 -   A report that lists information about the hardware capabilities of your computers.
 
@@ -105,23 +105,23 @@ In addition to policies, you can also perform the following management tasks on 
 
 2.  Select the devices you want to retire, and then click **Retire/Wipe**.
 
-To re-enroll a computer into the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] service, reinstall the client software on the computer using the information in the [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) topic.
+To re-enroll a computer into the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service, reinstall the client software on the computer using the information in the [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) topic.
 
-If a computer cannot connect to [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], a message is displayed in the **Dashboard** workspace.
+If a computer cannot connect to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], a message is displayed in the **Dashboard** workspace.
 
 When you retire a computer:
 
--   It is removed from the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] inventory, and the license associated with the computer is made available for re-use.
+-   It is removed from the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] inventory, and the license associated with the computer is made available for re-use.
 
--   Its status no longer displays in the [!INCLUDE[wit_adminconsole](/includes/wit_adminconsole_md.md)].
+-   Its status no longer displays in the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)].
 
--   [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] removes the client software from the computer. If the computer is not connected to the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] service, the client software will be removed next time it connects.
+-   [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] removes the client software from the computer. If the computer is not connected to the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service, the client software will be removed next time it connects.
 
--   [!INCLUDE[epshort](/includes/epshort_md.md)] is removed from the computer. If the computer has another endpoint application installed and it is disabled, that application can be re-enabled after [!INCLUDE[epshort](/includes/epshort_md.md)] is removed to ensure that your computers are protected.
+-   [!INCLUDE[epshort](./includes/epshort_md.md)] is removed from the computer. If the computer has another endpoint application installed and it is disabled, that application can be re-enabled after [!INCLUDE[epshort](./includes/epshort_md.md)] is removed to ensure that your computers are protected.
 
 -   Any policies are removed from the computer and the values that were set by the policy will be changed.
 
--   The computer no longer receives software updates or malware definition updates from the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] service.
+-   The computer no longer receives software updates or malware definition updates from the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service.
 
 -   Depending on how they are configured, retired computers can continue to receive updates by using Windows Server Update Services, Windows Update, or Microsoft Update.
 
@@ -131,7 +131,7 @@ When you retire a computer:
     If the client fails to uninstall, read [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md) for more help.
 
 ### <a name="BKMK_UserDeviceLinking"></a>How to manage user-device linking
-Before you can deploy software to a user, you must link the user to a computer. You can link a user to multiple computers, but each computer can be linked to only one user. Users are automatically linked to any computers that they enroll in [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] by using the company portal.
+Before you can deploy software to a user, you must link the user to a computer. You can link a user to multiple computers, but each computer can be linked to only one user. Users are automatically linked to any computers that they enroll in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] by using the company portal.
 
 ##### To link a user to a computer
 
@@ -153,7 +153,7 @@ Before you can deploy software to a user, you must link the user to a computer. 
 > If you want to restrict end users ability to link themselves to computers, enable the option **Restrict users' ability to link themselves to computers** in the **Microsoft Intune Agent Settings** policy.
 
 ### Respond to a Remote Assistance request
-Users can request assistance by using Remote Assistance via Microsoft Easy Assist which is installed automatically on managed computers. When a request is made, an alert displays in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] administrator console.
+Users can request assistance by using Remote Assistance via Microsoft Easy Assist which is installed automatically on managed computers. When a request is made, an alert displays in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administrator console.
 
 > [!IMPORTANT]
 > Remote Assistance is not supported on computers running Windows 8 or later.
@@ -175,7 +175,7 @@ Users can request assistance by using Remote Assistance via Microsoft Easy Assis
         The user sees the message: **Your request was accepted. Follow the instructions in Easy Assist to share a program or your desktop with your system administrator**.
 
         > [!IMPORTANT]
-        > You cannot accept a remote assistance request on a Mac computer that is running the [!INCLUDE[wit_adminconsole](/includes/wit_adminconsole_md.md)].
+        > You cannot accept a remote assistance request on a Mac computer that is running the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)].
 
     -   **Decline the request** - Close the **View Troubleshooting Information** window, and then click **Close This Alert** in the alert properties window.
 

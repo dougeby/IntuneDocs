@@ -10,7 +10,7 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 author: robstackmsft
 ---
 # Windows 10 configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)]**general configuration policy** for Windows 10 to configure settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices:
+Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]**general configuration policy** for Windows 10 to configure settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices:
 
 ## Create a Windows 10 general configuration policy
 

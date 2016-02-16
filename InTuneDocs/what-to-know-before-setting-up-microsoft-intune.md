@@ -10,7 +10,7 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 author: Staciebarker
 ---
 # What to know before you set up Microsoft Intune
-Before you set up [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)], you might want to review [Ways to do enterprise mobility Intune](Ways-to-do-enterprise-mobility). After you are familiar with the capabilities of [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], you should be ready to set up your subscription. If you start with a trial subscription, at a later time you can convert it to a full subscription. To convert a trial subscription, see [How to buy Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx).
+Before you set up [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], you might want to review [Ways to do enterprise mobility Intune](Ways-to-do-enterprise-mobility). After you are familiar with the capabilities of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you should be ready to set up your subscription. If you start with a trial subscription, at a later time you can convert it to a full subscription. To convert a trial subscription, see [How to buy Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx).
 
 Before you set up Intune, you need to know about:
 
@@ -25,7 +25,7 @@ Before you set up Intune, you need to know about:
 
 The general capabilities of Intune are:
 
--   **Manage mobile devices and computers, no servers or intranet required.** You can manage mobile devices and computers, even if those devices are not joined to a domain or brought on-site. This makes [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] ideal for a company with a mobile or geographically-distributed workforce.
+-   **Manage mobile devices and computers, no servers or intranet required.** You can manage mobile devices and computers, even if those devices are not joined to a domain or brought on-site. This makes [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] ideal for a company with a mobile or geographically-distributed workforce.
 
 -   **Require encryption of mobile devices and computers.** Mobile devices that support encryption can be required to use it. You can also require computers that support Bitlocker drive encryption to use it. If a mobile device or computer with encryption is lost or stolen, the data on the device’s storage media is unreadable, helping to secure that data it from theft.
 
@@ -35,9 +35,9 @@ The general capabilities of Intune are:
 
 -   **Provide a “self-service” model for IT.** Users can use the Company Portal to enroll devices, to install site-licensed software, or to find contact information for IT administrators.
 
--   **Support multi-factor authentication.** [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] now supports multi-factor authentication. For details, see [Protect Windows devices with multi-factor authentication](protect-windows-devices-with-multi-factor-authentication.md).
+-   **Support multi-factor authentication.** [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] now supports multi-factor authentication. For details, see [Protect Windows devices with multi-factor authentication](protect-windows-devices-with-multi-factor-authentication.md).
 
--   **Available in multiple languages.** Intune is now available in the following languages: Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish.  For a list of the countries where the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] service is supported, see [International availability](https://products.office.com/en-us/business/international-availability).
+-   **Available in multiple languages.** Intune is now available in the following languages: Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish.  For a list of the countries where the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service is supported, see [International availability](https://products.office.com/en-us/business/international-availability).
 
 
 

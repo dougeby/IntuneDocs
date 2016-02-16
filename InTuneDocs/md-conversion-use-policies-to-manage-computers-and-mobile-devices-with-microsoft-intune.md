@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: b7dbb479-d3c8-4ac0-8140-a7a68120e598
 ---
 # MD Conversion - Use policies to manage computers and mobile devices with Microsoft Intune
-[!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)]**Policies** are groups of settings that control features on mobile devices and computers. You create policies using templates that contain recommended or customized settings, and then deploy them to device or user groups.
+[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]**Policies** are groups of settings that control features on mobile devices and computers. You create policies using templates that contain recommended or customized settings, and then deploy them to device or user groups.
 
 ## How to create configuration policies
 The way you create policies differs depending on the policy type you are creating.
@@ -81,16 +81,16 @@ When you select a deployed policy, you can view further information about the de
 
 2.  Select the devices on which you want to refresh the policies, and then click **Remote Tasks** &gt; **Refresh Policies**.
 
-3.  Click **Remote Tasks** in the bottom-right corner of the [!INCLUDE[wit_adminconsole](/includes/wit_adminconsole_md.md)] window to check the task status.
+3.  Click **Remote Tasks** in the bottom-right corner of the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)] window to check the task status.
 
 ## More information about Intune policies
 
 ### How long does it take for mobile devices to get policy or apps after they have been deployed?
-When a policy or app is deployed, **[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] immediately begins attempting to notify the device that it should check-in with the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] service.** This typically takes less than 5 minutes.
+When a policy or app is deployed, **[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] immediately begins attempting to notify the device that it should check-in with the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service.** This typically takes less than 5 minutes.
 
 If a device doesn't check in to get policy after the first notification is sent, 3 more attempts are made.  If the device is offline (for example, it is turned off, or not connected to a network) then it might not receive the notifications.
 
-In this case, the device will get policy on its next scheduled check-in with the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] service as follows:
+In this case, the device will get policy on its next scheduled check-in with the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service as follows:
 
 |Platform|Check-in frequency after initial notification|
 |------------|-------------------------------------------------|
@@ -109,7 +109,7 @@ If the device has just enrolled the check-in frequency will be more frequent as 
 Users can also launch the Company Portal app and sync the device to immediately check for policy anytime.
 
 ### What actions cause Intune to immediately send notification  to a device?
-Devices check in with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] either when they receive a notification telling them to check-in, or during their regularly scheduled check-in as shown in the tables above.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app deployment, profile deployment (WiFi, VPN, e-mail, etc.), or policy deployment, [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] will immediately begin trying to notify the device that it should check-in with the Intune service to receive these updates.
+Devices check in with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] either when they receive a notification telling them to check-in, or during their regularly scheduled check-in as shown in the tables above.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app deployment, profile deployment (WiFi, VPN, e-mail, etc.), or policy deployment, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] will immediately begin trying to notify the device that it should check-in with the Intune service to receive these updates.
 
 Other changes such as revising the contact information in the company portal do not cause an immediate notification to devices.
 
@@ -150,7 +150,7 @@ When you delete a policy, or remove a device from a group to which a policy was 
 |---------------|----------|
 |**Endpoint Protection settings**|Settings are restored to their recommended values. The only exception is the setting **Join Microsoft Active Protection Service** for which the default value is **No**. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
 |**Software updates settings**|Settings are reset to the default state for the operating system. For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
-|**[!INCLUDE[wit_tools](/includes/wit_tools_md.md)] settings**|Any support contact information that was configured by the policy is deleted from computers.|
+|**[!INCLUDE[wit_tools](./includes/wit_tools_md.md)] settings**|Any support contact information that was configured by the policy is deleted from computers.|
 |**Windows Firewall settings**|Settings are reset to the default for the computer operating system. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
 
 ## See Also

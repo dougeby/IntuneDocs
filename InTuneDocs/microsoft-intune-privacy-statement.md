@@ -10,11 +10,11 @@ ms.assetid: ca2f13b7-9a88-4ede-b4ed-589500489953
 author: robstackmsft
 ---
 # Microsoft Intune Privacy Statement
-For the latest [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Privacy Statement, see [this page](http://www.microsoft.com/privacystatement/WindowsIntune/Default.aspx).
+For the latest [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Privacy Statement, see [this page](http://www.microsoft.com/privacystatement/WindowsIntune/Default.aspx).
 
-Microsoft is committed to protecting your privacy. This privacy statement applies to the data collected by Microsoft through [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] (the “Services”); it does not apply to other online or offline Microsoft sites, products, or services.
+Microsoft is committed to protecting your privacy. This privacy statement applies to the data collected by Microsoft through [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] (the “Services”); it does not apply to other online or offline Microsoft sites, products, or services.
 
-[!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] provides enterprise IT Administrators with cloud-based security, management tools and reports, and an upgrade license to the latest version of the Windows operating system, helping them to keep their Windows based PCs up-to-date and secure from virtually anywhere.
+[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] provides enterprise IT Administrators with cloud-based security, management tools and reports, and an upgrade license to the latest version of the Windows operating system, helping them to keep their Windows based PCs up-to-date and secure from virtually anywhere.
 
 **Notice to End Users:** All references to “you” or “your” in this privacy statement are to the customers who contract with Microsoft for the Services.   Microsoft’s customers, in turn, may use the Services to develop, provide and host services for their end users. Any information Microsoft collects or handles through the Services is processed for our customers. End users should direct privacy-related requests to the entity providing services to the end user.  Microsoft is not responsible for the privacy practices of our customers or other third parties except as specifically provided in your agreement(s) with Microsoft.
 
@@ -76,7 +76,7 @@ We will not disclose Customer Data to a third party (including law enforcement, 
 Microsoft is committed to helping protect the security of your information. We use a variety of security technologies and procedures to help protect your information from unauthorized access, use, or disclosure.   For example, we store the information you provide on computer systems with limited access, which are located in controlled facilities.
 
 ## <a name="bkmk_SpecificFeatures"></a>Specific Features
-This section contains important privacy information about specific features of [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)]. This is not a complete list of all features.
+This section contains important privacy information about specific features of [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]. This is not a complete list of all features.
 
 IMPORTANT NOTE: This Privacy Statement is provided to Microsoft’s Customers.   Microsoft’s customers are responsible for securing rights to their Customer Data necessary for us to provide the Services without violating the rights of any third party.   IT Administrators may choose to publish their own company privacy policy visible to end users in the Company Portal experiences.  [Learn More](http://go.microsoft.com/fwlink/?LinkId=265345).   End users should direct privacy-related requests to their IT Administrators.
 
@@ -84,7 +84,7 @@ IMPORTANT NOTE: This Privacy Statement is provided to Microsoft’s Customers.  
 
 -   **Impact of enrolling a Windows XP, Windows Vista, Windows 7 and Windows 8 Enterprise and Professional Computer:**
 
-    -   During enrollment, [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] automatically installs certain [Agents, Applications and Components](http://go.microsoft.com/fwlink/?LinkID=272129) onto the Computer.
+    -   During enrollment, [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] automatically installs certain [Agents, Applications and Components](http://go.microsoft.com/fwlink/?LinkID=272129) onto the Computer.
 
     -   In some cases, previously installed anti-malware may be removed.  For more information, please refer to “[Using Microsoft Intune Endpoint Protection or an Existing Endpoint Protection Application](http://go.microsoft.com/fwlink/?LinkID=272130).”
 
@@ -100,7 +100,7 @@ IMPORTANT NOTE: This Privacy Statement is provided to Microsoft’s Customers.  
 
 -   **Impact of removing Windows XP, Windows Vista, Windows 7 and Windows 8 Enterprise and Professional Computer:** Upon removal, Software used by the Services will be uninstalled from the computer. As a result, in those cases where the previously installed anti-malware was removed during the enrollment, the Computer may be left without any active anti-malware programs. [Learn more about these and other consequences of removing a device](http://go.microsoft.com/fwlink/?LinkId=260958).
 
--   **Impact of removing a Windows RT, Windows Phone 8, iOS Device, or other Mobile Device:** Removing a Mobile Device will result in disassociating the user’s Mobile Device with its electronic mail server.  As a result, users will no longer be able to sync their e-mail or install software from the Company Portal experiences.  In some cases, the applications that were installed from the Company Portal experiences will be uninstalled, and any data associated with those applications will be removed.  In some cases, the policies and settings that were applied on the device through [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] will no longer be in effect.  [Learn more about these and other consequences of removing a device](http://go.microsoft.com/fwlink/?LinkId=260958).
+-   **Impact of removing a Windows RT, Windows Phone 8, iOS Device, or other Mobile Device:** Removing a Mobile Device will result in disassociating the user’s Mobile Device with its electronic mail server.  As a result, users will no longer be able to sync their e-mail or install software from the Company Portal experiences.  In some cases, the applications that were installed from the Company Portal experiences will be uninstalled, and any data associated with those applications will be removed.  In some cases, the policies and settings that were applied on the device through [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] will no longer be in effect.  [Learn more about these and other consequences of removing a device](http://go.microsoft.com/fwlink/?LinkId=260958).
 
 -   **Endpoint Protection.** The Services use the same malware engine as Forefront Endpoint Protection, and the [privacy statement for Forefront Endpoint Protection](http://go.microsoft.com/fwlink/?LinkId=247324) applies.
 

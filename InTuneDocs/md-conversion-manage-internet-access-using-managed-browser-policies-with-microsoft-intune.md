@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 3837a995-65e5-49a1-9bec-98fe5bd5ffb4
 ---
 # MD Conversion - Manage Internet access using managed browser policies with Microsoft Intune
-The managed browser is a web browsing application that you can deploy in your organization using [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)]. A managed browser policy configures an allow list or a block list that restricts the web sites that users of the managed browser can visit.
+The managed browser is a web browsing application that you can deploy in your organization using [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]. A managed browser policy configures an allow list or a block list that restricts the web sites that users of the managed browser can visit.
 
 Because this app is a managed app, you can also apply mobile application management policies to the app, such as controlling the use of cut, copy and paste, preventing screen captures, and also ensuring that links to content that users click only open in other managed apps. For details, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 > [!IMPORTANT]
-> If users install the managed browser themselves on an iOS device with a version less than iOS 9, it will not be managed by any policies you create. To ensure that the browser is managed by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], they must uninstall the app before you can deploy it to them as a managed app. On iOS 9 and later, if the user installs the managed browser themselves they will be prompted to allow it to become managed by policy.
+> If users install the managed browser themselves on an iOS device with a version less than iOS 9, it will not be managed by any policies you create. To ensure that the browser is managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], they must uninstall the app before you can deploy it to them as a managed app. On iOS 9 and later, if the user installs the managed browser themselves they will be prompted to allow it to become managed by policy.
 
 You can create managed browser policies for the following device types:
 
@@ -21,7 +21,7 @@ You can create managed browser policies for the following device types:
 
 -   Devices that run iOS 7.1 and later
 
-The [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] Managed Browser supports opening web content from [Microsoft apps you can use with Microsoft Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md).
+The [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Managed Browser supports opening web content from [Microsoft apps you can use with Microsoft Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md).
 
 ## Create a managed browser policy
 
@@ -39,7 +39,7 @@ The [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] Managed Browser support
 
     |Setting name|More information|
     |----------------|--------------------|
-    |**Name**|Enter a unique name for the managed browser policy to help you identify it in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console.|
+    |**Name**|Enter a unique name for the managed browser policy to help you identify it in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.|
     |**Description**|Provide a description that gives an overview of the managed browser policy and other relevant information that helps you to locate it.|
     |**Enable an allow list or block list to restrict the URLs the Managed Browser can open**|Select one of the following options:<br /><br />**Allow the managed browser to open only the URLs listed below** – Specify a list of URLs that the managed browser can open.<br /><br />**Block the managed browser from opening the URLs listed below** – Specify a list of URLs that the managed browser will be blocked from opening.<br /><br />For more information about the URL formats you can specify, see [URL format for allowed and blocked URLs](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md#BKMK_URLs) in this topic.|
 
@@ -51,7 +51,7 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 After you have created the managed browser policy, you can then create a software deployment for the managed browser app, and associate it with the managed browser policy you created.
 
 > [!IMPORTANT]
-> Managed browser policies are not deployed in the same way as other [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] polices. This type of policy must be associated with the managed browser software package.
+> Managed browser policies are not deployed in the same way as other [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] polices. This type of policy must be associated with the managed browser software package.
 
 Deploy the app, ensuring that you select the managed browser policy on the **Mobile App Management** page to associate the policy with the app.
 
@@ -67,7 +67,7 @@ For more information about how to deploy apps, see [Deploy apps to mobile device
 
 -   The managed browser can only block access to sites when they are accessed directly. It cannot block access when intermediate services (such as a translation service) are used to access the site.
 
--   To allow authentication, and to ensure that [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] documentation can be accessed,**&#42;.microsoft.com** is exempt from the allow or block list settings – it is always allowed.
+-   To allow authentication, and to ensure that [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] documentation can be accessed,**&#42;.microsoft.com** is exempt from the allow or block list settings – it is always allowed.
 
 ### Turn off usage data
 Microsoft automatically collects anonymous data about the performance and use of the managed browser to improve Microsoft products and services, but users can turn off data collection by using the **Usage Data** setting on their device. You have no control over the collection of this data.

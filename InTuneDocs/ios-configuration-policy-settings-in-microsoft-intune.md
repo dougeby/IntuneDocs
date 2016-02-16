@@ -10,7 +10,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 author: robstackmsft
 ---
 # iOS configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] **iOS general configuration policy** to configure settings for:
+Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **iOS general configuration policy** to configure settings for:
 
 -   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 

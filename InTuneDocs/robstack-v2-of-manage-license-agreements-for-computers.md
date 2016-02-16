@@ -9,14 +9,14 @@ ms.assetid: cfde09cf-8f14-435c-a6b8-d53e1dfca644
 author: robstackmsft
 ---
 # robstack - V2 of Manage license agreements for computers
-[!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] lets you add and manage license agreement information for software that was purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can also organize this information into logical groups.
+[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] lets you add and manage license agreement information for software that was purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can also organize this information into logical groups.
 
 > [!IMPORTANT]
 > This feature is provided for convenience only and accuracy is not guaranteed. You should not rely on it to confirm compliance with Microsoft Volume Licensing agreements. Microsoft will not use any data gathered to investigate potential violations of, or compliance with license agreements you may have with us.
 > 
-> Licenses you add to [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] do not affect your license agreements or entitlements to use your software.  For example, deleting a license/agreement pair from [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], you do not delete or nullify license agreements that exist between you and Microsoft.
+> Licenses you add to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] do not affect your license agreements or entitlements to use your software.  For example, deleting a license/agreement pair from [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you do not delete or nullify license agreements that exist between you and Microsoft.
 
-In the **Licenses** workspace of the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] administrator console, you can:
+In the **Licenses** workspace of the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administrator console, you can:
 
 -   Add and edit Microsoft Volume Licensing agreements
 
@@ -24,15 +24,15 @@ In the **Licenses** workspace of the [!INCLUDE[wit_nextref](/includes/wit_nextre
 
 -   Manage licenses and groups
 
--   Compare the entitlement information that [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] retrieves from the Volume Licensing Service Center (VLSC) to the inventory of Microsoft software that [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] detects on your managed Windows PCs.
+-   Compare the entitlement information that [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] retrieves from the Volume Licensing Service Center (VLSC) to the inventory of Microsoft software that [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] detects on your managed Windows PCs.
 
 Additionally, you can generate reports that show installation and license counts for software titles. License reports can help you assess your complete license position for Microsoft software and non-Microsoft software titles.
 
 > [!TIP]
-> The **Licenses** workspace is not displayed in the administrator console until you are managing at least one Windows PC with the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] computer client.
+> The **Licenses** workspace is not displayed in the administrator console until you are managing at least one Windows PC with the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] computer client.
 
 ## Add Microsoft Volume Licensing agreements
-[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] Volume Licensing agreements provide license information for software that was purchased through Microsoft Volume Licensing agreements. You can add Microsoft Volume Licensing agreements to [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] by providing matched pairs of agreement numbers. The agreement or authorization numbers must be matched to the correct license or enrollment numbers. Agreement number pairs are obtained when you purchase your license agreements from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
+[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Volume Licensing agreements provide license information for software that was purchased through Microsoft Volume Licensing agreements. You can add Microsoft Volume Licensing agreements to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] by providing matched pairs of agreement numbers. The agreement or authorization numbers must be matched to the correct license or enrollment numbers. Agreement number pairs are obtained when you purchase your license agreements from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
 ### <a name="BKMK_AddVLAgreements"></a>To add a Microsoft Volume Licensing agreement
 
@@ -83,7 +83,7 @@ Additionally, you can generate reports that show installation and license counts
         -   **License/Enrollment/Customer number** - Enter the license/enrollment/customer number of the license pair.
 
         > [!NOTE]
-        > If you add several agreement number pairs, [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] creates one agreement with the name that you specify, and all pairs that you added will be a part of this agreement.
+        > If you add several agreement number pairs, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] creates one agreement with the name that you specify, and all pairs that you added will be a part of this agreement.
 
     You can click **+** to add another agreement number pair, or **-** to remove an agreement number pair you have already entered.
 
@@ -97,9 +97,9 @@ Additionally, you can generate reports that show installation and license counts
 
 5.  Click **OK**.
 
-The **All Agreements** view is displayed, and [!INCLUDE[sco_dm_2](/includes/sco_dm_2_md.md)] connects to the Microsoft Volume Licensing Service Center to validate the agreement number pairs that you provided.
+The **All Agreements** view is displayed, and [!INCLUDE[sco_dm_2](./includes/sco_dm_2_md.md)] connects to the Microsoft Volume Licensing Service Center to validate the agreement number pairs that you provided.
 
-To update the volume license information after you have added license agreements in [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], in the **Licenses Overview** page, click **Refresh Now**. This action retrieves the current license information from the [Microsoft Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
+To update the volume license information after you have added license agreements in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], in the **Licenses Overview** page, click **Refresh Now**. This action retrieves the current license information from the [Microsoft Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
 
 > [!IMPORTANT]
 > Until you refresh the volume licensing information, you may see different information in the agreements list and the entitlement information on the **Agreements Overview** page.
@@ -114,10 +114,10 @@ After you refresh the volume license information, you can compare the license in
 > The **Product Title** displayed for all Microsoft Volume License agreements is **Not available**.
 
 ## Add and edit other software licensing agreements
-You can also add other types of license agreements to [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] in addition to Microsoft Volume Licensing agreements. These agreements can include non-Microsoft software or Microsoft software that was purchased through a retailer.
+You can also add other types of license agreements to [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] in addition to Microsoft Volume Licensing agreements. These agreements can include non-Microsoft software or Microsoft software that was purchased through a retailer.
 
 > [!IMPORTANT]
-> You must have at least one Windows PC enrolled in [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] before you can add an agreement.  In addition, at least one enrolled computer must have uploaded a licensable software package that you want to use to add a license agreement.
+> You must have at least one Windows PC enrolled in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] before you can add an agreement.  In addition, at least one enrolled computer must have uploaded a licensable software package that you want to use to add a license agreement.
 
 ### <a name="BKMK_AddOtherSoftwareAgreement"></a>To add other software agreements
 

@@ -12,8 +12,8 @@ robots: noindex,nofollow
 # Documentation for Microsoft Intune &lt;1&gt;
 Intune can help your users get more work done, and work the way they want to work, while helping you protect the data and devices they work with. The Intune documentation will show you how to do that.
 
-![](/media/WIT_TileDocCenter.png)
-[![](/media/WIT_TileOverview.png)](https://tnstage.redmond.corp.microsoft.com/en-US/library/mt422985(TechNet.10).aspx)[![](/media/WIT_TileGettingStarted.png)](https://tnstage.redmond.corp.microsoft.com/en-US/library/mt483702(TechNet.10).aspx)[![](/media/WIT_TileEnrollDevices.png)](https://technet.microsoft.com/library/dn646962.aspx/?WT.mc_id=IntuneEnroll20150801)[![](/media/WIT_TileManageDevices.png)](https://technet.microsoft.com/library/mt313202.aspx/?WT.mc_id=IntuneConfig20150801)[![](/media/WIT_TileManageApps.png)](https://technet.microsoft.com/library/dn646965.aspx/?WT.mc_id=IntuneDeploy20150801)[![](/media/WIT_TileProtectResources.png)](https://technet.microsoft.com/library/mt313203.aspx/?WT.mc_id=IntuneProtect20150801)[![](/media/WIT_TileRetireDevices.png)](https://technet.microsoft.com/library/mt313204.aspx/?WT.mc_id=IntuneRetire20150801)[![](/media/WIT_Tile_TechReference.png)](https://technet.microsoft.com/library/mt282239.aspx/?WT.mc_id=IntuneTR20150801)
+![](./media/WIT_TileDocCenter.png)
+[![](./media/WIT_TileOverview.png)](https://tnstage.redmond.corp.microsoft.com/en-US/library/mt422985(TechNet.10).aspx)[![](./media/WIT_TileGettingStarted.png)](https://tnstage.redmond.corp.microsoft.com/en-US/library/mt483702(TechNet.10).aspx)[![](./media/WIT_TileEnrollDevices.png)](https://technet.microsoft.com/library/dn646962.aspx/?WT.mc_id=IntuneEnroll20150801)[![](./media/WIT_TileManageDevices.png)](https://technet.microsoft.com/library/mt313202.aspx/?WT.mc_id=IntuneConfig20150801)[![](./media/WIT_TileManageApps.png)](https://technet.microsoft.com/library/dn646965.aspx/?WT.mc_id=IntuneDeploy20150801)[![](./media/WIT_TileProtectResources.png)](https://technet.microsoft.com/library/mt313203.aspx/?WT.mc_id=IntuneProtect20150801)[![](./media/WIT_TileRetireDevices.png)](https://technet.microsoft.com/library/mt313204.aspx/?WT.mc_id=IntuneRetire20150801)[![](./media/WIT_Tile_TechReference.png)](https://technet.microsoft.com/library/mt282239.aspx/?WT.mc_id=IntuneTR20150801)
 
 But you may also have some questions about how Intune fits in with other parts of your job. Here are some resources to help answer:
 
@@ -25,7 +25,7 @@ But you may also have some questions about how Intune fits in with other parts o
 
 -   **Why would I want to use Intune with Configuration Manager?** If you're already using System Center Configuration Manager to manage your company's PCs, Macs, and UNIX/Linux devices, adding an Intune connector lets you [easily manage all your mobile devices in one console](https://technet.microsoft.com/en-US/library/mt243476.aspx).
 
-![](/media/Nav-Puzzle/WIT_MDMLifecycle4.png)
+![](./media/Nav-Puzzle/WIT_MDMLifecycle4.png)
 
 ## Introduction to Intune
 The [introduction to Intune](https://technet.microsoft.com/library/dn646960(TechNet.10).aspx) section give you an overview of the  capabilities the Intune service provides. Here you’ll find information about how to fit Intune into your business, and considerations to take before you test drive Intune.
@@ -59,7 +59,7 @@ No technical documentation would be complete without [technical reference](https
 
 -   [Release notes for Microsoft Intune](release-notes-for-microsoft-intune.md)
 
--   Connect with the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] community:
+-   Connect with the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] community:
 
     -   [Read the latest news ](http://blogs.technet.com/b/microsoftintune/) in the Intune blog. [Follow Intune ](https://twitter.com/MSIntune) on Twitter. [Ask a question ](http://go.microsoft.com/fwlink/?LinkID=232998) in the Intune forums.
 

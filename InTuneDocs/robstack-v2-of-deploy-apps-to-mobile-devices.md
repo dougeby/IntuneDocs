@@ -9,7 +9,7 @@ ms.assetid: 4048cae7-8624-4f9c-b5c6-a2bbd21a63c6
 author: robstackmsft
 ---
 # robstack - V2 of Deploy apps to mobile devices
-Now that you've [learned the basics](https://technet.microsoft.com/library/dn646955.aspx) about [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] app deployment, you'll now learn how to configure and deploy apps to mobile devices you manage. This generally involves three steps:
+Now that you've [learned the basics](https://technet.microsoft.com/library/dn646955.aspx) about [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] app deployment, you'll now learn how to configure and deploy apps to mobile devices you manage. This generally involves three steps:
 
 -   [Configure the app](#BKMK_Conf)
 
@@ -116,11 +116,11 @@ In this procedure, you'll deploy the app to selected devices or users.
 
 |||
 |-|-|
-|![](/media/Available-install-on-iOS.png)|If you deployed the app as **Available**, it will be displayed in the company portal on users device from where they can install the app. For example, in this screenshot, the Bing for iOS app was deployed using the **External Link** installation type, with a custom icon, and the option **Display this as a featured app and highlight it in the company portal** was selected.|
-|![](/media/iOS-Required-install.PNG)|If you deployed the app as required, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed using the **Managed iOS app from the app store** installation type.|
+|![](./media/Available-install-on-iOS.png)|If you deployed the app as **Available**, it will be displayed in the company portal on users device from where they can install the app. For example, in this screenshot, the Bing for iOS app was deployed using the **External Link** installation type, with a custom icon, and the option **Display this as a featured app and highlight it in the company portal** was selected.|
+|![](./media/iOS-Required-install.PNG)|If you deployed the app as required, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed using the **Managed iOS app from the app store** installation type.|
 
 ## <a name="BKMK_Monitor"></a>Monitor the app
-You can see the apps you manage, and their deployment status in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console.
+You can see the apps you manage, and their deployment status in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.
 
 ### To view the apps you manage and their status
 In the **Apps** workspace, click the **Apps** node.
@@ -130,7 +130,7 @@ The list of apps you manage will be displayed. You can click on any app to see a
 > [!TIP]
 > You can use the **Filters** drop-down list to show only apps that meet the criteria you specify, like apps that failed to install, or apps that were successfully deployed.
 > 
-> ![](/media/App-filters.JPG)
+> ![](./media/App-filters.JPG)
 
 Additionally, the **Dashboard** workspace shows an overview of the status of your apps. If you click anywhere in the overview, you'll be taken to the list of apps.
 

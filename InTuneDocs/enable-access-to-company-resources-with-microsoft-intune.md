@@ -10,9 +10,9 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 author: Nbigman
 ---
 # Enable access to company resources with Microsoft Intune
-[!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)]**resource access profiles** work together to help your users gain access to the files and resources they need to do their work successfully, wherever they are.
+[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]**resource access profiles** work together to help your users gain access to the files and resources they need to do their work successfully, wherever they are.
 
-[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] provides the following mobile device policies that help you to accomplish this goal. Click any item in the table for detailed information about how to configure the policy:
+[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] provides the following mobile device policies that help you to accomplish this goal. Click any item in the table for detailed information about how to configure the policy:
 
 ## Resource access profiles and supported platforms
 

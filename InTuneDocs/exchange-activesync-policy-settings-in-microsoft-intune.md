@@ -10,7 +10,7 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 author: robstackmsft
 ---
 # Exchange ActiveSync policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] **Exchange ActiveSync** policy to configure settings that let you control a range of features and functionality on devices that are managed by Exchange ActiveSync.
+Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Exchange ActiveSync** policy to configure settings that let you control a range of features and functionality on devices that are managed by Exchange ActiveSync.
 
 ## Create an Exchange ActiveSync policy
 

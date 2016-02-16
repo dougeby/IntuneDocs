@@ -177,7 +177,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 ### Step 5: Configure conditional access policy.
 The following flow is used by conditional access policies for an Exchange on-premises environment to evaluate whether to allow or block devices.
 
-![](/media/ConditionalAccess8-2.png)
+![](./media/ConditionalAccess8-2.png)
 
 Follow the information provided under [Step 4: Configure the conditional access policy for Exchange on-premises ](https://technet.microsoft.com/en-us/library/dn705841.aspx) to set up your conditional access policy.
 
@@ -224,7 +224,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 ### Step 4: Configure conditional access policy.
 The following flow is used by conditional access policies for Exchange Online to evaluate whether to allow or block devices.
 
-![](/media/ConditionalAccess8-1.png)
+![](./media/ConditionalAccess8-1.png)
 
 Follow the information provided under [Step 4: Configure the conditional access policy for Exchange Online ](https://technet.microsoft.com/en-us/library/dn705841.aspx) to set up your conditional access policy.
 

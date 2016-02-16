@@ -10,12 +10,12 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 author: NathBarn
 ---
 # Set up iOS and Mac management with Microsoft Intune
-With [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], you can enable BYOD ("bring your own device") iOS and Mac OS X device enrollment to give access to company email and apps to iPhone, iPad and Mac users. Once users install the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] company portal app, their devices can be targeted with policy using the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] administration console.  Before you can manage iOS and Mac devices, you must import an Apple Push Notification service (APNs) certificate from Apple. This certificate allows Intune to manage iOS and Mac devices and establishes an accredited and encrypted IP connection with the mobile device management authority services.
+With [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you can enable BYOD ("bring your own device") iOS and Mac OS X device enrollment to give access to company email and apps to iPhone, iPad and Mac users. Once users install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] company portal app, their devices can be targeted with policy using the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administration console.  Before you can manage iOS and Mac devices, you must import an Apple Push Notification service (APNs) certificate from Apple. This certificate allows Intune to manage iOS and Mac devices and establishes an accredited and encrypted IP connection with the mobile device management authority services.
 
 As an alternative to enrollment with the Company Portal app, you can also [enroll corporate-owned iOS devices](https://technet.microsoft.com/library/dn408185.aspx#BKMK_CODiOS) .
 
 ## Prepare to manage iOS and Mac devices with Microsoft Intune
-The following steps allow [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] to manage iOS and Mac devices using the Company Portal.
+The following steps allow [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to manage iOS and Mac devices using the Company Portal.
 
 #### Set up iOS and Mac enrollment with Intune
 
@@ -25,7 +25,7 @@ The following steps allow [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] t
 2.  **Get a certificate signing request**
     As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **iOS and Mac OS X** &gt; **Upload an APNs Certificate**, and click **Download the APNs certificate request**. Save the certificate signing request (.csr) file locally. The .csr file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
 
-    ![](/media/Intune-iOS-enrollment-with-APNS.png)
+    ![](./media/Intune-iOS-enrollment-with-APNS.png)
 
 3.  **Get an Apple Push Notification service certificate**
     Go to the [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844) and sign in with your company Apple ID to create the APNs certificate using the .csr file. This Apple ID must be used in future to renew your APNs certificate. Download the APNs (.pem) certificate and save the file locally. This APNs certificate file is used to establish a trust relationship between the Apple Push Notification server and Intune’s mobile device management authority.

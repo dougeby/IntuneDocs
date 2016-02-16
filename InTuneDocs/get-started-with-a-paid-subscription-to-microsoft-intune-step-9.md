@@ -40,7 +40,7 @@ To set up mobile device management with Intune, you must  first set the mobile d
 
 4.  Open the company portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.
 
-To learn more about mobile device management using [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md).
+To learn more about mobile device management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md).
 
 **Prev** Step 8
 **Next** Post-configuration tasks

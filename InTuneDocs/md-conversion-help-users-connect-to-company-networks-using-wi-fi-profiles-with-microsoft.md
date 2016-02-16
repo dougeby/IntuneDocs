@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: c70c5549-07ef-4d79-8270-dc7c7b8979a6
 ---
 # MD Conversion - Help users connect to company networks using Wi-Fi profiles with Microsoft
-Use [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. These settings simplify connecting to wireless networks for end-users.
+Use [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. These settings simplify connecting to wireless networks for end-users.
 
 For example:
 
@@ -50,7 +50,7 @@ Additionally, for devices that run Windows 8.1 and later, you can import a Wi-Fi
 
     |Setting|More information|
     |-----------|--------------------|
-    |**Name**|Enter a unique name for the Wi-Fi profile to help identify it in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console.|
+    |**Name**|Enter a unique name for the Wi-Fi profile to help identify it in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.|
     |**Description**|Provide a description of the Wi-Fi profile that helps you to locate it.|
 
 ### Step 2: Configure network connection settings
@@ -121,7 +121,7 @@ After successful deployment, users devices can automatically connect to the corp
 Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that you can then deploy to the required user or device groups.
 
 > [!TIP]
-> In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi profile to an XML file readable by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
+> In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi profile to an XML file readable by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
 > 
 > For example, to export a Wi-Fi connection named **MyConnection** to an XML file, type the following from a Windows command prompt:
 > 
@@ -139,14 +139,14 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
 
     |Setting name|More information|
     |----------------|--------------------|
-    |**Name**|Enter a unique name for the Wi-Fi profile to identify it in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console.|
+    |**Name**|Enter a unique name for the Wi-Fi profile to identify it in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.|
     |**Description**|Provide a description w of the Wi-Fi profile and other relevant information that helps you to locate it.|
 
 4.  Specify the following values under the **Custom Wi-Fi Profile** heading:
 
     |Setting name|More information|
     |----------------|--------------------|
-    |**Configuration profile file**|Click **Import** to select the XML file containing the Wi-Fi profile settings that you want to import into [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].|
+    |**Configuration profile file**|Click **Import** to select the XML file containing the Wi-Fi profile settings that you want to import into [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].|
     |**Custom configuration profile name (displayed to users)**|Displays the name of the Wi-Fi configuration profile as it will be shown to users on their device.|
     |**Configuration profile details**|Displays the XML code for the configuration profile you selected.|
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: fbccc270-1eb9-4c3c-b787-b66de8763676
 ---
 # MD Conversion - Help protect your data with remote wipe, remote lock, or passcode reset using Microsoft Intune
-[!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] provides selective wipe, full wipe, remote lock, and passcode reset capabilities. Because mobile devices can store sensitive corporate data and provide access to many corporate resources, you can issue a remote device wipe command from the [!INCLUDE[wit_adminconsole](/includes/wit_adminconsole_md.md)] to wipe a lost or stolen device. Also, users can issue a remote device wipe command from the [!INCLUDE[wit_iwportal_1](/includes/wit_iwportal_1_md.md)] on privately owned devices enrolled in Intune.
+[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] provides selective wipe, full wipe, remote lock, and passcode reset capabilities. Because mobile devices can store sensitive corporate data and provide access to many corporate resources, you can issue a remote device wipe command from the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)] to wipe a lost or stolen device. Also, users can issue a remote device wipe command from the [!INCLUDE[wit_iwportal_1](./includes/wit_iwportal_1_md.md)] on privately owned devices enrolled in Intune.
 
 > [!NOTE]
 > This topic is only about wiping devices managed by Intune. You can also use [the Azure preview portal](https://portal.azure.com) to [wipe company data from apps](https://technet.microsoft.com/en-us/library/mt627826.aspx).
@@ -22,12 +22,12 @@ ms.assetid: fbccc270-1eb9-4c3c-b787-b66de8763676
 
 |Data type|iOS|
 |-------------|-------|
-|Company apps and associated data installed by [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)].|Apps are uninstalled. Company app data is removed.<br /><br />App data from Microsoft apps that use mobile app management is removed. The app is not removed.|
-|Settings|Configurations that were set by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|
+|Company apps and associated data installed by [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].|Apps are uninstalled. Company app data is removed.<br /><br />App data from Microsoft apps that use mobile app management is removed. The app is not removed.|
+|Settings|Configurations that were set by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed|
 |Certificate profile settings|Certificates removed and revoked.|
 |Management Agent|Management profile is removed.|
-|Email|Email profiles that are provisioned through [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] are removed and cached email on the device is deleted.|
+|Email|Email profiles that are provisioned through [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] are removed and cached email on the device is deleted.|
 |Azure Active Directory (AAD) Unjoin|AAD Record removed|
 **Android**
 
@@ -38,22 +38,22 @@ ms.assetid: fbccc270-1eb9-4c3c-b787-b66de8763676
 |Unmanaged line of business apps|Apps and data remain installed|Apps are uninstalled and data local to app is removed as a result. No data outside the app (SD card, etc.) is removed.|
 |Managed Google Play apps|App data is removed. App is not removed. Data protected by MAM encryption outside the app (SD card, etc.) remain encrypted but aren't removed.|App data is removed. App is not removed. Data protected by MAM encryption outside the app (SD card, etc.) remain encrypted but aren't removed.|
 |Managed line of business apps|App data is removed. App is not removed. Data protected by MAM encryption outside the app (SD card, etc.) remain encrypted but aren't removed.|App data is removed. App is not removed. Data protected by MAM encryption outside the app (SD card, etc.) remain encrypted but aren't removed.|
-|Settings|Configurations that were set by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|Configurations that were set by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|
+|Settings|Configurations that were set by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|Configurations that were set by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed|Removed|
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|
 |Management Agent|Device Administrator privilege is revoked.|Device Administrator privilege is revoked.|
-|Email|Email  received by the Microsoft Outlook app for Android  app is removed.|Email profiles that are provisioned through [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] are removed and cached email on the device is deleted.|
+|Email|Email  received by the Microsoft Outlook app for Android  app is removed.|Email profiles that are provisioned through [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] are removed and cached email on the device is deleted.|
 |Azure Active Directory (AAD) Unjoin|AAD Record removed|AAD Record removed|
 **Windows**
 
 |Data type|Windows 8.1 (enrolled as a mobile device) and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|
-|Company apps and associated data installed by [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)].|Files protected by EFS will have their key revoked and the user will not be able to open the files.|Will not remove company apps.|Apps originally installed through the company portal are uninstalled. Company app data is removed.|
-|Settings|Configurations that were set by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|Configurations that were set by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|Configurations that were set by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|
+|Company apps and associated data installed by [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].|Files protected by EFS will have their key revoked and the user will not be able to open the files.|Will not remove company apps.|Apps originally installed through the company portal are uninstalled. Company app data is removed.|
+|Settings|Configurations that were set by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|Configurations that were set by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|Configurations that were set by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy are no longer enforced and users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed|Removed|Not supported|
 |Certificate profile settings|Certificates removed and revoked.|Certificates removed and revoked.|Not supported|
 |Management Agent|Not applicable. Management agent is built-in.|Not applicable. Management agent is built-in.|Not applicable. Management agent is built-in.|
-|Email|Removes email that is EFS enabled which includes the Mail app for Windows email and attachments.|Not supported|Email profiles that are provisioned through [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] are removed and cached email on the device is deleted.|
+|Email|Removes email that is EFS enabled which includes the Mail app for Windows email and attachments.|Not supported|Email profiles that are provisioned through [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] are removed and cached email on the device is deleted.|
 |Azure Active Directory (AAD) Unjoin|No|No|AAD Record removed|
 
 #### To remotely wipe a device from the Intune administrator console
@@ -87,11 +87,11 @@ It takes less than 15 minutes for a wipe to propagate across all device types.
 ### Wiping Encryption File System (EFS)-enabled content
 Selective wipe of EFS-encrypted content is supported by Windows 8.1 and Windows RT 8.1. The following apply to a selective wipe of EFS-enabled content:
 
--   Only apps and data that are protected by EFS using the same Internet domain as the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] account are selectively wiped. For more information, see [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx).
+-   Only apps and data that are protected by EFS using the same Internet domain as the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] account are selectively wiped. For more information, see [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx).
 
 -   If there are any changes are made to the domain associated with EFS, the changes can take up to 48 hours before apps and data using the new domain can be selectively wiped.
 
--   Each domain that is registered with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] will be wiped.
+-   Each domain that is registered with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] will be wiped.
 
 The data and apps that are currently supported by EFS selective wipe are:
 
@@ -119,7 +119,7 @@ If a user forgets their passcode, you can help them by removing the passcode fro
 |Android|Supported and a temporary passcode is created.|
 |Windows 10|Not supported at this time.|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
-|[!INCLUDE[winblue_winrt_2](/includes/winblue_winrt_2_md.md)] and [!INCLUDE[win8RT_client_1](/includes/win8RT_client_1_md.md)]|Not Supported|
+|[!INCLUDE[winblue_winrt_2](./includes/winblue_winrt_2_md.md)] and [!INCLUDE[win8RT_client_1](./includes/win8RT_client_1_md.md)]|Not Supported|
 |Windows 8.1|Not Supported|
 
 ##### To reset the passcode on a mobile device remotely through the Microsoft Intune console
@@ -142,7 +142,7 @@ If a user loses their device you can lock the device remotely. The table below l
 |Android|Supported|
 |Windows 10|Not supported at this time.|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
-|[!INCLUDE[winblue_winrt_2](/includes/winblue_winrt_2_md.md)] and [!INCLUDE[win8RT_client_1](/includes/win8RT_client_1_md.md)]|Supported if the current user of the device is the same user who enrolled the device.|
+|[!INCLUDE[winblue_winrt_2](./includes/winblue_winrt_2_md.md)] and [!INCLUDE[win8RT_client_1](./includes/win8RT_client_1_md.md)]|Supported if the current user of the device is the same user who enrolled the device.|
 |Windows 8.1|Supported if the current user of the device is the same user who enrolled the device.|
 
 ##### To lock a mobile device remotely through the Microsoft Intune console

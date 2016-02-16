@@ -18,7 +18,7 @@ These rules include:
 
 -   Whether the device is jailbroken or rooted, or if the device is reported as unhealthy by the Windows device health attestation service.
 
--   Whether email on the device is managed by an [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policy
+-   Whether email on the device is managed by an [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy
 
 -   Minimum OS version required - Typically this depends on your company compliance policies and security requirements. This helps to prevent access to devices that might have security vulnerabilities because they are using an older OS version.
 

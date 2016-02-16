@@ -10,7 +10,7 @@ ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
 author: Staciebarker
 ---
 # Release notes for Microsoft Intune
-[!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] is an integrated, cloud-based client management solution that provides tools, reports, and upgrade licenses to the latest version of Windows, and helps keep your computers up-to-date and secure. In addition, [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] lets you manage mobile devices on the network either through Exchange ActiveSync or directly through [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]. The following release notes describe important information and known issues in [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)].
+[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] is an integrated, cloud-based client management solution that provides tools, reports, and upgrade licenses to the latest version of Windows, and helps keep your computers up-to-date and secure. In addition, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] lets you manage mobile devices on the network either through Exchange ActiveSync or directly through [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. The following release notes describe important information and known issues in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
 
 -   [Installation, Deployment, and Enrollment](release-notes-for-microsoft-intune.md#BKMK_WitRelnoteInstall)
 
@@ -18,15 +18,15 @@ author: Staciebarker
 - [App Management](release-notes-for-microsoft-intune.md#BKMK_WitRelnoteapps)
 
 ## <a name="BKMK_WitRelnoteInstall"></a>Installation, Deployment, and Enrollment
-The following issues can occur during client software deployment, client device preparation for [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)], or device enrollment.
+The following issues can occur during client software deployment, client device preparation for [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], or device enrollment.
 
 
 ### When you enroll a Windows 8.1 device that must authenticate to a proxy server, the enrollment process fails with no visible indication as to the cause of the failure
-**Issue:** When you enroll a [!INCLUDE[winblue_client_2](/includes/winblue_client_2_md.md)] device and the device must authenticate to a proxy server during the enrollment process, the enrollment fails if the device has not cached the proxy server credentials. When the credentials for the proxy server are not cached on the device, the enrolment process must wait for the user to enter the credentials. However, the prompt to provide the proxy server credentials does not display during the enrollment process. The result is that the enrollment process cannot authenticate to the proxy server and there is no visible indication of this failure presented to the user.
+**Issue:** When you enroll a [!INCLUDE[winblue_client_2](./includes/winblue_client_2_md.md)] device and the device must authenticate to a proxy server during the enrollment process, the enrollment fails if the device has not cached the proxy server credentials. When the credentials for the proxy server are not cached on the device, the enrolment process must wait for the user to enter the credentials. However, the prompt to provide the proxy server credentials does not display during the enrollment process. The result is that the enrollment process cannot authenticate to the proxy server and there is no visible indication of this failure presented to the user.
 
-**Workaround:** For [!INCLUDE[winblue_client_2](/includes/winblue_client_2_md.md)] devices that must enroll on a network that requires use of an authenticated proxy server, configure and save the credentials for the proxy server prior to enrollment of the device. To configure and save the credentials on a [!INCLUDE[winblue_client_2](/includes/winblue_client_2_md.md)] device:
+**Workaround:** For [!INCLUDE[winblue_client_2](./includes/winblue_client_2_md.md)] devices that must enroll on a network that requires use of an authenticated proxy server, configure and save the credentials for the proxy server prior to enrollment of the device. To configure and save the credentials on a [!INCLUDE[winblue_client_2](./includes/winblue_client_2_md.md)] device:
 
-1.  On the [!INCLUDE[winblue_client_2](/includes/winblue_client_2_md.md)] device, open **Internet Explorer**.
+1.  On the [!INCLUDE[winblue_client_2](./includes/winblue_client_2_md.md)] device, open **Internet Explorer**.
 
 2.  When prompted for the proxy server credentials, enter the credentials and then select the option **Remember my credentials**.
 
@@ -61,7 +61,7 @@ The Intune Admin Console and the end user facing mobile experiences support Dani
 in addition to all the languages supported by the Azure preview portal.
 
 ## <a name="BKMK_WitRelnoteAlerts"></a>Alerts
-The following are known issues with alerts in this release of [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
+The following are known issues with alerts in this release of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
 
 ### Remote assistance is not available on computers that run Windows 8 or Windows 8.1
 **Issue:** In this release, the remote assistance feature is not available on computers that run Windows 8 or Windows 8.1.

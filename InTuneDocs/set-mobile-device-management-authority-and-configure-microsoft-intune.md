@@ -10,10 +10,10 @@ ms.assetid: 668d6460-9d34-47a7-8a85-bbe1ed89f8e1
 author: NathBarn
 ---
 # Set mobile device management authority and configure Microsoft Intune
-Before users  can enroll mobile devices with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], the IT administrator must declare [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] as the *mobile device management authority*, add users, and set up the Company Portal for users.
+Before users  can enroll mobile devices with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], the IT administrator must declare [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] as the *mobile device management authority*, add users, and set up the Company Portal for users.
 
 ## Set MDM authority
-The  *mobile device management authority* defines the management service with permission to manage a set of devices.  Solutions for the mobile device management authority include [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], Configuration Manager with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], or Office 365 MDM solutions.
+The  *mobile device management authority* defines the management service with permission to manage a set of devices.  Solutions for the mobile device management authority include [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], Configuration Manager with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], or Office 365 MDM solutions.
 
 This guidance assumes Intune is used without System Center Configuration Manager integration so the setting should be set to Microsoft Intune.
 
@@ -26,13 +26,13 @@ This guidance assumes Intune is used without System Center Configuration Manager
 
 2.  In the **Tasks** list, click **Set Mobile Device Management Authority**. The **Set MDM Authority** dialog box opens.
 
-    ![](/media/Intune-MDM-Authority.bmp)
+    ![](./media/Intune-MDM-Authority.bmp)
 
 3.  Intune requests confirmation that you want Intune as your MDM authority. Check the box and then click **Yes** to use Microsoft Intune to manage mobile devices.
 
 
 ## Prepare to manage mobile devices with Microsoft Intune
-The following steps and configurations let [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] manage devices using the Company Portal.
+The following steps and configurations let [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] manage devices using the Company Portal.
 
 #### Set up mobile device management with Intune
 

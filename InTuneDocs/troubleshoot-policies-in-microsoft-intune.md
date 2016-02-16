@@ -11,7 +11,7 @@ author: Nbigman
 # Troubleshoot policies in Microsoft Intune
 
 ## Policy issues
-Listed here are some issues that may arise from your [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] policy configuration and troubleshooting recommendations for those issues.
+Listed here are some issues that may arise from your [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] policy configuration and troubleshooting recommendations for those issues.
 
 ### Is policy applied to device?
 **Issue:** It's not clear if a particular policy is being applied to a device, or a device behaves contrary to a policy.
@@ -32,7 +32,7 @@ In the screenshot below you can see two clear examples:
 
 -   Similarly, the expanded policy item**Email settings for iOS devices** is not applied to this device, as it is an Android device.
 
-![](/media/Intune-Device-Policy-v.2.jpg)
+![](./media/Intune-Device-Policy-v.2.jpg)
 
 > [!NOTE]
 > Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.

@@ -10,7 +10,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 author: robstackmsft
 ---
 # Android configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] **Android general configuration policy** to configure settings for:
+Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Android general configuration policy** to configure settings for:
 
 -   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 

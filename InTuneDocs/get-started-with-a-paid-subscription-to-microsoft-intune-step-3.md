@@ -19,9 +19,9 @@ Learn more about directory integration at [Directory integration](http://technet
 
 After you've added users to your Intune subscription, we recommend that you grant a few user accounts administrative credentials. The console that you use to assign administrative credentials depends on the type of administrator you want to assign:
 
--   **Tenant administrator**: Use the **[!INCLUDE[wit_icp_1](/includes/wit_icp_1_md.md)]** to assign this type of administrator to manage your subscription, including billing, cloud storage, and managing the users who can use [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
+-   **Tenant administrator**: Use the **[!INCLUDE[wit_icp_1](./includes/wit_icp_1_md.md)]** to assign this type of administrator to manage your subscription, including billing, cloud storage, and managing the users who can use [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
 
--   **Service administrator**: Use the **[!INCLUDE[wit_adminconsole](/includes/wit_adminconsole_md.md)]** to assign this type of administrator for day-to-day tasks including management of mobile devices or computers, deploying policy or software, and running reports.
+-   **Service administrator**: Use the **[!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)]** to assign this type of administrator for day-to-day tasks including management of mobile devices or computers, deploying policy or software, and running reports.
 
 To learn more about administrator accounts, see [Intune administrator accounts and special permissions](what-to-know-before-setting-up-microsoft-intune.md#BKMK_AdminAccounts).
 
