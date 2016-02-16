@@ -20,7 +20,7 @@ These instructions explain:
 
 -   [Create a test user](#BKMK_30day_create_test_user)
 
--   [Configure an iOS pin policy for the test user](#BKMK_30day_cfg_ios_pin_pol)
+-   [Configure an iOS PIN policy for the test user](#BKMK_30day_cfg_ios_pin_pol)
 
 -   [Validate that the policy is enforced on an iOS device](#BKMK_30day_validate_pol)
 
@@ -86,7 +86,7 @@ These instructions explain:
 
     ![](../Image/30-day-trial-walkthrus/30day-crt-user-10-refresh-user.png)
 
-## <a name="BKMK_30day_cfg_ios_pin_pol"></a>Configure an iOS pin policy for the test user
+## <a name="BKMK_30day_cfg_ios_pin_pol"></a>Configure an iOS PIN policy for the test user
 
 1.  Using a Windows PC, set the MDM authority to be Intune:
 
@@ -280,8 +280,8 @@ These instructions explain:
 
 12. Press the power button to lock your iPad, slide to unlock it, and see that you now need to enter your passcode to unlock the device.
 
-## See Also
-[Get started with a paid subscription to Microsoft Intune](../Topic/Get-started-with-a-paid-subscription-to-Microsoft-Intune.md)
-[Common Microsoft Intune evaluation tasks](Common-Microsoft-Intune-evaluation-tasks.md)
+### See also
+[Get started with a paid subscription to Microsoft Intune](../Topic/Get-started-with-a-paid-subscription-to-Microsoft-Intune.md)</br>
+[Common Microsoft Intune evaluation tasks](Common-Microsoft-Intune-evaluation-tasks.md)</br>
 [Set up email access for iOS devices using Microsoft Intune](Set-up-email-access-for-iOS-devices-using-Microsoft-Intune.md)
 
