@@ -9,7 +9,7 @@ ms.assetid: 6059f907-2f74-45b8-a415-302b24160b10
 author: robstackmsft
 ---
 # robstack - V2 of Deploy apps to computers
-Now that you've [learned the basics](https://technet.microsoft.com/library/dn646955.aspx) about [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] app deployment, in this topic, you'll learn how to actually configure and deploy apps to Windows PCs you manage. This generally involves three steps:
+Now that you've [learned the basics](https://technet.microsoft.com/library/dn646955.aspx) about [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] app deployment, in this topic, you'll learn how to actually configure and deploy apps to Windows PCs you manage. This generally involves three steps:
 
 -   [Configure the app](#BKMK_Conf)
 
@@ -80,7 +80,7 @@ In this procedure, you'll use the Intune Software Publisher to configure the pro
 
 7.  For the **Windows Installer** file type only (exe only): On the **Return codes** page, you can add new error codes that are interpreted by Intune when the app installs on a managed Windows PC.
 
-    By default, [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] uses industry-standard return codes to report the failure or success of an app package installation:
+    By default, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] uses industry-standard return codes to report the failure or success of an app package installation:
 
     -   **0** - Success
 
@@ -113,7 +113,7 @@ In this procedure, you'll deploy the app to selected devices or users.
     |**Deadline**|For required installations, choose how soon the app will be deployed. You can choose from the predefined values, or select **Custom** to configure your own deadline.|
 
 ## <a name="BKMK_Monitor"></a>Monitor the app
-You can see the apps you manage, and their deployment status in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console.
+You can see the apps you manage, and their deployment status in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.
 
 ### To view the apps you manage and their status
 In the **Apps** workspace, click the **Apps** node.
@@ -123,7 +123,7 @@ The list of apps you manage will be displayed. You can click on any app to see a
 > [!TIP]
 > You can use the **Filters** drop-down list to show only apps that meet the criteria you specify, like apps that failed to install, or apps that were successfully deployed.
 > 
-> ![](/media/App-filters.JPG)
+> ![](./media/App-filters.JPG)
 
 Additionally, the **Dashboard** workspace shows an overview of the status of your apps. If you click anywhere in the overview, you'll be taken to the list of apps.
 

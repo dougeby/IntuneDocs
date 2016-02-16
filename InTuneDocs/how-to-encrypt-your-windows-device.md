@@ -20,7 +20,7 @@ To reconnect to your work, you’ll need to encrypt your device by following the
 
 3.  Follow the instructions shown.
 
-4.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
+4.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
 
 ### Option 2 – Enable BitLocker:
 
@@ -28,5 +28,5 @@ To reconnect to your work, you’ll need to encrypt your device by following the
 
 2.  Click **Turn on BitLocker**, then follow the instructions shown to encrypt each of your drives.
 
-3.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
+3.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
 

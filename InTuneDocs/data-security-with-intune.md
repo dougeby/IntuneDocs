@@ -11,11 +11,11 @@ author: Staciebarker
 ---
 # Data security with Microsoft Intune
 
-[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] is a cloud-based service where the infrastructure that hosts your data is managed for you in Azure datacenters. The cloud-based storage of data can raise a number of questions that often include the following:
+[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] is a cloud-based service where the infrastructure that hosts your data is managed for you in Azure datacenters. The cloud-based storage of data can raise a number of questions that often include the following:
 
 -   Who has access to the data?
 
--   Where does [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] store data when using Microsoft Azure?
+-   Where does [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] store data when using Microsoft Azure?
 
 -   How is data secured, including transfer between clients, web consoles, and the cloud?
 

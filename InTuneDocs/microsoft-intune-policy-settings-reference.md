@@ -11,7 +11,7 @@ author: robstackmsft
 robots: noindex,nofollow
 ---
 # Microsoft Intune policy settings reference
-Use the information in this section as a reference to help you understand the many settings and configurations you can create in [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] configuration and custom policies.
+Use the information in this section as a reference to help you understand the many settings and configurations you can create in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] configuration and custom policies.
 
 Configuration Policies
 

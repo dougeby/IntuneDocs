@@ -10,7 +10,7 @@ ms.assetid: 38194ef3-e26e-4682-958d-14b395fccba1
 author: robstackmsft
 ---
 # Windows Team configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] **Windows 10 Team general configuration policy** to configure settings for enrolled Windows 10 Team devices such as the Microsoft Surface Hub.
+Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Windows 10 Team general configuration policy** to configure settings for enrolled Windows 10 Team devices such as the Microsoft Surface Hub.
 
 ## Create a Windows 10 Team configuration policy
 

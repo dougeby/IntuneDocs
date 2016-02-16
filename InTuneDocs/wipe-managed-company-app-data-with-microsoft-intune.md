@@ -27,11 +27,11 @@ The **Wipe request** tile on the **Intune mobile application management** blade 
 
 1.  In the **Intune Mobile application management** blade, click  the **Wipe requests** tile.
 
-    ![](/media/AppManagement/AzurePortal_MAM_WipeRequests.png)
+    ![](./media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
 2.  Click  **New wipe requests**.
 
-    ![](/media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
+    ![](./media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
 3.  In the **New wipe request** blade, click **User** to open the **User** blade and select the user whose app data you want to wipe.
 
@@ -41,7 +41,7 @@ The **Wipe request** tile on the **Intune mobile application management** blade 
 
 The **Intune mobile application management** blade has a summarized report on the **Wipe request** tile.  It displays the overall status and includes the number of pending requests, and failures. You can get more details by clicking on the tile, which opens up the **Wipe request** blade.
 
-![](/media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
+![](./media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 #### <a name="bkmk_monitorrequest"></a>Monitor your wipe requests
 

@@ -11,7 +11,7 @@ author: Lindavr
 ---
 # Documentation for Microsoft Intune
 
-![](/media/Nav-Puzzle/WIT_MDMLifecycleFull2.png)
+![](./media/Nav-Puzzle/WIT_MDMLifecycleFull2.png)
 Intune can help your users get more work done, and work the way they want to work, while helping you protect the data and devices they work with. The Intune documentation will show you how to do that.
 
 But you may also have some questions about how Intune fits in with other parts of your job. Here are some resources to help answer:
@@ -60,7 +60,7 @@ You may find after you've planned and deployed Microsoft Intune, that you're enc
 
 -   [Release notes for Microsoft Intune](release-notes-for-microsoft-intune.md)
 
--   Connect with the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] community:
+-   Connect with the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] community:
 
     -   [Read the latest news ](http://blogs.technet.com/b/microsoftintune/) in the Intune blog. [Follow Intune ](https://twitter.com/MSIntune) on Twitter. [Ask a question ](http://go.microsoft.com/fwlink/?LinkID=232998) in the Intune forums.
 

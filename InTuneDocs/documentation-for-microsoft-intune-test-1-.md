@@ -12,10 +12,10 @@ robots: noindex,nofollow
 # Documentation for Microsoft Intune &lt;test 1&gt;
 Intune can help your users get more work done, and work the way they want to work, while helping you protect the data and devices they work with. The Intune documentation will show you how to do that.
 
-![](/media/WIT_MDM_Banner.png)
+![](./media/WIT_MDM_Banner.png)
 
-[![](/media/Nav-Puzzle/WIT_MDM_Row1Column1.png)](https://technet.microsoft.com/en-US/library/mt422985(TechNet.10).aspx)[![](/media/Nav-Puzzle/WIT_MDM_Row1Column2.png)](https://technet.microsoft.com/library/dn646962.aspx/?WT.mc_id=IntuneEnroll20150801)[![](/media/Nav-Puzzle/WIT_MDM_Row1Column3.png)](https://technet.microsoft.com/library/mt313202.aspx/?WT.mc_id=IntuneConfig20150801)[![](/media/Nav-Puzzle/WIT_MDM_Row1Column4.png)](https://technet.microsoft.com/library/mt282239.aspx/?WT.mc_id=IntuneTR20150801)
-[![](/media/Nav-Puzzle/WIT_MDM_Row2Column1.png)](https://technet.microsoft.com/en-US/library/mt483702(TechNet.10).aspx)[![](/media/Nav-Puzzle/WIT_MDM_Row2Column2.png)](https://technet.microsoft.com/library/mt313204.aspx/?WT.mc_id=IntuneRetire20150801)[![](/media/Nav-Puzzle/WIT_MDM_Row2Column3.png)](https://technet.microsoft.com/library/mt313203.aspx/?WT.mc_id=IntuneProtect20150801)[![](/media/Nav-Puzzle/WIT_MDM_Row2Column4.png)](https://technet.microsoft.com/library/dn646965.aspx/?WT.mc_id=IntuneDeploy20150801)
+[![](./media/Nav-Puzzle/WIT_MDM_Row1Column1.png)](https://technet.microsoft.com/en-US/library/mt422985(TechNet.10).aspx)[![](./media/Nav-Puzzle/WIT_MDM_Row1Column2.png)](https://technet.microsoft.com/library/dn646962.aspx/?WT.mc_id=IntuneEnroll20150801)[![](./media/Nav-Puzzle/WIT_MDM_Row1Column3.png)](https://technet.microsoft.com/library/mt313202.aspx/?WT.mc_id=IntuneConfig20150801)[![](./media/Nav-Puzzle/WIT_MDM_Row1Column4.png)](https://technet.microsoft.com/library/mt282239.aspx/?WT.mc_id=IntuneTR20150801)
+[![](./media/Nav-Puzzle/WIT_MDM_Row2Column1.png)](https://technet.microsoft.com/en-US/library/mt483702(TechNet.10).aspx)[![](./media/Nav-Puzzle/WIT_MDM_Row2Column2.png)](https://technet.microsoft.com/library/mt313204.aspx/?WT.mc_id=IntuneRetire20150801)[![](./media/Nav-Puzzle/WIT_MDM_Row2Column3.png)](https://technet.microsoft.com/library/mt313203.aspx/?WT.mc_id=IntuneProtect20150801)[![](./media/Nav-Puzzle/WIT_MDM_Row2Column4.png)](https://technet.microsoft.com/library/dn646965.aspx/?WT.mc_id=IntuneDeploy20150801)
 
 But you may also have some questions about how Intune fits in with other parts of your job. Here are some resources to help answer:
 
@@ -59,7 +59,7 @@ No technical documentation would be complete without [technical reference](https
 
 -   [Release notes for Microsoft Intune](release-notes-for-microsoft-intune.md)
 
--   Connect with the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] community:
+-   Connect with the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] community:
 
     -   [Read the latest news ](http://blogs.technet.com/b/microsoftintune/) in the Intune blog. [Follow Intune ](https://twitter.com/MSIntune) on Twitter. [Ask a question ](http://go.microsoft.com/fwlink/?LinkID=232998) in the Intune forums.
 

@@ -38,33 +38,33 @@ These instructions explain:
 
 1.  Using a Windows PC, right-click **Internet Explorer** (IE) and select **InPrivate Browsing**.
 
-    ![](/media/30-day-trial-walkthrus/30day-start-trial-1-InPrivate.png)
+    ![](./media/30-day-trial-walkthrus/30day-start-trial-1-InPrivate.png)
 
 2.  Go to the [Intune sign-up portal](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1), provide the requested information, and click **Next**.
 
-    ![](/media/30-day-trial-walkthrus/30day-start-trial-2-abt-you.png)
+    ![](./media/30-day-trial-walkthrus/30day-start-trial-2-abt-you.png)
 
 3.  Enter a user ID and password for your admin account and click **Next**. You'll use this ID to log in to the Intune portal to do your admin tasks.
 
-    ![](/media/30-day-trial-walkthrus/30day-start-trial-3-createID.png)
+    ![](./media/30-day-trial-walkthrus/30day-start-trial-3-createID.png)
 
 4.  Enter your cell phone number and click **Text me** to validate your number.
 
-    ![](/media/30-day-trial-walkthrus/30day-start-trial-4-textme.png)
+    ![](./media/30-day-trial-walkthrus/30day-start-trial-4-textme.png)
 
 5.  Save the information shown on the screen, and then click **You're ready to go...**.
 
-    ![](/media/30-day-trial-walkthrus/30day-start-trial-5-ReadyToGo.png)
+    ![](./media/30-day-trial-walkthrus/30day-start-trial-5-ReadyToGo.png)
 
 ## <a name="BKMK_30day_create_test_user"></a>Create a test user
 
 1.  Using a Windows PC, click **Start** to go to the user management page.
 
-    ![](/media/30-day-trial-walkthrus/30day-crt-user-6-click-start.png)
+    ![](./media/30-day-trial-walkthrus/30day-crt-user-6-click-start.png)
 
 2.  Click the **+** button to add a user.
 
-    ![](/media/30-day-trial-walkthrus/30day-crt-user-7-click-plus.png)
+    ![](./media/30-day-trial-walkthrus/30day-crt-user-7-click-plus.png)
 
 3.  On the **Create new user account** page:
 
@@ -76,15 +76,15 @@ These instructions explain:
 
     4.  Click **Create**.
 
-    ![](/media/30-day-trial-walkthrus/30day-crt-user-8-add-user-info.png)
+    ![](./media/30-day-trial-walkthrus/30day-crt-user-8-add-user-info.png)
 
 4.  On the user creation confirmation page, click **Close**.
 
-    ![](/media/30-day-trial-walkthrus/30day-crt-user-9-close-confirm.png)
+    ![](./media/30-day-trial-walkthrus/30day-crt-user-9-close-confirm.png)
 
 5.  Click the **Refresh** button to see the test user you created.
 
-    ![](/media/30-day-trial-walkthrus/30day-crt-user-10-refresh-user.png)
+    ![](./media/30-day-trial-walkthrus/30day-crt-user-10-refresh-user.png)
 
 ## <a name="BKMK_30day_cfg_ios_pin_pol"></a>Configure an iOS PIN policy for the test user
 
@@ -92,191 +92,191 @@ These instructions explain:
 
     1.  Go to [Intune Management console](http://manage.microsoft.com/), log in with your admin account, and click **Start Managing Mobile Devices**. The Mobile Device Management authority page opens.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-11-start-mg-mobl-dev.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-11-start-mg-mobl-dev.png)
 
     2.  Click the **Set Mobile Device Management Authority** link.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-12-link-set-mdm.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-12-link-set-mdm.png)
 
 2.  Enable iOS devices for enrollment. This process sets up a trusted certificate between the Apple Push Notification Service (APNs) and your Intune subscription.
 
     1.  Click **Enable the iOS and Mac OS X platform**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-13-enbl-ios-plat.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-13-enbl-ios-plat.png)
 
     2.  Click **Download the APNs Certificate Request**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-14-dwnld-cert-reqst.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-14-dwnld-cert-reqst.png)
 
     3.  Specify a file name and location for your Certificate Signing Request (CSR), and then click **Save**. This file holds the public key that corresponds to a private key held by your Intune subscription.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-15-cert-name-loc.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-15-cert-name-loc.png)
 
     4.  Click **Apple Push Certificates portal** to open a new tab.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-16-cert-portl-link.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-16-cert-portl-link.png)
 
     5.  Enter your Apple ID and password, and click **Sign in**. This ID can be the one you use on your iOS device to get apps from the iOS App Store.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-17-id-passw-signin.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-17-id-passw-signin.png)
 
     6.  Click **Create a Certificate**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-18-create-cert.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-18-create-cert.png)
 
     7.  Read Apple’s Terms of Use, select the check box, and click **Accept**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-19-TOU.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-19-TOU.png)
 
     8.  Click **Browse**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-20-browse.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-20-browse.png)
 
     9. Select the CSR file that you saved earlier, and click **Open**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-21-CSRfile-open.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-21-CSRfile-open.png)
 
     10. Click the **Upload** button.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-22-upld-reqst.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-22-upld-reqst.png)
 
     11. When you are prompted to download a JSON file, click **Save as**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-23-json-saveas.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-23-json-saveas.png)
 
     12. Specify a location for your JSON file and click **Save**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-24-json-save-loc.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-24-json-save-loc.png)
 
         If your page doesn’t redirect automatically after a few seconds, click **Cancel**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png)
 
     13. To retrieve your newly created certificate file, click **Download**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-26-dwnld-retrv-cert.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-26-dwnld-retrv-cert.png)
 
     14. When you are prompted to download a PEM file, click **Save as**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-27-pem-saveas.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-27-pem-saveas.png)
 
     15. Specify a location for the PEM file and click **Save**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-28-pem-save-loc.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-28-pem-save-loc.png)
 
     16. Return to the Intune Management Console tab, and click the **Upload the APNs Certificate**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-29-upld-cert.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-29-upld-cert.png)
 
     17. Enter your Apple ID and click **Browse**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-30-app-id-browse.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-30-app-id-browse.png)
 
     18. Select the PEM file you just saved, and click **Open**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-31-sel-pem-open.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-31-sel-pem-open.png)
 
     19. Click **Upload**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-32-pem-upload.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-32-pem-upload.png)
 
         Your APNs certificate is now configured.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-33-apns-confgd.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-33-apns-confgd.png)
 
 3.  Create a test user group for policy targeting:
 
     1.  In the left pane, click **Groups**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-34-clk-groups.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-34-clk-groups.png)
 
     2.  At the far right, click **Create Group**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-35-crt-group.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-35-crt-group.png)
 
     3.  Provide a group name, select **All Users** as the parent group, and click **Next**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-36-name-group.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-36-name-group.png)
 
     4.  In the **Start group membership with** field, select **All Users in the Parent group**, and click **Finish**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-37-all-users-group.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-37-all-users-group.png)
 
 4.  Create an iOS PIN policy and target it to the test user group:
 
     1.  In the left pane, click **Policy**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-38-clk-policy.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-38-clk-policy.png)
 
     2.  At the far right, click **Add Policy**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-39-add-policy.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-39-add-policy.png)
 
     3.  Expand the iOS node, select the **General Configuration** row, and click **Create Policy**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-40-gen_cfg_pol.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-40-gen_cfg_pol.png)
 
     4.  Type a name for the policy,  turn on the option **Require a password to unlock mobile devices**, and set the **Minimum password length** to **4**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-41-name-policy.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-41-name-policy.png)
 
     5.  Click **Yes** to deploy the policy.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-42-yes-deploy-pol.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-42-yes-deploy-pol.png)
 
     6.  Click the user group previously created, click **Add**, and click **Ok**.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-43-add-pol-to-grp.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-43-add-pol-to-grp.png)
 
         You now have an iOS PIN policy that targets your test user group.
 
-        ![](/media/30-day-trial-walkthrus/30day-cfg-pol-44-policy-applied.png)
+        ![](./media/30-day-trial-walkthrus/30day-cfg-pol-44-policy-applied.png)
 
 ## <a name="BKMK_30day_validate_pol"></a>Validate that the policy is enforced on an iOS device
 
 1.  On an iPad, launch the iOS App Store, install the free **Microsoft Intune Company Portal** app, and open it.
 
-    ![](/media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.jpg)
+    ![](./media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.jpg)
 
 2.  Enter your test user account name and password, and tap **Sign in**.
 
-    ![](/media/30-day-trial-walkthrus/30day-cfg-pol-46-cportal-signin.jpg)
+    ![](./media/30-day-trial-walkthrus/30day-cfg-pol-46-cportal-signin.jpg)
 
 3.  Tap **Enroll** to start enrolling the device in Intune.
 
-    ![](/media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.jpg)
+    ![](./media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.jpg)
 
 4.  On the **Install Profile** screen, tap **Install**.
 
-    ![](/media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.jpg)
+    ![](./media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.jpg)
 
 5.  On the **Install Profile** dialog, tap **Install**.
 
-    ![](/media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg)
+    ![](./media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg)
 
 6.  On the **Warning** screen, tap **Install**.
 
-    ![](/media/30-day-trial-walkthrus/30day-cfg-pol-50-warning-install-3.jpg)
+    ![](./media/30-day-trial-walkthrus/30day-cfg-pol-50-warning-install-3.jpg)
 
 7.  On the **Remote Management** dialog, tap **Trust**.
 
-    ![](/media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg)
+    ![](./media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg)
 
 8.  When the management profile finishes installing, tap **Done**. Enrollment is now complete.
 
-    ![](/media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg)
+    ![](./media/30-day-trial-walkthrus/30day-cfg-pol-52-profile-done.jpg)
 
 9. When enrollment is complete, tap **OK** and then close the Company Portal app.
 
-    ![](/media/30-day-trial-walkthrus/30day-cfg-pol-53-devc-enrolled-ok.jpg)
+    ![](./media/30-day-trial-walkthrus/30day-cfg-pol-53-devc-enrolled-ok.jpg)
 
 10. When you are prompted to configure a passcode, tap **Continue**.
 
-    ![](/media/30-day-trial-walkthrus/30day-cfg-pol-54-passcode-req-cont.jpg)
+    ![](./media/30-day-trial-walkthrus/30day-cfg-pol-54-passcode-req-cont.jpg)
 
 11. Enter your passcode, tap **Continue**, enter your passcode again, and tap **Save**.
 
-    ![](/media/30-day-trial-walkthrus/30day-cfg-pol-55-passcode-enter.jpg)
+    ![](./media/30-day-trial-walkthrus/30day-cfg-pol-55-passcode-enter.jpg)
 
 12. Press the power button to lock your iPad, slide to unlock it, and see that you now need to enter your passcode to unlock the device.
 

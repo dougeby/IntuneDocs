@@ -9,7 +9,7 @@ ms.assetid: 6d388b97-7a2e-4ad9-92b1-2c0c7d51217a
 author: Lindavr
 ---
 # Lindavr test topic
-![](/media/WIT_Nav_OverviewGray.png)![](/media/WIT_Nav_GetStartedGray.png)![](/media/WIT_Nav_EnrollDevicesGray.png)![](/media/WIT_Nav_ConfigureDevicesGray.png)![](/media/WIT_Nav_DeployAppsGray.png)![](/media/WIT_Nav_ProtectResourcesGray.png)![](/media/WIT_Nav_RetireDataDevices.png)![](/media/WIT_Nav_TroubleshootingGray.png)![](/media/WIT_Nav_RealworldSolutionsGray.png)![](/media/WIT_Nav_TechnicalReferenceGray.png)
+![](./media/WIT_Nav_OverviewGray.png)![](./media/WIT_Nav_GetStartedGray.png)![](./media/WIT_Nav_EnrollDevicesGray.png)![](./media/WIT_Nav_ConfigureDevicesGray.png)![](./media/WIT_Nav_DeployAppsGray.png)![](./media/WIT_Nav_ProtectResourcesGray.png)![](./media/WIT_Nav_RetireDataDevices.png)![](./media/WIT_Nav_TroubleshootingGray.png)![](./media/WIT_Nav_RealworldSolutionsGray.png)![](./media/WIT_Nav_TechnicalReferenceGray.png)
 
 There comes a point when an employee either parts ways with the company, or with their device. In such cases, you need to be able to ensure
 		   that neither the employee nor anyone using their device can access company resources. You may also want to make sure that any company 

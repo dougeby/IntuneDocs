@@ -24,7 +24,7 @@ EDP helps address your everyday challenges in the enterprise, helping you:
 -   Feel more confident about the safety of your enterprise data on employee-owned devices by helping to prevent the accidental release of info.
 
 ## Before you start
-Before you can use Microsoft Intune to create, manage, and deploy your EDP policy, you must make sure you are managing Windows 10  devices that have been enrolled with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
+Before you can use Microsoft Intune to create, manage, and deploy your EDP policy, you must make sure you are managing Windows 10  devices that have been enrolled with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
 
 ### Create an Enterprise Data Protection policy
 

@@ -66,7 +66,7 @@ When you add a computer:
 
 -   You’ll have some software installed on your computer to make it possible for your IT administrator to manage the computer, and make it possible for you to get to company resources like apps and support information. This software may be updated automatically by your IT administrator.
 
--   [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
+-   [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
 
 -   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
 

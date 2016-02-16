@@ -10,7 +10,7 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 author: robstackmsft
 ---
 # Manage settings and features on your devices with Microsoft Intune policies
-[!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] uses **policies** that help you to configure many security and functional settings for enrolled mobile devices, including:
+[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] uses **policies** that help you to configure many security and functional settings for enrolled mobile devices, including:
 
 -   Hardware settings, like allowing use of the devices camera, or Bluetooth capability
 
@@ -94,7 +94,7 @@ Applies to Windows Phone, and enrolled Windows devices only.
 |Policy name|Use when you want to|
 |---------------|------------------------|
 |**Exchange ActiveSync Policy**|-   Configure mobile device security and functional settings for devices that are managed by Exchange ActiveSync.<br /><br />For details, see [Exchange ActiveSync policy settings in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md).|
-|**Mobile Device Security Policy**|<ul><li>Configures settings for mobile devices (all platforms) including:<br /><br /><ul><li>Security</li><li>Encryption</li><li>System</li><li>Email</li><li>Applications</li></ul></li></ul> **Important:** [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] now features separate **configuration policies** for each device platform, and these policies contain the most up-to-date settings you can use. You can continue to use the mobile device security policy and any existing deployments will still work, but you should plan to migrate to the new configuration policies as soon as possible.<br />For details, see [Mobile device security policy settings in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).|
+|**Mobile Device Security Policy**|<ul><li>Configures settings for mobile devices (all platforms) including:<br /><br /><ul><li>Security</li><li>Encryption</li><li>System</li><li>Email</li><li>Applications</li></ul></li></ul> **Important:** [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] now features separate **configuration policies** for each device platform, and these policies contain the most up-to-date settings you can use. You can continue to use the mobile device security policy and any existing deployments will still work, but you should plan to migrate to the new configuration policies as soon as possible.<br />For details, see [Mobile device security policy settings in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).|
 
 ### Conditional access and compliance policies
 
@@ -102,8 +102,8 @@ Applies to Windows Phone, and enrolled Windows devices only.
 
 |Policy name|Use when you want to|
 |---------------|------------------------|
-|**Exchange Online Policy**<br /><br />**Exchange On-premises Policy**|-   Manage access to Microsoft Exchange email from devices that are not managed by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] or not compliant with a compliance policy you created.<br /><br />For details, see [Manage email access with Microsoft Intune](manage-email-access-with-microsoft-intune.md).|
-|**SharePoint Online Policy**|-   Manage access to SharePoint Online from devices that are not managed by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] or not compliant with a compliance policy you created.<br /><br />For details, see [Manage SharePoint Online access with Microsoft Intune](manage-sharepoint-online-access-with-microsoft-intune.md).|
+|**Exchange Online Policy**<br /><br />**Exchange On-premises Policy**|-   Manage access to Microsoft Exchange email from devices that are not managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] or not compliant with a compliance policy you created.<br /><br />For details, see [Manage email access with Microsoft Intune](manage-email-access-with-microsoft-intune.md).|
+|**SharePoint Online Policy**|-   Manage access to SharePoint Online from devices that are not managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] or not compliant with a compliance policy you created.<br /><br />For details, see [Manage SharePoint Online access with Microsoft Intune](manage-sharepoint-online-access-with-microsoft-intune.md).|
 > [!NOTE]
 > You do not deploy conditional access policies to users and devices. Instead, you configure the required policy and it applies to all groups targeted in the policy.
 
@@ -117,8 +117,8 @@ Applies to Windows Phone, and enrolled Windows devices only.
 
 |Policy name|Use when you want to|
 |---------------|------------------------|
-|**Microsoft Intune Agent Settings**|Configure the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] client on computers, including settings for:<br /><br />-   Endpoint Protection<br />-   Software updates<br />-   Policy check schedule<br /><br />This type of policy can be deployed only to groups of devices.<br /><br />[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] clients download new and updated policy according to the **Update and application detection frequency** setting, which defaults to 8 hours. However, you can force a refresh of policy on computers at any time.<br /><br />For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
-|**Microsoft Intune Center Settings**|Configure details that appear in the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] Center on managed computers.<br /><br />This type of policy can be deployed only to groups of devices.<br /><br />For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
+|**Microsoft Intune Agent Settings**|Configure the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] client on computers, including settings for:<br /><br />-   Endpoint Protection<br />-   Software updates<br />-   Policy check schedule<br /><br />This type of policy can be deployed only to groups of devices.<br /><br />[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] clients download new and updated policy according to the **Update and application detection frequency** setting, which defaults to 8 hours. However, you can force a refresh of policy on computers at any time.<br /><br />For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
+|**Microsoft Intune Center Settings**|Configure details that appear in the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Center on managed computers.<br /><br />This type of policy can be deployed only to groups of devices.<br /><br />For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
 |**Windows Firewall Settings**|Configures Windows Firewall settings and exceptions for common network communications on computers, including:<br /><br />-   BranchCache<br />-   Remote Assistance<br />-   Media sharing<br /><br />This type of policy can be deployed only to groups of devices.<br /><br />For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
 
 ## See Also

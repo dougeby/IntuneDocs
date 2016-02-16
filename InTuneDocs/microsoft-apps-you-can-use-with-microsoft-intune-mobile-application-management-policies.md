@@ -10,7 +10,7 @@ ms.assetid: 49023822-0aa7-4508-8119-3be8976d21d1
 author: robstackmsft
 ---
 # Microsoft apps you can use with Microsoft Intune mobile application management policies
-Use this topic to find out which Microsoft apps you can use with [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] mobile application management (MAM) policies.
+Use this topic to find out which Microsoft apps you can use with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] mobile application management (MAM) policies.
 
 For information about how to use mobile application management policies, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
@@ -57,11 +57,11 @@ If you have devices that are not enrolled in Intune, see [Get started with mobil
 
     When you deploy the managed browser, you can also configure a managed browser policy which lets you restrict the websites that users can visit. For more information, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md).
 
--   [Intune PDF Viewer](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.pdfviewer)<sup>**</sup> – Lets users view PDF files from [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] managed apps.
+-   [Intune PDF Viewer](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.pdfviewer)<sup>**</sup> – Lets users view PDF files from [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] managed apps.
 
--   [Intune AV Player](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.avplayer)<sup>**</sup> – Lets users access audio and video content from [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] managed apps.
+-   [Intune AV Player](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.avplayer)<sup>**</sup> – Lets users access audio and video content from [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] managed apps.
 
--   [Intune Image Viewer](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.imageviewer)<sup>**</sup> – Lets users view images from [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] managed apps.
+-   [Intune Image Viewer](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.imageviewer)<sup>**</sup> – Lets users view images from [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] managed apps.
 
 -   [Microsoft Office Mobile](https://play.google.com/store/apps/details?id=com.microsoft.office.officehub)
 

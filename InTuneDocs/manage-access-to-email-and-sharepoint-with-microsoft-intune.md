@@ -10,15 +10,15 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 author: karthikaraman
 ---
 # Manage access to email and SharePoint with Microsoft Intune
-Use **conditional access** in [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] to help secure email and other services depending on conditions you specify.
+Use **conditional access** in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] to help secure email and other services depending on conditions you specify.
 
 Watch this four minute video to see an overview of how you can use this feature in your organization.
 
-![](/media/Intune_CondlAccess.PNG)
+![](./media/Intune_CondlAccess.PNG)
 
 A typical flow for conditional access might look as follows:
 
-![](/media/ConditionalAccess4.png)
+![](./media/ConditionalAccess4.png)
 
 Use conditional access to manage access to Microsoft **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**, and **SharePoint Online**.
 
@@ -55,9 +55,9 @@ Office desktop applications can access Exchange Online and SharePoint Online on 
 -   Windows 7.0 or Windows 8.1
 
 > [!NOTE]
-> PCs should be domain joined or be complaint with the policies set in [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
+> PCs should be domain joined or be complaint with the policies set in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
 
-To implement conditional access, you configure two policy types in [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]:
+To implement conditional access, you configure two policy types in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]:
 
 -   **Compliance policies** are optional policies you can deploy to users and devices and evaluate settings like:
 
@@ -67,13 +67,13 @@ To implement conditional access, you configure two policy types in [!INCLUDE[wit
 
     -   Whether the device is jailbroken or rooted
 
-    -   Whether email on the device is managed by an [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policy
+    -   Whether email on the device is managed by an [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy
 
     If no compliance policy is deployed to a device, then any applicable conditional access policies will treat the device as compliant.
 
--   **Conditional access policies** are configured for a particular service, and define rules such as which Azure Active Directory security user groups or [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] user groups will be targeted and how devices that cannot enroll with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] will be managed.
+-   **Conditional access policies** are configured for a particular service, and define rules such as which Azure Active Directory security user groups or [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] user groups will be targeted and how devices that cannot enroll with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] will be managed.
 
-    Unlike other [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policies, you do not deploy conditional access policies. Instead, you configure these once, and they apply to all targeted users.
+    Unlike other [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policies, you do not deploy conditional access policies. Instead, you configure these once, and they apply to all targeted users.
 
 When devices do not meet the conditions you configure, the user is guided though the process of enrolling the device and fixing the issue that prevents the device from being compliant.
 
@@ -96,7 +96,7 @@ Before you start using conditional access, ensure that you have the correct requ
 ### <a name="Exo"></a>Exchange Online (using the shared multi-tenant environment)
 Conditional access to Exchange Online supports devices that run:
 
--   Windows 8.1 and later (when enrolled with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)])
+-   Windows 8.1 and later (when enrolled with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)])
 
 -   Windows 7.0 or Windows 8.1 (when domain joined)
 
@@ -116,9 +116,9 @@ Additionally:
 
 -   You must use an Office 365 subscription that includes Exchange Online (such as E3) and users must be licensed for Exchange Online.
 
--   The optional **Microsoft Intune service to service connector** connects [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] to Microsoft Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console (see [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)). You do not need to use the connector to use compliance policies or conditional access policies, but is required to run reports that help evaluate the impact of conditional access.
+-   The optional **Microsoft Intune service to service connector** connects [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to Microsoft Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console (see [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)). You do not need to use the connector to use compliance policies or conditional access policies, but is required to run reports that help evaluate the impact of conditional access.
 
-    If you configure the connector, some Exchange ActiveSync policies from [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] might be visible in the Office console but are not set as default policies and do not affect devices.
+    If you configure the connector, some Exchange ActiveSync policies from [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] might be visible in the Office console but are not set as default policies and do not affect devices.
 
     > [!NOTE]
     > Do not configure the service to service connector if you intend to use conditional access for both Exchange Online and Exchange On-premises
@@ -126,7 +126,7 @@ Additionally:
 ### <a name="ExoDedicated"></a>Exchange Online Dedicated
 Conditional access to Exchange Online Dedicated supports devices that run:
 
--   Windows 8 and later (when enrolled with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)])
+-   Windows 8 and later (when enrolled with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)])
 
 -   Windows 7.0 or Windows 8.1 (when domain joined)
 
@@ -140,11 +140,11 @@ Conditional access to Exchange Online Dedicated supports devices that run:
 
 -   For tenants in the legacy Exchange Online Dedicated environment:
 
-    You must use the **on-premises Exchange connector** which connects [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] to Microsoft Exchange On-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console (see [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)).
+    You must use the **on-premises Exchange connector** which connects [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to Microsoft Exchange On-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console (see [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)).
 
 -   For tenants in the new Exchange Online Dedicated environment:
 
-    The optional **Microsoft Intune service to service connector** connects [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] to Microsoft Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console (see [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)). You do not need to use the connector to use compliance policies or conditional access policies, but is required to run reports that help evaluate the impact of conditional access.
+    The optional **Microsoft Intune service to service connector** connects [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to Microsoft Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console (see [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)). You do not need to use the connector to use compliance policies or conditional access policies, but is required to run reports that help evaluate the impact of conditional access.
 
 > [!IMPORTANT]
 > Ensure that you are using the latest version of the **on-premises Exchange connector**.
@@ -152,7 +152,7 @@ Conditional access to Exchange Online Dedicated supports devices that run:
 ### <a name="ExOnPrem"></a>Exchange On-premises
 Conditional access to Exchange On-premises supports:
 
--   Windows 8 and later (when enrolled with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)])
+-   Windows 8 and later (when enrolled with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)])
 
 -   Windows Phone 8 and later
 
@@ -169,7 +169,7 @@ Additionally:
     > [!TIP]
     > If your Exchange environment is in a CAS server configuration, then you must configure the on-premises Exchange connector to point to one of the CAS servers.
 
--   You must use the **on-premises Exchange connector** which connects [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] to Microsoft Exchange On-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console (see [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)).
+-   You must use the **on-premises Exchange connector** which connects [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to Microsoft Exchange On-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console (see [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)).
 
     -   Make sure that you are using the latest version of the **on-premises Exchange connector**. The on-premise Exchange connector available to you in the Intune console is specific to your Intune tenant and cannot be used with any other tenant. You should also ensure that the exchange connector for your tenant is installed on exactly one machine and not on multiple machines.
 
@@ -185,7 +185,7 @@ Additionally:
 ### <a name="Spo"></a>SharePoint Online
 Conditional access to SharePoint Online supports devices that run:
 
--   Windows 8.1 and later (when enrolled with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)])
+-   Windows 8.1 and later (when enrolled with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)])
 
 -   Windows 7.0 or Windows 8.1 (when domain joined)
 
@@ -212,7 +212,7 @@ You can setup conditional access for PCs that run Office desktop applications to
 
 -   The PC must either be domain joined or compliant.
 
-    In order to be compliant, the PC must be enrolled in [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] and comply with the policies.
+    In order to be compliant, the PC must be enrolled in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] and comply with the policies.
 
     For domain joined PCs, you must  set it up to [automatically register the device](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory.
 

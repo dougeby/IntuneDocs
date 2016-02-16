@@ -10,7 +10,7 @@ ms.assetid: d1646677-641b-4b4a-96d6-4529cdd64a27
 ---
 # Terms of Delegated Administration for Microsoft Intune
 > [!WARNING]
-> If you choose to authorize a partner to be a delegated administrator on behalf of your organization, the partner will have full administrative access to [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] as well as to **any other services and subscriptions where you authenticate with the same user account**.  Administrative access can include functions such as assigning and maintaining user accounts, adding or removing users and groups, uploading and distributing licensed software to designated users.
+> If you choose to authorize a partner to be a delegated administrator on behalf of your organization, the partner will have full administrative access to [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] as well as to **any other services and subscriptions where you authenticate with the same user account**.  Administrative access can include functions such as assigning and maintaining user accounts, adding or removing users and groups, uploading and distributing licensed software to designated users.
 
 “Customer”, “you”, or “your” refers to the entity agreeing to these terms. If you are accepting these terms on behalf of your employer or another legal entity, you represent and warrant that you have the authority to bind that entity and that you are agreeing to these terms on behalf of that entity. If you cannot truthfully make these representations, do not accept these terms.
 
@@ -22,7 +22,7 @@ Before doing so, you must read and agree to these terms on behalf of your organi
 
 **What functions may a delegated administrator perform?**
 
-A person or entity authorized as a delegated administrator can perform all administrative operations related to your [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] service account(s), just as you (the Customer) would be permitted to do.
+A person or entity authorized as a delegated administrator can perform all administrative operations related to your [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] service account(s), just as you (the Customer) would be permitted to do.
 
 Administrative operations can include, but are not limited to, creation of users and user groups, uploading and distributing licensed software to designated users, tracking your license agreement information, maintaining an inventory of licensed software assets, managing updates, or configuring policy settings.
 
@@ -32,7 +32,7 @@ Selecting a delegated administrator familiar with administering service accounts
 
 **What are some risks of selecting a delegated administrator?**
 
-Because a delegated administrator will have full administrative access to your [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] service account as well as to any other service authenticating with the same user account, the delegated administrator will have access to all customer data associated with those services and subscriptions.
+Because a delegated administrator will have full administrative access to your [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] service account as well as to any other service authenticating with the same user account, the delegated administrator will have access to all customer data associated with those services and subscriptions.
 
 Depending on the nature of the subscription or service, you may suffer direct or indirect harm if the delegated administrator fails to provide certain functions, e.g., if the delegated administrator does not apply security updates in a timely manner or the delegated administrator does not monitor the anti-malware status of your managed devices.
 

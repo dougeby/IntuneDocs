@@ -10,24 +10,24 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 author: Nbigman
 ---
 # How to get support for Microsoft Intune
-With every [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] subscription, Microsoft Support provides global technical, pre-sales, billing, and subscription support. Support is available both online and by telephone for paid and trial subscriptions. Online technical support is available in English and Japanese. Non-technical support is available in additional languages.
+With every [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] subscription, Microsoft Support provides global technical, pre-sales, billing, and subscription support. Support is available both online and by telephone for paid and trial subscriptions. Online technical support is available in English and Japanese. Non-technical support is available in additional languages.
 
 ## <a name="BKMK_Contact"></a>About support
 This topic describes how to obtain support,  includes links that take you to the page where you can open a service request, and a link to a list of phone numbers for phone support in many languages.
 
-For self help with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], see the [Documentation for Microsoft Intune](documentation-for-microsoft-intune.md) on TechNet, or click the Help link located at the top right-hand corner of the Intune administrative consoles.
+For self help with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see the [Documentation for Microsoft Intune](documentation-for-microsoft-intune.md) on TechNet, or click the Help link located at the top right-hand corner of the Intune administrative consoles.
 
 ### Online service requests
 
 ##### To create an online service request
 
-1.  Sign in to [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] and then visit the [Office 365 admin center](https://portal.office.com/Support/SupportEntry.aspx).
+1.  Sign in to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] and then visit the [Office 365 admin center](https://portal.office.com/Support/SupportEntry.aspx).
 
 2.  Under the heading **Create a service request** select the category of issue for which you want to open a ticket:
 
     -   For billing and licensing issues select **Billing and product info**.
 
-    -   For all other [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] issues select **Mobile device management**. This option also covers Office 365 MDM and System Center Configuration Manager with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
+    -   For all other [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] issues select **Mobile device management**. This option also covers Office 365 MDM and System Center Configuration Manager with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
 
     > [!NOTE]
     > You may have to click **more** at the bottom of the list to see all of the categories.
@@ -47,7 +47,7 @@ See [Contact Assisted Phone Support for Microsoft Intune](contact-assisted-phone
 To track your requests, go to the [Office 365 admin center](https://portal.office.com/admin/default.aspx). At the bottom of the **Create a service request** list, click **See all support tickets**. By default, you will see all of your service requests that are in an open state. To change which service requests you see, for example, to see closed requests, click  the filter icon in the top navigation and select your preferred view.
 
 > [!NOTE]
-> **If you use Microsoft System Center Configuration Manager** or **Microsoft System Center Endpoint Protection:** For technical support with [!INCLUDE[cmshort](/includes/cmshort_md.md)] or Endpoint Protection, contact your partner or visit the [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) to find rich self-help material, with the option of opening a support request online or over the phone.
+> **If you use Microsoft System Center Configuration Manager** or **Microsoft System Center Endpoint Protection:** For technical support with [!INCLUDE[cmshort](./includes/cmshort_md.md)] or Endpoint Protection, contact your partner or visit the [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) to find rich self-help material, with the option of opening a support request online or over the phone.
 > 
 > Technical support for System Center Configuration Manager or System Center Endpoint Protection requires either payment or is decremented from your existing licensing or Premier Support agreements.
 
@@ -70,7 +70,7 @@ We prioritize the support cases we receive so that we can take care of the most 
 
 **Initial Response Times:**
 
-|Severity Level|Operations and Support Description|[!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] / Enterprise Mobility Suite<br /><br />Premier|[!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] / Enterprise Mobility Suite<br /><br />Professional|
+|Severity Level|Operations and Support Description|[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] / Enterprise Mobility Suite<br /><br />Premier|[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] / Enterprise Mobility Suite<br /><br />Professional|
 |------------------|--------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 |Sev A(Critical)|One or more services aren’t accessible or are unusable. Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability. Multiple users or services are affected.|1 Hour|2 Hours|
 |Sev B(High)|The service is usable but in an impaired fashion. The situation has moderate business impact and can be dealt with during business hours. A single user, customer, or service is partially affected.|2 Hours|4 Hours|
@@ -80,7 +80,7 @@ We prioritize the support cases we receive so that we can take care of the most 
 Successful technical support depends on the partnership between Microsoft support and your organization's IT department.  Initial troubleshooting efforts in your organization, combined with effective communication between your admins and Microsoft, can help resolve issues quickly.
 
 ### How your administrators can help
-People with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] administrator roles (including tenant administrators and service administrators) are authorized to access the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] Administration console and to communicate directly with Microsoft about [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] service requests. These administrators can also include Microsoft partners that you have specified as [delegated administrators](https://technet.microsoft.com/library/dn646948.aspx#BKMK_ManagePartners).
+People with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administrator roles (including tenant administrators and service administrators) are authorized to access the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Administration console and to communicate directly with Microsoft about [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service requests. These administrators can also include Microsoft partners that you have specified as [delegated administrators](https://technet.microsoft.com/library/dn646948.aspx#BKMK_ManagePartners).
 
 The administrator:
 

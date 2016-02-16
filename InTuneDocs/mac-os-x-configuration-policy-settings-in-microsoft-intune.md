@@ -10,7 +10,7 @@ ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 author: robstackmsft
 ---
 # Mac OS X configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] **Mac OS X general configuration policy** to configure settings for:
+Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Mac OS X general configuration policy** to configure settings for:
 
 -   **Device security settings** - Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
@@ -58,7 +58,7 @@ In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed
 > [!NOTE]
 > A single policy can only contain a list of compliant, or a list of noncompliant apps. You cannot specify both in the same policy.
 >
-> [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] lets you report devices with noncompliant apps. It does not block installation, or remove noncompliant apps.
+> [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] lets you report devices with noncompliant apps. It does not block installation, or remove noncompliant apps.
 
 |Setting name|Description|
 |----------------|---------------|
@@ -69,7 +69,7 @@ In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed
 |**Edit**|Let’s you edit the name, publisher and app bundle ID of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
 > [!TIP]
-> For more information about [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] reports, see [Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md).
+> For more information about [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] reports, see [Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md).
 
 ## Deploy the configuration policy
 Deploy the configuration policy to one or more groups of users or devices in your organization.
@@ -79,7 +79,7 @@ For more information about how to deploy policies, see U[Use policies to manage 
 A status summary and alerts In the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
 > [!IMPORTANT]
-> When a Mac OS X device is in Sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console might temporarily display the status **Policy settings in error** until the next time the device wakes from Sleep mode.
+> When a Mac OS X device is in Sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console might temporarily display the status **Policy settings in error** until the next time the device wakes from Sleep mode.
 
 ## Monitor compliant and noncompliant apps
 Use the **Noncompliant Apps Reports** to view the compliance of apps you specified.

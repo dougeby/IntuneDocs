@@ -9,7 +9,7 @@ ms.assetid: c505adcc-463f-463f-ad66-190b3cd0a881
 author: Nbigman
 ---
 # Rolling out Microsoft Intune policies
-This topic provide specific recommendations for a phased rollout of policies in [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)]. This approach applies to the first policies you apply in a new [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] deployment, or policies you add to an existing deployment.
+This topic provide specific recommendations for a phased rollout of policies in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]. This approach applies to the first policies you apply in a new [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] deployment, or policies you add to an existing deployment.
 
 For general information about rollout phases, see [Rollout phases for Microsoft Intune deployment](rollout-phases-for-microsoft-intune-deployment.md).
 
@@ -27,7 +27,7 @@ The phases of policy rollout are:
 -   Operations and maintenance
 
 ### Project scope
-Define the scope of your [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] policy deployment:
+Define the scope of your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy deployment:
 
 -   For a new implementation, this will require defining all of the desired device behaviors and security requirements that you want to create with your policy set.
 
@@ -49,7 +49,7 @@ In the Proof of concept phase, test your policy deployment in a laboratory envir
 -   At this point in the process you should develop communication plans for pilot and production users. At a minimum the plan should include  what device behaviors will change and when, and the business purpose for the change, and what to do if they encounter issues, both self-help information and how to contact the help desk.
 
 ### Pilot
-During the pilot you will deploy the policy to a small group of test users and devices. There are specific considerations for piloting policy in [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)]:
+During the pilot you will deploy the policy to a small group of test users and devices. There are specific considerations for piloting policy in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]:
 
 -   The test  group should be representative of the group to which the policy will be applied for production rollout.
 
@@ -74,7 +74,7 @@ During the pilot you will deploy the policy to a small group of test users and d
 -   Apply the policies incrementally to additional groups, monitoring the policy state for affected devices and tracking help desk requests that may be related to the new policy.
 
 ### Operations and maintenance
-**Operations:** Monitor your [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] console for alerts and user or device issues, and to ensure that polices are performing according to your organizational plan.
+**Operations:** Monitor your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console for alerts and user or device issues, and to ensure that polices are performing according to your organizational plan.
 
 **Help desk:** Ensure that your help desk is aware of any changes to policies that will affect the user experience, as these may result in support requests.
 

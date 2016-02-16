@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 95371132-e7a0-4148-b11d-fdb95f110adc
 ---
 # MD Conversion - Windows 10 configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)]**general configuration policy** for Windows 10 to configure settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices:
+Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]**general configuration policy** for Windows 10 to configure settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices:
 
 ## Create a Windows 10 general configuration policy
 

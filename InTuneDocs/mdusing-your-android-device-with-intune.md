@@ -25,30 +25,30 @@ The Company Portal is an app that you install on your device to give you access 
 
 3.  Tap **Intune Company Portal**.
 
-    ![](/media/IW-Help-pics/and-cpinstall-1-search-cp.png)
+    ![](./media/IW-Help-pics/and-cpinstall-1-search-cp.png)
 
 4.  Tap **INSTALL**.
 
-    ![](/media/IW-Help-pics/and-cpinstall-2-install.png)
+    ![](./media/IW-Help-pics/and-cpinstall-2-install.png)
 
 5.  Tap **ACCEPT**.
 
-    ![](/media/IW-Help-pics/and-cpinstall-3-cp-accept.png)
+    ![](./media/IW-Help-pics/and-cpinstall-3-cp-accept.png)
 
 ## <a name="BKMK_andr_signin_cp"></a>Sign in to the Company Portal
 After you install the Company Portal app, you'll need to sign in to the app to enroll your device in Intune. Once you enroll, you can  sign in to the Company Portal anytime to download company apps and do other tasks. For more about what you can do, see [What happens when I install the Company Portal app and enroll my device in Intune?](#BKMK_andr_what_happs_add).
 
 1.  Tap **Company Portal** in your list of apps.
 
-    ![](/media/IW-Help-pics/and-enroll-1-cp-find-CP-app.png)
+    ![](./media/IW-Help-pics/and-enroll-1-cp-find-CP-app.png)
 
 2.  On the **Welcome** screen, tap **Sign in**.
 
-    ![](/media/IW-Help-pics/and-enroll-0-welcome-screen.png)
+    ![](./media/IW-Help-pics/and-enroll-0-welcome-screen.png)
 
 3.  Enter your work or school email and your password, and then Tap **Sign in**.
 
-    ![](/media/IW-Help-pics/and-enroll-2-cp-sign-in.png)
+    ![](./media/IW-Help-pics/and-enroll-2-cp-sign-in.png)
 
     If you are signing into the Company Portal app for the first time, and your company or school is using Intune, you will be prompted to enroll your device in Intune. To enroll, follow the steps in [Enroll your device in Intune](#BKMK_andr_enroll_devc).
 
@@ -58,7 +58,7 @@ After you install the Company Portal app, you'll need to sign in to the app to e
 
     If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
 
-    ![](/media/IW-Help-pics/andr-allow-phone-access.png)
+    ![](./media/IW-Help-pics/andr-allow-phone-access.png)
 
 ## <a name="BKMK_andr_enroll_devc"></a>Enroll your device in Intune
 When you enroll your device in Intune, you can access the company’s network, and get your work email,  work files, and company apps. To find out more about what you can do when you enroll, see [What happens when I install the Company Portal app and enroll my device in Intune?](#BKMK_andr_what_happs_add). If you have issues while trying to enroll, see [Send enrollment errors to your IT admin](#BKMK_andr_send_enroll_errors).
@@ -74,27 +74,27 @@ The instructions for enrolling are different for a Samsung Knox Android device v
 
 1.  On the Company Portal **Welcome** screen, tap **Sign in**, and then sign in with your work or school account.
 
-    ![](/media/IW-Help-pics/and-enroll-0-welcome-screen.png)
+    ![](./media/IW-Help-pics/and-enroll-0-welcome-screen.png)
 
 2.  If your IT admin set up company terms and conditions, tap **ACCEPT** to accept the terms.
 
-    ![](/media/IW-Help-pics/and-enroll-3-accept-terms.png)
+    ![](./media/IW-Help-pics/and-enroll-3-accept-terms.png)
 
 3.  Tap **ENROLL**.
 
-    ![](/media/IW-Help-pics/and-enroll-4-enroll.png)
+    ![](./media/IW-Help-pics/and-enroll-4-enroll.png)
 
 4.  Tap **Activate**.
 
-    ![](/media/IW-Help-pics/and-enroll-5-activate-native.png)
+    ![](./media/IW-Help-pics/and-enroll-5-activate-native.png)
 
 5.  Follow the prompts to enter a PIN or password. If you already set up a PIN or password on this device, you won't see this screen or be required to enter a new PIN or password.
 
-    ![](/media/IW-Help-pics/and-enroll-6-PIN-native.png)
+    ![](./media/IW-Help-pics/and-enroll-6-PIN-native.png)
 
 6.  On the  **Name the certificate** screen, tap **OK** to accept the default certificate.
 
-    ![](/media/IW-Help-pics/and-enroll-7-cert-native.png)
+    ![](./media/IW-Help-pics/and-enroll-7-cert-native.png)
 
     Your device is now enrolled in Intune.
 
@@ -105,23 +105,23 @@ To determine if you have a Samsung Knox device, go to **Settings** &gt; **About 
 
 1.  On the Company Portal Welcome screen, tap **Sign in**, and then sign in with your work or school account.
 
-    ![](/media/IW-Help-pics/and-enroll-0-welcome-screen.png)
+    ![](./media/IW-Help-pics/and-enroll-0-welcome-screen.png)
 
 2.  If your IT admin set up company terms and conditions, tap **ACCEPT** to accept the terms.
 
-    ![](/media/IW-Help-pics/and-enroll-3-accept-terms.png)
+    ![](./media/IW-Help-pics/and-enroll-3-accept-terms.png)
 
 3.  Tap **ENROLL**.
 
-    ![](/media/IW-Help-pics/and-enroll-4-enroll.png)
+    ![](./media/IW-Help-pics/and-enroll-4-enroll.png)
 
 4.  Tap **ACTIVATE**.
 
-    ![](/media/IW-Help-pics/and-enroll-5-activate.png)
+    ![](./media/IW-Help-pics/and-enroll-5-activate.png)
 
 5.  Accept the Samsung Knox Privacy Policy and tap **CONFIRM**.
 
-    ![](/media/IW-Help-pics/and-enroll-6-knox-agree.png)
+    ![](./media/IW-Help-pics/and-enroll-6-knox-agree.png)
 
 Your device is now enrolled in Intune.
 
@@ -224,7 +224,7 @@ Different managed apps can also work together on your device to allow you to do 
 
 When you access company data in a managed app, you see a message like the one below, which lets you know that the app you are opening is managed.
 
-![](/media/IW-Help-pics/managed-apps-message.png)
+![](./media/IW-Help-pics/managed-apps-message.png)
 
 ### How do I get managed apps?
 You get managed apps in a couple of different ways:
@@ -309,7 +309,7 @@ If your IT administrator has configured a VPN application to enable you to  conn
 
 2.  Specify the password timeout value.
 
-3.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] by following the instructions in [Enroll your device in Intune](#BKMK_andr_enroll_devc).
+3.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] by following the instructions in [Enroll your device in Intune](#BKMK_andr_enroll_devc).
 
 ## <a name="BKMK_andr_erase_lost_device"></a>Reset (erase) your lost or stolen device
 If your phone is lost or stolen, you can reset it to factory defaults.
@@ -338,15 +338,15 @@ To unenroll your device from Intune and uninstall the Company Portal app:
 
 2.  Tap **MY DEVICES** and then select the device you want to unenroll.
 
-    ![](/media/IW-Help-pics/andr-1-my-devices-choose.png)
+    ![](./media/IW-Help-pics/andr-1-my-devices-choose.png)
 
 3.  Tap the trash can icon.
 
-    ![](/media/IW-Help-pics/andr-2-tap-trashcan.png)
+    ![](./media/IW-Help-pics/andr-2-tap-trashcan.png)
 
     On the warning page, tap **OK** to unenroll your device.
 
-    ![](/media/IW-Help-pics/andr-3-warning-about-remove.png)
+    ![](./media/IW-Help-pics/andr-3-warning-about-remove.png)
 
 ## <a name="BKMK_andr_unenroll_device"></a>Unenroll your device from Intune if you declined Terms of Use
 Use these instructions to unenroll from Intune only if you declined the Terms of Use while trying to sign in to the Company Portal app.  When you decline the Terms, you cannot sign in to the Company Portal app. To unenroll your device, you generally use the Company Portal app, so these instructions are a workaround method for unenrolling when you have declined the Terms. The best way to unenroll your device is to accept the Terms, sign in to the Company Portal app, and then unenroll.  See [Unenroll your device from Intune by using the Company Portal app](#BKMK_andr_unenroll_device_cp).

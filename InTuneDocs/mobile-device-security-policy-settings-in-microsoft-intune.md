@@ -11,9 +11,9 @@ author: robstackmsft
 ---
 # Mobile device security policy settings in Microsoft Intune
 > [!IMPORTANT]
-> [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] now features separate configuration policies for each device platform, and these policies contain the most up-to-date settings you can use. You can continue to use the mobile device security policy and any existing deployments will still work. However, you should plan to migrate to the new configuration policies as soon as possible as the mobile device security policy will be removed in the future.
+> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] now features separate configuration policies for each device platform, and these policies contain the most up-to-date settings you can use. You can continue to use the mobile device security policy and any existing deployments will still work. However, you should plan to migrate to the new configuration policies as soon as possible as the mobile device security policy will be removed in the future.
 
-Use [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)] mobile device security policies to configure a wide range of settings that you can deploy to managed devices in your organization. These settings can be used to control the functionality and security of your devices.
+Use [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] mobile device security policies to configure a wide range of settings that you can deploy to managed devices in your organization. These settings can be used to control the functionality and security of your devices.
 
 You can create and deploy mobile device security policies for the following device types:
 
@@ -58,7 +58,7 @@ For more information about how to deploy policies, see [Use policies to manage c
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
 > [!IMPORTANT]
-> It might take up to 24 hours for status information to appear in the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] admin console.
+> It might take up to 24 hours for status information to appear in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] admin console.
 
 ## <a name="BKMK_Settings"></a>Policy settings for mobile devices
 

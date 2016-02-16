@@ -10,10 +10,10 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 author: NathBarn
 ---
 # Set up Windows device management with Microsoft Intune
-You can use  [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] to manage desktops, laptops, and other devices running Windows as mobile devices. You may also want to [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) or [manage computers with Intune client software](http://technet.microsoft.com/library/dn646959.aspx) using the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] client.
+You can use  [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to manage desktops, laptops, and other devices running Windows as mobile devices. You may also want to [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) or [manage computers with Intune client software](http://technet.microsoft.com/library/dn646959.aspx) using the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client.
 
 ## Prepare to manage Windows devices with Intune
-To access resources managed with[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] users can enroll their Windows computers as mobile devices.  Creating a DNS CNAME helps users connect to the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] company portal without entering a server name. If you want to deploy the company portal with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], you will need to enable sideloading with a sideloading key.   Users can also download and install the company portal from the Store or use software included in Windows. Complete the following steps to set up Windows device management with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
+To access resources managed with[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] users can enroll their Windows computers as mobile devices.  Creating a DNS CNAME helps users connect to the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] company portal without entering a server name. If you want to deploy the company portal with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you will need to enable sideloading with a sideloading key.   Users can also download and install the company portal from the Store or use software included in Windows. Complete the following steps to set up Windows device management with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
 
 #### Set up Windows device management
 
@@ -42,7 +42,7 @@ To access resources managed with[!INCLUDE[wit_nextref](/includes/wit_nextref_md.
 
         -   `enterpriseregistration.windows.net` – Supports workplace join for mobile devices. It also supports conditional access for Windows 8.1
 
-    ![](/media/Windows-Device-Enrollment.bmp)
+    ![](./media/Windows-Device-Enrollment.bmp)
 
 3.  **Enable sideloading apps** (Optional)
     For Windows RT 8.1,  Windows 8.1, and  Windows 10 devices, the Company Portal app can be installed from the Windows Store. When not installed directly from the Windows Store, installation of the Company Portal app requires sideloading keys on target computers. See [http://go.microsoft.com/fwlink/?LinkID=290705](http://go.microsoft.com/fwlink/?LinkID=290705) for details on how to deploy sideloading keys. Although sideloaded apps do not have to be certified by the Windows Store or installed through the Windows Store, they can only be installed on sideloading-enabled devices. For more information on acquiring sideloading keys, see [Microsoft Volume Licensing](http://go.microsoft.com/fwlink/?LinkId=264711).

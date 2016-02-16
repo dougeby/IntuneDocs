@@ -22,7 +22,7 @@ For the best experience, you should deploy the app as part of Intune device enro
 ## Why is Intune deploying this app?
 Later this year, Microsoft will issue an update to the  Microsoft Intune Company Portal app to simplify the enrollment experience, including removing the ‘Microsoft workaccount’ and ‘Name the certificate’ prompts required during Intune enrollment on Android devices.
 
-![](/media/Azure-Authenticator-certificate.jpg)
+![](./media/Azure-Authenticator-certificate.jpg)
 
 When the company portal is updated, Android devices without the Azure Authenticator app installed will:
 
@@ -41,7 +41,7 @@ To avoid these problems, you should deploy the Azure Authenticator app as a requ
 
 Alternatively, tell your end-users to follow the required application notification to install the Azure Authenticator app from Google Play after the September updates of Microsoft Intune and Microsoft System Center Configuration Manager are released.
 
-![](/media/Azure-Authenticator-required-install.jpg)
+![](./media/Azure-Authenticator-required-install.jpg)
 
 Although we recommend that this feature remains enabled, if your organization does not use the single sign-on or conditional access features, you can disable the automatic deployment of the Azure Authenticator app from the Intune console as follows:
 
