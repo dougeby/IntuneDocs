@@ -9,112 +9,95 @@ ms.topic: article
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 author: robstackmsft
 ---
-# Mobile device management capabilities in Microsoft Intune
-Intune lets you manage iOS, Android, and Windows Phone devices. It also supports management of Windows RT, Window computers, and Mac OS X computers as mobile devices. Users use a *company portal* to install apps, enroll and remove devices, and helps them contact their IT department or helpdesk. To enroll mobile devices you must set [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] as your *mobile device authority* and then configure the infrastructure to support the platforms you want to managed. This requires establishing a trust relationship with the device.
+# Mobile device management capabilities (for enrolled devices)  in Microsoft Intune
+[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] lets you manage a range of devices by *enrolling* them into the service. Users can then use a *company portal* to perform a range of operations such as enrolling their device, browsing and installing apps, making sure their device is compliant with company policies, and contacting their IT support.
+See later in this topic for a full list of the capabilities that enrolling devices gives you.
 
-## <a name="BKMK_MobileDeviceReqs"></a>Supported mobile devices
-The requirements to manage a mobile device and the level of management you have depend on whether you manage the device directly or use Exchange ActiveSync:
+## When to enroll devices
+For mobile device operating systems including iOS, Android and Windows Phone, you must always enroll devices. For Windows PCs, you can choose between enrolling them, or installing the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] PC client software which offers a few capabilities not available when you enroll devices.
+Review the information in this topic and in the [Windows PC management capabilities (with the Microsoft Intune computer client)](windows-pc-management-capabilities-in-microsoft-intune.md) topic to help you decide which method you will use to manager you Windows PCs.
 
--   **Direct management**: Different types of mobile devices have different requirements for direct management. For example, to manage iOS devices you need an Apple Push Notification service certificate, and to manage apps for a [!INCLUDE[winblue_winrt_2](/includes/winblue_winrt_2_md.md)] device, you need sideloading keys and a code-signing certificate. [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] can manage the following devices with mobile device management:
+## <a name="BKMK_MobileDeviceReqs"></a>Requirements for device management
+### Operating systems
 
-    -   Apple iOS 7.1 and later
+[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] can manage the following device platforms:
 
-        > [!NOTE]
-        > iOS 6.0 devices that are already enrolled will remain enrolled, but new devices must be running iOS version 7.1 or later in order to enroll in Intune.
+- Apple iOS 7.1 and later
+- Google Android 4.0 and later (including Samsung KNOX)
+- Windows Phone 8.0 and later
+- Windows RT and Windows 8.1 RT
+- PCs running Windows 8.1 and later
+- Mac OS X 10.9 and later
 
-    -   Google Android 4.0 and later (including Samsung KNOX)
+<div class="alert alert-tip">
+  <h5><span class="icon-tip"></span> Tip</h5>
+  <p>If you previously enrolled devices that run an earlier version of iOS than the supported version above, these will remain enrolled. However, check the documentation for each [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] to ensure that version of iOS is supported by the feature.</p>
+</div>
 
-    -   Windows Phone 8.0 and later
+[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] can manage users' devices, popularly known as "bring your own device" (BYOD). It can also manage company-owned devices including scenarios where the company provides a list of devices users may choose from, known as "choose your own device" (CYOD).
 
-    -   Windows RT and Windows 8.1 RT
-
-    -   Windows 8.1 and later computers (managed as mobile devices; see [Windows PC management capabilities in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md))
-
-    -   Mac OS X 10.9 and later
-
-    Before you can directly manage mobile devices you must [Set mobile device management authority and configure Microsoft Intune](set-mobile-device-management-authority-and-configure-microsoft-intune.md).
-
--   **Exchange ActiveSync**: To manage devices by using Exchange ActiveSync requires you to install the On-Premises Connector or use the built-in Service to Service Connector to connect to your Exchange Server.
-
-    To learn about the hardware and software requirements to install the On-Premises Connector, see [Requirements for the On-Premises Connector](network-infrastructure-requirements-for-microsoft-intune.md#BKMK_ExchanceConnectorReqs).
-
-    To learn about using the On-Premises Connector or Service to Service Connector with Exchange, see [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md).
-
-## Mobile device management features
-Intune supports mobile device management of iOS, Android, and Windows Phone devices. It also supports management of Windows RT and Window computers as mobile devices. [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] can manage users' devices, popularly known as "bring your own device" (BYOD). It can also manage company-owned devices including scenarios where the company provides a list of devices users may choose from, known as "choose your own device" (CYOD).
-
-You can enroll devices to meet your organization's needs:
+How you enroll devices depends on your organization's needs:
 
 |Enrollment type|BYOD|CYOD|Shared device with manager account|Shared device without a user account|
 |-------------------|--------|--------|--------------------------------------|----------------------------------------|
 |**Description**|Personal device enrolled using Microsoft Intune|Corporate-owned device for single user|Corporate-owned device managed using a manager account shared by many users|Corporate-owned user-less device used by many users.|
 |**Device’s user**|Owner|Assigned user|No user-specific account|No specific user|
-|**Who enrolls**|Owner|Administrator|Device Manager|Anyone|
-|**Who un-enrolls**|Owner or administrator|Administrator|Administrator|Administrator|
-|**Who can reset**|Owner or administrator|Administrator|Administrator|Administrator|
-To enroll mobile devices you must set [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] as your *mobile device authority* and then configure the infrastructure to support the platforms you want to managed. This requires establishing a trust relationship with the device.
+|**Who enrolls?**|Owner|Administrator|Device Manager|Anyone|
+|**Who un-enrolls?**|Owner or administrator|Administrator|Administrator|Administrator|
+|**Who can reset?**|Owner or administrator|Administrator|Administrator|Administrator|
 
-Management, inventory, app deployment, provisioning, and retirement are all handled through the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] administration console. Users gain access to the company portal which allows them to install apps, enroll and remove devices, and helps them contact their IT department or helpdesk.
 
-**Mobile device management (MDM) capabilities** differ across mobile device platforms but all platforms support the following:
+###Exchange ActiveSync management
+You can also manage devices by using Exchange ActiveSync. This requires you to install the On-Premises Connector or use the built-in Service to Service Connector to connect to your Exchange Server.
 
--   **Certificate, email, VPN and Wifi profiles.** You can deploy certificate profiles to mobile devices, and also deploy e-mail, VPN and Wifi profiles. See [Enable access to company resources with Microsoft Intune - deleted](enable-access-to-company-resources-with-microsoft-intune---deleted.md).
+To learn about the hardware and software requirements to install the On-Premises Connector, see [Requirements for the On-Premises Connector](network-infrastructure-requirements-for-microsoft-intune.md).
 
--   **Manage corporate-owned iOS devices.** You can set up devices for enrollment and then distribute them to specific users, or you can enroll devices so that they can be shared by multiple users. See [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
+To learn about using the On-Premises Connector or Service to Service Connector with Exchange, see [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md).
 
--   **Mobile application management.** Managed mobile apps can be configured to restrict certain app operations, such as copy and paste, to help protect your organization’s data. You can also use the managed browser to control the sites that users are allowed to visit. See [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) and [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md).
+## Mobile device management features
 
--   **Conditional access.** Use [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] conditional access policies to control access to on-premises Microsoft Exchange email from mobile devices, even when the device is not managed by Intune. See [Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-sharepoint-with-microsoft-intune.md).
 
--   **Passwords management** differs across mobile device platforms, but all platforms let you require a password, limit the number of failed attempts, limit the minutes before the screen locks, set password expiration, and prevent previously-used passwords.
+Management, inventory, app deployment, provisioning, and retirement are all handled through the [!INCLUDE[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] administration console. Users gain access to the company portal which allows them to install apps, enroll and remove devices, and helps them contact their IT department or helpdesk.
 
--   **Application settings.** You can control browser settings, and also such application settings as whether app stores can be used on mobile devices.
+**Mobile device management (MDM) capabilities** include the following:
 
--   **Device capabilities, cellular and voice.** You can allow or deny the use of a camera, control roaming settings, and enable or disable iOS voice assistant and voice dialing features.
-
--   **Reset passcodes, lock, selectively wipe or retire devices.** You can reset passcodes if users lose access to their device, lock missing or stolen devices, or even wipe data off of missing or stolen devices.
-
-## Device security and configuration
+### Device security and configuration
 
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
-|Configuration policies|Mobile device configuration policies let you manage many settings and features on mobile devices in your organization.|[iOS configuration policy settings in Microsoft Intune](ios-configuration-policy-settings-in-microsoft-intune.md)<br /><br />[Android configuration policy settings in Microsoft Intune](android-configuration-policy-settings-in-microsoft-intune.md)<br /><br />[Windows configuration policy settings in Microsoft Intune](windows-configuration-policy-settings-in-microsoft-intune.md)<br /><br />[Windows Phone configuration policy settings in Microsoft Intune](windows-phone-configuration-policy-settings-in-microsoft-intune.md)<br /><br />[Exchange ActiveSync policy settings in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md)<br /><br />[Mobile device security policy settings in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md)|
-|Custom policies|Use custom polices when configuration policies do not contain the setting you require. For iOS devices, you can import settings you exported from the Apple Configurator Tool. For other devices, you can use OMA-URI settings to configure settings and features on the device.|[iOS custom policy settings in Microsoft Intune](ios-custom-policy-settings-in-microsoft-intune.md)<br /><br />[Android custom policy settings in Microsoft Intune](android-custom-policy-settings-in-microsoft-intune.md)<br /><br />[Windows Phone custom policy settings in Microsoft Intune](windows-phone-custom-policy-settings-in-microsoft-intune.md)<br /><br />[Windows 10 custom policy settings in Microsoft Intune](Windows-10-custom-policy-settings-in-microsoft-intune.md)|
-|Remote Wipe, Remote Lock, and Passcode Reset|Erase sensitive data when a device is lost or stolen. For example, you can remotely lock the device, restore it to factory settings, or wipe only corporate data.|[Help protect your data with remote wipe, remote lock, or passcode reset using Microsoft Intune](Help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-microsoft-intune.md)|
+|Configuration policies<br><br>Custom policies|Mobile device configuration policies let you manage many settings and features on mobile devices in your organization. For example, you can you require a password, limit the number of failed attempts, limit the minutes before the screen locks, set password expiration, and prevent previously-used passwords. You could also control the use of hardware and software features such as the device camera, or the web browser<br><br>Use custom polices when configuration policies do not contain the setting you require. For iOS devices, you can import settings you exported from the Apple Configurator Tool. For other devices, you can use OMA-URI settings to configure settings and features on the device.|[Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)<br />|
+|Remote Wipe, Remote Lock, and Passcode Reset|Erase sensitive data when a device is lost or stolen. For example, you can remotely lock the device, restore it to factory settings, or wipe only corporate data.<br>You can reset passcodes if users lose access to their device, lock missing or stolen devices, or even wipe data off of missing or stolen devices.|[Help protect your data with remote wipe, remote lock, or passcode reset using Microsoft Intune](help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-microsoft-intune.md)|
 |Kiosk mode|Lets you lock down certain features of mobile devices such as screen capture and the power switch. Also lets you restrict devices to run a single app that you specify.|[iOS configuration policy settings in Microsoft Intune](ios-configuration-policy-settings-in-microsoft-intune.md)|
 
-## App management
+### App management
 
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
-|App deployment and management|Provides a range of tools to help you manage mobile apps through their lifecycle, including app deployment from installation files and app stores, detailed monitoring of app status, and app removal.|[Deploy apps to mobile devices in Microsoft Intune - deleted](deploy-apps-to-mobile-devices-in-microsoft-intune---deleted.md)|
+|App deployment and management|Provides a range of tools to help you manage mobile apps through their lifecycle, including app deployment from installation files and app stores, detailed monitoring of app status, and app removal.|[Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md)|
 |Compliant and noncompliant apps|Lets you specify lists of compliant apps (that users are allowed to install) and noncompliant apps (which must not be installed by users).|[iOS configuration policy settings in Microsoft Intune](ios-configuration-policy-settings-in-microsoft-intune.md)|
-|Mobile application management|Configure restrictions for apps by using a mobile application management policy. This helps you to increase the security of your company data by restricting operations such as copy and paste, external backup of data and the transfer of data between apps.|[Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)<br /><br />[Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)<br /><br />[Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)<br /><br />[Microsoft apps you can use with Microsoft Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md)|
+|Mobile application management|Configure restrictions for apps by using mobile application management for both devices you manage with Intune, and also devices that are not managed by Intune. This helps you to increase the security of your company data by restricting operations such as copy and paste, external backup of data and the transfer of data between apps.|[Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)<br><br>[Configure data loss prevention app policies with Microsoft Intune](configure-data-loss-prevention-app-policies-with-microsoft-intune.md)<br /><br />[Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)<br /><br />[Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)|
+|Mobile app configuration|Use mobile app configuration policies to supply settings for iOS apps that might be required when the user runs the app. For example, an app might require the user to specify a port number of logon information. This can help streamline app configuration and reduce the number of help desk calls.|[Configure apps with mobile app configuration policies in Microsoft Intune](configure-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)|
 |Managed browser|After you deploy the managed browser to your users, you can configure a managed browser policy to control the websites that they can visit. In addition, you can also apply mobile application management policies to the managed browser.|[Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md)|
+|Microsoft Passport|Intune lets you integrate with Microsoft Passport for Work which is an alternative sign-in method for Windows 10 that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.|[Control Microsoft Passport settings on devices with Microsoft Intune](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)|
 
-## Company resource access
+### Company resource access
 
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
 |Certificate profiles|Create and deploy trusted certificate profiles and Simple Certificate Enrollment Protocol (SCEP) certificates which can be used to help secure and authenticate Wi-Fi, VPN, and email profiles.|[Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md)|
 |Wi-Fi profiles|Deploy wireless network settings to your users. By deploying these settings, you minimize the end-user effort required to connect to the corporate network.|[Help users connect to company networks using Wi-Fi profiles with Microsoft Intune](help-users-connect-to-company-networks-using-wi-fi-profiles-with-microsoft-intune.md)|
-|Email profiles|Create and deploy email settings to devices. This lets users access corporate email on their personal devices without any required setup on their part.|[Configure access to corporate email using email profiles with Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)|
+|Email profiles|Create and deploy email settings to devices. This lets users access corporate email on their personal devices without any required setup on their part.|[Configure access to corporate email using email profiles with Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)|
 |VPN profiles|Deploy VPN settings to users and devices in your organization. By deploying these settings, you minimize the end-user effort required to connect to resources on the company network.|[Help users connect to their work using VPN profiles with Microsoft Intune](help-users-connect-to-their-work-using-vpn-profiles-with-microsoft-intune.md)|
 |Conditional access policies|Manage access to Microsoft Exchange email and SharePoint Online from devices that are not managed by [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].|[Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-sharepoint-with-microsoft-intune.md)|
 
-## Inventory and reporting
+### Inventory and reporting
 
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
 |Inventory and reporting|Find information about the devices you manage and the software they are using.<br /><br />You can filter these reports in a number of ways, such as the device platform, and whether the device is compliant with corporate standards.|[Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md)|
 
-## See Also
+##Next steps
+Now you've discovered some of the capabilities you can use when you enroll your devices with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], you'll need to [get ready to enroll your devices](get-ready-to-enroll-devices-in-microsoft-intune.md). After you have enrolled your devices, you can take advantage of all of the capabilities you've read about in this topic.
+
+### See Also
 [Introduction to Microsoft Intune](introduction-to-microsoft-intune.md)
-[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
-[Manage mobile devices and PCs from the cloud](http://technet.microsoft.com/library/dn715906.aspx)
-[Bring your own device (BYOD) design considerations guide](http://technet.microsoft.com/library/dn656905.aspx)
-[Sign up for a free trial](https://account.manage.microsoft.com/Signup/MainSignUp.aspx?OfferId=A77BE827-FC8B-4EF2-A0F5-7CD6C813AA65&ali=1)
-[How to buy Intune](http://technet.microsoft.com/library/dn646949.aspx)
-[Start using Microsoft Intune](start-using-microsoft-intune.md)
-[Microsoft Intune Service Description](microsoft-intune-service-description.md)
-[Get started with a 30-day trial of Microsoft Intune](Get-started-with-a-30-day-trial-of-microsoft-intune.md)
