@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Microsoft Intune</title>
     <link rel="stylesheet" href="./_themes/css/hub.css" />
+    <script type="text/javascript" src="./_themes/javascript/slick.min.js"></script>
   </head>
   <body>
 
@@ -218,7 +219,18 @@
         </ul>
       </div>
     </footer>
-
+   
+   <script>
+        $(document).ready(function() {
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+        });
+    </script> 
 
   </body>
 </html>
