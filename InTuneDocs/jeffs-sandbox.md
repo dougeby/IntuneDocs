@@ -49,6 +49,37 @@ This is what a striped table looks like.
 </table>
 </div>
 
+## Doc-level options
+<p>The Doc-level Options component allows authors to embed other UI components (in this version: dropdowns & buttons) within conceptual documents to enable scenarios like language and platform switching. It is presented right below author metadata at the start of a conceptual document.</p>
+
+<ul class="document-ui">
+	<li>
+		<div class="dropdown-container">
+			<label for="dropdown">Pick an option</label>
+			<div class="dropdown">
+				<select>
+					<option value="option-a">Option A</option>
+					<option value="option-b">Option B</option>	
+				</select>
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="dropdown-container">
+			<label for="dropdown">And another</label>
+			<div class="dropdown">
+				<select>
+					<option value="option-c">Option C</option>
+					<option value="option-d">Option D</option>	
+				</select>
+			</div>
+		</div>
+	</li>
+	<li>
+		<button type="button" class="button-small">Button</button>
+	</li>
+</ul>
+
 ## Dropdowns
 ### Flat list dropdowns
 <p> Dropdowns may provide a flat list of links:
@@ -125,20 +156,20 @@ This is what a striped table looks like.
 
 
 ### Buttons
-The preferred markup for buttons is the <button> tag. However, you may also use the <a> tag to create buttons. It's eventually a question of semantics (i.e. "Is this thing I'm creating a button, or a link that looks button-like?").
+<p>The preferred markup for buttons is the button tag. However, you may also use the <a> tag to create buttons. It's eventually a question of semantics (i.e. "Is this thing I'm creating a button, or a link that looks button-like?").</p>
 
 <p>This is a default button:
-	<button type="button">Hello</button>
+	<button type="button">Default</button>
 </p>
 <p>This is a small button:
-	<button type="button" class="button-small">Hello</button>
+	<button type="button" class="button-small">Small</button>
 </p>
 <p>This is a big button:
-	<button type="button" class="button-big">Hello</button>
+	<button type="button" class="button-big">Big</button>
 </p>
 <p>This is a big, disabled button:
-	<button type="button" class="button-big" disbaled>Hello</button>
+	<button type="button" class="button-big" disbaled>Big Disabled</button>
 </p>
 <p>This is a big button with an icon (don't forget to leave a space after the icon):
-	<button type="button" class="button-big"><span class="icon icon-theme-day"> </span>Hello</button>
+	<button type="button" class="button-big"><span class="icon icon-theme-day"> </span>Big With Icon</button>
 </p>
