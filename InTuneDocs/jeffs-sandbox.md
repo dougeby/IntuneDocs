@@ -8,6 +8,7 @@ ms.topic: article
 ms.assetid: tempfile
 author: jeffgilb
 ---
+
 ## Pretty tables
 This is what a striped table looks like.
 
@@ -50,7 +51,7 @@ This is what a striped table looks like.
 </div>
 
 ## Doc-level options
-<p>The Doc-level Options component allows authors to embed other UI components (in this version: dropdowns & buttons) within conceptual documents to enable scenarios like language and platform switching. It is presented right below author metadata at the start of a conceptual document.</p>
+The Doc-level Options component allows authors to embed other UI components (in this version: dropdowns & buttons) within conceptual documents to enable scenarios like language and platform switching. It is presented right below author metadata at the start of a conceptual document.
 
 <ul class="document-ui">
 	<li>
@@ -88,9 +89,9 @@ This is what a striped table looks like.
 		<select>
 			<option value="<a href="https://docsmsftstage.azurewebsites.net/EM/index.html</a>">Option 1</option>
 			<option value=".\jeffs-sandbox.html">Option 2</option>
-			<option value="Option 3">.\jeffs-sandbox.html</option>
-			<option value="Option 4">.\jeffs-sandbox.md</option>
-			<option value="Option 5">jeffs-sandbox.md</option>
+			<option value="jeffs-sandbox.html">Option 3</option>
+			<option value=".\jeffs-sandbox.md">Option 4</option>
+			<option value="jeffs-sandbox.md">Option 5</option>
 		</select>
 	</div>
 </p>
