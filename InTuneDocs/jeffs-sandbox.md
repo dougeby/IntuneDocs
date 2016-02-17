@@ -9,6 +9,12 @@ ms.assetid: tempfile
 author: jeffgilb
 ---
 
+<div class="alert alert-warning">
+	<h5><span class="icon icon-warning"></span> Warning</h5>
+	<p>Nothing on this page is supported for OPS because they're not approved markdown extensions!</p>
+</div>
+
+
 ## Pretty tables
 This is what a striped table looks like.
 
@@ -87,7 +93,7 @@ The Doc-level Options component allows authors to embed other UI components (in 
 <div class="dropdown-container">
 	<div class="dropdown">
 		<select>
-			<option value="<a href="https://docsmsftstage.azurewebsites.net/EM/index.html</a>">Option 1</option>
+			<option value="<a href="https://docsmsftstage.azurewebsites.net/EM/index.html</a>"Option 1</option>
 			<option value=".\jeffs-sandbox.html">Option 2</option>
 			<option value="jeffs-sandbox.html">Option 3</option>
 			<option value=".\jeffs-sandbox.md">Option 4</option>
@@ -156,8 +162,8 @@ The Doc-level Options component allows authors to embed other UI components (in 
 
 
 
-### Buttons
-<p>The preferred markup for buttons is the button tag. However, you may also use the <a> tag to create buttons. It's eventually a question of semantics (i.e. "Is this thing I'm creating a button, or a link that looks button-like?").</p>
+## Buttons
+The preferred markup for buttons is the button tag. However, you may also use the <a> tag to create buttons. It's eventually a question of semantics (i.e. "Is this thing I'm creating a button, or a link that looks button-like?").
 
 <p>This is a default button:
 	<button type="button">Default</button>
