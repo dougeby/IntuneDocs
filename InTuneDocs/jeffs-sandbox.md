@@ -8,8 +8,8 @@ ms.topic: article
 ms.assetid: tempfile
 author: jeffgilb
 ---
-# Testing stuff
-Insert introduction here.
+## Pretty tables
+This is what a striped table looks like.
 
 <div class="table-wrapper">
 <table class="table-striped">
@@ -23,27 +23,27 @@ Insert introduction here.
 	<tbody>
 		<tr>
 			<td><strong>Bold</strong> text </td>
-			<td><Yes></td>
+			<td>Yes</td>
 		</tr>
 		<tr>
 			<td><em>Italicized</em> text </td>
-			<td>Yes></td>
+			<td>Yes</td>
 		</tr>
 		<tr>
 			<td><del>Striked out</del> text </td>
-			<td><Yes></td>
+			<td>Yes</td>
 		</tr>
 		<tr>
 			<td>Inline <code>code</code></td>
-			<td>Yes></td>
+			<td>Yes</td>
 		</tr>		
 		<tr>
 			<td><a href="">Links</a></td>
-			<td><Yes></td>
+			<td>Yes</td>
 		</tr>
 		<tr>
 			<td>Lists, Alerts, Code Blocks, Images, Videos, Buttons, Giraffes</td>
-			<td>No></td>
+			<td>No</td>
 		</tr>
 	</tbody>
 </table>
@@ -55,9 +55,11 @@ Insert introduction here.
 <div class="dropdown-container">
 	<div class="dropdown">
 		<select>
-			<option value="Option 1">Option 1</option>
-			<option value="Option 2">Option 2</option>
-			<option value="Option 3">Option 3</option>
+			<option value="<a href="https://docsmsftstage.azurewebsites.net/EM/index.html</a>">Option 1</option>
+			<option value=".\jeffs-sandbox.html">Option 2</option>
+			<option value="Option 3">.\jeffs-sandbox.html</option>
+			<option value="Option 4">.\jeffs-sandbox.md</option>
+			<option value="Option 5">jeffs-sandbox.md</option>
 		</select>
 	</div>
 </p>
