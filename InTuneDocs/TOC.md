@@ -1,4 +1,4 @@
-# Understand & Explore
+# [Understand & Explore](#)
 
 ## [What to know before you set up Intune](What-to-know-before-setting-up-microsoft-intune.md)
 ## [Choose how to manage devices](introduction-to-microsoft-intune.md)
