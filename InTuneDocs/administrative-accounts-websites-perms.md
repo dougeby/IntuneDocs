@@ -23,7 +23,6 @@ You use two types of administrator accounts, user accounts with additional permi
 
 ## <a name="BKMK_AdminWebsites"></a>Administrative websites for Intune
  +Different administrative tasks require you to use one of two administrative websites. Because the configurations you make and data from devices that you manage are stored in the cloud, you can manage your subscription from any computer with [a supported browser](supported-web-browsers.md).
- Different administrative tasks require you to use one of two administrative websites. Because the configurations you make and data from devices that you manage are stored in the cloud, you can manage your subscription from any computer with [a supported browser](http://technet.microsoft.com/library/dn646966.aspx#BKMK_SupportedBrowsers).
 
 |Administrative website|More information|
 |--------------------------|--------------------|
