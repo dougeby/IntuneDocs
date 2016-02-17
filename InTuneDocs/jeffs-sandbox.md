@@ -9,6 +9,15 @@ ms.assetid: tempfile
 author: jeffgilb
 ---
 
+## Azure selectors
+[AZURE.SELECTOR]  
+[Selector option 1](lp-selector1.md)  
+[Selector option 2](lp-selector2.md)  
+
+
+
+
+
 <div class="alert alert-warning">
 	<h5><span class="icon icon-warning"></span> Warning</h5>
 	<p>Nothing on this page is supported for OPS because they're not approved markdown extensions!</p>
