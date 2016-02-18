@@ -22,13 +22,13 @@ Select from the following options to learn more:
 
 > [AZURE.SELECTOR]
 > 
-> -[Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
+> [Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
 >
-> -[Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
+> [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
 >
-> -[Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
+> [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
 >
-> -[Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
+> [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
 
 
 ## Enroll corporate-owned devices
@@ -38,16 +38,14 @@ Select from the following options to learn more:
 
 > [AZURE.SELECTOR]
 > 
-> -[Device enrollment program for iOS](set-up-ios-and-mac-management-with-microsoft-intune.md#BKMK_DEP)
+> [Device enrollment program for iOS](set-up-ios-and-mac-management-with-microsoft-intune.md#BKMK_DEP)
 >
-> -[Setup assistant for iOS](https://technet.microsoft.com/library/dn408185.aspx#BKMK_SAE)
+> [Setup assistant for iOS](https://technet.microsoft.com/library/dn408185.aspx#BKMK_SAE)
 >
-> -[Direct enrollment for iOS](https://technet.microsoft.com/library/dn408185.aspx#BKMK_DE)
+> [Direct enrollment for iOS](https://technet.microsoft.com/library/dn408185.aspx#BKMK_DE)
 >
-> -[Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
+> [Device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 >
-> -[Device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
->
-> -[Enroll using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+> [Enroll using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
 
