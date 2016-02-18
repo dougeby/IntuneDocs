@@ -63,7 +63,7 @@ The following are software requirements for installing the [!INCLUDE[wit_nextref
 |---------------|--------------------|
 |Administrative permissions|The account that installs the client software must have local administrator permissions to that PC.|
 |Windows Installer 3.1|The PC must have, at a minimum, Windows Installer 3.1 installed.|
-|Remove incompatible client software|Before you install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software, you must uninstall the following client software from that PC:<br /><br />-   Any version of [!INCLUDE[cm5short](/includes/cm5short_md.md)]<br />-   Any version of [!INCLUDE[sccmshortname](./includes/sccmshortname_md.md)]<br />-   Any version of Microsoft Systems Management Server (SMS)|
+|Remove incompatible client software|Before you install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software, you must uninstall the following client software from that PC:<br /><br />-   Any version of [!INCLUDE[cm5short](./includes/cm5short_md.md)]<br />-   Any version of [!INCLUDE[sccmshortname](./includes/sccmshortname_md.md)]<br />-   Any version of Microsoft Systems Management Server (SMS)|
 
 ##Next steps
 

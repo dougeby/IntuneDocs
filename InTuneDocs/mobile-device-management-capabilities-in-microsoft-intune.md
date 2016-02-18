@@ -57,7 +57,7 @@ To learn about using the On-Premises Connector or Service to Service Connector w
 ## Mobile device management features
 
 
-Management, inventory, app deployment, provisioning, and retirement are all handled through the [!INCLUDE[!INCLUDE[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administration console. Users gain access to the company portal which allows them to install apps, enroll and remove devices, and helps them contact their IT department or helpdesk.
+Management, inventory, app deployment, provisioning, and retirement are all handled through the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administration console. Users gain access to the company portal which allows them to install apps, enroll and remove devices, and helps them contact their IT department or helpdesk.
 
 **Mobile device management (MDM) capabilities** include the following:
 
