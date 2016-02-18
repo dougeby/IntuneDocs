@@ -1,5 +1,5 @@
 ---
-title: Get started with a paid subscription to Microsoft Intune - Step 1
+title: 1. Sign up or sign in to Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -16,14 +16,17 @@ Before  you either sign up or sign in to Intune, consider:
 
 -   Or if your organization has an Enterprise Agreement or equivalent volume licensing agreement with Microsoft
 
-## Sign up for a NEW account if either of the following is true:
+## When to sign up for a NEW account
+
+Sign up for a new account if either of the following is true:
 
 - **You don’t have a work or school account.** A work or school account is provided when you sign a volume licensing agreement with Microsoft or subscribe to Office 365. If your organization has not signed an Enterprise Agreement or equivalent volume licensing agreement with Microsoft (or has an Office 365 account), then you do not have a Microsoft Online Services account that you can use to sign in to Microsoft Online Services.
 - **You will discard your Intune tenant after completing the 30-day trial.** You should sign up for a new account if you are using your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] free trial subscription for evaluation purposes only, and you plan to redo your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service setup and device provisioning after the trial. This is the recommended option if you plan to use [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] with System Center 2012 Configuration Manager.
 
     If you sign up for a new account, you cannot later use an existing work or school account to manage that account, or combine it with existing volume licensing agreements.
 
-## Sign in with your WORK or SCHOOL account if:
+## When to sign in with your WORK or SCHOOL account
+Sign in with your work or school account if:
 **You have a work or school account provided with a volume licensing agreement or Office 365 subscription, and you are using this trial to evaluate [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].**<br /><br />If you are setting up [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] on an existing account, we recommend that you review [Choose how to manage devices](introduction-to-microsoft-intune.md) before continuing with these steps.
 
 (**Editorial note**:

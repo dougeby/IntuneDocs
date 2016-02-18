@@ -1,16 +1,17 @@
 ---
-title: Get started with a paid subscription to Microsoft Intune - Step 8
+title: 8. Enroll computers in Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
-ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
+ms.assetid:
 author: Staciebarker
 ---
 
-# Step 8: Enroll computers in Intune
+# 8. Enroll computers in Intune
+
 You can install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software on computers in the following ways:
 
 -   Users can use an installer provided by the administrator to manually enroll
@@ -33,21 +34,22 @@ Each enrolled computer is linked to the user account that was used to install th
 
 For this example, you'll use the self-enrollment approach:
 
-1.  In the [Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Company Portal**, and then scroll to the bottom of the screen. Copy the URL shown under **Intune company portal**.
+1.  In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** > **Company Portal**, and then scroll to the bottom of the screen. Copy the URL shown under **Intune company portal**.
 
 2.  Use Internet Explorer to browse to the company portal URL that you acquired in the previous step, and log in with your administrator credentials.
 
-3.  Click **Add Device**.
+3.  Choose **Add Device**.
 
-4.  Click **Download Software** and then click **Run**.
+4.  Choose **Download Software** > **Run**.
 
-5.  Click **Next** to start the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Setup wizard.
+5.  Choose **Next** to start the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Setup wizard.
 
-6.  When the Setup wizard has completed, click **Finish**.
+6.  When the Setup wizard has completed, choose **Finish**.
 
 To learn more about computer management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 To learn more about software management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md).
 
-**Prev** Step 7
+**Prev** Step 7 of 9
+
 **Next** Step 9 of 9
