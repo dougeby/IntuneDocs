@@ -42,6 +42,10 @@ To set up mobile device management with Intune, you must first set the mobile de
 
 To learn more about mobile device management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md).
 
-**Prev** Step 8
 
-**Next** Post-configuration tasks
+### Next steps
+Congratulations! You have just completed the last step of the *Get started with a paid subscription to Microsoft Intune* guide. Now that your initial configuration is complete, you can consider enabling additional MDM functionality.
+
+**Next** [Post configuration tasks]
+
+**Prev** [Enroll computers in Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
