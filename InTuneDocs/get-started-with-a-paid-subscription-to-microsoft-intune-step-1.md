@@ -9,7 +9,7 @@ ms.topic: get-started-article
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 author: Staciebarker
 ---
-test content
+
 # 1. Sign up or sign in to Intune
 Before  you either sign up or sign in to Intune, consider:
 
@@ -29,9 +29,9 @@ Sign up for a new account if either of the following is true:
 ## When to sign in with your WORK or SCHOOL account
 Sign in with your work or school account if:
 
-**You have a work or school account provided with a volume licensing agreement or Office 365 subscription, and you are using this trial to evaluate [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].**
+- **You have a work or school account provided with a volume licensing agreement or Office 365 subscription, and you are using this trial to evaluate [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].**
 
-If you are setting up [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] on an existing account, we recommend that you review [Choose how to manage devices](introduction-to-microsoft-intune.md) before continuing with these steps.
+    If you are setting up [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] on an existing account, we recommend that you review [Choose how to manage devices](introduction-to-microsoft-intune.md) before continuing with these steps.
 
 (**Editorial note**:
 * not sure if the content of Intro to Intune still fits the above recommendation.
