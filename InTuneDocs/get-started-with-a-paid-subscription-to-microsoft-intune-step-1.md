@@ -1,5 +1,5 @@
 ---
-title: 1. Sign up or sign in to Intune
+title: Sign up or sign in to Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,6 +9,7 @@ ms.topic: get-started-article
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 author: Staciebarker
 ---
+test content
 # 1. Sign up or sign in to Intune
 Before  you either sign up or sign in to Intune, consider:
 
@@ -41,6 +42,9 @@ Sign in with your work or school account if:
 
 If  you complete the sign-up process, you're automatically signed in to the [!INCLUDE[wit_icp_1](./includes/wit_icp_1_md.md)] with the tenant administrator account. An email message that contains your account information is also sent to the email address that you provided during sign-up. This email confirms your subscription is active. If you sign in, you're automatically directed to the Intune admin portal.
 
-**Prev** [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune-test.md)
+### Next steps
+Congratulations! You have just completed step 1 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
 **Next** [Configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+
+**Prev** [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune-test.md)
