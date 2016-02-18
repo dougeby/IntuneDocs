@@ -16,9 +16,9 @@ In most scenarios, you will [enroll your Windows device with Intune](http://docs
 
 -   **Windows Firewall policy** - This helps to ensure that no PC used by your company has an inactive or improperly-configured Windows Firewall.
 
--   **Anti-malware protection** - [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] includes Endpoint Protection, which helps protect your PCs from malware.
+-   **Anti-malware protection** - [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] includes Endpoint Protection, which helps protect your PCs from malware.
 
--   **Remote assistance** - [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] allows users to contact IT support staff, who can then provide assistance using a remote desktop feature that is included with [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)].
+-   **Remote assistance** - [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] allows users to contact IT support staff, who can then provide assistance using a remote desktop feature that is included with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
 
 -   **Software license management** - Track how many software licenses are available, and how many available licenses are being used.
 -   **App deployment** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the client software.
@@ -35,7 +35,7 @@ Consider using the Intune computer client when you want to:
 
 ## <a name="BKMK_ClientReqs"></a>Requirements for PC management
 ###**Operating systems**
-[!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] can manage PCs running the following Windows versions (both x86 and x64) with mobile device management:
+[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] can manage PCs running the following Windows versions (both x86 and x64) with mobile device management:
 
 
 -   **Windows Vista** - Business, Enterprise and Ultimate versions.
@@ -49,7 +49,7 @@ Consider using the Intune computer client when you want to:
 -   **Windows 10** - Professional, Enterprise and Education versions.
 
 ###**Minimum hardware requirements for the Intune computer client**:
-The following are minimum hardware requirements for installing the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] client:
+The following are minimum hardware requirements for installing the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client:
 
 |Requirement|More information|
 |---------------|--------------------|
@@ -57,20 +57,17 @@ The following are minimum hardware requirements for installing the [!INCLUDE[wit
 |Processor and Memory|Refer to the processor and RAM requirements for the PC's operating system.|
 |Disk space|200 MB available disk space before the client software is installed.|
 ###**Further requirements**: 
-The following are software requirements for installing the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] client:
+The following are software requirements for installing the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client:
 
 |Requirement|More information|
 |---------------|--------------------|
 |Administrative permissions|The account that installs the client software must have local administrator permissions to that PC.|
 |Windows Installer 3.1|The PC must have, at a minimum, Windows Installer 3.1 installed.|
-|Remove incompatible client software|Before you install the [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)] client software, you must uninstall the following client software from that PC:<br /><br />-   Any version of [!INCLUDE[cm5short](/includes/cm5short_md.md)]<br />-   Any version of [!INCLUDE[sccmshortname](/includes/sccmshortname_md.md)]<br />-   Any version of Microsoft Systems Management Server (SMS)|
+|Remove incompatible client software|Before you install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software, you must uninstall the following client software from that PC:<br /><br />-   Any version of [!INCLUDE[cm5short](/includes/cm5short_md.md)]<br />-   Any version of [!INCLUDE[sccmshortname](./includes/sccmshortname_md.md)]<br />-   Any version of Microsoft Systems Management Server (SMS)|
 
 ##Next steps
 
 Now you've discovered some of the capabilities you can use with the Intune client software, you'll need to learn about how to use this to [manage your PCs](manage-windows-pcs-with-microsoft-intune.md). Once they are managed, you can take advantage of all of the capabilities you've read about in this topic.  
 
 
-### See Also
-
-[Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
