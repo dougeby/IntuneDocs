@@ -95,7 +95,5 @@ However, to use this connector, the following must be true:
 
 -   The user account that you use to install the On-Premises Connector must be a tenant administrator for [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] and be an administrator in the Exchange tenant with a license to use Exchange Server 2013.
 
-## See Also
+### See also
 [What to know before setting up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md)
-[How to buy Intune](http://technet.microsoft.com/library/dn646949.aspx)
-

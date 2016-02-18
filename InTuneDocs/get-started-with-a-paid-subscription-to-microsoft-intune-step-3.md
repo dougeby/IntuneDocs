@@ -9,6 +9,7 @@ ms.topic: get-started-article
 ms.assetid:
 author: Staciebarker
 ---
+
 # 3. Sync Active Directory and add users to Intune
 As mentioned, you can configure directory synchronization to import user accounts from your on-premises Active Directory to Microsoft Azure Active Directory. Additionally, when you activate directory synchronization in your Intune tenant, you are turning on this feature across  all the Microsoft cloud services that you are subscribed to. When you use multiple services with the same Azure AD, the user accounts that you synchronize are available to each cloud-based service that shares your Azure AD. Having your on-premises Active Directory service connected with all of your Azure Active Directory-based services makes managing user identity much simpler. You can also configure single sign-on features to make the authentication experience for your users familiar and easy.
 
