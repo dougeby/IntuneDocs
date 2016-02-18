@@ -51,6 +51,9 @@ When you customize the company portal, the configurations apply to both the comp
 
 After you save your changes, you can use the links provided at the bottom of the **Company Portal** page of the administration console to view the company portal website. These links cannot be changed. When a user signs in, these links display your subscriptions in the company portal.
 
-**Prev** Step 6
+### Next steps
+Congratulations! You have just completed step 7 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
-**Next** Step 8
+**Next** [Enroll computers in Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+
+**Prev** [Create policies and publish an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)

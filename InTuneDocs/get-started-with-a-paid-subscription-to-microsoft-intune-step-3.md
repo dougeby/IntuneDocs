@@ -28,6 +28,9 @@ To learn more about administrator accounts, see [Intune administrator accounts a
 To learn about the benefits of synchronizing user accounts from your local directory to Azure AD, see
             [Similarities between Active Directory and Azure AD](http://technet.microsoft.com/library/dn518177.aspx).
 
-**Prev** Step 2
+### Next steps
+Congratulations! You have just completed step 3 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
-**Next** Step 4
+**Next** [Manage Intune licenses](get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+
+**Prev** [Configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)

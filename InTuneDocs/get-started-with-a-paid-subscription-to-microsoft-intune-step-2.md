@@ -1,5 +1,5 @@
 ---
-title: 2. Configure a custom domain name
+title: Configure a custom domain name
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -24,6 +24,9 @@ When you subscribe to a cloud-based service from Microsoft, your instance of tha
 
 For more information about your Azure AD tenant, see [What is an Azure AD tenant?](http://technet.microsoft.com/library/jj573650.aspx).
 
-**Prev** Step 1
+### Next steps
+Congratulations! You have just completed step 2 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
-**Next** Step 3
+**Next** [Sync Active Directory and add users to Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)
+
+**Prev** [Sign up or sign in to Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
