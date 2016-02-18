@@ -18,7 +18,7 @@ To enable mobile device management (MDM) enrollment you must set the *mobile dev
 ## Set up device management
 After you set the MDM authority, you enable enrollment for the operating systems your organization wants to support. Certain mobile device operating systems (for example Windows and iOS) require a trust relationship between devices and [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to allow management.
 
-Select from the following options to learn more:
+Select from the following device platform options to learn more:
 
 > [AZURE.SELECTOR]
 > 
@@ -32,9 +32,9 @@ Select from the following options to learn more:
 
 
 ## Enroll corporate-owned devices
-Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* account is a special Intune account with permission to enroll more than five devices. 
+Organizations can use Intune to manage large numbers of mobile devices with a single user account called a [device enrollment manager account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). After creating a device enrollment manager account, that account can be used to enroll more than the standard five devices allowed by default to normal users. After creating a device enrollment manager account, you will be ready to 
 
-Select from the following options to learn more:
+Select from the following corporate device enrollment options to learn more:
 
 > [AZURE.SELECTOR]
 > 
@@ -43,8 +43,6 @@ Select from the following options to learn more:
 > [Setup assistant for iOS](https://technet.microsoft.com/library/dn408185.aspx#BKMK_SAE)
 >
 > [Direct enrollment for iOS](https://technet.microsoft.com/library/dn408185.aspx#BKMK_DE)
->
-> [Device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 >
 > [Enroll using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
