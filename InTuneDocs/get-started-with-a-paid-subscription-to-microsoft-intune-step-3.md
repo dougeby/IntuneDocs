@@ -28,4 +28,5 @@ To learn about the benefits of synchronizing user accounts from your local direc
             [Similarities between Active Directory and Azure AD](http://technet.microsoft.com/library/dn518177.aspx).
 
 **Prev** Step 2
+
 **Next** Step 4

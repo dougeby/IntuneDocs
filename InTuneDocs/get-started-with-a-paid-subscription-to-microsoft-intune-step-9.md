@@ -15,7 +15,7 @@ To set up mobile device management with Intune, you must first set the mobile de
 ## Enable device management and enroll devices
 
 1.  **Make Intune your mobile device management authority**
-    In the [Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Mobile Device Management**, and click **Set MDM Authority** under **Tasks**.  Click **Yes** in the MDM Authority dialog box.
+    In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** > **Mobile Device Management**, and then choose **Set MDM Authority** under **Tasks**.  Choose **Yes** in the MDM Authority dialog box.
 
 2.  **Enable MDM for your device platform**
     Enable mobile device management for the device platform you want to manage. Depending on your platform, different requirements are needed:
@@ -34,7 +34,7 @@ To set up mobile device management with Intune, you must first set the mobile de
 
     -   **Windows Phone 8.1**- Users install the **Company Portal** app from Microsoft Corporation available in the Windows Phone store and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
 
-    -   **Windows Phone 8.0**  - Users click **system settings** &gt; **company apps**, and sign in with Intune user credentials added above. The company portal app is deployed to your phone.
+    -   **Windows Phone 8.0**  - Users choose **system settings** &gt; **company apps**, and sign in with Intune user credentials added above. The company portal app is deployed to your phone.
 
     If prompted for a **Server address**, type “manage.microsoft.com”.
 
@@ -43,4 +43,5 @@ To set up mobile device management with Intune, you must first set the mobile de
 To learn more about mobile device management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md).
 
 **Prev** Step 8
+
 **Next** Post-configuration tasks

@@ -1,5 +1,5 @@
 ---
-title: Get started with a paid subscription to Microsoft Intune - Step 1
+title: 1. Sign up or sign in to Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune

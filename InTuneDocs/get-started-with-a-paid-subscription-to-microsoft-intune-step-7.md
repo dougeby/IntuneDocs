@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
-ms.assetid: 
+ms.assetid:
 author: Staciebarker
 ---
 
@@ -36,15 +36,15 @@ When you customize the company portal, the configurations apply to both the comp
 
 |Field name|Maximum character length|More information|
     |----------|------------------------|----------------|
-    |Support website URL|150|If you have a support website that you want your users to use, specify the URL here. The URL must be in the format **https://www.contoso.com**.<br /><br />If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the company portal.|
-    |Website name|40|This name is the friendly name that is displayed for the URL to the support website.<br /><br />If you specify a support website URL and no friendly name, then **Go to IT website** is displayed on the **Contact IT** page in the company portal.|
+    |Support website URL|150|If you have a support website that you want your users to use, specify the URL here. The URL must be in the format **https://www.contoso.com**. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the company portal.|
+    |Website name|40|This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then **Go to IT website** is displayed on the **Contact IT** page in the company portal.|
 
 **Configuration area**: Customization
 
 |Field name|More information|
     |----------|----------------|
     |Theme color|Select a theme color to apply to the company portal.|
-    |Include company logo|When you enable this option, you can upload your company logo to show in your company portal. You can upload two logos: one logo that is displayed when the company portal background is white, and one logo that is displayed when the company portal background uses your selected theme color.<br /><br />Each logo must be a .png or .jpg file type and have a maximum resolution of 400 x 100 pixels and be 750 KB or less in size.|
+    |Include company logo|When you enable this option, you can upload your company logo to show in your company portal. You can upload two logos: one logo that is displayed when the company portal background is white, and one logo that is displayed when the company portal background uses your selected theme color. Each logo must be a .png or .jpg file type and have a maximum resolution of 400 x 100 pixels and be 750 KB or less in size.|
     |Choose a background for [!INCLUDE[win8_client_2](./includes/win8_client_2_md.md)] company portal app|This setting affects the background for the [!INCLUDE[win8_client_2](./includes/win8_client_2_md.md)] company portal app only.|
 
 3.  Choose **Save** to save your changes.

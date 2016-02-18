@@ -6,11 +6,12 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
-ms.assetid: 
+ms.assetid:
 author: Staciebarker
 ---
 
 # 8. Enroll computers in Intune
+
 You can install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software on computers in the following ways:
 
 -   Users can use an installer provided by the administrator to manually enroll

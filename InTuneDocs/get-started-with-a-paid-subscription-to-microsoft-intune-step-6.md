@@ -80,4 +80,5 @@ Your policy appears in the list of configuration policies, and has been deployed
 The Skype app is now available to install on mobile devices from the company portal, but first you need to install [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] software on computers and mobile devices.
 
 **Prev** Step 5
+
 **Next** Step 7

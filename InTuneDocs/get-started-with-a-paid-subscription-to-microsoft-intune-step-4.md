@@ -21,4 +21,5 @@ A user must have a license to your Intune subscription before they can sign in t
 If the option to assign or revoke a license to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] is disabled, your subscription might include volume licensing options, such as the options available when using [Enterprise Mobility Suite](http://www.microsoft.com/server-cloud/products/enterprise-mobility-suite/default.aspx). For information on how to assign or revoke licenses, see the documentation for your licensing options.
 
 **Prev** Step 3
+
 **Next** Step 5
