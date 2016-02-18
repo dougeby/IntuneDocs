@@ -18,21 +18,36 @@ To enable mobile device management (MDM) enrollment you must set the *mobile dev
 ## Set up device management
 After you set the MDM authority, you enable enrollment for the operating systems your organization wants to support. Certain mobile device operating systems (for example Windows and iOS) require a trust relationship between devices and [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to allow management.
 
-**SELECT** the device management set-up scenario you're interested in:
--   [Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
--   [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
-    - Including [company-owned iOS devices](set-up-ios-and-mac-management-with-microsoft-intune.md#BKMK_DEP)
--   [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
--   [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
+Select from the following options to learn more:
+
+> [AZURE.SELECTOR]
+> 
+> -[Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
+>
+> -[Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
+>
+> -[Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
+>
+> -[Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
+
 
 ## Enroll corporate-owned devices
-Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* account is a special Intune account with permission to enroll more than five devices. **SELECT** from the following topics to learn more.
+Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* account is a special Intune account with permission to enroll more than five devices. 
 
-- Device enrollment program for iOS
-- Setup assistant for iOS
-- Direct enrollment for iOS
-- [Device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
-- [Enroll using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+Select from the following options to learn more:
 
-## MDM with Intune and Exchange ActiveSync
-To use [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to directly manage mobile devices, users need to enroll devices into [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. When users are getting corporate email on devices they haven't enrolled in Intune, you can enable Exchange ActiveSync management using the Exchange connector to provide some management for these devices. Exchange devices can be managed in both on-premises servers and for hosted Exchange on Microsoft Office 365 in the cloud. The Exchange connector connects you to your Exchange deployment and lets you manage mobile devices through the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console. See [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
+> [AZURE.SELECTOR]
+> 
+> -[Device enrollment program for iOS](set-up-ios-and-mac-management-with-microsoft-intune.md#BKMK_DEP)
+>
+> -[Setup assistant for iOS](https://technet.microsoft.com/library/dn408185.aspx#BKMK_SAE)
+>
+> -[Direct enrollment for iOS](https://technet.microsoft.com/library/dn408185.aspx#BKMK_DE)
+>
+> -[Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
+>
+> -[Device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+>
+> -[Enroll using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+
+
