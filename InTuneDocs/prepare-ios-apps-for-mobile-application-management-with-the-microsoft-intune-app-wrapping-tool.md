@@ -280,6 +280,6 @@ Use the following security and privacy best practices when you use the app wrapp
 
 -   When users monitor the documents folder on their device from within a wrapped app, they might see a folder named **.msftintuneapplauncher**. If this folder is changed or deleted, this might affect the correct functioning of restricted apps.
 
-## See Also
+### See also
 [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 

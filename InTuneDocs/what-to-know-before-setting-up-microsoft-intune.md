@@ -10,10 +10,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 author: Staciebarker
 ---
 # What to know before you set up Microsoft Intune
-Before you set up [!INCLUDE[wit_firstref](/includes/wit_firstref_md.md)], you might want to review [Choose how to manage devices with Microsoft Intune](introduction-to-microsoft-intune.md). After you are familiar with the capabilities of [!INCLUDE[wit_nextref](/includes/wit_nextref_md.md)], you should be ready to set up your subscription. If you start with a trial subscription, at a later time you can convert it to a full subscription. To convert a trial subscription, see [How to buy Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx).
+Before you set up [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], you might want to review [Choose how to manage devices with Microsoft Intune](introduction-to-microsoft-intune.md). After you are familiar with the capabilities of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you should be ready to set up your subscription. If you start with a trial subscription, at a later time you can convert it to a full subscription. To convert a trial subscription, see [How to buy Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx).
 Before you set up Intune, you need to know about:
 
-- [Microsoft Intune supported web browsers](supported-web-browsers.md)
+- [General capabilities of Intune](#BKMK_general_capabilities)
+- [Intune supported web browsers](supported-web-browsers.md)
 - [Network infrastructure requirements for Microsoft Intune](network-infrastructure-requirements-for-microsoft-intune.md)
 - [Administrative accounts, websites, and permissions in Microsoft Intune](administrative-accounts-websites-perms.md)
 - [Microsoft Intune Company Portal](microsoft-intune-company-portal.md)
@@ -22,7 +23,7 @@ Before you set up Intune, you need to know about:
 - [Domain names for Microsoft Intune](domain-names-for-intune.md)
 
 
-The general capabilities of Intune are:
+<a name="BKMK_general_capabilities"></a>The general capabilities of Intune are:
 
 -   **Manage mobile devices and computers, no servers or intranet required.** You can manage mobile devices and computers, even if those devices are not joined to a domain or brought on-site. This makes [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] ideal for a company with a mobile or geographically-distributed workforce.
 

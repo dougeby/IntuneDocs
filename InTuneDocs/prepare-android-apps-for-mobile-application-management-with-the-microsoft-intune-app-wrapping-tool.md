@@ -158,9 +158,7 @@ Keep the following points in mind as you wrap your app:
 
 -   Double login prompts are prevented if you provide your client application’s Client ID and Authority URI. You need to register the Client ID to enable it to access the published [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] MAM resource ID in the AAD Dashboard. If you don't register the Client ID, users get a login failure when the app runs.
 
-## Next Steps
-To learn more about how to deploy your wrapped apps, see [Deploy apps to mobile devices in Microsoft Intune - deleted](deploy-apps-to-mobile-devices-in-microsoft-intune---deleted.md).
 
-## See Also
-[Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
+### See also
+[Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)[Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 

@@ -330,6 +330,6 @@ You can convert your free Intune trial to a paid subscription in the following w
 
 -   **Online subscription program** (&lt;250 users) - [Online Services volume licensing](http://www.microsoft.com/licensing/online-services/default.aspx) program is designed specifically for organizations with less than 250 users. Use this program to subscribe, manage, and deploy your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] services.
 
-### See Also
+### See also
 [Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md)
 

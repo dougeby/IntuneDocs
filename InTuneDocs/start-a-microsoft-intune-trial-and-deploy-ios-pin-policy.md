@@ -12,17 +12,7 @@ author: Staciebarker
 # Start a Microsoft Intune trial and deploy iOS PIN policy
 These step-by-step instructions help you set up an Intune trial and configure a PIN policy for iOS devices. For a list of other common Intune evaluation tasks  that you can try, see [Common Microsoft Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md).
 
-These instructions explain:
 
--   [Review prerequisites for this task](#BKMK_30day_review_prereqs)
-
--   [Create a free Intune trial account](#BKMK_30day_create_trial_acct)
-
--   [Create a test user](#BKMK_30day_create_test_user)
-
--   [Configure an iOS PIN policy for the test user](#BKMK_30day_cfg_ios_pin_pol)
-
--   [Validate that the policy is enforced on an iOS device](#BKMK_30day_validate_pol)
 
 ## <a name="BKMK_30day_review_prereqs"></a>Review prerequisites for this task
 
