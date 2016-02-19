@@ -1,5 +1,5 @@
 ---
-title: 5. Create groups to organize users and devices
+title: Create groups to organize users and devices
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune

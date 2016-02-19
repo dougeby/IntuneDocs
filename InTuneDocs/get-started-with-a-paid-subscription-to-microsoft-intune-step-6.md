@@ -1,5 +1,5 @@
 ---
-title: 6. Create policies and publish an app
+title: Create policies and publish an app
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune

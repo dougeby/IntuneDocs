@@ -1,5 +1,5 @@
 ---
-title: 7. Customize the company portal
+title: Customize the company portal
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
