@@ -1,5 +1,5 @@
 ---
-title: 8. Enroll computers in Intune
+title: Enroll computers in Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -49,10 +49,6 @@ For this example, you'll use the self-enrollment approach:
 To learn more about computer management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 To learn more about software management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md).
-
-**Prev** Step 7 of 9
-
-**Next** Step 9 of 9
 
 ### Next steps
 Congratulations! You have just completed step 8 of the *Get started with a paid subscription to Microsoft Intune* guide.

@@ -70,4 +70,5 @@ Ready to get started? You'll need the following when starting your paid subscrip
 
 ### Next steps
 Ready to get started?
+
 **Next** [Sign up or sign in to Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)

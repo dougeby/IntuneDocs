@@ -1,5 +1,5 @@
 ---
-title: 9. Enroll mobile devices and install an app
+title: Enroll mobile devices and install an app
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -46,6 +46,6 @@ To learn more about mobile device management using [!INCLUDE[wit_nextref](./incl
 ### Next steps
 Congratulations! You have just completed the last step of the *Get started with a paid subscription to Microsoft Intune* guide. Now that your initial configuration is complete, you can consider enabling additional MDM functionality.
 
-**Next** [Post configuration tasks]
+**Next** [Post configuration tasks](post-configuration-tasks.md)
 
 **Prev** [Enroll computers in Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)

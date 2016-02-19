@@ -1,5 +1,5 @@
 ---
-title: 4. Manage Intune licenses
+title: Manage Intune licenses
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
