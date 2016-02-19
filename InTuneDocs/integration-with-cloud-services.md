@@ -11,7 +11,18 @@ author: Staciebarker
 ---
 # Intune integration with Microsoft cloud services and products
 
+Before you set up [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], review this topic and the information in the list below. You might also want to review [Choose how to manage devices with Microsoft Intune](introduction-to-microsoft-intune.md). After you are familiar with the capabilities of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you should be ready to set up your subscription. If you start with a trial subscription, you can convert it later to a full subscription (see [How to buy Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx)).
+
+- [General capabilities of Intune](what-to-know-before-setting-up-microsoft-intune.md#BKMK_general_capabilities)
+- [Intune supported web browsers](supported-web-browsers.md)
+- [Network infrastructure requirements for Microsoft Intune](network-infrastructure-requirements-for-microsoft-intune.md)
+- [Administrative accounts, websites, and permissions in Microsoft Intune](administrative-accounts-websites-perms.md)
+- [Microsoft Intune Company Portal](microsoft-intune-company-portal.md)
+- [Intune network bandwidth use](network-bandwidth-use.md)
+- [Domain names for Microsoft Intune](domain-names-for-intune.md)
+
 ##Integration with other Microsoft cloud services
+
 
 [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] shares a common foundation with other Microsoft cloud services. When you use the same account to subscribe to multiple cloud services, those services use the same Microsoft Azure AD infrastructure, and they are tenants of Azure AD. Azure AD provides the core directory and identity management capabilities for Microsoft cloud services.
 

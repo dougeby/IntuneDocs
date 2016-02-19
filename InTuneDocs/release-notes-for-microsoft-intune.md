@@ -73,6 +73,6 @@ The following are known issues with alerts in this release of [!INCLUDE[wit_next
 
 **Workaround:** To make sure that recipients will receive message notification, you should manually add recipients to alert notifications.
 
-## See Also
-[Technical reference for Microsoft Intune](technical-reference-for-microsoft-intune.md)
+### See also
+[What's new in Microsoft Intune](what-s-new-in-microsoft-intune.md)
 
