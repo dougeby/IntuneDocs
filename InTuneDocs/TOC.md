@@ -4,7 +4,7 @@
 ## [What to know before you set up Intune](What-to-know-before-setting-up-microsoft-intune.md)
 ## [Mobile device management capabilities](Mobile-device-management-capabilities-in-microsoft-intune.md)
 ## [Windows PC management capabilities](Windows-PC-management-capabilities-in-microsoft-intune.md)
-## [Service Description](microsoft-intune-service-description.md)
+## [Service description](microsoft-intune-service-description.md)
 ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)
 
 # Get started
@@ -15,9 +15,9 @@
 
 ## [Get ready to enroll devices](get-ready-to-enroll-devices-in-microsoft-intune.md)
 ### [Set MDM authority and configure Intune](Set-mobile-device-management-authority-and-configure-microsoft-intune.md)
-## [Mobile device management with Exchange ActiveSync and Microsoft Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
+## [MDM with Exchange ActiveSync & Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
 ## [Common Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)
-### [Start a trial and deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
+### [Start a trial & deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
 
 # Plan & Design
 
@@ -34,14 +34,14 @@
 ### Create a compliance policy
 ### Deploy & monitor a compliance policy
 ## [Manage settings and features on your devices with policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-## [Manage Windows PCs](manage-windows-pcs-with-microsoft-intune.md)
-### [Install the Windows PC client](install-the-windows-pc-client-with-microsoft-intune.md)
-### [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
-### [Keep Windows PCs up to date with software updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
-### [Help protect Windows PCs using Windows Firewall policies](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
-### [Help secure Windows PCs with Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
-### [Common Windows PC management tasks with the Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-### [Manage license agreements for Windows PC software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
+## [Manage PCs](manage-windows-pcs-with-microsoft-intune.md)
+### [Install the PC client](install-the-windows-pc-client-with-microsoft-intune.md)
+### [Resolve GPO and Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [Keep PCs up to date with software updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
+### [Help protect PCs using Windows Firewall policies](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
+### [Help secure PCs with Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
+### [Common PC management tasks with the Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+### [Manage license agreements for PC software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Enable access to company resources](enable-access-to-company-resources-with-microsoft-intune.md)
 ### [Enable access to company resources using certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md)
 ### [Help users connect to company networks using Wi-Fi profiles](help-users-connect-to-company-networks-using-wi-fi-profiles-with-microsoft-intune.md)
@@ -49,15 +49,15 @@
 ### [Configure access to corporate email using email profiles](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 
 
-## [Deploy and configure apps](deploy-and-configure-apps-with-microsoft-intune.md)
-### [Deploy apps to mobile devces](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
-### [Deploy apps to Windows PCs](deploy-apps-to-windows-pcs-in-microsoft-intune.md)
+## [Deploy & configure apps](deploy-and-configure-apps-with-microsoft-intune.md)
+### [Deploy apps to mobile devices](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
+### [Deploy apps to PCs](deploy-apps-to-windows-pcs-in-microsoft-intune.md)
 ### [Update apps ](Update-apps-using-microsoft-intune.md)
 ### [Retire apps ](Retire-apps-using-microsoft-intune.md)
-### [Manage apps you purchased through a volume-purchase program](manage-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
+### [Manage apps purchased through a volume-purchase program](manage-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 ### [Configure apps with mobile app configuration policies](configure-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
 
-## [Protect data and devices](Protect-data-and-devices-with-microsoft-intune.md)
+## [Protect data & devices](Protect-data-and-devices-with-microsoft-intune.md)
 ### [Network infrastructure requirements](Network-infrastructure-requirements-for-microsoft-intune.md)
 ### [Set up email access for iOS devices](Set-up-email-access-for-iOS-devices-using-microsoft-intune.md)
 ### [Specify corporate-owned devices with international mobile equipment identity (IMEI) numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
