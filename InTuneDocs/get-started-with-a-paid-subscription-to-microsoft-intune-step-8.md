@@ -50,7 +50,7 @@ To learn more about computer management using [!INCLUDE[wit_nextref](./includes/
 
 To learn more about software management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md).
 
-### Next steps
+## Next steps
 Congratulations! You have just completed step 8 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
 **Next** [Enroll mobile devices and install an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)

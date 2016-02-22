@@ -45,7 +45,7 @@ Sign in with your work or school account if:
 
 If  you complete the sign-up process, you're automatically signed in to the [!INCLUDE[wit_icp_1](./includes/wit_icp_1_md.md)] with the tenant administrator account. An email message that contains your account information is also sent to the email address that you provided during sign-up. This email confirms your subscription is active. If you sign in, you're automatically directed to the Intune admin portal.
 
-### Next steps
+## Next steps
 Congratulations! You have just completed step 1 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
 **Next** [Configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)

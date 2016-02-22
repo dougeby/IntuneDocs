@@ -47,7 +47,7 @@ You can find the newly created group in the **Groups** list, in the **Groups** w
 
 To learn more about using groups, see [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
-### Next steps
+## Next steps
 Congratulations! You have just completed step 5 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
 **Next** [Create policies and publish an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)

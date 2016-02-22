@@ -80,7 +80,7 @@ Your policy appears in the list of configuration policies, and has been deployed
 The Skype app is now available to install on mobile devices from the company portal, but first you need to install [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] software on computers and mobile devices.
 
 
-### Next steps
+## Next steps
 Congratulations! You have just completed step 6 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
 **Next** [Customize the company portal](get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)
