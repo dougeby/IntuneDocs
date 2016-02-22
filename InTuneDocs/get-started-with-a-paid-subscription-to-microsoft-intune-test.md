@@ -70,7 +70,7 @@ Ready to get started? You'll need the following when starting your paid subscrip
 
         Get an Apple Push Notification service certificate.|Request an Apple Push Notification service certificate from Apple, as described in [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
-### Next steps
+## Next steps
 Ready to get started?
 
 **Next** [Sign up or sign in to Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)

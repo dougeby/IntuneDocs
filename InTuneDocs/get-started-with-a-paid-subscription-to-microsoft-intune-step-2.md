@@ -29,7 +29,7 @@ When you subscribe to a cloud-based service from Microsoft, your instance of tha
 
 For more information about your Azure AD tenant, see [What is an Azure AD tenant?](http://technet.microsoft.com/library/jj573650.aspx).
 
-### Next steps
+## Next steps
 Congratulations! You have just completed step 2 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
 **Next** [Sync Active Directory and add users to Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)
