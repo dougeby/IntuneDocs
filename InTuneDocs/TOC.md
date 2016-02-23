@@ -1,6 +1,6 @@
 # Understand & Explore
 
-## [Different ways to do enterprise mobility](Ways-to-do-enterprise-mobility.md)
+## [Ways to do enterprise mobility](Ways-to-do-enterprise-mobility.md)
 ## [Introduction to Intune](introduction-to-microsoft-intune.md)
 ## [Common Intune usage scenarios](introduction-to-microsoft-intune.md)
 ## [What to know before you start](What-to-know-before-setting-up-microsoft-intune.md)
@@ -59,7 +59,6 @@
 ### [Configure apps with mobile app configuration policies](configure-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
 
 ## [Protect data & devices](Protect-data-and-devices-with-microsoft-intune.md)
-### [Network infrastructure requirements](Network-infrastructure-requirements-for-microsoft-intune.md)
 ### [Set up email access for iOS devices](Set-up-email-access-for-iOS-devices-using-microsoft-intune.md)
 ### [Specify corporate-owned devices with international mobile equipment identity (IMEI) numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
