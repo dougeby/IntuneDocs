@@ -13,7 +13,7 @@ author: Staciebarker
 You can enable your apps to use mobile application management policies by using either the Intune App Wrapping Tool or the Intune App SDK. Use this information to learn about these two methods and when to use them.
 
 ## Intune App Wrapping Tool
-The App Wrapping Tool is used primarily for internal line-of-business (LOB) apps. The tool is a command line application that creates a wrapper around the app, which then allows the app to be managed by an Intune mobile application management policy. You don't need the source code to use the tool, but you do need signing credentials.  For more about signing credentials, see the [Intune blog](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx). For the App Wrapping Tool documentation, see [Android App Wrapping Tool ](https://technet.microsoft.com/library/mt147413.aspx) and [iOS App Wrapping Tool](https://technet.microsoft.com/library/dn878028.aspx).
+The App Wrapping Tool is used primarily for internal line-of-business (LOB) apps. The tool is a command line application that creates a wrapper around the app, which then allows the app to be managed by an Intune mobile application management policy. You don't need the source code to use the tool, but you do need signing credentials.  For more about signing credentials, see the [Intune blog](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx). For the App Wrapping Tool documentation, see [Android App Wrapping Tool ](prepare-android-apps-for-mobile-app-management.md) and [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
 The App Wrapping Tool does not support Apps in the App or Play Store or features that require development time integration (see the following feature comparison table).
 
@@ -51,3 +51,8 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Selective Wipe <br></br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
 |Prevent “Save as” |X||
 |Support for Multi-Identity|X||
+
+### See also
+[Android app wrapping tool](prepare-android-apps-for-mobile-app-management.md)</br>
+[iOS app wrapping tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
+[Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)

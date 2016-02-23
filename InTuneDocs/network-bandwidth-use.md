@@ -80,10 +80,8 @@ To use BranchCache, the client computer must have BranchCache enabled, and then 
 
 By default, BranchCache and distributed cache mode are enabled on a computer when the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client is installed. However, if the client already has Group Policy that disables BranchCache, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] does not override that policy and BranchCache will remains disabled on that computer.
 
-If you use BranchCache, you should communicate with other administrators in your organization who manage Group Policy and [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Firewall policy to ensure they do not deploy policy that disables BranchCache or Firewall exceptions.
-
-Learn more: [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx).
+If you use BranchCache, you should communicate with other administrators in your organization who manage Group Policy and [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Firewall policy to ensure they do not deploy policy that disables BranchCache or Firewall exceptions. For more about BranchCache, see [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx).
 
 ### See also
-[What to know before you set up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md)</br>
+[What to know before you start](what-to-know-before-setting-up-microsoft-intune.md)</br>
 [Network infrastructure requirements for Microsoft Intune](network-infrastructure-requirements-for-microsoft-intune.md)

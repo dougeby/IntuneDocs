@@ -71,7 +71,7 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://ww
 
     If an error occurs, see [Error messages](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#BKMK_Error) for help.
 
-3.  The wrapped app is saved in the output folder you specified previously. You can now upload the app into [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] and associate it with a mobile application management policy. To learn more, see [Deploy apps to mobile devices in Microsoft Intune - deleted](deploy-apps-to-mobile-devices-in-microsoft-intune---deleted.md).
+3.  The wrapped app is saved in the output folder you specified previously. You can now upload the app into [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] and associate it with a mobile application management policy.
 
     > [!IMPORTANT]
     > You must upload the app as a new app. You cannot update an older, unwrapped version of the app.
@@ -281,5 +281,8 @@ Use the following security and privacy best practices when you use the app wrapp
 -   When users monitor the documents folder on their device from within a wrapped app, they might see a folder named **.msftintuneapplauncher**. If this folder is changed or deleted, this might affect the correct functioning of restricted apps.
 
 ### See also
-[Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
+[Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)</br>
+[Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
+[Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
+
 
