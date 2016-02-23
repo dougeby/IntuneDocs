@@ -29,6 +29,6 @@ Before you set up [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], revie
 |Company Portal website     |**On mobile devices:** use the default web browser for each supported platform   <br /><br />**On Windows PCs:** Internet Explorer 10 or later, or Microsoft Edge<br /><br />**On Mac OS X 10.9 or later:** Apple Safari    |
 
 ### See also
-[What to know before you set up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md)</br>
+[What to know before you start](what-to-know-before-setting-up-microsoft-intune.md)</br>
 [Network infrastructure requirements for Microsoft Intune](network-infrastructure-requirements-for-microsoft-intune.md)
 

@@ -38,4 +38,4 @@ When you use [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] with [!INCLUD
 For more information, see [Manage Mobile Devices with Configuration Manager and Microsoft Intune](http://msdn.microsoft.com/library/2c6bd0e5-d436-41c8-bf38-30152d76be10) in the [!INCLUDE[cm5short](./includes/cm5short_md.md)] SP1 documentation.
 
 ### See also
-[What to know before you set up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md)
+[What to know before you start](what-to-know-before-setting-up-microsoft-intune.md)
