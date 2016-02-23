@@ -10,7 +10,7 @@
 	path = InTuneDocs/GetStarted/_themes
 	url = https://github.com/Microsoft/templates.docs.msft
 	branch = master
-[submodule "ThemeIntuneTroubleShoot"]
+[submodule "ThemeIntuneTroubleshoot"]
 	path = InTuneDocs/Troubleshoot/_themes
 	url = https://github.com/Microsoft/templates.docs.msft
 	branch = master
