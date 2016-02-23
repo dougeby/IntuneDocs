@@ -1,5 +1,5 @@
 ---
-title: Choose how to manage devices with Microsoft Intune
+title: Introduction to Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -8,9 +8,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 author: Lindavr
-robots: noindex,nofollow
 ---
-# Choose how to manage devices with Microsoft Intune
+# Introduction to Intune
 
 Mobile device management (MDM) and Windows PC management are the cornerstone of  the modern IT department. Today workers, staff and students are more mobile and engaged than ever. Your success depends upon delivering information where it's needed while ensuring that information is protected. You need to deploy apps, protect devices, ensure updates are in place, and provision email faster than ever while defending company information.
 
@@ -22,6 +21,3 @@ You can install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client
 
 ## App management
 You can also use Intune to [deploy and manage apps](deploy-and-configure-apps-with-microsoft-intune.md). App management helps you protect data from being shared outside of your business by restricting actions such as copy, cut, paste, and save-as between Intune-managed apps and personal apps. This data protection is built directly into many Microsoft mobile apps but you can [extend data protection to your existing line-of-business apps with the Intune App Wrapping Tool](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md). You can also establish secure content viewing with the [Intune Managed Browser](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md). To further protect corporate information, you can [selectively wipe managed apps and related data](retire-data-and-devices-from-microsoft-intune-management.md) on devices that are unenrolled, no longer compliant, or lost, stolen, or retired from use.
-
-### Next steps
-* [What to know before you set up Intune](what-to-know-before-setting-up-microsoft-intune.md)
