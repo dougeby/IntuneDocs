@@ -2,23 +2,3 @@
 	path = InTuneDocs/_themes
 	url = https://github.com/JialinXin/DocsThemes
 	branch = master
-[submodule "ThemeIntuneUnderstand"]
-	path = InTuneDocs/Understand/_themes
-	url = https://github.com/Microsoft/templates.docs.msft
-	branch = master
-[submodule "ThemeIntuneGetStarted"]
-	path = InTuneDocs/GetStarted/_themes
-	url = https://github.com/Microsoft/templates.docs.msft
-	branch = master
-[submodule "ThemeIntuneTroubleShoot"]
-	path = InTuneDocs/Troubleshoot/_themes
-	url = https://github.com/Microsoft/templates.docs.msft
-	branch = master
-[submodule "ThemeIntunePlanDesign"]
-	path = InTuneDocs/PlanDesign/_themes
-	url = https://github.com/Microsoft/templates.docs.msft
-	branch = master
-[submodule "ThemeIntuneDeployUse"]
-	path = InTuneDocs/DeployUse/_themes
-	url = https://github.com/Microsoft/templates.docs.msft
-	branch = master
