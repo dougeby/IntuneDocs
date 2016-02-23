@@ -1,10 +1,12 @@
 # Understand & Explore
 
 ## [Different ways to do enterprise mobility](Ways-to-do-enterprise-mobility.md)
-## [What to know before you set up Intune](What-to-know-before-setting-up-microsoft-intune.md)
-## [Mobile device management capabilities](Mobile-device-management-capabilities-in-microsoft-intune.md)
-## [Windows PC management capabilities](Windows-PC-management-capabilities-in-microsoft-intune.md)
-## [Service description](microsoft-intune-service-description.md)
+## [Introduction to Intune](introduction-to-microsoft-intune.md)
+## [Common Intune usage scenarios](introduction-to-microsoft-intune.md)
+## [What to know before you start](What-to-know-before-setting-up-microsoft-intune.md)
+## [Choose how to manage devices](introduction-to-microsoft-intune.md)
+### [Mobile device management capabilities](Mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Windows PC management capabilities](Windows-PC-management-capabilities-in-microsoft-intune.md)
 ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)
 
 # Get started
@@ -12,7 +14,6 @@
 ## [What's new](What-s-new-in-microsoft-intune.md)
 ## [Get started with a 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ## [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune-test.md)
-
 ## [Get ready to enroll devices](get-ready-to-enroll-devices-in-microsoft-intune.md)
 ### [Set MDM authority and configure Intune](Set-mobile-device-management-authority-and-configure-microsoft-intune.md)
 ## [MDM with Exchange ActiveSync & Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
