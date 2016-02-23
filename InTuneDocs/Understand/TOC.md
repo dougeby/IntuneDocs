@@ -1,2 +1,2 @@
-#Sample ()
+#Sample
 ## [Sample](Sample.md)
