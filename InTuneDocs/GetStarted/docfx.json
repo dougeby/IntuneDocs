@@ -6,12 +6,7 @@
           "**/*.md"
         ],
         "exclude": [
-          "**/obj/**",
-          "Understand/**",
-          "GetStarted/**",
-          "DeployUser/**",
-          "PlanDesign/**",
-          "Troubleshoot/**"      
+          "**/obj/**"
         ]
       }
     ],
@@ -29,16 +24,11 @@
           ],
         "exclude": [
           "**/obj/**",
-          "_themes/DocPacker/**",
-          "Understand/**",
-          "GetStarted/**",
-          "DeployUser/**",
-          "PlanDesign/**",
-          "Troubleshoot/**"   
+          "_themes/DocPacker/**"
         ]
       }
     ],
-    "dest": "InTuneDocs",
+    "dest": "InTuneDocs/GetStarted",
     "template": "docs.html",
     "globalMetadata": {
       "layout": "Conceptual",
@@ -50,5 +40,5 @@
     "theme": "hyde",
     "dest": "_output"
   },
-  "basepath": "/InTune"
+  "basepath": "/InTune/GetStarted"
 }

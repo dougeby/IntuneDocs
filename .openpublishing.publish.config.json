@@ -21,8 +21,48 @@
             "type_mapping": {
                 "Conceptual": "Content"
             }
+        },
+                {
+            "docset_name": "IntGetStarted",
+            "build_output_subfolder": "InTuneDocs/GetStarted",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+                {
+            "docset_name": "IntPlanDesign",
+            "build_output_subfolder": "InTuneDocs/PlanDesign",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+                {
+            "docset_name": "IntDeployUse",
+            "build_output_subfolder": "InTuneDocs/DeployUse",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+                        {
+            "docset_name": "IntTroubleshoot",
+            "build_output_subfolder": "InTuneDocs/Troubleshoot",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
         }
     ],
-    "notification_subscribers": [""],
+    "notification_subscribers": ["OPBuild@microsoft.com"],
     "branches_to_filter": ["live"]
 }
