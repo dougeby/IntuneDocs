@@ -24,7 +24,8 @@
           ],
         "exclude": [
           "**/obj/**",
-          "_themes/DocPacker/**"
+          "_themes/DocPacker/**",
+          "Understand/**"
         ]
       }
     ],
