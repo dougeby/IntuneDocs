@@ -2,3 +2,7 @@
 	path = InTuneDocs/_themes
 	url = https://github.com/JialinXin/DocsThemes
 	branch = master
+[submodule "ThemeIntuneUnderstand"]
+	path = InTuneDocs/Understand/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
