@@ -22,16 +22,7 @@ In most scenarios, you will [enroll your Windows device with Intune](http://docs
 
 -   **Software license management** - Track how many software licenses are available, and how many available licenses are being used.
 -   **App deployment** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the client software.
-## When to use the computer client
-Consider using the Intune computer client when you want to:
-<ul>
-<li>Use any of the capabilities above to manage your Windows PCs.</li>
-<li>Manage a Windows PC that runs an operating system that is not supported for enrollment</li>
 
-
-
-
-</ol>
 
 ## <a name="BKMK_ClientReqs"></a>Requirements for PC management
 ###**Operating systems**
@@ -64,10 +55,3 @@ The following are software requirements for installing the [!INCLUDE[wit_nextref
 |Administrative permissions|The account that installs the client software must have local administrator permissions to that PC.|
 |Windows Installer 3.1|The PC must have, at a minimum, Windows Installer 3.1 installed.|
 |Remove incompatible client software|Before you install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software, you must uninstall the following client software from that PC:<br /><br />-   Any version of [!INCLUDE[cm5short](./includes/cm5short_md.md)]<br />-   Any version of [!INCLUDE[sccmshortname](./includes/sccmshortname_md.md)]<br />-   Any version of Microsoft Systems Management Server (SMS)|
-
-##Next steps
-
-Now you've discovered some of the capabilities you can use with the Intune client software, you'll need to learn about how to use this to [manage your PCs](manage-windows-pcs-with-microsoft-intune.md). Once they are managed, you can take advantage of all of the capabilities you've read about in this topic.  
-
-
-
