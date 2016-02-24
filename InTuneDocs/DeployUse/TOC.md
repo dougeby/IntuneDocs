@@ -41,7 +41,7 @@
 #### [Monitor mobile app management policies](Monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### [Microsoft apps you can use with Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md)
-### [Manage Internet access using managed browser policies](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md)
+### [Manage Internet access using managed browser policies](manage-internet-access-using-managed-browser-policies.md)
 ### [Decide how to prepare apps for mobile application management](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
