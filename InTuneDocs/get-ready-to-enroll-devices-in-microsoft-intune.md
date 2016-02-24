@@ -30,6 +30,11 @@ Select from the following device platform options to learn more:
 >
 > [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
 
+> [!div class="op_single_selector"]
+- [Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
+- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
 
 ## Enroll corporate-owned devices
 Organizations can use Intune to manage large numbers of mobile devices with a single user account called a [device enrollment manager account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). After creating a device enrollment manager account, that account can be used to enroll more than the standard five devices allowed by default to normal users. After creating a device enrollment manager account, you will be ready to 
@@ -47,3 +52,8 @@ Select from the following corporate device enrollment options to learn more:
 > [Enroll using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
 
+> [!div class="op_single_selector"]
+- [Device enrollment program for iOS](set-up-ios-and-mac-management-with-microsoft-intune.md#BKMK_DEP)
+- [Setup assistant for iOS](https://technet.microsoft.com/library/dn408185.aspx#BKMK_SAE)
+- [Direct enrollment for iOS](https://technet.microsoft.com/library/dn408185.aspx#BKMK_DE)
+- [Enroll using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
