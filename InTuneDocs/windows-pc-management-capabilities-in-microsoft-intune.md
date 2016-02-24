@@ -24,8 +24,7 @@ In most scenarios, you will [enroll your Windows device with Intune](http://docs
 -   **App deployment** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the client software.
 
 
-## <a name="BKMK_ClientReqs"></a>Requirements for PC management
-###**Operating systems**
+## Operating system requirements
 [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] can manage PCs running the following Windows versions (both x86 and x64) with mobile device management:
 
 
@@ -39,7 +38,7 @@ In most scenarios, you will [enroll your Windows device with Intune](http://docs
 
 -   **Windows 10** - Professional, Enterprise and Education versions.
 
-###**Minimum hardware requirements for the Intune computer client**:
+## Minimum hardware requirements
 The following are minimum hardware requirements for installing the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client:
 
 |Requirement|More information|
@@ -47,7 +46,8 @@ The following are minimum hardware requirements for installing the [!INCLUDE[wit
 |Network|The client requires the PC to have Internet connectivity.|
 |Processor and Memory|Refer to the processor and RAM requirements for the PC's operating system.|
 |Disk space|200 MB available disk space before the client software is installed.|
-###**Further requirements**: 
+
+## Further requirements 
 The following are software requirements for installing the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client:
 
 |Requirement|More information|

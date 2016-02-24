@@ -10,15 +10,14 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 author: robstackmsft
 ---
 
-## Mobile device management capabilities
 [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] lets you manage a range of devices by *enrolling* them into the service. Users can then use a *company portal* to perform a range of operations such as enrolling their device, browsing and installing apps, making sure their device is compliant with company policies, and contacting their IT support.
 See later in this topic for a full list of the capabilities that enrolling devices gives you.
 
 Management, inventory, app deployment, provisioning, and retirement are all handled through the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administration console. Users gain access to the company portal which allows them to install apps, enroll and remove devices, and helps them contact their IT department or helpdesk.
 
-**Mobile device management (MDM) capabilities** include the following:
 
-### Device security and configuration
+
+## Device security and configuration
 
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
@@ -26,7 +25,7 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 |Remote Wipe, Remote Lock, and Passcode Reset|Erase sensitive data when a device is lost or stolen. For example, you can remotely lock the device, restore it to factory settings, or wipe only corporate data.<br>You can reset passcodes if users lose access to their device, lock missing or stolen devices, or even wipe data off of missing or stolen devices.|[Help protect your data with remote wipe, remote lock, or passcode reset using Microsoft Intune](help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-microsoft-intune.md)|
 |Kiosk mode|Lets you lock down certain features of mobile devices such as screen capture and the power switch. Also lets you restrict devices to run a single app that you specify.|[iOS configuration policy settings in Microsoft Intune](ios-configuration-policy-settings-in-microsoft-intune.md)|
 
-### App management
+## App management
 
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
@@ -37,7 +36,7 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 |Managed browser|After you deploy the managed browser to your users, you can configure a managed browser policy to control the websites that they can visit. In addition, you can also apply mobile application management policies to the managed browser.|[Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md)|
 |Microsoft Passport|Intune lets you integrate with Microsoft Passport for Work which is an alternative sign-in method for Windows 10 that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.|[Control Microsoft Passport settings on devices with Microsoft Intune](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)|
 
-### Company resource access
+## Company resource access
 
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
@@ -47,7 +46,7 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 |VPN profiles|Deploy VPN settings to users and devices in your organization. By deploying these settings, you minimize the end-user effort required to connect to resources on the company network.|[Help users connect to their work using VPN profiles with Microsoft Intune](help-users-connect-to-their-work-using-vpn-profiles-with-microsoft-intune.md)|
 |Conditional access policies|Manage access to Microsoft Exchange email and SharePoint Online from devices that are not managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].|[Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-sharepoint-with-microsoft-intune.md)|
 
-### Inventory and reporting
+## Inventory and reporting
 
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
