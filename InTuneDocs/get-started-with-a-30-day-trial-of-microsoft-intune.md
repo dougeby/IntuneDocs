@@ -44,7 +44,7 @@ Before  you sign up or sign in to Intune,  you should consider the following:
 
 |Sign up for a NEW account if either of the following is true:|Sign in with your WORK or SCHOOL account if:|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**You don’t have a work or school account.** A work or school account is provided when you sign a volume licensing agreement with Microsoft or subscribe to Office 365. If your organization has not signed an Enterprise Agreement or equivalent volume licensing agreement with Microsoft (or has an Office 365 account), then you do not have a Microsoft Online Services account that you can use to sign in to Microsoft Online Services.<br /><br />**You will discard your Intune tenant after completing the 30-day trial.** You should sign up for a new account if you are using your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] free trial subscription for evaluation purposes only, and you plan to redo your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service setup and device provisioning after the trial. This is the recommended option if you plan to use [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] with System Center 2012 Configuration Manager.<br /><br />If you sign up for a new account, you cannot later use an existing work or school account to manage that account, or combine it with existing volume licensing agreements.|**You have a work or school account provided with a volume licensing agreement or Office 365 subscription, and you are using this trial to evaluate [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].**<br /><br />If you are setting up [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] on an existing account, we recommend that you review [Introduction to Microsoft Intune](introduction-to-microsoft-intune.md) before continuing with these steps.|
+|**You don’t have a work or school account.** A work or school account is provided when you sign a volume licensing agreement with Microsoft or subscribe to Office 365. If your organization has not signed an Enterprise Agreement or equivalent volume licensing agreement with Microsoft (or has an Office 365 account), then you do not have a Microsoft Online Services account that you can use to sign in to Microsoft Online Services.<br /><br />**You will discard your Intune tenant after completing the 30-day trial.** You should sign up for a new account if you are using your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] free trial subscription for evaluation purposes only, and you plan to redo your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service setup and device provisioning after the trial. This is the recommended option if you plan to use [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] with System Center 2012 Configuration Manager.<br /><br />If you sign up for a new account, you cannot later use an existing work or school account to manage that account, or combine it with existing volume licensing agreements.|**You have a work or school account provided with a volume licensing agreement or Office 365 subscription, and you are using this trial to evaluate [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].**<br /><br />If you are setting up [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] on an existing account, we recommend that you review [Choose how to manage devices](introduction-to-microsoft-intune.md) before continuing with these steps.|
 
 ### <a name="BKMK_ToSignUpforSubscription"></a>Sign up or sign in to Intune
 
@@ -269,15 +269,16 @@ To set up mobile device management with Intune, you must  first set the mobile d
 
     -   **iOS and Mac OS X**: see [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
-    -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
-
     -   **Android**: Android mobile devices allow users to enroll using the company portal app available from Google Play. No additional configuration in Intune is required.
+   
+    -   **Windo ws Phone**: see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
 3.  **Enroll devices:**
 
-    -   **Android** - Install the **Intune Company Portal** app from Microsoft Corporation, available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune user credentials added above.
-
     -   **iOS and Mac OS X** - Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
+ 
+    -    **Android** - Install the **Intune Company Portal** app from Microsoft Corporation, available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune user credentials added above.
+
 
     -   **Windows Phone 8.1**- Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
 
@@ -309,9 +310,9 @@ To learn more about alerts, notifications, and reports, see [Monitoring and repo
 
 -   **Mobile application management.** Managed mobile apps work with mobile application management policies to restrict certain app operations, such as copy and paste and screenshot functionality. For details, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) and [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md).
 
--   **Control access to company resources.** You can deploy certificates, e-mail profiles, VPN profiles and Wi-Fi profiles to mobile devices, making it easier to quickly set up mobile devices. For details, see [Enable access to company resources with Microsoft Intune - deleted](enable-access-to-company-resources-with-microsoft-intune---deleted.md).
+-   **Control access to company resources.** You can deploy certificates, e-mail profiles, VPN profiles and Wi-Fi profiles to mobile devices, making it easier to quickly set up mobile devices. For details, see [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
-To learn about the full capabilities of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Mobile device management capabilities in Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md), [Windows PC management capabilities in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md) and the [Microsoft Intune Service Description](microsoft-intune-service-description.md).
+To learn about the full capabilities of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Mobile device management capabilities in Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md) and [Windows PC management capabilities in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 To learn more about capabilities that were recently introduced to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [What's new in Microsoft Intune](what-s-new-in-microsoft-intune.md).
 
