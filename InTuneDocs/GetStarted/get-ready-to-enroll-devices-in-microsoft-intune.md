@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-author: Lindavr
+author: jeffgilb
 ---
 # Get ready to enroll devices in Microsoft Intune
 To let employees use company resources on mobile devices (including Android, iOS, and Windows Phone) you must enable device enrollment, the process that brings devices into management. To do this you must first set [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] as your mobile device authority and enable enrollment for the device's operating system. Computers running Windows 10 and Windows 8.1 can also be managed as mobile devices or you can manage them [using Intune client software](manage-windows-pcs-with-microsoft-intune.md).
