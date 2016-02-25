@@ -1,18 +1,20 @@
 ---
-title: MD Conversion - Get started with a 30-day trial of Microsoft Intune
+title: Get started with a 30-day trial of Microsoft Intune
 ms.custom: na
 ms.reviewer: na
+ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: dd94b988-fc35-402c-959d-fc5570ed8f3b
+ms.topic: get-started-article
+ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
+author: Staciebarker
 ---
-# MD Conversion - Get started with a 30-day trial of Microsoft Intune
+# Get started with a 30-day trial of Microsoft Intune
 Setting up a free Microsoft Intune 30-day trial to manage your mobile devices and computers is quick and easy. With just a few simple steps in the trial, you can add up to 100 users and devices, set up groups, configure compliance policies, and enroll and manage mobile devices and computers. In this topic, you'll learn the basics  to get an Intune trial up and running and get an overview of the service so you can evaluate Intune's features and capabilities.
 
 Watch this five-minute demo video to learn how easy it is to get started with a free trial of Microsoft Intune and to manage your devices:
 
-![](./media/EM_Intune_30_Day_Trial.PNG)
+<iframe width="854" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
 ## Before you begin
 Before you get started with Intune, you'll need the following:
@@ -42,7 +44,7 @@ Before  you sign up or sign in to Intune,  you should consider the following:
 
 |Sign up for a NEW account if either of the following is true:|Sign in with your WORK or SCHOOL account if:|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**You don’t have a work or school account.** A work or school account is provided when you sign a volume licensing agreement with Microsoft or subscribe to Office 365. If your organization has not signed an Enterprise Agreement or equivalent volume licensing agreement with Microsoft (or has an Office 365 account), then you do not have a Microsoft Online Services account that you can use to sign in to Microsoft Online Services.<br /><br />**You will discard your Intune tenant after completing the 30-day trial.** You should sign up for a new account if you are using your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] free trial subscription for evaluation purposes only, and you plan to redo your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service setup and device provisioning after the trial. This is the recommended option if you plan to use [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] with System Center 2012 Configuration Manager.<br /><br />If you sign up for a new account, you cannot later use an existing work or school account to manage that account, or combine it with existing volume licensing agreements.|**You have a work or school account provided with a volume licensing agreement or Office 365 subscription, and you are using this trial to evaluate [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].**<br /><br />If you are setting up [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] on an existing account, we recommend that you review [Introduction to Microsoft Intune](introduction-to-microsoft-intune.md) before continuing with these steps.|
+|**You don’t have a work or school account.** A work or school account is provided when you sign a volume licensing agreement with Microsoft or subscribe to Office 365. If your organization has not signed an Enterprise Agreement or equivalent volume licensing agreement with Microsoft (or has an Office 365 account), then you do not have a Microsoft Online Services account that you can use to sign in to Microsoft Online Services.<br /><br />**You will discard your Intune tenant after completing the 30-day trial.** You should sign up for a new account if you are using your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] free trial subscription for evaluation purposes only, and you plan to redo your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service setup and device provisioning after the trial. This is the recommended option if you plan to use [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] with System Center 2012 Configuration Manager.<br /><br />If you sign up for a new account, you cannot later use an existing work or school account to manage that account, or combine it with existing volume licensing agreements.|**You have a work or school account provided with a volume licensing agreement or Office 365 subscription, and you are using this trial to evaluate [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].**<br /><br />If you are setting up [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] on an existing account, we recommend that you review [Choose how to manage devices](introduction-to-microsoft-intune.md) before continuing with these steps.|
 
 ### <a name="BKMK_ToSignUpforSubscription"></a>Sign up or sign in to Intune
 
@@ -183,13 +185,13 @@ Your policy appears in the list of configuration policies, and has been deployed
 
 4.  On the **Software setup** page in **Select how this software is made available to devices**, select **External link**.
 
-5.  Enter the external link for the software in **Specify the URL**, and then click **Next**. Make sure that you preface the URL with **http://**. For the Skype app, use the link below that matches the mobile device platform you're using:
+5.  Enter the external link for the software in **Specify the URL**, and then click **Next**. Make sure that you preface the URL with **https://**. For the Skype app, use the link below that matches the mobile device platform you're using:
 
-    -   **iOS:**[https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
+    -   **iOS:** [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
 
-    -   **Android:**[https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
+    -   **Android:** [https://play.google.com/store/apps/details?id=com.skype.raider](https://play.google.com/store/apps/details?id=com.skype.raider)
 
-    -   **Windows Phone 8 or Windows Phone 8.1:**[http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
+    -   **Windows Phone 8 or Windows Phone 8.1:** [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
 
 6.  On the **Software description** page, provide the information that you want users to see in the company portal for the software, and then click **Next**. The following settings are available (this example refers to Skype):
 
@@ -215,10 +217,10 @@ Your policy appears in the list of configuration policies, and has been deployed
 
 11. Click **Finish**.
 
-The Skype app is now available to install on mobile devices from the company portal, but first you need to install [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] software on computers and mobile devices.
+The Skype app is now available to install on mobile devices from the company portal, but first you need to install [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] software on PCs and mobile devices.
 
-## <a name="Step5"></a>Step 5: Enroll computers in Intune
-You can install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software on computers in  the following ways:
+## <a name="Step5"></a>Step 5: Enroll PCs in Intune
+You can install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software on PCs in the following ways:
 
 -   Users can use an installer provided by the administrator to manually enroll
 
@@ -226,17 +228,17 @@ You can install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client
 
 -   End users can self-enroll their device through the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] company portal
 
-Each enrolled computer is linked to the user account that was used to install the client software. Microsoft Intune Endpoint Protection is also installed by default during Intune client installation on computers. Endpoint Protection helps to secure computers in your organization by providing real-time protection against potential threats, keeping malicious software definitions up to date, and automatically running scheduled scans. For added security, you can also use Intune policies to manage Windows Firewall settings on managed computers.
+Each enrolled PC is linked to the user account that was used to install the client software. Microsoft Intune Endpoint Protection is also installed by default during Intune client installation on PCs. Endpoint Protection helps to secure PCs in your organization by providing real-time protection against potential threats, keeping malicious software definitions up to date, and automatically running scheduled scans. For added security, you can also use Intune policies to manage Windows Firewall settings on managed PCs.
 
 What to know before you start:
 
--   The user must be an administrator on the computer to install the client software.
+-   The user must be an administrator on the PC to install the client software.
 
--   Self-enrolling requires that Internet Explorer is installed on the client computer.
+-   Self-enrolling requires that Internet Explorer is installed on the client PC.
 
--   Each time a user self-enrolls a computer, a [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] license is used
+-   Each time a user self-enrolls a PC, a [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] license is used
 
--   You must use a Microsoft Online Services work or school account to self-enroll a computer. This is the account that you used to sign in, or the administrator account that was created when you signed up for the free trial.
+-   You must use a Microsoft Online Services work or school account to self-enroll a PC. This is the account that you used to sign in, or the administrator account that was created when you signed up for the free trial.
 
 For this trial, follow these steps, which use the self-enrollment approach:
 
@@ -252,7 +254,7 @@ For this trial, follow these steps, which use the self-enrollment approach:
 
 6.  When the Setup wizard has completed, click **Finish**.
 
-To learn more about computer management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+To learn more about PC management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 To learn more about software management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md).
 
@@ -267,15 +269,16 @@ To set up mobile device management with Intune, you must  first set the mobile d
 
     -   **iOS and Mac OS X**: see [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
-    -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
-
     -   **Android**: Android mobile devices allow users to enroll using the company portal app available from Google Play. No additional configuration in Intune is required.
+   
+    -   **Windo ws Phone**: see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
 3.  **Enroll devices:**
 
-    -   **Android** - Install the **Intune Company Portal** app from Microsoft Corporation, available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune user credentials added above.
-
     -   **iOS and Mac OS X** - Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
+ 
+    -    **Android** - Install the **Intune Company Portal** app from Microsoft Corporation, available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune user credentials added above.
+
 
     -   **Windows Phone 8.1**- Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
 
@@ -287,14 +290,14 @@ To set up mobile device management with Intune, you must  first set the mobile d
 
 To learn more about mobile device management using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md).
 
-## Intune options and extras
+## <a name="Step7"></a>Step 7: Review other Intune options and extras you might want
 
 ### Alerts, notifications and reports
 In the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administration console, **alerts** are used to quickly assess the overall health of managed devices in your organization. You can configure and customize alerts so that they report and display only the information you need for your organization. You can set whether an alert is enabled or disabled, configure the severity, use the display threshold to determine how frequently an alert event must be triggered before an alert is displayed, and also configure settings that are specific to certain types of alerts.
 
 **Notifications** are emails used to inform administrators (and other users)  when certain types of alerts are triggered.
 
-**Reports** are used to answer a range of questions, such as how many computers have a particular application or update installed, what malware was blocked, or which users needed Remote Assistance over the last month.
+**Reports** are used to answer a range of questions, such as how many PCs have a particular application or update installed, what malware was blocked, or which users needed Remote Assistance over the last month.
 
 To learn more about alerts, notifications, and reports, see [Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md).
 
@@ -307,15 +310,15 @@ To learn more about alerts, notifications, and reports, see [Monitoring and repo
 
 -   **Mobile application management.** Managed mobile apps work with mobile application management policies to restrict certain app operations, such as copy and paste and screenshot functionality. For details, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) and [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md).
 
--   **Control access to company resources.** You can deploy certificates, e-mail profiles, VPN profiles and Wi-Fi profiles to mobile devices, making it easier to quickly set up mobile devices. For details, see [Enable access to company resources with Microsoft Intune - deleted](enable-access-to-company-resources-with-microsoft-intune---deleted.md).
+-   **Control access to company resources.** You can deploy certificates, e-mail profiles, VPN profiles and Wi-Fi profiles to mobile devices, making it easier to quickly set up mobile devices. For details, see [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
-To learn about the full capabilities of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Mobile device management capabilities in Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md), [Windows PC management capabilities in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md) and the [Microsoft Intune Service Description](microsoft-intune-service-description.md).
+To learn about the full capabilities of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Mobile device management capabilities in Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md) and [Windows PC management capabilities in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 To learn more about capabilities that were recently introduced to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [What's new in Microsoft Intune](what-s-new-in-microsoft-intune.md).
 
 Support options are described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md), and you can join discussions about [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] in [Microsoft Intune forums](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 
-## <a name="BKMK_BuyIntune"></a>Ready to move to an Intune paid subscription?
+## <a name="BKMK_BuyIntune"></a>Step 8: Prepare to move to an Intune paid subscription
 If you purchase at least 150 licenses for Microsoft Intune in an eligible plan, you can use the "FastTrack Center Benefit," a service where Microsoft specialists work with you to get your environment ready for Intune. See [Microsoft Intune Service Benefit Description](https://technet.microsoft.com/library/mt228265.aspx).
 
 You can convert your free Intune trial to a paid subscription in the following ways:
@@ -328,6 +331,6 @@ You can convert your free Intune trial to a paid subscription in the following w
 
 -   **Online subscription program** (&lt;250 users) - [Online Services volume licensing](http://www.microsoft.com/licensing/online-services/default.aspx) program is designed specifically for organizations with less than 250 users. Use this program to subscribe, manage, and deploy your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] services.
 
-## See Also
+### See also
 [Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md)
 

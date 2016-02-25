@@ -86,7 +86,7 @@ The following table identifies on-premises infrastructure you can use with [!INC
 |Infrastructure|More information|
 |------------------|--------------------|
 |On-Premises Connector|If your instance of Exchange Server is on-premises, you must download, install, and [Configure Microsoft Intune on-premises connector for on-premises or hosted Exchange](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md#bkmk_EX_OP) on a computer in your infrastructure. This connector can also connect to Exchange in the cloud.<br /><br />If your instance of Exchange Server is hosted in a cloud-based service, you can install and configure the On-Premises Connector, or you can [Configure Intune service to service connector for hosted Exchange](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md#bkmk_S_S) which does not require an on-premises server to host the connector.<br /><br />Before you can use either connector to connect [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to your Exchange Server, you must [set up Active Directory synchronization](http://technet.microsoft.com/library/dn646983.aspx#BKMK_SyncUsersFromAD) so that your local users and security groups are synchronized with your instance of Azure AD.|
-|Proxy server|If you manage clients that access the Internet through a proxy server, see [Requirements for proxy servers](network-infrastructure-requirements-for-microsoft-intune.md#BKMK_ProxyReqs).<br /><br />You can also use a proxy server that caches content to reduce network bandwidth. For more information, see [Reduce network bandwidth use](what-to-know-before-setting-up-microsoft-intune.md#BKMK_ReduceBandwidth) in the [What to know before setting up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md) topic.|
+|Proxy server|If you manage clients that access the Internet through a proxy server, see [Requirements for proxy servers](network-infrastructure-requirements-for-microsoft-intune.md#BKMK_ProxyReqs).<br /><br />You can also use a proxy server that caches content to reduce network bandwidth. For more information, see [Reduce network bandwidth use](what-to-know-before-setting-up-microsoft-intune.md#BKMK_ReduceBandwidth).|
 
 ### <a name="BKMK_ExchanceConnectorReqs"></a>Requirements for the On-Premises Connector
 The following table lists the requirements for the computer where you install the On-Premises Connector.
@@ -109,4 +109,4 @@ However, to use this connector, the following must be true:
 -   The user account that you use to install the On-Premises Connector must be a tenant administrator for [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] and be an administrator in the Exchange tenant with a license to use Exchange Server 2013.
 
 ### See also
-[What to know before setting up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md)
+[What to know before start](what-to-know-before-setting-up-microsoft-intune.md)

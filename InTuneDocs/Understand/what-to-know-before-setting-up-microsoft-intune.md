@@ -1,5 +1,5 @@
 ---
-title: What to know before you set up Microsoft Intune
+title: What to know before you start Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,8 +9,8 @@ ms.topic: get-started-article
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 author: Staciebarker
 ---
-# What to know before you set up Microsoft Intune
-Before you set up [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], you might want to review [Choose how to manage devices with Microsoft Intune](introduction-to-microsoft-intune.md). After you are familiar with the capabilities of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you should be ready to set up your subscription. If you start with a trial subscription, at a later time you can convert it to a full subscription. To convert a trial subscription, see [How to buy Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx).
+# What to know before you start Microsoft Intune
+Before you set up [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], you might want to review [Choose how to manage devices with Microsoft Intune](introduction-to-microsoft-intune.md). After you are familiar with the capabilities of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you should be ready to set up your subscription. If you start with a trial subscription, at a later time you can convert it to a full subscription. To convert a trial subscription, see [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
 Before you set up Intune, you need to know about:
 
 - [General capabilities of Intune](#BKMK_general_capabilities)
