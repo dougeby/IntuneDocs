@@ -227,6 +227,9 @@ You can install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client
 -   [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] software can be included in an OS image, or deployed using Group Policy
 
 -   End users can self-enroll their device through the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] company portal
+-   End users can self-enroll their device through the [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] company portal
+-   End users can self-enroll their device through the [!INCLUDE[wit_firstref](.\includes\wit_firstref_md.md)] company portal
+-   End users can self-enroll their device through the [!INCLUDE[wit_firstref](..\includes\wit_firstref_md.md)] company portal
 
 Each enrolled PC is linked to the user account that was used to install the client software. Microsoft Intune Endpoint Protection is also installed by default during Intune client installation on PCs. Endpoint Protection helps to secure PCs in your organization by providing real-time protection against potential threats, keeping malicious software definitions up to date, and automatically running scheduled scans. For added security, you can also use Intune policies to manage Windows Firewall settings on managed PCs.
 
