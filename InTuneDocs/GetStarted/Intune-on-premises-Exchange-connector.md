@@ -20,7 +20,7 @@ To prepare to connect [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to y
 |Verify you have hardware requirements for the on-premises connector|[Requirements for the On-Premises Connector](network-infrastructure-requirements-for-microsoft-intune.md#BKMK_ExchanceConnectorReqs)|
 |Configure a user account with permission to run the designated list of Windows PowerShell cmdlets|PowerShell cmdlets for on-premises Exchange Connector (see below)|
 
-## PowerShell cmdlets for on-premises Exchange Connector
+### PowerShell cmdlets for on-premises Exchange Connector
 You must create an Active Directory user account that is used by the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Exchange Connector. The account must have permission to run the following required Windows PowerShell Exchange cmdlets:
 
 -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
@@ -47,11 +47,14 @@ You must create an Active Directory user account that is used by the [!INCLUDE[w
 
 -   Get-Command
 
-## Download, install, and configure the Microsoft Intune Exchange Connector
+## Download, install, and configure the Exchange Connector
 To set up a connection that enables [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to communicate with the Exchange Server that hosts the mobile devices’ mailboxes, you must download and configure the On-Premises Connector tool from the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administrator console.
 
+
+![alt text](./media/ExchangeConnector.gif "Configure the Exchange Connector")
+
 <figure class="no-border">
-    img src="./media/ExchangeConnector.gif" alt="" />
+    <img src="./media/ExchangeConnector.gif" alt="" />
 </figure>
 
 ### To download the On-Premises Connector software installation package
