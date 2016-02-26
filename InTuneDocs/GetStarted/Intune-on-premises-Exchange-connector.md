@@ -25,13 +25,10 @@ To set up a connection that enables [!INCLUDE[wit_nextref](../includes/wit_nextr
 1.  Open the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)].
 
 2.  In the workspace shortcuts pane, choose **ADMIN**.
-![IntuneSA1aclickADMIN](/media/IntuneSA1aclickADMIN.png)
 
 3.  In the navigation pane, under **Mobile Device Management**, expand **Microsoft Exchange** and then choose **Setup Exchange Connection**.
-![IntuneSA1bSetupExchangeConnection](/media/IntuneSA1bSetupExchangeConnection.png)
 
 4.  On the **Setup Exchange Connection** page, choose **Download On-Premises Connector**.
-![IntuneSA1cOnpremConnector](/media/IntuneSA1cOnpremConnector.png)
 
 5.  The On-Premises Connector software is contained in a compressed (.zip) folder that can be opened or saved. In the **File Download** dialog box, choose **Save** to store the compressed folder to a secure location.
 
@@ -41,11 +38,7 @@ To set up a connection that enables [!INCLUDE[wit_nextref](../includes/wit_nextr
 
 
 ## Install the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] On-Premises Connector
-Perform the following steps to install the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] On-Premises Connector.
-
-> [!IMPORTANT]
-> The On-Premises Connector can only be installed once per [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription, and only on one computer. If you attempt to install the On-Premises Connector a second time, you will replace the initial Exchange connection.
-
+Perform the following steps to install the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] On-Premises Connector. Note that the On-Premises Connector can only be installed once per [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription, and only on one computer. If you attempt to install the On-Premises Connector a second time, you will replace the initial Exchange connection. You can also only set up one Exchange connection per [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] account. If you try to configure an additional connection, it will replace the original connection with the new one.
 
 1.  Extract the files in **Exchange_Connector_Setup.zip** into a secure location.
 
@@ -54,13 +47,11 @@ Perform the following steps to install the [!INCLUDE[wit_nextref](../includes/wi
     > [!IMPORTANT]
     > If the destination folder is not a secure location, you should delete the certificate file **WindowsIntune.accountcert** after you install the On-Premises Connector.
 
-> [!NOTE]
-> You can only set up one Exchange connection per [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] account. If you try to configure an additional connection, it will replace the original connection with the new one.
 
 ## Configure the On-Premises Exchange Connector
 
 1.  In the **Exchange server** field, select your Exchange server environment type, either **On-premises Microsoft Exchange Server** or select **Hosted Microsoft Exchange Server** for Exchange on Microsoft Office 365.
-![IntuneSA1dconfigureExchConnector](/media/IntuneSA1dconfigureExchConnector.png)
+![IntuneSA1dconfigureExchConnector](./media/IntuneSA1dconfigureExchConnector.png)
 
 2.  For an on-premises Exchange server, provide either the server name or fully qualified domain name of the Exchange server that hosts the Client Access server role.
 
@@ -101,7 +92,7 @@ Perform the following steps to install the [!INCLUDE[wit_nextref](../includes/wi
 After the [!INCLUDE[wit_exch_2](../includes/wit_exch_2_md.md)] sets up the connection, mobile devices associated with users that are managed in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] are automatically synchronized and added to the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]. This synchronization may take some time to complete.
 
 To view the status of the connection and the last successful synchronization attempt, in the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] choose the **ADMIN** workspace, and under **Mobile Device Management**, choose **Microsoft Exchange**.
-![IntuneSA2aServiceToServiceConnectorVerification](/media/IntuneSA2aServiceToServiceConnectorVerification.PNG)
+![IntuneSA2aServiceToServiceConnectorVerification](./media/IntuneSA2aServiceToServiceConnectorVerification.PNG)
 
 > [!NOTE]
 > If you have installed the On-Premises Connector, and if at some point you delete the Exchange connection, you must uninstall the On-Premises Connector from the computer onto which it was installed.
