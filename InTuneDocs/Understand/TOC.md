@@ -8,3 +8,5 @@
 ### [Mobile device management capabilities](Mobile-device-management-capabilities-in-microsoft-intune.md)
 ### [Windows PC management capabilities](Windows-PC-management-capabilities-in-microsoft-intune.md)
 ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)
+
+# test
