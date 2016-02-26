@@ -68,3 +68,7 @@ You must create an Exchange Online user account that is used by the [!INCLUDE[wi
 -   Get-Recipient
 
 -   Clear-MobileDevice, Remove-MobileDevice
+
+### Next steps
+-   [Install the Intune connector for on-premises Exchange](.\Intune-on-premises-Exchange-connector.md)
+-   [Configure the Intune service to service connector for hosted Exchange](.\Intune-service-to-service-Exchange-connector.md)

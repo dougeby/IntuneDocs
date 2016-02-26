@@ -26,12 +26,12 @@ Use this information to connect [!INCLUDE[wit_firstref](../includes/wit_firstref
 3.  In the navigation pane, under **Mobile Device Management**, expand **Microsoft Exchange** and then choose **Set Up Exchange Connection**.
 
 4.  On the **Set Up Exchange Connection** page, choose **Set Up Service to Service Connector**.
-![IntuneSA5cServiceToServiceConnector](/media/IntuneSA5cServiceToServiceConnector.PNG)
+![IntuneSA5cServiceToServiceConnector](./media/IntuneSA5cServiceToServiceConnector.PNG)
 
 The Service-to-Service Connector will automatically configure and synchronize with your Hosted Exchange environment.
 
 ## Validate your Exchange connection
 
--   After you have successfully configured the [!INCLUDE[wit_exch_2](../includes/wit_exch_2_md.md)], in the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] choose the **ADMIN** workspace, and under **Mobile Device Management**, choose **Microsoft Exchange** and validate that the details you provided appear under **Exchange Connection Information**.
+After you have successfully configured the [!INCLUDE[wit_exch_2](../includes/wit_exch_2_md.md)], in the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] choose the **ADMIN** workspace, and under **Mobile Device Management**, choose **Microsoft Exchange** and validate that the details you provided appear under **Exchange Connection Information**.
 
--   You can also check the time and date of the last successful synchronization attempt.
+You can also check the time and date of the last successful synchronization attempt.
