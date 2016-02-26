@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 
+ms.assetid:
 author: jeffgilb
 ---
 # Install the Intune connector for on-premises Exchange
@@ -14,14 +14,13 @@ author: jeffgilb
 
 To set up a connection that enables [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to communicate with the Exchange Server that hosts the mobile devices’ mailboxes, you must download and configure the On-Premises Connector tool from the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] administrator console.
 
-
-![alt text](./media/ExchangeConnector.gif "Configure the Exchange Connector")
-
-
+> [!IMPORTANT]
+> Before you being installing and configuring the On-Premises Connector, ensure that you meet the [Exchange connector installation requirements](Intune-Exchange-connector-requirements.md).
 
 ## Download the On-Premises Connector software installation package
-> [!IMPORTANT]
-> Before you being installing and configuring the On-Premises Connector, ensure that you meet the [Exchange connector installation requriements](Intune-Exchange-connector-requirements.md).
+
+
+![alt text](./media/ExchangeConnector.gif "Configure the Exchange Connector")
 
 1.  Open the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)].
 
@@ -39,13 +38,14 @@ To set up a connection that enables [!INCLUDE[wit_nextref](../includes/wit_nextr
 > [!IMPORTANT]
 > Do not rename or move the extracted files or the On-Premises Connector software installation will not succeed.
 
+
+
 ## Install the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] On-Premises Connector
 Perform the following steps to install the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] On-Premises Connector.
 
 > [!IMPORTANT]
 > The On-Premises Connector can only be installed once per [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription, and only on one computer. If you attempt to install the On-Premises Connector a second time, you will replace the initial Exchange connection.
 
-## Install the On-Premises Connector
 
 1.  Extract the files in **Exchange_Connector_Setup.zip** into a secure location.
 
@@ -108,6 +108,6 @@ To view the status of the connection and the last successful synchronization att
 
 ## Validate Exchange connection
 
--   After you have successfully configured the [!INCLUDE[wit_exch_2](../includes/wit_exch_2_md.md)], in the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] choose the **ADMIN** workspace, and under **Mobile Device Management**, choose **Microsoft Exchange** and validate that the details you provided appear under **Exchange Connection Information**.
+After you have successfully configured the [!INCLUDE[wit_exch_2](../includes/wit_exch_2_md.md)], in the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] choose the **ADMIN** workspace, and under **Mobile Device Management**, choose **Microsoft Exchange** and validate that the details you provided appear under **Exchange Connection Information**.
 
--   You can also check the time and date of the last successful synchronization attempt.
+You can also check the time and date of the last successful synchronization attempt.
