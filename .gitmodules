@@ -18,3 +18,7 @@
 	path = InTuneDocs/DeployUse/_themes
 	url = https://github.com/Microsoft/templates.docs.msft
 	branch = master
+[submodule "docs shared themes"]
+	path = InTuneDocs/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
