@@ -12,3 +12,5 @@ author: lindavr
 # Testing the build process
 
 This is test content.
+
+Second test.
