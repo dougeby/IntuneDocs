@@ -1,8 +1,19 @@
-# Get started
+# [Understand and Explore](ways-to-do-enterprise-mobility.md)
+
+# [Get started](what-s-new-in-microsoft-intune.md)
 
 ## [What's new](What-s-new-in-microsoft-intune.md)
 ## [Get started with a 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ## [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune-test.md)
+### [Step 1.Sign into Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
+### [Step 2.Configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [Step 3.Synchronize Active Directory and add users](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)
+### [Step 4.Manage Intune licenses](get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [Step 5.Organize users and devices](get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)
+### [Step 6.Create policies and publish an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)
+### [Step 7.Customize the Company Portal](get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)
+### [Step 8.Enroll computers](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Step 9.Enroll mobile devices and install an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)
 ## [Get ready to enroll devices](get-ready-to-enroll-devices-in-microsoft-intune.md)
 ### [Set MDM authority and configure Intune](Set-mobile-device-management-authority-and-configure-microsoft-intune.md)
 ## [MDM with Exchange ActiveSync & Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
@@ -12,4 +23,6 @@
 ## [Common Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)
 ### [Start a trial & deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
 
-#Test
+# [Plan and Design](plan-your-user-and-device-groups.md)
+# [Deploy and Use](learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
+# [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
