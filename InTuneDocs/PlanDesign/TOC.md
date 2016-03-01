@@ -1,4 +1,6 @@
-# Plan & Design
+# [Understand and Explore](ways-to-do-enterprise-mobility.md)
+# [Get started](what-s-new-in-microsoft-intune.md)
+# [Plan and Design](plan-your-user-and-device-groups.md)
 
 ## [Plan user and device groups](plan-your-user-and-device-groups.md)
 ## [Plan for app deployment](Plan-for-app-deployment-in-microsoft-intune.md)
@@ -6,4 +8,5 @@
 ## [Architecture guidance: protect email & docs](architecture-guidance-for-protecting-company-email-and-documents.md)
 ## [Reference for Tenant Administrator accounts](Reference-for-Tenant-Administrator-accounts-for-microsoft-intune.md)
 
-# test lindavrFeb29
+# [Deploy and Use](learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
+# [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
