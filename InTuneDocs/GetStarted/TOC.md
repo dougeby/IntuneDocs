@@ -1,4 +1,5 @@
-# Get started
+# [Understand and Explore](ways-to-do-enterprise-mobility.md)
+# [Get started](what-s-new-in-microsoft-intune.md)
 
 ## [What's new](What-s-new-in-microsoft-intune.md)
 ## [Get started with a 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune.md)
@@ -12,4 +13,6 @@
 ## [Common Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)
 ### [Start a trial & deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
 
-#Test
+# [Plan and Design](plan-your-user-and-device-groups.md)
+# [Deploy and Use](learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
+# [Troubleshoot](how-to-get-support-for-microsoft-intune.md)

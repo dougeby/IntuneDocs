@@ -1,4 +1,4 @@
-# Understand & Explore
+# [Understand and Explore](ways-to-do-enterprise-mobility.md)
 
 ## [Ways to do enterprise mobility](Ways-to-do-enterprise-mobility.md)
 ## [Introduction to Intune](introduction-to-microsoft-intune.md)
@@ -9,4 +9,7 @@
 ### [Windows PC management capabilities](Windows-PC-management-capabilities-in-microsoft-intune.md)
 ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)
 
-# test
+# [Get started](what-s-new-in-microsoft-intune.md)
+# [Plan and Design](plan-your-user-and-device-groups.md)
+# [Deploy and Use](learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
+# [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
