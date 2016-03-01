@@ -48,6 +48,14 @@ If  you complete the sign-up process, you're automatically signed in to the [!IN
 ## Next steps
 Congratulations! You have just completed step 1 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
+
+>[!div class="step-by-step"]
+**Get started with a paid subscription**
+[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-test.md)
+[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+**Configure a custom domain**
+
+
 **Next** [Configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 
 **Prev** [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune-test.md)
