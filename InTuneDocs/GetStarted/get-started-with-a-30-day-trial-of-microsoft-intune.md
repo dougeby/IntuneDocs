@@ -14,7 +14,7 @@ Setting up a free Microsoft Intune 30-day trial to manage your mobile devices an
 
 Watch this five-minute demo video to learn how easy it is to get started with a free trial of Microsoft Intune and to manage your devices:
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
+<iframe width="675" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
 ## Before you begin
 Before you get started with Intune, you'll need the following:
@@ -270,13 +270,13 @@ To set up mobile device management with Intune, you must  first set the mobile d
     -   **iOS and Mac OS X**: see [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
     -   **Android**: Android mobile devices allow users to enroll using the company portal app available from Google Play. No additional configuration in Intune is required.
-   
+
     -   **Windo ws Phone**: see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
 3.  **Enroll devices:**
 
     -   **iOS and Mac OS X** - Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
- 
+
     -    **Android** - Install the **Intune Company Portal** app from Microsoft Corporation, available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune user credentials added above.
 
 
@@ -333,4 +333,3 @@ You can convert your free Intune trial to a paid subscription in the following w
 
 ### See also
 [Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md)
-
