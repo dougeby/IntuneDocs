@@ -21,7 +21,7 @@
 ### [Configure the Intune service to service connector](Intune-service-to-service-Exchange-connector.md)
 ## [Common Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)
 ### [Start a trial & deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-
+## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 # [Plan and Design](/intune/plandesign/plan-your-user-and-device-groups.html)
 # [Deploy and Use](/intune/deployuse/learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.html)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune.html)
