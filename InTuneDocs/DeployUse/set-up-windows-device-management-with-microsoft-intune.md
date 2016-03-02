@@ -9,13 +9,23 @@ ms.topic: article
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 author: NathBarn
 ---
-# Set up Windows device management with Microsoft Intune
-You can use  [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to manage desktops, laptops, and other devices running Windows as mobile devices. You may also want to [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) or [manage computers with Intune client software](http://technet.microsoft.com/library/dn646959.aspx) using the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client.
+# Set up device management
+After you [set the MDM authority](set-mobile-device-management-authority-and-configure-microsoft-intune.md), you enable enrollment for the operating systems your organization wants to support. Certain mobile device operating systems (for example Windows and iOS) require a trust relationship between devices and [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to allow management.
 
-## Prepare to manage Windows devices with Intune
+Select from the following device platform options to learn more:
+
+> [!div class="op_single_selector"]
+- [Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
+- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
+
+## Set up Windows device management with Microsoft Intune
+You can use  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to manage desktops, laptops, and other devices running Windows as mobile devices. You may also want to [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) or [manage computers with Intune client software](http://technet.microsoft.com/library/dn646959.aspx) using the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] client.
+
 To access resources managed with[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] users can enroll their Windows computers as mobile devices.  Creating a DNS CNAME helps users connect to the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] company portal without entering a server name. If you want to deploy the company portal with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you will need to enable sideloading with a sideloading key.   Users can also download and install the company portal from the Store or use software included in Windows. Complete the following steps to set up Windows device management with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
 
-#### Set up Windows device management
+### Set up Windows device management
 
 1.  **Set up Intune**
     If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](https://technet.microsoft.com/library/mt346013.aspx) as **Microsoft Intune** and setting up MDM.
@@ -66,6 +76,5 @@ To access resources managed with[!INCLUDE[wit_nextref](./includes/wit_nextref_md
 4.  **Tell users how to get access to company resources with the company portal**
     Your users will need to know how to enroll their devices and what to expect once they're brought into management. [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
-## See Also
+### See Also
 [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
-

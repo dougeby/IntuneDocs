@@ -15,8 +15,6 @@
 ### [Step 9.Enroll mobile devices and install an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)
 ## [Get ready to enroll devices](get-ready-to-enroll-devices-in-microsoft-intune.md)
 ### [Set MDM authority and configure Intune](Set-mobile-device-management-authority-and-configure-microsoft-intune.md)
-### [Set up device management](set-up-device-management.md)
-### [Enroll corporaet-owned devices](enroll-corporate-owned-devices.md)
 ## [MDM with Exchange ActiveSync & Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
 ### [Exchange Connector installation requirements](Intune-Exchange-connector-requirements.md)
 ### [Install the Intune connector for on-premises Exchange](Intune-on-premises-Exchange-connector.md)

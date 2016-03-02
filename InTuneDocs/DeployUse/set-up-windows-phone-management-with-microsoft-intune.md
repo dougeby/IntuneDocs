@@ -9,8 +9,19 @@ ms.topic: article
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 author: NathBarn
 ---
-# Set up Windows Phone management with Microsoft Intune
-Before you can manage Windows Phone mobile devices with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you have to set up management requirements. Creating a DNS CNAME helps users connect to the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] company portal. Windows Phone 8.0 requires a Symantec certificate to establish an encrypted IP connection between devices and [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. Depending upon how users access the company portal, Windows Phone 8.1 might also. A certificate is also required to sign line-of-business apps.
+# Set up device management
+After you [set the MDM authority](set-mobile-device-management-authority-and-configure-microsoft-intune.md), you enable enrollment for the operating systems your organization wants to support. Certain mobile device operating systems (for example Windows and iOS) require a trust relationship between devices and [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to allow management.
+
+Select from the following device platform options to learn more:
+
+> [!div class="op_single_selector"]
+- [Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
+- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
+
+## Set up Windows Phone management with Microsoft Intune
+Before you can manage Windows Phone mobile devices with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], you have to set up management requirements. Creating a DNS CNAME helps users connect to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] company portal. Windows Phone 8.0 requires a Symantec certificate to establish an encrypted IP connection between devices and [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Depending upon how users access the company portal, Windows Phone 8.1 might also. A certificate is also required to sign line-of-business apps.
 
 -   **Windows Phone 8.1** - Requires a certificate only if:
 
@@ -22,11 +33,10 @@ Before you can manage Windows Phone mobile devices with [!INCLUDE[wit_nextref](.
 
 ![](./media/WPCertReqs.png)
 
-## Prepare to manage Windows Phone mobile devices with Intune
-Setup requirements for Window Phone mobile device management depend upon how you'll manage devices.  Setting two CNAMEs in your company's DNS registration makes enrollment easier for uses. If your users will download the Company Portal app from the Store, then once you've configured DNS settings you just need to set up the Company Portal and inform users how to enroll.  For Windows Phone 8.0, or Windows Phone 8.1 where you'll deploy the Company Portal, you'll need a Symntec certificate to code-sign the app.
 
-#### Set up Windows Phone enrollment with Intune
+Setup requirements for Window Phone mobile device management depend upon how you'll manage devices.  Setting two CNAMEs in your company's DNS registration makes enrollment easier for uses. If your users will download the Company Portal app from the Store, then once you've configured DNS settings you just need to set up the Company Portal and inform users how to enroll.  For Windows Phone 8.0, or Windows Phone 8.1 where you'll deploy the Company Portal, you'll need a Symantec certificate to code-sign the app.
 
+### Configure setup requirements to enable Windows Phone management  
 1.  **Set up Intune**
     If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](https://technet.microsoft.com/library/mt346013.aspx) as **Microsoft Intune** and setting up MDM.
 
@@ -186,12 +196,12 @@ You can deploy the Company Portal app to Windows Phone 8.1 devices with [!INCLUD
 
     > [!IMPORTANT]
     > The ssp.xap and the Company Portal from the store can both be installed at the same time, which can be confusing for users. To have all users using the ssp.xap, create a blocked app for the store version of the Company Portal. To have all Windows Phone 8.1 devices to use only the store version of the Company Portal, you have three choices:
-    > 
+    >
     > -   If you won’t sideload apps and don’t need to support Windows Phone 8.0, don’t upload the signed ssp.xap.
     > -   If sideloaded apps are needed, and if there are no Windows Phone 8 devices enrolling, change the automatically created ssp.xap deployment from “available” to “uninstall.”
     > -   If sideloaded apps need to be installed and Windows Phone 8.0 devices need to enroll and receive the ssp.xap, create a new software deployment of the ssp.xap and deploy it with the **uninstall** action. Windows Phone 8.0 devices don’t support forced install or uninstall of apps, so they will ignore the deployment. Windows Phone 8.1 devices support the uninstall action and will remove the ssp.xap.
 
-## Renew your Symantec enterprise code-signing certificate for Windows devices
+### Renew your Symantec enterprise code-signing certificate for Windows devices
 The Symantec certificate used to manage certain Windows and Windows Phone mobile devices must be renewed periodically. For Windows Phone 8.0 devices, a signed Company Portal app and the code-signing certificate are needed for device enrollment. Later Windows Phone devices can use the company portal app downloaded from the store. A code-signing certificate is also be required for deploying line-of-business apps.
 
 #### How to renew the Symantec enterprise code-signing certificate
@@ -230,6 +240,10 @@ Providing a signed SSP.xap file is currently the only way to provide the updated
 
 5.  Sign all new and any updated enterprise line-of-business apps using the new certificate. Existing applications do not need to be resigned and redeployed.
 
+### See Also
+[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+
+<!-- this is a FAQ --!>
 ## <a name="BKMK_FAQ"></a>Frequently asked questions about mobile device management for Microsoft Intune including management with Configuration Manager 2012
 
 ### <a name="BKMK_Symantec"></a>Why does Windows Phone require a Symantec certificate for management?
@@ -355,4 +369,3 @@ Yes. Even if Windows Phone 8.1 devices have already enrolled, you can get a Syma
 
 ## See Also
 [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
-
