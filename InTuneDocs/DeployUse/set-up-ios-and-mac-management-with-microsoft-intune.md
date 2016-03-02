@@ -9,15 +9,21 @@ ms.topic: article
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 author: NathBarn
 ---
-# Set up iOS and Mac management with Microsoft Intune
+# Set up device management
+After you [set the MDM authority](set-mobile-device-management-authority-and-configure-microsoft-intune.md), you enable enrollment for the operating systems your organization wants to support. Certain mobile device operating systems (for example Windows and iOS) require a trust relationship between devices and [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to allow management.
+
+Select from the following device platform options to learn more:
+
+> [!div class="op_single_selector"]
+- [Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
+- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
+
+## Set up iOS and Mac management with Microsoft Intune
 With [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you can enable BYOD ("bring your own device") iOS and Mac OS X device enrollment to give access to company email and apps to iPhone, iPad and Mac users. Once users install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] company portal app, their devices can be targeted with policy using the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administration console.  Before you can manage iOS and Mac devices, you must import an Apple Push Notification service (APNs) certificate from Apple. This certificate allows Intune to manage iOS and Mac devices and establishes an accredited and encrypted IP connection with the mobile device management authority services.
 
 As an alternative to enrollment with the Company Portal app, you can also [enroll corporate-owned iOS devices](https://technet.microsoft.com/library/dn408185.aspx#BKMK_CODiOS) .
-
-## Prepare to manage iOS and Mac devices with Microsoft Intune
-The following steps allow [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to manage iOS and Mac devices using the Company Portal.
-
-#### Set up iOS and Mac enrollment with Intune
 
 1.  **Set up Intune**
     If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](https://technet.microsoft.com/library/mt346013.aspx) as **Microsoft Intune** and setting up MDM.
@@ -36,8 +42,11 @@ The following steps allow [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] 
 5.  **Tell users how to get access to company resources with the company portal**
     Your users will need to know how to enroll their devices and what to expect once they're brought into management. [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
-## <a name="BKMK_CODiOS"></a>Corporate-owned device (COD) management with Microsoft Intune
-As an alternative to enrollment with the Company Portal app, you can enroll corporate-owned devices purchased from Apple. Intune supports the enrollment of corporate-owned iOS devices using the Apple Device Enrollment Program (DEP) or the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer.
+### See Also
+[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+
+<!-- the rest of this is COD --!>
+## <a name="BKMK_CODiOS"></a>Corporate-owned device (COD) management with Microsoft Intune As an alternative to enrollment with the Company Portal app, you can enroll corporate-owned devices purchased from Apple. Intune supports the enrollment of corporate-owned iOS devices using the Apple Device Enrollment Program (DEP) or the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer.
 
 You can enroll corporate-enrolled iOS devices in three ways:
 
