@@ -1,7 +1,7 @@
-# [Understand and Explore](ways-to-do-enterprise-mobility.md)
-# [Get started](what-s-new-in-microsoft-intune.md)
-# [Plan and Design](plan-your-user-and-device-groups.md)
-# [Deploy and Use](learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
+# [Understand and Explore](/intune/understand/ways-to-do-enterprise-mobility.html)
+# Get started
+# [Plan and Design](/intune/plandesign/plan-your-user-and-device-groups.html)
+# [Deploy and Use](/intune/deployuse/learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.html)
 # [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
 
 ## [How to get support](how-to-get-support-for-microsoft-intune.md)
