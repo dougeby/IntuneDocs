@@ -1,5 +1,5 @@
-# [Understand and Explore](ways-to-do-enterprise-mobility.md)
-# [Get started](what-s-new-in-microsoft-intune.md)
+# [Understand and Explore](/Intune/Understand/ways-to-do-enterprise-mobility.html)
+# [Get started](/Intune/getstarted/what-s-new-in-microsoft-intune.html)
 # [Plan and Design](plan-your-user-and-device-groups.md)
 
 ## [Plan user and device groups](plan-your-user-and-device-groups.md)
@@ -8,5 +8,5 @@
 ## [Architecture guidance: protect email & docs](architecture-guidance-for-protecting-company-email-and-documents.md)
 ## [Reference for Tenant Administrator accounts](Reference-for-Tenant-Administrator-accounts-for-microsoft-intune.md)
 
-# [Deploy and Use](learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
-# [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
+# [Deploy and Use](/intune/deployuse/learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.html)
+# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune.html)

@@ -1,7 +1,6 @@
-# [Understand and Explore](ways-to-do-enterprise-mobility.md)
-# [Get started](what-s-new-in-microsoft-intune.md)
-# [Plan and Design](plan-your-user-and-device-groups.md)
-
+# [Understand and Explore](/Intune/Understand/ways-to-do-enterprise-mobility.html)
+# [Get started](/Intune/getstarted/what-s-new-in-microsoft-intune.html)
+# [Plan and Design](/Intune/plandesign/plan-your-user-and-device-groups.html)
 # [Deploy and Use](learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
 
 ## [Learn how to deploy a solution for protecting company email and documents](learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
@@ -73,4 +72,4 @@
 ##### [Get notified by alerts](get-notified-by-microsoft-intune-alerts.md)
 ##### [Understand your devices with inventory](Understand-your-devices-with-inventory-in-microsoft-intune.md)
 
-# [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
+# [Troubleshoot](/Intune/troubleshoot/how-to-get-support-for-microsoft-intune.html)
