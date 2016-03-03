@@ -2,7 +2,7 @@
 title: Frequently asked questions about Intune | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
-ms.service: microsoft-intune
+ms.service: microsoft-intune 
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
@@ -96,6 +96,8 @@ Comment: this is a malformed table. Please review markdown instructions and fix
         |**From:** Configuration Manager with Intune|Yes|Yes||
         &#42;O365 and Intune MDM authorities can coexist, so you won't have to re-enroll mobile devices.
 
+
+
 -   **Windows**
 
     -   **Can I sideload a Windows Store app?**
@@ -109,6 +111,128 @@ Comment: this is a malformed table. Please review markdown instructions and fix
     -   **Is a Microsoft Account needed on a Windows Phone 8.1 in order for it to be managed by Intune?**
 
         No. However, it will be needed to install most apps from the public store.
+
+        **Why does Windows Phone require a Symantec certificate for management?**
+        Windows Phone controls how you can install apps. Any user with a Microsoft account can install apps from the Windows Phone store, or companies can install or sideload their internally developed line of business (LOB) apps using a special process described in the Windows Phone documentation. When installing LOB apps, Windows Phones trust only one special type of certificate issued by Symantec. You cannot use any other commercially or privately generated certificate. This requirement is true for all mobile device management solutions, not just Intune.
+
+        The Symantec certificate creates an application enrollment token (AET). The AET can be installed on a device when the device enrolls for mobile device management, or it can be installed out-of-band from a secure website or from an email attachment. Administrators must sign every LOB app with the Symantec certificate, using the tools provided in the [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=268439). When users attempt to install LOB apps, the Windows Phone operating system checks the signature in the AET against the signature on the app. If the signatures match, the installation is allowed to proceed. If the AET cannot be verified, installation fails. There are several reasons the AET might not be verified:
+
+        -   The AET was never installed on the device
+
+        -   The AET has expired
+
+        -   The AET was not created using the same Symantec certificate used to sign the app
+
+        Windows Phone does not require that the AET be present during MDM enrollment, but prior to the November 2014 release, Intune required the AET and a signed ssp.xap because there was no other way to install the AET and ssp.xap except during enrollment.
+
+    **How is the AET created for Intune users?**
+        When administrators upload the .pfx file for their Symantec certificate, Intune automatically creates the AET and deploys it to enrolled Windows Phones. It is not necessary for Intune admins to use the AET Generator tool in the Windows Phone SDK.
+
+        > [!IMPORTANT]
+        > Intune does not support manually creating the AET and deploying it out-of-band.
+
+        **What changes happened to reduce the requirement for a Symantec certificate?**
+        For the November 2014 release, Intune made changes to allow for scenarios where companies do not have a Symantec certificate.
+
+        -   The Company Portal for Windows Phone 8.1 is available to install from the store, so it needn’t be signed with a Symantec certificate and validated against an AET. Instead, the app is validated as part of the store publishing process.
+
+        -   Windows Phone 8.1 devices can enroll with or without an AET on the phone. If an AET is available, it will be installed the first time the device synchronizes with Intune. If there is no AET, the device can still be managed by Intune, and users can install the Company Portal from the store and use most features of the Company Portal without a Symantec certificate to sign apps.
+
+        There are no changes to the Symantec requirement for Windows Phone 8 devices. Windows Phone 8 devices must have the signed ssp.xap and the AET present during enrollment or they will be blocked from enrolling.
+
+        **What functionality is supported if a Windows Phone 8.1 device is enrolled but there is no Symantec certificate?**
+        If a Windows Phone 8.1 device is enrolled but there’s no Symantec certificate, you can:
+
+        -   Create policies and push them to the device
+
+        -   Configure contact information for the IT department that will shows in the Company Portal
+
+        -   Create deep links to the store and deploy them to the Company Portal
+
+        -   Create links to web pages and deploy them to the Company Portal
+
+        -   Create terms and conditions that must be accepted by users before they can use the Company Portal
+
+        The one thing you cannot do without a Symantec certificate is deploy LOB apps.
+
+        > [!IMPORTANT]
+        > The Intune Software Publisher does not verify that apps are signed when you upload them. If you deploy unsigned apps, they will fail when users try to install them.
+
+        **What can users do if they have the Company Portal but there is no Symantec certificate?**
+        Windows Phone 8.1 devices don’t have to be enrolled before users install the Company Portal from the store. If the device is not enrolled, users are prompted to enroll. Touching the prompt in the Company Portal takes users directly to **Settings / Workplace** where they can enroll their devices.
+
+        Even without enrolling the device, uses can perform the following actions with the Company Portal installed from the store:
+
+        -   Accept or decline any terms and conditions configured by the admin. If users decline the terms and conditions, the Company Portal closes.
+
+        -   View the contact information for the IT department
+
+        -   View any enrolled devices including iOS, Android, and Windows devices
+
+        -   Use deep links to apps in the store
+
+        -   Use web links to open web pages
+
+        With the device enrolled, users can view the device in the **My Devices** list. Once enrolled, the device is subject to any deployed Intune policies. Devices must be enrolled to get the AET and install LOB apps. An unenrolled device trying to install an LOB app will be directed to enroll.
+
+        The only thing users cannot do if the company does not have a Symantec certificate is install LOB apps deployed by the admin.
+
+        **Our company already has a certificate and has been enrolling Windows Phone 8.1 devices. Do I have to do anything different now that the Company Portal is available in the store?**
+        The current ssp.xap from the Download Center still works on Windows Phone 8.1 devices. You can continue to direct users to enroll and get the company portal during installation.
+
+        **What are the advantages and disadvantages of users getting the Company Portal from the store?**
+        Advantages:
+
+        -   Users get deep links and web links, even if the Windows Phone 8.1 device isn’t enrolled
+
+        -   When Microsoft updates the Company Portal, the store app updates automatically without your downloading, signing, and redeploying the ssp.xap
+
+        -   Documentation for Windows Phone 8.1, iOS, Android, and Windows users is consistent: “Go to the store and install the Company Portal.”
+
+        -   Users see the app as it installs and get enrollment instructions when it opens
+
+        Disadvantages:
+
+        -   Users see a checkbox to install a “**company hub**” but nothing directs them to the Company Portal in the device’s app list
+
+        -   Users aren’t required to accept custom terms and conditions until they open the Company Portal
+
+        In the following circumstances, you can continue directing users to enroll and have the ssp.xap installed during enrollment:
+
+        -   If the company blocks access to the store from Windows Phones, users must get the ssp.xap installed during enrollment.
+
+        -   If users do not have Microsoft accounts configured on their Windows Phones, they will not be able to install the Company Portal from the store.
+
+        -   If the existing documentation for Windows Phone enrollment tells them to go to Settings, Workplace first, it may take a while to update the docs and direct users to the store.
+
+        **What’s the difference between the ssp.xap on the Download Center and the app in the store?**
+
+        -   The Company Portal in the store does not have to be signed by a Symantec certificate to be installed
+
+        -   The Company Portal in the store presents the terms and conditions to the user but the ssp.xap on the Download Center doesn’t
+
+        -   The Company Portal in the store is an .appx instead of a .xap
+
+        **Can I get the Company Portal file and push it to my users instead of sending them to the store?**
+        Yes. The Company Portal app can be downloaded for the following operating systems from the Download Center:
+
+        -   Windows Phone 8.1: [http://go.microsoft.com/fwlink/?LinkId=615799](http://go.microsoft.com/fwlink/?LinkId=615799)
+
+        -   Windows Phone 8.0 : [http://go.microsoft.com/fwlink/?LinkId=268440](http://go.microsoft.com/fwlink/?LinkId=268440)
+
+        -   Windows 8.1: [http://go.microsoft.com/fwlink/?LinkId=615800](http://go.microsoft.com/fwlink/?LinkId=615800)
+
+        **Can companies still use the Support Tool for Windows Intune Trial Management of Windows Phone if they don’t have a Symantec certificate, and still have users install the Company Portal from the store?**
+        Yes. If you need to do a proof of concept that includes installation of LOB apps, the trial management tool works with the store version of the company portal. Because the AET from the Symantec certificate is no longer required to enroll Windows Phone 8.1 devices, however, companies can test app installation using deep links to apps in the store.
+
+        The Support Tool for Windows Intune Trial Management of Windows Phone is only for trial subscriptions of Intune.
+
+        > [!IMPORTANT]
+        > Only use the trial management tool testing. Devices enrolled with the AET from the trial management tool must unenroll and reenroll if the Symantec certificate for the trial management tool is no longer available, or if the company obtains its own Symantec certificate for signing apps.
+
+        **Can companies start without any Symantec certificate and then add one later, even after Windows Phone 8.1 devices have enrolled?**
+        Yes. Even if Windows Phone 8.1 devices have already enrolled, you can get a Symantec certificate, sign the ssp.xap, and upload it and the pfx file. Intune will then generate the AET. Windows Phone 8.1 devices will get the AET the next time they sync, up to eight hours. Allow at least eight hours before deploying line of business apps after uploading the xap and pfx.
+
 
 -   **Android**
 

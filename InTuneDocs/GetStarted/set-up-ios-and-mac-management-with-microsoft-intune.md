@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
-author: NathBarn
+author: NathBarn 
 ---
 # Set up device management
 After you [set the MDM authority](set-mobile-device-management-authority-and-configure-microsoft-intune.md), you enable enrollment for the operating systems your organization wants to support. Certain mobile device operating systems (for example Windows and iOS) require a trust relationship between devices and [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to allow management.
