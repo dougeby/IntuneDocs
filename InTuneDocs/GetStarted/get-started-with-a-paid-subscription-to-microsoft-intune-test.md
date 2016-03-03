@@ -64,11 +64,11 @@ Ready to get started? You'll need the following when starting your paid subscrip
 
     - **Windows 10, [!INCLUDE[winblue_winrt_2](../includes/winblue_winrt_2_md.md)], [!INCLUDE[win8RT_client_1](../includes/win8RT_client_1_md.md)], or [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)] devices**
 
-        There are no certificate requirements for enrolling Windows RT and Windows devices. See [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+        There are no certificate requirements for enrolling Windows RT and Windows devices. See [Install the Windows PC client with Microsoft Intune](/Intune/deployuse/install-the-windows-pc-client-with-microsoft-intune.html). <!--lindavr: changed link from install-the-windows-pc-client-with-microsoft-intune.md, which was generatign a 404, to the absolute-->
 
     - **iOS or Mac OS X**
 
-        Get an Apple Push Notification service certificate.|Request an Apple Push Notification service certificate from Apple, as described in [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
+        Request an Apple Push Notification service certificate from Apple, as described in [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 ## Next steps
 Ready to get started?
@@ -76,5 +76,3 @@ Ready to get started?
 >[!div class="step-by-step"]
 [Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.html)
 **Sign into Intune**
-
-**Next** [Sign up or sign in to Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
