@@ -50,4 +50,4 @@ To learn more about using groups, see [Use groups to manage users and devices wi
 ## Next steps
 Congratulations! You have just completed step 5 of the *Get started with a paid subscription to Microsoft Intune* guide.
 >[!div class="step-by-step"]
->[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)  **Create policies and publish an app** >[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)  **Manage Intune licenses**
+>[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)  **Manage Intune licenses** **Create policies and publish an app** [Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
