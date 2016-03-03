@@ -32,7 +32,7 @@
 ### [Configure apps with mobile app configuration policies](configure-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
 
 ## [Protect data & devices](Protect-data-and-devices-with-microsoft-intune.md)
-### [Set up email access for iOS devices](Set-up-email-access-for-iOS-devices-using-microsoft-intune.md)
+<!-- ### [Set up email access for iOS devices](Set-up-email-access-for-iOS-devices-using-microsoft-intune.md) --> 
 ### [Specify corporate-owned devices with international mobile equipment identity (IMEI) numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
 ## [Protect apps](configure-and-manage-devices-with-microsoft-intune.md)

@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
+ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25 
 author: NathBarn
 ---
 # Set up device management
@@ -23,12 +23,12 @@ Select from the following device platform options to learn more:
 ## Set up Windows device management with Microsoft Intune
 You can use  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to manage desktops, laptops, and other devices running Windows as mobile devices. You may also want to [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) or [manage computers with Intune client software](http://technet.microsoft.com/library/dn646959.aspx) using the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] client.
 
-To access resources managed with[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] users can enroll their Windows computers as mobile devices.  Creating a DNS CNAME helps users connect to the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] company portal without entering a server name. If you want to deploy the company portal with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you will need to enable sideloading with a sideloading key.   Users can also download and install the company portal from the Store or use software included in Windows. Complete the following steps to set up Windows device management with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+To access resources managed with[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] users can enroll their Windows computers as mobile devices.  Creating a DNS CNAME helps users connect to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] company portal without entering a server name. If you want to deploy the company portal with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], you will need to enable sideloading with a sideloading key.   Users can also download and install the company portal from the Store or use software included in Windows. Complete the following steps to set up Windows device management with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 ### Set up Windows device management
 
 1.  **Set up Intune**
-    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](https://technet.microsoft.com/library/mt346013.aspx) as **Microsoft Intune** and setting up MDM.
+    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](set-mobile-device-management-authority-and-configure-microsoft-intune.md) as **Microsoft Intune** and setting up MDM.
 
 2.  **Set a DNS alias for the enrollment server address** (optional)
 
@@ -40,12 +40,12 @@ To access resources managed with[!INCLUDE[wit_nextref](./includes/wit_nextref_md
 
     2.  Type the URL of the verified domain of the company website in the **Specify a verified domain name** box and then click **Test Auto-Detection**.
 
-    3.  Create CNAME resource records for your company’s domain. The CNAME resource records must contain the following information:
+    3.  Create **CNAME** type resource records for your company’s domain. The CNAME resource records must contain the following information:
 
-        |TYPE|Host Hame|Points to|TTL|
-        |--------|-------------|-------------|-------|
-        |CNAME|enterpriseenrollment.company_domain.com|manage.microsoft.com|1 Hour|
-        |CNAME|enterpriseregistration.company_domain.com|enterpriseregistration.windows.net|1 Hour|
+        |Host Hame|Points to|TTL|
+        |-------------|-------------|-------|
+        |enterpriseenrollment.company_domain.com|manage.microsoft.com|1 Hour|
+        |enterpriseregistration.company_domain.com|enterpriseregistration.windows.net|1 Hour|
         For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com. If there is more than one verified domain, create a CNAME record for each domain.
 
         -   `manage.microsoft.com` – Supports a redirect to the Intune service with domain recognition from the email’s domain name
@@ -76,5 +76,5 @@ To access resources managed with[!INCLUDE[wit_nextref](./includes/wit_nextref_md
 4.  **Tell users how to get access to company resources with the company portal**
     Your users will need to know how to enroll their devices and what to expect once they're brought into management. [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
-### See Also
+### See also
 [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
