@@ -1,8 +1,8 @@
 ---
-title: Set up Windows Phone management with Microsoft Intune
+title: Renew a Symantec enterprise code-signing certificate to use with Microsoft Intune
 ms.custom: na
 ms.reviewer: na
-ms.service: microsoft-intune 
+ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
