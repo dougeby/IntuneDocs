@@ -27,15 +27,15 @@ For more information about using your custom domain with a cloud-based service f
 
 When you subscribe to a cloud-based service from Microsoft, your instance of that service becomes a tenant of Microsoft Azure Active Directory (Azure AD), which provides identity and directory services for your cloud-based service.
 
-For more information about your Azure AD tenant, see [What is an Azure AD tenant?](http://technet.microsoft.com/library/jj573650.aspx).
+For more information about your Azure AD tenant, see [What is an Azure AD tenant?](http://technet.microsoft.com/library/jj573650.aspx)
 
 ## Next steps
 Congratulations! You have just completed step 2 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]
->[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)  **Sign in to Intune**
->
 >[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)  **Sync Active Directory and add users to Intune**
+>
+>[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)  **Sign in to Intune**
 
 <!--**Next** [Sync Active Directory and add users to Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)
 

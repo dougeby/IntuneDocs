@@ -11,7 +11,7 @@ author: Staciebarker
 ---
 
 # 7. Customize the company portal
-The [!INCLUDE[wit_iwportal_1](./includes/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
+The [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 
 When you customize the company portal, the configurations apply to both the company portal website and company portal apps.
 
@@ -53,7 +53,7 @@ After you save your changes, you can use the links provided at the bottom of the
 
 ## Next steps
 Congratulations! You have just completed step 7 of the *Get started with a paid subscription to Microsoft Intune* guide.
-
-**Next** [Enroll computers in Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
-
-**Prev** [Create policies and publish an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)
+>[!div class="step-by-step"]
+>[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)  **Enroll computers in Intune**
+>
+>[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)  **Create policies and publish an app**
