@@ -37,7 +37,7 @@ There are 9 steps in this guide, not including post-configuration tasks. Total t
 8. [Enroll computers](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 9. [Enroll mobile devices and install an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)
 
-[Post-configuration tasks](post-configuration tasks.md)
+[Post-configuration tasks](post-configuration-tasks.md)
 
 ## Before you begin
 Starting with a paid subscription means that you're ready to deploy Intune and make changes to your existing network infrastructure. This could range from simply adding or updating your internal and external DNS records to connecting your existing Active Directory accounts to Azure Active Directory. Whatever mix of Intune  mobile device management features you decide on, you'll need to  carefully plan how Intune will interact with your existing network components and services. Specifically, you should review:
