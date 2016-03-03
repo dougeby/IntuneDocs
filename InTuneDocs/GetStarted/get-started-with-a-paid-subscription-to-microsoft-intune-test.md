@@ -75,4 +75,4 @@ Ready to get started?
 
 >[!div class="step-by-step"]
 [Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.html)
-**Sign into Intune**
+**Sign in to Intune**
