@@ -19,11 +19,11 @@ Learn more about directory integration at [Directory integration](http://technet
 
 After you've added users to your Intune subscription, we recommend that you grant a few user accounts administrative credentials. The console that you use to assign administrative credentials depends on the type of administrator you want to assign:
 
--   **Tenant administrator**: Use the **[!INCLUDE[wit_icp_1](./includes/wit_icp_1_md.md)]** to assign this type of administrator to manage your subscription, including billing, cloud storage, and managing the users who can use [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+-   **Tenant administrator**: Use the **[!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)]** to assign this type of administrator to manage your subscription, including billing, cloud storage, and managing the users who can use [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
--   **Service administrator**: Use the **[!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)]** to assign this type of administrator for day-to-day tasks including management of mobile devices or computers, deploying policy or software, and running reports.
+-   **Service administrator**: Use the **[!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]** to assign this type of administrator for day-to-day tasks including management of mobile devices or computers, deploying policy or software, and running reports.
 
-To learn more about administrator accounts, see [Intune administrator accounts and special permissions](what-to-know-before-setting-up-microsoft-intune.md#BKMK_AdminAccounts).
+To learn more about administrator accounts, see [Intune administrator accounts and special permissions](/Intune/Understand/what-to-know-before-setting-up-microsoft-intune.html#BKMK_AdminAccounts).
 
 To learn about the benefits of synchronizing user accounts from your local directory to Azure AD, see
             [Similarities between Active Directory and Azure AD](http://technet.microsoft.com/library/dn518177.aspx).
@@ -31,6 +31,7 @@ To learn about the benefits of synchronizing user accounts from your local direc
 ## Next steps
 Congratulations! You have just completed step 3 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
-**Next** [Manage Intune licenses](get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)
-
-**Prev** [Configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+>[!div class="step-by-step"]
+>[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)  **Manage Intune licenses**
+>
+>[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)  **Configure a custom domain name**

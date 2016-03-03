@@ -50,7 +50,6 @@ Congratulations! You have just completed step 1 of the *Get started with a paid 
 
 
 >[!div class="step-by-step"]
-[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-test.md)**Get started with a paid subscription**
-
-[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)
-**Configure a custom domain**
+>[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)  **Configure a custom domain**
+>
+>[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-test.md)  **Get started with a paid subscription**
