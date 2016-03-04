@@ -14,6 +14,7 @@ author: Nbigman
 
 ## Group basics-->
 Groups in Intune provide great flexibility in managing your devices and users. You can set up groups to suit your organizational needs according to:
+
 - geographic location
 - department
 - hardware characteristics
@@ -25,7 +26,7 @@ Groups in Intune provide great flexibility in managing your devices and users. Y
 ### Working with groups
 The default view of the Groups node in the Intune Management console is:
 
-![](../media/PlanDesign/Group-planning/Intune_Planning_Groups_Default_small.jpg)
+![](../media/Group-planning/Intune_Planning_Groups_Default_small.jpg)
 
 Policies are deployed onto groups, so group hierarchy is one of your key design considerations. It is also important to know that a group’s parent group cannot be changed once the group is created, so the design of your groups is critically important from the moment you start using the Intune service. Some of the recommended practices for designing a group hierarchy based on your organizational needs are  described here.
 
@@ -44,7 +45,7 @@ If your organization allows employees to use their own devices at work (BYOD), p
 
 In the case of BYOD or a mix, be careful to plan policies that do not infringe on local privacy regulations. <!-- I don't understand this sentence: This will also help employees understand the corporate management of their personal devices and may drive more towards application-level management rather than device-level management.--> Create a parent group for all users who will be bringing their own devices. This group can then be used to apply policies that are applicable to all users in this category.
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_BYOD_small.jpg)
+![](./media/Group-planning/Intune_Planning_Groups_BYOD_small.jpg)
 
 Similarly, you can create a group for the CO users in your organization:
 
@@ -59,11 +60,11 @@ These screen shots show how to create Intune groups based on groups synchronized
 
 Under Membership criteria, select **US Users Group**, synchronized from AD, as the security group to use under Membership rules.
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_Criteria_small.jpg)
+![](./media/Group-planning/Intune_Planning_Groups_AD_Criteria_small.jpg)
 
 Review and then choose **Finish** to finish creating the group.
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_Summary_small.jpg)
+![](./media/Group-planning/Intune_Planning_Groups_AD_Summary_small.jpg)
 
 In our example, we’ve also created a Middle East and Asia group, MEA.
 
@@ -73,7 +74,7 @@ In our example, we’ve also created a Middle East and Asia group, MEA.
 ## Groups for specific hardware
 If your organization requires policies that apply to specific hardware types, you can create groups based on this requirement. You can base them on specific groups that you have already created in your on-premises AD, and synchronize them to Azure AD. You can also create them directly in Azure AD. In this example, we use the **US Users Group** as the parent for the **Laptop Users** group.
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_Laptop_small.jpg)
+![](./media/Group-planning/Intune_Planning_Groups_Laptop_small.jpg)
 
 At this point, the groups hierarchy should appear as shown below. As you see, there are now members within the Intune group **Laptop Users**. Any policies applied to this group will now be applied to BYOD laptop users from the US region.
 
@@ -89,41 +90,41 @@ Following the same method from the previous examples, we can create groups based
 >
 > You cannot provision groups dynamically based on the OS of the device . Do this using AD or AAD Security groups.
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_OS_Hierachy_small.jpg)
+![](./media/Group-planning/Intune_Planning_Groups_OS_Hierachy_small.jpg)
 
-Once all your User groups are populated based on these organizational requirements, your group hierarchy should look like this:
+Once all your User groups are populated based on these organizational requirements, your group hierarchy should look something like this:
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_Midpoint_Hierachy_small.jpg)
+![](./media/Group-planning/Intune_Planning_Groups_Midpoint_Hierachy_small.jpg)
 
 This hierarchy can be used to apply the organization's policies appropriately.
 
 ## Device groups
-You can also create similar groups for devices in your organization as shown below, starting with a broad group that includes all employee owned devices, for the BYOD scenario:
+You can also create similar groups for devices as shown below, starting with a broad group that includes all employee-owned devices, for the BYOD scenario:
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_Device_General_small.jpg)
+![](./media/Group-planning/Intune_Planning_Groups_Device_General_small.jpg)
 
 Make sure you select **All devices (computers and mobile)** so that the group will include all BYO devices:
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_Device_Criteria_small.jpg)
+![](./media/Group-planning/Intune_Planning_Groups_Device_Criteria_small.jpg)
 
-Review and click **Finish** to create the BYOD group.
+Review and choose **Finish** to create the BYOD group.
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_Device_Summary_small.jpg)
+![](./media/Group-planning/Intune_Planning_Groups_Device_Summary_small.jpg)
 
 Continue to create device groups, until you have a device group hierarchy similar to the user group hierarchy. Then your group node in the Intune console should look similar to this:
 
-![](./media/PlanDesign/Group-planning/Intune_Groups_Hierarchy_Final_Small.jpg)
+![](./media/Group-planning/Intune_Groups_Hierarchy_Final_Small.jpg)
 
 ## Group hierarchies and naming conventions
-To make the management of policies easier we recommend that you name each policy according to  purpose, platform and  scope to which it is applied. This naming standard should follow the group structure that you created  in preparation for applying your policies.
-For instance, for an Android policy that is applied to all corporate, android, mobile devices at the regional level US, the policy can be named
+To make policy management easier, we recommend that you name each policy according to  purpose, platform, and scope to which it is applied. This naming standard should follow the group structure that you created in preparation for applying your policies.
+For instance, for an Android policy that is applied to all corporate, android, mobile devices at the US regional level, the policy can be named
 **CO_US_Mob_Android_General**.
 
-![](./media/PlanDesign/Group-planning/Intune_planning_policy_android_small.jpg)
+![](./media/Group-planning/Intune_planning_policy_android_small.jpg)
 
 By naming the policies this way you will be able to quickly identify policies and their intended use and scope from the console’s policies node, as shown:
 
-![](./media/PlanDesign/Group-planning/Intune_planning_policy_view_small.jpg)
+![](./media/Group-planning/Intune_planning_policy_view_small.jpg)
 
 ## Next steps
 Create groups
