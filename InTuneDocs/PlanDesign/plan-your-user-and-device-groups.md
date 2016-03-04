@@ -18,7 +18,7 @@ Groups in Intune provide great flexibility in managing your devices and users. Y
 ### Working with groups
 The default view of the Groups node in the Intune Management console is:
 
-![](./media/Group-planning/Intune_Planning_Groups_Default_small.jpg)
+![](../media/Group-planning/Intune_Planning_Groups_Default_small.jpg)
 
 Policies are deployed onto groups, so group hierarchy is one of your key design considerations. It is also important to know that a group’s parent group cannot be changed once the group is created, so the design of your groups is critically important from the moment you start using the Intune service. Some of the recommended practices for designing a group hierarchy based on your organizational needs are  described here.
 
@@ -72,7 +72,7 @@ Using the same method that we followed for the other examples, we can create gro
 
 > [!NOTE]
 > If you have users using multiple mobile platforms/operating systems and do not have an automated way to categorize users  as Android users, iOS users or Windows users, consider applying policies at the device level, which will give you better flexibility in applying OS-specific policies.
-> 
+>
 > You cannot provision groups dynamically based on the OS of the device . Do this using AD or AAD Security groups.
 
 ![](./media/Group-planning/Intune_Planning_Groups_OS_Hierachy_small.jpg)
@@ -102,7 +102,7 @@ Continue to create device groups, until you have a device group hierarchy simila
 
 ## Group hierarchies and naming conventions
 To make the management of policies easier we recommend that you name each policy according to  purpose, platform and  scope to which it is applied. This naming standard should follow the group structure that you created  in preparation for applying your policies.
-For instance, for an Android policy that is applied to all corporate, android, mobile devices at the regional level US, the policy can be named 
+For instance, for an Android policy that is applied to all corporate, android, mobile devices at the regional level US, the policy can be named
 **CO_US_Mob_Android_General**.
 
 ![](./media/Group-planning/Intune_planning_policy_android_small.jpg)
@@ -110,4 +110,3 @@ For instance, for an Android policy that is applied to all corporate, android, m
 By naming the policies this way you will be able to quickly identify policies and their intended use and scope from the console’s policies node, as shown:
 
 ![](./media/Group-planning/Intune_planning_policy_view_small.jpg)
-
