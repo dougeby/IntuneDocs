@@ -1,5 +1,5 @@
 [submodule "ThemeIntuneUnderstand"]
-	path = InTuneDocs/Understand/_themes
+	path = InTuneDocs/EndUser/_themes
 	url = https://github.com/Microsoft/templates.docs.msft
 	branch = master
 [submodule "ThemeIntuneGetStarted"]
