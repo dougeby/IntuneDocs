@@ -2,7 +2,7 @@
 	path = InTuneDocs/Understand/_themes
 	url = https://github.com/Microsoft/templates.docs.msft
 	branch = master
-[submodule "ThemeEndUserUnderstand"]
+[submodule "ThemeIntuneEndUser"]
 	path = InTuneDocs/EndUser/_themes
 	url = https://github.com/Microsoft/templates.docs.msft
 	branch = master
