@@ -14,6 +14,7 @@ author: Nbigman
 
 Additionally, you can filter groups to allow your IT admins permissions to only perform operations on the groups you specify. For more information, see [Use filtered group views to help secure and manage users and devices](use-groups-to-manage-users-and-devices-with-microsoft-intune.md#BKMK_Filter) in this topic.-->
 ## The Groups workspace
+quick test
 To create and manage groups, you use the **Groups** workspace in the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]. The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
 
 -   Alerts
