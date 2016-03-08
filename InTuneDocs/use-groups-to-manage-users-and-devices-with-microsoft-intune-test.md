@@ -143,8 +143,8 @@ You can find the newly created group in the **Groups** list, in the **Groups** w
 > [!TIP]
 > Security groups are a great resource for populating user groups. Since your security groups define who has access to which resources, that can translate well into  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user groups. Security groups that are synced from Active Directory to Azure Active Directory, or that are created directly in Azure Active Directory through the Office 365 admin center or the Azure Administration portal, are all available to you for creating user groups in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-## Use filtered group views to help secure and manage users and devices
-Filtered group views let you restrict which groups each IT admin can manage. This can be useful when:
+## Tailor views to admin roles
+Filtered group views let you tailor the view admins can see based on their role and restrict which groups each IT admin can manage. This can be useful when:
 
 -   Your IT admins should only be able to deploy items to specific users and devices.
 
@@ -188,18 +188,20 @@ You can edit your group to change its name and description and who belongs to th
 You can delete a group that no longer serves the needs of your organization. Deleting a group does not delete the users that belong to that group.
 
 ## Next steps
-###Groups and policy
-Once you've set up your groups and policies, you'll want to check the practical implications of your design. Here are some helpful tips and information about groups and policy.
 
-You can retrieve a lot of information regarding each device managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Select any device from a device group and browse through the categories of information at the top of the screen. Select **Policy** . You'll see something like this screenshot of an Android device's policy settings.
+### Check your design
+After you set up your groups and policies, check the practical implications of your design by reviewing the **Intended Value** and the **Status**.
+
+1. Select any device from a device group and browse through the categories of information at the top of the screen.
+2. Select **Policy** . You'll see something like this screenshot of an Android device's policy settings.
 
 ![](../media/Intune-Device-Policy-v.2.jpg)
 
-Each policy has an **Intended Value** and a **Status**. The intended value is what you meant to achieve when assigning the policy. The status is what is actually achieved when all of the policies that apply to the device, as well as the restrictions and requirements of the hardware and the operating system, are considered together.  In the screenshot you can see two clear examples:
+Each policy has an **Intended Value** and a **Status**. The intended value is what you meant to achieve when assigning the policy. The status is what you actually achieved when all of the policies that apply to the device, as well as the restrictions and requirements of the hardware and the operating system, are considered together.  In the screenshot you can see two clear examples:
 
 -   **Allow simple passwords** is set to **Yes**, as shown in the **Intended Value** column, but its **Status** is **Not applicable**. This is because simple passwords are not supported for Android devices.
 
--   Similarly, the expanded policy item**Email settings for iOS devices** is not applied to this device, as it is an Android device.
+-   Similarly, the expanded policy item, **Email settings for iOS devices**, is not applied to this device, because it is an Android device.
 
 > [!NOTE]
 > Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
