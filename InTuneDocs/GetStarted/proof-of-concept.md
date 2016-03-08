@@ -18,7 +18,7 @@ Begin by reviewing the discovery questions to help scope and define your proof o
 ## Discovery questions
 Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in the  Rollout Planning Guide and Project Plan.
 
--   What are the core scenarios [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] must meet to be successful for your company?
+-   What are the core scenarios [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] must meet to be successful for your company?
 
 -   What are the features you want to investigate and validate?
 
@@ -31,7 +31,7 @@ Review this section for guidance on focus-area activities for this stated phase 
 You must know the scenarios you need to validate, and what you need to complete this validation, before deploying your PoC infrastructure.
 
 ### Help desk
-The help desk does not need preparation for this phase of the project as there won't be any production users or devices involved. However, this is an opportunity for the help desk to learn about the deployment and operation of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+The help desk does not need preparation for this phase of the project as there won't be any production users or devices involved. However, this is an opportunity for the help desk to learn about the deployment and operation of [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 ### Awareness
 The technical team and executive sponsorship should have visibility into the progress of scenario testing. The design team needs to be aware of the lessons learned to incorporate in its  design.
@@ -62,3 +62,5 @@ Here are some  challenges that you may encounter in the **Proof of concept** pha
 
     **Mitigation:** Work with the executive sponsor, operations, telecom, network, and user teams to understand the requirements of a client management solution.
 
+### See also
+[Rollout phases for Microsoft Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)

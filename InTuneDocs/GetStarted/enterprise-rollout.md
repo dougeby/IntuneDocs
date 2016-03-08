@@ -88,3 +88,5 @@ Here are some  challenges that you may encounter in the **Enterprise rollout** p
 
     **Mitigation:** Everyone learns at a different pace. Some pick up new technology without any instruction, while others require some guidance or hand-holding. Training can offer tips for ensuring users are getting the most out of the solution, and can be broken out into smaller brown bags or by department to not overwhelm users or appear too detailed. Position training as a value-add and offer segmented training/brown bags. To maximize user learning and adoption, incorporate a variety of training methods into your plan.
 
+### See also
+[Rollout phases for Microsoft Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
