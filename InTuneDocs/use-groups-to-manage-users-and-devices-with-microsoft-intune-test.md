@@ -23,7 +23,7 @@ To create and manage groups, you use the **Groups** workspace in the [!INCLUDE[w
 -   Policy
 -   Software management
 
-Additionally, a hierarchical view of your groups is shown that lets you view status summaries and identify and resolve problems for members of a selected group.
+Also, your group hierarchy is displayed with status summaries to help you identify and resolve problems for members of a selected group.
 
 <!-- moved to plan topic.
 ### Built-in groups
@@ -102,13 +102,13 @@ Additionally, a hierarchical view of your groups is shown that lets you view sta
 
 ## Create a device group
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **Overview** &gt; **Create Group**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **Overview** &gt; **Create Group**.
 
-2.  Specify a name and optional description for the group, select a device group as the parent group, then click **Next**.
+2.  Provide a name and optional description for the group and select a device group as the parent group. Choose **Next**.
 
 3.  On the **Define Membership Criteria** page, select the type of devices the group will include. Additional options to configure the group depend on the type of devices you select:
 
-    -   **Computer:** Specify whether to include all members of the parent group, the Organizational Units you want to include or exclude and the domains you want to include or exclude. The OU and domain information for a computer is obtained from inventory.
+    -   **Computer:** Specify whether to include all members of the parent group, the Organizational Units (OU) you want to include or exclude, and the domains you want to include or exclude. The OU and domain information for a computer is obtained from inventory.
 
     -   **Mobile:** Specify to include only mobile devices that are managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], those managed by Exchange ActiveSync, or both.
 
@@ -116,15 +116,15 @@ Additionally, a hierarchical view of your groups is shown that lets you view sta
 
 4.  On the **Define Direct Membership** page, include or exclude individual devices you specify by clicking **Browse**. If you use the option to select devices that are not in the parent group you specified, those devices are automatically added to the parent group.
 
-5.  On the **Summary** page, review the actions that will be taken, and then click **Finish**.
+5.  On the **Summary** page, review the actions that will be taken. Choose **Finish**.
 
-The newly created group can be found in the **Groups** list, in the **Groups** workspace, under the parent group. From here, you can also edit or delete the group.
+You can find the newly created group in the **Groups** list, in the **Groups** workspace, under the parent group. From here, you can also edit or delete the group.
 
 ## Create a user group
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **Overview** &gt; **Create Group**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **Overview** &gt; **Create Group**.
 
-2.  Specify a name and optional description for the group, select a user group as the parent group, then click **Next**.
+2.  Provide a name and optional description for the group and select a user group as the parent group. Choose **Next**.
 
 3.  On the **Define Membership Criteria** page, specify whether to include all members of the parent group or to start with an empty group.  You can then  include or exclude members based on the **Security groups** of users that you manually configure in the [Office 365 admin center](http://go.microsoft.com/fwlink/?LinkId=698854) or that synchronize from your local Active Directory. If the membership of a security group changes, membership of user groups based on that security group can also change.
 
@@ -136,17 +136,14 @@ The newly created group can be found in the **Groups** list, in the **Groups** w
 
 4.  On the **Define Direct Membership** page, include or exclude individual users you specify by clicking **Browse**. If you use the option to select users that are not in the parent group you specified, those devices are automatically added to the parent group.
 
-5.  On the **Summary** page, review the actions that will be taken, and then click **Finish**.
+5.  On the **Summary** page, review the actions that will be taken. Choose **Finish**.
 
-The newly created group can be found in the **Groups** list, in the **Groups** workspace, under the parent group. From here, you can also edit or delete the group.
+You can find the newly created group in the **Groups** list, in the **Groups** workspace, under the parent group. From here, you can also edit or delete the group.
 
 > [!TIP]
 > Security groups are a great resource for populating user groups. Since your security groups define who has access to which resources, that can translate well into  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user groups. Security groups that are synced from Active Directory to Azure Active Directory, or that are created directly in Azure Active Directory through the Office 365 admin center or the Azure Administration portal, are all available to you for creating user groups in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-## Managing your groups
-Once you’ve created your groups you will continue to manage them according to the needs of your organization.
-
-### Use filtered group views to help secure and manage users and devices
+## Use filtered group views to help secure and manage users and devices
 Filtered group views let you restrict which groups each IT admin can manage. This can be useful when:
 
 -   Your IT admins should only be able to deploy items to specific users and devices.
@@ -155,7 +152,7 @@ Filtered group views let you restrict which groups each IT admin can manage. Thi
 
 You can configure filtered group views for service administrators in the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] administrator console. For details, see [What to know before setting up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md).
 
-After configuring filtered group views for a service administrator, that administrator:
+After you configure filtered group views for a service administrator, that administrator:
 
 -   Can view and select only the groups you specified when deploying software or policies, or when using reports
 
@@ -175,7 +172,7 @@ After configuring filtered group views for a service administrator, that adminis
 
 ### Configure filtered group views
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Admin** &gt; **Administrator Management** &gt; **Service Administrators**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin** &gt; **Administrator Management** &gt; **Service Administrators**.
 
 2.  Select the service administrator for whom you want to filter groups, and then click **Manage Groups**.
 
@@ -183,7 +180,9 @@ After configuring filtered group views for a service administrator, that adminis
 
 After you configure the filtered group views, the IT admin will be able to view and select only the groups you selected.
 
-## Other management tasks for groups
+## Manage your groups
+After you create your groups, you will continue to manage them according to the needs of your organization.
+
 You can edit your group to change its name and description and who belongs to the group.
 
 You can delete a group that no longer serves the needs of your organization. Deleting a group does not delete the users that belong to that group.
