@@ -13,8 +13,8 @@ author: Nbigman
 <!-- This is the same intro as for the Plan topic. Not sure if it's worth repeating here. Maybe this should be Set up your groups?**Groups** in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics).
 
 Additionally, you can filter groups to allow your IT admins permissions to only perform operations on the groups you specify. For more information, see [Use filtered group views to help secure and manage users and devices](use-groups-to-manage-users-and-devices-with-microsoft-intune.md#BKMK_Filter) in this topic.-->
-## The Groups workspace
-quick test
+<!--## The Groups workspace-->
+
 To create and manage groups, you use the **Groups** workspace in the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]. The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
 
 -   Alerts
@@ -25,8 +25,9 @@ To create and manage groups, you use the **Groups** workspace in the [!INCLUDE[w
 
 Additionally, a hierarchical view of your groups is shown that lets you view status summaries and identify and resolve problems for members of a selected group.
 
+<!-- moved to plan topic.
 ### Built-in groups
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] provides nine built-in groups that you cannot edit or delete: <!--maybe a screen shot would be best?-->
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] provides nine built-in groups that you cannot edit or delete:
 
 -   **All Users**
     -   Ungrouped Users
@@ -36,8 +37,9 @@ Additionally, a hierarchical view of your groups is shown that lets you view sta
         -   All Direct Managed Devices
         -   All Exchange ActiveSync Managed Devices
     -   All Corporate-owned Devices
-    -   Ungrouped Devices
+    -   Ungrouped Devices -->
 
+<!-- moved to Plan topic  
 ## Group memberships
 
 -   A group can contain either users or devices, but not both.
@@ -95,11 +97,10 @@ Additionally, a hierarchical view of your groups is shown that lets you view sta
 >
 > Be careful naming your policies so that you can easily identify them later. For example, a good, descriptive policy name is **WP Email Policy for Entire Company**.
 >
-> Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.
+> Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.-->
 
-## How to create Microsoft Intune groups
 
-### <a name="BKMK_CreateDevGroup"></a>To create a device group
+## Create a device group
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **Overview** &gt; **Create Group**.
 
@@ -109,7 +110,7 @@ Additionally, a hierarchical view of your groups is shown that lets you view sta
 
     -   **Computer:** Specify whether to include all members of the parent group, the Organizational Units you want to include or exclude and the domains you want to include or exclude. The OU and domain information for a computer is obtained from inventory.
 
-    -   **Mobile:** Specify to include only mobile devices that are managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], those managed by Exchange ActiveSync, or both.
+    -   **Mobile:** Specify to include only mobile devices that are managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], those managed by Exchange ActiveSync, or both.
 
     -   **All devices:** This option includes all devices with no exclusions based on criteria.
 
@@ -119,7 +120,7 @@ Additionally, a hierarchical view of your groups is shown that lets you view sta
 
 The newly created group can be found in the **Groups** list, in the **Groups** workspace, under the parent group. From here, you can also edit or delete the group.
 
-#### To create a user group
+## Create a user group
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **Overview** &gt; **Create Group**.
 
@@ -140,19 +141,19 @@ The newly created group can be found in the **Groups** list, in the **Groups** w
 The newly created group can be found in the **Groups** list, in the **Groups** workspace, under the parent group. From here, you can also edit or delete the group.
 
 > [!TIP]
-> Security groups are a great resource for populating user groups. Since your security groups define who has access to which resources, that can translate well into  [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] user groups. Security groups that are synced from Active Directory to Azure Active Directory, or that are created directly in Azure Active Directory through the Office 365 admin center or the Azure Administration portal, are all available to you for creating user groups in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+> Security groups are a great resource for populating user groups. Since your security groups define who has access to which resources, that can translate well into  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user groups. Security groups that are synced from Active Directory to Azure Active Directory, or that are created directly in Azure Active Directory through the Office 365 admin center or the Azure Administration portal, are all available to you for creating user groups in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 ## Managing your groups
 Once you’ve created your groups you will continue to manage them according to the needs of your organization.
 
-### <a name="BKMK_Filter"></a>Use filtered group views to help secure and manage users and devices
+### Use filtered group views to help secure and manage users and devices
 Filtered group views let you restrict which groups each IT admin can manage. This can be useful when:
 
 -   Your IT admins should only be able to deploy items to specific users and devices.
 
 -   You want to display only relevant groups to each IT admin.
 
-You can configure filtered group views for service administrators in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administrator console. For details, see [What to know before setting up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md).
+You can configure filtered group views for service administrators in the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] administrator console. For details, see [What to know before setting up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md).
 
 After configuring filtered group views for a service administrator, that administrator:
 
@@ -172,7 +173,7 @@ After configuring filtered group views for a service administrator, that adminis
 
     -   **Policy Overview**
 
-##### To configure filtered group views
+### Configure filtered group views
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Admin** &gt; **Administrator Management** &gt; **Service Administrators**.
 
@@ -187,12 +188,13 @@ You can edit your group to change its name and description and who belongs to th
 
 You can delete a group that no longer serves the needs of your organization. Deleting a group does not delete the users that belong to that group.
 
-## Groups and policy
+## Next steps
+###Groups and policy
 Once you've set up your groups and policies, you'll want to check the practical implications of your design. Here are some helpful tips and information about groups and policy.
 
-You can retrieve a lot of information regarding each device managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. Select any device from a device group and browse through the categories of information at the top of the screen. Select **Policy** . You'll see something like this screenshot of an Android device's policy settings.
+You can retrieve a lot of information regarding each device managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Select any device from a device group and browse through the categories of information at the top of the screen. Select **Policy** . You'll see something like this screenshot of an Android device's policy settings.
 
-![](./media/Intune-Device-Policy-v.2.jpg)
+![](../media/Intune-Device-Policy-v.2.jpg)
 
 Each policy has an **Intended Value** and a **Status**. The intended value is what you meant to achieve when assigning the policy. The status is what is actually achieved when all of the policies that apply to the device, as well as the restrictions and requirements of the hardware and the operating system, are considered together.  In the screenshot you can see two clear examples:
 
@@ -202,7 +204,3 @@ Each policy has an **Intended Value** and a **Status**. The intended value is wh
 
 > [!NOTE]
 > Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
-
-## See Also
-[Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md)
-[How to buy Intune](http://technet.microsoft.com/en-us/library/dn646949.aspx)
