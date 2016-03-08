@@ -2,6 +2,7 @@
 
 ## [Ways to do enterprise mobility](Ways-to-do-enterprise-mobility.md)
 ## [Introduction to Intune](introduction-to-microsoft-intune.md)
+## [Start a free 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ## [Common ways to use Intune](common-ways-to-use-intune.md)
 ## [What to know before you start](What-to-know-before-setting-up-microsoft-intune.md)
 ## [Choose how to manage devices](choose-how-to-manage-devices.md)
