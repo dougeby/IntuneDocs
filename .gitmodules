@@ -1,4 +1,8 @@
 [submodule "ThemeIntuneUnderstand"]
+	path = InTuneDocs/Understand/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
+[submodule "ThemeEndUserUnderstand"]
 	path = InTuneDocs/EndUser/_themes
 	url = https://github.com/Microsoft/templates.docs.msft
 	branch = master
