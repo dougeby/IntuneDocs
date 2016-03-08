@@ -2,7 +2,6 @@
 # [Get started](what-s-new-in-microsoft-intune.md)
 
 ## [What's new](What-s-new-in-microsoft-intune.md) 
-## [Get started with a 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ## [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune-test.md)
 ### [1. Sign into Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [2. Configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)
