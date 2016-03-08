@@ -12,15 +12,14 @@ author: Nbigman
 This topic describes the phases that are generally associated with a service deployment.
 
 ## Rollout phases
-The typical phases of a technical deployment are Project Scope, Proof of Concept, Pilot, Enterprise rollout, and Run State. These are defined briefly here, with links to more information and recommendations about how to proceed through each phrase.
+The typical phases of a technical deployment are Project Scope, Proof of Concept, Pilot, Enterprise rollout, and Run State. These are defined briefly here, with links to more information and recommendations about how to proceed through each phase.
 
 -   **[Project scope](project-scope.md):** Understand goals, deployment, and rollout strategy.
 
--   **[Proof of concept](proof-of-concept.md):** Test technical deployment &amp; network architecture.
+-   **[Proof of concept](proof-of-concept.md):** Test technical deployment and network architecture.
 
 -   **[Pilot](pilot.md):** With a sample of enrolled devices, validate scenarios, resources, and rollout plans with user in preparation for broad rollout.
 
 -   **[Enterprise rollout](enterprise-rollout.md):** Launch across all departments and user groups.
 
 -   **[Run state](run-state.md):** Operations plan for all key phases/focus areas, increase user-adoption.
-
