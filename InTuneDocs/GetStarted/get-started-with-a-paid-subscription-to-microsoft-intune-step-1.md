@@ -17,7 +17,7 @@ Before  you either sign up or sign in to Intune, consider:
 
 -   Or if your organization has an Enterprise Agreement or equivalent volume licensing agreement with Microsoft
 
-## When to sign up for a NEW account
+## When to sign up for a new account
 
 Sign up for a new account if either of the following is true:
 
@@ -26,7 +26,7 @@ Sign up for a new account if either of the following is true:
 
     If you sign up for a new account, you cannot later use an existing work or school account to manage that account, or combine it with existing volume licensing agreements.
 
-## When to sign in with your WORK or SCHOOL account
+## When to sign in with your work or school account
 Sign in with your work or school account if:
 
 - **You have a work or school account.** You have a work or school account provided with a volume licensing agreement or Office 365 subscription, and you are using this trial to evaluate [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].**
