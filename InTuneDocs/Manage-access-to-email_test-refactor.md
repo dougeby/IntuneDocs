@@ -29,5 +29,5 @@ Then create a conditional access policy and deploy it to users.
 
 Select one of the following to learn more:
 > [!div class="op_single_selector"]
-- [Exchange Online and Exchange Online Dedicated](Manage-access-to-exchange-online-test-refactor)
-- [Exchange On-premises and legacy Exchange Online Dedicated](Manage-access-to-exchange-on-premises-test-refactor)
+- [Exchange Online and Exchange Online Dedicated](Manage-access-to-exchange-online-test-refactor.md)
+- [Exchange On-premises and legacy Exchange Online Dedicated](Manage-access-to-exchange-on-premises-test-refactor.md)
