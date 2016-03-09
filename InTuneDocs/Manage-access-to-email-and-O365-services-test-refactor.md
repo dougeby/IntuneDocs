@@ -41,7 +41,7 @@ A typical flow of conditional access might as follows:
 See this 4 minute video that describes how this works using email as an example:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lYx3YIezccg" frameborder="0" allowfullscreen></iframe>
 ## Next steps
-- [Manage device compliance policy](../DeployUse/manage-device-compliance-policies-for-microsoft-intune.md)
+- [Manage device compliance policy](./DeployUse/manage-device-compliance-policies-for-microsoft-intune.md)
 
 - [Manage access to email](Manage-access-to-email_test-refactor.md)
 
