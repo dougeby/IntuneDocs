@@ -1,5 +1,5 @@
 ---
-title: What&#39;s new in Microsoft Intune
+title: What's new in Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: get-started-article
 ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 author: Lindavr
 ---
-# What&#39;s new in Microsoft Intune
+# What's new in Microsoft Intune
 
 ## January 2016
 
@@ -61,6 +61,13 @@ When managing Windows 10 devices, Intune will be able to create and deploy confi
 
 
 ## Archive
+> [!div class="op_single_selector"]
+- [December 2015](name-of-the-file.md)
+- [November 2015](name-of-the-file.md)
+- [October 2015](name-of-the-file.md)
+- [September 2015](name-of-the-file.md)
+- [August 2015](name-of-the-file.md)
+<!--
 * [December 2015](what-s-new-in-microsoft-intune.md#BKMK_Dec2015)
 * [November 2015](what-s-new-in-microsoft-intune.md#BKMK_Nov2015)
 * [October 2015](what-s-new-in-microsoft-intune.md#BKMK_Oct2015)
@@ -335,7 +342,7 @@ The following changes have been made to the company portal apps in this release.
 **Android**
 
 Microsoft automatically collects anonymous data about the performance and use of the company portal to improve Microsoft products and services. End users can turn off data collection by using the Usage Data setting on their device, but administrators have no control over the data collection and cannot change the end user’s selection for this setting.
-
+-->
 ### See also
 * [Start using Microsoft Intune](start-using-microsoft-intune.md)
 * [Microsoft Intune TechNet Library](http://go.microsoft.com/fwlink/?LinkID=247636)
