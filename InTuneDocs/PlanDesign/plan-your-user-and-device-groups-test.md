@@ -17,10 +17,16 @@ Groups in Intune provide great flexibility in managing your devices and users. Y
 
 
 - geographic location
+
 - department
+
 - hardware characteristics
+
 - operating system
+
 - whether the device is user-owned or company-owned
+
+
 
 
 <!-- Move to Next steps: More information on how to create and manage groups can be found in [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)-->
