@@ -13,13 +13,12 @@ author: jeffgilb
 
 As the use of personal devices in the workplace expands, IT is challenged with managing a data environment where devices contain a mix of work-related and personal data. In addition, it must grant the right level of access per device, user, and user activity, and handle the use of multiple accounts and identities on a device. This article describes several common ways to use Microsoft Intune following the basic premise that the more IT control required, the more *as appropriate* access for employees.
 
->[note!]
->Do you want to know how Microsoft IT uses Intune to enable Microsoft employees to access corporate resources on their mobile devices while also keeping corporate data protected? [Read this technical case study](https://www.microsoft.com/itshowcase/Article/Content/588) to see in detail how Microsoft IT uses Intune and other services to manage identity, devices, and apps, and data.  
+>[!NOTE] Do you want to know how Microsoft IT uses Intune to enable Microsoft employees to access corporate resources on their mobile devices while also keeping corporate data protected? [Read this technical case study](https://www.microsoft.com/itshowcase/Article/Content/588) to see in detail how Microsoft IT uses Intune and other services to manage identity, devices, and apps, and data.  
 
 ## Unknown device
 The following table describes common usage scenarios for IT management of unknown devices.
 
-Scenario feature|More information|
+|Scenario feature|More information|
 |---------------|----------------|
 |Example|Kiosk at a hotel|
 |Type of user|Information worker|
@@ -31,7 +30,7 @@ Scenario feature|More information|
 ## Personal devices
 The following table describes common usage scenarios for IT management of personal devices.
 
-Scenario feature|More information|
+|Scenario feature|More information|
 |---------------|----------------|
 |Example|Personal iPad or home PC|
 |Type of user|Information worker|
@@ -43,7 +42,7 @@ Scenario feature|More information|
 ## Managed devices
 The following table describes common usage scenarios for IT management of managed devices.
 
-Scenario feature|More information|
+|Scenario feature|More information|
 |---------------|----------------|
 |Example|Company provided phone|
 |Type of user|Information worker|
@@ -55,7 +54,7 @@ Scenario feature|More information|
 ## Shared devices
 The following table describes common usage scenarios for IT management of shared devices.
 
-Scenario feature|More information|
+|Scenario feature|More information|
 |---------------|----------------|
 |Example|Mobile retail point of sale tablet|
 |Type of user|Task worker|
