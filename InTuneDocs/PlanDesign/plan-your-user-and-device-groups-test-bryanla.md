@@ -15,7 +15,7 @@ author: Nbigman
 ## Group basics-->
 Groups in Intune provide great flexibility in managing your devices and users. You can set up groups to suit your organizational needs according to:
 
-Unordered list with **asterisk** prefixes:
+Unordered list with **asterisk** prefixes :
 
 * geographic location
 * department
