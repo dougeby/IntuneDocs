@@ -8,13 +8,30 @@ ms.topic: article
 ms.assetid: 77e71022-4ff4-4e02-a28d-11ad70a264fd
 ---
 # Using your Android device with Intune
-Use these steps  for tasks that you need to do on your Windows device or computer when your company is using Microsoft Intune:
+Use these steps  for tasks that you need to do on your Windows device or computer when your company is using Microsoft Intune.
 
-|Task category|Tasks you can do|
-|-----------------|--------------------|
-|Company Portal app installation and Intune enrollment|-   [Enroll your Windows device in Intune](#BKMK_windows_enroll_instrucs)<br />-   [What happens when I install the Company Portal app and enroll my device in Intune?](#BKMK_what_happns_enroll_all)<br />-   [What can my IT admin see when I enroll my device in Intune?](#BKMK_win_what_IT_can_see)|
-|Things you can do when your device is enrolled in Intune|-   [What is the Company Portal website?](#BKMK_win_whatis_cp_website)<br />-   [Encrypt your device](#BKMK_win_encrypt_device)<br />-   [Reset (erase) your lost or stolen device](#BKMK_win_erase_lost_device)<br />-   [What happens if I reset my Windows device using the Company Portal?](#BKMK_win_what_happs_reset_devc)<br />-   [Unenroll your device from Intune](#BKMK_win_unenroll_device)<br />-   [What happens when I remove my device from the Company Portal?](#BKMK_what_happs_unenroll_win)<br />-   [Turn off Microsoft usage data collection](#BKMK_windows_pc_data_collect)|
-|Fix Intune issues with your device|-   [Device doesn't have the required minimum operating system version](#BKMK_win_no_min_os)<br />-   [Device doesn't comply with the maximum operating system version](#BKMK_win_no_max_os)|
+## Company Portal app installation and Intune enrollment
+The information in this section will help you with Intune Company Portal installation and device enrollment for Android devices.
+- [Enroll your Windows device in Intune](#BKMK_windows_enroll_instrucs)
+- [What happens when I install the Company Portal app and enroll my device in Intune?](#BKMK_what_happns_enroll_all)
+- [What can my IT admin see when I enroll my device in Intune?](#BKMK_win_what_IT_can_see)
+
+## Things you can do when your device is enrolled in Intune
+The information in this section will help you with actions you can take after your Android device is enrolled in Intune.
+- [What is the Company Portal website?](#BKMK_win_whatis_cp_website)
+- [Encrypt your device](#BKMK_win_encrypt_device)
+- [Reset (erase) your lost or stolen device](#BKMK_win_erase_lost_device)
+- [What happens if I reset my Windows device using the Company Portal?](#BKMK_win_what_happs_reset_devc)
+- [Unenroll your device from Intune](#BKMK_win_unenroll_device)
+- [What happens when I remove my device from the Company Portal?](#BKMK_what_happs_unenroll_win)
+- [Turn off Microsoft usage data collection](#BKMK_windows_pc_data_collect)
+
+## Fix issues with your device
+The information in this section will help you fix issues you might encounter when your Android device is enrolled in Intune.
+- [Device doesn't have the required minimum operating system version](#BKMK_win_no_min_os)
+- [Device doesn't comply with the maximum operating system version](#BKMK_win_no_max_os)
+
+<!-- The rest of these are going to be sub-topics of this article and the links needs to be changed above to point to the new file names.
 
 ## <a name="BKMK_windows_enroll_instrucs"></a>Enroll your Windows device in Intune
 To enroll, use the link that corresponds to the device you are using:
@@ -440,3 +457,4 @@ Before updating your computer, search for **operating system** and follow the pr
 ### <a name="BKMK_win_no_max_os"></a>Device doesn't comply with the maximum operating system version
 Your device does not comply with your IT admin's policy for the maximum version of the operating system. Contact your IT admin for help.
 
+-->
