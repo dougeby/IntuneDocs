@@ -11,13 +11,37 @@ author: Staciebarker
 robots: noindex
 ---
 # Using your iOS or Mac OS X device with Intune
-Use these steps for tasks that you need to do on your iOS device when your company is using Microsoft Intune:
+Use these steps for tasks that you need to do on your iOS device when your company is using Microsoft Intune.
 
-|Task category|Tasks you can do|
-|-----------------|--------------------|
-|Company Portal app installation and Intune enrollment|[Install and sign in to the Intune Company Portal app](#BKMK_ios_signin_cp)<br /><br />[Enroll your iOS device in Intune](#BKMK_enroll_ios_device)<br /><br />[Enroll your Mac OS X device in Intune](#BKMK_ios_enroll_macosx_dev)<br /><br />[What happens when I install the Company Portal app and enroll my device in Intune?](#BKMK_ios_what_happ_enroll)|
-|Things you can do when your device is enrolled in Intune|[What is the Company Portal website and what can I do with it?](#BKMK_ios_whatis_cp_website)<br /><br />[Use managed apps on your device](#BKMK_ios_use_mgd_apps)<br /><br />[Reset (erase) your lost or stolen device](#BKMK_ios_erase_lost_device)<br /><br />[Turn off Microsoft usage data collection](#BKMK_ios_data_collect)<br /><br />[Unenroll your device from Intune](#BKMK_ios_unenroll_device)<br /><br />[What happens when I unenroll my device from Intune?](#BKMK_ios_what_happs_unenroll)<br /><br />[What happens if I reset my iOS device using the Company Portal?](#BKMK_ios_reset_device)|
-|Fix issues with your device|[You get an error while using the Company Portal app](#BKMK_ios_error_use_cp)<br /><br />[You see errors while trying to enroll your device in Intune](#BKMK_ios_error_enrolling_tbl)<br /><br />[You are asked to identify your device when you're trying to enroll](#BKMK_ios_id_your_device)<br /><br />[You see errors while trying to enroll your device in Intune](#BKMK_ios_error_enrolling_tbl)<br /><br />[How do I find the serial number on my device?](#BKMK_ios_find_serial_number)<br /><br />[Device doesn't have the required minimum operating system version](#BKMK_ios_no_min_os)<br /><br />[Device doesn't comply with the maximum operating system version](#BKMK_ios_no_max_os)|
+## Company Portal app installation and Intune enrollment
+The information in this section will help you with Intune Company Portal installation and device enrollment for iOS devices.
+- [Install and sign in to the Intune Company Portal app](#BKMK_ios_signin_cp)
+- [Enroll your iOS device in Intune](#BKMK_enroll_ios_device)
+- [Enroll your Mac OS X device in Intune](#BKMK_ios_enroll_macosx_dev)
+- [What happens when I install the Company Portal app and enroll my device in Intune?](#BKMK_ios_what_happ_enroll)
+
+## Things you can do when your device is enrolled in Intune
+The information in this section will help you with actions you can take after your iOS device is enrolled in Intune.
+- [What is the Company Portal website and what can I do with it?](#BKMK_ios_whatis_cp_website)
+- [Use managed apps on your device](#BKMK_ios_use_mgd_apps)
+- [Reset (erase) your lost or stolen device](#BKMK_ios_erase_lost_device)
+- [Turn off Microsoft usage data collection](#BKMK_ios_data_collect)
+- [Unenroll your device from Intune](#BKMK_ios_unenroll_device)
+- [What happens when I unenroll my device from Intune?](#BKMK_ios_what_happs_unenroll)
+- [What happens if I reset my iOS device using the Company Portal?](#BKMK_ios_reset_device)
+
+## Fix issues with your device
+The information in this section will help you fix issues you might encounter when your iOS device is enrolled in Intune.
+- [You get an error while using the Company Portal app](#BKMK_ios_error_use_cp)
+- [You see errors while trying to enroll your device in Intune](#BKMK_ios_error_enrolling_tbl)
+- [You are asked to identify your device when you're trying to enroll](#BKMK_ios_id_your_device)
+- [You see errors while trying to enroll your device in Intune](#BKMK_ios_error_enrolling_tbl)
+- [How do I find the serial number on my device?](#BKMK_ios_find_serial_number)
+- [Device doesn't have the required minimum operating system version](#BKMK_ios_no_min_os)
+- [Device doesn't comply with the maximum operating system version](#BKMK_ios_no_max_os)|
+
+
+<!-- The rest of these are going to be sub-topics of this article and the links needs to be changed above to point to the new file names.
 
 ## <a name="BKMK_ios_signin_cp"></a>Install and sign in to the Intune Company Portal app
 The Company Portal is an app that you install on your device to give you access to your company or school apps, email, and network.  Before you can get access, you must install the Company Portal app, and then  use the app to enroll your device in Microsoft Intune. For more information, see [What happens when I install the Company Portal app and enroll my device in Intune?](#BKMK_ios_what_happ_enroll).
@@ -346,7 +370,7 @@ The following table lists errors that you might see while enrolling your devices
 If you are trying to enroll your device in Intune, and you see a screen asking you to identify your device, it means that at least one of your devices has already been enrolled and assigned to your account using a method other than the Company Portal app. In order for the Company Portal app to work correctly, you must identify if the device you're using has already been enrolled in Intune.
 1. If you see your device in the list, tap it. If you don't see it, tap **new device**.
 2. Tap **continue.**
-3. Enter the last four characters of your device's serial number to help Intune confirm that your device is enrolled. To find your serial number, see [How do I find the serial number on my device?](#BKMK_ios_find_serial_number). 
+3. Enter the last four characters of your device's serial number to help Intune confirm that your device is enrolled. To find your serial number, see [How do I find the serial number on my device?](#BKMK_ios_find_serial_number).
 
 ### <a name="BKMK_ios_find_serial_number"></a>How do I find the serial number on my device?
 On devices running iOS 7.1 and above, tap the **Settings** icon, tap **General** > **About**, and then scroll down until you find **Serial Number**.
@@ -357,3 +381,4 @@ Your device doesn’t meet the minimum operating system version required by your
 ### <a name="BKMK_ios_no_max_os"></a>Device doesn't comply with the maximum operating system version
 Your device does not comply with your IT admin's policy for the maximum version of the operating system. Contact your IT admin for help.
 
+-->
