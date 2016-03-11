@@ -14,7 +14,7 @@ The [Company Portal website](http://portal.manage.microsoft.com) is a web page t
 
 You can use the Company Portal website  to:
 
--   [Reset your passcode](#BKMK_iwp_reset_passcode)
+-   Reset your device <!--[Reset your passcode](#BKMK_iwp_reset_passcode)-->
 
 -   Rename your device
 
@@ -36,6 +36,7 @@ You can do most of the same tasks on the **Company Portal website** that you can
 |![](./media/Enroll-Apple-logo.JPG)|[What happens when I install the iOS Company Portal app and enroll a device in Intune?](http://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_what_happ_enroll)|[Enroll your iOS device in Intune](http://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_enroll_your_device)|[Install and sign in to the iOS Intune Company portal](http://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_signin_cp)|
 |![](./media/Enroll-windows-logo.JPG)|[What happens when I install the Windows Company Portal app and enroll a device in Intune?](http://technet.microsoft.com/library/mt427782.aspx#BKMK_what_happns_enroll_all)|[Enroll your Windows device in Intune](http://technet.microsoft.com/library/mt427782.aspx#BKMK_windows_enroll_instrucs)|[Enroll your Windows device in Intune](http://technet.microsoft.com/library/mt427782.aspx#BKMK_windows_enroll_instrucs) (also describes the Company Portal app)|
 
+<!-- commenting this out because it looks like the other tasks are missing (rename, remove, reset, etc..)
 ## <a name="BKMK_iwp_reset_passcode"></a>Reset your passcode
 If you lose your device passcode for a device that you have enrolled in Intune, you can use the Company Portal website to reset it.
 
@@ -72,3 +73,4 @@ To reset your passcode:
 
     To see a notification confirming that your password was reset successfully, click the notification flag at the top right of the Company Portal website.
 
+-->

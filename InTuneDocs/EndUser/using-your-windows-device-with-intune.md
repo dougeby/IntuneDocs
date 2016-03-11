@@ -10,13 +10,35 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 author: Staciebarker
 ---
 # Using your Windows device with Intune
-Use these steps  for tasks that you need to do on your Windows device or computer when your company is using Microsoft Intune:
+Use these steps  for tasks that you need to do on your Windows device or computer when your company is using Microsoft Intune.
 
-|Task category|Tasks you can do|
-|-----------------|--------------------|
-|Company Portal app installation and Intune enrollment|[Enroll your Windows device in Intune](#BKMK_windows_enroll_instrucs)<br /><br />[What happens when I install the Company Portal app and enroll my device in Intune?](#BKMK_what_happns_enroll_all)<br /><br />[What can my IT admin see when I enroll my device in Intune?](#BKMK_win_what_IT_can_see)|
-|Things you can do when your device is enrolled in Intune|[What is the Company Portal website?](#BKMK_win_whatis_cp_website)<br /><br />[Encrypt your device](#BKMK_win_encrypt_device)<br /><br />[Reset (erase) your lost or stolen device](#BKMK_win_erase_lost_device)<br /><br />[Unenroll your device from Intune](#BKMK_win_unenroll_device)<br /><br />[What happens when I remove my device from the Company Portal?](#BKMK_what_happs_unenroll_win)<br /><br />[What happens if I reset my Windows device using the Company Portal?](#BKMK_win_what_happs_reset_devc)<br /><br />[Turn off Microsoft usage data collection](#BKMK_windows_pc_data_collect)|
-|Fix Intune issues with your device|[Device doesn't have the required minimum operating system version](#BKMK_win_no_min_os)<br /><br />[Device doesn't comply with the maximum operating system version](#BKMK_win_no_max_os)<br /><br />[Device doesn't have BitLocker enabled](#BKMK_win_enable_bitlocker)<br /><br />[Device doesn't have anti-malware software enabled](#BKMK_win_enable_elam)<br /><br />[Device doesn't have Secure Boot enabled](#BKMK_win_enable_secure_boot)<br /><br />[Device doesn't have Code Integrity enabled](#BKMK_win_enable_code_integrity)|
+## Company Portal app installation and Intune enrollment
+The information in this section will help you with Intune Company Portal installation and device enrollment for Windows devices.
+- [Enroll your Windows device in Intune](#BKMK_windows_enroll_instrucs)
+- [What happens when I install the Company Portal app and enroll my device in Intune?](#BKMK_what_happns_enroll_all)
+- [What can my IT admin see when I enroll my device in Intune?](#BKMK_win_what_IT_can_see)
+
+## Things you can do when your device is enrolled in Intune
+The information in this section will help you with actions you can take after your Windows device is enrolled in Intune.
+- [What is the Company Portal website?](#BKMK_win_whatis_cp_website)
+- [Encrypt your device](#BKMK_win_encrypt_device)
+- [Reset (erase) your lost or stolen device](#BKMK_win_erase_lost_device)
+- [Unenroll your device from Intune](#BKMK_win_unenroll_device)
+- [What happens when I remove my device from the Company Portal?](#BKMK_what_happs_unenroll_win)
+- [What happens if I reset my Windows device using the Company Portal?](#BKMK_win_what_happs_reset_devc)
+- [Turn off Microsoft usage data collection](#BKMK_windows_pc_data_collect)
+
+## Fix issues with your device
+The information in this section will help you fix issues you might encounter when your Windows device is enrolled in Intune.
+- [Device doesn't have the required minimum operating system version](#BKMK_win_no_min_os)
+- [Device doesn't comply with the maximum operating system version](#BKMK_win_no_max_os)
+- [Device doesn't have BitLocker enabled](#BKMK_win_enable_bitlocker)
+- [Device doesn't have anti-malware software enabled](#BKMK_win_enable_elam)
+- [Device doesn't have Secure Boot enabled](#BKMK_win_enable_secure_boot)
+- [Device doesn't have Code Integrity enabled](#BKMK_win_enable_code_integrity)|
+
+<!-- The rest of these are going to be sub-topics of this article and the links needs to be changed above to point to the new file names.
+
 
 ## <a name="BKMK_windows_enroll_instrucs"></a>Enroll your Windows device in Intune
 To enroll, use the link that corresponds to the device you are using:
@@ -507,7 +529,7 @@ When you use the Company Portal to reset your personal device, some apps and set
 |Your IT admin manages your mobile device|**Windows Phone 8.1 and Windows Phone 8**, your device won’t appear in the company portal anymore and the company portal tries to reset the device back to the manufacturer’s default settings. Your personal data, apps and settings will be removed.<br /><br />**Windows RT**<br /><br />You cannot reset a Windows RT device unless it is used for email only.|
 |Your device can access company email only|**Windows Phone 8.1 and Windows Phone 8**<br /><br />Your device won’t appear in the company portal anymore and your company email account will be deleted and unsaved email will be deleted.<br /><br />**Windows RT**<br /><br />Your device won’t appear in the company portal anymore and your company email account will be deleted and unsaved email will be deleted.<br /><br />**Windows 7 or Windows Vista Computers**<br /><br />You cannot reset a computer that is running Windows 7 or earlier that is used for email only.<br /><br />**Windows 8.1 and Windows 8 Computers**<br /><br />Your device won’t appear in the company portal anymore and your company email account will be deleted and unsaved email will be deleted.|
 |PCs and laptops|**Windows 8.1 and Windows 8 Computers**<br /><br />You cannot reset a computer that is running Windows 8 or Windows 8.1 unless it is used for email only.<br /><br />**Windows 7 or Windows Vista Computers**<br /><br />You cannot reset a computer that is running Windows 7 or earlier.|
-    
+
 ## <a name="BKMK_windows_pc_data_collect"></a>Turn off Microsoft usage data collection
 In order to improve its products and services, Microsoft automatically collects anonymous data about the reliability and performance of the Company Portal app and how it is used. You can turn off the collection of that data by using the Usage Data setting in the Company Portal app. IT administrators have no control over the collection of the data, and they cannot change your selection for the setting.
 
@@ -519,7 +541,7 @@ Your device doesn’t meet the minimum operating system version required by your
 
 Before updating your computer, search for **operating system** and follow the prompts to identify your current operating system version. To update computers with operating systems earlier than Windows 10, search for **Windows updates**.
 
-To check the version for Windows 10 and Windows 8.1, press the **Windows** hotkey + **R**, type **winver** in the dialog window, and press **Enter**. 
+To check the version for Windows 10 and Windows 8.1, press the **Windows** hotkey + **R**, type **winver** in the dialog window, and press **Enter**.
 
 - For Windows 10, ignore the version number and look at the OS build number (example: OS Build 10586.29). The "10" in "10586.29" stands for "Windows 10."
 - For Windows 8.1, look at the version number, which will show 6.3.xxxx instead of 8.1.
@@ -540,3 +562,5 @@ Your organization requires that you enable Windows Secure Boot, which is a secur
 
 ### <a name="BKMK_win_enable_code_integrity"></a>Device doesn't have Code Integrity enabled
 Your organization requires that you enable Windows Code Integrity, which is a feature that checks drivers and system files on your device to make sure they are safe. To enable Windows Code Integrity, enable the Secure Boot feature. The Code Integrity feature will then be turned on automatically. Enabling Secure Boot is an advanced task. If you are using a mobile device, contact your IT admin for help. If you are using a PC, you can contact your IT admin, or see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.
+
+-->
