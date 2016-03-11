@@ -5,8 +5,8 @@ ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: secure-email-article
-ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
+ms.topic:
+ms.assetid:
 author: karthikaraman
 ---
 # Manage access to email and O365 services test refactor
@@ -15,7 +15,9 @@ Intune's conditional access capability allows you to make sure that only devices
 To implement conditional access, you configure two policy types in Intune:
 ## What is conditional access?
 Conditional access in Intune means that you can require that devices meet a certain set of conditions in order to be able to access your company data and resources.
-- Compliance policies are optional policies you can deploy to users and devices and evaluate settings like:
+
+To set up conditional access, configure compliance policies your device must meet and a conditional access policy that is applied to your end-users and devices.
+- **Compliance policies** are policies you can deploy to users and devices and evaluate settings like:
 
   - Passcode
   - Encryption
@@ -25,7 +27,7 @@ Conditional access in Intune means that you can require that devices meet a cert
   If no compliance policy is deployed to a device, then any applicable conditional access policies will treat the device as compliant.
 
 
-- Conditional access policies are configured for a particular service, and define rules such as which Azure Active Directory security user groups or Intune user groups will be targeted and how devices that cannot enroll with Intune will be managed.
+- **Conditional access** policies are configured for a particular service, and define rules such as which Azure Active Directory security user groups or Intune user groups will be targeted and how devices that cannot enroll with Intune will be managed.
 
 Unlike other Intune policies, you do not deploy conditional access policies. Instead, you configure these once, and they apply to all targeted users.
 
@@ -38,36 +40,11 @@ A typical flow of conditional access might as follows:
 
 See this 4 minute video that describes how this works using email as an example:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lYx3YIezccg" frameborder="0" allowfullscreen></iframe>
-## Conditional access for mobile devices
-Generally the following mobile platforms are supported for conditional access:
-- Windows Phone 8.1 and later
-- iOS 7.1 and later
-- Android 4.0 and later, Samsung Knox Standard 4.0 and later
-
-Depending on the resource or service the device is trying to access, requirements
-may vary. The specific requirements are listed for each resource in their respective topics:
-- Manage access to Exchange On-premises
-- Manage access to Exchange Online
-- Manage access to SharePoint Online
-- Manage access to Skype for Business
-
-## Conditional access for PCs
-You can setup conditional access for PCs that run Office desktop applications and meet the following requirements:
-
-- The PC must be running Windows 7.0 or Windows 8.1.
-- The PC must either be domain joined or compliant.
-
-  In order to be compliant, the PC must be enrolled in Intune and comply with the policies.
-  For domain joined PCs, you must set it up to automatically register the device with Azure Active Directory.
-- Office 365 modern authentication must be enabled, and have all the latest Office updates.
-
-  Modern authentication brings Active Directory Authentication Library (ADAL) based sign-in to Office 2013 Windows clients and enables better security like multi-factor authentication, and certificate-based authentication.
-- Setup ADFS claims rules to block non-modern authentication protocols. Step by step instructions are detailed in scenario 3 - block all access to O365 except browser based applications.
 ## Next steps
-Manage device compliance policy
+- [Manage device compliance policy](./DeployUse/manage-device-compliance-policies-for-microsoft-intune.md)
 
-  Manage access to email
+- [Manage access to email](Manage-access-to-email_test-refactor.md)
 
-  Manage access to SharePoint
+- [Manage access to SharePoint](Manage-access-to-sharepoint-online-test-refactor.md)
 
-  Manage access to Skype for Business
+- Manage access to Skype for Business

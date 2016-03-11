@@ -1,22 +1,37 @@
 ---
-title: Using your Windows device with Intune
+title: Using your Android device with Intune
 ms.custom: na
 ms.reviewer: na
-ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
-author: Staciebarker
+ms.assetid: 77e71022-4ff4-4e02-a28d-11ad70a264fd
 ---
-# Using your Windows device with Intune
-Use these steps  for tasks that you need to do on your Windows device or computer when your company is using Microsoft Intune:
+# Using your Android device with Intune
+Use these steps  for tasks that you need to do on your Windows device or computer when your company is using Microsoft Intune.
 
-|Task category|Tasks you can do|
-|-----------------|--------------------|
-|Company Portal app installation and Intune enrollment|[Enroll your Windows device in Intune](#BKMK_windows_enroll_instrucs)<br /><br />[What happens when I install the Company Portal app and enroll my device in Intune?](#BKMK_what_happns_enroll_all)<br /><br />[What can my IT admin see when I enroll my device in Intune?](#BKMK_win_what_IT_can_see)|
-|Things you can do when your device is enrolled in Intune|[What is the Company Portal website?](#BKMK_win_whatis_cp_website)<br /><br />[Encrypt your device](#BKMK_win_encrypt_device)<br /><br />[Reset (erase) your lost or stolen device](#BKMK_win_erase_lost_device)<br /><br />[Unenroll your device from Intune](#BKMK_win_unenroll_device)<br /><br />[What happens when I remove my device from the Company Portal?](#BKMK_what_happs_unenroll_win)<br /><br />[What happens if I reset my Windows device using the Company Portal?](#BKMK_win_what_happs_reset_devc)<br /><br />[Turn off Microsoft usage data collection](#BKMK_windows_pc_data_collect)|
-|Fix Intune issues with your device|[Device doesn't have the required minimum operating system version](#BKMK_win_no_min_os)<br /><br />[Device doesn't comply with the maximum operating system version](#BKMK_win_no_max_os)<br /><br />[Device doesn't have BitLocker enabled](#BKMK_win_enable_bitlocker)<br /><br />[Device doesn't have anti-malware software enabled](#BKMK_win_enable_elam)<br /><br />[Device doesn't have Secure Boot enabled](#BKMK_win_enable_secure_boot)<br /><br />[Device doesn't have Code Integrity enabled](#BKMK_win_enable_code_integrity)|
+## Company Portal app installation and Intune enrollment
+The information in this section will help you with Intune Company Portal installation and device enrollment for Android devices.
+- [Enroll your Windows device in Intune](#BKMK_windows_enroll_instrucs)
+- [What happens when I install the Company Portal app and enroll my device in Intune?](#BKMK_what_happns_enroll_all)
+- [What can my IT admin see when I enroll my device in Intune?](#BKMK_win_what_IT_can_see)
+
+## Things you can do when your device is enrolled in Intune
+The information in this section will help you with actions you can take after your Android device is enrolled in Intune.
+- [What is the Company Portal website?](#BKMK_win_whatis_cp_website)
+- [Encrypt your device](#BKMK_win_encrypt_device)
+- [Reset (erase) your lost or stolen device](#BKMK_win_erase_lost_device)
+- [What happens if I reset my Windows device using the Company Portal?](#BKMK_win_what_happs_reset_devc)
+- [Unenroll your device from Intune](#BKMK_win_unenroll_device)
+- [What happens when I remove my device from the Company Portal?](#BKMK_what_happs_unenroll_win)
+- [Turn off Microsoft usage data collection](#BKMK_windows_pc_data_collect)
+
+## Fix issues with your device
+The information in this section will help you fix issues you might encounter when your Android device is enrolled in Intune.
+- [Device doesn't have the required minimum operating system version](#BKMK_win_no_min_os)
+- [Device doesn't comply with the maximum operating system version](#BKMK_win_no_max_os)
+
+<!-- The rest of these are going to be sub-topics of this article and the links needs to be changed above to point to the new file names.
 
 ## <a name="BKMK_windows_enroll_instrucs"></a>Enroll your Windows device in Intune
 To enroll, use the link that corresponds to the device you are using:
@@ -239,7 +254,7 @@ When you add a computer:
 
 -   You’ll have some software installed on your computer to make it possible for your IT administrator to manage the computer, and make it possible for you to get to company resources like apps and support information. This software may be updated automatically by your IT administrator.
 
--   [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware.
+-   [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
 
 -   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
 
@@ -262,7 +277,7 @@ When you install the Company Portal app and then use the app to enroll your Wind
 
 -   Reset your phone to factory settings if it is lost or stolen
 
-For the steps to enroll, see [Windows Phone 8.1](#BKMK_enrollment_81) or [Windows Phone 8](#BKMK_enrollment_wp8).  For information about what your IT admin can and can't see on your device, see [What can my IT admin see when I enroll my device in Intune?](#BKMK_win_what_IT_can_see).
+For the steps to enroll, see[Windows Phone 8.1](#BKMK_enrollment_81) or [Windows Phone 8](#BKMK_enrollment_wp8).  For information about what your IT admin can and can't see on your device, see [What can my IT admin see when I enroll my device in Intune?](#BKMK_win_what_IT_can_see).
 
 When you add your Windows Phone device, you are giving your IT administrator permission to access the device. They can do things like:
 
@@ -305,7 +320,7 @@ When you add a computer:
 
 -   You’ll have some software installed on your computer to make it possible for your IT administrator to manage the computer, and make it possible for you to get to company resources like apps and support information. This software may be updated automatically by your IT administrator.
 
--   [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware.
+-   [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. For more information, please refer to the [Endpoint Protection Privacy Statement](http://go.microsoft.com/fwlink/?LinkID=247324).
 
 -   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
 
@@ -320,39 +335,9 @@ When you add a computer:
 ## <a name="BKMK_win_what_IT_can_see"></a>What can my IT admin see when I enroll my device in Intune?
 When  you enroll your device in Intune, you are giving your IT administrator permission to manage your device to help protect the company information on the device.
 
-**What IT cannot see**
-
--   Call history
-
--   Text messages
-
--   Personal email, contacts, and calendar
-
--   Web history
-
--   Location
-
--   Camera roll
-
--   Personal data
-
-**What IT can see**
-
--   Owner
-
--   Device name
-
--   Serial number
-
--   Manufacturer
-
--   Model
-
--   Operating system
-
--   Company apps
-
--   Personal apps
+|IT cannot see|IT can see|
+|-----------------|--------------|
+|-   Call history<br />-   Text messages<br />-   Personal email, contacts, and calendar<br />-   Web history<br />-   Location<br />-   Camera roll<br />-   Personal data|-   Owner<br />-   Device name<br />-   Serial number<br />-   Manufacturer<br />-   Model<br />-   Operating system<br />-   Company apps<br />-   Personal apps|
 
 ## <a name="BKMK_win_whatis_cp_website"></a>What is the Company Portal website?
 The Company Portal website is your company’s web interface that you use to  manage your work computers and devices, and your personal computers and devices that you choose to use at work.
@@ -378,7 +363,7 @@ You can encrypt your device either by adding a Microsoft account or by enabling 
 
 3.  Follow the instructions shown.
 
-4.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] by following the instructions in [Enroll your Windows device in Intune](#BKMK_windows_enroll_instrucs).
+4.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
 
 **Option 2: Enable BitLocker**
 
@@ -386,13 +371,13 @@ You can encrypt your device either by adding a Microsoft account or by enabling 
 
 2.  Click **Turn on BitLocker**, then follow the instructions shown to encrypt each of your drives.
 
-3.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] by following the instructions in [Enroll your Windows device in Intune](#BKMK_windows_enroll_instrucs).
+3.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
 
 ## <a name="BKMK_win_erase_lost_device"></a>Reset (erase) your lost or stolen device
 If your device is enrolled in Intune, and your device is lost or stolen, you can reset it to factory defaults.
 
 > [!WARNING]
-> Resetting a device to factor defaults removes both your personal and work information from it. For more about what happens when you reset your device, see [What happens if I reset my Windows device using the Company Portal?](#BKMK_win_what_happs_reset_devc).
+> Resetting a device to factor defaults removes both your personal and work information from it. For more about what happens when you reset your device, see [What happens if I reset my Windows device using the Company Portal?](#BKMK).
 
 1.  In your browser, open your Company Portal, and sign in to your work account.
 
@@ -402,6 +387,15 @@ If your device is enrolled in Intune, and your device is lost or stolen, you can
 
 > [!NOTE]
 > If you are unable to reset your lost or stolen device, contact IT to reset it for you.
+
+## <a name="BKMK_win_what_happs_reset_devc"></a>What happens if I reset my Windows device using the Company Portal?
+When you use the Company Portal to reset your personal device, some apps and settings on your device may be deleted, including some of your personal data. What happens on each device depends on the type of device you have and how you are using the device, as described in the following table. For instructions on how to reset your lost or stolen device, see [Reset (erase) your lost or stolen device](#BKMK_win_erase_lost_device).
+
+|Device configuration and management|Device type|
+|---------------------------------------|---------------|
+|Your IT admin manages your mobile device|**Android**<br /><br />When you reset your Android device, the following happens:<br /><br />-   Your device won’t appear in the company portal anymore.<br />-   Your company email account will be deleted and unsaved email will be deleted.<br /><br />**iOS Devices (iPhone and iPad)**<br /><br />-   Your device won’t appear in the company portal anymore.<br />-   The company portal tries to reset the device back to the manufacturer’s default settings. Your personal data, apps and settings will be removed.<br /><br />**Windows Phone 8.1 and Windows Phone 8**<br /><br />-   Your device won’t appear in the company portal anymore.<br />-   The company portal tries to reset the device back to the manufacturer’s default settings. Your personal data, apps and settings will be removed.<br /><br />**Windows RT**<br /><br />You cannot reset a Windows RT device unless it is used for email only.|
+|Your device can access company email only|**Android**<br /><br />-   Your device won’t appear in the company portal anymore.<br />-   The company portal tries to reset the device back to the manufacturer’s defaults. All your personal data and settings will be removed.<br /><br />**iOS Devices (iPhone and iPad)**<br /><br />-   Your device won’t appear in the company portal anymore.<br />-   Your company email account will be deleted and unsaved email will be deleted.<br /><br />**Windows Phone 8.1 and Windows Phone 8**<br /><br />-   Your device won’t appear in the company portal anymore.<br />-   Your company email account will be deleted and unsaved email will be deleted.<br /><br />**Windows RT**<br /><br />-   Your device won’t appear in the company portal anymore.<br />-   Your company email account will be deleted and unsaved email will be deleted.<br /><br />**Windows 7 or Windows Vista Computers**<br /><br />You cannot reset a computer that is running Windows 7 or earlier that is used for email only.<br /><br />**Windows 8.1 and Windows 8 Computers**<br /><br />-   Your device won’t appear in the company portal anymore.<br />-   Your company email account will be deleted and unsaved email will be deleted.|
+|PCs and laptops|**Windows 8.1 and Windows 8 Computers**<br /><br />You cannot reset a computer that is running Windows 8 or Windows 8.1 unless it is used for email only.<br /><br />**Windows 7 or Windows Vista Computers**<br /><br />You cannot reset a computer that is running Windows 7 or earlier.|
 
 ## <a name="BKMK_win_unenroll_device"></a>Unenroll your device from Intune
 If you enrolled in Intune, but no longer want to use your device for work or school and don't need to access work or school email, apps, or other resources, you need to unenroll your device.   Once you unenroll your device from Intune, you will no longer be able to access these resources. For more about what happens when you unenroll your device, see [What happens when I remove my device from the Company Portal?](#BKMK_what_happs_unenroll_win).
@@ -439,75 +433,13 @@ To unenroll your device, use the steps that match the device you're using.
 4.  On the **Delete account** dialog, tap **Delete**.
 
 ## <a name="BKMK_what_happs_unenroll_win"></a>What happens when I remove my device from the Company Portal?
-The following events happen when you remove my device from the Company Portal
 
-**Windows Phone 8.1 or Windows Phone 8**
+|Device type|What happens if you remove your device from the Company Portal|
+|---------------|------------------------------------------------------------------|
+|Windows Phone 8.1 or Windows Phone 8|-   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal app or Company Portal website.<br />-   You can’t use company apps and company data on your device anymore.<br />-   Any settings that were changed on your device when you added it, for example disabling the camera, or requiring a certain password length, will no longer apply. **Important:**     The only exception to this is encryption policies, which will still apply. If your company policy required that your Windows Phone be encrypted, the only way to unencrypt your phone is to reset your phone using the **Settings** menu on your Windows Phone.|
+|Windows RT running Windows 8.1 or Windows RT|When you remove your Windows RT device running Windows 8.1, the following happens:<br /><br />-   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal.<br />-   You can’t use company apps and company data on your device anymore.<br />-   Any settings that were changed on your device when you added it, for example disabling the camera, or requiring a certain password length, will no longer apply.<br />-   You might not be able to connect to your company network using Wi-Fi or a Virtual Private Network anymore.<br />-   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.<br />-   Some mail apps, such as Windows Mail, won’t be able to access company email that is stored on your device anymore.<br /><br />When you remove your Windows RT device, the following happens:<br /><br />-   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal.<br />-   You can’t use company apps and company data on your device anymore.<br />-   Any settings that were changed on your device when you added it, for example disabling the camera, or requiring a certain password length, will no longer apply.|
+|Windows 8.1, Windows 8, Windows 7, Vista|-   Your device won’t appear in the company portal anymore, and you can’t install apps from the company portal anymore.<br />-   If you installed the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software, it’s removed from your computer.<br />-   The [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Endpoint Protection software is removed from your computer. If your computer has other virus protection software installed and it is disabled, that software may be re-enabled after [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Endpoint Protection is removed. You should check your computer after removing it from the company portal. **Important:**     If the other virus protection software is not re-enabled or no other virus protection software is installed, your computer may be vulnerable to viruses and malware.<br />-   Any settings that were changed on your device when you added it (for example, disabling the camera, will no longer apply).<br />-   Your computer will no longer receive automatic software updates or antivirus software updates from the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service. However, depending on how it is configured, your computer may still receive updates from the Windows Server Update Services, Windows Update, or Microsoft Update.<br /><br />In addition, for Windows 8.1:<br /><br />-   You can’t use company apps and company data on your device anymore.<br />-   Some mail apps, such as Windows Mail, won’t be able to access company email that is stored on your device anymore.<br />-   You might not be able to connect to your company network using Wi-Fi or a Virtual Private Network.<br />-   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.|
 
--   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal app or Company Portal website.
-
--   You can’t use company apps and company data on your device anymore.
-
--   Any settings that were changed on your device when you added it, for example disabling the camera, or requiring a certain password length, will no longer apply.
-
-    > [!IMPORTANT]
-    > The only exception to this is encryption policies, which will still apply. If your company policy required that your Windows Phone be encrypted, the only way to unencrypt your phone is to reset your phone using the **Settings** menu on your Windows Phone.
-
-**Windows RT running Windows 8.1 or Windows RT**
-
--   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal.
-
--   You can’t use company apps and company data on your device anymore.
-
--   Any settings that were changed on your device when you added it, for example disabling the camera, or requiring a certain password length, will no longer apply.
-
--   You might not be able to connect to your company network using Wi-Fi or a Virtual Private Network anymore.
-
--   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.
-
--   Some mail apps, such as Windows Mail, won’t be able to access company email that is stored on your device anymore.
-
-When you remove your Windows RT device, the following happens:
-
--   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal.
-
--   You can’t use company apps and company data on your device anymore.
-
--   Any settings that were changed on your device when you added it, for example disabling the camera, or requiring a certain password length, will no longer apply.
-
-**Windows 8.1, Windows 8, Windows 7, Vista**
-
--   Your device won’t appear in the company portal anymore, and you can’t install apps from the company portal anymore.
-
--   If you installed the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software, it’s removed from your computer.
-
--   The [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Endpoint Protection software is removed from your computer. If your computer has other virus protection software installed and it is disabled, that software may be re-enabled after [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Endpoint Protection is removed. You should check your computer after removing it from the company portal.
-
-    > [!IMPORTANT]
-    > If the other virus protection software is not re-enabled or no other virus protection software is installed, your computer may be vulnerable to viruses and malware.
-
--   Any settings that were changed on your device when you added it (for example, disabling the camera, will no longer apply).
-
--   Your computer will no longer receive automatic software updates or antivirus software updates from the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service. However, depending on how it is configured, your computer may still receive updates from the Windows Server Update Services, Windows Update, or Microsoft Update.
-
-In addition, for Windows 8.1:
-
--   You can’t use company apps and company data on your device anymore.
-
--   Some mail apps, such as Windows Mail, won’t be able to access company email that is stored on your device anymore.
-
--   You might not be able to connect to your company network using Wi-Fi or a Virtual Private Network.
-
--   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.
-
-## <a name="BKMK_win_what_happs_reset_devc"></a>What happens if I reset my Windows device using the Company Portal?
-When you use the Company Portal to reset your personal device, some apps and settings on your device may be deleted, including some of your personal data. What happens on each device depends on the type of device you have and how you are using the device, as described in the following table. For instructions on how to reset your lost or stolen device, see [Reset (erase) your lost or stolen device](#BKMK_win_erase_lost_device).
-
-|Device configuration and management|Device type|
-|---------------------------------------|---------------|
-|Your IT admin manages your mobile device|**Windows Phone 8.1 and Windows Phone 8**, your device won’t appear in the company portal anymore and the company portal tries to reset the device back to the manufacturer’s default settings. Your personal data, apps and settings will be removed.<br /><br />**Windows RT**<br /><br />You cannot reset a Windows RT device unless it is used for email only.|
-|Your device can access company email only|**Windows Phone 8.1 and Windows Phone 8**<br /><br />Your device won’t appear in the company portal anymore and your company email account will be deleted and unsaved email will be deleted.<br /><br />**Windows RT**<br /><br />Your device won’t appear in the company portal anymore and your company email account will be deleted and unsaved email will be deleted.<br /><br />**Windows 7 or Windows Vista Computers**<br /><br />You cannot reset a computer that is running Windows 7 or earlier that is used for email only.<br /><br />**Windows 8.1 and Windows 8 Computers**<br /><br />Your device won’t appear in the company portal anymore and your company email account will be deleted and unsaved email will be deleted.|
-|PCs and laptops|**Windows 8.1 and Windows 8 Computers**<br /><br />You cannot reset a computer that is running Windows 8 or Windows 8.1 unless it is used for email only.<br /><br />**Windows 7 or Windows Vista Computers**<br /><br />You cannot reset a computer that is running Windows 7 or earlier.|
-    
 ## <a name="BKMK_windows_pc_data_collect"></a>Turn off Microsoft usage data collection
 In order to improve its products and services, Microsoft automatically collects anonymous data about the reliability and performance of the Company Portal app and how it is used. You can turn off the collection of that data by using the Usage Data setting in the Company Portal app. IT administrators have no control over the collection of the data, and they cannot change your selection for the setting.
 
@@ -519,24 +451,10 @@ Your device doesn’t meet the minimum operating system version required by your
 
 Before updating your computer, search for **operating system** and follow the prompts to identify your current operating system version. To update computers with operating systems earlier than Windows 10, search for **Windows updates**.
 
-To check the version for Windows 10 and Windows 8.1, press the **Windows** hotkey + **R**, type **winver** in the dialog window, and press **Enter**. 
-
-- For Windows 10, ignore the version number and look at the OS build number (example: OS Build 10586.29). The "10" in "10586.29" stands for "Windows 10."
-- For Windows 8.1, look at the version number, which will show 6.3.xxxx instead of 8.1.
+> [!NOTE]
+> If your Windows operating system version is 8.1, you’ll see 6.3.xxxx instead of 8.1 when you check your update version.
 
 ### <a name="BKMK_win_no_max_os"></a>Device doesn't comply with the maximum operating system version
 Your device does not comply with your IT admin's policy for the maximum version of the operating system. Contact your IT admin for help.
 
-
-
-### <a name="BKMK_win_enable_bitlocker"></a>Device doesn't have BitLocker enabled
-Your organization requires that you enable BitLocker, which is software that encrypts your drive and helps to protect your data. For instructions on how to enable BitLocker on Windows 10 devices, see [How to turn on BitLocker on Windows 10 devices](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d).
-
-### <a name="BKMK_win_enable_elam"></a>Device doesn't have anti-malware software enabled
-Your organization requires that you enable Windows early-launch antimalware (ELAM), which is a security feature that helps to protect your device when it starts up. For instructions on how to enable ELAM for Windows 10 desktops, laptops, or tablets, see [How to turn on Early-Launch Anti-Malware (ELAM)](https://gallery.technet.microsoft.com/How-to-turn-on-Early-84552ec5).
-
-### <a name="BKMK_win_enable_secure_boot"></a>Device doesn't have Secure Boot enabled
-Your organization requires that you enable Windows Secure Boot, which is a security feature that helps to protect your device. Enabling Secure Boot is an advanced task. If you are using a mobile device, contact your IT admin for help. If you are using a PC, you can contact your IT admin, or see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.
-
-### <a name="BKMK_win_enable_code_integrity"></a>Device doesn't have Code Integrity enabled
-Your organization requires that you enable Windows Code Integrity, which is a feature that checks drivers and system files on your device to make sure they are safe. To enable Windows Code Integrity, enable the Secure Boot feature. The Code Integrity feature will then be turned on automatically. Enabling Secure Boot is an advanced task. If you are using a mobile device, contact your IT admin for help. If you are using a PC, you can contact your IT admin, or see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.
+-->

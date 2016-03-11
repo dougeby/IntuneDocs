@@ -1,8 +1,7 @@
 # [Understand and Explore](/intune/understand/ways-to-do-enterprise-mobility.html)
 # [Get started](what-s-new-in-microsoft-intune.md)
 
-## [What's new](What-s-new-in-microsoft-intune.md) 
-## [Get started with a 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune.md)
+## [What's new](What-s-new-in-microsoft-intune.md)
 ## [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune-test.md)
 ### [1. Sign into Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [2. Configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -24,6 +23,7 @@
 ### [Start a trial & deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
 ### [Set up email access for iOS devices](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+## [Rollout phases for Microsoft Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
 # [Plan and Design](/intune/plandesign/plan-your-user-and-device-groups.html)
 # [Deploy and Use](/intune/deployuse/learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.html)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune.html)

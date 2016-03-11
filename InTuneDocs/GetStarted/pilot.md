@@ -49,7 +49,7 @@ The key to a successful pilot is good planning including knowing what your succe
 -   Goals and Metrics
 
 ### Help desk
-A support plan that includes proactive assistance can significantly improve user confidence which results in happy users and increased adoption. The help desk should be aware of the changes being made to your[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] implementation, and potential issues that may arise, so that quick solutions can be found for individual issues. The help desk can also report back to the design team if the design approach is creating issues for all users.
+A support plan that includes proactive assistance can significantly improve user confidence which results in happy users and increased adoption. The help desk should be aware of the changes being made to your[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implementation, and potential issues that may arise, so that quick solutions can be found for individual issues. The help desk can also report back to the design team if the design approach is creating issues for all users.
 
 ### Awareness
 Pilot users need to understand the who, what, when, where, why of the project. "How the pilot affects me" is the #1 question users will have. Putting yourself in the users' shoes and understanding that end-user experience from end-to-end will be important. Awareness activities and communications to help users understand what their responsibilities are and how they will be supported during the pilot phase should be utilized.
@@ -98,3 +98,5 @@ Here are some  challenges that you may encounter in the **Pilot** phase.
 
     **Mitigation:** Define qualitative and quantitative success criteria specific to your organization so that a clear decision can be made based on facts to move to the next phase of deployment.
 
+### See also
+[Rollout phases for Microsoft Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)

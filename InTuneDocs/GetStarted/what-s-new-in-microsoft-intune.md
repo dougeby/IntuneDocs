@@ -1,5 +1,5 @@
 ---
-title: What&#39;s new in Microsoft Intune
+title: What's new in Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: get-started-article
 ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 author: Lindavr
 ---
-# What&#39;s new in Microsoft Intune
+# What's new in Microsoft Intune
 
 ## January 2016
 
@@ -61,15 +61,22 @@ When managing Windows 10 devices, Intune will be able to create and deploy confi
 
 
 ## Archive
+> [!div class="op_single_selector"]
+- [December 2015](name-of-the-file.md)
+- [November 2015](name-of-the-file.md)
+- [October 2015](name-of-the-file.md)
+- [September 2015](name-of-the-file.md)
+- [August 2015](name-of-the-file.md)
+<!--
 * [December 2015](what-s-new-in-microsoft-intune.md#BKMK_Dec2015)
 * [November 2015](what-s-new-in-microsoft-intune.md#BKMK_Nov2015)
 * [October 2015](what-s-new-in-microsoft-intune.md#BKMK_Oct2015)
 * [September 2015](what-s-new-in-microsoft-intune.md#BKMK_Sep2015)
 * [August 2015](what-s-new-in-microsoft-intune.md#BKMK_Aug2015)
-* [July 2015](what-s-new-in-microsoft-intune.md#BKMK_July2015)
+* [July 2015](what-s-new-in-microsoft-intune.md#BKMK_July2015)-->
 
 <a name="BKMK_Dec2015"></a>
-### December 2015
+<!--### December 2015
 #### Changes and updates to Microsoft Company Portal
 The following changes have been made to the Company Portal in this release.
 
@@ -109,10 +116,10 @@ More information     |  For your users: [Send diagnostic data logs to your IT ad
 
 **Windows Company Portal app**
 
-Microsoft automatically collects anonymous data about the performance and use of the company portal to improve Microsoft products and services. End users can turn off data collection by using the Usage Data setting on their device, but administrators have no control over the data collection and cannot change the end user’s selection for this setting.
+Microsoft automatically collects anonymous data about the performance and use of the company portal to improve Microsoft products and services. End users can turn off data collection by using the Usage Data setting on their device, but administrators have no control over the data collection and cannot change the end user’s selection for this setting.-->
 
 <a name="BKMK_Nov2015"></a>
-### November 2015
+<!--### November 2015
 #### App management
 Intune supports mobile application management (MAM) policies that help prevent corporate data from being leaked to consumer apps or services. Historically, these policies would only be enforced on mobile apps running on devices that were also enrolled for mobile device management (MDM) into Intune.
 
@@ -215,10 +222,10 @@ When managing Windows 10 devices, Intune will be able to create and deploy confi
 * [Understand Microsoft Intune operations by using reports](https://technet.microsoft.com/library/dn646977.aspx): Added information about the two new reports used to display information about your managed Mac OS X devices.
 * [Manage device compliance policies for Microsoft Intune](https://technet.microsoft.com/library/dn705843.aspx): Added information about the new compliance policies for requiring automatic updates and password requirement when a device returns from idle state.
 * [Manage email access with Microsoft Intune](https://technet.microsoft.com/library/dn705841.aspx): Added information about the ability to apply the conditional access  policy to all platforms and all users.
-* [Manage SharePoint Online access with Microsoft Intune](https://technet.microsoft.com/library/dn705844.aspx): Added information about the ability to apply conditional access policy to all platforms and all users.
+* [Manage SharePoint Online access with Microsoft Intune](https://technet.microsoft.com/library/dn705844.aspx): Added information about the ability to apply conditional access policy to all platforms and all users. -->
 
 <a name="BKMK_Oct2015"></a>
-### October 2015
+<!-- ### October 2015
 
 ### Updates to conditional access for Exchange on-premises
 **You can now allow access to Exchange Active Sync email for compliant devices enrolled in Intune when the global Exchange rule is set to block or quarantine** Until now, to allow email access on enrolled and compliant devices, you had to set the default global Exchange rule to **Allow**.
@@ -283,10 +290,10 @@ The following changes have been made to the company portal apps in this release:
 
 |Name|Details|
 |----|-------|
-|[Use policies to manage computers and mobile devices with Microsoft Intune](https://technet.microsoft.com/library/dn743712.aspx)|Updated to include the latest information to help you understand and create policies.|
+|[Use policies to manage computers and mobile devices with Microsoft Intune](https://technet.microsoft.com/library/dn743712.aspx)|Updated to include the latest information to help you understand and create policies.|-->
 
 <a name="BKMK_Aug2015"></a>
-### August 2015
+<!--### August 2015
 ### Mobile device and app management updates
 * **Terms and conditions** for Intune enrollment and company access are [now managed using policies](https://technet.microsoft.com/library/mt405893.aspx). You can target different sets of terms and conditions to meet specific user group requirements. For example, you can  deploy terms and conditions in different languages to geographically defined user groups. You can also [edit your terms and conditions](https://technet.microsoft.com/library/mt405893.aspx#BKMK_TCVers) and specify whether to increment the version numbers, requiring users to agree to the new terms and conditions before they can use the company portal.
 * **A number of Intune policies have been renamed** to make them more consistent across the product and easier for you to find. For a list of all available Intune policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](https://technet.microsoft.com/library/dn743712.aspx).
@@ -322,9 +329,9 @@ Users will now see device enrollment instructions after signing in if they have 
 |-----|-------|
 |[Microsoft apps you can use with Microsoft Intune mobile application management policies](https://technet.microsoft.com/library/dn708489.aspx)|Updated with the latest information about apps you can manage with mobile application management policies.
 |[Use policies to manage computers and mobile devices with Microsoft Intune](http://technet.microsoft.com/library/dn743712.aspx)|Updated with the newest policies added to Intune.|
-
+-->
 <a name="BKMK_Jul2015"></a>
-### July 2015
+<!-- ### July 2015
 July updates for Intune are limited to behind-the-scenes enhancements that allow us to continue providing you with a high-quality service experience. New features are not included in this service update.
 
 ### Intune Onboarding benefit
@@ -335,7 +342,7 @@ The following changes have been made to the company portal apps in this release.
 **Android**
 
 Microsoft automatically collects anonymous data about the performance and use of the company portal to improve Microsoft products and services. End users can turn off data collection by using the Usage Data setting on their device, but administrators have no control over the data collection and cannot change the end user’s selection for this setting.
-
+-->
 ### See also
 * [Start using Microsoft Intune](start-using-microsoft-intune.md)
 * [Microsoft Intune TechNet Library](http://go.microsoft.com/fwlink/?LinkID=247636)

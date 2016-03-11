@@ -5,8 +5,8 @@ ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
-ms.topic: secure-email-article
-ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
+ms.topic: 
+ms.assetid: 
 author: karthikaraman
 ---
 Intro
