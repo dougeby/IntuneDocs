@@ -33,6 +33,6 @@ The **Wipe requests** tile shows you the summary report of the status of the wip
 
   ![](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
-### See Also
+### See also
 [Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 [Configure data loss prevention app policies with Microsoft Intune](configure-data-loss-prevention-app-policies-with-microsoft-intune.md)
