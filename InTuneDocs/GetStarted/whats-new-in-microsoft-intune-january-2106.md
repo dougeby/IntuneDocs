@@ -1,12 +1,12 @@
 ---
-title: What's new | Microsoft Intune
+title: What's new - January 2016 | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
-ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
+ms.assetid: 
 author: Lindavr
 ---
 # What's new in Microsoft Intune
@@ -58,15 +58,6 @@ When managing Windows 10 devices, Intune will be able to create and deploy confi
 
 > [!NOTE]
 > Enterprise data protection is currently being tested with a number of enterprise customers, and will become available to Windows Insiders soon.
-
-## Archive
-> [!div class="op_single_selector"]
-- [January 2016](whats-new-in-microsoft-intune-january-2016.md)
-- [December 2015](whats-new-in-microsoft-intune-december-2015.md)
-- [November 2015](whats-new-in-microsoft-intune-november-2015.md)
-- [October 2015](name-of-the-file.md)
-- [September 2015](name-of-the-file.md)
-- [August 2015](name-of-the-file.md)
 
 ### See also
 * [Start using Microsoft Intune](start-using-microsoft-intune.md)
