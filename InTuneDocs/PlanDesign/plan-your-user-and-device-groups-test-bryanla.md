@@ -15,7 +15,15 @@ author: Nbigman
 ## Group basics-->
 Groups in Intune provide great flexibility in managing your devices and users. You can set up groups to suit your organizational needs according to:
 
-Unordered list with **asterisk** prefixes:
+Ordered list :
+
+1. geographic location
+2. department
+3. hardware characteristics
+4. operating system
+5. whether the device is user-owned or company-owned
+
+Unordered list with **asterisk** prefixes :
 
 * geographic location
 * department
@@ -32,6 +40,14 @@ Unordered list with **plus** prefixes:
 + whether the device is user-owned or company-owned
 
 Unordered list with **hyphen** prefixes:
+
+- geographic location
+- department
+- hardware characteristics
+- operating system
+- whether the device is user-owned or company-owned
+
+1.Unordered list with **hyphen** prefixes, starting with ordered heading:
 
 - geographic location
 - department
