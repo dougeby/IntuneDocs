@@ -228,7 +228,7 @@ If you have any questions about this change, feel free to contact your Intune su
 For general Microsoft Intune feedback, including filing Design Change Requests (DCRs) or bugs, please visit [Intune user voice](https://microsoftintune.uservoice.com/).
 
 
-## What's new in Intune documentation -- November 2015
+### What's new in Intune documentation -- November 2015
 **New content**
 * [Mac OS X configuration policy settings in Microsoft Intune](https://technet.microsoft.com/library/mt627823.aspx): How to control device settings and features for Mac OS X devices.
 * [Mac OS X custom policy settings in Microsoft Intune](https://technet.microsoft.com/library/mt627820.aspx): How to deploy Mac OS X device settings that you created using the Apple Configurator tool.
