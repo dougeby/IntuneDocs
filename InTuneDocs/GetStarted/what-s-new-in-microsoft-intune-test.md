@@ -21,7 +21,7 @@ You can use your third-party mobile device management (MDM) vendor to take advan
 
      1. Users are required to log in with their work account before they get access to any corporate data from Cloud Services or other apps. This ensures that mobile app management (MAM) policies are in place when the data is accessed.
 
-       2. Managed  email profiles and other managed apps deployed through a third-parter MDM solution can share files and data with the apps that have Intune MAM policies.
+     2. Managed  email profiles and other managed apps deployed through a third-parter MDM solution can share files and data with the apps that have Intune MAM policies.
 
 - **Manage the Microsoft Outlook app with MAM policies for devices not enrolled in Intune**
 You can now manage the Microsoft Outlook app on devices that are not enrolled in Intune with the Intune mobile application management policy. The updated Microsoft Outlook app with the MAM capabilities is available for both [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) devices. Use the instructions in the [Create and deploy mobile app management policies](https://technet.microsoft.com/library/mt627829.aspx) topic to create a MAM policy.  
