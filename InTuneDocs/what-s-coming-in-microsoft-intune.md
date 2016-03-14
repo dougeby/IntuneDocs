@@ -51,4 +51,4 @@ The following changes are under development for the Company Portal apps:
 - **New enrollment flow checklist design for end users of iOS and Android.** The enrollment flow has been improved to a checklist-style design with descriptive screens to provide information about the enrollment process, as currently documented on the Intune notice board.
 
 ### See also
-What's new in Microsoft Intune
+[What's new in Microsoft Intune](what-s-new-in-microsoft-intune.md)
