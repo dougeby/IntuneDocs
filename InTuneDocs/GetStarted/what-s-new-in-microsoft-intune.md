@@ -16,7 +16,7 @@ author: Lindavr
 ### App management
 
 - **Take advantage of iOS "Open-in" management for devices that are enrolled in a third-party MDM solution**
-You can use your third-party mobile device management (MDM) vendor to take advantage of iOS "Open-In" management. You can set the restrictions in the configuration profile settings and deploy the app using your MDM software. When the user installs the managed app, the restrictions are applied. Read the details: [Microsoft Intune mobile app management policies and iOS Open In](Microsoft%20Intune%20mobile%20app%20management%20policies%20and%20iOS%20Open%20In.md).
+You can use your third-partgity mobile device management (MDM) vendor to take advantage of iOS "Open-In" management. You can set the restrictions in the configuration profile settings and deploy the app using your MDM software. When the user installs the managed app, the restrictions are applied. Read the details: [Microsoft Intune mobile app management policies and iOS Open In](Microsoft%20Intune%20mobile%20app%20management%20policies%20and%20iOS%20Open%20In.md).
 
      This approach has two main benefits:
 
