@@ -11,53 +11,69 @@ author: Lindavr
 ---
 # What's new in Microsoft Intune
 
-## January 2016
+## March 2016
 
-### Take advantage of Windows 10 features
-* **Conditional access with Health Attestation Service**
-Intune administrators can now view the status of Windows 10 Device Health Attestation in the Intune Admin console. Device health attestation lets the administrator ensure that client computers have trustworthy BIOS, TPM, and boot software configurations. To support device health attestation, client devices must be running Windows 10 with TPM 2 enabled. Device health attestation displays the number of devices enabled for each of the following:
-	* Early-launch antimalware
-	* BitLocker
-	* Secure Boot
-	* Code Integrity
+### App management
 
-	Read [Manage device compliance policies for Microsoft Intune](manage-device-compliance-policies-for-microsoft-intune.md) for more details on the device health setting, collected data points, and the health attestation report. The [HAS service details](https://msdn.microsoft.com/en-us/library/dn934876.aspx) explains the service in depth.
+- **Take advantage of iOS "Open-in" management for devices that are enrolled in a third-party MDM solution**
+You can use your third-party mobile device management (MDM) vendor to take advantage of iOS "Open-In" management. You can set the restrictions in the configuration profile settings and deploy the app using your MDM software. When the user installs the managed app, the restrictions are applied. Read the details: [Microsoft Intune mobile app management policies and iOS Open In](Microsoft%20Intune%20mobile%20app%20management%20policies%20and%20iOS%20Open%20In.md).
 
-* **Windows 10 Passport for Work Policy and certificate management**
-With Intune, you can [integrate with Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md), which is an alternative sign-in method for Windows 10 that uses Active Directory or an Azure Active Directory account to replace a password, smart card, or virtual smart card. Passport lets you use a user gesture to log in instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
+     This approach has two main benefits:
 
-* **VPN for specific apps**
-You can select apps that automatically connect to your corporate network over VPN. Create the list of apps when you set up the VPN profile, as described in Help users connect to their work using VPN profiles with Microsoft Intune.
+     1. Users are required to log in with their work account before they get access to any corporate data from Cloud Services or other apps. This ensures that mobile app management (MAM) policies are in place when the data is accessed.
 
-* **Windows 10 Full Wipe support**
-You can now issue a remote full wipe of Windows 10 desktop devices enrolled in Intune through the Intune admin console. Windows 10 full wipe does a factory reset of the device.
+     2. Managed  email profiles and other managed apps deployed through a third-parter MDM solution can share files and data with the apps that have Intune MAM policies.
+
+- **Manage the Microsoft Outlook app with MAM policies for devices not enrolled in Intune**
+You can now manage the Microsoft Outlook app on devices that are not enrolled in Intune with the Intune mobile application management policy. The updated Microsoft Outlook app with the MAM capabilities is available for both [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) devices. Use the instructions in the [Create and deploy mobile app management policies](https://technet.microsoft.com/library/mt627829.aspx) topic to create a MAM policy.  
 
 
-### Apple Volume Purchase Program (VPP) update
-Intune can now help you [manage apps you purchased through the Apple Volume Purchase Program (VPP) for Business](manage-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md). This includes synchronizing license information between Apple and Intune, and tracking how many copies of each app you have deployed.
+- **Mobile app configuration policies give you more flexibility to specify user details for iOS apps**
+You can supply user settings that an iOS app might need when it is opened. For example, you can supply a network port, or a user name. For details, see [enter link description here](Configure%20iOS%20apps%20with%20mobile%20app%20configuration%20policies%20in%20Microsoft%20Intune.md).
 
-### Use IMEI numbers to identify corporate-owned devices
-You can now [import international mobile equipment identity (IMEI) numbers](specifiy-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) for mobile device platforms that have an IMEI number to help identify corporate-owned mobile devices. Once enrolled in Intune, devices with imported IMEI numbers are tagged as Corporate, which can be used for applying policies that are different than those applied to personally owned devices.
 
-### More apps are now compatible with Intune MAM policies
-Additional apps from Microsoft partners are now compatible with Intune mobile application management (MAM) policies (for devices managed by Intune):
-* Box for EMM (from Box Inc) – iOS only
-* Adobe Reader (from Adobe) – Android only
-* Foxit PDF Reader (from Foxit Corporation) – iOS and Android
+- **Deploy Adobe Reader for Microsoft Intune to Intune-managed iOS devices in your enterprise**
+The Adobe Reader app for iOS can now be managed on enrolled devices with the Intune mobile application management policy.
 
-For a complete list see [Microsoft apps you can use with Microsoft Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md). For a list of compatible partner apps, see the [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) page.
+- **Microsoft apps that support MAM**
+The list of [Microsoft apps you can use with Intune mobile application management policies](Microsoft%20apps%20you%20can%20use%20with%20Microsoft%20Intune%20mobile%20application%20management%20policies.md) has been updated to include the latest apps (for devices that are enrolled with Intune only).
 
-## What’s coming
+- **Ensure deployed web clips are opened in the managed browser**
+You can deploy targeted web clips that can only be opened using the managed browser on iOS and Android devices. For example, you deploy links to corporate resources through the Company Portal, and when users navigate to the links, they open directly into the managed browser where they can be protected by MAM policy. For details, see [Deploy apps to mobile devices](Deploy%20apps%20to%20mobile%20devices%20in%20Microsoft%20Intune.md).
+
+
+- **Find, manage, and distribute Windows Store for Business apps for Windows 10 devices from the Intune administrator console**
+Support for Windows Store for Business is available in Intune to help you find, manage, and distribute apps to the Windows 10 devices you’re managing. Windows Store for Business lets you manage the process of deploying and monitoring these apps from the Intune administrator console—the same console you use to manage your other apps. Specifically, Windows Store for Business manages the content and licensing  of “online licensed apps”. For details, see [Manage apps you purchased from the Windows Store for Business](Manage%20apps%20you%20purchased%20from%20the%20Windows%20Store%20for%20Business%20with%20Microsoft%20Intune.md).
+
+
+### Device management
+- **PFX certificates distribution for iOS devices**
+Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](Enable%20access%20to%20company%20resources%20using%20certificate%20profiles%20with%20Microsoft%20Intune.md).
+
+
+- **Apply apps and policies to different device groups based on user category selection**
+Intune administrators can now define custom device categories for users to select from during enrollment. For example, administrators might want their users to specify if they're enrolling a device used for the "Cash Register" or "Delivery Truck" or "Inventory Room." The category selected will cause the device to become a member of an Intune device group, which can be used for deploying different apps and policies to the enrolled device. For details, see [Categorize devices with device group mapping](Categorize%20devices%20with%20device%20group%20mapping%20in%20Microsoft%20Intune.md).
+
+### Changes and updates to Microsoft Company Portal
+The following changes have been made to the Company Portal in this release.
+
+**Android Company Portal app**
+
+* When your users launch an app that is managed by mobile application management (MAM), they will see a message notifying them that the app is managed by their company. Users can now tap a “Learn More” link to get [more information](https://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_use_mgd_apps) here about what “managed apps” means. They can also tap “Don’t Show Again” so that the message no longer appears when they launch the app.
+* New screens have been added to guide users through the enrollment process and provide more information about why users should enroll and what IT administrators can and can’t see on their enrolled devices. See the [enrollment instructions](https://technet.microsoft.com/library/mt502762(TechNet.10).aspx#BKMK_andr_enroll_devc) for details.
+* Enrollment error messages are now displayed in the Company Portal app. Previously, these messages appeared in the Company Portal website. Making this change means that all error messages now appear in just one place instead of two different places.
+
+
+**iOS Company Portal app**
+* When your users launch an app that is managed by mobile application management (MAM), they will see a message notifying them that the app is managed by their company. Users can now tap a “Learn More” link to get [more information](https://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_use_mgd_apps) here about what “managed apps” means. They can also tap “Don’t Show Again” so that the message no longer appears when they launch the app.
+* New screens have been added to guide users through the enrollment process and provide more information about why users should enroll and what IT administrators can and can’t see on their enrolled devices. See the [enrollment instructions](https://technet.microsoft.com/library/mt598622(TechNet.10).aspx#BKMK_enroll_ios_device) for details.
+* Enrollment error messages are now displayed in the Company Portal app. Previously, these messages appeared in the Company Portal website. Making this change means that all error messages now appear in just one place instead of two different places.
+
+
+
+
+### What’s coming
 Keep informed about upcoming developments for Intune with the [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
-
-### IE9 support ending in January
-Starting in February, 2016, Internet Explorer 9 will no longer be supported as an official browser for accessing the Microsoft Intune company portal website, Intune account portal, and Intune administration console. You will need to migrate to Internet Explorer 10 or later.
-
-### Protect your company data using enterprise data protection (EDP)
-When managing Windows 10 devices, Intune will be able to create and deploy configuration policies for Windows 10 enterprise data protection (EDP). EDP can help you restrict and/or alert you to company data sharing. Intune EDP policies will manage the list of apps protected by EDP, enterprise network locations, protection level, and encryption settings. To opt-in to receive preview builds of Windows, consider joining the [Windows Insider Program](https://insider.windows.com/).
-
-> [!NOTE]
-> Enterprise data protection is currently being tested with a number of enterprise customers, and will become available to Windows Insiders soon.
 
 
 ## Archive
@@ -69,7 +85,6 @@ When managing Windows 10 devices, Intune will be able to create and deploy confi
 - [September 2015](previous-intune-releases.md)
 - [August 2015](previous-intune-releases.md)
 - [July 2015](previous-intune-releases.md)
-
 
 ### See also
 * [Start using Microsoft Intune](start-using-microsoft-intune.md)
