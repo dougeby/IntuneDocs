@@ -57,3 +57,13 @@ You can filter the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin 
         -   Passcode reset
 
 When the admin you configured next opens the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console, they will be given the level of access you specified.
+
+<blockquote>
+  <p>
+    Unless someone like you<br>
+    Cares a whole awful lot,<br>
+    Nothing is going to get better.<br>
+    It’s not.
+  </p>
+  <footer>— <cite title="Dr. Seuss">Dr. Seuss</cite></footer>
+</blockquote>
