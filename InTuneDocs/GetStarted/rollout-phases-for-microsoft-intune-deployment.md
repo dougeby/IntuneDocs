@@ -8,8 +8,6 @@ ms.topic: article
 ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
 author: Nbigman
 ---
-# Rollout phases for Microsoft Intune deployment
-When you start using a new service, consider rolling out the changes to your organization in phases. This section describes the phases that are generally associated with a service deployment and how to prepare for them. On this page you'll find links to topics that describe the rollout phases in more general terms, and below those, links to topics with specific recommendations for introducing new policies and apps to your organization.
 
 ## Rollout phases - general resources
 The typical phases of a technical deployment are Project Scope, Proof of Concept, Pilot, Enterprise rollout, and Run State. These are defined briefly here, with links to more information and recommendations about how to proceed through each phase.
@@ -26,6 +24,6 @@ The typical phases of a technical deployment are Project Scope, Proof of Concept
 
 ## Rolling out policies and apps
 These topics will help you plan for the rollout of new policies and apps:
--   **[Roll out policies](policy-rollout.md):**
+-   **[Roll out policies](policy-rollout.md)**
 
--   **[Roll out apps](application-rollout.md):**
+-   **[Roll out apps](application-rollout.md)**
