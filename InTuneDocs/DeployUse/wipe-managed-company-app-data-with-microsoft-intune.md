@@ -11,11 +11,11 @@ author: karthikaraman
 ---
 # Wipe managed company app data with Microsoft Intune
 You can selectively remove company data from apps without affecting personal data on a device.  To wipe company app data, you make a wipe request.  After you make a wipe request, the next time the app runs on the device, company data is removed from the app.
+>[!NOTE]
+> Contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this is applicable only to the Microsoft Outlook app.
 
 The **Wipe request** tile on the **Intune mobile application management** blade displays the number of pending requests and failures.
 
-> [!IMPORTANT]
-> Microsoft Word, Excel, and PowerPoint apps don't have the selective wipe capability in the current release.
 
 **In this topic**
 
@@ -27,11 +27,11 @@ The **Wipe request** tile on the **Intune mobile application management** blade 
 
 1.  In the **Intune Mobile application management** blade, click  the **Wipe requests** tile.
 
-    ![](./media/AppManagement/AzurePortal_MAM_WipeRequests.png)
+    ![](../Image/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
 2.  Click  **New wipe requests**.
 
-    ![](./media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
+    ![](../Image/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
 3.  In the **New wipe request** blade, click **User** to open the **User** blade and select the user whose app data you want to wipe.
 
@@ -41,7 +41,7 @@ The **Wipe request** tile on the **Intune mobile application management** blade 
 
 The **Intune mobile application management** blade has a summarized report on the **Wipe request** tile.  It displays the overall status and includes the number of pending requests, and failures. You can get more details by clicking on the tile, which opens up the **Wipe request** blade.
 
-![](./media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
+![](../Image/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 #### <a name="bkmk_monitorrequest"></a>Monitor your wipe requests
 
@@ -50,5 +50,5 @@ The **Intune mobile application management** blade has a summarized report on th
 2.  In the **Wipe request** blade, you can see the list of your requests grouped by users.  Since the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user.  The status indicates whether a wipe request is still **pending**, **failed**, or **successful**.
 
 ## See Also
-[Configure data loss prevention app policies with Microsoft Intune](configure-data-loss-prevention-app-policies-with-microsoft-intune.md)
+[Configure data loss prevention app policies with Microsoft Intune](../Topic/Configure-data-loss-prevention-app-policies-with-Microsoft-Intune.md)
 
