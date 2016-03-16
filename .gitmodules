@@ -1,9 +1,9 @@
-[submodule "docs shared themes"]
-	path = InTuneDocs/_themes
-	url = https://github.com/JialinXin/DocsThemes
-	branch = master
 [submodule "ThemeIntuneUnderstand"]
 	path = InTuneDocs/Understand/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
+[submodule "ThemeIntuneEndUser"]
+	path = InTuneDocs/EndUser/_themes
 	url = https://github.com/Microsoft/templates.docs.msft
 	branch = master
 [submodule "ThemeIntuneGetStarted"]
@@ -20,5 +20,9 @@
 	branch = master
 [submodule "ThemeIntuneDeployUse"]
 	path = InTuneDocs/DeployUse/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
+[submodule "docs shared themes"]
+	path = InTuneDocs/_themes
 	url = https://github.com/Microsoft/templates.docs.msft
 	branch = master

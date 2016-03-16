@@ -11,7 +11,7 @@ author: Staciebarker
 ---
 
 # Get started with a paid subscription to Microsoft Intune
-Whether you start with a 30-day free trial, or start with a paid subscription, Microsoft Intune provides a quick and easy way for you to manage mobile devices and computers in your organization. This getting started topic leads you through the steps of setting up a cloud-only instance of [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
+Whether you start with a 30-day free trial, or start with a paid subscription, Microsoft Intune provides a quick and easy way for you to manage mobile devices and computers in your organization. This getting started topic leads you through the steps of setting up a cloud-only instance of [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)].
 
 Getting started with a paid subscription of Intune shares many of the same steps as starting with a [free 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune.md). However in this topic, you'll also cover some additional areas that most people might not need to address in trial deployments, including:
 
@@ -37,7 +37,7 @@ There are 9 steps in this guide, not including post-configuration tasks. Total t
 8. [Enroll computers](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 9. [Enroll mobile devices and install an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)
 
-[Post-configuration tasks](post-configuration tasks.md)
+[Post-configuration tasks](post-configuration-tasks.md)
 
 ## Before you begin
 Starting with a paid subscription means that you're ready to deploy Intune and make changes to your existing network infrastructure. This could range from simply adding or updating your internal and external DNS records to connecting your existing Active Directory accounts to Azure Active Directory. Whatever mix of Intune  mobile device management features you decide on, you'll need to  carefully plan how Intune will interact with your existing network components and services. Specifically, you should review:
@@ -51,26 +51,28 @@ Ready to get started? You'll need the following when starting your paid subscrip
 
 -   **A device with a Silverlight-enabled web browser** that you can use to access the websites where you'll  create Intune user accounts (the Intune Account Portal) and where you'll manage devices, groups, and policies  (the Intune administration console).
 
--   **A second device with a web browser**, which you can use to access the company portal to see how most [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] users will enroll and manage their devices, find and install software, and request help from administrators. Instead of using a second device with a web browser, you can use the “privacy mode” setting on the same browser that you use for [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administration (for example: in Internet Explorer, you can click **Tools** &gt; **InPrivate Browsing**).
+-   **A second device with a web browser**, which you can use to access the company portal to see how most [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] users will enroll and manage their devices, find and install software, and request help from administrators. Instead of using a second device with a web browser, you can use the “privacy mode” setting on the same browser that you use for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] administration (for example: in Internet Explorer, you can click **Tools** &gt; **InPrivate Browsing**).
 
 -   If you have an existing Microsoft Online Services account, you'll need the **administrator credentials** for that account. If you don’t have such an account, or if you want to use this Intune tenant for evaluation purposes only, you don't need tenant administrator credentials.
 
 -   **Certificates for mobile devices** If you'll manage iOS or Windows Phone devices with Intune, you'll need certificates (or keys) and accounts to retrieve those certificates. Android devices don't need any additional certificates.
-    - **Windows Phone 8.1 and [!INCLUDE[winphone8_client_1](./includes/winphone8_client_1_md.md)]**
+    - **Windows Phone 8.1 and [!INCLUDE[winphone8_client_1](../includes/winphone8_client_1_md.md)]**
         - No certificate is required for Windows Phone 8.1 users who install the company portal app from the Store.
         - A Symantec certificate is required for Windows Phone 8.0 or to use Intune to deploy the company portal app to Windows Phone 8.1 devices.
 
     This guidance assumes your users get the company portal app from the Store on a Windows Phone 8.1 or later device. For information about Windows Phone 8.0 support, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
-    - **Windows 10, [!INCLUDE[winblue_winrt_2](./includes/winblue_winrt_2_md.md)], [!INCLUDE[win8RT_client_1](./includes/win8RT_client_1_md.md)], or [!INCLUDE[winblue_client_2](./includes/winblue_client_2_md.md)] devices**
+    - **Windows 10, [!INCLUDE[winblue_winrt_2](../includes/winblue_winrt_2_md.md)], [!INCLUDE[win8RT_client_1](../includes/win8RT_client_1_md.md)], or [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)] devices**
 
-        There are no certificate requirements for enrolling Windows RT and Windows devices. See [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+        There are no certificate requirements for enrolling Windows RT and Windows devices. See [Install the Windows PC client with Microsoft Intune](/Intune/deployuse/install-the-windows-pc-client-with-microsoft-intune.html). <!--lindavr: changed link from install-the-windows-pc-client-with-microsoft-intune.md, which was generatign a 404, to the absolute-->
 
     - **iOS or Mac OS X**
 
-        Get an Apple Push Notification service certificate.|Request an Apple Push Notification service certificate from Apple, as described in [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
+        Request an Apple Push Notification service certificate from Apple, as described in [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 ## Next steps
 Ready to get started?
 
-**Next** [Sign up or sign in to Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
+>[!div class="step-by-step"]
+[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.html)
+**Sign in to Intune**

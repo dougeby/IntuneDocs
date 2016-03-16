@@ -61,8 +61,18 @@
             "type_mapping": {
                 "Conceptual": "Content"
             }
+        },
+                        {
+            "docset_name": "EndUser",
+            "build_output_subfolder": "InTuneDocs/EndUser",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
         }
     ],
-    "notification_subscribers": ["OPBuild@microsoft.com"],
+    "notification_subscribers": [""],
     "branches_to_filter": ["live"]
 }

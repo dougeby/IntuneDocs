@@ -9,14 +9,15 @@ ms.assetid: tempfile
 author: jeffgilb
 ---
 
-## Azure selectors
-[AZURE.SELECTOR]  
-[Selector option 1](lp-selector1.md)  
-[Selector option 2](lp-selector2.md)  
+## iFrame
+<iframe width="730" height="800" src="https://onedrive.live.com/edit.aspx?cid=15f03658bc93f824&page=view&resid=15F03658BC93F824!41614&parId=15F03658BC93F824!145&app=Excel" frameborder="0" allowfullscreen></iframe>
 
 
+> [!NOTE]
+> I am a NOTE
 
-
+> [!IMPORTANT]
+> I am IMPORTANT
 
 <div class="alert alert-warning">
 	<h5><span class="icon icon-warning"></span> Warning</h5>
@@ -75,7 +76,7 @@ The Doc-level Options component allows authors to embed other UI components (in 
 			<div class="dropdown">
 				<select>
 					<option value="option-a">Option A</option>
-					<option value="option-b">Option B</option>	
+					<option value="option-b">Option B</option>
 				</select>
 			</div>
 		</div>
@@ -86,7 +87,7 @@ The Doc-level Options component allows authors to embed other UI components (in 
 			<div class="dropdown">
 				<select>
 					<option value="option-c">Option C</option>
-					<option value="option-d">Option D</option>	
+					<option value="option-d">Option D</option>
 				</select>
 			</div>
 		</div>

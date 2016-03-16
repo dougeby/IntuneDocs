@@ -10,7 +10,7 @@ ms.assetid:
 author: Staciebarker
 ---
 # 6. Create policies and publish an app
-[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. If you are planning to use Intune for devices that you configure for production use after the trial, it's absolutely essential that you follow the instructions in [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) and [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. If you are planning to use Intune for devices that you configure for production use after the trial, it's absolutely essential that you follow the instructions in [Manage settings and features on your devices with Microsoft Intune policies](/Intune/deployuse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.html) and [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/Intune/deployuse/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.html). 
 
 You can perform two types of app installations using Intune. The first is a **required install**, which automatically deploys the app to managed computers. The other is an **available install**, which deploys the app, or a link to the app, to the Intune company portal so that users can choose whether to install it on their computers or on their mobile devices.
 
@@ -34,7 +34,7 @@ Your policy appears in the list of configuration policies, and has been deployed
 
 ## Publish the Skype app for mobile devices
 
-1.  In the [Intune administration console](https://manage.microsoft.com/), choose the **Apps** icon, then choose **Apps** > **Add App**. If prompted, enter your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] credentials.
+1.  In the [Intune administration console](https://manage.microsoft.com/), choose the **Apps** icon, then choose **Apps** > **Add App**. If prompted, enter your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] credentials.
 
     > [!NOTE]
     > When you start the **Intune Software Publisher** for the first time, a short delay occurs while the application is installed.
@@ -77,12 +77,12 @@ Your policy appears in the list of configuration policies, and has been deployed
 
 11. Choose **Finish**.
 
-The Skype app is now available to install on mobile devices from the company portal, but first you need to install [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] software on computers and mobile devices.
+The Skype app is now available to install on mobile devices from the company portal, but first you need to install [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] software on computers and mobile devices.
 
 
 ## Next steps
-Congratulations! You have just completed step 6 of the *Get started with a paid subscription to Microsoft Intune* guide.
-
-**Next** [Customize the company portal](get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-
-**Prev** [Create groups to organize users and devices](get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)
+|Congratulations! You have just completed step 6 of the *Get started with a paid subscription to Microsoft Intune* guide.|---|---|
+|-----------------|----------------------|---------------------------------------------------------|
+|>[!div class="step-by-step"]<br>>[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)  **Create groups to organize users and devices**|---|[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)  **Customize the company portal**|
+>
+>

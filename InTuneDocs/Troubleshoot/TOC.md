@@ -1,4 +1,8 @@
-# [Troubleshoot Intune](Troubleshoot-microsoft-intune.md)
+# [Understand and Explore](/intune/understand/ways-to-do-enterprise-mobility.html)
+# Get started
+# [Plan and Design](/intune/plandesign/plan-your-user-and-device-groups.html)
+# [Deploy and Use](/intune/deployuse/learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.html)
+# [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
 
 ## [How to get support](how-to-get-support-for-microsoft-intune.md)
 ## [Troubleshoot endpoint protection](Troubleshoot-Endpoint-Protection-in-microsoft-intune.md)
