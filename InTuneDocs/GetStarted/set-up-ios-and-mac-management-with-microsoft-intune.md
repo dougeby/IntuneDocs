@@ -35,9 +35,9 @@ As an alternative to enrollment with the Company Portal app, you can also [enrol
     Your users will need to know how to enroll their devices and what to expect once they're brought into management. [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 If your company or organization purchases company-owned devices, those devices can be enrolled for management in the following ways:
-- [Apple's device enrollment program (DEP) for iOS](iOS-device-enrollment-program.md)
-- [Apple Configurator to configure iOS Setup Assistant](iOS-setup-assistant-enrollment.md)
-- [Apple Configurator to directly enroll iOS devices](iOS-direct-enrollment.md)
+- [Apple's device enrollment program (DEP) for iOS](ios-device-enrollment-program.md)
+- [Apple Configurator to configure iOS Setup Assistant](ios-setup-assistant-enrollment.md)
+- [Apple Configurator to directly enroll iOS devices](ios-direct-enrollment.md)
 
 ### See Also
 [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
