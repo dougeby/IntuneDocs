@@ -1,5 +1,5 @@
 ---
-title: Configure Microsoft Intune for Mobile Device Management
+title: Configure Microsoft Intune for mobile device management
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
