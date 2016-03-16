@@ -10,29 +10,29 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 author: karthikaraman
 ---
 # Manage SharePoint Online access with Microsoft Intune
-Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]**SharePoint Online** conditional access policy to manage access to OneDrive for Business files located on SharePoint online, based on conditions you specify.
+Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)]**SharePoint Online** conditional access policy to manage access to OneDrive for Business files located on SharePoint online, based on conditions you specify.
 
 When a targeted user attempts to connect to a file using a supported app such as OneDrive on their device, the following evaluation occurs:
 
-![](./media/ConditionalAccess8-6.png)
+![](../Image/ConditionalAccess8-6.png)
 
 To connect to the required files, the device running OneDrive must:
 
--   Be enrolled with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] or a domain joined PC.
+-   Be enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] or a domain joined PC.
 
--   Register the device in Azure Active Directory (this happens automatically when the device is enrolled with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+-   Register the device in Azure Active Directory (this happens automatically when the device is enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
 
     For domain joined PC, you must set it up to [automatically register](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory.
 
--   Be compliant with any deployed [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] compliance policies
+-   Be compliant with any deployed [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] compliance policies
 
 The device state is stored in Azure Active Directory which grants or blocks access to the files, based on the conditions you specify.
 
 If a condition is not met, the user is presented with one of the following messages when they log in:
 
--   If the device is not enrolled with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app and enroll.
+-   If the device is not enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app and enroll.
 
--   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] web portal where they can find information about the problem, and how to remediate it.
+-   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] web portal where they can find information about the problem, and how to remediate it.
 
 -   For a PC:
 
@@ -71,9 +71,9 @@ If a user is in both groups, they will be exempt from the policy.
 Ensure that you create and deploy a compliance policy to all devices that the SharePoint Online policy will be targeted to.
 
 > [!NOTE]
-> While compliance policies are deployed to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] groups, conditional access policies are targeted to Azure Active Directory security groups.
+> While compliance policies are deployed to [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] groups, conditional access policies are targeted to Azure Active Directory security groups.
 
-For details about how to configure the compliance policy, see [Manage device compliance policies for Microsoft Intune](manage-device-compliance-policies-for-microsoft-intune.md).
+For details about how to configure the compliance policy, see [Manage device compliance policies for Microsoft Intune](../Topic/Manage-device-compliance-policies-for-Microsoft-Intune.md).
 
 > [!IMPORTANT]
 > If you have not deployed a compliance policy and then enable the SharePoint Online policy, all targeted devices will be allowed access.
@@ -107,13 +107,13 @@ Next, configure the policy to require that only managed and compliant devices ca
     > 
     > This [article](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/) has more detailed information on how modern authentication works.
 
-    For windows PCs, the PC must either be domain joined, or enrolled with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] and compliant. You can set the following requirements:
+    For windows PCs, the PC must either be domain joined, or enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] and compliant. You can set the following requirements:
 
-    -   **Devices must be domain joined or compliant.** This means that the PCs must either be domain joined or compliant with the policies set in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. If the PC does not meet either of these requirements, the user is prompted to enroll the device with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+    -   **Devices must be domain joined or compliant.** This means that the PCs must either be domain joined or compliant with the policies set in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. If the PC does not meet either of these requirements, the user is prompted to enroll the device with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
 
     -   **Devices must be domain joined.** This means that the PCs must be domain joined to access Exchange Online. If the PC is not domain joined access to email is blocked and the user is prompted to contact the IT admin.
 
-    -   **Devices must be compliant.** This means that the PCs must be enrolled in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] and compliant. If the PC is not enrolled, a message with instructions on how to enroll is displayed.
+    -   **Devices must be compliant.** This means that the PCs must be enrolled in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] and compliant. If the PC is not enrolled, a message with instructions on how to enroll is displayed.
 
 4.  Under **Targeted Groups**, click **Modify** to select the Azure Active Directory security groups to which the policy will apply. You can choose to target this to all users or just a select groups of users.
 
@@ -135,5 +135,5 @@ Select any mobile device group and then, on the **Devices** tab, select one of t
 -   **Devices that are registered with AAD and compliant** – These devices can access SharePoint Online.
 
 ## See Also
-[Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-sharepoint-with-microsoft-intune.md)
+[Manage access to email and SharePoint with Microsoft Intune](../Topic/Manage-access-to-email-and-SharePoint-with-Microsoft-Intune.md)
 

@@ -10,7 +10,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 author: karthikaraman
 ---
 # Configure data loss prevention app policies with Microsoft Intune
-Use mobile app management policies in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] to apply restrictions to apps that help protect your company data.
+Use mobile app management policies in [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] to apply restrictions to apps that help protect your company data.
 
 **In this topic**
 
@@ -29,7 +29,7 @@ You can use mobile app management (MAM) policies to help protect your company’
 
 MAM policies support the following scenarios:
 
--   **Devices that are managed and enrolled** in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].  These are typically corporate owned devices that  you manage.
+-   **Devices that are managed and enrolled** in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].  These are typically corporate owned devices that  you manage.
 
     > [!IMPORTANT]
     > If you are using Intune with Configuration Manager to manage your iOS and Android devices, you can create mobile app management policies for Office mobile apps that connect to Office 365 services, This is not supported for apps that connect to on-premises Exchange or SharePoint services.
@@ -57,26 +57,29 @@ MAM policies support the following scenarios:
 ### <a name="bkmk_howMAMworks"></a>How MAM policies protect app data
 The following diagrams illustrate how MAM works to protect company data in apps.
 
-![](./media/Apps_without_MAM_policies.png)
+**No MAM policies**
 
-As shown in **Figure 1**, when apps are used without restrictions, company and personal data can get intermingled.  Company data could end up in locations like personal storage or transferred to apps outside of your  purview,  resulting in data loss. The diagram below illustrates the state without any restrictions. The arrows show data movement between apps (corporate and personal) and to storage locations.
+![](../Image/Apps_without_MAM_policies.png)
 
-![](./media/Apps_with_MAM_policies.png)
+As shown in the diagram above, when apps are used without restrictions, company and personal data can get intermingled.  Company data could end up in locations like personal storage or transferred to apps outside of your  purview,  resulting in data loss. The diagram below illustrates the state without any restrictions. The arrows show data movement between apps (corporate and personal) and to storage locations.
 
-Figure 2 represents the same environment but with the policies in place restricting data sharing.  With the data protection policies, you can configure policies that prevent company data from saving to the local storage of the device, or move between apps not protected by the data protection policies. These policies allow you to set various data relocation and access policies that help keep company data secure. 
+**With MAM policies**
+![](../Image/Apps_with_mobile_app_policies.png)
+
+As shown in the diagram above, with the data protection policies, you can configure policies that prevent company data from saving to the local storage of the device, or move between apps not protected by the data protection policies. These policies allow you to set various data relocation and access policies that help keep company data secure. 
 However, the policies do not take effect when the end-user uses the app to do personal work, since the restrictions are only seen in the work context.  This allows the end-user of the device to use the app for both personal and work tasks. We call this multi-identity support.
 
 **Multi-identity:**
 
-Multi-identity gives you the ability to use different accounts - work and personal, to access the same apps.  On devices where apps are used both for personal and work tasks, you want to apply the policy when the end-user is using the app with their work account, but not when they are using it with their personal account.  [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] MAM policies do just that.  The restrictions apply only when the user signs into an app using the work account. When the user signs into the same app with their personal account, the policy settings are not enforced and the user is free to move data without restrictions.
+Multi-identity gives you the ability to use different accounts - work and personal, to access the same apps.  On devices where apps are used both for personal and work tasks, you want to apply the policy when the end-user is using the app with their work account, but not when they are using it with their personal account.  [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] MAM policies do just that.  The restrictions apply only when the user signs into an app using the work account. When the user signs into the same app with their personal account, the policy settings are not enforced and the user is free to move data without restrictions.
 
 All Office mobile apps support multi-identity.
 
-Read [End-user experience for apps associated with Microsoft Intune mobile app management policies](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies.md) topic to understand how and the MAM policies affect the end-user experience.
+Read [End-user experience for apps associated with Microsoft Intune mobile app management policies](../Topic/End-user-experience-for-apps-associated-with-Microsoft-Intune-mobile-app-management-policies.md) topic to understand how and the MAM policies affect the end-user experience.
 
 **Devices managed by a MDM solution**
 
-![](./media/MAM_ManagedDevices_November.png)
+![](../Image/MAM_BYOD_November.png)
 
 **For devices enrolled in an MDM solution**-
 
@@ -100,7 +103,7 @@ Figure 3 shows the layers of protection that MDM and MAM policies offer.
 
 **Unmanaged BYOD devices**
 
-![](./media/MAM_BYOD_November.png)
+![](../Image/MAM_ManagedDevices_November.png)
 
 For BYOD devices not enrolled in any MDM solution, MAM policies can help protect company data at the app level. There are some limitations to be aware of, like:
 
@@ -119,23 +122,23 @@ You can configure MAM policies in the following two ways:
 
     -   Devices not managed by any mobile device management solution.
 
-    -   Devices enrolled in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] or a third party MDM. You can create MAM policies and deploy the apps to users in this portal. The end-users will have to download the apps from Apple store or Google Play.  If you want to deploy apps to devices with the MAM policies, use the **Intune admin console**. See [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) for more details.
+    -   Devices enrolled in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] or a third party MDM. You can create MAM policies and deploy the apps to users in this portal. The end-users will have to download the apps from Apple store or Google Play.  If you want to deploy apps to devices with the MAM policies, use the **Intune admin console**. See [Configure and deploy mobile application management policies in the Microsoft Intune console](../Topic/Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md) for more details.
 
         > [!IMPORTANT]
         > If you are using Intune with Configuration Manager to manage your iOS and Android devices, you can create mobile app management policies for Office mobile apps that connect to Office 365 services.  This is not supported for apps that connect to on-premises Exchange or SharePoint services.
 
-    Read the [Get started with mobile app management policies in the Azure portal](get-started-with-mobile-app-management-policies-in-the-azure-portal.md) for more details on how to use the Azure preview portal.
+    Read the [Get started with mobile app management policies in the Azure portal](../Topic/Get-started-with-mobile-app-management-policies-in-the-Azure-portal.md) for more details on how to use the Azure preview portal.
 
-2.  The [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] admin console only supports configuring MAM policies for devices that are enrolled in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+2.  The [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] admin console only supports configuring MAM policies for devices that are enrolled in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
 
-    Find out how to [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+    Find out how to [Configure and deploy mobile application management policies in the Microsoft Intune console](../Topic/Configure-and-deploy-mobile-application-management-policies-in-the-Microsoft-Intune-console.md).
 
 ### <a name="bkmk_nextsteps"></a>Next Steps
-[Get started with mobile app management policies in the Azure portal](get-started-with-mobile-app-management-policies-in-the-azure-portal.md)
+[Get started with mobile app management policies in the Azure portal](../Topic/Get-started-with-mobile-app-management-policies-in-the-Azure-portal.md)
 
-[Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+[Create and deploy mobile app management policies with Microsoft Intune](../Topic/Create-and-deploy-mobile-app-management-policies-with-Microsoft-Intune.md)
 
 ## See Also
-[Configure apps](configure-apps.md)
-[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
+[Configure apps](../Topic/Configure-apps.md)
+[Deploy and configure apps with Microsoft Intune](../Topic/Deploy-and-configure-apps-with-Microsoft-Intune.md)
 
