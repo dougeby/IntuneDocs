@@ -1,7 +1,7 @@
 # [Understand and Explore](/Intune/Understand/ways-to-do-enterprise-mobility.html)
 # [Get started](/Intune/getstarted/what-s-new-in-microsoft-intune.html)
 # [Plan and Design](/Intune/plandesign/plan-your-user-and-device-groups.html)
-# [Deploy and Use](learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
+# [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 
@@ -9,14 +9,14 @@
 ### [Install the PC client](install-the-windows-pc-client-with-microsoft-intune.md)
 ### [Specify corporate-owned devices with international mobile equipment identity (IMEI)  numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
-## [Configure devices]
+## [Configure devices](manage-windows-pcs-with-microsoft-intune.md)
 ### [Manage PCs](manage-windows-pcs-with-microsoft-intune.md)
 ### [Manage settings and features on your devices with policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 ### [Resolve GPO and Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 ### [Common PC management tasks with the Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
-## [Protect devices and data]
-### [Protect data & devices](Protect-data-and-devices-with-microsoft-intune.md)
+## [Protect devices and data](protect-data-and-devices-with-microsoft-intune.md)
+### [Protect data & devices](protect-data-and-devices-with-microsoft-intune.md)
 ### [Keep PCs up to date with software updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
 ### [Help protect PCs using Windows Firewall policies](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
 ### [Help secure PCs with Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
@@ -27,7 +27,7 @@
 #### [Configure access to corporate email using email profiles](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Protect Windows devices with multi-factor authentication](protect-windows-devices-with-multi-factor-authentication.md)
 
-## [Manage access to email and O365 services]
+## [Manage access to email and O365 services](manage-access-to-email-and-sharepoint-with-microsoft-intune.md)
 ### [Manage access to email and SharePoint](manage-access-to-email-and-sharepoint-with-microsoft-intune.md)
 ### [Manage email access ](manage-email-access-with-microsoft-intune.md)
 ### [Manage SharePoint Online access](manage-sharepoint-online-access-with-microsoft-intune.md)
@@ -39,17 +39,17 @@
 
 ### [Control Microsoft Passport settings on devices](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 
-## [Retire devices and data]
+## [Retire devices and data](retire-data-and-devices-from-microsoft-intune-management.md)
 ### [Retire data and devices from Intune management](retire-data-and-devices-from-microsoft-intune-management.md)
 ### [Help protect iOS devices with Activation Lock bypass](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 
-## [Add apps]
+## [Add apps](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 ### [Deploy apps to mobile devices](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 ### [Deploy apps to PCs](deploy-apps-to-windows-pcs-in-microsoft-intune.md)
 
 ## [Publish apps]
 
-## [Configure apps]
+## [Configure apps](manage-device-compliance-policies-for-microsoft-intune.md)
 ### [Manage device compliance policies for Microsoft Intune](manage-device-compliance-policies-for-microsoft-intune.md)
 #### Create a compliance policy
 #### Deploy & monitor a compliance policy
@@ -59,7 +59,7 @@
 ### [Configure apps with mobile app configuration policies](configure-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
 ### [Manage Internet access using managed browser policies](manage-internet-access-using-managed-browser-policies.md)
 
-## [Protect apps and data]
+## [Protect apps and data](configure-and-manage-devices-with-microsoft-intune.md)
 ### [Protect apps](configure-and-manage-devices-with-microsoft-intune.md)
 ### [Configure data loss prevention app policies](configure-data-loss-prevention-app-policies-with-microsoft-intune.md)
 #### [Get started with mobile app management policies in the Azure portal](get-started-with-mobile-app-management-policies-in-the-azure-portal.md)
@@ -74,8 +74,8 @@
 
 ### [Microsoft apps you can use with Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md)
 
-## [Retire apps and data]
-### [Retire apps ](Retire-apps-using-microsoft-intune.md)
+## [Retire apps and data](retire-apps-using-microsoft-intune.md)
+### [Retire apps ](retire-apps-using-microsoft-intune.md)
 ### [Help protect your data with remote wipe, remote lock, or passcode reset](help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-microsoft-intune.md)
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
 <!---
