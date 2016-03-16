@@ -1,6 +1,5 @@
 ---
-title: What's new | Microsoft Intune
-ms.custom: na
+title: What's new in Microsoft Intune -- March 2016
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
@@ -9,10 +8,10 @@ ms.topic: get-started-article
 ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 author: Lindavr
 ---
-# What's new in Microsoft Intune
-## March 2016
+# What's new in Microsoft Intune -- March 2016
 
-### App management
+
+## App management
 
 - **Take advantage of iOS "Open-in" management for devices that are enrolled in a third-party MDM solution**
 You can use your third-party mobile device management (MDM) vendor to take advantage of iOS "Open-In" management. You can set the restrictions in the configuration profile settings and deploy the app using your MDM software. When the user installs the managed app, the restrictions are applied. Read the details: [Microsoft Intune mobile app management policies and iOS Open In](Microsoft%20Intune%20mobile%20app%20management%20policies%20and%20iOS%20Open%20In.md).
@@ -45,7 +44,7 @@ You can deploy targeted web clips that can only be opened using the managed brow
 Support for Windows Store for Business is available in Intune to help you find, manage, and distribute apps to the Windows 10 devices you’re managing. Windows Store for Business lets you manage the process of deploying and monitoring these apps from the Intune administrator console—the same console you use to manage your other apps. Specifically, Windows Store for Business manages the content and licensing  of “online licensed apps”. For details, see [Manage apps you purchased from the Windows Store for Business](Manage%20apps%20you%20purchased%20from%20the%20Windows%20Store%20for%20Business%20with%20Microsoft%20Intune.md).
 
 
-### Device management
+## Device management
 - **PFX certificates distribution for iOS devices**
 Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](Enable%20access%20to%20company%20resources%20using%20certificate%20profiles%20with%20Microsoft%20Intune.md).
 
@@ -53,7 +52,7 @@ Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, emai
 - **Apply apps and policies to different device groups based on user category selection**
 Intune administrators can now define custom device categories for users to select from during enrollment. For example, administrators might want their users to specify if they're enrolling a device used for the "Cash Register" or "Delivery Truck" or "Inventory Room." The category selected will cause the device to become a member of an Intune device group, which can be used for deploying different apps and policies to the enrolled device. For details, see [Categorize devices with device group mapping](Categorize%20devices%20with%20device%20group%20mapping%20in%20Microsoft%20Intune.md).
 
-### Changes and updates to Microsoft Company Portal
+## Changes and updates to Microsoft Company Portal
 The following changes have been made to the Company Portal in this release.
 
 **Android Company Portal app**
@@ -68,14 +67,10 @@ The following changes have been made to the Company Portal in this release.
 * New screens have been added to guide users through the enrollment process and provide more information about why users should enroll and what IT administrators can and can’t see on their enrolled devices. See the [enrollment instructions](https://technet.microsoft.com/library/mt598622(TechNet.10).aspx#BKMK_enroll_ios_device) for details.
 * Enrollment error messages are now displayed in the Company Portal app. Previously, these messages appeared in the Company Portal website. Making this change means that all error messages now appear in just one place instead of two different places.
 
-
-
-
-### What’s coming
+## What’s coming
 Keep informed about upcoming developments for Intune with the [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
 
-
-## Archive
+## Previous Intune releases
 > [!div class="op_single_selector"]
 - [January 2016](previous-intune-releases.md)
 - [December 2016](previous-intune-releases.md)
