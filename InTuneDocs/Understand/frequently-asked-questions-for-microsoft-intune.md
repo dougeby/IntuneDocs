@@ -16,7 +16,7 @@ This article answers some frequently asked questions about Intune. If you don't 
 
 -   **How can I know when the Intune service has been updated?**
 
-    Log on to your account at manage.microsoft.com. In Administration Overview, choose **View Service Status**. The location of your tenant and the maintenance schedule are listed there. Read about the service updates in the [What's new](../Topic/What-s-new-in-Microsoft-Intune.md) article.
+    Log on to your account at manage.microsoft.com. In Administration Overview, choose **View Service Status**. The location of your tenant and the maintenance schedule are listed there. Read about the service updates in the [What's new](../Topic/GetStarted/What-s-new-in-Microsoft-Intune.md) article.
 
 -   **If a user renames a device within the Company Portal app will that name change in Intune or Configuration Manager?**
 
@@ -38,7 +38,7 @@ This article answers some frequently asked questions about Intune. If you don't 
 
 -   **Can I use my existing Office 365 domain name for my subsequent Intune account?**
 
-    **Nathan, this sentence does not make sense** Yes, if you sign in with the organizational ID that is associated with your existing Office 365 tenant and verified domain when your either create their Intune trial or activate your licenses.
+    Yes, if you sign in with the organizational ID that is associated with your existing Office 365 tenant and verified domain when you either create your Intune trial or activate your licenses.
 
     Intune will then use the same domain/users/etc. as in your Office 365 account. Note that each Office 365 user would have to be enabled as an Intune user, using an Intune license. This would have to be done by the global administrator who manages the tenant.
 
@@ -46,15 +46,15 @@ This article answers some frequently asked questions about Intune. If you don't 
 
 -   **Where can my users learn how to enroll their devices?**
 
-    You can use or customize information from the  [Microsoft Intune Enrollment Instructions](http://www.microsoft.com/en-us/download/46398). Comment: I believe this is now on the gallery
+    You can use or customize information from the  [End-user Intune enrollment instructions for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a).
 
 -   **How can I troubleshoot device enrollment?**
 
-    Ways to troubleshoot common enrollment issues are  provided in [Troubleshoot device enrollment in Intune](../Topic/Troubleshoot-device-enrollment-in-Intune.md).
+    Ways to troubleshoot common enrollment issues are  provided in [Troubleshoot device enrollment in Intune](../Topic/Troubleshoot/Troubleshoot-device-enrollment-in-Intune.md).
 
 -   **How can I collect enrollment logs if a user has an enrollment problem?**
 
-    Follow [these instructions](http://www.microsoft.com/en-us/download/46391). Comment: does this content exist? does the link work?
+    Follow [these instructions](http://www.microsoft.com/en-us/download/46391).
 
 ## Mobile device management
 
@@ -62,38 +62,38 @@ This article answers some frequently asked questions about Intune. If you don't 
 
     -   **Can Intune detect whether a device is jailbroken?**
 
-        Yes, for some operating systems. For information on how to manage jailbroken devices, see[Manage device compliance policies](../Topic/Manage-device-compliance-policies-for-Microsoft-Intune.md).
+        Yes, for some operating systems. For information on how to manage jailbroken devices, see[Manage device compliance policies](../Topic/DeployUse/Manage-device-compliance-policies-for-Microsoft-Intune.md).
 
     -   **Can I selectively wipe corporate data from a device?**
 
-        Yes. For information about selective wipe see [Help protect your data with remote wipe, remote lock, or passcode reset](../Topic/Help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-Microsoft-Intune.md).
+        Yes. For information about selective wipe see [Help protect your data with remote wipe, remote lock, or passcode reset](../Topic/DeployUse/Help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-Microsoft-Intune.md).
 
     -   **Is there a way to block certain websites on the mobile device browser through Intune?**
 
-        Not on the native browser of any platform. However, you can allow or block URLs when you have deployed the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] managed web browser on iOS and Android devices. For more information see [Manage Internet access using managed browser policies](../Topic/Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md) .
+        Not on the native browser of any platform. However, you can allow or block URLs when you have deployed the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] managed web browser on iOS and Android devices. For more information see [Manage Internet access using managed browser policies](../Topic/DeployUse/Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md) .
 
     -   **Can we restrict a user from uninstalling an app?**
 
-        Generally, no. However, on a supervised iOS device you can prevent a user from uninstalling an app that was distributed using the Apple Configurator. For information about using supervised mode in Intune, see [Manage access to apps using configuration policies - deleted](../Topic/Manage-access-to-apps-using-Microsoft-Intune-configuration-policies---deleted.md).
+        Generally, no. However, on a supervised iOS device you can prevent a user from uninstalling an app that was distributed using the Apple Configurator. For information about using supervised mode in Intune, see [Manage access to apps using configuration policies - deleted](../Topic/DeployUse/Manage-access-to-apps-using-Microsoft-Intune-configuration-policies---deleted.md).
 
     -   **Is there a way to manage mobile data usage?**
 
-        Not directly, but you can ensure that Wi-Fi is the preferred method for connecting by pushing Wi-Fi profiles to the devices, as described in [Help users connect to company networks using Wi-Fi profiles](../Topic/Help-users-connect-to-company-networks-using-Wi-Fi-profiles-with-Microsoft-Intune.md). Also, some platforms (for example,  iOS and Android KNOX) enable the ability to control settings such as voice and data roaming.
+        Not directly, but you can ensure that Wi-Fi is the preferred method for connecting by pushing Wi-Fi profiles to the devices, as described in [Help users connect to company networks using Wi-Fi profiles](../Topic/DeployUse/Help-users-connect-to-company-networks-using-Wi-Fi-profiles-with-Microsoft-Intune.md). Also, some platforms (for example,  iOS and Android KNOX) enable the ability to control settings such as voice and data roaming.
 
     -   **Is there a way to prevent a user from unenrolling a device? What if it’s a company-owned device?**
 
-        In general, no. However, using custom Windows Phone settings, you can enforce this (comment: enforce what?) on Windows Phone 8.1. Also, for iOS devices that are supervised and enrolled in Apple’s Device Enrollment Program (DEP), it is possible to prevent a user from unenrolling a device.
+        In general, no. However, using custom Windows Phone settings, you can prevent user unenrollment on Windows Phone 8.1. Also, for iOS devices that are supervised and enrolled in Apple’s Device Enrollment Program (DEP), it is possible to prevent a user from unenrolling a device.
 
     -   **Can I switch my chosen MDM authority?**
 
-        You can switch MDM authority in some situations. To do so, contact Support, as described in [How to get support for Microsoft Intune](../Topic/How-to-get-support-for-Microsoft-Intune.md). The table below describes what changes are possible. Changes in MDM authority require re-enrollment of devices.
-Comment: this is a malformed table. Please review markdown instructions and fix
+        You can switch MDM authority in some situations. To do so, contact Support, as described in [How to get support for Microsoft Intune](../Topic/Troubleshoot/How-to-get-support-for-Microsoft-Intune.md). The table below describes what changes are possible. Changes in MDM authority require re-enrollment of devices.
+
         |||||
         |-|-|-|-|
-        ||**To:** Intune|**To:** O365|**To:** Configuration Manager with Intune|
-        |**From:** Intune||Yes&#42;|Yes|
-        |**From:** O365|Yes&#42;||Yes|
-        |**From:** Configuration Manager with Intune|Yes|Yes||
+        !**To:** Intune!**To:** O365!**To:** Configuration Manager with Intune
+        |**From:** Intune|No|Yes&#42;|Yes|
+        |**From:** O365|Yes&#42;|No|Yes|
+        |**From:** Configuration Manager with Intune|Yes|Yes|No|
         &#42;O365 and Intune MDM authorities can coexist, so you won't have to re-enroll mobile devices.
 
 
@@ -102,7 +102,7 @@ Comment: this is a malformed table. Please review markdown instructions and fix
 
     -   **Can I sideload a Windows Store app?**
 
-        Publically available apps cannot be sideloaded. Even though you are able to download the XAP (comment: spell out acronym), you cannot upload it to Intune because it is a public XAP, encrypted and signed with the developer's code-signing certificate. Only apps you develop and sign with your own code-signing certificate can be sideloaded.
+        Publically available apps cannot be sideloaded. Even though you are able to download the XAP, you cannot upload it to Intune because it is a public XAP, encrypted and signed with the developer's code-signing certificate. Only apps you develop and sign with your own code-signing certificate can be sideloaded.
 
     -   **Do Windows Phone Store apps distributed through the Company Portal require that the end user have a Microsoft Account?**
 
@@ -262,11 +262,11 @@ Comment: this is a malformed table. Please review markdown instructions and fix
 
 -   **How can I add a recommended app?**
 
-    In Intune these are called "featured apps" and are documented in [Deploy apps to mobile devices in Microsoft Intune - deleted](../Topic/Deploy-apps-to-mobile-devices-in-Microsoft-Intune---deleted.md). Comment: find a file to link to that hasn't been deleted.
+    In Intune these are called "featured apps" and are documented in [Deploy apps to mobile devices in Microsoft Intune - deleted](../Topic/DeployUse/Deploy-apps-to-mobile-devices-in-Microsoft-Intune.md).
 
 -   **Can I get additional cloud storage for apps I want to deploy?**
 
-    Yes. You can read about this in [Plan for app deployment](../Topic/Plan-for-app-deployment-in-Microsoft-Intune.md), in the section *Cloud storage requirements*.
+    Yes. You can read about this in [Plan for app deployment](../Topic/PlanDesign/Plan-for-app-deployment-in-Microsoft-Intune.md), in the section *Cloud storage requirements*.
 
 ## Security
 
@@ -276,13 +276,13 @@ Comment: this is a malformed table. Please review markdown instructions and fix
 
 -   **If I encrypt a Windows 8 tablet using BitLocker, may I enforce full device wipe if a user consecutively fails logon several times?**
 
-    There is no option for full wipe on Windows 8.1/RT devices for any mobile device management service, including Intune. Intune provides selective wipe for those devices. For more information on wipe/selective wipe in Intune, see [Help protect your data with remote wipe, remote lock, or passcode reset](../Topic/Help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-Microsoft-Intune.md).
+    There is no option for full wipe on Windows 8.1/RT devices for any mobile device management service, including Intune. Intune provides selective wipe for those devices. For more information on wipe/selective wipe in Intune, see [Help protect your data with remote wipe, remote lock, or passcode reset](../Topic/DeployUse/Help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-Microsoft-Intune.md).
 
-## Company portal
+## Company Portal
 
 -   **Can I customize my Company Portal?**
 
-    Yes. In the Intune admin console, go to **Admin&gt;Company Portal** for those settings. Comment: is it Company Portal or company portal?
+    Yes. In the Intune admin console, go to **Admin&gt;Company Portal** for those settings.
 
 ## Microsoft Intune with Configuration Manager
 
@@ -292,11 +292,11 @@ Comment: this is a malformed table. Please review markdown instructions and fix
 
 -   **Can I do a selective wipe on devices?**
 
-    If you are using System Center 2012 R2 Configuration Manager or later with Intune, you can do a selective wipe that removes company data. For more information see [Help protect your data with remote wipe, remote lock, or passcode reset](../Topic/Help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-Microsoft-Intune.md).
+    If you are using System Center 2012 R2 Configuration Manager or later with Intune, you can do a selective wipe that removes company data. For more information see [Help protect your data with remote wipe, remote lock, or passcode reset](../Topic/DeployUse/Help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-Microsoft-Intune.md).
 
 -   **If I’m using Configuration Manager with Intune, can I still use the Intune Admin Portal?**
 
     You can, but only PCs with the Intune agent installed on them will be manageable from that portal. There is also some other useful information in the portal regarding alerts about the service, service status, etc. but any device management settings there won’t apply to enrolled devices.
 
 ### See also
-[Technical reference for Microsoft Intune](../Topic/Technical-reference-for-Microsoft-Intune.md) Comment: not sure this is the best see also link. Since this is an Understand topic, I'd point them to another topic in the Understand docset.
+[Documentation for Microsoft Intune](../Topic/documentation-for-microsoft-intune.md)
