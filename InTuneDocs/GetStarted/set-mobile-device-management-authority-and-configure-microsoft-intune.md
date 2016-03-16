@@ -107,8 +107,8 @@ author: NathBarn
 ## Next steps: Enable device enrollment
 Enable device enrollment for devices:
 
-  -   [Enable iOS management](Set-up-iOS-and-Mac-management-with-Microsoft-Intune.html)
+  -   [Enable iOS management](set-up-ios-and-mac-management-with-microsoft-intune.html)
 
-  -   [Enable Windows Phone management](Set-up-Windows-Phone-management-with-Microsoft-Intune.html)
+  -   [Enable Windows Phone management](set-up-windows-phone-management-with-microsoft-intune.html)
 
-  -   [Enable Windows management](Set-up-Windows-device-management-with-Microsoft-Intune.html)
+  -   [Enable Windows management](set-up-windows-device-management-with-microsoft-intune.html)
