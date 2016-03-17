@@ -1,5 +1,5 @@
 ---
-title: Set mobile device management authority and configure Microsoft Intune
+title: Configure Microsoft Intune for mobile device management
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,32 +9,9 @@ ms.topic: article
 ms.assetid: 668d6460-9d34-47a7-8a85-bbe1ed89f8e1
 author: NathBarn
 ---
-# Set mobile device management authority and configure Microsoft Intune
-Before users  can enroll mobile devices with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], the IT administrator must declare [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] as the *mobile device management authority*, add users, and set up the Company Portal for users.
-
-## Set MDM authority
-The  *mobile device management authority* defines the management service with permission to manage a set of devices.  Solutions for the mobile device management authority include [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], Configuration Manager with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], or Office 365 MDM solutions.
-
-This guidance assumes Intune is used without System Center Configuration Manager integration so the setting should be set to Microsoft Intune.
-
-> [!IMPORTANT]
-> Consider carefully whether you want to manage mobile devices using Intune-only (cloud service only) or System Center Configuration Manager with Intune integration (on-premises in conjunction with cloud service). After you set the mobile device management authority to either of these options, it cannot be changed again. If you're unsure of your options, see [Ways to do enterprise mobility](ways-to-do-enterprise-mobility.md).  The Intune service can be used in conjunction with Office 365. You can specify which cloud service manages specific mobile devices in the Office 365 admin center and Intune admin console, respectively.
-
-### <a name="BKMK_Set_MDM_Authority"></a>Set mobile device management authority
-
-1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) click **Admin** &gt; **Mobile Device Management**.
-
-2.  In the **Tasks** list, click **Set Mobile Device Management Authority**. The **Set MDM Authority** dialog box opens.
-
-    ![](./media/Intune-MDM-Authority.bmp)
-
-3.  Intune requests confirmation that you want Intune as your MDM authority. Check the box and then click **Yes** to use Microsoft Intune to manage mobile devices.
 
 
-## Prepare to manage mobile devices with Microsoft Intune
-The following steps and configurations let [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] manage devices using the Company Portal.
-
-#### Set up mobile device management with Intune
+## Configure Intune for mobile device management
 
 1.  **Add Intune users**
     The mobile device owner must be added to the account portal before devices can be enrolled. Log in to the [Office 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854), click **Add users**, and select an option:
@@ -50,20 +27,20 @@ The following steps and configurations let [!INCLUDE[wit_nextref](./includes/wit
 
     Policies are deployed to groups making group hierarchies a key design considerations. A group’s parent group cannot be changed once the group is created, so the design of your groups hierarchy from the start.
 
-> [!Tips]
->    Key considerations:
->
->    -   **Keep hierarchies simple** - If your organization doesn't require complex hierarchies for targeting devices with policy, use the default groups
->
->    -   **Think top-down** - Use **All Users** and **All devices** as parent groups if you'll want to apply policy applicable to all members
->
->    -   **Ownership** - If your organization has both corporate-owned (COD) and user-owned (BYOD) devices, you can create groups to target these categories separately by making them child groups of **All Users** and **All Groups**
->
->    -   **Use Active Directory** - If you have connected Azure Active Directory (AAD), you can use security groups to refine policy deployment by geography, department, or users known to use certain devices
->
->    -   **No dynamic operating system groups** - Groups cannot dynamically target device operating systems. You must use AD or AAD Security groups to define users of device types.
+  > [!Tips]
+  >    Key considerations:
+  >
+  >    -   **Keep hierarchies simple** - If your organization doesn't require complex hierarchies for targeting devices with policy, use the default groups
+  >
+  >    -   **Think top-down** - Use **All Users** and **All devices** as parent groups if you'll want to apply policy applicable to all members
+  >
+  >    -   **Ownership** - If your organization has both corporate-owned (COD) and user-owned (BYOD) devices, you can create groups to target these categories separately by making them child groups of **All Users** and **All Groups**
+  >
+  >    -   **Use Active Directory** - If you have connected Azure Active Directory (AAD), you can use security groups to refine policy deployment by geography, department, or users known to use certain devices
+  >
+  >    -   **No dynamic operating system groups** - Groups cannot dynamically target device operating systems. You must use AD or AAD Security groups to define users of device types.
 
-    You can create and manage groups after device enrollment. Creating groups beforehand lets you organize devices and target policy as they come into management.
+  You can create and manage groups after device enrollment. Creating groups beforehand lets you organize devices and target policy as they come into management.
 
 3.  **Add policies for devices** (Optional)
     Policies are groups of settings that control features on devices. Most MDM policies are platform specific. You create policies using templates  containing recommended or customized settings, and then deploy them to groups. See [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
@@ -86,10 +63,10 @@ The following steps and configurations let [!INCLUDE[wit_nextref](./includes/wit
 
     You can create and manage policies after device enrollment. Creating policy beforehand enrolling devices lets you target policy as they come into management.
 
-4.  **Set device enrollment limit** (Optional) 
+4.  **Set device enrollment limit** (Optional)
     To limit the number of mobile devices a user can enroll, log in to the [Microsoft Intune administration console](http://manage.microsoft.com), click **Admin** &gt; **Mobile Device Management** &gt; **Enrollment rules**. Select the maximum number of devices a user can enroll and then click **Save**.
 
-5.  **Set Company Portal settings** 
+5.  **Set Company Portal settings**
      You can customize the Intune Company Portal for your company. In the [Microsoft Intune administration console](http://manage.microsoft.com) click **Admin** &gt; **Company Portal**. Configure the following
 
     -   **Company Name**
@@ -128,13 +105,10 @@ The following steps and configurations let [!INCLUDE[wit_nextref](./includes/wit
 7.  [Tell users how to get access to company resources with the company portal](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 ## Next steps: Enable device enrollment
-Now that Intune is your MDM authority and you've configured , you can enable device enrollment for devices:
+Enable device enrollment for devices:
 
-    -   [Enable iOS management](Set-up-iOS-and-Mac-management-with-Microsoft-Intune.html)
+  -   [Enable iOS management](set-up-ios-and-mac-management-with-microsoft-intune.html)
 
-    -   [Enable Android management](Set-up-Android-management-with-Microsoft-Intune.html)
+  -   [Enable Windows Phone management](set-up-windows-phone-management-with-microsoft-intune.html)
 
-    -   [Enable Windows Phone management](Set-up-Windows-Phone-management-with-Microsoft-Intune.html)
-
-    -   [Enable Windows management](Set-up-Windows-device-management-with-Microsoft-Intune.html)
-
+  -   [Enable Windows management](set-up-windows-device-management-with-microsoft-intune.html)
