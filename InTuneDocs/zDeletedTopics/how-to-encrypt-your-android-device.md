@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d8057bc1-4ef6-4350-bc2f-02787b89377a
 author: Staciebarker
+robots: noindex,nofollow
 ---
 # How to encrypt your Android device
 To reconnect to your work, you’ll need to encrypt your device by following these instructions:
@@ -22,5 +23,5 @@ To reconnect to your work, you’ll need to encrypt your device by following the
 
 4.  Follow the on-screen instructions. During encryption, your device might restart several times.
 
-5.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
+5.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
 

@@ -14,23 +14,23 @@ These help topics will help you use your device in your corporate environment, o
 
 ## Help topics
 
--   [Enroll your device in Microsoft Intune](enroll-your-device-in-microsoft-intune.md)
+-   [Enroll your device in Microsoft Intune](../Topic/Enroll-your-device-in-Microsoft-Intune.md)
 
--   [Company Portal Frequently Asked Questions](company-portal-frequently-asked-questions.md)
+-   [Company Portal Frequently Asked Questions](../Topic/Company-Portal-Frequently-Asked-Questions.md)
 
--   [Company Portal app not supported](company-portal-app-not-supported.md)
+-   [Company Portal app not supported](../Topic/Company-Portal-app-not-supported.md)
 
--   [How to encrypt your Android device](how-to-encrypt-your-android-device.md)
+-   [How to encrypt your Android device](../Topic/How-to-encrypt-your-Android-device.md)
 
--   [How to encrypt your Windows device](how-to-encrypt-your-windows-device.md)
+-   [How to encrypt your Windows device](../Topic/How-to-encrypt-your-Windows-device.md)
 
--   [How to reconnect a compromised Android device](how-to-reconnect-a-compromised-android-device.md)
+-   [How to reconnect a compromised Android device](../Topic/How-to-reconnect-a-compromised-Android-device.md)
 
--   [How to set the password on your Android device](how-to-set-the-password-on-your-android-device.md)
+-   [How to set the password on your Android device](../Topic/How-to-set-the-password-on-your-Android-device.md)
 
--   [How to set the period before your Android device is locked](how-to-set-the-period-before-your-android-device-is-locked.md)
+-   [How to set the period before your Android device is locked](../Topic/How-to-set-the-period-before-your-Android-device-is-locked.md)
 
--   [Unenroll your device](unenroll-your-device.md)
+-   [Unenroll your device](../Topic/Unenroll-your-device.md)
 
--   [Existing company email account found](existing-company-email-account-found.md)
+-   [Existing company email account found](../Topic/Existing-company-email-account-found.md)
 
