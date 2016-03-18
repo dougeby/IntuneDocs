@@ -10,7 +10,7 @@ ms.assetid:
 author: Staciebarker
 ---
 
-# 7. Customize the company portal
+# Customize the company portal
 The [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 
 When you customize the company portal, the configurations apply to both the company portal website and company portal apps.
