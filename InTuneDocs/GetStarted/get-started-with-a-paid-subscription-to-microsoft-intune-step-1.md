@@ -10,7 +10,7 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 author: Staciebarker
 ---
 
-# 1. Sign up or sign in to Intune
+# Sign up or sign in to Intune
 Before  you either sign up or sign in to Intune, consider:
 
 -   Whether your organization already has a Microsoft Online Services work or school account
