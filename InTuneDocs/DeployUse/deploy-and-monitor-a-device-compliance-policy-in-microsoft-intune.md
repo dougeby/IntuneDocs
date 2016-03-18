@@ -56,11 +56,11 @@ When conflicts occur due to multiple Intune settings being applied to a device, 
 ## Next Steps
 You can now use the compliance policy with conditional access policies to control access to services in your organization.
 
-[Create conditional access policies for email](manage-email-access-with-microsoft-intune)
+[Create conditional access policies for email](manage-email-access-with-microsoft-intune.md)
 
-[Create conditional access policies for SharePoint Online](manage-sharepoint-online-access-with-microsoft-intune)
+[Create conditional access policies for SharePoint Online](manage-sharepoint-online-access-with-microsoft-intune.md)
 
 ### See also
-[Introduction to device compliance polices in Intune](introduction-to-device-compliance-policies-in-microsoft-intune)
+[Introduction to device compliance polices in Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
-[Manage access to email and O365 services](manage-access-to-email-and-O365-services-with-intune)
+[Manage access to email and O365 services](manage-access-to-email-and-O365-services-with-intune.md)

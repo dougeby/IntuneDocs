@@ -22,8 +22,9 @@ You deploy compliance policies to users and devices. When a compliance policy is
 
 The following table lists the device types supported by compliance policies and how noncompliant settings are managed when the policy is used with a conditional access policy.
 
+--------------
 |Policy Setting|Windows 8.1 and later|Windows Phone 8.1 and later|iOS 6.0 and later|Android 4.0 and later|Samsung KNOX Standard 4.0 and later|
-|:------|:------:|:------:|:-----:|:-------:|
+|------|------|------|-----|-------|
 |**PIN or Password Configuration** |Remediated|Remediated|Remediated|Quarantined|Quarantined|
 |**Device encryption**|N/A|Remediated|Remediated (by setting PIN)|Quarantined|Quarantined|
 |**Jailbroken or rooted device**|N/A|N/A|Quarantined (not a setting)|Quarantined (not a setting)|Quarantined (not a setting)|
@@ -42,6 +43,7 @@ The following table lists the device types supported by compliance policies and 
 
 ## Next Steps
 [Create a device compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
+
 [Deploy a device compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
 ### See also
