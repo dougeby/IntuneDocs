@@ -10,7 +10,7 @@ ms.assetid:
 author: Staciebarker
 ---
 
-# 8. Enroll computers in Intune
+# Enroll computers in Intune
 
 You can install the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] client software on computers in the following ways:
 
