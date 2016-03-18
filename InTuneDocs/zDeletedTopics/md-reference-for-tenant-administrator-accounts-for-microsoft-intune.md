@@ -31,5 +31,5 @@ Each administrator role has the following associated permissions:
 |Manage organization information|No|Yes|No|No|No|
 |Delegate administrative roles to others|No|Yes|No|No|No|
 |Use directory synchronization|No|Yes|No|No|No|
-To learn more about administrative accounts in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], read about the [different administrative accounts and permissions for separate tasks](http://technet.microsoft.com/library/dn646966.aspx). For help managing administrative users, see [Task 5: Assign administrative users](get-started-with-a-paid-subscription-to-microsoft-intune.md#BKMK_AssignAdmins) in [Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md).
+To learn more about administrative accounts in [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)], read about the [different administrative accounts and permissions for separate tasks](http://technet.microsoft.com/library/dn646966.aspx). For help managing administrative users, see [Task 5: Assign administrative users](../Topic/Get-started-with-a-paid-subscription-to-Microsoft-Intune.md#BKMK_AssignAdmins) in [Get started with a paid subscription to Microsoft Intune](../Topic/Get-started-with-a-paid-subscription-to-Microsoft-Intune.md).
 
