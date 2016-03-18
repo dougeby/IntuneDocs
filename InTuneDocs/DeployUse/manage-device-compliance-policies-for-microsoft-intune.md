@@ -51,7 +51,7 @@ Step2.  On the **Create Policy** page, configure the settings you require:
   -   The System security settings like password, and encryption
   -   Device health settings like whether or not a device is jailbroken or is reported healthy by the Windows device health attestation service.
   -   Device property settings like the miniumum OS version required or maximum OS version allowed.
-![IntuneSA3bCreatePolicy](./media/intune-sa-3b-create-policy.PNG)
+![IntuneSA3bCreatePolicy](./media/intune-sa-3b-create-policy.png)
 
 Step3. When you are finished, choose **Save Policy**.
 
@@ -123,10 +123,10 @@ The following table lists the compliance policy settings that are applicable to 
 Deploy the compliance policy to one or more groups of users or devices in your organization.
 
 1.  In the **Policy** workspace, select the policy you want to deploy, then choose **Manage Deployment**.
-![IntuneSA3cDeployCompliancePolicy2](./media/intune-sa-3c-deploy-compliance-policy2.PNG)
+![IntuneSA3cDeployCompliancePolicy2](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  In the **Manage Deployment** dialog box, select one or more groups to which you want to deploy the policy, then choose **Add > OK**.
-![IntuneSA3dDeployCompliancePolicy3_Manage](./media/intune-sa-3d-deploy-compliance-policy3-Manage.PNG)
+![IntuneSA3dDeployCompliancePolicy3_Manage](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
 You can deploy to users and/or devices. Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
 
 Ensure that you have created and deployed a compliance policy to all devices that the Exchange conditional access policy will be targeted.
