@@ -101,14 +101,12 @@ Policies are deployed onto groups, so group hierarchy is one of your key design 
     -   Ungrouped Devices
 
 > [!NOTE]
-> *Keep it simple* should be your motto. If your organization does not have specific needs such as those described here, keeping it simple and going with the default group structure and policies will make the service more manageable in the long term. Maintenance will be easier if it is possible for you to treat your users equally with little differentiation by group,  thereby having to maintain  fewer policies.
+> *Keep it simple* should be your motto. If your organization does not have specific needs such as those described below, keeping it simple and going with the default group structure and policies will make the service more manageable in the long term. Maintenance will be easier if it is possible for you to treat your users equally with little differentiation by group, thereby having to maintain fewer policies.
 
 
 <!--Are the groups below built-in groups or user defined?-->
 
 ### All users and devices in your organization
-<!--You should have a parent group defined for all users and devices in your organization, as you are likely to have policies that will apply to all. This can be the default **All Users** and **All devices** groups in Intune. These groups can then be used to apply policies that are applicable to all users and devices within your organization. If you are creating BYOD (bring your own device), Corporate Owned (CO) groups, then those groups can be the children of the **All Users** and **All devices**  parent groups.-->
-
 Define a parent group for all users and devices in your organization, as you are likely to have policies that will apply to all. You can use the default **All Users** and **All devices** groups in Intune for this purpose. Sub-groups that organize devices by specifics, such as a group for bring your own device (BYOD) and one for corporate-owned devices (CO), can be the children of the **All Users** and **All devices** parent groups.
 
 ## Customizing groups for your organization
