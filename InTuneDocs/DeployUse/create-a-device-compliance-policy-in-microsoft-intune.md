@@ -30,6 +30,8 @@ You will be given the option to deploy the policy now, or you can choose to depl
 
 The following table lists the compliance policy settings that are applicable to mobile devices.
 
+--------------------------------------
+
 |Setting name|More information|Supported platforms|
 |----------------|--------------------|---------------------|
 |**Name**|Enter a unique name for the compliance policy.|All|
@@ -58,6 +60,8 @@ The following table lists the compliance policy settings that are applicable to 
 ## Compliance policy for PCs
 
 The following table lists the compliance policy settings that are applicable to Windows PCs.
+
+------------------------
 
 |Setting name|More information|Supported platforms|
 |----------------|--------------------|---------------------|
@@ -89,7 +93,7 @@ The following table lists the compliance policy settings that are applicable to 
 - **Secure boot is enabled:** When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
 - **Early-launch antimalware is enabled (this setting only applies to PCs.):** Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.
 ## Next Steps
-[Deploy and monitor a compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune)
+[Deploy and monitor a compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
 ### See also
-[Introducution to device compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune)
+[Introducution to device compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune.md)
