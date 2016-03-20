@@ -22,7 +22,7 @@ Groups in Intune provide great flexibility in managing your devices and users. Y
 ## How Intune groups work
 The default view of the Groups node in the Intune Management console is:
 
-![](../media/Group-planning/Intune_Planning_Groups_Default_small.png)
+![](./media/Group-planning/Intune_Planning_Groups_Default_small.png)
 
 Policies are deployed onto groups, so group hierarchy is one of your key design considerations. It is also important to know that a group’s parent group cannot be changed once the group is created, so the design of your groups is critically important from the moment you start using the Intune service. Some of the recommended practices for designing a group hierarchy based on your organizational needs are  described here.
 
@@ -99,9 +99,12 @@ Policies are deployed onto groups, so group hierarchy is one of your key design 
         -   All Exchange ActiveSync Managed Devices
     -   All Corporate-owned Devices
     -   Ungrouped Devices
+    > [!NOTE]
+        > The default **All Users** group lists every user who has at least one device enrolled. It will also list users that you manually add when creating a group, or users that you link to a computer, as described in [Common Windows PC management tasks with the Microsoft Intune computer client](Common%20Windows%20PC%20management%20tasks%20with%20the%20Microsoft%20Intune%20computer%20client.md).
+        >
+        > You can see all of your users including those without an enrolled device, listed on the [Office 365 admin center](https://portal.office.com).
 
-> [!NOTE]
-> *Keep it simple* should be your motto. If your organization does not have specific needs such as those described below, keeping it simple and going with the default group structure and policies will make the service more manageable in the long term. Maintenance will be easier if it is possible for you to treat your users equally with little differentiation by group, thereby having to maintain fewer policies.
+        > *Keep it simple* should be your motto. If your organization does not have specific needs such as those described below, keeping it simple and going with the default group structure and policies will make the service more manageable in the long term. Maintenance will be easier if it is possible for you to treat your users equally with little differentiation by group, thereby having to maintain fewer policies.
 
 
 <!--Are the groups below built-in groups or user defined?-->
@@ -120,14 +123,14 @@ In the case of BYOD or a mix, be careful to plan policies that do not infringe o
 
 Similarly, you can create a group for the CO users in your organization:
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+![](./media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
 ### Groups for geographic regions
 If your organization needs policies for specific regions you can create groups based on geographic region. <!--These groups could be centered on regional groups that you have already created in your on-premises Active Directory (AD), and synchronized to Azure AD (AAD) or created directly in AAD.--> You can base them on regional groups you may have already created in Active Directory (AD), and synchronize them to Azure AD. You can also create them directly in Azure AD.
 
 These screen shots show how to create Intune groups based on groups synchronized from your on-premises AD. This examples assumes that you have an AD security group called **US Users Group**. First, provide the general information. <!-- probably should be numbered list; possibly candidate for animated .gif-->
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
+![](./media/Group-planning/Intune_Planning_Groups_AD_General_small.png)
 
 Under Membership criteria, select **US Users Group**, synchronized from AD, as the security group to use under Membership rules.
 
@@ -149,7 +152,7 @@ If your organization requires policies that apply to specific hardware types, yo
 
 At this point, the groups hierarchy should appear as shown below. As you see, there are now members within the Intune group **Laptop Users**. Any policies applied to this group will now be applied to BYOD laptop users from the US region.
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+![](./media/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### Groups for specific operating systems
 If your organization requires policies that apply to specific operating systems such as Android, iOS, or Windows, you can create groups based on this requirement. As in the previous examples, you can base them on OS-specific groups that you have already created in your on-premises AD, and synchronize them to Azure AD. You can also directly create them in Azure AD.
