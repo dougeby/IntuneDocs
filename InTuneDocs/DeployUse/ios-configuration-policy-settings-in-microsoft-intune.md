@@ -21,68 +21,49 @@ Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] **iOS general conf
 > [!TIP]
 > You can configure terms and conditions for users to ensure that they acknowledge that apps on their device, including personal apps will be evaluated, and noncompliant apps will either be blocked, or reported as noncompliant. Users must accept these terms and conditions before they can enroll their device and use the company portal to get apps. For more information about using terms and conditions, see [Working with terms and conditions policies in Microsoft Intune](http://msdn.microsoft.com/en-us/library/ce59fb93-01fd-4822-a57d-45ca7d89843d).
 
-## Create an iOS general configuration policy
-
-#### To provide basic settings for the configuration policy
-
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Overview** &gt; **Add Policy**.
-
-2.  Click **iOS** &gt; **General Configuration** and then click **Create Policy**.
-
-    > [!NOTE]
-    > You cannot create a configuration policy using recommended settings. You must create a custom policy.
-
-3.  In the **General** section of the **Create Policy** page, specify a name and a description for the new policy.
-
-4.  Use the information in the following sections to help you supply settings for the policy.
-
-5.  When you are finished, click **Save Policy**.
-
-The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
-
-## <a name="BKMK_Settings"></a>Settings for iOS devices
+## Settings for iOS devices
 If the setting you are looking for does not appear in this list, you might be able to create it using an iOS custom policy that lets you import settings you created using the [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). For more information, see [iOS custom policy settings in Microsoft Intune](../Topic/iOS-custom-policy-settings-in-Microsoft-Intune.md).
 
-### <a name="BKMK_sec"></a>Security settings
+### Security settings
 
-|Setting name|iOS|
+|Setting name|Details|iOS|
 |----------------|-------|
-|**Require a password to unlock mobile devices**|Yes|
-|**Required password type**<br /><br />(specifies the type of password that will be required, such as numeric only, or alphanumeric)|Yes|
-|**Required password type – Minimum number of character sets**<br /><br />There are four character sets, lowercase letters, uppercase letters, numbers, and symbols. This setting specifies how many different character sets must be included in the password). However, for iOS devices, this specifies the number of symbol characters must be included in the password)|Yes|
-|**Minimum password length**|Yes|
-|**Allow simple passwords**<br /><br />Simple passwords include ‘0000’ and ‘1234’|Yes|
+|**Require a password to unlock mobile devices**|Specify whether users are required to enter a password to access their device.|Yes|
+|**Required password type**|Specifies the type of password that will be required, such as numeric only, or alphanumeric)|Yes|
+|**Required password type – Minimum number of character sets**|There are four character sets, lowercase letters, uppercase letters, numbers, and symbols. This setting specifies how many different character sets must be included in the password). However, for iOS devices, this specifies the number of symbol characters must be included in the password)|Yes|
+|**Minimum password length**|Specifies the minimum number of characters in the password.|Yes|
+|**Allow simple passwords**|Allow simple passwords like ‘0000’ and ‘1234’.|Yes|
 |**Number of repeated sign-in failures to allow before the device is wiped**|Yes|
 |**Minutes of inactivity before screen turns off**<sup>1</sup>|Yes|
-|**Password expiration (days)**|Yes|
+|**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|
 |**Remember password history**|Yes|
 |**Remember password history** – **Prevent reuse of previous passwords**|Yes|
-|**Minutes of inactivity before password is required**<sup>1</sup>|Yes|
-|**Allow fingerprint unlock**|iOS 7.1 and later|
+|**Minutes of inactivity before password is required**<sup>1</sup>|-|Yes|
+|**Allow fingerprint unlock**|Allow using a fingerprint to unlock the device.|iOS 7.1 and later|
 <sup>1</sup> For iOS devices, when you configure the settings **Minutes of inactivity before screen turns off** and **Minutes of inactivity before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
 
 ### System settings
 
-|Setting name|iOS|
+|Setting name|Details|iOS|
 |----------------|-------|
-|**Allow screenshot**|Yes|
+|**Allow screenshot**|Allows the user to capture the contents of the screen as an image.|Yes|
 |**Allow control center in lock screen**|iOS 7.1 and later|
-|**Allow notification view in lock screen**|iOS 7.1 and later|
+|**Allow notification view in lock screen**|-|iOS 7.1 and later|
 |**Allow today view in lock screen**|iOS 7.1 and later|
 |**Allow diagnostic data submission**|Yes|
 |**Allow untrusted TLS certificates**|Yes|
 |**Allow passbook while locked**|Yes|
 
-### <a name="BKMK_cloud"></a>Cloud settings – documents and data
+### Cloud settings – documents and data
 
-|Setting name|iOS|
+|Setting name|Device|iOS|
 |----------------|-------|
-|**Allow backup to iCloud**|Yes|
+|**Allow backup to iCloud**|Allows the user to back up the device to iCloud.|Yes|
 |**Allow document sync to iCloud**|Yes|
 |**Allow Photo Stream sync to iCloud**|Yes|
 |**Require encrypted backup**|Yes|
 
-### <a name="BKMK_browser"></a>Application settings - browser
+## Application settings - browser
 
 |Setting name|iOS|
 |----------------|-------|
@@ -128,11 +109,11 @@ If the setting you are looking for does not appear in this list, you might be ab
 
 ### Device capabilities settings - features
 
-|Setting name|iOS|
+|Setting name|Details|iOS|
 |----------------|-------|
 |**Allow Siri**|Yes|
 |**Allow Siri while device is locked**|Yes|
-|**Allow voice dialing**|Yes|
+|**Allow voice dialing**|-|Yes|
 |**Allow clipboard share between applications**|No|
 |**Allow YouTube**|No|
 
@@ -152,9 +133,8 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |**Delete**|Deletes the selected app from the list.|
 
 ## Kiosk mode settings
-Specify the following settings for **iOS devices**:
 
-|Setting name|More information|
+|Setting name|Details|
 |----------------|--------------------|
 |**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then specify the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.<br /><br />[How to specify URLs to app stores](../Topic/iOS-configuration-policy-settings-in-Microsoft-Intune.md#BKMK_URL).|
 |**Allow touch**|Enables or disables the touch screen on the device.|
@@ -170,7 +150,7 @@ Specify the following settings for **iOS devices**:
 |**Enable zoom adjustments**|Enables or disables zoom adjustments which let you adjust the zoom function.|
 |**Enable invert colors**|Enables or disables the **Invert Colors** accessibility setting which adjusts the display to help users with visual impairments.|
 |**Enable invert colors adjustments**|Enables or disables invert colors adjustments which let you adjust the invert colors function.|
-|**Enable assistive touch**|Enables or disables the **Assistive Touch** accessibility setting which helps users perform on screen gestures which might be difficult for them to perform.|
+|**Enable assistive touch**|-|Enables or disables the **Assistive Touch** accessibility setting which helps users perform on screen gestures which might be difficult for them to perform.|
 |**Enable assistive touch adjustments**|Enables or disables assistive touch adjustments which let you adjust the assistive touch function.|
 |**Enable speech selection**|Enables or disables the **Speak Selection** accessibility settings which can read aloud the text you select.|
 > [!NOTE]
@@ -178,14 +158,6 @@ Specify the following settings for **iOS devices**:
 > 
 > -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or device enrollment manager to put the device into supervised mode. For more information about the Apple Configurator Tool, see your Apple documentation.
 > -   If the iOS app you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
-
-## Deploy the Configuration Policy
-
-1.  Deploy the configuration policy to one or more groups of users or devices in your organization.
-
-For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
-
-A status summary and alerts In the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
 ## Reference information for compliant and noncompliant apps
 
@@ -198,7 +170,7 @@ Use the **Noncompliant Apps Report** to view the compliance of allowed and block
 
 2.  Select the device groups that you would like to check, whether you want to check for compliant apps, noncompliant apps, or both, then click **View Report**.
 
-### <a name="BKMK_URL"></a>How to specify URLs to app stores
+### How to specify URLs to app stores
 To specify an app URL in the compliant and noncompliant apps list, or in the **Select a managed app that will be allowed to run when the device is in kiosk mode** option (iOS only), use the following format:
 
 Using a search engine, find the app you want to use in the iTunes App Store and open the page for the app.
@@ -210,6 +182,6 @@ Copy the URL of the page and use this as the URL to configure the compliant or n
 > [!NOTE]
 > You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.
 
-## See Also
+### See Also
 [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
 

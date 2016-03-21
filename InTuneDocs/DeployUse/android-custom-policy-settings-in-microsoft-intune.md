@@ -17,28 +17,16 @@ This capability is intended to allow you to deploy Android settings that are not
 > [!NOTE]
 > Currently, Android custom policies only support configuring Wi-Fi settings for Android devices that include a pre-shared key. See [Example: Configure a custom Wi-Fi profile with a pre-shared key](android-custom-policy-settings-in-microsoft-intune.md#BKMK_Example) to learn how to do this.
 
-## How to create an Android custom policy
+## General settings
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Overview** &gt; **Add Policy**.
-
-2.  Configure a policy of the type **Android** &gt; **Custom Configuration**.
-
-    For help creating and deploying policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
-
-    You can only create and deploy a custom policy of this type. Recommended settings are not available.
-
-3.  Use the following table to help you configure the general policy settings:
-
-    |Setting name|More information|
+|Setting name|Details|
     |----------------|--------------------|
     |**Name**|Enter a unique name for the Android custom policy to help you identify it in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.|
     |**Description**|Provide a description that gives an overview of the Android custom policy and other relevant information that helps you to locate it.|
 
-4.  In the **OMA-URI Settings** section, click **Add** to add a setting. You can also edit or delete an existing setting.
+##OMA-URI settings
 
-5.  In the **Add or Edit OMA-URI Setting** dialog box, specify the following information:
-
-    |Item|More information|
+   |Setting name|Details|
     |--------|--------------------|
     |**Setting name**|Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.|
     |**Setting description**|Provide a description that gives an overview of the setting and other relevant information to help you locate it.|
@@ -46,21 +34,7 @@ This capability is intended to allow you to deploy Android settings that are not
     |**OMA-URI (case sensitive)**|Specify the OMA-URI you want to supply a setting for.|
     |**Value**|Specify the value to associate with the OMA-URI you specified previously.|
 
-6.  Click **OK** to save the setting and return to the **Create Policy** page.
-
-7.  Continue to add as many settings as you require. When you are done, click **Save Policy**.
-
-8.  The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
-
-## Deploy an Android custom policy
-
--   Deploy the Android custom policy to one or more groups of users or devices in your organization.
-
-For help deploying policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
-
-A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
-
-## <a name="BKMK_Example"></a>Example: Configure a custom Wi-Fi profile with a pre-shared key
+## Example: Configure a custom Wi-Fi profile with a pre-shared key
 Although [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] supports Wi-Fi profiles for Android devices, this feature does not currently support the inclusion of a pre-shared key in the configuration. In this example, you’ll learn how to create an Android custom policy that creates a Wi-Fi profile with a pre-shared key on the Android device.
 
 #### To create a Wi-Fi profile with a pre-shared key
@@ -69,12 +43,12 @@ Although [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] supports Wi-Fi pr
 
 2.  Create an Android custom policy and add the following settings:
 
-    |Setting name|More information|
-    |----------------|--------------------|
-    |**Setting name**|Specify a name of your choice for the setting.|
-    |**Setting description**|Specify a description for the setting.|
-    |**Data type**|Select **String (XML)**.|
-    |**OMA-URI**|Enter the following: ./Vendor/MSFT/WiFi/Profile/*&lt;your Wi-Fi profile&gt;*/Settings|
+|Setting name|Details|
+|----------------|--------------------|
+|**Setting name**|Specify a name of your choice for the setting.|
+|**Setting description**|Specify a description for the setting.|
+|**Data type**|Select **String (XML)**.|
+|**OMA-URI**|Enter the following: ./Vendor/MSFT/WiFi/Profile/*&lt;your Wi-Fi profile&gt;*/Settings|
 
 3.  For **Value**, copy and paste the following XML code:
 
@@ -114,6 +88,6 @@ Although [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] supports Wi-Fi pr
 
 4.  When you are done, save the policy and deploy it to the required Android devices. The new Wi-Fi profile will appear in the list of connections on the device.
 
-## See Also
+### See Also
 [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
 
