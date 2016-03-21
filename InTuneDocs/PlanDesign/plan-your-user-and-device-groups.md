@@ -10,6 +10,29 @@ ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
 author: Nbigman
 ---
 # Plan your user and device groups
+<<<<<<< HEAD
+<!--Write concisely: Considered planning of your groups and policies will help you keep them organized and achieve the client behavior that you want. Here are some the recommended practices for organizing and managing your Intune policies and groups.
+
+## Group basics-->
+Groups in Intune provide great flexibility in managing your devices and users. You can set up groups to suit your organizational needs according to:
+
+
+- geographic location
+
+- department
+
+- hardware characteristics
+
+- operating system
+
+- whether the device is user-owned or company-owned
+
+
+
+
+<!-- Move to Next steps: More information on how to create and manage groups can be found in [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)-->
+
+=======
 
 Groups in Intune provide great flexibility in managing your devices and users. You can set up groups to suit your organizational needs according to:
 
@@ -19,10 +42,11 @@ Groups in Intune provide great flexibility in managing your devices and users. Y
 - operating system
 - whether the device is user-owned or company-owned
 
+>>>>>>> dc8a75144dd30a4d9eca9b4b684f6cc083e713fd
 ## How Intune groups work
 The default view of the Groups node in the Intune Management console is:
 
-![](../media/Group-planning/Intune_Planning_Groups_Default_small.png)
+![](./media/group-planning/Intune_Planning_Groups_Default_small.png)
 
 Policies are deployed onto groups, so group hierarchy is one of your key design considerations. It is also important to know that a group’s parent group cannot be changed once the group is created, so the design of your groups is critically important from the moment you start using the Intune service. Some of the recommended practices for designing a group hierarchy based on your organizational needs are  described here.
 
@@ -79,6 +103,14 @@ Policies are deployed onto groups, so group hierarchy is one of your key design 
 
 > [!TIP]
 > When you're creating your groups, think about how you will apply policy. For example, you may have policies specific to device operating systems, and policies specific to different roles in your organization, or to Organizational Units you've already defined in Active Directory. Some consider it useful to have device groups specific to iOS, Android, and Windows, as well as user groups for each organizational role.
+<<<<<<< HEAD
+>
+> You'll probably want to create a default policy that applies to all groups and devices, to establish the basic compliance requirements of your company. Then create more specific policies for the broadest categories of users and devices, for example, email policies for each of the device operating systems.
+>
+> Be careful naming your policies so that you can easily identify them later. For example, a good, descriptive policy name is **WP Email Policy for Entire Company**.
+>
+> Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.
+=======
 
 <!--- should we just link to a policies topic at this point and remove this? Ask Rob
  You'll probably want to create a default policy that applies to all groups and devices, to establish the basic compliance requirements of your company. Then create more specific policies for the broadest categories of users and devices, for example, email policies for each of the device operating systems.
@@ -86,6 +118,7 @@ Policies are deployed onto groups, so group hierarchy is one of your key design 
  Be careful naming your policies so that you can easily identify them later. For example, a good, descriptive policy name is **WP Email Policy for Entire Company**.
 
  Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.--->
+>>>>>>> dc8a75144dd30a4d9eca9b4b684f6cc083e713fd
 
 ## Built-in groups
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] provides nine built-in groups that you cannot edit or delete: <!--maybe a screen shot would be best?-->
@@ -101,6 +134,22 @@ Policies are deployed onto groups, so group hierarchy is one of your key design 
     -   Ungrouped Devices
 
 > [!NOTE]
+<<<<<<< HEAD
+- The default **All Users** group lists every user who has at least one device enrolled. It will also list users that you manually add when creating a group, or users that you link to a computer.
+- You can see all of your users including those without an enrolled device, listed on the [Office 365 admin center](https://portal.office.com).
+- *Keep it simple* should be your motto. If your organization does not have specific needs such as those described here, keeping it simple and going with the default group structure and policies will make the service more manageable in the long term. Maintenance will be easier if it is possible for you to treat your users equally with little differentiation by group,  thereby having to maintain  fewer policies.
+
+
+<!--Are the groups below built-in groups or user defined?-->
+
+### All users and devices in your organization
+<!--You should have a parent group defined for all users and devices in your organization, as you are likely to have policies that will apply to all. This can be the default **All Users** and **All devices** groups in Intune. These groups can then be used to apply policies that are applicable to all users and devices within your organization. If you are creating BYOD (bring your own device), Corporate Owned (CO) groups, then those groups can be the children of the **All Users** and **All devices**  parent groups.-->
+
+Define a parent group for all users and devices in your organization, as you are likely to have policies that will apply to all. You can use the default **All Users** and **All devices** groups in Intune for this purpose. Sub-groups that organize devices by specifics, such as a group for bring your own device (BYOD) and one for corporate-owned devices (CO), can be the children of the **All Users** and **All devices** parent groups.
+
+## Customizing groups for your organization
+
+=======
 > *Keep it simple* should be your motto. If your organization does not have specific needs such as those described below, keeping it simple and going with the default group structure and policies will make the service more manageable in the long term. Maintenance will be easier if it is possible for you to treat your users equally with little differentiation by group, thereby having to maintain fewer policies.
 
 
@@ -111,6 +160,7 @@ Define a parent group for all users and devices in your organization, as you are
 
 ## Customizing groups for your organization
 
+>>>>>>> dc8a75144dd30a4d9eca9b4b684f6cc083e713fd
 ### BYOD and corporate owned devices
 If your organization allows employees to use their own devices at work (BYOD), provides company-owned devices (CO), or a combination of both, we recommend that you apply policies based on those two categories of devices.
 
@@ -148,12 +198,21 @@ If your organization requires policies that apply to specific hardware types, yo
 ![](./media/Group-planning/Intune_Planning_Groups_Laptop_small.png)
 
 At this point, the groups hierarchy should appear as shown below. As you see, there are now members within the Intune group **Laptop Users**. Any policies applied to this group will now be applied to BYOD laptop users from the US region.
+<<<<<<< HEAD
+=======
 
 ![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+>>>>>>> dc8a75144dd30a4d9eca9b4b684f6cc083e713fd
 
 ### Groups for specific operating systems
 If your organization requires policies that apply to specific operating systems such as Android, iOS, or Windows, you can create groups based on this requirement. As in the previous examples, you can base them on OS-specific groups that you have already created in your on-premises AD, and synchronize them to Azure AD. You can also directly create them in Azure AD.
 
+<<<<<<< HEAD
+### Groups for specific operating systems
+If your organization requires policies that apply to specific operating systems such as Android, iOS, or Windows, you can create groups based on this requirement. As in the previous examples, you can base them on OS-specific groups that you have already created in your on-premises AD, and synchronize them to Azure AD. You can also directly create them in Azure AD.
+
+=======
+>>>>>>> dc8a75144dd30a4d9eca9b4b684f6cc083e713fd
 Following the same method from the previous examples, we can create groups based on users <!--devices?--> using specific OS platforms.
 
 > [!NOTE]
@@ -199,4 +258,8 @@ By naming the policies this way you can quickly identify policies and their inte
 ![](./media/Group-planning/Intune_planning_policy_view_small.png)
 
 ## Next steps
+<<<<<<< HEAD
+Create groups as described in [Use groups to manage users and devices with Microsoft Intune](../Topic/use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+=======
 [Create groups](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+>>>>>>> dc8a75144dd30a4d9eca9b4b684f6cc083e713fd
