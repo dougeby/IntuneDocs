@@ -10,7 +10,7 @@ ms.assetid:
 author: Staciebarker
 ---
 
-# 2. Configure a custom domain name
+# Configure a custom domain name
 
 By default, [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] uses the domain name that you select when you subscribe to the service. It looks like **&lt;domain&gt;.onmicrosoft.com**. When your organization owns a custom domain, you can configure your instance of [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to use that domain instead of the domain name provided with your subscription.
 

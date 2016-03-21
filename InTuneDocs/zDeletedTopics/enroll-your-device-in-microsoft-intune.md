@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8373c587-b1ad-4c25-93f9-e0148834d495
 author: Staciebarker
+robots: noindex,nofollow
 ---
 # Enroll your device in Microsoft Intune
 <?xml version="1.0" encoding="utf-8"?>

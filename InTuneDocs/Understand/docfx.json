@@ -13,7 +13,7 @@
     "resource": [
         {
           "files": [
-          "**/images/**", 
+          "**/images/**",
           "**/*.png",
           "**/*.jpg",
           "**/*.gif",
@@ -40,5 +40,5 @@
     "theme": "hyde",
     "dest": "_output"
   },
-  "basepath": "/InTune/Understand"
+  "basepath": "/intune/understand"
 }
