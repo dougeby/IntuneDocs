@@ -30,39 +30,7 @@ You can create and deploy mobile device security policies for the following devi
 > [!NOTE]
 > Some settings are not applicable to some devices. See the table below for a full list of settings you can configure.
 
-## Create a mobile device security policy
-
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Add Policy**.
-
-2.  Click **Common Mobile Device Settings** &gt; **Mobile Device Security**.
-
-3.  Choose whether you want to create a policy that contains recommended settings, or whether you want to create a custom policy, and then click **Create Policy**.
-
-    > [!TIP]
-    > Click the information icon next to each setting to view the recommended value for the setting.
-
-    For more information about how to create and deploy policies, see the [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md) topic.
-
-4.  See the [Policy settings for mobile devices](mobile-device-security-policy-settings-in-microsoft-intune.md#BKMK_Settings) section in this topic for information about the settings you can configure.
-
-5.  When you are finished, click **Save Policy**.
-
-The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
-
-## Deploy a mobile device security policy
-
-1.  Deploy the mobile device security policy to one or more groups of users or devices in your organization.
-
-For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
-
-A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
-
-> [!IMPORTANT]
-> It might take up to 24 hours for status information to appear in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] admin console.
-
-## <a name="BKMK_Settings"></a>Policy settings for mobile devices
-
-### <a name="BKMK_sec"></a>Security settings
+## Security settings
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -84,7 +52,7 @@ For iOS devices, when you configure the settings **Minutes of inactivity before 
 
 When you set deploy a password length policy to devices that run Windows RT, users will be forced to reset their password, even if their current password complies with the policy requirements.
 
-### Encryption settings
+## Encryption settings
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -100,14 +68,14 @@ Additional information for devices that run Windows 8.1
 
 -   When you enforce encryption on a device, the recovery key is only accessible from the users Microsoft Account, accessed from their OneDrive account. You cannot recover this key on behalf of a user.
 
-### Malware settings
+## Malware settings
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Require network firewall**|Yes|No|No|No|No|
 |**Enable SmartScreen**|Yes|No|No|No|No|
 
-### System settings
+## System settings
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -124,7 +92,7 @@ Additional information for devices that run Windows 8.1
 |**Allow factory reset**|No|No|No|No|Yes (Samsung KNOX only)|
 To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](http://support.microsoft.com/kb/3013816) on each device.
 
-### <a name="BKMK_cloud"></a>Cloud settings – documents and data
+## Cloud settings – documents and data
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -135,14 +103,14 @@ To enforce encryption on devices that run Windows 8.1, you must install the [Dec
 |**Work Folders URL**<br /><br />(sets the URL of the work folder to allow documents to be synchronized across devices)|Yes|No|No|No|No|
 |**Allow Google backup**|No|No|No|No|Yes (Samsung KNOX only)|
 
-### Cloud settings – accounts and synchronization
+## Cloud settings – accounts and synchronization
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Allow Microsoft account**|No|No|Windows Phone 8.1 only|No|No|
 |**Allow Google account auto sync**|No|No|No|No|Yes (Samsung KNOX only)|
 
-### <a name="BKMK_email"></a>Email settings
+## Email settings
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -152,7 +120,7 @@ To enforce encryption on devices that run Windows 8.1, you must install the [Dec
 |**Make Microsoft account optional in Windows Mail application**|Yes|No|No|No|No|
 |**Allow custom email accounts**|No|No|Windows Phone 8.1 only|No|No|
 
-### <a name="BKMK_browser"></a>Application settings - browser
+## Application settings - browser
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -173,7 +141,7 @@ To enforce encryption on devices that run Windows 8.1, you must install the [Dec
 |**Allow Enterprise Mode menu access**|Yes|No|No|No|No|
 |**Enterprise Mode site list location**|Yes|No|No|No|No|
 
-### <a name="BKMK_apps"></a>Application settings - apps
+## Application settings - apps
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -186,14 +154,14 @@ To enforce encryption on devices that run Windows 8.1, you must install the [Dec
 |**Allow adult content in media store**|No|No|No|Yes|No|
 |**Allow app installation**|No|No|No|iOS 6 and later|No|
 
-### Application settings - gaming
+## Application settings - gaming
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Allow Game Center friends**|No|No|No|Yes|No|
 |**Allow multiplayer gaming**|No|No|No|Yes|No|
 
-### <a name="BKMK_hard"></a>Device capabilities settings - hardware
+## Device capabilities settings - hardware
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -208,7 +176,7 @@ To enforce encryption on devices that run Windows 8.1, you must install the [Dec
 |**Allow Bluetooth**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
 |**Allow power off** If disabled, the setting **Number of repeated sign in failures to allow before the device is wiped** for Samsung KNOX devices does not function.|No|No|No|No|Yes (Samsung KNOX only)|
 
-### Device capabilities settings - cellular
+## Device capabilities settings - cellular
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -217,7 +185,7 @@ To enforce encryption on devices that run Windows 8.1, you must install the [Dec
 |**Allow automatic synchronization while roaming**|No|No|No|Yes|No|
 |**Allow SMS/MMS messaging**|No|No|No|No|Yes (Samsung KNOX only)|
 
-### Device capabilities settings - features
+## Device capabilities settings - features
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -228,6 +196,6 @@ To enforce encryption on devices that run Windows 8.1, you must install the [Dec
 |**Allow clipboard share between applications**|No|No|No|No|Yes (Samsung KNOX only)|
 |**Allow YouTube**|No|No|No|No|Yes (Samsung KNOX only)|
 
-## See Also
+### See Also
 [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
 

@@ -12,30 +12,11 @@ author: robstackmsft
 # Exchange ActiveSync policy settings in Microsoft Intune
 Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Exchange ActiveSync** policy to configure settings that let you control a range of features and functionality on devices that are managed by Exchange ActiveSync.
 
-## Create an Exchange ActiveSync policy
+## Policy settings for devices managed by Exchange ActiveSync
 
-#### To provide basic settings for the policy
+### Security settings
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Overview** &gt; **Add Policy**.
-
-2.  Click **Common Mobile Device Settings** &gt; **Exchange ActiveSync** and then click **Create Policy**.
-
-    > [!NOTE]
-    > You cannot create a configuration policy using recommended settings. You must create a custom policy.
-
-3.  In the **General** section of the **Create Policy** page, specify a name and a description for the new policy.
-
-4.  Use the information in the following sections to help you supply settings for the policy.
-
-5.  When you are finished, click **Save Policy**.
-
-The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
-
-## <a name="BKMK_Settings"></a>Policy settings for devices managed by Exchange ActiveSync
-
-### <a name="BKMK_sec"></a>Security settings
-
-|Setting name|
+|Setting name|Details
 |----------------|
 |**Require a password to unlock mobile devices**|
 |**Required password type**<br /><br />(specifies the type of password that will be required, such as numeric only, or alphanumeric)|
@@ -44,7 +25,7 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 |**Number of repeated sign-in failures to allow before the device is wiped**|
 |**Password expiration (days)**|
 |**Remember password history**|
-|**Remember password history** – **Prevent reuse of previous passwords**|
+|**Remember password history** – **Prevent reuse of previous passwords**|-|
 |**Minutes of inactivity before password is required**|
 
 ### Encryption settings
@@ -65,32 +46,26 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 
 ### <a name="BKMK_email"></a>Email settings
 
-|Setting name|
+|Setting name|Details
 |----------------|
-|**Allow users to download email attachments**|
+|**Allow users to download email attachments**|-|
 |**Email synchronization period**|
 |**Allow mobile devices that don’t fully support Exchange ActiveSync settings to synchronize with Exchange**|
 
 ### <a name="BKMK_browser"></a>Applications - Browser
 
-|Setting name|
-|----------------|
-|**Allow web browser**|
+|Setting name|Details
+|----------------|-
+|**Allow web browser**|-
 
 ### <a name="BKMK_hard"></a>Device capabilities - hardware
 
 |Setting name|
 |----------------|
-|**Allow camera**|
+|**Allow camera**|-
 
-## Deploy the Configuration Policy
 
-1.  Deploy the configuration policy to one or more groups of users or devices in your organization.
 
-For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
-
-A status summary and alerts In the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
-
-## See Also
+### See Also
 [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
 
