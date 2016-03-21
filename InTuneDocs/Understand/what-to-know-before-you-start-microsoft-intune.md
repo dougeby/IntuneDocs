@@ -13,14 +13,14 @@ author: Staciebarker
 Before you set up Intune, familiarize yourself with the capabilities covered in this topic, and in those listed below:
 
 - General capabilities of Intune
-- [Intune supported web browsers](..\supported-web-browsers.md)
-- [Network infrastructure requirements for Microsoft Intune](..\network-infrastructure-requirements-for-microsoft-intune.md)
-- [Administrative accounts, websites, and permissions in Microsoft Intune](..\administrative-accounts-websites-perms.md)
-- [Microsoft Intune Company Portal](..\microsoft-intune-company-portal.md)
-- [Intune integration with Microsoft cloud services and products](..\integration-with-cloud-services.md)
-- [Intune network bandwidth use](..\network-bandwidth-use.md)
-- [Domain names for Microsoft Intune](..\domain-names-for-intune.md)
-- [Choose how to manage devices with Microsoft Intune](introduction-to-microsoft-intune.md)
+- [Intune supported web browsers](supported-web-browsers.md)
+- [Network infrastructure requirements for Microsoft Intune](network-infrastructure-requirements-for-microsoft-intune.md)
+- [Administrative accounts, websites, and permissions in Microsoft Intune](administrative-accounts-websites-perms.md)
+- [Microsoft Intune Company Portal](microsoft-intune-company-portal.md)
+- [Intune integration with Microsoft cloud services and products](integration-with-cloud-services.md)
+- [Intune network bandwidth use](network-bandwidth-use.md)
+- [Domain names for Microsoft Intune](domain-names-for-intune.md)
+- [Introduction to Intune](introduction-to-microsoft-intune.md)
 
 After you are familiar with the capabilities of [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], you should be ready to set up your subscription. If you start with a trial subscription, at a later time you can convert it to a full subscription. To convert a trial subscription, see [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
 
@@ -42,4 +42,4 @@ After you are familiar with the capabilities of [!INCLUDE[wit_nextref](../includ
 
 
 
-**Next**  [Intune supported web browsers](../supported-web-browsers.md)
+**Next**  [Intune supported web browsers](supported-web-browsers.md)
