@@ -22,11 +22,6 @@ The following terms are used in the tables that describe how users get their app
 
 **Unmanaged apps** - Apps that can be managed through policies and that have not been wrapped by Intune or that do not incorporate the Intune MAM SDK. Application policies cannot be applied to these apps.
 
-Select from the following device platform options to learn more:
-
-> [!div class="op_single_selector"]
-- [How your Android users get their apps](How your Android users get their apps.md)
-- [How your iOS users get their apps](How your iOS users get their apps.md)
-- [How your Windows users get their apps](How your Windows users get their apps.md)
-
-INFO TO BE ADDED SOON
+###See also
+[How your iOS users get their apps](how-your-ios-users-get-their-apps.md)</br>
+[How your Windows users get their apps](how-your-windows-users-get-their-apps.md)

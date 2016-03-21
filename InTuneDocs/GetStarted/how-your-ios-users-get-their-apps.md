@@ -1,5 +1,5 @@
 ---
-title: How your Windows users get their apps
+title: How your iOS users get their apps
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid:
 author: Staciebarker
 
-#How your Windows users get their apps
+#How your iOS users get their apps
 
 Use this information to understand how and where your end users get the apps that you distribute through Microsoft Intune. 
 
@@ -25,9 +25,6 @@ The following terms are used in the tables that describe how users get their app
 
 Select from the following device platform options to learn more:
 
-> [!div class="op_single_selector"]
-- [How your Android users get their apps](How your Android users get their apps.md)
-- [How your iOS users get their apps](How your iOS users get their apps.md)
-- [How your Windows users get their apps](How your Windows users get their apps.md)
-
-INFO TO BE ADDED SOON
+###See also
+[How your Android users get their apps](how-your-android-users-get-their-apps.md)</br>
+[How your Windows users get their apps](how-your-windows-users-get-their-apps.md)
