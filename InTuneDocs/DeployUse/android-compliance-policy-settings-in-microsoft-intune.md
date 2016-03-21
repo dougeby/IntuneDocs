@@ -20,7 +20,6 @@ Select one of the following to learn about other platforms:
 - [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Windows devices](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Compliance policy settings for Android devices
 
 - **Require a password to unlock mobile devices:** Set this to **Yes** to require users to enter a password before
   they can access their device.
@@ -47,7 +46,7 @@ Select one of the following to learn about other platforms:
   number of previously used passwords that cannot be re-used.
 
 - **Require a password when the device returns from an idle state:**
-  This setting should be used together with the in the **Minutes of inactivity before password is required** setting. The end-users will be prompted to enter a password to access a device that has been inactive for the time specified in the
+  This setting should be used together with the in the **Minutes of inactivity before password is required** setting. The end-users are prompted to enter a password to access a device that has been inactive for the time specified in the
   **Minutes of inactivity before password is required** setting.
 
 - **Require encryption on mobile device:** Set this to ** Yes** to require the device to be
@@ -60,10 +59,12 @@ Select one of the following to learn about other platforms:
 
 
 - **Minimum OS required:** When  a device does not meet the minimum OS
-  version requirement, it will be reported as non-compliant.
-  A link with information on how to upgrade will be displayed. The end-user can choose to upgrade their device after which they will be able to access company resources.
+  version requirement, it is reported as non-compliant.
+  A link with information on how to upgrade is displayed. The end-user can choose to upgrade their device after which they should be able to access company resources.
 
 - **Maximum OS version allowed:** When a device is using an
   OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
-  ## Next steps
+  ### Next steps
   [Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
+  >[!div class="step-by-step"]
+  >[Back to](create-a-device-compliance-policy-in-microsoft-intune.md)  **Create a compliance policy**
