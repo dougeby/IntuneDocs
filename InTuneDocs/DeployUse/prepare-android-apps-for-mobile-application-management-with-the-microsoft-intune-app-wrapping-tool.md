@@ -111,7 +111,7 @@ For apps that use ADAL, the following must be true:
 
 -   The app must incorporate an ADAL version greater than or equal to 1.0.2.
 
--   The developer must grant their app access to the Intune Mobile Application Management resource, as described in [Step 3: Configure access tO mobile application management in AAD](#BKMK_AD).
+-   The developer must grant their app access to the Intune Mobile Application Management resource, as described in [Step 3: Configure access to mobile application management in AAD](#BKMK_AD).
 
 ### <a name="BKMK_review_IDs"></a>Step 2: Review the identifiers that you need to get when you register the app
 In the next step, you will use the Azure management portal to register your apps (which are using  ADAL with Azure Active Directory (AAD)) to get the unique identifiers listed in the following table. You then give the identifiers to the developer when you integrate ADAL with the app.
