@@ -12,15 +12,14 @@ author: karthikaraman
 
 # Compliance policy settings for iOS devices in Microsoft Intune
 
-This topic lists the the details of the compliance policy settings that
-are applicable to and supported on devices running iOS  6 and later.
+This topic lists the details of the compliance policy settings that
+are supported on devices running iOS 6 and later.
 
-Select one of the following to learn about other platforms:
+If you are looking for information about other platforms, select one of the following:
 > [!div class="op_single_selector"]
 - [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Windows devices](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Compliance policy settings for iOS devices
 
 - **Require a password to unlock mobile devices:**    Set this to **Yes** to require users to enter a password before
   they can access their device. Devices are
@@ -57,7 +56,7 @@ creating previously used passwords.
 number of previously used passwords that cannot be re-used.
 
 - **Require a password when the device returns from an idle state:**
-This setting should be used together with the in the **Minutes of inactivity before password is required** setting. The end-users will be prompted to enter a password to access a device that has been inactive for the time specified in the
+This setting should be used together with the in the **Minutes of inactivity before password is required** setting. The end-users are prompted to enter a password to access a device that has been inactive for the time specified in the
 **Minutes of inactivity before password is required** setting.
 
 
@@ -65,7 +64,7 @@ This setting should be used together with the in the **Minutes of inactivity bef
 jailbroken devices will not be compliant.
 
 - **Email account must be managed by Intune:** When this option is set to **Yes** ,
-the device will be reported as noncompliant.
+the device is reported as noncompliant.
 
   If the user has set up an email account on the device that matches an
   Intune email profile that was deployed to the device by an IT admin.
@@ -83,10 +82,10 @@ the device will be reported as noncompliant.
      choose **Select** to specify the Intune email profile that devices
      must be managed by. The email profile must be present on the device.
 - **Minimum OS required:** When  a device does not meet the minimum OS
-version requirement, it will be reported as non-compliant.
-A link with information on how to upgrade will be displayed. The end-user can choose to upgrade their device after which they will be able to access company resources.
+version requirement, it is reported as non-compliant.
+A link with information on how to upgrade is displayed. The end-user can choose to upgrade their device after which they should be able to access company resources.
 
 - **Maximum OS version allowed:** When a device is using an
 OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
-## Next steps
-[Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
+>[!div class="step-by-step"]
+>[Go to](create-a-device-compliance-policy-in-microsoft-intune.md)  **Create a compliance policy**
