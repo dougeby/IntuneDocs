@@ -10,19 +10,13 @@ ms.assetid: 6da30550-9e8e-4333-b9b3-83928de3807a
 author: robstackmsft
 ---
 # Deploy apps to mobile devices in Microsoft Intune
-Now that you've [learned the basics](https://technet.microsoft.com/library/dn646955.aspx) about [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] app deployment, you'll now learn how to configure and deploy apps to devices enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. This generally involves three steps:
+Now that you've [learned the basics](../Topic/PlanDesign/plan-for-app-deployment-in-microsoft-intune.md) about Microsoft Intune app deployment, you'll now learn how to configure and deploy apps to devices enrolled with Intune. This generally involves three steps, configuration, deployment, and monitoring.
 
--   [Configure the app](#BKMK_Conf)
-
--   [Deploy the app](#BKMK_Depl)
-
--   [Monitor the app](#BKMK_Monitor)
-
-For information about how to deploy and manage apps you volume-purchased from an app store, see one of the following topics:
+If you are looking for information about how to deploy and manage apps you volume-purchased from an app store, see one of the following topics:
 * [Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune](Manage-iOS-apps-you-purchased-through-a-volume-purchase-program-with-Microsoft-Intune.md)
 * [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](Manage-apps-you-purchased-from-the-Windows-Store-for-Business-with-Microsoft-Intune.md)
 
-For information about how to update and retire apps, see [Update apps using Microsoft Intune](../Topic/Update-apps-using-Microsoft-Intune.md).
+For information about how to update apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
 
 > [!IMPORTANT]
 > The information in this topic helps you to deploy apps to [enrolled Windows PCs](https://technet.microsoft.com/library/mt346003.aspx) and other mobile devices. If you want to deploy apps to  [Windows PCs that you manage using the client software](https://technet.microsoft.com/library/dn646959.aspx), see [Deploy apps to Windows PCs in Microsoft Intune](../Topic/Deploy-apps-to-Windows-PCs-in-Microsoft-Intune.md).
@@ -30,7 +24,7 @@ For information about how to update and retire apps, see [Update apps using Micr
 ## <a name="BKMK_Conf"></a>Configure the app
 In this procedure, you'll use the Intune Software Publisher to configure the properties of the app and, where applicable, upload it to your cloud storage space.
 
-#### To configure an app
+### To configure an app
 
 1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Add Apps** to start the Intune software publisher.
 
