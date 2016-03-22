@@ -11,7 +11,7 @@ author: karthikaraman
 ---
 # Create a compliance policy in Microsoft Intune
 
-##  Step 1: Add a Policy
+##  Step 1: Add a new policy
   In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Compliance Policies** &gt; **Add**.
 
   ![Screenshot of the compliance policy page in the Intune admin console, showing the add option in the menu at the top of page](./media/intune-sa-3a-add-compliance-policy.png)
@@ -26,7 +26,7 @@ On the **Create Policy** page, enable the settings you require:
 ##  Step 3: Save the policy
 When you are finished, choose **Save Policy**.
 
-You will have the option to deploy the policy now, or you can choose to deploy it later. The new policy displays in the **Compliance Policies** node of the **Policy** workspace.
+You will have the option to deploy the policy right after saving the policy, or you can choose to deploy it later. The new policy displays in the **Compliance Policies** node of the **Policy** workspace.
 
 Select one of the following to review the list of compliance settings supported on each platform:
 > [!div class="op_single_selector"]
