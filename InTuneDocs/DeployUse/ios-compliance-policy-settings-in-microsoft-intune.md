@@ -13,14 +13,13 @@ author: karthikaraman
 # Compliance policy settings for iOS devices in Microsoft Intune
 
 This topic lists the details of the compliance policy settings that
-are applicable to and supported on devices running iOS  6 and later.
+are supported on devices running iOS 6 and later.
 
-Select one of the following to learn about other platforms:
+If you are looking for information about other platforms, select one of the following:
 > [!div class="op_single_selector"]
 - [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Windows devices](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Compliance policy settings for iOS devices
 
 - **Require a password to unlock mobile devices:**    Set this to **Yes** to require users to enter a password before
   they can access their device. Devices are
@@ -88,5 +87,5 @@ A link with information on how to upgrade is displayed. The end-user can choose 
 
 - **Maximum OS version allowed:** When a device is using an
 OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
-## Next steps
-[Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
+>[!div class="step-by-step"]
+>[Go to](create-a-device-compliance-policy-in-microsoft-intune.md)  **Create a compliance policy**

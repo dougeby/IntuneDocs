@@ -12,9 +12,9 @@ author: karthikaraman
 # Compliance policy settings for Windows devices in Microsoft Intune
 
 This topic lists the details of the compliance policy settings that
-are applicable to and supported on devices running Android 4.0 and later, or Samsung KNOX 4.0 and later.
+are supported on devices running Windows operating system. The specific Windows version supported is called out in the sections below.
 
-Select one of the following to learn about other platforms:
+If you are looking for information about other platforms, select one of the following:
 > [!div class="op_single_selector"]
 - [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
@@ -128,15 +128,10 @@ You can set a rule to require that Windows 10 devices must be reported as health
 
   When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
-To find the OS version you need to specify for the **Minimum OS required**, and **Maximum OS version allowed**, run the winver command from the command prompt to see the reported version of the OS. Use the version reported when you run this command to specify the minimum and maximum OS version settings.
+To find the OS version to use for the **Minimum OS required**, and **Maximum OS version allowed** settings, run the **winver** command from the command prompt. The winver command returns the reported version of the OS.
 - Windows 8.1 PCs return a version of **6.3**.    If the OS version rule is set to Windows 8.1 for Windows, then the device is reported as noncompliant even if the device has Windows 8.1.
 - Windows PCs with Windows 10 operating system, the version should be set as "10.0"+ the OS Build number returned by the winver command. For example, it could be something like 10.0.10586.
 > ![CA_Win10OSVersion](./media/ca_win10-os-version.png)
+>[!div class="step-by-step"]
 
-
-
-
-
-
-## Next steps
-[Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
+>[Go to](create-a-device-compliance-policy-in-microsoft-intune.md)  **Create a compliance policy**
