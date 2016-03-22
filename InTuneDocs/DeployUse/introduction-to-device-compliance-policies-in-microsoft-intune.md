@@ -33,15 +33,15 @@ The following table lists the device types supported by compliance policies and 
 |**Maximum OS version**|Quarantined|Quarantined|Quarantined|Quarantined|Quarantined|
 |**Windows health attestation**|Windows 10 and Windows 10 Mobile are Quarantined.<br /><br />Setting is not applicable to Windows 8.1|N/A|N/A|N/A|N/A|
 --------------
-**Remediated** = Compliance is enforced by the device operating system (for example, the user is forced to set a PIN).  There is never a case when the setting will be noncompliant.
+**Remediated** = Compliance is enforced by the device operating system (for example, the user is forced to set a PIN).  There is never a case when the setting is noncompliant.
 
 **Quarantined** = The device operating system does not enforce compliance (for example, Android devices do not force the user to encrypt the device).  In this case:
 
 -   The device will be blocked if the user is targeted by a conditional access policy.
 
--   The company portal or web portal will notify the user about any compliance issues.
+-   The company portal will notify the user about any compliance issues.
 
-## Next Steps
+## Next steps
 [Create a device compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
 
 [Deploy a device compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
