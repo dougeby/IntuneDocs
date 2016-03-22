@@ -5,7 +5,7 @@
 ## [Common Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)
 ### [Start a trial & deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
 ### [Set up email access for iOS devices](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
-## Common scenarios
+## [Common ways to use Intune](common-ways-to-use-intune.md)
 ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)
 
 <!--- ## What do we do with these?
