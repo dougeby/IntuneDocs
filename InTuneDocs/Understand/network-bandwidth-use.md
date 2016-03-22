@@ -11,16 +11,7 @@ author: Staciebarker
 ---
 # Intune network bandwidth use
 
-
-Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], review this topic and the information in the list below. You might also want to review [Choose how to manage devices with Microsoft Intune](introduction-to-microsoft-intune.md). After you are familiar with the capabilities of [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], you should be ready to set up your subscription. If you start with a trial subscription, you can convert it later to a full subscription (see [How to buy Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx)).
-
-- [General capabilities of Intune](what-to-know-before-setting-up-microsoft-intune.md#BKMK_general_capabilities)
-- [Intune supported web browsers](supported-web-browsers.md)
-- [Network infrastructure requirements for Microsoft Intune](network-infrastructure-requirements-for-microsoft-intune.md)
-- [Administrative accounts, websites, and permissions in Microsoft Intune](administrative-accounts-websites-perms.md)
-- [Microsoft Intune Company Portal](microsoft-intune-company-portal.md)
-- [Intune integration with Microsoft cloud services and products](integration-with-cloud-services.md)
-- [Domain names for Microsoft Intune](domain-names-for-intune.md)
+Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 Use the information in the following sections to plan for network traffic for [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] clients.
 
@@ -83,5 +74,4 @@ By default, BranchCache and distributed cache mode are enabled on a computer whe
 If you use BranchCache, you should communicate with other administrators in your organization who manage Group Policy and [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] Firewall policy to ensure they do not deploy policy that disables BranchCache or Firewall exceptions. For more about BranchCache, see [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx).
 
 ### See also
-[What to know before you start](what-to-know-before-setting-up-microsoft-intune.md)</br>
-[Network infrastructure requirements for Microsoft Intune](network-infrastructure-requirements-for-microsoft-intune.md)
+[What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)

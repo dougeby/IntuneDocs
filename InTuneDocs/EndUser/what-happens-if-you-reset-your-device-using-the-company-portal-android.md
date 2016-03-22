@@ -1,5 +1,5 @@
 ---
-title: What happens when you reset your device using the Company Portal?
+title: What happens if you reset your device using the Company Portal?
 ms.reviewer: na
 ms.custom: na
 ms.suite: na
@@ -7,7 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
 
-# What happens when you reset your device using the Company Portal?
+# What happens if you reset your device using the Company Portal?
 
 When you use the Company Portal to reset your personal device, some apps and settings on your device may be deleted, including some of your personal data. What happens on each device depends on the type of device you have and how you are using the device, as described in the following table.
 

@@ -1,5 +1,5 @@
 ---
-title: Reset your device
+title: Reset your device from the Company Portal website
 ms.reviewer: na
 ms.custom: na
 ms.suite: na
@@ -7,7 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
 
-# Remove your device from the Company Portal
+# Reset your device from the Company Portal website
 
 If your device gets lost or stolen, you might want to reset it to its factory default settings to prevent unauthorized access to your data. You can reset your device remotely by using the [Company Portal website](http://portal.manage.microsoft.com). The Company Portal website is a web page that you can use to manage computers and devices that you have enrolled in Intune and to do most of the same tasks that you can do when using your Company Portal app.
 
