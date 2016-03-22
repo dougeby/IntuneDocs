@@ -51,7 +51,7 @@ When conflicts occur due to multiple Intune settings being applied to a device, 
 2.  In the **Health Attestation Report - Create a new report** page, you can view a report with all the Windows 10 health attestation data collected by Intune. You can also create a report with a subset of the data using filters. The filters can be based on the type of device, operating system, or only a subset of data points.
 
 
-## Next Steps
+## Next steps
 You can now use the compliance policy with conditional access policies to control access to services in your organization.
 
 [Create conditional access policies for email](manage-email-access-with-microsoft-intune.md)
