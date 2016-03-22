@@ -4,7 +4,7 @@
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
-
+## [What's new](what-s-new-in-microsoft-intune.md)
 ## [Enroll devices](enroll-devices-in-microsoft-intune.md)
 ### [Install the PC client](install-the-windows-pc-client-with-microsoft-intune.md)
 ### [Specify corporate-owned devices with international mobile equipment identity (IMEI)  numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
@@ -16,7 +16,6 @@
 ### [Common PC management tasks with the Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
 ## [Protect devices and data](protect-data-and-devices-with-microsoft-intune.md)
-### [Protect data & devices](protect-data-and-devices-with-microsoft-intune.md)
 ### [Keep PCs up to date with software updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
 ### [Help protect PCs using Windows Firewall policies](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
 ### [Help secure PCs with Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
@@ -40,7 +39,7 @@
 ### [Control Microsoft Passport settings on devices](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 
 ## [Retire devices and data](retire-data-and-devices-from-microsoft-intune-management.md)
-### [Retire data and devices from Intune management](retire-data-and-devices-from-microsoft-intune-management.md)
+<!--- ### [Retire data and devices from Intune management](retire-data-and-devices-from-microsoft-intune-management.md)--->
 ### [Help protect iOS devices with Activation Lock bypass](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 
 ## [Add apps](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
