@@ -10,9 +10,9 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 author: Staciebarker
 ---
 # What to know before you start Microsoft Intune
-Before you set up Intune, familiarize yourself with the capabilities covered in this topic, and in those listed below:
+Before you set up Intune, familiarize yourself with the capabilities described in this topic and at the links below:
 
-- General capabilities of Intune
+- [General capabilities of Intune](BKMK_general_capabilities)
 - [Intune supported web browsers](supported-web-browsers.md)
 - [Network infrastructure requirements for Microsoft Intune](network-infrastructure-requirements-for-microsoft-intune.md)
 - [Administrative accounts, websites, and permissions in Microsoft Intune](administrative-accounts-websites-perms.md)
@@ -22,9 +22,9 @@ Before you set up Intune, familiarize yourself with the capabilities covered in 
 - [Domain names for Microsoft Intune](domain-names-for-intune.md)
 - [Introduction to Intune](introduction-to-microsoft-intune.md)
 
-After you are familiar with the capabilities of [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], you should be ready to set up your subscription. If you start with a trial subscription, at a later time you can convert it to a full subscription. To convert a trial subscription, see [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
+Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], review this topic and the information in the list above. You might also want to review [Choose how to manage devices with Microsoft Intune](choose-how-to-manage-devices.md). After you are familiar with the capabilities of [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], you should be ready to set up your subscription. If you start with a trial subscription, you can convert it later to a full subscription see [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
 
-## General capabilities of Intune
+## <a name="BKMK_general_capabilities"></a>General capabilities of Intune
 
 -   **Manage mobile devices and computers, no servers or intranet required.** You can manage mobile devices and computers, even if those devices are not joined to a domain or brought on-site. This makes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ideal for a company with a mobile or geographically-distributed workforce.
 
@@ -36,10 +36,8 @@ After you are familiar with the capabilities of [!INCLUDE[wit_nextref](../includ
 
 -   **Provide a “self-service” model for IT.** Users can use the Company Portal to enroll devices, to install site-licensed software, or to find contact information for IT administrators.
 
--   **Support multi-factor authentication.** [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] supports multi-factor authentication. For details, see [Protect Windows devices with multi-factor authentication](/Intune/DeployUse/protect-windows-devices-with-multi-factor-authentication.md).
+-   **Support multi-factor authentication.** [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] supports multi-factor authentication. For details, see [Protect Windows devices with multi-factor authentication](/Intune/DeployUse/protect-windows-devices-with-multi-factor-authentication.html).
 
 -   **Available in multiple languages.** Intune is now available in the following languages: Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish. For a list of the countries where the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] service is supported, see [International availability](https://products.office.com/en-us/business/international-availability).
 
 
-
-**Next**  [Intune supported web browsers](supported-web-browsers.md)
