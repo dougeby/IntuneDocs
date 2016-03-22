@@ -11,16 +11,14 @@ author: karthikaraman
 ---
 # Deploy and monitor a compliance policy in Microsoft Intune
 ## Deploy a compliance policy
-Deploy the compliance policy to one or more groups of users or devices in your organization.
+Deploy the compliance policy you [created](create-a-device-compliance-policy-in-microsoft-intune.md) to one or more groups of users or devices in your organization.
 
 1.  In the **Policy** workspace, select the policy you want to deploy, then choose **Manage Deployment**.
 ![IntuneSA3cDeployCompliancePolicy2](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
-2.  In the **Manage Deployment** dialog box, select one or more groups to which you want to deploy the policy, then choose **Add > OK**.
+2.  In the **Manage Deployment** dialog box, choose one or more groups to which you want to deploy the policy, then choose **Add > OK**.
 ![IntuneSA3dDeployCompliancePolicy3_Manage](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
-You can deploy to users and/or devices. Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](./intunedocs/use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
-
-Ensure that you have created and deployed a compliance policy to all devices that the Exchange conditional access policy will be targeted.
+You can deploy a compliance policy to users and/or devices. Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. To learn more about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](./intunedocs/use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 Use the status summary and alerts on the **Overview** page of the **Policy** workspace to identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
