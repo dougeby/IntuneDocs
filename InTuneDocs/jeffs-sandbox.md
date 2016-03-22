@@ -8,6 +8,9 @@ ms.topic: article
 ms.assetid: tempfile
 author: jeffgilb
 ---
+## Picture with text on same line
+![alt text](./media/App-Lifecycle.png "app lifecycle") This is the app lifecycle graphic.
+
 
 ## iFrame
 <iframe width="730" height="800" src="https://onedrive.live.com/edit.aspx?cid=15f03658bc93f824&page=view&resid=15F03658BC93F824!41614&parId=15F03658BC93F824!145&app=Excel" frameborder="0" allowfullscreen></iframe>
