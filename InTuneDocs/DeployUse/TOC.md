@@ -11,31 +11,33 @@
 
 ## [Configure devices](manage-windows-pcs-with-microsoft-intune.md)
 ### [Manage PCs](manage-windows-pcs-with-microsoft-intune.md)
+<!---Rob says these two could fall out of TOC)--->
+#### [Resolve GPO and Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+#### [Common PC management tasks with the Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 ### [Manage settings and features on your devices with policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-### [Resolve GPO and Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
-### [Common PC management tasks with the Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
-## [Protect devices and data](protect-data-and-devices-with-microsoft-intune.md)
+## [Protect devices and data](protect-data-and-devices-with-microsoft-intune.md) <!--- Karthika is waiting to talk with Dilip about this --->
+<!--- Rob says next 3 topics could fall out of TOC --->
 ### [Keep PCs up to date with software updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
 ### [Help protect PCs using Windows Firewall policies](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
 ### [Help secure PCs with Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
+
 ### [Enable access to company resources](enable-access-to-company-resources-with-microsoft-intune.md)
 #### [Enable access to company resources using certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md)
 #### [Help users connect to company networks using Wi-Fi profiles](help-users-connect-to-company-networks-using-wi-fi-profiles-with-microsoft-intune.md)
 #### [Help users connect to their work using VPN profiles ](help-users-connect-to-their-work-using-vpn-profiles-with-microsoft-intune.md)
 #### [Configure access to corporate email using email profiles](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
+<!--- Conditional access--->
+### [Restrict access to email & O365 services](manage-access-to-email-and-o365-services-with-microsoft-intune.md)
+#### [Device compliance polices](introduction-to-device-compliance-policies-in-microsoft-intune.md)
+##### [Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
+##### [Deploy a compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intuen.md)
+#### [Manage email access ](manage-email-access-with-microsoft-intune.md)
+#### [Manage SharePoint Online access](manage-sharepoint-online-access-with-microsoft-intune.md)
+#### Manage access to Skype for Business
+<!---MFA--->
 ### [Protect Windows devices with multi-factor authentication](protect-windows-devices-with-multi-factor-authentication.md)
-
-## [Manage access to email and O365 services](manage-access-to-email-and-sharepoint-with-microsoft-intune.md)
-### [Manage access to email and SharePoint](manage-access-to-email-and-sharepoint-with-microsoft-intune.md)
-### [Manage email access ](manage-email-access-with-microsoft-intune.md)
-### [Manage SharePoint Online access](manage-sharepoint-online-access-with-microsoft-intune.md)
-### Manage access to Skype for Business
-
-### Manage app access to O365 services
-#### Manage app access to Exchange Online
-#### Manage app access to SharePoint Online
-
+<!---Passport--->
 ### [Control Microsoft Passport settings on devices](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 
 ## [Retire devices and data](retire-data-and-devices-from-microsoft-intune-management.md)
@@ -46,20 +48,19 @@
 ### [Deploy apps to mobile devices](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 ### [Deploy apps to PCs](deploy-apps-to-windows-pcs-in-microsoft-intune.md)
 
-## [Publish apps]
-
-## [Configure apps](manage-device-compliance-policies-for-microsoft-intune.md)
-### [Manage device compliance policies for Microsoft Intune](manage-device-compliance-policies-for-microsoft-intune.md)
-#### Create a compliance policy
-#### Deploy & monitor a compliance policy
-### [Manage license agreements for PC software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
+## [Configure apps](Update-apps-using-microsoft-intune.md)
 ### [Update apps ](Update-apps-using-microsoft-intune.md)
 ### [Manage apps purchased through a volume-purchase program](manage-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-### [Configure apps with mobile app configuration policies](configure-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Mobile app configuration policies](configure-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
 ### [Manage Internet access using managed browser policies](manage-internet-access-using-managed-browser-policies.md)
 
-## [Protect apps and data](configure-and-manage-devices-with-microsoft-intune.md)
-### [Protect apps](configure-and-manage-devices-with-microsoft-intune.md)
+<!---need a landing page for protect apps--->
+## [Protect apps and data](configure-data-loss-prevention-app-policies-with-microsoft-intune.md)
+<!--- 1604
+### Manage app access to O365 services
+#### Manage app access to Exchange Online
+#### Manage app access to SharePoint Online --->
+
 ### [Configure data loss prevention app policies](configure-data-loss-prevention-app-policies-with-microsoft-intune.md)
 #### [Get started with mobile app management policies in the Azure portal](get-started-with-mobile-app-management-policies-in-the-azure-portal.md)
 #### [Create and deploy mobile app management policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
@@ -71,7 +72,9 @@
 #### [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
+<!---Remove from TOC? --->
 ### [Microsoft apps you can use with Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md)
+### [Manage license agreements for PC software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 
 ## [Retire apps and data](retire-apps-using-microsoft-intune.md)
 ### [Retire apps ](retire-apps-using-microsoft-intune.md)
@@ -83,7 +86,7 @@
 --->
 <!--- ### [Set up email access for iOS devices](Set-up-email-access-for-iOS-devices-using-microsoft-intune.md) --->
 <!--- this shouldn't be here (jeffgilb): --->
-<!---
+<!--- These are not TOC topics but steps in a scenario. We need to ensure that writers are adding verification steps to appropriate scenarios
 #### [Monitoring and reports](Monitoring-and-reports-with-microsoft-intune.md)
 ##### [Understand Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md)
 ##### [Get notified by alerts](get-notified-by-microsoft-intune-alerts.md)
