@@ -1,5 +1,5 @@
 ---
-title: Enroll devices
+title: Enroll devices | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,4 +9,5 @@ ms.topic: article
 ms.assetid:
 author:
 ---
-# This page has no content
+# Enroll devices in Intune
+Not sure if this is supposed to be new content or the Get ready to enroll devices topic.

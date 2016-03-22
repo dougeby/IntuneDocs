@@ -11,7 +11,9 @@
 
 ## [Configure devices](manage-windows-pcs-with-microsoft-intune.md)
 ### [Manage PCs](manage-windows-pcs-with-microsoft-intune.md)
+
 <!---Rob says these two could fall out of TOC)--->
+
 #### [Resolve GPO and Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 #### [Common PC management tasks with the Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 ### [Manage settings and features on your devices with policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -48,10 +50,10 @@
 ### [Deploy apps to mobile devices](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 ### [Deploy apps to PCs](deploy-apps-to-windows-pcs-in-microsoft-intune.md)
 
-## [Configure apps](Update-apps-using-microsoft-intune.md)
-### [Update apps ](Update-apps-using-microsoft-intune.md)
-### [Manage apps purchased through a volume-purchase program](manage-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-### [Mobile app configuration policies](configure-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+## [Configure apps](update-apps-using-microsoft-intune.md)
+### [Update apps ](update-apps-using-microsoft-intune.md)
+### [Manage apps purchased through a volume-purchase program](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
+### [Mobile app configuration policies](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
 ### [Manage Internet access using managed browser policies](manage-internet-access-using-managed-browser-policies.md)
 
 <!---need a landing page for protect apps--->

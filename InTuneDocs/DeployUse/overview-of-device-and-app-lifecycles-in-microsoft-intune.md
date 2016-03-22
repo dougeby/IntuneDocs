@@ -1,5 +1,5 @@
 ---
-title: Overview of device and app lifecycles
+title: Overview of device and app lifecycles | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,4 +9,5 @@ ms.topic: article
 ms.assetid:
 author:
 ---
-# This page has no content
+# Overview of device and app lifecycles
+This content will be created by Tristan.
