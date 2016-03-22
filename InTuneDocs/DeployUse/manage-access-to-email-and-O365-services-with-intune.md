@@ -16,7 +16,7 @@ Intune's conditional access capability allows you to make sure that only devices
 ## How should I configure conditional access?
 Use conditional access to manage access to Microsoft **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**,  **SharePoint Online** and **Skype for Business Online**.
 
-To set up conditional access, configure  a compliance policy, and a conditional access policy.
+To set up conditional access to restrict access to email and O365 services, configure a device compliance policy, and a conditional access policy.
 
 The compliance policy has settings like passcode, encryption, whether or not a device is jailbroken that a device must comply with in order to be considered compliant.  
 
