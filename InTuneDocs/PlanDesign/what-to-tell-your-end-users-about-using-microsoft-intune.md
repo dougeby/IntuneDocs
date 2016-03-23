@@ -10,9 +10,11 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 author: Staciebarker
 ---
 
+# What to tell your end users about using Microsoft Intune
+
 Use these links to understand your end user's experience with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. 
 
-# Where your end users can find information about common tasks
+## Where your end users can find information about common tasks
 
 Give your end users the following end-user help links when they are looking for information about using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] on their devices. At these links, users will find steps on how to install the Company Portal app, enroll their devices, get managed apps, troubleshoot, and more.
 
@@ -30,7 +32,7 @@ Give your end users the following end-user help links when they are looking for 
 
 ##How your end users get their apps
 
-To understand how your end users get their apps, s from the following device platform options:
+To understand how your end users get their apps, choose from the following device platform options:
 
 > [!div class="op_single_selector"]
 - [How your Android users get their apps](how-your-android-users-get-their-apps.md)

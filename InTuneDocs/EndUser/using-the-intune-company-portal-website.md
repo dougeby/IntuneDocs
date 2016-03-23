@@ -14,13 +14,13 @@ The [Company Portal website](http://portal.manage.microsoft.com) is a web page t
 
 You can use the Company Portal website  to:
 
--   [Reset your device passcode](reset-your-passcode-cpwebsite.md)
+-   [Reset your device passcode from the Company Portal website](reset-your-passcode-cpwebsite.md)
 
--   [Rename your device](reset-your-passcode-cpwebsite.md)
+-   [Rename your device from the Company Portal website](reset-your-passcode-cpwebsite.md)
 
--   [Remove your device from Intune enrollment and from the Company Portal](remove-your-device-cpwebsite.md)
+-   [Remove your device from the Company Portal](remove-your-device-cpwebsite.md)
 
--   [Reset your device to its factory default settings](reset-your-device-cpwebsite.md)
+-   [Reset your device from the Company Portal website](reset-your-device-cpwebsite.md)
 
 -   Find your IT administrator's contact information, if your IT admin configured it
 
