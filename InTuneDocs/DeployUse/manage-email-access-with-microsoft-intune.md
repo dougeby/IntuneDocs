@@ -1,5 +1,5 @@
 ---
-title: Manage email access with Microsoft Intune
+title: Manage access to Exchange Online | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,53 +9,43 @@ ms.topic: article
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 author: karthikaraman
 ---
-# Manage email access with Microsoft Intune
-Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)]**conditional access policies** for Exchange to manage access to Exchange email based on conditions you specify.
+# Manage access to Exchange Online with Microsoft Intune
 
-You can manage access to:
+## Mobile devices
+You can block access to Exchange email from the devices built-in **Exchange ActiveSync email client** on the following platforms:
 
--   Microsoft Exchange On-premises
+- Android 4.0 and later, Samsung Knox Standard 4.0 and later
 
--   Microsoft Exchange Online
+- iOS 7.1 and later
 
--   Exchange Online Dedicated
+- Windows Phone 8.1 and later
+
+You can block access to Exchange Online email from **Outlook app** on iOS and Android devices
 
 If you configure conditional access, before a user can connect to their email, the device they use must:
 
 -   Be enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] or a domain joined PC.
 
--   Register the device in Azure Active Directory (this happens automatically when the device is enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] (for Exchange Online only). Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory (does not apply to Windows and Windows Phone devices connecting to Exchange On-premises).
+-   Register the device in Azure Active Directory (this happens automatically when the device is enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] (for Exchange Online only). Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
 
-    For a domain joined PC, you must set it to automatically register with Azure Active Directory.  **Conditional Access for PCs** section in the [Manage access to email and SharePoint with Microsoft Intune](../Topic/Manage-access-to-email-and-SharePoint-with-Microsoft-Intune.md) topic lists the full set of requirements to enable conditional access for PCs.
+AAD DRS will be activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service will not see registered devices in their on-premises Active Directory.
 
 -   Be compliant with any [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] compliance policies deployed to that device
 
+-   You must use an Office 365 subscription that includes Exchange Online (such as E3) and users must be licensed for Exchange Online.
+
+-   The optional **Microsoft Intune service to service connector** connects [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] to Microsoft Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console (see [Mobile device management with Exchange ActiveSync and Microsoft Intune](../Topic/Mobile-device-management-with-Exchange-ActiveSync-and-Microsoft-Intune.md)). You do not need to use the connector to use compliance policies or conditional access policies, but is required to run reports that help evaluate the impact of conditional access.
+
+   > [!NOTE]
+   > Do not configure the service to service connector if you intend to use conditional access for both Exchange Online and Exchange On-premises
+
 If a conditional access condition is not met, the user is presented with one of the following messages when they log in.
 
-**For mobile devices:**
-
--   If the device is not enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app, enroll the device, activate email, which associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
+- If the device is not enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app, enroll the device, activate email, which associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
 
 -   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] web portal, or the company portal app where they can find information about the problem and how to remediate it.
 
-**For PCs:**
-
--   If the conditional access policy requirement is to allow **domain joined** or **compliant**, a message with instructions about how to enroll the device is displayed. If the PC does not meet either of the requirements, the user will be asked to enroll the device with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
-
--   If the conditional access policy requirement is set to allow only domain joined windows devices, the device is blocked and a message to contact the IT admin is displayed.
-
-You can block access to Exchange email from the devices built-in Exchange ActiveSync email client on the following platforms:
-
--   Android 4.0 and later, Samsung Knox Standard 4.0 and later
-
--   iOS 7.1 and later
-
--   Windows Phone 8.1 and later
-
--   The **Mail** application on Windows 8.1 and later
-
-Outlook app for iOS and Android, and Outlook desktop 2013 is supported for Exchange Online only.
-
+Configure conditional access
 ## Step 1: Configure and deploy a compliance policy
 Ensure that you have created and deployed a compliance policy to all devices that the Exchange conditional access policy will be targeted to.
 
@@ -165,7 +155,7 @@ The message is displayed on the device for Exchange Online users and tenants in 
 
     > [!NOTE]
     > If you have not deployed a compliance policy and then enable the Exchange Online policy, all targeted devices are reported as compliant.
-    > 
+    >
     > Regardless of the compliance state, all users who are targeted by the policy will be required to enroll their devices with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
 
 3.  Under **Device platforms**, you can choose to apply conditional access policy to:
@@ -180,10 +170,10 @@ The message is displayed on the device for Exchange Online users and tenants in 
 
     > [!TIP]
     > **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Office clients.
-    > 
+    >
     > -   The ADAL based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, the user is directed to a sign-in web page.
     > -   This new sign-in method enables new scenarios such as, conditional access, based on **device compliance** and whether **multi-factor authentication** was performed.
-    > 
+    >
     > This [article](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/) has more detailed information on how modern authentication works.
 
     For windows PCs, the PC must either be domain joined, or enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] and compliant. You can set the following requirements:
@@ -200,9 +190,9 @@ The message is displayed on the device for Exchange Online users and tenants in 
 ![IntuneSA5eTargetedExemptedGroups](/Image/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
     > For users that are in the Targeted groups, the Intune polices will replace Exchange rules and policies.
-    > 
+    >
     > Exchange will only enforce Exchange allow, block and quarantine rules, and Exchange policies if:
-    > 
+    >
     > -   The user is not licensed for Intune.
     > -   The user is licensed for Intune, but the user does not belong to any security groups targeted in the conditional access policy.
 
@@ -243,7 +233,7 @@ The following flow is used by conditional access policies for Exchange on-premis
     |**User Notification**|In addition to the notification email sent from Exchange, Intune sends an email that you can configure which contains steps to unblock the device.<br /><br />You can edit the default message and use HTML tags to format how the text appears. **Note:** Because the Intune notification email containing remediation instructions is delivered to the user’s Exchange mailbox, in the event that the user’s device gets blocked before they receive the email message, they can use an unblocked device or other method to access Exchange and view the message.This is especially true when the **Default Rule** is set to block or quarantine.  In this case, the end-user will have to go to their app store, download the Microsoft Company Portal app and enroll their device. This is applicable to iOS, Windows, and Samsung Knox devices.  For  Android devices that are not Knox-based, the IT admin will need to send the quarantine email to an alternate email account, which then  the end-user has to copy to their blocked device to complete the enrollment and compliance process.|
     > [!NOTE]
     > In order for Exchange to be able to send the notification email, you must configure the account that will be used to send the notification email.
-    > 
+    >
     > For details, see [Configure Microsoft Intune on-premises connector for on-premises or hosted Exchange](../Topic/Mobile-device-management-with-Exchange-ActiveSync-and-Microsoft-Intune.md#bkmk_EX_OP).
 
 3.  When you are done, choose **Save**.
@@ -318,4 +308,3 @@ The following flow is used to decide which devices can access Exchange:
 
 ## See Also
 [Manage access to email and SharePoint with Microsoft Intune](../Topic/Manage-access-to-email-and-SharePoint-with-Microsoft-Intune.md)
-
