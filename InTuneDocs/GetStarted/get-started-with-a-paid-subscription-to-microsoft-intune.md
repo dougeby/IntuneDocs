@@ -11,19 +11,23 @@ author: Staciebarker
 ---
 
 # Get started with a paid subscription to Microsoft Intune
-Whether you start with a 30-day free trial, or start with a paid subscription, Microsoft Intune provides a quick and easy way for you to manage mobile devices and computers in your organization. This getting started topic leads you through the steps of setting up a cloud-only instance of [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)].
+Whether you start with a 30-day free trial, or start with a paid subscription, Microsoft Intune provides a quick and easy way for you to manage mobile devices and computers in your organization. This article leads you through the steps of setting up a cloud-only instance of [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] to manage mobile devices and Windows PCs in use by your organization. Total time to read through these steps is about 30 minutes, or you can jump to a specific step.
 
-Getting started with a paid subscription of Intune shares many of the same steps as starting with a [free 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune.md). However in this topic, you'll also cover some additional areas that most people might not need to address in trial deployments, including:
+>[!NOTE]
+>This article focuses on setting up Intune as a standalone service. Alternatively, if you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can also [extend Configuration Manager to manage mobile devices](https://technet.microsoft.com/library/jj884158.aspx) by connecting Intune with Configuration Manager in a hybrid deployment to manage mobile devices too.
+
+Getting started with a paid subscription of Intune shares many of the same steps as starting with a [free 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune.md). However, after your trial, and when you are ready to start managing your mobile devices, you will need to consider additional, recommended steps depending on your current network infrastructure and business requirements including:
 
 -   Synchronizing on-premises Active Directory accounts with Intune and Azure Active Directory
 
--   Domain and DNS service considerations
+-   Updating public domain and DNS service records with your domain registrar
 
 -   Customizing Intune features for production use
 
-This topic focuses on configuring Intune as a standalone service. If you're currently using Microsoft System Center Configuration Manager (ConfigMgr) to manage computers and servers, you can connect Intune with ConfgMgr in a hybrid deployment. This configuration offers several benefits and leverages your existing on-premises infrastructure. See [Manage Mobile Devices with Configuration Manager and Microsoft Intune](https://technet.microsoft.com/library/jj884158.aspx) for more information about hybrid Intune and ConfigMgr deployments.
+>[!TIP]
+>If you purchase at least 150 licenses for Microsoft Intune in an eligible plan, you can use the "FastTrack Center Benefit," a service where Microsoft specialists work with you to get your environment ready for Intune. See [Microsoft Intune Service Benefit Description](https://technet.microsoft.com/library/mt228265.aspx).
 
-NOTE: If you purchase at least 150 licenses for Microsoft Intune in an eligible plan, you can use the "FastTrack Center Benefit," a service where Microsoft specialists work with you to get your environment ready for Intune. See [Microsoft Intune Service Benefit Description](https://technet.microsoft.com/library/mt228265.aspx).
+<!-- this section is unnecessary due to expand/collapse functionality
 
 ## About this guide
 There are 9 steps in this guide, not including post-configuration tasks. Total time to read through these steps is about 30 minutes, or you can jump to a specific step.
@@ -39,6 +43,8 @@ There are 9 steps in this guide, not including post-configuration tasks. Total t
 
 [Post-configuration tasks](post-configuration-tasks.md)
 
+-->
+
 ## Before you begin
 Starting with a paid subscription means that you're ready to deploy Intune and make changes to your existing network infrastructure. This could range from simply adding or updating your internal and external DNS records to connecting your existing Active Directory accounts to Azure Active Directory. Whatever mix of Intune  mobile device management features you decide on, you'll need to  carefully plan how Intune will interact with your existing network components and services. Specifically, you should review:
 
@@ -49,26 +55,23 @@ Starting with a paid subscription means that you're ready to deploy Intune and m
 ## Have the following items handy
 Ready to get started? You'll need the following when starting your paid subscription to Intune:
 
--   **A device with a Silverlight-enabled web browser** that you can use to access the websites where you'll  create Intune user accounts (the Intune Account Portal) and where you'll manage devices, groups, and policies  (the Intune administration console).
+### A device with a Silverlight-enabled web browser
+You will need this to access the Intune administration console where you'll manage devices, apps, and policies. You will also need a web browser to access the company portal to see how most [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] users will enroll and manage their devices, find and install software, and request help from administrators. To make things easier, you can use the “privacy mode” setting on the same browser that you use for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] administration (for example: in Internet Explorer, you can click **Tools** &gt; **InPrivate Browsing**).
 
--   **A second device with a web browser**, which you can use to access the company portal to see how most [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] users will enroll and manage their devices, find and install software, and request help from administrators. Instead of using a second device with a web browser, you can use the “privacy mode” setting on the same browser that you use for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] administration (for example: in Internet Explorer, you can click **Tools** &gt; **InPrivate Browsing**).
+### Microsoft Online Services account
+If you have an existing Microsoft Online Services account, you'll need the **administrator credentials** for that account. If you don’t have such an account, or if you want to use this Intune tenant for evaluation purposes only, you don't need tenant administrator credentials.
 
--   If you have an existing Microsoft Online Services account, you'll need the **administrator credentials** for that account. If you don’t have such an account, or if you want to use this Intune tenant for evaluation purposes only, you don't need tenant administrator credentials.
+### Certificates for mobile devices
+If you'll manage iOS or Windows Phone devices with Intune, you'll need certificates (or keys) and accounts to retrieve those certificates. Android devices don't need any additional certificates.
 
--   **Certificates for mobile devices** If you'll manage iOS or Windows Phone devices with Intune, you'll need certificates (or keys) and accounts to retrieve those certificates. Android devices don't need any additional certificates.
-    - **Windows Phone 8.1 and [!INCLUDE[winphone8_client_1](../includes/winphone8_client_1_md.md)]**
-        - No certificate is required for Windows Phone 8.1 users who install the company portal app from the Store.
-        - A Symantec certificate is required for Windows Phone 8.0 or to use Intune to deploy the company portal app to Windows Phone 8.1 devices.
+- No certificate is required for **Windows Phone 8.1** users who install the company portal app from the Store. However, a Symantec certificate is required for **Windows Phone 8.0** or to use Intune to deploy the company portal app to Windows Phone 8.1 devices.
 
-    This guidance assumes your users get the company portal app from the Store on a Windows Phone 8.1 or later device. For information about Windows Phone 8.0 support, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
+>[!NOTE]
+>This getting started walkthrough assumes your users get the company portal app from the Store on a Windows Phone 8.1 or later device. For information about Windows Phone 8.0 support, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
-    - **Windows 10, [!INCLUDE[winblue_winrt_2](../includes/winblue_winrt_2_md.md)], [!INCLUDE[win8RT_client_1](../includes/win8RT_client_1_md.md)], or [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)] devices**
+- There are no certificate requirements for **Windows PCs** or **Windows RT devices** when [enrolling Windows PCs as devices](../enduser/enroll-your-device-in-intune-windows.md) or  [installing the Windows PC client for Microsoft Intune](./deployuse/install-the-windows-pc-client-with-microsoft-intune.html).
 
-        There are no certificate requirements for enrolling Windows RT and Windows devices. See [Install the Windows PC client with Microsoft Intune](/Intune/deployuse/install-the-windows-pc-client-with-microsoft-intune.html). <!--lindavr: changed link from install-the-windows-pc-client-with-microsoft-intune.md, which was generatign a 404, to the absolute-->
-
-    - **iOS or Mac OS X**
-
-        Request an Apple Push Notification service certificate from Apple, as described in [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
+- For **iOS** or **Mac OS X** devices you will need to request an Apple Push Notification service certificate from Apple, as described in [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 ## Next steps
 Ready to get started?
