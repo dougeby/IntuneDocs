@@ -52,11 +52,11 @@ The [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Managed Browser suppor
 
 The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
 
-## Create a software deployment for the managed browser app
+## Create a deployment for the managed browser app
 After you have created the managed browser policy, you can then create a software deployment for the managed browser app, and associate it with the managed browser policy you created.
 
 > [!IMPORTANT]
-> Managed browser policies are not deployed in the same way as other [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] polices. This type of policy must be associated with the managed browser software package.
+> Managed browser policies are not deployed in the same way as other Intune polices. This type of policy must be associated with the managed browser software package.
 
 Deploy the app, ensuring that you select the managed browser policy on the **Mobile App Management** page to associate the policy with the app.
 
@@ -72,7 +72,7 @@ For more information about how to deploy apps, see [Deploy apps to mobile device
 
 -   The managed browser can only block access to sites when they are accessed directly. It cannot block access when intermediate services (such as a translation service) are used to access the site.
 
--   To allow authentication, and to ensure that [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] documentation can be accessed,**&#42;.microsoft.com** is exempt from the allow or block list settings – it is always allowed.
+-   To allow authentication, and to ensure that the Intune documentation can be accessed,**&#42;.microsoft.com** is exempt from the allow or block list settings – it is always allowed.
 
 ### Turn off usage data
 Microsoft automatically collects anonymous data about the performance and use of the managed browser to improve Microsoft products and services, but users can turn off data collection by using the **Usage Data** setting on their device. You have no control over the collection of this data.
@@ -96,7 +96,7 @@ Use the following information to learn about the allowed formats and wildcards y
 
 -   Use the following table to learn about the permitted patterns you can use when you specify URLs:
 
-    |URL|Description|Matches|Does not match|
+|URL|Details|Matches|Does not match|
     |-------|---------------|-----------|------------------|
     |http://www.contoso.com|Matches a single page|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
     |http://contoso.com|Matches a single page|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
@@ -140,6 +140,5 @@ If multiple managed browser policies are deployed to a device and the settings c
 
 -   If a device has already received a managed browser policy and a second policy is deployed with conflicting settings, the original settings remain on the device. Use the **Policy Conflicts** node of the **Policy** workspace to view the conflicts.
 
-## See Also
-[Enable access to company resources with Microsoft Intune - deleted](enable-access-to-company-resources-with-microsoft-intune---deleted.md)
+
 

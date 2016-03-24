@@ -10,9 +10,9 @@ ms.assetid: 64ba8e58-fab1-4480-a440-164268810138
 author: robstackmsft
 ---
 # Keep Windows PCs up to date with software updates in Microsoft Intune
-[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] can help you to secure your managed computers in a number of ways, including the management of software updates that keep your computers up to date by ensuring the latest patches and software updates are quickly installed.
+Microsoft Intune can help you to secure your managed computers in a number of ways, including the management of software updates that keep your computers up to date by ensuring the latest patches and software updates are quickly installed.
 
-If you have not yet installed the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+If you have not yet installed the Intune client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 When new updates are available from Microsoft Update, or you have created a third-party update, and they are applicable to your managed computers, a notification is displayed on the **Overview** page of the **Updates** workspace. After you click this notification link, you can then perform various operations like viewing more information about the update, approving or declining the update, and viewing the computers that will install the update if it is approved.
 
@@ -32,9 +32,9 @@ Before you begin to create and approve software updates, configure and deploy po
 
 2.  Configure and deploy a **Microsoft Intune Agent Settings** policy for the update settings. You can use recommended settings or customize the settings. If you need more information about how to create and deploy policies, see the [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) topic.
 
-    The following table shows the values you can configure in the policy and also the recommended values that will be used if you don’t customize the policy. You can find these settings in the **Updates** section.
+The following table shows the values you can configure in the policy and also the recommended values that will be used if you don’t customize the policy. You can find these settings in the **Updates** section.
 
-    |Policy setting|More information|
+  |Policy setting|Details|
     |------------------|--------------------|
     |**Update and application detection frequency (hours)**|Specifies how frequently (from 8-22 hours) [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] checks for new updates and applications.<br /><br />Recommended value: **8** hours.|
     |**Automated or prompted installation of updates and applications**|Specifies whether updates are installed automatically or whether the user is prompted before installation. Additionally, this setting lets you schedule the installation of updates and applications.<br /><br />**Install updates and applications automatically as scheduled**  installs updates and applications using the specified schedule.<br /><br />As a dependent policy setting, **Use Automatic Maintenance for Windows computers**  specifies that updates and applications are installed during the Windows Automatic maintenance window.<br /><br />**Prompt user for installation** prompts the user to install updates when they are ready.<br /><br />Recommended values:<br /><br />**Install updates and applications automatically as scheduled** selected<br /><br />**Day scheduled: Every day**<br /><br />**Time scheduled: 3:00 AM**<br /><br />**Use Automatic Maintenance for Windows computers** selected|
@@ -55,7 +55,7 @@ Updating Microsoft software requires very little work from you. However, before 
 
 Use the following two procedures to help you get ready to use software updates:
 
-#### Configure the product categories and update classifications you want to make available to managed computers
+### Configure the product categories and update classifications you want to make available to managed computers
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Updates**.
 
@@ -68,7 +68,7 @@ Use the following two procedures to help you get ready to use software updates:
 
 4.  Click **Save** to store your selections.
 
-#### To configure automatic approval rules for software updates
+### To configure automatic approval rules for software updates
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Updates**.
 
@@ -96,8 +96,7 @@ Use the following two procedures to help you get ready to use software updates:
 The new rule is shown in the **Automatic Approval Rules** section of the **Service Settings: Updates** page.
 
 > [!NOTE]
-> When you create an automatic approval rule, it only approves future updates, and does not automatically approve previously existing updates that already exist in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. To approve these updates you need to run the automatic approval rule. For more information, see [To edit, run, or delete an automatically approved update rule](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_editrun) below.
-
+> When you create an automatic approval rule, it only approves future updates, and does not automatically approve previously existing updates that already exist in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. To approve these updates you need to run the automatic approval rule.
 ### <a name="BKMK_editrun"></a>To edit, run, or delete an automatically approved update rule
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Updates**.
@@ -160,19 +159,19 @@ You can deploy updates for software that is not made by Microsoft. You do this b
 
 10. On the **Return codes** page of the wizard, you can specify how return codes from the update installation are interpreted. By default, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] uses industry-standard return codes to report a failed or successful installation of an update package. The supplied return codes are:
 
-    |Return code|Interpretation|
-    |---------------|------------------|
-    |**0**|Success|
-    |**3010**|Success with restart|
-    Any return code that is not listed is considered a failure.
+|Return code|Interpretation|
+|---------------|------------------|
+|**0**|Success|
+|**3010**|Success with restart|
+    
+11. Any return code that is not listed is considered a failure.
+Some updates use nonstandard interpretations for return codes. In this case, you can specify your own return code interpretations.
 
-    Some updates use nonstandard interpretations for return codes. In this case, you can specify your own return code interpretations.
+12. Specify or edit the required return codes and then click **Next**.
 
-    Specify or edit the required return codes and then click **Next**.
+13. On the **Summary** page of the wizard, review the actions that will be taken, and then click **Upload** to complete the wizard.
 
-11. On the **Summary** page of the wizard, review the actions that will be taken, and then click **Upload** to complete the wizard.
-
-The uploaded update is stored in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Cloud Storage that you purchased. If you have insufficient free space to upload the update package, you are notified of this during the upload process. [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] cannot determine sufficient free space until after the update upload has started, because compressed setup and installation files require more space when they are uncompressed.
+The uploaded update is stored in your Intune cloud storage. If you have insufficient free space to upload the update package, you are notified of this during the upload process. [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] cannot determine sufficient free space until after the update upload has started, because compressed setup and installation files require more space when they are uncompressed.
 
 After it is uploaded into [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], a third-party update is displayed in the **Updates** workspace in the **All Updates** pane. You can then approve and deploy the update. For more information, see the [Approving and declining updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve1) section in this topic.
 
@@ -237,9 +236,7 @@ When you select an update from the list, further commands are available that let
 
 6.  You can check the details pane at the bottom of the **All Updates** page for reminder messages about the update.
 
-## Need more help?
-For further help and support, see [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md).
 
-## See Also
+### See Also
 [Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 

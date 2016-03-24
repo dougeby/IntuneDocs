@@ -16,11 +16,11 @@ If you have not yet installed the [!INCLUDE[wit_nextref](./includes/wit_nextref_
 
 Use the information in the following sections to help you configure, deploy and monitor Windows Firewall Policies on client computers.
 
-## <a name="BKMK_Firewall"></a>Using Microsoft Intune policies to manage the Windows Firewall
+## Use Intune policies to manage the Windows Firewall
 The Windows Firewall policy lets you create and deploy settings that control the Windows Firewall on managed computers. You cannot manage custom exceptions for Windows Firewall and these settings do not affect third-party firewalls.
 
 > [!NOTE]
-> If [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] policy and Group Policy are configured to manage the same setting on the computer, the Group Policy setting overrides the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] policy. For information about how to avoid conflicts between [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] policies and Group Policy, see [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
+> If Microsoft Intune policy and Group Policy are configured to manage the same setting on the computer, the Group Policy setting overrides the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] policy. For information about how to avoid conflicts between [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] policies and Group Policy, see [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 > 
 > If you want to deploy Windows Firewall settings to computers running Windows Vista, you must first install [Hotfix KB971800](http://support2.microsoft.com/kb/971800) on these computers.
 
@@ -30,7 +30,7 @@ The Windows Firewall policy lets you create and deploy settings that control the
 > -   Windows Firewall
 > -   IPsec Policy Agent
 
-#### To configure a Windows Firewall policy
+## To configure a Windows Firewall policy
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Policy** &gt; **Add Policy**.
 
@@ -40,17 +40,17 @@ The Windows Firewall policy lets you create and deploy settings that control the
 
 You can view the deployed Windows Firewall policy on the **All Policies** page of the **Policy** workspace.
 
-### Policy settings for Windows Firewall
+## Policy settings for Windows Firewall
 
-#### Turn on Windows Firewall
+### Turn on Windows Firewall
 
-|Policy setting|More information|
+|Policy setting|Details|
 |------------------|--------------------|
 |**Domain profile**|Enables the Windows Firewall on managed computers while they are connected to domain networks, for example while at the workplace.<br /><br />Recommended value: **Yes**|
 |**Private profile**|Enables the Windows Firewall on managed computers while they are connected to trusted networks, for example while on a home network.<br /><br />Recommended value: **Yes**|
 |**Public profile**|Enables the Windows Firewall on managed computers while they are connected to untrusted networks in public places, for example while at a coffee shop.<br /><br />Recommended value: **Yes**<br /><br />Required operating system: [!INCLUDE[firstref_vista](./includes/firstref_vista_md.md)] or later versions|
 
-#### Block all incoming connections, including those in the list of allowed programs
+### Block all incoming connections, including those in the list of allowed programs
 > [!IMPORTANT]
 > If your environment includes managed computers that are running Windows Vista with no service packs installed, you must either install the update associated with [article 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in the Microsoft Knowledge Base or else disable the **Block all incoming connections** policy settings in policies deployed to those computers.
 
@@ -58,9 +58,9 @@ You can view the deployed Windows Firewall policy on the **All Policies** page o
 |------------------|--------------------|
 |**Domain profile**|Blocks all incoming connections while the computers are connected to domain networks, such as at a workplace. This includes those connections in the list of exceptions.<br /><br />Recommended value: **No**|
 |**Private profile**|Blocks all incoming connections while the computers are connected to trusted networks, such as a home network. This includes those connections in the list of exceptions.<br /><br />Recommended value: **No**|
-|**Public profile**|Blocks all incoming connections while the computers are connected to untrusted networks at public places, such as at a coffee shop. This includes those connections in the list of exceptions.<br /><br />Recommended value: **No**<br /><br />Required operating system: [!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later versions|
+|**Public profile**|Blocks all incoming connections while the computers are connected to untrusted networks at public places, such as at a coffee shop. This includes those connections in the list of exceptions.<br /><br />Recommended value: **No**<br /><br />Required operating system: Windows Vista or later versions|
 
-#### Notify the user when Windows Firewall blocks a new program
+### Notify the user when Windows Firewall blocks a new program
 
 |Policy setting|More information|
 |------------------|--------------------|
@@ -68,23 +68,23 @@ You can view the deployed Windows Firewall policy on the **All Policies** page o
 |**Private profile**|Notifies users when Windows Firewall blocks a new program while the computers are connected to trusted networks, such as a home network.<br /><br />Recommended value: **Yes**|
 |**Public profile**|Notifies users when Windows Firewall blocks a new program while the computers are connected to untrusted networks at public places, such as a coffee shop.<br /><br />Recommended value: **Yes**<br /><br />Required operating system: [!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later versions|
 
-#### Predefined Exceptions
+### Predefined Exceptions
 
-|Policy setting|More information|
+|Policy setting|Details|
 |------------------|--------------------|
 |**BranchCache - Content Retrieval**|If enabled, lets BranchCache clients use HTTP to retrieve content from one another in the distributed mode and from the hosted cache in hosted cache mode. This setting uses HTTP.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[firstref_client_7](./includes/firstref_client_7_md.md)] or later).|
-|**BranchCache - Hosted Cache Client**|If enabled, lets BranchCache clients use a hosted cache. This setting uses HTTPS.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_client_7](./includes/nextref_client_7_md.md)] or later).|
+|**BranchCache - Hosted Cache Client**|If enabled, lets BranchCache clients use a hosted cache. This setting uses HTTPS.<br /><br />Recommended value: Not configured<br /><br />(Windows 7 or later).|
 |**BranchCache - Hosted Cache Server**|If enabled, lets BranchCache clients can use a hosted cache to communicate with other clients. This setting uses HTTPS.<br /><br />Recommend value: Not configured<br /><br />([!INCLUDE[nextref_client_7](./includes/nextref_client_7_md.md)] or later).|
 |**BranchCache - Peer Discovery**|If enabled, lets BranchCache clients use the WS Discovery protocol to look up content availability on the local subnet.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_client_7](./includes/nextref_client_7_md.md)] or later).|
 |**BITS Peercaching**|If enabled, lets clients use Background Intelligent Transfer Service (BITS) to find and share files that are stored in the BITS cache on clients in the same subnet. This setting uses WSDAPI and RPC.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
 |**Connect to a Network Projector**|If enabled, lets users connect to projectors over wired or wireless networks to project presentations. This setting uses WSDAPI.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
-|**Core Networking**|If enabled, lets clients use IPv4 and IPv6 to connect to network resources.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
+|**Core Networking**|If enabled, lets clients use IPv4 and IPv6 to connect to network resources.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
 |**Distributed Transaction Coordinator**|If enabled, allows managed computers to coordinate transactions that update transaction-protected resources, like databases, message queues, and file systems.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
 |**File and Printer Sharing**|If enabled, allows users to share local files and printers with other users on the network. This setting uses NetBIOS, LLMNR, SMB, and RPC.<br /><br />Recommended value: Not configured<br /><br />(Windows XP or later).|
 |**HomeGroup**|If enabled, allow managed computers to participate in a HomeGroup network.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_client_7](./includes/nextref_client_7_md.md)] or later).|
 |**iSCSI Service**|If enabled, allows managed computers to connect to iSCSI servers and devices.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
 |**Key Management Service**|If enabled, lets computers be counted for license compliance in enterprise environments.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
-|**Media Center Extenders**|If enabled, allows Media Center Extenders to communicate with computers that are running Windows Media Center. This setting uses SSDP and qWave.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
+|**Media Center Extenders**|If enabled, allows Media Center Extenders to communicate with computers that are running Windows Media Center. This setting uses SSDP and qWave.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
 |**Netlogon Service**|If enabled, configures a security channel between domain clients and a domain controller for authenticating users and services. This setting uses RPC.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
 |**Network Discovery**|If enabled, lets computers discover other devices and be discovered by other devices on the network. This setting uses Function Discovery Host and Publication Services and SSDP, NetBIOS, LLMNR, and UPnP network protocols.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
 |**Performance Logs and Alerts**|If enabled, allows the Performance Logs and Alerts service to be remotely managed. This setting uses RPC.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
@@ -105,11 +105,11 @@ You can view the deployed Windows Firewall policy on the **All Policies** page o
 |**Windows Media Player Network Sharing Service (Internet)**|If enabled, lets users share home media over the Internet.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_client_7](./includes/nextref_client_7_md.md)] or later).|
 |**Windows Meeting Space**|If enabled, lets users collaborate over a network to share documents, programs, or their desktop. This setting uses DFSR and P2P.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
 |**Windows Peer to Peer Collaboration Foundation**|If enabled, configures various peer-to-peer programs and technologies to allow them to connect. This setting uses SSDP and PNRP.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
-|**Windows Remote Management (Compatibility)**|If enabled, allows remote management of managed computers by using WS-Management, a Web services-based protocol for remote management of operating systems and devices.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
+|**Windows Remote Management (Compatibility)**|If enabled, allows remote management of managed computers by using WS-Management, a Web services-based protocol for remote management of operating systems and devices.<br /><br />Recommended value: Not configured<br /><br />Windows Vista or later).|
 |**Windows Remote Management**|If enabled, allows remote management of managed computers by using WS-Management, a Web services-based protocol for remote management of operating systems and devices.<br /><br />Recommended value: Not configured<br /><br />(Windows 8 or later)|
-|**Windows Virtual PC**|If enabled, lets virtual machines, communicate with other computers.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_client_7](./includes/nextref_client_7_md.md)] only)|
+|**Windows Virtual PC**|If enabled, lets virtual machines, communicate with other computers.<br /><br />Recommended value: Not configured<br /><br />(Windows 7 only)|
 |**Wireless Portable Devices**|If enabled, allows the transfer of media from a network-enabled camera or media device to managed computers by using the Media Transfer Protocol (MTP). This setting uses SSDP and UPnP network protocols.<br /><br />Recommended value: Not configured<br /><br />([!INCLUDE[nextref_vista](./includes/nextref_vista_md.md)] or later).|
 
-## See Also
+### See Also
 [Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
