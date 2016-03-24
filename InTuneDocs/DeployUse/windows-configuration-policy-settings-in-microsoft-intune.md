@@ -18,12 +18,12 @@ Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Windows genera
 |----------------|----------------------------------|--------------|
 |**Required password type**|Specifies the type of password that will be required, such as numeric only, or alphanumeric.|Yes|Yes|
 |**Required password type – Minimum number of character sets**|There are four character sets, lowercase letters, uppercase letters, numbers, and symbols. This setting specifies how many different character sets must be included in the password). However, for iOS devices, this specifies the number of symbol characters must be included in the password)|Yes|Yes|
-|**Minimum password length**<sup>1</sup>|-|Yes|Yes|
-|**Number of repeated sign-in failures to allow before the device is wiped**|Yes|Yes|
+|**Minimum password length**<sup>1</sup>|Configures the minimum required length (in characters) for the password on devices.|Yes|Yes|
+|**Number of repeated sign-in failures to allow before the device is wiped**|Wipes the device if the login fails this number of times.|Yes|Yes|
 |**Minutes of inactivity before screen turns off**|Choose the number of minutes a device must be idle before a password is required to unlock it.| Yes|Yes|
 |**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|Yes|
 |**Remember password history**|Specifies whether the user can configure previously used passwords.|Yes|Yes|
-|**Remember password history** – **Prevent reuse of previous passwords**|Yes|Yes|
+|**Remember password history** – **Prevent reuse of previous passwords**|Specifies the number of previously used passwords that are remembered by the device.|Yes|Yes|
 |**Allow picture password and PIN**|Allows the use of a picture password and PIN on the device. A picture password lets the user log in with gestures on a picture. A PIN lets the users quickly sign in with a 4 digit code.|Yes|Yes|
 <sup>1</sup> When you set deploy a password length policy to devices that run Windows RT, users will be forced to reset their password, even if their current password complies with the policy requirements.
 
@@ -31,7 +31,7 @@ Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Windows genera
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Require encryption on mobile device**<sup>1</sup><br /><br />For Windows Phone 8 devices, you must set this to **Yes**.|Yes|No|
+|**Require encryption on mobile device**<sup>1</sup>|Requires that files on the device are encrypted.<br>For Windows Phone 8 devices, you must set this to **Yes**.|Yes|No|
 <sup>1</sup> Additional information for devices that run Windows 8.1
 
 -   To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](http://support.microsoft.com/kb/3013816) on each device.
@@ -46,18 +46,18 @@ Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Windows genera
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Require network firewall**|-|Yes|No|
-|**Enable SmartScreen**|-|Yes|No|
+|**Require network firewall**|Require that the Windows Firewall is turned on.|Yes|No|
+|**Enable SmartScreen**|Require the use of Windows SmartScreen on devices.|Yes|No|
 
 ## System settings
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Require automatic updates**|Yes|No|
+|**Require automatic updates**|Turn on the automatic updates setting on devices.|Yes|No|
 |**Require automatic updates – Minimum classification of updates to install automatically**|Choose the classification of updates that will be installed automatically:<br /><br />-   **Important** – Installs all updates classified as important.<br />-   **Recommended** – Installs all updates classified as important or recommended.|Yes|No|
-|**User Account Control**|-|Yes|No|
-|**Allow diagnostic data submission**|Yes|No|
-<sup>1</sup> To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](http://support.microsoft.com/kb/3013816) on each device.
+|**User Account Control**|Require the use of User Account Control (UAC) on devices.|Yes|No|
+|**Allow diagnostic data submission**|Allow the device to submit diagnostic information to Microsoft.|Yes|No|
+
 
 ## Cloud settings – documents and data
 

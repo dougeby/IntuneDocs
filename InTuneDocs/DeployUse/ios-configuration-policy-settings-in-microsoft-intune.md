@@ -24,7 +24,7 @@ Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] **iOS general conf
 ## Settings for iOS devices
 If the setting you are looking for does not appear in this list, you might be able to create it using an iOS custom policy that lets you import settings you created using the [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). For more information, see [iOS custom policy settings in Microsoft Intune](../Topic/iOS-custom-policy-settings-in-Microsoft-Intune.md).
 
-### Security settings
+## Security settings
 
 |Setting name|Details|iOS|
 |----------------|-------|
@@ -33,7 +33,7 @@ If the setting you are looking for does not appear in this list, you might be ab
 |**Required password type – Minimum number of character sets**|There are four character sets, lowercase letters, uppercase letters, numbers, and symbols. This setting specifies how many different character sets must be included in the password). However, for iOS devices, this specifies the number of symbol characters must be included in the password)|Yes|
 |**Minimum password length**|Specifies the minimum number of characters in the password.|Yes|
 |**Allow simple passwords**|Allow simple passwords like ‘0000’ and ‘1234’.|Yes|
-|**Number of repeated sign-in failures to allow before the device is wiped**|Yes|
+|**Number of repeated sign-in failures to allow before the device is wiped**|Wipes the device if this number of login attempts fail.|Yes|
 |**Minutes of inactivity before screen turns off**<sup>1</sup>|Yes|
 |**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|
 |**Remember password history**|Yes|
@@ -42,21 +42,21 @@ If the setting you are looking for does not appear in this list, you might be ab
 |**Allow fingerprint unlock**|Allow using a fingerprint to unlock the device.|iOS 7.1 and later|
 <sup>1</sup> For iOS devices, when you configure the settings **Minutes of inactivity before screen turns off** and **Minutes of inactivity before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
 
-### System settings
+## System settings
 
 |Setting name|Details|iOS|
 |----------------|-------|
 |**Allow screenshot**|Allows the user to capture the contents of the screen as an image.|Yes|
-|**Allow control center in lock screen**|iOS 7.1 and later|
+|**Allow control center in lock screen**|Controls whether the control center app can be accessed when the device is locked.|iOS 7.1 and later|
 |**Allow notification view in lock screen**|-|iOS 7.1 and later|
-|**Allow today view in lock screen**|iOS 7.1 and later|
+|**Allow today view in lock screen**|Controls whether notifications can be viewed when the device is locked.|iOS 7.1 and later|
 |**Allow diagnostic data submission**|Yes|
 |**Allow untrusted TLS certificates**|Yes|
 |**Allow passbook while locked**|Yes|
 
-### Cloud settings – documents and data
+## Cloud settings – documents and data
 
-|Setting name|Device|iOS|
+|Setting name|Details|iOS|
 |----------------|-------|
 |**Allow backup to iCloud**|Allows the user to back up the device to iCloud.|Yes|
 |**Allow document sync to iCloud**|Yes|
@@ -65,16 +65,16 @@ If the setting you are looking for does not appear in this list, you might be ab
 
 ## Application settings - browser
 
-|Setting name|iOS|
+|Setting name|Details|iOS|
 |----------------|-------|
 |**Allow Safari**|Yes|
-|**Allow autofill**|Yes|
+|**Allow autofill**|User can change autocomplete settings in the browser.|Yes|
 |**Allow pop-up blocker**|Yes|
 |**Allow cookies**|Yes|
 |**Allow Java scripting**|Yes|
 |**Allow fraud warning**|Yes|
 
-### <a name="BKMK_apps"></a>Application settings - apps
+## Application settings - apps
 
 |Setting name|iOS|
 |----------------|-------|
@@ -86,20 +86,20 @@ If the setting you are looking for does not appear in this list, you might be ab
 |**Allow video conferencing**|Yes|
 |**Allow adult content in media store**|Yes|
 
-### Application settings - Games
+## Application settings - Games
 
 |Setting name|iOS|
 |----------------|-------|
 |**Allow adding Game Center friends**|Yes|
 |**Allow multiplayer gaming**|Yes|
 
-### <a name="BKMK_hard"></a>Device capabilities settings - hardware
+## Device capabilities settings - hardware
 
 |Setting name|iOS|
 |----------------|-------|
 |**Allow camera**|Yes|
 
-### Device capabilities settings - cellular
+## Device capabilities settings - cellular
 
 |Setting name|iOS|
 |----------------|-------|
@@ -107,7 +107,7 @@ If the setting you are looking for does not appear in this list, you might be ab
 |**Allow data roaming**|Yes|
 |**Allow global background fetch while roaming**|Yes|
 
-### Device capabilities settings - features
+## Device capabilities settings - features
 
 |Setting name|Details|iOS|
 |----------------|-------|
