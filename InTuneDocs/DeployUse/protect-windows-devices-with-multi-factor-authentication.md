@@ -11,10 +11,14 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 author: Nbigman
 ---
 # Protect Windows devices with multi-factor authentication
-[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] integrates multi-factor authentication (MFA) to allow you to better secure your corporate resources by requiring additional verification from users beyond their usernames and passwords (for example, using a phone call or text message). [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] supports the use of MFA during enrollment of Windows 8.1 or later, Windows Phone 8.1, or Windows 10 Desktop and Mobile devices (and the MFA requirement can be assigned on a per-user or per-group basis on the ADFS server). If your organization has on-premises IT infrastructure that includes an Active Directory domain with Active Directory Federation Services (ADFS) configured, you can configure MFA on your federation server and then enable MFA for enrollment in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. If you configure MFA on your federation server, but you don’t enable MFA for enrollment in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], users will need to use MFA each time that they access corporate resources.
+[!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] integrates multi-factor authentication (MFA) to help you secure your corporate resources by requiring more than usernames and passwords, for example, phone or text authentication. [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] supports the use of MFA during enrollment of Windows 8.1 or later, Windows Phone 8.1, or Windows 10 Desktop and Mobile devices.  
 
-> [!IMPORTANT]
-> The MFA feature will be enabled in Configuration Manager at the next Intune service update.
+If your organization has on-premises IT infrastructure that includes an Active Directory domain with Active Directory Federation Services (ADFS), you can configure MFA on your federation server and then enable MFA for Intune enrollment. If you configure MFA on your federation server but you don’t enable MFA for enrollment in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], users will need to use MFA each time that they access corporate resources.
+
+MFA can be required on a per-user or per-group basis on the ADFS server.
+
+<!--> [!IMPORTANT]
+> The MFA feature will be enabled in Configuration Manager at the next Intune service update.-->
 
 You can also use Azure Active Directory (AAD) MFA to require MFA each time that users access corporate resources, and this requirement can be enabled on a per-user basis. AAD MFA is a cloud service that does not require any on-premises IT infrastructure. To learn how to set up AAD MFA, see [Adding Multi-Factor Authentication to Azure Active Directory.](http://technet.microsoft.com/library/dn249466.aspx)
 
@@ -32,7 +36,7 @@ For information about how to enable MFA in ADFS, see [Manage Risk with Additiona
 
 #### To require enrollment MFA in the Intune Admin Console
 
-1.  In the Intune administration console, click **Admin** &gt; **Mobile Device Management** &gt; **Multi-factor authentication**.
+1.  In the Intune admin console, click **Admin** &gt; **Mobile Device Management** &gt; **Multi-factor authentication**.
 
 2.  Enable MFA in your Azure AD tenant or on-premises environment before you require MFA for Intune enrollment of Windows devices. If you do not, users will receive an error message when they try to enroll their Windows devices.
 
@@ -42,5 +46,4 @@ For information about how to enable MFA in ADFS, see [Manage Risk with Additiona
 3.  Click **Configure Multi-factor Authentication**, and then click **Enable Multi-factor Authentication**.
 
 ## See Also
-[Protect data and devices with Microsoft Intune](protect-data-and-devices-with-microsoft-intune.md)
-
+[Protect data and devices with Microsoft Intune](../Topic/Protect-data-and-devices-with-Microsoft-Intune.md)
