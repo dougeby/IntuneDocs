@@ -10,7 +10,7 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 author: Nbigman
 ---
 # Troubleshoot app deployment problems in Microsoft Intune
-This topic provides resources to help you solve app deployment problems with[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
+This topic helps you solve app deployment problems with[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
 
 ## <a name="BKMK_TypicalProblems"></a>Help for typical app deployment problems
 
@@ -32,15 +32,15 @@ This topic provides resources to help you solve app deployment problems with[!IN
 
 1.  Make sure you are checking the list of apps for a user or device to which the app was deployed.
 
-2.  Make sure that the device meets the necessary device requirements.
+2.  Make sure that the device meets the requirements for the app.
 
-#### If you receive an error while downloading an app
+#### If you get an error while downloading an app
 
-1.  Make sure there are not too many concurrent downloads per user. Each user can download one app at a time.
+1.  Make sure there isn't more than one concurrent downloads per user. Each user can download one app at a time.
 
 2.  Make sure there are not too many concurrent downloads per account. Wait a few minutes and then try again.
 
-3.  If you receive an iOS native message that you can't install, that the installation is canceled or that you need to retry, it might be due to momentary high traffic. Wait a few minutes and then try again.
+3.  If you receive an iOS native message that you can't install, that the installation is canceled or that you need to retry, it might be due to high traffic. Wait a few minutes and then try again.
 
 4.  If the iOS app download progress bar is complete but the app installation fails, something might be wrong with the app files that you provided.
 
@@ -83,4 +83,3 @@ The following table lists common errors that may occur during [!INCLUDE[wit_next
 ## See Also
 [Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md)
 [Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
-

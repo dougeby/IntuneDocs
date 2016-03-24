@@ -1,4 +1,4 @@
-title: What happens when you reset your device using the Company Portal?
+title: What happens if you reset your device using the Company Portal?
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.assetid:
 author: Staciebarker
 robots: noindex
 
-# What happens when you reset your device using the Company Portal?
+# What happens if you reset your device using the Company Portal?
 
 When you use the Company Portal to reset your iPhone or iPad, some apps and settings on your device may be deleted, including some of your personal data. What happens on each device depends on how you are using the device, as described in the following lists.
 

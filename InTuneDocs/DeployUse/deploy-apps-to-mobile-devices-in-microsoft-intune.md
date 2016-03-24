@@ -10,19 +10,13 @@ ms.assetid: 6da30550-9e8e-4333-b9b3-83928de3807a
 author: robstackmsft
 ---
 # Deploy apps to mobile devices in Microsoft Intune
-Now that you've [learned the basics](https://technet.microsoft.com/library/dn646955.aspx) about [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] app deployment, you'll now learn how to configure and deploy apps to devices enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. This generally involves three steps:
+Now that you've [learned the basics](../Topic/PlanDesign/plan-for-app-deployment-in-microsoft-intune.md) about Microsoft Intune app deployment, you'll now learn how to configure and deploy apps to devices enrolled with Intune. This generally involves three steps, configuration, deployment, and monitoring.
 
--   [Configure the app](#BKMK_Conf)
-
--   [Deploy the app](#BKMK_Depl)
-
--   [Monitor the app](#BKMK_Monitor)
-
-For information about how to deploy and manage apps you volume-purchased from an app store, see one of the following topics:
+If you are looking for information about how to deploy and manage apps you volume-purchased from an app store, see one of the following topics:
 * [Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune](Manage-iOS-apps-you-purchased-through-a-volume-purchase-program-with-Microsoft-Intune.md)
 * [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](Manage-apps-you-purchased-from-the-Windows-Store-for-Business-with-Microsoft-Intune.md)
 
-For information about how to update and retire apps, see [Update apps using Microsoft Intune](../Topic/Update-apps-using-Microsoft-Intune.md).
+For information about how to update apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
 
 > [!IMPORTANT]
 > The information in this topic helps you to deploy apps to [enrolled Windows PCs](https://technet.microsoft.com/library/mt346003.aspx) and other mobile devices. If you want to deploy apps to  [Windows PCs that you manage using the client software](https://technet.microsoft.com/library/dn646959.aspx), see [Deploy apps to Windows PCs in Microsoft Intune](../Topic/Deploy-apps-to-Windows-PCs-in-Microsoft-Intune.md).
@@ -30,7 +24,7 @@ For information about how to update and retire apps, see [Update apps using Micr
 ## <a name="BKMK_Conf"></a>Configure the app
 In this procedure, you'll use the Intune Software Publisher to configure the properties of the app and, where applicable, upload it to your cloud storage space.
 
-#### To configure an app
+### To configure an app
 
 1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Add Apps** to start the Intune software publisher.
 
@@ -43,27 +37,24 @@ In this procedure, you'll use the Intune Software Publisher to configure the pro
 
     -   **Software installer**, then specify:
 
-        |Setting|Details|
+|Setting|Details|
         |-----------|-----------|
         |**Select the software installer file type**|This indicates the type of software you want to deploy. For example, if you want to install an iOS app, choose **App Package for iOS (&#42;.ipa file)**.|
         |**Specify the location of the software setup files**|Enter the location of the installation files or click **Browse** to select the location from a list.|
-        |**Include additional files and subfolders from the same folder**|For the **Windows Installer** file type only<br /><br />Some software that uses Windows Installer requires supporting files which are typically found in the same folder as the installation files. Select this option if you also want to deploy these files.|
-        This installation type uses some of your cloud storage space.
+        |**Include additional files and subfolders from the same folder**|For the **Windows Installer** file type only<br /><br />Some software that uses Windows Installer requires supporting files which are typically found in the same folder as the installation files. Select this option if you also want to deploy these files.<br>This installation type uses some of your cloud storage space.
 
-    -   **External link**, then specify:
+  -   **External link**, then specify:
 
-        |Setting|Details|
+|Setting|Details|
         |-----------|-----------|
         |**Specify the URL**|Specify the URL to one of the following:<br><br>The app store URL of the app you want to deploy. For example, if you want to deploy the Microsoft Remote Desktop app for Android, specify **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**. To find the URL of the app, use a search engine to find the store page containing the app. For example, to find the Remote Desktop app, you could search **Microsoft Remote Desktop Android**.<br><br>A web site. Intune will deploy a shortcut icon to the site to the device (known as a web clip).<br><br>An app on the web. Intune will deploy a shortcut icon to the app on the device.
-        |**Require a managed browser to open this link (Android and iOS only)**|When you deploy a link to a website or web app to users, they will only be able to open it in the Intune managed browser which must be installed on their device.<br><br>For more details about the managed browser, see [Manage Internet access using managed browser policies with Microsoft Intune](Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md).
-        This installation type does not use any of your cloud storage space.
+        |**Require a managed browser to open this link (Android and iOS only)**|When you deploy a link to a website or web app to users, they will only be able to open it in the Intune managed browser which must be installed on their device.<br><br>For more details about the managed browser, see [Manage Internet access using managed browser policies with Microsoft Intune](Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md).<br>This installation type does not use any of your cloud storage space.
 
-    -   **Managed iOS app from the app store**, then specify:
+  -   **Managed iOS app from the app store**, then specify:
 
-        |Setting|Details|
-        |-----------|-----------|
-        |**Specify the URL**|Enter the app store URL of the app you want to deploy. For example, if you want to deploy the Microsoft Work Folders app for iOS, specify **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.|
-        This installation type does not use any of your cloud storage space.
+|Setting|Details|
+ |-----------|-----------|
+ |**Specify the URL**|Enter the app store URL of the app you want to deploy. For example, if you want to deploy the Microsoft Work Folders app for iOS, specify **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>This installation type does not use any of your cloud storage space.
 
 3.  On the **Software description** page, configure the following:
 
@@ -152,6 +143,6 @@ On the **Software Properties** page for the app, click one of these tabs:
 
 As before, you can use the **Filters** drop-down list to configure the values shown on each of the tabs.
 
-## See Also
+### See Also
 [Deploy and configure apps with Microsoft Intune](../Topic/Deploy-and-configure-apps-with-Microsoft-Intune.md)
 

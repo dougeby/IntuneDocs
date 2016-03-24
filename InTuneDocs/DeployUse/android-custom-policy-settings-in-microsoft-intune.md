@@ -10,9 +10,9 @@ ms.assetid: 15904440-5a05-47c9-818e-48073b4090e7
 author: robstackmsft
 ---
 # Android custom policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Android custom configuration policy** to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
+Use the Microsoft Intune **Android custom configuration policy** to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
 
-This capability is intended to allow you to deploy Android settings that are not configurable with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policies. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 > [!NOTE]
 > Currently, Android custom policies only support configuring Wi-Fi settings for Android devices that include a pre-shared key. See [Example: Configure a custom Wi-Fi profile with a pre-shared key](android-custom-policy-settings-in-microsoft-intune.md#BKMK_Example) to learn how to do this.
@@ -21,10 +21,10 @@ This capability is intended to allow you to deploy Android settings that are not
 
 |Setting name|Details|
     |----------------|--------------------|
-    |**Name**|Enter a unique name for the Android custom policy to help you identify it in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.|
+    |**Name**|Enter a unique name for the Android custom policy to help you identify it in the Intune console.|
     |**Description**|Provide a description that gives an overview of the Android custom policy and other relevant information that helps you to locate it.|
 
-##OMA-URI settings
+## OMA-URI settings
 
    |Setting name|Details|
     |--------|--------------------|
@@ -35,7 +35,7 @@ This capability is intended to allow you to deploy Android settings that are not
     |**Value**|Specify the value to associate with the OMA-URI you specified previously.|
 
 ## Example: Configure a custom Wi-Fi profile with a pre-shared key
-Although [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] supports Wi-Fi profiles for Android devices, this feature does not currently support the inclusion of a pre-shared key in the configuration. In this example, you’ll learn how to create an Android custom policy that creates a Wi-Fi profile with a pre-shared key on the Android device.
+Although Intune supports Wi-Fi profiles for Android devices, this feature does not currently support the inclusion of a pre-shared key in the configuration. In this example, you’ll learn how to create an Android custom policy that creates a Wi-Fi profile with a pre-shared key on the Android device.
 
 #### To create a Wi-Fi profile with a pre-shared key
 
@@ -89,5 +89,5 @@ Although [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] supports Wi-Fi pr
 4.  When you are done, save the policy and deploy it to the required Android devices. The new Wi-Fi profile will appear in the list of connections on the device.
 
 ### See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
+[Manage settings and features on your devices with Microsoft Intune Policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
