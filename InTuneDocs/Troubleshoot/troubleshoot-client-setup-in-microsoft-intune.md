@@ -15,13 +15,12 @@ Use the following sections to help you troubleshoot common client setup problems
 
 ### What to do if client installation fails
 
--   If no client software deployment alerts for the computer are displayed in the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)], check the computer’s Internet connectivity and proxy configuration and make sure that the computer can communicate with the service URL, [https://manage.microsoft.com](https://manage.microsoft.com). Then retry the client software installation.
+-   If no client software deployment alerts for the computer are displayed in the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)] check the computer’s Internet connectivity and proxy configuration and make sure that the computer can communicate with the service URL, [https://manage.microsoft.com](https://manage.microsoft.com). Then retry the client software installation.
 
 -   You can have an email sent to selected recipients when a client software deployment failure alert occurs by configuring a notification rule in the **Admin** workspace. For more information, see [Get notified by Microsoft Intune alerts](get-notified-by-microsoft-intune-alerts.md).
 
 -   [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] displays the critical alert **Client Software Deployment Failure** if the client software fails to deploy. This will display in the **System Overview** page and **Alerts** pages of the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)]. Check for alerts by using the following procedure:
 
-##### To check alerts for failed installations
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Alerts** &gt; **Overview**.
 
@@ -65,7 +64,7 @@ For non-MDM Windows devices, policy errors in the policyplatform.log file may be
 
 2.  Go to the folder *%programfiles%\Microsoft\OnlineManagement\Common*
 
-3.  Run the following command - **ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune**
+3.  Run the following command ``ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune``
 
 ### Client installation error codes
 The following table describes error codes that are displayed in **Alerts** if client software installation fails. It includes suggestions for resolving the problem that is represented by each error code.
@@ -92,4 +91,3 @@ The following table describes error codes that are displayed in **Alerts** if cl
 |**0x8004300f**|The software cannot be installed because the System Center Configuration Manager client is already installed.|Remove the Configuration Manager client and then retry the client software installation.|
 |**0x80043010**|The software cannot be installed because the Open Mobile Alliance Device Management (OMADM) client is already installed.|Un-enroll the OMADM client and then retry the client software installation.|
 If installation problems persist, contact [Support](http://go.microsoft.com/fwlink/?LinkID=246606). Have the client computer enrollment log (located in %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log and %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) and Windows Update log (%*windir*%\windowsupdate.log) available to show to support engineers.
-
