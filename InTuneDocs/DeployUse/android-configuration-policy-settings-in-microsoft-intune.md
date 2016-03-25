@@ -10,7 +10,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 author: robstackmsft
 ---
 # Android configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Android general configuration policy** to configure settings for:
+Use the Microsoft Intune **Android general configuration policy** to configure settings for:
 
 -   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
@@ -71,14 +71,14 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow web browser**|Specifies whether the device web browser can be used.|No|Yes|
 |**Allow autofill**|Allow the Autofill function of the web browser to be used.|No|Yes|
 |**Allow pop-up blocker**|Allows the use of the pop-up blocker in the web browser.|No|Yes|
-|**Allow cookies**|No|Yes|
-|**Allow active scripting**|No|Yes|
+|**Allow cookies**|Allow the device web browser to use cookies.|No|Yes|
+|**Allow active scripting**|Allow the device web browser to use active scripting.|No|Yes|
 
 ## Application settings - apps
 
 |Setting name|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Allow Google Play store**|No|Yes|
+|**Allow Google Play store**|Allow the user to access the Google Play store on the device.|No|Yes|
 
 ## Device capabilities settings - hardware
 
@@ -97,16 +97,16 @@ If the setting you are looking for does not appear in this topic, you might be a
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Allow voice roaming**|-|No|Yes|
+|**Allow voice roaming**|Allow voice roaming when the device is on a cellular network.|No|Yes|
 |**Allow data roaming**|Allow data roaming when the device is on a cellular network.|No|Yes|
-|**Allow SMS/MMS messaging**|-|No|Yes|
+|**Allow SMS/MMS messaging**|Allow the use of SMS and MMS messaging on the device.|No|Yes|
 
 ## Device capabilities settings - features
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Allow voice assistant**|Allows the use of voice assistant software on the device.|No|Yes|
-|**Allow voice dialing**|No|Yes|
+|**Allow voice dialing**|Enables or disables the voice dialing feature on the device.|No|Yes|
 |**Allow copy and paste**|Allow copy and paste functions on the device.|No|Yes|
 |**Allow clipboard share between applications**|Use the clipboard to copy and paste between apps.|No|Yes|
 |**Allow YouTube**|Allow the use of YouTube on the device.|No|Yes|
@@ -146,7 +146,7 @@ Use the **Noncompliant Apps Report** to view the compliance of allowed and block
 
 2.  Select the device groups that you would like to check, whether you want to check for compliant apps, noncompliant apps, or both, then click **View Report**.
 
-### <a name="BKMK_URL"></a>How to specify URLs to app stores
+### How to specify URLs to app stores
 To specify an app URL in the compliant and noncompliant apps list, or in the **Select a managed app that will be allowed to run when the device is in kiosk mode** option (iOS only), use the following format:
 
 In the [Apps section of Google Play](https://play.google.com/store/apps), search for the app you want to use.

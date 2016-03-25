@@ -62,7 +62,7 @@ Use the following two procedures to help you get ready to use software updates:
 2.  On the **Service Settings: Updates** page, in the **Product Category** list, select the update categories that you want to make available to computers. Note that the most common updates are selected by default.
 
     > [!IMPORTANT]
-    > To ensure that computers receive the updates that have been approved by the admin, the Windows Server Update Services (WSUS) Group Policy setting, **Specify Intranet Microsoft update service location** must not be applied to computers that have been enrolled with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
+    > To ensure that computers receive the updates that have been approved by the admin, the Windows Server Update Services (WSUS) Group Policy setting, **Specify Intranet Microsoft update service location** must not be applied to computers that have been enrolled with Intune.
 
 3.  In the **Update Classification** list, select the classes of update that you want to make available to managed computers. Again, the most common options are selected by default.
 
@@ -96,8 +96,8 @@ Use the following two procedures to help you get ready to use software updates:
 The new rule is shown in the **Automatic Approval Rules** section of the **Service Settings: Updates** page.
 
 > [!NOTE]
-> When you create an automatic approval rule, it only approves future updates, and does not automatically approve previously existing updates that already exist in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. To approve these updates you need to run the automatic approval rule.
-### <a name="BKMK_editrun"></a>To edit, run, or delete an automatically approved update rule
+> When you create an automatic approval rule, it only approves future updates, and does not automatically approve previously existing updates that already exist in Intune. To approve these updates you need to run the automatic approval rule.
+### To edit, run, or delete an automatically approved update rule
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Updates**.
 
@@ -115,7 +115,7 @@ The new rule is shown in the **Automatic Approval Rules** section of the **Servi
 ## Updating software not made by Microsoft
 You can deploy updates for software that is not made by Microsoft. You do this by using the **Upload Update** wizard to get the update into your Cloud Storage space, after which you can approve or decline the update just like with Microsoft software.
 
-### <a name="procstartwiz"></a>To upload and configure a third-party update
+### To upload and configure a third-party update
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Updates** &gt; **Overview** &gt; **Upload**.
 
@@ -123,11 +123,11 @@ You can deploy updates for software that is not made by Microsoft. You do this b
 
     The total size of the selected files to upload is displayed. Note that this size does not include the uncompressed or expanded sizes of installation files.
 
-3.  After you specify the setup files, the **Update description** page displays the name, description, and classification for software information that [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] extracted from the software setup files. You can select a classification to label the type of update you are deploying (Updates, Critical Updates, Security Updates, Update Rollups or Service Packs). Click **Next** when you are done.
+3.  After you specify the setup files, the **Update description** page displays the name, description, and classification for software information that Intune extracted from the software setup files. You can select a classification to label the type of update you are deploying (Updates, Critical Updates, Security Updates, Update Rollups or Service Packs). Click **Next** when you are done.
 
 4.  On the **Requirements** page of the wizard, choose the architecture (32-bit, 64-bit, or both), and the operating systems of the managed computers to which this update will be applicable.
 
-5.  On the **Detection rules** page, specify how [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] determines whether the update already exists on managed computers. If you use the default option, **Use the default detection rules**, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] always installs the update package on each targeted computer once.
+5.  On the **Detection rules** page, specify how Intune determines whether the update already exists on managed computers. If you use the default option, **Use the default detection rules**, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] always installs the update package on each targeted computer once.
 
     > [!NOTE]
     > If the update setup file that you specified is a Windows Installer or .msp file, the **Detection rules** page of the wizard does not appear. This is because Windows Installer and .msp files contain their own instructions for detecting previous update installations.
@@ -155,11 +155,11 @@ You can deploy updates for software that is not made by Microsoft. You do this b
 9. On the **Command line arguments** page of the wizard, you can add any required installation properties to the installation command line to modify the behavior of the setup file. For example, some software supports the **/q** property to enable silent installation. Refer to the documentation for your software package to learn about any supported command line arguments. Specify any command line arguments you need and then click **Next**.
 
     > [!NOTE]
-    > If the update does not support silent installation, you cannot install the update by using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+    > If the update does not support silent installation, you cannot install the update using Intune
 
-10. On the **Return codes** page of the wizard, you can specify how return codes from the update installation are interpreted. By default, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] uses industry-standard return codes to report a failed or successful installation of an update package. The supplied return codes are:
+10. On the **Return codes** page of the wizard, you can specify how return codes from the update installation are interpreted. By default, Intune uses industry-standard return codes to report a failed or successful installation of an update package. The supplied return codes are:
 
-|Return code|Interpretation|
+|Return code|Details|
 |---------------|------------------|
 |**0**|Success|
 |**3010**|Success with restart|
@@ -171,23 +171,23 @@ Some updates use nonstandard interpretations for return codes. In this case, you
 
 13. On the **Summary** page of the wizard, review the actions that will be taken, and then click **Upload** to complete the wizard.
 
-The uploaded update is stored in your Intune cloud storage. If you have insufficient free space to upload the update package, you are notified of this during the upload process. [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] cannot determine sufficient free space until after the update upload has started, because compressed setup and installation files require more space when they are uncompressed.
+The uploaded update is stored in your Intune cloud storage. If you have insufficient free space to upload the update package, you are notified of this during the upload process. Intune cannot determine sufficient free space until after the update upload has started, because compressed setup and installation files require more space when they are uncompressed.
 
 After it is uploaded into [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], a third-party update is displayed in the **Updates** workspace in the **All Updates** pane. You can then approve and deploy the update. For more information, see the [Approving and declining updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve1) section in this topic.
 
-## <a name="BKMK_Approve1"></a>Approving and declining updates
+## Approving and declining updates
 When updates are ready to install, a message is shown on the **Updates Overview** page of the **Updates** workspace, under **Update Status**. Click this message to open the **All Updates** page to see which updates are ready for approval.
 
 You can use the **Filters** list to make it easier to find updates. For example, you can display only updates that failed, or updates that are superseded.
 
 When you select an update from the list, further commands are available that let you manage updates as shown in the following table:
 
-|Task|More information|
+|Task|Details|
 |--------|--------------------|
 |**View Properties**|Displays detailed information about the update including the number of computers to which it is applicable.|
 |**Edit**|For non-Microsoft updates only. Allows you to edit the properties of the update.|
 |**Approve**|Approves the selected update and allows you to configure which groups is will be deployed to. For more information, see the procedure [To approve updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve) in this topic.|
-|**Decline**|Removes any previous approvals for the update and hides the update from the default views. Additionally, any report data for the update will be removed.<br /><br />If you later want to locate a declined update, set the filter on the **All Updates** page to **Declined**. You can then approve this update as required.<br /><br />If an update was declined because the update was expired in Microsoft Update, that update cannot be approved in the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)].<br /><br />If you delete an updates policy that is deployed to computers, the values of those updates policy settings are reset to the default state for the operating system that is installed on the computers.|
+|**Decline**|Removes any previous approvals for the update and hides the update from the default views. Additionally, any report data for the update will be removed.<br /><br />If you later want to locate a declined update, set the filter on the **All Updates** page to **Declined**. You can then approve this update as required.<br /><br />If an update was declined because the update was expired in Microsoft Update, that update cannot be approved in the Intune administration console.<br /><br />If you delete an updates policy that is deployed to computers, the values of those updates policy settings are reset to the default state for the operating system that is installed on the computers.|
 |**Delete**|For non-Microsoft updates only. Deletes the selected update.|
 |**Upload**|Starts the **Upload Update** wizard that allows you to upload non-Microsoft updates that you want to deploy.|
 
@@ -217,7 +217,7 @@ When you select an update from the list, further commands are available that let
         -   **Uninstall** - Removes updates from computers in the targeted group.
 
             > [!IMPORTANT]
-            > The update is removed even if it was not installed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+            > The update is removed even if it was not installed by Intune.
 
     -   On the **Deadline** list, select one of the following:
 
