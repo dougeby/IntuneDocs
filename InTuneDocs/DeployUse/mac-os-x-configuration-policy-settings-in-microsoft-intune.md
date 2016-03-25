@@ -10,16 +10,15 @@ ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 author: robstackmsft
 ---
 # Mac OS X configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] **Mac OS X general configuration policy** to configure settings for:
+Use the Microsoft Intune **Mac OS X general configuration policy** to configure settings for:
 
 -   **Device security settings** - Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
 -   **Compliant and noncompliant apps** - Specify a list of apps that are compliant, or not compliant in your company. The Noncompliant Apps Report can be used to view the compliance of apps you specified in the list against the apps that users have installed (but cannot actually block the installation of the app).
 
-## Settings for Mac OS X devices
 If the setting you are looking for does not appear in this list, you might be able to create it using a Mac OS X custom policy that lets you import settings you created using the Apple Configurator Tool. For more information, see [Mac OS X custom policy settings in Microsoft Intune](../Topic/Mac-OS-X-custom-policy-settings-in-Microsoft-Intune.md).
 
-### Password settings
+## Password settings
 
 |Setting name|Details|
 |----------------|---------------|
@@ -39,7 +38,7 @@ In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed
 > [!NOTE]
 > A single policy can only contain a list of compliant, or a list of noncompliant apps. You cannot specify both in the same policy.
 > 
-> [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] lets you report devices with noncompliant apps. It does not block installation, or remove noncompliant apps.
+> Intune lets you report devices with noncompliant apps. It does not block installation, or remove noncompliant apps.
 
 |Setting name|Details|
 |----------------|---------------|
@@ -50,15 +49,15 @@ In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed
 |**Edit**|Let’s you edit the name, publisher and app bundle ID of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
 > [!TIP]
-> For more information about [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] reports, see [Understand Microsoft Intune operations by using reports](../Topic/Understand-Microsoft-Intune-operations-by-using-reports.md).
+> For more information about Intune reports, see [Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
-> When a Mac OS X device is in Sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console might temporarily display the status **Policy settings in error** until the next time the device wakes from Sleep mode.
+> When a Mac OS X device is in Sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the Intune console might temporarily display the status **Policy settings in error** until the next time the device wakes from Sleep mode.
 
 ## Monitor compliant and noncompliant apps
 Use the **Noncompliant Apps Reports** to view the compliance of apps you specified.
 
-#### To run the report
+### To run the report
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Reports** &gt; **Noncompliant Apps Reports**.
 

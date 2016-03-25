@@ -60,7 +60,7 @@ These rules apply to purchasing additional cloud-based storage for Intune:
 
 #### Requirements for cloud storage space
 
--   All files associated with an app must be in the same location and be accessible by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+-   All files associated with an app must be in the same location and be accessible by Intune.
 
 -   The maximum file size for any file you upload is 2GB.
 
@@ -74,7 +74,7 @@ When you deploy apps, you can choose from one of the following deployment action
     > [!TIP]
     > For iOS devices that are not in supervised mode, and for all Android devices, the user must accept the app offer before it is installed.
     > 
-    > You can no longer create new app deployments to iOS devices running an operating system earlier than iOS 7.1. Any existing app deployments to devices running an earlier operating system than iOS 7.1 will continue to work and be managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+    > You can no longer create new app deployments to iOS devices running an operating system earlier than iOS 7.1. Any existing app deployments to devices running an earlier operating system than iOS 7.1 will continue to work and be managed by Intune.
 
 -   **Available install** – The app is displayed in the company portal, and end-users can install it on-demand.
 

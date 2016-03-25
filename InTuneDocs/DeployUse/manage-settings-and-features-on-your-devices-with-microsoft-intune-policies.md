@@ -101,7 +101,7 @@ When you select a deployed policy, you can view further information about the de
 
 2.  Select one of the actions in the following table:
 
-    |Action|Details|
+|Action|Details|
     |----------|--------------------|
     |**Edit**|Opens the properties for the selected policy to allow you to make changes.|
     |**Delete**|Deletes the selected policy.<br /><br />When you delete a policy, it is removed from all groups to which it was deployed.<br /><br />[What happens when a policy is deleted, or no longer applicable](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md#BKMK_What)|
@@ -109,7 +109,7 @@ When you select a deployed policy, you can view further information about the de
 
 ## Tasks for Intune policies
 
-### <a name="BKMK_Refresh"></a>To refresh the policies on a device to ensure they are current (applies to computers only)
+### <a name="BKMK_Refresh"></a>To refresh the policies on a device to ensure they are current (applies to Windows PCs running the Intune client software only)
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups**, and then select a device group.
 
