@@ -10,23 +10,17 @@ ms.assetid: 4105b676-11f1-4cd2-88a4-b37d186cdbdb
 author: robstackmsft
 ---
 # Deploy apps to Windows PCs in Microsoft Intune
-Now that you've [learned the basics](https://technet.microsoft.com/library/dn646955.aspx) about [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] app deployment, in this topic, you'll learn how to actually configure and deploy apps to Windows PCs you manage. This generally involves three steps:
-
--   [Configure the app](#BKMK_Conf)
-
--   [Deploy the app](#BKMK_Depl)
-
--   [Monitor the app](#BKMK_Monitor)
+Now that you've [learned the basics](https://technet.microsoft.com/library/dn646955.aspx) about Microsoft Intune app deployment, in this topic, you'll learn how to actually configure and deploy apps to Windows PCs you manage. 
 
 For information about how to update and retire apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
 
 > [!IMPORTANT]
-> The information in this topic helps you to deploy apps to [Windows PCs that you manage using the client software](https://technet.microsoft.com/library/dn646959.aspx). If you want to deploy apps to [enrolled Windows PCs](https://technet.microsoft.com/library/mt346003.aspx) and other mobile devices, see [Deploy apps to mobile devices in Microsoft Intune - deleted](deploy-apps-to-mobile-devices-in-microsoft-intune---deleted.md).
+> The information in this topic helps you to deploy apps to [Windows PCs that you manage using the client software](https://technet.microsoft.com/library/dn646959.aspx). If you want to deploy apps to [enrolled Windows PCs](https://technet.microsoft.com/library/mt346003.aspx) and other mobile devices, see [Deploy apps to mobile devices in Microsoft Intune - deleted](deploy-apps-to-mobile-devices-in-microsoft-intune.md).
 
-## <a name="BKMK_Conf"></a>Configure the app
+## Configure the app
 In this procedure, you'll use the Intune Software Publisher to configure the properties of the app and upload it to your cloud storage space.
 
-#### To configure an app
+### To configure an app
 
 1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Add Apps** to start the Intune software publisher.
 
@@ -37,7 +31,7 @@ In this procedure, you'll use the Intune Software Publisher to configure the pro
 
     **Select how this software is made available to devices** - Choose **Software installer**, then specify:
 
-    |Setting|Details|
+|Setting|Details|
     |-----------|-----------|
     |**Select the software installer file type**|This indicates the type of software you want to deploy. For a Windows PC, choose **Windows Installer**.|
     |**Specify the location of the software setup files**|Enter the location of the installation files or click **Browse** to select the location from a list.|
@@ -48,7 +42,7 @@ In this procedure, you'll use the Intune Software Publisher to configure the pro
 
     Depending on the installer file you are using, some of these values might have been automatically entered, or might not appear.
 
-    |Setting|Details|
+|Setting|Details|
     |-----------|-----------|
     |**Publisher**|Enter the name of the publisher of the app.|
     |**Name**|Enter the name of the app as it will be displayed in the company portal.<br /><br />Make sure all app names you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.|
@@ -68,7 +62,7 @@ In this procedure, you'll use the Intune Software Publisher to configure the pro
 
 7.  For the **Windows Installer** file type only (exe only): On the **Return codes** page, you can add new error codes that are interpreted by Intune when the app installs on a managed Windows PC.
 
-    By default, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] uses industry-standard return codes to report the failure or success of an app package installation: **0** - Success or **3010** - Success with restart. You can also add your own return codes to this list. If you specify a list of return codes and the app installation returns a code that isn't on the list, it is interpreted as a failure.
+    By default, Intune uses industry-standard return codes to report the failure or success of an app package installation: **0** - Success or **3010** - Success with restart. You can also add your own return codes to this list. If you specify a list of return codes and the app installation returns a code that isn't on the list, it is interpreted as a failure.
 
 8.  On the **Summary** page, review the information you specified. Once you are ready, click **Upload**.
 
@@ -76,10 +70,10 @@ In this procedure, you'll use the Intune Software Publisher to configure the pro
 
 The app is displayed on the **Apps** node of the **Apps** workspace.
 
-## <a name="BKMK_Depl"></a>Deploy the app
+## Deploy the app
 In this procedure, you'll deploy the app to selected devices or users.
 
-#### To deploy the app
+### To deploy the app
 
 1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Apps** to view the list of apps you manage.
 
@@ -89,12 +83,12 @@ In this procedure, you'll deploy the app to selected devices or users.
 
 4.  On the **Deployment Action** page, configure the following:
 
-    |Setting|Details|
+|Setting|Details|
     |-----------|-----------|
     |**Approval**|Choose whether the deployment is **Required** (mandatory install), **Available** (users install from the company portal on demand), **Not Applicable** (the app is not installed or shown in the company portal), or **Uninstall** (the app will be uninstalled from targeted devices).|
     |**Deadline**|For required installations, choose how soon the app will be deployed. You can choose from the predefined values, or select **Custom** to configure your own deadline.|
 
-## <a name="BKMK_Monitor"></a>Monitor the app
+## Monitor the app
 You can see the apps you manage, and their deployment status in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.
 
 ### To view the apps you manage and their status
@@ -109,13 +103,13 @@ The list of apps you manage will be displayed. You can click on any app to see a
 
 Additionally, the **Dashboard** workspace shows an overview of the status of your apps. If you click anywhere in the overview, you'll be taken to the list of apps.
 
-### To view more detailed information about an app
+## To view more detailed information about an app
 In the list of apps, select any app, and then click **View Properties**.
 
 On the **Software Properties** page for the app, click one of these tabs: **General** - Shows general information about the app and it's installation status, **Devices** - Shows the devices that successfully installed a targeted deployment of the app, **Users** - Shows the users who's devices successfully installed a targeted deployment of the app.
 
 As before, you can use the **Filters** drop-down list to configure the values shown on each of the tabs.
 
-## See Also
+### See Also
 [Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
 

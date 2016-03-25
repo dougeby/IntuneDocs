@@ -15,7 +15,7 @@ author: Nbigman
 Additionally, you can filter groups to allow your IT admins permissions to only perform operations on the groups you specify. For more information, see [Use filtered group views to help secure and manage users and devices](use-groups-to-manage-users-and-devices-with-microsoft-intune.md#BKMK_Filter) in this topic.-->
 <!--## The Groups workspace-->
 
-To create and manage groups, you use the **Groups** workspace in the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]. The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
+To create and manage groups use the **Groups** workspace in the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]. The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
 
 -   Alerts
 -   Software updates
@@ -135,7 +135,8 @@ You can find the newly created group in the **Groups** list, in the **Groups** w
     > [!NOTE]
     > In the Azure Management Portal you can create a group based on the manager that the users report to. The group will be dynamic, changing as employees are added to or removed from that manager's team in Azure Active Directory. The procedure for creating an Azure group based on a manager is described in [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) in the section called **To configure a group as a “Manager” group**.
 
-4.  On the **Define Direct Membership** page, include or exclude individual users you specify by clicking **Browse**. If you use the option to select users that are not in the parent group you specified, those devices are automatically added to the parent group. At the bottom of the **Select Members** dialog you will find the option of adding a user manually. This is helpful if you want to add a user who does not yet have an enrolled device. 
+
+4.  On the **Define Direct Membership** page, include or exclude individual users you specify by clicking **Browse**. If you use the option to select users that are not in the parent group you specified, those devices are automatically added to the parent group. At the bottom of the **Select Members** dialog you will find the option of adding a user manually. This is helpful if you want to add a user who does not yet have an enrolled device.
 
 
 5.  On the **Summary** page, review the actions that will be taken. Choose **Finish**.

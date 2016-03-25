@@ -3,7 +3,7 @@
 # [Plan and Design](plan-your-user-and-device-groups.md)
 
 ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-## Migration guide
+## [Migration guide](migrating-to-intune.md)
 ## [Plan for app deployment](Plan-for-app-deployment-in-microsoft-intune.md)
 
 

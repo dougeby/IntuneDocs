@@ -9,17 +9,31 @@ ms.topic: article
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 author: Lindavr
 ---
-# Introduction to Intune
+# Welcome to Intune
+Enterprise mobility is all about enabling your employees to be productive on all of their devices while keeping your organizations information protected.  
 
-Mobile device management (MDM) and Windows PC management are the cornerstone of  the modern IT department. Today workers, staff and students are more mobile and engaged than ever. Your success depends upon delivering information where it's needed while ensuring that information is protected. You need to deploy apps, protect devices, ensure updates are in place, and provision email faster than ever while defending company information.
+Microsoft offers a complete integrated suite for enterprise mobility inclusive of productivity, identity, access control, management and data protection. This integrated suite gives you the best possible way to deploy and operate a mobility solution in your organization.  
 
-## Mobile device management
-Intune can manage iOS, Android, Mac OS X, and Windows Phone devices, as well as Windows RT and Windows 8.1 and Windows 10 devices as mobile devices. If you're looking at [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] for a mobile device management (MDM) solution, review [Intune's MDM capabilities and features](mobile-device-management-capabilities-in-microsoft-intune.md).
+ART GOES HERE
 
-## PC management
-You can install the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] client software on Windows PCs to enable management. Once a PC is managed you can deploy apps and software updates, manage Endpoint Protection and Windows Firewalls, provide remote assistance, and much more. See [a full list of PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md).
+Microsoft provides its enterprise mobility suite from the cloud. This means you get the benefits the cloud brings including being continuously kept up to date and available, flexible deployment options, and lower costs of ownership.  All of the features and capabilities you need to implement a mobility solution are included in Office 365 and the Enterprise Mobility Suite (EMS). By using Office 365 with EMS, you get an integrated end-to-end system for providing enterprise mobility to your employees, partners, contractors and even your customers.
 
-## App management
-You can also use Intune to [deploy and manage apps](/Intune/deployuse/deploy-and-configure-apps-with-microsoft-intune.html). App management helps you protect data from being shared outside of your business by restricting actions such as copy, cut, paste, and save-as between Intune-managed apps and personal apps.
+Microsoft Intune is the “management arm” of this integrated end-to-end system. Intune gives you the ability to manage mobile devices and mobile apps. It integrates closely with Azure Active Directory (AD) for identity and access control and Azure Rights Management (RMS) for data protection.  
 
-This data protection is built directly into many Microsoft mobile apps but you can [extend data protection to your existing line-of-business apps](/Intune/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.html) with the Intune App Wrapping Tool. You can also establish secure content viewing with the [Intune Managed Browser](/Internet/manage-internet-access-using-managed-browser-policies-with-microsoft-intune.html). To further protect corporate information, you can [selectively wipe managed apps and related data](Intune/deployuse/retire-data-and-devices-from-microsoft-intune-management.html) on devices that are unenrolled, no longer compliant, or lost, stolen, or retired from use.
+Some of the common business problems Intune helps solve include:
+
+* Securing your on-premise email and collaboration infrastructure so that it can be accessed by mobile devices and apps on the Internet
+* Securing your Office 365 infrastructure so that it can be safely accessed by mobile devices and apps on the Internet
+* Enabling your organization to issue mobile phones to its employees
+* Enabling your organization to provide limited-use “shared devices” for task workers
+* Enabling your organization to implement a secure “Bring Your Own” or personal device strategy
+* Enabling your organization to support employees accessing Office 365 from devices and apps that you don’t control such as a kiosk in the lobby of a trade show
+
+Some of the primary tools that Intune offers include:
+* **Mobile device management (MDM)**: the ability to enroll devices into Intune so that you can provision, configure, monitor, and take actions on those devices such as wiping them.
+* **Mobile application management (MAM)**: the ability to publish, push, configure, secure, monitor and update mobile apps for your users.
+* **Mobile application security**: as a part of managing mobile apps, Intune provides the ability to help secure mobile data by isolating personal data from corporate data and allowing the corporate data to be selectively wiped
+
+These tools are used in different combinations to enable the common scenarios above. For example, shared device scenarios make heavy use of MDM. Bring-your-own (BYO) scenarios typically make heavy use of MAM. And the corporate phone scenarios make heavy use of both. Almost all scenarios make use of mobile application security.
+
+Throughout this documentation, we’ll explain how to use the tools Intune provides to support your business scenarios.  We’ll also explain how to use these tools with Office 365, Azure AD, Azure RMS, and other parts of the Microsoft mobility suite. This will help give you a broad overview of the ways in which the technology is commonly used and how it might be useful in your environment. The technology itself is very flexible and can be adapted to all sorts of scenarios beyond the ones we describe here.

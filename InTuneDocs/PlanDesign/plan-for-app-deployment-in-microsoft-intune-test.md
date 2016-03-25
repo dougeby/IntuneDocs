@@ -10,9 +10,9 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 author: robstackmsft
 ---
 # Plan for app deployment in Microsoft Intune
-Before you start deploying [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] apps, take some time to familiarize yourself with the concepts introduced in this topic. This will give you an overview of the deployment process, and act as a reference to which device types and app types are supported.
+Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. This will give you an overview of the deployment process, and act as a reference to which device types and app types are supported.
 
-You can deploy apps to all device types that are supported by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Depending on the type of app you want to deploy, the process and supported devices will differ.
+You can deploy apps to all device types that are supported by Intune. Depending on the type of app you want to deploy, the process and supported devices will differ.
 
 
 ## Windows Installer (&#42;.exe, &#42;.msi)
@@ -69,19 +69,19 @@ Used when you have a:
 -   **URL** that lets users download an app from an app store.
 -   **Link** to a web-based app that runs from the web browser.
 
-Apps based on external links are not stored in your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] cloud storage space.
+Apps based on external links are not stored in your Intune cloud storage space.
 
 ## Managed iOS app from the app store
 Lets you manage and deploy iOS apps that are free of charge from the app store. Also lets you associate [mobile application management policies](https://technet.microsoft.com/library/dn878026.aspx) with [compatible apps](https://technet.microsoft.com/library/dn708489.aspx) and review their status in the administrator console.
 
 Managed iOS apps are not stored in your Intune cloud storage space.
 > [!TIP]
-> Options for mobile devices are not available until you [set the Mobile Device Management Authority](https://technet.microsoft.com/library/mt346013.aspx) to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+> Options for mobile devices are not available until you [set the Mobile Device Management Authority](https://technet.microsoft.com/library/mt346013.aspx) to Intune.
 
 ## Support for Universal Windows Platform (UWP) apps
 Windows 10 devices do not require a sideloading key to install line of business apps. However, the registry key **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** must have a value of to **1** to enable sideloading.
 
-If this registry key is not configured, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] will automatically set this value to **1** the first time you deploy an app to the device. If you have set this value to **0**, then [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] cannot automatically change the value, and the deployment of line of business apps will fail.
+If this registry key is not configured, Intune will automatically set this value to **1** the first time you deploy an app to the device. If you have set this value to **0**, then Intune cannot automatically change the value, and the deployment of line of business apps will fail.
 
 Universal Windows Platform line of business apps must be signed with a code-signing certificate that is trusted on each device to which the app is deployed. You can use certificates from an in-house PKI infrastructure, or a certificate from a third-party public root certificate installed on the device.
 
@@ -90,7 +90,7 @@ On Windows 10 Mobile devices, you can use a non-Symantec code signing certificat
 
 
 ## Intune software publisher
-The **Microsoft Intune Software Publisher** starts when you add or modify apps from the Microsoft Intune administrator console. From the publisher, you select and configure a software installer type that will either upload apps (programs for computers or apps for mobile devices) to be stored in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] cloud storage, or link to an online store or web application.
+The **Microsoft Intune Software Publisher** starts when you add or modify apps from the Microsoft Intune administrator console. From the publisher, you select and configure a software installer type that will either upload apps (programs for computers or apps for mobile devices) to be stored in Intune cloud storage, or link to an online store or web application.
 
 ### Requirements
 Before you begin to use the Microsoft Intune Software Publisher, you must install the full version of [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). After installation, you might have to restart your computer before the Software Publisher will open correctly.
@@ -100,7 +100,7 @@ All apps that you deploy using the software installer installation type must be 
 
 You can see how much space you are using and purchase more storage in the **Storage Use** node of the **Admin** workspace.
 
-These rules apply to purchasing additional cloud-based storage for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]:
+These rules apply to purchasing additional cloud-based storage for Intune:
 
 -   You must have an active paid subscription in order to purchase additional storage.
 
@@ -110,7 +110,7 @@ These rules apply to purchasing additional cloud-based storage for [!INCLUDE[wit
 
 ### Requirements for cloud storage space
 
--   All files associated with an app must be in the same location and be accessible by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+-   All files associated with an app must be in the same location and be accessible by Intune.
 
 -   The maximum file size for any file you upload is 2GB.
 
@@ -124,7 +124,7 @@ When you deploy apps, you can choose from one of the following deployment action
     > [!TIP]
     > For iOS devices that are not in supervised mode, and for all Android devices, the user must accept the app offer before it is installed.
     >
-    > You can no longer create new app deployments to iOS devices running an operating system earlier than iOS 7.1. Any existing app deployments to devices running an earlier operating system than iOS 7.1 will continue to work and be managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+    > You can no longer create new app deployments to iOS devices running an operating system earlier than iOS 7.1. Any existing app deployments to devices running an earlier operating system than iOS 7.1 will continue to work and be managed by Intune.
 
 -   **Available install** – The app is displayed in the company portal, and end-users can install it on-demand.
 
@@ -132,7 +132,7 @@ When you deploy apps, you can choose from one of the following deployment action
 
 -   **Not applicable** – The app is not displayed in the company portal, and is not installed to any devices.
 
-### <a name="BKMK_Actions"></a>Understand which deployment actions are available for each installer type
+### Understand which deployment actions are available for each installer type
 
 |Installer type|Required install|Available install|Uninstall|Not applicable|
 |------------------|--------------------|---------------------|-------------|------------------|

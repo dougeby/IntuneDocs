@@ -18,7 +18,7 @@ When a targeted user attempts to use Skype for Business Online on their device, 
 ## Prerequisites
 
 -   Enable modern authentication for Skype for Business Online. Fill this [connect form](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) to be enrolled in the modern authentication program.
--  All your end-users must be using the Skype for Business Online. If you have a deployment with both Skype for Business Online and Skype for Business on-premises, conditional access policy will not be applied to end-users who are in the on-premises deployment. 
+-  All your end-users must be using Skype for Business Online. If you have a deployment with both Skype for Business Online and Skype for Business on-premises, conditional access policy will not be applied to end-users.
 
     The device that needs access to Skype for Business Online must:
 
@@ -35,7 +35,7 @@ If a condition is not met, the user is presented with one of the following messa
 
 -   If the device is not enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app and enroll.
 
--   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] web portal where they can find information about the problem, and how to remediate it.
+-   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] Company Portal website or Company Portal app where they can find information about the problem, and how to remediate it.
 
 ## Configure conditional access for Skype for Business Online
 
@@ -102,6 +102,3 @@ Select any mobile device group and then, on the **Devices** tab, select one of t
 
 ### See also
 [Manage access to email and O365 services](Manage-access-to-email-and-SharePoint-with-Microsoft-Intune.md)
-
-
-

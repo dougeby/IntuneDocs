@@ -10,7 +10,7 @@ ms.assetid: 2804b69c-f210-4a11-aaee-b47ecc430d9c
 author: robstackmsft
 ---
 # Help protect iOS devices with Activation Lock bypass for Microsoft Intune
-[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] can help you manage iOS Activation Lock, a feature of the Find My iPhone app for iOS 7.1 and later devices. Activation Lock is enabled automatically when the Find My iPhone app is used on a device. After it is enabled, the user's Apple ID and password must be entered before anyone can:
+Microsoft Intune can help you manage iOS Activation Lock, a feature of the Find My iPhone app for iOS 7.1 and later devices. Activation Lock is enabled automatically when the Find My iPhone app is used on a device. After it is enabled, the user's Apple ID and password must be entered before anyone can:
 
 -   Turn off Find My iPhone
 
@@ -33,13 +33,13 @@ To help solve these problems, Apple introduced Activation Lock bypass in iOS 7.1
 > Supervised mode for iOS devices lets you use the Apple Configurator Tool to lock down a device to limit functionality to specific business purposes. Supervised mode is generally only for corporate-owned devices.
 
 ## How Intune helps you manage Activation Lock
-[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] can request the Activation Lock status of both supervised and unsupervised devices that run iOS 7.1 and later. For supervised devices, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] can retrieve the Activation Lock bypass code and directly issue it to the device. If the device has been wiped, you can directly access the device using the code as the username, and a blank password).
+Intune can request the Activation Lock status of both supervised and unsupervised devices that run iOS 7.1 and later. For supervised devices, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] can retrieve the Activation Lock bypass code and directly issue it to the device. If the device has been wiped, you can directly access the device using the code as the username, and a blank password).
 
 **The business benefits of this are**:
 
 -   The user gets the security benefits of the Find My iPhone app.
 
--   You can enable the user to do their work knowing that when the device needs to be repurposed, you can retire or unlock it.
+-   You can enable the user to do their work knowing that when the device needs to be re-purposed, you can retire or unlock it.
 
 ## How to use Activation Lock bypass from the Intune admin console
 > [!IMPORTANT]
@@ -72,6 +72,6 @@ You can see which devices are using Activation Lock in two ways:
 
     If you select a device in the **All Corporate-owned Devices** node, and Activation Lock is enabled for the device, you can also see the bypass code. This code can be used to manually issue an Activation Lock bypass.
 
-## See Also
+### See Also
 [Retire data and devices from Microsoft Intune management](retire-data-and-devices-from-microsoft-intune-management.md)
 
