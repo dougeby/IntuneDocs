@@ -12,9 +12,8 @@ author: robstackmsft
 # Exchange ActiveSync policy settings in Microsoft Intune
 Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Exchange ActiveSync** policy to configure settings that let you control a range of features and functionality on devices that are managed by Exchange ActiveSync.
 
-## Policy settings for devices managed by Exchange ActiveSync
 
-### Security settings
+## Password settings
 
 |Setting name|Details
 |----------------|
@@ -23,17 +22,17 @@ Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Exchange Activ
 |**Minimum password length**|
 |**Allow simple passwords**<br /><br />Simple passwords include ‘0000’ and ‘1234’|
 |**Number of repeated sign-in failures to allow before the device is wiped**|
-|**Password expiration (days)**|
+|**Password expiration (days)**|Specifies the number of days after which the device password must be changed.
 |**Remember password history**|
 |**Remember password history** – **Prevent reuse of previous passwords**|-|
-|**Minutes of inactivity before password is required**|
+|**Minutes of inactivity before password is required**|Specifies the amount of time a device must be idle before the screen is locked.
 
-### Encryption settings
+## Encryption settings
 
-|Setting name|
+|Setting name|Details|
 |----------------|
-|**Require encryption on mobile device**<sup>1</sup><br /><br />For Windows Phone 8 devices, you must set this to **Yes**.<br /><br />To enable encryption on iOS devices, enable the setting **Require a password to unlock mobile devices**.|
-|**Require encryption on storage cards**|
+|**Require encryption on mobile device**<sup>1</sup>|Requires the data on device to be encrypted when supported.<br>For Windows Phone 8 devices, you must set this to **Yes**.<br /><br />To enable encryption on iOS devices, enable the setting **Require a password to unlock mobile devices**.|
+|**Require encryption on storage cards**|Requires data stored on external storage such as an SD card to be encrypted (on supported devices).
 <sup>1</sup> Additional information for devices that run Windows 8.1
 
 -   To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](http://support.microsoft.com/kb/3013816) on each device.
@@ -44,28 +43,28 @@ Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Exchange Activ
 
 -   When you enforce encryption on a device, the recovery key is only accessible from the users Microsoft Account, accessed from their OneDrive account. You cannot recover this key on behalf of a user.
 
-### <a name="BKMK_email"></a>Email settings
+## Email settings
 
 |Setting name|Details
 |----------------|
-|**Allow users to download email attachments**|-|
-|**Email synchronization period**|
-|**Allow mobile devices that don’t fully support Exchange ActiveSync settings to synchronize with Exchange**|
+|**Allow users to download email attachments**|Specifies whether email attachments can be downloaded to the device.|
+|**Email synchronization period**|Select the number of days of received email that will be synchronized to the device.
+|**Allow mobile devices that don’t fully support Exchange ActiveSync settings to synchronize with Exchange**|Specifies whether to allow Exchange access on devices that don't support one or more Exchange ActiveSync settings.
 
-### <a name="BKMK_browser"></a>Applications - Browser
+## Browser settings
 
 |Setting name|Details
 |----------------|-
-|**Allow web browser**|-
+|**Allow web browser**|Specifies whether the web browser on the device can be used.<br>(not available for Windows RT or Windows Phone).
 
-### <a name="BKMK_hard"></a>Device capabilities - hardware
+## Hardware settings
 
-|Setting name|
+|Setting name|Details
 |----------------|
-|**Allow camera**|-
+|**Allow camera**|Specifies whether the camera on the device can be used.<br>(not available for Windows RT or Windows Phone).
 
 
 
 ### See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
+[Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

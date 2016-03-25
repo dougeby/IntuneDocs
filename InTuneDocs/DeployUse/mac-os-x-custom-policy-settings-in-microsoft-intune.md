@@ -24,7 +24,7 @@ Before you start, you must have installed the Apple Configurator and created a c
 
 |Setting name|Details|
     |----------------|--------------------|
-    |**Name**|Enter a unique name for the Mac OS X custom policy to help you identify it in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console.|
+    |**Name**|Enter a unique name for the Mac OS X custom policy to help you identify it in the Intune console.|
     |**Description**|Provide a description that gives an overview of the Mac OS X custom policy and other relevant information that helps you to locate it.|
 
 
@@ -32,7 +32,7 @@ Before you start, you must have installed the Apple Configurator and created a c
 
 |Setting name|Details|
     |----------------|--------------------|
-    |**Custom configuration profile name (displayed to users)**|Provide a name for the policy as it will be displayed on the device, and in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] policy reports.|
+    |**Custom configuration profile name (displayed to users)**|Provide a name for the policy as it will be displayed on the device, and in Intune policy reports.|
     |**Configuration profile file**|Click **Import**, then browse to the configuration profile that you created using the Apple Configurator. **Tip:** See [How to create a configuration profile file](#BKMK_Prof) in this topic for help creating the configuration profile.|
     |**Configuration profile details**|Displays the xml code for the configuration profile that you imported.|
 

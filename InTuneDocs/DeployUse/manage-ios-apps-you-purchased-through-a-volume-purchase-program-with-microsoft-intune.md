@@ -14,6 +14,9 @@ Some app stores give you the ability to purchase multiple licenses for an app yo
 
 Microsoft Intune helps you manage apps you purchased through such a program by importing the license information from the app store, tracking how many of the licenses you have used, and preventing you from installing more copies of the app than you own.
 
+> [!Important]
+> Currently, Intune assigns iOS VPP app licenses to users, and not devices. Because of this, end users must enter their Apple ID password to install the app.
+
 ## Manage volume-purchased apps for iOS devices
 You purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business (VPP)](http://www.apple.com/business/vpp/). This involves setting up an Apple VPP account from the Apple web site and the Apple VPP token into [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].  You can then synchronize your volume purchase information with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] and track your volume-purchased app use.
 

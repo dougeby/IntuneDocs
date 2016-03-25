@@ -15,7 +15,7 @@ Review the tasks in this topic to learn how to manage your computers that run th
 
 
 ## Use policies to manage the Windows Firewall
-Policies simplify the administration of Windows Firewall settings on managed computers. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+Policies simplify the administration of Windows Firewall settings on managed computers. For details, see [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
 ## Use policies to manage the Microsoft Intune Center
 The Microsoft Intune Center lets users:
@@ -30,7 +30,7 @@ The Microsoft Intune Center lets users:
 
 The Microsoft Intune Center is installed on all managed computers. You can configure the following settings in an Intune policy and these are displayed to users in the Microsoft Intune Center:
 
-|Policy setting|More information|
+|Policy setting|Details|
 |------------------|--------------------|
 |**Name**|The name of the administrator who manages the computer.<br /><br />Maximum length: 40 characters|
 |**Phone number**|The telephone number of the administrator who manages the computer.<br /><br />Maximum length: 20 characters|

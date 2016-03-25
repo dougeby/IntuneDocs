@@ -42,7 +42,7 @@ The Intune Managed Browser supports opening web content from [Microsoft apps you
 
 3.  Use the following table to help you configure the managed browser policy settings:
 
-    |Setting name|Details|
+|Setting name|Details|
     |----------------|--------------------|
     |**Name**|Enter a unique name for the managed browser policy to help you identify it in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.|
     |**Description**|Provide a description that gives an overview of the managed browser policy and other relevant information that helps you to locate it.|
@@ -92,7 +92,7 @@ Use the following information to learn about the allowed formats and wildcards y
 
     -   Port 443 for https
 
-    Using wildcards for the port number is not supported, for example, **http://www.contoso.com:&#42;** and **http://www.contoso.com: /&#42;**
+    Using wildcards for the port number is not supported, for example, **http://www.contoso.com:*;** and **http://www.contoso.com: /*;**
 
 -   Use the following table to learn about the permitted patterns you can use when you specify URLs:
 

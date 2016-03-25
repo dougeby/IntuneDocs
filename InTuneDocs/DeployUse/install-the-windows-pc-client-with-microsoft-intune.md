@@ -10,10 +10,10 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 author: robstackmsft
 ---
 # Install the Windows PC client with Microsoft Intune
-Use this guide to help you get your computers managed by [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
+Use this guide to help you get your Windows PCs managed by the Microsoft Intune client software.
 
 ## Before you start
-Before you start installing the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software, read the topic [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md) to understand what must be in place to install the client correctly and then return to these instructions.
+Before you start installing the Intune client software, read the topic [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md) to understand what must be in place to install the client correctly and then return to these instructions.
 
 ## Get the client installed
 Use these steps get the client installed:
@@ -32,7 +32,7 @@ Then use one or more of the following methods to get the client installed:
 
 If you no longer need to manage a computer with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you can retire the computer, which also removes the client software from the computer. For more information, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
-### To download the client software
+## To download the client software
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Client Software Download**
 
@@ -46,14 +46,14 @@ If you no longer need to manage a computer with [!INCLUDE[wit_nextref](./include
     > [!IMPORTANT]
     > Do not rename or remove the **ACCOUNTCERT** file that is extracted or the client software installation will fail.
 
-### To manually deploy the client software
+## To manually deploy the client software
 
 1.  On a computer, browse to the folder where the client software installation files are located, and then run **Microsoft_Intune_Setup.exe** to install the client software.
 
     > [!NOTE]
     > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
 
-### To automatically deploy the client software by using Group Policy
+## To automatically deploy the client software by using Group Policy
 
 1.  In the folder that contains the files **Microsoft_Intune_Setup.exe** and **MicrosoftIntune.accountcert**, run the following command to extract the Windows Installer-based installation programs for 32-bit and 64-bit computers:
 
@@ -80,7 +80,7 @@ Users can self-enroll each of their computers through the [!INCLUDE[wit_firstref
 > -   You must use a work or school acccount to self-enroll a computer. You cannot self-enroll a computer using a Microsoft account.
 > -   If the client software is already installed on a computer, the end-user will receive an error.
 
-##### To self-enroll a computer (information for end-users)
+### To self-enroll a computer (information for end-users)
 
 1.  Log on to the company portal from the computer that you want to enroll.
 
@@ -92,7 +92,7 @@ Users can self-enroll each of their computers through the [!INCLUDE[wit_firstref
 
 5.  When the setup wizard has completed, click **Finish**.
 
-## <a name="BKMK_Image"></a>Install the Microsoft Intune client software as part of an image
+## Install the Microsoft Intune client software as part of an image
 You can deploy the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software to computers as part of an operating system image by using the following example procedure as a basis:
 
 1.  Copy the client installation files, **Microsoft_Intune_Setup.exe** and **MicrosoftIntune.accountcert** to the **%Systemdrive%\Temp\Microsoft_Intune_Setup** folder on the reference computer.
@@ -118,9 +118,9 @@ You can deploy the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client 
 
 When the targeted computer restarts at the completion of Windows Setup, the **WindowsIntuneEnrollPending** registry key is created. The enrollment package checks whether the computer is enrolled. If the computer is enrolled, no further action is taken. If the computer is not enrolled, the enrollment package creates a Microsoft Intune Automatic Enrollment Task.
 
-When the automatic enrollment task runs at the next scheduled time, it checks the existence of the **WindowsIntuneEnrollPending** registry value, and it tries to enroll the targeted PC in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. If the enrollment fails for any reason, the enrollment is retried the next time the task runs. The retries continue for a period of one month.
+When the automatic enrollment task runs at the next scheduled time, it checks the existence of the **WindowsIntuneEnrollPending** registry value, and it tries to enroll the targeted PC in Intune. If the enrollment fails for any reason, the enrollment is retried the next time the task runs. The retries continue for a period of one month.
 
-The [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Automatic Enrollment Task, the **WindowsIntuneEnrollPending** registry value, and the account certificate are deleted from the targeted computer when the enrollment is successful or after one month.
+The Intune Automatic Enrollment Task, the **WindowsIntuneEnrollPending** registry value, and the account certificate are deleted from the targeted computer when the enrollment is successful or after one month.
 
 ## Monitor and validate successful client deployment
 Use one of the following procedures to help you monitor and validate successful client deployment.
@@ -129,7 +129,7 @@ Use one of the following procedures to help you monitor and validate successful 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **All Devices** &gt; **All Computers**.
 
-2.  Scroll down the list of computers to find managed computers that are communicating with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], or to search for a specific managed computer by typing the computer name, or any part of the name, in the **Search devices** box.
+2.  Scroll down the list of computers to find managed computers that are communicating with Intune, or to search for a specific managed computer by typing the computer name, or any part of the name, in the **Search devices** box.
 
 3.  Examine the status of the computer in the bottom pane of the console, and resolve any errors.
 
@@ -139,7 +139,7 @@ Use one of the following procedures to help you monitor and validate successful 
 
 2.  On the **Create New Report** page, leave all fields as the default values (unless you want to apply filters), and click **View Report**.
 
-3.  The **Computer Inventory Report** page opens in a new window that displays all computers that are successfully enrolled in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+3.  The **Computer Inventory Report** page opens in a new window that displays all computers that are successfully enrolled in Intune.
 
     > [!TIP]
     > Click any column heading in the report to sort the list by the contents of that column.
