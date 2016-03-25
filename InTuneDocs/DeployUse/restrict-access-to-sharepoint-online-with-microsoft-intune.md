@@ -16,13 +16,16 @@ When a targeted user attempts to connect to a file using a supported app such as
 
 ![](../Image/ConditionalAccess8-6.png)
 
-To connect to the required files, the device running OneDrive must:
+To connect to the required files, the device must:
 
 -   Be enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] or a domain joined PC.
 
 -   Register the device in Azure Active Directory (this happens automatically when the device is enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
 
     For domain joined PC, you must set it up to [automatically register](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory.
+    >[!IMPORTANT]
+    >Conditional access for PCs is not currently available to all Intune customers. If you are already using conditional access for PCs, you do not need to take any action. You can continue to use it.
+    If you have not created conditional access policies for PCs you will need to submit a request for access.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
 
 -   Be compliant with any deployed [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] compliance policies
 
@@ -30,15 +33,15 @@ The device state is stored in Azure Active Directory which grants or blocks acce
 
 If a condition is not met, the user is presented with one of the following messages when they log in:
 
--   If the device is not enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app and enroll.
+-   If the device is not enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal  app and enroll.
 
--   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] web portal where they can find information about the problem, and how to remediate it.
+-   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] Company Portal website where they can find information about the problem, and how to remediate it.
 
 -   For a PC:
 
     -   If the policy is set to require domain join, and the PC is not domain joined, a message is displayed to contact the IT admin.
 
-    -   If the policy is set to require domain join or compliant, then the PC does not meet either requirement, a message is displayed with instructions about how to install the company portal app and enroll.
+    -   If the policy is set to require domain join or compliant, then the PC does not meet either requirement, a message is displayed with instructions about how to install the Company Portal  app and enroll.
 
 You can manage access to SharePoint Online from the following apps:
 
@@ -94,6 +97,8 @@ Next, configure the policy to require that only managed and compliant devices ca
     -   **All platforms**
 
         This will require that any device used to access **SharePoint Online**,  to be enrolled in Intune and compliant with the policies.  Any client application using **modern authentication** is subject to the conditional access policy, and if the platform is currently not supported by Intune, access to **SharePoint Online** is blocked.
+        You many not see this option if you not already using conditional access for PCs.  Use the **Specific platforms** instead. Conditional access for PCs is not currently available to all Intune customers.   You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
+
 
     -   **Specific platforms**
 
@@ -101,10 +106,10 @@ Next, configure the policy to require that only managed and compliant devices ca
 
     > [!TIP]
     > **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Office clients.
-    > 
+    >
     > -   The ADAL based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, the user is directed to a sign-in web page.
     > -   This new sign-in method enables new scenarios such as, conditional access, based on **device compliance** and whether **multi-factor authentication** was performed.
-    > 
+    >
     > This [article](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/) has more detailed information on how modern authentication works.
 
     For windows PCs, the PC must either be domain joined, or enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] and compliant. You can set the following requirements:
@@ -136,4 +141,3 @@ Select any mobile device group and then, on the **Devices** tab, select one of t
 
 ## See Also
 [Manage access to email and SharePoint with Microsoft Intune](../Topic/Manage-access-to-email-and-SharePoint-with-Microsoft-Intune.md)
-
