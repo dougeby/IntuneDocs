@@ -74,7 +74,7 @@ Next, configure the policy to require that only managed and compliant devices ca
 
 2.  Select **Enable conditional access policy**.
 
-3.  Under **Device platforms**, you can choose to apply conditional access policy to:
+3.  Under **Application access**, you can choose to apply conditional access policy to:
 
     -   **iOS**
 
