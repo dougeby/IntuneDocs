@@ -10,7 +10,7 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 author: robstackmsft
 ---
 # Manage Windows PCs with Microsoft Intune
-In addition to managing mobile devices, you can also use [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] to manage computers running supported operating systems using the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] computer client software. The [hardware and software requirements](https://technet.microsoft.com/library/dn646975.aspx) to run the computer client are  minimal --basically any system capable of running Windows Vista or later is supported.  The client software can also be easily installed on either domain-joined computers (in any domain) or non-domain-joined computers.
+In addition to enrolling devices, you can also use Microsoft Intune to manage Windows PCs running supported operating systems using the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] computer client software. The [hardware and software requirements](https://technet.microsoft.com/library/dn646975.aspx) to run the computer client are  minimal --basically any system capable of running Windows Vista or later is supported.  The client software can also be easily installed on either domain-joined computers (in any domain) or non-domain-joined computers.
 
 [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] manages computers using policies similar to the way Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you will be managing Active Directory domain-joined computers with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you should [be sure that Intune policies do not conflict with any GPOs](https://technet.microsoft.com/library/dn646986.aspx) that are in place for your organization.
 
@@ -18,7 +18,7 @@ In addition to managing mobile devices, you can also use [!INCLUDE[wit_firstref]
 > Microsoft Intune as a standalone service offers these features for managing computers. Devices that run Windows 8.1 can be managed using the Intune client or they can be enrolled as mobile devices. The information below applies to computers that run the Intune client. For information about mobile device management capabilities, see [Mobile device management capabilities in Microsoft Intune](https://technet.microsoft.com/library/dn600287(TechNet.10).aspx).
 
 ## Install the Intune computer client
-The first step in managing computers with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] is to install the client. The client software can be installed when a computer is enrolled into management by the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service in one of the following ways:
+The first step in managing Windows PCs with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] is to install the client. The client software can be installed when a PC is enrolled into management by the Intune service in one of the following ways:
 
 -   You can [manually deploy the Microsoft Intune client software](https://technet.microsoft.com/library/dn646969.aspx#BKMK_Manual). In this type of deployment, an administrator downloads the  Intune client software and manually installs it on each PC.
 
@@ -55,6 +55,6 @@ In addition to the Intune client agent actions taken locally on individual compu
 
 The Intune client agent usually runs quietly in the background without the need for much user interaction or troubleshooting. However, should you need help in resolving computer management issues, there are several [resources available to help you solve them](https://technet.microsoft.com/library/dn646987.aspx).
 
-## See Also
+### See Also
 [Configure and manage devices with Microsoft Intune](configure-and-manage-devices-with-microsoft-intune.md)
 

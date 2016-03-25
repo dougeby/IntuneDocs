@@ -43,10 +43,10 @@ The Microsoft Intune Center is installed on all managed computers. You can confi
 Use policies to configure the settings that managed computers use to check for, and download software updates from Microsoft and from third-parties. For more information, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
 ## Use policies to manage Endpoint Protection settings
-Use policies to configure settings for [!INCLUDE[epshort](./includes/epshort_md.md)] that you then deploy to managed computers. This includes scan schedules, actions to take when malware is detected, and more. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+Use policies to configure settings for Endpoint Protection that you then deploy to managed computers. This includes scan schedules, actions to take when malware is detected, and more. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 ## View hardware and software inventory
-[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] collects detailed information about the hardware and software of managed computers. Use the information in the following procedures to learn how to create:
+Intune collects detailed information about the hardware and software of managed computers. Use the information in the following procedures to learn how to create:
 
 -   A report that lists information about the hardware capabilities of your computers.
 
@@ -175,7 +175,7 @@ Users can request assistance by using Remote Assistance via Microsoft Easy Assis
         The user sees the message: **Your request was accepted. Follow the instructions in Easy Assist to share a program or your desktop with your system administrator**.
 
         > [!IMPORTANT]
-        > You cannot accept a remote assistance request on a Mac computer that is running the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)].
+        > You cannot accept a remote assistance request on a Mac computer that is running the Intune administrator console.
 
     -   **Decline the request** - Close the **View Troubleshooting Information** window, and then click **Close This Alert** in the alert properties window.
 
