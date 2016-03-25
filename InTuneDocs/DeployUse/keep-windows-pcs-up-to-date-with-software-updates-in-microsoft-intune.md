@@ -26,7 +26,7 @@ The following sections will help you to keep software up to date on your managed
 ## Before you start
 Before you begin to create and approve software updates, configure and deploy polices to your computers that control when and how the updates are installed.
 
-#### To configure update policy settings
+### To configure update policy settings
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Policy** &gt; **Overview** &gt; **Add Policy**.
 
@@ -42,7 +42,7 @@ The following table shows the values you can configure in the policy and also th
     |**Delay to restart Windows after installation of scheduled updates and applications (minutes)**|Specifies (from 1-30 minutes), the time to wait to restart Windows after the installation of scheduled updates and applications.<br /><br />Recommended value: **15 minutes**|
     |**Delay following Windows restart to begin installing missed scheduled updates and applications (minutes)**|Specifies (from 1-60 minutes), how long to wait to start the installation of updates and applications after Windows is restarted when a scheduled update was missed.<br /><br />Recommended value: **5 minutes**|
     |**Allow logged-on user to control Windows restart after installation of scheduled updates and applications**|Specifies whether the logged-on user can delay restarting Windows (if set to **Yes**), or be notified of the automatic Windows restart (if set to **No**). If no user is logged on when the scheduled installation of updates and applications is completed, Windows is restarted automatically when required. When set to **No**, by default, the time before Windows restarts is set to 5 minutes.<br /><br />Recommended value: **Yes**|
-    |**Prompt user to restart Windows during [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client agent mandatory updates**|Specifies whether the logged on users is prompted to restart Windows when a [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client mandatory update requires Windows to restart.<br /><br />Recommended value: **Yes**|
+    |**Prompt user to restart Windows during [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client agent mandatory updates**|Specifies whether the logged on users is prompted to restart Windows when an Intune client mandatory update requires Windows to restart.<br /><br />Recommended value: **Yes**|
     |**Microsoft Intune client agent mandatory updates installation schedule**|Schedules when the installation of client updates occur.<br /><br />Recommended value: not configured|
     |**Delay between prompts to restart Windows after installation of scheduled updates and applications (minutes)**|Specifies how frequently (from 1-1440 minutes) the user is prompted to restart Windows when a scheduled update or application that requires restarting Windows is installed, and the user delays the restart.<br /><br />Recommended value: **30 minutes**|
 

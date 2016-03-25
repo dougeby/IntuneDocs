@@ -10,7 +10,7 @@ ms.assetid: 1643dec0-51dc-4c3a-9dd3-23da496403d9
 author: robstackmsft
 ---
 # Manage apps you purchased from the Windows Store for Business with Microsoft Intune
-The [Windows Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to [!INCLUDE[wit_firstref](/Token/wit_firstref.xml)], you can manage volume-purchased apps from the [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] console, for example:
+The [Windows Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Intune console, for example:
 * You can synchronize the list of apps you have purchased from the store with [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)]
 * Apps that are synchronized appear in the [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] console and you can deploy these like any other apps
 * You can track how many licences are available, and how many are being used in the [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] console
@@ -24,12 +24,12 @@ Review the following information before you start syncing and deploying apps fro
 * Apps purchased from the store cannot be manually added to, or deleted from [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)]. They can only be synchronized with the Windows Store for Business.
 
 ## Associate your Windows Store for Business account with Intune
-Before you enable synchronization in the [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] console, you must configure your store account to use [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] as a management tool:
+Before you enable synchronization in the Intune console, you must configure your store account to use [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] as a management tool:
 1. Ensure that you log into the Business Store using the same tenant account you use to log into [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)]
 2. In the Business Store, choose **Settings** > **Management tools**.
 3. On the Management tools page, choose **Add a management tool**, and choose Microsoft Intune.
 
-You can now continue, and set up synchronization in the [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] console.
+You can now continue, and set up synchronization in the Intune console.
 
 ## Configure synchronization
 
