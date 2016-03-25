@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid:
 author: Staciebarker
 
-#How your Android users get their apps
+# How your Android users get their apps
 Use this information to understand how and where your end users get the apps that you distribute through Microsoft Intune. 
 
 The following terms are used in the tables that describe how users get their apps for each platform.
