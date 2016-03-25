@@ -18,20 +18,20 @@ Microsoft Intune helps you manage apps you purchased through such a program by i
 > Currently, Intune assigns iOS VPP app licenses to users, and not devices. Because of this, end users must enter their Apple ID password to install the app.
 
 ## Manage volume-purchased apps for iOS devices
-You purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business (VPP)](http://www.apple.com/business/vpp/). This involves setting up an Apple VPP account from the Apple web site and the Apple VPP token into [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].  You can then synchronize your volume purchase information with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] and track your volume-purchased app use.
+You purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business (VPP)](http://www.apple.com/business/vpp/). This involves setting up an Apple VPP account from the Apple web site and the Apple VPP token into Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
 
-### Before you start
-Before you begin, you'll need to get a VPP token from Apple, and upload this to your [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] account. Additionally, you should understand the following:
+## Before you start
+Before you begin, you'll need to get a VPP token from Apple, and upload this to your Intune account. Additionally, you should understand the following:
 
 * Each organization can have only one VPP account and token.
 * Once you associate an Apple VPP account to Intune, you cannot subsequently associate a different account. For this reason, it's very important that more than one person has the details of the account you use.
-* If you have previously used a VPP token with a different product, you must generate a new one to use with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
+* If you have previously used a VPP token with a different product, you must generate a new one to use with Intune.
 * Each token is valid for one year.
 * By default, Intune syncs with the Apple VPP service twice a day. You can, however, initiate a manual sync at any time.
 * After you have imported the VPP token in Intune do not import the same token into any other device management solution. Doing so might result in the loss of license assignment and user records.
 * Before you start to use iOS VPP with Intune, remove any existing VPP user accounts created with other MDM vendors. Intune will not synchronize those user accounts into Intune as a security measure. Intune will only synchronize data from the Apple VPP service that was created by Intune. 
 
-##### To get and upload an Apple VPP token
+## To get and upload an Apple VPP token
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Admin** &gt; **iOS and Mac OS X** &gt;  **Volume Purchase Program**.
 
@@ -43,15 +43,15 @@ Before you begin, you'll need to get a VPP token from Apple, and upload this to 
 
 5.  In the warning dialog box, click the checkbox to indicate that you understand that you can't change to a different VPP account later, then click **Yes**.
 
-On the **Volume Purchase Program** page, you can now view information about the Apple VPP token including when it was last updated, when it will expire, and when it was last synchronized with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
+On the **Volume Purchase Program** page, you can now view information about the Apple VPP token including when it was last updated, when it will expire, and when it was last synchronized with Intune.
 
 You can synchronize the data held by Apple with Intune at any time by clicking **Sync now**.
 
-### Step 2 - Upload and deploy a volume-purchased app
+## To upload and deploy a volume-purchased app
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Apps** &gt; **Managed Software** &gt; **Volume-Purchased apps**.
 
-2.  Use the instructions in the [Deploy apps to mobile devices in Microsoft Intune](Deploy-apps-to-mobile-devices-in-Microsoft-Intune.md) topic to complete uploading, creation, and deployment of the app.
+2.  Use the instructions in the [Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md) topic to complete uploading, creation, and deployment of the app.
 
 When you deploy the app as a **Required** install, a license is used by each user that installs the app.
 
@@ -64,12 +64,12 @@ When a user with an eligible device first tries to install a VPP app, they will 
 
 If there are no further licenses available, the deployment will fail.
 
-### Step 3 - Monitor Apple VPP apps
+## To monitor Apple VPP apps
 You can monitor which VPP apps have been deployed, and how many licenses are used from the **Apps** workspace, in the **Managed Software** &gt; **Volume-Purchased Apps** node.
 
 > [!TIP]
 > You can also use app **Filters** to examine the status of each app install.
 
 ### See Also
-[Deploy and configure apps with Microsoft Intune](../Topic/Deploy-and-configure-apps-with-Microsoft-Intune.md)
+[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
 
