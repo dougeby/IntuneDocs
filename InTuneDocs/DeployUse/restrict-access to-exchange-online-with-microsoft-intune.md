@@ -15,7 +15,7 @@ If you want to learn more about how conditional access works, read the [Restrict
 
 Before you can configure conditional access you must:
 
--   Use an Office 365 subscription that includes Exchange Online (such as E3) and users must be licensed for Exchange Online.
+-   Have an Office 365 subscription that includes Exchange Online (such as E3) and users must be licensed for Exchange Online.
 
 -  Consider configuring the optional **Microsoft Intune service to service connector**  which connects [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] to Microsoft Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console. You do not need to use the connector to use compliance policies or conditional access policies, but is required to run reports that help evaluate the impact of conditional access.
 
@@ -34,9 +34,16 @@ When conditional access policies are configured and targeted to a user, before a
 
 -   **Compliant** with any [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] compliance policies deployed to that device.
 
-The following flow is used by conditional access policies for Exchange Online to evaluate whether to allow or block devices.
+If a conditional access policy is not met, the user is presented with one of the following messages when they log in.
 
-![](/media/ConditionalAccess8-1.png)
+- If the device is not enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
+
+-   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] web portal, or the company portal app where they can find information about the problem and how to remediate it.
+
+
+The diagram below illustrated the flow is used by conditional access policies for Exchange Online to evaluate whether to allow or block devices.
+
+![](../media/ConditionalAccess8-1.png)
 
 ## Support for mobile devices
 You can restrict access to Exchange Online email from **Outlook** and other apps that use modern authentication on iOS and Android devices.
@@ -59,12 +66,6 @@ You can restrict access to Exchange email from the built-in **Exchange ActiveSyn
 - Windows Phone 8.1 and later
 
 
-
-If a conditional access policy is not met, the user is presented with one of the following messages when they log in.
-
-- If the device is not enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app, enroll the device, activate email, which associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
-
--   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] web portal, or the company portal app where they can find information about the problem and how to remediate it.
 
 ## Support for PCs
 You can setup conditional access for PCs that run Office desktop applications to access **Exchange Online** and **SharePoint Online** for PCs that meet the following requirements:
