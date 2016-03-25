@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid:
 author: Staciebarker
 
-#How your iOS users get their apps
+# How your iOS users get their apps
 
 Use this information to understand how and where your end users get the apps that you distribute through Microsoft Intune. 
 
@@ -22,8 +22,6 @@ The following terms are used in the tables that describe how users get their app
 **Managed apps** - Apps that can be managed through policies and that have been "wrapped" by Intune or have been built with the Intune Mobile Application Management (MAM) Software Development Kit (SDK). These apps can be managed by Intune, and application policies can be applied to them.
 
 **Unmanaged apps** - Apps that can be managed through policies and that have not been wrapped by Intune or that do not incorporate the Intune MAM SDK. Application policies cannot be applied to these apps.
-
-Select from the following device platform options to learn more:
 
 ###See also
 [How your Android users get their apps](how-your-android-users-get-their-apps.md)</br>
