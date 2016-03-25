@@ -10,7 +10,7 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 author: robstackmsft
 ---
 # Windows Phone configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Windows Phone general configuration policy** to configure the following settings for Windows Phone 8.1 devices:
+Use the Microsoft Intune **Windows Phone general configuration policy** to configure the following settings for Windows Phone 8.1 devices:
 
 -   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
@@ -20,73 +20,73 @@ Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Windows Phone 
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Require a password to unlock mobile devices**|-|Yes|Yes|
-|**Required password type**<br /><br />(specifies the type of password that will be required, such as numeric only, or alphanumeric)|Yes|
-|**Required password type – Minimum number of character sets**<br /><br />There are four character sets, lowercase letters, uppercase letters, numbers, and symbols. This setting specifies how many different character sets must be included in the password). However, for iOS devices, this specifies the number of symbol characters must be included in the password)|Yes|
-|**Minimum password length**|Yes|
-|**Allow simple passwords**<br /><br />Simple passwords include ‘0000’ and ‘1234’|Yes|
-|**Number of repeated sign-in failures to allow before the device is wiped**|Yes|
-|**Minutes of inactivity before screen turns off**|Yes|
-|**Password expiration (days)**|Yes|
-|**Remember password history**|Yes|
-|**Remember password history** – **Prevent reuse of previous passwords**|-|Yes|Yes|
+|**Require a password to unlock mobile devices**|Specifies whether users must enter a password to access their devices.|Yes|Yes|
+|**Required password type**|Specifies the type of password that will be required, such as numeric only, or alphanumeric.|Yes|Yes|
+|**Required password type – Minimum number of character sets**|There are four character sets, lowercase letters, uppercase letters, numbers, and symbols. This setting specifies how many different character sets must be included in the password). However, for iOS devices, this specifies the number of symbol characters must be included in the password)|Yes|Yes|
+|**Minimum password length**|Specifies the minimum number of characters required in the password.|Yes|Yes|
+|**Allow simple passwords**|Simple passwords include ‘0000’ and ‘1234’|Yes|Yes|
+|**Number of repeated sign-in failures to allow before the device is wiped**|Specifies the number of times an incorrect password can be remembered before the device is wiped.|Yes|Yes|
+|**Minutes of inactivity before screen turns off**|Specifies the amount of time a device must remain idle before the screen is automatically locked.|Yes|Yes|
+|**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|Yes|
+|**Remember password history**|Specifies whether previously used passwords are remembered to prevent the user from using them again.|Yes|Yes|
+|**Remember password history** – **Prevent reuse of previous passwords**|Specifies how many previously used passwords are remembered.|Yes|Yes|
 
 ## Encryption settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Require encryption on mobile device**|For Windows Phone 8 devices, you must set this to **Yes**.|Yes|
+|**Require encryption on mobile device**|Requires the data on supported mobile devices to be encrypted.<br>For Windows Phone 8 devices, you must set this to **Yes**.|Yes|Yes|
 
 ## System settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Allow screen capture**|-|No|Yes|
-|**Allow diagnostic data submission**|-|No|Yes|
+|**Allow screen capture**|Lets the user capture the contents of the screen as an image file.|No|Yes|
+|**Allow diagnostic data submission**|Allows the device to submit diagnostic information to Microsoft.|No|Yes|
 
 ## Cloud settings – accounts and synchronization
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Allow Microsoft account**|-|No|Yes|
+|**Allow Microsoft account**|Allows a Microsoft account to be linked to the device.|No|Yes|
 
 ## Email settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Allow custom email accounts**|-|No|Yes|
+|**Allow custom email accounts**|Allow the device to connect to non-Microsoft email accounts.|No|Yes|
 
 ## Application settings - browser
 
-|Setting name|Details|Windows Phone 8 and Windows Phone 8.1|
+|Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Allow web browser**|-|No|Yes|
+|**Allow web browser**|Allows or blocks the built-in web browser on devices.|No|Yes|
 
 ## Application settings - apps
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Allow application store**|-|No|Yes|
+|**Allow application store**|Lets users connect to the app store from the device.|No|Yes|
 
 ## Device capabilities settings - hardware
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Allow camera**|-|No|Yes|
-|**Allow removable storage**|-|Yes|Yes|
-|**Allow Wi-Fi**|-|No|Yes|
-|**Allow Wi-Fi tethering**|Windows Phone 8.1 only|
-|**Allow automatic connection to free Wi-Fi hotspots**|Windows Phone 8.1 only|
-|**Allow Wi-Fi hotspot reporting**<br /><br />(send information about Wi-Fi connections to help discover nearby connections)|Windows Phone 8.1 only|
-|**Allow geolocation**<br /><br />(allows the device to utilize location information)|Windows Phone 8.1 only|
-|**Allow NFC**<br /><br />(allows operations that use near field communication)|Windows Phone 8.1 only|
-|**Allow Bluetooth**|-|No|Yes|
+|**Allow camera**|Allow or block the device camera.|No|Yes|
+|**Allow removable storage**|Lets the device use removable storage, for example, an SD card.|Yes|Yes|
+|**Allow Wi-Fi**|Enables or disables the Wi-Fi functionality of the device.|No|Yes|
+|**Allow Wi-Fi tethering**|Allow the use of Wi-Fi tethering on the device.|No|Yes
+|**Allow automatic connection to free Wi-Fi hotspots**||No|Yes|
+|**Allow Wi-Fi hotspot reporting**|Send information about Wi-Fi connections to help discover nearby connections.|No|Yes|
+|**Allow geolocation**|Allows the device to utilize location information.|No|Yes|
+|**Allow NFC**|Allows operations that use near field communication.|No|Yes|
+|**Allow Bluetooth**|Enables or disables the Bluetooth functionality of the device.|No|Yes|
 
 ## Device capabilities settings - features
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Allow copy and paste**|-|No|Yes|
+|**Allow copy and paste**|Allow copy and paste functionality on devices.|No|Yes|
 
 ## Settings for compliant and noncompliant apps
 In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant or noncompliant apps using the following information:
@@ -118,5 +118,5 @@ Open the app’s page, and copy the URL to the clipboard. You can now use this a
 **Example:** Search the store for the Skype app. The URL you use will be **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 ### See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
+[Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
