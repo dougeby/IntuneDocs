@@ -12,23 +12,26 @@ author: Staciebarker
 
 # What to tell your end users about using Microsoft Intune
 
-Use these links to understand your end user's experience with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. 
+Use these links and information to:
+
+- Understand the steps that your users follow to do different tasks in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Give to your users to help them complete tasks and solve issues they have while using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+
 
 ## Where your end users can find information about common tasks
 
 Give your end users the following end-user help links when they are looking for information about using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] on their devices. At these links, users will find steps on how to install the Company Portal app, enroll their devices, get managed apps, troubleshoot, and more.
 
-[!div class="op_single_selector"]
-- [Using your Android device with Intune](/Intune/EndUser/using-your-android-device-with-intune.html)
-- [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune.html)
-- [Using your Windows device with Intune](/Intune/EndUser/using-your-windows-device-with-intune.html)
-- [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website.html)
+- [Using your Android device with Intune](/Intune/EndUser/using-your-android-device-with-intune.html)
+- [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune.html)
+-  [Using your Windows device with Intune](/Intune/EndUser/using-your-windows-device-with-intune.html)
+- [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website.html)
  
 
 ## Enrollment guides and templates that you can customize for your users
 
-- [Customizable, end-user Intune enrollment template for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd6) - Customizable Word document with detailed steps and screenshots of end-user enrollment for iOS, Mac OS X, and Android devices. You can use this document as is, or you can customize the instructions before giving this document to your end users.</br></br>
-- [Two-page customizable document, with steps and embedded videos on enrolling, unenrolling, getting apps, more](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd6) - Document that you can customize and give to your end users. Has sections on how to enroll Android, iOS, and Windows devices, get apps, unenroll, what to do if you lose your device, and what IT Pros can and can't see on your device.
+- [Customizable, end-user Intune enrollment template for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) - Customizable Word document with detailed steps and screenshots of end-user enrollment for iOS, Mac OS X, and Android devices. You can use this document as is, or you can customize the instructions before giving this document to your end users.</br></br>
+- [Two-page customizable document, with steps and embedded videos on enrolling, unenrolling, getting apps, more](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c#content) - Document that you can customize and give to your end users. Has sections on how to enroll Android, iOS, and Windows devices, get apps, unenroll, what to do if you lose your device, and what IT Pros can and can't see on your device.
 
 ##How your end users get their apps
 

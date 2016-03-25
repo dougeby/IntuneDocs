@@ -62,7 +62,19 @@
 #### [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-#### [Microsoft apps you can manage with Intune](microsoft-apps-you-can-manage-with-intune.md)
+
+<!--- need a topic about ms apps with selector for 2 topics, old mam and new mam --->
+#### [Microsoft apps you can manage with Intune]()
+
+<!--- ### [Microsoft apps you can use with Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md) ---->
+
+<!--- Rob thinks this should be removed from TOC
+
+### [Manage license agreements for PC software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md) --->
+
+<!--- Retire should be part of Protect --->
+<!--- ## [Retire apps and data](retire-data-and-devices-from-microsoft-intune-management.md) --->
+
 ### [Retire apps ](retire-apps-using-microsoft-intune.md)
 ### [Help protect your data with remote wipe, remote lock, or passcode reset](help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-microsoft-intune.md)
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
