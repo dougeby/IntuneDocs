@@ -10,7 +10,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 author: robstackmsft
 ---
 # iOS configuration policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] **iOS general configuration policy** to configure settings for:
+Use the Microsoft Intune **iOS general configuration policy** to configure settings for:
 
 -   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
@@ -21,8 +21,7 @@ Use the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] **iOS general conf
 > [!TIP]
 > You can configure terms and conditions for users to ensure that they acknowledge that apps on their device, including personal apps will be evaluated, and noncompliant apps will either be blocked, or reported as noncompliant. Users must accept these terms and conditions before they can enroll their device and use the company portal to get apps. For more information about using terms and conditions, see [Working with terms and conditions policies in Microsoft Intune](http://msdn.microsoft.com/en-us/library/ce59fb93-01fd-4822-a57d-45ca7d89843d).
 
-## Settings for iOS devices
-If the setting you are looking for does not appear in this list, you might be able to create it using an iOS custom policy that lets you import settings you created using the [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). For more information, see [iOS custom policy settings in Microsoft Intune](../Topic/iOS-custom-policy-settings-in-Microsoft-Intune.md).
+If the setting you are looking for does not appear in this topic, you might be able to create it using an iOS custom policy that lets you import settings you created using the [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). For more information, see [iOS custom policy settings in Microsoft Intune](iOS-custom-policy-settings-in-Microsoft-Intune.md).
 
 ## Security settings
 
@@ -101,9 +100,9 @@ If the setting you are looking for does not appear in this list, you might be ab
 
 ## Device capabilities settings - cellular
 
-|Setting name|iOS|
+|Setting name|Details|iOS|
 |----------------|-------|
-|**Allow voice roaming**|Yes|
+|**Allow voice roaming**|-|Yes|
 |**Allow data roaming**|Yes|
 |**Allow global background fetch while roaming**|Yes|
 
@@ -123,11 +122,11 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 > [!NOTE]
 > A single policy can only contain a list of compliant, or a list of noncompliant apps. You cannot specify both in the same policy.
 
-|Setting name|More information|
+|Setting name|Details|
 |----------------|--------------------|
 |**Report noncompliance when users install the listed apps**|Lists the apps that are not managed by Intune which users are not allowed to install and run.|
 |**Do not report noncompliance when users install the listed apps**|Lists the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />[How to specify URLs to app stores](../Topic/iOS-configuration-policy-settings-in-Microsoft-Intune.md#BKMK_URL)|
+|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />[How to specify URLs to app stores](ios-configuration-policy-settings-in-microsoft-intune.md#BKMK_URL)|
 |**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|
 |**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
@@ -136,7 +135,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then specify the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.<br /><br />[How to specify URLs to app stores](../Topic/iOS-configuration-policy-settings-in-Microsoft-Intune.md#BKMK_URL).|
+|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then specify the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.<br /><br />[How to specify URLs to app stores](iOS-configuration-policy-settings-in-microsoft-intune.md#BKMK_URL).|
 |**Allow touch**|Enables or disables the touch screen on the device.|
 |**Allow screen rotation**|Enables or disables changing the screen orientation when you rotate the device.|
 |**Allow volume buttons**|Enables or disables the use of the volume buttons on the device.|
@@ -150,7 +149,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |**Enable zoom adjustments**|Enables or disables zoom adjustments which let you adjust the zoom function.|
 |**Enable invert colors**|Enables or disables the **Invert Colors** accessibility setting which adjusts the display to help users with visual impairments.|
 |**Enable invert colors adjustments**|Enables or disables invert colors adjustments which let you adjust the invert colors function.|
-|**Enable assistive touch**|-|Enables or disables the **Assistive Touch** accessibility setting which helps users perform on screen gestures which might be difficult for them to perform.|
+|**Enable assistive touch**|Enables or disables the **Assistive Touch** accessibility setting which helps users perform on screen gestures which might be difficult for them to perform.|
 |**Enable assistive touch adjustments**|Enables or disables assistive touch adjustments which let you adjust the assistive touch function.|
 |**Enable speech selection**|Enables or disables the **Speak Selection** accessibility settings which can read aloud the text you select.|
 > [!NOTE]
@@ -183,5 +182,5 @@ Copy the URL of the page and use this as the URL to configure the compliant or n
 > You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.
 
 ### See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
+[Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
