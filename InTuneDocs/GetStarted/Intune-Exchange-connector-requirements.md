@@ -6,24 +6,23 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 
-author: jeffgilb
+ms.assetid:
+author: NathBarn
 ---
 # Exchange Connector installation requirements
 
-## Exchange Connector installation requirements
-To prepare to connect [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Exchange, make sure you have completed the following:
+To prepare to connect Microsoft Intune to Exchange, make sure you have completed the following:
 
 |Requirement|More information|
 |---------------|--------------------|
-|Set the Mobile Device Management Authority to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]|[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)|
+|Set the Mobile Device Management Authority to Intune|[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)|
 |Verify you have hardware requirements for the on-premises connector (if connecting to an on-premises Exchange Server)|[Requirements for the Service to Service Connector](network-infrastructure-requirements-for-microsoft-intune.md#BKMK_ServiceConnectorReqs)|
 |Configure a user account with permission to run the designated list of Windows PowerShell cmdlets|PowerShell Cmdlets for Service to Service Connector (See below)|
 
 ## Windows PowerShell Exchange cmdlet requirements
 
 ### PowerShell cmdlets for on-premises Exchange Connector
-You must create an Active Directory user account that is used by the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Exchange Connector. The account must have permission to run the following required Windows PowerShell Exchange cmdlets:
+You must create an Active Directory user account that is used by the Intune Exchange Connector. The account must have permission to run the following required Windows PowerShell Exchange cmdlets:
 
 -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
 
@@ -51,7 +50,7 @@ You must create an Active Directory user account that is used by the [!INCLUDE[w
 
 
 ### PowerShell Cmdlets for Service-to-Service Connector
-You must create an Exchange Online user account that is used by the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Exchange Connector. The account must have permission to run the required Windows PowerShell Exchange cmdlets that are listed below.
+You must create an Exchange Online user account that is used by the Intune Exchange Connector. The account must have permission to run the required Windows PowerShell Exchange cmdlets that are listed below.
 
 -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
 
