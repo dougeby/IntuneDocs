@@ -19,7 +19,7 @@ When new updates are available from Microsoft Update, or you have created a thir
 > [!IMPORTANT]
 > The **Updates** workspace is not displayed in the administrator console until you have installed the client on, and are successfully managing at least one computer client.
 
-As updates are approved and installed, you can examine the success or failure of the installation in the **Updates** workspace of the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.
+As updates are approved and installed, you can examine the success or failure of the installation in the **Updates** workspace of the Intune console.
 
 The following sections will help you to keep software up to date on your managed computers.
 
@@ -42,7 +42,7 @@ The following table shows the values you can configure in the policy and also th
     |**Delay to restart Windows after installation of scheduled updates and applications (minutes)**|Specifies (from 1-30 minutes), the time to wait to restart Windows after the installation of scheduled updates and applications.<br /><br />Recommended value: **15 minutes**|
     |**Delay following Windows restart to begin installing missed scheduled updates and applications (minutes)**|Specifies (from 1-60 minutes), how long to wait to start the installation of updates and applications after Windows is restarted when a scheduled update was missed.<br /><br />Recommended value: **5 minutes**|
     |**Allow logged-on user to control Windows restart after installation of scheduled updates and applications**|Specifies whether the logged-on user can delay restarting Windows (if set to **Yes**), or be notified of the automatic Windows restart (if set to **No**). If no user is logged on when the scheduled installation of updates and applications is completed, Windows is restarted automatically when required. When set to **No**, by default, the time before Windows restarts is set to 5 minutes.<br /><br />Recommended value: **Yes**|
-    |**Prompt user to restart Windows during [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client agent mandatory updates**|Specifies whether the logged on users is prompted to restart Windows when an Intune client mandatory update requires Windows to restart.<br /><br />Recommended value: **Yes**|
+    |**Prompt user to restart Windows during Intune client agent mandatory updates**|Specifies whether the logged on users is prompted to restart Windows when an Intune client mandatory update requires Windows to restart.<br /><br />Recommended value: **Yes**|
     |**Microsoft Intune client agent mandatory updates installation schedule**|Schedules when the installation of client updates occur.<br /><br />Recommended value: not configured|
     |**Delay between prompts to restart Windows after installation of scheduled updates and applications (minutes)**|Specifies how frequently (from 1-1440 minutes) the user is prompted to restart Windows when a scheduled update or application that requires restarting Windows is installed, and the user delays the restart.<br /><br />Recommended value: **30 minutes**|
 
@@ -127,7 +127,7 @@ You can deploy updates for software that is not made by Microsoft. You do this b
 
 4.  On the **Requirements** page of the wizard, choose the architecture (32-bit, 64-bit, or both), and the operating systems of the managed computers to which this update will be applicable.
 
-5.  On the **Detection rules** page, specify how Intune determines whether the update already exists on managed computers. If you use the default option, **Use the default detection rules**, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] always installs the update package on each targeted computer once.
+5.  On the **Detection rules** page, specify how Intune determines whether the update already exists on managed computers. If you use the default option, **Use the default detection rules**, Intune always installs the update package on each targeted computer once.
 
     > [!NOTE]
     > If the update setup file that you specified is a Windows Installer or .msp file, the **Detection rules** page of the wizard does not appear. This is because Windows Installer and .msp files contain their own instructions for detecting previous update installations.
@@ -142,7 +142,7 @@ You can deploy updates for software that is not made by Microsoft. You do this b
 
 6.  Provide any further information that is required to configure the detection rule such as a file path and name, Windows Installer product code, or a registry key, and then click **Next**.
 
-7.  On the **Prerequisites** page of the wizard, you specify any software that must already be installed before this update can be installed. You can specify **None**, select a software package that has already been added to, and is managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], or you can specify one of the following rules to describe the software:
+7.  On the **Prerequisites** page of the wizard, you specify any software that must already be installed before this update can be installed. You can specify **None**, select a software package that has already been added to, and is managed by Intune, or you can specify one of the following rules to describe the software:
 
     -   **File exists**
 
@@ -171,9 +171,9 @@ Some updates use nonstandard interpretations for return codes. In this case, you
 
 13. On the **Summary** page of the wizard, review the actions that will be taken, and then click **Upload** to complete the wizard.
 
-The uploaded update is stored in your Intune cloud storage. If you have insufficient free space to upload the update package, you are notified of this during the upload process. Intune cannot determine sufficient free space until after the update upload has started, because compressed setup and installation files require more space when they are uncompressed.
+The uploaded update is stored in your Intune cloud storage. If you have insufficient free space to upload the update package, you are notified of this during the upload process. Intune cannot determine sufficient free space until after the update upload has started, because compressed setup and installation files require more space when they are uncompressed.F
 
-After it is uploaded into [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], a third-party update is displayed in the **Updates** workspace in the **All Updates** pane. You can then approve and deploy the update. For more information, see the [Approving and declining updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve1) section in this topic.
+After it is uploaded into Intune, a third-party update is displayed in the **Updates** workspace in the **All Updates** pane. You can then approve and deploy the update. For more information, see the [Approving and declining updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve1) section in this topic.
 
 ## Approving and declining updates
 When updates are ready to install, a message is shown on the **Updates Overview** page of the **Updates** workspace, under **Update Status**. Click this message to open the **All Updates** page to see which updates are ready for approval.

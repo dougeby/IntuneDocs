@@ -10,10 +10,10 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 author: robstackmsft
 ---
 
-[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] lets you manage a range of devices by *enrolling* them into the service. Users can then use a *company portal* to perform a range of operations such as enrolling their device, browsing and installing apps, making sure their device is compliant with company policies, and contacting their IT support.
-See later in this topic for a full list of the capabilities that enrolling devices gives you.
+Microsoft Intune lets you manage a range of devices by *enrolling* them into the service. Users can then use a *company portal* to perform a range of operations such as enrolling their device, browsing and installing apps, making sure their device is compliant with company policies, and contacting their IT support.
+This topic gives a full list of the capabilities that enrolling devices gives you.
 
-Management, inventory, app deployment, provisioning, and retirement are all handled through the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administration console. Users gain access to the company portal which allows them to install apps, enroll and remove devices, and helps them contact their IT department or helpdesk.
+Management, inventory, app deployment, provisioning, and retirement are all handled through the Intune administration console. Users gain access to the company portal which allows them to install apps, enroll and remove devices, and helps them contact their IT department or helpdesk.
 
 
 
@@ -44,7 +44,7 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 |Wi-Fi profiles|Deploy wireless network settings to your users. By deploying these settings, you minimize the end-user effort required to connect to the corporate network.|[Help users connect to company networks using Wi-Fi profiles with Microsoft Intune](help-users-connect-to-company-networks-using-wi-fi-profiles-with-microsoft-intune.md)|
 |Email profiles|Create and deploy email settings to devices. This lets users access corporate email on their personal devices without any required setup on their part.|[Configure access to corporate email using email profiles with Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)|
 |VPN profiles|Deploy VPN settings to users and devices in your organization. By deploying these settings, you minimize the end-user effort required to connect to resources on the company network.|[Help users connect to their work using VPN profiles with Microsoft Intune](help-users-connect-to-their-work-using-vpn-profiles-with-microsoft-intune.md)|
-|Conditional access policies|Manage access to Microsoft Exchange email and SharePoint Online from devices that are not managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].|[Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-sharepoint-with-microsoft-intune.md)|
+|Conditional access policies|Manage access to Microsoft Exchange email and SharePoint Online from devices that are not managed by Intune.|[Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-sharepoint-with-microsoft-intune.md)|
 
 ## Inventory and reporting
 

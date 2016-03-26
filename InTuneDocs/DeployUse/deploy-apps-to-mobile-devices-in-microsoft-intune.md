@@ -21,7 +21,7 @@ For information about how to update apps, see [Update apps using Microsoft Intun
 > [!IMPORTANT]
 > The information in this topic helps you to deploy apps to [enrolled Windows PCs](https://technet.microsoft.com/library/mt346003.aspx) and other mobile devices. If you want to deploy apps to  [Windows PCs that you manage using the client software](https://technet.microsoft.com/library/dn646959.aspx), see [Deploy apps to Windows PCs in Microsoft Intune](../Topic/Deploy-apps-to-Windows-PCs-in-Microsoft-Intune.md).
 
-## <a name="BKMK_Conf"></a>Configure the app
+## Configure the app
 In this procedure, you'll use the Intune Software Publisher to configure the properties of the app and, where applicable, upload it to your cloud storage space.
 
 ### To configure an app
@@ -61,7 +61,7 @@ In this procedure, you'll use the Intune Software Publisher to configure the pro
     > [!TIP]
     > Depending on the installer type you are using, some of these values might have been automatically entered, or might not appear.
 
-    |Setting|Details|
+|Setting|Details|
     |-----------|-----------|
     |**Publisher**|Enter the name of the publisher of the app.|
     |**Name**|Enter the name of the app as it will be displayed in the company portal.<br /><br />Make sure all app names you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.|
@@ -85,10 +85,10 @@ In this procedure, you'll use the Intune Software Publisher to configure the pro
 
 The app is displayed on the **Apps** node of the **Apps** workspace.
 
-## <a name="BKMK_Depl"></a>Deploy the app
+## Deploy the app
 In this procedure, you'll deploy the app to selected devices or users.
 
-#### To deploy the app
+### To deploy the app
 
 1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Apps** to view the list of apps you manage.
 
@@ -98,7 +98,7 @@ In this procedure, you'll deploy the app to selected devices or users.
 
 4.  On the **Deployment Action** page, configure the following:
 
-    |Setting|Details|
+|Setting|Details|
     |-----------|-----------|
     |**Approval**|Choose whether the deployment is:<br /><br />**Required** (mandatory install)<br /><br />**Available** (users install from the company portal on demand)<br /><br />**Not Applicable** (the app is not installed or shown in the company portal)<br /><br />**Uninstall** (the app will be uninstalled from targeted devices)|
     |**Deadline**|For required installations, choose how soon the app will be deployed. You can choose from the predefined values, or select **Custom** to configure your own deadline.|
@@ -112,10 +112,10 @@ In this procedure, you'll deploy the app to selected devices or users.
 
 |||
 |-|-|
-|![](../Image/Available-install-on-iOS.png)|If you deployed the app as **Available**, it will be displayed in the company portal on users device from where they can install the app. For example, in this screenshot, the Bing for iOS app was deployed using the **External Link** installation type, with a custom icon, and the option **Display this as a featured app and highlight it in the company portal** was selected.|
-|![](../Image/iOS-Required-install.PNG)|If you deployed the app as required, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed using the **Managed iOS app from the app store** installation type.|
+|![](../media/Available-install-on-iOS.png)|If you deployed the app as **Available**, it will be displayed in the company portal on users device from where they can install the app. For example, in this screenshot, the Bing for iOS app was deployed using the **External Link** installation type, with a custom icon, and the option **Display this as a featured app and highlight it in the company portal** was selected.|
+|![](../media/iOS-Required-install.PNG)|If you deployed the app as required, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed using the **Managed iOS app from the app store** installation type.|
 
-## <a name="BKMK_Monitor"></a>Monitor the app
+## Monitor the app
 You can see the apps you manage, and their deployment status in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console.
 
 ### To view the apps you manage and their status
@@ -126,7 +126,7 @@ The list of apps you manage will be displayed. You can click on any app to see a
 > [!TIP]
 > You can use the **Filters** drop-down list to show only apps that meet the criteria you specify, like apps that failed to install, or apps that were successfully deployed.
 > 
-> ![](../Image/App-filters.JPG)
+> ![](../media/App-filters.JPG)
 
 Additionally, the **Dashboard** workspace shows an overview of the status of your apps. If you click anywhere in the overview, you'll be taken to the list of apps.
 
@@ -144,5 +144,5 @@ On the **Software Properties** page for the app, click one of these tabs:
 As before, you can use the **Filters** drop-down list to configure the values shown on each of the tabs.
 
 ### See Also
-[Deploy and configure apps with Microsoft Intune](../Topic/Deploy-and-configure-apps-with-Microsoft-Intune.md)
+[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
 
