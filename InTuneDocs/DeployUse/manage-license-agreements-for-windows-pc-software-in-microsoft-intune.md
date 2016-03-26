@@ -10,12 +10,12 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 author: robstackmsft
 ---
 # Manage license agreements for Windows PC software in Microsoft Intune
-[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] lets you add and manage license agreement information for software that was purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can also organize this information into logical groups.
+Microsoft Intune lets you add and manage license agreement information for software that was purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can also organize this information into logical groups.
 
 > [!IMPORTANT]
 > This feature is provided for convenience only and accuracy is not guaranteed. You should not rely on it to confirm compliance with Microsoft Volume Licensing agreements. Microsoft will not use any data gathered to investigate potential violations of, or compliance with license agreements you may have with us.
 > 
-> Licenses you add to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] do not affect your license agreements or entitlements to use your software.  For example, deleting a license/agreement pair from [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you do not delete or nullify license agreements that exist between you and Microsoft.
+> Licenses you add to Intune do not affect your license agreements or entitlements to use your software.  For example, deleting a license/agreement pair from [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you do not delete or nullify license agreements that exist between you and Microsoft.
 
 In the **Licenses** workspace of the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administrator console, you can:
 
@@ -33,9 +33,9 @@ Additionally, you can generate reports that show installation and license counts
 > The **Licenses** workspace is not displayed in the administrator console until you are managing at least one Windows PC with the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] computer client.
 
 ## Add Microsoft Volume Licensing agreements
-[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Volume Licensing agreements provide license information for software that was purchased through Microsoft Volume Licensing agreements. You can add Microsoft Volume Licensing agreements to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] by providing matched pairs of agreement numbers. The agreement or authorization numbers must be matched to the correct license or enrollment numbers. Agreement number pairs are obtained when you purchase your license agreements from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
+[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] Volume Licensing agreements provide license information for software that was purchased through Microsoft Volume Licensing agreements. You can add Microsoft Volume Licensing agreements to Intune by providing matched pairs of agreement numbers. The agreement or authorization numbers must be matched to the correct license or enrollment numbers. Agreement number pairs are obtained when you purchase your license agreements from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
-### <a name="BKMK_AddVLAgreements"></a>To add a Microsoft Volume Licensing agreement
+### To add a Microsoft Volume Licensing agreement
 
 1.  In the [Microsoft Intune administrator console](https://account.manage.microsoft.com/admin/default.aspx), click **Licenses**.
 
@@ -115,12 +115,12 @@ After you refresh the volume license information, you can compare the license in
 > The **Product Title** displayed for all Microsoft Volume License agreements is **Not available**.
 
 ## Add and edit other software licensing agreements
-You can also add other types of license agreements to [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] in addition to Microsoft Volume Licensing agreements. These agreements can include non-Microsoft software or Microsoft software that was purchased through a retailer.
+You can also add other types of license agreements to Intune in addition to Microsoft Volume Licensing agreements. These agreements can include non-Microsoft software or Microsoft software that was purchased through a retailer.
 
 > [!IMPORTANT]
 > You must have at least one Windows PC enrolled in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] before you can add an agreement.  In addition, at least one enrolled computer must have uploaded a licensable software package that you want to use to add a license agreement.
 
-### <a name="BKMK_AddOtherSoftwareAgreement"></a>To add other software agreements
+### To add other software agreements
 
 1.  In the [Microsoft Intune administrator console](https://account.manage.microsoft.com/admin/default.aspx), click **Licenses**.
 
@@ -159,7 +159,7 @@ You can also add other types of license agreements to [!INCLUDE[wit_firstref](./
 
 The **All Agreements** list view is displayed.
 
-## <a name="BKMK_LicenseGroups"></a>Manage license agreements
+## Manage license agreements
 Software licensing agreements can be added to license groups. You can use license groups to organize your license agreements in units that are logical for your organization. Additionally, you can delete license agreements which you previously created.
 
 |||
@@ -170,6 +170,6 @@ Software licensing agreements can be added to license groups. You can use licens
 |Delete a license group|In the **Licenses** workspace, choose a license group, and then click **Delete License Group** from the **Tasks** Menu. **Tip:** Any licenses that were in the deleted group are moved to the **Unassigned agreements** license group.|
 |Delete a license agreement|In the **Licenses** workspace, choose an agreement, and then click **Delete**. **Tip:** After you delete Volume Licensing agreements, to update the license information, click **Refresh Now** on the **Licenses Overview** page or on the **General** tab for a specific license group.|
 
-## See Also
+### See Also
 [Deploy apps to Windows PCs in Microsoft Intune](deploy-apps-to-windows-pcs-in-microsoft-intune.md)
 

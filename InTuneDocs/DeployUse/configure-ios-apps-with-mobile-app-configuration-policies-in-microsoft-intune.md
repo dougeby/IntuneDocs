@@ -10,7 +10,7 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 author: robstackmsft
 ---
 # Configure iOS apps with mobile app configuration policies in Microsoft Intune
-Use mobile app configuration policies in [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] to supply settings that might be required when the user runs an app. For example, an app might require the user to specify:
+Use mobile app configuration policies in Microsoft Intune to supply settings that might be required when the user runs an app. For example, an app might require the user to specify:
 
 -   A custom port number when it is run
 
@@ -32,7 +32,7 @@ You do not deploy these policies directly to users and devices. Instead, you ass
 > -   **Managed iOS app from the app store**
 > -   **App package for iOS**
 > 
-> For more information about app installation types, see [Plan for app deployment in Microsoft Intune](../Topic/Plan-for-app-deployment-in-Microsoft-Intune.md).
+> For more information about app installation types, see [Plan for app deployment in Microsoft Intune](../Topic/plan-for-app-deployment-in-Microsoft-Intune.md).
 
 ## Configure a mobile app configuration policy
 
@@ -52,7 +52,7 @@ You do not deploy these policies directly to users and devices. Instead, you ass
     > 
     > The format of the XML property list will vary depending on the app you are configuring. Contact the supplier of the app for details about the exact format to use.
     > 
-    > [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] supports the following data types in a property list:
+    > Intune supports the following data types in a property list:
     > 
     > &lt;integer&gt;
     > &lt;real&gt;
@@ -63,7 +63,7 @@ You do not deploy these policies directly to users and devices. Instead, you ass
     > 
     > For more information about data types, see [About Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in the iOS Developer Library.
     >
-        > Additionally, [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] supports the following token types in the property list:
+        > Additionally, Intune supports the following token types in the property list:
     >    
     > \{\{userprincipalname\}\} - (Example: **John@contoso.com**)
     > \{\{mail\}\} - (Example: **John@contoso.com**)
@@ -83,7 +83,7 @@ You do not deploy these policies directly to users and devices. Instead, you ass
 5.  Click **Validate** to ensure that the XML you entered is in a valid property list format.
 
     > [!IMPORTANT]
-    > When you click **Validate**, [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] checks that the XML you entered is in a valid format. It does not check that the XML property list will work with the app it is associated with.
+    > When you click **Validate**, Intune checks that the XML you entered is in a valid format. It does not check that the XML property list will work with the app it is associated with.
 
 6.  When you are done, click **Save Policy**.
 
@@ -99,7 +99,7 @@ Then, continue to deploy and monitor the app deployment as usual.
 When the deployed app is run on a device, it will run with the settings you configured in the mobile app configuration policy.
 
 > [!TIP]
-> If one or more mobile app configuration policies conflict, neither policy is enforced, and the conflict will be reported in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] admin console **Dashboard**.
+> If one or more mobile app configuration policies conflict, neither policy is enforced, and the conflict will be reported in the Intune administration console **Dashboard**.
 
 ## Example format for mobile app configuration XML file
 
@@ -132,7 +132,7 @@ When you create a mobile app configuration file, you can specify one or more of 
 ```
 
 
-## See Also
-[Deploy and configure apps with Microsoft Intune](Deploy-and-configure-apps-with-Microsoft-Intune.md)
-[Deploy apps to mobile devices in Microsoft Intune](Deploy-apps-to-mobile-devices-in-Microsoft-Intune.md)
+### See Also
+[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
+[Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 

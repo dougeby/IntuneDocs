@@ -10,13 +10,13 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 author: robstackmsft
 ---
 # Control Microsoft Passport settings on devices with Microsoft Intune
-[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] lets you integrate with Microsoft Passport for Work which is an alternative sign-in method that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
+Microsoft Intune lets you integrate with Microsoft Passport for Work which is an alternative sign-in method that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
 
 Passport lets you use a **user gesture** to login, instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
 
-[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] integrates with Passport for Work in two ways:
+Intune integrates with Passport for Work in two ways:
 
--   You can use [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy to control which gestures users can and cannot use to login
+-   You can use an Intune policy to control which gestures users can and cannot use to login.
 
 -   You can store authentication certificates in the Passport for Work key storage provider (KSP). For more information, see [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).
 
@@ -26,7 +26,7 @@ Passport lets you use a **user gesture** to login, instead of a password. A user
 
 2.  Choose from the following values that will affect all enrolled Windows 10 and Windows 10 Mobile devices:
 
-    |Setting|Description|
+|Setting|Description|
     |-----------|---------------|
     |-   **Disable Passport for Work on enrolled devices**<br />-   **Enable Passport for Work on enrolled devices**|Enables or disables the use of Passport for work on all enrolled Windows 10 and Windows 10 mobile devices. **Important:** This policy is enabled by default and applied to all Windows 10 devices when they enroll.|
     |**Use a Trusted Platform Module (TPM)**|A Trusted Platform Module (TPM) chip provides an additional layer of data security.<br /><br />Choose one of the following values:<br /><br />-   **Required** (default) - Only devices with an accessible TPM can provision Passport for Work.<br />-   **Preferred** - Devices first attempt to use a TPM. If this is not available, they can use software encryption|
@@ -44,8 +44,8 @@ Passport lets you use a **user gesture** to login, instead of a password. A user
 3.  When you are finished, click **Save**.
 
 ## Further information
-For more information about Microsoft Passport, see [Microsoft Passport guide](https://technet.microsoft.com/library/mt589441(v=vs.85).aspx) in the Windows 10 documentation.
+For more information about Microsoft Passport, see the [Microsoft Passport guide](https://technet.microsoft.com/library/mt589441(v=vs.85).aspx) in the Windows 10 documentation.
 
-## See Also
+### See Also
 [Protect data and devices with Microsoft Intune](protect-data-and-devices-with-microsoft-intune.md)
 

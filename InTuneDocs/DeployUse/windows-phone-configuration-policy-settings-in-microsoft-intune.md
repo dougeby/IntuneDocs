@@ -16,7 +16,7 @@ Use the Microsoft Intune **Windows Phone general configuration policy** to confi
 
 -   **Compliant and noncompliant apps** - Specify a list of apps that are compliant, or not compliant in your company. Windows Phone devices can block, or allow installation of these apps.
 
-## Security settings
+## Password settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
@@ -76,7 +76,7 @@ Use the Microsoft Intune **Windows Phone general configuration policy** to confi
 |**Allow removable storage**|Lets the device use removable storage, for example, an SD card.|Yes|Yes|
 |**Allow Wi-Fi**|Enables or disables the Wi-Fi functionality of the device.|No|Yes|
 |**Allow Wi-Fi tethering**|Allow the use of Wi-Fi tethering on the device.|No|Yes
-|**Allow automatic connection to free Wi-Fi hotspots**||No|Yes|
+|**Allow automatic connection to free Wi-Fi hotspots**|Allow the device to automatically connect to free Wi-Fi hotspots and automatically accept any terms of use.|No|Yes|
 |**Allow Wi-Fi hotspot reporting**|Send information about Wi-Fi connections to help discover nearby connections.|No|Yes|
 |**Allow geolocation**|Allows the device to utilize location information.|No|Yes|
 |**Allow NFC**|Allows operations that use near field communication.|No|Yes|

@@ -90,7 +90,7 @@ Additional information for devices that run Windows 8.1
 |**Allow untrusted TLS certificates**|No|No|No|Yes|No|
 |**Allow personal wallet software while locked**|No|No|No|Yes|No|
 |**Allow factory reset**|No|No|No|No|Yes (Samsung KNOX only)|
-To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](http://support.microsoft.com/kb/3013816) on each device.
+
 
 ## Cloud settings – documents and data
 
@@ -174,7 +174,7 @@ To enforce encryption on devices that run Windows 8.1, you must install the [Dec
 |**Allow geolocation**<br /><br />(allows the device to utilize location information)|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
 |**Allow NFC**<br /><br />(allows operations that use near field communication)|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
 |**Allow Bluetooth**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
-|**Allow power off** If disabled, the setting **Number of repeated sign in failures to allow before the device is wiped** for Samsung KNOX devices does not function.|No|No|No|No|Yes (Samsung KNOX only)|
+|**Allow power off**<br>If disabled, the setting **Number of repeated sign in failures to allow before the device is wiped** for Samsung KNOX devices does not function.|No|No|No|No|Yes (Samsung KNOX only)|
 
 ## Device capabilities settings - cellular
 
@@ -197,5 +197,5 @@ To enforce encryption on devices that run Windows 8.1, you must install the [Dec
 |**Allow YouTube**|No|No|No|No|Yes (Samsung KNOX only)|
 
 ### See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
+[Manage settings and features on your devices with Microsoft Intune policies.md](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

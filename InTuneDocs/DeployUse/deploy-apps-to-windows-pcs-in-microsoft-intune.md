@@ -10,12 +10,13 @@ ms.assetid: 4105b676-11f1-4cd2-88a4-b37d186cdbdb
 author: robstackmsft
 ---
 # Deploy apps to Windows PCs in Microsoft Intune
-Now that you've [learned the basics](https://technet.microsoft.com/library/dn646955.aspx) about Microsoft Intune app deployment, in this topic, you'll learn how to actually configure and deploy apps to Windows PCs you manage. 
+Now that you've [learned the basics](../PlanDesign/plan-for-app-deployment-in-microsoft-intune.md) about Microsoft Intune app deployment, in this topic, you'll learn how to actually configure and deploy apps to Windows PCs you manage. 
 
-For information about how to update and retire apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
+For information about how to update apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
+For information about how to retire apps, see [Retire apps using Microsoft Intune](retire-apps-using-microsoft-intune.md).
 
 > [!IMPORTANT]
-> The information in this topic helps you to deploy apps to [Windows PCs that you manage using the client software](https://technet.microsoft.com/library/dn646959.aspx). If you want to deploy apps to [enrolled Windows PCs](https://technet.microsoft.com/library/mt346003.aspx) and other mobile devices, see [Deploy apps to mobile devices in Microsoft Intune - deleted](deploy-apps-to-mobile-devices-in-microsoft-intune.md).
+> The information in this topic helps you to deploy apps to Windows PCs that you manage using the Intune client software. If you want to deploy apps to enrolled Windows PCs and other mobile devices, see [Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md).
 
 ## Configure the app
 In this procedure, you'll use the Intune Software Publisher to configure the properties of the app and upload it to your cloud storage space.
@@ -36,7 +37,7 @@ In this procedure, you'll use the Intune Software Publisher to configure the pro
     |**Select the software installer file type**|This indicates the type of software you want to deploy. For a Windows PC, choose **Windows Installer**.|
     |**Specify the location of the software setup files**|Enter the location of the installation files or click **Browse** to select the location from a list.|
     |**Include additional files and subfolders from the same folder**|Some software that uses Windows Installer requires supporting files which are typically found in the same folder as the installation files. Select this option if you also want to deploy these supporting files.|
-    This installation type uses some of your cloud storage space.
+   This installation type uses some of your cloud storage space.
 
 3.  On the **Software description** page, configure the following:
 
@@ -89,7 +90,7 @@ In this procedure, you'll deploy the app to selected devices or users.
     |**Deadline**|For required installations, choose how soon the app will be deployed. You can choose from the predefined values, or select **Custom** to configure your own deadline.|
 
 ## Monitor the app
-You can see the apps you manage, and their deployment status in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.
+You can see the apps you manage, and their deployment status in the Intune administration console.
 
 ### To view the apps you manage and their status
 In the **Apps** workspace, click the **Apps** node.
@@ -99,7 +100,7 @@ The list of apps you manage will be displayed. You can click on any app to see a
 > [!TIP]
 > You can use the **Filters** drop-down list to show only apps that meet the criteria you specify, like apps that failed to install, or apps that were successfully deployed.
 > 
-> ![](./media/App-filters.JPG)
+> ![](./media/App-filters.png)
 
 Additionally, the **Dashboard** workspace shows an overview of the status of your apps. If you click anywhere in the overview, you'll be taken to the list of apps.
 
