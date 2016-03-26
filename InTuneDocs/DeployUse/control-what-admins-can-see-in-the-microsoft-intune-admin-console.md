@@ -10,9 +10,9 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 author: robstackmsft
 ---
 # Customize Intune console views according to admin roles
-You can filter the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console view to allow your admins to see only the items they need to see for their role. For example, you can allow only admin console operators to update malware definitions or reset the passcode on devices. You can do this by using preset **designations** that you assign to specific users. When these users access the admin console, they only see items specific to their designation.
+You can filter the Microsoft Intune admin console view to allow your admins to see only the items they need to see for their role. For example, you can allow only admin console operators to update malware definitions or reset the passcode on devices. You can do this by using preset **designations** that you assign to specific users. When these users access the admin console, they only see items specific to their designation.
 
-<!--- Use this feature to help you assign administration tasks to staff while still ensuring the security of your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] data. --->
+Use this feature to help you assign administration tasks to staff while still ensuring the security of your Intune data.
 
 ## How to create a custom view
 
@@ -56,14 +56,6 @@ You can filter the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin 
 
         -   Passcode reset
 
-When the admin you configured next opens the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console, they will be given the level of access you specified.
+When the admin you configured next opens the Intune admin console, they will be given the level of access you specified.
 
-<blockquote>
-  <p>
-    Unless someone like you<br>
-    Cares a whole awful lot,<br>
-    Nothing is going to get better.<br>
-    It’s not.
-  </p>
-  <footer>— <cite title="Dr. Seuss">Dr. Seuss</cite></footer>
-</blockquote>
+

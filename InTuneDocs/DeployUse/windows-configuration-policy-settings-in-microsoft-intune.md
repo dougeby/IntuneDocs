@@ -17,7 +17,7 @@ Use the Microsoft Intune **Windows general configuration policy** to configure s
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
 |**Required password type**|Specifies the type of password that will be required, such as numeric only, or alphanumeric.|Yes|Yes|
-|**Required password type – Minimum number of character sets**|There are four character sets, lowercase letters, uppercase letters, numbers, and symbols. This setting specifies how many different character sets must be included in the password). However, for iOS devices, this specifies the number of symbol characters must be included in the password)|Yes|Yes|
+|**Required password type – Minimum number of character sets**|There are four character sets, lowercase letters, uppercase letters, numbers, and symbols. This setting specifies how many different character sets must be included in the password. However, for iOS devices, this specifies the number of symbol characters must be included in the password.|Yes|Yes|
 |**Minimum password length**<sup>1</sup>|Configures the minimum required length (in characters) for the password on devices.|Yes|Yes|
 |**Number of repeated sign-in failures to allow before the device is wiped**|Wipes the device if the login fails this number of times.|Yes|Yes|
 |**Minutes of inactivity before screen turns off**|Choose the number of minutes a device must be idle before a password is required to unlock it.| Yes|Yes|
@@ -80,14 +80,14 @@ Use the Microsoft Intune **Windows general configuration policy** to configure s
 |**Allow plug-ins**|User can add plug-ins to Internet Explorer.|Yes|No|
 |**Allow active scripting**|Browser can run scripts, such as Active X scripts.|Yes|No|
 |**Allow fraud warning**|Enable or disable warnings of potential fraudulent websites.|Yes|No|
-|**Allow intranet site for single word entry**|Allows use of a single word to direct Internet Explorer to a web site, such as Bing|Yes|No|
-|**Allow automatic detection of intranet network**|-|Yes|No|
+|**Allow intranet site for single word entry**|Allows use of a single word to direct Internet Explorer to a web site, such as Bing.|Yes|No|
+|**Allow automatic detection of intranet network**|Helps configure security for intranet sites in Internet Explorer.|Yes|No|
 |**Security level for Internet**|Set the Internet Explorer security level for Internet sites.|Yes|No|
 |**Security level for intranet**|Set the Internet Explorer security level for intranet sites.|Yes|No|
 |**Security level for trusted sites**|Configure the security level for the trusted sites zone.|Yes|No|
 |**Security level for restricted sites**|Configure the security level for the restricted sites zone.|Yes|No|
 |**Send Do Not Track header**|In Internet Explorer, send a do not track header to visited sites.|Yes|No|
-|**Allow Enterprise Mode menu access**|Yes|No|
+|**Allow Enterprise Mode menu access**|Lets users access the Enterprise Mode menu options from Internet Explorer.<br>If selected, you can also specify a **Logging report location** which contains a URL to a report which shows websites for which users have turned on Enterprise Mode access.|Yes|No|
 |**Enterprise Mode site list location**|Specify the location of the list of websites that will use Enterprise Mode when it is active.||Yes|No|
 
 ## Device capabilities settings - cellular

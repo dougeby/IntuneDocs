@@ -30,7 +30,7 @@ Then use one or more of the following methods to get the client installed:
 
 -   [Install the Microsoft Intune client software as part of an image](install-the-windows-pc-client-with-microsoft-intune.md#BKMK_Image)
 
-If you no longer need to manage a computer with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], you can retire the computer, which also removes the client software from the computer. For more information, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+If you no longer need to manage a computer with Intune, you can retire the computer, which also removes the client software from the computer. For more information, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 ## To download the client software
 
@@ -39,7 +39,7 @@ If you no longer need to manage a computer with [!INCLUDE[wit_nextref](./include
 2.  On the **Client Software Download** page, click **Download Client Software** and save the **Microsoft_Intune_Setup.zip** package containing the software to a secure location on your network.
 
     > [!NOTE]
-    > The [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] client software installation package contains information about your account. If unauthorized users gain access to the installation package, they can enroll computers to the account that is represented by its embedded certificate.
+    > The Intune client software installation package contains information about your account. If unauthorized users gain access to the installation package, they can enroll computers to the account that is represented by its embedded certificate.
 
 3.  Extract the contents of the installation package to the secure location on your network.
 
@@ -71,13 +71,13 @@ If you no longer need to manage a computer with [!INCLUDE[wit_nextref](./include
     For more information about how to use Group Policy to automatically deploy software, see your Windows Server documentation.
 
 ## How users can self-enroll their computers
-Users can self-enroll each of their computers through the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] company portal. Each enrolled computer is linked to the user account that was used to install the client software.
+Users can self-enroll each of their computers through the Intune company portal. Each enrolled computer is linked to the user account that was used to install the client software.
 
 > [!NOTE]
 > -   The user must be an administrator on the computer to install the client software.
 > -   Self-enrolling requires that Internet Explorer is installed on the client computer.
-> -   Each time a user self-enrolls a computer, it uses an [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] license.
-> -   You must use a work or school acccount to self-enroll a computer. You cannot self-enroll a computer using a Microsoft account.
+> -   Each time a user self-enrolls a computer, it uses an Intune license.
+> -   You must use a work or school account to self-enroll a computer. You cannot self-enroll a computer using a Microsoft account.
 > -   If the client software is already installed on a computer, the end-user will receive an error.
 
 ### To self-enroll a computer (information for end-users)
@@ -88,12 +88,12 @@ Users can self-enroll each of their computers through the [!INCLUDE[wit_firstref
 
 3.  Click **Download Software** and then click **Run**.
 
-4.  Click **Next** to start the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Setup Wizard.
+4.  Click **Next** to start the Microsoft Intune Setup Wizard.
 
 5.  When the setup wizard has completed, click **Finish**.
 
 ## Install the Microsoft Intune client software as part of an image
-You can deploy the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software to computers as part of an operating system image by using the following example procedure as a basis:
+You can deploy the Intune client software to computers as part of an operating system image by using the following example procedure as a basis:
 
 1.  Copy the client installation files, **Microsoft_Intune_Setup.exe** and **MicrosoftIntune.accountcert** to the **%Systemdrive%\Temp\Microsoft_Intune_Setup** folder on the reference computer.
 
@@ -110,7 +110,7 @@ You can deploy the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client 
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
     ```
     > [!TIP]
-    > The **SetupComplete.cmd** script enables Windows Setup to make modifications to the system before a user logs on. The **/PrepareEnroll** command-line argument prepares a targeted computer to be automatically enrolled in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] after Windows Setup finishes.
+    > The **SetupComplete.cmd** script enables Windows Setup to make modifications to the system before a user logs on. The **/PrepareEnroll** command-line argument prepares a targeted computer to be automatically enrolled in Intune after Windows Setup finishes.
 
 4.  Put **SetupComplete.cmd** in the **%Windir%\Setup\Scripts** folder on the reference computer.
 

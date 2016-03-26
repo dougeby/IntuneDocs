@@ -33,11 +33,11 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Minimum password length**|Specifies the minimum number of characters in the password.|Yes|
 |**Allow simple passwords**|Allow simple passwords like ‘0000’ and ‘1234’.|Yes|
 |**Number of repeated sign-in failures to allow before the device is wiped**|Wipes the device if this number of login attempts fail.|Yes|
-|**Minutes of inactivity before screen turns off**<sup>1</sup>|Yes|
+|**Minutes of inactivity before screen turns off**<sup>1</sup>|Specify the number of minutes before the device display is turned off.|Yes|
 |**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|
-|**Remember password history**|Yes|
-|**Remember password history** – **Prevent reuse of previous passwords**|Yes|
-|**Minutes of inactivity before password is required**<sup>1</sup>|-|Yes|
+|**Remember password history**|Specifies whether the user can use passwords they have previously used.|Yes|
+|**Remember password history** – **Prevent reuse of previous passwords**|Specifies the number of previously used passwords that are remembered by the device.|Yes|
+|**Minutes of inactivity before password is required**<sup>1</sup>|Specifies how long the device can remain idle before the user must re-enter their password.|Yes|
 |**Allow fingerprint unlock**|Allow using a fingerprint to unlock the device.|iOS 7.1 and later|
 <sup>1</sup> For iOS devices, when you configure the settings **Minutes of inactivity before screen turns off** and **Minutes of inactivity before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
 
@@ -47,74 +47,73 @@ If the setting you are looking for does not appear in this topic, you might be a
 |----------------|-------|
 |**Allow screenshot**|Allows the user to capture the contents of the screen as an image.|Yes|
 |**Allow control center in lock screen**|Controls whether the control center app can be accessed when the device is locked.|iOS 7.1 and later|
-|**Allow notification view in lock screen**|-|iOS 7.1 and later|
+|**Allow notification view in lock screen**|Allow the user to access the notifications view without unlocking the device.|iOS 7.1 and later|
 |**Allow today view in lock screen**|Controls whether notifications can be viewed when the device is locked.|iOS 7.1 and later|
-|**Allow diagnostic data submission**|Yes|
-|**Allow untrusted TLS certificates**|Yes|
-|**Allow passbook while locked**|Yes|
+|**Allow diagnostic data submission**|Allow or block the device from submitting diagnostic data to Apple.|Yes|
+|**Allow untrusted TLS certificates**|Allow untrusted Transport Layer Security certificates on the device.|Yes|
+|**Allow passbook while locked**|Allow the user to access the Passbook app while the device is locked.|Yes|
 
 ## Cloud settings – documents and data
 
 |Setting name|Details|iOS|
 |----------------|-------|
 |**Allow backup to iCloud**|Allows the user to back up the device to iCloud.|Yes|
-|**Allow document sync to iCloud**|Yes|
-|**Allow Photo Stream sync to iCloud**|Yes|
-|**Require encrypted backup**|Yes|
+|**Allow document sync to iCloud**|Allow document and key-value synchronization to your iCloud storage space.Yes|
+|**Allow Photo Stream sync to iCloud**|Allow photos on the device to sync to iCloud.|Yes|
+|**Require encrypted backup**|Require any device backups to be encrypted.|Yes|
 
 ## Application settings - browser
 
 |Setting name|Details|iOS|
 |----------------|-------|
-|**Allow Safari**|Yes|
+|**Allow Safari**|Specify whether the Safari browser can be used on the device.|Yes|
 |**Allow autofill**|User can change autocomplete settings in the browser.|Yes|
-|**Allow pop-up blocker**|Yes|
-|**Allow cookies**|Yes|
-|**Allow Java scripting**|Yes|
-|**Allow fraud warning**|Yes|
+|**Allow pop-up blocker**|Enable or disable the browser pop-up blocker.|Yes|
+|**Allow cookies**|Allow the device web browser to use cookies.|Yes|
+|**Allow Java scripting**|Allow Java scripts to run in the browser.|Yes|
+|**Allow fraud warning**|Allow fraud warnings in the device browser.|Yes|
 
 ## Application settings - apps
 
-|Setting name|iOS|
+|Setting name|Details|iOS|
 |----------------|-------|
-|**Allow application store**|Yes|
+|**Allow application store**|Allows the device to access the app store.|Yes|
 |**Require a password to access application store**|Yes|
-|**Allow in-app purchases**|Yes|
-|**Allow managed documents in other unmanaged apps**|iOS 7.1 and later|
-|**Allow unmanaged documents in other managed apps**|iOS 7.1 and later|
-|**Allow video conferencing**|Yes|
-|**Allow adult content in media store**|Yes|
+|**Allow in-app purchases**|Allow store purchases to be made from within a running app.|Yes|
+|**Allow managed documents in other unmanaged apps**|Allows corporate documents to be viewed in any app.|OS 7.1 and later|
+|**Allow unmanaged documents in other managed apps**|Allow any document to be viewed in corporate managed apps.|iOS 7.1 and later|
+|**Allow video conferencing**|Allow video conferencing apps such as Facetime on the device.|Yes|
+|**Allow adult content in media store**|Allow the device to access content rated as adult from the store.|Yes|
 
 ## Application settings - Games
 
-|Setting name|iOS|
+|Setting name|Details|iOS|
 |----------------|-------|
-|**Allow adding Game Center friends**|Yes|
-|**Allow multiplayer gaming**|Yes|
+|**Allow adding Game Center friends**|Allow the user to add friends in Game Center.|Yes|
+|**Allow multiplayer gaming**|Allow the user to play multiplayer games on the device.|Yes|
 
 ## Device capabilities settings - hardware
 
-|Setting name|iOS|
+|Setting name|Details|iOS|
 |----------------|-------|
-|**Allow camera**|Yes|
+|**Allow camera**|Specifies whether the camera on the device can be used.|Yes|
 
 ## Device capabilities settings - cellular
 
 |Setting name|Details|iOS|
 |----------------|-------|
-|**Allow voice roaming**|-|Yes|
-|**Allow data roaming**|Yes|
-|**Allow global background fetch while roaming**|Yes|
+|**Allow voice roaming**|Allow voice roaming when the device is on a cellular network.|Yes|
+|**Allow data roaming**|Allow data roaming when the device is on a cellular network.|Yes|
+|**Allow global background fetch while roaming**|Allow the device to fetch data such as email while it is roaming on a cellular network.|Yes|
 
 ## Device capabilities settings - features
 
 |Setting name|Details|iOS|
 |----------------|-------|
-|**Allow Siri**|Yes|
-|**Allow Siri while device is locked**|Yes|
-|**Allow voice dialing**|-|Yes|
-|**Allow clipboard share between applications**|No|
-|**Allow YouTube**|No|
+|**Allow Siri**|Allow use of the Siri voice assistant on the device.|Yes|
+|**Allow Siri while device is locked**|Allow use of the Siri voice assistant on the device while it is locked.|Yes|
+|**Allow voice dialing**|Allow use of the voice dialing feature on the device.|Yes|
+
 
 ## Settings for compliant and noncompliant apps
 In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant or noncompliant apps using the following information:

@@ -10,14 +10,14 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 author: robstackmsft
 ---
 # Resolve GPO and Microsoft Intune policy conflicts
-Microsoft Intune uses policies that help you manage settings on the computers you manage. For example, you could use a policy to control settings for the Windows Firewall on computers. Many of the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] settings are similar to settings you might configure with Windows Group Policy. However, it is possible that, at times, the two methods might conflict with one another.
+Microsoft Intune uses policies that help you manage settings on the computers you manage. For example, you could use a policy to control settings for the Windows Firewall on computers. Many of the Intune settings are similar to settings you might configure with Windows Group Policy. However, it is possible that, at times, the two methods might conflict with one another.
 
-When conflicts happen, domain-level Group Policy takes precedence over [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy, unless the computer can’t logon to the domain. In this case, [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policy is applied to the client computer.
+When conflicts happen, domain-level Group Policy takes precedence over Intune policy, unless the computer can’t logon to the domain. In this case, Intune policy is applied to the client computer.
 
 ## What to do if you are using Group Policy
 Check that any policies you apply are not being managed by Group Policy. To help prevent conflicts, you could employ one or more of the following methods:
 
--   Move your computers to an Active Directory organizational unit (OU) that does not have Group Policy settings applied before you install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client. You can also block Group Policy inheritance on OUs that contain computers enrolled in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to which you do not want to apply Group Policy settings.
+-   Move your computers to an Active Directory organizational unit (OU) that does not have Group Policy settings applied before you install the Intune client. You can also block Group Policy inheritance on OUs that contain computers enrolled in Intune to which you do not want to apply Group Policy settings.
 
 -   Use a WMI filter, or security filter to restrict Group Policy Objects only to computers that are not managed by Intune. For information and examples of how to do this, see the [How to filter existing Group Policy Objects to avoid Conflicts with Microsoft Intune policy](resolve-gpo-and-microsoft-intune-policy-conflicts.md#BKMK_Filter) below.
 
@@ -29,7 +29,7 @@ For more information about Active Directory and Windows Group Policy, see your W
 If you have identified Group Policy Objects (GPOs) with settings that conflict with Intune policies, you can use either of the following filtering methods to restrict those GPOs only to computers that are not managed by Intune.
 
 ## Use WMI filters.
-WMI filters selectively apply GPOs to computers that satisfy the conditions of a query. To apply a WMI filter, deploy a WMI class instance to all computers in the enterprise before you enroll any computers in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service.
+WMI filters selectively apply GPOs to computers that satisfy the conditions of a query. To apply a WMI filter, deploy a WMI class instance to all computers in the enterprise before you enroll any computers in the Intune service.
 
 ## To apply WMI filters to a GPO
 
@@ -67,9 +67,9 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 
     **C:/Windows/System32/Wbem/MOFCOMP &lt;path to MOF file&gt;\wit.mof**
 
-3.  Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to computers that are managed by using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] or to computers that are not managed by using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+3.  Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to computers that are not managed by using Intune.
 
-    -   For GPOs that apply to computers that are not managed by using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], use the following:
+    -   For GPOs that apply to computers that are not managed by using Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
@@ -85,7 +85,7 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 
 4.  Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
 
-    -   For GPOs that should apply only to computers that you want to manage by using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], apply the filter **WindowsIntunePolicyEnabled=1**.
+    -   For GPOs that should apply only to computers that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
 
     -   For GPOs that should apply only to computers that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
 

@@ -135,5 +135,5 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure s
 
 
 ### See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
+[Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

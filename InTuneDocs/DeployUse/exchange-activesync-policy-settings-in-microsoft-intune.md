@@ -10,21 +10,21 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 author: robstackmsft
 ---
 # Exchange ActiveSync policy settings in Microsoft Intune
-Use the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Exchange ActiveSync** policy to configure settings that let you control a range of features and functionality on devices that are managed by Exchange ActiveSync.
+Use the Microsoft Intune **Exchange ActiveSync** policy to configure settings that let you control a range of features and functionality on devices that are managed by Exchange ActiveSync.
 
 
 ## Password settings
 
 |Setting name|Details
 |----------------|
-|**Require a password to unlock mobile devices**|
-|**Required password type**<br /><br />(specifies the type of password that will be required, such as numeric only, or alphanumeric)|
-|**Minimum password length**|
-|**Allow simple passwords**<br /><br />Simple passwords include ‘0000’ and ‘1234’|
-|**Number of repeated sign-in failures to allow before the device is wiped**|
+|**Require a password to unlock mobile devices**|Specifies whether devices must be locked using a password.<br>(not applicable to devices running Windows RT)|
+|**Required password type**|Specifies the type of password that will be required, such as numeric only, or alphanumeric.|
+|**Minimum password length**|Specifies the minimum number of characters required in the device password.|
+|**Allow simple passwords**|Simple passwords include ‘0000’ and ‘1234’.|
+|**Number of repeated sign-in failures to allow before the device is wiped**|Allow this many attempts at entering a correct password before the device is wiped.|
 |**Password expiration (days)**|Specifies the number of days after which the device password must be changed.
-|**Remember password history**|
-|**Remember password history** – **Prevent reuse of previous passwords**|-|
+|**Remember password history**|Specifies whether to not allow the use of previously used passwords.|
+|**Remember password history** – **Prevent reuse of previous passwords**|Specifies the number of previously used passwords that can't be re-used.|
 |**Minutes of inactivity before password is required**|Specifies the amount of time a device must be idle before the screen is locked.
 
 ## Encryption settings
