@@ -10,8 +10,7 @@ author: Nbigman
 ---
 # Troubleshoot policies in Microsoft Intune
 
-## Policy issues
-Listed here are some issues that may arise from your [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] policy configuration and troubleshooting recommendations for those issues.
+Listed here are some issues that may arise from your [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] policy configuration, and troubleshooting recommendations for those issues.
 
 ### Is policy applied to device?
 **Issue:** It's not clear if a particular policy is being applied to a device, or a device behaves contrary to a policy.
@@ -51,7 +50,7 @@ Be aware that policies are refreshed and updated on regular intervals. In genera
 ### Microsoft Intune policy-related errors in policyplatform.log
 For non-MDM Windows devices, policy errors in the policyplatform.log file may be the result of non-default settings in the Windows User Account Control (UAC) on the device. Some non-default UAC settings can affect Microsoft Intune client installations and policy execution.
 
-##### To resolve UAC issues
+#### To resolve UAC issues
 
 1.  Retire the computer, as described in [Retire data and devices from Microsoft Intune management](retire-data-and-devices-from-microsoft-intune-management.md).
 
@@ -82,14 +81,14 @@ To resolve this issue, set the local system time as close as possible to Interne
 ## Cannot change security policy for various MDM devices
 Windows Phone and Windows RT devices do not allow security policies set via MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4. The more restrictive policy has already been applied to the device.
 
-Depending on the device platform, if you want to change the policy  to a less secure value you may need to reset security policies. 
-For example, in Windows RT,  on the desktop swipe in from right to open the **Charms** bar and click  **Settings** &gt; **Control Panel**.  Select the **User Accounts** applet. 
-In the left hand navigation menu, there is a **Reset Security Policies** link at the bottom. Click  it and then click the **Reset Policies** button. 
+Depending on the device platform, if you want to change the policy  to a less secure value you may need to reset security policies.
+For example, in Windows RT,  on the desktop swipe in from right to open the **Charms** bar and click  **Settings** &gt; **Control Panel**.  Select the **User Accounts** applet.
+In the left hand navigation menu, there is a **Reset Security Policies** link at the bottom. Click  it and then click the **Reset Policies** button.
 Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired and re-enrolled back into the service for you to be able to apply a  less restrictive policy.
 
-## Android devices do not force Security Policy Changes without end user Acceptance
+### Android devices do not force Security Policy Changes without end user Acceptance
 Android MDM does not allow the service to force initial policy changes on devices as other platforms allow. This is due to Android functionality, and is not related to the Intune service. Android devices will prompt the end user via the notification window of the related policy change (i.e. Password, Encryption, etc.).  The end user must respond to the prompt and once accepted the policy should be applied.
 
-## See Also
+### See Also
 [Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-
+[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)

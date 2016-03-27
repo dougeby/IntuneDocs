@@ -9,12 +9,10 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 author: Nbigman
 ---
 # Troubleshoot software updates in Microsoft Intune
-
-## <a name="BKMK_Updates"></a>Troubleshooting software updates
 Use the information in this section to help you solve software update problems in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
 
 ### Software update error codes
-The following table lists the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Update Agent error codes. If you cannot find a specific error code in this table, see [Windows Update Agent Result Codes](http://go.microsoft.com/fwlink/?LinkID=221542).
+The following table lists the [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] **Update Agent** error codes. If you cannot find a specific error code in this table, see [Windows Update Agent Result Codes](http://go.microsoft.com/fwlink/?LinkID=221542).
 
 |Error code|Symbolic name|More information|
 |--------------|-----------------|--------------------|
@@ -227,3 +225,7 @@ The following table lists the [!INCLUDE[wit_firstref](./includes/wit_firstref_md
 |**0x80cfFFFF**|OM_E_REPORTER_UNEXPECTED|A reporter error occurred that is not covered by another error code.|
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|Installation failed because there is a pending mandatory reboot.|
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|The download was canceled.|
+
+### See Also
+[Windows Update Agent Result Codes](http://go.microsoft.com/fwlink/?LinkID=221542)
+[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)

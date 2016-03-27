@@ -14,7 +14,7 @@ This topic helps you solve app deployment problems with[!INCLUDE[wit_firstref](.
 
 ## <a name="BKMK_TypicalProblems"></a>Help for typical app deployment problems
 
-#### If you can’t log in to the [!INCLUDE[wit_iwportal_1](./includes/wit_iwportal_1_md.md)]
+### If you can’t log in to the [!INCLUDE[wit_iwportal_1](./includes/wit_iwportal_1_md.md)]
 
 1.  Check to see if your account exists in the [!INCLUDE[wit_icp_1](./includes/wit_icp_1_md.md)] or if it is disabled.
 
@@ -22,19 +22,19 @@ This topic helps you solve app deployment problems with[!INCLUDE[wit_firstref](.
 
 3.  In the [!INCLUDE[wit_icp_1](./includes/wit_icp_1_md.md)], make sure that you are using the right user name and password to log in to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] and that it is in the format: **joe@domain.com**.
 
-#### If the Contact IT information is missing in the company portal
+### If the Contact IT information is missing in the company portal
 
 1.  In the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)], click **Admin** &gt; **Company Portal**.
 
 2.  Set the **Contact IT** details.
 
-#### If you can’t see specific apps in the list
+### If you can’t see specific apps in the list
 
 1.  Make sure you are checking the list of apps for a user or device to which the app was deployed.
 
 2.  Make sure that the device meets the requirements for the app.
 
-#### If you get an error while downloading an app
+### If you get an error while downloading an app
 
 1.  Make sure there isn't more than one concurrent downloads per user. Each user can download one app at a time.
 
@@ -44,29 +44,29 @@ This topic helps you solve app deployment problems with[!INCLUDE[wit_firstref](.
 
 4.  If the iOS app download progress bar is complete but the app installation fails, something might be wrong with the app files that you provided.
 
-#### If clicking a link to an iOS app takes you to a previous location in the iTunes App Store
+### If clicking a link to an iOS app takes you to a previous location in the iTunes App Store
 
 1.  The current iTunes App Store session is opening to the previous app page.
 
 2.  Close the iTunes App Store on the device and retry the link.
 
-#### If you receive an error while launching an iOS app
+### If you receive an error while launching an iOS app
 
 1.  The expiration date of the app might not be valid.
 
-#### If your app is stuck “in progress” while uploading
+### If your app is stuck “in progress” while uploading
 
 1.  When uploading an app, first the metadata is added, followed by the app package. After the metadata has been uploaded, the app will appear in progress. If you see that your app is in the in progress state for an unusually long time, delete the app and then upload it again.
 
 2.  Make sure not to manage the deployment of the app while it is in the “in progress” state.
 
-#### If you encounter a failure when installing an iOS app
+### If you encounter a failure when installing an iOS app
 
 1.  Make sure that your organization’s firewall allows access to the Apple provisioning and certification web sites.
 
 2.  For more information, view the Apple developer documentation.
 
-#### If managed apps are not reporting installation status
+### If managed apps are not reporting installation status
 
 -   Installation status was not collected for managed app installations prior to the Microsoft Intune service update in November 2014. For devices that installed managed apps prior to this service update, update each associated app deployment with the appropriate deployment action (for example, **Available install**). Each device will update the app during the automatic check for available apps. For more information, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
 
@@ -83,3 +83,4 @@ The following table lists common errors that may occur during [!INCLUDE[wit_next
 ## See Also
 [Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md)
 [Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
+[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
