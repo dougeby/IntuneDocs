@@ -14,9 +14,7 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure s
 
 
 
-## Security settings
-
-### Password
+## Password
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -32,13 +30,13 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure s
 |**Allow picture password and PIN**|Lets you use simple gestures on a picture, or a simple PIN to login.|Yes|No|
 |**Require a password when the device returns from an idle state**|If enabled, the user must enter a password to unlock the device from an idle state.|No|Yes|
 
-### Encryption
+## Encryption
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
 |**Require encryption on mobile device**|Enables encryption on targeted devices.|No|Yes|
 
-### System
+## System
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -47,9 +45,8 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure s
 |**Allow manual root certificate installation**|Specifies whether the user can manually install root certificates|No|Yes|
 |**Allow diagnostic and usage data to be sent to Microsoft**|Determines the amount of diagnostic and usage data that is sent to Microsoft from devices.<br>**No** - No data is sent to Microsoft<br>**Basic** - The device sends only limited information to Microsoft<br>**Enhanced** - Sends enhanced diagnostic data to Microsoft<br>**Full (recommended)** - Sends the same data as **Enhanced**, plus additional data about the device state|Yes|Yes|
 
-## Cloud settings
 
-### Account and synchronization
+## Account and synchronization
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -63,9 +60,9 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure s
 |----------------|----------------------|---------------------|
 |**Make Microsoft account optional in Windows Mail application**|Configure this to remove the requirement for a Microsoft account in Windows Mail.|Yes|No|
 
-## Application settings
 
-### Microsoft Edge
+
+## Microsoft Edge
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -87,9 +84,9 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure s
 |----------------|----------------------|---------------------|
 |**Allow application store**|Allow the user to access the app store on the device.|No|Yes|
 
-## Device capability settings
 
-### Cellular
+
+## Cellular
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -97,7 +94,7 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure s
 |**Allow VPN over cellular**|Controls whether the device can access VPN connections when connected to a cellular network.|Yes|Yes|
 |**Allow VPN roaming over cellular**|Controls whether the device can access VPN connections when roaming on a cellular network.|Yes|Yes|
 
-### Hardware
+## Hardware
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -117,7 +114,7 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure s
 |**Allow USB connection**|Controls whether devices can access external storage devices through a USB connection.|Yes|Yes|
 |**Allow AntiTheft mode**|Configure whether Windows Antitheft mode is enabled.|Yes|Yes|
 
-### Features
+## Features
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -125,6 +122,34 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure s
 |**Allow voice recording**|Enable or disable the voice recording features on the device.|No|Yes|
 |**Allow Cortana**|Enable or disable the Cortana voice assistant.|Yes|Yes|
 |**Allow action center notifications**|Enable or disable action center notifications on the device lock screen.|No|Yes|
+
+## Defender
+
+|Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
+|-|-|
+|**Allow real-time monitoring**|Enables real-time scanning for malware, spyware, and other unwanted software.|Yes|No|
+|**Allow behavior monitoring**|Lets Defender check for certain known patterns of suspicious activity on devices.|Yes|No
+|**Enable Network Inspection System**|The Network Inspection System (NIS) helps to protect devices against network-based exploits by using the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.|Yes|No
+|**Scan all downloads**|Controls whether Defender scans all files downloaded from the Internet.|Yes|No
+|**Allow script scanning**|Lets Defender scan scripts that are used in Internet Explorer.|Yes|No
+|**Monitor file and program activity**|Enable this setting to allow Defender to monitor file and program activity on devices.|Yes|No
+|**Days to track resolved malware**|Lets Defender continue to track resolved malware for the number of days you specify so that you can manually check previously affected devices. If you set the number of days to **0**, malware remains in the Quarantine folder and is not automatically removed. |Yes|No
+|**Allow client UI access**|Controls whether the Windows Defender user interface is hidden from end users.<br>When this setting is changed, it will take effect the next time the end user's PC is restarted.|Yes|No
+|**Schedule a daily quick scan**|Lets you schedule a quick scan that occurs daily at the time you select.|Yes|No
+|**Schedule a system scan**|Lets you schedule a full or quick system scan that occurs regularly on the day and time you select.|Yes|No
+|**Limit CPU usage during a scan**|Lets you limit the amount of CPU that scans are allowed to use (from **1** to **100**)|Yes|No
+|**Scan archive files**|Allows Defender to scan archived files such as Zip or Cab files.|Yes|No
+|**Scan email messages**|Allows Defender to scan email messages as they arrive on the device.|Yes|No
+|**Scan removable drives**|Lets Defender scan removable drives like USB sticks.|Yes|No
+|**Scan mapped network drives**|Lets Defender scan files on mapped network drive.<br>If the files on the drive are read-only, Defender will be unable to remove any malware found in them.|Yes|No
+|**Scan files opened from network shared folders**|Lets Defender scan files on shared network drives (for instance, those accessed from a UNC path.<br>If the files on the drive are read-only, Defender will be unable to remove any malware found in them.|Yes|No
+|**Signature update interval**|Specify the interval at which Defender will check for new signature files.|Yes|No
+|**Allow cloud protection**|Allow or block the Microsoft Active Protection Service from receiving information about malware activity from devices you manage. This information is used to improve the service in the future.|Yes|No
+|**Prompt users for samples submission**|Controls whether files that might require further analysis by Microsoft to determine if they are malicious are automatically sent to Microsoft.|Yes|No
+|**Files and folders to exclude when running a scan or using real-time protection**|Add one or more files and folders like **C:\Path** or **%ProgramFiles%\Path\filename.exe** to the exclusions list. These files and folders will not be included in any real-time, or scheduled scans.|Yes|No
+|**File extensions to exclude when running a scan or using real-time protection**|Add one or more file extensions like **jpg** or **txt** to the exclusions list. Any files with these extensions will not be included in any real-time, or scheduled scans.|Yes|No
+|**Processes to exclude when running a scan or using real-time protection**|Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes will not be included in any real-time, or scheduled scans.|Yes|No| 
+
 
 ## Updates settings
 
