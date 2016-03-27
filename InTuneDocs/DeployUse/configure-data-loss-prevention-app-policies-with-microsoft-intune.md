@@ -118,6 +118,6 @@ For a detailed explanation of the experience of using apps that are associated w
 All Office mobile apps support multi-identity.
 
 ##  Next Steps
-[Get started with mobile app management policies in the Azure portal](../Topic/Get-started-with-mobile-app-management-policies-in-the-Azure-portal.md)
+[Get started with mobile app management policies in the Azure portal](Get-started-with-mobile-app-management-policies-in-the-Azure-portal.md)
 
-[Create and deploy mobile app management policies with Microsoft Intune](../Topic/Create-and-deploy-mobile-app-management-policies-with-Microsoft-Intune.md)
+[Create and deploy mobile app management policies with Microsoft Intune](Create-and-deploy-mobile-app-management-policies-with-Microsoft-Intune.md)
