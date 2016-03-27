@@ -10,10 +10,7 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 author: Lindavr
 ---
 # Troubleshoot Microsoft Intune
-[![](./media/Nav-Icons/WIT_Tile_W_Overview.png)](https://technet.microsoft.com/library/dn646960.aspx/?WT.mc_id=IntuneOverview20150801)[![](./media/Nav-Icons/WIT_Tile_W_GetStarted.png)](https://technet.microsoft.com/library/dn646953.aspx/?WT.mc_id=IntuneGS20150801)[![](./media/Nav-Icons/WIT_Tile_W_EnrollDevices.png)](https://technet.microsoft.com/library/dn646962.aspx/?WT.mc_id=IntuneEnroll20150801)[![](./media/Nav-Icons/WIT_Tile_W_ManageDevices.png)](https://technet.microsoft.com/library/mt313202.aspx/?WT.mc_id=IntuneConfig20150801)[![](./media/Nav-Icons/WIT_Tile_W_ManageApps.png)](https://technet.microsoft.com/library/dn646965.aspx/?WT.mc_id=IntuneDeploy20150801)[![](./media/Nav-Icons/WIT_Tile_W_ProtectResources.png)](https://technet.microsoft.com/library/mt313203.aspx/?WT.mc_id=IntuneProtect20150801)[![](./media/Nav-Icons/WIT_Tile_W_RetireData.png)](https://technet.microsoft.com/library/mt313204.aspx/?WT.mc_id=IntuneRetire20150801)[![](./media/Nav-Icons/WIT_Tile_W_TechnicalReference.png)](https://technet.microsoft.com/library/mt282239.aspx/?WT.mc_id=IntuneTR20150801)![](./media/Nav-Icons/WIT_Tile_W_TroubleshootingHighlight.png)
-![](./media/Nav-Icons/WIT_Banner_Troubleshooting.png)
-
-You may find  after you deploy [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], that you're encountering problems with your configuration or with clients. It's possible that your end users are experiencing difficulties with their devices. The resources below may help you find out what could be causing the problem so that you can resolve it.
+You may find  after you deploy [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], that you're encountering problems with your configuration or with clients. The resources below may help you find out what could be causing the problem so that you can resolve it.
 
 > [!NOTE]
 > To create a support request, or to view an existing request,  click [here](https://portal.office.com/admin/default.aspx) to visit the Office 365 admin center. For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
@@ -102,4 +99,4 @@ After you've defined the problem and collected data you can **research the solut
 ## See Also
 [Documentation for Microsoft Intune](documentation-for-microsoft-intune.md)
 [Frequently asked questions for Microsoft Intune](frequently-asked-questions-for-microsoft-intune.md)
-
+[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)

@@ -9,11 +9,9 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 author: Nbigman
 ---
 # Troubleshoot client setup in Microsoft Intune
+Use the following information to help you troubleshoot common client setup problems.
 
-## Troubleshooting client set up problems
-Use the following sections to help you troubleshoot common client setup problems.
-
-### What to do if client installation fails
+## What to do if client installation fails
 
 -   If no client software deployment alerts for the computer are displayed in the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)] check the computer’s Internet connectivity and proxy configuration and make sure that the computer can communicate with the service URL, [https://manage.microsoft.com](https://manage.microsoft.com). Then retry the client software installation.
 
@@ -40,10 +38,10 @@ Use the following sections to help you troubleshoot common client setup problems
 
     -   **Severity** – This indicates the severity of the alert
 
-### Microsoft Intune policy-related errors in policyplatform.log
+## Microsoft Intune policy-related errors in policyplatform.log
 For non-MDM Windows devices, policy errors in the policyplatform.log file may be the result of non-default settings in the Windows User Account Control (UAC) on the device. Some non-default UAC settings can affect Microsoft Intune client installations and policy execution.
 
-##### To resolve UAC issues
+### To resolve UAC issues
 
 1.  Retire the computer, as described in [Retire data and devices from Microsoft Intune management](retire-data-and-devices-from-microsoft-intune-management.md).
 
@@ -56,9 +54,9 @@ For non-MDM Windows devices, policy errors in the policyplatform.log file may be
 
 4.  Move  the notification slider to the default setting.
 
-### <a name="BKMK_Whattodo"></a>What to do if the client will not uninstall from the Microsoft Intune administrator console
+## <a name="BKMK_Whattodo"></a>What to do if the client will not uninstall from the Microsoft Intune administrator console
 
-##### To remove the client software by using the Microsoft Intune command line tool
+### To remove the client software by using the Microsoft Intune command line tool
 
 1.  Open a command prompt in administrator mode.
 
@@ -66,7 +64,7 @@ For non-MDM Windows devices, policy errors in the policyplatform.log file may be
 
 3.  Run the following command ``ProvisioningUtil.exe /UninstallAgents /MicrosoftIntune``
 
-### Client installation error codes
+## Client installation error codes
 The following table describes error codes that are displayed in **Alerts** if client software installation fails. It includes suggestions for resolving the problem that is represented by each error code.
 
 |Error code|Possible problem|Suggested resolution|
@@ -91,3 +89,6 @@ The following table describes error codes that are displayed in **Alerts** if cl
 |**0x8004300f**|The software cannot be installed because the System Center Configuration Manager client is already installed.|Remove the Configuration Manager client and then retry the client software installation.|
 |**0x80043010**|The software cannot be installed because the Open Mobile Alliance Device Management (OMADM) client is already installed.|Un-enroll the OMADM client and then retry the client software installation.|
 If installation problems persist, contact [Support](http://go.microsoft.com/fwlink/?LinkID=246606). Have the client computer enrollment log (located in %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log and %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) and Windows Update log (%*windir*%\windowsupdate.log) available to show to support engineers.
+
+## See Also
+[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
