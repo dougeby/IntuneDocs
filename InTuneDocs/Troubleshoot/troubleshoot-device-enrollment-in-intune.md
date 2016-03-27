@@ -10,18 +10,17 @@ author: Nbigman
 ---
 # Troubleshoot device enrollment in Intune
 
-## Device enrollment issues
-Listed here are some device enrollment issues and how to troubleshoot and resolve them.
+Here are some device enrollment issues and how to troubleshoot and resolve them.
 
 > [!NOTE]
 > Your managed device users can collect enrollment logs for you to review. Instructions for collecting the logs are provided in  [Intune: sending troubleshooting info to IT ](https://www.microsoft.com/en-us/download/details.aspx?id=46391).
 
-### Device Cap reached
+## Device Cap reached
 **Issue:** A user receives an error on their device during enrollment, such as a **Company Portal Temporarily Unavailable** error on an iOS device, and the DMPdownloader.log on Configuration Manager contains the error **DeviceCapReached**.
 
 **Resolution:** By design, users can enroll no more than 5 devices.
 
-##### Check number of devices enrolled and allowed
+### Check number of devices enrolled and allowed
 
 1.  Validate in the Intune admin portal that the user has no more than 5 devices assigned
 
@@ -31,7 +30,7 @@ Mobile device users can delete devices at the following URL: [https://byodtestse
 
 Administrators can delete devices in the Azure Active Directory portal:
 
-##### To delete devices in the Azure Active Directory portal
+### To delete devices in the Azure Active Directory portal
 
 1.  Browse to [http://aka.ms/accessaad](http://aka.ms/accessaad) or click **Admin** &gt; **Azure AD** from [https://portal.office.com](https://portal.office.com).
 
@@ -51,13 +50,13 @@ Administrators can delete devices in the Azure Active Directory portal:
 
 > [!NOTE]
 > You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
-> 
+>
 > A user account which is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
-### Profile installation failed
+## Profile installation failed
 **Issue:** A user receives a **Profile installation failed** error on an iOS or Android device.
 
-##### Troubleshooting steps for failed profile installation
+### Troubleshooting steps for failed profile installation
 
 1.  Confirm that the user has been assigned an appropriate license for the version of the Intune service you are using.
 
@@ -67,10 +66,10 @@ Administrators can delete devices in the Azure Active Directory portal:
 
 4.  Confirm that Safari for iOS and Chrome for Android are the default browsers and that cookies are enabled.
 
-### Company Portal Temporarily Unavailable
+## Company Portal Temporarily Unavailable
 **Issue:** A user receives a **Company Portal Temporarily Unavailable** error on their device.
 
-##### Troubleshooting Company Portal Temporarily Unavailable error
+### Troubleshooting Company Portal Temporarily Unavailable error
 
 1.  Remove the Intune Company Portal app from the device.
 
@@ -82,7 +81,7 @@ Administrators can delete devices in the Azure Active Directory portal:
 
 5.  If the user successfully logs in, an iOS device will prompt you to install the Intune Company Portal app and enroll. On an Android device you will need to manually install the Intune Company Portal app, after which you can retry enrolling.
 
-### MDM authority not defined
+## MDM authority not defined
 **Issue:** A user receives an **MDM authority not defined** error.
 
 ##### Troubleshooting MDM authority not defined error
@@ -113,21 +112,21 @@ Administrators can delete devices in the Azure Active Directory portal:
 
     4.  At the top, click New Query  and execute the following queries:
 
-        -   To see all users: 
+        -   To see all users:
             `select * from [CM_ DBName].[dbo].[User_DISC]`
 
         -   To see Specific Users, use the following query, where %testuser1% represents username@domain.com for the user you want to look up:
             `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        After writing the query click **!Execute**. 
+        After writing the query click **!Execute**.
         Once the results have been returned, look for the clouduser ID.  If no ID is found, the user isn't licensed to use Intune.
 
-### Mobile devices disappear when using System Center Configuration Manager with Intune
+## Mobile devices disappear when using System Center Configuration Manager with Intune
 **Issue:** After successfully enrolling a mobile device to Configuration Manager it disappears from the mobile device collection, but the device still has the Management Profile and is listed in CSS Gateway.
 
 **Resolution:** This may occur because you have a custom process removing non-domain-joined devices, or because the  user has retired the device from the subscription. To validate and check which process or user account removed the device from the Configuration Manager console, perform the following steps:
 
-##### Check how device was removed
+### Check how device was removed
 
 1.  In the Configuration Manager admin console select **Monitoring** &gt; **System Status** &gt; **Status Message Queries**.
 
@@ -144,3 +143,5 @@ Administrators can delete devices in the Azure Active Directory portal:
 ## iOS enrollment errors
 A list of other iOS enrollment errors is provided in our device-user documentation, in   [You see errors while trying to enroll your device in Intune](using-your-ios-device-with-intune.md#BKMK_ios_error_enrolling_tbl).
 
+## See Also
+[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)

@@ -15,7 +15,7 @@ Listed here are some email profile issues and how to troubleshoot and resolve th
 Users who have email accounts automatically configured are unable to send pictures or images from their devices.
 This occurs when the option **Allow e-mail to be sent from third-party applications** is not enabled.
 
-#### Intune solution
+### Intune solution
 
 1.  Open the Microsoft Intune Administration Console, select **Policy** workload &gt; **Configuration Policy**.
 
@@ -23,7 +23,7 @@ This occurs when the option **Allow e-mail to be sent from third-party applicati
 
 3.  Select **Allow e-mail to be sent from third-party applications.**
 
-#### Configuration Manager integrated with Intune solution
+### Configuration Manager integrated with Intune solution
 
 1.  Open the Configuration Manager console &gt; **Assets and Compliance**.
 
@@ -33,3 +33,5 @@ This occurs when the option **Allow e-mail to be sent from third-party applicati
 
 4.  On the **Synchronization Settings** tab, select **Allow e-mail to be sent from third-party applications**.
 
+## See Also
+[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
