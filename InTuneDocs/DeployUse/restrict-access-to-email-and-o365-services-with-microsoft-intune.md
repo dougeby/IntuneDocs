@@ -35,8 +35,9 @@ Conditional access policy lets you restrict access to services like Exchange and
 
 
 ## Next steps
-[Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
-Create a conditional access policy for one of the following:
+1.  [Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
+
+2.  Create a conditional access policy for one of the following:
 > [!div class="op_single_selector"]
 - [Create a conditional access policy for Exchange Online](restrict-access to-exchange-online-with-microsoft-intune.md)
 - [Create a conditional access policy for Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
