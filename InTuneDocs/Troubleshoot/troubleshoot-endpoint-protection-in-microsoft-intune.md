@@ -11,10 +11,9 @@ author: Nbigman
 ---
 # Troubleshoot Endpoint Protection in Microsoft Intune
 
-## <a name="BKMK_EP"></a>Resources to help you solve Endpoint Protection problems
 Use the information in this section to help you solve problems while using [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)][!INCLUDE[epshort](./includes/epshort_md.md)].
 
-### Endpoint Protection error messages
+## Endpoint Protection error messages
 This section describes potential causes and solutions for the following errors and warnings, which appear in the **Endpoint Protection Status** pane in the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)].
 
 |Status item|Potential causes|Potential solutions|
@@ -35,4 +34,4 @@ This section describes potential causes and solutions for the following errors a
 ## See Also
 [Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md)
 [Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
-
+[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
