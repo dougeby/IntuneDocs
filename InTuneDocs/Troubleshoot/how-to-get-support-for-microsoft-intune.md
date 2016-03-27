@@ -10,16 +10,13 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 author: Nbigman
 ---
 # How to get support for Microsoft Intune
-With every [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] subscription, Microsoft Support provides global technical, pre-sales, billing, and subscription support. Support is available both online and by telephone for paid and trial subscriptions. Online technical support is available in English and Japanese. Non-technical support is available in additional languages.
+ Microsoft Support provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by telephone for paid and trial subscriptions. Online technical support is available in English and Japanese. Non-technical support is available in additional languages.
 
-## <a name="BKMK_Contact"></a>About support
-This topic describes how to obtain support,  includes links that take you to the page where you can open a service request, and a link to a list of phone numbers for phone support in many languages.
+This topic tells you how to9 open a service request or call for phone support in many languages.
 
-For self help with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see the [Documentation for Microsoft Intune](documentation-for-microsoft-intune.md) on TechNet, or click the Help link located at the top right-hand corner of the Intune administrative consoles.
+For self help with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see [Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md) or the [Documentation for Microsoft Intune](documentation-for-microsoft-intune.md) on TechNet, or click the Help link located at the top right-hand corner of the Intune admin console.
 
-### Online service requests
-
-##### To create an online service request
+## To create an online service request
 
 1.  Sign in to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] and then visit the [Office 365 admin center](https://portal.office.com/Support/SupportEntry.aspx).
 
@@ -40,15 +37,15 @@ For self help with [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)], see th
 
 6.  On the **confirm and submit** page, provide contact information, review your request, and click **Submit request**. After the request is submitted you will be taken to a list of your service requests.
 
-### Support by phone
+## Support by phone
 See [Contact Assisted Phone Support for Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) for a list of support phone numbers by country and region, support hours, and supported languages for each region.
 
-### <a name="BKMK_TRACK"></a>Track your service requests
+## <a name="BKMK_TRACK"></a>Track your service requests
 To track your requests, go to the [Office 365 admin center](https://portal.office.com/admin/default.aspx). At the bottom of the **Create a service request** list, click **See all support tickets**. By default, you will see all of your service requests that are in an open state. To change which service requests you see, for example, to see closed requests, click  the filter icon in the top navigation and select your preferred view.
 
 > [!NOTE]
 > **If you use Microsoft System Center Configuration Manager** or **Microsoft System Center Endpoint Protection:** For technical support with [!INCLUDE[cmshort](./includes/cmshort_md.md)] or Endpoint Protection, contact your partner or visit the [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) to find rich self-help material, with the option of opening a support request online or over the phone.
-> 
+>
 > Technical support for System Center Configuration Manager or System Center Endpoint Protection requires either payment or is decremented from your existing licensing or Premier Support agreements.
 
 ## <a name="BKMK_MoreOptions"></a>Additional support options
@@ -117,4 +114,3 @@ Our role is to:
 
 ## See Also
 [Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md)
-
