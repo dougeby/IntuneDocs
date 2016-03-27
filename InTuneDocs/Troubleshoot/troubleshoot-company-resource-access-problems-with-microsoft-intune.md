@@ -10,13 +10,11 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 author: Nbigman
 ---
 # Troubleshoot company resource access problems with Microsoft Intune
-Use the information in this topic to help you troubleshoot problems when a [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] action returns an error code.
+Use the error and status codes in this topic to help you troubleshoot problems when a [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] action returns an error code.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
-## Error codes related to company resource access
-
-### Status codes for MDM managed Windows devices
+## Status codes for MDM managed Windows devices
 
 |Status code|Error message|What to do|
 |---------------|-----------------|--------------|
@@ -35,7 +33,7 @@ If this information does not solve your problem, see [How to get support for Mic
 |130 (APP_CI_ENFORCEMENT_ERROR)|MSADP license install failed||
 |No status (APP_CI_ENFORCEMENT_UNKNOWN)|n/a|The status is currently unknown.|
 
-### Company resource access (common errors)
+## Company resource access (common errors)
 
 |Status code|Hexadecimal error code|Error message|
 |---------------|--------------------------|-----------------|
@@ -64,7 +62,7 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016341111|0x87D11389|iOS device has returned an unexpected Idle status|
 |-2016341112|0x87D11388|iOS device is currently busy|
 
-### Errors returned by iOS devices
+## Errors returned by iOS devices
 
 |Status code|Hexadecimal error code|Error message|
 |---------------|--------------------------|-----------------|
@@ -274,7 +272,7 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016335111|0x87D12AF9|1001:Unsupported profile version|
 |-2016335112|0x87D12AF8|1000:Malformed profile|
 
-### OMA response codes
+## OMA response codes
 
 |Status code|Hexadecimal error code|Error message|
 |---------------|--------------------------|-----------------|
@@ -361,3 +359,4 @@ If this information does not solve your problem, see [How to get support for Mic
 
 ## See Also
 [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md)
+[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
