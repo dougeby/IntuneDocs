@@ -8,7 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
 author: Staciebarker
-
+---
 # Help end users understand Company Portal app messages
 
 On Android 6.0 and above devices, two messages display to users during the enrollment process:
@@ -29,7 +29,7 @@ What happens if users allow access  |  The device's phone number and IMEI will a
 What happens if users deny access     | They can continue to use the Company Portal app and enroll their device, but the users's device phone number and IMEI will be blank on the Hardware page in the Admin console.       </br></br> The second time that users sign in to the Company Portal app after denying access, the message displays a **Never ask again** check box that users can select so that the message never shows again.</br></br>If users allow but then later deny access, the message appears the next time users sign in to the Company Portal app after enrollment.</br></br>If users later decide to allow access, they can go to **Settings** > **Apps** > **Company Portal** > **Permissions** > **Phone**, and then turn on the permission.
 Where to send users for more information     |  [Sign in to the Company Portal](/Intune/EndUser/sign-in-to-the-company-portal-app-android.html)     
 
-   
+
 
 ## Message: Allow Company Portal to access photos, media, and files on your device?
 

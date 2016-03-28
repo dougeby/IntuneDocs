@@ -1,11 +1,17 @@
-# [Understand and Explore](/Intune/Understand/ways-to-do-enterprise-mobility.html)
-# [Get started](/Intune/getstarted/what-s-new-in-microsoft-intune.html)
-# [Plan and Design](plan-your-user-and-device-groups.md)
+# [Understand and Explore](/intune/introduction-to-microsoft-intune)
+# [Get started](/intune/get-started-with-a-paid-subscription-to-microsoft-intune)
 
+# [Plan and Design](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 ## [Migration guide](migrating-to-intune.md)
 ## [Plan for app deployment](Plan-for-app-deployment-in-microsoft-intune.md)
+## [Help secure on-premises resources](help-secure-on-premises-resources.md)
+## [Help secure Office 365](help-secure-office-365.md)
+## [Manage corporate-owned mobile devices](manage-corporate-owned-mobile-devices.md)
+## [Manage shared retail tablet devices](manage-shared-retail-tablet-devices.md)
+## [Support bring your own device](support-byod.md)
+## [Help secure access from hotel kiosks](help-secure-access-from-hotel-kiosks.md)
+## [Best practices for using Microsoft Intune](best-practices-for-using-intune.md)
 
-
-# [Deploy and Use](/intune/deployuse/learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.html)
-# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune.html)
+# [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
