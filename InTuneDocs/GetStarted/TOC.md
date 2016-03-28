@@ -15,14 +15,7 @@
 ## [What to know before you start](What-to-know-before-setting-up-microsoft-intune.md)
 ## [Rollout phases for Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
 
-<!--- ## What do we do with these?
 
-### [Set MDM authority & configure Intune](Set-mobile-device-management-authority-and-configure-microsoft-intune.md)
-### [MDM with Exchange ActiveSync & Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
-#### [Exchange Connector installation requirements](Intune-Exchange-connector-requirements.md)
-#### [Install the Intune connector for on-premises Exchange](Intune-on-premises-Exchange-connector.md)
-#### [Configure the Intune service-to-service connector](Intune-service-to-service-Exchange-connector.md)
---->
 
 # [Plan and Design](/intune/plandesign/what-to-tell-your-end-users-about-using-microsoft-intune)
 # [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune)
