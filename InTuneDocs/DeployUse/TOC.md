@@ -1,14 +1,14 @@
-# [Understand and Explore](/Intune/Understand/ways-to-do-enterprise-mobility.html)
-# [Get started](/Intune/getstarted/what-s-new-in-microsoft-intune.html)
-# [Plan and Design](/Intune/plandesign/plan-your-user-and-device-groups.html)
-# [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
+# [Understand and Explore](/intune/introduction-to-microsoft-intune)
+# [Get started](/intune/get-started-with-a-paid-subscription-to-microsoft-intune)
+# [Plan and Design](/intune/plandesign/what-to-tell-your-end-users-about-using-microsoft-intune)
 
+# [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [What's new](what-s-new-in-microsoft-intune.md)
 
 ## [Enroll devices](enroll-devices-in-microsoft-intune.md)
 ### [Install the PC client](install-the-windows-pc-client-with-microsoft-intune.md)
-### [Specify corporate-owned devices with international mobile equipment identity (IMEI)  numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+### [Specify corporate-owned devices with international mobile equipment identity (IMEI) numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
 ## [Configure devices](manage-windows-pcs-with-microsoft-intune.md)
 ### [Manage PCs](manage-windows-pcs-with-microsoft-intune.md)
@@ -68,4 +68,4 @@
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 
-# [Troubleshoot](/Intune/troubleshoot/how-to-get-support-for-microsoft-intune.html)
+# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
