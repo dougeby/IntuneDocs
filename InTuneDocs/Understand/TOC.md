@@ -17,7 +17,7 @@
 #### [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md) --->
 
 
-# [Get started](/Intune/GetStarted/what-s-new-in-microsoft-intune.html)
-# [Plan and Design](/intune/plandesign/plan-your-user-and-device-groups.html)
-# [Deploy and Use](/intune/deployuse/learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.html)
-# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune.html)
+# [Get started](/Intune/GetStarted/what-s-new-in-microsoft-intune)
+# [Plan and Design](/intune/plandesign/plan-your-user-and-device-groups)
+# [Deploy and Use](/intune/deployuse/learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents)
+# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
