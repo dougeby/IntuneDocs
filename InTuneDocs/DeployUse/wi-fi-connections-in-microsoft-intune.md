@@ -1,5 +1,5 @@
 ---
-title: Help users connect to company networks using Wi-Fi profiles with Microsoft Intune
+title: Wi-Fi connections in Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,18 +9,16 @@ ms.topic: article
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 author: Nbigman
 ---
-# Help users connect to company networks using Wi-Fi profiles with Microsoft Intune
-Use [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. These settings simplify connecting to wireless networks for end-users.
+# Wi-Fi connections in Microsoft Intune
+Use [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. These settings simplify user connections to wireless networks.
 
-For example:
+For example, you install a new Wi-Fi network named **Contoso Wi-Fi** and want to set up all iOS devices to connect to this network. Here's the process:
 
--   You install a new Wi-Fi network named **Contoso Wi-Fi** and want to provision all devices that run the iOS operating system with the settings required to connect to this network.
+1.   Create a Wi-Fi profile containing the settings necessary to connect to the **Contoso Wi-Fi** wireless network.
 
--   You create a Wi-Fi profile containing the settings necessary to connect to the **Contoso Wi-Fi** wireless network.
+2. Deploy the profile to the group of users with iOS devices.
 
--   You then deploy this profile to all users with iOS devices.
-
--   Users find the new **Contoso Wi-Fi** network in the list of wireless networks and can easily connect to this network.
+3.   Users find the new **Contoso Wi-Fi** network in the list of wireless networks and can easily connect to this network.
 
 You can deploy Wi-Fi profiles to the following platforms:
 
@@ -30,11 +28,9 @@ You can deploy Wi-Fi profiles to the following platforms:
 
 -   Mac OS X 10.9 and later
 
-Additionally, for devices that run Windows 8.1 and later, you can import a Wi-Fi configuration profile that was previously exported to a file. For details, see [Import a Wi-Fi configuration profile (Windows 8.1 and later only)](help-users-connect-to-company-networks-using-wi-fi-profiles-with-microsoft-intune.md#BKMK_Import).
+For devices that run Windows 8.1 and later, you can import a Wi-Fi configuration profile that was previously exported to a file. For details, see [Import a Wi-Fi configuration profile (Windows 8.1 and later only)](wi-fi-connections-in-microsoft-intune.md#BKMK_Import).
 
-## Steps to create and deploy a Wi-Fi profile
-
-### Step 1: Create a Wi-Fi profile and supply general information
+## How to create and deploy a Wi-Fi profile
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Add Policy**.
 
@@ -48,29 +44,22 @@ Additionally, for devices that run Windows 8.1 and later, you can import a Wi-Fi
 
     There are no recommended settings for this policy type. You must create a custom policy.
 
-3.  Specify the following general values:
+3.  Provide the name and description for the profile.
 
-    |Setting|More information|
-    |-----------|--------------------|
-    |**Name**|Enter a unique name for the Wi-Fi profile to help identify it in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.|
-    |**Description**|Provide a description of the Wi-Fi profile that helps you to locate it.|
+4. Specify the **Network Connections** values:
 
-### Step 2: Configure network connection settings
-Specify the **Network Connections** values:
-
-|Setting|More information|
+  |Setting|More information|
 |-----------|--------------------|
 |**Network name**|Specify a descriptive name for the wireless network. This is the name that displays on a user’s device when they choose a wireless network.|
 |**SSID (Service Set Identifier)**|Specify the (SSID) of the wireless network that you want devices to connect to. The SSID is case-sensitive and is not displayed to users.|
 |**Connect automatically when this network is in range**|Select this option to automatically connect devices to the wireless network when it is in range.|
 |**Connect when the network is not broadcasting its name (SSID)**|Select this option to allow devices to connect to the network when it is not visible in the list of networks (because it is hidden and not broadcasting its name).|
 
-### Step 3: Configure security settings
-Configure the **Security Settings** for the selected platform. The available settings depend on the security types you select.
+5. Configure the **Security Settings** for the selected platform. The available settings depend on the security types you select.
 
-#### For Android devices
+  #### For Android devices
 
-|Setting name|More information|Use when:|
+  |Setting name|More information|Use when:|
 |----------------|--------------------|-------------|
 |**Security type**|Select the security protocol for the wireless network:<br /><br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **No authentication (Open)** if the network is unsecured.|Always|
 |**EAP Type**|Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|You selected the **WPA-Enterprise/WPA2-Enterprise** security type.|
@@ -80,9 +69,9 @@ Configure the **Security Settings** for the selected platform. The available set
 |**Enable identity privacy (Outer Identity)**|Specify the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.|The **EAP type** is **PEAP** or **EAP-TTLS**.|
 |**Select a client certificate for client authentication (Identity Certificate)**|Click **Select**, then choose the SCEP certificate profile used to authenticate the connection. **Important:** To create a SCEP certificate profile, see [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).|The security type is **WPA-Enterprise/WPA2-Enterprise**, and any **EAP type** is selected.|
 
-#### For iOS and Mac OS X devices
+  #### For iOS and Mac OS X devices
 
-|Setting name|More information|Use when:|
+  |Setting name|More information|Use when:|
 |----------------|--------------------|-------------|
 |**Security type**|Select the wireless network security protocol:<br /><br />-   **WPA-Personal/WPA2-Personal**<br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **WEP**<br />-   **No authentication (Open)** if the network is unsecured.|Always|
 |**EAP Type**|Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-AST**<br />-   **LEAP**<br />-   **EAP-SIM**|You selected a security type of **WPA-Enterprise/WPA2-Enterprise**.|
@@ -93,33 +82,32 @@ Configure the **Security Settings** for the selected platform. The available set
 |**Select a client certificate for client authentication (Identity Certificate)**|Select the SCEP certificate profile used to authenticate the connection. **Important:** To create a SCEP certificate profile, see [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).|When the security type is **WPA-Enterprise/WPA2-Enterprise** and the **EAP type** is **EAP-TLS**, **PEAP** or **EAP-TTLS**.|
 |**Enable identity privacy (Outer Identity)**|Specify text that sent in response to an EAP identity request. This text can be any value.<br /><br />During authentication, this anonymous identity is initially sent, followed by the real identification sent in a secure tunnel.|When the **EAP type** is set to **PEAP**, **EAP-TTLS** or **EAP-FAST**.|
 
-### Step 4: Configure proxy settings (iOS and MAC OS X only)
+6. (iOS and MAC OS X only) Configure **Proxy Settings**
 
-1.  For iOS and Mac OS X Wi-Fi profiles, configure the following settings (if you are using a proxy server to help secure your network) under **Proxy Settings**:
-
-    |Setting name|Moe information|Use when:|
+    |Setting name|More information|Use when:|
     |----------------|-------------------|-------------|
     |**Proxy settings for this Wi-Fi connection**|Choose the proxy settings type:<br /><br />-   **None** (default)<br />-   **Manual** -   Manually specify the URL and port number of the proxy server.<br />-   **Automatic** – Use a configuration file to configure the proxy server.|Always|
     |**Proxy server address** and **Port number**|Specify the URL and port number of the proxy server.|**Proxy settings for this Wi-Fi connection** is set to **Manual**|
     |**Proxy Server URL**|Specify the URL of the file containing the proxy server settings.|**Proxy settings for this Wi-Fi connection** is set to **Automatic**|
 
-### Step 5: Save the Wi-Fi profile
+7.  Save the Wi-Fi profile
 
-1.  When you are finished, click **Save Policy**.
+The new policy is displayed in the **Configuration Policies** node of the **Policy** workspace. See [Next steps](wi-fi-connections-in-microsoft-intune.md#BKMK_Nextsteps) for information about deploying the profile.
 
-The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
+## <a name="BKMK_Import"></a> Export or Import a Wi-Fi configuration profile (Windows 8.1 and later only)
 
-### Step 6: Deploy the Wi-Fi profile
+### Export a Wi-Fi profile
+In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi profile to an XML file readable by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. On a Windows computer that already has the required WiFi profile installed, follow this following procedure.
 
-1.  Deploy the Wi-Fi profile to one or more groups of users or devices in your organization.
+1.  Create a local folder for the exported W-Fi- profiles, such as c:\WiFi
 
-For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
+2.  Open up a Command Prompt as an Administrator.
 
-A status summary and alerts in the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
+3.  Run the command `netsh wlan show profiles`, and note the name of the profile you'd like to export.  In this example, the profile name is *WiFiName*.
 
-After successful deployment, users devices can automatically connect to the corporate wireless network you configured.
+4.  Run this command: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`.This will create a Wi-Fi profile file named “Wi-Fi-WiFiName.xml in your target folder ”.
 
-## <a name="BKMK_Import"></a>Import a Wi-Fi configuration profile (Windows 8.1 and later only)
+### Import a Wi-Fi profile
 Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that you can then deploy to the required user or device groups. The procedure for exporting a Wi-Fi profile is described in
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Add Policy**.
@@ -149,21 +137,15 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
 
 6.  The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
 
-You can now use the information in **Step 6** above to help you deploy the custom Wi-Fi profile.
+## <a name="BKMK_Nextsteps"></a>Next steps
 
-### How to export a Wi-Fi profile
-In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi profile to an XML file readable by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. On a Windows computer that already has the required WiFi profile installed, follow the following procedure.
+Deploy the Wi-Fi profile to one or more groups of users or devices in your organization.
 
-##### To export a Wi-Fi profile
+For more information about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
-1.  Create a local folder for the exported W-Fi- profiles, such as c:\WiFi
+A status summary and alerts in the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
-2.  · Open up a Command Prompt as an Administrator.
-
-3.  Run the command `netsh wlan show profiles`, and note the name of the profile you'd like to export.  In this example, the profile name is *WiFiName*.
-
-4.  Run this command: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`.This will create a Wi-Fi profile file named “Wi-Fi-WiFiName.xml in your target folder ”.
+After successful deployment, users devices can automatically connect to the corporate wireless network you configured.
 
 ## See Also
-[Enable access to company resources with Microsoft Intune - deleted](enable-access-to-company-resources-with-microsoft-intune---deleted.md)
-
+[Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md)
