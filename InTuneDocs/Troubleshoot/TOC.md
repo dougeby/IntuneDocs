@@ -1,5 +1,5 @@
-# [Understand and Explore](/intune/introduction-to-microsoft-intune)
-# [Get started](/intune/get-started-with-a-paid-subscription-to-microsoft-intune)
+# [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
+# [Get started](/intune/getstarted/get-started-with-a-paid-subscription-to-microsoft-intune)
 # [Plan and Design](/intune/plandesign/what-to-tell-your-end-users-about-using-microsoft-intune)
 # [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 
