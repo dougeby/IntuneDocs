@@ -8,6 +8,8 @@
 ## [Common scenarios](common-ways-to-use-intune.md)
 ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)
 
+
+
 <!--- ## What do we do with these?
 ### [Common ways to use Intune](common-ways-to-use-intune.md)
 ### [Choose how to manage devices](choose-how-to-manage-devices.md)
