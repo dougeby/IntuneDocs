@@ -30,7 +30,7 @@ However, to use this connector, the following must be true:
 
 2.  In the workspace shortcuts pane, choose **ADMIN**, then go **Mobile Device Management** > **Microsoft Exchange** > **Set Up Exchange Connection**.
 
-4.  On the **Set Up Exchange Connection** page, choose **Set Up Service to Service Connector**.
+3.  On the **Set Up Exchange Connection** page, choose **Set Up Service to Service Connector**.
 
 ![IntuneSA5cServiceToServiceConnector](./media/IntuneSA5cServiceToServiceConnector.PNG)
 
