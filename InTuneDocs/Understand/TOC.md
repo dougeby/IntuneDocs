@@ -8,16 +8,7 @@
 ## [Ways to do enterprise mobility](ways-to-do-enterprise-mobility.md)
 ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)
 
-
-
-<!--- ## What do we do with these?
-
-### [Choose how to manage devices](choose-how-to-manage-devices.md)
-#### [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md)
-#### [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md) --->
-
-
 # [Get started](/intune/getstarted/get-started-with-a-paid-subscription-to-microsoft-intune)
-# [Plan and Design](/intune/plandesign/plan-your-user-and-device-groups)
-# [Deploy and Use](/intune/deployuse/learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents)
+# [Plan and Design](/intune/plandesign/what-to-tell-your-end-users-about-using-microsoft-intune)
+# [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
