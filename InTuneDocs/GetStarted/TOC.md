@@ -1,5 +1,5 @@
 # [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
-
+ 
 # [Get started](get-started-with-a-paid-subscription-to-microsoft-intune.md)
 ## [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Sign into Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
