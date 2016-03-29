@@ -1,6 +1,6 @@
 # [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
 # [Get started](/intune/getstarted/get-started-with-a-paid-subscription-to-microsoft-intune)
-
+ 
 # [Plan and Design](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 ## [Migration guide](migrating-to-intune.md)
