@@ -13,7 +13,8 @@ author: nathbarn
 For Microsoft Intune to directly manage mobile devices, users must enroll devices with Intune. For mobile devices that users haven't enrolled, you can enable Exchange ActiveSync (EAS) management using the Exchange connector. Devices can be managed with either on-premises Exchange servers and cloud-hosted Exchange on Microsoft Office 365.
 
 **Prerequisites**
- - Exchange configured and running (on-premises or hosted)
+ - Exchange configured and running, on-premises or hosted
+ - [Intune as your mobile device authority](get-ready-to-enroll-devices-in-microsoft-intune.md#BKMK_Set_MDM_Authority)
  - [Exchange access rules defined](exchange-access-rules-for-mobile-devices.md)
  - [Active Directory user account with permission to run Exchange cmdlets](Intune-Exchange-connector-requirements.md)
  - Users assigned for Exchange ActiveSync management
