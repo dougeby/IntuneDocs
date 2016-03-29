@@ -34,6 +34,8 @@ The Intune Company Portal helps users access company resources such as apps, fin
 ## Set up device management
 After setting up the MDM authority, you need to set up device management for the operating systems your organization wants to support. The steps required to set up device management vary by operating system. For example, Android OS does not require you to do anything in the Intune administration console. On the other hand, Windows and iOS require a trust relationship between devices and [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to allow management.
 
+> [!div class="op_single_selector"]
+- [Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
 - [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
 - [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
