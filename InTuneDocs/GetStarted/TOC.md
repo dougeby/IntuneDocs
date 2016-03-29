@@ -1,5 +1,5 @@
 # [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
- 
+
 # [Get started](get-started-with-a-paid-subscription-to-microsoft-intune.md)
 ## [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Sign into Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -12,9 +12,13 @@
 ### [Enroll computers](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Enroll mobile devices and install an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)
 ### [Post configuration tasks](post-configuration-tasks.md)
-## [What to know before you start](What-to-know-before-setting-up-microsoft-intune.md)
+## [What to know before you start](what-to-know-before-you-start-microsoft-intune.md)
 ## [Rollout phases for Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
-
+### [Project scope](project-scope.md)
+### [Proof of concept](proof-of-concept.md)
+### [Pilot](pilot.md)
+### [Enterprise rollout](enterprise-rollout.md)
+### [Run state](run-state.md)
 
 
 # [Plan and Design](/intune/plandesign/what-to-tell-your-end-users-about-using-microsoft-intune)
