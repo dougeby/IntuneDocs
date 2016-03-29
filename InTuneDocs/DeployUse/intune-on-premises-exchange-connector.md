@@ -17,6 +17,17 @@ To set up a connection that enables Microsoft Intune to communicate with the Exc
 > [!IMPORTANT]
 > Before you being installing and configuring the On-Premises Connector, ensure that you meet the [Exchange connector installation requirements](Intune-Exchange-connector-requirements.md).
 
+### <a name="BKMK_ExchanceConnectorReqs"></a>Requirements for the On-Premises Connector
+The following table lists the requirements for the computer where you install the On-Premises Connector.
+
+|Requirement|More information|
+|---------------|--------------------|
+|Operating systems|Intune supports the On-Premises Connector on a computer that runs any edition of Windows Server 2008 SP2 64 bit, Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.<br /><br />The connector is not supported on any Server Core installation.|
+|Microsoft Exchange version|The On-Premises Connector requires Microsoft Exchange 2010 SP1 or later.|
+|Hardware|The computer where you install the connector requires a 1.6 GHz CPU with 2 GB ram and 10 GB of free disk space  minimum hardware.|
+|Additional software|A full installation of Microsoft .NET Framework 4 and Windows PowerShell 2.0 must be installed on the computer that hosts the connector.|
+|Network|The computer where you install the connector must be in a domain that has a trust relationship to the domain that hosts your Exchange Server.<br /><br />The computer requires configurations to enable it to access the Intune service through firewalls and proxy servers over Ports 80 and 443. Domains used by Intune include manage.microsoft.com, &#42;manage.microsoft.com, and &#42;.manage.microsoft.com.|
+
 ## Download the On-Premises Connector software installation package
 
 
