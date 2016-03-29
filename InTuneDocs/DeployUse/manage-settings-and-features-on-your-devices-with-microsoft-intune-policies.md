@@ -19,7 +19,7 @@ Intune policies fall into the following categories. The category you use affects
 
 - **Configuration policies:** These are commonly used to manage security settings and features on your devices. Use the information in this topic to learn about how to create and deploy these policies and to explore the available settings.
 - **Device compliance policies:** These define the rules and settings that a device must comply with in order to be considered compliant by conditional access polices. You can also use compliance policies to monitor and remediate  the compliance of devices independently of conditional access.
-For details, see [Manage device compliance policies for Microsoft Intune](manage-device-compliance-policies-for-microsoft-intune.md).
+For details, see [Introduction to device compliance policies in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Conditional access polices:** These policies help you secure email and other services depending on conditions you specify.
 For details, see [Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-sharepoint-with-microsoft-intune.md).
 - **Corporate device enrollment policies:** For information about corporate device enrollment policies, see [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).

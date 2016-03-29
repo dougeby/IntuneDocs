@@ -11,10 +11,10 @@ author: robstackmsft
 ---
 # Microsoft Intune policy reference
 
-Use the information in this topic to help you decide which [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] policy you need to use to manage your devices.
+Use the information in this topic to help you decide which Microsoft Intune policy you need to use to manage your devices.
 
 > [!TIP]
-> For more detailed information about how to use policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+> For more detailed information about how to use policies, see [Manage settings and features on your devices with Microsoft Intune Policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 
 ## Android configuration policies
