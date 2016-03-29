@@ -28,7 +28,7 @@ Before you can configure conditional access you must:
    > [!NOTE]
    > Do not configure the service to service connector if you intend to use conditional access for both Exchange Online and Exchange On-premises
 
-   For instructions on how to configure the connector, see [Intune service to service connector](intune-service-to-service-Exchange-connector.md))
+   For instructions on how to configure the connector, see [Intune service to service connector](intune-service-to-service-exchange-connector.md)
 
 When conditional access policies are configured and targeted to a user, before a user can connect to their email, the **device** they use must be:
 
@@ -107,7 +107,7 @@ Make sure you [create](create-a-device-compliance-policy-in-microsoft-intune.md)
 ### <a name="bkmk_Eval_FX_CAP"></a>Step 2: Evaluate the effect of the conditional access policy
 You can use the **Mobile Device Inventory Reports** to identify devices that might be blocked from accessing Exchange after you configure the conditional access policy.
 
-To do this, configure a connection between [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and Exchange by using the [Microsoft Intune service to service connector](intune-service-to-service-Exchange-connector.md).
+To do this, configure a connection between [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and Exchange by using the [Microsoft Intune service to service connector](intune-service-to-service-exchange-connector.md).
 1.  Navigate to **Reports -> Mobile Device Inventory Reports**.
 ![IntuneSA2bMobileDeviceInventoryReport](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
