@@ -9,11 +9,9 @@ ms.topic: article
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 author: Nbigman
 ---
-# Microsoft Intune Service Description
-Learn about the [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] service and find additional technical documentation for Intune.
+## Microsoft Intune Service Description
 
-## Service Description
-[!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] is a cloud-based service that helps you manage Windows PCs, and iOS, Android, and Windows mobile devices. Intune also helps protect corporate applications and data. You can use Intune alone or you can integrate it with System Center 2012 R2 Configuration Manager to extend your management capabilities.
+[!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] is a cloud-based service that helps you manage Windows PCs, and iOS, Mac OS X, Android, and Windows mobile devices. Intune also helps protect corporate applications and data. You can use Intune alone or you can integrate it with System Center 2012 R2 Configuration Manager to extend your management capabilities.
 
 Microsoft offers the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] Onboarding benefit for eligible services in eligible plans. The Onboarding benefit lets you work remotely with Microsoft specialists to get your [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] environment ready for use. For more information, see [Microsoft Intune Onboarding Benefit Description](http://go.microsoft.com/fwlink/?LinkId=619281).
 
@@ -37,7 +35,7 @@ Use the information in this topic to help you understand the frequency of these 
 
 To learn about changes in the  [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] service, see [What's new in Microsoft Intune](../Topic/What-s-new-in-Microsoft-Intune.md). The [Microsoft Intune Blog](http://blogs.technet.com/b/microsoftintune/) also discusses changes in the service, and provides helpful tips to enable you to get the most from  [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)].
 
-Additionally, important service updates will be communicated to you directly from the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console in the notice board.
+Important service updates will also be communicated to you directly from the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console in the notice board.
 
 Here are the types of notices Microsoft provides about the Intune service:
 -   To help you plan for service changes, we notify you at least 30-90 days prior to the service upgrade, depending on the impact of the change . This will happen using in-product communication channels like notice board alerts. These changes may include:
@@ -65,7 +63,8 @@ Use these resources to learn more about Intune:
 
 -   [Mobile device management capabilities in Microsoft Intune](../Topic/Mobile-device-management-capabilities-in-Microsoft-Intune.md)
 
-## See also
+### See also
 [Documentation for Microsoft Intune](../Topic/Documentation-for-Microsoft-Intune.md)
 [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
+
 [What's new in Microsoft Intune](../Topic/What-s-new-in-Microsoft-Intune.md)
