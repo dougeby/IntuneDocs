@@ -14,9 +14,9 @@ If you have an Exchange Online Dedicated environment and need to find out whethe
 
 This topic is about how you can restrict to your  Exchange Online Dedicated environment in the new configuration.
 
-If you have an Exchange Online Dedicated environment in the legacy configuration, go to [Legacy Exchange Online Dedicated](restrict-access to-legacy-exchange-online-dedicated-with-microsoft-intune.md) article.
+If you have an Exchange Online Dedicated environment in the legacy configuration, go to [legacy Exchange Online Dedicated](restrict-access to-legacy-exchange-online-dedicated-with-microsoft-intune.md) article.
 
-To control email access to the new Exchange Online Dedicated environment, configure conditional access in Intune.
+To control email access to the legacy Exchange Online Dedicated environment, configure conditional access in Intune.
 If you want to learn more about how conditional access works, read the [Restrict access to email and O365 services]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
 Before you can configure conditional access you must:
