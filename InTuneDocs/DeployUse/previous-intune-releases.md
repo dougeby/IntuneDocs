@@ -10,7 +10,7 @@ ms.assetid:
 author: Lindavr
 robots: noindex,nofollow
 ---
-# Previous Intune releases | Microsoft Intune
+# Previous Intune releases
 
 ## January 2016
 

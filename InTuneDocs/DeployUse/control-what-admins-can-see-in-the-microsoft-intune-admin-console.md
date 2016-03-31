@@ -10,9 +10,7 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 author: robstackmsft
 ---
 # Customize Intune console views according to admin roles
-You can filter the Microsoft Intune admin console view to allow your admins to see only the items they need to see for their role. For example, you can allow only admin console operators to update malware definitions or reset the passcode on devices. You can do this by using preset **designations** that you assign to specific users. When these users access the admin console, they only see items specific to their designation.
-
-Use this feature to help you assign administration tasks to staff while still ensuring the security of your Intune data.
+You can filter the Microsoft Intune admin console view to allow your admins to see only the items they need to see for their role. For example, you can allow only admin console operators to update malware definitions or reset the passcode on devices. You do this by using preset **designations** that you assign to specific users. When these users access the admin console, they only see items specific to their designation.
 
 ## How to create a custom view
 
@@ -26,7 +24,7 @@ Use this feature to help you assign administration tasks to staff while still en
     -   **Read-only access**
     -   **Helpdesk - Groups node**
 
-    Full access and read-only access are self explanatory. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    Full access and read-only access are self-explanatory. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
 
     **Helpdesk - Groups Node** restricts what the admin can see and do to the following:
 
@@ -56,6 +54,4 @@ Use this feature to help you assign administration tasks to staff while still en
 
         -   Passcode reset
 
-When the admin you configured next opens the Intune admin console, they will be given the level of access you specified.
-
-
+When the admin you configured next opens the Intune admin console, they will be given the level of access you designated.
