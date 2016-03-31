@@ -6,7 +6,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 122a12c2-ef30-43ac-a21c-af34a3ba64d9
-author: Staciebarker
+author:
 ---
 # Microsoft Intune Managed Browser for iOS
 
@@ -102,4 +102,3 @@ for this application, unless other terms accompany those items. If so, those ter
     -   Covered Parties knew or should have known about the possibility of the damages.
 
     The above limitation or exclusion may not apply to you because your country may not allow the exclusion or limitation of incidental, consequential or other damages.
-

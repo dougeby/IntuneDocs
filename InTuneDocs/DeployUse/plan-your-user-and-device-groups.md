@@ -22,11 +22,10 @@ Groups in Intune provide great flexibility in managing your devices and users. Y
 ## How Intune groups work
 The default view of the Groups node in the Intune Management console is:
 
-![](../media/Group-planning/Intune_Planning_Groups_Default_small.png)
+![Screenshot of the default view of the Groups node in the Intune console](./media/Group-planning/Intune_Planning_Groups_Default_small.png)
 
 Policies are deployed onto groups, so group hierarchy is one of your key design considerations. It is also important to know that a group’s parent group cannot be changed once the group is created, so the design of your groups is critically important from the moment you start using the Intune service. Some of the recommended practices for designing a group hierarchy based on your organizational needs are  described here.
 
-**Do we need to explain security groups and how they differ from and interact with Intune groups?**
 ## Group membership rules
 
 1. A group can contain either users or devices, but not both.
@@ -101,10 +100,8 @@ Policies are deployed onto groups, so group hierarchy is one of your key design 
     -   Ungrouped Devices
 
 > [!NOTE]
-> *Keep it simple* should be your motto. If your organization does not have specific needs such as those described below, keeping it simple and going with the default group structure and policies will make the service more manageable in the long term. Maintenance will be easier if it is possible for you to treat your users equally with little differentiation by group, thereby having to maintain fewer policies.
+> Let your motto be: *keep it simple*. If your organization does not have specific needs such as those described below, keep it simple and go with the default group structure and policies to make the service more manageable in the long term. Maintenance will be easier if it is possible for you to treat your users equally with little differentiation by group, thereby having to maintain fewer policies.
 
-
-<!--Are the groups below built-in groups or user defined?-->
 
 ### All users and devices in your organization
 Define a parent group for all users and devices in your organization, as you are likely to have policies that will apply to all. You can use the default **All Users** and **All devices** groups in Intune for this purpose. Sub-groups that organize devices by specifics, such as a group for bring your own device (BYOD) and one for corporate-owned devices (CO), can be the children of the **All Users** and **All devices** parent groups.
@@ -114,20 +111,22 @@ Define a parent group for all users and devices in your organization, as you are
 ### BYOD and corporate owned devices
 If your organization allows employees to use their own devices at work (BYOD), provides company-owned devices (CO), or a combination of both, we recommend that you apply policies based on those two categories of devices.
 
-In the case of BYOD or a mix, be careful to plan policies that do not infringe on local privacy regulations. <!-- I don't understand this sentence: This will also help employees understand the corporate management of their personal devices and may drive more towards application-level management rather than device-level management.--> Create a parent group for all users who will be bringing their own devices. This group can then be used to apply policies that are applicable to all users in this category.
+In the case of BYOD or a mix, be careful to plan policies that do not infringe on local privacy regulations. Create a parent group for all users who will be bringing their own devices. This group can then be used to apply policies that are applicable to all users in this category.
 
-![](./media/Group-planning/Intune_Planning_Groups_BYOD_small.png)
+![Screenshot of creating a BYOD parent group](./media/Group-planning/Intune_Planning_Groups_BYOD_small.png)
 
 Similarly, you can create a group for the CO users in your organization:
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
-
+![Screenshot of sibling user groups for BYOD and CO](./media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+START HERE
 ### Groups for geographic regions
-If your organization needs policies for specific regions you can create groups based on geographic region. <!--These groups could be centered on regional groups that you have already created in your on-premises Active Directory (AD), and synchronized to Azure AD (AAD) or created directly in AAD.--> You can base them on regional groups you may have already created in Active Directory (AD), and synchronize them to Azure AD. You can also create them directly in Azure AD.
+If your organization needs policies for specific regions you can create groups based on geographic region. You can base them on regional groups you may have already created in Active Directory (AD), and synchronize them to Azure AD. You can also create them directly in Azure AD.
 
-These screen shots show how to create Intune groups based on groups synchronized from your on-premises AD. This examples assumes that you have an AD security group called **US Users Group**. First, provide the general information. <!-- probably should be numbered list; possibly candidate for animated .gif-->
+These screen shots show how to create Intune groups based on groups synchronized from your on-premises AD. This examples assumes that you have an AD security group called **US Users Group**.
 
-![](./media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
+1. First, provide the general information.
+
+    ![Screenshot of the Edit Group area](./media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
 
 Under Membership criteria, select **US Users Group**, synchronized from AD, as the security group to use under Membership rules.
 

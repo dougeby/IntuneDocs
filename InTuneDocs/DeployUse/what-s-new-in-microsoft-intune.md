@@ -1,5 +1,5 @@
 ---
-title: What's new in Microsoft Intune
+title: What's new | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
