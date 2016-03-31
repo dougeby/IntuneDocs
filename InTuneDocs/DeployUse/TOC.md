@@ -50,7 +50,7 @@
 ### [Control Microsoft Passport settings on devices](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Help protect iOS devices with Activation Lock bypass](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 
-## [Add apps](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
+## [Deploy apps](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 ### [Deploy apps to mobile devices](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 ### [Deploy apps to PCs](deploy-apps-to-windows-pcs-in-microsoft-intune.md)
 
