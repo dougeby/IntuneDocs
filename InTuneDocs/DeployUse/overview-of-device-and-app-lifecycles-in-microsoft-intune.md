@@ -10,15 +10,11 @@ ms.assetid:
 author:
 ---
 # Overview of device and app lifecycles
-![alt text](../media/mdmapplifecycle_v5.gif "app lifecycle")
+![alt text](./media/mdmapplifecycle_v8.gif "mobile device and app lifecycle")
 
 This is how the MDM and app lifecyles work together to satisfy enterprise mobility requirements.
 
 ## MDM lifecycle
-[![Image1](..\media\MDMLife_R1C1.png)](https://docsmsftstage.azurewebsites.net/en-us/intune/deployuse/enroll-devices-in-microsoft-intune.html)[![Image1](..\media\MDMLife_R1C2.png)](https://docsmsftstage.azurewebsites.net/en-us/intune/deployuse/manage-windows-pcs-with-microsoft-intune.html)
-<br/>
-[![Image1](..\media\MDMLife_R2C1.png)](https://docsmsftstage.azurewebsites.net/en-us/intune/deployuse/retire-data-and-devices-from-microsoft-intune-management.html)[![Image1](..\media\MDMLife_R2C2.png)](https://docsmsftstage.azurewebsites.net/en-us/intune/deployuse/configure-data-loss-prevention-app-policies-with-microsoft-intune.html)
-
 The MDM lifecycle...Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede.
 
 Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy. Fusce aliquet pede non pede.
