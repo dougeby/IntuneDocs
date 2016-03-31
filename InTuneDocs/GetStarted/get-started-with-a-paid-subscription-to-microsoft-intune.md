@@ -11,10 +11,10 @@ author: Staciebarker
 ---
 
 # Get started with a paid subscription to Microsoft Intune
-This article leads you through the steps of setting up paid subscription of [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] to quickly and easily begin managing mobile devices and Windows PCs in use by your organization. You can follow each step in order or just skip ahead if a step is not applicable to your specific environment or business needs.
+This walkthrough leads you through the steps of setting up paid subscription of [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] to quickly and easily begin managing mobile devices and Windows PCs in use by your organization. You can follow each step in order or just skip ahead if a step is not applicable to your specific environment or business needs.
 
 >[!NOTE]
->This article focuses on setting up Intune as a standalone service. Alternatively, if you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [extend Configuration Manager to manage mobile devices](https://technet.microsoft.com/library/jj884158.aspx) by connecting Intune with Configuration Manager in a hybrid deployment to manage mobile devices too.
+>This article focuses on setting up Intune as a standalone service. Alternatively, if you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [extend Configuration Manager to manage mobile devices](https://technet.microsoft.com/library/jj884158.aspx) by connecting Intune with Configuration Manager in a hybrid MDM deployment to manage mobile devices too.
 
 Getting started with a paid subscription of Intune shares many of the same steps as starting with a [free 30-day trial](/intune/understand/get-started-with-a-30-day-trial-of-microsoft-intune). However, after your trial, and when you are ready to start managing your mobile devices, you will need to address several additional requirements depending on your current network infrastructure and business requirements including:
 

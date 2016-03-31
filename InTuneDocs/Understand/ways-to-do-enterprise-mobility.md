@@ -25,7 +25,7 @@ However, MDM in Office 365 is limited to managing mobile devices such as iPhones
 
 ## Intune standalone
 
-As a cloud-based MDM service, Intune provides deep device and app management capabilities for managing mobile devices (iOS devices, Android devices, Windows phones) and Windows PCs. <!--The ability to manage Windows PCs is one of the key deciding factors between using your existing Office 365 subscription or purchasing an Intune subscription.-->
+As a cloud-based MDM service, Intune provides deep device and app management capabilities for managing mobile devices (iOS & Mac devices, Android devices, Windows phones) and Windows PCs. <!--The ability to manage Windows PCs is one of the key deciding factors between using your existing Office 365 subscription or purchasing an Intune subscription.-->
 
 Additionally, Intune enables you to secure your devices and apps at a more granular level by using certificates, profiles for Wi-Fi, VPN, and email to allow secure access to specific corporate resources, deploying apps to users’ devices, and restricting certain actions on managed apps.  
 
