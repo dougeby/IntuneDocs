@@ -1,9 +1,15 @@
 # [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
 # [Get started](/intune/getstarted/get-started-with-a-paid-subscription-to-microsoft-intune)
- 
+
 # [Plan and Design](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 ## [Migration guide](migrating-to-intune.md)
+### [Setup Intune](migrating-to-intune-step-one.md)
+### [Configure Intune](migrating-to-intune-step-two.md)
+### [Pilot Intune](migrating-to-intune-step-three.md)
+### [Migrate to Intune](migrating-to-intune-step-four.md)
+### [Migration worksheet](migrating-to-intune-worksheet.md)
+
 ## [Plan for app deployment](Plan-for-app-deployment-in-microsoft-intune.md)
 ## [Help secure on-premises resources](help-secure-on-premises-resources.md)
 ## [Help secure Office 365](help-secure-office-365.md)
