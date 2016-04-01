@@ -19,9 +19,9 @@ This topic tells you what you need to do before you can create mobile app manage
 
 Before you start, you'll need the following:
 
--   A subscription to [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)].    End-users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps with MAM policy.
--   The mobile device management authority must be set to either Intune or Configuration manager, depending on whether you are using just Intune or Configuration Manager integrated with Intune to manage your devices. If you are using O365 built-in mobile device management, you must purchase an Intune subscription and [set the mobile device management authority to Intune](Set-mobile-device-management-authority-and-configure-Microsoft-Intune.md).
--   An Office 365 (O365) subscription which includes and Azure Active Directory (Azure AD) to create users. Azure AD authenticates the user when the end-user launches the app and enters their work credentials.
+-   **A subscription to [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)**].    End-users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps with MAM policy.
+-   The **mobile device management authority** must be set to either **Intune** or **Configuration manager**, depending on whether you are using just Intune or Configuration Manager integrated with Intune to manage your devices. If you are using O365 built-in mobile device management, you must purchase an Intune subscription and [set the mobile device management authority to Intune](Set-mobile-device-management-authority-and-configure-Microsoft-Intune.md).
+-   **An Office 365 (O365) subscription which includes and Azure Active Directory (Azure AD)** to create users. Azure AD authenticates the user when the end-user launches the app and enters their work credentials.
 
     > [!NOTE]
     > If you are setting up users using the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console, be aware that the MAM policy configuration is moving to the Azure portal going forward and to use this portal, you need to set up Azure AD user groups using the Office 365 portal.
