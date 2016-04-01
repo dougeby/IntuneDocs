@@ -42,17 +42,24 @@ When you add a computer or device to the company portal, some software may be in
 
 ### <a name="BKMK_WhatCanIAdd"></a>What kind of computers or devices can I add to the company portal?
 
--   Windows 8.1 devices
+-   Windows 10 Mobile
+
+-   Windows 10 Desktop
+
+-   Windows Phone 8.1
+
+-   Windows 8.1
 
 -   Windows RT devices
 
 -   Windows Phone 8
 
--   Windows Phone 8.1
-
--   iPhones and iPads
+-   iPhones, iPads, and Mac OS X
 
 -   Android devices
+
+### <a name="BKMK_cp_app_notsupported"></a>Company Portal app not supported
+This version of the company portal can no longer be used. Install the **Company Portal** app from the Windows Store to continue.
 
 ### <a name="BKMK_RemoveDevice"></a>Can I remove a computer or device from the company portal?
 Yes, you can either remove or reset a computer or device from the company portal.  There is a difference between **remove** and **reset**:

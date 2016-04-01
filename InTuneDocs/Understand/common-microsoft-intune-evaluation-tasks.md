@@ -20,4 +20,4 @@ These evaluation tasks provide illustrated, step-by-step instructions for common
 Check back soon, as more tasks will be added in the near future.
 
 ### See also
-[Get started with a 30-day trial](30-day-trial-revision.md)
+[Get started with a 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune.md)

@@ -1,5 +1,5 @@
 ---
-title: Enroll computers in Intune
+title: Enroll Windows PCs in Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -10,7 +10,7 @@ ms.assetid:
 author: Staciebarker
 ---
 
-# Enroll computers in Intune
+# Enroll Windows PCs in Intune
 
 You can install the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] client software on computers in the following ways:
 
@@ -32,7 +32,8 @@ Each enrolled computer is linked to the user account that was used to install th
 
 -   You must use a Microsoft Online Services work or school account to self-enroll a computer. This is the account that you used to sign in, or the administrator account that was created when you signed up for the free trial.
 
-For this example, you'll use the self-enrollment approach:
+## Self-enrolling a Windows PC
+For this example, you'll use the self-enrollment approach.
 
 1.  In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** > **Company Portal**, and then scroll to the bottom of the screen. Copy the URL shown under **Intune company portal**.
 

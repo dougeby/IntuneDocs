@@ -11,43 +11,29 @@ author: Staciebarker
 ---
 
 # Sign up or sign in to Intune
-Before  you either sign up or sign in to Intune, consider:
+Before you can sign in or sign up for Intune, you'll need to determine whether your organization already has a Microsoft Online Services work or school account, or if your organization has an Enterprise Agreement or equivalent volume licensing agreement with Microsoft. A work or school account is provided when you sign a volume licensing agreement with Microsoft or subscribe to other Microsoft cloud services such as Office 365.
 
--   Whether your organization already has a Microsoft Online Services work or school account
+If you already have a work or school account, you will be able to simply **sign in** with that account to add Intune to your pre-existing subscription environment. Otherwise, you'll need to **sign up** to create a new account to use to manage Intune for your organization.
 
--   Or if your organization has an Enterprise Agreement or equivalent volume licensing agreement with Microsoft
+>[!TIP]
+>If you sign up for a new account, you cannot later use an existing work or school account to manage your subscription or combine it with existing volume licensing agreements.
 
-## When to sign up for a new account
-
-Sign up for a new account if either of the following is true:
-
-- **You don’t have a work or school account.** A work or school account is provided when you sign a volume licensing agreement with Microsoft or subscribe to Office 365. If your organization has not signed an Enterprise Agreement or equivalent volume licensing agreement with Microsoft (or has an Office 365 account), then you do not have a Microsoft Online Services account that you can use to sign in to Microsoft Online Services.
-- **You will discard your Intune tenant after completing the 30-day trial.** You should sign up for a new account if you are using your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] free trial subscription for evaluation purposes only, and you plan to redo your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] service setup and device provisioning after the trial. This is the recommended option if you plan to use [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] with System Center 2012 Configuration Manager.
-
-    If you sign up for a new account, you cannot later use an existing work or school account to manage that account, or combine it with existing volume licensing agreements.
-
-## When to sign in with your work or school account
-Sign in with your work or school account if:
-
-- **You have a work or school account.** You have a work or school account provided with a volume licensing agreement or Office 365 subscription, and you are using this trial to evaluate [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].**
-
-    If you are setting up [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] on an existing account, we recommend that you review [Choose how to manage devices](/Intune/Understand/introduction-to-microsoft-intune.md) before continuing with these steps.
-
-<!--(**Editorial note**:
-* not sure if the content of Intro to Intune still fits the above recommendation.
-* changed table to h2 sections; don't think the headings work in this format, so rewriting is required.)-->
-
-### Sign up or sign in to Intune
+## Sign up or sign in to Intune
 
 1.  Visit the [Intune Sign up](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) page.
 
-2.  On the **Sign up** page, sign in or sign up.
+2.  On the **Sign up** page, sign in or sign up to manage a new subscription of Intune.
 
-If  you complete the sign-up process, you're automatically signed in to the [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] with the tenant administrator account. An email message that contains your account information is also sent to the email address that you provided during sign-up. This email confirms your subscription is active. If you sign in, you're automatically directed to the Intune admin portal.
+### Post sign up considerations
+If you sign up for a new subscription, you'll receive an email message that contains your account information at the email address that you provided during the sign up process. This email confirms your subscription is active.
+
+After completing the sign up process you will be directed to a page used to add users and assign them licenses using the Office 365 admin center. If you will only have cloud-based accounts using your default onmicrosoft.com domain name then you can go ahead and add users and assign licenses at this point. However, if you will use your organization's custom domain name or want to synchronize user account information from on-premises Active Directory, then you can close that browser window and move on to step 2 of this walkthrough.
+
+>[!TIP]
+> The next time you sign in to Intune you'll automatically be directed to the Intune administration console.
 
 ## Next steps
 Congratulations! You have just completed step 1 of the *Get started with a paid subscription to Microsoft Intune* guide.
-
 
 >[!div class="step-by-step"]
 >[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)  **Configure a custom domain**
