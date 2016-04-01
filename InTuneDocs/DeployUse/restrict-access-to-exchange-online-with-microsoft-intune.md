@@ -11,7 +11,7 @@ author: karthikaraman
 ---
 # Restrict email access to Exchange Online with Microsoft Intune
 To control email access to Exchange Online, configure conditional access in Intune.
-If you want to learn more about how conditional access works, read the [Restrict access to email and O365 services]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+If you want to learn more about how conditional access works, read the [Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
 Before you can configure conditional access you must:
 
@@ -22,7 +22,7 @@ Before you can configure conditional access you must:
    > [!NOTE]
    > Do not configure the service to service connector if you intend to use conditional access for both Exchange Online and Exchange On-premises
 
-   For instructions on how to configure the connector, see [Mobile device management with Exchange ActiveSync and Microsoft Intune](../Topic/Mobile-device-management-with-Exchange-ActiveSync-and-Microsoft-Intune.md))
+   For instructions on how to configure the connector, see [Intune service to service connector](intune-service-to-service-exchange-connector.md)
 
 When conditional access policies are configured and targeted to a user, before a user can connect to their email, the **device** they use must be:
 
@@ -47,6 +47,9 @@ The diagram below illustrated the flow is used by conditional access policies fo
 
 ## Support for mobile devices
 You can restrict access to Exchange Online email from **Outlook** and other apps that use modern authentication on iOS and Android devices.
+- Android 4.0 and later, Samsung Knox Standard 4.0 and later
+- iOS 7.1 and later
+- Windows Phone 8.1 and later
 
 > [!TIP]
 > **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Office clients.
@@ -101,7 +104,7 @@ Make sure you [create](create-a-device-compliance-policy-in-microsoft-intune.md)
 ### <a name="bkmk_Eval_FX_CAP"></a>Step 2: Evaluate the effect of the conditional access policy
 You can use the **Mobile Device Inventory Reports** to identify devices that might be blocked from accessing Exchange after you configure the conditional access policy.
 
-To do this, configure a connection between [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and Exchange by using the [Microsoft Intune service to service connector](Mobile-device-management-with-Exchange-ActiveSync-and-Microsoft-Intune.md#bkmk_S_S).
+To do this, configure a connection between [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and Exchange by using the [Microsoft Intune service to service connector](intune-service-to-service-exchange-connector.md).
 1.  Navigate to **Reports -> Mobile Device Inventory Reports**.
 ![IntuneSA2bMobileDeviceInventoryReport](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 

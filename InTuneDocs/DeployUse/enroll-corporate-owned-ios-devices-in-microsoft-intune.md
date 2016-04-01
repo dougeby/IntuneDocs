@@ -22,7 +22,7 @@ You can enroll corporate-enrolled iOS devices in three ways:
 
 ## Setup Assistant Instructions
 
-1.  **Create mobile device group** (Optional) 
+1.  **Create mobile device group** (Optional)
     If your business requires mobile device groups to help manage devices, create those groups. [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
 2.  **Create a profile for devices**
@@ -103,7 +103,7 @@ You can enroll corporate-enrolled iOS devices in three ways:
 
 ## Direct Enrollment Instructions
 
-1.  **Create mobile device group** (Optional) 
+1.  **Create mobile device group** (Optional)
     If your business or organization requires mobile device groups to help manage devices, create those groups. [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
 2.  **Create a profile for devices**
@@ -187,6 +187,5 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
 
 -   [Help protect your data with remote wipe, remote lock, or passcode reset using Microsoft Intune](Help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-microsoft-intune.md)
 
-## See Also
+### See also
 [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
-
