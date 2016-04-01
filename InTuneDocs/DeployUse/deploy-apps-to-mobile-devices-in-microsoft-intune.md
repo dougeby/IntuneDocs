@@ -10,13 +10,9 @@ ms.assetid: 6da30550-9e8e-4333-b9b3-83928de3807a
 author: robstackmsft
 ---
 # Deploy apps to mobile devices in Microsoft Intune
-Now that you've [learned the basics](../Topic/PlanDesign/plan-for-app-deployment-in-microsoft-intune.md) about Microsoft Intune app deployment, you'll now learn how to configure and deploy apps to devices enrolled with Intune. This generally involves three steps, configuration, deployment, and monitoring.
 
-If you are looking for information about how to deploy and manage apps you volume-purchased from an app store, see one of the following topics:
-* [Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune](Manage-iOS-apps-you-purchased-through-a-volume-purchase-program-with-Microsoft-Intune.md)
-* [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](Manage-apps-you-purchased-from-the-Windows-Store-for-Business-with-Microsoft-Intune.md)
+Use the information in this topic to learn about the three steps for Microsoft Intune app deployment; configuration, deployment, and monitoring. If you want to learn some of the basic concepts for app deployment, see [Plan for app deployment in Microsoft Intune](../PlanDesign/plan-for-app-deployment-in-microsoft-intune.md).
 
-For information about how to update apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
 
 > [!IMPORTANT]
 > The information in this topic helps you to deploy apps to [enrolled Windows PCs](https://technet.microsoft.com/library/mt346003.aspx) and other mobile devices. If you want to deploy apps to  [Windows PCs that you manage using the client software](https://technet.microsoft.com/library/dn646959.aspx), see [Deploy apps to Windows PCs in Microsoft Intune](../Topic/Deploy-apps-to-Windows-PCs-in-Microsoft-Intune.md).
@@ -112,11 +108,11 @@ In this procedure, you'll deploy the app to selected devices or users.
 
 |||
 |-|-|
-|![](../media/Available-install-on-iOS.png)|If you deployed the app as **Available**, it will be displayed in the company portal on users device from where they can install the app. For example, in this screenshot, the Bing for iOS app was deployed using the **External Link** installation type, with a custom icon, and the option **Display this as a featured app and highlight it in the company portal** was selected.|
-|![](../media/iOS-Required-install.PNG)|If you deployed the app as required, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed using the **Managed iOS app from the app store** installation type.|
+|![](..\media\Available-install-on-iOS.png)|If you deployed the app as **Available**, it will be displayed in the company portal on users device from where they can install the app. For example, in this screenshot, the Bing for iOS app was deployed using the **External Link** installation type, with a custom icon, and the option **Display this as a featured app and highlight it in the company portal** was selected.|
+|![Required install](..\media\iOS-Required-install.PNG)|If you deployed the app as required, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed using the **Managed iOS app from the app store** installation type.|
 
 ## Monitor the app
-You can see the apps you manage, and their deployment status in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console.
+You can see the apps you manage, and their deployment status in the Intune console.
 
 ### To view the apps you manage and their status
 In the **Apps** workspace, click the **Apps** node.
@@ -126,7 +122,7 @@ The list of apps you manage will be displayed. You can click on any app to see a
 > [!TIP]
 > You can use the **Filters** drop-down list to show only apps that meet the criteria you specify, like apps that failed to install, or apps that were successfully deployed.
 > 
-> ![](../media/App-filters.JPG)
+> ![App filters](..\media\App-filters.png)
 
 Additionally, the **Dashboard** workspace shows an overview of the status of your apps. If you click anywhere in the overview, you'll be taken to the list of apps.
 
@@ -142,6 +138,14 @@ On the **Software Properties** page for the app, click one of these tabs:
 -   **Users** - Shows the users whose devices successfully installed a targeted deployment of the app.
 
 As before, you can use the **Filters** drop-down list to configure the values shown on each of the tabs.
+
+## Next steps
+
+- If you are looking for information about how to deploy and manage apps you volume-purchased from an app store, see one of the following topics:
+	* [Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune](Manage-iOS-apps-you-purchased-through-a-volume-purchase-program-with-Microsoft-Intune.md)
+	* [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](Manage-apps-you-purchased-from-the-Windows-Store-for-Business-with-Microsoft-Intune.md)
+- For information about how to update apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
+
 
 ### See Also
 [Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
