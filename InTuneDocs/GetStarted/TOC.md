@@ -9,7 +9,7 @@
 ### [Organize users and devices](get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Create policies and publish an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Customize the Company Portal](get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Enroll computers](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Enroll Windows PCs](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Enroll mobile devices and install an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)
 ### [Post configuration tasks](post-configuration-tasks.md)
 ## [What to know before you start](what-to-know-before-you-start-microsoft-intune.md)
