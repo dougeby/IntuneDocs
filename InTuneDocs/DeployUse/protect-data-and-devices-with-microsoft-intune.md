@@ -10,9 +10,6 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 author: Lindavr
 ---
 # Protect data and devices with Microsoft Intune
-[![](./media/Nav-Icons/WIT_Tile_W_Overview.png)](https://technet.microsoft.com/library/dn646960.aspx/?WT.mc_id=IntuneOverview20150801)[![](./media/Nav-Icons/WIT_Tile_W_GetStarted.png)](https://technet.microsoft.com/library/dn646953.aspx/?WT.mc_id=IntuneGS20150801)[![](./media/Nav-Icons/WIT_Tile_W_EnrollDevices.png)](https://technet.microsoft.com/library/dn646962.aspx/?WT.mc_id=IntuneEnroll20150801)[![](./media/Nav-Icons/WIT_Tile_W_ManageDevices.png)](https://technet.microsoft.com/library/mt313202.aspx/?WT.mc_id=IntuneConfig20150801)[![](./media/Nav-Icons/WIT_Tile_W_ManageApps.png)](https://technet.microsoft.com/library/dn646965.aspx/?WT.mc_id=IntuneDeploy20150801)![](./media/Nav-Icons/WIT_Tile_W_ProtectResourcesHighlight.png)[![](./media/Nav-Icons/WIT_Tile_W_RetireData.png)](https://technet.microsoft.com/library/mt313204.aspx/?WT.mc_id=IntuneRetire20150801)[![](./media/Nav-Icons/WIT_Tile_W_TechnicalReference.png)](https://technet.microsoft.com/library/mt282239.aspx/?WT.mc_id=IntuneTR20150801)[![](./media/Nav-Icons/WIT_Tile_W_Troubleshooting.png)](https://technet.microsoft.com/library/mt345521.aspx)
-![](./media/Nav-Icons/WIT_Banner_ProtectResources.png)
-
 After you have provisioned and configured your devices, you'll want to make sure that they are *protected against data loss* and other threats. Here are common user scenarios that might present a danger to your network and data and how you can protect against them.
 
 ## Protect  data in email and SharePoint
@@ -30,4 +27,3 @@ Microsoft offers the Enterprise Mobility Suite (EMS), a comprehensive solution f
 
 ## See Also
 [Documentation for Microsoft Intune](documentation-for-microsoft-intune.md)
-

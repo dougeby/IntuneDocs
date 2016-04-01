@@ -1,5 +1,5 @@
 ---
-title: Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool
+title: Prepare iOS apps for management with the App Wrapping Tool | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,16 +9,16 @@ ms.topic: article
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 author: Staciebarker
 ---
-# Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool
+# Prepare iOS apps for mobile application management with the Intune App Wrapping Tool
 Use the **Microsoft Intune App Wrapping Tool for iOS** to modify the behavior of in-house iOS apps by restricting features of the app without changing the code of the app itself.
 
-The tool is a Mac OS command line application that creates a ‘wrapper’ around an app. Once an app is processed, you can then change the apps functionality using [mobile application management policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) that you configure.
+The tool is a Mac OS command-line application that creates a ‘wrapper’ around an app. Once an app is processed, you can then change the apps functionality using [mobile application management policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) that you configure.
 
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## <a name="BKMK_Prereq"></a>Step 1: Fulfill the prerequisites for using the app wrapping tool
 
-|Requirement|Details and more information|
+|Requirement|More information|
 |---------------|--------------------------------|
 |Supported operating system and toolset|You must run the app wrapping tool on a Mac computer that runs OS X 10.8.5 or later, which has the XCode toolset version 5 or later installed.|
 |Signing certificate and provisioning profile|You must have an Apple signing certificate and provisioning profile. See your [Apple developer documentation](https://developer.apple.com/).|
@@ -33,7 +33,7 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://ww
 
 2.  On the Mac computer, double-click the installation file **Microsoft Intune App Wrapping Tool for iOS.dmg**.
 
-3.  Click **Agree** to accept the End User License Agreement (EULA). The installer is mounted and displayed on the Mac computer.
+3.  Choose **Agree** to accept the End User License Agreement (EULA). The installer is mounted and displayed on the Mac computer.
 
 4.  Open the installer and  copy the displayed files to a new folder on the Mac computer. You can now disconnect the mounted installer drive.
 
@@ -42,10 +42,9 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://ww
 ## Step 3: Run the app wrapping tool
 
 1.  On the Mac computer, open a Terminal window and navigate to the folder where you saved the files. Because the executable resides inside the package, you’ll need to run the command as follows:
-
-    ```
+```
     ./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
-    ```
+```
     > [!NOTE]
     > Some parameters are optional as shown in the table below.
 
@@ -56,18 +55,18 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://ww
     ```
     You can use the following command line properties with the app wrapping tool:
 
-    |Property|More information|
-    |------------|--------------------|
-    |**-h**|Displays the available command-line properties for the app wrapping tool.|
-    |**-i**|Specifies the path and file name of the input app.|
-    |**-o**|Specifies the path in which to save the processed app.|
-    |**-p**|Specifies the path to your provisioning profile for iOS apps.|
-    |**-c**|Specifies the SHA1 hash of the signing certificate.|
-    |**-a**|Client ID of the input app (in GUID format) if the app uses Azure Active Directory Libraries (Optional).|
-    |**-r**|Redirect URI of the input app if the app uses Azure Active Directory Libraries (Optional).|
-    |**-v**|Output verbose messages to the console (Optional).|
+|Property|More information|
+  |------------|--------------------|
+  |**-h**|Displays the available command-line properties for the app wrapping tool.|
+  |**-i**|Specifies the path and file name of the input app.|
+  |**-o**|Specifies the path in which to save the processed app.|
+  |**-p**|Specifies the path to your provisioning profile for iOS apps.|
+  |**-c**|Specifies the SHA1 hash of the signing certificate.|
+  |**-a**|Client ID of the input app (in GUID format) if the app uses Azure Active Directory Libraries (Optional).|
+  |**-r**|Redirect URI of the input app if the app uses Azure Active Directory Libraries (Optional).|
+  |**-v**|Output verbose messages to the console (Optional).|
 
-2.  After processing completes, the message **The application was successfully wrapped** will be displayed.
+2. After processing completes, the message **The application was successfully wrapped** will be displayed.
 
     If an error occurs, see [Error messages](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#BKMK_Error) for help.
 
@@ -155,7 +154,7 @@ When you do not supply the above values to the tool; the following additional va
 
 2.  Configure access to mobile application management in Azure Active Directory by doing the following:
 
-    1.  Log into an existing Azure Active Directory account in the Azure management portal.
+    1. Log into an existing Azure Active Directory account in the Azure management portal.
 
     2.  Click **existing LOB application registration** in Azure Active Directory.
 
@@ -188,7 +187,7 @@ When you do not supply the above values to the tool; the following additional va
 -   Double login prompts are prevented if you provide your client application’s Client ID and Redirect URI. This Client ID needs to be registered to access the published [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM resource ID in the AAD Dashboard. Failure to do so will result in a login failure when the app runs.
 
 ## <a name="BKMK_ios_entitlements"></a>Setting app entitlements
-Before wrapping your app, you can grant **entitlements** to give the app  additional permissions and capabilities that exceed what an app typically can do.   An **entitlement file** is used during code signing to specify special permissions within your app (for example, access to a shared keychain). Specific app services, called **capabilities**, are enabled within Xcode during app development. Once enabled, the capabilities are reflected in your entitlements file. For more information about entitlements and capabilities, see [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in the iOS Developer Library. For a complete list of supported capabilities, see [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
+Before wrapping your app, you can grant **entitlements** to give the app  additional permissions and capabilities that exceed what an app typically can do.  An **entitlement file** is used during code signing to specify special permissions within your app (for example, access to a shared keychain). Specific app services, called **capabilities**, are enabled within Xcode during app development. Once enabled, the capabilities are reflected in your entitlements file. For more information about entitlements and capabilities, see [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in the iOS Developer Library. For a complete list of supported capabilities, see [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
 
 ### Supported capabilities for the App Wrapping Tool for iOS
 
@@ -281,8 +280,6 @@ Use the following security and privacy best practices when you use the app wrapp
 -   When users monitor the documents folder on their device from within a wrapped app, they might see a folder named **.msftintuneapplauncher**. If this folder is changed or deleted, this might affect the correct functioning of restricted apps.
 
 ### See also
-[Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
-[Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
-[Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
+- [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
+- [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)

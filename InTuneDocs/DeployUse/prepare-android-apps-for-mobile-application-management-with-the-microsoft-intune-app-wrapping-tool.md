@@ -12,7 +12,7 @@ author: Staciebarker
 # Prepare Android apps for mobile application management with the Intune App Wrapping Tool
 Use the **Microsoft Intune App Wrapping Tool for Android** to modify the behavior of your in-house Android apps to let you configure features of the app without modifying the code of the app itself.
 
-The tool is a Windows command line application that runs in PowerShell and creates a ‘wrapper’ around your app. Once the app is processed, you can then change the app’s functionality using a [mobile application management policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) that you configure.
+The tool is a Windows command-line application that runs in PowerShell and creates a ‘wrapper’ around your app. Once the app is processed, you can then change the app’s functionality using a [mobile application management policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) that you configure.
 
 If your app is using the Azure Active Directory Authentication Library (ADAL), you must complete the steps in [How to wrap apps that use the Azure Active Directory Library (ADAL)](#BKMK_ADAL_android) before you wrap your app. If you are unsure if your app uses this library, contact the developer of the app.
 
