@@ -13,15 +13,14 @@ author: Staciebarker
 # Customize the company portal
 The [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 
-When you customize the company portal, the configurations apply to both the company portal website and company portal apps.
+> [!TIP]
+> When you customize the company portal, the configurations apply to both the company portal website and company portal apps.
 
-## Settings for customizing the company portal
+Customizing the company portal helps provide a familiar and helpful experience for your end users. To do it, just log into the [Microsoft Intune administrator console](https://manage.microsoft.com) as a tenant or service administrator, choose **Admin** &gt; **Company Portal** and configure the company portal settings.
 
-In the [Microsoft Intune administrator console](https://manage.microsoft.com), choose **Admin** &gt; **Company Portal** and configure the company portal settings to provide a familiar and helpful experience for your end users.
+![alt text](./media/companyportal.png "Company portal settings in the ADMIN workspace of the Intune administration console")
 
-![alt text](./media/companyportal.png "Company portal settings in the ADMIN workspace of the Intune administration console").
-
-### Company contact information and privacy statement
+## Company contact information and privacy statement
 The company name is displayed as the company portal title. The contact information and details are displayed to users in the Contact IT screen of the company portal. The privacy statement is displayed when a user clicks on the privacy link.
 
 |Field name|Maximum character length|More information|
@@ -33,7 +32,7 @@ The company name is displayed as the company portal title. The contact informati
     |Additional information|120|Displayed on the **Contact IT** page.|
     |Company privacy statement URL|79|You can specify your own company privacy statement that appears when users click the privacy links from the company portal. You must enter a valid URL in the format **https://www.contoso.com**.|
 
-### Support contacts
+## Support contacts
 The support website is displayed to users in the company portal to enable them to access online support.
 
 |Field name|Maximum character length|More information|
@@ -41,7 +40,7 @@ The support website is displayed to users in the company portal to enable them t
     |Support website URL|150|If you have a support website that you want your users to use, specify the URL here. The URL must be in the format **https://www.contoso.com**. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the company portal.|
     |Website name|40|This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then **Go to IT website** is displayed on the **Contact IT** page in the company portal.|
 
-### Customization
+## Company branding customization
 You can customize your company portal with your company logo, company name, theme color and background.
 
 |Field name|More information|
