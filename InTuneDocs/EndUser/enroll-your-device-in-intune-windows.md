@@ -13,7 +13,7 @@ author: Staciebarker
 
 To enroll, use the link that corresponds to the device you are using:
 
--   [Windows 10](#BKMK_enrollment_w10)
+-   [Windows 10 phone and PCs](#BKMK_enrollment_w10)
 
 -   [Windows 8.1 or Windows RT 8.1](#BKMK_enrollment_w81orwrt81)
 
@@ -25,8 +25,8 @@ To enroll, use the link that corresponds to the device you are using:
 
 For more information about what happens when you enroll, see [What happens when I install the Company Portal app and enroll my device in Intune?](what-happens-when-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 
-### <a name="BKMK_enrollment_w10"></a>Windows 10
-To enroll your device:
+### <a name="BKMK_enrollment_w10"></a>Windows 10 phone and PCs
+To enroll your Windows mobile or PC device:
 
 1.  Go to Windows  **Settings** and tap **Accounts**.
 

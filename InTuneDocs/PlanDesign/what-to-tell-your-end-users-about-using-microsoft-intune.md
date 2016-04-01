@@ -14,18 +14,18 @@ author: Staciebarker
 
 Use these links and information to:
 
-- Understand the steps that your users follow to do different tasks in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
-- Give to your users to help them complete tasks and solve issues they have while using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Understand the steps that your users follow to do different tasks in Intune.
+- Give to your users to help them complete tasks and solve issues they have while using Intune.
 
 
 ## Where your end users can find information about common tasks
 
-Give your end users the following end-user help links when they are looking for information about using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] on their devices. At these links, users will find steps on how to install the Company Portal app, enroll their devices, get managed apps, troubleshoot, and more.
+Give your end users the following end-user help links when they are looking for information about using Intune on their devices. At these links, users will find steps on how to install the Company Portal app, enroll their devices, get managed apps, troubleshoot, and more.
 
-- [Using your Android device with Intune](/Intune/EndUser/using-your-android-device-with-intune.html)
-- [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune.html)
--  [Using your Windows device with Intune](/Intune/EndUser/using-your-windows-device-with-intune.html)
-- [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website.html)
+- [Using your Android device with Intune](/Intune/EndUser/using-your-android-device-with-intune)
+- [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+-  [Using your Windows device with Intune](/Intune/EndUser/using-your-windows-device-with-intune)
+- [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website)
  
 
 ## Enrollment guides and templates that you can customize for your users
