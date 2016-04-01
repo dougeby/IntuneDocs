@@ -22,6 +22,8 @@ You can use the Company Portal website  to:
 
 -   [Reset your device from the Company Portal website](reset-your-device-cpwebsite.md)
 
+-   [Remotely lock a device from the Company Portal website](remote-lock-your-device.md)
+
 -   Find your IT administrator's contact information, if your IT admin configured it
 
 -   See details about your device, including whether it is compliant with your company's or school's policies
