@@ -10,16 +10,14 @@ ms.assetid: 4105b676-11f1-4cd2-88a4-b37d186cdbdb
 author: robstackmsft
 ---
 # Deploy apps to Windows PCs in Microsoft Intune
-Now that you've [learned the basics](../PlanDesign/plan-for-app-deployment-in-microsoft-intune.md) about Microsoft Intune app deployment, in this topic, you'll learn how to actually configure and deploy apps to Windows PCs you manage. 
 
-For information about how to update apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
-For information about how to retire apps, see [Retire apps using Microsoft Intune](retire-apps-using-microsoft-intune.md).
+Use the information in this topic to learn about the three steps for Microsoft Intune app deployment; configuration, deployment, and monitoring. If you want to learn some of the basic concepts for app deployment, see [Plan for app deployment in Microsoft Intune](../PlanDesign/plan-for-app-deployment-in-microsoft-intune.md).
 
 > [!IMPORTANT]
 > The information in this topic helps you to deploy apps to Windows PCs that you manage using the Intune client software. If you want to deploy apps to enrolled Windows PCs and other mobile devices, see [Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md).
 
 ## Configure the app
-In this procedure, you'll use the Intune Software Publisher to configure the properties of the app and upload it to your cloud storage space.
+Use the Intune Software Publisher to configure the properties of the app and upload it to your cloud storage space.
 
 ### To configure an app
 
@@ -110,6 +108,11 @@ In the list of apps, select any app, and then click **View Properties**.
 On the **Software Properties** page for the app, click one of these tabs: **General** - Shows general information about the app and it's installation status, **Devices** - Shows the devices that successfully installed a targeted deployment of the app, **Users** - Shows the users who's devices successfully installed a targeted deployment of the app.
 
 As before, you can use the **Filters** drop-down list to configure the values shown on each of the tabs.
+
+## Next steps
+
+For information about how to update apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
+For information about how to retire apps, see [Retire apps using Microsoft Intune](retire-apps-using-microsoft-intune.md).
 
 ### See Also
 [Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
