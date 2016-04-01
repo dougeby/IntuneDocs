@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid:
 author: NathBarn
 ---
-# Enroll corporate-owned devices
+# Enroll iOS devices with Apple Configurator using Setup Assistant 
 Organizations can use Intune to manage large numbers of mobile devices with a single user account called a [device enrollment manager account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). After creating a device enrollment manager account, that account can be used to enroll more than the standard five devices allowed by default to normal users. After creating a device enrollment manager account, you will be ready to enroll company owned devices on behalf of your end users.
 elect from the following corporate device enrollment options to learn more:
 

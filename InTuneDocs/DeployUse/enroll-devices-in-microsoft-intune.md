@@ -7,34 +7,26 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
-author:
+author: NathBarn
 ---
-# Enroll devices in Intune
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.  
+# Enroll devices for management in Intune
+Microsoft Intune mobile device management can manage devices and provide access to resources. The way you'll manage devices depends on the device type, ownership, and the level of management needed. "Bring your own device" (BYOD) and company-owned device (COD) scenarios require an enrollment process. Organizations using Exchange ActiveSync, either on-premises or hosted in the cloud, can provide lighter management but without enrollment. Windows PCs can also be managed using Intune client software.
 
-Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem.  
-
-## Enroll and manage devices with Intune  
-Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device. Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.  
-
-To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme.  
-
-Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign. Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you  
+## Enroll devices  
+ Enrollment lets users access company resources on their personal devices and lets the admin ensure devices comply with policies that protect those resources. The admin must enable enrollment in the Intune console, which might require creating a trust relationship with the device. The device is then enrolled, usually by the user entering work or school credentials. The device then receives policy from Intune and gains access to resources.
 
 [Get ready to enroll devices in Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
-## Manage corporate-owned devices
-[Manage corporate-owned devices](manage-corporate-owned-devices.md)
+## Enroll corporate-owned devices
+Corporate-owned devices (COD) can be managed with the Intune console. iOS devices can be enrolled directly through tools provided by Apple including their Device Enrollment Program or Apple Configurator. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned.
+[Enroll corporate-owned devices](manage-corporate-owned-devices.md)
 
 ## Mobile device management with Exchange ActiveSync and Intune
+Mobile devices that aren't enrolled but that connect to Exchange ActiveSync (EAS) can still be managed by Intune. Intune uses an Exchange Connector to communicate with EAS, either on-premises and cloud-hosted.
 [Mobile device management with Exchange ActiveSync and Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
 
 
 ## Manage Windows PCs with Intune  
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.  
-
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.  
-
-Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy. Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna. Integer nulla.  
+You can also use Microsoft Intune to manage Windows PCs using the Intune Windows PC client software. 
 
 [Manage Windows PCs with Intune](manage-windows-pcs-with-microsoft-intune.md)

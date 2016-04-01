@@ -77,4 +77,3 @@ Deleting a device enrollment manager does not affect enrolled devices. When a de
 [Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md)
 [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 [Enable mobile device enrollment with the Microsoft Intune Account Portal](enable-mobile-device-enrollment-with-the-microsoft-intune-account-portal.md)
-
