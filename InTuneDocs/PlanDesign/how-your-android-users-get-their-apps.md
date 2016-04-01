@@ -12,8 +12,6 @@ author: Staciebarker
 # How your Android users get their apps
 Use this information to understand how and where your end users get the apps that you distribute through Microsoft Intune. 
 
-The following terms are used in the tables that describe how users get their apps for each platform.
-
 **Required apps** - Apps that are required by the administrator and that are installed on the device with minimal user involvement, depending on the platform.
 
 **Required apps** - Apps that are provided in the Company Portal app list and that a user may optionally choose to install.
