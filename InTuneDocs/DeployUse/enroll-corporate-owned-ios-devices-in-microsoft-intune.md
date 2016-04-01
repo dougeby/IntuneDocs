@@ -187,5 +187,5 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
 
 -   [Help protect your data with remote wipe, remote lock, or passcode reset using Microsoft Intune](Help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-microsoft-intune.md)
 
-## See Also
+### See also
 [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
