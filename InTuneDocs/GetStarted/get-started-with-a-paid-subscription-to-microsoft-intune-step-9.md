@@ -15,7 +15,7 @@ To set up mobile device management with Intune, you must first set the mobile de
 ## Enable device management and enroll devices
 
 1.  **Make Intune your mobile device management authority**
-    In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** > **Mobile Device Management**, and then choose **Set MDM Authority** under **Tasks**.  Choose **Yes** in the MDM Authority dialog box.
+    In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** > **Mobile Device Management**, and then choose **Set MDM Authority** under **Tasks**.  Choose **Yes** in the MDM Authority dialog box.![alt text](./media/mdmAuthority.png "MDM authority set to use Intune").
 
 2.  **Enable MDM for your device platform**
     Enable mobile device management for the device platform you want to manage. Depending on your platform, different requirements are needed:
@@ -40,7 +40,7 @@ To set up mobile device management with Intune, you must first set the mobile de
 
 4.  Open the company portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.
 
-To learn more about mobile device management using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md).
+To learn more about mobile device management using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](/intune/deployuse/get-ready-to-enroll-devices-in-microsoft-intune).
 
 
 ## Next steps

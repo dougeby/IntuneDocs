@@ -18,6 +18,9 @@ Before using Intune to deploy apps, make sure that you have the appropriate lice
 
 In these steps, you'll set up a mobile device configuration policy and a Windows computer firewall policy, and configure Skype as an available install for mobile devices after they're enrolled. After you add and deploy a new policy, all users or devices in the group to which you deployed the policy inherit the settings as their baseline policy. You can always review and edit the details of these policies later from the Policy workspace.
 
+![alt text](./media/policy.png "POLICY workspace of the Intune administration console")
+
+
 ## Create and deploy a mobile device configuration policy
 
 1.  Open the [Intune administration console](https://manage.microsoft.com/).
@@ -81,8 +84,10 @@ The Skype app is now available to install on mobile devices from the company por
 
 
 ## Next steps
-|Congratulations! You have just completed step 6 of the *Get started with a paid subscription to Microsoft Intune* guide.|---|---|
-|-----------------|----------------------|---------------------------------------------------------|
-|>[!div class="step-by-step"]<br>>[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)  **Create groups to organize users and devices**|---|[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)  **Customize the company portal**|
+Congratulations! You have just completed step 6 of the *Get started with a paid subscription to Microsoft Intune* guide.
+
+>[!div class="step-by-step"]
+
+>[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)  **Customize the Company Portal**
 >
->
+>[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)  **Organize users and devices**
