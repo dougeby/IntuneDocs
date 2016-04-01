@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
+ms.assetid:
 author: Nbigman
 ---
 # Plan your user and device groups
