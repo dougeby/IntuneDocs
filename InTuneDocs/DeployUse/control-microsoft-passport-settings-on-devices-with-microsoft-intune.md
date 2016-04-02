@@ -24,7 +24,7 @@ Intune integrates with Passport for Work in two ways:
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Admin** &gt; **Mobile Device Management** &gt; **Windows** &gt; **Passport for Work** to open the Passport for Work page as shown below.
 
-	![Passport](..\media\passport.png)
+	![Passport for Work Page](../media/passport.png)
 
 2.  Choose one of the following settings:
 	- **Disable Passport for Work on enrolled devices** - If you don't want to use Passport for Work on Windows 10 devices, select this setting. All other settings on the screen are disabled.
