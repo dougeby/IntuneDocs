@@ -27,7 +27,7 @@ The phases of app rollout are:
 ## Project scope
 Consider the following:
 
--   The user task the app meant to enable.
+-   The user task the app is meant to enable.
 
 -   The suitability of  the app for your users and their devices (all operating systems that are likely to be used).
 
@@ -37,21 +37,21 @@ Consider the following:
 
 -   Determine that the app type is supported by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
 
--   Check that  you have sufficient  cloud storage space available to upload the app. Instructions for purchasing additional storage are provided in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).
+-   Check that  you have sufficient cloud storage space available to upload the app. Instructions for purchasing additional storage are provided in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).
 
 ## Proof of concept
-In the Proof of concept phase, test your app deployment in a laboratory environment on devices and users that you've configured strictly for testing purposes.
+In the Proof of concept phase test your app deployment in a laboratory environment on devices and users that you've configured strictly for testing purposes.
 
 -   Have your help desk participate in this phase to learn what issues can arise during pilot and production deployment. Troubleshooting information is available in [Troubleshoot app deployment problems in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md).
 
--   At this point in the process you should develop communication plans for pilot and production users. At a minimum the plan should include what app is being deployed, how and when they will obtain it,  the business purpose of the deployment, and what to do if they encounter issues, both self-help information and how to contact the help desk.
+-   At this point in the process you should develop communication plans for pilot and production users. At a minimum the plan should include what app is being deployed, how and when users will obtain it,  the business purpose of the deployment, and what to do if they encounter issues, both self-help information and how to contact the help desk.
 
 ## Pilot
 During the pilot you will deploy the app to a small group of test users and devices. Consider the following:
 
 -   Ensure that the test group is representative of the users and devices that will be using the app after production rollout.
 
--   Educate the help desk  regarding the app deployment, and ensure they are prepared to help users in the test group.
+-   Educate the help desk regarding the app deployment, and ensure that they are prepared to help users in the test group.
 
 -   Choose test users who will subject the app to typical usage and will reliably report issues to the pilot administrators.
 
@@ -70,7 +70,7 @@ During the pilot you will deploy the app to a small group of test users and devi
 -   Use a phased approach for deploying the app, adding groups incrementally to ensure that the rollout is proceeding smoothly.
 
 ## Operations and maintenance
-**Operations:** Monitor your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console for alerts and user or device issues, and to ensure that application distribution is functioning according to your organizational plan.
+**Operations:** Monitor your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console for alerts and user or device issues, and to ensure that application distribution is functioning according to your design.
 
 **Help desk:** Ensure that your help desk is aware of any changes to app availability that may result in support requests.
 
