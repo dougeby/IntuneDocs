@@ -1,12 +1,12 @@
 ---
-title: Keep Windows PCs up to date with software updates in Microsoft Intune
+title: Software updates for Windows PCs
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 64ba8e58-fab1-4480-a440-164268810138
+ms.assetid: 
 author: robstackmsft
 ---
 # Keep Windows PCs up to date with software updates in Microsoft Intune
@@ -238,5 +238,5 @@ When you select an update from the list, further commands are available that let
 
 
 ### See Also
-[Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
+[Policies to protect Windows PCs](policies-to-protect-windows-pcs.md)
 
