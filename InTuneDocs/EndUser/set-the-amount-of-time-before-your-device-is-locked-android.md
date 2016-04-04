@@ -6,6 +6,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
+author:
+---
 
 # Set the amount of time before your device is locked
 
@@ -13,7 +15,7 @@ ms.assetid:
 
 2.  Specify the password timeout value.
 
-3.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] by following the instructions in [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
+3.  Ensure that your device is enrolled with Intune by following the instructions in [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

@@ -6,12 +6,14 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
+author:
+---
 
 # Unenroll your device from Intune if you declined Terms of Use
 
-Use these instructions to unenroll from Intune only if you declined the Terms of Use while trying to sign in to the Company Portal app.  When you decline the Terms, you cannot sign in to the Company Portal app. To unenroll your device, you generally use the Company Portal app, so these instructions are a workaround method for unenrolling when you have declined the Terms. The best way to unenroll your device is to accept the Terms, sign in to the Company Portal app, and then unenroll.  See [Unenroll your device from Intune](unenroll-your-device-from-intune-android).
+The best way to unenroll your device is to accept the Terms of Use, sign in to the Company Portal app, and then use [these instructions](unenroll-your-device-from-intune-android.md) to unenroll. However, if you declined the Terms of Use while trying to sign in to the Company Portal app, you are prevented from signing in to the Company Portal app on future tries, so you need to use these "workaround" instructions to unenroll your device.
 
-When you uninstall the Company Portal app, you are also unenrolling your device from Intune, which means that your device will no longer be able to access company resources.  For more about what happens when you unenroll, see [What happens when you unenroll your device from Intune?](what-happens-when-you-unenroll-your-device-from-intune-android.md).
+When you uninstall the Company Portal app, you are also unenrolling your device from Intune, which means that your device will no longer be able to access company resources.  For more about what happens when you unenroll, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
 Before you can uninstall the Company Portal app, you have to go to the **Device administrators** setting, and turn off **Company Portal**. The steps may differ a little, depending on which Android device you have.
 

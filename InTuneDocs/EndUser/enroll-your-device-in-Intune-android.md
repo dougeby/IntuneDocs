@@ -6,6 +6,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
+author:
+---
 
 # Enroll your Android device in Intune
 
@@ -13,7 +15,7 @@ The instructions for enrolling are different for a Samsung Knox Android device v
 
 Before or after enrolling, you may be asked to choose a category that best describes how you use your device. Your IT administrator uses this category to help determine what apps you have access to.
 
-For instructions with screenshots, see [Intune End-user enrollment instructions](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a).
+To see instructions with screenshots, see [Intune End-user enrollment instructions](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a).
 
 
 

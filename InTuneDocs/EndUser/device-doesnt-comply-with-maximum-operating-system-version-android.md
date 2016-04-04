@@ -6,7 +6,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
-
+author:
+---
 # Device doesn't comply with the maximum operating system version
 
 Your device does not comply with your IT admin's policy for the maximum version of the operating system. Contact your IT admin for help.

@@ -1,3 +1,4 @@
+---
 title: Unenroll your device from Intune
 ms.custom: na
 ms.reviewer: na
@@ -8,6 +9,7 @@ ms.topic: article
 ms.assetid: 
 author: Staciebarker
 robots: noindex
+---
 
 # Unenroll your device from Intune
 
@@ -38,4 +40,4 @@ When you unenroll your device from Intune, here's what happens:
 -   Devices that are configured for email only won't appear in the Company Portal app or website anymore.
 
 ### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

@@ -1,3 +1,4 @@
+---
 title: What happens if you install the Company Portal app and enroll your device in Intune?
 ms.custom: na
 ms.reviewer: na
@@ -8,6 +9,7 @@ ms.topic: article
 ms.assetid: 
 author: Staciebarker
 robots: noindex
+---
 
 # What happens if you install the Company Portal app and enroll your device in Intune?
 
@@ -83,7 +85,7 @@ When your device is enrolled, your IT administrator can:
 
 -   Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, roaming charges may be incurred.
 
-For the steps on how to enroll your device, see [enroll-your-ios-device-in-intune-ios](Enroll your iOS device in Intune) or [enroll-your-mac-os-x-device-in-intune-ios](Enroll your Mac OS X device in Intune).
+For the steps on how to enroll your device, see [Enroll your iOS device in Intune](enroll-your-ios-device-in-intune.md) or [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
 
 ### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

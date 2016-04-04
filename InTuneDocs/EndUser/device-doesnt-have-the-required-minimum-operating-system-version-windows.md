@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 
 author: Staciebarker
+---
 
 # Device doesn't have the required minimum operating system version
 

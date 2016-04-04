@@ -6,6 +6,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
+author:
+---
 
 # Use managed apps on your device
 
@@ -15,7 +17,7 @@ Different managed apps can also work together on your device to allow you to do 
 
 When you access company data in a managed app, you see a message like the one below, which lets you know that the app you are opening is managed.
 
-![](../Image/IW%20Help%20pics/managed%20apps%20message.png)
+![open-managed-apps-message](/media/managed-apps-message.png)
 
 ## How do I get managed apps?
 You get managed apps in a couple of different ways:

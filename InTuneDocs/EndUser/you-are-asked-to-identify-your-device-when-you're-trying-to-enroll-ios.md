@@ -1,3 +1,4 @@
+---
 title: You are asked to identify your device when you're trying to enroll
 ms.custom: na
 ms.reviewer: na
@@ -8,6 +9,7 @@ ms.topic: article
 ms.assetid: 
 author: Staciebarker
 robots: noindex
+---
 
 # You are asked to identify your device when you're trying to enroll
 
@@ -17,4 +19,4 @@ If you are trying to enroll your device in Intune, and you see a screen asking y
 3. Enter the last four characters of your device's serial number to help Intune confirm that your device is enrolled. To find your serial number, see [how-do-i-find-the-serial-number-on-my-device-ios.md][How do I find the serial number on my device?].
 
 ### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

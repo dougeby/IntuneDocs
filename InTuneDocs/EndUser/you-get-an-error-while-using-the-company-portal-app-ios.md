@@ -1,3 +1,4 @@
+---
 title: You get an error while using the Company Portal app
 ms.custom: na
 ms.reviewer: na
@@ -8,6 +9,7 @@ ms.topic: article
 ms.assetid: 
 author: Staciebarker
 robots: noindex
+---
 
 # You get an error while using the Company Portal app
 
@@ -21,4 +23,4 @@ If you get an error while you’re using the Company Portal app, you can send in
 
 
 ### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

@@ -1,3 +1,4 @@
+---
 title: What happens if you reset your device using the Company Portal?
 ms.custom: na
 ms.reviewer: na
@@ -8,6 +9,7 @@ ms.topic: article
 ms.assetid: 
 author: Staciebarker
 robots: noindex
+---
 
 # What happens if you reset your device using the Company Portal?
 
@@ -26,4 +28,4 @@ When you use the Company Portal to reset your iPhone or iPad, some apps and sett
 -   Your company email account will be deleted and unsaved email will be deleted.
 
 ### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

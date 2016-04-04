@@ -6,24 +6,26 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
+author:
+---
 
 # Sign in to the Company Portal app
 
-After you install the Company Portal app, you'll need to sign in to the app to enroll your device in Intune. Once you enroll, you can  sign in to the Company Portal anytime to download company apps and do other tasks. For more about what you can do, see [What happens when you install the Company Portal app and enroll your device in Intune?](what-happens-when-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
+After you install the Company Portal app, you'll need to sign in to the app to enroll your device in Intune. Once you enroll, you can  sign in to the Company Portal anytime to download company apps and do other tasks. For more about what you can do, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
 
 1.  Tap **Company Portal** in your list of apps.
 
-    ![](../Image/IW%20Help%20pics/and%20enroll%201-cp%20find%20CP%20app.png)
+    ![android-company-portal-icon](/media/and-enroll-1-cp-find-CP-app.png)
 
 2.  On the **Welcome** screen, tap **Sign in**.
 
-    ![](../Image/IW%20Help%20pics/and%20enroll%200-welcome%20screen.png)
+    ![android-company-portal-sign-in](/media/and-enroll-2-cp-sign-in.png)
 
 3.  Enter your work or school email and your password, and then Tap **Sign in**.
 
-    ![](../Image/IW%20Help%20pics/and%20enroll%202-cp%20sign%20in.png)
+    ![android-company-portal-terms](/media/and-enroll-3-accept-terms.png)
 
-    If you are signing into the Company Portal app for the first time, and your company or school is using Intune, you will be prompted to enroll your device in Intune. To enroll, follow the steps in [Enroll your device in Intune](#BKMK_andr_enroll_devc).
+    If you are signing into the Company Portal app for the first time, and your company or school is using Intune, you will be prompted to enroll your device in Intune. To enroll, follow the steps in [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
 
     **For Android 6.0 or later devices only:**
 
@@ -31,7 +33,7 @@ After you install the Company Portal app, you'll need to sign in to the app to e
 
     If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
 
-    ![](../Image/IW%20Help%20pics/andr%20allow%20phone%20access.png)
+    ![](/media/andr-allow-phone-access.png)
 
 
 ### See also
