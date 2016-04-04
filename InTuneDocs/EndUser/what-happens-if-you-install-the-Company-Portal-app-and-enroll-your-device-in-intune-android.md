@@ -6,6 +6,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
+author:
+---
 
 # What happens if you install the Company Portal app and enroll your device in Intune?
 

@@ -1,3 +1,4 @@
+---
 title: Reset (erase) your lost or stolen device
 ms.custom: na
 ms.reviewer: na
@@ -8,6 +9,7 @@ ms.topic: article
 ms.assetid: 
 author: Staciebarker
 robots: noindex
+---
 
 # Reset (erase) your lost or stolen device
 
@@ -28,7 +30,7 @@ To reset your device using the Company Portal website, use these steps, or watch
 
 2.  Tap  **Reset** &gt; **Reset**.
 > [!NOTE]
-> If you are unable to reset your lost or stolen device, contact IT to reset it for you.
+> If you are unable to reset your lost or stolen device, ask your IT administrator to reset it for you.
 
 ### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

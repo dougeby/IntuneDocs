@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 
 author: Staciebarker
+---
 
 # Enroll your Windows device in Intune
 
@@ -23,26 +24,26 @@ To enroll, use the link that corresponds to the device you are using:
 
 -   [Windows Phone 8](#BKMK_enrollment_wp8)
 
-For more information about what happens when you enroll, see [What happens when I install the Company Portal app and enroll my device in Intune?](what-happens-when-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+For more information about what happens when you enroll, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 
 ### <a name="BKMK_enrollment_w10"></a>Windows 10 phone and PCs
 To enroll your Windows mobile or PC device:
 
 1.  Go to Windows  **Settings** and tap **Accounts**.
 
-    ![](./media/IW-Help-pics/W10-enroll-1-settings-accounts.png)
+    ![](/media/W10-enroll-1-settings-accounts.png)
 
 2.  Tap **Your account**.
 
-    ![](./media/IW-Help-pics/W10-enroll-2-accounts-your-account.png)
+    ![](/media/W10-enroll-2-accounts-your-account.png)
 
 3.  Tap **Add a work or school account**.
 
-    ![](./media/IW-Help-pics/W10-enroll-3-add-work-school-acct.png)
+    ![](/media/W10-enroll-3-add-work-school-acct.png)
 
 4.  Sign in with your work or school credentials.
 
-    ![](./media/IW-Help-pics/W10-enroll-4-sign-in.png)
+    ![](/media/W10-enroll-4-sign-in.png)
 
 If you followed the steps above, but still can't access your work or school email, files, and other data, go back to **Accounts** and tap **Work access**.
 
@@ -65,7 +66,7 @@ To enroll your device:
 
 1.  On the device, tap **Settings** &gt; **PC Settings** &gt; **Network** &gt; **Workplace**.
 
-    ![](./media/IW-Help-pics/W81-1-workplacejoin.png)
+    ![](/media/W81-1-workplacejoin.png)
 
 2.  Enter your work or school email for the User ID, if required, and then tap **Join**.
 
@@ -73,19 +74,19 @@ To enroll your device:
 
 3.  Type the password for your work or school email.
 
-    ![](./media/IW-Help-pics/W81-2-workplacesettings_signin.png)
+    ![](/media/W81-2-workplacesettings_signin.png)
 
 4.  Under **Turn on device management**, tap **Turn on**.
 
-    ![](./media/IW-Help-pics/W81-3-dev-mgt-turn-on.png)
+    ![](/media/W81-3-dev-mgt-turn-on.png)
 
 5.  In the **Allow apps and services from IT admin** dialog,  select the  **I agree** check box, and then tap **Turn on**.
 
-    ![](./media/IW-Help-pics/W81-4-agree-allow-apps-services.png)
+    ![](/media/W81-4-agree-allow-apps-services.png)
 
     When you have successfully enrolled, you'll see the following screen.
 
-    ![](./media/IW-Help-pics/W81-5-enrolled-done.png)
+    ![](/media/W81-5-enrolled-done.png)
 
 We also recommend that you install the Company Portal app, which lets you easily identify and get the company apps that are relevant to you and your role. Depending on how your company  configured Intune, the Company Portal app may have been installed as part of your enrollment process. To check if you have the app, look for **Company Portal** in your apps list. If you don't see the Company Portal in your list of apps, follow these steps to install it.
 
@@ -132,11 +133,11 @@ Install the Company Portal app on your device:
 
 3.  In the list of results, tap **Company Portal**.
 
-    ![](./media/IW-Help-pics/WP81-1-CP-search-store-v2.png)
+    ![](/media/WP81-1-CP-search-store-v2.png)
 
 4.  Tap **Company Portal**  &gt; **Install**.
 
-    ![](./media/IW-Help-pics/WP81-2-CP-install-v2.png)
+    ![](/media/WP81-2-CP-install-v2.png)
 
 Enroll your device:
 
@@ -148,19 +149,19 @@ Enroll your device:
 
 4.  Tap **Tap to enroll or identify this device**.
 
-    ![](./media/IW-Help-pics/WP81-enroll-1-swipe-my-devices.png)
+    ![](/media/WP81-enroll-1-swipe-my-devices.png)
 
 5.  Tap **Enroll this device**.
 
-    ![](./media/IW-Help-pics/WP81-enroll-2-enroll-this-device.png)
+    ![](/media/WP81-enroll-2-enroll-this-device.png)
 
 6.  Tap **Add account**.
 
-    ![](./media/IW-Help-pics/WP81-enroll-3-workplace-add-acct.png)
+    ![](/media/WP81-enroll-3-workplace-add-acct.png)
 
 7.  Enter additional information as requested and then tap **sign in** to complete the enrollment. You should now see your workplace account listed on the **Settings** &gt; **Workplace** page.
 
-    ![](./media/IW-Help-pics/WP81-enroll-4-account-added.png)
+    ![](/media/WP81-enroll-4-account-added.png)
 
 #### <a name="BKMK_comp_doesnt_allow_cp"></a>If you aren’t allowed to access the Windows Store from your Windows Phone, or if you don’t have a Microsoft Account
 

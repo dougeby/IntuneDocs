@@ -1,3 +1,4 @@
+---
 title: What happens if you unenroll your device from Intune?
 ms.custom: na
 ms.reviewer: na
@@ -8,6 +9,7 @@ ms.topic: article
 ms.assetid: 
 author: Staciebarker
 robots: noindex
+---
 
 # What happens if you unenroll your device from Intune?
 
@@ -28,4 +30,4 @@ When you unenroll your device from Intune:
 -   Company email profiles are removed from the device.
 
 ### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x device-with-intune.md)
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

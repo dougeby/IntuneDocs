@@ -6,10 +6,14 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
+author:
+---
 
 # Send diagnostic data logs to your IT administrator using email
 
 If you get an error while you're working with your school or company apps or while you're in the Company Portal app, you can send diagnostic data logs  to help your IT admin figure out and fix the error. To include all of the details in the logs, which will make it easier for your IT admin to figure out the issue, turn on Verbose Logging.
+
+To turn on verbose logging:
 
 1.  Open the Company Portal app.
 

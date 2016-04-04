@@ -19,7 +19,7 @@ Use these steps for tasks that you need to do on your iOS device when your compa
 The information in this section will help you with Intune Company Portal installation and device enrollment for iOS devices.
 
 - [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md)</br>
-- [Enroll your iOS device in Intune](enroll-your-ios-device-in-intune-ios.md)</br>
+- [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md)</br>
 - [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md)</br>
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)</br>
 
@@ -27,7 +27,6 @@ The information in this section will help you with Intune Company Portal install
 
 The information in this section will help you with actions you can take after your iOS device is enrolled in Intune.
 
-- [What is the Company Portal website?](what-is-the-company-portal-website-ios.md)</br>
 - [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)</br>
 - [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md)</br>
 - [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-ios.md)</br>

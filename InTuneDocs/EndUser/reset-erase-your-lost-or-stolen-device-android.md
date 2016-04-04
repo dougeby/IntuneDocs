@@ -6,10 +6,12 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
+author:
+---
 
 # Reset (erase) your lost or stolen device
 
-If your phone is lost or stolen, you can reset it to factory defaults from the Company Portal app or website. For instructions using the Company Portal app, use the following steps, or watch this [video](http://aka.ms/ly1x17). To use the Company Portal website, see ___________________________.
+If your phone is lost or stolen, you can reset it to factory defaults from the Company Portal app or website. For instructions using the Company Portal app, use the following steps, or watch this [video](http://aka.ms/ly1x17). You can also reset your device by using the [Company Portal website](reset-your-device-cpwebsite.md).
 
 To learn about what happens if you reset your device, see [What happens if you reset your device using the Company Portal](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 

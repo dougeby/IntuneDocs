@@ -6,6 +6,8 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
+author:
+---
 
 # Send diagnostic data logs to your IT administrator using a USB cable
 

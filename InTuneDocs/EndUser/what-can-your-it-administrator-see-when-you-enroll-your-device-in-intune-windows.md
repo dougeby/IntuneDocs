@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 
 author: Staciebarker
+---
 
 # What can your IT administrator see when you enroll your device in Intune?
 

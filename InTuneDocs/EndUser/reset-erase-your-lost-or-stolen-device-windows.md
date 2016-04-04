@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 
 author: Staciebarker
+---
 
 # Reset (erase) your lost or stolen device
 
