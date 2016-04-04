@@ -20,7 +20,7 @@ The typical phases of a technical deployment are Project Scope, Proof of Concept
 
 -   **[Enterprise rollout](enterprise-rollout.md):** Launch across all departments and user groups.
 
--   **[Run state](run-state.md):** Operations plan for all key phases/focus areas, with ongoing increases in user-adoption.
+-   **[Operations and maintenance](operations-and-maintenance.md):** Operations plan for all key phases/focus areas, with ongoing increases in user-adoption.
 
 ## Rolling out policies and apps
 These topics will help you plan for the rollout of new policies and apps:

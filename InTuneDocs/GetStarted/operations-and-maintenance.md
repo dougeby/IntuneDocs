@@ -1,5 +1,5 @@
 ---
-title: Run state
+title: Operations and maintenance
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: f46fb18e-228c-4a2d-92e7-20734e9bdae3
 author: Nbigman
 ---
-# Run state
+# Operations and maintenance (O&M)
 Now that your [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] system is operational, and you depend on it for business-critical functions and for secure device usage, maintain a robust system.
 
 ## Why is this important?
@@ -21,7 +21,7 @@ Begin by reviewing the discovery questions to help scope and define your ongoing
 ## Discovery questions
 Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in the  Rollout Planning Guide and Project Plan.
 
--   Who makes up your  run-state team?
+-   Who makes up your O&M team?
 
 -   How will you report to key stakeholders?
 
@@ -34,7 +34,7 @@ Review this section for guidance on focus-area activities for this stated phase 
 Ensure your rollout is set up for long-term success and sustained adoption.
 
 ### Help desk
-During the run-state phase, inform your help desk of service updates, or  when issues arise, to ensure they are prepared to address questions from end-users. Stay familiar with Microsoft content and community resources to be able to solve issues as they arise.
+During the O&M phase, inform your help desk of service updates, or  when issues arise, to ensure they are prepared to address questions from users. Stay familiar with Microsoft content and community resources to be able to solve issues as they arise.
 
 ### Awareness
 Awareness does not stop once your rollout is complete. If a service update or changes to an operating system will affect the user experience, communicate that effect to the users promptly. New users will have to be educated about the corporate device management approach.
@@ -46,7 +46,7 @@ As new features are enabled ensure your training materials are updated.
 Monitor your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console for alerts and user or device issues, and to ensure that polices and application distribution are performing according to your organizational plan.
 
 ## Get started checklist
-Here is a list of steps to get you started with the **Run state** phase.
+Here is a list of steps to get you started with the **O&M** phase.
 
 -   Ensure that your monitoring procedures are in place.
 
@@ -57,7 +57,7 @@ Here is a list of steps to get you started with the **Run state** phase.
 -   Help desk is aware of changes to wit_nextref, including changes related to the functionality of devices of varying operating systems.
 
 ## Common challenges
-Here are some  challenges that you may encounter in the **Run state** phase.
+Here are some  challenges that you may encounter in the **O&M** phase.
 
 -   **Challenge:** Admins know that their environment needs to be monitored regularly. However, they are not experienced with the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] consoles.
 
@@ -66,6 +66,7 @@ Here are some  challenges that you may encounter in the **Run state** phase.
 -   **Challenge:** Users encounter issues with enrollment and with app installation.
 
     **Mitigation:** Prepare your help desk with troubleshooting content that can enable quick resolution of common problems.
+    
 
 ### See also
 [Rollout phases for Microsoft Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
