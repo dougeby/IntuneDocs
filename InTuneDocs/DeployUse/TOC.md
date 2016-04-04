@@ -1,6 +1,6 @@
 # [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
-# [Get started](/intune/getstarted/get-started-with-a-paid-subscription-to-microsoft-intune)
-# [Plan and Design](/intune/plandesign/what-to-tell-your-end-users-about-using-microsoft-intune)
+# [Get started](/intune/getstarted/what-to-know-before-you-start-microsoft-intune)
+# [Plan and Design](/intune/plandesign/migrating-to-intune)
 
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -26,29 +26,25 @@
 ### [Manage Windows PCs with Intune](manage-windows-pcs-with-microsoft-intune.md)
 #### [Install the PC client](install-the-windows-pc-client-with-microsoft-intune.md)
 #### [Resolve GPO and Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
-#### [Common PC management tasks with the Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
-
-## [Configure devices](manage-windows-pcs-with-microsoft-intune.md)
-### [Manage PCs](manage-windows-pcs-with-microsoft-intune.md)
-#### [Resolve GPO and Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
-#### [Common PC management tasks with the Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+## [Configure devices](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 ### [Manage settings and features on your devices with policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
 ### [Enable access to company resources](enable-access-to-company-resources-with-microsoft-intune.md)
 #### [Enable access to company resources using certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md)
 #### [Help users connect to company networks using Wi-Fi profiles](help-users-connect-to-company-networks-using-wi-fi-profiles-with-microsoft-intune.md)
 #### [Help users connect to their work using VPN profiles ](help-users-connect-to-their-work-using-vpn-profiles-with-microsoft-intune.md)
 #### [Configure access to corporate email using email profiles](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
+### [Common PC management tasks with the Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
 ## [Protect devices](protect-data-and-devices-with-microsoft-intune.md)
 ### [Protect Windows devices with multi-factor authentication](protect-windows-devices-with-multi-factor-authentication.md)
-### [Keep PCs up to date with software updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
-### [Help protect PCs using Windows Firewall policies](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
-### [Help secure PCs with Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
-### [Control Microsoft Passport settings on devices](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Help protect iOS devices with Activation Lock bypass](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
+### [Control Microsoft Passport settings on devices](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [Policies to protect Windows PCs](policies-to-protect-windows-pcs.md)
+#### [Windows PC software updates](pc-software-updates.md)
+#### [Windows Firewall for PCs](pc-firewall-policies.md)
+#### [Windows PC endpoint protection](pc-endpoint-protection.md)
 
 ## [Deploy apps](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 ### [Deploy apps to mobile devices](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
@@ -93,6 +89,7 @@
 #### [Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 #### [Microsoft apps you can manage with Intune](microsoft-apps-you-can-manage-with-intune.md)
 
+## [Retire apps and data](retire-apps-using-microsoft-intune.md)
 ### [Retire apps ](retire-apps-using-microsoft-intune.md)
 ### [Help protect your data with remote wipe, remote lock, or passcode reset](help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-microsoft-intune.md)
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)

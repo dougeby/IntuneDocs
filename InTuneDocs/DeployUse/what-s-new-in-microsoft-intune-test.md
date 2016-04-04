@@ -31,7 +31,6 @@ This approach has two main benefits:
 - **Manage the Microsoft Outlook app with MAM policies for devices not enrolled in Intune**
 You can now manage the Microsoft Outlook app on devices that are not enrolled in Intune with the Intune mobile application management policy. The updated Microsoft Outlook app with the MAM capabilities is available for both [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) devices. Use the instructions in the [Create and deploy mobile app management policies](https://technet.microsoft.com/library/mt627829.aspx) topic to create a MAM policy.  
 
-
 - **Mobile app configuration policies give you more flexibility to specify user details for iOS apps**
 You can supply user settings that an iOS app might need when it is opened. For example, you can supply a network port, or a user name. For details, see [enter link description here](Configure%20iOS%20apps%20with%20mobile%20app%20configuration%20policies%20in%20Microsoft%20Intune.md).
 
@@ -49,7 +48,9 @@ You can deploy targeted web clips that can only be opened using the managed brow
 - **Find, manage, and distribute Windows Store for Business apps for Windows 10 devices from the Intune administrator console**
 Support for Windows Store for Business is available in Intune to help you find, manage, and distribute apps to the Windows 10 devices you’re managing. Windows Store for Business lets you manage the process of deploying and monitoring these apps from the Intune administrator console—the same console you use to manage your other apps. Specifically, Windows Store for Business manages the content and licensing  of “online licensed apps”. For details, see [Manage apps you purchased from the Windows Store for Business](Manage%20apps%20you%20purchased%20from%20the%20Windows%20Store%20for%20Business%20with%20Microsoft%20Intune.md).
 
-
+>[!div class="step-by-step"]
+[Back to January](https://www.example.com)
+[On to April](https://www.example.com)
 ## Device management
 - **PFX certificates distribution for iOS devices**
 Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](Enable%20access%20to%20company%20resources%20using%20certificate%20profiles%20with%20Microsoft%20Intune.md).
@@ -58,6 +59,9 @@ Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, emai
 - **Apply apps and policies to different device groups based on user category selection**
 Intune administrators can now define custom device categories for users to select from during enrollment. For example, administrators might want their users to specify if they're enrolling a device used for the "Cash Register" or "Delivery Truck" or "Inventory Room." The category selected will cause the device to become a member of an Intune device group, which can be used for deploying different apps and policies to the enrolled device. For details, see [Categorize devices with device group mapping](Categorize%20devices%20with%20device%20group%20mapping%20in%20Microsoft%20Intune.md).
 
+>[!div class="step-by-step"]
+[Back to Device management](https://www.example.com)
+[On to Changes and updates to the Microsoft Company Portal](https://www.example.com)
 ## Changes and updates to Microsoft Company Portal
 The following changes have been made to the Company Portal in this release.
 

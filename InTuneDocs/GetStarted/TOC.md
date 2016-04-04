@@ -1,6 +1,15 @@
-# [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
+# [Understand and Explore](what-to-know-before-you-start-microsoft-intune.md)
 
-# [Get started](get-started-with-a-paid-subscription-to-microsoft-intune.md)
+# [Get started](what-to-know-before-you-start-microsoft-intune.md)
+## [What to know before you start](what-to-know-before-you-start-microsoft-intune.md)
+### [Supported web browsers](supported-web-browsers.md)
+### [Network infrastructure requirements](network-infrastructure-requirements-for-microsoft-intune.md)
+### [Administrative accounts, websites, and permissions](administrative-accounts-websites-perms.md)
+### [Company Portal](microsoft-intune-company-portal.md)
+### [Integration with Microsoft cloud services and products](integration-with-cloud-services.md)
+### [Network bandwidth usage](network-bandwidth-use.md)
+### [Domain names](domain-names-for-intune.md)
+
 ## [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Sign into Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -12,14 +21,7 @@
 ### [Enroll Windows PCs](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Enroll mobile devices and install an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)
 ### [Post configuration tasks](post-configuration-tasks.md)
-## [What to know before you start](what-to-know-before-you-start-microsoft-intune.md)
-### [Supported web browsers](supported-web-browsers.md)
-### [Network infrastructure requirements](network-infrastructure-requirements-for-microsoft-intune.md)
-### [Administrative accounts, websites, and permissions](administrative-accounts-websites-perms.md)
-### [Company Portal](microsoft-intune-company-portal.md)
-### [Integration with Microsoft cloud services and products](integration-with-cloud-services.md)
-### [Network bandwidth usage](network-bandwidth-use.md)
-### [Domain names](domain-names-for-intune.md)
+
 
 ## [Rollout phases for Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Project scope](project-scope.md)
@@ -29,6 +31,6 @@
 ### [Run state](run-state.md)
 
 
-# [Plan and Design](/intune/plandesign/what-to-tell-your-end-users-about-using-microsoft-intune)
+# [Plan and Design](/intune/plandesign/migrating-to-intune)
 # [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
