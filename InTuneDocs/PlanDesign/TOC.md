@@ -1,8 +1,7 @@
 # [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
 # [Get started](/intune/getstarted/get-started-with-a-paid-subscription-to-microsoft-intune)
 
-# [Plan and Design](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+# [Plan and Design](migrating-to-intune.md)
 ## [Migration guide](migrating-to-intune.md)
 ### [Setup Intune](migrating-to-intune-step-one.md)
 ### [Configure Intune](migrating-to-intune-step-two.md)
@@ -18,6 +17,7 @@
 ## [Support bring your own device](support-byod.md)
 ## [Help secure access from hotel kiosks](help-secure-access-from-hotel-kiosks.md)
 ## [Best practices for using Microsoft Intune](best-practices-for-using-intune.md)
+## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 # [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
