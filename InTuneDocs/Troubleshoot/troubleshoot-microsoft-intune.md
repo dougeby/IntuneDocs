@@ -15,7 +15,7 @@ You may find  after you deploy [!INCLUDE[wit_firstref](./includes/wit_firstref_m
 > [!NOTE]
 > To create a support request, or to view an existing request,  click [here](https://portal.office.com/admin/default.aspx) to visit the Office 365 admin center. For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
-## Troubleshooting resources
+## Troubleshooting topics
 The following troubleshooting information is available in this section:
 
 -   [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
@@ -96,7 +96,7 @@ After you've defined the problem and collected data you can **research the solut
 
     To create a support request click [here](https://portal.office.com/admin/default.aspx) to visit the Office 365 admin center. For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
-## See Also
+### See Also
 [Documentation for Microsoft Intune](documentation-for-microsoft-intune.md)
 [Frequently asked questions for Microsoft Intune](frequently-asked-questions-for-microsoft-intune.md)
 [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)

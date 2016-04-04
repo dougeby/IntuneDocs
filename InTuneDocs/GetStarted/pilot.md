@@ -12,11 +12,11 @@ author: Nbigman
 The pilot phase is an opportunity to test the technical implementation, communication plan, and training and support plans in a small production environment.
 
 ## Why is this important?
-By doing a pilot, you'll surface any technical issues your users may encounter and have the opportunity to manage those things before rolling out to the organization as a whole. You'll also validate all aspects of the user experience and have the opportunity to make changes where needed to ensure a successful launch to your broader organization. With careful planning and clear, concise success metrics, you'll prepare your project team and users for a positive experience and ongoing adoption.
-Begin by reviewing the discovery questions to the left, to help scope and define the pilot phase of your rollout
+By executing a pilot you'll surface technical issues that your users may encounter, and will have the opportunity to manage those things before rolling out to the organization as a whole. You'll also validate the user experience and have the opportunity to make changes to ensure a successful enterprise launch. With careful planning and clear, concise success metrics, you'll prepare your project team and users for a positive experience and ongoing adoption.
+Begin by reviewing the discovery questions  to help scope and define the pilot phase of your rollout.
 
 ## Discovery questions
-Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in the  Rollout Planning Guide and Project Plan.
+Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in the Rollout Planning Guide and Project Plan.
 
 -   Besides the technical implementation, what else are you testing during this pilot phase?
 
@@ -28,44 +28,38 @@ Discuss these questions with your project team to help scope your project detail
 
 -   How will you prepare and provide support for pilot participants?
 
--   What is the end-user experience from pilot start to completion?
+-   What is the user experience from pilot start to completion?
 
--   When will you know to move to the broad launch?
+-   When will you know that you are ready for the enterprise launch?
 
 ## Focus area goals
 Review this section for guidance on focus-area activities for this stated phase of your rollout.
 
 ### Planning
-The key to a successful pilot is good planning including knowing what your success criteria are and how you'll be measuring those things. Having the right team to manage all aspects of the pilot is also very important and something to plan for early-on in the process to ensure resources are allocated and goals are in alignment.
+The key to a successful pilot is good planning, including knowing what your success criteria are and how you'll be measuring them. Having the right team to manage all aspects of the pilot is also important. Plan this team early in the process to ensure resources are allocated and goals are in alignment. Here are some suggested documents for you to prepare for the pilot.
 
--   Rollout Planning Guide
-
--   Project Plan
+-   Pilot Plan, including approach, goals, and metrics
 
 -   Deployment Readiness Report
 
--   Pilot planning
-
--   Goals and Metrics
-
 ### Help desk
-A support plan that includes proactive assistance can significantly improve user confidence which results in happy users and increased adoption. The help desk should be aware of the changes being made to your[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implementation, and potential issues that may arise, so that quick solutions can be found for individual issues. The help desk can also report back to the design team if the design approach is creating issues for all users.
+A support plan that includes proactive assistance can significantly improve user confidence which results in happy users and increased adoption. The help desk should be aware of the changes that will result from the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implementation, and potential issues that may arise, so that quick solutions can be found for individual issues. The help desk can also report back to the design team if the design approach is creating issues for users.
 
 ### Awareness
-Pilot users need to understand the who, what, when, where, why of the project. "How the pilot affects me" is the #1 question users will have. Putting yourself in the users' shoes and understanding that end-user experience from end-to-end will be important. Awareness activities and communications to help users understand what their responsibilities are and how they will be supported during the pilot phase should be utilized.
+Pilot users need to understand the who, what, when, where, why of the project. "How the pilot affects me" is the #1 question users will have. Put yourself in the users' shoes and understand that user experience from end-to-end will be important. Use awareness activities and communications to help users understand what their responsibilities are and how they will be supported during the pilot phase.
 
 ### Training
-Providing a high-level of training for pilot users will help to form a well thought out training plan for the broad launch. Use test plans and offer a variety of training options during the pilot. Learn what your users respond to and what changes might need to be made to existing materials to ensure users are prepared for the broad launch.
+Providing a high-level of training for pilot users will help to form a well thought out training plan for the broad launch. Use test plans and offer a variety of training options during the pilot. Learn what your users respond to and what changes might need to be made to content to ensure users are prepared for the broad launch.
 
 ### Operations
-Operations is often overlooked in the pilot phase. The pilot is the first opportunity for admins to adjust their procedures including: tuning  alerts, validating operations procedures, validating daily management tasks around monitoring, users, and devices, and validating help desk escalation procedures.
+Operations is often overlooked in the pilot phase. The pilot is the first opportunity for admins to adjust their procedures including: tuning alerts, validating operations procedures, validating daily management tasks around monitoring, users, and devices, and validating help desk escalation procedures.
 
 ## Get started checklist
 Here is a list of steps to get you started with the **Pilot** phase.
 
 -   Document clearly articulated goals and success metrics and communicate within project team.
 
--   Assemble a rollout planning team comprised of coordinated work streams to focus on core technical, change management, end-user experience, and operational focus areas.
+-   Assemble a rollout planning team comprised of coordinated work streams to focus on core technical, change management, user experience, and operational focus areas.
 
 -   Communicate timelines, responsibilities, and pilot goals; introduce readiness report.
 
@@ -81,9 +75,9 @@ Here is a list of steps to get you started with the **Pilot** phase.
 
 -   Define the pilot awareness and communications plan.
 
--   Develop and distribute end-user documentation.
+-   Develop and distribute user documentation.
 
--   Customize feedback surveys &amp; incorporate into communication plan.
+-   Customize feedback surveys and incorporate into communication plan.
 
 -   Hold a pilot kick-off event and other awareness activities.
 
@@ -97,6 +91,9 @@ Here are some  challenges that you may encounter in the **Pilot** phase.
 -   **Challenge:** Success criteria has not been established specifically for the pilot phase and no way to base a go/no-go decision to move onto a broad launch.
 
     **Mitigation:** Define qualitative and quantitative success criteria specific to your organization so that a clear decision can be made based on facts to move to the next phase of deployment.
+
+## Next steps
+[Enterprise rollout](enterprise-rollout.md)
 
 ### See also
 [Rollout phases for Microsoft Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
