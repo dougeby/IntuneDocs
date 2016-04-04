@@ -20,7 +20,8 @@ If you are looking for information about other platforms, select one of the foll
 - [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Windows devices](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-
+## System security settings
+### Password
 - **Require a password to unlock mobile devices:**    Set this to **Yes** to require users to enter a password before
   they can access their device. Devices are
   encrypted when you configure the setting.
@@ -59,10 +60,7 @@ number of previously used passwords that cannot be re-used.
 This setting should be used together with the in the **Minutes of inactivity before password is required** setting. The end-users are prompted to enter a password to access a device that has been inactive for the time specified in the
 **Minutes of inactivity before password is required** setting.
 
-
-- **Device must not be jailbroken or rooted:** If you enable this setting,
-jailbroken devices will not be compliant.
-
+### Email profile
 - **Email account must be managed by Intune:** When this option is set to **Yes** ,
 the device is reported as noncompliant.
 
@@ -81,6 +79,13 @@ the device is reported as noncompliant.
      If **Email account must be managed by Intune** is selected,
      choose **Select** to specify the Intune email profile that devices
      must be managed by. The email profile must be present on the device.
+
+## Device health settings
+
+- **Device must not be jailbroken or rooted:** If you enable this setting,
+jailbroken devices will not be compliant.
+
+##  Device properties
 - **Minimum OS required:** When  a device does not meet the minimum OS
 version requirement, it is reported as non-compliant.
 A link with information on how to upgrade is displayed. The end-user can choose to upgrade their device after which they should be able to access company resources.
