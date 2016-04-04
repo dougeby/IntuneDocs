@@ -1,12 +1,12 @@
 ---
-title: Help protect Windows PCs using Windows Firewall policies in Microsoft Intune
+title: Firewall policies for Windows PCs|Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 62c44f36-d866-439e-8553-948cc0ea2504
+ms.assetid: 
 author: robstackmsft
 ---
 # Help protect Windows PCs using Windows Firewall policies in Microsoft Intune
@@ -111,5 +111,5 @@ You can view the deployed Windows Firewall policy on the **All Policies** page o
 |**Wireless Portable Devices**|If enabled, allows the transfer of media from a network-enabled camera or media device to managed computers by using the Media Transfer Protocol (MTP). This setting uses SSDP and UPnP network protocols.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
 
 ### See Also
-[Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
+[Policies to protect Windows PCs](policies-to-protect-windows-pcs.md)
 
