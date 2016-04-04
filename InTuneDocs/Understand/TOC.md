@@ -9,6 +9,6 @@
 ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)
 
 # [Get started](/intune/getstarted/get-started-with-a-paid-subscription-to-microsoft-intune)
-# [Plan and Design](/intune/plandesign/what-to-tell-your-end-users-about-using-microsoft-intune)
+# [Plan and Design](/intune/plandesign/migrating-to-intune)
 # [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
