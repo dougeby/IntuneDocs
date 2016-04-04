@@ -39,11 +39,12 @@
 
 ## [Protect devices](protect-data-and-devices-with-microsoft-intune.md)
 ### [Protect Windows devices with multi-factor authentication](protect-windows-devices-with-multi-factor-authentication.md)
-### [Keep PCs up to date with software updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
-### [Help protect PCs using Windows Firewall policies](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
-### [Help secure PCs with Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
-### [Control Microsoft Passport settings on devices](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Help protect iOS devices with Activation Lock bypass](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
+### [Control Microsoft Passport settings on devices](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [Policies to protect Windows PCs](policies-to-protect-windows-pcs.md)
+#### [Windows PC software updates](pc-software-updates.md)
+#### [Windows Firewall for PCs](pc-firewall-policies.md)
+#### [Windows PC endpoint protection](pc-endpoint-protection.md)
 
 ## [Deploy apps](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 ### [Deploy apps to mobile devices](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
