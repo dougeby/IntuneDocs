@@ -94,4 +94,4 @@ Congratulations! You have just completed step 6 of the *Get started with a paid 
 
 >[!div class="step-by-step"]
 
->[<< **Organize users and devices**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Customize the Company Portal** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
+>[<< **Organize users and devices**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Customize Company Portal** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)  

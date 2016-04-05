@@ -34,4 +34,4 @@ Congratulations! You have just completed step 3 of the *Get started with a paid 
 
 >[!div class="step-by-step"]
 
->[<< **Configure a custom domain name**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Manage Intune licenses** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)  
+>[<< **Configure domain settings**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Manage Intune licenses** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)  
