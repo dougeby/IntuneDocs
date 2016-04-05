@@ -1,12 +1,12 @@
 ---
-title: Firewall policies for Windows PCs|Microsoft Intune
+title: Firewall policies for Windows PCs | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 
+ms.assetid:
 author: robstackmsft
 ---
 # Help protect Windows PCs using Windows Firewall policies in Microsoft Intune
@@ -21,20 +21,20 @@ The Windows Firewall policy lets you create and deploy settings that control the
 
 > [!NOTE]
 > If Microsoft Intune policy and Group Policy are configured to manage the same setting on the PC, the Group Policy setting overrides the Microsoft Intune policy. For information about how to avoid conflicts between Intune policies and Group Policy, see [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
-> 
+>
 > If you want to deploy Windows Firewall settings to computers running Windows Vista, you must first install [Hotfix KB971800](http://support2.microsoft.com/kb/971800) on these computers.
 
 > [!IMPORTANT]
 > To manage the Windows Firewall using Intune, you must ensure that the following two services are enabled on the computers you will manage:
-> 
+>
 > -   Windows Firewall
 > -   IPsec Policy Agent
 
-## To configure a Windows Firewall policy
+## Configure a Windows Firewall policy
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Policy** &gt; **Add Policy**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy** &gt; **Add Policy**.
 
-2.  Configure and deploy a **Windows Firewall Settings** policy. You can use recommended settings or customize the settings. If you need more information about how to create and deploy policies, see the [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) topic.
+2.  Configure and deploy a **Windows Firewall Settings** policy. You can use recommended settings or customize the settings. If you need more information about how to create and deploy policies, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     The tables after this procedure show the values you can configure in the policy and also the recommended values that will be used if you don’t customize the policy.
 
@@ -110,6 +110,5 @@ You can view the deployed Windows Firewall policy on the **All Policies** page o
 |**Windows Virtual PC**|If enabled, lets virtual machines, communicate with other computers.<br /><br />Recommended value: Not configured<br /><br />(Windows 7 only)|
 |**Wireless Portable Devices**|If enabled, allows the transfer of media from a network-enabled camera or media device to managed computers by using the Media Transfer Protocol (MTP). This setting uses SSDP and UPnP network protocols.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
 
-### See Also
+### See also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs.md)
-

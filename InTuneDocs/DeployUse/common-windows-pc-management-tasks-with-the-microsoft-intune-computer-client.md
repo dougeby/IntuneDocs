@@ -1,5 +1,5 @@
 ---
-title: Common Windows PC management tasks with the Microsoft Intune computer client
+title: Common Windows PC management tasks | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ author: robstackmsft
 Review the tasks in this topic to learn how to manage your computers that run the Intune client. If you have not yet installed the client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
-
-## Use policies to manage the Windows Firewall
+## Use policies to simplify PC management
+### Manage the Windows Firewall
 Policies simplify the administration of Windows Firewall settings on managed computers. For details, see [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
-## Use policies to manage the Microsoft Intune Center
+### Manage the Microsoft Intune Center
 The Microsoft Intune Center lets users:
 
 -   Get applications from the company portal.
@@ -39,10 +39,10 @@ The Microsoft Intune Center is installed on all managed computers. You can confi
 |**Web site URL**|The URL of your support website.<br /><br />Maximum length: 150 characters|
 |**Notes**|A note that is displayed to users.<br /><br />Maximum length: 120 characters|
 
-## Use policies to manage software updates settings
+### Manage software updates settings
 Use policies to configure the settings that managed computers use to check for, and download software updates from Microsoft and from third-parties. For more information, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
-## Use policies to manage Endpoint Protection settings
+### Manage Endpoint Protection settings
 Use policies to configure settings for Endpoint Protection that you then deploy to managed computers. This includes scan schedules, actions to take when malware is detected, and more. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 ## View hardware and software inventory
@@ -56,54 +56,52 @@ Intune collects detailed information about the hardware and software of managed 
 
 ### To display information about your computers
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Reports** &gt; **Computer Inventory Reports**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Reports** &gt; **Computer Inventory Reports**.
 
 2.  On the **Create New Report** page, accept the default values or customize them to filter the results that will be returned by the report. For example, you could select that only computers that run Windows 8.1 will be displayed in the report.
 
-3.  Click **View Report** to open the **Computer Inventory Report** in a new window.
+3.  Choose **View Report** to open the **Computer Inventory Report** in a new window.
 
-    You can sort the report by any of the columns, like **Name**, **Chassis Type** or **Manufacturer** by clicking each column heading.
+    You can sort the report by any of the columns, like **Name**, **Chassis Type** or **Manufacturer** by selecting each column heading.
 
 ### To display software installed on your computers
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Reports** &gt; **Detected Software Reports**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Reports** &gt; **Detected Software Reports**.
 
 2.  On the **Create New Report** page, accept the default values or customize them to filter the results that will be returned by the report. For example, you could select that only software published by Microsoft will be displayed in the report.
 
-3.  Click **View Report** to open the **Detected Software Report** in a new window.
+3.  Choose **View Report** to open the **Detected Software Report** in a new window.
 
-    You can sort the report by any of the columns, like **Name**, **Publisher** or **Category** by clicking each column heading. You can expand the updates in the list to show more detail (such as the computers on which it is installed) by clicking the directional arrow next to the list item.
+    You can sort the report by any of the columns, like **Name**, **Publisher** or **Category** by selecting each column heading. You can expand the updates in the list to show more detail (such as the computers on which it is installed) by clicking the directional arrow next to the list item.
 
 ### To refresh computer inventory to ensure it is current
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **All Devices** (or another group that contains the computer for which you want to refresh inventory).
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the computer for which you want to refresh inventory).
 
 2.  Select a computer, or press and hold **Ctrl** to select multiple computers.
 
-3.  On the taskbar, click **Remote Tasks** &gt; **Refresh Inventory**.
+3.  On the taskbar, choose **Remote Tasks** &gt; **Refresh Inventory**.
 
-4.  To view the task status, click **Remote Tasks** in the bottom right corner of the page.
+4.  To view the task status, choose **Remote Tasks** in the bottom right corner of the page.
 
     The **Task Status** dialog box displays showing current remote tasks, task status, device name, and any reported errors, and provides a link to troubleshooting information.
 
-## Additional tasks
-In addition to policies, you can also perform the following management tasks on your computers:
 
-### To remotely restart a Windows PC
+## Remotely restart a Windows PC
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **All Devices** (or another group that contains the computer you want to restart).
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the computer you want to restart).
 
-2.  Select one or more computers, and then click **Remote Tasks** &gt; **Restart Computer**.
+2.  Select one or more computers, and then choose **Remote Tasks** &gt; **Restart Computer**.
 
-3.  To view the task status, click **Remote Tasks** in the bottom right corner of the page.
+3.  To view the task status, choose **Remote Tasks** in the bottom right corner of the page.
 
 4.  In the **Task Status** dialog box, review the current remote tasks, task status, device name, and any reported errors.
 
-### To retire a computer
+## Retire a computer
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **All Devices** (or another group that contains the computer you want to retire).
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the computer you want to retire).
 
-2.  Select the devices you want to retire, and then click **Retire/Wipe**.
+2.  Select the devices you want to retire, and then choose **Retire/Wipe**.
 
 To re-enroll a computer into Intune, reinstall the client software on the computer using the information in the [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) topic.
 
@@ -128,26 +126,26 @@ When you retire a computer:
     > [!IMPORTANT]
     > If the client software was installed by using a Group Policy Object (GPO), you must remove the Group Policy Object (GPO) before you can remove the client software to prevent the software from being reinstalled.
 
-    If the client fails to uninstall, read [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md) for more help.
+    If the client fails to uninstall, read [Troubleshoot Endpoint Protection](/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
 
-## How to manage user-device linking
+## Manage user-device linking
 Before you can deploy software to a user, you must link the user to a computer. You can link a user to multiple computers, but each computer can be linked to only one user. Users are automatically linked to any computers that they enroll in Intune by using the company portal.
 
 ### To link a user to a computer
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **All Devices** (or another group that contains the computer you want to link to a user).
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the computer you want to link to a user).
 
-2.  Select the computer that you want to link a user, and then click **Link User**.
+2.  Select the computer that you want to link a user, and then choose **Link User**.
 
     The **Link User** dialog box displays a list of available users with their display name, user ID, and the number of computers to which each user is currently linked. If a user is already linked to the selected computer, that user’s name and user ID are displayed under **Current user**. If the computer is not linked to any user, **No User** appears under **Current User**.
 
 3.  Do one of the following:
 
-    -   To leave the computer linked to its current user, if there is one, click **Cancel**.
+    -   To leave the computer linked to its current user, if there is one, choose **Cancel**.
 
-    -   To remove the link to the current user, if there is one, click **Remove link**&gt;**OK**.
+    -   To remove the link to the current user, if there is one, choose **Remove link**&gt;**OK**.
 
-    -   To link the computer to a new user, in the **All users** list, select a user. Confirm that the user data is correct, and then click **OK**.
+    -   To link the computer to a new user, in the **All users** list, select a user. Confirm that the user data is correct, and then choose **OK**.
 
 > [!TIP]
 > If you want to restrict end users ability to link themselves to computers, enable the option **Restrict users' ability to link themselves to computers** in the **Microsoft Intune Agent Settings** policy.
@@ -157,30 +155,26 @@ Users can request assistance by using Remote Assistance via Microsoft Easy Assis
 
 > [!IMPORTANT]
 > Remote Assistance is not supported on computers running Windows 8 or later.
-> 
+>
 > If you accept a Remote Assistance request from a computer that does not have Microsoft Easy Assist installed, the user is prompted to install it. The computer must be restarted after the installation. Consider pre-loading Microsoft Easy Assist on your user’s computers to avoid this restart.
 
 ### To manage a Remote Assistance request
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Alerts** &gt; **Remote Assistance**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Alerts** &gt; **Remote Assistance**.
 
 2.  Select a Remote Assistance request in the **Alerts** list to open the properties page of the request.
 
-3.  Click **Approve request and launch Remote Assistance** to open a dialog box that provides options for resolving the alert.
+3.  Choose **Approve request and launch Remote Assistance** to open a dialog box that provides options for resolving the alert.
 
 4.  Do one of the following:
 
-    -   **Accept the request** - To join the remote session, click **Accept the Remote Assistance request**.
+    -   **Accept the request** - To join the remote session, choose **Accept the Remote Assistance request**.
 
         The user sees the message: **Your request was accepted. Follow the instructions in Easy Assist to share a program or your desktop with your system administrator**.
 
         > [!IMPORTANT]
         > You cannot accept a remote assistance request on a Mac computer that is running the Intune administrator console.
 
-    -   **Decline the request** - Close the **View Troubleshooting Information** window, and then click **Close This Alert** in the alert properties window.
+    -   **Decline the request** - Close the **View Troubleshooting Information** window, and then choose **Close This Alert** in the alert properties window.
 
         The request is closed and the user sees a message stating that the request was declined. To request Remote Assistance again, the user must send a new Remote Assistance request. If you accidentally close a Remote Assistance alert, contact the user who sent the Remote Assistance request, and ask the user to send a new request.
-
-
-
-

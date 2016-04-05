@@ -10,5 +10,5 @@
 
 # [Get started](/intune/getstarted/what-to-know-before-you-start-microsoft-intune)
 # [Plan and Design](/intune/plandesign/migrating-to-intune)
-# [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
+# [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
