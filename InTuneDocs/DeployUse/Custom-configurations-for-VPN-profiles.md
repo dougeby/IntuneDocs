@@ -83,7 +83,7 @@ For any questions about how these settings should be used, or more details about
 https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
 
 ## URI settings for Android per-app VPN on PulseSecure
-#### CUSTOM URI FOR PACKAGE LIST 
+### CUSTOM URI FOR PACKAGE LIST 
 -  Data type = String
 -  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList 
 -  Value = Delimiter separated package list.
@@ -95,7 +95,7 @@ Examples:
 
 > Note
 > Use the same *name* that you assigned to the custom profile
-#### 3.	CUSTOM URI FOR MODE (OPTIONAL)
+### 3.	CUSTOM URI FOR MODE (OPTIONAL)
 - Data Type = String
 - OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode - Use the same NAME given to the profile
 
