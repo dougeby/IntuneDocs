@@ -93,4 +93,5 @@ A link with information on how to upgrade is displayed. The end-user can choose 
 - **Maximum OS version allowed:** When a device is using an
 OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 >[!div class="step-by-step"]
->[Go to](create-a-device-compliance-policy-in-microsoft-intune.md)  **Create a compliance policy**
+[<< Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)  
+[Deploy a compliance policy >>](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
