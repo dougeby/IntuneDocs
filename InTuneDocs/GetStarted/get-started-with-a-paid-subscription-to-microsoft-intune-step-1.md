@@ -37,4 +37,4 @@ Congratulations! You have just completed step 1 of the *Get started with a paid 
 
 >[!div class="step-by-step"]
 
->[<< **Get started**](.\get-started-with-a-paid-subscription-to-microsoft-intune.md)     [**Configure domain settings** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
+>[<< **Get started**](.\get-started-with-a-paid-subscription-to-microsoft-intune.md)     [**Domain settings** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
