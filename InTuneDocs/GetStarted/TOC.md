@@ -1,4 +1,4 @@
-# [Understand and Explore](what-to-know-before-you-start-microsoft-intune.md)
+# [Understand and Explore](/understand/introduction-to-microsoft-intune)
 
 # [Get started](what-to-know-before-you-start-microsoft-intune.md)
 ## [What to know before you start](what-to-know-before-you-start-microsoft-intune.md)
