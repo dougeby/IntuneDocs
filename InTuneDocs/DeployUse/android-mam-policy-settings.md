@@ -74,4 +74,5 @@ author: karthikaraman
 - **Block screen capture and Android Assistant (Android 6 Marshmallow or later):** Select Yes to specify that the screen capture and **Android Assistant** capabilities of the device are blocked when using this app.
 
 >[!div class="step-by-step"]
->[Go to](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)  **Create and deploy a MAM policy**
+[<<Create and Deploy a MAM policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)  
+[Monitor compliance>>](monitor-mobile-app-management-policies-with-microsoft-intune.md)

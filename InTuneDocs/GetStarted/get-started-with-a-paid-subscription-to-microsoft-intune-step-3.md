@@ -33,6 +33,5 @@ After you've added users to your Intune subscription, we recommend that you gran
 Congratulations! You have just completed step 3 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]
->[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)  **Manage Intune licenses**
->
->[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)  **Configure a custom domain name**
+
+>[<< **Domain settings**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Manage Intune licenses** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)  

@@ -1,5 +1,5 @@
 ---
-title: Restrict email access to Exchange Online | Microsoft Intune
+title: Restrict email access to Exchange Online and new Exchange Online Dedicated| Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,8 +9,12 @@ ms.topic: article
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 author: karthikaraman
 ---
-# Restrict email access to Exchange Online with Microsoft Intune
-To control email access to Exchange Online, configure conditional access in Intune.
+# Restrict email access to Exchange Online and new Exchange Online Dedicated environment with Intune
+The information in this topics applies to both Exchange Online and the new Exchange Online Dedicated environment.
+
+If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, please contact your account manager.
+
+To control email access to Exchange Online or to your new Exchange Online Dedicated environment, configure conditional access for Exchange Online in Intune.
 If you want to learn more about how conditional access works, read the [Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
 Before you can configure conditional access you must:
