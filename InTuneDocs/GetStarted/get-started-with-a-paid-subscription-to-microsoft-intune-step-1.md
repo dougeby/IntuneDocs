@@ -15,7 +15,7 @@ Before you can sign in or sign up for Intune, you'll need to determine whether y
 
 If you already have a work or school account, you will be able to simply **sign in** with that account to add Intune to your pre-existing subscription environment. Otherwise, you'll need to **sign up** to create a new account to use to manage Intune for your organization.
 
->[!TIP]
+>[!WARNING]
 >If you sign up for a new account, you cannot later use an existing work or school account to manage your subscription or combine it with existing volume licensing agreements.
 
 ## Sign up or sign in to Intune
@@ -36,6 +36,8 @@ After completing the sign up process you will be directed to a page used to add 
 Congratulations! You have just completed step 1 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]
->[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)  **Configure a custom domain**
+
+
+>[<< **Get started with a paid subscription**](.\get-started-with-a-paid-subscription-to-microsoft-intune.md)     
+>[**Configure a custom domain** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
 >
->[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-test.md)  **Get started with a paid subscription**

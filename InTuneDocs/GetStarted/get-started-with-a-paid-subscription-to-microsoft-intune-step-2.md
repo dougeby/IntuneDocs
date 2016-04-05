@@ -26,6 +26,5 @@ When you subscribe to a cloud-based service from Microsoft, your instance of tha
 Congratulations! You have just completed step 2 of the *Get started with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]
->[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)  **Sync Active Directory and add users to Intune**
->
->[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)  **Sign in to Intune**
+
+>[<< **Sign in to Intune**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**Add users to Intune** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)  
