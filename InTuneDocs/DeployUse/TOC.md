@@ -44,7 +44,7 @@
 ### [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Windows PC software updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
 #### [Windows Firewall for PCs](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
-#### [Windows PC endpoint protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
+#### [Windows PC Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
 
 ## [Deploy apps](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 ### [Deploy apps to mobile devices](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
@@ -76,12 +76,7 @@
 #### [MAM with iOS Open in](microsoft-intune-mobile-app-management-policies-and-ios-open-in)
 #### [End user experience](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies)
 
-### [Configure data loss prevention app policies](configure-data-loss-prevention-app-policies-with-microsoft-intune.md)
-#### [Get started with mobile app management policies in the Azure portal](get-started-with-mobile-app-management-policies-in-the-azure-portal.md)
-#### [Create and deploy mobile app management policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Intune mobile app management policies and iOS Open In](microsoft-intune-mobile-app-management-policies-and-ios-open-in.md)
-#### [End-user experience for apps associated with Intune mobile app management policies](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies.md)
-#### [Monitor mobile app management policies](Monitor-mobile-app-management-policies-with-microsoft-intune.md)
+
 
 ### [Decide how to prepare apps for mobile application management](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
