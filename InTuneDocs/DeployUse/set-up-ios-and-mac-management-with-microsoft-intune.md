@@ -13,7 +13,9 @@ author: NathBarn
 After you [set the MDM authority](set-mobile-device-management-authority-and-configure-microsoft-intune.md), you can enable enrollment for iOS devices.
 
 ## Set up iOS and Mac management with Microsoft Intune
-With [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], you can enable BYOD ("bring your own device") iOS and Mac OS X device enrollment to give access to company email and apps to iPhone, iPad and Mac users. Once users install the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] company portal app, their devices can be targeted with policy using the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] administration console.  Before you can manage iOS and Mac devices, you must import an Apple Push Notification service (APNs) certificate from Apple. This certificate allows Intune to manage iOS and Mac devices and establishes an accredited and encrypted IP connection with the mobile device management authority services.
+With Intune, you can enable BYOD ("bring your own device") for iOS and Mac OS X device enrollment to give access to company email and apps to iPhone, iPad and Mac users. Once enrolled, users can install the Intune Company Portal app and their devices can be targeted with policy using the Intune administration console.  
+
+Before you can manage iOS and Mac devices, you must import an Apple Push Notification service (APNs) certificate from Apple. This certificate allows Intune to manage iOS and Mac devices and establishes an accredited and encrypted IP connection with the mobile device management authority services.
 
 As an alternative to enrollment with the Company Portal app, you can also [enroll corporate-owned iOS devices](https://technet.microsoft.com/library/dn408185.aspx#BKMK_CODiOS) .
 

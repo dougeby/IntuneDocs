@@ -1,12 +1,12 @@
 ---
-title: Software updates for Windows PCs
+title: Software updates for Windows PCs | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 
+ms.assetid:
 author: robstackmsft
 ---
 # Keep Windows PCs up to date with software updates in Microsoft Intune
@@ -14,7 +14,7 @@ Microsoft Intune can help you to secure your managed computers in a number of wa
 
 If you have not yet installed the Intune client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
-When new updates are available from Microsoft Update, or you have created a third-party update, and they are applicable to your managed computers, a notification is displayed on the **Overview** page of the **Updates** workspace. After you click this notification link, you can then perform various operations like viewing more information about the update, approving or declining the update, and viewing the computers that will install the update if it is approved.
+When new updates are available from Microsoft Update, or you have created a third-party update, and they are applicable to your managed computers, a notification is displayed on the **Overview** page of the **Updates** workspace. After you choose this notification link, you can then perform various operations like viewing more information about the update, approving or declining the update, and viewing the computers that will install the update if it is approved.
 
 > [!IMPORTANT]
 > The **Updates** workspace is not displayed in the administrator console until you have installed the client on, and are successfully managing at least one computer client.
@@ -28,25 +28,25 @@ Before you begin to create and approve software updates, configure and deploy po
 
 ### To configure update policy settings
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Policy** &gt; **Overview** &gt; **Add Policy**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy** &gt; **Overview** &gt; **Add Policy**.
 
-2.  Configure and deploy a **Microsoft Intune Agent Settings** policy for the update settings. You can use recommended settings or customize the settings. If you need more information about how to create and deploy policies, see the [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) topic.
+2.  Configure and deploy a **Microsoft Intune Agent Settings** policy for the update settings. You can use recommended settings or customize the settings. If you need more information about how to create and deploy policies, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 The following table shows the values you can configure in the policy and also the recommended values that will be used if you don’t customize the policy. You can find these settings in the **Updates** section.
 
   |Policy setting|Details|
     |------------------|--------------------|
-    |**Update and application detection frequency (hours)**|Specifies how frequently (from 8-22 hours) Intune checks for new updates and applications.<br /><br />Recommended value: **8** hours.|
-    |**Automated or prompted installation of updates and applications**|Specifies whether updates are installed automatically or whether the user is prompted before installation. Additionally, this setting lets you schedule the installation of updates and applications.<br /><br />**Install updates and applications automatically as scheduled**  installs updates and applications using the specified schedule.<br /><br />As a dependent policy setting, **Use Automatic Maintenance for Windows computers**  specifies that updates and applications are installed during the Windows Automatic maintenance window.<br /><br />**Prompt user for installation** prompts the user to install updates when they are ready.<br /><br />Recommended values:<br /><br />**Install updates and applications automatically as scheduled** selected<br /><br />**Day scheduled: Every day**<br /><br />**Time scheduled: 3:00 AM**<br /><br />**Use Automatic Maintenance for Windows computers** selected|
-    |**Allow immediate installation of updates that do not interrupt Windows**|**Allow** installs updates immediately after they are downloaded, except for updates that would interrupt or restart Windows. Those updates are installed according to the configuration of the **Automated or prompted installation of updates** setting.<br /><br />**Do not allow** installs updates according to the configuration of the **Automated or prompted installation of updates** setting.<br /><br />Recommended value: **Allow**|
-    |**Delay to restart Windows after installation of scheduled updates and applications (minutes)**|Specifies (from 1-30 minutes), the time to wait to restart Windows after the installation of scheduled updates and applications.<br /><br />Recommended value: **15 minutes**|
-    |**Delay following Windows restart to begin installing missed scheduled updates and applications (minutes)**|Specifies (from 1-60 minutes), how long to wait to start the installation of updates and applications after Windows is restarted when a scheduled update was missed.<br /><br />Recommended value: **5 minutes**|
-    |**Allow logged-on user to control Windows restart after installation of scheduled updates and applications**|Specifies whether the logged-on user can delay restarting Windows (if set to **Yes**), or be notified of the automatic Windows restart (if set to **No**). If no user is logged on when the scheduled installation of updates and applications is completed, Windows is restarted automatically when required. When set to **No**, by default, the time before Windows restarts is set to 5 minutes.<br /><br />Recommended value: **Yes**|
-    |**Prompt user to restart Windows during Intune client agent mandatory updates**|Specifies whether the logged on users is prompted to restart Windows when an Intune client mandatory update requires Windows to restart.<br /><br />Recommended value: **Yes**|
-    |**Microsoft Intune client agent mandatory updates installation schedule**|Schedules when the installation of client updates occur.<br /><br />Recommended value: not configured|
-    |**Delay between prompts to restart Windows after installation of scheduled updates and applications (minutes)**|Specifies how frequently (from 1-1440 minutes) the user is prompted to restart Windows when a scheduled update or application that requires restarting Windows is installed, and the user delays the restart.<br /><br />Recommended value: **30 minutes**|
+    |**Update and application detection frequency (hours)** |Specifies how frequently (from 8-22 hours) Intune checks for new updates and applications.<br /><br />Recommended value: **8** hours.|
+    |**Automated or prompted installation of updates and applications** |Specifies whether updates are installed automatically or whether the user is prompted before installation. Additionally, this setting lets you schedule the installation of updates and applications.<br /><br />**Install updates and applications automatically as scheduled**  installs updates and applications using the specified schedule.<br /><br />As a dependent policy setting, **Use Automatic Maintenance for Windows computers**  specifies that updates and applications are installed during the Windows Automatic maintenance window.<br /><br />**Prompt user for installation** prompts the user to install updates when they are ready.<br /><br />Recommended values:<br /><br />**Install updates and applications automatically as scheduled** selected<br /><br />**Day scheduled: Every day**<br /><br />**Time scheduled: 3:00 AM**<br /><br />**Use Automatic Maintenance for Windows computers** selected|
+    |**Allow immediate installation of updates that do not interrupt Windows** |**Allow** installs updates immediately after they are downloaded, except for updates that would interrupt or restart Windows. Those updates are installed according to the configuration of the **Automated or prompted installation of updates** setting.<br /><br />**Do not allow** installs updates according to the configuration of the **Automated or prompted installation of updates** setting.<br /><br />Recommended value: **Allow** |
+    |**Delay to restart Windows after installation of scheduled updates and applications (minutes)** |Specifies (from 1-30 minutes), the time to wait to restart Windows after the installation of scheduled updates and applications.<br /><br />Recommended value: **15 minutes** |
+    |**Delay following Windows restart to begin installing missed scheduled updates and applications (minutes)** |Specifies (from 1-60 minutes), how long to wait to start the installation of updates and applications after Windows is restarted when a scheduled update was missed.<br /><br />Recommended value: **5 minutes**|
+    |**Allow logged-on user to control Windows restart after installation of scheduled updates and applications** |Specifies whether the logged-on user can delay restarting Windows (if set to **Yes**), or be notified of the automatic Windows restart (if set to **No**). If no user is logged on when the scheduled installation of updates and applications is completed, Windows is restarted automatically when required. When set to **No**, by default, the time before Windows restarts is set to 5 minutes.<br /><br />Recommended value: **Yes**|
+    |**Prompt user to restart Windows during Intune client agent mandatory updates** |Specifies whether the logged on users is prompted to restart Windows when an Intune client mandatory update requires Windows to restart.<br /><br />Recommended value: **Yes**|
+    |**Microsoft Intune client agent mandatory updates installation schedule** |Schedules when the installation of client updates occur.<br /><br />Recommended value: not configured|
+    |**Delay between prompts to restart Windows after installation of scheduled updates and applications (minutes)** |Specifies how frequently (from 1-1440 minutes) the user is prompted to restart Windows when a scheduled update or application that requires restarting Windows is installed, and the user delays the restart.<br /><br />Recommended value: **30 minutes** |
 
-## Updating software made by Microsoft
+## Update software made by Microsoft
 Updating Microsoft software requires very little work from you. However, before you start, there are two things you should configure:
 
 -   **Product categories and update classifications** – Defines the categories and classifications of the updates you want to make available to computers. For example, you might decide that you only want critical updates for Microsoft Office to be installed.
@@ -57,7 +57,7 @@ Use the following two procedures to help you get ready to use software updates:
 
 ### Configure the product categories and update classifications you want to make available to managed computers
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Updates**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Updates**.
 
 2.  On the **Service Settings: Updates** page, in the **Product Category** list, select the update categories that you want to make available to computers. Note that the most common updates are selected by default.
 
@@ -66,13 +66,13 @@ Use the following two procedures to help you get ready to use software updates:
 
 3.  In the **Update Classification** list, select the classes of update that you want to make available to managed computers. Again, the most common options are selected by default.
 
-4.  Click **Save** to store your selections.
+4.  Choose **Save** to store your selections.
 
 ### To configure automatic approval rules for software updates
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Updates**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Updates**.
 
-2.  In the **Automatic Approval Rules** section of the **Server Settings: Updates** page, click **New**.
+2.  In the **Automatic Approval Rules** section of the **Server Settings: Updates** page, choose **New**.
 
 3.  On the **General** page of the Create Automatic Approval Rule Wizard, specify a name and optional description for the rule.
 
@@ -82,48 +82,50 @@ Use the following two procedures to help you get ready to use software updates:
 
 6.  On the **Deployment** page, do the following:
 
-    -   Select the computer groups to which you want to deploy the new rule, and then click **Add**.
+    -   Select the computer groups to which you want to deploy the new rule, and then choose **Add**.
 
     -   To specify an installation deadline for the updates, select the **Enforce an installation deadline for these updates** check box, and then on the **Installation deadline** list, select the installation deadline.
 
         > [!NOTE]
         > If you specify an installation deadline, the managed computer might require one or more restarts after the deadline interval has passed.
 
-    -   When you are finished, click **Next**.
+    -   When you are finished, Choose **Next**.
 
-7.  On the **Summary** page, review the settings for the new rule, and then click **Finish**.
+7.  On the **Summary** page, review the settings for the new rule, and then choose **Finish**.
 
 The new rule is shown in the **Automatic Approval Rules** section of the **Service Settings: Updates** page.
 
 > [!NOTE]
 > When you create an automatic approval rule, it only approves future updates, and does not automatically approve previously existing updates that already exist in Intune. To approve these updates you need to run the automatic approval rule.
+
+
 ### To edit, run, or delete an automatically approved update rule
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Updates**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Updates**.
 
 2.  In the **Automatic Approval Rules** section, select a rule, and then do one of the following:
 
-    -   To edit the rule, click **Edit**, and then change the rule’s parameters in the **Update Auto Approval Rule Wizard**.
+    -   To edit the rule, choose **Edit**, and then change the rule’s parameters in the **Update Auto Approval Rule Wizard**.
 
-    -   To run the rule, click **Run Selected**.
+    -   To run the rule, choose **Run Selected**.
 
-    -   To delete the rule, click **Delete**.
+    -   To delete the rule, choose **Delete**.
 
         > [!NOTE]
         > Deleting a rule does not affect previous updates that were approved by the deleted rule.
 
-## Updating software not made by Microsoft
+## Update software not made by Microsoft
 You can deploy updates for software that is not made by Microsoft. You do this by using the **Upload Update** wizard to get the update into your Cloud Storage space, after which you can approve or decline the update just like with Microsoft software.
 
 ### To upload and configure a third-party update
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Updates** &gt; **Overview** &gt; **Upload**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Updates** &gt; **Overview** &gt; **Upload**.
 
-2.  On the **Update files** page, click **Browse** to select the setup files that are required to install the update package. The file can be a Windows Installer (.msi) file, a Windows Installer patch (.msp) file, or a .exe program file. You can also include any additional files or folders that are in the same folder as the setup file.
+2.  On the **Update files** page, choose **Browse** to select the setup files that are required to install the update package. The file can be a Windows Installer (.msi) file, a Windows Installer patch (.msp) file, or a .exe program file. You can also include any additional files or folders that are in the same folder as the setup file.
 
     The total size of the selected files to upload is displayed. Note that this size does not include the uncompressed or expanded sizes of installation files.
 
-3.  After you specify the setup files, the **Update description** page displays the name, description, and classification for software information that Intune extracted from the software setup files. You can select a classification to label the type of update you are deploying (Updates, Critical Updates, Security Updates, Update Rollups or Service Packs). Click **Next** when you are done.
+3.  After you specify the setup files, the **Update description** page displays the name, description, and classification for software information that Intune extracted from the software setup files. You can select a classification to label the type of update you are deploying (Updates, Critical Updates, Security Updates, Update Rollups or Service Packs). Choose **Next** when you are done.
 
 4.  On the **Requirements** page of the wizard, choose the architecture (32-bit, 64-bit, or both), and the operating systems of the managed computers to which this update will be applicable.
 
@@ -140,7 +142,7 @@ You can deploy updates for software that is not made by Microsoft. You do this b
 
     -   **Registry key exists**
 
-6.  Provide any further information that is required to configure the detection rule such as a file path and name, Windows Installer product code, or a registry key, and then click **Next**.
+6.  Provide any further information that is required to configure the detection rule such as a file path and name, Windows Installer product code, or a registry key, and then choose **Next**.
 
 7.  On the **Prerequisites** page of the wizard, you specify any software that must already be installed before this update can be installed. You can specify **None**, select a software package that has already been added to, and is managed by Intune, or you can specify one of the following rules to describe the software:
 
@@ -150,9 +152,9 @@ You can deploy updates for software that is not made by Microsoft. You do this b
 
     -   **Registry key exists**
 
-8.  Provide any further information that is required to configure the detection rule like a file path and name, Windows Installer product code, or a registry key, and then click **Next**.
+8.  Provide any further information that is required to configure the detection rule like a file path and name, Windows Installer product code, or a registry key, and then choose **Next**.
 
-9. On the **Command line arguments** page of the wizard, you can add any required installation properties to the installation command line to modify the behavior of the setup file. For example, some software supports the **/q** property to enable silent installation. Refer to the documentation for your software package to learn about any supported command line arguments. Specify any command line arguments you need and then click **Next**.
+9. On the **Command line arguments** page of the wizard, you can add any required installation properties to the installation command line to modify the behavior of the setup file. For example, some software supports the **/q** property to enable silent installation. Refer to the documentation for your software package to learn about any supported command line arguments. Specify any command line arguments you need and then choose **Next**.
 
     > [!NOTE]
     > If the update does not support silent installation, you cannot install the update using Intune
@@ -163,20 +165,20 @@ You can deploy updates for software that is not made by Microsoft. You do this b
 |---------------|------------------|
 |**0**|Success|
 |**3010**|Success with restart|
-    
+
 11. Any return code that is not listed is considered a failure.
 Some updates use nonstandard interpretations for return codes. In this case, you can specify your own return code interpretations.
 
-12. Specify or edit the required return codes and then click **Next**.
+12. Specify or edit the required return codes, and then choose **Next**.
 
-13. On the **Summary** page of the wizard, review the actions that will be taken, and then click **Upload** to complete the wizard.
+13. On the **Summary** page of the wizard, review the actions that will be taken, and then choose **Upload** to complete the wizard.
 
-The uploaded update is stored in your Intune cloud storage. If you have insufficient free space to upload the update package, you are notified of this during the upload process. Intune cannot determine sufficient free space until after the update upload has started, because compressed setup and installation files require more space when they are uncompressed.F
+The uploaded update is stored in your Intune cloud storage. If you have insufficient free space to upload the update package, you are notified of this during the upload process. Intune cannot determine sufficient free space until after the update upload has started, because compressed setup and installation files require more space when they are uncompressed.
 
-After it is uploaded into Intune, a third-party update is displayed in the **Updates** workspace in the **All Updates** pane. You can then approve and deploy the update. For more information, see the [Approving and declining updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve1) section in this topic.
+After it is uploaded into Intune, a third-party update is displayed in the **Updates** workspace in the **All Updates** pane. You can then approve and deploy the update. For more information, see the following "Approve and decline updates" section.
 
-## Approving and declining updates
-When updates are ready to install, a message is shown on the **Updates Overview** page of the **Updates** workspace, under **Update Status**. Click this message to open the **All Updates** page to see which updates are ready for approval.
+## Approve and decline updates
+When updates are ready to install, a message is shown on the **Updates Overview** page of the **Updates** workspace, under **Update Status**. Choose this message to open the **All Updates** page to see which updates are ready for approval.
 
 You can use the **Filters** list to make it easier to find updates. For example, you can display only updates that failed, or updates that are superseded.
 
@@ -191,18 +193,18 @@ When you select an update from the list, further commands are available that let
 |**Delete**|For non-Microsoft updates only. Deletes the selected update.|
 |**Upload**|Starts the **Upload Update** wizard that allows you to upload non-Microsoft updates that you want to deploy.|
 
-### <a name="BKMK_Approve"></a>To approve updates
+### To approve updates
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Updates** &gt; **Overview** &gt; **New updates to approve**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Updates** &gt; **Overview** &gt; **New updates to approve**.
 
-    In the **Updates** workspace, click **Overview** &gt; **New updates to approve**.
+    In the **Updates** workspace, choose **Overview** &gt; **New updates to approve**.
 
     > [!NOTE]
     > The **New updates to approve** link appears in the **Updates Status** area only when there is at least one managed computer that needs an update to be approved.
 
-2.  Select an update, review the update properties at the bottom of the page to ensure that you want to approve the update, and then click **Approve**. You can select multiple updates by holding down the **CTRL** key as you select each item.
+2.  Select an update, review the update properties at the bottom of the page to ensure that you want to approve the update, and then choose **Approve**. You can select multiple updates by holding down the **CTRL** key as you select each item.
 
-3.  On the **Select Groups** page, select a group that you want to deploy the updates to, and then click **Add**. When you have finished specifying groups, click **Next**.
+3.  On the **Select Groups** page, select a group that you want to deploy the updates to, and then choose **Add**. When you have finished specifying groups, choose **Next**.
 
 4.  On the **Deployment Action** page, do the following for each group in the list:
 
@@ -229,7 +231,7 @@ When you select an update from the list, further commands are available that let
 
         -   **One week**, **Two weeks**, **One month** – Installs the update within the specified time period.
 
-5.  Click **Finish** to save the settings, or click **Cancel** to discard the settings and return to the updates list.
+5.  Choose **Finish** to save the settings, or **Cancel** to discard the settings and return to the updates list.
 
     > [!IMPORTANT]
     > Unless the action **Do Not Install**, **Required Install**, or **Uninstall** was explicitly configured for a child group, an action configured for a parent group is inherited by all its children.
@@ -237,6 +239,5 @@ When you select an update from the list, further commands are available that let
 6.  You can check the details pane at the bottom of the **All Updates** page for reminder messages about the update.
 
 
-### See Also
+### See also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs.md)
-
