@@ -33,6 +33,5 @@ You use the **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** to manually a
 ## Next steps
 Congratulations! You have just completed step 4 of the *Get started with a paid subscription to Microsoft Intune* guide.
 >[!div class="step-by-step"]
->[Next](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)  **Create groups to organize users and devices**
->
->[Previous](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)  **Sync Active Directory and add users to Intune**
+
+>[<< **Sync Active Directory and add users to Intune**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Create groups to organize users and devices** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
