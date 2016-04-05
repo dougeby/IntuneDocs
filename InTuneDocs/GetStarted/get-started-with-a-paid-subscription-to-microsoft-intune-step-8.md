@@ -55,4 +55,4 @@ To learn more about software management using [!INCLUDE[wit_nextref](../includes
 Congratulations! You have just completed step 8 of the *Get started with a paid subscription to Microsoft Intune* guide.
 >[!div class="step-by-step"]
 
->[<< **Customize the company portal**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)     [**Enroll mobile devices and install an app** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)  
+>[<< **Customize Company Portal**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)     [**Enroll devices** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)  
