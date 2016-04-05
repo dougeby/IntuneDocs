@@ -90,7 +90,8 @@ On iOS devices, you can allow the user to identify themselves using fingerprint 
   -   *Offline grace period:* If the device is offline, the time (in minutes) before the access requirements for the app are rechecked. **Default value = 30 minute timeout, and 720 minute offline grace period**
   - *Offline interval before app data is wiped (days):* You can choose to wipe the company data if a device has been offline for a certain period.  Specify the number of days a device can be offline before the company data is removed from the device. **Entering a value of  0 will turn this setting off**.
 
-  **Default value = 90 days**|
+  **Default value = 90 days**
 
   >[!div class="step-by-step"]
-  >[Go to](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)  **Create and deploy a MAM policy**
+  [<<Create and Deploy a MAM policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)  
+  [Monitor compliance>>](monitor-mobile-app-management-policies-with-microsoft-intune.md)
