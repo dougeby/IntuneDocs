@@ -10,7 +10,6 @@ ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
 author: Nbigman
 ---
 # Plan your user and device groups
-
 Groups in Intune provide great flexibility in managing your devices and users. You can set up groups to suit your organizational needs according to:
 
 - geographic location
@@ -19,7 +18,10 @@ Groups in Intune provide great flexibility in managing your devices and users. Y
 - operating system
 - whether the device is user-owned or company-owned
 
+
 ## How Intune groups work
+
+
 The default view of the Groups node in the Intune Management console is:
 
 ![Screenshot of the default view of the Groups node in the Intune console](./media/Group-planning/Intune_Planning_Groups_Default_small.png)
