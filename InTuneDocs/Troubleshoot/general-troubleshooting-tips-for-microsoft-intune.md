@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot Microsoft Intune
+title: General troubleshooting tips for Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -7,62 +7,16 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
-author: Lindavr
+author: nbigman
 ---
-# Troubleshoot Microsoft Intune
+# General troubleshooting tips for Microsoft Intune
 You may find  after you deploy [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], that you're encountering problems with your configuration or with clients. The resources below may help you find out what could be causing the problem so that you can resolve it.
 
 > [!NOTE]
 > To create a support request, or to view an existing request,  click [here](https://portal.office.com/admin/default.aspx) to visit the Office 365 admin center. For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
-## Troubleshooting topics
-The following troubleshooting information is available in this section:
-
--   [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
-
-    If your troubleshooting efforts don't result in a solution to the issue you're experiencing, Microsoft provides support options. You can learn more about those options in this topic.
-
--   [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
-
-    [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] provides endpoint protection to help you secure your managed computers. If you encounter issues with this feature,  this topic provides possible causes and solutions for errors and warnings you may see.
-
--   [Troubleshoot company resource access problems with Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
-
-    When you've enabled access to company resources from mobile devices, you may receive one of the error messages described  in this topic.
-
--   [Troubleshoot app deployment problems in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
-
-    This topic  describes common app deployment issues and how to resolve them.
-
--   [Troubleshoot device enrollment in Intune](troubleshoot-device-enrollment-in-intune.md)
-
-    If your users are having difficulty enrolling their devices, check the information in  this topic for common problems and resolutions.
-
--   [Troubleshoot policies in Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
-
-    You may find that your policies are not resulting in the behavior you planned, or are triggering error messages. This topic provides tips for these kinds of issues.
-
--   [Troubleshoot client setup in Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
-
-    You can learn how to use alerts and error codes to troubleshoot client installation in this topic .
-
--   [Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-
-    If you receive an error related to software updates, use the information in this topic to better understand the errors.
-
-## Community resources
-You can find other helpful information in these community resources:
-
--   The [Microsoft Intune Survival Guide](http://social.technet.microsoft.com/wiki/contents/articles/23431.microsoft-intune-survival-guide.aspx) contains links to many resources that can help you configure, maintain, and troubleshoot [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
-
--   [The Intune blog](http://blogs.technet.com/b/windowsintune/)
-
--   [Follow Intune on Twitter](https://twitter.com/MSIntune)
-
--   [The Intune forums](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
-
-## General troubleshooting guidelines
-Here are some general troubleshooting guidelines that can help you resolve issues in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+## Tips
+Here are some general troubleshooting tips that can help you resolve issues in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
 
 Start by **defining the problem**:
 
@@ -96,7 +50,25 @@ After you've defined the problem and collected data you can **research the solut
 
     To create a support request click [here](https://portal.office.com/admin/default.aspx) to visit the Office 365 admin center. For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
-### See Also
+## Community resources
+You can find other helpful information in these community resources:
+
+-   The [Microsoft Intune Survival Guide](http://social.technet.microsoft.com/wiki/contents/articles/23431.microsoft-intune-survival-guide.aspx) contains links to many resources that can help you configure, maintain, and troubleshoot [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+
+-   [The Intune blog](http://blogs.technet.com/b/windowsintune/)
+
+-   [Follow Intune on Twitter](https://twitter.com/MSIntune)
+
+-   [The Intune forums](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
+
+## General troubleshooting guidelines### See Also
+[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
+[Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
+[Troubleshoot company resource access problems with Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
+[Troubleshoot app deployment problems in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
+[Troubleshoot device enrollment in Intune](troubleshoot-device-enrollment-in-intune.md)
+[Troubleshoot policies in Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
+[Troubleshoot client setup in Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
+[Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
 [Documentation for Microsoft Intune](documentation-for-microsoft-intune.md)
 [Frequently asked questions for Microsoft Intune](frequently-asked-questions-for-microsoft-intune.md)
-[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
