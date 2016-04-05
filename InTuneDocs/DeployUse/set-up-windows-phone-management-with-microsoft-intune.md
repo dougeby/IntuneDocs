@@ -11,7 +11,10 @@ author: NathBarn
 ---
 
 ## Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune
-Before you can manage Windows 10 Mobile or Windows Phone devices with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], you have to set up management. If you manage Windows Phone 8.0 devices or need to deploy the Company Portal to devices, see [Set up Windows Phone 8.0 management](set-up-windows-8.0-management-with-microsoft-intune.md).
+Before you can manage Windows 10 Mobile or Windows Phone devices with Microsof Intune, the devices must be able to communicate with Intune. To simplify this, you can create a DNS record so users don't have to enter the server address.  
+
+For most scenarios, users can install the Company Portal app from the Windows Store. If you manage Windows Phone 8.0 devices or need to deploy the Company Portal to Windows Phone devices, you must also download and sign the Company Portal app. See [Set up Windows Phone 8.0 management](set-up-windows-8.0-management-with-microsoft-intune.md).
+
 
 ## Set up Windows 10 Mobile and Windows Phone management  
 1.  **Set up Intune**
@@ -21,28 +24,26 @@ Before you can manage Windows 10 Mobile or Windows Phone devices with [!INCLUDE[
 
     Creating a DNS alias (CNAME record type) makes it easier for users to enroll their devices. If you don't create a DNS alias, users must
 
-    1.  Create **CNAME** DNS resource records for your company’s domain. The CNAME resource records must contain the following information:
+  1.  Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com. If there is more than one verified domain, create a CNAME record for each domain.The CNAME resource records must contain the following information:
 
 |TYPE|Host name|Points to|TTL|
 |--------|-------------|-------------|-------|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 Hour|
 |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 Hour|
 
-    For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com. If there is more than one verified domain, create a CNAME record for each domain.
+DNS record changes might take up to 72 hours to propagate. You cannot verify the DNS change in Intune until the DNS record propagates.
 
-      -   `manage.microsoft.com` – Supports a redirect to the Intune service with domain recognition from the email’s domain name
+  **EnterpriseEnrollment-s.manage.microsoft.com** – Supports a redirect to the Intune service with domain recognition from the email’s domain name
 
-      -   `enterpriseregistration.windows.net` – Supports workplace join for mobile devices. It also supports conditional access for Windows 8.1
+  **EnterpriseRegistration.windows.net** – Supports Windows 8.1 and Windows 10 Mobile devices that will register with Azure Active Directory using their work or school account
 
     2.  In the [Intune administration console](http://manage.microsoft.com), click **Administration** &gt; **Mobile Device Management** &gt; **Windows Phone**.
 
-    3.  Type the URL of the verified domain of the company website in the **Specify a verified domain name** box and then click **Test Auto-Detection**.
-
-
+     3.  Type the URL of the verified domain of the company website in the **Specify a verified domain name** box and then click **Test Auto-Detection**.
 
 ![](../media/Windows-Device-Enrollment.png)
 
-    No additional work is required unless you will deploy the Company Portal to devices.  Steps 2, 3 and 4 in the admin console can be safely ignored.
+No additional work is required unless you will deploy the Company Portal to devices.  Steps 2, 3 and 4 in the admin console can be safely ignored.
 
 ### See also
 [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
