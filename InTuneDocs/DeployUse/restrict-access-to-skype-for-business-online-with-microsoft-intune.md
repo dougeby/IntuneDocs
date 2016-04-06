@@ -1,5 +1,5 @@
 ---
-title: Manage access to Skype for Business
+title: Restrict access to Skype for Business | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -8,34 +8,39 @@ ms.topic: article
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 author: karthikaraman
 ---
-# Manage access to Skype for Business
-Use conditional access policy for  **Skype for Business Online** to manage access to Skype for Business Online, based on conditions you specify.
+# Restrict access to Skype for Business with Microsoft Intune
+Use conditional access policy for  **Skype for Business Online** to control access to Skype for Business Online, based on conditions you specify.
+You can restrict access to only compliant devices to be able to access SharePoint Online.
+Conditional access has two components:
+- Device compliance policy that the device must comply with in order to be considered compliant.
+- Conditional access policy that where you specify the conditions that the device must meet in order to access the service.
+To learn more about how conditional access works, read the [restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
 When a targeted user attempts to use Skype for Business Online on their device, the following evaluation occurs:
 
-![](../Image/ConditionalAccess_SkypeforBusiness.png)
+![](../media/ConditionalAccess_SkypeforBusiness.png)
 
-## Prerequisites
-
--   Enable modern authentication for Skype for Business Online. Fill this [connect form](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) to be enrolled in the modern authentication program.
--  All your end-users must be using Skype for Business Online. If you have a deployment with both Skype for Business Online and Skype for Business on-premises, conditional access policy will not be applied to end-users.
+**Before** configuring conditional access policy for Skype for Business Online, you must:
+- Have a **Skype for Business Online subscription** is required and users must be licensed for Skype for Business Online.
+-   **Enable modern authentication** for Skype for Business Online. Fill this [connect form](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) to be enrolled in the modern authentication program.
+-  All your end-users must be using **Skype for Business Online**. If you have a deployment with both Skype for Business Online and Skype for Business on-premises, conditional access policy will not be applied to end-users.
 
     The device that needs access to Skype for Business Online must:
 
--   Be an Android or iOS device.
+-   Be an **Android** or **iOS** device.
 
--   Be enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]
+-   Be **enrolled** with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]
 
--   Be compliant with any deployed [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] compliance policies
+-   Be **compliant** with any deployed [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] compliance policies
 
 
 The device state is stored in Azure Active Directory which grants or blocks access, based on the conditions you specify.
 
 If a condition is not met, the user is presented with one of the following messages when they log in:
 
--   If the device is not enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app and enroll.
+-   If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app and enroll.
 
--   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] Company Portal website or Company Portal app where they can find information about the problem, and how to remediate it.
+-   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website or Company Portal app where they can find information about the problem, and how to remediate it.
 
 ## Configure conditional access for Skype for Business Online
 
@@ -51,10 +56,10 @@ You can specify two group types to use for the Skype for Business policy:
 If a user is in both groups, they will be exempt from the policy.
 
 ### Step 2: Configure and deploy a compliance policy
-Ensure that you create and deploy a compliance policy to all devices that the Skype for Business Online policy will be targeted to.
+[Create](create-a-device-compliance-policy-in-microsoft-intune.md) and [deploy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) a compliance policy to all devices that will be affected by the policy. These would be all the devices that are used by the users in the **Targeted groups**.
 
 > [!NOTE]
-> While compliance policies are deployed to [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] groups, conditional access policies are targeted to Azure Active Directory security groups.
+> While compliance policies are deployed to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] groups, conditional access policies are targeted to Azure Active Directory security groups.
 
 For details about how to configure the compliance policy, see [Manage device compliance policies for Microsoft Intune](../Topic/Manage-device-compliance-policies-for-Microsoft-Intune.md).
 
@@ -70,7 +75,7 @@ Next, configure the policy to require that only managed and compliant devices ca
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Conditional Access** &gt; **Skype for Business Online Policy**.
 
-![conditional_access_SFBPolicy](/Image/conditional_access_SFBPolicy.png)
+![conditional_access_SFBPolicy](/media/conditional_access_SFBPolicy.png)
 
 2.  Select **Enable conditional access policy**.
 

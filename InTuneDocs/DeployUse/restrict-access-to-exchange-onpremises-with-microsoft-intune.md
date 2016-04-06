@@ -17,7 +17,7 @@ If you have an Exchange Online Dedicated environment and need to find out whethe
 
 
 To control email access to Exchange On-premises or to your legacy Exchange Online dedicated environment, configure conditional access to Exchange On-premises in Intune.
-If you want to learn more about how conditional access works, read the [restrict access to email and O365 services]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+To learn more about how conditional access works, read the [restrict access to email and O365 services]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 >[!IMPORTANT]
 >Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
 >
