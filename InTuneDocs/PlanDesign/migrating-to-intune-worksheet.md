@@ -1,14 +1,30 @@
 ---
-title: Migrating to Intune - Feature mapping worksheet
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: Migrating to Intune - Feature mapping worksheet | Microsoft Intune
+description:
+keywords:
 author: robmazz
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 39717efa-1120-49be-99c2-d573cf867715
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Migrating to Intune - Feature mapping worksheet
 
