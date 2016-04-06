@@ -1,12 +1,12 @@
 ---
-title: Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune
+title: Manage iOS apps you purchased through a volume-purchase program|Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 9797054d-7e97-4467-96f7-d061a296ed45
+ms.assetid: 
 author: robstackmsft
 ---
 # Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune
@@ -51,7 +51,7 @@ You can synchronize the data held by Apple with Intune at any time by clicking *
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Apps** &gt; **Managed Software** &gt; **Volume-Purchased apps**.
 
-2.  Use the instructions in the [Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md) topic to complete uploading, creation, and deployment of the app.
+2.  Use the instructions in the [Create apps for mobile devices in Microsoft Intune](create-apps-for-mobile-devices-in-microsoft-intune.md) topic to complete uploading, creation, and deployment of the app.
 
 When you deploy the app as a **Required** install, a license is used by each user that installs the app.
 
@@ -71,5 +71,5 @@ You can monitor which VPP apps have been deployed, and how many licenses are use
 > You can also use app **Filters** to examine the status of each app install.
 
 ### See Also
-[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
+[Create apps for mobile devices in Microsoft Intune](create-apps-for-mobile-devices-in-microsoft-intune.md)
 

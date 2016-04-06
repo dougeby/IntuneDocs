@@ -1,12 +1,12 @@
 ---
-title: Deploy apps to Windows PCs in Microsoft Intune
+title: Create apps for Windows PCs|Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 4105b676-11f1-4cd2-88a4-b37d186cdbdb
+ms.assetid: 
 author: robstackmsft
 ---
 # Deploy apps to Windows PCs in Microsoft Intune
@@ -14,12 +14,12 @@ author: robstackmsft
 Use the information in this topic to learn about the three steps for Microsoft Intune app deployment; configuration, deployment, and monitoring. If you want to learn some of the basic concepts for app deployment, see [Plan for app deployment in Microsoft Intune](../PlanDesign/plan-for-app-deployment-in-microsoft-intune.md).
 
 > [!IMPORTANT]
-> The information in this topic helps you to deploy apps to Windows PCs that you manage using the Intune client software. If you want to deploy apps to enrolled Windows PCs and other mobile devices, see [Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md).
+> The information in this topic helps you to deploy apps to Windows PCs that you manage using the Intune client software. If you want to deploy apps to enrolled Windows PCs and other mobile devices, see [Create apps for mobile devices in Microsoft Intune](create-apps-for-mobile-devices-in-microsoft-intune.md).
 
-## Configure the app
+## Create the app
 You use the Intune Software Publisher to configure the properties of the app and upload it to your cloud storage space.
 
-### To configure an app
+### To create an app
 
 1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Add Apps** to start the Intune software publisher.
 
@@ -73,53 +73,6 @@ You use the Intune Software Publisher to configure the properties of the app and
 
 The app is displayed on the **Apps** node of the **Apps** workspace.
 
-## Deploy the app
-In this procedure, you'll deploy the app to selected devices or users.
-
-### To deploy the app
-
-1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Apps** to view the list of apps you manage.
-
-2.  Select the app you want to deploy, and then click **Manage Deployment**.
-
-3.  In the *&lt;app name&gt;* dialog box, first, on the **Select Groups** page, choose the user or device groups to which you want to deploy the app.
-
-4.  On the **Deployment Action** page, configure the following:
-
-- **Approval** - Choose whether the deployment is:
-	- **Required** (mandatory install)
-	- **Available** (users install from the company portal on demand)
-	- **Not Applicable** (the app is not installed or shown in the company portal)
-	- **Uninstall** (the app will be uninstalled from targeted devices).
-- **Deadline**|For required installations, choose how soon the app will be deployed. You can choose from the predefined values, or select **Custom** to configure your own deadline.
-
-## Monitor the app
-You can see the apps you manage, and their deployment status in the Intune administration console.
-
-### To view the apps you manage and their status
-In the **Apps** workspace, click the **Apps** node, then click **Apps**.
-
-The list of apps you manage is displayed. You can click on any app to see an installation status in the lower pane of the console windows. Click on this status to see further details. For example, if the status shows **1 user has this software available**, you can click the message to see the name of the user.
-
-> [!TIP]
-> You can use the **Filters** drop-down list to show only apps that meet the criteria you specify, like apps that failed to install, or apps that were successfully deployed.
-> 
-> ![](./media/App-filters.png)
-
-Additionally, the **Dashboard** workspace shows an overview of the status of your apps. If you click anywhere in the overview, you'll be taken to the list of apps.
-
-## To view more detailed information about an app
-In the list of apps, select any app, and then click **View Properties**.
-
-On the **Software Properties** page for the app, click one of these tabs: **General** - Shows general information about the app and it's installation status, **Devices** - Shows the devices that successfully installed a targeted deployment of the app, **Users** - Shows the users who's devices successfully installed a targeted deployment of the app.
-
-As before, you can use the **Filters** drop-down list to configure the values shown on each of the tabs.
-
 ## Next steps
 
-For information about how to update apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
-For information about how to retire apps, see [Retire apps using Microsoft Intune](retire-apps-using-microsoft-intune.md).
-
-### See Also
-[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
-
+Once you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune.md](deploy-apps-in-microsoft-intune.md)

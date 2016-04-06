@@ -47,12 +47,14 @@
 #### [Windows PC Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
 
 ## [Deploy apps](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
-### [Deploy apps to mobile devices](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
-### [Deploy apps to PCs](deploy-apps-to-windows-pcs-in-microsoft-intune.md)
+### [Create apps for mobile devices](create-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Create apps for Windows PCs](create-apps-for-windows-pcs-in-microsoft-intune.md)
+### [Deploy apps](deploy-apps-in-microsoft-intune.md)
+### [Monitor apps](monitor-apps-in-microsoft-intune.md)
+### [Manage volume-purchased apps](manage-volume-purchased-apps-in-microsoft-intune.md)
 
 ## [Configure apps](update-apps-using-microsoft-intune.md)
 ### [Update apps ](update-apps-using-microsoft-intune.md)
-### [Manage apps purchased through a volume-purchase program](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 ### [Mobile app configuration policies](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
 ### [Manage Internet access using managed browser policies](manage-internet-access-using-managed-browser-policies.md)
 
