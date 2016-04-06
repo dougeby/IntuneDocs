@@ -1,5 +1,5 @@
 ---
-title: Manage Windows PCs with Microsoft Intune
+title: Manage Windows PCs with Intune | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -10,7 +10,7 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 author: robstackmsft
 ---
 # Manage Windows PCs with Microsoft Intune
-In addition to enrolling devices, you can also use Microsoft Intune to manage Windows PCs running supported operating systems using the Intune Windows PC client software. The [hardware and software requirements](windows-pc-management-capabilities-in-microsoft-intune.md) to run the computer client are minimal -- basically any system capable of running Windows Vista or later is supported.  The client software can also be easily installed on either domain-joined computers (in any domain) or non-domain-joined computers.
+In addition to enrolling devices, you can also use Intune to manage Windows PCs running supported operating systems using the Intune Windows PC client software. The [hardware and software requirements](windows-pc-management-capabilities-in-microsoft-intune.md) to run the computer client are minimal -- basically any system capable of running Windows Vista or later is supported.  The client software can also be easily installed on either domain-joined computers (in any domain) or non-domain-joined computers.
 
 Intune manages Windows PCs using policies similar to the way Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you will be managing Active Directory domain-joined computers with Intune, you should [be sure that Intune policies do not conflict with any GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) that are in place for your organization.
 
@@ -53,8 +53,4 @@ In addition to the Intune client agent actions taken locally on individual compu
 
 -   Respond to remote assistance requests
 
-The Intune client agent usually runs quietly in the background without the need for much user interaction or troubleshooting. However, should you need help in resolving computer management issues, there are several [resources available to help you solve them](troubleshoot-client-setup-in-microsoft-intune.md).
-
-### See Also
-[Configure and manage devices with Microsoft Intune](configure-and-manage-devices-with-microsoft-intune.md)
-
+The Intune client agent usually runs quietly in the background without the need for much user interaction or troubleshooting. However, should you need help in resolving computer management issues, there are several [resources available to help you solve them](/troubleshoot/troubleshoot-client-setup-in-microsoft-intune).
