@@ -1,5 +1,5 @@
 ---
-title: Compliance policy settings for Windows devices in Microsoft Intune
+title: Compliance policy settings for Windows devices| Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service:
@@ -11,8 +11,7 @@ author: karthikaraman
 ---
 # Compliance policy settings for Windows devices in Microsoft Intune
 
-This topic lists the details of the compliance policy settings that
-are supported on devices running Windows operating system. The specific Windows version supported is called out in the sections below.
+This policy settings described in this topic applies to devices running Windows operating system. The specific Windows version supported is called out in the sections below.
 
 If you are looking for information about other platforms, select one of the following:
 > [!div class="op_single_selector"]

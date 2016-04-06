@@ -10,16 +10,21 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 author: karthikaraman
 ---
 # Restrict email access to Exchange Online and new Exchange Online Dedicated environment with Intune
-The information in this topics applies to both Exchange Online and the new Exchange Online Dedicated environment.
+The information in this topic applies to both Exchange Online and the new Exchange Online Dedicated environment.
 
 If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, please contact your account manager.
 
 To control email access to Exchange Online or to your new Exchange Online Dedicated environment, configure conditional access for Exchange Online in Intune.
 If you want to learn more about how conditional access works, read the [Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
-Before you can configure conditional access you must:
+>[!IMPORTANT]
+>Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
 
--   Have an Office 365 subscription that includes Exchange Online (such as E3) and users must be licensed for Exchange Online.
+>If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, you will need to submit a request for access.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
+
+**Before** you can configure conditional access you must:
+
+-   Have an **Office 365 subscription that includes Exchange Online (such as E3)** and users must be licensed for Exchange Online.
 
 -  Consider configuring the optional **Microsoft Intune service to service connector**  which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. You do not need to use the connector to use compliance policies or conditional access policies, but is required to run reports that help evaluate the impact of conditional access.
 
@@ -38,7 +43,7 @@ When conditional access policies are configured and targeted to a user, before a
 
 -   **Compliant** with any [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] compliance policies deployed to that device.
 
-If a conditional access policy is not met, the user is presented with one of the following messages when they log in.
+If a conditional access policy is not met, the user is presented with one of the following messages when they log in:
 
 - If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
 
@@ -50,14 +55,13 @@ The diagram below illustrated the flow is used by conditional access policies fo
 ![](../media/ConditionalAccess8-1.png)
 
 ## Support for mobile devices
-You can restrict access to Exchange Online email from **Outlook** and other apps that use modern authentication on iOS and Android devices.
+You can restrict access to Exchange Online email from **Outlook** and other **apps that use modern authentication** on iOS and Android devices.
 - Android 4.0 and later, Samsung Knox Standard 4.0 and later
 - iOS 7.1 and later
 - Windows Phone 8.1 and later
 
-> [!TIP]
-> **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Office clients.
->
+ **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Office clients.
+
 > -   The ADAL based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, the user is directed to a sign-in web page.
 > -   This new sign-in method enables new scenarios such as, conditional access, based on **device compliance** and whether **multi-factor authentication** was performed.
 >
@@ -75,9 +79,6 @@ You can restrict access to Exchange email from the built-in **Exchange ActiveSyn
 
 
 ## Support for PCs
->[!IMPORTANT]
->Conditional access for PCs is not currently available to all Intune customers. If you are already using conditional access for PCs, you do not need to take any action. You can continue to use it.
-If you have not created conditional access policies for PCs you will need to submit a request for access.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472)
 
 You can setup conditional access for PCs that run Office desktop applications to access **Exchange Online** and **SharePoint Online** for PCs that meet the following requirements:
 
