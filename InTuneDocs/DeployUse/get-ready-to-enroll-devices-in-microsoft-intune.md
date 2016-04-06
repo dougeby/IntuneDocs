@@ -16,7 +16,7 @@ To let employees enroll mobile devices (including Android, iOS, and Windows Phon
 The MDM authority defines the  management service with permission to manage a set of devices. Options for MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
 
 >[!IMPORTANT]
-> Consider carefully whether you want to manage mobile devices using Intune-only (online service) or System Center Configuration Manager with Intune (on-premises software solution in conjunction with online service). After you set the mobile device management authority, it cannot be changed. If you're unsure of your options, see [Ways to do enterprise mobility](../Topic/Ways%20to%20do%20enterprise%20mobility.md).
+> Consider carefully whether you want to manage mobile devices using Intune-only (online service) or System Center Configuration Manager with Intune (on-premises software solution in conjunction with online service). After you set the mobile device management authority, it cannot be changed. If you're unsure of your options, see [Ways to do enterprise mobility](../understand/ways-to-do-enterprise-mobility).
 
 
 
@@ -29,7 +29,7 @@ The MDM authority defines the  management service with permission to manage a se
 3.  Intune requests confirmation that you want Intune as your MDM authority. Check the box and then click **Yes** to use Microsoft Intune to manage mobile devices.
 
 ## Configure the Intune Company Portal and assign licenses
-The Intune Company Portal helps users access company resources such as apps, find helpdesk information, and enroll and un-enrolled devices. Before enrolling devices you should [configure the Company Portal app](../getstarted/get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md). You must also [assign user licenses](../get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md) to allow access to Intune.
+The Intune Company Portal helps users access company resources such as apps, find helpdesk information, and enroll and un-enrolled devices. Before enrolling devices you should [configure the Company Portal app](../getstarted/get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md). You must also [assign user licenses](../getstarted/get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md) to allow access to Intune.
 
 ## Set up device management
 After setting up the MDM authority, you need to set up device management for the operating systems your organization wants to support. The steps required to set up device management vary by operating system. For example, Android OS does not require you to do anything in the Intune administration console. On the other hand, Windows and iOS require a trust relationship between devices and Intune to allow management.
