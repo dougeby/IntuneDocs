@@ -63,7 +63,7 @@
 
 ### [Restrict access to email & O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 #### [Device compliance polices](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-#### [Restrict access to Exchange Online](restrict-access to-exchange-online-with-microsoft-intune.md)
+#### [Restrict access to Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Restrict access to Exchange OnPremises](restrict-access-to-exchange-onpremises-with-microsoft-intune)
 #### [Restrict access to new Exchange Online dedicated]()
 #### [Restrict access to legacy Exchange Online dedicated]()
