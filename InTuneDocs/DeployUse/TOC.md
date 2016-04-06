@@ -1,5 +1,5 @@
 # [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
-# [Get started](/intune/getstarted/what-to-know-before-you-start-microsoft-intune)
+# [Get Started](/intune/getstarted/what-to-know-before-you-start-microsoft-intune)
 # [Plan and Design](/intune/plandesign/migrating-to-intune)
 
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -63,12 +63,10 @@
 
 ### [Restrict access to email & O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 #### [Device compliance polices](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-#### [Restrict access to Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
-#### [Restrict access to Exchange OnPremises](restrict-access-to-exchange-onpremises-with-microsoft-intune)
-#### [Restrict access to new Exchange Online dedicated]()
-#### [Restrict access to legacy Exchange Online dedicated]()
-#### [Restrict access to SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-#### [Restrict access to Skype for Business](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+#### [Exchange Online & new Exchange Online dedicated Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+#### [Exchange OnPremises & legacy Exchange Online dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune)
+#### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+#### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 ### [Introduction to mobile app management polices](introduction-to-mobile-app-management-policies-with-microsoft-intune)
 #### [Azure portal for MAM polices](azure-portal-for-microsoft-intune-mam-policies)
