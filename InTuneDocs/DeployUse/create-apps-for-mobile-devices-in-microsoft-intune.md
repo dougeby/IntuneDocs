@@ -1,12 +1,12 @@
 ---
-title: Deploy apps to mobile devices in Microsoft Intune
+title: Create apps for mobile devices|Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 6da30550-9e8e-4333-b9b3-83928de3807a
+ms.assetid: 
 author: robstackmsft
 ---
 # Deploy apps to mobile devices in Microsoft Intune
@@ -17,10 +17,10 @@ Use the information in this topic to learn about the three steps for Microsoft I
 > [!IMPORTANT]
 > The information in this topic helps you to deploy apps to [enrolled Windows PCs](https://technet.microsoft.com/library/mt346003.aspx) and other enrolled devices. If you want to deploy apps to [Windows PCs that you manage using the client software](https://technet.microsoft.com/library/dn646959.aspx), see [Deploy apps to Windows PCs in Microsoft Intune](../Topic/Deploy-apps-to-Windows-PCs-in-Microsoft-Intune.md).
 
-## Configure the app
+## Create the app
 You use the Intune Software Publisher to configure the properties of the app and, where applicable, upload it to your cloud storage space.
 
-### To configure an app
+### To create an app
 
 1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Add Apps** to start the Intune software publisher.
 
@@ -80,77 +80,10 @@ You use the Intune Software Publisher to configure the properties of the app and
 
 The app is displayed on the **Apps** node of the **Apps** workspace.
 
-## Deploy the app
-In this procedure, you'll deploy the app to selected devices or users.
-
-### To deploy the app
-
-1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Apps** to view the list of apps you manage.
-
-2.  Select the app you want to deploy, and then click **Manage Deployment**.
-
-3.  In the *&lt;app name&gt;* dialog box, on the **Select Groups** page, choose the user or device groups to which you want to deploy the app.
-
-4.  On the **Deployment Action** page, configure the following:
-
-	- **Approval** - Choose whether the deployment is:
-		- **Required** (mandatory install)
-		- **Available** (users install from the company portal on demand)
-		- **Not Applicable** (the app is not installed or shown in the company portal)
-		- **Uninstall** (the app will be uninstalled from targeted devices)
-	- **Deadline** - For required installations, choose how soon the app will be deployed. You can choose from the predefined values, or select **Custom** to configure your own deadline.
-
-5.  If the app you are deploying can be configured by a [mobile application management policy](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md), the **Mobile App Management** page is displayed. On this page, choose the mobile application management policy you want to associate with this app.
-
-    [See which Microsoft apps are compatible with mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md).
-
-6.  If the app you are deploying is compatible with Intune VPN profiles, the **VPN Profile** page is displayed. On this page, you can choose to associate iOS apps with a VPN profile you have deployed. The VPN connection will be automatically opened when the app is launched. To make a VPN profile available, it must have the **Per-app VPN** profile setting enabled.
-    For information about how to configure VPN profiles, including support for associating profiles with apps, see [Help users connect to their work using VPN profiles with Microsoft Intune](vpn-connections-in-microsoft-intune.md).
-
-If you deployed the app as **Available**, it will be displayed in the company portal on users device from where they can install the app. For example, in this screenshot, the Bing for iOS app was deployed using the **External Link** installation type, with a custom icon, and the option **Display this as a featured app and highlight it in the company portal** was selected.|
-
-![Available install for iOS](./media/available-install-on-ios.png)|
-
-If you deployed the app as required, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed using the **Managed iOS app from the app store** installation type.|
-
-![Required install for iOS](./media/ios-required-install.png)|
-## Monitor the app
-You can see the apps you manage, and their deployment status in the Intune console.
-
-### To view the apps you manage and their status
-In the **Apps** workspace, click the **Apps** node, then click **Apps**.
-
-The list of apps you manage is displayed. You can click on any app to see an installation status in the lower pane of the console windows. Click the status to see more details. For example, if the status shows **1 user has this software available**, you can click the message to see the name of the user.
-
-> [!TIP]
-> You can use the **Filters** drop-down list to show only apps that meet the criteria you specify, like apps that failed to install, or apps that were successfully deployed.
- 
-![App filters](./media/app-filters.png)
-
-
-Additionally, the **Dashboard** workspace shows an overview of the status of your apps. If you click anywhere in the overview, you'll be taken to the list of apps.
-
-### To view more detailed information about an app
-In the list of apps, select any app, and then click **View Properties**.
-
-On the **Software Properties** page for the app, click one of these tabs:
-
--   **General** - Shows general information about the app and its installation status.
-
--   **Devices** - Shows the devices that successfully installed a targeted deployment of the app.
-
--   **Users** - Shows the users whose devices successfully installed a targeted deployment of the app.
-
-As before, you can use the **Filters** drop-down list to configure the values shown on each of the tabs.
 
 ## Next steps
 
-- If you are looking for information about how to deploy and manage apps you volume-purchased from an app store, see one of the following topics:
-	* [Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-	* [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
-- For information about how to update apps, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
+Once you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune.md](deploy-apps-in-microsoft-intune.md)
 
 
-### See Also
-[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
 

@@ -1,12 +1,12 @@
 ---
-title: Manage apps you purchased from the Windows Store for Business with Microsoft Intune
+title: Manage apps you purchased from the Windows Store for Business|Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 1643dec0-51dc-4c3a-9dd3-23da496403d9
+ms.assetid: 
 author: robstackmsft
 ---
 # Manage apps you purchased from the Windows Store for Business with Microsoft Intune
@@ -58,6 +58,6 @@ When you deploy a Windows Store for Business app, a license is used by each user
 
 
 ### See also
-[Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
+[Create apps for mobile devices in Microsoft Intune](create-apps-for-mobile-devices-in-microsoft-intune.md)
 
 
