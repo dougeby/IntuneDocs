@@ -1,14 +1,30 @@
 ---
-title: Plan for app deployment in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
+# required metadata
+
+title: Plan for app deployment in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Plan for app deployment in Microsoft Intune
 Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. This will give you an overview of the deployment process, and act as a reference to which device types and app types are supported.
 

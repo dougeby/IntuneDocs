@@ -1,14 +1,30 @@
 ---
-title: What to tell your end users about using Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
+# required metadata
+
+title: What to tell your end users about using Microsoft Intune | Microsoft Intune
+description:
+keywords:
+author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
 ms.topic: get-started-article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
-author: Staciebarker
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # What to tell your end users about using Microsoft Intune
 
