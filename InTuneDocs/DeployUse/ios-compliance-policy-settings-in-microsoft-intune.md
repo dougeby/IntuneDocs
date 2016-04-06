@@ -1,5 +1,5 @@
 ---
-title: Compliance policy settings for iOS devices in Microsoft Intune
+title: Compliance policy settings for iOS devices |Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service:
@@ -12,8 +12,7 @@ author: karthikaraman
 
 # Compliance policy settings for iOS devices in Microsoft Intune
 
-This topic lists the details of the compliance policy settings that
-are supported on devices running iOS 6 and later.
+The policy settings described in this topic apply to  devices running iOS 6 and later.
 
 If you are looking for information about other platforms, select one of the following:
 > [!div class="op_single_selector"]
@@ -23,8 +22,7 @@ If you are looking for information about other platforms, select one of the foll
 ## System security settings
 ### Password
 - **Require a password to unlock mobile devices:**    Set this to **Yes** to require users to enter a password before
-  they can access their device. Devices are
-  encrypted when you configure the setting.
+  they can access their device. IOS devices that use password are encrypted.
 
 - **Allow simple passwords:**    Set this
    to **Yes** to let users create simple passwords
@@ -36,8 +34,8 @@ If you are looking for information about other platforms, select one of the foll
 - **Required password type:** Specify whether users must create
 an **Alphanumeric**, or a **Numeric** password.
 
-- **Minimum number of character sets:** If **Required password type** is set to
-**Alphanumeric**, this setting specifies the minimum number of
+- **Minimum number of character sets:** If you set **Required password type** to
+**Alphanumeric**, use this setting to specify the minimum number of
 character sets that the password must contain. The four character sets are:
   -   Lowercase letters
   -   Uppercase letters
@@ -45,7 +43,7 @@ character sets that the password must contain. The four character sets are:
   -   Numbers
 
   Setting a higher number for this setting will require users to create more complex passwords.<br /><br />For iOS devices, this setting refers to the number of special characters (for example, **!**, **#**, **&amp;**) that must be included in the password.
-- **Minutes of inactivity before password is required:**  Specifies the idle time before the user must re-enter their password.
+- **Minutes of inactivity before password is required:**  Specify the idle time before the user must re-enter their password.
 
 - **Password expiration (days):** Select the number of days before the user’s password expires
 and they must create a new one.
@@ -61,24 +59,21 @@ This setting should be used together with the in the **Minutes of inactivity bef
 **Minutes of inactivity before password is required** setting.
 
 ### Email profile
-- **Email account must be managed by Intune:** When this option is set to **Yes** ,
-the device is reported as noncompliant.
-
-  If the user has set up an email account on the device that matches an
-  Intune email profile that was deployed to the device by an IT admin.
-
-  Intune cannot overwrite the user-provisioned profile, and therefore
+- **Email account must be managed by Intune:** When this option is set to **Yes** , the device must use the email profile deployed to the device. The device is considered noncompliant in the following situations:
+  - The email profile must also be deployed to the same user group as user group targeted by the compliance policy, otherwise the users’ devices will be considered non-compliant.
+  - The device is reported as noncompliant if the user has already set up an email account on the device that matches the Intune email profile deployed to the device. Intune cannot overwrite the user-provisioned profile, and therefore
   cannot manage it. To ensure compliance, the user must remove the
   existing email settings, then, Intune can install the managed
   email profile.
 
- For details about email profiles, see [Configure access to
- corporate email using email profiles with Microsoft Intune](../Topic/Configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md).
 
 - **Select the email profile that must be managed by Intune:**
-     If **Email account must be managed by Intune** is selected,
+     If the **Email account must be managed by Intune** setting is selected,
      choose **Select** to specify the Intune email profile that devices
      must be managed by. The email profile must be present on the device.
+
+     For details about email profiles, see [Configure access to
+     corporate email using email profiles with Microsoft Intune](../Topic/Configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md).
 
 ## Device health settings
 
