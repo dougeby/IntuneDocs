@@ -1,6 +1,6 @@
 # [Understand and Explore](/understand/introduction-to-microsoft-intune)
 
-# [Get started](what-to-know-before-you-start-microsoft-intune.md)
+# [Get Started](what-to-know-before-you-start-microsoft-intune.md)
 ## [What to know before you start](what-to-know-before-you-start-microsoft-intune.md)
 ### [Supported web browsers](supported-web-browsers.md)
 ### [Network infrastructure requirements](network-infrastructure-requirements-for-microsoft-intune.md)

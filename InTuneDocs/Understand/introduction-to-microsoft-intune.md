@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 author: Lindavr
 ---
-# Welcome to Intune
+# Introduction to Intune
 Enterprise mobility is all about enabling your employees to be productive on all of their devices while keeping your organizations information protected.  
 
 Microsoft offers a complete integrated suite for enterprise mobility inclusive of productivity, identity, access control, management and data protection. This integrated suite gives you the best possible way to deploy and operate a mobility solution in your organization.  
