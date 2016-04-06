@@ -17,7 +17,7 @@ If you have an Exchange Online Dedicated environment and need to find out whethe
 
 
 To control email access to Exchange On-premises or to your legacy Exchange Online dedicated environment, configure conditional access to Exchange On-premises in Intune.
-If you want to learn more about how conditional access works, read the [Restrict access to email and O365 services]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+If you want to learn more about how conditional access works, read the [restrict access to email and O365 services]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 >[!IMPORTANT]
 >Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
 >
@@ -29,11 +29,11 @@ If you want to learn more about how conditional access works, read the [Restrict
 
 -   Your Exchange version must be **Exchange 2010 or later**. Exchange server Client Access Server (CAS) array is supported.
 
--   You must use the **on-premises Exchange connector** which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange On-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. For details on the connector, see [Mobile device management with Exchange ActiveSync and Microsoft Intune](intune-on-premises-exchange-connector.md).
+-   You must use the **on-premises Exchange connector** which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange On-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. For details on the connector, see [mobile device management with Exchange ActiveSync and Microsoft Intune](intune-on-premises-exchange-connector.md).
 
     -   Make sure that you are using the latest version of the **on-premises Exchange connector**. The on-premise Exchange connector available to you in the Intune console is specific to your Intune tenant and cannot be used with any other tenant. You should also ensure that the exchange connector for your tenant is installed on exactly one machine and not on multiple machines.
 
-        This connector should be downloaded from the Intune admin console.  For a walkthrough on how to configure the on-premises Exchange connector, see [Configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md).
+        This connector should be downloaded from the Intune admin console.  For a walkthrough on how to configure the on-premises Exchange connector, see [configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md).
 
     -   The connector can be installed on any machine as long as that machine is able to communicate with the Exchange server.
 
@@ -116,6 +116,7 @@ The **Mail** application on Windows 8 and later (when enrolled with [!INCLUDE[wi
 
 [Restrict access to Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
+**  To see some example scenarios of how you would configure conditional access policy to restrict device access, see [restrict email access example scenarios](restrict-email-access-example-scenarios.md). **
 
 ### See also
 [Restrict access to Exchange Online](restrict-access to-exchange-online-with-microsoft-intune.md)

@@ -15,7 +15,7 @@ The information in this topic applies to both Exchange Online and the new Exchan
 If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, please contact your account manager.
 
 To control email access to Exchange Online or to your new Exchange Online Dedicated environment, configure conditional access for Exchange Online in Intune.
-If you want to learn more about how conditional access works, read the [Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+If you want to learn more about how conditional access works, read the [restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
 >[!IMPORTANT]
 >Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
@@ -103,8 +103,6 @@ Make sure you [create](create-a-device-compliance-policy-in-microsoft-intune.md)
 
 > [!IMPORTANT]
 > If you have not deployed a compliance policy and then enable an Exchange conditional access policy, all targeted devices will be allowed access.
-
-
 
 ### <a name="bkmk_Eval_FX_CAP"></a>Step 2: Evaluate the effect of the conditional access policy
 You can use the **Mobile Device Inventory Reports** to identify devices that might be blocked from accessing Exchange after you configure the conditional access policy.
@@ -204,6 +202,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
 -   If the user un-enrolls their device, email is blocked after around 6 hours.
 
+**  To see some example scenarios of how you would configure conditional access policy to restrict device access, see [restrict email access example scenarios](restrict-email-access-example-scenarios.md). **
 
 ## Step 5: Monitor the compliance and conditional access policies
 
