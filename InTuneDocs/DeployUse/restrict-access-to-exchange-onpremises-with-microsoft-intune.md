@@ -18,8 +18,14 @@ If you have an Exchange Online Dedicated environment and need to find out whethe
 
 To control email access to Exchange On-premises or to your legacy Exchange Online dedicated environment, configure conditional access to Exchange On-premises in Intune.
 If you want to learn more about how conditional access works, read the [Restrict access to email and O365 services]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+>[!IMPORTANT]
+>Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
+>
+>**This does not apply to PCs or Windows 10 Mobile devices for conditional access to Exchange On-premises.**
+>
+>If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, you will need to submit a request for access.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
 
-Before you can configure conditional access verify the following:
+**Before** you can configure conditional access verify the following:
 
 -   Your Exchange version must be **Exchange 2010 or later**. Exchange server Client Access Server (CAS) array is supported.
 
@@ -31,7 +37,7 @@ Before you can configure conditional access verify the following:
 
     -   The connector can be installed on any machine as long as that machine is able to communicate with the Exchange server.
 
-    -   The connector indeed supports **Exchange CAS environment**. You can technically install the connector on the Exchange CAS server directly if you wish to, but it is not recommended as it will increase the load on the server.
+    -   The connector supports **Exchange CAS environment**. You can technically install the connector on the Exchange CAS server directly if you wish to, but it is not recommended as it will increase the load on the server.
     When configuring the connector, you must set it up to talk to one of the Exchange CAS servers.
 
 -   **Exchange ActiveSync** must be configured with certificate based authentication, or user credential entry.
@@ -63,9 +69,6 @@ If a conditional access policy is not met, the user is presented with one of the
 -   Native email app on Android 4 or later
 
 ## Support for PCs
->[!IMPORTANT]
->Conditional access for PCs is not currently available to all Intune customers. If you are already using conditional access for PCs, you do not need to take any action. You can continue to use it.
-If you have not created conditional access policies for PCs you will need to submit a request for access.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472)
 
 The **Mail** application on Windows 8 and later (when enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 

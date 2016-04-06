@@ -18,14 +18,14 @@ Deploy the compliance policy you [created](create-a-device-compliance-policy-in-
 
 2.  In the **Manage Deployment** dialog box, choose one or more groups to which you want to deploy the policy, then choose **Add > OK**.
 ![IntuneSA3dDeployCompliancePolicy3_Manage](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
-You can deploy a compliance policy to users and/or devices. Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. To learn more about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](./intunedocs/use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
+You can deploy a compliance policy to users and/or devices. Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. To learn more about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 Use the status summary and alerts on the **Overview** page of the **Policy** workspace to identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
 > [!IMPORTANT]If you have not deployed a compliance policy and then enable an Exchange conditional access policy, all targeted devices will be allowed access.
 
 ## How Intune policy conflicts are resolved
-When conflicts occur due to multiple Intune settings being applied to a device, the following rules apply:
+Policy conflicts  can occur due when multiple Intune policies are applied to a device. If the policy settings overlap, Intune resolves any conflicts using the following rules:
 
 -   If the conflicting settings are from an Intune configuration policy and a compliance policy, the settings in the compliance policy take precedence over the settings in the configuration policy, even if the settings in the configuration policy are more secure.
 
