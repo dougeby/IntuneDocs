@@ -1,14 +1,30 @@
 ---
-title: Migrating to Intune - Setup Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: Migrating to Intune - Setup Intune | Microsoft Intune
+description:
+keywords:
 author: robmazz
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 96b73b86-e496-4d95-aaf9-7d694725be63
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Migrating to Intune - Setup Intune
 

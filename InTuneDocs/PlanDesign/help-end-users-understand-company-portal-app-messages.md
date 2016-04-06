@@ -1,14 +1,30 @@
 ---
-title: Help end users understand Company Portal app messages
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
+# required metadata
+
+title: Help end users understand Company Portal app messages | Microsoft Intune
+description:
+keywords:
+author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
 ms.topic: article
-ms.assetid:
-author: Staciebarker
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Help end users understand Company Portal app messages
 
 The following information applies only on Android 6.0 and above devices. During device enrollment, end users see two messages, which appear during the enrollment process:
