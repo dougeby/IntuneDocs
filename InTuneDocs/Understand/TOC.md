@@ -16,6 +16,6 @@
 <!--- ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)--->
 
 # [Get Started](/intune/getstarted/what-to-know-before-you-start-microsoft-intune)
-# [Plan and Design](/intune/plandesign/migrating-to-intune)
+# [Plan and Design](/intune/plandesign/ways-to-do-enterprise-mobility)
 # [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)

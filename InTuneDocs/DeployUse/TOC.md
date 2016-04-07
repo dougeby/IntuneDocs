@@ -1,6 +1,6 @@
 # [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
 # [Get Started](/intune/getstarted/what-to-know-before-you-start-microsoft-intune)
-# [Plan and Design](/intune/plandesign/migrating-to-intune)
+# [Plan and Design](/intune/plandesign/ways-to-do-enterprise-mobility)
 
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
