@@ -1,5 +1,5 @@
 ---
-title: 30-day trial: Sign in or sign up for Microsoft Intune
+title: Sign up for a 30 day trial of Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,8 @@ ms.topic: get-started-article
 ms.assetid:
 author: Staciebarker
 ---
-# Step 1: Sign in or sign up for a 30-day trial of Microsoft Intune
+# Step 1: Sign up for a 30-day trial of Microsoft Intune
+
 Setting up a free Microsoft Intune 30-day trial to manage your mobile devices and computers is quick and easy. With just a few simple steps in the trial, you can add up to 100 users and devices, set up groups, configure compliance policies, and enroll and manage mobile devices and computers. In this topic, you'll learn the basics  to get an Intune trial up and running and get an overview of the service so you can evaluate Intune's features and capabilities.
 
 Before  you sign up or sign in to Intune,  you should consider the following:
@@ -38,6 +39,13 @@ Before  you sign up or sign in to Intune,  you should consider the following:
         > By default, the domain name is associated with your subscription and user accounts that you add to Intune. After you subscribe, you can add and use a custom domain name that you already own, or continue to use the free **onmicrosoft.com** domain.
 
 After you complete the sign-up form and accept the Microsoft Online Subscription Agreement, you're automatically signed in to the Office 365 admin center with the tenant administrator account. An email message that contains your account information is also sent to the email address that you provided during sign-up. This email confirms that your subscription is active.
+
+## Next steps
+Congratulations! You have just completed step 1 of the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
+
+>[!div class="step-by-step"]
+
+>[<< **Get started**](.\get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Add users** >>](.\get-started-with-a-30-day-trial-of-microsoft-intune-step2.md)  
 
 ### See also
 [Get started with a 30 day trial of Microsoft Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
