@@ -12,6 +12,41 @@ author: Lindavr
 # What's new in Microsoft Intune
 
 ## March 2016
+### What's new as of March 29, 2016
+With the exception of the update to the Windows 10 general configuration policy, all of the features releasing on March 29, 2016, are also supported for hybrid customers (Configuration Manager integrated with Intune). Hybrid support for the Windows 10 general configuration policy update is coming soon. Please note that some of these features may require the latest version of Configuration Manager.
+
+### App management
+- **MAM controls to prevent Outlook contacts sync (iOS).** A new setting is available for mobile application management without device enrollment. This setting allows you to prevent an application from syncing contacts to the native address book on iOS devices. When this setting is enabled, the app will no longer be able to save contacts to the native address book. When this setting is disabled, the app will be able to save contacts to the native address book. When you selectively wipe a device, all contacts that have already been saved to the native address book will be removed. This new setting is supported by the Outlook application on iOS devices. For more details about this and other settings, see [Create and deploy MAM policies](https://technet.microsoft.com/en-us/library/dn292747.aspx).
+
+### Access control
+- **Skype for Business Online supports conditional access.** You can set a conditional access policy for Skype for Business Online so that it can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to the Skype for Business mobile app on iOS and Android will be prompted to enroll with Intune as well as fix any non-compliance issues before sign-in can complete. For details, see [Manage access to Skype for Business Online](https://technet.microsoft.com/en-us/library/mt695297.aspx).
+
+### Device management
+- **Intune support for iOS 9.3.** On Monday March 21st, Apple announced the availability of iOS 9.3. We have been busy working to ensure that Microsoft Intune is compatible with the latest version of Apple's mobile operating system, and [we are pleased to announce that Intune supports managing iOS 9.3 devices](https://blogs.technet.microsoft.com/microsoftintune/2016/03/23/microsoft-intune-provides-support-for-ios-9-3/).
+
+  All existing Intune features currently available for managing iOS devices will continue to work seamlessly as users upgrade their devices to iOS 9.3. In addition, iOS 9.3 is also supported today for hybrid customers (Configuration Manager integrated with Intune).
+
+- **The Windows 10 general configuration policy now contains settings to manage Windows Defender on enrolled Windows 10 PC's.** For details, see [Windows 10 configuration policy settings in Microsoft Intune](https://technet.microsoft.com/en-us/library/mt404697.aspx.
+
+
+### Company portal
+
+- **Windows app packages available directly from the Company Portal website.** Users of Windows 8, Windows 8.1, and Windows RT PCs can now install Windows app packages (with the .appx extension) directly from the Company Portal website. Previously, you had to deploy, or users had to install the Company Portal app on their devices to install apps.
+
+- **Users can remotely lock their device from the Company Portal website.** A new Remote Lock option has been added to the Company Portal website to enable users to remotely lock their device from the Portal if their device is lost or stolen. See the [end-user instructions](https://technet.microsoft.com/library/mt590895.aspx/?wt.mc_id=ui#BKMK_iwp_remote_lock). The following table lists the platform support for Remote Lock for Intune Standalone and Intune with Configuration Manager.
+
+|Platform | Support details|
+|---------|----------------|
+|Android |Supported|
+|iOS |Supported|
+|Windows 10 Mobile |Supported only if the phone has a passcode set|
+|Windows 10 Desktop |Not supported|
+|Windows Phone 8.1 |Supported only if the phone has a passcode set|
+|Windows Phone 8.0 |Not supported|
+|PC (Windows 8.0 and earlier) |Not supported|
+|PC (Windows 8.1) |Not supported|
+
+### What's new as of March 10, 2016
 
 ### App management
 
@@ -76,8 +111,9 @@ The following changes have been made to the Company Portal in this release.
 Keep informed about upcoming developments for Intune with the [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
 
 
-## Archive
+## Previous Intune releases
 > [!div class="op_single_selector"]
+- [February 2016](previous-intune-releases.md)
 - [January 2016](previous-intune-releases.md)
 - [December 2016](previous-intune-releases.md)
 - [November 2015](previous-intune-releases.md)
