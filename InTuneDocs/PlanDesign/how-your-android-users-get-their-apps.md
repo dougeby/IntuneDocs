@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
 author: Staciebarker
+---
 
 # How your Android users get their apps
 Use this information to understand how and where your end users get the apps that you distribute through Microsoft Intune. 

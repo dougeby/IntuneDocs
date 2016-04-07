@@ -19,15 +19,15 @@ The Company Portal is an app that you install on your device to give you access 
 
 3.  Tap **Intune Company Portal**.
 
-    ![android-search-company-portal](/media/and-cpinstall-1-search-cp.png)
+    ![android-search-company-portal](./media/and-cpinstall-1-search-cp.png)
 
 4.  Tap **INSTALL**.
 
-    ![android-install-company-portal](/media/and-cpinstall-2-install.png)
+    ![android-install-company-portal](./media/and-cpinstall-2-install.png)
 
 5.  Tap **ACCEPT**.
 
-    ![android-accept-company-portal-terms](/media/and-cpinstall-3-cp-accept.png)
+    ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)
