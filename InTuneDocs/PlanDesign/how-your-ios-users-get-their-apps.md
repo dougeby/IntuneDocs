@@ -8,6 +8,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
 author: Staciebarker
+---
 
 # How your iOS users get their apps
 

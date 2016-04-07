@@ -18,7 +18,7 @@ The Company Portal is an app that you install on your device to give you access 
 
 2.  Download the **Microsoft Intune Company Portal** app.
 
-    ![](/media//ios-cpinstall-1-cpinstore.png)
+    ![](./media/ios-cpinstall-1-cpinstore.png)
 
 3.  Open the Company Portal app, enter your work or school email and password, and then tap **Sign in**.
 

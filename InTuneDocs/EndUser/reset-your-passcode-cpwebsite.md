@@ -20,15 +20,15 @@ To reset your passcode:
 
 2.  Tap **Reset Passcode**.
 
-    ![](./media/IW-Help-pics/iwp-1-tap-reset-passcode.png)
+    ![](./media/iwp-1-tap-reset-passcode.png)
 
 3.  Tap **Sign out**, and then sign back in with your work or school credentials. You have to sign back in within five minutes.
 
-    ![](./media/IW-Help-pics/iwp-2-sign-out.png)
+    ![](./media/iwp-2-sign-out.png)
 
 4.  Tap **Reset Passcode**.
 
-    ![](./media/IW-Help-pics/iwp-3-tap-reset-passcode-after-signin.png)
+    ![](./media/iwp-3-tap-reset-passcode-after-signin.png)
 
     Check the table to see how Reset Passcode works on your device.
 
