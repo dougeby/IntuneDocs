@@ -1,5 +1,5 @@
 ---
-title: 30-day trial: Add users to your 30 day trial of Microsoft Intune
+title: Add users to your 30 day trial of Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -59,6 +59,13 @@ To add users in bulk to Intune,  use the **Bulk add users** wizard to upload a c
 8.  On the **Results** page, you can view the account names and temporary password for each user account.
 
 Each user account that you added by importing it now appears in the **Users** node of the Office 365 admin center. When new users sign in for the first time, they must specify a new password for their user account.
+
+## Next steps
+Congratulations! You have just completed step 2 of the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
+
+>[!div class="step-by-step"]
+
+>[<< **Sign up for a trial**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step1.md)     [**Create groups** >>](.\get-started-with-a-30-day-trial-of-microsoft-intune-step3.md)  
 
 ### See also
 [Get started with a 30 day trial of Microsoft Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)

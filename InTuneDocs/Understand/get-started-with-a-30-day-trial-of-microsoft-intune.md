@@ -43,6 +43,11 @@ Before you get started with Intune, you'll need the following:
 - [Step 7: Other options and extras](get-started-with-a-30-day-trial-of-microsoft-intune-step7.md). Choose how to use alerts, reports, and other Intune capabilities to meet your business needs.
 - [Step 8: Next steps](get-started-with-a-30-day-trial-of-microsoft-intune-step8.md). Prepare to move to an Intune paid subscription and take advantage of the Intune "FastTrack Center Benefit.
 
+## Next steps
+It's time to get started with your 30-day trial subscription!
+
+>[!div class="step-by-step"]
+[**Sign up for Intune** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 
 ### See also
 [Get started with a paid subscription to Microsoft Intune](/Intune/DeployUse/get-started-with-a-paid-subscription-to-microsoft-intune)
