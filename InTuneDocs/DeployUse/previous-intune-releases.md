@@ -12,6 +12,21 @@ robots: noindex,nofollow
 ---
 # Previous Intune releases
 
+## February 2016
+### Changes and updates to Microsoft Company Portal
+
+The following changes have been made to the Company Portal in this release.
+
+#### Android Company Portal app
+- New screens have been added to guide users through the enrollment process and provide more information about why users should enroll and what IT administrators can and can’t see on their enrolled devices. See the [enrollment instructions](https://technet.microsoft.com/library/mt502762(technet.10).aspx#BKMK_andr_enroll_devc) for details.
+- Enrollment error messages are now displayed in the Company Portal app. Previously, these messages appeared in the Company Portal website. Making this change means that all error messages now appear in just one place instead of two different places.
+
+#### iOS Company Portal app
+ - New screens have been added to guide users through the enrollment process and provide more information about why users should enroll and what IT administrators can and can’t see on their enrolled devices. See the [enrollment instructions](https://technet.microsoft.com/library/mt598622(technet.10).aspx#BKMK_enroll_ios_device) for details.
+
+ - Enrollment error messages are now displayed in the Company Portal app. Previously, these messages appeared in the Company Portal website. Making this change means that all error messages now appear in just one place instead of two different places.
+
+
 ## January 2016
 
 ### Take advantage of Windows 10 features
