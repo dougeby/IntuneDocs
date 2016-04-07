@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 author: Nbigman
 ---
-## Microsoft Intune Service Description
+# Microsoft Intune service description
 
 [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] is a cloud-based service that helps you manage Windows PCs, and iOS, Mac OS X, Android, and Windows mobile devices. Intune also helps protect corporate applications and data. You can use Intune alone or you can integrate it with System Center 2012 R2 Configuration Manager to extend your management capabilities.
 
