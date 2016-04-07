@@ -31,15 +31,12 @@ Mobile devices that aren't enrolled but that connect to Exchange ActiveSync (EAS
 
 
 ## Manage Windows PCs with Intune  
-You can also use Microsoft Intune to manage Windows PCs using the Intune Windows PC client software.
+You can also use Microsoft Intune to manage Windows PCs using the Intune Windows PC client software. PCs managed with the Intune client can:
 
-|Windows PC management (Desktop) capabilities | Mobile Device Management (Mobile) capabilities|
-|---------|-----------|
-|**Manage software updates**: You can keep PCs up-to-date, and manage when updates are applied. [https://technet.microsoft.com/library/dn646968.aspx](https://technet.microsoft.com/library/dn646968.aspx) | **Certificate, email, VPN and WiFi profiles**: You can deploy certificate profiles to mobile devices, and also deploy e-mail, VPN and WiFi profiles. See Enable access to company resources with Microsoft Intune - deleted.|
-|**Windows Firewall Policy**: This helps to ensure that no PC used by your company has a inactive or improperly-configured Windows Firewall. https://technet.microsoft.com/en-us/library/mt346040.aspx |**Conditional access**: Use Intune conditional access policies to control access to on-premises Microsoft Exchange or Exchange Online email from devices. See Manage access to email and SharePoint with Microsoft Intune.|
-|**Anti-malware protection**: Intune provides additional control over the built-in Defender client which helps protect your PCs from malware. https://technet.microsoft.com/en-us/library/dn646970.aspx |**Device settings**: Configure mobile device security and functional settings for enrolled Windows 10 devices. Examples include Require a password, limit the number of failed attempts, limit the minutes before the screen locks, set password expiration, and prevent previously-used passwords. For details, see Windows 10 configuration policy settings in Microsoft Intune.|
-|**Hardware and Software Inventory**: Intune provides detailed information about the hardware and software of managed computers. |**Selectively wipe or retire devices**: You can wipe corporate data off of missing or stolen devices. https://technet.microsoft.com/en-us/library/jj676679.aspx |
-| |**Custom Settings**: Deploy OMA-URI settings that can be used to control device features such as whether the app store can be used, and what modern apps can be launched. This is useful when the setting you need is not available in a configuration policy. |
-|**Deploy "Modern Apps", as well as desktop applications** (exe and msi file format installations)  |**Deploy "Modern Apps" only**, but not desktop applications in .exe and .msi format.|
+ - Report software and hardware inventories
+ - Install desktop applications (for example .exe and .msi files)
+ - Firewall settings
+
+Computers managed with the Intune client software cannot be selectively wiped or retired, and cannot take advantage of many Intune management features such as conditional access, VPN and Wi-Fi settings, or deployment of certificates and email configurations.
 
 [Manage Windows PCs with Intune](manage-windows-pcs-with-microsoft-intune.md)
