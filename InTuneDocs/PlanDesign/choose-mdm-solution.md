@@ -1,27 +1,15 @@
 ---
-title: Ways to do enterprise mobility
+title: Choose an MDM solution
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 2d91b8b5-bf44-4562-ab4a-6611584f9674
-author: robstackmsft
+ms.assetid:
+author: jeffgilb
 ---
-# Ways to do enterprise mobility
-
-Microsoft provides several options for managing your mobile devices. Depending on the type of devices you need to manage, the granularity of device and app management your business requires, and other factors such as cost, you may choose one of the mobile device management (MDM) solutions provided by Microsoft.
-
-<!-- deprecated
-## MDM for Office 365
-
-If your organization has an Office 365 subscription, you can use the inbuilt MDM capabilities to enroll devices that connect to your organization, create and manage device security policies, remotely wipe devices, and view detailed device reports. These capabilities are included in your Office 365 subscription at no extra cost.
-
-However, MDM in Office 365 is limited to managing mobile devices such as iPhones, iPads, Android devices, and Windows phones. If you also need to manage PCs, you will need to purchase an Intune standalone subscription or use Intune with System Center Configuration Manager. Office 365 provides limited management capabilities as compared to Intune. Learn more about the differences between [MDM in Office 365 and Intune](choose-between-intune-and-mdm-for-office-365.md)
-
->[!TIP] You need to activate Mobile Management in your Office 365 subscription before you can start managing devices. To know more about managing mobile devices in Office 365, please [visit our Office support site](https://technet.microsoft.com/library/ms.o365.cc.devicepolicysupporteddevice.aspx).
--->
+# Choose an MDM solution that is right for you
 
 ## Intune standalone
 

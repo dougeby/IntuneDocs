@@ -3,6 +3,9 @@
 
 # [Plan and Design](migrating-to-intune.md)
 ## [Ways to do enterprise mobility](ways-to-do-enterprise-mobility.md)
+### [Choose an MDM solution](choose-mdm-solution.md)
+### [Choose how to manage devices](choose-manage-devices.md)
+### [Choose how to manage PCs](choose-manage-PCs.md)
 ## [Migrate to Intune](migrating-to-intune.md)
 ### [Set up Intune](migrating-to-intune-step-one.md)
 ### [Configure Intune](migrating-to-intune-step-two.md)
