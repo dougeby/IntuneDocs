@@ -17,7 +17,7 @@ Different managed apps can also work together on your device to allow you to do 
 
 When you access company data in a managed app, you see a message like the one below, which lets you know that the app you are opening is managed.
 
-![open-managed-apps-message](/media/managed-apps-message.png)
+![open-managed-apps-message](./media/managed-apps-message.png)
 
 ## How do I get managed apps?
 You get managed apps in a couple of different ways:

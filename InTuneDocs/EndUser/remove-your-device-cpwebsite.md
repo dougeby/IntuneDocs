@@ -19,7 +19,7 @@ To remove your device:
 
 2.  Tap **Remove**.
 
-    ![](./media/IW-Help-pics/iwp-1-tap-reset-passcode.png)
+    ![](./media/iwp-1-tap-reset-passcode.png)
 
 Your device has now been removed.
 

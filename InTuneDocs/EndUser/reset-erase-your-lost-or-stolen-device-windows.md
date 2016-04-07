@@ -12,7 +12,7 @@ author: Staciebarker
 
 # Reset (erase) your lost or stolen device
 
-If your enrolled device is lost or stolen, you can reset it to factory defaults from the Company Portal app or website. For instructions using the Company Portal app, use the following steps. To use the Company Portal website, see ___________________________.
+If your enrolled device is lost or stolen, you can reset it to factory defaults from the Company Portal app or website. For instructions using the Company Portal app, use the following steps. You can also [reset your device from the Company Portal website](reset-your-device-cpwebsite.md).
 
 
 > [!WARNING]

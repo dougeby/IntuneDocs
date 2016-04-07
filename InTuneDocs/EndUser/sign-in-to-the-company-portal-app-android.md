@@ -15,15 +15,15 @@ After you install the Company Portal app, you'll need to sign in to the app to e
 
 1.  Tap **Company Portal** in your list of apps.
 
-    ![android-company-portal-icon](/media/and-enroll-1-cp-find-CP-app.png)
+    ![android-company-portal-icon](./media/and-enroll-1-cp-find-CP-app.png)
 
 2.  On the **Welcome** screen, tap **Sign in**.
 
-    ![android-company-portal-sign-in](/media/and-enroll-2-cp-sign-in.png)
+    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
 3.  Enter your work or school email and your password, and then Tap **Sign in**.
 
-    ![android-company-portal-terms](/media/and-enroll-3-accept-terms.png)
+    ![android-company-portal-terms](./media/and-enroll-3-accept-terms.png)
 
     If you are signing into the Company Portal app for the first time, and your company or school is using Intune, you will be prompted to enroll your device in Intune. To enroll, follow the steps in [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
 
@@ -33,7 +33,7 @@ After you install the Company Portal app, you'll need to sign in to the app to e
 
     If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
 
-    ![](/media/andr-allow-phone-access.png)
+    ![](./media/andr-allow-phone-access.png)
 
 
 ### See also

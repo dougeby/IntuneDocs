@@ -17,7 +17,7 @@ To rename your device:
 
 2.  Tap **Rename**.
 
-    ![](./media/IW-Help-pics/iwp-1-tap-reset-passcode.png)
+    ![](./media/iwp-1-tap-reset-passcode.png)
 
 3.  In the box where your current device name appears, type the new name for your device, and then tap the **Rename** button. Your device now appears with the new name.
 
