@@ -19,5 +19,5 @@ To reconnect to your work, you’ll need to set the password timeout on your dev
 
 2.  Specify the password timeout value.
 
-3.  Ensure that your device is enrolled with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
+3.  Ensure that your device is enrolled with Intune by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
 

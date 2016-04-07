@@ -16,4 +16,4 @@ robots: noindex
 On devices running iOS 7.1 and above, tap the **Settings** icon, tap **General** > **About**, and then scroll down until you find **Serial Number**.
 
 ### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)---
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
