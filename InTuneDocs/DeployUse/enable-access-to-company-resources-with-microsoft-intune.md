@@ -19,6 +19,8 @@ author: Nbigman
 |[Wi-Fi profiles](wi-fi-profiles-in-microsoft-intune.md)|Deploy wireless network settings to your users. By deploying these settings, you minimize the end-user effort required to connect to the corporate network.|Yes (you can import a Windows Wi-Fi profile)|Yes (you can configure OMA-URI) <sup>1</sup>|Yes|Yes|Yes|
 |[VPN profiles](vpn-profiles-in-microsoft.intune.md)|Deploy Virtual Private Network (VPN) settings to your users. By deploying these settings, you minimize the end-user effort required to connect to resources on the corporate network.|Yes|Yes|Yes|Yes|Yes|
 |[Certificate profiles](certificates-in-microsoft-intune-for-securing-access-to-resources.md)|Help secure access to company resources including wireless networks and VPN connections.|Yes|Yes|Yes|Yes|Yes|
+|[Email profiles](enable-access-to-company-resources-with-microsoft-intune.md)|Create, deploy and monitor native email client settings on devices in your organization.
+.|No|Yes|Yes|No|Yes|
 >NOTE
 > See [this blog post](http://blogs.technet.com/b/microsoftintune/archive/2015/02/23/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1.aspx) for information about how to configure a Windows Phone 8.1 Wi-Fi profile using OMA-URI.
 ## See Also

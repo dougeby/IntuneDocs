@@ -1,8 +1,11 @@
 # [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
 # [Get Started](/intune/getstarted/what-to-know-before-you-start-microsoft-intune)
 
-# [Plan and Design](migrating-to-intune.md)
+# [Plan and Design](ways-to-do-enterprise-mobility.md)
 ## [Ways to do enterprise mobility](ways-to-do-enterprise-mobility.md)
+### [Choose an MDM solution](choose-mdm-solution.md)
+### [Choose how to manage devices](choose-manage-devices.md)
+### [Choose how to manage PCs](choose-manage-PCs.md)
 ## [Migrate to Intune](migrating-to-intune.md)
 ### [Set up Intune](migrating-to-intune-step-one.md)
 ### [Configure Intune](migrating-to-intune-step-two.md)

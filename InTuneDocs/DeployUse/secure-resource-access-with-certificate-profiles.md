@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 author: Nbigman
 ---
-# Enable access to company resources using certificate profiles with Microsoft Intune
+# Secure resource access with certificate profiles in Microsoft Intune
 When you enable access to corporate resources through VPN, Wi-Fi, or email profiles, you have the option of securing that access with a certificate installed on each user device. Here's how it works:
 
  
