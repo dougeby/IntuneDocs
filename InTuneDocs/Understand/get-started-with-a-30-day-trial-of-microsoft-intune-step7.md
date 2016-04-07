@@ -1,5 +1,5 @@
 ---
-title: 30-day trial: Other options and extras
+title: Other options and extras for Intune trial subscriptions
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: get-started-article
 ms.assetid:
 author: Staciebarker
 ---
-# Step 7: Review other Intune options and extras you might want
+# Step 7: Other options and extras for Intune trial subscriptions
 
 ## Alerts, notifications and reports
 In the Intune administration console, **alerts** are used to quickly assess the overall health of managed devices in your organization. You can configure and customize alerts so that they report and display only the information you need for your organization. You can set whether an alert is enabled or disabled, configure the severity, use the display threshold to determine how frequently an alert event must be triggered before an alert is displayed, and also configure settings that are specific to certain types of alerts.
@@ -37,7 +37,12 @@ To learn more about capabilities that were recently introduced to Intune, see [W
 
 Support options are described in [How to get support for Microsoft Intune](/Intune/Troubleshoot/how-to-get-support-for-microsoft-intune), and you can join discussions about Intune in [Microsoft Intune forums](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 
+## Next steps
+Congratulations! You have just completed the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
 
+>[!div class="step-by-step"]
+
+>[<< **Enroll devices**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step6.md)     [**Next steps** >>](.\get-started-with-a-30-day-trial-of-microsoft-intune-step8.md)  
 
 ### See also
 [Get started with a 30 day trial of Microsoft Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)

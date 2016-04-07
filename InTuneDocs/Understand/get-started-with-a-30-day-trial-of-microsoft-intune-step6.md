@@ -1,5 +1,5 @@
 ---
-title: 30-day trial: Enroll mobile devices
+title: Enroll trial mobile devices
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: get-started-article
 ms.assetid:
 author: Staciebarker
 ---
-# Step 6: Enroll mobile devices and install an app
+# Step 6: Enroll trial mobile devices and install an app
 To set up mobile device management with Intune, you must  first set the mobile device management authority,  enable management for device platforms, and enroll your devices with the Company Portal app. You can then deploy the Microsoft Skype application that you published.
 
 ## Prepare the service for device management
@@ -45,6 +45,12 @@ Open the Company Portal on the mobile device, choose **Apps**, and then install 
 
 To learn more about mobile device management using Intune, see [Get ready to enroll devices in Microsoft Intune](/Intune/GetStarted/get-ready-to-enroll-devices-in-microsoft-intune).
 
+## Next steps
+Congratulations! You have just completed step 6 of the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
+
+>[!div class="step-by-step"]
+
+>[<< **Enroll PCs**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step5.md)     [**Options and extras** >>](.\get-started-with-a-30-day-trial-of-microsoft-intune-step7.md)  
 
 ### See also
 [Get started with a 30 day trial of Microsoft Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)

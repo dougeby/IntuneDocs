@@ -1,5 +1,5 @@
 ---
-title: 30-day trial: Enroll Windows PCs
+title: Enroll trial Windows PCs in Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: get-started-article
 ms.assetid:
 author: Staciebarker
 ---
-# Step 5: Enroll PCs in Intune
+# Step 5: Enroll trial PCs in Intune
 You can install the Intune client software on PCs in the following ways:
 
 -   Users can use an installer provided by the administrator to manually enroll
@@ -49,7 +49,12 @@ To learn more about PC management using Intune, see [Install the Windows PC clie
 
 To learn more about software management using Intune, see [Deploy and configure apps with Microsoft Intune](/Intune/DeployUse/deploy-and-configure-apps-with-microsoft-intune).
 
+## Next steps
+Congratulations! You have just completed step 5 of the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
 
+>[!div class="step-by-step"]
+
+>[<< **Create policies**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step4.md)     [**Enroll devices** >>](.\get-started-with-a-30-day-trial-of-microsoft-intune-step6.md)  
 
 
 ### See also
