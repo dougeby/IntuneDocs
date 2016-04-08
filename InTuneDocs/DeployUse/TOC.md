@@ -62,22 +62,25 @@
 ## [Protect apps and data](protect-apps-and-data-with-microsoft-intune.md)
 ### [Device compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [Create a device compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
+#### [For Android](android-compliance-policy-settings-in-microsoft-intune.md)
+#### [For iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+#### [For Windows & Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Deploy a device compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
-#### [Device compliance policies for Android]
-#### [Device compliance policies for iOS]
-#### [Device compliance policies for Windows]
+
 ### [Restrict access to email & O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 #### [Exchange Online & new Exchange Online dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange on-premises & legacy Exchange Online dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune)
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
-### [Introduction to mobile app management polices](introduction-to-mobile-app-management-policies-with-microsoft-intune)
-#### [Azure portal for MAM polices](azure-portal-for-microsoft-intune-mam-policies)
-#### [Get ready to configure MAM policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-#### [Create and deploy MAM policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
-##### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune)
-#### [MAM with iOS Open in](microsoft-intune-mobile-app-management-policies-and-ios-open-in)
+### [Introduction to mobile app management policies](introduction-to-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Azure portal for MAM polices](azure-portal-for-microsoft-intune-mam-policies.md)
+#### [Get ready to configure MAM policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Create and deploy MAM policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [For Android](android-mam-policy-settings.md)
+#### [For iOS](ios-mam-policy-settings.md)
+#### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune)
+#### [MAM with iOS Open In](microsoft-intune-mobile-app-management-policies-and-ios-open-in)
 #### [End user experience](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies)
 
 
@@ -90,7 +93,7 @@
 
 ## [Retire apps and data](retire-apps-using-microsoft-intune.md)
 ### [Retire apps ](retire-apps-using-microsoft-intune.md)
-### [Help protect your data with remote wipe, remote lock, or passcode reset](help-protect-your-data-with-remote-wipe,-remote-lock,-or-passcode-reset-using-microsoft-intune.md)
+### [Help protect your data with remote wipe, remote lock, or passcode reset](help-protect-your-data-with-remote-wipe-remote-lock-or-passcode-reset-using-microsoft-intune.md)
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 
