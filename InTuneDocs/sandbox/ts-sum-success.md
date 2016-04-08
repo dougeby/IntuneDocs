@@ -13,3 +13,6 @@ author: jeffgilb
 ***Congratulations!***
 
 Your Software Update Management process issue has been resolved.
+
+### See also
+[Software Update Management Troubleshooting in Configuration Manager](.\ts-sum.md)

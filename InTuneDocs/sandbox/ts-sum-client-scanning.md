@@ -16,6 +16,7 @@ The client scan process is outlined in the following steps. Confirm each step in
 ![alt text](./giphy.gif "process animation")
 
 ## Client scan process steps
+Select one of the following steps to learn more.
 >[!div class="step-by-step"]
 
 >[1. The client sends a WSUS Location Request to the management point](.\ts-sum-client-loc-request.md)

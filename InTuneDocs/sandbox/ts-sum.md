@@ -11,6 +11,7 @@ author: jeffgilb
 # Software Update Management Troubleshooting in Configuration Manager
 
 ## About this troubleshooting guide
+This is a proof of concept for publishing troubleshooting guides using GitHub for docs.microsoft.com. It is based on this content: [Software Update Management Troubleshooting in Configuration Manager](https://support.microsoft.com/en-us/help/10680/software-update-management-troubleshooting-in-configuration-manager).
 
 ### What does this guide do
 This guide helps you troubleshoot the software update management process in Microsoft System Center Configuration Manager, including client software update scanning, synchronization issues and detection problems with specific updates.
