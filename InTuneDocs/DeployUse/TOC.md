@@ -46,7 +46,7 @@
 #### [Windows Firewall for PCs](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
 #### [Windows PC Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
 
-## [Deploy apps](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
+## [Deploy apps](create-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Create apps for mobile devices](create-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Create apps for Windows PCs](create-apps-for-windows-pcs-in-microsoft-intune.md)
 ### [Deploy apps](deploy-apps-in-microsoft-intune.md)
