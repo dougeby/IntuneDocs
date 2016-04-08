@@ -15,13 +15,13 @@ To prepare to connect Microsoft Intune to Exchange, make sure you have completed
 
 |Requirement|More information|
 |---------------|--------------------|
-|Set the Mobile Device Management Authority to Intune|[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)|
-|Verify you have hardware requirements for the on-premises connector (if connecting to an on-premises Exchange Server)|[Requirements for the Service to Service Connector](network-infrastructure-requirements-for-microsoft-intune.md#BKMK_ServiceConnectorReqs)|
+|Exchange configured and running, on-premises or hosted|[Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx)|
+|Set the Mobile Device Management Authority to Intune|[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#BKMK_Set_MDM_Authority)|
 |Configure a user account with permission to run the designated list of Windows PowerShell cmdlets|PowerShell Cmdlets for Service to Service Connector (See below)|
 
 ## Windows PowerShell Exchange cmdlet requirements
 
-### PowerShell cmdlets for on-premises Exchange Connector
+
 You must create an Active Directory user account that is used by the Intune Exchange Connector. The account must have permission to run the following required Windows PowerShell Exchange cmdlets:
 
 -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
