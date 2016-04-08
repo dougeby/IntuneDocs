@@ -10,11 +10,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 author: Lindavr
 ---
 # Introduction to Intune
-Enterprise mobility is all about enabling your employees to be productive on all of their devices while keeping your organizations information protected.  
+Enterprise mobility is all about enabling your employees to be productive on all of their devices while keeping your organization's information protected.  
 
 Microsoft offers a complete integrated suite for enterprise mobility inclusive of productivity, identity, access control, management and data protection. This integrated suite gives you the best possible way to deploy and operate a mobility solution in your organization.  
 
-ART GOES HERE
+![Image of enterprise mobility concept](./media/em-vision.png)
 
 Microsoft provides its enterprise mobility suite from the cloud. This means you get the benefits the cloud brings including being continuously kept up to date and available, flexible deployment options, and lower costs of ownership.  All of the features and capabilities you need to implement a mobility solution are included in Office 365 and the Enterprise Mobility Suite (EMS). By using Office 365 with EMS, you get an integrated end-to-end system for providing enterprise mobility to your employees, partners, contractors and even your customers.
 
