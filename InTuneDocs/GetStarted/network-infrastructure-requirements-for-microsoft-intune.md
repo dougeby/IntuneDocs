@@ -10,23 +10,23 @@ ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
 author: Staciebarker
 ---
 # Network infrastructure requirements for Microsoft Intune
-Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+Before code you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
-The following [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] requirements enable your network infrastructure to pass communications between the devices you manage and use to manage your subscription, and the websites on the Internet that the cloud-based service uses.
+The following Intune requirements enable your network infrastructure to pass communications between the devices you manage and use to manage your subscription, and the websites on the Internet that the cloud-based service uses.
 
 There is no requirement to use on-premises infrastructure (like a server where you must install software), but there are options to use on-premises infrastructure including Exchange and Active Directory synchronization tools.
 
 ## <a name="BKMK_NetworkReqs"></a>Network infrastructure
-To manage computers that are behind firewalls and proxy servers, you must set up firewalls and proxy servers to allow communications for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+To manage computers that are behind firewalls and proxy servers, you must set up firewalls and proxy servers to allow communications for Intune.
 
 ### <a name="BKMK_FirewallReqs"></a>Requirements for firewalls, ports, and domains
 Managed devices require configurations that let **All Users** access various services through firewalls.
 
-The following table lists the ports and services that the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] client accesses.
+The following table lists the ports and services that the Intune client accesses.
 
 
 |**Domain**|**Ports**|**IP address**|
-|
+|------|----|
 |manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>m.manage.microsoft.com<br>p.manage.microsoft.com<br>portal.manage.microsoft.com<br>r.manage.microsoft.com|80 and 443|134.170.168.254<br>134.170.51.126
 |account.manage.microsoft.com|80 and 443|157.56.13.59
 |fef.msua01.manage.microsoft.com|80 and 443|138.91.243.97
@@ -135,42 +135,25 @@ The following table lists the ports and services that the [!INCLUDE[wit_nextref]
 |ajax.aspnetcdn.com|80 and 443||
 |*.googleapis.com<br>This domain is required for JQuery support when you use the company portal website.|80 and 443||
 |wustat.microsoft.com|80 and 443||
-|Microsoft Update Services|\*.update.microsoft.com<br>download.microsoft.com<br>update.microsoft.com<br>\*.download.windowsupdate.com<br>download.windowsupdate.com<br>\*.windowsupdate.com<br>windowsupdate.microsoft.com<br>ntservicepack.microsoft.com|80 and 443||
-|DNS lookup requests|manage.microsoft.com.nsatc.net|80||
-|Samsung KNOX device communication through the firewall|To enable Samsung KNOX devices to contact KNOX servers through the firewall, follow the instructions on the Samsung KNOX FAQ.|||
-|Documentation, Help, and support:</br></br>*.livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80||
+|Microsoft Update Services|\*.update.microsoft.com<br>download.microsoft.com<br>update.microsoft.com<br>\*.download.windowsupdate.com<br>download.windowsupdate.com<br>\*.windowsupdate.com<br>windowsupdate.microsoft.com<br>ntservicepack.microsoft.com|80 and 443|
+|DNS lookup requests|manage.microsoft.com.nsatc.net|80|
+|Samsung KNOX device communication through the firewall|To enable Samsung KNOX devices to contact KNOX servers through the firewall, follow the instructions on the Samsung KNOX FAQ.||
+|Documentation, Help, and support:</br></br>*.livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
 
 
 
 ### <a name="BKMK_ProxyReqs"></a>Requirements for proxy servers
 To manage computers that are behind a proxy server, consider the following:
 
--   The proxy server must support both **HTTP** and **HTTPS** because [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] clients use both protocols.
+-   The proxy server must support both **HTTP** and **HTTPS** because Intune clients use both protocols.
 
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] supports unauthenticated proxy servers.
+-   Intune supports unauthenticated proxy servers.
 
 You can modify proxy server settings on individual client computers, or you can use Group Policy settings to change settings for all client computers that are located behind a specified proxy server.
 
-You can also use a proxy server that caches content to [reduce network bandwidth](network-bandwidth-use.md) used by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] clients.
+You can also use a proxy server that caches content to [reduce network bandwidth](network-bandwidth-use.md) used by Intune clients.
 
-## <a name="BKMK_OnPremisesReqs"></a>On-premises infrastructure
-The following table identifies on-premises infrastructure you can use with [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)].
 
-|Infrastructure|More information|
-|------------------|--------------------|
-|On-Premises Connector|If your instance of Exchange Server is on-premises, you must download, install, and  configure [Microsoft Intune on-premises Connector for on-premises or hosted Exchange](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md) on a computer in your infrastructure. This connector can also connect to Exchange in the cloud.<br /><br />If your instance of Exchange Server is hosted in a cloud-based service, you can install and configure the On-Premises Connector, or you can configure [Intune service to service Connector for hosted Exchange](Intune-service-to-service-Exchange-connector.md), which does not require an on-premises server to host the Connector.<br /><br />Before you can use either Connector to connect [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to your Exchange Server, you must [set up Active Directory synchronization](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md) so that your local users and security groups are synchronized with your instance of Azure AD.|
-|Proxy server|If you manage clients that access the Internet through a proxy server, see [Requirements for proxy servers](BKMK_ProxyReqs).<br /><br />You can also use a proxy server that caches content to reduce network bandwidth. For more information, see [Reduce network bandwidth use](network-bandwidth-use.md).|
-
-### <a name="BKMK_ExchanceConnectorReqs"></a>Requirements for the On-Premises Connector
-The following table lists the requirements for the computer where you install the On-Premises Connector.
-
-|Requirement|More information|
-|---------------|--------------------|
-|Operating systems|[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] supports the On-Premises Connector on a computer that runs any edition of [!INCLUDE[longhornshort](../includes/longhornshort_md.md)] SP2 64 bit, [!INCLUDE[nextref_server_7](../includes/nextref_server_7_md.md)], [!INCLUDE[win8_server_2](../includes/win8_server_2_md.md)], or  [!INCLUDE[winblue_server_2](../includes/winblue_server_2_md.md)].<br /><br />The Connector is not supported on any Server Core installation.|
-|Microsoft Exchange version|The On-Premises Connector requires Microsoft Exchange 2010 SP1 or later.|
-|Hardware|The computer where you install the connector requires a 1.6 GHz CPU with 2 GB ram and 10 GB of free disk space  minimum hardware.|
-|Additional software|A full installation of Microsoft .NET Framework 4 and [!INCLUDE[wps_2](../includes/wps_2_md.md)] 2.0 must be installed on the computer that hosts the connector.|
-|Network|The computer where you install the connector must be in a domain that has a trust relationship to the domain that hosts your Exchange Server.<br /><br />The computer requires configurations to enable it to access the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] service through firewalls and proxy servers over Ports 80 and 443. Domains used by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] include manage.microsoft.com, &#42;manage.microsoft.com, and &#42;.manage.microsoft.com.|
 
 ### <a name="BKMK_ServiceConnectorReqs"></a>Requirements for the Service to Service Connector
 The Service to Service Connector supports only cloud-based Exchange and has no requirements for on-premises infrastructure.
@@ -179,9 +162,7 @@ To use this Connector, the following must be true:
 
 -   You have an Office 365 subscription that has an Exchange Server 2013 tenant. Ao long as the tenant is Exchange Server 2013, the Connector supports Exchange Server 2010 in that same environment.
 
--   The user account that you use to install the On-Premises Connector must be a tenant administrator for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and be an administrator in the Exchange tenant with a license to use Exchange Server 2013.
+-   The user account that you use to install the On-Premises Connector must be a tenant administrator for Intune and be an administrator in the Exchange tenant with a license to use Exchange Server 2013.
 
 ### See also
 [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
-
-
