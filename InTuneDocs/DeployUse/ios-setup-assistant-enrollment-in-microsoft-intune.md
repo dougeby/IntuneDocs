@@ -9,20 +9,13 @@ ms.topic: article
 ms.assetid:
 author: NathBarn
 ---
-# Enroll iOS devices with Apple Configurator using Setup Assistant 
-Organizations can use Intune to manage large numbers of mobile devices with a single user account called a [device enrollment manager account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). After creating a device enrollment manager account, that account can be used to enroll more than the standard five devices allowed by default to normal users. After creating a device enrollment manager account, you will be ready to enroll company owned devices on behalf of your end users.
-elect from the following corporate device enrollment options to learn more:
-
-> [!div class="op_single_selector"]
-- [Apple device enrollment program (DEP) for iOS](iOS-device-enrollment-program.md)
-- [Apple Configurator Setup Assistant for iOS](iOS-setup-assistant-enrollment.md)
-- [Apple Configurator direct Enrollment for iOS](iOS-direct-enrollment.md)
-- [Specify COD devices using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+# Enroll iOS devices with Apple Configurator using Setup Assistant
+Intune supports the enrollment of corporate-owned iOS devices using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process factory-resets the device and prepares it to run the Setup Assistant by the device’s new user with the company's policies preinstalled.
 
 
 
 ## Setup Assistant enrollment for iOS devices with Microsoft Intune
-Using Apple Configurator you can factory reset iOS devices and prepares them for setup by the device’s new user.  This method requires you to USB-connect the iOS device to a Mac computer to setup corporate enrollment and assumes you are using Apple Configurator 2.0.
+Using Apple Configurator you can factory reset iOS devices and prepares them for setup by the device’s new user.  This method requires you to USB-connect the iOS device to a Mac computer to setup corporate enrollment and assumes you are using Apple Configurator 2.0. Most scenarios require that the policy applied to the iOS device include *user affinity* to enable the Intune Company Portal app.
 
 **Prerequisites**
 * Physical access to iOS devices - Devices must be unconfigured (factory reset) without password protection

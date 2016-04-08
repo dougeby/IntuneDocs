@@ -60,11 +60,15 @@
 
 
 ## [Protect apps and data](protect-apps-and-data-with-microsoft-intune.md)
-
+### [Device compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune.md)
+#### [Create a device compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
+#### [Deploy a device compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
+#### [Device compliance policies for Android]
+#### [Device compliance policies for iOS]
+#### [Device compliance policies for Windows]
 ### [Restrict access to email & O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-#### [Device compliance polices](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-#### [Exchange Online & new Exchange Online dedicated Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
-#### [Exchange OnPremises & legacy Exchange Online dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune)
+#### [Exchange Online & new Exchange Online dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
+#### [Exchange on-premises & legacy Exchange Online dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune)
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 

@@ -10,14 +10,7 @@ ms.assetid:
 author: NathBarn
 ---
 # Enroll corporate-owned devices
-Organizations can use Intune to manage large numbers of mobile devices with a single user account called a [device enrollment manager account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). After creating a device enrollment manager account, that account can be used to enroll more than the standard five devices allowed by default to normal users. After creating a device enrollment manager account, you will be ready to enroll company owned devices on behalf of your end users.
-elect from the following corporate device enrollment options to learn more:
-
-> [!div class="op_single_selector"]
-- [Apple device enrollment program (DEP) for iOS](iOS-device-enrollment-program.md)
-- [Apple Configurator Setup Assistant for iOS](iOS-setup-assistant-enrollment.md)
-- [Apple Configurator direct Enrollment for iOS](iOS-direct-enrollment.md)
-- [Specify COD devices using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+Microsoft Intune can deploys an enrollment profile that enrolls iOS devices purchased through the Device Enrollment Program (DEP) “over the air” and can include setup assistant options for the device. Devices enrolled through DEP cannot be un-enrolled by users.
 
 ## Apple DEP management for iOS devices with Microsoft Intune
 To manage corporate-owned iOS devices with Apple’s Device Enrollment Program (DEP), your organization must join Apple DEP and acquire devices through that program. Details of that process are available at:  [https://deploy.apple.com](https://deploy.apple.com). Advantages of the program include hands-free set up of devices without USB-connecting each device to a computer.
