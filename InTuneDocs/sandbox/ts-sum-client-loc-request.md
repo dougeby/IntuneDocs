@@ -1,5 +1,5 @@
 ---
-title: The client sends a WSUS Location Request to the management point
+title: WSUS Location Request to the management point
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -8,7 +8,9 @@ ms.topic: article
 ms.assetid: tempfile
 author: jeffgilb
 ---
-# The client sends a WSUS Location Request to the management point
+# WSUS Location Request to the management point
+
+## What happens when a client sends a WSUS location request
 The first thing the client does is set the WSUS server that will be its update source for software update scans. That process is detailed below.
 
 1. When the Configuration Manager client needs to process a software update scan, Scan Agent creates a scan request based on the available policy as noted in the **ScanAgent.log** log file:
@@ -29,7 +31,9 @@ asdfasdfasdfadfasdfasdfasdfad
 ```
 >[!TIP]
 > Each scan job is stored in WMI in the CCM_ScanJobInstance class:
+>
 > **Namespace**: root\CCM\ScanAgent **Class**: CCM_ScanJobInstance
+
 3. Location Services creates a Location Request and sends it to the management point. The package ID for a WSUS location request is the Update Source Unique ID.
 **LocationServices.log:**
 ```
@@ -57,7 +61,7 @@ Created and Sent Location Request '{C2BB9710-C548-49D0-9DF8-5F9CFC5F3862}' for p
 11. After the updatesource is successfully added, Scan Agent raises a State Message and initiatesthe scan:
 **ScanAgent.log:**
 
-## Troubleshooting
+## Troubleshooting tips
 Review the following log symptoms for troubleshooting tips to check for.
 
 ### ScanAgent.log shows no policy available for an Update Source and no WUAHandler.log exists or no current activity within WUAHandler.log

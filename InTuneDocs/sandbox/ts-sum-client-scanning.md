@@ -10,24 +10,24 @@ author: jeffgilb
 ---
 # Client Software Update Scanning
 
-## Picture with text on same line
+## Client scan process workflow
 The client scan process is outlined in the following steps. Confirm each step in order to properly establish where the issue is.
 
 ![alt text](./giphy.gif "process animation")
 
-
+## Client scan process steps
 >[!div class="step-by-step"]
 
->[The client sends a WSUS Location Request to the management point](.\ts-sum-client-loc-request.md)
+>[1. The client sends a WSUS Location Request to the management point](.\ts-sum-client-loc-request.md)
 
->[Scan agent requests the scan and WUAHandler initiates the scan](.)  
+>[2. Scan agent requests the scan and WUAHandler initiates the scan](.\ts-sum-client-scanning.md)  
 
->[Windows Update Agent (WUA) starts the scan against the WSUS computer](.)
+>[3. Windows Update Agent (WUA) starts the scan against the WSUS computer](.\ts-sum-client-scanning.md)
 
->[WUAHandler receives results from Windows Update Agent and marks the scan as complete  ](.)        
+>[4. WUAHandler receives results from Windows Update Agent and marks the scan as complete](.\ts-sum-client-scanning.md)        
 
->[WUAHandler parses the scan results](.)        
+>[5. WUAHandler parses the scan results](.\ts-sum-client-scanning.md)        
 
->[Update Store records the status and raises a state message for each update in WMI](.)        
+>[6. Update Store records the status and raises a state message for each update in WMI](.\ts-sum-client-scanning.md)        
 
->[State messages are sent to the management point ](.)        
+>[7. State messages are sent to the management point](.\ts-sum-client-scanning.md)        
