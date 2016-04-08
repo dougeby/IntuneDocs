@@ -17,7 +17,7 @@ Compliance policy settings are used to evaluate the compliant status of the devi
 Keep in mind that the devices must have a compliance policy deployed to it in order for it to be evaluated for compliance.
 If no compliance policy is deployed to a device, then any applicable conditional access policies will treat the device as compliant, and no access restrictions will be applied.
 
-When devices do not meet the conditions you configure, the user is guided though the process of enrolling the device and fixing the issue that prevents the device from being compliant.
+When devices do not meet the conditions set in the policies, the end-user is guided though the process of enrolling the device and fixing the issue that prevents the device from being compliant.
 
 A typical flow of conditional access:
 
