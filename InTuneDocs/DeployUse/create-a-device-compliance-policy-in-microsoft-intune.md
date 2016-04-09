@@ -30,7 +30,7 @@ When you are finished, choose **Save Policy**.
 You will have the option to deploy the policy right after saving the policy, or you can choose to deploy it later. The new policy displays in the **Compliance Policies** node of the **Policy** workspace.
 
 ## Supported policy settings
-The following table lists the compliance policy settings and the platforms they are supported.
+The following table lists the compliance policy settings and the platforms on which they are supported.
 
 -------------
 |Setting|iOS|Android|Windows|
