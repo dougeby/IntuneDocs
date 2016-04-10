@@ -1,5 +1,5 @@
 ---
-title: Introduction to mobile app management policies |Microsoft Intune
+title: Protect app data using mobile app management policies |Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 author: karthikaraman
 ---
-# Introduction to mobile app management policies with Microsoft Intune
+# Protect app data using mobile app management policies with Microsoft Intune
 Use mobile app management policies in [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] to apply restrictions to apps that help protect your company data.
 
 ## How you can protect app data
