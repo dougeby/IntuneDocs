@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 author: Nbigman
 ---
-# Contact Assisted Phone Support for Microsoft Intune
+# Contact assisted phone support for Microsoft Intune
 
 ## Phone numbers and business hours are listed in the following table.
 
@@ -105,3 +105,5 @@ author: Nbigman
 |Venezuela|24 x 7|Monday – Friday<br /><br />09:00 – 17:00 VET (UTC -4:30)|Spanish&#42;, English|0-800-100-8763||
 &#42; Supported with over-the-phone interpretation.
 
+### See also
+[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)

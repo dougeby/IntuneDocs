@@ -13,6 +13,9 @@ author: Nbigman
 
 Use the information in this section to help you solve problems while using [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)][!INCLUDE[epshort](./includes/epshort_md.md)].
 
+If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
+
+
 ## Endpoint Protection error messages
 This section describes potential causes and solutions for the following errors and warnings, which appear in the **Endpoint Protection Status** pane in the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)].
 
@@ -31,7 +34,7 @@ This section describes potential causes and solutions for the following errors a
 |**Quick scan overdue**|A quick scan has not been completed for 14 days. This can be caused by a restart during a quick scan.|If a quick scan is overdue, you can run a one-time quick scan or schedule recurring quick scans from the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)] by using the information in the topic [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
 |**Another endpoint protection application running**|Another endpoint protection application is running, and the computer is healthy.|By default, if another endpoint protection application is installed and [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] detects that application, [!INCLUDE[epshort](./includes/epshort_md.md)] automatically disables itself. If [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] does not detect the other endpoint application, [!INCLUDE[epshort](./includes/epshort_md.md)] will remain enabled. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
 
-## See Also
+### See also
 [Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md)
 [Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)

@@ -357,6 +357,6 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016345912|0x87D100C8|The SyncML command completed successfully.|
 |-2016346011|0x87D10065|The specified SyncML command is being carried out, but has not yet completed.|
 
-## See Also
+### See also
 [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md)
 [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
