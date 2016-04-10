@@ -15,6 +15,8 @@ Here are some device enrollment issues and how to troubleshoot and resolve them.
 > [!NOTE]
 > Your managed device users can collect enrollment logs for you to review. Instructions for collecting the logs are provided in  [Intune: sending troubleshooting info to IT ](https://www.microsoft.com/en-us/download/details.aspx?id=46391).
 
+If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
+
 ## Device Cap reached
 **Issue:** A user receives an error on their device during enrollment, such as a **Company Portal Temporarily Unavailable** error on an iOS device, and the DMPdownloader.log on Configuration Manager contains the error **DeviceCapReached**.
 
@@ -143,5 +145,6 @@ Administrators can delete devices in the Azure Active Directory portal:
 ## iOS enrollment errors
 A list of other iOS enrollment errors is provided in our device-user documentation, in   [You see errors while trying to enroll your device in Intune](using-your-ios-device-with-intune.md#BKMK_ios_error_enrolling_tbl).
 
-## See Also
+### See also
 [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
+[End-user Intune enrollment instructions for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)

@@ -10,7 +10,7 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 author: nbigman
 ---
 # General troubleshooting tips for Microsoft Intune
-You may find  after you deploy [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)], that you're encountering problems with your configuration or with clients. The resources below may help you find out what could be causing the problem so that you can resolve it.
+You may find  after you deploy [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] that you're encountering problems with your configuration or with clients. The resources below may help you find out what could be causing the problem so that you can resolve it.
 
 > [!NOTE]
 > To create a support request, or to view an existing request,  click [here](https://portal.office.com/admin/default.aspx) to visit the Office 365 admin center. For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
@@ -61,7 +61,7 @@ You can find other helpful information in these community resources:
 
 -   [The Intune forums](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-## General troubleshooting guidelines
+### See also
 [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 [Troubleshoot company resource access problems with Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
