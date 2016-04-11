@@ -40,3 +40,6 @@ The following procedure describes how to create a custom rule.
 1. In the [Microsoft Intune administration console](http://manage.microsoft.com) &gt; **Policy** &gt; **Exchange Access for Mobile Devices**.
 
 2.  In the **Custom Rules** list, Choose **Add Rule** and create a custom rule. Choose **Save**.
+
+### Next steps
+[Set Exchange access rules for mobile devices](exchange-access-rules-for-mobile-devices.md)
