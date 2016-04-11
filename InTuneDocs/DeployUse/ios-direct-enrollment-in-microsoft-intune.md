@@ -9,10 +9,8 @@ ms.topic: article
 ms.assetid:
 author: NathBarn
 ---
-# Enroll corporate-owned devices
-Intune supports the enrollment of corporate-owned iOS devices using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process factory-resets the device and enrolls the device with a predefined policy.
-
-
+# Enroll iOS devices with Apple Configurator using direct enrollment
+Intune supports the enrollment of corporate-owned iOS devices using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process does not factory-resets the device and enrolls the device with a predefined policy.
 
 ## Direct enrollment for iOS devices with Microsoft Intune
 Using Apple Configurator you can enroll iOS devices for management without resetting them to factory settings. This method is for devices with **No user affinity** and requires you to USB-connect the iOS device to a Mac computer to setup corporate enrollment. The Company Portal app is not supported for direct enrolled devices. This guidance assumes you are using Apple Configurator 2.0 on a Mac computer.
