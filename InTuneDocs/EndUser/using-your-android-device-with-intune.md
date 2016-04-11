@@ -47,5 +47,6 @@ The information in this section will help you fix issues you might encounter whe
 - [Send diagnostic data logs to your IT administrator using a USB cable](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)</br>
 - [Send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android.md)</br>
 - [Device doesn't have the required minimum operating system version](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
-- [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
+- [Your device is missing a required certificate](device-is-missing-a-required-certificate-andr.md)
 
