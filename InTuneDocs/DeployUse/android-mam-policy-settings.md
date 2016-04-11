@@ -49,7 +49,11 @@ author: karthikaraman
 
   When you set this to Yes, the end-user is required to setup and use a PIN to access their device.  If there is not PIN setup for device access, the apps will not launch and the end-user will be prompted to set a PIN with a message -*“Your company has required that you must first enable a device PIN to access this application.”*
 
-  **Default value -Encryption option is not selected**
+  **Default value = Encryption option is not selected**
+
+- **ContactSyncDisabled:** Choose **Yes** to prevent contact information from synchronizing to the native address book app on the device. If you choose **No**, the app will save the  contact information to the native address book app on the device.<br/>When you do a selective wipe to remove company data, contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this is applicable only to the **Microsoft Outlook** app.
+
+  **Default value = Yes**
 ##  Android access policy settings
 
 - **Require simple PIN for access:** Select **Yes** to require a PIN to use policy managed apps. The user is prompted to set this up the first time they run the app in a work context.
