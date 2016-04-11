@@ -10,7 +10,7 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 author: Nbigman
 ---
 # Enable access to company resources with Microsoft Intune
-[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Wi-Fi and VPN profiles work together to help your users gain access to the files and resources they need to do their work successfully, wherever they are.
+Microsoft Intune Wi-Fi and VPN profiles work together to help your users gain access to the files and resources they need to do their work successfully, wherever they are.
 
 ## Resource access profiles and supported platforms
 
@@ -23,5 +23,5 @@ author: Nbigman
 .|No|Yes|Yes|No|Yes|
 >NOTE
 > See [this blog post](http://blogs.technet.com/b/microsoftintune/archive/2015/02/23/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1.aspx) for information about how to configure a Windows Phone 8.1 Wi-Fi profile using OMA-URI.
-## See Also
+### See Also
 [Configure and manage devices with Microsoft Intune](configure-and-manage-devices-with-microsoft-intune.md)

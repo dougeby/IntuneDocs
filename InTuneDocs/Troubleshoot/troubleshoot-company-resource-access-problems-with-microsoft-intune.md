@@ -10,7 +10,7 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 author: Nbigman
 ---
 # Troubleshoot company resource access problems with Microsoft Intune
-Use the error and status codes in this topic to help you troubleshoot problems when a [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] action returns an error code.
+Use the error and status codes in this topic to help you troubleshoot problems when a Microsoft Intune action returns an error code.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
@@ -357,6 +357,6 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016345912|0x87D100C8|The SyncML command completed successfully.|
 |-2016346011|0x87D10065|The specified SyncML command is being carried out, but has not yet completed.|
 
-## See Also
+### See also
 [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md)
 [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)

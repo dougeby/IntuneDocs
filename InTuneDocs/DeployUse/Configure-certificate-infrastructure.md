@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3a435650-3891-4754-8abc-4bbac244f33b
-author: Lizap
+author: nbigman
 ---
 # Configure certificate infrastructure
 This topic describes what you need in order to create and deploy certificate profiles.
@@ -31,13 +31,13 @@ To use .PFX Certificate profiles, in addition to the Enterprise Certification Au
 
 -    **Active Directory domain**: All servers listed in this section (except for the Web Application Proxy Server) must be joined to your Active Directory domain.
 
--  **Certification Authority** (CA): An Enterprise Certification Authority (CA) that runs on an Enterprise edition of [!INCLUDE[nextref_server_7](../Token/nextref_server_7_md.md)] or later. A Standalone CA is not supported. For instructions on how to set up a Certification Authority, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).
+-  **Certification Authority** (CA): An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For instructions on how to set up a Certification Authority, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).
     If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
  
- -  **NDES Server** (SCEP only): On a server that runs [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] or later, you must setup up the Network Device Enrollment Service (NDES). [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] to host the Network Device Enrollment Service.|
+ -  **NDES Server** (SCEP only): On a server that runs Windows Server 2012 R2 or later, you must setup up the Network Device Enrollment Service (NDES). Intune does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.|
 -  **Computer that can communicate with Certification Authority** (.PFX only):Alternatively, use the Certification Authority computer itself.
--  **Microsoft Intune Certificate Connector**: You use the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] admin console to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. For .PFX Certificate profiles, install the Certificate Connector on the computer that communicates with the Certification Authority.
--  **Web Application Proxy Server** (optional): You can use a server that runs [!INCLUDE[winblue_server_2](../Token/winblue_server_2_md.md)] or later as a Web Application Proxy (WAP) server. This configuration:
+-  **Microsoft Intune Certificate Connector**: You use the Intune admin console to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. For .PFX Certificate profiles, install the Certificate Connector on the computer that communicates with the Certification Authority.
+-  **Web Application Proxy Server** (optional): You can use a server that runs Windows Server 2012 R2 or later as a Web Application Proxy (WAP) server. This configuration:
     -  Allows devices to receive certificates using an Internet connection.
     -  Is a security recommendation when devices connect through the Internet to receive and renew certificates.
     
@@ -69,7 +69,7 @@ Before you can configure certificate profiles you must complete the following ta
 **Task 2**, for SCEP profile only:
                      - Configure prerequisites on the NDES server 
 **Task 3**, for SCEP profile only:
-                     - Configure NDES for use with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]
+                     - Configure NDES for use with Intune
 **Task 4** - Enable, install, and configure the Intune Certificate Connector
 
 ### <a name="BKMK_ConfigOnPremTask1"></a>Task 1 - Configure certificate templates on the certification authority
@@ -94,7 +94,7 @@ In this task you will:
 
     -   Specify a friendly **Template display name** for the template.
 
-    -   On the **Subject Name** tab, select **Supply in the request**. (Security is enforced by the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] policy module for NDES).
+    -   On the **Subject Name** tab, select **Supply in the request**. (Security is enforced by the Intune policy module for NDES).
 
     -   On the **Extensions** tab, ensure the **Description of Application Policies** includes **Client Authentication**.
 
@@ -103,7 +103,7 @@ In this task you will:
 
     -   On the **Security** tab, add the NDES service account, and give it **Enroll** permissions to the template.
 
-3.  Review the **Validity period** on the **General** tab of the template. By default, [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] uses the value configured in the template. However, you have the option to configure the CA to allow the requester to specify a different value, which you can then set from within the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] Administrator console. If you want to always use the value in the template, skip the remainder of this step.
+3.  Review the **Validity period** on the **General** tab of the template. By default, Intune uses the value configured in the template. However, you have the option to configure the CA to allow the requester to specify a different value, which you can then set from within the Intune Administrator console. If you want to always use the value in the template, skip the remainder of this step.
 
     > [!IMPORTANT]
     > The iOS and Mac OS X platforms always uses the value set in the template regardless of other configurations you make.
@@ -164,7 +164,7 @@ In this task you will:
 
     -   **setspn –s http/Server01.contoso.com contoso\NDESService**
 
-### <a name="BKMK_ConfigOnPremTask3"></a>Task 3 (SCEP profile only) - Configure NDES for use with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]
+### <a name="BKMK_ConfigOnPremTask3"></a>Task 3 (SCEP profile only) - Configure NDES for use with Microsoft Intune]
 In this task you will:
 
 -   Configure NDES for use with the issuing CA
@@ -173,7 +173,7 @@ In this task you will:
 
 -   Configure Request Filtering in IIS
 
-##### To configure NDES for use with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]
+##### To configure NDES for use with Intune
 
 1.  On the NDES Server, open the AD CS Configuration wizard and then make the following configurations.
 
@@ -196,7 +196,7 @@ In this task you will:
 
     To edit this key, identify the certificate template's **Purpose**, as found on its **Request Handling** tab, and then edit the corresponding entry in the registry by replacing the existing data with the name of the certificate template (not the display name of the template) that you specified in Task 1. The following table maps the certificate template purpose to the values in the registry:
 
-    |Certificate template Purpose (On the Request Handling tab)|Registry value to edit|Value seen in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] admin console for the SCEP profile|
+    |Certificate template Purpose (On the Request Handling tab)|Registry value to edit|Value seen in the Intune admin console for the SCEP profile|
     |--------------------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------|
     |Signature|SignatureTemplate|Digital Signature|
     |Encryption|EncryptionTemplate|Key Encipherment|
@@ -214,7 +214,7 @@ In this task you will:
 
     1.  After you obtain the server authentication certificate, open **IIS Manager**, select the **Default Web Site** in the **Connections** pane, and then click **Bindings** in the **Actions** pane.
 
-    2.  Click **Add**, set **Type** to **https**, and then ensure the port is **443**. (Only port 443 is supported for standalone [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]).
+    2.  Click **Add**, set **Type** to **https**, and then ensure the port is **443**. (Only port 443 is supported for standalone Intune).
 
     3.  For **SSL certificate**, specify the server authentication certificate.
 
@@ -254,7 +254,7 @@ In this task you will:
 ### <a name="BKMK_ConfigOnPremTask4"></a>Task 4 - Enable, install, and configure the Intune Certificate Connector  - For SCEP and .PFX certificates.
 In this task you will:
 
-Enable support for NDES in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]
+Enable support for NDES in Intune
 
 Download, install, and configure the Certificate Connector on the NDES Server
 
@@ -279,7 +279,7 @@ Download, install, and configure the Certificate Connector on the NDES Server
     For the SCEP option, the installer also installs the policy module for NDES and the CRP Web Service. (The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.)
 
     > [!NOTE]
-    > When you install NDES for standalone [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], the CRP service automatically installs with the Certificate Connector. When you use [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] with Configuration Manager, you install the Certificate Registration Point as a separate site system role.
+    > When you install NDES for standalone Intune, the CRP service automatically installs with the Certificate Connector. When you use Intune with Configuration Manager, you install the Certificate Registration Point as a separate site system role.
 
 3.  When prompted for the client certificate for the Certificate Connector, click **Select**, and select the **client authentication** certificate you installed on your NDES Server in Task 3.
 
@@ -294,7 +294,7 @@ Download, install, and configure the Certificate Connector on the NDES Server
 
 5.  In the **Certificate Connector** UI:
 
-    Click **Sign In** and enter your [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] service administrator credentials, or credentials for a tenant administrator with the global administration permission.
+    Click **Sign In** and enter your Intune service administrator credentials, or credentials for a tenant administrator with the global administration permission.
 
     If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.
 

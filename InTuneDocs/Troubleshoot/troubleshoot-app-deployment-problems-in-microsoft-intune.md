@@ -10,21 +10,21 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 author: Nbigman
 ---
 # Troubleshoot app deployment problems in Microsoft Intune
-This topic helps you solve app deployment problems with[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
+This topic helps you solve app deployment problems with Microsoft Intune.
 
 ## <a name="BKMK_TypicalProblems"></a>Help for typical app deployment problems
 
-### If you can’t log in to the [!INCLUDE[wit_iwportal_1](./includes/wit_iwportal_1_md.md)]
+### If you can’t log in to the Microsoft Intune company portal
 
-1.  Check to see if your account exists in the [!INCLUDE[wit_icp_1](./includes/wit_icp_1_md.md)] or if it is disabled.
+1.  Check to see if your account exists in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) or if it is disabled.
 
-2.  Make sure that you are provisioned on this account in the [!INCLUDE[wit_icp_1](./includes/wit_icp_1_md.md)].
+2.  Make sure that you are provisioned on this account in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-3.  In the [!INCLUDE[wit_icp_1](./includes/wit_icp_1_md.md)], make sure that you are using the right user name and password to log in to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] and that it is in the format: **joe@domain.com**.
+3.  In the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), make sure that you are using the right user name and password to log in to Intune and that it is in the format: **joe@domain.com**.
 
 ### If the Contact IT information is missing in the company portal
 
-1.  In the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)], click **Admin** &gt; **Company Portal**.
+1.  In the Intune admin console, click **Admin** &gt; **Company Portal**.
 
 2.  Set the **Contact IT** details.
 
@@ -71,7 +71,7 @@ This topic helps you solve app deployment problems with[!INCLUDE[wit_firstref](.
 -   Installation status was not collected for managed app installations prior to the Microsoft Intune service update in November 2014. For devices that installed managed apps prior to this service update, update each associated app deployment with the appropriate deployment action (for example, **Available install**). Each device will update the app during the automatic check for available apps. For more information, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
 
 ## <a name="BKMK_SoftDistErrorCodes"></a>App deployment error codes
-The following table lists common errors that may occur during [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] app deployment, the likely causes, and possible solutions to help you troubleshoot them.
+The following table lists common errors that may occur during Intune app deployment, the likely causes, and possible solutions to help you troubleshoot them.
 
 |Error code|Possible problem|Suggested resolution|
 |--------------|--------------------|------------------------|
@@ -80,7 +80,7 @@ The following table lists common errors that may occur during [!INCLUDE[wit_next
 |0x80073CF3|The package failed update, dependency, or conflict validation|Possible causes:<br /><br />-   The incoming package conflicts with an installed package.<br />-   A specified package dependency is not found.<br />-   The package does not support the correct processor architecture.<br /><br />Check the AppXDeployment-Server event log for more information.|
 |0x80073CFB|The provided package is already installed, and reinstallation of the package is blocked|You might receive this error if you are installing a package that is not identical to the package that is already installed. Confirm the digital signature is also part of the package. When a package is rebuilt or re-signed, that package is no longer bitwise identical to the previously installed package. Two possible options to fix this error are as follows:<br /><br />-   Increment the version number of the app, then rebuild and re-sign the package.<br />-   Remove the old package for every user on the system before you install the new package.|
 
-## See Also
+### See also
 [Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md)
 [Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
 [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
