@@ -4,7 +4,6 @@
 
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
-## [What's new](what-s-new-in-microsoft-intune.md)
 
 ## [Enroll devices](enroll-devices-in-microsoft-intune.md)
 ### [Get ready to enroll devices in Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
@@ -75,7 +74,7 @@
 ## [Configure apps](update-apps-using-microsoft-intune.md)
 ### [Update apps ](update-apps-using-microsoft-intune.md)
 ### [iOS app configuration policies](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
-### [Manage Internet access using managed browser policies](manage-internet-access-using-managed-browser-policies.md)
+### [Manage Internet access](manage-internet-access-using-managed-browser-policies.md)
 
 
 ## [Protect apps and data](protect-apps-and-data-with-microsoft-intune.md)
@@ -92,22 +91,22 @@
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
-### [Introduction to mobile app management policies](introduction-to-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Azure portal for MAM polices](azure-portal-for-microsoft-intune-mam-policies.md)
+### [Protect app data](introduction-to-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md)
 #### [Get ready to configure MAM policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Create and deploy MAM policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [For Android](android-mam-policy-settings.md)
-#### [For iOS](ios-mam-policy-settings.md)
+#### [MAM policies for Android](android-mam-policy-settings.md)
+#### [MAM policies for iOS](ios-mam-policy-settings.md)
 #### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune)
 #### [MAM with iOS Open In](microsoft-intune-mobile-app-management-policies-and-ios-open-in)
 #### [End user experience](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies)
 
 
 
-### [Decide how to prepare apps for mobile application management](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
-#### [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
-#### [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
-#### [Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
+### [Prepare line of business apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
+#### [Wrap iOS apps](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+#### [Wrap Android apps](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+#### [Use the SDK when you write an app](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 #### [Microsoft apps you can manage with Intune](microsoft-apps-you-can-manage-with-intune.md)
 
 ## [Retire apps and data](retire-apps-using-microsoft-intune.md)
@@ -115,5 +114,6 @@
 ### [Help protect your data with remote wipe, remote lock, or passcode reset](help-protect-your-data-with-remote-wipe-remote-lock-or-passcode-reset-using-microsoft-intune.md)
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
+## [What's new](what-s-new-in-microsoft-intune.md)
 
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
