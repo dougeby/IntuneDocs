@@ -44,7 +44,7 @@ Apply the policy to Azure Active Directory security user groups, and specify how
 
 2.  Create a conditional access policy for one of the following:
 > [!div class="op_single_selector"]
-  - [Create a conditional access policy for Exchange Online](restrict-access to-exchange-online-with-microsoft-intune.md)
+  - [Create a conditional access policy for Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   - [Create a conditional access policy for Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Create a conditional access policy for new Exchange Online Dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Create a conditional access policy for legacy Exchange Online Dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)

@@ -58,7 +58,7 @@ Select one of the following to learn more about compliance settings supported on
 > [!div class="op_single_selector"]
 - [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Compliance policy settings for Windows devices](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Compliance policy settings for Windows and Windows Phones ](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
 ## Next steps

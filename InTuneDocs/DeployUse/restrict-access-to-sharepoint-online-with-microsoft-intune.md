@@ -27,9 +27,9 @@ When a targeted user attempts to connect to a file using a supported app such as
 
 **Before** configuring conditional access policy for SharePoint Online, you must:
 - Have a **SharePoint Online subscription** is required and users must be licensed for SharePoint Online.
+- Have a subscription for the **Enterprise Mobility Suite** or **Azure Active Directory Premium**
 
   To connect to the required files, the device must:
-
 -   Be **enrolled** with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or a domain joined PC.
 
 -   **Register the device** in Azure Active Directory (this happens automatically when the device is enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
