@@ -18,9 +18,10 @@ Microsoft Intune provides selective wipe, full wipe, remote lock, and passcode r
 ## <a name="bkmk_wipe"></a>Use Retire/Wipe to help secure a lost device or to retire a device from active use
 **Full wipe** restores a device to its factory default settings, removing all company and user data and settings.     The device is removed from Intune. **Be careful about selecting full wipe; your data cannot be recovered**.
 
-**Selective wipe** removes company data from a device.   The device is removed from Intune. The following tables describe by platform what data is removed and the effect on data that remains on the device after a selective wipe.
+## Selective wipe ##
+Intune can selectively removes company data from a device. The results of selectively wiping a device depend upon the mobile device platform. The device is removed from Intune. The following tables describe by platform what data is removed and the effect on data that remains on the device after a selective wipe.
 
-**iOS**
+### iOS
 
 |Data type|iOS|
 |-------------|-------|
@@ -33,7 +34,7 @@ Microsoft Intune provides selective wipe, full wipe, remote lock, and passcode r
 |Azure Active Directory (AAD) Unjoin|AAD Record removed|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
 
-**Android**
+### Android
 
 |Data type|Android|Android Samsung KNOX|
 |-------------|-----------|------------------------|
@@ -50,7 +51,7 @@ Microsoft Intune provides selective wipe, full wipe, remote lock, and passcode r
 |Azure Active Directory (AAD) Unjoin|AAD Record removed|AAD Record removed|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
 
-**Windows**
+### Windows
 
 |Data type|Windows 8.1 (MDM) and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
@@ -61,7 +62,7 @@ Microsoft Intune provides selective wipe, full wipe, remote lock, and passcode r
 |Email|Removes email that is EFS enabled which includes the Mail app for Windows email and attachments.|Not supported|Email profiles that are provisioned through Intune are removed and cached email on the device is deleted.|Removes email that is EFS enabled which includes the Mail app for Windows email and attachments. Removes mail accounts that were provisioned by Intune.|
 |Azure Active Directory (AAD) Unjoin|No|No|AAD Record removed|AAD Record removed|
 
-#### To remotely wipe a device from the Intune administrator console
+## To remotely wipe a device from the Intune administrator console
 
 1.  Select devices to be wiped. You can find them either by user or by device.
 
@@ -108,14 +109,14 @@ The data and apps that are currently supported by EFS selective wipe are:
 
 -   If your organization maintains its identity in Active Directory, it must use the Directory Sync (DirSync) tool to sync information into AAD for EFS selective wipe to work correctly.  For more information on DirSync, see [Directory Sync Scenario](http://technet.microsoft.com/library/dn441212.aspx) in the Azure Active Directory documentation.
 
-### Monitor retire, wipe, and delete actions
+## Monitor retire, wipe, and delete actions
 To get a report of devices that have been retired, wiped, or deleted, and who performed the action:
 
 1.  In the [Intune administrator  console](https://manage.microsoft.com/), click **Reports** &gt; **Device History Reports**.
 
 2.  Provide a start and end date for the report, then click **View Report**.
 
-### <a name="BKMK_passcode"></a>Reset the passcode on a device
+## <a name="BKMK_passcode"></a>Reset the passcode on a device
 If a user forgets their passcode, you can help them by removing the passcode from a device or by forcing a new temporary passcode on a device. The table below lists how passcode reset works on different mobile platforms.
 
 |Platform|Passcode reset|
@@ -127,8 +128,7 @@ If a user forgets their passcode, you can help them by removing the passcode fro
 WIndows RT 8.1 and Windows RT|Not Supported|
 |Windows 8.1|Not Supported|
 
-
-##### To reset the passcode on a mobile device remotely through the Microsoft Intune console
+To reset the passcode on a mobile device remotely through the Microsoft Intune console perform the following steps:
 
 1.  In the [Intue administrator  console](https://manage.microsoft.com/), click **Groups** &gt; **All Devices** &gt; **All Mobile Devices**.
 
@@ -139,7 +139,8 @@ WIndows RT 8.1 and Windows RT|Not Supported|
 
 3.  In the list, click the device or devices that you want to lock. On the taskbar, click **Remote Tasks**, and select **Passcode Reset**.
 
-### Lock a device remotely
+## Lock a device remotely
+
 If a user loses their device you can lock the device remotely. The table below lists how remote lock works on different mobile platforms.
 
 |Platform|Remote lock|
