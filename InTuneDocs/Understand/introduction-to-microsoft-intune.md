@@ -14,7 +14,7 @@ author: Lindavr
 
 ~~Microsoft offers~~ *EMS is* a complete integrated suite for enterprise mobility inclusive of productivity, identity, access control, management and data protection. ~~This integrated suite~~ *It* gives you the best possible way to deploy and operate a mobility solution in your organization.  
 
-![Image of enterprise mobility vision](./media/em-vision.png)
+![Image of enterprise mobility vision](../media/em-vision.png)
 
 ~~Microsoft provides its enterprise mobility suite from the cloud. This means you get the benefits the cloud brings including being continuously kept up to date and available, flexible deployment options, and lower costs of ownership.  All of the features and capabilities you need to implement a mobility solution are included in Office 365 and the Enterprise Mobility Suite (EMS). By using Office 365 with EMS, you get an integrated end-to-end system for providing enterprise mobility to your employees, partners, contractors and even your customers.~~
 
