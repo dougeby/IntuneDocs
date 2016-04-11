@@ -11,7 +11,7 @@
 ### [Configure Intune](migrating-to-intune-step-two.md)
 ### [Pilot Intune](migrating-to-intune-step-three.md)
 ### [Migrate to Intune](migrating-to-intune-step-four.md)
-### [Migration worksheet](migrating-to-intune-worksheet.md)
+
 
 <!--- ## [Plan for app deployment](Plan-for-app-deployment-in-microsoft-intune.md)
 ## [Help secure on-premises resources](help-secure-on-premises-resources.md)
