@@ -62,7 +62,7 @@
 
 ## [Add and deploy apps](add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Add apps for mobile devices](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Add apps for Windows PCs](create-apps-for-windows-pcs-in-microsoft-intune.md)
+### [Add apps for Windows PCs](add-apps-for-windows-pcs-in-microsoft-intune.md)
 ### [Deploy apps](deploy-apps-in-microsoft-intune.md)
 ### [Monitor apps](monitor-apps-in-microsoft-intune.md)
 ### [Manage volume-purchased apps](manage-volume-purchased-apps-in-microsoft-intune.md)
@@ -89,7 +89,7 @@
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
-### [Protect app data](introduction-to-mobile-app-management-policies-with-microsoft-intune.md)
+### [Protect app data](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md)
 #### [Get ready to configure MAM policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Create and deploy MAM policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
