@@ -21,8 +21,8 @@ ms.assetid: [GET ONE FROM guidgenerator.com]
 #ms.tgt_pltfrm:
 #ms.custom:
 ---
-# Help protect your devices with remote lock and passcode using Microsoft Intune
-Microsoft Intune provides remote lock and passcode reset capabilities.
+# Help protect your devices with remote lock and passcode reset
+Microsoft Intune provides both remote lock and passcode reset capabilities.
 
 ## Lock a device remotely
 If a user loses their device you can lock the device remotely. The table below lists how remote lock works on different mobile platforms.
@@ -33,8 +33,9 @@ If a user loses their device you can lock the device remotely. The table below l
 |Android|Supported|
 |Windows 10 Mobile|Supported|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
-|WIndows RT 8.1 and Windows RT|Supported if the current user of the device is the same user who enrolled the device.|
+|Windows RT 8.1 and Windows RT|Supported if the current user of the device is the same user who enrolled the device.|
 |Windows 8.1|Supported if the current user of the device is the same user who enrolled the device.|
+
 
 ### To lock a mobile device remotely through the Intune console
 
@@ -56,9 +57,10 @@ If a user forgets their passcode, you can help them by removing the passcode fro
 |Android|Supported and a temporary passcode is created.|
 |Windows 10 Mobile|Supported|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
-WIndows RT 8.1 and Windows RT|Not Supported|
+|Windows RT 8.1 and Windows RT|Not Supported|
 |Windows 8.1|Not Supported|
 
+### To reset a passcode
 
 1.  In the [Intune administrator console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** &gt; **All Mobile Devices**.
 
@@ -71,5 +73,5 @@ WIndows RT 8.1 and Windows RT|Not Supported|
 
 
 ### See also
-[Retire data and devices from Microsoft Intune management](retire-data-and-devices-from-microsoft-intune-management.md)
+[Retire devices](retire-devices-from-microsoft-intune-management.md)
 [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx)

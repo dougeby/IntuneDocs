@@ -117,5 +117,5 @@ To get a report of devices that have been retired, wiped, or deleted, and who pe
 
 
 ### See also
-[Retire data and devices from Microsoft Intune management](retire-data-and-devices-from-microsoft-intune-management.md)
+[Retire devices](retire-devices-from-microsoft-intune-management.md)
 [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx)

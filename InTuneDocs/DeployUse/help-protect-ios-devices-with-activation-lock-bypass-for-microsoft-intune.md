@@ -72,6 +72,6 @@ You can see which devices are using Activation Lock in two ways:
 
     If you select a device in the **All Corporate-owned Devices** node, and Activation Lock is enabled for the device, you can also see the bypass code. This code can be used to manually issue an Activation Lock bypass.
 
-### See Also
-[Retire data and devices from Microsoft Intune management](retire-data-and-devices-from-microsoft-intune-management.md)
-
+### See also
+[Retire devices](retire-devices-from-microsoft-intune-management.md)
+[Help protect your devices with remote lock and passcode reset](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
