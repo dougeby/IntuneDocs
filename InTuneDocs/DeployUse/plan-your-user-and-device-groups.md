@@ -22,7 +22,7 @@ Groups in Intune provide great flexibility in managing your devices and users. Y
 ## How Intune groups work
 
 
-The default view of the Groups node in the Intune Management console is:
+The default view of the Groups node in the Intune admin console is:
 
 ![Screenshot of the default view of the Groups node in the Intune console](./media/Group-planning/Intune_Planning_Groups_Default_small.png)
 
@@ -40,13 +40,13 @@ Policies are deployed onto groups, so group hierarchy is one of your key design 
 
 3. A group can include and exclude members based on the following membership rules:
 
-    * **Criteria Membership:** These are dynamic rules that [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] runs to include or exclude members. These criteria use **security groups** and other information synchronized from your local Active Directory (AD). When the security group or data changes, the group membership changes when you synchronize with AD.
+    * **Criteria Membership:** These are dynamic rules that Intune runs to include or exclude members. These criteria use **security groups** and other information synchronized from your local Active Directory (AD). When the security group or data changes, the group membership changes when you synchronize with AD.
 
     * **Direct Membership:** These are static rules that explicitly add or exclude members. The membership list is static.
 
 4. Active Directory Domain Services (AD DS) is not required to create user groups or device groups that include users or computers, but for device groups to include mobile devices, your environment must be configured to support mobile devices.
 
-    Additionally, the devices must be discovered and added to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+    Additionally, the devices must be discovered and added to Intune.
 
 ## Group relationship rules
 
@@ -76,7 +76,7 @@ Policies are deployed onto groups, so group hierarchy is one of your key design 
 
     * The **Laptop Users** group is a member of the **Approved Users** security group.
 
-    * You create a group in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] that uses a dynamic membership query that includes the members of the **Approved Users** group. The result is that your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user group includes **Pat**.
+    * You create a group in Intune that uses a dynamic membership query that includes the members of the **Approved Users** group. The result is that your Intune user group includes **Pat**.
 
 > [!TIP]
 > When you're creating your groups, think about how you will apply policy. For example, you may have policies specific to device operating systems, and policies specific to different roles in your organization, or to Organizational Units you've already defined in Active Directory. Some consider it useful to have device groups specific to iOS, Android, and Windows, as well as user groups for each organizational role.
@@ -89,7 +89,7 @@ Policies are deployed onto groups, so group hierarchy is one of your key design 
  Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.--->
 
 ## Built-in groups
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] provides nine built-in groups that you cannot edit or delete: <!--maybe a screen shot would be best?-->
+Intune provides nine built-in groups that you cannot edit or delete: <!--maybe a screen shot would be best?-->
 
 -   **All Users**
     -   Ungrouped Users

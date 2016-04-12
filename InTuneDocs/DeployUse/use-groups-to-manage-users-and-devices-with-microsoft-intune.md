@@ -15,11 +15,11 @@ author: Nbigman
 Additionally, you can filter groups to allow your IT admins permissions to only perform operations on the groups you specify. For more information, see [Use filtered group views to help secure and manage users and devices](use-groups-to-manage-users-and-devices-with-microsoft-intune.md#BKMK_Filter) in this topic.-->
 <!--## The Groups workspace-->
 
-To create and manage groups use the **Groups** workspace in the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]. The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
+To create and manage groups use the **Groups** workspace in the [Microsoft Intune administration console](https://manage.microsoft.com/). The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
 
 -   Alerts
 -   Software updates
--   [!INCLUDE[epshort](../includes/epshort_md.md)]
+-   Endpoint Protection
 -   Policy
 -   Software management
 
@@ -102,7 +102,7 @@ Also, your group hierarchy is displayed with status summaries to help you identi
 
 ## Create a device group
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **Overview** &gt; **Create Group**.
+1.  In the [Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **Overview** &gt; **Create Group**.
 
 2.  Provide a name and optional description for the group and select a device group as the parent group. Choose **Next**.
 
@@ -110,7 +110,7 @@ Also, your group hierarchy is displayed with status summaries to help you identi
 
     -   **Computer:** Specify whether to include all members of the parent group, the Organizational Units (OU) you want to include or exclude, and the domains you want to include or exclude. The OU and domain information for a computer is obtained from inventory.
 
-    -   **Mobile:** Specify to include only mobile devices that are managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], those managed by Exchange ActiveSync, or both.
+    -   **Mobile:** Specify to include only mobile devices that are managed by Intune, those managed by Exchange ActiveSync, or both.
 
     -   **All devices:** This option includes all devices with no exclusions based on criteria.
 
@@ -123,7 +123,7 @@ You can find the newly created group in the **Groups** list, in the **Groups** w
 
 ## Create a user group
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **Overview** &gt; **Create Group**.
+1.  In the [Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **Overview** &gt; **Create Group**.
 
 2.  Provide a name and optional description for the group and select a user group as the parent group. Choose **Next**.
 
@@ -175,7 +175,7 @@ After you configure filtered group views for a service administrator, that admin
 
 ### Configure filtered group views
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin** &gt; **Administrator Management** &gt; **Service Administrators**.
+1.  In the [Intune administration console](https://manage.microsoft.com), choose **Admin** &gt; **Administrator Management** &gt; **Service Administrators**.
 
 2.  Select the service administrator for whom you want to filter groups, and then click **Manage Groups**.
 
@@ -208,3 +208,6 @@ Each policy has an **Intended Value** and a **Status**. The intended value is wh
 
 > [!NOTE]
 > Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
+
+### See also
+[Plan your user and device groups](plan-your-user-and-device-groups.md)

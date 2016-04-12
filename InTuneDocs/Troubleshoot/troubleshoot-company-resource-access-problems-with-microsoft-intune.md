@@ -10,7 +10,7 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 author: Nbigman
 ---
 # Troubleshoot company resource access problems with Microsoft Intune
-Use the error and status codes in this topic to help you troubleshoot problems when a [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] action returns an error code.
+Use the error and status codes in this topic to help you troubleshoot problems when a Microsoft Intune action returns an error code.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 

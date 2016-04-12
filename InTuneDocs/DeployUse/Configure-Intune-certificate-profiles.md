@@ -10,7 +10,7 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 author: Lizap
 ---
 # Configure Intune certificate profiles
-After your infrastructure and certificates are configured as described in [Configure certificate infrastructure](Configure-certificate-infrastructure.md), you can configure certificate profiles:
+After your infrastructure and certificates are configured as described in [Configure certificate infrastructure](configure-certificate-infrastructure.md), you can configure certificate profiles:
 
 **Task 1** - Export the Trusted Root CA certificate 
 **Task 2** - Create Trusted CA certificate profiles 
@@ -44,7 +44,7 @@ You must create a **Trusted certificate profile** before you can create a SCEP o
 
     **Windows &gt; Trusted Certificate Profile (Windows Phone 8.1 and later)**
 
-    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
 
 3.  Provide the requested information to configure the trusted certificate profile settings for Android, iOS, Mac OS X, Windows 8.1, or Windows Phone 8.1. In the  **Certificate file** setting,  import the Trusted Root CA certificate (**.cer**) that you exported from your issuing CA. The **Destination store** setting applies only to devices running Windows 8.1 and later, and only if the device has more than one certificate store.
 
@@ -72,7 +72,7 @@ After you have created a Trusted CA certificate profile, create SCEP or .PFX cer
 
     **Windows &gt; SCEP Certificate Profile (Windows Phone 8.1 and later)**
 
-    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
 
 3.  Follow the instructions on the profile configuration page to configure the SCEP certificate profile settings.
 
@@ -96,7 +96,7 @@ The new policy displays in the **Policy** workspace, and can now be deployed.
     
     -    **iOS > PKCS #12 (.PFX) Certificate Profile (iOS 7.1 and later)**    
 
-    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
 
 3.  Provide the information requested on the policy form. 
 
@@ -116,7 +116,7 @@ Certificate profiles install only on applicable devices based on the platform yo
 
 -   Although each profile is deployed separately, both the Trusted Root and the SCEP/.PFX profile must be deployed or else the SCEP/.PFX certificate policy will fail.
 
-You deploy certificate profiles the same way you deploy other policy for [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. For information about how to deploy and manage policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+You deploy certificate profiles the same way you deploy other policy for Intune. For information about how to deploy and manage policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
 
 ##  Next steps
 

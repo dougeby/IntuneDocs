@@ -23,11 +23,11 @@ When a targeted user attempts to connect to a file using a supported app such as
 >[!IMPORTANT]
 >Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
 
->If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, you will need to submit a request for access.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
+>If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, and would like to do so, you must to submit a request.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
 
 **Before** configuring conditional access policy for SharePoint Online, you must:
 - Have a **SharePoint Online subscription** is required and users must be licensed for SharePoint Online.
-- Have a subscription for the **Enterprise Mobility Suite** or **Azure Active Directory Premium**
+- Have a subscription for the **Enterprise Mobility Suite** or **Azure Active Directory Premium**.
 
   To connect to the required files, the device must:
 -   Be **enrolled** with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or a domain joined PC.
@@ -45,7 +45,7 @@ If a condition is not met, the user is presented with one of the following messa
 
 -   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website where they can find information about the problem, and how to remediate it.
 
-## Support for mobile Devices
+## Support for mobile devices
 - iOS 7.1 and later
 - Android 4.0 and later, Samsung Knox Standard 4.0 or later
 - Windows Phone 8.1 and later
@@ -99,7 +99,7 @@ Next, configure the policy to require that only managed and compliant devices ca
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Conditional Access** &gt; **SharePoint Online Policy**.
 ![SharePoint Online Policy page](../media/IntuneSASharePointOnlineCAPolicy.png)
 
-2.  Select **Enable conditional access policy for SharePoint Online.**.
+2.  Select **Enable conditional access policy for SharePoint Online**.
 
 3.  Under **Application access**, you can choose to apply conditional access policy to:
 
@@ -107,11 +107,11 @@ Next, configure the policy to require that only managed and compliant devices ca
 
         This will require that any device used to access **SharePoint Online**,  to be enrolled in Intune and compliant with the policies.  Any client application using **modern authentication** is subject to the conditional access policy. If the platform is currently not supported by Intune, access to **SharePoint Online** is blocked.
         >[!TIP]
-        >You many not see this option if you not already using conditional access for PCs.  Use the **Specific platforms** instead. Conditional access for PCs is not currently available to all Intune customers.   You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
+        >You may not see this option if you not already using conditional access for PCs.  Use the **Specific platforms** instead. Conditional access for PCs is not currently available to all Intune customers.   You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
 
     -   **Specific platforms**
 
-        If you choose the **Specific platforms** option, you will see a list of platforms that you can individually select.   Conditional access policy will apply to any client app that is using modern authentication, but only on the platforms you select.
+        If you choose the **Specific platforms** option, you will see a list of platforms that you can individually select.   Conditional access policy will apply to any client app that is using modern authentication on the platforms you specify.
 
      **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Office clients.
      -   The ADAL based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, the user is directed to a sign-in web page.
