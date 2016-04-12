@@ -9,7 +9,7 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 author: Nbigman
 ---
 # Troubleshoot client setup in Microsoft Intune
-Use the following information to help you troubleshoot common client setup problems.
+Use the following information to help you troubleshoot common client setup problems. If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
 ## What to do if client installation fails
 
@@ -17,8 +17,7 @@ Use the following information to help you troubleshoot common client setup probl
 
 -   You can have an email sent to selected recipients when a client software deployment failure alert occurs by configuring a notification rule in the **Admin** workspace. For more information, see [Get notified by Microsoft Intune alerts](get-notified-by-microsoft-intune-alerts.md).
 
--   Intune displays the critical alert **Client Software Deployment Failure** if the client software fails to deploy. This will display in the **System Overview** page and **Alerts** pages of the [Microsoft Intune administration console](https://manage.microsoft.com/). Check for alerts by using the following procedure:
-
+-   Intune displays the critical alert **Client Software Deployment Failure** if the client software fails to deploy. This will display in the **System Overview** page and **Alerts** pages of the [Microsoft Intune administration console](https://manage.microsoft.com/). Here's how to check for alerts:
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Alerts** &gt; **Overview**.
 

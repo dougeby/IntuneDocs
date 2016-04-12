@@ -1,5 +1,5 @@
 ---
-title: Create apps for Windows PCs|Microsoft Intune
+title: Add apps for Windows PCs|Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: 
 author: robstackmsft
 ---
-# Deploy apps to Windows PCs in Microsoft Intune
+# Add apps for Windows PCs in Microsoft Intune
 
 Use the information in this topic to learn about the three steps for Microsoft Intune app deployment; configuration, deployment, and monitoring. If you want to learn some of the basic concepts for app deployment, see [Plan for app deployment in Microsoft Intune](../PlanDesign/plan-for-app-deployment-in-microsoft-intune.md).
 

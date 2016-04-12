@@ -12,6 +12,9 @@ author: Nbigman
 
 Listed here are some issues that may arise from your [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] policy configuration, and troubleshooting recommendations for those issues.
 
+If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
+
+
 ### Is policy applied to device?
 **Issue:** It's not clear if a particular policy is being applied to a device, or a device behaves contrary to a policy.
 
@@ -78,7 +81,7 @@ This can occur if the time on the local system is out of sync by five minutes or
 
 To resolve this issue, set the local system time as close as possible to Internet time, or to the time set on the domain controllers on the network.
 
-## Cannot change security policy for various MDM devices
+### Cannot change security policy for various MDM devices
 Windows Phone and Windows RT devices do not allow security policies set via MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4. The more restrictive policy has already been applied to the device.
 
 Depending on the device platform, if you want to change the policy  to a less secure value you may need to reset security policies.
@@ -89,6 +92,6 @@ Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may ne
 ### Android devices do not force Security Policy Changes without end user Acceptance
 Android MDM does not allow the service to force initial policy changes on devices as other platforms allow. This is due to Android functionality, and is not related to the Intune service. Android devices will prompt the end user via the notification window of the related policy change (i.e. Password, Encryption, etc.).  The end user must respond to the prompt and once accepted the policy should be applied.
 
-### See Also
+### See also
 [Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
 [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)

@@ -61,7 +61,7 @@ You can find other helpful information in these community resources:
 
 -   [The Intune forums](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-## General troubleshooting guidelines
+### See also
 [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 [Troubleshoot company resource access problems with Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)

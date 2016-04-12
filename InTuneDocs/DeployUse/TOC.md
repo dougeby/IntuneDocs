@@ -4,7 +4,6 @@
 
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
-## [What's new](what-s-new-in-microsoft-intune.md)
 
 ## [Enroll devices](enroll-devices-in-microsoft-intune.md)
 ### [Get ready to enroll devices in Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
@@ -30,6 +29,23 @@
 ## [Configure devices](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 ### [Manage settings and features on your devices with policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+#### [iOS general](ios-configuration-policy-settings-in-microsoft-intune.md)
+#### [iOS custom](ios-custom-policy-settings-in-microsoft-intune.md)
+#### [Android general](android-configuration-policy-settings-in-microsoft-intune.md)
+#### [Android custom](android-custom-policy-settings-in-microsoft-intune.md)
+#### [Windows 8 and Windows 8.1 general](windows-configuration-policy-settings-in-microsoft-intune.md)
+#### [Windows Phone 8.1 general](windows-phone-configuration-policy-settings-in-microsoft-intune.md)
+#### [Windows Phone 8.1 custom](windows-phone-custom-policy-settings-in-microsoft-intune.md)
+#### [Windows 10 desktop and mobile custom](windows-10-configuration-policy-settings-in-microsoft-intune.md)
+#### [Windows 10 desktop and mobile custom](windows-10-custom-policy-settings-in-microsoft-intune.md)
+#### [Windows Team general](windows-team-configuration-policy-settings-in-microsoft-intune.md)
+#### [Windows edition upgrade](edition-upgrade-policy-settings-in-microsoft-intune.md)
+#### [Mac OS X general](mac-os-x-configuration-policy-settings-in-microsoft-intune.md)
+#### [Mac OS X custom](mac-os-x-custom-policy-settings-in-microsoft-intune.md)
+#### [Exchange ActiveSync general](exchange-activesync-policy-settings-in-microsoft-intune.md)
+#### [Terms and conditions](terms-and-condition-policy-settings-in-microsoft-intune.md)
+#### [General settings (legacy)](mobile-device-security-policy-settings-in-microsoft-intune.md)
+
 ### [Enable access to company resources](enable-access-to-company-resources-with-microsoft-intune.md)
 #### [Enable access to company resources using certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md)
 #### [Help users connect to company networks using Wi-Fi profiles](help-users-connect-to-company-networks-using-wi-fi-profiles-with-microsoft-intune.md)
@@ -37,26 +53,32 @@
 #### [Configure access to corporate email using email profiles](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Common PC management tasks with the Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
-## [Protect devices](protect-data-and-devices-with-microsoft-intune.md)
+## [Protect devices](protect-your-devices-with-microsoft-intune.md)
 ### [Protect Windows devices with multi-factor authentication](protect-windows-devices-with-multi-factor-authentication.md)
-### [Help protect iOS devices with Activation Lock bypass](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Control Microsoft Passport settings on devices](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Windows PC software updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
 #### [Windows Firewall for PCs](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
 #### [Windows PC Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
 
-## [Deploy apps](create-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Create apps for mobile devices](create-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Create apps for Windows PCs](create-apps-for-windows-pcs-in-microsoft-intune.md)
+## [Retire devices]
+### [Bypass Activation Lock on iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
+<!--- whatever comes out of help Protect
+what does Nathan propose?--->
+
+## [Add and deploy apps](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Add apps for mobile devices](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Add apps for Windows PCs](create-apps-for-windows-pcs-in-microsoft-intune.md)
 ### [Deploy apps](deploy-apps-in-microsoft-intune.md)
 ### [Monitor apps](monitor-apps-in-microsoft-intune.md)
 ### [Manage volume-purchased apps](manage-volume-purchased-apps-in-microsoft-intune.md)
+#### [Manage volume-purchased iOS apps](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+#### [Manage volume-purchased Windows apps](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
 
 ## [Configure apps](update-apps-using-microsoft-intune.md)
 ### [Update apps ](update-apps-using-microsoft-intune.md)
-### [Mobile app configuration policies](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
-### [Manage Internet access using managed browser policies](manage-internet-access-using-managed-browser-policies.md)
+### [iOS app configuration policies](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Manage Internet access](manage-internet-access-using-managed-browser-policies.md)
 
 
 ## [Protect apps and data](protect-apps-and-data-with-microsoft-intune.md)
@@ -73,28 +95,32 @@
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
-### [Introduction to mobile app management policies](introduction-to-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Azure portal for MAM polices](azure-portal-for-microsoft-intune-mam-policies.md)
+### [Protect app data](introduction-to-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md)
 #### [Get ready to configure MAM policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Create and deploy MAM policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [For Android](android-mam-policy-settings.md)
-#### [For iOS](ios-mam-policy-settings.md)
+#### [MAM policies for Android](android-mam-policy-settings.md)
+#### [MAM policies for iOS](ios-mam-policy-settings.md)
 #### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune)
 #### [MAM with iOS Open In](microsoft-intune-mobile-app-management-policies-and-ios-open-in)
 #### [End user experience](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies)
 
 
 
-### [Decide how to prepare apps for mobile application management](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
-#### [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
-#### [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
-#### [Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
+### [Prepare line of business apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
+#### [Wrap iOS apps](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+#### [Wrap Android apps](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+#### [Use the SDK when you write an app](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 #### [Microsoft apps you can manage with Intune](microsoft-apps-you-can-manage-with-intune.md)
+
+
 
 ## [Retire apps and data](retire-apps-using-microsoft-intune.md)
 ### [Retire apps ](retire-apps-using-microsoft-intune.md)
 ### [Help protect your data with remote wipe, remote lock, or passcode reset](help-protect-your-data-with-remote-wipe-remote-lock-or-passcode-reset-using-microsoft-intune.md)
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
+<!--- wipe for exchanged managed devices --->
 
+## [What's new](what-s-new-in-microsoft-intune.md)
 
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)

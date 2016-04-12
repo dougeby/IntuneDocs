@@ -12,6 +12,9 @@ author: Nbigman
 # Troubleshoot app deployment problems in Microsoft Intune
 This topic helps you solve app deployment problems with Microsoft Intune.
 
+If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
+
+
 ## <a name="BKMK_TypicalProblems"></a>Help for typical app deployment problems
 
 ### If you can’t log in to the Microsoft Intune company portal
@@ -68,7 +71,7 @@ This topic helps you solve app deployment problems with Microsoft Intune.
 
 ### If managed apps are not reporting installation status
 
--   Installation status was not collected for managed app installations prior to the Microsoft Intune service update in November 2014. For devices that installed managed apps prior to this service update, update each associated app deployment with the appropriate deployment action (for example, **Available install**). Each device will update the app during the automatic check for available apps. For more information, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
+Installation status was not collected for managed app installations prior to the Microsoft Intune service update in November 2014. For devices that installed managed apps prior to this service update, update each associated app deployment with the appropriate deployment action (for example, **Available install**). Each device will update the app during the automatic check for available apps. For more information, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
 
 ## <a name="BKMK_SoftDistErrorCodes"></a>App deployment error codes
 The following table lists common errors that may occur during Intune app deployment, the likely causes, and possible solutions to help you troubleshoot them.

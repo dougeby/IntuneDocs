@@ -25,8 +25,10 @@ ms.suite: ems
 
 ---
 
-
 # Migrating to Intune - Pilot Intune
+
+>[!NOTE]
+>This topic is part of a larger migration guide. If you'd like to start at the beginning of the guide, check out the [main topic](migrating-to-intune.md). To get a downloadable copy of this entire guide, visit the [TechNet Gallery](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387).
 
 Now you’re ready to start your pilot deployment of Intune with selected users and devices. Remember, the devices you test in the pilot deployment need to be unenrolled from your existing enterprise mobility management platform before they are enrolled in Intune.
 

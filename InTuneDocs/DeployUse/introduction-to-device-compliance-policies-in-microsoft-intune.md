@@ -1,5 +1,5 @@
 ---
-title: Introduction to device compliance policies in Microsoft Intune
+title: Introduction to device compliance policies | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -11,14 +11,14 @@ author: karthikaraman
 ---
 # Introduction to device compliance policies in Microsoft Intune
 ## What is a compliance policy?
-Protecting devices that are used to access your company resources is an important step to protecting your company apps and data. You need to make sure that the devices comply with certain rules like using a PIN to access the device, and encryption of data stored on the device. A set of such rules is referred to as a compliance policy.
+To protect company data, you need to make sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device. A set of such rules is referred to as a compliance policy.
 
 ## How should I use compliance policies?
 You can use compliance policies with conditional access policies to only allow access to devices that comply with compliance policy rules. Read the [restrict access to emial and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article to understand how the two policies can be used together.
 
-You can also use compliance policies independently of conditional access. When used independently, the targeted devices are evaluated and reported with their compliance status. For example, you might want to report about how many devices are not encrypted, or which devices are jailbroken or rooted. However, when used independently, no access restrictions are in place.
+You can also use compliance policies independently of conditional access. When used independently, the targeted devices are evaluated and reported with their compliance status. For example, you might want to report about how many devices are not encrypted, or which devices are jailbroken or rooted. However, when used independently, no access restrictions to company resources are in place.
 
-You deploy compliance policies to users and devices. When a compliance policy is deployed to a user, then all of the user's devices are checked for compliance.
+You deploy compliance policies to users. When a compliance policy is deployed to a user, then all of the user's devices are checked for compliance.
 
 The following table lists the device types supported by compliance policies and how noncompliant settings are managed when the policy is used with a conditional access policy.
 

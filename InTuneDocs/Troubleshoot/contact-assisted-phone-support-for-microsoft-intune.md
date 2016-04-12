@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 author: Nbigman
 ---
-# Contact Assisted Phone Support for Microsoft Intune
+# Contact assisted phone support for Microsoft Intune
 
 ## Phone numbers and business hours are listed in the following table.
 

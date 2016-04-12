@@ -14,8 +14,7 @@ author: Nbigman
 
 This topic tells you how to9 open a service request or call for phone support in many languages.
 
-For self help with Intune, see [Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md) or the [Documentation for Microsoft Intune](documentation-for-microsoft-intune.md) on TechNet, or click the Help link located at the top right-hand corner of the Intune admin console.
-
+For self help with Intune, see [General troubleshooting tips for Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) or any of the troubleshooting topics for specific issues.
 ## To create an online service request
 
 1.  Sign in to Intune and then visit the [Office 365 admin center](https://portal.office.com/Support/SupportEntry.aspx).
@@ -113,4 +112,13 @@ Our role is to:
 -   Continually gather customer feedback on how to improve the service through surveys
 
 ### See also
-[Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md)
+[General troubleshooting tips for Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md)
+[Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
+[Troubleshoot company resource access problems with Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
+[Troubleshoot app deployment problems in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
+[Troubleshoot device enrollment in Intune](troubleshoot-device-enrollment-in-intune.md)
+[Troubleshoot policies in Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
+[Troubleshoot client setup in Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
+[Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
+[Documentation for Microsoft Intune](documentation-for-microsoft-intune.md)
+[Frequently asked questions for Microsoft Intune](frequently-asked-questions-for-microsoft-intune.md)
