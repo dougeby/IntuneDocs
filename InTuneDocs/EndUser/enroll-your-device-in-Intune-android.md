@@ -2,11 +2,12 @@
 title: Enroll your Android device in Intune
 ms.custom: na
 ms.reviewer: na
+ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
-author:
+author: staciebarker
 ---
 
 # Enroll your Android device in Intune
@@ -24,9 +25,10 @@ To see instructions with screenshots, see [Intune End-user enrollment instructio
    
 
 2.  If your IT admin set up company terms and conditions, tap **ACCEPT** to accept the terms.
-
     
-    If you see a message asking if you will allow the Company Portal to access your contacts or to make and manage phone calls, tap **ALLOW**. Microsoft does NOT access your contacts or manage your phone calls. See "For Android 6.0 or later devices only" in [Sign in to the Company Portal](https://technet.microsoft.com/library/mt502762(TechNet.10).aspx#BKMK_andr_enroll_devc) for details. 
+  	**If you're using Android 6.0 or later**: 
+
+	You'll see a message asking if you will allow the Company Portal to access your contacts or to make and manage phone calls. When you see the message, tap **ALLOW**. Microsoft does NOT access your contacts or manage your phone calls. When you allow access, all you're doing is allowing the Company Portal app to see your phone number and an ID called an IMEI. For more details, see [Sign in to the Company Portal](sign-in-to-the-company-portal-app-android.md). 
 
 3.  On the **Company Access Setup** screen, tap **BEGIN**.
    
@@ -62,7 +64,7 @@ For instructions with screenshots, see [Intune End-user enrollment instructions]
 
 1.  On the Company Portal Welcome screen, tap **Sign in**, and then sign in with your work or school account.
 
-  2.  If your IT admin set up company terms and conditions, tap **ACCEPT** to accept the terms.
+2.  If your IT admin set up company terms and conditions, tap **ACCEPT** to accept the terms.
 
   
 

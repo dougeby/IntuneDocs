@@ -27,37 +27,35 @@ When  you enroll your device in Intune, you are giving your IT administrator per
 
 **What IT cannot see**
 
--   Call history
+-   Call and Web history
 
--   Text messages
+-	Location
 
--   Personal email, contacts, and calendar
+-   Email and text messages
 
--   Web history
+-   Contacts
 
--   Location
+-	Passwords
+
+-   Calendar
 
 -   Camera roll
 
--   Personal data
-
 **What IT can see**
+
+-   Model
+
+-   Serial number
+
+-   Operating system
+
+-   App names
 
 -   Owner
 
 -   Device name
 
--   Serial number
-
 -   Manufacturer
-
--   Model
-
--   Operating system
-
--   Company apps
-
--   Personal apps
 
 When your device is enrolled, your IT administrator can:
 
@@ -85,7 +83,7 @@ When your device is enrolled, your IT administrator can:
 
 -   Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, roaming charges may be incurred.
 
-For the steps on how to enroll your device, see [Enroll your iOS device in Intune](enroll-your-ios-device-in-intune.md) or [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
+For the steps on how to enroll your device, see [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) or [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
 
 ### See also
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

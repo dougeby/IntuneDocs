@@ -1,11 +1,14 @@
 ---
 title: Remove your device from the Company Portal
-ms.reviewer: na
 ms.custom: na
+ms.reviewer: na
+ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid:
+ms.assetid:  
+author: Staciebarker
+---
 
 # Remove your device from the Company Portal
 
@@ -19,7 +22,7 @@ To remove your device:
 
 2.  Tap **Remove**.
 
-    ![](./media/iwp-1-tap-reset-passcode.png)
+    ![remove-device](./media/iwp-1-tap-reset-passcode.png)
 
 Your device has now been removed.
 
