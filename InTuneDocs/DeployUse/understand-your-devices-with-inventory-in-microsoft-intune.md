@@ -35,7 +35,7 @@ To view the inventory collected by mobile devices, run the [Mobile Device Invent
 |**Serial number**|No|Yes|Yes|Yes|Yes|No|Yes|-|
 |**Total Storage Space**|No|Yes|Yes|No|Yes|No|Yes|-|
 |**Free Storage Space**|No|Yes|Yes|No|Yes|No|Yes|-|
-|**Phone Number**|No|Yes|No|Yes|No|Yes|No|Phone number is masked with &#42; except for the last 4 digits.|
+|**Phone Number**|No|Yes|No|Yes|No|Yes|No|Phone number for BYOD phone displays &#42; + last 4 digits. Full number displayed for org-owned phone.|
 |**IMEI**|Yes|Yes|No|Yes|No|Yes|No|-|
 |**MEID**|No|Yes|No|No|No|No|No|Mobile Equipment Identifier|
 |**Wi-Fi MAC**|No|Yes|Yes|Yes|Yes|Yes|Yes|-|
