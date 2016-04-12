@@ -1,5 +1,5 @@
 ---
-title: Help protect your data with remote wipe, remote lock, or passcode reset using Microsoft Intune
+title: Use remote wipe, remote lock, or passcode reset | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune

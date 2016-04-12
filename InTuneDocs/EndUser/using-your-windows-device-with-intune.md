@@ -30,7 +30,8 @@ The information in this section will help you with actions you can take after yo
 - [Unenroll your device from Intune](unenroll-your-device-from-intune-windows.md)</br>
 - [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
 - [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)</br>
-- [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)
+- [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)</br>
+- [Sync your device manually](sync-your-device-manually-windows.md)
 
 ## Fix issues with your device
 

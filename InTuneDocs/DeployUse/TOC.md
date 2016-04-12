@@ -55,12 +55,16 @@
 
 ## [Protect devices](protect-your-devices-with-microsoft-intune.md)
 ### [Protect Windows devices with multi-factor authentication](protect-windows-devices-with-multi-factor-authentication.md)
-### [Help protect iOS devices with Activation Lock bypass](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Control Microsoft Passport settings on devices](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [Windows PC software updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
 #### [Windows Firewall for PCs](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)
 #### [Windows PC Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
+
+## [Retire devices]
+### [Bypass Activation Lock on iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
+<!--- whatever comes out of help Protect
+what does Nathan propose?--->
 
 ## [Add and deploy apps](add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Add apps for mobile devices](add-apps-for-mobile-devices-in-microsoft-intune.md)
@@ -109,10 +113,13 @@
 #### [Use the SDK when you write an app](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 #### [Microsoft apps you can manage with Intune](microsoft-apps-you-can-manage-with-intune.md)
 
+
+
 ## [Retire apps and data](retire-apps-using-microsoft-intune.md)
 ### [Retire apps ](retire-apps-using-microsoft-intune.md)
 ### [Help protect your data with remote wipe, remote lock, or passcode reset](help-protect-your-data-with-remote-wipe-remote-lock-or-passcode-reset-using-microsoft-intune.md)
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
+<!--- wipe for exchanged managed devices --->
 
 ## [What's new](what-s-new-in-microsoft-intune.md)
 
