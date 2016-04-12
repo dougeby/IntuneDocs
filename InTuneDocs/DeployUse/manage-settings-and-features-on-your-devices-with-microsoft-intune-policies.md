@@ -47,24 +47,19 @@ For a complete list of Intune policies, see [Microsoft Intune policy reference](
 
 5.  Configure the required policy settings, then click **Save Policy**.
 
-	If you need help with any policy settings, choose your policy from the following list to get more help:
+	If you need help with any policy settings, choose your policy type from the following list:
 
-	- [General configuration settings for iOS devices](ios-configuration-policy-settings-in-microsoft-intune.md)
-	- [Custom configuration settings for iOS devices](ios-custom-policy-settings-in-microsoft-intune.md)
-	- [General configuration settings for Android devices](android-configuration-policy-settings-in-microsoft-intune.md)
-	- [Custom configuration settings for Android devices](android-custom-policy-settings-in-microsoft-intune.md)
-	- [General configuration settings for Windows 8 and Windows 8.1 devices](windows-configuration-policy-settings-in-microsoft-intune.md)
-	- [General configuration settings for Windows Phone 8.1 devices](windows-phone-configuration-policy-settings-in-microsoft-intune.md)
-	- [Custom configuration settings for Windows Phone 8.1 devices](windows-phone-custom-policy-settings-in-microsoft-intune.md)
-	- [General configuration settings for Windows 10 desktop and mobile devices](windows-10-configuration-policy-settings-in-microsoft-intune.md)
-	- [Custom configuration settings for Windows 10 desktop and mobile devices](windows-10-custom-policy-settings-in-microsoft-intune.md)
-	- [General configuration settings for Windows Team devices](windows-team-configuration-policy-settings-in-microsoft-intune.md)
-	- [Edition upgrade settings for Windows devices](edition-upgrade-policy-settings-in-microsoft-intune.md)
-	- [General configuration settings for Mac OS X devices](mac-os-x-configuration-policy-settings-in-microsoft-intune.md)
-	- [Custom configuration settings for Mac OS X devices](mac-os-x-custom-policy-settings-in-microsoft-intune.md)
-	- [General configuration settings for devices managed by Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
-	- [Terms and conditions policy settings for enrolled devices](terms-and-condition-policy-settings-in-microsoft-intune.md)
-	- [General mobile device settings (legacy)](mobile-device-security-policy-settings-in-microsoft-intune.md)
+	- [Settings for iOS devices](ios-policy-settings-in-microsoft-intune.md)
+	- [Settings for Android devices](android-policy-settings-in-microsoft-intune)
+	- [Settings for Windows 8 and Windows 8.1 devices](windows-configuration-policy-settings-in-microsoft-intune.md)
+	- [Settings for Windows Phone 8.1 devices](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
+	- [Settings for Windows 10 desktop and mobile devices](windows-10-policy-settings-in-microsoft-intune.md)
+	- [Settings for Windows Team devices](windows-team-configuration-policy-settings-in-microsoft-intune.md)
+	- [Settings for Windows edition upgrade](edition-upgrade-policy-settings-in-microsoft-intune.md)
+	- [Settings for Mac OS X devices](mac-os-x-policy-settings-in-microsoft-intune.md)
+	- [Settings for Exchange ActiveSync](exchange-activesync-policy-settings-in-microsoft-intune.md)
+	- [Settings for the terms and conditions policy](terms-and-condition-policy-settings-in-microsoft-intune.md)
+	- [General settings for mobile devices (legacy)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
 4.  In the confirmation dialog box, click **Yes** to deploy the policy now, or click **No** to create the policy without deploying it.
 

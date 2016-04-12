@@ -10,13 +10,16 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 author: robstackmsft
 ---
 # Windows Phone configuration policy settings in Microsoft Intune
+
+## General configuration settings
+
 Use the Microsoft Intune **Windows Phone general configuration policy** to configure the following settings for Windows Phone 8.1 devices:
 
 -   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
 -   **Compliant and noncompliant apps** - Specify a list of apps that are compliant, or not compliant in your company. Windows Phone devices can block, or allow installation of these apps.
 
-## Password settings
+### Password settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
@@ -31,44 +34,44 @@ Use the Microsoft Intune **Windows Phone general configuration policy** to confi
 |**Remember password history**|Specifies whether previously used passwords are remembered to prevent the user from using them again.|Yes|Yes|
 |**Remember password history** – **Prevent reuse of previous passwords**|Specifies how many previously used passwords are remembered.|Yes|Yes|
 
-## Encryption settings
+### Encryption settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
 |**Require encryption on mobile device**|Requires the data on supported mobile devices to be encrypted.<br>For Windows Phone 8 devices, you must set this to **Yes**.|Yes|Yes|
 
-## System settings
+### System settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
 |**Allow screen capture**|Lets the user capture the contents of the screen as an image file.|No|Yes|
 |**Allow diagnostic data submission**|Allows the device to submit diagnostic information to Microsoft.|No|Yes|
 
-## Cloud settings – accounts and synchronization
+### Cloud settings – accounts and synchronization
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
 |**Allow Microsoft account**|Allows a Microsoft account to be linked to the device.|No|Yes|
 
-## Email settings
+### Email settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
 |**Allow custom email accounts**|Allow the device to connect to non-Microsoft email accounts.|No|Yes|
 
-## Application settings - browser
+### Application settings - browser
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
 |**Allow web browser**|Allows or blocks the built-in web browser on devices.|No|Yes|
 
-## Application settings - apps
+### Application settings - apps
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
 |**Allow application store**|Lets users connect to the app store from the device.|No|Yes|
 
-## Device capabilities settings - hardware
+### Device capabilities settings - hardware
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
@@ -82,13 +85,13 @@ Use the Microsoft Intune **Windows Phone general configuration policy** to confi
 |**Allow NFC**|Allows operations that use near field communication.|No|Yes|
 |**Allow Bluetooth**|Enables or disables the Bluetooth functionality of the device.|No|Yes|
 
-## Device capabilities settings - features
+### Device capabilities settings - features
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
 |**Allow copy and paste**|Allow copy and paste functionality on devices.|No|Yes|
 
-## Settings for compliant and noncompliant apps
+### Settings for compliant and noncompliant apps
 In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant or noncompliant apps using the following information:
 
 > [!NOTE]
@@ -106,9 +109,9 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 > If you specify a list of allowed apps for Windows Phone 8.1 devices, you must add the Company Portal app to this list, or else it will be blocked.
 
 
-## Reference information for compliant and noncompliant apps
+### Reference information for compliant and noncompliant apps
 
-### <a name="BKMK_URL"></a>How to specify URLs to app stores
+#### How to specify URLs to app stores
 To specify an app URL in the compliant and noncompliant apps list, use the following format:
 
 From the [Windows Phone Apps+Games](http://www.windowsphone.com/en-us/store/overview) page, search for the app you want to use.
@@ -117,21 +120,21 @@ Open the app’s page, and copy the URL to the clipboard. You can now use this a
 
 **Example:** Search the store for the Skype app. The URL you use will be **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
-## Windows Phone custom policy settings in Microsoft Intune
+## Custom policy settings 
 Use the Microsoft Intune **Windows Phone custom configuration policy** to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on **Windows Phone 8.1 devices**. These are standard settings that many mobile device manufacturers use to control device features.
 
 This capability is intended to allow you to deploy Windows Phone settings that are not configurable with an Intune general configuration policy. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 For help creating OMA-URI settings for Windows Phone devices, see [Windows Phone 8.1 MDM protocol documentation](http://technet.microsoft.com/library/dn499787.aspx).
 
-## General settings
+### General settings
 
 |Setting name|Details|
 |----------------|--------------------|
 |**Name**|Enter a unique name for the policy to help you identify it in the Intune console.|
 |**Description**|Provide a description that gives an overview of the policy and other relevant information that helps you to locate it.|
 
-## OMA-URI settings
+### OMA-URI settings
 
 In the **OMA-URI Settings** section, click **Add** to add a setting. You can also edit or delete an existing setting.
 

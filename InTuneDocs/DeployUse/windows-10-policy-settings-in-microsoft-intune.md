@@ -13,7 +13,7 @@ author: robstackmsft
 
 Use the policy settings listed in this topic to help you configure settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices.
 
-## Windows 10 general configuration policy
+## General configuration policy settings
 
 Use the Microsoft **general configuration policy** for Windows 10 to configure general settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices:
 
@@ -161,21 +161,21 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure g
 |----------------|---------------|----------------------|---------------------|
 |**Allow automatic updates**|Enable this setting to allow automatic updates. Then, configure one of the following settings to control update behavior:<br /><br />**Notify download**<br /><br />**Auto install at maintenance time**<br /><br />**Auto install and reboot at maintenance time**<br /><br />**Auto install and reboot at scheduled time** **Note:** When this option is selected, you can also configure the following settings:  **Suppress notification to end user** and **Define install day for scheduled updates**.|Yes|No|
 
-## Windows 10 custom policy settings in Microsoft Intune
+## Custom policy settings
 Use the Microsoft Intune **custom configuration policy** for Windows 10 and Windows 10 Mobile to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on Windows 10 and Windows 10 Mobile devices. These are standard settings that many mobile device manufacturers use to control device features.
 
 This capability is intended to allow you to deploy Windows 10 settings that are not configurable with an Intune general configuration policy. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 For a list of OMA-URI settings that you can configure on enrolled Windows 10 devices, see [Custom URI settings for Windows 10 devices](custom-uri-settings-for-Windows-10-devices.md).
 
-## General settings
+### General settings
 
 |Setting name|Details|
     |----------------|--------------------|
     |**Name**|Enter a unique name for the policy to help you identify it in the Intune console.|
     |**Description**|Provide a description that gives an overview of the policy and other relevant information that helps you to locate it.|
 
-## OMA-URI settings
+### OMA-URI settings
 
 |Setting name|Details|
     |--------|--------------------|
@@ -186,7 +186,7 @@ For a list of OMA-URI settings that you can configure on enrolled Windows 10 dev
     |**Value**|Specify the value to associate with the OMA-URI you specified previously.|
 
 
-## Custom URI settings for Windows 10 devices
+### Custom URI settings for Windows 10 devices
 This topic lists the settings that you can configure for Windows 10 and Windows 10 Mobile devices in a Microsoft Intune **Windows 10 Custom Policy**.
 
 For information about how to create and deploy these policies, see [Windows 10 custom policy settings in Microsoft Intune](Windows-10-custom-policy-settings-in-microsoft-intune.md).
@@ -200,7 +200,7 @@ For information about how to create and deploy these policies, see [Windows 10 c
 > 
 > All devices must be enrolled with Intune if you want to use the Windows Custom URI Policy.
 
-## Policy
+### Policy
 
 |Policy name|Supports|Details|
 |---------------|------------|-----------|
@@ -274,7 +274,7 @@ For information about how to create and deploy these policies, see [Windows 10 c
 |**Update/DeferUpgradePeriod**|Both|**Description:** Policy to defer feature upgrades for up to 8 months<br /><br />**URI full path:** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Data type:** Integer<br /><br />**Allowed values:** 0: Apply updates immediately; 1-8: number of months to defer feature upgrades.<br /><br />**Default value:0**<br /><br />For more information, see:<br /><br />[Introduction to Windows 10 servicing](https://technet.microsoft.com/library/mt598226(v=vs.85).aspx)<br /><br />[Plan for Windows 10 deployment](https://technet.microsoft.com/library/mt574241(v=vs.85).aspx)|
 |**Update/PauseDeferrals**|Both|**Description:** Allows a CBB machine to stop receiving updates and upgrades for 5 weeks. This should be used in case there is an issue with an update.<br /><br />**URI full path:** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0**: Apply updates immediately (default)<br /><br />**1**: Pause updates and upgrades (expires after 5 weeks)<br /><br />**Default value:0**|
 
-## Windows Defender
+### Windows Defender
 
 |Policy name|Supports|Details|
 |---------------|------------|-----------|
@@ -304,7 +304,7 @@ For information about how to create and deploy these policies, see [Windows 10 c
 |**ExcludedPaths**|Desktop|**URI full path:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Data type:** String<br /><br />**Allowed values:**<br /><br />*&lt;list of paths separated by semi-colon&gt;*<br /><br />Example: **c:\test;c:\test1.exe**<br /><br />**Default value:** No paths are excluded|
 |**ExcludedProcesses**|Desktop|**URI full path:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Data type:** String<br /><br />**Allowed values:**<br /><br />*&lt;list of paths separated by semi-colon&gt;*<br /><br />Example: **c:\test.exe;c:\test1.exe**<br /><br />**Default value:** No processes are excluded|
 
-## Edge browser
+### Edge browser
 
 |Policy name|Supports|Details|
 |---------------|------------|-----------|
