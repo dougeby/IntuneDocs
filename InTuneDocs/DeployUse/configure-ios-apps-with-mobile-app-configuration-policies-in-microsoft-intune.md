@@ -133,6 +133,5 @@ When you create a mobile app configuration file, you can specify one or more of 
 
 
 ### See Also
-[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
-[Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
+[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)<br>[Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 

@@ -13,7 +13,7 @@ author: robstackmsft
 
 Microsoft Intune offers three policies that you can use to help ensure the security of Windows PCs when they are managed by the [Intune client software](manage-windows-pcs-with-microsoft-intune.md). 
 
-	> [!TIP]
+> [!TIP]
 	> The capabilities offered when you manage Windows PCs using the Intune client software differ considerably than when you enroll the PC into Intune. If you want to know more about the differences between each method of managing PCs, read the following topics:
 	> [Windows PC management capabilities in Microsoft Intune](../Understand/windows-pc-management-capabilities-in-microsoft-intune.md)
 	> [Mobile device management capabilities in Microsoft Intune](../Understand/mobile-device-management-capabilities-in-microsoft-intune.md)
