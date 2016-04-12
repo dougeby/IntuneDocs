@@ -41,7 +41,7 @@ When conditional access policies are configured and targeted to a user, before a
 
   AAD DRS will be activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service will not see registered devices in their on-premises Active Directory.
 
--   **Compliant** with any [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] compliance policies deployed to that device.
+-   **Compliant** with any [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] compliance policies deployed to that device, or domain joined to an on-premises domain.
 
 If a conditional access policy is not met, the user is presented with one of the following messages when they log in:
 

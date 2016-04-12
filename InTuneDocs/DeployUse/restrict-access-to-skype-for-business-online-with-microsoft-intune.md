@@ -22,6 +22,7 @@ When a targeted user attempts to use Skype for Business Online on their device, 
 
 **Before** configuring conditional access policy for Skype for Business Online, you must:
 - Have a **Skype for Business Online subscription** is required and users must be licensed for Skype for Business Online.
+- Have a subscription for the **Enterprise Mobility Suite** or **Azure Active Directory Premium**
 -   **Enable modern authentication** for Skype for Business Online. Fill this [connect form](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) to be enrolled in the modern authentication program.
 -  All your end-users must be using **Skype for Business Online**. If you have a deployment with both Skype for Business Online and Skype for Business on-premises, conditional access policy will not be applied to end-users.
 
@@ -75,7 +76,7 @@ Next, configure the policy to require that only managed and compliant devices ca
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Conditional Access** &gt; **Skype for Business Online Policy**.
 
-![conditional_access_SFBPolicy](/media/conditional_access_SFBPolicy.png)
+![conditional_access_SFBPolicy](./media/conditional_access_SFBPolicy.png)
 
 2.  Select **Enable conditional access policy**.
 
