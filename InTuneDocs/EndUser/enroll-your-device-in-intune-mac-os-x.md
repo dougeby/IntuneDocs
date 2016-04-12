@@ -15,7 +15,7 @@ robots: noindex
 
 Enrolling your device in Intune enables you to access the company’s network, your work email and work files, and lets you get company apps. For more about what happens when you enroll your device, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
-If you're trying to enroll an iOS device, see [Enroll your iOS device in Intune](enroll-your-ios-device-in-intune.md).
+If you're trying to enroll an iOS device, see [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md).
 
 To see instructions with screenshots, see [Intune End-user enrollment instructions](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a).
 
@@ -35,7 +35,7 @@ To enroll your Mac OS X device:
 
   
 
-    When you finish enrolling, you'll see a Management Profile page showing that your profile has been verified.
+When you finish enrolling, you'll see a Management Profile page showing that your profile has been verified.
 
  
 
