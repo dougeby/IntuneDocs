@@ -23,21 +23,21 @@ To learn more about how conditional access works, read the [restrict access to e
 >
 >**This does not apply to PCs or Windows 10 Mobile devices for conditional access to Exchange On-premises.**
 >
->If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, you will need to submit a request for access.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
+>If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, and would like to do so, you must submit a request.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
 
 **Before** you can configure conditional access verify the following:
 
 -   Your Exchange version must be **Exchange 2010 or later**. Exchange server Client Access Server (CAS) array is supported.
 
--   You must use the **on-premises Exchange connector** which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange On-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. For details on the connector, see [mobile device management with Exchange ActiveSync and Microsoft Intune](intune-on-premises-exchange-connector.md).
+-   You must use the **on-premises Exchange connector**, which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange On-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. For details on the connector, see [mobile device management with Exchange ActiveSync and Microsoft Intune](intune-on-premises-exchange-connector.md).
 
-    -   Make sure that you are using the latest version of the **on-premises Exchange connector**. The on-premise Exchange connector available to you in the Intune console is specific to your Intune tenant and cannot be used with any other tenant. You should also ensure that the exchange connector for your tenant is installed on exactly one machine and not on multiple machines.
+    -   The on-premises Exchange connector available to you in the Intune console is specific to your Intune tenant and cannot be used with any other tenant. You should also ensure that the exchange connector for your tenant is installed on exactly one machine and not on multiple machines.
 
         This connector should be downloaded from the Intune admin console.  For a walkthrough on how to configure the on-premises Exchange connector, see [configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md).
 
     -   The connector can be installed on any machine as long as that machine is able to communicate with the Exchange server.
 
-    -   The connector supports **Exchange CAS environment**. You can technically install the connector on the Exchange CAS server directly if you wish to, but it is not recommended as it will increase the load on the server.
+    -   The connector supports **Exchange CAS environment**. You can technically install the connector on the Exchange CAS server directly if you wish to, but it is not recommended, as it will increase the load on the server.
     When configuring the connector, you must set it up to talk to one of the Exchange CAS servers.
 
 -   **Exchange ActiveSync** must be configured with certificate based authentication, or user credential entry.
@@ -87,7 +87,7 @@ The **Mail** application on Windows 8 and later (when enrolled with [!INCLUDE[wi
 
   - **Targeted Groups:** Select the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user groups that must enroll their device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] before they can access Exchange.
 
-  - **Exempted Groups:**Select the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user groups that are exempt from the conditional access policy. Settings in this list override those in the **Targeted Groups** list.
+  - **Exempted Groups: **Select the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user groups that are exempt from the conditional access policy. Settings in this list override those in the **Targeted Groups** list.
 
   - **Platform Exceptions:** Choose **Add Rule** to configure a rule that defines access levels for specified mobile device families and models. Because these devices can be of any type, you can also configure device types that are unsupported by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
@@ -95,7 +95,7 @@ The **Mail** application on Windows 8 and later (when enrolled with [!INCLUDE[wi
 >[!TIP]
 >If you intention is to first block all devices before granting access to email, checking the Block access, or Quarantine rule can be useful. The default rule will apply to all device types, so device types you configure as platform exceptions and that are unsupported by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] are also affected.
 
-  - **User Notification:** In addition to the notification email sent from Exchange, Intune sends an email that you can configure which contains steps to unblock the device. You can edit the default message and use HTML tags to format how the text appears. Because the Intune notification email containing remediation instructions is delivered to the user’s Exchange mailbox, in the event that the user’s device gets blocked before they receive the email message, they can use an unblocked device or other method to access Exchange and view the message. This is especially true when the **Default Rule** is set to block or quarantine.  In this case, the end-user will have to go to their app store, download the Microsoft Company Portal   app and enroll their device. This is applicable to iOS, Windows, and Samsung Knox devices.  For  Android devices that are not Knox-based, the IT admin will need to send the quarantine email to an alternate email account, which then  the end-user has to copy to their blocked device to complete the enrollment and compliance process.|
+  - **User Notification:** In addition to the notification email sent from Exchange, Intune sends an email that you can configure which contains steps to unblock the device. You can edit the default message and use HTML tags to format how the text appears. Because the Intune notification email containing remediation instructions is delivered to the user’s Exchange mailbox, in the event that the user’s device is blocked before they receive the email message, they can use an unblocked device or other method to access Exchange and view the message. This is especially true when the **Default Rule** is set to block or quarantine.  In this case, the end-user will have to go to their app store, download the Microsoft Company Portal   app and enroll their device. This is applicable to iOS, Windows, and Samsung Knox devices.  For  Android devices that are not Knox-based, the IT admin will need to send the quarantine email to an alternate email account, which then  the end-user has to copy to their blocked device to complete the enrollment and compliance process.|
   > [!NOTE]
   > In order for Exchange to be able to send the notification email, you must configure the account that will be used to send the notification email.
   >
