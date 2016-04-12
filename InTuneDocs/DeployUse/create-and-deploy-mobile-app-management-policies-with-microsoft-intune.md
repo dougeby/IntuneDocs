@@ -95,7 +95,7 @@ Only users with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses 
 
 If you are using Intune with Configuration Manager to manage your iOS and Android devices, the policy is only applied to the users directly in the group that you selected.  Members of child groups  nested within the group you selected will not be affected.
 
-The end users can download the apps from the App store or Google Play. For a detailed walkthrough of how MAM protects company data on the device see [Using apps with MAM policies](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies.md) article.
+The end users can download the apps from the App store or Google Play. For a detailed walkthrough of how MAM protects company data on the device see [Using apps with MAM policies](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md) article.
 
 ##  Change existing policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies,  users who are already signed  in to the apps won’t see the changes for a 8-hour period.
@@ -149,4 +149,4 @@ To see a full list of the policy setting for iOS and Andriod, select one of the 
 [Monitor compliance and user status](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### See also
-[End-user experience for apps](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies.md)
+[End-user experience for MAM enabled apps](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
