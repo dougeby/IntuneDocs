@@ -272,7 +272,7 @@ Download, install, and configure the Certificate Connector on the NDES Server
 
 2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**):
 
-    -   For .PFX certificates, run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option then click Install. When the installation has completed, continue by creating a certificate profile as described in [Configure certificate profiles](../Topic/Enable-access-to-company-resources-using-certificate-profiles-with-Microsoft-Intune.md#BKMK_ConfigProfiles).
+    -   For .PFX certificates, run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option then click Install. When the installation has completed, continue by creating a certificate profile as described in [Configure certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md#BKMK_ConfigProfiles).
 
     -   For SCEP certificates, run the installer on a Windows Server 2012 R2 server
 
@@ -309,5 +309,5 @@ To validate that the service is running, open a browser and enter the following 
 **http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
 ## Next steps
-You are now ready to configure certificate profiles, as described in [Configure certificate profiles](Configure-Intune-certificate-profiles.md).
+You are now ready to configure certificate profiles, as described in [Configure certificate profiles](configure-intune-certificate-profiles.md).
   

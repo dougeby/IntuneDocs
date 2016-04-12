@@ -10,7 +10,7 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 author: Nbigman
 ---
 # VPN connections in Microsoft Intune
- Virtual Private Networks (VPN) let you give your users secure remote access to your company network. Remote users can work as if their device is physically connected to the network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use **VPN profiles** in  [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] to deploy VPN settings to users and devices in your organization. By deploying these settings, you minimize the end-user effort required to connect to resources on the company network.
+ Virtual Private Networks (VPN) let you give your users secure remote access to your company network. Remote users can work as if their device is physically connected to the network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use **VPN profiles** in Microsoft Intune to deploy VPN settings to users and devices in your organization. By deploying these settings, you minimize the end-user effort required to connect to resources on the company network.
 
 For example, you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile containing the settings necessary to connect to the corporate network and then deploy this profile to all users with iOS devices. The users will see the VPN connection in the list of available networks and can connect with the minimum of effort.
 
@@ -27,7 +27,7 @@ The VPN profile configuration options will differ depending on the device type y
 
 ## VPN connection types
 
-[!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] supports creating VPN profiles that use the following connection types:
+Intune supports creating VPN profiles that use the following connection types:
 
 
 
@@ -42,7 +42,7 @@ CheckPoint Mobile VPN |Yes |Yes |Yes |Yes |Yes
 
 
 
->[AZURE.IMPORTANT] Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md) topic to help you deploy the applicable app using [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)].        
+>[AZURE.IMPORTANT] Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md) topic to help you deploy the applicable app using Intune.        
 
 ## How VPN profiles are secured
 
@@ -50,11 +50,11 @@ VPN profiles can use a number of different connection types and protocols from d
 
 ### Certificates
 
-When you create the VPN profile, you choose a SCEP or .PFX certificate profile that you have previously created in [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)].
+When you create the VPN profile, you choose a SCEP or .PFX certificate profile that you have previously created in Intune.
 
 This is known as the identity certificate and is used to authenticate against a trusted certificate profile (or a root certificate) you created to establish that the user’s device is allowed to connect. The trusted certificate is deployed to the computer that authenticates the VPN connection, typically, the VPN server.
 
-For more information about how to create and use certificate profiles in [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)], see [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).
+For more information about how to create and use certificate profiles in Intune, see [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).
 
 ### Username and password
 
@@ -78,7 +78,7 @@ The user authenticates to the VPN server by providing their username and passwor
 
 Setting name  |More information  
 ---------|---------
-**Name**     |Enter a unique name for the VPN profile to help you identify it in the [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] console.         
+**Name**     |Enter a unique name for the VPN profile to help you identify it in the Intune console.         
 **Description**     |Provide a description that gives an overview of the VPN profile and other relevant information that helps you to locate it.         
 **VPN connection name (displayed to users)**     |Specify a name for the VPN profile. This is the name that users will see in the list of available VPN connections on their devices.         
 **Connection type**     |  Select one of the following connection types to use in the VPN profile: **Cisco AnyConnect** (not available for Windows 8.1 or Windows Phone 8.1), **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**
@@ -88,7 +88,7 @@ Setting name  |More information
 **Send all network traffic through the VPN connection**     |If you select this option, all network traffic is sent through the VPN connection. If you do not select this option, the client will dynamically negotiate the routes for split tunneling upon connecting to the 3rd party VPN server. Only connections to the company network are sent over a VPN tunnel. VPN tunneling is not used when you connect to resources on the Internet.
 **Authentication method**| Select the authentication method used by the VPN connection: **Certificates** or **Username and Password**. (Username and Password is not available when the connection type is Cisco AnyConnect.) The **Authentication method** option is not available for Windows 8.1.
 **Remember the user credentials at each logon**|Select this option to ensure that the user credentials are remembered so that the user does not have to enter credentials each time a connection is established.
-**Select a client certificate for client authentication (Identity Certificate)**|Select the client SCEP certificate that you previously created that will be used to authenticate the VPN connection. For more information about how to use certificate profiles in [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)], see  [Enable access to company resources using certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md). This option is displayed only when the authentication method is **Certificates**.
+**Select a client certificate for client authentication (Identity Certificate)**|Select the client SCEP certificate that you previously created that will be used to authenticate the VPN connection. For more information about how to use certificate profiles in Intune, see  [Enable access to company resources using certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md). This option is displayed only when the authentication method is **Certificates**.
 **Role**| Specify the name of the user role that has access to this connection. A user role defines personal settings, options, and enables or disables certain access features. This option is displayed only when the connection type is **Pulse Secure**.
 **Realm**|Specify the name of the authentication realm that you want to use. An authentication realm is a grouping of authentication resources that is used by the Pulse Secure connection type. This option is displayed only when the connection type is **Pulse Secure**.
 **Login group or domain**|Specify the name of the login group or domain that you want to connect to. This option is displayed only when the connection type is **Dell SonicWALL Mobile Connect**.
@@ -135,6 +135,6 @@ A status summary and alerts on the **Overview** page of the **Policy** workspace
 
 After successful deployment, users will see the VPN connection name you specified in the list of VPN connections on their device.
 
-## Related Topics
+### See also
 
 [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md)

@@ -18,10 +18,10 @@ When you enable access to corporate resources through VPN, Wi-Fi, or email profi
 2.   Next, you make each device request a certificate to be used for authentication of email, VPN, and Wi-Fi access. For Android 4.0 and later, iOS 7.1 and later, and Windows 10 (desktop and mobile) and later, you can create and deploy the **PKCS #12 (.PFX) Certificate Profile**, or a **SCEP Certificate Profile**. Use the **SCEP Certificate Profile** for Mac OS X 10.9 and later and Windows Phone 8.1 and later. You have to create a separate profile for each platform. When you create the profile you associate it with the **Trusted Root Certificate profile** that you already created.
 
 ## Next steps
-- [Configure certificate infrastructure](Configure-certificate-infrastructure.md)
-- [Configure Intune certificate profiles](Configure-Intune-certificate-profiles.md)
+- [Configure certificate infrastructure](configure-certificate-infrastructure.md)
+- [Configure Intune certificate profiles](configure-Intune-certificate-profiles.md)
 > [!NOTE]           
 > -    If you don't have an enterprise certification authority, you have to create one. 
 >- If you decide, based on your device platforms, to use the Simplified Certificate Enrollment Protocol (SCEP) profile, you also need to configure a Network Device Enrollment Service (NDES) server.
 >-  Whether you plan to use SCEP or or .PFX profiles, you have to download and configure the Microsoft Intune Certificate Connector.
-> Configuration of all of these is described in the topic [Configure certificate infrastructure](Configure-certificate-infrastructure.md).
+> Configuration of all of these is described in the topic [Configure certificate infrastructure](configure-certificate-infrastructure.md).
