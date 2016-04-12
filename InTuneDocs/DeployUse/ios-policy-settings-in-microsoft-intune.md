@@ -1,5 +1,5 @@
 ---
-title: iOS configuration policy settings in Microsoft Intune
+title: iOS policy settings in Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,10 @@ ms.topic: article
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 author: robstackmsft
 ---
-# iOS configuration policy settings in Microsoft Intune
+# iOS policy settings in Microsoft Intune
+
+## General configuration policy settings
+
 Use the Microsoft Intune **iOS general configuration policy** to configure settings for:
 
 -   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
@@ -23,7 +26,7 @@ Use the Microsoft Intune **iOS general configuration policy** to configure setti
 
 If the setting you are looking for does not appear in this topic, you might be able to create it using an iOS custom policy that lets you import settings you created using the [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). For more information, see [iOS custom policy settings in Microsoft Intune](iOS-custom-policy-settings-in-Microsoft-Intune.md).
 
-## Security settings
+### Security settings
 
 |Setting name|Details|iOS|
 |----------------|-------|
@@ -41,7 +44,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow fingerprint unlock**|Allow using a fingerprint to unlock the device.|iOS 7.1 and later|
 <sup>1</sup> For iOS devices, when you configure the settings **Minutes of inactivity before screen turns off** and **Minutes of inactivity before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
 
-## System settings
+### System settings
 
 |Setting name|Details|iOS|
 |----------------|-------|
@@ -53,7 +56,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow untrusted TLS certificates**|Allow untrusted Transport Layer Security certificates on the device.|Yes|
 |**Allow passbook while locked**|Allow the user to access the Passbook app while the device is locked.|Yes|
 
-## Cloud settings – documents and data
+### Cloud settings – documents and data
 
 |Setting name|Details|iOS|
 |----------------|-------|
@@ -62,7 +65,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow Photo Stream sync to iCloud**|Allow photos on the device to sync to iCloud.|Yes|
 |**Require encrypted backup**|Require any device backups to be encrypted.|Yes|
 
-## Application settings - browser
+### Application settings - browser
 
 |Setting name|Details|iOS|
 |----------------|-------|
@@ -73,7 +76,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow Java scripting**|Allow Java scripts to run in the browser.|Yes|
 |**Allow fraud warning**|Allow fraud warnings in the device browser.|Yes|
 
-## Application settings - apps
+### Application settings - apps
 
 |Setting name|Details|iOS|
 |----------------|-------|
@@ -85,20 +88,20 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow video conferencing**|Allow video conferencing apps such as Facetime on the device.|Yes|
 |**Allow adult content in media store**|Allow the device to access content rated as adult from the store.|Yes|
 
-## Application settings - Games
+### Application settings - Games
 
 |Setting name|Details|iOS|
 |----------------|-------|
 |**Allow adding Game Center friends**|Allow the user to add friends in Game Center.|Yes|
 |**Allow multiplayer gaming**|Allow the user to play multiplayer games on the device.|Yes|
 
-## Device capabilities settings - hardware
+### Device capabilities settings - hardware
 
 |Setting name|Details|iOS|
 |----------------|-------|
 |**Allow camera**|Specifies whether the camera on the device can be used.|Yes|
 
-## Device capabilities settings - cellular
+### Device capabilities settings - cellular
 
 |Setting name|Details|iOS|
 |----------------|-------|
@@ -106,7 +109,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow data roaming**|Allow data roaming when the device is on a cellular network.|Yes|
 |**Allow global background fetch while roaming**|Allow the device to fetch data such as email while it is roaming on a cellular network.|Yes|
 
-## Device capabilities settings - features
+### Device capabilities settings - features
 
 |Setting name|Details|iOS|
 |----------------|-------|
@@ -115,7 +118,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow voice dialing**|Allow use of the voice dialing feature on the device.|Yes|
 
 
-## Settings for compliant and noncompliant apps
+### Settings for compliant and noncompliant apps
 In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant or noncompliant apps using the following information:
 
 > [!NOTE]
@@ -130,7 +133,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
 
-## Kiosk mode settings
+### Kiosk mode settings
 
 |Setting name|Details|
 |----------------|--------------------|
@@ -157,9 +160,9 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 > -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or device enrollment manager to put the device into supervised mode. For more information about the Apple Configurator Tool, see your Apple documentation.
 > -   If the iOS app you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
 
-## Reference information for compliant and noncompliant apps
+### Reference information for compliant and noncompliant apps
 
-### Monitor compliant and noncompliant apps
+#### Monitor compliant and noncompliant apps
 Use the **Noncompliant Apps Report** to view the compliance of allowed and blocked apps.
 
 ##### To run the Noncompliant Apps Report
@@ -168,7 +171,7 @@ Use the **Noncompliant Apps Report** to view the compliance of allowed and block
 
 2.  Select the device groups that you would like to check, whether you want to check for compliant apps, noncompliant apps, or both, then click **View Report**.
 
-### How to specify URLs to app stores
+#### How to specify URLs to app stores
 To specify an app URL in the compliant and noncompliant apps list, or in the **Select a managed app that will be allowed to run when the device is in kiosk mode** option (iOS only), use the following format:
 
 Using a search engine, find the app you want to use in the iTunes App Store and open the page for the app.
@@ -179,6 +182,34 @@ Copy the URL of the page and use this as the URL to configure the compliant or n
 
 > [!NOTE]
 > You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.
+
+
+## Custom policy settings
+
+Use the Microsoft Intune **iOS custom policy** to deploy settings that you created using the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) to iOS devices. This tool lets you create many settings that control the operation of these devices and export them to a configuration profile. You can then import this configuration profile into an Intune iOS custom policy and deploy the settings to users and devices in your organization.
+
+This capability is intended to allow you to deploy iOS settings that are not configurable with Intune general configuration policies policies. For information about the settings you can configure with these policies, see [iOS configuration policy settings in Microsoft Intune](iOS-configuration-policy-settings-in-Microsoft-Intune.md).
+
+### Prerequisites
+Before you start, you must have installed the Apple Configurator and created a configuration file containing the settings you want to deploy to users or devices. You can download and learn about the Apple Configurator from [the Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)
+
+> [!NOTE]
+> Intune does not report the compliance of individual settings in an iOS custom policy. However, the overall compliance of the policy is reported.
+
+### General settings
+
+|Setting name|Details|
+    |----------------|--------------------|
+    |**Name**|Enter a unique name for the iOS custom policy to help you identify it in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console.|
+    |**Description**|Provide a description that gives an overview of the iOS custom policy and other relevant information that helps you to locate it.|
+
+### Custom settings
+
+|Setting name|Details|
+    |----------------|--------------------|
+|**Custom configuration profile name (displayed to users)**|Provide a name for the policy as it will be displayed on the device, and in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] policy reports.|
+|**Configuration profile file**|Click **Import**, then browse to the configuration profile that you created using the Apple Configurator. **Note:** Ensure that the settings you export from the Apple Configurator tool are compatible with the version of iOS on the devices to which you deploy the iOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) web site.|
+    |**Configuration profile details**|Displays the xml code for the configuration profile that you imported.|
 
 ### See Also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

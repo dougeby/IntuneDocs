@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
-author: robstackmsft
+author: staciebarker
 ---
 
 # Error evaluating device

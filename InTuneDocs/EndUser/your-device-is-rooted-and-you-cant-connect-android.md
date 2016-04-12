@@ -2,10 +2,13 @@
 title: Your device is rooted and you can't connect
 ms.reviewer: na
 ms.custom: na
+ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
+author: staciebarker
+---
 
 # Your device is rooted and you can't connect
 
