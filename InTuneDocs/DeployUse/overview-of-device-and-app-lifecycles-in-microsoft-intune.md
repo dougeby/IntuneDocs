@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
-author: robstack
+author: robstackmsft
 ---
 # Overview of device and app lifecycles
 
