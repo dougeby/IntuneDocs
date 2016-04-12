@@ -13,7 +13,10 @@ author: Nbigman
 Here are some device enrollment issues and how to troubleshoot and resolve them.
 
 > [!NOTE]
-> Your managed device users can collect enrollment logs for you to review. Instructions for collecting the logs are provided in  [Intune: sending troubleshooting info to IT ](https://www.microsoft.com/en-us/download/details.aspx?id=46391).
+> Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting Android logs are provided in:
+- [Send diagnostic data logs to your IT administrator using a USB cable](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [Send diagnostic data logs to your IT administrator using email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [Send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android)
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
@@ -143,7 +146,7 @@ Administrators can delete devices in the Azure Active Directory portal:
 5.  Check that Configuration Manager does not have a scheduled task, script, or other process which could be automatically purging non-domain, mobile, or related devices.
 
 ## iOS enrollment errors
-A list of other iOS enrollment errors is provided in our device-user documentation, in   [You see errors while trying to enroll your device in Intune](using-your-ios-device-with-intune.md#BKMK_ios_error_enrolling_tbl).
+A list of other iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](using-your-ios-device-with-intune.md).
 
 ### See also
 [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
