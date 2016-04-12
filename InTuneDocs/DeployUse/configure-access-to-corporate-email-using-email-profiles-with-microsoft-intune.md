@@ -62,7 +62,6 @@ The password is not contained in the email profile, so the user will need to sup
     For more information about how to create and deploy policies, see the [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md) topic.
 
 3.  Use the following table to help you configure email profile settings:
-
     |Setting name|More information|
     |----------------|--------------------|
     |**Name**|Unique name for the email profile.|
@@ -98,7 +97,7 @@ A status summary and alerts on the **Overview** page of the **Policy** workspace
 > [!NOTE]
 > If you want to remove an email profile from a device, edit the deployment and remove any groups of which the device is a member.
 
-### See Also
+### See also
 -  To learn how to configure certificates to help secure client access see [Certificates in Microsoft Intune](certificates-in-microsoft-intune-for-securing-access-to-resources.md)
 -  To get started with Conditional Access for email, see [Manage access to email and SharePoint
 with Microsoft Intune](manage-access-to-email-and-sharepoint-with-microsoft-intune.md).

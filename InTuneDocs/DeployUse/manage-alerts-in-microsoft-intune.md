@@ -11,11 +11,11 @@ author: Nbigman
 robots: noindex,nofollow
 ---
 # Manage alerts in Microsoft Intune
-Use the **Alerts** workspace in the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)] to assess the overall health of devices in your organization and to identify problems.
+Use the **Alerts** workspace in the Intune admin console to assess the overall health of devices in your organization and to identify problems.
 
 #### To view active alerts
 
-1.  In the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)], do one of the following:
+1.  In the Intune admin console, do one of the following:
 
     -   **To display general information about alerts**, including the top three alerts and the total number of active alerts, click **System Overview**. You can click the links in these alerts to drill-down to more detailed information.
 
@@ -46,23 +46,23 @@ Notice board alerts provide important service announcements such as an upcoming 
 
 #### To view and manage notice board alerts
 
-1.  In the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)], click **System Overview**.
+1.  In the Intune admin console, click **System Overview**.
 
 2.  If there are important service announcements, they are displayed in the **Notice Board** area.
 
-3.  If you want to export a notice board alert to a comma separated value (.csv) or HTML file, in the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)], click **Alerts &gt; All Alerts &gt; Notices**. Select a notice, click the export list icon, and then follow the instructions.
+3.  If you want to export a notice board alert to a comma separated value (.csv) or HTML file, in the Intune admin console, click **Alerts &gt; All Alerts &gt; Notices**. Select a notice, click the export list icon, and then follow the instructions.
 
 ## Reviewing Intune Statuses
 In the **System Overview** workspace, view System Status summaries for Endpoint Protection, Updates, Agent Health, Policy, and Software, to help you identify and prioritize issues that require your immediate attention. A link to the **Service Status** summary is also provided in error messages when the system is interrupted. The **Service Status** summary shows details about the problem at each location and always shows the last time it was updated.
 
 #### To view the status of your subscription
 
-1.  In the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)], click **System Overview**.
+1.  In the Intune admin console, click **System Overview**.
 
 2.  In the **System Status area**, you can examine the status of the various [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] components. Many of the items contain links that let you drill-down for further information. For example, under **Endpoint Protection**, selecting the number of instances will display the **Endpoint Protection** workspace with a list of malware that was detected. Selecting the number of devices will display the **Groups** workspace with a list of devices that were found to have the malware.
 
 ## Closing and Reactivating Alerts
-[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] alerts stay active until one of the following events occurs:
+Intune alerts stay active until one of the following events occurs:
 
 -   The issue that caused the alert to be generated is resolved.
 
@@ -74,7 +74,7 @@ Alerts that are marked as closed are permanently deleted after 90 days.
 
 #### To manually close an alert
 
-1.  In the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)], do one of the following:
+1.  In the Intune admin console, do one of the following:
 
     1.  **To close an alert from the Alerts list** – Click **Alerts &gt; All Alerts**. Select an alert and then click **Close Alert**.
 
@@ -84,7 +84,7 @@ Alerts that are marked as closed are permanently deleted after 90 days.
 
 #### To view and reactivate closed alerts
 
-1.  In the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)], click **Alerts &gt; All Alerts**.
+1.  In the Intune admin console, click **Alerts &gt; All Alerts**.
 
 2.  In the **Filters** list, click **Closed**.
 
@@ -92,6 +92,6 @@ Alerts that are marked as closed are permanently deleted after 90 days.
 
 3.  To reactivate the selected alert, click **Reactivate Alert**.
 
-## See Also
+### See also
 [Get notified by Microsoft Intune alerts](get-notified-by-microsoft-intune-alerts.md)
 
