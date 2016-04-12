@@ -16,10 +16,10 @@ Use the information in this topic to learn about the three steps for Microsoft I
 > [!IMPORTANT]
 > The information in this topic helps you to deploy apps to Windows PCs that you manage using the Intune client software. If you want to deploy apps to enrolled Windows PCs and other mobile devices, see [Create apps for mobile devices in Microsoft Intune](create-apps-for-mobile-devices-in-microsoft-intune.md).
 
-## Create the app
+## Add the app
 You use the Intune Software Publisher to configure the properties of the app and upload it to your cloud storage space.
 
-### To create an app
+### To add an app
 
 1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Add Apps** to start the Intune software publisher.
 

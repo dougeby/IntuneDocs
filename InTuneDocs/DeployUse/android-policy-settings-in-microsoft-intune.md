@@ -9,7 +9,10 @@ ms.topic: article
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 author: robstackmsft
 ---
-# Android configuration policy settings in Microsoft Intune
+# Android policy settings in Microsoft Intune
+
+## General configuration policy
+
 Use the Microsoft Intune **Android general configuration policy** to configure settings for:
 
 -   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
@@ -155,7 +158,7 @@ Open the installation page for the app, and copy the URL to the clipboard. You c
 
 **Example:** Search Google Play for Microsoft Office Mobile. The URL you use will be **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
-## Android custom policy settings in Microsoft Intune
+## Custom policy settings
 Use the Microsoft Intune **Android custom configuration policy** to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
 
 This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
