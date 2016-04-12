@@ -23,7 +23,7 @@ When you access company data in a managed app, you see a message like the one be
 ## How do I get managed apps?
 You get managed apps in a couple of different ways:
 
--   When your device is enrolled in Microsoft Intune, you either install the app from your Company Portal app or Company Portal website, or your IT admin might install it on your device. To find out about enrollment, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
+-   When your device is enrolled in Microsoft Intune, you either install the app from your Company Portal app or Company Portal website, or your IT admin might install it on your device. To learn about enrolling, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
 
 -   You install an app from the Play Store and then sign in with your corporate user account that is managed by Intune.
 

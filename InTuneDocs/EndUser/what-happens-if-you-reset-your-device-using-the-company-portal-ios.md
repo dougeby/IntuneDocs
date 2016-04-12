@@ -17,13 +17,13 @@ When you use the Company Portal to reset your iPhone or iPad, some apps and sett
 
 **Your IT admin manages your mobile device**
 
--   Your device won’t appear in the company portal anymore.
+-   Your device won’t appear in the Company Portal anymore.
 
 -   Your device is set back to the manufacturer’s factory default settings, and your personal data, apps and settings will be removed.
 
 **Your device can access company email only**
 
--   Your device won’t appear in the company portal anymore.
+-   Your device won’t appear in the Company Portal anymore.
 
 -   Your company email account will be deleted and unsaved email will be deleted.
 

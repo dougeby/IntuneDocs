@@ -32,7 +32,7 @@ The information in this section will help you with actions you can take after yo
 - [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-ios.md)</br>
 - [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md)</br>
 - [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)</br>
-- [What happens if you reset your iOS device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
+- [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 
 ## Fix issues with your device
 
@@ -41,7 +41,7 @@ The information in this section will help you fix issues you might encounter whe
 - [Send errors to your IT admin](send-errors-to-your-it-admin-ios.md)</br>
 - [You get an error while using the Company Portal app](you-get-an-error-while-using-the-company-portal-app-ios.md)</br>
 - [You see errors while trying to enroll your device in Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)</br>
-- [You are asked to identify your device when you're trying to enroll](you-are-asked-to-identify-your-device-when-you're-trying-to-enroll-ios.md)</br>
+- [You are asked to identify your device when you're trying to enroll](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)</br>
 - [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md)</br>
 - [Device doesn't have the required minimum operating system version](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)</br>
 - [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)

@@ -19,7 +19,7 @@ When you unenroll your device from Intune:
 
 -   You can’t install apps from the Company Portal anymore.
 
--   Any settings that were changed on your device when you added it, for example, disabling the camera, or requiring a certain password length, will no longer apply.
+-   Any settings that were changed on your device when you added it (for example, disabling the camera, or requiring a certain password length) will no longer apply.
 
 -   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.
 
