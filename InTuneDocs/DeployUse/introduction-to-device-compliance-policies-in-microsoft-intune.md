@@ -18,7 +18,7 @@ You can use compliance policies with conditional access policies to only allow a
 
 You can also use compliance policies independently of conditional access. When used independently, the targeted devices are evaluated and reported with their compliance status. For example, you might want to report about how many devices are not encrypted, or which devices are jailbroken or rooted. However, when used independently, no access restrictions to company resources are in place.
 
-You deploy compliance policies to users and devices. When a compliance policy is deployed to a user, then all of the user's devices are checked for compliance.
+You deploy compliance policies to users. When a compliance policy is deployed to a user, then all of the user's devices are checked for compliance.
 
 The following table lists the device types supported by compliance policies and how noncompliant settings are managed when the policy is used with a conditional access policy.
 
