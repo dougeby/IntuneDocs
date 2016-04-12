@@ -1,11 +1,14 @@
 ---
 title: Reset your device from the Company Portal website
-ms.reviewer: na
 ms.custom: na
+ms.reviewer: na
+ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid:
+ms.assetid:  
+author: Staciebarker
+---
 
 # Reset your device from the Company Portal website
 
@@ -19,7 +22,7 @@ To reset your device:
 
 2.  Tap **Reset**.
 
-    ![](./media/IW-Help-pics/iwp-1-tap-reset-passcode.png)
+    ![reset-device](./media//iwp-1-tap-reset-passcode.png)
 
 Your device has now been reset.
 
