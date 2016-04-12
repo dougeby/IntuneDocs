@@ -13,13 +13,13 @@
 ## [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Sign into Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)
-### [Synchronize Active Directory and add users](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)
+### [Synchronize AD and add users](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)
 ### [Manage Intune licenses](get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)
 ### [Organize users and devices](get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Create policies and publish an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Customize the Company Portal](get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Enroll Windows PCs](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
-### [Enroll mobile devices and install an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)
+### [Enroll mobile devices & install an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)
 ### [Post configuration tasks](post-configuration-tasks.md)
 
 
