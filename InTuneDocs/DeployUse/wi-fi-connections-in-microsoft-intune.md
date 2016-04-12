@@ -10,7 +10,7 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 author: Nbigman
 ---
 # Wi-Fi connections in Microsoft Intune
-Use [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. These settings simplify user connections to wireless networks.
+Use Microsoft Intune Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. These settings simplify user connections to wireless networks.
 
 For example, you install a new Wi-Fi network named **Contoso Wi-Fi** and want to set up all iOS devices to connect to this network. Here's the process:
 
@@ -97,7 +97,7 @@ The new policy is displayed in the **Configuration Policies** node of the **Poli
 ## <a name="BKMK_Import"></a> Export or Import a Wi-Fi configuration profile (Windows 8.1 and later only)
 
 ### Export a Wi-Fi profile
-In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi profile to an XML file readable by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. On a Windows computer that already has the required WiFi profile installed, follow this following procedure.
+In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi profile to an XML file readable by Intune. On a Windows computer that already has the required WiFi profile installed, follow this following procedure.
 
 1.  Create a local folder for the exported W-Fi- profiles, such as c:\WiFi
 
@@ -122,14 +122,14 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
 
     |Setting name|More information|
     |----------------|--------------------|
-    |**Name**|Enter a unique name for the Wi-Fi profile to identify it in the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console.|
+    |**Name**|Enter a unique name for the Wi-Fi profile to identify it in the Intune console.|
     |**Description**|Provide a description w of the Wi-Fi profile and other relevant information that helps you to locate it.|
 
 4.  Specify the following values under the **Custom Wi-Fi Profile** heading:
 
     |Setting name|More information|
     |----------------|--------------------|
-    |**Configuration profile file**|Click **Import** to select the XML file containing the Wi-Fi profile settings that you want to import into [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].|
+    |**Configuration profile file**|Click **Import** to select the XML file containing the Wi-Fi profile settings that you want to import into Intune.|
     |**Custom configuration profile name (displayed to users)**|Displays the name of the Wi-Fi configuration profile as it will be shown to users on their device.|
     |**Configuration profile details**|Displays the XML code for the configuration profile you selected.|
 
@@ -147,5 +147,5 @@ A status summary and alerts in the **Policy** workspace identify issues with the
 
 After successful deployment, users devices can automatically connect to the corporate wireless network you configured.
 
-## See Also
+### See also
 [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md)
