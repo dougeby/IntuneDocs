@@ -11,9 +11,9 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 author: Nbigman
 ---
 # Protect Windows devices with multi-factor authentication
-[!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] integrates multi-factor authentication (MFA) to help you secure your corporate resources by requiring more than usernames and passwords, for example, phone or text authentication. [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] supports the use of MFA during enrollment of Windows 8.1 or later, Windows Phone 8.1, or Windows 10 Desktop and Mobile devices.  
+Microsoft Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources by requiring more than usernames and passwords, for example, phone or text authentication. Intune supports the use of MFA during enrollment of Windows 8.1 or later, Windows Phone 8.1, or Windows 10 Desktop and Mobile devices.  
 
-If your organization has on-premises IT infrastructure that includes an Active Directory domain with Active Directory Federation Services (ADFS), you can configure MFA on your federation server and then enable MFA for Intune enrollment. If you configure MFA on your federation server but you don’t enable MFA for enrollment in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)], users will need to use MFA each time that they access corporate resources.
+If your organization has on-premises IT infrastructure that includes an Active Directory domain with Active Directory Federation Services (ADFS), you can configure MFA on your federation server and then enable MFA for Intune enrollment. If you configure MFA on your federation server but you don’t enable MFA for enrollment in Intune, users will need to use MFA each time that they access corporate resources.
 
 MFA can be required on a per-user or per-group basis on the ADFS server.
 
@@ -45,5 +45,5 @@ For information about how to enable MFA in ADFS, see [Manage Risk with Additiona
 
 3.  Click **Configure Multi-factor Authentication**, and then click **Enable Multi-factor Authentication**.
 
-## See Also
+### See also
 [Protect data and devices with Microsoft Intune](../Topic/Protect-data-and-devices-with-Microsoft-Intune.md)

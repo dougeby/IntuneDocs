@@ -10,13 +10,13 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 author: nbigman
 ---
 # General troubleshooting tips for Microsoft Intune
-You may find  after you deploy [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] that you're encountering problems with your configuration or with clients. The resources below may help you find out what could be causing the problem so that you can resolve it.
+After you deploy Microsoft Intune you may encounter problems with your configuration or with clients. The resources below may help you find out what could be causing the problem so that you can resolve it.
 
 > [!NOTE]
 > To create a support request, or to view an existing request,  click [here](https://portal.office.com/admin/default.aspx) to visit the Office 365 admin center. For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 ## Tips
-Here are some general troubleshooting tips that can help you resolve issues in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+Here are some general troubleshooting tips that can help you resolve issues in Intune.
 
 Start by **defining the problem**:
 
@@ -26,7 +26,7 @@ Start by **defining the problem**:
 
 -   Did the device work properly previously?
 
--   What changes did you make to the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] or device configuration?
+-   What changes did you make to the Intune or device configuration?
 
 -   Consider whether other changes were made to the environment in which you operate, other than configuration changes.
 

@@ -10,7 +10,7 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 author: Nbigman
 ---
 # Get notified by Microsoft Intune alerts
-Alerts keep you in touch with what's happening in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
+Alerts keep you in touch with what's happening in Microsoft Intune.
 
 For example, alerts can notify you about the following events:
 
@@ -18,12 +18,12 @@ For example, alerts can notify you about the following events:
 
 -   Malware has been found on a computer
 
--   A conflict between two [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] policies was detected
+-   A conflict between two Intune policies was detected
 
--   The latest updates and information about the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] service (notices).
+-   The latest updates and information about the Intune service (notices).
 
 ## How alerts work
-Alerts are generated based on **alert types**, a set of preconfigured rules built into [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)]. For example, the alert type **Cloud storage has 10% or less free space** alerts you when you are running out of space to store your apps in the cloud. You can enable or disable, and configure properties for each alert type. For example, using the above alert type, you can configure:
+Alerts are generated based on **alert types**, a set of preconfigured rules built into Intune. For example, the alert type **Cloud storage has 10% or less free space** alerts you when you are running out of space to store your apps in the cloud. You can enable or disable, and configure properties for each alert type. For example, using the above alert type, you can configure:
 
 -   **State:** Whether this alert type is enabled or disabled
 
@@ -40,7 +40,7 @@ Other alert types might contain different items you can configure such as the pe
 
 **When the criteria in an alert type is met, an alert is generated and displayed in the Intune admin console.**
 
-Additionally, you can configure [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to notify you by email when an alert is generated.
+Additionally, you can configure Intune to notify you by email when an alert is generated.
 
 ## Configuring alerts
 In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Admin** &gt; **Alerts and Notifications**, then choose one of the following configuration tasks:

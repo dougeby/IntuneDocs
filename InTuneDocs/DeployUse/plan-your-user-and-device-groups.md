@@ -22,7 +22,7 @@ Groups in Intune provide great flexibility in managing your devices and users. Y
 ## How Intune groups work
 
 
-The default view of the Groups node in the Intune Management console is:
+The default view of the Groups node in the Intune admin console is:
 
 ![Screenshot of the default view of the Groups node in the Intune console](./media/Group-planning/Intune_Planning_Groups_Default_small.png)
 

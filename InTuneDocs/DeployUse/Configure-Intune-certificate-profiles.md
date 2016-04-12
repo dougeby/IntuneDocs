@@ -116,7 +116,7 @@ Certificate profiles install only on applicable devices based on the platform yo
 
 -   Although each profile is deployed separately, both the Trusted Root and the SCEP/.PFX profile must be deployed or else the SCEP/.PFX certificate policy will fail.
 
-You deploy certificate profiles the same way you deploy other policy for [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. For information about how to deploy and manage policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+You deploy certificate profiles the same way you deploy other policy for Intune. For information about how to deploy and manage policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
 
 ##  Next steps
 
