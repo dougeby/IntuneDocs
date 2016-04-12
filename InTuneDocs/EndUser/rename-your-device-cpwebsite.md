@@ -1,11 +1,14 @@
 ---
 title: Rename your device from the Company Portal website
-ms.reviewer: na
 ms.custom: na
+ms.reviewer: na
+ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid:
+ms.assetid:  
+author: Staciebarker
+---
 
 # Rename your device from the Company Portal website
 
@@ -17,7 +20,7 @@ To rename your device:
 
 2.  Tap **Rename**.
 
-    ![](./media/iwp-1-tap-reset-passcode.png)
+    ![rename-device](./media/iwp-1-tap-reset-passcode.png)
 
 3.  In the box where your current device name appears, type the new name for your device, and then tap the **Rename** button. Your device now appears with the new name.
 

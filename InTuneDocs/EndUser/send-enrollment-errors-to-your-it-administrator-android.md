@@ -2,11 +2,12 @@
 title: Send enrollment errors to your IT administrator
 ms.reviewer: na
 ms.custom: na
+ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
-author:
+author: staciebarker
 ---
 
 # Send enrollment errors to your IT administrator
