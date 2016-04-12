@@ -1,5 +1,5 @@
 ---
-title: Restrict email access example scenarios | Microsoft Intune
+title: Restrict access to email example scenarios | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,58 +9,59 @@ ms.topic: article
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 author: karthikaraman
 ---
-# Restrict email access with Microsoft Intune: Example scenarios
+# Restrict access to email with Microsoft Intune: Example scenarios
 
-## All iOS devices that access Exchange On-premises must be managed by Intune
-In this example, the organization only uses devices that run iOS and they require that all of these devices are managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] before they can access Exchange.
+## Block users of noncompliant devices from Exchange Online in a specified Active Directory security group.
+In this scenario, all users in the **Accounting** Active Directory security group must be blocked from accessing Exchange Online if their device is not compliant with a compliance policy you deployed. Additionally, any users in the **Finance** Active Directory security group must be exempt from the policy, even if they are also in the **Accounting** security group. Finally, if any users exist in this group whose devices are not supported by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], they must be blocked from accessing Exchange Online on that device.
 
-To accomplish this, in the conditional access policy, they configure the following:
+To accomplish this, configure a conditional access policy for Exchange Online with the following settings:
 
--   Select the option **Enable conditional access policy for Exchange Online**.
+-   Select **Enable conditional access policy**.
 
--   For apps using modern authentication, select **iOS** for the platform
+- Select the platforms that you want to allow access from apps with modern authentication.
+- For Exchange ActiveSync apps, select **Block noncompliant devices on platforms supported by Microsoft Intune** and **Block all other devices on platforms not supported by Microsoft Intune.**
+-   In the **Targeted group** section, under **Selected security groups** choose the **Accounting** user group.
 
--   For Exchange ActiveSync apps, select **Require mobile devices to be compliant**  and block access to email on devices that are not supported by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   In the **Exempted group** section, under **Selected security groups** choose the  **Finance** user group.
 
--   A platform exception that allows devices that run iOS to access Exchange.
 
--   A default rule that specifies when a device is not covered by other rules, then it should be blocked.
+The following flow is used to decide which devices can access Exchange Online:
+
+![](./media/ConditionalAccess8-5.png)
+
+## All iOS devices that access Exchange on-premises must be managed by Intune
+In this example, only devices that run iOS are allowed access to Exchange on-premises. The devices must also be enrolled in Intune and meet the compliance policy rules before they can be used to access Exchange.
+
+To accomplish this, configure the following conditional access policy for Exchange on-premises with the following settings:
+
+-   Select the option **Block email apps from accessing Exchange on-premises if the device in noncompliant or not enrolled in Microsoft Intune**. By selecting this option, the conditional access policy is enabled, which requires that all devices must be enrolled in Microsoft Intune and meet the compliancy policy rules before they can access Exchange.
+
+-   For Advanced Exchange Active Sync settings, create a:
+
+  -   A platform exception that allows devices that run iOS to access Exchange.   
+
+  -   A default rule that specifies when a device is not covered by the platform exception rule, it should be blocked from accessing Exchange. This rule makes sure that devices not running iOS are blocked from accessing Exchange.
 
 The following flow is used to decide which devices can access Exchange:
 
 ![](./media/ConditionalAccess8-3.png)
 
-## No Android devices can access Exchange On-premises.
-In this example, the organization does not want to allow devices that run Android access to Exchange. All other supported devices can access Exchange as long as they are managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+## No Android devices can access Exchange on-premises.
+In this example, Android devices are blocked from accessing Exchange. All other supported devices can access Exchange as long as they are managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-To accomplish this, in the conditional access policy, they configure the following:
+To accomplish this, configure a conditional access policy for Exchange on-premises with the following settings:
 
--   Select the option **Enable conditional access policy for Exchange online**.
+-   Select the option **Block email apps from accessing Exchange on-premises if the device is noncompliant or not enrolled in Microsoft Intune**. By selecting this option, they require that any device must be enrolled in Intune and meet the compliance policy rules.
 
--   A platform exception that blocks devices that run Android from accessing Exchange.
+- For Advanced Exchange Active Sync settings, create a:
+  -   A platform exception that blocks devices that run Android from accessing Exchange. This rule makes sure that Android devices cannot be used to access Exchange.
 
--   A default rule that specifies when a device is not covered by other rules, then it should be allowed.
+  -   A default rule that specifies when a device is not covered by other rules, it should be allowed to access Exchange. This default rule makes sure that devices running platforms other than Android, but supported by Microsoft Intune can be used to access Exchange. They must however be enrolled in Intune and meet the compliance policy rules.
 
 The following flow is used to decide which devices can access Exchange:
 
 ![](./media/ConditionalAccess8-4.png)
 
-## Block users of noncompliant devices from Exchange Online in a specified Active Directory security group.
-In this scenario, all users in the **Accounting** Active Directory security group must be blocked from accessing Exchange Online if their device is not compliant with a compliance policy you deployed. Additionally, any users in the **Finance** Active Directory security group must be exempt from the policy, even if they are also in the **Accounting** security group. Finally, if any users exist in this group whose devices are not supported by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], they must be blocked from accessing Exchange Online on that device.
-
-To accomplish this, in the conditional access policy, they configure the following:
-
--   Select the option **Enable conditional access for Exchange Online.**.
-
--   Select **Accounting** under **Targeted Groups**.
-
--   Select **Finance** under **Exempted Groups**.
-
--   Under **Exchange ActiveSync mail apps**, select **Require mobile devices to be compliant** option.
-
-The following flow is used to decide which devices can access Exchange:
-
-![](./media/ConditionalAccess8-5.png)
 
 >[!div class="step-by-step"]
 [<< Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)  

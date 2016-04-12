@@ -2,11 +2,12 @@
 title: Unenroll your device from Intune if you declined Terms of Use
 ms.reviewer: na
 ms.custom: na
+ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
-author:
+author: staciebarker
 ---
 
 # Unenroll your device from Intune if you declined Terms of Use

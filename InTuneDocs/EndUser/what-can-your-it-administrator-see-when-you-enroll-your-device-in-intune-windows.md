@@ -16,37 +16,35 @@ When  you enroll your device in Intune, you are giving your IT administrator per
 
 **What IT cannot see**
 
--   Call history
+-   Call and Web history
 
--   Text messages
+-	Location
 
--   Personal email, contacts, and calendar
+-   Email and text messages
 
--   Web history
+-   Contacts
 
--   Location
+-	Passwords
+
+-   Calendar
 
 -   Camera roll
 
--   Personal data
-
 **What IT can see**
+
+-   Model
+
+-   Serial number
+
+-   Operating system
+
+-   App names
 
 -   Owner
 
 -   Device name
 
--   Serial number
-
 -   Manufacturer
-
--   Model
-
--   Operating system
-
--   Company apps
-
--   Personal apps
 
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

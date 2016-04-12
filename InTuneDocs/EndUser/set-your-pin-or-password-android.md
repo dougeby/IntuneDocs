@@ -1,12 +1,13 @@
 ---
 title: Set your PIN or password
 ms.reviewer: na
+ms.service: microsoft-intune
 ms.custom: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
-author:
+author: staciebarker
 ---
 
 # Set your PIN or password

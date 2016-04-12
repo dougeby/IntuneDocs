@@ -2,11 +2,13 @@
 title: Encrypt your device
 ms.reviewer: na
 ms.custom: na
+ms.reviewer: na
+ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid:
-author:
+author: staciebarker
 ---
 
 # Encrypt your device

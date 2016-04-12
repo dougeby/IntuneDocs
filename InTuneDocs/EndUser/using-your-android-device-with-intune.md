@@ -2,11 +2,12 @@
 title: Using your Android device with Intune
 ms.custom: na
 ms.reviewer: na
+ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 77e71022-4ff4-4e02-a28d-11ad70a264fd
-author:
+author: staciebarker
 ---
 
 # Using your Android device with Intune
@@ -42,7 +43,7 @@ The information in this section will help you with actions you can take after yo
 
 The information in this section will help you fix issues you might encounter when your iOS device is enrolled in Intune.
 
-- [Use verbose logging to help your IT administrator fix device issues](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)</br>
+- [Use Verbose Logging to help your IT administrator fix device issues](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)</br>
 - [Send diagnostic data logs to your IT administrator using email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)</br>
 - [Send diagnostic data logs to your IT administrator using a USB cable](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)</br>
 - [Send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android.md)</br>
