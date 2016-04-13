@@ -1,5 +1,5 @@
 ---
-title: Introduction to device compliance policies | Microsoft Intune
+title: Device compliance policies | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 author: karthikaraman
 ---
-# Introduction to device compliance policies in Microsoft Intune
+# Device compliance policies in Microsoft Intune
 ## What is a compliance policy?
 To protect company data, you need to make sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device. A set of such rules is referred to as a compliance policy.
 

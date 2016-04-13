@@ -68,7 +68,11 @@ Here is a list of steps to get you started with the **Enterprise rollout** phase
 -   Outline which training methods you will use.
 
 -   Create a Getting Started checklist and enrollment guide for users.
-    Use the [Microsoft Intune Enrollment Instructions](https://www.microsoft.com/en-us/download/details.aspx?id=46398) as a starting point.
+    Use these user guides as a starting point:
+    -  (Enroll your Windows device in Intune)[./enduser/enroll-your-device-in-intune-windows]
+    -  (Enroll your Android device in Intune)[./enduser/enroll-your-device-in-Intune-android]
+    -  (Enroll your iOS device in Intune)[./enduser/enroll-your-device-in-intune-ios]
+    -  (Enroll your Mac OS X device in Intune)[./enduser/enroll-your-device-in-intune-mac-os-x]
 
 -   Define a process for updating training materials, as needed
 
@@ -83,7 +87,7 @@ Here are some  challenges that you may encounter in the **Enterprise rollout** p
 
 -   **Challenge:** Users are resistant to change and push back on using new technology.
 
-    **Mitigation:**Use the positive experiences of your pilot users to promote the use of devices managed by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+    **Mitigation:**Use the positive experiences of your pilot users to promote the use of devices managed by Intune.
 
 -   **Challenge:** Users feel if they have to be trained, the solution must be hard to use.
 

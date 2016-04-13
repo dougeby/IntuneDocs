@@ -9,12 +9,12 @@ ms.assetid: f46fb18e-228c-4a2d-92e7-20734e9bdae3
 author: Nbigman
 ---
 # Operations and maintenance (O&M)
-Now that your [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] system is operational, and you depend on it for business-critical functions and for secure device usage, maintain a robust system.
+Now that your Intune system is operational, and you depend on it for business-critical functions and for secure device usage, maintain a robust system.
 
 ## Why is this important?
-[!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] provides a dashboard that enables you to monitor the health of your managed devices, including Endpoint Protection status and warnings. You should have organizational practices in place to react to [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] alerts.
+Intune provides a dashboard that enables you to monitor the health of your managed devices, including Endpoint Protection status and warnings. You should have organizational practices in place to react to [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] alerts.
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] is frequently updated with new features and functionality. It's important that the you pay close attention to notices regarding these changes.
+Intune is frequently updated with new features and functionality. It's important that the you pay close attention to notices regarding these changes.
 Communicating and training for updates, establishing a plan for new hires and ensuring your help desk has the most current troubleshooting resources are all key to maximizing the rewards of your investment.
 Begin by reviewing the discovery questions to help scope and define your ongoing operational plan.
 
@@ -43,7 +43,7 @@ Awareness does not stop once your rollout is complete. If a service update or ch
 As new features are enabled ensure your training materials are updated.
 
 ### Operations
-Monitor your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console for alerts and user or device issues, and to ensure that polices and application distribution are performing according to your organizational plan.
+Monitor your Intune console for alerts and user or device issues, and to ensure that polices and application distribution are performing according to your organizational plan.
 
 ## Get started checklist
 Here is a list of steps to get you started with the **O&M** phase.
@@ -59,9 +59,9 @@ Here is a list of steps to get you started with the **O&M** phase.
 ## Common challenges
 Here are some  challenges that you may encounter in the **O&M** phase.
 
--   **Challenge:** Admins know that their environment needs to be monitored regularly. However, they are not experienced with the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] consoles.
+-   **Challenge:** Admins know that their environment needs to be monitored regularly. However, they are not experienced with the Intune consoles.
 
-    **Mitigation:** Invest in quality training. Admins should become intimately familiar with the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] consoles, so that they will be able to update policies, dstribute software, and diagnose and troubleshoot issues with higher confidence.
+    **Mitigation:** Invest in quality training. Admins should become intimately familiar with the Intune consoles, so that they will be able to update policies, dstribute software, and diagnose and troubleshoot issues with higher confidence.
 
 -   **Challenge:** Users encounter issues with enrollment and with app installation.
 
