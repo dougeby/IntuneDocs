@@ -15,7 +15,7 @@
 ##### [iOS Setup Assistant enrollment](ios-setup-assistant-enrollment.md)
 ##### [iOS direct enrollment](ios-direct-enrollment.md)
 ##### [iOS DEP enrollment](ios-device-enrollment-program.md)
-#### [Enroll with device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune )
+#### [Enroll with device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 #### [Tag devices with IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 ### [MDM with Exchange ActiveSync](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
 #### [Exchange connector requirements](intune-exchange-connector-requirements.md)
