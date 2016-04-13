@@ -12,48 +12,79 @@ author: dougeby
 ---
 
 
+<div id="main">
+  <h1 id="common-ways-to-use-intune">Common ways to use Intune</h1>
+  <div id="metadata" ms.cmpgrp="page info">
+    <a href="https://github.com/jeffgilb" class="avatar"><span class="author-name" style="background-image: url(https://github.com/jeffgilb.png)" alt="Author Name"></span></a>
+    <div class="info">
+      <span class="name"><a href="https://github.com/jeffgilb">Jeff Gilbert</a></span>
+      <div class="meta">
+        <time datetime="" class="date">3/22/2016</time>
+        <time datetime="" class="reading-time">6 min to read</time>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  ![alt text](.\media\Nav-Puzzle\WIT_MDM_Row2Column2.png "Logo Title Text 1")![alt text](.\media\Nav-Puzzle\WIT_MDM_Row2Column2.png "Logo Title Text 1")
+
+
+
+
 ## Hot-linked images
 
-[![Image1](.\media\Sandbox\AppLifecycleR1C1.png)](https://docsmsftstage.azurewebsites.net/InTune/Understand/introduction-to-microsoft-intune.html)[![Image1](.\media\Sandbox\AppLifecycleR1C2.png)](https://docsmsftstage.azurewebsites.net/InTune/getstarted/get-ready-to-enroll-devices-in-microsoft-intune.html)
-<br/>
-[![Image1](.\media\Sandbox\AppLifecycleR2C1.png)![Image1](.\media\Sandbox\AppLifecycleR2C2.png)](http://url.for.configure.topic)
-<br />
-[![Image1](.\media\Sandbox\AppLifecycleR3C1.png)](http://www.msn.com)[![Image1](.\media\Sandbox\AppLifecycleR3C2.png)](http://www.msn.com)
-<br />
-<br />
+<img src="media\sandbox\AppLifecycleR1C1.png" (https://docsmsftstage.azurewebsites.net/InTune/Understand/introduction-to-microsoft-intune.html) class="inline" />
+
+<img src="media\sandbox\AppLifecycleR1C1.png" class="inline" /><img src="media\sandbox\AppLifecycleR1C2.png" class="inline" />
 
 
 
+An image that is a link using (a href=>(img src=>:
+
+<a href="http://www.microsoft.com"><img src="media\sandbox\AppLifecycleR1C1.png" alt="" class="inline">
+</a><a href="http://www.microsoft.com"><img src="media\sandbox\AppLifecycleR1C2.png" alt="" class="inline">
+</a><br/>
+<a href="http://www.microsoft.com"><img src="media\sandbox\AppLifecycleR2C1.png" alt="" class="inline">
+</a><a href="http://www.microsoft.com"><img src="media\sandbox\AppLifecycleR2C2.png" alt="" class="inline">
+</a><br/>
+<a href="http://www.microsoft.com"><img src="media\sandbox\AppLifecycleR3C1.png" alt="" class="inline">
+</a><a href="http://www.microsoft.com"><img src="media\sandbox\AppLifecycleR3C2.png" alt="" class="inline">
+</a>
+
+
+
+
+
+An image that uses (!(Image1)(.path)(link)
 
 [![Image1](.\media\Nav-Puzzle\WIT_MDM_Row1Column1.png)](https://docsmsftstage.azurewebsites.net/InTune/Understand/introduction-to-microsoft-intune.html)[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row1Column2.png)](https://docsmsftstage.azurewebsites.net/InTune/getstarted/get-ready-to-enroll-devices-in-microsoft-intune.html)[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row1Column3.png)](https://docsmsftstage.azurewebsites.net/InTune/DeployUse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.html)[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row1Column4.png)](http://www.msn.com)
 <br />
-[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row2Column1.png)](https://docsmsftstage.azurewebsites.net/InTune/Get-started-with-a-30-day-trial-of-Microsoft-Intune.html)[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row2Column2.png)](https://docsmsftstage.azurewebsites.net/InTune/DeployUse/retire-data-and-devices-from-microsoft-intune-management.html)[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row2Column3.png)](https://docsmsftstage.azurewebsites.net/InTune/DeployUse/protect-data-and-devices-with-microsoft-intune.html)[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row2Column4b.png)](https://docsmsftstage.azurewebsites.net/InTune/DeployUse/deploy-and-configure-apps-with-microsoft-intune.html)[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row2Column5.png)](https://docsmsftstage.azurewebsites.net/InTune/Troubleshoot/troubleshoot-microsoft-intune.html)
+[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row2Column1.png)](https://docsmsftstage.azurewebsites.net/InTune/Get-started-with-a-30-day-trial-of-Microsoft-Intune.html)[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row2Column2.png)](https://docsmsftstage.azurewebsites.net/InTune/DeployUse/retire-data-and-devices-from-microsoft-intune-management.html)[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row2Column3.png)](https://docsmsftstage.azurewebsites.net/InTune/DeployUse/protect-data-and-devices-with-microsoft-intune.html)[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row2Column4.png)](https://docsmsftstage.azurewebsites.net/InTune/DeployUse/deploy-and-configure-apps-with-microsoft-intune.html)[![Image1](.\media\Nav-Puzzle\WIT_MDM_Row2Column5.png)](https://docsmsftstage.azurewebsites.net/InTune/Troubleshoot/troubleshoot-microsoft-intune.html)
 
 <para/>
 
 ## Animated GIF
 
-![Image1](.\media\Sandbox\ExchangeConnector2.gif)]
-
-
-![Image1](.\media\Sandbox\One_gear.gif)
+![Image1](.\media\MDMAppLifecycle_v8.gif)]
 
 
 
-### Download, Install and Configure the Microsoft Intune Exchange Connector
-To set up a connection that enables [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] to communicate with the Exchange Server that hosts the mobile devices’ mailboxes, you must download and configure the On-Premises Connector tool from the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] administrator console.
 
-##### To download the On-Premises Connector software installation package
+## Image map
 
-1.  Open the [!INCLUDE[wit_adminconsole](./includes/wit_adminconsole_md.md)].
+<p>Click on the sun or on one of the planets to watch it closer:</p>
 
-2.  In the workspace shortcuts pane, choose **ADMIN**.
-![IntuneSA1aclickADMIN](./Media/IntuneSA1aclickADMIN.gif)
+<img src=".\media\sandbox\planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
 
-3.  In the navigation pane, under **Mobile Device Management**, expand **Microsoft Exchange** and then choose **Setup Exchange Connection**.
-![IntuneSA1bSetupExchangeConnection](./Media/IntuneSA1bSetupExchangeConnection.png)
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="http://www.microsoft.com">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="http://www.microsoft.com">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="http://www.microsoft.com">
+</map>
 
-4.  On the **Setup Exchange Connection** page, choose **Download On-Premises Connector**.
-![IntuneSA1cOnpremConnector](./Media/IntuneSA1cOnpremConnector.png)
-
-5.  The On-Premises Connector software is contained in a compressed (.zip) folder that can be opened or saved. In the **File Download** dialog box, choose **Save** to store the compressed folder to a secure location.
+</body>
+</html>
