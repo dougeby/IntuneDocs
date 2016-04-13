@@ -10,7 +10,7 @@ author: Nbigman
 ---
 # Troubleshoot policies in Microsoft Intune
 
-Listed here are some issues that may arise from your [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] policy configuration, and troubleshooting recommendations for those issues.
+Listed here are some issues that may arise from your Microsoft Intune policy configuration, and troubleshooting recommendations for those issues.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
@@ -55,7 +55,7 @@ For non-MDM Windows devices, policy errors in the policyplatform.log file may be
 
 #### To resolve UAC issues
 
-1.  Retire the computer, as described in [Retire data and devices from Microsoft Intune management](retire-data-and-devices-from-microsoft-intune-management.md).
+1.  Retire the computer, as described in [Retire data and devices from Microsoft Intune management](./deployuse/retire-data-and-devices-from-microsoft-intune-management.md).
 
 2.  Wait 20 minutes for the client software to be removed.
 
