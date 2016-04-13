@@ -74,7 +74,7 @@ An image that uses (!(Image1)(.path)(link)
 
 
 
-## Image map
+## Image map test 
 
 <p>Click on the sun or on one of the planets to watch it closer:</p>
 
