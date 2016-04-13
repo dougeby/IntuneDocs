@@ -9,7 +9,7 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 author: Nbigman
 ---
 # Application rollout
-This topic provide specific recommendations for a phased rollout of apps in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]. For general information about rollout phases, see [Rollout phases for Microsoft Intune deployment](rollout-phases-for-microsoft-intune-deployment.md).
+This topic provide specific recommendations for a phased rollout of apps in Microsoft Intune. For general information about rollout phases, see [Rollout phases for Microsoft Intune deployment](rollout-phases-for-microsoft-intune-deployment.md).
 
 ### Phases of app rollout
 The phases of app rollout are:
@@ -31,11 +31,11 @@ Consider the following:
 
 -   The suitability of  the app for your users and their devices (all operating systems that are likely to be used).
 
--   Check that the installer for the app you chose is supported by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] app distribution, as described in  [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).
+-   Check that the installer for the app you chose is supported by Intune app distribution, as described in  [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).
 
 -   Ensure that app distribution prerequisites are installed, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).
 
--   Determine that the app type is supported by [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+-   Determine that the app type is supported by Intune.
 
 -   Check that  you have sufficient cloud storage space available to upload the app. Instructions for purchasing additional storage are provided in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).
 
@@ -70,7 +70,7 @@ During the pilot you will deploy the app to a small group of test users and devi
 -   Use a phased approach for deploying the app, adding groups incrementally to ensure that the rollout is proceeding smoothly.
 
 ## Operations and maintenance
-**Operations:** Monitor your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console for alerts and user or device issues, and to ensure that application distribution is functioning according to your design.
+**Operations:** Monitor your Intune console for alerts and user or device issues, and to ensure that application distribution is functioning according to your design.
 
 **Help desk:** Ensure that your help desk is aware of any changes to app availability that may result in support requests.
 
