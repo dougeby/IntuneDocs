@@ -23,7 +23,7 @@ Customizing the company portal helps provide a familiar and helpful experience f
 ## Company contact information and privacy statement
 The company name is displayed as the company portal title. The contact information and details are displayed to users in the Contact IT screen of the company portal. The privacy statement is displayed when a user clicks on the privacy link.
 
-|Field name|Maximum character length|More information|
+|Field name|Max length|More information|
     |----------|------------------------|----------------|
     |Company name|40|This name is displayed as the title of the company portal.|
     |IT department contact name|40|This name is displayed on the **Contact IT** page.|
@@ -35,7 +35,7 @@ The company name is displayed as the company portal title. The contact informati
 ## Support contacts
 The support website is displayed to users in the company portal to enable them to access online support.
 
-|Field name|Maximum character length|More information|
+|Field name|Max length|More information|
     |----------|------------------------|----------------|
     |Support website URL|150|If you have a support website that you want your users to use, specify the URL here. The URL must be in the format **https://www.contoso.com**. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the company portal.|
     |Website name|40|This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then **Go to IT website** is displayed on the **Contact IT** page in the company portal.|
