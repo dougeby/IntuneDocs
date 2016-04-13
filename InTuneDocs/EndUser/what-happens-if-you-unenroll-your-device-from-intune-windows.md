@@ -21,11 +21,11 @@ When you uninstall the Company Portal app from your device, it also unenrolls yo
 
 ## <a name="BKMK_what_happs_unenroll_win10_81_8_7_vista">Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
 
--   Your device won’t appear in the company portal anymore, and you can’t install apps from the company portal anymore.
+-   Your device won’t appear in the Company Portal anymore, and you can’t install apps from the Company Portal anymore.
 
 -   If you installed the Intune client software, it’s removed from your computer.
 
--   The Intune Endpoint Protection software is removed from your computer. If your computer has other virus protection software installed and it is disabled, that software may be re-enabled after Intune Endpoint Protection is removed. You should check your computer after removing it from the company portal.
+-   The Intune Endpoint Protection software is removed from your computer. If your computer has other virus protection software installed and it is disabled, that software may be re-enabled after Intune Endpoint Protection is removed. You should check your computer after removing it from the Company Portal.
 
     > [!IMPORTANT]
     > If the other virus protection software is not re-enabled or no other virus protection software is installed, your computer may be vulnerable to viruses and malware.
@@ -46,7 +46,7 @@ In addition, for Windows 8.1:
 
 ## <a name="BKMK_what_happens_unenroll_wp10_81">Windows 10 mobile, Windows Phone 8.1 or Windows Phone 8
 
--   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal app or Company Portal website.
+-   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the Company Portal anymore, and you won't be able to install apps from the Company Portal app or Company Portal website.
 
 -   You can’t use company apps and company data on your device anymore.
 
@@ -57,7 +57,7 @@ In addition, for Windows 8.1:
 
 ## <a name="BKMK_what_happens_unenroll_win81_rt">Windows RT running Windows 8.1 or Windows RT
 
--   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal.
+-   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the Company Portal anymore, and you won't be able to install apps from the Company Portal.
 
 -   You can’t use company apps and company data on your device anymore.
 
@@ -71,7 +71,7 @@ In addition, for Windows 8.1:
 
 When you remove your Windows RT device, the following happens:
 
--   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the company portal anymore, and you won't be able to install apps from the Company Portal.
+-   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the Company Portal anymore, and you won't be able to install apps from the Company Portal.
 
 -   You can’t use company apps and company data on your device anymore.
 
