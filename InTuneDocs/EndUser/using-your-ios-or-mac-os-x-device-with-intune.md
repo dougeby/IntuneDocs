@@ -12,7 +12,7 @@ robots: noindex
 ---
 # Using your iOS or Mac OS X device with Intune
 
-Use these steps for tasks that you need to do on your iOS device when your company is using Microsoft Intune.
+Use these steps for tasks that you need to do on your iOS or Mac OS X device when your company is using Microsoft Intune.
 
 ## Company Portal app installation and Intune enrollment
 

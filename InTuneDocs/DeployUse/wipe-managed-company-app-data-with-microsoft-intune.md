@@ -17,15 +17,15 @@ You can selectively remove company data from apps without affecting personal dat
 The **Wipe request** tile on the **Intune mobile application management** blade displays the number of pending requests and failures.
 
 
-## <a name="bkmk_makerequest"></a>Make a wipe request
+## Make a wipe request
 
 1.  In the **Intune Mobile application management** blade, choose the **Wipe requests** tile.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_WipeRequests.png)
+    ![](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
 2.  Choose  **New wipe requests**.
 
-    ![](../Image/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
+    ![](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
 3.  In the **New wipe request** blade, choose **User** to open the **User** blade and select the user whose app data you want to wipe.
 
@@ -35,13 +35,15 @@ The **Wipe request** tile on the **Intune mobile application management** blade 
 
 The **Intune mobile application management** blade has a summarized report on the **Wipe request** tile.  It displays the overall status and includes the number of pending requests, and failures. You can get more details by clicking on the tile, which opens up the **Wipe request** blade.
 
-![](../Image/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
+![](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
-## <a name="bkmk_monitorrequest"></a>Monitor your wipe requests
+## Monitor your wipe requests
 
 1.  In the **Intune mobile application management** blade, choose the **Wipe request** tile to open the **Wipe request** blade.
 
 2.  In the **Wipe request** blade, you can see the list of your requests grouped by users.  Since the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user.  The status indicates whether a wipe request is still **pending**, **failed**, or **successful**.
 
 ### See also
-[Configure data loss prevention app policies with Microsoft Intune](../Topic/Configure-data-loss-prevention-app-policies-with-Microsoft-Intune.md)
+[Protect app data using mobile app management policies ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+
+[Using the Azure portal](azure-portal-for-microsoft-intune-mam-policies.md)

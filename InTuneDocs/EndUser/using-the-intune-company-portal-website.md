@@ -14,17 +14,17 @@ The [Company Portal website](http://portal.manage.microsoft.com) is a web page t
 
 You can use the Company Portal website  to:
 
--   [Reset your device passcode from the Company Portal website](reset-your-passcode-cpwebsite.md)
+-   [Reset your device passcode](reset-your-passcode-cpwebsite.md)
 
--   [Rename your device from the Company Portal website](rename-your-device-cpwebsite.md)
+-   [Rename your device](rename-your-device-cpwebsite.md)
 
--   [Remove your device from the Company Portal](remove-your-device-cpwebsite.md)
+-   [Remove your device](remove-your-device-cpwebsite.md)
 
--   [Reset your device from the Company Portal website](reset-your-device-cpwebsite.md)
+-   [Reset your device](reset-your-device-cpwebsite.md)
 
--   [Remotely lock a device from the Company Portal website](remote-lock-your-device.md)
+-   [Remotely lock a device](remote-lock-your-device-cpwebsite.md)
 
--	[Sync your device manually](sync-your-device-manually-cpwebsite.md)
+-	[Sync your device manually to speed up slow app installations](sync-your-device-manually-cpwebsite.md)
 
 -   Find your IT administrator's contact information, if your IT admin configured it
 
