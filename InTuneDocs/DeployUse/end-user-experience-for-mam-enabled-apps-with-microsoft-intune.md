@@ -10,16 +10,8 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 author: karthikaraman
 ---
 # End user experience for MAM enabled apps with Microsoft Intune
-Mobile application management (MAM) polices are applied only when apps are used in the work context.  Read the following scenarios to help you educate your users so that they understand how managed apps work.
-Select one of the following scenarios to learn more:
-> [!div class="op_single_selector"]
-- [Scenario: Accessing OneDrive on an iOS device](#bkmk_onedriveios)
-- [Scenario: Accessing OneDrive on an Android device](#bkmk_onedriveandriod)
-- [Scenario: Using Microsoft Word app for work and personal tasks](#bkmk_wordworkandpersonal)
-- [Viewing media files with the Rights Management sharing app](#bkmk_RMS)
-- [Managing a single user account on a device](#bkmk_oneuser)
-
-##  <a name="bkmk_onedriveios"></a> Scenario: Accessing OneDrive on an iOS device
+Mobile application management (MAM) polices are applied only when apps are used in the work context.  Read the following scenarios to understand how managed apps work.
+##  Accessing OneDrive on an iOS device
 
 1.  Launch the  **OneDrive** app to open the sign in page.
 
@@ -36,7 +28,7 @@ Select one of the following scenarios to learn more:
 
     ![](../media/AppManagement/iOS_AppRestartforMAM.png)
 
-4.  When you relaunch the **OneDrive** app, the app launches with the MAM policies turned on. You are now prompted to set a **PIN** for the app. (if you configured the policy for this).
+4.  When you re-launch the **OneDrive** app, the app launches with the MAM policies turned on. You are now prompted to set a **PIN** for the app. (if you configured the policy for this).
 
     ![](../media/AppManagement/iOS_AppPINPrompt.png)
 
@@ -47,7 +39,7 @@ Select one of the following scenarios to learn more:
     > [!NOTE]
     > When you change a deployed policy, the changes will be applied next time you open the app.
 
-##  <a name="bkmk_onedriveandriod"></a> Scenario: Accessing OneDrive on an Android device
+##  Accessing OneDrive on an Android device
 
 1.  Launch the OneDrive app to open the sign in page.
 
@@ -82,7 +74,8 @@ Select one of the following scenarios to learn more:
 
     ![](../media/AppManagement/Android_OneDriveConfirmPIN.png)
 
-##  <a name="bkmk_wordworkandpersonal"></a>Scenario: Using Microsoft Word app for work and personal tasks
+##  Using apps with multi-identity support
+Microsoft Word is used as an example for this scenario.
 
 1.  Open the **Word** app on your device. We are using an iOS device to show the steps.
 
@@ -90,19 +83,19 @@ Select one of the following scenarios to learn more:
 
     ![](../media/AppManagement/iOS_WordCreateNewDoc.png)
 
-3.  Type a sentence or two.  When you save this document, both personal and work locations are shown as options to save the document you just created.  At this step, the app policies are not yet applied since this work/personal context is not yet established.
+3.  Type a sentence of your choice.  When you try to save this document, both personal and work locations are shown as options to save the document you just created.  At this step, the app policies are not yet applied since this work/personal context is not yet established.
 
 4.  Save the document to your OneDrive for business location. This is now tagged as company data and the policy restrictions apply.
 
     ![](../media/AppManagement/iOS_WordCreateCompanyDoc.PNG)
 
-5.  Open the document you saved to your work location.  Copy the text, open your personal**Facebook** account  and try to paste the copied text.  You see that you cannot paste the content into the new Facebook post. The paste option is not greyed out, but nothing happens when you press **Paste**.
+5.  Open the document you saved to your work location.  Copy the text, open your personal **Facebook** account  and try to paste the copied text.  You should not be able paste the content into the new Facebook post. The paste option is not greyed out, but nothing happens when you press **Paste**.
 
     ![](../media/AppManagement/iOS_WordCopyCompany.png)
 
     ![](../media/AppManagement/iOS_FacebookPasteCompany.png)
 
-6.  Now repeat steps 2 and 3 to create another new document, type a sentence or two, and instead of saving it to your work, save it to your personal location, like **OneDrive - personal**.
+6.  Now repeat steps 2 and 3 to create another new document, type a sentence of your choice, and instead of saving it to your work, save it to your personal location, like **OneDrive - personal**.
 
     ![](../media/AppManagement/iOS_WordCopyPersonal.png)
 
@@ -110,30 +103,35 @@ Select one of the following scenarios to learn more:
 
     ![](../media/AppManagement/iOS_FacebookPastePersonal.png)
 
-##  <a name="bkmk_RMS"></a>Viewing media files with the Rights Management sharing app
+##  Viewing media files with the Rights Management sharing app
 To view AV, PDF and image files, on Android devices, you can use the [Microsoft Rights Management (RMS) sharing app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
 Download this app from the  Google Play store.  Once the app is installed on your device, launch the app and authenticate with your company credentials. You should now be able to view unprotected and protected files from other policy-managed apps.
 
-##  <a name="bkmk_oneuser"></a> Managing a single user account on a device
-Intune only supports deploying MAM policies to only one user account per device. If a device has more than one work account, only one account is managed by the MAM policies.
+##  Managing user accounts
 
-Depending on the app that you are using, the second user may or may not be blocked on the device. However, only the first user who gets the MAM policies if affected by the policy.
-**For example**: Microsoft Word, Excel, and PowerPoint don't block a second user account, but the second user account is not affected by the MAM policies.  
+Intune only supports deploying MAM policies to only one user account per device. If a device has more than one work account, only one work account is managed by the MAM policies.
 
-If a device has existing multiple user accounts before the MAM policies are deployed, the account that the MAM policies is deployed to first is supported by Intune MAM policies.
+Depending on the app that you are using, the second user may or may not be blocked on the device. However, in all cases, only the first user who gets the MAM policies is affected by the policy.
 
-For OneDrive and Outlook apps, you can only use one work account that has a MAM policy on a device.  Adding multiple work accounts are blocked on these apps.  You can however, remove a user and add a different user on the device.
+If a device has existing multiple user accounts before the MAM policies are deployed, the account that the MAM policies is deployed to first is managed by Intune MAM policies.
 
-So let's say you work for two companies- **Company X**, and **Company Y**, and both use Intune to deploy MAM policies. **Company X** deploys MAM policies **before** **Company Y**. Your account associated with **Company X** will get the MAM policy, but not the account associated with Company Y. If you want the user account associated with Company Y to be managed by the MAM policies, you must remove the user account associated with Company X.
+**Microsoft Word**, **Excel**, and **PowerPoint** don't block a second user account, but the second user account is not affected by the MAM policies.  
 
--   If you are using an iOS device, when you try to add a second work account on the same device, you may see blocking message.  You will also see an option to remove the existing account and add a new one. You can do so by clicking **Yes**.
+For **OneDrive and Outlook apps**, you can only use one work account.  Adding multiple work accounts are blocked on these apps.  You can however, remove a user and add a different user on the device.
 
-    ![](../media/AppManagement/iOS_SwitchUser.PNG)
+Read the example scenario below to get a deeper understanding of how multiple user accounts are treated.
 
--   If you are using an Android device, You may see a blocking message with instructions to remove the existing account and add a new one.  On Android devices, to remove the existing account, go to **Settings &gt;General &gt; Application Manager &gt;Company Portal and select "Clear Data"**.
+User A works for two companies - **Company X**, and **Company Y**. User A has a work account for each company, and both use Intune to deploy MAM policies. **Company X** deploys MAM policies **before** **Company Y**. The account associated with **Company X** will get the MAM policy, but not the account associated with Company Y. If you want the user account associated with Company Y to be managed by the MAM policies, you must remove the user account associated with Company X.
+### Adding a second account
+#### IOS
+If you are using an iOS device, when you try to add a second work account on the same device, you may see blocking message.  You will also see an option to remove the existing account and add a new one. You can do so by clicking **Yes**.
 
-    ![](../media/AppManagement/Android_SwitchUser.png)
+![](../media/AppManagement/iOS_SwitchUser.PNG)
+####  Android
+If you are using an Android device, You may see a blocking message with instructions to remove the existing account and add a new one.  On Android devices, to remove the existing account, go to **Settings &gt;General &gt; Application Manager &gt;Company Portal and select "Clear Data"**.
+
+![](../media/AppManagement/Android_SwitchUser.png)
 
 
 
