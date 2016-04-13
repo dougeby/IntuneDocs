@@ -17,7 +17,7 @@ If you are trying to enroll your device in Intune, and you see a screen asking y
 
 1. If you see your device in the list, tap it. If you don't see it, tap **new device**.
 2. Tap **continue.**
-3. Enter the last four characters of your device's serial number to help Intune confirm that your device is enrolled. To find your serial number, see [how-do-i-find-the-serial-number-on-my-device-ios.md][How do I find the serial number on my device?].
+3. Enter the last four characters of your device's serial number to help Intune confirm that your device is enrolled. To find your serial number, see [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md).
 
 ### See also
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
