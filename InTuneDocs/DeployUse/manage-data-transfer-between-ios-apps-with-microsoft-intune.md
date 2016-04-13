@@ -21,7 +21,7 @@ The **Open in management** feature for iOS devices can limit file transfers betw
 ##  Using MAM with iOS apps
 Mobile app management (MAM) policies can be used with the iOS **Open in management** feature to protect company data in the following ways:
 
--   **BYO devices not managed by any MDM solution:** You can set the MAM policy settings to **Allow app to transfer data to only managed apps**. When the end-user opens a protected file in an app that is not policy-managed, the file is unreadable.
+-   **Employee owned devices not managed by any MDM solution:** You can set the MAM policy settings to **Allow app to transfer data to only managed apps**. When the end-user opens a protected file in an app that is not policy-managed, the file is unreadable.
 
 -   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with MAM policies and other managed iOS apps deployed through Intune is allowed  automatically. To allow data transfer between apps with MAM policies, enable the **Allow app to transfer data to only managed apps** setting. You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune.   
 
