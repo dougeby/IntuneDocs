@@ -1,5 +1,5 @@
 ---
-title: Intune mobile app management policies and iOS Open In
+title: Manage data transfer between iOS apps | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 author: karthikaraman
 ---
-# Intune mobile app management policies and iOS Open In
+# Manage data transfer between iOS apps with Microsoft Intune
 Part of protecting your company data requires making sure that file transfers are restricted to apps that are managed by you.   You can manage apps in the following ways:
 
 -   Prevent company data loss  by associating the apps with mobile app management policies, which we will refer to as **policy-managed**  apps.

@@ -17,7 +17,7 @@ author: karthikaraman
   **Default value = Yes**
 
 - **Allow app to transfer data to other apps:**   Select one of the options to specify the apps that the policy managed apps can send data to:
-  - *Policy managed apps*: Allow transfer to only other restricted apps
+  - *Policy managed apps*: Allow transfer to only other apps that have the MAM policy.
   - *All apps*: Allow transfer to any app
   - *None*: Do not allow data transfer to any app
 
@@ -40,8 +40,8 @@ author: karthikaraman
 - **Restrict cut, copy and paste with other apps:**
 Specify when  cut, copy, and paste operations should be restricted. Choose from:
   -   *Blocked:* Do not allow cut, copy, and paste operations between policy managed apps.
-  -   *Policy Managed Apps*: Only allow cut, copy, and paste operations between policy managed apps.
-  -   *Policy Managed Apps with paste In*: Allow data cut or copied between policy managed apps. Allow data cut or copied from any app to be pasted into this app.
+  -   *Policy Managed Apps*: Only allow cut, copy, and paste operations between apps that have MAM policy.
+  -   *Policy Managed Apps with paste In*: Allow data cut or copied between apps with MAM policy. Allow data cut or copied from any app to be pasted into this app.
   - *Any App*: No restrictions for  cut, copy, and paste operations between any apps.
 
   **Default value =Policy managed apps with paste in**
