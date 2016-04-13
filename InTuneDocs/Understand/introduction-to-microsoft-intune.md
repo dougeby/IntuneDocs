@@ -35,3 +35,8 @@ Some of the primary tools that Intune offers include:
 These tools are used in different combinations to enable the common scenarios above. For example, shared device scenarios make heavy use of MDM. Bring-your-own (BYO) scenarios typically rely on MAM. And the corporate phone scenarios build upon both. Almost all scenarios make use of mobile application security.
 
 Throughout this documentation, we’ll explain how to use the tools Intune provides to support your business scenarios.  We’ll also explain how to use these tools with Office 365, Azure AD, Azure RMS, and other parts of the Microsoft mobility suite. This will help give you a broad overview of the ways in which the technology is commonly used and how it might be useful in your environment as well as procedures to implement them. The technology itself is very flexible and can be adapted to all sorts of scenarios beyond the ones we describe here.
+
+### Next steps
+* Read about some of the [common ways to use Intune](common-ways-to-use-intune.md)
+* Get familiar with the product [with a 30-day trial of Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
+* Dive into the [technical requirements and capabilities](/getstarted/what-to-know-before-you-start-microsoft-intune.md) of Intune
