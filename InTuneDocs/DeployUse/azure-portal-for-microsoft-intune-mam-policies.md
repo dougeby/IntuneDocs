@@ -18,14 +18,15 @@ Azure portal supports creating MAM policies for:
 - Apps running on devices that are **not enrolled** in any MDM solution.
 - Apps running on devices that are **enrolled in a third party MDM solution**.
 
-[!NOTE] The Intune admin console supports creating and managing mobile app management policies for devices enrolled in Intune. If you already have configured a MAM policy in the [Intune console](), you may continue to do so.  
+>[!NOTE]
+>The Intune admin console supports creating and managing mobile app management policies for devices enrolled in Intune. If you already have configured a MAM policy in the [Intune console](), you may continue to do so.  
 #### Login to the Azure portal and customize your start page
 
 1.  Go the [Azure  portal](https://portal.azure.com) and sign in with  your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] credentials.
 
     ![](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  Once you are successfully signed in, you will see the **Start** page or **home** page. The **Start** page or the home page comes with a set of default tiles that you can remove and add new ones to customize the page.
+2.  Once you are successfully signed in, you will see the **Dashboard**. The **Dashboard** page comes with a set of default tiles that you can remove and add new ones to customize the page.
 
     ![](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
