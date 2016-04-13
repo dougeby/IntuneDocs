@@ -18,9 +18,11 @@ Using Apple Configurator you can enroll iOS devices for management without reset
 1.  **Create a profile for devices**
     A device enrollment profile defines the settings applied to devices. If you have not already, create a device enrollment profile for iOS devices enrolled using Apple Configurator.
 
-    ###### To create a profile
+    #### To create a profile
 
     1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then click **Add…**.
+
+        ![](../Media/pol-sa-corp-enroll.png)
 
     2.  Enter details for the device profiles:
 
@@ -35,7 +37,11 @@ Using Apple Configurator you can enroll iOS devices for management without reset
     3.  Click **Save Profile** to add the profile.
 
 2.  **Add iOS devices to enroll with Apple Configurator**
-    In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Groups** &gt; **All Devices** &gt; **Corporate pre-enrolled devices** &gt; **By iOS serial number**, and then click **Add devices…**. You can add devices in two ways:
+    In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Groups** &gt; **All Devices** &gt; **Corporate pre-enrolled devices** &gt; **By iOS serial number**, and then click **Add devices…**.
+
+    ![](../Media/pol-SA-enroll-iOS-SetupAssistant.png)
+
+      You can add devices in two ways:
 
     -   **Upload a CSV file containing serial numbers** – Create a comma-separated value (.csv) list of two columns without a header, limited to 5000 devices or 5MB per csv file.
 
