@@ -13,10 +13,12 @@ author: Nbigman
 Here are some device enrollment issues and how to troubleshoot and resolve them.
 
 > [!NOTE]
-> Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting Android logs are provided in:
-- [Send diagnostic data logs to your IT administrator using a USB cable](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-- [Send diagnostic data logs to your IT administrator using email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
-- [Send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android)
+> Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
+>- [Send Android diagnostic data logs to your IT administrator using a USB cable](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+>- [Send Android diagnostic data logs to your IT administrator using email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+>- [Send Android enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android)
+>- [Send iOS enrollment errors to your IT administrator](send-errors-to-your-it-admin-ios.md)
+
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
@@ -150,4 +152,4 @@ A list of other iOS enrollment errors is provided in our device-user documentati
 
 ### See also
 [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
-[End-user Intune enrollment instructions for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)
+

@@ -14,7 +14,7 @@ author: Nbigman
 
 This topic tells you how to9 open a service request or call for phone support in many languages.
 
-For self help with Intune, see [General troubleshooting tips for Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) or any of the troubleshooting topics for specific issues.
+For self help with Intune, see [General troubleshooting tips for Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) or any of the troubleshooting topics for specific issues, listed in the **See also** section of this topic.
 ## To create an online service request
 
 1.  Sign in to Intune and then visit the [Office 365 admin center](https://portal.office.com/Support/SupportEntry.aspx).

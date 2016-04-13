@@ -31,7 +31,7 @@ Review this section for guidance on focus-area activities for this stated phase 
 You must know the scenarios you need to validate, and what you need to complete this validation, before deploying your PoC infrastructure.
 
 ### Help desk
-The help desk does not need preparation for this phase of the project as there won't be any production users or devices involved. However, this is an opportunity for the help desk to learn about the deployment and operation of [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+The help desk does not need preparation for this phase of the project as there won't be any production users or devices involved. However, this is an opportunity for the help desk to learn about the deployment and operation of Intune.
 
 ### Awareness
 The technical team and executive sponsorship should have visibility into the progress of scenario testing. The design team needs to be aware of the lessons learned to incorporate in its design.
