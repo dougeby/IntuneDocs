@@ -69,4 +69,4 @@ If you are looking for information about other platforms, select one of the foll
   OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
   >[!div class="step-by-step"]
   [<< Create a compliance policy ](create-a-device-compliance-policy-in-microsoft-intune.md)
-  [Deploy a compliance policy >>](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
+    [Deploy a compliance policy >>](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)

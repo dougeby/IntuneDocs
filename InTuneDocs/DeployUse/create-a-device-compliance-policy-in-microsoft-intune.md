@@ -20,8 +20,8 @@ This topic outlines the steps you can use to create a compliance policy that a d
 ##  Step 2:  Configure settings
 On the **Create Policy** page, enable the settings you require:
   -   The System security settings like password, and encryption
-  -   Device health settings like whether or Not a device is jailbroken or is reported healthy by the Windows device health attestation service.
-  -   Device property settings like the miniumum OS version required or maximum OS version allowed.
+  -   Device health settings like- whether or not a device is jailbroken, or is reported healthy by the Windows device health attestation service.
+  -   Device property settings like the minimum OS version required or maximum OS version allowed.
 ![IntuneSA3bCreatePolicy](./media/intune-sa-3b-create-policy.png)
 
 ##  Step 3: Save the policy
