@@ -15,6 +15,6 @@ Although the needs of individual organization might differ, there are certain co
 
 ![The MDM and app lifecycle](./media/mdmapplifecycle_v8.gif "mobile device and app lifecycle")
 
-For management purposes, all devices have a lifecycle, from initially enrolling the device, through to retiring it when it is no longer required. The [device management lifecycle]((overview-of-app-lifecycle-in-microsoft-intune.md) walks you through all of the enrollment options, ways you can configure and protect these device, and then how to remove the devices from management.
+For management purposes, all devices have a lifecycle, from initially enrolling the device, through to retiring it when it is no longer required. The [device management lifecycle](overview-of-device-lifecycle-in-microsoft-intune.md) walks you through all of the enrollment options, ways you can configure and protect these device, and then how to remove the devices from management.
 
 Similarly, apps you work with have their own [app lifecycle](overview-of-device-lifecycle-in-microsoft-intune.md) that includes steps ranging from adding an app to Intune, all the way through to removing them when they are no longer required.
