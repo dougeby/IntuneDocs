@@ -9,43 +9,43 @@ ms.topic: article
 ms.assetid:
 author: karthikaraman
 ---
-# Protect apps and data with Intune
-The Enterprise Mobility Suite (EMS) is a comprehensive solution for identity, mobile device management, app management, and data protection.
+# Protect apps and data with Microsoft Intune
+The Enterprise Mobility Suite (EMS)  is a comprehensive solution for identity, mobile device management, app management, and data protection. Microsoft Intune is one of the services of EMS that provides mobile device and application management solutions.
 
-EMS provides a layered security model which allows your IT department to manage access to email, data, and corporate applications from almost any device.
+EMS provides a layered security model which gives you the ability to control and manage access to email, data, and corporate applications.
 
-![EMS four layered data protection](../media/ems-4-layer-data-protection)
+![EMS four layered data protection](../media/ems-4-layer-data-protection.png)
 
 The four layered security model for identity, devices, apps, and data is about making sure that your company resources are only accessed by the intended user, on a device that meets a set of compliance policies configured by you, and restricting the data movement so it does not leave the work context and remains protected.
 
-- Protecting your data starts with establishing and validating the user identity. Azure AD, an identity and access management solution delivers single sign-on, multi-factor authentication, self-service passwords, and more. It provides the functionality for the identity layer of the security model.
-- Building on the identity baseline, you can use Microsoft Intune to make sure that mobile devices are enrolled, managed and compliant with your corporate policies. This is the device layer.
-- The third layer is the app management layer that Intune provides to help you keep sensitive data within the managed app ecosystem.
-- Azure Rights Management (Azure RMS) completes the security model by protecting data at the file level. The security policies that are applied to the data, travel with the data, help keep the data secure in transit and at rest, regardless of the device that is used to access it. This is the data layer of the security model.
+- Protecting your data starts with establishing and validating the user identity. **Azure Active Directory**, an identity and access management solution delivers single sign-on, multi-factor authentication, self-service passwords, and more. It provides the functionality for the **identity layer** of the security model.
+- Building on the identity baseline, you can use **Microsoft Intune** to make sure that mobile devices are enrolled, managed and compliant with your corporate policies. This is the **device layer**.
+- The third layer is the **app management layer** that **Intune** provides to help you keep sensitive data within the managed app ecosystem.
+- **Azure Rights Management (Azure RMS)** completes the security model by protecting data at the file level. The security policies that are applied to the data, travel with the data, help keep the data secure in transit and at rest, regardless of the device that is used to access it. This is the **data layer** of the security model.
 
-**In this section we will focus on Microsoft Intune’s capabilities help protect your company apps and data.**
+**In this section we will focus on Microsoft Intune’s capabilities that help protect your company apps and data.**
 
 An important step to protecting corporate data is restricting access to devices that don’t use a strong password, are not jailbroken, or not encrypted. Microsoft Intune gives you the ability to set conditions that your users have to meet to gain access to your company resources. This is known as conditional access.
 
-Conditional access is determined by two types of policies you can set in Intune:
-- Compliance policies determine the compliance of a device. They evaluate settings and conditions like:
+[Conditional access](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) is determined by two types of policies you can set in Intune:
+- [Compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune.md) determine the compliance of a device. They evaluate settings and conditions like:
   - PIN and passwords: Your IT can create rules to require passwords before unlocking a device, the complexity of the password, password expiration, and other password settings.
   - Encryption: Your IT can restrict access to devices that are encrypted.
   - Device is not jailbroken or rooted: Intune can detect if an enrolled device is jailbroken, and your IT can set the policy to block access on such devices.
-- Conditional access policies are     configured for a particular service like Exchange Online or SharePoint Online. For each service, you can define which groups of users these policies should apply to. For example, you can make sure that everyone in the finance department can only access company email from enrolled and compliant devices.
+- [Conditional access policies](create-a-device-compliance-policy-in-microsoft-intune.md) are     configured for a particular service like Exchange Online or SharePoint Online. For each service, you can define which groups of users these policies should apply to. For example, you can make sure that everyone in the finance department can only access company email from enrolled and compliant devices.
 
 Securing access is just the first step to protecting company data. You still need the ability to protect the data once it has been accessed on the device. The data now can be copied, moved, saved to a different location, or shared. Intune solves this problem by providing you with the ability to restrict data movement by creating a set of rules like:
 - Block copy and paste, or prevent data transfer outside of the work context.
 - Prevent backup to personal cloud storage, preventing Save as, etc.
 - Secure app access by requiring PIN/passcode or corporate credentials.
-•	Having all web links open within the Intune Managed Browser.
+- Have all web links open within the Intune Managed Browser.
 
-These set of rules are referred to as mobile app management (MAM) policies. To associate an app with a MAM policy, the app must incorporate the Microsoft Intune App Software Development Kit(SDK). Apps like Microsoft Office apps have the App SDK built-in. The full list of supported apps can be found on the [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) page. You can also enable your own custom built apps to use with MAM policies.
+These set of rules are referred to as [mobile app management (MAM) policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-In addition to restricting data movement, if a device gets lost or stolen, or if the user is no longer working with your company, you can selectively wipe company data, leaving only personal data behind.
+To associate an app with a MAM policy, the app must incorporate the Microsoft Intune App Software Development Kit (SDK).
 
+Apps like Microsoft Office apps have the App SDK built-in. The full list of supported apps can be found on the [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) page. Choose the app to see the supported scenarios, platforms and whether or not the app supports multi-identity.
 
+You can also [enable](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) your custom built line of business apps to use with MAM policies.
 
-
-<!--- Add this when the content for this topic is finalized:  To see the full list of supported apps, go to [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
-Click the app to see the supported scenarios, platforms and whether or not the app supported multi-identity.--->
+In addition to restricting data movement, if a device gets lost or stolen, or if the user is no longer working with your company, you can [selectively wipe company data](wipe-managed-company-app-data-with-microsoft-intune.md), leaving only personal data behind.
