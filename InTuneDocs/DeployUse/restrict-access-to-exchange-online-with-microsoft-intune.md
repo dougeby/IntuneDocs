@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 author: karthikaraman
 ---
-# Restrict email access to Exchange Online and new Exchange Online Dedicated environment with Intune
+# Restrict email access to Exchange Online and new Exchange Online Dedicated with Intune
 The information in this topic applies to both Exchange Online and the new Exchange Online Dedicated environment.
 
 If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, please contact your account manager.
@@ -22,7 +22,7 @@ To learn more about how conditional access works, read the [restrict access to e
 
 >If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, and would like to do so, you must submit a request.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
 
-**Before** you can configure conditional access you must:
+**Before** you can configure conditional access, you must:
 
 -   Have an **Office 365 subscription that includes Exchange Online (such as E3)** and users must be licensed for Exchange Online.
 
@@ -45,27 +45,26 @@ When conditional access policies are configured and targeted to a user, before a
 
 If a conditional access policy is not met, the user is presented with one of the following messages when they log in:
 
-- If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
+- If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the record in Azure Active Directory.
 
--   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website, or the Company Portal  app where they can find information about the problem and how to remediate it.
+-   If the device is evaluate as not compliant with the compliance policy rules, the end user is directed to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website, or the Company Portal  app where they can find information about the problem and how to remediate it.
 
 
-The diagram below illustrated the flow is used by conditional access policies for Exchange Online to evaluate whether to allow or block devices.
+The diagram below illustrates the flow used by conditional access policies for Exchange Online.
 
 ![](../media/ConditionalAccess8-1.png)
 
 ## Support for mobile devices
-You can restrict access to Exchange Online email from **Outlook** and other **apps that use modern authentication** on iOS and Android devices.
+You can restrict access to Exchange Online email from **Outlook** and other **apps that use modern authentication**:-
+
 - Android 4.0 and later, Samsung Knox Standard 4.0 and later
 - iOS 7.1 and later
 - Windows Phone 8.1 and later
 
- **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Office clients.
+ **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Microsoft Office clients.
 
-> -   The ADAL based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, the user is directed to a sign-in web page.
-> -   This new sign-in method enables conditional access that requires **device compliance**, and additionally,**multi-factor authentication**.
->
-> This [article](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/) has more detailed information on how modern authentication works.
+> -   The ADAL based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, the user is directed to a sign-in web page. This new sign-in method enables better security like **multi-factor authentication**, and **certificate-based authentication**
+> This [article](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) has more detailed information on how modern authentication works.
 
 
 You can restrict access to Exchange email from the built-in **Exchange ActiveSync email client** on the following platforms:
@@ -76,21 +75,19 @@ You can restrict access to Exchange email from the built-in **Exchange ActiveSyn
 
 - Windows Phone 8.1 and later
 
-
-
 ## Support for PCs
 
 You can setup conditional access for PCs that run Office desktop applications to access **Exchange Online** and **SharePoint Online** for PCs that meet the following requirements:
 
 -   The PC must be running Windows 7.0 or Windows 8.1.
 
--   The PC must either be domain joined or compliant with the compliance policy.
+-   The PC must either be domain joined or compliant with the compliance policy rules.
 
-    In order to be compliant, the PC must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and comply with the policies.
+    In order to be considered compliant, the PC must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and comply with the policies.
 
     For domain joined PCs, you must  set it up to [automatically register the device](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory.
 
--   [Office 365 modern authentication must be enabled](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/), and have all the latest Office updates.
+-   [Office 365 modern authentication must be enabled](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), and have all the latest Office updates.
 
     Modern authentication brings Active Directory Authentication Library (ADAL) based sign-in to Office 2013 Windows clients and enables better security like **multi-factor authentication**, and **certificate-based authentication**.
 
@@ -98,14 +95,14 @@ You can setup conditional access for PCs that run Office desktop applications to
 
 ## Configure conditional access
 ### Step 1: Configure and deploy a compliance policy
-Make sure you [create](create-a-device-compliance-policy-in-microsoft-intune.md) and [deploy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) a compliance policy to all devices that the Exchange conditional access policy will be targeted to.
+Make sure you [create](create-a-device-compliance-policy-in-microsoft-intune.md) and [deploy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) a compliance policy to the user groups who will also get the conditional access policy.
 
 
 > [!IMPORTANT]
-> If you have not deployed a compliance policy and then enable an Exchange conditional access policy, all targeted devices will be allowed access.
+> If you have not deployed a compliance policy, the devices will be considered compliant and will be allowed access to Exchange.
 
 ### <a name="bkmk_Eval_FX_CAP"></a>Step 2: Evaluate the effect of the conditional access policy
-You can use the **Mobile Device Inventory Reports** to identify devices that might be blocked from accessing Exchange after you configure the conditional access policy.
+You can use the **Mobile Device Inventory Reports** to identify the devices that might be blocked from accessing Exchange after you configure the conditional access policy.
 
 To do this, configure a connection between [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and Exchange by using the [Microsoft Intune service-to-service connector](intune-service-to-service-exchange-connector.md).
 1.  Navigate to **Reports -> Mobile Device Inventory Reports**.
@@ -124,7 +121,7 @@ After you run the report, examine these four columns to determine whether a user
 
 -   **Compliant** – Indicates whether the device is compliant with any compliance policies you deployed.
 
--   **Exchange ActiveSync ID** – iOS and Android devices are required to have their Exchange ActiveSync ID associated with the device registration record in Azure Active Directory. This happens when the user chooses the Activate Email link in the quarantine email.
+-   **Exchange ActiveSync ID** – iOS and Android devices are required to have their Exchange ActiveSync ID associated with the device registration record in Azure Active Directory. This happens when the user chooses the **Activate Email** link in the quarantine email.
 
     > [!NOTE]
     > Windows Phone devices always display a value in this column.
@@ -156,17 +153,17 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
 ### Step 4: Configure the conditional access policy
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Conditional Access** &gt; **Exchange Online Policy**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange Online Policy**.
 ![IntuneSA5dExchangeOnlinePolicy](../media/IntuneSA5dExchangeOnlinePolicy.png)
 
-2.  On the **Exchange Online Policy** page, select **Enable conditional access policy for Exchange Online**. If you check this, the device must be compliant with the compliance policies and the restrictions you set here. If this is not checked then conditional access is not applied.
+2.  On the **Exchange Online Policy** page, select **Enable conditional access policy for Exchange Online**.
 
     > [!NOTE]
-    > If you have not deployed a compliance policy and then enable the Exchange Online policy, all targeted devices are reported as compliant.
+    > If you have not deployed a compliance policy, devices are treated as compliant.
     >
     > Regardless of the compliance state, all users who are targeted by the policy will be required to enroll their devices with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-3.  Under **Application access**, for apps that use modern authentication, you can choose to apply conditional access policy to:
+3.  Under **Application access**, for apps that use modern authentication, you have two ways of choosing which platforms the policy should apply. Supported platforms include Android, iOS, Windows, and Windows Phone.
 
     -   **All platforms**
 
@@ -176,14 +173,15 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
     -   **Specific platforms**
 
-        If you choose the **Specific platforms** option, you will see a list of platforms that you can individually select.   Conditional access policy will apply to any client app that is using **modern authentication** on the device platforms you specify.
+         Conditional access policy will apply to any client app that is using **modern authentication** on the device platforms you specify.
 
-4.  Under **Exchange ActiveSync apps**, you can choose to block noncompliant devices from accessing Exchange Online if the device is noncompliant. You can also select whether to allow or block access to email when the device is not running a supported platform. Supported platforms include Android, iOS, Windows, or Windows Phone.
+4.  Under **Exchange ActiveSync apps**, you can choose to block noncompliant devices from accessing Exchange Online if the device is noncompliant. You can also select whether to allow or block access to email when the device is not running a supported platform. Supported platforms include Android, iOS, Windows, and Windows Phone.
+
 
 5.  Under **Targeted Groups**, select the Active Directory security groups of users to which the policy will apply. You can either choose to target all users or a selected list of user groups.
 ![IntuneSA5eTargetedExemptedGroups](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
-    > For users that are in the Targeted groups, the Intune polices will replace Exchange rules and policies.
+    > For users that are in the **Targeted groups**, the Intune polices will replace Exchange rules and policies.
     >
     > Exchange will only enforce  the Exchange allow, block and quarantine rules, and Exchange policies if:
     >
@@ -198,7 +196,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
 -   After a user creates an email account, the device is blocked immediately.
 
--   If a blocked user enrolls the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] (or remediates noncompliance), email access is unblocked within 2 minutes.
+-   If a blocked user enrolls the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and fixes any noncompliance issues, email access is unblocked within 2 minutes.
 
 -   If the user un-enrolls their device, email is blocked after around 6 hours.
 
