@@ -14,7 +14,7 @@ Microsoft Intune is the "management arm" of the Microsoft Enterprise Mobility Su
 
 EMS is a complete integrated suite for enterprise mobility inclusive of productivity, identity, access control, management and data protection. It gives you the best possible way to deploy and operate a mobility solution in your organization.  
 
-![Image of enterprise mobility vision](../media/em-itune-vision.png)
+![Image of enterprise mobility vision](../media/em-intune-vision.png)
 
 
 ![Image of enterprise mobility vision](../media/em-vision.png)
