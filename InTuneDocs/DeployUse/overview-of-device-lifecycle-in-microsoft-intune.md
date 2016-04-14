@@ -13,7 +13,7 @@ author: robstackmsft
 
 The Intune device lifecycle begins with initially enrolling a device and then moves through several steps concluding when the device is no longer required.
 
-![The device lifecycle](./media/device-lifecycle.gif "the Intune device lifecycle") -->
+![The device lifecycle](./media/device-lifecycle.gif "the Intune device lifecycle")
 
 ## Enroll
 Today's mobile device management (MDM) strategies deal with variety of phones, tablets, and PCs (iOS, Android, Windows, and Mac OS X). If you need to be able to manage the device, which is commonly the case for corporate owned devices, the first step is to [set up device enrollment](enroll-devices-in-microsoft-intune.md). You can also manage Windows PCs either by enrolling them with Intune (MDM) or by [installing the Intune client software](manage-windows-pcs-with-microsoft-intune.md).
