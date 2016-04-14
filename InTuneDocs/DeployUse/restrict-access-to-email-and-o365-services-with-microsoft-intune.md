@@ -14,8 +14,8 @@ You can restrict access to your company email and O365 services with Intune's co
 ## How does conditional access work?
 Compliance policy settings are used to evaluate the compliant status of the device. Conditional access policy uses the evaluation to restrict or allow access to a specific service. When conditional access policy is used in combination with compliance policy, only compliant devices will be allowed to access to the service.
 
-Keep in mind that the devices must have a compliance policy deployed to it in order for it to be evaluated for compliance.
-If no compliance policy is deployed to a device, then any applicable conditional access policies will treat the device as compliant, and no access restrictions will be applied.
+Keep in mind that a device must have a compliance policy deployed to it in order for it to be evaluated for compliance.
+If no compliance policy is deployed to a device, then, the device is treated as compliant, and no access restrictions will be applied.
 
 When devices do not meet the conditions set in the policies, the end-user is guided though the process of enrolling the device and fixing the issue that prevents the device from being compliant.
 
@@ -28,13 +28,14 @@ Use conditional access to manage access to Microsoft **Exchange On-premises**, *
 
 To set up conditional access, configure a device compliance policy, and a conditional access policy.
 
-The compliance policy has settings like passcode, encryption, and whether or not a device is jailbroken.  
+The compliance policy includes settings like passcode, encryption, and whether or not a device is jailbroken. The device must meet these rules in order to be considered compliant.
 
-You can set conditional access policy to restrict access based on the device compliance, specify whether or not the devices is running a supported platform, and the type of apps used to access the services.
+You can set conditional access policy to restrict access based on:
+- The device compliance status.
+- The platform running on the device.
+- The type of apps used to access the services.
 
-Unlike other Intune policies, you do not deploy conditional access policies. Instead, you configure these once, and they apply to all targeted users.
-
-Apply the policy to Azure Active Directory security user groups, and specify how to manage devices that are not supported by Microsoft Intune.  
+Unlike other Intune policies, you do not deploy conditional access policies. Instead, once you configure the policy and select the users that should have the policy, the policy is applied to all targeted users.
 
 
 ## Next steps

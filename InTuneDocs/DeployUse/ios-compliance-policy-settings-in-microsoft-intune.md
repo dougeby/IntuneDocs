@@ -42,7 +42,9 @@ character sets that the password must contain. The four character sets are:
   -   Symbols
   -   Numbers
 
-  Setting a higher number for this setting will require users to create more complex passwords.<br /><br />For iOS devices, this setting refers to the number of special characters (for example, **!**, **#**, **&amp;**) that must be included in the password.
+  Setting a higher number for this setting will require users to create passwords that are more complex.
+
+  For iOS devices, this setting refers to the number of special characters (for example, **!**, **#**, **&amp;**) that must be included in the password.
 - **Minutes of inactivity before password is required:**  Specify the idle time before the user must re-enter their password.
 
 - **Password expiration (days):** Select the number of days before the user’s password expires
@@ -59,7 +61,7 @@ This setting should be used together with the in the **Minutes of inactivity bef
 **Minutes of inactivity before password is required** setting.
 
 ### Email profile
-- **Email account must be managed by Intune:** When this option is set to **Yes** , the device must use the email profile deployed to the device. The device is considered noncompliant in the following situations:
+- **Email account must be managed by Intune:** When this option is set to **Yes**, the device must use the email profile deployed to the device. The device is considered noncompliant in the following situations:
   - The email profile must also be deployed to the same user group as user group targeted by the compliance policy, otherwise the users’ devices will be considered non-compliant.
   - The device is reported as noncompliant if the user has already set up an email account on the device that matches the Intune email profile deployed to the device. Intune cannot overwrite the user-provisioned profile, and therefore
   cannot manage it. To ensure compliance, the user must remove the
@@ -69,8 +71,7 @@ This setting should be used together with the in the **Minutes of inactivity bef
 
 - **Select the email profile that must be managed by Intune:**
      If the **Email account must be managed by Intune** setting is selected,
-     choose **Select** to specify the Intune email profile that devices
-     must be managed by. The email profile must be present on the device.
+     choose **Select** to specify the Intune email profile. The email profile must be present on the device.
 
      For details about email profiles, see [Configure access to
      corporate email using email profiles with Microsoft Intune](../Topic/Configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md).
@@ -81,7 +82,7 @@ This setting should be used together with the in the **Minutes of inactivity bef
 jailbroken devices will not be compliant.
 
 ##  Device properties
-- **Minimum OS required:** When  a device does not meet the minimum OS
+- **Minimum OS required:** When a device does not meet the minimum OS
 version requirement, it is reported as non-compliant.
 A link with information on how to upgrade is displayed. The end-user can choose to upgrade their device after which they should be able to access company resources.
 
@@ -89,4 +90,4 @@ A link with information on how to upgrade is displayed. The end-user can choose 
 OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 >[!div class="step-by-step"]
 [<< Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)  
-[Deploy a compliance policy >>](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
+  [Deploy a compliance policy >>](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
