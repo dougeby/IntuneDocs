@@ -11,16 +11,18 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 author: Nbigman
 ---
 # Protect Windows devices with multi-factor authentication
-Microsoft Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources by requiring more than usernames and passwords, for example, phone or text authentication. Intune supports the use of MFA during enrollment of Windows 8.1 or later, Windows Phone 8.1, or Windows 10 Desktop and Mobile devices.  
+Microsoft Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources by requiring more than usernames and passwords, for example, phone or text authentication. Intune supports the use of MFA during enrollment of Windows 8.1 or later, Windows Phone 8.1, or Windows 10 Desktop and Mobile devices. 
 
-If your organization has on-premises IT infrastructure that includes an Active Directory domain with Active Directory Federation Services (ADFS), you can configure MFA on your federation server and then enable MFA for Intune enrollment. If you configure MFA on your federation server but you don’t enable MFA for enrollment in Intune, users will need to use MFA each time that they access corporate resources.
+#### MFA with Intune
+If your organization has on-premises IT infrastructure that includes an Active Directory domain with Active Directory Federation Services (ADFS), you can configure MFA on your federation server and then enable MFA for Intune enrollment. By configuring MFA on Intune, you enable users to authenticate once, during enrollment, then be able to access corporate resources without repeating the MFA process each time.
 
-MFA can be required on a per-user or per-group basis on the ADFS server.
+>Note:
+>MFA can be required on a per-user or per-group basis on the ADFS server.  
 
-<!--> [!IMPORTANT]
-> The MFA feature will be enabled in Configuration Manager at the next Intune service update.-->
+#### MFA without Intune
+If you configure MFA on your federation server but you don’t enable MFA for enrollment in Intune, users will need to use MFA each time that they access corporate resources (not just at device enrollment).
 
-You can also use Azure Active Directory (AAD) MFA to require MFA each time that users access corporate resources, and this requirement can be enabled on a per-user basis. AAD MFA is a cloud service that does not require any on-premises IT infrastructure. To learn how to set up AAD MFA, see [Adding Multi-Factor Authentication to Azure Active Directory.](http://technet.microsoft.com/library/dn249466.aspx)
+You can also use Azure Active Directory (AAD) MFA to require MFA each time that users access corporate resources, on a per-user basis. AAD MFA is a cloud service that does not require any on-premises IT infrastructure. To learn how to set up AAD MFA, see [Adding Multi-Factor Authentication to Azure Active Directory.](http://technet.microsoft.com/library/dn249466.aspx).
 
 ## <a name="Reqs_MFA"></a>On-premises infrastructure requirements for ADFS MFA
 To set up multi-factor authentication, you need:
@@ -34,16 +36,12 @@ All of the servers listed above must meet the system requirements provided in [S
 ## Requiring ADFS MFA during enrollment of Windows devices
 For information about how to enable MFA in ADFS, see [Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](http://technet.microsoft.com/library/dn280949.aspx).
 
-#### To require enrollment MFA in the Intune Admin Console
+### To require enrollment MFA in the Intune Admin Console
+>Note  
+> Enable MFA in your Azure AD tenant or on-premises environment *before* you require MFA for Intune enrollment of Windows devices. If you do not, users will receive an error message when they try to enroll their Windows devices. 
+> Also, if you do not first enable MFA in your Azure AD tenant before requiring it for Intune enrollment, and automatic MDM enrollment during Azure AD Join is configured, users will receive an error message when they attempt to Azure AD join their Windows devices.
 
 1.  In the Intune admin console, click **Admin** &gt; **Mobile Device Management** &gt; **Multi-factor authentication**.
 
-2.  Enable MFA in your Azure AD tenant or on-premises environment before you require MFA for Intune enrollment of Windows devices. If you do not, users will receive an error message when they try to enroll their Windows devices.
+2.  Click **Configure Multi-factor Authentication**, and then click **Enable Multi-factor Authentication**.
 
-    > [!IMPORTANT]
-    > If you do not first enable MFA in your Azure AD tenant before requiring it for Intune enrollment, and automatic MDM enrollment during Azure AD Join is configured, users will receive an error message when they attempt to Azure AD join their Windows devices.
-
-3.  Click **Configure Multi-factor Authentication**, and then click **Enable Multi-factor Authentication**.
-
-### See also
-[Protect data and devices with Microsoft Intune](../Topic/Protect-data-and-devices-with-Microsoft-Intune.md)
