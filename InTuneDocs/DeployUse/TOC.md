@@ -16,7 +16,7 @@
 ##### [iOS Setup Assistant enrollment](ios-setup-assistant-enrollment.md)
 ##### [iOS direct enrollment](ios-direct-enrollment.md)
 ##### [iOS DEP enrollment](ios-device-enrollment-program.md)
-#### [Enroll with device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune )
+#### [Enroll with device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 #### [Tag devices with IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 ### [MDM with Exchange ActiveSync](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
 #### [Exchange connector requirements](intune-exchange-connector-requirements.md)
@@ -67,8 +67,8 @@
 ### [Deploy apps](deploy-apps-in-microsoft-intune.md)
 ### [Monitor apps](monitor-apps-in-microsoft-intune.md)
 ### [Manage volume-purchased apps](manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [Manage volume-purchased iOS apps](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-#### [Manage volume-purchased Windows apps](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+#### [Manage volume-purchased iOS apps](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
+#### [Manage volume-purchased Windows apps](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## [Configure apps](update-apps-using-microsoft-intune.md)
 ### [Update apps ](update-apps-using-microsoft-intune.md)
@@ -86,7 +86,7 @@
 
 ### [Restrict access to email & O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 #### [Exchange Online & new Exchange Online dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
-#### [Exchange on-premises & legacy Exchange Online dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune)
+#### [Exchange on-premises & legacy Exchange Online dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
@@ -96,9 +96,9 @@
 #### [Create and deploy MAM policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM policies for Android](android-mam-policy-settings.md)
 #### [MAM policies for iOS](ios-mam-policy-settings.md)
-#### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune)
-#### [MAM with iOS Open In](microsoft-intune-mobile-app-management-policies-and-ios-open-in)
-#### [End user experience](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies)
+#### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Manage data transfer between iOS apps](microsoft-intune-mobile-app-management-policies-and-ios-open-in.md)
+#### [End user experience for MAM-enabled apps](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies.md)
 
 ### [Prepare line of business apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [Wrap iOS apps](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
