@@ -200,14 +200,14 @@ Before you start, you must have installed the Apple Configurator and created a c
 
 |Setting name|Details|
     |----------------|--------------------|
-    |**Name**|Enter a unique name for the iOS custom policy to help you identify it in the [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] console.|
+    |**Name**|Enter a unique name for the iOS custom policy to help you identify it in the Intune console.|
     |**Description**|Provide a description that gives an overview of the iOS custom policy and other relevant information that helps you to locate it.|
 
 ### Custom settings
 
 |Setting name|Details|
     |----------------|--------------------|
-|**Custom configuration profile name (displayed to users)**|Provide a name for the policy as it will be displayed on the device, and in [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] policy reports.|
+|**Custom configuration profile name (displayed to users)**|Provide a name for the policy as it will be displayed on the device, and in Intune policy reports.|
 |**Configuration profile file**|Click **Import**, then browse to the configuration profile that you created using the Apple Configurator. **Note:** Ensure that the settings you export from the Apple Configurator tool are compatible with the version of iOS on the devices to which you deploy the iOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) web site.|
     |**Configuration profile details**|Displays the xml code for the configuration profile that you imported.|
 

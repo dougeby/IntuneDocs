@@ -26,7 +26,7 @@ Use the Microsoft Intune **Android general configuration policy** to configure s
 
 If the setting you are looking for does not appear in this topic, you might be able to create it using an Android custom policy that lets you use OMA-URI settings to control the device. For more information, see [Android custom policy settings in Microsoft Intune](android-custom-policy-settings-in-microsoft-intune.md).
 
-## Password settings
+### Password settings
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|-|----------------|----------------|
@@ -40,14 +40,14 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Password quality**|Select the password complexity level required and also whether biometric devices can be used.|Yes|Yes|
 |**Allow fingerprint unlock**|Allow the use of a fingerprint to unlock the device.|No|Yes|
 
-## Encryption settings
+### Encryption settings
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Require encryption on mobile device**|Requires that files on the mobile device are encrypted.|Yes|Yes|
 |**Require encryption on storage cards**|Specifies whether the device storage card must be encrypted.|No|Yes|
 
-## System settings
+### System settings
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
@@ -55,19 +55,19 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow diagnostic data submission**|Allows the device to submit diagnostic information to Google.|No|Yes|
 |**Allow factory reset**|Allow the user to perform a factory reset on the device.|No|Yes|
 
-## Cloud settings – documents and data
+### Cloud settings – documents and data
 
 |Setting name|Details|Android and Samsung KNOX|Android 4.0+|
 |----------------|----------------------------|----------------|
 |**Allow Google backup**|Allows use of Google backup.|No|Yes|
 
-## Cloud settings – accounts and synchronization
+### Cloud settings – accounts and synchronization
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Allow Google account auto sync**|Allows Google account settings to be automatically synchronized.|No|Yes|
 
-## Application settings - browser
+### Application settings - browser
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
@@ -77,13 +77,13 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow cookies**|Allow the device web browser to use cookies.|No|Yes|
 |**Allow active scripting**|Allow the device web browser to use active scripting.|No|Yes|
 
-## Application settings - apps
+### Application settings - apps
 
 |Setting name|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Allow Google Play store**|Allow the user to access the Google Play store on the device.|No|Yes|
 
-## Device capabilities settings - hardware
+### Device capabilities settings - hardware
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
@@ -96,7 +96,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow Bluetooth**|Allows the use of Bluetooth on the device.|No|Yes|
 |**Allow power off**|Allows the user to power off the device.<br /><br />If this setting is disabled, the setting **Number of repeated sign in failures to allow before the device is wiped** for Samsung KNOX devices does not function.|No|Yes|
 
-## Device capabilities settings - cellular
+### Device capabilities settings - cellular
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
@@ -104,7 +104,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow data roaming**|Allow data roaming when the device is on a cellular network.|No|Yes|
 |**Allow SMS/MMS messaging**|Allow the use of SMS and MMS messaging on the device.|No|Yes|
 
-## Device capabilities settings - features
+### Device capabilities settings - features
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
@@ -114,7 +114,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow clipboard share between applications**|Use the clipboard to copy and paste between apps.|No|Yes|
 |**Allow YouTube**|Allow the use of YouTube on the device.|No|Yes|
 
-## Settings for compliant and noncompliant apps
+### Settings for compliant and noncompliant apps
 In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant or noncompliant apps using the following information:
 
 > [!NOTE]
@@ -129,7 +129,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
 
-## Kiosk mode settings
+### Kiosk mode settings
 Specify the following settings for **Samsung KNOX devices**:
 
 |Setting name|Details|
@@ -138,18 +138,18 @@ Specify the following settings for **Samsung KNOX devices**:
 |**Allow volume buttons**|Enables or disables the use of the volume buttons on the device.|
 |**Allow screen sleep wake button**|Enables or disables the screen sleep wake button on the device.|
 
-## Reference information for compliant and noncompliant apps
+### Reference information for compliant and noncompliant apps
 
-### Monitor compliant and noncompliant apps
+#### Monitor compliant and noncompliant apps
 Use the **Noncompliant Apps Report** to view the compliance of allowed and blocked apps.
 
-##### To run the Noncompliant Apps Report
+###### To run the Noncompliant Apps Report
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Reports** &gt; **Noncompliant Apps Report**.
 
 2.  Select the device groups that you would like to check, whether you want to check for compliant apps, noncompliant apps, or both, then click **View Report**.
 
-### How to specify URLs to app stores
+#### How to specify URLs to app stores
 To specify an app URL in the compliant and noncompliant apps list, or in the **Select a managed app that will be allowed to run when the device is in kiosk mode** option (iOS only), use the following format:
 
 In the [Apps section of Google Play](https://play.google.com/store/apps), search for the app you want to use.
@@ -166,14 +166,14 @@ This capability is intended to allow you to deploy Android settings that are not
 > [!NOTE]
 > Currently, Android custom policies only support configuring Wi-Fi settings for Android devices that include a pre-shared key. See [Example: Configure a custom Wi-Fi profile with a pre-shared key](android-custom-policy-settings-in-microsoft-intune.md#BKMK_Example) to learn how to do this.
 
-## General settings
+### General settings
 
 |Setting name|Details|
     |----------------|--------------------|
     |**Name**|Enter a unique name for the Android custom policy to help you identify it in the Intune console.|
     |**Description**|Provide a description that gives an overview of the Android custom policy and other relevant information that helps you to locate it.|
 
-## OMA-URI settings
+### OMA-URI settings
 
    |Setting name|Details|
     |--------|--------------------|
@@ -183,7 +183,7 @@ This capability is intended to allow you to deploy Android settings that are not
     |**OMA-URI (case sensitive)**|Specify the OMA-URI you want to supply a setting for.|
     |**Value**|Specify the value to associate with the OMA-URI you specified previously.|
 
-## Example: Configure a custom Wi-Fi profile with a pre-shared key
+### Example: Configure a custom Wi-Fi profile with a pre-shared key
 Although Intune supports Wi-Fi profiles for Android devices, this feature does not currently support the inclusion of a pre-shared key in the configuration. In this example, you’ll learn how to create an Android custom policy that creates a Wi-Fi profile with a pre-shared key on the Android device.
 
 #### To create a Wi-Fi profile with a pre-shared key
@@ -238,5 +238,5 @@ Although Intune supports Wi-Fi profiles for Android devices, this feature does n
 4.  When you are done, save the policy and deploy it to the required Android devices. The new Wi-Fi profile will appear in the list of connections on the device.
 
 ### See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
+[Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

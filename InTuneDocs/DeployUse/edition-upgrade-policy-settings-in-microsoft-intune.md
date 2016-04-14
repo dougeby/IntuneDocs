@@ -31,4 +31,4 @@ Before you begin to upgrade devices to the latest version, you will need one of 
 |**License File**|Click **Browse** to select the license file you obtained from Microsoft that contains license information for the Windows Holographic edition you want to upgrade targeted devices to.
 
 ### See also
-[Manage settings and features on your devices with Microsoft Intune policies.md](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
