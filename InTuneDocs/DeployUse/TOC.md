@@ -4,7 +4,8 @@
 
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
-## [Overview of the device lifecycle](overview-of-device-lifecycle-in-microsoft-intune.md)
+### [Device lifecycle](overview-of-device-lifecycle-in-microsoft-intune.md)
+### [App lifecycle](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [Enroll devices](enroll-devices-in-microsoft-intune.md)
 ### [Get ready to enroll devices in Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 #### [iOS and Mac management](set-up-ios-and-mac-management-with-microsoft-intune.md)
@@ -59,8 +60,6 @@
 #### [Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)
 
 ## [Retire devices](retire-devices-from-microsoft-intune-management.md)
-
-## [Overview of the app lifecycle](overview-of-app-lifecycle-in-microsoft-intune.md)
 
 ## [Add and deploy apps](add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Add apps for mobile devices](add-apps-for-mobile-devices-in-microsoft-intune.md)
