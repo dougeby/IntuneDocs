@@ -13,7 +13,7 @@ author: robstackmsft
 
 The Intune app lifecycle begins when an app is added and progresses through additional phases until you remove them.
 
-<!-- ![The app lifecycle](./media/app-lifecycle-graphic "the Intune app lifecycle") -->
+![The app lifecycle](./media/app-lifecycle.gif "the Intune app lifecycle")
 
 ## Add
 
