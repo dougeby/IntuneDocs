@@ -14,17 +14,17 @@ The [Company Portal website](http://portal.manage.microsoft.com) is a web page t
 
 You can use the Company Portal website  to:
 
--   [Reset your device passcode from the Company Portal website](reset-your-passcode-cpwebsite.md)
+-   [Reset your device passcode](reset-your-passcode-cpwebsite.md)
 
--   [Rename your device from the Company Portal website](rename-your-device-cpwebsite.md)
+-   [Rename your device](rename-your-device-cpwebsite.md)
 
--   [Remove your device from the Company Portal](remove-your-device-cpwebsite.md)
+-   [Remove your device](remove-your-device-cpwebsite.md)
 
--   [Reset your device from the Company Portal website](reset-your-device-cpwebsite.md)
+-   [Reset your device](reset-your-device-cpwebsite.md)
 
--   [Remotely lock a device from the Company Portal website](remote-lock-your-device.md)
+-   [Remotely lock a device](remote-lock-your-device-cpwebsite.md)
 
--	[Sync your device manually](sync-your-device-manually-cpwebsite.md)
+-	[Sync your device manually to speed up slow app installations](sync-your-device-manually-cpwebsite.md)
 
 -   Find your IT administrator's contact information, if your IT admin configured it
 
@@ -34,6 +34,7 @@ You can use the Company Portal website  to:
 
 You can do most of the same tasks on the **Company Portal website** that you can do by using the **Company Portal app** that you install on your device. To find out more about the Company Portal app, enrolling a device in Intune, and more, tap the link for the type of device you have:
 
-- **Android**: [Using your Android device with Intune](using-your-android-device-with-intune.md)
-- **iOS and Mac OS X**: [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- **Windows**: [Using your Android device with Intune](using-your-windows-device-with-intune.md)
+[!div class="op_single_selector"]
+- [Using your Android device with Intune](using-your-android-device-with-intune.md)
+- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Using your Android device with Intune](using-your-windows-device-with-intune.md)

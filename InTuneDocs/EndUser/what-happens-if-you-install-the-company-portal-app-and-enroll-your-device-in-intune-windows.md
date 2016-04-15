@@ -15,11 +15,11 @@ author: Staciebarker
 To learn what happens when you install the Company Portal app and enroll your device, use the link that matches the device you are using.
 
 - [Windows 10](#BKMK_what_happens_w10)
-- [Windows 8.1](#BKMK_what_happens_w81)
-- [Windows Phone 8.1 or Windows Phone 8](#BKMK_what_happens_phone8)
-- [Vista](#BKMK_what_happens_vista)
+- [Windows 8.1 and Windows RT](#BKMK_what_happens_w81)
+- [Windows Phone 8.1 and Windows Phone 8](#BKMK_what_happens_phone8)
+- [Windows 7 and Vista](#BKMK_what_happens_vista)
 
-## <a name="BKMK_what_happens_w10"></a>What happens when you install the Company Portal app and enroll your Windows 10 device in Intune?
+## <a name="BKMK_what_happens_w10"></a>Windows 10
 When you install the Company Portal app and then use the app to enroll your Windows 10 Enterprise  or Professional device in Intune, you can then use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files
@@ -34,13 +34,13 @@ For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-
 
 When you add a computer:
 
--   You’ll have some software installed on your computer to make it possible for your IT administrator to manage the computer, and make it possible for you to get to company resources like apps and support information. This software may be updated automatically by your IT administrator.
+-   Software will be installed on your computer to enable your IT administrator to manage the computer, and enable you to get to company resources like apps and support information. Your IT administrator may automatically update this software.
 
 -   Intune Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. 
 
 -   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
 
--   Require you to accept terms and conditions.
+-   You may be required to accept terms and conditions.
 
 -   Your IT administrator can collect or delete data from your computer’s hard drive. Your IT administrator could also delete the entire hard drive.
 
@@ -48,7 +48,7 @@ When you add a computer:
 
 -   Your IT administrator may enforce policies on the computer. For example, you might be required to set a password or PIN on the computer, which may lock you out of the computer, or delete all data from your computer’s hard drive, if there are too many incorrect password attempts.
 
-## <a name="BKMK_what_happens_w81"></a>What happens when you install the Company Portal app and enroll your Windows 8.1 or Windows RT device in Intune?
+## <a name="BKMK_what_happens_w81"></a>Windows 8.1 and Windows RT
 When you install the Company Portal app and then use the app to enroll your Windows 8.1 Enterprise  or Professional or Windows RT device in Intune, you can then use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files
@@ -63,13 +63,13 @@ For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-
 
 When you add a computer:
 
--   You’ll have some software installed on your computer to make it possible for your IT administrator to manage the computer, and make it possible for you to get to company resources like apps and support information. This software may be updated automatically by your IT administrator.
+-   Software will be installed on your computer to enable your IT administrator to manage the computer, and enable you to get to company resources like apps and support information. Your IT administrator may automatically update this software.
 
 -   Intune Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware.
 
 -   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
 
--   Require you to accept terms and conditions.
+-   You may be required to accept terms and conditions.
 
 -   Your IT administrator can collect or delete data from your computer’s hard drive. Your IT administrator could also delete the entire hard drive.
 
@@ -77,7 +77,7 @@ When you add a computer:
 
 -   Your IT administrator may enforce policies on the computer. For example, you might be required to set a password or PIN on the computer, which may lock you out of the computer, or delete all data from your computer’s hard drive, if there are too many incorrect password attempts.
 
-## <a name="BKMK_what_happens_phone8"></a>What happens when you install the Company Portal app and enroll your Windows Phone 8.1 or Windows Phone 8 device in Intune?
+## <a name="BKMK_what_happens_phone8"></a>Windows Phone 8.1 and Windows Phone 8
 When you install the Company Portal app and then use the app to enroll your Windows Phone 8.1 or Windows Phone 8 device in Intune, you can then use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files
@@ -88,7 +88,7 @@ When you install the Company Portal app and then use the app to enroll your Wind
 
 -   Reset your phone to factory settings if it is lost or stolen
 
-For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-windows-device-in-intune.md). To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md). To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
 When you add your Windows Phone device, you are giving your IT administrator permission to access the device. They can do things like:
 
@@ -114,7 +114,7 @@ When you add your Windows Phone device, you are giving your IT administrator per
 
     -   Send any company app inventory updates.
 
-## <a name="BKMK_what_happens_vista"></a>What happens when you install the Company Portal app and enroll your Windows 7 or  Vista device in Intune?
+## <a name="BKMK_what_happens_vista"></a>Windows 7 and Vista
 When you install the Company Portal app and then use the app to enroll your Windows 7 or Vista device in Intune, you can then use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files
@@ -129,13 +129,13 @@ To learn about what your IT admin can see on your device, see [What can my IT ad
 
 When you add a computer:
 
--   You’ll have some software installed on your computer to make it possible for your IT administrator to manage the computer, and make it possible for you to get to company resources like apps and support information. This software may be updated automatically by your IT administrator.
+-   Software will be installed on your computer to enable your IT administrator to manage the computer, and enable you to get to company resources like apps and support information. Your IT administrator may automatically update this software.
 
 -   Intune Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware.
 
 -   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
 
--   Require you to accept terms and conditions.
+-   You may be required to accept terms and conditions.
 
 -   Your IT administrator can collect or delete data from your computer’s hard drive. Your IT administrator could also delete the entire hard drive.
 

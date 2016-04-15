@@ -14,7 +14,8 @@ author: Staciebarker
 
 If you lose your device PIN or password for a device that you have enrolled in Intune, you can use the [Company Portal website](http://portal.manage.microsoft.com) to reset it. The Company Portal website is a web page that you can use to manage computers and devices that you have enrolled in Intune and to do most of the same tasks that you can do when using your Company Portal app.
 
-[!NOTE] You may not see the Reset Password button on the Company Portal website, depending on how your IT admin has configured Intune. Passcode Reset is not supported on Windows 8.1 and Windows RT devices.
+> [!NOTE] 
+> You may not see the Reset Password button on the Company Portal website, depending on how your IT admin has configured Intune. Passcode Reset is not supported on Windows 8.1 and Windows RT devices.
 
 To reset your passcode:
 
@@ -22,15 +23,15 @@ To reset your passcode:
 
 2.  Tap **Reset Passcode**.
 
-    ![](./media/iwp-1-tap-reset-passcode.png)
+    ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
 
 3.  Tap **Sign out**, and then sign back in with your work or school credentials. You have to sign back in within five minutes.
 
-    ![](./media/iwp-2-sign-out.png)
+    ![sign-out-sign-back-in](./media/iwp-2-sign-out.png)
 
 4.  Tap **Reset Passcode**.
 
-    ![](./media/iwp-3-tap-reset-passcode-after-signin.png)
+    ![tap-reset-passcode](./media/iwp-3-tap-reset-passcode-after-signin.png)
 
     Check the table to see how Reset Passcode works on your device.
 

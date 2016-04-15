@@ -25,19 +25,19 @@ To enroll your Mac OS X device:
 
 2.  Tap **This device is either not enrolled or the Company Portal can't identify it**.
 
-  
+	![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png) 
 
 3.  Tap **Install** to start enrolling your device.
 
-   
+   	![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
 
 4.  On the **Install Management Profile** dialog, tap **Install**. If a dialog box appears asking you to enter your credentials, enter your username and password, and then tap **Continue** &gt; **Install**.
 
-  
+  	![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
 
-When you finish enrolling, you'll see a Management Profile page showing that your profile has been verified.
+	When you finish enrolling, you'll see a Management Profile page showing that your profile has been verified.
 
- 
+	![management-profile-verified](./media/4-macosx-enroll-done.png) 
 
 ### See also
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

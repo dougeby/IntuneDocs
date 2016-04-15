@@ -35,8 +35,6 @@ Additionally, you can generate reports that show installation and license counts
 ## Add Microsoft Volume Licensing agreements
 Intune Volume Licensing agreements provide license information for software that was purchased through Microsoft Volume Licensing agreements. You can add Microsoft Volume Licensing agreements to Intune by providing matched pairs of agreement numbers. The agreement or authorization numbers must be matched to the correct license or enrollment numbers. Agreement number pairs are obtained when you purchase your license agreements from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
-### To add a Microsoft Volume Licensing agreement
-
 1.  In the [Microsoft Intune administrator console](https://account.manage.microsoft.com/admin/default.aspx), click **Licenses**.
 
 2.  On the **Add Agreements** page, under **Choose Agreement Type**, select **Volume Licensing agreement**.
@@ -90,11 +88,11 @@ Intune Volume Licensing agreements provide license information for software that
 
 4.  In the **Select License Group** area, do one of the following:
 
-    -   Select **Add the agreements to the Unassigned Agreements group** if you do not want to add the new agreements to a license group. You can edit the agreement later if you decide to add it to a group.
+    -   **Add the agreements to the Unassigned Agreements group** Select this if you do not want to add the new agreements to a license group.
 
-    -   Select **Add the agreements to a new license group** to add the new agreements to a new license group. You are prompted to provide a name for the new license group.
+    -   **Add the agreements to a new license group** - Provide a name for the new license group.
 
-    -   Select **Add the agreements to an existing license group** to add the new agreements to an existing license group. In the **Group name** list, select the license group to which you want to add the agreements.
+    -   **Add the agreements to an existing license group** - In the **Group name** list, select the license group to which you want to add the agreements.
 
 5.  Click **OK**.
 

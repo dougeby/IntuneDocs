@@ -28,7 +28,7 @@
 ### [Proof of concept](proof-of-concept.md)
 ### [Pilot](pilot.md)
 ### [Enterprise rollout](enterprise-rollout.md)
-### [Run state](run-state.md)
+### [Operations and maintenance](operations-and-maintenance.md)
 
 
 # [Plan and Design](/intune/plandesign/ways-to-do-enterprise-mobility)

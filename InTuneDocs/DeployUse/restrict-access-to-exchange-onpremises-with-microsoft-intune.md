@@ -9,27 +9,21 @@ ms.topic: article
 ms.assetid:
 author: karthikaraman
 ---
-# Restrict email access to Exchange On-premises and legacy Exchange Online Dedicated with Intune
+# Restrict email access to Exchange on-premises and legacy Exchange Online Dedicated with Intune
 
-The information in this topics applies to both Exchange Online and the legacy Exchange Online Dedicated environment.
+The information in this topics applies to both Exchange on-premises and the legacy Exchange Online Dedicated environment.
 
 If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, please contact your account manager.
 
 
-To control email access to Exchange On-premises or to your legacy Exchange Online dedicated environment, configure conditional access to Exchange On-premises in Intune.
+To control email access to Exchange on-premises or to your legacy Exchange Online dedicated environment, configure conditional access to Exchange on-premises in Intune.
 To learn more about how conditional access works, read the [restrict access to email and O365 services]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
->[!IMPORTANT]
->Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
->
->**This does not apply to PCs or Windows 10 Mobile devices for conditional access to Exchange On-premises.**
->
->If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, and would like to do so, you must submit a request.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
 
 **Before** you can configure conditional access verify the following:
 
 -   Your Exchange version must be **Exchange 2010 or later**. Exchange server Client Access Server (CAS) array is supported.
 
--   You must use the **on-premises Exchange connector**, which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange On-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. For details on the connector, see [mobile device management with Exchange ActiveSync and Microsoft Intune](intune-on-premises-exchange-connector.md).
+-   You must use the **on-premises Exchange connector**, which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange on-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. For details on the connector, see [mobile device management with Exchange ActiveSync and Microsoft Intune](intune-on-premises-exchange-connector.md).
 
     -   The on-premises Exchange connector available to you in the Intune console is specific to your Intune tenant and cannot be used with any other tenant. You should also ensure that the exchange connector for your tenant is installed on exactly one machine and not on multiple machines.
 
@@ -55,7 +49,7 @@ When conditional access policies are configured and targeted to a user, before a
 The following diagram illustrates the  flow is used by conditional access policies for Exchange on-premises to evaluate whether to allow or block devices.
 
 ![](../media/ConditionalAccess8-2.png)
-If a conditional access policy is not met, the user is presented with one of the following messages when they log in.
+If a conditional access policy is not met, the user is presented with one of the following messages when they log in:
 
 - If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal  app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
 
@@ -74,30 +68,30 @@ The **Mail** application on Windows 8 and later (when enrolled with [!INCLUDE[wi
 
 ## <a name="BKMK_enableXchngOnprem"></a>Configure a conditional access policy
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Conditional Access** &gt; **Exchange On-premises policy**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange on-premises policy**.
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
 2.  Configure the policy with the settings you require:
 ![IntuneSA5bExchangeOnPremPolicy](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **Block email apps from accessing Exchange On-premises if the device is noncompliant or not enrolled to Microsoft Intune:** When you select this option, devices that are not managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or are not compliant with a compliance policy that was deployed to them are blocked from accessing Exchange services. <need to verify this: unless they have been defined as exempt>
+  - **Block email apps from accessing Exchange on-premises if the device is noncompliant or not enrolled to Microsoft Intune:** When you select this option, devices that are not managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or not compliant with a compliance policy are blocked from accessing Exchange services.
 
   - **Default rule override - Always allow  enrolled and compliant devices to access Exchange:** When you check this option, devices that are enrolled in Intune and compliant with the compliant policies are allowed to access Exchange.  
   This rule overrides the **Default Rule**, which means that even if you set the **Default Rule** to quarantine or block access, enrolled and compliant devices will still be able to access Exchange.
 
   - **Targeted Groups:** Select the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user groups that must enroll their device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] before they can access Exchange.
 
-  - **Exempted Groups: **Select the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user groups that are exempt from the conditional access policy. Settings in this list override those in the **Targeted Groups** list.
+  - **Exempted Groups:** Select the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user groups that are exempt from the conditional access policy. Users in this list will be exempt even if they are also in the **Targeted Groups** list.
 
   - **Platform Exceptions:** Choose **Add Rule** to configure a rule that defines access levels for specified mobile device families and models. Because these devices can be of any type, you can also configure device types that are unsupported by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-  - **Default Rule:** For a device that is not covered by any of the other rules, you can choose to allow it to access Exchange, block it, or quarantine it. When you set the rule to allow access, for devices that are enrolled and compliant, email access is granted automatically for iOS, Windows, and Samsung Knox devices. The end-user does not have to go through any process to get their email.  On Android devices that are not Knox based, end-users will get a quarantine email which includes a guided walkthrough to verify enrollment and compliance before they can access email. If you set the rule to block access or quarantine it, all devices are blocked from getting access to exchange regardless of whether they are already enrolled in Intune or not. To prevent enrolled and compliant devices from being affected by this rule, check the **Default Rule Override.**
+  - **Default Rule:** For a device that is not covered by any of the other rules, you can choose to allow it to access Exchange, block it, or quarantine it. When you set the rule to allow access, for devices that are enrolled and compliant, email access is granted automatically for iOS, Windows, and Samsung Knox devices. The end user does not have to go through any process to get their email.  On Android devices that are not Knox based, end users will get a quarantine email which includes a guided walkthrough to verify enrollment and compliance before they can access email. If you set the rule to block access or quarantine it, all devices are blocked from getting access to exchange regardless of whether they are already enrolled in Intune or not. To prevent enrolled and compliant devices from being affected by this rule, check the **Default Rule Override.**
 >[!TIP]
 >If you intention is to first block all devices before granting access to email, checking the Block access, or Quarantine rule can be useful. The default rule will apply to all device types, so device types you configure as platform exceptions and that are unsupported by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] are also affected.
 
-  - **User Notification:** In addition to the notification email sent from Exchange, Intune sends an email that you can configure which contains steps to unblock the device. You can edit the default message and use HTML tags to format how the text appears. Because the Intune notification email containing remediation instructions is delivered to the user’s Exchange mailbox, in the event that the user’s device is blocked before they receive the email message, they can use an unblocked device or other method to access Exchange and view the message. This is especially true when the **Default Rule** is set to block or quarantine.  In this case, the end-user will have to go to their app store, download the Microsoft Company Portal   app and enroll their device. This is applicable to iOS, Windows, and Samsung Knox devices.  For  Android devices that are not Knox-based, the IT admin will need to send the quarantine email to an alternate email account, which then  the end-user has to copy to their blocked device to complete the enrollment and compliance process.|
+  - **User Notification:** In addition to the notification email sent from Exchange, Intune sends an email which contains steps to unblock the device. You can edit the default message to customize it to your needs. Because the Intune notification email containing remediation instructions is delivered to the user’s Exchange mailbox, in the event that the user’s device is blocked before they receive the email message, they can use an unblocked device or other method to access Exchange and view the message. This is especially true when the **Default Rule** is set to block or quarantine.  In this case, the end-user will have to go to their app store, download the Microsoft Company Portal   app and enroll their device. This is applicable to iOS, Windows, and Samsung Knox devices.  For  Android devices that are not Knox-based, the you will need to send the quarantine email to an alternate email account, which then  the end-user has to copy to their blocked device to complete the enrollment and compliance process.|
   > [!NOTE]
-  > In order for Exchange to be able to send the notification email, you must configure the account that will be used to send the notification email.
+  > In order for Exchange to be able to send the notification email, you must specify the account that should be used to send the notification email.
   >
   > For details, see [Configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md).
 
@@ -107,7 +101,7 @@ The **Mail** application on Windows 8 and later (when enrolled with [!INCLUDE[wi
 
 -   After a user sets up an Exchange ActiveSync profile, it might take from 1-3 hours for the device to be blocked (if it is not managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
 
--   If a blocked user then enrolls the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] (or remediates noncompliance), email access will be unblocked within 2 minutes.
+-   If a blocked user then enrolls the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and remediates noncompliance), email access will be unblocked within 2 minutes.
 
 -   If the user un-enrolls from [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] it might take from 1-3 hours for the device to be blocked.
 
