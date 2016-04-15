@@ -10,12 +10,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 author: Nbigman
 ---
 # Create groups to manage users and devices with Microsoft Intune
-<!-- This is the same intro as for the Plan topic. Not sure if it's worth repeating here. Maybe this should be Set up your groups?**Groups** in [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics).
 
-Additionally, you can filter groups to allow your IT admins permissions to only perform operations on the groups you specify. For more information, see [Use filtered group views to help secure and manage users and devices](use-groups-to-manage-users-and-devices-with-microsoft-intune.md#BKMK_Filter) in this topic.-->
-<!--## The Groups workspace-->
-
-To create and manage groups use the **Groups** workspace in the [Microsoft Intune administration console](https://manage.microsoft.com/). The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
+To create and manage groups use the **Groups** workspace in the Microsoft Intune administration console. The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
 
 -   Alerts
 -   Software updates
@@ -25,70 +21,6 @@ To create and manage groups use the **Groups** workspace in the [Microsoft Intun
 
 Also, your group hierarchy is displayed with status summaries to help you identify and resolve problems for members of a selected group.
 
-<!-- moved to plan topic.
-### Built-in groups
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] provides nine built-in groups that you cannot edit or delete:
-
--   **All Users**
-    -   Ungrouped Users
--   **All Devices**
-    -   All Computers
-    -   All Mobile Devices
-        -   All Direct Managed Devices
-        -   All Exchange ActiveSync Managed Devices
-    -   All Corporate-owned Devices
-    -   Ungrouped Devices -->
-
-<!-- moved to Plan topic  
-## Group memberships
-
--   A group can contain either users or devices, but not both.
-
-    -   **Device groups:** This includes both computers and mobile devices. Before you can add a computer to a group, it must be enrolled. Before you can add a mobile device to a group, your environment must be configured to support mobile devices, and the devices must be enrolled, or discovered from Exchange ActiveSync.
-
-    -   **User groups:** A group can contain users from security groups, which are groups that synchronize from your Active Directory. If you do not use Active Directory synchronization, you can manually create these groups.
-
--   A device or a user can belong to more than one group.
-
--   A group can include and exclude members based on the following membership rules:
-
-    -   **Criteria Membership:** These are dynamic rules that [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] runs to include or exclude members.  These criteria use security groups and other information synchronized from your local Active Directory. When the security group or data that is synchronized changes, the group membership can change.
-
-    -   **Direct Membership:** These are static rules that explicitly add or exclude members. The membership list is static.
-
--   Active Directory Domain Services (AD DS) is not required to create user groups or device groups that include users or computers, but for device groups to include mobile devices, your environment must be configured to support mobile devices.
-
-    Additionally, the devices must be discovered and added to [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
-
-## Group relationships
-
--   Every group you create must have a parent group and you cannot change a group’s parent group once the group is created.
-
--   When adding users or devices to a child group:
-
-    -   Child groups are always subsets of the parent group.
-
-    -   New members you add to a child group are automatically added to that group’s parent group.
-
-    -   You cannot add a member to a child group when that member is excluded from the parent group.
-
--   The membership of a parent group defines the available membership for the child group.
-
--   When you delete a parent group, all child groups are deleted.
-
--   You can deploy content and policies to a parent group while excluding deployment to child groups.
-
--   You can add a specific user or device to a child group that is not a member of the parent group. If you do so, the new group member will be added to the parent group.
-
-    However, you cannot add a member to a child group that is excluded from the parent group.
-
--   Group membership is recursive. For example:
-
-    -   **Pat** is a member of only one group, the **Laptop Users** security group.
-
-    -   The **Laptop Users** group is a member of the **Approved Users** security group.
-
-    -   You create a group in [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] that uses a dynamic membership query that includes the members of the **Approved Users** group. The result is that your [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] user group includes **Pat**.
 
 > [!TIP]
 > When you're creating your groups consider how you will apply policy. For example, you may have policies specific to device operating systems, and policies specific to different roles in your organization, or to Organizational Units you've already defined in Active Directory. Some consider it useful to have device groups specific to iOS, Android, and Windows, as well as user groups for each organizational role.
@@ -102,7 +34,7 @@ Also, your group hierarchy is displayed with status summaries to help you identi
 
 ## Create a device group
 
-1.  In the [Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **Overview** &gt; **Create Group**.
+1.  In the Intune administration console, choose **Groups** &gt; **Overview** &gt; **Create Group**.
 
 2.  Provide a name and optional description for the group and select a device group as the parent group. Choose **Next**.
 
@@ -123,7 +55,7 @@ You can find the newly created group in the **Groups** list, in the **Groups** w
 
 ## Create a user group
 
-1.  In the [Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **Overview** &gt; **Create Group**.
+1.  In the Intune administration console, choose **Groups** &gt; **Overview** &gt; **Create Group**.
 
 2.  Provide a name and optional description for the group and select a user group as the parent group. Choose **Next**.
 
@@ -144,7 +76,7 @@ You can find the newly created group in the **Groups** list, in the **Groups** w
 You can find the newly created group in the **Groups** list, in the **Groups** workspace, under the parent group. From here, you can also edit or delete the group.
 
 > [!TIP]
-> Security groups are a great resource for populating user groups. Since your security groups define who has access to which resources, that can translate well into  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user groups. Security groups that are synced from Active Directory to Azure Active Directory, or that are created directly in Azure Active Directory through the Office 365 admin center or the Azure Administration portal, are all available to you for creating user groups in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+> Security groups are a great resource for populating user groups. Since your security groups define who has access to which resources, that can translate well into Intune user groups. Security groups that are synced from Active Directory to Azure Active Directory, or that are created directly in Azure Active Directory through the Office 365 admin center or the Azure Administration portal, are all available to you for creating user groups in Intune.
 
 ## Tailor views to admin roles
 Filtered group views let you tailor the view admins can see based on their role and restrict which groups each IT admin can manage. This can be useful when:
@@ -153,7 +85,7 @@ Filtered group views let you tailor the view admins can see based on their role 
 
 -   You want to display only relevant groups to each IT admin.
 
-You can configure filtered group views for service administrators in the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] administrator console. For details, see [What to know before setting up Microsoft Intune](what-to-know-before-setting-up-microsoft-intune.md).
+You can configure filtered group views for service administrators in the Intune administrator console. For details, see [What to know before you start Microsoft Intune](/getstarted/what-to-know-before-you-start-microsoft-intune).
 
 After you configure filtered group views for a service administrator, that administrator:
 
@@ -175,7 +107,7 @@ After you configure filtered group views for a service administrator, that admin
 
 ### Configure filtered group views
 
-1.  In the [Intune administration console](https://manage.microsoft.com), choose **Admin** &gt; **Administrator Management** &gt; **Service Administrators**.
+1.  In the Intune administration console, choose **Admin** &gt; **Administrator Management** &gt; **Service Administrators**.
 
 2.  Select the service administrator for whom you want to filter groups, and then click **Manage Groups**.
 
@@ -208,6 +140,3 @@ Each policy has an **Intended Value** and a **Status**. The intended value is wh
 
 > [!NOTE]
 > Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
-
-### See also
-[Plan your user and device groups](plan-your-user-and-device-groups.md)
