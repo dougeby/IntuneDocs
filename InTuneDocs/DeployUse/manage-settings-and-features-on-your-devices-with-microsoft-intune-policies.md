@@ -163,14 +163,14 @@ Therefore, when you deploy a custom policy, ensure the settings configured do no
 ### What happens when a policy is deleted, or no longer applicable
 When you delete a policy, or remove a device from a group to which a policy was deployed, the policy and settings will be removed from the device according to the following tables:
 
-#### Mobile devices
+#### Enrolled devices
 
 |Policy type|Windows|Android|Windows Phone (8.1 only)|iOS|
 |---------------|-----------|-----------|----------------------------|-------|
 |Wi-Fi, VPN, certificate and email profiles|Removed|Removed|Removed|Removed|
 |All other policy types|Not removed|Not removed|The following settings are removed:<br /><br />Require a password to unlock mobile devices<br /><br />Allow simple passwords<br /><br />Minimum password length<br /><br />Required password type<br /><br />Password expiration (days)<br /><br />Remember password history<br /><br />Number of repeated sign-in failures to allow before the device is wiped<br /><br />Minutes of inactivity before password is required<br /><br />Required password type – minimum number of character sets<br /><br />Allow camera<br /><br />Require encryption on mobile device<br /><br />Allow removable storage<br /><br />Allow web browser<br /><br />Allow application store<br /><br />Allow screen capture<br /><br />Allow geolocation<br /><br />Allow Microsoft Account<br /><br />Allow copy and paste<br /><br />Allow Wi-Fi tethering<br /><br />Allow automatic connection to free Wi-Fi hotspots<br /><br />Allow Wi-Fi hotspot reporting<br /><br />Allow factory reset<br /><br />Allow Bluetooth<br /><br />Allow NFC<br /><br />Allow Wi-Fi|Removed, **except** for:<br /><br />Allow voice roaming<br /><br />Allow data roaming<br /><br />Allow automatic synchronization while roaming|
 
-#### Computers
+#### Windows PCs running the Intune client software
 
 |Policy type|Action|
 |---------------|----------|
