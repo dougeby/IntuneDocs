@@ -47,6 +47,8 @@
 #### [Wi-Fi connections in Intune](wi-fi-connections-in-microsoft-intune.md)
 #### [VPN connections in Intune](vpn-connections-in-microsoft-intune.md)
 #### [Email profiles in Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
+### [Use groups to manage users & devices](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+### [Understand your devices with inventory](understand-your-devices-with-inventory-in-microsoft-intune.md)
 ### [Common PC management tasks](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
 ## [Protect devices](protect-your-devices-with-microsoft-intune.md)
@@ -62,6 +64,7 @@
 ## [Retire devices](retire-devices-from-microsoft-intune-management.md)
 
 ## [Add and deploy apps](add-apps-for-mobile-devices-in-microsoft-intune.md)
+###[Plan for app deployment](plan-for-app-deployment-in-microsoft-intune.md)
 ### [Add apps for mobile devices](add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Add apps for Windows PCs](add-apps-for-windows-pcs-in-microsoft-intune.md)
 ### [Deploy apps](deploy-apps-in-microsoft-intune.md)
