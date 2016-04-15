@@ -14,8 +14,8 @@ You can restrict access to your company email and O365 services with Intune's co
 ## How does conditional access work?
 Compliance policy settings are used to evaluate the compliant status of the device. Conditional access policy uses the evaluation to restrict or allow access to a specific service. When conditional access policy is used in combination with compliance policy, only compliant devices will be allowed to access to the service.
 
-Keep in mind that a device must have a compliance policy deployed to it in order for it to be evaluated for compliance.
-If no compliance policy is deployed to a device, then, the device is treated as compliant, and no access restrictions will be applied.
+Keep in mind that the user who is using device must also have a compliance policy deployed to them in order for the device to be evaluated for compliance.
+If no compliance policy is deployed to the user the device is treated as compliant, and no access restrictions will be applied.
 
 When devices do not meet the conditions set in the policies, the end-user is guided though the process of enrolling the device and fixing the issue that prevents the device from being compliant.
 
@@ -35,7 +35,7 @@ You can set conditional access policy to restrict access based on:
 - The platform running on the device.
 - The type of apps used to access the services.
 
-Unlike other Intune policies, you do not deploy conditional access policies. Instead, once you configure the policy and select the users that should have the policy, the policy is applied to all targeted users.
+Unlike other Intune policies, you do not deploy conditional access policies. Instead, once you configure the policy and select the users that should have the policy, the policy is applied to all targeted users. When a user is targeted by a policy, each device they use must be compliant in order to access resources.
 
 
 ## Next steps
