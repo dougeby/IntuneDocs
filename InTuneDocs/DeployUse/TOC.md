@@ -100,8 +100,8 @@
 #### [MAM policies for Android](android-mam-policy-settings.md)
 #### [MAM policies for iOS](ios-mam-policy-settings.md)
 #### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Manage data transfer between iOS apps](microsoft-intune-mobile-app-management-policies-and-ios-open-in.md)
-#### [End user experience for MAM-enabled apps](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies.md)
+#### [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
+#### [End user experience](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 ### [Prepare line of business apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [Wrap iOS apps](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
