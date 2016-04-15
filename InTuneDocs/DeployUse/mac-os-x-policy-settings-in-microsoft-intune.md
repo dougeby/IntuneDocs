@@ -1,5 +1,5 @@
 ---
-title: Mac OS X configuration policy settings in Microsoft Intune
+title: Mac OS X policy settings in Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -10,6 +10,9 @@ ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 author: robstackmsft
 ---
 # Mac OS X configuration policy settings in Microsoft Intune
+
+## General configuration policy settings
+
 Use the Microsoft Intune **Mac OS X general configuration policy** to configure settings for:
 
 -   **Device security settings** - Choose from a list of predefined settings that let you control a range of features and functionality on the device.
@@ -18,7 +21,7 @@ Use the Microsoft Intune **Mac OS X general configuration policy** to configure 
 
 If the setting you are looking for does not appear in this list, you might be able to create it using a Mac OS X custom policy that lets you import settings you created using the Apple Configurator Tool. For more information, see [Mac OS X custom policy settings in Microsoft Intune](../Topic/Mac-OS-X-custom-policy-settings-in-Microsoft-Intune.md).
 
-## Password settings
+### Password settings
 
 |Setting name|Details|
 |----------------|---------------|
@@ -32,7 +35,7 @@ If the setting you are looking for does not appear in this list, you might be ab
 |**Remember password history**|This setting is used to prevent the user from using a previously used password. When it is set, you can also set **Prevent reuse of previous passwords** to specify the number of previously used passwords that cannot be reused (from **1** - **24**).|
 |**Minutes of inactivity before screensaver activates**|Specifies the length of time the computer must be idle before the screensaver activates.|
 
-## Settings for compliant and noncompliant apps
+### Settings for compliant and noncompliant apps
 In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed settings for devices**, and then specify a list of compliant or noncompliant apps using the following information:
 
 > [!NOTE]
@@ -54,10 +57,10 @@ In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed
 > [!IMPORTANT]
 > When a Mac OS X device is in Sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the Intune console might temporarily display the status **Policy settings in error** until the next time the device wakes from Sleep mode.
 
-## Monitor compliant and noncompliant apps
+### Monitor compliant and noncompliant apps
 Use the **Noncompliant Apps Reports** to view the compliance of apps you specified.
 
-### To run the report
+#### To run the report
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Reports** &gt; **Noncompliant Apps Reports**.
 
@@ -68,13 +71,13 @@ Use the Microsoft Intune **Mac OS X custom configuration policy** to deploy sett
 
 This capability is intended to allow you to deploy Mac OS X settings that are not configurable with the Intune Mac OS X general configuration policy. For information about the settings you can configure with these policies, see [Mac OS X configuration policy settings in Microsoft Intune](mac-os-x-configuration-policy-settings-in-microsoft-intune.md).
 
-## Prerequisites
+### Prerequisites
 Before you start, you must have installed the Apple Configurator and created a configuration file containing the settings you want to deploy to users or devices. You can download and learn about the Apple Configurator from [the Mac App Store](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)
 
 > [!NOTE]
 > Intune does not report the compliance of individual settings in a Mac OS X custom policy. However, the overall compliance of the policy is reported.
 
-## General settings
+### General settings
 
 |Setting name|Details|
     |----------------|--------------------|
@@ -82,7 +85,7 @@ Before you start, you must have installed the Apple Configurator and created a c
     |**Description**|Provide a description that gives an overview of the Mac OS X custom policy and other relevant information that helps you to locate it.|
 
 
-## Custom settings
+### Custom settings
 
 |Setting name|Details|
     |----------------|--------------------|
@@ -92,7 +95,7 @@ Before you start, you must have installed the Apple Configurator and created a c
 
 
 
-## How to create a configuration profile file
+### How to create a configuration profile file
 You can create the configuration profile file used by the custom policy in two ways:
 
 -   Export the file (with the extension **.mobileconfig**) from the Apple Configurator tool.
@@ -104,5 +107,5 @@ You can create the configuration profile file used by the custom policy in two w
 > When a Mac OS X device is in Sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the Intune console might temporarily display the status **Policy settings in error** until the next time the device wakes from Sleep mode.
 
 ### See Also
-[Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md)
+[Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
