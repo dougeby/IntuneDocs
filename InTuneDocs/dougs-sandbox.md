@@ -12,34 +12,40 @@ author: dougeby
 ---
 
 
-<div id="main">
-  <h1 id="common-ways-to-use-intune">Common ways to use Intune</h1>
-  <div id="metadata" ms.cmpgrp="page info">
-    <a href="https://github.com/jeffgilb" class="avatar"><span class="author-name" style="background-image: url(https://github.com/jeffgilb.png)" alt="Author Name"></span></a>
-    <div class="info">
-      <span class="name"><a href="https://github.com/jeffgilb">Jeff Gilbert</a></span>
-      <div class="meta">
-        <time datetime="" class="date">3/22/2016</time>
-        <time datetime="" class="reading-time">6 min to read</time>
+
+## Image map test
+
+<p>Click one of the links to go to the web page:</p>
+
+<img src=".\media\sandbox\appmgmtflow.png" alt="Planets" usemap="#appmgmtmap" style="width:675px;height:952px;">
+
+<map name="appmgmtmap">
+  <area shape="rect" coords="0,649,295,679" alt="DeployConfigApps" href="https://technet.microsoft.com/library/dn646965.aspx">
+  <area shape="rect" coords="0,680,295,715" alt="DeployConfigApps" href="https://technet.microsoft.com/library/dn627825.aspx">  
+  <area shape="rect" coords="0,763,295,796" alt="DeployConfigApps" href="https://technet.microsoft.com/library/dn646965.aspx">
+  <area shape="rect" coords="0,798,295,830" alt="DeployConfigApps" href="https://technet.microsoft.com/library/dn878026.aspx">
+  <area shape="rect" coords="0,875,295,908" alt="DeployConfigApps" href="https://technet.microsoft.com/library/dn646965.aspx">
+  <area shape="rect" coords="0,910,295,942" alt="DeployConfigApps" href="https://technet.microsoft.com/library/dn878026.aspx">  
+
+  <area shape="rect" coords="385,230,675,295" alt="DeployConfigApps" href="https://technet.microsoft.com/library/dn627825.aspx">
+  <area shape="rect" coords="385,710,675,750" alt="DeployConfigApps" href="https://technet.microsoft.com/library/dn627825.aspx">
+</map>
 
 
+with span
+<span>
+  <a href="http://www.microsoft.com"><img src=".\media\sandbox\AppLifecycleR1C1.png" class="inline"></a><a href="http://www.microsoft.com"><img src=".\media\sandbox\AppLifecycleR1C2.png"></a>
+</span>
 
-      </div>
-    </div>
-  </div>
 
-
-
-  ![alt text](.\media\Nav-Puzzle\WIT_MDM_Row2Column2.png "Logo Title Text 1")![alt text](.\media\Nav-Puzzle\WIT_MDM_Row2Column2.png "Logo Title Text 1")
 
 
 
 
 ## Hot-linked images
 
-<img src="media\sandbox\AppLifecycleR1C1.png" (https://docsmsftstage.azurewebsites.net/InTune/Understand/introduction-to-microsoft-intune.html) class="inline" />
 
-<img src="media\sandbox\AppLifecycleR1C1.png" class="inline" /><img src="media\sandbox\AppLifecycleR1C2.png" class="inline" />
+<a href="http://www.microsoft.com"><img src="media\sandbox\AppLifecycleR1C1.png" class="inline" /><a href="http://www.microsoft.com"><img src="media\sandbox\AppLifecycleR1C2.png" class="inline" />
 
 
 
@@ -68,23 +74,17 @@ An image that uses (!(Image1)(.path)(link)
 <para/>
 
 ## Animated GIF
+using (image1)
+![Image1](.\media\MDMAppLifecycle_v8.gif)
 
-![Image1](.\media\MDMAppLifecycle_v8.gif)]
+using (img src)
+<img src=".\media\MDMAppLifecycle_v8.gif" style="width:675">
+
+<img src=".\media\sandbox\DeviceLifecycle_v2.gif" style="width:675">
+
+<img src=".\media\sandbox\AppLifecycle_v4.gif" style="width:675">
 
 
-
-
-## Image map test 
-
-<p>Click on the sun or on one of the planets to watch it closer:</p>
-
-<img src=".\media\sandbox\planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
-
-<map name="planetmap">
-  <area shape="rect" coords="0,0,82,126" alt="Sun" href="http://www.microsoft.com">
-  <area shape="circle" coords="90,58,3" alt="Mercury" href="http://www.microsoft.com">
-  <area shape="circle" coords="124,58,8" alt="Venus" href="http://www.microsoft.com">
-</map>
 
 </body>
 </html>
