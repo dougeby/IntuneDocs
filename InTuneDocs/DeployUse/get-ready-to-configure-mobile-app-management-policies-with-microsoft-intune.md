@@ -10,11 +10,11 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 author: karthikaraman
 ---
 # Get ready to configure mobile app management policies with Microsoft Intune
-You can configure mobile app management policies for an app independent of whether or not the app is running on a managed device or not. The MAM policies configured through Intune console are only supported for devices that are enrolled in Intune.  
+This topic describes what you need to do before you can create mobile app management policies (MAM) in the Azure portal.
+If you are currently using the **Intune admin console** to manage your devices, you can [create a MAM policy](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) that supports apps for devices enrolled in Intune using the Intune admin console.
+>[!IMPORTANT]
+> You may not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies.
 
-For devices that are not enrolled in any MDM, or enrolled in a third party MDM other than Intune, you can use the Azure portal to configure MAM policies.  Azure portal also supports configuring MAM policies for devices that are enrolled.
-
-This topic tells you what you need to do before you can create mobile app management policies (MAM) in the Azure portal.
 ##  Supported platforms
 - iOS 8.1 or later
 
@@ -57,9 +57,9 @@ Click the app to see the supported scenarios, platforms and whether or not the a
 The following table lists the role and permissions you can assign to admin users.
 
 |||
-|-|-|
+|--|----|
 |**Role**|**Permissions**|
-|Global administrator (O365 portal)|Access to O365 portal<br /><br />Access to  Azure AD portal<br /><br />Access to Azure  portal (can do both role management and mobile app management tasks.|
+|Global administrator (O365 portal)|Access to O365 portal, and Azure AD portal<br /><br />Access to Azure  portal (can do both role management and mobile app management tasks.|
 |Owner role (Azure  portal)|Access to Azure  portal (can do both role management and mobile app management tasks.|
 |Contributor role (Azure  portal)|Access to Azure  portal (can only do the mobile app management tasks.|
 

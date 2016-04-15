@@ -16,7 +16,7 @@ Your employees use mobile devices for both personal and work tasks.  While makin
 
 You can use Intune mobile app management (MAM) policies to help protect your company’s data. Because Intune MAM policies can be used independent of any mobile-device management (MDM) solution, you can use it to protect your company’s data with or without enrolling devices in a device management solution. By simply implementing **app-level policies**, you can restrict access to company resources and keep data within the purview of your IT department.
 
-MAM policies support the following scenarios:
+MAM policies support apps running on:
 
 -   **Devices that are managed and enrolled** in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. The devices in this category are typically corporate owned devices.
 
@@ -30,18 +30,18 @@ MAM policies support the following scenarios:
 
 -   **Devices that are not managed**.  The devices in this category are typically employee owned devices that are not managed or enrolled in Intune or other MDM solutions.
 
-> [!IMPORTANT]
-> There are additional benefits to using MDM with MAM  policies, and companies can use both at the same time. For example, an employee may use a phone issued by the company as well as a personal tablet.  In this case, the company phone is enrolled in MDM and protected by MAM policies, and the personal device is protected by MAM policies only.
-
-**MDM makes sure that the device is protected**.  For example, you can require a PIN to access the device, or you can deploy managed apps to the device. You can also deploy apps to devices through your MDM solution, to give you more control over app management.
-
-**MAM policies makes sure that the app-layer protections are in place**. For example, you can require a PIN to open an app in a work context, or if data can be shared between apps, or preventing company app data from being saved to a personal storage location.
-
 **The important benefits of using MAM policies are**
 
 -   Protecting your company data at the app level.  Since mobile app management does not require device management, you can protect company data on both managed and unmanaged devices. The management is centered on the user identity, which removes the requirement for device management.
 
--   End-user productivity is not impacted, and the policies are not applied when using the app in a personal context.  The policies are applied only in a work context, thus giving you the ability to protect company data without touching personal data.
+-   End user productivity is not impacted, and the policies are not applied when using the app in a personal context.  The policies are applied only in a work context, thus giving you the ability to protect company data without touching personal data.
+
+There are additional benefits to using MDM with MAM  policies, and companies can use both MAM with and without MDM at the same time. For example, an employee may use a phone issued by the company as well as a personal tablet.  In this case, the company phone is enrolled in MDM and protected by MAM policies, and the personal device is protected by MAM policies only.
+
+- **MDM makes sure that the device is protected**.  For example, you can require a PIN to access the device, or you can deploy managed apps to the device. You can also deploy apps to devices through your MDM solution, to give you more control over app management.
+
+- **MAM policies makes sure that the app-layer protections are in place**. For example, you can require a PIN to open an app in a work context, or if data can be shared between apps, or preventing company app data from being saved to a personal storage location.
+
 
 ### MAM polices are currently supported on:
 -   iOS 8.1 or later
