@@ -25,7 +25,8 @@ Windows Phone 8.0 | Not supported
 PC (Windows 8.0 and earlier) | Not supported       
 PC (Windows 8.1) | Not supported
 
-**To use Remote Lock to lock your device**:
+</br>
+To use Remote Lock to lock your device:
 
 1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the name of the device you want to lock.
 
@@ -39,7 +40,9 @@ PC (Windows 8.1) | Not supported
 	* The Details page for the device.
 	* The tile that shows the device name on the My Devices section of the page.
 
-	If you see a “Remote Lock failed” notification, wait a few minutes, and then try again to lock your device. Once you tap to retry, the status changes back to “Remote lock pending.” If a retry doesn’t work, contact your IT administrator for help. If you find your device and want to unlock it after using Remote Lock, just enter your passcode.
+	If you see a “Remote Lock failed” notification, wait a few minutes, and then try again to lock your device. Once you tap to retry, the status changes back to “Remote lock pending.” 
+
+	If a retry doesn’t work, contact your IT administrator for help. If you find your device and want to unlock it after using Remote Lock, just enter your passcode.
 
 
 ### See also
