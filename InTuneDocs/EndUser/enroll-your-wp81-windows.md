@@ -12,7 +12,7 @@ author: Staciebarker
 
 # Enroll your Windows Phone 8.1 device in Intune
 
-To learn about what happens when you enroll, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md).
+If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. Enrolling your devices enables your organization to keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 
 To enroll your Phone 8.1 device in Intune, follow the instructions that apply to your company or school:
@@ -75,6 +75,6 @@ If your IT admin has configured the Company Portal to be installed  during enrol
 
 
 ### See also
-[Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)
+[Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)</br>
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
 

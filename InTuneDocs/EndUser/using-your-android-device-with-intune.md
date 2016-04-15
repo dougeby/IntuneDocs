@@ -18,8 +18,6 @@ Use these steps for tasks that you need to do on your Android device when your c
 
 The information in this section will help you with Intune Company Portal installation and device enrollment for iOS devices.
 
-- [Install the Microsoft Intune Company Portal app](install-the-microsoft-intune-company-portal-app-android.md)</br>
-- [Sign in to the Company Portal app](sign-in-to-the-company-portal-app-android.md)</br>
 - [Enroll your device in Intune](enroll-your-device-in-Intune-android.md)</br>
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
@@ -49,5 +47,6 @@ The information in this section will help you fix issues you might encounter whe
 - [Send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android.md)</br>
 - [Device doesn't have the required minimum operating system version](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
 - [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
-- [Your device is missing a required certificate](device-is-missing-a-required-certificate-andr.md)
+- [Your device is rooted and you can't connect](your-device-is-rooted-and-you-cant-connect-android.md)
+- [Your device is missing a required certificate](your-device-is-missing-a-required-certificate-android.md)
 
