@@ -21,13 +21,13 @@ Mobile application management policies support:
 > [!TIP]
 > Mobile application management policies support devices that are enrolled with Intune.
 > 
-> If you are looking for information about how to create app management policies for devices that are not managed by Intune, see [Configure data loss prevention app policies with Microsoft Intune](configure-data-loss-prevention-app-policies-with-microsoft-intune.md).
+> If you are looking for information about how to create app management policies for devices that are not managed by Intune, see the [Microsoft Intune application partners page](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 Unlike other Intune policies, you do not deploy a mobile application management policy directly. Instead, you associate the policy with the app that you want to restrict. When the app is deployed and installed on devices, the settings you specify will take effect.
 
 To apply restrictions to an app, the app must incorporate the Microsoft App Software Development Kit (SDK). There are two methods of obtaining this type of app:
 
--   **Use a policy managed app** – Has the App SDK built-in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. See a list of [Microsoft apps you can use with Microsoft Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md).
+-   **Use a policy managed app** – Has the App SDK built-in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. See a list of [apps you can use with Microsoft Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md).
 
 -   **Use a ‘wrapped’ app** - Apps that are repackaged to include the App SDK by using the **Microsoft Intune App Wrapping Tool**. This tool is typically used to process company apps that were created in-house. It cannot be used to process apps that were downloaded from the app store. See [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -71,7 +71,7 @@ When you publish a managed app, the procedures differ depending on whether you a
 
 #### To publish a policy managed app
 
-1.  When you are ready to upload the app to your cloud storage space, follow the instructions in [Publish mobile device software to Microsoft Intune cloud storage](../Topic/Deploy-apps-to-mobile-devices-in-Microsoft-Intune---deleted.md#BKMK_PublishSoftware).
+1.  When you are ready to upload the app to your cloud storage space, follow the instructions in [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 2.  For iOS apps, select **Managed iOS App from the App Store**, under **Select how this software is made available to devices**.
 
@@ -85,7 +85,7 @@ Once you have verified that the app is uploaded successfully, continue to Step 3
 
 #### To publish an app that was processed using the Microsoft Intune App Wrapping Tool
 
-1.  When you are ready to upload the app to your cloud storage space, follow the instructions in [Publish mobile device software to Microsoft Intune cloud storage](../Topic/Deploy-apps-to-mobile-devices-in-Microsoft-Intune---deleted.md#BKMK_PublishSoftware).
+1.  When you are ready to upload the app to your cloud storage space, follow the instructions in [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 2.  Select **Software Installer**, under **Select how this software is made available to devices**.
 
@@ -95,7 +95,7 @@ After the upload completes, you will see **Yes** for **App Management Policies**
 
 Once you have verified that the app is uploaded successfully, continue to Step 3.
 
-## <a name="bkmk_step3"></a>**Step 3:** Create a mobile application management policy
+## **Step 3:** Create a mobile application management policy
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Overview** &gt; **Add Policy**.
 
@@ -135,7 +135,7 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 ## **Step 4:** Associate the app with a mobile application management policy, then deploy the app.
 Deploy the app, ensuring that you select the mobile application management policy on the **Mobile App Management** page to associate the policy with the app.
 
-For details, see [Deploy apps to mobile devices in Microsoft Intune - deleted](../Topic/Deploy-apps-to-mobile-devices-in-Microsoft-Intune---deleted.md).
+For details, see [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
 > [!IMPORTANT]
 > For devices that run operating systems earlier than iOS 7.1, associated policies will not be removed when the app is uninstalled.
@@ -173,7 +173,7 @@ Once you have created and deployed an app associated with a mobile application m
 
 6.  Once you have identified a conflict, you can revise conflicting policy settings to use the same setting, or deploy only one policy to the app and user.
 
-### <a name="BKMK_Conf"></a>How policy conflicts are resolved
+### How policy conflicts are resolved
 When there is a mobile application management policy conflict on the first deployment to the user or device, the specific setting value in conflict will be removed from the policy deployed to the app, and the app will use a built-in conflict value.
 
 When there is a mobile app management policy conflict on later deployments to the app or user, the specific setting value in conflict will not be updated on the mobile app management policy deployed to the app, and the app will use the existing value for that setting.
@@ -184,7 +184,5 @@ In cases where the device or user receives two conflicting policies, the followi
 
 -   If no policy has already been deployed to the device, and two conflicting settings are deployed, the default setting built into the device is used.
 
-### See Also
-[Protect data and devices with Microsoft Intune](protect-data-and-devices-with-microsoft-intune.md)
-[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
+
 
