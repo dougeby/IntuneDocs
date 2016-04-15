@@ -1,6 +1,5 @@
-
 ---
-title: Device is missing a required certificate
+title: Your Android device is missing a required certificate
 ms.reviewer: na
 ms.custom: na
 ms.service: microsoft-intune
@@ -11,7 +10,7 @@ ms.assetid:
 author: staciebarker
 ---
 
-# <a name="BKMK_andr_cert_missing"></a>Your device is missing a required certificate
+# <a name="BKMK_andr_cert_missing"></a>Your Android device is missing a required certificate
 If your device isn’t enrolled in Intune, and it’s missing a certificate that usually comes installed on your phone, you won’t be able to sign in to the Android Company Portal app. When you try to sign in, you’ll see the following message:
 
 ![andr-cert-install-cert-missing](./media/andr-cert_install-1-cert_missing.png)
@@ -28,7 +27,7 @@ To resolve this issue and get the required certificate:
 
 5. Ensure that **Credential Use** is set to **Used for VPN and apps**, and then tap **OK**.
 
-   	![andr-cert-install-add-cert-name](./media/andr-cert_install-2-add_cert_name.png)
+	![andr-cert-install-add-cert-name](./media/andr-cert_install-2-add_cert_name.png)
 
 6. Close the web browser and the Company Portal app.
 

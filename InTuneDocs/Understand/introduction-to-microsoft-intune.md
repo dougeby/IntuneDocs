@@ -14,9 +14,6 @@ Microsoft Intune is the "management arm" of the Microsoft Enterprise Mobility Su
 
 EMS is a complete integrated suite for enterprise mobility inclusive of productivity, identity, access control, management and data protection. It gives you the best possible way to deploy and operate a mobility solution in your organization.  
 
-![Image of enterprise mobility vision](../media/em-intune-vision.png)
-
-
 ![Image of enterprise mobility vision](../media/em-vision.png)
 
 Intune gives you the ability to manage mobile devices and mobile apps. It integrates closely with Azure Active Directory (AD) for identity and access control and Azure Rights Management (RMS) for data protection.  

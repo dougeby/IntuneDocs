@@ -34,6 +34,7 @@ You can use the Company Portal website  to:
 
 You can do most of the same tasks on the **Company Portal website** that you can do by using the **Company Portal app** that you install on your device. To find out more about the Company Portal app, enrolling a device in Intune, and more, tap the link for the type of device you have:
 
-- **Android**: [Using your Android device with Intune](using-your-android-device-with-intune.md)
-- **iOS and Mac OS X**: [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- **Windows**: [Using your Android device with Intune](using-your-windows-device-with-intune.md)
+[!div class="op_single_selector"]
+- [Using your Android device with Intune](using-your-android-device-with-intune.md)
+- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Using your Android device with Intune](using-your-windows-device-with-intune.md)
