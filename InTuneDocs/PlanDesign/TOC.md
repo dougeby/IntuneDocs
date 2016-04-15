@@ -1,5 +1,5 @@
-# [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
-# [Get Started](/intune/getstarted/what-to-know-before-you-start-microsoft-intune)
+# [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
+# [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 
 # [Plan and Design](ways-to-do-enterprise-mobility.md)
 ## [Ways to do enterprise mobility](ways-to-do-enterprise-mobility.md)
@@ -23,5 +23,5 @@
 ## [Best practices for using Microsoft Intune](best-practices-for-using-intune.md)--->
 ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
-# [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)

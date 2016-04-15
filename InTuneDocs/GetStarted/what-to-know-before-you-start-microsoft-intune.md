@@ -11,7 +11,7 @@ author: Staciebarker
 ---
 # What to know before you start Microsoft Intune
 ## General device and app management capabilities
-Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], you should first review the [Introduction to Microsoft Intune](/intune/understand/introduction-to-microsoft-intune) and become familiar with the capabilities of [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] described in this section. After you are familiar with the capabilities of Intune, you should be ready to set up your paid subscription. If you started with a trial subscription, you can convert it later to a full subscription see [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
+Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], you should first review the [Introduction to Microsoft Intune](/intune/understand-explore/introduction-to-microsoft-intune) and become familiar with the capabilities of [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] described in this section. After you are familiar with the capabilities of Intune, you should be ready to set up your paid subscription. If you started with a trial subscription, you can convert it later to a full subscription see [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
 
 ### Manage mobile devices and computers with no server or intranet requirements
 You can manage mobile devices and computers, even if those devices are not joined to a domain or brought onsite. This makes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ideal for a company with a mobile or geographically distributed workforce.
@@ -29,7 +29,7 @@ You can create alerts to notify you when there is a problem with a mobile device
 Users can use the Company Portal to enroll devices, to install site-licensed software, or to find contact information for IT administrators.
 
 ### Support multi-factor authentication
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] supports multi-factor authentication (MFA). For details, see [Protect Windows devices with multi-factor authentication](/intune/deployuse/protect-windows-devices-with-multi-factor-authentication).
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] supports multi-factor authentication (MFA). For details, see [Protect Windows devices with multi-factor authentication](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication).
 
 ### Available in multiple languages
 Intune is now available in the following languages: Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish. For a list of the countries where the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] service is supported, see [international availability](https://products.office.com/en-us/business/international-availability).

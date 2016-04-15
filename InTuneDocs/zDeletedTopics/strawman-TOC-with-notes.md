@@ -1,6 +1,6 @@
 # [Understand and Explore](/Intune/Understand/ways-to-do-enterprise-mobility.html)
-# [Get started](/Intune/getstarted/what-s-new-in-microsoft-intune.html)
-# [Plan and Design](/Intune/plandesign/plan-your-user-and-device-groups.html)
+# [Get started](/Intune/get-started/what-s-new-in-microsoft-intune.html)
+# [Plan and Design](/Intune/plan-design/plan-your-user-and-device-groups.html)
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)

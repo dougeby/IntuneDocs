@@ -39,4 +39,4 @@ Throughout this documentation, we’ll explain how to use the tools Intune provi
 ### Next steps
 * Read about some of the [common ways to use Intune](common-ways-to-use-intune.md)
 * Get familiar with the product [with a 30-day trial of Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
-* Dive into the [technical requirements and capabilities](/getstarted/what-to-know-before-you-start-microsoft-intune.md) of Intune
+* Dive into the [technical requirements and capabilities](/get-started/what-to-know-before-you-start-microsoft-intune.md) of Intune
