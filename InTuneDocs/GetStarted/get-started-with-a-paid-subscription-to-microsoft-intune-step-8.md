@@ -47,9 +47,9 @@ For this example, you'll use the self-enrollment approach.
 
 6.  When the Setup wizard has completed, choose **Finish**.
 
-To learn more about computer management using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], see [Install the Windows PC client with Microsoft Intune](/Intune/deployuse/install-the-windows-pc-client-with-microsoft-intune.html).
+To learn more about computer management using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], see [Install the Windows PC client with Microsoft Intune](/Intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune.html).
 
-To learn more about software management using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], see [Deploy and configure apps with Microsoft Intune](/Intune/deployuse/deploy-and-configure-apps-with-microsoft-intune.html).
+To learn more about software management using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], see [Deploy and configure apps with Microsoft Intune](/Intune/deploy-use/deploy-and-configure-apps-with-microsoft-intune.html).
 
 ## Next steps
 Congratulations! You have just completed step 8 of the *Get started with a paid subscription to Microsoft Intune* guide.

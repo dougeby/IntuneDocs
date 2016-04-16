@@ -85,7 +85,7 @@ Filtered group views let you tailor the view admins can see based on their role 
 
 -   You want to display only relevant groups to each IT admin.
 
-You can configure filtered group views for service administrators in the Intune administrator console. For details, see [What to know before you start Microsoft Intune](/getstarted/what-to-know-before-you-start-microsoft-intune).
+You can configure filtered group views for service administrators in the Intune administrator console. For details, see [What to know before you start Microsoft Intune](/get-started/what-to-know-before-you-start-microsoft-intune).
 
 After you configure filtered group views for a service administrator, that administrator:
 

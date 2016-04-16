@@ -22,7 +22,7 @@ You can start using Intune with a 30-day free trial that includes 100 user licen
 
 For a list of settings that you can configure on mobile devices, see:
 
--   [Mobile device management capabilities in Microsoft Intune](./understand/Mobile-device-management-capabilities-in-Microsoft-Intune.md)
+-   [Mobile device management capabilities in Microsoft Intune](./understand-explore/Mobile-device-management-capabilities-in-Microsoft-Intune.md)
 
 -   [General settings for Mobile Devices in Configuration Manager](http://msdn.microsoft.com/en-us/library/cb4ee476-cb7d-444e-87af-7bd1c8e0b103)
 
@@ -33,7 +33,7 @@ Because Intune is an online service, Microsoft can update it on a regular basis.
 
 Use the information in this topic to help you understand the frequency of these service updates, and the advance notification we give to you when an update might affect your use of the service.
 
-To learn about changes in the  Intune service, see [What's new in Microsoft Intune](./deployuse/What-s-new-in-Microsoft-Intune.md). The [Microsoft Intune Blog](http://blogs.technet.com/b/microsoftintune/) also discusses changes in the service, and provides helpful tips to enable you to get the most from  Intune.
+To learn about changes in the  Intune service, see [What's new in Microsoft Intune](./deploy-use/What-s-new-in-Microsoft-Intune.md). The [Microsoft Intune Blog](http://blogs.technet.com/b/microsoftintune/) also discusses changes in the service, and provides helpful tips to enable you to get the most from  Intune.
 
 Important service updates will also be communicated to you directly from the Intune console in the notice board.
 
@@ -44,7 +44,7 @@ Here are the types of notices Microsoft provides about the Intune service:
 * New, or changed APIs – Notifying you that you need to test to ensure backward compatibility of custom apps
 * Changes to system requirements, for example, the minimum required browser version
 * Any updates that require you to take action to enable the feature or to avoid service interruption to the feature.
--   Microsoft provides information about new features, new functionality, and enhancements to existing features in our monthly service update. Generally, Microsoft rolls out service updates around the middle of each month. Updates are described in  [What's new in Microsoft Intune](./deployuse/what-s-new-in-Microsoft-Intune.md).
+-   Microsoft provides information about new features, new functionality, and enhancements to existing features in our monthly service update. Generally, Microsoft rolls out service updates around the middle of each month. Updates are described in  [What's new in Microsoft Intune](./deploy-use/what-s-new-in-Microsoft-Intune.md).
 -   In the event of Intune service retirement, you would be notified 12 months in advance.
 
 ## <a name="WIT_Cho"></a>Choose the management solution that’s right for you
@@ -61,10 +61,10 @@ Use these resources to learn more about Intune:
 
 -   The [Microsoft Intune Trust Center](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) provides information about the security, privacy, and compliance practices of Intune, and describes some of Intune's certifications.
 
--   [Mobile device management capabilities in Microsoft Intune](./understand/mobile-device-management-capabilities-in-Microsoft-Intune.md)
+-   [Mobile device management capabilities in Microsoft Intune](./understand-explore/mobile-device-management-capabilities-in-Microsoft-Intune.md)
 
 ### See also
 [Documentation for Microsoft Intune](../Topic/Documentation-for-Microsoft-Intune.md)
 [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
-[What's new in Microsoft Intune](./deployuse/what-s-new-in-Microsoft-Intune.md)
+[What's new in Microsoft Intune](./deploy-use/what-s-new-in-Microsoft-Intune.md)
