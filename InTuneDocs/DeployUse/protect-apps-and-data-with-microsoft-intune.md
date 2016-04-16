@@ -10,7 +10,7 @@ ms.assetid:
 author: karthikaraman
 ---
 # Protect apps and data with Microsoft Intune
-<!---The Enterprise Mobility Suite (EMS)  is a comprehensive solution for identity, mobile device management, app management, and data protection. Microsoft Intune is one of the services of EMS that provides mobile device and application management solutions.
+The Enterprise Mobility Suite (EMS)  is a comprehensive solution for identity, mobile device management, app management, and data protection. Microsoft Intune is one of the services of EMS that provides mobile device and application management solutions.
 
 EMS provides a layered security model which gives you the ability to control and manage access to email, data, and corporate applications.
 
@@ -21,9 +21,9 @@ The four layered security model for identity, devices, apps, and data is about m
 - Protecting your data starts with establishing and validating the user identity. **Azure Active Directory**, an identity and access management solution delivers single sign-on, multi-factor authentication, self-service passwords, and more. It provides the functionality for the **identity layer** of the security model.
 - Building on the identity baseline, you can use **Microsoft Intune** to make sure that mobile devices are enrolled, managed and compliant with your corporate policies. This is the **device layer**.
 - The third layer is the **app management layer** that **Intune** provides to help you keep sensitive data within the managed app ecosystem.
-- **Azure Rights Management (Azure RMS)** completes the security model by protecting data at the file level. The security policies that are applied to the data, travel with the data, help keep the data secure in transit and at rest, regardless of the device that is used to access it. This is the **data layer** of the security model. -->
+- **Azure Rights Management (Azure RMS)** completes the security model by protecting data at the file level. The security policies that are applied to the data, travel with the data, help keep the data secure in transit and at rest, regardless of the device that is used to access it. This is the **data layer** of the security model.
 
-This section describes how you can protect your company apps and data using conditional access and mobile app management (MAM) policies.
+**This section describes how you can protect your company apps and data using conditional access and mobile app management (MAM) policies.**
 
 An important step to protecting corporate data is making sure that devices used to access your company data are using security requirements like strong password, encryption, and are not jailbroken. Microsoft Intune gives you the ability to set conditions that the devices have to comply with before they are allowed to your company email and data. This is known as **conditional access**.
 
