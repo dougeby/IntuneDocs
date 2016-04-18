@@ -115,8 +115,10 @@
 ### [Retire apps ](retire-apps-using-microsoft-intune.md)
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [Migrate to Intune](migrate-to-intune.md)
 ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+
+## [Migrate to Intune](migrate-to-intune.md)
+
 ## [What's new](whats-new-in-microsoft-intune.md)
 
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
