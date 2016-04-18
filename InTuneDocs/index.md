@@ -37,7 +37,7 @@ layout: HubPage
         <ul class="column column-half">
           <li><a href="./understand-explore/introduction-to-microsoft-intune">Introduction to Microsoft Intune</a></li>
           <li><a href="./understand-explore/common-ways-to-use-intune">Common scenarios that rely on Intune</a></li>
-          <li><a href="./get-started/get-started-with-a-paid-subscription-to-microsoft-intune">Start with a paid subscription</a></li>
+          <li><a href="./get-started/start-with-a-paid-subscription-to-microsoft-intune">Start with a paid subscription</a></li>
 
         </ul>
         <ul class="column column-half">

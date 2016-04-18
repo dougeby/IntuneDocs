@@ -33,8 +33,8 @@ After completing the sign up process you will be directed to a page used to add 
 > The next time you sign in to Intune you'll automatically be directed to the Intune administration console.
 
 ## Next steps
-Congratulations! You have just completed step 1 of the *Get started with a paid subscription to Microsoft Intune* guide.
+Congratulations! You have just completed step 1 of the *Start with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]
 
->[&larr; **Get started**](.\get-started-with-a-paid-subscription-to-microsoft-intune.md)     [**Domain settings** &rarr;](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
+>[&larr; **Get started**](.\start-with-a-paid-subscription-to-microsoft-intune.md)     [**Domain settings** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
