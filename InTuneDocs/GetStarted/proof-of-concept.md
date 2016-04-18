@@ -63,8 +63,6 @@ Here are some  challenges that you may encounter in the **Proof of concept** pha
     **Mitigation:** Work with the executive sponsor, network, and user teams to understand the requirements of a client management solution.
 
 ## Next steps
-[Pilot](pilot.md)
+>[!div class="step-by-step"]
 
-
-### See also
-[Rollout phases for Microsoft Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
+>[&larr; **Project scope**](project-scope.md)     [**Pilot** &rarr;](pilot.md)
