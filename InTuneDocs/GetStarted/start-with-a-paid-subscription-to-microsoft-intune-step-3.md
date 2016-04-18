@@ -30,7 +30,7 @@ After you've added users to your Intune subscription, we recommend that you gran
 
 
 ## Next steps
-Congratulations! You have just completed step 3 of the *Get started with a paid subscription to Microsoft Intune* guide.
+Congratulations! You have just completed step 3 of the *Start with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]
 
