@@ -1,5 +1,5 @@
 ---
-title: Get started with a paid subscription to Microsoft Intune
+title: Start with a paid subscription to Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -10,7 +10,7 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 author: Staciebarker
 ---
 
-# Get started with a paid subscription to Microsoft Intune
+# Start with a paid subscription to Microsoft Intune
 This walkthrough leads you through the steps of setting up paid subscription of [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] to quickly and easily begin managing mobile devices and Windows PCs in use by your organization. You can follow each step in order or just skip ahead if a step is not applicable to your specific environment or business needs.
 
 >[!NOTE]
@@ -83,4 +83,4 @@ If you'll manage iOS or Windows Phone devices with Intune, you'll need certifica
 It's time to get started with your paid subscription!
 
 >[!div class="step-by-step"]
-[**Sign in to Intune** &rarr;](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1)
+[**Sign in to Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-1)
