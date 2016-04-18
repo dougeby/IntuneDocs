@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-author: Nbigman
+author: SanchuSa
 ---
 # Plan your user and device groups
 Groups in Intune provide great flexibility in managing your devices and users. You can set up groups to suit your organizational needs according to:

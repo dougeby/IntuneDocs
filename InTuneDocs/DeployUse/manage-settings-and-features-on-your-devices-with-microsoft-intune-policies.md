@@ -88,17 +88,15 @@ When you select a deployed policy, you can view further information about the de
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Policy**, then browse to and select the policy you want to manage.
 
-2.  Select one of the actions in the following table:
+2.  Select one of the following actions:
 
-|Action|Details|
-    |----------|--------------------|
-    |**Edit**|Opens the properties for the selected policy to allow you to make changes.|
-    |**Delete**|Deletes the selected policy.<br /><br />When you delete a policy, it is removed from all groups to which it was deployed.<br /><br />[What happens when a policy is deleted, or no longer applicable](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md#BKMK_What)|
-    |**Manage Deployment**|In the **Manage Deployment** dialog box, select the group you want to deploy the policy to and click **Add**.|
+- **Edit** - Opens the properties for the selected policy to allow you to make changes.
+- **Delete** - Deletes the selected policy.<br>When you delete a policy, it is removed from all groups to which it was deployed.
+- **Manage Deployment** - Select the group you want to deploy the policy to and click **Add**.
 
 ## Tasks for Intune policies
 
-### <a name="BKMK_Refresh"></a>To refresh the policies on a device to ensure they are current (applies to Windows PCs running the Intune client software only)
+### To refresh the policies on a device to ensure they are current (applies to Windows PCs running the Intune client software only)
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups**, and then select a device group.
 
@@ -115,20 +113,18 @@ If a device doesn't check in to get policy after the first notification is sent,
 
 In this case, the device will get policy on its next scheduled check-in with the Intune service as follows:
 
-|Platform|Check-in frequency after initial notification|
-|------------|-------------------------------------------------|
-|iOS|Every 6 hours|
-|Android|Every 8 hours|
-|Windows Phone|Every 8 hours|
-|Windows PCs enrolled as devices|Every 24 hours|
+- iOS - Every 6 hours
+- Android - Every 8 hours
+- Windows Phone - Every 8 hours
+- Windows PCs enrolled as devices - Every 24 hours
+
 If the device has just enrolled the check-in frequency will be more frequent as follows:
 
-|Platform|Frequency|
-|------------|-------------|
-|iOS|Every 15 minutes for 6 hours and then every 6 hours|
-|Android|Every 3 minutes for 15 minutes then every 15 minutes for 2 hours, and then every 8 hours|
-|Windows Phone|Every 5 minutes for 15 minutes then every 15 minutes for 2 hours, and then every 8 hours|
-|Windows PCs enrolled as devices|Every 3 minutes for 30 minutes, and then every 24 hours|
+- iOS - Every 15 minutes for 6 hours and then every 6 hours
+- Android - Every 3 minutes for 15 minutes then every 15 minutes for 2 hours, and then every 8 hours
+- Windows Phone - Every 5 minutes for 15 minutes then every 15 minutes for 2 hours, and then every 8 hours
+- Windows PCs enrolled as devices - Every 3 minutes for 30 minutes, and then every 24 hours
+
 Users can also launch the Company Portal app and sync the device to immediately check for policy anytime.
 
 ### What actions cause Intune to immediately send notification  to a device?
@@ -172,12 +168,10 @@ When you delete a policy, or remove a device from a group to which a policy was 
 
 #### Windows PCs running the Intune client software
 
-|Policy type|Action|
-|---------------|----------|
-|**Endpoint Protection settings**|Settings are restored to their recommended values. The only exception is the setting **Join Microsoft Active Protection Service** for which the default value is **No**. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
-|**Software updates settings**|Settings are reset to the default state for the operating system. For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
-|**Microsoft Intune Center settings**|Any support contact information that was configured by the policy is deleted from computers.|
-|**Windows Firewall settings**|Settings are reset to the default for the computer operating system. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
+- **Endpoint Protection settings** - Settings are restored to their recommended values. The only exception is the setting **Join Microsoft Active Protection Service** for which the default value is **No**. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- **Software updates settings** - Settings are reset to the default state for the operating system. For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+- **Microsoft Intune Center settings** - Any support contact information that was configured by the policy is deleted from computers.
+- **Windows Firewall settings** - Settings are reset to the default for the computer operating system. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
 
