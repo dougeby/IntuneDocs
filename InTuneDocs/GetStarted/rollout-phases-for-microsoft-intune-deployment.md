@@ -32,3 +32,6 @@ These topics will help you plan for the rollout of new policies and apps:
 
 -   **[Roll out apps](application-rollout.md)**
 -->
+>[!div class="step-by-step"]
+
+>[**Project scope** &rarr;](project-scope.md)  

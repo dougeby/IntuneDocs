@@ -90,7 +90,6 @@ Here are some  challenges that you may encounter in the **Project scope** phase.
     **Mitigation:** While you may be excited to jump into your project, ensure you have a clearly-defined value message. Include this value messaging in all awareness and training activities to help ensure users understand why your organization selected Intune.
 
 ## Next steps
-[Proof of concept](proof-of-concept.md)
+>[!div class="step-by-step"]
 
-### See also
-[Rollout phases for Microsoft Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
+>[&larr; **Rollout phases**](rollout-phases-for-microsoft-intune-deployment.md)     [**Proof of concept** &rarr;](proof-of-concept.md) 
