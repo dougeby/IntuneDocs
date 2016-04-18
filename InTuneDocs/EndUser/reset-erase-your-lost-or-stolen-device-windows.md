@@ -12,7 +12,7 @@ author: Staciebarker
 
 # Reset (erase) your lost or stolen device
 
-If your enrolled device is lost or stolen, you can reset it to factory defaults. These steps explain how to reset your device by using the Company Portal app. You can also [reset your device from the Company Portal website](reset-your-device-cpwebsite.md).
+If your enrolled Windows device is lost or stolen, you can reset it to factory defaults. These steps explain how to reset your device by using the Company Portal app. You can also [reset your device from the Company Portal website](reset-your-device-cpwebsite.md).
 
 
 > [!WARNING]

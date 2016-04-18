@@ -12,7 +12,7 @@ author: Staciebarker
 # How to encrypt your Windows device
 To reconnect to your work, you’ll need to encrypt your device by following these instructions:
 
-### Option 1 – Add a Microsoft account
+## Option 1 – Add a Microsoft account
 
 1.  Search for, then start the **PC Settings** app.
 
@@ -22,7 +22,7 @@ To reconnect to your work, you’ll need to encrypt your device by following the
 
 4.  Ensure that your device is enrolled with Intune by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
 
-### Option 2 – Enable BitLocker:
+## Option 2 – Enable BitLocker:
 
 1.  Search for, then start the **Manage BitLocker** app.
 

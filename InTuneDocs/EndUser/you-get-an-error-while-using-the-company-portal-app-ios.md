@@ -13,7 +13,7 @@ robots: noindex
 
 # You get an error while using the Company Portal app
 
-If you get an error while you’re using the Company Portal app, you can send information about the error to help your IT admin troubleshoot the problem. You can send error information in different ways:
+If you get an error while you’re using the Company Portal app on your iOS device, you can send information about the error to help your IT admin troubleshoot the problem. You can send error information in different ways:
 
 -   By tapping **Report** on error alert messages.
 

@@ -13,7 +13,7 @@ robots: noindex
 
 # What happens if you unenroll your device from Intune?
 
-When you unenroll your device from Intune:
+When you unenroll your iOS device from Intune:
 
 -   Your device won’t appear in the Company Portal anymore.
 
@@ -28,6 +28,8 @@ When you unenroll your device from Intune:
 -   You might not be able to connect to your company network using Wi-Fi or a virtual private network (VPN) anymore.
 
 -   Company email profiles are removed from the device.
+
+For instructions on how to unenroll, see [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md).
 
 ### See also
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

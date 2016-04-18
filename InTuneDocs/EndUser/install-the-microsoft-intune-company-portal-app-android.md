@@ -12,7 +12,7 @@ author: staciebarker
 
 # Install the Microsoft Intune Company Portal app
 
-The Company Portal is an app that you install on your device to give you access to your company or school apps, email, and network.  Before you can get access, you have to install the Company Portal app, and then  use the app to enroll your device in Microsoft Intune. To find out more about what enrolling means, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
+The Company Portal is an app that you install on your Android device to give you access to your company or school apps, email, and network.  Before you can get access, you have to install the Company Portal app, and then  use the app to enroll your device in Microsoft Intune. To find out more about what enrolling means, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
 
 1.  Tap **Home** &gt; **Play Store**.
 

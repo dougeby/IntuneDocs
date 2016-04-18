@@ -13,7 +13,7 @@ robots: noindex
 
 # Unenroll your device from Intune
 
-When you unenroll your device from Intune, your device will not longer be able to access company resources and will no longer be managed by Intune.
+When you unenroll your iOS device from Intune, your device will not longer be able to access company resources and will no longer be managed by Intune.
 
 To unenroll your device from Intune, use these steps or watch this [video](http://aka.ms/kfz8j1):
 

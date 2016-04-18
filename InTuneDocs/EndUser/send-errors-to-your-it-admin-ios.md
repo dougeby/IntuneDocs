@@ -12,7 +12,7 @@ author: staciebarker
 
 # Send errors to your IT admin
 
-You can send information about errors that you get while using the Company Portal app to help your IT admin troubleshoot the problem. You can send error information in different ways:
+If you get errors on your iOS device while using the Company Portal app, you can send information to help your IT admin troubleshoot the problem. You can send error information in different ways:
 
 -   On error alert messages: tap **Report**.
 

@@ -12,7 +12,7 @@ author: Staciebarker
 
 # What can your IT administrator see when you enroll your device in Intune?
 
-When  you enroll your device in Intune, you are giving your IT administrator permission to manage your device to help protect the company information on the device.
+When  you enroll your Windows device in Intune, you are giving your IT administrator permission to manage your device to help protect the company information on the device.
 
 **What IT cannot see**
 
