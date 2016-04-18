@@ -141,7 +141,3 @@ To find the OS version to use for the **Minimum OS required**, and **Maximum OS 
 - Windows 8.1 PCs return a version of **6.3**.    If the OS version rule is set to Windows 8.1 for Windows, then the device is reported as noncompliant even if the device has Windows 8.1.
 - Windows PCs with Windows 10 operating system, the version should be set as "10.0"+ the OS Build number returned by the winver command. For example, it could be something like 10.0.10586.
 > ![CA_Win10OSVersion](./media/ca_win10-os-version.png)
-
->[!div class="step-by-step"]
-[<< Create a compliance policy ](create-a-device-compliance-policy-in-microsoft-intune.md)
-[Deploy a compliance policy >>](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
