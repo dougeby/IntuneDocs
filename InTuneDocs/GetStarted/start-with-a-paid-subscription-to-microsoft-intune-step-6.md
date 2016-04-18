@@ -90,8 +90,8 @@ The Skype app is now available to install on mobile devices from the company por
 
 
 ## Next steps
-Congratulations! You have just completed step 6 of the *Get started with a paid subscription to Microsoft Intune* guide.
+Congratulations! You have just completed step 6 of the *Start with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]
 
->[&larr; **Organize users and devices**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Customize Company Portal** &rarr;](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
+>[&larr; **Organize users and devices**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Customize Company Portal** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
