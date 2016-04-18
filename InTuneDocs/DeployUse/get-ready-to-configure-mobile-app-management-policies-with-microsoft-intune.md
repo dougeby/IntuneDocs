@@ -11,7 +11,7 @@ author: karthikaraman
 ---
 # Get ready to configure mobile app management policies with Microsoft Intune
 This topic describes what you need to do before you can create mobile app management policies (MAM) in the Azure portal.
-If you are currently using the **Intune admin console** to manage your devices, you can [create a MAM policy](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) that supports apps for devices enrolled in Intune using the Intune admin console.
+If you are currently using the **Intune admin console** to manage your devices, you can create a MAM policy that supports apps for devices enrolled in Intune using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 >[!IMPORTANT]
 > You may not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies.
 
@@ -27,8 +27,14 @@ Click the app to see the supported scenarios, platforms and whether or not the a
 **Before** you can configure MAM policies, you'll need the following:
 
 -   **A subscription to [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)**].    End-users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps with MAM policy.
+
 -   The **mobile device management authority** must be set to either **Intune** or **Configuration manager**, depending on whether you are using just Intune or Configuration Manager integrated with Intune to manage your devices. If you are using O365 built-in mobile device management, you must purchase an Intune subscription and [set the mobile device management authority to Intune](Set-mobile-device-management-authority-and-configure-Microsoft-Intune.md).
--   **An Office 365 (O365) subscription which includes and Azure Active Directory (Azure AD)** to create users. Azure AD authenticates the user when the end-user launches the app and enters their work credentials.
+-   An **Office 365 (O365)** subscription that is required for the following:
+  - To apply MAM policies to apps with multi-identity support.
+  - To create  SharePoint Online and Exchange Online work accounts. Exchange On-premises and SharePoint on-premises are not supported.
+
+
+- **Azure Active Directory (Azure AD)** to create users. Azure AD authenticates the user when the end-user launches the app and enters their work credentials.
 
     > [!NOTE]
     > If you are setting up users using the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console, be aware that the MAM policy configuration is moving to the Azure portal going forward and to use this portal, you need to set up Azure AD user groups using the Office 365 portal.
