@@ -1,5 +1,5 @@
 ---
-title: Get started with a paid subscription to Microsoft Intune
+title: Start with a paid subscription to Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -10,7 +10,7 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 author: Staciebarker
 ---
 
-# Get started with a paid subscription to Microsoft Intune
+# Start with a paid subscription to Microsoft Intune
 This walkthrough leads you through the steps of setting up paid subscription of [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] to quickly and easily begin managing mobile devices and Windows PCs in use by your organization. You can follow each step in order or just skip ahead if a step is not applicable to your specific environment or business needs.
 
 >[!NOTE]
@@ -57,7 +57,8 @@ Ready to get started? You'll need the following items when starting to use your 
 
 ### A device with a Silverlight-enabled web browser
 You will need this to access the Intune administration console where you'll manage devices, apps, and policies. You will also need a web browser to access the web-based company portal when not accessing the company portal app from a mobile device. To make things easier, you can use the “privacy mode” setting on the same browser that you use for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] administration (for example: in Internet Explorer, you can click **Tools** &gt; **InPrivate Browsing**).
->[TIP!]
+
+>[!TIP]
 >Because of this requirement, the Microsoft Edge browser is not supported for accessing the Intune administration console.
 
 <!-- you get one of these when you sign up for Intune so they'll already have this. It's also discussed in the steps (and this is definitely not a trial!)
@@ -82,4 +83,4 @@ If you'll manage iOS or Windows Phone devices with Intune, you'll need certifica
 It's time to get started with your paid subscription!
 
 >[!div class="step-by-step"]
-[**Sign in to Intune** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1)
+[**Sign in to Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-1)

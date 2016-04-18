@@ -13,7 +13,7 @@ robots: noindex
 
 # Enroll your iOS device in Intune
 
-If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. Enrolling your devices allows your IT department to manage those work or school resources and keep them secure, while giving you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+If your company or school uses Microsoft Intune, you can enroll your iOS device to get access to company email, files, and other resources. Enrolling your devices allows your IT department to manage those work or school resources and keep them secure, while giving you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 If you're trying to enroll a Mac OS X device, see [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
 

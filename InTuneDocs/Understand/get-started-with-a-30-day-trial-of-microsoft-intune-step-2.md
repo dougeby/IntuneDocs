@@ -65,7 +65,4 @@ Congratulations! You have just completed step 2 of the *Get started with a 30-da
 
 >[!div class="step-by-step"]
 
->[<< **Sign up for a trial**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step1.md)     [**Create groups** >>](.\get-started-with-a-30-day-trial-of-microsoft-intune-step3.md)  
-
-### See also
-[Get started with a 30 day trial of Microsoft Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
+>[&larr; **Sign up for a trial**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Create groups** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  

@@ -12,9 +12,7 @@ author: staciebarker
 
 # What happens if you unenroll your device from Intune?
 
-For instructions on how to unenroll, see [Unenroll your device from Intune by using the Company Portal app](unenroll-your-device-from-intune-android.md).
-
-When you unenroll your device from Intune:
+When you unenroll your Android device from Intune:
 
 -   Your device won’t appear in the Company Portal anymore.
 
@@ -25,6 +23,8 @@ When you unenroll your device from Intune:
 -   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.
 
 If your device is set up only to get company email, and you unenroll your device, your device won't appear in the Company Portal anymore. 
+
+For instructions on how to unenroll, see [Unenroll your device from Intune by using the Company Portal app](unenroll-your-device-from-intune-android.md).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

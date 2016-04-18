@@ -23,8 +23,8 @@ When you subscribe to a cloud-based service from Microsoft, your instance of tha
 > For more information about using your custom domain with a cloud-based service from Microsoft, see [internet domain management](http://technet.microsoft.com/library/hh969248.aspx).
 
 ## Next steps
-Congratulations! You have just completed step 2 of the *Get started with a paid subscription to Microsoft Intune* guide.
+Congratulations! You have just completed step 2 of the *Start with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]
 
->[<< **Sign in to Intune**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**Add users to Intune** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)  
+>[&larr; **Sign in to Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**Add users to Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-3.md)  

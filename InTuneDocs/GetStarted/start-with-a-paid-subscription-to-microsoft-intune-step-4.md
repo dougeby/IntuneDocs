@@ -31,7 +31,7 @@ You use the **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** to manually a
 3.  The user account will now be added to the Microsoft Intune user group which grants the user permissions to use the service and enroll their devices into management.
 
 ## Next steps
-Congratulations! You have just completed step 4 of the *Get started with a paid subscription to Microsoft Intune* guide.
+Congratulations! You have just completed step 4 of the *Start with a paid subscription to Microsoft Intune* guide.
 >[!div class="step-by-step"]
 
->[<< **Sync users to Intune**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organize users and devices** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+>[&larr; **Sync users to Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organize users and devices** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  

@@ -93,16 +93,15 @@ Examples:
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
-> Note
-> Use the same *name* that you assigned to the custom profile
-### 3.	CUSTOM URI FOR MODE (OPTIONAL)
+### CUSTOM URI FOR MODE (OPTIONAL)
 - Data Type = String
-- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode - Use the same NAME given to the profile
+- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode 
 
-Remarks:
-- Possible values: *GLOBAL*, *WHITELIST*, *BLACKLIST*
-- Defaults to *GLOBAL* if no PackageList is provided (backward compatibility with system-wide profiles)
-- Defaults to *WHITELIST* if a PackageList is provided
+> Notes
+> - Use the same *name* that you assigned to the custom profile
+> - Possible values: *GLOBAL*, *WHITELIST*, *BLACKLIST*
+> - Defaults to *GLOBAL* if no PackageList is provided (backward compatibility with system-wide profiles)
+> - Defaults to *WHITELIST* if a PackageList is provided
 
 
 ### See also

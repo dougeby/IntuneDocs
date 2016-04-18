@@ -12,7 +12,7 @@ author: Staciebarker
 
 # What happens if you reset your device using the Company Portal?
 
-When you use the Company Portal or Company Portal website to reset your personal device, some apps and settings on your device may be deleted, including some of your personal data. What happens on each device depends on the type of device you have and how you are using the device, as described in the following table. For instructions on how to reset your lost or stolen device, see [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-windows.md).
+When you use the Company Portal or Company Portal website to reset your Windows device, some apps and settings on your device may be deleted, including some of your personal data. What happens on each device depends on the type of device you have and how you are using the device, as described in the following table. For instructions on how to reset your lost or stolen device, see [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-windows.md).
 
 |Device configuration and management|Device type|
 |---------------------------------------|---------------|

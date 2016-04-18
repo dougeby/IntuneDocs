@@ -53,7 +53,7 @@ You can customize your company portal with your company logo, company name, them
 After you save your changes, you can use the links provided at the bottom of the **Company Portal** page of the administration console to view the company portal website. These links cannot be changed. When a user signs in, these links display your subscriptions in the company portal.
 
 ## Next steps
-Congratulations! You have just completed step 7 of the *Get started with a paid subscription to Microsoft Intune* guide.
+Congratulations! You have just completed step 7 of the *Start with a paid subscription to Microsoft Intune* guide.
 >[!div class="step-by-step"]
 
->[<< **Create policies and apps**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Enroll computers** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
+>[&larr; **Create policies and apps**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Enroll devices** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  

@@ -57,8 +57,8 @@ You can find the newly created group in the **Groups** list, in the **Groups** w
 
 
 ## Next steps
-Congratulations! You have just completed step 5 of the *Get started with a paid subscription to Microsoft Intune* guide.
+Congratulations! You have just completed step 5 of the *Start with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]
 
->[<< **Manage Intune licenses**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Create policies and apps** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
+>[&larr; **Manage Intune licenses**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Create policies and apps** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  

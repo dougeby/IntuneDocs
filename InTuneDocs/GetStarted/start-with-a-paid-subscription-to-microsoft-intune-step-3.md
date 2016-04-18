@@ -30,8 +30,8 @@ After you've added users to your Intune subscription, we recommend that you gran
 
 
 ## Next steps
-Congratulations! You have just completed step 3 of the *Get started with a paid subscription to Microsoft Intune* guide.
+Congratulations! You have just completed step 3 of the *Start with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]
 
->[<< **Domain settings**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Manage Intune licenses** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)  
+>[&larr; **Domain settings**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Manage Intune licenses** &rarr;](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)  

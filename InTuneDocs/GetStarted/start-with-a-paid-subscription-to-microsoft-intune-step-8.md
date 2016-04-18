@@ -47,8 +47,8 @@ To learn more about mobile device management using [!INCLUDE[wit_nextref](../inc
 
 
 ## Next steps
-Congratulations! You have just completed the last step of the *Get started with a paid subscription to Microsoft Intune* guide. Now that your initial configuration is complete, you can consider enabling additional MDM functionality.
+Congratulations! You have just completed the last step of the *Start with a paid subscription to Microsoft Intune* guide. Now that your initial configuration is complete, you can consider enabling additional MDM functionality.
 
 >[!div class="step-by-step"]
 
->[<< **Enroll computers in Intune**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Post-configuration tasks** >>](.\post-configuration-tasks.md)  
+>[&larr; **Enroll devices**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Post-configuration tasks** &rarr;](.\post-configuration-tasks.md)  

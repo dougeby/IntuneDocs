@@ -13,7 +13,7 @@ robots: noindex
 
 # What happens if you install the Company Portal app and enroll your device in Intune?
 
-You start by installing the Company Portal app, and then use the app to enroll your device in Intune. Once your device is enrolled, you  can use the Company Portal app to:
+When you install the Company Portal app and enroll your iOS or Mac OS X device in Intune, you can use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files
 
