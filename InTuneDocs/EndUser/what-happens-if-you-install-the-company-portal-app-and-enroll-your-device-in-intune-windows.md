@@ -88,7 +88,7 @@ When you install the Company Portal app and then use the app to enroll your Wind
 
 -   Reset your phone to factory settings if it is lost or stolen
 
-For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-windows-device-in-intune.md). To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md). To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
 When you add your Windows Phone device, you are giving your IT administrator permission to access the device. They can do things like:
 
@@ -114,7 +114,7 @@ When you add your Windows Phone device, you are giving your IT administrator per
 
     -   Send any company app inventory updates.
 
-## <a name="BKMK_what_happens_vista"></a>Windows 7 and Vista device
+## <a name="BKMK_what_happens_vista"></a>Windows 7 and Vista
 When you install the Company Portal app and then use the app to enroll your Windows 7 or Vista device in Intune, you can then use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files

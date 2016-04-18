@@ -1,5 +1,5 @@
 ---
-title: Windows Phone configuration policy settings in Microsoft Intune
+title: Windows Phone 8.1 policy settings in Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 author: robstackmsft
 ---
-# Windows Phone configuration policy settings in Microsoft Intune
+# Windows Phone 8.1 policy settings in Microsoft Intune
 
 ## General configuration settings
 

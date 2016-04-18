@@ -13,7 +13,7 @@ author: staciebarker
 
 # Encrypt your device
 
-If your company or organization requires you to encrypt your device before you can access company files, email, or data, follow these steps to encrypt your device:
+If your company or organization requires you to encrypt your Android device before you can access company files, email, or data, follow these steps to encrypt your device:
 
 1.  Ensure that your device is connected to the charger.
 

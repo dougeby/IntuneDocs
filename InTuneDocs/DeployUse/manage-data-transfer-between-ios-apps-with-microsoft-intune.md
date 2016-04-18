@@ -17,7 +17,7 @@ Protecting your company data includes making sure that file transfers are restri
 
 -   You can also deploy and manage apps through the **MDM channel**.  This requires that the devices are enrolled in the MDM solution. These can be **policy-managed**  apps or other managed  apps.
 
-The **Open in management** feature for iOS devices can limit file transfers between apps that are deployed through the **MDM channel**. Open in management restrictions are set in configuration settings and deployed using your MDM software.  When the user installs the managed app, the restrictions you set are applied.
+The **Open in management** feature for iOS devices can limit file transfers between apps that are deployed through the **MDM channel**. Open in management restrictions are set in configuration settings and deployed using your MDM software.  When the user installs the deployed app, the restrictions you set are applied.
 ##  Using MAM with iOS apps
 Mobile app management (MAM) policies can be used with the iOS **Open in management** feature to protect company data in the following ways:
 
@@ -26,7 +26,7 @@ Mobile app management (MAM) policies can be used with the iOS **Open in manageme
 -   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with MAM policies and other managed iOS apps deployed through Intune is allowed  automatically. To allow data transfer between apps with MAM policies, enable the **Allow app to transfer data to only managed apps** setting. You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune.   
 
 -   **Devices managed by a third party MDM:** You can restrict data transfer to only managed apps by using the iOS **Open in management** feature.
-To make sure that apps that you deploy using your third party MDM solution uses the MAM policies you have configured, you must configure the user UPN setting as described in the [Configure user UPN setting](#bkmk_userUPN) walkthrough.  When apps are deployed with the user UPN setting, the MAM policies are applied to the app when the end-user signs-in using their work account.
+To make sure that apps that you deploy using your third party MDM solution, uses the MAM policies you have configured in Intune, you must configure the user UPN setting as described in the [Configure user UPN setting](#bkmk_userUPN) walkthrough.  When apps are deployed with the user UPN setting, the MAM policies are applied to the app when the end-user signs-in using their work account.
 
 > [!IMPORTANT]
 > The user UPN setting is only required for apps deployed to devices managed by a third-party MDM.  For Intune managed devices, this setting is not required.
@@ -40,7 +40,7 @@ This configuration is required for devices that are managed by a third-party MDM
 
 2.  Deploy the apps and the email profile that you want managed through your third-party MDM solution using the setting described in steps 3 and 4.
 
-3.  Deploy the app with the following app configuration settings: key=IntuneMAMUPN, Value=&lt;username@company.com&gt; [example: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+3.  Deploy the app with the following app configuration settings: key=IntuneMAMUPN, Value=<username@company.com> [example: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
 4.  Deploy the Open in management policy to enrolled devices.
 

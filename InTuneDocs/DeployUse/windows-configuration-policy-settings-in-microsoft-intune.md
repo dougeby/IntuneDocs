@@ -1,5 +1,5 @@
 ---
-title: Windows configuration policy settings in Microsoft Intune
+title: Windows policy settings in Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -9,7 +9,7 @@ ms.topic: article
 ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 author: robstackmsft
 ---
-# Windows configuration policy settings in Microsoft Intune
+# Windows policy settings in Microsoft Intune
 Use the Microsoft Intune **Windows general configuration policy** to configure settings for enrolled Windows 8, and Windows 8.1 devices:
 
 ## Security settings

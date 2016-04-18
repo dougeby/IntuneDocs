@@ -11,7 +11,7 @@ author: karthikaraman
 ---
 # Compliance policy settings for Windows devices in Microsoft Intune
 
-This policy settings described in this topic applies to devices running Windows operating system. The specific Windows version supported is called out in the sections below.
+The policy settings described in this topic applies to devices running Windows operating system. The specific Windows version supported is called out in the sections below.
 
 If you are looking for information about other platforms, select one of the following:
 > [!div class="op_single_selector"]
@@ -36,7 +36,7 @@ The settings listed in this section are supported on Windows Phone 8.1 and later
 - **Required password type:** Specify whether users must create
 an **Alphanumeric**, or a **Numeric** password.
 
-  For devices that run Windows and are secured with a Microsoft Account, the compliance policy will fail to evaluate correctly if Minimum password length is greater than 8 characters or if Minimum number of character sets is more than 2.
+  For devices that run Windows and accessed with a Microsoft account, the compliance policy will fail to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.
 
 - **Minimum number of character sets:** If **Required password type** is set to
 **Alphanumeric**, this setting specifies the minimum number of
@@ -46,7 +46,7 @@ character sets that the password must contain. The four character sets are:
   -   Symbols
   -   Numbers
 
-  Setting a higher number for this setting will require users to create more complex passwords. For devices that run Windows and are secured with a Microsoft Account, the compliance policy will fail to evaluate correctly if Minimum password length is greater than 8 characters or if Minimum number of character sets is more than 2.
+  Setting a higher number for this setting will require users to create passwords that are more complex. For devices that run Windows and accessed with a Microsoft account, the compliance policy will fail to evaluate correctly if minimum password length is greater than eight characters or if minimum number of character sets is more than two.
 - **Minutes of inactivity before password is required:**  Specifies the idle time before the user must re-enter their password.
 
 - **Password expiration (days):** Select the number of days before the user’s password expires
@@ -57,7 +57,7 @@ character sets that the password must contain. The four character sets are:
 
 - **Prevent reuse of previous passwords:** If **Remember password history** is selected, specify the
   number of previously used passwords that cannot be re-used.
-- **Require a password when the device returns from an idle state** This setting should be used together with the in the **Minutes of inactivity before password is required** setting. The end-users are prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.
+- **Require a password when the device returns from an idle state:** This setting should be used together with the in the **Minutes of inactivity before password is required** setting. The end-users are prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.
 
   **This setting only applies to Windows 10 Mobile devices.**
 ### Encryption
@@ -65,7 +65,7 @@ character sets that the password must contain. The four character sets are:
   encrypted in order to connect to resources.
 
 ## Device health settings
-- **Require devices to be reported as healthy** You can set a rule to require that **Windows 10 Mobile** devices must be reported as healthy in new or existing Compliance Policies.  If this setting is enabled, Windows 10 devices are evaluated via the Health Attestation Service (HAS) for  the following data points:
+- **Require devices to be reported as healthy:** You can set a rule to require that **Windows 10 Mobile** devices must be reported as healthy in new or existing Compliance Policies.  If this setting is enabled, Windows 10 devices are evaluated via the Health Attestation Service (HAS) for  the following data points:
   -  **BitLocker is enabled:** When Bitlocker is on, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer
   -  **Code integrity is enabled:** Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.
   - **Secure boot is enabled:** When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
@@ -88,19 +88,19 @@ The settings listed in this section are supported on Windows PCs.
 
   Specify the minimum number of digits or characters that the user’s password must contain.
 
-  For devices that are secured with a Microsoft Account, the compliance policy will fail to evaluate correctly if **Minimum password length** is greater than 8 characters or if **Minimum number of character sets** is more than 2 characters.
+  For devices that are accessed with a Microsoft Account, the compliance policy will fail to evaluate correctly if **Minimum password length** is greater than 8 characters or if **Minimum number of character sets** is more than two characters.
 
 - **Required password type:** - Supported on Windows RT,  Windows RT 8.1, and Windows 8.1
 
   Specify whether users must create an **Alphanumeric**, or a **Numeric** password.
 
-- **Minimum number of character sets:**  - Supported on Windows RT, Windows RT 8.1, and Windows 8.1<If **Required password type** is set to **Alphanumeric**, this setting specifies the minimum number of character sets that the password must contain.The four character sets are:
+- **Minimum number of character sets:**  - Supported on Windows RT, Windows RT 8.1, and Windows 8.1<If **Required password type** is set to **Alphanumeric**, this setting specifies the minimum number of character sets that the password must contain. The four character sets are:
   -   Lowercase letters
   -   Uppercase letters
   -   Symbols
-  -   Numbers :     Setting a higher number for this setting will require users to create more complex passwords.
+  -   Numbers:     Setting a higher number for this setting will require users to create passwords that are more complex.
 
-  For devices that are secured with a Microsoft Account, the compliance policy will fail to evaluate correctly if **Minimum password length** is greater than 8 characters or if **Minimum number of character sets** is more than 2 characters.
+  For devices that are accessed with a Microsoft Account, the compliance policy will fail to evaluate correctly if **Minimum password length** is greater than 8 characters or if **Minimum number of character sets** is more than 2 characters.
 - **Minutes of inactivity before password is required:** - Supported on Windows RT, Windows RT 8.1, and Windows 8.1
 
   Specify the idle time before the user must re-enter their password.
@@ -122,7 +122,7 @@ You can set a rule to require that Windows 10 devices must be reported as health
   -  **BitLocker is enabled:** When Bitlocker is on, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer
   -  **Code integrity is enabled:** Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.
   - **Secure boot is enabled:** When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
-  - **Early-launch antimalware is enabled:** Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.
+  - **Early-launch antimalware is enabled:** Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third party drivers initialize.
 
   For information on how the HAS service works, see [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 

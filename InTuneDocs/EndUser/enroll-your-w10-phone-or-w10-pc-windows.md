@@ -12,25 +12,25 @@ author: Staciebarker
 
 # Enroll your Windows 10 Mobile or Windows 10 desktop device in Intune
 
-To learn about what happens when you enroll, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md).
+If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. Enrolling your devices enables your organization to keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 To enroll your Windows 10 Mobile or Windows 10 desktop device:
 
 1.  Go to Windows  **Settings** and tap **Accounts**.
 
-    ![](./media/W10-enroll-1-settings-accounts.png)
+    ![settings-accounts](./media/W10-enroll-1-settings-accounts.png)
 
 2.  Tap **Your account**.
 
-    ![](./media/W10-enroll-2-accounts-your-account.png)
+    ![your-account](./media/W10-enroll-2-accounts-your-account.png)
 
 3.  Tap **Add a work or school account**.
 
-    ![](./media/W10-enroll-3-add-work-school-acct.png)
+    ![add-work-school-account](./media/W10-enroll-3-add-work-school-acct.png)
 
 4.  Sign in with your work or school credentials.
 
-    ![](./media/W10-enroll-4-sign-in.png)
+    ![sign-in](./media/W10-enroll-4-sign-in.png)
 
 If you followed the steps above, but still can't access your work or school email, files, and other data, go back to **Accounts** and tap **Work access**.
 
@@ -51,6 +51,6 @@ We also recommend that you install the Company Portal app, which lets you easily
 
 
 ### See also
-[Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)
+[Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)</br>
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
 

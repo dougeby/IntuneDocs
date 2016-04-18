@@ -45,15 +45,15 @@ To simplify connections to wireless networks, you can manage these connections u
 
 ## Virtual private network
 
-Secure remote access to corporate resources often includes using a defined VPN connection type from the mobile device that manages user account credentials to authenticate the VPN connection. You may have a vendor-specific VPN application for your mobile devices, or it may be supported by your existing enterprise mobility management solution. To simplify connections to VPNs after the migration, you can manage these connections using Intune [VPN profiles](/intune/deployuse/vpn-connections-in-microsoft-intune). Depending on integration support, managing VPN connections with Intune may or may not be an option with certain VPN platforms.
+Secure remote access to corporate resources often includes using a defined VPN connection type from the mobile device that manages user account credentials to authenticate the VPN connection. You may have a vendor-specific VPN application for your mobile devices, or it may be supported by your existing enterprise mobility management solution. To simplify connections to VPNs after the migration, you can manage these connections using Intune [VPN profiles](/intune/deploy-use/vpn-connections-in-microsoft-intune). Depending on integration support, managing VPN connections with Intune may or may not be an option with certain VPN platforms.
 
 ## Certificates
 
-Most enterprise mobility management solutions natively support digital certificates, either self-signed or issued from a third party Certificate Authorities (CAs), to authenticate mobile devices to networks connections or specific network resources. To simplify managing digital certificates after the migration, you can manage certificates using Intune [certificate profiles](/intune/deployuse/secure-resource-access-with-certificate-profiles). Intune provides a uniform, centralized method for managing certificates, including how they are created, issued, and renewed.
+Most enterprise mobility management solutions natively support digital certificates, either self-signed or issued from a third party Certificate Authorities (CAs), to authenticate mobile devices to networks connections or specific network resources. To simplify managing digital certificates after the migration, you can manage certificates using Intune [certificate profiles](/intune/deploy-use/secure-resource-access-with-certificate-profiles). Intune provides a uniform, centralized method for managing certificates, including how they are created, issued, and renewed.
 
 ## Conditional access
 
-[Conditional access in Intune](/intune/deployuse/restrict-access-to-email-and-o365-services-with-microsoft-intune) controls whether or not users (or user groups) can access corporate resources such as SharePoint Online, Exchange Online, and Exchange on-premises.  If a device isn’t enrolled in Intune and compliant with your compliance policies, the user won’t have access to these resources from that device.  Additionally, if you’re blocking Exchange ActiveSync (EAS) connectivity at the network layer for externally connecting devices (such as mobile devices on a wireless carrier’s network), you’ll need to allow EAS access for Intune’s conditional access policies to work correctly. Make sure you’ve reviewed the considerations in the controlling access to corporate resources section before enabling conditional access policies.
+[Conditional access in Intune](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) controls whether or not users (or user groups) can access corporate resources such as SharePoint Online, Exchange Online, and Exchange on-premises.  If a device isn’t enrolled in Intune and compliant with your compliance policies, the user won’t have access to these resources from that device.  Additionally, if you’re blocking Exchange ActiveSync (EAS) connectivity at the network layer for externally connecting devices (such as mobile devices on a wireless carrier’s network), you’ll need to allow EAS access for Intune’s conditional access policies to work correctly. Make sure you’ve reviewed the considerations in the controlling access to corporate resources section before enabling conditional access policies.
 
 ## Application delivery & software
 
@@ -65,10 +65,10 @@ Intune MAM policies allow you modify the functionality of native MAM-enabled app
 
 ## App wrapping
 
-The Microsoft Intune App Wrapping Tool for **iOS** and [Android](/intune/deployuse/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) allows you to modify and restrict the behavior of your in-house developed apps without modifying the code of the app itself. When your in-house iOS and Android apps are “wrapped”, you can provide data protection controls such as restrict cut, copy, and paste. 
+The Microsoft Intune App Wrapping Tool for **iOS** and [Android](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) allows you to modify and restrict the behavior of your in-house developed apps without modifying the code of the app itself. When your in-house iOS and Android apps are “wrapped”, you can provide data protection controls such as restrict cut, copy, and paste. 
 
 >[!IMPORTANT]
->When these apps have been built using the SDK for your current enterprise mobility management solution or wrapped using your existing solution’s wrapper, Intune will not support that functionality.  You’ll need to recompile these apps with the [Intune App SDK](https://msdn.microsoft.com/library/mt627769.aspx) or the use the [Intune App Wrapper Tool](/intune/deployuse/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) as appropriate. 
+>When these apps have been built using the SDK for your current enterprise mobility management solution or wrapped using your existing solution’s wrapper, Intune will not support that functionality.  You’ll need to recompile these apps with the [Intune App SDK](https://msdn.microsoft.com/library/mt627769.aspx) or the use the [Intune App Wrapper Tool](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) as appropriate. 
 
 ## Terms and conditions
 

@@ -1,6 +1,6 @@
-# [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
-# [Get Started](/intune/getstarted/what-to-know-before-you-start-microsoft-intune)
-# [Plan and Design](/intune/plandesign/ways-to-do-enterprise-mobility)
+# [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
+# [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+<!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -16,7 +16,7 @@
 ##### [iOS Setup Assistant enrollment](ios-setup-assistant-enrollment.md)
 ##### [iOS direct enrollment](ios-direct-enrollment.md)
 ##### [iOS DEP enrollment](ios-device-enrollment-program.md)
-#### [Enroll with device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune )
+#### [Enroll with device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 #### [Tag devices with IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 ### [MDM with Exchange ActiveSync](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
 #### [Exchange connector requirements](intune-exchange-connector-requirements.md)
@@ -47,6 +47,8 @@
 #### [Wi-Fi connections in Intune](wi-fi-connections-in-microsoft-intune.md)
 #### [VPN connections in Intune](vpn-connections-in-microsoft-intune.md)
 #### [Email profiles in Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
+### [Use groups to manage users & devices](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+### [Understand your devices with inventory](understand-your-devices-with-inventory-in-microsoft-intune.md)
 ### [Common PC management tasks](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
 ## [Protect devices](protect-your-devices-with-microsoft-intune.md)
@@ -62,13 +64,14 @@
 ## [Retire devices](retire-devices-from-microsoft-intune-management.md)
 
 ## [Add and deploy apps](add-apps-for-mobile-devices-in-microsoft-intune.md)
+###[Plan for app deployment](plan-for-app-deployment-in-microsoft-intune.md)
 ### [Add apps for mobile devices](add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Add apps for Windows PCs](add-apps-for-windows-pcs-in-microsoft-intune.md)
 ### [Deploy apps](deploy-apps-in-microsoft-intune.md)
 ### [Monitor apps](monitor-apps-in-microsoft-intune.md)
 ### [Manage volume-purchased apps](manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [Manage volume-purchased iOS apps](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-#### [Manage volume-purchased Windows apps](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+#### [Manage volume-purchased iOS apps](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
+#### [Manage volume-purchased Windows apps](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## [Configure apps](update-apps-using-microsoft-intune.md)
 ### [Update apps ](update-apps-using-microsoft-intune.md)
@@ -86,7 +89,7 @@
 
 ### [Restrict access to email & O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 #### [Exchange Online & new Exchange Online dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
-#### [Exchange on-premises & legacy Exchange Online dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune)
+#### [Exchange on-premises & legacy Exchange Online dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
@@ -96,9 +99,9 @@
 #### [Create and deploy MAM policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM policies for Android](android-mam-policy-settings.md)
 #### [MAM policies for iOS](ios-mam-policy-settings.md)
-#### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune)
-#### [MAM with iOS Open In](microsoft-intune-mobile-app-management-policies-and-ios-open-in)
-#### [End user experience](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies)
+#### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
+#### [End user experience](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 ### [Prepare line of business apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [Wrap iOS apps](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
@@ -111,7 +114,8 @@
 ### [Retire apps ](retire-apps-using-microsoft-intune.md)
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-
+## [Migrate to Intune](migrate-to-intune.md)
+## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 ## [What's new](whats-new-in-microsoft-intune.md)
 
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)

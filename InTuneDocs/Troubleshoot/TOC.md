@@ -1,7 +1,7 @@
-# [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
-# [Get Started](/intune/getstarted/what-to-know-before-you-start-microsoft-intune)
-# [Plan and Design](/intune/plandesign/ways-to-do-enterprise-mobility)
-# [Deploy and Use](/intune/deployuse/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
+# [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+<!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
+# [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 
 # [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
 ## [How to get support](how-to-get-support-for-microsoft-intune.md)

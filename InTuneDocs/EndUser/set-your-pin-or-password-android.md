@@ -12,7 +12,7 @@ author: staciebarker
 
 # Set your PIN or password
 
-Your IT administrator may require you to set a PIN or password on your device when you're using Intune to access your work or school data. If you see a message prompting you to set a PIN or password, use the following steps.
+Your IT administrator may require you to set a PIN or password on your Android device when you're using Intune to access your work or school data. If you see a message prompting you to set a PIN or password, use the following steps.
 
 1.  Tap  **Settings** &gt; **Security** &gt; **Screen Lock** &gt; **Password**.
 

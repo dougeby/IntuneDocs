@@ -12,7 +12,7 @@ author: Staciebarker
 
 # Device doesn't have the required minimum operating system version
 
-Your device doesn’t meet the minimum operating system version required by your IT department. Before updating your mobile device, check the current operating system version by tapping **Settings** &gt; **about**, and then tap **Settings** &gt; **phone update** &gt; **check for updates** to update your device.
+Your Windows device doesn’t meet the minimum operating system version required by your IT department. Before updating your mobile device, check the current operating system version by tapping **Settings** &gt; **about**, and then tap **Settings** &gt; **phone update** &gt; **check for updates** to update your device.
 
 Before updating your computer, search for **operating system** and follow the prompts to identify your current operating system version. To update computers with operating systems earlier than Windows 10, search for **Windows updates**.
 

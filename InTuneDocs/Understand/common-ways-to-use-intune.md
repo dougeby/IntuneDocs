@@ -11,99 +11,45 @@ author: jeffgilb
 ---
 # Common ways to use Intune
 
-Before diving into implementation it is important to gain clarity on your company’s enterprise mobility business goals and the scenarios that will best support those goals. Below are short introductions to the 6 most common scenarios that rely on Intune, accompanied with links to more information on how to plan and deploy each of them. This is not intended to be a complete set of scenarios or implementation approaches.
+Before diving into implementation tasks it is important to align your company’s enterprise mobility stakeholders around the business goals.  This is important whether you are brand new to enterprise mobility or migrating from another product.  The needs around Enterprise Mobility are dynamically evolving and Microsoft’s approaches to addressing these needs can sometimes be different from other solutions in the market.  The best way to align around business goals is to express what you want to accomplish in terms of the scenarios you want to enable for your employees, partners and IT.  Below are short introductions to the 6 most common scenarios that rely on Intune, accompanied with links to more information on how to plan and deploy each of them.
 
 >[!NOTE] Do you want to know how Microsoft IT uses Intune to enable Microsoft employees to access corporate resources on their mobile devices while also keeping corporate data protected? [Read this technical case study](https://www.microsoft.com/itshowcase/Article/Content/588) to see in detail how Microsoft IT uses Intune and other services to manage identity, devices, and apps, and data.  
 
 ## Securing your on-premises email and data so it can be safely accessed by mobile devices
-Most enterprise mobility strategies begin with a plan to enable secure access to email for mobile devices out on the internet. Many organizations still have some corporate data and application servers, like Microsoft Exchange, hosted behind a firewall on their corporate network. Intune and the enterprise mobility suite provide a uniquely integrated conditional access solution that ensures no devices or apps will be able to access Exchange email unless they meet your company’s compliance requirements (enrolled with Intune, supported OS version, device pin, etc.), all without deploying a new machine to your DMZ! Such a solution for email can be extended to other mobile apps that require secure access to data behind a corporate firewall.
+Most enterprise mobility strategies begin with a plan to enable secure access to email for employees with mobile devices out on the internet. Many organizations still have on-premises data and application servers, like Microsoft Exchange, hosted on their corporate network. Intune and the enterprise mobility suite provide a uniquely integrated conditional access solution for Exchange Server that ensures no mobile apps will be able to access email until the device is enrolled with Intune, all without deploying another gateway machine to the edge of your corporate network!
 
-Learn more about how to plan and deploy Intune to help secure on-premises email and data.
+Beyond email, Intune supports enabling access to mobile apps that require secure access to on-premises data, like a line of business app server.  This is typically done using Intune-managed certificates for access control combined with a standard VPN gateway or proxy in the perimeter such as Microsoft’s Azure AD Application Proxy.  In these cases, the only way to access the corporate data is to enroll the device into management.  Once enrolled, the management system ensures that devices accessing corporate data are compliant with your policies.  Additionally, Intune’s App Wrapping Tool can be used to help contain the accessed data within your line of business app, so it can’t pass corporate data to consumer apps or services.
+
+<!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
 ## Securing your Office 365 email and data so it can be safely accessed by mobile devices
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
-Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede.
-Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+Protecting corporate data in Office 365 (email, documents, instant messages, contacts) could not be easier for you or more seamless for your users. Intune and the Enterprise Mobility Suite provide a uniquely integrated conditional access solution that ensures no users, apps or devices will be able to access Office 365 data unless they meet your company’s compliance requirements (performed multi-factor auth, enrolled with Intune, using managed app, supported OS version, device pin, low user risk profile, etc.). The Office mobile apps in their respective app stores are ready to go with data containment policies you can configure via Intune, enabling you to prevent data from being shared with apps (e.g. native email app) and storage locations (e.g. Dropbox) that aren’t managed by IT.  All of these functionality is built into Office 365 and EMS.  You do not have to deploy additional infrastructure to get this value.
 
-Learn more about how to plan and deploy Intune to help secure Office 365 email and data.
+A common Office 365 deployment practice is to require devices to enroll into management if they need to be fully provisioned with corporate apps/certs/Wi-Fi/VPN configurations, which is often the case for corporate owned devices.  However, if the user simply needs to access corporate email and documents, which is often the case for personally owned devices, then the user is required to use the Office mobile apps (which you have applied data containment policies to) and skip enrolling the device altogether!  Either way, the Office 365 data will be secured by policies you’ve defined.
+
+<!-- Learn more about how to plan and deploy Intune to help secure Office 365 email and data. -->
 
 ## Offer a “bring your own device” (BYOD) program to all employees
-BYOD continues to grow in popularity among organizations as a means to reduce hardware expenditures and increase user choice. Just about everyone has a personal phone these days so why put another one in their pocket? The main challenge has always been to convince employees to enroll their personal device into management, as they are fearful of what their IT department will be able to see and do with their device. Intune offers users a choice: if you just want to access Office 365 email and files you don’t need to enroll the device but must use the Office apps (with data loss prevention policies applied), however, if you want to access other corporate resources (VPN, WiFi, etc.) then you must enroll.  Either way the corporate data will be secured by policies defined by the IT department.
+BYOD continues to grow in popularity among organizations as a means to reduce hardware expenditures or increase mobile productivity choices for employees. Just about everyone has a personal phone these days so why put another one in their pocket? The main challenge has always been to convince employees to enroll their personal device into management, as they are fearful of what their IT department will be able to see and do with their device.  
 
-Learn more about how to plan and deploy Intune to support BYOD.
+When device enrollment is not a viable option, Intune offers an alternative BYOD approach of simply managing the apps that contain corporate data.  Intune protects the corporate data even if the app in question accesses both corporate and personal data as is the case for Office mobile apps.  As an administrator, you can require users to access Office 365 from the Office mobile apps and configure the apps with policies that keep the data protected (encrypted, pin protected, etc.).  These policies prevent data loss to unmanaged apps and storage locations – inside or outside of those apps.  For example, the policies will prevent a user from copying text from a corporate email profile into a consumer email profile even if both profiles are configured within Outlook Mobile.  Similar configurations can be deployed for other services and applications required by your BYOD users.
+
+<!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 
 ## Issue corporate owned phones to your information workers
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
-Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
-Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+Most information workers are mobile these days, making productivity on mobile devices an imperative to be competitive.  These employees need seamless access to all corporate apps and data, at any time, wherever they are.  You need to ensure corporate data is secure and administrative costs are low.  
+Intune offers bulk provisioning and management solutions that are integrated with the major corporate device management platforms on the market today, including the Apple Device Enrollment Program and the Samsung KNOX mobile security platform.  Centralized authoring of device configurations with Intune makes provisioning of corporate devices something that can be highly automated.  
 
-Learn more about how to plan and deploy Intune to support corporate owned devices.
+Picture this: hand employee unopened iPhone box, employee powers on and is walked through a corporate branded setup flow where they must authenticate themselves, iPhone is seamlessly configured with security policies (encrypt hard drive, device pin, etc.) and email/Wi-Fi/VPN/certificate profiles and a baseline set of apps, employee launches Intune’s “Company Portal” app to access optional corporate apps available to them.
+
+<!-- Learn more about how to plan and deploy Intune to support corporate owned devices. -->
 
 ## Issue limited-use shared tablets to your task workers
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
-Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
-Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
+Task Workers are increasingly making use of mobile technologies.  For example, shared tablets are now commonplace for retail store employees.  Whether used to process a sale or instantly check inventory, tablets help create great customer interactions.  Simplicity of the user experience is critical in this case.  For this reason, tablets are usually handed to employees in a limited-use mode, such that a single line of business app is the only thing the employee can interact with.  Intune enables you to bulk provision, secure, and centrally manage these shared tablets that can be configured to run in this limited-use mode.
 
-Learn more about how to plan and deploy Intune to support shared tablets.
+<!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## Enable your employees to securely access Office 365 from an unmanaged public kiosk
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.
-Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem.
-In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+Sometimes your employees need to use devices, apps, or browsers that you can’t manage, such as the public computers at trade shows and hotel lobbies.  Should you allow your employees to access corporate email from them?  With Intune and the enterprise mobility suite, you have choices.  The answer can simply be “no” by limiting email access to devices that are managed by your organization.  Alternatively you can choose to allow limited access to these untrusted computers, by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).  This will ensure your strongly authenticated employee will not accidentally leave corporate data on the untrusted computer.
 
-Learn more about how to plan and deploy Intune to support kiosks.
-
-
-<!--
-As the use of personal devices in the workplace expands, IT is challenged with managing a data environment where devices contain a mix of work-related and personal data. In addition, it must grant the right level of access per device, user, and user activity, and handle the use of multiple accounts and identities on a device. This article describes several common ways to use Microsoft Intune following the basic premise that the more IT control required, the more *as appropriate* access for employees.
-
-## Unknown device
-The following table describes common usage scenarios for IT management of unknown devices.
-
-|Scenario feature|More information|
-|---------------|----------------|
-|Example|Kiosk at a hotel|
-|Type of user|Information worker|
-|What you can access|Employees can access corporate data only within a protected browser session|
-|What you can't access|Employees can't download anything
-|What's managed|Browswer session|
-|Key features|Web conditional access, web session protection, and multi-factor authentication|
-
-## Personal devices
-The following table describes common usage scenarios for IT management of personal devices.
-
-|Scenario feature|More information|
-|---------------|----------------|
-|Example|Personal iPad or home PC|
-|Type of user|Information worker|
-|What you can access|Employees can use mobile productivity apps controlled by IT to prevent company data leakage.|
-|What you can't access|Employees can't access the corporate network, sync data, or use private apps.|
-|What's managed|Managed productivity apps and a managed web browser.|
-|Key features|Desktop and mobile application management conditional access, mobile application management without device enrollment, Azure Rights Management Service, Azure Remote App, and multi-factor authentication|
-
-## Managed devices
-The following table describes common usage scenarios for IT management of managed devices.
-
-|Scenario feature|More information|
-|---------------|----------------|
-|Example|Company provided phone|
-|Type of user|Information worker|
-|What you can access|Employees can access all mobile apps, access the corporate network, and sync corporate documents.|
-|What you can't access|Employees get full access per IT policies.|
-|What's managed|All mobile devices, Windows PCs, and apps used by employees.|
-|Key features|Desktop and mobile application management conditional access, mobile application management without device enrollment, mobile application management with device enrollment, Azure Rights Management Service, Azure Remote App, and multi-factor authentication.|
-
-## Shared devices
-The following table describes common usage scenarios for IT management of shared devices.
-
-|Scenario feature|More information|
-|---------------|----------------|
-|Example|Mobile retail point of sale tablet|
-|Type of user|Task worker|
-|What you can access|Employees use the specific shared apps needed for their task.|
-|What you can't access|Anything else.|
-|What's managed|A locked down device with specific apps.|
-|Key features|Windows 10 provision profile, DEP/Configurator, kiosk mode.|
--->
+<!-- Learn more about how to plan and deploy Intune to support kiosks. -->

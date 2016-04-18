@@ -18,7 +18,7 @@ Use the policy settings listed in this topic to help you configure settings for 
 Use the Microsoft **general configuration policy** for Windows 10 to configure general settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices:
 
 
-## Password
+### Password
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -34,13 +34,13 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure g
 |**Allow picture password and PIN**|Lets you use simple gestures on a picture, or a simple PIN to login.|Yes|No|
 |**Require a password when the device returns from an idle state**|If enabled, the user must enter a password to unlock the device from an idle state.|No|Yes|
 
-## Encryption
+### Encryption
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
 |**Require encryption on mobile device**|Enables encryption on targeted devices.|No|Yes|
 
-## System
+### System
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -50,7 +50,7 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure g
 |**Allow diagnostic and usage data to be sent to Microsoft**|Determines the amount of diagnostic and usage data that is sent to Microsoft from devices.<br>**No** - No data is sent to Microsoft<br>**Basic** - The device sends only limited information to Microsoft<br>**Enhanced** - Sends enhanced diagnostic data to Microsoft<br>**Full (recommended)** - Sends the same data as **Enhanced**, plus additional data about the device state|Yes|Yes|
 
 
-## Account and synchronization
+### Account and synchronization
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -58,7 +58,7 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure g
 |**Allow adding non-Microsoft accounts manually**|Lets the user add email accounts to the device that are not associated with a Microsoft account.|Yes|Yes|
 |**Allow settings synchronization for Microsoft accounts**|Allow device and app settings associated with a Microsoft account to synchronize between devices.|Yes|Yes|
 
-## Email settings
+### Email settings
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -66,7 +66,7 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure g
 
 
 
-## Microsoft Edge
+### Microsoft Edge
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -90,7 +90,7 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure g
 
 
 
-## Cellular
+### Cellular
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -98,7 +98,7 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure g
 |**Allow VPN over cellular**|Controls whether the device can access VPN connections when connected to a cellular network.|Yes|Yes|
 |**Allow VPN roaming over cellular**|Controls whether the device can access VPN connections when roaming on a cellular network.|Yes|Yes|
 
-## Hardware
+### Hardware
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -118,7 +118,7 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure g
 |**Allow USB connection**|Controls whether devices can access external storage devices through a USB connection.|Yes|Yes|
 |**Allow AntiTheft mode**|Configure whether Windows Antitheft mode is enabled.|Yes|Yes|
 
-## Features
+### Features
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |----------------|----------------------|---------------------|
@@ -127,7 +127,7 @@ Use the Microsoft **general configuration policy** for Windows 10 to configure g
 |**Allow Cortana**|Enable or disable the Cortana voice assistant.|Yes|Yes|
 |**Allow action center notifications**|Enable or disable action center notifications on the device lock screen.|No|Yes|
 
-## Defender
+### Defender
 
 |Setting name|Details|Windows 10 Desktop|Windows 10 Mobile|
 |-|-|
@@ -186,7 +186,7 @@ For a list of OMA-URI settings that you can configure on enrolled Windows 10 dev
     |**Value**|Specify the value to associate with the OMA-URI you specified previously.|
 
 
-### Custom URI settings for Windows 10 devices
+## Custom URI settings for Windows 10 devices
 This topic lists the settings that you can configure for Windows 10 and Windows 10 Mobile devices in a Microsoft Intune **Windows 10 Custom Policy**.
 
 For information about how to create and deploy these policies, see [Windows 10 custom policy settings in Microsoft Intune](Windows-10-custom-policy-settings-in-microsoft-intune.md).

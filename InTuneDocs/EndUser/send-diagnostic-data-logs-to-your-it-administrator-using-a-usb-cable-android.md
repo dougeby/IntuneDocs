@@ -12,11 +12,11 @@ author: staciebarker
 
 # Send diagnostic data logs to your IT administrator using a USB cable
 
-If you're using a computer rather than a mobile device, and you want to send data logs to have your IT admin figure out and fix your issue, use these steps:
+If you're using a computer rather than a mobile device, and you want to send data logs from your mobile device to have your IT admin figure out and fix your issue, use these steps:
 
 1.  Before you start, make sure that you have your IT admin's email address. It is typically listed on your Company Portal website or in your Company Portal app.
 
-2.  Use a USB cable to connect your device to a computer.
+2.  Use a USB cable to connect your Android device to a computer.
 
 3.  On the computer, look for a directory that has the name of your phone. In that directory, find &lt;Android Device&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
 

@@ -33,14 +33,14 @@ To use .PFX Certificate profiles, in addition to the Enterprise Certification Au
 
 -  **Certification Authority** (CA): An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For instructions on how to set up a Certification Authority, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).
     If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
- 
+
  -  **NDES Server** (SCEP only): On a server that runs Windows Server 2012 R2 or later, you must setup up the Network Device Enrollment Service (NDES). Intune does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.|
 -  **Computer that can communicate with Certification Authority** (.PFX only):Alternatively, use the Certification Authority computer itself.
 -  **Microsoft Intune Certificate Connector**: You use the Intune admin console to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. For .PFX Certificate profiles, install the Certificate Connector on the computer that communicates with the Certification Authority.
 -  **Web Application Proxy Server** (optional): You can use a server that runs Windows Server 2012 R2 or later as a Web Application Proxy (WAP) server. This configuration:
     -  Allows devices to receive certificates using an Internet connection.
     -  Is a security recommendation when devices connect through the Internet to receive and renew certificates.
-    
+
  > [!NOTE]           
 > -    The server that hosts WAP [must install an update](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) that enables support for the long URLs that are used by the Network Device Enrollment Service. This update is included with the [December 2014 update rollup](http://support.microsoft.com/kb/3013769), or individually from [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  Also, the server that hosts WAP must have a SSL certificate that matches the name being published to external clients as well as trust the SSL certificate that is used on the NDES server. These certificates enable the WAP server to terminate the SSL connection from clients, and create a new SSL connection to the NDES server.
@@ -65,11 +65,12 @@ To use .PFX Certificate profiles, in addition to the Enterprise Certification Au
 ## <a name="BKMK_ConfigureInfrastructure"></a>Configure your infrastructure
 Before you can configure certificate profiles you must complete the following tasks, which require knowledge of Windows Server 2012 R2 and Active Directory Certificate Services (ADCS):
 
-**Task 1** - Configure certificate templates on the certification authority 
-**Task 2**, for SCEP profile only:
-                     - Configure prerequisites on the NDES server 
-**Task 3**, for SCEP profile only:
-                     - Configure NDES for use with Intune
+**Task 1** - Configure certificate templates on the certification authority
+
+**Task 2**, for SCEP profile only - Configure prerequisites on the NDES server
+
+**Task 3**, for SCEP profile only - Configure NDES for use with Intune
+
 **Task 4** - Enable, install, and configure the Intune Certificate Connector
 
 ### <a name="BKMK_ConfigOnPremTask1"></a>Task 1 - Configure certificate templates on the certification authority
@@ -289,7 +290,7 @@ Download, install, and configure the Certificate Connector on the NDES Server
 
     > [!TIP]
     > If you close the wizard before launching the Certificate Connector UI, you can reopen it by running the following command:
-    > 
+    >
     > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
 5.  In the **Certificate Connector** UI:
@@ -310,4 +311,3 @@ To validate that the service is running, open a browser and enter the following 
 
 ## Next steps
 You are now ready to configure certificate profiles, as described in [Configure certificate profiles](configure-intune-certificate-profiles.md).
-  
