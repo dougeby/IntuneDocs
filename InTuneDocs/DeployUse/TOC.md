@@ -92,6 +92,7 @@
 #### [Exchange on-premises & legacy Exchange Online dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+#### [Restrict email access: examples](restrict-email-access-example-scenarios.md)
 
 ### [Protect app data](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -107,7 +108,7 @@
 #### [Wrap iOS apps](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Wrap Android apps](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Use the SDK when you write an app](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-#### [Microsoft apps you can manage with Intune](microsoft-apps-you-can-manage-with-intune.md)
+
 
 ## [Retire apps and data](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 ### [Use full or selective wipe](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
