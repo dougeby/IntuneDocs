@@ -109,29 +109,28 @@ layout: HubPage
 
             <section class="journey-step-elements content">
               <ul class="row">
-                <li class="column-third">
-                  <a href="./get-started/get-started-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Get started</h3>
-                    <p>Building on the 30-day trial guide, this topic walks you through Azure Active Directory synchronization, domain and DNS considerations, and other Intune customizations.</p>
-                    <h4>Read</h4>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./get-started/what-to-know-before-you-start-microsoft-intune">
-                    <h3>What to know before you start</h3>
-                    <p>Quickly familiarize yourself with the features and capabilities of Intune.</p>
-                    <h4>Read</h4>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./get-started/rollout-phases-for-microsoft-intune-deployment">
-                    <h3>Pilot deployment information and templates</h3>
-                    <p>Best practices and templates to help you get started with Intune deployments.</p>
-                    <h4>Read</h4>
-                  </a>
-                </li>
-              </ul>
-
+              <li class="column-third">
+                <a href="./get-started/what-to-know-before-you-start-microsoft-intune">
+                  <h3>What to know before you start</h3>
+                  <p>Quickly familiarize yourself with the features and capabilities of Intune.</p>
+                  <h4>Read</h4>
+                </a>
+              </li>
+              <li class="column-third">
+                <a href="./get-started/start-with-a-paid-subscription-to-microsoft-intune">
+                  <h3>Get started</h3>
+                  <p>Building on the 30-day trial guide, this topic walks you through Azure Active Directory synchronization, domain and DNS considerations, and other Intune customizations.</p>
+                  <h4>Read</h4>
+                </a>
+              </li>
+              <li class="column-third">
+                <a href="./get-started/rollout-phases-for-microsoft-intune-deployment">
+                  <h3>Pilot deployment information and templates</h3>
+                  <p>Best practices and templates to help you get started with Intune deployments.</p>
+                  <h4>Read</h4>
+                </a>
+              </li>
+            </ul>
           </li>
 
 
