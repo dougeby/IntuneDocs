@@ -11,7 +11,7 @@ author: Staciebarker
 ---
 
 # Encrypt your Windows device
-To protect your company or school data, your IT administrator might require you to encrypt your device. If you see a message indicating that you must encrypt, your IT administrator should tell you which steps below to use to encrypt your device.
+To protect your company or school data, your IT administrator might require you to encrypt your Windows device. If you see a message indicating that you must encrypt, your IT administrator should tell you which steps below to use to encrypt your device.
 
 You can encrypt your device either by adding a Microsoft account or by enabling BitLocker.
 

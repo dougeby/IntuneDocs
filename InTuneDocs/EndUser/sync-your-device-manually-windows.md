@@ -11,7 +11,7 @@ author: Staciebarker
 ---
 
 # <a name="BKMK_win10m_wp81_sync_manually"></a>Sync your device manually
-If your app installation is taking too long, use the following instructions to manually sync your device, which might help to speed up the installation. Use the instructions that match the type of device you have:
+If your app installation is taking too long, use the following instructions to manually sync your Windows device, which might help to speed up the installation. Use the instructions that match the type of device you have:
 
 * [Windows 10 Mobile](#BKMK_win10mobile_sync)
 * [Windows 10 Desktop](#BKMK_win10_desktop_sync)

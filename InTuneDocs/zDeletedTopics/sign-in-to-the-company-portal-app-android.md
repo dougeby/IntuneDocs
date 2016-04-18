@@ -12,7 +12,7 @@ author: staciebarker
 
 # Sign in to the Company Portal app
 
-After you install the Company Portal app, you'll need to sign in to the app to enroll your device in Intune. Once you enroll, you can  sign in to the Company Portal anytime to download company apps and do other tasks. For more about what you can do, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
+After you install the Company Portal app, you'll need to sign in to the app to enroll your Android device in Intune. Once you enroll, you can  sign in to the Company Portal anytime to download company apps and do other tasks. For more about what you can do, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
 
 1.  Tap **Company Portal** in your list of apps.
 

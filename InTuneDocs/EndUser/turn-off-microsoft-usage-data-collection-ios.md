@@ -15,7 +15,7 @@ robots: noindex
 
 In order to improve its products and services, Microsoft automatically collects anonymous data about the reliability and performance of the Company Portal app and how it is used. 
 
-You can turn off the collection of that data by using the **Usage Data** setting in the Company Portal app. IT administrators have no control over the collection of the data, and they cannot change your selection for the setting.
+You can turn off the collection of that data on your iOS device by using the **Usage Data** setting in the Company Portal app. IT administrators have no control over the collection of the data, and they cannot change your selection for the setting.
 
 ### See also
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

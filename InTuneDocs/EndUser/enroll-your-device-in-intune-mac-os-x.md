@@ -13,7 +13,7 @@ robots: noindex
 
 # Enroll your Mac OS X device in Intune
 
-Enrolling your device in Intune enables you to access the company’s network, your work email and work files, and lets you get company apps. For more about what happens when you enroll your device, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Enrolling your Mac OS X device in Intune enables you to access the company’s network, your work email and work files, and lets you get company apps. For more about what happens when you enroll your device, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 If you're trying to enroll an iOS device, see [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md).
 

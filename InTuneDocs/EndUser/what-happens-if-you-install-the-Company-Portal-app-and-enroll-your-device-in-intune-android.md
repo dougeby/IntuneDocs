@@ -13,49 +13,15 @@ author: staciebarker
 
 # What happens if you install the Company Portal app and enroll your device in Intune?
 
-You start by installing the Company Portal app, and then use the app to enroll your device in Intune. Once your device is enrolled, you  can use the Company Portal app to:
+When you install the Company Portal app and enroll your Android device in Intune, you can use the Company Portal app to:
 
--   Access the company network, email, and work files
+-   Access the company’s network, and your email and work files
 
--   Get company apps from the Company Portal app or Company Portal website
+-   Get company apps from the Company Portal
 
 -   Automatically configure your company email account
 
 -   Reset your phone to factory settings if it is lost or stolen
-
-When  you enroll your device in Intune, you are giving your IT administrator permission to manage your device to help protect the company information on the device.
-
-**What IT cannot see**
-
--   Call and Web history
-
--	Location
-
--   Email and text messages
-
--   Contacts
-
--	Passwords
-
--   Calendar
-
--   Camera roll
-
-**What IT can see**
-
--   Model
-
--   Serial number
-
--   Operating system
-
--   App names
-
--   Owner
-
--   Device name
-
--   Manufacturer
 
 When you add your Android device, you are giving your IT administrator permission to access the device. They can do things like:
 

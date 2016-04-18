@@ -13,7 +13,7 @@ robots: noindex
 
 # You see errors while trying to enroll your iOS device in Intune
 
-The following table lists errors that you might see while enrolling your devices in Intune. Share this link with your It administrator. These items also apply to System Center 2012 R2 Configuration Manager.
+The following table lists errors that you might see while enrolling your iOS device in Intune. Share this link with your It administrator. These items also apply to System Center 2012 R2 Configuration Manager.
 
 |Error message|Issue|What to tell your IT administrator|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
