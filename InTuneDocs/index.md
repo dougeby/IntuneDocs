@@ -56,7 +56,7 @@ layout: HubPage
           <li class="journey-step">
 
             <header class="journey-step-header expander row">
-              <a href="./understand-explore/introduction-to-microsoft-intune">
+              <a href="">
                 <div class="title column-third">
                   <span class="step-number">1</span>
                   <p>Understand &amp; Explore</p>
@@ -179,7 +179,7 @@ layout: HubPage
 
           <li class="journey-step">
             <header class="journey-step-header expander row">
-              <a href="./deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
+              <a href="">
                 <div class="title column-third">
                   <span class="step-number">3</span>
                   <p>Deploy &amp; use</p>
@@ -218,7 +218,7 @@ layout: HubPage
 
           <li class="journey-step">
             <header class="journey-step-header expander row">
-              <a href="./troubleshoot/how-to-get-support-for-microsoft-intune">
+              <a href="">
                 <div class="title column-third">
                   <span class="step-number">4</span>
                   <p>Troubleshoot</p>

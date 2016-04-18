@@ -56,4 +56,4 @@ After you save your changes, you can use the links provided at the bottom of the
 Congratulations! You have just completed step 7 of the *Get started with a paid subscription to Microsoft Intune* guide.
 >[!div class="step-by-step"]
 
->[<< **Create policies and apps**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Enroll computers** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
+>[&larr; **Create policies and apps**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Enroll devices** &rarr;](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)  

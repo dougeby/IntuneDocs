@@ -47,7 +47,7 @@ Before you get started with Intune, you'll need the following:
 It's time to get started with your 30-day trial subscription!
 
 >[!div class="step-by-step"]
-[**Sign up for Intune** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
+[**Sign up for Intune** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 
 ### See also
-[Get started with a paid subscription to Microsoft Intune](/Intune/DeployUse/get-started-with-a-paid-subscription-to-microsoft-intune)
+[Get started with a paid subscription to Microsoft Intune](/intune/deploy-use/start-with-a-paid-subscription-to-microsoft-intune)

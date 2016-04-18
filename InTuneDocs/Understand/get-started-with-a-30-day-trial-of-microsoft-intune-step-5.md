@@ -9,7 +9,7 @@ ms.topic: get-started-article
 ms.assetid:
 author: Staciebarker
 ---
-# Step 6: Enroll trial mobile devices and install an app
+# Step 5: Enroll trial mobile devices and install an app
 To set up mobile device management with Intune, you must  first set the mobile device management authority,  enable management for device platforms, and enroll your devices with the Company Portal app. You can then deploy the Microsoft Skype application that you published.
 
 ## Prepare the service for device management
@@ -26,16 +26,16 @@ To set up mobile device management with Intune, you must  first set the mobile d
 
     -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](/Intune/DeployUse/set-up-windows-phone-management-with-microsoft-intune).
 
-## Enroll test devices3
+## Enroll test devices
 
-    -   **iOS and Mac OS X** - Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
+  -   **iOS and Mac OS X** - Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
 
-    -    **Android** - Install the **Intune Company Portal** app from Microsoft Corporation, available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune user credentials added above.
+  -    **Android** - Install the **Intune Company Portal** app from Microsoft Corporation, available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune user credentials added above.
 
 
-    -   **Windows Phone 8.1** - Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
+  -   **Windows Phone 8.1** - Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
 
-    -   **Windows Phone 8.0** - Users click **system settings** &gt; **company apps**, and sign in with Intune user credentials added above. The Company Portal app is deployed to your phone.
+  -   **Windows Phone 8.0** - Users click **system settings** &gt; **company apps**, and sign in with Intune user credentials added above. The Company Portal app is deployed to your phone.
 
     If prompted for a **Server address**, type “manage.microsoft.com”.
 
@@ -46,11 +46,8 @@ Open the Company Portal on the mobile device, choose **Apps**, and then install 
 To learn more about mobile device management using Intune, see [Get ready to enroll devices in Microsoft Intune](/Intune/GetStarted/get-ready-to-enroll-devices-in-microsoft-intune).
 
 ## Next steps
-Congratulations! You have just completed step 6 of the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
+Congratulations! You have just completed step 5 of the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
 
 >[!div class="step-by-step"]
 
->[<< **Enroll PCs**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step5.md)     [**Options and extras** >>](.\get-started-with-a-30-day-trial-of-microsoft-intune-step7.md)  
-
-### See also
-[Get started with a 30 day trial of Microsoft Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
+>[&larr; **Create Policies**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**Options and extras** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  

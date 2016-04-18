@@ -51,4 +51,4 @@ Congratulations! You have just completed the last step of the *Get started with 
 
 >[!div class="step-by-step"]
 
->[<< **Enroll computers in Intune**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Post-configuration tasks** >>](.\post-configuration-tasks.md)  
+>[&larr; **Enroll devices**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Post-configuration tasks** &rarr;](.\post-configuration-tasks.md)  
