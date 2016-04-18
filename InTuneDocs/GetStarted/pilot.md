@@ -93,7 +93,6 @@ Here are some  challenges that you may encounter in the **Pilot** phase.
     **Mitigation:** Define qualitative and quantitative success criteria specific to your organization so that a clear decision can be made based on facts to move to the next phase of deployment.
 
 ## Next steps
-[Enterprise rollout](enterprise-rollout.md)
+>[!div class="step-by-step"]
 
-### See also
-[Rollout phases for Microsoft Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
+>[&larr; **Proof of concept**](proof-of-concept.md)     [**Enterprise rollout** &rarr;](enterprise-rollout.md)
