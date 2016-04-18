@@ -6,16 +6,17 @@ layout: HubPage
 <article id="main">
     <section id="hero-content">
       <h1>Microsoft Intune Documentation</h1>
-      <h2>Microsoft Intune provides mobile device management, mobile application management, and PC management capabilities from the cloud. Intune is a key component of <a href="https://docsmsftstage.azurewebsites.net/en-us/EM">Microsoft’s Enterprise Mobility</a> strategy, which enables users to be productive on the devices and applications they love, while helping organizations ensure their corporate assets are secure.</h2>
-      <h2>The documentation on this site provides everything you need to deploy and manage Intune from the cloud. If you’re a System Center Configuration Manager customer interested in Intune, you can learn more about hybrid mobile device management in the <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx">Configuration Manager documentation library</a>.</p></h2>
-     <!--
+      <h2>Intune is a key component of <a href="https://docsmsftstage.azurewebsites.net/en-us/EM">Microsoft’s Enterprise Mobility</a> strategy, which enables users to be productive on the devices and applications they love, while helping organizations ensure their corporate assets are secure.</h2>
+<!--
+     <h2>The documentation on this site provides everything you need to deploy and manage Intune from the cloud. If you’re a System Center Configuration Manager customer interested in Intune, you can learn more about hybrid mobile device management in the <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx">Configuration Manager documentation library</a>.</p></h2>
+
      <ol id="actions" class="action-list">
         <li><a href="" class="button button-bordered">Learn More</a></li>
       </ol>
-      -->
+-->
       <h3>New to Intune? <a href="http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/">Visit our product site &rarr;</a></h3>
     </section>
-
+<!--
     <aside class="alert section-border">
       <p>Ready to get hands-on?</p>
       <ol class="action-list">
@@ -29,7 +30,7 @@ layout: HubPage
         <li><a href="https://blogs.technet.microsoft.com/microsoftintune/" class="button-bordered button-translucent">Read it!</a></li>
       </ol>
     </aside>
-
+-->
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
       <div class="features row">
@@ -41,7 +42,7 @@ layout: HubPage
         </ul>
         <ul class="column column-half">
           <li><a href="./deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Overview of device and app lifecycles</a></li>
-          <li><a href="./deploy-use/configure-data-loss-prevention-app-policies-with-microsoft-intune">Configure data loss prevention app policies with Microsoft Intune</a></li>
+          <li><a href="./deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Configure data loss prevention app policies</a></li>
           <li><a  href="./plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">What to tell your users</a></li>
         </ul>
       </div>
@@ -250,15 +251,12 @@ layout: HubPage
                 </li>
               </ul>
           </li>
-
-
-
-            <a href="" class="see-more">See More</a>
+            <!-- <a href="" class="see-more">See More</a> -->
           </section>
         </ul>
       </section>
     </div>
-
+<!--
     <div class="section-border">
       <section class="resources container">
         <h2 class="section-heading"><span class="icon icon-options"></span> Developer Reference</h2>
@@ -272,7 +270,7 @@ layout: HubPage
         </div>
       </section>
     </div>
-
+-->
     <aside class="alert alert-social">
       <p>Keep up with news from the Intune team</p>
       <ol class="action-list">
