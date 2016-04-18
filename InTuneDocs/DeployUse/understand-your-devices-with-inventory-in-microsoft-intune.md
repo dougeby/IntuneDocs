@@ -15,39 +15,39 @@ Microsoft Intune lets you view the inventory of enrolled devices and Windows PCs
 ## What's collected from enrolled devices?
 To view the inventory collected by mobile devices, run the [Mobile Device Inventory Reports](understand-microsoft-intune-operations-by-using-reports.md). Intune collects the following inventory from enrolled devices:
 
-|Property|Exchange ActiveSync|iOS|Mac OS X|Android|Windows RT and Windows 8.1|Windows Phone 8 and Windows Phone 8.1|Windows 10|Details|
-|------------|-----------------------|-------|------------|-----------|------------------------------|-----------------------------------------|--------------|---------|
-|**Name**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**Operating System**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**Manufacturer**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**Model**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**Management Channel**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**AAD Registered**|Yes|Yes|No|Yes|Yes|Yes|Yes||-|
-|**Compliant**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**EAS Activated**|Yes|Yes|No|Yes|Yes|Yes|Yes|-|
-|**EAS Activation ID**|Yes|Yes|No|Yes|Yes|Yes|Yes|-|
-|**EAS Activation Time**|Yes|Yes|No|Yes|Yes|Yes|Yes|-|
-|**Management State**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**Email Address**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**Exchange ActiveSync ID**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**Jailbroken or Rooted**|No|Yes|No|Yes|No|No|No|-|
-|**Unique Device ID**|No|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**Serial number**|No|Yes|Yes|Yes|Yes|No|Yes|-|
-|**Total Storage Space**|No|Yes|Yes|No|Yes|No|Yes|-|
-|**Free Storage Space**|No|Yes|Yes|No|Yes|No|Yes|-|
-|**Phone Number**|No|Yes|No|Yes|No|Yes|No|Phone number for BYOD phone displays &#42; + last 4 digits. Full number displayed for org-owned phone.|
-|**IMEI**|Yes|Yes|No|Yes|No|Yes|No|-|
-|**MEID**|No|Yes|No|No|No|No|No|Mobile Equipment Identifier|
-|**Wi-Fi MAC**|No|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**Subscriber Carrier**|No|Yes|No|Yes|No|No|No|-|
-|**Cellular Technology**|No|Yes|No|Yes|No|No|No|-|
-|**Supervised**|No|Yes|No|No|No|No|No|-|
-|**Activation Lock State**|No|Yes|No|No|No|No|No|-|
-|**Enrolled Date**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**Last Updated**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
-|**Ethernet MAC**|No|No|Yes|No|No|No|No|-|
-|**Activation Lock Enabled**|No|Yes|No|No|No|No|No|-|
-|**Encryption Enabled**|Yes|Yes|Yes|Yes|Yes|Yes|Yes|-|
+|Property|Collected by|
+|------------|-----------------------|
+|**Name**|All devices|
+|**Operating System**|All devices|
+|**Manufacturer**|All devices|
+|**Model**|All devices|
+|**Management Channel**|All devices|
+|**AAD Registered**|All devices except Mac OS X|
+|**Compliant**|All devices|
+|**EAS Activated**|All devices except Mac OS X|
+|**EAS Activation ID**|All devices except Mac OS X|
+|**EAS Activation Time**|All devices except Mac OS X|
+|**Management State**|All devices|
+|**Email Address**|All devices|
+|**Exchange ActiveSync ID**|All devices|
+|**Jailbroken or Rooted**|iOS and Android devices only|
+|**Unique Device ID**|All devices except Exchange ActiveSync|
+|**Serial number**|iOS, Mac OS X, Android, Windows 8.1, Windows 10 devices|
+|**Total Storage Space**|iOS, Mac OS X, Windows 8.1, Windows 10 devices|
+|**Free Storage Space**|iOS, Mac OS X, Windows 8.1, Windows 10 devices|
+|**Phone Number**<br>Phone number for BYOD phone displays &#42; + last 4 digits. Full number displayed for org-owned phone.|iOS, Android, and Windows Phone devices|
+|**IMEI**|Exchange ActiveSync, iOS, Android, and Windows Phone devices|
+|**MEID**<br>Mobile Equipment Identifier|iOS devices only|
+|**Wi-Fi MAC**|All devices except Exchange ActiveSync|
+|**Subscriber Carrier**|iOS and Android devices only|
+|**Cellular Technology**|iOS and Android devices only|
+|**Supervised**|iOS devices only|
+|**Activation Lock State**|iOS devices only|
+|**Enrolled Date**|All devices|
+|**Last Updated**|All devices|
+|**Ethernet MAC**|Mac OS X devices only|
+|**Activation Lock Enabled**|iOS devices only|
+|**Encryption Enabled**|All devices|
 
 ## What's collected from Windows PCs
 > [!IMPORTANT]
