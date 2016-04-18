@@ -36,79 +36,73 @@ The Windows Firewall policy lets you create and deploy settings that control the
 
 2.  Configure and deploy a **Windows Firewall Settings** policy. You can use recommended settings or customize the settings. If you need more information about how to create and deploy policies, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
-    The tables after this procedure show the values you can configure in the policy and also the recommended values that will be used if you don’t customize the policy.
+    The following section lists the values you can configure in the policy and also the default values that will be used if you don’t customize the policy.
 
-You can view the deployed Windows Firewall policy on the **All Policies** page of the **Policy** workspace.
+After you deploy a Windows Firewall policy, you can view its status on the **All Policies** page of the **Policy** workspace.
 
 ## Policy settings for Windows Firewall
 
 ### Turn on Windows Firewall
 
-|Setting name|Details|
-|------------------|--------------------|
-|**Domain profile**|Enables the Windows Firewall on managed computers while they are connected to domain networks, for example while at the workplace.<br /><br />Recommended value: **Yes**|
-|**Private profile**|Enables the Windows Firewall on managed computers while they are connected to trusted networks, for example while on a home network.<br /><br />Recommended value: **Yes**|
-|**Public profile**|Enables the Windows Firewall on managed computers while they are connected to untrusted networks in public places, for example while at a coffee shop.<br /><br />Recommended value: **Yes**<br /><br />Required operating system: Windows Vista or later versions|
+These policy settings enable the Windows Firewall on managed computers connected to a domain (for example, at the workplace), a private (trusted) network (such as a home network), or an untrusted, public network (such as a coffee shop). The default value for each of these settings is **Yes**, which is the most secure value. 
+
+
 
 ### Block all incoming connections, including those in the list of allowed programs
+
+These policy settings configure Windows Firewall to block incoming network traffic when the managed computer is connected to a domain (for example, at the workplace), a private (trusted) network (such as a home network), or an untrusted, public network (such as a coffee shop). The default value for each of these settings is **Yes**, which is the most secure value. 
+
 > [!IMPORTANT]
 > If your environment includes managed computers that are running Windows Vista with no service packs installed, you must either install the update associated with [article 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in the Microsoft Knowledge Base or else disable the **Block all incoming connections** policy settings in policies deployed to those computers.
 
-|Setting name|Details|
-|------------------|--------------------|
-|**Domain profile**|Blocks all incoming connections while the computers are connected to domain networks, such as at a workplace. This includes those connections in the list of exceptions.<br /><br />Recommended value: **No**|
-|**Private profile**|Blocks all incoming connections while the computers are connected to trusted networks, such as a home network. This includes those connections in the list of exceptions.<br /><br />Recommended value: **No**|
-|**Public profile**|Blocks all incoming connections while the computers are connected to untrusted networks at public places, such as at a coffee shop. This includes those connections in the list of exceptions.<br /><br />Recommended value: **No**<br /><br />Required operating system: Windows Vista or later versions|
-
 ### Notify the user when Windows Firewall blocks a new program
 
-|Setting name|Details|
-|------------------|--------------------|
-|**Domain profile**|Notifies users when Windows Firewall blocks a new program while the computers are connected to domain networks, such as at a workplace.<br /><br />Recommended value: **Yes**|
-|**Private profile**|Notifies users when Windows Firewall blocks a new program while the computers are connected to trusted networks, such as a home network.<br /><br />Recommended value: **Yes**|
-|**Public profile**|Notifies users when Windows Firewall blocks a new program while the computers are connected to untrusted networks at public places, such as a coffee shop.<br /><br />Recommended value: **Yes**<br /><br />Required operating system: Windows Vista or later versions|
+These policy settings configure whether Windows Firewall notifies the PC's user when it blocks incoming network traffic when the managed computer is connected to a domain (for example, at the workplace), a private (trusted) network (such as a home network), or an untrusted, public network (such as a coffee shop). The default value for each of these settings is **Yes**.
+
 
 ### Predefined Exceptions
 
+After you have configured the basic values above, you can configure exceptions which allow certain network traffic through the firewall regardless of the values configured above. By default, none of these settings are configured.
+
 |Setting name|Details|
 |------------------|--------------------|
-|**BranchCache - Content Retrieval**|If enabled, lets BranchCache clients use HTTP to retrieve content from one another in the distributed mode and from the hosted cache in hosted cache mode. This setting uses HTTP.<br /><br />Recommended value: Not configured<br /><br />(Windows 7 or later).|
-|**BranchCache - Hosted Cache Client**|If enabled, lets BranchCache clients use a hosted cache. This setting uses HTTPS.<br /><br />Recommended value: Not configured<br /><br />(Windows 7 or later).|
-|**BranchCache - Hosted Cache Server**|If enabled, lets BranchCache clients can use a hosted cache to communicate with other clients. This setting uses HTTPS.<br /><br />Recommend value: Not configured<br /><br />(Windows 7 or later).|
-|**BranchCache - Peer Discovery**|If enabled, lets BranchCache clients use the WS Discovery protocol to look up content availability on the local subnet.<br /><br />Recommended value: Not configured<br /><br />(Windows 7 or later).|
-|**BITS Peercaching**|If enabled, lets clients use Background Intelligent Transfer Service (BITS) to find and share files that are stored in the BITS cache on clients in the same subnet. This setting uses WSDAPI and RPC.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Connect to a Network Projector**|If enabled, lets users connect to projectors over wired or wireless networks to project presentations. This setting uses WSDAPI.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Core Networking**|If enabled, lets clients use IPv4 and IPv6 to connect to network resources.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Distributed Transaction Coordinator**|If enabled, allows managed computers to coordinate transactions that update transaction-protected resources, like databases, message queues, and file systems.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**File and Printer Sharing**|If enabled, allows users to share local files and printers with other users on the network. This setting uses NetBIOS, LLMNR, SMB, and RPC.<br /><br />Recommended value: Not configured<br /><br />(Windows XP or later).|
-|**HomeGroup**|If enabled, allow managed computers to participate in a HomeGroup network.<br /><br />Recommended value: Not configured<br /><br />(Windows 7 or later).|
-|**iSCSI Service**|If enabled, allows managed computers to connect to iSCSI servers and devices.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Key Management Service**|If enabled, lets computers be counted for license compliance in enterprise environments.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Media Center Extenders**|If enabled, allows Media Center Extenders to communicate with computers that are running Windows Media Center. This setting uses SSDP and qWave.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Netlogon Service**|If enabled, configures a security channel between domain clients and a domain controller for authenticating users and services. This setting uses RPC.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Network Discovery**|If enabled, lets computers discover other devices and be discovered by other devices on the network. This setting uses Function Discovery Host and Publication Services and SSDP, NetBIOS, LLMNR, and UPnP network protocols.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Performance Logs and Alerts**|If enabled, allows the Performance Logs and Alerts service to be remotely managed. This setting uses RPC.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Remote Administration**|If enabled, allows remote administration of the computer.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Remote Assistance**|If enabled, lets users of managed computers request remote assistance from other users on the network. This setting uses SSDP, PNRP, Teredo, and UPnP network protocols.<br /><br />Recommended value: Not configured<br /><br />(Windows XP or later).|
-|**Remote Desktop**|If enabled, lets the computer use Remote Desktop to access other computers.<br /><br />Recommended value: Not configured<br /><br />(Windows XP or later).|
-|**Remote Event Log Management**|If enabled, let’s client event logs be viewed and managed remotely. This setting uses Named Pipes and RPC.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Remote Scheduled Tasks Management**|If enabled, allows remote management of the task scheduling service. This setting uses RPC.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Remote Service Management**|If enabled, allows remote management of local services on clients. This setting uses Named Pipes and RPC.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Remote Volume Management**|If enabled, allows remote software and hardware disk volume management. This setting uses RPC.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Routing and Remote Access**|If enabled, allows incoming VPN and remote access connections to computers.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Secure Socket Tunneling Protocol**|If enabled, allows incoming VPN connections to managed computers by using Secure Socket Tunneling Protocol (SSTP). This setting uses HTTPS.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**SNMP Trap**|If enabled, lets managed computers receive SNMP Trap service traffic.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**UPnP Framework**|If enabled, configures the UPnP Framework service on computers to let them discover and use UPnP certified devices.<br /><br />Recommended value: Not configured<br /><br />(Windows XP or later).|
-|**Windows Collaboration Computer Name Registration Service**|If enabled, lets computers find and communicate with other computers by using the Peer Name Resolution Protocol. This setting uses SSDP and PNRP.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Windows Media Player**|If enabled, lets users receive streaming media over UDP.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Windows Media Player Network Sharing Service**|If enabled, lets users share media over a network. This setting uses the SSDP, qWave, and UPnP network protocols.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Windows Media Player Network Sharing Service (Internet)**|If enabled, lets users share home media over the Internet.<br /><br />Recommended value: Not configured<br /><br />(Windows 7 or later).|
-|**Windows Meeting Space**|If enabled, lets users collaborate over a network to share documents, programs, or their desktop. This setting uses DFSR and P2P.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Windows Peer to Peer Collaboration Foundation**|If enabled, configures various peer-to-peer programs and technologies to allow them to connect. This setting uses SSDP and PNRP.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Windows Remote Management (Compatibility)**|If enabled, allows remote management of managed computers by using WS-Management, a Web services-based protocol for remote management of operating systems and devices.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
-|**Windows Remote Management**|If enabled, allows remote management of managed computers by using WS-Management, a Web services-based protocol for remote management of operating systems and devices.<br /><br />Recommended value: Not configured<br /><br />(Windows 8 or later)|
-|**Windows Virtual PC**|If enabled, lets virtual machines, communicate with other computers.<br /><br />Recommended value: Not configured<br /><br />(Windows 7 only)|
-|**Wireless Portable Devices**|If enabled, allows the transfer of media from a network-enabled camera or media device to managed computers by using the Media Transfer Protocol (MTP). This setting uses SSDP and UPnP network protocols.<br /><br />Recommended value: Not configured<br /><br />(Windows Vista or later).|
+|**BranchCache - Content Retrieval**<br>(Windows 7 or later)|Lets BranchCache clients use HTTP to retrieve content from one another in the distributed mode and from the hosted cache in hosted cache mode. This setting uses HTTP..|
+|**BranchCache - Hosted Cache Client**<br>(Windows 7 or later)|Lets BranchCache clients use a hosted cache. This setting uses HTTPS.|
+|**BranchCache - Hosted Cache Server**|Lets BranchCache clients use a hosted cache to communicate with other clients. This setting uses HTTPS.|
+|**BranchCache - Peer Discovery**<br>(Windows 7 or later)|Lets BranchCache clients use the WS Discovery protocol to look up content availability on the local subnet.|
+|**BITS Peercaching**|Lets clients use Background Intelligent Transfer Service (BITS) to find and share files that are stored in the BITS cache on clients in the same subnet. This setting uses WSDAPI and RPC.|
+|**Connect to a Network Projector**|Lets users connect to projectors over wired or wireless networks to project presentations. This setting uses WSDAPI.|
+|**Core Networking**|Lets clients use IPv4 and IPv6 to connect to network resources.|
+|**Distributed Transaction Coordinator**|Allows managed computers to coordinate transactions that update transaction-protected resources, like databases, message queues, and file systems.|
+|**File and Printer Sharing**|Allows users to share local files and printers with other users on the network. This setting uses NetBIOS, LLMNR, SMB, and RPC.|
+|**HomeGroup**<br>(Windows 7 or later)|Allows managed computers to participate in a HomeGroup network.|
+|**iSCSI Service**|Allows managed computers to connect to iSCSI servers and devices.|
+|**Key Management Service**|Lets computers be counted for license compliance in enterprise environments.|
+|**Media Center Extenders**|Allows Media Center Extenders to communicate with computers that are running Windows Media Center. This setting uses SSDP and qWave.|
+|**Netlogon Service**|Configures a security channel between domain clients and a domain controller for authenticating users and services. This setting uses RPC.|
+|**Network Discovery**|Lets computers discover other devices and be discovered by other devices on the network. This setting uses Function Discovery Host and Publication Services and SSDP, NetBIOS, LLMNR, and UPnP network protocols.|
+|**Performance Logs and Alerts**|Allows the Performance Logs and Alerts service to be remotely managed. This setting uses RPC.|
+|**Remote Administration**|Allows remote administration of the computer.|
+|**Remote Assistance**|Lets users of managed computers request remote assistance from other users on the network. This setting uses SSDP, PNRP, Teredo, and UPnP network protocols.|
+|**Remote Desktop**|Lets the computer use Remote Desktop to access other computers.|
+|**Remote Event Log Management**|Lets client event logs be viewed and managed remotely. This setting uses Named Pipes and RPC.|
+|**Remote Scheduled Tasks Management**|Allows remote management of the task scheduling service. This setting uses RPC.|
+|**Remote Service Management**|Allows remote management of local services on clients. This setting uses Named Pipes and RPC.|
+|**Remote Volume Management**|Allows remote software and hardware disk volume management. This setting uses RPC.|
+|**Routing and Remote Access**|Allows incoming VPN and remote access connections to computers.|
+|**Secure Socket Tunneling Protocol**|Allows incoming VPN connections to managed computers by using Secure Socket Tunneling Protocol (SSTP). This setting uses HTTPS.|
+|**SNMP Trap**|Lets managed computers receive SNMP Trap service traffic.|
+|**UPnP Framework**|Configures the UPnP Framework service on computers to let them discover and use UPnP certified devices.|
+|**Windows Collaboration Computer Name Registration Service**|Lets computers find and communicate with other computers by using the Peer Name Resolution Protocol. This setting uses SSDP and PNRP.|
+|**Windows Media Player**|Lets users receive streaming media over UDP.|
+|**Windows Media Player Network Sharing Service**|Lets users share media over a network. This setting uses the SSDP, qWave, and UPnP network protocols.|
+|**Windows Media Player Network Sharing Service (Internet)**<br>(Windows 7 or later)|Lets users share home media over the Internet.|
+|**Windows Meeting Space**|Lets users collaborate over a network to share documents, programs, or their desktop. This setting uses DFSR and P2P.|
+|**Windows Peer to Peer Collaboration Foundation**|Configures various peer-to-peer programs and technologies to allow them to connect. This setting uses SSDP and PNRP.|
+|**Windows Remote Management (Compatibility)**|Allows remote management of managed computers by using WS-Management, a Web services-based protocol for remote management of operating systems and devices.|
+|**Windows Remote Management**<br>(Windows 8 or later)|Allows remote management of managed computers by using WS-Management, a Web services-based protocol for remote management of operating systems and devices.|
+|**Windows Virtual PC**<br>(Windows 7 or later)|Lets virtual machines, communicate with other computers.|
+|**Wireless Portable Devices**|Alows the transfer of media from a network-enabled camera or media device to managed computers by using the Media Transfer Protocol (MTP). This setting uses SSDP and UPnP network protocols.|
 
 ### See also
-[Policies to protect Windows PCs](policies-to-protect-windows-pcs.md)
+[Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
