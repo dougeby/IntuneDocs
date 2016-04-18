@@ -57,7 +57,8 @@ Ready to get started? You'll need the following items when starting to use your 
 
 ### A device with a Silverlight-enabled web browser
 You will need this to access the Intune administration console where you'll manage devices, apps, and policies. You will also need a web browser to access the web-based company portal when not accessing the company portal app from a mobile device. To make things easier, you can use the “privacy mode” setting on the same browser that you use for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] administration (for example: in Internet Explorer, you can click **Tools** &gt; **InPrivate Browsing**).
->[TIP!]
+
+>[!TIP]
 >Because of this requirement, the Microsoft Edge browser is not supported for accessing the Intune administration console.
 
 <!-- you get one of these when you sign up for Intune so they'll already have this. It's also discussed in the steps (and this is definitely not a trial!)
@@ -82,4 +83,4 @@ If you'll manage iOS or Windows Phone devices with Intune, you'll need certifica
 It's time to get started with your paid subscription!
 
 >[!div class="step-by-step"]
-[**Sign in to Intune** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1)
+[**Sign in to Intune** &rarr;](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1)

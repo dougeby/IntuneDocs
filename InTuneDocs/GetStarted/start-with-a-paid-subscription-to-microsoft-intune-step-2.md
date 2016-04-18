@@ -27,4 +27,4 @@ Congratulations! You have just completed step 2 of the *Get started with a paid 
 
 >[!div class="step-by-step"]
 
->[<< **Sign in to Intune**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**Add users to Intune** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)  
+>[&larr; **Sign in to Intune**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**Add users to Intune** &rarr;](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)  

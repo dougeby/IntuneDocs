@@ -10,16 +10,15 @@
 ### [Network bandwidth usage](network-bandwidth-use.md)
 ### [Domain names](domain-names-for-intune.md)
 
-## [Get started with a paid subscription](get-started-with-a-paid-subscription-to-microsoft-intune.md)
-### [Sign into Intune](get-started-with-a-paid-subscription-to-microsoft-intune-step-1.md)
-### [Configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md)
-### [Synchronize AD and add users](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md)
-### [Manage Intune licenses](get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)
-### [Organize users and devices](get-started-with-a-paid-subscription-to-microsoft-intune-step-5.md)
-### [Create policies and publish an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)
-### [Customize the Company Portal](get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Enroll Windows PCs](get-started-with-a-paid-subscription-to-microsoft-intune-step-8.md)
-### [Enroll mobile devices & install an app](get-started-with-a-paid-subscription-to-microsoft-intune-step-9.md)
+## [Start with a paid subscription](start-with-a-paid-subscription-to-microsoft-intune.md)
+### [Sign into Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
+### [Configure a custom domain name](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [Synchronize AD and add users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
+### [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [Organize users and devices](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
+### [Create policies and publish an app](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
+### [Customize the Company Portal](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
+### [Enroll mobile devices & install an app](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Post configuration tasks](post-configuration-tasks.md)
 
 
@@ -31,6 +30,6 @@
 ### [Operations and maintenance](operations-and-maintenance.md)
 
 
-# [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility)
+<!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)

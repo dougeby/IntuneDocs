@@ -61,4 +61,4 @@ Congratulations! You have just completed step 5 of the *Get started with a paid 
 
 >[!div class="step-by-step"]
 
->[<< **Manage Intune licenses**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Create policies and apps** >>](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
+>[&larr; **Manage Intune licenses**](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Create policies and apps** &rarr;](.\get-started-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
