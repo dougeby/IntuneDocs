@@ -66,7 +66,8 @@ Here are some  challenges that you may encounter in the **O&M** phase.
 -   **Challenge:** Users encounter issues with enrollment and with app installation.
 
     **Mitigation:** Prepare your help desk with troubleshooting content that can enable quick resolution of common problems.
-    
 
-### See also
-[Rollout phases for Microsoft Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
+
+>[!div class="step-by-step"]
+
+>[&larr; **Enterprise rollout**](enterprise-rollout.md)     
