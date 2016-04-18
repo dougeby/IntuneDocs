@@ -16,4 +16,4 @@ After you complete the initial configuration steps for an Intune  paid subscript
 
 -   **Intune reports:** Microsoft Intune provides alerts and reports that you can use to help monitor devices, as well as software license status and actions that affect devices (such as wiping a device).  To learn more about reporting, see [Monitoring and reports with Microsoft Intune](/Intune/monitoring-and-reports-with-microsoft-intune.html).
 
--   **Protecting company resources:** After you've configured Intune and enrolled your devices, you'll want to make sure that you're protecting devices against data loss and other threats. To learn more about protecting resources, see [Protect data and devices with Microsoft Intune](/Intune/deployuse/protect-data-and-devices-with-microsoft-intune.html).
+-   **Protecting company resources:** After you've configured Intune and enrolled your devices, you'll want to make sure that you're protecting devices against data loss and other threats. To learn more about protecting resources, see [Protect data and devices with Microsoft Intune](/Intune/deploy-use/protect-data-and-devices-with-microsoft-intune.html).

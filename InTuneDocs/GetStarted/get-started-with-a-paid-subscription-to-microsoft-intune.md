@@ -16,7 +16,7 @@ This walkthrough leads you through the steps of setting up paid subscription of 
 >[!NOTE]
 >This article focuses on setting up Intune as a standalone service. Alternatively, if you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [extend Configuration Manager to manage mobile devices](https://technet.microsoft.com/library/jj884158.aspx) by connecting Intune with Configuration Manager in a hybrid MDM deployment to manage mobile devices too.
 
-Getting started with a paid subscription of Intune shares many of the same steps as starting with a [free 30-day trial](/intune/understand/get-started-with-a-30-day-trial-of-microsoft-intune). However, after your trial, and when you are ready to start managing your mobile devices, you will need to address several additional requirements. These will vary depending on your current network infrastructure and business requirements including:
+Getting started with a paid subscription of Intune shares many of the same steps as starting with a [free 30-day trial](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). However, after your trial, and when you are ready to start managing your mobile devices, you will need to address several additional requirements. These will vary depending on your current network infrastructure and business requirements including:
 
 -   Synchronizing on-premises Active Directory accounts with Intune and Azure Active Directory
 
@@ -74,9 +74,9 @@ If you'll manage iOS or Windows Phone devices with Intune, you'll need certifica
 >[!NOTE]
 >This getting started walkthrough assumes your users get the company portal app from the Store on a Windows Phone 8.1 or later device. For information about Windows Phone 8.0 support, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
-- There are no certificate requirements for **Windows PCs** or **Windows RT devices** when [enrolling Windows PCs as devices](/intune/enduser/enroll-your-device-in-intune-windows) or  [installing the Windows PC client for Microsoft Intune](/intune/deployuse/install-the-windows-pc-client-with-microsoft-intune).
+- There are no certificate requirements for **Windows PCs** or **Windows RT devices** when [enrolling Windows PCs as devices](/intune/enduser/enroll-your-device-in-intune-windows) or  [installing the Windows PC client for Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).
 
-- For **iOS** or **Mac OS X** devices you will need to request an Apple Push Notification service certificate from Apple, as described in [Set up iOS and Mac management with Microsoft Intune](/intune/deployuse/set-up-ios-and-mac-management-with-microsoft-intune).
+- For **iOS** or **Mac OS X** devices you will need to request an Apple Push Notification service certificate from Apple, as described in [Set up iOS and Mac management with Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
 
 ## Next steps
 It's time to get started with your paid subscription!

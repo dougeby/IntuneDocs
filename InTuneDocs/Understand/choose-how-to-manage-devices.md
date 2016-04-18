@@ -66,9 +66,9 @@ You can also manage devices by using Exchange ActiveSync. This requires you to i
 
 To learn about the hardware and software requirements to install the On-Premises Connector, see [Requirements for the On-Premises Connector](/Intune/network-infrastructure-requirements-for-microsoft-intune.md).
 
-To learn about using the On-Premises Connector or Service to Service Connector with Exchange, see [Mobile device management with Exchange ActiveSync and Microsoft Intune](/Intune/getstarted/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md).
+To learn about using the On-Premises Connector or Service to Service Connector with Exchange, see [Mobile device management with Exchange ActiveSync and Microsoft Intune](/Intune/get-started/mobile-device-management-with-exchange-activesync-and-microsoft-intune.md).
 
 
 
 ##Next steps
-Now you've discovered some of the capabilities you can use when you enroll your devices with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], you'll need to [get ready to enroll your devices](/Intune/getstarted/get-ready-to-enroll-devices-in-microsoft-intune.md). After you have enrolled your devices, you can take advantage of all of the capabilities you've read about in this topic. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+Now you've discovered some of the capabilities you can use when you enroll your devices with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], you'll need to [get ready to enroll your devices](/Intune/get-started/get-ready-to-enroll-devices-in-microsoft-intune.md). After you have enrolled your devices, you can take advantage of all of the capabilities you've read about in this topic. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->

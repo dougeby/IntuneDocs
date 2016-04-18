@@ -1,6 +1,6 @@
-# [Understand and Explore](/intune/understand/introduction-to-microsoft-intune)
-# [Get Started](/intune/getstarted/what-to-know-before-you-start-microsoft-intune)
-# [Plan and Design](/intune/plandesign/ways-to-do-enterprise-mobility)
+# [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
+# [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility)
 
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -47,6 +47,8 @@
 #### [Wi-Fi connections in Intune](wi-fi-connections-in-microsoft-intune.md)
 #### [VPN connections in Intune](vpn-connections-in-microsoft-intune.md)
 #### [Email profiles in Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
+### [Use groups to manage users & devices](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+### [Understand your devices with inventory](understand-your-devices-with-inventory-in-microsoft-intune.md)
 ### [Common PC management tasks](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
 ## [Protect devices](protect-your-devices-with-microsoft-intune.md)
@@ -62,6 +64,7 @@
 ## [Retire devices](retire-devices-from-microsoft-intune-management.md)
 
 ## [Add and deploy apps](add-apps-for-mobile-devices-in-microsoft-intune.md)
+###[Plan for app deployment](plan-for-app-deployment-in-microsoft-intune.md)
 ### [Add apps for mobile devices](add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Add apps for Windows PCs](add-apps-for-windows-pcs-in-microsoft-intune.md)
 ### [Deploy apps](deploy-apps-in-microsoft-intune.md)
@@ -97,8 +100,8 @@
 #### [MAM policies for Android](android-mam-policy-settings.md)
 #### [MAM policies for iOS](ios-mam-policy-settings.md)
 #### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Manage data transfer between iOS apps](microsoft-intune-mobile-app-management-policies-and-ios-open-in.md)
-#### [End user experience for MAM-enabled apps](end-user-experience-for-apps-associated-with-microsoft-intune-mobile-app-management-policies.md)
+#### [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
+#### [End user experience](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 ### [Prepare line of business apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [Wrap iOS apps](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
