@@ -17,7 +17,7 @@ To set up a connection that enables Microsoft Intune to communicate with the Exc
 > [!IMPORTANT]
 > Before you being installing and configuring the On-Premises Connector, ensure that you meet the [Exchange connector installation requirements](Intune-Exchange-connector-requirements.md).
 
-### <a name="BKMK_ExchanceConnectorReqs"></a>Requirements for the On-Premises Connector
+## Requirements for the On-Premises Connector
 The following table lists the requirements for the computer where you install the on-premises Exchange Connector.
 
 |Requirement|More information|
@@ -29,11 +29,14 @@ The following table lists the requirements for the computer where you install th
 |Active Directory Synchronization|Before you can use either Connector to connect Intune to your Exchange Server, you must [set up Active Directory synchronization](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
 |Additional software|A full installation of Microsoft .NET Framework 4 and Windows PowerShell 2.0 must be installed on the computer that hosts the connector.|
 |Network|The computer where you install the connector must be in a domain that has a trust relationship to the domain that hosts your Exchange Server.<br /><br />The computer requires configurations to enable it to access the Intune service through firewalls and proxy servers over Ports 80 and 443. Domains used by Intune include manage.microsoft.com, &#42;manage.microsoft.com, and &#42;.manage.microsoft.com.|
-|Proxy server<br>(optional)|If you manage clients that access the Internet through a proxy server, see [Requirements for proxy servers](BKMK_ProxyReqs).<br /><br />You can also use a proxy server that caches content to reduce network bandwidth. <!-- For more information, see [Reduce network bandwidth use](network-bandwidth-use.md). -->|
+|Proxy server<br>(optional)|If you manage clients that access the Internet through a proxy server, see [Requirements for proxy servers](BKMK_ProxyReqs).<br /><br />You can also use a proxy server that caches content to reduce network bandwidth.|
+|Hosted Exchange configured and running|See [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx) for more information. |
+|Set the mobile device management authority to Intune|[Set your mobile device authority to Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#BKMK_Set_MDM_Authority)|
 
-## Download the on-premises Exchange Connector software installation package
+### Exchange cmdlet requirements
 
-1.  You must create an Active Directory user account that is used by the Intune Exchange Connector. The account must have permission to run the following required Windows PowerShell Exchange cmdlets:
+You must create an Active Directory user account that is used by the Intune Exchange Connector. The account must have permission to run the following required Windows PowerShell Exchange cmdlets:
+
 
  -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
  -   Get-CasMailbox, Set-CasMailbox
@@ -48,8 +51,9 @@ The following table lists the requirements for the computer where you install th
  -   Set-ADServerSettings
  -   Get-Command
 
-2. On a supported operating system for the on-premises Exchange Connector, open the [Microsoft Intune administration console](http://manage.microsoft.com) (http://manage.microsoft.com) with a user account that is an administrator in the Exchange tenant with a license to use Exchange Server.
+## Download the on-premises Exchange Connector software installation package
 
+1. On a supported operating system for the on-premises Exchange Connector, open the [Microsoft Intune administration console](http://manage.microsoft.com) (http://manage.microsoft.com) with a user account that is an administrator in the Exchange tenant with a license to use Exchange Server.
 ![](../media/ExchangeConnector.gif)
 
 2.  In the workspace shortcuts pane, choose **ADMIN**.

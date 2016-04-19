@@ -65,7 +65,7 @@ If you have set the policy values for **Install Endpoint Protection** and **Enab
 
   Real-time protection is how Microsoft Security Essentials alerts you when potential threats such as viruses and spyware are trying to install themselves or run on your PC. The moment this happens, you’ll see a message in the notification area to the far right of the taskbar
 
-## Real-time protection settings
+### Real-time protection settings
 
 |Policy setting|Details|
 |------------------|--------------------|
@@ -78,7 +78,7 @@ If you have set the policy values for **Install Endpoint Protection** and **Enab
 
   ![](../media/pol-sa-pc-policy-realtime.png)
 
-## Scan schedule settings
+### Scan schedule settings
 
 |Policy setting|More information|
 |------------------|--------------------|
@@ -87,7 +87,7 @@ If you have set the policy values for **Install Endpoint Protection** and **Enab
 |**Schedule a full scan**|Configures a full scan of all files and resources on the local hard disks of computers. This scan can take some time and can affect computer performance (depending on the number of files and resources scanned).<br /><br />Recommended value: **No**|
 |**Run a full scan if you have missed two consecutive full scans**|Configures Endpoint Protection to automatically run a full scan on computers if they miss two consecutive, scheduled full scans.<br /><br />Recommend value: Not configured|
 
-## Scan options settings
+### Scan options settings
 
 |Policy setting|Details|
 |------------------|--------------------|
@@ -102,23 +102,23 @@ If you have set the policy values for **Install Endpoint Protection** and **Enab
 |**Scan removable drives**|Set to **Yes** to configure Endpoint Protection to scan for malware and unwanted software on removable drives, like USB flash drives, when you run a full scan on computers.<br /><br />Recommended value: **Yes**|
 |**Limit CPU usage during a scan**|Configures the maximum percentage of CPU usage that can be used during scheduled scans on computers. You can set this value from 1 to 100 percent.<br /><br />Recommended value: **50%**|
 
-## Default actions settings
+### Default actions settings
 
 The **Choose how Endpoint Protection acts on malware of the following alert levels** setting specifies the default action that Endpoint Protection takes when malware of various alert levels is detected. For each alert level, you can remove the malware, quarantine it, or take Microsoft’s recommended action. Recommended value: **Recommended action** which allows Endpoint Protection to prescribe action.   
 
-## Excluded files and folders settings
+### Excluded files and folders settings
 
 The **Files and folders to exclude when running a scan or using real-time protection** setting excludes specific files or folders when a scan is run or when real-time protection is used on computers.
 
-## Excluded processes settings
+### Excluded processes settings
 
 The **Processes to exclude when running a scan or using real-time protection** setting lets you exclude specific processes when a scan is run or from real-time protection. You can exclude only files with the following extensions: **.exe**, **.com** or **.scr**.
 
-## Excluded file types settings
+### Excluded file types settings
 
 The **File extensions to exclude when running a scan or using real-time protection** lets you exclude specific file name extensions when a scan is run or when real-time protection is used on computers.
 
-## Microsoft Active Protection Service Settings
+### Microsoft Active Protection Service Settings
 Microsoft Active Protection Service is an online community that helps you decide how to respond to potential threats. The community also helps stop the spread of new malware infections. You can **Join Microsoft Active Protection Service** by selecting **Yes** and then specifying your **Membership Level**:
   - **Basic** - Sends basic information to Microsoft about detected malware. This includes where the software came from, the actions that you apply or that Endpoint Protection applies automatically, and whether the actions were successful.
   - **Advanced** - Sends more information to Microsoft about malware, spyware, and potentially unwanted software. This includes the location of the software, file names, how the software operates, and how it has affected your computer.
@@ -150,7 +150,9 @@ You monitor the status of malware on your computers by using the **Protection** 
 > [!IMPORTANT]
 > The **Protection** workspace is not displayed in the administrator console until you have installed the client and are managing at least one computer client.
 
-## How to view Recent Detection Paths for malware on computers
+  ![](../media/pol-sa-ep-monitor.png)
+
+### How to view Recent Detection Paths for malware on computers
 Intune can display the paths of up to 10 most recently detected instances of malware on a device. The **Recent Detection Path** is disabled by default. To enable this view:
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/) go **Groups** > **All Devices** . **Malware**.
