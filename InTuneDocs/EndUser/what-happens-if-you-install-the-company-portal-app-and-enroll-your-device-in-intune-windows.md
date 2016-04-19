@@ -14,12 +14,12 @@ author: Staciebarker
 
 To learn what happens when you install the Company Portal app and enroll your device, use the link that matches the device you are using.
 
-- [Windows 10](#BKMK_what_happens_w10)
-- [Windows 8.1 and Windows RT](#BKMK_what_happens_w81)
-- [Windows Phone 8.1 and Windows Phone 8](#BKMK_what_happens_phone8)
-- [Windows 7 and Vista](#BKMK_what_happens_vista)
+- [Windows 10](#windows-10)
+- [Windows 8.1 and Windows RT](#windows-8.1-and-windows-rt)
+- [Windows Phone 8.1 and Windows Phone 8](#windows-phone-8.1-and-windows-phone-8)
+- [Windows 7 and Vista](#windows-7-and-vista)
 
-## <a name="BKMK_what_happens_w10"></a>Windows 10
+## Windows 10
 When you install the Company Portal app and then use the app to enroll your Windows 10 Enterprise  or Professional device in Intune, you can then use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files
@@ -48,7 +48,7 @@ When you add a computer:
 
 -   Your IT administrator may enforce policies on the computer. For example, you might be required to set a password or PIN on the computer, which may lock you out of the computer, or delete all data from your computer’s hard drive, if there are too many incorrect password attempts.
 
-## <a name="BKMK_what_happens_w81"></a>Windows 8.1 and Windows RT
+## Windows 8.1 and Windows RT
 When you install the Company Portal app and then use the app to enroll your Windows 8.1 Enterprise  or Professional or Windows RT device in Intune, you can then use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files
@@ -77,7 +77,7 @@ When you add a computer:
 
 -   Your IT administrator may enforce policies on the computer. For example, you might be required to set a password or PIN on the computer, which may lock you out of the computer, or delete all data from your computer’s hard drive, if there are too many incorrect password attempts.
 
-## <a name="BKMK_what_happens_phone8"></a>Windows Phone 8.1 and Windows Phone 8
+## Windows Phone 8.1 and Windows Phone 8
 When you install the Company Portal app and then use the app to enroll your Windows Phone 8.1 or Windows Phone 8 device in Intune, you can then use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files
@@ -114,7 +114,7 @@ When you add your Windows Phone device, you are giving your IT administrator per
 
     -   Send any company app inventory updates.
 
-## <a name="BKMK_what_happens_vista"></a>Windows 7 and Vista
+## Windows 7 and Vista
 When you install the Company Portal app and then use the app to enroll your Windows 7 or Vista device in Intune, you can then use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files

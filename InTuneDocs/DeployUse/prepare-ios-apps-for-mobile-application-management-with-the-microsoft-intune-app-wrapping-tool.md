@@ -16,7 +16,7 @@ The tool is a Mac OS command-line application that creates a ‘wrapper’ aroun
 
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
-## <a name="BKMK_Prereq"></a>Step 1: Fulfill the prerequisites for using the app wrapping tool
+## Step 1: Fulfill the prerequisites for using the app wrapping tool
 
 |Requirement|More information|
 |---------------|--------------------------------|
@@ -25,7 +25,7 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://ww
 |Processing an app with the App Wrapping Tool|Apps must be developed and signed by your company, or an independent software vendor (ISV). You cannot use this tool to process apps from the Apple Store. Apps must be written for iOS 7.0 or later. Apps must also be in the Position Independent Executable (PIE) format. For more information about the PIE format, see your Apple developer documentation. Lastly, the app must have the extension **.app**, or **.ipa** format.|
 |Apps the wrapping tool cannot process|Encrypted apps, unsigned apps, and apps with extended file attributes.|
 |Apps that use the Azure Active Directory Library (ADAL)|If your app uses ADAL, the app must incorporate an ADAL version greater than or equal to 1.0.2, and the developer must grant their app access to the Intune Mobile Application Management resource.<br /><br />See [Information for apps that use the Azure Active Directory Library (ADAL)](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#BKMK_ADAL) in this article for details about how to use ADAL.|
-|Setting entitlements for your app|You must set entitlements, which give the app additional permissions and capabilities beyond those typically granted, before you wrap the app. See [Setting app entitlements](#BKMK_ios_entitlements) for instructions.|
+|Setting entitlements for your app|You must set entitlements, which give the app additional permissions and capabilities beyond those typically granted, before you wrap the app. See [Setting app entitlements](#setting-app-entitlements) for instructions.|
 
 ## Step 2: Install the app wrapping tool
 
@@ -68,7 +68,7 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://ww
 
 2. After processing completes, the message **The application was successfully wrapped** will be displayed.
 
-    If an error occurs, see [Error messages](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#BKMK_Error) for help.
+    If an error occurs, see [Error messages](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#error-messages) for help.
 
 3.  The wrapped app is saved in the output folder you specified previously. You can now upload the app into [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and associate it with a mobile application management policy.
 
@@ -80,7 +80,7 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://ww
 ## Error messages and log files
 Use the following information to troubleshoot issues you have with the app wrapping tool.
 
-### <a name="BKMK_Error"></a>Error messages
+### Error messages
 If the app wrapping tool fails to complete successfully, one of the following error messages will be displayed:
 
 |Error message|More information|
@@ -133,9 +133,9 @@ For apps that use ADAL, the following must be true:
 
 -   The app must incorporate an ADAL version greater than or equal to 1.0.2
 
--   Developers must grant their app access to the Intune Mobile Application Management resource, as described in [Steps to follow for apps that use ADAL](#BKMK_step_use_adal).
+-   Developers must grant their app access to the Intune Mobile Application Management resource, as described in [Steps to follow for apps that use ADAL](#steps-to-follow-for-apps-that-use-adal).
 
-#### <a name="BKMK_adal_overview"></a>Overview of identifiers you need to get
+#### Overview of identifiers you need to get
 Apps that use ADAL must register via the Azure management portal to obtain two unique identifiers for their app:
 
 |Identifier|More information|Default value|
@@ -148,9 +148,9 @@ When you do not supply the above values to the tool; the following additional va
 
 -   **Resource ID** - https://intunemam.microsoft.com
 
-#### <a name="BKMK_step_use_adal"></a>Steps to follow for apps that use ADAL
+#### Steps to follow for apps that use ADAL
 
-1.  Review [Overview of identifiers you need to get](#BKMK_adal_overview) to identify the values that you need to get.
+1.  Review [Overview of identifiers you need to get](#overview-of-identifiers-you-need-to-get) to identify the values that you need to get.
 
 2.  Configure access to mobile application management in Azure Active Directory by doing the following:
 
@@ -162,7 +162,7 @@ When you do not supply the above values to the tool; the following additional va
 
     4.  In the **Permission to other applications** section, from the first drop-down list, choose **Intune Mobile Application Management**.
 
-        You can now use the app's Client ID in the app wrapping tool. You can find the app's Client ID in the Azure Active Directory management portal as described in the [Overview of identifiers you need to get](#BKMK_adal_overview) section.
+        You can now use the app's Client ID in the app wrapping tool. You can find the app's Client ID in the Azure Active Directory management portal as described in the [Overview of identifiers you need to get](#overview-of-identifiers-you-need-to-get) section.
 
 3.  Use the **Client-ID** (using the property **–a**) and **Redirect-URI** values as command-line properties in the app wrapping tool. If you do not have these values, the default values are used. You must specify both values, or the end user will not be able to successfully authenticate the processed app.
 
@@ -186,7 +186,7 @@ When you do not supply the above values to the tool; the following additional va
 
 -   Double login prompts are prevented if you provide your client application’s Client ID and Redirect URI. This Client ID needs to be registered to access the published [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM resource ID in the AAD Dashboard. Failure to do so will result in a login failure when the app runs.
 
-## <a name="BKMK_ios_entitlements"></a>Setting app entitlements
+## Setting app entitlements
 Before wrapping your app, you can grant **entitlements** to give the app  additional permissions and capabilities that exceed what an app typically can do.  An **entitlement file** is used during code signing to specify special permissions within your app (for example, access to a shared keychain). Specific app services, called **capabilities**, are enabled within Xcode during app development. Once enabled, the capabilities are reflected in your entitlements file. For more information about entitlements and capabilities, see [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in the iOS Developer Library. For a complete list of supported capabilities, see [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
 
 ### Supported capabilities for the App Wrapping Tool for iOS
@@ -232,7 +232,7 @@ If the App Wrapping Tool for iOS displays an entitlement error, try the followin
 |Issue|Cause|Resolution|
 |---------|---------|--------------|
 |Failed to parse entitlements generated from the input application.|The App Wrapping Tool cannot read the entitlements file that was extracted from the app. The entitlements file might be malformed.|Inspect the entitlements file for your app. To do so, follow the instructions detailed below. When inspecting the entitlements file, check for any malformed syntax. The file should be in XML format.|
-|Entitlements are missing in the provisioning profile (missing entitlements are listed). Repackage the app with a provisioning profile that has these entitlements.|There is a mismatch between the entitlements enabled in the provisioning profile and the capabilities enabled in the app. This mismatch also applies to the IDs associated with particular capabilities (i.e., App Groups, Keychain Access etc).|Generally, you can create a new provisioning profile that enables the same capabilities as the app. When IDs between the profile and app don't match, the App Wrapping Tool will replace the IDs if it is able to. If you still get this error after creating a new provisioning profile, you can try  removing entitlements from the app by using the **–e** parameter (see [Using the –e parameter to remove entitlements from an app](#BKMK_ios_use_e_param).|
+|Entitlements are missing in the provisioning profile (missing entitlements are listed). Repackage the app with a provisioning profile that has these entitlements.|There is a mismatch between the entitlements enabled in the provisioning profile and the capabilities enabled in the app. This mismatch also applies to the IDs associated with particular capabilities (i.e., App Groups, Keychain Access etc).|Generally, you can create a new provisioning profile that enables the same capabilities as the app. When IDs between the profile and app don't match, the App Wrapping Tool will replace the IDs if it is able to. If you still get this error after creating a new provisioning profile, you can try  removing entitlements from the app by using the **–e** parameter (see [Using the –e parameter to remove entitlements from an app](#using-the--e-parameter-to-remove-entitlements-from-an-app).|
 
 #### Finding the existing entitlements of a signed app
 To review the existing entitlements of a signed app and provisioning profile:
@@ -255,7 +255,7 @@ To review the existing entitlements of a signed app and provisioning profile:
     ```
     where `YourApp.app` is the actual name of your .app bundle.
 
-#### <a name="BKMK_ios_use_e_param"></a>Using the –e parameter to remove entitlements from an app
+#### Using the –e parameter to remove entitlements from an app
 This command removes any enabled capabilities in the app that are not in the entitlements file. If you remove capabilities that are being used by the app, it can break your app. An example of where you might remove missing capabilities is if you have a vendor-produced app that has all capabilities by default.
 
 ```

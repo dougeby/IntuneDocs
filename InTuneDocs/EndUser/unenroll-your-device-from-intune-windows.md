@@ -14,9 +14,13 @@ author: Staciebarker
 
 If you enrolled in Intune, but no longer want to use your Windows device for work or school and don't need to access work or school email, apps, or other resources, you need to unenroll your device.   Once you unenroll your device from Intune, you will no longer be able to access these resources. For more about what happens when you unenroll your device, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
-To unenroll your device, use the steps that match the device you're using.
+To unenroll your device, use the steps that match the device you're using:
 
-## <a name="BKMK_win_unenroll_w10"></a>Unenroll your Windows 10 device
+-	[Unenroll your Windows 10 device](unenroll-your-windows-10-device)
+-	[Unenroll your Windows 8.1 computer](unenroll-your-windows-8.1-computer)
+-	[Unenroll your Windows Phone 8.1 device](unenroll-your-windows-phone-8.1-device)
+
+## Unenroll your Windows 10 device
 
 1.  From your apps list, tap the **Company Portal** app.
 
