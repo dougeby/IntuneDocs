@@ -14,7 +14,7 @@ layout: HubPage
         <li><a href="" class="button button-bordered">Learn More</a></li>
       </ol>
 -->
-      <h3>New to Intune? <a href="http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/">Visit our product site &rarr;</a></h3>
+      <h3>New to Intune? <a href="http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/" target="_blank">Visit our product site &rarr;</a></h3>
     </section>
 <!--
     <aside class="alert section-border">
@@ -204,8 +204,8 @@ layout: HubPage
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./deploy-use/protect-data-and-devices-with-microsoft-intune">
-                    <h3>Protect data and devices</h3>
+                  <a href="./deploy-use/protect-apps-and-data-with-microsoft-intune">
+                    <h3>Protect apps and data</h3>
                     <p>Protect your apps against data loss and other threats.</p>
                     <h4>Read</h4>
                   </a>
