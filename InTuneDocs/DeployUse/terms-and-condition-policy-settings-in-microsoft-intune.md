@@ -52,7 +52,7 @@ You can create and deploy multiple policies containing different terms and condi
 
 2.  In the **Create New Report** window, click **View Report**. The report will open detailing which users have accepted the terms and conditions you deployed.
 
-### <a name="BKMK_TCVers"></a>Updates and version control for terms and conditions
+### Updates and version control for terms and conditions
 When you edit an existing terms and conditions policy, you can choose the behavior when you deploy the policy. Use the following procedure to help you update existing terms and conditions policies.
 
 ## How to work with multiple versions of terms and conditions
