@@ -16,7 +16,7 @@ layout: HubPage
         <li><a href="" class="button button-bordered">Learn More</a></li>
       </ol>
 -->
-      <h3>Are you interested in extending Configuration Manager's device and app management capabilities with Intune? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">learn more about hybrid mobile device management &rarr;</a></h3>
+      <h3>Want to extend Configuration Manager's management capabilities with Intune? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">learn more about hybrid mobile device management &rarr;</a></h3>
     </section>
 <!--
     <aside class="alert section-border">
@@ -74,26 +74,23 @@ layout: HubPage
                   <a href="./understand-explore/introduction-to-microsoft-intune">
                     <h3>Introduction to Intune</h3>
                     <p>Learn about how Intune provides device, app, and data management capabilities for mobile devices (iOS devices, Android devices, Windows phones) and Windows PCs.</p>
-                    <h4>Read</h4>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
                     <h3>Start a 30-day trial</h3>
                     <p>Use the trial guide to walk through the steps to get your trial set up with up to 100 users and devices.</p>
-                    <h4>Read</h4>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./understand-explore/common-ways-to-use-intune">
                     <h3>Common scenarios</h3>
                     <p>Understand how Intune is commonly used to solve business problems to determine how to best use it for your existing environment and requirements.</p>
-                    <h4>Read</h4>
                   </a>
                 </li>
               </ul>
+            <a href="./understand-explore/introduction-to-microsoft-intune" class="see-more">See More &rarr;</a>
             </section>
-
           </li>
 
           <li class="journey-step">
@@ -115,24 +112,22 @@ layout: HubPage
                 <a href="./get-started/what-to-know-before-you-start-microsoft-intune">
                   <h3>What to know before you start</h3>
                   <p>Quickly familiarize yourself with the features and capabilities of Intune.</p>
-                  <h4>Read</h4>
                 </a>
               </li>
               <li class="column-third">
                 <a href="./get-started/start-with-a-paid-subscription-to-microsoft-intune">
                   <h3>Get started</h3>
                   <p>Building on the 30-day trial guide, this topic walks you through Azure Active Directory synchronization, domain and DNS considerations, and other Intune customizations.</p>
-                  <h4>Read</h4>
                 </a>
               </li>
               <li class="column-third">
                 <a href="./get-started/rollout-phases-for-microsoft-intune-deployment">
                   <h3>Pilot deployment information and templates</h3>
                   <p>Best practices and templates to help you get started with Intune deployments.</p>
-                  <h4>Read</h4>
                 </a>
               </li>
             </ul>
+          <a href="./get-started/what-to-know-before-you-start-microsoft-intune" class="see-more">See More &rarr;</a>
           </li>
 
 
@@ -195,24 +190,22 @@ layout: HubPage
                   <a href="./deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
                     <h3>Overview of device and app lifecycles</h3>
                     <p>Learn how to best support each step in device and app lifecycles using Intune.</p>
-                    <h4>Read</h4>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./deploy-use/enroll-devices-in-microsoft-intune">
                     <h3>Enroll devices</h3>
                     <p>Learn what's involved in enrolling devices and Windows PCs into management with Intune.</p>
-                    <h4>Read</h4>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./deploy-use/protect-apps-and-data-with-microsoft-intune">
                     <h3>Protect apps and data</h3>
                     <p>Protect your apps against data loss and other threats.</p>
-                    <h4>Read</h4>
                   </a>
                 </li>
               </ul>
+              <a href="./deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune" class="see-more">See More &rarr;</a>
           </li>
 
 
@@ -233,26 +226,23 @@ layout: HubPage
                   <a href="./troubleshoot/how-to-get-support-for-microsoft-intune">
                     <h3>How to get support for Intune</h3>
                     <p>Get familiar with different ways Microsoft provides global technical, pre-sales, and billing support.</p>
-                    <h4>Read</h4>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./troubleshoot/troubleshoot-device-enrollment-in-intune">
                     <h3>Troubleshoot device enrollment</h3>
                     <p>Solve problems encountered when enrolling devices.</p>
-                    <h4>Read</h4>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune">
                     <h3>Troubleshoot app deployment problems in Intune</h3>
                     <p>Solve common app deployment problems.</p>
-                    <h4>Read</h4>
                   </a>
                 </li>
               </ul>
           </li>
-            <!-- <a href="" class="see-more">See More</a> -->
+          <a href="./troubleshoot/how-to-get-support-for-microsoft-intune" class="see-more">See More &rarr;</a>
           </section>
         </ul>
       </section>
@@ -275,9 +265,10 @@ layout: HubPage
          </div>
 
     <aside class="alert alert-social">
-      <p>Keep up with news from the Intune team</p>
+      <p>Keep up-to-date on Intune</p>
       <ol class="action-list">
-        <li><a href="http://blogs.technet.com/b/windowsintune/" "target=_blank" class="button-bordered button-translucent">Blog</a></li>
+        <li><a href="http://blogs.technet.com/b/windowsintune/" "target=_blank" class="button-bordered button-translucent">Intune team Blog</a></li>
+        <li><a href="http://twitter.com/msintune/" "target=_blank" class="button-bordered button-translucent">@MSIntune on Twitter</a></li>
       </ol>
     </aside>
 </article>
