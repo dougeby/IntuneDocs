@@ -6,21 +6,23 @@ layout: HubPage
 <article id="main">
     <section id="hero-content">
       <h1>Microsoft Intune Documentation</h1>
-      <h2>Intune is a key component of <a href="https://docsmsftstage.azurewebsites.net/en-us/EM">Microsoft’s Enterprise Mobility</a> strategy, which enables users to be productive on the devices and applications they love, while helping organizations ensure their corporate assets are secure.</h2>
+      <h2>Everything you need to know to deploy and manage Intune from the cloud can be found here. We'll help you quickly get started using Intune and enable your users to be productive on the devices and applications they love, while helping to ensure corporate assets are secure.</h2>
 <!--
+      <h2>Intune is a key component of <a href="https://docsmsftstage.azurewebsites.net/en-us/EM">Microsoft’s Enterprise Mobility</a> strategy, which enables users to be productive on the devices and applications they love, while helping organizations ensure their corporate assets are secure.</h2>
+
      <h2>The documentation on this site provides everything you need to deploy and manage Intune from the cloud. If you’re a System Center Configuration Manager customer interested in Intune, you can learn more about hybrid mobile device management in the <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx">Configuration Manager documentation library</a>.</p></h2>
 
      <ol id="actions" class="action-list">
         <li><a href="" class="button button-bordered">Learn More</a></li>
       </ol>
 -->
-      <h3>New to Intune? <a href="http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/">Visit our product site &rarr;</a></h3>
+      <h3>Are you interested in extending Configuration Manager's device and app management capabilities with Intune? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">learn more about hybrid mobile device management &rarr;</a></h3>
     </section>
 <!--
     <aside class="alert section-border">
       <p>Ready to get hands-on?</p>
       <ol class="action-list">
-        <li><a href="https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/ems-trial.aspx" class="button-bordered button-translucent">Try Now</a></li>
+        <li><a href="https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/ems-trial.aspx" target="_blank" class="button-bordered button-translucent">Try Now</a></li>
       </ol>
     </aside>
 
@@ -43,7 +45,7 @@ layout: HubPage
         <ul class="column column-half">
           <li><a href="./deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Overview of device and app lifecycles</a></li>
           <li><a href="./deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Configure data loss prevention app policies</a></li>
-          <li><a  href="./plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">What to tell your users</a></li>
+          <li><a  href="./plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">What to tell your end users about Intune</a></li>
         </ul>
       </div>
     </section>
@@ -181,7 +183,7 @@ layout: HubPage
               <a href="">
                 <div class="title column-third">
                   <span class="step-number">3</span>
-                  <p>Deploy &amp; use</p>
+                  <p>Deploy &amp; Use</p>
                 </div>
                 <p class="description column-two-thirds">Manage devices, apps, and data with Intune.
                 </p>
@@ -204,8 +206,8 @@ layout: HubPage
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./deploy-use/protect-data-and-devices-with-microsoft-intune">
-                    <h3>Protect data and devices</h3>
+                  <a href="./deploy-use/protect-apps-and-data-with-microsoft-intune">
+                    <h3>Protect apps and data</h3>
                     <p>Protect your apps against data loss and other threats.</p>
                     <h4>Read</h4>
                   </a>
@@ -255,25 +257,27 @@ layout: HubPage
         </ul>
       </section>
     </div>
-<!--
+
     <div class="section-border">
-      <section class="resources container">
-        <h2 class="section-heading"><span class="icon icon-options"></span> Developer Reference</h2>
-        <div class="resource-list row">
-          <ul class="column-half">
-            <li><a href="">Privileged Access Management REST API Reference</a></li>
-          </ul>
-          <ul class="column-half">
-            <li><a href="">Certificate Management REST API Reference</a></li>
-          </ul>
-        </div>
-      </section>
-    </div>
--->
+         <section class="Additional resources for Intune">
+         <h2 class="section-heading"><span class="icon icon-note"></span>Additional resources for Intune</h2>
+         <div class="resource-list row">
+             <ul class="column-half">
+             <li><a href="https://microsoftintune.uservoice.com/" "target=_blank">User voice for Microsoft Intune</a></li>
+             <li><a href="http://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" "target=_blank">User voice for Microsoft Intune documentation</a></li>
+             <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" "target=_blank">Intune downloads on the TechNet Gallery</a></li>
+             </ul>
+             <ul class="column-half">
+             <li><a href="./em/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" "target=_blank">Fast Track Center benefit for Enterprise Mobility Suite</a></li>
+             <li><a href="https://social.technet.microsoft.com/Forums/home?forum=microsoftintuneprod" "target=_blank">Microsoft Intune TechNet forum</a></li>
+             <li><a href="./troubleshoot/how-to-get-support-for-microsoft-intune#to-create-an-online-service-request">Get support for Microsoft Intune</a></li>
+             </ul>
+         </div>
+
     <aside class="alert alert-social">
       <p>Keep up with news from the Intune team</p>
       <ol class="action-list">
-        <li><a href="http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/" class="button-bordered button-translucent">Blog</a></li>
+        <li><a href="http://blogs.technet.com/b/windowsintune/" "target=_blank" class="button-bordered button-translucent">Blog</a></li>
       </ol>
     </aside>
 </article>
