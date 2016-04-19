@@ -13,7 +13,7 @@ author: robstackmsft
 # Monitor app deployments in Microsoft Intune
 
 ## Monitor an app deployment
-You can see the apps you manage, and their deployment status in the Intune administration console.
+You can see the apps you manage, and the status of any deployments in the Intune administration console.
 
 ### To view the apps you manage and their status
 In the **Apps** workspace, click the **Apps** node, then click **Apps**.
@@ -23,7 +23,7 @@ The list of apps you manage is displayed. You can click on any app to see an ins
 > [!TIP]
 > You can use the **Filters** drop-down list to show only apps that meet the criteria you specify, like apps that failed to install, or apps that were successfully deployed.
 > 
-> ![](./media/App-filters.png)
+> ![App filters example](./media/App-filters.png)
 
 Additionally, the **Dashboard** workspace shows an overview of the status of your apps. If you click anywhere in the overview, you'll be taken to the list of apps.
 
@@ -34,7 +34,5 @@ On the **Software Properties** page for the app, click one of these tabs: **Gene
 
 As before, you can use the **Filters** drop-down list to configure the values shown on each of the tabs.
 
-### See Also
-[Create apps for mobile devices in Microsoft Intune](create-apps-for-mobile-devices-in-microsoft-intune.md)<br>
-[Create apps for Windows PCs in Microsoft Intune](create-apps-for-windows-pcs-in-microsoft-intune.md)
+
 

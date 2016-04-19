@@ -11,7 +11,7 @@ author: NathBarn
 # Computer management capabilities in Microsoft Intune - deleted
 Devices that run Windows 8.1 and Windows 10 can be managed using the Intune client. You can deploy software to your managed computers in a variety of different formats like a Windows Installer, or Windows app package file. You can also deploy links to applications in a store, or links to Web applications.
 
-## <a name="BKMK_ClientReqs"></a>Supported computers
+## Supported computers
 **Operating Systems**: 
 You can install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client on computers that run the following operating systems:
 
@@ -38,7 +38,7 @@ The following are software requirements for installing the [!INCLUDE[wit_nextref
 |Windows Installer 3.1|The computer must have, at a minimum, Windows Installer 3.1.<br /><br />To view the version of Windows Installer on a client computer:<br /><br />-   On the computer, right-click **%windir%\System32\msiexec.exe**, and then click **Properties**.<br /><br />You can download the latest version of Windows Installer from [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) on the Microsoft Developer Network website.|
 |Remove incompatible client software|Before you install the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] client software, you must uninstall the following client software from that computer:<br /><br />-   Any version of [!INCLUDE[cm5short](./includes/cm5short_md.md)]<br />-   Any version of [!INCLUDE[sccmshortname](./includes/sccmshortname_md.md)]<br />-   Any version of Systems Management Server|
 
-## <a name="WIT_Cap"></a>Computer management features
+## Computer management features
 **Intune computer management capabilities:**
 
 -   **Manage software updates.** You can keep computers up-to-date, and manage when updates are applied.

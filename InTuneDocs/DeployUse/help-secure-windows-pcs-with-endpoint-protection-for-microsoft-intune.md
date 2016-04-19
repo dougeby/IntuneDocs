@@ -39,7 +39,7 @@ To switch from your current endpoint protection application to Microsoft Intune 
 > [!NOTE]
 > Intune will not automatically uninstall third-party endpoint protection applications.
 
-## <a name="BKMK_HowtoConf"></a>How to configure Microsoft Intune Endpoint Protection
+## How to configure Microsoft Intune Endpoint Protection
 Use the following steps to help you configure Endpoint Protection for Microsoft Intune.
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Policy** > **Add Policy**.
