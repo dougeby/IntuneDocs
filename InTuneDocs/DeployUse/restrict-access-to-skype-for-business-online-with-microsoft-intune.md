@@ -68,7 +68,7 @@ For details about how to configure the compliance policy, see [Manage device com
 
 When you are ready, continue to **Step 3**.
 
-### <a name="BKMK_OneDrive"></a>Step 3: Configure the Skype for Business Online policy
+### Step 3: Configure the Skype for Business Online policy
 Next, configure the policy to require that only managed and compliant devices can access Skype for Business Online. This policy will be will be stored in Azure Active Directory.
 
 #### <a name="bkmk_spopolicy"></a>
