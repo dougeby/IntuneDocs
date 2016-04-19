@@ -10,16 +10,15 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 author: Staciebarker
 ---
 
-# <a name="BKMK_win10m_wp81_sync_manually"></a>Sync your device manually
+# Sync your device manually
 If your app installation is taking too long, use the following instructions to manually sync your Windows device, which might help to speed up the installation. Use the instructions that match the type of device you have:
 
-* [Windows 10 Mobile](#BKMK_win10mobile_sync)
-* [Windows 10 Desktop](#BKMK_win10_desktop_sync)
-* [Windows Phone 8.1](#BKMK_winphone81_sync)
+* [Windows 10 Mobile](#windows-10-mobile)
+* [Windows 10 Desktop](##windows-10-desktop)
+* [Windows Phone 8.1](#windows-phone-8.1)
 
 
-
-## <a name="BKMK_win10mobile_sync"></a>Windows 10 Mobile
+## Windows 10 Mobile
 To manually sync your Windows 10 Mobile device to speed up a slow app installation:
 
 1. Go to **All apps** > **Settings** > **Accounts**.
@@ -40,7 +39,7 @@ To manually sync your Windows 10 Mobile device to speed up a slow app installati
     
     The message “We’re synching your account” displays at the top of the screen. The Sync button is grayed out until your device finishes syncing.
 
-## <a name="BKMK_win10_desktop_sync"></a>Windows 10 desktop
+## Windows 10 desktop
 To manually sync your Windows 10 desktop device to speed up a slow app installation:
 
 1. Select the **Start** button, as shown below, and then select **Settings**.
@@ -65,7 +64,7 @@ To manually sync your Windows 10 desktop device to speed up a slow app installat
    
    The button becomes grayed out until the sync is complete.
 
-## <a name="BKMK_winphone81_sync"></a>Windows Phone 8.1
+## Windows Phone 8.1
 To manually sync your Windows Phone 8.1 device to speed up a slow app installation:
 
 1. Go to **All apps** > **Settings** > **workplace**.

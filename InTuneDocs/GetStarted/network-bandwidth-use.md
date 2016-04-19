@@ -15,7 +15,7 @@ Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], revi
 
 Use the information in the following sections to plan for network traffic for [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] clients.
 
-## <a name="BKMK_AverageTraffic"></a>Average network traffic
+## Average network traffic
 The following table lists the approximate size and frequency of common content that travels across the network for each client.
 
 > [!NOTE]
@@ -36,10 +36,10 @@ The following table lists the approximate size and frequency of common content t
 |Service packs|Varies<br /><br />The size varies for each service pack you deploy.|**Varies**<br /><br />Depends on when you deploy service packs.|
 |Software distribution|Varies<br /><br />The size depends on the software you deploy.|**Varies**<br /><br />Depends on when you deploy software.|
 
-## <a name="BKMK_ReduceBandwidth"></a>Ways to reduce network bandwidth use
+## Ways to reduce network bandwidth use
 You can use one or more of the following methods to reduce network bandwidth use for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] clients.
 
-### <a name="BKMK_UseProxy"></a>Use a proxy server to cache content requests
+### Use a proxy server to cache content requests
 You can use a proxy server that can cache content to reduce duplicate downloads and reduce the use of network bandwidth by clients that request content from the Internet.
 
 A caching proxy server receives requests for content from client computers on your network, retrieves that content from the Internet, and can then cache both HTTP responses and binary downloads. The server uses the cached information to answer subsequent requests from [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] client computers.
@@ -53,12 +53,12 @@ The following are typical settings to use for a proxy server that caches content
 |Object types to cache|HTTP<br /><br />HTTPS<br /><br />BITS|[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] packages are CAB files retrieved by Background Intelligent Transfer Service (BITS) download over HTTP.|
 For information about using a proxy server to cache content, see the documentation for your proxy server solution.
 
-### <a name="BKMK_UseBITS"></a>Use Background Intelligent Transfer Service on computers
+### Use Background Intelligent Transfer Service on computers
 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] supports using Background Intelligent Transfer Service (BITS) on a Windows computer to reduce the network bandwidth that is used during the hours that you configure. You can configure policy for BITS on the **Network bandwidth** page of the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Agent policy.
 
 To learn more about BITS and Windows computers, see [Background Intelligent Transfer Service](http://technet.microsoft.com/library/bb968799.aspx) in the TechNet Library.
 
-### <a name="BKMK_UseBrancCache"></a>Use BranchCache on computers
+### Use BranchCache on computers
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] clients can use BranchCache to reduce wide area network (WAN) traffic. The following operating systems that are supported as clients also support BranchCache:
 
 -   [!INCLUDE[nextref_client_7](../includes/nextref_client_7_md.md)]

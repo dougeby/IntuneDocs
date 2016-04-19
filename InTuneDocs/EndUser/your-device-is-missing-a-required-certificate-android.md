@@ -1,5 +1,5 @@
 ---
-title: Your Android device is missing a required certificate
+title: Your device is missing a required certificate
 ms.reviewer: na
 ms.custom: na
 ms.service: microsoft-intune
@@ -10,8 +10,8 @@ ms.assetid:
 author: staciebarker
 ---
 
-# <a name="BKMK_andr_cert_missing"></a>Your Android device is missing a required certificate
-If your device isn’t enrolled in Intune, and it’s missing a certificate that usually comes installed on your phone, you won’t be able to sign in to the Android Company Portal app. When you try to sign in, you’ll see the following message:
+# Your device is missing a required certificate
+If your Android device isn’t enrolled in Intune, and it’s missing a certificate that usually comes installed on your phone, you won’t be able to sign in to the Android Company Portal app. When you try to sign in, you’ll see the following message:
 
 ![andr-cert-install-cert-missing](./media/andr-cert_install-1-cert_missing.png)
 

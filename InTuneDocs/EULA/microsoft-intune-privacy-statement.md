@@ -18,28 +18,28 @@ Microsoft is committed to protecting your privacy. This privacy statement applie
 
 **Notice to End Users:** All references to “you” or “your” in this privacy statement are to the customers who contract with Microsoft for the Services.   Microsoft’s customers, in turn, may use the Services to develop, provide and host services for their end users. Any information Microsoft collects or handles through the Services is processed for our customers. End users should direct privacy-related requests to the entity providing services to the end user.  Microsoft is not responsible for the privacy practices of our customers or other third parties except as specifically provided in your agreement(s) with Microsoft.
 
--   **[Customer Data](#bkmk_CustomerData)**
+-   **[Customer Data](#customer-data)**
 
--   **[Administrator Data](#bkmk_AdministratorData)**
+-   **[Administrator Data](#administrator-data)**
 
--   **[Payment Instrument Information](#bkmk_PII)**
+-   **[Payment Instrument Information](#payment-instrument-information)**
 
--   **[Sharing Your Information](#bkmk_SYI)**
+-   **[Sharing Your Information](#sharing-your-information)**
 
--   **[Security](#bkmk_Security)**
+-   **[Security](#security)**
 
--   **[Specific Features](#bkmk_SpecificFeatures)**
+-   **[Specific Features](#specific-features)**
 
--   **[Other Information](#bkmk_OtherInformation)**
+-   **[Other Information](#other-information)**
 
--   **[Cookies and Other Technologies](microsoft-intune-privacy-statement.md#bkmk_CookiesandOtherTechnologies)**
+-   **[Cookies and Other Technologies](cookies-and-other-technologies)**
 
-## <a name="bkmk_CustomerData"></a>Customer Data
+## Customer Data
 We will use Customer Data (as defined in your agreement(s) with Microsoft) only to provide you the Services.  This may include troubleshooting aimed at preventing, detecting or repairing problems affecting the operation of those services and the improvement of features that involve the detection of, and protection against, emerging and evolving threats to users (such as malware or spam).
 
 Our personnel will not process Customer Data without authorization. Our personnel are obligated to maintain the confidentiality of any Customer Data and this obligation continues even after their engagement ends.
 
-## <a name="bkmk_AdministratorData"></a>Administrator Data
+## Administrator Data
 Administrator Data is the contact information of Services purchasers and administrators collected as part of purchasing or administering the Services.  For example, Administrator Data includes the name, address, phone and email of the account owner and the email of IT Administrators, whether collected at initial purchase or later during administration of the Services.
 
 Administrator Data will be used to complete the transactions you have requested, for service improvement, and for the detection and prevention of fraud.   In limited circumstances, Microsoft may share Administrator Data with third parties for purposes of fraud prevention.
@@ -48,7 +48,7 @@ We may contact Administrators to provide information about new subscriptions, bi
 
 With permission, we may also contact administrators regarding information and offers about products and services offered by Microsoft or its affiliates, or to request your feedback.  If you do not wish to receive these communications, you may stop them by editing **My Profile** from the **Account Portal** to change your **Contact Preference** settings. Administrators may also click the appropriate link at the bottom of any email to stop receiving emails of that type (other than service emails).
 
-## <a name="bkmk_PII"></a>Payment Instrument Information
+## Payment Instrument Information
 When you make online purchases, you will be asked to provide payment information, which may include your payment instrument number (*e.g.*, credit card, PayPal), your name and billing address, and the security code associated with your payment instrument (*e.g.*, the CSV).   This section provides additional information regarding the collection and use of your payment information.
 
 The payment information you provide will be used to complete your transaction, as well as for the detection and prevention of fraud.  In support of these uses, Microsoft may share information with banks and other entities that process payment transactions, and for fraud prevention and credit risk reduction.
@@ -59,7 +59,7 @@ You may update or remove the payment instrument information associated with your
 
 The Microsoft Commerce Platform complies with the Payment Card Industry Data Security Standards (PCI DSS), a global standard for the safe handling of payment data.  Please note, however, that the Service does not support PCI compliance for Customer Data stored or process within the Service.
 
-## <a name="bkmk_SYI"></a>Sharing Your Information
+## Sharing Your Information
 In addition to any sharing by Microsoft set forth in your agreement(s) with Microsoft, or in this Privacy Statement, Microsoft may share or disclose your information:
 
 -   With your permission or with permission from the Services administrator or end user.
@@ -72,10 +72,10 @@ In addition to any sharing by Microsoft set forth in your agreement(s) with Micr
 
 We will not disclose Customer Data to a third party (including law enforcement, other government entity or civil litigant; excluding our vendors or subcontractors) except as you direct or as required by law.  Should a third party contact us with a demand for Customer Data, we will attempt to redirect the third party to request it directly from you.  As part of that, we may provide basic administrator contact information to the third party.  If compelled to disclose Customer Data to a third party, we will use commercially reasonable efforts to notify you in advance of a disclosure unless legally prohibited from doing so.  Microsoft may share Administrator Data or Payment Instrument with third parties for purposes of fraud prevention or to process payment transactions, as further described above. Please note the Services may include links to third-party services whose privacy practices may differ from those of Microsoft.  Your use of such services, and any information you provide to a third party, is governed by their privacy statements. We encourage you to review these third-party privacy statements.
 
-## <a name="bkmk_Security"></a>Security
+## Security
 Microsoft is committed to helping protect the security of your information. We use a variety of security technologies and procedures to help protect your information from unauthorized access, use, or disclosure.   For example, we store the information you provide on computer systems with limited access, which are located in controlled facilities.
 
-## <a name="bkmk_SpecificFeatures"></a>Specific Features
+## Specific Features
 This section contains important privacy information about specific features of [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]. This is not a complete list of all features.
 
 IMPORTANT NOTE: This Privacy Statement is provided to Microsoft’s Customers.   Microsoft’s customers are responsible for securing rights to their Customer Data necessary for us to provide the Services without violating the rights of any third party.   IT Administrators may choose to publish their own company privacy policy visible to end users in the Company Portal experiences.  [Learn More](http://go.microsoft.com/fwlink/?LinkId=265345).   End users should direct privacy-related requests to their IT Administrators.
@@ -112,39 +112,39 @@ IMPORTANT NOTE: This Privacy Statement is provided to Microsoft’s Customers.  
 
 -   **License Management:** IT Administrators can track certain Microsoft volume licensing agreements against actual software installations. IT Administrators can also track certain Microsoft retail software licenses, Original Equipment Manufacturer (OEM) licenses for Microsoft software, and third-party software licenses. This feature is provided for convenience only and accuracy of the licensing is not guaranteed. You should not rely on it to confirm compliance with Microsoft or third-party licensing agreements. The information sent to the Services includes a Computer’s globally unique identifier (GUID) and volume license agreement numbers. This information is anonymized and used to improve the Service. We will not use the information collected to investigate potential violations of or compliance with other agreements you may have with us, our affiliates or third party software licensors.
 
-## <a name="bkmk_OtherInformation"></a>Other Information
+## Other Information
 Learn More about:
 
--   [Data Location](#bkmk_DataLocation)
+-   [Data Location](#data-location)
 
--   [Usage Data and Analytics](#bkmk_UDaA)
+-   [Usage Data and Analytics](#usage-data-and-analytics)
 
--   [Support Services](#bkmk_SupportServices)
+-   [Support Services](#support-services)
 
--   [Authentication Services](#bkmk_AuthenticationServices)
+-   [Authentication Services](#authentication-services)
 
--   [Changes to this Privacy Statement](#bkmk_Changes)
+-   [Changes to this Privacy Statement](#changes-to-this-privacy-statement)
 
--   [How to Contact Us](#bkmk_ContactUs)
+-   [How to Contact Us](#how-to-contact-us)
 
-### <a name="bkmk_DataLocation"></a>Data Location
+### Data Location
 Data may be transferred to and stored and processed in the United States or any other country where Microsoft or its affiliates, subsidiaries or service providers maintain facilities. Microsoft abides by the U.S.-EU Safe Harbor Framework and the U.S.-Swiss Safe Harbor Framework as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of data from the European Economic Area, and Switzerland. To learn more about the Safe Harbor program, and to view our certification, please visit http://www.export.gov/safeharbor/.
 
-### <a name="bkmk_UDaA"></a>Usage Data and Analytics
+### Usage Data and Analytics
 We may use aggregated statistical data, trends and usage information derived from your use of the Services for the purpose of providing, operating, maintaining or improving the Services as well as any Microsoft products and services used to deliver the Services.
 
-### <a name="bkmk_SupportServices"></a>Support Services
+### Support Services
 Microsoft’s support for the Services is subject to the privacy statement set forth at [http://privacy.microsoft.com/support.mspx](http://privacy.microsoft.com/support.mspx).
 
-### <a name="bkmk_AuthenticationServices"></a>Authentication Services
+### Authentication Services
 You may configure a work or school account to allow you and end users to authenticate to the Services, as well as other Microsoft or third party services or web properties. Use of those other services or web properties is subject to the privacy statement for those other services and web properties.
 
 By signing into one Microsoft service, you may be automatically signed into other services that use these credentials.
 
-### <a name="bkmk_Changes"></a>Changes to this Privacy Statement
+### Changes to this Privacy Statement
 We will occasionally update our privacy statements to reflect customer feedback and changes in our Services. When we post changes to a statement, we will revise the "last updated" date at the top of the statement. If there are material changes to the statement or in how Microsoft will use your information, we will notify you either by posting a notice of such changes before they take effect or by directly sending you a notification. We encourage you to periodically review the privacy statements for the products and services you use to learn how Microsoft is protecting your information.
 
-### <a name="bkmk_ContactUs"></a>How to Contact Us
+### How to Contact Us
 Microsoft welcomes your comments.  If you believe that Microsoft is not adhering to its privacy or security commitments, please contact us by using this email address [mwiprivex@microsoft.com](mailto:mwiprivex@microsoft.com).  If you have a technical or other customer support question please click to learn more about [ Microsoft Intune Support](http://go.microsoft.com/fwlink/?LinkID=242283) offerings.
 
 ### Microsoft Intune Privacy
@@ -152,7 +152,7 @@ Microsoft Corporation
 Microsoft Way
 Redmond, Washington, 98052-6399 USA
 
-## <a name="bkmk_CookiesandOtherTechnologies"></a>Cookies and Other Technologies
+## Cookies and Other Technologies
 Most Microsoft web sites use "cookies," which are small text files placed on a device’s hard disk by a web server.  We may use cookies for:
 
 -   Storing Users’ Preferences and Settings. When a user enters a city or postal code to get local news or weather information on a Microsoft site, we may store that city or postal code in a cookie.  This can save time by eliminating the need to repeatedly enter the same information.
