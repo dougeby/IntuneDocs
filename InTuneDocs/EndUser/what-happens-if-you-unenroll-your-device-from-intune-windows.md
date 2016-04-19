@@ -14,12 +14,12 @@ author: Staciebarker
 
 When you uninstall the Company Portal app from your device, it also unenrolls your device from Intune. For additional information about what happens, use the link that matches the type of device you're using.
 
-- [Windows 10 mobile, 8.1, Windows 8, Windows 7, Vista](#BKMK_what_happs_unenroll_win10_81_8_7_vista)
-- [Windows 10, Windows 8.1 or Windows Phone 8](#BKMK_what_happens_unenroll_wp10_81)
-- [Windows RT running Windows 8.1 or Windows RT](#BKMK_what_happens_unenroll_win81_rt)
+- [Windows 10 mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile,-8.1,-windows-8,-windows-7,-vista)
+- [Windows 10, Windows 8.1 or Windows Phone 8](#windows-10,-windows-8.1-or-windows-phone-8)
+- [Windows RT running Windows 8.1 or Windows RT](#windows-rt-running-windows-8.1-or-windows-rt)
 
 
-## <a name="BKMK_what_happs_unenroll_win10_81_8_7_vista">Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
+## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
 
 -   Your device won’t appear in the Company Portal anymore, and you can’t install apps from the Company Portal anymore.
 
@@ -44,7 +44,7 @@ In addition, for Windows 8.1:
 
 -   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.
 
-## <a name="BKMK_what_happens_unenroll_wp10_81">Windows 10 mobile, Windows Phone 8.1 or Windows Phone 8
+## Windows 10 mobile, Windows Phone 8.1 or Windows Phone 8
 
 -   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the Company Portal anymore, and you won't be able to install apps from the Company Portal app or Company Portal website.
 
@@ -55,7 +55,7 @@ In addition, for Windows 8.1:
     > [!IMPORTANT]
     > The only exception to this is encryption policies, which will still apply. If your company policy required that your Windows Phone be encrypted, the only way to unencrypt your phone is to reset your phone using the **Settings** menu on your Windows Phone.
 
-## <a name="BKMK_what_happens_unenroll_win81_rt">Windows RT running Windows 8.1 or Windows RT
+## Windows RT running Windows 8.1 or Windows RT
 
 -   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the Company Portal anymore, and you won't be able to install apps from the Company Portal.
 

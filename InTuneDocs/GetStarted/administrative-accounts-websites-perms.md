@@ -20,7 +20,7 @@ To administer Intune, you'll use:
 
 The following sections explain these accounts and portals.
 
-## <a name="BKMK_AdminAccounts"></a>Intune administrator accounts and special permissions
+## Intune administrator accounts and special permissions
 
 Below are the accounts and permissions that you'll use for Intune.
 
@@ -43,7 +43,7 @@ Below are the accounts and permissions that you'll use for Intune.
 |Device enrollment managers are standard user accounts that have additional permission to enroll more than five devices.|By default, each [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] user can enroll up to five devices. However, you can give a user account the device enrollment manager permission and then use that account to enroll large groups of corporate-owned devices. This is useful when the devices might be assigned to users on a temporary basis, or might serve in a kiosk mode where a user-to-device association is not required.|
 
 
-## <a name="BKMK_AdminWebsites"></a>Administrative websites for Intune
+## Administrative websites for Intune
  Different administrative tasks require you to use one of the following administrative websites, which you can access using a [supported web browser](supported-web-browsers.md).
 
 - [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)

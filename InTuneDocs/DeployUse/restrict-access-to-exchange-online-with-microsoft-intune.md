@@ -101,7 +101,7 @@ Make sure you [create](create-a-device-compliance-policy-in-microsoft-intune.md)
 > [!IMPORTANT]
 > If you have not deployed a compliance policy, the devices will be considered compliant and will be allowed access to Exchange.
 
-### <a name="bkmk_Eval_FX_CAP"></a>Step 2: Evaluate the effect of the conditional access policy
+### Step 2: Evaluate the effect of the conditional access policy
 You can use the **Mobile Device Inventory Reports** to identify the devices that might be blocked from accessing Exchange after you configure the conditional access policy.
 
 To do this, configure a connection between [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and Exchange by using the [Microsoft Intune service-to-service connector](intune-service-to-service-exchange-connector.md).
@@ -136,7 +136,7 @@ Devices that are part of a targeted group will be blocked from accessing Exchang
 ----------------------
 You can export the contents of the report and use the **Email Address** column to tell your users that they will be blocked.
 
-### <a name="BKMK_configUserGroups"></a>Step 3: Configure user groups for the conditional access policy
+### Step 3: Configure user groups for the conditional access policy
 Conditional access policies are targeted to different Azure Active Directory security groups of users. You can also exempt certain user groups from this policy.  When a user is targeted by a policy, each device they use must be compliant in order to access email.
 
 You can configure these groups in the **Office 365 admin center**, or the **Intune account portal**.
