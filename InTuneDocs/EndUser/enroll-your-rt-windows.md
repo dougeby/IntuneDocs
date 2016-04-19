@@ -17,8 +17,7 @@ These instructions are for a Windows RT device that is earlier than 8.1. If you 
 If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. Enrolling your devices enables your organization to keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 
-### <a name="BKMK_enrollment_rt"></a>Windows RT
-To enroll your device:
+To enroll your Windows RT device:
 
 1.  Tap **Start**, and then type **System Configuration**.
 
