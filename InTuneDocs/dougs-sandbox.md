@@ -13,16 +13,16 @@ author: dougeby
 
 ## Lifecycle images - white background
 
-![Image1](.\media\Sandbox\Device_AppsLifecycle.png)
+![Image1](.\media\Sandbox\Device_AppsLifecyclev2.png)
 <div/>
-![Image1](.\media\Sandbox\AppLifecycle_Staticv8.png)
+![Image1](.\media\Sandbox\AppLifecycle_Staticv9.png)
 <div/>
 ![Image1](.\media\Sandbox\DeviceLifecycle.png)
 
 ## Lifecycle images - no background
-![Image1](.\media\Sandbox\Device_AppsLifecycle_noBG.png)
+![Image1](.\media\Sandbox\Device_AppsLifecyclev2_noBG.png)
 <div/>
-![Image1](.\media\Sandbox\AppLifecycle_Staticv8_noBG.png)
+![Image1](.\media\Sandbox\AppLifecycle_Staticv9_noBG.png)
 <div/>
 ![Image1](.\media\Sandbox\DeviceLifecycle_noBG.png)
 
