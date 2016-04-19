@@ -6,7 +6,7 @@ layout: HubPage
 <article id="main">
     <section id="hero-content">
       <h1>Microsoft Intune Documentation</h1>
-      <h2>Everything you need to know about to deploy and manage Intune from the cloud can be found here. We'll help you quickly get started using Intune to enable your users to be productive on the devices and applications they love, while helping to ensure corporate assets are secure.</h2>
+      <h2>Everything you need to know to deploy and manage Intune from the cloud can be found here. We'll help you quickly get started using Intune and enable your users to be productive on the devices and applications they love, while helping to ensure corporate assets are secure.</h2>
 <!--
       <h2>Intune is a key component of <a href="https://docsmsftstage.azurewebsites.net/en-us/EM">Microsoft’s Enterprise Mobility</a> strategy, which enables users to be productive on the devices and applications they love, while helping organizations ensure their corporate assets are secure.</h2>
 
@@ -16,7 +16,7 @@ layout: HubPage
         <li><a href="" class="button button-bordered">Learn More</a></li>
       </ol>
 -->
-      <h3>Are you a System Center Configuration Manager customer interested in extending your device and app management capabilities with Intune? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">learn more about hybrid mobile device management &rarr;</a></h3>
+      <h3>Are you interested in extending Configuration Manager's device and app management capabilities with Intune? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">learn more about hybrid mobile device management &rarr;</a></h3>
     </section>
 <!--
     <aside class="alert section-border">
@@ -269,7 +269,7 @@ layout: HubPage
              </ul>
              <ul class="column-half">
              <li><a href="./em/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" "target=_blank">Fast Track Center benefit for Enterprise Mobility Suite</a></li>
-             <li><a href="https://social.technet.microsoft.com/Forums/home?category=microsoftintune" "target=_blank">Microsoft Intune TechNet forum</a></li>
+             <li><a href="https://social.technet.microsoft.com/Forums/home?forum=microsoftintuneprod" "target=_blank">Microsoft Intune TechNet forum</a></li>
              <li><a href="./troubleshoot/how-to-get-support-for-microsoft-intune#to-create-an-online-service-request">Get support for Microsoft Intune</a></li>
              </ul>
          </div>
