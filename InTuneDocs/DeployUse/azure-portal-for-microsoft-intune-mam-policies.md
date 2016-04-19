@@ -18,7 +18,7 @@ Azure portal supports creating MAM policies for:
 - Apps running on devices that are **not enrolled** in any MDM solution.
 - Apps running on devices that are **enrolled in a third party MDM solution**.
 
-If you are currently using the **Intune admin console** to manage your devices, you can [create a MAM policy](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) that supports apps for devices enrolled in Intune using the Intune admin console.
+If you are currently using the **Intune admin console** to manage your devices, you can create a MAM policy that supports apps for devices enrolled in Intune using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 >[!IMPORTANT]
 > You may not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies.
 

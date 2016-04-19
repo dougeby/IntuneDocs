@@ -46,13 +46,9 @@ The term **Policy managed apps** is used to refer to apps that are configured wi
   If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
     **Default value = Yes**
-- **Encrypt app data:** For apps that are associated with a [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] mobile app management policy, encryption is provided by Microsoft. Data is encrypted synchronously during file I/O operations according to the setting in the mobile app management policy.
+- **Encrypt app data:** Choose **Yes** to enable encryption. When this setting is enabled, for apps that are associated with a mobile app management policy, encryption is provided by Microsoft. Data is encrypted synchronously during file I/O operations. Content on the device storage is always be encrypted.
 
-  Managed apps on Android use AES-128 encryption in CBC mode utilizing the platform cryptography libraries. The encryption method is not FIPS 140-2 certified. SHA-256 encryption is supported as an explicit instruction using the SigAlg parameter and will only work on devices 4.2 and above. Content on the device storage is always be encrypted.
-
-  When you set this to Yes, the end-user is required to setup and use a PIN to access their device.  If there is not PIN setup for device access, the apps will not launch and the end-user will be prompted to set a PIN with a message -*“Your company has required that you must first enable a device PIN to access this application.”*
-
-  **Default value = Encryption option is not selected**
+  **Default value = Yes**
 
 - **ContactSyncDisabled:** Choose **Yes** to prevent contact information from synchronizing to the native address book app on the device. If you choose **No**, the app will save the  contact information to the native address book app on the device.<br/>When you do a selective wipe to remove company data, contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this is applicable only to the **Microsoft Outlook** app.
 
@@ -81,7 +77,3 @@ The term **Policy managed apps** is used to refer to apps that are configured wi
 
   **Default value = 90 days**
 - **Block screen capture and Android Assistant (Android 6 Marshmallow or later):** Choose **Yes** to block screen capture and **Android Assistant** capabilities of the device when using this app.
-
->[!div class="step-by-step"]
-[<<Create and Deploy a MAM policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)  
-[Monitor compliance>>](monitor-mobile-app-management-policies-with-microsoft-intune.md)
