@@ -7,7 +7,7 @@ ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-author: robstackmsft
+author: NathBarn
 ---
 # Install the Windows PC client with Microsoft Intune
 Use this guide to help you get your Windows PCs managed by the Microsoft Intune client software.
@@ -18,23 +18,25 @@ Before you start installing the Intune client software, read the topic [Resolve 
 ## Get the client installed
 Use these steps get the client installed:
 
--   [To download the client software](install-the-windows-pc-client-with-microsoft-intune.md#BKMK_DL)
+-   [To download the client software](#to-download-the-client-software)
 
 Then use one or more of the following methods to get the client installed:
 
--   [To manually deploy the client software](install-the-windows-pc-client-with-microsoft-intune.md#BKMK_Manual)
+-   [To manually deploy the client software](#to-manually-deploy-the-client-software)
 
--   [To automatically deploy the client software by using Group Policy](install-the-windows-pc-client-with-microsoft-intune.md#BKMK_GP)
+-   [To automatically deploy the client software by using Group Policy](#to-automatically-deploy-the-client-software-by-using-group-policy)
 
--   [How users can self-enroll their computers](install-the-windows-pc-client-with-microsoft-intune.md#BKMK_Allow)
+-   [How users can self-enroll their computers](#how-users-can-self-enroll-their-computers)
 
--   [Install the Microsoft Intune client software as part of an image](install-the-windows-pc-client-with-microsoft-intune.md#BKMK_Image)
+-   [Install the Microsoft Intune client software as part of an image](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
 If you no longer need to manage a computer with Intune, you can retire the computer, which also removes the client software from the computer. For more information, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
-## To download the client software
+### To download the client software
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Client Software Download**
+
+  ![](../media/pc-SA-client-download.png)
 
 2.  On the **Client Software Download** page, click **Download Client Software** and save the **Microsoft_Intune_Setup.zip** package containing the software to a secure location on your network.
 
@@ -46,14 +48,14 @@ If you no longer need to manage a computer with Intune, you can retire the compu
     > [!IMPORTANT]
     > Do not rename or remove the **ACCOUNTCERT** file that is extracted or the client software installation will fail.
 
-## To manually deploy the client software
+### To manually deploy the client software
 
 1.  On a computer, browse to the folder where the client software installation files are located, and then run **Microsoft_Intune_Setup.exe** to install the client software.
 
     > [!NOTE]
     > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
 
-## To automatically deploy the client software by using Group Policy
+### To automatically deploy the client software by using Group Policy
 
 1.  In the folder that contains the files **Microsoft_Intune_Setup.exe** and **MicrosoftIntune.accountcert**, run the following command to extract the Windows Installer-based installation programs for 32-bit and 64-bit computers:
 
@@ -70,7 +72,7 @@ If you no longer need to manage a computer with Intune, you can retire the compu
 
     For more information about how to use Group Policy to automatically deploy software, see your Windows Server documentation.
 
-## How users can self-enroll their computers
+### How users can self-enroll their computers
 Users can self-enroll each of their computers through the Intune company portal. Each enrolled computer is linked to the user account that was used to install the client software.
 
 > [!NOTE]
@@ -92,7 +94,7 @@ Users can self-enroll each of their computers through the Intune company portal.
 
 5.  When the setup wizard has completed, click **Finish**.
 
-## Install the Microsoft Intune client software as part of an image
+### Install the Microsoft Intune client software as part of an image
 You can deploy the Intune client software to computers as part of an operating system image by using the following example procedure as a basis:
 
 1.  Copy the client installation files, **Microsoft_Intune_Setup.exe** and **MicrosoftIntune.accountcert** to the **%Systemdrive%\Temp\Microsoft_Intune_Setup** folder on the reference computer.
@@ -147,4 +149,3 @@ Use one of the following procedures to help you monitor and validate successful 
 
 ### See Also
 [Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
-
