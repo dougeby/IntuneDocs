@@ -19,7 +19,6 @@
 #### [Enroll with device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 #### [Tag devices with IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 ### [MDM with Exchange ActiveSync](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
-#### [Exchange connector requirements](intune-exchange-connector-requirements.md)
 #### [Exchange ActiveSync on-premises](intune-on-premises-exchange-connector.md)
 #### [Exchange ActiveSync online](intune-service-to-service-exchange-connector.md)
 #### [Exchange access rules](exchange-access-rules-for-mobile-devices.md)
