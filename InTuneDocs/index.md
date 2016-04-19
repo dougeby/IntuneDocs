@@ -259,7 +259,7 @@ layout: HubPage
              </ul>
              <ul class="column-half">
              <li><a href="../em/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Fast Track Center for Enterprise Mobility Suite</a></li>
-             <li><a href="https://social.technet.microsoft.com/Forums/home?forum=microsoftintuneprod" target="_blank">Microsoft Intune TechNet forum</a></li>
+             <li><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc" target="_blank">Microsoft Intune TechNet forum</a></li>
              <li><a href="./troubleshoot/how-to-get-support-for-microsoft-intune#to-create-an-online-service-request" target="_blank">Get support for Microsoft Intune</a></li>
              </ul>
          </div>
