@@ -11,13 +11,29 @@ author: dougeby
 
 ---
 
+## Lifecycle images - white background
+
+![Image1](.\media\Sandbox\Device_AppsLifecycle.png)
+<div/>
+![Image1](.\media\Sandbox\AppLifecycle_Staticv8.png)
+<div/>
+![Image1](.\media\Sandbox\DeviceLifecycle.png)
+
+## Lifecycle images - no background
+![Image1](.\media\Sandbox\Device_AppsLifecycle_noBG.png)
+<div/>
+![Image1](.\media\Sandbox\AppLifecycle_Staticv8_noBG.png)
+<div/>
+![Image1](.\media\Sandbox\DeviceLifecycle_noBG.png)
+
+
 
 
 ## Image map test
 
 <p>Click one of the links to go to the web page:</p>
 
-<img src=".\media\sandbox\appmgmtflow.png" alt="Planets" usemap="#appmgmtmap" style="width:675px;height:952px;">
+<img src=".\media\sandbox\appmgmtflow.png" alt="" usemap="#appmgmtmap" style="width:675px;height:952px;">
 
 <map name="appmgmtmap">
   <area shape="rect" coords="0,649,295,679" alt="DeployConfigApps" href="https://technet.microsoft.com/library/dn646965.aspx">
