@@ -6,7 +6,7 @@ layout: HubPage
 <article id="main">
     <section id="hero-content">
       <h1>Microsoft Intune Documentation</h1>
-      <h2>Everything you need to know to deploy and manage Intune from the cloud can be found here. We'll help you quickly get started using Intune and enable your users to be productive on the devices and applications they love, while helping to ensure corporate assets are secure.</h2>
+      <h2>Everything you need to know to deploy and manage Intune from the cloud can be found here. We'll help you quickly get started using Intune and enable your users to be productive on the devices and applications they love, while helping to ensure corporate assets are secure.<h3>test</h3></h2>
 <!--
       <h2>Intune is a key component of <a href="https://docsmsftstage.azurewebsites.net/en-us/EM">Microsoft’s Enterprise Mobility</a> strategy, which enables users to be productive on the devices and applications they love, while helping organizations ensure their corporate assets are secure.</h2>
 
@@ -16,7 +16,7 @@ layout: HubPage
         <li><a href="" class="button button-bordered">Learn More</a></li>
       </ol>
 -->
-      <h3>Want to extend Configuration Manager's management capabilities with Intune? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">learn more about hybrid mobile device management &rarr;</a></h3>
+      <h3>Want to extend Configuration Manager capabilities with Intune? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">Learn more about hybrid mobile device management &rarr;</a></h3>
     </section>
 <!--
     <aside class="alert section-border">
@@ -89,7 +89,7 @@ layout: HubPage
                   </a>
                 </li>
               </ul>
-            <a href="./understand-explore/introduction-to-microsoft-intune" class="see-more">See More &rarr;</a>
+            <a href="./understand-explore/introduction-to-microsoft-intune" class="see-more">See More</a>
             </section>
           </li>
 
@@ -127,7 +127,7 @@ layout: HubPage
                 </a>
               </li>
             </ul>
-          <a href="./get-started/what-to-know-before-you-start-microsoft-intune" class="see-more">See More &rarr;</a>
+          <a href="./get-started/what-to-know-before-you-start-microsoft-intune" class="see-more">See More</a>
           </li>
 
 
@@ -205,7 +205,7 @@ layout: HubPage
                   </a>
                 </li>
               </ul>
-              <a href="./deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune" class="see-more">See More &rarr;</a>
+              <a href="./deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune" class="see-more">See More</a>
           </li>
 
 
@@ -242,33 +242,33 @@ layout: HubPage
                 </li>
               </ul>
           </li>
-          <a href="./troubleshoot/how-to-get-support-for-microsoft-intune" class="see-more">See More &rarr;</a>
+          <a href="./troubleshoot/how-to-get-support-for-microsoft-intune" class="see-more">See More</a>
           </section>
         </ul>
       </section>
     </div>
 
     <div class="section-border">
-         <section class="Additional resources for Intune">
+         <section class="resources container">
          <h2 class="section-heading"><span class="icon icon-note"></span>Additional resources for Intune</h2>
          <div class="resource-list row">
              <ul class="column-half">
-             <li><a href="https://microsoftintune.uservoice.com/" "target=_blank">User voice for Microsoft Intune</a></li>
-             <li><a href="http://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" "target=_blank">User voice for Microsoft Intune documentation</a></li>
-             <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" "target=_blank">Intune downloads on the TechNet Gallery</a></li>
+             <li><a href="https://microsoftintune.uservoice.com/" target="_blank">User voice for Microsoft Intune</a></li>
+             <li><a href="http://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" target="_blank">User voice for Microsoft Intune documentation</a></li>
+             <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune downloads on the TechNet Gallery</a></li>
              </ul>
              <ul class="column-half">
-             <li><a href="./em/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" "target=_blank">Fast Track Center benefit for Enterprise Mobility Suite</a></li>
-             <li><a href="https://social.technet.microsoft.com/Forums/home?forum=microsoftintuneprod" "target=_blank">Microsoft Intune TechNet forum</a></li>
-             <li><a href="./troubleshoot/how-to-get-support-for-microsoft-intune#to-create-an-online-service-request">Get support for Microsoft Intune</a></li>
+             <li><a href="../em/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Fast Track Center benefit for Enterprise Mobility Suite</a></li>
+             <li><a href="https://social.technet.microsoft.com/Forums/home?forum=microsoftintuneprod" target="_blank">Microsoft Intune TechNet forum</a></li>
+             <li><a href="./troubleshoot/how-to-get-support-for-microsoft-intune#to-create-an-online-service-request" target="_blank">Get support for Microsoft Intune</a></li>
              </ul>
          </div>
 
     <aside class="alert alert-social">
       <p>Keep up-to-date on Intune</p>
       <ol class="action-list">
-        <li><a href="http://blogs.technet.com/b/windowsintune/" "target=_blank" class="button-bordered button-translucent">Intune team Blog</a></li>
-        <li><a href="http://twitter.com/msintune/" "target=_blank" class="button-bordered button-translucent">@MSIntune on Twitter</a></li>
+        <li><a href="http://blogs.technet.com/b/windowsintune/" target="_blank" class="button-bordered button-translucent">Intune team Blog</a></li>
+        <li><a href="http://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune on Twitter</a></li>
       </ol>
     </aside>
 </article>
