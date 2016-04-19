@@ -6,7 +6,7 @@ layout: HubPage
 <article id="main">
     <section id="hero-content">
       <h1>Microsoft Intune Documentation</h1>
-      <h2>Everything you need to know to deploy and manage Intune from the cloud can be found here. We'll help you quickly get started using Intune and enable your users to be productive on the devices and applications they love, while helping to ensure corporate assets are secure.<h3>test</h3></h2>
+      <h2>Everything you need to know to deploy and manage Intune from the cloud can be found here. We'll help you quickly get started using Intune and enable your users to be productive on the devices and applications they love, while helping to ensure corporate assets are secure.</h2>
 <!--
       <h2>Intune is a key component of <a href="https://docsmsftstage.azurewebsites.net/en-us/EM">Microsoft’s Enterprise Mobility</a> strategy, which enables users to be productive on the devices and applications they love, while helping organizations ensure their corporate assets are secure.</h2>
 
@@ -258,7 +258,7 @@ layout: HubPage
              <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune downloads on the TechNet Gallery</a></li>
              </ul>
              <ul class="column-half">
-             <li><a href="../em/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Fast Track Center benefit for Enterprise Mobility Suite</a></li>
+             <li><a href="../em/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Fast Track Center for Enterprise Mobility Suite</a></li>
              <li><a href="https://social.technet.microsoft.com/Forums/home?forum=microsoftintuneprod" target="_blank">Microsoft Intune TechNet forum</a></li>
              <li><a href="./troubleshoot/how-to-get-support-for-microsoft-intune#to-create-an-online-service-request" target="_blank">Get support for Microsoft Intune</a></li>
              </ul>
