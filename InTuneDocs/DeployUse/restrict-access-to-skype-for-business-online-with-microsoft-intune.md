@@ -1,5 +1,5 @@
 ---
-title: Restrict access to Skype for Business | Microsoft Intune
+title: Restrict access to Skype for Business Online | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.suite: na
@@ -8,7 +8,7 @@ ms.topic: article
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 author: karthikaraman
 ---
-# Restrict access to Skype for Business with Microsoft Intune
+# Restrict access to Skype for Business Online with Microsoft Intune
 Use conditional access policy for  **Skype for Business Online** to control access to Skype for Business Online.
 Conditional access has two components:
 - Device compliance policy that the device must comply with in order to be considered compliant.
@@ -61,7 +61,6 @@ If a user is in both groups, they will be exempt from the policy.
 > [!NOTE]
 > While compliance policies are deployed to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] groups, conditional access policies are targeted to Azure Active Directory security groups.
 
-For details about how to configure the compliance policy, see [Manage device compliance policies for Microsoft Intune](../Topic/Manage-device-compliance-policies-for-Microsoft-Intune.md).
 
 > [!IMPORTANT]
 > If you have not deployed a compliance policy, the devices will be treated as compliant.
@@ -106,4 +105,4 @@ Select any mobile device group and then, on the **Devices** tab, select one of t
 * **Devices that are registered with AAD and compliant** – These devices can access Skype for Business Online.
 
 ### See also
-[Manage access to email and O365 services](Manage-access-to-email-and-SharePoint-with-Microsoft-Intune.md)
+[Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
