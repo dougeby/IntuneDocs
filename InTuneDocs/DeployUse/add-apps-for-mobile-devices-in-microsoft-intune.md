@@ -1,5 +1,5 @@
 ---
-title: Add apps for mobile devices|Microsoft Intune
+title: Add apps for mobile devices | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -11,16 +11,14 @@ author: robstackmsft
 ---
 # Add apps for mobile devices in Microsoft Intune
 
-Use the information in this topic to learn about the three steps for Microsoft Intune app deployment; configuration, deployment, and monitoring. If you want to learn some of the basic concepts for app deployment, see [Plan for app deployment in Microsoft Intune](../PlanDesign/plan-for-app-deployment-in-microsoft-intune.md).
+Use the information in this topic to learn how to add apps to Intune before you deploy them.
 
 
 > [!IMPORTANT]
-> The information in this topic helps you to deploy apps to [enrolled Windows PCs](https://technet.microsoft.com/library/mt346003.aspx) and other enrolled devices. If you want to deploy apps to [Windows PCs that you manage using the client software](https://technet.microsoft.com/library/dn646959.aspx), see [Deploy apps to Windows PCs in Microsoft Intune](../Topic/Deploy-apps-to-Windows-PCs-in-Microsoft-Intune.md).
+> The information in this topic helps you to add apps that you want to deploy to enrolled devices and enrolled Windows PCs. If you want to add apps for Windows PCs that you manage using the Intune client software, see [Add apps for Windows PCs in Microsoft Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
 ## Add the app
-You use the Intune Software Publisher to configure the properties of the app and, where applicable, upload it to your cloud storage space.
-
-### To add an app
+You use the Intune Software Publisher to configure the properties of the app and, where applicable, upload it to your cloud storage space using the following procedure:
 
 1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Add Apps** to start the Intune software publisher.
 

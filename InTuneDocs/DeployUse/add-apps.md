@@ -10,7 +10,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 author: robstackmsft
 ---
 # Add apps with Microsoft Intune
-Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. This will give you an overview of the deployment process, and act as a reference to which device types and app types are supported.
+Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. These will help you to understand which apps you can deploy to which platform, and to understand the prerequisites that must be in place before you do so.
 
 ## App types you can deploy with Intune
 You can deploy apps to all device types that are supported by Intune. Depending on the type of app you want to deploy, the process and supported devices will differ. Use the following table to help you understand what you can, and cannot deploy:
@@ -75,3 +75,7 @@ If this registry key is not configured, Intune will automatically set this value
 Universal Windows Platform line of business apps must be signed with a code-signing certificate that is trusted on each device to which the app is deployed. You can use certificates from an in-house PKI infrastructure, or a certificate from a third-party public root certificate installed on the device.
 
 On Windows 10 Mobile devices, you can use a non-Symantec code signing certificate to sign universal **.appx** apps. For **.xap** apps, and also **.appx** packages built for Windows Phone 8.1 that you want to install on Windows 10 Mobile devices, you must use a Symantec code-signing certificate.
+
+## Next steps 
+
+Next, you'll need to add apps in the Intune console before you can deploy them. You can add apps for [enrolled devices](add-apps-for-mobile-devices-in-microsoft-intune.md), or for [Windows PCs you manage with the Intune client software](add-apps-for-windows-pcs-in-microsoft-intune.md).
