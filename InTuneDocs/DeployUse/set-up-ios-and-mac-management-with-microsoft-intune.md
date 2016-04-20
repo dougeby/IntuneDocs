@@ -27,7 +27,9 @@ Before you can manage iOS devices with Intune, the devices must be able to commu
     ![](../media/Intune-iOS-enrollment-with-APNS.png)
 
 3.  **Get an Apple Push Notification service certificate**<br>
-    Go to the [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844) and sign in with your company Apple ID to create the APNs certificate using the .csr file. This Apple ID must be used in future to renew your APNs certificate. Download the APNs (.pem) certificate and save the file locally. This APNs certificate file is used to establish a trust relationship between the Apple Push Notification server and Intune’s mobile device management authority.
+    Go to the [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844) and sign in with your company Apple ID to create the APNs certificate using the .csr file. After clicking **Upload** on Apple's Push Certificate Porta, you will receive a .json file which cannot be used for APNs. Complete the download and return to the Apple Push Certificates Portal for **Certificates for Third-Party Servers** and click **Download**. 
+
+    Download the APNs (.pem) certificate and save the file locally. This Apple ID must be used in future to renew your APNs certificate.
 
 4.  **Add the APNs certificate to Intune**<br>
     In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **iOS and Mac OS X** &gt; **Upload an APNs Certificate**, and click **Upload the APNs certificate**. **Browse** to the certificate (.pem) file and click **Open** and then enter your **Apple ID**. With the APNs certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices.

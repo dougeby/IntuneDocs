@@ -53,7 +53,7 @@ Setup requirements for Window Phone mobile device management depend upon how you
 
         -   `enterpriseregistration.windows.net` – Supports workplace join for mobile devices. It also supports conditional access for Windows 8.1
 
-    ![](./media/Windows-Phone-Enrollment.png)
+    ![](../media/Windows-Phone-Enrollment.png)
 
 3.  **Certificate management to support app signing**
     [Required for Windows Phone 8.0 and Windows Phone 8.1 that won’t access the Windows Phone Store and/or need line-of-business apps.]
