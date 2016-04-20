@@ -77,7 +77,7 @@ Below are the accounts and permissions that you'll use for Intune.
 
 Only users with service administrator permissions or tenant administrators with the global administrator role can sign in to this portal. To access the administration console, your account must have a license to use [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and a sign-in status of **Allowed**.
 
-Learn more about [adding users for your subscription](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md) and [assigning licenses for your subscription](get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md).
+Learn more about [adding users for your subscription](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) and [assigning licenses for your subscription](start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 
  ### See also
  [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
