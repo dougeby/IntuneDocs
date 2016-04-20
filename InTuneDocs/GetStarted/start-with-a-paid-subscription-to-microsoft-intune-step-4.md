@@ -18,7 +18,7 @@ When user accounts are synchronized from your on-premsies Active Directory or ma
 When your subscription shares Azure AD with other cloud services associated with your subscription, you also have access to users that were added to those services. These users do not have a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] until you assign a license to each of them.
 
 > [!TIP]
-> If the option to assign or revoke a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] is disabled, your subscription might include volume licensing options, such as the options available when using [Enterprise Mobility Suite](http://www.microsoft.com/server-cloud/products/enterprise-mobility-suite/default.aspx). For information on how to assign or revoke licenses, see the documentation for your licensing options.
+> If the option to assign or revoke a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] is disabled, your subscription might include volume licensing options, such as the options available when using [Enterprise Mobility Suite](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx). For information on how to assign or revoke licenses, see the documentation for your licensing options. 
 
 ## Assign an Intune user license
 
@@ -30,7 +30,7 @@ You use the **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** to manually a
 
 3.  The user account will now be added to the Microsoft Intune user group which grants the user permissions to use the service and enroll their devices into management.
 
-## Next steps
+### Next steps
 Congratulations! You have just completed step 4 of the *Start with a paid subscription to Microsoft Intune* guide.
 >[!div class="step-by-step"]
 

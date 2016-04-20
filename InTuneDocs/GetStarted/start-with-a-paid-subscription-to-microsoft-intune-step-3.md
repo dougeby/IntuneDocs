@@ -29,7 +29,7 @@ After you've added users to your Intune subscription, we recommend that you gran
 -   **Service administrator**: Use the **[!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]** to assign this type of administrator for day-to-day tasks including management of mobile devices or computers, deploying policy or software, and running reports.
 
 
-## Next steps
+### Next steps
 Congratulations! You have just completed step 3 of the *Start with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]

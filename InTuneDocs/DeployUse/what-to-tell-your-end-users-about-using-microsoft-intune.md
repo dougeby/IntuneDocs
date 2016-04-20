@@ -51,7 +51,7 @@ To understand how your end users get their apps, choose from the following devic
 
 ## Help end users understand Company Portal app messages
 
-To help your users solve issues that they might have when they are using the Company Portal, you can review a [list of messages users might see in the Company Portal](/Intune/PlanDesign/help-end-users-understand-company-portal-app-messages).
+To help your users solve issues that they might have when they are using the Company Portal, you can review a [list of messages users might see in the Company Portal](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
 
 

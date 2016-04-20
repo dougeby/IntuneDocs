@@ -103,10 +103,10 @@ Microsoft Word is used as an example for this scenario.
 
     ![](../media/AppManagement/iOS_FacebookPastePersonal.png)
 
-##  Viewing media files with the Rights Management sharing app
+<!---##  Viewing media files with the Rights Management sharing app
 To view AV, PDF and image files, on Android devices, you can use the [Microsoft Rights Management (RMS) sharing app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
-Download this app from the  Google Play store.  Once the app is installed on your device, launch the app and authenticate with your company credentials. You should now be able to view unprotected and protected files from other policy-managed apps.
+Download this app from the  Google Play store.  Once the app is installed on your device, launch the app and authenticate with your company credentials. You should now be able to view unprotected and protected files from other policy-managed apps.--->
 
 ##  Managing user accounts
 
