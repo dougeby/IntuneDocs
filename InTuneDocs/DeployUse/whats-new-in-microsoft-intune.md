@@ -12,7 +12,7 @@ author: Lindavr
 # What's new in Microsoft Intune
 
 ## April 2016
-
+All of these features are also supported for hybrid customers (Configuration Manager integrated with Intune).
 ### App management
 - **MAM user compliance.**
 You can now view the [status](Monitor-mobile-app-management-policies-with-Microsoft-Intune.md) of your application management policies for any user in your Azure Active Directory (AAD) tenant. This includes:
@@ -57,7 +57,8 @@ Keep informed about upcoming developments for Intune with the [Cloud Platform ro
 
 ## Previous Intune releases
 > [!div class="op_single_selector"]
-> -[March 2016](previous-intune-releases.md)
+>
+- [March 2016](previous-intune-releases.md)
 - [February 2016](previous-intune-releases.md)
 - [January 2016](previous-intune-releases.md)
 - [December 2016](previous-intune-releases.md)
