@@ -13,7 +13,7 @@ author: NathBarn
 
 The Symantec certificate used to manage certain Windows and Windows Phone mobile devices must be renewed periodically. For Windows Phone 8.0 devices, a signed Company Portal app and the code-signing certificate are needed for device enrollment. Later Windows Phone devices can use the company portal app downloaded from the store. A code-signing certificate is also be required for deploying line-of-business apps.
 
-### How to renew the Symantec enterprise code-signing certificate
+## How to renew the Symantec enterprise code-signing certificate
 
 1.  Look for a renewal email sent from Symantec approximately 14 days prior to certificate expiration. This email contains directions from Symantec about renewing your enterprise certificate.
 
@@ -23,7 +23,7 @@ The Symantec certificate used to manage certain Windows and Windows Phone mobile
 
 3.  Once the renewal is approved and paid for, download the certificate.
 
-### How to install the updated certificate for Windows Phone 8.0
+## How to install the updated certificate for Windows Phone 8.0
 
 1.  Download and sign the latest Windows Phone Company Portal located here: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
@@ -37,7 +37,7 @@ The Symantec certificate used to manage certain Windows and Windows Phone mobile
 
 Providing a signed SSP.xap file is currently the only way to provide the updated code signing certificate. To support signed line-of-business apps, you must sign and upload a Company Portal app even though your users will install the Company Portal app from the store.
 
-### How to install the updated certificate for Windows Phone 8.1 and later devices
+## How to install the updated certificate for Windows Phone 8.1 and later devices
 
 1.  Download and sign the latest Windows Phone Company Portal from the Download Center located here: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
@@ -51,4 +51,5 @@ Providing a signed SSP.xap file is currently the only way to provide the updated
 
 
 ### See also
+[Set up Windows Phone 8.0 management](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
 [Set up Windows Phone management](set-up-windows-phone-management-with-microsoft-intune.md)
