@@ -60,7 +60,7 @@ To add users in bulk to Intune,  use the **Bulk add users** wizard to upload a c
 
 Each user account that you added by importing it now appears in the **Users** node of the Office 365 admin center. When new users sign in for the first time, they must specify a new password for their user account.
 
-## Next steps
+### Next steps
 Congratulations! You have just completed step 2 of the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
 
 >[!div class="step-by-step"]

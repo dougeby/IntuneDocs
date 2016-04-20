@@ -45,4 +45,4 @@ If you are currently using the **Intune admin console** to manage your devices, 
 
     ![](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
 ## Next steps
-[Create and deploy mobile app management policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+[Get ready to configure mobile app management policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)

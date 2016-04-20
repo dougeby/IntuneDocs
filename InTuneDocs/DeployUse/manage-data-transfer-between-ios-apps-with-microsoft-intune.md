@@ -26,15 +26,14 @@ Mobile app management (MAM) policies can be used with the iOS **Open in manageme
 -   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with MAM policies and other managed iOS apps deployed through Intune is allowed  automatically. To allow data transfer between apps with MAM policies, enable the **Allow app to transfer data to only managed apps** setting. You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune.   
 
 -   **Devices managed by a third party MDM:** You can restrict data transfer to only managed apps by using the iOS **Open in management** feature.
-To make sure that apps that you deploy using your third party MDM solution, uses the MAM policies you have configured in Intune, you must configure the user UPN setting as described in the [Configure user UPN setting](#bkmk_userUPN) walkthrough.  When apps are deployed with the user UPN setting, the MAM policies are applied to the app when the end-user signs-in using their work account.
+To make sure that apps that you deploy using your third party MDM solution, uses the MAM policies you have configured in Intune, you must configure the user UPN setting as described in the [Configure user UPN setting](#configure-user-upn-setting) walkthrough.  When apps are deployed with the user UPN setting, the MAM policies are applied to the app when the end-user signs-in using their work account.
 
 > [!IMPORTANT]
 > The user UPN setting is only required for apps deployed to devices managed by a third-party MDM.  For Intune managed devices, this setting is not required.
 
-## <a name="bkmk_userUPN"></a>Configure user UPN setting
+## Configure user UPN setting
 This configuration is required for devices that are managed by a third-party MDM. The procedure described below is a general flow on how to implement the UPN setting and the resulting end-user experience:
 
-### Configure UPN setting
 
 1.  Configure a mobile app management policy for iOS platform. Configure policy settings per your company requirements and select the apps that should have this policy.
 
