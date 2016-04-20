@@ -56,7 +56,7 @@ You can find the newly created group in the **Groups** list, in the **Groups** w
 
 
 
-## Next steps
+### Next steps
 Congratulations! You have just completed step 5 of the *Start with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]
