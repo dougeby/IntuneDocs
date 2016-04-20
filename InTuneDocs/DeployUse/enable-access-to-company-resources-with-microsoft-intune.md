@@ -45,5 +45,3 @@ Create, deploy and monitor native email client settings on devices in your organ
 > [This Intune team blog post](http://blogs.technet.com/b/microsoftintune/archive/2015/02/23/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1.aspx) gives information about how to configure a Windows Phone 8.1 Wi-Fi profile using OMA-URI.
 
 
-### See also
-[Manage settings and features on your devices with Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

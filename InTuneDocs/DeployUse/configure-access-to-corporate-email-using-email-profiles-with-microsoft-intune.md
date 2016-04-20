@@ -14,7 +14,7 @@ Many mobile platforms include a *native* email client that ships as part of the 
 
 If you need additional data loss prevention (DLP), choose [Conditional access](manage-access-to-email-and-sharepoint-with-microsoft-intune.md), which controls access to the user's
  mailbox for any email client, including native email clients. 
- >Note
+>[!NOTE]
  >You can learn more about DLP in the Microsoft Outlook client in [Learn how to deploy a solution for protecting company email and documents](learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md)
 
 Email profile settings can be used to configure email access settings for specific email clients on mobile devices.   Most mobile platforms include a *native* email client that ships as part of the operating system.  On supported platforms the native email clients can be configured by Microsoft Intune to enable users to access their corporate email on the personal devices without any setup.  
@@ -79,9 +79,8 @@ The password is not contained in the email profile, so the user will need to sup
     |**Use SSL**|Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange Server.<br /><br />For devices that run Samsung KNOX 4.0 or later, you must export your Exchange Server’s SSL certificate and deploy it as an Android Trusted Certificate Profile in Intune. Intune does not support accessing this certificate if it is installed on the Exchange Server by other means.|
     |**Content type to synchronize**|Select the content types that you want to synchronize to devices.|
 
-
-    > [!IMPORTANT]
-    > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
+> [!IMPORTANT]
+> If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
 
 4.  When you are finished, click **Save Policy**.
 

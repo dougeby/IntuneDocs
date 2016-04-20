@@ -26,7 +26,7 @@ To use .PFX Certificate profiles, in addition to the Enterprise Certification Au
 
  -   The Intune Certificate Connector, which runs on the computer that can communicate with the Certification Authority.
 
-### <a name="BKMK_OnPremises"></a>On-premises infrastructure
+### On-premises infrastructure
 
 
 -    **Active Directory domain**: All servers listed in this section (except for the Web Application Proxy Server) must be joined to your Active Directory domain.
@@ -47,7 +47,7 @@ To use .PFX Certificate profiles, in addition to the Enterprise Certification Au
     For information about certificates for WAP, see the **Plan certificates** section of [Planning to Publish Applications Using Web Application Proxy](https://technet.microsoft.com/library/dn383650.aspx). For general information about WAP servers, see [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
-### <a name="BKMK_CertsAndTemplates"></a>Certificates and Templates
+### Certificates and Templates
 
 |Object|Details|
 |----------|-----------|
@@ -56,13 +56,13 @@ To use .PFX Certificate profiles, in addition to the Enterprise Certification Au
 |**Server authentication certificate**|Requested from your issuing CA or public CA, you install and bind this SSL certificate in IIS on the NDES server.|
 |**Trusted Root CA certificate**|You export this as a **.cer** file from the issuing CA or any device which trusts the issuing CA, and deploy it to devices by using the Trusted CA certificate profile.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
 
-### <a name="BKMK_Accounts"></a>Accounts
+### Accounts
 
 |Name|Details|
 |--------|-----------|
 |**NDES service account**|You specify a domain user account to use as the NDES Service account.|
 
-## <a name="BKMK_ConfigureInfrastructure"></a>Configure your infrastructure
+## Configure your infrastructure
 Before you can configure certificate profiles you must complete the following tasks, which require knowledge of Windows Server 2012 R2 and Active Directory Certificate Services (ADCS):
 
 **Task 1** - Configure certificate templates on the certification authority
@@ -73,7 +73,7 @@ Before you can configure certificate profiles you must complete the following ta
 
 **Task 4** - Enable, install, and configure the Intune Certificate Connector
 
-### <a name="BKMK_ConfigOnPremTask1"></a>Task 1 - Configure certificate templates on the certification authority
+### Task 1 - Configure certificate templates on the certification authority
 In this task you will:
 
 -   Create a NDES service account
@@ -125,7 +125,7 @@ In this task you will:
 
 5.  For .PFX profiles: on the CA computer ensure that the computer that hosts the Intune Certificate Connector has enroll permission, so that it can access the template used in creating the .PFX profile. Set that permission on the **Security** tab of the CA computer properties.
 
-### <a name="BKMK_ConfigOnPremTask2"></a>Task 2 (SCEP profile only) - Configure prerequisites on the NDES server
+### Task 2 (SCEP profile only) - Configure prerequisites on the NDES server
 In this task you will:
 
 -   Add NDES to a Windows Server and configure IIS to support NDES
@@ -165,7 +165,7 @@ In this task you will:
 
     -   **setspn –s http/Server01.contoso.com contoso\NDESService**
 
-### <a name="BKMK_ConfigOnPremTask3"></a>Task 3 (SCEP profile only) - Configure NDES for use with Microsoft Intune]
+### Task 3 (SCEP profile only) - Configure NDES for use with Microsoft Intune]
 In this task you will:
 
 -   Configure NDES for use with the issuing CA
@@ -252,7 +252,7 @@ In this task you will:
 
 4.  Reboot the NDES server. The server is now ready to support the Certificate Connector.
 
-### <a name="BKMK_ConfigOnPremTask4"></a>Task 4 - Enable, install, and configure the Intune Certificate Connector  - For SCEP and .PFX certificates.
+### Task 4 - Enable, install, and configure the Intune Certificate Connector  - For SCEP and .PFX certificates.
 In this task you will:
 
 Enable support for NDES in Intune
@@ -273,7 +273,7 @@ Download, install, and configure the Certificate Connector on the NDES Server
 
 2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**):
 
-    -   For .PFX certificates, run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option then click Install. When the installation has completed, continue by creating a certificate profile as described in [Configure certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md#BKMK_ConfigProfiles).
+    -   For .PFX certificates, run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option then click Install. When the installation has completed, continue by creating a certificate profile as described in [Configure certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).
 
     -   For SCEP certificates, run the installer on a Windows Server 2012 R2 server
 

@@ -15,7 +15,7 @@ This topic helps you solve app deployment problems with Microsoft Intune.
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
 
-## <a name="BKMK_TypicalProblems"></a>Help for typical app deployment problems
+## Typical app deployment problems
 
 ### If you can’t log in to the Microsoft Intune company portal
 
@@ -83,7 +83,5 @@ The following table lists common errors that may occur during Intune app deploym
 |0x80073CF3|The package failed update, dependency, or conflict validation|Possible causes:<br /><br />-   The incoming package conflicts with an installed package.<br />-   A specified package dependency is not found.<br />-   The package does not support the correct processor architecture.<br /><br />Check the AppXDeployment-Server event log for more information.|
 |0x80073CFB|The provided package is already installed, and reinstallation of the package is blocked|You might receive this error if you are installing a package that is not identical to the package that is already installed. Confirm the digital signature is also part of the package. When a package is rebuilt or re-signed, that package is no longer bitwise identical to the previously installed package. Two possible options to fix this error are as follows:<br /><br />-   Increment the version number of the app, then rebuild and re-sign the package.<br />-   Remove the old package for every user on the system before you install the new package.|
 
-### See also
-[Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md)
-[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)
-[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
+## Next steps
+If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
