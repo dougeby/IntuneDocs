@@ -28,7 +28,7 @@ You can deploy Wi-Fi profiles to the following platforms:
 
 -   Mac OS X 10.9 and later
 
-For devices that run Windows 8.1 and later, you can import a Wi-Fi configuration profile that was previously exported to a file. For details, see [Import a Wi-Fi configuration profile (Windows 8.1 and later only)](wi-fi-connections-in-microsoft-intune.md#BKMK_Import).
+For devices that run Windows 8.1 and later, you can import a Wi-Fi configuration profile that was previously exported to a file. For details, see [Import a Wi-Fi configuration profile (Windows 8.1 and later only)](wi-fi-connections-in-microsoft-intune.md).
 
 ## How to create and deploy a Wi-Fi profile
 
@@ -92,9 +92,9 @@ For devices that run Windows 8.1 and later, you can import a Wi-Fi configuration
 
 7.  Save the Wi-Fi profile
 
-The new policy is displayed in the **Configuration Policies** node of the **Policy** workspace. See [Next steps](wi-fi-connections-in-microsoft-intune.md#BKMK_Nextsteps) for information about deploying the profile.
+The new policy is displayed in the **Configuration Policies** node of the **Policy** workspace. See **Next steps** for information about deploying the profile.
 
-## <a name="BKMK_Import"></a> Export or Import a Wi-Fi configuration profile (Windows 8.1 and later only)
+## Export or Import a Wi-Fi configuration profile (Windows 8.1 and later only)
 
 ### Export a Wi-Fi profile
 In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi profile to an XML file readable by Intune. On a Windows computer that already has the required WiFi profile installed, follow this following procedure.
@@ -137,7 +137,7 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
 
 6.  The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
 
-## <a name="BKMK_Nextsteps"></a>Next steps
+## Next steps
 
 Deploy the Wi-Fi profile to one or more groups of users or devices in your organization.
 

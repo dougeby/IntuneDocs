@@ -141,15 +141,15 @@ Administrators can delete devices in the Azure Active Directory portal:
 
 3.  Pick an appropriate time/date or the last 12 hours.
 
-4.  Find the device in question and review how the device was removed. The Example below shows the account SCCMInstall deleted the device via an Unknown Application.
+4.  Find the device in question and review how the device was removed. The Example below shows that the account SCCMInstall deleted the device via an Unknown Application.
 
-    ![](./media/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
+    ![Screenshot for device deletion diagnosis](./media/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
 5.  Check that Configuration Manager does not have a scheduled task, script, or other process which could be automatically purging non-domain, mobile, or related devices.
 
 ## iOS enrollment errors
 A list of other iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](using-your-ios-device-with-intune.md).
 
-### See also
-[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
+## Next steps
+If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 

@@ -68,8 +68,3 @@ To accomplish this, configure a conditional access policy for Exchange on-premis
 The following flow is used to decide which devices can access Exchange:
 
 ![](./media/ConditionalAccess8-4.png)
-
-
->[!div class="step-by-step"]
-[<< Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)  
-[Deploy a compliance policy >>](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)

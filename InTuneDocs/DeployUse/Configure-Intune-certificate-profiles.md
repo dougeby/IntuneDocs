@@ -20,12 +20,12 @@ Create SCEP certificate profiles
 
 Create .PFX certificate profiles
 
-### <a name="BKMK_ConfigExportRootCA"></a>Task 1 - Export the Trusted Root certificate
+### Task 1 - Export the Trusted Root certificate
 Export the Trusted Root CA certificate as a **.cer** file from the issuing CA, or any device that trusts your issuing CA. You do not export the private key.
 
 You will import this certificate when you configure a Trusted  certificate profile.
 
-### <a name="BKMK_ConfigRootCA"></a>Task 2 - Create Trusted certificate profiles
+### Task 2 - Create Trusted certificate profiles
 You must create a **Trusted certificate profile** before you can create a SCEP or .PFX certificate profile. You need a Trusted certificate profile and a SCEP or.PFS profile for each mobile device platform.
 
 ##### To create a trusted certificate profile
@@ -53,7 +53,7 @@ You must create a **Trusted certificate profile** before you can create a SCEP o
 
 The new policy displays in the **Policy** workspace, and can now be deployed.
 
-### <a name="BKMK_ConfigSCEP"></a>Task 3 – Create SCEP or .PFX certificate profiles
+### Task 3 – Create SCEP or .PFX certificate profiles
 After you have created a Trusted CA certificate profile, create SCEP or .PFX certificate profiles for each platform you want to use. When you create a SCEP certificate profile, you must specify a Trusted certificate profile for that same platform. This links the two certificate profiles, although you must still deploy each profile separately.
 
 ##### To create a SCEP certificate profile
@@ -104,7 +104,7 @@ The new policy displays in the **Policy** workspace, and can now be deployed.
 
 The new policy displays in the **Policy** workspace, and can now be deployed.
 
-## <a name="BKMK_Deploy"></a>Deploy certificate profiles
+## Deploy certificate profiles
 When you deploy certificate profiles, the certificate file from the Trusted CA certificate profile is installed on devices, and the SCEP or .PFX certificate profile is used by the device to create a certificate request by the device.
 
 Certificate profiles install only on applicable devices based on the platform you use when creating the profile.

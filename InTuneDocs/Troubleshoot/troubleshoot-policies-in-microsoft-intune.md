@@ -32,7 +32,7 @@ In the screenshot below you can see two clear examples:
 
 -   **Allow simple passwords** is set to **Yes**, as shown in the **Intended Value** column, but its **Status** is **Not applicable**. This is because simple passwords are not supported for Android devices.
 
--   Similarly, the expanded policy item**Email settings for iOS devices** is not applied to this device, as it is an Android device.
+-   Similarly, the expanded policy item **Email settings for iOS devices** is not applied to this device, as it is an Android device.
 
 ![](./media/Intune-Device-Policy-v.2.jpg)
 
@@ -92,6 +92,5 @@ Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may ne
 ### Android devices do not force Security Policy Changes without end user Acceptance
 Android MDM does not allow the service to force initial policy changes on devices as other platforms allow. This is due to Android functionality, and is not related to the Intune service. Android devices will prompt the end user via the notification window of the related policy change (i.e. Password, Encryption, etc.).  The end user must respond to the prompt and once accepted the policy should be applied.
 
-### See also
-[Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
+## Next steps
+If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

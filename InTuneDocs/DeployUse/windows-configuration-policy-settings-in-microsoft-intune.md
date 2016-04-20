@@ -88,7 +88,7 @@ Use the Microsoft Intune **Windows general configuration policy** to configure s
 |**Security level for restricted sites**|Configure the security level for the restricted sites zone.|Yes|No|
 |**Send Do Not Track header**|In Internet Explorer, send a do not track header to visited sites.|Yes|No|
 |**Allow Enterprise Mode menu access**|Lets users access the Enterprise Mode menu options from Internet Explorer.<br>If selected, you can also specify a **Logging report location** which contains a URL to a report which shows websites for which users have turned on Enterprise Mode access.|Yes|No|
-|**Enterprise Mode site list location**|Specify the location of the list of websites that will use Enterprise Mode when it is active.||Yes|No|
+|**Enterprise Mode site list location**|Specify the location of the list of websites that will use Enterprise Mode when it is active.|Yes|No|
 
 ## Device capabilities settings - cellular
 

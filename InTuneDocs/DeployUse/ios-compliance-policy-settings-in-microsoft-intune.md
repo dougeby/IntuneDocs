@@ -73,7 +73,7 @@ This setting should be used together with the in the **Minutes of inactivity bef
      If the **Email account must be managed by Intune** setting is selected,
      choose **Select** to specify the Intune email profile. The email profile must be present on the device.
 
-     For details about email profiles, see [Configure access to
+     For details about email profiles, see [configure access to
      corporate email using email profiles with Microsoft Intune](../Topic/Configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md).
 
 ## Device health settings
