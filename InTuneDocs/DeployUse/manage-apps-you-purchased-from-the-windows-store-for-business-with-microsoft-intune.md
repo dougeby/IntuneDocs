@@ -22,6 +22,7 @@ Review the following information before you start syncing and deploying apps fro
 * You must have signed up for an account on the Windows Store for Business
 * Once you have associated a Windows Business Store account with Intune, you cannot change to a different account in the future.
 * Apps purchased from the store cannot be manually added to, or deleted from Intune. They can only be synchronized with the Windows Store for Business.
+* Intune synchronizes only online licensed apps you have purchased from the Windows Store for Business.
 
 ## Associate your Windows Store for Business account with Intune
 Before you enable synchronization in the Intune console, you must configure your store account to use Intune as a management tool:
