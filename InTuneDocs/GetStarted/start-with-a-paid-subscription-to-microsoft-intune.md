@@ -73,13 +73,13 @@ If you'll manage iOS or Windows Phone devices with Intune, you'll need certifica
 - No certificate is required for **Windows Phone 8.1** users who install the company portal app from the Store. However, a [Symantec code signing certificate](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do) is required for **Windows Phone 8.0** or to use Intune to deploy the company portal app to Windows Phone 8.1 devices.
 
 >[!NOTE]
->This getting started walkthrough assumes your users get the company portal app from the Store on a Windows Phone 8.1 or later device. For information about Windows Phone 8.0 support, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
+>This getting started walkthrough assumes your users get the company portal app from the Store on a Windows Phone 8.1 or later device. For information about Windows Phone 8.0 support, see [Set up Windows Phone 8.0 management with Microsoft Intune](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune).
 
-- There are no certificate requirements for **Windows PCs** or **Windows RT devices** when [enrolling Windows PCs as devices](/intune/enduser/enroll-your-device-in-intune-windows) or  [installing the Windows PC client for Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).
+- There are no certificate requirements for **Windows PCs** or **Windows RT devices** when enrolling Windows PCs as devices or [installing the Windows PC client for Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).
 
 - For **iOS** or **Mac OS X** devices you will need to request an Apple Push Notification service certificate from Apple, as described in [Set up iOS and Mac management with Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
 
-## Next steps
+### Next steps
 It's time to get started with your paid subscription!
 
 >[!div class="step-by-step"]
