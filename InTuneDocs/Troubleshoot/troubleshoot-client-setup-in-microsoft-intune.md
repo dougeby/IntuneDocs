@@ -89,5 +89,5 @@ The following table describes error codes that are displayed in **Alerts** if cl
 |**0x80043010**|The software cannot be installed because the Open Mobile Alliance Device Management (OMADM) client is already installed.|Un-enroll the OMADM client and then retry the client software installation.|
 If installation problems persist, contact Support as descirbed in [How to get support for Microsoft Intune](how-to-get-support-for microsoft-intune.md). Have the client computer enrollment log (located in %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log and %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) and Windows Update log (%*windir*%\windowsupdate.log) available to show to support engineers.
 
-### See also
-[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
+## Next steps
+If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
