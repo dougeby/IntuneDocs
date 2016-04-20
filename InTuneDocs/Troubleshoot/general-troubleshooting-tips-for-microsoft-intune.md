@@ -14,11 +14,7 @@ After you deploy Microsoft Intune you may encounter problems with your configura
 
 > [!NOTE]
 > To create a support request, or to view an existing request,  click [here](https://portal.office.com/admin/default.aspx) to visit the Office 365 admin center. For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-
-## Tips
-Here are some general troubleshooting tips that can help you resolve issues in Intune.
-
-Start by **defining the problem**:
+## Define the problem
 
 -   What is the behavior?
 
@@ -34,7 +30,7 @@ Start by **defining the problem**:
 
 -   Could the user be experiencing an authentication issue? If this is a possiblity, check if the user can log in to other services that use Azure Active Directory. Also, see if the user can log in from a different device.
 
-After you've defined the problem, **collect available data**. This can include:
+## Collect available data
 
 -   Device logs. Learn how to collect device logs in:
   - [Send Android diagnostic data logs to your IT administrator using a USB cable](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
@@ -44,7 +40,7 @@ After you've defined the problem, **collect available data**. This can include:
 
 -   Admin console data, for example, for policy implementation issues you should examine the intended policy and the status of that policy, as described in [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
-After you've defined the problem and collected data you can **research the solution**:
+## Research the solution
 
 -   Search the Web for a solution. For example, if you receive the error 0x80073CF0, you can search for **technet intune 0x80073cf0** on the Web, and find the article [Troubleshoot app deployment problems in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md), which offers suggestions for addressing this issue.
 
@@ -65,8 +61,9 @@ You can find other helpful information in these community resources:
 
 -   [The Intune forums](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-### See also
-[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
+## Next steps
+The topics listed below have troubleshooting help for specific issues. If that information doesn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 [Troubleshoot company resource access problems with Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 [Troubleshoot app deployment problems in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
