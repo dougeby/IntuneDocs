@@ -14,11 +14,11 @@ You can deploy Intune terms and conditions to user groups to explain how enrollm
 
 You can create and deploy multiple policies containing different terms and conditions. You can also produce versions of the same terms and conditions in different languages and then deploy these to their appropriate groups.
 
-## To create a terms and conditions policy
+## Create a terms and conditions policy
 
 1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) click **Policy** &gt; **Terms and Conditions**.
 
-![](../Media/pol-sa-terms-conditions.png)
+	![Terms and conditions policy](../Media/pol-sa-terms-conditions.png)
 
 2.  Click **Add** to create a new terms and conditions policy.
 
@@ -36,7 +36,7 @@ You can create and deploy multiple policies containing different terms and condi
 
 4.  When you are finished, click **Save**. The new policy is displayed in the **Terms and Conditions** node of the **Policy** workspace.
 
-## To deploy a terms and conditions policy
+## Deploy a terms and conditions policy
 
 1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) click **Policy** &gt; **Terms and Conditions**.
 
@@ -46,7 +46,7 @@ You can create and deploy multiple policies containing different terms and condi
 
     When targeted users access the company portal, Intune displays the terms and conditions you deployed. Users must accept these terms before they can gain access to company resources.
 
-## To monitor a terms and conditions policy
+## Monitor a terms and conditions policy
 
 1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) click **Policy** &gt; **Terms and Conditions**.
 
