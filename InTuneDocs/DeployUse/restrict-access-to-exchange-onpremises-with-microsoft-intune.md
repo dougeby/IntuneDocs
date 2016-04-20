@@ -66,7 +66,7 @@ If a conditional access policy is not met, the user is presented with one of the
 
 The **Mail** application on Windows 8 and later (when enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
-## <a name="BKMK_enableXchngOnprem"></a>Configure a conditional access policy
+##  Configure a conditional access policy
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange on-premises policy**.
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)

@@ -15,7 +15,7 @@ After you have configured a MAM policy and applied it to the users, you can moni
 On the **Intune mobile application management** blade you can see a summary of the compliance status as described below:
 
 
-![](../media/AppManagement/AzurePortal_MAM_MonitorUsers.png)
+![](../media/mam-azure-portal-user-status-summary.png)
 
 -   **USERS:** The total number of users in your company who are using the apps that are associated with the policy.
 
@@ -54,12 +54,6 @@ To see the reporting for a user, follow these steps:
 ![App reporting details](../media/mam-azure-portal-app-reporting-by-user.png)
 ### Flagged users
 The detailed view displays the error message, the app that was accessed when the error happened, the platform of the device, and a time stamp.  
-![](../media/AppManagement/AzurePortal_MAM_FlaggedUserDetails.png)
-
-<!---##  Wipe requests
--   The **Wipe requests** tile shows you the summary report of the status of the wipe requests you made. Clicking on this tile will open a new blade that has more detailed information. For a detailed description of the wipe request information that is displayed in this blade, read the [Wipe managed company app data with Microsoft Intune](../Topic/Wipe-managed-company-app-data-with-Microsoft-Intune.md) topic.
-
-    ![](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)--->
 
 ### See also
 [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)

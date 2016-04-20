@@ -1,5 +1,5 @@
 ---
-title: Retire apps using Microsoft Intune
+title: Retire apps | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -11,7 +11,7 @@ author: robstackmsft
 ---
 # Retire apps using Microsoft Intune
 
-To retire an app, you simply uninstall it. When you deploy and manage apps with Intune, the process to uninstall the app is the same for both mobile devices and computers. The app must support being uninstalled for this procedure to succeed.
+To retire an app, you simply uninstall it. When you deploy and manage apps with Intune, the process to uninstall the app is the same for both mobile devices and Windows PCs. The app must support being uninstalled for this procedure to succeed.
 
 ## Uninstall an app
 
@@ -24,4 +24,4 @@ To retire an app, you simply uninstall it. When you deploy and manage apps with 
 When the device or computer next checks for apps, the app will be uninstalled.
 
 ### See also
-[Add and deploy apps](add-apps-for-mobile-devices-in-microsoft-intune.md)
+[Add apps in Microsoft Intune](add-apps.md)

@@ -1,5 +1,5 @@
 ---
-title: Deploy apps in Microsoft Intune|Microsoft Intune
+title: Deploy apps in Microsoft Intune | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ In this procedure, you'll deploy the app to selected devices or users.
 		- **Available** (users install from the company portal on demand)
 		- **Not Applicable** (the app is not installed or shown in the company portal)
 		- **Uninstall** (the app will be uninstalled from targeted devices).
-	- **Deadline**|For required installations, choose how soon the app will be deployed. You can choose from the predefined values, or select **Custom** to configure your own deadline.
+	- **Deadline** - For required installations, choose how soon the app will be deployed. You can choose from the predefined values, or select **Custom** to configure your own deadline.
 
 5. If the app you are deploying can be configured by a mobile application management policy, the **Mobile App Management** page is displayed. On this page, choose the mobile application management policy you want to associate with this app.
 
@@ -54,6 +54,4 @@ If you deployed the app as **Required** to an iOS device, the user will get a no
 
 After you deploy an app, you'll want to monitor it's progress. For more information, see [Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md).
 
-### See Also
-[Create apps for mobile devices in Microsoft Intune](create-apps-for-mobile-devices-in-microsoft-intune.md)
-[Create apps for Windows PCs in Microsoft Intune](create-apps-for-windows-pcs-in-microsoft-intune.md)
+

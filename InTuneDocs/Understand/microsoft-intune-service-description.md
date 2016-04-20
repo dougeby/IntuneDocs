@@ -28,7 +28,7 @@ For a list of settings that you can configure on mobile devices, see:
 
 For information on System Center 2012 R2 Configuration Manager, see [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).
 
-## <a name="BKMK_Servupdate"></a>Understand how Intune service updates affect you
+## Understand how Intune service updates affect you
 Because Intune is an online service, Microsoft can update it on a regular basis.
 
 Use the information in this topic to help you understand the frequency of these service updates, and the advance notification we give to you when an update might affect your use of the service.
@@ -47,7 +47,7 @@ Here are the types of notices Microsoft provides about the Intune service:
 -   Microsoft provides information about new features, new functionality, and enhancements to existing features in our monthly service update. Generally, Microsoft rolls out service updates around the middle of each month. Updates are described in  [What's new in Microsoft Intune](./deploy-use/what-s-new-in-Microsoft-Intune.md).
 -   In the event of Intune service retirement, you would be notified 12 months in advance.
 
-## <a name="WIT_Cho"></a>Choose the management solution that’s right for you
+## Choose the management solution that’s right for you
 You can configure Intune in a number of ways to manage and help protect your company's mobile devices and computers (referred to as **devices** in this document).
 
 -   **Intune stand-alone configuration.** Use the web-based administration console in Intune to manage devices in your organization. Intune can be used without any on-premises IT infrastructure, but if you use Intune with Active Directory Domain Services, you can use domain user accounts that you manage with Domain Services with Intune.

@@ -20,7 +20,7 @@ As a cloud service hosted by Microsoft, the [!INCLUDE[wit_firstref](./includes/w
 
 -   [Decommission your subscription](maintain-microsoft-intune.md#BKMK_DecommissionIntune)
 
-## <a name="BKMK_Maintenance"></a>Common maintenance tasks
+## Common maintenance tasks
 
 |Task|Details|
 |--------|-----------|
@@ -30,7 +30,7 @@ As a cloud service hosted by Microsoft, the [!INCLUDE[wit_firstref](./includes/w
 |**Reinstall the Service to Service Connector**|The configuration of this connector is maintained in your cloud storage and does not require backup or restoration. When you configure this connector, the new instance replaces any previously configured connector.|
 |**Back up individual devices and computers**|[!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] does not manage the backup or recovery for data, settings, or applications on mobile devices or computers that you manage with the service.|
 
-## <a name="BKMK_ManagePreferences"></a>Change your contact preferences
+## Change your contact preferences
 Administrators for [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] have the option to receive product-related communications from Microsoft:
 
 **To manage the communications you receive**:
@@ -43,7 +43,7 @@ Administrators for [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] have 
 
 You will continue to receive email messages related to your billing and service accounts even if you choose not to receive additional product information.
 
-## <a name="BKMK_ManagePartners"></a>Manage partner relationships
+## Manage partner relationships
 If you do not currently work with a partner, you can find one on the [Microsoft Pinpoint](http://go.microsoft.com/fwlink/?linkid=235605) website. Partner availability depends on the services you use and the country or region where you will use those services.
 
 **Manage a Partner for your subscription**
@@ -100,7 +100,7 @@ When you remove a delegated administrator, you remove the partner’s permission
 
 3.  On the **Delegated administrators** page, select the partner that you want to remove and click **Remove delegated administrator**.
 
-## <a name="BKMK_DecommissionIntune"></a>Decommission your subscription
+## Decommission your subscription
 Use the following information to remove data from devices and your infrastructure when you plan to no longer use [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)].
 
 |Task|Details|
