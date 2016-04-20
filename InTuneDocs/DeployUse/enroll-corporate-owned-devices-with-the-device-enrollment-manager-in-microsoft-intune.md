@@ -20,7 +20,7 @@ Organizations can use Intune to manage large numbers of mobile devices with a si
 
 -   Configure access to company data
 
-The store manager cannot reset the device from the company portal.
+Only use the device manager account for devices that won't receive email or logon as a specific user. Devices managed with a device manager account cannot be configured with conditional access since these are also per-user scenarios. The store manager cannot reset the device from the company portal.
 
 **Examples of device enrollment manager scenario:**
 A restaurant wants point-of-sale tablets for its wait staff and order monitors for its kitchen staff. The employees never need access to company data or to logon as a user. The Intune administrator creates a device enrollment manager account and enrolls the company-owned devices using that account. Alternatively, the administrator could give the device enrollment manager credentials to a restaurant manager, allowing him or her to enroll and manage the devices.
