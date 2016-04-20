@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
-ms.assetid:
+ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 author: Lindavr
 ---
 # What's coming in Microsoft Intune
