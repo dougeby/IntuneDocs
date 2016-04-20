@@ -34,7 +34,6 @@ This section describes potential causes and solutions for the following errors a
 |**Quick scan overdue**|A quick scan has not been completed for 14 days. This can be caused by a restart during a quick scan.|If a quick scan is overdue, you can run a one-time quick scan or schedule recurring quick scans from the  [Intune admin console](https://manage.microsoft.com) by using the information in the topic [Common Windows PC management tasks with the Microsoft Intune computer client](./deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
 |**Another endpoint protection application running**|Another endpoint protection application is running, and the computer is healthy.|By default, if another endpoint protection application is installed and [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] detects that application,  endpoint protection automatically disables itself. If [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] does not detect the other endpoint application,  endpoint protection will remain enabled. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](./deploy-use/elp-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).|
 
-### See also
-[Troubleshoot Microsoft Intune](troubleshoot-microsoft-intune.md)
-[Manage Windows PCs with Microsoft Intune](./deploy-use/manage-windows-pcs-with-microsoft-intune.md)
-[How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
+## Next steps
+If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+
