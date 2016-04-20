@@ -24,8 +24,8 @@ If you are currently using the **Intune admin console** to manage your devices, 
 To see a list of policy settings supported for Android and iOS platforms, select one of the following:
 
 > [!div class="op_single_selector"]
-- [iOS policies](android-mam-policy-settings.md)
-- [Android policies](ios-mam-policy-settings.md)
+- [iOS policies](ios-mam-policy-settings.md)
+- [Android policies](android-mam-policy-settings.md)
 
 ##  Create a MAM policy
 Before creating a MAM policy, review the [pre-requisites and support](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) information.
@@ -96,7 +96,7 @@ Only users with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses 
 
 If you are using Intune with Configuration Manager to manage your iOS and Android devices, the policy is only applied to the users directly in the group that you selected.  Members of child groups  nested within the group you selected will not be affected.
 
-The end users can download the apps from the App store or Google Play. For a detailed walkthrough of how MAM protects company data on the device see [Using apps with MAM policies](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md) article.
+The end users can download the apps from the App store or Google Play. For a detailed walkthrough of how MAM protects company data on the device see [end user experience with MAM enabled apps](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md) article.
 
 ##  Change existing policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies,  users who are already signed  in to the apps won’t see the changes for a 8-hour period.
@@ -143,8 +143,8 @@ To see the effect of the changes immediately the end-user will have to log out o
 To see a full list of the policy setting for iOS and Andriod, select one of the following:
 
 > [!div class="op_single_selector"]
-  - [iOS policies](android-mam-policy-settings.md)
-  - [Android policies](ios-mam-policy-settings.md)
+  - [iOS policies](ios-mam-policy-settings.md)
+  - [Android policies](android-mam-policy-settings.md)
 
 ## Next steps
 [Monitor compliance and user status](monitor-mobile-app-management-policies-with-microsoft-intune.md)

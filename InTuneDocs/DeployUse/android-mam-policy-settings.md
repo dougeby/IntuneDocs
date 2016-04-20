@@ -43,7 +43,7 @@ The term **Policy managed apps** is used to refer to apps that are configured wi
 
   For devices that are not enrolled in Intune, web links in policy-managed apps will only open in the Managed Browser app using the mobile app management policy.
 
-  If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
+  If you are using Intune to manage your devices, see [manage internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
     **Default value = Yes**
 - **Encrypt app data:** Choose **Yes** to enable encryption. When this setting is enabled, for apps that are associated with a mobile app management policy, encryption is provided by Microsoft. Data is encrypted synchronously during file I/O operations. Content on the device storage is always be encrypted.

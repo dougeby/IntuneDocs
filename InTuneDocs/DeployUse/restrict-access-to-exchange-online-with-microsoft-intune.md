@@ -200,7 +200,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
 -   If the user un-enrolls their device, email is blocked after around 6 hours.
 
-**  To see some example scenarios of how you would configure conditional access policy to restrict device access, see [restrict email access example scenarios](restrict-email-access-example-scenarios.md). **
+**To see some example scenarios of how you would configure conditional access policy to restrict device access, see [restrict email access example scenarios](restrict-email-access-example-scenarios.md). **
 
 ## Step 5: Monitor the compliance and conditional access policies
 
@@ -213,11 +213,3 @@ On the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dashboard, choose 
 [Restrict access to SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [Restrict access to Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-### See also
-[Restrict access to Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-
-[Restrict access to new Exchange Online Dedicated](restrict-access to-new-exchange-online-dedicated-with-microsoft-intune.md)
-
-[Restrict access to legacy Exchange Online Dedicated](restrict-access to-legacy-exchange-online-dedicated-with-microsoft-intune.md)

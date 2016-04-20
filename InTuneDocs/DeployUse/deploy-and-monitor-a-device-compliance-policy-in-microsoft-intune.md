@@ -18,7 +18,7 @@ Deploy the compliance policy you [created](create-a-device-compliance-policy-in-
 
 2.  In the **Manage Deployment** dialog box, choose one or more groups to which you want to deploy the policy, then choose **Add > OK**.
 ![IntuneSA3dDeployCompliancePolicy3_Manage](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
-You can deploy a compliance policy to users and/or devices. Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. To learn more about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
+You can deploy a compliance policy to users and/or devices. Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. To learn more about how to deploy policies, see [deploy a configuration policy](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md#deploy-a-configuration-policy).
 
 Use the status summary and alerts on the **Overview** page of the **Policy** workspace to identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 

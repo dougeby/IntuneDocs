@@ -26,7 +26,7 @@ Click the app to see the supported scenarios, platforms and whether or not the a
 
 **Before** you can configure MAM policies, you'll need the following:
 
--   **A subscription to [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)**].    End-users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps with MAM policy.
+-   **A subscription to Microsoft Intune.    End-users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps with MAM policy.
 
 -   The **mobile device management authority** must be set to either **Intune** or **Configuration manager**, depending on whether you are using just Intune or Configuration Manager integrated with Intune to manage your devices. If you are using O365 built-in mobile device management, you must purchase an Intune subscription and [set the mobile device management authority to Intune](Set-mobile-device-management-authority-and-configure-Microsoft-Intune.md).
 -   An **Office 365 (O365)** subscription that is required for the following:

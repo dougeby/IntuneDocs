@@ -52,7 +52,7 @@ Specify when  cut, copy, and paste operations should be restricted. Choose from:
 
   For devices that are not enrolled in Intune, the web links in policy-managed apps can only open in the Managed Browser app using the mobile app management policy.
 
-  If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
+  If you are using Intune to manage your devices, see [manage internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
     **Default value = Yes**
 
