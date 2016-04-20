@@ -13,15 +13,6 @@ ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
-ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -60,7 +51,7 @@ To understand how your end users get their apps, choose from the following devic
 
 ## Help end users understand Company Portal app messages
 
-To help your users solve issues that they might have when they are using the Company Portal, you can review a [list of messages users might see in the Company Portal](help-end-users-understand-company-portal-app-messages.md).
+To help your users solve issues that they might have when they are using the Company Portal, you can review a [list of messages users might see in the Company Portal](/Intune/PlanDesign/help-end-users-understand-company-portal-app-messages).
 
 
 

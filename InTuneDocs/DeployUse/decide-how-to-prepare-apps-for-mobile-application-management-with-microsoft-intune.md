@@ -53,6 +53,6 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Support for Multi-Identity|X||
 
 ### See also
-[Android app wrapping tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-toolt.md)</br>
+[Android app wrapping tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [iOS app wrapping tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
