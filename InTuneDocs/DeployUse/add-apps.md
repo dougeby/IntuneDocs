@@ -17,7 +17,7 @@ You can deploy apps to all device types that are supported by Intune. Depending 
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**
-- This type of must support silent installation with no user input. Your app documentation should include the relevant command-line options to silently install the app (for example, **/q**).
+- This type of app must support silent installation with no user input. Your app documentation should include the relevant command-line options to silently install the app (for example, **/q**).
 - Any additional files and folders that are required by the app’s setup program must be available from the location that you specify for the app setup files.
 - In most cases, Windows Installer (.msi) and Windows Installer Patch (.msp) files do not require any command-line arguments to be installed by Intune. Check your app documentation. If command-line arguments are required, they must be entered as Name=Value pairs (such as TRANSFORMS=custom_transform.mst).
 
