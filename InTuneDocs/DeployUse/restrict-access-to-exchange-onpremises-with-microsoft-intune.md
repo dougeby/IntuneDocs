@@ -23,7 +23,7 @@ To learn more about how conditional access works, read the [restrict access to e
 
 -   Your Exchange version must be **Exchange 2010 or later**. Exchange server Client Access Server (CAS) array is supported.
 
--   You must use the **on-premises Exchange connector**, which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange on-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. For details on the connector, see [mobile device management with Exchange ActiveSync and Microsoft Intune](intune-on-premises-exchange-connector.md).
+-   You must use the **on-premises Exchange connector**, which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange on-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. For details on the connector, see [Intune on-premises Exchange connector](intune-on-premises-exchange-connector.md).
 
     -   The on-premises Exchange connector available to you in the Intune console is specific to your Intune tenant and cannot be used with any other tenant. You should also ensure that the exchange connector for your tenant is installed on exactly one machine and not on multiple machines.
 
@@ -93,7 +93,7 @@ The **Mail** application on Windows 8 and later (when enrolled with [!INCLUDE[wi
   > [!NOTE]
   > In order for Exchange to be able to send the notification email, you must specify the account that should be used to send the notification email.
   >
-  > For details, see [Configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md).
+  > For details, see [configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md).
 
 3.  When you are done, choose **Save**.
 
@@ -105,16 +105,9 @@ The **Mail** application on Windows 8 and later (when enrolled with [!INCLUDE[wi
 
 -   If the user un-enrolls from [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] it might take from 1-3 hours for the device to be blocked.
 
+**To see some example scenarios of how you would configure conditional access policy to restrict device access, see [restrict email access example scenarios](restrict-email-access-example-scenarios.md).**
+
 ## Next steps
 [Restrict access to SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [Restrict access to Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-**  To see some example scenarios of how you would configure conditional access policy to restrict device access, see [restrict email access example scenarios](restrict-email-access-example-scenarios.md). **
-
-### See also
-[Restrict access to Exchange Online](restrict-access to-exchange-online-with-microsoft-intune.md)
-
-[Restrict access to new Exchange Online Dedicated](restrict-access to-new-exchange-online-dedicated-with-microsoft-intune.md)
-
-[Restrict access to legacy Exchange Online Dedicated](restrict-access to-legacy-exchange-online-dedicated-with-microsoft-intune.md)
