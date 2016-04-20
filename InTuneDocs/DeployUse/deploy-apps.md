@@ -11,6 +11,7 @@ author: robstackmsft
 ---
 # Deploy apps with Microsoft Intune
 
+This topic explains some of the concepts you'll need to understand before you start deploying apps with Microsoft Intune.
 
 ## The Intune software publisher
 The **Microsoft Intune Software Publisher** starts when you add or modify apps from the Microsoft Intune administrator console. From the publisher, you select and configure a software installer type that will either upload apps (programs for computers or apps for mobile devices) to be stored in Intune cloud storage, or link to an online store or web application.
@@ -39,7 +40,7 @@ These rules apply to purchasing additional cloud-based storage for Intune:
 
 -   To upload files, you must have a minimum Internet speed of 768kbps.
 
-### App deployment actions
+## App deployment actions
 When you deploy apps, you can choose from one of the following deployment actions:
 
 -   **Required install** – The app is installed onto the device, with no end-user intervention required.
@@ -72,7 +73,7 @@ When you deploy apps, you can choose from one of the following deployment action
 > [!TIP]
 > When you deploy apps, if you select both user and device groups, you can only deploy the app as an **Available install**.
 
-### Deployment conflicts
+## Deployment conflicts
 When two deployments, with the same deployment action are received by a device, the following rules apply:
 
 -   Deployments to a device group take precedence over deployments to a user group. However, if an app is deployed to a user group with a deployment action of **Available** and the same app is also deployed to a device group with a deployment action of **Not Applicable**, the app will be made available in the company portal for users to install.
@@ -82,3 +83,8 @@ When two deployments, with the same deployment action are received by a device, 
 -   An install action takes precedence over an uninstall action.
 
 -   If both a required and an available install are received by a device, the actions are combined (the app is both required and available).
+
+
+## Next steps
+
+Learn how to [deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).

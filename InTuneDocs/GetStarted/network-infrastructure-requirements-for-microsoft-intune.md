@@ -16,10 +16,9 @@ The following Intune requirements enable your network infrastructure to pass com
 
 There is no requirement to use on-premises infrastructure (like a server where you must install software), but there are options to use on-premises infrastructure including Exchange and Active Directory synchronization tools.
 
-## Network infrastructure
 To manage computers that are behind firewalls and proxy servers, you must set up firewalls and proxy servers to allow communications for Intune.
 
-### Requirements for firewalls, ports, and domains
+## Requirements for firewalls, ports, and domains
 Managed devices require configurations that let **All Users** access various services through firewalls.
 
 The following table lists the ports and services that the Intune client accesses.
@@ -142,7 +141,7 @@ The following table lists the ports and services that the Intune client accesses
 
 
 
-### Requirements for proxy servers
+## Requirements for proxy servers
 To manage computers that are behind a proxy server, consider the following:
 
 -   The proxy server must support both **HTTP** and **HTTPS** because Intune clients use both protocols.
@@ -155,7 +154,7 @@ You can also use a proxy server that caches content to [reduce network bandwidth
 
 
 
-### Requirements for the Service to Service Connector
+## Requirements for the Service to Service Connector
 The Service to Service Connector supports only cloud-based Exchange and has no requirements for on-premises infrastructure.
 
 To use this Connector, the following must be true:

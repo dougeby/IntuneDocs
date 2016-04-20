@@ -161,10 +161,40 @@ When you delete a policy, or remove a device from a group to which a policy was 
 
 #### Enrolled devices
 
-|Policy type|Windows|Android|Windows Phone (8.1 only)|iOS|
-|---------------|-----------|-----------|----------------------------|-------|
-|Wi-Fi, VPN, certificate and email profiles|Removed|Removed|Removed|Removed|
-|All other policy types|Not removed|Not removed|The following settings are removed:<br /><br />Require a password to unlock mobile devices<br /><br />Allow simple passwords<br /><br />Minimum password length<br /><br />Required password type<br /><br />Password expiration (days)<br /><br />Remember password history<br /><br />Number of repeated sign-in failures to allow before the device is wiped<br /><br />Minutes of inactivity before password is required<br /><br />Required password type – minimum number of character sets<br /><br />Allow camera<br /><br />Require encryption on mobile device<br /><br />Allow removable storage<br /><br />Allow web browser<br /><br />Allow application store<br /><br />Allow screen capture<br /><br />Allow geolocation<br /><br />Allow Microsoft Account<br /><br />Allow copy and paste<br /><br />Allow Wi-Fi tethering<br /><br />Allow automatic connection to free Wi-Fi hotspots<br /><br />Allow Wi-Fi hotspot reporting<br /><br />Allow factory reset<br /><br />Allow Bluetooth<br /><br />Allow NFC<br /><br />Allow Wi-Fi|Removed, **except** for:<br /><br />Allow voice roaming<br /><br />Allow data roaming<br /><br />Allow automatic synchronization while roaming|
+- Wi-Fi, VPN, certificate and email profiles - These profiles are removed from all supported enrolled devices.
+- All other policy types
+	- **Windows and Android devices** - Settings are not removed from the device.
+	- **Windows Phone 8.1 devices** - The following settings are removed:
+		- Require a password to unlock mobile devices
+		- Allow simple passwords
+		- Minimum password length
+		- Required password type
+		- Password expiration (days)
+		- Remember password history
+		- Number of repeated sign-in failures to allow before the device is wiped
+		- Minutes of inactivity before password is required
+		- Required password type – minimum number of character sets
+		- Allow camera
+		- Require encryption on mobile device
+		- Allow removable storage
+		- Allow web browser
+		- Allow application store
+		- Allow screen capture
+		- Allow geolocation
+		- Allow Microsoft Account
+		- Allow copy and paste
+		- Allow Wi-Fi tethering
+		- Allow automatic connection to free Wi-Fi hotspots
+		- Allow Wi-Fi hotspot reporting
+		- Allow factory reset
+		- Allow Bluetooth
+		- Allow NFC
+		- Allow Wi-Fi
+	
+	- **iOS** - All settings are removed, except:
+		- Allow voice roaming
+		- Allow data roaming
+		- Allow automatic synchronization while roaming
 
 #### Windows PCs running the Intune client software
 

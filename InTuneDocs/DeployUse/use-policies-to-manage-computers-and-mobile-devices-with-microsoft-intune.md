@@ -77,7 +77,7 @@ When you select a deployed policy, you can view further information about the de
 
 ## Tasks for Intune policies
 
-### <a name="BKMK_Refresh"></a>To refresh the policies on a device to ensure they are current (applies to computers only)
+### To refresh the policies on a device to ensure they are current (applies to computers only)
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups**, and then select a device group.
 
@@ -139,7 +139,7 @@ Intune does not evaluate the payload of Apple Configuration files or custom OMA-
 
 Therefore, when you deploy a custom policy, ensure the settings configured do not conflict with compliance, configuration or other custom policies. In the case of a custom policy with settings conflicts, the order in which are settings are applied is random.
 
-### <a name="BKMK_What"></a>What happens when a policy is deleted, or no longer applicable
+### What happens when a policy is deleted, or no longer applicable
 When you delete a policy, or remove a device from a group to which a policy was deployed, the policy and settings will be removed from the device according to the following tables:
 
 #### Mobile devices

@@ -42,7 +42,8 @@ The message text is **Allow Company Portal to make and manage phone calls?**, an
 ### What the message means
 The message is prompting users to allow their device phone number and IMEI to be sent to the Intune service and to appear in the Admin console on the Hardware page. 
 
-[!NOTE] **The Company Portal app never makes or manages phone calls!** The message text is controlled by Google and cannot be changed. 
+> [!NOTE] 
+> **The Company Portal app never makes or manages phone calls!** The message text is controlled by Google and cannot be changed. 
 
 To see the **Hardware** page, go to **Groups** > **All mobile devices** > **Device**s. Select the user's device, and go to **View Properties** > **Hardware**.
 
