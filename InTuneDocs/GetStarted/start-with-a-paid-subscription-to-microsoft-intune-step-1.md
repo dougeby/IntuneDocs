@@ -18,13 +18,13 @@ If you already have a work or school account, you will be able to simply **sign 
 >[!WARNING]
 >If you sign up for a new account, you cannot later use an existing work or school account to manage your subscription or combine it with existing volume licensing agreements.
 
-## Sign up or sign in to Intune
+## How to sign up or sign in to Intune
 
 1.  Visit the [Intune Sign up](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) page.
 
 2.  On the **Sign up** page, sign in or sign up to manage a new subscription of Intune.
 
-### Post sign up considerations
+## Post sign up considerations
 If you sign up for a new subscription, you'll receive an email message that contains your account information at the email address that you provided during the sign up process. This email confirms your subscription is active.
 
 After completing the sign up process you will be directed to a page used to add users and assign them licenses using the Office 365 admin center. If you will only have cloud-based accounts using your default onmicrosoft.com domain name then you can go ahead and add users and assign licenses at this point. However, if you will use your organization's custom domain name or want to synchronize user account information from on-premises Active Directory, then you can close that browser window and move on to step 2 of this walkthrough.
@@ -32,7 +32,7 @@ After completing the sign up process you will be directed to a page used to add 
 >[!TIP]
 > The next time you sign in to Intune you'll automatically be directed to the Intune administration console.
 
-## Next steps
+### Next steps
 Congratulations! You have just completed step 1 of the *Start with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]

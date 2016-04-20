@@ -65,7 +65,8 @@ The message text is **Allow Company Portal to access photos, media, and files on
 ### What the message means
 The message is prompting users to allow their device to write data logs to the device's SD card and to enable those logs to be moved by using a USB cable.   
 
-[!NOTE] **The Company Portal app never accesses users' photos, media, and files!** The message text is controlled by Google and cannot be changed.
+> [!NOTE] 
+> **The Company Portal app never accesses users' photos, media, and files!** The message text is controlled by Google and cannot be changed.
 
 ### What happens if users allow or deny access
 If users allow access, the logs will be copied to the SD card.
