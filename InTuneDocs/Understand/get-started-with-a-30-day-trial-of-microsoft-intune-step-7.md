@@ -14,7 +14,7 @@ If you purchase at least 150 licenses for Microsoft Intune in an eligible plan, 
 
 You can convert your free Intune trial to a paid subscription in the following ways:
 
--   **Intune Subscription** - Licensed on a per-user basis. For more information, see [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx). After completing your purchase, follow the steps in  [Get started with a paid subscription to Microsoft Intune](/Intune/DeployUse/get-started-with-a-paid-subscription-to-microsoft-intune) and review the additional configuration steps when you're getting started with Intune.
+-   **Intune Subscription** - Licensed on a per-user basis. For more information, see [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx). After completing your purchase, follow the steps in  [Get started with a paid subscription to Microsoft Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) and review the additional configuration steps when you're getting started with Intune.
 
 -   **Enterprise Mobility Suite** - Provides Intune, Azure Active Directory Premium, Azure RMS services. Contact your Microsoft account manager or local reseller for more details, or see [information on the Enterprise Mobility Suite](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx) or [Enterprise Mobility Suite pricing](http://www.microsoft.com/en-us/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx).
 
