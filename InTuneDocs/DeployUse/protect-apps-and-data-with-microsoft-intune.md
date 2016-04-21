@@ -14,7 +14,9 @@ author: karthikaraman
 
 **This section describes Intune capabilities like conditional access and mobile app management (MAM) policies that can help protect your company data.**
 
-An important step to protecting company data is making sure that devices used to access that data are using security protections like strong password, encryption, and are not jailbroken. Microsoft Intune gives you the ability to set conditions that the devices have to comply with, before they are allowed to access your company email and data. This is known as **conditional access**.
+Intune protects company data through multiple technology layers.  At the identity layer, conditional access protects access to services by only allowing access from managed and compliant devices.  At the client application layer, mobile app management (MAM)  protects data loss by preventing data from moving to non-protected apps or storage locations and by wiping data when a device is lost or stolen.  These two layers of protection should be used together in order to secure data while keeping your mobile workforce productive.
+
+An important first step to protecting company data is to implement conditional access by making sure that devices used to access that data are using security protections like strong password, encryption, and are not jailbroken. Microsoft Intune gives you the ability to set conditions that the devices have to comply with, before they are allowed to access your company email and data.
 
 [Conditional access](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) is determined by two types of policies you can set in Intune:
 - [Compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune.md) determine the compliance of a device. They evaluate settings and conditions like:
