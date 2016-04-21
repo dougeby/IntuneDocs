@@ -20,7 +20,7 @@ Intune gives you the ability to manage mobile devices and mobile apps. It integr
 
 Some of the common business problems Intune helps solve include:
 
-* Securing your on-premise email and collaboration infrastructure so that it can be accessed by mobile devices and apps on the Internet
+* Securing your on-premises email and collaboration infrastructure so that it can be accessed by mobile devices and apps on the Internet
 * Securing your Office 365 infrastructure so that it can be safely accessed by mobile devices and apps on the Internet
 * Enabling your organization to issue mobile phones to its employees
 * Enabling your organization to provide limited-use “shared devices” for task workers
