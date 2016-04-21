@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
+ms.assetid: 277ba9de-c0be-4574-b460-8ed02b6f4446
 author: robstackmsft
 ---
 # Upgrade Windows devices to the latest version with the edition upgrade policy in Microsoft Intune

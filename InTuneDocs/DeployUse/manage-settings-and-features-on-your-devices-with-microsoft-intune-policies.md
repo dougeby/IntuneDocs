@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: efb4dcd6-56ea-44a8-8fe2-6f1542fc75ec
+ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 author: robstackmsft
 ---
 # Manage settings and features on your devices with Microsoft Intune

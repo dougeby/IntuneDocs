@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
-ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
+ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 author: Staciebarker
 ---
 

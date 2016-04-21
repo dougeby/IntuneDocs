@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
+ms.assetid: 0c13f805-9d6c-4a44-86f2-eeb498110e5e
 author: Staciebarker
 ---
 # Prepare iOS apps for mobile application management with the Intune App Wrapping Tool

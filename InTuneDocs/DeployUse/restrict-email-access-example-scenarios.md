@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
+ms.assetid: afa63ad3-d830-4efc-ab84-fc306119092c
 author: karthikaraman
 ---
 # Restrict access to email with Microsoft Intune: Example scenarios

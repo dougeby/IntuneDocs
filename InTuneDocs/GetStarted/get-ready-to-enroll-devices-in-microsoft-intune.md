@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
+ms.assetid: 00e6a315-e545-4a33-a63a-ec380baa7fe5
 author: NathBarn
 ---
 # Get ready to enroll devices in Microsoft Intune
