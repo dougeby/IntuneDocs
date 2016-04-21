@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd 
+ms.assetid: f11398a9-80ae-4b19-ab65-adab8b991e7f
 author: Staciebarker
 ---
 # Set up email access for iOS devices using Microsoft Intune

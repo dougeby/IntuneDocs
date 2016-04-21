@@ -6,7 +6,7 @@ ms.service: microsoft-intune
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
+ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 author: NathBarn
 ---
 
