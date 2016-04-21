@@ -15,10 +15,10 @@ As with devices, at some point, you want or need to [retire apps](retire-apps-us
   > [!NOTE]
   > This topic is only about wiping devices managed by Intune. You can also use [the Azure preview portal](https://portal.azure.com) to [wipe company data from apps](wipe-managed-company-app-data-with-microsoft-intune.md).
 
-## <a name="bkmk_wipe"></a>Use Retire/Wipe to help secure a lost device or to retire a device from active use
-**Full wipe** restores a device to its factory default settings, removing all company and user data and settings. The device is removed from Intune. **Be careful about selecting full wipe; your data cannot be recovered**.
+## <a name="bkmk_wipe"></a>Full or selectively wipe a device
+**Full wipe** restores a device to its factory default settings, removing all company and user data and settings. The device is removed from Intune. Full wipe is useful for resetting a device before giving it to a new user or instances where the device has been lost or stolen.  **Be careful about selecting full wipe. Data on the device cannot be recovered**.
 
-**Selective wipe** removes company data from a device. The device is removed from Intune. The following tables describe by platform what data is removed and the effect on data that remains on the device after a selective wipe.
+**Selective wipe** removes company data including mobile app management (MAM) data where applicable, settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device. The device is removed from Intune. The following tables describe by platform what data is removed and the effect on data that remains on the device after a selective wipe.
 
 **iOS**
 
@@ -61,7 +61,7 @@ As with devices, at some point, you want or need to [retire apps](retire-apps-us
 |Email|Removes email that is EFS enabled which includes the Mail app for Windows email and attachments.|Not supported|Email profiles that are provisioned through Intune are removed and cached email on the device is deleted.|Removes email that is EFS enabled which includes the Mail app for Windows email and attachments. Removes mail accounts that were provisioned by Intune.|
 |Azure Active Directory (AAD) Unjoin|No|No|AAD Record removed|AAD Record removed|
 
-## Remotely wipe a device from the Intune administrator console
+### Remotely wipe a device from the Intune administrator console
 
 1.  Select devices to be wiped. You can find them either by user or by device.
 
@@ -91,7 +91,7 @@ As with devices, at some point, you want or need to [retire apps](retire-apps-us
 
 It takes less than 15 minutes for a wipe to propagate across all device types.
 
-## Wiping Encryption File System (EFS)-enabled content
+## Wipe encryption file system (EFS)-enabled content
 Selective wipe of EFS-encrypted content is supported by Windows 8.1 and Windows RT 8.1. The following apply to a selective wipe of EFS-enabled content:
 
 -   Only apps and data that are protected by EFS using the same Internet domain as the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] account are selectively wiped. For more information, see [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx).
