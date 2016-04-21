@@ -14,7 +14,7 @@ These step-by-step instructions help you set up an Intune trial and configure a 
 
 
 
-## <a name="BKMK_30day_review_prereqs"></a>Review prerequisites for this task
+## Review prerequisites for this task
 
 -   Windows PC with Internet Explorer - for doing administrative tasks
 
@@ -22,7 +22,7 @@ These step-by-step instructions help you set up an Intune trial and configure a 
 
 -   Phone to authenticate yourself during trial sign-up
 
-## <a name="BKMK_30day_create_trial_acct"></a>Create a free Intune trial account
+## Create a free Intune trial account
 > [!NOTE]
 > If you already have an Intune subscription, skip this section and go to the next section.
 
@@ -46,7 +46,7 @@ These step-by-step instructions help you set up an Intune trial and configure a 
 
     ![](../media/30-day-trial-walkthrus/30day-start-trial-5-ReadyToGo.png)
 
-## <a name="BKMK_30day_create_test_user"></a>Create a test user
+## Create a test user
 
 1.  Using a Windows PC, click **Start** to go to the user management page.
 
@@ -76,7 +76,7 @@ These step-by-step instructions help you set up an Intune trial and configure a 
 
     ![](../media/30-day-trial-walkthrus/30day-crt-user-10-refresh-user.png)
 
-## <a name="BKMK_30day_cfg_ios_pin_pol"></a>Configure an iOS PIN policy for the test user
+## Configure an iOS PIN policy for the test user
 
 1.  Using a Windows PC, set the MDM authority to be Intune:
 
@@ -222,7 +222,7 @@ These step-by-step instructions help you set up an Intune trial and configure a 
 
         ![](../media/30-day-trial-walkthrus/30day-cfg-pol-44-policy-applied.png)
 
-## <a name="BKMK_30day_validate_pol"></a>Validate that the policy is enforced on an iOS device
+## Validate that the policy is enforced on an iOS device
 
 1.  On an iPad, launch the iOS App Store, install the free **Microsoft Intune Company Portal** app, and open it.
 
