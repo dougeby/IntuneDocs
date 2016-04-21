@@ -40,7 +40,7 @@ Before  you sign up or sign in to Intune,  you should consider the following:
 
 After you complete the sign-up form and accept the Microsoft Online Subscription Agreement, you're automatically signed in to the Office 365 admin center with the tenant administrator account. An email message that contains your account information is also sent to the email address that you provided during sign-up. This email confirms that your subscription is active.
 
-## Next steps
+### Next steps
 Congratulations! You have just completed step 1 of the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
 
 >[!div class="step-by-step"]
