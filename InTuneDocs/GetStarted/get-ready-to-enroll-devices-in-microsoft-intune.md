@@ -12,7 +12,7 @@ author: NathBarn
 # Get ready to enroll devices in Microsoft Intune
 To let employees access company resources on mobile devices (including Android, iOS, and Windows Phone) with Intune you must enable device enrollment. Apart from managing mobile devices that use iOS, Android, or Widows, Intune also enables you to manage computers running Windows 10 and Windows 8.1 as mobile devices; alternately, you can manage them [using Intune client software](manage-windows-pcs-with-microsoft-intune.md).
 
-## <a name="BKMK_Set_MDM_Authority"></a>Set mobile device management authority
+## Set mobile device management authority
 The MDM authority defines the  management service with permission to manage a set of devices. Options for MDM authority include [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and Configuration Manager with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
 
 >[!IMPORTANT]
