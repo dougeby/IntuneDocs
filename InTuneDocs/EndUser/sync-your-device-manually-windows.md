@@ -14,8 +14,8 @@ author: Staciebarker
 If your app installation is taking too long, use the following instructions to manually sync your Windows device, which might help to speed up the installation. Use the instructions that match the type of device you have:
 
 * [Windows 10 Mobile](#windows-10-mobile)
-* [Windows 10 Desktop](##windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8.1)
+* [Windows 10 Desktop](#windows-10-desktop)
+* [Windows Phone 8.1](#windows-phone-8\.1)
 
 
 ## Windows 10 Mobile
