@@ -18,22 +18,24 @@ In the Intune administration console, **alerts** are used to quickly assess the 
 
 **Reports** are used to answer a range of questions, such as how many PCs have a particular application or update installed, what malware was blocked, or which users needed Remote Assistance over the last month.
 
-To learn more about alerts, notifications, and reports, see [Monitoring and reports with Microsoft Intune](/Intune/DeployUse/monitoring-and-reports-with-microsoft-intune).
+To learn more about alerts, notifications, and reports, see [Monitoring and reports with Microsoft Intune](/Intune/Deploy-Use/monitoring-and-reports-with-microsoft-intune).
 
 ## Intune capabilities
 Intune has a wide variety of capabilities beyond those shown in these short setup steps. A few examples of these capabilities include:
 
--   **Control access to Exchange and Office 365.** For details, see [Manage app access to Exchange Online](/Intune/DeployUse/manage-app-access-to-exchange-online) and [Manage app access to Office 365 services](/Intune/DeployUse/manage-app-access-to-office-365-services).
+-   **Control access to Exchange and Office 365.** For details, see [Manage app access to Exchange Online](/Intune/Deploy-Use/manage-app-access-to-exchange-online) and [Manage app access to Office 365 services](/Intune/Deploy-Use/manage-app-access-to-office-365-services).
 
--   **Management of corporate-owned iOS devices.** For details, see [Enroll corporate-owned iOS devices in Microsoft Intune](/Intune/DeployUse/enroll-corporate-owned-ios-devices-in-microsoft-intune).
+-   **Management of corporate-owned iOS devices.** For details, see [Enroll corporate-owned iOS devices in Microsoft Intune](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
 
--   **Mobile application management.** Managed mobile apps work with mobile application management policies to restrict certain app operations, such as copy and paste and screenshot functionality. For details, see [Create and deploy mobile application management policies with Microsoft Intune](/Intune/DeployUse/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) and [Manage Internet access using managed browser policies with Microsoft Intune](/Intune/DeployUse/manage-internet-access-using-managed-browser-policies-with-microsoft-intune).
+-   **Mobile application management.** Managed mobile apps work with mobile application management policies to restrict certain app operations, such as copy and paste and screenshot functionality. For details, see [Create and deploy mobile application management policies with Microsoft Intune](/Intune/Deploy-Use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) and [Manage Internet access using managed browser policies with Microsoft Intune](/Intune/Deploy-Use/manage-internet-access-using-managed-browser-policies-with-microsoft-intune).
 
--   **Control access to company resources.** You can deploy certificates, e-mail profiles, VPN profiles and Wi-Fi profiles to mobile devices, making it easier to quickly set up mobile devices. For details, see [Enable access to company resources with Microsoft Intune](/Intune/DeployUse/enable-access-to-company-resources-with-microsoft-intune).
+-   **Control access to company resources.** You can deploy certificates, e-mail profiles, VPN profiles and Wi-Fi profiles to mobile devices, making it easier to quickly set up mobile devices. For details, see [Enable access to company resources with Microsoft Intune](/Intune/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune).
 
-To learn about the full capabilities of Intune, see [Mobile device management capabilities in Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md) and [Windows PC management capabilities in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md).
+To learn about the full capabilities of Intune, see:
+- [Mobile device management capabilities in Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md)
+- [Windows PC management capabilities in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
 
-To learn more about capabilities that were recently introduced to Intune, see [What's new in Microsoft Intune](/Intune/DeployUse/what-s-new-in-microsoft-intune).
+To learn more about capabilities that were recently introduced to Intune, see [What's new in Microsoft Intune](/Intune/Deploy-Use/whats-new-in-microsoft-intune).
 
 Support options are described in [How to get support for Microsoft Intune](/Intune/Troubleshoot/how-to-get-support-for-microsoft-intune), and you can join discussions about Intune in [Microsoft Intune forums](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 

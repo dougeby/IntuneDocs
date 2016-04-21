@@ -15,35 +15,40 @@ To set up mobile device management with Intune, you must  first set the mobile d
 ## Prepare the service for device management
 
 1.  **Make Intune your mobile device management authority**
-    In the [Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Mobile Device Management**, and click **Set MDM Authority** under **Tasks**.  Click **Yes** in the **MDM Authority** dialog box.
+
+    In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Mobile Device Management**. Choose **Tasks** > **Set MDM Authority**, and then choose **Yes** in the **MDM Authority** dialog box.
 
 2.  **Enable MDM for your device platform**
+
     Enable mobile device management for the device platform you want to manage. Depending on your platform, different requirements are needed:
 
-    -   **iOS and Mac OS X**: see [Set up iOS and Mac management with Microsoft Intune](/Intune/DeployUse/set-up-ios-and-mac-management-with-microsoft-intune).
+    -   **iOS and Mac OS X**: see [Set up iOS and Mac management with Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).
 
     -   **Android**: Android mobile devices allow users to enroll using the Company Portal app available from Google Play. No additional configuration in Intune is required.
 
-    -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](/Intune/DeployUse/set-up-windows-phone-management-with-microsoft-intune).
+    -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).
 
 ## Enroll test devices
 
-  -   **iOS and Mac OS X** - Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
+### iOS and Mac OS X
+Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with Intune user credentials added above. View **Enrolled devices** to add your device.
 
-  -    **Android** - Install the **Intune Company Portal** app from Microsoft Corporation, available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune user credentials added above.
+### Android
+Install the **Intune Company Portal** app from Microsoft Corporation, available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune user credentials added above.
 
+### Windows Phone 8.1
+Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
 
-  -   **Windows Phone 8.1** - Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
+ ### Windows Phone 8.0
+ Users click **system settings** &gt; **company apps**, and sign in with Intune user credentials added above. The Company Portal app is deployed to your phone.
 
-  -   **Windows Phone 8.0** - Users click **system settings** &gt; **company apps**, and sign in with Intune user credentials added above. The Company Portal app is deployed to your phone.
-
-    If prompted for a **Server address**, type “manage.microsoft.com”.
+If prompted for a **Server address**, type “manage.microsoft.com”.
 
 
 ## Install the previously deployed app
 Open the Company Portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.
 
-To learn more about mobile device management using Intune, see [Get ready to enroll devices in Microsoft Intune](/Intune/deployuse/get-ready-to-enroll-devices-in-microsoft-intune).
+To learn more about mobile device management using Intune, see [Get ready to enroll devices in Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
 
 ### Next steps
 Congratulations! You have just completed step 5 of the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
