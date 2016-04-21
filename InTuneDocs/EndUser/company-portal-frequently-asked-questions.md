@@ -12,36 +12,35 @@ author: Staciebarker
 # Company Portal Frequently Asked Questions
 
 
--   [What is the company portal?](#what-is-the-company-portal?)
+-   [What is the Company Portal?](#what-is-the-company-portal)
 
--   [What can I do with the company portal?](#what-can-i-do-with-the-company-portal?)
+-   [What can I do with the Company Portal?](#what-can-i-do-with-the-company-portal)
 
--   [What happens when I add a computer or device to the company portal?](#what-happens-when-i-add-a-computer-or-device-to-the-company-portal?)
+-   [What happens when I add a computer or device to the Company Portal?](#what-happens-when-i-add-a-computer-or-device-to-the-company-portal)
 
--   [What kind of computers or devices can I add to the company portal?](#what-kind-of-computers-or-devices-can-i-add-to-the-company-portal?)
+-   [What kind of computers or devices can I add to the Company Portal?](#what-kind-of-computers-or-devices-can-i-add-to-the-company-portal)
 
 -	[Company Portal app not supported](#company-portal-app-not-supported)
 
--   [Can I remove a computer or device from the company portal?](#can-i-remove-a-computer-or-device-from-the-company-portal?)
+-   [Can I remove a computer or device from the Company Portal?](#can-i-remove-a-computer-or-device-from-the-company-portal)
 
--   [Why don’t I see all of my devices in the company portal?](#why-don't-i-see-all-of-my-devices-in-the-company-portal?)
+-   [I do not see all of my devices in the Company Portal?](#i-do-not-see-all-of-my-devices-in-the-company-portal)
 
--   [I need to install a new version of the company portal](#i-need-to-install-a-new-version-of-the-company-portal)
+-   [I need to install a new version of the Company Portal](#i-need-to-install-a-new-version-of-the-company-portal)
 
 -   [I receive an error that my computer is already enrolled](#i-receive-an-error-that-my-computer-is-already-enrolled)
 
--   [Troubleshooting iPhone error messages during enrollment](#troubleshooting-iphone-error-messages-during-enrollment)
 
-## <a name="BKMK_WhatIs"></a>What is the company portal?
-The company portal is your company’s interface that lets you manage your work computers and devices, or manage your personal computers or devices that you choose to use at work.  The company portal can be a website that you go to, or can be an app that you install to your device.
+## What is the Company Portal
+The Company Portal is your company’s interface that lets you manage your work computers and devices, or manage your personal computers or devices that you choose to use at work.  The Company Portal can be a website that you go to, or can be an app that you install to your device.
 
-## <a name="BKMK_WhatCanIDo"></a>What can I do with the company portal?
-Once you add your computer or device to the company portal, you can browse for company apps to install, manage other devices that you have added, and find contact information for your IT administrator.
+## What can I do with the Company Portal
+Once you add your computer or device to the Company Portal, you can browse for company apps to install, manage other devices that you have added, and find contact information for your IT administrator.
 
-## <a name="BKMK_AddDevice"></a>What happens when I add a computer or device to the company portal?
-When you add a computer or device to the company portal, some software may be installed or an app may be downloaded (depending on the device).  You are also giving your IT administrator permission to manage your device to help protect the company information on the device.  For more information, see [What Happens if You Add a Device to the Company Portal](http://go.microsoft.com/fwlink/?LinkID=265350).
+## What happens when I add a computer or device to the Company Portal
+When you add a computer or device to the Company Portal, some software may be installed or an app may be downloaded (depending on the device).  You are also giving your IT administrator permission to manage your device to help protect the company information on the device.  
 
-## <a name="BKMK_WhatCanIAdd"></a>What kind of computers or devices can I add to the company portal?
+## What kind of computers or devices can I add to the Company Portal
 
 -   Windows 10 Mobile
 
@@ -59,23 +58,21 @@ When you add a computer or device to the company portal, some software may be in
 
 -   Android devices
 
-## <a name="BKMK_cp_app_notsupported"></a>Company Portal app not supported
-This version of the company portal can no longer be used. Install the **Company Portal** app from the Windows Store to continue.
+## Company Portal app not supported
+This version of the Company Portal can no longer be used. Install the **Company Portal** app from the Windows Store to continue.
 
-## <a name="BKMK_RemoveDevice"></a>Can I remove a computer or device from the company portal?
-Yes, you can either remove or reset a computer or device from the company portal.  There is a difference between **remove** and **reset**:
+## Can I remove a computer or device from the Company Portal
+Yes, you can either remove or reset a computer or device from the Company Portal.  There is a difference between **remove** and **reset**:
 
--   When you remove a computer or device, you won’t be able to access the company portal from that device anymore, and some company data may be removed from your device.
+-   When you remove a computer or device, you won’t be able to access the Company Portal from that device anymore, and some company data may be removed from your device.
 
--   When you reset a computer or device, the company portal attempts to reset your computer or device back the manufacturer’s default settings.  This may result in all data, both company data and personal data, being removed.
+-   When you reset a computer or device, the Company Portal attempts to reset your computer or device back the manufacturer’s default settings.  This may result in all data, both company data and personal data, being removed.
 
-For more information, see [What Happens if You Remove or Reset a Device Using the Company Portal](http://go.microsoft.com/fwlink/?LinkID=260958).
+## I do not see all of my devices in the Company Portal
+In order to see a device, it must be added to the Company Portal. Browse to the Company Portal as directed by your administrator and follow the steps for your device. You also won’t see devices that are owned and managed by your company.
 
-## <a name="BKMK_CantSeeDevices"></a>Why don’t I see all of my devices in the company portal?
-In order to see a device, it must be added to the company portal. Browse to the company portal as directed by your administrator and follow the steps for your device. You also won’t see devices that are owned and managed by your company.
-
-## <a name="BKMK_InstallNewVersion"></a>I need to install a new version of the company portal
-If your version of the company portal is no longer supported, or there is a newer version of the company portal available, use the following procedures to update your device.
+## I need to install a new version of the Company Portal
+If your version of the Company Portal is no longer supported, or there is a newer version of the Company Portal available, use the following procedures to update your device.
 
 ### To update your Windows device
 
@@ -88,49 +85,17 @@ If your version of the company portal is no longer supported, or there is a newe
 
 ### To update your iOS device
 
-1.  The Apple AppStore will alert you when a new version of the company portal is available. Follow the directions in the alert to update your device.
+The Apple AppStore will alert you when a new version of the Company Portal is available. Follow the directions in the alert to update your device.
 
-## <a name="BKMK_NotEnrolled"></a>I receive an error that my computer is already enrolled
-This means that your computer is already added to the company portal, but is not linked to your user account yet. Follow this procedure to link your computer to your user account and complete the process.
+## I receive an error that my computer is already enrolled
+This means that your computer is already added to the Company Portal, but is not linked to your user account yet. Follow this procedure to link your computer to your user account and complete the process.
 
 ### To link your computer
 
 1.  On the computer that you wish to link to your account, click **Start** then click **Microsoft Intune Center**.
 
-2.  Open the company portal.
+2.  Open the Company Portal.
 
 3.  Follow the prompts to link the computer to your user account.
 
-## <a name="BKMK_TroubleshootingiOS"></a>Troubleshooting iPhone error messages during enrollment
-If you encounter errors while enrolling your iPhone, follow the instructions below.
-
-### DeviceCapReached
-**Issue:** This message indicates that you have too many mobile devices enrolled already.
-
-**Workaround:** Before you enroll another mobile device, you must remove one of your currently enrolled mobile devices from the company portal.
-
-### APNSCertificateNotValid
-**Issue:** This message indicates that there is a problem with the certificate that allows your mobile device to communicate with your company’s network.
-
-**Workaround:** Contact your IT administrator and tell them that you received the message **APNSCertificateNotValid** while trying to enroll your mobile device, and to see the solution at [Troubleshooting iOS Enrollment Errors with Microsoft Intune or System Center 2012 R2 Configuration Manager](http://go.microsoft.com/fwlink/?LinkID=327928).
-
-### AccountNotOnboarded
-**Issue:** This message indicates that there is a problem with the certificate that allows your mobile device to communicate with your company’s network.
-
-**Workaround:** Contact your IT administrator and tell them that you received the message **AccountNotOnboarded** while trying to enroll your mobile device, and to see the solution at [Troubleshooting iOS Enrollment Errors with Microsoft Intune or System Center 2012 R2 Configuration Manager](http://go.microsoft.com/fwlink/?LinkID=327928).
-
-### DeviceTypeNotSupported
-**Issue:** This message indicates that the mobile device type that you are trying to enroll is not supported.
-
-**Workaround:** Contact your IT administrator and tell them that you received the message **DeviceTypeNotSupported** while trying to enroll your mobile device, and to see the solution at [Troubleshooting iOS Enrollment Errors with Microsoft Intune or System Center 2012 R2 Configuration Manager](http://go.microsoft.com/fwlink/?LinkID=327928).
-
-### UserLicenseTypeInvalid
-**Issue:** This message indicates that you cannot enroll your mobile device because your user account is not yet a member of a required user group.
-
-**Workaround:** Contact your IT administrator and tell them that you received the message **UserLicenseTypeInvalid** while trying to enroll your mobile device, and to see the solution at [Troubleshooting iOS Enrollment Errors with Microsoft Intune or System Center 2012 R2 Configuration Manager](http://go.microsoft.com/fwlink/?LinkID=327928).
-
-### MdmAuthorityNotDefined
-**Issue:** This message indicates that your IT administrator needs to configure the way the mobile devices in your company are managed.
-
-**Workaround:** Contact your IT administrator and tell them that you received the message **MdmAuthorityNotDefined** while trying to enroll your mobile device, and to see the solution at [Troubleshooting iOS Enrollment Errors with Microsoft Intune or System Center 2012 R2 Configuration Manager](http://go.microsoft.com/fwlink/?LinkID=327928).
 
