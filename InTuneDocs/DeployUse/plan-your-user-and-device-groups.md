@@ -120,7 +120,9 @@ In the case of BYOD or a mix, be careful to plan policies that do not infringe o
 Similarly, you can create a group for the CO users in your organization:
 
 ![Screenshot of sibling user groups for BYOD and CO](./media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
-START HERE
+
+<!---START HERE--->
+
 ### Groups for geographic regions
 If your organization needs policies for specific regions you can create groups based on geographic region. You can base them on regional groups you may have already created in Active Directory (AD), and synchronize them to Azure AD. You can also create them directly in Azure AD.
 

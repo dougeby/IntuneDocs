@@ -115,7 +115,7 @@ For apps that use ADAL, the following must be true:
 
 -   The app must incorporate an ADAL version greater than or equal to 1.0.2.
 
--   The developer must grant their app access to the Intune Mobile Application Management resource, as described in [Step 3 - Configure access to mobile application management in AAD](#step-3-configure-access-to-mobile-app-management-in-aad).
+-   The developer must grant their app access to the Intune Mobile Application Management resource, as described in [Step 3 Configure access to mobile application management in AAD](#step-3-configure-access-to-mobile-app-management-in-aad).
 
 ### Step 2 Review the identifiers you need to get when you register the app
 In the next step, you will use the Azure management portal to register your apps (which are using  ADAL with Azure Active Directory (AAD)) to get the unique identifiers listed in the following table. You then give the identifiers to the developer when you integrate ADAL with the app.
@@ -139,7 +139,7 @@ Before you can use an app’s AAD registration values in the app wrapping tool, 
 
 4.  From the first drop-down list in the **Permission to other applications** section, choose **Intune Mobile Application Management**.
 
-You can now use the app’s Client ID in the app wrapping tool. You can find the Client ID in the Azure Active Directory management portal, as described in the table in [Step 2: Review the identifiers you need to get when you register the app](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app).
+You can now use the app’s Client ID in the app wrapping tool. You can find the Client ID in the Azure Active Directory management portal, as described in the table in [Step 2 Review the identifiers you need to get when you register the app](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app).
 
 ### Step 4 Use the AAD identifier values in the app wrapping tool
 Using the identifier values that you got from the registration process, enter the values as command-line properties in the app wrapping tool. You must specify all of the values in the table in order for end users to successfully authenticate the app. Default values are used if you don't specify a value.

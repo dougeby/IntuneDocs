@@ -17,3 +17,4 @@ If your app installation is taking too long, you can try syncing your device man
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
 * [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8\.1)
+* [iOS](sync-your-device-manually-ios.md)
