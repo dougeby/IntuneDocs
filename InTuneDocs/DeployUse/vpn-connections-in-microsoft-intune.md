@@ -37,7 +37,7 @@ Yes
 
 
 
-|Connection type |iOS and Mac OS X  |Android  |Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop and Mobile |
+Connection type |iOS and Mac OS X  |Android  |Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop and Mobile |
 ---------|---------|---------|---------|---------|---------
 Cisco AnyConnect |Yes |Yes   |No    |     No    |No  |No    | Yes (OMA-URI)|     
 Pulse Secure |Yes  |Yes |Yes   |No  |Yes  |Yes| Yes|        

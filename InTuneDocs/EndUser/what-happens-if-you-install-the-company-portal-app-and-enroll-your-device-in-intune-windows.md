@@ -15,8 +15,8 @@ author: Staciebarker
 To learn what happens when you install the Company Portal app and enroll your device, use the link that matches the device you are using.
 
 - [Windows 10](#windows-10)
-- [Windows 8.1 and Windows RT](#windows-8.1-and-windows-rt)
-- [Windows Phone 8.1 and Windows Phone 8](#windows-phone-8.1-and-windows-phone-8)
+- [Windows 8.1 and Windows RT](#windows-8\.1-and-windows-rt)
+- [Windows Phone 8.1 and Windows Phone 8](#windows-phone-8\.1-and-windows-phone-8)
 - [Windows 7 and Vista](#windows-7-and-vista)
 
 ## Windows 10
