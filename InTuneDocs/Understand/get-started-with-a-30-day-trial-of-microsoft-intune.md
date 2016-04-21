@@ -33,8 +33,8 @@ Before you get started with Intune, you'll need the following:
     |Windows 10, Windows RT 8.1, Windows RT, or Windows 8.1 devices|There are no certificate requirements for enrolling Windows RT and Windows devices.|[Install the Windows PC client with Microsoft Intune](/Intune/DeployUse/install-the-windows-pc-client-with-microsoft-intune).|
     |iOS 7.1 or later|Get an Apple Push Notification service certificate.|Request an Apple Push Notification service certificate from Apple, as described here: [Set up iOS and Mac management with Microsoft Intune](/Intune/DeployUse/set-up-ios-and-mac-management-with-microsoft-intune).|
 
-## Steps to complete a 30 day trial evaluation of Intune
-- [Step 1: Sign in or sign up for a 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune-step1.md). Before  you sign up or sign in to Intune,  you should consider whether to sign in using an existing account or create a temporary account to be used only for the 30 day trial of Microsoft Intune.
+## Steps to complete a 30-day trial evaluation of Intune
+- [Step 1: Sign in or sign up for a 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune-step1.md). Before  you sign up or sign in to Intune,  you should consider whether to sign in using an existing account or create a temporary account to be used only for the 30-day trial of Microsoft Intune.
 - [Step 2: Add users](get-started-with-a-30-day-trial-of-microsoft-intune-step2.md). Now that you have set up your account, you'll either the add individual user accounts to Intune or add users in bulk (see the instructions in this section). Before you get started, it's important that you understand how Intune handles administrator accounts.
 - [Step 3: Create groups to organize users and devices](get-started-with-a-30-day-trial-of-microsoft-intune-step3.md). Groups in Intune give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics) and use them to perform a variety of administrative tasks at scale, from setting policies for a set of users to deploying applications to a set of devices.
 - [Step 4: Create policies and publish an app](get-started-with-a-30-day-trial-of-microsoft-intune-step4.md). Intune policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications.
@@ -43,7 +43,7 @@ Before you get started with Intune, you'll need the following:
 - [Step 7: Other options and extras](get-started-with-a-30-day-trial-of-microsoft-intune-step7.md). Choose how to use alerts, reports, and other Intune capabilities to meet your business needs.
 - [Step 8: Next steps](get-started-with-a-30-day-trial-of-microsoft-intune-step8.md). Prepare to move to an Intune paid subscription and take advantage of the Intune "FastTrack Center Benefit.
 
-## Next steps
+### Next steps
 It's time to get started with your 30-day trial subscription!
 
 >[!div class="step-by-step"]
