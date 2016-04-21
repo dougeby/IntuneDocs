@@ -35,7 +35,7 @@ To view the inventory collected by mobile devices, run the [Mobile Device Invent
 |**Serial number**|iOS, Mac OS X, Android, Windows 8.1, Windows 10 devices|
 |**Total Storage Space**|iOS, Mac OS X, Windows 8.1, Windows 10 devices|
 |**Free Storage Space**|iOS, Mac OS X, Windows 8.1, Windows 10 devices|
-|**Phone Number**<br>Phone number for BYOD phone displays &#42; + last 4 digits. Full number displayed for org-owned phone.|iOS, Android, and Windows Phone devices|
+|**Phone Number**<br>Phones categorized as corporate are identified with their full phone number, for example, when you run a mobile device inventory report. BYOD phone numbers are masked with &#42;, with only the last 4 digits displayed.|iOS, Android, and Windows Phone devices|
 |**IMEI**|Exchange ActiveSync, iOS, Android, and Windows Phone devices|
 |**MEID**<br>Mobile Equipment Identifier|iOS devices only|
 |**Wi-Fi MAC**|All devices except Exchange ActiveSync|
