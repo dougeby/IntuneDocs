@@ -72,14 +72,9 @@ Keep informed about upcoming developments for Intune with the [Cloud Platform ro
 
 
 ## Previous Intune releases
-> [!div class="op_single_selector"]
->
-- [March 2016](previous-intune-releases.md)
-- [February 2016](previous-intune-releases.md)
-- [January 2016](previous-intune-releases.md)
-- [December 2016](previous-intune-releases.md)
-- [November 2015](previous-intune-releases.md)
-- [October 2015](previous-intune-releases.md)
+If you want to see what's released in Intune during the last six months, they are listed in the [Previous Intune releases](previous-intune-releases.md) article.
+
+
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
