@@ -25,11 +25,8 @@ ms.suite: ems
 
 ---
 
-# Enroll iOS devices with Apple Configurator using direct enrollment
-Intune supports the enrollment of corporate-owned iOS devices using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process does not factory-resets the device and enrolls the device with a predefined policy.
-
-## Direct enrollment for iOS devices with Microsoft Intune
-Using Apple Configurator you can enroll iOS devices for management without resetting them to factory settings. This method is for devices with **No user affinity** and requires you to USB-connect the iOS device to a Mac computer to setup corporate enrollment. The Company Portal app is not supported for direct enrolled devices. This guidance assumes you are using Apple Configurator 2.0 on a Mac computer.
+# Directly enroll iOS devices using Apple Configurator
+Intune supports the enrollment of corporate-owned iOS devices using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process does not factory-resets the device and enrolls the device with a predefined policy. This method is for devices with **No user affinity** and requires you to USB-connect the iOS device to a Mac computer to setup corporate enrollment. The Company Portal app is not supported for direct enrolled devices. This guidance assumes you are using Apple Configurator 2.0 on a Mac computer.
 
 1.  **Create a profile for devices**
     A device enrollment profile defines the settings applied to devices. If you have not already, create a device enrollment profile for iOS devices enrolled using Apple Configurator.
@@ -89,7 +86,7 @@ Using Apple Configurator you can enroll iOS devices for management without reset
 6.  **Transfer the file**
     Copy the downloaded .mobileconfig file to a Mac computer.
     > [!NOTE]
-    > The enrollment profile URL is valid for two weeks from when it is exported. After two, you must export a new enrollment profile URL to enroll iOS devices with Setup Assistant.
+    > The enrollment profile URL is valid for two weeks from when it is exported. After two weeks, you must export a new enrollment profile URL to enroll iOS devices with Setup Assistant.
 7.  **Prepare the device with Apple Configurator**
     iOS devices are connected to the Mac computer and enrolled for mobile device management.
 
