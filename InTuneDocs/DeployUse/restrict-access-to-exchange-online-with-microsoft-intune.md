@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Restrict email access to Exchange Online and new Exchange Online Dedicated| Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Restrict email access to Exchange Online and new Exchange Online Dedicated with Intune
 The information in this topic applies to both Exchange Online and the new Exchange Online Dedicated environment.
 

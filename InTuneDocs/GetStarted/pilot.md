@@ -1,13 +1,30 @@
 ---
-title: Pilot
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 14e55841-37f1-472c-9678-a1ba847cb331
+# required metadata
+
+title: Pilot | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 14e55841-37f1-472c-9678-a1ba847cb331
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Pilot
 The pilot phase is an opportunity to test the technical implementation, communication plan, and training and support plans in a small production environment.
 

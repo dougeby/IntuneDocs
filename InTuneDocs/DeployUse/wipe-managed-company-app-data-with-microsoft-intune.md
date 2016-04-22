@@ -1,14 +1,30 @@
 ---
-title: Wipe managed company app data with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
+# required metadata
+
+title: Wipe managed company app data with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Wipe managed company app data with Microsoft Intune
 When a device is lost or stolen, or if the employee leaves your company, you want to make sure company app data is removed from the device. However, you may not want to remove personal data on the device, especially if this is an employee owned device.
 

@@ -1,14 +1,30 @@
 ---
-title: General troubleshooting tips for Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
+# required metadata
+
+title: General troubleshooting tips for Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # General troubleshooting tips for Microsoft Intune
 After you deploy Microsoft Intune you may encounter problems with your configuration or with clients. The resources below may help you find out what could be causing the problem so that you can resolve it.
 

@@ -1,14 +1,30 @@
 ---
-title: Company Portal Frequently Asked Questions
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+# required metadata
+
+title: Company Portal Frequently Asked Questions | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Company Portal Frequently Asked Questions
 
 

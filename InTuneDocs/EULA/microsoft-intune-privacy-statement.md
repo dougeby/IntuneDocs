@@ -1,14 +1,30 @@
 ---
-title: Microsoft Intune Privacy Statement
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ca2f13b7-9a88-4ede-b4ed-589500489953
+# required metadata
+
+title: Microsoft Intune Privacy Statement | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: ca2f13b7-9a88-4ede-b4ed-589500489953
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Microsoft Intune Privacy Statement
 For the latest [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] Privacy Statement, see [this page](http://www.microsoft.com/privacystatement/WindowsIntune/Default.aspx).
 

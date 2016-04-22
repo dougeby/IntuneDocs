@@ -1,15 +1,30 @@
 ---
-title: Protect Windows devices with multi-factor authentication
-ms.custom: na
-ms.prod: configuration-manager
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
+# required metadata
+
+title: Protect Windows devices with multi-factor authentication | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Protect Windows devices with multi-factor authentication
 Microsoft Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources. MFA requires authentication factors such as text authentication in addition to usernames and passwords. Intune supports the use of MFA during enrollment of Windows 8.1 or later, Windows Phone 8.1, or Windows 10 Desktop and Mobile devices. 
 

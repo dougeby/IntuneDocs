@@ -1,14 +1,30 @@
 ---
-title: Enroll mobile devices and install an app
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid:
+# required metadata
+
+title: Enroll mobile devices and install an app | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Enroll mobile devices and install an app
 To set up mobile device management with Intune, you must first set the mobile device management authority, enable management for device platforms, and enroll your devices with the company portal app. You can then deploy the Microsoft Skype application that you published in step 6.
 

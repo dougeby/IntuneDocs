@@ -1,14 +1,30 @@
 ---
-title: Troubleshoot app deployment problems in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
+# required metadata
+
+title: Troubleshoot app deployment problems in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Troubleshoot app deployment problems in Microsoft Intune
 This topic helps you solve app deployment problems with Microsoft Intune.
 

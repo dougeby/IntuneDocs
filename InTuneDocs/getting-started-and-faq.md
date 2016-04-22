@@ -1,13 +1,30 @@
 ---
-title: Getting Started and FAQ
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 779843bd-1ebc-4eaa-8c0a-43e8be027438
+# required metadata
+
+title: Getting Started and FAQ | Microsoft Intune
+description:
+keywords:
 author: Msmbaldwin
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 779843bd-1ebc-4eaa-8c0a-43e8be027438
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Getting Started and FAQ
 This Getting Started guide will help you quickly enable your mobile app for Mobile Application Management with Microsoft Intune. You may find it useful to first understand the benefits of the Intune App SDK by reading the “Benefits of the Intune App SDK” document.
 

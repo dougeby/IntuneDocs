@@ -1,14 +1,30 @@
 ---
-title: Enable access to company resources with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
+# required metadata
+
+title: Enable access to company resources with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Enable access to company resources with Microsoft Intune
 Microsoft Intune Wi-Fi and VPN profiles work together to help your users gain access to the files and resources they need to do their work successfully, wherever they are.
 

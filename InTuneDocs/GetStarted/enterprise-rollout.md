@@ -1,13 +1,30 @@
 ---
-title: Enterprise rollout
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
+# required metadata
+
+title: Enterprise rollout | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Enterprise rollout
 During the enterprise rollout phase, you will plan and execute your broad rollout strategy, inclusive of communications, training and support activities.
 

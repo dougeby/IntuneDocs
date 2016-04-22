@@ -1,14 +1,30 @@
 ---
-title: Configure access to corporate email using email profiles with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
+# required metadata
+
+title: Configure access to corporate email using email profiles with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Configure access to corporate email using email profiles with Microsoft Intune
 Many mobile platforms include a *native* email client that ships as part of the operating system.  These clients may be configurable using email profiles, described in this topic.
 

@@ -1,14 +1,30 @@
 ---
-title: Configure the Microsoft Intune Exchange connector for hosted Exchange
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Configure the Microsoft Intune Exchange connector for hosted Exchange | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: b3cefcc5-b045-48f9-91f5-6d282a4428f3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Configure the Intune service-to-service connector for Exchange Online
 
 Use this information to connect Microsoft Intune and Exchange Online service hosted by Office 365.

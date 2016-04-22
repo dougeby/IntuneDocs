@@ -1,13 +1,30 @@
 ---
-title: Privacy Statement
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
+# required metadata
+
+title: Privacy Statement | Microsoft Intune
+description:
+keywords:
+author: 
+manager: jeffgilb
+ms.date: 04/28/2016
 ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
 ms.assetid: 8dfc4da2-0be5-4f8f-814f-a68d21c27ab8
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Privacy Statement
 
 ## **Privacy Statement**

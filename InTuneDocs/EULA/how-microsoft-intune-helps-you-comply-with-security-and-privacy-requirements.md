@@ -1,13 +1,30 @@
 ---
-title: How Microsoft Intune helps you comply with security and privacy requirements
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9bd1f8ee-22b8-441f-8582-519814666b70
+# required metadata
+
+title: How Microsoft Intune helps you comply with security and privacy requirements | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 9bd1f8ee-22b8-441f-8582-519814666b70
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # How Microsoft Intune helps you comply with security and privacy requirements
 When you manage devices owned by your company or that your users bring to work, one of your first concerns is your ability to keep those devices and their data secure. You also want to respect the privacy of your users who want the flexibility of bringing their devices to work, but not at the cost of losing control of their own data. [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] has safeguards in place to help you provide that kind of environment for your company and your employees.
 

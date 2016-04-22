@@ -1,15 +1,30 @@
 ---
-title: How to reconnect a compromised Android device
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
+# required metadata
+
+title: How to reconnect a compromised Android device | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
-robots: noindex,nofollow
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
+
+# optional metadata
+
+ROBOTS: noindex,nofollow
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # How to reconnect a compromised Android device
 Your IT admin detected that you are using a rooted device. This configuration can compromise security and might be a threat to your company resources.
 

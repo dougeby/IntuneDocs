@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: What's new | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
+description:
+keywords:
 author: Lindavr
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # What's new in Microsoft Intune
 
 ## April 2016
