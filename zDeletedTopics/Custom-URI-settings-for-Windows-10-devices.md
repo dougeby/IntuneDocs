@@ -1,27 +1,43 @@
 ---
-title: Custom URI settings for Windows 10 devices
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b05bbc3f-6256-490d-901f-3746203ca160
-author: robstackmsft
----
-# Custom URI settings for Windows 10 devices
-This topic lists the settings that you can configure for Windows 10 and Windows 10 Mobile devices in a [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)]**Windows 10 Custom Policy**.
+# required metadata
 
-For information about how to create and deploy these policies, see [Windows 10 custom policy settings in Microsoft Intune](../Topic/Windows-10-custom-policy-settings-in-Microsoft-Intune.md).
+title: Custom URI settings for Windows 10 devices | Microsoft Intune
+description:
+keywords:
+author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: b05bbc3f-6256-490d-901f-3746203ca160
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+# Custom URI settings for Windows 10 devices
+This topic lists the settings that you can configure for Windows 10 and Windows 10 Mobile devices in a Microsoft Intune **Windows 10 Custom Policy**.
+
+For information about how to create and deploy these policies, see [Windows 10 custom policy settings in Microsoft Intune](Windows-10-custom-policy-settings-in-microsoft-intune.md).
 
 > [!NOTE]
 > In the **Supports** column of the following table, the following values are used:
 > 
-> -   **Desktop** – The setting supports Windows 10 Professional and Enterprise computers that are enrolled with [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] only.
+> -   **Desktop** – The setting supports Windows 10 Professional and Enterprise computers that are enrolled with Intune only.
 > -   **Mobile** – The setting supports Windows 10 Mobile devices only.
 > -   **Both** – The setting supports both desktop and mobile devices.
 > 
-> All devices must be enrolled with [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] if you want to use the Windows Custom URI Policy.
+> All devices must be enrolled with Intune if you want to use the Windows Custom URI Policy.
 
 ## Policy
 
@@ -44,7 +60,8 @@ For information about how to create and deploy these policies, see [Windows 10 c
 |**Connectivity/AllowCellularDataRoaming**|Both|**URI full path:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowCellularDataRoaming<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0** – not allowed<br /><br />**1** – allowed<br /><br />**Default value:** 1|
 |**Connectivity/AllowVPNOverCellular**|Both|**URI full path:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNOverCellular<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0** - VPN is not allowed over cellular<br /><br />**1** – VPN could use any connection including cellular.<br /><br />**Default value:** 1|
 |**Connectivity/AllowVPNRoamingOverCellular**|Mobile|**URI full path:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNRoamingOverCellular<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0** – not allowed<br /><br />**1** – allowed<br /><br />**Default value:** 1|
-|**Connectivity/AllowBluetooth**|Both|**URI full path:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowBluetooth<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0** – Don’t allow Bluetooth<br /><br />**1** (not supported in Windows Phone 8.1) – Disable Bluetooth, but allow the configuration of hands-free profiles (value 1 isn’t supported in Windows Phone 8.1 for MDM and EAS.2  – allow Bluetooth)<br /><br />**Default value:** 2|
+|**Connectivity/AllowVPNRoamingOverCellular**|Mobile|**URI full path:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowVPNRoamingOverCellular<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0** – not allowed<br /><br />**1** – allowed<br /><br />**Default value:** 1|
+|**Connectivity/AllowBluetooth**|Both|**URI full path:** ./Vendor/MSFT/Policy/Config/Connectivity/AllowBluetooth<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0** – Don’t allow the user to turn Bluetooth on.<br /><br />**1** – Reserved. The user can turn on and configure Bluetooth (not supported in Windows Phone 8.1 for MDM, EAS, Windows 10 desktop or Windows 10 Mobile)<br /><br />**2** - Allowed. The user can turn on and configure Bluetooth.<br /><br />**Default value:** 2|
 |**Experience/AllowScreenCapture**|Mobile|**URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowScreenCapture<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0** – not allowed<br /><br />**1** – allowed<br /><br />**Default value:** 1|
 |**Experience/AllowTaskSwitcher**|Mobile|**URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowTaskSwitcher<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0** – not allowed<br /><br />**1** – allowed<br /><br />**Default value:** 1|
 |**Experience/AllowVoiceRecording**|Mobile|**URI full path:** ./Vendor/MSFT/Policy/Config/Experience/AllowVoiceRecording<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0** – not allowed<br /><br />**1** – allowed<br /><br />**Default value:** 1|
@@ -141,6 +158,6 @@ For information about how to create and deploy these policies, see [Windows 10 c
 |**Allow Autofill**|Desktop|**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowAutofill<br /><br />**Data type:** Integer<br /><br />**Allowed values:0** – Disabled; **1** – Enabled<br /><br />**Default value:** 0|
 |**Configure Enterprise Site List**|Desktop|**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList<br /><br />**Data type:** String<br /><br />**Allowed values:0** – Not configured; **1** – Use IE’s enterprise mode site list if configured; **2** – Specify location to enterprise site list<br /><br />**Default value:** 1|
 
-## See Also
-[Windows 10 custom policy settings in Microsoft Intune](../Topic/Windows-10-custom-policy-settings-in-Microsoft-Intune.md)
+### See Also
+[Windows 10 custom policy settings in Microsoft Intune](windows-10-custom-policy-settings-in-microsoft-intune.md)
 

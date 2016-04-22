@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Release notes for Microsoft Intune
-[!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] is an integrated, cloud-based client management solution that provides tools, reports, and upgrade licenses to the latest version of Windows, and helps keep your computers up-to-date and secure. In addition, [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] lets you manage mobile devices on the network either through Exchange ActiveSync or directly through [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. The following release notes describe important information and known issues in [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)].
+Microsoft Intune is an integrated, cloud-based client management solution that provides tools, reports, and upgrade licenses to the latest version of Windows, and helps keep your computers up-to-date and secure. In addition, Intune lets you manage mobile devices on the network either through Exchange ActiveSync or directly through Intune. The following release notes describe important information and known issues in Microsoft Intune.
 
 
 ## Changing resource access profiles between groups for iOS and Android may fail
@@ -43,11 +43,11 @@ In both cases above, the resource access profile (email profile) was not removed
 **Workaround:** None.
 
 ## When you enroll a Windows 8.1 device that must authenticate to a proxy server, the enrollment process fails with no visible indication as to the cause of the failure
-**Issue:** When you enroll a [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)] device and the device must authenticate to a proxy server during the enrollment process, the enrollment fails if the device has not cached the proxy server credentials. When the credentials for the proxy server are not cached on the device, the enrolment process must wait for the user to enter the credentials. However, the prompt to provide the proxy server credentials does not display during the enrollment process. The result is that the enrollment process cannot authenticate to the proxy server and there is no visible indication of this failure presented to the user.
+**Issue:** When you enroll a Windows 8.1 device and the device must authenticate to a proxy server during the enrollment process, the enrollment fails if the device has not cached the proxy server credentials. When the credentials for the proxy server are not cached on the device, the enrollment process must wait for the user to enter the credentials. However, the prompt to provide the proxy server credentials does not display during the enrollment process. The result is that the enrollment process cannot authenticate to the proxy server and there is no visible indication of this failure presented to the user.
 
-**Workaround:** For [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)] devices that must enroll on a network that requires use of an authenticated proxy server, configure and save the credentials for the proxy server prior to enrollment of the device. To configure and save the credentials on a [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)] device:
+**Workaround:** For Windows 8.1 devices that must enroll on a network that requires use of an authenticated proxy server, configure and save the credentials for the proxy server prior to enrollment of the device. To configure and save the credentials on a Windows 8.1 device:
 
-1.  On the [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)] device, open **Internet Explorer**.
+1.  On the Windows 8.1 device, open **Internet Explorer**.
 
 2.  When prompted for the proxy server credentials, enter the credentials and then select the option **Remember my credentials**.
 
@@ -81,6 +81,5 @@ English, French, Korean, Polish, Swedish, Turkish.
 The Intune Admin Console and the end user facing mobile experiences support Danish, Greek, Finish, Norwegian and Romanian
 in addition to all the languages supported by the Azure preview portal.
 
-## See Also
-[Technical reference for Microsoft Intune](../Topic/Technical-reference-for-Microsoft-Intune.md)
+
 
