@@ -81,6 +81,6 @@ Use the Microsoft Intune **Exchange ActiveSync** policy to configure settings th
 
 
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

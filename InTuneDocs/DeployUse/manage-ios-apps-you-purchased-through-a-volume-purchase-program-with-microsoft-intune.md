@@ -67,7 +67,7 @@ You can synchronize the data held by Apple with Intune at any time by clicking *
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Apps** &gt; **Managed Software** &gt; **Volume-Purchased apps**.
 
-2.  Use the instructions in the [Create apps for mobile devices in Microsoft Intune](create-apps-for-mobile-devices-in-microsoft-intune.md) topic to complete uploading, creation, and deployment of the app.
+2.  Use the instructions in the [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) topic to complete uploading, creation, and deployment of the app.
 
 When you deploy the app as a **Required** install, a license is used by each user that installs the app.
 
@@ -87,5 +87,5 @@ You can monitor which VPP apps have been deployed, and how many licenses are use
 > You can also use app **Filters** to examine the status of each app install.
 
 ### See Also
-[Create apps for mobile devices in Microsoft Intune](create-apps-for-mobile-devices-in-microsoft-intune.md)
+[Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
 

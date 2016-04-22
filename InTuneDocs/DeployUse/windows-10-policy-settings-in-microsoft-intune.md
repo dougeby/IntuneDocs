@@ -335,6 +335,6 @@ For information about how to create and deploy these policies, see [Windows 10 c
 |**Allow Autofill**|Desktop|**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowAutofill<br /><br />**Data type:** Integer<br /><br />**Allowed values:0** – Disabled; **1** – Enabled<br /><br />**Default value:** 0|
 |**Configure Enterprise Site List**|Desktop|**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList<br /><br />**Data type:** String<br /><br />**Allowed values:0** – Not configured; **1** – Use IE’s enterprise mode site list if configured; **2** – Specify location to enterprise site list<br /><br />**Default value:** 1|
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

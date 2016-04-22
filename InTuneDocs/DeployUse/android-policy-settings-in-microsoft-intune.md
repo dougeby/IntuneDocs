@@ -253,6 +253,6 @@ Although Intune supports Wi-Fi profiles for Android devices, this feature does n
 
 4.  When you are done, save the policy and deploy it to the required Android devices. The new Wi-Fi profile will appear in the list of connections on the device.
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
