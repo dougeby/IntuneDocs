@@ -46,7 +46,7 @@ The administrator or manager can deploy role-specific apps to the restaurant dev
 > [!NOTE]
 > Device enrollment manager user accounts with more than 20 devices enrolled might have problems using the Company Portal app. To deploy company apps to devices managed with the device enrollment manager, deploy Company Portal app as a **Required Install** to the device enrollment manager's user account.
 
-## Device enrollment manager accounts in Intune
+## Create device enrollment manager accounts
 Device enrollment manager accounts are user accounts with permission to enroll large numbers of corporate-owned devices. Only users in the Intune console can be device enrollment managers.
 
 #### Add a device enrollment manager to Intune
@@ -65,9 +65,9 @@ Device enrollment manager accounts are user accounts with permission to enroll l
 
 7.  Enter the **User ID** of the Intune account and then click **OK**. The device enrollment manager user cannot be an Intune administrator.
 
-8.  The device enrollment manager can now enroll mobile devices using the same procedure an end user uses for a BYOD scenario in the company portal. To enroll devices using the company portal, see [Enable mobile device enrollment with the Microsoft Intune Account Portal](enable-mobile-device-enrollment-with-the-microsoft-intune-account-portal.md).
+8.  The device enrollment manager can now enroll mobile devices using the same procedure an end user uses for a BYOD scenario in the company portal.
 
-#### Delete a device enrollment manager from Intune
+## Delete a device enrollment manager from Intune
 
 1.  Logon to the [Microsoft Intune admin portal](http://manage.microsoft.com) with your administrator sign in.
 
@@ -88,8 +88,3 @@ Deleting a device enrollment manager does not affect enrolled devices. When a de
 -   The deleted device enrollment manager account credentials still cannot wipe or retire devices
 
 -   The deleted device enrollment manager account’s relationship to enrolled devices remains but no additional devices can be enrolled
-
-### See also
-[Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md)
-[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
-[Enable mobile device enrollment with the Microsoft Intune Account Portal](enable-mobile-device-enrollment-with-the-microsoft-intune-account-portal.md)

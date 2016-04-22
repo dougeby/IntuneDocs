@@ -29,20 +29,19 @@ ms.suite: ems
 
 Use this information to connect Microsoft Intune and Exchange Online service hosted by Office 365.
 
-## Requirements for the Service to Service Connector
+## Requirements for the service-to-service Connector
 The **Service to Service Connector** supports only hosted Exchange and has no requirements for on-premises infrastructure.
 
 |Requirement|More information|
 |---------------|--------------------|
 |Hosted Exchange configured and running|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|Set the mobile device management authority to Intune|[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#BKMK_Set_MDM_Authority)|
-|Microsoft Exchange version|You must have an Office 365 subscription that has an Exchange Server 2013 or later tenant. So long as the tenant is Exchange Server 2013 or later, the connector supports Exchange Server 2010 in that same environment.|
 |Mobile device management authority| [Set the mobile device management authority to Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
-|Active Directory Synchronization|Before you can use the Intune Connector, you must [set up Active Directory synchronization](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
+|Microsoft Exchange version|You must have an Office 365 subscription that has an Exchange Server 2013 or later tenant. So long as the tenant is Exchange Server 2013 or later, the connector supports Exchange Server 2010 in that same environment.|
+|Active Directory Synchronization|Before you can use the Intune Connector, you must [set up Active Directory synchronization](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
 
 ### Exchange cmdlet requirements
 
-You must also create an Exchange Online user account that is used by the Intune Exchange Connector. The account must have permission to run the required Windows PowerShell Exchange cmdlets that are listed below.
+You must also create an Exchange Online user account that is used by the Intune Exchange Connector. The account must have permission to use the Intune admin console and to run these required Windows PowerShell Exchange cmdlets:
 
  - Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
  - Get-MobileDeviceMailboxPolicy, Set-MobileDeviceMailboxPolicy, New-MobileDeviceMailboxPolicy, Remove-MobileDeviceMailboxPolicy
@@ -51,7 +50,7 @@ You must also create an Exchange Online user account that is used by the Intune 
  - Get-MobileDevice
  - Get-ActiveSyncDeviceClass
 
-## Set up the Service-to-Service Connector
+## Set up the service-to-service Connector
 > [!IMPORTANT]
 > Before you being installing and configuring the service-to-service connector, ensure that you meet the [Exchange connector installation requirements](./intune-exchange-connector-requirements.md).
 
