@@ -28,25 +28,25 @@ ms.suite: ems
 # Restrict access to email and O365 services with Microsoft Intune
 You can restrict access to your company email and O365 services with Intune's conditional access. Intune's conditional access capability allows you to make sure that access to your company email and O365 services is restricted to devices that are compliant with the rules that you set.
 ## How does conditional access work?
-Compliance policy settings are used to evaluate the compliant status of the device. Conditional access policy uses the evaluation to restrict or allow access to a specific service. When conditional access policy is used in combination with compliance policy, only compliant devices will be allowed to access to the service.
+Compliance policy settings are used to evaluate the compliance of the device. Conditional access policy uses the evaluation to restrict or allow access to a specific service. When a conditional access policy is used in combination with a compliance policy, only compliant devices will be allowed to access the service.
 
-Keep in mind that the user who is using device must also have a compliance policy deployed to them in order for the device to be evaluated for compliance.
+Keep in mind that the user who is using the device must also have a compliance policy deployed to them in order for the device to be evaluated for compliance.
 If no compliance policy is deployed to the user the device is treated as compliant, and no access restrictions will be applied.
 
-When devices do not meet the conditions set in the policies, the end-user is guided though the process of enrolling the device and fixing the issue that prevents the device from being compliant.
+When devices do not meet the conditions set in the policies, the end user is guided though the process of enrolling the device and fixing the issue that prevents the device from being compliant.
 
 A typical flow of conditional access:
 
 ![](./media/ConditionalAccess4.png)
 
-## How should I configure conditional access?
+## How to configure conditional access?
 Use conditional access to manage access to Microsoft **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**,  **SharePoint Online** and **Skype for Business Online**.
 
 To set up conditional access, configure a device compliance policy, and a conditional access policy.
 
 The compliance policy includes settings like passcode, encryption, and whether or not a device is jailbroken. The device must meet these rules in order to be considered compliant.
 
-You can set conditional access policy to restrict access based on:
+You can set a conditional access policy to restrict access based on:
 - The device compliance status.
 - The platform running on the device.
 - The type of apps used to access the services.
