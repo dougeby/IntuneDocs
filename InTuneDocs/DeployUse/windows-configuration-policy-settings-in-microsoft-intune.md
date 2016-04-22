@@ -114,6 +114,6 @@ Use the Microsoft Intune **Windows general configuration policy** to configure s
 
 
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Acceptable Use Policy for Microsoft Intune
-This Acceptable Use Policy for [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] (“Policy”) identifies activities that you and your organization are prohibited from engaging in when using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] or any subsequent release of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] ("Service") which link to this Policy.
+This Acceptable Use Policy for Microsoft Intune (“Policy”) identifies activities that you and your organization are prohibited from engaging in when using Intune or any subsequent release of Intune ("Service") which link to this Policy.
 
 Please report violations of this Policy to [Intune Support](http://go.microsoft.com/fwlink/?LinkID=242283). When reporting by email, please include the words "Acceptable Use Policy" in the subject.
 
@@ -82,9 +82,8 @@ Additionally:
 
 **If Microsoft believes that unauthorized or improper use is being made of the Service, it may, without notice and at its sole discretion, take such action as it deems appropriate, including blocking messages from a particular internet domain, mail server or IP address. Violation of this Policy can lead to termination of a customer's account.**
 
-**Customers who (1) participate in the Services’ “Communities” for support; or (2) obtain third level domain names to be used with the Service, are additionally subject to the restrictions in the [ Code of Conduct](http://go.microsoft.com/fwlink/?LinkId=203310).**
+**Customers who (1) participate in the Services’ “Communities” for support; or (2) obtain third level domain names to be used with the Service, are additionally subject to the restrictions in the [Code of Conduct](http://go.microsoft.com/fwlink/?LinkId=203310).**
 
 **Microsoft reserves the right to amend or change the Policy of any service at any time without notice. We encourage you to periodically review these guidelines to ensure you are in compliance.**
 
 **Nothing in this policy is intended to grant any rights in the Service. Failure to enforce this Policy in every instance does not amount to a waiver of Microsoft's rights.**
-

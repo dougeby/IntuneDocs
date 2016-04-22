@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a compliance policy in Microsoft Intune | Microsoft Intune
+title: Create a device compliance policy in Microsoft Intune | Microsoft Intune
 description:
 keywords:
 author: karthikaraman
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service:
 ms.technology:
-ms.assetid: c8fd871e-f1bc-43ec-a5f3-ad025df9b026
+ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 
 # optional metadata
 
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Create a compliance policy in Microsoft Intune
+# Create a device compliance policy in Microsoft Intune
 This topic outlines the steps you can use to create a compliance policy that a device must follow in order to be considered compliant.
 
 ##  Step 1: Add a new policy
@@ -36,9 +36,9 @@ This topic outlines the steps you can use to create a compliance policy that a d
 ##  Step 2:  Configure settings
 On the **Create Policy** page, enable the settings you require:
   -   The System security settings like password, and encryption
-  -   Device health settings like- whether or not a device is jailbroken, or is reported healthy by the Windows device health attestation service.
+  -   Device health settings like whether or not a device is jailbroken, or is reported healthy by the Windows device health attestation service.
   -   Device property settings like the minimum OS version required or maximum OS version allowed.
-![IntuneSA3bCreatePolicy](./media/intune-sa-3b-create-policy.png)
+![Screenshot of the General tab of the Create Policy page ](./media/intune-sa-3b-create-policy.png)
 
 ##  Step 3: Save the policy
 When you are finished, choose **Save Policy**.

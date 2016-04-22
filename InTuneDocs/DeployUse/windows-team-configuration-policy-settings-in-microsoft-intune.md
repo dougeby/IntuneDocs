@@ -39,6 +39,6 @@ Use the Microsoft Intune **Windows 10 Team general configuration policy** to con
 |**Lockscreen background image URL**|Enable this setting to display a custom background on the **Welcome** screen of Windows 10 Team devices from the URL you specify.<br /><br />The image must be in PNG format and the URL must begin with **https://**.|
 
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
