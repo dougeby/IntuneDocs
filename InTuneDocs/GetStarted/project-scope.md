@@ -65,7 +65,7 @@ Goals
 The majority of your efforts in the Scope phase revolve around planning and preparation. When scoping your project, consider both technology and organizational issues, as well as how users work today and the behavior change required. Start with your "big picture" end goal in mind, then create smaller goals in subsequent phases to stay on track.
 
 ### Help desk
-In order for knowledge workers to benefit from a productive Intune experience, the Help Desk should be well-prepared. As you scope your project, consider how help desk will play a part in each phase, and what resources you will need to execute and ensure your help desk is ready to support end users.
+In order for knowledge workers to benefit from a productive Intune experience, the help desk should be well-prepared. As you scope your project, consider how help desk will play a part in each phase, and what resources you will need to execute and ensure your help desk is ready to support end users.
 
 ### Awareness
 A well-defined awareness campaign is essential for driving change and sustained adoption. While defining your project scope, consider your target audiences for each phase and what messaging is required. Begin identifying resources from your marketing and communications teams, as well as any potential budget you may need to help execute the plan.
@@ -98,7 +98,7 @@ Here are some  challenges that you may encounter in the **Project scope** phase.
 
     **Mitigation:** Begin your rollout and adoption planning from day one, in conjunction with your technical deployment efforts.
 
--   **Challenge:** Lack of clearly defined goals and success metrics result in intangible results, as well as reactive mode once issues arise:
+-   **Challenge:** Lack of clearly defined goals and success metrics result in intangible results, as well as reactive mode once issues arise.
 
     **Mitigation:** Define your goals and metrics early in your project scope, and use these data points to flesh out your other rollout phases. Make sure goals are SMART (Specific, Measurable, Attainable, Realistic, and Timely) and plan to measure against your goals at each phase and to ensure your rollout project stays on track.
 
@@ -109,4 +109,4 @@ Here are some  challenges that you may encounter in the **Project scope** phase.
 ## Next steps
 >[!div class="step-by-step"]
 
->[&larr; **Rollout phases**](rollout-phases-for-microsoft-intune-deployment.md)     [**Proof of concept** &rarr;](proof-of-concept.md) 
+>[&larr; **Rollout phases**](rollout-phases-for-microsoft-intune-deployment.md)     [**Proof of concept** &rarr;](proof-of-concept.md)
