@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Set up email access for iOS devices using Microsoft Intune
-When devices are enrolled with [!INCLUDE[wit_firstref](/Token/wit_firstref.xml)], you can configure the devices so that their users can acess company email. One way to accomplish that for specific device types is to create and deploy an **email profile**. Email profiles are a kind of [!INCLUDE[wit_nextref](/Token/wit_nextref.xml)] policy that sets up and connects a user’s device to your company email service.
+When devices are enrolled with Microsoft Intune, you can configure the devices so that their users can acess company email. One way to accomplish that for specific device types is to create and deploy an **email profile**. Email profiles are a kind of Intune policy that sets up and connects a user’s device to your company email service.
 Using an email profile makes email access automatic for enrolled devices, which avoids manually having to set up the device and any potential problems that might arise doing so. Also, an email profile ensures that all end users are setting up access in the same way and with the same basic settings.
 ## Goals of this walkthrough
 1. To create and deploy an email profile for iOS devices

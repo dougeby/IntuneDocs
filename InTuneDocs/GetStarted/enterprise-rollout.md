@@ -91,7 +91,7 @@ Here is a list of steps to get you started with the **Enterprise rollout** phase
     -  (Enroll your iOS device in Intune)[./enduser/enroll-your-device-in-intune-ios]
     -  (Enroll your Mac OS X device in Intune)[./enduser/enroll-your-device-in-intune-mac-os-x]
 
--   Define a process for updating training materials, as needed
+-   Define a process for updating training materials, as needed.
 
 -   Implement broad rollout plan.
 
@@ -100,11 +100,11 @@ Here are some  challenges that you may encounter in the **Enterprise rollout** p
 
 -   **Challenge:** Emails were sent, but adoption is limited.
 
-    **Mitigation:** Understand that users may get hundreds, if not thousands of emails a day. To help ensure your message is heard: (1) have an executive sponsor send out the initial messaging, (2) keep your email short and focus on the value-prop, (3) have a clear call-to-action, and (4) use several different awareness generating tactics- put up posters in cafeterias letting users know to check their inbox, for example.
+    **Mitigation:** Understand that users may get hundreds, if not thousands of emails a day. To help ensure your message is heard: (1) have an executive sponsor send out the initial messaging, (2) keep your email short and focus on the value-prop, (3) have a clear call-to-action, and (4) use several different awareness generating tactics: put up posters in cafeterias letting users know to check their inbox, for example.
 
 -   **Challenge:** Users are resistant to change and push back on using new technology.
 
-    **Mitigation:**Use the positive experiences of your pilot users to promote the use of devices managed by Intune.
+    **Mitigation:** Use the positive experiences of your pilot users to promote the use of devices managed by Intune.
 
 -   **Challenge:** Users feel if they have to be trained, the solution must be hard to use.
 

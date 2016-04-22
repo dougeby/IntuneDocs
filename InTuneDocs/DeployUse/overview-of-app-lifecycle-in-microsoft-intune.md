@@ -33,11 +33,11 @@ The Intune app lifecycle begins when an app is added and progresses through addi
 
 ## Add
 
-The first step in app deployment is to add the apps you want to manage and deploy into Intune. While there are many different app types you can work with, the basic procedures are the same. Intune lets you add apps for both [devices you've enrolled](add-apps-for-mobile-devices-in-microsoft-intune.md), and [Windows PCs you manage with the Intune client software](create-apps-for-windows-pcs-in-microsoft-intune.md).
+The first step in app deployment is to add the apps you want to manage and deploy into Intune. While there are many different app types you can work with, the basic procedures are the same. Intune lets you add apps for both [enrolled devices](add-apps-for-mobile-devices-in-microsoft-intune.md), and [Windows PCs you manage with the Intune client software](create-apps-for-windows-pcs-in-microsoft-intune.md).
 
 ## Deploy
 
-Once you've added the app to Intune, you can then [deploy it to devices that you manage](deploy-apps-in-microsoft-intune.md). Intune makes this process easy, and once the app is deployed, you can [monitor the success](monitor-apps-in-microsoft-intune.md) of the deployment from the Intune administration console. Additionally, some app stores, like the  [Apple](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md) and [Windows](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md) app stores allow you to purchase app licenses in bulk for your company. Intune can synchronize data with these stores to let you deploy and track license usage for these types of app right from the Intune administration console.
+Once you've added the app to Intune, you can then [deploy it to devices that you manage](deploy-apps-in-microsoft-intune.md). Intune makes this process easy, and once the app is deployed, you can [monitor the success](monitor-apps-in-microsoft-intune.md) of the deployment from the Intune administration console. Additionally, some app stores, like the  [Apple](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md) and [Windows](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md) app stores, allow you to purchase app licenses in bulk for your company. Intune can synchronize data with these stores to let you deploy and track license usage for these types of apps right from the Intune administration console.
 
 ## Configure
 
