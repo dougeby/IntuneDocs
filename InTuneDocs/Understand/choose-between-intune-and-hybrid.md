@@ -1,14 +1,30 @@
 ---
-title: Choose between Intune standalone and SCCM
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Choose between Intune standalone and SCCM | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 98a82def-6882-4363-a528-be03268c4ebd
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Choose between Intune standalone and Intune integrated with Configuration manager
 
 |You might choose [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] standalone if:|You might choose [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] + Configuration Manager if:|

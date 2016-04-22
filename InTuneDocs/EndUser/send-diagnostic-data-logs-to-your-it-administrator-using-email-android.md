@@ -1,14 +1,30 @@
 ---
-title: Send diagnostic data logs to your IT administrator using email
-ms.reviewer: na
-ms.custom: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Send diagnostic data logs to your IT administrator using email | Microsoft Intune
+description:
+keywords:
 author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Send diagnostic data logs to your IT administrator using email
 

@@ -1,14 +1,30 @@
 ---
-title: Acceptable Use Policy for Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f89bd1c9-b5b0-4683-b442-4cf25ff83af4
+# required metadata
+
+title: Acceptable Use Policy for Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: f89bd1c9-b5b0-4683-b442-4cf25ff83af4
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Acceptable Use Policy for Microsoft Intune
 This Acceptable Use Policy for [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] (“Policy”) identifies activities that you and your organization are prohibited from engaging in when using [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] or any subsequent release of [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] ("Service") which link to this Policy.
 

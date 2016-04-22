@@ -1,14 +1,30 @@
 ---
-title: Microsoft Intune policy reference
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
+# required metadata
+
+title: Microsoft Intune policy reference | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Microsoft Intune policy reference
 
 Use the information in this topic to help you decide which Microsoft Intune policy you need to use to manage your devices.

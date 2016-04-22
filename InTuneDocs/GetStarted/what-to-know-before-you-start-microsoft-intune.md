@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: What to know before you start | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # What to know before you start Microsoft Intune
 ## General device and app management capabilities
 Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], you should first review the [Introduction to Microsoft Intune](/intune/understand-explore/introduction-to-microsoft-intune) and become familiar with the capabilities of [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] described in this section. After you are familiar with the capabilities of Intune, you should be ready to set up your paid subscription. If you started with a trial subscription, you can convert it later to a full subscription; see [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).

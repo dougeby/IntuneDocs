@@ -1,13 +1,30 @@
 ---
-title: Application rollout
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
+# required metadata
+
+title: Application rollout | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Application rollout
 This topic provide specific recommendations for a phased rollout of apps in Microsoft Intune. For general information about rollout phases, see [Rollout phases for Microsoft Intune deployment](rollout-phases-for-microsoft-intune-deployment.md).
 

@@ -1,14 +1,30 @@
 ---
-title: MICROSOFT SOFTWARE SUPPLEMENTAL NOTICE
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 02b71ab4-8279-474a-af59-839f4e48e0e0
+# required metadata
+
+title: MICROSOFT SOFTWARE SUPPLEMENTAL NOTICE | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 02b71ab4-8279-474a-af59-839f4e48e0e0
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # MICROSOFT SOFTWARE SUPPLEMENTAL NOTICE
 
 ## MICROSOFT INTUNE COMPANY PORTAL

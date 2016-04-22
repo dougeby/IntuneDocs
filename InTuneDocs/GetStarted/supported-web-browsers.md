@@ -1,14 +1,30 @@
 ---
-title: Microsoft Intune supported web browsers
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: 
-ms.assetid: 
+# required metadata
+
+title: Microsoft Intune supported web browsers | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 6f4ff11d-dc81-481a-bcd9-d8cdab32f876
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Microsoft Intune supported web browsers
 
 Before you set up Intune, review this topic and other requirements listed in [What to know before you start](what-to-know-before-you-start-microsoft-intune.md).

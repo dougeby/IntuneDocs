@@ -1,14 +1,30 @@
 ---
-title: Set up Windows Phone 8.0 management with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
+# required metadata
+
+title: Set up Windows Phone 8.0 management with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Set up device management
 
 ## Setup for Windows 8.0 Phone management with Microsoft Intune

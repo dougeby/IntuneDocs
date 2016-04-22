@@ -1,13 +1,30 @@
 ---
-title: Microsoft Intune Managed Browser for iOS
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+# required metadata
+
+title: Microsoft Intune Managed Browser for iOS | Microsoft Intune
+description:
+keywords:
+author: 
+manager: jeffgilb
+ms.date: 04/28/2016
 ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
 ms.assetid: 122a12c2-ef30-43ac-a21c-af34a3ba64d9
-author:
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Microsoft Intune Managed Browser for iOS
 
 ## Microsoft Application License Terms:  Microsoft Intune Managed Browser

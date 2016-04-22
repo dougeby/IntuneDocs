@@ -1,13 +1,30 @@
 ---
-title: Microsoft Intune App SDK for iOS Developer Guide
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
+# required metadata
+
+title: Microsoft Intune App SDK for iOS Developer Guide | Microsoft Intune
+description:
+keywords:
 author: Msmbaldwin
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Microsoft Intune App SDK for iOS Developer Guide
 ***Note**:  You may wish to first read the [Get Started with Intune App SDK Guide](getting-started-and-faq.md), which explains how to prepare for integration on each supported platform.* 
 

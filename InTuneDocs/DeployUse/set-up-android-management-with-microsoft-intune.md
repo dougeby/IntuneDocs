@@ -1,14 +1,30 @@
 ---
-title: Set up Android management with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
+# required metadata
+
+title: Set up Android management with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Set up device management
 With Microsoft Intune, you can enable BYOD ("bring your own device") for Android devices without any additional work for the platform.
 

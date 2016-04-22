@@ -1,14 +1,30 @@
 ---
-title: Ways to do enterprise mobility
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2d91b8b5-bf44-4562-ab4a-6611584f9674
+# required metadata
+
+title: Ways to do enterprise mobility | Microsoft Intune
+description:
+keywords:
 author: jeffgilb
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 2d91b8b5-bf44-4562-ab4a-6611584f9674
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Ways to do enterprise mobility
 
 Microsoft provides several options for managing your mobile devices. Depending on the type of devices you need to manage, the granularity of device and app management your business requires, and other factors such as cost, you may choose one of the mobile device management (MDM) solutions provided by Microsoft.

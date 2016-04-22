@@ -1,14 +1,30 @@
 ---
-title: Set up Windows 10 Mobile and Windows Phone management with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
+# required metadata
+
+title: Set up Windows 10 Mobile and Windows Phone management with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 ## Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune
 Before you can manage Windows 10 Mobile or Windows Phone devices with Microsoft Intune, the devices must be able to communicate with Intune. To simplify this, you can create a DNS record so users don't have to enter the server address. The steps below describe how to simplify enrollment for users.  

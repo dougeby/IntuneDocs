@@ -1,14 +1,30 @@
 ---
-title: Windows PC management capabilities in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
+# required metadata
+
+title: Windows PC management capabilities in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Windows PC management capabilities (with the Microsoft Intune PC client)
 In most scenarios, you will enroll your devices with Microsoft Intune, which provides a greater set of capabilities than the Intune PC client. However, you can also manage PCs by using the Intune PC client which provides the following features:
 

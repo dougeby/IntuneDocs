@@ -1,14 +1,30 @@
 ---
-title: Manage license agreements for Windows PC software in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
+# required metadata
+
+title: Manage license agreements for Windows PC software in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Manage license agreements for Windows PC software in Microsoft Intune
 Microsoft Intune lets you add and manage license agreement information for software that was purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can also organize this information into logical groups.
 

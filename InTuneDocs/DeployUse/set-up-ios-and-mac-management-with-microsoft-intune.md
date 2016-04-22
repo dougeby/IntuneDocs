@@ -1,14 +1,30 @@
 ---
-title: Set up iOS and Mac management with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
+# required metadata
+
+title: Set up iOS and Mac management with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Set up device management
 With Microsoft Intune, you can enable BYOD ("bring your own device") for iOS and Mac OS X device enrollment to give access to company email and apps to iPhone, iPad and Mac users. Once enrolled, users can install the Intune Company Portal app and their devices can be targeted with policy using the Intune administration console.
 

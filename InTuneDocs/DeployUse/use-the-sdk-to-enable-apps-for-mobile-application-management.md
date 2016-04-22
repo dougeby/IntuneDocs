@@ -1,14 +1,30 @@
 ---
-title: Use the SDK to enable apps for mobile application management
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
+# required metadata
+
+title: Use the SDK to enable apps for mobile application management | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Use the SDK to enable apps for mobile application management
 Use the Microsoft Intune App SDK to enable Intune to manage certain features of your iOS or Android mobile apps. After your app is enabled, you can deploy policies to the app. These policies use those features to protect your corporate data. Examples of the types of protections that you can implement with the SDK are:
 

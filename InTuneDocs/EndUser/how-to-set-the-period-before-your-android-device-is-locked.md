@@ -1,15 +1,30 @@
 ---
-title: How to set the period before your Android device is locked
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
+# required metadata
+
+title: How to set the period before your Android device is locked | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
-robots: noindex,nofollow
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
+
+# optional metadata
+
+ROBOTS: noindex,nofollow
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # How to set the period before your Android device is locked
 To reconnect to your work, you’ll need to set the password timeout on your device by following these instructions:
 

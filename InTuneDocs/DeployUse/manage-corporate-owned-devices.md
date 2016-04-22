@@ -1,14 +1,30 @@
 ---
-title: Manage corporate-owned devices with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Manage corporate-owned devices with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
-robots:
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 5380e56c-9c48-459e-aea5-95ad90dbb7d1
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Manage corporate-owned devices with Microsoft Intune
 Organization or corporate-owned devices (COD) can be brought into management in a variety of ways depending upon the device and how it was purchased.
 

@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Retire devices | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
+description:
+keywords:
 author: Lindavr
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Retire devices from Intune management
 
 Whether devices are corporate-owned or personal, there comes a point when a managed device needs to be retired from management in Intune. Device retirement is relatively straight-forward; you perform either a selective wipe or a full wipe.

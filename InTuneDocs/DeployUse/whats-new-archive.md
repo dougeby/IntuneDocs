@@ -1,15 +1,30 @@
 ---
+# required metadata
+
 title: What's new archirve | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid:
+description:
+keywords:
 author: Lindavr
-robots: noindex,nofollow
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
+
+# optional metadata
+
+ROBOTS: noindex,nofollow
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 ## September 2015
 ### Mobile device and app management updates

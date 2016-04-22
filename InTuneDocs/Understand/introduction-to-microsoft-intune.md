@@ -1,14 +1,30 @@
 ---
-title: Introduction to Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
+# required metadata
+
+title: Introduction to Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Lindavr
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Introduction to Intune
 Microsoft Intune is the "management arm" of the Microsoft Enterprise Mobility Suite (EMS). Enterprise mobility is all about enabling your employees to be productive on all of their devices while keeping your organization's information protected.  
 

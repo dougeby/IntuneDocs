@@ -1,13 +1,30 @@
 ---
-title: Microsoft Intune App SDK Frequently Asked Questions
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 133d81c4-e550-404a-980e-64f6e843c649
+# required metadata
+
+title: Microsoft Intune App SDK Frequently Asked Questions | Microsoft Intune
+description:
+keywords:
 author: Msmbaldwin
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 133d81c4-e550-404a-980e-64f6e843c649
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Microsoft Intune App SDK Frequently Asked Questions
 Here are some frequently asked questions regarding the Intune App SDK.
 

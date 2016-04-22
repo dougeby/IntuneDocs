@@ -1,14 +1,30 @@
 ---
-title: Policies to protect Windows PCs|Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: Policies to protect Windows PCs| Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Use policies to help protect Windows PCs that run the Intune client software
 
 Microsoft Intune offers three policies that you can use to help ensure the security of Windows PCs when they are managed by the [Intune client software](manage-windows-pcs-with-microsoft-intune.md). 

@@ -9,12 +9,22 @@ manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod:
-ms.service: microsoft-intune
+ms.service:
 ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
 
 ---
+
 
 
 # What to tell your end users about using Microsoft Intune

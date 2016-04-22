@@ -1,14 +1,30 @@
 ---
-title: Configure certificate infrastructure
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3a435650-3891-4754-8abc-4bbac244f33b
+# required metadata
+
+title: Configure certificate infrastructure | Microsoft Intune
+description:
+keywords:
 author: nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 3a435650-3891-4754-8abc-4bbac244f33b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Configure certificate infrastructure
 This topic describes what you need in order to create and deploy certificate profiles.
 

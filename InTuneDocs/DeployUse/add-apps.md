@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Add apps | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Add apps with Microsoft Intune
 Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. These will help you to understand which apps you can deploy to which platform, and to understand the prerequisites that must be in place before you do so.
 

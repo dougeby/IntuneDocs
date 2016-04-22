@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Overview of the device lifecycle | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Overview of the mobile device management (MDM) lifecycle
 
 The Intune device lifecycle begins with initially enrolling a device and then moves through several steps concluding when the device is no longer required.

@@ -1,13 +1,30 @@
 ---
-title: Proof of concept
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
+# required metadata
+
+title: Proof of concept | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Proof of concept (PoC)
 The proof of concept phase should focus on determining the ability of your deployment to meet your company's requirements. This phase includes a simple topology designed to validate specific technical scenarios.  The deployment should be in a test environment and should not host any production users.
 

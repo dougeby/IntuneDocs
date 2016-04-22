@@ -1,14 +1,30 @@
 ---
-title: Update apps using Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
+# required metadata
+
+title: Update apps using Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Update apps using Microsoft Intune
 Microsoft Intune can help you manage app updates. Use the information in this topic to understand how you can update apps when a new version is required.
 

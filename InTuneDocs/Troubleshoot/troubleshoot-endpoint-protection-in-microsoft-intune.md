@@ -1,14 +1,30 @@
 ---
-title: Troubleshoot Endpoint Protection in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
+# required metadata
+
+title: Troubleshoot Endpoint Protection in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Troubleshoot Endpoint Protection in Microsoft Intune
 
 Use the information in this section to help you solve problems while using Microsoft Intune endpoint protection.

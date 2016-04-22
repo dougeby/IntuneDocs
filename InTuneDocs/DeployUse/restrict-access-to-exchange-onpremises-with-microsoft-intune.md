@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Restrict email access to Exchange On-premises and legacy Exchange Online Dedicated| Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Restrict email access to Exchange on-premises and legacy Exchange Online Dedicated with Intune
 
 The information in this topics applies to both Exchange on-premises and the legacy Exchange Online Dedicated environment.
