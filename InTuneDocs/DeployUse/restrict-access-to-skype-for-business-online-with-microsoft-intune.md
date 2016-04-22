@@ -34,13 +34,13 @@ To learn more about how conditional access works, read the [restrict access to e
 
 When a targeted user attempts to use Skype for Business Online on their device, the following evaluation occurs:
 
-![](../media/ConditionalAccess_SkypeforBusiness.png)
+![Diagram that shows the decision flow that is used to determine if a devices can be allowed access or blocked](../media/ConditionalAccess_SkypeforBusiness.png)
 
-**Before** configuring conditional access policy for Skype for Business Online, you must:
+**Before** configuring a conditional access policy for Skype for Business Online, you must:
 - Have a **Skype for Business Online subscription** and assign Skype for Business Online license to users.
 - Have a subscription for the **Enterprise Mobility Suite** or **Azure Active Directory Premium**.
--   **Enable modern authentication** for Skype for Business Online. Fill this [connect form](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) to be enrolled in the modern authentication program.
--  All your end-users must be using **Skype for Business Online**. If you have a deployment with both Skype for Business Online and Skype for Business on-premises, conditional access policy will not be applied to end-users.
+-   **Enable modern authentication** for Skype for Business Online. Log into Microsoft Connect and fill [this  form](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) to be enrolled in the modern authentication program.
+-  All your end users must be using **Skype for Business Online**. If you have a deployment with both Skype for Business Online and Skype for Business on-premises, conditional access policy will not be applied to end users.
 
     The device that needs access to Skype for Business Online must:
 
@@ -87,11 +87,10 @@ When you are ready, continue to **Step 3**.
 ### Step 3: Configure the Skype for Business Online policy
 Next, configure the policy to require that only managed and compliant devices can access Skype for Business Online. This policy will be will be stored in Azure Active Directory.
 
-#### <a name="bkmk_spopolicy"></a>
-
+####
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** > **Conditional Access** > **Skype for Business Online Policy**.
 
-![conditional_access_SFBPolicy](./media/conditional_access_SFBPolicy.png)
+![Screenshot of Skype for Business Online conditional access policy page](./media/conditional_access_SFBPolicy.png)
 
 2.  Select **Enable conditional access policy**.
 
@@ -120,6 +119,3 @@ Select any mobile device group and then, on the **Devices** tab, select one of t
 * **Devices that are not compliant** – These devices are blocked from Skype for Business Online.
 
 * **Devices that are registered with AAD and compliant** – These devices can access Skype for Business Online.
-
-### See also
-[Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)

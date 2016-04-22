@@ -57,7 +57,7 @@ To accomplish this, configure the following conditional access policy for Exchan
 
 -   Select the option **Block email apps from accessing Exchange on-premises if the device in noncompliant or not enrolled in Microsoft Intune**. By selecting this option, the conditional access policy is enabled, which requires that all devices must be enrolled in Microsoft Intune and meet the compliancy policy rules before they can access Exchange.
 
--   For Advanced Exchange Active Sync settings, create a:
+-   For advanced Exchange Active Sync settings, create a:
 
   -   A platform exception that allows devices that run iOS to access Exchange.   
 
@@ -76,10 +76,10 @@ To accomplish this, configure a conditional access policy for Exchange on-premis
 
 -   Select the option **Block email apps from accessing Exchange on-premises if the device is noncompliant or not enrolled in Microsoft Intune**. By selecting this option, they require that any device must be enrolled in Intune and meet the compliance policy rules.
 
-- For Advanced Exchange Active Sync settings, create a:
-  -   A platform exception that blocks devices that run Android from accessing Exchange. This rule makes sure that Android devices cannot be used to access Exchange.
+- For advanced Exchange Active Sync settings, create a:
+  -   Platform exception that blocks devices that run Android from accessing Exchange. This rule makes sure that Android devices cannot be used to access Exchange.
 
-  -   A default rule that specifies when a device is not covered by other rules, it should be allowed to access Exchange. This default rule makes sure that devices running platforms other than Android, but supported by Microsoft Intune can be used to access Exchange. They must however be enrolled in Intune and meet the compliance policy rules.
+  -   Default rule that specifies when a device is not covered by other rules, it should be allowed to access Exchange. This default rule makes sure that devices running platforms other than Android, but supported by Microsoft Intune can be used to access Exchange. They must however be enrolled in Intune and meet the compliance policy rules.
 
 The following flow is used to decide which devices can access Exchange:
 
