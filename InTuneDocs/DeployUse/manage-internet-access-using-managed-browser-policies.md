@@ -4,7 +4,7 @@
 title: Manage Internet access using managed browser policies| Microsoft Intune
 description:
 keywords:
-author: robstack
+author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
