@@ -31,7 +31,7 @@ If your app installation is taking too long, use the following instructions to m
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8\.1)
+* [Windows Phone 8.1](#windows-phone-8-1)
 
 
 ## Windows 10 Mobile
