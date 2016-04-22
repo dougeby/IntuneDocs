@@ -5,7 +5,7 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: ce412e5a-f4f6-45f9-ac5a-bdfbf7cd96d5
+ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 author: robstack
 ---
 # Manage Internet access using managed browser policies with Microsoft Intune
@@ -138,8 +138,3 @@ If multiple managed browser policies are deployed to a device and the settings c
 -   If a device is receiving managed browser policies for the first time and two policies conflict, the URLs will not be enforced on the device. Use the **Policy Conflicts** node of the **Policy** workspace to view the conflicts.
 
 -   If a device has already received a managed browser policy and a second policy is deployed with conflicting settings, the original settings remain on the device. Use the **Policy Conflicts** node of the **Policy** workspace to view the conflicts.
-
-
-
-
-
