@@ -164,6 +164,6 @@ In the **Add or Edit OMA-URI Setting** dialog box, specify the following informa
     |**OMA-URI (Case Sensitive)**|Specify the OMA-URI you want to supply a setting for.|
     |**Value**|Specify the value to associate with the OMA-URI you specified previously.|
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

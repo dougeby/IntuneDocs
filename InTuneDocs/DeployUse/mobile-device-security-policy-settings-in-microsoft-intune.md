@@ -212,6 +212,6 @@ Additional information for devices that run Windows 8.1
 |**Allow clipboard share between applications**|No|No|No|No|Yes (Samsung KNOX only)|
 |**Allow YouTube**|No|No|No|No|Yes (Samsung KNOX only)|
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies.md](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
