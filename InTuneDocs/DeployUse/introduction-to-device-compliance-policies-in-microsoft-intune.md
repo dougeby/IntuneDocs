@@ -64,4 +64,4 @@ The following table lists the device types supported by compliance policies and 
 [Deploy and monitor a device compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
 ### See also
-[Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-O365-services-with-intune.md)
+[Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
