@@ -34,7 +34,7 @@ The [Windows Store for Business](https://www.microsoft.com/business-store) gives
 
 ## Before you start
 Review the following information before you start syncing and deploying apps from the Windows Store for Business:
-* You must configure Intune as the mobile device management authority for your organization. For more information, see [Set mobile device management authority and configure Microsoft Intune](set-mobile-device-management-authority-and-configure-microsoft-intune.md)
+* You must configure Intune as the mobile device management authority for your organization. For more information, see [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 * You must have signed up for an account on the Windows Store for Business
 * Once you have associated a Windows Business Store account with Intune, you cannot change to a different account in the future.
 * Apps purchased from the store cannot be manually added to, or deleted from Intune. They can only be synchronized with the Windows Store for Business.
@@ -67,7 +67,7 @@ The apps in this node are displayed with the total number of licenses you own, t
 
 ## Deploy apps
 
-You deploy apps from the store in the same way you deploy any other Intune app. For more information, see [Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md).
+You deploy apps from the store in the same way you deploy any other Intune app. For more information, see [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 When you deploy a Windows Store for Business app, a license is used by each user who installs the app. If you use all of the available licenses for a deployed app, you will not be able to deploy any more copies and must take one of the following actions:
 * Uninstall the app from some devices
 * Reduce the scope of the current deployment to target only the users you have sufficient licenses for
@@ -75,6 +75,6 @@ When you deploy a Windows Store for Business app, a license is used by each user
 
 
 ### See also
-[Create apps for mobile devices in Microsoft Intune](create-apps-for-mobile-devices-in-microsoft-intune.md)
+[Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
 
 
