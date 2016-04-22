@@ -1,14 +1,30 @@
 ---
-title: Manage Intune licenses
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid:
+# required metadata
+
+title: Manage Intune licenses | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Manage Intune licenses
 A user must have a license to your Intune subscription before they can sign in to use the service or enroll their devices into management. When users have a license, they are a member of the [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] user group. This group includes all users who have a license to use the subscription. **Each user license supports enrolling up to five devices**.
 

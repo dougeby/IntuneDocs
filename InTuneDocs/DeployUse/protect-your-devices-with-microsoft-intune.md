@@ -1,14 +1,30 @@
 ---
-title: Protect devices with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
+# required metadata
+
+title: Protect devices with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Protect devices with Microsoft Intune
 Once you have your devices managed by Intune, you'll want to make sure that they are protected against unauthorized access and other threats. Here are some of the capabilities of Intune that help accomplish these aims.
 

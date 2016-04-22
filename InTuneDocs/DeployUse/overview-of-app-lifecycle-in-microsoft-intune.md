@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Overview of the app lifecycle | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Overview of the app lifecycle
 
 The Intune app lifecycle begins when an app is added and progresses through additional phases until you remove them.

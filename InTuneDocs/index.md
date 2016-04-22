@@ -16,7 +16,7 @@ layout: HubPage
         <li><a href="" class="button button-bordered">Learn More</a></li>
       </ol>
 -->
-      <h3>Want to extend Configuration Manager capabilities with Intune? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">Learn more about hybrid mobile device management &rarr;</a></h3>
+      <h3>Manage Intune with Configuration Manager? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">View Configuration Manager Documentation &rarr;</a></h3>
     </section>
 <!--
     <aside class="alert section-border">
@@ -44,7 +44,7 @@ layout: HubPage
         </ul>
         <ul class="column column-half">
           <li><a href="./deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Overview of device and app lifecycles</a></li>
-          <li><a href="./deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Configure data loss prevention app policies</a></li>
+          <li><a href="./deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Protect app data</a></li>
           <li><a  href="./plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">What to tell your end users about Intune</a></li>
         </ul>
       </div>
@@ -63,7 +63,7 @@ layout: HubPage
                   <span class="step-number">1</span>
                   <p>Understand &amp; Explore</p>
                 </div>
-                <p class="description column-two-thirds">Learn the high-level concepts, features, and capabilities of Microsoft Intune.
+                <p class="description column-two-thirds">Learn the basic concepts and capabilities of Microsoft Intune.
                 </p>
               </a>
             </header>
@@ -85,7 +85,7 @@ layout: HubPage
                 <li class="column-third">
                   <a href="./understand-explore/common-ways-to-use-intune">
                     <h3>Common scenarios</h3>
-                    <p>Understand how Intune is commonly used to solve business problems to determine how to best use it for your existing environment and requirements.</p>
+                    <p>Consider how Intune is commonly used to solve real-world business problems.</p>
                   </a>
                 </li>
               </ul>
@@ -101,7 +101,7 @@ layout: HubPage
                   <span class="step-number">2</span>
                   <p>Get Started</p>
                 </div>
-                <p class="description column-two-thirds">Get going with your paid Intune subscription.
+                <p class="description column-two-thirds">Get your environment set up.
                 </p>
               </a>
             </header>
@@ -111,19 +111,19 @@ layout: HubPage
               <li class="column-third">
                 <a href="./get-started/what-to-know-before-you-start-microsoft-intune">
                   <h3>What to know before you start</h3>
-                  <p>Quickly familiarize yourself with the features and capabilities of Intune.</p>
+                  <p>Quickly familiarize yourself with the baseline requirements for any Intune deployment.</p>
                 </a>
               </li>
               <li class="column-third">
                 <a href="./get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                  <h3>Get started</h3>
+                  <h3>Get started with a paid subscription</h3>
                   <p>Building on the 30-day trial guide, this topic walks you through Azure Active Directory synchronization, domain and DNS considerations, and other Intune customizations.</p>
                 </a>
               </li>
               <li class="column-third">
                 <a href="./get-started/rollout-phases-for-microsoft-intune-deployment">
-                  <h3>Pilot deployment information and templates</h3>
-                  <p>Best practices and templates to help you get started with Intune deployments.</p>
+                  <h3>Rollout phases</h3>
+                  <p>Define your Intune goals, architecture, pilot, and production rollout plans.</p>
                 </a>
               </li>
             </ul>
@@ -189,13 +189,13 @@ layout: HubPage
                 <li class="column-third">
                   <a href="./deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
                     <h3>Overview of device and app lifecycles</h3>
-                    <p>Learn how to best support each step in device and app lifecycles using Intune.</p>
+                    <p>Learn about the typical phases involved with managing devices and apps using Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./deploy-use/enroll-devices-in-microsoft-intune">
                     <h3>Enroll devices</h3>
-                    <p>Learn what's involved in enrolling devices and Windows PCs into management with Intune.</p>
+                    <p>Learn the various ways to enroll mobile devices and Windows PCs into management with Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -253,9 +253,9 @@ layout: HubPage
          <h2 class="section-heading"><span class="icon icon-note"></span>Additional resources for Intune</h2>
          <div class="resource-list row">
              <ul class="column-half">
-             <li><a href="https://microsoftintune.uservoice.com/" target="_blank">User voice for Microsoft Intune</a></li>
-             <li><a href="http://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" target="_blank">User voice for Microsoft Intune documentation</a></li>
-             <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune downloads on the TechNet Gallery</a></li>
+             <li><a href="https://microsoftintune.uservoice.com/" target="_blank">Give feedback on Intune functionality Intune</a></li>
+             <li><a href="http://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" target="_blank">Give feedback on Intune documentation</a></li>
+             <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune documentation downloads</a></li>
              </ul>
              <ul class="column-half">
              <li><a href="../em/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Fast Track Center for Enterprise Mobility Suite</a></li>

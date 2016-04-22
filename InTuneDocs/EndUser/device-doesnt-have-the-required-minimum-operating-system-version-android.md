@@ -1,14 +1,30 @@
 ---
-title: Device doesn't have the required minimum operating system version
-ms.reviewer: na
-ms.custom: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Device doesn't have the required minimum operating system version | Microsoft Intune
+description:
+keywords:
 author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 3ef43ff5-8d6b-4be1-baa4-6fb6a7f3c312
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Device doesn't have the required minimum operating system version
 

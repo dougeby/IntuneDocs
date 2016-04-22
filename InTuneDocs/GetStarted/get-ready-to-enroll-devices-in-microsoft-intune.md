@@ -1,14 +1,30 @@
 ---
-title: Get ready to enroll devices in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
+# required metadata
+
+title: Get ready to enroll devices in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 00e6a315-e545-4a33-a63a-ec380baa7fe5
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Get ready to enroll devices in Microsoft Intune
 To let employees access company resources on mobile devices (including Android, iOS, and Windows Phone) with Intune you must enable device enrollment. Apart from managing mobile devices that use iOS, Android, or Widows, Intune also enables you to manage computers running Windows 10 and Windows 8.1 as mobile devices; alternately, you can manage them [using Intune client software](manage-windows-pcs-with-microsoft-intune.md).
 

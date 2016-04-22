@@ -1,14 +1,30 @@
 ---
-title: Wi-Fi connections in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
+# required metadata
+
+title: Wi-Fi connections in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Wi-Fi connections in Microsoft Intune
 Use Microsoft Intune Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. These settings simplify user connections to wireless networks.
 

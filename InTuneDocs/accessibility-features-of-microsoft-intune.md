@@ -1,14 +1,30 @@
 ---
-title: Accessibility Features of Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
+# required metadata
+
+title: Accessibility Features of Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Accessibility Features of Microsoft Intune
 In addition to accessibility features and tools in Microsoft Windows, the following features make [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] more accessible for people with disabilities:
 

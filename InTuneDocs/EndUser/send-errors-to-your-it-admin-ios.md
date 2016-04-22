@@ -1,14 +1,30 @@
 ---
-title: Send errors to your IT admin
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Send errors to your IT admin | Microsoft Intune
+description:
+keywords:
 author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Send errors to your IT admin
 

@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Manage Windows PCs with Intune | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
+description:
+keywords:
 author: nathbarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Manage Windows PCs with Microsoft Intune
 In addition to enrolling devices, you can also use Intune to manage Windows PCs running supported operating systems using the Intune Windows PC client software. The [hardware and software requirements](windows-pc-management-capabilities-in-microsoft-intune.md) to run the computer client are minimal -- basically any system capable of running Windows Vista or later is supported.  The client software can also be easily installed on either domain-joined computers (in any domain) or non-domain-joined computers.
 

@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Restrict access to SharePoint Online | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Restrict access to SharePoint Online with Microsoft Intune
 Use the [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] **SharePoint Online** conditional access to control access to files located on SharePoint online.
 Conditional access has two components:

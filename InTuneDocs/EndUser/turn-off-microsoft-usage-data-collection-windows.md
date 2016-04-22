@@ -1,14 +1,30 @@
 ---
-title: Turn off Microsoft usage data collection
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: Turn off Microsoft usage data collection | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Turn off Microsoft usage data collection
 

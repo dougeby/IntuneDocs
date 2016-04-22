@@ -1,14 +1,30 @@
 ---
-title: Administrative accounts, websites, and permissions in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic:
-ms.assetid:
+# required metadata
+
+title: Administrative accounts, websites, and permissions in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Administrative accounts, websites, and permissions in Microsoft Intune
 
 Before you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).

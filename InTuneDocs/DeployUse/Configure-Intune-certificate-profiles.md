@@ -1,14 +1,30 @@
 ---
-title: Configure Intune certificate profiles
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
+# required metadata
+
+title: Configure Intune certificate profiles | Microsoft Intune
+description:
+keywords:
 author: Lizap
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Configure Intune certificate profiles
 After your infrastructure and certificates are configured as described in [Configure certificate infrastructure](configure-certificate-infrastructure.md), you can configure certificate profiles:
 

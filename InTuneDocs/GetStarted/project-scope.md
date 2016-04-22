@@ -1,13 +1,30 @@
 ---
-title: Project scope
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
+# required metadata
+
+title: Project scope | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Project scope
 In the project scope phase, you will outline your goals, timeline and success metrics, define key organizational readiness factors, assemble your project team, and begin initial preparations for all phases involved with successfully rolling out Microsoft Intune across your organization and ensuring a great experience for users.
 Invest the right time and effort to define what long-term success looks like so that your plan reflects all the right steps along the way to achieve that vision. While there is always opportunity to fine tune along the way, having a comprehensive readiness plan that's tightly aligned with the core technical deployment is a key factor to overall success.

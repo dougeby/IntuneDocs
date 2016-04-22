@@ -1,14 +1,30 @@
 ---
-title: Plan your user and device groups
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
+# required metadata
+
+title: Plan your user and device groups | Microsoft Intune
+description:
+keywords:
 author: SanchuSa
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Plan your user and device groups
 Groups in Intune provide great flexibility in managing your devices and users. You can set up groups to suit your organizational needs according to:
 

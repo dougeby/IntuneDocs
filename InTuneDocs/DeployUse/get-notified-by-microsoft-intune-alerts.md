@@ -1,14 +1,30 @@
 ---
-title: Get notified by Microsoft Intune alerts
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
+# required metadata
+
+title: Get notified by Microsoft Intune alerts | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Get notified by Microsoft Intune alerts
 Alerts keep you in touch with what's happening in Microsoft Intune.
 

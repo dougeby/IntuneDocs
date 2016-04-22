@@ -1,14 +1,30 @@
 ---
-title: Understand your devices with inventory in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
+# required metadata
+
+title: Understand your devices with inventory in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Understand your devices with inventory in Microsoft Intune
 Microsoft Intune lets you view the inventory of enrolled devices and Windows PCs that run the Intune client software.
 

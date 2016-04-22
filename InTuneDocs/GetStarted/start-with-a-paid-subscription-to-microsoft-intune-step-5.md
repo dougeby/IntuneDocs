@@ -1,14 +1,30 @@
 ---
-title: Create groups to organize users and devices
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid:
+# required metadata
+
+title: Create groups to organize users and devices | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Create groups to organize users and devices
 Groups in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics) and use them to perform a wide variety of administrative tasks, from deploying policies for a set of users to deploying applications to a set of devices.

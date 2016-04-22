@@ -1,13 +1,30 @@
 ---
-title: Operations and maintenance
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f46fb18e-228c-4a2d-92e7-20734e9bdae3
+# required metadata
+
+title: Operations and maintenance | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: f46fb18e-228c-4a2d-92e7-20734e9bdae3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Operations and maintenance (O&M)
 Now that your Intune system is operational, and you depend on it for business-critical functions and for secure device usage, maintain a robust system.
 

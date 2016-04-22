@@ -1,14 +1,30 @@
 ---
-title: Direct enrollment for iOS devices with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Direct enrollment for iOS devices with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Enroll iOS devices with Apple Configurator using direct enrollment
 Intune supports the enrollment of corporate-owned iOS devices using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process does not factory-resets the device and enrolls the device with a predefined policy.
 

@@ -1,14 +1,30 @@
 ---
-title: Mac OS X policy settings in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
+# required metadata
+
+title: Mac OS X policy settings in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Mac OS X configuration policy settings in Microsoft Intune
 
 ## General configuration policy settings

@@ -1,14 +1,30 @@
 ---
-title: Prepare Android apps for management with App Wrapping Tool |  Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
+# required metadata
+
+title: Prepare Android apps for management with App Wrapping Tool |  Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Prepare Android apps for mobile application management with the Intune App Wrapping Tool
 Use the **Microsoft Intune App Wrapping Tool for Android** to modify the behavior of your in-house Android apps to let you configure features of the app without modifying the code of the app itself.
 
@@ -115,7 +131,7 @@ For apps that use ADAL, the following must be true:
 
 -   The app must incorporate an ADAL version greater than or equal to 1.0.2.
 
--   The developer must grant their app access to the Intune Mobile Application Management resource, as described in [Step 3 - Configure access to mobile application management in AAD](#step-3-configure-access-to-mobile-app-management-in-aad).
+-   The developer must grant their app access to the Intune Mobile Application Management resource, as described in [Step 3 Configure access to mobile application management in AAD](#step-3-configure-access-to-mobile-app-management-in-aad).
 
 ### Step 2 Review the identifiers you need to get when you register the app
 In the next step, you will use the Azure management portal to register your apps (which are using  ADAL with Azure Active Directory (AAD)) to get the unique identifiers listed in the following table. You then give the identifiers to the developer when you integrate ADAL with the app.
@@ -139,7 +155,7 @@ Before you can use an app’s AAD registration values in the app wrapping tool, 
 
 4.  From the first drop-down list in the **Permission to other applications** section, choose **Intune Mobile Application Management**.
 
-You can now use the app’s Client ID in the app wrapping tool. You can find the Client ID in the Azure Active Directory management portal, as described in the table in [Step 2: Review the identifiers you need to get when you register the app](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app).
+You can now use the app’s Client ID in the app wrapping tool. You can find the Client ID in the Azure Active Directory management portal, as described in the table in [Step 2 Review the identifiers you need to get when you register the app](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app).
 
 ### Step 4 Use the AAD identifier values in the app wrapping tool
 Using the identifier values that you got from the registration process, enter the values as command-line properties in the app wrapping tool. You must specify all of the values in the table in order for end users to successfully authenticate the app. Default values are used if you don't specify a value.

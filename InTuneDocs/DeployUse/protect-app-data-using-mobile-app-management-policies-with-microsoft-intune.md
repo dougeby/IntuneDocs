@@ -1,14 +1,30 @@
 ---
-title: Protect app data using mobile app management policies |Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
+# required metadata
+
+title: Protect app data using mobile app management policies | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Protect app data using mobile app management policies with Microsoft Intune
 
 ## How you can protect app data

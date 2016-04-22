@@ -1,14 +1,30 @@
 ---
-title: Endpoint Protection for Windows PCs|Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Endpoint Protection for Windows PCs| Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Help secure Windows PCs with Endpoint Protection for Microsoft Intune
 Microsoft Intune can help you to secure your managed computers in a number of ways, including Endpoint Protection which provides real-time protection against malware threats, keeps malware definitions up-to date, and automatically scans computers. Endpoint Protection also provides tools that help you to manage and monitor malware attacks.
 

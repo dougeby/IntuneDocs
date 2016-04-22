@@ -1,13 +1,30 @@
 ---
-title: Policy rollout
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
+# required metadata
+
+title: Policy rollout | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Policy rollout
 This topic provide specific recommendations for a phased rollout of policies in Microsoft Intune. This approach applies to the first policies you apply in a new Intune deployment, or policies you add to an existing deployment.
 

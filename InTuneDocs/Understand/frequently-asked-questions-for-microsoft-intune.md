@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Frequently asked questions about Intune | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune 
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a8126cca-9ec4-454b-a20b-dc1bb6797327
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: a8126cca-9ec4-454b-a20b-dc1bb6797327
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Frequently asked questions about Intune
 This article answers some frequently asked questions about Intune. If you don't see an answer to your question here, [let us know](https://microsoftintune.uservoice.com/).
 

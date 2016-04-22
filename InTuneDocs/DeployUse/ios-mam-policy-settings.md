@@ -1,14 +1,30 @@
 ---
-title: IOS MAM policy settings |Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic:
-ms.assetid:
+# required metadata
+
+title: IOS MAM policy settings | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 #  IOS mobile app management policy settings
 ##  IOS data relocation policies
 The term **Policy managed apps** is used to refer to apps that are configured with MAM policies.

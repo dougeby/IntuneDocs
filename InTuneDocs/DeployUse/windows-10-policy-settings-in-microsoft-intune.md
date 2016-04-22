@@ -1,14 +1,30 @@
 ---
-title: Windows 10 policy settings in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
+# required metadata
+
+title: Windows 10 policy settings in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Windows 10 policy settings in Microsoft Intune
 
 Use the policy settings listed in this topic to help you configure settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices.

@@ -1,13 +1,30 @@
 ---
-title: Troubleshoot device enrollment in Intune
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
+# required metadata
+
+title: Troubleshoot device enrollment in Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Troubleshoot device enrollment in Intune
 
 Here are some device enrollment issues and how to troubleshoot and resolve them.

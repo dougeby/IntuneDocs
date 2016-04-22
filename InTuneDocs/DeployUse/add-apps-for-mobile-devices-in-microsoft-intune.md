@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Add apps for mobile devices | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Add apps for mobile devices in Microsoft Intune
 
 Use the information in this topic to learn how to add apps to Intune before you deploy them.

@@ -1,22 +1,38 @@
 ---
-title: Microsoft Intune Company Portal
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: 
-ms.assetid: 
+# required metadata
+
+title: Microsoft Intune Company Portal | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Microsoft Intune Company Portal
 
 Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 The Intune Company Portal is a tool that provides users with access to company data and apps. The Company Portal is available in two forms:
 
--   **The Company Portal app**: An application that is available on devices you manage with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Learn more about the Company Portal apps for [Android]((/Intune/EndUser/using-your-android-device-with-intune), [iOS]((/Intune/EndUser/using-your-ios-device-with-intune)
-, and [Windows]((/Intune/EndUser/using-your-windows-device-with-intune).
+-   **The Company Portal app**: An application that is available on devices you manage with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Learn more about the Company Portal apps for [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-device-with-intune)
+, and [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
 - **The Company Portal website**: A website that provides access from a [supported browser](supported-web-browsers.md). The URL is [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). Learn more about this website at [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website).

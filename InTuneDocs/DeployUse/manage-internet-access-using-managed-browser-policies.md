@@ -1,13 +1,30 @@
 ---
-title: Manage Internet access using managed browser policies|Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ce412e5a-f4f6-45f9-ac5a-bdfbf7cd96d5
+# required metadata
+
+title: Manage Internet access using managed browser policies| Microsoft Intune
+description:
+keywords:
 author: robstack
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Manage Internet access using managed browser policies with Microsoft Intune
 The managed browser is a web browsing application that you can deploy in your organization using Microsoft Intune. A managed browser policy configures an allow list or a block list that restricts the web sites that users of the managed browser can visit.
 
@@ -138,8 +155,3 @@ If multiple managed browser policies are deployed to a device and the settings c
 -   If a device is receiving managed browser policies for the first time and two policies conflict, the URLs will not be enforced on the device. Use the **Policy Conflicts** node of the **Policy** workspace to view the conflicts.
 
 -   If a device has already received a managed browser policy and a second policy is deployed with conflicting settings, the original settings remain on the device. Use the **Policy Conflicts** node of the **Policy** workspace to view the conflicts.
-
-
-
-
-

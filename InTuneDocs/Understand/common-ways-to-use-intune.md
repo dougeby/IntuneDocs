@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Common ways to use Intune | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+description:
+keywords:
 author: jeffgilb
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Common ways to use Intune
 
 Before diving into implementation tasks it is important to align your company’s enterprise mobility stakeholders around the business goals.  This is important whether you are brand new to enterprise mobility or migrating from another product.  The needs around enterprise mobility are dynamically evolving and Microsoft approaches to addressing these needs can sometimes be different from other solutions in the market.  The best way to align around business goals is to express what you want to accomplish in terms of the scenarios you want to enable for your employees, partners and IT.  Below are short introductions to the 6 most common scenarios that rely on Intune, accompanied with links to more information on how to plan and deploy each of them.

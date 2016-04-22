@@ -1,14 +1,30 @@
 ---
-title: Monitor mobile app management policies with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
+# required metadata
+
+title: Monitor mobile app management policies with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Monitor mobile app management policies with Microsoft Intune
 After you have configured a MAM policy and applied it to the users, you can monitor the compliance status on the Azure portal. The Azure portal includes information about the users affected by the policy, the compliance status, and any issues that your end users might be experiencing.
 ## Summary view

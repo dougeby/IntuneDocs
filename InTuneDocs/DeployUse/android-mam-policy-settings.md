@@ -1,14 +1,30 @@
 ---
-title: Android MAM policy settings |Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic:
-ms.assetid:
+# required metadata
+
+title: Android MAM policy settings | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Android mobile app management policy settings in Microsoft Intune
 
 ##  Data relocation settings

@@ -1,14 +1,30 @@
 ---
-title: Use groups to manage users and devices with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
+# required metadata
+
+title: Use groups to manage users and devices with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Create groups to manage users and devices with Microsoft Intune
 
 To create and manage groups use the **Groups** workspace in the Microsoft Intune administration console. The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:

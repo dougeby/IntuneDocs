@@ -1,14 +1,30 @@
 ---
-title: Manage apps you purchased from the Windows Store for Business|Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: Manage apps you purchased from the Windows Store for Business| Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Manage apps you purchased from the Windows Store for Business with Microsoft Intune
 The [Windows Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Intune console, for example:
 * You can synchronize the list of apps you have purchased from the store with Intune.

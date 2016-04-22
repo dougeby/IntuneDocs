@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Create and deploy MAM policies | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Create and deploy mobile app management policies with Microsoft Intune
 Mobile app management (MAM) policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how MAM policies work and the scenarios supported by Intune MAM policies, read the [protect app data using mobile app managment policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) article.
 

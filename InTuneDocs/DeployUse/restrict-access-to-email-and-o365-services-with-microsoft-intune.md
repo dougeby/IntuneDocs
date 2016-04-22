@@ -1,14 +1,30 @@
 ---
-title: Restrict access to email and O365 services |Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
+# required metadata
+
+title: Restrict access to email and O365 services | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Restrict access to email and O365 services with Microsoft Intune
 You can restrict access to your company email and O365 services with Intune's conditional access. Intune's conditional access capability allows you to make sure that access to your company email and O365 services is restricted to devices that are compliant with the rules that you set.
 ## How does conditional access work?

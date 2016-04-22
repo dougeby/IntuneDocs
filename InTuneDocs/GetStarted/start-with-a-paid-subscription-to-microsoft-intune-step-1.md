@@ -1,14 +1,30 @@
 ---
-title: Sign up or sign in to Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
+# required metadata
+
+title: Sign up or sign in to Intune | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Sign up or sign in to Intune
 Before you can sign in or sign up for Intune, you'll need to determine whether your organization already has a Microsoft Online Services work or school account, or if your organization has an Enterprise Agreement or equivalent volume licensing agreement with Microsoft. A work or school account is provided when you sign a volume licensing agreement with Microsoft or subscribe to other Microsoft cloud services such as Office 365.

@@ -1,14 +1,30 @@
 ---
-title: Add users to your 30 day trial of Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid:
+# required metadata
+
+title: Add users to your 30 day trial of Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 9e40999b-46f7-447b-8974-72af82bec7ef
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Step 2: Add users to your 30-day trial of Microsoft Intune
 Now that you have set up your account, you'll use either the **New Users** wizard to add individual user accounts to Intune, or the **Bulk add users** wizard to add users in bulk (see the instructions in this section).  Before you get started, it's important that you understand how Intune handles administrator accounts.
 
@@ -18,43 +34,43 @@ Administrator accounts for Intune aren't created in the Office 365 admin center,
 
 You can view tenant administrator information by using the Intune administration console, but you cannot create tenant administrators there. By default, the subscription owner becomes a tenant administrator for your Microsoft Intune service and has full access to both the Office 365 admin center and the Intune administration console. We recommend that you create a least one extra tenant administrator account by using the Office 365 admin center to help delegate tasks and to ensure that you don’t get locked out of your Intune service administrator account if you forget your password.
 
-### Add individual user accounts
+## Add individual user accounts
 Use the following steps to create additional user accounts in your trial tenant. Remember, each user account that you add counts as one of the 100 licenses that  you get as part of your Intune free trial.
 
-1.  In the [Office 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854), click **Add Users** &gt; **New**&gt; **User** to start the **New users** wizard.
+1.  In the [Office 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854), choose **Add Users** &gt; **New**&gt; **User** to start the **New users** wizard.
 
 2.  On the **Details** page, complete the required fields.
 
 3.  On the **Settings** page, set the **location** for the user.
 
-4.  On the **Group** page, click **Next** to accept the default and assign a license for Intune to the user’s account.
+4.  On the **Group** page, choose **Next** to accept the default and assign a license for Intune to the user’s account.
 
-5.  On the **Email** page, specify up to five email addresses that will receive notification of the user name and temporary password for the account. Separate multiple email addresses by semicolons (;). When you're done, click **Create** to add the user to your subscription.
+5.  On the **Email** page, specify up to five email addresses that will receive notification of the user name and temporary password for the account. Separate multiple email addresses by semicolons (;). When you're done, chose **Create** to add the user to your subscription.
 
 6.  On the **Results** page, you can view the new account name and its temporary password. Intune automatically creates the temporary password.
 
 7.  When the new user  appears in the Office 365 admin center, verify that the new user was created successfully:
 
-    1.  In the [Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Company Portal**, and then scroll to the bottom of the screen. Copy the URL shown under  **Intune Company Portal**.
+    1.  In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Company Portal**, and then scroll to the bottom of the screen. Copy the URL shown under  **Intune Company Portal**.
 
-    2.  Open a new browser window in “privacy mode” (in Internet Explorer, click **Tools** &gt; **InPrivate Browsing**), or open a new browser window on a different device, and then navigate to the URL that you copied in the previous step. When users sign in for the first time, they must provide a new password for the account.
+    2.  Open a new browser window in “privacy mode” (in Internet Explorer, choose **Tools** &gt; **InPrivate Browsing**), or open a new browser window on a different device, and then navigate to the URL that you copied in the previous step. When users sign in for the first time, they must provide a new password for the account.
 
-### Add users in bulk
+## Add users in bulk
 To add users in bulk to Intune,  use the **Bulk add users** wizard to upload a comma-separated values (CSV) file that contains your user data. Links in the wizard enable you to download a blank template and sample CSV file. The first row of your CSV file must contain, in the correct order, each of the user data column labels. Then, for each user in the CSV file, you must include the **user name** (like **bob@contoso.com**) and a **display name** (like **Bob Kelly**).
 
-1.  In the [Office 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854), click **Users** &gt; **New**.
+1.  In the [Office 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854), choose **Users** &gt; **New**.
 
-2.  Click **Bulk add** to start the Bulk add users wizard.
+2.  Choose **Bulk add** to start the Bulk add users wizard.
 
-3.  On the **Select file** page, click **Browse** to specify and load an existing CSV file from your computer. You can also download a sample CSV file or blank template file by using the links in the wizard.
+3.  On the **Select file** page, choose **Browse** to specify and load an existing CSV file from your computer. You can also download a sample CSV file or blank template file by using the links in the wizard.
 
-4.  On the **Verification** page, review the results, and then click **View** for more details.
+4.  On the **Verification** page, review the results, and then choose **View** for more details.
 
 5.  On the **Settings** page, confirm that the sign-in status is **Allowed**, and set the **location**. These settings apply to all user accounts added by the CSV file.
 
-6.  On the **Group** page, click **Next** to accept the default and assign a license for Intune to all user accounts added by the CSV file. By default, the check box is selected, which assigns a license for Intune to each account.
+6.  On the **Group** page, choose **Next** to accept the default and assign a license for Intune to all user accounts added by the CSV file. By default, the check box is selected, which assigns a license for Intune to each account.
 
-7.  On the **Email** page, specify up to five email addresses to receive notification of the user names and temporary passwords that Intune creates for each account. Separate multiple email addresses with semicolons (;). When ready, click **Create** to add the users to your subscription.
+7.  On the **Email** page, specify up to five email addresses to receive notification of the user names and temporary passwords that Intune creates for each account. Separate multiple email addresses with semicolons (;). Choose **Create** to add the users to your subscription.
 
 8.  On the **Results** page, you can view the account names and temporary password for each user account.
 

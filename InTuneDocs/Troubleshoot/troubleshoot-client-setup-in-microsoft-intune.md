@@ -1,13 +1,30 @@
 ---
-title: Troubleshoot client setup in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
+# required metadata
+
+title: Troubleshoot client setup in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Troubleshoot client setup in Microsoft Intune
 Use the following information to help you troubleshoot common client setup problems. If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 

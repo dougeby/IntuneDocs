@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: End user experience for MAM enabled apps | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # End user experience for MAM enabled apps with Microsoft Intune
 Mobile application management (MAM) polices are applied only when apps are used in the work context.  Read the following scenarios to understand how managed apps work.
 ##  Accessing OneDrive on an iOS device

@@ -1,14 +1,30 @@
 ---
-title: Common Intune evaluation tasks
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c7c2d100-793a-4ed8-b1ac-1da637a1a19d
+# required metadata
+
+title: Common Intune evaluation tasks | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: c7c2d100-793a-4ed8-b1ac-1da637a1a19d
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Common Intune evaluation tasks
 

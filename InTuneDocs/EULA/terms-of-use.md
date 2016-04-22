@@ -1,14 +1,30 @@
 ---
-title: Terms of Use
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 189c42d1-ed55-4ae3-9685-17a9fe87b5e2
+# required metadata
+
+title: Terms of Use | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 189c42d1-ed55-4ae3-9685-17a9fe87b5e2
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Terms of Use
 
 ## 1.  ACCEPTANCE.

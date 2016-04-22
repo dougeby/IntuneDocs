@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Use remote wipe to help protect data | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Help protect your data with full or selective wipe using Microsoft Intune
 As with devices, at some point, you want or need to [retire apps](retire-apps-using-microsoft-intune.md) you have deployed to PCs and mobile devices because they are no longer needed. But you may also want to remove any app data from the device. To do this, Intune provides selective and full wipe capabilities. Because mobile devices can store sensitive corporate data and provide access to many corporate resources, you can issue a remote device wipe command from the Intune to wipe a lost or stolen device. Also, users can issue a remote device wipe command from the Intune on privately owned devices enrolled in Intune.
 

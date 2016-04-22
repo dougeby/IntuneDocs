@@ -1,13 +1,30 @@
 ---
-title: Troubleshoot policies in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
+# required metadata
+
+title: Troubleshoot policies in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Troubleshoot policies in Microsoft Intune
 
 Listed here are some issues that may arise from your Microsoft Intune policy configuration, and troubleshooting recommendations for those issues.

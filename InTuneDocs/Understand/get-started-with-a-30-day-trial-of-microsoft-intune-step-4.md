@@ -1,14 +1,30 @@
 ---
-title: Create policies and publish an app to trial users
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid:
+# required metadata
+
+title: Create policies and publish an app to trial users | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Step 4: Create policies and publish an app to trial users
 Intune policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. If you are planning to use Intune for devices that you configure for production use after the trial, it's absolutely essential that you follow the instructions in [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) and [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
@@ -23,30 +39,30 @@ In these steps, you'll set up a mobile device configuration policy and a Windows
 
 1.  Open the [Intune administration console](https://manage.microsoft.com/).
 
-2.  In the left pane, click the **Policy** icon.
+2.  In the left pane, choose the **Policy** icon.
 
-3.  In the **Tasks** list on the **Policy Overview** page, click **Add Policy**.
+3.  In the **Tasks** list on the **Policy Overview** page, choose **Add Policy**.
 
-4.  In the policy list, expand the platform you want to create a policy for, select **General Configuration**, choose **Create and Deploy a Policy with the Recommended Settings**, and then click **Create Policy**.
+4.  In the policy list, expand the platform you want to create a policy for, select **General Configuration**, choose **Create and Deploy a Policy with the Recommended Settings**, and then choose **Create Policy**.
 
-5.  When prompted to **Select the groups to which you want to deploy this policy**, select **My Trial Users** from the list, and click **Add** &gt; **OK**.
+5.  When prompted to **Select the groups to which you want to deploy this policy**, select **My Trial Users** from the list, and choose **Add** &gt; **OK**.
 
 Your policy appears in the list of configuration policies, and has been deployed to the **My Trial Users** group. Double-click the policy to view its settings.
 
 ## Publish the Skype app for mobile devices
 
-1.  In the [Intune administration console](https://manage.microsoft.com/), click the **Apps** icon, then click **Apps** &gt; **Add App**. If prompted, enter your Intune credentials.
+1.  In the [Intune administration console](https://manage.microsoft.com/), choose the **Apps** icon, then choose **Apps** &gt; **Add App**. If prompted, enter your Intune credentials.
 
     > [!NOTE]
     > When you start the **Intune Software Publisher** for the first time, a short delay occurs while the application is installed.
 
-2.  Review the security warning and click **Run**.
+2.  Review the security warning, and choose **Run**.
 
-3.  On the **Before you begin** page, click **Next**.
+3.  On the **Before you begin** page, choose **Next**.
 
 4.  On the **Software setup** page in **Select how this software is made available to devices**, select **External link**.
 
-5.  Enter the external link for the software in **Specify the URL**, and then click **Next**. Make sure that you preface the URL with **https://**. For the Skype app, use the link below that matches the mobile device platform you're using:
+5.  Enter the external link for the software in **Specify the URL**, and then choose **Next**. Make sure that you preface the URL with **https://**. For the Skype app, use the link below that matches the mobile device platform you're using:
 
     -   **iOS:** [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
 
@@ -54,9 +70,9 @@ Your policy appears in the list of configuration policies, and has been deployed
 
     -   **Windows Phone 8 or Windows Phone 8.1:** [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
 
-6.  On the **Software description** page, provide the information that you want users to see in the Company Portal for the software, and then click **Next**. The following settings are available (this example refers to Skype):
+6.  On the **Software description** page, provide the information that you want users to see in the Company Portal for the software, and then choose **Next**. The following settings are available (this example refers to Skype):
 
-    -   **Publisher:** Enter the name of the publisher, "Microsoft"
+    -   **Publisher:** Enter the name of the publisher, **Microsoft**
 
     -   **Name:** Enter **Skype**
 
@@ -68,15 +84,15 @@ Your policy appears in the list of configuration policies, and has been deployed
 
     -   **Icon:**  (Optional) Choose whether to associate an icon with the software. The maximum icon size is 250 x 250 pixels, but the recommended icon size is 32 x 32 pixels.
 
-7.  On the **Summary** page, verify the software information, and then click **Upload**. Click **Close** to exit the wizard.
+7.  On the **Summary** page, verify the software information, and then choose **Upload**. Choose **Close** to exit the wizard.
 
-8.  In the [Intune administration console](https://manage.microsoft.com/), click **Apps** &gt; **Apps** &gt; **Skype** &gt; **Manage Deployment**.
+8.  In the [Intune administration console](https://manage.microsoft.com/), choose **Apps** &gt; **Apps** &gt; **Skype** &gt; **Manage Deployment**.
 
-9. On the **Select Groups** page, select **My Trial Users** to deploy the software to that user group, and then click **Add** &gt; **Next**.
+9. On the **Select Groups** page, select **My Trial Users** to deploy the software to that user group, and then choose **Add** &gt; **Next**.
 
 10. On the **Deployment Action** page, select **Available Install** from the **Approval** column for your group.
 
-11. Click **Finish**.
+11. Choose **Finish**.
 
 The Skype app is now available to install on mobile devices from the Company Portal, but first you need to install Intune software on PCs and mobile devices.
 

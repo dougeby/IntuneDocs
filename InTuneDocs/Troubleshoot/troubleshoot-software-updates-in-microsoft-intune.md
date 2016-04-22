@@ -1,13 +1,30 @@
 ---
-title: Troubleshoot software updates in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
+# required metadata
+
+title: Troubleshoot software updates in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service:
+ms.technology:
+ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Troubleshoot software updates in Microsoft Intune
 Use the information in this section to help you solve software update problems in Microsoft intune.
 
