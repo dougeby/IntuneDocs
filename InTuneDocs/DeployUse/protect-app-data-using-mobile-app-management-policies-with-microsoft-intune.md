@@ -30,7 +30,7 @@ ms.suite: ems
 ## How you can protect app data
 Your employees use mobile devices for both personal and work tasks.  While making sure your employees can be productive, you also want to prevent data loss, intentional and unintentional.  In addition, you want to have the ability to protect company data accessed using devices even in the case where they are not managed by you.
 
-You can use Intune mobile app management (MAM) policies to help protect your company’s data. Because Intune MAM policies can be used independent of any mobile-device management (MDM) solution, you can use it to protect your company’s data with or without enrolling devices in a device management solution. By simply implementing **app-level policies**, you can restrict access to company resources and keep data within the purview of your IT department.
+You can use Intune mobile app management (MAM) policies to help protect your company’s data. Because Intune MAM policies can be used independent of any mobile-device management (MDM) solution, you can use it to protect your company’s data with or without enrolling devices in a device management solution. By implementing **app-level policies**, you can restrict access to company resources and keep data within the purview of your IT department.
 
 MAM policies support apps running on:
 
@@ -68,13 +68,13 @@ There are additional benefits to using MDM with MAM  policies, and companies can
 
 ####  Apps without MAM policies:
 
-![](../media/Apps_without_MAM_policies.png)
+![Image that shows data can move freely between apps when there are no MAM policies in place](../media/Apps_without_MAM_policies.png)
 
 When apps are used without restrictions, company and personal data can get intermingled.  Company data could end up in locations like personal storage or transferred to apps outside of your  purview,  resulting in data loss. The arrows in the diagram show unrestricted data movement between apps (corporate and personal) and to storage locations.
 
 ### Data protection with MAM policies:
 
-![](../media/Apps_with_mobile_app_policies.png)
+![Image that shows how company data is protect when MAM policies are applied ](../media/Apps_with_mobile_app_policies.png)
 
 You can use MAM policies to prevent company data from saving to the local storage of the device, and restrict data movement to other apps that are not protected by MAM policies. MAM policy settings include:
 - Data relocation policies like
@@ -83,7 +83,7 @@ You can use MAM policies to prevent company data from saving to the local storag
 
 ### Data protection with MAM policies on devices managed by a MDM solution:
 
-![](../media/MAM_BYOD_November.png)
+![Image that shows how MAM policies work on BYOD devices](../media/MAM_BYOD_November.png)
 
 **For devices enrolled in an MDM solution**-
 
@@ -108,14 +108,14 @@ The MDM solution:
 
 ### Data protection with MAM policies for devices without enrollment
 
-![](../media/MAM_ManagedDevices_November.png)
+![Image that shows how MAM policies work on managed devices](../media/MAM_ManagedDevices_November.png)
 
 The diagram above illustrates how the data protection policies work at the app level without MDM.
 
 For BYOD devices not enrolled in any MDM solution, MAM policies can help protect company data at the app level.
 However, there are some limitations to be aware of, like:
 
--   You cannot deploy apps to the device.  The end-user has to get the apps from the store.
+-   You cannot deploy apps to the device.  The end user has to get the apps from the store.
 
 -   You cannot provision certificate profiles on these devices.
 
@@ -126,7 +126,7 @@ However, there are some limitations to be aware of, like:
 
 Apps that support multi-identity gives you the ability to use different accounts - work and personal, to access the same apps while MAM policies are applied on when the apps are used in the work context.  
 
-For example, when the end-user launches the OneDrive app using their work account, they cannot move the files to a personal storage location. However, when the end-user uses OneDrive with their personal account, they can copy and move data from their personal OneDrive without restrictions.  
+For example, when the end user launches the OneDrive app using their work account, they cannot move the files to a personal storage location. However, when the end user uses OneDrive with their personal account, they can copy and move data from their personal OneDrive without restrictions.  
 
 For a detailed explanation of the experience of using apps that are associated with MAM policies, and how apps with Multi-identity support enable applying MAM policies only in work context, read [using apps with multi-identity support](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)
 

@@ -25,8 +25,8 @@ ms.suite: ems
 
 ---
 
-# Set up device management
-With Intune, you can enable BYOD ("bring your own device") for Windows PC device enrollment to give access to company email and apps. Used with Azure Active Directory, this also provides a fast, no-touch way to bring new Windows 10 devices into management and gain access to company resources without having to reimage the computer. Once enrolled, users can log in and their devices can be targeted with policy, apps, and settings using the Intune administration console. You may also want to [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) or [manage computers with Intune client software](http://technet.microsoft.com/library/dn646959.aspx) using the Intune client.
+# Set up Windows device management
+With Intune, you can enable BYOD ("bring your own device") for Windows PC device enrollment to give access to company email and apps. Used with Azure Active Directory, this also provides a fast, no-touch way to bring new Windows 10 devices into management and gain access to company resources without having to reimage the computer. Once enrolled, users can log in and their devices can be targeted with policy, apps, and settings using the Intune administration console. You may also want to [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) or [manage computers with Intune client software](manage-windows-pcs-with-microsoft-intune.md) using the Intune client.
 
 Creating a DNS CNAME helps users connect and enroll in Intune without entering a server name.
 
