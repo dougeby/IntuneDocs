@@ -37,7 +37,7 @@ By default, when you use the onmicrosoft domain, each user you import receives t
 
 To use a domain name that you own rather than the one that you were given at sign-up, you can add the domain name to Azure Active Directory. After you add the domain, and it has been verified that you own it, you can create accounts and groups that include the domain name by changing DNS resource records at your DNS hosting provider. To simplify management of user accounts when you plan to use a custom domain, [configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md) to your subscription before you begin to synchronize users from your local Active Directory.
 
-Configuring domain names and DNS resource records for Intune is the same as for other Azure Active Directory tenants. See [Add and verify a custom domain name in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-add-verify-general/) for instructions.
+Configuring domain names and DNS resource records for Intune is the same as for other Azure Active Directory tenants. See [Add your custom domain name to simplify sign-in using Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/) for instructions.
 
 ### See also
 [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)

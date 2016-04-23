@@ -32,7 +32,6 @@ If your company or school uses Microsoft Intune, you can enroll your iOS device 
 
 If you're trying to enroll a Mac OS X device, see [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
 
-To see instructions with screenshots, see [Intune End-user enrollment instructions](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a).
 
 **To enroll your iOS device:**
 
