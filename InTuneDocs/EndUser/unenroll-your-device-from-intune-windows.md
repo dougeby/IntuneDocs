@@ -33,8 +33,8 @@ If you enrolled in Intune, but no longer want to use your Windows device for wor
 To unenroll your device, use the steps that match the device you're using:
 
 -	[Unenroll your Windows 10 device](#unenroll-your-windows-10-device)
--	[Unenroll your Windows 8.1 computer](#unenroll-your-windows-8\.1-computer)
--	[Unenroll your Windows Phone 8.1 device](#unenroll-your-windows-phone-8\.1-device)
+-	[Unenroll your Windows 8.1 computer](#unenroll-your-windows-8-1-computer)
+-	[Unenroll your Windows Phone 8.1 device](#unenroll-your-windows-phone-8-1-device)
 
 ## Unenroll your Windows 10 device
 

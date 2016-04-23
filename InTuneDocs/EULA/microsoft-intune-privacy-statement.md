@@ -26,7 +26,6 @@ ms.suite: ems
 ---
 
 # Microsoft Intune Privacy Statement
-For the latest [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] Privacy Statement, see [this page](http://www.microsoft.com/privacystatement/WindowsIntune/Default.aspx).
 
 Microsoft is committed to protecting your privacy. This privacy statement applies to the data collected by Microsoft through [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] (the “Services”); it does not apply to other online or offline Microsoft sites, products, or services.
 
@@ -104,7 +103,7 @@ IMPORTANT NOTE: This Privacy Statement is provided to Microsoft’s Customers.  
 
     -   In some cases, previously installed anti-malware may be removed.
 
-    -   IT Administrators are granted certain control and access rights to Managed Computers and may apply policies to manage certain behaviors of these Computers. For more information, please refer to “[ HYPERLINK "http://onlinehelp.microsoft.com/windowsintune/hh127682.aspx" Microsoft Intune Agent Policy Reference](http://go.microsoft.com/fwlink/?LinkID=265298).
+    -   IT Administrators are granted certain control and access rights to Managed Computers and may apply policies to manage certain behaviors of these Computers. For more information, please refer to “[http://onlinehelp.microsoft.com/windowsintune/hh127682.aspx Microsoft Intune Agent Policy Reference](http://go.microsoft.com/fwlink/?LinkID=265298).
 
     -   Any software installed on a Managed Computer may be inventoried, regardless of when that software is installed. This may include Software Titles of a personal nature.
 
@@ -150,7 +149,7 @@ Data may be transferred to and stored and processed in the United States or any 
 We may use aggregated statistical data, trends and usage information derived from your use of the Services for the purpose of providing, operating, maintaining or improving the Services as well as any Microsoft products and services used to deliver the Services.
 
 ### Support Services
-Microsoft’s support for the Services is subject to the privacy statement set forth at [http://privacy.microsoft.com/support.mspx](http://privacy.microsoft.com/support.mspx).
+Microsoft’s support for the Services is subject to the privacy statement.
 
 ### Authentication Services
 You may configure a work or school account to allow you and end users to authenticate to the Services, as well as other Microsoft or third party services or web properties. Use of those other services or web properties is subject to the privacy statement for those other services and web properties.
