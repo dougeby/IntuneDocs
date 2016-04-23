@@ -32,18 +32,18 @@ Before you set up Microsoft Intune, review this topic and other requirements lis
 To administer Intune, you'll use:
 - Two types of administrator accounts
 - User accounts with additional permissions
-- Two administration consoles to grant your administrators access to the things they should manage.
+- Two, web-based administration consoles/portals to grant your administrators access to the things they should manage.
 
 The following sections explain these accounts and portals.
 
-## Intune administrator accounts and special permissions
+## Administrator accounts and user accounts with special permissions
 
 Below are the accounts and permissions that you'll use for Intune.
 
 ### Tenant administrator
 |Permission levels|More information|
 |--------------------------|-------------------------|
-|Tenant administrators are assigned one administrator role, which defines the administrative scope for that user and the tasks they can manage.<br /><br />Administrator roles are common between the different Microsoft cloud services, although some services might not support some roles.<br /><br /> Microsoft Intune uses the following roles:<br /><br />- Global administrator<br />- Billing administrator<br />- Password administrator<br />- Service support administrator<br />- User management administrator|By default, the account you use to create your Microsoft Intune subscription is a tenant administrator with the global administrator role.<br /></br>  As a tenant administrator, you use the [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] to manage your subscription for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and assign tenant administrators from  the [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />Use a tenant administrator with the global administration role to access the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] to assign your first service administrator. As a best practice, do not use a tenant administrator for day-to-day management tasks. A tenant administrator does not require a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to access the [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />The tenant administrator is a common concept between Microsoft cloud services. When you subscribe to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], your service is a [tenant of Microsoft Azure AD](http://technet.microsoft.com/library/jj573650.aspx).|
+|Tenant administrators are assigned one administrator role, which defines the administrative scope for that user and the tasks they can manage.<br /><br />Administrator roles are common between the different Microsoft cloud services, although some services might not support some roles.<br /><br /> Microsoft Intune uses the following roles:<br /><br />- Global administrator<br />- Billing administrator<br />- Password administrator<br />- Service support administrator<br />- User management administrator|By default, the account you use to create your Microsoft Intune subscription is a tenant administrator with the global administrator role.<br /></br>  As a tenant administrator, you use the [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] to manage your subscription for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and assign tenant administrators from  the [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />Use a tenant administrator with the global administration role to access the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] to assign your first service administrator. As a best practice, do not use a tenant administrator for day-to-day management tasks. A tenant administrator does not require a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to access the [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />The tenant administrator is a common concept between Microsoft cloud services. When you subscribe to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], your service is a tenant of Microsoft Azure AD. See the Azure AD tenant section in [What is an Azure AD directory?](http://technet.microsoft.com/library/jj573650.aspx).|
 
 
 ### Service administrator

@@ -32,9 +32,9 @@ If you get an error while you’re using the Company Portal app on your iOS devi
 
 -   By tapping **Report** on error alert messages.
 
--   By tapping **Send Diagnostic Report** on the About screen of the Company Portal app
+-   By tapping **Send Diagnostic Report** on the **About** screen of the Company Portal app
 
--   By shaking your device while you’re in the Company Portal app, and then tapping **Email** when the Diagnostics alert appears. If the alert doesn’t appear when you shake the device, open **Settings** &gt; **Company Portal**, and make sure that the **Shake Gesture** option is on.
+-   By shaking your device while you’re in the Company Portal app, and then tapping **Email** when the diagnostics alert appears. If the alert doesn’t appear when you shake the device, open **Settings** &gt; **Company Portal**, and make sure that the **Shake Gesture** option is on.
 
 
 ### See also
