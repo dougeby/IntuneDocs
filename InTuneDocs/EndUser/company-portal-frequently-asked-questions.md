@@ -28,35 +28,17 @@ ms.suite: ems
 # Company Portal Frequently Asked Questions
 
 
--   [What is the Company Portal?](#what-is-the-company-portal)
 
--   [What can I do with the Company Portal?](#what-can-i-do-with-the-company-portal)
-
--   [What happens when I add a computer or device to the Company Portal?](#what-happens-when-i-add-a-computer-or-device-to-the-company-portal)
-
--   [What kind of computers or devices can I add to the Company Portal?](#what-kind-of-computers-or-devices-can-i-add-to-the-company-portal)
-
--	[Company Portal app not supported](#company-portal-app-not-supported)
-
--   [Can I remove a computer or device from the Company Portal?](#can-i-remove-a-computer-or-device-from-the-company-portal)
-
--   [I do not see all of my devices in the Company Portal?](#i-do-not-see-all-of-my-devices-in-the-company-portal)
-
--   [I need to install a new version of the Company Portal](#i-need-to-install-a-new-version-of-the-company-portal)
-
--   [I receive an error that my computer is already enrolled](#i-receive-an-error-that-my-computer-is-already-enrolled)
-
-
-## What is the Company Portal
+## What is the Company Portal?
 The Company Portal is your company’s interface that lets you manage your work computers and devices, or manage your personal computers or devices that you choose to use at work.  The Company Portal can be a website that you go to, or can be an app that you install to your device.
 
-## What can I do with the Company Portal
+## What can I do with the Company Portal?
 Once you add your computer or device to the Company Portal, you can browse for company apps to install, manage other devices that you have added, and find contact information for your IT administrator.
 
-## What happens when I add a computer or device to the Company Portal
+## What happens when I add a computer or device to the Company Portal?
 When you add a computer or device to the Company Portal, some software may be installed or an app may be downloaded (depending on the device).  You are also giving your IT administrator permission to manage your device to help protect the company information on the device.  
 
-## What kind of computers or devices can I add to the Company Portal
+## What kind of computers or devices can I add to the Company Portal?
 
 -   Windows 10 Mobile
 
@@ -77,7 +59,7 @@ When you add a computer or device to the Company Portal, some software may be in
 ## Company Portal app not supported
 This version of the Company Portal can no longer be used. Install the **Company Portal** app from the Windows Store to continue.
 
-## Can I remove a computer or device from the Company Portal
+## Can I remove a computer or device from the Company Portal?
 Yes, you can either remove or reset a computer or device from the Company Portal.  There is a difference between **remove** and **reset**:
 
 -   When you remove a computer or device, you won’t be able to access the Company Portal from that device anymore, and some company data may be removed from your device.

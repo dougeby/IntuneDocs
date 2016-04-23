@@ -29,6 +29,22 @@ ms.suite: ems
 Microsoft Intune is an integrated, cloud-based client management solution that provides tools, reports, and upgrade licenses to the latest version of Windows, and helps keep your computers up-to-date and secure. In addition, Intune lets you manage mobile devices on the network either through Exchange ActiveSync or directly through Intune. The following release notes describe important information and known issues in Microsoft Intune.
 
 
+## Android users can’t send email when conditional access for Exchange Online is implemented
+
+Users running Samsung Android 5.1.1 and above on their devices are unable to send email when conditional access for Exchange Online has been configured. Samsung acknowledges that the issue is in their built-in mail client in Android 5.1.1 and above, and is currently investigating a fix.
+
+**Workaround 1:** Advise end users to use the Outlook app for Android.
+
+**Workaround 2:** To enable impacted users to send email, you can follow these steps:
+
+1. Put the impacted user into a security group in the “exempted groups” section of the conditional access policy for Exchange Online.
+2. Allow the user to temporarily sync email on the built-in email client. 
+3. Remove the impacted user from the exempted group, and confirm that user can now send email.
+
+Microsoft will continue to work closely with Samsung on a fix or additional workarounds.
+
+
+
 ## Changing resource access profiles between groups for iOS and Android may fail
 **Issue:** When you change email or Simple Certificate Enrollment Protocol (SCEP) resource access profiles between groups, the profiles may conflict and fail. For example, let’s say that you have an existing email profile pointing to on-premise Exchange server, targeted to Group A, and then you create a new email profile that points to Exchange online, targeted to Group B. When you move users from Group A to Group B, devices will keep the on-premise Exchange email profile and try to install the Exchange online email profile that is targeted to Group B.
 
