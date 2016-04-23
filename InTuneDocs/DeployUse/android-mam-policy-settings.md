@@ -26,6 +26,8 @@ ms.suite: ems
 ---
 
 # Android mobile app management policy settings in Microsoft Intune
+The policy settings described below can be [configured](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for a MAM policy on the **Settings** blade on the Azure portal.
+There are two categories of policy settings, Data relocation and Access settings:
 
 ##  Data relocation settings
 The term **Policy managed apps** is used to refer to apps that are configured with MAM policies.
@@ -33,15 +35,15 @@ The term **Policy managed apps** is used to refer to apps that are configured wi
 
   **Default value = Yes**
 - **Allow app to transfer data to other apps:** Select one of the options to indicate the apps that can receive company data from policy managed apps:
-  -   *Policy managed apps*: Allow transfer to only apps that have the MAM policy
-  -   *All apps*: Allow transfer to any app
-  -   *None*: Do not allow data transfer to any app
+  -   **Policy managed apps**: Allow transfer to only apps that have the MAM policy
+  -   **All apps**: Allow transfer to any app
+  -   **None**: Do not allow data transfer to any app
 
   **Default value = Policy managed apps**
 - **Allow app to receive data from other apps:** Specify apps that are allowed to transfer data to the policy managed apps:
-  -   *Policy managed apps*: Allow data transfers only from other policy managed apps
-  -   *All apps*: Allow data transfer from any app
-  -   *None*: Do not allow data transfer from any app
+  -   **Policy managed apps**: Allow data transfers only from other policy managed apps
+  -   **All apps**: Allow data transfer from any app
+  -   **None**: Do not allow data transfer from any app
 
       **Default value = All apps**
 
@@ -49,10 +51,10 @@ The term **Policy managed apps** is used to refer to apps that are configured wi
 
   **Default value = Yes**
 - **Restrict cut, copy and paste with other apps:** Specify when  cut, copy, and paste operations should be restricted. Choose from:
-  -   *Blocked:* Do not allow cut, copy, and paste operations between policy managed apps.
-  -   *Policy Managed Apps*: Only allow cut, copy, and paste operations between policy managed apps.
-  -   *Policy Managed Apps with paste In*: Allow cut or copy between policy managed apps. Allow cut or copied data from any app to be pasted into this app.
-  -   *Any App*: No restrictions for  cut, copy, and paste operations between any apps.
+  -   **Blocked:** Do not allow cut, copy, and paste operations between policy managed apps.
+  -   **Policy Managed Apps**: Only allow cut, copy, and paste operations between policy managed apps.
+  -   **Policy Managed Apps with paste In**: Allow cut or copy between policy managed apps. Allow cut or copied data from any app to be pasted into this app.
+  -   **Any App**: No restrictions for  cut, copy, and paste operations between any apps.
 
     **Default value = Policy managed apps with paste in**
 -   **Restrict web content to display in the Managed Browser:** When this setting is enabled, any links in the app will be opened in the Managed Browser.
@@ -86,9 +88,10 @@ The term **Policy managed apps** is used to refer to apps that are configured wi
 
   **Default value = Yes**
 - **Recheck the access requirements after (minutes)**-   **Timeout:** Time (in minutes) before the access requirements for the app are rechecked.
-  -   *Offline grace period:* If the device is offline, specify the time (in minutes) before the access requirements for the app are rechecked.
+  -   **Offline grace period:** If the device is offline, specify the time (in minutes) before the access requirements for the app are rechecked.
 
-    *Default values = 30 minute timeout, and 720 minute offline grace period*
+    **Default values = 30 minute timeout, and 720 minute offline grace period**
+
 -   **Offline interval before app data is wiped (days):** You can choose to wipe the company data if a device has been offline for a certain period.  Specify the number of days a device can be offline before the company data is removed from the device. **Tip:** Entering a value of  0 will turn this setting off.
 
   **Default value = 90 days**
