@@ -31,7 +31,7 @@ After you have configured a MAM policy and applied it to the users, you can moni
 On the **Intune mobile application management** blade you can see a summary of the compliance status as described below:
 
 
-![](../media/mam-azure-portal-user-status-summary.png)
+![Summary tile on the Intue mobile application management blade](../media/mam-azure-portal-user-status-summary.png)
 
 -   **USERS:** The total number of users in your company who are using the apps that are associated with the policy.
 
@@ -65,7 +65,7 @@ To see the reporting for a user, follow these steps:
 
 ![select user option on the App reporting blade](../media/mam-azure-portal-app-reporting-select-user.png)
 
-**Step 3:** After selecting the user from the list, you should see the details of the compliance status for that user.
+**Step 3:** After selecting the user from the list, you will see the details of the compliance status for that user.
 
 ![App reporting details](../media/mam-azure-portal-app-reporting-by-user.png)
 ### Flagged users
@@ -74,4 +74,4 @@ The detailed view displays the error message, the app that was accessed when the
 ### See also
 [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-[End-user experience for MAM enabled app](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+[End user experience for MAM enabled app](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
