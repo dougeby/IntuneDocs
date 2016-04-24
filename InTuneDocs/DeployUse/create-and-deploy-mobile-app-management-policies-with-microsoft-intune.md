@@ -62,7 +62,7 @@ Before creating a MAM policy, review the [pre-requisites and support](get-ready-
 
 4.  Type  a name for the policy, add  a brief description, and select the platform type to create a policy for iOS or Android.  You can create more than one policy for each platform.
 
-    ![Screeshot of the Add a policy blade](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
+    ![Screesnhot of the Add a policy blade](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
 5.  Choose **Apps** to open the **Apps blade** where a list of available apps is displayed. You can select one or more apps from the list that you want to associate with the policy that you are creating. One you have selected the apps, choose the **Select** button at the bottom of the **Apps** blade to save your selection.
 
@@ -100,7 +100,7 @@ When you finish creating a policy as described in the previous procedure, it is 
 
 1.  In the **Policy** blade, choose  **User groups**, which opens the **User groups** blade. Choose **Add user group** in the **User groups** blade to open the **Add user group** blade.
 
-    ![Screenshot of hte User groups blade with the Add user group menu option highlighted](../media/AppManagement/AzurePortal_MAM_AddUserstoPolicy.png)
+    ![Screenshot of the User groups blade with the Add user group menu option highlighted](../media/AppManagement/AzurePortal_MAM_AddUserstoPolicy.png)
 
 2.  A list of user groups is displayed on the **Add user group** blade. This is a list of all the security groups in your **Azure Active Directory**.  You can select the user groups you want this policy to apply to and choose **Select**. Choosing **Select**, deploys the policy to users.
 
@@ -153,10 +153,10 @@ To see the effect of the changes immediately the end user will have to log out o
 
 3.  Change the settings, and choose the **Save icon** to save your changes.
 
-    ![Screeshot of the Policy settings blade showing the save menu option at the top](../media/AppManagement/AzurePortal_MAM_ChangePolicy_ChangeSettings.png)
+    ![Screenshot of the Policy settings blade showing the save menu option at the top](../media/AppManagement/AzurePortal_MAM_ChangePolicy_ChangeSettings.png)
 
 ## Policy settings
-To see a full list of the policy setting for iOS and Andriod, select one of the following:
+To see a full list of the policy setting for iOS and Android, select one of the following:
 
 > [!div class="op_single_selector"]
   - [iOS policies](ios-mam-policy-settings.md)
