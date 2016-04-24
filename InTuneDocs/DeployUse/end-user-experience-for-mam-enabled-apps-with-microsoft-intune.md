@@ -104,9 +104,9 @@ Microsoft Word is used as an example for this scenario.
 
 5.  Open the document you saved to your work location.  Copy the text, open your personal **Facebook** account  and try to paste the copied text.  You should not be able paste the content into the new Facebook post. The paste option is not greyed out, but nothing happens when you press **Paste**.
 
-    ![Screeshot showing the cut, copy, and paste selections](../media/AppManagement/iOS_WordCopyCompany.png)
+    ![Screenshot showing the cut, copy, and paste selections](../media/AppManagement/iOS_WordCopyCompany.png)
 
-    ![Screenshot showing no pasted data in the facebook post](../media/AppManagement/iOS_FacebookPasteCompany.png)
+    ![Screenshot showing no pasted data in the Facebook post](../media/AppManagement/iOS_FacebookPasteCompany.png)
 
 6.  Now repeat steps 2 and 3 to create another new document, type a sentence of your choice, and instead of saving it to your work, save it to your personal location, like **OneDrive - personal**.
 
@@ -114,7 +114,7 @@ Microsoft Word is used as an example for this scenario.
 
 7.  Open the personal saved document.  Copy the text, open the **Facebook** app and try to paste the copied text. You see that you are able to paste the content to a Facebook post.
 
-    ![Content showing as pasted in the facebook post](../media/AppManagement/iOS_FacebookPastePersonal.png)
+    ![Content showing as pasted in the Facebook post](../media/AppManagement/iOS_FacebookPastePersonal.png)
 
 <!---##  Viewing media files with the Rights Management sharing app
 To view AV, PDF and image files, on Android devices, you can use the [Microsoft Rights Management (RMS) sharing app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
@@ -144,7 +144,7 @@ If you are using an iOS device, when you try to add a second work account on the
 ####  Android
 If you are using an Android device, You may see a blocking message with instructions to remove the existing account and add a new one.  On Android devices, to remove the existing account, go to **Settings &gt;General &gt; Application Manager &gt;Company Portal and select "Clear Data"**.
 
-![Screenshot of hte error message and instructions to remove the account](../media/AppManagement/Android_SwitchUser.png)
+![Screenshot of the error message and instructions to remove the account](../media/AppManagement/Android_SwitchUser.png)
 
 
 

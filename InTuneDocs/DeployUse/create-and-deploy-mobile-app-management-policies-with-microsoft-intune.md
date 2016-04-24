@@ -62,7 +62,7 @@ Before creating a MAM policy, review the [pre-requisites and support](get-ready-
 
 4.  Type  a name for the policy, add  a brief description, and select the platform type to create a policy for iOS or Android.  You can create more than one policy for each platform.
 
-    ![Screesnhot of the Add a policy blade](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
+    ![Screenshot of the Add a policy blade](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
 5.  Choose **Apps** to open the **Apps blade** where a list of available apps is displayed. You can select one or more apps from the list that you want to associate with the policy that you are creating. One you have selected the apps, choose the **Select** button at the bottom of the **Apps** blade to save your selection.
 
@@ -112,7 +112,7 @@ Only users with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses 
 
 If you are using Intune with Configuration Manager to manage your iOS and Android devices, the policy is only applied to the users directly in the group that you selected.  Members of child groups  nested within the group you selected will not be affected.
 
-The end users can download the apps from the App store or Google Play. For a detailed walkthrough of how MAM protects company data on the device see [end user experience with MAM enabled apps](end user-experience-for-mam-enabled-apps-with-microsoft-intune.md) topic.
+The end users can download the apps from the App store or Google Play. For a detailed walkthrough of how MAM protects company data on the device see [end user experience with MAM enabled apps](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md) topic.
 
 ##  Change existing policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies,  users who are already signed  in to the apps won’t see the changes for an 8-hour period.
