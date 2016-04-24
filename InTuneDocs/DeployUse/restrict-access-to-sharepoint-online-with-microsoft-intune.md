@@ -34,7 +34,7 @@ To learn more about how conditional access works, read the [restrict access to e
 
 When a user attempts to connect to a file using a supported app such as OneDrive on their device, the following evaluation occurs:
 
-![Diagram to show the decision ](../media/ConditionalAccess8-6.png)
+![Diagram to show the decision points that determine whether a device is allowed access to SharePoint is blocked ](../media/ConditionalAccess8-6.png)
 
 >[!IMPORTANT]
 >Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
