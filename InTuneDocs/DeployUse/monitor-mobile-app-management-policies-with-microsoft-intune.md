@@ -31,7 +31,7 @@ After you have configured a MAM policy and applied it to the users, you can moni
 On the **Intune mobile application management** blade you can see a summary of the compliance status as described below:
 
 
-![Summary tile on the Intue mobile application management blade](../media/mam-azure-portal-user-status-summary.png)
+![Summary tile on the Intune mobile application management blade](../media/mam-azure-portal-user-status-summary.png)
 
 -   **USERS:** The total number of users in your company who are using the apps that are associated with the policy.
 

@@ -48,7 +48,7 @@ If you are currently using the **Intune admin console** to manage your devices, 
 
     ![Screenshot of the Azure portal dashboard](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  From the **Browse** menu, find **Intune**.![Screenshot of hte Browse menu with Intune highlighted](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
+3.  From the **Browse** menu, find **Intune**.![Screenshot of the Browse menu with Intune highlighted](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
 4.  Click **Intune > Intune mobile application management > Settings**.
 

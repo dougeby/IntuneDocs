@@ -63,7 +63,7 @@ When conditional access policies are configured and targeted to a user, before a
 
 The following diagram illustrates the  flow that is used by conditional access policies for Exchange on-premises to evaluate whether to allow or block devices.
 
-![](../media/ConditionalAccess8-2.png)
+![Diagram that shows the decision points that determine if a device is allowed access to Exchange on-premises or blocked](../media/ConditionalAccess8-2.png)
 If a conditional access policy is not met, the user is presented with one of the following messages when they log in:
 
 - If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal  app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
@@ -87,7 +87,7 @@ The **Mail** application on Windows 8 and later (when enrolled with [!INCLUDE[wi
 ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
 2.  Configure the policy with the settings you require:
-![IntuneSA5bExchangeOnPremPolicy](../media/IntuneSA5bExchangeOnPremPolicy.png)
+![Screenshot of the Exchange on-premises policy page](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
   - **Block email apps from accessing Exchange on-premises if the device is noncompliant or not enrolled to Microsoft Intune:** When you select this option, devices that are not managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or not compliant with a compliance policy are blocked from accessing Exchange services.
 
