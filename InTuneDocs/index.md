@@ -37,15 +37,15 @@ layout: HubPage
       <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/understand-explore/introduction-to-microsoft-intune">Introduction to Microsoft Intune</a></li>
-          <li><a href="/understand-explore/common-ways-to-use-intune">Common scenarios that rely on Intune</a></li>
-          <li><a href="/get-started/start-with-a-paid-subscription-to-microsoft-intune">Start with a paid subscription</a></li>
+          <li><a href="./understand-explore/introduction-to-microsoft-intune">Introduction to Microsoft Intune</a></li>
+          <li><a href="./understand-explore/common-ways-to-use-intune">Common scenarios that rely on Intune</a></li>
+          <li><a href="./get-started/start-with-a-paid-subscription-to-microsoft-intune">Start with a paid subscription</a></li>
 
         </ul>
         <ul class="column column-half">
-          <li><a href="/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Overview of device and app lifecycles</a></li>
-          <li><a href="/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Protect app data</a></li>
-          <li><a  href="/plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">What to tell your end users about Intune</a></li>
+          <li><a href="./deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Overview of device and app lifecycles</a></li>
+          <li><a href="./deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Protect app data</a></li>
+          <li><a  href="./plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">What to tell your end users about Intune</a></li>
         </ul>
       </div>
     </section>
@@ -71,25 +71,25 @@ layout: HubPage
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/understand-explore/introduction-to-microsoft-intune">
+                  <a href="intune/understand-explore/introduction-to-microsoft-intune">
                     <h3>Introduction to Intune</h3>
                     <p>Learn about how Intune provides device, app, and data management capabilities for mobile devices (iOS devices, Android devices, Windows phones) and Windows PCs.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
+                  <a href="intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
                     <h3>Start a 30-day trial</h3>
                     <p>Use the trial guide to walk through the steps to get your trial set up with up to 100 users and devices.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/understand-explore/common-ways-to-use-intune">
+                  <a href="intune/understand-explore/common-ways-to-use-intune">
                     <h3>Common scenarios</h3>
                     <p>Consider how Intune is commonly used to solve real-world business problems.</p>
                   </a>
                 </li>
               </ul>
-            <a href="/understand-explore/introduction-to-microsoft-intune" class="see-more">See More</a>
+            <a href="intune/understand-explore/introduction-to-microsoft-intune" class="see-more">See More</a>
             </section>
           </li>
 
@@ -109,25 +109,25 @@ layout: HubPage
             <section class="journey-step-elements content">
               <ul class="row">
               <li class="column-third">
-                <a href="/get-started/what-to-know-before-you-start-microsoft-intune">
+                <a href="intune/get-started/what-to-know-before-you-start-microsoft-intune">
                   <h3>What to know before you start</h3>
                   <p>Quickly familiarize yourself with the baseline requirements for any Intune deployment.</p>
                 </a>
               </li>
               <li class="column-third">
-                <a href="/get-started/start-with-a-paid-subscription-to-microsoft-intune">
+                <a href="intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
                   <h3>Get started with a paid subscription</h3>
                   <p>Building on the 30-day trial guide, this topic walks you through Azure Active Directory synchronization, domain and DNS considerations, and other Intune customizations.</p>
                 </a>
               </li>
               <li class="column-third">
-                <a href="/get-started/rollout-phases-for-microsoft-intune-deployment">
+                <a href="intune/get-started/rollout-phases-for-microsoft-intune-deployment">
                   <h3>Rollout phases</h3>
                   <p>Define your Intune goals, architecture, pilot, and production rollout plans.</p>
                 </a>
               </li>
             </ul>
-          <a href="/get-started/what-to-know-before-you-start-microsoft-intune" class="see-more">See More</a>
+          <a href="intune/get-started/what-to-know-before-you-start-microsoft-intune" class="see-more">See More</a>
           </li>
 
 
@@ -135,7 +135,7 @@ layout: HubPage
 
           <li class="journey-step">
             <header class="journey-step-header expander row">
-              <a href="./plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">
+              <a href="intune/plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">3</span>
                   <p>Plan &amp; design</p>
@@ -147,21 +147,21 @@ layout: HubPage
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">
+                  <a href="intune/plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">
                     <h3>What to tell your end-users about Intune</h3>
                     <p>Help your users understand the how to enroll their devices and tasks they can perform post-enrollment.</p>
                     <h4>Read</h4>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./plan-design/plan-for-app-deployment-in-microsoft-intune">
+                  <a href="intune/plan-design/plan-for-app-deployment-in-microsoft-intune">
                     <h3>Plan for app deployment</h3>
                     <p>Understand the requirements for deploying different types of apps and plan for the app deployment process.</p>
                     <h4>Read</h4>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./plan-design/migrating-to-intune">
+                  <a href="intune/plan-design/migrating-to-intune">
                     <h3>Migrating to Intune</h3>
                     <p>Learn how to migrate management from a different MDM provider to Intune.</p>
                     <h4>Read</h4>
@@ -187,25 +187,25 @@ layout: HubPage
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
+                  <a href="intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
                     <h3>Overview of device and app lifecycles</h3>
                     <p>Learn about the typical phases involved with managing devices and apps using Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/deploy-use/enroll-devices-in-microsoft-intune">
+                  <a href="intune/deploy-use/enroll-devices-in-microsoft-intune">
                     <h3>Enroll devices</h3>
                     <p>Learn the various ways to enroll mobile devices and Windows PCs into management with Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/deploy-use/protect-apps-and-data-with-microsoft-intune">
+                  <a href="intune/deploy-use/protect-apps-and-data-with-microsoft-intune">
                     <h3>Protect apps and data</h3>
                     <p>Protect your apps against data loss and other threats.</p>
                   </a>
                 </li>
               </ul>
-              <a href="/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune" class="see-more">See More</a>
+              <a href="intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune" class="see-more">See More</a>
           </li>
 
 
@@ -223,26 +223,26 @@ layout: HubPage
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/troubleshoot/how-to-get-support-for-microsoft-intune">
+                  <a href="intune/troubleshoot/how-to-get-support-for-microsoft-intune">
                     <h3>How to get support for Intune</h3>
                     <p>Get familiar with different ways Microsoft provides global technical, pre-sales, and billing support.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/troubleshoot/troubleshoot-device-enrollment-in-intune">
+                  <a href="intune/troubleshoot/troubleshoot-device-enrollment-in-intune">
                     <h3>Troubleshoot device enrollment</h3>
                     <p>Solve problems encountered when enrolling devices.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune">
+                  <a href="intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune">
                     <h3>Troubleshoot app deployment problems in Intune</h3>
                     <p>Solve common app deployment problems.</p>
                   </a>
                 </li>
               </ul>
           </li>
-          <a href="/troubleshoot/how-to-get-support-for-microsoft-intune" class="see-more">See More</a>
+          <a href="intune/troubleshoot/how-to-get-support-for-microsoft-intune" class="see-more">See More</a>
           </section>
         </ul>
       </section>
