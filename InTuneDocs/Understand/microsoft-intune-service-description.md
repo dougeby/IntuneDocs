@@ -31,16 +31,16 @@ Microsoft Intune is a cloud-based service that helps you manage Windows PCs, and
 
 Microsoft offers the Intune Onboarding benefit for eligible services in eligible plans. The Onboarding benefit lets you work remotely with Microsoft specialists to get your Intune environment ready for use. For more information, see [Microsoft Intune Onboarding Benefit Description](http://go.microsoft.com/fwlink/?LinkId=619281).
 
-You can start using Intune with a 30-day free trial that includes 100 user licenses. To start your free trial, [click here to visit the Intune Sign up page](http://aka.ms/TryMSIntune). If your organization has an Enterprise Agreement or equivalent volume licensing agreement, please contact your Microsoft representative to set up your free trial.
+You can start using Intune with a 30-day free trial that includes 100 user licenses. To start your free trial, [click here to visit the Intune Sign up page](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/). If your organization has an Enterprise Agreement or equivalent volume licensing agreement, please contact your Microsoft representative to set up your free trial.
 
 > [!NOTE]
 > If your organization has a Microsoft Online Services work or school account, and you might continue with this Intune subscription in production after the trial period ends, then you should click the **Sign in** option on that page and authenticate by using the Global Administrator account for your organization. This action will ensure that your Intune trial links to your existing work or school account.
 
 For a list of settings that you can configure on mobile devices, see:
 
--   [Mobile device management capabilities in Microsoft Intune](./understand-explore/Mobile-device-management-capabilities-in-Microsoft-Intune.md)
+-   [Mobile device management capabilities in Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md)
 
--   [General settings for Mobile Devices in Configuration Manager](http://msdn.microsoft.com/en-us/library/cb4ee476-cb7d-444e-87af-7bd1c8e0b103)
+-   [General settings for Mobile Devices in Configuration Manager](https://technet.microsoft.com/en-us/library/dn376523.aspx)
 
 For information on System Center 2012 R2 Configuration Manager, see [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).
 
@@ -49,7 +49,7 @@ Because Intune is an online service, Microsoft can update it on a regular basis.
 
 Use the information in this topic to help you understand the frequency of these service updates, and the advance notification we give to you when an update might affect your use of the service.
 
-To learn about changes in the  Intune service, see [What's new in Microsoft Intune](./deploy-use/What-s-new-in-Microsoft-Intune.md). The [Microsoft Intune Blog](http://blogs.technet.com/b/microsoftintune/) also discusses changes in the service, and provides helpful tips to enable you to get the most from  Intune.
+To learn about changes in the  Intune service, see [What's new in Microsoft Intune](/intune/deploy-use/Whats-new-in-microsoft-intune.md). The [Microsoft Intune Blog](http://blogs.technet.com/b/microsoftintune/) also discusses changes in the service, and provides helpful tips to enable you to get the most from  Intune.
 
 Important service updates will also be communicated to you directly from the Intune console in the notice board.
 
@@ -60,7 +60,7 @@ Here are the types of notices Microsoft provides about the Intune service:
 * New, or changed APIs – Notifying you that you need to test to ensure backward compatibility of custom apps
 * Changes to system requirements, for example, the minimum required browser version
 * Any updates that require you to take action to enable the feature or to avoid service interruption to the feature.
--   Microsoft provides information about new features, new functionality, and enhancements to existing features in our monthly service update. Generally, Microsoft rolls out service updates around the middle of each month. Updates are described in  [What's new in Microsoft Intune](./deploy-use/what-s-new-in-Microsoft-Intune.md).
+-   Microsoft provides information about new features, new functionality, and enhancements to existing features in our monthly service update. Generally, Microsoft rolls out service updates around the middle of each month. Updates are described in  [What's new in Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune.md).
 -   In the event of Intune service retirement, you would be notified 12 months in advance.
 
 ## Choose the management solution that’s right for you
@@ -68,19 +68,19 @@ You can configure Intune in a number of ways to manage and help protect your com
 
 -   **Intune stand-alone configuration.** Use the web-based administration console in Intune to manage devices in your organization. Intune can be used without any on-premises IT infrastructure, but if you use Intune with Active Directory Domain Services, you can use domain user accounts that you manage with Domain Services with Intune.
 
--   **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all of your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports very large numbers of mobile devices, servers and computers. For more information, see [How to Manage Mobile Devices by Using Configuration Manager and Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=271118) in the [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).  For more help deciding which approach is right for you, see [Ways to do enterprise mobility](../Topic/Ways-to-do-enterprise-mobility.md)
+-   **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all of your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports very large numbers of mobile devices, servers and computers. For more information, see [How to Manage Mobile Devices by Using Configuration Manager and Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=271118) in the [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).  For more help deciding which approach is right for you, see [Ways to do enterprise mobility](/intune/plan-design/ways-to-do-enterprise-mobility.md)
 
--   Mobile device management provided by Office 365, as described in [Ways to do enterprise mobility](./PlanDesign/Ways-to-do-enterprise-mobility.md)
+-   Mobile device management provided by Office 365, as described in [Ways to do enterprise mobility](/intune/plan-design/ways-to-do-enterprise-mobility.md)
 
 ## Learn more about Intune
 Use these resources to learn more about Intune:
 
 -   The [Microsoft Intune Trust Center](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) provides information about the security, privacy, and compliance practices of Intune, and describes some of Intune's certifications.
 
--   [Mobile device management capabilities in Microsoft Intune](./understand-explore/mobile-device-management-capabilities-in-Microsoft-Intune.md)
+-   [Mobile device management capabilities in Microsoft Intune](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune.md)
 
 ### See also
-[Documentation for Microsoft Intune](../Topic/Documentation-for-Microsoft-Intune.md)
+[Microsoft Intune](https://docs.microsoft.com/intune/)
 [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
-[What's new in Microsoft Intune](./deploy-use/what-s-new-in-Microsoft-Intune.md)
+[What's new in Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune.md)
