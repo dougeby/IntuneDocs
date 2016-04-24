@@ -182,7 +182,7 @@ Use the Microsoft Intune **custom configuration policy** for Windows 10 and Wind
 
 This capability is intended to allow you to deploy Windows 10 settings that are not configurable with an Intune general configuration policy. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-For a list of OMA-URI settings that you can configure on enrolled Windows 10 devices, see [Custom URI settings for Windows 10 devices](custom-uri-settings-for-Windows-10-devices.md).
+For a list of OMA-URI settings that you can configure on enrolled Windows 10 devices, see Custom URI settings for Windows 10 devices later in this topic.
 
 ### General settings
 
@@ -205,7 +205,6 @@ For a list of OMA-URI settings that you can configure on enrolled Windows 10 dev
 ## Custom URI settings for Windows 10 devices
 This topic lists the settings that you can configure for Windows 10 and Windows 10 Mobile devices in a Microsoft Intune **Windows 10 Custom Policy**.
 
-For information about how to create and deploy these policies, see [Windows 10 custom policy settings in Microsoft Intune](Windows-10-custom-policy-settings-in-microsoft-intune.md).
 
 > [!NOTE]
 > In the **Supports** column of the following table, the following values are used:

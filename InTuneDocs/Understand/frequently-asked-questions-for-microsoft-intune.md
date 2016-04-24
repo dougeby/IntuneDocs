@@ -142,15 +142,15 @@ This article answers some frequently asked questions about Intune. If you don't 
         Windows Phone does not require that the AET be present during MDM enrollment, but prior to the November 2014 release, Intune required the AET and a signed ssp.xap because there was no other way to install the AET and ssp.xap except during enrollment.
 
     **How is the AET created for Intune users?**
-        When administrators upload the .pfx file for their Symantec certificate, Intune automatically creates the AET and deploys it to enrolled Windows Phones. It is not necessary for Intune admins to use the AET Generator tool in the Windows Phone SDK.
+  When administrators upload the .pfx file for their Symantec certificate, Intune automatically creates the AET and deploys it to enrolled Windows Phones. It is not necessary for Intune admins to use the AET Generator tool in the Windows Phone SDK.
 
-        > [!IMPORTANT]
+      > [!IMPORTANT]
         > Intune does not support manually creating the AET and deploying it out-of-band.
 
-        **What changes happened to reduce the requirement for a Symantec certificate?**
-        For the November 2014 release, Intune made changes to allow for scenarios where companies do not have a Symantec certificate.
+    **What changes happened to reduce the requirement for a Symantec certificate?**
+       For the November 2014 release, Intune made changes to allow for scenarios where companies do not have a Symantec certificate.
 
-        -   The Company Portal for Windows Phone 8.1 is available to install from the store, so it needn’t be signed with a Symantec certificate and validated against an AET. Instead, the app is validated as part of the store publishing process.
+       -   The Company Portal for Windows Phone 8.1 is available to install from the store, so it needn’t be signed with a Symantec certificate and validated against an AET. Instead, the app is validated as part of the store publishing process.
 
         -   Windows Phone 8.1 devices can enroll with or without an AET on the phone. If an AET is available, it will be installed the first time the device synchronizes with Intune. If there is no AET, the device can still be managed by Intune, and users can install the Company Portal from the store and use most features of the Company Portal without a Symantec certificate to sign apps.
 

@@ -45,7 +45,7 @@ In this procedure, you'll deploy the app to selected devices or users.
 
 In this example, you deployed the app as **Available** to an iOS device.
 The app will be displayed in the company portal on users device from where they can install the app. For example, in this screenshot, the Bing for iOS app was deployed using the **External Link** installation type, with a custom icon, and the option **Display this as a featured app and highlight it in the company portal** was selected. 
-	![iOS available app](./media/Available-install-on-iOS.png)
+	![iOS available app](./media/available-install-on-iOS.png)
 
 If you deployed the app as **Required** to an iOS device, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed using the **Managed iOS app from the app store** installation type. 
 	![iOS required app](./media/iOS-Required-install.PNG)
