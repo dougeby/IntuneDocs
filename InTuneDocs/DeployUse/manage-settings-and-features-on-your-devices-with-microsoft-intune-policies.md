@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage settings and features on your devices with Microsoft Intune | Microsoft Intune
+title: Manage settings and features on your devices with Microsoft Intune policies | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Manage settings and features on your devices with Microsoft Intune
+# Manage settings and features on your devices with Microsoft Intune policies
 Microsoft Intune **policies** are groups of settings that control features on mobile devices and computers. You create policies using templates that contain recommended or customized settings, and then deploy them to device or user groups.
 
 ## What types of policy can you use?
@@ -66,7 +66,7 @@ For a complete list of Intune policies, see [Microsoft Intune policy reference](
 	If you need help with any policy settings, choose your policy type from the following list:
 
 	- [Settings for iOS devices](ios-policy-settings-in-microsoft-intune.md)
-	- [Settings for Android devices](android-policy-settings-in-microsoft-intune)
+	- [Settings for Android devices](android-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows 8 and Windows 8.1 devices](windows-configuration-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows Phone 8.1 devices](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows 10 desktop and mobile devices](windows-10-policy-settings-in-microsoft-intune.md)

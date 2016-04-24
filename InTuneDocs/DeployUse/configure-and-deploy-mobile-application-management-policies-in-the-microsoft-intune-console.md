@@ -37,13 +37,13 @@ Mobile application management policies support:
 > [!TIP]
 > Mobile application management policies support devices that are enrolled with Intune.
 > 
-> If you are looking for information about how to create app management policies for devices that are not managed by Intune, see the [Microsoft Intune application partners page](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+> If you are looking for information about how to create app management policies for devices that are not managed by Intune, see the [Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 Unlike other Intune policies, you do not deploy a mobile application management policy directly. Instead, you associate the policy with the app that you want to restrict. When the app is deployed and installed on devices, the settings you specify will take effect.
 
 To apply restrictions to an app, the app must incorporate the Microsoft App Software Development Kit (SDK). There are two methods of obtaining this type of app:
 
--   **Use a policy managed app** – Has the App SDK built-in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. See a list of [apps you can use with Microsoft Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md).
+-   **Use a policy managed app** – Has the App SDK built-in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. See a list of [apps you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 -   **Use a ‘wrapped’ app** - Apps that are repackaged to include the App SDK by using the **Microsoft Intune App Wrapping Tool**. This tool is typically used to process company apps that were created in-house. It cannot be used to process apps that were downloaded from the app store. See [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -121,7 +121,7 @@ Once you have verified that the app is uploaded successfully, continue to Step 3
 
     -   **Mobile Application Management Policy (iOS 7 and later)**
 
-    You can use recommended settings or customize the settings. For details, see [Use policies to manage computers and mobile devices with Microsoft Intune](../Topic/Use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    You can use recommended settings or customize the settings. For details, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Configure the following settings as required. The options might differ depending on the device type for which you are configuring the policy.
 
@@ -151,7 +151,7 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 ## **Step 4:** Associate the app with a mobile application management policy, then deploy the app.
 Deploy the app, ensuring that you select the mobile application management policy on the **Mobile App Management** page to associate the policy with the app.
 
-For details, see [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
+For details, see [Deploy apps in Microsoft Intune](deploy-apps.md).
 
 > [!IMPORTANT]
 > For devices that run operating systems earlier than iOS 7.1, associated policies will not be removed when the app is uninstalled.

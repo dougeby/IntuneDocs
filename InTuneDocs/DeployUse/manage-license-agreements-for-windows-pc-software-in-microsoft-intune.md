@@ -184,6 +184,5 @@ Software licensing agreements can be added to license groups. You can use licens
 |Delete a license group|In the **Licenses** workspace, choose a license group, and then click **Delete License Group** from the **Tasks** Menu. **Tip:** Any licenses that were in the deleted group are moved to the **Unassigned agreements** license group.|
 |Delete a license agreement|In the **Licenses** workspace, choose an agreement, and then click **Delete**. **Tip:** After you delete Volume Licensing agreements, to update the license information, click **Refresh Now** on the **Licenses Overview** page or on the **General** tab for a specific license group.|
 
-### See Also
-[Deploy apps to Windows PCs in Microsoft Intune](deploy-apps-to-windows-pcs-in-microsoft-intune.md)
+
 

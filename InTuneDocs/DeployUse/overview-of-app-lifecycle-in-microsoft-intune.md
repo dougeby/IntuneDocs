@@ -33,11 +33,11 @@ The Intune app lifecycle begins when an app is added and progresses through addi
 
 ## Add
 
-The first step in app deployment is to add the apps you want to manage and deploy into Intune. While there are many different app types you can work with, the basic procedures are the same. Intune lets you add apps for both [enrolled devices](add-apps-for-mobile-devices-in-microsoft-intune.md), and [Windows PCs you manage with the Intune client software](create-apps-for-windows-pcs-in-microsoft-intune.md).
+The first step in app deployment is to add the apps you want to manage and deploy into Intune. While there are many different app types you can work with, the basic procedures are the same. Intune lets you add apps for both [enrolled devices](add-apps-for-mobile-devices-in-microsoft-intune.md), and [Windows PCs you manage with the Intune client software](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
 ## Deploy
 
-Once you've added the app to Intune, you can then [deploy it to devices that you manage](deploy-apps-in-microsoft-intune.md). Intune makes this process easy, and once the app is deployed, you can [monitor the success](monitor-apps-in-microsoft-intune.md) of the deployment from the Intune administration console. Additionally, some app stores, like the  [Apple](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md) and [Windows](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md) app stores, allow you to purchase app licenses in bulk for your company. Intune can synchronize data with these stores to let you deploy and track license usage for these types of apps right from the Intune administration console.
+Once you've added the app to Intune, you can then [deploy it to devices that you manage](deploy-apps.md). Intune makes this process easy, and once the app is deployed, you can [monitor the success](monitor-apps-in-microsoft-intune.md) of the deployment from the Intune administration console. Additionally, some app stores, like the  [Apple](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md) and [Windows](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md) app stores, allow you to purchase app licenses in bulk for your company. Intune can synchronize data with these stores to let you deploy and track license usage for these types of apps right from the Intune administration console.
 
 ## Configure
 
@@ -49,7 +49,7 @@ As part of the app lifecycle, new versions of apps are regularly released. Intun
 
 Intune gives you many ways to help protect the data in your apps. The main methods are:
 - [Conditional access](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) lets you control access to email and other services based on conditions you specify like device types, or compliance with a [device compliance policy](introduction-to-device-compliance-policies-in-microsoft-intune.md) you deployed.
-- [Mobile application management (MAM)](introduction-to-mobile-app-management-policies-with-microsoft-intune.md) works with individual apps to help protect the company data they use. For example, you can restrict copying data between unmanaged apps and apps you manage, or you can prevent apps from running on devices that have been jailbroken or rooted.
+- [Mobile application management (MAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) works with individual apps to help protect the company data they use. For example, you can restrict copying data between unmanaged apps and apps you manage, or you can prevent apps from running on devices that have been jailbroken or rooted.
 
 ## Retire
 
