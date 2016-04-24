@@ -33,7 +33,7 @@ A  proof of concept is important to understand the feasibility of your deploymen
 Begin by reviewing the discovery questions to help scope and define your proof of concept.
 
 ## Discovery questions
-Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in your Rollout Planning Guide and Project Plan.
+Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks.
 
 -   What are the core scenarios Intune must meet to adddress your organization's device management needs?
 
@@ -54,7 +54,7 @@ The help desk does not need preparation for this phase of the project as there w
 The technical team and executive sponsorship should have visibility into the progress of scenario testing. The design team needs to be aware of the lessons learned to incorporate in its design.
 
 ### Training
-Administrators who will be managing users, devices, policies and applications should use the PoC as an opportunity to learn about the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console and features.
+Administrators who will be managing users, devices, policies and applications should use the PoC as an opportunity to learn about the Intune console and features.
 
 ### Operations
 The proof of concept does not require ongoing operations. However, there may be specific scenarios that operations staff would want to understand or validate in the PoC.
@@ -79,7 +79,5 @@ Here are some  challenges that you may encounter in the **Proof of concept** pha
 
     **Mitigation:** Work with the executive sponsor, network, and user teams to understand the requirements of a client management solution.
 
-## Next steps
->[!div class="step-by-step"]
-
->[&larr; **Project scope**](project-scope.md)     [**Pilot** &rarr;](pilot.md)
+### Next steps
+[Pilot](pilot.md)

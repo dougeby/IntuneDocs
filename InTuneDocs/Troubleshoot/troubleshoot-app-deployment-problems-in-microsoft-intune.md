@@ -55,7 +55,7 @@ If this information does not solve your problem, see [How to get support for Mic
 
 ### If you get an error while downloading an app
 
-1.  Make sure there isn't more than one concurrent downloads per user. Each user can download one app at a time.
+1.  Make sure there isn't more than one concurrent download per user. Each user can download one app at a time.
 
 2.  Make sure there are not too many concurrent downloads per account. Wait a few minutes and then try again.
 
@@ -75,7 +75,7 @@ If this information does not solve your problem, see [How to get support for Mic
 
 ### If your app is stuck “in progress” while uploading
 
-1.  When uploading an app, first the metadata is added, followed by the app package. After the metadata has been uploaded, the app will appear in progress. If you see that your app is in the in progress state for an unusually long time, delete the app and then upload it again.
+1.  When uploading an app, first the metadata is added, followed by the app package. After the metadata has been uploaded, the app will appear in progress. If you see that your app is in the in-progress state for an unusually long time, delete the app and then upload it again.
 
 2.  Make sure not to manage the deployment of the app while it is in the “in progress” state.
 
@@ -87,7 +87,7 @@ If this information does not solve your problem, see [How to get support for Mic
 
 ### If managed apps are not reporting installation status
 
-Installation status was not collected for managed app installations prior to the Microsoft Intune service update in November 2014. For devices that installed managed apps prior to this service update, update each associated app deployment with the appropriate deployment action (for example, **Available install**). Each device will update the app during the automatic check for available apps. For more information, see [Update apps using Microsoft Intune](update-apps-using-microsoft-intune.md).
+Installation status was not collected for managed app installations prior to the Microsoft Intune service update in November 2014. For devices that installed managed apps prior to this service update, update each associated app deployment with the appropriate deployment action (for example, **Available install**). Each device will update the app during the automatic check for available apps. For more information, see [Update apps using Microsoft Intune](../deployuse/update-apps-using-microsoft-intune.md).
 
 ## <a name="BKMK_SoftDistErrorCodes"></a>App deployment error codes
 The following table lists common errors that may occur during Intune app deployment, the likely causes, and possible solutions to help you troubleshoot them.
@@ -99,5 +99,5 @@ The following table lists common errors that may occur during Intune app deploym
 |0x80073CF3|The package failed update, dependency, or conflict validation|Possible causes:<br /><br />-   The incoming package conflicts with an installed package.<br />-   A specified package dependency is not found.<br />-   The package does not support the correct processor architecture.<br /><br />Check the AppXDeployment-Server event log for more information.|
 |0x80073CFB|The provided package is already installed, and reinstallation of the package is blocked|You might receive this error if you are installing a package that is not identical to the package that is already installed. Confirm the digital signature is also part of the package. When a package is rebuilt or re-signed, that package is no longer bitwise identical to the previously installed package. Two possible options to fix this error are as follows:<br /><br />-   Increment the version number of the app, then rebuild and re-sign the package.<br />-   Remove the old package for every user on the system before you install the new package.|
 
-## Next steps
+### Next steps
 If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

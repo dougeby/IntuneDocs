@@ -32,7 +32,7 @@ Use the information in this section to help you solve problems while using Micro
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
 
-## Endpoint Protection error messages
+### Endpoint Protection error messages
 This section describes potential causes and solutions for the following errors and warnings, which appear in the **Endpoint Protection Status** pane in the  [Intune admin console](https://manage.microsoft.com).
 
 |Status item|Potential causes|Potential solutions|

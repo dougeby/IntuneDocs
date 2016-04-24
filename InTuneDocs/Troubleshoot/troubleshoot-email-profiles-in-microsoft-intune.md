@@ -53,6 +53,6 @@ This occurs when the option **Allow e-mail to be sent from third-party applicati
 
 4.  On the **Synchronization Settings** tab, select **Allow e-mail to be sent from third-party applications**.
 
-## Next steps
+### Next steps
 If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
