@@ -62,7 +62,7 @@ The following are minimum hardware requirements for installing the Intune PC cli
 |Processor and Memory|Refer to the processor and RAM requirements for the PC's operating system.|
 |Disk space|200 MB available disk space before the client software is installed.|
 
-## Further requirements 
+## Further requirements
 The following are software requirements for installing the Intune PC client:
 
 |Requirement|Details|
@@ -70,3 +70,6 @@ The following are software requirements for installing the Intune PC client:
 |Administrative permissions|The account that installs the client software must have local administrator permissions to that PC.|
 |Windows Installer 3.1|The PC must have, at a minimum, Windows Installer 3.1 installed.|
 |Remove incompatible client software|Before you install the Intune PC client software, you must uninstall the following client software from that PC:<br /><br />-   Any version of Configuration Manager<br />-   Any version of Microsoft Systems Management Server (SMS)|
+
+### See also
+[Mobile device management capabilities in Microsoft Intune](mobile-device-management-capabilties-in-microsoft-intune.md)
