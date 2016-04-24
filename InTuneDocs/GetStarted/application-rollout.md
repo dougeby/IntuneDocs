@@ -91,6 +91,6 @@ During the pilot you will deploy the app to a small group of test users and devi
 
 **Help desk:** Ensure that your help desk is aware of any changes to app availability that may result in support requests.
 
-### See Also
+### See also
 [Troubleshoot app deployment problems in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
 [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md)

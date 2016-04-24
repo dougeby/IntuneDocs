@@ -30,8 +30,6 @@ Use the information in this section to help you solve software update problems i
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
-
-### Software update error codes
 The following table lists the Intune **Update Agent** error codes. If you cannot find a specific error code in this table, see [Windows Update Agent Result Codes](http://go.microsoft.com/fwlink/?LinkID=221542).
 
 |Error code|Symbolic name|More information|
@@ -246,6 +244,6 @@ The following table lists the Intune **Update Agent** error codes. If you cannot
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|Installation failed because there is a pending mandatory reboot.|
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|The download was canceled.|
 
-## Next steps
+### Next steps
 If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 

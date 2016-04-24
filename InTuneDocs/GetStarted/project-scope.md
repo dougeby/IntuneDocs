@@ -34,7 +34,7 @@ Change management often presents the biggest obstacle when rolling out new techn
 Begin by reviewing the discovery questions below to help scope and define your rollout project.
 
 ## Discovery questions
-Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actions that can be documented in the Rollout Planning Guide and Project Plan.
+Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actions.
 
 -   What are the core drivers behind your organization's decision to deploy Intune?
 
@@ -61,7 +61,7 @@ Discuss these questions with your project team to help scope your project detail
 Review this section for guidance on focus-area activities for this stated phase of your rollout.
 
 ### Planning
-Goals
+
 The majority of your efforts in the Scope phase revolve around planning and preparation. When scoping your project, consider both technology and organizational issues, as well as how users work today and the behavior change required. Start with your "big picture" end goal in mind, then create smaller goals in subsequent phases to stay on track.
 
 ### Help desk
@@ -106,7 +106,5 @@ Here are some  challenges that you may encounter in the **Project scope** phase.
 
     **Mitigation:** While you may be excited to jump into your project, ensure you have a clearly-defined value message. Include this value messaging in all awareness and training activities to help ensure users understand why your organization selected Intune.
 
-## Next steps
->[!div class="step-by-step"]
-
->[&larr; **Rollout phases**](rollout-phases-for-microsoft-intune-deployment.md)     [**Proof of concept** &rarr;](proof-of-concept.md)
+### Next steps
+[Proof of concept](proof-of-concept.md)
