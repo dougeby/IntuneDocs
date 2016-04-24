@@ -256,4 +256,4 @@ When you select an update from the list, further commands are available that let
 
 
 ### See also
-[Policies to protect Windows PCs](policies-to-protect-windows-pcs.md)
+[Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

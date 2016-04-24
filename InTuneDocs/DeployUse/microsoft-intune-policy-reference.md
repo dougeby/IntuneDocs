@@ -93,7 +93,7 @@ Applies to Windows Phone, and enrolled Windows devices only.
 
 |Policy name|Use when you want to|
 |---------------|------------------------|
-|**Managed Browser Policy (Android 4 and later)**<br /><br />**Managed Browser Policy (iOS 7.1 and later)**|Specify the websites that users can, and cannot access when they are using the managed browser app.<br /><br />For details, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md).|
+|**Managed Browser Policy (Android 4 and later)**<br /><br />**Managed Browser Policy (iOS 7.1 and later)**|Specify the websites that users can, and cannot access when they are using the managed browser app.<br /><br />For details, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).|
 |**Mobile Application Management Policy (Android 4 and later)**<br /><br />**Mobile Application Management Policy (iOS 7.1 and later)**|Modify the functionality of apps that you deploy to help bring them into line with your company compliance and security policies. For example, you can restrict cut, copy and paste operations within a restricted app, or configure an app to open all web links inside the managed browser.<br /><br />For details, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)|
 
 ## Common Mobile Device Settings

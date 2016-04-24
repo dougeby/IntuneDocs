@@ -42,7 +42,7 @@ You can create managed browser policies for the following device types:
 
 -   Devices that run iOS 7.1 and later
 
-The Intune Managed Browser supports opening web content from [Microsoft apps you can use with Microsoft Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md).
+The Intune Managed Browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 ## Create a managed browser policy
 
@@ -76,7 +76,7 @@ After you have created the managed browser policy, you can then create a softwar
 
 Deploy the app, ensuring that you select the managed browser policy on the **Mobile App Management** page to associate the policy with the app.
 
-For more information about how to deploy apps, see [Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md).
+For more information about how to deploy apps, see [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
 ## Security and privacy for the managed browser
 

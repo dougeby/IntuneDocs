@@ -34,7 +34,7 @@ Intune integrates with Passport for Work in two ways:
 
 -   You can use an Intune policy to control which gestures users can and cannot use to login.
 
--   You can store authentication certificates in the Passport for Work key storage provider (KSP). For more information, see [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).
+-   You can store authentication certificates in the Passport for Work key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).
 
 ## To create a Passport for Work policy
 
@@ -77,6 +77,4 @@ Intune integrates with Passport for Work in two ways:
 ## Further information
 For more information about Microsoft Passport, see [the guide](https://technet.microsoft.com/library/mt589441.aspx) in the Windows 10 documentation.
 
-### See Also
-[Protect data and devices with Microsoft Intune](protect-data-and-devices-with-microsoft-intune.md)
 

@@ -62,7 +62,7 @@ As with devices, at some point, you want or need to [retire apps](retire-apps-us
 |Wi-Fi and VPN profile settings|Removed|Removed|
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|
 |Management Agent|Device Administrator privilege is revoked.|Device Administrator privilege is revoked.|
-|Email|Email  received by the Microsoft Outlook app for Android  app is removed.|Email profiles that are provisioned through [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] are removed and cached email on the device is deleted.|
+|Email|Email  received by the Microsoft Outlook app for Android  app is removed.|Email profiles that are provisioned through Intune are removed and cached email on the device is deleted.|
 |Azure Active Directory (AAD) Unjoin|AAD Record removed|AAD Record removed|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
 
