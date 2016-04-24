@@ -38,7 +38,7 @@ Users running Samsung Android 5.1.1 and above on their devices are unable to sen
 **Workaround 2:** To enable impacted users to send email, you can follow these steps:
 
 1. Put the impacted user into a security group in the “exempted groups” section of the conditional access policy for Exchange Online.
-2. Allow the user to temporarily sync email on the built-in email client. 
+2. Allow the user to temporarily sync email on the built-in email client.
 3. Remove the impacted user from the exempted group, and confirm that user can now send email.
 
 Microsoft will continue to work closely with Samsung on a fix or additional workarounds.
@@ -96,6 +96,3 @@ English, French, Korean, Polish, Swedish, Turkish.
 
 The Intune Admin Console and the end user facing mobile experiences support Danish, Greek, Finish, Norwegian and Romanian
 in addition to all the languages supported by the Azure preview portal.
-
-
-
