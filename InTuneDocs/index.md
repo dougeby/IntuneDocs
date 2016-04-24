@@ -37,15 +37,15 @@ layout: HubPage
       <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href=""/intune/understand-explore/introduction-to-microsoft-intune">Introduction to Microsoft Intune</a></li>
-          <li><a href=""/intune/understand-explore/common-ways-to-use-intune">Common scenarios that rely on Intune</a></li>
-          <li><a href=""/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Start with a paid subscription</a></li>
+          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Introduction to Microsoft Intune</a></li>
+          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Common scenarios that rely on Intune</a></li>
+          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Start with a paid subscription</a></li>
 
         </ul>
         <ul class="column column-half">
-          <li><a href=""/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Overview of device and app lifecycles</a></li>
-          <li><a href=""/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Protect app data</a></li>
-          <li><a  href=""/intune/plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">What to tell your end users about Intune</a></li>
+          <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Overview of device and app lifecycles</a></li>
+          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Protect app data</a></li>
+          <li><a  href="/intune/plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">What to tell your end users about Intune</a></li>
         </ul>
       </div>
     </section>
