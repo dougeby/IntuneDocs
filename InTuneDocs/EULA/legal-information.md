@@ -28,11 +28,10 @@ ms.suite: ems
 # Legal Information
 
 ## Terms of Use
-[Read the terms of use](http://go.microsoft.com/fwlink/?LinkId=263462)
+[Read the terms of use](terms-of-use.md)
 
 ## Acceptable Use Policy
-[Read the acceptable use policy](http://go.microsoft.com/fwlink/?LinkId=263463)
+[Read the acceptable use policy](acceptable-use-policy-for-microsoft-intune.md)
 
 ## Privacy Statement
-[Read the privacy statement](http://go.microsoft.com/fwlink/?LinkId=240296)
-
+[Read the privacy statement](privacy-statement.md)
