@@ -38,7 +38,7 @@ Use the Microsoft Intune **iOS general configuration policy** to configure setti
 -   **Compliant and noncompliant apps** - Specify a list of apps that are compliant, or not compliant in your company. On Android and iOS devices, the **Noncompliant Apps Report** can be used to view the compliance of apps you specified in the list against the apps that users have installed (but cannot actually block the installation of the app).
 
 > [!TIP]
-> You can configure terms and conditions for users to ensure that they acknowledge that apps on their device, including personal apps will be evaluated, and noncompliant apps will either be blocked, or reported as noncompliant. Users must accept these terms and conditions before they can enroll their device and use the company portal to get apps. For more information about using terms and conditions, see [Working with terms and conditions policies in Microsoft Intune](http://msdn.microsoft.com/en-us/library/ce59fb93-01fd-4822-a57d-45ca7d89843d).
+> You can configure terms and conditions for users to ensure that they acknowledge that apps on their device, including personal apps will be evaluated, and noncompliant apps will either be blocked, or reported as noncompliant. Users must accept these terms and conditions before they can enroll their device and use the company portal to get apps. For more information about using terms and conditions, see [Terms and conditions policy settings in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 If the setting you are looking for does not appear in this topic, you might be able to create it using an iOS custom policy that lets you import settings you created using the [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). For more information, see **Custom policy settings** later in this topic.
 
@@ -204,7 +204,7 @@ Copy the URL of the page and use this as the URL to configure the compliant or n
 
 Use the Microsoft Intune **iOS custom policy** to deploy settings that you created using the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) to iOS devices. This tool lets you create many settings that control the operation of these devices and export them to a configuration profile. You can then import this configuration profile into an Intune iOS custom policy and deploy the settings to users and devices in your organization.
 
-This capability is intended to allow you to deploy iOS settings that are not configurable with Intune general configuration policies policies. For information about the settings you can configure with these policies, see [iOS configuration policy settings in Microsoft Intune](iOS-configuration-policy-settings-in-Microsoft-Intune.md).
+This capability is intended to allow you to deploy iOS settings that are not configurable with Intune general configuration policies policies.
 
 ### Prerequisites
 Before you start, you must have installed the Apple Configurator and created a configuration file containing the settings you want to deploy to users or devices. You can download and learn about the Apple Configurator from [the Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)

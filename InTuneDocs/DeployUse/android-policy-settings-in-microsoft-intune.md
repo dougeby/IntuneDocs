@@ -140,7 +140,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |----------------|--------------------|
 |**Report noncompliance when users install the listed apps**|Lists the apps that are not managed by Intune which users are not allowed to install and run.|
 |**Do not report noncompliance when users install the listed apps**|Lists the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />[How to specify URLs to app stores](ios-configuration-policy-settings-in-microsoft-intune.md#BKMK_URL)|
+|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />For help, see How to specify URLs to app stores later in this topic.|
 |**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|
 |**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
@@ -150,7 +150,7 @@ Specify the following settings for **Samsung KNOX devices**:
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then select the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.<br /><br />[How to specify URLs to app stores](ios-configuration-policy-settings-in-microsoft-intune.md#BKMK_URL)|
+|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then select the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.<br /><br />For help, see How to specify URLs to app stores later in this topic.|
 |**Allow volume buttons**|Enables or disables the use of the volume buttons on the device.|
 |**Allow screen sleep wake button**|Enables or disables the screen sleep wake button on the device.|
 
@@ -180,7 +180,7 @@ Use the Microsoft Intune **Android custom configuration policy** to deploy OMA-U
 This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 > [!NOTE]
-> Currently, Android custom policies only support configuring Wi-Fi settings for Android devices that include a pre-shared key. See [Example: Configure a custom Wi-Fi profile with a pre-shared key](android-custom-policy-settings-in-microsoft-intune.md#BKMK_Example) to learn how to do this.
+> Currently, Android custom policies only support configuring Wi-Fi settings for Android devices that include a pre-shared key. See Configure a custom Wi-Fi profile with a pre-shared key later in this topic for more information.
 
 ### General settings
 

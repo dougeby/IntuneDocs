@@ -90,4 +90,4 @@ The app is displayed on the **Apps** node of the **Apps** workspace.
 
 ## Next steps
 
-Once you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune.md](deploy-apps-in-microsoft-intune.md)
+Once you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune.md](deploy-apps.md)
