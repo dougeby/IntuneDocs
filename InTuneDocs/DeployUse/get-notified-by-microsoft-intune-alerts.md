@@ -48,9 +48,9 @@ Alerts are generated based on **alert types**, a set of preconfigured rules buil
 
 |Severity|Details|
 |--------|-------|
-    |![](../media/Critical-Alert.jpg)|Indicates a serious issue that you should investigate as soon as possible, for example, if malware has been detected on a computer.|
-    |![](../media/Warning-Alert.jpg)|Indicates an issue that isn't currently serious, but might become serious if you don't attend to it, for example, security updates are waiting to be installed.|
-    |![](../media/Informational-Alert.jpg)|Indicates information that isn't critical to your operations, for example, a new version of the Exchange Connector is available.|
+    |![Critical alert](../media/Critical-Alert.jpg)|Indicates a serious issue that you should investigate as soon as possible, for example, if malware has been detected on a computer.|
+    |![Warning alert](../media/Warning-Alert.jpg)|Indicates an issue that isn't currently serious, but might become serious if you don't attend to it, for example, security updates are waiting to be installed.|
+    |![Informational alert](../media/Informational-Alert.jpg)|Indicates information that isn't critical to your operations, for example, a new version of the Exchange Connector is available.|
 
 Other alert types might contain different items you can configure such as the percentage of devices that must be affected by an issue before an alert is generated.
 
