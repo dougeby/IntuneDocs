@@ -66,7 +66,7 @@ With the exception of the update to the Windows 10 general configuration policy,
 ### App management
 
 - **Take advantage of iOS "Open-in" management for devices that are enrolled in a third-party MDM solution**
-You can use your third-party mobile device management (MDM) vendor to take advantage of iOS "Open-In" management. You can set the restrictions in the configuration profile settings and deploy the app using your MDM software. When the user installs the managed app, the restrictions are applied. Read the details: [Microsoft Intune mobile app management policies and iOS Open In](Microsoft-Intune-mobile-app-management-policies-and-iOS-Open-In.md).
+You can use your third-party mobile device management (MDM) vendor to take advantage of iOS "Open-In" management. You can set the restrictions in the configuration profile settings and deploy the app using [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
 
      This approach has two main benefits:
 
@@ -79,30 +79,27 @@ You can now manage the Microsoft Outlook app on devices that are not enrolled in
 
 
 - **Mobile app configuration policies give you more flexibility to specify user details for iOS apps**
-You can supply user settings that an iOS app might need when it is opened. For example, you can supply a network port, or a user name. For details, see [Configure iOS apps with mobile app configuration policies in Microsoft Intune](Configure-iOS-apps-with-mobile-app-configuration-policies-in-Microsoft-Intune.md).
+You can supply user settings that an iOS app might need when it is opened. For example, you can supply a network port, or a user name. For details, see [Configure iOS apps with mobile app configuration policies in Microsoft Intune](configure-iOS-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).
 
 
 - **Deploy Adobe Reader for Microsoft Intune to Intune-managed iOS devices in your enterprise**
 The Adobe Reader app for iOS can now be managed on enrolled devices with the Intune mobile application management policy.
 
-- **Microsoft apps that support MAM**
-The list of [Microsoft apps you can use with Intune mobile application management policies](Microsoft-apps-you-can-use-with-Microsoft-Intune-mobile-application-management-policies.md) has been updated to include the latest apps (for devices that are enrolled with Intune only).
-
 - **Ensure deployed web clips are opened in the managed browser**
-You can deploy targeted web clips that can only be opened using the managed browser on iOS and Android devices. For example, you deploy links to corporate resources through the Company Portal, and when users navigate to the links, they open directly into the managed browser where they can be protected by MAM policy. For details, see [Deploy apps to mobile devices](Deploy-apps-to-mobile-devices-in-Microsoft-Intune.md).
+You can deploy targeted web clips that can only be opened using the managed browser on iOS and Android devices. For example, you deploy links to corporate resources through the Company Portal, and when users navigate to the links, they open directly into the managed browser where they can be protected by MAM policy. For details, see [Deploy apps ](deploy-apps.md).
 
 
 - **Find, manage, and distribute Windows Store for Business apps for Windows 10 devices from the Intune administrator console**
-Support for Windows Store for Business is available in Intune to help you find, manage, and distribute apps to the Windows 10 devices you’re managing. Windows Store for Business lets you manage the process of deploying and monitoring these apps from the Intune administrator console—the same console you use to manage your other apps. Specifically, Windows Store for Business manages the content and licensing  of “online licensed apps”. For details, see [Manage apps you purchased from the Windows Store for Business](Manage-apps-you-purchased-from-the-Windows-Store-for-Business-with-Microsoft-Intune.md).
+Support for Windows Store for Business is available in Intune to help you find, manage, and distribute apps to the Windows 10 devices you’re managing. Windows Store for Business lets you manage the process of deploying and monitoring these apps from the Intune administrator console—the same console you use to manage your other apps. Specifically, Windows Store for Business manages the content and licensing  of “online licensed apps”. For details, see [Manage apps you purchased from the Windows Store for Business](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md).
 
 
 ### Device management
 - **PFX certificates distribution for iOS devices**
-Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](Enable-access-to-company-resources-using-certificate-profiles-with-Microsoft-Intune.md).
+Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).
 
 
 - **Apply apps and policies to different device groups based on user category selection**
-Intune administrators can now define custom device categories for users to select from during enrollment. For example, administrators might want their users to specify if they're enrolling a device used for the "Cash Register" or "Delivery Truck" or "Inventory Room." The category selected will cause the device to become a member of an Intune device group, which can be used for deploying different apps and policies to the enrolled device. For details, see [Categorize devices with device group mapping](Categorize-devices-with-device-group-mapping-in-Microsoft-Intune.md).
+Intune administrators can now define custom device categories for users to select from during enrollment. For example, administrators might want their users to specify if they're enrolling a device used for the "Cash Register" or "Delivery Truck" or "Inventory Room." The category selected will cause the device to become a member of an Intune device group, which can be used for deploying different apps and policies to the enrolled device. For details, see [Categorize devices with device group mapping](categorize-devices-with-device-group-mapping-in-microsoft-intune.md).
 
 ### Changes and updates to Microsoft Company Portal
 The following changes have been made to the Company Portal in this release.
@@ -147,7 +144,7 @@ Intune administrators can now view the status of Windows 10 Device Health Attest
 	* Secure Boot
 	* Code Integrity
 
-	Read [Manage device compliance policies for Microsoft Intune](manage-device-compliance-policies-for-microsoft-intune.md) for more details on the device health setting, collected data points, and the health attestation report. The [HAS service details](https://msdn.microsoft.com/en-us/library/dn934876.aspx) explains the service in depth.
+	Read [Introduction to device compliance policies for Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) for more details on the device health setting, collected data points, and the health attestation report. The [HAS service details](https://msdn.microsoft.com/en-us/library/dn934876.aspx) explains the service in depth.
 
 * **Windows 10 Passport for Work Policy and certificate management**
 With Intune, you can [integrate with Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md), which is an alternative sign-in method for Windows 10 that uses Active Directory or an Azure Active Directory account to replace a password, smart card, or virtual smart card. Passport lets you use a user gesture to log in instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
@@ -171,7 +168,6 @@ Additional apps from Microsoft partners are now compatible with Intune mobile ap
 * Adobe Reader (from Adobe) – Android only
 * Foxit PDF Reader (from Foxit Corporation) – iOS and Android
 
-For a complete list see [Microsoft apps you can use with Microsoft Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md). For a list of compatible partner apps, see the [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) page.
 
 ### IE9 support ending in January
 Starting in February, 2016, Internet Explorer 9 will no longer be supported as an official browser for accessing the Microsoft Intune company portal website, Intune account portal, and Intune administration console. You will need to migrate to Internet Explorer 10 or later.

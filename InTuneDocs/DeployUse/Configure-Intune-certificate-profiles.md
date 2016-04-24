@@ -28,8 +28,8 @@ ms.suite: ems
 # Configure Intune certificate profiles
 After your infrastructure and certificates are configured as described in [Configure certificate infrastructure](configure-certificate-infrastructure.md), you can configure certificate profiles:
 
-**Task 1** - Export the Trusted Root CA certificate 
-**Task 2** - Create Trusted CA certificate profiles 
+**Task 1** - Export the Trusted Root CA certificate
+**Task 2** - Create Trusted CA certificate profiles
 **Task 3** - Either:
 
 Create SCEP certificate profiles
@@ -42,7 +42,7 @@ Export the Trusted Root CA certificate as a **.cer** file from the issuing CA, o
 You will import this certificate when you configure a Trusted  certificate profile.
 
 ### Task 2 - Create Trusted certificate profiles
-You must create a **Trusted certificate profile** before you can create a SCEP or .PFX certificate profile. You need a Trusted certificate profile and a SCEP or.PFS profile for each mobile device platform.
+You must create a **Trusted certificate profile** before you can create a SCEP or .PFX certificate profile. You need a Trusted certificate profile and a SCEP or .PFS profile for each mobile device platform.
 
 ##### To create a trusted certificate profile
 
@@ -88,7 +88,7 @@ After you have created a Trusted CA certificate profile, create SCEP or .PFX cer
 
     **Windows &gt; SCEP Certificate Profile (Windows Phone 8.1 and later)**
 
-    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
 
 3.  Follow the instructions on the profile configuration page to configure the SCEP certificate profile settings.
 
@@ -109,12 +109,12 @@ The new policy displays in the **Policy** workspace, and can now be deployed.
     -   **Windows &gt; PKCS #12 (.PFX)  Certificate Profile (Windows 10 and later)**
 
     -   **Windows &gt; PKCS #12 (.PFX)  Certificate Profile (Windows Phone 10 and later)**
-    
+
     -    **iOS > PKCS #12 (.PFX) Certificate Profile (iOS 7.1 and later)**    
 
     Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
 
-3.  Provide the information requested on the policy form. 
+3.  Provide the information requested on the policy form.
 
 4.  When you are finished, click **Save Policy**.
 
