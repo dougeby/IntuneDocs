@@ -24,7 +24,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+# Mobile device management capabilities of Microsoft Intune
 
 Microsoft Intune lets you manage a range of devices by *enrolling* them into the service. Users can then use a *company portal* to perform a range of operations such as enrolling their device, browsing and installing apps, making sure their device is compliant with company policies, and contacting their IT support.
 This topic gives a full list of the capabilities that enrolling devices gives you.
@@ -68,5 +68,5 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 |--------------|-----------|--------------------|
 |Inventory and reporting|Find information about the devices you manage and the software they are using.<br /><br />You can filter these reports in a number of ways, such as the device platform, and whether the device is compliant with corporate standards.|[Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md)|
 
-
-
+### See also
+[Windows PC management capabilities in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
