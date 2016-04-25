@@ -33,6 +33,7 @@ As with devices, at some point, you want or need to [retire apps](retire-apps-us
 
 ## Full wipe
 
+
 **Full wipe** restores a device to its factory default settings, removing all company and user data and settings. The device is removed from Intune. Full wipe is useful for resetting a device before giving it to a new user or instances where the device has been lost or stolen.  **Be careful about selecting full wipe. Data on the device cannot be recovered**.
 
 ## Selective wipe
@@ -139,4 +140,5 @@ To get a report of devices that have been retired, wiped, or deleted, and who pe
 
 ### See also
 [Retire devices](retire-devices-from-microsoft-intune-management.md)
+
 [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx)
