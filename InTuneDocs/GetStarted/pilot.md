@@ -33,7 +33,7 @@ By executing a pilot you'll surface technical issues that your users may encount
 Begin by reviewing the discovery questions  to help scope and define the pilot phase of your rollout.
 
 ## Discovery questions
-Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in the Rollout Planning Guide and Project Plan.
+Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks.
 
 -   Besides the technical implementation, what else are you testing during this pilot phase?
 
@@ -109,7 +109,5 @@ Here are some  challenges that you may encounter in the **Pilot** phase.
 
     **Mitigation:** Define qualitative and quantitative success criteria specific to your organization so that a clear decision can be made based on facts to move to the next phase of deployment.
 
-## Next steps
->[!div class="step-by-step"]
-
->[&larr; **Proof of concept**](proof-of-concept.md)     [**Enterprise rollout** &rarr;](enterprise-rollout.md)
+### Next steps
+[Enterprise rollout](enterprise-rollout.md)

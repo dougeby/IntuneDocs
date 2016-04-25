@@ -48,7 +48,7 @@ To switch from your current endpoint protection application to Microsoft Intune 
 
 3.  Remove the third-party endpoint protection software by:
 
-    -   Use Intune software distribution to deploy a software removal tool provided by the manufacturer of the third-party endpoint protection application. For more information, see [Deploy and configure apps with Microsoft Intune](deploy-apps-with-microsoft-intune.md).
+    -   Use Intune software distribution to deploy a software removal tool provided by the manufacturer of the third-party endpoint protection application. For more information, see [Deploy apps with Microsoft Intune](deploy-apps.md).
 
     -   Removing the third-party endpoint protection application manually.
 
@@ -62,7 +62,7 @@ Use the following steps to help you configure Endpoint Protection for Microsoft 
 
 2.  Expand **Computer Management** and select **Microsoft Intune Agent Settings**. Select **Create and Deploy a Custom Policy** to specify policy for Endpoint Protection settings and then click the **Create Policy** button. You can use recommended settings or customize the settings. If you need more information about how to create and deploy policies, see the [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) topic.
 
-  ![](../media/pol-sa-pc-endpoint-policy.png)
+  ![Endpoint Protection settings](./media/pol-sa-pc-endpoint-policy.png)
 
 You can view the deployed Endpoint Protection policy on the **All Policies** page of the **Policy** workspace.
 
@@ -178,7 +178,7 @@ Intune can display the paths of up to 10 most recently detected instances of mal
 3.  Mark the **Recent Detection Paths** checkbox in the list. The **Recent Detection Paths** column appears and displays up to 10 most recent malware instances monitored on the device.
 
 ## Need more help?
-For further help and support, see [Troubleshoot Endpoint Protection in Microsoft Intune](../Troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md).
+For further help and support, see [Troubleshoot Endpoint Protection in Microsoft Intune](../troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md).
 
 ### See Also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

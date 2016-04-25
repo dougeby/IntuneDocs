@@ -117,7 +117,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |----------------|--------------------|
 |**Block devices from opening the listed apps**|Lists the apps that are not managed by Intune which users are not allowed to install and run.|
 |**Allow devices to install only the listed apps**|Lists the apps that users are allowed to install. Users cannot install any other apps. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />[How to specify URLs to app stores](windows-phone-configuration-policy-settings-in-microsoft-intune.md#BKMK_URL)|
+|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store. For more help, see How to specify URLs to app stores later in this topic.
 |**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|
 |**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|

@@ -222,7 +222,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 #### To view devices that are blocked from Exchange
 
 On the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dashboard, choose the **Blocked Devices from Exchange** tile to show the number of blocked devices and links to more information.
-![IntuneSA6BlockedDevices](../media/IntuneSA6BlockedDevices.PNG)
+![Screenshot of the Intune dashboard showing the number of devices that are blocked from accessing Exchange](../media/IntuneSA6BlockedDevices.PNG)
 
 ## Next steps
 [Restrict access to SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)

@@ -29,14 +29,14 @@ ms.suite: ems
 Now that your Intune system is operational, and you depend on it for business-critical functions and for secure device usage, maintain a robust system.
 
 ## Why is this important?
-Intune provides a dashboard that enables you to monitor the health of your managed devices, including Endpoint Protection status and warnings. You should have organizational practices in place to react to [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] alerts.
+Intune provides a dashboard that enables you to monitor the health of your managed devices, including Endpoint Protection status and warnings. You should have organizational practices in place to react to Intune alerts.
 
 Intune is frequently updated with new features and functionality. It's important that the you pay close attention to notices regarding these changes.
 Communicating and training for updates, establishing a plan for new hires and ensuring your help desk has the most current troubleshooting resources are all key to maximizing the rewards of your investment.
 Begin by reviewing the discovery questions to help scope and define your ongoing operational plan.
 
 ## Discovery questions
-Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in the  Rollout Planning Guide and Project Plan.
+Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks.
 
 -   Who makes up your O&M team?
 
@@ -69,9 +69,9 @@ Here is a list of steps to get you started with the **O&M** phase.
 
 -   Be prepared to react to important alerts.
 
--   All admins are aware of feature and functionality updates
+-   Ensure that all admins are aware of feature and functionality updates
 
--   Help desk is aware of changes to wit_nextref, including changes related to the functionality of devices of varying operating systems.
+-   Help desk is aware of changes to Intune, including changes related to the functionality of devices of varying operating systems.
 
 ## Common challenges
 Here are some  challenges that you may encounter in the **O&M** phase.
@@ -83,8 +83,3 @@ Here are some  challenges that you may encounter in the **O&M** phase.
 -   **Challenge:** Users encounter issues with enrollment and with app installation.
 
     **Mitigation:** Prepare your help desk with troubleshooting content that can enable quick resolution of common problems.
-
-
->[!div class="step-by-step"]
-
->[&larr; **Enterprise rollout**](enterprise-rollout.md)     

@@ -34,7 +34,7 @@ You can create and deploy multiple policies containing different terms and condi
 
 1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) click **Policy** &gt; **Terms and Conditions**.
 
-	![Terms and conditions policy](../Media/pol-sa-terms-conditions.png)
+	![Terms and conditions policy screenshot](./media/pol-sa-terms-conditions.png)
 
 2.  Click **Add** to create a new terms and conditions policy.
 

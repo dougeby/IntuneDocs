@@ -33,7 +33,7 @@ Once you've evaluated your pilot and determined you're ready for your broad roll
 Begin by reviewing the discovery questions, to help scope and define your rollout phase.
 
 ## Discovery questions
-Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in the  Rollout Planning Guide and Project Plan.
+Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks.
 
 -   How will you rollout to your users? For example, will you use a phased approach, by device platform, region, workload, department?
 
@@ -86,10 +86,10 @@ Here is a list of steps to get you started with the **Enterprise rollout** phase
 
 -   Create a Getting Started checklist and enrollment guide for users.
     Use these user guides as a starting point:
-    -  (Enroll your Windows device in Intune)[./enduser/enroll-your-device-in-intune-windows]
-    -  (Enroll your Android device in Intune)[./enduser/enroll-your-device-in-Intune-android]
-    -  (Enroll your iOS device in Intune)[./enduser/enroll-your-device-in-intune-ios]
-    -  (Enroll your Mac OS X device in Intune)[./enduser/enroll-your-device-in-intune-mac-os-x]
+    -  (Enroll your Windows device in Intune)[../enduser/enroll-your-device-in-intune-windows]
+    -  (Enroll your Android device in Intune)[../enduser/enroll-your-device-in-intune-android]
+    -  (Enroll your iOS device in Intune)[../enduser/enroll-your-device-in-intune-ios]
+    -  (Enroll your Mac OS X device in Intune)[../enduser/enroll-your-device-in-intune-mac-os-x]
 
 -   Define a process for updating training materials, as needed.
 
@@ -110,7 +110,5 @@ Here are some  challenges that you may encounter in the **Enterprise rollout** p
 
     **Mitigation:** Everyone learns at a different pace. Some pick up new technology without any instruction, while others require some guidance or hand-holding. Training can offer tips for ensuring users are getting the most out of the solution, and can be broken out into smaller brown bags or by department to not overwhelm users or appear too detailed. Position training as a value-add and offer segmented training/brown bags. To maximize user learning and adoption, incorporate a variety of training methods into your plan.
 
-## Next steps
->[!div class="step-by-step"]
-
->[&larr; **Pilot**](pilot.md)     [**Operations and maintenance** &rarr;](operations-and-maintenance.md)
+### Next steps
+[Operations and maintenance](operations-and-maintenance.md)

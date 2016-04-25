@@ -43,7 +43,7 @@ In the Intune admin console every device has a policy tab under **Device Propert
 
 -   **Not applicable**: The policy setting is not applicable. For example,  email settings for iOS devices would not apply to an Android device.
 
--   **Pending**: The policy was sent to the device, but hasn't reported status to the service. For example, encryption on Android, which requires end user to enable encryption, and may therefore be pending.
+-   **Pending**: The policy was sent to the device, but hasn't reported status to the service. For example, encryption on Android requires the user to enable encryption and might therefore be pending.
 
 In the screenshot below you can see two clear examples:
 
@@ -51,7 +51,7 @@ In the screenshot below you can see two clear examples:
 
 -   Similarly, the expanded policy item **Email settings for iOS devices** is not applied to this device, as it is an Android device.
 
-![](./media/Intune-Device-Policy-v.2.jpg)
+![](../media/Intune-Device-Policy-v.2.jpg)
 
 > [!NOTE]
 > Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
@@ -91,7 +91,7 @@ Review the configuration of your EAS profile for Samsung KNOX and source policy.
 ### Alert: Saving of Access Rules to Exchange has Failed
 **Issue**: You receive the alert **Saving of Access Rules to Exchange has Failed**  in the admin console.
 
-If you  created policies in the Exchange On-Premises Policy workspace under the Admin Console but are using O365, the configured policy settings are not are not enforced by Intune. Note the policy source from the alert.  Under the Exchange On-premises Policy workspace delete the legacy rules, as these are Global Exchange rules within Intune for on-premises Exchange, and are not relevant to O365. Then, create new policy for O365.
+If you  created policies in the Exchange On-Premises Policy workspace under the Admin Console but are using O365, the configured policy settings are not enforced by Intune. Note the policy source from the alert.  Under the Exchange On-premises Policy workspace delete the legacy rules, as these are Global Exchange rules within Intune for on-premises Exchange, and are not relevant to O365. Then, create new policy for O365.
 
 ### ERROR: Cannot obtain the value from the computer, 0x80041013
 This can occur if the time on the local system is out of sync by five minutes or more. If the time on the local computer is out of sync, secure transactions will fail because the time stamps will be invalid.
@@ -109,5 +109,5 @@ Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may ne
 ### Android devices do not force Security Policy Changes without end user Acceptance
 Android MDM does not allow the service to force initial policy changes on devices as other platforms allow. This is due to Android functionality, and is not related to the Intune service. Android devices will prompt the end user via the notification window of the related policy change (i.e. Password, Encryption, etc.).  The end user must respond to the prompt and once accepted the policy should be applied.
 
-## Next steps
+### Next steps
 If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

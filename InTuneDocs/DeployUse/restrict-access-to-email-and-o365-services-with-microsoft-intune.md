@@ -37,7 +37,7 @@ When devices do not meet the conditions set in the policies, the end user is gui
 
 A typical flow of conditional access:
 
-![](./media/ConditionalAccess4.png)
+![Diagram show the decision points used to determine whether a device is allowed access to a service or is blocked](./media/ConditionalAccess4.png)
 
 ## How to configure conditional access?
 Use conditional access to manage access to Microsoft **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**,  **SharePoint Online** and **Skype for Business Online**.

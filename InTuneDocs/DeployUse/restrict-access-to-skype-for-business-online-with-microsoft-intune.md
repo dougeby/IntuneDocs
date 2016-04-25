@@ -34,7 +34,7 @@ To learn more about how conditional access works, read the [restrict access to e
 
 When a targeted user attempts to use Skype for Business Online on their device, the following evaluation occurs:
 
-![Diagram that shows the decision flow that is used to determine if a devices can be allowed access or blocked](../media/ConditionalAccess_SkypeforBusiness.png)
+![Diagram that shows the decision points that is used to determine if a device is allowed access to Skype for Business Online or blocked](../media/ConditionalAccess_SkypeforBusiness.png)
 
 **Before** configuring a conditional access policy for Skype for Business Online, you must:
 - Have a **Skype for Business Online subscription** and assign Skype for Business Online license to users.

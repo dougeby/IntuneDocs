@@ -39,7 +39,7 @@ The list of apps you manage is displayed. You can click on any app to see an ins
 > [!TIP]
 > You can use the **Filters** drop-down list to show only apps that meet the criteria you specify, like apps that failed to install, or apps that were successfully deployed.
 > 
-> ![App filters example](./media/App-filters.png)
+> ![App filters example](./media/app-filters.png)
 
 Additionally, the **Dashboard** workspace shows an overview of the status of your apps. If you click anywhere in the overview, you'll be taken to the list of apps.
 

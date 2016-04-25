@@ -36,7 +36,7 @@ These enrollment methods are good for "Choose your own device" (CYOD) scenarios 
 ## Device enrollment manager
 Organizations can use Intune to manage large numbers of mobile devices with a single user account called a device enrollment manager account. After creating a device enrollment manager account, that account can be used by a manager to enroll more than the standard five devices allowed by default to normal users. Enrolling devices with a device enrollment manager only works for devices that aren't used by a specific user. These devices are good for point-of-sale or utility apps, for example, but bad for users who need access to email or company resources.
 
-[Enroll corporate-owned devices with the device enrollment manager](ios-device-enrollment-program.md)
+[Enroll corporate-owned devices with the device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 
 ## Specify corporate-owned devices with international mobile equipment identity (IMEI)
 Unique international mobile equipment identity (IMEI) numbers are a common device property for many mobile device manufacturers. Intune administrators can import IMEI numbers for devices the company owns. When the device becomes managed by Intune, it can be tagged as a corporate-owned device and targeted with appropriate policy.
