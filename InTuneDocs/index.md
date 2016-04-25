@@ -56,8 +56,8 @@ layout: HubPage
 
           <li class="journey-step">
 
-            <header class="journey-step-header expander row expanded">
-              <a href="">
+            <header class="journey-step-header row">
+              <a href="/intune/understand-explore/introduction-to-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">1</span>
                   <p>Understand &amp; Explore</p>
@@ -93,8 +93,8 @@ layout: HubPage
 
           <li class="journey-step">
 
-            <header class="journey-step-header expander row expanded">
-              <a href="">
+            <header class="journey-step-header row">
+              <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">2</span>
                   <p>Get Started</p>
@@ -172,8 +172,8 @@ layout: HubPage
 -->
 
           <li class="journey-step">
-            <header class="journey-step-header expander row expanded">
-              <a href="">
+            <header class="journey-step-header row">
+              <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">3</span>
                   <p>Deploy &amp; Use</p>
@@ -209,8 +209,8 @@ layout: HubPage
 
 
           <li class="journey-step">
-            <header class="journey-step-header expander row expanded">
-              <a href="">
+            <header class="journey-step-header row">
+              <a href="/intune/troubleshoot/how-to-get-support-for-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">4</span>
                   <p>Troubleshoot</p>
