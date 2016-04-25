@@ -31,7 +31,7 @@ Groups in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] give you great 
 
 Device and user groups are both created in the GROUPS workspace of the Intune administration console.
 
-![alt text](./media/groups.png "GROUPS workspace of the Intune administration console")
+![admin-console-groups-workspace](./media/groups.png "GROUPS workspace of the Intune administration console")
 
 <!-- can't find this topic anywhere below:
 > [!TIP]

@@ -31,7 +31,8 @@ To set up mobile device management with Intune, you must first set the mobile de
 ## Enable device management and enroll devices
 
 1.  **Make Intune your mobile device management authority**
-    In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** > **Mobile Device Management**, and then choose **Set MDM Authority** under **Tasks**.  Choose **Yes** in the MDM Authority dialog box.![alt text](./media/mdmAuthority.png "MDM authority set to use Intune")
+    In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** > **Mobile Device Management**, and then choose **Set MDM Authority** under **Tasks**.  Choose **Yes** in the MDM Authority dialog box.
+	![admin-console-set-mdm-to-intune](./media/mdmAuthority.png "MDM authority set to use Intune")
 
 2.  **Enable MDM for your device platform**
     Enable mobile device management for the device platform you want to manage. Depending on your platform, different requirements are needed:
@@ -40,11 +41,11 @@ To set up mobile device management with Intune, you must first set the mobile de
 
     -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
 
-    -   **Android**: Android mobile devices allow users to enroll using the company portal app available from Google Play. No additional configuration in Intune is required.
+    -   **Android**: Android mobile devices allow users to enroll using the company portal app available from [Google Play](https://play.google.com/store/apps/details?id=com.skype.raider). No additional configuration in Intune is required.
 
 3.  **Enroll devices**:
 
-    -   **Android** - Install the **Intune Company Portal** app from Microsoft Corporation available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612) and sign in with the Intune user credentials added above.
+    -   **Android** - Install the **Intune Company Portal** app from Microsoft Corporation available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune user credentials added above.
 
     -   **iOS and Mac OS X** - Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with the Intune user credentials added above. View **Enrolled devices** to add your device.
 
