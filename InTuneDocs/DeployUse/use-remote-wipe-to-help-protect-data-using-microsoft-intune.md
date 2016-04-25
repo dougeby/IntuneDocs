@@ -31,7 +31,7 @@ As with devices, at some point, you want or need to [retire apps](retire-apps-us
   > [!NOTE]
   > This topic is only about wiping devices managed by Intune. You can also use [the Azure preview portal](https://portal.azure.com) to [wipe company data from apps](wipe-managed-company-app-data-with-microsoft-intune.md).
 
-## <a name="bkmk_wipe"></a>Full or selectively wipe a device
+## Full or selectively wipe a device
 **Full wipe** restores a device to its factory default settings, removing all company and user data and settings. The device is removed from Intune. Full wipe is useful for resetting a device before giving it to a new user or instances where the device has been lost or stolen.  **Be careful about selecting full wipe. Data on the device cannot be recovered**.
 
 **Selective wipe** removes company data including mobile app management (MAM) data where applicable, settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device. The device is removed from Intune. The following tables describe by platform what data is removed and the effect on data that remains on the device after a selective wipe.
@@ -110,7 +110,7 @@ It takes less than 15 minutes for a wipe to propagate across all device types.
 ## Wipe encryption file system (EFS)-enabled content
 Selective wipe of EFS-encrypted content is supported by Windows 8.1 and Windows RT 8.1. The following apply to a selective wipe of EFS-enabled content:
 
--   Only apps and data that are protected by EFS using the same Internet domain as the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] account are selectively wiped. For more information, see [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx).
+-   Only apps and data that are protected by EFS using the same Internet domain as the Intune account are selectively wiped. For more information, see [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx).
 
 -   If there are any changes are made to the domain associated with EFS, the changes can take up to 48 hours before apps and data using the new domain can be selectively wiped.
 
@@ -136,4 +136,5 @@ To get a report of devices that have been retired, wiped, or deleted, and who pe
 
 ### See also
 [Retire devices](retire-devices-from-microsoft-intune-management.md)
+
 [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx)
