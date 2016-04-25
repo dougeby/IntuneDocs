@@ -144,6 +144,4 @@ Our role is to:
 
 [Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
 
-[Documentation for Microsoft Intune](documentation-for-microsoft-intune.md)
-
-[Frequently asked questions for Microsoft Intune](frequently-asked-questions-for-microsoft-intune.md)
+[Frequently asked questions for Microsoft Intune](/intune/understand/frequently-asked-questions-for-microsoft-intune.md)
