@@ -138,6 +138,6 @@ You deploy certificate profiles the same way you deploy other policy for Intune.
 
 You can now use certificates to help secure email, Wi-Fi, and VPN profiles:
 
--  [Configure access to corporate email using email profiles](Configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
--  [Help users connect to company networks using Wi-Fi profiles](Help-users-connect-to-company-networks-using-Wi-Fi-profiles-with-Microsoft-Intune.md)
--  [Help users connect to their work using VPN profiles](Help-users-connect-to-their-work-using-VPN-profiles-with-Microsoft-Intune.md)
+-  [Configure access to corporate email using email profiles](configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
+-  [Wi-Fi connections in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
+-  [VPN connections in Microsoft Intune](vpn-connections-in-microsoft-intune.md)
