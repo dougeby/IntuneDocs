@@ -11,7 +11,7 @@ ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: ""
+ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 
 # optional metadata
 
@@ -35,7 +35,7 @@ Making things even easier, when you use multiple services with the same [Azure A
 The only tool that you need to synchronize your user accounts with Azure AD is the [Azure AD Connect wizard](https://www.microsoft.com/download/details.aspx?id=47594). The Azure AD Connect wizard provides a simplified and guided experience for connecting your on-premises identity infrastructure to the cloud.  Choose your topology and needs (single or multiple directories, password sync or federation), and the wizard will deploy and configure all components required to get your connection up and running. Including: sync services, Active Directory Federation Services (AD FS), and the Azure AD PowerShell module.
 
 > [!TIP]
-> Azure AD Connect encompasses functionality that was previously released as Dirsync and Azure AD Sync. You can learn more about directory integration at [Directory integration](http://technet.microsoft.com/library/jj573653.aspx). To learn about the benefits of synchronizing user accounts from your local directory to Azure AD, see [Similarities between Active Directory and Azure AD](http://technet.microsoft.com/library/dn518177.aspx).
+> Azure AD Connect encompasses functionality that was previously released as Dirsync and Azure AD Sync. Learn more about [directory integration](http://technet.microsoft.com/library/jj573653.aspx). To learn about the benefits of synchronizing user accounts from your local directory to Azure AD, see [Similarities between Active Directory and Azure AD](http://technet.microsoft.com/library/dn518177.aspx).
 
 ## Grant administrator permissions
 After you've added users to your Intune subscription, we recommend that you grant a few user accounts [administrative credentials](administrative-accounts-websites-perms.md). The console that you use to assign administrative credentials depends on the type of administrator you want to assign:

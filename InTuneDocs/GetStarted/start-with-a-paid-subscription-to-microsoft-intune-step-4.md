@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Manage Intune licenses
-A user must have a license to your Intune subscription before they can sign in to use the service or enroll their devices into management. When users have a license, they are a member of the [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] user group. This group includes all users who have a license to use the subscription. **Each user license supports enrolling up to five devices**.
+A user must have a license to your Intune subscription before they can sign in to use the service or enroll their devices into management. When users have a license, they are a member of the [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] user group. This group includes all users who have a license to use the subscription. **Each user license supports enrolling up to 5 devices**.
 
 ## How Intune licenses are assigned
 When user accounts are synchronized from your on-premsies Active Directory or manually added to your cloud services subscription via the account portal, they are not automatically assigned an Intune license. Instead, at a later time, an Intune tenant administrator must edit the user account to assign a license to the user from the account portal.
@@ -34,7 +34,7 @@ When user accounts are synchronized from your on-premsies Active Directory or ma
 When your subscription shares Azure AD with other cloud services associated with your subscription, you also have access to users that were added to those services. These users do not have a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] until you assign a license to each of them.
 
 > [!TIP]
-> If the option to assign or revoke a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] is disabled, your subscription might include volume licensing options, such as the options available when using [Enterprise Mobility Suite](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx). For information on how to assign or revoke licenses, see the documentation for your licensing options. 
+> If the option to assign or revoke a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] is disabled, your subscription might include volume licensing options, such as the options available when using [Enterprise Mobility Suite](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx). For information on how to assign or revoke licenses, see the documentation for your licensing options.
 
 ## Assign an Intune user license
 
@@ -42,7 +42,7 @@ You use the **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** to manually a
 
 1.  Sign in to the Intune account portal using your tenant administrator credentials.
 
-2.  Select the user account that you want to assign and Intune user license to and enable the **Microsoft Intune** checkbox on the user account properties. .
+2.  Select the user account that you want to assign and Intune user license to and enable the **Microsoft Intune** checkbox on the user account properties.
 
 3.  The user account will now be added to the Microsoft Intune user group which grants the user permissions to use the service and enroll their devices into management.
 
