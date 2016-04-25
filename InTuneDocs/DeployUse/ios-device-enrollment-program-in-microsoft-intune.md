@@ -39,7 +39,7 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
 2.  **Get an Encryption Key**
     As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**, and click **Download Encryption Key**. Save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
 
-      ![](../Media/dev-sa-ios-dep.png)
+      ![](../media/dev-sa-ios-dep.png)
 
 3.  **Get a Device Enrollment Program token**
     Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://deploy.apple.com) and sign in with your company Apple ID. This Apple ID must be used in future to renew your DEP token.
@@ -60,7 +60,7 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
 5.  **Add the Corporate Device Enrollment Policy**
     In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment** and then click **Add**. Provide **General** details including **Name** and **Description**, specify whether devices assigned to the profile have user affinity or belong to a group, and then enable **Configure Device Enrollment Program settings for this policy** to support DEP. The **Setup assistant panes** define the iOS device settings configured during setup.
 
-      ![](../Media/pol-sa-corp-enroll.png)
+      ![](../media/pol-sa-corp-enroll.png)
 
 6.  **Assign DEP Devices for Management**
     Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://deploy.apple.com) and sign in with your company Apple ID. Go **Deployment Program** &gt; **Device Enrollment Program** &gt; **Manage Devices**. Specify how you will **Choose Devices**, provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**. Next, select **Assign to Server** and select the &lt;ServerName&gt; specified for Microsoft Intune, and then click **OK**.
