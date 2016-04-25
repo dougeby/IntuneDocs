@@ -78,7 +78,7 @@ In both cases above, the resource access profile (email profile) was not removed
 ## Microsoft Intune App Wrapping Tool for Android has no built-in uninstall capability
 **Issue:** The **Microsoft App Wrapping Tool for Android** does not have built-in functionality for uninstalling the tool.
 
-**Workaround:** Browse to the location where you installed the tool, and delete the directory. The default installation location is: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. For more information about the app wrapping tool, see [Prepare Android apps for mobile application management](http://technet.microsoft.com/library/mt147413.aspx).
+**Workaround:** Browse to the location where you installed the tool, and delete the directory. The default installation location is: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. For more information about the app wrapping tool, see [Prepare Android apps for management with App Wrapping Tool](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool).
 
 ## Remote assistance is not available on computers that run Windows 8 or Windows 8.1
 **Issue:** In this release, the remote assistance feature is not available on computers that run Windows 8 or Windows 8.1.
@@ -91,8 +91,6 @@ In both cases above, the resource access profile (email profile) was not removed
 **Workaround:** To make sure that recipients will receive message notification, you should manually add recipients to alert notifications.
 
 ## Language support in the Azure preview portal
-The Azure preview portal is built on a new platform and supports the following languages - Chinese (Simplified), Chinese (Traditional), Czech, Dutch, English, German, Hungarian, Italian, Japanese, Portuguese (Brazil), Portuguese (Portugal), Russian, Spanish  
-English, French, Korean, Polish, Swedish, Turkish.
+The Azure preview portal is built on a new platform and supports the following languages - Chinese (Simplified), Chinese (Traditional), Czech, Dutch, English, German, Hungarian, Italian, Japanese, Portuguese (Brazil), Portuguese (Portugal), Russian, Spanish, English, French, Korean, Polish, Swedish, Turkish.
 
-The Intune Admin Console and the end user facing mobile experiences support Danish, Greek, Finish, Norwegian and Romanian
-in addition to all the languages supported by the Azure preview portal.
+The Intune Admin Console and the end-user facing mobile experiences support Danish, Greek, Finish, Norwegian and Romanian, in addition to all the languages supported by the Azure preview portal.

@@ -28,11 +28,11 @@ ms.suite: ems
 # Prepare Android apps for mobile application management with the Intune App Wrapping Tool
 Use the **Microsoft Intune App Wrapping Tool for Android** to modify the behavior of your in-house Android apps to let you configure features of the app without modifying the code of the app itself.
 
-The tool is a Windows command-line application that runs in PowerShell and creates a ‘wrapper’ around your app. Once the app is processed, you can then change the app’s functionality using [mobile application management policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) that you configure.
+The tool is a Windows command-line application that runs in PowerShell and creates a ‘wrapper’ around your app. Once the app is processed, you can then change the app’s functionality using [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) that you configure.
 
 If your app is using the Azure Active Directory Authentication Library (ADAL), you must complete the steps in [How to wrap apps that use the Azure Active Directory Library](#how-to-wrap-apps-that-use-the-azure-active-directory-library) before you wrap your app. If you are unsure if your app uses this library, contact the developer of the app.
 
-Before running the tool, review the [Security considerations for running the app wrapping tool](#security-considerations-for-running-the-app-wrapping-tool). To download the tool, see [Microsoft Intune App Wrapping Tool for Android](http://www.microsoft.com/en-us/download/details.aspx?id=47267).
+Before running the tool, review the [Security considerations for running the app wrapping tool](#security-considerations-for-running-the-app-wrapping-tool). To download the tool, see [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267).
 
 ## Step 1 Fulfill the prerequisites for using the app wrapping tool
 
@@ -104,7 +104,7 @@ Note the folder to which you installed the tool. The default location is: **C:\P
 
 
     Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
-    Invoke-AppWrappingTool –InputPath <input-app.apk> -OutputPath <output-app.apk> -KeyStorePath <path-to-signing.keystore> -KeyAlias <signing-key-name> -ClientID <xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx> -AuthorityURI <http://AzureActivieDirectory.Authority.URL> -SkipBroker<$True|$False> -NonBrokerRedirectURI <urn:xxx:xx:xxxx:xx:xxx>
+    Invoke-AppWrappingTool –InputPath <input-app.apk> -OutputPath <output-app.apk> -KeyStorePath <path-to-signing.keystore> -KeyAlias <signing-key-name> -ClientID <xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx> -AuthorityURI <http://AzureActiveDirectory.Authority.URL> -SkipBroker<$True|$False> -NonBrokerRedirectURI <urn:xxx:xx:xxxx:xx:xxx>
 
 You will then be prompted for the **KeyStorePassword** and **KeyPassword**.
 
@@ -142,7 +142,7 @@ In the next step, you will use the Azure management portal to register your apps
 |**Authority URI**|The authority Uniform Resource Identifier (URI) value for AAD) objects (for example, users and groups).<br /><br />The AuthorityURI parameter is optional for the app wrapping tool. The default URI is used if you don't use the parameter.|https://login.windows.net/common/|
 |**SkipBroker**|Value indicating whether the company portal will be used as a broker.<br /><br />**True** – company portal will not be used for ADAL authentication.<br /><br />**False** – company portal will be used for ADAL authentication. The company portal is using the enrolled user for Single Sign On purposes.||
 |**Non-Broker Redirect URI**|Login URI to be used when ADAL does not use the broker app (Intune company portal).|urn:ietf:wg:oauth:2.0:oob|
-|**Resource ID**|Pointer to the app's AAD resources.|https://intunemam.microsoftonline.com|
+|**Resource ID**|Pointer to the app's AAD resources.||
 
 ### Step 3 Configure access to mobile app management in AAD
 Before you can use an app’s AAD registration values in the app wrapping tool, the app developer must grant that app access to the Intune Mobile Application Management resource by following these steps:
@@ -181,7 +181,5 @@ Keep the following points in mind as you wrap your app:
 
 ### See also
 - [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
-
-- [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 - [Use the SDK to enable apps for mobile application management](use-the-sdk-to-enable-apps-for-mobile-application-management.md)

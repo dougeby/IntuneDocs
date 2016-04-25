@@ -44,7 +44,7 @@ To integrate the SDK, you need access to the app’s source code. For instructio
 This table lists the settings that you can use for the App SDK and App Wrapping Tool.
 
 > [!NOTE]
-> The App Wrapping Tool can be used only when you are using  either Intune Standalone or Intune with Configuration Manager.
+> The App Wrapping Tool can be used with Intune Standalone or Intune with Configuration Manager.
 
 |Feature|App SDK|App Wrapping Tool|
 |-----------|---------------------|-----------|
