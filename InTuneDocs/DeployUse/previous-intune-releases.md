@@ -79,7 +79,7 @@ You can now manage the Microsoft Outlook app on devices that are not enrolled in
 
 
 - **Mobile app configuration policies give you more flexibility to specify user details for iOS apps**
-You can supply user settings that an iOS app might need when it is opened. For example, you can supply a network port, or a user name. For details, see [Configure iOS apps with mobile app configuration policies in Microsoft Intune](configure-iOS-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).
+You can supply user settings that an iOS app might need when it is opened. For example, you can supply a network port, or a user name. For details, see [Configure iOS apps with mobile app configuration policies in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).
 
 
 - **Deploy Adobe Reader for Microsoft Intune to Intune-managed iOS devices in your enterprise**
@@ -95,7 +95,7 @@ Support for Windows Store for Business is available in Intune to help you find, 
 
 ### Device management
 - **PFX certificates distribution for iOS devices**
-Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).
+Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](secure-resource access-withcertificate-profiles-with-microsoft-intune.md).
 
 
 - **Apply apps and policies to different device groups based on user category selection**
