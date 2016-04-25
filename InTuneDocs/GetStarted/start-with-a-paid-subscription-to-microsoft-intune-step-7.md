@@ -46,14 +46,14 @@ The company name is displayed as the Company Portal title. The contact informati
     |IT department phone number|20|This contact number is displayed on the **Contact IT** page.|
     |IT department email address|40|This contact address is displayed on the **Contact IT** page. You must enter a valid email address in the format **alias@domainname.com**.|
     |Additional information|120|Displayed on the **Contact IT** page.|
-    |Company privacy statement URL|79|You can specify your own company privacy statement that appears when users click the privacy links from the Company Portal. You must enter a valid URL in the format **https://www.contoso.com**.|
+    |Company privacy statement URL|79|You can specify your own company privacy statement that appears when users click the privacy links from the Company Portal. You must enter a valid URL in the format https://www.contoso.com.|
 
 ## Support contacts
 The support website is displayed to users in the Company Portal to enable them to access online support.
 
 |Field name|Max length|More information|
     |----------|------------------------|----------------|
-    |Support website URL|150|If you have a support website that you want your users to use, specify the URL here. The URL must be in the format **https://www.contoso.com**. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the Company Portal.|
+    |Support website URL|150|If you have a support website that you want your users to use, specify the URL here. The URL must be in the format https://www.contoso.com. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the Company Portal.|
     |Website name|40|This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then **Go to IT website** is displayed on the **Contact IT** page in the Company Portal.|
 
 ## Company branding customization
