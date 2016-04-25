@@ -52,10 +52,11 @@ Intune is available in the following languages: Chinese (Simplified and Traditio
 
 ## Additional requirements and capabilities   
 In addition to these general capabilities, you should also familiarize yourself with the following capabilities:
-- [Intune supported web browsers](supported-web-browsers.md)
-- [Network infrastructure requirements for Microsoft Intune](network-infrastructure-requirements-for-microsoft-intune.md)
-- [Administrative accounts, websites, and permissions in Microsoft Intune](administrative-accounts-websites-perms.md)
-- [Microsoft Intune Company Portal](microsoft-intune-company-portal.md)
-- [Intune integration with Microsoft cloud services and products](integration-with-cloud-services.md)
-- [Intune network bandwidth use](network-bandwidth-use.md)
+
+- [Intune supported web browsers](supported-web-browsers.md)</br>
+- [Network infrastructure requirements for Microsoft Intune](network-infrastructure-requirements-for-microsoft-intune.md)</br>
+- [Administrative accounts, websites, and permissions in Microsoft Intune](administrative-accounts-websites-perms.md)</br>
+- [Microsoft Intune Company Portal](microsoft-intune-company-portal.md)</br>
+- [Intune integration with Microsoft cloud services and products](integration-with-cloud-services.md)</br>
+- [Intune network bandwidth use](network-bandwidth-use.md)</br>
 - [Domain names for Microsoft Intune](domain-names-for-microsoft-intune.md)

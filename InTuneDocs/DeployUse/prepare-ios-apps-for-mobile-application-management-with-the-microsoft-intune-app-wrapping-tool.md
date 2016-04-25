@@ -28,7 +28,7 @@ ms.suite: ems
 # Prepare iOS apps for mobile application management with the Intune App Wrapping Tool
 Use the **Microsoft Intune App Wrapping Tool for iOS** to modify the behavior of in-house iOS apps by restricting features of the app without changing the code of the app itself.
 
-The tool is a Mac OS command-line application that creates a ‘wrapper’ around an app. Once an app is processed, you can then change the apps functionality using [mobile application management policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) that you configure.
+The tool is a Mac OS command-line application that creates a ‘wrapper’ around an app. Once an app is processed, you can then change the app's functionality using [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) that you configure.
 
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
@@ -45,7 +45,7 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://ww
 
 ## Step 2 Install the app wrapping tool
 
-1.  From the **Microsoft Intune App Wrapping Tool for iOS** page on the [Microsoft Download Center](http://www.microsoft.com/en-us/download/default.aspx), download the installation file for the app wrapping tool to a Mac computer.
+1.  From the **Microsoft Intune App Wrapping Tool for iOS** page on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45218), download the installation file for the app wrapping tool to a Mac computer.
 
 2.  On the Mac computer, double-click the installation file **Microsoft Intune App Wrapping Tool for iOS.dmg**.
 
@@ -158,11 +158,7 @@ Apps that use ADAL must register via the Azure management portal to obtain two u
 |--------------|--------------------|-----------------|
 |**Client ID**|A unique GUID identifier is generated for each app after it registers with Azure Active Directory.<br /><br />If you know the app's specific client ID, you can specify this value. Otherwise, the default value must be used.|6c7e8096-f593-4d72-807f-a5f86dcc9c77|
 |**Redirect URI**|A URI value that developers can provide when registering their app with Azure Active Directory to ensure that authentication tokens are returned specifically to that endpoint.<br /><br />Supplying a redirect URI is an optional parameter for the app wrapping tool. If it is not specified, a default URI will be used.|urn:ietf:wg:oauth:2.0:oob|
-When you do not supply the above values to the tool, the following additional values are automatically used:
 
--   **Authority URI** - https://login.windows.net/common/oauth2/authorize
-
--   **Resource ID** - https://intunemam.microsoft.com
 
 ### Steps to follow for apps that use ADAL
 
@@ -248,7 +244,7 @@ If the App Wrapping Tool for iOS displays an entitlement error, try the followin
 |Issue|Cause|Resolution|
 |---------|---------|--------------|
 |Failed to parse entitlements generated from the input application.|The App Wrapping Tool cannot read the entitlements file that was extracted from the app. The entitlements file might be malformed.|Inspect the entitlements file for your app. To do so, follow the instructions detailed below. When inspecting the entitlements file, check for any malformed syntax. The file should be in XML format.|
-|Entitlements are missing in the provisioning profile (missing entitlements are listed). Repackage the app with a provisioning profile that has these entitlements.|There is a mismatch between the entitlements enabled in the provisioning profile and the capabilities enabled in the app. This mismatch also applies to the IDs associated with particular capabilities (i.e., App Groups, Keychain Access etc).|Generally, you can create a new provisioning profile that enables the same capabilities as the app. When IDs between the profile and app don't match, the App Wrapping Tool will replace the IDs if it is able to. If you still get this error after creating a new provisioning profile, you can try  removing entitlements from the app by using the **–e** parameter (see [Using the –e parameter to remove entitlements from an app](#using-the-\-e-parameter-to-remove-entitlements-from-an-app).|
+|Entitlements are missing in the provisioning profile (missing entitlements are listed). Repackage the app with a provisioning profile that has these entitlements.|There is a mismatch between the entitlements enabled in the provisioning profile and the capabilities enabled in the app. This mismatch also applies to the IDs associated with particular capabilities (i.e., App Groups, Keychain Access etc).|Generally, you can create a new provisioning profile that enables the same capabilities as the app. When IDs between the profile and app don't match, the App Wrapping Tool will replace the IDs if it is able to. If you still get this error after creating a new provisioning profile, you can try  removing entitlements from the app by using the **–e** parameter (see [Using the –e parameter to remove entitlements from an app](#using-the---e-parameter-to-remove-entitlements-from-an-app).|
 
 ### Finding the existing entitlements of a signed app
 To review the existing entitlements of a signed app and provisioning profile:
