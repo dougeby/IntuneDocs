@@ -26,13 +26,16 @@ ms.suite: ems
 ---
 
 # Help protect your data with full or selective wipe using Microsoft Intune
-As with devices, at some point, you want or need to [retire apps](retire-apps-using-microsoft-intune.md) you have deployed to PCs and mobile devices because they are no longer needed. But you may also want to remove any app data from the device. To do this, Intune provides selective and full wipe capabilities. Because mobile devices can store sensitive corporate data and provide access to many corporate resources, you can issue a remote device wipe command from the Intune to wipe a lost or stolen device. Also, users can issue a remote device wipe command from the Intune on privately owned devices enrolled in Intune.
+As with devices, at some point, you want or need to [retire apps](retire-apps-using-microsoft-intune.md) you have deployed to PCs and mobile devices because they are no longer needed. You might also want to remove company data from the device. To do this, Intune provides selective wipe and full wipe capabilities. Because mobile devices can store sensitive corporate data and provide access to many corporate resources, you can issue a remote device wipe command from the Intune to wipe a lost or stolen device. Also, users can issue a remote device wipe command from the Intune on privately owned devices enrolled in Intune.
 
   > [!NOTE]
   > This topic is only about wiping devices managed by Intune. You can also use [the Azure preview portal](https://portal.azure.com) to [wipe company data from apps](wipe-managed-company-app-data-with-microsoft-intune.md).
 
-## <a name="bkmk_wipe"></a>Full or selectively wipe a device
+## Full wipe
+
 **Full wipe** restores a device to its factory default settings, removing all company and user data and settings. The device is removed from Intune. Full wipe is useful for resetting a device before giving it to a new user or instances where the device has been lost or stolen.  **Be careful about selecting full wipe. Data on the device cannot be recovered**.
+
+## Selective wipe
 
 **Selective wipe** removes company data including mobile app management (MAM) data where applicable, settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device. The device is removed from Intune. The following tables describe by platform what data is removed and the effect on data that remains on the device after a selective wipe.
 
@@ -110,7 +113,7 @@ It takes less than 15 minutes for a wipe to propagate across all device types.
 ## Wipe encryption file system (EFS)-enabled content
 Selective wipe of EFS-encrypted content is supported by Windows 8.1 and Windows RT 8.1. The following apply to a selective wipe of EFS-enabled content:
 
--   Only apps and data that are protected by EFS using the same Internet domain as the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] account are selectively wiped. For more information, see [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx).
+-   Only apps and data that are protected by EFS using the same Internet domain as the Intune account are selectively wiped. For more information, see [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx).
 
 -   If there are any changes are made to the domain associated with EFS, the changes can take up to 48 hours before apps and data using the new domain can be selectively wiped.
 

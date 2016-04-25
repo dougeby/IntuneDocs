@@ -53,7 +53,7 @@ For most scenarios, users can install the Company Portal app from the Windows St
 
     2.  In the [Intune administration console](http://manage.microsoft.com), click **Administration** &gt; **Mobile Device Management** &gt; **Windows Phone**.
 
-      ![](../media/Windows-Device-Enrollment.png)
+      ![](../media/windows-device-enrollment.png)
 
     3.  Type the URL of the verified domain of the company website in the **Specify a verified domain name** box and then click **Test Auto-Detection**.
 
