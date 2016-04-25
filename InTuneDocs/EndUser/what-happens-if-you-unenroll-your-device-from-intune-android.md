@@ -9,7 +9,7 @@ manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 
