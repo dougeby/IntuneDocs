@@ -32,7 +32,7 @@ This article answers some frequently asked questions about Intune. If you don't 
 
 -   **How can I know when the Intune service has been updated?**
 
-    Log on to your account at manage.microsoft.com. In Administration Overview, choose **View Service Status**. The location of your tenant and the maintenance schedule are listed there. Read about the service updates in the [What's new](../Topic/GetStarted/What-s-new-in-Microsoft-Intune.md) article.
+    Log on to your account at manage.microsoft.com. In Administration Overview, choose **View Service Status**. The location of your tenant and the maintenance schedule are listed there. Read about the service updates in the [What's new](/intune/deploy-use/whats-new-in-microsoft-intune) article.
 
 -   **If a user renames a device within the Company Portal app will that name change in Intune or Configuration Manager?**
 
@@ -66,7 +66,7 @@ This article answers some frequently asked questions about Intune. If you don't 
 
 -   **How can I troubleshoot device enrollment?**
 
-    Ways to troubleshoot common enrollment issues are  provided in [Troubleshoot device enrollment in Intune](../Topic/Troubleshoot/Troubleshoot-device-enrollment-in-Intune.md).
+    Ways to troubleshoot common enrollment issues are  provided in [Troubleshoot device enrollment in Intune](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune).
 
 -   **How can I collect enrollment logs if a user has an enrollment problem?**
 
@@ -78,7 +78,7 @@ This article answers some frequently asked questions about Intune. If you don't 
 
     -   **Can Intune detect whether a device is jailbroken?**
 
-        Yes, for some operating systems. For information on how to manage jailbroken devices, see[Manage device compliance policies](../Topic/DeployUse/Manage-device-compliance-policies-for-Microsoft-Intune.md).
+        Yes, for some operating systems. For information on how to manage jailbroken devices, see[Manage device compliance policies](/intune/deploy-use/Manage-device-compliance-policies-for-Microsoft-Intune.md).
 
     -   **Can I selectively wipe corporate data from a device?**
 
