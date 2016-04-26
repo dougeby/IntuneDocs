@@ -35,7 +35,7 @@ Administrator accounts for Intune aren't created in the Office 365 admin center,
 You can view tenant administrator information by using the Intune administration console, but you cannot create tenant administrators there. By default, the subscription owner becomes a tenant administrator for your Microsoft Intune service and has full access to both the Office 365 admin center and the Intune administration console. We recommend that you create a least one extra tenant administrator account by using the Office 365 admin center to help delegate tasks and to ensure that you don’t get locked out of your Intune service administrator account if you forget your password.
 
 ## Add individual user accounts
-Use the following steps to create additional user accounts in your trial tenant. Remember, each user account that you add counts as one of the 100 licenses that  you get as part of your Intune free evaluation.
+Use the following steps to create additional user accounts in your evaluation tenant. Remember, each user account that you add counts as one of the 100 licenses that  you get as part of your Intune free evaluation.
 
 1.  In the [Office 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854), choose **Add Users** &gt; **New**&gt; **User** to start the **New users** wizard.
 
@@ -81,4 +81,4 @@ Congratulations! You have just completed step 2 of the *Microsoft Intune evaluat
 
 >[!div class="step-by-step"]
 
->[&larr; **Sign up for a evaluation**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Create groups** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
+>[&larr; **Sign up for an evaluation**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Create groups** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  

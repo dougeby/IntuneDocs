@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Next steps after your Intune trial is completed | Microsoft Intune
+title: Next steps after your Intune evaluation is completed | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -25,10 +25,10 @@ ms.suite: ems
 
 ---
 
-# Next steps after your Intune trial is completed
+# Next steps after your Intune evaluation is completed
 If you purchase at least 150 licenses for Microsoft Intune in an eligible plan, you can use the "FastTrack Center Benefit," a service where Microsoft specialists work with you to get your environment ready for Intune. See [Microsoft Intune Service Benefit Description](https://technet.microsoft.com/library/mt228265.aspx).
 
-You can convert your free Intune trial to a paid subscription in the following ways:
+You can convert your free Intune evaluation to a paid subscription in the following ways:
 
 -   **Intune Subscription** - Licensed on a per-user basis. For more information, see [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx). After completing your purchase, follow the steps in  [Get started with a paid subscription to Microsoft Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) and review the additional configuration steps when you're getting started with Intune.
 
