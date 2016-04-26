@@ -32,7 +32,7 @@ To set up mobile device management with Intune, you must first set the mobile de
 
 1.  **Make Intune your mobile device management authority**
     In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** > **Mobile Device Management**, and then choose **Set MDM Authority** under **Tasks**.  Choose **Yes** in the MDM Authority dialog box.
-	![Admin console. Set mdm to Intune](./media/mdmAuthority.png "MDM authority set to use Intune")
+	![Admin console. Set mdm to Intune](./media/mdmAuthority.png)
 
 2.  **Enable MDM for your device platform**
     Enable mobile device management for the device platform you want to manage. Depending on your platform, different requirements are needed:
