@@ -31,10 +31,10 @@ Here are some device enrollment issues and how to troubleshoot and resolve them.
 
 > [!NOTE]
 > Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
->- [Send Android diagnostic data logs to your IT administrator using a USB cable](intune/end-user/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
->- [Send Android diagnostic data logs to your IT administrator using email](intune/end-user/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
->- [Send Android enrollment errors to your IT administrator](intune/end-user/send-enrollment-errors-to-your-it-administrator-android)
->- [Send iOS enrollment errors to your IT administrator](intune/end-user/send-errors-to-your-it-admin-ios)
+>- [Send Android diagnostic data logs to your IT administrator using a USB cable](intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+>- [Send Android diagnostic data logs to your IT administrator using email](intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+>- [Send Android enrollment errors to your IT administrator](intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
+>- [Send iOS enrollment errors to your IT administrator](intune/enduser/send-errors-to-your-it-admin-ios)
 
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
@@ -166,7 +166,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 5.  Check that Configuration Manager does not have a scheduled task, script, or other process which could be automatically purging non-domain, mobile, or related devices.
 
 ## iOS enrollment errors
-A list of other iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/end-user/using-your-ios-or-mac-os-x-device-with-intune).
+A list of other iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
 
 ### Next steps
 If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
