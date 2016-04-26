@@ -72,7 +72,7 @@ For non-MDM Windows devices, policy errors in the policyplatform.log file may be
 
 #### To resolve UAC issues
 
-1.  Retire the computer, as described in [Retire data and devices from Microsoft Intune management](/intune/deploy-use/retire-data-and-devices-from-microsoft-intune-management).
+1.  Retire the computer, as described in [Retire data and devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management).
 
 2.  Wait 20 minutes for the client software to be removed.
 
