@@ -31,7 +31,7 @@ ms.suite: ems
 All of these features are also supported for hybrid customers (Configuration Manager integrated with Intune).
 ### App management
 - **MAM user compliance.**
-You can now view the [status](Monitor-mobile-app-management-policies-with-Microsoft-Intune.md) of your application management policies for any user in your Azure Active Directory (AAD) tenant. This includes:
+You can now view the [status](monitor-mobile-app-management-policies-with-Microsoft-Intune.md) of your application management policies for any user in your Azure Active Directory (AAD) tenant. This includes:
    - Devices
    - Apps on the device
 
@@ -43,7 +43,7 @@ You can now view the [status](Monitor-mobile-app-management-policies-with-Micros
 
 
 - **MAM controls to prevent Outlook contacts sync (Android).**
-A new setting is available for [mobile application management](Create-and-deploy-mobile-app-management-policies-with-Microsoft-Intune.md) without device enrollment. This setting  allows you to prevent an application from syncing contacts to the native address book on Android devices. When this setting is enabled, targeted applications will no longer be able to save contacts to the native address book. When this setting is disabled, targeted applications will be able to save contacts to the native address book. When you [remotely wipe a device or app](Wipe-managed-company-app-data-with-Microsoft-Intune.md), contacts that have already been saved to the native address book will be removed. This new setting is supported initially by the Outlook application on Android devices.
+A new setting is available for [mobile application management](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) without device enrollment. This setting  allows you to prevent an application from syncing contacts to the native address book on Android devices. When this setting is enabled, targeted applications will no longer be able to save contacts to the native address book. When this setting is disabled, targeted applications will be able to save contacts to the native address book. When you [remotely wipe a device or app](wipe-managed-company-app-data-with-Microsoft-Intune.md), contacts that have already been saved to the native address book will be removed. This new setting is supported initially by the Outlook application on Android devices.
 
 ### Device management
 - **Phone number identification for corporate-owned devices.** Phones that are categorized as "Corporate" are now identified with their full phone number when, for example, you run a mobile device inventory report. BYOD phone numbers continue to be masked with ****, with only the last 4 digits displayed.
