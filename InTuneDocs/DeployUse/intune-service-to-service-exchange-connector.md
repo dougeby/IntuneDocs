@@ -37,7 +37,7 @@ The **Service to Service Connector** supports only hosted Exchange and has no re
 |Hosted Exchange configured and running|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Mobile device management authority| [Set the mobile device management authority to Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 |Microsoft Exchange version|You must have an Office 365 subscription that has an Exchange Server 2013 or later tenant. So long as the tenant is Exchange Server 2013 or later, the connector supports Exchange Server 2010 in that same environment.|
-|Active Directory Synchronization|Before you can use the Intune Connector, you must [set up Active Directory synchronization](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
+|Active Directory Synchronization|Before you can use the Intune Connector, you must [set up Active Directory synchronization](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
 
 ### Exchange cmdlet requirements
 
