@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add users to your 30 day trial of Microsoft Intune | Microsoft Intune
+title: Add users to your 30-day evaluation of Microsoft Intune | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Step 2: Add users to your 30-day trial of Microsoft Intune
+# Step 2: Add users to your 30-day evaluation of Microsoft Intune
 Now that you have set up your account, you'll use either the **New Users** wizard to add individual user accounts to Intune, or the **Bulk add users** wizard to add users in bulk (see the instructions in this section).  Before you get started, it's important that you understand how Intune handles administrator accounts.
 
 A tenant administrator  uses the Office 365 admin center to add  users to the Microsoft Intune **Users Group**. Adding users to the  **Users Group** assigns Intune subscription licenses to users and is also how you make those users to show up in the Microsoft Intune administration console.
@@ -35,7 +35,7 @@ Administrator accounts for Intune aren't created in the Office 365 admin center,
 You can view tenant administrator information by using the Intune administration console, but you cannot create tenant administrators there. By default, the subscription owner becomes a tenant administrator for your Microsoft Intune service and has full access to both the Office 365 admin center and the Intune administration console. We recommend that you create a least one extra tenant administrator account by using the Office 365 admin center to help delegate tasks and to ensure that you don’t get locked out of your Intune service administrator account if you forget your password.
 
 ## Add individual user accounts
-Use the following steps to create additional user accounts in your trial tenant. Remember, each user account that you add counts as one of the 100 licenses that  you get as part of your Intune free trial.
+Use the following steps to create additional user accounts in your trial tenant. Remember, each user account that you add counts as one of the 100 licenses that  you get as part of your Intune free evaluation.
 
 1.  In the [Office 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854), choose **Add Users** &gt; **New**&gt; **User** to start the **New users** wizard.
 
@@ -77,8 +77,8 @@ To add users in bulk to Intune,  use the **Bulk add users** wizard to upload a c
 Each user account that you added by importing it now appears in the **Users** node of the Office 365 admin center. When new users sign in for the first time, they must specify a new password for their user account.
 
 ### Next steps
-Congratulations! You have just completed step 2 of the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
+Congratulations! You have just completed step 2 of the *Microsoft Intune evaluation* walkthrough.
 
 >[!div class="step-by-step"]
 
->[&larr; **Sign up for a trial**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Create groups** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
+>[&larr; **Sign up for a evaluation**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Create groups** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  

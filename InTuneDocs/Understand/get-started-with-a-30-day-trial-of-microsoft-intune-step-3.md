@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create groups to organize trial subscription users and devices | Microsoft Intune
+title: Create groups to organize evaluation subscription users and devices | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Step 3: Create groups to organize trial subscription users and devices
+# Step 3: Create groups to organize evaluation subscription users and devices
 Groups in Intune give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics) and use them to perform a variety of administrative tasks at scale, from setting policies for a set of users to deploying applications to a set of devices.
 
 ## Create a device group
@@ -63,7 +63,7 @@ You can find the newly created group in the **Groups** list, in the **Groups** w
 To learn more about using groups, see [Use groups to manage users and devices with Microsoft Intune](/Intune/Deploy-Use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ### Next steps
-Congratulations! You have just completed step 3 of the *Get started with a 30-day trial of Microsoft Intune* walkthrough.
+Congratulations! You have just completed step 3 of the *Microsoft Intune evaluation* walkthrough.
 
 >[!div class="step-by-step"]
 
