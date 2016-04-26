@@ -66,7 +66,7 @@ You must create an Active Directory user account that is used by the Intune Exch
 ## Download the on-premises Exchange Connector software installation package
 
 1. On a supported operating system for the on-premises Exchange Connector, open the [Microsoft Intune administration console](http://manage.microsoft.com) (http://manage.microsoft.com) with a user account that is an administrator in the Exchange tenant with a license to use Exchange Server.
-![](../media/ExchangeConnector.gif)
+![Open set up Exchange Connection](../media/ExchangeConnector.gif)
 
 2.  In the workspace shortcuts pane, choose **ADMIN**.
 
@@ -91,7 +91,7 @@ Perform the following steps to install the Intune on-premises Exchange Connector
 
 3.  In the **Exchange server** field, select your Exchange server environment type, either **On-premises Microsoft Exchange Server** or select **Hosted Microsoft Exchange Server**.
 
-  ![IntuneSA1dconfigureExchConnector](../media/IntuneSA1dconfigureExchConnector.png)
+  ![Choose your Exchange Server type](../media/IntuneSA1dconfigureExchConnector.png)
 
   For an on-premises Exchange server, provide either the server name or the fully qualified domain name of the Exchange server that hosts the **Client Access Server** role.
 

@@ -146,7 +146,7 @@ After you set up your groups and policies, check the practical implications of y
 1. Select any device from a device group and browse through the categories of information at the top of the screen.
 2. Select **Policy** . You'll see something like this screenshot of an Android device's policy settings.
 
-![](intune/media/Intune-Device-Policy-v.2.jpg)
+![](../media/Intune-Device-Policy-v.2.jpg)
 
 Each policy has an **Intended Value** and a **Status**. The intended value is what you meant to achieve when assigning the policy. The status is what you actually achieved when all of the policies that apply to the device, as well as the restrictions and requirements of the hardware and the operating system, are considered together.  In the screenshot you can see two clear examples:
 

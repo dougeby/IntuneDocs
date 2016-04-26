@@ -32,7 +32,7 @@ Use the following information to help you troubleshoot common client setup probl
 
 -   If no client software deployment alerts for the computer are displayed in the [Microsoft Intune administration console](https://manage.microsoft.com/) check the computer’s Internet connectivity and proxy configuration and make sure that the computer can communicate with the service URL, [https://manage.microsoft.com](https://manage.microsoft.com). Then retry the client software installation.
 
--   You can have an email sent to selected recipients when a client software deployment failure alert occurs by configuring a notification rule in the **Admin** workspace. For more information, see [Get notified by Microsoft Intune alerts](intune/deploy-use/get-notified-by-microsoft-intune-alerts.md).
+-   You can have an email sent to selected recipients when a client software deployment failure alert occurs by configuring a notification rule in the **Admin** workspace. For more information, see [Get notified by Microsoft Intune alerts](../deployuse/get-notified-by-microsoft-intune-alerts.md).
 
 -   Intune displays the critical alert **Client Software Deployment Failure** if the client software fails to deploy. This will display in the **System Overview** page and **Alerts** pages of the [Microsoft Intune administration console](https://manage.microsoft.com/). Here's how to check for alerts:
 
@@ -59,7 +59,7 @@ For non-MDM Windows devices, policy errors in the policyplatform.log file may be
 
 ### To resolve UAC issues
 
-1.  Retire the computer, as described in [Retire data and devices from Microsoft Intune management](../deployuse/retire-devices-from-microsoft-intune-management.md).
+1.  Retire the computer, as described in [Retire data and devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management).
 
 2.  Wait 20 minutes for the client software to be removed.
 

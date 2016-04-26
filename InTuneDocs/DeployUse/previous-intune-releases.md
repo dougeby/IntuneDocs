@@ -72,7 +72,7 @@ You can use your third-party mobile device management (MDM) vendor to take advan
 
      1. Users are required to log in with their work account before they get access to any corporate data from Cloud Services or other apps. This ensures that mobile app management (MAM) policies are in place when the data is accessed.
 
-     2. Managed  email profiles and other managed apps deployed through a third-parter MDM solution can share files and data with the apps that have Intune MAM policies.
+     2. Managed  email profiles and other managed apps deployed through a third-party MDM solution can share files and data with the apps that have Intune MAM policies.
 
 - **Manage the Microsoft Outlook app with MAM policies for devices not enrolled in Intune**
 You can now manage the Microsoft Outlook app on devices that are not enrolled in Intune with the Intune mobile application management policy. The updated Microsoft Outlook app with the MAM capabilities is available for both [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) devices. Use the instructions in the [Create and deploy mobile app management policies](https://technet.microsoft.com/library/mt627829.aspx) topic to create a MAM policy.  
@@ -95,7 +95,7 @@ Support for Windows Store for Business is available in Intune to help you find, 
 
 ### Device management
 - **PFX certificates distribution for iOS devices**
-Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](secure-resource-access-withcertificate-profiles-with-microsoft-intune.md).
+Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](secure-resource-access-with-certificate-profiles-with-microsoft-intune.md).
 
 
 - **Apply apps and policies to different device groups based on user category selection**
@@ -157,7 +157,7 @@ You can now issue a remote full wipe of Windows 10 desktop devices enrolled in I
 
 
 ### Apple Volume Purchase Program (VPP) update
-Intune can now help you [manage apps you purchased through the Apple Volume Purchase Program (VPP) for Business](manage-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md). This includes synchronizing license information between Apple and Intune, and tracking how many copies of each app you have deployed.
+Intune can now help you [manage apps you purchased through the Apple Volume Purchase Program (VPP) for Business](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md). This includes synchronizing license information between Apple and Intune, and tracking how many copies of each app you have deployed.
 
 ### Use IMEI numbers to identify corporate-owned devices
 You can now [import international mobile equipment identity (IMEI) numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) for mobile device platforms that have an IMEI number to help identify corporate-owned mobile devices. Once enrolled in Intune, devices with imported IMEI numbers are tagged as Corporate, which can be used for applying policies that are different than those applied to personally owned devices.

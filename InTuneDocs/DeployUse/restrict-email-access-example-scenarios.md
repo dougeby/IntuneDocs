@@ -46,7 +46,7 @@ To accomplish this, configure a conditional access policy for Exchange Online wi
 
 The following flow is used to decide which devices can access Exchange Online:
 
-![](./media/ConditionalAccess8-5.png)
+![Device access flow](./media/ConditionalAccess8-5.png)
 
 ## All iOS devices that access Exchange on-premises must be managed by Intune
 ### Scenario requirements
@@ -65,7 +65,7 @@ To accomplish this, configure the following conditional access policy for Exchan
 
 The following flow is used to decide which devices can access Exchange:
 
-![](./media/ConditionalAccess8-3.png)
+![Device access flow](./media/ConditionalAccess8-3.png)
 
 ## No Android devices can access Exchange on-premises.
 ### Scenario requirements
@@ -83,4 +83,4 @@ To accomplish this, configure a conditional access policy for Exchange on-premis
 
 The following flow is used to decide which devices can access Exchange:
 
-![](./media/ConditionalAccess8-4.png)
+![Device access flow](./media/ConditionalAccess8-4.png)
