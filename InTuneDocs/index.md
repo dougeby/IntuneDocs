@@ -144,51 +144,51 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/protect-apps-and-data-with-microsoft-intune">
-                    <h3>Protect apps and data</h3>
-                    <p>Protect your apps against data loss and other threats.</p>
+                  <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
+                    <h3>What to tell your end users</h3>
+                    <p>Understand the steps your end users need to perform to use their devices with Intune and share this information with end users to help them complete tasks on their own.</p>
                   </a>
                 </li>
               </ul>
 
 	      <ul class="row">
                 <li class="column-third">
-                  <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
-                    <h3>Overview of device and app lifecycles</h3>
-                    <p>Learn about the typical phases involved with managing devices and apps using Intune.</p>
+                  <a href="/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune">
+                    <h3>Device compliance policies</h3>
+                    <p>Create and use compliance policies that protect your apps and data.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/enroll-devices-in-microsoft-intune">
-                    <h3>Enroll devices</h3>
-                    <p>Learn the various ways to enroll mobile devices and Windows PCs into management with Intune.</p>
+                  <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
+                    <h3>Restrict access to email and O365 services</h3>
+                    <p>Use Intune's conditional access capability to restrict access to company email and Office 365 services.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/protect-apps-and-data-with-microsoft-intune">
-                    <h3>Protect apps and data</h3>
-                    <p>Protect your apps against data loss and other threats.</p>
+                  <a href="/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies">
+                    <h3>Manage settings and features on your devices</h3>
+                    <p>Use Intune policies to control settings and features on your devices and computers.</p>
                   </a>
                 </li>
               </ul>
 
                 <ul class="row">
                 <li class="column-third">
-                  <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
-                    <h3>Overview of device and app lifecycles</h3>
-                    <p>Learn about the typical phases involved with managing devices and apps using Intune.</p>
+                  <a href="/intune/deploy-use/deploy-apps-in-microsoft-intune">
+                    <h3>Deploy apps to devices and PCs</h3>
+                    <p>Deploy an app to selected devices and users.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/enroll-devices-in-microsoft-intune">
-                    <h3>Enroll devices</h3>
-                    <p>Learn the various ways to enroll mobile devices and Windows PCs into management with Intune.</p>
+                  <a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">
+                    <h3>Protect app data</h3>
+                    <p>Use Intune’s Mobile App Management (MAM) policies to help protect app data.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/protect-apps-and-data-with-microsoft-intune">
-                    <h3>Protect apps and data</h3>
-                    <p>Protect your apps against data loss and other threats.</p>
+                  <a href="/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune">
+                    <h3>Remote lock and passcode reset</h3>
+                    <p>Protect remote or lost devices by using remote lock and passcode capabilities.</p>
                   </a>
                 </li>
               </ul>
