@@ -89,4 +89,4 @@ In addition to the Intune client agent actions taken locally on individual compu
 
 -   Respond to remote assistance requests
 
-The Intune client agent usually runs quietly in the background without the need for much user interaction or troubleshooting. However, should you need help in resolving computer management issues, there are several [resources available to help you solve them](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md).
+The Intune client agent usually runs quietly in the background without the need for much user interaction or troubleshooting. However, should you need help in resolving computer management issues, there are several [resources available to help you solve them](/intune/troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md).

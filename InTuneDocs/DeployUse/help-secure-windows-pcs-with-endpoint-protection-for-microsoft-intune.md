@@ -92,7 +92,7 @@ If you have set the policy values for **Install Endpoint Protection** and **Enab
 |**Enable behavior monitoring**|Allows Microsoft Intune Endpoint Protection to check for certain patterns of suspicious activity on client computers.<br /><br />Recommended value: **Yes**|
 |**Enable Network Inspection System**|Enables Network Inspection System (NIS) on client computers. NIS uses signatures of known vulnerabilities from the [Microsoft Malware Protection Center](http://go.microsoft.com/fwlink/?LinkId=234249) to help detect and block malicious network traffic.<br /><br />Recommended value: **Yes**|
 
-  ![](../media/pol-sa-pc-policy-realtime.png)
+  ![Realtime settings for Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 
 ### Scan schedule settings
 
@@ -166,7 +166,7 @@ You monitor the status of malware on your computers by using the **Protection** 
 > [!IMPORTANT]
 > The **Protection** workspace is not displayed in the administrator console until you have installed the client and are managing at least one computer client.
 
-  ![](../media/pol-sa-ep-monitor.png)
+  ![Monitor Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
 ### How to view Recent Detection Paths for malware on computers
 Intune can display the paths of up to 10 most recently detected instances of malware on a device. The **Recent Detection Path** is disabled by default. To enable this view:

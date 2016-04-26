@@ -72,4 +72,4 @@ The following are software requirements for installing the Intune PC client:
 |Remove incompatible client software|Before you install the Intune PC client software, you must uninstall the following client software from that PC:<br /><br />-   Any version of Configuration Manager<br />-   Any version of Microsoft Systems Management Server (SMS)|
 
 ### See also
-[Mobile device management capabilities in Microsoft Intune](mobile-device-management-capabilties-in-microsoft-intune.md)
+[Mobile device management capabilities in Microsoft Intune](/intune/understand/mobile-device-management-capabilties-in-microsoft-intune.md)
