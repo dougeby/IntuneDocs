@@ -95,7 +95,7 @@ Support for Windows Store for Business is available in Intune to help you find, 
 
 ### Device management
 - **PFX certificates distribution for iOS devices**
-Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](secure-resource-access-with-certificate-profiles-with-microsoft-intune.md).
+Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](secure-resource-access-with-certificate-profiles.md).
 
 
 - **Apply apps and policies to different device groups based on user category selection**
