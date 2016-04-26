@@ -95,6 +95,8 @@ During the pilot you will deploy the policy to a small group of test users and d
 
 **Help desk:** Ensure that your help desk is aware of any changes to policies that will affect the user experience, as these may result in support requests.
 
-### See Also
-[Troubleshoot policies in Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
-<!--- [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)--->
+
+### See also
+[Get ready to configure mobile app management policies with Microsoft Intune](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+
+[Troubleshoot policies in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)

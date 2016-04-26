@@ -46,7 +46,7 @@ The following steps will help you set up a mobile device configuration policy, a
 1.  Open the [Intune administration console](https://manage.microsoft.com/).
 
 2.  In the left pane, choose the **Policy** icon.
-![admin-console-policy-workspace](./media/policy.png "POLICY workspace of the Intune administration console")
+![admin-console-policy-workspace](./media/policy.png)
 
 3.  In the **Tasks** list on the **Policy Overview** page, choose **Add Policy**.
 
@@ -59,7 +59,7 @@ Your policy appears in the list of configuration policies, and has been deployed
 ## Publish the Skype app for mobile devices
 
 1.  In the [Intune administration console](https://manage.microsoft.com/), choose the **Apps** icon, then choose **Apps** > **Add App**. If prompted, enter your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] credentials.
-![admin-console-apps-workspace](./media/apps.png "APPS workspace of the Intune administration console")
+![admin-console-apps-workspace](./media/apps.png)
 
     > [!NOTE]
     > When you start the **Intune Software Publisher** for the first time, a short delay occurs while the application is installed.

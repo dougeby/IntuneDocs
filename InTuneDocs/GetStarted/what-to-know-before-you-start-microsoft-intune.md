@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What to know before you start | Microsoft Intune
+title: What to know before you start Microsoft Intune | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
