@@ -38,4 +38,4 @@ To help you decide between Intune standalone-v-ActivSync, read the [choose how t
 
 
 ## Next steps
-Read the [Introduction to Intune](introduction-to-microsoft-intune.md) if you want to learn more about Intune as a standalone solution for enterprise mobility.
+Read the [Introduction to Intune](/intune/understand/introduction-to-microsoft-intune.md) if you want to learn more about Intune as a standalone solution for enterprise mobility.
