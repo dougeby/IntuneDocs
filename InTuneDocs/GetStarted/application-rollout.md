@@ -48,13 +48,13 @@ Consider the following:
 
 -   The suitability of  the app for your users and their devices (all operating systems that are likely to be used).
 
--   Check that the installer for the app you chose is supported by Intune app distribution, as described in  [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).
+-   Check that the installer for the app you chose is supported by Intune app distribution, as described in  [Add apps with Microsoft Intune](/intune/deploy-use/add-apps).
 
 -   Ensure that app distribution prerequisites are installed. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
 
 -   Determine that the app type is supported by Intune.
 
--   Check that  you have sufficient cloud storage space available to upload the app. Instructions for purchasing additional storage are provided in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).
+-   Check that  you have sufficient cloud storage space available to upload the app. Instructions for purchasing additional storage are provided in [Add apps with Microsoft Intune](/intune/deploy-use/add-apps).
 
 ## Proof of concept
 In the Proof of concept phase test your app deployment in a laboratory environment on devices and users that you've configured strictly for testing purposes.
@@ -95,4 +95,3 @@ During the pilot you will deploy the app to a small group of test users and devi
 [Deploy apps](/intune/deploy-use/deploy-apps)
 
 [Troubleshoot app deployment problems in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)
-
