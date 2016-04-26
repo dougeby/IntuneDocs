@@ -39,7 +39,7 @@ When a new version of an app you have deployed is released, Intune lets you upda
 
 ### To update an app
 
-1.  In the [Microsoft Intune administrator console](https://account.manage.microsoft.com/admin/default.aspx), click **Apps** &gt; **Apps**.
+1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Apps**.
 
 2.  From the **Apps** list, select the app you want to update, and then click **Edit**.
 

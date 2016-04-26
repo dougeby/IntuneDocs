@@ -46,11 +46,11 @@ Install the Company Portal app on your device:
 
 3.  In the list of results, tap **Company Portal**.
 
-    ![](./media/WP81-1-CP-search-store-v2.png)
+    ![Company portal search results](./media/WP81-1-CP-search-store-v2.png)
 
 4.  Tap **Company Portal**  &gt; **Install**.
 
-    ![](./media/WP81-2-CP-install-v2.png)
+    ![Install company portal](./media/WP81-2-CP-install-v2.png)
 
 Enroll your device:
 
@@ -62,19 +62,19 @@ Enroll your device:
 
 4.  Tap **Tap to enroll or identify this device**.
 
-    ![](./media/WP81-enroll-1-swipe-my-devices.png)
+    ![Tap to enroll or identify this device screen](./media/WP81-enroll-1-swipe-my-devices.png)
 
 5.  Tap **Enroll this device**.
 
-    ![](./media/WP81-enroll-2-enroll-this-device.png)
+    ![Enroll this device screen](./media/WP81-enroll-2-enroll-this-device.png)
 
 6.  Tap **Add account**.
 
-    ![](./media/WP81-enroll-3-workplace-add-acct.png)
+    ![Workplace settings screen](./media/WP81-enroll-3-workplace-add-acct.png)
 
 7.  Enter additional information as requested and then tap **sign in** to complete the enrollment. You should now see your workplace account listed on the **Settings** &gt; **Workplace** page.
 
-    ![](./media/WP81-enroll-4-account-added.png)
+    ![Account added screen](./media/WP81-enroll-4-account-added.png)
 
 ## If you are not allowed to access the Windows Store from your Windows Phone or if you do not have a Microsoft Account
 

@@ -66,7 +66,7 @@ Click the app to see the supported scenarios, platforms and whether or not the a
 
 3.  Navigate to the **Active Users** page to add users and assign [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses.
 
-    ![](../media/AppManagement/OfficePortal_AddUsers.png)
+    ![Office Portal add users page](../media/AppManagement/OfficePortal_AddUsers.png)
 
 4.  To give a user the ability to access the Office portal, the Azure AD portal and the Azure  portal, assign the **Global administrator role** to the user.
 

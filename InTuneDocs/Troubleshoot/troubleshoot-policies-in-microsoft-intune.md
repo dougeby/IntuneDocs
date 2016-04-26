@@ -51,7 +51,7 @@ In the screenshot below you can see two clear examples:
 
 -   Similarly, the expanded policy item **Email settings for iOS devices** is not applied to this device, as it is an Android device.
 
-![](intune/media/Intune-Device-Policy-v.2.jpg)
+![Intune device policy](intune/media/Intune-Device-Policy-v.2.jpg)
 
 > [!NOTE]
 > Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.

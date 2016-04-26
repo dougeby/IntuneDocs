@@ -44,7 +44,7 @@ You can deploy Wi-Fi profiles to the following platforms:
 
 -   Mac OS X 10.9 and later
 
-For devices that run Windows 8.1 and later, you can import a Wi-Fi configuration profile that was previously exported to a file. For details, see [Import a Wi-Fi profile)](#import-a-wi-fi-profile).
+For devices that run Windows 8.1 and later, you can import a Wi-Fi configuration profile that was previously exported to a file. For details, see Import a Wi-Fi profile later in this topic.
 
 ## How to create a Wi-Fi profile
 

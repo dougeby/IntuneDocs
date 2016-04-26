@@ -97,7 +97,7 @@ As with devices, at some point, you want or need to [retire apps](retire-apps-us
 
         1.  In the [Intune administrator console](https://manage.microsoft.com/), choose **Groups** &gt; **All Mobile Devices**.
 
-      ![](../media/dev-sa-wipe.png)
+      ![Starting a retire or wipe operation](../media/dev-sa-wipe.png)
 
         2.  Choose **Devices**, and then choose the name of the mobile device you want to wipe. Use Ctrl+click to multi-select devices.
 

@@ -49,7 +49,7 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
     1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Owned Devices**, and then click **Add…**.
 
-    ![](../media/pol-sa-corp-enroll.png)
+    ![Create device enrollment profile](../media/pol-sa-corp-enroll.png)
 
     2.  Enter details for the device profiles:
 
@@ -77,7 +77,7 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 3.  **Add iOS devices to enroll with Setup Assistant**
     In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices**, and then click **Add devices…**. You can add devices in two ways:
 
-    ![](../media/pol-SA-enroll-iOS-SetupAssistant.png)
+    ![Add devices dialog box](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
     -   **Upload a CSV file containing serial numbers** – Create a comma-separated value (.csv) list of two columns without a header, limited to 5000 devices or 5MB per csv file.
 

@@ -35,7 +35,7 @@ Intune supports the enrollment of corporate-owned iOS devices using the [Apple C
 
     1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then click **Add…**.
 
-        ![](../media/pol-sa-corp-enroll.png)
+        ![Create device enrollment profile page](../media/pol-sa-corp-enroll.png)
 
     2.  Enter details for the device profiles:
 
@@ -52,7 +52,7 @@ Intune supports the enrollment of corporate-owned iOS devices using the [Apple C
 2.  **Add iOS devices to enroll with Apple Configurator**
     In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Groups** &gt; **All Devices** &gt; **Corporate pre-enrolled devices** &gt; **By iOS serial number**, and then click **Add devices…**.
 
-    ![](../media/pol-SA-enroll-iOS-SetupAssistant.png)
+    ![iOS setup assistant](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
       You can add devices in two ways:
 
