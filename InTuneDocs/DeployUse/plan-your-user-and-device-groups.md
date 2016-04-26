@@ -150,11 +150,11 @@ These screen shots show how to create Intune groups based on groups synchronized
 
 Under Membership criteria, select **US Users Group**, synchronized from AD, as the security group to use under Membership rules.
 
-![](/intune/media/Intune_Planning_Groups_AD_Criteria_small.png)
+![Edit group dialog box](/intune/media/Intune_Planning_Groups_AD_Criteria_small.png)
 
 Review and then choose **Finish** to finish creating the group.
 
-![](/intune/media/Intune_Planning_Groups_AD_Summary_small.png)
+![Edit group dialog box](/intune/media/Intune_Planning_Groups_AD_Summary_small.png)
 
 In our example, we’ve also created a Middle East and Asia group, MEA.
 
@@ -164,11 +164,11 @@ In our example, we’ve also created a Middle East and Asia group, MEA.
 ### Groups for specific hardware
 If your organization requires policies that apply to specific hardware types, you can create groups based on this requirement. You can base them on specific groups that you have already created in your on-premises AD, and synchronize them to Azure AD. You can also create them directly in Azure AD. In this example, we use the **US Users Group** as the parent for the **Laptop Users** group.
 
-![](/intune/media/Intune_Planning_Groups_Laptop_small.png)
+![Select security group dialog box](/intune/media/Intune_Planning_Groups_Laptop_small.png)
 
 At this point, the groups hierarchy should appear as shown below. As you see, there are now members within the Intune group **Laptop Users**. Any policies applied to this group will now be applied to BYOD laptop users from the US region.
 
-![](/intune/media/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+![Display of Laptop Users group](/intune/media/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### Groups for specific operating systems
 If your organization requires policies that apply to specific operating systems such as Android, iOS, or Windows, you can create groups based on this requirement. As in the previous examples, you can base them on OS-specific groups that you have already created in your on-premises AD, and synchronize them to Azure AD. You can also directly create them in Azure AD.
@@ -180,30 +180,30 @@ Following the same method from the previous examples, we can create groups based
 >
 > You cannot provision groups dynamically based on the OS of the device . Do this using AD or AAD Security groups.
 
-![](/intune/media/Intune_Planning_Groups_OS_Hierachy_small.png)
+![Display of laptop users group](/intune/media/Intune_Planning_Groups_OS_Hierachy_small.png)
 
 Once all your User groups are populated based on these organizational requirements, your group hierarchy should look something like this:
 
-![](/intune/media/Intune_Planning_Groups_Midpoint_Hierachy_small.png)
+![Groups hierarchy view](/intune/media/Intune_Planning_Groups_Midpoint_Hierachy_small.png)
 
 This hierarchy can be used to apply the organization's policies appropriately.
 
 ### Device groups
 You can also create similar groups for devices as shown below, starting with a broad group that includes all employee-owned devices, for the BYOD scenario:
 
-![](/intune/media/Intune_Planning_Groups_Device_General_small.png)
+![Create Group dialog box](/intune/media/Intune_Planning_Groups_Device_General_small.png)
 
 Make sure you select **All devices (computers and mobile)** so that the group will include all BYO devices:
 
-![](/intune/media/Intune_Planning_Groups_Device_Criteria_small.png)
+![Define membership criteria page](/intune/media/Intune_Planning_Groups_Device_Criteria_small.png)
 
 Review and choose **Finish** to create the BYOD group.
 
-![](/intune/media/Intune_Planning_Groups_Device_Summary_small.png)
+![Create group dialog box](/intune/media/Intune_Planning_Groups_Device_Summary_small.png)
 
 Continue to create device groups, until you have a device group hierarchy similar to the user group hierarchy. Then your group node in the Intune console should look similar to this:
 
-![](/intune/media/Intune_Groups_Hierarchy_Final_Small.png)
+![Intune groups hierarchy view](/intune/media/Intune_Groups_Hierarchy_Final_Small.png)
 
 ## Group hierarchies and naming conventions
 To make policy management easier, we recommend that you name each policy according to  purpose, platform, and scope to which it is applied. This naming standard should follow the group structure that you created in preparation for applying your policies.
@@ -211,11 +211,11 @@ To make policy management easier, we recommend that you name each policy accordi
 For instance, for an Android policy that is applied to all corporate, android, mobile devices at the US regional level, the policy can be named
 **CO_US_Mob_Android_General**.
 
-![](/intune/media/Intune_planning_policy_android_small.png)
+![Create policy for Android](/intune/media/Intune_planning_policy_android_small.png)
 
 By naming the policies this way you can quickly identify policies and their intended use and scope from the console’s policies node, as shown:
 
-![](/intune/media/Intune_planning_policy_view_small.png)
+![Intune policy list](/intune/media/Intune_planning_policy_view_small.png)
 
 ## Next steps
 [Create groups](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)

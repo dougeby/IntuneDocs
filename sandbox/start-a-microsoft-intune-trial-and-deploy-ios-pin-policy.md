@@ -86,11 +86,11 @@ These step-by-step instructions help you set up an Intune trial and configure a 
 
 4.  On the user creation confirmation page, click **Close**.
 
-    ![](../media/30-day-trial-walkthrus/30day-crt-user-9-close-confirm.png)
+    ![User creation confirmation page](../media/30-day-trial-walkthrus/30day-crt-user-9-close-confirm.png)
 
 5.  Click the **Refresh** button to see the test user you created.
 
-    ![Accoutn confirmation](../media/30-day-trial-walkthrus/30day-crt-user-10-refresh-user.png)
+    ![Account confirmation](../media/30-day-trial-walkthrus/30day-crt-user-10-refresh-user.png)
 
 ## Configure an iOS PIN policy for the test user
 
