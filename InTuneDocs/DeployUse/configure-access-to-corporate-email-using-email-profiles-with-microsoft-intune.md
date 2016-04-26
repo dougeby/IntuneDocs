@@ -107,4 +107,4 @@ A status summary and alerts on the **Overview** page of the **Policy** workspace
 > If you want to remove an email profile from a device, edit the deployment and remove any groups of which the device is a member.
 
 ### See also
--  For a walk-through of setting up an email profile on iOS devices, see [Set up email access for iOS devices using Microsoft Intune](/intune/understand/set-up-email-access-for-ios-devices-using-microsoft-intune.md).
+-  For a walk-through of setting up an email profile on iOS devices, see [Set up email access for iOS devices using Microsoft Intune](/intune/understand-explore/set-up-email-access-for-ios-devices-using-microsoft-intune).

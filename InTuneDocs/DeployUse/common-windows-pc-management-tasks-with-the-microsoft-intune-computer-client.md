@@ -142,7 +142,7 @@ When you retire a computer:
     > [!IMPORTANT]
     > If the client software was installed by using a Group Policy Object (GPO), you must remove the Group Policy Object (GPO) before you can remove the client software to prevent the software from being reinstalled.
 
-    If the client fails to uninstall, read [Troubleshoot Endpoint Protection](/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
+    If the client fails to uninstall, read [Troubleshoot Endpoint Protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
 
 ## Manage user-device linking
 Before you can deploy software to a user, you must link the user to a computer. You can link a user to multiple computers, but each computer can be linked to only one user. Users are automatically linked to any computers that they enroll in Intune by using the company portal.
