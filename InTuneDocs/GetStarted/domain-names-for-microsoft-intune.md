@@ -35,7 +35,7 @@ When your organization signs up for a cloud-based service from Microsoft like In
 
 By default, when you use the onmicrosoft domain, each user you import receives the **onmicrosoft.com** suffix for their user principal name (UPN).
 
-To use a domain name that you own rather than the one that you were given at sign-up, you can add the domain name to Azure Active Directory. After you add the domain, and it has been verified that you own it, you can create accounts and groups that include the domain name by changing DNS resource records at your DNS hosting provider. To simplify management of user accounts when you plan to use a custom domain, [configure a custom domain name](get-started-with-a-paid-subscription-to-microsoft-intune-step-2.md) to your subscription before you begin to synchronize users from your local Active Directory.
+To use a domain name that you own rather than the one that you were given at sign-up, you can add the domain name to Azure Active Directory. After you add the domain, and it has been verified that you own it, you can create accounts and groups that include the domain name by changing DNS resource records at your DNS hosting provider. To simplify management of user accounts when you plan to use a custom domain, configure a custom domain name to your subscription before you begin to synchronize users from your local Active Directory.
 
 Configuring domain names and DNS resource records for Intune is the same as for other Azure Active Directory tenants. See [Add your custom domain name to simplify sign-in using Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/) for instructions.
 

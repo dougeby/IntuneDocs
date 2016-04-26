@@ -57,5 +57,5 @@ After setting up the MDM authority, you need to set up device management for the
 - [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
 
 You can also:
- - Use the [device enrollment manager account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) to enroll many devices allowed
- - [Specify company-owned devices using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) to help enroll devices and target policy
+ - Use the [device enrollment manager account](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) to enroll many devices allowed
+ - [Specify company-owned devices using IMEI numbers](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) to help enroll devices and target policy

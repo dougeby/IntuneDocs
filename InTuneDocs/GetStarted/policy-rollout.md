@@ -61,7 +61,7 @@ Define the scope of your Intune policy deployment:
 ## Proof of concept
 In the Proof of concept phase, test your policy deployment in a laboratory environment on devices and users that you've configured strictly for testing purposes.
 
--   Have your help desk participate in this phase to learn what issues can arise during pilot and production deployment. Troubleshooting information is available in [Troubleshoot policies in Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md).
+-   Have your help desk participate in this phase to learn what issues can arise during pilot and production deployment. Troubleshooting information is available in [Troubleshoot policies in Microsoft Intune](/intune/troubleshoot-policies-in-microsoft-intune).
 
 -   At this point in the process you should develop communication plans for pilot and production users. At a minimum the plan should include what device behaviors will change and when, the business purpose for the change, and what to do if users or IT staff encounter issues, both self-help information and how to contact the help desk.
 
@@ -97,4 +97,4 @@ During the pilot you will deploy the policy to a small group of test users and d
 
 ### See Also
 [Troubleshoot policies in Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
-[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
+<!--- [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)--->

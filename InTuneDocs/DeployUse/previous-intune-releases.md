@@ -95,7 +95,7 @@ Support for Windows Store for Business is available in Intune to help you find, 
 
 ### Device management
 - **PFX certificates distribution for iOS devices**
-Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](secure-resource access-withcertificate-profiles-with-microsoft-intune.md).
+Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](secure-resource-access-withcertificate-profiles-with-microsoft-intune.md).
 
 
 - **Apply apps and policies to different device groups based on user category selection**
@@ -160,7 +160,7 @@ You can now issue a remote full wipe of Windows 10 desktop devices enrolled in I
 Intune can now help you [manage apps you purchased through the Apple Volume Purchase Program (VPP) for Business](manage-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md). This includes synchronizing license information between Apple and Intune, and tracking how many copies of each app you have deployed.
 
 ### Use IMEI numbers to identify corporate-owned devices
-You can now [import international mobile equipment identity (IMEI) numbers](specifiy-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) for mobile device platforms that have an IMEI number to help identify corporate-owned mobile devices. Once enrolled in Intune, devices with imported IMEI numbers are tagged as Corporate, which can be used for applying policies that are different than those applied to personally owned devices.
+You can now [import international mobile equipment identity (IMEI) numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) for mobile device platforms that have an IMEI number to help identify corporate-owned mobile devices. Once enrolled in Intune, devices with imported IMEI numbers are tagged as Corporate, which can be used for applying policies that are different than those applied to personally owned devices.
 
 ### More apps are now compatible with Intune MAM policies
 Additional apps from Microsoft partners are now compatible with Intune mobile application management (MAM) policies (for devices managed by Intune):
