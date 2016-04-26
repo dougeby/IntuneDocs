@@ -73,7 +73,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 8.  Remove devices as appropriate, such as those that are no longer in use, or those that have inaccurate definitions.
 
 > [!NOTE]
-> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [../deployuse/Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 >
 > A user account which is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
