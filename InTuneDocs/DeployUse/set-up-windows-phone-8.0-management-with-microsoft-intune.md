@@ -37,7 +37,7 @@ Before you can manage Windows Phone mobile devices with Intune, you have to set 
 
 -   **Windows Phone 8** - Required
 
-![](../media/wpcertreqs.png)
+![Certificate requirements diagram](../media/wpcertreqs.png)
 
   > [!IMPORTANT]
   > The Symantec certificate used to manage certain Windows and Windows Phone mobile devices [must be renewed periodically](renew-a-symantec-code-signing-certificate.md).
@@ -68,7 +68,7 @@ Setup requirements for Window Phone mobile device management depend upon how you
 
         -   `enterpriseregistration.windows.net` – Supports workplace join for mobile devices. It also supports conditional access for Windows 8.1
 
-    ![](../media/windows-phone-enrollment.png)
+    ![Windows Phone Mobile Device Management Settings dialog box](../media/windows-phone-enrollment.png)
 
 3.  **Certificate management to support app signing**
     [Required for Windows Phone 8.0 and Windows Phone 8.1 that won’t access the Windows Phone Store and/or need line-of-business apps.]
@@ -93,12 +93,12 @@ Setup requirements for Window Phone mobile device management depend upon how you
     4.  **Verify certificates imported**
         To verify that the certificates have been imported correctly, go to the **Certificates** snap-in, right-click **Certificates**, and select **Find Certificates**. In the **Contains** field, enter “Symantec”, and click **Find Now**. The certificates you imported should appear in the results.
 
-        ![](../media/wit.gif)
+        ![Find the Symantec certificate](../media/wit.gif)
 
     5.  **Export a signing certificate**
         Having verified that the certificates are present, you can export the .pfx file to sign the company portal. Select the Symantec certificate with **Intended purpose** “code-signing.” Right-click the code-signing certificate and select **Export**.
 
-        ![](../media/wit-walk-cert2.gif)
+        ![Export the signing certificate](../media/wit-walk-cert2.gif)
 
         In the **Certificate Export Wizard**, select **Yes, export the private key** and then click **Next**. **Select Personal Information Exchange –PKCS #12 (.PFX)** and check **Include all the certificates in the certification path if possible**. Complete the wizard. For more information, see [How to Export a Certificate with the Private Key](http://go.microsoft.com/fwlink/?LinkID=203031).
 
