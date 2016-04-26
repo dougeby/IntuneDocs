@@ -50,7 +50,7 @@ Consider the following:
 
 -   Check that the installer for the app you chose is supported by Intune app distribution, as described in  [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).
 
--   Ensure that app distribution prerequisites are installed, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).
+-   Ensure that app distribution prerequisites are installed. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
 
 -   Determine that the app type is supported by Intune.
 
@@ -59,7 +59,7 @@ Consider the following:
 ## Proof of concept
 In the Proof of concept phase test your app deployment in a laboratory environment on devices and users that you've configured strictly for testing purposes.
 
--   Have your help desk participate in this phase to learn what issues can arise during pilot and production deployment. Troubleshooting information is available in [Troubleshoot app deployment problems in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md).
+-   Have your help desk participate in this phase to learn what issues can arise during pilot and production deployment. Troubleshooting information is available in [Troubleshoot app deployment problems in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune).
 
 -   At this point in the process you should develop communication plans for pilot and production users. At a minimum the plan should include what app is being deployed, how and when users will obtain it,  the business purpose of the deployment, and what to do if they encounter issues, both self-help information and how to contact the help desk.
 

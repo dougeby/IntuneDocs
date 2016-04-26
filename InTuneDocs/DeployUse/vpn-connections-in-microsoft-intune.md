@@ -95,7 +95,6 @@ The user authenticates to the VPN server by providing their username and passwor
 
 	You can only create and deploy a custom VPN profile policy. Recommended settings are not available.
 
-
 3. Use the following table to help you configure the VPN profile settings:
 
 Setting name  |More information  
@@ -140,7 +139,6 @@ Here's an example of when you might use corporate boundaries settings. If you wa
 Defining routes in corporate boundaries is useful when your VPN connection type does not allow you to define how traffic is handled in split tunneling. In that case, use **Routes** to list the routes that will use the VPN.
 
 You can restrict Windows 10 device VPN usage to specific apps by creating a custom OMA-URI setting. 
-
 
 The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
 

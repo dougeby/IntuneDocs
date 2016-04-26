@@ -255,7 +255,7 @@ layout: HubPage
           <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune documentation downloads</a></li>
           </ul>
           <ul class="column-half">
-          <li><a href="../em/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Fast Track Center for Enterprise Mobility Suite</a></li>
+          <li><a href="/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Fast Track Center for Enterprise Mobility Suite</a></li>
           <li><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc" target="_blank">Microsoft Intune TechNet forum</a></li>
           <li><a href="/intune/troubleshoot/how-to-get-support-for-microsoft-intune#to-create-an-online-service-request" target="_blank">Get support for Microsoft Intune</a></li>
           </ul>

@@ -132,8 +132,6 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
 
     You can only create and deploy a custom Windows Wi-Fi import policy. Recommended settings are not available.
 
-    
-
 3.  Specify the following general values for the Windows Wi-Fi Import Policy:
 
     |Setting name|More information|

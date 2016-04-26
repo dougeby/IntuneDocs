@@ -77,4 +77,4 @@ If you'll manage iOS or Windows Phone devices with Intune, you'll need certifica
 It's time to get started with your paid subscription!
 
 >[!div class="step-by-step"]
-[**Sign in to Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-1)
+[**Sign in to Intune** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
