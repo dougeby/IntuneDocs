@@ -45,7 +45,7 @@ Also, your group hierarchy is displayed with status summaries to help you identi
 >
 > Be careful naming your policies so that you can easily identify them later. For example, a good, descriptive policy name is **WP Email Policy for Entire Company**.
 >
-> Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.-->
+> Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.
 
 
 ## Create a device group
@@ -101,7 +101,7 @@ Filtered group views let you tailor the view admins can see based on their role 
 
 -   You want to display only relevant groups to each IT admin.
 
-You can configure filtered group views for service administrators in the Intune administrator console. For details, see [What to know before you start Microsoft Intune](/get-started/what-to-know-before-you-start-microsoft-intune).
+You can configure filtered group views for service administrators in the Intune administrator console. For details, see [What to know before you start Microsoft Intune](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
 
 After you configure filtered group views for a service administrator, that administrator:
 
