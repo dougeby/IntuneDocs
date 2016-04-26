@@ -34,7 +34,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Overview of device and app lifecycles</a></li>
           <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Protect app data</a></li>
-          <li><a href="/intune/plan-design/what-to-tell-your-end-users-about-using-microsoft-intune">What to tell your end users about Intune</a></li>
+          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">What to tell your end users about Intune</a></li>
         </ul>
       </div>
     </section>
@@ -67,7 +67,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                 </li>
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
-                    <h3>Start a 30-day trial</h3>
+                    <h3>Intune evaluation guide</h3>
                     <p>Use the trial guide to walk through the steps to get your trial set up with up to 100 users and devices.</p>
                   </a>
                 </li>
@@ -241,14 +241,14 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
       <h2 class="section-heading"><span class="icon icon-note"></span>Additional resources for Intune</h2>
       <div class="resource-list row">
           <ul class="column-half">
-          <li><a href="https://microsoftintune.uservoice.com/" target="_blank">Give feedback on Intune functionality Intune</a></li>
+          <li><a href="https://microsoftintune.uservoice.com/" target="_blank">Give feedback on Intune functionality</a></li>
           <li><a href="https://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" target="_blank">Give feedback on Intune documentation</a></li>
           <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune documentation downloads</a></li>
           </ul>
           <ul class="column-half">
-          <li><a href="/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Fast Track Center for Enterprise Mobility Suite</a></li>
+          <li><a href="/enterprise-mobility/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Fast Track Center for Enterprise Mobility Suite</a></li>
           <li><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc" target="_blank">Microsoft Intune TechNet forum</a></li>
-          <li><a href="/intune/troubleshoot/how-to-get-support-for-microsoft-intune#to-create-an-online-service-request" target="_blank">Get support for Microsoft Intune</a></li>
+          <li><a href="https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/default.aspx" target="_blank">Intune product page</a></li>
           </ul>
       </div>
       </section>
@@ -256,7 +256,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
     <aside class="alert alert-social">
       <p>Keep up-to-date on Intune</p>
       <ol class="action-list">
-        <li><a href="https://blogs.technet.com/b/windowsintune/" target="_blank" class="button-bordered button-translucent">Intune team Blog</a></li>
+        <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Intune team blog</a></li>
         <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune on Twitter</a></li>
       </ol>
     </aside>
