@@ -34,7 +34,7 @@ The [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] is where users 
 
 Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, just log into the [Microsoft Intune administrator console](https://manage.microsoft.com) as a tenant or service administrator, choose **Admin** &gt; **Company Portal** and configure the Company Portal settings.
 
-![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png "Company portal settings in the ADMIN workspace of the Intune administration console")
+![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png)
 
 ## Company contact information and privacy statement
 The company name is displayed as the Company Portal title. The contact information and details are displayed to users in the Contact IT screen of the Company Portal. The privacy statement is displayed when a user clicks on the privacy link.

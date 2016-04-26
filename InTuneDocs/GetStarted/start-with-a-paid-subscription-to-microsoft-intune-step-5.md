@@ -31,7 +31,7 @@ Groups in Intune give you great flexibility for managing your devices and users.
 
 Device and user groups are both created in the GROUPS workspace of the Intune administration console.
 
-![Admin console groups workspace](./media/groups.png "GROUPS workspace of the Intune administration console")
+![Admin console groups workspace](./media/groups.png)
 
 
 > [!TIP]
