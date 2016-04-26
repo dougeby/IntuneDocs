@@ -43,5 +43,3 @@ To help you decide between Intune standalone-v-ActivSync, read the [choose how t
 
 ## Choose how to manage Windows PCs
 To help you decide between enrolling a PC as a device and using the Intune computer client software, read the [choose how to manage PCs](choose-manage-PCs.md).
-
-### Next steps
