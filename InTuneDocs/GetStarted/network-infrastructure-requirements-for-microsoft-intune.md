@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 # Network infrastructure requirements for Microsoft Intune
-Before code you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+Before you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
-The following Intune requirements enable your network infrastructure to pass communications between the devices you manage and use to manage your subscription, and the websites on the Internet that the cloud-based service uses.
+This topic lists the requirements that enable your network infrastructure to pass communications between the devices you manage and use to manage your Intune subscription, and the websites on the Internet that the cloud-based service uses.
 
 There is no requirement to use on-premises infrastructure (like a server where you must install software), but there are options to use on-premises infrastructure including Exchange and Active Directory synchronization tools.
 
