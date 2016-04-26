@@ -1,7 +1,7 @@
 # [Understand and Explore](introduction-to-microsoft-intune.md)
 ## [Introduction to Intune](introduction-to-microsoft-intune.md)
 ## [Intune evaluation guide](get-started-with-a-30-day-trial-of-microsoft-intune.md)
-### [Sign in or sign up for a 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
+### [Sign in or sign up for a 30-day evaluation](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 ### [Add users](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)
 ### [Create groups to organize users & devices](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
 ### [Create policies and publish an app](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
