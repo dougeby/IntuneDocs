@@ -37,7 +37,7 @@ When you enable access to corporate resources through VPN, Wi-Fi, or email profi
 -  Windows 8.1 and later
 -  Windows Phone 8.1 and later
 
-3. Make each device request a certificate to be used for authentication of email, VPN, and Wi-Fi access, as described in [Configure Intune certificate profiles](configure-Intune-certificate-profiles.md). You can create and deploy a **PKCS #12 (.PFX) Certificate Profile**, or a **SCEP Certificate Profile** for devices on these platforms:
+3. Make each device request a certificate to be used for authentication of email, VPN, and Wi-Fi access, as described in [Configure intune certificate profiles](configure-intune-certificate-profiles.md). You can create and deploy a **PKCS #12 (.PFX) Certificate Profile**, or a **SCEP Certificate Profile** for devices on these platforms:
  
 -  Android 4.0 and later
 -  iOS 7.1 and later
@@ -57,5 +57,5 @@ You have to create a separate profile for each platform. When you create the pro
 
 ### Next steps
 - [Configure certificate infrastructure](configure-certificate-infrastructure.md)
-- [Configure Intune certificate profiles](configure-Intune-certificate-profiles.md)
+- [Configure Intune certificate profiles](configure-intune-certificate-profiles.md)
 

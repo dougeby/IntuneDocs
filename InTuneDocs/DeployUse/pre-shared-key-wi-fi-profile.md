@@ -161,4 +161,4 @@ You can also create an XML file from an existing Wi-Fi connection:
 4.     Once you have located the correct XML file, copy and paste the XML code into the Data field of the OMA-URI settings page.
 
 ### See also
-[Help users connect to company resources using Wi-Fi profiles in Microsoft Intune](help-users-connect-to-company-networks-using-wi-fi-profiles-with-microsoft-intune.md)
+[Wi-Fi connections in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
