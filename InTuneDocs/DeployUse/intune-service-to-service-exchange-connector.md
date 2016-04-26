@@ -50,12 +50,12 @@ You must also create an Exchange Online user account that is used by the Intune 
  - Get-MobileDevice
  - Get-ActiveSyncDeviceClass
 
-## Set up the service-to-service Connector
+## Set up the service-to-service connector
 
 1. Open the [Microsoft Intune administration console](http://manage.microsoft.com) with a user account with Exchange admin rights and permissions for the cmdlets [above](#exchange-cmdlet-requirements). Microsoft Intune uses the email address of the currently logged in user to set up the connection.
 
 2.  In the workspace shortcuts pane, choose **ADMIN**, then go **Mobile Device Management** > **Microsoft Exchange** > **Set Up Exchange Connection**.
-![](../media/intunesa5cservicetoserviceconnector.png)
+![Set up service to service connector page](../media/intunesa5cservicetoserviceconnector.png)
 
 3.  On the **Set Up Exchange Connection** page, choose **Set Up Service to Service Connector**.
 
