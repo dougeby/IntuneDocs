@@ -128,6 +128,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                 </p>
               </a>
             </header>
+
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
@@ -149,7 +150,50 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                   </a>
                 </li>
               </ul>
-            </section>
+
+	      <ul class="row">
+                <li class="column-third">
+                  <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
+                    <h3>Overview of device and app lifecycles</h3>
+                    <p>Learn about the typical phases involved with managing devices and apps using Intune.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/deploy-use/enroll-devices-in-microsoft-intune">
+                    <h3>Enroll devices</h3>
+                    <p>Learn the various ways to enroll mobile devices and Windows PCs into management with Intune.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/deploy-use/protect-apps-and-data-with-microsoft-intune">
+                    <h3>Protect apps and data</h3>
+                    <p>Protect your apps against data loss and other threats.</p>
+                  </a>
+                </li>
+              </ul>
+
+                <ul class="row">
+                <li class="column-third">
+                  <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
+                    <h3>Overview of device and app lifecycles</h3>
+                    <p>Learn about the typical phases involved with managing devices and apps using Intune.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/deploy-use/enroll-devices-in-microsoft-intune">
+                    <h3>Enroll devices</h3>
+                    <p>Learn the various ways to enroll mobile devices and Windows PCs into management with Intune.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/deploy-use/protect-apps-and-data-with-microsoft-intune">
+                    <h3>Protect apps and data</h3>
+                    <p>Protect your apps against data loss and other threats.</p>
+                  </a>
+                </li>
+              </ul>
+
+	    </section>
           </li>
 
 
