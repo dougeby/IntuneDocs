@@ -32,7 +32,7 @@ This walkthrough leads you through the steps of setting up a paid subscription o
 >[!NOTE]
 >This article focuses on setting up Intune as a standalone service. Alternatively, if you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [extend Configuration Manager to manage mobile devices](https://technet.microsoft.com/library/jj884158.aspx) by connecting Intune with Configuration Manager in a hybrid MDM deployment to manage mobile devices too.
 
-Getting started with a paid subscription of Intune shares many of the same steps as starting with the [Intune evaluation guide](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). However, after your trial, and when you are ready to start managing your mobile devices, you will need to address several additional requirements. These will vary depending on your current network infrastructure and business requirements including:
+Getting started with a paid subscription of Intune shares many of the same steps as starting with the [Intune evaluation guide](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). However, after your evaluation, and when you are ready to start managing your mobile devices, you will need to address several additional requirements. These will vary depending on your current network infrastructure and business requirements including:
 
 -   Synchronizing on-premises Active Directory accounts with Intune and Azure Active Directory
 
