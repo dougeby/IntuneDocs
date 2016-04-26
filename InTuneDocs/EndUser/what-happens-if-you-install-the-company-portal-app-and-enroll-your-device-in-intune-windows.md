@@ -52,7 +52,7 @@ When you add a computer:
 
 -   Software will be installed on your computer to enable your IT administrator to manage the computer, and enable you to get to company resources like apps and support information. Your IT administrator may automatically update this software.
 
--   Intune Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware. 
+-   Intune Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware.
 
 -   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
 
@@ -75,7 +75,7 @@ When you install the Company Portal app and then use the app to enroll your Wind
 
 -   Reset your phone to factory settings if it is lost or stolen
 
-For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md). To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md). To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 When you add a computer:
 
@@ -104,7 +104,7 @@ When you install the Company Portal app and then use the app to enroll your Wind
 
 -   Reset your phone to factory settings if it is lost or stolen
 
-For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md). To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md). To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 When you add your Windows Phone device, you are giving your IT administrator permission to access the device. They can do things like:
 
@@ -141,7 +141,7 @@ When you install the Company Portal app and then use the app to enroll your Wind
 
 -   Reset your phone to factory settings if it is lost or stolen
 
-To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 When you add a computer:
 
