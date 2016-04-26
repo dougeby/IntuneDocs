@@ -108,4 +108,4 @@ The following table lists the role and permissions you can assign to admin users
     > If you select a user who does not have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] license assigned to them, they will not be able to access the portal.
 
 ## Next steps
-[Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-Microsoft-Intune.md)
+[Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
