@@ -139,7 +139,7 @@ In the next step, you will use the Azure management portal to register your apps
 |Identifier|More information|Default value|
 |--------------|--------------------|-----------------|
 |**Client ID**|A unique GUID identifier that is generated for the app after it is registered with AAD.<br /><br />If you know the app's Client ID, specify that value. Otherwise, use the default value.|6c7e8096-f593-4d72-807f-a5f86dcc9c77|
-|**Authority URI**|The authority Uniform Resource Identifier (URI) value for AAD) objects (for example, users and groups).<br /><br />The AuthorityURI parameter is optional for the app wrapping tool. The default URI is used if you don't use the parameter.|https://login.windows.net/common/|
+|**Authority URI**|The authority Uniform Resource Identifier (URI) value for AAD) objects (for example, users and groups).<br /><br />The AuthorityURI parameter is optional for the app wrapping tool. The default URI is used if you don't use the parameter.||
 |**SkipBroker**|Value indicating whether the company portal will be used as a broker.<br /><br />**True** – company portal will not be used for ADAL authentication.<br /><br />**False** – company portal will be used for ADAL authentication. The company portal is using the enrolled user for Single Sign On purposes.||
 |**Non-Broker Redirect URI**|Login URI to be used when ADAL does not use the broker app (Intune company portal).|urn:ietf:wg:oauth:2.0:oob|
 |**Resource ID**|Pointer to the app's AAD resources.||
