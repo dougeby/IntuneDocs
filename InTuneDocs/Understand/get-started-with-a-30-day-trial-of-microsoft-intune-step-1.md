@@ -29,6 +29,8 @@ ms.suite: ems
 
 Setting up a free Microsoft Intune 30-day evaluation to manage your mobile devices and computers is quick and easy. With just a few simple steps in the evaluation, you can add up to 100 users and devices, set up groups, configure compliance policies, and enroll and manage mobile devices and computers. In this topic, you'll learn the basics  to get an Intune evaluation up and running and get an overview of the service so you can evaluate Intune's features and capabilities.
 
+## What to consider before you sign up
+
 Before  you sign up or sign in to Intune,  you should consider the following:
 
 -   Whether your organization already has a Microsoft Online Services work or school account

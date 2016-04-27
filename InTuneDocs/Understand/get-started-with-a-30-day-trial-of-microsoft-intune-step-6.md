@@ -39,11 +39,11 @@ To learn more about alerts, notifications, and reports, see [Monitoring and repo
 ## Intune capabilities
 Intune has a wide variety of capabilities beyond those shown in these short setup steps. A few examples of these capabilities include:
 
--   **Control access to Exchange and Office 365.** For details, see [Manage app access to Exchange Online](/Intune/Deploy-Use/manage-app-access-to-exchange-online) and [Manage app access to Office 365 services](/Intune/Deploy-Use/manage-app-access-to-office-365-services).
+-   **Control access to Exchange and Office 365.** For details, see [Manage app access to Exchange Online](https://technet.microsoft.com/library/dn705841.aspx) and [Manage app access to Office 365 services](https://technet.microsoft.com/library/dn818907.aspx).
 
 -   **Management of corporate-owned iOS devices.** For details, see [Enroll corporate-owned iOS devices in Microsoft Intune](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
 
--   **Mobile application management.** Managed mobile apps work with mobile application management policies to restrict certain app operations, such as copy and paste and screenshot functionality. For details, see [Create and deploy mobile application management policies with Microsoft Intune](/Intune/Deploy-Use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) and [Manage Internet access using managed browser policies with Microsoft Intune](/Intune/Deploy-Use/manage-internet-access-using-managed-browser-policies-with-microsoft-intune).
+-   **Mobile application management.** Managed mobile apps work with mobile application management policies to restrict certain app operations, such as copy and paste and screenshot functionality. For details, see [Create and deploy mobile application management policies with Microsoft Intune](/Intune/Deploy-Use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) and [Manage Internet access using managed browser policies with Microsoft Intune](/Intune/Deploy-Use/manage-internet-access-using-managed-browser-policies).
 
 -   **Control access to company resources.** You can deploy certificates, e-mail profiles, VPN profiles and Wi-Fi profiles to mobile devices, making it easier to quickly set up mobile devices. For details, see [Enable access to company resources with Microsoft Intune](/Intune/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune).
 
