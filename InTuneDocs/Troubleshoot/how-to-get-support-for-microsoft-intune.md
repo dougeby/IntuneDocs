@@ -76,7 +76,7 @@ If you have already purchased licenses from Microsoft under a volume licensing p
 -   For billing questions, see [Billing and Subscription Management Support](http://support.microsoft.com/oas/default.aspx?prid=15371)
 
 -   For general information about volume licensing, see [Volume Licensing](http://go.microsoft.com/fwlink/p/?LinkID=282015)
-F
+
 ## Responding to support cases
 We prioritize the support cases we receive so that we can take care of the most urgent cases most quickly. To help us prioritize support cases we give each case a severity level shown in the following table. You can also see response times for each severity level.
 
