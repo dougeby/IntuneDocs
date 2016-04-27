@@ -116,11 +116,6 @@ Microsoft Word is used as an example for this scenario.
 
     ![Content showing as pasted in the Facebook post](../media/AppManagement/iOS_FacebookPastePersonal.png)
 
-<!---##  Viewing media files with the Rights Management sharing app
-To view AV, PDF and image files, on Android devices, you can use the [Microsoft Rights Management (RMS) sharing app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
-
-Download this app from the  Google Play store.  Once the app is installed on your device, launch the app and authenticate with your company credentials. You should now be able to view unprotected and protected files from other policy-managed apps.--->
-
 ##  Managing user accounts
 
 Intune only supports deploying MAM policies to only one user account per device. If a device has more than one work account, only one work account is managed by the MAM policies.
@@ -146,6 +141,10 @@ If you are using an Android device, You may see a blocking message with instruct
 
 ![Screenshot of the error message and instructions to remove the account](../media/AppManagement/Android_SwitchUser.png)
 
+##  Viewing media files with the Rights Management sharing app
+To view company AV, PDF, and image files on Android devices, use the [Microsoft Rights Management (RMS) sharing app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
+
+Download this app from the  Google Play store.  Once the app is installed on your device, launch the app and authenticate with your company credentials. You should now be able to view unprotected and protected files from other policy-managed apps.
 
 
 ### See also
