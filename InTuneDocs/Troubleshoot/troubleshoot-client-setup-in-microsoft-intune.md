@@ -30,7 +30,7 @@ Use the following information to help you troubleshoot common client setup probl
 
 ## Client installation fails
 
--   If no client software deployment alerts for the computer are displayed in the [Microsoft Intune administration console](https://manage.microsoft.com/) check the computer’s Internet connectivity and proxy configuration and make sure that the computer can communicate with the service URL, [https://manage.microsoft.com](https://manage.microsoft.com). Then retry the client software installation.
+-   If no client software deployment alerts for the computer are displayed in the [Microsoft Intune administration console](https://manage.microsoft.com/) check the computer’s Internet connectivity and proxy configuration and make sure that the computer can communicate with the service URL, [https://manage.microsoft.com](https://manage.microsoft.com/). Then retry the client software installation.
 
 -   You can have an email sent to selected recipients when a client software deployment failure alert occurs by configuring a notification rule in the **Admin** workspace. For more information, see [Get notified by Microsoft Intune alerts](/intune/deploy-use/get-notified-by-microsoft-intune-alerts).
 
