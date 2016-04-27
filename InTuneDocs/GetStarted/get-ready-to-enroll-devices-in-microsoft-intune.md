@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Get ready to enroll devices in Microsoft Intune
-To let employees access company resources on mobile devices (including Android, iOS, and Windows Phone) with Intune you must enable device enrollment. Apart from managing mobile devices that use iOS, Android, or Widows, Intune also enables you to manage computers running Windows 10 and Windows 8.1 as mobile devices; alternately, you can manage them [using Intune client software](manage-windows-pcs-with-microsoft-intune.md).
+To let employees access company resources on mobile devices (including Android, iOS, and Windows Phone) with Intune you must enable device enrollment. Apart from managing mobile devices that use iOS, Android, or Widows, Intune also enables you to manage computers running Windows 10 and Windows 8.1 as mobile devices; alternately, you can manage them [using Intune client software](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
 
 ## Set mobile device management authority
 The MDM authority defines the  management service with permission to manage a set of devices. Options for MDM authority include [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and Configuration Manager with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
@@ -51,10 +51,10 @@ The Intune Company Portal helps users access company resources such as apps, fin
 After setting up the MDM authority, you need to set up device management for the operating systems your organization wants to support. The steps required to set up device management vary by operating system. For example, Android OS does not require you to do anything in the Intune administration console. On the other hand, Windows and iOS require a trust relationship between devices and [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to allow management.
 
 > [!div class="op_single_selector"]
-- [Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
-- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
+- [Set up Android management with Microsoft Intune](/intune/deploy-use/set-up-android-management-with-microsoft-intune)
+- [Set up iOS and Mac management with Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Set up Windows Phone management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [Set up Windows device management with Microsoft Intune](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 You can also:
  - Use the [device enrollment manager account](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) to enroll many devices allowed
