@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: [GET ONE FROM guidgenerator.com]
+ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 
 # optional metadata
 
