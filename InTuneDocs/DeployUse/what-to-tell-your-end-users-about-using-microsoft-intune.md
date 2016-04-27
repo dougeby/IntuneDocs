@@ -41,9 +41,9 @@ Give your end users the following end-user help links when they are looking for 
 
 - [Using your Android device with Intune](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
--  [Using your Windows device with Intune](/Intune/EndUser/using-your-windows-device-with-intune)
+- [Using your Windows device with Intune](/Intune/EndUser/using-your-windows-device-with-intune)
 - [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website)
- 
+
 
 ## Enrollment guides and templates that you can customize for your users
 
@@ -62,7 +62,3 @@ To understand how your end users get their apps, choose from the following devic
 ## Help end users understand Company Portal app messages
 
 To help your users solve issues that they might have when they are using the Company Portal, you can review a [list of messages users might see in the Company Portal](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
-
-
-
-
