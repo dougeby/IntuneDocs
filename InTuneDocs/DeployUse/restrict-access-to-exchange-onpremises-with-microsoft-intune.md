@@ -31,7 +31,7 @@ ms.suite: ems
 If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, please contact your account manager.
 
 
-To control email access to Exchange on-premises or to your legacy Exchange Online dedicated environment, configure conditional access to Exchange on-premises in Intune.
+To control email access to Exchange on-premises or to your legacy Exchange Online Dedicated environment, configure conditional access to Exchange on-premises in Intune.
 To learn more about how conditional access works, read the [restrict access to email and O365 services]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
 **Before** you can configure conditional access verify the following:
