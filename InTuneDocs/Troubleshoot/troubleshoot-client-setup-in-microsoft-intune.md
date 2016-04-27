@@ -107,4 +107,4 @@ The following table describes error codes that are displayed in **Alerts** if cl
 If installation problems persist, contact Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md). Have the client computer enrollment log (located in %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log and %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) and Windows Update log (%*windir*%\windowsupdate.log) available to show to support engineers.
 
 ### Next steps
-If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for microsoft-intune.md).
+If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

@@ -29,7 +29,7 @@ ms.suite: ems
 Many mobile platforms include a *native* email client that ships as part of the operating system.  Some of these clients can be configurable using email profiles, described in this topic.
 
 If you need additional data loss prevention (DLP), choose [Conditional access](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), which controls access to the user's
- mailbox for any email client, including native email clients. 
+ mailbox for any email client, including native email clients.
 
 Email profile settings can be used to configure email access settings for specific email clients on mobile devices.   Most mobile platforms include a *native* email client that ships as part of the operating system.  On supported platforms the native email clients can be configured by Microsoft Intune to enable users to access their corporate email on the personal devices without any setup.  
 
@@ -105,6 +105,3 @@ A status summary and alerts on the **Overview** page of the **Policy** workspace
 
 > [!NOTE]
 > If you want to remove an email profile from a device, edit the deployment and remove any groups of which the device is a member.
-
-### See also
--  For a walk-through of setting up an email profile on iOS devices, see [Set up email access for iOS devices using Microsoft Intune](/intune/understand-explore/set-up-email-access-for-ios-devices-using-microsoft-intune).
