@@ -31,7 +31,7 @@ Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], revi
 
 The Intune Company Portal is a tool that provides users with access to company data and apps. The Company Portal is available in two forms:
 
--   **The Company Portal app**: An application that is available on devices you manage with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Learn more about the Company Portal apps for [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-device-with-intune)
+-   **The Company Portal app**: An application that is available on devices you manage with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Learn more about the Company Portal apps for [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
 , and [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
