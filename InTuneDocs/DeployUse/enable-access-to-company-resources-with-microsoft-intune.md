@@ -35,7 +35,7 @@ Deploy wireless network settings to your users. By deploying these settings, you
 
 |Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
-|Yes (you can import a Windows Wi-Fi profile)|Yes (you can configure OMA-URI) <sup>1</sup>|Yes|Yes|Yes|
+|Yes (you can import a Windows Wi-Fi profile)|Yes (you can configure OMA-URI) |Yes|Yes|Yes|
 
 ## [VPN profiles](vpn-connections-in-microsoft-intune.md) and supported platforms
 Deploy Virtual Private Network (VPN) settings to your users. By deploying these settings, you minimize the end-user effort required to connect to resources on the corporate network.
