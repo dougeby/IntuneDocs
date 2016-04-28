@@ -45,11 +45,6 @@ The VPN profile configuration options will differ depending on the device type y
 
 Intune supports creating VPN profiles that use the following connection types:
 
-Yes (OMA-URI)
-Yes
-Yes
-Yes
-Yes
 
 
 
@@ -138,14 +133,13 @@ Here's an example of when you might use corporate boundaries settings. If you wa
 
 Defining routes in corporate boundaries is useful when your VPN connection type does not allow you to define how traffic is handled in split tunneling. In that case, use **Routes** to list the routes that will use the VPN.
 
-You can restrict Windows 10 device VPN usage to specific apps by creating a custom OMA-URI setting. 
+You can restrict Windows 10 device VPN usage to specific apps by creating a custom OMA-URI setting.
 
 The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
 
 ### Next Steps
-Deploy the VPN profile to one or more groups of users or devices in your organization. 
+Deploy the VPN profile to one or more groups of users or devices in your organization.
 
 After successful deployment, users will see the VPN connection name you specified in the list of VPN connections on their device.
 
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
-
