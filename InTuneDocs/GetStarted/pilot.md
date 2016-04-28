@@ -1,13 +1,30 @@
 ---
-title: Pilot
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 14e55841-37f1-472c-9678-a1ba847cb331
+# required metadata
+
+title: Pilot | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 14e55841-37f1-472c-9678-a1ba847cb331
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Pilot
 The pilot phase is an opportunity to test the technical implementation, communication plan, and training and support plans in a small production environment.
 
@@ -16,7 +33,7 @@ By executing a pilot you'll surface technical issues that your users may encount
 Begin by reviewing the discovery questions  to help scope and define the pilot phase of your rollout.
 
 ## Discovery questions
-Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in the Rollout Planning Guide and Project Plan.
+Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks.
 
 -   Besides the technical implementation, what else are you testing during this pilot phase?
 
@@ -92,7 +109,5 @@ Here are some  challenges that you may encounter in the **Pilot** phase.
 
     **Mitigation:** Define qualitative and quantitative success criteria specific to your organization so that a clear decision can be made based on facts to move to the next phase of deployment.
 
-## Next steps
->[!div class="step-by-step"]
-
->[&larr; **Proof of concept**](proof-of-concept.md)     [**Enterprise rollout** &rarr;](enterprise-rollout.md)
+### Next steps
+[Enterprise rollout](enterprise-rollout.md)

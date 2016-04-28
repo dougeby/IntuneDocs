@@ -1,14 +1,30 @@
 ---
-title: Install the Windows PC client with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
+# required metadata
+
+title: Install the Windows PC client with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Install the Windows PC client with Microsoft Intune
 Use this guide to help you get your Windows PCs managed by the Microsoft Intune client software.
 
@@ -36,7 +52,7 @@ If you no longer need to manage a computer with Intune, you can retire the compu
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Client Software Download**
 
-  ![](../media/pc-SA-client-download.png)
+  ![Download the Intune PC client](./media/pc-SA-client-download.png)
 
 2.  On the **Client Software Download** page, click **Download Client Software** and save the **Microsoft_Intune_Setup.zip** package containing the software to a secure location on your network.
 

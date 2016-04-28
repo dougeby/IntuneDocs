@@ -1,14 +1,30 @@
 ---
-title: Setup Assistant enrollment for iOS devices with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Setup Assistant enrollment for iOS devices with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Enroll iOS devices with Apple Configurator using Setup Assistant
 Intune supports the enrollment of corporate-owned iOS devices using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process factory-resets the device and prepares it to run the Setup Assistant by the device’s new user with the company's policies preinstalled.
 
@@ -33,7 +49,7 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
     1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Owned Devices**, and then click **Add…**.
 
-    ![](../Media/pol-sa-corp-enroll.png)
+    ![Create device enrollment profile](../media/pol-sa-corp-enroll.png)
 
     2.  Enter details for the device profiles:
 
@@ -61,7 +77,7 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 3.  **Add iOS devices to enroll with Setup Assistant**
     In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices**, and then click **Add devices…**. You can add devices in two ways:
 
-    ![](../Media/pol-SA-enroll-iOS-SetupAssistant.png)
+    ![Add devices dialog box](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
     -   **Upload a CSV file containing serial numbers** – Create a comma-separated value (.csv) list of two columns without a header, limited to 5000 devices or 5MB per csv file.
 
@@ -91,6 +107,17 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
 6.  **Export a profile to deploy to iOS devices**
     In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then select the device profile to deploy to mobile devices. Click **Export…** in the taskbar. Copy and save the **Profile URL**. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
+    To support Apple Configurator 2, the 2.0 Profile URL must be edited. Replace
+    ```
+    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+    ```
+    with
+
+    ```
+    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+    ```
+
+   You will upload this profile URL to the Apple DEP service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
 
     > [!NOTE]
     > The enrollment profile URL is valid for two weeks from when it is exported. After two, you must export a new enrollment profile URL to enroll iOS devices with Setup Assistant.
@@ -99,6 +126,9 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
     iOS devices are connected to the Mac computer and enrolled for mobile device management.
 
     1.  On a Mac computer, open **Apple Configurator 2**. In the menu bar, click **Apple Configurator 2**, and click **Preferences**.
+
+         > [!WARNING]
+         > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and power it on. As a best practice, devices should be at the **Hello** screen when you connect the device.
 
     2. In the preferences pane, select **Servers** and click the “+” symbol below the left pane to launch the MDM Server wizard. Click **Next**.
 

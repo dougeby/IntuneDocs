@@ -1,15 +1,30 @@
 ---
-title: Reset (erase) your lost or stolen device
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: Reset (erase) your lost or stolen device | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
-robots: noindex
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
+
+# optional metadata
+
+ROBOTS: noindex
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Reset (erase) your lost or stolen device
 

@@ -1,14 +1,30 @@
 ---
-title: Unenroll your device from Intune if you declined Terms of Use
-ms.reviewer: na
-ms.custom: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Unenroll your device from Intune if you declined Terms of Use | Microsoft Intune
+description:
+keywords:
 author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Unenroll your device from Intune if you declined Terms of Use
 

@@ -1,14 +1,30 @@
 ---
-title: Windows 10 policy settings in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
+# required metadata
+
+title: Windows 10 policy settings in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Windows 10 policy settings in Microsoft Intune
 
 Use the policy settings listed in this topic to help you configure settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices.
@@ -166,7 +182,7 @@ Use the Microsoft Intune **custom configuration policy** for Windows 10 and Wind
 
 This capability is intended to allow you to deploy Windows 10 settings that are not configurable with an Intune general configuration policy. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-For a list of OMA-URI settings that you can configure on enrolled Windows 10 devices, see [Custom URI settings for Windows 10 devices](custom-uri-settings-for-Windows-10-devices.md).
+For a list of OMA-URI settings that you can configure on enrolled Windows 10 devices, see Custom URI settings for Windows 10 devices later in this topic.
 
 ### General settings
 
@@ -189,7 +205,6 @@ For a list of OMA-URI settings that you can configure on enrolled Windows 10 dev
 ## Custom URI settings for Windows 10 devices
 This topic lists the settings that you can configure for Windows 10 and Windows 10 Mobile devices in a Microsoft Intune **Windows 10 Custom Policy**.
 
-For information about how to create and deploy these policies, see [Windows 10 custom policy settings in Microsoft Intune](Windows-10-custom-policy-settings-in-microsoft-intune.md).
 
 > [!NOTE]
 > In the **Supports** column of the following table, the following values are used:
@@ -319,6 +334,6 @@ For information about how to create and deploy these policies, see [Windows 10 c
 |**Allow Autofill**|Desktop|**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowAutofill<br /><br />**Data type:** Integer<br /><br />**Allowed values:0** – Disabled; **1** – Enabled<br /><br />**Default value:** 0|
 |**Configure Enterprise Site List**|Desktop|**URI full path:** ./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList<br /><br />**Data type:** String<br /><br />**Allowed values:0** – Not configured; **1** – Use IE’s enterprise mode site list if configured; **2** – Specify location to enterprise site list<br /><br />**Default value:** 1|
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

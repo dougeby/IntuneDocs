@@ -1,15 +1,30 @@
 ---
-title: Use managed apps on your device
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: Use managed apps on your device | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
-robots: noindex
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
+
+# optional metadata
+
+ROBOTS: noindex
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Use managed apps on your device
 
@@ -19,12 +34,12 @@ Different managed apps can also work together on your device to allow you to do 
 
 When you access company data in a managed app, you see a message like the one below, which lets you know that the app you are opening is managed.
 
-![](./media/managed-apps-message.png)
+![managed-apps-message-ios](./media/managed-apps-message.png)
 
 ### How do I get managed apps?
 You get managed apps in a couple of different ways:
 
--   When your device is enrolled in Microsoft Intune, you either install the app from your Company Portal app or Company Portal website, or your IT admin might install it on your device. To learn about enrolling, see [Enroll your iOS device in Intune](enroll-your-ios-device-in-intune.md) or [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
+-   When your device is enrolled in Microsoft Intune, you either install the app from your Company Portal app or Company Portal website, or your IT admin might install it on your device. To learn about enrolling, see [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) or [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
 
 -   You install an app from the App Store and then sign in with your corporate user account that is managed by Intune.
 

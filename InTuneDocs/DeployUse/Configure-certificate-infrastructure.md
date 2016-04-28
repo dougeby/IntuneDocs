@@ -1,14 +1,30 @@
 ---
-title: Configure certificate infrastructure
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3a435650-3891-4754-8abc-4bbac244f33b
+# required metadata
+
+title: Configure certificate infrastructure | Microsoft Intune
+description:
+keywords:
 author: nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 3a435650-3891-4754-8abc-4bbac244f33b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Configure certificate infrastructure
 This topic describes what you need in order to create and deploy certificate profiles.
 
@@ -22,11 +38,11 @@ To use SCEP certificate profiles, in addition to the Enterprise Certification Au
 
 To use .PFX Certificate profiles, in addition to the Enterprise Certification Authority, you  also need:
 
--   A computer that can communicate with the Certification Authority, or use the Certification Authority computer itself.
+-  A computer that can communicate with the Certification Authority, or use the Certification Authority computer itself.
 
- -   The Intune Certificate Connector, which runs on the computer that can communicate with the Certification Authority.
+-  The Intune Certificate Connector, which runs on the computer that can communicate with the Certification Authority.
 
-### On-premises infrastructure
+## On-premises infrastructure
 
 
 -    **Active Directory domain**: All servers listed in this section (except for the Web Application Proxy Server) must be joined to your Active Directory domain.
@@ -34,14 +50,14 @@ To use .PFX Certificate profiles, in addition to the Enterprise Certification Au
 -  **Certification Authority** (CA): An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For instructions on how to set up a Certification Authority, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).
     If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
 
- -  **NDES Server** (SCEP only): On a server that runs Windows Server 2012 R2 or later, you must setup up the Network Device Enrollment Service (NDES). Intune does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.|
--  **Computer that can communicate with Certification Authority** (.PFX only):Alternatively, use the Certification Authority computer itself.
+-  **NDES Server** (SCEP only): On a server that runs Windows Server 2012 R2 or later, you must setup up the Network Device Enrollment Service (NDES). Intune does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.|
+-  **Computer that can communicate with Certification Authority** (.PFX only): Alternatively, use the Certification Authority computer itself.
 -  **Microsoft Intune Certificate Connector**: You use the Intune admin console to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. For .PFX Certificate profiles, install the Certificate Connector on the computer that communicates with the Certification Authority.
 -  **Web Application Proxy Server** (optional): You can use a server that runs Windows Server 2012 R2 or later as a Web Application Proxy (WAP) server. This configuration:
     -  Allows devices to receive certificates using an Internet connection.
     -  Is a security recommendation when devices connect through the Internet to receive and renew certificates.
 
- > [!NOTE]           
+> [!NOTE]           
 > -    The server that hosts WAP [must install an update](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) that enables support for the long URLs that are used by the Network Device Enrollment Service. This update is included with the [December 2014 update rollup](http://support.microsoft.com/kb/3013769), or individually from [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  Also, the server that hosts WAP must have a SSL certificate that matches the name being published to external clients as well as trust the SSL certificate that is used on the NDES server. These certificates enable the WAP server to terminate the SSL connection from clients, and create a new SSL connection to the NDES server.
     For information about certificates for WAP, see the **Plan certificates** section of [Planning to Publish Applications Using Web Application Proxy](https://technet.microsoft.com/library/dn383650.aspx). For general information about WAP servers, see [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx).|
@@ -73,7 +89,7 @@ Before you can configure certificate profiles you must complete the following ta
 
 **Task 4** - Enable, install, and configure the Intune Certificate Connector
 
-### Task 1 - Configure certificate templates on the certification authority
+## Task 1 - Configure certificate templates on the certification authority
 In this task you will:
 
 -   Create a NDES service account
@@ -125,7 +141,7 @@ In this task you will:
 
 5.  For .PFX profiles: on the CA computer ensure that the computer that hosts the Intune Certificate Connector has enroll permission, so that it can access the template used in creating the .PFX profile. Set that permission on the **Security** tab of the CA computer properties.
 
-### Task 2 (SCEP profile only) - Configure prerequisites on the NDES server
+## Task 2 (SCEP profile only) - Configure prerequisites on the NDES server
 In this task you will:
 
 -   Add NDES to a Windows Server and configure IIS to support NDES
@@ -165,7 +181,7 @@ In this task you will:
 
     -   **setspn –s http/Server01.contoso.com contoso\NDESService**
 
-### Task 3 (SCEP profile only) - Configure NDES for use with Microsoft Intune]
+## Task 3 (SCEP profile only) - Configure NDES for use with Microsoft Intune 
 In this task you will:
 
 -   Configure NDES for use with the issuing CA
@@ -252,7 +268,7 @@ In this task you will:
 
 4.  Reboot the NDES server. The server is now ready to support the Certificate Connector.
 
-### Task 4 - Enable, install, and configure the Intune Certificate Connector  - For SCEP and .PFX certificates.
+## Task 4 - Enable, install, and configure the Intune Certificate Connector  - For SCEP and .PFX certificates.
 In this task you will:
 
 Enable support for NDES in Intune
@@ -273,7 +289,7 @@ Download, install, and configure the Certificate Connector on the NDES Server
 
 2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**):
 
-    -   For .PFX certificates, run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option then click Install. When the installation has completed, continue by creating a certificate profile as described in [Configure certificate profiles](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).
+    -   For .PFX certificates, run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option then click Install. When the installation has completed, continue by creating a certificate profile as described in [Configure certificate profiles](configure-intune-certificate-profiles.md).
 
     -   For SCEP certificates, run the installer on a Windows Server 2012 R2 server
 
@@ -309,5 +325,5 @@ To validate that the service is running, open a browser and enter the following 
 
 **http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
-## Next steps
+### Next steps
 You are now ready to configure certificate profiles, as described in [Configure certificate profiles](configure-intune-certificate-profiles.md).

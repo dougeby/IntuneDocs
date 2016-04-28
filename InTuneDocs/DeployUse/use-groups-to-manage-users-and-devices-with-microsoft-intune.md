@@ -1,14 +1,30 @@
 ---
-title: Use groups to manage users and devices with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
+# required metadata
+
+title: Use groups to manage users and devices with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Create groups to manage users and devices with Microsoft Intune
 
 To create and manage groups use the **Groups** workspace in the Microsoft Intune administration console. The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
@@ -29,7 +45,7 @@ Also, your group hierarchy is displayed with status summaries to help you identi
 >
 > Be careful naming your policies so that you can easily identify them later. For example, a good, descriptive policy name is **WP Email Policy for Entire Company**.
 >
-> Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.-->
+> Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.
 
 
 ## Create a device group
@@ -85,7 +101,7 @@ Filtered group views let you tailor the view admins can see based on their role 
 
 -   You want to display only relevant groups to each IT admin.
 
-You can configure filtered group views for service administrators in the Intune administrator console. For details, see [What to know before you start Microsoft Intune](/get-started/what-to-know-before-you-start-microsoft-intune).
+You can configure filtered group views for service administrators in the Intune administrator console. For details, see [What to know before you start Microsoft Intune](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
 
 After you configure filtered group views for a service administrator, that administrator:
 
@@ -130,7 +146,7 @@ After you set up your groups and policies, check the practical implications of y
 1. Select any device from a device group and browse through the categories of information at the top of the screen.
 2. Select **Policy** . You'll see something like this screenshot of an Android device's policy settings.
 
-![](../media/Intune-Device-Policy-v.2.jpg)
+![Example iOS settings policy](../media/Intune-Device-Policy-v.2.jpg)
 
 Each policy has an **Intended Value** and a **Status**. The intended value is what you meant to achieve when assigning the policy. The status is what you actually achieved when all of the policies that apply to the device, as well as the restrictions and requirements of the hardware and the operating system, are considered together.  In the screenshot you can see two clear examples:
 

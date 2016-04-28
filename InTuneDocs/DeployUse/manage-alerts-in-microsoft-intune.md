@@ -1,15 +1,30 @@
 ---
-title: Manage alerts in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
+# required metadata
+
+title: Manage alerts in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
-robots: noindex,nofollow
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
+
+# optional metadata
+
+ROBOTS: noindex,nofollow
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Manage alerts in Microsoft Intune
 Use the **Alerts** workspace in the Intune admin console to assess the overall health of devices in your organization and to identify problems.
 

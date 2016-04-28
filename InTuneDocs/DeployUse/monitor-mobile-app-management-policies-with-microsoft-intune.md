@@ -1,21 +1,37 @@
 ---
-title: Monitor mobile app management policies with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
+# required metadata
+
+title: Monitor mobile app management policies with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Monitor mobile app management policies with Microsoft Intune
 After you have configured a MAM policy and applied it to the users, you can monitor the compliance status on the Azure portal. The Azure portal includes information about the users affected by the policy, the compliance status, and any issues that your end users might be experiencing.
 ## Summary view
 On the **Intune mobile application management** blade you can see a summary of the compliance status as described below:
 
 
-![](../media/mam-azure-portal-user-status-summary.png)
+![Summary tile on the Intune mobile application management blade](../media/mam-azure-portal-user-status-summary.png)
 
 -   **USERS:** The total number of users in your company who are using the apps that are associated with the policy.
 
@@ -49,7 +65,7 @@ To see the reporting for a user, follow these steps:
 
 ![select user option on the App reporting blade](../media/mam-azure-portal-app-reporting-select-user.png)
 
-**Step 3:** After selecting the user from the list, you should see the details of the compliance status for that user.
+**Step 3:** After selecting the user from the list, you will see the details of the compliance status for that user.
 
 ![App reporting details](../media/mam-azure-portal-app-reporting-by-user.png)
 ### Flagged users
@@ -58,4 +74,4 @@ The detailed view displays the error message, the app that was accessed when the
 ### See also
 [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-[End-user experience for MAM enabled app](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+[End user experience for MAM enabled app](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)

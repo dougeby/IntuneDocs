@@ -1,13 +1,30 @@
 ---
-title: Accessibility Products and Services from Microsoft
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
+# required metadata
+
+title: Accessibility Products and Services from Microsoft | Microsoft Intune
+description:
+keywords:
+author: 
+manager: jeffgilb
+ms.date: 04/28/2016
 ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
 ms.assetid: b23d4007-1866-42e9-b6cb-d45408562da4
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Accessibility Products and Services from Microsoft
 [!INCLUDE[accessibility1](./includes/accessibility1_md.md)]
 

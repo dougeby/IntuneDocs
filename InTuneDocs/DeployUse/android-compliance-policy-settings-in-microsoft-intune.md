@@ -1,14 +1,30 @@
 ---
-title: Compliance policy settings for Android devices |Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service:
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic:
-ms.assetid:
+# required metadata
+
+title: Compliance policy settings for Android devices | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Compliance policy settings for Android devices in Microsoft Intune
 
@@ -50,7 +66,7 @@ If you are looking for information about other platforms, select one of the foll
   **Minutes of inactivity before password is required** setting.
 
 ### Encryption
-- **Require encryption on mobile device:** Set this to ** Yes** to require devices to be
+- **Require encryption on mobile device:** Set this to **Yes** to require devices to be
   encrypted in order to connect to resources. Devices are
   encrypted when you configure the setting **Require a password to
   unlock mobile devices**.
@@ -62,9 +78,8 @@ If you are looking for information about other platforms, select one of the foll
 
 ## Device property settings
 - **Minimum OS required:** When  a device does not meet the minimum OS
-  version requirement, it is reported as non-compliant.
-  A link with information on how to upgrade is displayed. The end-user can choose to upgrade their device after which they should be able to access company resources.
+  version requirement, it is reported as noncompliant.
+  A link with information on how to upgrade is displayed. The end-user can choose to upgrade their device after which they can access company resources.
 
 - **Maximum OS version allowed:** When a device is using an
   OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
-  

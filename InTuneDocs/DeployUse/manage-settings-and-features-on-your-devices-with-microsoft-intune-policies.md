@@ -1,15 +1,31 @@
 ---
-title: Manage settings and features on your devices with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: efb4dcd6-56ea-44a8-8fe2-6f1542fc75ec
+# required metadata
+
+title: Manage settings and features on your devices with Microsoft Intune policies | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
-# Manage settings and features on your devices with Microsoft Intune
+
+# Manage settings and features on your devices with Microsoft Intune policies
 Microsoft Intune **policies** are groups of settings that control features on mobile devices and computers. You create policies using templates that contain recommended or customized settings, and then deploy them to device or user groups.
 
 ## What types of policy can you use?
@@ -19,9 +35,9 @@ Intune policies fall into the following categories. The category you use affects
 
 - **Configuration policies:** These are commonly used to manage security settings and features on your devices. Use the information in this topic to learn about how to create and deploy these policies and to explore the available settings.
 - **Device compliance policies:** These define the rules and settings that a device must comply with in order to be considered compliant by conditional access polices. You can also use compliance policies to monitor and remediate  the compliance of devices independently of conditional access.
-For details, see [Introduction to device compliance policies in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
+For details, see [Device compliance policies in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Conditional access polices:** These policies help you secure email and other services depending on conditions you specify.
-For details, see [Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-sharepoint-with-microsoft-intune.md).
+For details, see [Restrict access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 - **Corporate device enrollment policies:** For information about corporate device enrollment policies, see [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 - **Resource access policies:** This group of policies work together to help your users gain access to the files and resources they need to do their work successfully, wherever they are.
 For details, see [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
@@ -50,7 +66,7 @@ For a complete list of Intune policies, see [Microsoft Intune policy reference](
 	If you need help with any policy settings, choose your policy type from the following list:
 
 	- [Settings for iOS devices](ios-policy-settings-in-microsoft-intune.md)
-	- [Settings for Android devices](android-policy-settings-in-microsoft-intune)
+	- [Settings for Android devices](android-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows 8 and Windows 8.1 devices](windows-configuration-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows Phone 8.1 devices](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows 10 desktop and mobile devices](windows-10-policy-settings-in-microsoft-intune.md)

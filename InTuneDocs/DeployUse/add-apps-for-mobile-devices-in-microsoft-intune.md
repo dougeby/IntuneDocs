@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Add apps for mobile devices | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Add apps for mobile devices in Microsoft Intune
 
 Use the information in this topic to learn how to add apps to Intune before you deploy them.
@@ -37,7 +53,7 @@ You use the Intune Software Publisher to configure the properties of the app and
 			- The app store URL of the app you want to deploy. For example, if you want to deploy the Microsoft Remote Desktop app for Android, specify **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**. To find the URL of the app, use a search engine to find the store page containing the app. For example, to find the Remote Desktop app, you could search **Microsoft Remote Desktop Android**.
 			- A web site. Intune will deploy a shortcut icon to the site to the device (known as a web clip).
 			- An app on the web. Intune will deploy a shortcut icon to the app on the device.
-        - **Require a managed browser to open this link (Android and iOS only)** - When you deploy a link to a website or web app to users, they will only be able to open it in the Intune managed browser which must be installed on their device.<br>For more details about the managed browser, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies-with-microsoft-intune.md).<br>This installation type does not use any of your cloud storage space.
+        - **Require a managed browser to open this link (Android and iOS only)** - When you deploy a link to a website or web app to users, they will only be able to open it in the Intune managed browser which must be installed on their device.<br>For more details about the managed browser, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>This installation type does not use any of your cloud storage space.
 
   -   **Managed iOS app from the app store**, for free apps from the iTunes store that you want to manage with MAM policies, specify:
 
@@ -81,7 +97,7 @@ The app is displayed on the **Apps** node of the **Apps** workspace.
 
 ## Next steps
 
-Once you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune.md](deploy-apps-in-microsoft-intune.md)
+Once you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune](deploy-apps.md)
 
 
 

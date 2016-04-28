@@ -1,18 +1,33 @@
 ---
-title: Restrict email access to Exchange Online and new Exchange Online Dedicated| Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
-author: karthikaraman
----
-# Restrict email access to Exchange Online and new Exchange Online Dedicated with Intune
-The information in this topic applies to both Exchange Online and the new Exchange Online Dedicated environment.
+# required metadata
 
-If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, please contact your account manager.
+title: Restrict email access to Exchange Online and new Exchange Online Dedicated| Microsoft Intune
+description:
+keywords:
+author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+# Restrict email access to Exchange Online and new Exchange Online Dedicated with Intune
+
+If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, contact your account manager.
 
 To control email access to Exchange Online or to your new Exchange Online Dedicated environment, configure conditional access for Exchange Online in Intune.
 To learn more about how conditional access works, read the [restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
@@ -20,13 +35,13 @@ To learn more about how conditional access works, read the [restrict access to e
 >[!IMPORTANT]
 >Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
 
->If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, and would like to do so, you must submit a request.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
+>If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, and would like to do so, you must submit a request.  You can find out more information about known issues as well as how to get access to this feature at the [Microsoft connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
 
 **Before** you can configure conditional access, you must:
 
 -   Have an **Office 365 subscription that includes Exchange Online (such as E3)** and users must be licensed for Exchange Online.
 
--  Consider configuring the optional **Microsoft Intune service-to-service connector**,  which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. You do not need to use the connector to use compliance policies or conditional access policies, but is required to run reports that help evaluate the impact of conditional access.
+-  Consider configuring the optional **Microsoft Intune service-to-service connector**,  which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. You do not need to use the connector to use compliance policies or conditional access policies, but it is required to run reports that help evaluate the impact of conditional access.
 
    > [!NOTE]
    > Do not configure the service- to-service connector if you intend to use conditional access for both Exchange Online and Exchange On-premises
@@ -47,12 +62,12 @@ If a conditional access policy is not met, the user is presented with one of the
 
 - If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the record in Azure Active Directory.
 
--   If the device is evaluate as not compliant with the compliance policy rules, the end user is directed to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website, or the Company Portal  app where they can find information about the problem and how to remediate it.
+-   If the device is evaluated as not compliant with the compliance policy rules, the end user is directed to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website, or the Company Portal  app where they can find information about the problem and how to remediate it.
 
 
 The diagram below illustrates the flow used by conditional access policies for Exchange Online.
 
-![](../media/ConditionalAccess8-1.png)
+![Diagram that illustrates the decisions points that determine if device is allowed access or blocked](../media/ConditionalAccess8-1.png)
 
 ## Support for mobile devices
 You can restrict access to Exchange Online email from **Outlook** and other **apps that use modern authentication**:-
@@ -106,12 +121,12 @@ You can use the **Mobile Device Inventory Reports** to identify the devices that
 
 To do this, configure a connection between [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and Exchange by using the [Microsoft Intune service-to-service connector](intune-service-to-service-exchange-connector.md).
 1.  Navigate to **Reports -> Mobile Device Inventory Reports**.
-![IntuneSA2bMobileDeviceInventoryReport](../media/IntuneSA2bMobileDeviceInventoryReport.png)
+![Screenshot of the Mobile device inventory report page](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
 2.  In the report parameters, select the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] group you want to evaluate and, if required, the device platforms to which the policy will apply.
 3.  Once you’ve selected the criteria that meets your organization’s needs, choose **View Report**.
 The Report Viewer opens in a new window.
-![IntuneSA2cViewReport](../media/IntuneSA2cViewReport.PNG)
+![Screenshot of an sample mobile device inventory report](../media/IntuneSA2cViewReport.PNG)
 
 After you run the report, examine these four columns to determine whether a user will be blocked:
 
@@ -154,7 +169,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 ### Step 4: Configure the conditional access policy
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange Online Policy**.
-![IntuneSA5dExchangeOnlinePolicy](../media/IntuneSA5dExchangeOnlinePolicy.png)
+![Screenshot of the Exchange Online conditional access policy page](../media/IntuneSA5dExchangeOnlinePolicy.png)
 
 2.  On the **Exchange Online Policy** page, select **Enable conditional access policy for Exchange Online**.
 
@@ -169,17 +184,17 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
         This will require that any device used to access **Exchange  Online**,  to be enrolled in Intune and compliant with the policies.  Any client application using **modern authentication** is subject to the conditional access policy, and if the platform is currently not supported by Intune, access to **Exchange Online** is blocked.
         >[!TIP]
-           You may not see this option if you not already using conditional access for PCs.  Use the **Specific platforms** instead. Conditional access for PCs is not currently available to all Intune customers.   You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
+           You may not see this option if you not already using conditional access for PCs.  Use the **Specific platforms** instead. Conditional access for PCs is not currently available to all Intune customers.   You can find out more information about known issues as well as how to get access to this feature at the [Microsoft Connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
 
     -   **Specific platforms**
 
          Conditional access policy will apply to any client app that is using **modern authentication** on the device platforms you specify.
 
-4.  Under **Exchange ActiveSync apps**, you can choose to block noncompliant devices from accessing Exchange Online if the device is noncompliant. You can also select whether to allow or block access to email when the device is not running a supported platform. Supported platforms include Android, iOS, Windows, and Windows Phone.
+4.  Under **Exchange ActiveSync apps**, you can choose to block noncompliant devices from accessing Exchange Online. You can also select whether to allow or block access to email when the device is not running a supported platform. Supported platforms include Android, iOS, Windows, and Windows Phone.
 
 
 5.  Under **Targeted Groups**, select the Active Directory security groups of users to which the policy will apply. You can either choose to target all users or a selected list of user groups.
-![IntuneSA5eTargetedExemptedGroups](../media/IntuneSA5eTargetedExemptedGroups.PNG)
+![Screenshot of the Exchange Online conditional access policy page showing the Targeted and Exempted group options](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
     > For users that are in the **Targeted groups**, the Intune polices will replace Exchange rules and policies.
     >
@@ -200,24 +215,16 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
 -   If the user un-enrolls their device, email is blocked after around 6 hours.
 
-**  To see some example scenarios of how you would configure conditional access policy to restrict device access, see [restrict email access example scenarios](restrict-email-access-example-scenarios.md). **
+**To see some example scenarios of how you would configure conditional access policy to restrict device access, see [restrict email access example scenarios](restrict-email-access-example-scenarios.md). **
 
 ## Step 5: Monitor the compliance and conditional access policies
 
 #### To view devices that are blocked from Exchange
 
 On the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dashboard, choose the **Blocked Devices from Exchange** tile to show the number of blocked devices and links to more information.
-![IntuneSA6BlockedDevices](../media/IntuneSA6BlockedDevices.PNG)
+![Screenshot of the Intune dashboard showing the number of devices that are blocked from accessing Exchange](../media/IntuneSA6BlockedDevices.PNG)
 
 ## Next steps
 [Restrict access to SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [Restrict access to Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-### See also
-[Restrict access to Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-
-[Restrict access to new Exchange Online Dedicated](restrict-access to-new-exchange-online-dedicated-with-microsoft-intune.md)
-
-[Restrict access to legacy Exchange Online Dedicated](restrict-access to-legacy-exchange-online-dedicated-with-microsoft-intune.md)

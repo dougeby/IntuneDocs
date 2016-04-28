@@ -1,14 +1,30 @@
 ---
-title: Windows Phone 8.1 policy settings in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
+# required metadata
+
+title: Windows Phone 8.1 policy settings in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Windows Phone 8.1 policy settings in Microsoft Intune
 
 ## General configuration settings
@@ -101,7 +117,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |----------------|--------------------|
 |**Block devices from opening the listed apps**|Lists the apps that are not managed by Intune which users are not allowed to install and run.|
 |**Allow devices to install only the listed apps**|Lists the apps that users are allowed to install. Users cannot install any other apps. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />[How to specify URLs to app stores](windows-phone-configuration-policy-settings-in-microsoft-intune.md#BKMK_URL)|
+|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store. For more help, see How to specify URLs to app stores later in this topic.
 |**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|
 |**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
@@ -148,6 +164,6 @@ In the **Add or Edit OMA-URI Setting** dialog box, specify the following informa
     |**OMA-URI (Case Sensitive)**|Specify the OMA-URI you want to supply a setting for.|
     |**Value**|Specify the value to associate with the OMA-URI you specified previously.|
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

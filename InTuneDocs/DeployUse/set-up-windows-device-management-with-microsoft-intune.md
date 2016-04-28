@@ -1,16 +1,32 @@
 ---
-title: Set up Windows device management with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
+# required metadata
+
+title: Set up Windows device management with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
-# Set up device management
-With Intune, you can enable BYOD ("bring your own device") for Windows PC device enrollment to give access to company email and apps. Used with Azure Active Directory, this also provides a fast, no-touch way to bring new Windows 10 devices into management and gain access to company resources without having to reimage the computer. Once enrolled, users can log in and their devices can be targeted with policy, apps, and settings using the Intune administration console. You may also want to [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) or [manage computers with Intune client software](http://technet.microsoft.com/library/dn646959.aspx) using the Intune client.
+
+# Set up Windows device management
+With Intune, you can enable BYOD ("bring your own device") for Windows PC device enrollment to give access to company email and apps. Used with Azure Active Directory, this also provides a fast, no-touch way to bring new Windows 10 devices into management and gain access to company resources without having to reimage the computer. Once enrolled, users can log in and their devices can be targeted with policy, apps, and settings using the Intune administration console. You may also want to [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) or [manage computers with Intune client software](manage-windows-pcs-with-microsoft-intune.md) using the Intune client.
 
 Creating a DNS CNAME helps users connect and enroll in Intune without entering a server name.
 
@@ -30,7 +46,7 @@ Creating a DNS CNAME helps users connect and enroll in Intune without entering a
     **EnterpriseRegistration.windows.net** – Supports Windows 8.1 and Windows 10 Mobile devices that will register with Azure Active Directory using their work or school account
 
   2.  In the [Intune administration console](http://manage.microsoft.com), click **Administration** &gt; **Mobile Device Management** &gt; **Windows**.
-  ![](../media/enroll-Intune-WinEnr.png)
+  ![Windows device management dialog box](../media/enroll-intune-winenr.png)
   3.  Type the URL of the verified domain of the company website in the **Specify a verified domain name** box and then click **Test Auto-Detection**.
 
 ### See also

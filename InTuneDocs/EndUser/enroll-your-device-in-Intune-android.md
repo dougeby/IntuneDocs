@@ -1,14 +1,30 @@
 ---
-title: Enroll your Android device in Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Enroll your Android device in Intune | Microsoft Intune
+description:
+keywords:
 author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Enroll your Android device in Intune
 
@@ -58,49 +74,49 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 7.	On the **Company Access Setup** screen, tap **BEGIN**.
 
-	![](./media/and-enroll-4a-comp-access-setup.png)
+	![Company access setup screen](./media/and-enroll-4a-comp-access-setup.png)
 
 8.	On the **Why enroll your device?** screen, read about what you can do when you enroll your device, and then tap **CONTINUE**.
 
-	![](./media/and-enroll-4b-why-enroll.png)
+	![Why enroll your device screen](./media/and-enroll-4b-why-enroll.png)
    
 9. Review a list of what your IT administrator can and can't see on your device, and tap **CONTINUE**.
 
-	![](./media/and-enroll-4c-we-care-privacy.png)
+	![Privacy settings](./media/and-enroll-4c-we-care-privacy.png)
  
 10. On the **What comes next** screen, read about what happens during enrollment, and then tap **ENROLL**.
 
-	![](./media/and-enroll-4d-what-comes-next.png)
+	![What comes next screen](./media/and-enroll-4d-what-comes-next.png)
  
 11. On the **Activate device administrator** screen, tap **Activate**.
 
-	![](./media/and-enroll-5-activate.png)
+	![Activate device administrator screen](./media/and-enroll-5-activate.png)
 
 12. Follow the prompts to enter a PIN or password. If you already set up a PIN or password on this device, you won't see this screen or be required to enter a new PIN or password.
 
-	![](./media/and-enroll-6-PIN-native.png)
+	![Enter PIN or password](./media/and-enroll-6-PIN-native.png)
 
 13.	Follow the instructions below that match the type of device you’re using (native Android or Samsung Knox). To determine if you have a Samsung Knox device, go to **Settings** &gt; **About phone**. If you don't see the word "Knox" listed there, you have a native Android device.
 
 	-	Native (non-Samsung Knox) device: On the **Name the certificate** screen, tap **OK** to accept the default certificate.
 
-	![](./media/and-enroll-7-cert-native.png)
+	![Name the certificate screen](./media/and-enroll-7-cert-native.png)
 
 	-	Samsung Knox device: Accept the privacy policy, and tap **CONFIRM**.
 
-	![](./media/and-enroll-7-knox-privacy-policy.png)
+	![Samsung KNOX privacy policy](./media/and-enroll-7-knox-privacy-policy.png)
 
 	You’ll see the following message appear on your screen as Intune enrolls your device.
 
-	![](./media/and-enroll-8-device-enrolling.png)
+	![Enrolling device screen](./media/and-enroll-8-device-enrolling.png)
   
 14. When the **Company Access Setup** screen appears, tap **CONTINUE**. If you see a message indicating that your device is out of compliance, follow the instructions to fix the issue, and then tap **CONTINUE**.
 
-	![](./media/and-enroll-9-comp-access-setup.png)  
+	![Company access setup screen](./media/and-enroll-9-comp-access-setup.png)  
 
 11. On the **Company Access Setup complete** screen, tap **DONE**. Your device is now enrolled.
 
-	![](./media/and-enroll-10-comp-access-setup-complete.png)
+	![Company access setup complete screen](./media/and-enroll-10-comp-access-setup-complete.png)
 
 Before trying to install company apps, go to **Settings** &gt; **Security**, and turn on **Unknown sources**. If you don't turn on this option before trying to install apps, you'll see the message "Install blocked." For security reasons, your phone is set to block installations of apps obtained from unknown sources." You can tap **Settings** on the error dialog to go to the **Unknown sources** option.
 

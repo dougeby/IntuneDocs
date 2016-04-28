@@ -1,14 +1,30 @@
 ---
-title: Decide how to prepare apps for mobile application management with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
+# required metadata
+
+title: Decide how to prepare apps for mobile application management with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Decide how to prepare apps for mobile application management with Microsoft Intune
 You can enable your apps to use mobile application management policies by using either the Intune App Wrapping Tool or the Intune App SDK. Use this information to learn about these two methods and when to use them.
 
@@ -28,7 +44,7 @@ To integrate the SDK, you need access to the app’s source code. For instructio
 This table lists the settings that you can use for the App SDK and App Wrapping Tool.
 
 > [!NOTE]
-> The App Wrapping Tool can be used only when you are using  either Intune Standalone or Intune with Configuration Manager.
+> The App Wrapping Tool can be used with Intune Standalone or Intune with Configuration Manager.
 
 |Feature|App SDK|App Wrapping Tool|
 |-----------|---------------------|-----------|

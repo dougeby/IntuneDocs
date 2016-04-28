@@ -8,10 +8,10 @@
 ### [Company Portal](microsoft-intune-company-portal.md)
 ### [Integration with Microsoft cloud services and products](integration-with-cloud-services.md)
 ### [Network bandwidth usage](network-bandwidth-use.md)
-### [Domain names](domain-names-for-intune.md)
+### [Domain names](domain-names-for-microsoft-intune.md)
 
 ## [Start with a paid subscription](start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Sign into Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
+### [Sign in to Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configure a custom domain name](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Synchronize AD and add users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
 ### [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)

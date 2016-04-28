@@ -1,14 +1,30 @@
 ---
-title: Enroll your Windows Phone 8.1 device in Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: Enroll your Windows Phone 8.1 device in Intune | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Enroll your Windows Phone 8.1 device in Intune
 
@@ -19,7 +35,7 @@ To enroll your Phone 8.1 device in Intune, follow the instructions that apply to
 
 -   [If your company lets you use the Company Portal from the Windows Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [If you aren’t allowed to access the Windows Store from your Windows Phone, or if you don’t have a Microsoft Account](#if-you-aren't-allowed-to-access-the-windows-store-from-your-windows-phone,-or-if-you-don't-have-a-microsoft-account)
+-   [If you are not allowed to access the Windows Store from your Windows Phone, or if you do not have a Microsoft Account](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
 ## If your company lets you use the Company Portal from the Windows Store
 Install the Company Portal app on your device:
@@ -30,11 +46,11 @@ Install the Company Portal app on your device:
 
 3.  In the list of results, tap **Company Portal**.
 
-    ![](./media/WP81-1-CP-search-store-v2.png)
+    ![Company portal search results](./media/WP81-1-CP-search-store-v2.png)
 
 4.  Tap **Company Portal**  &gt; **Install**.
 
-    ![](./media/WP81-2-CP-install-v2.png)
+    ![Install company portal](./media/WP81-2-CP-install-v2.png)
 
 Enroll your device:
 
@@ -46,21 +62,21 @@ Enroll your device:
 
 4.  Tap **Tap to enroll or identify this device**.
 
-    ![](./media/WP81-enroll-1-swipe-my-devices.png)
+    ![Tap to enroll or identify this device screen](./media/WP81-enroll-1-swipe-my-devices.png)
 
 5.  Tap **Enroll this device**.
 
-    ![](./media/WP81-enroll-2-enroll-this-device.png)
+    ![Enroll this device screen](./media/WP81-enroll-2-enroll-this-device.png)
 
 6.  Tap **Add account**.
 
-    ![](./media/WP81-enroll-3-workplace-add-acct.png)
+    ![Workplace settings screen](./media/WP81-enroll-3-workplace-add-acct.png)
 
 7.  Enter additional information as requested and then tap **sign in** to complete the enrollment. You should now see your workplace account listed on the **Settings** &gt; **Workplace** page.
 
-    ![](./media/WP81-enroll-4-account-added.png)
+    ![Account added screen](./media/WP81-enroll-4-account-added.png)
 
-## If you aren’t allowed to access the Windows Store from your Windows Phone, or if you don’t have a Microsoft Account
+## If you are not allowed to access the Windows Store from your Windows Phone or if you do not have a Microsoft Account
 
 1.  Tap  **Settings** &gt; **workplace**.
 

@@ -1,14 +1,30 @@
 ---
-title: Choose an MDM solution
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Choose an MDM solution | Microsoft Intune
+description:
+keywords:
 author: jeffgilb
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 39e44765-42a7-4075-b086-b295130bd2d3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Choose how to manage devices
 
 ## Intune
@@ -22,4 +38,4 @@ To help you decide between Intune standalone-v-ActivSync, read the [choose how t
 
 
 ## Next steps
-Read the [Introduction to Intune](introduction-to-microsoft-intune.md) if you want to learn more about Intune as a standalone solution for enterprise mobility.
+Read the [Introduction to Intune](/intune/understand-explore/introduction-to-microsoft-intune.md) if you want to learn more about Intune as a standalone solution for enterprise mobility.

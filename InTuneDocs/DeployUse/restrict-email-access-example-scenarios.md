@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Restrict access to email example scenarios | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Restrict access to email with Microsoft Intune: Example scenarios
 
 ## Block users from using noncompliant devices to access Exchange Online.
@@ -30,7 +46,7 @@ To accomplish this, configure a conditional access policy for Exchange Online wi
 
 The following flow is used to decide which devices can access Exchange Online:
 
-![](./media/ConditionalAccess8-5.png)
+![Device access flow](./media/ConditionalAccess8-5.png)
 
 ## All iOS devices that access Exchange on-premises must be managed by Intune
 ### Scenario requirements
@@ -41,7 +57,7 @@ To accomplish this, configure the following conditional access policy for Exchan
 
 -   Select the option **Block email apps from accessing Exchange on-premises if the device in noncompliant or not enrolled in Microsoft Intune**. By selecting this option, the conditional access policy is enabled, which requires that all devices must be enrolled in Microsoft Intune and meet the compliancy policy rules before they can access Exchange.
 
--   For Advanced Exchange Active Sync settings, create a:
+-   For advanced Exchange Active Sync settings, create a:
 
   -   A platform exception that allows devices that run iOS to access Exchange.   
 
@@ -49,7 +65,7 @@ To accomplish this, configure the following conditional access policy for Exchan
 
 The following flow is used to decide which devices can access Exchange:
 
-![](./media/ConditionalAccess8-3.png)
+![Device access flow](./media/ConditionalAccess8-3.png)
 
 ## No Android devices can access Exchange on-premises.
 ### Scenario requirements
@@ -60,16 +76,11 @@ To accomplish this, configure a conditional access policy for Exchange on-premis
 
 -   Select the option **Block email apps from accessing Exchange on-premises if the device is noncompliant or not enrolled in Microsoft Intune**. By selecting this option, they require that any device must be enrolled in Intune and meet the compliance policy rules.
 
-- For Advanced Exchange Active Sync settings, create a:
-  -   A platform exception that blocks devices that run Android from accessing Exchange. This rule makes sure that Android devices cannot be used to access Exchange.
+- For advanced Exchange Active Sync settings, create a:
+  -   Platform exception that blocks devices that run Android from accessing Exchange. This rule makes sure that Android devices cannot be used to access Exchange.
 
-  -   A default rule that specifies when a device is not covered by other rules, it should be allowed to access Exchange. This default rule makes sure that devices running platforms other than Android, but supported by Microsoft Intune can be used to access Exchange. They must however be enrolled in Intune and meet the compliance policy rules.
+  -   Default rule that specifies when a device is not covered by other rules, it should be allowed to access Exchange. This default rule makes sure that devices running platforms other than Android, but supported by Microsoft Intune can be used to access Exchange. They must however be enrolled in Intune and meet the compliance policy rules.
 
 The following flow is used to decide which devices can access Exchange:
 
-![](./media/ConditionalAccess8-4.png)
-
-
->[!div class="step-by-step"]
-[<< Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)  
-[Deploy a compliance policy >>](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
+![Device access flow](./media/ConditionalAccess8-4.png)

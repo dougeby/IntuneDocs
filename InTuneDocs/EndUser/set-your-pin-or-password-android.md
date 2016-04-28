@@ -1,14 +1,30 @@
 ---
-title: Set your PIN or password
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.custom: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Set your PIN or password | Microsoft Intune
+description:
+keywords:
 author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Set your PIN or password
 

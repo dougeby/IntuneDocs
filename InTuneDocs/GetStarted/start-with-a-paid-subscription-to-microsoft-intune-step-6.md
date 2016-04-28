@@ -1,16 +1,32 @@
 ---
-title: Create policies and publish an app
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid:
+# required metadata
+
+title: Create policies and publish an app | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Create policies and publish an app
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. You can learn more at [Manage settings and features on your devices with Microsoft Intune policies](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.html) and [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.html).
+Intune policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. You can learn more at [Manage settings and features on your devices with Microsoft Intune policies](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) and [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 You can perform two types of app installations using Intune. The first is a **required install**, which automatically deploys the app to managed computers. The other is an **available install**, which deploys the app, or a link to the app, to the Intune company portal so that users can choose whether to install it on their computers or on their mobile devices.
 
@@ -30,7 +46,8 @@ The following steps will help you set up a mobile device configuration policy, a
 1.  Open the [Intune administration console](https://manage.microsoft.com/).
 
 2.  In the left pane, choose the **Policy** icon.
-![alt text](./media/policy.png "POLICY workspace of the Intune administration console")
+
+	![admin-console-policy-workspace](./media/policy.png)
 
 3.  In the **Tasks** list on the **Policy Overview** page, choose **Add Policy**.
 
@@ -43,7 +60,8 @@ Your policy appears in the list of configuration policies, and has been deployed
 ## Publish the Skype app for mobile devices
 
 1.  In the [Intune administration console](https://manage.microsoft.com/), choose the **Apps** icon, then choose **Apps** > **Add App**. If prompted, enter your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] credentials.
-![alt text](./media/apps.png "APPS workspace of the Intune administration console")
+
+	![admin-console-apps-workspace](./media/apps.png)
 
     > [!NOTE]
     > When you start the **Intune Software Publisher** for the first time, a short delay occurs while the application is installed.
@@ -89,7 +107,7 @@ Your policy appears in the list of configuration policies, and has been deployed
 The Skype app is now available to install on mobile devices from the company portal, but first you need to install [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] software on computers and mobile devices.
 
 
-## Next steps
+### Next steps
 Congratulations! You have just completed step 6 of the *Start with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]

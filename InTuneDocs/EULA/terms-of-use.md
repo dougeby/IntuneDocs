@@ -1,24 +1,40 @@
 ---
-title: Terms of Use
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 189c42d1-ed55-4ae3-9685-17a9fe87b5e2
+# required metadata
+
+title: Terms of Use | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 189c42d1-ed55-4ae3-9685-17a9fe87b5e2
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Terms of Use
 
 ## 1.  ACCEPTANCE.
 Your use of this website ("Site") is governed by these Terms of Use ("TOU"). Microsoft reserves the right to update these TOU at any time without notice to you. The most current version of the applicable TOU can be found at the "Legal" hypertext link located at the bottom of this Site. **You may only access or use this Site if you agree to these terms. If you do not agree, do not access or use this Site.**
 
 ## 2.  ONLINE SERVICES OFFERED THROUGH THIS SITE.
-Microsoft offers Microsoft Intune™ for trial, purchase, or use through this Site as well as other services for your use with [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] (collectively, ‘Services” or in the case of an individual service, “Service”). **These TOU do not govern the trial, sale, purchase or other use of any Services.  Each service, including any updates, enhancements or new features, is governed by the agreement(s) under which you purchase or use them.**
+Microsoft offers Microsoft Intune™ for trial, purchase, or use through this Site as well as other services for your use with Microsoft Intune (collectively, ‘Services” or in the case of an individual service, “Service”). **These TOU do not govern the trial, sale, purchase or other use of any Services.  Each service, including any updates, enhancements or new features, is governed by the agreement(s) under which you purchase or use them.**
 
 ## 3.  ACCEPTABLE USE.
-As a condition of your use of this Site, you must comply with the [Acceptable Use Policy](http://go.microsoft.com/fwlink/?LinkID=263463).
+As a condition of your use of this Site, you must comply with the [Acceptable Use Policy](acceptable-use-policy-for-microsoft-intune.md).
 
 ## 4.  ACCOUNT, PASSWORD AND SECURITY.
 If any part of this Site requires you to open an account, you must complete the registration process by providing us with current, complete and accurate information as prompted by the applicable registration form. You may also be required to choose a password and a user name. You are entirely responsible for maintaining the confidentiality of your password and account and for any and all activities that occur under your account. You agree to notify Microsoft immediately of any unauthorized use of your account or any other breach of security. Microsoft will not be liable for any losses you incur as a result of someone else using your password or account, either with or without your knowledge. However, you could be held liable for losses incurred by Microsoft or another party due to someone else using your account or password. You may not use anyone else's account at any time, without the permission of the account holder.
@@ -29,7 +45,7 @@ To use this Site, users may be required to authenticate with a user account assi
 We may cancel or suspend your access to the authentication service at any time without notice. Reasons for cancellation may include, but are not limited to, our ceasing to provide the Service in your region, your breach of these TOU, or failure to pay fees you owe us or our agents. If we cancel or suspend your access to the authentication service, your right to access this service stops immediately. Cancellation or suspension of your access to the authentication service will not alter your obligation to pay all charges made to your billing account for use of any service to which you subscribe.
 
 ## 6.  PRIVACY AND COOKIES.
-Please read the [Microsoft Online Services Privacy Statement](http://go.microsoft.com/fwlink/?LinkId=262214) for information about Microsoft's collection and use of your personal information when using [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] and this Site.  There are other services available through your use of [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] and those other services may be governed by their own privacy statement(s), as referenced in the applicable agreements and sign-up processes specific to each service.
+Please read the [Microsoft Online Services Privacy Statement](http://go.microsoft.com/fwlink/?LinkId=262214) for information about Microsoft's collection and use of your personal information when using Microsoft Intune and this Site.  There are other services available through your use of Microsoft Intune and those other services may be governed by their own privacy statement(s), as referenced in the applicable agreements and sign-up processes specific to each service.
 
 ## 7.  NOTICE REGARDING THIS SITE AND SOFTWARE OR DOCUMENTS AVAILABLE ON THIS SITE.
 TO THE EXTENT PERMITTED BY LAW, IN NO EVENT WILL MICROSOFT AND/OR ITS RESPECTIVE SUPPLIERS BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY OTHER DAMAGES HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE), ARISING OUT OF OR IN CONNECTION WITH THE USE OF THIS SITE, INCLUDING WITHOUT LIMITATION ANY SOFTWARE OR DOCUMENTS AVAILABLE VIA THIS SITE.
@@ -108,4 +124,3 @@ Microsoft or its suppliers retain all right, title and interest in and to this S
 
 ## 14.  NOTICES AND PROCEDURE FOR MAKING CLAIMS OF COPYRIGHT INFRINGEMENT.
 Pursuant to Title 17, United States Code, Section 512(c)(2), notifications of claimed copyright infringement should be sent to Service Provider's Designated Agent. ALL INQUIRIES NOT RELEVANT TO THE FOLLOWING PROCEDURE WILL NOT RECEIVE A RESPONSE. See Notice and Procedure for Making Claims of Copyright Infringement available at [http://go.microsoft.com/fwlink/?LinkID=203343](http://go.microsoft.com/fwlink/?LinkID=203343).
-

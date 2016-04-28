@@ -1,14 +1,30 @@
 ---
-title: What happens if you reset your device using the Company Portal?
-ms.reviewer: na
-ms.custom: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: What happens if you reset your device using the Company Portal? | Microsoft Intune
+description:
+keywords:
 author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # What happens if you reset your device using the Company Portal?
 

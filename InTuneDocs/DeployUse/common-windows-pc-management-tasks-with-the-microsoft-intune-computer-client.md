@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Common Windows PC management tasks | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Common Windows PC management tasks with the Microsoft Intune computer client
 Review the tasks in this topic to learn how to manage your computers that run the Intune client. If you have not yet installed the client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
@@ -126,7 +142,7 @@ When you retire a computer:
     > [!IMPORTANT]
     > If the client software was installed by using a Group Policy Object (GPO), you must remove the Group Policy Object (GPO) before you can remove the client software to prevent the software from being reinstalled.
 
-    If the client fails to uninstall, read [Troubleshoot Endpoint Protection](/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
+    If the client fails to uninstall, read [Troubleshoot Endpoint Protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
 
 ## Manage user-device linking
 Before you can deploy software to a user, you must link the user to a computer. You can link a user to multiple computers, but each computer can be linked to only one user. Users are automatically linked to any computers that they enroll in Intune by using the company portal.

@@ -1,23 +1,40 @@
 ---
-title: Troubleshoot device enrollment in Intune
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
+# required metadata
+
+title: Troubleshoot device enrollment in Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Troubleshoot device enrollment in Intune
 
 Here are some device enrollment issues and how to troubleshoot and resolve them.
 
 > [!NOTE]
 > Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
->- [Send Android diagnostic data logs to your IT administrator using a USB cable](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
->- [Send Android diagnostic data logs to your IT administrator using email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
->- [Send Android enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android)
->- [Send iOS enrollment errors to your IT administrator](send-errors-to-your-it-admin-ios.md)
+>- [Send Android diagnostic data logs to your IT administrator using a USB cable](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+>- [Send Android diagnostic data logs to your IT administrator using email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+>- [Send Android enrollment errors to your IT administrator](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
+>- [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios)
 
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
@@ -35,7 +52,7 @@ If this information does not solve your problem, see [How to get support for Mic
 
 Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
-Administrators can delete devices in the Azure Active Directory portal:
+Administrators can delete devices in the Azure Active Directory portal.
 
 ### To delete devices in the Azure Active Directory portal
 
@@ -56,7 +73,8 @@ Administrators can delete devices in the Azure Active Directory portal:
 8.  Remove devices as appropriate, such as those that are no longer in use, or those that have inaccurate definitions.
 
 > [!NOTE]
-> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+
+> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 >
 > A user account which is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
@@ -91,7 +109,7 @@ Administrators can delete devices in the Azure Active Directory portal:
 ## MDM authority not defined
 **Issue:** A user receives an **MDM authority not defined** error.
 
-##### Troubleshooting MDM authority not defined error
+### Troubleshooting MDM authority not defined error
 
 1.  Verify that the MDM Authority has been set appropriately for the version of the Intune service you are using  , that is, for Intune, O365 MDM, or System Center Configuration Manager with Intune. For Intune,  the MDM Authority is set in **Admin** &gt; **Mobile Device Management**. For Configuration Manager with Intune, you set it when configuring the Intune connector, and in O365 it's a setting **Mobile Devices**.
 
@@ -101,19 +119,19 @@ Administrators can delete devices in the Azure Active Directory portal:
 2.  Verify that the user’s credentials have synced correctly with Azure Active Directory, by checking that their UPN matches the Active Directory information in the Account Portal.
     If the UPN does not match the Active Directory information:
 
-    1.  Turn off DirSync on the local server
+    1.  Turn off DirSync on the local server.
 
     2.  Delete the mismatched user from the **Intune Account Portal** user list.
 
     3.  Wait about one hour to allow the Azure service to remove the incorrect data.
 
-    4.  Turn on DirSync again and check if the user is now synced properly
+    4.  Turn on DirSync again and check if the user is now synced properly.
 
 3.  In a scenario where you are using System Center Configuration Manager with Intune, verify that the user has a valid Cloud User ID:
 
     1.  Open SQL Management Studio.
 
-    2.  Connect to the appropriate DB
+    2.  Connect to the appropriate DB.
 
     3.  Open the databases folder and find and open the **CM_DBName** folder, where DBName is the name of the customer database.
 
@@ -131,7 +149,7 @@ Administrators can delete devices in the Azure Active Directory portal:
 ## Mobile devices disappear when using System Center Configuration Manager with Intune
 **Issue:** After successfully enrolling a mobile device to Configuration Manager it disappears from the mobile device collection, but the device still has the Management Profile and is listed in CSS Gateway.
 
-**Resolution:** This may occur because you have a custom process removing non-domain-joined devices, or because the  user has retired the device from the subscription. To validate and check which process or user account removed the device from the Configuration Manager console, perform the following steps:
+**Resolution:** This may occur because you have a custom process removing non-domain-joined devices, or because the  user has retired the device from the subscription. To validate and check which process or user account removed the device from the Configuration Manager console, perform the following steps.
 
 ### Check how device was removed
 
@@ -148,8 +166,7 @@ Administrators can delete devices in the Azure Active Directory portal:
 5.  Check that Configuration Manager does not have a scheduled task, script, or other process which could be automatically purging non-domain, mobile, or related devices.
 
 ## iOS enrollment errors
-A list of other iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](using-your-ios-device-with-intune.md).
+A list of other iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
 
-## Next steps
+### Next steps
 If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-

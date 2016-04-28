@@ -1,14 +1,30 @@
 ---
-title: Mobile device security policy settings in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
+# required metadata
+
+title: Mobile device security policy settings in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Mobile device security policy settings in Microsoft Intune
 > [!IMPORTANT]
 > Microsoft Intune now features separate configuration policies for each device platform, and these policies contain the most up-to-date settings you can use. You can continue to use the mobile device security policy and any existing deployments will still work. However, you should plan to migrate to the new configuration policies as soon as possible as the mobile device security policy will be removed in the future.
@@ -196,6 +212,6 @@ Additional information for devices that run Windows 8.1
 |**Allow clipboard share between applications**|No|No|No|No|Yes (Samsung KNOX only)|
 |**Allow YouTube**|No|No|No|No|Yes (Samsung KNOX only)|
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies.md](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

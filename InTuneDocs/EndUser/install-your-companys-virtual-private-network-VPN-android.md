@@ -1,14 +1,30 @@
 ---
-title: Install your company's Virtual Private Network (VPN)
-ms.reviewer: na
-ms.custom: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid:
+# required metadata
+
+title: Install your company's Virtual Private Network (VPN) | Microsoft Intune
+description:
+keywords:
 author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Install your company's Virtual Private Network (VPN)
 

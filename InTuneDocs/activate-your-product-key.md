@@ -1,14 +1,30 @@
 ---
-title: Activate Your Product Key
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 844c2ca8-2721-4f72-b1dd-be9b1da1f220
+# required metadata
+
+title: Activate Your Product Key | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 844c2ca8-2721-4f72-b1dd-be9b1da1f220
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Activate Your Product Key
 You can use a product key to redeem a subscription or add users to an existing subscription. A product key is a unique 25-character alpha-numeric code that is required to redeem a subscription, access online services, or download software. You can purchase product keys from a Microsoft partner or reseller.
 

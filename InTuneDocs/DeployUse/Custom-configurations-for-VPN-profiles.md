@@ -1,13 +1,30 @@
 ---
-title: Custom configurations for VPN profiles
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
+# required metadata
+
+title: Custom configurations for VPN profiles | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Custom configurations for VPN profiles
 
 ## Create a custom configuration
@@ -17,7 +34,7 @@ You can use custom configurations to create VPN profiles in Intune. To create a 
    2. Provide a name for the policy.
    3. For each URI setting, click **Add** and provide the requested information. Here's an example:
 
-   ![](./media/Intune_Add_VPN_URI.png)
+   ![VPN profile custom configuration dialog box](intune/media/Intune_Add_VPN_URI.png)
 
    4.  After you've entered all of the URI settings, click **Save policy** and then deploy the policy.
 

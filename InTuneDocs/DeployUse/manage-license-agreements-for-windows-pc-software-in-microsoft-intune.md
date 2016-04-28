@@ -1,14 +1,30 @@
 ---
-title: Manage license agreements for Windows PC software in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
+# required metadata
+
+title: Manage license agreements for Windows PC software in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Manage license agreements for Windows PC software in Microsoft Intune
 Microsoft Intune lets you add and manage license agreement information for software that was purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can also organize this information into logical groups.
 
@@ -168,6 +184,5 @@ Software licensing agreements can be added to license groups. You can use licens
 |Delete a license group|In the **Licenses** workspace, choose a license group, and then click **Delete License Group** from the **Tasks** Menu. **Tip:** Any licenses that were in the deleted group are moved to the **Unassigned agreements** license group.|
 |Delete a license agreement|In the **Licenses** workspace, choose an agreement, and then click **Delete**. **Tip:** After you delete Volume Licensing agreements, to update the license information, click **Refresh Now** on the **Licenses Overview** page or on the **General** tab for a specific license group.|
 
-### See Also
-[Deploy apps to Windows PCs in Microsoft Intune](deploy-apps-to-windows-pcs-in-microsoft-intune.md)
+
 

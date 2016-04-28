@@ -1,24 +1,40 @@
 ---
-title: Deploy and monitor compliance policy in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service:
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic:
-ms.assetid:
+# required metadata
+
+title: Deploy and monitor  compliance policy in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
-# Deploy and monitor a compliance policy in Microsoft Intune
+
+# Deploy and monitor a device compliance policy in Microsoft Intune
 ## Deploy a compliance policy
 Deploy the compliance policy you [created](create-a-device-compliance-policy-in-microsoft-intune.md) to one or more groups of users or devices in your organization.
 
 1.  In the **Policy** workspace, select the policy you want to deploy, then choose **Manage Deployment**.
-![IntuneSA3cDeployCompliancePolicy2](./media/intune-sa-3c-deploy-compliance-policy2.png)
+![Screenshot of the compliance policy page showing the Manage Deployment menu option at the top](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  In the **Manage Deployment** dialog box, choose one or more groups to which you want to deploy the policy, then choose **Add > OK**.
-![IntuneSA3dDeployCompliancePolicy3_Manage](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
-You can deploy a compliance policy to users and/or devices. Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. To learn more about how to deploy policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md).
+![Screenshot of the manage deployment dialog box](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
+You can deploy a compliance policy to users and/or devices. Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. To learn more about how to deploy policies, see [deploy a configuration policy](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 Use the status summary and alerts on the **Overview** page of the **Policy** workspace to identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
@@ -42,7 +58,7 @@ Policy conflicts  can occur due when multiple Intune policies are applied to a d
 3.  Choose the **Policy** tab to see a list of the policies for that device.
 
 4.  From the **Filters** drop-down list, select **Does not conform to compliance policy**.
-![IntuneSA3eViewDeviceNoncomplaince](./media/intune-sa-3e-view-device-noncompliance.png)
+![Screenshot showing the list of options in the filters list](./media/intune-sa-3e-view-device-noncompliance.png)
 
 #### To view the Health Attestation Reports
 
@@ -54,11 +70,8 @@ Policy conflicts  can occur due when multiple Intune policies are applied to a d
 ## Next steps
 You can now use the compliance policy with conditional access policies to control access to services in your organization.
 
-[Create conditional access policies for email](manage-email-access-with-microsoft-intune.md)
+[Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
-[Create conditional access policies for SharePoint Online](manage-sharepoint-online-access-with-microsoft-intune.md)
 
 ### See also
 [Introduction to device compliance polices in Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-
-[Manage access to email and O365 services](manage-access-to-email-and-O365-services-with-intune.md)

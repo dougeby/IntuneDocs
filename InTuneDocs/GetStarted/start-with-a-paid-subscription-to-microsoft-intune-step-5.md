@@ -1,26 +1,42 @@
 ---
-title: Create groups to organize users and devices
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid:
+# required metadata
+
+title: Create groups to organize users and devices | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
 
+
 # Create groups to organize users and devices
-Groups in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics) and use them to perform a wide variety of administrative tasks, from deploying policies for a set of users to deploying applications to a set of devices.
+Groups in Intune give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics) and use them to perform a wide variety of administrative tasks, from deploying policies for a set of users to deploying applications to a set of devices.
 
 Device and user groups are both created in the GROUPS workspace of the Intune administration console.
 
-![alt text](./media/groups.png "GROUPS workspace of the Intune administration console")
+![Admin console groups workspace](./media/groups.png)
 
-<!-- can't find this topic anywhere below:
+
 > [!TIP]
-> To learn more about using groups, see [use groups to manage users and devices with Microsoft Intune](/intune/use-groups-to-manage-users-and-devices-with-microsoft-intune).
--->
+> To learn more about using groups, see [Use groups to manage users and devices with Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+
 
 ## Create a device group
 Use device groups to deploy apps and updates, and configure other features. For example, set up a "My Devices" group using the following steps:
@@ -56,7 +72,7 @@ You can find the newly created group in the **Groups** list, in the **Groups** w
 
 
 
-## Next steps
+### Next steps
 Congratulations! You have just completed step 5 of the *Start with a paid subscription to Microsoft Intune* guide.
 
 >[!div class="step-by-step"]

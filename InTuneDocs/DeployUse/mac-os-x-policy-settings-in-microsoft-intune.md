@@ -1,14 +1,30 @@
 ---
-title: Mac OS X policy settings in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
+# required metadata
+
+title: Mac OS X policy settings in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Mac OS X configuration policy settings in Microsoft Intune
 
 ## General configuration policy settings
@@ -19,7 +35,7 @@ Use the Microsoft Intune **Mac OS X general configuration policy** to configure 
 
 -   **Compliant and noncompliant apps** - Specify a list of apps that are compliant, or not compliant in your company. The Noncompliant Apps Report can be used to view the compliance of apps you specified in the list against the apps that users have installed (but cannot actually block the installation of the app).
 
-If the setting you are looking for does not appear in this list, you might be able to create it using a Mac OS X custom policy that lets you import settings you created using the Apple Configurator Tool. For more information, see [Mac OS X custom policy settings in Microsoft Intune](../Topic/Mac-OS-X-custom-policy-settings-in-Microsoft-Intune.md).
+If the setting you are looking for does not appear in this list, you might be able to create it using a Mac OS X custom policy that lets you import settings you created using the Apple Configurator Tool. For more information, see **Custom policy settings** later in this topic.
 
 ### Password settings
 
@@ -69,7 +85,7 @@ Use the **Noncompliant Apps Reports** to view the compliance of apps you specifi
 ## Mac OS X custom policy settings in Microsoft Intune
 Use the Microsoft Intune **Mac OS X custom configuration policy** to deploy settings that you created using the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) to Mac OS X devices. This tool lets you create many settings that control the operation of these devices and export them to a configuration profile. You can then import this configuration profile into an Intune Mac OS X custom policy and deploy the settings to users and devices in your organization.
 
-This capability is intended to allow you to deploy Mac OS X settings that are not configurable with the Intune Mac OS X general configuration policy. For information about the settings you can configure with these policies, see [Mac OS X configuration policy settings in Microsoft Intune](mac-os-x-configuration-policy-settings-in-microsoft-intune.md).
+This capability is intended to allow you to deploy Mac OS X settings that are not configurable with the Intune Mac OS X general configuration policy.
 
 ### Prerequisites
 Before you start, you must have installed the Apple Configurator and created a configuration file containing the settings you want to deploy to users or devices. You can download and learn about the Apple Configurator from [the Mac App Store](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)
@@ -106,6 +122,6 @@ You can create the configuration profile file used by the custom policy in two w
 > [!IMPORTANT]
 > When a Mac OS X device is in Sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the Intune console might temporarily display the status **Policy settings in error** until the next time the device wakes from Sleep mode.
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

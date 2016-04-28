@@ -1,14 +1,30 @@
 ---
-title: How to encrypt your Windows device
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
+# required metadata
+
+title: How to encrypt your Windows device | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # How to encrypt your Windows device
 To reconnect to your work, you’ll need to encrypt your device by following these instructions:
 

@@ -1,14 +1,30 @@
 ---
-title: How to get support for Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
+# required metadata
+
+title: How to get support for Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # How to get support for Microsoft Intune
  Microsoft Support provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by telephone for paid and trial subscriptions. Online technical support is available in English and Japanese. Non-technical support is available in additional languages.
 
@@ -32,9 +48,9 @@ For self help with Intune, see [General troubleshooting tips for Microsoft Intun
 
 4.  On the **review suggestions** page you'll find links to content that may help you resolve the issue on your own.  If you can't resolve the issue you can click **Yes, continue** at the bottom of the page to submit your service request.
 
-5.  On the **add details** page, provide the requested information. You can attach screenshots or other documents by clicking **attach a file**.
+5.  On the **add details** page provide the requested information. You can attach screenshots or other documents by clicking **attach a file**.
 
-6.  On the **confirm and submit** page, provide contact information, review your request, and click **Submit request**. After the request is submitted you will be taken to a list of your service requests.
+6.  On the **confirm and submit** page provide contact information, review your request, and click **Submit request**. After the request is submitted you will be taken to a list of your service requests.
 
 ## Support by phone
 See [Contact Assisted Phone Support for Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) for a list of support phone numbers by country and region, support hours, and supported languages for each region.
@@ -50,7 +66,7 @@ To track your requests, go to the [Office 365 admin center](https://portal.offic
 ## Additional support options
 
 ### Partners
-You can select a Microsoft partner and delegate administrative functions, including creating service request tickets. For more information, see [Help for Microsoft Intune Partners](https://technet.microsoft.com/library/jj151810.aspx).
+You can select a Microsoft partner and delegate administrative functions, including creating service request tickets.
 
 ### Volume Licensing
 If you have already purchased licenses from Microsoft under a volume licensing program, use the following for support:
@@ -68,15 +84,15 @@ We prioritize the support cases we receive so that we can take care of the most 
 
 |Severity Level|Operations and Support Description|Microsoft Intune / Enterprise Mobility Suite<br /><br />Premier|Microsoft Intune / Enterprise Mobility Suite<br /><br />Professional|
 |------------------|--------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-|Sev A(Critical)|One or more services aren’t accessible or are unusable. Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability. Multiple users or services are affected.|1 Hour|2 Hours|
-|Sev B(High)|The service is usable but in an impaired fashion. The situation has moderate business impact and can be dealt with during business hours. A single user, customer, or service is partially affected.|2 Hours|4 Hours|
-|Sev C(Medium)|The situation has minimal business impact. The issue is important but does not have a significant current service or productivity impact for the customer. A single user is experiencing partial disruption, but an acceptable workaround exists.|4 Hours|8 Hours|
+|Sev A (Critical)|One or more services aren’t accessible or are unusable. Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability. Multiple users or services are affected.|1 Hour|2 Hours|
+|Sev B (High)|The service is usable but in an impaired fashion. The situation has moderate business impact and can be dealt with during business hours. A single user, customer, or service is partially affected.|2 Hours|4 Hours|
+|Sev C (Medium)|The situation has minimal business impact. The issue is important but does not have a significant current service or productivity impact for the customer. A single user is experiencing partial disruption, but an acceptable workaround exists.|4 Hours|8 Hours|
 
 ## Support partnership
 Successful technical support depends on the partnership between Microsoft support and your organization's IT department.  Initial troubleshooting efforts in your organization, combined with effective communication between your admins and Microsoft, can help resolve issues quickly.
 
 ### How your administrators can help
-People with Intune administrator roles (including tenant administrators and service administrators) are authorized to access the Intune Administration console and to communicate directly with Microsoft about Intune service requests. These administrators can also include Microsoft partners that you have specified as delegated administrators, as described in the **Manage partner relationships** section of [Maintain Microsoft Intune](maintain-microsoft-intune.md).
+People with Intune administrator roles (including tenant administrators and service administrators) are authorized to access the Intune Administration console and to communicate directly with Microsoft about Intune service requests. These administrators can also include Microsoft partners that you have specified as delegated administrators.
 
 The administrator:
 
@@ -113,12 +129,20 @@ Our role is to:
 
 ### See also
 [General troubleshooting tips for Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md)
+
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
+
 [Troubleshoot company resource access problems with Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
+
 [Troubleshoot app deployment problems in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
+
 [Troubleshoot device enrollment in Intune](troubleshoot-device-enrollment-in-intune.md)
+
 [Troubleshoot policies in Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
+
 [Troubleshoot client setup in Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
+
 [Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-[Documentation for Microsoft Intune](documentation-for-microsoft-intune.md)
-[Frequently asked questions for Microsoft Intune](frequently-asked-questions-for-microsoft-intune.md)
+
+
+[Frequently asked questions for Microsoft Intune](/intune/understand-explore/frequently-asked-questions-for-microsoft-intune)

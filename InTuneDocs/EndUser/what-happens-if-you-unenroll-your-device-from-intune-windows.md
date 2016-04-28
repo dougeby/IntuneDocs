@@ -1,22 +1,38 @@
 ---
-title: What happens if you unenroll your device from Intune?
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: What happens if you unenroll your device from Intune? | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # What happens if you unenroll your device from Intune?
 
 When you uninstall the Company Portal app from your device, it also unenrolls your device from Intune. For additional information about what happens, use the link that matches the type of device you're using.
 
-- [Windows 10 mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile,-8.1,-windows-8,-windows-7,-vista)
-- [Windows 10, Windows 8.1 or Windows Phone 8](#windows-10,-windows-8.1-or-windows-phone-8)
-- [Windows RT running Windows 8.1 or Windows RT](#windows-rt-running-windows-8.1-or-windows-rt)
+- [Windows 10 mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
+- [Windows 10, Windows 8.1 or Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
+- [Windows RT running Windows 8.1 or Windows RT](#windows-rt-running-windows-8-1-or-windows-rt)
 
 
 ## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista

@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Add apps | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Add apps with Microsoft Intune
 Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. These will help you to understand which apps you can deploy to which platform, and to understand the prerequisites that must be in place before you do so.
 
@@ -33,7 +49,8 @@ This type of app is uploaded to your cloud storage space.
 
 This type of app is uploaded to your cloud storage space.
 
-Currently, end users cannot install corporate apps from the Intune Company Portal app for iOS. This is due to restrictions placed on apps that are published in the iOS App Store (see [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)). Users can access corporate apps (including managed App Store apps and line-of-business app packages) by launching the Company Portal app on their device and tapping the Company Apps tile, which will open the browser and redirect them to the Intune Web Portal. For more information about the mobile management capabilities enabled by the Intune Company Portal app, see [Mobile device management capabilities in Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md).
+Currently, end users cannot install corporate apps from the Intune Company Portal app for iOS. This is due to restrictions placed on apps that are published in the iOS App Store (see [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)). Users can access corporate apps (including managed App Store apps and line-of-business app packages) by launching the Company Portal app on their device and tapping the Company Apps tile, which will open the browser and redirect them to the Intune Web Portal.
+
 ### **Windows Phone app package (&#42;.xap, .appx, .appxbundle)**
 - To deploy apps, you'll need an enterprise mobile code-signing certificate. For details, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
@@ -63,9 +80,9 @@ Used when you have a:
 
 Apps based on external links are not stored in your Intune cloud storage space.
 ### **Managed iOS app from the app store**
-Lets you manage and deploy iOS apps that are free of charge from the app store. Also lets you associate [mobile application management policies](https://technet.microsoft.com/library/dn878026.aspx) with [compatible apps](https://technet.microsoft.com/library/dn708489.aspx) and review their status in the administrator console.<br /><br />Managed iOS apps are not stored in your Intune cloud storage space.
+Lets you manage and deploy iOS apps that are free of charge from the app store. Also lets you associate [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) with [compatible apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) and review their status in the administrator console.<br /><br />Managed iOS apps are not stored in your Intune cloud storage space.
 > [!TIP]
-> Options for mobile devices are not available until you [set the Mobile Device Management Authority](https://technet.microsoft.com/library/mt346013.aspx) to Intune.
+> Options for mobile devices are not available until you [set the Mobile Device Management Authority](get-ready-to-enroll-devices-in-microsoft-intune.md) to Intune.
 
 ## Support for Universal Windows Platform (UWP) apps
 Windows 10 devices do not require a sideloading key to install line of business apps. However, the registry key **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** must have a value of to **1** to enable sideloading.

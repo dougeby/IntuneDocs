@@ -1,13 +1,30 @@
 ---
-title: Microsoft Intune Company Portal Application License Terms
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 94ae5ce0-55fd-494b-bc7d-5153f47711fb
+# required metadata
+
+title: Microsoft Intune Company Portal Application License Terms | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 94ae5ce0-55fd-494b-bc7d-5153f47711fb
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Microsoft Intune Company Portal Application License Terms
 
 ## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT INTUNE COMPANY PORTAL

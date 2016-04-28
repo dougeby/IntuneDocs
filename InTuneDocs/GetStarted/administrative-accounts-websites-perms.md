@@ -1,14 +1,30 @@
 ---
-title: Administrative accounts, websites, and permissions in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic:
-ms.assetid:
+# required metadata
+
+title: Administrative accounts, websites, and permissions in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Administrative accounts, websites, and permissions in Microsoft Intune
 
 Before you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
@@ -16,24 +32,24 @@ Before you set up Microsoft Intune, review this topic and other requirements lis
 To administer Intune, you'll use:
 - Two types of administrator accounts
 - User accounts with additional permissions
-- Two administration consoles to grant your administrators access to the things they should manage.
+- Two, web-based administration consoles/portals to grant your administrators access to the things they should manage.
 
 The following sections explain these accounts and portals.
 
-## Intune administrator accounts and special permissions
+## Administrator accounts and user accounts with special permissions
 
 Below are the accounts and permissions that you'll use for Intune.
 
 ### Tenant administrator
 |Permission levels|More information|
 |--------------------------|-------------------------|
-|Tenant administrators are assigned one administrator role, which defines the administrative scope for that user and the tasks they can manage.<br /><br />Administrator roles are common between the different Microsoft cloud services, although some services might not support some roles.<br /><br /> Microsoft Intune uses the following roles:<br /><br />- Global administrator<br />- Billing administrator<br />- Password administrator<br />- Service support administrator<br />- User management administrator|By default, the account you use to create your Microsoft Intune subscription is a tenant administrator with the global administrator role.<br /></br>  As a tenant administrator, you use the [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] to manage your subscription for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and assign tenant administrators from  the [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />Use a tenant administrator with the global administration role to access the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] to assign your first service administrator. As a best practice, do not use a tenant administrator for day-to-day management tasks. A tenant administrator does not require a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to access the [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />The tenant administrator is a common concept between Microsoft cloud services. When you subscribe to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], your service is a [tenant of Microsoft Azure AD](http://technet.microsoft.com/library/jj573650.aspx).|
+|Tenant administrators are assigned one administrator role, which defines the administrative scope for that user and the tasks they can manage.<br /><br />Administrator roles are common between the different Microsoft cloud services, although some services might not support some roles.<br /><br /> Microsoft Intune uses the following roles:<br /><br />- Global administrator<br />- Billing administrator<br />- Password administrator<br />- Service support administrator<br />- User management administrator|By default, the account you use to create your Microsoft Intune subscription is a tenant administrator with the global administrator role.<br /></br>  As a tenant administrator, you use the [!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] to manage your subscription for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and assign tenant administrators from  the [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />Use a tenant administrator with the global administration role to access the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] to assign your first service administrator. As a best practice, do not use a tenant administrator for day-to-day management tasks. A tenant administrator does not require a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to access the [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />The tenant administrator is a common concept between Microsoft cloud services. When you subscribe to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], your service is a tenant of Microsoft Azure AD. See the Azure AD tenant section in [What is an Azure AD directory?](http://technet.microsoft.com/library/jj573650.aspx).|
 
 
 ### Service administrator
 |Permission levels|More information|
 |--------------------------|-------------------------|
-|Service administrators are assigned one of the following permissions:<br /><br />**Full access**: Grants access to all areas of the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)], with no restrictions. Can also add and manage other service administrators.<br /><br />**Read-only access**: Grants read permission to all areas of the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]. A read-only service admin cannot modify data, but can run reports.<br /><br />**Helpdesk - Groups Node**: Grants permissions that enable the service administrator to perform only a set of tasks commonly associated with helpdesk scenarios. For information about this permission set, see [Control what admins can see in the Microsoft Intune admin console](/intune/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console).|By default, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] does not assign a service administrator. Instead, you must use a tenant administrator with the global administrator role to assign the first service administrator for your subscription. </br></br> As a service administrator, you use the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] to manage day-to-day tasks for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].<br /><br />You assign service administrators from the administrator console. A service administrator requires a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] before the account can access the administration console.|
+|Service administrators are assigned one of the following permissions:<br /><br />**Full access**: Grants access to all areas of the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)], with no restrictions. Can also add and manage other service administrators.<br /><br />**Read-only access**: Grants read permission to all areas of the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]. A read-only service admin cannot modify data, but can run reports.<br /><br />**Helpdesk - Groups Node**: Grants permissions that enable the service administrator to perform only a set of tasks commonly associated with helpdesk scenarios. For information about this permission set, see [Customize Intune console views according to admin roles](/intune/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console).|By default, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] does not assign a service administrator. Instead, you must use a tenant administrator with the global administrator role to assign the first service administrator for your subscription. </br></br> As a service administrator, you use the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] to manage day-to-day tasks for [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].<br /><br />You assign service administrators from the administrator console. A service administrator requires a license to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] before the account can access the administration console.|
 
 
 
@@ -77,7 +93,7 @@ Below are the accounts and permissions that you'll use for Intune.
 
 Only users with service administrator permissions or tenant administrators with the global administrator role can sign in to this portal. To access the administration console, your account must have a license to use [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and a sign-in status of **Allowed**.
 
-Learn more about [adding users for your subscription](get-started-with-a-paid-subscription-to-microsoft-intune-step-3.md) and [assigning licenses for your subscription](get-started-with-a-paid-subscription-to-microsoft-intune-step-4.md).
+Learn more about [adding users for your subscription](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) and [assigning licenses for your subscription](start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 
  ### See also
  [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)

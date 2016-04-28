@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Device compliance policies | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Device compliance policies in Microsoft Intune
 ## What is a compliance policy?
 To protect company data, you need to make sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device. A set of such rules is referred to as a compliance policy.
@@ -45,7 +61,7 @@ The following table lists the device types supported by compliance policies and 
 ## Next steps
 [Create a device compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
 
-[Deploy a device compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
+[Deploy and monitor a device compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
 ### See also
-[Manage access to email and SharePoint with Microsoft Intune](manage-access-to-email-and-O365-services-with-intune.md)
+[Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)

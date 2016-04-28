@@ -1,14 +1,30 @@
 ---
-title: Configure iOS apps with mobile app configuration policies in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
+# required metadata
+
+title: Configure iOS apps with mobile app configuration policies in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Configure iOS apps with mobile app configuration policies in Microsoft Intune
 Use mobile app configuration policies in Microsoft Intune to supply settings that might be required when the user runs an app. For example, an app might require the user to specify:
 
@@ -32,7 +48,7 @@ You do not deploy these policies directly to users and devices. Instead, you ass
 > -   **Managed iOS app from the app store**
 > -   **App package for iOS**
 > 
-> For more information about app installation types, see [Plan for app deployment in Microsoft Intune](../Topic/plan-for-app-deployment-in-Microsoft-Intune.md).
+> For more information about app installation types, see [Deploy apps with Microsoft Intune](deploy-apps.md).
 
 ## Configure a mobile app configuration policy
 
@@ -92,7 +108,7 @@ The new policy is displayed in the **Configuration Policies** node.
 ## Associate a mobile app configuration policy with an app
 After you have created a mobile app configuration policy, you must associate it with the iOS app to which you want the settings in the configuration policy to apply.
 
-To do this, follow the steps to create an app deployment in [Deploy apps to mobile devices in Microsoft Intune](Deploy-apps-to-mobile-devices-in-Microsoft-Intune.md). When you reach the **Mobile App Configuration** page of the wizard, select the policy you want to associate with the app from the **App Configuration Policy** drop-down list.
+To do this, follow the steps to create an app deployment in [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) and [Deploy apps with Microsoft Intune](deploy-apps-in-microsoft-intune.md) . When you reach the **Mobile App Configuration** page of the wizard, select the policy you want to associate with the app from the **App Configuration Policy** drop-down list.
 
 Then, continue to deploy and monitor the app deployment as usual.
 
@@ -131,7 +147,4 @@ When you create a mobile app configuration file, you can specify one or more of 
 
 ```
 
-
-### See Also
-[Deploy and configure apps with Microsoft Intune](deploy-and-configure-apps-with-microsoft-intune.md)<br>[Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md)
 

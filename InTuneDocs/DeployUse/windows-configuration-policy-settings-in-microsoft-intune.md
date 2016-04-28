@@ -1,14 +1,30 @@
 ---
-title: Windows policy settings in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
+# required metadata
+
+title: Windows policy settings in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Windows policy settings in Microsoft Intune
 Use the Microsoft Intune **Windows general configuration policy** to configure settings for enrolled Windows 8, and Windows 8.1 devices:
 
@@ -88,7 +104,7 @@ Use the Microsoft Intune **Windows general configuration policy** to configure s
 |**Security level for restricted sites**|Configure the security level for the restricted sites zone.|Yes|No|
 |**Send Do Not Track header**|In Internet Explorer, send a do not track header to visited sites.|Yes|No|
 |**Allow Enterprise Mode menu access**|Lets users access the Enterprise Mode menu options from Internet Explorer.<br>If selected, you can also specify a **Logging report location** which contains a URL to a report which shows websites for which users have turned on Enterprise Mode access.|Yes|No|
-|**Enterprise Mode site list location**|Specify the location of the list of websites that will use Enterprise Mode when it is active.||Yes|No|
+|**Enterprise Mode site list location**|Specify the location of the list of websites that will use Enterprise Mode when it is active.|Yes|No|
 
 ## Device capabilities settings - cellular
 
@@ -98,6 +114,6 @@ Use the Microsoft Intune **Windows general configuration policy** to configure s
 
 
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

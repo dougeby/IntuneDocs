@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Manage data transfer between iOS apps | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Manage data transfer between iOS apps with Microsoft Intune
 ## Manage iOS apps
 Protecting your company data includes making sure that file transfers are restricted to apps that are managed by you.  You can manage iOS apps in the following ways:
@@ -17,24 +33,23 @@ Protecting your company data includes making sure that file transfers are restri
 
 -   You can also deploy and manage apps through the **MDM channel**.  This requires that the devices are enrolled in the MDM solution. These can be **policy-managed**  apps or other managed  apps.
 
-The **Open in management** feature for iOS devices can limit file transfers between apps that are deployed through the **MDM channel**. Open in management restrictions are set in configuration settings and deployed using your MDM software.  When the user installs the deployed app, the restrictions you set are applied.
+The **Open in management** feature for iOS devices can limit file transfers between apps that are deployed through the **MDM channel**. Open in management restrictions are set in configuration settings and deployed using your MDM solution.  When the user installs the deployed app, the restrictions you set are applied.
 ##  Using MAM with iOS apps
 Mobile app management (MAM) policies can be used with the iOS **Open in management** feature to protect company data in the following ways:
 
--   **Employee owned devices not managed by any MDM solution:** You can set the MAM policy settings to **Allow app to transfer data to only managed apps**. When the end-user opens a protected file in an app that is not policy-managed, the file is unreadable.
+-   **Employee owned devices not managed by any MDM solution:** You can set the MAM policy settings to **Allow app to transfer data to only managed apps**. When the end user opens a protected file in an app that is not policy-managed, the file is unreadable.
 
 -   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with MAM policies and other managed iOS apps deployed through Intune is allowed  automatically. To allow data transfer between apps with MAM policies, enable the **Allow app to transfer data to only managed apps** setting. You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune.   
 
--   **Devices managed by a third party MDM:** You can restrict data transfer to only managed apps by using the iOS **Open in management** feature.
-To make sure that apps that you deploy using your third party MDM solution, uses the MAM policies you have configured in Intune, you must configure the user UPN setting as described in the [Configure user UPN setting](#bkmk_userUPN) walkthrough.  When apps are deployed with the user UPN setting, the MAM policies are applied to the app when the end-user signs-in using their work account.
+-   **Devices managed by a third party MDM solution:** You can restrict data transfer to only managed apps by using the iOS **Open in management** feature.
+To make sure that apps that you deploy using your third party MDM solution are also associated with the MAM policies you have configured in Intune, you must configure the user UPN setting as described in the [Configure user UPN setting](#configure-user-upn-setting) walkthrough.  When apps are deployed with the user UPN setting, the MAM policies are applied to the app when the end user signs-in using their work account.
 
 > [!IMPORTANT]
 > The user UPN setting is only required for apps deployed to devices managed by a third-party MDM.  For Intune managed devices, this setting is not required.
 
-## <a name="bkmk_userUPN"></a>Configure user UPN setting
-This configuration is required for devices that are managed by a third-party MDM. The procedure described below is a general flow on how to implement the UPN setting and the resulting end-user experience:
+## Configure user UPN setting
+This configuration is required for devices that are managed by a third-party MDM solution. The procedure described below is a general flow on how to implement the UPN setting and the resulting end user experience:
 
-### Configure UPN setting
 
 1.  Configure a mobile app management policy for iOS platform. Configure policy settings per your company requirements and select the apps that should have this policy.
 
@@ -52,10 +67,10 @@ This configuration is required for devices that are managed by a third-party MDM
 
 3.  End user tries to open document from native mail in Microsoft Word.
 
-4.  When the Word app launches, the end user is prompted to log in using their work account.  This account should match the one specified in the configured in the app configuration settings for Microsoft Word.
+4.  When the Word app launches, the end user is prompted to log in using their work account.  This work account the end user enters when prompted should match account you specified in the configured in the app configuration settings for the Microsoft Word app.
 
     > [!NOTE]
-    > The end-user can add other personal accounts to Word to do their personal work and not be affected by the MAM policies when using the Word app in a personal context.
+    > The end user can add other personal accounts to Word to do their personal work and not be affected by the MAM policies when using the Word app in a personal context.
 
 5.  When the login is successful, the app policy settings are applied to the Word app.
 

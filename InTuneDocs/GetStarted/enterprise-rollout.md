@@ -1,13 +1,30 @@
 ---
-title: Enterprise rollout
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
+# required metadata
+
+title: Enterprise rollout | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Enterprise rollout
 During the enterprise rollout phase, you will plan and execute your broad rollout strategy, inclusive of communications, training and support activities.
 
@@ -16,7 +33,7 @@ Once you've evaluated your pilot and determined you're ready for your broad roll
 Begin by reviewing the discovery questions, to help scope and define your rollout phase.
 
 ## Discovery questions
-Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in the  Rollout Planning Guide and Project Plan.
+Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks.
 
 -   How will you rollout to your users? For example, will you use a phased approach, by device platform, region, workload, department?
 
@@ -69,12 +86,12 @@ Here is a list of steps to get you started with the **Enterprise rollout** phase
 
 -   Create a Getting Started checklist and enrollment guide for users.
     Use these user guides as a starting point:
-    -  (Enroll your Windows device in Intune)[./enduser/enroll-your-device-in-intune-windows]
-    -  (Enroll your Android device in Intune)[./enduser/enroll-your-device-in-Intune-android]
-    -  (Enroll your iOS device in Intune)[./enduser/enroll-your-device-in-intune-ios]
-    -  (Enroll your Mac OS X device in Intune)[./enduser/enroll-your-device-in-intune-mac-os-x]
+    -  [Enroll your Windows device in Intune](/intune/enduser/enroll-your-device-in-intune-windows]
+    -  [Enroll your Android device in Intune](/intune/enduser/enroll-your-device-in-intune-android]
+    -  [Enroll your iOS device in Intune](/intune/enduser/enroll-your-device-in-intune-ios]
+    -  [Enroll your Mac OS X device in Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x]
 
--   Define a process for updating training materials, as needed
+-   Define a process for updating training materials, as needed.
 
 -   Implement broad rollout plan.
 
@@ -83,17 +100,15 @@ Here are some  challenges that you may encounter in the **Enterprise rollout** p
 
 -   **Challenge:** Emails were sent, but adoption is limited.
 
-    **Mitigation:** Understand that users may get hundreds, if not thousands of emails a day. To help ensure your message is heard: (1) have an executive sponsor send out the initial messaging, (2) keep your email short and focus on the value-prop, (3) have a clear call-to-action, and (4) use several different awareness generating tactics- put up posters in cafeterias letting users know to check their inbox, for example.
+    **Mitigation:** Understand that users may get hundreds, if not thousands of emails a day. To help ensure your message is heard: (1) have an executive sponsor send out the initial messaging, (2) keep your email short and focus on the value-prop, (3) have a clear call-to-action, and (4) use several different awareness generating tactics: put up posters in cafeterias letting users know to check their inbox, for example.
 
 -   **Challenge:** Users are resistant to change and push back on using new technology.
 
-    **Mitigation:**Use the positive experiences of your pilot users to promote the use of devices managed by Intune.
+    **Mitigation:** Use the positive experiences of your pilot users to promote the use of devices managed by Intune.
 
 -   **Challenge:** Users feel if they have to be trained, the solution must be hard to use.
 
     **Mitigation:** Everyone learns at a different pace. Some pick up new technology without any instruction, while others require some guidance or hand-holding. Training can offer tips for ensuring users are getting the most out of the solution, and can be broken out into smaller brown bags or by department to not overwhelm users or appear too detailed. Position training as a value-add and offer segmented training/brown bags. To maximize user learning and adoption, incorporate a variety of training methods into your plan.
 
-## Next steps
->[!div class="step-by-step"]
-
->[&larr; **Pilot**](pilot.md)     [**Operations and maintenance** &rarr;](operations-and-maintenance.md)
+### Next steps
+[Operations and maintenance](operations-and-maintenance.md)

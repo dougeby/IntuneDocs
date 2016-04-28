@@ -1,19 +1,35 @@
 ---
-title: Configure Intune certificate profiles
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
+# required metadata
+
+title: Configure Intune certificate profiles | Microsoft Intune
+description:
+keywords:
+author: nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
 ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
-author: Lizap
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Configure Intune certificate profiles
 After your infrastructure and certificates are configured as described in [Configure certificate infrastructure](configure-certificate-infrastructure.md), you can configure certificate profiles:
 
-**Task 1** - Export the Trusted Root CA certificate 
-**Task 2** - Create Trusted CA certificate profiles 
+**Task 1** - Export the Trusted Root CA certificate
+**Task 2** - Create Trusted CA certificate profiles
 **Task 3** - Either:
 
 Create SCEP certificate profiles
@@ -26,7 +42,7 @@ Export the Trusted Root CA certificate as a **.cer** file from the issuing CA, o
 You will import this certificate when you configure a Trusted  certificate profile.
 
 ### Task 2 - Create Trusted certificate profiles
-You must create a **Trusted certificate profile** before you can create a SCEP or .PFX certificate profile. You need a Trusted certificate profile and a SCEP or.PFS profile for each mobile device platform.
+You must create a **Trusted certificate profile** before you can create a SCEP or .PFX certificate profile. You need a Trusted certificate profile and a SCEP or .PFS profile for each mobile device platform.
 
 ##### To create a trusted certificate profile
 
@@ -44,7 +60,7 @@ You must create a **Trusted certificate profile** before you can create a SCEP o
 
     **Windows &gt; Trusted Certificate Profile (Windows Phone 8.1 and later)**
 
-    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Provide the requested information to configure the trusted certificate profile settings for Android, iOS, Mac OS X, Windows 8.1, or Windows Phone 8.1. In the  **Certificate file** setting,  import the Trusted Root CA certificate (**.cer**) that you exported from your issuing CA. The **Destination store** setting applies only to devices running Windows 8.1 and later, and only if the device has more than one certificate store.
 
@@ -72,7 +88,7 @@ After you have created a Trusted CA certificate profile, create SCEP or .PFX cer
 
     **Windows &gt; SCEP Certificate Profile (Windows Phone 8.1 and later)**
 
-    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Follow the instructions on the profile configuration page to configure the SCEP certificate profile settings.
 
@@ -93,12 +109,12 @@ The new policy displays in the **Policy** workspace, and can now be deployed.
     -   **Windows &gt; PKCS #12 (.PFX)  Certificate Profile (Windows 10 and later)**
 
     -   **Windows &gt; PKCS #12 (.PFX)  Certificate Profile (Windows Phone 10 and later)**
-    
+
     -    **iOS > PKCS #12 (.PFX) Certificate Profile (iOS 7.1 and later)**    
 
-    Learn more: [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+    Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Provide the information requested on the policy form. 
+3.  Provide the information requested on the policy form.
 
 4.  When you are finished, click **Save Policy**.
 
@@ -116,12 +132,12 @@ Certificate profiles install only on applicable devices based on the platform yo
 
 -   Although each profile is deployed separately, both the Trusted Root and the SCEP/.PFX profile must be deployed or else the SCEP/.PFX certificate policy will fail.
 
-You deploy certificate profiles the same way you deploy other policy for Intune. For information about how to deploy and manage policies, see [Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-Microsoft-Intune.md).
+You deploy certificate profiles the same way you deploy other policy for Intune. For information about how to deploy and manage policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-##  Next steps
+###  Next steps
 
 You can now use certificates to help secure email, Wi-Fi, and VPN profiles:
 
--  [Configure access to corporate email using email profiles](Configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
--  [Help users connect to company networks using Wi-Fi profiles](Help-users-connect-to-company-networks-using-Wi-Fi-profiles-with-Microsoft-Intune.md)
--  [Help users connect to their work using VPN profiles](Help-users-connect-to-their-work-using-VPN-profiles-with-Microsoft-Intune.md)
+-  [Configure access to corporate email using email profiles](configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
+-  [Wi-Fi connections in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
+-  [VPN connections in Microsoft Intune](vpn-connections-in-microsoft-intune.md)

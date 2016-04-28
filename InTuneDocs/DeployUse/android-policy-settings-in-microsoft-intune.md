@@ -1,14 +1,30 @@
 ---
-title: Android configuration policy settings in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
+# required metadata
+
+title: Android configuration policy settings in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Android policy settings in Microsoft Intune
 
 ## General configuration policy
@@ -22,9 +38,9 @@ Use the Microsoft Intune **Android general configuration policy** to configure s
 -   **Compliant and noncompliant apps** - Specify a list of apps that are compliant, or not compliant in your company. On Android and iOS devices, the **Noncompliant Apps Report** can be used to view the compliance of apps you specified in the list against the apps that users have installed (but cannot actually block the installation of the app).
 
 > [!TIP]
-> You can configure terms and conditions for users to ensure that they acknowledge that apps on their device, including personal apps will be evaluated, and noncompliant apps will either be blocked, or reported as noncompliant. Users must accept these terms and conditions before they can enroll their device and use the company portal to get apps. For more information about using terms and conditions, see [Working with terms and conditions policies in Microsoft Intune](http://msdn.microsoft.com/en-us/library/ce59fb93-01fd-4822-a57d-45ca7d89843d).
+> You can configure terms and conditions for users to ensure that they acknowledge that apps on their device, including personal apps will be evaluated, and noncompliant apps will either be blocked, or reported as noncompliant. Users must accept these terms and conditions before they can enroll their device and use the company portal to get apps. For more information about using terms and conditions, see [Terms and condition policy settings in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
-If the setting you are looking for does not appear in this topic, you might be able to create it using an Android custom policy that lets you use OMA-URI settings to control the device. For more information, see [Android custom policy settings in Microsoft Intune](android-custom-policy-settings-in-microsoft-intune.md).
+If the setting you are looking for does not appear in this topic, you might be able to create it using an Android custom policy that lets you use OMA-URI settings to control the device. For more information, see **Custom policy settings** later in this topic.
 
 ### Password settings
 
@@ -124,7 +140,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |----------------|--------------------|
 |**Report noncompliance when users install the listed apps**|Lists the apps that are not managed by Intune which users are not allowed to install and run.|
 |**Do not report noncompliance when users install the listed apps**|Lists the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />[How to specify URLs to app stores](ios-configuration-policy-settings-in-microsoft-intune.md#BKMK_URL)|
+|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />For help, see How to specify URLs to app stores later in this topic.|
 |**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|
 |**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
@@ -134,7 +150,7 @@ Specify the following settings for **Samsung KNOX devices**:
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then select the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.<br /><br />[How to specify URLs to app stores](ios-configuration-policy-settings-in-microsoft-intune.md#BKMK_URL)|
+|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then select the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.<br /><br />For help, see How to specify URLs to app stores later in this topic.|
 |**Allow volume buttons**|Enables or disables the use of the volume buttons on the device.|
 |**Allow screen sleep wake button**|Enables or disables the screen sleep wake button on the device.|
 
@@ -164,7 +180,7 @@ Use the Microsoft Intune **Android custom configuration policy** to deploy OMA-U
 This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 > [!NOTE]
-> Currently, Android custom policies only support configuring Wi-Fi settings for Android devices that include a pre-shared key. See [Example: Configure a custom Wi-Fi profile with a pre-shared key](android-custom-policy-settings-in-microsoft-intune.md#BKMK_Example) to learn how to do this.
+> Currently, Android custom policies only support configuring Wi-Fi settings for Android devices that include a pre-shared key. See Configure a custom Wi-Fi profile with a pre-shared key later in this topic for more information.
 
 ### General settings
 
@@ -237,6 +253,6 @@ Although Intune supports Wi-Fi profiles for Android devices, this feature does n
 
 4.  When you are done, save the policy and deploy it to the required Android devices. The new Wi-Fi profile will appear in the list of connections on the device.
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 

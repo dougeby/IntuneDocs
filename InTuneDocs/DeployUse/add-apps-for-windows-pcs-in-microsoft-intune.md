@@ -1,14 +1,30 @@
 ---
+# required metadata
+
 title: Add apps for Windows PCs | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Add apps for Windows PCs in Microsoft Intune
 
 Use the information in this topic to learn how to add apps to Intune before you deploy them.
@@ -74,4 +90,4 @@ The app is displayed on the **Apps** node of the **Apps** workspace.
 
 ## Next steps
 
-Once you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune.md](deploy-apps-in-microsoft-intune.md)
+Once you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune.md](deploy-apps.md)

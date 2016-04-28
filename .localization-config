@@ -1,7 +1,7 @@
 {
 	"locales": ["cs-cz", "de-de", "es-es", "fr-fr", "hu-hu", "it-it", "ja-jp", "ko-kr", "nl-nl", "pl-pl", "pt-br", "pt-pt", "ru-ru", "sv-se", "tr-tr", "zh-cn", "zh-tw", "el-gr", "da-dk", "fi-fi", "nb-no", "ro-ro"],
-	"files": ["**/**/*.md", "**/*.md", "**/index.html"],
-	"includeDependencies": true,
+	"files": [1.mdddd],
+	"includeDependencies": false,
 	"autoPush": true,
 	"useJavascriptMarkdownTransformer": true
 }

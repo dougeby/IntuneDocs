@@ -1,14 +1,30 @@
 ---
-title: Get notified by Microsoft Intune alerts
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
+# required metadata
+
+title: Get notified by Microsoft Intune alerts | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Get notified by Microsoft Intune alerts
 Alerts keep you in touch with what's happening in Microsoft Intune.
 
@@ -32,9 +48,9 @@ Alerts are generated based on **alert types**, a set of preconfigured rules buil
 
 |Severity|Details|
 |--------|-------|
-    |![](../media/Critical-Alert.jpg)|Indicates a serious issue that you should investigate as soon as possible, for example, if malware has been detected on a computer.|
-    |![](../media/Warning-Alert.jpg)|Indicates an issue that isn't currently serious, but might become serious if you don't attend to it, for example, security updates are waiting to be installed.|
-    |![](../media/Informational-Alert.jpg)|Indicates information that isn't critical to your operations, for example, a new version of the Exchange Connector is available.|
+    |![Critical alert](../media/Critical-Alert.jpg)|Indicates a serious issue that you should investigate as soon as possible, for example, if malware has been detected on a computer.|
+    |![Warning alert](../media/Warning-Alert.jpg)|Indicates an issue that isn't currently serious, but might become serious if you don't attend to it, for example, security updates are waiting to be installed.|
+    |![Informational alert](../media/Informational-Alert.jpg)|Indicates information that isn't critical to your operations, for example, a new version of the Exchange Connector is available.|
 
 Other alert types might contain different items you can configure such as the percentage of devices that must be affected by an issue before an alert is generated.
 

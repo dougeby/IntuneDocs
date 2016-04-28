@@ -1,22 +1,37 @@
 ---
-title: Microsoft Intune Privacy Statement
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ca2f13b7-9a88-4ede-b4ed-589500489953
+# required metadata
+
+title: Microsoft Intune Privacy Statement | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: ca2f13b7-9a88-4ede-b4ed-589500489953
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Microsoft Intune Privacy Statement
-For the latest [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Privacy Statement, see [this page](http://www.microsoft.com/privacystatement/WindowsIntune/Default.aspx).
 
-Microsoft is committed to protecting your privacy. This privacy statement applies to the data collected by Microsoft through [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] (the “Services”); it does not apply to other online or offline Microsoft sites, products, or services.
+Microsoft is committed to protecting your privacy. This privacy statement applies to the data collected by Microsoft through Microsoft Intune (the “Services”); it does not apply to other online or offline Microsoft sites, products, or services.
 
-[!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] provides enterprise IT Administrators with cloud-based security, management tools and reports, and an upgrade license to the latest version of the Windows operating system, helping them to keep their Windows based PCs up-to-date and secure from virtually anywhere.
+Microsoft Intune provides enterprise IT Administrators with cloud-based security, management tools and reports, and an upgrade license to the latest version of the Windows operating system, helping them to keep their Windows based PCs up-to-date and secure from virtually anywhere.
 
-**Notice to End Users:** All references to “you” or “your” in this privacy statement are to the customers who contract with Microsoft for the Services.   Microsoft’s customers, in turn, may use the Services to develop, provide and host services for their end users. Any information Microsoft collects or handles through the Services is processed for our customers. End users should direct privacy-related requests to the entity providing services to the end user.  Microsoft is not responsible for the privacy practices of our customers or other third parties except as specifically provided in your agreement(s) with Microsoft.
+**Notice to End Users:** All references to “you” or “your” in this privacy statement are to the customers who contract with Microsoft for the Services. Microsoft’s customers, in turn, may use the Services to develop, provide and host services for their end users. Any information Microsoft collects or handles through the Services is processed for our customers. End users should direct privacy-related requests to the entity providing services to the end user.  Microsoft is not responsible for the privacy practices of our customers or other third parties except as specifically provided in your agreement(s) with Microsoft.
 
 -   **[Customer Data](#customer-data)**
 
@@ -32,7 +47,7 @@ Microsoft is committed to protecting your privacy. This privacy statement applie
 
 -   **[Other Information](#other-information)**
 
--   **[Cookies and Other Technologies](cookies-and-other-technologies)**
+-   **[Cookies and Other Technologies](#cookies-and-other-technologies)**
 
 ## Customer Data
 We will use Customer Data (as defined in your agreement(s) with Microsoft) only to provide you the Services.  This may include troubleshooting aimed at preventing, detecting or repairing problems affecting the operation of those services and the improvement of features that involve the detection of, and protection against, emerging and evolving threats to users (such as malware or spam).
@@ -76,19 +91,19 @@ We will not disclose Customer Data to a third party (including law enforcement, 
 Microsoft is committed to helping protect the security of your information. We use a variety of security technologies and procedures to help protect your information from unauthorized access, use, or disclosure.   For example, we store the information you provide on computer systems with limited access, which are located in controlled facilities.
 
 ## Specific Features
-This section contains important privacy information about specific features of [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)]. This is not a complete list of all features.
+This section contains important privacy information about specific features of Microsoft Intune. This is not a complete list of all features.
 
-IMPORTANT NOTE: This Privacy Statement is provided to Microsoft’s Customers.   Microsoft’s customers are responsible for securing rights to their Customer Data necessary for us to provide the Services without violating the rights of any third party.   IT Administrators may choose to publish their own company privacy policy visible to end users in the Company Portal experiences.  [Learn More](http://go.microsoft.com/fwlink/?LinkId=265345).   End users should direct privacy-related requests to their IT Administrators.
+IMPORTANT NOTE: This Privacy Statement is provided to Microsoft’s Customers.   Microsoft’s customers are responsible for securing rights to their Customer Data necessary for us to provide the Services without violating the rights of any third party.   IT Administrators may choose to publish their own company privacy policy visible to end users in the Company Portal experiences. End users should direct privacy-related requests to their IT Administrators.
 
--   **Impact of enrolling a Windows RT, Windows Phone 8, iOS Device, or other Mobile Device:** IT Administrators are granted certain control and access rights to managed mobile devices and may apply policies to manage certain behaviors of that Mobile Device, up to and including erasing all data on that Mobile Device and returning it to its default state.  [Learn more](http://go.microsoft.com/fwlink/?LinkId=265350).
+-   **Impact of enrolling a Windows RT, Windows Phone 8, iOS Device, or other Mobile Device:** IT Administrators are granted certain control and access rights to managed mobile devices and may apply policies to manage certain behaviors of that Mobile Device, up to and including erasing all data on that Mobile Device and returning it to its default state.
 
 -   **Impact of enrolling a Windows XP, Windows Vista, Windows 7 and Windows 8 Enterprise and Professional Computer:**
 
-    -   During enrollment, [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] automatically installs certain [Agents, Applications and Components](http://go.microsoft.com/fwlink/?LinkID=272129) onto the Computer.
+    -   During enrollment, Microsoft Intune automatically installs certain agents, applications, and components onto the Computer.
 
-    -   In some cases, previously installed anti-malware may be removed.  For more information, please refer to “[Using Microsoft Intune Endpoint Protection or an Existing Endpoint Protection Application](http://go.microsoft.com/fwlink/?LinkID=272130).”
+    -   In some cases, previously installed anti-malware may be removed.
 
-    -   IT Administrators are granted certain control and access rights to Managed Computers and may apply policies to manage certain behaviors of these Computers. For more information, please refer to “[ HYPERLINK "http://onlinehelp.microsoft.com/windowsintune/hh127682.aspx" Microsoft Intune Agent Policy Reference](http://go.microsoft.com/fwlink/?LinkID=265298)” and “[Windows Firewall Policy Reference](http://go.microsoft.com/fwlink/?LinkId=272131).”
+    -   IT Administrators are granted certain control and access rights to Managed Computers and may apply policies to manage certain behaviors of these Computers. For more information, please refer to [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
     -   Any software installed on a Managed Computer may be inventoried, regardless of when that software is installed. This may include Software Titles of a personal nature.
 
@@ -96,13 +111,13 @@ IMPORTANT NOTE: This Privacy Statement is provided to Microsoft’s Customers.  
 
     -   IT Administrators are granted access to wipe targeted data on the Managed Computer, or to wipe the entire hard drive.
 
-[Learn more here](http://go.microsoft.com/fwlink/?LinkId=265350) about these and other consequences of enrolling a **Windows XP, Windows Vista, Windows 7 and Windows 8 Enterprise and Professional Computer**.
+The consequences of enrolling a **Windows XP, Windows Vista, Windows 7 and Windows 8 Enterprise and Professional Computer** are as follows:
 
 -   **Impact of removing Windows XP, Windows Vista, Windows 7 and Windows 8 Enterprise and Professional Computer:** Upon removal, Software used by the Services will be uninstalled from the computer. As a result, in those cases where the previously installed anti-malware was removed during the enrollment, the Computer may be left without any active anti-malware programs. [Learn more about these and other consequences of removing a device](http://go.microsoft.com/fwlink/?LinkId=260958).
 
--   **Impact of removing a Windows RT, Windows Phone 8, iOS Device, or other Mobile Device:** Removing a Mobile Device will result in disassociating the user’s Mobile Device with its electronic mail server.  As a result, users will no longer be able to sync their e-mail or install software from the Company Portal experiences.  In some cases, the applications that were installed from the Company Portal experiences will be uninstalled, and any data associated with those applications will be removed.  In some cases, the policies and settings that were applied on the device through [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] will no longer be in effect.  [Learn more about these and other consequences of removing a device](http://go.microsoft.com/fwlink/?LinkId=260958).
+-   **Impact of removing a Windows RT, Windows Phone 8, iOS Device, or other Mobile Device:** Removing a Mobile Device will result in disassociating the user’s Mobile Device with its electronic mail server.  As a result, users will no longer be able to sync their e-mail or install software from the Company Portal experiences.  In some cases, the applications that were installed from the Company Portal experiences will be uninstalled, and any data associated with those applications will be removed.  In some cases, the policies and settings that were applied on the device through Microsoft Intune will no longer be in effect.  [Learn more about these and other consequences of removing a device](http://go.microsoft.com/fwlink/?LinkId=260958).
 
--   **Endpoint Protection.** The Services use the same malware engine as Forefront Endpoint Protection, and the [privacy statement for Forefront Endpoint Protection](http://go.microsoft.com/fwlink/?LinkId=247324) applies.
+-   **Endpoint Protection.** The Services use the same malware engine as Forefront Endpoint Protection, and the privacy statement for Forefront Endpoint Protection applies.
 
 -   **Remote Assistance via Microsoft Easy Assist:** End users can request assistance by using the Remote Assistance feature available on Windows XP, Windows Vista, and Windows 7 computers.  Some of the information transmitted to Microsoft may be viewed by other session participants, and personal information on the user’s desktop or in the user’s application may also be transmitted to Microsoft as part of the Easy Assist sessions. [Learn more](http://go.microsoft.com/fwlink/?LinkID=269828).  Use of Easy Assist is governed by the [Microsoft Easy Assist Service Agreement](http://go.microsoft.com/fwlink/?LinkId=247512) and the [Microsoft Online Services Privacy Statement for Microsoft Office Live Meeting 2007 and Microsoft Easy Assist](http://go.microsoft.com/fwlink/?LinkId=213115).
 
@@ -134,7 +149,7 @@ Data may be transferred to and stored and processed in the United States or any 
 We may use aggregated statistical data, trends and usage information derived from your use of the Services for the purpose of providing, operating, maintaining or improving the Services as well as any Microsoft products and services used to deliver the Services.
 
 ### Support Services
-Microsoft’s support for the Services is subject to the privacy statement set forth at [http://privacy.microsoft.com/support.mspx](http://privacy.microsoft.com/support.mspx).
+Microsoft’s support for the Services is subject to the privacy statement.
 
 ### Authentication Services
 You may configure a work or school account to allow you and end users to authenticate to the Services, as well as other Microsoft or third party services or web properties. Use of those other services or web properties is subject to the privacy statement for those other services and web properties.
@@ -145,7 +160,7 @@ By signing into one Microsoft service, you may be automatically signed into othe
 We will occasionally update our privacy statements to reflect customer feedback and changes in our Services. When we post changes to a statement, we will revise the "last updated" date at the top of the statement. If there are material changes to the statement or in how Microsoft will use your information, we will notify you either by posting a notice of such changes before they take effect or by directly sending you a notification. We encourage you to periodically review the privacy statements for the products and services you use to learn how Microsoft is protecting your information.
 
 ### How to Contact Us
-Microsoft welcomes your comments.  If you believe that Microsoft is not adhering to its privacy or security commitments, please contact us by using this email address [mwiprivex@microsoft.com](mailto:mwiprivex@microsoft.com).  If you have a technical or other customer support question please click to learn more about [ Microsoft Intune Support](http://go.microsoft.com/fwlink/?LinkID=242283) offerings.
+Microsoft welcomes your comments.  If you believe that Microsoft is not adhering to its privacy or security commitments, please contact us by using this email address [mwiprivex@microsoft.com](mailto:mwiprivex@microsoft.com).  If you have a technical or other customer support question please click to learn more about [Microsoft Intune Support](/intune/troubleshoot/how-to-get-support-for-microsoft-intune) offerings.
 
 ### Microsoft Intune Privacy
 Microsoft Corporation
@@ -221,4 +236,3 @@ In addition to standard cookies and web beacons, web sites can use other technol
 -   To manage or block Flash cookies, go to [http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager.html](http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager.html).
 
 -   To learn how to manage or block Sliverlight Application Storage, visit Silverlight
-

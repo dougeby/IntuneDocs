@@ -1,14 +1,30 @@
 ---
-title: Unenroll your device from Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: Unenroll your device from Intune | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Unenroll your device from Intune
 
@@ -16,9 +32,9 @@ If you enrolled in Intune, but no longer want to use your Windows device for wor
 
 To unenroll your device, use the steps that match the device you're using:
 
--	[Unenroll your Windows 10 device](unenroll-your-windows-10-device)
--	[Unenroll your Windows 8.1 computer](unenroll-your-windows-8.1-computer)
--	[Unenroll your Windows Phone 8.1 device](unenroll-your-windows-phone-8.1-device)
+-	[Unenroll your Windows 10 device](#unenroll-your-windows-10-device)
+-	[Unenroll your Windows 8.1 computer](#unenroll-your-windows-8-1-computer)
+-	[Unenroll your Windows Phone 8.1 device](#unenroll-your-windows-phone-8-1-device)
 
 ## Unenroll your Windows 10 device
 

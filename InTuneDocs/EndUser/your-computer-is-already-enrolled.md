@@ -1,14 +1,30 @@
 ---
-title: Your computer is already enrolled
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
+# required metadata
+
+title: Your computer is already enrolled | Microsoft Intune
+description:
+keywords:
 author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Your computer is already enrolled
 You are seeing this page because you ran Setup for the Intune client software. However, the software is already installed on your computer and Setup cannot continue.

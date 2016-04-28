@@ -1,18 +1,34 @@
 ---
-title: Network infrastructure requirements for Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: get-started-article
-ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
-author: Staciebarker
----
-# Network infrastructure requirements for Microsoft Intune
-Before code you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+# required metadata
 
-The following Intune requirements enable your network infrastructure to pass communications between the devices you manage and use to manage your subscription, and the websites on the Internet that the cloud-based service uses.
+title: Network infrastructure requirements | Microsoft Intune
+description:
+keywords:
+author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+# Network infrastructure requirements for Microsoft Intune
+Before you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+
+This topic lists the requirements that enable your network infrastructure to pass communications between the devices you manage and use to manage your Intune subscription, and the websites on the Internet that the cloud-based service uses.
 
 There is no requirement to use on-premises infrastructure (like a server where you must install software), but there are options to use on-premises infrastructure including Exchange and Active Directory synchronization tools.
 
@@ -142,7 +158,7 @@ The following table lists the ports and services that the Intune client accesses
 
 
 ## Requirements for proxy servers
-To manage computers that are behind a proxy server, consider the following:
+To manage computers that are behind a proxy server, be aware that:
 
 -   The proxy server must support both **HTTP** and **HTTPS** because Intune clients use both protocols.
 
@@ -154,14 +170,14 @@ You can also use a proxy server that caches content to [reduce network bandwidth
 
 
 
-## Requirements for the Service to Service Connector
-The Service to Service Connector supports only cloud-based Exchange and has no requirements for on-premises infrastructure.
+## Requirements for the Service to Service connector
+The Service to Service connector supports only cloud-based Exchange and has no requirements for on-premises infrastructure.
 
-To use this Connector, the following must be true:
+To use this connector, the following must be true:
 
--   You have an Office 365 subscription that has an Exchange Server 2013 tenant. Ao long as the tenant is Exchange Server 2013, the Connector supports Exchange Server 2010 in that same environment.
+-   You have an Office 365 subscription that has an Exchange Server 2013 tenant. As long as the tenant is Exchange Server 2013, the connector supports Exchange Server 2010 in that same environment.
 
--   The user account that you use to install the On-Premises Connector must be a tenant administrator for Intune and be an administrator in the Exchange tenant with a license to use Exchange Server 2013.
+-   The user account that you use to install the On-Premises connector must be a tenant administrator for Intune and be an administrator in the Exchange tenant with a license to use Exchange Server 2013.
 
 ### See also
 [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)

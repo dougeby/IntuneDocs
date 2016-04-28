@@ -1,16 +1,48 @@
 ---
-title: Release notes for Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
+# required metadata
+
+title: Release notes for Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Release notes for Microsoft Intune
-[!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)] is an integrated, cloud-based client management solution that provides tools, reports, and upgrade licenses to the latest version of Windows, and helps keep your computers up-to-date and secure. In addition, [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)] lets you manage mobile devices on the network either through Exchange ActiveSync or directly through [!INCLUDE[wit_nextref](../Token/wit_nextref_md.md)]. The following release notes describe important information and known issues in [!INCLUDE[wit_firstref](../Token/wit_firstref_md.md)].
+Microsoft Intune is an integrated, cloud-based client management solution that provides tools, reports, and upgrade licenses to the latest version of Windows, and helps keep your computers up-to-date and secure. In addition, Intune lets you manage mobile devices on the network either through Exchange ActiveSync or directly through Intune. The following release notes describe important information and known issues in Microsoft Intune.
+
+
+## Android users can’t send email when conditional access for Exchange Online is implemented
+
+Users running Samsung Android 5.1.1 and above on their devices are unable to send email when conditional access for Exchange Online has been configured. Samsung acknowledges that the issue is in their built-in mail client in Android 5.1.1 and above, and is currently investigating a fix.
+
+**Workaround 1:** Advise end users to use the Outlook app for Android.
+
+**Workaround 2:** To enable impacted users to send email, you can follow these steps:
+
+1. Put the impacted user into a security group in the “exempted groups” section of the conditional access policy for Exchange Online.
+2. Allow the user to temporarily sync email on the built-in email client.
+3. Remove the impacted user from the exempted group, and confirm that user can now send email.
+
+Microsoft will continue to work closely with Samsung on a fix or additional workarounds.
+
 
 
 ## Changing resource access profiles between groups for iOS and Android may fail
@@ -27,11 +59,11 @@ In both cases above, the resource access profile (email profile) was not removed
 **Workaround:** None.
 
 ## When you enroll a Windows 8.1 device that must authenticate to a proxy server, the enrollment process fails with no visible indication as to the cause of the failure
-**Issue:** When you enroll a [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)] device and the device must authenticate to a proxy server during the enrollment process, the enrollment fails if the device has not cached the proxy server credentials. When the credentials for the proxy server are not cached on the device, the enrolment process must wait for the user to enter the credentials. However, the prompt to provide the proxy server credentials does not display during the enrollment process. The result is that the enrollment process cannot authenticate to the proxy server and there is no visible indication of this failure presented to the user.
+**Issue:** When you enroll a Windows 8.1 device and the device must authenticate to a proxy server during the enrollment process, the enrollment fails if the device has not cached the proxy server credentials. When the credentials for the proxy server are not cached on the device, the enrollment process must wait for the user to enter the credentials. However, the prompt to provide the proxy server credentials does not display during the enrollment process. The result is that the enrollment process cannot authenticate to the proxy server and there is no visible indication of this failure presented to the user.
 
-**Workaround:** For [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)] devices that must enroll on a network that requires use of an authenticated proxy server, configure and save the credentials for the proxy server prior to enrollment of the device. To configure and save the credentials on a [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)] device:
+**Workaround:** For Windows 8.1 devices that must enroll on a network that requires use of an authenticated proxy server, configure and save the credentials for the proxy server prior to enrollment of the device. To configure and save the credentials on a Windows 8.1 device:
 
-1.  On the [!INCLUDE[winblue_client_2](../Token/winblue_client_2_md.md)] device, open **Internet Explorer**.
+1.  On the Windows 8.1 device, open **Internet Explorer**.
 
 2.  When prompted for the proxy server credentials, enter the credentials and then select the option **Remember my credentials**.
 
@@ -46,7 +78,7 @@ In both cases above, the resource access profile (email profile) was not removed
 ## Microsoft Intune App Wrapping Tool for Android has no built-in uninstall capability
 **Issue:** The **Microsoft App Wrapping Tool for Android** does not have built-in functionality for uninstalling the tool.
 
-**Workaround:** Browse to the location where you installed the tool, and delete the directory. The default installation location is: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. For more information about the app wrapping tool, see [Prepare Android apps for mobile application management](http://technet.microsoft.com/library/mt147413.aspx).
+**Workaround:** Browse to the location where you installed the tool, and delete the directory. The default installation location is: **C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool**. For more information about the app wrapping tool, see [Prepare Android apps for management with App Wrapping Tool](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool).
 
 ## Remote assistance is not available on computers that run Windows 8 or Windows 8.1
 **Issue:** In this release, the remote assistance feature is not available on computers that run Windows 8 or Windows 8.1.
@@ -59,12 +91,6 @@ In both cases above, the resource access profile (email profile) was not removed
 **Workaround:** To make sure that recipients will receive message notification, you should manually add recipients to alert notifications.
 
 ## Language support in the Azure preview portal
-The Azure preview portal is built on a new platform and supports the following languages - Chinese (Simplified), Chinese (Traditional), Czech, Dutch, English, German, Hungarian, Italian, Japanese, Portuguese (Brazil), Portuguese (Portugal), Russian, Spanish  
-English, French, Korean, Polish, Swedish, Turkish.
+The Azure preview portal is built on a new platform and supports the following languages - Chinese (Simplified), Chinese (Traditional), Czech, Dutch, English, German, Hungarian, Italian, Japanese, Portuguese (Brazil), Portuguese (Portugal), Russian, Spanish, English, French, Korean, Polish, Swedish, Turkish.
 
-The Intune Admin Console and the end user facing mobile experiences support Danish, Greek, Finish, Norwegian and Romanian
-in addition to all the languages supported by the Azure preview portal.
-
-## See Also
-[Technical reference for Microsoft Intune](../Topic/Technical-reference-for-Microsoft-Intune.md)
-
+The Intune Admin Console and the end-user facing mobile experiences support Danish, Greek, Finish, Norwegian and Romanian, in addition to all the languages supported by the Azure preview portal.

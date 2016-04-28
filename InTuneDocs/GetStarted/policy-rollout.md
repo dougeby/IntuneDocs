@@ -1,13 +1,30 @@
 ---
-title: Policy rollout
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
+# required metadata
+
+title: Policy rollout | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Policy rollout
 This topic provide specific recommendations for a phased rollout of policies in Microsoft Intune. This approach applies to the first policies you apply in a new Intune deployment, or policies you add to an existing deployment.
 
@@ -44,7 +61,7 @@ Define the scope of your Intune policy deployment:
 ## Proof of concept
 In the Proof of concept phase, test your policy deployment in a laboratory environment on devices and users that you've configured strictly for testing purposes.
 
--   Have your help desk participate in this phase to learn what issues can arise during pilot and production deployment. Troubleshooting information is available in [Troubleshoot policies in Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md).
+-   Have your help desk participate in this phase to learn what issues can arise during pilot and production deployment. Troubleshooting information is available in [Troubleshoot policies in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 -   At this point in the process you should develop communication plans for pilot and production users. At a minimum the plan should include what device behaviors will change and when, the business purpose for the change, and what to do if users or IT staff encounter issues, both self-help information and how to contact the help desk.
 
@@ -78,6 +95,8 @@ During the pilot you will deploy the policy to a small group of test users and d
 
 **Help desk:** Ensure that your help desk is aware of any changes to policies that will affect the user experience, as these may result in support requests.
 
-### See Also
-[Troubleshoot policies in Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
-[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
+
+### See also
+[Get ready to configure mobile app management policies with Microsoft Intune](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+
+[Troubleshoot policies in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)

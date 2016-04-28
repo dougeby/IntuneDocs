@@ -1,14 +1,30 @@
 ---
-title: Compliance policy settings for iOS devices |Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service:
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic:
-ms.assetid:
+# required metadata
+
+title: Compliance policy settings for iOS devices | Microsoft Intune
+description:
+keywords:
 author: karthikaraman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Compliance policy settings for iOS devices in Microsoft Intune
 
@@ -22,7 +38,7 @@ If you are looking for information about other platforms, select one of the foll
 ## System security settings
 ### Password
 - **Require a password to unlock mobile devices:**    Set this to **Yes** to require users to enter a password before
-  they can access their device. IOS devices that use password are encrypted.
+  they can access their device. iOS devices that use password are encrypted.
 
 - **Allow simple passwords:**    Set this
    to **Yes** to let users create simple passwords
@@ -57,12 +73,12 @@ creating previously used passwords.
 number of previously used passwords that cannot be re-used.
 
 - **Require a password when the device returns from an idle state:**
-This setting should be used together with the in the **Minutes of inactivity before password is required** setting. The end-users are prompted to enter a password to access a device that has been inactive for the time specified in the
+This setting should be used together with the in the **Minutes of inactivity before password is required** setting. The end users are prompted to enter a password to access a device that has been inactive for the time specified in the
 **Minutes of inactivity before password is required** setting.
 
 ### Email profile
-- **Email account must be managed by Intune:** When this option is set to **Yes**, the device must use the email profile deployed to the device. The device is considered noncompliant in the following situations:
-  - The email profile must also be deployed to the same user group as user group targeted by the compliance policy, otherwise the users’ devices will be considered non-compliant.
+- **Email account must be managed by Intune:** When this option is set to **Yes**, the device must use the email noncompliant deployed to the device. The device is considered noncompliant in the following situations:
+  - The email profile must also be deployed to the same user group as user group targeted by the compliance policy, otherwise the users’ devices will be considered noncompliant.
   - The device is reported as noncompliant if the user has already set up an email account on the device that matches the Intune email profile deployed to the device. Intune cannot overwrite the user-provisioned profile, and therefore
   cannot manage it. To ensure compliance, the user must remove the
   existing email settings, then, Intune can install the managed
@@ -73,8 +89,8 @@ This setting should be used together with the in the **Minutes of inactivity bef
      If the **Email account must be managed by Intune** setting is selected,
      choose **Select** to specify the Intune email profile. The email profile must be present on the device.
 
-     For details about email profiles, see [Configure access to
-     corporate email using email profiles with Microsoft Intune](../Topic/Configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md).
+     For details about email profiles, see [configure access to
+     corporate email using email profiles with Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
 ## Device health settings
 
@@ -83,8 +99,8 @@ jailbroken devices will not be compliant.
 
 ##  Device properties
 - **Minimum OS required:** When a device does not meet the minimum OS
-version requirement, it is reported as non-compliant.
-A link with information on how to upgrade is displayed. The end-user can choose to upgrade their device after which they should be able to access company resources.
+version requirement, it is reported as noncompliant.
+A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they should be able to access company resources.
 
 - **Maximum OS version allowed:** When a device is using an
 OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.

@@ -1,24 +1,40 @@
 ---
-title: Terms and condition policy settings in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
+# required metadata
+
+title: Terms and condition policy settings in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Terms and condition policy settings in Microsoft Intune
 You can deploy Intune terms and conditions to user groups to explain how enrollment, access to work resources, and using the Company Portal app affect devices and users. Users must accept the terms and conditions before they can use the Company Portal to enroll and access their work.
 
 You can create and deploy multiple policies containing different terms and conditions. You can also produce versions of the same terms and conditions in different languages and then deploy these to their appropriate groups.
 
-## To create a terms and conditions policy
+## Create a terms and conditions policy
 
 1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) click **Policy** &gt; **Terms and Conditions**.
 
-![](../Media/pol-sa-terms-conditions.png)
+	![Terms and conditions policy screenshot](./media/pol-sa-terms-conditions.png)
 
 2.  Click **Add** to create a new terms and conditions policy.
 
@@ -36,7 +52,7 @@ You can create and deploy multiple policies containing different terms and condi
 
 4.  When you are finished, click **Save**. The new policy is displayed in the **Terms and Conditions** node of the **Policy** workspace.
 
-## To deploy a terms and conditions policy
+## Deploy a terms and conditions policy
 
 1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) click **Policy** &gt; **Terms and Conditions**.
 
@@ -46,7 +62,7 @@ You can create and deploy multiple policies containing different terms and condi
 
     When targeted users access the company portal, Intune displays the terms and conditions you deployed. Users must accept these terms before they can gain access to company resources.
 
-## To monitor a terms and conditions policy
+## Monitor a terms and conditions policy
 
 1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) click **Policy** &gt; **Terms and Conditions**.
 
@@ -65,5 +81,5 @@ When you edit an existing terms and conditions policy, you can choose the behavi
 
     We recommend you increase the version number and require acceptance any time you make significant changes to your terms and conditions policy. Keep the current version number if you are fixing typos or changing formatting, for example.
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

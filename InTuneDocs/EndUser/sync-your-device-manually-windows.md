@@ -1,21 +1,37 @@
 ---
-title: Sync your device manually
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: Sync your device manually | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Sync your device manually
 If your app installation is taking too long, use the following instructions to manually sync your Windows device, which might help to speed up the installation. Use the instructions that match the type of device you have:
 
 * [Windows 10 Mobile](#windows-10-mobile)
-* [Windows 10 Desktop](##windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8.1)
+* [Windows 10 Desktop](#windows-10-desktop)
+* [Windows Phone 8.1](#windows-phone-8-1)
 
 
 ## Windows 10 Mobile

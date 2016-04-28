@@ -1,14 +1,30 @@
 ---
-title: Encrypt your Windows device
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 
+# required metadata
+
+title: Encrypt your Windows device | Microsoft Intune
+description:
+keywords:
 author: Staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 
 # Encrypt your Windows device
 To protect your company or school data, your IT administrator might require you to encrypt your Windows device. If you see a message indicating that you must encrypt, your IT administrator should tell you which steps below to use to encrypt your device.

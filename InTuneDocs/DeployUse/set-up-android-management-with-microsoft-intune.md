@@ -1,15 +1,31 @@
 ---
-title: Set up Android management with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
+# required metadata
+
+title: Set up Android management with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
-# Set up device management
+
+# Set up Android device management
 With Microsoft Intune, you can enable BYOD ("bring your own device") for Android devices without any additional work for the platform.
 
 Select from the following device platform options to learn more:
@@ -20,11 +36,10 @@ Select from the following device platform options to learn more:
 - [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
 - [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
 
-## Set up Android management with Microsoft Intune
 Android mobile devices allow users to enroll using the Company Portal app available from Google Play. To let users enroll their devices in Intune complete the following.
 
 1.  **Set up Intune**<br>
-    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](https://technet.microsoft.com/library/mt346013.aspx) as **Microsoft Intune** and setting up MDM.
+    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
 
 2.  **Android enrollment enabled**<br>
     No additional configurations in the Intune console are needed to enable Android mobile device enrollment.

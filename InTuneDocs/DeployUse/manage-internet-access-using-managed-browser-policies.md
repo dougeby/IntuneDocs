@@ -1,13 +1,30 @@
 ---
-title: Manage Internet access using managed browser policies|Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
+# required metadata
+
+title: Manage Internet access using managed browser policies| Microsoft Intune
+description:
+keywords:
+author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
 ms.topic: article
-ms.assetid: ce412e5a-f4f6-45f9-ac5a-bdfbf7cd96d5
-author: robstack
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Manage Internet access using managed browser policies with Microsoft Intune
 The managed browser is a web browsing application that you can deploy in your organization using Microsoft Intune. A managed browser policy configures an allow list or a block list that restricts the web sites that users of the managed browser can visit.
 
@@ -25,7 +42,7 @@ You can create managed browser policies for the following device types:
 
 -   Devices that run iOS 7.1 and later
 
-The Intune Managed Browser supports opening web content from [Microsoft apps you can use with Microsoft Intune mobile application management policies](microsoft-apps-you-can-use-with-microsoft-intune-mobile-application-management-policies.md).
+The Intune Managed Browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 ## Create a managed browser policy
 
@@ -59,7 +76,7 @@ After you have created the managed browser policy, you can then create a softwar
 
 Deploy the app, ensuring that you select the managed browser policy on the **Mobile App Management** page to associate the policy with the app.
 
-For more information about how to deploy apps, see [Deploy apps to mobile devices in Microsoft Intune](deploy-apps-to-mobile-devices-in-microsoft-intune.md).
+For more information about how to deploy apps, see [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
 ## Security and privacy for the managed browser
 
@@ -138,8 +155,3 @@ If multiple managed browser policies are deployed to a device and the settings c
 -   If a device is receiving managed browser policies for the first time and two policies conflict, the URLs will not be enforced on the device. Use the **Policy Conflicts** node of the **Policy** workspace to view the conflicts.
 
 -   If a device has already received a managed browser policy and a second policy is deployed with conflicting settings, the original settings remain on the device. Use the **Policy Conflicts** node of the **Policy** workspace to view the conflicts.
-
-
-
-
-

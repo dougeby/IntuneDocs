@@ -1,14 +1,30 @@
 ---
-title: Control Microsoft Passport settings on devices with Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
+# required metadata
+
+title: Control Microsoft Passport settings on devices with Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Control Microsoft Passport settings on devices with Microsoft Intune
 Microsoft Intune lets you integrate with **Microsoft Passport for Work** which is an alternative sign-in method that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
 
@@ -18,7 +34,7 @@ Intune integrates with Passport for Work in two ways:
 
 -   You can use an Intune policy to control which gestures users can and cannot use to login.
 
--   You can store authentication certificates in the Passport for Work key storage provider (KSP). For more information, see [Enable access to company resources using certificate profiles with Microsoft Intune](enable-access-to-company-resources-using-certificate-profiles-with-microsoft-intune.md).
+-   You can store authentication certificates in the Passport for Work key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).
 
 ## To create a Passport for Work policy
 
@@ -61,6 +77,4 @@ Intune integrates with Passport for Work in two ways:
 ## Further information
 For more information about Microsoft Passport, see [the guide](https://technet.microsoft.com/library/mt589441.aspx) in the Windows 10 documentation.
 
-### See Also
-[Protect data and devices with Microsoft Intune](protect-data-and-devices-with-microsoft-intune.md)
 

@@ -1,14 +1,30 @@
 ---
-title: Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
+# required metadata
+
+title: Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: NathBarn
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune
 Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* account is a special Intune account with permission to enroll more than five devices. You can assign a store manager or supervisor, for example, a device enrollment manager user account to allow her to do the following:
 
@@ -20,7 +36,7 @@ Organizations can use Intune to manage large numbers of mobile devices with a si
 
 -   Configure access to company data
 
-The store manager cannot reset the device from the company portal.
+Only use the device manager account for devices that won't receive email or logon as a specific user. Devices managed with a device manager account cannot be configured with conditional access since these are also per-user scenarios. The store manager cannot reset the device from the company portal.
 
 **Examples of device enrollment manager scenario:**
 A restaurant wants point-of-sale tablets for its wait staff and order monitors for its kitchen staff. The employees never need access to company data or to logon as a user. The Intune administrator creates a device enrollment manager account and enrolls the company-owned devices using that account. Alternatively, the administrator could give the device enrollment manager credentials to a restaurant manager, allowing him or her to enroll and manage the devices.
@@ -30,7 +46,7 @@ The administrator or manager can deploy role-specific apps to the restaurant dev
 > [!NOTE]
 > Device enrollment manager user accounts with more than 20 devices enrolled might have problems using the Company Portal app. To deploy company apps to devices managed with the device enrollment manager, deploy Company Portal app as a **Required Install** to the device enrollment manager's user account.
 
-## Device enrollment manager accounts in Intune
+## Create device enrollment manager accounts
 Device enrollment manager accounts are user accounts with permission to enroll large numbers of corporate-owned devices. Only users in the Intune console can be device enrollment managers.
 
 #### Add a device enrollment manager to Intune
@@ -49,9 +65,9 @@ Device enrollment manager accounts are user accounts with permission to enroll l
 
 7.  Enter the **User ID** of the Intune account and then click **OK**. The device enrollment manager user cannot be an Intune administrator.
 
-8.  The device enrollment manager can now enroll mobile devices using the same procedure an end user uses for a BYOD scenario in the company portal. To enroll devices using the company portal, see [Enable mobile device enrollment with the Microsoft Intune Account Portal](enable-mobile-device-enrollment-with-the-microsoft-intune-account-portal.md).
+8.  The device enrollment manager can now enroll mobile devices using the same procedure an end user uses for a BYOD scenario in the company portal.
 
-#### Delete a device enrollment manager from Intune
+## Delete a device enrollment manager from Intune
 
 1.  Logon to the [Microsoft Intune admin portal](http://manage.microsoft.com) with your administrator sign in.
 
@@ -72,8 +88,3 @@ Deleting a device enrollment manager does not affect enrolled devices. When a de
 -   The deleted device enrollment manager account credentials still cannot wipe or retire devices
 
 -   The deleted device enrollment manager account’s relationship to enrolled devices remains but no additional devices can be enrolled
-
-### See also
-[Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md)
-[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
-[Enable mobile device enrollment with the Microsoft Intune Account Portal](enable-mobile-device-enrollment-with-the-microsoft-intune-account-portal.md)

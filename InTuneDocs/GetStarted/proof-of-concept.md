@@ -1,13 +1,30 @@
 ---
-title: Proof of concept
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
+# required metadata
+
+title: Proof of concept | Microsoft Intune
+description:
+keywords:
 author: Nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Proof of concept (PoC)
 The proof of concept phase should focus on determining the ability of your deployment to meet your company's requirements. This phase includes a simple topology designed to validate specific technical scenarios.  The deployment should be in a test environment and should not host any production users.
 
@@ -16,7 +33,7 @@ A  proof of concept is important to understand the feasibility of your deploymen
 Begin by reviewing the discovery questions to help scope and define your proof of concept.
 
 ## Discovery questions
-Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks which can be documented in your Rollout Planning Guide and Project Plan.
+Discuss these questions with your project team to help scope your project details, uncover potential risks, and define actionable tasks.
 
 -   What are the core scenarios Intune must meet to adddress your organization's device management needs?
 
@@ -37,7 +54,7 @@ The help desk does not need preparation for this phase of the project as there w
 The technical team and executive sponsorship should have visibility into the progress of scenario testing. The design team needs to be aware of the lessons learned to incorporate in its design.
 
 ### Training
-Administrators who will be managing users, devices, policies and applications should use the PoC as an opportunity to learn about the [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)] console and features.
+Administrators who will be managing users, devices, policies and applications should use the PoC as an opportunity to learn about the Intune console and features.
 
 ### Operations
 The proof of concept does not require ongoing operations. However, there may be specific scenarios that operations staff would want to understand or validate in the PoC.
@@ -62,7 +79,5 @@ Here are some  challenges that you may encounter in the **Proof of concept** pha
 
     **Mitigation:** Work with the executive sponsor, network, and user teams to understand the requirements of a client management solution.
 
-## Next steps
->[!div class="step-by-step"]
-
->[&larr; **Project scope**](project-scope.md)     [**Pilot** &rarr;](pilot.md)
+### Next steps
+[Pilot](pilot.md)

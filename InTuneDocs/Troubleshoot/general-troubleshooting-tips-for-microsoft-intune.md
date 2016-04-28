@@ -1,14 +1,30 @@
 ---
-title: General troubleshooting tips for Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
+# required metadata
+
+title: General troubleshooting tips for Microsoft Intune | Microsoft Intune
+description:
+keywords:
 author: nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # General troubleshooting tips for Microsoft Intune
 After you deploy Microsoft Intune you may encounter problems with your configuration or with clients. The resources below may help you find out what could be causing the problem so that you can resolve it.
 
@@ -33,12 +49,12 @@ After you deploy Microsoft Intune you may encounter problems with your configura
 ## Collect available data
 
 -   Device logs. Learn how to collect device logs in:
-  - [Send Android diagnostic data logs to your IT administrator using a USB cable](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-  - [Send Android diagnostic data logs to your IT administrator using email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
-  - [Send Android enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android)
-  - [Send iOS enrollment errors to your IT administrator](send-errors-to-your-it-admin-ios.md)
+  - [Send Android diagnostic data logs to your IT administrator using a USB cable](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+  - [Send Android diagnostic data logs to your IT administrator using email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+  - [Send Android enrollment errors to your IT administrator](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
+  - [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios.md)
 
--   Admin console data, for example, for policy implementation issues you should examine the intended policy and the status of that policy, as described in [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+-   Admin console data, for example, for policy implementation issues you should examine the intended policy and the status of that policy, as described in [Use groups to manage users and devices with Microsoft Intune](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## Research the solution
 
@@ -53,7 +69,7 @@ After you deploy Microsoft Intune you may encounter problems with your configura
 ## Community resources
 You can find other helpful information in these community resources:
 
--   The [Microsoft Intune Survival Guide](http://social.technet.microsoft.com/wiki/contents/articles/23431.microsoft-intune-survival-guide.aspx) contains links to many resources that can help you configure, maintain, and troubleshoot [!INCLUDE[wit_nextref](./includes/wit_nextref_md.md)].
+-   The [Microsoft Intune Survival Guide](http://social.technet.microsoft.com/wiki/contents/articles/23431.microsoft-intune-survival-guide.aspx) contains links to many resources that can help you configure, maintain, and troubleshoot Intune.
 
 -   [The Intune blog](http://blogs.technet.com/b/windowsintune/)
 
@@ -65,11 +81,16 @@ You can find other helpful information in these community resources:
 The topics listed below have troubleshooting help for specific issues. If that information doesn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
+
 [Troubleshoot company resource access problems with Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
+
 [Troubleshoot app deployment problems in Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
+
 [Troubleshoot device enrollment in Intune](troubleshoot-device-enrollment-in-intune.md)
+
 [Troubleshoot policies in Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
+
 [Troubleshoot client setup in Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
+
 [Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-[Documentation for Microsoft Intune](documentation-for-microsoft-intune.md)
-[Frequently asked questions for Microsoft Intune](frequently-asked-questions-for-microsoft-intune.md)
+g
