@@ -1,0 +1,77 @@
+{
+  "build_entry_point": "docs.ps1",
+    "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/IntuneDocs",
+    "docsets_to_publish": [
+        {
+            "docset_name": "InTuneDocs",
+            "build_output_subfolder": "InTuneDocs",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+        {
+            "docset_name": "IntUnderstand",
+            "build_output_subfolder": "InTuneDocs/Understand",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+                {
+            "docset_name": "IntGetStarted",
+            "build_output_subfolder": "InTuneDocs/GetStarted",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+                {
+            "docset_name": "IntPlanDesign",
+            "build_output_subfolder": "InTuneDocs/PlanDesign",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+                {
+            "docset_name": "IntDeployUse",
+            "build_output_subfolder": "InTuneDocs/DeployUse",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+                        {
+            "docset_name": "IntTroubleshoot",
+            "build_output_subfolder": "InTuneDocs/Troubleshoot",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        },
+                        {
+            "docset_name": "EndUser",
+            "build_output_subfolder": "InTuneDocs/EndUser",
+            "locale": "en-us",
+            "version": 0,
+      "open_to_public_contributors": true,
+            "type_mapping": {
+                "Conceptual": "Content"
+            }
+        }
+    ],
+    "notification_subscribers": [""]
+}

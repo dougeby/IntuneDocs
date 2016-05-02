@@ -1,0 +1,46 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
+    ],
+    "resource": [
+        {
+          "files": [
+          "**/images/**",
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp",
+          "**/*.html",
+          "**/*.css",
+          "_themes/**"
+          ],
+        "exclude": [
+          "**/obj/**",
+          "_themes/DocPacker/**"
+        ]
+      }
+    ],
+    "dest": "InTuneDocs/GetStarted",
+    "template": "docs.html",
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumb_path": "/enterprise-mobility/toc.json",
+      "ms.locale": "en-us",
+      "product_feedback_displaytext" : "Intune Feedback",
+      "product_feedback_url": "https://microsoftintune.uservoice.com/"
+    }
+  },
+  "render": {
+    "theme": "hyde",
+    "dest": "_output"
+  },
+  "basepath": "/intune/get-started"
+}

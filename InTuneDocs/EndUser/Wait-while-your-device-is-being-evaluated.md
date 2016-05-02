@@ -1,0 +1,30 @@
+---
+# required metadata
+
+title: Wait while your device is being evaluated | Microsoft Intune
+description:
+keywords:
+author: staciebarker
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 01247881-452c-4da8-93ca-66b5e65c5317
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
+# Wait while your device is being evaluated
+Your device is still being evaluated for compliance. Wait a few more minutes for the compliance check to complete.
+
