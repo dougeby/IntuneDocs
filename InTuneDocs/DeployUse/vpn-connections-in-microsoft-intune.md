@@ -50,7 +50,7 @@ Intune supports creating VPN profiles that use the following connection types:
 
 Connection type |iOS and Mac OS X  |Android  |Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop and Mobile |
 ---------|---------|---------|---------|---------|---------
-Cisco AnyConnect |Yes |Yes   |No    |     No    |No  |No    | Yes (OMA-URI)|     
+Cisco AnyConnect |Yes |Yes   |No    |     No    |No  |No    | Yes, (OMA-URI, Mobile only)|     
 Pulse Secure |Yes  |Yes |Yes   |No  |Yes  |Yes| Yes|        
 F5 Edge Client |Yes |Yes |Yes |No  |Yes  |   Yes |  Yes|   
 Dell SonicWALL Mobile Connect |Yes |Yes |Yes |No  |Yes |Yes |Yes|         
@@ -59,7 +59,9 @@ CheckPoint Mobile VPN |Yes |Yes |Yes |Yes |Yes|Yes|Yes|
 
 
 
-> [!IMPORTANT] Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to help you deploy the applicable app using Intune.        
+> [!IMPORTANT] Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to help you deploy the applicable app using Intune.  
+
+ Learn how to  create custom VPN profiles using URI settings in [Custom configurations for VPN profiles](custom-configurations-for-vpn-profiles.md).     
 
 ## How VPN profiles are secured
 
