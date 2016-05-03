@@ -30,7 +30,7 @@ This information is provided under NDA on an extremely limited basis and is subj
 
 This page is updated periodically. Check back for new What’s Coming updates.
 
-**IS THIS CORRECT FOR ALL THE ITEMS BELOW?** The following changes are under development for Intune. With the exception of the update to the Windows 10 general configuration policy, all of these features will also be supported today for hybrid customers (Configuration Manager integrated with Intune). Hybrid support for the Windows 10 general configuration policy update is coming soon. Please note that some of these features may require the latest version of Configuration Manager.
+The following changes are under development for Intune. All of these features will also be supported for hybrid customers deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
 ## Message Center onboarding
 The [Office 365 Message Center](https://portal.office.com/default.aspx#MessageCenterPage) will replace Intune alerts for notifications about Intune. You will visit the Office 365 Message Center to see messages from Microsoft regarding new features being deployed as well as other one-off notifications.  The associated mobile app will allow you to also receive messages on your mobile phone and forward messages to your users by emailing individual users or distribution groups.
@@ -38,7 +38,7 @@ The [Office 365 Message Center](https://portal.office.com/default.aspx#MessageCe
 
 
 ## App management
-- **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
+<!--- - **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.--->
 <!---TFS 1175844--->
 
 - **MAM SDK: Support PIN length configuration.** You will be able to specify the length of the PIN for MAM apps similar to a device PIN. This will require end users to comply with the new restrictions you set. They will see a slightly modified PIN screen to account for the longer input.
@@ -71,10 +71,6 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 
     All existing Intune features currently available for managing iOS devices will continue to work seamlessly as users upgrade their devices to iOS 9.3. In addition, iOS 9.3 is also supported today for hybrid customers (Configuration Manager integrated with Intune).
 <!--- TFS item 1274326 --->
-
-
-- The **Windows 10 general configuration policy** now contains settings to manage Windows Defender on enrolled Windows 10 PCs.
-<!--- 1244446 --->
 
 ## Access control
 * **Skype for Business Online supports conditional access.** Intune administrators will be able to set a conditional access policy for Skype for Business Online so that it can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to the Skype for Business mobile app on iOS and Android will be prompted to enroll with Intune as well as fix any non-compliance issues before sign-in can complete.
