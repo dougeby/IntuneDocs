@@ -104,7 +104,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                 </li>
                 <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Get started with a paid subscription</h3>
+                    <h3>Intune quick start guide</h3>
                     <p>Building on the 30-day trial guide, this topic walks you through Azure Active Directory synchronization, domain and DNS considerations, and other Intune customizations.</p>
                   </a>
                 </li>
