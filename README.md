@@ -33,7 +33,7 @@ The content in the repository is loosely aligned with the organization of docume
 
 ### Main articles directory
 
-The main articles directory is found directly off the root of the repository, and contains a set of subdirectories with articles formatted as markdown files with an *.md* extension. For [TODO] the Intune repository, this is the `\InTuneDocs` subdirectory. 
+The main articles directory is found directly off the root of the repository, and contains a set of subdirectories with articles formatted as markdown files with an *.md* extension. For the Intune repository, this is the `\InTuneDocs` subdirectory. 
 
 Within the root of this directory are general articles that relate to the overall service, along with another series of subdirectories, which match the common scenarios as outlined on the main landing page for the service. For instance, the "Understand & Explore" articles are in the `Understand` subdirectory, "Deploy & Use" articles are found in the `DeployUse` subdirectory, etc.  
 
