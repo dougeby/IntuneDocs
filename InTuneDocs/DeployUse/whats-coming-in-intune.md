@@ -53,7 +53,7 @@ The [Office 365 Message Center](https://portal.office.com/default.aspx#MessageCe
 - **Skype for business for iOS.** Intune Administrators can now target Skype for business with MAM without enrollment policies.  Once their users are logged in, the MAM policies will be applied.
 <!--- TFS item 1248443 --->
 
-### Xmarin support
+### Xamarin support
 The Microsoft Intune app SDK now supports Xamarin apps in these scenarios:
 
 - Writing new apps, or modifying the code of existing line of business apps using the Intune SDK. You can get the plugin on the [Microsoft Intune Github](https://github.com/msintuneappsdk) page.
