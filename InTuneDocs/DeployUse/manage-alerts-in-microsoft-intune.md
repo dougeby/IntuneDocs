@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage alerts in Microsoft Intune | Microsoft Intune
+title: Manage alerts | Microsoft Intune
 description:
 keywords:
 author: Nbigman

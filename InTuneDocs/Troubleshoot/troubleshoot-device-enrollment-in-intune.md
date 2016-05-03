@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot device enrollment in Intune | Microsoft Intune
+title: Troubleshoot device enrollment| Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -164,6 +164,120 @@ Administrators can delete devices in the Azure Active Directory portal.
     ![Screenshot for device deletion diagnosis](./media/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
 5.  Check that Configuration Manager does not have a scheduled task, script, or other process which could be automatically purging non-domain, mobile, or related devices.
+
+## Enrolled iOS device doesn't appear in console when using System Center Configuration Manager with Intune
+**Issue:** User enrolls iOS device but it does not appear in the Configuration Manager admin console. The device does not indicate that it's been enrolled. Possible causes:
+
+- You may have enrolled your Intune Connector into one account, and then enrolled it into another account. 
+- You may have downloaded the MDM certificate from one account and used it on another account.
+
+
+
+**Resolution:** Perform the following steps:
+
+1. Disable iOS inside of the Windows Intune Connector. 
+	1. Right click the Intune subscription and select "Properties".
+	1. On the "iOS" tab, uncheck "Enable iOS Enrollment".
+
+
+
+1. In SQL, run the following steps on the CAS DB
+  
+	1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
+	1. delete from MDMPolicy where PolicyType = 7 
+	1. delete from MDMPolicyAssignment where PolicyType = 7
+	1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
+	1. delete from MDMPolicy where PolicyType = 11 
+	1. delete from MDMPolicyAssignment where PolicyType = 11 
+	1. DELETE Drs_Signals
+1. Restart the SMS Executive Service or Restart the CM Server 
+
+
+
+1. Get a new APN certificate and upload it: Right-click the Intune subscription in the left pane of Configuration Manager. Select **Create APNs certificate request** and follow the instructions.
+
+
+## Computer enrollment package doesn't download
+**Issue:** While trying to enroll a computer you experience the following:
+-  The enrollment package fails to download 
+-  The download dialog appears but times out
+
+**Resolution:** On the browser you're using for the download, for the period when the download takes place, ensure that downloads are enabled, and that encrypted files can be saved to your local disc.
+
+## The machine is already enrolled - Error hr 0x8007064c
+**Issue:** Enrollment fails with the error **The machine is already enrolled**. The enrollment log shows error **hr 0x8007064c**.
+  
+This may be because the computer had been previously enrolled, or has the cloned image of a computer that had been enrolled. The account certificate of the previous account is still present on the computer.
+
+
+
+**Resolution:** 
+
+1. From the **Start** menu, **Run** -> **MMC**. 
+1. **File** -> **Add/ Remove Snap-ins**.
+1. Double-click **Certificates**, choose **Computer account**, **Next**, select **Local Computer**.
+1. Double-click **Certificates (Local computer)**, choose **Personal/ Certificates**. 
+1. Look for the Intune cert issued by Sc_Online_Issuing, and delete it if present
+1. Delete this registry key if it exists: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** and all sub keys.
+1. Attempt re-enrollment. 
+1. If the machine can still not enroll, look for and delete this key, if it exists: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Attempt re-enrollment. 
+
+    > [!IMPORTANT]
+    > This section, method, or task contains steps that tell you how to modify the registry. However, serious problems might occur if you modify the registry incorrectly. Therefore, make sure that you follow these steps carefully. For added protection, back up the registry before you modify it. Then, you can restore the registry if a problem occurs.
+    > For more information about how to back up and restore the registry, read [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/kb/322756)
+
+## Unable to create policy or enroll clients if the company name contains special characters
+**Issue:** You can't create policy or enroll clients
+
+**Resolution:** In the [Office 365 admin center](https://portal.office.com/), remove the special characters from the company name and save the company information.
+
+## Unable to log in or enroll devices when you have multiple verified domains
+**Issue:** When you add a second verified domain to your A DFS, users with the user principal name (UPN) suffix of the second domain may not be able to log into the portals or enroll devices. 
+
+
+**Resolution:** Microsoft Office 365 customers who utilize single sign-on (SSO) through AD FS 2.0 and have multiple top level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix.  There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the **SupportMultipleDomain** switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. See [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
+
+## Client installation hangs with error code 0x80040154
+**Issue:**
+ 
+-  Client installation during enrollment hangs
+
+-  Unable to enroll device 
+
+-  Error 0x80040154 in WindowsUpdate.log
+
+**Resolution:** 
+
+1. Log in to your Admin Console at https://admin.manage.microsoft.com 
+1. Select "Administration" on the far side.
+1. Select "Updates" in the second column that opens up when clicking "Administration".
+1. Scroll to "Update Classification" and make sure "Critical Updates" is checked.
+
+
+
+## Error codes
+
+|Error code|Possible problem|Suggested resolution|
+|--------------|--------------------|------------------------|
+|0x80CF0437 |The clock on the client computer is not set to the correct time.|Make sure that the clock and the time zone on the client computer are set to the correct time and time zone.
+|
+|0x80240438, 0x80CF0438, 0x80CF402C|Cannot connect to the Intune service. Check the client proxy settings.|Verify that the proxy configuration on the client computer is supported by Intune, and that the client computer has Internet access.|
+|0x80240438, 0x80CF0438|Proxy settings in Internet Explorer and Local System are not configured.|Cannot connect to the Intune service. Check the client proxy settings and confirm that the proxy configuration on the client computer is supported by Intune, and that the client computer has Internet access.|
+|0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|Enrollment package is out of date.|Download and install the current client software package from the Administration workspace.|
+|0x80043002, 0x80CF3002|Account is in maintenance mode.|You cannot enroll new client computers when the account is in maintenance mode. To view your account settings, sign in to your account.|
+|0x80043003, 0x80CF3003|Account is deleted.|Verify that your account and subscription to Intune is still active. To view your account settings, sign in to your account.|
+|0x80043005, 0x80CF3005|The client computer has been retired.|Wait a few hours, remove any older versions of the client software from the computer, and then retry the client software installation.|
+|0x80043006, 0x80CF3006|The maximum number of seats allowed for the account has been reached.|Your organization must purchase additional seats before you can enroll more client computers in the service.|
+|0x80043007, 0x80CF3007|Could not find the certificate file in the same folder as the installer program.|Extract all files before you start the installation. Do not rename or relocate any of the extracted files: all files must exist in the same folder or the installation will fail.|
+|0x8024D015, 0x00240005, 0x80070BC2, 0x80070BC9, 0x80CFD015|The software cannot be installed because a restart of the client computer is pending.|Restart the computer and then retry the client software installation.|
+|0x80070032|One or more prerequisites for installing the client software were not found on the client computer.|Make sure that all required updates are installed on the client computer and then retry the client software installation.|
+|0x80043008, 0x80CF3008|Failed to start the Microsoft Online Management Updates service.|Contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).|
+|0x80043009, 0x80CF3009|The client computer is already enrolled into the service.|You must retire the client computer before you can re-enroll it in the service.|
+|0x8004300B, 0x80CF300B|The client software installation package cannot run because the version of Windows that is running on the client is not supported.|Intune does not support the version of Windows that is running on the client computer.|
+|0xAB2|The Windows Installer could not access VBScript run time for a custom action.|This error is caused by a custom action that is based on Dynamic-Link Libraries (DLLs). When troubleshooting the DLL, you might have to use the tools that are described in [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/en-us/kb/198038).|
+|0x80cf0440|The connection to the service endpoint terminated.|Trial or paid account is suspended. Create a new trial or paid account and re-enroll.|
+
 
 ## iOS enrollment errors
 A list of other iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).

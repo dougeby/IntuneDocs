@@ -1,4 +1,30 @@
 ---
+# required metadata
+
+title: Wi-Fi using PSK | Microsoft Intune
+description: 
+keywords:
+author: nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: 
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+
+---
 # Create a Wi-Fi profile with a pre-shared key
 Here's how to use Intune’s **Custom Configuration** to create a Wi-Fi profile with a pre-shared key. This topic also has an example of how to create an EAP-based Wi-Fi profile.
 

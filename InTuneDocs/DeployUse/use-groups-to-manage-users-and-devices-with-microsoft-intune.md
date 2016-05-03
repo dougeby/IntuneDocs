@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use groups to manage users and devices with Microsoft Intune | Microsoft Intune
+title: Use groups to manage users and devices | Microsoft Intune
 description:
 keywords:
 author: Nbigman
