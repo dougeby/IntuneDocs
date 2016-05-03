@@ -50,7 +50,7 @@ Intune supports creating VPN profiles that use the following connection types:
 
 Connection type |iOS and Mac OS X  |Android  |Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop and Mobile |
 ---------|---------|---------|---------|---------|---------
-Cisco AnyConnect |Yes |Yes   |No    |     No    |No  |No    | Yes (OMA-URI)|     
+Cisco AnyConnect |Yes |Yes   |No    |     No    |No  |No    | Yes, (OMA-URI, Mobile only)|     
 Pulse Secure |Yes  |Yes |Yes   |No  |Yes  |Yes| Yes|        
 F5 Edge Client |Yes |Yes |Yes |No  |Yes  |   Yes |  Yes|   
 Dell SonicWALL Mobile Connect |Yes |Yes |Yes |No  |Yes |Yes |Yes|         
