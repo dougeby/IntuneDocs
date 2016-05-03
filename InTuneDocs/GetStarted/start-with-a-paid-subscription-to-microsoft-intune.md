@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Start with a paid subscription to Microsoft Intune | Microsoft Intune
+title: Intune quick start guide | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Start with a paid subscription to Microsoft Intune
+# Intune quick start guide
 This walkthrough leads you through the steps of setting up a paid subscription of Microsoft Intune to quickly and easily begin managing mobile devices and Windows PCs in use by your organization. You can follow each step in order or just skip ahead if a step is not applicable to your specific environment or business needs.
 
 >[!NOTE]
