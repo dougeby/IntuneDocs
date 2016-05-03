@@ -1,0 +1,28 @@
+[submodule "ThemeIntuneUnderstand"]
+	path = InTuneDocs/Understand/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
+[submodule "ThemeIntuneEndUser"]
+	path = InTuneDocs/EndUser/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
+[submodule "ThemeIntuneGetStarted"]
+	path = InTuneDocs/GetStarted/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
+[submodule "ThemeIntuneTroubleshoot"]
+	path = InTuneDocs/Troubleshoot/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
+[submodule "ThemeIntunePlanDesign"]
+	path = InTuneDocs/PlanDesign/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
+[submodule "ThemeIntuneDeployUse"]
+	path = InTuneDocs/DeployUse/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
+[submodule "docs shared themes"]
+	path = InTuneDocs/_themes
+	url = https://github.com/Microsoft/templates.docs.msft
+	branch = master
