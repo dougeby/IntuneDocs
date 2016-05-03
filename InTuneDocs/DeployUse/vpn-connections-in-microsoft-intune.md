@@ -59,7 +59,9 @@ CheckPoint Mobile VPN |Yes |Yes |Yes |Yes |Yes|Yes|Yes|
 
 
 
-> [!IMPORTANT] Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to help you deploy the applicable app using Intune.        
+> [!IMPORTANT] Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to help you deploy the applicable app using Intune.  
+
+ Learn how to  create custom VPN profiles using URI settings in [Custom configurations for VPN profiles](custom-configurations-for-vpn-profiles.md).     
 
 ## How VPN profiles are secured
 
