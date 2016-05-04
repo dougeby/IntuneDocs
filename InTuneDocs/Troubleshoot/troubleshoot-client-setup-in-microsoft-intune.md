@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot client setup in Microsoft Intune | Microsoft Intune
+title: Troubleshoot client setup | Microsoft Intune
 description:
 keywords:
 author: Nbigman

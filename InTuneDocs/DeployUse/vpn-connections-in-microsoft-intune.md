@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: VPN connections in Microsoft Intune | Microsoft Intune
+title: VPN connections | Microsoft Intune
 description:
 keywords:
 author: Nbigman

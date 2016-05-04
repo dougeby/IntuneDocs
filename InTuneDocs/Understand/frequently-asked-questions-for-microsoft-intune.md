@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Frequently asked questions about Intune | Microsoft Intune
+title: Frequently asked questions | Microsoft Intune
 description:
 keywords:
 author: Nbigman

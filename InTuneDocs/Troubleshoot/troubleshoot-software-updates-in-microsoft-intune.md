@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot software updates in Microsoft Intune | Microsoft Intune
+title: Troubleshoot software updates | Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -243,6 +243,25 @@ The following table lists the Intune **Update Agent** error codes. If you cannot
 |**0x80cfFFFF**|OM_E_REPORTER_UNEXPECTED|A reporter error occurred that is not covered by another error code.|
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|Installation failed because there is a pending mandatory reboot.|
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|The download was canceled.|
+
+## Windows 7-based computers with lots of superseded updates stop reporting to the Microsoft Intune console
+**Issue**: You may encounter a situation where Microsoft Intune clients experience one or more of the following symptoms:
+- They suddenly stop reporting to the Microsoft admin console.  
+- They experience high CPU utilization.
+- Applications install slowly when they’re installed through the Intune portal. 
+- The Microsoft Intune Center triggers the following error: *An error occurred while updating your computer. Error found: Code 0x800705b4*.
+- The status field under Intune Admin Console > Groups > All Devices displays: *One or more agents that are installed on this computer have errors. The information for this computer may not be accurate or up to date*.
+
+This problem may occur if superseded updates (updates that have been replaced by another update) have not been declined for an extended period. During certain processes, such as installing an application, Windows checks all superseded updates in sequence so that the updates and their successors can be correctly mapped. If the list of superseded updates grows too large, this checking task may cause high CPU utilization because of the processing load and time required. This issue primarily affect clients that are running Windows 7 because of the large number of superseded updates that are available for Windows 7. Windows 8 and later operating systems do not have as many available superseded updates and therefore are not as susceptible to this issue.
+
+**Resolution**: To resolve this issue, follow these steps:
+1. Log on to the [Intune admin console](https://manage.microsoft.com).
+2. Select **Updates** > **All Updates**.
+3. Use the filter option on the upper toolbar to filter for superseded updates.
+4. Decline all superseded updates that may apply to Windows 7 or to applications (for example, Microsoft Office) that were installed on the affected clients. 
+5. Restart the affected clients.
+
+Additionally, if you're running Windows 7, make sure that you have the following update installed:[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265).
 
 ### Next steps
 If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

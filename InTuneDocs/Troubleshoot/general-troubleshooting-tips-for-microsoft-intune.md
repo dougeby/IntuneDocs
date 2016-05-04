@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: General troubleshooting tips for Microsoft Intune | Microsoft Intune
+title: General troubleshooting tips | Microsoft Intune
 description:
 keywords:
 author: nbigman

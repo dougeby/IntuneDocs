@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Contact Assisted Phone Support for Microsoft Intune | Microsoft Intune
+title: Contact Assisted Phone Support | Microsoft Intune
 description:
 keywords:
 author: Nbigman
