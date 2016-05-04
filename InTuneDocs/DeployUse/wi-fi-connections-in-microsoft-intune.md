@@ -151,11 +151,15 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
 
 6.  The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
 
-### Next steps
+## Deploy the policy
 
-Deploy the Wi-Fi profile to one or more groups of users or devices in your organization.
+1.  In the **Policy** workspace, select the policy you want to deploy, then click **Manage Deployment**.
 
-A status summary and alerts in the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
+2.  In the **Manage Deployment** dialog box:
 
-### See also
-[Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md)
+    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then click **Add** &gt; **OK**.
+
+    -   **To close the dialog box without deploying it** - Click **Cancel**.
+
+
+A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.

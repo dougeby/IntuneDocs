@@ -172,7 +172,6 @@ Administrators can delete devices in the Azure Active Directory portal.
 - You may have downloaded the MDM certificate from one account and used it on another account.
 
 
-
 **Resolution:** Perform the following steps:
 
 1. Disable iOS inside of the Windows Intune Connector. 
@@ -197,13 +196,6 @@ Administrators can delete devices in the Azure Active Directory portal.
 1. Get a new APN certificate and upload it: Right-click the Intune subscription in the left pane of Configuration Manager. Select **Create APNs certificate request** and follow the instructions.
 
 
-## Computer enrollment package doesn't download
-**Issue:** While trying to enroll a computer you experience the following:
--  The enrollment package fails to download 
--  The download dialog appears but times out
-
-**Resolution:** On the browser you're using for the download, for the period when the download takes place, ensure that downloads are enabled, and that encrypted files can be saved to your local disc.
-
 ## The machine is already enrolled - Error hr 0x8007064c
 **Issue:** Enrollment fails with the error **The machine is already enrolled**. The enrollment log shows error **hr 0x8007064c**.
   
@@ -227,8 +219,8 @@ This may be because the computer had been previously enrolled, or has the cloned
     > This section, method, or task contains steps that tell you how to modify the registry. However, serious problems might occur if you modify the registry incorrectly. Therefore, make sure that you follow these steps carefully. For added protection, back up the registry before you modify it. Then, you can restore the registry if a problem occurs.
     > For more information about how to back up and restore the registry, read [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/kb/322756)
 
-## Unable to create policy or enroll clients if the company name contains special characters
-**Issue:** You can't create policy or enroll clients
+## Unable to create policy or enroll devices if the company name contains special characters
+**Issue:** You can't create policy or enroll devices.
 
 **Resolution:** In the [Office 365 admin center](https://portal.office.com/), remove the special characters from the company name and save the company information.
 
@@ -237,22 +229,6 @@ This may be because the computer had been previously enrolled, or has the cloned
 
 
 **Resolution:** Microsoft Office 365 customers who utilize single sign-on (SSO) through AD FS 2.0 and have multiple top level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix.  There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the **SupportMultipleDomain** switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. See [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
-
-## Client installation hangs with error code 0x80040154
-**Issue:**
- 
--  Client installation during enrollment hangs
-
--  Unable to enroll device 
-
--  Error 0x80040154 in WindowsUpdate.log
-
-**Resolution:** 
-
-1. Log in to your Admin Console at https://admin.manage.microsoft.com 
-1. Select "Administration" on the far side.
-1. Select "Updates" in the second column that opens up when clicking "Administration".
-1. Scroll to "Update Classification" and make sure "Critical Updates" is checked.
 
 
 
