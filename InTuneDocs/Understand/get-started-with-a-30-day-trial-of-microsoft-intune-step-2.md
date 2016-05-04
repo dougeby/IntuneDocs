@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Step 2: Add users to your 30-day evaluation of Microsoft Intune
+# Add users to your 30-day evaluation of Microsoft Intune
 Now that you have set up your account, you'll use either the **New Users** wizard to add individual user accounts to Intune, or the **Bulk add users** wizard to add users in bulk (see the instructions in this section).  Before you get started, it's important that you understand how Intune handles administrator accounts.
 
 A tenant administrator  uses the Office 365 admin center to add  users to the Microsoft Intune **Users Group**. Adding users to the  **Users Group** assigns Intune subscription licenses to users and is also how you make those users to show up in the Microsoft Intune administration console.
