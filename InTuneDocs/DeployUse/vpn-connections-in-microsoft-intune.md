@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: VPN connections in Microsoft Intune | Microsoft Intune
+title: VPN connections | Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -139,9 +139,18 @@ You can restrict Windows 10 device VPN usage to specific apps by creating a cust
 
 The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
 
-### Next Steps
-Deploy the VPN profile to one or more groups of users or devices in your organization.
+## Deploy the policy
+
+1.  In the **Policy** workspace, select the policy you want to deploy, then click **Manage Deployment**.
+
+2.  In the **Manage Deployment** dialog box:
+
+    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then click **Add** &gt; **OK**.
+
+    -   **To close the dialog box without deploying it** - Click **Cancel**.
+
 
 After successful deployment, users will see the VPN connection name you specified in the list of VPN connections on their device.
 
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
+

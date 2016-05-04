@@ -68,7 +68,11 @@ Mobile application management (MAM) polices are applied only when apps are used 
 
 3.  Once your credentials are successfully authenticated by **Azure AD**, you should see a message displayed with instructions to install the company portal app, if it is not already installed on the device.  Tap on **Get the app** to proceed.
 
-    ![Screenshot of the dialog box with the company portal app install requirement message](../media/AppManagement/Android_CompanyPortalMessage.png)
+>[!NOTE]
+>The Company Portal app is required for all apps associated with MAM policies on Android devices. For devices not enrolled in Intune, the app must be installed on the device, but does not require launching or signing into the app.  
+
+
+  ![Screenshot of the dialog box with the company portal app install requirement message](../media/AppManagement/Android_CompanyPortalMessage.png)
 
 4.  You are now in the **Google Play** store where you can download and install the **Company Portal** app.
 

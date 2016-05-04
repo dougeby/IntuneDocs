@@ -55,17 +55,21 @@ If you get an error while trying to enroll your device in Intune, you can [send 
   	If your IT administrator has set up certain policies, you may see the following messages: 
 
 	
-	- **Allow Company Portal to make and manage phone calls?**: If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because Microsoft never makes or manages your phone calls! Google controls the message text, and Microsoft cannot change it. When you allow access, all you're doing is allowing your device to write data logs to the device's SD card, which in turn lets you move those logs by using a USB cable. You might need to use this capability to send logs to your IT administrator if you have a problem while using the Company Portal app. Learn how to [send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android.md).
+	**Allow Company Portal to make and manage phone calls?**</br></br>
+![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-		 If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
+	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never makes or manages your phone calls**! Google controls the message text, and Microsoft cannot change it. When you allow access, all you're doing is allowing your device to write data logs to the device's SD card, which in turn lets you move those logs by using a USB cable. You might need to use this capability to send logs to your IT administrator if you have a problem while using the Company Portal app. Learn how to [send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android.md).
 
-	![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
+	If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
 
-	- **Allow Company Portal to access your contacts?**: If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never accesses your contacts!** Google controls the message text, and Microsoft cannot change it. When you allow access, it only allows the Company Portal app to access data logs to help troubleshoot issues with your device. 
+	
 
-		If you deny access, the message will appear again the next time you tap **Send Data**, but you can turn off future messages by tapping the **Never ask again** check box. If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Storage**, and then turn on the permission.
+	**Allow Company Portal to access your contacts?**</br></br>
+![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-	![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
+	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never accesses your contacts!** Google controls the message text, and Microsoft cannot change it. When you allow access, it only allows the Company Portal app to access data logs to help troubleshoot issues with your device. 
+
+	If you deny access, the message will appear again the next time you tap **Send Data**, but you can turn off future messages by tapping the **Never ask again** check box. If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Storage**, and then turn on the permission.
 
   
 6.	Sign in to the Company Portal app using your work or school account and password, and tap **Sign in**.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to get support for Microsoft Intune | Microsoft Intune
+title: How to get support | Microsoft Intune
 description:
 keywords:
 author: Nbigman

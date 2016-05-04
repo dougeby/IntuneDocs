@@ -38,6 +38,18 @@ You can use custom configurations to create VPN profiles in Intune. To create a 
 
    4.  After you've entered all of the URI settings, click **Save policy** and then deploy the policy.
 
+## Deploy a configuration policy
+
+1.  In the **Policy** workspace, select the policy you want to deploy, then click **Manage Deployment**.
+
+2.  In the **Manage Deployment** dialog box:
+
+    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then click **Add** &gt; **OK**.
+
+    -   **To close the dialog box without deploying it** - Click **Cancel**.
+
+When you select a deployed policy, you can view further information about the deployment in the lower part of the policies list.
+
 ##Example of URI settings for a custom VPN profile configuration
 Here are example entries for URI values to create a custom configuration for a VPN in a fictitious company called Contoso. For more information, such as the data type for each entry, see [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
 
