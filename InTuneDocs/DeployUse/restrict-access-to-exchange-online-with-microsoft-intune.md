@@ -215,9 +215,9 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
 -   If the user un-enrolls their device, email is blocked after around 6 hours.
 
-**To see some example scenarios of how you would configure conditional access policy to restrict device access, see [restrict email access example scenarios](restrict-email-access-example-scenarios.md). **
+**To see some example scenarios of how you would configure conditional access policy to restrict device access, see [restrict email access example scenarios](restrict-email-access-example-scenarios.md).**
 
-## Step 5: Monitor the compliance and conditional access policies
+## Monitor the compliance and conditional access policies
 
 #### To view devices that are blocked from Exchange
 

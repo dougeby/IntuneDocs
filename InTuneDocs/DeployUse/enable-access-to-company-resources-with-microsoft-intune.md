@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable access to company resources with Microsoft Intune | Microsoft Intune
+title: Enable access to company resources | Microsoft Intune
 description:
 keywords:
 author: Nbigman

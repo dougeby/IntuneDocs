@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune Service Description | Microsoft Intune
+title: Service Description | Microsoft Intune
 description:
 keywords:
 author: Nbigman

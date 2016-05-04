@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot app deployment problems in Microsoft Intune | Microsoft Intune
+title: Troubleshoot app deployment problems | Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -84,6 +84,12 @@ If this information does not solve your problem, see [How to get support for Mic
 1.  Make sure that your organization’s firewall allows access to the Apple provisioning and certification web sites.
 
 2.  For more information, view the Apple developer documentation.
+
+### Error: Publisher does not exist
+You use **Add Other Software Agreement** to add a 3rd party license agreement. You try to add the publisher from the **Other software licensing agreement** page. The page provides a list with the existing publishers in alphabetical order.
+You enter the missing publisher but receive the error **Publisher does not exist**. 
+
+This is by design. Intune provides license tracking only for popular software titles. Intune requires that at least 4 separate accounts report the software before it is made available as a choice in the licensing workload.
 
 ### If managed apps are not reporting installation status
 
