@@ -56,7 +56,7 @@ To set up mobile device management with Intune, you must first set the mobile de
     If prompted for a **Server address**, type “manage.microsoft.com”.
 
 ## Install an app on an enrolled device
-In [step 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) of this walkthrough you published the Skype app to your custom Intune Users group. Now you'll install that app on a newly enrolled device.
+In [step 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) of this quick start guide, you published the Skype app to your custom Intune Users group. Now you'll install that app on a newly enrolled device.
 
 Open the company portal on the enrolled mobile device, choose **Apps**, and then install **Microsoft Skype**.
 
@@ -64,7 +64,7 @@ To learn more about mobile device management using [!INCLUDE[wit_nextref](../inc
 
 
 ### Next steps
-Congratulations! You have just completed the last step of the *Start with a paid subscription to Microsoft Intune* guide. Now that your initial configuration is complete, you can consider enabling additional MDM functionality.
+Congratulations! You have just completed the last step of the *Intune quick start guide*. Now that your initial configuration is complete, you can consider enabling additional MDM functionality.
 
 >[!div class="step-by-step"]
 
