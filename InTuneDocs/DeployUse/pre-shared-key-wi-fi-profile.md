@@ -186,5 +186,17 @@ You can also create an XML file from an existing Wi-Fi connection:
 3.     Search through the XML files to locate the one with the right name.
 4.     Once you have located the correct XML file, copy and paste the XML code into the Data field of the OMA-URI settings page.
 
+## Deploy the policy
+
+1.  In the **Policy** workspace, select the policy you want to deploy, then click **Manage Deployment**.
+
+2.  In the **Manage Deployment** dialog box:
+
+    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then click **Add** &gt; **OK**.
+
+    -   **To close the dialog box without deploying it** - Click **Cancel**.
+
+When you select a deployed policy, you can view further information about the deployment in the lower part of the policies list.
+
 ### See also
 [Wi-Fi connections in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
