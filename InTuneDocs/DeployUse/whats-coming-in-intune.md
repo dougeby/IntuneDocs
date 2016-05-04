@@ -33,12 +33,13 @@ This page is updated periodically. Check back for new What’s Coming updates.
 The following changes are under development for Intune. All of these features will also be supported for hybrid customers deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
 ## Message Center onboarding
-The [Office 365 Message Center](https://portal.office.com/default.aspx#MessageCenterPage) will replace Intune alerts for notifications about Intune. You will visit the Office 365 Message Center to see messages from Microsoft regarding new features being deployed as well as other one-off notifications.  The associated mobile app will allow you to also receive messages on your mobile phone and forward messages to your users by emailing individual users or distribution groups.
+As part of the migration of Intune into the [Office 365 Management portal](https://portal.office.com/), we will begin taking advantage of their Message Center to communicate new features and other notifications.  Also, by installing the companion Office 365 Admin mobile app, you can receive notifications on your mobile phone and easily forward any messages to users or a distribution alias.<br>  
+We will begin using the Message Center with our May release to notify you when updates are completed and will include information on new and improved Intune features.  Check out the Message Center today by logging into the [Office 365 Management portal](https://portal.office.com/) and choosing the **MESSAGE CENTER** option in the left navigation pane.
 <!---TFS 1242782--->
 
 
 ## App management
-<!--- - **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.--->
+- **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
 <!---TFS 1175844--->
 
 - **MAM SDK: Support PIN length configuration.** You will be able to specify the length of the PIN for MAM apps similar to a device PIN. This will require end users to comply with the new restrictions you set. They will see a slightly modified PIN screen to account for the longer input.
@@ -77,7 +78,7 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 <!---TFS item 1254499--->
 
 ## Company Portal
-* **Device identification banner will provide more information to end users.** End users will be ablet to easily identify the device they’ve selected when they are using the Company Portal website. If the wrong device is selected, they will be able to select the correct device by tapping the “Tap here” link in the home page banner.
+* **Device identification banner will provide more information to end users.** End users will be able to easily identify the device they’ve selected when they are using the Company Portal website. If the wrong device is selected, they will be able to select the correct device by tapping the “Tap here” link in the home page banner.
 <!--- TFS 1231157--->
 
 * **Windows app packages available directly from the Company Portal**: Users of Windows 8, Windows 8.1, and Windows RT PCs can now install Windows app packages (with the .appx extension) directly from the Company Portal website. Previously, Intune administrators had to deploy, or users had to install the Company Portal app on their devices to install apps.
