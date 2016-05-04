@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Understand Microsoft Intune operations by using reports | Microsoft Intune
+title: Understand operations by using reports | Microsoft Intune
 description:
 keywords:
 author: Nbigman

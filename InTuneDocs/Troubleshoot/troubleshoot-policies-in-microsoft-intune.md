@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot policies in Microsoft Intune | Microsoft Intune
+title: Troubleshoot policies | Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -109,5 +109,10 @@ Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may ne
 ## Android devices do not force Security Policy Changes without end user Acceptance
 Android MDM does not allow the service to force initial policy changes on devices as other platforms allow. This is due to Android functionality, and is not related to the Intune service. Android devices will prompt the end user via the notification window of the related policy change (i.e. Password, Encryption, etc.).  The end user must respond to the prompt and once accepted the policy should be applied.
 
-## Next steps
+## Unable to create policy or enroll clients if the company name contains special characters
+**Issue:** You can't create policy or enroll clients
+
+**Resolution:** In the [Office 365 admin center](https://portal.office.com/), remove the special characters from the company name and save the company information.
+
+### Next steps
 If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

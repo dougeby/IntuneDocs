@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wi-Fi connections in Microsoft Intune | Microsoft Intune
+title: Wi-Fi connections | Microsoft Intune
 description:
 keywords:
 author: Nbigman

@@ -41,6 +41,8 @@ Mobile application management (MAM) polices are applied only when apps are used 
     ![Screenshot of the O365 log in page](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  After your credentials are successfully authenticated  by Azure AD, the MAM polices are applied, and you will be asked to restart the **OneDrive** app.
+>[!NOTE]
+>The Company Portal app is required for all apps associated with MAM policies on Android devices. For devices not enrolled in Intune, the app must be installed on the device, but does not require launching or signing into the app.  
 
     ![Screenshot of the Restart required dialog box](../media/AppManagement/iOS_AppRestartforMAM.png)
 

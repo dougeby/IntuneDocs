@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Intune certificate profiles | Microsoft Intune
+title: Configure certificate profiles | Microsoft Intune
 description:
 keywords:
 author: nbigman

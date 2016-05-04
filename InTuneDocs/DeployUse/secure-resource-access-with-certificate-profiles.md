@@ -31,11 +31,11 @@ When you enable access to corporate resources through VPN, Wi-Fi, or email profi
 1. Make sure you have the right certificate infrastructure in place, as described in [Configure certificate infrastructure](configure-certificate-infrastructure.md).
 
 2. Install a root certificate (or intermediate CA certificate) on each device so that the device recognizes the legitimacy of your Certification Authority. You do this with by creating and deploying a **Trusted Certificate Profile**. When you deploy this profile, the devices that you manage with Intune will request and receive the root certificate. You have to create a separate profile for each platform. The **Trusted Certificate Profile** is available for these platforms:
--  iOS 7.1 and later
--  Mac OS X 10.9 and later
--  Android 4.0 and later
--  Windows 8.1 and later
--  Windows Phone 8.1 and later
+ -  iOS 7.1 and later
+ -  Mac OS X 10.9 and later
+ -  Android 4.0 and later
+ -  Windows 8.1 and later
+ -  Windows Phone 8.1 and later
 
 3. Make each device request a certificate to be used for authentication of email, VPN, and Wi-Fi access, as described in [Configure intune certificate profiles](configure-intune-certificate-profiles.md). You can create and deploy a **PKCS #12 (.PFX) Certificate Profile**, or a **SCEP Certificate Profile** for devices on these platforms:
  

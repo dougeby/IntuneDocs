@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot company resource access problems with Microsoft Intune | Microsoft Intune
+title: Troubleshoot company resource access problems | Microsoft Intune
 description:
 keywords:
 author: Nbigman

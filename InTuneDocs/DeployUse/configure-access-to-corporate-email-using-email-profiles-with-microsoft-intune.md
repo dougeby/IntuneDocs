@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure access to corporate email using email profiles with Microsoft Intune | Microsoft Intune
+title: Configure access to corporate email using email profiles | Microsoft Intune
 description:
 keywords:
 author: Nbigman
