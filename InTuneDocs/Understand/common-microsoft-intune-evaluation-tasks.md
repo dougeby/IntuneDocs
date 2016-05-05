@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/5/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,4 +36,4 @@ These evaluation tasks provide illustrated, step-by-step instructions for common
 Check back soon, as more tasks will be added in the near future.
 
 ### See also
-[Get started with a 30-day trial](get-started-with-a-30-day-trial-of-microsoft-intune.md)
+[Intune evaluation guide](get-started-with-a-30-day-trial-of-microsoft-intune.md)
