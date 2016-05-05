@@ -86,5 +86,5 @@ To learn about using the On-Premises Connector or Service to Service Connector w
 
 
 
-##Next steps
+## Next steps
 Now you've discovered some of the capabilities you can use when you enroll your devices with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], you'll need to [get ready to enroll your devices](/Intune/get-started/get-ready-to-enroll-devices-in-microsoft-intune.md). After you have enrolled your devices, you can take advantage of all of the capabilities you've read about in this topic. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->

@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Enroll your Android device in Intune
-## Install the Company Portal app
+
 If your company or school uses Microsoft Intune, you can enroll your Android device to get access to company email, files, and other resources. Enrolling your devices allows your IT department to manage those work or school resources and keep them secure, while giving you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens when I install and Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
 
 These enrollment instructions are for Samsung Knox Android devices and "native" (non-Samsung Knox) Android devices. To determine if you have a Samsung Knox device, go to **Settings** &gt; **About phone**. If you don't see the word  "Knox" listed there, you have a native Android device.
@@ -50,54 +50,54 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5. If you're using Android 6.0 or later, do this step. Otherwise, go to the next step.
+5.  If you're using Android 6.0 or later, do this step. Otherwise, go to the next step. 
 
-  	If your IT administrator has set up certain policies, you may see the following messages:
+	If your IT administrator has set up certain policies, you may see the following messages:
+	-	**Allow Company Portal to make and manage phone calls?**
 
->	**Allow Company Portal to make and manage phone calls?**
-![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
+	![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-> If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never makes or manages your phone calls**! Google controls the message text, and Microsoft cannot change it. When you allow access, all you're doing is allowing your device to write data logs to the device's SD card, which in turn lets you move those logs by using a USB cable. You might need to use this capability to send logs to your IT administrator if you have a problem while using the Company Portal app. Learn how to [send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android.md).
+	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never makes or manages your phone calls**! Google controls the message text, and Microsoft cannot change it. When you allow access, all you're doing is allowing your device to write data logs to the device's SD card, which in turn lets you move those logs by using a USB cable. You might need to use this capability to send logs to your IT administrator if you have a problem while using the Company Portal app. Learn how to [send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android.md).
 
-> If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
+	If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
 
->	**Allow Company Portal to access your contacts?**
-![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
+	-	**Allow Company Portal to access your contacts?**
 
-> If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never accesses your contacts!** Google controls the message text, and Microsoft cannot change it. When you allow access, it only allows the Company Portal app to access data logs to help troubleshoot issues with your device.
+	![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-> If you deny access, the message will appear again the next time you tap **Send Data**, but you can turn off future messages by tapping the **Never ask again** check box. If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Storage**, and then turn on the permission.
+	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never accesses your contacts!** Google controls the message text, and Microsoft cannot change it. When you allow access, it only allows the Company Portal app to access data logs to help troubleshoot issues with your device.
 
-## Enroll your Android device using the Company Portal app
-6.	Sign in to the Company Portal app using your work or school account and password, and tap **Sign in**.
+	If you deny access, the message will appear again the next time you tap **Send Data**, but you can turn off future messages by tapping the **Never ask again** check box. If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Storage**, and then turn on the permission.
+
+6.  Sign in to the Company Portal app using your work or school account and password, and tap **Sign in**.
 
 	![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
-7.	On the **Company Access Setup** screen, tap **BEGIN**.
+7.  On the **Company Access Setup** screen, tap **BEGIN**.
 
 	![Company access setup screen](./media/and-enroll-4a-comp-access-setup.png)
 
-8.	On the **Why enroll your device?** screen, read about what you can do when you enroll your device, and then tap **CONTINUE**.
+8.  On the **Why enroll your device?** screen, read about what you can do when you enroll your device, and then tap **CONTINUE**.
 
 	![Why enroll your device screen](./media/and-enroll-4b-why-enroll.png)
 
-9. Review a list of what your IT administrator can and can't see on your device, and tap **CONTINUE**.
+9.  Review a list of what your IT administrator can and can't see on your device, and tap **CONTINUE**.
 
 	![Privacy settings](./media/and-enroll-4c-we-care-privacy.png)
 
-10. On the **What comes next** screen, read about what happens during enrollment, and then tap **ENROLL**.
+10.  On the **What comes next** screen, read about what happens during enrollment, and then tap **ENROLL**.
 
 	![What comes next screen](./media/and-enroll-4d-what-comes-next.png)
 
-11. On the **Activate device administrator** screen, tap **Activate**.
+11.  On the **Activate device administrator** screen, tap **Activate**.
 
 	![Activate device administrator screen](./media/and-enroll-5-activate.png)
 
-12. Follow the prompts to enter a PIN or password. If you already set up a PIN or password on this device, you won't see this screen or be required to enter a new PIN or password.
+12.  Follow the prompts to enter a PIN or password. If you already set up a PIN or password on this device, you won't see this screen or be required to enter a new PIN or password.
 
 	![Enter PIN or password](./media/and-enroll-6-PIN-native.png)
 
-13.	Follow the instructions below that match the type of device you’re using (native Android or Samsung Knox). To determine if you have a Samsung Knox device, go to **Settings** &gt; **About phone**. If you don't see the word "Knox" listed there, you have a native Android device.
+13.  Follow the instructions below that match the type of device you’re using (native Android or Samsung Knox). To determine if you have a Samsung Knox device, go to **Settings** &gt; **About phone**. If you don't see the word "Knox" listed there, you have a native Android device.
 
 	-	Native (non-Samsung Knox) device: On the **Name the certificate** screen, tap **OK** to accept the default certificate.
 
