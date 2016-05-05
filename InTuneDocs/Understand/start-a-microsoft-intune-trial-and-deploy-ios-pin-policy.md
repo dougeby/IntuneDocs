@@ -250,15 +250,15 @@ These step-by-step instructions help you set up an Intune trial and configure a 
 
 3.  Tap **Enroll** to start enrolling the device in Intune.
 
-    ![Start enrollment](../media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.png)
+    ![Start enrollment](../media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.jpg)
 
 4.  On the **Install Profile** screen, tap **Install**.
 
-    ![Install a profile](../media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.png)
+    ![Install a profile](../media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.jpg)
 
 5.  On the **Install Profile** dialog, tap **Install**.
 
-    ![Continue installing profile](../media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.png)
+    ![Continue installing profile](../media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg)
 
 6.  On the **Warning** screen, tap **Install**.
 
@@ -266,7 +266,7 @@ These step-by-step instructions help you set up an Intune trial and configure a 
 
 7.  On the **Remote Management** dialog, tap **Trust**.
 
-    ![Trust remote management](../media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.png)
+    ![Trust remote management](../media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg)
 
 8.  When the management profile finishes installing, tap **Done**. Enrollment is now complete.
 
@@ -287,7 +287,4 @@ These step-by-step instructions help you set up an Intune trial and configure a 
 12. Press the power button to lock your iPad, slide to unlock it, and see that you now need to enter your passcode to unlock the device.
 
 ### See also
-[Get started with a paid subscription to Microsoft Intune](get-started-with-a-paid-subscription-to-microsoft-intune.md)</br>
-[Common Microsoft Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)</br>
-[Set up email access for iOS devices using Microsoft Intune](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
-
+[Intune evaluation guide](get-started-with-a-30-day-trial-of-microsoft-intune.md)
