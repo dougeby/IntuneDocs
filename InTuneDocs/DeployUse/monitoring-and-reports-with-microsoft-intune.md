@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Monitoring and reports with Microsoft Intune | Microsoft Intune
+title: Monitoring and reports | Microsoft Intune
 description:
 keywords:
 author: Nbigman

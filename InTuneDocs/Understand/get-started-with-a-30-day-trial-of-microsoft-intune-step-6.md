@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Step 6: Other options and extras for Intune evaluation subscriptions
+# Other options and extras for Intune evaluation subscriptions
 
 ## Alerts, notifications and reports
 In the Intune administration console, **alerts** are used to quickly assess the overall health of managed devices in your organization. You can configure and customize alerts so that they report and display only the information you need for your organization. You can set whether an alert is enabled or disabled, configure the severity, use the display threshold to determine how frequently an alert event must be triggered before an alert is displayed, and also configure settings that are specific to certain types of alerts.

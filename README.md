@@ -100,4 +100,3 @@ This is not an exhaustive list, but here are a few ideas for Markdown editors th
 - **Prose**: This is a lightweight, elegant, on-line, and open source markdown editor that offers a preview. Visit [http://prose.io](http://prose.io) and authorize Prose in your repository.
 - **[Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)** - A lightweight but powerful source code editor which runs on your desktop and is available for Windows, OS X and Linux. 
 - **Notepad**: You can use Notepad for a very lightweight option.
-

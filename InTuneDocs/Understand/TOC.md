@@ -8,10 +8,11 @@
 ### [Enroll mobile devices & install an app](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
 ### [Other options and extras](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Next steps](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-<!--- ## [Common Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)
+## [Common Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)
 ### [Start a trial & deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-### [Set up email access for iOS devices](set-up-email-access-for-ios-devices-using-microsoft-intune.md)--->
+### [Set up email access for iOS devices](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [Common scenarios](common-ways-to-use-intune.md)
+
 <!--- ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)--->
 
 # [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)

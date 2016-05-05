@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot email profiles in Microsoft Intune | Microsoft Intune
+title: Troubleshoot email profiles | Microsoft Intune
 description:
 keywords:
 author: Nbigman

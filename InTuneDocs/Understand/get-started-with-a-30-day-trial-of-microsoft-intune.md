@@ -68,4 +68,4 @@ It's time to get started with your 30-day evaluation subscription!
 [**Sign up for Intune** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 
 ### See also
-[Get started with a paid subscription to Microsoft Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)
+[Intune quick start guide](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)

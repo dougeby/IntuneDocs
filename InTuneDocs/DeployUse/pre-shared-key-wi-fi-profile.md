@@ -1,4 +1,30 @@
 ---
+# required metadata
+
+title: Wi-Fi using PSK | Microsoft Intune
+description: 
+keywords:
+author: nbigman
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: 
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+
+---
 # Create a Wi-Fi profile with a pre-shared key
 Here's how to use Intune’s **Custom Configuration** to create a Wi-Fi profile with a pre-shared key. This topic also has an example of how to create an EAP-based Wi-Fi profile.
 
@@ -159,6 +185,18 @@ You can also create an XML file from an existing Wi-Fi connection:
 1.     On a computer that is connected to or has recently connected to the wireless network, open the following folder: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}. It’s best to use a computer that has not connected to many wireless networks, as you’ll have to search through each profile to find the right one.
 3.     Search through the XML files to locate the one with the right name.
 4.     Once you have located the correct XML file, copy and paste the XML code into the Data field of the OMA-URI settings page.
+
+## Deploy the policy
+
+1.  In the **Policy** workspace, select the policy you want to deploy, then click **Manage Deployment**.
+
+2.  In the **Manage Deployment** dialog box:
+
+    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then click **Add** &gt; **OK**.
+
+    -   **To close the dialog box without deploying it** - Click **Cancel**.
+
+When you select a deployed policy, you can view further information about the deployment in the lower part of the policies list.
 
 ### See also
 [Wi-Fi connections in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
