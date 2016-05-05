@@ -68,9 +68,7 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 - **Remote assistance sessions for Windows PCs.** TeamViewer integration for Windows desktop agent-managed PCs will let you establish remote assistance sessions with Windows desktop agent-managed computers in support of end-user helpdesk departments. This includes Windows 7, 8, 8.1 and Windows 10.
 <!--- TFS 1284856--->
 
-- **Intune support for iOS 9.3.** On Monday March 21st, Apple announced the availability of iOS 9.3. We have been busy working to ensure that Microsoft Intune is compatible with the latest version of Apple's mobile operating system, and [we are pleased to announce that Intune supports managing iOS 9.3 devices](https://blogs.technet.microsoft.com/microsoftintune/2016/03/23/microsoft-intune-provides-support-for-ios-9-3/).
 
-    All existing Intune features currently available for managing iOS devices will continue to work seamlessly as users upgrade their devices to iOS 9.3. In addition, iOS 9.3 is also supported today for hybrid customers (Configuration Manager integrated with Intune).
 <!--- TFS item 1274326 --->
 
 ## Access control
