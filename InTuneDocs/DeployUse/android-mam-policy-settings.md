@@ -75,12 +75,13 @@ The term **Policy managed apps** is used to refer to apps that are configured wi
 ##  Android access policy settings
 The term **Policy managed apps** is used to refer to apps that are configured with MAM policies
 
-- **Require simple PIN for access:** Choose **Yes** to require a PIN to use policy managed apps. The user is prompted to set this up the first time they run the app in a work context.
+- **Require PIN for access:** Choose **Yes** to require a PIN to use policy managed apps. The user is prompted to set this up the first time they run the app in a work context.
 
  **Default value = Yes**
-- **Number of attempts before PIN reset:** Specify the number of PIN entry attempts that can be made before the user must reset the PIN.
 
- **There is no default value for this setting.**
+ -  **Allow simple PIN:** Specify whether to allow users to use simple PIN sequences such as 1234 or 1111. **Default value = Yes**.
+ - **PIN Length:** Specify the minimum number of digits in a PIN. **Default value = 4**
+ - **Number of attempts before PIN reset:** Specify the number of PIN entry attempts that can be made before the user must reset the PIN. **There is no default value for this setting.**
 - **Require corporate credentials for access:** Choose **Yes** to require corporate credentials instead of a PIN for app access.  If you set this to **Yes**, this overrides the requirements for PIN or Touch ID.  The user will be prompted to provide their corporate credentials.
 
   **Default value = No**

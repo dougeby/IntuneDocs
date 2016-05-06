@@ -37,8 +37,12 @@ If you are currently using the **Intune admin console** to manage your devices, 
 - Android 4 or later
 
 ##  Supported apps
-To see the full list of supported apps, go to [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) on the Microsoft Intune application partners page.
-Click the app to see the supported scenarios, platforms and whether or not the app supported multi-identity.
+* **Microsoft apps** that have the Intune App SDK built-in and require no further processing before applying MAM policies.
+To see the full list of supported Microsoft apps, go to [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) on the Microsoft Intune application partners page. Click the app to see the supported scenarios, platforms and whether or not the app supports multi-identity.
+* Your in-house built **Line of business apps** that require preparing the app before you can apply MAM policies. Using the Microsoft Intune App Wrapping Tool, you can prepare the app to include the Intune App SDK.
+
+  * For devices that are managed by Intune, see [Decide how to prepare apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+  * For devices that are not managed, or for devices that are managed by a third-party mobile device management solution, see [Protect line of business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
 **Before** you can configure MAM policies, you'll need the following:
 
@@ -48,6 +52,7 @@ Click the app to see the supported scenarios, platforms and whether or not the a
 -   An **Office 365 (O365)** subscription that is required for the following:
   - To apply MAM policies to apps with multi-identity support.
   - To create  SharePoint Online and Exchange Online work accounts. Exchange On-premises and SharePoint on-premises are not supported.
+-    **Enable modern authentication** for **Skype for Business Online**. Log into Microsoft Connect and fill [this  form](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) to be enrolled in the modern authentication program.
 
 
 - **Azure Active Directory (Azure AD)** to create users. Azure AD authenticates the user when the end user launches the app and enters their work credentials.
