@@ -48,10 +48,10 @@ We will begin using the Message Center with our May release to notify you when u
 - **MAM controls to prevent Outlook contacts sync (iOS).** A new setting is available for mobile application management without device enrollment. This setting  allows the Intune administrator to prevent an application from syncing contacts to the native address book on iOS devices. When this setting is enabled, the app will no longer be able to save contacts to the native address book. When this setting is disabled, the app will be able to save contacts to the native address book. When an Intune administrator selectively wipes a device, all contacts that have already been saved to the native address book will be removed. This new setting is now supported by the Outlook application on iOS devices.
 <!---TFS item 1276166--->
 
-- **Skype for business for Android.** Intune Administrators can now target Skype for business with MAM without enrollment policies.  Once their users are logged in, the MAM policies will be applied.
+- **Skype for Business for Android.** Intune Administrators can now target Skype for business with MAM without enrollment policies.  Once their users are logged in, the MAM policies will be applied.
 <!--- TFS item 1248444 --->
 
-- **Skype for business for iOS.** Intune Administrators can now target Skype for business with MAM without enrollment policies.  Once their users are logged in, the MAM policies will be applied.
+- **Skype for Business for iOS.** Intune Administrators can now target Skype for business with MAM without enrollment policies.  Once their users are logged in, the MAM policies will be applied.
 <!--- TFS item 1248443 --->
 
 ### Xamarin support
