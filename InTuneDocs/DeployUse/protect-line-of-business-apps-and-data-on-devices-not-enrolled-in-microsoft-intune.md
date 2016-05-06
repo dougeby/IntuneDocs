@@ -18,7 +18,7 @@ ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [joglocke;matgates]
+#ms.reviewer: [joglocke]
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
