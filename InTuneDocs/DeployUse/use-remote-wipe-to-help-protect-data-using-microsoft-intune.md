@@ -79,7 +79,7 @@ As with devices, at some point, you want or need to [retire apps](retire-apps-us
 |Wi-Fi and VPN profile settings|Removed|Removed|Not supported|Removed|
 |Certificate profile settings|Certificates removed and revoked.|Certificates removed and revoked.|Not supported|Certificates removed and revoked.|
 |Email|Removes email that is EFS enabled which includes the Mail app for Windows email and attachments.|Not supported|Email profiles that are provisioned through Intune are removed and cached email on the device is deleted.|Removes email that is EFS enabled which includes the Mail app for Windows email and attachments. Removes mail accounts that were provisioned by Intune.|
-|Azure Active Directory (AAD) Unjoin|No|No|AAD Record removed|AAD Record removed|
+|Azure Active Directory (AAD) Unjoin|No|No|AAD Record removed|Not applicable. Windows 10 does not support selective wipe for Azure Active Directory joined devices|
 
 ### Remotely wipe a device from the Intune administrator console
 
