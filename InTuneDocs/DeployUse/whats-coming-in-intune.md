@@ -97,11 +97,20 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 |Windows 10 Desktop | Not supported|
 
 ## Service deprecation
-* **Custom Group Targeting of Notification Rules Removal.** Coming in early June, 2016, you will no longer be able to use the Create Notification Rule Wizard to target user-created groups with notification rules.
+**Custom Group Targeting of Notification Rules Removal.**
+Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
 
-    Currently, to target a user-created group from the Microsoft Intune administration console, you choose **Admin** > **Notification Rules** > **Create New Rule**. In step two of the Create Notification Rule Wizard, you must select the device groups which the rule will target. This step, **Select device groups**, is being deprecated from the Intune Console.
+Today, to target a notification rule to a group you created from the Microsoft Intune administration console, you would take the following steps:
 
-    **Select device groups** will no longer be supported after the June 1606 release of Intune. However, you will continue to see this option until August 2016. After August, we will begin phasing our tenants to the new experience over a period of two months. By October 2016, all existing customers should be transitioned to the new experience. After migrating to the new experience, you will no longer be presented with the option to target notification rules at a specific group.
+In the **Admin** workspace, click **Notification Rules** > **Create New Rule**
+
+In step two of the Create Notification Rule Wizard, select the device groups which the rule will target. This step, “select device groups”, is being removed from the Intune Console.
+
+The preliminary timeline for this change is as follows:
+•	In June, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected. 
+•	Around August, 2016, some existing tenants will not see the “select device groups” in the wizard. 
+•	Around October, 2016, we expect that all tenants will not see the “select device groups” in the wizard. 
+
 <!---	TFS 1278864--->
 
 
