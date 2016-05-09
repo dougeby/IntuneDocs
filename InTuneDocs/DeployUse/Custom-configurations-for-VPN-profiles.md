@@ -34,7 +34,7 @@ You can use custom configurations to create VPN profiles in Intune. To create a 
    2. Provide a name for the policy.
    3. For each URI setting, click **Add** and provide the requested information. Here's an example:
 
-   ![VPN profile custom configuration dialog box](intune/media/Intune_Add_VPN_URI.png)
+   ![VPN profile custom configuration dialog box](./media/Intune_Add_VPN_URI.png)
 
    4.  After you've entered all of the URI settings, click **Save policy** and then deploy the policy.
 
