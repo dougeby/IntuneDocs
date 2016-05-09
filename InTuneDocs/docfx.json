@@ -11,7 +11,8 @@
           "GetStarted/**",
           "DeployUser/**",
           "PlanDesign/**",
-          "Troubleshoot/**"      
+          "Troubleshoot/**",
+          "**/includes/**"
         ]
       }
     ],
