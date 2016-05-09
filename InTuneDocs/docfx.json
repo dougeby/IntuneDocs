@@ -11,7 +11,8 @@
           "GetStarted/**",
           "DeployUser/**",
           "PlanDesign/**",
-          "Troubleshoot/**"      
+          "Troubleshoot/**",
+          "**/includes/**"
         ]
       }
     ],
@@ -24,12 +25,11 @@
           "**/*.gif",
           "**/*.bmp",
           "**/*.html",
-          "**/*.css",
-          "_themes/**"
+          "**/*.css"
           ],
         "exclude": [
           "**/obj/**",
-          "_themes/DocPacker/**",
+          "_themes/**",
           "Understand/**",
           "GetStarted/**",
           "DeployUser/**",
