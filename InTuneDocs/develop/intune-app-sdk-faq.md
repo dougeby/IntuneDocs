@@ -48,6 +48,7 @@ The SDK can affect application in three main ways.
 * **Performance**: The methods used to enforce policy may impact application performance. Please test the performance and report any issues as bugs and include performance results with and without policy for the scenario.
 * **Optional Features**: The SDK supports optional features through the API surface (e.g. save-as). These features require application changes to support.
 
-  > [AZURE.NOTE] Telemetry is an “opt-in” feature. The iOS MAM SDK logs SDK telemetry data on usage events **by default**. This data gets sent to Microsoft Intune. If you choose not to send SDK telemetry data to Microsoft Intune from your application, you must disable SDK telemetry capture by setting the `MAMTelemetryDisabled` property to "YES" in the `IntuneMAMSettings`.
+> [!NOTE]
+> Telemetry is an “opt-in” feature. The iOS MAM SDK logs SDK telemetry data on usage events **by default**. This data gets sent to Microsoft Intune. If you choose not to send SDK telemetry data to Microsoft Intune from your application, you must disable SDK telemetry capture by setting the `MAMTelemetryDisabled` property to "YES" in the `IntuneMAMSettings`.
   
 * **Policy Enforcement**: When MAM Policy is applied to SDK applications, application features and user experience may be altered. Application teams should work with the Intune team to test their applications to understand this impact.

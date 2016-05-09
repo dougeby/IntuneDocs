@@ -27,7 +27,8 @@ ms.suite: ems
 
 # Microsoft Intune App SDK for iOS Developer Guide
 
-***Note**:  You may wish to first read the [Get Started with Intune App SDK Guide](intune-app-sdk-get-started.md), which explains how to prepare for integration on each supported platform.* 
+> [!NOTE]
+> You may wish to first read the [Get Started with Intune App SDK Guide](intune-app-sdk-get-started.md), which explains how to prepare for integration on each supported platform.* 
 
 The Microsoft Intune App SDK for iOS allows you to incorporate Intune Mobile App Management (MAM) into your iOS app. A MAM-enabled application is one integrated with the Intune App SDK, and allows IT administrators to deploy policies to your mobile app when the app is actively managed.
 
@@ -232,7 +233,8 @@ Before testing your MAM-enabled app with Microsoft Intune, you can use `Settings
 
 * Launch the app (either inside or outside of Xcode). Verify that PIN works as expected.
 
-**Note**: You can now use "Settings -> Your-App-Name -> Enable Test Policies" to enable and toggle settings.
+> [!NOTE]
+> You can now use "Settings -> Your-App-Name -> Enable Test Policies" to enable and toggle settings.
 
 # Recommended iOS Best Practices
 
