@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: iOS policy settings in Microsoft Intune | Microsoft Intune
+title: iOS policy settings | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

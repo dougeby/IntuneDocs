@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mac OS X policy settings in Microsoft Intune | Microsoft Intune
+title: Mac OS X policy settings | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

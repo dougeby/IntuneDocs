@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage settings and features on your devices with Microsoft Intune policies | Microsoft Intune
+title: Manage settings and features on your devices with policies | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

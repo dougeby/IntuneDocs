@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows Team configuration policy settings in Microsoft Intune | Microsoft Intune
+title: Windows Team configuration policy settings| Microsoft Intune
 description:
 keywords:
 author: robstackmsft
