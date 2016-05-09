@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage license agreements for Windows PC software in Microsoft Intune | Microsoft Intune
+title: Manage license agreements for Windows PC software | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

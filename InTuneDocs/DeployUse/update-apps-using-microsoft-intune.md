@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Update apps using Microsoft Intune | Microsoft Intune
+title: Update apps | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

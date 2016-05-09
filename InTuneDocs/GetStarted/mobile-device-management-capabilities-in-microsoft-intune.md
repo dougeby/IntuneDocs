@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile device management capabilities in Microsoft Intune | Microsoft Intune
+title: Mobile device management capabilities | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
