@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Accessibility Features of Microsoft Intune | Microsoft Intune
+title: Accessibility Features | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
