@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Help protect iOS devices with Activation Lock bypass for Microsoft Intune | Microsoft Intune
+title: Help protect iOS devices with Activation Lock bypass | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
