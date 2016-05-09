@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect devices with Microsoft Intune | Microsoft Intune
+title: Protect devices | Microsoft Intune
 description:
 keywords:
 author: Robstackmsft

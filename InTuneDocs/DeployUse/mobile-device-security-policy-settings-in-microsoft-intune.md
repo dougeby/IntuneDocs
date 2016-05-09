@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile device security policy settings in Microsoft Intune | Microsoft Intune
+title: Mobile device security policy settings | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
