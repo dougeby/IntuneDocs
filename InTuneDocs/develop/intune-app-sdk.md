@@ -53,7 +53,7 @@ IT administrators can enforce the use of a managed browser when opening links fr
 IT administrators can enforce a PIN policy when an Intune-managed app is started. This policy helps to ensure that the end users who enrolled their devices with Microsoft Intune are the same individuals who are starting the apps. When end users configure their PIN, Intune App SDK uses Azure Active Directory to verify the credentials of end users against the device enrollment credentials
 
 ### Require users to enter credentials before they can start apps
-IT administrators can require users to enter their credentials before users can start an Intune-managed app. Intune App SDK uses Azure Active Directory to provide a single sign-on experience, where the credentials, once entered, are reused for subsequent logins. We also support authentication of identity management solutions [federated with Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx).
+IT administrators can require users to enter their credentials before users can start an Intune-managed app. Intune App SDK uses Azure Active Directory to provide a single sign-on experience, where the credentials, once entered, are reused for subsequent logins. We also support authentication of identity management solutions [federated with Azure Active Directory](https://msdn.microsoft.com/library/azure/jj679342.aspx).
 
 ### Check device health and compliance
 IT administrators can a check the health of the device and its compliance with corporate policies before end users access Intune-managed apps. On the iOS platform, this policy checks if the device has been jailbroken. On the Android platform, this policy checks if the device has been rooted.

@@ -126,7 +126,7 @@ Complete the steps below to enable the Intune App SDK:
 
 10. If the app has app groups defined in its entitlements, add these groups to the `IntuneMAMSettings` dictionary under the `AppGroupIdentitifiers` key as an array of strings.
 
-11. Link your mobile application to the ADAL library. The ADAL library for Objective C is [available on Github]( https://github.com/AzureAD/azure-activedirectory-library-for-objc).
+11. Link your mobile application to the ADAL library. The ADAL library for Objective C is [available on Github](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
     **Note**: The Intune App SDK has been tested against the ADAL broker branch code from 6/19/2015. Please ensure that you are linking with the latest/working version of the ADAL library.
 
