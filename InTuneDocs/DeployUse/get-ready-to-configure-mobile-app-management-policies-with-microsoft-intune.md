@@ -37,12 +37,12 @@ If you are currently using the **Intune admin console** to manage your devices, 
 - Android 4 or later
 
 ##  Supported apps
-* **Microsoft apps** that have the Intune App SDK built-in and require no further processing before applying MAM policies.
+* **Microsoft apps:** These apps have the Intune App SDK built-in and require no further processing before applying MAM policies.
 To see the full list of supported Microsoft apps, go to [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) on the Microsoft Intune application partners page. Click the app to see the supported scenarios, platforms and whether or not the app supports multi-identity.
-* Your in-house built **Line of business apps** that require preparing the app before you can apply MAM policies. Using the Microsoft Intune App Wrapping Tool, you can prepare the app to include the Intune App SDK.
+* Your in-house built **Line of business apps:** These require preparing the app to include the Intune App SDK before you can apply MAM policies.
 
   * For devices that are managed by Intune, see [Decide how to prepare apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
-  * For devices that are not managed, or for devices that are managed by a third-party mobile device management solution, see [Protect line of business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
+  * For devices that are not managed like employee owned devices, or for devices that are managed by a third-party mobile device management solution, see [Protect line of business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
 **Before** you can configure MAM policies, you'll need the following:
 
