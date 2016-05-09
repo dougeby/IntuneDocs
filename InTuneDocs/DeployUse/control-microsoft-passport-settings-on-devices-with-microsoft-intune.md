@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Control Microsoft Passport settings on devices with Microsoft Intune | Microsoft Intune
+title: Control Microsoft Passport settings on devices | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
