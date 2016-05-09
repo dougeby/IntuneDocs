@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows 10 policy settings in Microsoft Intune | Microsoft Intune
+title: Windows 10 policy settings in | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Exchange ActiveSync policy settings in Microsoft Intune | Microsoft Intune
+title: Exchange ActiveSync policy settings | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

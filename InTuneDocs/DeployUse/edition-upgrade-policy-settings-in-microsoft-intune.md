@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows edition upgrade policy settings in Microsoft Intune | Microsoft Intune
+title: Windows edition upgrade policy settings | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

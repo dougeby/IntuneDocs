@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows Phone 8.1 policy settings in Microsoft Intune | Microsoft Intune
+title: Windows Phone 8.1 policy settings | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Acceptable Use Policy for Microsoft Intune | Microsoft Intune
+title: Acceptable Use Policy | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

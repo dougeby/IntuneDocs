@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows PC management capabilities in Microsoft Intune | Microsoft Intune
+title: Windows PC management capabilities | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

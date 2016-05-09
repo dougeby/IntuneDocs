@@ -1,5 +1,5 @@
 ---
-title: Deploy apps in Microsoft Intune | Microsoft Intune
+title: Deploy apps | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
