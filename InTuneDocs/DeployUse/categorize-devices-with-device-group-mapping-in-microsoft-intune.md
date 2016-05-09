@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Categorize devices with device group mapping in Microsoft Intune | Microsoft Intune
+title: Categorize devices with device group mapping | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
