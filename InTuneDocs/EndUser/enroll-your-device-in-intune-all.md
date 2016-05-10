@@ -4,7 +4,7 @@
 title: Enroll your device in Intune | Microsoft Intune
 description:
 keywords:
-author: staciebarker]
+author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
