@@ -4,7 +4,6 @@
 # [Develop & Customize Apps](intune-app-sdk.md)
 ## [Overview of the Microsoft Intune App SDK](intune-app-sdk.md)
 ## [Getting Started With the Microsoft Intune App SDK](intune-app-sdk-get-started.md)
-## [Microsoft Intune App SDK Frequently Asked Questions](intune-app-sdk-faq.md)
 ## [Microsoft Intune App SDK for iOS Developer Guide](intune-app-sdk-ios.md)
 ## [Microsoft Intune App SDK for Android Developer Guide](intune-app-sdk-android.md)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)

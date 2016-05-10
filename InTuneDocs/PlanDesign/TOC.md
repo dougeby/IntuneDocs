@@ -17,4 +17,5 @@
 <!--- ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)--->
 
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Develop & Customize Apps](/intune/develop/intune-app-sdk)
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
