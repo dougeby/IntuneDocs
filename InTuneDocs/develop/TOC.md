@@ -1,5 +1,5 @@
 # [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Get Started](what-to-know-before-you-start-microsoft-intune.md)
+# [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Develop & Customize Apps](intune-app-sdk.md)
 ## [Overview of the Microsoft Intune App SDK](intune-app-sdk.md)
