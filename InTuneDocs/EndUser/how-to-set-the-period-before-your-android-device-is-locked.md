@@ -15,7 +15,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 
 # optional metadata
 
-ROBOTS: noindex,nofollow
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
