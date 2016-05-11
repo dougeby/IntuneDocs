@@ -120,4 +120,6 @@
 
 ## [What's new](whats-new-in-microsoft-intune.md)
 
+# [Develop & Customize Apps](/intune/develop/intune-app-sdk)
+
 # [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
