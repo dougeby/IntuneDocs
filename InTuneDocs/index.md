@@ -204,26 +204,26 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                   <span class="step-number">4</span>
                   <p>Develop & Customize Apps</p>
                 </div>
-                <p class="description column-two-thirds">Use the Intune App SDK to enable mobile app management for both the iOS and Android platforms.</p>
+                <p class="description column-two-thirds">Enable mobile app management for iOS and Android.</p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/develop/intune-app-sdk-get-started">
-                    <h3>Get Started With the Microsoft Intune App SDK</h3>
+                    <h3>Get started with the Microsoft Intune App SDK</h3>
                     <p>This guide walks through the major steps needed to enable mobile app management in your app with Microsoft Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/develop/intune-app-sdk-ios">
-                    <h3>Intune App SDK for iOS Developer Guide</h3>
-                    <p>The Intune App SDK for iOS includes a static library, resource files, API headers, a Debug settings plist, and a configurator tool.</p>
+                    <h3>Intune App SDK for iOS developer guide</h3>
+                    <p>The Intune App SDK for iOS includes a static library, resource files, API headers, a debug settings plist, and a configurator tool.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/develop/intune-app-sdk-android">
-                    <h3>Intune App SDK for Android Developer Guide</h3>
+                    <h3>Intune App SDK for Android developer guide</h3>
                     <p>The Intune App SDK for Android is a standard Android library with no external dependencies.</p>
                   </a>
                 </li>
