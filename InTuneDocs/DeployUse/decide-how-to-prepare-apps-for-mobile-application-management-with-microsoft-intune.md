@@ -38,7 +38,7 @@ You should use the App Wrapping Tool, rather than the SDK, if the  app has alrea
 ## Intune App SDK
 The App SDK is designed mainly for customers who have apps in the App or Play stores and want to be able to manage the apps with Intune. However, any app can take advantage of integrating the SDK, even if it’s a LOB app.
 
-To integrate the SDK, you need access to the app’s source code. For instructions on integrating the SDK, see [Microsoft Intune App SDK](https://msdn.microsoft.com/library/mt627769.aspx).
+To learn more about the SDK, see the [Overview](/intune/develop/intune-app-sdk). To get started with the SDK, see [Getting Started With the Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started).
 
 ## Feature comparison
 This table lists the settings that you can use for the App SDK and App Wrapping Tool.
