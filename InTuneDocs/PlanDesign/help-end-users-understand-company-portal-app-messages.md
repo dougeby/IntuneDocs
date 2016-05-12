@@ -55,7 +55,7 @@ If users deny access, they can continue to use the Company Portal app and enroll
 If users allow, but then later deny access, the message appears the next time users sign in to the Company Portal app after enrollment.</br></br>If users later decide to allow access, they can go to **Settings** > **Apps** > **Company Portal** > **Permissions** > **Phone**, and then turn on the permission.
 
 ### Where to send your users for more information
-[Sign in to the Company Portal app](/Intune/EndUser/sign-in-to-the-company-portal-app-android)
+Step 5 in [Enroll your Android device in Intune](/Intune/EndUser/enroll-your-device-in-intune-android)
 
 ## Allow Company Portal to access photos, media, and files on your device?
 

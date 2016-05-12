@@ -1,6 +1,6 @@
 {
 	"locales": ["cs-cz", "de-de", "es-es", "fr-fr", "hu-hu", "it-it", "ja-jp", "ko-kr", "nl-nl", "pl-pl", "pt-br", "pt-pt", "ru-ru", "sv-se", "tr-tr", "zh-cn", "zh-tw", "el-gr", "da-dk", "fi-fi", "nb-no", "ro-ro"],
-	"files": ["!/migrated-03-14/*.*", "!/sandbox/*.*", "!/zDeletedTopics/*.*", "!/InTuneDocs/EULA/*.md", "InTuneDocs/**/*.md"],
+	"files": ["locsol.md"],
 	"includeDependencies": true,
 	"autoPush": true,
 	"useJavascriptMarkdownTransformer": true
