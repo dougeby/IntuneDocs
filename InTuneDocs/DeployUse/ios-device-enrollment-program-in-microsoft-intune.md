@@ -62,6 +62,32 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
 
       ![Setup assistant pane](../media/pol-sa-corp-enroll.png)
 
+     The following settings are available for DEP-managed devices:
+
+     - **Department** - Appears when users tap "About Configuration" during activation
+     - **Support phone number** - Displayed when the user clicks the **Need Help** button during activation
+     - **Preparation mode** - This state is set during activation and cannot be changed without factory resetting the device:
+        - **Unsupervised** - Limited management capabilities
+        - **Supervised** - Enables more management options and disables Activation Lock by default
+     - **Lock enrollment profile to device** - This state is set during activation and cannot be changed without a factory reset
+        - **Disable** - Allows the management profile to be removed from the **Settings** menu
+        - **Enable** - (**Requires Preparation Mode** = **Supervised**) Disables iOS settings that could allow removal of the management profile
+     - **Setup Assistant Options** - These settings are optional and can be configured later in the iOS **Settings** menu
+        - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device will be secured or have access controlled in some other manner (i.e. kiosk mode that restricts the device to one app).
+        - **Location Services** - Enables the service during activation
+        - **Restore** - If enabled, prompts for iCloud backup during activation
+        - **Apple ID** - An Apple ID is required to download iOS App Store apps, including those installed by Intune. iOS will prompt users for an Apple ID when Intune attempts to install an app without an ID.
+        - **Terms and Conditions** - Prompts users to accept Apple's terms and conditions during activation
+        - **Touch ID** - If enabled, prompts for this service during activation
+        - **Apple Pay** - If enabled, prompts for this service during activation
+        - **Zoom** - If enabled, prompts for this service during activation
+        - **Siri** - If enabled, prompts for this service during activation
+        - **Send diagnostic data to Apple** - If enabled, prompts for this service during activation
+     -  **Enable additional Apple Configurator management** - Set to **Disallow** to prevent syncing files with iTunes or management via Apple Configurator. Microsoft recommends you export any further configuration from Apple Configurator and deploy as a Custom iOS configuration profile via Intune, rather than use this setting to allow manual deployment with or without a certificate.
+        - **Disallow** - Prevents the device from communicating via USB (disables pairing)
+        - **Allow** Lets the device communicate via USB connection with any PC or Mac
+        - **Require certificate** - Allows pairing with a Mac with a certificate imported to the enrollment profile.
+
 6.  **Assign DEP Devices for Management**
     Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://deploy.apple.com) and sign in with your company Apple ID. Go **Deployment Program** &gt; **Device Enrollment Program** &gt; **Manage Devices**. Specify how you will **Choose Devices**, provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**. Next, select **Assign to Server** and select the &lt;ServerName&gt; specified for Microsoft Intune, and then click **OK**.
 
