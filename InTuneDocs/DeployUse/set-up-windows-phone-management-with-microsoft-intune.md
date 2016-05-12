@@ -59,4 +59,4 @@ For most scenarios, users can install the Company Portal app from the Windows St
 
 
 
-No additional work is required unless you will deploy the Company Portal to devices.  Steps 2, 3 and 4 in the admin console can be safely ignored.
+No additional work is required unless you will deploy the Company Portal to devices.  Steps 2 and 3 in the admin console can be safely ignored.
