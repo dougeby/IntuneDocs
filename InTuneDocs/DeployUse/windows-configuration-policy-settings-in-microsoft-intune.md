@@ -26,7 +26,13 @@ ms.suite: ems
 ---
 
 # Windows policy settings in Microsoft Intune
-Use the Microsoft Intune **Windows general configuration policy** to configure settings for enrolled Windows 8, and Windows 8.1 devices:
+Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and later)** to configure settings for enrolled Windows 8, and Windows 8.1 devices:
+
+## Applicability settings
+
+|Setting name|Details|
+|----------------|----------------------------------|
+|**Apply all configurations to Windows 10**|Allows settings in this policy to be applied to Windows 10 devices in addition to Windows 8, and Windows 8.1 devices.|
 
 ## Security settings
 
