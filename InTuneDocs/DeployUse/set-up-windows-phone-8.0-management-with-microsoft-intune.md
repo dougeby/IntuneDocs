@@ -27,15 +27,15 @@ ms.suite: ems
 
 # Set up device management for Windows Phone 8.0
 
-Before you can manage Windows Phone mobile devices with Intune, you have to set up management requirements. [Creating a DNS CNAME](set-up-windows-phone-management-with-microsoft-intune.md) helps users connect to the Intune company portal. Windows Phone 8.0 requires a Symantec certificate to establish an encrypted IP connection between devices and Intune. A certificate is also required to sign line-of-business apps.
+Windows Phone 8.0 requires a Symantec certificate to install the Intune Company Portal app and allow device management. A certificate is also required to sign line-of-business apps. The following topic is only for Windows Phone 8.0. To manage Windows Phone 8.1 or later, including Windows 10 Mobile, see [Set up Windows Phone enrollment](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
 
+-   **Windows Phone 8** - Certificate required
 -   **Windows Phone 8.1 and Windows 10 Mobile** require a certificate only if:
 
     -   You want to deploy the Company Portal app using Intune
 
     -   You'll deploy  line-of-business (AKA "side-loaded") apps
 
--   **Windows Phone 8** - Required
 
 ![Certificate requirements diagram](../media/wpcertreqs.png)
 

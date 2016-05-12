@@ -169,15 +169,5 @@ You can modify proxy server settings on individual client computers, or you can 
 You can also use a proxy server that caches content to [reduce network bandwidth](network-bandwidth-use.md) used by Intune clients.
 
 
-
-## Requirements for the Service to Service connector
-The Service to Service connector supports only cloud-based Exchange and has no requirements for on-premises infrastructure.
-
-To use this connector, the following must be true:
-
--   You have an Office 365 subscription that has an Exchange Server 2013 tenant. As long as the tenant is Exchange Server 2013, the connector supports Exchange Server 2010 in that same environment.
-
--   The user account that you use to install the On-Premises connector must be a tenant administrator for Intune and be an administrator in the Exchange tenant with a license to use Exchange Server 2013.
-
 ### See also
 [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
