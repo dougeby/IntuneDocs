@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: General troubleshooting tips for Microsoft Intune | Microsoft Intune
+title: General troubleshooting tips | Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -45,6 +45,8 @@ After you deploy Microsoft Intune you may encounter problems with your configura
 -   How frequently does this problem occur, and is it sporadic or consistent?
 
 -   Could the user be experiencing an authentication issue? If this is a possiblity, check if the user can log in to other services that use Azure Active Directory. Also, see if the user can log in from a different device.
+
+-   Have you checked the service status? You can monitor Intune service health in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx). Choose **Service Health** in the left pane. 
 
 ## Collect available data
 

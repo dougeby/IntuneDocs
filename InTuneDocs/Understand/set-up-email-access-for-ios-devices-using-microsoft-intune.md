@@ -83,7 +83,4 @@ The app will prompt you for the user’s email username and password.
 After a few moments the email profile gets applied to the device. After that, you can follow the verification steps to make sure the profile was applied correctly.
 
 ## See Also
-[Common Microsoft Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md)</br>
-[Start a Microsoft Intune trial and deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)</br>
-[Configure access to corporate email using email profiles with Microsoft Intune](email-access.md)</br>
-[Use policies to manage computers and mobile devices with Microsoft Intune](use-policies-to-manage-computers-and-mobile-devices-with-microsoft-intune.md)
+[Intune evaluation guide](get-started-with-a-30-day-trial-of-microsoft-intune.md)

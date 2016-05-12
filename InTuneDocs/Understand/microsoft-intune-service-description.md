@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune Service Description | Microsoft Intune
+title: Service Description | Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -52,6 +52,8 @@ Use the information in this topic to help you understand the frequency of these 
 To learn about changes in the  Intune service, see [What's new in Microsoft Intune](/intune/deploy-use/Whats-new-in-microsoft-intune.md). The [Microsoft Intune Blog](http://blogs.technet.com/b/microsoftintune/) also discusses changes in the service, and provides helpful tips to enable you to get the most from  Intune.
 
 Important service updates will also be communicated to you directly from the Intune console in the notice board.
+
+> [!NOTE] You can monitor Intune service health in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx). Choose **Service Health** in the left pane.  
 
 Here are the types of notices Microsoft provides about the Intune service:
 -   To help you plan for service changes, we notify you at least 30-90 days prior to the service upgrade, depending on the impact of the change . This will happen using in-product communication channels like notice board alerts. These changes may include:

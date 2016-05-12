@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile device management capabilities in Microsoft Intune | Microsoft Intune
+title: Mobile device management capabilities | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -39,7 +39,7 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 |--------------|-----------|--------------------|
 |Configuration policies<br><br>Custom policies|Mobile device configuration policies let you manage many settings and features on mobile devices in your organization. For example, you can you require a password, limit the number of failed attempts, limit the minutes before the screen locks, set password expiration, and prevent previously-used passwords. You could also control the use of hardware and software features such as the device camera, or the web browser<br><br>Use custom polices when configuration policies do not contain the setting you require. For iOS devices, you can import settings you exported from the Apple Configurator Tool. For other devices, you can use OMA-URI settings to configure settings and features on the device.|[Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)<br />|
 |Remote Wipe, Remote Lock, and Passcode Reset|Erase sensitive data when a device is lost or stolen. For example, you can remotely lock the device, restore it to factory settings, or wipe only corporate data.<br>You can reset passcodes if users lose access to their device, lock missing or stolen devices, or even wipe data off of missing or stolen devices.|[Help protect your devices with remote lock and passcode reset](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) and [Retire devices from Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management)|
-|Kiosk mode|Lets you lock down certain features of mobile devices such as screen capture and the power switch. Also lets you restrict devices to run a single app that you specify.|[iOS configuration policy settings in Microsoft Intune](/intune/deploy-use/ios-configuration-policy-settings-in-microsoft-intune)|
+|Kiosk mode|Lets you lock down certain features of mobile devices such as screen capture and the power switch. Also lets you restrict devices to run a single app that you specify.|[iOS configuration policy settings in Microsoft Intune](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 
 ## App management
 
@@ -66,7 +66,8 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
-|Inventory and reporting|Find information about the devices you manage and the software they are using.<br /><br />You can filter these reports in a number of ways, such as the device platform, and whether the device is compliant with corporate standards.|[Understand Microsoft Intune operations by using reports](/intune/understand-explore/understand-microsoft-intune-operations-by-using-reports)|
+|Inventory and reporting|Find information about the devices you manage and the software they are using.|[Understand your devices with inventory in Microsoft Intune](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+
 
 ### See also
-[Windows PC management capabilities in Microsoft Intune](/intune/understand-explore/windows-pc-management-capabilities-in-microsoft-intune)
+[Windows PC management capabilities in Microsoft Intune](./windows-pc-management-capabilities-in-microsoft-intune.md)

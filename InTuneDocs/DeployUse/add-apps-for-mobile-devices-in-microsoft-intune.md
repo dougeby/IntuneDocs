@@ -94,6 +94,12 @@ You use the Intune Software Publisher to configure the properties of the app and
 
 The app is displayed on the **Apps** node of the **Apps** workspace.
 
+## Examples
+
+### Deploying MSI applications to Windows 10 devices
+In this four minute video, you'll learn about how to deploy Microsoft Installer (msi) applications to enrolled devices that run Windows 10.<br><br>
+
+<iframe src="https://channel9.msdn.com/Series/How-to-Control-the-Uncontrolled/6--How-to-Deploy-MSI-Applications-to-Windows-10-Using-Intune-and-Mobile-Device-Management-MDM/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 
 ## Next steps
 

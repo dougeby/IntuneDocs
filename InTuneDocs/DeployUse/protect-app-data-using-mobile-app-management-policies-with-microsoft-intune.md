@@ -37,7 +37,7 @@ MAM policies support apps running on:
 -   **Devices that are managed and enrolled** in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. The devices in this category are typically corporate owned devices.
 
   > [!IMPORTANT]
-  > If you are using Intune with Configuration Manager to manage your iOS and Android devices, you can create mobile app management policies for Office mobile apps that connect to Office 365 services. MAM policies are not supported for apps that connect to on-premises Exchange or SharePoint services.
+  > If you are using Intune to manage your iOS and Android devices, you can create mobile app management policies for Office mobile apps that connect to Office 365 services. MAM policies are not supported for apps that connect to on-premises Exchange or SharePoint services.
 
 -   **Devices that are managed and enrolled in a third party mobile device management**  solution.   The devices in this category are typically corporate owned devices.
 

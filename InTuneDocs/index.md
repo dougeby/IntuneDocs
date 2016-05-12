@@ -9,9 +9,9 @@ author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage
-ms.prod: 
+ms.prod:
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology:
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 
@@ -29,7 +29,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
         <ul class="column column-half">
           <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Introduction to Microsoft Intune</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Common scenarios that rely on Intune</a></li>
-          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Start with a paid subscription</a></li>
+          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Intune quick start guide</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Overview of device and app lifecycles</a></li>
@@ -104,7 +104,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                 </li>
                 <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Get started with a paid subscription</h3>
+                    <h3>Intune quick start guide</h3>
                     <p>Building on the 30-day trial guide, this topic walks you through Azure Active Directory synchronization, domain and DNS considerations, and other Intune customizations.</p>
                   </a>
                 </li>
@@ -197,13 +197,45 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 	    </section>
           </li>
 
-
-
           <li class="journey-step">
+            <header class="journey-step-header row">
+              <a href="/intune/develop/intune-app-sdk">
+                <div class="title column-third">
+                  <span class="step-number">4</span>
+                  <p>Develop & Customize Apps</p>
+                </div>
+                <p class="description column-two-thirds">Enable mobile app management for iOS and Android.</p>
+              </a>
+            </header>
+            <section class="journey-step-elements content">
+              <ul class="row">
+                <li class="column-third">
+                  <a href="/intune/develop/intune-app-sdk-get-started">
+                    <h3>Get started with the Microsoft Intune App SDK</h3>
+                    <p>This guide walks through the major steps needed to enable mobile app management in your app with Microsoft Intune.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/develop/intune-app-sdk-ios">
+                    <h3>Intune App SDK for iOS developer guide</h3>
+                    <p>The Intune App SDK for iOS includes a static library, resource files, API headers, a debug settings plist, and a configurator tool.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/develop/intune-app-sdk-android">
+                    <h3>Intune App SDK for Android developer guide</h3>
+                    <p>The Intune App SDK for Android is a standard Android library with no external dependencies.</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            </li>
+
+      <li class="journey-step">
             <header class="journey-step-header row">
               <a href="/intune/troubleshoot/how-to-get-support-for-microsoft-intune">
                 <div class="title column-third">
-                  <span class="step-number">4</span>
+                  <span class="step-number">5</span>
                   <p>Troubleshoot</p>
                 </div>
                 <p class="description column-two-thirds">Resources to help you troubleshoot Intune.</p>

@@ -2,6 +2,7 @@
 # [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Develop & Customize Apps](/intune/develop/intune-app-sdk)
 
 # [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
 ## [How to get support](how-to-get-support-for-microsoft-intune.md)

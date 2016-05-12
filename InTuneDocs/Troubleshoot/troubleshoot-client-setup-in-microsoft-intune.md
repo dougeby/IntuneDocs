@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot client setup in Microsoft Intune | Microsoft Intune
+title: Troubleshoot client setup | Microsoft Intune
 description:
 keywords:
 author: Nbigman
@@ -54,6 +54,28 @@ Use the following information to help you troubleshoot common client setup probl
 
     -   **Severity** – This indicates the severity of the alert
 
+## Computer enrollment package doesn't download
+**Issue:** While trying to enroll a computer you experience the following:
+-  The enrollment package fails to download 
+-  The download dialog appears but times out
+
+**Resolution:** On the browser you're using for the download, for the period when the download takes place, ensure that downloads are enabled, and that encrypted files can be saved to your local disc.
+
+## Client installation hangs with error code 0x80040154
+**Issue:**
+ 
+-  Client installation during enrollment hangs
+
+-  Unable to enroll device 
+
+-  Error 0x80040154 in WindowsUpdate.log
+
+This may be caused by the absence of critical software updates on the PC.
+
+**Resolution:** 
+Ensure that your software update policy enables installation of critical updates, as described in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) 
+
+
 ## Microsoft Intune policy-related errors in policyplatform.log
 For non-MDM Windows devices, policy errors in the policyplatform.log file may be the result of non-default settings in the Windows User Account Control (UAC) on the device. Some non-default UAC settings can affect Microsoft Intune client installations and policy execution.
 
@@ -70,7 +92,7 @@ For non-MDM Windows devices, policy errors in the policyplatform.log file may be
 
 4.  Move  the notification slider to the default setting.
 
-## <a name="BKMK_Whattodo"></a>What to do if the client will not uninstall from the Microsoft Intune administrator console
+## What to do if the client will not uninstall from the Microsoft Intune administrator console
 
 ### To remove the client software by using the Microsoft Intune command line tool
 

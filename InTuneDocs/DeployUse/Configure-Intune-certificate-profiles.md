@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Intune certificate profiles | Microsoft Intune
+title: Configure certificate profiles | Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -132,8 +132,17 @@ Certificate profiles install only on applicable devices based on the platform yo
 
 -   Although each profile is deployed separately, both the Trusted Root and the SCEP/.PFX profile must be deployed or else the SCEP/.PFX certificate policy will fail.
 
-You deploy certificate profiles the same way you deploy other policy for Intune. For information about how to deploy and manage policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+You deploy certificate profiles the same way you deploy other policy for Intune:
 
+1.  In the **Policy** workspace, select the policy you want to deploy, then click **Manage Deployment**.
+
+2.  In the **Manage Deployment** dialog box:
+
+    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then click **Add** &gt; **OK**.
+
+    -   **To close the dialog box without deploying it** - Click **Cancel**.
+
+When you select a deployed policy, you can view further information about the deployment in the lower part of the policies list.
 ###  Next steps
 
 You can now use certificates to help secure email, Wi-Fi, and VPN profiles:
