@@ -32,11 +32,6 @@ This page is updated periodically. Check back for new What’s Coming updates.
 
 The following changes are under development for Intune. All of these features will also be supported for hybrid customers deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
-## Message Center onboarding
-As part of the migration of Intune into the [Office 365 Management portal](https://portal.office.com/), we will begin taking advantage of their Message Center to communicate new features and other notifications.  Also, by installing the companion Office 365 Admin mobile app, you can receive notifications on your mobile phone and easily forward any messages to users or a distribution alias.<br>  
-We will begin using the Message Center with our May release to notify you when updates are completed and will include information on new and improved Intune features.  Check out the Message Center today by logging into the [Office 365 Management portal](https://portal.office.com/) and choosing the **MESSAGE CENTER** option in the left navigation pane.
-<!---TFS 1242782--->
-
 
 ## App management
 - **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
