@@ -28,12 +28,15 @@ ms.suite: ems
 
 # What happens if you reset your device using the Company Portal?
 
-When you use the Company Portal to reset your Android device, some apps and settings on your device may be deleted, including some of your personal data. What happens on each device depends on the type of device you have and how you are using the device, as described in the following table.
+When you use the Company Portal to reset your Android device, all apps, settings and personal data on your device will be deleted, setting your device back to its factory default settings.
 
-|Device configuration and management|Device type|
-|---------------------------------------|---------------|
-|Your IT admin manages your mobile device|When you reset your Android device, your device won’t appear in the Company Portal anymore and your company email account will be deleted and unsaved email will be deleted.|
-|Your device can access company email only|When you reset your Android device, your device won’t appear in the Company Portal anymore, and the Company Portal tries to reset the device back to the manufacturer’s defaults. All your personal data and settings will be removed.|
+If you have a Samsung Knox device, you can bo a "selective wipe" by choosing the **device remove** option from the Company Portal. Selective wipe removes only the following:
+
+- Business apps that your IT administrator makes available to you
+- Email, VPN, and WiFi
+- Ability of your IT administrator to enforce certain settings
+
+
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)
