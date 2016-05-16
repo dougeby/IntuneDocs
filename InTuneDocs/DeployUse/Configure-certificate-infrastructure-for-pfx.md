@@ -1,15 +1,26 @@
 ---
-title: Configure certificate infrastructure |Microsoft Intune|
+title: Configure certificate infrastructure for PFX |Microsoft Intune|
 description:
 keywords:
 author: nbigman
-manager: [ALIAS]
-ms.date: 05/10/2016
+manager: jeffgilb
+ms.date: 05/16/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: 
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 
 ---
 # Configure certificate infrastructure
