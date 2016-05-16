@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows Phone 8.1 policy settings in Microsoft Intune | Microsoft Intune
+title: Windows Phone 8.1 policy settings | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -29,11 +29,17 @@ ms.suite: ems
 
 ## General configuration settings
 
-Use the Microsoft Intune **Windows Phone general configuration policy** to configure the following settings for Windows Phone 8.1 devices:
+Use the Microsoft Intune **Windows Phone general configuration policy (Windows Phone 8.1 and later)** to configure the following settings for Windows Phone 8.1 devices:
 
 -   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
 -   **Compliant and noncompliant apps** - Specify a list of apps that are compliant, or not compliant in your company. Windows Phone devices can block, or allow installation of these apps.
+
+### Applicability settings
+
+|Setting name|Details|
+|----------------|----------------------------------|
+|**Apply all configurations to Windows 10**|Allows settings in this policy to be applied to Windows 10 Mobile devices in addition to Windows Phone 8.1 devices.|
 
 ### Password settings
 

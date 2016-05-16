@@ -40,7 +40,7 @@ Groups in Intune provide great flexibility in managing your devices and users. Y
 
 The default view of the Groups node in the Intune admin console is:
 
-![Screenshot of the default view of the Groups node in the Intune console](./media/Group-planning/Intune_Planning_Groups_Default_small.png)
+![Screenshot of the default view of the Groups node in the Intune console](/intune/media/Group-planning/Intune_Planning_Groups_Default_small.png)
 
 Policies are deployed onto groups, so group hierarchy is one of your key design considerations. It is also important to know that a group’s parent group cannot be changed once the group is created, so the design of your groups is critically important from the moment you start using the Intune service. Some of the recommended practices for designing a group hierarchy based on your organizational needs are  described here.
 
@@ -131,11 +131,11 @@ If your organization allows employees to use their own devices at work (BYOD), p
 
 In the case of BYOD or a mix, be careful to plan policies that do not infringe on local privacy regulations. Create a parent group for all users who will be bringing their own devices. This group can then be used to apply policies that are applicable to all users in this category.
 
-![Screenshot of creating a BYOD parent group](./media/Group-planning/Intune_Planning_Groups_BYOD_small.png)
+![Screenshot of creating a BYOD parent group](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_small.png)
 
 Similarly, you can create a group for the CO users in your organization:
 
-![Screenshot of sibling user groups for BYOD and CO](./media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+![Screenshot of sibling user groups for BYOD and CO](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
 <!---START HERE--->
 
@@ -146,7 +146,7 @@ These screen shots show how to create Intune groups based on groups synchronized
 
 1. First, provide the general information.
 
-    ![Screenshot of the Edit Group area](./media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
+    ![Screenshot of the Edit Group area](/intune/media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
 
 Under Membership criteria, select **US Users Group**, synchronized from AD, as the security group to use under Membership rules.
 

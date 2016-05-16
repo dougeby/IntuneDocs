@@ -32,13 +32,9 @@ This page is updated periodically. Check back for new What’s Coming updates.
 
 The following changes are under development for Intune. All of these features will also be supported for hybrid customers deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
-## Message Center onboarding
-The [Office 365 Message Center](https://portal.office.com/default.aspx#MessageCenterPage) will replace Intune alerts for notifications about Intune. You will visit the Office 365 Message Center to see messages from Microsoft regarding new features being deployed as well as other one-off notifications.  The associated mobile app will allow you to also receive messages on your mobile phone and forward messages to your users by emailing individual users or distribution groups.
-<!---TFS 1242782--->
-
 
 ## App management
-<!--- - **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.--->
+- **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
 <!---TFS 1175844--->
 
 - **MAM SDK: Support PIN length configuration.** You will be able to specify the length of the PIN for MAM apps similar to a device PIN. This will require end users to comply with the new restrictions you set. They will see a slightly modified PIN screen to account for the longer input.
@@ -47,10 +43,10 @@ The [Office 365 Message Center](https://portal.office.com/default.aspx#MessageCe
 - **MAM controls to prevent Outlook contacts sync (iOS).** A new setting is available for mobile application management without device enrollment. This setting  allows the Intune administrator to prevent an application from syncing contacts to the native address book on iOS devices. When this setting is enabled, the app will no longer be able to save contacts to the native address book. When this setting is disabled, the app will be able to save contacts to the native address book. When an Intune administrator selectively wipes a device, all contacts that have already been saved to the native address book will be removed. This new setting is now supported by the Outlook application on iOS devices.
 <!---TFS item 1276166--->
 
-- **Skype for business for Android.** Intune Administrators can now target Skype for business with MAM without enrollment policies.  Once their users are logged in, the MAM policies will be applied.
+- **Skype for Business for Android.** Intune Administrators can now target Skype for business with MAM without enrollment policies.  Once their users are logged in, the MAM policies will be applied.
 <!--- TFS item 1248444 --->
 
-- **Skype for business for iOS.** Intune Administrators can now target Skype for business with MAM without enrollment policies.  Once their users are logged in, the MAM policies will be applied.
+- **Skype for Business for iOS.** Intune Administrators can now target Skype for business with MAM without enrollment policies.  Once their users are logged in, the MAM policies will be applied.
 <!--- TFS item 1248443 --->
 
 ### Xamarin support
@@ -67,9 +63,7 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 - **Remote assistance sessions for Windows PCs.** TeamViewer integration for Windows desktop agent-managed PCs will let you establish remote assistance sessions with Windows desktop agent-managed computers in support of end-user helpdesk departments. This includes Windows 7, 8, 8.1 and Windows 10.
 <!--- TFS 1284856--->
 
-- **Intune support for iOS 9.3.** On Monday March 21st, Apple announced the availability of iOS 9.3. We have been busy working to ensure that Microsoft Intune is compatible with the latest version of Apple's mobile operating system, and [we are pleased to announce that Intune supports managing iOS 9.3 devices](https://blogs.technet.microsoft.com/microsoftintune/2016/03/23/microsoft-intune-provides-support-for-ios-9-3/).
 
-    All existing Intune features currently available for managing iOS devices will continue to work seamlessly as users upgrade their devices to iOS 9.3. In addition, iOS 9.3 is also supported today for hybrid customers (Configuration Manager integrated with Intune).
 <!--- TFS item 1274326 --->
 
 ## Access control
@@ -77,7 +71,7 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 <!---TFS item 1254499--->
 
 ## Company Portal
-* **Device identification banner will provide more information to end users.** End users will be ablet to easily identify the device they’ve selected when they are using the Company Portal website. If the wrong device is selected, they will be able to select the correct device by tapping the “Tap here” link in the home page banner.
+* **Device identification banner will provide more information to end users.** End users will be able to easily identify the device they’ve selected when they are using the Company Portal website. If the wrong device is selected, they will be able to select the correct device by tapping the “Tap here” link in the home page banner.
 <!--- TFS 1231157--->
 
 * **Windows app packages available directly from the Company Portal**: Users of Windows 8, Windows 8.1, and Windows RT PCs can now install Windows app packages (with the .appx extension) directly from the Company Portal website. Previously, Intune administrators had to deploy, or users had to install the Company Portal app on their devices to install apps.
@@ -98,11 +92,20 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 |Windows 10 Desktop | Not supported|
 
 ## Service deprecation
-* **Custom Group Targeting of Notification Rules Removal.** Coming in early June, 2016, you will no longer be able to use the Create Notification Rule Wizard to target user-created groups with notification rules.
+**Custom Group Targeting of Notification Rules Removal.**
+Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
 
-    Currently, to target a user-created group from the Microsoft Intune administration console, you choose **Admin** > **Notification Rules** > **Create New Rule**. In step two of the Create Notification Rule Wizard, you must select the device groups which the rule will target. This step, **Select device groups**, is being deprecated from the Intune Console.
+Today, to target a notification rule to a group you created from the Microsoft Intune administration console, you would take the following steps:
 
-    **Select device groups** will no longer be supported after the June 1606 release of Intune. However, you will continue to see this option until August 2016. After August, we will begin phasing our tenants to the new experience over a period of two months. By October 2016, all existing customers should be transitioned to the new experience. After migrating to the new experience, you will no longer be presented with the option to target notification rules at a specific group.
+In the **Admin** workspace, click **Notification Rules** > **Create New Rule**
+
+In step two of the Create Notification Rule Wizard, select the device groups which the rule will target. This step, “select device groups”, is being removed from the Intune Console.
+
+The preliminary timeline for this change is as follows:
+•	In June, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected. 
+•	Around August, 2016, some existing tenants will not see the “select device groups” in the wizard. 
+•	Around October, 2016, we expect that all tenants will not see the “select device groups” in the wizard. 
+
 <!---	TFS 1278864--->
 
 

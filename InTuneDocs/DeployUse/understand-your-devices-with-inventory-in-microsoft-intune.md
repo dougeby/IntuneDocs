@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Understand your devices with inventory in Microsoft Intune | Microsoft Intune
+title: Understand your devices with inventory | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -113,6 +113,7 @@ To view the inventory collected by Windows PCs, run the [Computer Inventory Repo
 
 -   **Last Updated**
 
+<!-- this section below belongs in the planning journey
 ### See Also
 [Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
-
+-->

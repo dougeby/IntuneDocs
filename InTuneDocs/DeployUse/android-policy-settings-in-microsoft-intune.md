@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Android configuration policy settings in Microsoft Intune | Microsoft Intune
+title: Android configuration policy settings | Microsoft Intune
 description:
 keywords:
 author: robstackmsft

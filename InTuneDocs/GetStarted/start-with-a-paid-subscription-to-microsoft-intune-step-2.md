@@ -38,7 +38,7 @@ When you subscribe to a cloud-based service from Microsoft, your instance of tha
 > For more information about using your custom domain with a cloud-based service from Microsoft, see [Conceptual overview of custom domain names in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/).
 
 ### Next steps
-Congratulations! You have just completed step 2 of the *Start with a paid subscription to Microsoft Intune* guide.
+Congratulations! You have just completed step 2 of the *Intune quick start guide*.
 
 >[!div class="step-by-step"]
 
