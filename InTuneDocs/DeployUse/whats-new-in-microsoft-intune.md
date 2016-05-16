@@ -27,6 +27,15 @@ ms.suite: ems
 
 # What's new in Microsoft Intune
 
+## May 2016
+All of these features are also supported for hybrid customers (Configuration Manager integrated with Intune).
+
+### Company portal updates
+
+**Android Company portal app**
+
+- **End user toast notifications**: End users will now see toast notifications from the Android Company Portal app when they are enrolling their devices or removing their devices from the Company Portal.
+
 ## April 2016
 All of these features are also supported for hybrid customers (Configuration Manager integrated with Intune).
 ### App management
