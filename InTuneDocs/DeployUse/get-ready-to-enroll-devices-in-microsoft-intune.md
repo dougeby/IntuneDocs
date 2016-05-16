@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Get ready to enroll devices in Microsoft Intune
-To let employees enroll mobile devices (including Android, iOS, and Windows Phone, and Windows PCs) with Intune you must enable device enrollment. To allow enrollment you must set a mobile device management authority, configure the Intune Company Portal, assign licenses, and enable enrollment for the device platform.
+To let employees enroll mobile devices (including [Android](set-up-android-management-with-microsoft-intune.md), [iOS and Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md), and [Windows PCs](set-up-windows-device-management-with-microsoft-intune.md)) with Intune you must enable device enrollment. To allow enrollment you must set a mobile device management authority, configure the Intune Company Portal, assign licenses, and enable enrollment for the device platform.
 
 ## <a name="BKMK_Set_MDM_Authority"></a>Set mobile device management authority
 The MDM authority defines the  management service with permission to manage a set of devices. Options for MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
@@ -45,7 +45,7 @@ The MDM authority defines the  management service with permission to manage a se
 3.  Intune requests confirmation that you want Intune as your MDM authority. Check the box and then click **Yes** to use Microsoft Intune to manage mobile devices.
 
 ## Configure the Intune Company Portal and assign licenses
-The Intune Company Portal helps users access company resources such as apps, find helpdesk information, and enroll and un-enrolled devices. Before enrolling devices you should [configure the Company Portal](/intune/get-started/get-started-with-a-paid-subscription-to-microsoft-intune-step-7). You must also [assign user licenses](/intune/get-started/get-started-with-a-paid-subscription-to-microsoft-intune-step-4) to allow access to Intune.
+The Intune Company Portal helps users access company resources such as apps, find helpdesk information, and enroll and un-enrolled devices. Before enrolling devices you should [configure the Company Portal](/intune/get-started/get-started-with-a-paid-subscription-to-microsoft-intune-step-7.md). You must also [assign user licenses](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) to allow access to Intune.
 
 ## Set up device management
 After setting up the MDM authority, you need to set up device management for the operating systems your organization wants to support. The steps required to set up device management vary by operating system. For example, Android OS does not require you to do anything in the Intune administration console. On the other hand, Windows and iOS require a trust relationship between devices and Intune to allow management.
