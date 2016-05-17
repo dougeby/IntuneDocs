@@ -27,9 +27,19 @@ ms.suite: ems
 
 # Get ready to configure mobile app management policies with Microsoft Intune
 This topic describes what you need to do before you can create mobile app management policies (MAM) in the Azure portal.
-If you are currently using the **Intune admin console** to manage your devices, you can create a MAM policy that supports apps for devices enrolled in Intune using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
+The Azure portal is the new admin console for creating MAM policies, and we recommend that you use this portal to create MAM  policies. Azure portal supports the following MAM scenarios:
+- Devices enrolled in Intune
+- Devices managed by a third-party MDM solution
+- Devices that are not managed by any MDM solution (BYOD).
+
+If you are new to using the Azure portal, read the [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) topic to get a quick overview.
+
+If you are currently using the **Intune admin console** to manage your devices, you can create MAM policies use that supports apps for devices enrolled in Intune using the **Intune admin console**, but it is recommended to use the Azure portal even for devices that are enrolled in Intune. For instructions on using the creating a MAM policy, on Intune admin console, see [here](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
 >[!IMPORTANT]
-> You may not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies.
+> You may not see all MAM policy settings in the Intune admin console. If you create MAM policies on both Intune admin console and Azure portal, the policy in the Azure portal is applied to the apps and deployed to users.
+
 
 ##  Supported platforms
 - iOS 8.1 or later
@@ -91,7 +101,7 @@ The following table lists the role and permissions you can assign to admin users
 
 ## Assign the contributor role to a user
 
-**Global administrators** have access to the Azure portal.  If you want other admin users to be able to configure policies, and do other mobile app management tasks, you can assign the **contributor role** to the user as described below:
+**Global administrators** have access to the [Azure portal](https://portal.azure.com).  If you want other admin users to be able to configure policies, and do other mobile app management tasks, you can assign the **contributor role** to the user as described below:
 
 
 1.  On the **Settings** blade,  from the **Resource management** section, click **Users**.
