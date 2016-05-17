@@ -66,19 +66,14 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 
 <!--- TFS item 1274326 --->
 
-## Access control
-* **Skype for Business Online supports conditional access.** Intune administrators will be able to set a conditional access policy for Skype for Business Online so that it can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to the Skype for Business mobile app on iOS and Android will be prompted to enroll with Intune as well as fix any non-compliance issues before sign-in can complete.
-<!---TFS item 1254499--->
+
 
 ## Company Portal
 * **Device identification banner will provide more information to end users.** End users will be able to easily identify the device they’ve selected when they are using the Company Portal website. If the wrong device is selected, they will be able to select the correct device by tapping the “Tap here” link in the home page banner.
 <!--- TFS 1231157--->
 
-* **Windows app packages available directly from the Company Portal**: Users of Windows 8, Windows 8.1, and Windows RT PCs can now install Windows app packages (with the .appx extension) directly from the Company Portal website. Previously, Intune administrators had to deploy, or users had to install the Company Portal app on their devices to install apps.
-<!--- TFS item 1082481 --->
 
-* **Users can remotely lock their device from the Company Portal** A new remote lock option has been added to the Company Portal website to enable end users to remotely lock their device from the portal if their device is lost or stolen. The following table lists the platform support for remote lock for Intune and Intune with Configuration Manager.
-<!--- TFS item 1195661 --->
+
 
 |Platform  |Support details|
 |---------|---------|
