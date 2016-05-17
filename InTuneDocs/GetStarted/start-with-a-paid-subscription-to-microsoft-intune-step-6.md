@@ -28,7 +28,7 @@ ms.suite: ems
 # Create policies and publish an app
 Intune policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. You can learn more at [Manage settings and features on your devices with Microsoft Intune policies](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) and [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
-You can perform two types of app installations using Intune. The first is a **required install**, which automatically deploys the app to managed computers. The other is an **available install**, which deploys the app, or a link to the app, to the Intune company portal so that users can choose whether to install it on their computers or on their mobile devices.
+You can perform two types of app installations using Intune. The first is a **required install**, which automatically deploys the app to managed computers. The other is an **available install**, which deploys the app, or a link to the app, to the Intune Company Portal so that users can choose whether to install it on their computers or on their mobile devices.
 
 <!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
 
@@ -80,7 +80,7 @@ Your policy appears in the list of configuration policies, and has been deployed
 
     -   **Windows Phone 8 or Windows Phone 8.1:**  [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
 
-6.  On the **Software description** page, provide the information that you want users to see in the company portal for the software, and then choose **Next**. The following settings are available (this example refers to Skype):
+6.  On the **Software description** page, provide the information that you want users to see in the Company Portal for the software, and then choose **Next**. The following settings are available (this example refers to Skype):
 
     -   **Publisher:** Enter the name of the publisher, "Microsoft"
 
@@ -90,7 +90,7 @@ Your policy appears in the list of configuration policies, and has been deployed
 
     -   **Category:** Select the category that best fits this software, such as **Collaboration**
 
-    -   **Display this as a featured app and highlight it in the company portal:** Select this option to display the app prominently in the company portal on mobile devices.
+    -   **Display this as a featured app and highlight it in the company portal:** Select this option to display the app prominently in the Company Portal on mobile devices.
 
     -   **Icon:** Choose whether to associate an icon with the software. The maximum size for the optional icon is 250 x 250 pixels and the recommended size is 32 x 32 pixels.
 
@@ -104,7 +104,7 @@ Your policy appears in the list of configuration policies, and has been deployed
 
 11. Choose **Finish**.
 
-The Skype app is now available to install on mobile devices from the company portal, but first you need to install [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] software on computers and mobile devices.
+The Skype app is now available to install on mobile devices from the Company Portal, but first you need to install [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] software on computers and mobile devices.
 
 
 ### Next steps

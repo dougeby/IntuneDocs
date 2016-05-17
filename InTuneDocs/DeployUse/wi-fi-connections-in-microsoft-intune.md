@@ -163,3 +163,6 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
 
 
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
+
+### See also
+Learn how to create a Wi-Fi profile with a pre-shared key in [Pre-shared key Wi-Fi profile](pre-shared-key-wi-fi-profile.md)

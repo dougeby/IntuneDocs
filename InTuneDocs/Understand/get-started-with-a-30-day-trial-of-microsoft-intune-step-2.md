@@ -37,7 +37,7 @@ You can view tenant administrator information by using the Intune administration
 ## Add individual user accounts
 Use the following steps to create additional user accounts in your evaluation tenant. Remember, each user account that you add counts as one of the 100 licenses that  you get as part of your Intune free evaluation.
 
-1.  In the [Office 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854), choose **Add Users** &gt; **New**&gt; **User** to start the **New users** wizard.
+1.  In the [Office 365 admin center](http://go.microsoft.com/fwlink/?LinkID=787455), choose **Add Users** &gt; **New**&gt; **User** to start the **New users** wizard.
 
 2.  On the **Details** page, complete the required fields.
 
@@ -58,7 +58,7 @@ Use the following steps to create additional user accounts in your evaluation te
 ## Add users in bulk
 To add users in bulk to Intune,  use the **Bulk add users** wizard to upload a comma-separated values (CSV) file that contains your user data. Links in the wizard enable you to download a blank template and sample CSV file. The first row of your CSV file must contain, in the correct order, each of the user data column labels. Then, for each user in the CSV file, you must include the **user name** (like **bob@contoso.com**) and a **display name** (like **Bob Kelly**).
 
-1.  In the [Office 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854), choose **Users** &gt; **New**.
+1.  In the [Office 365 admin center](http://go.microsoft.com/fwlink/?LinkID=787455), choose **Users** &gt; **New**.
 
 2.  Choose **Bulk add** to start the Bulk add users wizard.
 
