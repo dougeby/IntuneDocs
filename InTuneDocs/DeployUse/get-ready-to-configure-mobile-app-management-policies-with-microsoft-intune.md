@@ -48,7 +48,6 @@ To see the full list of supported Microsoft apps, go to [Microsoft Intune mobile
 
 -   **A subscription to Microsoft Intune**.    End users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps with MAM policy.
 
--   The **mobile device management authority** must be set to either **Intune** or **Configuration manager**, depending on whether you are using just Intune or Configuration Manager integrated with Intune to manage your devices. If you are using O365 built-in mobile device management, you must purchase an Intune subscription and [set the mobile device management authority to Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).
 -   An **Office 365 (O365)** subscription that is required for the following:
   - To apply MAM policies to apps with multi-identity support.
   - To create  SharePoint Online and Exchange Online work accounts. Exchange On-premises and SharePoint on-premises are not supported.
