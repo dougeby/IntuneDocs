@@ -177,6 +177,16 @@ Intune can display the paths of up to 10 most recently detected instances of mal
 
 3.  Mark the **Recent Detection Paths** checkbox in the list. The **Recent Detection Paths** column appears and displays up to 10 most recent malware instances monitored on the device.
 
+## Run a malware scan or update malware definitions on a computer
+Intune can run either a full or quick malware scan using Endpoint Protection or Windows Defender on a remote managed PC that is installed with the Intune client.
+
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/) go **Groups** > **Overview** > **All Devices** > **All Computers**, and select the computer you want to target.
+
+2. Click the **Remote Tasks** drop-down list and then select the task. The task to run on the remote computer.
+![Run remote malware scan](../media/ep_sa_malwarescan.png)
+
+
+
 ## Need more help?
 For further help and support, see [Troubleshoot Endpoint Protection in Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 

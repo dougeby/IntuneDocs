@@ -52,6 +52,8 @@ Intune can manage PCs running the following Windows versions (both x86 and x64):
 
 -   **Windows 8.1** - Professional and Enterprise versions.
 
+- **Windows 10** - Professional and Enterprise versions.
+
 
 ## Minimum hardware requirements
 The following are minimum hardware requirements for installing the Intune PC client:
