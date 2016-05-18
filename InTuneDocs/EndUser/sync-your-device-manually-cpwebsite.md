@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Sync your device manually
 
-If your app installation is taking too long, you can try syncing your device manually, which might help to speed up the installation. Use the instructions below that match the type of device you have. Only the listed versions are supported.
+If your app installation is taking too long, you can try syncing your device manually, which might help to speed up the installation. Use the instructions below that match the type of device or Windows version you have. Only the listed versions are supported.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
