@@ -65,5 +65,5 @@ The information in this section will help you fix issues you might encounter whe
 - [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
 - [Your device is rooted and you can't connect](your-device-is-rooted-and-you-cant-connect-android.md)</br>
 - [Your device is missing a required certificate](your-device-is-missing-a-required-certificate-android.md)</br>
-- [You are prompted to install Lookout for Work](you-are-prompted-to-install-lookout-for-work.md)
+
 

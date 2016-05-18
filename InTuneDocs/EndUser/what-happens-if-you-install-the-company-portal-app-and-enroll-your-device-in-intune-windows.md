@@ -28,12 +28,7 @@ ms.suite: ems
 
 # What happens if you install the Company Portal app and enroll your device in Intune?
 
-To learn what happens when you install the Company Portal app and enroll your device, use the link that matches the device you are using.
-
-- [Windows 10](#windows-10)
-- [Windows 8.1 and Windows RT](#windows-8-1-and-windows-rt)
-- [Windows Phone 8.1 and Windows Phone 8](#windows-phone-8-1-and-windows-phone-8)
-- [Windows 7 and Vista](#windows-7-and-vista)
+To learn what happens when you install the Company Portal app and enroll your device, use the link, shown in the "In this Article" section above, that matches the device you are using.
 
 ## Windows 10
 When you install the Company Portal app and then use the app to enroll your Windows 10 Enterprise  or Professional device in Intune, you can then use the Company Portal app to:
