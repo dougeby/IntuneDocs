@@ -26,6 +26,8 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ---
 
 # You are prompted to install Lookout for Work
+Note: This feature has been added to the Android Company Portal app, but it won't be operational until June, 2016. 
+
 Lookout for Work is an app that helps keep your device secure by checking for risks and security threats. When you see a notification saying that you must install Lookout for Work, it means that your IT administrator has set a policy requiring you to download and install the app from the Play Store.
 
 **What you need to do:**
