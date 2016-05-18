@@ -29,6 +29,8 @@ ms.suite: ems
 
 ## **May 2016**
 
+All of these features are also supported for hybrid deployments (Configuration Manager with Intune). For more information about new hybrid features, check out the [Hybrid What’s New](https://technet.microsoft.com/en-us/library/mt718155.aspx) page.
+
 ### **Documentation**
 
 Welcome to the preview version of [docs.microsoft.com](https://docs.microsoft.com/en-us/intune)!
