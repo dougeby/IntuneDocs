@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Monitor mobile app management policies with Microsoft Intune
-After you have configured a MAM policy and applied it to the users, you can monitor the compliance status on the Azure portal. The Azure portal includes information about the users affected by the policy, the compliance status, and any issues that your end users might be experiencing.
+After you have configured a MAM policy and applied it to the users, you can monitor the compliance status on the [Azure portal](https://portal.azure.com). The Azure portal includes information about the users affected by the policy, the compliance status, and any issues that your end users might be experiencing.
 ## Summary view
 On the **Intune mobile application management** blade you can see a summary of the compliance status as described below:
 
