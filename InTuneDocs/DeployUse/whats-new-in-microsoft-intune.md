@@ -30,6 +30,8 @@ ms.suite: ems
 ## April 2016
 All of these features are also supported for hybrid customers (Configuration Manager integrated with Intune).
 ### App management
+- **New apps available for management with MAM policies.** The Microsoft Word, Excel, and PowerPoint apps for Android can now be associated with MAM policies on devices that are not enrolled with Intune. For a full list of supported apps, go the Microsoft Intune mobile application gallery on the [Microsoft Intune application partners page](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+-
 - **MAM user compliance.**
 You can now view the [status](monitor-mobile-app-management-policies-with-Microsoft-Intune.md) of your application management policies for any user in your Azure Active Directory (AAD) tenant. This includes:
    - Devices

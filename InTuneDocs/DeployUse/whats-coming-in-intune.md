@@ -6,7 +6,7 @@ description:
 keywords:
 author: Lindavr
 manager: jeffgilb
-ms.date: 05/03/2016
+ms.date: 05/17/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -15,7 +15,7 @@ ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -32,16 +32,32 @@ This page is updated periodically. Check back for new What’s Coming updates.
 
 The following changes are under development for Intune. All of these features will also be supported for hybrid customers deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
+## Intune communications
+- **Intune service health information.** for Intune has been moved to a central location with other Microsoft services. You'll now find this information in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) under Service Health. For more information, see [this blog post](https://blogs.technet.microsoft.com/microsoftintune/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/).
+
+- **Message center UI onboarding.** As part of the migration of Intune into the [Office 365 Management portal](https://portal.office.com/), we will begin taking advantage of their Message Center to communicate new features and other notifications. Also, by installing the companion Office 365 Admin mobile app, you can receive notifications on your mobile phone and easily forward any messages to users or a distribution alias.
+We will begin using the Message Center with our May release to notify you when updates are completed and will include information on new and improved Intune features. Check out the Message Center today by logging into the [Office 365 Management portal](https://portal.office.com/) and choosing the **Message Center** option in the left navigation pane.
 
 ## App management
+- **New apps available for management with MAM policies.** The Microsoft Word, Excel, and PowerPoint apps for Android can now be associated with MAM policies on devices that are not enrolled with Intune. For a full list of supported apps, go the Microsoft Intune mobile application gallery on the [Microsoft Intune application partners page](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+
+<!--- New feature:
+**Rights Management app for Android**
+We just released the new Rights Management app for Android (RMS sharing). This new app allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. The RMS sharing app has added support for Intune mobile application management (MAM), as well as support for viewing audio video (AV), image, and PDF files protected by Intune. All files and formats supported by the Intune Viewer apps are fully supported by the RMS sharing app when used with Intune management. You can now deploy the RMS sharing app with Intune MAM policy so you can view images, AV, and PDF files using just a single app, through both Intune MDM and Intune MAM without device enrollment.
+
+With the release of the new RMS sharing app, we are removing the following Intune Viewer apps, beginning August, 2016: 
+- Intune AV Viewer
+- Intune PDF Viewer
+- Intune Image Viewer for Android from Google Play
+- Intune administrators will no longer be able to deploy the Intune Viewer apps on Android devices when this change is implemented. 
+
+Instead of using the Intune Viewer apps, we recommend using the new Rights Management app (RMS sharing) for Android, which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices.  --->
+
 - **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
 <!---TFS 1175844--->
 
 - **MAM SDK: Support PIN length configuration.** You will be able to specify the length of the PIN for MAM apps similar to a device PIN. This will require end users to comply with the new restrictions you set. They will see a slightly modified PIN screen to account for the longer input.
 <!--- TFS 1104753--->
-
-- **MAM controls to prevent Outlook contacts sync (iOS).** A new setting is available for mobile application management without device enrollment. This setting  allows the Intune administrator to prevent an application from syncing contacts to the native address book on iOS devices. When this setting is enabled, the app will no longer be able to save contacts to the native address book. When this setting is disabled, the app will be able to save contacts to the native address book. When an Intune administrator selectively wipes a device, all contacts that have already been saved to the native address book will be removed. This new setting is now supported by the Outlook application on iOS devices.
-<!---TFS item 1276166--->
 
 - **Skype for Business for Android.** Intune Administrators can now target Skype for business with MAM without enrollment policies.  Once their users are logged in, the MAM policies will be applied.
 <!--- TFS item 1248444 --->
@@ -64,32 +80,11 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 <!--- TFS 1284856--->
 
 
-<!--- TFS item 1274326 --->
-
-## Access control
-* **Skype for Business Online supports conditional access.** Intune administrators will be able to set a conditional access policy for Skype for Business Online so that it can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to the Skype for Business mobile app on iOS and Android will be prompted to enroll with Intune as well as fix any non-compliance issues before sign-in can complete.
-<!---TFS item 1254499--->
-
 ## Company Portal
+- **End user toast notifications.** End users will now see toast notifications from the Android Company Portal app when they are enrolling their devices or removing their devices from the Company Portal.
+-
 * **Device identification banner will provide more information to end users.** End users will be able to easily identify the device they’ve selected when they are using the Company Portal website. If the wrong device is selected, they will be able to select the correct device by tapping the “Tap here” link in the home page banner.
 <!--- TFS 1231157--->
-
-* **Windows app packages available directly from the Company Portal**: Users of Windows 8, Windows 8.1, and Windows RT PCs can now install Windows app packages (with the .appx extension) directly from the Company Portal website. Previously, Intune administrators had to deploy, or users had to install the Company Portal app on their devices to install apps.
-<!--- TFS item 1082481 --->
-
-* **Users can remotely lock their device from the Company Portal** A new remote lock option has been added to the Company Portal website to enable end users to remotely lock their device from the portal if their device is lost or stolen. The following table lists the platform support for remote lock for Intune and Intune with Configuration Manager.
-<!--- TFS item 1195661 --->
-
-|Platform  |Support details|
-|---------|---------|
-|iOS | Supported|
-|Android | Supported|
-|Windows Phone 8.1 | Supported|
-|Windows 10 Mobile | Supported only if the phone has a passcode set|
-|PC (Windows 8.0 and earlier) | Not supported|
-|PC (Windows 8.1) | Not supported|
-|Windows Phone 8.0 | Not Supported|
-|Windows 10 Desktop | Not supported|
 
 ## Service deprecation
 **Custom Group Targeting of Notification Rules Removal.**
@@ -102,11 +97,13 @@ In the **Admin** workspace, click **Notification Rules** > **Create New Rule**
 In step two of the Create Notification Rule Wizard, select the device groups which the rule will target. This step, “select device groups”, is being removed from the Intune Console.
 
 The preliminary timeline for this change is as follows:
-•	In June, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected. 
-•	Around August, 2016, some existing tenants will not see the “select device groups” in the wizard. 
-•	Around October, 2016, we expect that all tenants will not see the “select device groups” in the wizard. 
+- In June, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
+- Around August, 2016, some existing tenants will not see the “select device groups” in the wizard.
+- Around October, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
 
 <!---	TFS 1278864--->
+**Changes in support for the iOS Company Portal app.**
+In the coming months, there will be an update for the Microsoft Intune Company Portal app for iOS that will only support devices running iOS 8.0 or later. Users won’t be able to enroll new devices running versions below iOS 8.0. Enrolled devices running versions below iOS 8.0 will continue to be managed and will, for a limited time, be able to continue using the Company Portal app. However, devices must be on iOS 8.0 or later to access the latest versions of the Company Portal app. We encourage you to notify users to update to iOS 8.0 or later to take full advantage of new Intune features.  
 
 
 
