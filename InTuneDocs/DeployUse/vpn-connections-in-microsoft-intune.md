@@ -131,6 +131,8 @@ Setting name  |More information
 **Associated apps**     | You can provide a list of apps that will automatically use the VPN connection. The type of app will determine the app identifier. For universal apps – provide the Package Family Name, and for desktop apps – provide the file path of the app.          
 
 
+> [!IMPORTANT] We recommend that you secure all lists of apps that you compile for use in configuration of per-app VPN. If an unauthorized user modifies your list and you import it into the per-app VPN app list, you will potentially authorize VPN access to apps that should not have access. One way you can secure app lists is by using an access control list (ACL).
+
 Here's an example of when you might use corporate boundaries settings. If you want to enable VPN only for remote desktop, you would create a network traffic rule that allows traffic for protocol number 27 on external port 3996. No other traffic will use the VPN.
 
 Defining routes in corporate boundaries is useful when your VPN connection type does not allow you to define how traffic is handled in split tunneling. In that case, use **Routes** to list the routes that will use the VPN.

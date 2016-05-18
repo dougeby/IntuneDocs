@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Enroll mobile devices and install an app
-To set up mobile device management with Intune, you must first set the mobile device management authority, enable management for device platforms, and enroll your devices with the company portal app. You can then deploy the Microsoft Skype application that you published in step 6.
+To set up mobile device management with Intune, you must first set the mobile device management authority, enable management for device platforms, and enroll your devices with the Company Portal app. You can then deploy the Microsoft Skype application that you published in step 6.
 
 ## Enable device management and enroll devices
 
@@ -41,7 +41,7 @@ To set up mobile device management with Intune, you must first set the mobile de
 
     -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
 
-    -   **Android**: Android mobile devices allow users to enroll using the company portal app available from [Google Play](https://play.google.com/store/apps/details?id=com.skype.raider). No additional configuration in Intune is required.
+    -   **Android**: Android mobile devices allow users to enroll using the Company Portal app available from [Google Play](https://play.google.com/store/apps/details?id=com.skype.raider). No additional configuration in Intune is required.
 
 3.  **Enroll devices**:
 
@@ -51,14 +51,14 @@ To set up mobile device management with Intune, you must first set the mobile de
 
     -   **Windows Phone 8.1**- Users install the **Company Portal** app from Microsoft Corporation available in the Windows Phone store and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
 
-    -   **Windows Phone 8.0**  - Users choose **system settings** &gt; **company apps**, and sign in with Intune user credentials added above. The company portal app is deployed to your phone.
+    -   **Windows Phone 8.0**  - Users choose **system settings** &gt; **company apps**, and sign in with Intune user credentials added above. The Company Portal app is deployed to your phone.
 
     If prompted for a **Server address**, type “manage.microsoft.com”.
 
 ## Install an app on an enrolled device
 In [step 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) of this quick start guide, you published the Skype app to your custom Intune Users group. Now you'll install that app on a newly enrolled device.
 
-Open the company portal on the enrolled mobile device, choose **Apps**, and then install **Microsoft Skype**.
+Open the Company Portal on the enrolled mobile device, choose **Apps**, and then install **Microsoft Skype**.
 
 To learn more about mobile device management using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
 

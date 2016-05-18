@@ -80,12 +80,36 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 <!--- TFS 1284856--->
 
 
+<<<<<<< HEAD
+=======
+<!--- TFS item 1274326 --->
+
+
+
+>>>>>>> c643dfe82ad0696e9e0cd67743ca127ec52ca44e
 ## Company Portal
 - **End user toast notifications.** End users will now see toast notifications from the Android Company Portal app when they are enrolling their devices or removing their devices from the Company Portal.
 -
 * **Device identification banner will provide more information to end users.** End users will be able to easily identify the device they’ve selected when they are using the Company Portal website. If the wrong device is selected, they will be able to select the correct device by tapping the “Tap here” link in the home page banner.
 <!--- TFS 1231157--->
 
+<<<<<<< HEAD
+=======
+
+
+
+|Platform  |Support details|
+|---------|---------|
+|iOS | Supported|
+|Android | Supported|
+|Windows Phone 8.1 | Supported|
+|Windows 10 Mobile | Supported only if the phone has a passcode set|
+|PC (Windows 8.0 and earlier) | Not supported|
+|PC (Windows 8.1) | Not supported|
+|Windows Phone 8.0 | Not Supported|
+|Windows 10 Desktop | Not supported|
+
+>>>>>>> c643dfe82ad0696e9e0cd67743ca127ec52ca44e
 ## Service deprecation
 **Custom Group Targeting of Notification Rules Removal.**
 Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
