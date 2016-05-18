@@ -27,9 +27,19 @@ ms.suite: ems
 
 # Get ready to configure mobile app management policies with Microsoft Intune
 This topic describes what you need to do before you can create mobile app management policies (MAM) in the Azure portal.
-If you are currently using the **Intune admin console** to manage your devices, you can create a MAM policy that supports apps for devices enrolled in Intune using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
+The Azure portal is the new admin console for creating MAM policies, and we recommend that you use this portal to create MAM  policies. Azure portal supports the following MAM scenarios:
+- Devices enrolled in Intune
+- Devices managed by a third-party MDM solution
+- Devices that are not managed by any MDM solution (BYOD).
+
+If you are new to using the Azure portal, read the [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) topic to get a quick overview.
+
+If you are currently using the **Intune admin console** to manage your devices, you can create MAM policies use that supports apps for devices enrolled in Intune using the **Intune admin console**, but it is recommended to use the Azure portal even for devices that are enrolled in Intune. For instructions on using the creating a MAM policy, on Intune admin console, see [here](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
 >[!IMPORTANT]
-> You may not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies.
+> You may not see all MAM policy settings in the Intune admin console. If you create MAM policies on both Intune admin console and Azure portal, the policy in the Azure portal is applied to the apps and deployed to users.
+
 
 ##  Supported platforms
 - iOS 8.1 or later
@@ -37,17 +47,21 @@ If you are currently using the **Intune admin console** to manage your devices, 
 - Android 4 or later
 
 ##  Supported apps
-To see the full list of supported apps, go to [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) on the Microsoft Intune application partners page.
-Click the app to see the supported scenarios, platforms and whether or not the app supported multi-identity.
+* **Microsoft apps:** These apps have the Intune App SDK built-in and require no further processing before applying MAM policies.
+To see the full list of supported Microsoft apps, go to [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) on the Microsoft Intune application partners page. Click the app to see the supported scenarios, platforms and whether or not the app supports multi-identity.
+* Your in-house built **Line of business apps:** These require preparing the app to include the Intune App SDK before you can apply MAM policies.
+
+  * For devices that are managed by Intune, see [Decide how to prepare apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+  * For devices that are not managed like employee owned devices, or for devices that are managed by a third-party mobile device management solution, see [Protect line of business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
 **Before** you can configure MAM policies, you'll need the following:
 
 -   **A subscription to Microsoft Intune**.    End users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps with MAM policy.
 
--   The **mobile device management authority** must be set to either **Intune** or **Configuration manager**, depending on whether you are using just Intune or Configuration Manager integrated with Intune to manage your devices. If you are using O365 built-in mobile device management, you must purchase an Intune subscription and [set the mobile device management authority to Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).
 -   An **Office 365 (O365)** subscription that is required for the following:
   - To apply MAM policies to apps with multi-identity support.
   - To create  SharePoint Online and Exchange Online work accounts. Exchange On-premises and SharePoint on-premises are not supported.
+-    **Enable modern authentication** for **Skype for Business Online**. Log into Microsoft Connect and fill [this  form](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) to be enrolled in the modern authentication program.
 
 
 - **Azure Active Directory (Azure AD)** to create users. Azure AD authenticates the user when the end user launches the app and enters their work credentials.
@@ -87,7 +101,7 @@ The following table lists the role and permissions you can assign to admin users
 
 ## Assign the contributor role to a user
 
-**Global administrators** have access to the Azure portal.  If you want other admin users to be able to configure policies, and do other mobile app management tasks, you can assign the **contributor role** to the user as described below:
+**Global administrators** have access to the [Azure portal](https://portal.azure.com).  If you want other admin users to be able to configure policies, and do other mobile app management tasks, you can assign the **contributor role** to the user as described below:
 
 
 1.  On the **Settings** blade,  from the **Resource management** section, click **Users**.
