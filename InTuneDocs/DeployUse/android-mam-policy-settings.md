@@ -65,6 +65,8 @@ The term **Policy managed apps** is used to refer to apps that are configured wi
 
     **Default value = Yes**
 - **Encrypt app data:** Choose **Yes** to enable encryption. When this setting is enabled, for apps that are associated with a mobile app management policy, encryption is provided by Microsoft. Data is encrypted synchronously during file I/O operations. Content on the device storage is always be encrypted.
+  >[!NOTE]
+  >The encryption method is not FIPS 140-2 certified
 
   **Default value = Yes**
 

@@ -36,7 +36,7 @@ Mobile application management policies support:
 
 > [!TIP]
 > Mobile application management policies support devices that are enrolled with Intune.
-> 
+>
 > If you are looking for information about how to create app management policies for devices that are not managed by Intune, see the [Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 Unlike other Intune policies, you do not deploy a mobile application management policy directly. Instead, you associate the policy with the app that you want to restrict. When the app is deployed and installed on devices, the settings you specify will take effect.
@@ -141,7 +141,7 @@ Once you have verified that the app is uploaded successfully, continue to Step 3
     |**Require device compliance with corporate policy for access**|Only allows the app to be used when the device is not jailbroken or rooted.|
     |**Recheck the access requirements after (minutes)**|In the **Timeout** field, specify the time period before the access requirements for the app are rechecked after the app is launched.|
     |**Offline grace period**|If the device is offline, specify the time period before the access requirements for the app are rechecked.|
-    |**Encrypt app data**|Specifies that all data associated with this app will be encrypted, including data stored externally, such as SD cards.<br /><br />**Encryption for iOS**<br /><br />For apps that are associated with an Intune mobile application management policy, data is encrypted at rest using device level encryption provided by the OS. This is enabled through device PIN policy that must be set by the IT admin. When a PIN is required, the data will be encrypted per the settings in the mobile application management policy. As stated in Apple documentation, [the modules used by iOS 7 are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Encryption for Android**<br /><br />For apps that are associated with an Intune mobile application management policy, encryption is provided by Microsoft. Data is encrypted synchronously during file I/O operations according to the setting in the mobile application management policy. Managed apps on Android use AES-128 encryption in CBC mode utilizing the platform cryptography libraries. The encryption method is not FIPS 140-2 certified. Content on the device storage will always be encrypted.|
+    |**Encrypt app data**|Specifies that all data associated with this app will be encrypted, including data stored externally, such as SD cards.<br /><br />**Encryption for iOS**<br /><br />For apps that are associated with an Intune mobile application management policy, data is encrypted at rest using device level encryption provided by the OS. This is enabled through device PIN policy that must be set by the IT admin. When a PIN is required, the data will be encrypted per the settings in the mobile application management policy. As stated in Apple documentation, [the modules used by iOS 7 are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Encryption for Android**<br /><br />For apps that are associated with an Intune mobile application management policy, encryption is provided by Microsoft. Data is encrypted synchronously during file I/O operations.  Content on the device storage will always be encrypted. The encryption method is not FIPS 140-2 certified.|
     |**Block screen capture** (Android devices only)|Specifies that the screen capture capabilities of the device are blocked when using this app.|
 
 4.  When you are finished, click **Save Policy**.
@@ -155,7 +155,7 @@ For details, see [Deploy apps in Microsoft Intune](deploy-apps.md).
 
 > [!IMPORTANT]
 > For devices that run operating systems earlier than iOS 7.1, associated policies will not be removed when the app is uninstalled.
-> 
+>
 > If the device is unenrolled from Intune, polices are not removed from the apps; any apps that had policies applied will retain the policy settings even after the app is uninstalled and reinstalled.
 
 ### What to do when an app is already deployed on devices
@@ -199,6 +199,3 @@ In cases where the device or user receives two conflicting policies, the followi
 -   If a policy has already been deployed to the device, the existing policy settings are not overwritten.
 
 -   If no policy has already been deployed to the device, and two conflicting settings are deployed, the default setting built into the device is used.
-
-
-
