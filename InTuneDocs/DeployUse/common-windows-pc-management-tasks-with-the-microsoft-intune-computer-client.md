@@ -203,7 +203,8 @@ Before you can begin to establish and respond to remote assistance requests, you
 
 1. When a user submits a remote assistance request, you can view it in the **Alerts** workspace, under **Monitoring** > **Remote Assistance**. For example:
 > ![Screenshot of a remote assistance request](./media/team-viewer.png)
-If a request goes unanswered for more than 4 hours, it is removed.
+
+<br>If a request goes unanswered for more than 4 hours, it is removed.
 2. To accept the request, click **Approve request and launch Remote Assistance**.
 3. In the **A New Remote Assistance Request is Pending** dialog box, click **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
 4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC. 
