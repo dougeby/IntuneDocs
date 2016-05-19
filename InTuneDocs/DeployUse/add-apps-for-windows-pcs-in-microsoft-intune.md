@@ -47,9 +47,9 @@ You use the Intune Software Publisher to configure the properties of the app and
 
     **Select how this software is made available to devices** - Choose **Software installer**, then specify:
 
-	- **Select the software installer file type**|This indicates the type of software you want to deploy. For a Windows PC, choose **Windows Installer**.|
-    - **Specify the location of the software setup files**|Enter the location of the installation files or click **Browse** to select the location from a list.|
-    - **Include additional files and subfolders from the same folder**|Some software that uses Windows Installer requires supporting files which are typically found in the same folder as the installation files. Select this option if you also want to deploy these supporting files.|
+	- **Select the software installer file type** - This indicates the type of software you want to deploy. For a Windows PC, choose **Windows Installer**.
+    - **Specify the location of the software setup files** - Enter the location of the installation files or click **Browse** to select the location from a list.
+    - **Include additional files and subfolders from the same folder** - Some software that uses Windows Installer requires supporting files which are typically found in the same folder as the installation files. Select this option if you also want to deploy these supporting files.
    This installation type uses some of your cloud storage space.
 
 3.  On the **Software description** page, configure the following:
@@ -57,9 +57,9 @@ You use the Intune Software Publisher to configure the properties of the app and
     Depending on the installer file you are using, some of these values might have been automatically entered, or might not appear.
 
 	- **Publisher** - Enter the name of the publisher of the app.
-    - **Name**- Enter the name of the app as it will be displayed in the company portal.<br /><br />Make sure all app names you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.|
-    - **Description** - Enter a description for the app. This will be displayed to users in the company portal.|
-    - **URL for software information**|(optional) Enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
+    - **Name**- Enter the name of the app as it will be displayed in the company portal.<br /><br />Make sure all app names you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.
+    - **Description** - Enter a description for the app. This will be displayed to users in the company portal.
+    - **URL for software information** - (optional) Enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
     - **Privacy URL**- (optional) Enter the URL of a website that contains privacy information for this app. The URL will be displayed to users in the company portal.
     - **Category**- (optional) Select one of the built-in app categories. This will make it easier for users to find the app when they browse the company portal.
     - **Icon** - (optional) Upload an icon that will be associated with the app. This is the icon that will be displayed with the app when users browse the company portal.
@@ -90,4 +90,4 @@ The app is displayed on the **Apps** node of the **Apps** workspace.
 
 ## Next steps
 
-Once you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune.md](deploy-apps.md)
+Once you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune](deploy-apps.md)
