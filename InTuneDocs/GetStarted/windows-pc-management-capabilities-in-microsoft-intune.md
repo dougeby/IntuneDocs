@@ -46,13 +46,13 @@ Intune can manage PCs running the following Windows versions (both x86 and x64):
 
 -   **Windows Vista** - Business, Enterprise and Ultimate versions.
 
--   **Windows 7** - Professional, Enterprise, and Ultimate versions (with no service pack, or with SP1).
+-   **Windows 7** - Pro, Enterprise, and Ultimate versions (with no service pack, or with SP1).
 
--   **Windows 8** - Professional and Enterprise versions.
+-   **Windows 8** - Pro and Enterprise versions.
 
--   **Windows 8.1** - Professional and Enterprise versions.
+-   **Windows 8.1** - Pro and Enterprise versions.
 
-- **Windows 10** - Professional and Enterprise versions.
+- **Windows 10** - Home, Pro, Education, and Enterprise versions.
 
 
 ## Minimum hardware requirements
