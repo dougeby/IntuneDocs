@@ -50,7 +50,7 @@ To use Remote Lock to lock your device:
 
 	Once you tap **Remote Lock**, a “Remote lock pending” status appears.  When Remote Lock succeeds, the status changes to “Remote lock successful.”
 
-	The status displays in three places:
+	The Remote Lock status displays in three places:
 
 	* The notifications area of the website. 
 	* The Details page for the device.

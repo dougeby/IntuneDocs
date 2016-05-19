@@ -38,14 +38,11 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
         </ul>
       </div>
     </section>
-
     <div id="journeys">
       <section class="container">
         <!-- <h2 class="section-heading"><span class="icon icon-inheritance"></span> Stages</h2> -->
         <ul class="journeys-list">
-
           <li class="journey-step">
-
             <header class="journey-step-header row">
               <a href="/intune/understand-explore/introduction-to-microsoft-intune">
                 <div class="title column-third">
@@ -56,7 +53,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                 </p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
@@ -80,9 +76,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
               </ul>
             </section>
           </li>
-
           <li class="journey-step">
-
             <header class="journey-step-header row">
               <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
                 <div class="title column-third">
@@ -93,7 +87,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                 </p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
@@ -117,7 +110,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
               </ul>
             </section>
           </li>
-
           <li class="journey-step">
             <header class="journey-step-header row">
               <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
@@ -129,7 +121,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                 </p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
@@ -151,7 +142,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                   </a>
                 </li>
               </ul>
-
 	      <ul class="row">
                 <li class="column-third">
                   <a href="/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune">
@@ -172,7 +162,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                   </a>
                 </li>
               </ul>
-
                 <ul class="row">
                 <li class="column-third">
                   <a href="/intune/deploy-use/deploy-apps-in-microsoft-intune">
@@ -193,10 +182,8 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                   </a>
                 </li>
               </ul>
-
 	    </section>
           </li>
-
           <li class="journey-step">
             <header class="journey-step-header row">
               <a href="/intune/develop/intune-app-sdk">
@@ -230,7 +217,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
               </ul>
             </section>
             </li>
-
       <li class="journey-step">
             <header class="journey-step-header row">
               <a href="/intune/troubleshoot/how-to-get-support-for-microsoft-intune">
@@ -267,7 +253,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
         </ul>
       </section>
     </div>
-
     <div class="section-border">
       <section class="resources container">
       <h2 class="section-heading"><span class="icon icon-note"></span>Additional resources for Intune</h2>
