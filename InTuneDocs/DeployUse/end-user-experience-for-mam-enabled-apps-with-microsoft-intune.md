@@ -150,6 +150,14 @@ To view company AV, PDF, and image files on Android devices, use the [Microsoft 
 
 Download this app from the  Google Play store.  Once the app is installed on your device, launch the app and authenticate with your company credentials. You should now be able to view unprotected and protected files from other policy-managed apps.
 
+**Android devices that are not enrolled in Intune**
+
+Before you can use the RMS sharing app to view files from other apps managed by Intune, launch the RMS app and authenticate with your work account.  When you log in, you will see the following message **only if you don’t have an RMS license**:
+
+**Authentication Successful – You can now view corporate files, but your organization isn’t set up to let you protect files. Contact your IT admin for more details.**
+
+This does not prevent you from using the RMS sharing app to view company files. You can still open and view company files from other apps managed by Intune, and the MAM policies will still apply.  What this message is saying is that you will not be able to add the additional protection capabilities that the RMS sharing app provides.  You must have an RMS license to add protection to your files. To learn more about RMS file protection capabilities, see [Protect a file on a device](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place)  and [Protect a file that you share by email](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
+
 
 ### See also
 [Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
