@@ -49,7 +49,7 @@ To help solve these problems, Apple introduced Activation Lock bypass in iOS 7.1
 > Supervised mode for iOS devices lets you use the Apple Configurator Tool to lock down a device to limit functionality to specific business purposes. Supervised mode is generally only for corporate-owned devices.
 
 ## How Intune helps you manage Activation Lock
-Intune can request the Activation Lock status of both supervised and unsupervised devices that run iOS 7.1 and later. For supervised devices, Intune can retrieve the Activation Lock bypass code and directly issue it to the device. If the device has been wiped, you can directly access the device using the code as the user name, and a blank password).
+Intune can request the Activation Lock status of both supervised and unsupervised devices that run iOS 7.1 and later. For supervised devices only, Intune can retrieve the Activation Lock bypass code and directly issue it to the device. If the device has been wiped, you can directly access the device using the code as the user name, and a blank password).
 
 **The business benefits of this are**:
 
