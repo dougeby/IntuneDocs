@@ -120,7 +120,7 @@ When you select a deployed policy, you can view further information about the de
 
 3.  Click **Remote Tasks** in the bottom-right corner of the Intune administration console to check the task status.
 
-## Reference information for Intune policies
+## Frequently asked questions about Intune policies
 
 ### How long does it take for mobile devices to get policy or apps after they have been deployed?
 When a policy or app is deployed, Intune immediately begins attempting to notify the device that it should check-in with the Intune service. This typically takes less than 5 minutes.
@@ -132,7 +132,8 @@ In this case, the device will get policy on its next scheduled check-in with the
 - iOS - Every 6 hours
 - Android - Every 8 hours
 - Windows Phone - Every 8 hours
-- Windows PCs enrolled as devices - Every 24 hours
+- Enrolled Windows RT devices - Every 24 hours
+- Windows 8.1 and Windows 10 PCs enrolled as devices - Every 8 hours
 
 If the device has just enrolled the check-in frequency will be more frequent as follows:
 
@@ -172,7 +173,7 @@ Intune does not evaluate the payload of Apple Configuration files or custom OMA-
 
 Therefore, when you deploy a custom policy, ensure the settings configured do not conflict with compliance, configuration or other custom policies. In the case of a custom policy with settings conflicts, the order in which are settings are applied is random.
 
-### What happens when a policy is deleted, or no longer applicable
+### What happens when a policy is deleted, or no longer applicable?
 When you delete a policy, or remove a device from a group to which a policy was deployed, the policy and settings will be removed from the device according to the following tables:
 
 #### Enrolled devices

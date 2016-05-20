@@ -29,7 +29,7 @@ ms.suite: ems
 Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. These will help you to understand which apps you can deploy to which platform, and to understand the prerequisites that must be in place before you do so.
 
 ## App types you can deploy with Intune
-You can deploy apps to all device types that are supported by Intune. Depending on the type of app you want to deploy, the process and supported devices will differ. Use the following table to help you understand what you can, and cannot deploy:
+You can deploy apps to all device types that are supported by Intune. Depending on the type of app you want to deploy, the process and supported devices will differ. Use the following information to help you understand what you can, and cannot deploy:
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**

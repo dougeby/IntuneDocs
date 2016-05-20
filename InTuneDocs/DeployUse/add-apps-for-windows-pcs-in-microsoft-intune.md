@@ -50,6 +50,10 @@ You use the Intune Software Publisher to configure the properties of the app and
 	- **Select the software installer file type** - This indicates the type of software you want to deploy. For a Windows PC, choose **Windows Installer**.
     - **Specify the location of the software setup files** - Enter the location of the installation files or click **Browse** to select the location from a list.
     - **Include additional files and subfolders from the same folder** - Some software that uses Windows Installer requires supporting files which are typically found in the same folder as the installation files. Select this option if you also want to deploy these supporting files.
+
+	For example, if you want to publish an app named Application.msi to Intune, the page would look like this:
+	![PC Software Publisher](./media/publisher-for-pc.png)
+
    This installation type uses some of your cloud storage space.
 
 3.  On the **Software description** page, configure the following:
@@ -64,8 +68,7 @@ You use the Intune Software Publisher to configure the properties of the app and
     - **Category**- (optional) Select one of the built-in app categories. This will make it easier for users to find the app when they browse the company portal.
     - **Icon** - (optional) Upload an icon that will be associated with the app. This is the icon that will be displayed with the app when users browse the company portal.
 
-	For example, if you want to publish an app named Application.msi to Intune, the page would look like this:
-	![PC Software Publisher](./media/publisher-for-pc.png)
+
 
 4.  On the **Requirements** page, select the requirements that must be met before the app can start to install on a device from. Choose from **Architecture** - Select whether this app can be installed on 32-bit, 64-bit, or both operating systems, **Operating System** - Select the minimum operating system on which this app can be installed.
 
