@@ -36,15 +36,22 @@ Organizations can use Intune to manage large numbers of mobile devices with a si
 
 -   Configure access to company data
 
-Only use the device manager account for devices that won't receive email or logon as a specific user. Devices managed with a device manager account cannot be configured with conditional access since these are also per-user scenarios. The store manager cannot reset the device from the company portal.
 
 **Examples of device enrollment manager scenario:**
 A restaurant wants point-of-sale tablets for its wait staff and order monitors for its kitchen staff. The employees never need access to company data or to logon as a user. The Intune administrator creates a device enrollment manager account and enrolls the company-owned devices using that account. Alternatively, the administrator could give the device enrollment manager credentials to a restaurant manager, allowing him or her to enroll and manage the devices.
 
 The administrator or manager can deploy role-specific apps to the restaurant devices. An administrator can also select the device in the Intune console and retire it from mobile device management with the administration console.
 
+Devices enrolled with a device enrollment manager (DEM) account have the following restrictions:
+  - No specific user so all devices are "user-less;" therefore no email or company data access although VPN, for example, could still provide device apps with access to data
+  - No conditional access because these are per-user scenarios
+  - Cannot be reset devices from the company portal
+  - No Apple Volume Purchase Program (VPP) apps due to per-user Apple ID requirements for app management
+  - Cannot also be enrolled with Apple Configurator or Apple device enrollment program (iOS devices)
+
 > [!NOTE]
 > Device enrollment manager user accounts with more than 20 devices enrolled might have problems using the Company Portal app. To deploy company apps to devices managed with the device enrollment manager, deploy Company Portal app as a **Required Install** to the device enrollment manager's user account.
+> To improve performance, viewing the Company Portal app on a DEM device only shows the local devices, and only if it was enrolled using the Company Portal app. Remote management of other DEM devices can only be done from the Intune console.
 
 ## Create device enrollment manager accounts
 Device enrollment manager accounts are user accounts with permission to enroll large numbers of corporate-owned devices. Only users in the Intune console can be device enrollment managers.
