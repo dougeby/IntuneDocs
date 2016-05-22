@@ -66,7 +66,7 @@ You use the Intune Software Publisher to configure the properties of the app and
 3.  On the **Software description** page, configure the following:
 
     > [!TIP]
-    > Depending on the installer type you are using, some of these values might have been automatically entered, or might not appear.
+    > Depending on the installer type you are using, some of these values might have been automatically entered.
 
 	- **Publisher** - Enter the name of the publisher of the app.
     - **Name** - Enter the name of the app as it will be displayed in the company portal.<br>Make sure all app names you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.

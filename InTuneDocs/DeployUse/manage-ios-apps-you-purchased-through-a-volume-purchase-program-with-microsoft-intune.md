@@ -63,11 +63,11 @@ On the **Volume Purchase Program** page, you can now view information about the 
 
 You can synchronize the data held by Apple with Intune at any time by clicking **Sync now**.
 
-## To upload and deploy a volume-purchased app
+## To deploy a volume-purchased app
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Apps** &gt; **Managed Software** &gt; **Volume-Purchased apps**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Apps** &gt; **Managed Software** &gt; **Volume-Purchased apps**. This list shows all apps that were synchronized from the Apple VPP service.
 
-2.  Use the instructions in the [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) topic to complete uploading, creation, and deployment of the app.
+2.  Choose the app you want to deploy, click **Manage Deployment**, then use the instructions in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to complete uploading, creation, and deployment of the app.
 
 When you deploy the app as a **Required** install, a license is used by each user that installs the app.
 
@@ -87,5 +87,5 @@ You can monitor which VPP apps have been deployed, and how many licenses are use
 > You can also use app **Filters** to examine the status of each app install.
 
 ### See Also
-[Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
+[Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
