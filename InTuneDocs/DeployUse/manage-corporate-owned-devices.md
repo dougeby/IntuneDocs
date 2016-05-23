@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage corporate-owned devices with Microsoft Intune | Microsoft Intune
+title: Manage corporate-owned devices | Microsoft Intune
 description:
 keywords:
 author: NathBarn
