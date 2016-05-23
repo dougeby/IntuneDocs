@@ -72,8 +72,6 @@ For details, see [Common Windows PC management tasks with the Microsoft Intune c
 
 ### What's coming
 
-
-
 - **Message center UI onboarding**. As part of the migration of Intune into the [Office 365 Management portal](https://portal.office.com/), we will begin taking advantage of their Message Center to communicate new features and other notifications. Also, by installing the companion Office 365 Admin mobile app, you can receive notifications on your mobile phone and easily forward any messages to users or a distribution alias.
 We will begin using the Message Center with our May release to notify you when updates are completed and will include information on new and improved Intune features. Check out the Message Center today by logging into the [Office 365 Management portal](https://portal.office.com/) and choosing the MESSAGE CENTER option in the left navigation pane.
 
