@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Choose how to manage devices with Microsoft Intune | Microsoft Intune
+title: Choose how to manage devices | Microsoft Intune
 description:
 keywords:
 author: jeffgilb
