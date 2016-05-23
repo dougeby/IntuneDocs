@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Choose how to manage devices with Microsoft Intune | Microsoft Intune
+title: Choose how to manage devices | Microsoft Intune
 description:
 keywords:
 author: jeffgilb
@@ -31,13 +31,7 @@ ms.suite: ems
 ## Ways to manage mobile devices
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] can manage the following device platforms:
 
-- Apple iOS 7.1 and later
-- Google Android 4.0 and later (including Samsung KNOX)
-- Windows Phone 8.0 and later
-- Windows RT and Windows 8.1 RT
-- PCs running Windows 8.1
-- PCs running Windows 10 (Home, Pro, Education, and Enterprise versions)
-- Mac OS X 10.9 and later
+[!INCLUDE[wit_nextref](../includes/mdm-supported-devices.md)]
 
 <div class="alert alert-tip">
   <h5><span class="icon-tip"></span> Tip</h5>
