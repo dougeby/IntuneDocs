@@ -82,10 +82,15 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 
 
 ## Company Portal
+
 - **End user toast notifications.** End users will now see toast notifications from the Android Company Portal app when they are enrolling their devices or removing their devices from the Company Portal.
--
-* **Device identification banner will provide more information to end users.** End users will be able to easily identify the device they’ve selected when they are using the Company Portal website. If the wrong device is selected, they will be able to select the correct device by tapping the “Tap here” link in the home page banner.
+- **Device identification banner will provide more information to end users.** End users will be able to easily identify the device they’ve selected when they are using the Company Portal website. If the wrong device is selected, they will be able to select the correct device by tapping the “Tap here” link in the home page banner.
 <!--- TFS 1231157--->
+
+- **Changes to Device Enrollment Managers accounts in the Android Company Portal app.** To improve performance and scale, Intune will longer show all Device Enrollment Managers (DEM) devices in the **My Devices** pane of the Android Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be able to be performed from the Intune admin console.
+
+<!--- - **Changes to Device Enrollment Managers accounts in the iOS Company Portal app.** To improve performance and scale, Intune is no longer showing all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app is displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices can only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices.  Only use DEM accounts when user-less enrollment for shared devices is unavailable.--->
+
 
 
 ## Service deprecation
