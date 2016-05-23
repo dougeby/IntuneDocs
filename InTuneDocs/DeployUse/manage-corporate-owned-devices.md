@@ -54,7 +54,7 @@ The following table shows enrollment methods for corporate-owned device enrollme
 |**[BYOD](#BYOD)** | No|	Yes |	No |
 |**[DEM](#DEM)**|	No |No |No	|
 |**[DEP](#DEP)**|	Yes |	Opt |	Opt|
-|**[USB-SA](#USB-SA)**|	Yes |	Opt |	Opt|
+|**[USB-SA](#USB-SA)**|	Yes |	Opt |	No|
 |**[USB-Direct](#USB-Direct)**|	No |	No	| No|
 
 **Windows and Android Enrollment Methods**
