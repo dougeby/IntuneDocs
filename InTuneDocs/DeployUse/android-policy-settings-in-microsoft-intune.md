@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Android configuration policy settings | Microsoft Intune
+title: Android and Samsung KNOX configuration policy settings | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Android policy settings in Microsoft Intune
+# Android and Samsung KNOX policy settings in Microsoft Intune
 
 ## General configuration policy
 
@@ -150,7 +150,7 @@ Specify the following settings for **Samsung KNOX devices**:
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then select the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.<br /><br />For help, see How to specify URLs to app stores later in this topic.|
+|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then select the managed app that will be allowed to run when the device is in kiosk mode (apps specified as a link to the store are not currently supported). No other apps will be allowed to run on the device.|
 |**Allow volume buttons**|Enables or disables the use of the volume buttons on the device.|
 |**Allow screen sleep wake button**|Enables or disables the screen sleep wake button on the device.|
 
@@ -166,7 +166,7 @@ Use the **Noncompliant Apps Report** to view the compliance of allowed and block
 2.  Select the device groups that you would like to check, whether you want to check for compliant apps, noncompliant apps, or both, then click **View Report**.
 
 #### How to specify URLs to app stores
-To specify an app URL in the compliant and noncompliant apps list, or in the **Select a managed app that will be allowed to run when the device is in kiosk mode** option (iOS only), use the following format:
+To specify an app URL in the compliant and noncompliant apps list, use the following format:
 
 In the [Apps section of Google Play](https://play.google.com/store/apps), search for the app you want to use.
 

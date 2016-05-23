@@ -58,7 +58,7 @@ From the perimeter network to trusted network, allow all ports and protocols nee
 |**Certificate Template**|You configure this template on your issuing CA.|
 |**Client authentication certificate**|Requested from your issuing CA or public CA, you install this certificate on the NDES Server.|
 |**Server authentication certificate**|Requested from your issuing CA or public CA, you install and bind this SSL certificate in IIS on the NDES server.|
-|**Trusted Root CA certificate**|You export this as a **.cer** file from the issuing CA or any device which trusts the issuing CA, and deploy it to devices by using the Trusted CA certificate profile.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
+|**Trusted Root CA certificate**|You export this as a **.cer** file from the root CA or any device which trusts the root CA, and deploy it to devices by using the Trusted CA certificate profile.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
 
 ### <a name="BKMK_Accounts"></a>Accounts
 

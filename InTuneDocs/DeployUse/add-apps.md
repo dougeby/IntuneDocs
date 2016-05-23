@@ -29,11 +29,11 @@ ms.suite: ems
 Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. These will help you to understand which apps you can deploy to which platform, and to understand the prerequisites that must be in place before you do so.
 
 ## App types you can deploy with Intune
-You can deploy apps to all device types that are supported by Intune. Depending on the type of app you want to deploy, the process and supported devices will differ. Use the following table to help you understand what you can, and cannot deploy:
+You can deploy apps to all device types that are supported by Intune. Depending on the type of app you want to deploy, the process and supported devices will differ. Use the following information to help you understand what you can, and cannot deploy:
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**
-- This type of app must support silent installation with no user input. Your app documentation should include the relevant command-line options to silently install the app (for example, **/q**).
+- This type of app must support silent installation with no user input. Your app documentation should include the relevant command-line options to silently install the app (for example, **/q**). A list of common command-line options can be found [here](https://support.microsoft.com/en-us/kb/227091).
 - Any additional files and folders that are required by the app’s setup program must be available from the location that you specify for the app setup files.
 - In most cases, Windows Installer (.msi) and Windows Installer Patch (.msp) files do not require any command-line arguments to be installed by Intune. Check your app documentation. If command-line arguments are required, they must be entered as Name=Value pairs (such as TRANSFORMS=custom_transform.mst).
 
@@ -49,7 +49,7 @@ This type of app is uploaded to your cloud storage space.
 
 This type of app is uploaded to your cloud storage space.
 
-Currently, end users cannot install corporate apps from the Intune Company Portal app for iOS. This is due to restrictions placed on apps that are published in the iOS App Store (see [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)). Users can access corporate apps (including managed App Store apps and line-of-business app packages) by launching the Company Portal app on their device and tapping the Company Apps tile, which will open the browser and redirect them to the Intune Web Portal.
+Currently, end users cannot install corporate apps directly from the Intune Company Portal app for iOS. This is due to restrictions placed on apps that are published in the iOS App Store (see [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)). Users can access corporate apps (including managed App Store apps and line-of-business app packages) by launching the Company Portal app on their device and tapping the Company Apps tile, which will open the browser and redirect them to the Intune Web Portal.
 
 ### **Windows Phone app package (&#42;.xap, .appx, .appxbundle)**
 - To deploy apps, you'll need an enterprise mobile code-signing certificate. For details, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).

@@ -30,7 +30,7 @@
 
 ### [Manage settings and features on your devices with policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS settings](ios-policy-settings-in-microsoft-intune.md)
-#### [Android settings](android-policy-settings-in-microsoft-intune.md)
+#### [Android and Samsung KNOX settings](android-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 and Windows 8.1 settings](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1 settings](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Windows 10 desktop and mobile settings](windows-10-policy-settings-in-microsoft-intune.md)

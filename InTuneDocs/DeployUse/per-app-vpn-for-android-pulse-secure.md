@@ -51,15 +51,18 @@ Take note of the VPN profile name for use in the next step.	For example, **MyApp
    7.	In **Value**, provide a semicolon-separated list of packages that should be associated with the profile.  For example, if you want Excel and the Google Chrome browser to use the VPN connection, then you would enter: **com.microsoft.office.excel;com.android.chrome**.
   
 
-   ![Example Android per-app VPN custom policy](./media/android_per_app_vpn_oma_uri.png) 
-#### Set your app list as Whitelist or Blacklist (optional)
-You can specify that your list of applications will *not* be allowed to use the VPN connection.  All other apps will connect through VPN.
+   ![Example Android per-app VPN custom policy](..\media\android_per_app_vpn_oma_uri.png) 
+#### Set your app list as Blacklist or Whitelist (optional)
+You can specify that your list of apps will *not* be allowed to use the VPN connection, by using the **BLACKLIST** value.  All other apps will connect through VPN.
+
+Alternatively, you can specify that *only* the specified apps will be able to use the VPN connection, by using the **WHITELIST** value.
+ 
 
 1.	Under OMA-URI settings, click **Add**.
 2.	Provide a setting name.
 3.	For **Data type** specify **String**.
 4.	For **OMA-URI** specify this string: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**, where *Name* is the VPN profile name you noted in Step 1. In our example, the string would be **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
-5.	In Value, enter **BLACKLIST**. 
+5.	In **Value**, enter **BLACKLIST** or **WHITELIST**. 
 
 
    
