@@ -67,7 +67,7 @@ The following table shows enrollment methods for corporate-owned device enrollme
 **Enrollment methods for corporate-owned devices**
 
 ### BYOD
-“Bring Your Own Device.” Users install the Company Portal app and enroll their device. Enrolling a device with the Company Portal will work place join the device. Enrolling iOS devices with the Company Portal requires an Apple ID. BYOD does not require additional configuration for corporate-owned devises. See steps to [set up device management](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md).
+“Bring Your Own Device.” Users install the Company Portal app and enroll their device. Enrolling a device with the Company Portal will work place join the device. Enrolling iOS devices with the Company Portal requires an Apple ID. BYOD does not require additional configuration for corporate-owned devises. See steps to [set up device management](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md). ([Back to the table](#overview-of corporate-owned-device-enrollment-methods))
 
 ### DEM
 Device enrollment manager. Admin creates DEM accounts. Managers can then install the Company Portal and enroll many user-less devices. Learn more about [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Back to the table](#overview-of corporate-owned-device-enrollment-methods))
@@ -105,7 +105,7 @@ Specifies whether the enrollment method supports “User Affinity” which conne
   -	Conditional access to email and company data
   -	Company Portal app
 
-([Back to the table](#overview-of corporate-owned-device-enrollment-methods)) ([Back to the table](#overview-of corporate-owned-device-enrollment-methods))
+([Back to the table](#overview-of corporate-owned-device-enrollment-methods))
 
 ### Lock
 Specifies whether the device can be locked to prevent the user from removing the Intune policy, effectively removing the device from management. For iOS devices, locking the device requires that it be in Supervised mode.
