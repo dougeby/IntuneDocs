@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Set up device management for Windows Phone 8.0
 
-Windows Phone 8.0 requires a Symantec certificate to install the Intune Company Portal app and allow device management. A certificate is also required to sign line-of-business apps. The following topic is only for Windows Phone 8.0. To manage Windows Phone 8.1 or later, including Windows 10 Mobile, see [Set up Windows Phone enrollment](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
+Windows Phone 8.0 requires a Symantec certificate to install the Intune Company Portal app and allow device management. A certificate is also required to sign line-of-business apps. The following topic is only for Windows Phone 8.0. To manage Windows Phone 8.1 or later, including Windows 10 Mobile, see [Set up Windows Phone enrollment](set-up-windows-phone-management-with-microsoft-intune.md).
 
 -   **Windows Phone 8** - Certificate required
 -   **Windows Phone 8.1 and Windows 10 Mobile** require a certificate only if:
@@ -46,7 +46,7 @@ Setup requirements for Window Phone mobile device management depend upon how you
 
 ## Configure setup requirements to enable Windows Phone management
 1.  **Set up Intune**
-    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](https://technet.microsoft.com/library/mt346013.aspx) as **Microsoft Intune** and setting up MDM.
+    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
 
 2.  **Set a DNS alias for the enrollment server address** (optional)
 
@@ -61,12 +61,12 @@ Setup requirements for Window Phone mobile device management depend upon how you
         |Host Hame|Points to|TTL|
         |-------------|-------------|-------|
         |enterpriseenrollment.company_domain.com|enterpriseenrollment.manage.microsoft.com |1 Hour|
-        |enterpriseregistration.company_domain.com|enterpriseregistration.windows.net|1 Hour|
+        |enterpriseregistration.company_domain.com|enterpriseregistration-s.windows.net|1 Hour|
         For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com. If there is more than one verified domain, create a CNAME record for each domain.
 
         -   `manage.microsoft.com` – Supports a redirect to the Intune service with domain recognition from the email’s domain name
 
-        -   `enterpriseregistration.windows.net` – Supports workplace join for mobile devices. It also supports conditional access for Windows 8.1
+        -   `enterpriseregistration-s.windows.net` – Supports workplace join for mobile devices. It also supports conditional access for Windows 8.1
 
     ![Windows Phone Mobile Device Management Settings dialog box](../media/windows-phone-enrollment.png)
 
