@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Set up iOS and Mac device management
-With Microsoft Intune, you can enable BYOD ("bring your own device") for iOS and Mac OS X device enrollment to give access to company email and apps to iPhone, iPad and Mac users. Once enrolled, users can install the Intune Company Portal app and their devices can be targeted with policy using the Intune administration console.
+With Microsoft Intune, you can enable BYOD ("bring your own device") for iOS and Mac OS X device enrollment to give access to company email and apps to iPhone, iPad and Mac users. Once enabled, users can install the Intune Company Portal app and their devices can be targeted with policy using the Intune administration console.
 
 Before you can manage iOS devices with Intune, the devices must be able to communicate with Intune. Apple requires a trust relationship with Intune established by importing an Apple Push Notification service (APNs) certificate.
 
