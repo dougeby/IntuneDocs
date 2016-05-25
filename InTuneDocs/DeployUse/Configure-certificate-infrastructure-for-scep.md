@@ -341,7 +341,7 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 
     You can now close the Certificate Connector UI.
 
-6.  Open a command prompt and type **services.msc**, and then press **Enter**, right-click the **Certificate Connector Service**, and then click **Restart**.
+6.  Open a command prompt and type **services.msc**, and then press **Enter**, right-click the **Intune Connector Service**, and then click **Restart**.
 
 To validate that the service is running, open a browser and enter the following URL, which should return a **403** error:
 
