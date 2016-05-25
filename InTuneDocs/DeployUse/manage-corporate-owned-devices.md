@@ -110,4 +110,3 @@ Specifies whether the enrollment method supports “User Affinity” which conne
 ### Lock
 Specifies whether the device can be locked to prevent the user from removing the Intune policy, effectively removing the device from management. For iOS devices, locking the device requires that it be in Supervised mode.
 ([Back to the table](#overview-of corporate-owned-device-enrollment-methods)) ([Back to the table](#overview-of corporate-owned-device-enrollment-methods))
-\
