@@ -42,6 +42,7 @@ The information in this section will help you with Intune Company Portal install
 The information in this section will help you with actions you can take after your Windows device is enrolled in Intune.
 
 - [Encrypt your device](encrypt-your-device-windows.md)</br>
+- [Set or change your password](set-or-change-your-password-windows.md)</br>
 - [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-windows.md)</br>
 - [Unenroll your device from Intune](unenroll-your-device-from-intune-windows.md)</br>
 - [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>

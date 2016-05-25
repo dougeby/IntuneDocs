@@ -43,6 +43,7 @@ The information in this section will help you with Intune Company Portal install
 The information in this section will help you with actions you can take after your iOS device is enrolled in Intune.
 
 - [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)</br>
+- [Set or change your passcode](set-or-change-your-passcode-ios.md)</br>
 - [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md)</br>
 - [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-ios.md)</br>
 - [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md)</br>
