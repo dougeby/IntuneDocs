@@ -42,6 +42,6 @@ If you have trouble figuring out how to make your password comply with the requi
 
 For information about setting your PIN or password, or for other tasks that you can do with your device, use the link that matches the type of device you have:
 
-- [Using your Android device with Intune](using-your-android-device-with-intune.md)</br>
-- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
-- [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
+- [Set your PIN or password](set-your-pin-or-password-android.md)</br>
+- [Set or change your passcode](set-or-change-your-passcode-ios.md)</br>
+- - [Set or change your password](set-or-change-your-password-windows.md)

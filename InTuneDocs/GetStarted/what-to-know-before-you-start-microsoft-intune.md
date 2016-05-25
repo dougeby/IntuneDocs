@@ -26,11 +26,22 @@ ms.suite: ems
 ---
 
 # What to know before you start Microsoft Intune
+
 ## General device and app management capabilities
-Before you start setting up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], you should first review the [Introduction to Intune](/intune/understand-explore/introduction-to-microsoft-intune) and become familiar with the capabilities of [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] described in this section. After you are familiar with the capabilities of Intune, you should be ready to set up your paid subscription. If you started with a trial subscription, you can convert it later to a full subscription. See [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
+Before you start setting up Microsoft Intune, you should first review the [Introduction to Intune](/intune/understand-explore/introduction-to-microsoft-intune) and become familiar with the capabilities of Intune described in this section. After you are familiar with the capabilities of Intune, you should be ready to set up your paid subscription. If you started with a trial subscription, you can convert it later to a full subscription. See [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
 
 ### Manage mobile devices and computers with no server or intranet requirements
-You can manage mobile devices and computers, even if those devices are not joined to a domain or brought onsite. This makes [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ideal for a company with a mobile or geographically distributed workforce.
+You can manage the following mobile devices and computers:
+
+-	Apple iOS 7.1 and later
+-	Google Android 4.0 and later (including Samsung KNOX)
+-	Windows Phone 8.0 and later
+-	Windows RT and Windows 8.1 RT
+-	PCs running Windows 8.1
+-	PCs running Windows 10 (Home, Pro, Education, and Enterprise versions)
+-	Mac OS X 10.9 and later
+
+You can manage these devices and PCs, even if they are not joined to a domain or brought onsite. This capability makes Intune ideal for a company with a mobile or geographically distributed workforce. See [Choose how to manage devices](/Intune/Deploy-use/choose-how-to-manage-devices) for more about managing devices.
 
 ### Require encryption of mobile devices and computers
 Mobile devices that support encryption can be required to use it. You can also require computers that support BitLocker drive encryption to use it. If a mobile device or computer with encryption is lost or stolen, the data on the device’s storage media is unreadable, helping to secure that data from theft.
@@ -45,10 +56,10 @@ You can create alerts to notify you when there is a problem with a mobile device
 Users can use the Company Portal to enroll devices, to install site-licensed software, or to find contact information for IT administrators.
 
 ### Support multi-factor authentication
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] supports multi-factor authentication (MFA). For details, see [Protect Windows devices with multi-factor authentication](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication).
+Intune supports multi-factor authentication (MFA). For details, see [Protect Windows devices with multi-factor authentication](/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication).
 
 ### Available in multiple languages
-Intune is available in the following languages: Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish. For a list of the countries where the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] service is supported, see [International availability](https://products.office.com/en-us/business/international-availability).
+Intune is available in the following languages: Chinese (Simplified and Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish. For a list of the countries where the Intune service is supported, see [International availability](https://products.office.com/en-us/business/international-availability).
 
 ## Additional requirements and capabilities   
 In addition to these general capabilities, you should also familiarize yourself with the following capabilities:
