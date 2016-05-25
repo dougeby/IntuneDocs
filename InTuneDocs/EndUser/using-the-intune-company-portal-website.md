@@ -52,4 +52,4 @@ You can do most of the same tasks on the **Company Portal website** that you can
 
 - [Using your Android device with Intune](using-your-android-device-with-intune.md)
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Using your Android device with Intune](using-your-windows-device-with-intune.md)
+- [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
