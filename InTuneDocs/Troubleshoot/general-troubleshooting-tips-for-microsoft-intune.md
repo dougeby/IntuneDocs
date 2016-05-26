@@ -6,7 +6,7 @@ description:
 keywords:
 author: nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.suite: ems
 After you deploy Microsoft Intune you may encounter problems with your configuration or with clients. The resources below may help you find out what could be causing the problem so that you can resolve it.
 
 > [!NOTE]
-> To create a support request, or to view an existing request,  click [here](https://portal.office.com/admin/default.aspx) to visit the Office 365 admin center. For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+> To create a support request, or to view an existing request, [visit the Office 365 admin center](https://portal.office.com/admin/default.aspx). For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 ## Define the problem
 
 -   What is the behavior?
@@ -66,7 +66,7 @@ After you deploy Microsoft Intune you may encounter problems with your configura
 
 -   You can open a support request. Intune Support will be better able to help you resolve an issue when you've defined the problem and have collected the available data.
 
-    To create a support request click [here](https://portal.office.com/admin/default.aspx) to visit the Office 365 admin center. For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+    To create a support request [visit the Office 365 admin center](https://portal.office.com/admin/default.aspx). For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 ## Community resources
 You can find other helpful information in these community resources:
@@ -79,7 +79,7 @@ You can find other helpful information in these community resources:
 
 -   [The Intune forums](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-## Next steps
+### Next steps
 The topics listed below have troubleshooting help for specific issues. If that information doesn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
@@ -95,4 +95,3 @@ The topics listed below have troubleshooting help for specific issues. If that i
 [Troubleshoot client setup in Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-g
