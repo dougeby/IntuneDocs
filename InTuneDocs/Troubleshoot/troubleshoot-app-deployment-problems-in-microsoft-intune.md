@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ If this information does not solve your problem, see [How to get support for Mic
 
 ### If the Contact IT information is missing in the company portal
 
-1.  In the Intune admin console, click **Admin** &gt; **Company Portal**.
+1.  In the Intune admin console, choose **Admin** &gt; **Company Portal**.
 
 2.  Set the **Contact IT** details.
 
@@ -63,7 +63,7 @@ If this information does not solve your problem, see [How to get support for Mic
 
 4.  If the iOS app download progress bar is complete but the app installation fails, something might be wrong with the app files that you provided.
 
-### If clicking a link to an iOS app takes you to a previous location in the iTunes App Store
+### If an iOS app link takes you to a previous location in the iTunes App Store
 
 1.  The current iTunes App Store session is opening to the previous app page.
 

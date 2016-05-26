@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ This occurs when the option **Allow e-mail to be sent from third-party applicati
 
 1.  Open the Microsoft Intune Administration Console, select **Policy** workload &gt; **Configuration Policy**.
 
-2.  Select the email profile and click **Edit**.
+2.  Select the email profile and choose **Edit**.
 
 3.  Select **Allow e-mail to be sent from third-party applications.**
 

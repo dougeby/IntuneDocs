@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up iOS and Mac management with Microsoft Intune | Microsoft Intune
+title: Set up iOS and Mac management | Microsoft Intune
 description:
 keywords:
 author: NathBarn
