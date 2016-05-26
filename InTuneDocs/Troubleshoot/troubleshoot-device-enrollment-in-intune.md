@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,11 +56,11 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 ### To delete devices in the Azure Active Directory portal
 
-1.  Browse to [http://aka.ms/accessaad](http://aka.ms/accessaad) or click **Admin** &gt; **Azure AD** from [https://portal.office.com](https://portal.office.com).
+1.  Browse to [http://aka.ms/accessaad](http://aka.ms/accessaad) or choose **Admin** &gt; **Azure AD** from [https://portal.office.com](https://portal.office.com).
 
 2.  Login with your Org ID using the link on the left side of the page.
 
-3.  Create an Azure Subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (click the **Register your free Azure Active Directory** subscription link).
+3.  Create an Azure Subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).
 
 4.  Select **Active Directory** and then select your organization.
 
@@ -68,7 +68,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 6.  Select the user whose devices you want to delete.
 
-7.  Click **Devices**.
+7.  Choose **Devices**.
 
 8.  Remove devices as appropriate, such as those that are no longer in use, or those that have inaccurate definitions.
 
@@ -135,7 +135,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 
     3.  Open the databases folder and find and open the **CM_DBName** folder, where DBName is the name of the customer database.
 
-    4.  At the top, click New Query  and execute the following queries:
+    4.  At the top, choose **New Query**  and execute the following queries:
 
         -   To see all users:
             `select * from [CM_ DBName].[dbo].[User_DISC]`
@@ -143,7 +143,7 @@ Administrators can delete devices in the Azure Active Directory portal.
         -   To see Specific Users, use the following query, where %testuser1% represents username@domain.com for the user you want to look up:
             `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        After writing the query click **!Execute**.
+        After writing the query choose **!Execute**.
         Once the results have been returned, look for the clouduser ID.  If no ID is found, the user isn't licensed to use Intune.
 
 ## Mobile devices disappear when using System Center Configuration Manager with Intune
@@ -175,7 +175,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 **Resolution:** Perform the following steps:
 
 1. Disable iOS inside of the Windows Intune Connector. 
-	1. Right click the Intune subscription and select "Properties".
+	1. Right-click the Intune subscription and select **Properties**.
 	1. On the "iOS" tab, uncheck "Enable iOS Enrollment".
 
 
