@@ -95,4 +95,3 @@ The topics listed below have troubleshooting help for specific issues. If that i
 [Troubleshoot client setup in Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-g
