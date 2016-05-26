@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ Use the following information to help you troubleshoot common client setup probl
 
 -   Intune displays the critical alert **Client Software Deployment Failure** if the client software fails to deploy. This will display in the **System Overview** page and **Alerts** pages of the [Microsoft Intune administration console](https://manage.microsoft.com/). Here's how to check for alerts:
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Alerts** &gt; **Overview**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Alerts** &gt; **Overview**.
 
 2.  On the **Alerts overview** page, you can review the following information:
 
@@ -44,7 +44,7 @@ Use the following information to help you troubleshoot common client setup probl
 
     -   The total number of active alerts
 
-3.  Click **All Alerts** to display the following information on the **Alerts** page. Critical alerts are displayed first:
+3.  Choose **All Alerts** to display the following information on the **Alerts** page. Critical alerts are displayed first:
 
     -   **Name** – The name of the alert type that generated the alert.
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -63,9 +63,9 @@ Be aware that policies are refreshed and updated on regular intervals. In genera
 
 -   **Windows Phone**: Policy is updated every 8 hours. This can be forced by a refresh in the Company Portal, under **Settings**.
 
--   **iOS**: Policy is updated once a day at a random time interval. This can also be forced by opening the Company Portal , selecting the device, and clicking **Sync**.
+-   **iOS**: Policy is updated once a day at a random time interval. This can also be forced by opening the Company Portal , selecting the device, and choosing **Sync**.
 
--   **Android**: Policy is updated once a day at a random time interval. This can also be forced by opening the Company Portal , selecting the device, and clicking **Sync**.
+-   **Android**: Policy is updated once a day at a random time interval. This can also be forced by opening the Company Portal , selecting the device, and choosing **Sync**.
 
 ## Microsoft Intune policy-related errors in policyplatform.log
 For non-MDM Windows devices, policy errors in the policyplatform.log file may be the result of non-default settings in the Windows User Account Control (UAC) on the device. Some non-default UAC settings can affect Microsoft Intune client installations and policy execution.
@@ -102,8 +102,8 @@ To resolve this issue, set the local system time as close as possible to Interne
 Windows Phone and Windows RT devices do not allow security policies set via MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4. The more restrictive policy has already been applied to the device.
 
 Depending on the device platform, if you want to change the policy  to a less secure value you may need to reset security policies.
-For example, in Windows RT,  on the desktop swipe in from right to open the **Charms** bar and click  **Settings** &gt; **Control Panel**.  Select the **User Accounts** applet.
-In the left hand navigation menu, there is a **Reset Security Policies** link at the bottom. Click  it and then click the **Reset Policies** button.
+For example, in Windows RT,  on the desktop swipe in from right to open the **Charms** bar and choose  **Settings** &gt; **Control Panel**.  Select the **User Accounts** applet.
+In the left hand navigation menu, there is a **Reset Security Policies** link at the bottom. Choose it and then choose the **Reset Policies** button.
 Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired and re-enrolled back into the service for you to be able to apply a  less restrictive policy.
 
 ## Android devices do not force Security Policy Changes without end user Acceptance

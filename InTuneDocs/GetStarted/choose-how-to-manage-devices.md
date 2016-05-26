@@ -31,7 +31,7 @@ ms.suite: ems
 ## Ways to manage mobile devices
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] can manage the following device platforms:
 
-[!INCLUDE[wit_nextref](../includes/mdm-supported-devices.md)]
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 <div class="alert alert-tip">
   <h5><span class="icon-tip"></span> Tip</h5>
