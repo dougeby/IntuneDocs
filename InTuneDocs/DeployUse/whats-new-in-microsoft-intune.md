@@ -1,6 +1,8 @@
 ---
 # required metadata
 
+experiment_id: lindavr-abtest-20160527
+experimental: true
 title: What's new | Microsoft Intune
 description:
 keywords:
