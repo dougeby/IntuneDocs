@@ -58,7 +58,7 @@ Setup requirements for Window Phone mobile device management depend upon how you
 
     3.  Create **CNAME** DNS resource records for your company’s domain. The CNAME resource records must contain the following information:
 
-        |Host Hame|Points to|TTL|
+        |Host Name|Points to|TTL|
         |-------------|-------------|-------|
         |enterpriseenrollment.company_domain.com|enterpriseenrollment-s.manage.microsoft.com |1 Hour|
         |enterpriseregistration.company_domain.com|enterpriseregistration.windows.net|1 Hour|
