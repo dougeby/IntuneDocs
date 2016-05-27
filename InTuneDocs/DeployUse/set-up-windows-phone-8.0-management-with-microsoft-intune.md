@@ -60,13 +60,13 @@ Setup requirements for Window Phone mobile device management depend upon how you
 
         |Host Hame|Points to|TTL|
         |-------------|-------------|-------|
-        |enterpriseenrollment.company_domain.com|enterpriseenrollment.manage.microsoft.com |1 Hour|
-        |enterpriseregistration.company_domain.com|enterpriseregistration-s.windows.net|1 Hour|
+        |enterpriseenrollment.company_domain.com|enterpriseenrollment-s.manage.microsoft.com |1 Hour|
+        |enterpriseregistration.company_domain.com|enterpriseregistration.windows.net|1 Hour|
         For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com. If there is more than one verified domain, create a CNAME record for each domain.
 
-        -   `manage.microsoft.com` – Supports a redirect to the Intune service with domain recognition from the email’s domain name
+        -   `enterpriseenrollment-s.manage.microsoft.com` – Supports a redirect to the Intune service with domain recognition from the email’s domain name
 
-        -   `enterpriseregistration-s.windows.net` – Supports workplace join for mobile devices. It also supports conditional access for Windows 8.1
+        -   `enterpriseregistration.windows.net` – Supports workplace join for mobile devices. It also supports conditional access for Windows 8.1
 
     ![Windows Phone Mobile Device Management Settings dialog box](../media/windows-phone-enrollment.png)
 
