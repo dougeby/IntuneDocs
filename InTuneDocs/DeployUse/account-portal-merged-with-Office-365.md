@@ -35,4 +35,4 @@ Depending on how you purchased, you will access software downloads at either the
 
 Be sure to update your bookmarks.
 
-Read more about the move in our [Microsoft Intune blog](https://blogs.technet.microsoft.com/microsoftintune/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal/) or go directly to the new [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) at https://portal.office.com/Admin/Default.asp with your existing credentials.
+Read more about the move in our [Microsoft Intune blog](https://blogs.technet.microsoft.com/microsoftintune/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal/) or go directly to the new [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) at https://portal.office.com/Admin/Default.aspx with your existing credentials.

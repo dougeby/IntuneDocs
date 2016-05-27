@@ -65,6 +65,8 @@ When you deploy apps, you can choose from one of the following deployment action
     > For iOS devices that are not in supervised mode, and for all Android devices, the user must accept the app offer before it is installed.
     >
     > You can no longer create new app deployments to iOS devices running an operating system earlier than iOS 7.1. Any existing app deployments to devices running an earlier operating system than iOS 7.1 will continue to work and be managed by Intune.
+    > 
+	>  If an end user uninstalls an app that you deployed as a required install, Intune will automatically reinstall the app after the next inventory cycle, which typically occurs every 7 days.
 
 -   **Available install** – The app is displayed in the company portal, and end-users can install it on-demand.
 
