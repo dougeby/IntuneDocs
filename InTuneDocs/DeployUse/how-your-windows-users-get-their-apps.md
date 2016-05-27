@@ -32,7 +32,7 @@ Use this information to understand how and where your end users get the apps tha
 
 **Required apps** - Apps that are required by the administrator and that are installed on the device with minimal user involvement, depending on the platform.
 
-**Required apps** - Apps that are provided in the Company Portal app list and that a user may optionally choose to install.
+**Available apps** - Apps that are provided in the Company Portal app list and that a user may optionally choose to install.
 
 **Managed apps** - Apps that can be managed through policies and that have been "wrapped" by Intune or have been built with the Intune Mobile Application Management (MAM) Software Development Kit (SDK). These apps can be managed by Intune, and application policies can be applied to them.
 
