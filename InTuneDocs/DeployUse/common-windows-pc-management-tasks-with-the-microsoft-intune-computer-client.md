@@ -88,7 +88,7 @@ Intune collects detailed information about the hardware and software of managed 
 
 3.  Choose **View Report** to open the **Detected Software Report** in a new window.
 
-    You can sort the report by any of the columns, like **Name**, **Publisher** or **Category** by selecting each column heading. You can expand the updates in the list to show more detail (such as the computers on which it is installed) by clicking the directional arrow next to the list item.
+    You can sort the report by any of the columns, like **Name**, **Publisher** or **Category** by selecting each column heading. You can expand the updates in the list to show more detail (such as the computers on which it is installed) by choosing the directional arrow next to the list item.
 
 ### To refresh computer inventory to ensure it is current
 
@@ -159,7 +159,7 @@ Before you can deploy software to a user, you must link the user to a computer. 
 
     -   To leave the computer linked to its current user, if there is one, choose **Cancel**.
 
-    -   To remove the link to the current user, if there is one, choose **Remove link**&gt;**OK**.
+    -   To remove the link to the current user, if there is one, choose **Remove link **&gt; **OK**.
 
     -   To link the computer to a new user, in the **All users** list, select a user. Confirm that the user data is correct, and then choose **OK**.
 
@@ -167,6 +167,10 @@ Before you can deploy software to a user, you must link the user to a computer. 
 > If you want to restrict end users ability to link themselves to computers, enable the option **Restrict users' ability to link themselves to computers** in the **Microsoft Intune Agent Settings** policy.
 
 ## Request and provide remote assistance to Windows PCs that use the Intune client software
+
+> [!IMPORTANT]
+> You might not see the options to configure TeamViewer integration for remote assistance in the Intune admin console. This capability is not currently available to all customers, but will be rolling our more widely soon.
+     
 
 Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software to let users of PCs that run the Intune client software get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
 This functionality replaces the existing Windows Remote Assistance functionality in Intune.
@@ -182,10 +186,10 @@ Before you can begin to establish and respond to remote assistance requests, you
 
 ### Configure the TeamViewer Connector
 
-1. In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Admin**.
-2. In the **Admin** workspace, click **TeamViewer**.
-3. On the **TeamViewer** page, under **TeamViewer Connector**, click **Enable**.
-4. In the **Enable TeamViewer** dialog box, view, then **Accept** the license terms. If you don't already own a TeamViewer license, click **Purchase a TeamViewer license**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
+2. In the **Admin** workspace, choose **TeamViewer**.
+3. On the **TeamViewer** page, under **TeamViewer Connector**, choose **Enable**.
+4. In the **Enable TeamViewer** dialog box, view, then **Accept** the license terms. If you don't already own a TeamViewer license, choose **Purchase a TeamViewer license**.
 5. After the TeamViewer browser window opens, sign into the site with your TeamViewer credentials.
 6. On the TeamViewer site, read, then accept the options to allow Intune to connect with TeamViewer.
 7. In the Intune console, verify that the **TeamViewer Connector** item shows as **Enabled**.
@@ -194,7 +198,7 @@ Before you can begin to establish and respond to remote assistance requests, you
 ### Open a remote assistance request (end user)
 
 1. On a client Windows PC, open the **Microsoft Intune Center**.
-2. Under **Remote Assistance**, click **Request Remote Assistance**.
+2. Under **Remote Assistance**, choose **Request Remote Assistance**.
 3. After you approve the request (see below), TeamViewer opens on the client. The user must accept any messages indicating that the web browser is trying to open the TeamViewer application.
 4. The user sees a message asking if you can control their PC. They must accept this message to continue.
 5. During the remote assistance session, the user sees a window that shows them you are connected. If they close this window, the remote session ends.
@@ -205,12 +209,12 @@ Before you can begin to establish and respond to remote assistance requests, you
 > ![Screenshot of a remote assistance request](./media/team-viewer.png)
 
 <br>If a request goes unanswered for more than 4 hours, it is removed.
-2. To accept the request, click **Approve request and launch Remote Assistance**.
-3. In the **A New Remote Assistance Request is Pending** dialog box, click **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
+2. To accept the request, choose **Approve request and launch Remote Assistance**.
+3. In the **A New Remote Assistance Request is Pending** dialog box, choose **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
 4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC. 
  
 While in a remote assistance session, you can use all available TeamViewer commands to control the remote PC. For help with these commands, download the [Manual for remote control](http://www.teamviewer.com/en/support/documents/) from the TeamViewer website.
 
 ### Close the remote assistance session
 
-From the **Actions** menu of the **TeamViewer** window, click **End Session**.
+From the **Actions** menu of the **TeamViewer** window, choose **End Session**.
