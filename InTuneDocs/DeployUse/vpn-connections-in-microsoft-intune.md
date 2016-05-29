@@ -84,7 +84,7 @@ The user authenticates to the VPN server by providing their username and passwor
 
 ## Create a VPN profile
 
-1. In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy > Add Policy**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy > Add Policy**.
 2. Select a template for the new policy by expanding the relevant device type, then choose the VPN profile for that device:
 	* **VPN Profile (Android 4 and later)**
 	* **VPN Profile (iOS 7.1 and later)**
@@ -105,7 +105,7 @@ Setting name  |More information
 **Connection type**     |  Select one of the following connection types to use in the VPN profile: **Cisco AnyConnect** (not available for Windows 8.1 or Windows Phone 8.1), **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**
 **VPN server description**     | Specify a description for the VPN server that devices will connect to. **Example:** Contoso VPN Server. When the connection type is **F5 Edge Client**, use the **Server list** field to specify a list of server descriptions and IP addresses.
 **Server IP address or FQDN**    |Provide the IP address or fully qualified domain name of the VPN server that devices will connect to. **Examples:** 192.168.1.1, vpn.contoso.com.  When the connection type is **F5 Edge Client**, use the **Server list** field to specify a list of server descriptions and IP addresses.         |         
-**Server list**     |Click **Add** to add a new VPN server to use for the VPN connection. You can also specify which server is to be the default server for the connection. This option is displayed only when the connection type is **F5 Edge Client**.         
+**Server list**     |Choose **Add** to add a new VPN server to use for the VPN connection. You can also specify which server is to be the default server for the connection. This option is displayed only when the connection type is **F5 Edge Client**.         
 **Send all network traffic through the VPN connection**     |If you select this option, all network traffic is sent through the VPN connection. If you do not select this option, the client will dynamically negotiate the routes for split tunneling upon connecting to the 3rd party VPN server. Only connections to the company network are sent over a VPN tunnel. VPN tunneling is not used when you connect to resources on the Internet.
 **Authentication method**| Select the authentication method used by the VPN connection: **Certificates** or **Username and Password**. (Username and Password is not available when the connection type is Cisco AnyConnect.) The **Authentication method** option is not available for Windows 8.1.
 **Remember the user credentials at each logon**|Select this option to ensure that the user credentials are remembered so that the user does not have to enter credentials each time a connection is established.
@@ -113,7 +113,7 @@ Setting name  |More information
 **Role**| Specify the name of the user role that has access to this connection. A user role defines personal settings, options, and enables or disables certain access features. This option is displayed only when the connection type is **Pulse Secure**.
 **Realm**|Specify the name of the authentication realm that you want to use. An authentication realm is a grouping of authentication resources that is used by the Pulse Secure connection type. This option is displayed only when the connection type is **Pulse Secure**.
 **Login group or domain**|Specify the name of the login group or domain that you want to connect to. This option is displayed only when the connection type is **Dell SonicWALL Mobile Connect**.
-**Fingerprint**|Specify a string, for example "Contoso Fingerprint Code" that will be used to verify the VPN server can be trusted. A fingerprint can be: Sent to the client so it knows to trust any server presenting that same fingerprint when connecting. If the device doesn’t already have the fingerprint it will prompt the user to trust the VPN server they are connecting to while showing the fingerprint (the user manually verifies the fingerprint and clicks **trust** to connect). This option is displayed only when the connection type is **CheckPoint Mobile VPN**.
+**Fingerprint**|Specify a string, for example "Contoso Fingerprint Code" that will be used to verify the VPN server can be trusted. A fingerprint can be: Sent to the client so it knows to trust any server presenting that same fingerprint when connecting. If the device doesn’t already have the fingerprint it will prompt the user to trust the VPN server they are connecting to while showing the fingerprint (the user manually verifies the fingerprint and chooses **trust** to connect). This option is displayed only when the connection type is **CheckPoint Mobile VPN**.
 **Per App VPN**|Select this option if you want to associate this VPN connection with an iOS of Mac OS X app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you deploy the software. For more information, see [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 **Automatically detect proxy settings** (iOS, Mac OS X, Windows 8.1 and Windows Phone 8.1 only)|If your VPN server requires a proxy server for the connection, specify whether you would like devices to automatically detect the connection settings. For more information, see your Windows Server documentation.
 **Use automatic configuration script** (iOS, Mac OS X, Windows 8.1 and Windows Phone 8.1 only)|If your VPN server requires a proxy server for the connection, specify whether you would like to use an automatic configuration script to define the settings and then specify a URL to the file containing the settings. For more information, see your Windows Server documentation.
@@ -146,13 +146,13 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 
 ## Deploy the policy
 
-1.  In the **Policy** workspace, select the policy you want to deploy, then click **Manage Deployment**.
+1.  In the **Policy** workspace, select the policy you want to deploy, then choose **Manage Deployment**.
 
 2.  In the **Manage Deployment** dialog box:
 
-    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then click **Add** &gt; **OK**.
+    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then choose **Add** &gt; **OK**.
 
-    -   **To close the dialog box without deploying it** - Click **Cancel**.
+    -   **To close the dialog box without deploying it** - Choose **Cancel**.
 
 
 After successful deployment, users will see the VPN connection name you specified in the list of VPN connections on their device.
