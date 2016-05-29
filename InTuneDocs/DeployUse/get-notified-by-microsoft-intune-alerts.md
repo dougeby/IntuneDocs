@@ -36,7 +36,6 @@ For example, alerts can notify you about the following events:
 
 -   A conflict between two Intune policies was detected
 
--   The latest updates and information about the Intune service (notices).
 
 ## How alerts work
 Alerts are generated based on **alert types**, a set of preconfigured rules built into Intune. For example, the alert type **Cloud storage has 10% or less free space** alerts you when you are running out of space to store your apps in the cloud. You can enable or disable, and configure properties for each alert type. For example, using the above alert type, you can configure:
