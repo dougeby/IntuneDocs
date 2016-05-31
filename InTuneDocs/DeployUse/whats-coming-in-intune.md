@@ -41,17 +41,6 @@ We will begin using the Message Center with our May release to notify you when u
 ## App management
 - **New apps available for management with MAM policies.** The Microsoft Word, Excel, and PowerPoint apps for Android can now be associated with MAM policies on devices that are not enrolled with Intune. For a full list of supported apps, go the Microsoft Intune mobile application gallery on the [Microsoft Intune application partners page](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
-<!--- New feature:
-**Rights Management app for Android**
-We just released the new Rights Management app for Android (RMS sharing). This new app allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. The RMS sharing app has added support for Intune mobile application management (MAM), as well as support for viewing audio video (AV), image, and PDF files protected by Intune. All files and formats supported by the Intune Viewer apps are fully supported by the RMS sharing app when used with Intune management. You can now deploy the RMS sharing app with Intune MAM policy so you can view images, AV, and PDF files using just a single app, through both Intune MDM and Intune MAM without device enrollment.
-
-With the release of the new RMS sharing app, we are removing the following Intune Viewer apps, beginning August, 2016: 
-- Intune AV Viewer
-- Intune PDF Viewer
-- Intune Image Viewer for Android from Google Play
-- Intune administrators will no longer be able to deploy the Intune Viewer apps on Android devices when this change is implemented. 
-
-Instead of using the Intune Viewer apps, we recommend using the new Rights Management app (RMS sharing) for Android, which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices.  --->
 
 - **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
 <!---TFS 1175844--->
@@ -112,6 +101,12 @@ The preliminary timeline for this change is as follows:
 **Changes in support for the iOS Company Portal app.**
 In the coming months, there will be an update for the Microsoft Intune Company Portal app for iOS that will only support devices running iOS 8.0 or later. Users won’t be able to enroll new devices running versions below iOS 8.0. Enrolled devices running versions below iOS 8.0 will continue to be managed and will, for a limited time, be able to continue using the Company Portal app. However, devices must be on iOS 8.0 or later to access the latest versions of the Company Portal app. We encourage you to notify users to update to iOS 8.0 or later to take full advantage of new Intune features.  
 
+- **Intune Viewer apps.** With the release of the new RMS sharing app, we are removing the following Intune Viewer apps, beginning August, 2016:
+	- Intune AV Viewer
+	- Intune PDF Viewer
+	- Intune Image Viewer for Android from Google Play
+
+  Instead of using the Intune Viewer apps, we recommend using the new Rights Management app (RMS sharing) for Android, which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. Learn more about the RMS sharing app (with link to documentation).
 
 
 
