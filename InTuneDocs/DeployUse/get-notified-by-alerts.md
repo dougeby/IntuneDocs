@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get notified by Microsoft Intune alerts | Microsoft Intune
+title: Get notified by alerts | Microsoft Intune
 description:
 keywords:
 author: Nbigman
