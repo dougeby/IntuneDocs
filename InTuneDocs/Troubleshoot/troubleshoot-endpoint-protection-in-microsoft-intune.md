@@ -51,4 +51,4 @@ This section describes potential causes and solutions for the following errors a
 |**Another endpoint protection application running**|Another endpoint protection application is running, and the computer is healthy.|By default, if another endpoint protection application is installed and Intune detects that application,  endpoint protection automatically disables itself. If Intune does not detect the other endpoint application,  endpoint protection will remain enabled. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
 
 ### Next steps
-If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

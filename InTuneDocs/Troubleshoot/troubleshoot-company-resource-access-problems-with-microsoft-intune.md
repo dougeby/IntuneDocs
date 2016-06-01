@@ -374,4 +374,4 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016346011|0x87D10065|The specified SyncML command is being carried out, but has not yet completed.|
 
 ### Next steps
-If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
