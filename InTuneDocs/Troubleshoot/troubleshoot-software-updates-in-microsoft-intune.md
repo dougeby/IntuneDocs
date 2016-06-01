@@ -264,5 +264,5 @@ This problem may occur if superseded updates (updates that have been replaced by
 Additionally, if you're running Windows 7, make sure that you have the following update installed:[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265).
 
 ### Next steps
-If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
