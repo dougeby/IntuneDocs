@@ -49,7 +49,7 @@ The following table shows enrollment methods for corporate-owned device enrollme
 
 **iOS Enrollment Methods**
 
-| **Method** |	**[Wipe](#Wipe)** |	**[User](#User)**	|	**[Locked](#Locked)** |
+| **Method** |	**[Reset](#Reset)** |	**[Affinity](#Affinity)**	|	**[Locked](#Locked)** |
 |:---:|:---:|:---:|:---:|
 |**[BYOD](#BYOD)** | No|	Yes |	No |
 |**[DEM](#DEM)**|	No |No |No	|
@@ -95,11 +95,11 @@ Direct enrollment. The admin creates an Intune policy and exports it to Apple Co
 
 **Behavior for corporate-owned mobile devices**
 
-### Wipe
+### Reset
 Specifies whether enrolling the device requires that the device be factory reset, removing all data from the device and returning it to its original state.
 ([Back to the table](#overview-of corporate-owned-device-enrollment-methods))
 
-### User
+### Affinity
 Specifies whether the enrollment method supports “User Affinity” which connects a device with a specific user. “Opt” devices can be enrolled with or without user affinity. User affinity is required to support the following:
   - Mobile application management (MAM) apps
   -	Conditional access to email and company data
