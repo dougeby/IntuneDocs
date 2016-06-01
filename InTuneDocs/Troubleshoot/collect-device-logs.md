@@ -40,7 +40,7 @@ The user can send you enrollment errors as described in [Send iOS enrollment err
 
 1. Open the **Console** app.
 2. Under **FILES** choose **system.log**.
-3. In the menu bar on the top, choose **File** -> **Save a Copy As…** and save the file.
+3. In the menu bar on the top, choose **File** > **Save a Copy As…** and save the file.
 
 ### Windows phone
 
