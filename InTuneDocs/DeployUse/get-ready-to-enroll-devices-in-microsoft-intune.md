@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get ready to enroll devices in Microsoft Intune | Microsoft Intune
+title: Get ready to enroll devices | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -36,13 +36,13 @@ The MDM authority defines the  management service with permission to manage a se
 
 
 
-1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) click **Admin** &gt; **Mobile Device Management**.
+1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) choose **Admin** &gt; **Mobile Device Management**.
 
 2.  In the **Tasks** list, click **Set Mobile Device Management Authority**. The **Set MDM Authority** dialog box opens.
 
     ![Set MDM authority dialog box](../media/intune-mdm-authority.png)
 
-3.  Intune requests confirmation that you want Intune as your MDM authority. Check the box and then click **Yes** to use Microsoft Intune to manage mobile devices.
+3.  Intune requests confirmation that you want Intune as your MDM authority. Check the box and then choose **Yes** to use Microsoft Intune to manage mobile devices.
 
 ## Configure the Intune Company Portal
 The [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
@@ -54,6 +54,7 @@ Customizing the Company Portal helps provide a familiar and helpful experience f
 
 ![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
+#### Company contact information and privacy statement
 
 The company name is displayed as the Company Portal title. The contact information and details are displayed to users in the Contact IT screen of the Company Portal. The privacy statement is displayed when a user clicks on the privacy link.
 
@@ -75,6 +76,7 @@ The support website is displayed to users in the Company Portal to enable them t
     |Website name|40|This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then **Go to IT website** is displayed on the **Contact IT** page in the Company Portal.|
 
 #### Company branding customization
+
 You can customize your Company Portal with your company logo, company name, theme color and background.
 
 |Field name|More information|
