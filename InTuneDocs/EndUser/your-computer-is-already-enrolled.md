@@ -38,3 +38,4 @@ To link your computer:
 
 3.  Follow the prompts to link the computer to your user account.
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).

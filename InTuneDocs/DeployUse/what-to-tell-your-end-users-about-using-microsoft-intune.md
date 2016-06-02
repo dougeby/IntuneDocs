@@ -34,6 +34,8 @@ Use these links and information to:
 - Understand the steps that your users follow to do different tasks in Intune.
 - Give to your users to help them complete tasks and solve issues they have while using Intune.
 
+Be sure that you include the IT administrator's contact information when you [customize the Company Portal](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) so that your users can get help if they need it.
+
 
 ## Where your end users can find information about common tasks
 

@@ -38,7 +38,7 @@ Your password does not meet one or more requirements that your IT administrator 
 - Password was used too recently
 - Password isn't complex enough to meet requirements
 
-If you have trouble figuring out how to make your password comply with the requirements, contact your IT administrator.
+If you have trouble figuring out how to make your password comply with the requirements, contact your IT administrator. If you can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
 For information about setting your PIN or password, or for other tasks that you can do with your device, use the link that matches the type of device you have:
 

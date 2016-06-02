@@ -32,6 +32,7 @@ Enrolling your Mac OS X device in Intune enables you to access the company’s n
 
 If you're trying to enroll an iOS device, see [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md).
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
 To enroll your Mac OS X device:
 

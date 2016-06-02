@@ -34,5 +34,7 @@ Enabling Secure Boot is an advanced task. If you are using a mobile device, cont
 
 If you are using a PC, you can contact your IT administrator, or see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.
 
+If you can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

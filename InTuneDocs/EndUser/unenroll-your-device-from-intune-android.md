@@ -46,6 +46,7 @@ To unenroll your device from Intune and uninstall the Company Portal app, follow
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)
