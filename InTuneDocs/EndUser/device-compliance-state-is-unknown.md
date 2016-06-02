@@ -28,4 +28,6 @@ ms.suite: ems
 
 # Device compliance state is unknown
 
-If you see the message "Compliance state is unknown" on your device, it means that Intune is trying to check that your device complies with corporate policies. While this check is being done, you may be prevented from accessing company resources like email. Wait a few minutes for the compliance check to finish, and then try accessing corporate resources again. If you still can't access company resources, contact your IT administrator.
+If you see the message "Compliance state is unknown" on your device, it means that Intune is trying to check that your device complies with corporate policies. While this check is being done, you may be prevented from accessing company resources like email. Wait a few minutes for the compliance check to finish, and then try accessing corporate resources again. 
+
+If you still can't access company resources, contact your IT administrator. If you can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).

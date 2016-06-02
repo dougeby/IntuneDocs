@@ -30,6 +30,7 @@ ms.suite: ems
 
 Your Android device doesn’t meet the minimum operating system version required by your IT department. Before updating your device, check the current operating system version by tapping **Settings** &gt; **About phone**, and then check to see if an update is available for your device by tapping **Settings**, and then finding the update option.
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

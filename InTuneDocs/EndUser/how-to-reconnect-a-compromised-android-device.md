@@ -28,5 +28,5 @@ ms.suite: ems
 # How to reconnect a compromised Android device
 Your IT admin detected that you are using a rooted device. This configuration can compromise security and might be a threat to your company resources.
 
-Contact your IT admin to help you reconnect your device.
+Contact your IT administrator to help you reconnect your device. If you can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
