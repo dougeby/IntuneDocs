@@ -40,5 +40,7 @@ To rename your device:
 
 3.  In the box where your current device name appears, type the new name for your device, and then tap the **Rename** button. Your device now appears with the new name.
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)

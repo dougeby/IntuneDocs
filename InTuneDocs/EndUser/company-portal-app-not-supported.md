@@ -26,5 +26,7 @@ ms.suite: ems
 ---
 
 # Company Portal app not supported
-This version of the company portal can no longer be used. Install the **Company Portal** app from the Windows Store to continue.
+This version of the Company Portal can no longer be used. Install the latest **Company Portal** app from the Windows Store to continue.
 
+
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
