@@ -28,7 +28,7 @@ ms.suite: ems
 
 # You see errors while trying to enroll your iOS device in Intune
 
-The following table lists errors that you might see while enrolling your iOS device in Intune. Share this link with your It administrator. 
+The following table lists errors that you might see while enrolling your iOS device in Intune. Share this link with your It administrator. If you can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
 |Error message|Issue|What to tell your IT administrator|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|

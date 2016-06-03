@@ -46,5 +46,7 @@ If you have trouble setting a passcode that meets all of the passcode requiremen
 2. Tap **Change Passcode** and enter your old password.
 3. Enter a new passcode that meets your IT administrator's requirements, and then enter it again to verify it.
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

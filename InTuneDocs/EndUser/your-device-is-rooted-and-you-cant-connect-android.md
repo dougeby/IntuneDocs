@@ -30,5 +30,7 @@ ms.suite: ems
 
 When your Android device is rooted, it means that your device has been changed to enable certain capabilities that could compromise company resources and security. When your device is rooted, you cannot access company resources and must contact your IT admin to  help you reconnect to company resources.
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

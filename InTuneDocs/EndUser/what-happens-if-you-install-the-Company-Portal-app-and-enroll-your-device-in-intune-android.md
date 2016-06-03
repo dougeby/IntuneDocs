@@ -60,5 +60,7 @@ When you add your Android device, you are giving your IT administrator permissio
 
     -   Send any company app inventory updates (these updates do not contain personal information).
 
+If you have questions and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)
