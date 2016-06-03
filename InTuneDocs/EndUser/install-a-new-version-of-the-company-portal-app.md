@@ -47,6 +47,9 @@ The Apple AppStore will alert you when a new version of the Company Portal is av
     > [!NOTE]
     > If you are unable to access the Windows Store, contact your IT administrator.
 
+
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 For information about other tasks that you can do with your device, use the link that matches the type of device you have:
 
 - [Using your Android device with Intune](using-your-android-device-with-intune.md)</br>

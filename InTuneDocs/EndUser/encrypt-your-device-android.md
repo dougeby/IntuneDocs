@@ -43,6 +43,8 @@ If your company or organization requires you to encrypt your Android device befo
 
 6.  Ensure that your device is enrolled with Microsoft Intune by following the instructions in [Enroll your device in Microsoft Intune](enroll-your-device-in-Intune-android.md).
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)
 

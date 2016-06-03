@@ -28,7 +28,7 @@ ms.suite: ems
 # Get ready to enroll devices in Microsoft Intune
 To let employees enroll mobile devices (including [Android](set-up-android-management-with-microsoft-intune.md), [iOS and Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md), and [Windows PCs](set-up-windows-device-management-with-microsoft-intune.md)) with Intune you must enable device enrollment. To allow enrollment you must set a mobile device management authority, configure the Intune Company Portal, assign licenses, and enable enrollment for the device platform.
 
-## <a name="BKMK_Set_MDM_Authority"></a>Set mobile device management authority
+## Set mobile device management authority
 The MDM authority defines the  management service with permission to manage a set of devices. Options for MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
 
 >[!IMPORTANT]
@@ -45,7 +45,8 @@ The MDM authority defines the  management service with permission to manage a se
 3.  Intune requests confirmation that you want Intune as your MDM authority. Check the box and then choose **Yes** to use Microsoft Intune to manage mobile devices.
 
 ## Configure the Intune Company Portal
-The [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
+
+The Intune Company Portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 
 > [!TIP]
 > When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.
@@ -75,6 +76,7 @@ The support website is displayed to users in the Company Portal to enable them t
     |Support website URL|150|If you have a support website that you want your users to use, specify the URL here. The URL must be in the format https://www.contoso.com. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the Company Portal.|
     |Website name|40|This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then **Go to IT website** is displayed on the **Contact IT** page in the Company Portal.|
 
+
 #### Company branding customization
 
 You can customize your Company Portal with your company logo, company name, theme color and background.
@@ -88,15 +90,15 @@ You can customize your Company Portal with your company logo, company name, them
 
 After you save your changes, you can use the links provided at the bottom of the **Company Portal** page of the administration console to view the Company Portal website. These links cannot be changed. When a user signs in, these links display your subscriptions in the Company Portal.
 
-##  Assign licenses
+## Assign an Intune user license
 
- You use the **account portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
+You use the **Office 365 management portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
 
- 1.  Sign in to the [Intune account portal](https://portal.office.com/Admin/Default.aspx) using your tenant administrator credentials.
+1.  Sign in to the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) using your tenant administrator credentials.
 
- 2.  Select the user account that you want to assign and Intune user license to and enable the **Microsoft Intune** checkbox on the user account properties.
+2.  Select the user account that you want to assign and Intune user license to and enable the **Microsoft Intune** checkbox on the user account properties.
 
- 3.  The user account will now be added to the Microsoft Intune user group which grants the user permissions to use the service and enroll their devices into management.
+3.  The user account will now be added to the Microsoft Intune user group which grants the user permissions to use the service and enroll their devices into management.
 
 ## Set up device management
 After setting up the MDM authority, you need to set up device management for the operating systems your organization wants to support. The steps required to set up device management vary by operating system. For example, Android OS does not require you to do anything in the Intune administration console. On the other hand, Windows and iOS require a trust relationship between devices and Intune to allow management.

@@ -48,3 +48,5 @@ To resolve this issue and get the required certificate:
 6. Close the web browser and the Company Portal app.
 
 7. Reopen the Company Portal app. You should now be able to sign in to the Company Portal app. If you need help, contact your IT administrator.
+
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).

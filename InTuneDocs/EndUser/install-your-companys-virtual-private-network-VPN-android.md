@@ -36,5 +36,7 @@ If your IT administrator has configured a VPN application to enable you to  conn
 
 3.  Tap **Install corporate VPN profile** and follow the prompts to accept and activate the app.
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

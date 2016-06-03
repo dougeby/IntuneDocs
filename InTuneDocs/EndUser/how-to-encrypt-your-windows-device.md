@@ -26,23 +26,14 @@ ms.suite: ems
 ---
 
 # How to encrypt your Windows device
-To reconnect to your work, you’ll need to encrypt your device by following these instructions:
 
-## Option 1 – Add a Microsoft account
+To protect your company or school data, your IT administrator might require you to encrypt your Windows device. If you have a Windows Phone, and you have enrolled it, your device will be encrypted automatically if encryption is required.
 
-1.  Search for, then start the **PC Settings** app.
+If you have a desktop device, follow the instructions below to encrypt it. 
 
-2.  Click **Accounts** &gt; **Your account**, and then click **Connect to a Microsoft account**.
+1.  Search for, and then start, the **Manage BitLocker** app.
 
-3.  Follow the instructions shown.
+2.  Click **Turn on BitLocker**, and then follow the instructions shown to encrypt each of your drives.
 
-4.  Ensure that your device is enrolled with Intune by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
-
-## Option 2 – Enable BitLocker:
-
-1.  Search for, then start the **Manage BitLocker** app.
-
-2.  Click **Turn on BitLocker**, then follow the instructions shown to encrypt each of your drives.
-
-3.  Ensure that your device is enrolled with Intune by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
