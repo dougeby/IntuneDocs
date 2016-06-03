@@ -76,7 +76,7 @@ Some common apps that your IT department might manage are:
 
 -   Microsoft Word, Excel, PowerPoint
 
-Contact your IT admin for more information about the managed apps on your device.
+Contact your IT admin for more information about the managed apps on your device. If you can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

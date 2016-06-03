@@ -27,28 +27,17 @@ ms.suite: ems
 
 
 # Encrypt your Windows device
-To protect your company or school data, your IT administrator might require you to encrypt your Windows device. If you see a message indicating that you must encrypt, your IT administrator should tell you which steps below to use to encrypt your device.
 
-You can encrypt your device either by adding a Microsoft account or by enabling BitLocker.
+To protect your company or school data, your IT administrator might require you to encrypt your Windows device. If you have a Windows Phone, and you have enrolled it, your device will be encrypted automatically if encryption is required.
 
-**Option 1: Add a Microsoft account**
-
-1.  Search for, and then start, the **PC Settings** app.
-
-2.  Tap **Accounts** &gt; **Your account**, and then tap **Connect to a Microsoft account**.
-
-3.  Follow the instructions shown.
-
-4.  Ensure that your device is enrolled with Intune by following the instructions in [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md).
-
-**Option 2: Enable BitLocker**
+If you have a desktop device, follow the instructions below to encrypt it. 
 
 1.  Search for, and then start, the **Manage BitLocker** app.
 
 2.  Click **Turn on BitLocker**, and then follow the instructions shown to encrypt each of your drives.
 
-3.  Ensure that your device is enrolled with Intune by following the instructions in [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md).
-
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
+[Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)</br>
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

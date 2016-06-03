@@ -37,5 +37,7 @@ To check the version for Windows 10 and Windows 8.1, press the **Windows** hotke
 - For Windows 10, ignore the version number and look at the OS build number (example: OS Build 10586.29). The "10" in "10586.29" stands for "Windows 10."
 - For Windows 8.1, look at the version number, which will show 6.3.xxxx instead of 8.1.
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

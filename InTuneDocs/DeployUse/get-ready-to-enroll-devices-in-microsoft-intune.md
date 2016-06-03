@@ -28,7 +28,7 @@ ms.suite: ems
 # Get ready to enroll devices in Microsoft Intune
 To let employees enroll mobile devices (including [Android](set-up-android-management-with-microsoft-intune.md), [iOS and Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md), and [Windows PCs](set-up-windows-device-management-with-microsoft-intune.md)) with Intune you must enable device enrollment. To allow enrollment you must set a mobile device management authority, configure the Intune Company Portal, assign licenses, and enable enrollment for the device platform.
 
-## <a name="BKMK_Set_MDM_Authority"></a>Set mobile device management authority
+## Set mobile device management authority
 The MDM authority defines the  management service with permission to manage a set of devices. Options for MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
 
 >[!IMPORTANT]
@@ -45,11 +45,18 @@ The MDM authority defines the  management service with permission to manage a se
 3.  Intune requests confirmation that you want Intune as your MDM authority. Check the box and then choose **Yes** to use Microsoft Intune to manage mobile devices.
 
 ## Configure the Intune Company Portal
+
+The Intune Company Portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
+
+> [!TIP]
+> When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.
+
 Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, just log into the [Microsoft Intune administrator console](https://manage.microsoft.com) as a tenant or service administrator, choose **Admin** &gt; **Company Portal** and configure the Company Portal settings.
 
-![admin-console-admin-workspace-comp-portal-settings](../media/cp_setup.png)
+![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
 #### Company contact information and privacy statement
+
 The company name is displayed as the Company Portal title. The contact information and details are displayed to users in the Contact IT screen of the Company Portal. The privacy statement is displayed when a user clicks on the privacy link.
 
 |Field name|Max length|More information|
@@ -69,7 +76,9 @@ The support website is displayed to users in the Company Portal to enable them t
     |Support website URL|150|If you have a support website that you want your users to use, specify the URL here. The URL must be in the format https://www.contoso.com. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the Company Portal.|
     |Website name|40|This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then **Go to IT website** is displayed on the **Contact IT** page in the Company Portal.|
 
-## Company branding customization
+
+#### Company branding customization
+
 You can customize your Company Portal with your company logo, company name, theme color and background.
 
 |Field name|More information|
@@ -81,13 +90,11 @@ You can customize your Company Portal with your company logo, company name, them
 
 After you save your changes, you can use the links provided at the bottom of the **Company Portal** page of the administration console to view the Company Portal website. These links cannot be changed. When a user signs in, these links display your subscriptions in the Company Portal.
 
-
-
 ## Assign an Intune user license
 
-You use the **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
+You use the **Office 365 management portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
 
-1.  Sign in to the [Intune account portal](https://portal.office.com/Admin/Default.aspx) using your tenant administrator credentials.
+1.  Sign in to the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) using your tenant administrator credentials.
 
 2.  Select the user account that you want to assign and Intune user license to and enable the **Microsoft Intune** checkbox on the user account properties.
 
