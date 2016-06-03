@@ -100,5 +100,8 @@ To see how to reset your device, choose one of the following links:
 ## I do not see all of my devices in the Company Portal
 In order to see a device, it must be added to the Company Portal. Browse to the Company Portal as directed by your administrator and follow the steps for your device. You also won’t see devices that are owned and managed by your company.
 
+## If you have questions, contact your IT administrator
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 
 

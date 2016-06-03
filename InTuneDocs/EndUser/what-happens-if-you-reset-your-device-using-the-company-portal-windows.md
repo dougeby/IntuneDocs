@@ -36,5 +36,7 @@ When you use the Company Portal or Company Portal website to reset your Windows 
 |Your device can access company email only|**Windows Phone 8.1 and Windows Phone 8**<br />Your device won’t appear in the company portal anymore and your company email account will be deleted and unsaved email will be deleted.<br /><br />**Windows RT**<br />Your device won’t appear in the company portal anymore and your company email account will be deleted and unsaved email will be deleted.<br /><br />**Windows 7 or Windows Vista Computers**<br />You cannot reset a computer that is running Windows 7 or earlier that is used for email only.<br /><br />**Windows 8.1 and Windows 8 Computers**<br />Your device won’t appear in the company portal anymore and your company email account will be deleted and unsaved email will be deleted.|
 |PCs and laptops|**Windows 8.1 and Windows 8 Computers**<br />You cannot reset a computer that is running Windows 8 or Windows 8.1 unless it is used for email only.<br /><br />**Windows 7 or Windows Vista Computers**<br />You cannot reset a computer that is running Windows 7 or earlier.|
 
+If you have questions and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

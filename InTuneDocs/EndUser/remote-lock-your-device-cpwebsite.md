@@ -60,6 +60,7 @@ To use Remote Lock to lock your device:
 
 	If a retry doesn’t work, contact your IT administrator for help. If you find your device and want to unlock it after using Remote Lock, just enter your passcode.
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
