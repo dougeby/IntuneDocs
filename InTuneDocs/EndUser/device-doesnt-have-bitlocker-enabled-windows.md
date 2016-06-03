@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Device doesn't have BitLocker enabled
 
-Your organization requires that you enable BitLocker, which is software that encrypts your drive and helps to protect your data. For instructions on how to enable BitLocker on Windows 10 devices, see [How to turn on BitLocker on Windows 10 devices](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d). For other devices, contact your IT administrator for help.
+Your organization requires that you enable BitLocker, which is software that encrypts your drive and helps to protect your data. For instructions on how to enable BitLocker on Windows 10 devices, see [How to turn on BitLocker on Windows 10 devices](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d). For other devices, contact your IT administrator for help. If you can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

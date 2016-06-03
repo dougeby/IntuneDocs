@@ -30,5 +30,7 @@ ms.suite: ems
 
 On devices running iOS 7.1 and above, tap the **Settings** icon, tap **General** > **About**, and then scroll down until you find **Serial Number**.
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

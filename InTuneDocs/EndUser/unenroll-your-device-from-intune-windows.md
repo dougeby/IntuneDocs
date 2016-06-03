@@ -66,5 +66,7 @@ To unenroll your device, use the link, shown in the "In this Article" section ab
 
 4.  On the **Delete account** dialog, tap **Delete**.
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

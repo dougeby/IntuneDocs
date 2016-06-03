@@ -28,3 +28,5 @@ ms.suite: ems
 # Wait while your device is being evaluated
 Your device is still being evaluated for compliance. Wait a few more minutes for the compliance check to complete.
 
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+

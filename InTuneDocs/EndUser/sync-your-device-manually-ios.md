@@ -41,3 +41,8 @@ If your app installation is taking too long, use the following instructions to m
     ![ios-sync-2-sync-button](./media/ios-sync-2-sync-button.png)
 
 A spinning circle appears on the screen until the sync is finished.
+
+If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+
+### See also
+[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
