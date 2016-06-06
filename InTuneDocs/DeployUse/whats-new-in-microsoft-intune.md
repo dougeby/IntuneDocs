@@ -30,6 +30,16 @@ ms.suite: ems
 # What's new in Microsoft Intune
 
 
+## June 2016
+
+### Company portal updates
+
+#### iOS Company Portal app
+
+- When end users are installing line-of-business apps, they will now see an improved app installation experience. If the app installation is taking a long time, users can manually sync their device to force the sync process to resume. To review the end-user instructions, see [Sync your iOS device manually](/Intune/EndUser/sync-your-device-manually-ios.md).
+
+- The Microsoft Intune Company Portal app for iOS has been updated to support iOS version 8.0 and later. This update means that end users can install the Company Portal app and enroll new devices in Intune only if the device is running iOS version 8.0 or later. Users who have already enrolled devices that are running on an unsupported version of iOS can continue to use the Company Portal app that is on their device.
+
 ## May 2016
 
 
@@ -59,17 +69,17 @@ For more information, see [this blog post](https://blogs.technet.microsoft.com/m
 - **Remote assistance sessions for Windows PCs.** TeamViewer integration for Windows PCs managed by the Intune client software will let you establish remote assistance sessions with Windows PCs to support your help desk department. Supported PCs include Windows 7, 8, 8.1 and Windows 10.
 For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#respond-to-a-remote-assistance-request)
 
-### Company portal updates
+### Company Portal updates
 
-#### Android Company portal app
+#### Android Company Portal app
 
 - **End user toast notifications**: End users will now see toast notifications from the Android Company Portal app when they are enrolling their devices or removing their devices from the Company Portal.
 
 - **Changes to Device Enrollment Managers accounts in the Android Company Portal app.** To improve performance and scale, Intune is no longer showing all Device Enrollment Managers (DEM) devices in the My Devices pane of the Android Company Portal app. Only the local device running the app is displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices can only be performed from the Intune admin console.
--
+
 #### Company Portal website
 
-**Company Portal website: Device identification banner will provide more information to end users.** End users can now more easily identify the device they’ve selected when they are using the Company Portal website. If the wrong device is selected, they will be able to select the correct device by tapping the **Tap here** link in the home page banner.
+- **Company Portal website: Device identification banner will provide more information to end users.** End users can now more easily identify the device they’ve selected when they are using the Company Portal website. If the wrong device is selected, they will be able to select the correct device by tapping the **Tap here** link in the home page banner.
 
 
 ## What's coming
