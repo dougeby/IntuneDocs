@@ -18,7 +18,7 @@ ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: damionw
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
