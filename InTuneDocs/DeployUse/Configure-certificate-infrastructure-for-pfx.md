@@ -1,5 +1,5 @@
 ---
-title: Configure certificate infrastructure for PFX |Microsoft Intune
+title: Configure certificate infrastructure for PFX | Microsoft Intune
 description:
 keywords:
 author: nbigman
