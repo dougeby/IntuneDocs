@@ -18,7 +18,7 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -257,7 +257,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 |**TextInput/AllowJapaneseIVSCharacters**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIVSCharacters<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** – not allowed<br>**1** – allowed (default)|
 |**TextInput/AllowJapaneseUserDictionary**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseUserDictionary<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** – not allowed<br>**1** – allowed (default)|
 |**TextInput/AllowJapaneseIMESurrogatePairCharacters**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIMESurrogatePairCharacters<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** – not allowed<br>**1** – allowed (default)|
-|**TextInput/ExcludeJapaneseIMEExceptShiftJIS**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptShiftJIS<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** - Any characters are not filtered (default)<br>**1** - All Except Shift JIS characters are filtered|
+|**TextInput/ExcludeJapaneseIMEExceptShiftJIS**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptShiftJIS<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** - No characters are filtered (default)<br>**1** - All Except Shift JIS characters are filtered|
 |**TextInput/ExcludeJapaneseIMEExceptJIS0208**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptJIS0208<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0** - No characters are filtered (default)<br>**1** - All except JIS0208 characters are filtered|
 |**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** - No characters are filtered (default)<br>**1** - All except JIS0208 characters or EUDC characters are filtered|
 |**TextInput/AllowInputPanel**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/AllowInputPanel<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** – not allowed<br>**1** – allowed (default)|
