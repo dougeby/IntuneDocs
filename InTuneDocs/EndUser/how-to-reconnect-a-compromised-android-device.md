@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # How to reconnect a compromised Android device
-Your IT admin detected that you are using a rooted device. This configuration can compromise security and might be a threat to your company resources.
+Your IT admin detected that you are using a rooted device. "Rooted" means that the device has been changed to enable access to the operating system, which can compromise security and might be a threat to your company resources. When this happens, your device can no longer access company resources.
 
 Contact your IT administrator to help you reconnect your device. If you can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
 
