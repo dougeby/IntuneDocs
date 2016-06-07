@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: [Per-app VPN for Android using Pulse Secure | Microsoft Intune]
+title: [Per-app VPN for Android using Pulse Secure | Microsoft Intune
 description:
 keywords:
 author: [nbigman]

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable access to company resources using certificate profiles with Microsoft Intune | Microsoft Intune
+title: Enable access to company resources using certificate profiles |Microsoft Intune
 description:
 keywords:
 author: Nbigman

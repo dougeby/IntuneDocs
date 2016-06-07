@@ -1,5 +1,5 @@
 ---
-title: Configure certificate infrastructure for SCEP |Microsoft Intune|
+title: Configure certificate infrastructure for SCEP |Microsoft Intune
 description:
 keywords:
 author: nbigman

@@ -1,5 +1,5 @@
 ---
-title: Configure certificate infrastructure for PFX |Microsoft Intune|
+title: Configure certificate infrastructure for PFX |Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -108,7 +108,7 @@ In this task you will publish the certificate template
 
 5.  On the CA computer ensure that the computer that hosts the Intune Certificate Connector has enroll permission, so that it can access the template used in creating the .PFX profile. Set that permission on the **Security** tab of the CA computer properties.
 
-### Task 4 - Enable, install, and configure the Intune Certificate Connector
+### Task 2 - Enable, install, and configure the Intune Certificate Connector
 In this task you will:
 
 Download, install, and configure the Certificate Connector

@@ -69,6 +69,6 @@ In addition, reports support the following actions:
 |**Load**|On the **Create New Report** page, click **Load** to retrieve any previously saved sets of report parameters.|
 |**Delete**|In the **Reports** workspace, select the desired report type, click **Load**, and then, in the list of reports, click the delete (x) icon next to the report.|
 
-## See Also
+### See also
 [Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Find a package family name (PFN) for per-app VPN |Microsoft Intune|
+title: Find a package family name (PFN) for per-app VPN |Microsoft Intune
 description:
 keywords:
 author: nbigman
