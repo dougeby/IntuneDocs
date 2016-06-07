@@ -18,7 +18,7 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -69,6 +69,6 @@ In addition, reports support the following actions:
 |**Load**|On the **Create New Report** page, click **Load** to retrieve any previously saved sets of report parameters.|
 |**Delete**|In the **Reports** workspace, select the desired report type, click **Load**, and then, in the list of reports, click the delete (x) icon next to the report.|
 
-## See Also
+### See also
 [Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 
