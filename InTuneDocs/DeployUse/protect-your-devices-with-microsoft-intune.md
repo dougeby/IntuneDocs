@@ -18,7 +18,7 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,6 +39,9 @@ Since the first step in protecting company data on mobile devices is to require 
 
 ## Control Microsoft Passport settings on Windows devices
 Intune lets you integrate with [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) which is an alternative sign-in method for Windows 10 and later that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
+
+## Bypass Activation Lock on iOS devices
+Activation Lock is a feature that help protect users devices by requiring their Apple ID and password to be entered before anyone can erase, or reactivate the device. However, this can lead to problems, for example if the user leaves the company without removing the lock. [iOS Activation Lock bypass](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) can help by removing the lock from supervised iOS devices allowing you to reallocate, or erase them.
 
 ## Protect Windows PCs managed with the Intune client
 Intune continues to support security policies for Windows PCs that you don't enroll, but manage with the Intune computer client software. To find out how these policies can help you secure your Windows PCs, see [Use policies to help protect Windows PCs that run the Intune client software](policies-to-protect-windows-pcs-in-microsoft-intune.md).
