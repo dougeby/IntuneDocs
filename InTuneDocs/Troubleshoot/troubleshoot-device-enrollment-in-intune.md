@@ -161,7 +161,7 @@ This may be because the computer had been previously enrolled, or has the cloned
 1. Double-click **Certificates**, choose **Computer account**, **Next**, select **Local Computer**.
 1. Double-click **Certificates (Local computer)**, choose **Personal/ Certificates**. 
 1. Look for the Intune cert issued by Sc_Online_Issuing, and delete it if present
-1. Delete this registry key if it exists: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** and all sub keys.
+1. Delete this registry key if it exists: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** and all sub keys.
 1. Attempt re-enrollment. 
 1. If the machine can still not enroll, look for and delete this key, if it exists: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
 1. Attempt re-enrollment. 
