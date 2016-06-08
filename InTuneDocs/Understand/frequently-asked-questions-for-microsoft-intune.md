@@ -40,7 +40,7 @@ This article answers some frequently asked questions about Intune. If you don't 
 
 -   **Is there a remote assistance functionality in Intune for mobile devices?**
 
-    No there isn’t. Third party apps such as [Bomgar](http://www.bomgar.com/) and [TeamViewer](https://www.teamviewer.com/) could be helpful.
+    No there isn’t. Third party apps such as [Bomgar](http://www.bomgar.com/) <!---and [TeamViewer](https://www.teamviewer.com/)---> could be helpful.
 
 ## Accounts
 
