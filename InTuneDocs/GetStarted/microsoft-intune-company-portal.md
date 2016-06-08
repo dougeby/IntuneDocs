@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Microsoft Intune Company Portal
 
-Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+Before you set up Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 The Intune Company Portal is a tool that provides users with access to company data and apps. The Company Portal is available in two forms:
 
