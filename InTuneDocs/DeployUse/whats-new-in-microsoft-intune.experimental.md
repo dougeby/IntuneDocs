@@ -40,7 +40,7 @@ ms.suite: ems
 ## May 2016
 
 
-With the exception of TeamViewer integration, all of these features are also supported for hybrid deployments (Configuration Manager with Intune). For more information about new hybrid features, check out the [Hybrid What’s New](https://technet.microsoft.com/en-us/library/mt718155.aspx) page.
+All of these features are also supported for hybrid deployments (Configuration Manager with Intune). For more information about new hybrid features, check out the [Hybrid What’s New](https://technet.microsoft.com/en-us/library/mt718155.aspx) page.
 
 ### Documentation
 
@@ -61,10 +61,7 @@ For more information, see [this blog post](https://blogs.technet.microsoft.com/m
 
 - **New apps available for management with MAM policies.** The Microsoft Word, Excel, and PowerPoint apps for Android can now be associated with MAM policies on devices that are not enrolled with Intune. For a full list of supported apps, go the Microsoft Intune mobile application gallery on the [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) page.
 
-### Device management
 
-- **Remote assistance sessions for Windows PCs.** TeamViewer integration for Windows PCs managed by the Intune client software will let you establish remote assistance sessions with Windows PCs to support your help desk department. Supported PCs include Windows 7, 8, 8.1 and Windows 10.
-For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#respond-to-a-remote-assistance-request)
 
 ### Company portal updates
 
