@@ -31,7 +31,7 @@ Use the policy settings listed in this topic to help you configure settings for 
 
 ## General configuration policy settings
 
-Use the Microsoft Intune **general configuration policy** for Windows 10 to configure general settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices:
+Use the Microsoft Intune **general configuration policy** for Windows 10 to configure general settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices. This policy cannot be used when you manage Windows 10 PCs with the Intune client software.
 
 
 ### Password
