@@ -147,29 +147,6 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 **Resolution:** Microsoft Office 365 customers who utilize single sign-on (SSO) through AD FS 2.0 and have multiple top level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix.  There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the **SupportMultipleDomain** switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. See [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
 
-### The machine is already enrolled - Error hr 0x8007064c
-**Issue:** Enrollment fails with the error **The machine is already enrolled**. The enrollment log shows error **hr 0x8007064c**.
-  
-This may be because the computer had been previously enrolled, or has the cloned image of a computer that had been enrolled. The account certificate of the previous account is still present on the computer.
-
-
-
-**Resolution:** 
-
-1. From the **Start** menu, **Run** -> **MMC**. 
-1. **File** -> **Add/ Remove Snap-ins**.
-1. Double-click **Certificates**, choose **Computer account**, **Next**, select **Local Computer**.
-1. Double-click **Certificates (Local computer)**, choose **Personal/ Certificates**. 
-1. Look for the Intune cert issued by Sc_Online_Issuing, and delete it if present
-1. Delete this registry key if it exists: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** and all sub keys.
-1. Attempt re-enrollment. 
-1. If the machine can still not enroll, look for and delete this key, if it exists: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Attempt re-enrollment. 
-
-    > [!IMPORTANT]
-    > This section, method, or task contains steps that tell you how to modify the registry. However, serious problems might occur if you modify the registry incorrectly. Therefore, make sure that you follow these steps carefully. For added protection, back up the registry before you modify it. Then, you can restore the registry if a problem occurs.
-    > For more information about how to back up and restore the registry, read [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/kb/322756)
-
 
 ## Android issues
 ### Profile installation failed
@@ -251,6 +228,31 @@ This may be because the computer had been previously enrolled, or has the cloned
 
 ### Other iOS enrollment errors
 A list of iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
+
+## PC  Issues
+
+### The machine is already enrolled - Error hr 0x8007064c
+**Issue:** Enrollment fails with the error **The machine is already enrolled**. The enrollment log shows error **hr 0x8007064c**.
+  
+This may be because the computer had been previously enrolled, or has the cloned image of a computer that had been enrolled. The account certificate of the previous account is still present on the computer.
+
+
+
+**Resolution:** 
+
+1. From the **Start** menu, **Run** -> **MMC**. 
+1. **File** -> **Add/ Remove Snap-ins**.
+1. Double-click **Certificates**, choose **Computer account**, **Next**, select **Local Computer**.
+1. Double-click **Certificates (Local computer)**, choose **Personal/ Certificates**. 
+1. Look for the Intune cert issued by Sc_Online_Issuing, and delete it if present
+1. Delete this registry key if it exists: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** and all sub keys.
+1. Attempt re-enrollment. 
+1. If the machine can still not enroll, look for and delete this key, if it exists: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Attempt re-enrollment. 
+
+    > [!IMPORTANT]
+    > This section, method, or task contains steps that tell you how to modify the registry. However, serious problems might occur if you modify the registry incorrectly. Therefore, make sure that you follow these steps carefully. For added protection, back up the registry before you modify it. Then, you can restore the registry if a problem occurs.
+    > For more information about how to back up and restore the registry, read [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/kb/322756)
 
 ## General enrollment Error codes
 
