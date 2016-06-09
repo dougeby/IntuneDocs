@@ -48,7 +48,7 @@ If you have trouble setting a password that meets all of the password requiremen
 4. Enter your new password in the **New password** field, and then re-enter the new password in the **Confirm password** field.
 4. Tap **done**.
 
-If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

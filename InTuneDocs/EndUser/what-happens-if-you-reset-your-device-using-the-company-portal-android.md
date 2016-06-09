@@ -36,7 +36,7 @@ If you have a Samsung Knox device, you can bo a "selective wipe" by choosing the
 - Email, VPN, and WiFi
 - Ability of your IT administrator to enforce certain settings
 
-If you have questions and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)
