@@ -64,6 +64,7 @@ There are additional benefits to using MDM with MAM  policies, and companies can
 
 -   Android 4 or later
 
+Windows devices are currently not supported.
 ##  How MAM policies protect app data
 
 ####  Apps without MAM policies:
