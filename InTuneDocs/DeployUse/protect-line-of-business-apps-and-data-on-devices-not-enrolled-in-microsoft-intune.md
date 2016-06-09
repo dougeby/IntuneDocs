@@ -1,25 +1,25 @@
 ---
 # required metadata
 
-title: [Protect line of business apps and data on devices not enrolled | Microsoft Intune]
+title: Protect line of business apps and data on devices not enrolled | Microsoft Intune
 description:
 keywords:
-author: [karthikaraman]
-manager: [jeffgilb]
+author: karthikaraman
+manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
 ms.service:
 ms.technology:
-ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
+ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [joglocke]
-#ms.suite: ems
+ms.reviewer: joglocke
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

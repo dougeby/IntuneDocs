@@ -42,7 +42,7 @@ You can use the Company Portal website  to:
 
 -	[Sync your device manually to speed up slow app installations](sync-your-device-manually-cpwebsite.md)
 
--   Find your IT administrator's contact information, if your IT admin configured it. If you're having trouble finding it, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+-   Find your IT administrator's contact information, if your IT admin configured it. 
 
 -   See details about your device, including whether it is compliant with your company's or school's policies
 

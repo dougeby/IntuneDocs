@@ -44,4 +44,4 @@ For information about setting your PIN or password, or for other tasks that you 
 - [Set or change your iOS device passcode](set-or-change-your-passcode-ios.md)
 - [Set or change your Windows device password](set-or-change-your-password-windows.md)
 
-If you have trouble figuring out how to make your password comply with the requirements, contact your IT administrator. If you can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+If you have trouble figuring out how to make your password comply with the requirements, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

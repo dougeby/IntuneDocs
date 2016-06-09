@@ -32,5 +32,7 @@ In order to improve its products and services, Microsoft automatically collects 
 
 You can turn off the collection of that data on your Windows device by using the **Usage Data** setting in the Company Portal app. IT administrators have no control over the collection of the data, and they cannot change your selection for the setting.
 
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

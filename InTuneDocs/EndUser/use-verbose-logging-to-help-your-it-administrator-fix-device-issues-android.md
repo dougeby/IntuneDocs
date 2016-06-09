@@ -32,5 +32,7 @@ When your Android device is enrolled in Intune, you can use the **Verbose Loggin
 
 To turn **Verbose Logging** on or off, sign in to the Company Portal app using your work or school credentials, tap **Settings**, and tap the on/off button next to the **Verbose Logging** setting.
 
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

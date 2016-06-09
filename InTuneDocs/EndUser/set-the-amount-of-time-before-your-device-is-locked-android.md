@@ -36,7 +36,7 @@ To keep the data on your Android device more secure, your IT administrator can s
 
 3.  Ensure that your device is enrolled with Intune by following the instructions in [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
 
-If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)
