@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Set up Windows Phone 8.0 management with Microsoft Intune | Microsoft Intune
+title: Set up Windows Phone 8.0 management | Microsoft Intune
 description:
 keywords:
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,6 +28,9 @@ ms.suite: ems
 # Set up device management for Windows Phone 8.0
 
 Windows Phone 8.0 requires a Symantec certificate to install the Intune Company Portal app and allow device management. A certificate is also required to sign line-of-business apps. The following topic is only for Windows Phone 8.0. To manage Windows Phone 8.1 or later, including Windows 10 Mobile, see [Set up Windows Phone enrollment](set-up-windows-phone-management-with-microsoft-intune.md).
+
+> [!IMPORTANT]
+> Starting September of 2016, the Company Portal app for Windows 8.0 and Windows Phone 8.0 will no longer be available for download.
 
 -   **Windows Phone 8** - Certificate required
 -   **Windows Phone 8.1 and Windows 10 Mobile** require a certificate only if:
