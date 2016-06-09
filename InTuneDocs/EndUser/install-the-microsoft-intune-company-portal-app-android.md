@@ -48,5 +48,7 @@ The Company Portal is an app that you install on your Android device to give you
 
 To enroll your device in Intune to get access to company or school data and resources, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
 
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

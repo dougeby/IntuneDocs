@@ -35,7 +35,7 @@ Lookout for Work is an app that helps keep your device secure by checking for ri
 1.	Follow the prompts to download and install the app. 
 2.	When the installation finishes, and you are returned to the Company Portal app, tap **Check Compliance** to complete the process. You can then continue to use your device to access company data and resources.
 
-If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

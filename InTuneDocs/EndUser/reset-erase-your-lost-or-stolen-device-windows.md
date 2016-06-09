@@ -41,7 +41,7 @@ If your enrolled Windows device is lost or stolen, you can reset it to factory d
 3.  Tap **Reset** &gt; **Reset**.
 
 > [!NOTE]
-> If you are unable to reset your lost or stolen device, contact IT to reset it for you. If you can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+> If you are unable to reset your lost or stolen device, contact IT to reset it for you. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
