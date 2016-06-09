@@ -36,5 +36,5 @@ You already have a company email account. To continue to connect to your company
 
 3.  Wait a short time for new email settings to be applied to your device automatically.
 
-If new email settings do not appear after a while, contact your IT administrator. If you can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+If new email settings do not appear after a while, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 

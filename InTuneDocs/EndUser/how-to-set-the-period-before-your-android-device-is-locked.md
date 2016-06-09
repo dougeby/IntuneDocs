@@ -36,4 +36,4 @@ To reconnect to your work, you’ll need to set the password timeout on your dev
 
 3.  Ensure that your device is enrolled with Intune by following the instructions in [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071).
 
-If you need help and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

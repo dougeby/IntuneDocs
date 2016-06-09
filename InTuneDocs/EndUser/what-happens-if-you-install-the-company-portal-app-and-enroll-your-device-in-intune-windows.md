@@ -125,7 +125,7 @@ When you add a computer:
 
 -   Your IT administrator may enforce policies on the computer. For example, you might be required to set a password or PIN on the computer, which may lock you out of the computer, or delete all data from your computer’s hard drive, if there are too many incorrect password attempts.
 
-If you have questions and can't find your IT administrator's contact information, see if it's listed on the [Company Portal website](http://portal.manage.microsoft.com).
+If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
