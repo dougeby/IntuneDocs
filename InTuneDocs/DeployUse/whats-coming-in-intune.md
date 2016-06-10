@@ -34,7 +34,8 @@ The following changes are under development for Intune. All of these features wi
 
 
 ## App management
-- **Changes to the Windows 10 enterprise data policy.** Due to app policy improvements in the Windows 10 enterprise data policy, when you save a policy that has been configured with app rules (formerly protected apps), any existing rules you configured will be lost. To continue, you’ll need to reconfigure these app rules.
+- **Enhanced Windows 10 enterprise data policy configuration experience.** We have made enhancements to the Win 10 enterprise data protection policy configuration experience around creating app rules, specifying network boundary definition, and other enterprise data protection settings.
+<!---TFS 1303011--->
 
 - **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
 <!---TFS 1175844--->
@@ -43,14 +44,16 @@ The following changes are under development for Intune. All of these features wi
 <!---TFS1295358--->
 
 ### Xamarin support
-The Microsoft Intune app SDK now supports Xamarin apps in these scenarios:
+The Microsoft Intune app SDK will support Xamarin apps in these scenarios:
 
-- Writing new apps, or modifying the code of existing line of business apps using the Intune SDK. You can get the plugin on the [Microsoft Intune Github](https://github.com/msintuneappsdk) page.
+- Writing new apps, or modifying the code of existing line of business apps using the Intune SDK. You will be able to get the plugin on the [Microsoft Intune Github](https://github.com/msintuneappsdk) page.
 - Adding MAM support to existing line of business apps using the Intune app wrapping tool
 
 For help choosing which method to use, see [Decide how to prepare apps for mobile application management with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
 <!--- TFS 1061478 & TFS 1152340--->
 
+## Device management
+- **Windows Defender policy setting to protect against potentially unwanted apps.** A new Windows Defender setting named **Potentially Unwanted Application Detection** has been added to the general configuration policy for Windows 10 Desktop and Mobile. You can use this setting to protect enrolled Windows desktop computers against running software classed by Windows Defender as potentially unwanted. You can protect against these applications running, or use audit mode to report when a potentially unwanted application is installed.
 
 ## Company Portal
 **Changes to Device Enrollment Managers accounts in the iOS Company Portal app.** To improve performance and scale, Intune is no longer showing all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app is displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices can only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices.  Only use DEM accounts when user-less enrollment for shared devices is unavailable.
@@ -67,8 +70,8 @@ The preliminary timeline for this change is as follows:
 - In June, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
 - Around August, 2016, some existing tenants will not see the “select device groups” in the wizard.
 - Around October, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
-
 <!---	TFS 1278864--->
+
 **Changes in support for the iOS Company Portal app.**
 Users must update to latest iOS Company Portal app. In the coming months, all users of the Microsoft Intune Company Portal app for iOS will be required to use its latest version. New users will only be able to download the latest version and current users will be required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions won’t be able to use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.  
 
