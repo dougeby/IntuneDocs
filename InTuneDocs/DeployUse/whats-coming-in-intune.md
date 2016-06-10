@@ -6,7 +6,7 @@ description:
 keywords:
 author: Lindavr
 manager: jeffgilb
-ms.date: 05/17/2016
+ms.date: 06/10/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
