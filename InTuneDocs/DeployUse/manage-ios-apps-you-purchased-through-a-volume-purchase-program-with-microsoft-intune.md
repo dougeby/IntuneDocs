@@ -18,7 +18,7 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,28 +46,29 @@ Before you begin, you'll need to get a VPP token from Apple, and upload this to 
 * By default, Intune syncs with the Apple VPP service twice a day. You can, however, initiate a manual sync at any time.
 * After you have imported the VPP token in Intune do not import the same token into any other device management solution. Doing so might result in the loss of license assignment and user records.
 * Before you start to use iOS VPP with Intune, remove any existing VPP user accounts created with other MDM vendors. Intune will not synchronize those user accounts into Intune as a security measure. Intune will only synchronize data from the Apple VPP service that was created by Intune. 
+* You cannot deploy iOS VPP apps to devices that were enrolled using the Device Enrollment Protocol (DEP).
 
 ## To get and upload an Apple VPP token
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Admin** &gt; **iOS and Mac OS X** &gt;  **Volume Purchase Program**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin** &gt; **iOS and Mac OS X** &gt;  **Volume Purchase Program**.
 
-2.  Click the **Apple VPP Account** link, and if you haven't already, sign up for the Volume Purchase Program for Business. Once you are signed up, download the Apple VPP token for your account.
+2.  Choose the **Apple VPP Account** link, and if you haven't already, sign up for the Volume Purchase Program for Business. Once you are signed up, download the Apple VPP token for your account.
 
-3.  On the **Manage Apple Volume Purchase Program (VPP)** page of the Intune console, click **Upload the VPP token**.
+3.  On the **Manage Apple Volume Purchase Program (VPP)** page of the Intune console, choose **Upload the VPP token**.
 
-4.  In the **Upload the VPP token** dialog box, enter or paste the VPP token name, and your Apple ID, then click **Upload**.
+4.  In the **Upload the VPP token** dialog box, enter or paste the VPP token name, and your Apple ID, then choose **Upload**.
 
-5.  In the warning dialog box, click the checkbox to indicate that you understand that you can't change to a different VPP account later, then click **Yes**.
+5.  In the warning dialog box, choose the checkbox to indicate that you understand that you can't change to a different VPP account later, then choose **Yes**.
 
 On the **Volume Purchase Program** page, you can now view information about the Apple VPP token including when it was last updated, when it will expire, and when it was last synchronized with Intune.
 
-You can synchronize the data held by Apple with Intune at any time by clicking **Sync now**.
+You can synchronize the data held by Apple with Intune at any time by choosing **Sync now**.
 
 ## To deploy a volume-purchased app
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Apps** &gt; **Managed Software** &gt; **Volume-Purchased apps**. This list shows all apps that were synchronized from the Apple VPP service.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Apps** &gt; **Managed Software** &gt; **Volume-Purchased apps**. This list shows all apps that were synchronized from the Apple VPP service.
 
-2.  Choose the app you want to deploy, click **Manage Deployment**, then use the instructions in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to complete uploading, creation, and deployment of the app.
+2.  Choose the app you want to deploy, choose **Manage Deployment**, then use the instructions in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to complete uploading, creation, and deployment of the app.
 
 When you deploy the app as a **Required** install, a license is used by each user that installs the app.
 
@@ -86,6 +87,6 @@ You can monitor which VPP apps have been deployed, and how many licenses are use
 > [!TIP]
 > You can also use app **Filters** to examine the status of each app install.
 
-### See Also
+### See also
 [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
