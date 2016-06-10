@@ -28,7 +28,7 @@ ms.suite: ems
 
 # What happens if you unenroll your device from Intune?
 
-When you uninstall the Company Portal app from your device, it also unenrolls your device from Intune. For additional information about what happens, use the link, shown in the "In this Article" section above, that matches the type of device you're using.
+For additional information about what happens, use the link, shown in the "In this Article" section above, that matches the type of device you're using.
 
 - [Windows 10 mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 or Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
