@@ -46,6 +46,7 @@ If you are currently using the **Intune admin console** to manage your devices, 
 
 - Android 4 or later
 
+Windows devices are currently not supported.
 ##  Supported apps
 * **Microsoft apps:** These apps have the Intune App SDK built-in and require no further processing before applying MAM policies.
 To see the full list of supported Microsoft apps, go to [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) on the Microsoft Intune application partners page. Click the app to see the supported scenarios, platforms and whether or not the app supports multi-identity.
