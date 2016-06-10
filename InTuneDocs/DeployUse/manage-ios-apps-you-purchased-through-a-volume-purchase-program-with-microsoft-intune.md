@@ -87,6 +87,6 @@ You can monitor which VPP apps have been deployed, and how many licenses are use
 > [!TIP]
 > You can also use app **Filters** to examine the status of each app install.
 
-### See Also
+### See also
 [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
