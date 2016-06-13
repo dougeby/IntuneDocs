@@ -29,7 +29,7 @@ ms.assetid: 80f7d796-ad0e-4a50-a6e2-cdc52e7eb57e
 
 Last year we began moving Intune Account Portal functionality to the Office 365 management portal. This move is now complete and the Intune Account Portal has been retired.
 
-Users and Groups are managed in appropriately named tabs whereas purchasing and subscription management is now under Billing.
+Users and groups are now managed in the **Users** and **Groups** tabs, respectively, while purchasing and subscription management are available by logging in to **Billing** in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx). To logon to the Office 365 portal, use your existing Intune credentials.
 
 Depending on how you purchased, you will access software downloads at either the Volume Licensing portal or the [Microsoft Online Services Customer Portal](http://go.microsoft.com/fwlink/?LinkId=259567).
 
