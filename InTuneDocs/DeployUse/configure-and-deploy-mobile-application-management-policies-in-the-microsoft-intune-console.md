@@ -18,7 +18,7 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,11 +41,15 @@ Mobile application management policies support:
 
 Unlike other Intune policies, you do not deploy a mobile application management policy directly. Instead, you associate the policy with the app that you want to restrict. When the app is deployed and installed on devices, the settings you specify will take effect.
 
-To apply restrictions to an app, the app must incorporate the Microsoft App Software Development Kit (SDK). There are two methods of obtaining this type of app:
+To apply restrictions to an app, the app must incorporate the Microsoft Intune App SDK. There are three methods of obtaining this type of app:
 
 -   **Use a policy managed app** – Has the App SDK built-in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. See a list of [apps you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 -   **Use a ‘wrapped’ app** - Apps that are repackaged to include the App SDK by using the **Microsoft Intune App Wrapping Tool**. This tool is typically used to process company apps that were created in-house. It cannot be used to process apps that were downloaded from the app store. See [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+
+- **Write your own app that incorporates the Intune App SDK** - The Intune App SDK let's you incorporate app management features into an app while you are writing it. For more information, see [Intune App SDK Overview](/develop/intune-app-sdk)
+
+For help choosing between the app wrapping tool and the Intune App SDK, see [Decide how to prepare apps for mobile application management with Microsoft Intune](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
 
 Some managed apps, like the Outlook app for iOS and Android support **multi-identity**. This means that Intune only applies management settings to corporate accounts or data in the app.
 
@@ -62,7 +66,7 @@ For example, using the Outlook app:
 
 ## Create and deploy an app with a mobile application management policy
 
--   **Step 1:** Get the link to a policy managed app, or create a wrapped app.
+-   **Step 1:** Get the link to a policy managed app, create a wrapped app, or use the Intune App SDK to write a MAM-enabled app.
 
 -   **Step 2:** Publish the app to your cloud storage space.
 
@@ -72,15 +76,12 @@ For example, using the Outlook app:
 
 -   **Step 5:** Monitor the app deployment.
 
-## **Step 1:** Get the link to a policy managed app, or create a wrapped app
+## **Step 1:** Get the link to a policy managed app, create a wrapped app, or use the Intune App SDK to write a MAM-enabled app.
 
--   **To obtain a link to a policy managed app** - From the app store, find, and note the URL of the policy managed app you want to deploy.
+-   **To obtain a link to a policy managed app in an app store** - From the app store, find, and note the URL of the policy managed app you want to deploy.
 
     For example, the URL of the Microsoft Word for iPad app is **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**
 
--   **To create a wrapped app** - Use the information in the topics [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) to create a wrapped app.
-
-    The tool creates a processed app that you will use when you publish the app to your cloud storage space.
 
 ## **Step 2:** Publish the app to your cloud storage space
 When you publish a managed app, the procedures differ depending on whether you are publishing a policy managed app, or an app that was processed using the Microsoft Intune App Wrapping Tool for iOS.
@@ -113,7 +114,7 @@ Once you have verified that the app is uploaded successfully, continue to Step 3
 
 ## **Step 3:** Create a mobile application management policy
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Overview** &gt; **Add Policy**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Overview** &gt; **Add Policy**.
 
 2.  Configure and deploy one of the following **Software** policies, depending on the device type you want to configure apps for:
 
@@ -144,7 +145,7 @@ Once you have verified that the app is uploaded successfully, continue to Step 3
     |**Encrypt app data**|Specifies that all data associated with this app will be encrypted, including data stored externally, such as SD cards.<br /><br />**Encryption for iOS**<br /><br />For apps that are associated with an Intune mobile application management policy, data is encrypted at rest using device level encryption provided by the OS. This is enabled through device PIN policy that must be set by the IT admin. When a PIN is required, the data will be encrypted per the settings in the mobile application management policy. As stated in Apple documentation, [the modules used by iOS 7 are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Encryption for Android**<br /><br />For apps that are associated with an Intune mobile application management policy, encryption is provided by Microsoft. Data is encrypted synchronously during file I/O operations.  Content on the device storage will always be encrypted. The encryption method is not FIPS 140-2 certified.|
     |**Block screen capture** (Android devices only)|Specifies that the screen capture capabilities of the device are blocked when using this app.|
 
-4.  When you are finished, click **Save Policy**.
+4.  When you are finished, choose **Save Policy**.
 
 The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
 
@@ -173,15 +174,15 @@ Once you have created and deployed an app associated with a mobile application m
 
 #### To view the status of the deployment
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Groups** &gt; **Overview**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Groups** &gt; **Overview**.
 
 2.  Perform one of the following steps:
 
-    -   Click **All Users**, then double-click on the user whose devices you want to examine. One the **User Properties** page, click **Devices**, then double-click the device you want to examine.
+    -   Choose **All Users**, then double-click on the user whose devices you want to examine. One the **User Properties** page, choose **Devices**, then double-click the device you want to examine.
 
-    -   Click **All Devices** &gt; **All Mobile Devices**. On the **Device Group Properties** page, click **Devices**, then double-click the device you want to examine.
+    -   Choose **All Devices** &gt; **All Mobile Devices**. On the **Device Group Properties** page, choose **Devices**, then double-click the device you want to examine.
 
-3.  From the **Mobile Device Properties** page, click **Policy** to see a list of the mobile application management policies that have been deployed to the device.
+3.  From the **Mobile Device Properties** page, choose **Policy** to see a list of the mobile application management policies that have been deployed to the device.
 
 4.  Select the mobile application management policy whose status you want to view. You can view details of the policy in the bottom pane and expand its node to display its settings.
 
