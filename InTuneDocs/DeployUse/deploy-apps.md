@@ -18,7 +18,7 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ These rules apply to purchasing additional cloud-based storage for Intune:
 
 -   You must have an active paid subscription in order to purchase additional storage.
 
--   Only billing administrators or global administrators for your Microsoft Online Service can purchase additional storage through the Intune account portal. To add, delete, or manage these administrators, you must be a global administrator and sign in to the Intune account portal.
+-   Only billing administrators or global administrators for your Microsoft Online Service can purchase additional storage through the Office 365 Management Portal. To add, delete, or manage these administrators, you must be a global administrator and sign in to the Office 365 Management Portal.
 
 -   If you are a volume licensing customer who has purchased Intune or the Microsoft Intune Add-on through the enterprise agreement, contact your Microsoft Account Manager or Microsoft Partner for pricing information and to purchase additional storage.
 
