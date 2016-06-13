@@ -18,7 +18,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -99,7 +99,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow application store**|Allows the device to access the app store.|Yes|
 |**Require a password to access application store**|Yes|
 |**Allow in-app purchases**|Allow store purchases to be made from within a running app.|Yes|
-|**Allow managed documents in other unmanaged apps**|Allows corporate documents to be viewed in any app.|OS 7.1 and later|
+|**Allow managed documents in other unmanaged apps**|Allows corporate documents to be viewed in any app.<br>**Example:** You want to prevent users saving files from the OneDrive app to Dropbox. Configure this setting as no. After the device receives the policy (for example after a restart), it will no longer allow saving.|iOS 7.1 and later|
 |**Allow unmanaged documents in other managed apps**|Allow any document to be viewed in corporate managed apps.|iOS 7.1 and later|
 |**Allow video conferencing**|Allow video conferencing apps such as Facetime on the device.|Yes|
 |**Allow adult content in media store**|Allow the device to access content rated as adult from the store.|Yes|
@@ -153,7 +153,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then specify the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.For more help, see **How to specify URLs to app stores** later in this topic.|
+|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Choose **Browse**, then specify the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.For more help, see **How to specify URLs to app stores** later in this topic.|
 |**Allow touch**|Enables or disables the touch screen on the device.|
 |**Allow screen rotation**|Enables or disables changing the screen orientation when you rotate the device.|
 |**Allow volume buttons**|Enables or disables the use of the volume buttons on the device.|
@@ -183,9 +183,9 @@ Use the **Noncompliant Apps Report** to view the compliance of allowed and block
 
 ##### To run the Noncompliant Apps Report
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Reports** &gt; **Noncompliant Apps Report**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Reports** &gt; **Noncompliant Apps Report**.
 
-2.  Select the device groups that you would like to check, whether you want to check for compliant apps, noncompliant apps, or both, then click **View Report**.
+2.  Select the device groups that you would like to check, whether you want to check for compliant apps, noncompliant apps, or both, then choose **View Report**.
 
 #### How to specify URLs to app stores
 To specify an app URL in the compliant and noncompliant apps list, or in the **Select a managed app that will be allowed to run when the device is in kiosk mode** option (iOS only), use the following format:
@@ -224,7 +224,7 @@ Before you start, you must have installed the Apple Configurator and created a c
 |Setting name|Details|
     |----------------|--------------------|
 |**Custom configuration profile name (displayed to users)**|Provide a name for the policy as it will be displayed on the device, and in Intune policy reports.|
-|**Configuration profile file**|Click **Import**, then browse to the configuration profile that you created using the Apple Configurator. **Note:** Ensure that the settings you export from the Apple Configurator tool are compatible with the version of iOS on the devices to which you deploy the iOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) web site.|
+|**Configuration profile file**|Choose **Import**, then browse to the configuration profile that you created using the Apple Configurator. **Note:** Ensure that the settings you export from the Apple Configurator tool are compatible with the version of iOS on the devices to which you deploy the iOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) web site.|
     |**Configuration profile details**|Displays the xml code for the configuration profile that you imported.|
 
 ### See also
