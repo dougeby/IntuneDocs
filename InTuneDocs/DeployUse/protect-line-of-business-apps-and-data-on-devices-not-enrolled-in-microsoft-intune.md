@@ -53,6 +53,12 @@ To associate your line-of-business app with MAM policies, you must add the app d
 
 ## Step 3: Apply MAM policies
 Once the app metadata is uploaded to the service, the app will show up in the list of apps.  You can now [create a new policy or an existing policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) and apply it to the line of business app you added in step 2.
+
+>[!IMPORTANT]
+>You must target the MAM policy to the users who are going to use the wrapped app.  Users who don’t have this policy deployed to them will not be able to use the 
+              app.
+
+
   ![Screenshot of the Targeted list of apps blade with the new line of business app displayed](../media/mam-azure-portal-lob-on-targeted-app-list.png)
 ## Step 4: Distribute the app
 You can deploy apps to your end-users in the following ways:

@@ -18,7 +18,7 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,7 +36,7 @@ Use the information in this topic to learn how to add apps to Intune before you 
 ## Add the app
 You use the Intune Software Publisher to configure the properties of the app and upload it to your cloud storage space by using the following procedure:
 
-1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Add Apps** to start the Intune software publisher.
+1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), choose **Apps** &gt; **Add Apps** to start the Intune software publisher.
 
     > [!TIP]
     > You might need to enter your Intune username and password before the publisher starts.
@@ -48,7 +48,7 @@ You use the Intune Software Publisher to configure the properties of the app and
     **Select how this software is made available to devices** - Choose **Software installer**, then specify:
 
 	- **Select the software installer file type** - This indicates the type of software you want to deploy. For a Windows PC, choose **Windows Installer**.
-    - **Specify the location of the software setup files** - Enter the location of the installation files or click **Browse** to select the location from a list.
+    - **Specify the location of the software setup files** - Enter the location of the installation files or choose **Browse** to select the location from a list.
     - **Include additional files and subfolders from the same folder** - Some software that uses Windows Installer requires supporting files which are typically found in the same folder as the installation files. Select this option if you also want to deploy these supporting files.
 
 	For example, if you want to publish an app named Application.msi to Intune, the page would look like this:
@@ -72,22 +72,23 @@ You use the Intune Software Publisher to configure the properties of the app and
 
 4.  On the **Requirements** page, select the requirements that must be met before the app can start to install on a device from. Choose from **Architecture** - Select whether this app can be installed on 32-bit, 64-bit, or both operating systems, **Operating System** - Select the minimum operating system on which this app can be installed.
 
-5.  For the **Windows Installer** file type only (exe only): On the **Detection rules** page, you can configure rules to detect if the app you are configuring is already installed on a PC, or  you can use the default detection rules to automatically overwrite any previously installed versions of the app.
+5.  On the **Detection rules** page, you can configure rules to detect if the app you are configuring is already installed on a PC, or  you can use the default detection rules to automatically overwrite any previously installed versions of the app. This option is for Windows Installer (.exe files only).
+6.  
 	The rules you can configure are:
 	- **File exists** - Specify the path to the file you want to detect. You can search under **%ProgramFiles%** (which searches **Program Files**\*&lt;path&gt;* and **Program Files (x86)**\*&lt;path&gt;*) on the PC or **%SystemDrive%** (which searches from the root drive of the PC, typically C:)
-	- **MSI product code exists** - Click **Browse** to choose the Windows Installer (msi) file you want to detect. 
+	- **MSI product code exists** - Choose **Browse** to choose the Windows Installer (msi) file you want to detect. 
 	- **Registry key exists** - Specify a registry key that begins with **HKEY_LOCAL_MACHINE\**. Both 32-bit and 64-bit registry paths are searched. If the key you specified exists in either location, the detection rule is satisfied.
 
     If the app satisfies any of the rules you have configured, it will not be installed.
 
-6.  For the **Windows Installer** file type only (msi and exe): On the **Command line arguments** page, choose whether you want to supply optional command-line arguments for the installer. For example, some installers might support the argument **/q** to install silently with no user intervention.
+7.  For the **Windows Installer** file type only (msi and exe): On the **Command line arguments** page, choose whether you want to supply optional command-line arguments for the installer. For example, some installers might support the argument **/q** to install silently with no user intervention.
 
-7.  For the **Windows Installer** file type only (exe only): On the **Return codes** page, you can add new error codes that are interpreted by Intune when the app installs on a managed Windows PC.
+8.  For the **Windows Installer** file type only (exe only): On the **Return codes** page, you can add new error codes that are interpreted by Intune when the app installs on a managed Windows PC.
     By default, Intune uses industry-standard return codes to report the failure or success of an app package installation: **0** - Success or **3010** - Success with restart. You can also add your own return codes to this list. If you specify a list of return codes and the app installation returns a code that isn't on the list, it is interpreted as a failure.
 
-8.  On the **Summary** page, review the information you specified. Once you are ready, click **Upload**.
+9.  On the **Summary** page, review the information you specified. Once you are ready, choose **Upload**.
 
-9. Click **Close** to finish.
+10. Choose **Close** to finish.
 
 The app is displayed on the **Apps** node of the **Apps** workspace.
 

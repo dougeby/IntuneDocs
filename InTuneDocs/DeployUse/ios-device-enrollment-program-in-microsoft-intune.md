@@ -18,7 +18,7 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -61,7 +61,7 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
     In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment** and then click **Add**.
 
     Provide **General** details including **Name** and **Description**, specify whether devices assigned to the profile have user affinity or belong to a group.
-      - **Prompt for user affinity**: The device must be affiliated with a user during initial setup and could then be permitted to access company data and email as that user.  **User affinity** should be configured for DEP-managed devices that belong to users and need to use the company portal (i.e. to install apps). 
+      - **Prompt for user affinity**: The device must be affiliated with a user during initial setup and could then be permitted to access company data and email as that user.  **User affinity** should be configured for DEP-managed devices that belong to users and need to use the company portal (i.e. to install apps).
       - **No user affinity**: The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation, including the Company Portal app used for installing line-of-business apps, won’t work.
 
     Next, enable **Configure Device Enrollment Program settings for this policy** to support DEP.
