@@ -7,7 +7,7 @@ description:
 keywords:
 author: Lindavr
 manager: jeffgilb
-ms.date: 06/15/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
