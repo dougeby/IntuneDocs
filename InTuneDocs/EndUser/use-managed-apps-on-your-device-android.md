@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/11/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,13 +66,13 @@ Here are some examples of options that your IT admin can manage in an app and th
 
 Some common apps that your IT department might manage are:
 
--   Managed web browser
+-   Intune Managed Browser
 
--   Managed image viewer
+-   Intune image Viewer
 
--   Managed PDF viewer
+-   Intune PDF Viewer
 
--   Managed AV player
+-   Intune AV player
 
 -   Microsoft Word, Excel, PowerPoint
 
