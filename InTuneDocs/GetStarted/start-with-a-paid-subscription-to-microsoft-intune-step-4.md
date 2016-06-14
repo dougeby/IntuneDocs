@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Manage Intune licenses
-Users must have a license to your Intune subscription before they can sign in to use the service or enroll their devices into management. When users have a license, they are a member of the [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] user group. This group includes all users who have a license to use the subscription. **Each user license supports enrolling up to 5 devices**.
+Before users can sign in to use the Intune service or enroll their devices into management, they must first be assigned a license to your Intune subscription from within the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854). Once assigned a license, users' names will appear in the Intune Administration console. Users can then enroll up to five devices.
 
 ## How Intune licenses are assigned
 When user accounts are synchronized from your on-premsies Active Directory or manually added to your cloud services subscription via the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), they are not automatically assigned an Intune license. Instead, at a later time, an Intune tenant administrator must edit the user account to assign a license to the user from the Office 365 portal.
@@ -42,9 +42,9 @@ You use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 
 1.  Sign in to the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) using your tenant administrator credentials and then select **People** > **All Users**.
 
-2.  Select the user account that you want to assign and Intune user license to and enable the **Microsoft Intune** checkbox on the user account properties.
+2.  Select the user account that you want to assign an Intune user license to, and select **Microsoft Intune** on the user account properties.
 
-3.  The user account will now be added to the Microsoft Intune user group which grants the user permissions to use the service and enroll their devices into management.
+3.  The user account now has the needed permissions to use the service and enroll devices into management.
 
 ### Use PowerShell to selectively manage EMS user licenses
 Organizations that use Microsoft's Enterprise Mobility Suite (EMS) might have users who only require Azure Active Directory Premium or Intune services in the EMS package. You can assign one or a subset of services using [Azure Active Directory PowerShell cmdlets](https://msdn.microsoft.com/library/jj151815.aspx). 
