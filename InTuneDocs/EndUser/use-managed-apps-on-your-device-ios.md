@@ -64,17 +64,6 @@ Here are some examples of options that your IT admin can manage in an app and th
 
 -   Data encryption requirements
 
-Some common apps that your IT department might manage are:
-
--   Managed web browser
-
--   Managed image viewer
-
--   Managed PDF viewer
-
--   Managed AV player
-
--   Microsoft Word, Excel, PowerPoint
 
 Contact your IT admin for more information about the managed apps on your device. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
