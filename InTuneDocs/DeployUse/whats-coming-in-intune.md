@@ -7,7 +7,7 @@ keywords:
 author: Lindavr
 manager: jeffgilb
 ms.date: 06/10/2016
-ms.topic: get-started-article
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -55,6 +55,17 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 ## Device management
 - **Windows Defender policy setting to protect against potentially unwanted apps.** A new Windows Defender setting named **Potentially Unwanted Application Detection** has been added to the general configuration policy for Windows 10 Desktop and Mobile. You can use this setting to protect enrolled Windows desktop computers against running software classed by Windows Defender as potentially unwanted. You can protect against these applications running, or use audit mode to report when a potentially unwanted application is installed.
 <!---TFS 1244478--->
+
+## Conditional access
+**Cisco ISE network access control policy for Intune.**  Customers who use the Cisco Identity Service Engine (ISE) 2.1 and also use Microsoft Intune can set a network access control policy in ISE.
+
+Using this policy, devices that need to connect to the network using WiFi or VPN must meet following conditions before they are allowed access:
+
+* Must be managed by Intune
+* Must be compliant with any deployed Intune compliance policies
+
+End users of noncompliant devices will be prompted to enroll, and remediate any compliance issues to gain access.
+<!---TFS 1299144--->
 
 ## Company Portal
 **Changes to Device Enrollment Managers accounts in the iOS Company Portal app.** To improve performance and scale, Intune will no longer show all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices. Only use DEM accounts when user-less enrollment for shared devices is unavailable.
