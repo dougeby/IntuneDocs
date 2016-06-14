@@ -7,7 +7,7 @@ keywords:
 author: Lindavr
 manager: jeffgilb
 ms.date: 06/10/2016
-ms.topic: get-started-article
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
