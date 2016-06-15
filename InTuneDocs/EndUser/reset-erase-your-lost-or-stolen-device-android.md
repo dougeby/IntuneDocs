@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/20/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,9 +33,9 @@ If your Android phone is lost or stolen, you can reset it to factory defaults fr
 To learn about what happens if you reset your device, see [What happens if you reset your device using the Company Portal](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
 > [!WARNING] 
-> Resetting a device to factor defaults removes both your personal and work information from it.
+> Resetting a device to factor defaults removes both your personal and work or school information from it.
 
-1.  In your browser, open the [Company Portal website](http://portal.manage.microsoft.com), and sign in to your work account.
+1.  In your browser, open the [Company Portal website](http://portal.manage.microsoft.com), and sign in to your work or school account.
 
 2.  Tap **My Devices** and select the name of the lost of stolen  device.
 

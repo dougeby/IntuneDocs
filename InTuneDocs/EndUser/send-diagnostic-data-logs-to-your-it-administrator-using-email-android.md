@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Send diagnostic data logs to your IT administrator using email
 
-If you get an error on your Android device while you're working with your school or company apps or while you're in the Company Portal app, you can send diagnostic data logs  to help your IT admin figure out and fix the error. To include all of the details in the logs, which will make it easier for your IT admin to figure out the issue, turn on Verbose Logging.
+If you get an error on your Android device while you're working with your school or company apps or while you're in the Company Portal app, you can send diagnostic data logs  to help your IT admin figure out and fix the error. To include all of the details in the logs, which will make it easier for your IT admin to figure out the issue, turn on Verbose Logging. you can read more about [verbose logging](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
 To turn on verbose logging:
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/24/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.suite: ems
 
 If your company or school uses Microsoft Intune, you can enroll your Android device to get access to company email, files, and other resources. Enrolling your devices allows your IT department to manage those work or school resources and keep them secure, while giving you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens when I install and Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
 
-These enrollment instructions are for Samsung Knox Android devices and "native" (non-Samsung Knox) Android devices. To determine if you have a Samsung Knox device, go to **Settings** &gt; **About phone**. If you don't see the word  "Knox" listed there, you have a native Android device.
+These enrollment instructions are for Samsung Knox Android devices and "native" (non-Samsung Knox) Android devices. To determine if you have a Samsung Knox device, go to **Settings** &gt; **About device**. If you don't see "KNOX version" listed there, you have a native Android device.
 
 Before or after enrolling, you may be asked to choose a category that best describes how you use your device. Your IT administrator uses this category to help determine what apps you have access to.
 
@@ -57,7 +57,7 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never makes or manages your phone calls**! Google controls the message text, and Microsoft cannot change it. When you allow access, all you're doing is allowing your device to write data logs to the device's SD card, which in turn lets you move those logs by using a USB cable. You might need to use this capability to send logs to your IT administrator if you have a problem while using the Company Portal app. Learn how to [send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android.md).
+	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never makes or manages your phone calls**! Google controls the message text, and Microsoft cannot change it. When you allow access, all you're doing is allowing your device to write data logs to the device's SD card, which in turn lets you move those logs by using a USB cable.
 
 	If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
 
@@ -65,7 +65,7 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never accesses your contacts!** Google controls the message text, and Microsoft cannot change it. When you allow access, it only allows the Company Portal app to access data logs to help troubleshoot issues with your device.
+	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never accesses your contacts!** Google controls the message text, and Microsoft cannot change it. When you allow access, it only allows the Company Portal app to create, use, and manage your work account.
 
 	If you deny access, the message will appear again the next time you tap **Send Data**, but you can turn off future messages by tapping the **Never ask again** check box. If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Storage**, and then turn on the permission.
 
@@ -97,7 +97,7 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![Enter PIN or password](./media/and-enroll-6-PIN-native.png)
 
-13.  Follow the instructions below that match the type of device you’re using (native Android or Samsung Knox). To determine if you have a Samsung Knox device, go to **Settings** &gt; **About phone**. If you don't see the word "Knox" listed there, you have a native Android device.
+13.  Follow the instructions below that match the type of device you’re using (native Android or Samsung Knox). To determine if you have a Samsung Knox device, go to **Settings** &gt; **About device**. If you don't see "KNOX version" listed there, you have a native Android device.
 
 	-	Native (non-Samsung Knox) device: On the **Name the certificate** screen, tap **OK** to accept the default certificate.
 
@@ -119,7 +119,7 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![Company access setup complete screen](./media/and-enroll-10-comp-access-setup-complete.png)
 
-Before trying to install company apps, go to **Settings** &gt; **Security**, and turn on **Unknown sources**. If you don't turn on this option before trying to install apps, you'll see the message "Install blocked." For security reasons, your phone is set to block installations of apps obtained from unknown sources." You can tap **Settings** on the error dialog to go to the **Unknown sources** option.
+Before trying to install company apps, go to **Settings** &gt; **Security**, and turn on **Unknown sources**. If you don't turn on this option before trying to install apps, you'll see the message "Install blocked." For security reasons, your device is set to block installations of apps obtained from unknown sources." You can tap **Settings** on the error dialog to go to the **Unknown sources** option.
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
