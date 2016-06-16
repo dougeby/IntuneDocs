@@ -193,7 +193,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
         Selecting the **All platforms** option means that Azure Active Directory will apply this policy to all authentication requests, regardless of the platform reported by the client application.  All platforms will be required to enrolled and become compliant, except for:
         *	Windows devices will be required to be enrolled and compliant, domain joined with on-premises Active Directory, or both
-	    * Unsupported platforms like Mac.  However, apps using modern authentication coming from these platforms will be still be blocked.
+	    * Unsupported platforms like Mac OS.  However, apps using modern authentication coming from these platforms will be still be blocked.
 
         >[!TIP]
            You may not see this option if you not already using conditional access for PCs.  Use the **Specific platforms** instead. Conditional access for PCs is not currently available to all Intune customers.   You can find out more information about known issues as well as how to get access to this feature at the [Microsoft Connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
