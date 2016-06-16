@@ -191,7 +191,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
         This will require that any device used to access **Exchange  Online**,  to be enrolled in Intune and compliant with the policies.  Any client application using **modern authentication** is subject to the conditional access policy, and if the platform is currently not supported by Intune, access to **Exchange Online** is blocked.
 
-        Selecting **All platforms** option means that Azure Active Directory will apply this policy to all authentication requests, regardless of the platform reported by the client application.  All platforms will be required to enrolled and become compliant, except for:
+        Selecting the **All platforms** option means that Azure Active Directory will apply this policy to all authentication requests, regardless of the platform reported by the client application.  All platforms will be required to enrolled and become compliant, except for:
         *	Windows devices will be required to be enrolled and compliant, domain joined with on-premises Active Directory, or both
 	    * Unsupported platforms like Mac.  However, apps using modern authentication coming from these platforms will be still be blocked.
 
