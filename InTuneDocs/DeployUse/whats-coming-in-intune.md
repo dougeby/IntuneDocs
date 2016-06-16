@@ -79,9 +79,9 @@ End users of noncompliant devices will be prompted to enroll, and remediate any 
 Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
 
 The preliminary timeline for this change is as follows:
-- In June, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
-- Around August, 2016, some existing tenants will not see the “select device groups” in the wizard.
-- Around October, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
+- In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
+- Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
+- Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
 <!---	TFS 1278864--->
 
 **Changes in support for the iOS Company Portal app.**
