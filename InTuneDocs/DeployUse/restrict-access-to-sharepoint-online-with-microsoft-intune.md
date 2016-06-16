@@ -149,10 +149,11 @@ Next, configure the policy to require that only managed and compliant devices ca
 
 4.   Under **Browser access** to SharePoint Online and OneDrive for Business, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS), and Chrome (Android). Access from other browsers will be blocked.  The same platform restrictions you selected for Application access for OneDrive also apply here.
 
-  On **Android** devices, users must enable the browser access.  To do this the end-user must enable the “Enable Browser Access” option on the device as follows:
+  On **Android** devices, users must enable the browser access.  To do this the end-user must enable the “Enable Browser Access” option on the enrolled device as follows:
   1.	Launch the **Company Portal app**.
   2.	Go to the **Settings** page from the triple dots (…) or the hardware menu button.
   3.	Press the **Enable Browser Access** button.
+  4.  In the Chrome browser, sign out of Office 365 and restart Chrome.
 
   On **iOS and Android** platforms, To identify the device that is used to access the service, Azure Active Directory will issue a Transport layer security ( TLS) certificate to the device.  The device displays the certificate with a prompt to the end-user to select the certificate as seen in the screenshots below. The end-user must select this certificate before they can continue to use the browser.
 
