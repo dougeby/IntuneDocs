@@ -158,7 +158,8 @@ The following filetypes are supported:
 * **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8.
 * **Image:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
 * PDF, PPDF
---------
+
+------------
 |**pfile**|**text**|
 |----|----|
 |Pfile is a generic “wrapper” format for protected files that encapsulates the encrypted content and the RMS licenses and can be used to protect any file type.|Text files, including XML, CSV, etc. can be opened for viewing in the app even when they are protected. File types: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
