@@ -76,17 +76,19 @@ You can restrict access to Exchange Online email from **Outlook** and other **ap
 - iOS 7.1 and later
 - Windows Phone 8.1 and later
 
+**Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Microsoft Office clients.
+
+-   The ADAL based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, the user is directed to a sign-in web page. This new sign-in method enables better security like **multi-factor authentication**, and **certificate-based authentication**.
+This [article](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) has more detailed information on how modern authentication works.
+
 You can restrict access to **Outlook Web Access (OWA)** on Exchange Online when accessed from a browser on **iOS** and **Android** devices.  Access will only be allowed from only supported browsers on compliant devices:
 
 * Safari (iOS)
 * Chrome (Android)
 
-Unsupported browsers will be blocked.
+Unsupported browsers will be blocked.The OWA apps for iOS and Android are not supported.  They should be blocked through ADFS claims rules:
+* Setup ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser based applications](https://technet.microsoft.com/library/dn592182.aspx).
 
- **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Microsoft Office clients.
-
-> -   The ADAL based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, the user is directed to a sign-in web page. This new sign-in method enables better security like **multi-factor authentication**, and **certificate-based authentication**
-> This [article](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) has more detailed information on how modern authentication works.
 
 
 You can restrict access to Exchange email from the built-in **Exchange ActiveSync email client** on the following platforms:
@@ -204,10 +206,11 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
 4. Under **Outlook web access (OWA)**, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS), and Chrome (Android). Access from other browsers will be blocked. The same platform restrictions you selected for Application access for Outlook also apply here.
 
-  On **Android** devices, users must enable the browser access.  To do this the end-user must enable the “Enable Browser Access” option on the device as follows:
+  On **Android** devices, users must enable the browser access.  To do this the end-user must enable the “Enable Browser Access” option on the enrolled device as follows:
   1.	Launch the **Company Portal app**.
   2.	Go to the **Settings** page from the triple dots (…) or the hardware menu button.
   3.	Press the **Enable Browser Access** button.
+  4.	In the Chrome browser, sign out of Office 365 and restart Chrome.
 
   On **iOS and Android** platforms, To identify the device that is used to access the service, Azure Active Directory will issue a Transport layer security ( TLS) certificate to the device.  The device displays the certificate with a prompt to the end-user to select the certificate as seen in the screenshots below. The end-user must select this certificate before they can continue to use the browser.
 
