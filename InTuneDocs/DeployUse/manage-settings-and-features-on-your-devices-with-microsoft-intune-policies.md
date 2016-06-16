@@ -219,4 +219,4 @@ When you delete a policy, or remove a device from a group to which a policy was 
 
 ### Where can I find help troubleshooting policies?
 
-See [Troubleshoot policies in Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md).
+See [Troubleshoot policies in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
