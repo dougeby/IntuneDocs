@@ -99,14 +99,14 @@ Intune notification rules define who an email alert will be sent to from Intune.
 	In step two of the Create Notification Rule Wizard, select the device groups which the rule will target. This step, “select device groups”, is being removed from the Intune Console.
 
 	The preliminary timeline for this change is as follows:
-	- In June, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
-	- Around August, 2016, some existing tenants will not see the “select device groups” in the wizard.
-	- Around October, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
+	- In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
+	- Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
+	- Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
 
 
 - **Changes in support for the iOS Company Portal app**. In July, all users of the Microsoft Intune Company Portal app for iOS will be required to use its latest version. New users will only be able to download the latest version and current users will be required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions won’t be able to use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.
 
- 
+
 
 
 
