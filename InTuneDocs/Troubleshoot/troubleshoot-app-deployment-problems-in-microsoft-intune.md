@@ -18,7 +18,7 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -104,6 +104,7 @@ The following table lists common errors that may occur during Intune app deploym
 |0x80073CF0|The package could not be opened.|Possible causes:<br /><br />-   The package is unsigned.<br />-   The publisher name does not match the signing certificate subject.<br /><br />Check the AppxPackagingOM event log for more information.|
 |0x80073CF3|The package failed update, dependency, or conflict validation|Possible causes:<br /><br />-   The incoming package conflicts with an installed package.<br />-   A specified package dependency is not found.<br />-   The package does not support the correct processor architecture.<br /><br />Check the AppXDeployment-Server event log for more information.|
 |0x80073CFB|The provided package is already installed, and reinstallation of the package is blocked|You might receive this error if you are installing a package that is not identical to the package that is already installed. Confirm the digital signature is also part of the package. When a package is rebuilt or re-signed, that package is no longer bitwise identical to the previously installed package. Two possible options to fix this error are as follows:<br /><br />-   Increment the version number of the app, then rebuild and re-sign the package.<br />-   Remove the old package for every user on the system before you install the new package.|
+|0x87D1041C|Application installation succeeded but application is not detected.|- User installed app from company portal, then uninstalled directly from the device. Reinstall app from the company portal.<br /><br />- You may have a mismatch between the version number of a line-of-business app as recognized by Intune, and the version installed on the device. Ensure Intune has the correct version and reinstall the app.|
 
 ### Next steps
 If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
