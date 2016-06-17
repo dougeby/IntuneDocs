@@ -18,7 +18,7 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,20 +34,22 @@ When a new version of an app you have deployed is released, Intune lets you upda
 > [!IMPORTANT]
 > When you deploy an app with a deployment action of **Required install** and later change the deployment action to **Available install**, updates to the app are not automatically installed on devices that installed the app before the deployment change was made. To fix this issue, you can do the following:
 > 
-> -   Have the user of the device go to the company portal, select the installed app, and have them click **Install**.
+> -   Have the user of the device go to the company portal, select the installed app, and have them choose **Install**.
 > -   Change the deployment action to **Uninstall**, and after the app has been uninstalled, redeploy the app with a deployment action of **Available install**.
 
 ### To update an app
 
-1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Apps**.
+1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), choose **Apps** &gt; **Apps**.
 
-2.  From the **Apps** list, select the app you want to update, and then click **Edit**.
+2.  From the **Apps** list, select the app you want to update, and then choose **Edit**.
 
 3.  In the **Edit Software** wizard, supply any new details for the app package.
 
-4.  When you are finished, click **Update**.
+4.  When you are finished, choose **Update**.
 
 When devices next check for available apps, the app will be automatically updated to the latest version.
+For apps installed from an app package (line of business apps), the app will be upgraded automatically for both required, and available deployments, as long as the app has the same identifier.
+For apps deployed as a link to a store, the update is managed by the store from which the app originates.
 
 
 
