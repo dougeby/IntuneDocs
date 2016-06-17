@@ -83,7 +83,6 @@ Learn more about [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([
 
 ### USB-SA
 USB-connected, Setup Assistant enrollment. The admin creates an Intune policy and exports it to Apple Configurator. USB-connected devices are prepared with Intune policy. The admin must enroll each device by hand. Users receive their devices and run Setup Assistant, enrolling their device. This method supports **iOS Supervised** mode which in turn enables:
-  -	Locked enrollment
   -	Conditional access
   -	Jailbreak detection
   -	Mobile application management

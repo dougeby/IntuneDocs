@@ -7,7 +7,7 @@ keywords:
 author: Lindavr
 manager: jeffgilb
 ms.date: 06/10/2016
-ms.topic: get-started-article
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -56,6 +56,17 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 - **Windows Defender policy setting to protect against potentially unwanted apps.** A new Windows Defender setting named **Potentially Unwanted Application Detection** has been added to the general configuration policy for Windows 10 Desktop and Mobile. You can use this setting to protect enrolled Windows desktop computers against running software classed by Windows Defender as potentially unwanted. You can protect against these applications running, or use audit mode to report when a potentially unwanted application is installed.
 <!---TFS 1244478--->
 
+## Conditional access
+**Cisco ISE network access control policy for Intune.**  Customers who use the Cisco Identity Service Engine (ISE) 2.1 and also use Microsoft Intune can set a network access control policy in ISE.
+
+Using this policy, devices that need to connect to the network using WiFi or VPN must meet following conditions before they are allowed access:
+
+* Must be managed by Intune
+* Must be compliant with any deployed Intune compliance policies
+
+End users of noncompliant devices will be prompted to enroll, and remediate any compliance issues to gain access.
+<!---TFS 1299144--->
+
 ## Company Portal
 **Changes to Device Enrollment Managers accounts in the iOS Company Portal app.** To improve performance and scale, Intune will no longer show all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices. Only use DEM accounts when user-less enrollment for shared devices is unavailable.
 <!---TFS 1233681--->
@@ -68,13 +79,13 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
 
 The preliminary timeline for this change is as follows:
-- In June, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
-- Around August, 2016, some existing tenants will not see the “select device groups” in the wizard.
-- Around October, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
+- In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
+- Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
+- Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
 <!---	TFS 1278864--->
 
 **Changes in support for the iOS Company Portal app.**
-Users must update to latest iOS Company Portal app. In the coming months, all users of the Microsoft Intune Company Portal app for iOS will be required to use its latest version. New users will only be able to download the latest version and current users will be required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions won’t be able to use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.  
+In July, all users of the Microsoft Intune Company Portal app for iOS will be required to use its latest version. New users will only be able to download the latest version and current users will be required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions won’t be able to use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.  
 
 **Intune Viewer apps.** With the release of the new RMS sharing app, we are removing the following Intune Viewer apps, beginning August, 2016:
 - Intune AV Viewer
