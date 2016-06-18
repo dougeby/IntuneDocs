@@ -29,32 +29,6 @@ ms.suite: ems
 
 This topic explains some of the concepts you'll need to understand before you start deploying apps with Microsoft Intune.
 
-## The Intune software publisher
-The **Microsoft Intune Software Publisher** starts when you add or modify apps from the Microsoft Intune administrator console. From the publisher, you select and configure a software installer type that will either upload apps (programs for computers or apps for mobile devices) to be stored in Intune cloud storage, or link to an online store or web application.
-
-### Requirements
-Before you begin to use the Microsoft Intune Software Publisher, you must install the full version of [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). After installation, you might have to restart your computer before the Software Publisher will open correctly.
-
-## Cloud storage space
-All apps that you deploy using the software installer installation type must be packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. A paid subscription includes 20GB, with the option to purchase additional storage.
-
-You can see how much space you are using and purchase more storage in the **Storage Use** node of the **Admin** workspace.
-
-These rules apply to purchasing additional cloud-based storage for Intune:
-
--   You must have an active paid subscription in order to purchase additional storage.
-
--   Only billing administrators or global administrators for your Microsoft Online Service can purchase additional storage through the Office 365 Management Portal. To add, delete, or manage these administrators, you must be a global administrator and sign in to the Office 365 Management Portal.
-
--   If you are a volume licensing customer who has purchased Intune or the Microsoft Intune Add-on through the enterprise agreement, contact your Microsoft Account Manager or Microsoft Partner for pricing information and to purchase additional storage.
-
-#### Requirements for cloud storage space
-
--   All files associated with an app must be in the same location and be accessible by Intune.
-
--   The maximum file size for any file you upload is 2GB.
-
--   To upload files, you must have a minimum Internet speed of 768kbps.
 
 ## App deployment actions
 When you deploy apps, you can choose from one of the following deployment actions:
@@ -63,8 +37,6 @@ When you deploy apps, you can choose from one of the following deployment action
 
     > [!TIP]
     > For iOS devices that are not in supervised mode, and for all Android devices, the user must accept the app offer before it is installed.
-    >
-    > You can no longer create new app deployments to iOS devices running an operating system earlier than iOS 7.1. Any existing app deployments to devices running an earlier operating system than iOS 7.1 will continue to work and be managed by Intune.
     > 
 	>  If an end user uninstalls an app that you deployed as a required install, Intune will automatically reinstall the app after the next inventory cycle, which typically occurs every 7 days.
 
@@ -96,11 +68,9 @@ When two deployments, with the same deployment action are received by a device, 
 
 -   Deployments to a device group take precedence over deployments to a user group. However, if an app is deployed to a user group with a deployment action of **Available** and the same app is also deployed to a device group with a deployment action of **Not Applicable**, the app will be made available in the company portal for users to install.
 
--   The intent of the IT admin takes precedence over the user.
-
 -   An install action takes precedence over an uninstall action.
 
--   If both a required and an available install are received by a device, the actions are combined (the app is both required and available).
+-   If both a required and an available install are received by a device, the actions are combined (the app is both required and available - in other words, the end user can install it from the company portal before the required install begins).
 
 
 ## Next steps
