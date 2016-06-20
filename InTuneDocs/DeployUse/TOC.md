@@ -123,4 +123,4 @@
 
 # [Develop & Customize Apps](/intune/develop/intune-app-sdk)
 
-# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Troubleshoot](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)

@@ -15,7 +15,7 @@ ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 
 # optional metadata
 
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: mamoriss
@@ -79,13 +79,13 @@ End users of noncompliant devices will be prompted to enroll, and remediate any 
 Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
 
 The preliminary timeline for this change is as follows:
-- In June, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
-- Around August, 2016, some existing tenants will not see the “select device groups” in the wizard.
-- Around October, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
+- In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
+- Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
+- Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
 <!---	TFS 1278864--->
 
 **Changes in support for the iOS Company Portal app.**
-Users must update to latest iOS Company Portal app. In the coming months, all users of the Microsoft Intune Company Portal app for iOS will be required to use its latest version. New users will only be able to download the latest version and current users will be required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions won’t be able to use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.  
+In July, all users of the Microsoft Intune Company Portal app for iOS will be required to use its latest version. New users will only be able to download the latest version and current users will be required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions won’t be able to use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.  
 
 **Intune Viewer apps.** With the release of the new RMS sharing app, we are removing the following Intune Viewer apps, beginning August, 2016:
 - Intune AV Viewer
