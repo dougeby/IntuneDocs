@@ -59,7 +59,7 @@ In the screenshot below you can see two clear examples:
 ## Policy refresh and update intervals
 Be aware that policies are refreshed and updated on regular intervals. In general, policies should be registered on devices within 15 minutes of your making a change. Here are more details about regular intervals for policy refreshing:
 
--   **Windows device enrolled for MDM**: This is triggered by a scheduled task at 3:00am local time on the device and occurs every day.
+-   **Windows device enrolled for MDM**: Policy is updated every 8 hours for Windows 8.1 and Windows 10 devices and every 24 hours for Windows RT devices.
 
 -   **Windows Phone**: Policy is updated every 8 hours. This can be forced by a refresh in the Company Portal, under **Settings**.
 

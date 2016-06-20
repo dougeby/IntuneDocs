@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -50,18 +50,18 @@ For a complete list of Intune policies, see [Microsoft Intune policy reference](
 
 ## Create a configuration policy
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Policy** &gt; **Configuration Policies** &gt; **Add**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy** &gt; **Configuration Policies** &gt; **Add**.
 
 2.  Choose the policy you want, choose to use the recommended settings for the policy (when available; you can change these settings later), or to create a custom policy with your own settings.
 
 	> [!TIP]
 	> For help choosing the right policy, see [Microsoft Intune policy reference](microsoft-intune-policy-reference.md).
 
-3.  When you are ready, click **Create Policy**.
+3.  When you are ready, choose **Create Policy**.
 
 4.  On the **Create Policy** screen, configure a name and optional description for the policy.
 
-5.  Configure the required policy settings, then click **Save Policy**.
+5.  Configure the required policy settings, then choose **Save Policy**.
 
 	If you need help with any policy settings, choose your policy type from the following list:
 
@@ -77,7 +77,7 @@ For a complete list of Intune policies, see [Microsoft Intune policy reference](
 	- [Settings for the terms and conditions policy](terms-and-condition-policy-settings-in-microsoft-intune.md)
 	- [General settings for mobile devices (legacy)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-4.  In the confirmation dialog box, click **Yes** to deploy the policy now, or click **No** to create the policy without deploying it.
+4.  In the confirmation dialog box, choose **Yes** to deploy the policy now, or choose **No** to create the policy without deploying it.
 
 You can view and edit the new policy by browsing the sections for each policy type in **Policy** workspace.
 
@@ -90,35 +90,26 @@ Now that you have created a policy, you will typically want to deploy it to one 
 
 ## Deploy a configuration policy
 
-1.  In the **Policy** workspace, select the policy you want to deploy, then click **Manage Deployment**.
+1.  In the **Policy** workspace, select the policy you want to deploy, then choose **Manage Deployment**.
 
 2.  In the **Manage Deployment** dialog box:
 
-    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then click **Add** &gt; **OK**.
+    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then choose **Add** &gt; **OK**.
 
-    -   **To close the dialog box without deploying it** - Click **Cancel**.
+    -   **To close the dialog box without deploying it** - Choose **Cancel**.
 
 When you select a deployed policy, you can view further information about the deployment in the lower part of the policies list.
 
 ## Manage policies
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Policy**, then browse to and select the policy you want to manage.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy**, then browse to and select the policy you want to manage.
 
 2.  Select one of the following actions:
 
 - **Edit** - Opens the properties for the selected policy to allow you to make changes.
 - **Delete** - Deletes the selected policy.<br>When you delete a policy, it is removed from all groups to which it was deployed.
-- **Manage Deployment** - Select the group you want to deploy the policy to and click **Add**.
+- **Manage Deployment** - Select the group you want to deploy the policy to and choose **Add**.
 
-## Tasks for Intune policies
-
-### To refresh the policies on a device to ensure they are current (applies to Windows PCs running the Intune client software only)
-
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups**, and then select a device group.
-
-2.  Select the devices on which you want to refresh the policies, and then click **Remote Tasks** &gt; **Refresh Policies**.
-
-3.  Click **Remote Tasks** in the bottom-right corner of the Intune administration console to check the task status.
 
 ## Frequently asked questions about Intune policies
 
@@ -140,7 +131,7 @@ If the device has just enrolled the check-in frequency will be more frequent as 
 - iOS - Every 15 minutes for 6 hours and then every 6 hours
 - Android - Every 3 minutes for 15 minutes then every 15 minutes for 2 hours, and then every 8 hours
 - Windows Phone - Every 5 minutes for 15 minutes then every 15 minutes for 2 hours, and then every 8 hours
-- Windows PCs enrolled as devices - Every 3 minutes for 30 minutes, and then every 24 hours
+- Windows PCs enrolled as devices - Every 3 minutes for 30 minutes, and then every 8 hours
 
 Users can also launch the Company Portal app and sync the device to immediately check for policy anytime.
 
@@ -159,7 +150,7 @@ It’s important to know that when two or more policies are deployed to the same
 
 -   The most restrictive compliance policy setting is applied if evaluated against the same setting in a different compliance policy
 
--   The most restrictive configuration policy setting is applied if evaluated against the same setting in a different configuration policy
+-   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict will be displayed in the Intune console. You must manually resolve such conflicts.
 
 ### What happens when mobile application management (MAM) policies conflict with each other? Which one will be applied to the app?
 Conflict values are the most restrictive settings available in a mobile application management policy, except for the number entry fields (like PIN attempts before reset).  The number entry fields will be set to the same as the values as if you create a MAM policy in the console using the recommended settings option.
@@ -221,4 +212,11 @@ When you delete a policy, or remove a device from a group to which a policy was 
 - **Windows Firewall settings** - Settings are reset to the default for the computer operating system. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
+### How can I refresh the policies on a device to ensure they are current (applies to Windows PCs running the Intune client software only)
 
+1.  In any device group, select the devices on which you want to refresh the policies, and then choose **Remote Tasks** &gt; **Refresh Policies**.
+2.  Choose **Remote Tasks** in the bottom-right corner of the Intune administration console to check the task status.
+
+### Where can I find help troubleshooting policies?
+
+See [Troubleshoot policies in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).

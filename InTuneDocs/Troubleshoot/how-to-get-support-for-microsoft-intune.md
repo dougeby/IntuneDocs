@@ -143,6 +143,3 @@ Our role is to:
 [Troubleshoot client setup in Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Troubleshoot software updates in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-
-
-[Frequently asked questions for Microsoft Intune](/intune/understand-explore/frequently-asked-questions-for-microsoft-intune)

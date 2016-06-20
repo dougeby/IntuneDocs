@@ -86,10 +86,10 @@ Here is a list of steps to get you started with the **Enterprise rollout** phase
 
 -   Create a Getting Started checklist and enrollment guide for users.
     Use these user guides as a starting point:
-    -  [Enroll your Windows device in Intune](/intune/enduser/enroll-your-device-in-intune-windows]
-    -  [Enroll your Android device in Intune](/intune/enduser/enroll-your-device-in-intune-android]
-    -  [Enroll your iOS device in Intune](/intune/enduser/enroll-your-device-in-intune-ios]
-    -  [Enroll your Mac OS X device in Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x]
+    -  [Enroll your Windows device in Intune](/intune/enduser/enroll-your-device-in-intune-windows)
+    -  [Enroll your Android device in Intune](/intune/enduser/enroll-your-device-in-intune-android)
+    -  [Enroll your iOS device in Intune](/intune/enduser/enroll-your-device-in-intune-ios)
+    -  [Enroll your Mac OS X device in Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
 
 -   Define a process for updating training materials, as needed.
 
