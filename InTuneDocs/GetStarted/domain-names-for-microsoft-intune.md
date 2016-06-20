@@ -4,9 +4,9 @@
 title: Domain names for Microsoft Intune | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: andredm7
+manager: swadhwa
+ms.date: 06/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
