@@ -46,7 +46,7 @@ Once the directory synchronization cycle is completed, the objects will be avail
 ## To add and verify your domain 
 
 1. Go to [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) and sign into your administrator account.
-2. In the navigation pane, choose **Settings** > **Domains**.
+2. In the navigation pane, choose **Settings** &gt; **Domains**.
 3. Choose **+ Add domain**, and type your *custom domain name*.
 4. The **Verify domain** dialog box opens giving you information to create the TXT record in your DNS hosting provider.
 5. Follow the step-by-step instructions for [Register.com](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) or [GoDaddy](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US), to add the TXT record at your DNS hosting provider based on the values provided on step 4.
