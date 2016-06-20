@@ -91,7 +91,7 @@ The **Microsoft Intune Software Publisher** starts when you add or modify apps f
 Before you begin to use the Microsoft Intune Software Publisher, you must install the full version of [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). After installation, you might have to restart your computer before the Software Publisher will open correctly.
 
 ## Cloud storage space
-All apps that you create using the software installer installation type (for example, a line of business app) are  packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. A paid subscription includes 20GB, with the option to purchase additional storage.
+All apps that you create using the software installer installation type (for example, a line of business app) are  packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. A paid subscription includes 20 GB, with the option to purchase additional storage.
 
 You can see how much space you are using and purchase more storage in the **Storage Use** node of the **Admin** workspace.
 
