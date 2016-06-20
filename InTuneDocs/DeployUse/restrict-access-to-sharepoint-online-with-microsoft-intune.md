@@ -6,7 +6,7 @@ description:
 keywords:
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ Use the [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] conditional acc
 Conditional access has two components:
 - Device compliance policy that the device must comply with in order to be considered compliant.
 - Conditional access policy where you specify the conditions that the device must meet in order to access the service.
-To learn more about how conditional access works, read the [restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) topic.
+To learn more about how conditional access works, read the [restrict access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) topic.
 
 When a user attempts to connect to a file using a supported app such as OneDrive on their device, the following evaluation occurs:
 
@@ -65,6 +65,12 @@ If a condition is not met, the user is presented with one of the following messa
 - iOS 7.1 and later
 - Android 4.0 and later, Samsung Knox Standard 4.0 or later
 - Windows Phone 8.1 and later
+
+You can restrict access to SharePoint Online when accessed from a browser from **iOS** and **Android** devices.  Access will only be allowed from only supported browsers on compliant devices:
+* Safari (iOS)
+* Chrome (Android)
+
+Unsupported browsers will be blocked.
 
 ## Support for PCs
 - Windows 8.1 and later (when enrolled with Intune)
@@ -112,8 +118,8 @@ Next, configure the policy to require that only managed and compliant devices ca
 
 #### <a name="bkmk_spopolicy"></a>
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** > **Conditional Access** > **SharePoint Online Policy**.
-![Screenshot of the SharePoint Online Policy page](../media/IntuneSASharePointOnlineCAPolicy.png)
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **SharePoint Online Policy**.
+![Screenshot of the SharePoint Online Policy page](../media/mdm-ca-spo-policy-configuration.png)
 
 2.  Select **Enable conditional access policy for SharePoint Online**.
 
@@ -122,6 +128,10 @@ Next, configure the policy to require that only managed and compliant devices ca
     -   **All platforms**
 
         This will require that any device used to access **SharePoint Online**,  is enrolled in Intune and compliant with the policies.  Any client application using **modern authentication** is subject to the conditional access policy. If the platform is currently not supported by Intune, access to **SharePoint Online** is blocked.
+
+        Selecting **All platforms** option means that Azure Active Directory will apply this policy to all authentication requests, regardless of the platform reported by the client application.  All platforms will be required to enrolled and become compliant, except for:
+        *	Windows devices will be required to be enrolled and compliant, domain joined with on-premises Active Directory, or both
+	    * Unsupported platforms like Mac.  However, apps using modern authentication coming from these platforms will be still be blocked.
         >[!TIP]
         >You may not see this option if you not already using conditional access for PCs.  Use the **Specific platforms** instead. Conditional access for PCs is not currently available to all Intune customers.   You can find out more information about known issues as well as how to get access to this feature at the [Microsoft Connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
 
@@ -137,11 +147,28 @@ Next, configure the policy to require that only managed and compliant devices ca
 
      -   **Devices must be compliant.** Choose this option to require that the PCs must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. If the PC is not enrolled, a message with instructions on how to enroll is displayed.
 
-4.  Under **Targeted Groups**, click **Modify** to select the Azure Active Directory security groups to which the policy will apply. You can choose to target this to all users or just a select groups of users.
+4.   Under **Browser access** to SharePoint Online and OneDrive for Business, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS), and Chrome (Android). Access from other browsers will be blocked.  The same platform restrictions you selected for Application access for OneDrive also apply here.
 
-5.  Under **Exempted Groups**, optionally, click **Modify** to select the Azure Active Directory security groups that are exempt from this policy.
+  On **Android** devices, users must enable the browser access.  To do this the end-user must enable the “Enable Browser Access” option on the enrolled device as follows:
+  1.	Launch the **Company Portal app**.
+  2.	Go to the **Settings** page from the triple dots (…) or the hardware menu button.
+  3.	Press the **Enable Browser Access** button.
+  4.  In the Chrome browser, sign out of Office 365 and restart Chrome.
 
-6.  When you are done, click **Save**.
+  On **iOS and Android** platforms, To identify the device that is used to access the service, Azure Active Directory will issue a Transport layer security ( TLS) certificate to the device.  The device displays the certificate with a prompt to the end-user to select the certificate as seen in the screenshots below. The end-user must select this certificate before they can continue to use the browser.
+
+  **iOS**
+
+  ![screenshot of the certificate prompt on an ipad](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Android**
+
+  ![screenshot of the certificate prompt on an Android device](../media/mdm-browser-ca-android-cert-prompt.png)
+5.  Under **Targeted Groups**, choose **Modify** to select the Azure Active Directory security groups to which the policy will apply. You can choose to target this to all users or just a select groups of users.
+
+6.  Under **Exempted Groups**, optionally, choose **Modify** to select the Azure Active Directory security groups that are exempt from this policy.
+
+6.  When you are done, choose **Save**.
 
 You do not have to deploy the conditional access policy, it takes effect immediately.
 
