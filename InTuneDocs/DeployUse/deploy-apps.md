@@ -70,7 +70,7 @@ When two deployments, with the same deployment action are received by a device, 
 
 -   An install action takes precedence over an uninstall action.
 
--   If both a required and an available install are received by a device, the actions are combined (the app is both required and available - in other words, the end user can install it from the company portal before the required install begins).
+-   If both a required and an available install are received by a device, the actions are combined (the app is both required and available -- in other words, the end user can install it from the company portal before the required install begins).
 
 
 ## Next steps
