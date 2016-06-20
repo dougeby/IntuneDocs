@@ -107,7 +107,7 @@ These rules apply to purchasing additional cloud-based storage for Intune:
 
 -   Ensure all app installation files are in the same folder.
 
--   The maximum file size for any file you upload is 2GB.
+-   The maximum file size for any file you upload is 2 GB.
 
 
 ## Support for Universal Windows Platform (UWP) apps
