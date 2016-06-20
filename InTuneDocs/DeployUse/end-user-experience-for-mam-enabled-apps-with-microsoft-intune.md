@@ -41,6 +41,8 @@ Mobile application management (MAM) polices are applied only when apps are used 
     ![Screenshot of the O365 log in page](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  After your credentials are successfully authenticated  by Azure AD, the MAM polices are applied, and you will be asked to restart the **OneDrive** app.
+  >[NOTE!]
+  > The restart required dialog box is displayed only on devices that are not enrolled in Intune.
 
     ![Screenshot of the Restart required dialog box](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -80,7 +82,7 @@ Mobile application management (MAM) polices are applied only when apps are used 
 
     ![Screenshot of the company portal app](../media/AppManagement/Android_CompanyPortalInstall.png)
 
-5.  Once you have completed the install, click **Accept** to accept the terms.
+5.  Once you have completed the install, choose **Accept** to accept the terms.
 
 6.  The **OneDrive** app launches automatically.
 
@@ -137,7 +139,7 @@ Read the example scenario below to get a deeper understanding of how multiple us
 User A works for two companies - **Company X**, and **Company Y**. User A has a work account for each company, and both use Intune to deploy MAM policies. **Company X** deploys MAM policies **before** **Company Y**. The account associated with **Company X** will get the MAM policy, but not the account associated with Company Y. If you want the user account associated with Company Y to be managed by the MAM policies, you must remove the user account associated with Company X.
 ### Adding a second account
 #### IOS
-If you are using an iOS device, when you try to add a second work account on the same device, you may see blocking message.  You will also see an option to remove the existing account and add a new one. You can do so by clicking **Yes**.
+If you are using an iOS device, when you try to add a second work account on the same device, you may see blocking message.  You will also see an option to remove the existing account and add a new one. You can do so by choosing **Yes**.
 
 ![Screenshot of the dialog box with the blocking message and Yes and No options](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
@@ -150,6 +152,18 @@ To view company AV, PDF, and image files on Android devices, use the [Microsoft 
 
 Download this app from the  Google Play store.  Once the app is installed on your device, launch the app and authenticate with your company credentials. You should now be able to view unprotected and protected files from other policy-managed apps.
 
+The following filetypes are supported:
+
+* **Audio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (enhanced AAC+), AAC ELD (enhanced low delay AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
+* **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8.
+* **Image:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
+* PDF, PPDF
+
+------------
+|**pfile**|**text**|
+|----|----|
+|Pfile is a generic “wrapper” format for protected files that encapsulates the encrypted content and the RMS licenses and can be used to protect any file type.|Text files, including XML, CSV, etc. can be opened for viewing in the app even when they are protected. File types: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+---------------
 **Android devices that are not enrolled in Intune**
 
 Before you can use the RMS sharing app to view files from other apps managed by Intune, launch the RMS app and authenticate with your work account.  When you log in, you will see the following message **only if you don’t have an RMS license**:
