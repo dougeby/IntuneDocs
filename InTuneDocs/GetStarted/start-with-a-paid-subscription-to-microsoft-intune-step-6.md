@@ -53,7 +53,7 @@ The following steps will help you set up a mobile device configuration policy, a
 
 4.  In the policy list, expand the platform you want to create a policy for, then choose **General Configuration** > **Create and Deploy a Policy with the Recommended Settings** > **Create Policy**.
 
-5.  When prompted to **Select the groups to which you want to deploy this policy**, choose **Intune Users** (the group created during the previous step) from the list of available groups, choose **Add** > **OK**.
+5.  When prompted to **Select the groups to which you want to deploy this policy**, choose a group from the list of available groups, choose **Add** > **OK**.
 
 Your policy appears in the list of configuration policies, and has been deployed to the **Intune Users** group. Double-click the policy to view its settings.
 

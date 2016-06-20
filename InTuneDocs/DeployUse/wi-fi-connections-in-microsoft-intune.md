@@ -18,7 +18,7 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
