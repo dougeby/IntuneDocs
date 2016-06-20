@@ -18,7 +18,7 @@ ms.assetid: c3c136f0-330d-432a-a91f-16f7dd097e55
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -43,19 +43,19 @@ Once the directory synchronization cycle is completed, the objects will be avail
 > Please read 
 [Intune Account Portal has merged with the Office 365 management portal](https://docs.microsoft.com/en-us/intune/deploy-use/account-portal-merged-with-Office-365) announcement for more details on where to manage Microsoft Intune users and groups.
 
-## To add and verify your domain ##
+## To add and verify your domain 
 
-1. Go to [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) and sign in your administrator account.
-2. In the navigation pane, click **Settings**, then click **Domains**.
-3. Click **+ Add domain**, and type your *custom domain name*.
+1. Go to [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) and sign into your administrator account.
+2. In the navigation pane, choose **Settings** > **Domains**.
+3. Choose **+ Add domain**, and type your *custom domain name*.
 4. The **Verify domain** dialog box opens giving you information to create the TXT record in your DNS hosting provider.
-5. Follow the step by step instructions for [Register.com](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) or [GoDaddy](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US), to add the TXT record at your DNS hosting provider based on the values provided on step 4.
+5. Follow the step-by-step instructions for [Register.com](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) or [GoDaddy](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US), to add the TXT record at your DNS hosting provider based on the values provided on step 4.
 
 After you added your custom domain name, and it has been verified that your organization owns it, you can keep managing user accounts and groups in your on-premises Active Directory, then synchronize it with Azure Active Directory. Users and groups can also be created directly in Azure Active Directory, but these objects will not be synchronized with the on-premises environment.
 
 You can also add your custom domains from Azure Active Directory. Please check [Add a custom domain name to Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/) for more details.
 
-## DNS alias (CNAME) ##
+## DNS alias (CNAME) 
 
 The CNAME record is used as part of the [enrollment process](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune). When this DNS entry is configured, the DNS server redirects your *EnterpriseEnrollment.CompanyDomainName.com* to *manage.microsoft.com*. For example, if user's e-mail address is *user@contoso.com*, you have to create a CNAME in DNS that redirects *EnterpriseEnrollment.contoso.com* to *manage.microsoft.com*.
 
