@@ -86,11 +86,12 @@
 #### [For Windows & Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Deploy a device compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Restrict access to email & O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Restrict access to email, O365, & other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 #### [Exchange Online & new Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange on-premises & legacy Exchange Online Dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+#### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [Restrict email access: examples](restrict-email-access-example-scenarios.md)
 
 ### [Protect app data](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -123,4 +124,4 @@
 
 # [Develop & Customize Apps](/intune/develop/intune-app-sdk)
 
-# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Troubleshoot](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)

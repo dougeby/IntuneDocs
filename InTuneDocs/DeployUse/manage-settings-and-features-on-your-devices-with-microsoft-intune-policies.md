@@ -120,7 +120,7 @@ If a device doesn't check in to get policy after the first notification is sent,
 
 In this case, the device will get policy on its next scheduled check-in with the Intune service as follows:
 
-- iOS - Every 6 hours
+- iOS and Mac OS X - Every 6 hours
 - Android - Every 8 hours
 - Windows Phone - Every 8 hours
 - Enrolled Windows RT devices - Every 24 hours
@@ -128,10 +128,10 @@ In this case, the device will get policy on its next scheduled check-in with the
 
 If the device has just enrolled the check-in frequency will be more frequent as follows:
 
-- iOS - Every 15 minutes for 6 hours and then every 6 hours
+- iOS and Mac OS X - Every 15 minutes for 6 hours and then every 6 hours
 - Android - Every 3 minutes for 15 minutes then every 15 minutes for 2 hours, and then every 8 hours
 - Windows Phone - Every 5 minutes for 15 minutes then every 15 minutes for 2 hours, and then every 8 hours
-- Windows PCs enrolled as devices - Every 3 minutes for 30 minutes, and then every 24 hours
+- Windows PCs enrolled as devices - Every 3 minutes for 30 minutes, and then every 8 hours
 
 Users can also launch the Company Portal app and sync the device to immediately check for policy anytime.
 
@@ -150,7 +150,7 @@ It’s important to know that when two or more policies are deployed to the same
 
 -   The most restrictive compliance policy setting is applied if evaluated against the same setting in a different compliance policy
 
--   The most restrictive configuration policy setting is applied if evaluated against the same setting in a different configuration policy
+-   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict will be displayed in the Intune console. You must manually resolve such conflicts.
 
 ### What happens when mobile application management (MAM) policies conflict with each other? Which one will be applied to the app?
 Conflict values are the most restrictive settings available in a mobile application management policy, except for the number entry fields (like PIN attempts before reset).  The number entry fields will be set to the same as the values as if you create a MAM policy in the console using the recommended settings option.
