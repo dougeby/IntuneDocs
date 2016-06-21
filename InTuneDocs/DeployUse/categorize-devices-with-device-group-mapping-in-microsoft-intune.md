@@ -18,7 +18,7 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: sumitp
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,12 +46,12 @@ However, you can configure any categories you want.
 
 ## How to configure device group mapping
 1. For each device category you want to use, create an Intune device group. For information about how to create groups, see [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
-2. In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Admin**.
-3. In the **Administration** workspace, expand **Mobile Device Management**, and then click **Device Group Mapping**.
+2. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
+3. In the **Administration** workspace, expand **Mobile Device Management**, and then choose **Device Group Mapping**.
 4. On the **Device Group Mapping** page, enable device group mapping.
-5. Click **Add** to create a new mapping rule.
-6. In the **Add device group mapping rule** dialog box, enter the name of the category you want to create and then, from the drop-down list, choose the device collection you want to map this category to. Click **Add** when you are done.
-7. When you have finished adding categories and groups, click **Save**.
+5. Choose **Add** to create a new mapping rule.
+6. In the **Add device group mapping rule** dialog box, enter the name of the category you want to create and then, from the drop-down list, choose the device collection you want to map this category to. Choose **Add** when you are done.
+7. When you have finished adding categories and groups, choose **Save**.
 
 Now, when users enroll their device, they will be presented with a list of the categories you configured. After they choose a category and finish enrollment, their device will be added to the device group that corresponds with the category they chose.
 
