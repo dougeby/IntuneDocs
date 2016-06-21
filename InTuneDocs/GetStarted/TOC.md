@@ -2,6 +2,7 @@
 
 # [Get Started](what-to-know-before-you-start-microsoft-intune.md)
 ## [What to know before you start](what-to-know-before-you-start-microsoft-intune.md)
+### [Supported mobile devices and computers](supported-mobile-devices-and-computers.md)
 ### [Supported web browsers](supported-web-browsers.md)
 ### [Network infrastructure requirements](network-infrastructure-requirements-for-microsoft-intune.md)
 ### [Administrative accounts, websites, and permissions](administrative-accounts-websites-perms.md)
@@ -35,4 +36,4 @@
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Develop & Customize Apps](/intune/develop/intune-app-sdk)
-# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Troubleshoot](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)

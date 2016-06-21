@@ -18,7 +18,7 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: esmich
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -45,6 +45,8 @@ If you have trouble setting a passcode that meets all of the passcode requiremen
 2. Enter your passcode. The Touch ID & Passcode menu opens.
 2. Tap **Change Passcode** and enter your old password.
 3. Enter a new passcode that meets your IT administrator's requirements, and then enter it again to verify it.
+
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

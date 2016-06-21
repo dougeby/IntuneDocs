@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/21/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,10 +41,11 @@ Intune reports provide information about software, hardware, and software licens
 |**Mobile Device Inventory reports**|Show information about the mobile devices in your organization. You can filter the information that displays based on groups, whether the device is a jailbroken or rooted device, and by operating system.|
 |**License Purchase reports**|Show the software titles for all licensed software in selected license groups, based on their licensing agreements. If software license information has not refreshed in more than 24 hours, it will refresh when you generate a license report. A license report is not an exact calculation of software titles that are being used, or proof of compliance with agreements. The report is a tool to help you make licensing decisions for your organization. Intune might not detect some products that are able to have a Microsoft volume license. The available filters are:<br /><br />**All agreements** shows all licensed software products that are managed by Intune.<br /><br />**Volume licensing agreements** shows only VLSC software products.<br /><br />**Other software licensing agreements** shows software products that are managed outside VLSC.|
 |**License installation reports**|Compare installed software on computers in your organization with your current license agreement coverage according to the  Volume Licensing Service Center (VLSC). Filters include:<br /><br />**All agreements** shows all licensed software products that are managed by Intun.<br /><br />**Volume licensing agreements** shows only VLSC software products.<br /><br />**Other software licensing agreements** shows software products that are managed outside VLSC.|
-|**Terms and Conditions reports**|Shows whether users accepted terms and conditions you deployed, and which version they accepted. You can specify up to 10 users whose acceptance of any terms and conditions that were deployed to them are shown, or show the acceptance status for a particular term deployed to them.|
+|**Terms and Conditions reports**|Show whether users accepted terms and conditions you deployed, and which version they accepted. You can specify up to 10 users whose acceptance of any terms and conditions that were deployed to them are shown, or show the acceptance status for a particular term deployed to them.|
 |**Noncompliant Apps reports**|Show information about the users who have apps installed that are on your lists of compliant and noncompliant apps. Use this report to find users and devices that are not in compliance with your company app policies.|
-|**Certificate Compliance reports**|Shows which certificates have been issued to users and devices through SCEP or PKCS #12 (.PFX). Use this report to find certificates that are issued, expired, and revoked.|
-|**Device History reports**|Shows a historical log of retire, wipe, and delete actions. Use this report to see who initiated actions on devices in the past.|
+|**Certificate Compliance reports**|Show which certificates have been issued to users and devices through SCEP or PKCS #12 (.PFX). Use this report to find certificates that are issued, expired, and revoked.|
+|**Device History reports**|Show a historical log of retire, wipe, and delete actions. Use this report to see who initiated actions on devices in the past.|
+|**Health attestation reports**|Show the health of mobile devices.|
 |**Mac OS X Hardware Report**|Displays hardware details for all enrolled Mac OS X devices in the groups you select. For information about the hardware inventory collected from these devices, see [Understand your devices with inventory in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Mac OS X Software Report**|Displays the software installed on all Mac OS X devices in the groups you selected. The report lists the software name (as a bundle ID), the short version (or friendly) name, the version, and the number of devices with the software installed.|
 
@@ -69,6 +70,6 @@ In addition, reports support the following actions:
 |**Load**|On the **Create New Report** page, click **Load** to retrieve any previously saved sets of report parameters.|
 |**Delete**|In the **Reports** workspace, select the desired report type, click **Load**, and then, in the list of reports, click the delete (x) icon next to the report.|
 
-## See Also
+### See also
 [Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 

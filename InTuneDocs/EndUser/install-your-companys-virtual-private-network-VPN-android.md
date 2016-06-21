@@ -18,7 +18,7 @@ ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,6 +35,8 @@ If your IT administrator has configured a VPN application to enable you to  conn
 2.  In the **Play Store**, click **INSTALL** and follow the prompts to install the app.
 
 3.  Tap **Install corporate VPN profile** and follow the prompts to accept and activate the app.
+
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

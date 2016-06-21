@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Direct enrollment for iOS devices with Microsoft Intune | Microsoft Intune
+title: Direct enrollment for iOS devices | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -18,7 +18,7 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,7 +33,7 @@ Intune supports the enrollment of corporate-owned iOS devices using the [Apple C
 
     #### To create a profile
 
-    1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then click **Add…**.
+    1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add…**.
 
         ![Create device enrollment profile page](../media/pol-sa-corp-enroll.png)
 
@@ -47,41 +47,10 @@ Intune supports the enrollment of corporate-owned iOS devices using the [Apple C
 
         -   **Device group pre-assignment** – All devices deployed this profile will initially belong to this group. You can reassign devices after enrollment.
 
-    3.  Click **Save Profile** to add the profile.
+    3.  Choose **Save Profile** to add the profile.
 
-2.  **Add iOS devices to enroll with Apple Configurator**
-    In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Groups** &gt; **All Devices** &gt; **Corporate pre-enrolled devices** &gt; **By iOS serial number**, and then click **Add devices…**.
-
-    ![iOS setup assistant](../media/pol-SA-enroll-iOS-SetupAssistant.png)
-
-      You can add devices in two ways:
-
-    -   **Upload a CSV file containing serial numbers** – Create a comma-separated value (.csv) list of two columns without a header, limited to 5000 devices or 5MB per csv file.
-
-        |||
-        |-|-|
-        |&lt;Serial #1&gt;|&lt;Device #1 Details&gt;|
-        |&lt;Serial#2&gt;|&lt;Device #2 Details&gt;|
-        This .csv file when viewed in a text editor appears as:
-
-        ```
-        0000000,PO 1234
-        111111111,PO 1234
-        ```
-
-    -   **Manually add device details** - Enter the serial number and device details of up to five devices, and then click **Next**.
-
-    > [!NOTE]
-    > If you must later remove corporate-owned devices from Intune management, you must remove the device serial number from Intune in the **Corporate-owned devices** group to disable device enrollment.  If Intune performs a disaster recovery procedure on or around the time that serial numbers were removed, you will need to verify that only active devices’ serial numbers are present in that group.
-
-3.  **Select devices to enroll**
-    Confirm the devices to enroll. Serial numbers already enrolled or enrolled by other means cannot be imported. Click **Next** to continue.
-
-4.  **Assign profile**
-    Specify the profile to assign to added devices from the list of available profiles, review the **Enrollment profile details**, and then click **Finish**. Manually added devices can be assigned to any Enrollment profile.
-
-5.  **Select a profile to deploy to iOS devices**
-    In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then select the device profile to deploy to mobile devices. This profile should be the same profile that you assigned to deploy in the previous step. Click **Export…** in the taskbar. Click **Download profile** and save the downloaded .mobileconfig file.
+5.  **Export a profile as .mobileconfig to deploy to iOS devices**
+	Select the device profile you created. Choose **Export…** in the taskbar. Choose **Download profile** and save the downloaded .mobileconfig file.
 
 6.  **Transfer the file**
     Copy the downloaded .mobileconfig file to a Mac computer.
@@ -94,9 +63,9 @@ Intune supports the enrollment of corporate-owned iOS devices using the [Apple C
 
     2.  Connect the iOS device to the Mac computer with a USB cord. Close **Photos**, **iTunes**, and other apps that open for the device when the device is detected.
 
-    3.  In Apple Configurator, single-click the connected iOS device, and then click the **Add** button. Options that can be added to the device appear in the drop-down list. Click **Profiles** .
+    3.  In Apple Configurator, single-click the connected iOS device, and then choose the **Add** button. Options that can be added to the device appear in the drop-down list. Choose **Profiles** .
 
-    4.  Use the file picker to select the .mobileconfig file you exported from Intune, and then click **Add**. The profile is added to the device.  If the device is **Unsupervised**, the installation will require acceptance on the device.
+    4.  Use the file picker to select the .mobileconfig file you exported from Intune, and then choose **Add**. The profile is added to the device.  If the device is **Unsupervised**, the installation will require acceptance on the device.
 
 8.  **Install the profile**
     You are ready to install the profile on the iOS device. The device must have already completed the Setup Assistant and be ready to use.  If enrollment entails app deployments, the device should have an Apple ID set up because the app deployments will require that you have an Apple ID signed in for the App Store.
@@ -113,7 +82,7 @@ Intune supports the enrollment of corporate-owned iOS devices using the [Apple C
 
     5.  Accept the **Remote Warning**, and tap **Trust**.
 
-    6.  When the **Profile Installed** box confirms the profile has **Installed**, click **Done**.
+    6.  When the **Profile Installed** box confirms the profile has **Installed**, choose **Done**.
 
 9. **Verify profile**
     On the iOS device, launch **Settings** and go **General** &gt; **Device Management** &gt; **Management Profile** &gt;  and confirm the profile installation is listed, check the iOS policy restrictions, and installed apps. Policy restrictions and apps may take up to 10 minutes to appear on the device.

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ When you install the Company Portal app and enroll your Android device in Intune
 
 -   Reset your phone to factory settings if it is lost or stolen
 
-When you add your Android device, you are giving your IT administrator permission to access the device. They can do things like:
+When you enroll your Android device, you are giving your IT administrator permission to access the device. They can do things like:
 
 -   Reset your device back to manufacturer’s defaults. This is helpful if the device is lost or stolen.
 
@@ -59,6 +59,8 @@ When you add your Android device, you are giving your IT administrator permissio
     -   Send any hardware inventory updates (these updates do not contain personal information).
 
     -   Send any company app inventory updates (these updates do not contain personal information).
+
+If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

@@ -18,7 +18,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -55,6 +55,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Remember password history** – **Prevent reuse of previous passwords**|Prevents re-using previously used passwords.|Yes|Yes|
 |**Password quality**|Select the password complexity level required and also whether biometric devices can be used.|Yes|Yes|
 |**Allow fingerprint unlock**|Allow the use of a fingerprint to unlock the device.|No|Yes|
+|**Allow Smart Lock and other trust agents**<br>(Android 5 and later)|Let’s you control the Smart Lock feature on compatible Android devices. This phone capability, sometimes known as trust agents lets you disable or bypass the device lock screen password if the device is in a trusted location such as when it is connected to a specific Bluetooth device, or when it is near to an NFC tag. You can use this setting to prevent end users from configuring Smart Lock.|Yes|No|
 
 ### Encryption settings
 
@@ -138,8 +139,8 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Report noncompliance when users install the listed apps**|Lists the apps that are not managed by Intune which users are not allowed to install and run.|
-|**Do not report noncompliance when users install the listed apps**|Lists the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.|
+|**Report noncompliance when users install the listed apps**|Lists the apps that are not managed by Intune which you do not want users to install and run. If users install one of these apps, it will be listed in the noncompliant apps report.|
+|**Do not report noncompliance when users install the listed apps**|Lists the apps that you want to allow in your company. To remain compliant, users must not install any apps that are not listed. Apps that are managed by Intune are automatically allowed.|
 |**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.<br /><br />For help, see How to specify URLs to app stores later in this topic.|
 |**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|
 |**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
@@ -150,7 +151,7 @@ Specify the following settings for **Samsung KNOX devices**:
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Click **Browse**, then select the managed app that will be allowed to run when the device is in kiosk mode (apps specified as a link to the store are not currently supported). No other apps will be allowed to run on the device.|
+|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Choose **Browse**, then select the managed app that will be allowed to run when the device is in kiosk mode (apps specified as a link to the store are not currently supported). No other apps will be allowed to run on the device.|
 |**Allow volume buttons**|Enables or disables the use of the volume buttons on the device.|
 |**Allow screen sleep wake button**|Enables or disables the screen sleep wake button on the device.|
 
@@ -161,9 +162,9 @@ Use the **Noncompliant Apps Report** to view the compliance of allowed and block
 
 ###### To run the Noncompliant Apps Report
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Reports** &gt; **Noncompliant Apps Report**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Reports** &gt; **Noncompliant Apps Report**.
 
-2.  Select the device groups that you would like to check, whether you want to check for compliant apps, noncompliant apps, or both, then click **View Report**.
+2.  Select the device groups that you would like to check, whether you want to check for compliant apps, noncompliant apps, or both, then choose **View Report**.
 
 #### How to specify URLs to app stores
 To specify an app URL in the compliant and noncompliant apps list, use the following format:
@@ -177,10 +178,10 @@ Open the installation page for the app, and copy the URL to the clipboard. You c
 ## Custom policy settings
 Use the Microsoft Intune **Android custom configuration policy** to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
 
-This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies. For information about the settings you can configure with these policies, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies.
 
 > [!NOTE]
-> Currently, Android custom policies only support configuring Wi-Fi settings for Android devices that include a pre-shared key. See Configure a custom Wi-Fi profile with a pre-shared key later in this topic for more information.
+> Currently, Android custom policies only support configuring Wi-Fi settings for Android devices that include a pre-shared key.
 
 ### General settings
 

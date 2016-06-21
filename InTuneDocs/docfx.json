@@ -9,9 +9,10 @@
           "**/obj/**",
           "Understand/**",
           "GetStarted/**",
-          "DeployUser/**",
+          "DeployUse/**",
           "PlanDesign/**",
           "Troubleshoot/**",
+	  "EndUser/**",
           "**/includes/**"
         ]
       }
@@ -32,8 +33,9 @@
           "_themes/**",
           "Understand/**",
           "GetStarted/**",
-          "DeployUser/**",
+          "DeployUse/**",
           "PlanDesign/**",
+	  "EndUser/**",
           "Troubleshoot/**"   
         ]
       }

@@ -47,7 +47,7 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
     ###### To create a profile
 
-    1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Owned Devices**, and then click **Add…**.
+    1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Owned Devices**, and then choose **Add…**.
 
     ![Create device enrollment profile](../media/pol-sa-corp-enroll.png)
 
@@ -72,10 +72,10 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
           -  **Device Enrollment Program** - The Apple Device Enrollment Program (DEP) cannot be used with Setup Assistant enrollment. Ensure the toggle is set to **off**.
 
-    3.  Click **Save Profile** to add the profile.
+    3.  Choose **Save Profile** to add the profile.
 
 3.  **Add iOS devices to enroll with Setup Assistant**
-    In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices**, and then click **Add devices…**. You can add devices in two ways:
+    In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices**, and then choose **Add devices…**. You can add devices in two ways:
 
     ![Add devices dialog box](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
@@ -95,18 +95,18 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
     -   **Manually add device details** - Enter the serial number and device details of up to five devices
 
     > [!NOTE]
-    > If you must later remove corporate-owned devices from Intune management, you might need to remove the device serial number from Intune in the **Corporate-owned devices** group to disable device enrollment.  If Intune performs a disaster recovery procedure on or around the time that serial numbers were removed, you will need to verify that only active devices’ serial numbers are present in that group.
+    > If you must later remove corporate-owned devices from Intune management, you might need to remove the device serial number from Intune in the **By iOS Serial Number** device group under **Corporate Pre-enrolled devices** to disable device enrollment.  If Intune performs a disaster recovery procedure on or around the time that serial numbers were removed, you will need to verify that only active devices’ serial numbers are present in that group.
 
-    And then click **Next**.
+    Choose **Next**.
 
 4.  **Select devices to enroll**
-    Confirm the devices to enroll. Serial numbers already enrolled or enrolled by other means cannot be imported. Click **Next** to continue.
+    Confirm the devices to enroll. Serial numbers already enrolled or enrolled by other means cannot be imported. Choose **Next** to continue.
 
 5.  **Assign profile**
-    Specify the profile to assign to added devices from the list of available profiles, review the **Enrollment profile details**, and then click **Finish**. Manually added devices can be assigned to any Enrollment profile.
+    Specify the profile to assign to added devices from the list of available profiles, review the **Enrollment profile details**, and then choose **Finish**. Manually added devices can be assigned to any Enrollment profile.
 
 6.  **Export a profile to deploy to iOS devices**
-    In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then select the device profile to deploy to mobile devices. Click **Export…** in the taskbar. Copy and save the **Profile URL**. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
+    In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then select the device profile to deploy to mobile devices. Choose **Export…** in the taskbar. Copy and save the **Profile URL**. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
     To support Apple Configurator 2, the 2.0 Profile URL must be edited. Replace
     ```
     https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
@@ -119,39 +119,38 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
    You will upload this profile URL to the Apple DEP service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
 
-    > [!NOTE]
-    > The enrollment profile URL is valid for two weeks from when it is exported. After two, you must export a new enrollment profile URL to enroll iOS devices with Setup Assistant.
+
 
 7.  **Prepare the device with Apple Configurator**
     iOS devices are connected to the Mac computer and enrolled for mobile device management.
 
-    1.  On a Mac computer, open **Apple Configurator 2**. In the menu bar, click **Apple Configurator 2**, and click **Preferences**.
+    1.  On a Mac computer, open **Apple Configurator 2**. In the menu bar, choose **Apple Configurator 2**, and then choose **Preferences**.
 
          > [!WARNING]
          > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and power it on. As a best practice, devices should be at the **Hello** screen when you connect the device.
 
-    2. In the preferences pane, select **Servers** and click the “+” symbol below the left pane to launch the MDM Server wizard. Click **Next**.
+    2. In the preferences pane, select **Servers** and choose the “+” symbol below the left pane to launch the MDM Server wizard. Choose **Next**.
 
-    3. Enter the **Name** and **Enrollment URL** for the MDM server from Step #6 above. For the Enrollment URL enter the enrollment profile URL exported from Intune. Click **Next**.  
+    3. Enter the **Name** and **Enrollment URL** for the MDM server from Step #6 above. For the Enrollment URL enter the enrollment profile URL exported from Intune. Choose **Next**.  
 
-       If you receive a warning about trust profile requirements for Apple TV, you may safely cancel the **Trust Profile** option by clicking the grey "X". You can also safely disregard any Anchor certificate warning. To continue, click **Next** until the wizard is complete.
+       If you receive a warning about trust profile requirements for Apple TV, you may safely cancel the **Trust Profile** option by choosing the grey "X". You can also safely disregard any Anchor certificate warning. To continue, choose **Next** until the wizard is complete.
 
-    4.  On the **Servers**  pane, click “Edit” beside the new server’s profile. Ensure that the Enrollment URL exactly matches the URL exported from Intune. Reenter the original URL if it is different and **Save** the enrollment profile exported from Intune.
+    4.  On the **Servers**  pane, choose “Edit” beside the new server’s profile. Ensure that the Enrollment URL exactly matches the URL exported from Intune. Reenter the original URL if it is different and **Save** the enrollment profile exported from Intune.
 
     5.  Connect the iOS mobile devices to the Apple computer with a USB adapter.
 
         > [!WARNING]
         > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and power it on. As a best practice, devices should be at the **Hello** screen when you start Setup Assistant.
 
-    6.  Click **Prepare**. On the **Prepare iOS Device** pane, select **Manual** and then click **Next**.
+    6.  Choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual** and then choose **Next**.
 
-    7. On the **Enroll in MDM Server** pane, select the server name you created and then click **Next**.
+    7. On the **Enroll in MDM Server** pane, select the server name you created and then choose **Next**.
 
-    8. On the **Supervise Devices** pane, select the level of supervision, and then click **Next**.
+    8. On the **Supervise Devices** pane, select the level of supervision, and then choose **Next**.
 
-    9. On the **Create an Organization** pane, choose the **Organization** or create a new organization,  and then click **Next**.
+    9. On the **Create an Organization** pane, choose the **Organization** or create a new organization,  and then choose **Next**.
 
-    10. On the **Configure iOS Setup Assistant** pane, choose the steps presented to the user, and then click **Prepare**. If prompted, authenticate to update trust settings.  
+    10. On the **Configure iOS Setup Assistant** pane, choose the steps presented to the user, and then choose **Prepare**. If prompted, authenticate to update trust settings.  
 
     11. When the iOS device finishes preparing, you can disconnect the USB cable.  
 

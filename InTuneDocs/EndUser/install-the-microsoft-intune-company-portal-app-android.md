@@ -18,7 +18,7 @@ ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -47,6 +47,8 @@ The Company Portal is an app that you install on your Android device to give you
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
 To enroll your device in Intune to get access to company or school data and resources, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
+
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

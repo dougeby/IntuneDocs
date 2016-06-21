@@ -18,7 +18,7 @@ ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -43,6 +43,8 @@ When you unenroll your Android device from Intune:
 If your device is set up only to get company email, and you unenroll your device, your device won't appear in the Company Portal anymore. 
 
 For instructions on how to unenroll, see [Unenroll your device from Intune by using the Company Portal app](unenroll-your-device-from-intune-android.md).
+
+If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

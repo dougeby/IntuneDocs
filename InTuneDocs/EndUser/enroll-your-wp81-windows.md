@@ -18,7 +18,7 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -88,7 +88,7 @@ Enroll your device:
 
 If your IT admin has configured the Company Portal to be installed  during enrollment, you will see the Company Portal appear in your app list.
 
-
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)</br>

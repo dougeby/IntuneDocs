@@ -18,7 +18,7 @@ ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,5 +36,5 @@ You already have a company email account. To continue to connect to your company
 
 3.  Wait a short time for new email settings to be applied to your device automatically.
 
-If new email settings do not appear after a while, contact your IT admin.
+If new email settings do not appear after a while, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 

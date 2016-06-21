@@ -18,7 +18,7 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -62,6 +62,8 @@ To reset your passcode:
 5.  Unlock your device and then set a new passcode, or change the temporary passcode by going to **Settings** on your device.
 
     To see a notification confirming that your password was reset successfully, click the notification flag at the top right of the Company Portal website.
+
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)

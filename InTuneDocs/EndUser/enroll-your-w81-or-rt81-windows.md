@@ -18,7 +18,7 @@ ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -67,6 +67,7 @@ We also recommend that you install the Company Portal app, which lets you easily
 
 4.  Tap  either **Install** or **Free**. The option shown depends on how your company configured the app.
 
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)</br>

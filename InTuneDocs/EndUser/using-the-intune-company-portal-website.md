@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ You can use the Company Portal website  to:
 
 -	[Sync your device manually to speed up slow app installations](sync-your-device-manually-cpwebsite.md)
 
--   Find your IT administrator's contact information, if your IT admin configured it
+-   Find your IT administrator's contact information, if your IT admin configured it. 
 
 -   See details about your device, including whether it is compliant with your company's or school's policies
 

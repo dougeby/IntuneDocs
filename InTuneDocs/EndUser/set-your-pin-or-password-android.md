@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,9 +34,8 @@ Your IT administrator may require you to set a PIN or password on your Android d
 
 2.  Choose and confirm your new password.
 
-3.  Ensure that your device is enrolled with Microsoft Intune by following the instructions in [Enroll your device in Microsoft Intune](enroll-your-device-in-Intune-android.md).
 
-4.  Tap **GET** &gt; **INSTALL**.
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

@@ -18,7 +18,7 @@ ms.assetid: dea37b91-33fa-4d4a-ac44-560b450c02a6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,5 +26,7 @@ ms.suite: ems
 ---
 
 # Company Portal app not supported
-This version of the company portal can no longer be used. Install the **Company Portal** app from the Windows Store to continue.
+This version of the Company Portal can no longer be used. Install the latest **Company Portal** app from the Windows Store to continue.
 
+
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

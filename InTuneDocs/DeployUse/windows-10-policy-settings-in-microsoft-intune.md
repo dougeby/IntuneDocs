@@ -18,7 +18,7 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -31,7 +31,7 @@ Use the policy settings listed in this topic to help you configure settings for 
 
 ## General configuration policy settings
 
-Use the Microsoft Intune **general configuration policy** for Windows 10 to configure general settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices:
+Use the Microsoft Intune **general configuration policy** for Windows 10 to configure general settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices. This policy cannot be used when you manage Windows 10 PCs with the Intune client software.
 
 
 ### Password
@@ -168,6 +168,7 @@ All settings are for Windows 10 desktop only.
 |**Signature update interval**|Specify the interval at which Defender will check for new signature files.|
 |**Allow cloud protection**|Allow or block the Microsoft Active Protection Service from receiving information about malware activity from devices you manage. This information is used to improve the service in the future.|
 |**Prompt users for samples submission**|Controls whether files that might require further analysis by Microsoft to determine if they are malicious are automatically sent to Microsoft.|
+|**Potentially Unwanted Application Detection**|This setting can be used to protect enrolled Windows desktop computers against running software classified by Windows Defender as potentially unwanted. You can protect against these applications running, or use audit mode to report when a potentially unwanted application is installed.|
 |**Files and folders to exclude when running a scan or using real-time protection**|Add one or more files and folders like **C:\Path** or **%ProgramFiles%\Path\filename.exe** to the exclusions list. These files and folders will not be included in any real-time, or scheduled scans.|
 |**File extensions to exclude when running a scan or using real-time protection**|Add one or more file extensions like **jpg** or **txt** to the exclusions list. Any files with these extensions will not be included in any real-time, or scheduled scans.|
 |**Processes to exclude when running a scan or using real-time protection**|Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes will not be included in any real-time, or scheduled scans.| 
@@ -257,7 +258,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 |**TextInput/AllowJapaneseIVSCharacters**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIVSCharacters<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** – not allowed<br>**1** – allowed (default)|
 |**TextInput/AllowJapaneseUserDictionary**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseUserDictionary<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** – not allowed<br>**1** – allowed (default)|
 |**TextInput/AllowJapaneseIMESurrogatePairCharacters**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/AllowJapaneseIMESurrogatePairCharacters<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** – not allowed<br>**1** – allowed (default)|
-|**TextInput/ExcludeJapaneseIMEExceptShiftJIS**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptShiftJIS<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** - Any characters are not filtered (default)<br>**1** - All Except Shift JIS characters are filtered|
+|**TextInput/ExcludeJapaneseIMEExceptShiftJIS**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptShiftJIS<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** - No characters are filtered (default)<br>**1** - All Except Shift JIS characters are filtered|
 |**TextInput/ExcludeJapaneseIMEExceptJIS0208**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptJIS0208<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br /><br />**0** - No characters are filtered (default)<br>**1** - All except JIS0208 characters are filtered|
 |**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** - No characters are filtered (default)<br>**1** - All except JIS0208 characters or EUDC characters are filtered|
 |**TextInput/AllowInputPanel**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/TextInput/AllowInputPanel<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0** – not allowed<br>**1** – allowed (default)|

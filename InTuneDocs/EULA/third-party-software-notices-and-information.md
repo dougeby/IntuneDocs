@@ -36,7 +36,7 @@ Third Party Code:
 As the recipient of the above Third-Party Code, Microsoft sets forth a copy of the notices and other information below. 
 Provided for Informational Purposes Only
 
-%% Azure Active Directory Authentication Library for .NET v. 2.14.201151115 NOTICES AND INFORMATION BEGIN HERE
+Azure Active Directory Authentication Library for .NET v. 2.14.201151115 NOTICES AND INFORMATION BEGIN HERE
 =============
 
 Copyright (c) Microsoft Open Technologies, Inc. 

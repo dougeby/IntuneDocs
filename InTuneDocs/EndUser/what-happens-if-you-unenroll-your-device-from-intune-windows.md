@@ -18,7 +18,7 @@ ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # What happens if you unenroll your device from Intune?
 
-When you uninstall the Company Portal app from your device, it also unenrolls your device from Intune. For additional information about what happens, use the link, shown in the "In this Article" section above, that matches the type of device you're using.
+For additional information about what happens, use the link, shown in the "In this Article" section above, that matches the type of device you're using.
 
 - [Windows 10 mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 or Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -93,6 +93,7 @@ When you remove your Windows RT device, the following happens:
 
 -   Any settings that were changed on your device when you added it, for example disabling the camera, or requiring a certain password length, will no longer apply.
 
+If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

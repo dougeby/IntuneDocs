@@ -18,7 +18,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -84,8 +84,34 @@ Lets you manage and deploy iOS apps that are free of charge from the app store. 
 > [!TIP]
 > Options for mobile devices are not available until you [set the Mobile Device Management Authority](get-ready-to-enroll-devices-in-microsoft-intune.md) to Intune.
 
+## The Intune software publisher
+The **Microsoft Intune Software Publisher** starts when you add or modify apps from the Microsoft Intune administrator console. From the publisher, you select and configure a software installer type that will either upload apps (programs for computers or apps for mobile devices) to be stored in Intune cloud storage, or link to an online store or web application.
+
+### Requirements
+Before you begin to use the Microsoft Intune Software Publisher, you must install the full version of [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). After installation, you might have to restart your computer before the Software Publisher will open correctly.
+
+## Cloud storage space
+All apps that you create using the software installer installation type (for example, a line of business app) are  packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. A paid subscription includes 20 GB, with the option to purchase additional storage.
+
+You can see how much space you are using and purchase more storage in the **Storage Use** node of the **Admin** workspace.
+
+These rules apply to purchasing additional cloud-based storage for Intune:
+
+-   You must have an active paid subscription in order to purchase additional storage.
+
+-   Only billing administrators or global administrators for your Microsoft Online Service can purchase additional storage through the Office 365 Management Portal. To add, delete, or manage these administrators, you must be a global administrator and sign in to the Office 365 Management Portal.
+
+-   If you are a volume licensing customer who has purchased Intune or the Microsoft Intune Add-on through the enterprise agreement, contact your Microsoft Account Manager or Microsoft Partner for pricing information and to purchase additional storage.
+
+#### Requirements for cloud storage space
+
+-   Ensure all app installation files are in the same folder.
+
+-   The maximum file size for any file you upload is 2 GB.
+
+
 ## Support for Universal Windows Platform (UWP) apps
-Windows 10 devices do not require a sideloading key to install line of business apps. However, the registry key **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** must have a value of to **1** to enable sideloading.
+Windows 10 PCs do not require a sideloading key to install line of business apps. However, the registry key **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** must have a value of to **1** to enable sideloading.
 
 If this registry key is not configured, Intune will automatically set this value to **1** the first time you deploy an app to the device. If you have set this value to **0**, then Intune cannot automatically change the value, and the deployment of line of business apps will fail.
 

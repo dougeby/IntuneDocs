@@ -18,7 +18,7 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,6 +44,7 @@ To unenroll your device from Intune and uninstall the Company Portal app:
 
     You can now uninstall the Company Portal app.
 
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

@@ -39,8 +39,8 @@ Microsoft Intune enables administrators to import international mobile equipment
         This .csv file when viewed in a text editor appears as:
 
         ```
-        AA-BBBBBB-CCCCCC-D,PO 1234
-        AA-BBBBBB-CCCCCC-E,PO 1234
+        AABBBBBBCCCCCCD,PO 1234
+        AABBBBBBCCCCCCE,PO 1234
         ```
 
     -   **Manually add device details** - Enter the IMEI number and device details of up to five devices

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 2df6fca5-9731-4ea0-a8ee-45b648caa5b4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,6 +36,8 @@ To check the version for Windows 10 and Windows 8.1, press the **Windows** hotke
 
 - For Windows 10, ignore the version number and look at the OS build number (example: OS Build 10586.29). The "10" in "10586.29" stands for "Windows 10."
 - For Windows 8.1, look at the version number, which will show 6.3.xxxx instead of 8.1.
+
+Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

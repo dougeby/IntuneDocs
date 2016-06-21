@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,8 +31,8 @@ Before you set up Intune, review this topic and other requirements listed in [Wh
 
 |Intune feature |Supported browsers|
 |---------|---------|
-|Intune Admin console     |  Internet Explorer 10 or later<br /><br />Google Chrome (versions prior to version 42)<br /><br />Mozilla Firefox <br /><br />**Note:** Edge is currently not supported for the Admin console.                      
-|Office 365 Admin Portal     |All browsers  |
+|Intune Admin console     |  Internet Explorer 10 or later<br /><br />Google Chrome (versions prior to version 42)<br /><br />Mozilla Firefox <br /><br />**Note:** Microsoft Edge and mobile browsers are not supported for the Admin console.                      
+|Office 365 Admin Portal     |All browsers, including mobile browsers and managed browsers  |
 |Company Portal website     |**On mobile devices:** use the default web browser for each supported platform   <br /><br />**On Windows PCs:** Internet Explorer 10 or later, or Microsoft Edge<br /><br />**On Mac OS X 10.9 or later:** Apple Safari    |
 
 

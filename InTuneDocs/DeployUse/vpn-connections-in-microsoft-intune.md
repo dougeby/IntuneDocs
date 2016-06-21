@@ -18,7 +18,7 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,19 +48,20 @@ Intune supports creating VPN profiles that use the following connection types:
 
 
 
-Connection type |iOS and Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop and Mobile |
-----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+Connection type |iOS and Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop and Mobile |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Yes |Yes   |No    |     No    |No  |No    | Yes, (OMA-URI, Mobile only)|     
 Pulse Secure|Yes  |Yes |Yes   |No  |Yes  |Yes| Yes|        
 F5 Edge Client|Yes |Yes |Yes |No  |Yes  |   Yes |  Yes|   
 Dell SonicWALL Mobile Connect|Yes |Yes |Yes |No  |Yes |Yes |Yes|         
 CheckPoint Mobile VPN|Yes |Yes |Yes |Yes |Yes|Yes|Yes|
-Microsoft SSL (SSTP)|No |No |No |No |No|No|No|
-Microsoft Automatic|No |No |No |No |No|No|Yes|
-IKEv2|No |No |No |No |No|No|Yes|
-PPTP|No |No |No |No |No|No|Yes|
-L2TP|No |No |No |No |No|No|Yes|
+Microsoft SSL (SSTP)|No |No |No |No |No|No|VPNv1 OMA-URI*|
+Microsoft Automatic|No |No |No |No |No|Yes (OMA-URI)|Yes|
+IKEv2|iOS Custom Profile|No |No |No |No|Yes (OMA-URI)|Yes|
+PPTP|iOS Custom Profile|No |No |No |No|No|Yes|
+L2TP|iOS Custom Profile|No |No |No |No|Yes (OMA-URI)|Yes|
 
+\* Without additional settings that are otherwise available for Windows 10.
 
 > [!IMPORTANT] Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to help you deploy the applicable app using Intune.  
 

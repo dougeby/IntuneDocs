@@ -18,7 +18,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -64,6 +64,7 @@ There are additional benefits to using MDM with MAM  policies, and companies can
 
 -   Android 4 or later
 
+Windows devices are currently not supported.
 ##  How MAM policies protect app data
 
 ####  Apps without MAM policies:
@@ -132,7 +133,7 @@ For a detailed explanation of the experience of using apps that are associated w
 
 All Office mobile apps support multi-identity.
 
-##  Next Steps
+##  Next steps
 [Get ready to configure mobile app management policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
