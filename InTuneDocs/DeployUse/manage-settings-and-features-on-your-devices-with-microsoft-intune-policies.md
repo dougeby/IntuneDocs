@@ -120,7 +120,7 @@ If a device doesn't check in to get policy after the first notification is sent,
 
 In this case, the device will get policy on its next scheduled check-in with the Intune service as follows:
 
-- iOS - Every 6 hours
+- iOS and Mac OS X - Every 6 hours
 - Android - Every 8 hours
 - Windows Phone - Every 8 hours
 - Enrolled Windows RT devices - Every 24 hours
@@ -128,7 +128,7 @@ In this case, the device will get policy on its next scheduled check-in with the
 
 If the device has just enrolled the check-in frequency will be more frequent as follows:
 
-- iOS - Every 15 minutes for 6 hours and then every 6 hours
+- iOS and Mac OS X - Every 15 minutes for 6 hours and then every 6 hours
 - Android - Every 3 minutes for 15 minutes then every 15 minutes for 2 hours, and then every 8 hours
 - Windows Phone - Every 5 minutes for 15 minutes then every 15 minutes for 2 hours, and then every 8 hours
 - Windows PCs enrolled as devices - Every 3 minutes for 30 minutes, and then every 8 hours
