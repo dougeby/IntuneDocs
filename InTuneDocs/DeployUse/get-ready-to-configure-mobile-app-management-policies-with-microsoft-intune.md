@@ -62,7 +62,7 @@ To see the full list of supported Microsoft apps, go to [Microsoft Intune mobile
 -   An **Office 365 (O365)** subscription that is required for the following:
   - To apply MAM policies to apps with multi-identity support.
   - To create  SharePoint Online and Exchange Online work accounts. Exchange On-premises and SharePoint on-premises are not supported.
--    **Enable modern authentication** for **Skype for Business Online**. Log into Microsoft Connect and fill [this  form](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) to be enrolled in the modern authentication program.
+-    [Enable modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md) for **Skype for Business Online**. 
 
 
 - **Azure Active Directory (Azure AD)** to create users. Azure AD authenticates the user when the end user launches the app and enters their work credentials.

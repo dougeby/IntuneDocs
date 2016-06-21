@@ -47,6 +47,7 @@
 #### [VPN connections in Intune](vpn-connections-in-microsoft-intune.md)
 #### [Email profiles in Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Use groups to manage users & devices](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+### [Map devices to groups](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Understand your devices with inventory](understand-your-devices-with-inventory-in-microsoft-intune.md)
 ### [Common PC management tasks](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 
