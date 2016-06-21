@@ -57,7 +57,7 @@ You can also add your custom domains from Azure Active Directory. Please check [
 
 ## DNS alias (CNAME) 
 
-The CNAME record is used as part of the [enrollment process](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune). When this DNS entry is configured, the DNS server redirects your *EnterpriseEnrollment.CompanyDomainName.com* to *manage.microsoft.com*. For example, if user's e-mail address is *user@contoso.com*, you have to create a CNAME in DNS that redirects *EnterpriseEnrollment.contoso.com* to *manage.microsoft.com*.
+The CNAME record is used as part of the [enrollment process](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune). When this DNS entry is configured, the DNS server redirects your *EnterpriseEnrollment.CompanyDomainName.com* to *enterpriseenrollment-s.manage.microsoft.com*. For example, if the user's e-mail address is *user@contoso.com*, you have to create a CNAME in DNS that redirects *EnterpriseEnrollment.contoso.com* to *enterpriseenrollment-s.manage.microsoft.com*.
 
 Although the CNAME DNS entry is optional for device enrollment, it is recommended to create one or more records when necessary, to make things easier during the device enrollment process. If no CNAME record is found, the user is prompted to enter the MDM server name manually.
 
