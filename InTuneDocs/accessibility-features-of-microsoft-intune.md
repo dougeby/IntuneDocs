@@ -35,8 +35,6 @@ In addition to accessibility features and tools in Microsoft Windows, the follow
 
 ## Using Keyboard Shortcuts
 
-![this is my test image](../media/Access_Control_Flow_For_Native_Email_Apps.png)
-
 |To do this|Use this keyboard shortcut|
 |--------------|------------------------------|
 |Move the selection up or down one item.|Up and down arrow|
