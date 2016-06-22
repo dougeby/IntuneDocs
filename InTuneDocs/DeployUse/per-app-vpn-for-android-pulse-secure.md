@@ -35,7 +35,7 @@ You can create a per-app VPN profile for Android devices managed by Intune. Firs
 2. Select a template for the new policy by expanding **Android**, then choose **VPN Profile (Android 4 and later)**.
 
 3. In the template, for **Connection type**, choose **Pulse Secure**.
-4. Complete and save the VPN profile. For more details about VPN profiles see [VPN profiles](vpn-connections-in-microsoft-intune.md).
+4. Complete and save the VPN profile. For more details about VPN profiles see [VPN connections](vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
 Take note of the VPN profile name for use in the next step.	For example, **MyAppVpnProfile**.
