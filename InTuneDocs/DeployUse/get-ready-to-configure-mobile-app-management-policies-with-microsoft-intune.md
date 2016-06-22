@@ -37,6 +37,8 @@ If you are new to using the Azure portal, read the [Azure portal for Microsoft I
 
 If you are currently using the **Intune admin console** to manage your devices, you can create MAM policies use that supports apps for devices enrolled in Intune using the **Intune admin console**, but it is recommended to use the Azure portal even for devices that are enrolled in Intune. For instructions on how to create a MAM policy using the Intune admin console, see [here](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
+MAM policies created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be recreated in the Azure portal.
+
 >[!IMPORTANT]
 > You may not see all MAM policy settings in the Intune admin console. If you create MAM policies on both Intune admin console and Azure portal, the policy in the Azure portal is applied to the apps and deployed to users.
 
@@ -62,7 +64,7 @@ To see the full list of supported Microsoft apps, go to [Microsoft Intune mobile
 -   An **Office 365 (O365)** subscription that is required for the following:
   - To apply MAM policies to apps with multi-identity support.
   - To create  SharePoint Online and Exchange Online work accounts. Exchange On-premises and SharePoint on-premises are not supported.
--    **Enable modern authentication** for **Skype for Business Online**. Log into Microsoft Connect and fill [this  form](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) to be enrolled in the modern authentication program.
+-    [Enable modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md) for **Skype for Business Online**.
 
 
 - **Azure Active Directory (Azure AD)** to create users. Azure AD authenticates the user when the end user launches the app and enters their work credentials.
