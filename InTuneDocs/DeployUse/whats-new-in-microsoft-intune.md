@@ -28,7 +28,9 @@ ms.suite: ems
 ---
 
 # What's new in Microsoft Intune
-The following are new in this release. Except for the Windows Defender policy setting update, all of these features are also supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
+The following are new in this release. Except for the Windows Defender policy setting update, all of these features are also supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10.aspx).
+
+## July 2016
 
 ## June 2016
 ### Intune service health
