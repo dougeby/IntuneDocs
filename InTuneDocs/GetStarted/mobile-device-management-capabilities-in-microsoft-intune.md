@@ -66,7 +66,7 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
-|Inventory and reporting|Find information about the devices you manage and the software they are using.|[Understand your devices with inventory in Microsoft Intune](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|Inventory and reporting|Find information about the devices you manage and the software they are using.|[Understand your devices with inventory in Microsoft Intune](../deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
 
 
 ### See also
