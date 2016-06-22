@@ -108,7 +108,7 @@ Use the following information to learn about the allowed formats and wildcards y
 
     -   Port 443 for https
 
-    Using wildcards for the port number is not supported, for example, **http://www.contoso.com:*;** and **http://www.contoso.com: /*;**
+    Using wildcards for the port number is not supported, for example, **http&colon;//www&period;contoso&period;com:*;** and **http&colon;//www&period;contoso&period;com: /*;**
 
 -   Use the following table to learn about the permitted patterns you can use when you specify URLs:
 
