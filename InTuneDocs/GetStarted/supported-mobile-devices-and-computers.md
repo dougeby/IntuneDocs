@@ -33,7 +33,7 @@ You can manage the following mobile devices and computers:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)] 
 
-You can manage these devices and PCs, even if they are not joined to a domain or brought onsite. See [Choose how to manage devices](/Intune/Deploy-use/choose-how-to-manage-devices) for more about managing devices.
+You can manage these devices and PCs, even if they are not joined to a domain or brought onsite. See [Choose how to manage devices](/Intune/get-started/choose-how-to-manage-devices) for more about managing devices.
 
 
 ### See also
