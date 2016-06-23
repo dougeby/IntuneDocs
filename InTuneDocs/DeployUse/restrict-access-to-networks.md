@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title:Restrict access to networks with Cisco ISE |Microsoft Intune|
-description:Use Cisco ISE with Intune so that devices are Intune enrolled and policy-compliant before they access WiFi and VPN controlled by Cisco ISE.
+title: Restrict access to networks with Cisco ISE | Microsoft Intune
+description: Use Cisco ISE with Intune so that devices are Intune enrolled and policy-compliant before they access WiFi and VPN controlled by Cisco ISE.
 keywords:
 author: nbigman
 manager: jeffgilb
@@ -18,7 +18,7 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: muhosabe@microsoft.com
+#ms.reviewer: muhosabe
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -43,21 +43,21 @@ To enable this integration, you don’t need to do any setup in your Intune tena
     
     c. On the **Details** tab of the certificate properties, choose **Copy to file**.
 
-    d. In the **Certificate export wizard** welcome page, click **Next**. 
+    d. In the **Certificate export wizard** welcome page, choose **Next**. 
 
-    e. On the **Export file format** page, leave the default, **DER encoded binary x.509 (.CER)**, and click **Next**.  
+    e. On the **Export file format** page, leave the default, **DER encoded binary x.509 (.CER)**, and choose **Next**.  
 
-    f. On the **File to export** page, choose **Browse** to pick a location in which to save the file, and provide a file name. Though it seems like you’re picking a file to export, you’re actually naming the file to which the exported certificate will be saved. Choose **Next** -> **Finish**.
+    f. On the **File to export** page, choose **Browse** to pick a location in which to save the file, and provide a file name. Though it seems like you’re picking a file to export, you’re actually naming the file to which the exported certificate will be saved. Choose **Next** &gt; **Finish**.
 
 	#### Safari
 	
 	a. Log in to the AAD console.
 
-	b. Choose the lock icon -> right arrow key -> **More information**.
+	b. Choose the lock icon &gt; right arrow key &gt; **More information**.
     
-    c. Choose **View certificate** -> **Details**.
+    c. Choose **View certificate** &gt; **Details**.
 
-    d. Choose the certificate and the choose **Export**.  
+    d. Choose the certificate, and then choose **Export**.  
 
 
 > [!IMPORTANT]
@@ -142,7 +142,7 @@ When the user chooses enroll, they are redirected to the Intune enrollment proce
 There is also a [downloadable set of enrollment instructions](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) that you can use to create customized guidance for your user experience.
 
 
-###See also
+### See also
 
 [Cisco Identity Services Engine Administrator Guide, Release 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
 
