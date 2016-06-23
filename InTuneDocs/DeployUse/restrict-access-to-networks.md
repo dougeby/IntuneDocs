@@ -33,7 +33,7 @@ Intune integration with Cisco ISE allows you to author network policies in your 
 To enable this integration, you don’t need to do any setup in your Intune tenant. You will need to provide permissions to your Cisco ISE server to access to your Intune tenant and once that is done, the rest of the setup happens in your Cisco ISE server. This article provides you instructions on providing your ISE server with permissions to access your Intune tenant. 
 
 ### Step 1: Manage the certificates
-1. In the AAD (Azure Active Directory) , export the certificate. 
+1. In the Azure Active Directory (AAD) console, export the certificate. 
 
 	#### Internet Explorer 11
 		

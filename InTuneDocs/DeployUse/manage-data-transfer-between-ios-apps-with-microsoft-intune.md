@@ -51,9 +51,9 @@ To make sure that apps that you deploy using your third party MDM solution are a
 This configuration is required for devices that are managed by a third-party MDM solution. The procedure described below is a general flow on how to implement the UPN setting and the resulting end user experience:
 
 
-1.  Configure a mobile app management policy for iOS platform. Configure policy settings per your company requirements and select the apps that should have this policy.
+1.  In the Azure portal, [configure a mobile app management policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for iOS platform. Configure policy settings per your company requirements and select the apps that should have this policy.
 
-2.  Deploy the apps and the email profile that you want managed through your third-party MDM solution using the setting described in steps 3 and 4.
+2.  Deploy the apps and the email profile that you want managed **through your third-party MDM solution** using the setting described in steps 3 and 4.
 
 3.  Deploy the app with the following app configuration settings: key=IntuneMAMUPN, Value=<username@company.com> [example: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
