@@ -33,11 +33,10 @@ Your employees use mobile devices for both personal and work tasks.  While makin
 You can use Intune mobile app management (MAM) policies to help protect your company’s data. Because Intune MAM policies can be used independent of any mobile-device management (MDM) solution, you can use it to protect your company’s data with or without enrolling devices in a device management solution. By implementing **app-level policies**, you can restrict access to company resources and keep data within the purview of your IT department.
 
 MAM policies support apps running on:
+> [!IMPORTANT]
+> You can create mobile app management policies for Office mobile apps that connect to Office 365 services. MAM policies are not supported for apps that connect to on-premises Exchange or SharePoint services.
 
--   **Devices that are managed and enrolled** in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. The devices in this category are typically corporate owned devices.
-
-  > [!IMPORTANT]
-  > If you are using Intune to manage your iOS and Android devices, you can create mobile app management policies for Office mobile apps that connect to Office 365 services. MAM policies are not supported for apps that connect to on-premises Exchange or SharePoint services.
+-   **Devices that are managed and enrolled ** in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. The devices in this category are typically corporate owned devices.
 
 -   **Devices that are managed and enrolled in a third party mobile device management**  solution.   The devices in this category are typically corporate owned devices.
 
