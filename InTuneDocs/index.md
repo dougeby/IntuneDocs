@@ -21,7 +21,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
     <section id="hero-content">
       <h1>Microsoft Intune Documentation</h1>
       <h2>Learn how to deploy and manage Microsoft Intune, a mobile device and application management service.</h2>
-      <h3>Manage Intune with Configuration Manager? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">View Configuration Manager Documentation &rarr;</a></h3>
+      <h3>Manage Intune with Configuration Manager? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">View Configuration Manager Documentation &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
