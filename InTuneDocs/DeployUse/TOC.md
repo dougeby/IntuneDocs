@@ -88,6 +88,8 @@
 #### [Deploy a device compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
 ### [Restrict access to email, O365, & other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Restrict access to networks (Cisco ISE)](restrict-access-to-networks.md)
+
 #### [Exchange Online & new Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange on-premises & legacy Exchange Online Dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
 #### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
