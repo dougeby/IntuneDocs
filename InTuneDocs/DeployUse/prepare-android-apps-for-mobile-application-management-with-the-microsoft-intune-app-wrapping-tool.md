@@ -78,7 +78,7 @@ Note the folder to which you installed the tool. The default location is: **C:\P
 |**-InputPath**&lt;String&gt;|Path of the source Android app (.apk).| |
 |**-OutputPath**&lt;String&gt;|Path to the "output" Android app. If this is the same directory path as InputPath, the packaging will fail.| |
 |**-KeyStorePath**&lt;String&gt;|Path to the keystore file that contains the public/private key pair for signing.| |
-|**-KeyStorePassword**&lt;SecureString&gt;|Password used to decrypt the keystore. Use the Java Key Tool to generate the KeyStorePassword.|keytool.exe -genkey -v -keystore keystorefile -alias ks -keyalg RSA -keysize 2048 -validity 50000 |
+|**-KeyStorePassword**&lt;SecureString&gt;|Password used to decrypt the keystore. Use the Java Key Tool to generate the KeyStorePassword. Read more about [keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html).|keytool.exe -genkey -v -keystore keystorefile -alias ks -keyalg RSA -keysize 2048 -validity 50000 |
 |**-KeyAlias**&lt;String&gt;|Name of the key to be used for signing.| |
 |**-KeyPassword**&lt;SecureString&gt;|Password used to decrypt the private key that will be used for signing.| |
 |**-SigAlg**&lt;SecureString&gt;|Name of the signature algorithm to be used for signing. The algorithm must be compatible with the private key.|Examples: SHA256withRSA, SHA1withRSA, MD5withRSA|
@@ -115,7 +115,7 @@ To prevent potential spoofing, information disclosure, and elevation of privileg
 
 -   Ensure that the input line-of-business application, output application, and Java KeyStore are on the same computer where the app wrapping tool is running.
 
--   Import the output application to the Intune console on the same computer where the tool is running.
+-   Import the output application to the Intune console on the same computer where the tool is running. See [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) for more information about the Java keytool.
 
 -   If the output application and the tool are on a Universal Naming Convention (UNC) path and you are not running the tool and input files on the same computer, configure the environment to be secure by using [Internet Protocol Security (IPsec)](http://en.wikipedia.org/wiki/IPsec) or [Server Message Block (SMB) signing](https://support.microsoft.com/en-us/kb/887429).
 
@@ -168,8 +168,6 @@ Using the identifier values that you got from the registration process, enter th
 |Non-Broker Redirect URI|NonBrokerRedirectURI|
 |Resource ID|ResourceID|
 Keep the following points in mind as you wrap your app:
-
--   The app wrapping tool does not search for ADAL binaries (if any) within the app. If the app links to an outdated version of the binaries, runtime errors may occur during login if you enabled authentication policies.
 
 -   To verify that the authentication was successful,
   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] fetches the AAD token that is associated with the MAM resource-id. However, the token is not used in any call that would in turn verify the validity of the token. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] only reads the user principal name (UPN) of the signed-in user to determine app access. The AAD token is not used for any further service calls.
