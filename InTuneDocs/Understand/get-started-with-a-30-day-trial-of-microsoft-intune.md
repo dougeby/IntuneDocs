@@ -30,7 +30,7 @@ Setting up a free 30-day evaluation of Intune to manage your mobile devices and 
 
 In this topic, you'll learn the basics  to get an Intune evaluation up and running and get an overview of the service so you can evaluate Intune's features and capabilities.
 
-Watch this five-minute demo video to learn how easy it is to get started with a free evaluation of Microsoft Intune and to manage your devices:
+Watch the following five-minute demo video to learn how easy it is to get started with a free evaluation of Microsoft Intune and to manage your devices. The first part of the video mentions a portal that has been "retired" so, although you'll use a different portal, the steps will be essentially the same. You can read more about the portal [here](https://docs.microsoft.com/intune/deploy-use/account-portal-merged-with-Office-365).
 
 <iframe width="675" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
@@ -47,9 +47,9 @@ Before you get started with Intune, you'll need the following:
 
     |Platform|Certificate Requirements|More information|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 and Windows Phone 8 |No certificate is required for Windows Phone 8.1 users who install the Company Portal app from the Store. A Symantec certificate is required for Windows Phone 8.0 or to use Intune to deploy the Company Portal app to Windows Phone 8.1 devices.|This guidance assumes your users get the Company Portal app from the Store on a Windows Phone 8.1 or later device. For information about Windows Phone 8.0 support, see [Set up Windows Phone management with Microsoft Intune](/Intune/DeployUse/set-up-windows-phone-management-with-microsoft-intune).|
-    |Windows 10, Windows RT 8.1, Windows RT, or Windows 8.1 devices|There are no certificate requirements for enrolling Windows RT and Windows devices.|[Install the Windows PC client with Microsoft Intune](/Intune/DeployUse/install-the-windows-pc-client-with-microsoft-intune).|
-    |iOS 7.1 or later|Get an Apple Push Notification service certificate.|Request an Apple Push Notification service certificate from Apple, as described here: [Set up iOS and Mac management with Microsoft Intune](/Intune/DeployUse/set-up-ios-and-mac-management-with-microsoft-intune).|
+    |Windows Phone 8.1 and Windows Phone 8 |No certificate is required for Windows Phone 8.1 users who install the Company Portal app from the Store. A Symantec certificate is required for Windows Phone 8.0 or to use Intune to deploy the Company Portal app to Windows Phone 8.1 devices.|This guidance assumes your users get the Company Portal app from the Store on a Windows Phone 8.1 or later device. For information about Windows Phone 8.0 support, see [Set up Windows Phone management with Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).|
+    |Windows 10, Windows RT 8.1, Windows RT, or Windows 8.1 devices|There are no certificate requirements for enrolling Windows RT and Windows devices.|[Install the Windows PC client with Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |iOS 7.1 or later|Get an Apple Push Notification service certificate.|Request an Apple Push Notification service certificate from Apple, as described here: [Set up iOS and Mac management with Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
 ## Steps to complete a 30-day evaluation of Intune
 - [Step 1: Sign in or sign up for a 30-day evaluation](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md). Before  you sign up or sign in to Intune,  you should consider whether to sign in using an existing account or create a temporary account to be used only for the 30-day evaluation of Microsoft Intune.
