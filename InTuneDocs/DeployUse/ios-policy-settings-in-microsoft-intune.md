@@ -2,7 +2,7 @@
 # required metadata
 
 title: iOS policy settings | Microsoft Intune
-description:
+description: Create policies that control settings and features on iOS devices that you manage with Intune.
 keywords:
 author: robstackmsft
 manager: jeffgilb
@@ -26,6 +26,8 @@ ms.suite: ems
 ---
 
 # iOS policy settings in Microsoft Intune
+
+Intune supplies a range of built-in general settings you can configure on iOS devices. Additionally, you can use the Apple Configurator tool to create custom settings that are not available from Intune.
 
 ## General configuration policy settings
 
