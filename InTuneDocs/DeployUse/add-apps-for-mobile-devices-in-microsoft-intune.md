@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Add apps for mobile devices | Microsoft Intune
-description:
+title: Add apps for enrolled devices | Microsoft Intune
+description: Before you can deploy an app, you must add it to Intune. Then it’s available in the Intune console where you can deploy and manage it.
 keywords:
 author: robstackmsft
 manager: jeffgilb
@@ -18,16 +18,16 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# Add apps for mobile devices in Microsoft Intune
+# Add apps for enrolled devices to Intune
 
-Use the information in this topic to learn how to add apps to Intune before you deploy them.
+Before you can deploy or manage an app, you must add it to Microsoft Intune. This topic shows you how to add apps for enrolled devices.
 
 
 > [!IMPORTANT]
@@ -36,7 +36,7 @@ Use the information in this topic to learn how to add apps to Intune before you 
 ## Add the app
 You use the Intune Software Publisher to configure the properties of the app and, where applicable, upload it to your cloud storage space using the following procedure:
 
-1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), click **Apps** &gt; **Add Apps** to start the Intune software publisher.
+1.  In the [Microsoft Intune administrator console](https://manage.microsoft.com), choose **Apps** &gt; **Add Apps** to start the Intune software publisher.
 
     > [!TIP]
     > You might need to enter your Intune username and password before the publisher starts.
@@ -44,7 +44,7 @@ You use the Intune Software Publisher to configure the properties of the app and
 2.  On the **Software setup** page of the software publisher, choose one of the following options for **Select how this software is made available to devices**:
 	- **Software installer**, for apps with the extension **.msi**, or **.exe**, specify:
 		- **Select the software installer file type** - This indicates the type of software you want to deploy. For example, if you want to install an iOS app, choose **App Package for iOS (&#42;.ipa file)**.
-        - **Specify the location of the software setup files** - Enter the location of the installation files or click **Browse** to select the location from a list.
+        - **Specify the location of the software setup files** - Enter the location of the installation files or choose **Browse** to select the location from a list.
         - **Include additional files and subfolders from the same folder** - For the **Windows Installer** file type only.<br>Some software that uses Windows Installer requires supporting files which are typically found in the same folder as the installation files. Select this option if you also want to deploy these files.<br>This installation type uses some of your cloud storage space.
 
   -   **External link**, for apps you want to create by specifying a link to an app store, specify:
@@ -88,9 +88,9 @@ You use the Intune Software Publisher to configure the properties of the app and
 
 5.  Further wizard pages are displayed when you choose the **Windows Installer** file type. This file type is used when you deploy software to PCs running Windows 10 or later that are enrolled with Intune.
 
-6.  On the **Summary** page, review the information you specified. Once you are ready, click **Upload**.
+6.  On the **Summary** page, review the information you specified. Once you are ready, choose **Upload**.
 
-7.  Click **Close** to finish.
+7.  Choose **Close** to finish.
 
 The app is displayed on the **Apps** node of the **Apps** workspace.
 
