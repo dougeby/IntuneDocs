@@ -204,7 +204,7 @@ When you select an update from the list, further commands are available that let
 |--------|--------------------|
 |**View Properties**|Displays detailed information about the update including the number of computers to which it is applicable.|
 |**Edit**|For non-Microsoft updates only. Allows you to edit the properties of the update.|
-|**Approve**|Approves the selected update and allows you to configure which groups is will be deployed to. For more information, see the procedure [To approve updates](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve) in this topic.|
+|**Approve**|Approves the selected update and allows you to configure which groups is will be deployed to. For more information, see the procedure **To approve updates** in this topic.|
 |**Decline**|Removes any previous approvals for the update and hides the update from the default views. Additionally, any report data for the update will be removed.<br /><br />If you later want to locate a declined update, set the filter on the **All Updates** page to **Declined**. You can then approve this update as required.<br /><br />If an update was declined because the update was expired in Microsoft Update, that update cannot be approved in the Intune administration console.<br /><br />If you delete an updates policy that is deployed to computers, the values of those updates policy settings are reset to the default state for the operating system that is installed on the computers.|
 |**Delete**|For non-Microsoft updates only. Deletes the selected update.|
 |**Upload**|Starts the **Upload Update** wizard that allows you to upload non-Microsoft updates that you want to deploy.|
