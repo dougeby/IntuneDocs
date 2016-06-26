@@ -18,7 +18,7 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -55,6 +55,9 @@ Consider the following:
 -   Determine that the app type is supported by Intune.
 
 -   Check that  you have sufficient cloud storage space available to upload the app. Instructions for purchasing additional storage are provided in [Add apps with Microsoft Intune](/intune/deploy-use/add-apps).
+
+> [!NOTE]           
+> You can download this [planning template for mobile apps](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59) to assist in your rollout process.
 
 ## Proof of concept
 In the Proof of concept phase test your app deployment in a laboratory environment on devices and users that you've configured strictly for testing purposes.
