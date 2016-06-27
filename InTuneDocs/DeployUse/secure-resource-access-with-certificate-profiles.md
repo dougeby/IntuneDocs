@@ -28,7 +28,7 @@ ms.suite: ems
 # Secure resource access with certificate profiles in Microsoft Intune
 When you enable access to corporate resources through VPN, Wi-Fi, or email profiles, you have the option of securing that access with a certificate installed on each user device. Here's how it works:
 
-1. Make sure you have the right certificate infrastructure in place, as described in [Configure certificate infrastructure](configure-certificate-infrastructure.md).
+1. Make sure you have the right certificate infrastructure in place, as described in [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) or [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md).
 
 2. Install a root certificate (or intermediate CA certificate) on each device so that the device recognizes the legitimacy of your Certification Authority. You do this with by creating and deploying a **Trusted Certificate Profile**. When you deploy this profile, the devices that you manage with Intune will request and receive the root certificate. You have to create a separate profile for each platform. The **Trusted Certificate Profile** is available for these platforms:
  -  iOS 7.1 and later
