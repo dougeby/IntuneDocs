@@ -40,6 +40,8 @@ In most scenarios, you will enroll your devices with Microsoft Intune, which pro
 -   **App deployment** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the client software.
 
 
+Intune supports installing the PC client software on up to 7,000 Windows devices.
+
 ## Operating system requirements
 Intune can manage PCs running the following Windows versions (both x86 and x64):
 

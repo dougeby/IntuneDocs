@@ -90,7 +90,7 @@ The password is not contained in the email profile, so the user will need to sup
     |**Sync schedule** (Samsung KNOX, Windows Phone 8 and later, Windows 10)|Select the schedule by which devices will synchronize data from the Exchange Server. You can also select **As Messages arrive** which synchronizes data as soon as it arrives, or **Manual**, where the user of the device must initiate the synchronization.|
     |**Use SSL**|Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange Server.<br /><br />For devices that run Samsung KNOX 4.0 or later, you must export your Exchange Server’s SSL certificate and deploy it as an Android Trusted Certificate Profile in Intune. Intune does not support accessing this certificate if it is installed on the Exchange Server by other means.|
     |**Content type to synchronize**|Select the content types that you want to synchronize to devices.| 
-	|**Allow email to be sent from third party applications** (iOS only)|Allow third-party applications to open email in the native email app, for example, to attach files to email.|
+	|**Allow email to be sent from third party applications** (iOS only)|Allow user to select this profile as the default  account for sending email, and allow third-party applications to open email in the native email app, for example, to attach files to email.|
 
     > [!IMPORTANT]
     > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
