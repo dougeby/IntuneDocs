@@ -3,7 +3,7 @@
 
 experiment_id: lindavr-abtest-20160527
 title: What's new | Microsoft Intune
-description:
+description: Find out what’s new in this month’s, and past releases of Microsoft Intune
 keywords:
 author: Lindavr
 manager: jeffgilb
@@ -16,7 +16,7 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: mamoriss
@@ -27,6 +27,8 @@ ms.suite: ems
 ---
 
 # What's new in Microsoft Intune
+Learn what’s new in this release of Microsoft Intune. You can also find out about upcoming changes that you should be planning for, as well as information about past releases.
+
 The following are new in this release. Except for the Windows Defender policy setting update, all of these features are also supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
 ## June 2016

@@ -18,7 +18,7 @@ ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -63,6 +63,14 @@ Review this section for guidance on focus-area activities for this stated phase 
 ### Planning
 
 The majority of your efforts in the Scope phase revolve around planning and preparation. When scoping your project, consider both technology and organizational issues, as well as how users work today and the behavior change required. Start with your "big picture" end goal in mind, then create smaller goals in subsequent phases to stay on track.
+
+
+ > [!NOTE]
+ > 
+ > These templates may be helpful when working on the project scope:
+ > > - [Intune or Intune with Configuration Manager decision template](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+ > - [Planning template for mobile apps](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+>- [General device management planning template](https://gallery.technet.microsoft.com/General-device-management-334c3792)
 
 ### Help desk
 In order for knowledge workers to benefit from a productive Intune experience, the help desk should be well-prepared. As you scope your project, consider how help desk will play a part in each phase, and what resources you will need to execute and ensure your help desk is ready to support end users.
