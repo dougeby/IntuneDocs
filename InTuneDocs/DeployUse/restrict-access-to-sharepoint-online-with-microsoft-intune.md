@@ -70,7 +70,8 @@ You can restrict access to SharePoint Online when accessed from a browser from *
 * Safari (iOS)
 * Chrome (Android)
 * Managed Browser (iOS and Android)
-Unsupported browsers will be blocked.
+
+**Unsupported browsers will be blocked**.
 
 ## Support for PCs
 - Windows 8.1 and later (when enrolled with Intune)
