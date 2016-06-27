@@ -80,14 +80,18 @@ You can restrict access to Exchange Online email from **Outlook** and other **ap
 
 -   The ADAL based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, the user is directed to a sign-in web page. This new sign-in method enables better security like **multi-factor authentication**, and **certificate-based authentication**.
 This [article](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) has more detailed information on how modern authentication works.
+Setup ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser based applications](https://technet.microsoft.com/library/dn592182.aspx).
 
 You can restrict access to **Outlook Web Access (OWA)** on Exchange Online when accessed from a browser on **iOS** and **Android** devices.  Access will only be allowed from only supported browsers on compliant devices:
 
 * Safari (iOS)
 * Chrome (Android)
 * Managed Browser (iOS and Android)
-Unsupported browsers will be blocked.The OWA apps for iOS and Android are not supported.  They should be blocked through ADFS claims rules:
-* Setup ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser based applications](https://technet.microsoft.com/library/dn592182.aspx).
+
+**Unsupported browsers will be blocked**.
+
+The OWA apps for iOS and Android are not supported.  They should be blocked through ADFS claims rules.
+
 
 
 
