@@ -34,7 +34,7 @@ The migration to Intune from your existing enterprise mobility management soluti
 
 ## Notify users
 
-Once you’re comfortable that the Intune pilot deployment has met your requirements, communicate with your users about the upcoming migration of their devices to Intune. Email messages, [instructions](http://www.microsoft.com/en-us/download/details.aspx?id=46398), and [posters](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) can help set expectations and provide enrollment details on the steps users need to take in order to maintain uninterrupted connectivity to company resources and applications. Make sure your support team is ready to assist users in the migration process.
+Once you’re comfortable that the Intune pilot deployment has met your requirements, communicate with your users about the upcoming migration of their devices to Intune. Email messages, instructions, and [posters](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) can help set expectations and provide enrollment details on the steps users need to take in order to maintain uninterrupted connectivity to company resources and applications. Make sure your support team is ready to assist users in the migration process.
 
 ## Modify your existing enterprise mobility management solution
 

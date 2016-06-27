@@ -53,7 +53,7 @@ To enable this integration, you don’t need to do any setup in your Intune tena
 	
 	a. Log in to the AAD console.
 
-	b. Choose the lock icon &gt; right arrow key &gt; **More information**.
+	b. Choose the lock icon &gt;  **More information**.
     
     c. Choose **View certificate** &gt; **Details**.
 
