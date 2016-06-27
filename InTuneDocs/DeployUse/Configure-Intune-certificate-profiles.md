@@ -18,7 +18,7 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Configure Intune certificate profiles
-After your infrastructure and certificates are configured as described in [Configure certificate infrastructure](configure-certificate-infrastructure.md), you can configure certificate profiles:
+After your infrastructure and certificates are configured as described in [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) or [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md), you can configure certificate profiles:
 
 **Task 1** - Export the Trusted Root CA certificate
 **Task 2** - Create Trusted CA certificate profiles
