@@ -89,7 +89,7 @@ Keep informed about upcoming developments for Intune with the [Cloud Platform ro
 	- Intune PDF Viewer
 	- Intune Image Viewer for Android from Google Play
 
-  Instead of using the Intune Viewer apps, we recommend using the new Rights Management app (RMS sharing) for Android, which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. Learn more about the RMS sharing app (with link to documentation).
+  Instead of using the Intune Viewer apps, we recommend using the new Rights Management app (RMS sharing) for Android, which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. 
 
 - **Custom Group Targeting of Notification Rules Removal.**
 Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
