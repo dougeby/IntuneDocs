@@ -64,7 +64,7 @@ Typically, a user is trying to access email or SharePoint and receives a prompt 
 When you create a compliance policy and link it to an email policy, both policies have to be deployed to the same user, so be careful when planning which policies are deployed to which groups. Users that have only one policy applied are likely to find that their devices are not compliant.
 
 
-## Exchange activesync scenarios
+## Exchange ActiveSync scenarios
 
 
 - An Android device that is enrolled and compliant may still get a quarantine notice when trying to access corporate resources. Before choosing the link that says **Begin**, the user should ensure that the company portal was not open when they tried to access the resources. The users should close the company portal, try again to access the resources, and then choose the **Begin** link.
