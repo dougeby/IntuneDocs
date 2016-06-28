@@ -39,7 +39,7 @@ Your answers to the following questions will help determine the best enrollment 
 
   **Users-owned devices**, also known as "Bring your own device" (BYOD) enrollment, lets users enroll their devices to gain access to company resources like email, company apps, company data, and support. **Company-owned devices** (COD) are provided by the organization to their employees to address a business need.
   > [!div class="button"]
-  [BYOD Enrollment >](#byod-device-enrollment)   [COD Enrollment >](cod-device-enrollment)
+  [BYOD Enrollment >](#byod-device-enrollment)   [COD Enrollment >](#cod-device-enrollment)
 
 ### BYOD device enrollment
 
@@ -48,10 +48,10 @@ BYOD enrollment requires that users install the Intune Company Portal app on the
 **Select the device type:**
 
 > [!div class="op_single_selector"]
-- [Set up Android management with Microsoft Intune](..deploy-use/set-up-android-management-with-microsoft-intune.md)
-- [Set up iOS and Mac management with Microsoft Intune](..deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Set up Windows Phone management with Microsoft Intune](..deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
-- [Set up Windows device management with Microsoft Intune](..deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
+- [Set up Android management with Microsoft Intune](..deploy-use/set-up-android-management-with-microsoft-intune)
+- [Set up iOS and Mac management with Microsoft Intune](..deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Set up Windows Phone management with Microsoft Intune](..deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [Set up Windows device management with Microsoft Intune](..deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 
 ### COD device enrollment

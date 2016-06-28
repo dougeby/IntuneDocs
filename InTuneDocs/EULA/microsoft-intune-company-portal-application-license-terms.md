@@ -46,7 +46,7 @@ for this application, unless other terms accompany those items. If so, those ter
 
 1.  **INSTALLATION AND USE RIGHTS.**
 
-    1.  **Installation and Use.** You may install and use any number of copies of this application on a Windows enabled device or devices which you own or control. You may use this application with your company’s valid subscription of Microsoft Intune or an online service that includes Microsoft Intune functionalities.
+    1.  **Installation and Use.** You may install and use any number of copies of this application on Windows 8, Windows RT, or successor operating system enabled devices which you own or control. You may use this application with your company’s valid subscription of Microsoft Intune or an online service that includes Microsoft Intune functionalities.
 
     2.  **Updates.** Updates or upgrades to Microsoft Intune may be required for full functionality. Some functionality may not be available in all countries.
 
