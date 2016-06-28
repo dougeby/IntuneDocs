@@ -124,7 +124,8 @@ In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi p
 4.  Run this command: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`.This will create a Wi-Fi profile file named “Wi-Fi-WiFiName.xml in your target folder ”.
 
 ### Import a Wi-Fi profile
-Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that you can then deploy to the required user or device groups. This
+Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that you can then deploy to the required user or device groups.
+
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Add Policy**.
 
