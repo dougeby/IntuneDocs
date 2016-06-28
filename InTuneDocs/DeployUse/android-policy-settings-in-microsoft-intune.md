@@ -74,7 +74,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 
 ### Cloud settings – documents and data
 
-|Setting name|Details|Android and Samsung KNOX|Android 4.0+|
+|Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**Allow Google backup**|Allows use of Google backup.|No|Yes|
 
@@ -96,7 +96,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 
 ### Application settings - apps
 
-|Setting name|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Allow Google Play store**|Allow the user to access the Google Play store on the device.|No|Yes|
 
