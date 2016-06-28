@@ -36,10 +36,5 @@
       "product_feedback_displaytext" : "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/"
     }
-  },
-  "render": {
-    "theme": "hyde",
-    "dest": "_output"
-  },
-  "basepath": "/intune/get-started"
+  }
 }

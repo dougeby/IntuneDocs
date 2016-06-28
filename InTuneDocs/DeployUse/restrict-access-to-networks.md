@@ -53,7 +53,7 @@ To enable this integration, you don’t need to do any setup in your Intune tena
 	
 	a. Log in to the AAD console.
 
-	b. Choose the lock icon &gt; right arrow key &gt; **More information**.
+	b. Choose the lock icon &gt;  **More information**.
     
     c. Choose **View certificate** &gt; **Details**.
 
@@ -137,7 +137,7 @@ When the user chooses enroll, they are redirected to the Intune enrollment proce
 - [Enroll your Android device in Intune](/intune/end-user/enroll-your-device-in-Intune-android)</br>
 - [Enroll your iOS device in Intune](/intune/end-user/enroll-your-device-in-intune-ios)</br>
 - [Enroll your Mac OS X device in Intune](/intune/end-user/enroll-your-device-in-intune-mac-os-x)</br>
-- [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows)</br> 
+- [Enroll your Windows device in Intune](/intune/end-user/enroll-your-device-in-intune-windows)</br> 
 
 There is also a [downloadable set of enrollment instructions](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) that you can use to create customized guidance for your user experience.
 

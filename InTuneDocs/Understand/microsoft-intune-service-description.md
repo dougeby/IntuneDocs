@@ -38,7 +38,7 @@ You can start using Intune with a 30-day free trial that includes 100 user licen
 
 For a list of settings that you can configure on mobile devices, see:
 
--   [Mobile device management capabilities in Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md)
+-   [Mobile device management capabilities in Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
 -   [General settings for Mobile Devices in Configuration Manager](https://technet.microsoft.com/en-us/library/dn376523.aspx)
 
@@ -62,7 +62,7 @@ Here are the types of notices Microsoft provides about the Intune service:
 * New, or changed APIs – Notifying you that you need to test to ensure backward compatibility of custom apps
 * Changes to system requirements, for example, the minimum required browser version
 * Any updates that require you to take action to enable the feature or to avoid service interruption to the feature.
--   Microsoft provides information about new features, new functionality, and enhancements to existing features in our monthly service update. Generally, Microsoft rolls out service updates around the middle of each month. Updates are described in  [What's new in Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune.md).
+-   Microsoft provides information about new features, new functionality, and enhancements to existing features in our monthly service update. Generally, Microsoft rolls out service updates around the middle of each month. Updates are described in  [What's new in Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune).
 -   In the event of Intune service retirement, you would be notified 12 months in advance.
 
 ## Choose the management solution that’s right for you
@@ -70,19 +70,19 @@ You can configure Intune in a number of ways to manage and help protect your com
 
 -   **Intune stand-alone configuration.** Use the web-based administration console in Intune to manage devices in your organization. Intune can be used without any on-premises IT infrastructure, but if you use Intune with Active Directory Domain Services, you can use domain user accounts that you manage with Domain Services with Intune.
 
--   **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all of your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports very large numbers of mobile devices, servers and computers. For more information, see [How to Manage Mobile Devices by Using Configuration Manager and Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=271118) in the [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).  For more help deciding which approach is right for you, see [Ways to do enterprise mobility](/intune/plan-design/ways-to-do-enterprise-mobility.md)
+-   **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all of your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports very large numbers of mobile devices, servers and computers. For more information, see [How to Manage Mobile Devices by Using Configuration Manager and Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=271118) in the [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).  For more help deciding which approach is right for you, see [Ways to do enterprise mobility](/intune/plan-design/ways-to-do-enterprise-mobility)
 
--   Mobile device management provided by Office 365, as described in [Ways to do enterprise mobility](/intune/plan-design/ways-to-do-enterprise-mobility.md)
+-   Mobile device management provided by Office 365, as described in [Ways to do enterprise mobility](/intune/plan-design/ways-to-do-enterprise-mobility)
 
 ## Learn more about Intune
 Use these resources to learn more about Intune:
 
 -   The [Microsoft Intune Trust Center](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) provides information about the security, privacy, and compliance practices of Intune, and describes some of Intune's certifications.
 
--   [Mobile device management capabilities in Microsoft Intune](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune.md)
+-   [Mobile device management capabilities in Microsoft Intune](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
 
 ### See also
 [Microsoft Intune](https://docs.microsoft.com/intune/)
 [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
-[What's new in Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune.md)
+[What's new in Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune)

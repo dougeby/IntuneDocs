@@ -70,7 +70,7 @@ The term **Policy managed apps** is used to refer to apps that are configured wi
 
   **Default value = Yes**
 
-- **ContactSyncDisabled:** Choose **Yes** to prevent contact information from synchronizing to the native address book app on the device. If you choose **No**, the app will save the  contact information to the native address book app on the device.<br/>When you do a selective wipe to remove company data, contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this is applicable only to the **Microsoft Outlook** app.
+- **Disable contact sync:** Choose **Yes** to prevent contact information from synchronizing to the native address book app on the device. If you choose **No**, the app will save the  contact information to the native address book app on the device.<br/>When you do a selective wipe to remove company data, contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this is applicable only to the **Microsoft Outlook** app.
 
   **Default value = Yes**
 

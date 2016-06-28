@@ -52,7 +52,7 @@ The information in this section will help you with actions you can take after yo
 - [Unenroll your device if you declined Terms of Use](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [What happens if you reset your Android device using the Company Portal app?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-- [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md)
+<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
 ## Fix issues with your device
 

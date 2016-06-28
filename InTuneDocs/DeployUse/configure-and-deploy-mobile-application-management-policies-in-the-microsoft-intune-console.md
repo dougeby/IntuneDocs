@@ -49,7 +49,7 @@ To apply restrictions to an app, the app must incorporate the Microsoft Intune A
 
 - **Write your own app that incorporates the Intune App SDK** - The Intune App SDK let's you incorporate app management features into an app while you are writing it. For more information, see [Intune App SDK Overview](/intune/develop/intune-app-sdk)
 
-For help choosing between the app wrapping tool and the Intune App SDK, see [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+For help choosing between the app wrapping tool and the Intune App SDK, see [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 Some managed apps, like the Outlook app for iOS and Android support **multi-identity**. This means that Intune only applies management settings to corporate accounts or data in the app.
 
