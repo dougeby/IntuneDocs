@@ -108,5 +108,5 @@ Alerts that are marked as closed are permanently deleted after 90 days.
 3.  To reactivate the selected alert, click **Reactivate Alert**.
 
 ### See also
-[Get notified by Microsoft Intune alerts](get-notified-by-microsoft-intune-alerts.md)
+[Get notified by Microsoft Intune alerts](get-notified-by-alerts.md)
 
