@@ -63,4 +63,4 @@ Congratulations! You have just completed step 1 of the *Microsoft Intune evaluat
 
 >[!div class="step-by-step"]
 
->[&larr; **Get started**](.\get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Add users** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
+>[&larr; **Get started**](get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Add users** &rarr;](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
