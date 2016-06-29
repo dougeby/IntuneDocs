@@ -99,7 +99,7 @@
 
 ### [Restrict access to networks (Cisco ISE)](restrict-access-to-networks.md)
 
-### [Protect app data](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+### [Protect app data with MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md)
 #### [Get ready to configure MAM policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Create and deploy MAM policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
@@ -108,6 +108,7 @@
 #### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [End user experience](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+#### [Intune admin console for MAM policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Prepare line of business apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [Wrap iOS apps](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
