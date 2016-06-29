@@ -5,7 +5,7 @@ title: Endpoint Protection for Windows PCs| Microsoft Intune
 description:
 keywords:
 author: NathBarn
-manager: jeffgilb
+manager: muhosabe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
