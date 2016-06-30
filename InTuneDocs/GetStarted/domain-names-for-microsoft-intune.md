@@ -38,19 +38,19 @@ You cannot rename or remove that initial domain name. However, you can add, veri
 ## To add and verify your custom domain 
 
 1. Go to [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) and sign into your administrator account.
-	> [!**IMPORTANT**]
+	> [!IMPORTANT]
 	> Check 
 	[Intune Account Portal has merged with the Office 365 management portal](https://docs.microsoft.com/en-us/intune/deploy-use/account-portal-merged-with-Office-365) announcement for more details on where to manage Microsoft Intune users, groups, and domains.
 2. In the navigation pane, choose **Settings** &gt; **Domains**.
 3. Choose **Add domain**, and type your custom domain name.
 4. The **Verify domain** dialog box opens giving you the values to create the TXT record in your DNS hosting provider.
-	> [!**TIP**]
+	> [!TIP]
     > Office 365 Management portal redirects you to GoDaddy's login page when using a GoDaddy domain. 
-    >The TXT record is automatically created after you enter your credentials, and accept the domain change permission agreement.
+    > The TXT record is automatically created after you enter your credentials, and accept the domain change permission agreement.
     > 
     > You can alternatively [create the TXT record manually when using a GoDaddy domain](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US), based on the values provided at this step.
 
-	> [!**NOTE**]
+	> [!NOTE]
 	> Follow the [step-by-step instructions](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) to create the TXT record when using a Register.com domain, based on the values provided at this step.
 
 5. Make sure to create a DNS alias (CNAME) for [Windows devices enrollment](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune), while making changes in your DNS hosting provider.
