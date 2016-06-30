@@ -30,7 +30,7 @@ ms.suite: ems
 ## How you can protect app data
 Your employees use mobile devices for both personal and work tasks.  While making sure your employees can be productive, you also want to prevent data loss, intentional and unintentional.  In addition, you want to have the ability to protect company data accessed using devices even in the case where they are not managed by you.
 
-You can use Intune mobile app management (MAM) policies to help protect your company’s data. Because Intune MAM policies can be used **independent of any mobile-device management (MDM) solution, you can use it to protect your company’s data with or without enrolling devices in a device management solution. By implementing **app-level policies**, you can restrict access to company resources and keep data within the purview of your IT department.
+You can use Intune mobile app management (MAM) policies to help protect your company’s data. Because Intune MAM policies can be used **independent of any mobile-device management (MDM) solution**, you can use it to protect your company’s data with or without enrolling devices in a device management solution. By implementing **app-level policies**, you can restrict access to company resources and keep data within the purview of your IT department.
 
 MAM policies can be configured for app running on devices that are:
 
