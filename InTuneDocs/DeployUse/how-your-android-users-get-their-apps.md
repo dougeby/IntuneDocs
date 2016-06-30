@@ -32,7 +32,7 @@ Use this information to understand how and where your end users get the apps tha
 **Required apps** - Apps that are required by the administrator and that are installed on the device with minimal user involvement, depending on the platform.
  
 - **Samsung Knox devices**: if you deploy a required app to Samsung Knox devices, it is automatically and silently installed on their device.
-- **Native (non-Samsung Knox devices)**: if you deploy a required app to non-Samsung Knox devices, it is not automatically installed on users' devices. Instead, users are prompted to install the app. After they accept the prompts, the app is downloaded, and users then receive a notification indicating that they need to install it. If users choose not to install the app, you can prevent them from accessing company or school resources.
+- **Native (non-Samsung Knox devices)**: if you deploy a required app to non-Samsung Knox devices, it is not automatically installed on users' devices. Instead, users are prompted to install the app. After they accept the prompts, the app is downloaded, and users then receive a notification indicating that they need to install it. 
 
 **Available apps** - Apps that are provided in the Company Portal app list and that a user may optionally choose to install.
 
