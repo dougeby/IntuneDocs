@@ -31,11 +31,11 @@ Mobile device enrollment is the process that brings smartphones, tablets and PCs
 
  - 	Ownership (personal v. company-owned)
  -	Usage (shared v. personal)
- - 	Platform (iOS, Android, Windows Phone, Windows PC, Mac PC)
+ - 	Platform (iOS, Android, Windows Phone, Windows PC, Mac PC) - Selected by  enrollment method
 
 Your answers to the following questions will help determine the best enrollment method for the devices you manage.
 
-## **Do employees bring their own devices or are they provided by your organization?**
+## **Do employees bring their own devices or are devices provided by your organization?**
 
   **Users-owned devices**, also known as "Bring your own device" (BYOD) enrollment, lets users enroll their devices to gain access to company resources like email, company apps, company data, and support. **Company-owned devices** (COD) are provided by the organization to their employees to address a business need.
   > [!div class="button"]
@@ -46,17 +46,13 @@ Your answers to the following questions will help determine the best enrollment 
 BYOD enrollment requires that users install the Intune Company Portal app on their devices. They can then launch the app and enroll by providing their work or school credentials. Provided Intune finds a license for those credentials, the device is added to the Intune admin console and receives policy from Intune, granting access to company resources.
 
 **Select the device type:**
-
-> [!div class="op_single_selector"]
-- [Set up Android management with Microsoft Intune](..deploy-use/set-up-android-management-with-microsoft-intune)
-- [Set up iOS and Mac management with Microsoft Intune](..deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
-- [Set up Windows Phone management with Microsoft Intune](..deploy-use/set-up-windows-phone-management-with-microsoft-intune)
-- [Set up Windows device management with Microsoft Intune](..deploy-use/set-up-windows-device-management-with-microsoft-intune)
+> [!div class="button"]
+[Android](..deploy-use/set-up-android-management-with-microsoft-intune) [iOS and Mac](..deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile and Window Phone](..deploy-use/set-up-windows-phone-management-with-microsoft-intune) [Windows PCs](..deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 
 ### COD device enrollment
 
-Company-owned devices can be enrolled to support a dedicated user or shared.  **Shared devices** don’t have a single user and usually aren’t configured to access email. Examples include kiosk devices or task-oriented devices users borrowed from a pool as needed and then return. Recommended enrollment methods depend upon the devices' platform. **Dedicated devices** are issued to individual users need to be tracked as company assets while allowing users to access email and data as personalized devices. Recommended enrollment methods depend upon the devices' platform.
+Company-owned devices (COD) can be enrolled to support dedicated users or shared amongst many users.  **Shared devices** don’t have a single user and usually aren’t configured to access email. Examples include kiosk devices or task-oriented devices users borrowed from a pool as needed and then return. Recommended enrollment methods depend upon the devices' platform. **Dedicated devices** are issued to individual users need to be tracked as company assets while allowing users to access email and data as personalized devices. Recommended enrollment methods depend upon the devices' platform. [Next question...](Are your company-owned devices shared or do they have dedicated users?)
 
 ## **Are your company-owned devices shared or do they have dedicated users?**
 
@@ -106,4 +102,5 @@ The preferred method of enrollment for shared, company-owned iOS devices depends
     > [!div class="button"][iOS Setup Assistant enrollment](../deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
     > [!div class="button"][iOS direct enrollment](../deploy-use/ios-direct-enrollment-in-microsoft-intune).
 
-    - **None of the above** - If you cannot or do not want to use Apple's DEP or Apple Configurator enrollment methods, by importing the international mobile equipment identity (IMEI) numbers of company-owned devices you can tag them as company-owned devices in Intune. Users can then enroll their devices as a personal devices by installing the Company Portal to access company resources such as email, apps, and data. > [!div class="button"][Tag devices with IMEI numbers](../deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+    - **None of the above** - If you cannot or do not want to use Apple's DEP or Apple Configurator enrollment methods, by importing the international mobile equipment identity (IMEI) numbers of company-owned devices you can tag them as company-owned devices in Intune. Users can then enroll their devices as a personal devices by installing the Company Portal to access company resources such as email, apps, and data.
+    > [!div class="button"][Tag devices with IMEI numbers](../deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
