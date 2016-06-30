@@ -70,6 +70,6 @@ The information in this section will help you fix issues you might encounter whe
 - [You are asked to turn off USB debugging](you-are-asked-to-turn-off-usb-debugging-android.md)
 - [You are asked to turn on Scan device for security threats](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
 - [Your device does not meet the minimum security patch](your-device-does-not-meet-the-minimum-security-patch-android.md)
-- 
+
 
 
