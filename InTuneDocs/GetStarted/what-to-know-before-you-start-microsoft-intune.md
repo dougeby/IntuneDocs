@@ -36,7 +36,7 @@ Before you start setting up Microsoft Intune, review each of the following requi
 - [Microsoft Intune Company Portal](microsoft-intune-company-portal.md)
 - [Intune integration with Microsoft cloud services and products](integration-with-cloud-services.md)
 - [Intune network bandwidth use](network-bandwidth-use.md)
-- [Managing domains with Microsoft Intune](domain-names-for-microsoft-intune.md)
+- [Managing custom domains with Microsoft Intune](domain-names-for-microsoft-intune.md)
 
 
 Before using Intune, you may also want to review the [Intune mobile device management capabilities](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune). If you started with a trial subscription, you can convert it later to a full subscription. See [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
