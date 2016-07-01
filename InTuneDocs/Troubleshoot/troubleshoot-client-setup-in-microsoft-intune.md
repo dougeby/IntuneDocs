@@ -32,7 +32,7 @@ Use the following information to help you troubleshoot common client setup probl
 
 -   If no client software deployment alerts for the computer are displayed in the [Microsoft Intune administration console](https://manage.microsoft.com/) check the computer’s Internet connectivity and proxy configuration and make sure that the computer can communicate with the service URL, [https://manage.microsoft.com](https://manage.microsoft.com/). Then retry the client software installation.
 
--   You can have an email sent to selected recipients when a client software deployment failure alert occurs by configuring a notification rule in the **Admin** workspace. For more information, see [Get notified by Microsoft Intune alerts](/intune/deploy-use/get-notified-by-microsoft-intune-alerts).
+-   You can have an email sent to selected recipients when a client software deployment failure alert occurs by configuring a notification rule in the **Admin** workspace. For more information, see [Get notified by Microsoft Intune alerts](/intune/deploy-use/get-notified-by-alerts).
 
 -   Intune displays the critical alert **Client Software Deployment Failure** if the client software fails to deploy. This will display in the **System Overview** page and **Alerts** pages of the [Microsoft Intune administration console](https://manage.microsoft.com/). Here's how to check for alerts:
 
@@ -56,24 +56,24 @@ Use the following information to help you troubleshoot common client setup probl
 
 ## Computer enrollment package doesn't download
 **Issue:** While trying to enroll a computer you experience the following:
--  The enrollment package fails to download 
+-  The enrollment package fails to download
 -  The download dialog appears but times out
 
 **Resolution:** On the browser you're using for the download, for the period when the download takes place, ensure that downloads are enabled, and that encrypted files can be saved to your local disc.
 
 ## Client installation hangs with error code 0x80040154
 **Issue:**
- 
+
 -  Client installation during enrollment hangs
 
--  Unable to enroll device 
+-  Unable to enroll device
 
 -  Error 0x80040154 in WindowsUpdate.log
 
 This may be caused by the absence of critical software updates on the PC.
 
-**Resolution:** 
-Ensure that your software update policy enables installation of critical updates, as described in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) 
+**Resolution:**
+Ensure that your software update policy enables installation of critical updates, as described in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
 
 
 ## Microsoft Intune policy-related errors in policyplatform.log
