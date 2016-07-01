@@ -47,6 +47,8 @@ Intune supports the enrollment of corporate-owned iOS devices using the [Apple C
 
         -   **Device group pre-assignment** – All devices deployed this profile will initially belong to this group. You can reassign devices after enrollment.
 
+        >[!Important]
+        >Group assignments will move from Intune to Azure Active Directory. [Learn more](http://go.microsoft.com/fwlink/?LinkID=787064)
     3.  Choose **Save Profile** to add the profile.
 
 5.  **Export a profile as .mobileconfig to deploy to iOS devices**

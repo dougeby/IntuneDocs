@@ -64,6 +64,12 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
       - **Prompt for user affinity**: The device must be affiliated with a user during initial setup and could then be permitted to access company data and email as that user.  **User affinity** should be configured for DEP-managed devices that belong to users and need to use the company portal (i.e. to install apps).
       - **No user affinity**: The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation, including the Company Portal app used for installing line-of-business apps, won’t work.
 
+    You can also **Assign devices to the following group**. Click **Select...** to choose a group.
+
+    >[!Important]
+    >Group assignments will move from Intune to Azure Active Directory. [Learn more](#changes-to-intune-group-assignments)
+
+
     Next, enable **Configure Device Enrollment Program settings for this policy** to support DEP.
 
       ![Setup assistant pane](../media/pol-sa-corp-enroll.png)
@@ -107,7 +113,9 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
 8.  **Distribute devices to users**
     Your corporate-owned devices can now be distributed to users. When an iOS device is turned on it will be enrolled for management by Intune.
 
+## Changes to Intune group assignments
 
+Starting in September, device group management will move to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the **Corporate Enrollment Profile** options. Because this change will roll out over a series of months, you might not see the change right away. Further details will be published soon.
 
 ### See also
 [Get ready to enroll devices](get-ready-to-enroll-devices-in-microsoft-intune.md)
