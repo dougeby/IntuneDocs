@@ -46,7 +46,7 @@ After you deploy Microsoft Intune you may encounter problems with your configura
 
 -   Could the user be experiencing an authentication issue? If this is a possiblity, check if the user can log in to other services that use Azure Active Directory. Also, see if the user can log in from a different device.
 
--   Have you checked the service status? You can monitor Intune service health in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx). Choose **Service Health** in the left pane. 
+-   Have you checked the service status? You can monitor Intune service health in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx). Choose **Service Health** in the left pane.
 
 ## Collect available data
 
@@ -54,9 +54,9 @@ After you deploy Microsoft Intune you may encounter problems with your configura
   - [Send Android diagnostic data logs to your IT administrator using a USB cable](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Send Android diagnostic data logs to your IT administrator using email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Send Android enrollment errors to your IT administrator](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-  - [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios.md)
+  - [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios)
 
--   Admin console data, for example, for policy implementation issues you should examine the intended policy and the status of that policy, as described in [Use groups to manage users and devices with Microsoft Intune](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Admin console data, for example, for policy implementation issues you should examine the intended policy and the status of that policy, as described in [Use groups to manage users and devices with Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## Research the solution
 
