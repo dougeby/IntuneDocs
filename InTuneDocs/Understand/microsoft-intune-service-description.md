@@ -40,7 +40,7 @@ For a list of settings that you can configure on mobile devices, see:
 
 -   [Mobile device management capabilities in Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
--   [General settings for Mobile Devices in Configuration Manager](https://technet.microsoft.com/en-us/library/dn376523.aspx)
+-   [General settings for Mobile Devices in Configuration Manager](https://technet.microsoft.com/library/dn376523.aspx)
 
 For information on System Center 2012 R2 Configuration Manager, see [Documentation Library for System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).
 
@@ -51,7 +51,7 @@ Use the information in this topic to help you understand the frequency of these 
 
 To learn about changes in the  Intune service, see [What's new in Microsoft Intune](/intune/deploy-use/Whats-new-in-microsoft-intune.md). The [Microsoft Intune Blog](http://blogs.technet.com/b/microsoftintune/) also discusses changes in the service, and provides helpful tips to enable you to get the most from  Intune.
 
-Important service updates will also be communicated to you in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) Message Center. If you install the companion [Office 365 Admin mobile app](https://support.office.com/en-us/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), you can receive notifications on your mobile device.
+Important service updates will also be communicated to you in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) Message Center. If you install the companion [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), you can receive notifications on your mobile device.
 
 > [!NOTE] You can monitor Intune service health in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx). Choose **Service Health** in the left pane.  
 
