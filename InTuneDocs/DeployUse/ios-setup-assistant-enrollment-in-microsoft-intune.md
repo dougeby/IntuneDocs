@@ -70,8 +70,7 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
         -   **Device group pre-assignment** – All devices deployed this profile will initially belong to this group. You can reassign devices after enrollment.
 
-        >[!Important]
-        >Group assignments will move from Intune to Azure Active Directory. [Learn more](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
           -  **Device Enrollment Program** - The Apple Device Enrollment Program (DEP) cannot be used with Setup Assistant enrollment. Ensure the toggle is set to **off**.
 
