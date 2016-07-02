@@ -80,4 +80,4 @@ The second time that users sign in to the Company Portal app after denying acces
 
 
 ### See also
-[What to tell your end users about using Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
+[What to tell your end users about using Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
