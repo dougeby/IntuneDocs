@@ -18,7 +18,7 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -69,6 +69,8 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
             -   **No user affinity** – The device is user-less. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation are disabled or won’t work.
 
         -   **Device group pre-assignment** – All devices deployed this profile will initially belong to this group. You can reassign devices after enrollment.
+
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
           -  **Device Enrollment Program** - The Apple Device Enrollment Program (DEP) cannot be used with Setup Assistant enrollment. Ensure the toggle is set to **off**.
 
