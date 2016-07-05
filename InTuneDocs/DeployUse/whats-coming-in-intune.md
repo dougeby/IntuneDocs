@@ -25,23 +25,35 @@ ms.suite: ems
 
 ---
 
-# What's coming in Microsoft Intune
+# What's coming in Microsoft Intune - July
 This information is provided under NDA on an extremely limited basis and is subject to change. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Intune/PM buddy if you have any questions or concerns.
 
 This page is updated periodically. Check back for new What’s Coming updates.
 
 The following changes are under development for Intune. All of these features will also be supported for hybrid customers deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
+<!--- New stuff
+- 1280247 Rob. Done
+- 1252335 Karthika. 1608
+- 1252336 Karthika. 1608
+- 1061478 Karthika. Done
+- 1289896 Barnett. Done
+- 1295328 Bigman. Still in list. Confirmed for 1607 WC; waiting on blurb
+- 1295330 Bigman. Still in list. Confirmed for 1607 WC; waiting on blurb
+- 1228570 Rob. 1608
+- 1284856 Rob. 1608
+- 1290248 Stacie. OOB
+- 1142641 Closed. Dupe. Already shipped
+- 1199558 Stacie? Waiting on
+- 1299082 Stacie? Waiting on --->
+
+## Group management
+- **Intune Groups transitioning to Azure Active Directory Groups.** Waiting on blurb
 
 ## App management
-- **Enhanced Windows 10 enterprise data policy configuration experience.** We have made enhancements to the Win 10 enterprise data protection policy configuration experience around creating app rules, specifying network boundary definition, and other enterprise data protection settings.
-<!---TFS 1303011--->
-
-- **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
-<!---TFS 1175844--->
-
-- **Dynamics CRM Online supports conditional access.** Customers will be able to set a conditional access policy for Dynamics CRM Online so that it can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to the Dynamics CRM mobile app on iOS and Android will be prompted to enroll with Intune as well as remediate any non-compliance issues before sign-in can complete.
-<!---TFS1295358--->
+- **Improve the app provisioning profile update experience.** <br/>Apple iOS line of business mobile apps are built with a provisioning profile included and code signed with a certificate. When the app is run on an iOS device, iOS confirms the integrity of the iOS app and enforces policies defined by the provisioning profile.<br/>
+The enterprise signing certificate you use to sign apps typically lasts for 3 years. However, the provisioning profile expires after 1 year. With this update, Intune will provide you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are near expiry while the certificate is still valid.
+<!--- TFS 1280247--->
 
 ### Xamarin support
 The Microsoft Intune app SDK will support Xamarin apps in these scenarios:
@@ -50,22 +62,15 @@ The Microsoft Intune app SDK will support Xamarin apps in these scenarios:
 - Adding MAM support to existing line of business apps using the Intune app wrapping tool
 
 For help choosing which method to use, see [Decide how to prepare apps for mobile application management with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
+
 <!--- TFS 1061478 & TFS 1152340--->
 
 ## Device management
-- **Windows Defender policy setting to protect against potentially unwanted apps.** A new Windows Defender setting named **Potentially Unwanted Application Detection** has been added to the general configuration policy for Windows 10 Desktop and Mobile. You can use this setting to protect enrolled Windows desktop computers against running software classed by Windows Defender as potentially unwanted. You can protect against these applications running, or use audit mode to report when a potentially unwanted application is installed.
-<!---TFS 1244478--->
 
-## Conditional access
-**Cisco ISE network access control policy for Intune.**  Customers who use the Cisco Identity Service Engine (ISE) 2.1 and also use Microsoft Intune can set a network access control policy in ISE.
+- **Increased device enrollment limits.** <br/>Intune will increase the maximum configurable device enrollment limit from 5 to 15 devices per user.
+<!---TFS 1289896 --->
 
-Using this policy, devices that need to connect to the network using WiFi or VPN must meet following conditions before they are allowed access:
 
-* Must be managed by Intune
-* Must be compliant with any deployed Intune compliance policies
-
-End users of noncompliant devices will be prompted to enroll, and remediate any compliance issues to gain access.
-<!---TFS 1299144--->
 
 ## Company Portal
 **Changes to Device Enrollment Managers accounts in the iOS Company Portal app.** To improve performance and scale, Intune will no longer show all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices. Only use DEM accounts when user-less enrollment for shared devices is unavailable.
