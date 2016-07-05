@@ -9,7 +9,7 @@
 ### [Company Portal](microsoft-intune-company-portal.md)
 ### [Integration with Microsoft cloud services and products](integration-with-cloud-services.md)
 ### [Network bandwidth usage](network-bandwidth-use.md)
-### [Domain names](domain-names-for-microsoft-intune.md)
+### [Custom domain names](domain-names-for-microsoft-intune.md)
 
 ## [Intune quick start guide](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Sign in to Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)

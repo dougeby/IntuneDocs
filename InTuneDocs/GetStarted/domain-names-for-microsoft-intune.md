@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 
-# Managing custom domains with Microsoft Intune
+# Custom domain names with Microsoft Intune
 
 The steps to add and verify a custom domain can alternatively be [performed in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
 
@@ -68,4 +68,4 @@ In a hybrid cloud scenario, after you added your custom domain name, and it has 
 
 [About your initial onmicrosoft.com domain in Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
 
-[What to know before you start using Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
+[What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
