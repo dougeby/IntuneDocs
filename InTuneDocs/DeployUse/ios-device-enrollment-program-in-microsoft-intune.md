@@ -68,7 +68,6 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
 
     [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
-
     Next, enable **Configure Device Enrollment Program settings for this policy** to support DEP.
 
       ![Setup assistant pane](../media/pol-sa-corp-enroll.png)
