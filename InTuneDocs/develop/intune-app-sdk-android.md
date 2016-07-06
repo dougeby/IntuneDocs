@@ -227,7 +227,7 @@ In some cases, a method available in the Android class has been marked as final 
 
 # Protecting Backup data 
 
-As of Android Marshmallow (API 23), Android now has two ways for an app to back up its data. these options are available for use in your app and require different steps to ensure that MAM data protection is applied appropriately. You can review the table below for quick overview on corresponding actions required for correct data protection behavior.  You can also find more on Android backup in the [Android Developer Data Backup guide](http://developer.android.com/guide/topics/data/backup.html.). 
+As of Android Marshmallow (API 23), Android now has two ways for an app to back up its data. these options are available for use in your app and require different steps to ensure that MAM data protection is applied appropriately. You can review the table below for quick overview on corresponding actions required for correct data protection behavior.  You can also find more on Android backup in the [Android Developer Data Backup guide](http://developer.android.com/guide/topics/data/backup.html). 
 
 ## Automatic full backup
 
