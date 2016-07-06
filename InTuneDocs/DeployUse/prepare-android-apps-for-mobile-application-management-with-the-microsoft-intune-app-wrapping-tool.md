@@ -4,9 +4,9 @@
 title: Prepare Android apps for management with App Wrapping Tool |  Microsoft Intune | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: karthikaraman
 manager: jeffgilb
-ms.date: 05/11/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -63,7 +63,7 @@ Note the folder to which you installed the tool. The default location is: **C:\P
 
 ## Step 3 Run the app wrapping tool
 
-1.  On the Windows computer where you installed the app wrapping tool, open a PowerShell window.
+1.  On the Windows computer where you installed the app wrapping tool, open a PowerShell window in administrator mode.
 
 2.  From the folder where you installed the tool, import the app wrapping tool PowerShell module:
 
@@ -78,7 +78,7 @@ Note the folder to which you installed the tool. The default location is: **C:\P
 |**-InputPath**&lt;String&gt;|Path of the source Android app (.apk).| |
 |**-OutputPath**&lt;String&gt;|Path to the "output" Android app. If this is the same directory path as InputPath, the packaging will fail.| |
 |**-KeyStorePath**&lt;String&gt;|Path to the keystore file that contains the public/private key pair for signing.| |
-|**-KeyStorePassword**&lt;SecureString&gt;|Password used to decrypt the keystore. Use the Java Key Tool to generate the KeyStorePassword. Read more about [keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html).|keytool.exe -genkey -v -keystore keystorefile -alias ks -keyalg RSA -keysize 2048 -validity 50000 |
+|**-KeyStorePassword**&lt;SecureString&gt;|Password used to decrypt the keystore. Android requires that all application packages (.apk) to be signed. Use the Java Key Tool to generate the KeyStorePassword as shown in the example. Read more about [keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html).|keytool.exe -genkey -v -keystore keystorefile -alias ks -keyalg RSA -keysize 2048 -validity 50000 |
 |**-KeyAlias**&lt;String&gt;|Name of the key to be used for signing.| |
 |**-KeyPassword**&lt;SecureString&gt;|Password used to decrypt the private key that will be used for signing.| |
 |**-SigAlg**&lt;SecureString&gt;|Name of the signature algorithm to be used for signing. The algorithm must be compatible with the private key.|Examples: SHA256withRSA, SHA1withRSA, MD5withRSA|
@@ -104,7 +104,7 @@ Note the folder to which you installed the tool. The default location is: **C:\P
 
 
     Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
-    invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app.wrapped\HelloWorld_wrapped2.apk -KeyStorePath "<C:\Program Files (x86)\Java\jre1.8.0_91\bin\keystorefile>" -keyAlias ks -SigAlg SHA1withRSA -Verbose>
+    invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app.wrapped\HelloWorld_wrapped2.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\keystorefile" -keyAlias ks -SigAlg SHA1withRSA -Verbose
 
 You will then be prompted for the **KeyStorePassword** and **KeyPassword**.
 
