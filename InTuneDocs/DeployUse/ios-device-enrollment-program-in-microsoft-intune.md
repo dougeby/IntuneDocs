@@ -66,9 +66,7 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
 
     You can also **Assign devices to the following group**. Click **Select...** to choose a group.
 
-    >[!Important]
-    >Group assignments will move from Intune to Azure Active Directory. [Learn more](#changes-to-intune-group-assignments)
-
+    [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
     Next, enable **Configure Device Enrollment Program settings for this policy** to support DEP.
 
@@ -115,7 +113,7 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP Token
 
 ## Changes to Intune group assignments
 
-Starting in September, device group management will move to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the **Corporate Enrollment Profile** options. Because this change will roll out over a series of months, you might not see the change right away. Further details will be published soon.
+Starting in September, device group management will move to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the **Corporate Enrollment Profile** options. Because this change will roll out over a series of months, you might not see the change right away. [Learn more about Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### See also
 [Get ready to enroll devices](get-ready-to-enroll-devices-in-microsoft-intune.md)
