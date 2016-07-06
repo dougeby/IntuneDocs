@@ -4,7 +4,7 @@
 title: Decide how to prepare apps for mobile application management with Microsoft Intune | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
