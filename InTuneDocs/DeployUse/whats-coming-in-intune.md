@@ -6,7 +6,7 @@ description:
 keywords:
 author: Lindavr
 manager: jeffgilb
-ms.date: 06/10/2016
+ms.date: 07/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,13 +30,11 @@ This information is provided under NDA on an extremely limited basis and is subj
 
 This page is updated periodically. Check back for new What’s Coming updates.
 
-The following changes are under development for Intune. All of these features will also be supported for hybrid customers deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
+The following changes are under development for Intune. All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
 <!--- New stuff
 - 1280247 Rob. Done
-- 1252335 Karthika. 1608
-- 1252336 Karthika. 1608
-- 1061478 Karthika. Done
+
 - 1289896 Barnett. Done
 - 1295328 Bigman. Still in list. Confirmed for 1607 WC; waiting on blurb
 - 1295330 Bigman. Still in list. Confirmed for 1607 WC; waiting on blurb
@@ -47,11 +45,11 @@ The following changes are under development for Intune. All of these features wi
 - 1199558 Stacie? Waiting on
 - 1299082 Stacie? Waiting on --->
 
-## Group management
-- **Intune Groups transitioning to Azure Active Directory Groups.** Waiting on blurb
+
 
 ## App management
-- **Improve the app provisioning profile update experience.** <br/>Apple iOS line of business mobile apps are built with a provisioning profile included and code signed with a certificate. When the app is run on an iOS device, iOS confirms the integrity of the iOS app and enforces policies defined by the provisioning profile.<br/>
+### Improve the app provisioning profile update experience
+Apple iOS line of business mobile apps are built with a provisioning profile included and code signed with a certificate. When the app is run on an iOS device, iOS confirms the integrity of the iOS app and enforces policies defined by the provisioning profile.<br/>
 The enterprise signing certificate you use to sign apps typically lasts for 3 years. However, the provisioning profile expires after 1 year. With this update, Intune will provide you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are near expiry while the certificate is still valid.
 <!--- TFS 1280247--->
 
@@ -66,14 +64,32 @@ For help choosing which method to use, see [Decide how to prepare apps for mobil
 <!--- TFS 1061478 & TFS 1152340--->
 
 ## Device management
-
-- **Increased device enrollment limits.** <br/>Intune will increase the maximum configurable device enrollment limit from 5 to 15 devices per user.
+### Increased device enrollment limits
+Intune will increase the maximum configurable device enrollment limit from 5 to 15 devices per user.
 <!---TFS 1289896 --->
 
+## Group management
+### Intune Groups transitioning to Azure Active Directory Groups beginning in August 2016
+Intune is creating a new group management experience that uses Azure Active Directory (AAD) security groups as user and device groups in Intune. These groups will be used for all group management, policy deployment, and profile deployment **when we introduce the new Azure-based Intune admin portal**.
+
+This new experience will keep you from having to duplicate groups between services, **allow you access to some new Azure Active Directory Premium (AADP) group features**, and provide extensibility using PowerShell and Graph. This will also unify the group management experience across enterprise mobility management.
+
+To enable the move to Security Groups, the experience in the **current admin console** will undergo some modifications. **These changes, and the use of AAD security groups, will be recorded in the Intune documentation**.
+
+Customers who are new to Intune will see **some of the security group changes before current tenants do**.
+
+In addition to changes in group management, **the following functionality will be deprecated**:
+
+- 'Manage Groups' in the Service Admin role
+- Custom group-based alerts for Notification Rules
+- Grouping of Exchange ActiveSync (EAS) devices. ‘All EAS Managed Devices’ group will be converted from a group to a report view
+- EAS Device Policy will no longer be configured or deployed through Intune and will need to be set directly in Exchange
+- Pivoting with groups in reports
 
 
 ## Company Portal
-**Changes to Device Enrollment Managers accounts in the iOS Company Portal app.** To improve performance and scale, Intune will no longer show all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices. Only use DEM accounts when user-less enrollment for shared devices is unavailable.
+### Changes to Device Enrollment Managers accounts in the iOS Company Portal app
+To improve performance and scale, Intune will no longer show all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices. Only use DEM accounts when user-less enrollment for shared devices is unavailable.
 <!---TFS 1233681--->
 
 ## Service deprecation
@@ -98,6 +114,7 @@ In July, all users of the Microsoft Intune Company Portal app for iOS will be re
 - Intune Image Viewer for Android from Google Play
 
 Instead of using the Intune Viewer apps, we recommend using the new Rights Management app (RMS sharing) for Android, which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. Learn more about the RMS sharing app (with link to documentation).
+
 
 
 ### See also
