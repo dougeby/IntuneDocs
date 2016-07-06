@@ -28,21 +28,27 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 
 # Install a new version of the Company Portal app
 
-If your version of the Company Portal is no longer supported, or there is a newer version of the Company Portal available, use the following procedures to update your device.
+If your version of the Company Portal is no longer supported, or there is a newer version of the Company Portal available, you need to update the Company Portal app to a later version. Use the steps below that match the type of device you have.
 
-## To update your Android device
+## To update the Company Portal app on your Android device
 
 The Play Store will alert you when a new version of the Company Portal is available. You will not see a prompt in the Company Portal app itself. Follow the directions in the alert to update your device.
 
-## To update your iOS device
+## To update the Company Portal app on your iOS device
 
-The Apple AppStore will alert you when a new version of the Company Portal is available. Follow the directions in the alert to update your device.
+The App Store will alert you when a new version of the Company Portal app is available. 
 
-## To update your Windows device
+To update the Company Portal app:
+
+1. Open the App Store and search for **intune**.
+
+2. When you find the app, tap the **Update** button to the right of the app name.
+
+## To update the Company Portal app on your Windows device
 
 1.  Navigate to the Windows Store and search for **company portal**.
 
-2.  Follow the installation directions.
+2.  Follow the installation steps.
 
     > [!NOTE]
     > If you are unable to access the Windows Store, contact your IT administrator.
