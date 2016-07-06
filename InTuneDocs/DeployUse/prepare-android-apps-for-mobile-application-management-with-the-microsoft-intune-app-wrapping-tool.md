@@ -6,7 +6,7 @@ description:
 keywords:
 author: karthikaraman
 manager: jeffgilb
-ms.date: 05/11/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -63,7 +63,7 @@ Note the folder to which you installed the tool. The default location is: **C:\P
 
 ## Step 3 Run the app wrapping tool
 
-1.  On the Windows computer where you installed the app wrapping tool, open a PowerShell window.
+1.  On the Windows computer where you installed the app wrapping tool, open a PowerShell window in administrator mode.
 
 2.  From the folder where you installed the tool, import the app wrapping tool PowerShell module:
 
@@ -104,7 +104,7 @@ Note the folder to which you installed the tool. The default location is: **C:\P
 
 
     Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
-    invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app.wrapped\HelloWorld_wrapped2.apk -KeyStorePath "<C:\Program Files (x86)\Java\jre1.8.0_91\bin\keystorefile>" -keyAlias ks -SigAlg SHA1withRSA -Verbose>
+    invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app.wrapped\HelloWorld_wrapped2.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\keystorefile" -keyAlias ks -SigAlg SHA1withRSA -Verbose
 
 You will then be prompted for the **KeyStorePassword** and **KeyPassword**.
 
