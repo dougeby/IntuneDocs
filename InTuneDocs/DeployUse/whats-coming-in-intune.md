@@ -32,20 +32,6 @@ This page is updated periodically. Check back for new What’s Coming updates.
 
 The following changes are under development for Intune. All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
-<!--- New stuff
-- 1280247 Rob. Done
-
-- 1289896 Barnett. Done
-- 1295328 Bigman. Still in list. Confirmed for 1607 WC; waiting on blurb
-- 1295330 Bigman. Still in list. Confirmed for 1607 WC; waiting on blurb
-- 1228570 Rob. 1608
-- 1284856 Rob. 1608
-- 1290248 Stacie. OOB
-- 1142641 Closed. Dupe. Already shipped
-- 1199558 Stacie? Waiting on
-- 1299082 Stacie? Waiting on --->
-
-
 
 ## App management
 ### Improve the app provisioning profile update experience
@@ -92,6 +78,9 @@ In addition to changes in group management, **the following functionality will b
 ### Changes to Device Enrollment Managers accounts in the iOS Company Portal app
 To improve performance and scale, Intune will no longer show all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices. Only use DEM accounts when user-less enrollment for shared devices is unavailable.
 <!---TFS 1233681--->
+### Restrict side-load app installation to enrolled Android devices
+Android devices that are running versions below Android 4.0 will no longer be able to install applications through the Company Portal website unless the devices have been enrolled in Intune by using the Intune Company Portal app for Android. [Intune supported devices](https://docs.microsoft.com/intune/get-started/choose-how-to-manage-devices#ways-to-manage-mobile-devices).
+<!---TFS 1299082--->
 
 ## Service deprecation
 **Company Portal apps for Windows 8 and Windows Phone 8 are being deprecated from Sept, 2016.** Starting in Sept 2016, Microsoft Intune will end support for the Microsoft Intune Company Portal apps for Windows Phone 8 and Windows 8 platforms. Update devices to Windows 8.1 and Windows Phone 8.1 and use the corresponding Windows 8.1 and Windows Phone 8.1 Company Portal apps to continue distributing apps to these devices.
