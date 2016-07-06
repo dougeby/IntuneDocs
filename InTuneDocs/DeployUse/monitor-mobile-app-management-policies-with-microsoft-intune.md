@@ -6,7 +6,7 @@ description:
 keywords:
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,6 +54,9 @@ You can search for a single user and look at the compliance status for that user
   **Checked in:** This means that the policy was deployed to the user, and app was used in work context at least once.
 
   **Not checked in:** This means the policy was deployed to the user, but app has not been used in the work context since then.
+
+>[!NOTE]
+> If the user you searched for does not have the MAM policy deployed to them, you will see a message informing you that the user is not targeted for any app policies.
 
 To see the reporting for a user, follow these steps:
 
