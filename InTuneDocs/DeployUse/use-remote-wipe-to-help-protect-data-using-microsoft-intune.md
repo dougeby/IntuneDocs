@@ -61,7 +61,7 @@ As with devices, at some point, you want or need to [retire apps](retire-apps-us
 |Unmanaged Google Play apps|Apps and data remain installed|Apps and data remain installed|
 |Unmanaged line of business apps|Apps and data remain installed|Apps are uninstalled and data local to app is removed as a result. No data outside the app (SD card, etc.) is removed.|
 |Managed Google Play apps|App data is removed. App is not removed. Data protected by MAM encryption outside the app (SD card, etc.) remain encrypted and unusable, but aren't removed.|App data is removed. App is not removed. Data protected by MAM encryption outside the app (SD card, etc.) remain encrypted but aren't removed.|
-|Managed line of business apps|App data is removed. App is not removed. Data protected by MAM encryption outside the app (SD card, etc.) remain encrypted and unusable, but aren't removed.|App data is removed. App is not removed. Data protected by MAM encryption outside the app (SD card, etc.) remain encrypted but aren't removed.|
+|Managed line of business apps|App data is removed. App is not removed. Data protected by MAM encryption outside the app (SD card, etc.) remain encrypted and unusable, but aren't removed.|App data is removed. App is not removed. Data protected by MAM encryption outside the app (SD card, etc.) remain encrypted and unusable, but aren't removed.|
 |Settings|Configurations that were set by Intune policy are no longer enforced and users can change the settings.|Configurations that were set by Intune policy are no longer enforced and users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed|Removed|
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|

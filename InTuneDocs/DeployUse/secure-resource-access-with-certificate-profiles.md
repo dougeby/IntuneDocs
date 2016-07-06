@@ -53,7 +53,7 @@ You have to create a separate profile for each platform. When you create the pro
 > -    If you don't have an enterprise certification authority, you have to create one.
 >- If you decide, based on your device platforms, to use the Simplified Certificate Enrollment Protocol (SCEP) profile, you also need to configure a Network Device Enrollment Service (NDES) server.
 >-  Whether you plan to use SCEP or or .PFX profiles, you have to download and configure the Microsoft Intune Certificate Connector.
-> Configuration of all of these is described in the topic [Configure certificate infrastructure](configure-certificate-infrastructure.md).
+> Configuration of all of these is described  [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) and [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md).
 
 ### Next steps
 - [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md)
