@@ -49,7 +49,8 @@ The following changes are under development for Intune. All of these features wi
 
 ## App management
 ### Improve the app provisioning profile update experience
-Apple iOS line of business mobile apps are built with a provisioning profile included and code signed with a certificate. When the app is run on an iOS device, iOS confirms the integrity of the iOS app and enforces policies defined by the provisioning profile.<br/>
+Apple iOS line of business mobile apps are built with a provisioning profile included and code signed with a certificate. When the app is run on an iOS device, iOS confirms the integrity of the iOS app and enforces policies defined by the provisioning profile.
+
 The enterprise signing certificate you use to sign apps typically lasts for 3 years. However, the provisioning profile expires after 1 year. With this update, Intune will provide you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are near expiry while the certificate is still valid.
 <!--- TFS 1280247--->
 
