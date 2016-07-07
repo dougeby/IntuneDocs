@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 7/7/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,9 +34,9 @@ When you install the Company Portal app and enroll your iOS or Mac OS X device i
 
 -   Get company apps from the Company Portal
 
--   Automatically configure your company email account
+-   Remotely reset your phone to factory settings if it is lost or stolen
 
--   Reset your phone to factory settings if it is lost or stolen
+-   Automatically configure your company email account
 
 When  you enroll your device in Intune, you are giving your IT administrator permission to manage your device to help protect the company information on the device.
 
@@ -69,8 +69,6 @@ When  you enroll your device in Intune, you are giving your IT administrator per
 -   Owner
 
 -   Device name
-
--   Manufacturer
 
 When your device is enrolled, your IT administrator can:
 
