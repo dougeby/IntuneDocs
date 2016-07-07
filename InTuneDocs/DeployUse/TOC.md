@@ -24,6 +24,7 @@
 #### [Exchange access rules](exchange-access-rules-for-mobile-devices.md)
 ### [Manage PCs](manage-windows-pcs-with-microsoft-intune.md)
 #### [Install the PC client](install-the-windows-pc-client-with-microsoft-intune.md)
+#### [Common PC management tasks](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Resolve PC policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 
 ## [Configure devices](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -49,7 +50,7 @@
 ### [Use groups to manage users & devices](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 ### [Map devices to groups](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Understand your devices with inventory](understand-your-devices-with-inventory-in-microsoft-intune.md)
-### [Common PC management tasks](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+
 
 ## [Protect devices](protect-your-devices-with-microsoft-intune.md)
 ### [Remote lock & passcode reset](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
