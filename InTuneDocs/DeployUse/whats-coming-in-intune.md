@@ -94,6 +94,7 @@ The preliminary timeline for this change is as follows:
 - In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
 - Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
 - Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
+
 <!---	TFS 1278864--->
 
 **Changes in support for the iOS Company Portal app.**
