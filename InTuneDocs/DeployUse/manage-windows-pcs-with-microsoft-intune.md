@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Manage Windows PCs with Intune PC client software
-In addition to [enrolling Windows PCs as mobile devices](set-up-windows-device-management-with-microsoft-intune.md), you can manage Windows PCs by installing the Intune client software. 
+Instead of [enrolling Windows PCs as mobile devices](set-up-windows-device-management-with-microsoft-intune.md), you can manage Windows PCs by installing the Intune client software. 
 
 Intune manages Windows PCs using policies similar to the way Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you will be managing Active Directory domain-joined computers with Intune, you should [be sure that Intune policies do not conflict with any GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) that are in place for your organization.
 
