@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune policy reference | Microsoft Intune
+title: Configuration policy reference | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -18,7 +18,7 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Microsoft Intune policy reference
 
-Use the information in this topic to help you decide which Microsoft Intune policy you need to use to manage your devices.
+Use the information in this topic to help you decide which Microsoft Intune configuration policy you need to use to manage your devices.
 
 > [!TIP]
 > For more detailed information about how to use policies, see [Manage settings and features on your devices with Microsoft Intune Policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
@@ -53,11 +53,14 @@ Use the information in this topic to help you decide which Microsoft Intune poli
 |**Custom Configuration (iOS 7.1 and later)**|Deploy configuration profiles to iOS devices that you created using the Apple Configurator tool. This is useful when the setting you need is not available in a configuration policy.<br /><br />For details, see [iOS policy settings in Microsoft Intune](ios-policy-settings-in-microsoft-intune.md).|
 |**Email Profile (iOS 7.1 and later)**|Create, deploy and monitor Exchange ActiveSync email settings on managed devices. This lets users access corporate email on their personal devices without any required setup on their part.<br /><br />For details, see [Configure access to corporate email using email profiles with Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**General Configuration (iOS 7.1 and later)**|Configure mobile device security and functional settings.<br />-   Specify apps that are compliant or noncompliant, and report when they are used.<br />Configure kiosk mode that locks devices to allow only certain features to work, for example, allow the device to run only one app, or disable the volume buttons.<br /><br />For details, see [iOS policy settings in Microsoft Intune](ios-policy-settings-in-microsoft-intune.md).|
+|**Mobile App Configuration Policy (iOS 7.1 and later)**|Use mobile app configuration policies to automatically supply settings that might be required when the user runs an iOS app.<br /><br />For details, see [Configure iOS apps with mobile app configuration policies in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
+|**Mobile provisioning Profile Policy (iOS 7.1 and later)**|Apple iOS line of business mobile apps are built with a provisioning profile included and code signed with a certificate. When the app is run on an iOS device, iOS confirms the integrity of the iOS app and enforces policies defined by the provisioning profile.<br><br>The enterprise signing certificate you use to sign apps typically lasts for 3 years. However, the provisioning profile expires after 1 year. Use this policy to proactively deploy a new provisioning profile policy to devices that have apps that are near expiry while the certificate is still valid.<br><br>For details, see [Use iOS mobile provisioning profile policies to prevent your apps from expiring](ios-mobile-app-provisioning-profiles.md).|
+|**PKCS #12 (.PFX) Certificate Profile (iOS 7.1 and later)**|Use this profile to create and deploy PFX settings for device certificate requests.<br /><br />For details, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**SCEP Certificate Profile (iOS 7.1 and later)**|Configure a Simple Certificate Enrollment Protocol certificate which can be used with a trusted mobile device certificate to authenticate mobile devices to allow them to access network resources such as those configured by Wi-Fi and VPN profiles.<br /><br />For details, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Trusted Certificate Profile (iOS 7.1 and later)**|Configure a trusted mobile device certificate which can be used to authenticate mobile devices to allow them to access network resources such as those configured by Wi-Fi and VPN profiles.<br /><br />For details, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**VPN Profile (iOS 7.1 and later)**|Configure and deploy settings that give users secure access to your company network from their mobile device. By deploying these settings, you minimize the end-user effort required to connect to their work.<br /><br />For details, see [VPN connections in Microsoft Intune.md](vpn-connections-in-microsoft-intune.md).|
 |**Wi-Fi Profile (iOS 7.1 and later)**|Configure and deploy wireless network settings to users in your organization. By deploying these settings, you minimize the end-user effort required to connect to the wireless network.<br /><br />For details, see [Wi-Fi connections in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md).|
-|**Mobile App Configuration Policy (iOS 7.1 and later)**|Use mobile app configuration policies to automatically supply settings that might be required when the user runs an iOS app.<br /><br />For details, see [Configure iOS apps with mobile app configuration policies in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
+
 
 ## Mac OS X configuration policies
 
@@ -85,9 +88,11 @@ Applies to Windows Phone, and enrolled Windows devices only.
 |**General Configuration (Windows Phone 8.1 and later)**|Configure mobile device security and functional settings.<br />Specify apps that users can, or cannot use and block noncompliant apps from being installed or used.<br /><br />For details, see [Windows Phone 8.1 settings in Microsoft Intune](windows-phone-8-1-policy-settings-in-microsoft-intune.md).|
 |**PKCS #12 (.PFX) Certificate Profile (Windows 10 Desktop and Mobile and later)**|Use this profile to create and deploy PFX settings for device certificate requests.<br /><br />For details, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**SCEP Certificate Profile (Windows 8.1 and later)**<br /><br />**SCEP Certificate Profile (Windows Phone 8.1 and later)**|Configure a Simple Certificate Enrollment Protocol certificate which can be used with a trusted mobile device certificate to authenticate mobile devices to allow them to access network resources such as those configured by Wi-Fi and VPN profiles.<br /><br />For details, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
-|**Trusted Certificate Profile (Windows 8.1 and later)**<br /><br />**Trusted Certificate Profile (Windows Phone 8.1 and later)**|Configure a trusted mobile device certificate which can be used to authenticate mobile devices to allow them to access network resources such as those configured by Wi-Fi and VPN profiles.<br /><br />For details, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md)).|
-|**VPN Profile (Windows 10 Desktop and Mobile and later)**<br /><br />**VPN Profile (Windows 8.1 and later)**<br /><br />**VPN Profile (Windows Phone 8.1 and later)**|Configure and deploy settings that give users secure access to your company network from their mobile device. By deploying these settings, you minimize the end-user effort required to connect to their work.<br /><br />For details, see [VPN connections in Microsoft Intune.md](vpn-connections-in-microsoft-intune.md).|
+|**Trusted Certificate Profile (Windows 8.1 and later)**<br /><br />**Trusted Certificate Profile (Windows Phone 8.1 and later)**|Configure a trusted mobile device certificate which can be used to authenticate mobile devices to allow them to access network resources such as those configured by Wi-Fi and VPN profiles.<br /><br />For details, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
+|**VPN Profile (Windows 10 Desktop and Mobile and later)**<br /><br />**VPN Profile (Windows 8.1 and later)**<br /><br />**VPN Profile (Windows Phone 8.1 and later)**|Configure and deploy settings that give users secure access to your company network from their mobile device. By deploying these settings, you minimize the end-user effort required to connect to their work.<br /><br />For details, see [VPN connections in Microsoft Intune](vpn-connections-in-microsoft-intune.md).|
 |**Wi-Fi Import**|Import and deploy Windows Wi-Fi configurations that you have previously exported to a file.<br /><br />For details, see [Wi-Fi connections in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md).|
+|**Windows Information Protection**<br>(formerly known as enterprise data protection)|With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leaks through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control. For example, when an employee sends the latest engineering pictures from their personal email account, copies and pastes product info into a tweet, or saves an in-progress sales report to their public cloud storage.<br><br>Windows Information Protection helps to protect against this potential data leakage without otherwise interfering with the employee experience. It also helps to protect enterprise apps and data against accidental data leaks on enterprise-owned devices and personal devices that employees bring to work without requiring changes to your environment or other apps.<br><br>This intune policy manages the list of apps protected by Windows Information Protection, enterprise network locations, protection level, and encryption settings.<br><br>For more information, see [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-edp).|
+
 
 ## Software policies
 
