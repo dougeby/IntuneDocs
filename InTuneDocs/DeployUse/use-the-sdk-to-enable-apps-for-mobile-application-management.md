@@ -4,7 +4,7 @@
 title: Use the SDK to enable apps for mobile application management | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
@@ -42,4 +42,3 @@ For an overview of the SDK, see the [Overview](/intune/develop/intune-app-sdk) p
 
 ### See also
 [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
-

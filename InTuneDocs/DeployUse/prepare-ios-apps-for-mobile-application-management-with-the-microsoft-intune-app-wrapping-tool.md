@@ -4,7 +4,7 @@
 title: Prepare iOS apps for management with the App Wrapping Tool | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: karthikaraman
 manager: jeffgilb
 ms.date: 05/11/2016
 ms.topic: article
