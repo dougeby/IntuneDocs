@@ -6,7 +6,7 @@ description:
 keywords:
 author: Lindavr
 manager: jeffgilb
-ms.date: 06/10/2016
+ms.date: 07/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,23 +25,20 @@ ms.suite: ems
 
 ---
 
-# What's coming in Microsoft Intune
+# What's coming in Microsoft Intune - July
 This information is provided under NDA on an extremely limited basis and is subject to change. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Intune/PM buddy if you have any questions or concerns.
 
 This page is updated periodically. Check back for new What’s Coming updates.
 
-The following changes are under development for Intune. All of these features will also be supported for hybrid customers deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
+The following changes are under development for Intune. All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
 
 ## App management
-- **Enhanced Windows 10 enterprise data policy configuration experience.** We have made enhancements to the Win 10 enterprise data protection policy configuration experience around creating app rules, specifying network boundary definition, and other enterprise data protection settings.
-<!---TFS 1303011--->
+### Improve the app provisioning profile update experience
+Apple iOS line of business mobile apps are built with a provisioning profile included and code signed with a certificate. When the app is run on an iOS device, iOS confirms the integrity of the iOS app and enforces policies defined by the provisioning profile.
 
-- **Conditional access for browser.** You will be able to set a conditional access policy for Exchange Online and SharePoint Online so that they can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
-<!---TFS 1175844--->
-
-- **Dynamics CRM Online supports conditional access.** Customers will be able to set a conditional access policy for Dynamics CRM Online so that it can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to the Dynamics CRM mobile app on iOS and Android will be prompted to enroll with Intune as well as remediate any non-compliance issues before sign-in can complete.
-<!---TFS1295358--->
+The enterprise signing certificate you use to sign apps typically lasts for 3 years. However, the provisioning profile expires after 1 year. With this update, Intune will provide you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are near expiry while the certificate is still valid.
+<!--- TFS 1280247--->
 
 ### Xamarin support
 The Microsoft Intune app SDK will support Xamarin apps in these scenarios:
@@ -50,26 +47,41 @@ The Microsoft Intune app SDK will support Xamarin apps in these scenarios:
 - Adding MAM support to existing line of business apps using the Intune app wrapping tool
 
 For help choosing which method to use, see [Decide how to prepare apps for mobile application management with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
+
 <!--- TFS 1061478 & TFS 1152340--->
 
 ## Device management
-- **Windows Defender policy setting to protect against potentially unwanted apps.** A new Windows Defender setting named **Potentially Unwanted Application Detection** has been added to the general configuration policy for Windows 10 Desktop and Mobile. You can use this setting to protect enrolled Windows desktop computers against running software classed by Windows Defender as potentially unwanted. You can protect against these applications running, or use audit mode to report when a potentially unwanted application is installed.
-<!---TFS 1244478--->
+### Increased device enrollment limits
+Intune will increase the maximum configurable device enrollment limit from 5 to 15 devices per user.
+<!---TFS 1289896 --->
 
-## Conditional access
-**Cisco ISE network access control policy for Intune.**  Customers who use the Cisco Identity Service Engine (ISE) 2.1 and also use Microsoft Intune can set a network access control policy in ISE.
+## Group management
+### Intune Groups transitioning to Azure Active Directory Groups beginning in August 2016
+Intune is creating a new group management experience that uses Azure Active Directory (AAD) security groups as user and device groups in Intune. These groups will be used for all group management, policy deployment, and profile deployment **when we introduce the new Azure-based Intune admin portal**.
 
-Using this policy, devices that need to connect to the network using WiFi or VPN must meet following conditions before they are allowed access:
+This new experience will keep you from having to duplicate groups between services, **allow you access to some new Azure Active Directory Premium (AADP) group features**, and provide extensibility using PowerShell and Graph. This will also unify the group management experience across enterprise mobility management.
 
-* Must be managed by Intune
-* Must be compliant with any deployed Intune compliance policies
+To enable the move to Security Groups, the experience in the **current admin console** will undergo some modifications. **These changes, and the use of AAD security groups, will be recorded in the Intune documentation**.
 
-End users of noncompliant devices will be prompted to enroll, and remediate any compliance issues to gain access.
-<!---TFS 1299144--->
+Customers who are new to Intune will see **some of the security group changes before current tenants do**.
+
+In addition to changes in group management, **the following functionality will be deprecated**:
+- Excluding members or groups while creating a new group
+- 'Manage Groups' in the Service Admin role
+- Custom group-based alerts for Notification Rules
+- Pivoting with groups in reports
+
 
 ## Company Portal
-**Changes to Device Enrollment Managers accounts in the iOS Company Portal app.** To improve performance and scale, Intune will no longer show all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices. Only use DEM accounts when user-less enrollment for shared devices is unavailable.
+### Help users resolve enrollment issues when Workplace Join fails
+When you are using conditional access, the enrollment steps for Windows 8.1, Windows 10 Desktop, and Windows 10 Mobile have been simplified in the Company Portal website for end users who experience a Workplace Join (WPJ) failure. Previously, when end users were trying to enroll and do a WPJ, and their enrollment succeeded, but WPJ failed, the enrolled device would not appear on the list of devices for users to identify, causing confusion for users. Users will now see separate “Device enrollment” and “Workplace Join” steps, making it easier for them to see the status of their device and to complete the process after the WPJ failure. The separate steps are expected to also simplify the troubleshooting process for IT administrators. 
+
+### Changes to Device Enrollment Managers accounts in the iOS Company Portal app
+To improve performance and scale, Intune will no longer show all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices. Only use DEM accounts when user-less enrollment for shared devices is unavailable.
 <!---TFS 1233681--->
+### Restrict side-load app installation to enrolled Android devices
+Android devices that are running versions below Android 4.0 will no longer be able to install applications through the Company Portal website unless the devices have been enrolled in Intune by using the Intune Company Portal app for Android. [Intune supported devices](https://docs.microsoft.com/intune/get-started/choose-how-to-manage-devices#ways-to-manage-mobile-devices).
+<!---TFS 1299082--->
 
 ## Service deprecation
 **Company Portal apps for Windows 8 and Windows Phone 8 are being deprecated from Sept, 2016.** Starting in Sept 2016, Microsoft Intune will end support for the Microsoft Intune Company Portal apps for Windows Phone 8 and Windows 8 platforms. Update devices to Windows 8.1 and Windows Phone 8.1 and use the corresponding Windows 8.1 and Windows Phone 8.1 Company Portal apps to continue distributing apps to these devices.
@@ -82,6 +94,7 @@ The preliminary timeline for this change is as follows:
 - In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
 - Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
 - Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
+
 <!---	TFS 1278864--->
 
 **Changes in support for the iOS Company Portal app.**
@@ -93,6 +106,7 @@ In July, all users of the Microsoft Intune Company Portal app for iOS will be re
 - Intune Image Viewer for Android from Google Play
 
 Instead of using the Intune Viewer apps, we recommend using the new Rights Management app (RMS sharing) for Android, which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. Learn more about the RMS sharing app (with link to documentation).
+
 
 
 ### See also
