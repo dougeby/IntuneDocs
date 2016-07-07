@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/31/2016
+ms.date: 7/7/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -82,7 +82,6 @@ To resolve this issue and get the required certificate, there are two main steps
 5. In the **Certificate** dialog, click the **Certification path** tab, and then identify the certificate that you need to get from the Internet. The name of the certificate that you need will be in the same position as the one that is highlighted in the screenshot above.
 
 ### Download and install the missing certificate on your Android mobile device
-2. Download and install the missing certificate on your Android mobile device.
 
 1. Using a search engine like Bing or Google, search for the name of the missing certificate that you identified in the previous section. The certificate may end in different "extensions," like ".crt" or ".pem", etc.
 
@@ -90,7 +89,7 @@ To resolve this issue and get the required certificate, there are two main steps
 
 3. After the certificate downloads, drag down from the top of your device to open your notifications, and then tap the name of the certificate in the list of notifications.
 
-4. In the **Name the Certificate** dialog, accept the default certificate name.
+4. In the **Name the Certificate** dialog shown below, accept the default certificate name.
 
 5. Ensure that **Credential Use** is set to **Used for VPN and apps**, and then tap **OK**.
 
