@@ -66,15 +66,16 @@ To enable the move to Security Groups, the experience in the **current admin con
 Customers who are new to Intune will see **some of the security group changes before current tenants do**.
 
 In addition to changes in group management, **the following functionality will be deprecated**:
-
+- Excluding members or groups while creating a new group
 - 'Manage Groups' in the Service Admin role
 - Custom group-based alerts for Notification Rules
-- Grouping of Exchange ActiveSync (EAS) devices. ‘All EAS Managed Devices’ group will be converted from a group to a report view
-- EAS Device Policy will no longer be configured or deployed through Intune and will need to be set directly in Exchange
 - Pivoting with groups in reports
 
 
 ## Company Portal
+### Help users resolve enrollment issues when Workplace Join fails
+When you are using conditional access, the enrollment steps for Windows 8.1, Windows 10 Desktop, and Windows 10 Mobile have been simplified in the Company Portal website for end users who experience a Workplace Join (WPJ) failure. Previously, when end users were trying to enroll and do a WPJ, and their enrollment succeeded, but WPJ failed, the enrolled device would not appear on the list of devices for users to identify, causing confusion for users. Users will now see separate “Device enrollment” and “Workplace Join” steps, making it easier for them to see the status of their device and to complete the process after the WPJ failure. The separate steps are expected to also simplify the troubleshooting process for IT administrators. 
+
 ### Changes to Device Enrollment Managers accounts in the iOS Company Portal app
 To improve performance and scale, Intune will no longer show all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices. Only use DEM accounts when user-less enrollment for shared devices is unavailable.
 <!---TFS 1233681--->
