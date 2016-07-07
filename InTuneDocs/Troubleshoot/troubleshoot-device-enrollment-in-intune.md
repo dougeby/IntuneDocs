@@ -168,8 +168,30 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 2.  Confirm that the device is not already enrolled with another MDM provider or that it does not already have a management profile installed.
 
-
 4.  Confirm that Chrome for Android is the default browser and that cookies are enabled.
+
+### Android certificate issues
+
+**Issue**: User receives the following message on their device:
+*You cannot sign in because your device is missing a required certificate.*
+
+**Resolution**: 
+
+- The user may be able to retrieve the missing certificate by following [these instructions](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
+- If the user is unable to retrieve the certificate, you may be missing intermediate certificates on your ADFS server. The intermediate certificates are required by Android to trust the server. 
+
+You can import the certificates in to the intermediate store on the ADFS server or proxies as follows:
+
+1.	On the ADFS server, launch the **Microsoft Management Console** and add the Certificates snap in for the **Computer account**. 
+5.	Find the certificate that your ADFS service is using and view its parent certificate.
+6.	Copy the parent certificate and paste it under **Computer\Intermediate Certification Authorities\Certificates**.
+7.	Copy your ADFS, ADFS Decrypting, and ADFS Signing certificates and paste them in the Personal Store for the ADFS service.
+8.	Restart the ADFS servers.
+
+The user should now be able to sign in to the Company Portal on the Android device.
+
+
+
 ## iOS issues
 ### Profile installation failed
 **Issue:** A user receives a **Profile installation failed** error on an iOS device.
