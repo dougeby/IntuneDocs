@@ -99,7 +99,7 @@ To resolve this issue and get the required certificate, there are two main steps
 
 7. Reopen the Company Portal app. You should now be able to sign in to the Company Portal app. If you need help, contact your IT administrator.
 
-If you see the same "missing certificate" message as the one shown above, and you have already followed the steps above, it probably means that there is still another certificate that your IT administrator will need to help you install. Contact your IT administrator and give that person this [link](/intune/troubleshooting/troubleshoot-device-enrollment-in-intune#android-certificate-issues), which contains the steps to help resolve the issue. 
+If you see the same "missing certificate" message as the one shown above, and you have already followed the steps above, it probably means that there is still another certificate that your IT administrator will need to help you install. Contact your IT administrator and give that person this [link](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), which contains the steps to help resolve the issue. 
 
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
