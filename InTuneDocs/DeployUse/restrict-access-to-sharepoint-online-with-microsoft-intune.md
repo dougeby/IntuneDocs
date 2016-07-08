@@ -32,6 +32,8 @@ Conditional access has two components:
 - Conditional access policy where you specify the conditions that the device must meet in order to access the service.
 To learn more about how conditional access works, read the [restrict access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) topic.
 
+The compliance and conditional access policies are deployed to the user. Any device that the user uses to access the services is checked for compliance with the policies.
+
 When a user attempts to connect to a file using a supported app such as OneDrive on their device, the following evaluation occurs:
 
 ![Diagram to show the decision points that determine whether a device is allowed access to SharePoint is blocked ](../media/ConditionalAccess8-6.png)
