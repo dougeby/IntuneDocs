@@ -88,28 +88,6 @@ If you no longer need to manage a computer with Intune, you can retire the compu
 
     For more information about how to use Group Policy to automatically deploy software, see your Windows Server documentation.
 
-### How users can self-enroll their computers
-Users can self-enroll each of their computers through the Intune company portal. Each enrolled computer is linked to the user account that was used to install the client software.
-
-> [!NOTE]
-> -   The user must be an administrator on the computer to install the client software.
-> -   Self-enrolling requires that Internet Explorer is installed on the client computer.
-> -   Each time a user self-enrolls a computer, it uses an Intune license.
-> -   You must use a work or school account to self-enroll a computer. You cannot self-enroll a computer using a Microsoft account.
-> -   If the client software is already installed on a computer, the end-user will receive an error.
-
-### To self-enroll a computer (information for end-users)
-
-1.  Log on to the company portal from the computer that you want to enroll.
-
-2.  Click **Add Device**.
-
-3.  Click **Download Software** and then click **Run**.
-
-4.  Click **Next** to start the Microsoft Intune Setup Wizard.
-
-5.  When the setup wizard has completed, click **Finish**.
-
 ### Install the Microsoft Intune client software as part of an image
 You can deploy the Intune client software to computers as part of an operating system image by using the following example procedure as a basis:
 
