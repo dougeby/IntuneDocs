@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Manage settings and features on your devices with Microsoft Intune policies
-Microsoft Intune *policies* are groups of settings that control features on mobile devices and computers. You create policies by using templates that contain recommended or customized settings, and then you deploy them to device or user groups.
+Microsoft Intune *policies* are groups of settings that control features on mobile devices and computers. You create policies by using templates that contain recommended or custom settings, and then you deploy them to device or user groups.
 
 ## Types of policies
 
@@ -37,7 +37,7 @@ Intune policies fall into the following categories. The category that you use af
 - **Device compliance policies**: These define the rules and settings that a device must comply with in order to be considered compliant by conditional access polices. You can also use compliance policies to monitor and remediate  the compliance of devices independently of conditional access.
 For details, see [Device compliance policies in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Conditional access polices**: These policies help you secure email and other services, depending on conditions that you specify.
-For details, see [Restrict access to email and Office 365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+For details, see [Restrict access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 - **Corporate device enrollment policies**: For information about corporate device enrollment policies, see [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 - **Resource access policies**: These policies work together to help your users gain access to the files and resources that they need to do their work successfully, wherever they are.
 For details, see [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
@@ -187,7 +187,7 @@ When you delete a policy, or you remove a device from a group to which a policy 
 		- Allow application store
 		- Allow screen capture
 		- Allow geolocation
-		- Allow Microsoft account
+		- Allow Microsoft Account
 		- Allow copy and paste
 		- Allow Wi-Fi tethering
 		- Allow automatic connection to free Wi-Fi hotspots
@@ -205,7 +205,7 @@ When you delete a policy, or you remove a device from a group to which a policy 
 #### Windows PCs running the Intune client software
 
 - **Endpoint Protection settings**: Settings are restored to their recommended values. The only exception is the setting **Join Microsoft Active Protection Service**, for which the default value is **No**. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
-- **Software update settings**: Settings are reset to the default state for the operating system. For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+- **Software updates settings**: Settings are reset to the default state for the operating system. For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 - **Microsoft Intune Center settings**: Any support contact information that was configured by the policy is deleted from computers.
 - **Windows Firewall settings**: Settings are reset to the default for the computer operating system. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
