@@ -43,7 +43,7 @@ The following table lists the requirements for the computer where you install th
 |Additional software|A full installation of Microsoft .NET Framework 4 and Windows PowerShell 2.0 must be installed on the computer that hosts the connector.|
 |Network|The computer where you install the connector must be in a domain that has a trust relationship to the domain that hosts your Exchange Server.<br /><br />The computer requires configurations to enable it to access the Intune service through firewalls and proxy servers over Ports 80 and 443. Domains used by Intune include manage.microsoft.com, &#42;manage.microsoft.com, and &#42;.manage.microsoft.com.|
 |Hosted Exchange configured and running|See [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx) for more information. |
-|Set the mobile device management authority to Intune|[Set your mobile device authority to Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#BKMK_Set_MDM_Authority)|
+|Set the mobile device management authority to Intune|[Set your mobile device authority to Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Exchange cmdlet requirements
 

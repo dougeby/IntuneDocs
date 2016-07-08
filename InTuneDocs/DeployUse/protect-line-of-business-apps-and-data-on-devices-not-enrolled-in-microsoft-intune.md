@@ -66,7 +66,7 @@ You can deploy apps to your end-users in the following ways:
 * For devices not managed by any MDM solution, you will need a custom solution. End-users have to download and install the app on their device.
 
 ## Changing the metadata
-If you need to change the app details like the name of the app, or the Bundle identifier, you must [remove the app](#remove-apps), and [add it](#add-the-app) with the new metadata.
+If you need to change the app details like the name of the app, or the Bundle identifier, you must [remove the app](#remove-apps), and [add it](#step-2-add-the-app) with the new metadata.
 
 ##  Remove apps
 You can remove a line of business app from the app list.  This will remove the app from the list and remove the association with MAM policies, but will not remove or uninstall the app from the end-user’s device.  

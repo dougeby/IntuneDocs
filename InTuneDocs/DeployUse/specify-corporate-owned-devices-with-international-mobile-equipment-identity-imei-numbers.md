@@ -18,7 +18,7 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,8 +39,8 @@ Microsoft Intune enables administrators to import international mobile equipment
         This .csv file when viewed in a text editor appears as:
 
         ```
-        AA-BBBBBB-CCCCCC-D,PO 1234
-        AA-BBBBBB-CCCCCC-E,PO 1234
+        AABBBBBBCCCCCCD,PO 1234
+        AABBBBBBCCCCCCE,PO 1234
         ```
 
     -   **Manually add device details** - Enter the IMEI number and device details of up to five devices

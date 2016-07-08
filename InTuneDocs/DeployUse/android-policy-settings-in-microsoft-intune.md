@@ -55,6 +55,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Remember password history** – **Prevent reuse of previous passwords**|Prevents re-using previously used passwords.|Yes|Yes|
 |**Password quality**|Select the password complexity level required and also whether biometric devices can be used.|Yes|Yes|
 |**Allow fingerprint unlock**|Allow the use of a fingerprint to unlock the device.|No|Yes|
+|**Allow Smart Lock and other trust agents**<br>(Android 5 and later)|Let’s you control the Smart Lock feature on compatible Android devices. This phone capability, sometimes known as trust agents lets you disable or bypass the device lock screen password if the device is in a trusted location such as when it is connected to a specific Bluetooth device, or when it is near to an NFC tag. You can use this setting to prevent end users from configuring Smart Lock.|Yes|No|
 
 ### Encryption settings
 
@@ -73,7 +74,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 
 ### Cloud settings – documents and data
 
-|Setting name|Details|Android and Samsung KNOX|Android 4.0+|
+|Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**Allow Google backup**|Allows use of Google backup.|No|Yes|
 
@@ -95,7 +96,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 
 ### Application settings - apps
 
-|Setting name|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Allow Google Play store**|Allow the user to access the Google Play store on the device.|No|Yes|
 

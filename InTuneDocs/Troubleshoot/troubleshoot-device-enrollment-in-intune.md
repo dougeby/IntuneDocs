@@ -18,7 +18,7 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,17 +27,27 @@ ms.suite: ems
 
 # Troubleshoot device enrollment in Intune
 
-Here are some device enrollment issues and how to troubleshoot and resolve them.
-
-> [!NOTE]
-> Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
->- [Send Android diagnostic data logs to your IT administrator using a USB cable](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
->- [Send Android diagnostic data logs to your IT administrator using email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
->- [Send Android enrollment errors to your IT administrator](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
->- [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios)
+This topic provides suggestions for troubleshooting device enrollment issues. If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
 
-If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
+## Initial troubleshooting steps
+
+Before you begin troubleshooting, check to make sure that you've configured Intune properly to enable enrollment. You can read about those configuration requirements in:
+
+-	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-	[Set up iOS and Mac device management](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-	[Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-	[Set up Windows device management](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+
+
+Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
+
+- [Send Android diagnostic data logs to your IT administrator using a USB cable](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [Send Android diagnostic data logs to your IT administrator using email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [Send Android enrollment errors to your IT administrator](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
+- [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios)
+
+
 
 ## General enrollment issues
 These issues may occur on all device platforms.
@@ -158,8 +168,30 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 2.  Confirm that the device is not already enrolled with another MDM provider or that it does not already have a management profile installed.
 
-
 4.  Confirm that Chrome for Android is the default browser and that cookies are enabled.
+
+### Android certificate issues
+
+**Issue**: User receives the following message on their device:
+*You cannot sign in because your device is missing a required certificate.*
+
+**Resolution**: 
+
+- The user may be able to retrieve the missing certificate by following [these instructions](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
+- If the user is unable to retrieve the certificate, you may be missing intermediate certificates on your ADFS server. The intermediate certificates are required by Android to trust the server. 
+
+You can import the certificates in to the intermediate store on the ADFS server or proxies as follows:
+
+1.	On the ADFS server, launch the **Microsoft Management Console** and add the Certificates snap in for the **Computer account**. 
+5.	Find the certificate that your ADFS service is using and view its parent certificate.
+6.	Copy the parent certificate and paste it under **Computer\Intermediate Certification Authorities\Certificates**.
+7.	Copy your ADFS, ADFS Decrypting, and ADFS Signing certificates and paste them in the Personal Store for the ADFS service.
+8.	Restart the ADFS servers.
+
+The user should now be able to sign in to the Company Portal on the Android device.
+
+
+
 ## iOS issues
 ### Profile installation failed
 **Issue:** A user receives a **Profile installation failed** error on an iOS device.
@@ -258,8 +290,7 @@ This may be because the computer had been previously enrolled, or has the cloned
 
 |Error code|Possible problem|Suggested resolution|
 |--------------|--------------------|----------------------------------------|
-|0x80CF0437 |The clock on the client computer is not set to the correct time.|Make sure that the clock and the time zone on the client computer are set to the correct time and time zone.
-|
+|0x80CF0437 |The clock on the client computer is not set to the correct time.|Make sure that the clock and the time zone on the client computer are set to the correct time and time zone.|
 |0x80240438, 0x80CF0438, 0x80CF402C|Cannot connect to the Intune service. Check the client proxy settings.|Verify that the proxy configuration on the client computer is supported by Intune, and that the client computer has Internet access.|
 |0x80240438, 0x80CF0438|Proxy settings in Internet Explorer and Local System are not configured.|Cannot connect to the Intune service. Check the client proxy settings and confirm that the proxy configuration on the client computer is supported by Intune, and that the client computer has Internet access.|
 |0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|Enrollment package is out of date.|Download and install the current client software package from the Administration workspace.|

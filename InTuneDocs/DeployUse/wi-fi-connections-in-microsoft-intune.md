@@ -18,7 +18,7 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ You can deploy Wi-Fi profiles to the following platforms:
 
 -   Mac OS X 10.9 and later
 
-For devices that run Windows 8.1 and later, you can import a Wi-Fi configuration profile that was previously exported to a file. For details, see Import a Wi-Fi profile later in this topic.
+For devices that run Windows 8.1 or Windows 10 desktop or mobile, you can import a Wi-Fi configuration profile that was previously exported to a file. For details, see **Import a Wi-Fi profile** later in this topic.
 
 ## How to create a Wi-Fi profile
 
@@ -123,14 +123,17 @@ In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi p
 
 4.  Run this command: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`.This will create a Wi-Fi profile file named “Wi-Fi-WiFiName.xml in your target folder ”.
 
-## Import a Wi-Fi profile
-Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that you can then deploy to the required user or device groups. The procedure for exporting a Wi-Fi profile is described in
+### Import a Wi-Fi profile
+Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that you can then deploy to the required user or device groups.
+
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Add Policy**.
 
-2.  Configure a policy of the type **Windows** &gt; **Windows Wi-Fi Import Policy**.
+2.  Configure a policy of the type **Windows** &gt; **Wi-Fi Import (Windows 8.1 and later)**.
 
-    You can only create and deploy a custom Windows Wi-Fi import policy. Recommended settings are not available.
+    This policy can be applied to Windows 8.1 and Windows 10 desktop and mobile devices. 
+	
+	You can only create and deploy a *custom* Windows Wi-Fi import policy. Recommended settings are not available.
 
 3.  Specify the following general values for the Windows Wi-Fi Import Policy:
 

@@ -36,7 +36,7 @@ For most scenarios, users can install the Company Portal app from the Windows St
 
 2.  **Set a DNS alias for the enrollment server address** (optional)
 
-    Creating a DNS alias (CNAME record type) makes it easier for users to enroll their devices. If you don't create a DNS alias, users must
+    Creating a DNS alias (CNAME record type) makes it easier for users to enroll their devices. Although the CNAME DNS entry is optional for Windows device enrollment, it is recommended to create one or more records when necessary, to make things easier during the Windows device enrollment process. If no CNAME record is found, the user is prompted to enter the MDM server name manually.
 
   1.  Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com. If there is more than one verified domain, create a CNAME record for each domain.The CNAME resource records must contain the following information:
 

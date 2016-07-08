@@ -52,6 +52,7 @@ The information in this section will help you with actions you can take after yo
 - [Unenroll your device if you declined Terms of Use](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [What happens if you reset your Android device using the Company Portal app?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
 ## Fix issues with your device
 
@@ -65,5 +66,10 @@ The information in this section will help you fix issues you might encounter whe
 - [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-maximum-operating-system-version-android.md)
 - [Your device is rooted and you can't connect](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Your device is missing a required certificate](your-device-is-missing-a-required-certificate-android.md)
+- [You are asked to turn off Unknown sources](you-are-asked-to-turn-off-unknown-sources-android.md)
+- [You are asked to turn off USB debugging](you-are-asked-to-turn-off-usb-debugging-android.md)
+- [You are asked to turn on Scan device for security threats](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Your device does not meet the minimum security patch](your-device-does-not-meet-the-minimum-security-patch-android.md)
+
 
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: iOS policy settings | Microsoft Intune
-description:
+description: Create policies that control settings and features on iOS devices that you manage with Intune.
 keywords:
 author: robstackmsft
 manager: jeffgilb
@@ -27,11 +27,13 @@ ms.suite: ems
 
 # iOS policy settings in Microsoft Intune
 
+Intune supplies a range of built-in general settings you can configure on iOS devices. Additionally, you can use the Apple Configurator tool to create custom settings that are not available from Intune.
+
 ## General configuration policy settings
 
 Use the Microsoft Intune **iOS general configuration policy** to configure settings for:
 
--   **Mobile device security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
+-   **General device, and security settings** – Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
 -   **Kiosk mode** - Lock a device to only allow certain features to work. For example, you can allow a device to only run one managed app that you specify, or you can disable the volume buttons on a device. These settings might be used for a demonstration model of a device, or a device that is dedicated to performing only one function, such as a point of sale device.
 
@@ -47,8 +49,8 @@ If the setting you are looking for does not appear in this topic, you might be a
 |Setting name|Details|iOS|
 |----------------|-------|
 |**Require a password to unlock mobile devices**|Specify whether users are required to enter a password to access their device.|Yes|
-|**Required password type**|Specifies the type of password that will be required, such as numeric only, or alphanumeric)|Yes|
-|**Required password type – Minimum number of character sets**|There are four character sets, lowercase letters, uppercase letters, numbers, and symbols. This setting specifies how many different character sets must be included in the password). However, for iOS devices, this specifies the number of symbol characters must be included in the password)|Yes|
+|**Required password type**|Specifies the type of password that will be required, such as numeric only, or alphanumeric.|Yes|
+|**Required password type – Minimum number of character sets**|This specifies the number of symbol characters (like **#** or **@**) that must be included in the password.|Yes|
 |**Minimum password length**|Specifies the minimum number of characters in the password.|Yes|
 |**Allow simple passwords**|Allow simple passwords like ‘0000’ and ‘1234’.|Yes|
 |**Number of repeated sign-in failures to allow before the device is wiped**|Wipes the device if this number of login attempts fail.|Yes|
@@ -77,7 +79,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |Setting name|Details|iOS|
 |----------------|-------|
 |**Allow backup to iCloud**|Allows the user to back up the device to iCloud.|Yes|
-|**Allow document sync to iCloud**|Allow document and key-value synchronization to your iCloud storage space.Yes|
+|**Allow document sync to iCloud**|Allow document and key-value synchronization to your iCloud storage space.|Yes|
 |**Allow Photo Stream sync to iCloud**|Allow photos on the device to sync to iCloud.|Yes|
 |**Require encrypted backup**|Require any device backups to be encrypted.|Yes|
 
@@ -97,7 +99,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |Setting name|Details|iOS|
 |----------------|-------|
 |**Allow application store**|Allows the device to access the app store.|Yes|
-|**Require a password to access application store**|Yes|
+|**Require a password to access application store**|Requires the user to enter a password before they can visit the app store.|Yes|
 |**Allow in-app purchases**|Allow store purchases to be made from within a running app.|Yes|
 |**Allow managed documents in other unmanaged apps**|Allows corporate documents to be viewed in any app.<br>**Example:** You want to prevent users saving files from the OneDrive app to Dropbox. Configure this setting as no. After the device receives the policy (for example after a restart), it will no longer allow saving.|iOS 7.1 and later|
 |**Allow unmanaged documents in other managed apps**|Allow any document to be viewed in corporate managed apps.|iOS 7.1 and later|

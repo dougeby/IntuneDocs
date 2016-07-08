@@ -4,7 +4,7 @@
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Develop & Customize Apps](/intune/develop/intune-app-sdk)
 
-# [Troubleshoot](how-to-get-support-for-microsoft-intune.md)
+# [Troubleshoot](general-troubleshooting-tips-for-microsoft-intune.md)
 ## [How to get support](how-to-get-support-for-microsoft-intune.md)
 ## [Troubleshoot endpoint protection](Troubleshoot-Endpoint-Protection-in-microsoft-intune.md)
 ## [Troubleshoot company resource access problems](Troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
@@ -14,3 +14,4 @@
 ## [Troubleshoot client setup](Troubleshoot-client-setup-in-microsoft-intune.md)
 ## [Troubleshoot software updates](Troubleshoot-software-updates-in-microsoft-intune.md)
 ## [Troubleshoot email profiles](Troubleshoot-email-profiles-in-microsoft-intune.md)
+## [Troubleshoot conditional access](troubleshoot-conditional-access.md)

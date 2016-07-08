@@ -33,32 +33,32 @@ Use these steps  for tasks that you need to do on your Windows device or compute
 
 The information in this section will help you with Intune Company Portal installation and device enrollment for Windows devices.
 
-- [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)</br>
-- [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)</br>
+- [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)
+- [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [What can your IT admin see when you enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## Things you can do when your device is enrolled in Intune
 
 The information in this section will help you with actions you can take after your Windows device is enrolled in Intune.
 
-- [Encrypt your device](encrypt-your-device-windows.md)</br>
-- [Set or change your password](set-or-change-your-password-windows.md)</br>
-- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-windows.md)</br>
-- [Unenroll your device from Intune](unenroll-your-device-from-intune-windows.md)</br>
-- [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
-- [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)</br>
-- [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)</br>
+- [Encrypt your device](encrypt-your-device-windows.md)
+- [Set or change your password](set-or-change-your-password-windows.md)
+- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-windows.md)
+- [Unenroll your device from Intune](unenroll-your-device-from-intune-windows.md)
+- [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+- [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+- [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)
 - [Sync your device manually](sync-your-device-manually-windows.md)
 
 ## Fix issues with your device
 
 The information in this section will help you fix issues you might encounter when your Windows device is enrolled in Intune.
 
-- [Device doesn't have the required minimum operating system version](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)</br>
-- [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-maximum-operating-system-version-windows.md)</br>
-- [Device doesn't have BitLocker enabled](device-doesnt-have-bitlocker-enabled-windows.md)</br>
-- [Device doesn't have antimalware software enabled](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
-- [Device doesn't have Secure Boot enabled](device-doesnt-have-secure-boot-enabled-windows.md)</br>
+- [Device doesn't have the required minimum operating system version](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
+- [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
+- [Device doesn't have BitLocker enabled](device-doesnt-have-bitlocker-enabled-windows.md)
+- [Device doesn't have antimalware software enabled](device-doesnt-have-antimalware-software-enabled-windows.md)
+- [Device doesn't have Secure Boot enabled](device-doesnt-have-secure-boot-enabled-windows.md)
 - [Device doesn't have Code Integrity enabled](device-doesnt-have-code-integrity-enabled-windows.md)
 
 

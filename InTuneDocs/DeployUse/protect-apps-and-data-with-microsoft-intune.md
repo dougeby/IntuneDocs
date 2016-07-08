@@ -45,7 +45,9 @@ Securing access to company resources is just the first step to protecting compan
 - Secure app access by requiring PIN/passcode or corporate credentials.
 - Have all web links open within the Intune Managed Browser.
 
-These set of rules are referred to as [mobile app management (MAM) policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  MAM policies can be applied to apps running on devices that may or may not be managed by you.  You can protect your company data using MAM policies for devices that are enrolled in Intune, devices that are enrolled and managed by another third party MDM, or a device that may not be managed by you, like the employee owned devices.
+These set of rules are referred to as [mobile app management (MAM) policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  MAM policies can be applied to apps running on devices that may or may not be managed by you.  
+
+You can protect your company data using MAM policies for devices that are **enrolled in Intune**, devices that are **enrolled and managed by another third party MDM**, or a device that is **not enrolled in any MDM solution**, like the employee owned devices.
 
 To associate an app with a MAM policy, the app must incorporate the Microsoft Intune App Software Development Kit (SDK), or use the App wrapping tool.
 

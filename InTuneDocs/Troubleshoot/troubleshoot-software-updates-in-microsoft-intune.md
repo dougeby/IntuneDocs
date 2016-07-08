@@ -18,7 +18,7 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,6 +29,8 @@ ms.suite: ems
 Use the information in this section to help you solve software update problems in Microsoft intune.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
+
+## Update agent error codes
 
 The following table lists the Intune **Update Agent** error codes. If you cannot find a specific error code in this table, see [Windows Update Agent Result Codes](http://go.microsoft.com/fwlink/?LinkID=221542).
 

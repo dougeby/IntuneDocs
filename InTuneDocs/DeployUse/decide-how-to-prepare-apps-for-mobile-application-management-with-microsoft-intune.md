@@ -4,7 +4,7 @@
 title: Decide how to prepare apps for mobile application management with Microsoft Intune | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
@@ -29,7 +29,7 @@ ms.suite: ems
 You can enable your apps to use mobile application management policies by using either the Intune App Wrapping Tool or the Intune App SDK. Use this information to learn about these two methods and when to use them.
 
 ## Intune App Wrapping Tool
-The App Wrapping Tool is used primarily for internal line-of-business (LOB) apps. The tool is a command line application that creates a wrapper around the app, which then allows the app to be managed by an Intune mobile application management policy. You don't need the source code to use the tool, but you do need signing credentials.  For more about signing credentials, see the [Intune blog](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx). For the App Wrapping Tool documentation, see [Android App Wrapping Tool ](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+The App Wrapping Tool is used primarily for internal line-of-business (LOB) apps. The tool is a command line application that creates a wrapper around the app, which then allows the app to be managed by an Intune mobile application management policy. You don't need the source code to use the tool, but you do need signing credentials.  For more about signing credentials, see the [Intune blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). For the App Wrapping Tool documentation, see [Android App Wrapping Tool ](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [iOS App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
 The App Wrapping Tool does not support Apps in the App or Play Store or features that require development time integration (see the following feature comparison table).
 
