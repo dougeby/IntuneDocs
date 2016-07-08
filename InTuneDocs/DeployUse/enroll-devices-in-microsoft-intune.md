@@ -87,7 +87,7 @@ Direct enrollment. The admin creates an Intune policy and exports it to Apple Co
 
 ### Wipe
 Specifies whether enrolling the device requires that the device be factory reset, removing all data from the device and returning it to its original state.
-[Retire devices](retire-devices-from-microsoft-intune-management.md)([Back to the table](#overview-of-device-enrollment-methods))
+[Retire devices](retire-devices-from-microsoft-intune-management.md) ([Back to the table](#overview-of-device-enrollment-methods))
 
 ### Affinity
 Specifies whether the enrollment method supports “User Affinity” which connects a device with a specific user. “Opt” devices can be enrolled with or without user affinity. User affinity is required to support the following:
@@ -95,7 +95,7 @@ Specifies whether the enrollment method supports “User Affinity” which conne
   -	Conditional access to email and company data
   -	Company Portal app
 
-[User Affinity](enroll-corporate-owned-ios-devices-in-microsoft-intune#enrollment-of-company-owned-ios-devices-with-user-affinity)([Back to the table](#overview-of-device-enrollment-methods))
+[User Affinity](enroll-corporate-owned-ios-devices-in-microsoft-intune#enrollment-of-company-owned-ios-devices-with-user-affinity) ([Back to the table](#overview-of-device-enrollment-methods))
 
 ### Lock
 Specifies whether the device can be locked to prevent the user from removing the Intune policy, effectively removing the device from management. For iOS devices, locking the device requires that it be in Supervised mode.
