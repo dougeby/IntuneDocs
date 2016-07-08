@@ -33,25 +33,19 @@ Your answers to the following questions will help determine the best enrollment 
 
   - **Users-owned devices** - "Bring your own device" (BYOD) enrollment
   - **Company-owned devices** - COD enrollment
-  > [!div class="button"]
-  [BYOD Enrollment >](#byod-device-enrollment)   [COD Enrollment >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-### BYOD device enrollment
-
-Select the device operating system for instructions on how to set up device enrollment.
-
-**Select the device type:**
 > [!div class="button"]
-[Android](../deploy-use/set-up-android-management-with-microsoft-intune) [iOS and Mac](../deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile and Window Phone](../deploy-use/set-up-windows-phone-management-with-microsoft-intune) [Windows PCs](../deploy-use/set-up-windows-device-management-with-microsoft-intune)
+[BYOD Enrollment >](#what-byod-devices-can-your-users-enroll)   [COD Enrollment >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
+## **What BYOD devices can your users enroll?**
 
-### COD device enrollment
-
+> [!div class="button"]
+[Android](../deploy-use/set-up-android-management-with-microsoft-intune) [iOS and Mac](../deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile & Window Phone](../deploy-use/set-up-windows-phone-management-with-microsoft-intune) [Windows PCs](../deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 ## **Are your company-owned devices shared or do they have dedicated users?**
 
 > [!div class="button"]
-[Shared >](#what-operating-system-are-your-shared-devices-running)   [Dedicated >](how-will-you-manage-dedicated-ios-devices)
+[Shared >](#what-operating-system-are-your-shared-devices-running)   [Dedicated >](#how-will-you-manage-dedicated-ios-devices)
 
 
 ## **What operating system are your shared devices running?**
@@ -61,10 +55,10 @@ Select the device operating system for instructions on how to set up device enro
 
 ## **How will you manage shared iOS devices?**
 
-    > [!div class="button"]
-     [iOS DEP Enrollment >](../deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS Direct enrollment >](../deploy-use/ios-direct-enrollment-in-microsoft-intune)  [DEM enrollment >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+  > [!div class="button"]
+  [iOS DEP Enrollment >](../deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS Direct enrollment >](../deploy-use/ios-direct-enrollment-in-microsoft-intune)  [DEM enrollment >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
 ## **How will you manage dedicated iOS devices?**
 
   > [!div class="button"]
-  [Tag with IMEI >](../deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) [iOS DEP Enrollment](../deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS Setup Assistant enrollment](../deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [iOS direct enrollment](../deploy-use/ios-direct-enrollment-in-microsoft-intune) [Tag devices with IMEI numbers](../deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+  [Tag with IMEI >](../deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) [iOS DEP](../deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS Setup Assistant](../deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Tag with IMEI](../deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
