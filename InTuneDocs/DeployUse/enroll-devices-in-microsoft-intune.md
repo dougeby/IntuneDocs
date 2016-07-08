@@ -87,7 +87,7 @@ Direct enrollment. The admin creates an Intune policy and exports it to Apple Co
 
 ### Wipe
 Specifies whether enrolling the device requires that the device be factory reset, removing all data from the device and returning it to its original state.
-([Back to the table](#overview-of-device-enrollment-methods))
+[Retire devices](retire-devices-from-microsoft-intune-management.md) ([Back to the table](#overview-of-device-enrollment-methods))
 
 ### Affinity
 Specifies whether the enrollment method supports “User Affinity” which connects a device with a specific user. “Opt” devices can be enrolled with or without user affinity. User affinity is required to support the following:
@@ -95,11 +95,11 @@ Specifies whether the enrollment method supports “User Affinity” which conne
   -	Conditional access to email and company data
   -	Company Portal app
 
-([Back to the table](#overview-of-device-enrollment-methods))
+[User Affinity](enroll-corporate-owned-ios-devices-in-microsoft-intune#enrollment-of-company-owned-ios-devices-with-user-affinity) ([Back to the table](#overview-of-device-enrollment-methods))
 
 ### Lock
 Specifies whether the device can be locked to prevent the user from removing the Intune policy, effectively removing the device from management. For iOS devices, locking the device requires that it be in Supervised mode.
-([Back to the table](#overview-of-device-enrollment-methods)) ([Back to the table](#overview-of-device-enrollment-methods))
+([Back to the table](#overview-of-device-enrollment-methods))
 
 ## Enable device enrollment  
  Enrollment lets users access company resources on their personal devices and lets the admin ensure those devices comply with policies that protect company resources. This is the best way to enable "bring your own device" scenarios with Intune. The admin must enable enrollment in the Intune console, which might require creating a trust relationship with the device and assigning licenses to users. The device is then enrolled, usually by users entering their work or school credentials. The device then receives policy from Intune and gains access to resources.
@@ -113,8 +113,6 @@ Corporate-owned devices (COD) can be managed with the Intune console. iOS device
 
 ## Mobile device management with Exchange ActiveSync and Intune
 Mobile devices that aren't enrolled but that connect to Exchange ActiveSync (EAS) can be managed by Intune using EAS MDM policy. Intune uses an Exchange Connector to communicate with EAS, either on-premises and cloud-hosted.
-
-
 
 [Mobile device management with Exchange ActiveSync and Intune](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
 
