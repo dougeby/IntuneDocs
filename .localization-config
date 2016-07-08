@@ -3,6 +3,6 @@
 	"files": ["!/migrated-03-14/*.*", "!/sandbox/*.*", "!/zDeletedTopics/*.*", "!/InTuneDocs/EULA/*.md", "InTuneDocs/**/*.md", "InTuneDocs/*.md"],
 	"includeDependencies": true,
 	"autoPush": true,
-	"useJavascriptMarkdownTransformer": true
+	"useJavascriptMarkdownTransformer": true,
 	"translationType": "HT"
 }
