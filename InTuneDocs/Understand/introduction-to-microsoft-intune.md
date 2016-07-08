@@ -48,7 +48,7 @@ The primary tools that Intune offers include:
 * **Mobile application management (MAM)**: The ability to publish, push, configure, secure, monitor, and update mobile apps for your users.
 * **Mobile application security**: As a part of managing mobile apps, the ability to help secure mobile data by isolating personal data from corporate data and allowing the corporate data to be selectively wiped.
 
-These tools are used in different combinations to solve common business problems. For example, shared device scenarios make heavy use of MDM. BYOD scenarios typically rely on MAM. And the corporate phone scenarios build upon both. Almost all scenarios make use of mobile application security.
+These tools are used in different combinations to enable common business scenarios. For example, shared device scenarios make heavy use of MDM. BYOD scenarios typically rely on MAM. And the corporate phone scenarios build upon both. Almost all scenarios make use of mobile application security.
 
 Throughout this documentation, we’ll explain how to use the tools that Intune provides to support your business scenarios.  We’ll also explain how to use these tools with Office 365, Azure AD, Azure RMS, and other parts of the Microsoft mobility suite. This will help give you a broad overview of the ways in which the technology is commonly used and how it might be useful in your environment, as well as procedures to implement them. The technology itself is flexible and can be adapted to all sorts of scenarios beyond the ones that we describe here.
 
