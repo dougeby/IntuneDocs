@@ -29,9 +29,9 @@ ms.suite: ems
 
 Use the policy settings listed in this topic to help you configure settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices.
 
-	> [!IMPORTANT]
-	> You can manage Windows 10 PCs in two ways; by enrolling them, or by installing the Intune PC client software. Each method offers different capabilities (See [Choose how to manage devices](/intune/get-started/choose-how-to-manage-devices.md) for more information.
-	> When you manage your Windows 10 PCs with the Intune PC client software, you cannot use the policies and settings detailed in this topic. To apply these settings, your Windows 10 devices must be enrolled with Intune.
+> [!IMPORTANT]
+> You can manage Windows 10 PCs in two ways; by enrolling them, or by installing the Intune PC client software. Each method offers different capabilities (See [Choose how to manage devices](/intune/get-started/choose-how-to-manage-devices.md) for more information.
+> When you manage your Windows 10 PCs with the Intune PC client software, you cannot use the policies and settings detailed in this topic. To apply these settings, your Windows 10 devices must be enrolled with Intune.
 
 ## General configuration policy settings
 
