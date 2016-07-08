@@ -79,7 +79,7 @@ To resolve this issue and get the required certificate, there are two main steps
 
 	![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. In the **Certificate** dialog, click the **Certification path** tab, and then identify the certificate that you need to get from the Internet. The name of the certificate that you need will be in the same position as the one that is highlighted in the screenshot above.
+5. In the **Certificate** dialog, click the **Certification path** tab, and then identify the certificate that you need to get from the Internet. The name of the certificate that you need will be in the same position as the one that is highlighted in the example screenshot above. 
 
 ### Download and install the missing certificate on your Android mobile device
 
