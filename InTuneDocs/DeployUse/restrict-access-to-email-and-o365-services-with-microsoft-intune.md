@@ -28,9 +28,9 @@ ms.suite: ems
 # Restrict access to email, O365, and other services with Microsoft Intune
 You can restrict access to your company email and O365 services with Intune's conditional access. Intune's conditional access capability allows you to make sure that access to your company email and O365 services is restricted to devices that are compliant with the rules that you set.
 ## How does conditional access work?
-Compliance policy settings are used to evaluate the compliance of the device. Conditional access policy uses the evaluation to restrict or allow access to a specific service. When a conditional access policy is used in combination with a compliance policy, only compliant devices will be allowed to access the service.
+Compliance policy settings are used to evaluate the compliance of the device. Conditional access policy uses the evaluation to restrict or allow access to a specific service. When a conditional access policy is used in combination with a compliance policy, only compliant devices will be allowed to access the service. The compliance policy and the conditional access policy are deployed to the user. Any device that the user uses to access the services is checked for compliance with the policies. 
 
-Keep in mind that the user who is using the device must also have a compliance policy deployed to them in order for the device to be evaluated for compliance.
+Keep in mind that the user who is using the device must have a compliance policy deployed to them in order for the device to be evaluated for compliance.
 If no compliance policy is deployed to the user the device is treated as compliant, and no access restrictions will be applied.
 
 When devices do not meet the conditions set in the policies, the end user is guided though the process of enrolling the device and fixing the issue that prevents the device from being compliant.
