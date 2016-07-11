@@ -18,7 +18,7 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ The MDM authority defines the management service that has permission to manage a
 
 1.  In the [Microsoft Intune administration console](http://manage.microsoft.com), choose **Admin** &gt; **Mobile Device Management**.
 
-2.  In the **Tasks** list, click **Set Mobile Device Management Authority**. The **Set Mobile Device Management Authority** dialog box opens.
+2.  In the **Tasks** list, click **Set Mobile Device Management Authority**. The **Set MDM Authority** dialog box opens.
 
     ![Set MDM authority dialog box](../media/intune-mdm-authority.png)
 
