@@ -55,7 +55,7 @@ Customizing the Company Portal helps to provide a familiar and helpful experienc
 
 ![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
-#### Company contact information and privacy statement
+### Company contact information and privacy statement
 
 The company name is displayed as the Company Portal title. The contact information and details are displayed to users in the Contact IT screen of the Company Portal. The privacy statement is displayed when a user clicks the privacy link.
 
@@ -68,7 +68,7 @@ The company name is displayed as the Company Portal title. The contact informati
     |Additional information|120|This information is displayed on the **Contact IT** page.|
     |Company privacy statement URL|79|You can specify your own company privacy statement that appears when users click the privacy links from the Company Portal. You must enter a valid URL in the format https://www.contoso.com.|
 
-#### Support contacts
+### Support contacts
 The support website is displayed to users in the Company Portal to enable them to access online support.
 
 |Field name|Max length|More information|
@@ -77,7 +77,7 @@ The support website is displayed to users in the Company Portal to enable them t
     |Website name|40|This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then **Go to IT website** is displayed on the **Contact IT** page in the Company Portal.|
 
 
-#### Company branding customization
+### Company branding customization
 
 You can customize your Company Portal with your company logo, company name, theme color, and background.
 
