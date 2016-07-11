@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,10 +26,9 @@ ms.suite: ems
 ---
 
 # Add apps with Microsoft Intune
-Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. These will help you to understand which apps you can deploy to which platform, and to understand the prerequisites that must be in place before you do so.
+Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. These will help you to understand which apps you can deploy to which platform, and to understand the prerequisites that must be in place before you do so. You can deploy the following app types:
 
-## App types you can deploy with Intune
-You can deploy apps to all device types that are supported by Intune. Depending on the type of app you want to deploy, the process and supported devices will differ. Use the following information to help you understand what you can, and cannot deploy:
+## Software installer
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**
@@ -73,13 +72,13 @@ This installer type lets you create and deploy Windows Installer-based apps to e
 - App updates are supported when the MSI product code of each version is the same.
 
 This type of app is uploaded to your cloud storage space.
-### **External Link**
+## **External Link**
 Used when you have a:
 - **URL** that lets users download an app from an app store.
 - **Link** to a web-based app that runs from the web browser.
 
 Apps based on external links are not stored in your Intune cloud storage space.
-### **Managed iOS app from the app store**
+## **Managed iOS app from the app store**
 Lets you manage and deploy iOS apps that are free of charge from the app store. Also lets you associate [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) with [compatible apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) and review their status in the administrator console.<br /><br />Managed iOS apps are not stored in your Intune cloud storage space.
 > [!TIP]
 > Options for mobile devices are not available until you [set the Mobile Device Management Authority](get-ready-to-enroll-devices-in-microsoft-intune.md) to Intune.
