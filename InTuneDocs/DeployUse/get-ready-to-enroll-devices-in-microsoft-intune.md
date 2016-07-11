@@ -51,7 +51,7 @@ The Intune Company Portal is where users access company data and can do common t
 > [!TIP]
 > When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.
 
-Customizing the Company Portal helps to provide a familiar and helpful experience for your end users. To do this, just sign in to the [Microsoft Intune administrator console](https://manage.microsoft.com) as a tenant or service administrator, choose **Admin** &gt; **Company Portal**, and configure the Company Portal settings.
+Customizing the Company Portal helps to provide a familiar and helpful experience for your end users. To do this, just sign in to the [Microsoft Intune administration console](https://manage.microsoft.com) as a tenant or service administrator, choose **Admin** &gt; **Company Portal**, and configure the Company Portal settings.
 
 ![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
