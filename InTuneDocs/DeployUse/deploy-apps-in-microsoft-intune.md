@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy apps | Microsoft Intune
+title: How to deploy apps | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
