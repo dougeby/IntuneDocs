@@ -2,7 +2,7 @@
 # required metadata
 
 title: Third-Party Software Notices and Information | Microsoft Intune
-description:
+description: Third-Party Software Notices and Information for Microsoft Intune
 keywords:
 author: robstackmsft
 manager: jeffgilb

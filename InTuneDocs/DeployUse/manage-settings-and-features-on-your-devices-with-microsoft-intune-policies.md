@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 06/14/2016
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,7 +52,7 @@ For a complete list of Intune policies, see [Microsoft Intune policy reference](
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy** &gt; **Configuration Policies** &gt; **Add**.
 
-2.  Choose the policy that you want, choose to use the recommended settings for the policy (when available; you can change these settings later), or choose to create a custom policy with your own settings.
+2.  Choose the policy that you want, choose to use the recommended settings for the policy (if available; you can change these settings later), or choose to create a custom policy with your own settings.
 
 	> [!TIP]
 	> For help choosing the right policy, see the [Microsoft Intune policy reference](microsoft-intune-policy-reference.md).

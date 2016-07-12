@@ -2,7 +2,7 @@
 # required metadata
 
 title: Windows policy settings | Microsoft Intune
-description:
+description: Use the Intune Windows general configuration policy (Windows 8.1 and later) to configure settings for enrolled Windows 8, and Windows 8.1 devices.
 keywords:
 author: robstackmsft
 manager: jeffgilb
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Windows policy settings in Microsoft Intune
-Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and later)** to configure settings for enrolled Windows 8, and Windows 8.1 devices:
+Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and later)** to configure the following settings for enrolled Windows 8, and Windows 8.1 devices:
 
 ## Applicability settings
 
