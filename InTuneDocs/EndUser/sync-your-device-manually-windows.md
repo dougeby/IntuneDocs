@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sync your device manually | Microsoft Intune
+title: Sync your Windows device manually | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Sync your device manually
+# Sync your Windows device manually
 If your app installation is taking too long, use the following instructions to manually sync your Windows device, which might help to speed up the installation. The only versions that are supported are the ones listed. Use the link, shown in the "In this Article" section above, that matches the type of device you have:
 
 * [Windows 10 Mobile](#windows-10-mobile)

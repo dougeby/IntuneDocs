@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens if you install the Company Portal app and enroll your device in Intune? | Microsoft Intune
+title: What happens if you install the Company Portal app and enroll your Windows device in Intune? | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# What happens if you install the Company Portal app and enroll your device in Intune?
+# What happens if you install the Company Portal app and enroll your Windows device in Intune?
 
 When you install the Company Portal app and then use it to enroll a Windows or Windows Phone device, you are enabling your IT administrator to manage your device to keep company or school data secure, as described below for devices earlier than Windows 10. For information about Windows 10 devices, see [this page](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 

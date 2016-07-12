@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -87,6 +87,10 @@ You can see which devices are using Activation Lock in two ways:
 -   Select a device in a groups view, you can see the Activation Lock status in the device details pane.
 
     If you select a device in the **All Corporate-owned Devices** node, and Activation Lock is enabled for the device, you can also see the bypass code. This code can be used to manually issue an Activation Lock bypass.
+
+	> [!IMPORTANT]
+	>Intune takes inventory from devices for Activation Lock every 7 days. Because of this, devices might not immediately be displayed with their Activation Lock status in the Intune console.
+
 
 ### See also
 [Retire devices](retire-devices-from-microsoft-intune-management.md)

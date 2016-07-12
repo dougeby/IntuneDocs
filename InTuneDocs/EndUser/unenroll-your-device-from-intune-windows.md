@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Unenroll your device from Intune | Microsoft Intune
+title: Unenroll your Windows device from Intune | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Unenroll your device from Intune
+# Unenroll your Windows device from Intune
 
 If you enrolled in Intune, but no longer want to use your Windows device for work or school and don't need to access work or school email, apps, or other resources, you need to unenroll your device. Once you unenroll your device from Intune, you will no longer be able to access these resources. For more about what happens when you unenroll your device, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 

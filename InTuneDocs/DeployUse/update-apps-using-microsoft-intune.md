@@ -6,7 +6,7 @@ description: Use the information in this topic to understand how you can update 
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,16 @@ Microsoft Intune can help you manage app updates. Use the information in this to
 
 ## How to update apps
 When a new version of an app you have deployed is released, Intune lets you update and deploy the newer version of the app. You can only replace a deployment with a newer version of the same app (using the same identifier). You cannot use app updates to update a deployment with a different app package.
+
+### App identifiers
+The app identifier is a property that uniquely identifies an app. You cannot install multiple copies of an app with the same identifier. For example:
+
+- **iOS** - Bundle ID (for example: com.microsoft.excel)
+- **Android** - Package ID (for example: com.microsoft.excel)
+- **Windows Phone** - (xap installer) use Product ID (GUID)
+- **Windows** - (appx/appxbundle), use the Package Full Name
+
+
 
 > [!IMPORTANT]
 > When you deploy an app with a deployment action of **Required install** and later change the deployment action to **Available install**, updates to the app are not automatically installed on devices that installed the app before the deployment change was made. To fix this issue, you can do the following:
