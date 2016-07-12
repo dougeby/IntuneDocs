@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reset (erase) your lost or stolen device | Microsoft Intune
+title: Reset (erase) your lost or stolen Android device | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Reset (erase) your lost or stolen device
+# Reset (erase) your lost or stolen Android device
 
 If your Android phone is lost or stolen, you can reset it to factory defaults from the Company Portal app or website. For instructions using the Company Portal app, use the following steps, or watch this [video](http://aka.ms/ly1x17). You can also [reset your device using the Company Portal website](reset-your-device-cpwebsite.md).
 

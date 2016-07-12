@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install the Microsoft Intune Exchange connector for on-premises Exchange | Microsoft Intune
-description:
+description: Use the Connector tool to enable communication between the Intune admin console and on-premises Exchange Server for Exchange ActiveSync MDM.
 keywords:
 author: NathBarn
 manager: jeffgilb
@@ -18,7 +18,7 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage corporate-owned devices | Microsoft Intune
-description:
+description: Bring corporate-owned devices (COD) into management in a variety of ways depending upon the device, how it was purchased, and organization needs.
 keywords:
 author: NathBarn
 manager: jeffgilb
@@ -37,6 +37,10 @@ These enrollment methods are good for "Choose your own device" (CYOD) scenarios 
 Organizations can use Intune to manage large numbers of mobile devices with a single user account called a device enrollment manager account. After creating a device enrollment manager account, that account can be used by a manager to enroll more than the standard five devices allowed by default to normal users. Enrolling devices with a device enrollment manager only works for devices that aren't used by a specific user. These devices are good for point-of-sale or utility apps, for example, but bad for users who need access to email or company resources.
 
 [Enroll corporate-owned devices with the device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+
+## Enroll corporate-owned Windows 10 desktops
+
+If your organization has Azure Active Directory Premium (AADP) or Enterprise Management Suite (EMS), you can [enroll Windows 10 for enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) and they will be automatically tagged as "corporate-owned" when user join devices to your domain.
 
 ## International mobile equipment identity (IMEI)
 Unique international mobile equipment identity (IMEI) numbers are a common device property for many mobile device manufacturers. Intune administrators can import IMEI numbers for devices the company owns. When the device becomes managed by Intune, it can be tagged as a corporate-owned device and targeted with appropriate policy.
