@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage corporate-owned devices | Microsoft Intune
-description:
+description: Bring corporate-owned devices (COD) into management in a variety of ways depending upon the device, how it was purchased, and organization needs.
 keywords:
 author: NathBarn
 manager: jeffgilb

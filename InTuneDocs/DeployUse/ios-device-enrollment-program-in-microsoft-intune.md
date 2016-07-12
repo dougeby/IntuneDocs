@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apple DEP management for iOS devices with Microsoft Intune | Microsoft Intune
-description:
+description: Deploy an enrollment profile that enrolls iOS devices purchased through the iOS Device Enrollment Program (DEP) “over the air” to manage Apple devices.
 keywords:
 author: NathBarn
 manager: jeffgilb
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Enroll corporate-owned Device Enrollment Program iOS devices
-Microsoft Intune can deploys an enrollment profile that enrolls iOS devices purchased through the Device Enrollment Program (DEP) “over the air.” The enrollment package can include setup assistant options for the device. Devices enrolled through DEP cannot be un-enrolled by users.
+Microsoft Intune can deploy an enrollment profile that enrolls iOS devices purchased through the Device Enrollment Program (DEP) “over the air.” The enrollment package can include setup assistant options for the device. Devices enrolled through DEP cannot be un-enrolled by users.
 
 ## Apple DEP management for iOS devices with Microsoft Intune
 To manage corporate-owned iOS devices with Apple’s Device Enrollment Program (DEP), your organization must join Apple DEP and acquire devices through that program. Details of that process are available at:  [https://deploy.apple.com](https://deploy.apple.com). Advantages of the program include hands-free set up of devices without USB-connecting each device to a computer.

@@ -2,11 +2,11 @@
 # required metadata
 
 title: Enroll corporate-owned devices with the Device Enrollment Manager | Microsoft Intune
-description:
+description: Microsoft Intune's device enrollment manager (DEM) account can manage large numbers of shared, corporate-owned mobile devices with a single user account.
 keywords:
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

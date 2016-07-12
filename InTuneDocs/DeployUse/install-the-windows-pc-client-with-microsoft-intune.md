@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install the Windows PC client with Microsoft Intune | Microsoft Intune
-description:
+description: Use this guide to help you get your Windows PCs managed by the Microsoft Intune client software.
 keywords:
 author: NathBarn
 manager: jeffgilb
@@ -18,7 +18,7 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
