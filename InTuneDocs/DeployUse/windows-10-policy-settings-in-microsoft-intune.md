@@ -2,7 +2,7 @@
 # required metadata
 
 title: Windows 10 policy settings | Microsoft Intune
-description:
+description: Use the policy settings listed in this topic to help you configure built-in and custom settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices.
 keywords:
 author: robstackmsft
 manager: jeffgilb
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Windows 10 policy settings in Microsoft Intune
 
-Use the policy settings listed in this topic to help you configure settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices.
+Use the policy settings listed in this topic to help you configure built-in and custom settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices.
 
 > [!IMPORTANT]
 > You can manage Windows 10 PCs in two ways; by enrolling them, or by installing the Intune PC client software. Each method offers different capabilities (See [Choose how to manage devices](/intune/get-started/choose-how-to-manage-devices) for more information.

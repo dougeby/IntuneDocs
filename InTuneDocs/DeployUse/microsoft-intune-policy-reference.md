@@ -2,11 +2,11 @@
 # required metadata
 
 title: Microsoft Intune policy reference | Microsoft Intune
-description:
+description: Use the information in this topic to help you decide which Microsoft Intune policy you need to use to manage your devices.
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

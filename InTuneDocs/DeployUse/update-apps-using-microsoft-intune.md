@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update apps | Microsoft Intune
-description:
+description: Use the information in this topic to understand how you can update apps when a new version is required.
 keywords:
 author: robstackmsft
 manager: jeffgilb
