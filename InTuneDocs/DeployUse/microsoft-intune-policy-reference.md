@@ -1,13 +1,10 @@
 ---
 # required metadata
 
-<<<<<<< HEAD
+
 title: Configuration policy reference | Microsoft Intune
-description:
-=======
-title: Microsoft Intune policy reference | Microsoft Intune
 description: Use the information in this topic to help you decide which Microsoft Intune policy you need to use to manage your devices.
->>>>>>> master
+
 keywords:
 author: robstackmsft
 manager: jeffgilb
@@ -142,4 +139,3 @@ Applies to Windows Phone, and enrolled Windows devices only.
 ### See Also
 
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
