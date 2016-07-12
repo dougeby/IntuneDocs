@@ -2,7 +2,7 @@
 # required metadata
 
 title: Android and Samsung KNOX configuration policy settings | Microsoft Intune
-description:
+description: Create policies that control settings and features on Android devices that you manage with Intune.
 keywords:
 author: robstackmsft
 manager: jeffgilb
@@ -26,6 +26,8 @@ ms.suite: ems
 ---
 
 # Android and Samsung KNOX policy settings in Microsoft Intune
+
+Intune supplies a range of built-in general settings you can configure on Android devices. Additionally, you can specify OMA-URI values to create custom settings that are not available from Intune.
 
 ## General configuration policy
 
