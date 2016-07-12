@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Unenroll your device from Intune | Microsoft Intune
+title: Unenroll your iOS device from Intune | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Unenroll your device from Intune
+# Unenroll your iOS device from Intune
 
 When you unenroll your iOS device from Intune, your device will not longer be able to access company resources and will no longer be managed by Intune.
 

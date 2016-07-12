@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Unenroll your device from Intune | Microsoft Intune
+title: Unenroll your Android device from Intune | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Unenroll your device from Intune
+# Unenroll your Android device from Intune
 
 When you unenroll your Android device from Intune, your device will no longer be able to access company resources.  For more about what happens when you unenroll, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 

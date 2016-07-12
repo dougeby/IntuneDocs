@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up iOS and Mac management | Microsoft Intune
-description:
+description: Enable mobile device management (MDM) for iOS devices including iPads and iPhones as well as Mac OS X devices with Microsoft Intune.
 keywords:
 author: NathBarn
 manager: jeffgilb
@@ -18,7 +18,7 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

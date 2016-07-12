@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sync your device manually | Microsoft Intune
+title: Sync your iOS device manually | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Sync your device manually
+# Sync your iOS device manually
 
 If your app installation is taking too long, use the following instructions to manually sync your iOS device, which might help to speed up the installation. The Sync feature applies only to iOS, not to Mac OS X.
 
