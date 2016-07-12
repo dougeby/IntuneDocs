@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reset (erase) your lost or stolen device | Microsoft Intune
+title: Reset (erase) your lost or stolen iOS device | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Reset (erase) your lost or stolen device
+# Reset (erase) your lost or stolen iOS device
 
 If a phone that has been enrolled in Intune is lost or stolen, you can reset it to factory default settings by using the Company Portal app from a different device or by using the [Company Portal website](http://portal.manage.microsoft.com).
 
