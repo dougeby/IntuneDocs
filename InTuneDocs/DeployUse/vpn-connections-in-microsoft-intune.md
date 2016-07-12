@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 # VPN connections in Microsoft Intune
- Virtual Private Networks (VPN) let you give your users secure remote access to your company network. Remote users can work as if their device is physically connected to the network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use **VPN profiles** in Microsoft Intune to deploy VPN settings to users and devices in your organization. By deploying these settings, you minimize the end-user effort required to connect to resources on the company network.
+ You can use virtual private networks (VPNs) to give your users secure remote access to your company network. Remote users can work as if their devices are physically connected to the network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use **VPN profiles** in Microsoft Intune to deploy VPN settings to users and devices in your organization. By deploying these settings, you minimize the end-user effort required to connect to resources on the company network.
 
-For example, you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile containing the settings necessary to connect to the corporate network and then deploy this profile to all users with iOS devices. The users will see the VPN connection in the list of available networks and can connect with the minimum of effort.
+For example, you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile that contains the settings necessary to connect to the corporate network, and then you deploy this profile to all users with iOS devices. The users will see the VPN connection in the list of available networks and can connect with minimal effort.
 
 You can configure the following device types with VPN profiles:
 
@@ -37,9 +37,9 @@ You can configure the following device types with VPN profiles:
 * Devices that run Mac OS X 10.9 and later
 * Enrolled devices that run Windows 8.1 and later
 * Devices that run Windows Phone 8.1 and later
-* Devices that run Windows 10 desktop and mobile.
+* Devices that run Windows 10 desktop and mobile
 
-The VPN profile configuration options will differ depending on the device type you select.
+The VPN profile configuration options differ depending on the device type that you select.
 
 ## VPN connection types
 
@@ -63,30 +63,31 @@ L2TP|iOS Custom Profile|No |No |No |No|Yes (OMA-URI)|Yes|
 
 \* Without additional settings that are otherwise available for Windows 10.
 
-> [!IMPORTANT] Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to help you deploy the applicable app using Intune.  
+> [!IMPORTANT]
+> Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to help you deploy the applicable app by using Intune.  
 
- Learn how to  create custom VPN profiles using URI settings in [Custom configurations for VPN profiles](custom-configurations-for-vpn-profiles.md).     
+ Learn how to  create custom VPN profiles by using URI settings in [Custom configurations for VPN profiles](custom-configurations-for-vpn-profiles.md).     
 
-## How VPN profiles are secured
+## Methods of securing VPN profiles
 
-VPN profiles can use a number of different connection types and protocols from different manufacturers. These connections are typically secured using one of two methods:
+VPN profiles can use a number of different connection types and protocols from different manufacturers. These connections are typically secured using one of two methods.
 
 ### Certificates
 
-When you create the VPN profile, you choose a SCEP or .PFX certificate profile that you have previously created in Intune.
+When you create the VPN profile, you choose a SCEP or .PFX certificate profile that you previously created in Intune.
 
-This is known as the identity certificate and is used to authenticate against a trusted certificate profile (or a root certificate) you created to establish that the user’s device is allowed to connect. The trusted certificate is deployed to the computer that authenticates the VPN connection, typically, the VPN server.
+This is known as the identity certificate. It's used to authenticate against a trusted certificate profile (or a root certificate) that you created to establish that the user’s device is allowed to connect. The trusted certificate is deployed to the computer that authenticates the VPN connection, typically, the VPN server.
 
 For more information about how to create and use certificate profiles in Intune, see [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md).
 
-### Username and password
+### User name and password
 
-The user authenticates to the VPN server by providing their username and password.
+The user authenticates to the VPN server by providing a user name and password.
 
 ## Create a VPN profile
 
-1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy > Add Policy**.
-2. Select a template for the new policy by expanding the relevant device type, then choose the VPN profile for that device:
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Add Policy**.
+2. Select a template for the new policy by expanding the relevant device type, and then choose the VPN profile for that device:
 	* **VPN Profile (Android 4 and later)**
 	* **VPN Profile (iOS 7.1 and later)**
 	* **VPN Profile (Mac OS X 10.9 and later)**
@@ -125,7 +126,7 @@ Setting name  |More information
 **Bypass VPN when connected to company Wi-Fi network** (Windows Phone 8.1 only)|Specifies that the VPN connection will not be used when the device is connected to the company Wi-Fi network.
 **Bypass VPN when connected to home Wi-Fi network** (Windows Phone 8.1 only)|Specifies that the VPN connection will not be used when the device is connected to a home Wi-Fi network.
 
-The following additional settings are available for Windows 10 Desktop and Mobile devices
+The following additional settings are available for Windows 10 desktop and mobile devices.
 
 Setting name  |More information  
 ---------|---------
@@ -135,7 +136,8 @@ Setting name  |More information
 **Associated apps**     | You can provide a list of apps that will automatically use the VPN connection. The type of app will determine the app identifier. For universal apps – provide the Package Family Name, and for desktop apps – provide the file path of the app.          
 
 
-> [!IMPORTANT] We recommend that you secure all lists of apps that you compile for use in configuration of per-app VPN. If an unauthorized user modifies your list and you import it into the per-app VPN app list, you will potentially authorize VPN access to apps that should not have access. One way you can secure app lists is by using an access control list (ACL).
+> [!IMPORTANT]
+> We recommend that you secure all lists of apps that you compile for use in configuration of per-app VPN. If an unauthorized user modifies your list and you import it into the per-app VPN app list, you will potentially authorize VPN access to apps that should not have access. One way you can secure app lists is by using an access control list (ACL).
 
 Here's an example of when you might use corporate boundaries settings. If you want to enable VPN only for remote desktop, you would create a network traffic rule that allows traffic for protocol number 27 on external port 3996. No other traffic will use the VPN.
 
@@ -151,15 +153,15 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 
 2.  In the **Manage Deployment** dialog box:
 
-    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then choose **Add** &gt; **OK**.
+    -   To deploy the policy, select one or more groups to which you want to deploy the policy, and then choose **Add** &gt; **OK**.
 
-    -   **To close the dialog box without deploying it** - Choose **Cancel**.
+    -   To close the dialog box without deploying it, choose **Cancel**.
 
 
 After successful deployment, users will see the VPN connection name you specified in the list of VPN connections on their device.
 
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
 
-### See also
+## See also
 [Custom configurations for VPN profiles](Custom-configurations-for-VPN-profiles.md)
 [Per-app VPN for Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
