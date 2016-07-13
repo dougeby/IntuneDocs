@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll your Windows device in Intune | Microsoft Intune
-description:
+description: enroll Windows device
 keywords:
 author: Staciebarker
 manager: jeffgilb

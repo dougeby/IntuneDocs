@@ -15,7 +15,7 @@ ms.assetid: de881f1b-7622-4ec2-8bf8-025f71ca9887
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: chrisbal

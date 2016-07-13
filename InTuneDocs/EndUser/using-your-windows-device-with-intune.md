@@ -2,7 +2,7 @@
 # required metadata
 
 title: Using your Windows device with Intune | Microsoft Intune
-description:
+description: Windows Intune tasks
 keywords:
 author: Staciebarker
 manager: jeffgilb
