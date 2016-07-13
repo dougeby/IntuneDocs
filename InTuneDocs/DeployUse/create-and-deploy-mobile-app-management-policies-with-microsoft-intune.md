@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and deploy MAM policies | Microsoft Intune
-description:
+description: Use the step-by-step instructions in this topic to create and deploy mobile app management policies.
 keywords:
 author: karthikaraman
 manager: jeffgilb
