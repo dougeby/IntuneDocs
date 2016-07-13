@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft Software Supplemental Notice | Microsoft Intune
-description:
+description: Read the Microsoft software supplemental notice for Microsoft Intune.
 keywords:
 author: robstackmsft
 manager: jeffgilb
