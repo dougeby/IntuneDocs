@@ -2,11 +2,11 @@
 # required metadata
 
 title: Mobile device security policy settings | Microsoft Intune
-description:
+description: Use Intune to configure a wide range of settings that you can deploy to managed devices in your organization.
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

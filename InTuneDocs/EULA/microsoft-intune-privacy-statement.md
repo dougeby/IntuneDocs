@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft Intune Privacy Statement | Microsoft Intune
-description:
+description: Read the Microsoft Intune privacy statement.
 keywords:
 author: robstackmsft
 manager: jeffgilb

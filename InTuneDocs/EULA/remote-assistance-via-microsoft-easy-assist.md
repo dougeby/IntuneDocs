@@ -2,7 +2,7 @@
 # required metadata
 
 title: Remote Assistance via Microsoft Easy Assist | Microsoft Intune
-description:
+description: Use Intune to provide remote assistance request capabilities to users of Windows Vista, and Windows 7 computers.
 keywords:
 author: robstackmsft
 manager: jeffgilb
