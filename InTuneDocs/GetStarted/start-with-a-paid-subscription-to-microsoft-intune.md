@@ -45,9 +45,9 @@ The steps in this quick start guide share many of the same steps that are in the
 
 
 ## Before you begin
-Use this guide when you are starting with a paid subscription and are ready to deploy Intune and make changes to your existing network infrastructure. This could range from simply adding or updating your internal and external DNS records to synchronizing your existing Active Directory user accounts to Azure Active Directory. Whatever mix of Intune mobile device management features you decide on, you'll need to carefully plan how Intune will interact with your existing network components and services. Specifically, you should review:
+Use this guide when you are starting with a paid subscription and are ready to deploy Intune and make changes to your existing network infrastructure. These tasks could range from simply adding or updating your internal and external DNS records to synchronizing your existing Active Directory user accounts to Azure Active Directory. Whatever mix of Intune mobile device management features you decide on, you'll need to carefully plan how Intune will interact with your existing network components and services. Specifically, you should review:
 
--   **How you'll manage user identity**: For most medium to large-sized organizations, connecting your existing directory services to Intune via Azure Active Directory is the best and most convenient way to manage user identity with Intune. This is especially true if you already use other Microsoft cloud services, such as Office 365 or Exchange Online. Synchronizing your existing user accounts by using [Microsoft Azure Active Directory Connect](https://www.microsoft.com/download/details.aspx?id=47594) is a quick and easy way to connect your on-premises Active Directory to Azure Active Directory and configure a single sign-on authentication experience for your users.
+-   **How you'll manage user identity**: For most medium to large-sized organizations, the best and most convenient way to manage user identity with Intune is to connect your existing directory services to Intune via Azure Active Directory. This is especially true if you already use other Microsoft cloud services, such as Office 365 or Exchange Online. Synchronizing your existing user accounts by using [Microsoft Azure Active Directory Connect](https://www.microsoft.com/download/details.aspx?id=47594) is a quick and easy way to connect your on-premises Active Directory to Azure Active Directory and configure a single sign-on authentication experience for your users.
 
 -   **How DNS will be affected**: If you want to use your own domain name instead of the default onmicrosoft.com domain that you get when you first sign up for Intune, you will need some public DNS record updates. DNS record updates are required so that mobile devices can locate the Intune service and ensure that the management service for your subscription works correctly to manage all devices in use by your organization.
 
@@ -73,7 +73,7 @@ If you're managing iOS or Windows Phone devices with Intune, you'll need certifi
 
 - For **iOS** or **Mac OS X** devices, you will need to request an Apple Push Notification service certificate from Apple, as described in step 3 of [Set up iOS and Mac management with Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
 
-### Next steps
+## Next steps
 It's time to get started with the Intune quick start guide!
 
 >[!div class="step-by-step"]
