@@ -15,7 +15,7 @@ ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: arnab

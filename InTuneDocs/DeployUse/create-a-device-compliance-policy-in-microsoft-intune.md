@@ -2,11 +2,11 @@
 # required metadata
 
 title: Create a device compliance policy in Microsoft Intune | Microsoft Intune
-description:
+description: Create a compliance policy to help secure mobile devices and PCs used to access your company data.
 keywords:
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,12 +38,20 @@ On the **Create Policy** page, enable the settings you require:
   -   The System security settings like password, and encryption
   -   Device health settings like whether or not a device is jailbroken, or is reported healthy by the Windows device health attestation service.
   -   Device property settings like the minimum OS version required or maximum OS version allowed.
-![Screenshot of the General tab of the Create Policy page ](./media/intune-sa-3b-create-policy.png)
+![General tab of the Create Policy page ](./media/intune-sa-3b-create-policy.png)
+
 
 ##  Step 3: Save the policy
 When you are finished, choose **Save Policy**.
 
 You will have the option to deploy the policy right after saving the policy, or you can choose to deploy it later. The new policy displays in the **Compliance Policies** node of the **Policy** workspace.
+
+##  Step 4: Set the compliance status validity period
+To specify the time the device has to check-in before a device is considered not compliant, go to compliance policy settings and update the time.  The default is set to 30 days.
+
+![compliance policy settings option in the policy menu bar](../media/mdm-compliance-policy-settings.png)
+
+![compliance policy dialog box](../media/mdm-ca-compliance-status-validity-period.png)
 
 ## Supported policy settings
 The following table lists the compliance policy settings and the platforms on which they are supported.

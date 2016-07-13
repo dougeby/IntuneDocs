@@ -2,7 +2,7 @@
 # required metadata
 
 title: Unenroll your device from Intune if you declined Terms of Use | Microsoft Intune
-description:
+description: unenroll Android device terms
 keywords:
 author: staciebarker
 manager: jeffgilb

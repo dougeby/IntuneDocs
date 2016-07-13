@@ -2,7 +2,7 @@
 # required metadata
 
 title: Unenroll your Windows device from Intune | Microsoft Intune
-description:
+description: unenroll Windows device
 keywords:
 author: Staciebarker
 manager: jeffgilb

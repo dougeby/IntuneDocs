@@ -2,7 +2,7 @@
 # required metadata
 
 title: Encrypt your Windows device | Microsoft Intune
-description:
+description: encrypt Windows device
 keywords:
 author: Staciebarker
 manager: jeffgilb
