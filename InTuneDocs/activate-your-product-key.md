@@ -2,7 +2,7 @@
 # required metadata
 
 title: Activate Your Product Key | Microsoft Intune
-description:
+description: You can use a product key to redeem an Intune subscription or add users to an existing subscription.
 keywords:
 author: robstackmsft
 manager: jeffgilb

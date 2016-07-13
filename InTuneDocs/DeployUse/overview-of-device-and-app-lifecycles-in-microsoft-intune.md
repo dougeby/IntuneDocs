@@ -2,7 +2,7 @@
 # required metadata
 
 title: Overview of device and app lifecycles | Microsoft Intune
-description:
+description: Overview of the device and app lifecycles with Intune.
 keywords:
 author: robstackmsft
 manager: jeffgilb
