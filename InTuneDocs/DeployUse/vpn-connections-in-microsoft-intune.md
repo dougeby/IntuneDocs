@@ -162,7 +162,7 @@ After successful deployment, users will see the VPN connection name that you spe
 
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
 
-## See also
+### See also
 [Custom configurations for VPN profiles](Custom-configurations-for-VPN-profiles.md)
 
 [Per-app VPN for Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
