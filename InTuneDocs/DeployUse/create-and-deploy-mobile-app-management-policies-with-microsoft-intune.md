@@ -44,6 +44,7 @@ MAM policies created in the Intune admin console cannot be imported into the Azu
 To see a list of policy settings supported for Android and iOS platforms, select one of the following:
 
 > [!div class="op_single_selector"]
+
 - [iOS policies](ios-mam-policy-settings.md)
 - [Android policies](android-mam-policy-settings.md)
 

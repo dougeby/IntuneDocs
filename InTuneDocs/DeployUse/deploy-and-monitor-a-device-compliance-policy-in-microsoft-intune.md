@@ -38,7 +38,8 @@ You can deploy a compliance policy to users and/or devices. Use Active Directory
 
 Use the status summary and alerts on the **Overview** page of the **Policy** workspace to identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
-> [!IMPORTANT]If you have not deployed a compliance policy and then enable an Exchange conditional access policy, all targeted devices will be allowed access.
+> [!IMPORTANT]
+> If you have not deployed a compliance policy and then enable an Exchange conditional access policy, all targeted devices will be allowed access.
 
 ## How Intune policy conflicts are resolved
 Policy conflicts  can occur due when multiple Intune policies are applied to a device. If the policy settings overlap, Intune resolves any conflicts using the following rules:
