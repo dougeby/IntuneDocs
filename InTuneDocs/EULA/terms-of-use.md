@@ -2,7 +2,7 @@
 # required metadata
 
 title: Terms of Use | Microsoft Intune
-description:
+description: Read the terms of use for Microsoft Intune.
 keywords:
 author: robstackmsft
 manager: jeffgilb

@@ -2,11 +2,11 @@
 # required metadata
 
 title: Exchange ActiveSync policy settings | Microsoft Intune
-description:
+description: Use the Intune Exchange ActiveSync policy to configure settings that let you control features and functionality on devices managed by Exchange ActiveSync.
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
