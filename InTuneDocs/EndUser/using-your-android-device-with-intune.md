@@ -2,7 +2,7 @@
 # required metadata
 
 title: Using your Android device with Intune | Microsoft Intune
-description:
+description: Android device tasks
 keywords:
 author: staciebarker
 manager: jeffgilb

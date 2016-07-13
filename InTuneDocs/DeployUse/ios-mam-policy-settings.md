@@ -2,11 +2,11 @@
 # required metadata
 
 title: iOS MAM policy settings | Microsoft Intune
-description:
+description: This topic describes the mobile app management policy settings for iOS devices.
 keywords:
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,8 @@ The term **Policy managed apps** is used to refer to apps that are configured wi
   - **None**: Do not allow data transfer to any app including other policy managed apps.
 
   Additionally, if you set this option to **Policy Managed Apps** or **None**, the iOS 9 feature that allows Spotlight Search to search data within apps will be blocked.
+
+  **This setting does not control use of the Open In feature on mobile devices. To manage Open In, see [here](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.
 
   **Default value = Policy managed apps**
 

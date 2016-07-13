@@ -2,11 +2,11 @@
 # required metadata
 
 title: Restrict access to SharePoint Online | Microsoft Intune
-description:
+description: Protect and control access to  company data on SharePoint Online with conditional access.
 keywords:
 author: karthikaraman
 manager: jeffgilb
-ms.date: 06/16/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -62,6 +62,8 @@ If a condition is not met, the user is presented with one of the following messa
 -   If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal  app and enroll.
 
 -   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website where they can find information about the problem, and how to remediate it.
+
+**Conditional access is enforced across all SharePoint sites so external sharing is blocked**
 
 ## Support for mobile devices
 - iOS 7.1 and later

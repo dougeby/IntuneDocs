@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 05/26/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,30 +33,30 @@ This topic tells you how to open a service request or call for phone support in 
 For self help with Intune, see [General troubleshooting tips for Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) or any of the troubleshooting topics for specific issues, listed in the **See also** section of this topic.
 ## Create an online service request
 
-1.  Sign in to Intune and then visit the [Office 365 admin center](https://portal.office.com/Support/SupportEntry.aspx).
+1.  Sign in to the [Office 365 admin center](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage) with your Intune credentials.
 
-2.  Under the heading **Create a service request** select the category of issue for which you want to open a ticket:
+2.  Under **Create a service request** select the category of issue for which you want to open a ticket:
 
-    -   For billing and licensing issues select **Billing and product info**.
+    -   For billing, licensing, and account issues select **Billing and product info**.
 
-    -   For all other Intune issues select **Mobile device management**. This option also covers Office 365 MDM and System Center Configuration Manager with Intune.
+    -   For all other Intune issues select **Mobile device management**.
 
     > [!NOTE]
-    > You may have to click **more** at the bottom of the list to see all of the categories.
+    > You may have to choose **more** at the bottom of the list to see all of the categories.
 
 3.  On the **identify the issue** page select the **Feature** and **Symptom** for which you need help. You will be asked to provide an **Issue summary** and **Issue details**.
 
-4.  On the **review suggestions** page you'll find links to content that may help you resolve the issue on your own.  If you can't resolve the issue you can click **Yes, continue** at the bottom of the page to submit your service request.
+4.  On the **review suggestions** page you'll find links to content that may help you resolve the issue on your own.  If you can't resolve the issue you can choose **Yes, continue** at the bottom of the page to submit your service request.
 
-5.  On the **add details** page provide the requested information. You can attach screenshots or other documents by clicking **attach a file**.
+5.  On the **add details** page provide the requested information. You can attach screenshots or other documents by choosing **attach a file**.
 
-6.  On the **confirm and submit** page provide contact information, review your request, and click **Submit request**. After the request is submitted you will be taken to a list of your service requests.
+6.  On the **confirm and submit** page provide contact information, review your request, and choose **Submit request**. After the request is submitted you will be taken to a list of your service requests.
 
 ## Support by phone
 See [Contact Assisted Phone Support for Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) for a list of support phone numbers by country and region, support hours, and supported languages for each region.
 
 ## Track your service requests
-To track your requests, go to the [Office 365 admin center](https://portal.office.com/admin/default.aspx). At the bottom of the **Create a service request** list, click **See all support tickets**. By default, you will see all of your service requests that are in an open state. To change which service requests you see, for example, to see closed requests, click  the filter icon in the top navigation and select your preferred view.
+To track your requests, go to the [Office 365 admin center](https://portal.office.com/admin/default.aspx). At the bottom of the **Create a service request** list, choose **See all support tickets**. By default, you will see all of your service requests that are in an open state. To change which service requests you see, for example, to see closed requests, choose  the filter icon in the top navigation and select your preferred view.
 
 > [!NOTE]
 > **If you use Microsoft System Center Configuration Manager** or **Microsoft System Center Endpoint Protection:** For technical support with Configuration Manager or Endpoint Protection, contact your partner or visit the [Microsoft System Center Configuration Manager and System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) to find rich self-help material, with the option of opening a support request online or over the phone.

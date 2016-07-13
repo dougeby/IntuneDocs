@@ -2,7 +2,7 @@
 # required metadata
 
 title: Using your iOS or Mac OS X device with Intune | Microsoft Intune
-description:
+description: iOS and Mac OS X tasks
 keywords:
 author: Staciebarker
 manager: jeffgilb

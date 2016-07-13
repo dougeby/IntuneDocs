@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll your Windows RT device in Intune | Microsoft Intune
-description:
+description: enroll Windows RT device
 keywords:
 author: Staciebarker
 manager: jeffgilb

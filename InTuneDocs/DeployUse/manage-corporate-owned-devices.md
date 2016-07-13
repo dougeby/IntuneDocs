@@ -42,7 +42,17 @@ Organizations can use Intune to manage large numbers of mobile devices with a si
 
 If your organization has Azure Active Directory Premium (AADP) or Enterprise Management Suite (EMS), you can [enroll Windows 10 for enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) and they will be automatically tagged as "corporate-owned" when user join devices to your domain.
 
-## International mobile equipment identity (IMEI)
-Unique international mobile equipment identity (IMEI) numbers are a common device property for many mobile device manufacturers. Intune administrators can import IMEI numbers for devices the company owns. When the device becomes managed by Intune, it can be tagged as a corporate-owned device and targeted with appropriate policy.
+## Identify devices as corporate-owned
+
+Corporate-owned devices are listed as **Corporate**  under **Ownership** in lists of devices. Devices can be identified as corporate-owned in the following ways:
+
+ - [Enrolled with device enrollment manager (DEM)](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+ - Enrolled with Apple's [device enrollment program (DEP)](ios-device-enrollment-program-in-microsoft-intune.md)  or [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md)
+ - [Predeclare devices with IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+ - [Azure Active Directory/Enterprise Management Suite registration of Windows 10 devices](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+
+### International mobile equipment identity (IMEI)
+
+Unique international mobile equipment identity (IMEI) numbers are a common device property for many mobile device manufacturers. Intune administrators can import IMEI numbers for devices the company owns. When the device becomes managed by Intune, it is tagged as a corporate-owned device.
 
 [Specify corporate-owned devices with international mobile equipment identity (IMEI) numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
