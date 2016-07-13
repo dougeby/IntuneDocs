@@ -2,7 +2,7 @@
 # required metadata
 
 title: Firewall policies for Windows PCs | Microsoft Intune
-description:
+description: Intune can help you to secure PCs you manage with the Intune client in a number of ways, including configuring Windows Firewall settings.
 keywords:
 author: robstackmsft
 manager: jeffgilb
@@ -18,7 +18,7 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

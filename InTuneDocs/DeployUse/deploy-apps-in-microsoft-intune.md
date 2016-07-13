@@ -2,11 +2,11 @@
 # required metadata
 
 title: How to deploy apps | Microsoft Intune
-description:
+description: Use the information in this topic to help you deploy apps with Microsoft Intune.
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,11 +25,11 @@ ms.suite: ems
 ---
 # Deploy apps in Microsoft Intune
 
-Use the information in this topic to help you deploy Microsoft Intune apps.
+Use the information in this topic to help you deploy apps with Microsoft Intune.
 
 
 ## Deploy an app
-In this procedure, you'll deploy the app to selected devices or users.
+In this procedure, you'll deploy the app to selected groups of devices or users.
 
 ### To deploy an app
 
