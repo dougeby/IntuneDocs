@@ -2,7 +2,7 @@
 # required metadata
 
 title: Encrypt your device | Microsoft Intune
-description:
+description: encrypt Android device
 keywords:
 author: staciebarker
 manager: jeffgilb
