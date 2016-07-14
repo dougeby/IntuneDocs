@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll your Mac OS X device in Intune | Microsoft Intune
-description:
+description: enroll Mac OS X device
 keywords:
 author: Staciebarker
 manager: jeffgilb

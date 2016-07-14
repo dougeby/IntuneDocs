@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Unenroll your device from Intune | Microsoft Intune
-description:
+title: Unenroll your Android device from Intune | Microsoft Intune
+description: unenroll Android device
 keywords:
 author: staciebarker
 manager: jeffgilb
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Unenroll your device from Intune
+# Unenroll your Android device from Intune
 
 When you unenroll your Android device from Intune, your device will no longer be able to access company resources.  For more about what happens when you unenroll, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
@@ -46,7 +46,8 @@ To unenroll your device from Intune and uninstall the Company Portal app, follow
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
+
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

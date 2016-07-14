@@ -2,7 +2,7 @@
 # required metadata
 
 title: End user experience for MAM enabled apps | Microsoft Intune
-description:
+description: This topic describes what to expect when your app is managed by mobile app management policies.
 keywords:
 author: karthikaraman
 manager: jeffgilb

@@ -2,11 +2,11 @@
 # required metadata
 
 title: Configure iOS apps with mobile app configuration policies | Microsoft Intune
-description:
+description: Use mobile app configuration policies in Intune to supply settings that might be required when the user runs an iOS app.
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

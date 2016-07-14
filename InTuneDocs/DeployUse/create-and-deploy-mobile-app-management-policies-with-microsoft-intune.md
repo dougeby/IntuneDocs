@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and deploy MAM policies | Microsoft Intune
-description:
+description: Use the step-by-step instructions in this topic to create and deploy mobile app management policies.
 keywords:
 author: karthikaraman
 manager: jeffgilb
@@ -44,6 +44,7 @@ MAM policies created in the Intune admin console cannot be imported into the Azu
 To see a list of policy settings supported for Android and iOS platforms, select one of the following:
 
 > [!div class="op_single_selector"]
+
 - [iOS policies](ios-mam-policy-settings.md)
 - [Android policies](android-mam-policy-settings.md)
 

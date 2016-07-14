@@ -2,7 +2,7 @@
 # required metadata
 
 title: Using the Intune Company Portal website | Microsoft Intune
-description:
+description: Company Portal website tasks
 keywords:
 author: Staciebarker
 manager: jeffgilb

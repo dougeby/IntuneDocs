@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens if you unenroll your device from Intune? | Microsoft Intune
+title: What happens if you unenroll your Android device from Intune? | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -15,7 +15,7 @@ ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: arnab
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# What happens if you unenroll your device from Intune?
+# What happens if you unenroll your Android device from Intune?
 
 When you unenroll your Android device from Intune:
 
@@ -44,7 +44,8 @@ If your device is set up only to get company email, and you unenroll your device
 
 For instructions on how to unenroll, see [Unenroll your device from Intune by using the Company Portal app](unenroll-your-device-from-intune-android.md).
 
-If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
+
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

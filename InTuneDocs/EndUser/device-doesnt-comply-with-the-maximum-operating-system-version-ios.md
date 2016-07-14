@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Device doesn't comply with the maximum operating system version | Microsoft Intune
+title: iOS device doesn't comply with the maximum operating system version | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: ada223d7-2a80-4415-bd85-5bdf9eca7ace
 
 # optional metadata
 
-ROBOTS:
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: chrisgre
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Device doesn't comply with the maximum operating system version
+# iOS device doesn't comply with the maximum operating system version
 
 Your iOS device does not comply with your IT admin's policy for the maximum version of the operating system. Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 

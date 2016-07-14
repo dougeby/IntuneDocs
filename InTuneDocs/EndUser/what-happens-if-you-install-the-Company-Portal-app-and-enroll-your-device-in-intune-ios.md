@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens if you install the Company Portal app and enroll your device in Intune? | Microsoft Intune
+title: What happens if you install the Company Portal app and enroll your iOS or Mac OS X device in Intune? | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 
 # optional metadata
 
-ROBOTS:
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: esmich
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# What happens if you install the Company Portal app and enroll your device in Intune?
+# What happens if you install the Company Portal app and enroll your iOS or Mac OS X device in Intune?
 
 When you install the Company Portal app and enroll your iOS or Mac OS X device in Intune, you can use the Company Portal app to:
 

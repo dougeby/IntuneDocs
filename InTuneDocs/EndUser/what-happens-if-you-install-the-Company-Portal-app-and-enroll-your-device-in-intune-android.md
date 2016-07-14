@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens if you install the Company Portal app and enroll your device in Intune? | Microsoft Intune
+title: What happens if you install the Company Portal app and enroll your Android device in Intune? | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -15,7 +15,7 @@ ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: arnab
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# What happens if you install the Company Portal app and enroll your device in Intune?
+# What happens if you install the Company Portal app and enroll your Android device in Intune?
 
 When you install the Company Portal app and enroll your Android device in Intune, you can use the Company Portal app to:
 
@@ -60,7 +60,8 @@ When you enroll your Android device, you are giving your IT administrator permis
 
     -   Send any company app inventory updates (these updates do not contain personal information).
 
-If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
+
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

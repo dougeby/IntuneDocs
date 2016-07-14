@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the Microsoft Intune Exchange connector for hosted Exchange | Microsoft Intune
-description:
+description: Connect Intune to Office 365 Exchange service to support Exchange ActiveSync mobile device management (MDM).
 keywords:
 author: NathBarn
 manager: jeffgilb
@@ -18,7 +18,7 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

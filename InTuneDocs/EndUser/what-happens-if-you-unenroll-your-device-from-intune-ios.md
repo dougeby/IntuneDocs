@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens if you unenroll your device from Intune? | Microsoft Intune
+title: What happens if you unenroll your iOS device from Intune? | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 
 # optional metadata
 
-ROBOTS:
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: esmich
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# What happens if you unenroll your device from Intune?
+# What happens if you unenroll your iOS device from Intune?
 
 When you unenroll your iOS device from Intune:
 

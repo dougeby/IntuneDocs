@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use managed apps on your device | Microsoft Intune
+title: Use managed apps on your iOS device | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 
 # optional metadata
 
-ROBOTS:
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: maxles
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Use managed apps on your device
+# Use managed apps on your iOS device
 
 Managed apps are apps that your IT administrator can configure to help protect company data that you can access in that app. When you access company data in a managed app on your iOS device, you may notice that the app works a little differently from what you expect. For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Device doesn't comply with the maximum operating system version | Microsoft Intune
+title: Android device doesn't comply with the maximum operating system version | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -15,7 +15,7 @@ ms.assetid: 58f2a207-88cf-446c-ac9f-ad10a124e4e2
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: chrisgre
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Device doesn't comply with the maximum operating system version
+# Android device doesn't comply with the maximum operating system version
 
 Your Android device does not comply with your IT admin's policy for the maximum version of the operating system. Contact your IT administrator for help. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 

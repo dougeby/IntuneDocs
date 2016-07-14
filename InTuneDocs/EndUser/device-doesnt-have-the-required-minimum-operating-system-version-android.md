@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Device doesn't have the required minimum operating system version | Microsoft Intune
+title: Android device doesn't have the required minimum operating system version | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -15,7 +15,7 @@ ms.assetid: 3ef43ff5-8d6b-4be1-baa4-6fb6a7f3c312
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: chrisgre
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Device doesn't have the required minimum operating system version
+# Android device doesn't have the required minimum operating system version
 
 Your Android device doesn’t meet the minimum operating system version required by your IT department. Before updating your device, check the current operating system version by tapping **Settings** &gt; **About phone**, and then check to see if an update is available for your device by tapping **Settings**, and then finding the update option.
 

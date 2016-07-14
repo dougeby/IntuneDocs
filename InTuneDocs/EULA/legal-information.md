@@ -2,7 +2,7 @@
 # required metadata
 
 title: Legal Information | Microsoft Intune
-description:
+description: Read legal information about Microsoft Intune.
 keywords:
 author: robstackmsft
 manager: jeffgilb

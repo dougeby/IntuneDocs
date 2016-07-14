@@ -2,7 +2,7 @@
 # required metadata
 
 title: Encrypt your device | Microsoft Intune
-description:
+description: encrypt Android device
 keywords:
 author: staciebarker
 manager: jeffgilb
@@ -47,7 +47,7 @@ If you ever unenroll your phone, it will remain encrypted.
 
 **What to do**: Make sure that you've set a PIN or password on your device.
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)

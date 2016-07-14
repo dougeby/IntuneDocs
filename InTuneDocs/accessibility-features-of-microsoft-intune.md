@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accessibility Features | Microsoft Intune
-description:
+description: Learn about the features of Intune that make it more accessible to people with disabilities.
 keywords:
 author: robstackmsft
 manager: jeffgilb

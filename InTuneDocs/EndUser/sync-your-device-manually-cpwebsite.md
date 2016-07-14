@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sync your device manually | Microsoft Intune
+title: Sync your device manually using the Company Portal website | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: mamoriss
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Sync your device manually
+# Sync your device manually using the Company Portal website
 
 If your app installation is taking too long, you can try syncing your device manually, which might help to speed up the installation. Use the instructions below that match the type of device or Windows version you're using. Synchronizing your device to speed up app installations works only for the listed versions below.
 

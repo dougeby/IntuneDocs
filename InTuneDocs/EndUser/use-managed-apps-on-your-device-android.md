@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use managed apps on your device | Microsoft Intune
+title: Use managed apps on your Android device | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -15,7 +15,7 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: maxles
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Use managed apps on your device
+# Use managed apps on your Android device
 
 Managed apps are apps that your IT administrator can configure to help protect company data that you can access in that app. When you access company data in a managed app on your Android device, you may notice that the app works a little differently from what you expect. For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.
 
