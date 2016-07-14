@@ -2,7 +2,7 @@
 # required metadata
 
 title: Control Microsoft Passport settings on devices | Microsoft Intune
-description:
+description: Learn how Intune integrates with **Microsoft Passport for Work**; an alternative sign-in method that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
 keywords:
 author: robstackmsft
 manager: jeffgilb

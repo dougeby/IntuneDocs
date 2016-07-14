@@ -2,11 +2,11 @@
 # required metadata
 
 title: Monitor app deployments| Microsoft Intune
-description:
+description: Learn how to monitor apps you deployed with Intune.
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

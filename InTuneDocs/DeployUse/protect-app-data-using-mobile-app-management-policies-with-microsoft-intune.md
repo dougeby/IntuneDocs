@@ -2,7 +2,7 @@
 # required metadata
 
 title: Protect app data using mobile app management policies | Microsoft Intune
-description:
+description: This topic explains how  mobile app management policies can help protect your company data, prevent data loss, and keep personal and work information separate.
 keywords:
 author: karthikaraman
 manager: jeffgilb
