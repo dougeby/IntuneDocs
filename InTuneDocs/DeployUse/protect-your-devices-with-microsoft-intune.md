@@ -2,11 +2,11 @@
 # required metadata
 
 title: Protect devices | Microsoft Intune
-description:
+description: Learn about some of the ways that Intune can help you protect your devices against unauthorized access and other threats.
 keywords:
 author: Robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

@@ -2,11 +2,11 @@
 # required metadata
 
 title: Manage Internet access using managed browser policies| Microsoft Intune
-description:
+description: Deploy the managed browser application to restrict web browsing and the transfer of web data to other apps.
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

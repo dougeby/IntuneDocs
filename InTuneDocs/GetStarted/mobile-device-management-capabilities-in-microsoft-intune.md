@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mobile device management capabilities | Microsoft Intune
-description:
+description: Read this topic to find out how Intune can help you manage your mobile devices that you enroll with the service.
 keywords:
 author: robstackmsft
 manager: jeffgilb
