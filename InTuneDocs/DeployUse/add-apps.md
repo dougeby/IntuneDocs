@@ -6,7 +6,7 @@ description: Before you start deploying apps with Intune, take some time to fami
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 07/11/2016
+ms.date: 07/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,83 +26,45 @@ ms.suite: ems
 ---
 
 # Add apps with Microsoft Intune
-Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. These will help you to understand which apps you can deploy to which platform, and to understand the prerequisites that must be in place before you do so. You can deploy the following app types:
+Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. These will help you to understand which apps you can deploy to which platform, and to understand the prerequisites that must be in place before you do so.
 
-## Software installer
+## App types you can deploy
 
+### Software installer
 
-### **Windows Installer (&#42;.exe, &#42;.msi)**
-- This type of app must support silent installation with no user input. Your app documentation should include the relevant command-line options to silently install the app (for example, **/q**). A list of common command-line options can be found [here](https://support.microsoft.com/en-us/kb/227091).
-- Any additional files and folders that are required by the app’s setup program must be available from the location that you specify for the app setup files.
-- In most cases, Windows Installer (.msi) and Windows Installer Patch (.msp) files do not require any command-line arguments to be installed by Intune. Check your app documentation. If command-line arguments are required, they must be entered as Name=Value pairs (such as TRANSFORMS=custom_transform.mst).
+|App type|Details|
+|----------------|-------|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|This type of app must support silent installation with no user input. Your app documentation should include the relevant command-line options to silently install the app (for example, **/q**).<br>A list of common command-line options can be found [here](https://support.microsoft.com/en-us/kb/227091).<br><br>Any additional files and folders that are required by the app’s setup program must be available from the location that you specify for the app setup files.<br><br>In most cases, Windows Installer (.msi) and Windows Installer Patch (.msp) files do not require any command-line arguments to be installed by Intune. Check your app documentation.<br><br>If command-line arguments are required, they must be entered as Name=Value pairs (such as TRANSFORMS=custom_transform.mst).|
+|**App Package for Android (&#42;.apk file)**|To deploy Android apps, you must have a valid .apk package|
+|**App Package for iOS (&#42;.ipa file)**|To deploy iOS apps, you must have a valid .ipa package.<br><br>The .ipa package must be signed by Apple, and the expiration date indicated in the provisioning profile must be valid. Intune can distribute enterprise certificate iOS applications.<br>Not all Apple developer certificate apps are supported.<br><br>Your company must be registered for the iOS Developer Enterprise Program.<br><br>Make sure that your organization’s firewall allows access to the iOS provisioning and certification web sites.<br><br>You don't need to deploy a manifest  file (.plist) with the app.|
+|**Windows Phone app package (&#42;.xap, .appx, .appxbundle)**|To deploy apps, you'll need an enterprise mobile code-signing certificate.<br>For details, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).|
+|**Windows app package (.appx, .appxbundle)**|To deploy apps, you'll need an enterprise mobile code-signing certificate.<br>For details, see [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
+|**Windows Installer through MDM (&#42;.msi)**|Lets you create and deploy Windows Installer-based apps to enrolled PCs (MDM managed) that run Windows 10.<br /><br />You can only upload a single file with the extension .msi.<br><br>The file's product code and product version are used for app detection.<br><br>The default restart behavior of the app will be used. Intune does not control this.<br><br>Per user MSI packages will be installed for a single user.<br><br>Per machine MSI packages will be installed for all users on the device.<br><br>Dual mode MSI packages currently only install for all users on the device.<br><br>App updates are supported when the MSI product code of each version is the same.<br>
+All software installer app types are uploaded to your cloud storage space.
 
-This type of app is uploaded to your cloud storage space.
-### **App Package for Android (&#42;.apk file)**
-This type of app is uploaded to your cloud storage space.
-### **App Package for iOS (&#42;.ipa file)**
-- To deploy iOS apps, you must have a valid .ipa package.
-- The .ipa package must be signed by Apple, and the expiration date indicated in the provisioning profile must be valid. Intune can distribute enterprise certificate iOS applications. Not all Apple developer certificate apps are supported.
-- Your company must be registered for the iOS Developer Enterprise Program.
-- Make sure that your organization’s firewall allows access to the iOS provisioning and certification web sites.
-- A manifest  file (.plist) is not required to be deployed with the app.
-
-This type of app is uploaded to your cloud storage space.
-
-Currently, end users cannot install corporate apps directly from the Intune Company Portal app for iOS. This is due to restrictions placed on apps that are published in the iOS App Store (see [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)). Users can access corporate apps (including managed App Store apps and line-of-business app packages) by launching the Company Portal app on their device and tapping the Company Apps tile, which will open the browser and redirect them to the Intune Web Portal.
-
-### **Windows Phone app package (&#42;.xap, .appx, .appxbundle)**
-- To deploy apps, you'll need an enterprise mobile code-signing certificate. For details, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
-
-This type of app is uploaded to your cloud storage space.
-
-See below for information about installing line of business Universal Windows Platform (UWP) apps with Intune.
-
-### **Windows app package (.appx, .appxbundle)**
-- To deploy apps, you'll need an enterprise mobile code-signing certificate. For details, see [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).
-
-This type of app is uploaded to your cloud storage space.
-### **Windows Installer through MDM (&#42;.msi)**
-This installer type lets you create and deploy Windows Installer-based apps to enrolled PCs that run Windows 10.<br /><br />The following considerations apply when you use this installer type:
-- You can only upload a single file with the extension .msi.
-- The file's product code and product version are used for app detection.
-- The default restart behavior of the app will be used. Intune does not control this.
-- Per user MSI packages will be installed for a single user.
-- Per machine MSI packages will be installed for all users on the device.
-- Dual mode MSI packages currently only install for all users on the device.
-- App updates are supported when the MSI product code of each version is the same.
-
-This type of app is uploaded to your cloud storage space.
-## **External Link**
+### **External Link**
 Used when you have a:
 - **URL** that lets users download an app from an app store.
 - **Link** to a web-based app that runs from the web browser.
 
 Apps based on external links are not stored in your Intune cloud storage space.
-## **Managed iOS app from the app store**
+### **Managed iOS app from the app store**
 Lets you manage and deploy iOS apps that are free of charge from the app store. Also lets you associate [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) with [compatible apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) and review their status in the administrator console.<br /><br />Managed iOS apps are not stored in your Intune cloud storage space.
+
 > [!TIP]
 > Options for mobile devices are not available until you [set the Mobile Device Management Authority](get-ready-to-enroll-devices-in-microsoft-intune.md) to Intune.
 
 ## The Intune software publisher
-The **Microsoft Intune Software Publisher** starts when you add or modify apps from the Microsoft Intune administrator console. From the publisher, you select and configure a software installer type that will either upload apps (programs for computers or apps for mobile devices) to be stored in Intune cloud storage, or link to an online store or web application.
+The **Microsoft Intune Software Publisher** starts when you add or modify apps from the Intune administrator console. From the publisher, you select and configure a software installer type that will either upload apps (programs for computers or apps for mobile devices) to be stored in Intune cloud storage, or link to an online store or web application.
 
-### Requirements
-Before you begin to use the Microsoft Intune Software Publisher, you must install the full version of [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). After installation, you might have to restart your computer before the Software Publisher will open correctly.
+Before you begin to use the software publisher, you must install the full version of [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). After installation, you might have to restart your computer before the software publisher will open correctly.
 
 ## Cloud storage space
-All apps that you create using the software installer installation type (for example, a line of business app) are  packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. A paid subscription includes 20 GB, with the option to purchase additional storage.
+All apps that you create using the software installer installation type (for example, a line of business app) are  packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. Your full subscription includes 20GB of storage space.
 
-You can see how much space you are using and purchase more storage in the **Storage Use** node of the **Admin** workspace.
+You can see how much space you are using in the **Storage Use** node of the **Admin** workspace.
 
-These rules apply to purchasing additional cloud-based storage for Intune:
-
--   You must have an active paid subscription in order to purchase additional storage.
-
--   Only billing administrators or global administrators for your Microsoft Online Service can purchase additional storage through the Office 365 Management Portal. To add, delete, or manage these administrators, you must be a global administrator and sign in to the Office 365 Management Portal.
-
--   If you are a volume licensing customer who has purchased Intune or the Microsoft Intune Add-on through the enterprise agreement, contact your Microsoft Account Manager or Microsoft Partner for pricing information and to purchase additional storage.
-
-#### Requirements for cloud storage space
+### Requirements for cloud storage space
 
 -   Ensure all app installation files are in the same folder.
 
