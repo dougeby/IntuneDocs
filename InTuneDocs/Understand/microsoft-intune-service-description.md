@@ -53,7 +53,8 @@ To learn about changes in the  Intune service, see [What's new in Microsoft Intu
 
 Important service updates will also be communicated to you in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) Message Center. If you install the companion [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), you can receive notifications on your mobile device.
 
-> [!NOTE] You can monitor Intune service health in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx). Choose **Service Health** in the left pane.  
+> [!NOTE]
+> You can monitor Intune service health in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx). Choose **Service Health** in the left pane.  
 
 Here are the types of notices Microsoft provides about the Intune service:
 -   To help you plan for service changes, we notify you at least 30-90 days prior to the service upgrade, depending on the impact of the change . This will happen using in-product communication channels like notice board alerts. These changes may include:
