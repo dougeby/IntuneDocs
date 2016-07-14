@@ -2,11 +2,11 @@
 # required metadata
 
 title: Windows PC management capabilities | Microsoft Intune
-description:
+description: Learn about the capabilities of Intune when you manage Windows PCs with the Intune client software.
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
