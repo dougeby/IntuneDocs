@@ -33,19 +33,23 @@ If a phone that has been enrolled in Intune is lost or stolen, you can reset it 
 > [!WARNING]
 > Resetting a device to factory defaults removes both your personal and work information from your device. For more about what happens when you reset your device, see [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md).
 
-To reset your device using the Company Portal app:
+## To reset your device using the Company Portal app
 
-1.  In the Company Portal app, under **My Devices**,  select the device you want to erase.
+1.  In your browser, open your Company Portal, and sign in to your work account.
 
-2.  Tap  **Reset** &gt; **Reset**.
+2.  Under **My Devices**, select the lost or stolen device.
 
-To reset your device using the Company Portal website, use these steps, or watch this [video](http://aka.ms/jhdjak):
+3.  Tap **Reset** &gt; **Reset**.
+
+## To reset your device using the Company Portal website
+
+You can use the following steps, or watch this [video](http://aka.ms/jhdjak).
 
 1.  In the [Company Portal website](http://portal.manage.microsoft.com), select the device you want to erase.
 
 2.  Tap  **Reset** &gt; **Reset**.
-> [!NOTE]
-> If you are unable to reset your lost or stolen device, ask your IT administrator to reset it for you. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+
+If you are unable to reset your lost or stolen device, ask your IT administrator to reset it for you. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 ### See also
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
