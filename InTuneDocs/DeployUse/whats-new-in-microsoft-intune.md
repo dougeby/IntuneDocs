@@ -72,6 +72,10 @@ To improve performance and scale, Intune no longer displays all Device Enrollmen
 	Only use DEM accounts when user-less enrollment for shared devices is unavailable. For more information, see [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 <!---TFS 1233681--->
 
+## Change of names for Windows features
+- [Microsoft Passport for Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) is now known as **Windows Hello for Business**.
+- [Enterprise data protection](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) is now known as **Windows Information Protection**.
+
 ## What's coming
 
 ### Cloud roadmap
