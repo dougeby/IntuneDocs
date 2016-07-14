@@ -28,5 +28,6 @@ ms.suite: ems
 # How to reconnect a compromised Android device
 Your IT admin detected that you are using a rooted device. "Rooted" means that the device has been changed to enable access to the operating system, which can compromise security and might be a threat to your company resources. When this happens, your device can no longer access company resources.
 
-Contact your IT administrator to help you reconnect your device. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
+
 

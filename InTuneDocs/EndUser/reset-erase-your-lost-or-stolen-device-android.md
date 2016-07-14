@@ -28,18 +28,30 @@ ms.suite: ems
 
 # Reset (erase) your lost or stolen Android device
 
-If your Android phone is lost or stolen, you can reset it to factory defaults from the Company Portal app or website. For instructions using the Company Portal app, use the following steps, or watch this [video](http://aka.ms/ly1x17). You can also [reset your device using the Company Portal website](reset-your-device-cpwebsite.md).
+If a phone that has been enrolled in Intune is lost or stolen, you can reset it to factory default settings by using the Company Portal app from a different device or by using the [Company Portal website](http://portal.manage.microsoft.com).
 
 To learn about what happens if you reset your device, see [What happens if you reset your device using the Company Portal](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
 > [!WARNING] 
 > Resetting a device to factor defaults removes both your personal and work or school information from it.
 
+## To reset your device from the Company Portal app
+
 1.  In your browser, open the [Company Portal website](http://portal.manage.microsoft.com), and sign in to your work or school account.
 
 2.  Tap **My Devices** and select the name of the lost of stolen  device.
 
 3.  Click **Reset** &gt; **Reset**.
+
+## To reset your device using the Company Portal website
+
+You can use the following steps, or watch this [video](https://www.youtube.com/watch?v=6e73o7f8gxE&feature=youtu.be).
+
+1.  In your browser, open your [Company Portal website](http://portal.manage.microsoft.com), and sign in to your work account.
+
+2.  Under **My Devices**, select the lost or stolen device.
+
+3.  Tap **Reset** &gt; **Reset**.
 
 If you are unable to reset your lost or stolen device, ask your IT administrator to reset it for you. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
