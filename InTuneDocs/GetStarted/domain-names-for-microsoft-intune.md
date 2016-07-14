@@ -48,7 +48,7 @@ You cannot rename or remove that initial domain name. However, you can add, veri
 	- **Register.com users**: Follow the [step-by-step instructions](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) to create the TXT record.
 
 	> [!TIP] 
-	> Make sure to create a DNS alias (CNAME) for [Windows devices enrollment](https://docs.microsoft.com/en->us/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune), while making changes in your DNS hosting provider.
+	> Make sure to create a DNS alias (CNAME) for [Windows devices enrollment](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune), while making changes in your DNS hosting provider.
 
 In a hybrid cloud scenario, after you added your custom domain name, and it has been verified that your organization owns it, you can keep managing user accounts in your on-premises Active Directory, then synchronize it with Azure AD.
 
