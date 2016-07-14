@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Create and deploy mobile app management policies with Microsoft Intune
-Mobile app management (MAM) policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how MAM policies work and the scenarios supported by Intune MAM policies, read the [protect app data using mobile app managment policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) topic.
+Mobile app management (MAM) policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how MAM policies work and the scenarios supported by Intune MAM policies, read the [protect app data using mobile app management policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) topic.
 
 This topic describes the process of creating a MAM policy in the **Azure portal**. The Azure portal is the new admin console for creating MAM policies, and we recommend that you use this portal to create MAM  policies. Azure portal supports the following MAM scenarios:
 - Devices enrolled in Intune
@@ -44,7 +44,6 @@ MAM policies created in the Intune admin console cannot be imported into the Azu
 To see a list of policy settings supported for Android and iOS platforms, select one of the following:
 
 > [!div class="op_single_selector"]
-
 - [iOS policies](ios-mam-policy-settings.md)
 - [Android policies](android-mam-policy-settings.md)
 
@@ -57,7 +56,7 @@ Before creating a MAM policy, review the [pre-requisites and support](get-ready-
     > [!TIP]
     > If this is the first time you are using the Azure portal, read [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) first to get familiar with the portal.
 
-2.  In the **Settings** blade, choose **App policy**.  This opens the **App policy** blade where you'll  create new policies and edit existing policies.
+2.  In the **Settings** blade, choose **App policy**.  This opens the **App policy** blade where you'll create new policies and edit existing policies.
 
     ![Screenshot of the App policy blade showing a list of existing policies](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
@@ -165,8 +164,8 @@ To see the effect of the changes immediately the end user will have to log out o
 To see a full list of the policy setting for iOS and Android, select one of the following:
 
 > [!div class="op_single_selector"]
-  - [iOS policies](ios-mam-policy-settings.md)
-  - [Android policies](android-mam-policy-settings.md)
+- [iOS policies](ios-mam-policy-settings.md)
+- [Android policies](android-mam-policy-settings.md)
 
 ## Next steps
 [Monitor compliance and user status](monitor-mobile-app-management-policies-with-microsoft-intune.md)
