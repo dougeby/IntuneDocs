@@ -2,8 +2,8 @@
 # required metadata
 
 title: Other options and extras for Intune evaluation subscriptions | Microsoft Intune
-description:
-keywords:
+description: How to create device groups and user groups when you sign up for a free, 30-day evaluation of Intune
+keywords: Describes alerts, notification, and reports, plus general Intune capabilities that you need to know about when you sign up for a free, 30-day evaluation of Intune
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016

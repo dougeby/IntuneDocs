@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add users to your 30-day evaluation of Microsoft Intune | Microsoft Intune
-description:
+description: How to add users, individually or in bulk, when you sign up for a free, 30-day evaluation of Intune
 keywords:
 author: Staciebarker
 manager: jeffgilb
