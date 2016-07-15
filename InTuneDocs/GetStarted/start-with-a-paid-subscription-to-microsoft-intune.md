@@ -32,13 +32,13 @@ This quick start guide leads you through the steps of setting up a paid subscrip
 >[!NOTE]
 >This article focuses on setting up Intune as a standalone service. Alternatively, if you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [extend Configuration Manager to manage mobile devices](https://technet.microsoft.com/library/jj884158.aspx). You can do this by connecting Intune with Configuration Manager in a hybrid mobile device management (MDM) deployment.
 
-The steps in this quick start guide share many of the same steps that are in the [Intune evaluation guide](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). However, after your evaluation and when you are ready to start managing your mobile devices, you need to address several additional requirements. These will vary, depending on your current network infrastructure and business requirements, which include:
+The steps in this quick start guide share many of the same steps that are in the [Intune evaluation guide](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). However, when you finish your evaluation and are ready to start managing your mobile devices, you need to address several additional requirements:
 
--   Synchronizing on-premises Active Directory accounts with Intune and Azure Active Directory.
+-   Synchronize on-premises Active Directory accounts with Intune and Azure Active Directory.
 
--   Updating public domain and DNS service records with your domain registrar.
+-   Update public domain and DNS service records with your domain registrar.
 
--   Customizing Intune features for production use.
+-   Customize Intune features for production use.
 
 >[!TIP]
 >If you purchase at least 150 licenses for Microsoft Intune in an eligible plan, you can use the *FastTrack Center Benefit*, which is a service where Microsoft specialists work with you to get your environment ready for Intune. See [Microsoft Intune Service Benefit Description](https://technet.microsoft.com/library/mt228265.aspx).
