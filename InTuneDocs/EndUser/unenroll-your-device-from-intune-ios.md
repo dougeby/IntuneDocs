@@ -30,7 +30,10 @@ ms.suite: ems
 
 When you unenroll your iOS device from Intune, your device will not longer be able to access company resources and will no longer be managed by Intune.
 
-To unenroll your device from Intune, use these steps or watch this [video](http://aka.ms/kfz8j1):
+To unenroll your device from Intune, use these steps or watch this video:
+
+<iframe width="560" height="315" src="http://aka.ms/kfz8j1" frameborder="0" allowfullscreen></iframe> 
+
 
 1.  In the Company Portal app, under **My Devices**,  select the device you want to unenroll.
 

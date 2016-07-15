@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune quick start guide | Microsoft Intune
-description:
+description: Requirements and prerequisites for starting to use your Intune subscription 
 keywords:
 author: Staciebarker
 manager: jeffgilb
