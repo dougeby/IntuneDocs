@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll mobile devices and install an app | Microsoft Intune
-description:
+description: Explains how to enroll mobile devices and install an app on an Intune-enrolled device
 keywords:
 author: Staciebarker
 manager: jeffgilb
