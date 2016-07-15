@@ -36,6 +36,9 @@ As with devices, at some point, you want or need to [retire apps](retire-apps-us
 
 **Full wipe** restores a device to its factory default settings, removing all company and user data and settings. The device is removed from Intune. Full wipe is useful for resetting a device before giving it to a new user or instances where the device has been lost or stolen.  **Be careful about selecting full wipe. Data on the device cannot be recovered**.
 
+> [!Warning]
+> Windows 10 RTM devices (i.e. devices earlier than the Windows 10 version 1511) with less than 4 GB of RAM might become inaccessible if wiped. To access a Windows 10 device that has become unresponsive, you can boot the device from a USB drive or similar workaround.
+
 ## Selective wipe
 
 **Selective wipe** removes company data including mobile app management (MAM) data where applicable, settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device. The device is removed from Intune. The following tables describe by platform what data is removed and the effect on data that remains on the device after a selective wipe.
