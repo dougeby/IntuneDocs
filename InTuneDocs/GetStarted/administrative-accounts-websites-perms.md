@@ -2,7 +2,7 @@
 # required metadata
 
 title: Administrative accounts, websites, and permissions in Microsoft Intune | Microsoft Intune
-description:
+description: administrative accounts permissions websites
 keywords:
 author: Staciebarker
 manager: jeffgilb

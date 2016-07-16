@@ -42,8 +42,6 @@ Then use one or more of the following methods to get the client installed:
 
 -   [To automatically deploy the client software by using Group Policy](#to-automatically-deploy-the-client-software-by-using-group-policy)
 
--   [How users can self-enroll their computers](#how-users-can-self-enroll-their-computers)
-
 -   [Install the Microsoft Intune client software as part of an image](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
 If you no longer need to manage a computer with Intune, you can retire the computer, which also removes the client software from the computer. For more information, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).

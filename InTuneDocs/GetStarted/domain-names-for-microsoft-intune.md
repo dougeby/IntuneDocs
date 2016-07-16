@@ -2,7 +2,7 @@
 # required metadata
 
 title: Domain names for Microsoft Intune | Microsoft Intune
-description:
+description: add domain name for Intune
 keywords:
 author: andredm7
 manager: swadhwa
