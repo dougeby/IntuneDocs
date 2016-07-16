@@ -7,4 +7,4 @@
   - PCs running Windows 10 (Home, Pro, Education, and Enterprise versions)
   - Mac OS X 10.9 and later
 
-The [Intune software client](../deploy-use/manage-windows-pcs-with-microsoft-intune.md) can manage Windows PC running Windows 7 operating system and later. Customers with Enterprise Management Suite (EMS) can also [use Azure Active Directory (AAD) to register Windows 10 devices](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview).
+The [Intune software client](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) can manage Windows PC running Windows 7 operating system and later. Customers with Enterprise Management Suite (EMS) can also [use Azure Active Directory (AAD) to register Windows 10 devices](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview).

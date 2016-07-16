@@ -58,7 +58,7 @@ The following table shows enrollment methods for corporate-owned device enrollme
 **Enrollment methods for corporate-owned devices**
 
 ### BYOD
-“Bring Your Own Device.” Users install the Company Portal app and enroll their device. Enrolling a device with the Company Portal will work place join the device. Enrolling iOS devices with the Company Portal requires an Apple ID. BYOD does not require additional configuration for corporate-owned devises. See steps to [set up device management](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management.md). ([Back to the table](#overview-of-device-enrollment-methods))
+“Bring Your Own Device.” Users install the Company Portal app and enroll their device. Enrolling a device with the Company Portal will work place join the device. Enrolling iOS devices with the Company Portal requires an Apple ID. BYOD does not require additional configuration for corporate-owned devises. See steps to [set up device management](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management). ([Back to the table](#overview-of-device-enrollment-methods))
 
 ### DEM
 Device enrollment manager. Admin creates DEM accounts to manage corporate-owned devices. Managers can then install the Company Portal and enroll many user-less devices. Learn more about [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Back to the table](#overview-of-device-enrollment-methods))
