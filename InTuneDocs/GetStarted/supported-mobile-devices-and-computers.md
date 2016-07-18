@@ -2,7 +2,7 @@
 # required metadata
 
 title: Supported mobile devices and computers | Microsoft Intune
-description:
+description: Mobile devices and computers that Intune supports
 keywords:
 author: Staciebarker
 manager: jeffgilb

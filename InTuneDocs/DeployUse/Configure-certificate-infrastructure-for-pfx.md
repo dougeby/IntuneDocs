@@ -1,6 +1,6 @@
 ---
 title: Configure certificate infrastructure for PFX | Microsoft Intune
-description:
+description: Create and deploy .PFX certificate profiles.
 keywords:
 author: nbigman
 manager: jeffgilb
@@ -24,7 +24,7 @@ ms.suite: ems
 
 ---
 # Configure certificate infrastructure
-This topic describes what you need in order to create and deploy certificate profiles.
+This topic describes what you need in order to create and deploy .PFX certificate profiles.
 
 To do any certificate-based authentication in your organization, you need an Enterprise Certification Authority.
 

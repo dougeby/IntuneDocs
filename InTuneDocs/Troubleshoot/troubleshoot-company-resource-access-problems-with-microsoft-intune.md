@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot company resource access problems | Microsoft Intune
-description:
+description: Error and status codes in this topic to help you troubleshoot resource access problems.
 keywords:
 author: Nbigman
 manager: jeffgilb

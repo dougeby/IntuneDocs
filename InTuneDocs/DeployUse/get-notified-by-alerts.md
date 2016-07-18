@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get notified by alerts | Microsoft Intune
-description:
+description: Learn how alerts keep you in touch with what's happening in Microsoft Intune.
 keywords:
 author: Nbigman
 manager: jeffgilb

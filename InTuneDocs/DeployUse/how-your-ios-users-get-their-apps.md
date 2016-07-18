@@ -2,7 +2,7 @@
 # required metadata
 
 title: How your iOS users get their apps | Microsoft Intune
-description:
+description: Methods for making iOS apps available to end users
 keywords:
 author: Staciebarker
 manager: jeffgilb
