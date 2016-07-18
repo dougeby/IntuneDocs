@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot software updates | Microsoft Intune
-description:
+description: Solve software update problems in Microsoft Intune.
 keywords:
 author: Nbigman
 manager: jeffgilb
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Troubleshoot software updates in Microsoft Intune
-Use the information in this section to help you solve software update problems in Microsoft intune.
+Use the information in this section to help you solve software update problems in Microsoft Intune.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 

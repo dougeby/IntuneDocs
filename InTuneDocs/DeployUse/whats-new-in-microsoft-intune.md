@@ -95,6 +95,9 @@ In addition to changes in group management, the following functionality will be 
 
 More information on how these deprecations can be mitigated will be released in August.
 
+
+
+
 ### Cloud roadmap
 Keep informed about upcoming developments for Intune with the [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
 
@@ -131,13 +134,13 @@ Intune notification rules define who an email alert will be sent to from Intune.
 	- In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
 	- Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
 	- Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
+
 --->
+
 
 
 ## Previous Intune releases
 If you want to see what's released in Intune during the last six months, they are listed in the [Previous Intune releases](previous-intune-releases.md) article.
-
-
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)

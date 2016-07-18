@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure access to corporate email using email profiles | Microsoft Intune
-description:
+description: Email profile settings can be used to configure email access settings for specific email clients on mobile devices.  
 keywords:
 author: Nbigman
 manager: jeffgilb
@@ -31,7 +31,7 @@ Many mobile platforms include a *native* email client that ships as part of the 
 If you need additional data loss prevention (DLP), choose [Conditional access](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), which controls access to the user's
  mailbox for any email client, including native email clients.
 
-Email profile settings can be used to configure email access settings for specific email clients on mobile devices.   Most mobile platforms include a *native* email client that ships as part of the operating system.  On supported platforms the native email clients can be configured by Microsoft Intune to enable users to access their corporate email on the personal devices without any setup.  
+Email profile settings can be used to configure email access settings for specific email clients on mobile devices. Most mobile platforms include a *native* email client that ships as part of the operating system.  On supported platforms the native email clients can be configured by Microsoft Intune to enable users to access their corporate email on the personal devices without any setup.  
 
 IT administrators or users may also choose to install alternative email clients, for example, Microsoft Outlook for Android or iOS.  These email clients may not support email profiles and are not configurable using Microsoft Intune email profiles.  
 

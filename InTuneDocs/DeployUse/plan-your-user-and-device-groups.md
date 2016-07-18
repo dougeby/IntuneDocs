@@ -2,7 +2,7 @@
 # required metadata
 
 title: Plan your user and device groups | Microsoft Intune
-description:
+description: Plan groups to meet you organizational needs.
 keywords:
 author: nbigman
 manager: jeffgilb
