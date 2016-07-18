@@ -95,6 +95,8 @@ In addition to changes in group management, the following functionality will be 
 
 More information on how these deprecations can be mitigated will be released in August.
 
+### Addition of 'Notifications' to the Company Portal for Android
+We are releasing an update to the Company Portal for Android in August that will introduce a new **Notifications** icon on the homepage. Tapping this icon will access the **Notifications** page that will show your end user all the items that require attention in the Company Portal app such as device non-compliance, enrollment update, and enrollment activation. If you also use the iOS Company Portal app, you’ll already see the notifications experience. With the introduction of the **Notifications** page, you will not see the **Company Access Setup** page every time you launch or resume the Company Portal for Android as long as the device is already enrolled. We hear many of you have created end-user guidance and appreciate advanced notice when your guidance/screen shots may need updating. Please update your documentation to reflect the upcoming change in experience. Find updated screenshots here: https://aka.ms/androidcpupdate.  
 
 
 
