@@ -30,7 +30,9 @@ ms.suite: ems
 
 When you unenroll your Android device from Intune, your device will no longer be able to access company resources.  For more about what happens when you unenroll, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
-To unenroll your device from Intune and uninstall the Company Portal app, follow these steps, or watch this [video](http://aka.ms/gyq2du):
+To unenroll your device from Intune and uninstall the Company Portal app, follow these steps, or watch this video:
+
+<iframe width="560" height="315" src="http://aka.ms/gyq2du" frameborder="0" allowfullscreen></iframe> 
 
 1.  Sign in to the Company Portal app.
 

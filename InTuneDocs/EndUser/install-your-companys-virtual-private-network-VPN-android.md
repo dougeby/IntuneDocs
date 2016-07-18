@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 7/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,9 @@ If your IT administrator has configured a VPN application to enable you to  conn
 
 2.  In the **Play Store**, click **INSTALL** and follow the prompts to install the app.
 
-3.  Tap **Install corporate VPN profile** and follow the prompts to accept and activate the app.
+3.  Tap **Install corporate VPN profile** and follow the prompts to accept and activate the app. The installation steps may be slightly different, depending on which VPN provider your company is using.
+
+
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 

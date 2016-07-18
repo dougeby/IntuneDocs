@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune integration with Microsoft cloud services and products | Microsoft Intune
-description:
+description: Intune integration with Microsoft cloud services and products and with other Microsoft products
 keywords:
 author: Staciebarker
 manager: jeffgilb
