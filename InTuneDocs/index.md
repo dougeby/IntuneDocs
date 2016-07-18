@@ -2,24 +2,22 @@
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
 
-title: Microsoft Intune Documentation
+title: Intune Documentation - MDM documentation | Microsoft Docs
 description: Technical documentation for Microsoft Intune - Mobile Device and Application Management
 keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage
-ms.prod:
 ms.service: microsoft-intune
-ms.technology:
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 
 ---
-# Microsoft Intune Documentation
+# Intune Documentation
 <article id="main">
     <section id="hero-content">
-      <h1>Microsoft Intune Documentation</h1>
+      <h1>Intune Documentation</h1>
       <h2>Learn how to deploy and manage Microsoft Intune, a mobile device and application management service.</h2>
       <h3>Manage Intune with Configuration Manager? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">View Configuration Manager Documentation &rarr;</a></h3>
     </section>
