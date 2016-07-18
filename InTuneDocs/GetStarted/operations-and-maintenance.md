@@ -2,7 +2,7 @@
 # required metadata
 
 title: Operations and maintenance | Microsoft Intune
-description:
+description: Recommendations for the operations and maintenance phase of an Intune deployment.
 keywords:
 author: Nbigman
 manager: jeffgilb

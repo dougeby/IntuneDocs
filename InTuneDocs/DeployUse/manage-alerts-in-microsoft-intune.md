@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage alerts | Microsoft Intune
-description:
+description: Use the Alerts workspace to assess the overall health of devices in your organization.
 keywords:
 author: Nbigman
 manager: jeffgilb

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Monitoring and reports | Microsoft Intune
-description:
+description: Use monitoring and reports to monitor the status of devices in your organization. 
 keywords:
 author: Nbigman
 manager: jeffgilb
