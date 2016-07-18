@@ -81,7 +81,7 @@ To improve performance and scale, Intune no longer displays all Device Enrollmen
 
 ## What's coming
 
-- **Minimum iOS Managed Browser version updated to 8.0**<br/>
+- **Minimum iOS Managed Browser version is being updated to 8.0**<br/>
 In August, Intune will release an updated Microsoft Intune Managed Browser app for iOS that will only support devices running iOS 8.0 or later. While iOS 7.1 devices will still be able to use the existing Managed Browser app, please encourage your users to update to iOS 8.0 or later to access and take full advantage of new Managed Browser features.  
 <!---TFS 1313253--->
 
@@ -115,12 +115,8 @@ Intune notification rules define who an email alert will be sent to from Intune.
 	- Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
 	- Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
 
-
-
 ## Previous Intune releases
 If you want to see what's released in Intune during the last six months, they are listed in the [Previous Intune releases](previous-intune-releases.md) article.
-
-
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
