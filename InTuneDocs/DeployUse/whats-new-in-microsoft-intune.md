@@ -81,7 +81,7 @@ To improve performance and scale, Intune no longer displays all Device Enrollmen
 
 ## What's coming
 
-- **Minimum iOS Managed Browser version updated to 8.0**<br/>
+- **Minimum iOS Managed Browser version is being updated to 8.0**<br/>
 In August, Intune will release an updated Microsoft Intune Managed Browser app for iOS that will only support devices running iOS 8.0 or later. While iOS 7.1 devices will still be able to use the existing Managed Browser app, please encourage your users to update to iOS 8.0 or later to access and take full advantage of new Managed Browser features.  
 <!---TFS 1313253--->
 
