@@ -115,12 +115,8 @@ Intune notification rules define who an email alert will be sent to from Intune.
 	- Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
 	- Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
 
-
-
 ## Previous Intune releases
 If you want to see what's released in Intune during the last six months, they are listed in the [Previous Intune releases](previous-intune-releases.md) article.
-
-
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
