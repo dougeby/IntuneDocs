@@ -2,7 +2,7 @@
 # required metadata
 
 title: Network infrastructure requirements | Microsoft Intune
-description:
+description: Intune firewall, port, domain, and proxy server requirements
 keywords:
 author: Staciebarker
 manager: jeffgilb

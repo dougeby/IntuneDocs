@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up email access for iOS devices using Microsoft Intune | Microsoft Intune
-description:
+description: set up email access for iOS devices using Intune
 keywords:
 author: Staciebarker
 manager: jeffgilb

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Release notes for Microsoft Intune | Microsoft Intune
-description:
+description: Intune release notes
 keywords:
 author: Staciebarker
 manager: jeffgilb
