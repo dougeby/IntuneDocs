@@ -77,6 +77,7 @@
 ## [Configure apps](update-apps-using-microsoft-intune.md)
 ### [Update apps ](update-apps-using-microsoft-intune.md)
 ### [iOS app configuration policies](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [iOS mobile app provisioning profiles](ios-mobile-app-provisioning-profiles.md)
 ### [Manage Internet access](manage-internet-access-using-managed-browser-policies.md)
 
 
