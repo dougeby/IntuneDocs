@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft Intune Company Portal | Microsoft Intune
-description:
+description: set up Intune Company Portal
 keywords:
 author: Staciebarker
 manager: jeffgilb

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot Endpoint Protection | Microsoft Intune
-description:
+description: Solve problems while using Microsoft Intune endpoint protection.
 keywords:
 author: Nbigman
 manager: jeffgilb

@@ -2,7 +2,7 @@
 # required metadata
 
 title: VPN connections | Microsoft Intune
-description:
+description: Use VPN profiles to deploy VPN settings to users and devices in your organization.
 keywords:
 author: Nbigman
 manager: jeffgilb
