@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customize the Company Portal | Microsoft Intune
-description:
+description: Explains how to customize the Company Portal for your Intune subscription
 keywords:
 author: Staciebarker
 manager: jeffgilb

@@ -55,7 +55,7 @@ The information in this section will help you with actions you can take after yo
 
 The information in this section will help you fix issues you might encounter when your iOS device is enrolled in Intune.
 
-- [How to reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device)
+- [How to reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device.md)
 - [Send errors to your IT admin](send-errors-to-your-it-admin-ios.md)
 - [You get an error while using the Company Portal app](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [You see errors while trying to enroll your device in Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)

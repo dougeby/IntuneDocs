@@ -2,7 +2,7 @@
 # required metadata
 
 title: Common ways to use Intune | Microsoft Intune
-description:
+description: Lists six of the most common tasks that users want Intune to do for them
 keywords:
 author: jeffgilb
 manager: jeffgilb

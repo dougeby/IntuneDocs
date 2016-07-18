@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sign up or sign in to Intune | Microsoft Intune
-description:
+description: How to sign up for an Intune subscription or how to sign in if you already have a subscription
 keywords:
 author: Staciebarker
 manager: jeffgilb

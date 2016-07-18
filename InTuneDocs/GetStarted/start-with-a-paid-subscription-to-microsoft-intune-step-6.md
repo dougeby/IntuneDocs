@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create policies and publish an app | Microsoft Intune
-description:
+description: Explains how to create policies and publish an example app for your Intune subscription
 keywords:
 author: Staciebarker
 manager: jeffgilb
@@ -30,11 +30,6 @@ Intune policies provide settings that help you control the security settings on 
 
 You can perform two types of app installations using Intune. The first is a **required install**, which automatically deploys the app to managed computers. The other is an **available install**, which deploys the app, or a link to the app, to the Intune Company Portal so that users can choose whether to install it on their computers or on their mobile devices.
 
-<!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
-
-Before using Intune to deploy apps, make sure that you have the appropriate licenses to publish, distribute, and use the app. The Licenses workspace lets you add and manage license agreement information for apps or software purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can then create license reports that display managed license usage information throughout your company to stay informed of license usage activity.
--->
-
 The following steps will help you set up a mobile device configuration policy, a Windows PC firewall policy, and configure Skype as an available install for mobile devices after they're enrolled.
 
 > [!TIP]
@@ -52,6 +47,10 @@ The following steps will help you set up a mobile device configuration policy, a
 3.  In the **Tasks** list on the **Policy Overview** page, choose **Add Policy**.
 
 4.  In the policy list, expand the platform you want to create a policy for, then choose **General Configuration** > **Create and Deploy a Policy with the Recommended Settings** > **Create Policy**.
+
+> [!NOTE]
+> There are no recommended settings for device configuration policies, because there are many options you can choose from. You need to create a custom device configuration policy.
+
 
 5.  When prompted to **Select the groups to which you want to deploy this policy**, choose a group from the list of available groups, choose **Add** > **OK**.
 

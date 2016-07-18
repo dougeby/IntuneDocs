@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune evaluation guide | Microsoft Intune
-description:
+description: Introduction and prerequisites on how to set up a free, 30-day evaluation of Intune
 keywords:
 author: Staciebarker
 manager: jeffgilb
