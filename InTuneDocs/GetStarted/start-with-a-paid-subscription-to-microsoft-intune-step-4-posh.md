@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage Intune licenses using PowerShell | Microsoft Intune
-description:
+description: Manage Intune licenses using PowerShell
 keywords:
 author: Staciebarker
 manager: jeffgilb

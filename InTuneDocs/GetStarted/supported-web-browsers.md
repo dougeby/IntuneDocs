@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft Intune supported web browsers | Microsoft Intune
-description:
+description: Web browsers that Intune supports
 keywords:
 author: Staciebarker
 manager: jeffgilb
