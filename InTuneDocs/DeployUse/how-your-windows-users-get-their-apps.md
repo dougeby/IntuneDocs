@@ -2,7 +2,7 @@
 # required metadata
 
 title: How your Windows users get their apps | Microsoft Intune
-description:
+description: Methods for making Windows apps available to end users
 keywords:
 author: Staciebarker
 manager: jeffgilb

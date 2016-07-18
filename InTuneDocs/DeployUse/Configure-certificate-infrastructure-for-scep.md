@@ -1,6 +1,6 @@
 ---
 title: Configure certificate infrastructure for SCEP |Microsoft Intune
-description:
+description: Infrastructure for creating and deploying SCEP certificate profiles.
 keywords:
 author: nbigman
 manager: jeffgilb
@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 ---
 # Configure certificate infrastructure for SCEP
-This topic describes what infrastructure you need in order to create and deploy certificate profiles.
+This topic describes what infrastructure you need in order to create and deploy SCEP certificate profiles.
 
 ### On-premises infrastructure
 
