@@ -39,7 +39,7 @@ You cannot rename or remove that initial domain name. However, you can add, veri
 
 1. Go to [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) and sign into your administrator account.
 	> [!IMPORTANT]
-	> Check 
+	> Check the
 	[Intune Account Portal has merged with the Office 365 management portal](https://docs.microsoft.com/en-us/intune/deploy-use/account-portal-merged-with-Office-365) announcement for more details on where to manage Microsoft Intune users, groups, and domains.
 2. In the navigation pane, choose **Settings** &gt; **Domains**.
 3. Choose **Add domain**, and type your custom domain name.
