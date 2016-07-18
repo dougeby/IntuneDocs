@@ -2,7 +2,7 @@
 # required metadata
 
 title: Common Intune evaluation tasks | Microsoft Intune
-description:
+description: Lists and links to some common tasks, e.g., deploy iOS PIN policy and set up email access, that you might want to do using Intune
 keywords:
 author: Staciebarker
 manager: jeffgilb
