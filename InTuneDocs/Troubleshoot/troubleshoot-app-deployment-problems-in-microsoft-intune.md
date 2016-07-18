@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot app deployment problems | Microsoft Intune
-description:
+description: This topic helps you solve app deployment problems with Microsoft Intune.
 keywords:
 author: Nbigman
 manager: jeffgilb
