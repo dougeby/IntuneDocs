@@ -28,9 +28,13 @@ ms.suite: ems
 
 # Your Android device is rooted and you can't connect
 
-When your Android device is rooted, it means that your device has been changed to enable certain capabilities that could compromise company resources and security. When your device is rooted, you cannot access company resources and must contact your IT admin to  help you reconnect to company resources.
+When your Android device is rooted, it means that your device has been changed to enable certain capabilities that could compromise company resources and security. If you see this message, you won't be able to access company resources until the problem is resolved. 
 
-Need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
+If you don't believe that you did anything to deliberately root your device, check out these other reasons why your device can become rooted:
+
+- You might have installed an app on your device that the root detection software thinks is a security risk. If you see this message after installing an app, you might want to try uninstalling the app to see if that helps.
+
+- Your device manufacturer installed software on your device that the root detection software thinks is a security risk. You need to contact your IT administrator for help. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 
 ### See also
