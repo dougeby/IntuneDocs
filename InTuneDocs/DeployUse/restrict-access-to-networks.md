@@ -18,8 +18,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: muhosabe
-#ms.suite: ems
+ms.reviewer: muhosabe
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
