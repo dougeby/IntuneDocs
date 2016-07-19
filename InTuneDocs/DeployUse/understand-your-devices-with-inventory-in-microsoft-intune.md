@@ -5,7 +5,7 @@ title: Understand your devices with inventory | Microsoft Intune
 description: use Intune to view information about the hardware of the devices you manage.
 keywords:
 author: robstackmsft
-manager: jeffgilb
+manager: arob98
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod:
