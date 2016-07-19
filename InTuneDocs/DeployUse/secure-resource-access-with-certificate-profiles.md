@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable access to company resources using certificate profiles | Microsoft Intune
+title: Certificate profiles for resource access |Microsoft Intune
 description: Secure VPN, Wi-Fi, and email access with a certificate installed on each user device.
 keywords:
 author: Nbigman

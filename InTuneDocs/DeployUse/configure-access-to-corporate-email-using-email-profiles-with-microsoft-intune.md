@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure access to corporate email using email profiles | Microsoft Intune
+title: Access corporate email with email profiles | Microsoft Intune
 description: Email profile settings can be used to configure email access settings for specific email clients on mobile devices.  
 keywords:
 author: Nbigman
