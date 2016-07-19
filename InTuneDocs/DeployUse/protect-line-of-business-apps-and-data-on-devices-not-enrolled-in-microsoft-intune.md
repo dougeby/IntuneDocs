@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Protect line of business apps and data on devices not enrolled | Microsoft Intune
+title: Protect LOB apps, data on devices not enrolled | Microsoft Intune
 description: This topic describes how you can prepare your custom line of business apps so you can apply mobile app management policies that can help prevent data loss.
 keywords:
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod:
 ms.service:
