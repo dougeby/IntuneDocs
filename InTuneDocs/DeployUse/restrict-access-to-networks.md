@@ -60,8 +60,8 @@ To enable this integration, you don’t need to do any setup in your Intune tena
     d. Choose the certificate, and then choose **Export**.  
 
 
-> [!IMPORTANT]
-> Check the expiration date of the certificate, as you will have to export and import a new certificate when this one expires.
+	> [!IMPORTANT]
+	> Check the expiration date of the certificate, as you will have to export and import a new certificate when this one expires.
 
 	
 
