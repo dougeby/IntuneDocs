@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rollout phases for Microsoft Intune deployment | Microsoft Intune
-description:
+description: The typical phases of a technical deployment are Project Scope, Proof of Concept, Pilot, Enterprise rollout, and Run State. 
 keywords:
 author: Nbigman
 manager: jeffgilb

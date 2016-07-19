@@ -1,2 +1,2 @@
 >[!Important]
->Group assignments will move from Intune to Azure Active Directory. Intune accounts with this update won't see the **Assign devices to the following group** option. [Learn more](#changes-to-intune-group-assignments)
+>Group assignments will move from Intune to Azure Active Directory. Intune accounts with this update won't see the **Assign devices to the following group** option. [Learn more](../deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments)

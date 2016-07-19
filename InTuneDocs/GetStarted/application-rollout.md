@@ -2,7 +2,7 @@
 # required metadata
 
 title: Application rollout | Microsoft Intune
-description:
+description: Recommendations for a phased rollout of apps in Microsoft Intune.
 keywords:
 author: Nbigman
 manager: jeffgilb

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enterprise rollout | Microsoft Intune
-description:
+description: Recommendations for the rollout phase of an Intune deployment.
 keywords:
 author: Nbigman
 manager: jeffgilb

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Protect Windows devices with multi-factor authentication | Microsoft Intune
-description:
+title: Multi-factor authentication for Windows | Microsoft Intune
+description: Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources.
 keywords:
 author: Nbigman
 manager: jeffgilb

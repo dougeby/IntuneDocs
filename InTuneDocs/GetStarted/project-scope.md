@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project scope | Microsoft Intune
-description:
+description: Recommendations for the project scope phase of an Intune deployment.
 keywords:
 author: Nbigman
 manager: jeffgilb

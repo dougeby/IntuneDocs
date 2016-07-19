@@ -2,7 +2,7 @@
 # required metadata
 
 title: What to tell your end users about using Microsoft Intune | Microsoft Intune
-description:
+description: Links to information to share with your end users
 keywords:
 author: staciebarker
 manager: jeffgilb

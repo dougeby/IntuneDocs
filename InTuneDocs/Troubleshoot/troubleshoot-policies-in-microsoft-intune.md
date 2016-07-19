@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot policies | Microsoft Intune
-description:
+description: Troubleshoot policy configuration issues.
 keywords:
 author: Nbigman
 manager: jeffgilb

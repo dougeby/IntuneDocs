@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot device enrollment| Microsoft Intune
-description:
+description: Suggestions for troubleshooting device enrollment issues.
 keywords:
 author: Nbigman
 manager: jeffgilb

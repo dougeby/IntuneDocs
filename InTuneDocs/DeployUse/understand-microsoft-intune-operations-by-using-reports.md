@@ -2,7 +2,8 @@
 # required metadata
 
 title: Understand operations by using reports | Microsoft Intune
-description:
+description: Create and manage reports about software, hardware, and software licenses in your organization.
+
 keywords:
 author: Nbigman
 manager: jeffgilb
