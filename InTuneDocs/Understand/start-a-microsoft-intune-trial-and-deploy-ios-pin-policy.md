@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Start a Microsoft Intune trial and deploy iOS PIN policy | Microsoft Intune
+title: Start an Intune trial and deploy iOS PIN policy | Microsoft Intune
 description: Deploy iOS PIN policy in Intune
 keywords:
 author: Staciebarker

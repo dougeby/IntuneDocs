@@ -5,7 +5,7 @@ title: Manage iOS apps you purchased through a volume-purchase program| Microsof
 description: Use Intune to manage apps you volume purchased from Apple by importing the license information from the app store, tracking how many of the licenses you have used, and preventing you from installing more copies of the app than you own.
 keywords:
 author: robstackmsft
-manager: jeffgilb
+manager: arob98
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod:
