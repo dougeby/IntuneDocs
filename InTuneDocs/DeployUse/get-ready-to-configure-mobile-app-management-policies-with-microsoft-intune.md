@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get ready to configure mobile app management policies | Microsoft Intune
+title: Get ready to configure MAM policies | Microsoft Intune
 description: This topic describes the pre-requisites and setting up users before you can create mobile app management policies.
 keywords:
 author: karthikaraman

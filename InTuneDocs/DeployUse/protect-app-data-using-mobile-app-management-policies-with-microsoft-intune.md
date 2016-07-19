@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Protect app data using mobile app management policies | Microsoft Intune
+title: Protect app data using MAM policies | Microsoft Intune
 description: This topic explains how  mobile app management policies can help protect your company data, prevent data loss, and keep personal and work information separate.
 keywords:
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,7 +44,7 @@ MAM policies can be configured for app running on devices that are:
 -   **Not enrolled in any mobile device management solution:**  The devices in this category are typically employee owned devices that are not managed or enrolled in Intune or other MDM solutions.
 
 > [!IMPORTANT]
-> You can create mobile app management policies for Office mobile apps that connect to Office 365 services. MAM policies are not supported for apps that connect to on-premises Exchange or SharePoint services.
+> You can create mobile app management policies for Office mobile apps that connect to Office 365 services. MAM policies are not supported for apps that connect to on-premises Exchange, Skype for Business, or SharePoint services.
 
 **The important benefits of using MAM policies are**
 
