@@ -5,8 +5,8 @@ title: Add apps | Microsoft Intune
 description: Before you start deploying apps with Intune, take some time to familiarize yourself with the concepts introduced in this topic.
 keywords:
 author: robstackmsft
-manager: jeffgilb
-ms.date: 07/14/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

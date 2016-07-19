@@ -5,8 +5,8 @@ title: Add apps for Windows PCs | Microsoft Intune
 description: Use the information in this topic to learn how to add apps for Windows PCs to Intune before you deploy them.
 keywords:
 author: robstackmsft
-manager: jeffgilb
-ms.date: 07/13/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
