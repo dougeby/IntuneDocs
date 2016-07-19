@@ -7,8 +7,8 @@ description: Use the information in this topic to help you decide which Microsof
 
 keywords:
 author: robstackmsft
-manager: jeffgilb
-ms.date: 07/11/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
