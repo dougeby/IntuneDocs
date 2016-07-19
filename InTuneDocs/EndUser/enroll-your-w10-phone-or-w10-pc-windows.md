@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll your Windows 10 Mobile or Windows 10 desktop device in Intune | Microsoft Intune
+title: Enroll your Windows 10 device in Intune | Microsoft Intune
 description: enroll Windows 10 device
 keywords:
 author: Staciebarker
