@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Monitor mobile app management policies with Microsoft Intune | Microsoft Intune
+title: Monitor MAM policies with Microsoft Intune | Microsoft Intune
 description: See how many users have the policy, drill down to find out more details.
 keywords:
 author: karthikaraman

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use the SDK to enable apps for mobile application management | Microsoft Intune
+title: Use the SDK to enable apps for MAM | Microsoft Intune
 description:
 keywords:
 author: karthikaraman
