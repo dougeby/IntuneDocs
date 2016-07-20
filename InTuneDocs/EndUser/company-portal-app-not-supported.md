@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 7/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

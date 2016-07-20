@@ -5,8 +5,8 @@ title: How to encrypt your Windows device | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
-ms.date: 05/30/2016
+manager: arob98
+ms.date: 6/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
