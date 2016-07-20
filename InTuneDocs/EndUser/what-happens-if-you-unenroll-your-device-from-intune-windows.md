@@ -15,7 +15,7 @@ ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: priyar

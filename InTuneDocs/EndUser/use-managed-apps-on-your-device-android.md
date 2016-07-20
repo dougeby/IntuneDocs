@@ -15,7 +15,7 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: maxles
