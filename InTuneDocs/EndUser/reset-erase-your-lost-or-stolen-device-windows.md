@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reset (erase) your lost or stolen device | Microsoft Intune
+title: Reset (erase) your lost or stolen Windows device | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: cefb485f-f555-4da9-b4bf-d569cc4d5581
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: priyar

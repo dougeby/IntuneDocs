@@ -5,8 +5,8 @@ title: Send diagnostic data logs to your IT administrator using a USB cable | Mi
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -15,7 +15,7 @@ ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: arnab
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Send diagnostic data logs to your IT administrator using a USB cable
 
-If you're using a computer rather than a mobile device, and you want to send data logs from your mobile device to have your IT admin figure out and fix your issue, use these steps:
+If you want to send data log to your IT administrator to get some help with an issue, you can send the logs by using a computer and a USB cable instead of sending the logs from your mobile device. Here's how:
 
 1.  Before you start, make sure that you have your IT admin's email address. It is typically listed on your Company Portal website or in your Company Portal app.
 
