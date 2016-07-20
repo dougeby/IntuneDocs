@@ -15,7 +15,7 @@ ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: chrisgre

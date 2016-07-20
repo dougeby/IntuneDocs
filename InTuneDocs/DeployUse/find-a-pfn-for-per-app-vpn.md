@@ -5,8 +5,8 @@ title: Find a package family name (PFN) for per-app VPN | Microsoft Intune
 description: Find a PFN so that you can configure a per-app VPN.
 keywords:
 author: nbigman
-manager: [ALIAS]
-ms.date: 05/10/2016
+manager: Arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,8 +18,8 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: tycast
-#ms.suite: ems
+ms.reviewer: tycast
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

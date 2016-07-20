@@ -5,7 +5,7 @@ title: Enroll your Windows 10 device in Intune | Microsoft Intune
 description: enroll Windows 10 device
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/11/2016
 ms.topic: article
 ms.prod:

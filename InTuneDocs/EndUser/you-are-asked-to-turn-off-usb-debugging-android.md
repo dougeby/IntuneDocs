@@ -15,7 +15,7 @@ ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 #ms.reviewer: chrisbal
