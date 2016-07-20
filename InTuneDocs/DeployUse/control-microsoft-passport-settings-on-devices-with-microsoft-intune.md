@@ -30,7 +30,8 @@ Microsoft Intune lets you integrate with **Microsoft Passport for Work** which i
 
 Passport lets you use a **user gesture** to log in, instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
 
->[!TIP]Microsoft Passport for Work is now known as Windows Hello for Business. The Intune console will be updated to reflect this change in a future update.
+>[!TIP]
+>Microsoft Passport for Work is now known as Windows Hello for Business. The Intune console will be updated to reflect this change in a future update.
 
 Intune integrates with Passport for Work in two ways:
 
