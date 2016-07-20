@@ -6,7 +6,7 @@ description: Use Custom Configuration to create a Wi-Fi profile with a pre-share
 keywords:
 author: nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +46,10 @@ Note:
 
    c.	**Data Type**: Set to "String(XML)"
 
-   d.	**OMA-URI**: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.	**OMA-URI**: 
+		
+- For Android: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+- For Windows, ./Vendor/MSFT/WiFi/Profile/<SSID>/WlanXml
 
 Note: Be sure to include the dot character at the beginning.
 

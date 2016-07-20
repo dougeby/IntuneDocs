@@ -6,7 +6,7 @@ description: Find a PFN so that you can configure a per-app VPN.
 keywords:
 author: nbigman
 manager: [ALIAS]
-ms.date: 05/10/2016
+ms.date: 06/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
