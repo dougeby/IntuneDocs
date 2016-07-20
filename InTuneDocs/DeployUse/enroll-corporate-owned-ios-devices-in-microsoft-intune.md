@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Enroll corporate-owned iOS devices in Microsoft Intune | Microsoft Intune
-description:
+title: Enroll corporate-owned iOS devices | Microsoft Intune
+description: Enrollment of corporate-owned iOS devices using the Apple Device Enrollment Program (DEP) or Apple Configurator
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

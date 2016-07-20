@@ -5,8 +5,8 @@ title: Direct enrollment for iOS devices | Microsoft Intune
 description: Use the Apple Configurator tool to directly enroll corporate-owned iOS devices with a predefined policy by USB-connecting them to a Mac computer.
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,12 +26,10 @@ ms.suite: ems
 ---
 
 # Directly enroll iOS devices using Apple Configurator
-Intune supports the enrollment of corporate-owned iOS devices using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process does not factory-resets the device and enrolls the device with a predefined policy. This method is for devices with **No user affinity** and requires you to USB-connect the iOS device to a Mac computer to setup corporate enrollment. The Company Portal app is not supported for direct enrolled devices. This guidance assumes you are using Apple Configurator 2.0 on a Mac computer.
+Intune supports the enrollment of corporate-owned iOS devices using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process does not factory-resets the device and enrolls the device with a predefined policy. This method is for devices with **No user affinity** and requires you to USB-connect the iOS device to a Mac computer to setup corporate enrollment. When directly enrolling iOS devices, you can enroll a device without acquiring the device's serial number. You can also name the device for identification purposes before Intune captures the device name during enrollment. The Company Portal app is not supported for direct enrolled devices. This guidance assumes you are using Apple Configurator 2.0 on a Mac computer.
 
 1.  **Create a profile for devices**
     A device enrollment profile defines the settings applied to devices. If you have not already, create a device enrollment profile for iOS devices enrolled using Apple Configurator.
-
-    #### To create a profile
 
     1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add…**.
 
@@ -72,8 +70,6 @@ Intune supports the enrollment of corporate-owned iOS devices using the [Apple C
 8.  **Install the profile**
     You are ready to install the profile on the iOS device. The device must have already completed the Setup Assistant and be ready to use.  If enrollment entails app deployments, the device should have an Apple ID set up because the app deployments will require that you have an Apple ID signed in for the App Store.
 
-    ###### Completing profile acceptance for unsupervised iOS devices
-
     1.  Unlock the iOS device.
 
     2.  In the **Install profile** dialog for **Management profile**,  tap **Install**.
@@ -91,7 +87,3 @@ Intune supports the enrollment of corporate-owned iOS devices using the [Apple C
 
 10. **Distribute devices**
     The iOS device is now enrolled with Intune and managed.
-
-
-### See also
-[Get ready to enroll devices](get-ready-to-enroll-devices-in-microsoft-intune.md)
