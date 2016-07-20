@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Help end users understand Company Portal app messages | Microsoft Intune
+title: Company Portal app messages users might see | Microsoft Intune
 description: Company Portal app messages that Intune end users might see
 keywords:
 author: staciebarker

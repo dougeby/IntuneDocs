@@ -5,7 +5,7 @@ title: Mobile device management capabilities | Microsoft Intune
 description: Read this topic to find out how Intune can help you manage your mobile devices that you enroll with the service.
 keywords:
 author: robstackmsft
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

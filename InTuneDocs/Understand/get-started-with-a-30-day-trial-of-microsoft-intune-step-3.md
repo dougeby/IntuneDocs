@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create groups to organize evaluation subscription users and devices | Microsoft Intune
+title: Create groups to organize users and devices | Microsoft Intune
 description: How to create device groups and user groups when you sign up for a free, 30-day evaluation of Intune
 keywords:
 author: Staciebarker
