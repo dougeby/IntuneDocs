@@ -5,8 +5,8 @@ title: Wait while your device is being evaluated | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

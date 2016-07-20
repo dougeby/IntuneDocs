@@ -5,8 +5,8 @@ title: Password does not meet IT administrator requirements | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
-ms.date: 05/26/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod:
 ms.service:
