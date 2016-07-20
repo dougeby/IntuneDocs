@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Exchange access rules for Microsoft Intune managed mobile devices | Microsoft Intune
+title: Exchange access rules for mobile devices | Microsoft Intune
 description: Exchange ActiveSync access rules for mobile devices management (MDM) determine the level of access those devices have to Exchange.
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

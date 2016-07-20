@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Account Portal merged with Office 365 management portal | Microsoft Intune
+title: Account Portal merged with Office 365 | Microsoft Intune
 description:
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 05/26/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 80f7d796-ad0e-4a50-a6e2-cdc52e7eb57e
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+ms.reviewer: amyro
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
