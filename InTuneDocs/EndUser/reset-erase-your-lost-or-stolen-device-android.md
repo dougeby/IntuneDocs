@@ -47,7 +47,7 @@ To learn about what happens if you reset your device, see [What happens if you r
 
 You can use the following steps, or watch this video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6e73o7f8gxE&feature=youtu.be" frameborder="0" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=K-Vi7lNfaMk&feature=youtu.be" frameborder="0" allowfullscreen></iframe> 
 
 1.  In your browser, open your [Company Portal website](http://portal.manage.microsoft.com), and sign in to your work account.
 
