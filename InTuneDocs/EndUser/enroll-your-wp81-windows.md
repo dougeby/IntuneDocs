@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll your Windows Phone 8.1 device in Intune | Microsoft Intune
-description: enroll Windows Phone 8.1 device
+description: Describes how to enroll a Windows Phone 8.1 device in Intune
 keywords:
 author: Staciebarker
 manager: jeffgilb
