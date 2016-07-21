@@ -5,7 +5,7 @@ title: What happens if you reset your Windows device using the Company Portal? |
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod:

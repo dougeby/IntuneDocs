@@ -5,7 +5,7 @@ title: What happens if you reset your Android device using the Company Portal? |
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/25/2016
 ms.topic: article
 ms.prod:

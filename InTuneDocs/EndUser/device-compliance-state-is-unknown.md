@@ -5,7 +5,7 @@ title: Device compliance state is unknown | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/06/2016
 ms.topic: article
 ms.prod:

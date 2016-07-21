@@ -5,7 +5,7 @@ title: You are asked to turn on Scan device for security threats | Microsoft Int
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod:
