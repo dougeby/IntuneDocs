@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll your Android device in Intune | Microsoft Intune
-description: enroll Android device
+description: Describes how to enroll an Android device in Intune
 keywords:
 author: staciebarker
 manager: jeffgilb

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Using your iOS or Mac OS X device with Intune | Microsoft Intune
-description: iOS and Mac OS X tasks
+description: List of links to tasks that you can do on your iOS or Mac OS X mobile device when the device is enrolled in Intune
 keywords:
 author: Staciebarker
 manager: jeffgilb
