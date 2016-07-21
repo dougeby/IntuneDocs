@@ -6,7 +6,7 @@ description: Create and manage reports about software, hardware, and software li
 
 keywords:
 author: Nbigman
-manager: jeffgilb
+manager: Arob98
 ms.date: 06/21/2016
 ms.topic: article
 ms.prod:

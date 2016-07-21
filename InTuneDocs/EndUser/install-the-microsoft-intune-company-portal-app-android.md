@@ -5,8 +5,8 @@ title: Install the Microsoft Intune Company Portal app | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -15,7 +15,7 @@ ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: arnab

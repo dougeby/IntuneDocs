@@ -6,7 +6,7 @@ description: Use the policy settings listed in this topic to help you configure 
 keywords:
 author: robstackmsft
 manager: arob98
-ms.date: 07/19/2016
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -172,7 +172,7 @@ All settings are for Windows 10 desktop only.
 |**Signature update interval**|Specify the interval at which Defender will check for new signature files.|
 |**Allow cloud protection**|Allow or block the Microsoft Active Protection Service from receiving information about malware activity from devices you manage. This information is used to improve the service in the future.|
 |**Prompt users for samples submission**|Controls whether files that might require further analysis by Microsoft to determine if they are malicious are automatically sent to Microsoft.|
-|**Potentially Unwanted Application Detection**|This setting can be used to protect enrolled Windows desktop computers against running software classified by Windows Defender as potentially unwanted. You can protect against these applications running, or use audit mode to report when a potentially unwanted application is installed.|
+|**Potentially Unwanted Application Detection**|This setting can be used to protect enrolled Windows desktop devices against running software classified by Windows Defender as potentially unwanted. You can protect against these applications running, or use audit mode to report when a potentially unwanted application is installed.|
 |**Files and folders to exclude when running a scan or using real-time protection**|Add one or more files and folders like **C:\Path** or **%ProgramFiles%\Path\filename.exe** to the exclusions list. These files and folders will not be included in any real-time, or scheduled scans.|
 |**File extensions to exclude when running a scan or using real-time protection**|Add one or more file extensions like **jpg** or **txt** to the exclusions list. Any files with these extensions will not be included in any real-time, or scheduled scans.|
 |**Processes to exclude when running a scan or using real-time protection**|Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes will not be included in any real-time, or scheduled scans.| 
