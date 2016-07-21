@@ -72,7 +72,7 @@ The app will prompt you for the user’s email username and password.
 ![<exchange-account-opens>](./media/Email-Walkthrough/Email-Walkthrough-7.png)
 3. Check the account settings in for the Mail app to make sure the account name is the same one you entered in the email profile (for example, **Contoso Mail**) and the synchronization settings are set correctly.
 ![<check-account-settings>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
-![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)
+![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)  
   If it appears the email profile hasn’t been automatically applied to the device, you can manually apply the policy using the Company Portal app on the device.
 1. Open the Company Portal app.
 2. Tap **My Devices**.
