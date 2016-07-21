@@ -5,7 +5,7 @@ title: You are asked to turn off USB debugging | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod:

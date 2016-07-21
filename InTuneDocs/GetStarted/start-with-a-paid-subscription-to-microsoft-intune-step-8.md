@@ -5,7 +5,7 @@ title: Enroll mobile devices and install an app | Microsoft Intune
 description: Explains how to enroll mobile devices and install an app on an Intune-enrolled device
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod:

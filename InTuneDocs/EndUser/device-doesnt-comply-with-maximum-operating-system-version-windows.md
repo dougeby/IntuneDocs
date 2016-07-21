@@ -5,7 +5,7 @@ title: Windows device doesn't comply with the maximum operating system version |
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
