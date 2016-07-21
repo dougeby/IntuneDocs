@@ -34,15 +34,16 @@ Would you like to allow your end users to access your Office 365 and LOB app dat
 If yes, Microsoft Intune allows you to set MAM policies for Office 365 mobile apps on iOS and Android, including cut/copy/paste restrictions, preventing ‘save-as’, setting PIN requirements, and the ability to remotely wipe MAM protected data.  This protects company data without requiring users to enroll their devices into an MDM solution while maintaining a great end-user experience with Office mobile apps.
 
 ## How to implement this scenario
-1.	Get a basic understanding of [how Intune mobile application management (MAM)](/intune/deployuse/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) works.
-2.	Find out [what you need to do before you can create MAM policies](/intune/deployuse/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) in the Azure portal.
-3.	[Create and deploy MAM policies](/intune/deployuse/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) with Intune.
+1.	Get a basic understanding of [how Intune mobile application management (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) works.
+2.	Find out [what you need to do before you can create MAM policies](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) in the Azure portal.
+3.	[Create and deploy MAM policies](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) with Intune.
 
 ### Additional information:
-- [End user experience](/intune/deployuse/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) using MAM enabled apps.
-- [Prepare LOB apps for MAM with Intune](/intune/deployuse/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [End user experience](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) using MAM enabled apps.
+- [Prepare LOB apps for MAM with Intune](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
 - [List of Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) providing MAM-enabled apps.
 
 ## Next steps
-[Migrate from a non-Microsoft MDM solution to Microsoft Intune](/intune/deployuse/migrate-to-intune)
-[Enroll devices into Intune MDM](/intune/deployuse/enroll-devices-in-microsoft-intune)
+[Migrate from a non-Microsoft MDM solution to Microsoft Intune](/intune/deploy-use/migrate-to-intune)
+
+[Enroll devices into Intune MDM](/intune/deploy-use/enroll-devices-in-microsoft-intune)

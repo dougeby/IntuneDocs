@@ -34,13 +34,14 @@ Would you like your users to quickly have access to all the apps they need to be
 If yes, Microsoft Intune allows you to publish apps (Office mobile, internal line of business or other mobile and desktop apps) in a single common portal: the [Intune Company Portal app or website](/intune/enduser/company-portal-frequently-asked-questions).
 
 ## How to implement this scenario
-1.	[Enroll devices](/intune/deployuse/enroll-devices-in-microsoft-intune) into Intune mobile device management.
-2.	[Add apps to Intune](/intune/deployuse/add-apps-for-mobile-devices-in-microsoft-intune) that you want to deploy to enrolled devices.
-3.	[Deploy apps using Intune](/intune/deployuse/deploy-apps) to enrolled devices.
+1.	[Enroll devices](/intune/deploy-use/enroll-devices-in-microsoft-intune) into Intune mobile device management.
+2.	[Add apps to Intune](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) that you want to deploy to enrolled devices.
+3.	[Deploy apps using Intune](/intune/deploy-use/deploy-apps) to enrolled devices.
 
 ### Additional information:
-If publishing Office mobile apps is done with the intention of using Intune’s MAM capabilities to manage data loss protection for those apps, then each end user assigned MAM policies will need to be [assigned a user license for Office 365](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+If publishing Office mobile apps is done with the intention of using Intune’s MAM capabilities to manage data loss protection for those apps, then each end user assigned MAM policies will need to be <a href="https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc" target="_blank"> assigned a user license for Office 365 &rarr;</a>
 
 ## Next steps
-[Monitor app deployments in Microsoft Intune](/intune/deployuse/monitor-apps-in-microsoft-intune)
-[Protect company data against data loss in mobile devices](/intune/deployuse/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+[Monitor app deployments in Microsoft Intune](/intune/deploy-use/monitor-apps-in-microsoft-intune)
+
+[Protect company data against data loss in mobile devices](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
