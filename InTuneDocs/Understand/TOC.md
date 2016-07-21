@@ -12,7 +12,7 @@
 ### [Start a trial & deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
 ### [Set up email access for iOS devices](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [Common scenarios](common-ways-to-use-intune.md)
-
+## [Quick start guides](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 <!--- ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)--->
 
 # [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
