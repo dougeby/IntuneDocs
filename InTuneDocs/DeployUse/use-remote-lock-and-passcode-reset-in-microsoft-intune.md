@@ -31,7 +31,7 @@ If a user loses their device you can lock the device remotely. The table below l
 |------------|---------------|
 |iOS|Supported|
 |Android|Supported|
-|Windows 10 Mobile|Supported|
+|Windows 10 and Windows 10 Mobile|Supported|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
 |Windows RT 8.1 and Windows RT|Supported if the current user of the device is the same user who enrolled the device.|
 |Windows 8.1|Supported if the current user of the device is the same user who enrolled the device.|
