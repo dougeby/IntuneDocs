@@ -41,7 +41,7 @@ After the email profile is configured, you can easily restrict access to company
 
 
 ### Additional information:
-[Intune device settings and security](intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
+[Intune device settings and security](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
 
 ## Next steps
 [Deploy VPN profiles to managed devices](/intune/deploy-use/vpn-connections-in-microsoft-intune)
