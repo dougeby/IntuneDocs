@@ -5,7 +5,7 @@ title: Set your PIN or password | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: arnab

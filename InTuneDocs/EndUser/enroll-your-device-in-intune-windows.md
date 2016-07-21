@@ -2,10 +2,10 @@
 # required metadata
 
 title: Enroll your Windows device in Intune | Microsoft Intune
-description: enroll Windows device
+description: Describes how to enroll a Windows device in Intune
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod:

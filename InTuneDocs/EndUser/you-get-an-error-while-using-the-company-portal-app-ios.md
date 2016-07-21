@@ -5,7 +5,7 @@ title: You get an error while using the Company Portal app | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/04/2016
 ms.topic: article
 ms.prod:

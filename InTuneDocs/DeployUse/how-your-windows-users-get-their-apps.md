@@ -5,7 +5,7 @@ title: How your Windows users get their apps | Microsoft Intune
 description: Methods for making Windows apps available to end users
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

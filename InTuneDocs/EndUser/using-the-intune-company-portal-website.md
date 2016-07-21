@@ -2,10 +2,10 @@
 # required metadata
 
 title: Using the Intune Company Portal website | Microsoft Intune
-description: Company Portal website tasks
+description: Describes the Company Portal website and provides links to steps for tasks that you can do on the website
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
