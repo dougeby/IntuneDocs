@@ -5,7 +5,7 @@ title: What happens if you reset your device | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/02/2016
 ms.topic: article
 ms.prod:

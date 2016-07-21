@@ -5,7 +5,7 @@ title: Your device is missing a required certificate | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod:

@@ -5,7 +5,7 @@ title: Reset your device passcode from the Company Portal website | Microsoft In
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

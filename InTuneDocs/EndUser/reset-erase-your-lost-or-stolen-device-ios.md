@@ -5,7 +5,7 @@ title: Reset (erase) your lost or stolen iOS device | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/09/2016
 ms.topic: article
 ms.prod:

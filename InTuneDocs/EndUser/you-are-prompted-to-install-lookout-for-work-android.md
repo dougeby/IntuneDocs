@@ -5,7 +5,7 @@ title: You are prompted to install Lookout for Work | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/27/2016
 ms.topic: article
 ms.prod:

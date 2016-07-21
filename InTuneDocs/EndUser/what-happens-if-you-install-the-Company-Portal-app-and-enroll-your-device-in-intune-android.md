@@ -5,7 +5,7 @@ title: What happens if you install the Company Portal app and enroll your Androi
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod:

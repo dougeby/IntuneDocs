@@ -5,7 +5,7 @@ title: Using your Android device with Intune | Microsoft Intune
 description: List of links to tasks that you can do on your Android mobile device when the device is enrolled in Intune
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
