@@ -5,7 +5,7 @@ title: Common ways to use Intune | Microsoft Intune
 description: Lists six of the most common tasks that users want Intune to do for them
 keywords:
 author: jeffgilb
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

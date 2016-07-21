@@ -5,7 +5,7 @@ title: Send diagnostic data logs to your IT administrator using email | Microsof
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod:

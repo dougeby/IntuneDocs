@@ -5,7 +5,7 @@ title: Device doesn't have the required minimum operating system version | Micro
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
