@@ -6,7 +6,7 @@ description: General resources to help resolve issues with Intune.
 keywords:
 author: nbigman
 manager: jeffgilb
-ms.date: 05/26/2016
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arob98
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
