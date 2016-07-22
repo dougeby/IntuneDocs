@@ -5,7 +5,7 @@ title: General troubleshooting tips | Microsoft Intune
 description: General resources to help resolve issues with Intune.
 keywords:
 author: nbigman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
@@ -18,7 +18,7 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: arob98
+ms.reviewer: tscott
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
