@@ -14,8 +14,8 @@
 ## [Common scenarios](common-ways-to-use-intune.md)
 ## [Quick start guides](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Prevent company data leaks from Office 365 mobile apps](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Publishing mobile apps to your users](publishing-mobile-apps-to-users.md)
-### [Quickly protect Windows PCs against malware threats](quickly-protect-pcs-against-malware-threats.md)
+### [Publish mobile apps to your users](publish-mobile-apps-to-users.md)
+### [Protect Windows PCs against malware threats](protect-pcs-against-malware-threats.md)
 ### [Simplify email configuration on mobile devices](simplify-email-configuration-on-mobile-devices.md)
 
 # [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
