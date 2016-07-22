@@ -5,7 +5,7 @@ title: Troubleshoot software updates | Microsoft Intune
 description: Solve software update problems in Microsoft Intune.
 keywords:
 author: Nbigman
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
