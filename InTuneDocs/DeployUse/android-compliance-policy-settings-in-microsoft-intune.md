@@ -68,13 +68,13 @@ If you are looking for information about other platforms, select one of the foll
 ## Device health and security settings
 
 - **Device must not be jailbroken or rooted:** If you enable this setting, jailbroken devices will be evaluated as noncompliant.
-- **Require that devices prevent installation of apps from unknown sources(Android 4.0 or later)** To block devices that have the **Security > Unknown sources**  enabled on the device, enable this setting and set it to **Yes**.  
+- **Require that devices prevent installation of apps from unknown sources (Android 4.0 or later)** To block devices that have the **Security > Unknown sources**  enabled on the device, enable this setting and set it to **Yes**.  
 >[!IMPORTANT]
 >Side-loading applications requires that the  **Unknown sources** setting is enabled.  You should only enforce this compliance policy if you are not side-loading Android apps on devices.
 
-- **Require that USB debugging is  disabled (Android 4.2 or later):** This setting specifies whether to detect the USB debugging option on the device is enabled.
-- **Require devices have enabled Scan device for security threats (Android 4.2-4.4):** This setting specifies that the **Verify apps** feature is enabled on the device.
-- **Minimum Android security patch level (Android 6.0 or later):** Use this setting to specify the minimum Android patch level.  Devices that are not at least at this patch level will be noncompliant. The date must be specified the format: YYYY-MM-DD.
+- **Require that USB debugging is  disabled (Android 4.2 or later)**: This setting specifies whether to detect the USB debugging option on the device is enabled.
+- **Require devices have enabled Scan device for security threats (Android 4.2-4.4)**: This setting specifies that the **Verify apps** feature is enabled on the device.
+- **Minimum Android security patch level (Android 6.0 or later)**: Use this setting to specify the minimum Android patch level.  Devices that are not at least at this patch level will be noncompliant. The date must be specified the format: YYYY-MM-DD.
 
 
 ## Device property settings
