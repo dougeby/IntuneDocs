@@ -5,7 +5,7 @@ title: What can your IT administrator see when you enroll your device in Intune?
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod:

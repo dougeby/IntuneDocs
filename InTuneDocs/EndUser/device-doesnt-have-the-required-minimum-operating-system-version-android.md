@@ -5,7 +5,7 @@ title: Android device doesn't have the required minimum operating system version
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod:

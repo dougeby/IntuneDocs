@@ -2,10 +2,10 @@
 # required metadata
 
 title: Enroll your Windows RT device in Intune | Microsoft Intune
-description: enroll Windows RT device
+description: Describes how to enroll a Windows RT device in Intune
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

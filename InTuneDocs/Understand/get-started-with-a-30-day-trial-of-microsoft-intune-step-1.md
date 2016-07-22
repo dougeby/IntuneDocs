@@ -5,7 +5,7 @@ title: Sign up for a 30-day evaluation of Microsoft Intune | Microsoft Intune
 description: How to sign up for a free, 30-day evaluation of Intune and what you need to consider before signing up
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod:

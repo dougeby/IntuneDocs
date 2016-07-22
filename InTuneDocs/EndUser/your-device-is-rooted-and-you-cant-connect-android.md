@@ -5,7 +5,7 @@ title: Your Android device is rooted and you can't connect | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod:

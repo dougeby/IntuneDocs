@@ -5,7 +5,7 @@ title: What happens if you install the Company Portal app and enroll your Window
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 7/8/2016
 ms.topic: article
 ms.prod:

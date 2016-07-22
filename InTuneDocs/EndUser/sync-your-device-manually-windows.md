@@ -5,7 +5,7 @@ title: Sync your Windows device manually | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: priyar
