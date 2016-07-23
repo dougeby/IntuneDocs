@@ -5,8 +5,8 @@ title: Monitor MAM policies with Microsoft Intune | Microsoft Intune
 description: See how many users have the policy, drill down to find out more details.
 keywords:
 author: karthikaraman
-manager: jeffgilb
-ms.date: 07/06/2016
+manager: jarob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
