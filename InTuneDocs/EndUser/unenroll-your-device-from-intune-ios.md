@@ -32,7 +32,7 @@ When you unenroll your iOS device from Intune, your device will not longer be ab
 
 To unenroll your device from Intune, use these steps or watch this video:
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+<iframe width="675" height="379" src="https://www.youtube.com/embed/6UFtBrBWUUI" frameborder="0" allowfullscreen></iframe>
 
 
 1.  In the Company Portal app, under **My Devices**,  select the device you want to unenroll.
