@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: arob98
-ms.date: 05/09/2016
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ If a phone that has been enrolled in Intune is lost or stolen, you can reset it 
 
 ## To reset your device using the Company Portal app
 
-1.  In your browser, open your Company Portal, and sign in to your work account.
+1.  From another enrolled device, open the Company Portal app, and sign in using your work or school account.
 
 2.  Under **My Devices**, select the lost or stolen device.
 
@@ -45,7 +45,7 @@ If a phone that has been enrolled in Intune is lost or stolen, you can reset it 
 
 You can use the following steps, or watch this video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+<iframe width="675" height="379" src="https://www.youtube.com/embed/3rrXe8XmtgU" frameborder="0" allowfullscreen></iframe>
 
 1.  In the [Company Portal website](http://portal.manage.microsoft.com), select the device you want to erase.
 
