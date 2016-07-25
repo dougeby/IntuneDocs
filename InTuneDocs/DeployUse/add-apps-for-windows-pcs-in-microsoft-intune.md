@@ -41,13 +41,11 @@ You use the Intune Software Publisher to configure the properties of the app and
     > [!TIP]
     > You might need to enter your Intune user name and password before the publisher starts.
 
-2.  On the **Software setup** page of the publisher, configure the following:
-
-    **Select how this software is made available to devices**. Choose **Software installer**, and then specify:
+2.  On the **Software setup** page of the publisher, under **Select how this software is made available to devices**, choose **Software installer**, and then specify:
 
 	- **Select the software installer file type**. This indicates the type of software that you want to deploy. For a Windows PC, choose **Windows Installer**.
     - **Specify the location of the software setup files**. Enter the location of the installation files, or choose **Browse** to select the location from a list.
-    - **Include additional files and subfolders from the same folder**. Some software that uses Windows Installer requires supporting files, which are typically found in the same folder as the installation files. Select this option if you also want to deploy these supporting files.
+    - **Include additional files and subfolders from the same folder**. Some software that uses Windows Installer requires supporting files. These are typically found in the same folder as the installation files. Select this option if you also want to deploy these supporting files.
 
 	For example, if you want to publish an app named Application.msi to Intune, the page would look like this:
 	![Software setup page of the publisher](./media/publisher-for-pc.png)
@@ -75,7 +73,7 @@ You use the Intune Software Publisher to configure the properties of the app and
 5.  On the **Detection rules** page, you can configure rules to detect whether the app that you are configuring is already installed on a PC. Or,  you can use the default detection rules to automatically overwrite any previously installed versions of the app. This option is for Windows Installer (.exe files only).
 
 	The rules that you can configure are:
-	- **File exists**. Specify the path to the file that you want to detect. You can search under **%ProgramFiles%** (which searches **Program Files**\*&lt;path&gt;* and **Program Files (x86)**\*&lt;path&gt;*) on the PC or **%SystemDrive%** (which searches from the root drive of the PC, typically drive C).
+	- **File exists**. Specify the path to the file that you want to detect. You can search under **%ProgramFiles%** (which searches **Program Files**\&lt;path&gt; and **Program Files (x86)**\&lt;path&gt;) on the PC or **%SystemDrive%** (which searches from the root drive of the PC, typically drive C).
 	- **MSI product code exists**. Choose **Browse** to choose the Windows Installer (.msi) file that you want to detect.
 	- **Registry key exists**. Specify a registry key that begins with **HKEY_LOCAL_MACHINE\**. Both 32-bit and 64-bit registry paths are searched. If the key that you specified exists in either location, the detection rule is satisfied.
 
