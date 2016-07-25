@@ -6,7 +6,7 @@ description: Secure your managed computers with Endpoint Protection which provid
 keywords:
 author: NathBarn
 manager: arob98
-ms.date: 04/28/2016
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

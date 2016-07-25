@@ -2,11 +2,11 @@
 # required metadata
 
 title: Choose how to enroll mobile devices | Microsoft Intune
-description:
+description: Decide how to enroll mobile devices in Intune by answering a few simple questions
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 06/06/2016
+manager: arob98
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -18,7 +18,7 @@ ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: damionw
+ms.reviewer: dagerrit
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

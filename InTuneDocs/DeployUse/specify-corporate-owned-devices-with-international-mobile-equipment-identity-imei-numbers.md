@@ -2,11 +2,11 @@
 # required metadata
 
 title: Specify corporate-owned devices with international mobile equipment identity (IMEI) numbers | Microsoft Intune
-description:
+description: Microsoft Intune enables administrators to import IMEI numbers for mobile device platforms to help identify corporate-owned mobile devices
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
