@@ -5,8 +5,8 @@ title: Pilot | Microsoft Intune
 description: Recommendations for the pilot phase of an Intune deployment.
 keywords:
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
