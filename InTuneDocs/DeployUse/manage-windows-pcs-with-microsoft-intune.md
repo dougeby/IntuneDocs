@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage Windows PCs with the Intune PC client | Microsoft Intune
+title: Manage Windows PCs with Intune client | Microsoft Intune
 description: Manage Windows PCs by installing the Intune client software.
 keywords:
 author: nathbarn
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod:

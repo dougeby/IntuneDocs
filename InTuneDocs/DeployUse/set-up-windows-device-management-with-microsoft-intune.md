@@ -5,7 +5,7 @@ title: Set up Windows device management with Microsoft Intune | Microsoft Intune
 description: Enable mobile device management (MDM) for Windows PCs including Windows 10 devices with Microsoft Intune.
 keywords:
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
