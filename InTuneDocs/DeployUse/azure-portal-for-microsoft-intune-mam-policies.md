@@ -5,8 +5,8 @@ title: Azure portal for MAM policies | Microsoft Intune
 description: Create mobile app management policies using the Azure portal. The policies you create here can be applied to devices with or without enrollment in Intune.
 keywords:
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,13 +46,13 @@ Azure portal supports creating MAM policies for:
 
     ![Screenshot of the Azure portal log in page](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  Once you are successfully signed in, you will see the **Dashboard**. The **Dashboard** page comes with a set of default tiles that you can remove and add new ones to customize the page.
+2.  Once you are successfully signed in, you will see the **Dashboard**. The **Dashboard** page can be customized.
 
     ![Screenshot of the Azure portal dashboard](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
 3.  From the **Browse** menu, find **Intune**.![Screenshot of the Browse menu with Intune highlighted](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  Click **Intune > Intune mobile application management > Settings**.
+4.  Choose **Intune > Intune mobile application management > Settings**.
 
     ![Screenshot of the Intune mobile application management blade](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 

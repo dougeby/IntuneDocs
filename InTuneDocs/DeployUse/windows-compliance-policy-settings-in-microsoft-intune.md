@@ -5,8 +5,8 @@ title: Compliance policy settings for Windows devices| Microsoft Intune
 description:
 keywords:
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

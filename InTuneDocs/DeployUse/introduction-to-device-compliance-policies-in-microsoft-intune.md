@@ -5,7 +5,7 @@ title: Device compliance policies | Microsoft Intune
 description: This topic explains the concepts you need to understand what device compliance policies are and how they work.
 keywords:
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod:
