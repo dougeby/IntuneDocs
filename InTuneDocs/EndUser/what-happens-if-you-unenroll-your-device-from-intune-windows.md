@@ -5,7 +5,7 @@ title: What happens if you unenroll your Windows device from Intune? | Microsoft
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: priyar

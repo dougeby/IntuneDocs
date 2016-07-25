@@ -5,7 +5,7 @@ title: Use Verbose Logging to help your IT administrator fix device issues | Mic
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: arnab

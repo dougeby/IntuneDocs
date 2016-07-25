@@ -2,10 +2,10 @@
 # required metadata
 
 title: Unenroll your Windows device from Intune | Microsoft Intune
-description: unenroll Windows device
+description: Describes how to unenroll a Windows device from Intune
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

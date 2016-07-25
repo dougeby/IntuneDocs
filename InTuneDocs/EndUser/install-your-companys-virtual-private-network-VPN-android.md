@@ -5,7 +5,7 @@ title: Install your company's Virtual Private Network (VPN) | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 7/14/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: chrisbal

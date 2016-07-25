@@ -2,11 +2,11 @@
 # required metadata
 
 title: Restrict access to Skype for Business Online | Microsoft Intune
-description:
+description: Protect and control access to Skype for Business Online with conditional access.
 keywords:
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ When a targeted user attempts to use Skype for Business Online on their device, 
 **Before** configuring a conditional access policy for Skype for Business Online, you must:
 - Have a **Skype for Business Online subscription** and assign Skype for Business Online license to users.
 - Have a subscription for the **Enterprise Mobility Suite** or **Azure Active Directory Premium**.
--   [Enable modern authentication](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) for Skype for Business Online. 
+-   [Enable modern authentication](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) for Skype for Business Online.
 -  All your end users must be using **Skype for Business Online**. If you have a deployment with both Skype for Business Online and Skype for Business on-premises, conditional access policy will not be applied to end users.
 
     The device that needs access to Skype for Business Online must:

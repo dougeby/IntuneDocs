@@ -5,7 +5,7 @@ title: Send enrollment errors to your IT administrator | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: esmich

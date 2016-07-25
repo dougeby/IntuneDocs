@@ -5,8 +5,8 @@ title: Mac OS X policy settings | Microsoft Intune
 description: Intune supplies a range of built-in general settings you can configure on Mac OS X devices. Additionally, you can use the Apple Configurator Tool to create custom settings that are not available from Intune.
 keywords:
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

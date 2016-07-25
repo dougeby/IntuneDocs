@@ -5,7 +5,7 @@ title: Restrict access to SharePoint Online | Microsoft Intune
 description: Protect and control access to  company data on SharePoint Online with conditional access.
 keywords:
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod:
@@ -63,8 +63,10 @@ If a condition is not met, the user is presented with one of the following messa
 
 -   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website where they can find information about the problem, and how to remediate it.
 
-**Conditional access is enforced across all SharePoint sites so external sharing is blocked**
+**Conditional access is enforced across all SharePoint sites and external sharing is blocked**
 
+>[!NOTE]
+>If you  enable conditional access for SharePoint Online, we recommend that you disable the domain on the list as described in the  [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) topic.  
 ## Support for mobile devices
 - iOS 7.1 and later
 - Android 4.0 and later, Samsung Knox Standard 4.0 or later

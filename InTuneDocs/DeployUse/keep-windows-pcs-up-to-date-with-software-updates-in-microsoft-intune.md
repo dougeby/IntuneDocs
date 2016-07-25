@@ -5,8 +5,8 @@ title: Software updates for Windows PCs | Microsoft Intune
 description: Intune helps you to keep your managed computers up to date by ensuring the latest patches and software updates are quickly installed.
 keywords:
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

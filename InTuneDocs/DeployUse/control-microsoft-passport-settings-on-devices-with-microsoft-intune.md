@@ -5,8 +5,8 @@ title: Control Microsoft Passport settings on devices | Microsoft Intune
 description: Learn how Intune integrates with **Microsoft Passport for Work**; an alternative sign-in method that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
 keywords:
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,6 +29,9 @@ ms.suite: ems
 Microsoft Intune lets you integrate with **Microsoft Passport for Work** which is an alternative sign-in method that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
 
 Passport lets you use a **user gesture** to log in, instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
+
+>[!TIP]
+>Microsoft Passport for Work is now known as Windows Hello for Business. The Intune console will be updated to reflect this change in a future update.
 
 Intune integrates with Passport for Work in two ways:
 

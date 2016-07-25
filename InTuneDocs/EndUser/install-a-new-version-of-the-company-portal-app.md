@@ -5,7 +5,7 @@ title: Install a new version of the Company Portal app | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
@@ -16,7 +16,7 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 #ms.reviewer: priyar

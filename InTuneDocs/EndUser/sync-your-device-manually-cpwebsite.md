@@ -5,7 +5,7 @@ title: Sync your device manually using the Company Portal website | Microsoft In
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/02/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: mamoriss

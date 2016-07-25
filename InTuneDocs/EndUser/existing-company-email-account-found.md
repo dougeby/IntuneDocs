@@ -5,7 +5,7 @@ title: Existing company email account found | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: chrisgre

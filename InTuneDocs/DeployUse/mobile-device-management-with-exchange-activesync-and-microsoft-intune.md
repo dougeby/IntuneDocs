@@ -2,11 +2,11 @@
 # required metadata
 
 title: Mobile device management with Exchange ActiveSync and Microsoft Intune | Microsoft Intune
-description:
+description: Directly manage unenrolled mobile devices that users haven't enrolled with Exchange ActiveSync (EAS) management using the Exchange connector
 keywords:
 author: nathbarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

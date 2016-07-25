@@ -2,10 +2,10 @@
 # required metadata
 
 title: Restrict access to email and O365 services | Microsoft Intune
-description:
+description: This topic describes how conditional can be used to allow only compliant devices to access company email and company data on SharePoint Online and other services.
 keywords:
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.suite: ems
 # Restrict access to email, O365, and other services with Microsoft Intune
 You can restrict access to your company email and O365 services with Intune's conditional access. Intune's conditional access capability allows you to make sure that access to your company email and O365 services is restricted to devices that are compliant with the rules that you set.
 ## How does conditional access work?
-Compliance policy settings are used to evaluate the compliance of the device. Conditional access policy uses the evaluation to restrict or allow access to a specific service. When a conditional access policy is used in combination with a compliance policy, only compliant devices will be allowed to access the service. The compliance policy and the conditional access policy are deployed to the user. Any device that the user uses to access the services is checked for compliance with the policies. 
+Compliance policy settings are used to evaluate the compliance of the device. Conditional access policy uses the evaluation to restrict or allow access to a specific service. When a conditional access policy is used in combination with a compliance policy, only compliant devices will be allowed to access the service. The compliance policy and the conditional access policy are deployed to the user. Any device that the user uses to access the services is checked for compliance with the policies.
 
 Keep in mind that the user who is using the device must have a compliance policy deployed to them in order for the device to be evaluated for compliance.
 If no compliance policy is deployed to the user the device is treated as compliant, and no access restrictions will be applied.

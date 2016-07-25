@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Get ready to configure mobile app management policies | Microsoft Intune
+title: Get ready to configure MAM policies | Microsoft Intune
 description: This topic describes the pre-requisites and setting up users before you can create mobile app management policies.
 keywords:
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -85,11 +85,13 @@ To see the full list of supported Microsoft apps, go to the [Microsoft Intune mo
 
     ![Active Users page in the Office portal](../media/AppManagement/OfficePortal_AddUsers.png)
 
+    ![Edit user page in the Office portal](../media/AppManagement/OfficePortal_AssignLicenses.png)
+
 4.  To give a user the ability to access the Office portal, the Azure AD portal, and the Azure  portal, assign the **Global administrator** role to the user.
 
     ![Page for editing user roles in the Office portal](../media/AppManagement/OfficePortal_AddRoletoUser.png)
 
-5.  MAM policies are deployed to user groups in Azure Active Directory. To create user groups for your MAM policies, go to the **Groups** page in the Office portal and click the **+** icon to create a new security group.  Type a name and a description, and then click **Create**. When the group is created, you can add users to the group by clicking **Edit members**. The security group is created in Azure Active Directory.
+5.  MAM policies are deployed to user groups in Azure Active Directory. To create user groups for your MAM policies, go to the **Groups** page in the Office portal and choose the **Add a group option** in the top menu to create a new security group.  Type a name and a description, and then click **Create**. When the group is created, you can add users to the group by clicking **Edit members**. The security group is created in Azure Active Directory.
 
     ![Page for security groups in the Office portal](../media/AppManagement/OfficePortal_CreateGroups.png)
 

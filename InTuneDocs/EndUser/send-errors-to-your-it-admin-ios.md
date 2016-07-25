@@ -5,7 +5,7 @@ title: Send errors to your IT admin | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/03/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: esmich

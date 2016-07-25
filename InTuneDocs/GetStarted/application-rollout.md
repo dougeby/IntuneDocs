@@ -6,7 +6,7 @@ description: Recommendations for a phased rollout of apps in Microsoft Intune.
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,7 +50,7 @@ Consider the following:
 
 -   Check that the installer for the app you chose is supported by Intune app distribution, as described in  [Add apps with Microsoft Intune](/intune/deploy-use/add-apps).
 
--   Ensure that app distribution prerequisites are installed. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
+-   Ensure that app distribution prerequisites are installed. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).--->
 
 -   Determine that the app type is supported by Intune.
 

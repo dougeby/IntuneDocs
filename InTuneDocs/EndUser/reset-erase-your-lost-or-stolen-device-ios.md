@@ -5,7 +5,7 @@ title: Reset (erase) your lost or stolen iOS device | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/09/2016
 ms.topic: article
 ms.prod:
@@ -45,7 +45,7 @@ If a phone that has been enrolled in Intune is lost or stolen, you can reset it 
 
 You can use the following steps, or watch this video:
 
-<iframe width="560" height="315" src="http://aka.ms/embed/jhdjak" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
 
 1.  In the [Company Portal website](http://portal.manage.microsoft.com), select the device you want to erase.
 

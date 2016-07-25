@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Other options and extras for Intune evaluation subscriptions | Microsoft Intune
+title: Other options and extras for Intune evaluations | Microsoft Intune
 description: Describes alerts, notification, and reports, plus general Intune capabilities that you need to know about when you sign up for a free, 30-day evaluation of Intune
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod:

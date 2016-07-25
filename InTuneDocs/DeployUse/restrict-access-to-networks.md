@@ -5,7 +5,7 @@ title: Restrict access to networks with Cisco ISE | Microsoft Intune
 description: Use Cisco ISE with Intune so that devices are Intune enrolled and policy-compliant before they access WiFi and VPN controlled by Cisco ISE.
 keywords:
 author: nbigman
-manager: jeffgilb
+manager: Arob98
 ms.date: 06/24/2016
 ms.topic: article
 ms.prod:
@@ -18,8 +18,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: muhosabe
-#ms.suite: ems
+ms.reviewer: muhosabe
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -60,8 +60,8 @@ To enable this integration, you don’t need to do any setup in your Intune tena
     d. Choose the certificate, and then choose **Export**.  
 
 
-> [!IMPORTANT]
-> Check the expiration date of the certificate, as you will have to export and import a new certificate when this one expires.
+	> [!IMPORTANT]
+	> Check the expiration date of the certificate, as you will have to export and import a new certificate when this one expires.
 
 	
 

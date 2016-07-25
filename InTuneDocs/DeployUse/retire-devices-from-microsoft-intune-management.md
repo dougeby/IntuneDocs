@@ -2,11 +2,11 @@
 # required metadata
 
 title: Retire devices | Microsoft Intune
-description:
+description: Intune supports both a selective wipe and a full wipe to remove the device from Intune management by removing their policy and the company portal.
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

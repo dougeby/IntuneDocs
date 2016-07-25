@@ -6,8 +6,8 @@ title: App provisioning profiles | Microsoft Intune
 description: Intune gives you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are nearing expiry.
 keywords:
 author: robstackmsft
-manager: jeffgilb
-ms.date: 07/18/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

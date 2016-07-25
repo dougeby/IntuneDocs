@@ -5,8 +5,8 @@ title: Manage data transfer between iOS apps | Microsoft Intune
 description: Use this topic to understand how you can use the iOS Open in feature and mobile app management policies to manage data transfers between apps.
 keywords:
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

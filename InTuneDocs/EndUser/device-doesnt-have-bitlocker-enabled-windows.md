@@ -5,7 +5,7 @@ title: Device doesn't have BitLocker enabled | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: chrisgre
