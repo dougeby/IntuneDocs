@@ -71,7 +71,7 @@ You use the Intune Software Publisher to configure the properties of the app and
 	- **Publisher**. Enter the name of the publisher of the app.
     - **Name**. Enter the name of the app as it will be displayed in the company portal.<br>Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.
     - **Description**. Enter a description for the app. This will be displayed to users in the company portal.
-    - **URL for software information**. This is available only if you selected **Software installer**. Optionally enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
+    - **URL for software information**. This is available only if you selected **Software installer**. Optionally, enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
     - **Privacy URL**. This is available only if you selected **Software installer**. Optionally, enter the URL of a website that contains privacy information for this app. The URL will be displayed to users in the company portal.
     - **Category** (optional). Select one of the built-in app categories. This will make it easier for users to find the app when they browse the company portal.
     - **Display this as a featured app and highlight it in the company portal**. Display the app prominently on the main page of the company portal when users browse for apps.
