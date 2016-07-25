@@ -5,8 +5,8 @@ title: Create and deploy MAM policies | Microsoft Intune
 description: Use the step-by-step instructions in this topic to create and deploy mobile app management policies.
 keywords:
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,24 +56,20 @@ Before creating a MAM policy, review the [pre-requisites and support](get-ready-
     > [!TIP]
     > If this is the first time you are using the Azure portal, read [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) first to get familiar with the portal.
 
-2.  In the **Settings** blade, choose **App policy**.  This opens the **App policy** blade where you'll create new policies and edit existing policies.
-
-    ![Screenshot of the App policy blade showing a list of existing policies](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
-
-3.  Choose **Add a policy**.
+2.  In the **Settings** blade, choose **App policy**.  This opens the **App policy** blade where you'll create new policies and edit existing policies. Choose **Add a policy**.
 
     ![Screenshot of the App policy blade with the Add a policy menu option highlighted ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
-4.  Type  a name for the policy, add  a brief description, and select the platform type to create a policy for iOS or Android.  You can create more than one policy for each platform.
+3.  Type  a name for the policy, add  a brief description, and select the platform type to create a policy for iOS or Android.  You can create more than one policy for each platform.
 
     ![Screenshot of the Add a policy blade](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
-5.  Choose **Apps** to open the **Apps blade** where a list of available apps is displayed. You can select one or more apps from the list that you want to associate with the policy that you are creating. One you have selected the apps, choose the **Select** button at the bottom of the **Apps** blade to save your selection.
+4.  Choose **Apps** to open the **Apps blade** where a list of available apps is displayed. You can select one or more apps from the list that you want to associate with the policy that you are creating. One you have selected the apps, choose the **Select** button at the bottom of the **Apps** blade to save your selection.
 
     > [!IMPORTANT]
     > You must select at least one app to create a policy.
 
-6.  On the **Add a policy blade**, choose **Configure required settings** to open the policy settings blade.
+5.  On the **Add a policy blade**, choose **Configure required settings** to open the policy settings blade.
 
     There are two categories of policy settings,**Data relocation** and **Access**.  Data relocation policies are applicable to data movement in and out of the apps, while the access polices determine how the end user accesses the apps in a work context.
     To get you started the policy settings have default values.  You do not have to make any changes if the default values meet your requirements.
@@ -83,11 +79,11 @@ Before creating a MAM policy, review the [pre-requisites and support](get-ready-
 
     ![Screenshot of the settings blade along with the Add a policy blade](../media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
-7.  Choose **OK** to save this configuration.  You are now back in the **Add a policy** blade. Choose **Create** to create the policy and save your settings.
+6.  Choose **OK** to save this configuration.  You are now back in the **Add a policy** blade. Choose **Create** to create the policy and save your settings.
 
     ![Screenshot of the Add a policy blade showing that the Apps and Settings have been configured](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-    ![Screenshot of the App policy blade with the Adding a policy notification ](../media/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
+
 
 When you finish creating a policy as described in the previous procedure, it is not deployed to any users.  Follow the steps described below to deploy the policy.
 
