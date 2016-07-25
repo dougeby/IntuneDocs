@@ -4,8 +4,8 @@
 title: Choose how to manage devices | Microsoft Intune
 description:
 keywords:
-author: jeffgilb
-manager: jeffgilb
+author: robstackmsft
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
