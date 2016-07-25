@@ -2,11 +2,11 @@
 # required metadata
 
 title: Renew a Symantec enterprise code-signing certificate to use with Microsoft Intune | Microsoft Intune
-description:
+description: Guidance to renew Symantec certificates used to manage certain Windows and Windows Phone mobile devices
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
