@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Android and Samsung KNOX policy setting in Microsoft Intune
+# Android and Samsung KNOX policy settings in Microsoft Intune
 
 Intune supplies a range of built-in general settings that you can configure on Android devices. Additionally, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to create custom settings that are not available from Intune.
 
@@ -51,14 +51,14 @@ If the setting you are looking for does not appear in this topic, you might be a
 |----------------|-|----------------|----------------|
 |**Require a password to unlock mobile devices**|Specifies whether to require a password on supported devices.|Yes|Yes|
 |**Minimum password length**|Specifies the minimum length of the password.|Yes|Yes|
-|**Number of repeated sign-in failures to allow before the device is wiped**|Specifies the number of failed sign-in attempts to allow before the device is wiped.|Yes|Yes|
+|**Number of repeated sign-in failures to allow before the device is wiped**|Specifies the number of sign-in failures to allow before the device is wiped.|Yes|Yes|
 |**Minutes of inactivity before screen turns off**|Specifies the number of minutes of inactivity before the device automatically locks.|Yes|Yes|
 |**Password expiration (days)**|Specifies the number of days before a password must be changed.|Yes|Yes|
 |**Remember password history**|Specifies the number of previously used passwords to remember.|Yes|Yes|
 |**Remember password history**--**Prevent reuse of previous passwords**|Prevents reuse of previous passwords.|Yes|Yes|
-|**Password quality**|Specify the password complexity level that's required and whether biometric devices can be used.|Yes|Yes|
+|**Password quality**|Specifies the password complexity level that's required and whether biometric devices can be used.|Yes|Yes|
 |**Allow fingerprint unlock**|Allows the use of a fingerprint to unlock the device.|No|Yes|
-|**Allow Smart Lock and other trust agents**<br>(Android 5 and later)|Lets you control the Smart Lock feature on compatible Android devices. This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag.) You can use this setting to prevent end users from configuring Smart Lock.|Yes|No|
+|**Allow Smart Lock and other trust agents**<br>(Android 5 and later)|Lets you control the Smart Lock feature on compatible Android devices. This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag.) You can use this setting to prevent users from configuring Smart Lock.|Yes|No|
 
 ### Encryption settings
 
@@ -95,7 +95,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow autofill**|Allows the autofill function of the web browser to be used.|No|Yes|
 |**Allow pop-up blocker**|Allows the use of the pop-up blocker in the web browser.|No|Yes|
 |**Allow cookies**|Allows the device web browser to use cookies.|No|Yes|
-|**Allow active scripting**|Allow the device web browser to use active scripting.|No|Yes|
+|**Allow active scripting**|Allows the device web browser to use active scripting.|No|Yes|
 
 ### Application settings--apps
 
@@ -144,7 +144,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |----------------|--------------------|
 |**Report noncompliance when users install the listed apps**|Lists the apps that are not managed by Intune and which you do not want users to install and run. If users install one of these apps, it will be listed in the noncompliant apps report.|
 |**Do not report noncompliance when users install the listed apps**|Lists the apps that you want to allow. To remain compliant, users must not install any apps that are not listed. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify the name of the app, the app publisher (optional), and the URL of the app in the app store.<br /><br />For more information, see [How to specify URLs](#how-to-specify-urls) later in this topic.|
+|**Add**|Adds an app to the selected list. Specify the name of the app, the app publisher (optional), and the URL of the app in the app store.<br /><br />For more information, see [Specify URLs to app stores](#specify-URLs-to-app-stores) later in this topic.|
 |**Import Apps**|Imports a list of apps that you have specified in a comma-separated values file. Use the format, application name, publisher, and app URL in the file.|
 |**Edit**|Lets you edit the name, publisher, and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
