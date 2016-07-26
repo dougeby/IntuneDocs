@@ -144,7 +144,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |----------------|--------------------|
 |**Report noncompliance when users install the listed apps**|Lists the apps that are not managed by Intune and which you do not want users to install and run. If users install one of these apps, it will be listed in the noncompliant apps report.|
 |**Do not report noncompliance when users install the listed apps**|Lists the apps that you want to allow. To remain compliant, users must not install any apps that are not listed. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify the name of the app, the app publisher (optional), and the URL of the app in the app store.<br /><br />For more information, see [Specify URLs to app stores](#specify-URLs-to-app-stores) later in this topic.|
+|**Add**|Adds an app to the selected list. Specify the name of the app, the app publisher (optional), and the URL of the app in the app store.<br /><br />For more information, see [Specify URLs to app stores](#specify-urls-to-app-stores) later in this topic.|
 |**Import Apps**|Imports a list of apps that you have specified in a comma-separated values file. Use the format, application name, publisher, and app URL in the file.|
 |**Edit**|Lets you edit the name, publisher, and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
