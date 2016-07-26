@@ -5,7 +5,7 @@ title: Custom configurations for VPN profiles | Microsoft Intune
 description: Use custom configurations to create VPN profiles in Intune.
 keywords:
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
