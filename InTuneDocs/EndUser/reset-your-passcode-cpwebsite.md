@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: arob98
-ms.date: 04/28/2016
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ To reset your passcode:
 
 2.  Tap **Reset Passcode**.
 
-    ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
+    !resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  Tap **Sign out**, and then sign back in with your work or school credentials. You have to sign back in within five minutes.
 
