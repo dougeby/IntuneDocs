@@ -70,7 +70,7 @@ L2TP|iOS custom profile|No |No |No |No|Yes (OMA-URI)|Yes|
 
 ## Methods of securing VPN profiles
 
-VPN profiles can use a number of different connection types and protocols from various manufacturers. These connections are typically secured through one of two methods.
+VPN profiles can use a number of different connection types and protocols from different manufacturers. These connections are typically secured through one of two methods.
 
 ### Certificates
 
