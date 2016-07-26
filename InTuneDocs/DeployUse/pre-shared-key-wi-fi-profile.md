@@ -5,7 +5,7 @@ title: Wi-Fi using PSK | Microsoft Intune
 description: Use Custom Configuration to create a Wi-Fi profile with a pre-shared key.
 keywords:
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
@@ -46,7 +46,10 @@ Note:
 
    c.	**Data Type**: Set to "String(XML)"
 
-   d.	**OMA-URI**: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.	**OMA-URI**:
+
+- For Android: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+- For Windows, ./Vendor/MSFT/WiFi/Profile/<SSID>/WlanXml
 
 Note: Be sure to include the dot character at the beginning.
 
