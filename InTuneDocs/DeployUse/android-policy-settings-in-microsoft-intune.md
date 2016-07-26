@@ -121,7 +121,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Allow voice roaming**|Allows voice roaming when the device is on a cellular network.|No|Yes|
-|**Allow data roaming**|Allow data roaming when the device is on a cellular network.|No|Yes|
+|**Allow data roaming**|Allows data roaming when the device is on a cellular network.|No|Yes|
 |**Allow SMS/MMS messaging**|Allows the use of SMS and MMS messaging on the device.|No|Yes|
 
 ### Device capabilities settings--features
@@ -199,7 +199,7 @@ This capability is intended to allow you to deploy Android settings that are not
     |--------|--------------------|
     |**Setting name**|Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.|
     |**Setting description**|Provide a description that gives an overview of the setting and other relevant information to help you locate it.|
-    |**Data type**|Select the date type in which you will specify this OMA-URI setting. Choose from **String, String (XML), Date and time, Integer, Floating point**, or **Boolean**.|
+    |**Data type**|Select the data type in which you will specify this OMA-URI setting. Choose from **String, String (XML), Date and time, Integer, Floating point**, or **Boolean**.|
     |**OMA-URI (case sensitive)**|Specify the OMA-URI you want to supply a setting for.|
     |**Value**|Specify the value to associate with the OMA-URI that you specified previously.|
 
