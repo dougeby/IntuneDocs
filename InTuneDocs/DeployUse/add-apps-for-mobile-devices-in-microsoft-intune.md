@@ -81,7 +81,7 @@ You use the Intune Software Publisher to configure the properties of the app and
 
 		![Software description example](./media/ios-software-description.png)
 
-4.  On the **Requirements** page, select the requirements that must be met before the app can be installed on a device. For example, for an app package for iOS, you can select the minimum version of iOS required. And you can select the type of device that it must be, like an iPhone or an iPad.
+4.  On the **Requirements** page, select the requirements that must be met before the app can be installed on a device. For example, for an app package for iOS, you can select the minimum version of iOS required. Additionally, you can select the type of device that it must be, like an iPhone or an iPad.
 
     > [!TIP]
     > The **Requirements** page is not displayed for all types of apps.
@@ -94,9 +94,7 @@ You use the Intune Software Publisher to configure the properties of the app and
 
 The app is displayed on the **Apps** node of the **Apps** workspace.
 
-## Examples
-
-### Deploying .msi applications to Windows 10 devices
+## Example - Deploying .msi applications to Windows 10 devices
 In this four-minute video, you'll learn about how to deploy Windows Installer (.msi) applications to enrolled devices that run Windows 10.<br><br>
 
 <iframe src="https://channel9.msdn.com/Series/How-to-Control-the-Uncontrolled/6--How-to-Deploy-MSI-Applications-to-Windows-10-Using-Intune-and-Mobile-Device-Management-MDM/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
