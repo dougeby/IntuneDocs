@@ -2,11 +2,11 @@
 # required metadata
 
 title: Troubleshoot Exchange Connector | Microsoft Intune
-description: What to do when you.
+description: Troubleshoot issues related to the Intune Exchange connector.
 keywords:
 author: nbigman
-manager: arob98
-ms.date: 07/21/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
