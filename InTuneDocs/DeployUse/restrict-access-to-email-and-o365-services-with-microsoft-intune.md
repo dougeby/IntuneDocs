@@ -5,7 +5,7 @@ title: Restrict access to email and O365 services | Microsoft Intune
 description: This topic describes how conditional can be used to allow only compliant devices to access company email and company data on SharePoint Online and other services.
 keywords:
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod:

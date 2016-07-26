@@ -2,11 +2,11 @@
 # required metadata
 
 title: Introduction to Microsoft Intune | Microsoft Intune
-description:
+description: Learn how Intune is the mobile device management component of the Enterprise Mobility + Security solution.
 keywords:
 author: Lindavr
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

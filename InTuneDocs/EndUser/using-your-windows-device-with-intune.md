@@ -6,7 +6,7 @@ description: List of links to tasks that you can do on your Windows device when 
 keywords:
 author: Staciebarker
 manager: arob98
-ms.date: 07/20/2016
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Using your Windows device with Intune
 
-Use these steps  for tasks that you need to do on your Windows device or computer when your company is using Microsoft Intune.
+This page contains links to all of the tasks that end users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users follow to do a variety of tasks, which are grouped into categories: enrollment-related information, management tasks, and compliance issues.
 
 ## Company Portal app installation and Intune enrollment
 
