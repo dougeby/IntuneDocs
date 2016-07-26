@@ -6,7 +6,7 @@ description: Describes how to enroll an Android device in Intune
 keywords:
 author: staciebarker
 manager: arob98
-ms.date: 06/14/2016
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,7 +50,27 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  If you're using Android 6.0 or later, do this step. Otherwise, go to the next step. 
+5.  Sign in to the Company Portal app using your work or school account and password, and tap **Sign in**.
+
+	![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+
+6.  On the **Company Access Setup** screen, tap **BEGIN**.
+
+	![Company access setup screen](./media/and-enroll-4a-comp-access-setup.png)
+
+7.  On the **Why enroll your device?** screen, read about what you can do when you enroll your device, and then tap **CONTINUE**.
+
+	![Why enroll your device screen](./media/and-enroll-4b-why-enroll.png)
+
+8.  Review a list of what your IT administrator can and can't see on your device, and tap **CONTINUE**.
+
+	![Privacy settings](./media/and-enroll-4c-we-care-privacy.png)
+
+9.  On the **What comes next** screen, read about what happens during enrollment, and then tap **ENROLL**.
+
+	![What comes next screen](./media/and-enroll-4d-what-comes-next.png)
+
+10.  If you're using Android 6.0 or later, do this step. Otherwise, go to the next step. 
 
 	If your IT administrator has set up certain policies, you may see the following messages:
 	-	**Allow Company Portal to make and manage phone calls?**
@@ -68,26 +88,6 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never accesses your contacts!** Google controls the message text, and Microsoft cannot change it. When you allow access, it only allows the Company Portal app to create, use, and manage your work account.
 
 	If you deny access, the message will appear again the next time you tap **Send Data**, but you can turn off future messages by tapping the **Never ask again** check box. If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Storage**, and then turn on the permission.
-
-6.  Sign in to the Company Portal app using your work or school account and password, and tap **Sign in**.
-
-	![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
-
-7.  On the **Company Access Setup** screen, tap **BEGIN**.
-
-	![Company access setup screen](./media/and-enroll-4a-comp-access-setup.png)
-
-8.  On the **Why enroll your device?** screen, read about what you can do when you enroll your device, and then tap **CONTINUE**.
-
-	![Why enroll your device screen](./media/and-enroll-4b-why-enroll.png)
-
-9.  Review a list of what your IT administrator can and can't see on your device, and tap **CONTINUE**.
-
-	![Privacy settings](./media/and-enroll-4c-we-care-privacy.png)
-
-10.  On the **What comes next** screen, read about what happens during enrollment, and then tap **ENROLL**.
-
-	![What comes next screen](./media/and-enroll-4d-what-comes-next.png)
 
 11.  On the **Activate device administrator** screen, tap **Activate**.
 

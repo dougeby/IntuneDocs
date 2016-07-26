@@ -35,7 +35,7 @@ The Intune Company Portal is a tool that provides users with access to company d
 , and [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **The Company Portal website**: A website that provides access from a [supported browser](supported-web-browsers.md). The URL is [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). Learn more about this website at [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website).
+- **The Company Portal website**: A website, accessed from a [supported browser](supported-web-browsers.md), that enables end users to do most of the same tasks they can do from their platform-specific Company Portal app. The URL is [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Learn more about this website at [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website).
 
 Some of the tasks that users can do in the Company Portal are:
 
