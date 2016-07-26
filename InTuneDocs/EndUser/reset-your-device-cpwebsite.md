@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: arob98
-ms.date: 04/28/2016
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,9 @@ To reset your device:
 
 2.  Tap **Reset**.
 
-    ![reset-device](./media//iwp-1-tap-reset-passcode.png)
+    ![reset-device-option-on-company-portal-website](./media//iwp-screen-with-all-options.png)
+
+3. Read the warning message that indicates you are about to reset your device to the factory default settings, and then tap **Reset** to reset your device.
 
 Your device has now been reset.
 
