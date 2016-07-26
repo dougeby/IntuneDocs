@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: arob98
-ms.date: 04/28/2016
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,6 +47,10 @@ To use Remote Lock to lock your device:
 1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the name of the device you want to lock.
 
 2.	Tap **Remote Lock**.
+
+	![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+
+3.	Read the warning message, indicating that you are about to lock your device, and then tap **Remote Lock** to have the Company Portal website try to lock your device.
 
 	Once you tap **Remote Lock**, a “Remote lock pending” status appears.  When Remote Lock succeeds, the status changes to “Remote lock successful.”
 
