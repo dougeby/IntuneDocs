@@ -5,7 +5,7 @@ title: Device doesn't have Secure Boot enabled | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: de881f1b-7622-4ec2-8bf8-025f71ca9887
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: chrisbal

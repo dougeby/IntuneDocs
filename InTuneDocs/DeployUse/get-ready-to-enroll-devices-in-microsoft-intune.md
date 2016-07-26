@@ -2,11 +2,11 @@
 # required metadata
 
 title: Get ready to enroll devices | Microsoft Intune
-description: Set up mobile device management (MDM) prerequisites and get ready to enroll different operating systems. 
+description: Set up mobile device management (MDM) prerequisites and get ready to enroll different operating systems.
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

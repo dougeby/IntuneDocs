@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Install the Windows PC client with Microsoft Intune | Microsoft Intune
+title: Install the Windows PC client | Microsoft Intune
 description: Use this guide to help you get your Windows PCs managed by the Microsoft Intune client software.
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -141,3 +141,4 @@ Use one of the following procedures to help you monitor and validate successful 
 
 ### See Also
 [Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
+[Troubleshoot client setup](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune)

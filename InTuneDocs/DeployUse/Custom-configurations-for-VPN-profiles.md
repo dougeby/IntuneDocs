@@ -6,7 +6,7 @@ description: Use custom configurations to create VPN profiles in Intune.
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -112,19 +112,19 @@ For any questions about how these settings should be used, or more details about
 https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
 
 ## URI settings for Android per-app VPN on PulseSecure
-### CUSTOM URI FOR PACKAGE LIST 
+### CUSTOM URI FOR PACKAGE LIST
 -  Data type = String
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList 
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
 -  Value = Delimiter separated package list.
    - Delimiters:  semicolon (;), colon (:), comma (,), Pipe (|)
 
-Examples: 
+Examples:
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
 ### CUSTOM URI FOR MODE (OPTIONAL)
 - Data Type = String
-- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode 
+- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
 > Notes
 > - Use the same *name* that you assigned to the custom profile

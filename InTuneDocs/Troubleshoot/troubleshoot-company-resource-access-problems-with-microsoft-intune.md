@@ -5,7 +5,7 @@ title: Troubleshoot company resource access problems | Microsoft Intune
 description: Error and status codes in this topic to help you troubleshoot resource access problems.
 keywords:
 author: Nbigman
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
@@ -18,7 +18,7 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

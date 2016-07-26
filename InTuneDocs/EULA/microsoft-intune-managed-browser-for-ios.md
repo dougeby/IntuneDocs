@@ -4,8 +4,8 @@
 title: Microsoft Intune Managed Browser for iOS | Microsoft Intune
 description:
 keywords:
-author: 
-manager: jeffgilb
+author: staciebarker
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

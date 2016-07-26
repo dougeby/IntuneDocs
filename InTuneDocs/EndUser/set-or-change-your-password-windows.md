@@ -5,7 +5,7 @@ title: Set or change your passcode | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 5/25/2016
 ms.topic: article
 ms.prod:
@@ -15,7 +15,7 @@ ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 #ms.reviewer: priyar

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Your paid Microsoft Intune or Enterprise Mobility subscription might include a license to use certain downloadable software | Microsoft Intune
-description:
+title: Downloadable software | Microsoft Intune
+description: Review software that is available for download that might be available with your Intune or EMS subscription.
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 06/08/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -18,7 +18,7 @@ ms.assetid: 9d031fa7-9c07-48c5-b915-6525aea54870
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: amyro
+ms.reviewer: amyro
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

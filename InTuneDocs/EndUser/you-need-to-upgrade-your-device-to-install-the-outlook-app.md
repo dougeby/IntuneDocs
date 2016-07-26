@@ -4,7 +4,7 @@ title: You need to upgrade your device to install the Outlook app | Microsoft In
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod:
@@ -14,7 +14,7 @@ ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58c
 
 # optional metadata
 
-#ROBOTS: noindex,nofollow
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: vadona

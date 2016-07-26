@@ -12,8 +12,11 @@
 ### [Start a trial & deploy iOS PIN policy](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
 ### [Set up email access for iOS devices](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [Common scenarios](common-ways-to-use-intune.md)
-
-<!--- ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)--->
+## [Quick start guides](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Prevent company data leaks from Office 365 mobile apps](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Publish mobile apps to your users](publish-mobile-apps-to-users.md)
+### [Protect Windows PCs against malware threats](protect-pcs-against-malware-threats.md)
+### [Simplify email configuration on mobile devices](simplify-email-configuration-on-mobile-devices.md)
 
 # [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->

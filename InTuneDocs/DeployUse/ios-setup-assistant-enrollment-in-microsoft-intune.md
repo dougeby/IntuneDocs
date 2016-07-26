@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Setup Assistant enrollment for iOS devices with Microsoft Intune | Microsoft Intune
+title: Enroll iOS devices with Setup Assistant | Microsoft Intune
 description: Enroll corporate-owned iOS devices using the Apple Configurator tool to factory-reset the device and prepares it to run the Setup Assistant.
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,6 +33,7 @@ Intune supports the enrollment of corporate-owned iOS devices using the [Apple C
 Using Apple Configurator you can factory reset iOS devices and prepares them for setup by the device’s new user.  This method requires you to USB-connect the iOS device to a Mac computer to setup corporate enrollment and assumes you are using Apple Configurator 2.0. Most scenarios require that the policy applied to the iOS device include *user affinity* to enable the Intune Company Portal app.
 
 **Prerequisites**
+* [iOS enrollment enabled](set-up-ios-and-mac-management-with-microsoft-intune.md) by installing an APNs certificate
 * Physical access to iOS devices - Devices must be unconfigured (factory reset) without password protection
 * Device serial numbers - [How to get an iOS serial number](https://support.apple.com/en-us/HT204308)
 * USB connection cables
@@ -44,8 +45,6 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
 2.  **Create a profile for devices**
     A device enrollment profile defines the settings applied to a group of devices. If you have not already, create a device enrollment profile for iOS devices enrolled using Apple Configurator.
-
-    ###### To create a profile
 
     1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Owned Devices**, and then choose **Add…**.
 

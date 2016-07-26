@@ -5,8 +5,8 @@ title: Windows edition upgrade policy settings | Microsoft Intune
 description: Learn how to automatically upgrade Windows 10 devices to the latest version with Intune.
 keywords:
 author: robstackmsft
-manager: jeffgilb
-ms.date: 07/13/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

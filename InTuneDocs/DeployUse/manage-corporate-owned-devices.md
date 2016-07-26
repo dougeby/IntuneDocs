@@ -5,8 +5,8 @@ title: Manage corporate-owned devices | Microsoft Intune
 description: Bring corporate-owned devices (COD) into management in a variety of ways depending upon the device, how it was purchased, and organization needs.
 keywords:
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ Organizations can use Intune to manage large numbers of mobile devices with a si
 
 ## Enroll corporate-owned Windows 10 desktops
 
-If your organization has Azure Active Directory Premium (AADP) or Enterprise Management Suite (EMS), you can [enroll Windows 10 for enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) and they will be automatically tagged as "corporate-owned" when user join devices to your domain.
+If your organization has Azure Active Directory Premium (AADP) or Enterprise Management Suite (EMS), you can [enroll Windows 10 for enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) and they will be automatically tagged as "corporate-owned" when users add their work or school account.
 
 ## Identify devices as corporate-owned
 

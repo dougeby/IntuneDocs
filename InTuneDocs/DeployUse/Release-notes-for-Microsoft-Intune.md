@@ -5,7 +5,7 @@ title: Release notes for Microsoft Intune | Microsoft Intune
 description: Intune release notes
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
