@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Android and Samsung KNOX policy settings in Microsoft Intune
 
-Intune supplies a range of built-in general settings that you can configure on Android devices. Additionally, you can specify OMA-URI values to create custom settings that are not available from Intune.
+Intune supplies a range of built-in general settings that you can configure on Android devices. Additionally, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to create custom settings that are not available from Intune.
 
 ## General configuration policy
 
@@ -42,7 +42,7 @@ Use the Intune **Android general configuration policy** to configure settings fo
 > [!TIP]
 > You can configure terms and conditions for users to ensure that they acknowledge that apps on their device, including personal apps, will be evaluated, and that noncompliant apps will either be blocked or reported as noncompliant. Users must accept these terms and conditions before they can enroll their device and use the company portal to get apps. For more information about using terms and conditions, see [Terms and condition policy settings in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
-If the setting you are looking for does not appear in this topic, you might be able to create it by using an Android custom policy that lets you use OMA-URI settings to control the device. For more information, see **Custom policy settings** later in this topic.
+If the setting you are looking for does not appear in this topic, you might be able to create it by using an Android custom policy that lets you use OMA-URI settings to control the device. For more information, go to [Custom policy settings](#AnchorText) <a id="Custom policy settings"> </a> later in this topic.
 
 ### Password settings
 
@@ -55,7 +55,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Password expiration (days)**|Specifies the number of days before a password must be changed.|Yes|Yes|
 |**Remember password history**|Specifies the number of previously used passwords to remember.|Yes|Yes|
 |**Remember password history**--**Prevent reuse of previous passwords**|Prevents re-using previously used passwords.|Yes|Yes|
-|**Password quality**|Specify the password complexity level that's required and  whether biometric devices can be used.|Yes|Yes|
+|**Password quality**|Specify the password complexity level that's required and whether biometric devices can be used.|Yes|Yes|
 |**Allows fingerprint unlock**|Allow the use of a fingerprint to unlock the device.|No|Yes|
 |**Allow Smart Lock and other trust agents**<br>(Android 5 and later)|Lets you control the Smart Lock feature on compatible Android devices. This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag.) You can use this setting to prevent end users from configuring Smart Lock.|Yes|No|
 
@@ -80,7 +80,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |----------------|----------------------------|----------------|
 |**Allow Google backup**|Allows the use of Google backup.|No|Yes|
 
-### Cloud settings – accounts and synchronization
+### Cloud settings--accounts and synchronization
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
@@ -91,7 +91,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Allow web browser**|Specifies whether the device web browser can be used.|No|Yes|
-|**Allow autofill**|Allow the Autofill function of the web browser to be used.|No|Yes|
+|**Allow autofill**|Allow the autofill function of the web browser to be used.|No|Yes|
 |**Allow pop-up blocker**|Allows the use of the pop-up blocker in the web browser.|No|Yes|
 |**Allow cookies**|Allow the device web browser to use cookies.|No|Yes|
 |**Allow active scripting**|Allow the device web browser to use active scripting.|No|Yes|
@@ -143,7 +143,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |----------------|--------------------|
 |**Report noncompliance when users install the listed apps**|Lists the apps that are not managed by Intune and which you do not want users to install and run. If users install one of these apps, it will be listed in the noncompliant apps report.|
 |**Do not report noncompliance when users install the listed apps**|Lists the apps that you want to allow. To remain compliant, users must not install any apps that are not listed. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify the name of the app, the app publisher (optional), and the URL of the app in the app store.<br /><br />For more information, see How to specify URLs to app stores later in this topic.|
+|**Add**|Adds an app to the selected list. Specify the name of the app, the app publisher (optional), and the URL of the app in the app store.<br /><br />For more information, see [How to specify URLs](#AnchorText) <a id="How to specify URLs"> </a> later in this topic.|
 |**Import Apps**|Imports a list of apps that you have specified in a comma-separated values file. Use the format, application name, publisher, and app URL in the file.|
 |**Edit**|Lets you edit the name, publisher, and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
@@ -166,19 +166,19 @@ Use the **Noncompliant Apps Report** to view the compliance of allowed and block
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Reports** &gt; **Noncompliant Apps Report**.
 
-2.  Select the device groups that you want to check, whether you want to check for compliant apps, noncompliant apps, or both, then choose **View Report**.
+2.  Select the device groups that you want to check. Then choose whether you want to check for compliant apps, noncompliant apps, or both. Finally, choose **View Report**.
 
-#### How to specify URLs to app stores
+#### Specify URLs to app stores
 To specify an app URL in the compliant and noncompliant apps list, take the following steps:
 
 In the [Apps section of Google Play](https://play.google.com/store/apps), search for the app you want to use.
 
 Open the installation page for the app, and then copy the URL to the clipboard. You can now use this as the URL in either the compliant or noncompliant apps list.
 
-**Example:** Search Google Play for Microsoft Office Mobile. The URL you use will be **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Example: Search Google Play for Microsoft Office Mobile. The URL you use will be **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ## Custom policy settings
-Use the Microsoft Intune **Android custom configuration policy** to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
+Use the Microsoft Intune **Android custom configuration policy** to deploy OMA-URI settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
 
 This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies.
 
@@ -198,7 +198,7 @@ This capability is intended to allow you to deploy Android settings that are not
     |--------|--------------------|
     |**Setting name**|Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.|
     |**Setting description**|Provide a description that gives an overview of the setting and other relevant information to help you locate it.|
-    |**Data type**|Select the date type in which you will specify this OMA-URI setting. Choose from  **String, String (XML), Date and time, Integer, Floating point**, or **Boolean**.|
+    |**Data type**|Select the date type in which you will specify this OMA-URI setting. Choose from **String, String (XML), Date and time, Integer, Floating point**, or **Boolean**.|
     |**OMA-URI (case sensitive)**|Specify the OMA-URI you want to supply a setting for.|
     |**Value**|Specify the value to associate with the OMA-URI you specified previously.|
 
@@ -224,7 +224,7 @@ Although Intune supports Wi-Fi profiles for Android devices, this feature does n
     <!--
     WEP Wifi Profile
                     <Name of wifi profile> = Name of profile
-                    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
                     <WEP password> = Password to connect to the network
     -->
     <WLANProfile
