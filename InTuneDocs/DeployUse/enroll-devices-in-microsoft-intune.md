@@ -95,7 +95,7 @@ Specifies whether the enrollment method supports “User Affinity” which conne
   -	Conditional access to email and company data
   -	Company Portal app
 
-[User Affinity](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#enrollment-of-company-owned-ios-devices-with-user-affinity) ([Back to the table](#overview-of-device-enrollment-methods))
+[User Affinity](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#user-affinity-for-ios-corporate-owned-devices-using-the-company-portal) ([Back to the table](#overview-of-device-enrollment-methods))
 
 ### Lock
 Specifies whether the device can be locked to prevent the user from removing the Intune policy, effectively removing the device from management. For iOS devices, locking the device requires that it be in Supervised mode.
