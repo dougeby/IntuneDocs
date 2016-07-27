@@ -49,17 +49,17 @@ The Microsoft Intune Center is installed on all managed computers. You can confi
 |Policy setting|Details|
 |------------------|--------------------|
 |**Name**|The name of the administrator who manages the computer.<br /><br />Maximum length: 40 characters|
-|**Phone number**|The telephone number of the administrator who manages the computer.<br /><br />Maximum length: 20 characters|
+|**Phone number**|The phone number of the administrator who manages the computer.<br /><br />Maximum length: 20 characters|
 |**Email address**|The email address of the administrator who manages the computer.<br /><br />Maximum length: 40 characters|
-|**Web site name**|The name of your support website for users.<br /><br />Maximum length: 40 characters|
-|**Web site URL**|The URL of your support website.<br /><br />Maximum length: 150 characters|
-|**Notes**|A note that is displayed to users.<br /><br />Maximum length: 120 characters|
+|**Website name**|The name of your support website for users.<br /><br />Maximum length: 40 characters|
+|**Website URL**|The URL of your support website.<br /><br />Maximum length: 150 characters|
+|**Notes**|Notes that are displayed to users.<br /><br />Maximum length: 120 characters|
 
 ### Manage software updates settings
-Use policies to configure the settings that managed computers use to check for, and download software updates from Microsoft and from third parties. For more information, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+Use policies to configure the settings that managed computers use to check for, and download, software updates from Microsoft and from third parties. For more information, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
 ### Manage Endpoint Protection settings
-Use policies to configure settings for Endpoint Protection, which you then deploy to managed computers. This includes scan schedules, actions to take when malware is detected, and more. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+Use policies to configure settings for Endpoint Protection, which you then deploy to managed computers. These settings include scan schedules, actions to take when malware is detected, and more. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 ## View hardware and software inventory
 Intune collects detailed information about the hardware and software of managed computers. Use the information in the following procedures to learn how to create:
@@ -78,17 +78,17 @@ Intune collects detailed information about the hardware and software of managed 
 
 3.  Choose **View Report** to open the **Computer Inventory Report** in a new window.
 
-    You can sort the report by any of the columns (such as **Name**, **Chassis Type** or **Manufacturer**) by selecting each column heading.
+    You can sort the report by any of the columns, such as **Name**, **Chassis Type**, or **Manufacturer**, by selecting each column heading.
 
 ### To display software that's installed on your computers
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Reports** &gt; **Detected Software Reports**.
 
-2.  On the **Create New Report** page, accept the default values or customize them to filter the results that will be returned by the report. For example, you could select that only software published by Microsoft will be displayed in the report.
+2.  On the **Create New Report** page, accept the default values or customize them to filter the results that will be returned by the report. For example, in the report, you could choose to display only software that is published by Microsoft.
 
 3.  Choose **View Report** to open the **Detected Software Report** in a new window.
 
-    You can sort the report by any of the columns, like **Name**, **Publisher** or **Category** by selecting each column heading. You can expand the updates in the list to show more detail (such as the computers on which it is installed) by choosing the directional arrow next to the list item.
+    You can sort the report by any of the columns, such as **Name**, **Publisher**, or **Category**, by selecting each column heading. You can expand the updates in the list to show more detail (such as the computers on which the updates are installed) by choosing the directional arrow next to the list item.
 
 ### To refresh computer inventory to ensure it is current
 
@@ -100,7 +100,7 @@ Intune collects detailed information about the hardware and software of managed 
 
 4.  To view the task status, choose **Remote Tasks** in the lower right corner of the page.
 
-    The **Task Status** dialog box displays showing current remote tasks, task status, device name, and any reported errors, and provides a link to troubleshooting information.
+    The **Task Status** dialog box displays, showing current remote tasks, task status, device name, and any reported errors, and provides a link to troubleshooting information.
 
 
 ## Remotely restart a Windows PC
@@ -119,7 +119,7 @@ Intune collects detailed information about the hardware and software of managed 
 
 2.  Select the devices you want to retire, and then choose **Retire/Wipe**.
 
-To re-enroll a computer into Intune, reinstall the client software on the computer by using the information in the [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) topic.
+To re-enroll a computer into Intune, reinstall the client software on the computer by using the information in the topic [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 If a computer cannot connect to Intune, a message is displayed in the **Dashboard** workspace.
 
@@ -133,7 +133,7 @@ When you retire a computer:
 
 -   Microsoft Intune Endpoint Protection is removed from the computer. If the computer has another endpoint application installed and it is disabled, that application can be re-enabled after Microsoft Intune Endpoint Protection is removed. This ensures that your computers are protected.
 
--   All policies are removed from the computer and the values that were set by the policies will be changed.
+-   All policies are removed from the computer and the values that were set by the policies are changed.
 
 -   The computer no longer receives software updates or malware definition updates from the Intune service.
 
