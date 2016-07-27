@@ -109,7 +109,7 @@ Intune collects detailed information about the hardware and software of managed 
 
 2.  Select one or more computers, and then choose **Remote Tasks** &gt; **Restart Computer**.
 
-3.  To view the task status, choose **Remote Tasks** in the bottom right corner of the page.
+3.  To view the task status, choose **Remote Tasks** in the lower right corner of the page.
 
 4.  In the **Task Status** dialog box, review the current remote tasks, task status, device name, and any reported errors.
 
@@ -117,7 +117,7 @@ Intune collects detailed information about the hardware and software of managed 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the computer that you want to retire).
 
-2.  Select the devices you want to retire, and then choose **Retire/Wipe**.
+2.  Select the devices that you want to retire, and then choose **Retire/Wipe**.
 
 To re-enroll a computer into Intune, reinstall the client software on the computer by using the information in the topic [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
@@ -140,7 +140,7 @@ When you retire a computer:
 -   Depending on how they are configured, retired computers can continue to receive updates by using Windows Server Update Services, Windows Update, or Microsoft Update.
 
     > [!IMPORTANT]
-    > If the client software was installed by using a Group Policy Object (GPO), you must remove the GPO before you remove the client software. This  prevents the software from being reinstalled.
+    > If the client software was installed by using a Group Policy Object (GPO), you must remove the GPO before you remove the client software. This prevents the software from being reinstalled.
 
     If the client fails to uninstall, read [Troubleshoot endpoint protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
 
@@ -153,7 +153,7 @@ Before you can deploy software to a user, you must link the user to a computer. 
 
 2.  Select the computer that you want to link a user, and then choose **Link User**.
 
-    The **Link User** dialog box displays a list of available users with their display name, user ID, and the number of computers to which each user is currently linked. If a user is already linked to the selected computer, that user’s name and user ID are displayed under **Current user**. If the computer is not linked to any user, **No User** appears under **Current User**.
+    The **Link User** dialog box displays a list of available users with their display names, user IDs, and the number of computers to which each user is currently linked. If a user is already linked to the selected computer, that user’s name and ID are displayed under **Current user**. If the computer is not linked to any user, **No User** appears under **Current User**.
 
 3.  Do one of the following:
 
