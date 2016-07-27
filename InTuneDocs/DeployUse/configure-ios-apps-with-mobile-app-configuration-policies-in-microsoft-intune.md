@@ -65,6 +65,7 @@ You do not deploy these policies directly to users and devices. Instead, you ass
 
 The format of the XML property list will vary depending on the app you are configuring. Contact the supplier of the app for details about the exact format to use.
 	Intune supports the following data types in a property list:
+	
 	- &lt;integer&gt;
 	- &lt;real&gt;
 	- &lt;string&gt;
