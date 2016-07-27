@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: arob98
-ms.date: 05/31/2016
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ To learn about what happens if you reset your device, see [What happens if you r
 
 ## To reset your device from the Company Portal app
 
-1.  In your browser, open the [Company Portal website](http://portal.manage.microsoft.com), and sign in to your work or school account.
+1.  From another enrolled device, open the Company Portal app, and sign in using your work or school account.
 
 2.  Tap **My Devices** and select the name of the lost of stolen  device.
 
@@ -47,7 +47,7 @@ To learn about what happens if you reset your device, see [What happens if you r
 
 You can use the following steps, or watch this video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=K-Vi7lNfaMk&feature=youtu.be" frameborder="0" allowfullscreen></iframe> 
+<iframe width="675" height="379" src="https://www.youtube.com/embed/6e73o7f8gxE" frameborder="0" allowfullscreen></iframe>
 
 1.  In your browser, open your [Company Portal website](http://portal.manage.microsoft.com), and sign in to your work account.
 

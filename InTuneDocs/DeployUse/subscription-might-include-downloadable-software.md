@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Your paid Microsoft Intune or Enterprise Mobility subscription might include a license to use certain downloadable software | Microsoft Intune
+title: Downloadable software | Microsoft Intune
 description: Review software that is available for download that might be available with your Intune or EMS subscription.
 keywords:
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
