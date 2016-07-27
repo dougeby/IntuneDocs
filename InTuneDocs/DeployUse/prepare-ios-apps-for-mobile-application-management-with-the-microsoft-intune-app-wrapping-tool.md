@@ -6,7 +6,7 @@ description: Use the information in this topic to learn how to wrap your iOS app
 keywords:
 author: karthikaraman
 manager: arob98
-ms.date: 05/11/2016
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

@@ -6,7 +6,7 @@ description: This topic describes what to expect when your app is managed by mob
 keywords:
 author: karthikaraman
 manager: arob98
-ms.date: 04/28/2016
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
