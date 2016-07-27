@@ -5,7 +5,7 @@ title: Wi-Fi using PSK | Microsoft Intune
 description: Use Custom Configuration to create a Wi-Fi profile with a pre-shared key.
 keywords:
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod:

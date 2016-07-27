@@ -5,8 +5,8 @@ title: iOS policy settings | Microsoft Intune
 description: Create policies that control settings and features on iOS devices that you manage with Intune.
 keywords:
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,95 +45,108 @@ Use the Microsoft Intune **iOS general configuration policy** to configure setti
 If the setting you are looking for does not appear in this topic, you might be able to create it using an iOS custom policy that lets you import settings you created using the [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). For more information, see **Custom policy settings** later in this topic.
 
 ### Security settings
+All settings apply to iOS 7.1 and later.
 
-|Setting name|Details|iOS|
+|Setting name|Details|
 |----------------|-------|
-|**Require a password to unlock mobile devices**|Specify whether users are required to enter a password to access their device.|Yes|
-|**Required password type**|Specifies the type of password that will be required, such as numeric only, or alphanumeric.|Yes|
-|**Required password type – Minimum number of character sets**|This specifies the number of symbol characters (like **#** or **@**) that must be included in the password.|Yes|
-|**Minimum password length**|Specifies the minimum number of characters in the password.|Yes|
-|**Allow simple passwords**|Allow simple passwords like ‘0000’ and ‘1234’.|Yes|
-|**Number of repeated sign-in failures to allow before the device is wiped**|Wipes the device if this number of login attempts fail.|Yes|
-|**Minutes of inactivity before screen turns off**<sup>1</sup>|Specify the number of minutes before the device display is turned off.|Yes|
-|**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|
-|**Remember password history**|Specifies whether the user can use passwords they have previously used.|Yes|
-|**Remember password history** – **Prevent reuse of previous passwords**|Specifies the number of previously used passwords that are remembered by the device.|Yes|
-|**Minutes of inactivity before password is required**<sup>1</sup>|Specifies how long the device can remain idle before the user must re-enter their password.|Yes|
-|**Allow fingerprint unlock**|Allow using a fingerprint to unlock the device.|iOS 7.1 and later|
+|**Require a password to unlock mobile devices**|Specify whether users are required to enter a password to access their device.|
+|**Required password type**|Specifies the type of password that will be required, such as numeric only, or alphanumeric.|
+|**Number of complex characters required in password**|This specifies the number of symbol characters (like **#** or **@**) that must be included in the password.|
+|**Minimum password length**|Specifies the minimum number of characters in the password.|
+|**Allow simple passwords**|Allow simple passwords like ‘0000’ and ‘1234’.|
+|**Number of repeated sign-in failures to allow before the device is wiped**|Wipes the device if this number of login attempts fail.|
+|**Minutes of inactivity before password is required**<sup>1</sup>|Specifies how long the device can remain idle before the user must re-enter their password.|
+|**Password expiration (days)**|Specifies the number of days before the device password must be changed.|
+|**Remember password history**|Specifies whether the user can use passwords they have previously used.|
+|**Remember password history** – **Prevent reuse of previous passwords**|Specifies the number of previously used passwords that are remembered by the device.|
+|**Minutes of inactivity before screen turns off**<sup>1</sup>|Specify the number of minutes before the device display is turned off.|
+|**Allow fingerprint unlock**|Allow using a fingerprint to unlock the device.|
 <sup>1</sup> For iOS devices, when you configure the settings **Minutes of inactivity before screen turns off** and **Minutes of inactivity before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
 
 ### System settings
+All settings apply to iOS 7.1 and later.
 
-|Setting name|Details|iOS|
+|Setting name|Details|
 |----------------|-------|
-|**Allow screenshot**|Allows the user to capture the contents of the screen as an image.|Yes|
-|**Allow control center in lock screen**|Controls whether the control center app can be accessed when the device is locked.|iOS 7.1 and later|
-|**Allow notification view in lock screen**|Allow the user to access the notifications view without unlocking the device.|iOS 7.1 and later|
-|**Allow today view in lock screen**|Controls whether notifications can be viewed when the device is locked.|iOS 7.1 and later|
-|**Allow diagnostic data submission**|Allow or block the device from submitting diagnostic data to Apple.|Yes|
-|**Allow untrusted TLS certificates**|Allow untrusted Transport Layer Security certificates on the device.|Yes|
-|**Allow passbook while locked**|Allow the user to access the Passbook app while the device is locked.|Yes|
+|**Allow screenshot**|Allows the user to capture the contents of the screen as an image.|
+|**Allow control center in lock screen**|Controls whether the control center app can be accessed when the device is locked.|
+|**Allow notification view in lock screen**|Allow the user to access the notifications view without unlocking the device.|
+|**Allow today view in lock screen**|Controls whether notifications can be viewed when the device is locked.|
+|**Allow untrusted TLS certificates**|Allow untrusted Transport Layer Security certificates on the device.|
+|**Allow diagnostic data submission**|Allow or block the device from submitting diagnostic data to Apple.|
+|**Allow passbook while locked**|Allow the user to access the Passbook app while the device is locked.|
 
 ### Cloud settings – documents and data
+All settings apply to iOS 7.1 and later.
 
-|Setting name|Details|iOS|
+|Setting name|Details|
 |----------------|-------|
-|**Allow backup to iCloud**|Allows the user to back up the device to iCloud.|Yes|
-|**Allow document sync to iCloud**|Allow document and key-value synchronization to your iCloud storage space.|Yes|
-|**Allow Photo Stream sync to iCloud**|Allow photos on the device to sync to iCloud.|Yes|
-|**Require encrypted backup**|Require any device backups to be encrypted.|Yes|
+|**Allow backup to iCloud**|Allows the user to back up the device to iCloud.|
+|**Allow document sync to iCloud**|Allow document and key-value synchronization to your iCloud storage space.|
+|**Allow Photo Stream sync to iCloud**|Allow photos on the device to sync to iCloud.|
+|**Require encrypted backup**|Require any device backups to be encrypted.|
+|**Allow managed apps to sync data to iCloud**|Allow apps that you manage with Intune to sync data to the users iCloud account.|
+|**Allow Handoff to continue activities on another device**|Handoff lets you continue work you started on an iOS device on another iOS or Mac OS X device.|
 
 ### Application settings - browser
+All settings apply to iOS 7.1 and later.
 
-|Setting name|Details|iOS|
+|Setting name|Details|
 |----------------|-------|
-|**Allow Safari**|Specify whether the Safari browser can be used on the device.|Yes|
-|**Allow autofill**|User can change autocomplete settings in the browser.|Yes|
-|**Allow pop-up blocker**|Enable or disable the browser pop-up blocker.|Yes|
-|**Allow cookies**|Allow the device web browser to use cookies.|Yes|
-|**Allow Java scripting**|Allow Java scripts to run in the browser.|Yes|
-|**Allow fraud warning**|Allow fraud warnings in the device browser.|Yes|
+|**Allow Safari**|Specify whether the Safari browser can be used on the device.|
+|**Allow autofill**|User can change autocomplete settings in the browser.|
+|**Allow pop-up blocker**|Enable or disable the browser pop-up blocker.|
+|**Allow cookies**|Allow the device web browser to use cookies.|
+|**Allow Java scripting**|Allow Java scripts to run in the browser.|
+|**Allow fraud warning**|Allow fraud warnings in the device browser.|
 
 ### Application settings - apps
+All settings apply to iOS 7.1 and later.
 
-|Setting name|Details|iOS|
+|Setting name|Details|
 |----------------|-------|
-|**Allow application store**|Allows the device to access the app store.|Yes|
-|**Require a password to access application store**|Requires the user to enter a password before they can visit the app store.|Yes|
-|**Allow in-app purchases**|Allow store purchases to be made from within a running app.|Yes|
-|**Allow managed documents in other unmanaged apps**|Allows corporate documents to be viewed in any app.<br>**Example:** You want to prevent users saving files from the OneDrive app to Dropbox. Configure this setting as no. After the device receives the policy (for example after a restart), it will no longer allow saving.|iOS 7.1 and later|
-|**Allow unmanaged documents in other managed apps**|Allow any document to be viewed in corporate managed apps.|iOS 7.1 and later|
-|**Allow video conferencing**|Allow video conferencing apps such as Facetime on the device.|Yes|
-|**Allow adult content in media store**|Allow the device to access content rated as adult from the store.|Yes|
+|**Allow application store**|Allows the device to access the app store.|
+|**Require a password to access application store**|Requires the user to enter a password before they can visit the app store.|
+|**Allow in-app purchases**|Allow store purchases to be made from within a running app.|
+|**Allow managed documents in other unmanaged apps**|Allows corporate documents to be viewed in any app.<br>**Example:** You want to prevent users saving files from the OneDrive app to Dropbox. Configure this setting as no. After the device receives the policy (for example after a restart), it will no longer allow saving.|
+|**Allow unmanaged documents in other managed apps**|Allow any document to be viewed in corporate managed apps.|
+|**Allow video conferencing**|Allow video conferencing apps such as Facetime on the device.|
+|**Allow adult content in media store**|Allow the device to access content rated as adult from the store.|
+|**Allow the user to download content from the iBook store flagged as 'Erotica'**|Allow the user to download books with the category 'Erotica'.|
 
 ### Application settings - Games
+All settings apply to iOS 7.1 and later.
 
-|Setting name|Details|iOS|
+|Setting name|Details|
 |----------------|-------|
-|**Allow adding Game Center friends**|Allow the user to add friends in Game Center.|Yes|
-|**Allow multiplayer gaming**|Allow the user to play multiplayer games on the device.|Yes|
+|**Allow adding Game Center friends**|Allow the user to add friends in Game Center.|
+|**Allow multiplayer gaming**|Allow the user to play multiplayer games on the device.|
 
 ### Device capabilities settings - hardware
+All settings apply to iOS 7.1 and later.
 
-|Setting name|Details|iOS|
+|Setting name|Details|
 |----------------|-------|
-|**Allow camera**|Specifies whether the camera on the device can be used.|Yes|
+|**Allow camera**|Specifies whether the camera on the device can be used.|
+|**Require a pairing password for outgoing AirPlay requests**|Airplay lets you stream content to to other Apple devices. Use this setting to require a pairing password to connect to other devices.|
 
 ### Device capabilities settings - cellular
+All settings apply to iOS 7.1 and later.
 
-|Setting name|Details|iOS|
+|Setting name|Details|
 |----------------|-------|
-|**Allow voice roaming**|Allow voice roaming when the device is on a cellular network.|Yes|
-|**Allow data roaming**|Allow data roaming when the device is on a cellular network.|Yes|
-|**Allow global background fetch while roaming**|Allow the device to fetch data such as email while it is roaming on a cellular network.|Yes|
+|**Allow voice roaming**|Allow voice roaming when the device is on a cellular network.|
+|**Allow data roaming**|Allow data roaming when the device is on a cellular network.|
+|**Allow global background fetch while roaming**|Allow the device to fetch data such as email while it is roaming on a cellular network.|
 
 ### Device capabilities settings - features
+All settings apply to iOS 7.1 and later.
 
-|Setting name|Details|iOS|
+|Setting name|Details|
 |----------------|-------|
-|**Allow Siri**|Allow use of the Siri voice assistant on the device.|Yes|
-|**Allow Siri while device is locked**|Allow use of the Siri voice assistant on the device while it is locked.|Yes|
-|**Allow voice dialing**|Allow use of the voice dialing feature on the device.|Yes|
+|**Allow Siri**|Allow use of the Siri voice assistant on the device.|
+|**Allow Siri while device is locked**|Allow use of the Siri voice assistant on the device while it is locked.|
+|**Allow voice dialing**|Allow use of the voice dialing feature on the device.|
 
 
 ### Settings for compliant and noncompliant apps
@@ -145,7 +158,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |Setting name|Details|
 |----------------|--------------------|
 |**Report noncompliance when users install the listed apps**|Lists the apps that are not managed by Intune which users are not allowed to install and run.|
-|**Do not report noncompliance when users install the listed apps**|Lists the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.|
+|**Report noncompliance when users install apps which are not listed**|Lists the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.|
 |**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store. Read **How to specify URLs to app stores** later in this topic for more help.|
 |**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|
 |**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
@@ -200,6 +213,32 @@ Copy the URL of the page and use this as the URL to configure the compliant or n
 
 > [!NOTE]
 > You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.
+
+### Enrollment settings
+All settings apply to iOS 7.1 and later.
+
+|Setting name|Details|
+|----------------|--------------------|
+|**Allow Activation Lock when the device is in supervised mode**|Enables Activation Lock on supervised iOS devices.|
+
+### Supervision
+The following settings can be configured on devices running iOS 7.1 and later that are in supervised mode.
+
+|Setting name|Details|
+|----------------|--------------------|
+|**Allow account modification**|Allow the user to change account settings such as email configurations.|
+|**Allow AirDrop**|Allow use of the Airdrop feature to exchange content with nearby devices.|
+|**Allow changes to app cellular data usage settings**|Allow the user to control which apps are allowed to use cellular data.|
+|**Allow Siri to query user-generated content from the Internet**|Allow Siri to access web sites to answer questions.|
+|**Allow access to the iBooks store**|Allow the user to browse and purchase books from the iBooks store.|
+|**Allow changes to the Find My Friends app settings**|Allow the user to change settings for the Find My Friends app.|
+|**Allow the use of the erase all content and settings option on the device**|Allow the user use the option to erase all content and settings on the device.|
+|**Allow the user to enable restrictions in the device settings**|Allow the user to configure device restrictions (parental controls) on the device|
+|**Allow Spotlight search to return results from the Internet**|Let's Spotlight search connect to the Internet to provide further results.|
+|**Allow the use of the Game Center app**|Allow use of the Game Center app.|
+|**Allow host pairing to control the devices an iOS device can pair with**|Host pairing lets the administrator control which devices an iOS 7 device can pair with.|
+|**Allow the user to install configuration profiles and certificates**|Allow the user to install configuration profiles and certificates.|
+|**Allow use of the Messages app on the device**|Allow use of the Messages app to send text messages.|
 
 
 ## Custom policy settings

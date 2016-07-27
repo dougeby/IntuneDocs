@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: arob98
-ms.date: 04/28/2016
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,9 @@ To remove your device:
 
 2.  Tap **Remove**.
 
-    ![remove-device](./media/iwp-1-tap-reset-passcode.png)
+    ![remove-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+
+3. Read the warning message, indicating what will happen if you remove your device, and then tap **Remove** to remove your device from the Company Portal.
 
 Your device has now been removed.
 

@@ -5,8 +5,8 @@ title: Configure certificate profiles | Microsoft Intune
 description: Learn how to create an Intune certificate profile.
 keywords:
 author: nbigman
-manager: Arob98
-ms.date: 07/21/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -62,7 +62,18 @@ You must create a **Trusted certificate profile** before you can create a SCEP o
 
     Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Provide the requested information to configure the trusted certificate profile settings for Android, iOS, Mac OS X, Windows 8.1, or Windows Phone 8.1. In the  **Certificate file** setting,  import the Trusted Root CA certificate (**.cer**) that you exported from your issuing CA. The **Destination store** setting applies only to devices running Windows 8.1 and later, and only if the device has more than one certificate store.
+3.  Provide the requested information to configure the trusted certificate profile settings for Android, iOS, Mac OS X, Windows 8.1, or Windows Phone 8.1. 
+
+	- In the  **Certificate file** setting,  import the Trusted Root CA certificate (**.cer**) that you exported from your issuing CA. The **Destination store** setting applies only to devices running Windows 8.1 and later, and only if the device has more than one certificate store.
+
+	
+	- Under **Subject name format**, select **Custom** to provide a custom subject name format.  
+
+		The two variables currently supported for the custom format are **Common Name (CN)** and **Email (E)**. By using a combination of these variables and static strings, you can create a custom subject name format such as the one shown in this example:  
+
+		`CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
+
+		In the example, the admin created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country. A list of supported strings is provided in the topic [CertStrToName function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).  
 
 
 4.  When you are finished, click **Save Policy**.
