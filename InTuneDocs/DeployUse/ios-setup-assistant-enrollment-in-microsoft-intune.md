@@ -46,8 +46,7 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 2.  **Create a profile for devices**
     A device enrollment profile defines the settings applied to a group of devices. If you have not already, create a device enrollment profile for iOS devices enrolled using Apple Configurator.
 
-    1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Owned Devices**, and then choose **Add…**.
-
+    1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add…**.
     ![Create device enrollment profile](../media/pol-sa-corp-enroll.png)
 
     2.  Enter details for the device profiles:
@@ -58,14 +57,9 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
         -   **Enrollment Details** – Specifies how devices are enrolled.
 
-            -   **Prompt for user affinity** – The iOS device can be affiliated with a user during initial setup and could then be permitted to access company data and email as that user. For most Setup Assistant scenarios, use **Prompt for user affinity**.
-            This mode supports a number of scenarios:
+            -   **Prompt for user affinity** – The device must be affiliated with a user during initial setup and could then be permitted to access company data and email as that user. **User affinity** should be configured for DEP-managed devices that belong to users and need to use the company portal (i.e. to install apps).
 
-                -   **Corporate-owned personal device** – “Choose Your Own Device” (CYOD) Similar to privately owned or personal devices but the administrator has certain privileges including permission to wipe, reset, administer, and unenroll the device. The device’s user can install apps and has most other permissions for device use where not blocked by management policy.
-
-                -   **Device enrollment manager account** – The device is enrolled using a special Intune administrator account. It can be managed as a private account, but only a user who knows the enrollment manager credentials can install apps, wipe, reset, administer, and unenroll the device. For information about enrolling a device shared by many users through a common account, see [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
-
-            -   **No user affinity** – The device is user-less. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation are disabled or won’t work.
+            -   **No user affinity** – The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation, including the Company Portal app used for installing line-of-business apps, won’t work.
 
         -   **Device group pre-assignment** – All devices deployed this profile will initially belong to this group. You can reassign devices after enrollment.
 
@@ -134,26 +128,24 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
     3. Enter the **Name** and **Enrollment URL** for the MDM server from Step #6 above. For the Enrollment URL enter the enrollment profile URL exported from Intune. Choose **Next**.  
 
-       If you receive a warning about trust profile requirements for Apple TV, you may safely cancel the **Trust Profile** option by choosing the grey "X". You can also safely disregard any Anchor certificate warning. To continue, choose **Next** until the wizard is complete.
+       If you receive a warning stating "server URL is not verified,"" you can safely disregard the warning. To continue, choose **Next** until the wizard is complete.
 
-    4.  On the **Servers**  pane, choose “Edit” beside the new server’s profile. Ensure that the Enrollment URL exactly matches the URL exported from Intune. Reenter the original URL if it is different and **Save** the enrollment profile exported from Intune.
-
-    5.  Connect the iOS mobile devices to the Apple computer with a USB adapter.
+    4.  Connect the iOS mobile devices to the Apple computer with a USB adapter.
 
         > [!WARNING]
         > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and power it on. As a best practice, devices should be at the **Hello** screen when you start Setup Assistant.
 
-    6.  Choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual** and then choose **Next**.
+    5.  Choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual** and then choose **Next**.
 
-    7. On the **Enroll in MDM Server** pane, select the server name you created and then choose **Next**.
+    6. On the **Enroll in MDM Server** pane, select the server name you created and then choose **Next**.
 
-    8. On the **Supervise Devices** pane, select the level of supervision, and then choose **Next**.
+    7. On the **Supervise Devices** pane, select the level of supervision, and then choose **Next**.
 
-    9. On the **Create an Organization** pane, choose the **Organization** or create a new organization,  and then choose **Next**.
+    8. On the **Create an Organization** pane, choose the **Organization** or create a new organization,  and then choose **Next**.
 
-    10. On the **Configure iOS Setup Assistant** pane, choose the steps presented to the user, and then choose **Prepare**. If prompted, authenticate to update trust settings.  
+    9. On the **Configure iOS Setup Assistant** pane, choose the steps presented to the user, and then choose **Prepare**. If prompted, authenticate to update trust settings.  
 
-    11. When the iOS device finishes preparing, you can disconnect the USB cable.  
+    10. When the iOS device finishes preparing, you can disconnect the USB cable.  
 
 8.  **Distribute devices**
     The devices are now ready for corporate enrollment. Power down the devices and distribute them to users. When the device is turned on, the Setup Assistant will start.
