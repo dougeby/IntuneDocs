@@ -55,7 +55,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Minutes of inactivity before screen turns off**|Specifies the number of minutes of inactivity before the device automatically locks.|Yes|Yes|
 |**Password expiration (days)**|Specifies the number of days before a password must be changed.|Yes|Yes|
 |**Remember password history**|Specifies the number of previously used passwords to remember.|Yes|Yes|
-|**Remember password history**--**Prevent reuse of previous passwords**|Prevents reuse of previous passwords.|Yes|Yes|
+|**Remember password history** - **Prevent reuse of previous passwords**|Prevents reuse of previous passwords.|Yes|Yes|
 |**Password quality**|Specifies the password complexity level that's required and whether biometric devices can be used.|Yes|Yes|
 |**Allow fingerprint unlock**|Allows the use of a fingerprint to unlock the device.|No|Yes|
 |**Allow Smart Lock and other trust agents**<br>(Android 5 and later)|Lets you control the Smart Lock feature on compatible Android devices. This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag.) You can use this setting to prevent users from configuring Smart Lock.|Yes|No|
@@ -75,7 +75,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow diagnostic data submission**|Allows the device to submit diagnostic information to Google.|No|Yes|
 |**Allow factory reset**|Allows the user to perform a factory reset on the device.|No|Yes|
 
-### Cloud settings--documents and data
+### Cloud settings - documents and data
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
@@ -87,23 +87,23 @@ If the setting you are looking for does not appear in this topic, you might be a
 |----------------|----------------|----------------|
 |**Allow Google account auto sync**|Allows Google account settings to be automatically synchronized.|No|Yes|
 
-### Application settings--browser
+### Application settings - browser
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Allow web browser**|Specifies whether the device web browser can be used.|No|Yes|
+|**Allow web browser**|Specifies whether the device's default web browser can be used.|No|Yes|
 |**Allow autofill**|Allows the autofill function of the web browser to be used.|No|Yes|
 |**Allow pop-up blocker**|Allows the use of the pop-up blocker in the web browser.|No|Yes|
 |**Allow cookies**|Allows the device web browser to use cookies.|No|Yes|
 |**Allow active scripting**|Allows the device web browser to use active scripting.|No|Yes|
 
-### Application settings--apps
+### Application settings - apps
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Allow Google Play store**|Allows the user to access the Google Play store on the device.|No|Yes|
 
-### Device capabilities settings--hardware
+### Device capabilities settings - hardware
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
@@ -116,7 +116,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow Bluetooth**|Allows the use of Bluetooth on the device.|No|Yes|
 |**Allow power off**|Allows the user to power off the device.<br /><br />If this setting is disabled, the setting **Number of repeated sign in failures to allow before the device is wiped** for Samsung KNOX devices does not function.|No|Yes|
 
-### Device capabilities settings--cellular
+### Device capabilities settings - cellular
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
@@ -124,7 +124,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow data roaming**|Allows data roaming when the device is on a cellular network.|No|Yes|
 |**Allow SMS/MMS messaging**|Allows the use of SMS and MMS messaging on the device.|No|Yes|
 
-### Device capabilities settings--features
+### Device capabilities settings - features
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
