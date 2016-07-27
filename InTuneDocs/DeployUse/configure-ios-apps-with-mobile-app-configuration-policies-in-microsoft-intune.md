@@ -64,7 +64,8 @@ You do not deploy these policies directly to users and devices. Instead, you ass
 4.  In the **Mobile App Configuration Policy** section of the page, in the box, enter or paste an  XML property list that contains the app configuration settings that you want.
 
 The format of the XML property list will vary depending on the app you are configuring. Contact the supplier of the app for details about the exact format to use.
-	Intune supports the following data types in a property list:
+
+Intune supports the following data types in a property list:
 	
 	- &lt;integer&gt;
 	- &lt;real&gt;
@@ -75,7 +76,7 @@ The format of the XML property list will vary depending on the app you are confi
 	 
 	For more information about data types, see [About Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in the iOS Developer Library.
 
-	Additionally, Intune supports the following token types in the property list:
+Additionally, Intune supports the following token types in the property list:
 	- \{\{userprincipalname\}\} - (Example: **John@contoso.com**)
 	- \{\{mail\}\} - (Example: **John@contoso.com**)
 	- \{\{partialupn\}\} - (Example: **John**)
@@ -86,9 +87,10 @@ The format of the XML property list will vary depending on the app you are confi
 	- \{\{serialnumber\}\} - (Example: **F4KN99ZUG5V2**) for iOS devices
 	- \{\{serialnumberlast4digits\}\} - (Example: **G5V2**) for iOS devices
 	
-	The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.
+The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.
+
 	> [!TIP]
-    > To find out more about XML property lists, see [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
+	> To find out more about XML property lists, see [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
 
 5.  Click **Validate** to ensure that the XML that you entered is in a valid property list format.
 
