@@ -28,14 +28,14 @@ ms.suite: ems
 # Quick Start Guide: Simplify email configuration on mobile devices
 Microsoft Intune saves your company time and resources by allowing you to deploy email (as well as VPN and WiFi) profiles to Windows, iOS and Android mobile devices managed by the Intune service. Automatically configuring email profiles can greatly improve the end-user experience and increase satisfaction levels while at the same time reduce your helpdesk costs.
 
-## Is this quick start guide right for you?
+## Is this quick start guide right for me?
 Would like to reduce the time and effort required by your users to configure new email profiles on mobile devices from while also increasing your company’s data security by only allowing mobile devices managed by Intune to access your company email?
 
 If yes, Microsoft Intune can automatically configure email for your employees’ Intune-managed devices by deploying email profiles to their devices so that they don’t have to manually configure access to their company email. This capability provides a better end-user experience and reduces overall helpdesk costs by driving down the number of escalations for email configuration issues on your users Windows, iOS, and Android devices.
 
 After the email profile is configured, you can easily restrict access to company email and Office 365 services with Intune conditional access policies. These policies allow you to make sure that access to your company email and Office 365 services is restricted to devices that are compliant with the rules that you set in Intune.
 
-## How to implement this scenario
+## How do I do it?
 1.	Automatically [configure end-user email profiles](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) on Windows, iOS, and Android devices.
 2.	[Control access to company email](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) using conditional access policies.
 
@@ -43,7 +43,7 @@ After the email profile is configured, you can easily restrict access to company
 ### Additional information:
 [Intune device settings and security](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)
 
-## Next steps
+## What should I do next?
 [Deploy VPN profiles to managed devices](/intune/deploy-use/vpn-connections-in-microsoft-intune)
 
 [Deploy Wi-Fi profiles to managed devices](/intune/deploy-use/wi-fi-connections-in-microsoft-intune)
