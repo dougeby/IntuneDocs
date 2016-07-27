@@ -82,7 +82,7 @@ From the app store, find and note the URL of the policy managed app that you wan
 
 
 ## Step 2: Publish the app to your cloud storage space
-When you publish a managed app, the procedures differ depending on whether you are publishing a policy managed app or an app that was processed through the Microsoft Intune App Wrapping Tool for iOS.
+When you publish a managed app, the procedures differ depending on whether you are publishing a policy managed app or an app that was processed by using the the Microsoft Intune App Wrapping Tool for iOS.
 
 #### To publish a policy managed app
 
@@ -148,7 +148,7 @@ After you have verified that the app is uploaded successfully, continue to step 
 The new policy appears in the **Configuration Policies** node of the **Policy** workspace.
 
 ## Step 4: Associate the app with a mobile application management policy, and then deploy the app
-Ensure that you select the mobile application management policy on the **Mobile App Management** page to associate the policy with the app. Then, deploy the app.
+Ensure that you select the mobile application management policy on the **Mobile App Management** page of the **Manage Deployment** dialog box to associate the policy with the app.
 
 For details, see [Deploy apps in Microsoft Intune](deploy-apps.md).
 
