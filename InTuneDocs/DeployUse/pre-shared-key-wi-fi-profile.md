@@ -46,15 +46,15 @@ Note:
 
    c.	**Data Type**: Set to "String(XML)"
 
-   d.	**OMA-URI**:
-
-- For Android: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
-- For Windows, ./Vendor/MSFT/WiFi/Profile/<SSID>/WlanXml
+   d.	**OMA-URI**: 
+		
+- **For Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+- **For Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
 Note: Be sure to include the dot character at the beginning.
 
 SSID is the SSID for which you’re creating the policy. For example,
-`./Vendor/MSFT/Wi-Fi/Profile/Hotspot-1/Settings`
+`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e.	Value Field: this is where you paste your XML code. Here’s an example. Each value should be adapted to your network settings. See the comments section of the code for some pointers.
 
