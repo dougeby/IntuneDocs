@@ -76,12 +76,12 @@ For example, using the Outlook app:
 
 -   **Step 5:** Monitor the app deployment.
 
-## **Step 1:** Get the link to a policy managed app, create a wrapped app, or use the Intune App SDK to write a MAM-enabled app
+## Step 1: Get the link to a policy managed app, create a wrapped app, or use the Intune App SDK to write a MAM-enabled app
 
 From the app store, find and note the URL of the policy managed app that you want to deploy. For example, the URL of the Microsoft Word for iPad app is **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 
-## **Step 2:** Publish the app to your cloud storage space
+## Step 2: Publish the app to your cloud storage space
 When you publish a managed app, the procedures differ depending on whether you are publishing a policy managed app or an app that was processed through the Microsoft Intune App Wrapping Tool for iOS.
 
 #### To publish a policy managed app
@@ -110,7 +110,7 @@ After the upload finishes, you will see **Yes** for **App Management Policies** 
 
 After you have verified that the app is uploaded successfully, continue to step 3.
 
-## **Step 3:** Create a mobile application management policy
+## Step 3: Create a mobile application management policy
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Overview** &gt; **Add Policy**.
 
@@ -147,7 +147,7 @@ After you have verified that the app is uploaded successfully, continue to step 
 
 The new policy appears in the **Configuration Policies** node of the **Policy** workspace.
 
-## **Step 4:** Associate the app with a mobile application management policy, and then deploy the app
+## Step 4: Associate the app with a mobile application management policy, and then deploy the app
 Ensure that you select the mobile application management policy on the **Mobile App Management** page to associate the policy with the app. Then, deploy the app.
 
 For details, see [Deploy apps in Microsoft Intune](deploy-apps.md).
@@ -167,7 +167,7 @@ However, for devices that run iOS 9 and later, Intune will automatically ask the
 > [!TIP]
 > If the device is in supervised mode, Intune will take over management of the existing app without asking the user's permission.
 
-## **Step 5:** Monitor the app deployment
+## Step 5: Monitor the app deployment
 After you have created and deployed an app that's associated with a mobile application management policy, use the following procedure to monitor the app and resolve any policy conflicts.
 
 #### To view the status of the deployment
