@@ -34,11 +34,11 @@ Intune supplies a range of built-in general settings that you can configure on A
 
 Use the Intune **Android general configuration policy** to configure settings for:
 
--   **Mobile device security settings**--Choose from a list of predefined settings that let you control a range of features and functionality on the device.
+-   **Mobile device security settings** - Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
--   **Kiosk mode** (for Samsung KNOX devices only)--Lock a device to allow only certain features to work. For example, you can allow a device to run only one managed app that you specify, or you can disable the volume buttons on a device. These settings might be used for a demonstration model of a device or a device that is dedicated to performing only one function, such as a point-of-sale device.
+-   **Kiosk mode** (for Samsung KNOX devices only) - Lock a device to allow only certain features to work. For example, you can allow a device to run only one managed app that you specify, or you can disable the volume buttons on a device. These settings might be used for a demonstration model of a device or a device that is dedicated to performing only one function, such as a point-of-sale device.
 
--   **Compliant and noncompliant apps**--Specify a list of apps that are compliant or noncompliant in your company. On Android and iOS devices, the **Noncompliant Apps Report** can be used to view the compliance of apps that you specified in the list against the apps that users have installed. The report can't actually block the installation of the app.
+-   **Compliant and noncompliant apps** - Specify a list of apps that are compliant or noncompliant in your company. On Android and iOS devices, the **Noncompliant Apps Report** can be used to view the compliance of apps that you specified in the list against the apps that users have installed. The report can't actually block the installation of the app.
 
 > [!TIP]
 > You can configure terms and conditions for users to ensure that they acknowledge that all apps on their device, including personal apps, will be evaluated, and that noncompliant apps will either be blocked or reported as noncompliant. Users must accept these terms and conditions before they can enroll their device and use the company portal to get apps. For more information about using terms and conditions, see [Terms and condition policy settings in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
