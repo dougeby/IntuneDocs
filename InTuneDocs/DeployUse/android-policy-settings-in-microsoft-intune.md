@@ -81,7 +81,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |----------------|----------------------------|----------------|
 |**Allow Google backup**|Allows the use of Google backup.|No|Yes|
 
-### Cloud settings--accounts and synchronization
+### Cloud settings - accounts and synchronization
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
