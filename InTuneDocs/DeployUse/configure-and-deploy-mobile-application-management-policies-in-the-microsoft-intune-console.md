@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure MAM policies in the Intune console | Microsoft Intune
-description: Mobile application management policies in Microsoft Intune let you modify the functionality of apps that you deploy to help bring them into line with your company's compliance and security policies.
+description: Mobile application management policies in Microsoft Intune let you modify the functionality of apps that you deploy to help align them with your company's compliance and security policies.
 keywords:
 author: robstackmsft
 manager: arob98
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Configure and deploy mobile application management policies in the Microsoft Intune console
-Mobile application management (MAM) policies in Microsoft Intune let you modify the functionality of apps that you deploy to help bring them into line with your company's compliance and security policies. For example, you can restrict cut, copy, and paste operations within a managed app, or configure an app to open all web links inside a managed browser.
+Mobile application management (MAM) policies in Microsoft Intune let you modify the functionality of apps that you deploy to help align them with your company's compliance and security policies. For example, you can restrict cut, copy, and paste operations within a managed app, or configure an app to open all web links inside a managed browser.
 
 Mobile application management policies support:
 
@@ -43,9 +43,9 @@ Unlike other Intune policies, you do not deploy a mobile application management 
 
 To apply restrictions to an app, the app must incorporate the Microsoft Intune App SDK. There are three methods of obtaining this type of app:
 
--   **Use a policy managed app**. A policy managed app has the App SDK built in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. See a [list of apps that you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+-   **Use a policy managed app**. A policy managed app has the App SDK built in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. For more information, see the [list of apps that you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
--   **Use a "wrapped" app**. A wrapped app is an app you repackage to include the App SDK by using the Microsoft Intune App Wrapping Tool. This tool is typically used to process company apps that were created in house. You can't use it to process apps that were downloaded from the app store. See [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Use a "wrapped" app**. A wrapped app is an app that you repackage to include the App SDK by using the Microsoft Intune App Wrapping Tool. This tool is typically used to process company apps that were created in house. You can't use it to process apps that were downloaded from the app store. For more information, see [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
 - **Write your own app that incorporates the Intune App SDK**. The Intune App SDK lets you incorporate app management features into an app while you are writing it. For more information, see [Intune App SDK Overview](/intune/develop/intune-app-sdk).
 
@@ -78,11 +78,11 @@ For example, using the Outlook app:
 
 ## **Step 1:** Get the link to a policy managed app, create a wrapped app, or use the Intune App SDK to write a MAM-enabled app
 
-From the app store, find, and note the URL of the policy managed app that you want to deploy. For example, the URL of the Microsoft Word for iPad app is **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
+From the app store, find and note the URL of the policy managed app that you want to deploy. For example, the URL of the Microsoft Word for iPad app is **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 
 ## **Step 2:** Publish the app to your cloud storage space
-When you publish a managed app, the procedures differ depending on whether you are publishing a policy managed app, or an app that was processed through the Microsoft Intune App Wrapping Tool for iOS.
+When you publish a managed app, the procedures differ depending on whether you are publishing a policy managed app or an app that was processed through the Microsoft Intune App Wrapping Tool for iOS.
 
 #### To publish a policy managed app
 
@@ -131,9 +131,9 @@ After you have verified that the app is uploaded successfully, continue to step 
     |**Restrict web content to display in a corporate managed browser**|When this setting is enabled, any links in the app will be opened in the managed browser. For this option to work, you must have deployed this app to devices.|
     |**Prevent Android backups** or **Prevent iTunes and iCloud backups**|This setting disables the backup of any information from the app.|
     |**Allow app to transfer data to other apps**|This setting specifies the apps that this app can send data to. You can choose to not allow data transfer to any app, allow transfer only to other managed apps, or allow transfer to any app. <br /><br />For example, when you do not allow data transfer, you restrict data transfer to services like SMS messaging, assigning images to contacts, and posting to Facebook or Twitter.<br /><br />For iOS devices, to prevent document transfer between managed and unmanaged apps, you must also configure and deploy a mobile device security policy that disables the setting **Allow managed documents in other unmanaged apps**. If you choose to allow transfer only to other managed apps, the Intune PDF and image viewers (if deployed) will be used to open content of the respective types.<br /><br />Additionally, if you set this option to **Policy Managed Apps** or **None**, the iOS 9 feature that allows Spotlight Search to search data within apps will be blocked.<br><br>This setting does not control the use of the Open In feature on mobile devices. To manage Open In, see [Manage data transfer between iOS apps with Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).|
-    |**Allow app to receive data from other apps**|This setting specifies the apps that this app can receive data from. You can choose to not allow data transfer from any app, allow transfer only from other managed apps, or allow transfer from any app.<br /><br />When a user accesses data from an app that is not managed by a mobile application management policy, the data will be treated as corporate data and protected by the policy. This applies to iOS apps that support multi-identity (where Intune applies management settings only to corporate accounts or data in the app), or to an enrolled device with a mobile application management policy applied.|
+    |**Allow app to receive data from other apps**|This setting specifies the apps that this app can receive data from. You can choose to not allow data transfer from any app, allow transfer only from other managed apps, or allow transfer from any app.<br /><br />When a user accesses data from an app that is not managed by a mobile application management policy, the data will be treated as corporate data and protected by the policy. This applies to iOS apps that support multi-identity (where Intune applies management settings only to corporate accounts or data in the app). Or, this applies to an enrolled device with a mobile application management policy applied.|
     |**Prevent “Save As”**|This setting disables use of the **Save As** option to save data to personal cloud storage locations (such as OneDrive or Dropbox) in any app that uses this policy.|
-    |**Restrict cut, copy and paste with other apps**|This setting specifies how cut, copy, and paste operations can be used with the app. Choose from:<br /><br />**Blocked**. Do not allow cut, copy, and paste operations between this app and other apps.<br /><br />**Policy Managed Apps**. Allow cut, copy, and paste operations only between this app and other managed apps.<br /><br />**Policy Managed Apps with Paste In**. Allow data cut or copied from this app only to be pasted into other managed apps. Allow data cut or copied from any app to be pasted into this app.<br /><br />**Any App**. Put no restrictions on cutting, copying, and pasting operations to or from this app.<br /><br />To copy and paste data between managed apps, both apps must have either the **Policy Managed Apps** or **Policy Managed Apps with Paste In** settings configured.|
+    |**Restrict cut, copy and paste with other apps**|This setting specifies how cut, copy, and paste operations can be used with the app. Choose from:<br /><br />**Blocked**. Do not allow cut, copy, and paste operations between this app and other apps.<br /><br />**Policy Managed Apps**. Allow cut, copy, and paste operations only between this app and other managed apps.<br /><br />**Policy Managed Apps with Paste In**. Allow data cut or copied from this app to be pasted only into other managed apps. Allow data cut or copied from any app to be pasted into this app.<br /><br />**Any App**. Put no restrictions on cutting, copying, and pasting operations to or from this app.<br /><br />To copy and paste data between managed apps, both apps must have either the **Policy Managed Apps** or **Policy Managed Apps with Paste In** setting configured.|
     |**Require simple PIN for access**|This setting requires the user to enter a PIN that they specify to use this app. The user will be asked to set this up the first time they run the app.|
     |**Number of attempts before PIN reset**|Specify the number of PIN entry attempts that can be made before the user must reset the PIN.|
     |**Require corporate credentials for access**|This setting requires the user to enter their corporate logon information before they can access the app.|
@@ -148,7 +148,7 @@ After you have verified that the app is uploaded successfully, continue to step 
 The new policy appears in the **Configuration Policies** node of the **Policy** workspace.
 
 ## **Step 4:** Associate the app with a mobile application management policy, and then deploy the app
-Deploy the app. Ensure that you select the mobile application management policy on the **Mobile App Management** page to associate the policy with the app.
+Ensure that you select the mobile application management policy on the **Mobile App Management** page to associate the policy with the app. Then, deploy the app.
 
 For details, see [Deploy apps in Microsoft Intune](deploy-apps.md).
 
@@ -168,7 +168,7 @@ However, for devices that run iOS 9 and later, Intune will automatically ask the
 > If the device is in supervised mode, Intune will take over management of the existing app without asking the user's permission.
 
 ## **Step 5:** Monitor the app deployment
-After you have created and deployed an app that's associated with a mobile application management policy, use the following procedures to monitor the app and resolve any policy conflicts.
+After you have created and deployed an app that's associated with a mobile application management policy, use the following procedure to monitor the app and resolve any policy conflicts.
 
 #### To view the status of the deployment
 
@@ -176,7 +176,7 @@ After you have created and deployed an app that's associated with a mobile appli
 
 2.  Perform one of the following steps:
 
-    -   Choose **All Users**, and then double-click the user whose devices you want to examine. One the **User Properties** page, choose **Devices**, and then double-click the device that you want to examine.
+    -   Choose **All Users**, and then double-click the user whose device you want to examine. One the **User Properties** page, choose **Devices**, and then double-click the device that you want to examine.
 
     -   Choose **All Devices** &gt; **All Mobile Devices**. On the **Device Group Properties** page, choose **Devices**, and then double-click the device that you want to examine.
 
