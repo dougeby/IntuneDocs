@@ -142,8 +142,8 @@ After you have verified that the app is uploaded successfully, continue to step 
     |**Offline grace period**|If the device is offline, specify the time period before the access requirements for the app are rechecked.|
     |**Encrypt app data**|This setting specifies that all data associated with this app will be encrypted. This includes data stored externally, such as in SD cards.<br /><br />**Encryption for iOS**<br /><br />For apps that are associated with an Intune mobile application management policy, data is encrypted at rest through device-level encryption that the OS provides. This is enabled through a device PIN policy that the IT admin sets. When a PIN is required, the data will be encrypted according to the settings in the mobile application management policy. As stated in Apple documentation, [the modules that iOS 7 uses are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Encryption for Android**<br /><br />For apps that are associated with an Intune mobile application management policy, Microsoft provides encryption. Data is encrypted synchronously during file I/O operations.  Content on the device storage will always be encrypted. The encryption method is not FIPS 140-2 certified.|
     |**Block screen capture** (Android devices only)|This setting specifies that the screen capture capabilities of the device are blocked when someone is using this app.|
-
-4.  When you are finished, choose **Save Policy**.
+    
+4. When you are finished, choose **Save Policy**.
 
 The new policy appears in the **Configuration Policies** node of the **Policy** workspace.
 
