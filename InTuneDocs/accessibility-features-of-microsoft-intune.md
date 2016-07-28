@@ -5,7 +5,7 @@ title: Accessibility Features | Microsoft Intune
 description: Learn about the features of Intune that make it more accessible to people with disabilities.
 keywords:
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

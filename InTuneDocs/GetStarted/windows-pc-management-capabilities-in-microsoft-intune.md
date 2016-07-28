@@ -5,7 +5,7 @@ title: Windows PC management capabilities | Microsoft Intune
 description: Learn about the capabilities of Intune when you manage Windows PCs with the Intune client software.
 keywords:
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod:

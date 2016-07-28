@@ -5,7 +5,7 @@ title: Reset (erase) your lost or stolen Android device | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
@@ -32,7 +32,7 @@ If a phone that has been enrolled in Intune is lost or stolen, you can reset it 
 
 To learn about what happens if you reset your device, see [What happens if you reset your device using the Company Portal](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> [!WARNING] 
+> [!WARNING]
 > Resetting a device to factor defaults removes both your personal and work or school information from it.
 
 ## To reset your device from the Company Portal app
@@ -59,4 +59,3 @@ If you are unable to reset your lost or stolen device, ask your IT administrator
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)
-

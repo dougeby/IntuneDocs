@@ -5,7 +5,7 @@ title: How to get support | Microsoft Intune
 description: Support is available both online and by telephone for paid and trial subscriptions.
 keywords:
 author: Nbigman
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod:

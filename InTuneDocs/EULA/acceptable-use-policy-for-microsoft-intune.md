@@ -5,7 +5,7 @@ title: Acceptable Use Policy | Microsoft Intune
 description: The Acceptable Use Policy for Microsoft Intune identifies activities that you and your organization are prohibited from engaging in when using Intune
 keywords:
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

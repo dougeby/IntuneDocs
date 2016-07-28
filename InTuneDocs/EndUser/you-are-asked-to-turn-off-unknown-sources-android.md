@@ -5,7 +5,7 @@ title: You are asked to turn off Unknown sources | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod:
@@ -27,7 +27,7 @@ ROBOTS: noindex,nofollow
 
 # You are asked to turn off Unknown sources
 
-If you see the message, “Installation from Unknown sources must be disabled,” you need to go to **Settings** > **Security** (on some devices, this may be **Lock screen and security** instead), and turn off **Unknown sources**. 
+If you see the message, “Installation from Unknown sources must be disabled,” you need to go to **Settings** > **Security** (on some devices, this may be **Lock screen and security** instead), and turn off **Unknown sources**.
 
 Your IT administrator requires this setting to be turned off to protect the corporate data on your Android device. When **Unknown sources** is turned on, it allows you to install apps from unknown sources, which could be a security risk.
 
