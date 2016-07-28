@@ -5,7 +5,7 @@ title: Project scope | Microsoft Intune
 description: Recommendations for the project scope phase of an Intune deployment.
 keywords:
 author: Nbigman
-manager: arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
@@ -66,7 +66,7 @@ The majority of your efforts in the Scope phase revolve around planning and prep
 
 
  > [!NOTE]
- > 
+ >
  > These templates may be helpful when working on the project scope:
  > > - [Intune or Intune with Configuration Manager decision template](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
  > - [Planning template for mobile apps](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)

@@ -5,7 +5,7 @@ title: Policy rollout | Microsoft Intune
 description: Recommendations for a phased rollout of policy in Microsoft Intune.
 keywords:
 author: Nbigman
-manager: arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod:

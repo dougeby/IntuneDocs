@@ -5,7 +5,7 @@ title: Troubleshoot software updates | Microsoft Intune
 description: Solve software update problems in Microsoft Intune.
 keywords:
 author: Nbigman
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
@@ -250,7 +250,7 @@ The following table lists the Intune **Update Agent** error codes. If you cannot
 **Issue**: You may encounter a situation where Microsoft Intune clients experience one or more of the following symptoms:
 - They suddenly stop reporting to the Microsoft admin console.  
 - They experience high CPU utilization.
-- Applications install slowly when they’re installed through the Intune portal. 
+- Applications install slowly when they’re installed through the Intune portal.
 - The Microsoft Intune Center triggers the following error: *An error occurred while updating your computer. Error found: Code 0x800705b4*.
 - The status field under Intune Admin Console > Groups > All Devices displays: *One or more agents that are installed on this computer have errors. The information for this computer may not be accurate or up to date*.
 
@@ -260,11 +260,10 @@ This problem may occur if superseded updates (updates that have been replaced by
 1. Log on to the [Intune admin console](https://manage.microsoft.com).
 2. Select **Updates** > **All Updates**.
 3. Use the filter option on the upper toolbar to filter for superseded updates.
-4. Decline all superseded updates that may apply to Windows 7 or to applications (for example, Microsoft Office) that were installed on the affected clients. 
+4. Decline all superseded updates that may apply to Windows 7 or to applications (for example, Microsoft Office) that were installed on the affected clients.
 5. Restart the affected clients.
 
 Additionally, if you're running Windows 7, make sure that you have the following update installed:[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265).
 
 ### Next steps
 If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-
