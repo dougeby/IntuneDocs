@@ -5,7 +5,7 @@ title: Collect device logs| Microsoft Intune
 description:
 keywords:
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/01/2016
 ms.topic: article
 ms.prod:
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Device logs
 
-As part of your troubleshooting efforts you may want to collect logs from user devices. Instructions for collecting those logs are described here. Typically you may need access to the device, or request from the user that they collect the logs and send them to you. 
+As part of your troubleshooting efforts you may want to collect logs from user devices. Instructions for collecting those logs are described here. Typically you may need access to the device, or request from the user that they collect the logs and send them to you.
 
 ### Android log location
 Android logs are located in *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*. The user can also send you log files in email, as described in [Send Android diagnostic data logs to your IT administrator using email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android).

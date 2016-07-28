@@ -5,7 +5,7 @@ title: Troubleshoot email profiles | Microsoft Intune
 description: Email profile issues and how to troubleshoot and resolve them.
 keywords:
 author: Nbigman
-manager: arob98
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
