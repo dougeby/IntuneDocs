@@ -5,7 +5,7 @@ title: Troubleshoot app deployment problems | Microsoft Intune
 description: This topic helps you solve app deployment problems with Microsoft Intune.
 keywords:
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
@@ -87,7 +87,7 @@ If this information does not solve your problem, see [How to get support for Mic
 
 ### Error: Publisher does not exist
 You use **Add Other Software Agreement** to add a 3rd party license agreement. You try to add the publisher from the **Other software licensing agreement** page. The page provides a list with the existing publishers in alphabetical order.
-You enter the missing publisher but receive the error **Publisher does not exist**. 
+You enter the missing publisher but receive the error **Publisher does not exist**.
 
 This is by design. Intune provides license tracking only for popular software titles. Intune requires that at least 4 separate accounts report the software before it is made available as a choice in the licensing workload.
 

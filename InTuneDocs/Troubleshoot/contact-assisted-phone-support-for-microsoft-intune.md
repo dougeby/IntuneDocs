@@ -5,7 +5,7 @@ title: Contact Assisted Phone Support | Microsoft Intune
 description:
 keywords:
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
@@ -120,4 +120,3 @@ ms.suite: ems
 |Uruguay|24 x 7|Monday – Friday<br /><br />09:00 – 17:00 UYST (UTC -2)|Spanish&#42;, English|000-411-002-7131||
 |Venezuela|24 x 7|Monday – Friday<br /><br />09:00 – 17:00 VET (UTC -4:30)|Spanish&#42;, English|0-800-100-8763||
 &#42; Supported with over-the-phone interpretation.
-
