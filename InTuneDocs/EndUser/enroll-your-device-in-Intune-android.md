@@ -5,7 +5,7 @@ title: Enroll your Android device in Intune | Microsoft Intune
 description: Describes how to enroll an Android device in Intune
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
 ms.prod:
@@ -70,7 +70,7 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![What comes next screen](./media/and-enroll-4d-what-comes-next.png)
 
-10.  If you're using Android 6.0 or later, do this step. Otherwise, go to the next step. 
+10.  If you're using Android 6.0 or later, do this step. Otherwise, go to the next step.
 
 	If your IT administrator has set up certain policies, you may see the following messages:
 	-	**Allow Company Portal to make and manage phone calls?**

@@ -5,7 +5,7 @@ title: Terms of Use | Microsoft Intune
 description: Read the terms of use for Microsoft Intune.
 keywords:
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
