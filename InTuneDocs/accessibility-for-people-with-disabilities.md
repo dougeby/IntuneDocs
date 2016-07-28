@@ -5,7 +5,7 @@ title: Accessibility for People with Disabilities | Microsoft Intune
 description: Read accessibility information about Microsoft products.
 keywords:
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
