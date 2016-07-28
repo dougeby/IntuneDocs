@@ -80,7 +80,8 @@ Here is a list of steps to get you started with the **Enterprise rollout** phase
 -   Identify groups who may require targeted communications and training.
 
 -   Customize email communications, update intranet site
-    Identify ongoing owner for communications/resource updating.
+
+-   Identify ongoing owner for communications/resource updating.
 
 -   Outline which training methods you will use.
 
