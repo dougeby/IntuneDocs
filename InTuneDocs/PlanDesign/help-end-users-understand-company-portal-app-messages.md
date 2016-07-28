@@ -5,7 +5,7 @@ title: Company Portal app messages users might see | Microsoft Intune
 description: Company Portal app messages that Intune end users might see
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
