@@ -68,7 +68,7 @@ Intune collects detailed information about the hardware and software of managed 
 
 -   A report that lists the software that's installed on each computer.
 
--   A report with current data.
+Additionally, you'll learn how to refresh a computers inventory to ensure that the data in the reports is current.
 
 ### To display information about your computers
 
@@ -78,7 +78,7 @@ Intune collects detailed information about the hardware and software of managed 
 
 3.  Choose **View Report** to open the **Computer Inventory Report** in a new window.
 
-    You can sort the report by any of the columns, such as **Name**, **Chassis Type**, or **Manufacturer**, by selecting each column heading.
+    You can sort the report by any of the columns, like **Name**, **Chassis Type**, or **Manufacturer**, by selecting each column heading.
 
 ### To display software that's installed on your computers
 
@@ -88,7 +88,7 @@ Intune collects detailed information about the hardware and software of managed 
 
 3.  Choose **View Report** to open the **Detected Software Report** in a new window.
 
-    You can sort the report by any of the columns, such as **Name**, **Publisher**, or **Category**, by selecting each column heading. You can expand the updates in the list to show more detail (such as the computers on which the updates are installed) by choosing the directional arrow next to the list item.
+    You can sort the report by any of the columns, like **Name**, **Publisher**, or **Category**, by selecting each column heading. You can expand the updates in the list to show more detail (such as the computers on which the updates are installed) by choosing the directional arrow next to the list item.
 
 ### To refresh computer inventory to ensure it is current
 
@@ -142,7 +142,7 @@ When you retire a computer:
     > [!IMPORTANT]
     > If the client software was installed by using a Group Policy Object (GPO), you must remove the GPO before you remove the client software. This prevents the software from being reinstalled.
 
-    If the client fails to uninstall, read [Troubleshoot endpoint protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) for more help.
+    If the client fails to uninstall, read [Troubleshoot client setup](/intune/troubleshoot/troubleshoot-client-setup-in-microsoft-intune) for more help.
 
 ## Manage user-device linking
 Before you can deploy software to a user, you must link the user to a computer. You can link a user to multiple computers, but each computer can be linked to only one user. Users are automatically linked to any computers that they enroll in Intune by using the company portal.
