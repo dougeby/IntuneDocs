@@ -178,7 +178,7 @@ This functionality replaces the existing Windows Remote Assistance functionality
 
 ### Before you start
 
-Before you can begin to establish and respond to remote assistance requests, you must ensure the following prerequisites are in place:
+Before you begin to establish and respond to remote assistance requests, you must ensure the following prerequisites are in place:
 
 - You must have [signed up for a TeamViewer account](https://login.teamviewer.com/LogOn#register) to log into the TeamViewer website.
 - Windows PCs that you want to administer must be [managed by the Windows PC client](manage-windows-pcs-with-microsoft-intune.md)
