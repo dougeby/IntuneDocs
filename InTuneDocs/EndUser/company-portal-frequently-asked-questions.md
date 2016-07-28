@@ -5,7 +5,7 @@ title: About the Company Portal | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/01/2016
 ms.topic: article
 ms.prod:
@@ -31,7 +31,7 @@ ms.suite: ems
 The Microsoft Intune Company Portal gives you access to your company's or school's data and apps. You can get the Company Portal two different ways:
 
 - By installing the Company Portal app on your device. You typically get the Company Portal app by going to your device's app store, but your IT administrator can also install the Company Portal app for you by using different methods.
-- By going to the [Company Portal website](http://portal.manage.microsoft.com) that your IT administrator has set up. 
+- By going to the [Company Portal website](http://portal.manage.microsoft.com) that your IT administrator has set up.
 
 There are a few minor differences between the Company Portal app and the Company Portal website, but you can do most of the same tasks on one that you can do on the other. Some examples are:
 
@@ -102,7 +102,3 @@ In order to see a device, it must be added to the Company Portal. Browse to the 
 
 ## If you have questions, contact your IT administrator
 If you need help, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
-
-

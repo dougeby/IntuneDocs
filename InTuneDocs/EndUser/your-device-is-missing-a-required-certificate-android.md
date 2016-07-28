@@ -5,7 +5,7 @@ title: Your device is missing a required certificate | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod:
@@ -79,7 +79,7 @@ To resolve this issue and get the required certificate, there are two main steps
 
 	![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. In the **Certificate** dialog, click the **Certification path** tab, and then identify the certificate that you need to get from the Internet. The name of the certificate that you need will be in the same position as the one that is highlighted in the example screenshot above. 
+5. In the **Certificate** dialog, click the **Certification path** tab, and then identify the certificate that you need to get from the Internet. The name of the certificate that you need will be in the same position as the one that is highlighted in the example screenshot above.
 
 ### Download and install the missing certificate on your Android mobile device
 
@@ -99,7 +99,7 @@ To resolve this issue and get the required certificate, there are two main steps
 
 7. Reopen the Company Portal app. You should now be able to sign in to the Company Portal app. If you need help, contact your IT administrator.
 
-If you see the same "missing certificate" message as the one shown above, and you have already followed the steps above, it probably means that there is still another certificate that your IT administrator will need to help you install. Contact your IT administrator and give that person this [link](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), which contains the steps to help resolve the issue. 
+If you see the same "missing certificate" message as the one shown above, and you have already followed the steps above, it probably means that there is still another certificate that your IT administrator will need to help you install. Contact your IT administrator and give that person this [link](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), which contains the steps to help resolve the issue.
 
 ### See also
 [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
