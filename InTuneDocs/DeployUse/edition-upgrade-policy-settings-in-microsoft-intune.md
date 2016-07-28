@@ -32,9 +32,9 @@ The Microsoft Intune **Edition Upgrade Policy** lets you automatically upgrade d
 
 ## Before you start
 Before you begin to upgrade devices to the latest version, you will need one of the following:
-* A product key which is valid to install the new version of Windows on all devices you target with the policy (for Windows 10 Desktop editions).
-* A license file from Microsoft which contains the licensing information to install the new version of Windows on all devices you target with the policy (for Windows 10 Mobile and Windows 10 Holographic editions).
-* The Windows 10 devices you target must be enrolled in Microsoft Intune.
+* A product key that is valid to install the new version of Windows on all devices that you target with the policy (for Windows 10 Desktop editions).
+* A license file from Microsoft that contains the licensing information to install the new version of Windows on all devices that you target with the policy (for Windows 10 Mobile and Windows 10 Holographic editions).
+* The Windows 10 devices that you target must be enrolled in Microsoft Intune.
 
 ## Edition upgrade policy settings
 
@@ -43,8 +43,8 @@ Before you begin to upgrade devices to the latest version, you will need one of 
 |**Name**|Enter a name for the edition upgrade policy.|
 |**Description**|Optionally, enter a description for the policy that helps you identify it in the Intune console.
 |**Edition to upgrade to**|From the drop-down list, select the version of Windows 10 Desktop, Windows 10 Holographic, or Windows 10 Mobile that you want to upgrade targeted devices to.
-|**Product Key**|Specify the product key that you obtained from Microsoft which can be used to upgrade all targeted Windows 10 Desktop devices.<br>After you create a policy containing a product key, you cannot edit the product key later. This is because the key is obscured for security reasons. To change the product key, you must re-enter the entire key.
-|**License File**|Click **Browse** to select the license file you obtained from Microsoft that contains license information for the Windows Holographic, or Windows 10 Mobile edition you want to upgrade targeted devices to.
+|**Product Key**|Specify the product key that you obtained from Microsoft, which can be used to upgrade all targeted Windows 10 Desktop devices.<br>After you create a policy that contains a product key, you cannot edit the product key later. This is because the key is obscured for security reasons. To change the product key, you must enter the entire key again.
+|**License File**|Choose **Browse** to select the license file you obtained from Microsoft that contains license information for the Windows Holographic, or Windows 10 Mobile edition that you want to upgrade targeted devices to.
 
 ### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

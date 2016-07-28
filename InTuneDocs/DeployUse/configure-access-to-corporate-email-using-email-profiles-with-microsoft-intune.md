@@ -5,7 +5,7 @@ title: Access corporate email with email profiles | Microsoft Intune
 description: Email profile settings can be used to configure email access settings for specific email clients on mobile devices.  
 keywords:
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/021/2016
 ms.topic: article
 ms.prod:
@@ -89,7 +89,7 @@ The password is not contained in the email profile, so the user will need to sup
     |**Number of days of email to synchronize**|The number of days of email that you want to synchronize or select **Unlimited** to synchronize all available email.|
     |**Sync schedule** (Samsung KNOX, Windows Phone 8 and later, Windows 10)|Select the schedule by which devices will synchronize data from the Exchange Server. You can also select **As Messages arrive** which synchronizes data as soon as it arrives, or **Manual**, where the user of the device must initiate the synchronization.|
     |**Use SSL**|Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange Server.<br /><br />For devices that run Samsung KNOX 4.0 or later, you must export your Exchange Server’s SSL certificate and deploy it as an Android Trusted Certificate Profile in Intune. Intune does not support accessing this certificate if it is installed on the Exchange Server by other means.|
-    |**Content type to synchronize**|Select the content types that you want to synchronize to devices.| 
+    |**Content type to synchronize**|Select the content types that you want to synchronize to devices.|
 	|**Allow email to be sent from third party applications** (iOS only)|Allow user to select this profile as the default  account for sending email, and allow third-party applications to open email in the native email app, for example, to attach files to email.|
 
     > [!IMPORTANT]
@@ -113,5 +113,3 @@ A status summary and alerts on the **Overview** page of the **Policy** workspace
 
 > [!NOTE]
 > If you want to remove an email profile from a device, edit the deployment and remove any groups of which the device is a member.
-
-
