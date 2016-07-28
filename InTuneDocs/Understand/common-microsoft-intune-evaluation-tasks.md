@@ -6,7 +6,7 @@ description: Lists and links to some common tasks, e.g., deploy iOS PIN policy a
 keywords:
 author: Staciebarker
 manager: arob98
-ms.date: 05/5/2016
+ms.date: 05/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
