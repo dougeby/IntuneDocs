@@ -5,7 +5,7 @@ title: What to know before you start Microsoft Intune | Microsoft Intune
 description: Page with links to Intune prerequisites and requirements
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/08/2016
 ms.topic: get-started-article
 ms.prod:
@@ -40,8 +40,3 @@ Before you start setting up Microsoft Intune, review each of the following requi
 
 
 Before using Intune, you may also want to review the [Intune mobile device management capabilities](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune). If you started with a trial subscription, you can convert it later to a full subscription. See [How to buy Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
-
-
-
-
-
