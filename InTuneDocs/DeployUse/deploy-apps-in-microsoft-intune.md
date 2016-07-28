@@ -29,7 +29,7 @@ Use the information in this topic to help you deploy apps with Microsoft Intune.
 
 
 ## Deploy an app
-In this procedure, you'll deploy the app to selected groups of devices or users.
+In this procedure, you'll deploy an app to selected groups of devices or users.
 
 ### To deploy an app
 
@@ -46,7 +46,7 @@ In this procedure, you'll deploy the app to selected groups of devices or users.
 		- **Available** (users install from the company portal on demand)
 		- **Not Applicable** (the app is not installed or shown in the company portal)
 		- **Uninstall** (the app is uninstalled from targeted devices)
-	- **Deadline** - For required installations, choose how soon the app will be deployed. You can choose from the predefined values, or you can select **Custom** to configure your own deadline.
+	- **Deadline** - For required installations, choose how soon to deploy the app. You can choose from the predefined values, or you can select **Custom** to configure your own deadline.
 
 5. If the app you are deploying can be configured by a mobile application management policy, the **Mobile App Management** page is displayed. On this page, choose the mobile application management policy that you want to associate with this app.
 
@@ -58,14 +58,12 @@ In this procedure, you'll deploy the app to selected groups of devices or users.
 ## Example
 
 In this example, you deployed the app as **Available** to an iOS device.
-The app displays on users' devices in the company portal. Users can then install the app from the portal.
+The app displays on users' devices in the company portal, and users can install it from there.
 
-For example, in this screenshot, the Bing for iOS app was deployed using the **External Link** installation type with a custom icon. The option **Display this as a featured app and highlight it in the company portal** was selected.  
-
+For example, in this screenshot, the Bing for iOS app was deployed by using the **External Link** installation type with a custom icon. The option **Display this as a featured app and highlight it in the company portal** was selected.  
 ![iOS available app](./media/available-install-on-iOS.png)
 
-If you deployed the app as **Required** to an iOS device, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed using the **Managed iOS app from the app store** installation type.
-
+If you deployed the app as **Required** to an iOS device, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed by using the **Managed iOS app from the app store** installation type.
 ![iOS required app](./media/iOS-Required-install.PNG)
 
 ## Next steps
