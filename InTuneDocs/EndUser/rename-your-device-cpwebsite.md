@@ -5,7 +5,7 @@ title: Rename your device from the Company Portal website | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod:

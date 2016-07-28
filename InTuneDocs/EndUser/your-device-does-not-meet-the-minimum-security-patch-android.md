@@ -5,7 +5,7 @@ title: Your device does not meet the minimum security patch | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod:
@@ -40,7 +40,7 @@ The location of the current security patch level can be different, depending on 
 
 **To install the required security patch:**
 
-- Non-Samsung Knox devices: Go to **Settings** > **About** > **Software updates**. 
+- Non-Samsung Knox devices: Go to **Settings** > **About** > **Software updates**.
 
 - Samsung Knox devices: Go to **Settings** > **System updates** > **Check for new system update**.
 

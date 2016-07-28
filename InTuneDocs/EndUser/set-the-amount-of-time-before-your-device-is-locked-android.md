@@ -5,7 +5,7 @@ title: Set the amount of time before your device is locked | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
@@ -29,7 +29,7 @@ ms.suite: ems
 # Set the amount of time before your device is locked
 
 To keep the data on your Android device more secure, your IT administrator can set a policy that requires you to set the amount of time that your device can be idle before it is automatically locked. Follow these steps to set the amount of time before your device will be locked.
- 
+
 1.  In **Settings** on your device, click **Security** &gt; **Automatically Lock** (this appears as **Lock phone after** on some devices).
 
 2.  Specify the password timeout value.

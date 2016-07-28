@@ -5,7 +5,7 @@ title: Send diagnostic data logs to your IT administrator using a USB cable | Mi
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
 ms.prod:

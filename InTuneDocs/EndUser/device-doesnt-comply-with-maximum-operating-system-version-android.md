@@ -5,7 +5,7 @@ title: Android device doesn't comply with the maximum operating system version |
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/02/2016
 ms.topic: article
 ms.prod:
