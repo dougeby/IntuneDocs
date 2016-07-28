@@ -5,7 +5,7 @@ title: Operations and maintenance | Microsoft Intune
 description: Recommendations for the operations and maintenance phase of an Intune deployment.
 keywords:
 author: Nbigman
-manager: arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod:

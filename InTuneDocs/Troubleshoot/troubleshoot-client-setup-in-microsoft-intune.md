@@ -5,7 +5,7 @@ title: Troubleshoot client setup | Microsoft Intune
 description: Troubleshoot common client setup problems.
 keywords:
 author: Nbigman
-manager: arob98
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod:

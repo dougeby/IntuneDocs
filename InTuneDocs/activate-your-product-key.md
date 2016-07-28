@@ -5,7 +5,7 @@ title: Activate Your Product Key | Microsoft Intune
 description: You can use a product key to redeem an Intune subscription or add users to an existing subscription.
 keywords:
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

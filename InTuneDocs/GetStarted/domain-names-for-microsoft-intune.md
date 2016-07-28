@@ -29,8 +29,6 @@ ms.suite: ems
 
 # Custom domain names with Microsoft Intune
 
-The steps to add and verify a custom domain can alternatively be [performed in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
-
 When your organization signs up for a Microsoft cloud-based service like Intune, you're given an initial domain name hosted in Azure Active Directory that looks like the following: **yourdomain.onmicrosoft.com**. In this example, **yourdomain** is the domain name that you chose when you signed up, and **onmicrosoft.com** is the suffix assigned to the accounts you add to your subscription.
 
 You cannot rename or remove that initial domain name. However, you can add, verify or remove your own custom domain names to use with Intune, which is helpful if you want to keep your business identity.
@@ -38,17 +36,19 @@ You cannot rename or remove that initial domain name. However, you can add, veri
 ## To add and verify your custom domain 
 
 1. Go to [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) and sign into your administrator account.
-	> [!IMPORTANT]
-	> Check the
-	[Intune Account Portal has merged with the Office 365 management portal](https://docs.microsoft.com/en-us/intune/deploy-use/account-portal-merged-with-Office-365) announcement for more details on where to manage Microsoft Intune users, groups, and domains.
+
 2. In the navigation pane, choose **Settings** &gt; **Domains**.
+
 3. Choose **Add domain**, and type your custom domain name.
+
 4. The **Verify domain** dialog box opens giving you the values to create the TXT record in your DNS hosting provider.
 	- **GoDaddy users**: Office 365 Management portal redirects you to GoDaddy's login page. After you enter your credentials and accept the domain change permission agreement, the TXT record is created automatically. You can alternatively [create the TXT record](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US).
 	- **Register.com users**: Follow the [step-by-step instructions](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) to create the TXT record.
 
 	> [!TIP] 
 	> Make sure to create a DNS alias (CNAME) for [Windows devices enrollment](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune), while making changes in your DNS hosting provider.
+
+The steps to add and verify a custom domain can alternatively be [performed in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
 
 In a hybrid cloud scenario, after you added your custom domain name, and it has been verified that your organization owns it, you can keep managing user accounts in your on-premises Active Directory, then synchronize it with Azure AD.
 

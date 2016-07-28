@@ -2,10 +2,10 @@
 # required metadata
 
 title: Rollout phases for Microsoft Intune deployment | Microsoft Intune
-description: The typical phases of a technical deployment are Project Scope, Proof of Concept, Pilot, Enterprise rollout, and Run State. 
+description: The typical phases of a technical deployment are Project Scope, Proof of Concept, Pilot, Enterprise rollout, and Run State.
 keywords:
 author: Nbigman
-manager: arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
@@ -32,11 +32,11 @@ The typical phases of a technical deployment are Project Scope, Proof of Concept
 -   [Project scope](project-scope.md): Outline your goals, timeline and success metrics, define key organizational readiness factors, assemble your project team, and begin initial preparations for all phases involved with successfully rolling out Microsoft Intune across your organization.
 	 > [!NOTE]           
 	   These templates may be helpful when working on the project scope:
-	    
+
 	>- [Intune or Intune with Configuration Manager decision template](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
 	>- [Planning template for mobile apps](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
 	>- [General device management planning template](https://gallery.technet.microsoft.com/General-device-management-334c3792)
-	
+
 
 -   [Proof of concept](proof-of-concept.md): Test technical deployment and network architecture, and determine the ability of your deployment to meet your company's requirements. This phase includes a simple topology designed to validate specific technical scenarios.  
 

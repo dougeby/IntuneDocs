@@ -5,7 +5,7 @@ title: What's new | Microsoft Intune
 description: Find out what’s new in this month’s, and past releases of Microsoft Intune
 keywords:
 author: Lindavr
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod:

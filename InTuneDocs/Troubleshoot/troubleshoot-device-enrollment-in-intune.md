@@ -5,7 +5,7 @@ title: Troubleshoot device enrollment| Microsoft Intune
 description: Suggestions for troubleshooting device enrollment issues.
 keywords:
 author: Nbigman
-manager: arob98
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
@@ -152,7 +152,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 **Resolution:** In the [Office 365 admin center](https://portal.office.com/), remove the special characters from the company name and save the company information.
 
 ### Unable to log in or enroll devices when you have multiple verified domains
-**Issue:** When you add a second verified domain to your ADFS, users with the user principal name (UPN) suffix of the second domain may not be able to log into the portals or enroll devices. 
+**Issue:** When you add a second verified domain to your ADFS, users with the user principal name (UPN) suffix of the second domain may not be able to log into the portals or enroll devices.
 
 
 **Resolution:** Microsoft Office 365 customers who utilize single sign-on (SSO) through AD FS 2.0 and have multiple top level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix.  There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the **SupportMultipleDomain** switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. See [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
@@ -175,14 +175,14 @@ Administrators can delete devices in the Azure Active Directory portal.
 **Issue**: User receives the following message on their device:
 *You cannot sign in because your device is missing a required certificate.*
 
-**Resolution**: 
+**Resolution**:
 
 - The user may be able to retrieve the missing certificate by following [these instructions](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
-- If the user is unable to retrieve the certificate, you may be missing intermediate certificates on your ADFS server. The intermediate certificates are required by Android to trust the server. 
+- If the user is unable to retrieve the certificate, you may be missing intermediate certificates on your ADFS server. The intermediate certificates are required by Android to trust the server.
 
 You can import the certificates in to the intermediate store on the ADFS server or proxies as follows:
 
-1.	On the ADFS server, launch the **Microsoft Management Console** and add the Certificates snap in for the **Computer account**. 
+1.	On the ADFS server, launch the **Microsoft Management Console** and add the Certificates snap in for the **Computer account**.
 5.	Find the certificate that your ADFS service is using and view its parent certificate.
 6.	Copy the parent certificate and paste it under **Computer\Intermediate Certification Authorities\Certificates**.
 7.	Copy your ADFS, ADFS Decrypting, and ADFS Signing certificates and paste them in the Personal Store for the ADFS service.
@@ -209,34 +209,34 @@ The user should now be able to sign in to the Company Portal on the Android devi
 ### Enrolled iOS device doesn't appear in console when using System Center Configuration Manager with Intune
 **Issue:** User enrolls iOS device but it does not appear in the Configuration Manager admin console. The device does not indicate that it's been enrolled. Possible causes:
 
-- You may have enrolled your Intune Connector into one account, and then enrolled it into another account. 
+- You may have enrolled your Intune Connector into one account, and then enrolled it into another account.
 - You may have downloaded the MDM certificate from one account and used it on another account.
 
 
 **Resolution:** Perform the following steps:
 
-1. Disable iOS inside of the Windows Intune Connector. 
+1. Disable iOS inside of the Windows Intune Connector.
 	1. Right-click the Intune subscription and select **Properties**.
 	1. On the "iOS" tab, uncheck "Enable iOS Enrollment".
 
 
 
 1. In SQL, run the following steps on the CAS DB
-  
-	1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-	1. delete from MDMPolicy where PolicyType = 7 
+
+	1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+	1. delete from MDMPolicy where PolicyType = 7
 	1. delete from MDMPolicyAssignment where PolicyType = 7
-	1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-	1. delete from MDMPolicy where PolicyType = 11 
-	1. delete from MDMPolicyAssignment where PolicyType = 11 
+	1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+	1. delete from MDMPolicy where PolicyType = 11
+	1. delete from MDMPolicyAssignment where PolicyType = 11
 	1. DELETE Drs_Signals
-1. Restart the SMS Executive Service or Restart the CM Server 
+1. Restart the SMS Executive Service or Restart the CM Server
 
 
 
 1. Get a new APN certificate and upload it: Right-click the Intune subscription in the left pane of Configuration Manager. Select **Create APNs certificate request** and follow the instructions.
 ## Issues when using System Center Configuration Manager with Intune
-### Mobile devices disappear 
+### Mobile devices disappear
 **Issue:** After successfully enrolling a mobile device to Configuration Manager it disappears from the mobile device collection, but the device still has the Management Profile and is listed in CSS Gateway.
 
 **Resolution:** This may occur because you have a custom process removing non-domain-joined devices, or because the  user has retired the device from the subscription. To validate and check which process or user account removed the device from the Configuration Manager console, perform the following steps.
@@ -265,22 +265,22 @@ A list of iOS enrollment errors is provided in our device-user documentation, in
 
 ### The machine is already enrolled - Error hr 0x8007064c
 **Issue:** Enrollment fails with the error **The machine is already enrolled**. The enrollment log shows error **hr 0x8007064c**.
-  
+
 This may be because the computer had been previously enrolled, or has the cloned image of a computer that had been enrolled. The account certificate of the previous account is still present on the computer.
 
 
 
-**Resolution:** 
+**Resolution:**
 
-1. From the **Start** menu, **Run** -> **MMC**. 
+1. From the **Start** menu, **Run** -> **MMC**.
 1. **File** -> **Add/ Remove Snap-ins**.
 1. Double-click **Certificates**, choose **Computer account**, **Next**, select **Local Computer**.
-1. Double-click **Certificates (Local computer)**, choose **Personal/ Certificates**. 
+1. Double-click **Certificates (Local computer)**, choose **Personal/ Certificates**.
 1. Look for the Intune cert issued by Sc_Online_Issuing, and delete it if present
 1. Delete this registry key if it exists: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** and all sub keys.
-1. Attempt re-enrollment. 
-1. If the machine can still not enroll, look for and delete this key, if it exists: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Attempt re-enrollment. 
+1. Attempt re-enrollment.
+1. If the machine can still not enroll, look for and delete this key, if it exists: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Attempt re-enrollment.
 
     > [!IMPORTANT]
     > This section, method, or task contains steps that tell you how to modify the registry. However, serious problems might occur if you modify the registry incorrectly. Therefore, make sure that you follow these steps carefully. For added protection, back up the registry before you modify it. Then, you can restore the registry if a problem occurs.

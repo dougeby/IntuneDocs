@@ -2,10 +2,10 @@
 # required metadata
 
 title: Troubleshoot conditional access| Microsoft Intune
-description: What to do when your users fail to get access to resources through Intune conditional access. 
+description: What to do when your users fail to get access to resources through Intune conditional access.
 keywords:
 author: nbigman
-manager: arob98
+manager: angrobe
 ms.date: 07/24/2016
 ms.topic: article
 ms.prod:
@@ -27,9 +27,9 @@ ms.suite: ems
 
 # Troubleshoot conditional access
 
-Typically, a user is trying to access email or SharePoint and receives a prompt to enroll. That prompt will lead the user to the company portal. 
+Typically, a user is trying to access email or SharePoint and receives a prompt to enroll. That prompt will lead the user to the company portal.
 
-This topic describes what to do when your users fail to get access to resources through Intune conditional access. 
+This topic describes what to do when your users fail to get access to resources through Intune conditional access.
 
 
 ## The basics for success in conditional access
@@ -47,16 +47,16 @@ These conditions can be viewed for each device in the Azure Management Portal an
 ## Enrollment issues
 
  -  The device isn't enrolled, so enrollment will resolve the issue.
- -  The user enrolled the device, but the workplace join failed. The user should update the enrollment from the company portal. 
- 
+ -  The user enrolled the device, but the workplace join failed. The user should update the enrollment from the company portal.
+
 ## Compliance issues
 
  -  The device is not compliant with Intune policy. Common issues are encryption and password requirements. The user will be redirected to the company portal, where they can configure their device to be compliant.
  -  It may take some time for compliance information to be registered for a device. Wait a few minutes and try again.
  -  For iOS devices:
 	 -   An existing email profile created by the user will block the deployment of an Intune admin-created profile. This is a common problem as iOS users will typically create an email profile, then enroll. The company portal will inform the user that they are not compliant due to their manually-configured email profile, and will prompt the user to remove that profile.The user should remove their email profile so that the Intune profile can be deployed. To prevent the problem instruct your users to enroll without installing an email profile and to allow Intune to deploy the profile.
-	 -	 An iOS device may get stuck in a checking-compliance state, preventing the user from initiating another check-in. Restarting the company portal may fix this, and the compliance state will reflect the device state in Intune. After all of the data is collected from a device sync the compliance check is, fast, less than half a second on average. 
-		 
+	 -	 An iOS device may get stuck in a checking-compliance state, preventing the user from initiating another check-in. Restarting the company portal may fix this, and the compliance state will reflect the device state in Intune. After all of the data is collected from a device sync the compliance check is, fast, less than half a second on average.
+
 		Typically, the reason devices stay in this state is because they are having trouble connecting to the service or the sync is taking a long time.  If the problem persists on different network configurations (cellular, Wi-Fi, VPN), through device restarts, and after verifying that the SSP is up-to-date on the device, contact Microsoft Supportas described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 ## Policy issues
@@ -83,7 +83,7 @@ A device may be blocked from Conditional Access without receiving an activation 
 - Is the notification account properly configured as described in Basic configuration?
 - Is the device present in the Intune admin console as an Exchange ActiveSync device? If not, it's likely that device discovery is failing, probably because of an Exchange Connector sync issue. See Exchange ActiveSync device not discovered from Exchange.
 - Check the Exchange Connector logs for sendemail activity and check for errors. An example of the command to search for is SendEmail from notification account to useremail.
-- Before the Exchange Connector blocks the device, it sends the activation email. If the device is offline, it may not receive the activation email. Check if the device email client has email retrieval using Push instead of Poll as this could also cause the user to miss the email. Switch to Poll and see if the device receives the email. 
+- Before the Exchange Connector blocks the device, it sends the activation email. If the device is offline, it may not receive the activation email. Check if the device email client has email retrieval using Push instead of Poll as this could also cause the user to miss the email. Switch to Poll and see if the device receives the email.
 
 ## Non-compliant device not blocked
 
@@ -100,14 +100,14 @@ If these troubleshooting procedures don't resolve your issue, there is informati
 
 ### Collecting OWA mailbox logs
 
-1. Log on through OWA and choose the settings (gear) symbol next to your name in the upper right corner. 
+1. Log on through OWA and choose the settings (gear) symbol next to your name in the upper right corner.
 2. Choose **Options**
 3. Choose **Phone** (may say **Mobile Devices**) in the  column on the left side.
-4. From the top menu, choose **Mobile Devices**. 
-5. Choose your device from the list and then choose **Start Logging**. 
-6. When prompted, choose **Yes** on the pop-up dialog. 
-7. Perform the action that caused the issue, so that you can reproduce it. 
-8. Wait 1-2 minutes then go back to the phone list in OWA. Make sure your phone is selected in the list, and then from the top menu choose **Retrieve Log**. 
+4. From the top menu, choose **Mobile Devices**.
+5. Choose your device from the list and then choose **Start Logging**.
+6. When prompted, choose **Yes** on the pop-up dialog.
+7. Perform the action that caused the issue, so that you can reproduce it.
+8. Wait 1-2 minutes then go back to the phone list in OWA. Make sure your phone is selected in the list, and then from the top menu choose **Retrieve Log**.
 9. You should receive an email from yourself with an attachment. When you open a support ticket, provide the contents of the email to Microsoft Support.
 
 ### Exchange Connector logs
@@ -116,7 +116,7 @@ If these troubleshooting procedures don't resolve your issue, there is informati
 To view Exchange Connector logs use the [Server Trace Viewer Tool](server trace viewer tool (https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx'). This tool requires that you download the Windows Server SDK.
 
 >[!NOTE]
->The logs are located in C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. The logs are contained in a series of 30 log files starting with *Connector0.log* and stopping at *Connector29.log*. Logs rollover from one to another after 10MB of data has accumulated in a log. Once the logs get to Connector29, they will start over at Connector0 again, overwriting previous log files. 
+>The logs are located in C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. The logs are contained in a series of 30 log files starting with *Connector0.log* and stopping at *Connector29.log*. Logs rollover from one to another after 10MB of data has accumulated in a log. Once the logs get to Connector29, they will start over at Connector0 again, overwriting previous log files.
 
 #### Locating sync logs
 
@@ -125,7 +125,7 @@ To view Exchange Connector logs use the [Server Trace Viewer Tool](server trace 
 	'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users`
 
     The end of the log for a full sync looks like this:
-	
+
 	Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
 -	Locate a quick (delta) sync in the logs by searching for **quick sync**.

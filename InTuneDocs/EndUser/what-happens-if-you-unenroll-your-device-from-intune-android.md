@@ -5,7 +5,7 @@ title: What happens if you unenroll your Android device from Intune? | Microsoft
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
@@ -30,7 +30,7 @@ ms.suite: ems
 
 When you unenroll your Android device from Intune:
 
--   You are unenrolling your device from Intune, which means that your IT administrator is no longer managing the device. 
+-   You are unenrolling your device from Intune, which means that your IT administrator is no longer managing the device.
 
 -	You will lose access to company data and resources.
 
@@ -40,7 +40,7 @@ When you unenroll your Android device from Intune:
 
 -   Any settings that were changed on your device when you added it, for example disabling the camera, or requiring a certain password length, will no longer apply.
 
-If your device is set up only to get company email, and you unenroll your device, your device won't appear in the Company Portal anymore. 
+If your device is set up only to get company email, and you unenroll your device, your device won't appear in the Company Portal anymore.
 
 For instructions on how to unenroll, see [Unenroll your device from Intune by using the Company Portal app](unenroll-your-device-from-intune-android.md).
 

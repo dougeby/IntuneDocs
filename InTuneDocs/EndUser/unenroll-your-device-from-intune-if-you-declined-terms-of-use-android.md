@@ -5,7 +5,7 @@ title: Unenroll your device from Intune if you declined Terms of Use | Microsoft
 description: Describes how to unenroll an Android device from Intune if you declined the Terms of Use and cannot sign in to the Company Portal app
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

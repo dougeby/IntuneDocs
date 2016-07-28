@@ -5,7 +5,7 @@ title: Multi-factor authentication for Windows | Microsoft Intune
 description: Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources.
 keywords:
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Protect Windows devices with multi-factor authentication
-Microsoft Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources. MFA requires authentication factors such as text authentication in addition to usernames and passwords. Intune supports the use of MFA during enrollment of Windows 8.1 or later, Windows Phone 8.1, or Windows 10 Desktop and Mobile devices. 
+Microsoft Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources. MFA requires authentication factors such as text authentication in addition to usernames and passwords. Intune supports the use of MFA during enrollment of Windows 8.1 or later, Windows Phone 8.1, or Windows 10 Desktop and Mobile devices.
 
 ## On-premises infrastructure requirements for ADFS MFA
 To set up multi-factor authentication, you need:
@@ -58,4 +58,3 @@ For information about how to enable MFA in ADFS, see [Manage Risk with Additiona
 1.  In the Intune admin console, click **Admin** &gt; **Mobile Device Management** &gt; **Multi-factor authentication**.
 
 2.  Click **Configure Multi-factor Authentication**, and then click **Enable Multi-factor Authentication**.
-
