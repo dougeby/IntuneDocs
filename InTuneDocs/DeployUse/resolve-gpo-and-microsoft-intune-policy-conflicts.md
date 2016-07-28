@@ -5,7 +5,7 @@ title: Resolve GPO and Intune policy conflicts | Microsoft Intune
 description: Learn how to resolve conflicts between Group Policy and Intune configuration policies.
 keywords:
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod:

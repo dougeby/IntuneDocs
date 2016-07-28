@@ -5,7 +5,7 @@ title: Remove your device from the Company Portal | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
 ms.prod:
@@ -30,7 +30,7 @@ ms.suite: ems
 
 If you decide you no longer want your device to be managed by Intune and your IT administrator, you can remove it from the Company Portal by using the [Company Portal website](http://portal.manage.microsoft.com). The Company Portal website is a web page that you can use to manage computers and devices that you have enrolled in Intune and to do most of the same tasks that you can do when using your Company Portal app.
 
-If you remove your device, it will no longer be listed in the Company Portal, and you might also lose access to company or school data, apps, and email. 
+If you remove your device, it will no longer be listed in the Company Portal, and you might also lose access to company or school data, apps, and email.
 
 To remove your device:
 

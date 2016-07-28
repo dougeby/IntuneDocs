@@ -5,7 +5,7 @@ title: You are asked to turn on Scan device for security threats | Microsoft Int
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ROBOTS: noindex,nofollow
 
 # You are asked to turn on Scan device for security threats
 
- If you see the message, “Scan device for security threats," you need to go to **Settings** > **Google** > **Security**, and turn on **Scan device for security threats**. 
+ If you see the message, “Scan device for security threats," you need to go to **Settings** > **Google** > **Security**, and turn on **Scan device for security threats**.
 
 Your IT administrator requires this setting to be turned on to protect the corporate data on your Android device. If **Scan device for security threats** is turned off, your device is less safe because it is not being checked for security threats.
 

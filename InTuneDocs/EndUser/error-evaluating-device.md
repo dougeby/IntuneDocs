@@ -5,7 +5,7 @@ title: Error evaluating device | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
@@ -32,4 +32,3 @@ Your device was found to be noncompliant with one or more of your company’s po
 To solve this problem, wait a few minutes, and then tap **Check Compliance**.
 
 If the problem persists, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-

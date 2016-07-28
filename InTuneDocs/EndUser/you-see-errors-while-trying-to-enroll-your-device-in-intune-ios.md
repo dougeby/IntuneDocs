@@ -5,7 +5,7 @@ title: You see errors while trying to enroll your iOS device in Intune | Microso
 description:
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/15/2016
 ms.topic: article
 ms.prod:
