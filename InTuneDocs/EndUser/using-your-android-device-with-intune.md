@@ -5,7 +5,7 @@ title: Using your Android device with Intune | Microsoft Intune
 description: List of links to tasks that you can do on your Android mobile device when the device is enrolled in Intune
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
 ms.prod:
@@ -70,6 +70,3 @@ The information in this section will help you fix issues you might encounter whe
 - [You are asked to turn off USB debugging](you-are-asked-to-turn-off-usb-debugging-android.md)
 - [You are asked to turn on Scan device for security threats](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
 - [Your device does not meet the minimum security patch](your-device-does-not-meet-the-minimum-security-patch-android.md)
-
-
-

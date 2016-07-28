@@ -5,7 +5,7 @@ title: Using the Intune Company Portal website | Microsoft Intune
 description: Describes the Company Portal website and provides links to steps for tasks that you can do on the website
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
@@ -42,7 +42,7 @@ You can use the Company Portal website  to:
 
 -	[Sync your device manually to speed up slow app installations](sync-your-device-manually-cpwebsite.md)
 
--   Find your IT administrator's contact information, if your IT admin configured it. 
+-   Find your IT administrator's contact information, if your IT admin configured it.
 
 -   See details about your device, including whether it is compliant with your company's or school's policies
 

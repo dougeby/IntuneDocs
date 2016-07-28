@@ -5,7 +5,7 @@ title: You are asked to identify your device when you're trying to enroll | Micr
 description:
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/06/2016
 ms.topic: article
 ms.prod:

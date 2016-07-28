@@ -5,7 +5,7 @@ title: Install a new version of the Company Portal app | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
@@ -61,4 +61,3 @@ For information about other tasks that you can do with your device, use the link
 - [Using your Android device with Intune](using-your-android-device-with-intune.md)</br>
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
 - [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
-

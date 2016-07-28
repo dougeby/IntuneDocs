@@ -5,7 +5,7 @@ title: Set or change your passcode | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 5/25/2016
 ms.topic: article
 ms.prod:
@@ -29,7 +29,7 @@ ROBOTS: noindex,nofollow
 
 If your Windows device doesn't comply with your IT administrator's password policy, a message appears that briefly describes the issue and explains what you need to do to make your password meet the requirements.
 
-Your IT administrator can set more than one password requirement. For example, the password might have to be a certain number of characters, and it might have to be a mix of numbers and letters, etc. Since more than one requirement might be set, these instructions can explain only how to set or change your password. They don't explain every possible combination of requirements. 
+Your IT administrator can set more than one password requirement. For example, the password might have to be a certain number of characters, and it might have to be a mix of numbers and letters, etc. Since more than one requirement might be set, these instructions can explain only how to set or change your password. They don't explain every possible combination of requirements.
 
 If you have trouble setting a password that meets all of the password requirements, contact your IT administrator for help.
 
@@ -37,7 +37,7 @@ If you have trouble setting a password that meets all of the password requiremen
 
 1. From the **home** screen, tap **Settings**, and then select **lock screen**.
 2. Scroll down to **Password**, and slide the **Password** bar to **On**.
-3. Enter your new password in the **New password** field, and then reenter it in the **Confirm password** field. 
+3. Enter your new password in the **New password** field, and then reenter it in the **Confirm password** field.
 4. Tap **done**.
 
 ## To change your password on a Windows Phone 8 or 8.1:

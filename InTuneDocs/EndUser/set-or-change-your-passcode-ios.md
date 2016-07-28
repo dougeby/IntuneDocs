@@ -5,7 +5,7 @@ title: Set or change your passcode | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 5/25/2016
 ms.topic: article
 ms.prod:
@@ -29,7 +29,7 @@ ROBOTS: noindex,nofollow
 
 If your iOS device doesn't comply with your IT administrator's passcode policy, a message appears that briefly describes the issue and explains what you need to do to make your passcode meet the requirements.
 
-Your IT administrator can set more than one passcode requirement. For example, the passcode might have to be a certain number of characters, and it might have to be a mix of numbers and letters, etc. Since more than one requirement might be set, these instructions can explain only how to set or change your passcode. They don't explain every possible combination of requirements. 
+Your IT administrator can set more than one passcode requirement. For example, the passcode might have to be a certain number of characters, and it might have to be a mix of numbers and letters, etc. Since more than one requirement might be set, these instructions can explain only how to set or change your passcode. They don't explain every possible combination of requirements.
 
 If you have trouble setting a passcode that meets all of the passcode requirements, contact your IT administrator for help.
 

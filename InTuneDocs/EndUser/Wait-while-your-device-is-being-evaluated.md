@@ -5,7 +5,7 @@ title: Wait while your device is being evaluated | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod:
@@ -18,7 +18,7 @@ ms.assetid: 01247881-452c-4da8-93ca-66b5e65c5317
 ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
-ms.reviewer: chrisgre 
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,4 +29,3 @@ ms.suite: ems
 Your device is still being evaluated for compliance. Wait a few more minutes for the compliance check to complete.
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
