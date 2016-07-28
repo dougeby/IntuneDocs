@@ -5,7 +5,7 @@ title: Wi-Fi connections | Microsoft Intune
 description: Use VPN profiles to deploy VPN settings to users and devices in your organization.
 keywords:
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
@@ -131,8 +131,8 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
 
 2.  Configure a policy of the type **Windows** &gt; **Wi-Fi Import (Windows 8.1 and later)**.
 
-    This policy can be applied to Windows 8.1 and Windows 10 desktop and mobile devices. 
-	
+    This policy can be applied to Windows 8.1 and Windows 10 desktop and mobile devices.
+
 	You can only create and deploy a *custom* Windows Wi-Fi import policy. Recommended settings are not available.
 
 3.  Specify the following general values for the Windows Wi-Fi Import Policy:

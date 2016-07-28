@@ -6,7 +6,7 @@ description: Create and manage reports about software, hardware, and software li
 
 keywords:
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 06/21/2016
 ms.topic: article
 ms.prod:
@@ -73,4 +73,3 @@ In addition, reports support the following actions:
 
 ### See also
 [Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
-

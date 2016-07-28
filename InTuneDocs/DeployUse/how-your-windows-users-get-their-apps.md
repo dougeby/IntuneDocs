@@ -5,7 +5,7 @@ title: How your Windows users get their apps | Microsoft Intune
 description: Methods for making Windows apps available to end users
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # How your Windows users get their apps
 
-Use this information to understand how and where your end users get the apps that you distribute through Microsoft Intune. 
+Use this information to understand how and where your end users get the apps that you distribute through Microsoft Intune.
 
 **Required apps** - Apps that are required by the administrator and that are installed on the device with minimal user involvement, depending on the platform.
 
