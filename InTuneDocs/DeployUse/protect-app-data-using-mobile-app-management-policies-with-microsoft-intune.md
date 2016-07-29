@@ -5,7 +5,7 @@ title: Protect app data using MAM policies | Microsoft Intune
 description: This topic explains how  mobile app management policies can help protect your company data, prevent data loss, and keep personal and work information separate.
 keywords:
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod:

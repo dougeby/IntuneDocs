@@ -6,7 +6,7 @@ description: Use Intune to manage apps you volume purchased from Apple by import
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -69,6 +69,9 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Apps** &gt; **Managed Software** &gt; **Volume-Purchased apps**. This list shows all apps that were synchronized from the Apple VPP service.
 
 2.  Choose the app you want to deploy, choose **Manage Deployment**, then use the instructions in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to complete uploading, creation, and deployment of the app.
+
+> [!TIP]
+> You must choose a deployment action of **Required**. Available installs are not currently supported.
 
 When you deploy the app as a **Required** install, a license is used by each user that installs the app.
 
