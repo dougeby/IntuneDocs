@@ -62,8 +62,8 @@ Intune integrates with Passport for Work in two ways:
 	- **Not allowed** (default). Users must not use these character types in their PIN. (This is also the behavior if the setting is not configured.)
 	> [!TIP]
     > Special characters include: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
-- **PIN expiration (days)**. It's a good practice to specify an expiration period for a PIN, after which end users must change it. The default is 41 days.
-- **Remember PIN history**. Use this setting to restrict the re-use of previously used PINS. By default, the last 5 PINs cannot be reused.
+- **PIN expiration (days)**. It's a good practice to specify an expiration period for a PIN, after which users must change it. The default is 41 days.
+- **Remember PIN history**. Use this setting to restrict the reuse of previously used PINs. By default, the last 5 PINs cannot be reused.
 
 
 ## Passport for Work: Other settings
