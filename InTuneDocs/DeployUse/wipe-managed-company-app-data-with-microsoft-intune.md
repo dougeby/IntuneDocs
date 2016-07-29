@@ -5,7 +5,7 @@ title: Wipe managed company app data | Microsoft Intune
 description: Learn how you can selectively remove company data from devices remotely.
 keywords:
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
 ms.prod:
