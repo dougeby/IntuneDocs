@@ -5,7 +5,7 @@ title: Android MAM policy settings | Microsoft Intune
 description: This topic describes the mobile app management policy settings for Android devices.
 keywords:
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
 ms.prod:
