@@ -5,7 +5,7 @@ title: Troubleshoot policies | Microsoft Intune
 description: Troubleshoot policy configuration issues.
 keywords:
 author: Nbigman
-manager: arob98
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod:

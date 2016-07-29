@@ -5,7 +5,7 @@ title: Send diagnostic data logs to your IT administrator using email | Microsof
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
@@ -36,13 +36,13 @@ To turn on verbose logging:
 
 2.  Tap **Menu** &gt;  **Settings**.
 
-	> [!NOTE] 
+	> [!NOTE]
 	> **Menu** could be a software button or a hardware button, depending on the type of Android device you have.
 
 3.  Under **Diagnostic Data**, tap **Send Data**.
 
 	> [!NOTE]
-	> **If you're using Android 6.0 or later devices only:**  When you tap **Send Data**, you see the message, **Allow Company Portal to access photos, media, and files on your device?**. 
+	> **If you're using Android 6.0 or later devices only:**  When you tap **Send Data**, you see the message, **Allow Company Portal to access photos, media, and files on your device?**.
 
 	This message is misleading, because **Microsoft never accesses the photos, media, or files on your device!** Google controls the message text, so Microsoft cannot change it.  When you allow access, all you're doing is allowing your device to write data logs to the device's SD card, which enables you to move those logs by using a USB cable.
 

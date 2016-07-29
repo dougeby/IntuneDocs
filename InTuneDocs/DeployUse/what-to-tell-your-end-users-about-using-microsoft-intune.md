@@ -5,7 +5,7 @@ title: What to tell your end users about using Intune | Microsoft Intune
 description: Links to information to share with your end users
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod:

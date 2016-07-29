@@ -5,7 +5,7 @@ title: Microsoft Software Supplemental Notice | Microsoft Intune
 description: Read the Microsoft software supplemental notice for Microsoft Intune.
 keywords:
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

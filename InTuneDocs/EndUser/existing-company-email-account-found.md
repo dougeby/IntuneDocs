@@ -5,7 +5,7 @@ title: Existing company email account found | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
@@ -37,4 +37,3 @@ You already have a company email account. To continue to connect to your company
 3.  Wait a short time for new email settings to be applied to your device automatically.
 
 If new email settings do not appear after a while, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-

@@ -5,7 +5,7 @@ title: How to set the period before your Android device is locked | Microsoft In
 description:
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod:

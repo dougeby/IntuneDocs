@@ -5,7 +5,7 @@ title: Application rollout | Microsoft Intune
 description: Recommendations for a phased rollout of apps in Microsoft Intune.
 keywords:
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod:

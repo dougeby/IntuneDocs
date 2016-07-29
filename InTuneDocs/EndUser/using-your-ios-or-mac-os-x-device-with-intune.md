@@ -5,7 +5,7 @@ title: Using your iOS or Mac OS X device with Intune | Microsoft Intune
 description: List of links to tasks that you can do on your iOS or Mac OS X mobile device when the device is enrolled in Intune
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
 ms.prod:
@@ -63,5 +63,3 @@ The information in this section will help you fix issues you might encounter whe
 - [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [Device doesn't have the required minimum operating system version](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)
 - [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
-
-

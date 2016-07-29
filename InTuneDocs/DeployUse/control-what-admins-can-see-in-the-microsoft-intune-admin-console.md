@@ -5,7 +5,7 @@ title: Customize console views for admin roles | Microsoft Intune
 description: Use this topic to help you filter the Intune admin console view to allow your admins to see only the items they need for their role.
 keywords:
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod:
@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 # Customize Intune console views according to admin roles
-You can filter the Microsoft Intune admin console view to allow your admins to see only the items they need to see for their role. For example, you can allow only admin console operators to update malware definitions or reset the passcode on devices. You do this by using preset **designations** that you assign to specific users. When these users access the admin console, they only see items specific to their designation.
+You can filter the Microsoft Intune administration console view to allow your admins to see only the items they need to see for their role. For example, you can allow only admin console operators to update malware definitions or reset the passcode on devices. You do this by using preset **designations** that you assign to specific users. When these users access the admin console, they can only see items that are specific to their designation.
 
-## How to create a custom view
+## To create a custom view
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin** &gt; **Service Administrators**.
 
@@ -66,8 +66,8 @@ You can filter the Microsoft Intune admin console view to allow your admins to s
 
         -   Refresh inventory
 
-        -   Remote lock a device
+        -   Lock a device remotely
 
-        -   Passcode reset
+        -   Reset a passcode
 
-When the admin you configured next opens the Intune admin console, they will be given the level of access you designated.
+When the admin that you configured next opens the Intune admin console, they will be given the level of access that you designated.

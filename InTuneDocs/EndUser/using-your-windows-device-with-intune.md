@@ -5,7 +5,7 @@ title: Using your Windows device with Intune | Microsoft Intune
 description: List of links to tasks that you can do on your Windows device when the device is enrolled in Intune
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
@@ -60,5 +60,3 @@ The information in this section will help you fix issues you might encounter whe
 - [Device doesn't have antimalware software enabled](device-doesnt-have-antimalware-software-enabled-windows.md)
 - [Device doesn't have Secure Boot enabled](device-doesnt-have-secure-boot-enabled-windows.md)
 - [Device doesn't have Code Integrity enabled](device-doesnt-have-code-integrity-enabled-windows.md)
-
-
