@@ -76,7 +76,7 @@ These policy settings configure Windows Firewall to block incoming network traff
 These policy settings determine whether Windows Firewall notifies the user of the PC when it blocks incoming network traffic in these situations:
 - When the managed computer is connected to a domain (for example, at the workplace)
 - When the managed computer is connected to a private (trusted) network (such as a home network)
-- When the managed computer is connected to an untrusted, public network (such as a coffee shop).
+- When the managed computer is connected to an untrusted, public network (such as a coffee shop)
 
 The default value for each of these settings is **Yes**.
 
