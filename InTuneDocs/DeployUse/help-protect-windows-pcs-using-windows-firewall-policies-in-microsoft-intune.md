@@ -2,7 +2,7 @@
 # required metadata
 
 title: Firewall policies for Windows PCs | Microsoft Intune
-description: Intune can help you to secure PCs you manage with the Intune client in a number of ways, including configuring Windows Firewall settings.
+description: Intune can help you to secure PCs you manage with the Intune client in a number of ways, including helping you to configure Windows Firewall settings.
 keywords:
 author: robstackmsft
 manager: angrobe
@@ -26,14 +26,14 @@ ms.suite: ems
 ---
 
 # Help protect Windows PCs using Windows Firewall policies in Microsoft Intune
-Microsoft Intune can help you to secure Windows PCs you manage with the Intune client in a number of ways, including the use of policies that allow you to configure Windows Firewall settings on PCs.
+Microsoft Intune can help you to secure Windows PCs that you manage with the Intune client in a number of ways, including helping you use policies that enable you to configure Windows Firewall settings on PCs.
 
 If you have not yet installed the Intune Windows PC client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
-Use the information in the following sections to help you configure, deploy and monitor Windows Firewall policies on Windows PCs.
+Use the information in the following sections to help you configure, deploy, and monitor Windows Firewall policies on Windows PCs.
 
 ## Use Intune policies to manage the Windows Firewall
-The Windows Firewall policy lets you create and deploy settings that control the Windows Firewall on managed PCs. You cannot manage custom exceptions for Windows Firewall and these settings do not affect third-party firewalls.
+The Windows Firewall policy lets you create and deploy settings that control the Windows Firewall on managed PCs. You cannot manage custom exceptions for Windows Firewall, and these settings do not affect third-party firewalls.
 
 > [!NOTE]
 > If Microsoft Intune policy and Group Policy are configured to manage the same setting on the PC, the Group Policy setting overrides the Microsoft Intune policy. For information about how to avoid conflicts between Intune policies and Group Policy, see [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
@@ -41,7 +41,7 @@ The Windows Firewall policy lets you create and deploy settings that control the
 > If you want to deploy Windows Firewall settings to computers running Windows Vista, you must first install [Hotfix KB971800](http://support2.microsoft.com/kb/971800) on these computers.
 
 > [!IMPORTANT]
-> To manage the Windows Firewall using Intune, you must ensure that the following two services are enabled on the computers you will manage:
+> To manage Windows Firewall by using Intune, ensure that the following two services are enabled on the computers that you manage:
 >
 > -   Windows Firewall
 > -   IPsec Policy Agent
@@ -52,33 +52,38 @@ The Windows Firewall policy lets you create and deploy settings that control the
 
 2.  Configure and deploy a **Windows Firewall Settings** policy. You can use recommended settings or customize the settings. If you need more information about how to create and deploy policies, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
-    The following section lists the values you can configure in the policy and also the default values that will be used if you don’t customize the policy.
+    The following section lists the values that you can configure in the policy and also the default values that will be used if you don’t customize the policy.
 
 After you deploy a Windows Firewall policy, you can view its status on the **All Policies** page of the **Policy** workspace.
 
-## Policy settings for Windows Firewall
+## Specify policy settings for Windows Firewall
 
 ### Turn on Windows Firewall
 
-These policy settings enable the Windows Firewall on managed computers connected to a domain (for example, at the workplace), a private (trusted) network (such as a home network), or an untrusted, public network (such as a coffee shop). The default value for each of these settings is **Yes**, which is the most secure value. 
+These policy settings enable the Windows Firewall on managed computers that are connected to a domain (for example, at the workplace), a private (trusted) network (such as a home network), or an untrusted, public network (such as a coffee shop). The default value for each of these settings is **Yes**, which is the most secure value.
 
 
 
 ### Block all incoming connections, including those in the list of allowed programs
 
-These policy settings configure Windows Firewall to block incoming network traffic when the managed computer is connected to a domain (for example, at the workplace), a private (trusted) network (such as a home network), or an untrusted, public network (such as a coffee shop). The default value for each of these settings is **Yes**, which is the most secure value. 
+These policy settings configure Windows Firewall to block incoming network traffic when the managed computer is connected to a domain (for example, at the workplace), a private (trusted) network (such as a home network), or an untrusted, public network (such as a coffee shop). The default value for each of these settings is **Yes**, which is the most secure value.
 
 > [!IMPORTANT]
-> If your environment includes managed computers that are running Windows Vista with no service packs installed, you must either install the update associated with [article 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in the Microsoft Knowledge Base or else disable the **Block all incoming connections** policy settings in policies deployed to those computers.
+> If your environment includes managed computers that are running Windows Vista with no service packs installed, you must either install the update that's associated with [article 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in the Microsoft Knowledge Base or disable the **Block all incoming connections** policy settings in policies deployed to those computers.
 
 ### Notify the user when Windows Firewall blocks a new program
 
-These policy settings configure whether Windows Firewall notifies the PC's user when it blocks incoming network traffic when the managed computer is connected to a domain (for example, at the workplace), a private (trusted) network (such as a home network), or an untrusted, public network (such as a coffee shop). The default value for each of these settings is **Yes**.
+These policy settings determine whether Windows Firewall notifies the user of the PC when it blocks incoming network traffic in these situations:
+- When the managed computer is connected to a domain (for example, at the workplace)
+- When the managed computer is connected to a private (trusted) network (such as a home network)
+- When the managed computer is connected to an untrusted, public network (such as a coffee shop).
+
+The default value for each of these settings is **Yes**.
 
 
-### Predefined Exceptions
+### Configure predefined exceptions
 
-After you have configured the basic values above, you can configure exceptions which allow certain network traffic through the firewall regardless of the values configured above. By default, none of these settings are configured.
+After you have configured the basic values above, you can configure exceptions that allow specific types of network traffic through the firewall regardless of the values you configure earlier. By default, none of these settings are configured initially.
 
 |Setting name|Details|
 |------------------|--------------------|
