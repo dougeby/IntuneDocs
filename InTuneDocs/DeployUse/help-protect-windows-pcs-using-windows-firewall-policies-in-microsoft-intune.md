@@ -97,15 +97,15 @@ You can configure exceptions that allow specific types of network traffic throug
 
 |Setting name|Details|
 |------------------|--------------------|
-|**BranchCache - Content Retrieval**<br>(Windows 7 or later)|Lets BranchCache clients use HTTP to retrieve content from each other while in the distributed mode and from the hosted cache while in hosted cache mode. This setting uses HTTP.|
+|**BranchCache - Content Retrieval**<br>(Windows 7 or later)|Lets BranchCache clients use HTTP to retrieve content from other BranchCache clients while in distributed mode and from the hosted cache while in hosted cache mode. This setting uses HTTP.|
 |**BranchCache - Hosted Cache Client**<br>(Windows 7 or later)|Lets BranchCache clients use a hosted cache. This setting uses HTTPS.|
 |**BranchCache - Hosted Cache Server**|Lets BranchCache clients use a hosted cache to communicate with other clients. This setting uses HTTPS.|
-|**BranchCache - Peer Discovery**<br>(Windows 7 or later)|Lets BranchCache clients use the WS Discovery protocol to look up content availability on the local subnet.|
+|**BranchCache - Peer Discovery**<br>(Windows 7 or later)|Lets BranchCache clients use the Web Services Dynamic Discovery (WS-Discovery)  protocol to look up content availability on the local subnet.|
 |**BITS Peercaching**|Lets clients use Background Intelligent Transfer Service (BITS) to find and share files that are stored in the BITS cache on clients in the same subnet. This setting uses Web Services on Devices (WSDAPI) and Remote Procedure Call (RPC).|
 |**Connect to a Network Projector**|Lets users connect to projectors over wired or wireless networks to project presentations. This setting uses WSDAPI.|
 |**Core Networking**|Lets clients use IPv4 and IPv6 to connect to network resources.|
 |**Distributed Transaction Coordinator**|Enables managed computers to coordinate transactions that update transaction-protected resources, such as databases, message queues, and file systems.|
-|**File and Printer Sharing**|Enables users to share local files and printers with other users on the network. This setting uses NetBIOS, Link Local Multicast Name Resolution (LLMNR), Server Message Block (SMB) Protocol, and RPC.|
+|**File and Printer Sharing**|Enables users to share local files and printers with other users on the network. This setting uses NetBIOS, Link Local Multicast Name Resolution (LLMNR), Server Message Block (SMB) protocol, and RPC.|
 |**HomeGroup**<br>(Windows 7 or later)|Enables managed computers to participate in a HomeGroup network.|
 |**iSCSI Service**|Enables managed computers to connect to iSCSI servers and devices.|
 |**Key Management Service**|Lets computers be counted for license compliance in enterprise environments.|
@@ -124,7 +124,7 @@ You can configure exceptions that allow specific types of network traffic throug
 |**Secure Socket Tunneling Protocol**|Enables incoming VPN connections to managed computers with Secure Socket Tunneling Protocol (SSTP). This setting uses HTTPS.|
 |**SNMP Trap**|Lets managed computers receive Simple Network Management Protocol (SNMP) Trap service traffic.|
 |**UPnP Framework**|Configures the UPnP Framework service on computers to let them discover and use UPnP certified devices.|
-|**Windows Collaboration Computer Name Registration Service**|Lets computers find and communicate with other computers by using the Peer Name Resolution Protocol. This setting uses SSDP and PNRP.|
+|**Windows Collaboration Computer Name Registration Service**|Lets computers find and communicate with other computers by using SSDP and PNRP.|
 |**Windows Media Player**|Lets users receive streaming media over User Datagram Protocol (UDP).|
 |**Windows Media Player Network Sharing Service**|Lets users share media over a network. This setting uses the SSDP, qWave, and UPnP network protocols.|
 |**Windows Media Player Network Sharing Service (Internet)**<br>(Windows 7 or later)|Lets users share home media over the Internet.|
