@@ -5,7 +5,7 @@ title: Encrypt your device | Microsoft Intune
 description: Describes how to encrypt an Android device
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/07/2016
 ms.topic: article
 ms.prod:
@@ -30,9 +30,9 @@ ms.suite: ems
 
 If your company or organization requires you to encrypt your Android device before you can access company files, email, or data, follow these steps below to encrypt your device. You might be asked to set a PIN or password before encrypting if your IT administrator requires one.
 
-If you ever unenroll your phone, it will remain encrypted. 
+If you ever unenroll your phone, it will remain encrypted.
 
-1.  Ensure that a screen lock PIN or password has been set for your device. 
+1.  Ensure that a screen lock PIN or password has been set for your device.
 
 2.  In **Settings**, click **Security** &gt; **Encrypt Phone**.
     (On some phones, you’ll need to click **Storage** &gt; **Storage encryption** or **Storage** &gt; **Lock screen and security** &gt; **Other security settings** to find the "Encrypt" option).
@@ -51,4 +51,3 @@ Still need help? Contact your IT administrator (check the [Company Portal websit
 
 ### See also
 [Using your Android device with Intune](using-your-android-device-with-intune.md)
-

@@ -5,7 +5,7 @@ title: Set up email access for iOS devices | Microsoft Intune
 description: set up email access for iOS devices using Intune
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

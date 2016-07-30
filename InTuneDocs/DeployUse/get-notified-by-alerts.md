@@ -5,7 +5,7 @@ title: Get notified by alerts | Microsoft Intune
 description: Learn how alerts keep you in touch with what's happening in Microsoft Intune.
 keywords:
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod:

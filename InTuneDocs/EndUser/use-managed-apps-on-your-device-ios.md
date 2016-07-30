@@ -5,7 +5,7 @@ title: Use managed apps on your iOS device | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/11/2016
 ms.topic: article
 ms.prod:

@@ -5,7 +5,7 @@ title: Company Portal app not supported | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 7/20/2016
 ms.topic: article
 ms.prod:

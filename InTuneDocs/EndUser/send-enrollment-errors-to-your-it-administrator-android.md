@@ -5,7 +5,7 @@ title: Send enrollment errors to your IT administrator | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Send enrollment errors to your IT administrator
 
-If you get an error while trying to enroll your Android device in Intune, you can try enrolling again by tapping **Retry**, or send the error information to your IT admin in an email by tapping **Send info**. 
+If you get an error while trying to enroll your Android device in Intune, you can try enrolling again by tapping **Retry**, or send the error information to your IT admin in an email by tapping **Send info**.
 
 An email, addressed to your IT administrator, is automatically created and contains the logs that your IT admin needs to help troubleshoot your device.
 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure a custom domain name | Microsoft Intune
-description: Describes the process of adding a custom domain name for your Intune subscription 
+description: Describes the process of adding a custom domain name for your Intune subscription
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod:

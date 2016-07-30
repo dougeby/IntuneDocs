@@ -5,7 +5,7 @@ title: Microsoft Intune supported web browsers | Microsoft Intune
 description: Web browsers that Intune supports
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/06/2016
 ms.topic: article
 ms.prod:
@@ -38,5 +38,3 @@ Before you set up Intune, review this topic and other requirements listed in [Wh
 
 ### See also
 [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
-
-

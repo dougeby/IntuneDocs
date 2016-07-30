@@ -5,7 +5,7 @@ title: Your Android device is rooted and you can't connect | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Your Android device is rooted and you can't connect
 
-When your Android device is rooted, it means that your device has been changed to enable certain capabilities that could compromise company resources and security. If you see this message, you won't be able to access company resources until the problem is resolved. 
+When your Android device is rooted, it means that your device has been changed to enable certain capabilities that could compromise company resources and security. If you see this message, you won't be able to access company resources until the problem is resolved.
 
 If you don't believe that you did anything to deliberately root your device, check out these other reasons why your device can become rooted:
 

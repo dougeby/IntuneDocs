@@ -5,7 +5,7 @@ title: Use the SDK to enable apps for MAM | Microsoft Intune
 description:
 keywords:
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:

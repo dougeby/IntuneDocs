@@ -5,7 +5,7 @@ title: What happens if you install the Company Portal app and enroll your iOS or
 description:
 keywords:
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod:

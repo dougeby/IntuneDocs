@@ -5,8 +5,8 @@ title: Compliance policy settings for iOS devices | Microsoft Intune
 description:
 keywords:
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 7/28/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

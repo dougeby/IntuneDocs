@@ -2,10 +2,10 @@
 # required metadata
 
 title: Use groups to manage users and devices | Microsoft Intune
-description: Create and manage groups using the Groups workspace. 
+description: Create and manage groups using the Groups workspace.
 keywords:
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod:

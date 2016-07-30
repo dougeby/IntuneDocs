@@ -5,7 +5,7 @@ title: What's coming | Microsoft Intune
 description:
 keywords:
 author: Lindavr
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/07/2016
 ms.topic: article
 ms.prod:
@@ -75,7 +75,7 @@ In addition to changes in group management, **the following functionality will b
 ## Company Portal
 
 ### Addition of 'Notifications' to the Company Portal for Android
-We are releasing an update to the Company Portal for Android in August that will introduce a new **Notifications** icon on the homepage. Tapping this icon will access the **Notifications** page that will show your end user all the items that require attention in the Company Portal app such as device non-compliance, enrollment update, and enrollment activation. If you also use the iOS Company Portal app, you’ll already see the notifications experience. With the introduction of the **Notifications** page, you will not see the **Company Access Setup** page every time you launch or resume the Company Portal for Android as long as the device is already enrolled. We hear many of you have created end-user guidance and appreciate advanced notice when your guidance/screen shots may need updating. Please update your documentation to reflect the upcoming change in experience. For updated screenshots, go here: https://aka.ms/androidcpupdate  
+We are releasing an update to the Company Portal for Android in September that will introduce a new **Notifications** icon on the homepage. Tapping this icon will access the **Notifications** page that will show your end user all the items that require attention in the Company Portal app such as device non-compliance, enrollment update, and enrollment activation. If you also use the iOS Company Portal app, you’ll already see the notifications experience. With the introduction of the **Notifications** page, you will not see the **Company Access Setup** page every time you launch or resume the Company Portal for Android as long as the device is already enrolled. We hear many of you have created end-user guidance and appreciate advanced notice when your guidance/screen shots may need updating. Please update your documentation to reflect the upcoming change in experience. For updated screenshots, go here: https://aka.ms/androidcpupdate  
 
 ### Help users resolve enrollment issues when Workplace Join fails
 When you are using conditional access, the enrollment steps for Windows 8.1, Windows 10 Desktop, and Windows 10 Mobile have been simplified in the Company Portal website for end users who experience a Workplace Join (WPJ) failure. Previously, when end users were trying to enroll and do a WPJ, and their enrollment succeeded, but WPJ failed, the enrolled device would not appear on the list of devices for users to identify, causing confusion for users. Users will now see separate “Device enrollment” and “Workplace Join” steps, making it easier for them to see the status of their device and to complete the process after the WPJ failure. The separate steps are expected to also simplify the troubleshooting process for IT administrators.
@@ -84,7 +84,7 @@ When you are using conditional access, the enrollment steps for Windows 8.1, Win
 To improve performance and scale, Intune will no longer show all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices. Only use DEM accounts when user-less enrollment for shared devices is unavailable.
 <!---TFS 1233681--->
 ### Restrict side-load app installation to enrolled Android devices
-Android devices can no longer install applications through the Company Portal website unless the devices have been enrolled in Intune by using the Intune Company Portal app for Android. 
+Android devices can no longer install applications through the Company Portal website unless the devices have been enrolled in Intune by using the Intune Company Portal app for Android.
 <!---TFS 1299082--->
 
 ## Service deprecation
