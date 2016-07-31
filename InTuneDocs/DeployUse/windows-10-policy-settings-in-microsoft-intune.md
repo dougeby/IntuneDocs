@@ -51,7 +51,6 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Password expiration (days)**|Specifies the length of time after which the device password must be changed.|
 |**Remember password history**|Specifies whether you want to restrict the end user from creating previously used passwords.|
 |**Remember password history** - **Prevent reuse of previous passwords**|Specifies the number off previously used passwords remembered by the device.|
-|**Allow picture password and PIN**|Lets you use simple gestures on a picture, or a simple PIN to login.<br>(Windows 10 desktop only)|
 |**Require a password when the device returns from an idle state**|If enabled, the user must enter a password to unlock the device from an idle state.<br>(Windows 10 Mobile only)|
 
 ### Encryption
@@ -77,14 +76,6 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Allow Microsoft account**|Lets the user associate a Microsoft account with the device.|
 |**Allow adding non-Microsoft accounts manually**|Lets the user add email accounts to the device that are not associated with a Microsoft account.|
 |**Allow settings synchronization for Microsoft accounts**|Allow device and app settings associated with a Microsoft account to synchronize between devices.|
-
-### Email settings
-
-|Setting name|Details|
-|----------------|----------------------|---------------------|
-|**Make Microsoft account optional in Windows Mail application**|Configure this to remove the requirement for a Microsoft account in Windows Mail.<br>Windows 10 desktop only|
-
-
 
 ### Microsoft Edge
 
@@ -133,7 +124,6 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Allow Bluetooth**|Enables the use of Bluetooth capabilities on the device.|
 |**Allow Bluetooth discoverable mode**|Let's this device be discovered by other Bluetooth-enabled devices.|
 |**Allow Bluetooth advertising**|Allows devices to receive advertisements over Bluetooth.|
-|**Allow Bluetooth connectable mode**|**Important:** This setting is no longer supported by Windows 10 and will be removed in the future.|
 |**Allow phone reset**|Controls whether the user can factory reset their device.|
 |**Allow USB connection**|Controls whether devices can access external storage devices through a USB connection.|
 |**Allow AntiTheft mode**|Configure whether Windows Antitheft mode is enabled.|
@@ -183,6 +173,7 @@ All settings are for Windows 10 desktop only.
 |Setting name|Details|
 |----------------|---------------|
 |**Allow automatic updates**|Enable this setting to allow automatic updates. Then, configure one of the following settings to control update behavior:<br /><br />**Notify download**<br /><br />**Auto install at maintenance time**<br /><br />**Auto install and reboot at maintenance time**<br /><br />**Auto install and reboot at scheduled time** **Note:** When this option is selected, you can also configure the following settings:  **Suppress notification to end user** and **Define install day for scheduled updates**.<br>(Windows 10 desktop only)|
+|**Allow pre-release features**|Lets Microsoft deploy pre-release settings and features to Windows 10 devices. You can select to allow settings only, or all pre-release settings and features to be installed.|
 
 ## Custom policy settings
 Use the Microsoft Intune **custom configuration policy** for Windows 10 and Windows 10 Mobile to deploy OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings that can be used to control features on Windows 10 and Windows 10 Mobile devices. These are standard settings that many mobile device manufacturers use to control device features.
