@@ -6,7 +6,7 @@ description: Use the policy settings listed in this topic to help you configure 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
