@@ -63,9 +63,9 @@ Intune can request the Activation Lock status of both supervised and unsupervise
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices**.
 
-2.  Select the device whose Activation Lock you want to bypass, and then choose **Activation Lock Bypass**.
+2.  Select the device whose Activation Lock you want to bypass. Choose **Activation Lock Bypass**.
 
-3.  Read the warning message, and then choose **Yes** to proceed.
+3.  Read the warning message. Choose **Yes** to proceed.
 
 You can examine the status of the unlock request on the details page for the device.
 
