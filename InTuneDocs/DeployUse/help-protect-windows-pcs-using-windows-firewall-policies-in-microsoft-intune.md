@@ -33,12 +33,12 @@ If you have not yet installed the Intune Windows PC client on your computers, se
 Use the information in the following sections to help you configure, deploy, and monitor Windows Firewall policies on Windows PCs.
 
 ## Use Intune policies to manage Windows Firewall
-Windows Firewall policy lets you create and deploy settings that control Windows Firewall on managed PCs. You cannot manage custom exceptions for Windows Firewall, and these settings do not affect third-party firewalls.
+The Windows Firewall policy lets you create and deploy settings that control Windows Firewall on managed PCs. You cannot manage custom exceptions for Windows Firewall, and these settings do not affect third-party firewalls.
 
 > [!NOTE]
 > If Microsoft Intune policy and Group Policy are configured to manage the same setting on the PC, the Group Policy setting overrides the Microsoft Intune policy. For information about how to avoid conflicts between Intune policy and Group Policy, see [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
-> If you want to deploy Windows Firewall settings to computers that are running Windows Vista, you must first install [Hotfix KB971800](http://support2.microsoft.com/kb/971800) on these computers.
+> If you want to deploy Windows Firewall settings to computers that run Windows Vista, you must first install [Hotfix KB971800](http://support2.microsoft.com/kb/971800) on these computers.
 
 > [!IMPORTANT]
 > To manage Windows Firewall by using Intune, ensure that the following two services are enabled on the computers that you manage:
