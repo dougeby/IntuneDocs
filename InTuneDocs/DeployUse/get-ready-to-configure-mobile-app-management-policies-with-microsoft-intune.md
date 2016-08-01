@@ -5,7 +5,7 @@ title: Get ready to configure MAM policies | Microsoft Intune
 description: This topic describes the pre-requisites and setting up users before you can create mobile app management policies.
 keywords:
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
 ms.prod:
@@ -64,7 +64,7 @@ To see the full list of supported Microsoft apps, go to the [Microsoft Intune mo
 -   An Office 365 subscription, which is required for the following:
   - To apply MAM policies to apps with multiple-identity support.
   - To create  SharePoint Online and Exchange Online work accounts. Exchange on-premises and SharePoint on-premises are not supported.
--   Skype for Business Online setup for modern authentication. For more information, see [Enable modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md).
+-   Skype for Business Online setup for modern authentication. For more information, see [Enable modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) to create users. Azure AD authenticates users when they open the app and enter their work credentials.

@@ -33,12 +33,13 @@ The tool is a Mac OS command-line application that creates a ‘wrapper’ aroun
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Step 1 Fulfill the prerequisites for using the app wrapping tool
+Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to learn more about pre-requisites and how to set them.
 
 |Requirement|More information|
 |---------------|--------------------------------|
 |Supported operating system and toolset|You must run the app wrapping tool on a Mac computer that runs OS X 10.8.5 or later, which has the XCode toolset version 5 or later installed.|
 |Signing certificate and provisioning profile|You must have an Apple signing certificate and provisioning profile. See your [Apple developer documentation](https://developer.apple.com/).|
-|Processing an app with the App Wrapping Tool|Apps must be developed and signed by your company, or an independent software vendor (ISV). You cannot use this tool to process apps from the Apple Store. Apps must be written for iOS 7.0 or later. Apps must also be in the Position Independent Executable (PIE) format. For more information about the PIE format, see your Apple developer documentation. Lastly, the app must have the extension **.app**, or **.ipa** format.|
+|Processing an app with the App Wrapping Tool|Apps must be developed and signed by your company, or an independent software vendor (ISV). You cannot use this tool to process apps from the Apple Store. Apps must be written for iOS 7.1 or later. Apps must also be in the Position Independent Executable (PIE) format. For more information about the PIE format, see your Apple developer documentation. Lastly, the app must have the extension **.app**, or **.ipa** format.|
 |Apps the wrapping tool cannot process|Encrypted apps, unsigned apps, and apps with extended file attributes.|
 |Apps that use the Azure Active Directory Library (ADAL)|If your app uses ADAL, the app must incorporate an ADAL version greater than or equal to 1.0.2, and the developer must grant their app access to the Intune Mobile Application Management resource.<br /><br />See [Information for apps that use the Azure Active Directory Library](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) in this article for details about how to use ADAL.|
 |Setting entitlements for your app|You must set entitlements, which give the app additional permissions and capabilities beyond those typically granted, before you wrap the app. See [Setting app entitlements](#setting-app-entitlements) for instructions.|
