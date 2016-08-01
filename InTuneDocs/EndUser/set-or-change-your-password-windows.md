@@ -33,19 +33,19 @@ Your IT administrator can set more than one password requirement. For example, t
 
 If you have trouble setting a password that meets all of the password requirements, contact your IT administrator for help.
 
-## To set your password on a Windows Phone 8 or 8.1:
-
-1. From the **home** screen, tap **Settings**, and then select **lock screen**.
-2. Scroll down to **Password**, and slide the **Password** bar to **On**.
-3. Enter your new password in the **New password** field, and then reenter it in the **Confirm password** field.
-4. Tap **done**.
-
 ## To change your password on a Windows Phone 8 or 8.1:
 
 1. From the **home** screen, tap **Settings**, and then select **lock screen**.
 2. Scroll down to **Password**, and tap **change password**.
 3. Enter your current password in the **Current password** field.
 4. Enter your new password in the **New password** field, and then re-enter the new password in the **Confirm password** field.
+4. Tap **done**.
+
+## To set your password on a Windows Phone 8 or 8.1:
+
+1. From the **home** screen, tap **Settings**, and then select **lock screen**.
+2. Scroll down to **Password**, and slide the **Password** bar to **On**.
+3. Enter your new password in the **New password** field, and then reenter it in the **Confirm password** field.
 4. Tap **done**.
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

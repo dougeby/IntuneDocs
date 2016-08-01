@@ -41,9 +41,10 @@ If you ever unenroll your phone, it will remain encrypted.
 
 ### What to do if you have issues
 **Issue**: You have have already encrypted your device, and you see one of the following:
-	-  The encryption button is disabled.
-	-  You see a message saying that you still need to encrypt.
-	-  You get errors when trying to use the Company Portal app.
+
+- The encryption button is disabled.
+- You see a message saying that you still need to encrypt.
+- You get errors when trying to use the Company Portal app.
 
 **What to do**: Make sure that you've set a PIN or password on your device.
 
