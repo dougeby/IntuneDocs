@@ -6,7 +6,7 @@ description: Intune supplies a range of built-in general settings you can config
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -115,11 +115,11 @@ Use the Microsoft Intune **Windows Phone general configuration policy (Windows P
 |----------------|-----------------------------------------|
 |**Allow copy and paste**|Allow copy and paste functionality on devices.|No|Yes|
 
-### Settings for compliant and noncompliant apps
-In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant or noncompliant apps using the following information:
+### Settings for allowed and blocked apps
+In the **Allowed and blocked apps** list, specify a list of apps you want to allow or block using the following information:
 
 > [!NOTE]
-> A single policy can only contain a list of compliant, or a list of noncompliant apps. You cannot specify both in the same policy.
+> A single policy can only contain a list of allowed, or a list of blocked apps. You cannot specify both in the same policy.
 
 |Setting name|Details|
 |----------------|--------------------|
@@ -133,14 +133,14 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 > If you specify a list of allowed apps for Windows Phone 8.1 devices, you must add the Company Portal app to this list, or else it will be blocked.
 
 
-### Reference information for compliant and noncompliant apps
+### Reference information for allowed and blocked apps
 
 #### How to specify URLs to app stores
-To specify an app URL in the compliant and noncompliant apps list, use the following format:
+To specify an app URL in the allowed and blocked apps list, use the following format:
 
 From the [Windows Phone Apps+Games](http://www.windowsphone.com/en-us/store/overview) page, search for the app you want to use.
 
-Open the app’s page, and copy the URL to the clipboard. You can now use this as the URL in either the compliant or noncompliant apps list.
+Open the app’s page, and copy the URL to the clipboard. You can now use this as the URL in either the allowed or blocked apps list.
 
 **Example:** Search the store for the Skype app. The URL you use will be **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
