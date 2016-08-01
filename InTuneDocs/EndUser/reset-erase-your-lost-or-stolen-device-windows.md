@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ If a phone that has been enrolled in Intune is lost or stolen, you can reset it 
 
 2.  Under **My Devices**, select the lost or stolen device.
 
-3.  Tap **Reset** &gt; **Reset**.
+3.  Tap the **Reset** icon and then tap **reset**.
 
 If you are unable to reset your lost or stolen device, contact IT to reset it for you. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 

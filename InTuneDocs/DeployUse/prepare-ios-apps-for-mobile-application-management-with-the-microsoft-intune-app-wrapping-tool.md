@@ -33,6 +33,7 @@ The tool is a Mac OS command-line application that creates a ‘wrapper’ aroun
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Step 1 Fulfill the prerequisites for using the app wrapping tool
+Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to learn more about pre-requisites and how to set them.
 
 |Requirement|More information|
 |---------------|--------------------------------|
