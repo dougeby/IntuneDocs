@@ -114,7 +114,7 @@ You can configure exceptions that allow specific types of network traffic throug
 |**Network Discovery**|Lets computers discover other devices and be discovered by other devices on the network. This setting uses Function Discovery Host and Publication Services and SSDP, NetBIOS, LLMNR, and UPnP network protocols.|
 |**Performance Logs and Alerts**|Enables the Performance Logs and Alerts service to be remotely managed. This setting uses RPC.|
 |**Remote Administration**|Enables remote administration of the computer.|
-|**Remote Assistance**|Lets users of managed computers request remote assistance from other users on the network. This setting SSDP, Peer Name Resolution Protocol (PNRP), Teredo, and UPnP network protocols.|
+|**Remote Assistance**|Lets users of managed computers request remote assistance from other users on the network. This setting uses SSDP, Peer Name Resolution Protocol (PNRP), Teredo, and UPnP network protocols.|
 |**Remote Desktop**|Lets the computer use Remote Desktop to access other computers.|
 |**Remote Event Log Management**|Lets client event logs be viewed and managed remotely. This setting uses Named Pipes and RPC.|
 |**Remote Scheduled Tasks Management**|Enables remote management of the task scheduling service. This setting uses RPC.|
@@ -133,7 +133,7 @@ You can configure exceptions that allow specific types of network traffic throug
 |**Windows Remote Management (Compatibility)**|Enables remote management of managed computers with WS-Management, a Web services-based protocol for remote management of operating systems and devices.|
 |**Windows Remote Management**<br>(Windows 8 or later)|Enables remote management of managed computers with WS-Management, a Web services-based protocol for remote management of operating systems and devices.|
 |**Windows Virtual PC**<br>(Windows 7 or later)|Lets virtual machines communicate with other computers.|
-|**Wireless Portable Devices**|Enables the transfer of media from a network-enabled camera or media device to managed computers with the Media Transfer Protocol (MTP). This setting uses SSDP and UPnP network protocols.|
+|**Wireless Portable Devices**|Enables the transfer of media from a network-enabled camera or media device to managed computers with Media Transfer Protocol (MTP). This setting uses SSDP and UPnP network protocols.|
 
 ### See also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
