@@ -5,7 +5,7 @@ title: Create a device compliance policy | Microsoft Intune
 description: Create a compliance policy to help secure mobile devices and PCs used to access your company data.
 keywords:
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod:

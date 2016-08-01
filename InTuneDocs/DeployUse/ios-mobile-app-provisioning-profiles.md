@@ -29,14 +29,14 @@ ms.suite: ems
 # Use iOS mobile provisioning profile policies to prevent your apps from expiring
 
 
-Apple iOS line of business apps deployed to iPhones and iPads are built with a provisioning profile included and code signed with a certificate. When the app is run, iOS confirms the integrity of the iOS app and enforces policies defined by the provisioning profile. The following validations happen:
+Apple iOS line of business apps that are deployed to iPhones and iPads are built with an included provisioning profile and code that is signed with a certificate. When the app is run, iOS confirms the integrity of the iOS app and enforces policies that are defined by the provisioning profile. The following validations happen:
 
-- **Installation file integrity** - iOS compares the apps details with the enterprise signing certificate's public key. If they differ, the apps content might have changed, and it will not be allowed to run.
-- **Capabilities enforcement** - iOS attempts to enforce the app capabilities from the enterprise provisioning profile (not individual developer provisioning profiles) contained in the app installation (.ipa) file.
+- **Installation file integrity** - iOS compares the app's details with the enterprise signing certificate's public key. If they differ, the app's content might have changed, and the app will not be allowed to run.
+- **Capabilities enforcement** - iOS attempts to enforce the app's capabilities from the enterprise provisioning profile (not individual developer provisioning profiles) that are in the app installation (.ipa) file.
 
 
-The enterprise signing certificate you use to sign apps typically lasts for 3 years. However, the provisioning profile expires after a year. While the certificate is still valid, Intune gives you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are nearing expiry.
-After the certificate expires, you must re-sign the app with a new certificate and embed a new provisioning profile with the key of the new certificate.
+The enterprise signing certificate that you use to sign apps typically lasts for three years. However, the provisioning profile expires after a year. While the certificate is still valid, Intune gives you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are nearing expiry.
+After the certificate expires, you must sign the app again with a new certificate and embed a new provisioning profile with the key of the new certificate.
 
 
 
@@ -49,11 +49,10 @@ After the certificate expires, you must re-sign the app with a new certificate a
 
 
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Overview** > **Add Policy**.
-2. In the **Create a New Policy dialog** box, choose **iOS** > **Mobile Provisioning Profile Policy**, and then choose **Create Policy**.
+2. In the **Create a New Policy** dialog box, choose **iOS** > **Mobile Provisioning Profile Policy**, and then choose **Create Policy**.
 3. On the **General** page, configure the following values:
 	- **Name** - Provide a name for this mobile provisioning profile policy.
 	- **Description** - Optionally, provide a description for the policy.
-	- **Configuration profile file** - Click **Import**, then choose an Apple Mobile Configuration Profile file (with the extension **.mobileprovision**) that you downloaded from the Apple Developer website.
+	- **Configuration profile file** - Click **Import**, and then choose an Apple Mobile Configuration Profile file (with the extension **.mobileprovision**) that you downloaded from the Apple Developer website.
 4. When you are done, choose **Save Policy**.
 5. Now, deploy the policy to the required iOS devices. For more information, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
-
