@@ -42,14 +42,14 @@ Use the Microsoft Intune **iOS general configuration policy** to configure setti
 > [!TIP]
 > You can configure terms and conditions for users to ensure that they acknowledge that apps on their device (including personal apps) will be evaluated, and noncompliant apps will be either blocked or reported as noncompliant. Users must accept these terms and conditions before they can enroll their device and use the company portal to get apps. For more information about using terms and conditions, see [Terms and conditions policy settings in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
-If the setting you are looking for does not appear in this topic, you might be able to create it by using an iOS custom policy that lets you import settings you created by using the [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). For more information, see "Custom policy settings" later in this topic.
+If the setting you are looking for does not appear in this topic, you might be able to create it by using an iOS custom policy that lets you import settings you created by using the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). For more information, see "Custom policy settings" later in this topic.
 
 ### Security settings
 All settings apply to iOS 7.1 and later.
 
 |Setting name|Details|
 |----------------|-------|
-|**Require a password to unlock mobile devices**|Specify whether users are required to enter a password to access their device.|
+|**Require a password to unlock mobile devices**|Specify whether the user is required to enter a password to access their device.|
 |**Required password type**|Specify the type of password that will be required, such as numeric only or alphanumeric.|
 |**Number of complex characters required in password**|Specify the number of symbol characters (like **#** or **@**) that must be included in the password.|
 |**Minimum password length**|Specify the minimum number of characters in the password.|
@@ -96,9 +96,9 @@ All settings apply to iOS 7.1 and later.
 |**Allow Safari**|Specify whether the Safari browser can be used on the device.|
 |**Allow autofill**|Allow the user to change autocomplete settings in the browser.|
 |**Allow pop-up blocker**|Enable or disable the browser pop-up blocker.|
-|**Allow cookies**|Allow the device web browser to use cookies.|
+|**Allow cookies**|Allow the browser to use cookies.|
 |**Allow Java scripting**|Allow Java scripts to run in the browser.|
-|**Allow fraud warning**|Allow fraud warnings in the device browser.|
+|**Allow fraud warning**|Allow fraud warnings in the browser.|
 
 ### Application settings for apps
 All settings apply to iOS 7.1 and later.
@@ -128,7 +128,7 @@ All settings apply to iOS 7.1 and later.
 |Setting name|Details|
 |----------------|-------|
 |**Allow camera**|Specify whether the camera on the device can be used.|
-|**Require a pairing password for outgoing AirPlay requests**|AirPlay lets the user stream content to other Apple devices. Use this setting to require a pairing password to connect to other devices.|
+|**Require a pairing password for outgoing AirPlay requests**|Require a pairing password when the user uses AirPlay to stream content to other Apple devices.|
 
 ### Device capabilities settings for cellular
 All settings apply to iOS 7.1 and later.
@@ -157,39 +157,39 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Report noncompliance when users install the listed apps**|Lists the apps that are not managed by Intune which users are not allowed to install and run.|
-|**Report noncompliance when users install apps which are not listed**|Lists the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.|
-|**Add**|Adds an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store. Read **How to specify URLs to app stores** later in this topic for more help.|
-|**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|
-|**Edit**|Lets you edit the name, publisher and URL of the selected app.|
-|**Delete**|Deletes the selected app from the list.|
+|**Report noncompliance when users install the listed apps**|List the apps (not managed by Intune) that users are not allowed to install and run.|
+|**Report noncompliance when users install apps which are not listed**|List the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.|
+|**Add**|Add an app to the selected list. Specify a name of your choice, optionally the app publisher, and the URL to the app in the app store. Read "How to specify URLs to app stores" later in this topic for more help.|
+|**Import Apps**|Import a list of apps you have specified in a comma-separated values file. In the file, use this format: application name, publisher, app URL.|
+|**Edit**|Edit the name, publisher, and URL of the selected app.|
+|**Delete**|Delete the selected app from the list.|
 
 ### Kiosk mode settings
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Choose **Browse**, then specify the managed app, or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device.For more help, see **How to specify URLs to app stores** later in this topic.|
-|**Allow touch**|Enables or disables the touch screen on the device.|
-|**Allow screen rotation**|Enables or disables changing the screen orientation when you rotate the device.|
-|**Allow volume buttons**|Enables or disables the use of the volume buttons on the device.|
-|**Allow ringer switch**|Enables or disables the ringer (mute) switch on the device.|
-|**Allow screen sleep wake button**|Enables or disables the screen sleep wake button on the device.|
-|**Allow auto lock**|Enables or disables automatic locking of the device.|
-|**Enable mono audio**|Enables or disables the accessibility setting **Mono audio**.|
-|**Enable voice over**|Enables or disables the accessibility setting **VoiceOver** which reads aloud text on the device display.|
-|**Enable voice over adjustments**|Enables or disables voiceover adjustments which let you adjust the VoiceOver function (for example, how fast on-screen text is read aloud).|
-|**Enable zoom**|Enables or disables the **Zoom** accessibility setting which lets you use touch to zoom into the device display.|
-|**Enable zoom adjustments**|Enables or disables zoom adjustments which let you adjust the zoom function.|
-|**Enable invert colors**|Enables or disables the **Invert Colors** accessibility setting which adjusts the display to help users with visual impairments.|
-|**Enable invert colors adjustments**|Enables or disables invert colors adjustments which let you adjust the invert colors function.|
-|**Enable assistive touch**|Enables or disables the **Assistive Touch** accessibility setting which helps users perform on screen gestures which might be difficult for them to perform.|
-|**Enable assistive touch adjustments**|Enables or disables assistive touch adjustments which let you adjust the assistive touch function.|
-|**Enable speech selection**|Enables or disables the **Speak Selection** accessibility settings which can read aloud the text you select.|
+|**Select a managed app that will be allowed to run when the device is in kiosk mode**|Choose **Browse**, and then specify the managed app or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device. For more help, see "How to specify URLs to app stores" later in this topic.|
+|**Allow touch**|Enable or disable the touchscreen on the device.|
+|**Allow screen rotation**|Enable or disable changing the screen orientation when the user rotates the device.|
+|**Allow volume buttons**|Enable or disable the use of the volume buttons on the device.|
+|**Allow ringer switch**|Enable or disable the ringer (mute) switch on the device.|
+|**Allow screen sleep wake button**|Enable or disable the screen sleep wake button on the device.|
+|**Allow auto lock**|Enable or disable automatic locking of the device.|
+|**Enable mono audio**|Enable or disable the accessibility setting **Mono audio**.|
+|**Enable voice over**|Enable or disable the accessibility setting **VoiceOver**, which reads aloud text on the device display.|
+|**Enable voice over adjustments**|Enable or disable voiceover adjustments, which let the user adjust the VoiceOver function (for example, how fast on-screen text is read aloud).|
+|**Enable zoom**|Enable or disable the **Zoom** accessibility setting, which lets the user use touch to zoom in to the device display.|
+|**Enable zoom adjustments**|Enable or disable zoom adjustments, which let the user adjust the zoom function.|
+|**Enable invert colors**|Enable or disable the **Invert Colors** accessibility setting, which adjusts the display to help users with visual impairments.|
+|**Enable invert colors adjustments**|Enable or disable invert colors adjustments, which let the user adjust the invert colors function.|
+|**Enable assistive touch**|Enable or disable the **Assistive Touch** accessibility setting, which helps the user perform on-screen gestures that might be difficult for them to perform.|
+|**Enable assistive touch adjustments**|Enable or disable assistive touch adjustments, which let the user adjust the assistive touch function.|
+|**Enable speech selection**|Enable or disable the **Speak Selection** accessibility settings, which can read aloud the text that the user selects.|
 > [!NOTE]
 > The following notes apply to kiosk mode settings for iOS devices:
 >
-> -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or device enrollment manager to put the device into supervised mode. For more information about the Apple Configurator Tool, see your Apple documentation.
-> -   If the iOS app you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
+> -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or device enrollment manager to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
+> -   If the iOS app that you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
 
 ### Reference information for compliant and noncompliant apps
 
@@ -199,14 +199,14 @@ Use the **Noncompliant Apps Report** to view the compliance of allowed and block
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Reports** &gt; **Noncompliant Apps Report**.
 
-2.  Select the device groups that you would like to check, whether you want to check for compliant apps, noncompliant apps, or both, and then choose **View Report**.
+2.  Select the device groups that you want to check, select whether you want to check for compliant apps, noncompliant apps, or both, and then choose **View Report**.
 
 #### How to specify URLs to app stores
 To specify an app URL in the compliant and noncompliant apps list, or in the **Select a managed app that will be allowed to run when the device is in kiosk mode** option (iOS only), use the following format:
 
-Using a search engine, find the app you want to use in the iTunes App Store and open the page for the app.
+1. Using a search engine, find the app that you want to use in the iTunes App Store and open the page for the app.
 
-Copy the URL of the page and use this as the URL to configure the compliant or noncompliant apps list or the app you want to run in kiosk mode.
+2. Copy the URL of the page and use this as the URL to configure the compliant or noncompliant apps list or the app that you want to run in kiosk mode.
 
 **Example:** Search for **Microsoft Word for iPad**. The URL that you use will be **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
@@ -218,21 +218,21 @@ All settings apply to iOS 7.1 and later.
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Allow Activation Lock when the device is in supervised mode**|Enables Activation Lock on supervised iOS devices.|
+|**Allow Activation Lock when the device is in supervised mode**|Enable Activation Lock on supervised iOS devices.|
 
 ### Supervision
-The following settings can be configured on devices running iOS 7.1 and later that are in supervised mode.
+You can configure the following settings on devices running iOS 7.1 and later that are in supervised mode.
 
 |Setting name|Details|
 |----------------|--------------------|
 |**Allow account modification**|Allow the user to change account settings such as email configurations.|
-|**Allow AirDrop**|Allow use of the Airdrop feature to exchange content with nearby devices.|
+|**Allow AirDrop**|Allow use of the AirDrop feature to exchange content with nearby devices.|
 |**Allow changes to app cellular data usage settings**|Allow the user to control which apps are allowed to use cellular data.|
-|**Allow Siri to query user-generated content from the Internet**|Allow Siri to access web sites to answer questions.|
+|**Allow Siri to query user-generated content from the Internet**|Allow Siri to access websites to answer questions.|
 |**Allow access to the iBooks store**|Allow the user to browse and purchase books from the iBooks store.|
 |**Allow changes to the Find My Friends app settings**|Allow the user to change settings for the Find My Friends app.|
-|**Allow the use of the erase all content and settings option on the device**|Allow the user use the option to erase all content and settings on the device.|
-|**Allow the user to enable restrictions in the device settings**|Allow the user to configure device restrictions (parental controls) on the device|
+|**Allow the use of the erase all content and settings option on the device**|Allow the user to use the option of erasing all content and settings on the device.|
+|**Allow the user to enable restrictions in the device settings**|Allow the user to configure device restrictions (parental controls) on the device.|
 |**Allow Spotlight search to return results from the Internet**|Let Spotlight search connect to the Internet to provide further results.|
 |**Allow the use of the Game Center app**|Allow use of the Game Center app.|
 |**Allow host pairing to control the devices an iOS device can pair with**|Allow host pairing to let the administrator control which devices an iOS 7 device can pair with.|
@@ -244,10 +244,10 @@ The following settings can be configured on devices running iOS 7.1 and later th
 
 Use the Microsoft Intune **iOS custom policy** to deploy settings that you created by using the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) to iOS devices. This tool lets you create many settings that control the operation of these devices and export them to a configuration profile. You can then import this configuration profile into an Intune iOS custom policy and deploy the settings to users and devices in your organization.
 
-This capability is intended to allow you to deploy iOS settings that are not configurable with Intune general configuration policies policies.
+This capability allows you to deploy iOS settings that are not configurable with Intune general configuration policies.
 
 ### Prerequisites
-Before you start, you must have installed the Apple Configurator and created a configuration file that contains the settings you want to deploy to users or devices. You can download and learn about the Apple Configurator from [the Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)
+Before you start, you must have installed the Apple Configurator and created a configuration file that contains the settings that you want to deploy to users or devices. You can download and learn about the Apple Configurator from [the Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).
 
 > [!NOTE]
 > Intune does not report the compliance of individual settings in an iOS custom policy. However, the overall compliance of the policy is reported.
@@ -264,7 +264,7 @@ Before you start, you must have installed the Apple Configurator and created a c
 |Setting name|Details|
     |----------------|--------------------|
 |**Custom configuration profile name (displayed to users)**|Provide a name for the policy as it will be displayed on the device, and in Intune policy reports.|
-|**Configuration profile file**|Choose **Import**, and then browse to the configuration profile that you created using the Apple Configurator. **Note:** Ensure that the settings you export from the Apple Configurator tool are compatible with the version of iOS on the devices to which you deploy the iOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) website.|
+|**Configuration profile file**|Choose **Import**, and then browse to the configuration profile that you created by using the Apple Configurator. **Note:** Ensure that the settings you export from the Apple Configurator tool are compatible with the version of iOS on the devices to which you deploy the iOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) website.|
     |**Configuration profile details**|Display the XML code for the configuration profile that you imported.|
 
 ### See also
