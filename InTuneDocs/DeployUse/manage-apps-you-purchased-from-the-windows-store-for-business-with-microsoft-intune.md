@@ -75,6 +75,9 @@ When you deploy a Windows Store for Business app, a license is used by each user
 * Reduce the scope of the current deployment to target only the users you have sufficient licenses for
 * Buy more copies of the app from the Windows Store for Business
 
+> [!Important]
+> Deployed apps are only available to the user who originally enrolled the device. No other users can access the app.
+
 
 ### See also
 [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
