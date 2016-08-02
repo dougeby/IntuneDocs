@@ -6,7 +6,7 @@ description: Troubleshoot common client setup problems.
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
