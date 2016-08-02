@@ -54,7 +54,7 @@ If the setting you are looking for does not appear in this list, you might be ab
 |**Minutes of inactivity before screensaver activates**|Specify the length of time that the computer must be idle before the screensaver is activated.|
 
 ### Settings for compliant and noncompliant apps
-In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed settings for devices**, and then specify a list of compliant or noncompliant apps by using the following information:
+In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed settings for devices**, and then specify a list of compliant or noncompliant apps by using the following information.
 
 > [!NOTE]
 > A single policy can contain only a list of compliant apps or a list of noncompliant apps. You cannot specify both in the same policy.
@@ -73,12 +73,12 @@ In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed
 > For more information about Intune reports, see [Understand Microsoft Intune operations by using reports](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
-> When a Mac OS X device is in Sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the Intune console might temporarily display the status **Policy settings in error** until the next time the device wakes from Sleep mode.
+> When a Mac OS X device is in sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the Intune console might temporarily display the status **Policy settings in error** until the next time the device wakes from sleep mode.
 
 ### Monitor compliant and noncompliant apps
 Use **Noncompliant Apps Reports** to view the compliance of apps that you specified.
 
-#### To run the report
+#### To run a report
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Reports** &gt; **Noncompliant Apps Reports**.
 
@@ -122,7 +122,7 @@ You can create the configuration profile file used by the custom policy in two w
 
 
 > [!IMPORTANT]
-> When a Mac OS X device is in Sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the Intune console might temporarily display the status **Policy settings in error** until the next time the device wakes from Sleep mode.
+> When a Mac OS X device is in sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the Intune console might temporarily display the status **Policy settings in error** until the next time the device wakes from sleep mode.
 
 ### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
