@@ -45,12 +45,12 @@ If the setting you are looking for does not appear in this list, you might be ab
 |----------------|---------------|
 |**Require a password to unlock devices**|Specify whether the user must use a password to access their Mac computer. **Important:** Unlike iOS devices, on Mac OS X devices, the user is not immediately notified to update their password to comply with this setting.|
 |**Required password type**|Specify whether the password can be **Numeric** only, or whether it must be **Alphanumeric** (contain letters and numbers). **Important:** This setting is supported only on Mac OS X version 10.10.3 and later.|
-|**Number of complex characters required in password**|Specify the number of complex characters required in the password (from **0** to **4**).<br /><br />A complex character is a symbol, such as **?**.|
-|**Minimum password length**|Specify the minimum length for the password (between **4** and **14** characters).|
+|**Number of complex characters required in password**|Specify the number of complex characters required in the password (**0** to **4**).<br /><br />A complex character is a symbol, such as **?**.|
+|**Minimum password length**|Specify the minimum length for the password (**4** to **14** characters).|
 |**Allow simple passwords**|Allow the use of simple passwords such as **0000** or **1234**.|
 |**Minutes of inactivity before password is required**|Specify how long the computer must be inactive before a password is required to unlock it.|
-|**Password expiration (days)**|Specify how many days elapse before the user must change the password (from **1** to **255** days).|
-|**Remember password history**|Prevent the user from using a previously used password. When this is set, you can also set **Prevent reuse of previous passwords** to specify the number of previously used passwords that cannot be reused (from **1** to **24**).|
+|**Password expiration (days)**|Specify how many days elapse before the user must change the password (**1** to **255** days).|
+|**Remember password history**|Prevent the user from using a previously used password. When this is set, you can also set **Prevent reuse of previous passwords** to specify the number of previously used passwords that cannot be reused (**1** to **24**).|
 |**Minutes of inactivity before screensaver activates**|Specify the length of time that the computer must be idle before the screensaver is activated.|
 
 ### Settings for compliant and noncompliant apps
@@ -63,8 +63,8 @@ In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed
 
 |Setting name|Details|
 |----------------|---------------|
-|**Report noncompliance when users install the listed apps**|List the Mac OS X apps that users are not allowed to install. If users install any of these apps, they will be reported in the **Noncompliant Apps Reports**.|
-|**Report noncompliance when users install apps which are not listed**|List the Mac OS X apps that users are allowed to install. If users install any other apps, they will be reported in the **Noncompliant Apps Reports**.|
+|**Report noncompliance when users install the listed apps**|List the Mac OS X apps that users are not allowed to install. If users install any of these apps, they will be reported in **Noncompliant Apps Reports**.|
+|**Report noncompliance when users install apps which are not listed**|List the Mac OS X apps that users are allowed to install. If users install any other apps, they will be reported in **Noncompliant Apps Reports**.|
 |**Add**|Add an app to the selected list. Specify a name of your choice, optionally the app publisher, and the bundle ID of the app. **Tip:** To find the bundle ID of an app, use the following steps on a Mac computer that has the app installed:<ol><li>Open the folder in which the app is installed (for example, **/Applications**).</li><li>Select the *&lt;App Name&gt;***.app** bundle, and choose **Show Package Contents**.</li><li>Open the **Info.plist** file.</li><li>Check the value associated with the key **CFBundleIdentifier**.</li></ol>The format for the bundle ID is **com.contoso.appname**.|
 |**Import Apps**|Import a list of apps that you have specified in a comma-separated values file. In the file, use this format: app name, publisher, app bundle ID.|
 |**Edit**|Edit the name, publisher, and app bundle ID of the selected app.|
@@ -76,7 +76,7 @@ In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed
 > When a Mac OS X device is in Sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the Intune console might temporarily display the status **Policy settings in error** until the next time the device wakes from Sleep mode.
 
 ### Monitor compliant and noncompliant apps
-Use the **Noncompliant Apps Reports** to view the compliance of apps that you specified.
+Use **Noncompliant Apps Reports** to view the compliance of apps that you specified.
 
 #### To run the report
 
@@ -108,7 +108,7 @@ Before you start, you must have installed the Apple Configurator and created a c
 |Setting name|Details|
     |----------------|--------------------|
     |**Custom configuration profile name (displayed to users)**|Provide a name for the policy as it will be displayed on the device and in Intune policy reports.|
-    |**Configuration profile file**|Choose **Import**, and then browse to the configuration profile that you created by using the Apple Configurator. **Tip:** See **How to create a configuration profile file** in this topic for help in creating the configuration profile.|
+    |**Configuration profile file**|Choose **Import**, and then browse to the configuration profile that you created by using the Apple Configurator. **Tip:** See "How to create a configuration profile file" in this topic for help in creating the configuration profile.|
     |**Configuration profile details**|Display the XML code for the configuration profile that you imported.|
 
 
