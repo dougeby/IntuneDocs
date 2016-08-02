@@ -33,7 +33,7 @@ Intune manages Windows PCs using policies similar to the way Windows Server Acti
 While the Intune client supports [policies that help protect PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) by managing software updates, Windows firewall, and Endpoint Protection, PCs managed with the Intune client cannot be targeted with other Intune policies.
 
 > [!NOTE]
-> Devices that run Windows 8.1 can be managed using the Intune client or they can be enrolled as mobile devices. The information below applies to computers that run the Intune client. Installing both the Intune PC client and enrolling the Windows device for mobile device management is not supported.
+> Devices that run Windows 8.1 or later can be managed using the Intune client or they can be enrolled as mobile devices. The information below applies to computers that run the Intune client. Installing both the Intune PC client and enrolling the Windows device for mobile device management is not supported.
 
 ## Requirements for Intune PC client management
 
