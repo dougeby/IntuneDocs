@@ -27,6 +27,8 @@ ms.suite: ems
 
 
 # Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune
+To set up your Windows device, you can find help [here](../end-user/using-your-windows-device-with-intune.md).
+
 Before you can manage Windows 10 Mobile or Windows Phone devices with Microsoft Intune, the devices must be able to communicate with Intune. To simplify this, you can create a DNS record so users don't have to enter the server address. The steps below describe how to simplify enrollment for users.  
 
 For most scenarios, users can install the Company Portal app from the Windows Store. If you manage Windows Phone 8.0 devices or need to deploy the Company Portal to Windows Phone devices, you must also download and sign the Company Portal app. See [Set up Windows Phone 8.0 management](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
@@ -56,6 +58,10 @@ For most scenarios, users can install the Company Portal app from the Windows St
       ![Set up mobile device management for Windows dialog box](../media/windows-device-enrollment.png)
 
     3.  Type the URL of the verified domain of the company website in the **Specify a verified domain name** box and then click **Test Auto-Detection**.
+
+    4.  Your users will need to know how to enroll their devices and what to expect once they're brought into management.
+        - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [End user guidance for Windows devices](../end-user/using-your-windows-device-with-intune.md)
 
 
 
