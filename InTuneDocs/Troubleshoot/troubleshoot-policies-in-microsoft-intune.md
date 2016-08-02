@@ -6,7 +6,7 @@ description: Troubleshoot policy configuration issues.
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -83,10 +83,6 @@ For non-MDM Windows devices, policy errors in the policyplatform.log file may be
 
 4.  Move  the notification slider to the default setting.
 
-## Error  0x87D1FDE8 for KNOX device
-**Issue**:After creating and deploying an Exchange Active Sync email profile for Samsung KNOX for  various Android devices they report the error **0x87D1FDE8** or **remediation failed** in the device's properties &gt; policy tab.
-
-Review the configuration of your EAS profile for Samsung KNOX and source policy. The Samsung Notes sync option is no longer supported and that option should not be selected in your profile. Be sure devices have had enough time to process the policy, up to 24 hours.
 
 ## Alert: Saving of Access Rules to Exchange has Failed
 **Issue**: You receive the alert **Saving of Access Rules to Exchange has Failed**  in the admin console.
