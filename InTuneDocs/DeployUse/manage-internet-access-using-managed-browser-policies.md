@@ -26,15 +26,15 @@ ms.suite: ems
 ---
 
 # Manage Internet access using managed browser policies with Microsoft Intune
-The managed browser is a web browsing application that you can deploy in your organization using Microsoft Intune. A managed browser policy configures an allow list or a block list that restricts the web sites that users of the managed browser can visit.
+The managed browser is a web browsing application that you can deploy in your organization by using Microsoft Intune. A managed browser policy configures an allow list or a block list that restricts the websites that users of the managed browser can visit.
 
-Because this app is a managed app, you can also apply mobile application management policies to the app, such as controlling the use of cut, copy and paste, preventing screen captures, and also ensuring that links to content that users click only open in other managed apps. For details, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Because this app is a managed app, you can also apply mobile application management policies to the app, such as controlling the use of cut, copy, and paste, preventing screen captures, and ensuring that links to content that users click open only in other managed apps. For details, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 > [!IMPORTANT]
->If users install the managed browser from the app store and it is not managed by Intune, the following behavior applies:
-iOS – The managed browser app can be used as a basic web browser, but some features will not be available, and it will not be able to access data from other Intune-managed apps.
-Android – The managed browser app cannot be used.
-If users install the managed browser themselves on an iOS device with a version less than iOS 9, it will not be managed by any policies you create. To ensure that the browser is managed by Intune, they must uninstall the app before you can deploy it to them as a managed app. On iOS 9 and later, if the user installs the managed browser themselves they will be prompted to allow it to become managed by policy.
+>If users install the managed browser from the app store and it is not managed by Intune, the following behavior applies:<br /><br />
+iOS – The managed browser app can be used as a basic web browser, but some features will not be available, and it will not be able to access data from other Intune-managed apps.<br />
+Android – The managed browser app cannot be used.<br /><br />
+If users install the managed browser themselves on an iOS device with a version earlier than iOS 9, it will not be managed by any policies that you create. To ensure that Intune manages the browser, users must uninstall the app before you can deploy it to them as a managed app. On iOS 9 and later, if users install the managed browser themselves, they will be prompted to allow it to become managed by policy.
 
 You can create managed browser policies for the following device types:
 
@@ -80,7 +80,7 @@ For more information about how to deploy apps, see [Deploy apps in Microsoft Int
 
 ## Security and privacy for the managed browser
 
--   On iOS devices, web sites that users visit that have an expired or untrusted certificate cannot be opened.
+-   On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
 
 -   Settings that users make for the built-in browser on their devices are not used by the managed browser. This is because the managed browser does not have access to these settings.
 
