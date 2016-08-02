@@ -47,7 +47,7 @@ Creating a DNS CNAME helps users connect and enroll in Intune without entering a
 
   **EnterpriseRegistration.windows.net** – Supports Windows 8.1 and Windows 10 Mobile devices that will register with Azure Active Directory using their work or school account
 
-  2.  In the [Intune administration console](http://manage.microsoft.com), click **Administration** &gt; **Mobile Device Management** &gt; **Windows**.
+  2.  In the [Intune administration console](http://manage.microsoft.com), click **Admin** &gt; **Mobile Device Management** &gt; **Windows**.
   ![Windows device management dialog box](../media/enroll-intune-winenr.png)
   3.  Type the URL of the verified domain of the company website in the **Specify a verified domain name** box and then click **Test Auto-Detection**.
 
