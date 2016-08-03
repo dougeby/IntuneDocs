@@ -28,7 +28,7 @@ ms.suite: ems
 # Manage Internet access using managed browser policies with Microsoft Intune
 The managed browser is a web browsing application that you can deploy in your organization by using Microsoft Intune. A managed browser policy configures an allow list or a block list that restricts the websites that users of the managed browser can visit.
 
-Because this app is a managed app, you can also apply mobile application management policies to the app. These policies might include controlling the use of cut, copy, and paste, preventing screen captures, and ensuring that links to content that users click open only in other managed apps. For details, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Because this app is a managed app, you can also apply mobile application management policies to the app. These policies might include controlling the use of cut, copy, and paste, preventing screen captures, and ensuring that links to content that users select open only in other managed apps. For details, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 > [!IMPORTANT]
 >If users install the managed browser from the app store and Intune does not manage it, the following behavior applies:<br /><br />
@@ -46,7 +46,7 @@ The Intune managed browser supports opening web content from [Microsoft Intune a
 
 ## Create a managed browser policy
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Add Policy**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**.
 
 2.  Configure one of the following **Software** policy types:
 
@@ -64,7 +64,7 @@ The Intune managed browser supports opening web content from [Microsoft Intune a
     |**Description**|Provide a description that gives an overview of the managed browser policy and other relevant information that helps you to locate it.|
     |**Enable an allow list or block list to restrict the URLs the Managed Browser can open**|Select one of the following options:<br /><br />**Allow the managed browser to open only the URLs listed below**. Specify a list of URLs that the managed browser can open.<br /><br />**Block the managed browser from opening the URLs listed below**. Specify a list of URLs that the managed browser will be blocked from opening.<br /><br />**Note:** You cannot include both allowed and blocked URLs in the same managed browser policy.<br /><br />For more information about the URL formats that you can specify, see "URL format for allowed and blocked URLs" in this topic.|
 
-4.  When you are finished, click **Save Policy**.
+4.  When you are finished, choose **Save Policy**.
 
 The new policy appears in the **Configuration Policies** node of the **Policy** workspace.
 
@@ -84,7 +84,7 @@ For more information about how to deploy apps, see [Deploy apps in Microsoft Int
 
 -   The managed browser does not use settings that users make for the built-in browser on their devices. This is because the managed browser does not have access to these settings.
 
--   If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in a mobile application management policy associated with the managed browser, and a user clicks the help link on the authentication page, they can then browse any Internet sites regardless of whether they were added to a block list in the managed browser policy.
+-   If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in a mobile application management policy associated with the managed browser, and a user selects the help link on the authentication page, they can then browse any Internet sites regardless of whether they were added to a block list in the managed browser policy.
 
 -   The managed browser can block access to sites only when they are accessed directly. It cannot block access when intermediate services (such as a translation service) are used to access the site.
 
