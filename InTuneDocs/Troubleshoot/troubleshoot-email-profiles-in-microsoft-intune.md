@@ -6,7 +6,7 @@ description: Email profile issues and how to troubleshoot and resolve them.
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -52,6 +52,24 @@ This occurs when the option **Allow e-mail to be sent from third-party applicati
 3.  Right-click the e-mail profile, and open **Properties**.
 
 4.  On the **Synchronization Settings** tab, select **Allow e-mail to be sent from third-party applications**.
+
+
+## Device already has an email profile installed
+
+If the user has installed an email profile prior to provision of a profile by Intune, the result of the Intune email profile deployment depends on the device platform:
+
+-**iOS**: Intune detects an existing, duplicate email profile based on hostname and email address. The duplicate email profile created by the user will block the deployment of an Intune admin-created profile. This is a common problem as iOS users will typically create an email profile, then enroll. The company portal will inform the user that they are not compliant due to their manually-configured email profile, and will prompt the user to remove that profile.The user should remove their email profile so that the Intune profile can be deployed. To prevent the problem instruct your users to enroll before installing an email profile and to allow Intune to deploy the profile.
+
+-**Windows**: Intune detects an existing, duplicate email profile based on hostname and email address. Intune will overwrite the existing email profile created by the user.
+
+-**Samsung KNOX**: Intune identifies a duplicate email account based on the email address, and will overwrite it with the Intune profile. If the user configures that account, it will be overwritten again by the Intune profile. Note that this may cause some confusion to the user whose account configuration gets overwritten.
+
+Since Samsung KNOX does not use hostname to identify the profile, we recommend that you not create multiple email profiles to deploy to the same email address on different hosts, as these will overwrite each other.
+
+## Error  0x87D1FDE8 for KNOX device
+**Issue**:After creating and deploying an Exchange Active Sync email profile for Samsung KNOX for  various Android devices they report the error **0x87D1FDE8** or **remediation failed** in the device's properties &gt; policy tab.
+
+Review the configuration of your EAS profile for Samsung KNOX and source policy. The Samsung Notes sync option is no longer supported and that option should not be selected in your profile. Be sure devices have had enough time to process the policy, up to 24 hours.
 
 ## Next steps
 If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

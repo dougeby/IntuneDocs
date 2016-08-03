@@ -5,7 +5,7 @@ title: Get ready to enroll devices | Microsoft Intune
 description: Set up mobile device management (MDM) prerequisites and get ready to enroll different operating systems.
 keywords:
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Get ready to enroll devices in Microsoft Intune
-To let employees enroll mobile devices (including [Android](set-up-android-management-with-microsoft-intune.md), [iOS and Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md), and [Windows PCs](set-up-windows-device-management-with-microsoft-intune.md)) with Intune, you must enable device enrollment. To allow enrollment, you must set a mobile device management (MDM) authority, configure the Intune Company Portal, assign licenses, and enable enrollment for the device platform.
+To let employees enroll mobile devices (including [Android](set-up-android-management-with-microsoft-intune.md), [iOS and Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md), and [Windows PCs](set-up-windows-device-management-with-microsoft-intune.md)) with Intune or to manage company-owned devices you must enable device enrollment. To allow enrollment, you must set a mobile device management (MDM) authority, configure the Intune Company Portal, assign licenses, and enable enrollment for the device platform.
 
 ## Set mobile device management authority
 The MDM authority defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
