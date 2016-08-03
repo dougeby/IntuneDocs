@@ -30,6 +30,15 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 
 All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
+## August 2016
+## Company Portal updates
+
+### Android
+- **Android Company Portal app**<br/>
+The Intune Company Portal app for Android provides “day 0” support for the forthcoming Android 7.0 operating system for mobile devices.  
+
+- **Google removal of remote passcode reset capability on Android 7.0 devices**<br/>
+On Android 7.0 devices, Intune IT administrators and end users won't be able to remotely reset the device passcode, because Google has removed that capability for Android 7.0 devices. For versions earlier than Android 7.0, IT administrators will still be able to remotely reset a user’s passcode, and end users will still be able to reset their passcodes from the Company Portal website.
 
 ## July 2016
 ## App management
@@ -47,7 +56,9 @@ The Intune App SDK Xamarin component allows you to enable the Intune mobile app 
 Intune increased the maximum configurable device enrollment limit from 5 to 15 devices per user.
 <!---TFS 1289896 --->
 
-
+### TeamViewer Integration for Windows PCs running the Intune client software
+[TeamViewer](https://www.teamviewer.com) integration for Windows PCs that run the Intune client lets you establish remote assistance sessions with Windows PCs to help support end-user helpdesk departments. This includes Windows 7, 8, 8.1 and Windows 10. For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
+<!---TFS 1284856--->
 
 ## Company Portal updates
 ### Company Portal website
