@@ -30,6 +30,15 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 
 All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
+## August 2016
+## Company Portal updates
+
+### Android
+- **Android Company Portal app**<br/>
+The Intune Company Portal app for Android provides “day 0” support for the forthcoming Android 7.0 operating system for mobile devices.  
+
+- **Google removal of remote passcode reset capability on Android 7.0 devices**<br/>
+On Android 7.0 devices, Intune IT administrators and end users won't be able to remotely reset the device passcode, because Google has removed that capability for Android 7.0 devices. For versions earlier than Android 7.0, IT administrators will still be able to remotely reset a user’s passcode, and end users will still be able to reset their passcodes from the Company Portal website.
 
 ## July 2016
 ## App management
