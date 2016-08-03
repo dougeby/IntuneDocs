@@ -63,8 +63,8 @@ In the **Compliant &amp; Noncompliant Apps list for Mac OS X**, enable **Managed
 
 |Setting name|Details|
 |----------------|---------------|
-|**Report noncompliance when users install the listed apps**|List the Mac OS X apps that users are not allowed to install. If users install any of these apps, they will be reported in **Noncompliant Apps Reports**.|
-|**Report noncompliance when users install apps which are not listed**|List the Mac OS X apps that users are allowed to install. If users install any other apps, they will be reported in **Noncompliant Apps Reports**.|
+|**Report noncompliance when users install the listed apps**|Displays the Mac OS X apps that users are not allowed to install. If users install any of these apps, they will be reported in **Noncompliant Apps Reports**.|
+|**Report noncompliance when users install apps which are not listed**|Displays the Mac OS X apps that users are allowed to install. If users install any other apps, they will be reported in **Noncompliant Apps Reports**.|
 |**Add**|Add an app to the selected list. Specify a name of your choice, optionally the app publisher, and the bundle ID of the app. **Tip:** To find the bundle ID of an app, use the following steps on a Mac computer that has the app installed:<ol><li>Open the folder in which the app is installed (for example, **/Applications**).</li><li>Select the *&lt;App Name&gt;***.app** bundle, and choose **Show Package Contents**.</li><li>Open the **Info.plist** file.</li><li>Check the value associated with the key **CFBundleIdentifier**.</li></ol>The format for the bundle ID is **com.contoso.appname**.|
 |**Import Apps**|Import a list of apps that you have specified in a comma-separated values file. In the file, use this format: app name, publisher, app bundle ID.|
 |**Edit**|Edit the name, publisher, and app bundle ID of the selected app.|
