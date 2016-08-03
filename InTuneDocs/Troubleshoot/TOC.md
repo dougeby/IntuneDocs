@@ -15,3 +15,4 @@
 ## [Troubleshoot software updates](Troubleshoot-software-updates-in-microsoft-intune.md)
 ## [Troubleshoot email profiles](Troubleshoot-email-profiles-in-microsoft-intune.md)
 ## [Troubleshoot conditional access](troubleshoot-conditional-access.md)
+## [Troubleshoot Exchange connector](troubleshoot-exchange-connector.md)
