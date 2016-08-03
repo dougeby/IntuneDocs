@@ -42,7 +42,7 @@ The Microsoft Intune Center lets users:
 
 -   Manage Microsoft Intune Endpoint Protection.
 
-<!--- -   Request remote assistance.--->
+-  Request remote assistance.
 
 The Microsoft Intune Center is installed on all managed computers. You can configure the following settings in an Intune policy and these are displayed to users in the Microsoft Intune Center:
 
@@ -166,7 +166,7 @@ Before you can deploy software to a user, you must link the user to a computer. 
 > [!TIP]
 > If you want to restrict end users ability to link themselves to computers, enable the option **Restrict users' ability to link themselves to computers** in the **Microsoft Intune Agent Settings** policy.
 
-<!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
+## Request and provide remote assistance to Windows PCs that use the Intune client software
 
 > [!IMPORTANT]
 > You might not see the options to configure TeamViewer integration for remote assistance in the Intune admin console. This capability is not currently available to all customers, but will be rolling our more widely soon.
@@ -217,4 +217,4 @@ While in a remote assistance session, you can use all available TeamViewer comma
 
 ### Close the remote assistance session
 
-From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
+From the **Actions** menu of the **TeamViewer** window, choose **End Session**.
