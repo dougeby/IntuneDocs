@@ -121,8 +121,5 @@ You can create the configuration profile file used by the custom policy in two w
 -   Author the file yourself by using the appropriate schema from the [Apple Configuration Profile Key Reference](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html).
 
 
-> [!IMPORTANT]
-> When a Mac OS X device is in sleep mode, policies and profiles cannot be delivered or inventoried. As a result, the Intune console might temporarily display the status **Policy settings in error** until the next time the device wakes from sleep mode.
-
 ### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
