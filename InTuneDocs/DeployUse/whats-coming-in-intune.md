@@ -6,7 +6,7 @@ description:
 keywords:
 author: Lindavr
 manager: angrobe
-ms.date: 07/07/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# What's coming in Microsoft Intune - July
+# What's coming in Microsoft Intune - August
 This information is provided under NDA on an extremely limited basis and is subject to change. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Intune/PM buddy if you have any questions or concerns.
 
 This page is updated periodically. Check back for new What’s Coming updates.
@@ -34,26 +34,29 @@ The following changes are under development for Intune. All of these features wi
 
 
 ## App management
-### Improve the app provisioning profile update experience
-Apple iOS line of business mobile apps are built with a provisioning profile included and code signed with a certificate. When the app is run on an iOS device, iOS confirms the integrity of the iOS app and enforces policies defined by the provisioning profile.
+### Hidden and shown apps for iOS 9.3
+For devices running iOS 9.3 or later, you will be able to use the hidden and shown apps list in the iOS general configuration policy to:
+- Specify a list of apps that will be hidden from users. Users cannot view, or launch these apps.
+- Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
+The apps you can specify include both apps you have deployed, and the built-in iOS apps like Messages and Notes.
+<!---TFS 1279009--->
 
-The enterprise signing certificate you use to sign apps typically lasts for 3 years. However, the provisioning profile expires after 1 year. With this update, Intune will provide you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are near expiry while the certificate is still valid.
-<!--- TFS 1280247--->
+### Samsun app deny (blacklist) enforcement by custom policy
+I have no blurb yet so we may publish without.
+<!---TFS 1311629 --->
 
-### Xamarin support
-The Microsoft Intune app SDK will support Xamarin apps in these scenarios:
+### New apps compatible with mobile application management (MAM) policies
+The Yammer app for [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) is now compatible with [Intune mobile application management (MAM) policies](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), whether or not the device is enrolled.
 
-- Writing new apps, or modifying the code of existing line of business apps using the Intune SDK. You will be able to get the plugin on the [Microsoft Intune Github](https://github.com/msintuneappsdk) page.
-- Adding MAM support to existing line of business apps using the Intune app wrapping tool
+For a full list of MAM compatible apps, see the [Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) site.
+<!--- TFS 1252335 & 1252336--->
 
-For help choosing which method to use, see [Decide how to prepare apps for mobile application management with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
-
-<!--- TFS 1061478 & TFS 1152340--->
-
-## Device management
-### Increased device enrollment limits
-Intune will increase the maximum configurable device enrollment limit from 5 to 15 devices per user.
-<!---TFS 1289896 --->
+<!--- ## Device management
+### Android 7.0 support
+In August, Intune will provide “day 0” support for the forthcoming Android 7.0 operating system for mobile devices.  --->
+<!---TFS 1262053--->
+<!--- ### Google removal of remote passcode reset capability on Android 7.0 devices
+Google is removing the ability of IT administrators and end users to remotely reset the passcode of Android 7.0 devices. Previously, IT administrators could remotely reset a user’s passcode, and end users could reset their passcodes from the Company Portal website.--->
 
 ## Group management
 ### Intune Groups transitioning to Azure Active Directory Groups beginning in August 2016
@@ -67,31 +70,28 @@ Customers who are new to Intune will see **some of the security group changes be
 
 In addition to changes in group management, **the following functionality will be deprecated**:
 - Excluding members or groups while creating a new group
-- 'Manage Groups' in the Service Admin role
+- **Ungrouped Users** and **Ungrouped Devices** groups
+- **Manage Groups** in the Service Admin role
 - Custom group-based alerts for Notification Rules
 - Pivoting with groups in reports
-
+<!--- TFS 1295329--->
 
 ## Company Portal
+
+### Feedback link from the Company Portal to Microsoft
+The Company Portal website will enable end users to tap a new "Feedback" link, at the bottom of the page, to send feedback to Microsoft about their experience with the site. The collected, anonymized feedback will help Microsoft improve the Company Portal website experience for users.
+<!--- TFS 1313657--->
 
 ### Addition of 'Notifications' to the Company Portal for Android
 We are releasing an update to the Company Portal for Android in September that will introduce a new **Notifications** icon on the homepage. Tapping this icon will access the **Notifications** page that will show your end user all the items that require attention in the Company Portal app such as device non-compliance, enrollment update, and enrollment activation. If you also use the iOS Company Portal app, you’ll already see the notifications experience. With the introduction of the **Notifications** page, you will not see the **Company Access Setup** page every time you launch or resume the Company Portal for Android as long as the device is already enrolled. We hear many of you have created end-user guidance and appreciate advanced notice when your guidance/screen shots may need updating. Please update your documentation to reflect the upcoming change in experience. For updated screenshots, go here: https://aka.ms/androidcpupdate  
 
-### Help users resolve enrollment issues when Workplace Join fails
-When you are using conditional access, the enrollment steps for Windows 8.1, Windows 10 Desktop, and Windows 10 Mobile have been simplified in the Company Portal website for end users who experience a Workplace Join (WPJ) failure. Previously, when end users were trying to enroll and do a WPJ, and their enrollment succeeded, but WPJ failed, the enrolled device would not appear on the list of devices for users to identify, causing confusion for users. Users will now see separate “Device enrollment” and “Workplace Join” steps, making it easier for them to see the status of their device and to complete the process after the WPJ failure. The separate steps are expected to also simplify the troubleshooting process for IT administrators.
 
-### Changes to Device Enrollment Managers accounts in the iOS Company Portal app
-To improve performance and scale, Intune will no longer show all Device Enrollment Managers (DEM) devices in the My Devices pane of the iOS Company Portal app. Only the local device running the app will be displayed, and only if it is enrolled via the Company Portal app. The DEM user may perform actions on the local device, but remote management of other enrolled devices will only be performed from the Intune admin console.  Additionally, Intune is deprecating use of DEM accounts with either the Apple Device Enrollment Program or the Apple Configurator tool. Both these enrollment methods already support user-less enrollment for shared iOS devices. Only use DEM accounts when user-less enrollment for shared devices is unavailable.
-<!---TFS 1233681--->
-### Restrict side-load app installation to enrolled Android devices
-Android devices can no longer install applications through the Company Portal website unless the devices have been enrolled in Intune by using the Intune Company Portal app for Android.
-<!---TFS 1299082--->
 
 ## Service deprecation
-**Company Portal apps for Windows 8 and Windows Phone 8 are being deprecated from Sept, 2016.** Starting in Sept 2016, Microsoft Intune will end support for the Microsoft Intune Company Portal apps for Windows Phone 8 and Windows 8 platforms. Update devices to Windows 8.1 and Windows Phone 8.1 and use the corresponding Windows 8.1 and Windows Phone 8.1 Company Portal apps to continue distributing apps to these devices.
+**Company Portal apps for Windows 8 and Windows Phone 8 are being deprecated from Sept, 2016.** <br/>Starting in Sept 2016, Microsoft Intune will end support for the Microsoft Intune Company Portal apps for Windows Phone 8 and Windows 8 platforms. Update devices to Windows 8.1 and Windows Phone 8.1 and use the corresponding Windows 8.1 and Windows Phone 8.1 Company Portal apps to continue distributing apps to these devices.
 <!---TFS 1255391--->
 
-**Custom Group Targeting of Notification Rules Removal.**
+**Custom Group Targeting of Notification Rules Removal.**<br/>
 Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
 
 The preliminary timeline for this change is as follows:
@@ -100,11 +100,13 @@ The preliminary timeline for this change is as follows:
 - Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
 
 <!---	TFS 1278864--->
+**Changes in support for the iOS Company Portal app.**<br/>
+In September, all users of the Microsoft Intune Company Portal app for iOS will be required to use its latest version. New users will only be able to download the latest version and current users will be required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions won’t be able to use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.
 
-**Changes in support for the iOS Company Portal app.**
-In July, all users of the Microsoft Intune Company Portal app for iOS will be required to use its latest version. New users will only be able to download the latest version and current users will be required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions won’t be able to use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.  
+<!---TFS 1283165--->
 
-**Intune Viewer apps.** With the release of the new RMS sharing app, we are removing the following Intune Viewer apps, beginning August, 2016:
+
+**Intune Viewer apps.** <br/>With the release of the new RMS sharing app, we are removing the following Intune Viewer apps, beginning August, 2016:
 - Intune AV Viewer
 - Intune PDF Viewer
 - Intune Image Viewer for Android from Google Play
