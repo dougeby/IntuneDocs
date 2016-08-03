@@ -6,7 +6,7 @@ description: Deploy the managed browser application to restrict web browsing and
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,11 +58,13 @@ The Intune managed browser supports opening web content from [Microsoft Intune a
 
 3.  Use the following table to help you configure the managed browser policy settings:
 
-|Setting name|Details|
-    |----------------|--------------------|
-    |**Name**|Enter a unique name for the managed browser policy to help you identify it in the Intune console.|
-    |**Description**|Provide a description that gives an overview of the managed browser policy and other relevant information that helps you to locate it.|
-    |**Enable an allow list or block list to restrict the URLs the Managed Browser can open**|Select one of the following options:<br /><br />**Allow the managed browser to open only the URLs listed below**. Specify a list of URLs that the managed browser can open.<br /><br />**Block the managed browser from opening the URLs listed below**. Specify a list of URLs that the managed browser will be blocked from opening.<br /><br />**Note:** You cannot include both allowed and blocked URLs in the same managed browser policy.<br /><br />For more information about the URL formats that you can specify, see "URL format for allowed and blocked URLs" in this topic.|
+	- **Name**. Enter a unique name for the managed browser policy to help you identify it in the Intune console.
+	- **Description**. Provide a description that gives an overview of the managed browser policy and other relevant information that helps you to locate it.
+	- **Enable an allow list or block list to restrict the URLs the Managed Browser can open**. Select one of the following options:
+		- **Allow the managed browser to open only the URLs listed below**. Specify a list of URLs that the managed browser can open.
+		- **Block the managed browser from opening the URLs listed below**. Specify a list of URLs that the managed browser will be blocked from opening.
+**Note:** You cannot include both allowed and blocked URLs in the same managed browser policy.
+For more information about the URL formats you can specify, see **URL format for allowed and blocked URLs** in this topic.
 
 4.  When you are finished, choose **Save Policy**.
 
