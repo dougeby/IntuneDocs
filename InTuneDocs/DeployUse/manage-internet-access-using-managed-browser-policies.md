@@ -56,7 +56,7 @@ The Intune managed browser supports opening web content from [Microsoft Intune a
 
     For more information about how to create and deploy policies, see the [Manage settings and features on your devices with Microsoft Intune Policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) topic.
 
-3.  Use the following table to help you configure the managed browser policy settings:
+3.  Use the following to help you configure the managed browser policy settings:
 
 	- **Name**. Enter a unique name for the managed browser policy to help you identify it in the Intune console.
 	- **Description**. Provide a description that gives an overview of the managed browser policy and other relevant information that helps you to locate it.
