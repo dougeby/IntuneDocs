@@ -47,7 +47,9 @@ The Intune App SDK Xamarin component allows you to enable the Intune mobile app 
 Intune increased the maximum configurable device enrollment limit from 5 to 15 devices per user.
 <!---TFS 1289896 --->
 
-
+### TeamViewer Integration for Windows PCs running the Intune client software
+[TeamViewer](https://www.teamviewer.com) integration for Windows PCs that run the Intune client lets you establish remote assistance sessions with Windows PCs to help support end-user helpdesk departments. This includes Windows 7, 8, 8.1 and Windows 10. For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
+<!---TFS 1284856--->
 
 ## Company Portal updates
 ### Company Portal website
