@@ -7,7 +7,7 @@ description: Create policies that control settings and features on Android devic
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -203,59 +203,10 @@ This capability is intended to allow you to deploy Android settings that are not
     |**OMA-URI (case sensitive)**|Specify the OMA-URI you want to supply a setting for.|
     |**Value**|Specify the value to associate with the OMA-URI that you specified previously.|
 
-### Example: Configure a custom Wi-Fi profile with a pre-shared key
-Although Intune supports Wi-Fi profiles for Android devices, this feature does not currently support the inclusion of a pre-shared key in the configuration. In this example, you’ll learn how to create an Android custom policy that creates a Wi-Fi profile with a pre-shared key on the Android device.
+### Examples
 
-#### To create a Wi-Fi profile with a pre-shared key
-
-1.  Ensure that your users are using the latest version of the [Intune Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) app for Android.
-
-2.  Create an Android custom policy and add the following settings:
-
-|Setting name|Details|
-|----------------|--------------------|
-|**Setting name**|Specify a name of your choice for the setting.|
-|**Setting description**|Specify a description for the setting.|
-|**Data type**|Select **String (XML)**.|
-|**OMA-URI**|Type the following: ./Vendor/MSFT/WiFi/Profile/*&lt;your Wi-Fi profile&gt;*/Settings|
-
-3.  For **Value**, copy and paste the following XML code:
-
-    ```
-    <!--
-    WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile
-                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-                    <WEP password> = Password to connect to the network
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <name><SSID of wifi profile></name>
-        </SSID>
-      </SSIDConfig>
-      <connectionType>ESS</connectionType>
-      <MSM>
-        <security>
-          <authEncryption>
-            <authentication>open</authentication>
-            <encryption>WEP</encryption>
-            <useOneX>false</useOneX>
-          </authEncryption>
-          <sharedKey>
-            <keyType>networkKey</keyType>
-            <protected>false</protected>
-            <keyMaterial><WEP password></keyMaterial>
-          </sharedKey>
-          <keyIndex>0</keyIndex>
-        </security>
-      </MSM>
-    </WLANProfile>
-    ```
-
-4.  When you are done, save the policy and deploy it to the required Android devices. The new Wi-Fi profile will appear in the list of connections on the device.
+- [Create a Wi-Fi profile with a pre-shared key](pre-shared-key-wi-fi-profile.md)
+- [Use a custom policy to create a per-app VPN profile for Android devices](per-app-vpn-for-android-pulse-secure.md)
 
 ### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
