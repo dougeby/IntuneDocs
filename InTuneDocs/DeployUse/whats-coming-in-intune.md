@@ -46,14 +46,14 @@ The apps you can specify include both apps you have deployed, and the built-in i
 
 You can now configure a custom policy for Samsung KNOX devices that lets you create one of the following:
 - A list of apps that are blocked from running on the device. Even if installed, an app defined in the blocked list cannot be activated on the device.
- - A list of apps that users of the device are allowed to install from the Google Play store. No other apps can be installed from the store.
+- A list of apps that users of the device are allowed to install from the Google Play store. No other apps can be installed from the store.
 
 These settings can only be used by devices that run Samsung KNOX.
 <!--- For details, see [Use custom policies to allow and block apps for Samsung KNOX devices]( custom-policy-to-allow-and-block-samsung-knox-apps.md)--->
 <!---TFS 1311629 --->
 
 ### New apps compatible with mobile application management (MAM) policies
-The Yammer app for [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) is now compatible with [Intune mobile application management (MAM) policies](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), whether or not the device is enrolled.
+The Yammer app for [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) will be compatible with [Intune mobile application management (MAM) policies](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), whether or not the device is enrolled.
 
 For a full list of MAM compatible apps, see the [Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) site.
 <!--- TFS 1252335 & 1252336--->
@@ -90,37 +90,39 @@ The Company Portal website will enable end users to tap a new "Feedback" link, a
 <!--- TFS 1313657--->
 
 ### Addition of 'Notifications' to the Company Portal for Android
-We are releasing an update to the Company Portal for Android in September that will introduce a new **Notifications** icon on the homepage. Tapping this icon will access the **Notifications** page that will show your end user all the items that require attention in the Company Portal app such as device non-compliance, enrollment update, and enrollment activation. If you also use the iOS Company Portal app, you’ll already see the notifications experience. With the introduction of the **Notifications** page, you will not see the **Company Access Setup** page every time you launch or resume the Company Portal for Android as long as the device is already enrolled. We hear many of you have created end-user guidance and appreciate advanced notice when your guidance/screen shots may need updating. Please update your documentation to reflect the upcoming change in experience. For updated screenshots, go here: https://aka.ms/androidcpupdate  
+We are releasing an update to the Company Portal for Android in September that will introduce a new **Notifications** icon on the homepage. Tapping this icon will access the **Notifications** page that will show your end user all the items that require attention in the Company Portal app such as device non-compliance, enrollment update, and enrollment activation. If you also use the iOS Company Portal app, you’ll already see the notifications experience. With the introduction of the **Notifications** page, you will not see the **Company Access Setup** page every time you launch or resume the Company Portal for Android as long as the device is already enrolled. We hear many of you have created end-user guidance and appreciate advanced notice when your guidance/screen shots may need updating. Please update your documentation to reflect the upcoming change in experience. For updated screenshots, go here: https://aka.ms/androidcpupdate.  
 
 
 
 ## Service deprecation
-**Company Portal apps for Windows 8 and Windows Phone 8 are being deprecated from Sept, 2016.** <br/>Starting in Sept 2016, Microsoft Intune will end support for the Microsoft Intune Company Portal apps for Windows Phone 8 and Windows 8 platforms. Update devices to Windows 8.1 and Windows Phone 8.1 and use the corresponding Windows 8.1 and Windows Phone 8.1 Company Portal apps to continue distributing apps to these devices.
+### Company Portal apps for Windows 8 and Windows Phone 8 are being deprecated starting in September 2016
+Starting in September 2016, Microsoft Intune will end support for the Microsoft Intune Company Portal apps for Windows Phone 8 and Windows 8 platforms. Update devices to Windows 8.1 and Windows Phone 8.1 and use the corresponding Windows 8.1 and Windows Phone 8.1 Company Portal apps to continue distributing apps to these devices.
 <!---TFS 1255391--->
 
-**Custom Group Targeting of Notification Rules Removal.**<br/>
-Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
+### Custom Group Targeting of Notification Rules Removal
+Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. Starting in June 2016, targeting user-created groups will no longer be supported.
 
 The preliminary timeline for this change is as follows:
-- In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Existing tenants are unaffected.
-- Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
-- Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
+- In August 2016, new tenants will not see step two of the Create Notification Rule Wizard. Existing tenants are unaffected.
+- Around September 2016, some existing tenants will not see the “select device groups” in the wizard.
+- Around November 2016, we expect that all tenants will not see the “select device groups” in the wizard.
 
 <!---	TFS 1278864--->
-**Changes in support for the iOS Company Portal app.**<br/>
+### Changes in support for the iOS Company Portal app
 In September, all users of the Microsoft Intune Company Portal app for iOS will be required to use its latest version. New users will only be able to download the latest version and current users will be required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions won’t be able to use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.
 
 <!---TFS 1283165--->
 
 
-**Intune Viewer apps.** <br/>With the release of the new RMS sharing app, we are removing the following Intune Viewer apps, beginning August, 2016:
+### Intune Viewer apps
+With the release of the new RMS sharing app, we will remove the following Intune Viewer apps, beginning in August 2016:
 - Intune AV Viewer
 - Intune PDF Viewer
 - Intune Image Viewer for Android from Google Play
 
 Instead of using the Intune Viewer apps, we recommend using the new Rights Management app (RMS sharing) for Android, which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. Learn more about the RMS sharing app (with link to documentation).
-
+<!--- goes in 1608 What's New--->
 
 
 ### See also
-See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for  details on recent developments.
+See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
