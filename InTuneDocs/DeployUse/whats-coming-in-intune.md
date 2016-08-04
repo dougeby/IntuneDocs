@@ -6,7 +6,7 @@ description:
 keywords:
 author: Lindavr
 manager: angrobe
-ms.date: 08/08/2016
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,8 +41,14 @@ For devices running iOS 9.3 or later, you will be able to use the hidden and sho
 The apps you can specify include both apps you have deployed, and the built-in iOS apps like Messages and Notes.
 <!---TFS 1279009--->
 
-### Samsun app deny (blacklist) enforcement by custom policy
-I have no blurb yet so we may publish without.
+### Allowed and blocked apps policy for Samsung KNOX devices
+
+You can now configure a custom policy for Samsung KNOX devices that lets you create one of the following:
+- A list of apps that are blocked from running on the device. Even if installed, an app defined in the blocked list cannot be activated on the device.
+ - A list of apps that users of the device are allowed to install from the Google Play store. No other apps can be installed from the store.
+
+These settings can only be used by devices that run Samsung KNOX.
+<!--- For details, see [Use custom policies to allow and block apps for Samsung KNOX devices]( custom-policy-to-allow-and-block-samsung-knox-apps.md)--->
 <!---TFS 1311629 --->
 
 ### New apps compatible with mobile application management (MAM) policies
@@ -59,7 +65,7 @@ In August, Intune will provide “day 0” support for the forthcoming Android 7
 Google is removing the ability of IT administrators and end users to remotely reset the passcode of Android 7.0 devices. Previously, IT administrators could remotely reset a user’s passcode, and end users could reset their passcodes from the Company Portal website.--->
 
 ## Group management
-### Intune Groups transitioning to Azure Active Directory Groups beginning in August 2016
+### Intune Groups transitioning to Azure Active Directory Groups beginning in September 2016
 Intune is creating a new group management experience that uses Azure Active Directory (AAD) security groups as user and device groups in Intune. These groups will be used for all group management, policy deployment, and profile deployment **when we introduce the new Azure-based Intune admin portal**.
 
 This new experience will keep you from having to duplicate groups between services, **allow you access to some new Azure Active Directory Premium (AADP) group features**, and provide extensibility using PowerShell and Graph. This will also unify the group management experience across enterprise mobility management.
