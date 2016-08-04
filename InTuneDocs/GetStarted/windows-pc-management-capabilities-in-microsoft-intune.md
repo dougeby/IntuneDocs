@@ -6,7 +6,7 @@ description: Learn about the capabilities of Intune when you manage Windows PCs 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,7 +54,7 @@ Intune can manage PCs running the following Windows versions (both x86 and x64):
 
 -   **Windows 8.1** - Pro and Enterprise versions.
 
-- **Windows 10** - Home, Pro, Education, and Enterprise versions.
+- **Windows 10** - Pro, Education, and Enterprise versions.
 
 
 ## Minimum hardware requirements
