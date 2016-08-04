@@ -4,7 +4,7 @@
 title: Troubleshoot Endpoint Protection | Microsoft Intune
 description: Solve problems while using Microsoft Intune endpoint protection.
 keywords:
-author: Nbigman
+author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
