@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Set up iOS and Mac device management
-To set up your iOS or Mac device, you can find help [here](../end-user/using-your-ios-or-mac-os-x-device-with-intune.md).
+To set up your iOS or Mac device, you can find help [here](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md).
 
 Intune mobile device management of iPads, iPhones, and Mac OS X devices and give access to company email and apps. An Apple Push Notification service (APNs) certificate is required for Intune to manage iOS and Mac devices. Once the certificate is added to Intune, users can install the Company Portal app to enroll their devices or the administrator can set up [corporate-owned iOS device management](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
@@ -49,7 +49,7 @@ Intune mobile device management of iPads, iPhones, and Mac OS X devices and give
 5.  **Tell users how to get access to company resources with the company portal**<br>
     Your users will need to know how to enroll their devices and what to expect once they're brought into management.
     - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-    - [End user guidance for iOS and Mac devices](../end-user/using-your-ios-or-mac-os-x-device-with-intune.md)
+    - [End user guidance for iOS and Mac devices](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
 
 If your company or organization purchases iOS devices for users, those devices can also be enrolled for management as [company-owned iOS devices](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
