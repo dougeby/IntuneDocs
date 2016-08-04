@@ -114,7 +114,7 @@ In September, all users of the Microsoft Intune Company Portal app for iOS will 
 
 
 ### Intune Viewer apps
-With the release of the new RMS sharing app, we will remove the following Intune Viewer apps, beginning in August 2016:
+With the release of the new RMS sharing app, we will remove the following Intune Viewer apps in August 2016:
 - Intune AV Viewer
 - Intune PDF Viewer
 - Intune Image Viewer for Android from Google Play
