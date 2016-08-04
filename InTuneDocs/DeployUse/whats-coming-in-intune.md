@@ -58,12 +58,12 @@ The Yammer app for [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) a
 For a full list of MAM compatible apps, see the [Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) site.
 <!--- TFS 1252335 & 1252336--->
 
-<!--- ## Device management
+## Device management
 ### Android 7.0 support
-In August, Intune will provide “day 0” support for the forthcoming Android 7.0 operating system for mobile devices.  --->
+In August, Intune will provide “day 0” support for the forthcoming Android 7.0 operating system for mobile devices. 
 <!---TFS 1262053--->
-<!--- ### Google removal of remote passcode reset capability on Android 7.0 devices
-Google is removing the ability of IT administrators and end users to remotely reset the passcode of Android 7.0 devices. Previously, IT administrators could remotely reset a user’s passcode, and end users could reset their passcodes from the Company Portal website.--->
+### Google removal of remote passcode reset capability on Android 7.0 devices
+Google is removing the ability of IT administrators and end users to remotely reset the passcode of Android 7.0 devices. Previously, IT administrators could remotely reset a user’s passcode, and end users could reset their passcodes from the Company Portal website.
 
 ## Group management
 ### Intune Groups transitioning to Azure Active Directory Groups beginning in September 2016
