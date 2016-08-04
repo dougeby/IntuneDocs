@@ -60,7 +60,7 @@ For a full list of MAM compatible apps, see the [Microsoft Intune application pa
 
 ## Device management
 ### Android 7.0 support
-In August, Intune will provide “day 0” support for the forthcoming Android 7.0 operating system for mobile devices. 
+In August, Intune will provide “day 0” support for the forthcoming Android 7.0 operating system for mobile devices.
 <!---TFS 1262053--->
 ### Google removal of remote passcode reset capability on Android 7.0 devices
 Google is removing the ability of IT administrators and end users to remotely reset the passcode of Android 7.0 devices. Previously, IT administrators could remotely reset a user’s passcode, and end users could reset their passcodes from the Company Portal website.
@@ -102,9 +102,9 @@ Starting in September 2016, Microsoft Intune will end support for the Microsoft 
 Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. Starting in June 2016, targeting user-created groups will no longer be supported.
 
 The preliminary timeline for this change is as follows:
-- In August 2016, new tenants will not see step two of the Create Notification Rule Wizard. Existing tenants are unaffected.
-- Around September 2016, some existing tenants will not see the “select device groups” in the wizard.
-- Around November 2016, we expect that all tenants will not see the “select device groups” in the wizard.
+- In September 2016, new tenants will not see step two of the Create Notification Rule Wizard. Existing tenants are unaffected.
+- Around October 2016, some existing tenants will not see the “select device groups” in the wizard.
+- At a later date, we expect that all tenants will not see the “select device groups” in the wizard.
 
 <!---	TFS 1278864--->
 ### Changes in support for the iOS Company Portal app
