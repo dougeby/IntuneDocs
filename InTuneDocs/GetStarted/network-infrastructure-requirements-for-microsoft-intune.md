@@ -141,6 +141,7 @@ The following table lists the ports and services that the Intune client accesses
 |status.manage.microsoft.com|80 and 443|157.55.99.170
 |swda01.manage.microsoft.com<br>swda02.manage.microsoft.com<br>swdb01.manage.microsoft.com<br>swdb02.manage.microsoft.com<br>swdc01.manage.microsoft.com<br>swdc02.manage.microsoft.com|80 and 443|93.184.215.200
 |*.microsoftonline-p.com|80 and 443||
+|has.spserv.microsoft.com<br>Required for device health attestation service|443||
 |*.microsoftonline-p.net|80 and 443||
 |*.portal.office.com|80 and 443||
 |*.spynet2.microsoft.com|443||
