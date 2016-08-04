@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Manage settings and features on your devices with Microsoft Intune policies
-Microsoft Intune *policies* are groups of settings that control features on mobile devices and computers. You create policies by using templates that contain recommended or custom settings, and then you deploy them to devices or user groups.
+Microsoft Intune *policies* are groups of settings that control features on mobile devices and computers. You create policies by using templates that contain recommended or custom settings, and then you deploy them to device or user groups.
 
 ## Types of policies
 
