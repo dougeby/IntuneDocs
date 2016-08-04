@@ -38,6 +38,7 @@ The following changes are under development for Intune. All of these features wi
 For devices running iOS 9.3 or later, you will be able to use the hidden and shown apps list in the iOS general configuration policy to:
 - Specify a list of apps that will be hidden from users. Users cannot view, or launch these apps.
 - Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
+
 The apps you can specify include both apps you have deployed, and the built-in iOS apps like Messages and Notes.
 <!---TFS 1279009--->
 
