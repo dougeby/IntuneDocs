@@ -34,7 +34,7 @@ Intune policies fall into the following categories. The category that you use af
 
 
 - **Configuration policies**: These are commonly used to manage security settings and features on your devices. Use the information in this topic to learn about how to create and deploy these policies and to explore the available settings.
-- **Device compliance policies**: These define the rules and settings that a device must comply with in order to be considered compliant by conditional access polices. You can also use compliance policies to monitor and remediate  the compliance of devices independently of conditional access.
+- **Device compliance policies**: These define the rules and settings that a device must comply with in order to be considered compliant by conditional access polices. You can also use compliance policies to monitor and remediate  the compliance of devices independent of conditional access.
 For details, see [Device compliance policies in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Conditional access polices**: These policies help you secure email and other services, depending on conditions that you specify.
 For details, see [Restrict access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
@@ -106,7 +106,7 @@ When you select a deployed policy, you can view further information about the de
 
 2.  Select one of the following actions:
 
-- **Edit**: Open the properties for the selected policy so you can make changes.
+- **Edit**: Open the properties for the selected policy so that you can make changes.
 - **Delete**: Delete the selected policy.<br>When you delete a policy, it is removed from all groups to which it was deployed.
 - **Manage Deployment**: Select the group that you want to deploy the policy to, and then choose **Add**.
 
@@ -114,7 +114,7 @@ When you select a deployed policy, you can view further information about the de
 ## Frequently asked questions about Intune policies
 
 ### How long does it take for mobile devices to get a policy or apps after they have been deployed?
-When a policy or an app is deployed, Intune immediately begins attempting to notify the device that it should check in with the Intune service. This typically takes less than 5 minutes.
+When a policy or an app is deployed, Intune immediately begins attempting to notify the device that it should check in with the Intune service. This typically takes less than five minutes.
 
 If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts.  If the device is offline (for example, it is turned off or not connected to a network), it might not receive the notifications. In this case, the device will get the policy on its next scheduled check-in with the Intune service as follows:
 
@@ -134,7 +134,7 @@ If the device has just enrolled, the check-in frequency will be more frequent, a
 Users can also open the Company Portal app and sync the device to immediately check for the policy anytime.
 
 ### What actions cause Intune to immediately send a notification  to a device?
-Devices check in with Intune either when they receive a notification telling them to check in, or during their regularly scheduled check-in.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app deployment, profile deployment (Wi-Fi, VPN, e-mail, etc.), or policy deployment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.
+Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app deployment, profile deployment (Wi-Fi, VPN, email, etc.), or policy deployment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.
 
 Other changes, such as revising the contact information in the company portal, do not cause an immediate notification to devices.
 
@@ -151,14 +151,14 @@ When two or more policies are deployed to the same user or device, the evaluatio
 -   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict will be displayed in the Intune console. You must manually resolve such conflicts.
 
 ### What happens when mobile application management policies conflict with each other? Which one will be applied to the app?
-Conflict values are the most restrictive settings available in a MAM policy, except for the number entry fields (like PIN attempts before reset).  The number entry fields will be set to the same as the values, as if you created a MAM policy in the console by using the recommended settings option.
+Conflict values are the most restrictive settings available in a MAM policy, except for the number entry fields (like PIN attempts before reset).  The number entry fields will be set the same as the values, as if you created a MAM policy in the console by using the recommended settings option.
 
 Conflicts occur when two policy settings are the same.  For example, you configured two MAM policies that are identical except for the copy/paste setting.  In this scenario, the copy/paste setting will be set to the most restrictive value, but the rest of the settings will be applied as configured.
 
 If one policy is deployed to the app and takes effect, and then a second one is deployed, the first one will take precedence and stay applied, while the second shows in conflict. If they are both applied at the same time, meaning that there is no preceding policy, then they will both be in conflict. Any conflicting settings will be set to the most restrictive values.
 
 ### What happens when iOS custom policies conflict?
-Intune does not evaluate the payload of Apple Configuration files or a custom OMA-URI policy. It merely serves as the delivery mechanism.
+Intune does not evaluate the payload of Apple Configuration files or a custom Open Mobile Alliance Uniform Resource Identifier (OMA-URI) policy. It merely serves as the delivery mechanism.
 
 When you deploy a custom policy, ensure that the configured settings do not conflict with compliance, configuration, or other custom policies. In the case of a custom policy with settings conflicts, the order in which settings are applied is random.
 
@@ -187,7 +187,7 @@ When you delete a policy, or you remove a device from a group to which a policy 
 		- Allow application store
 		- Allow screen capture
 		- Allow geolocation
-		- Allow Microsoft Account
+		- Allow Microsoft account
 		- Allow copy and paste
 		- Allow Wi-Fi tethering
 		- Allow automatic connection to free Wi-Fi hotspots
@@ -204,7 +204,7 @@ When you delete a policy, or you remove a device from a group to which a policy 
 
 #### Windows PCs running the Intune client software
 
-- **Endpoint Protection settings**: Settings are restored to their recommended values. The only exception is the setting **Join Microsoft Active Protection Service**, for which the default value is **No**. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- **Endpoint Protection settings**: Settings are restored to their recommended values. The only exception is the **Join Microsoft Active Protection Service** setting, for which the default value is **No**. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 - **Software updates settings**: Settings are reset to the default state for the operating system. For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 - **Microsoft Intune Center settings**: Any support contact information that was configured by the policy is deleted from computers.
 - **Windows Firewall settings**: Settings are reset to the default for the computer operating system. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
