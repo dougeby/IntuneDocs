@@ -4,7 +4,7 @@
 title: Troubleshoot Exchange Connector | Microsoft Intune
 description: Troubleshoot issues related to the Intune Exchange connector.
 keywords:
-author: nbigman
+author: nathbarn
 manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article

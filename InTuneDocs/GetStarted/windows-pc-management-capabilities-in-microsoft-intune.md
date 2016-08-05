@@ -6,7 +6,7 @@ description: Learn about the capabilities of Intune when you manage Windows PCs 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ In most scenarios, you will enroll your devices with Microsoft Intune, which pro
 
 -   **Anti-malware protection** - Intune includes Endpoint Protection, which helps protect your PCs from malware.
 
--   **Remote assistance** - Intune lets users contact IT support staff, who can then provide assistance using a remote desktop feature that is included with Intune <!--- (requires TeamViewer software)--->.
+-   **Remote assistance** - Intune lets users contact IT support staff, who can then provide assistance using a remote desktop feature that is included with Intune (requires TeamViewer software).
 
 -   **Software license management** - Track how many software licenses are available, and how many available licenses are being used.
 -   **App deployment** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the client software.
@@ -54,7 +54,7 @@ Intune can manage PCs running the following Windows versions (both x86 and x64):
 
 -   **Windows 8.1** - Pro and Enterprise versions.
 
-- **Windows 10** - Home, Pro, Education, and Enterprise versions.
+- **Windows 10** - Pro, Education, and Enterprise versions.
 
 
 ## Minimum hardware requirements

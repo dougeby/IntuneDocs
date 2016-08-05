@@ -4,9 +4,9 @@
 title: Common Windows PC management tasks | Microsoft Intune
 description: Review the tasks in this topic to learn how to manage your computers that run the Intune PC client software.
 keywords:
-author: robstackmsft
+author: NathBarn
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,7 +42,7 @@ The Microsoft Intune Center lets users:
 
 -   Manage Microsoft Intune Endpoint Protection.
 
-<!--- -   Request remote assistance.--->
+-  Request remote assistance.
 
 The Microsoft Intune Center is installed on all managed computers. You can configure the following settings in an Intune policy and these are displayed to users in the Microsoft Intune Center:
 
@@ -166,11 +166,7 @@ Before you can deploy software to a user, you must link the user to a computer. 
 > [!TIP]
 > If you want to restrict end users ability to link themselves to computers, enable the option **Restrict users' ability to link themselves to computers** in the **Microsoft Intune Agent Settings** policy.
 
-<!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
-
-> [!IMPORTANT]
-> You might not see the options to configure TeamViewer integration for remote assistance in the Intune admin console. This capability is not currently available to all customers, but will be rolling our more widely soon.
-
+## Request and provide remote assistance to Windows PCs that use the Intune client software
 
 Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software to let users of PCs that run the Intune client software get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
 This functionality replaces the existing Windows Remote Assistance functionality in Intune.
@@ -217,4 +213,4 @@ While in a remote assistance session, you can use all available TeamViewer comma
 
 ### Close the remote assistance session
 
-From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
+From the **Actions** menu of the **TeamViewer** window, choose **End Session**.

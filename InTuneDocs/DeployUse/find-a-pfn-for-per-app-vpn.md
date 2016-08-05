@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Find a product family name (PFN) for per-app VPN configuration
+# Find a package family name (PFN) for per-app VPN configuration
 
 There are two ways to find a PFN so that you can configure a per-app VPN.
 
