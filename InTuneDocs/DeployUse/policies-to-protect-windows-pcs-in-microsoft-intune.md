@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Use policies to help protect Windows PCs that run the Intune client software
 
-Microsoft Intune offers three policies that you can use to help ensure the security of Windows PCs when they are managed by the [Intune client software](manage-windows-pcs-with-microsoft-intune.md). 
+Microsoft Intune offers three policies that you can use to help ensure the security of Windows PCs that the [Intune client software](manage-windows-pcs-with-microsoft-intune.md) manages.
 
 
 ## Software updates
@@ -36,7 +36,7 @@ Intune makes it easy for you to [keep Windows PCs that you manage up-to-date](ke
 
 ## Windows Firewall
 
-The Windows Firewall helps to keep hackers, malware, and other threats from Windows PCs. Intune lets you [manage setting and features for the Windows Firewall](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) on all PCs that you manage.
+The Windows Firewall helps to keep hackers, malware, and other threats from Windows PCs. With Intune, you can [manage setting and features for the Windows Firewall](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) on all PCs that you manage.
 
 ## Endpoint Protection
 
@@ -46,4 +46,3 @@ As an IT admin, one of your top priorities is to [keep the Windows PCs that you 
 
 ### See Also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
