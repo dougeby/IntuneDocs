@@ -6,7 +6,7 @@ description: Find out what’s new in this month’s, and past releases of Micro
 keywords:
 author: Lindavr
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,24 +29,18 @@ ms.suite: ems
 Learn what’s new in this release of Microsoft Intune. You can also find out about upcoming changes that you should be planning for, as well as information about past releases.
 
 All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
-
-## August 2016
-## Company Portal updates
-
-### Android
-- **Android Company Portal app**<br/>
-The Intune Company Portal app for Android provides “day 0” support for the forthcoming Android 7.0 operating system for mobile devices.  
-
-- **Google removal of remote passcode reset capability on Android 7.0 devices**<br/>
-On Android 7.0 devices, Intune IT administrators and end users won't be able to remotely reset the device passcode, because Google has removed that capability for Android 7.0 devices. For versions earlier than Android 7.0, IT administrators will still be able to remotely reset a user’s passcode, and end users will still be able to reset their passcodes from the Company Portal website.
+<!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
 
 ## July 2016
 ## App management
+<!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
+
 ### Improve the app provisioning profile update experience
 Apple iOS line of business mobile apps are built with a provisioning profile included and code signed with a certificate. When the app runs on an iOS device, iOS confirms the integrity of the iOS app and enforces policies defined by the provisioning profile.
 
 The enterprise signing certificate you use to sign apps typically lasts for 3 years. However, the provisioning profile expires after 1 year. With this update, Intune gives you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are near expiry while the certificate is still valid. For more information, see [Use iOS mobile provisioning profile policies to keep your line of business apps up to date](/intune/deploy-use/ios-mobile-app-provisioning-profiles).
 <!--- TFS 1280247--->
+<!--- I started putting TFS numbers in the What's Coming topic and found it helpful when updating the What's New. Up to you if you want to continue. --->
 ### Xamarin SDK for Intune apps is available
 The Intune App SDK Xamarin component allows you to enable the Intune mobile app management features in your mobile iOS and Android apps built with Xamarin. You can find the component in the [Xamarin store](https://components.xamarin.com/view/Microsoft.Intune.MAM) or on the [Microsoft Intune Github page](https://github.com/msintuneappsdk).
 <!--- TFS 1061478 --->
@@ -56,9 +50,7 @@ The Intune App SDK Xamarin component allows you to enable the Intune mobile app 
 Intune increased the maximum configurable device enrollment limit from 5 to 15 devices per user.
 <!---TFS 1289896 --->
 
-### TeamViewer Integration for Windows PCs running the Intune client software
-[TeamViewer](https://www.teamviewer.com) integration for Windows PCs that run the Intune client lets you establish remote assistance sessions with Windows PCs to help support end-user helpdesk departments. This includes Windows 7, 8, 8.1 and Windows 10. For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
-<!---TFS 1284856--->
+
 
 ## Company Portal updates
 ### Company Portal website
@@ -118,6 +110,7 @@ We are releasing an update to the Company Portal for Android in September that w
 Keep informed about upcoming developments for Intune with the [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
 
 ### Service deprecation
+<!---@Barry, we started listing service deprecations earlier this summer. --->
 - **Changes in support for the iOS Company Portal app**<br/>
 In July, all users of the Microsoft Intune Company Portal app for iOS will be required to use its latest version. New users will only be able to download the latest version and current users will be required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions won’t be able to use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.  
 
