@@ -26,20 +26,20 @@ ms.suite: ems
 ---
 
 # Manage license agreements for Windows PC software in Microsoft Intune
-Microsoft Intune lets you add and manage license agreement information for software that was purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can also organize this information into logical groups.
+Microsoft Intune lets you add and manage license agreement information for software that was purchased through Microsoft Volume Licensing agreements. You can also do this for Microsoft or non-Microsoft software that was purchased by other means. You can organize this information into logical groups.
 
 > [!IMPORTANT]
-> This feature is provided for convenience only and accuracy is not guaranteed. You should not rely on it to confirm compliance with Microsoft Volume Licensing agreements. Microsoft will not use any data gathered to investigate potential violations of, or compliance with license agreements you may have with us.
-> 
-> Licenses you add to Intune do not affect your license agreements or entitlements to use your software.  For example, deleting a license/agreement pair from Intune, you do not delete or nullify license agreements that exist between you and Microsoft.
+> This feature is provided for convenience only, and accuracy is not guaranteed. You should not rely on it to confirm compliance with Microsoft Volume Licensing agreements. Microsoft will not use any data gathered to investigate potential violations of, or compliance with, license agreements you may have with us.
+>
+> Licenses you add to Intune do not affect your license agreements or entitlements to use your software. For example, if you delete a license/agreement pair from Intune, you do not delete or nullify license agreements that exist between you and Microsoft.
 
 In the **Licenses** workspace of the Intune administration console, you can:
 
--   Add and edit Microsoft Volume Licensing agreements
+-   Add and edit Microsoft Volume Licensing agreements.
 
--   Add and edit other software licensing agreements
+-   Add and edit other software licensing agreements.
 
--   Manage licenses and groups
+-   Manage licenses and groups.
 
 -   Compare the entitlement information that Intune retrieves from the Volume Licensing Service Center (VLSC) to the inventory of Microsoft software that Intune detects on your managed Windows PCs.
 
@@ -51,13 +51,13 @@ Additionally, you can generate reports that show installation and license counts
 ## Add Microsoft Volume Licensing agreements
 Intune Volume Licensing agreements provide license information for software that was purchased through Microsoft Volume Licensing agreements. You can add Microsoft Volume Licensing agreements to Intune by providing matched pairs of agreement numbers. The agreement or authorization numbers must be matched to the correct license or enrollment numbers. Agreement number pairs are obtained when you purchase your license agreements from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
-1.  In the [Microsoft Intune administrator console](https://account.manage.microsoft.com/admin/default.aspx), click **Licenses**.
+1.  In the [Microsoft Intune administrator console](https://account.manage.microsoft.com/admin/default.aspx), choose **Licenses**.
 
 2.  On the **Add Agreements** page, under **Choose Agreement Type**, select **Volume Licensing agreement**.
 
-3.  In the **Add Agreement Details** section, choose one of:
+3.  In the **Add Agreement Details** section, choose whether you want to upload a file, or manually add the details.
 
-    -   **Upload a CSV file that contains agreement details** - Click Browse and select the CSV file you want to upload.
+    -   **Upload a CSV file that contains agreement details**. Choose **Browse** and select the CSV file you want to upload.
 
         -   The file can contain either two or three columns; two for agreement pairs alone, or three if you want to add a friendly name for each agreement pair.
 
@@ -69,17 +69,17 @@ Intune Volume Licensing agreements provide license information for software that
 
         -   The file name must be no more than 128 characters in length.
 
-        -   The file must contain at least one agreement pair and cannot contain more than 5,000 agreement pairs.
+        -   The file must contain at least one agreement pair, and cannot contain more than 5,000 agreement pairs.
 
         **Format for the file**
 
         You can create this file by adding your agreement pairs to a plain text document in one of the following formats, depending on the organization type that you have registered with the VLSC. Specify one agreement number pair per line.
 
-        -   **Open Value Customers:** *Agreement number*, *repeat agreement number*, *agreement name*
+        -   **Open Value customers:** *Agreement number*, *repeat agreement number*, *agreement name*
 
-        -   **Open Customers:** *Authorization number*, *related license number*, *agreement name*
+        -   **Open customers:** *Authorization number*, *related license number*, *agreement name*
 
-        -   **Select and Enterprise Customers:** *Agreement number*, *related enrollment number*, *agreement name*
+        -   **Select and Enterprise customers:** *Agreement number*, *related enrollment number*, *agreement name*
 
         The **Add Agreements** form prompts you to browse for this file when you add a new agreement.
 
@@ -87,7 +87,7 @@ Intune Volume Licensing agreements provide license information for software that
 
         `01-07001, 01-07001, Office agreements`
 
-    -   **Manually add agreement details** - Provide the following information, and then type the agreement number pairs in the **Authorization/Agreement number** and **License/Enrollment/Customer number** boxes. After you type both numbers, click the **Add pair** icon to save your numbers, and then optionally add a new pair.
+    -   **Manually add agreement details**. Provide the following information, and then type the agreement number pairs in the **Authorization/Agreement number** and **License/Enrollment/Customer number** boxes. After you type both numbers, choose the **Add pair** icon to save your numbers, and then optionally add a new pair.
 
         -   **Agreement name** - Specify a unique name for the agreement.
 
@@ -98,23 +98,23 @@ Intune Volume Licensing agreements provide license information for software that
         -   **License/Enrollment/Customer number** - Enter the license/enrollment/customer number of the license pair.
 
         > [!NOTE]
-        > If you add several agreement number pairs, Intune creates one agreement with the name that you specify, and all pairs that you added will be a part of this agreement.
+        > If you add several agreement number pairs, Intune creates one agreement with the name that you specify, and all pairs that you added are a part of this agreement.
 
-    You can click **+** to add another agreement number pair, or **-** to remove an agreement number pair you have already entered.
+    You can choose **+** to add another agreement number pair, or **-** to remove an agreement number pair you have already entered.
 
 4.  In the **Select License Group** area, do one of the following:
 
-    -   **Add the agreements to the Unassigned Agreements group** Select this if you do not want to add the new agreements to a license group.
+    -   **Add the agreements to the Unassigned Agreements group**. Select this if you do not want to add the new agreements to a license group.
 
-    -   **Add the agreements to a new license group** - Provide a name for the new license group.
+    -   **Add the agreements to a new license group**. Provide a name for the new license group.
 
-    -   **Add the agreements to an existing license group** - In the **Group name** list, select the license group to which you want to add the agreements.
+    -   **Add the agreements to an existing license group**. In the **Group name** list, select the license group to which you want to add the agreements.
 
-5.  Click **OK**.
+5.  Choose **OK**.
 
-The **All Agreements** view is displayed, and Intune connects to the Microsoft Volume Licensing Service Center to validate the agreement number pairs that you provided.
+The **All Agreements** view is displayed, and Intune connects to the Microsoft VLSC to validate the agreement number pairs that you provided.
 
-To update the volume license information after you have added license agreements in Intune, in the **Licenses Overview** page, click **Refresh Now**. This action retrieves the current license information from the [Microsoft Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
+To update the volume license information after you have added license agreements in Intune, in the **Licenses Overview** page, choose **Refresh Now**. This action retrieves the current license information from the [Microsoft Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
 
 > [!IMPORTANT]
 > Until you refresh the volume licensing information, you may see different information in the agreements list and the entitlement information on the **Agreements Overview** page.
@@ -129,16 +129,16 @@ After you refresh the volume license information, you can compare the license in
 > The **Product Title** displayed for all Microsoft Volume License agreements is **Not available**.
 
 ## Add and edit other software licensing agreements
-You can also add other types of license agreements to Intune in addition to Microsoft Volume Licensing agreements. These agreements can include non-Microsoft software or Microsoft software that was purchased through a retailer.
+You can also add other types of license agreements to Intune in addition to Microsoft Volume Licensing agreements. These agreements can include non-Microsoft software, or Microsoft software that was purchased through a retailer.
 
 > [!IMPORTANT]
 > You must have at least one Windows PC enrolled in Intune before you can add an agreement.  In addition, at least one enrolled computer must have uploaded a licensable software package that you want to use to add a license agreement.
 
 ### To add other software agreements
 
-1.  In the [Microsoft Intune administrator console](https://account.manage.microsoft.com/admin/default.aspx), click **Licenses**.
+1.  In the [Microsoft Intune administrator console](https://account.manage.microsoft.com/admin/default.aspx), choose **Licenses**.
 
-2.  Click **Add Agreements** in the **Other Software Licensing Agreements** section.
+2.  Choose **Add Agreements** in the **Other Software Licensing Agreements** section.
 
 3.  Select **Other software licensing agreement** in the **Choose Agreement Type** section of the **Add Agreements** page.
 
@@ -149,7 +149,7 @@ You can also add other types of license agreements to Intune in addition to Micr
     -   **Publisher** (required). When you start to type a publisher name, the service retrieves all publisher names that contain the letters that you type. For example, if you type “soft,” the service retrieves all publisher names that contain “soft” as part of the name, such as “Microsoft” and “Microsoft Research.” The publisher names are retrieved from the Software Asset Catalog. You must select the publisher before you can enter the product title.
 
         > [!IMPORTANT]
-        > The company that you want to add might not appear in this list. You can only add software agreements for companies that are already present in the software asset catalog. However, Microsoft continuously works to add the most popular software titles. If you would like to submit a request to have a company added to this list you can do so at the [Intune Uservoice site](https://microsoftintune.uservoice.com/).
+        > The company that you want to add might not appear in this list. You can only add software agreements for companies that are already present in the software asset catalog. However, Microsoft continuously works to add the most popular software titles. If you would like to submit a request to have a company added to this list, you can do so at the [Intune Uservoice site](https://microsoftintune.uservoice.com/).
 
     -   **Product title** (required). When you start to type a product title, the service retrieves all product titles that contain the letters that you type. You must specify a **Publisher** before you can specify a **Product title**.
 
@@ -169,20 +169,17 @@ You can also add other types of license agreements to Intune in addition to Micr
 
     -   Select **Add the agreements to an existing license group** to add the new agreements to an existing license group. In the **Group name** list, select the license group to which you want to add the agreements.
 
-6.  Click **OK**.
+6.  Choose **OK**.
 
 The **All Agreements** list view is displayed.
 
 ## Manage license agreements
-Software licensing agreements can be added to license groups. You can use license groups to organize your license agreements in units that are logical for your organization. Additionally, you can delete license agreements which you previously created.
+Software licensing agreements can be added to license groups. You can use license groups to organize your license agreements in units that are logical for your organization. Additionally, you can delete license agreements you previously created.
 
 |||
 |-|-|
 |Task|Details|
-|Create a license group|On the **Overview** page of the **Licenses** workspace, click **Create License Group** from the **Tasks** menu. **Note:** You can create a total maximum of 500 license groups.|
-|Rename a license group|In the **Licenses** workspace, choose a license group, and then click **Edit License Group** from the **Tasks** Menu.|
-|Delete a license group|In the **Licenses** workspace, choose a license group, and then click **Delete License Group** from the **Tasks** Menu. **Tip:** Any licenses that were in the deleted group are moved to the **Unassigned agreements** license group.|
-|Delete a license agreement|In the **Licenses** workspace, choose an agreement, and then click **Delete**. **Tip:** After you delete Volume Licensing agreements, to update the license information, click **Refresh Now** on the **Licenses Overview** page or on the **General** tab for a specific license group.|
-
-
-
+|Create a license group|On the **Overview** page of the **Licenses** workspace, choose **Create License Group** from the **Tasks** menu. **Note:** You can create a maximum total of 500 license groups.|
+|Rename a license group|In the **Licenses** workspace, choose a license group, and then choose **Edit License Group** from the **Tasks** Menu.|
+|Delete a license group|In the **Licenses** workspace, choose a license group, and then choose **Delete License Group** from the **Tasks** Menu. **Tip:** Any licenses that were in the deleted group are moved to the **Unassigned agreements** license group.|
+|Delete a license agreement|In the **Licenses** workspace, choose an agreement, and then choose **Delete**. **Tip:** After you delete Volume Licensing agreements, to update the license information, choose **Refresh Now** on the **Licenses Overview** page or on the **General** tab for a specific license group.|
