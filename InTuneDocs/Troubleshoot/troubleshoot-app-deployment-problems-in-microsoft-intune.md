@@ -4,7 +4,7 @@
 title: Troubleshoot app deployment problems | Microsoft Intune
 description: This topic helps you solve app deployment problems with Microsoft Intune.
 keywords:
-author: Nbigman
+author: robstack
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
