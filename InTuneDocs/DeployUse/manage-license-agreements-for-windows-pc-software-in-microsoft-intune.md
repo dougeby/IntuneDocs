@@ -6,7 +6,7 @@ description: Intune lets you manage license agreements for software purchased th
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
