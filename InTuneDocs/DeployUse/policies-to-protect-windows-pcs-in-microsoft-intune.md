@@ -36,7 +36,7 @@ Intune makes it easy for you to [keep Windows PCs that you manage up-to-date](ke
 
 ## Windows Firewall
 
-The Windows Firewall helps to keep hackers, malware, and other threats from Windows PCs. With Intune, you can [manage setting and features for the Windows Firewall](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) on all PCs that you manage.
+The Windows Firewall helps to keep hackers, malware, and other threats from Windows PCs. With Intune, you can [manage settings and features for the Windows Firewall](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) on all PCs that you manage.
 
 ## Endpoint Protection
 
