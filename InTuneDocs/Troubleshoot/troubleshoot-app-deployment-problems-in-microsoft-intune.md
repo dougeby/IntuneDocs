@@ -26,22 +26,17 @@ ms.suite: ems
 ---
 
 # Troubleshoot app deployment problems in Microsoft Intune
-This topic helps you solve app deployment problems with Microsoft Intune.
+If you are having problems deploying and managing apps with Intune, start here. This topic contains some common problems you might encounter together with solutions.
 
-If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
+## Common app deployment problems
 
+### Users can’t log in to the Intune Company Portal
 
-## Typical app deployment problems
+1.  Ensure the users account exists, and is enabled in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-### If you can’t log in to the Microsoft Intune company portal
+3.  In the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), make sure the user is entering the right user name ato log in to Intune and that it is in the format: **joe@domain.com**. If the user seems to be entering the wrong password, ask them to reset it.
 
-1.  Check to see if your account exists in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) or if it is disabled.
-
-2.  Make sure that you are provisioned on this account in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  In the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), make sure that you are using the right user name and password to log in to Intune and that it is in the format: **joe@domain.com**.
-
-### If the Contact IT information is missing in the company portal
+### Contact IT information is missing in the Company Portal
 
 1.  In the Intune admin console, choose **Admin** &gt; **Company Portal**.
 

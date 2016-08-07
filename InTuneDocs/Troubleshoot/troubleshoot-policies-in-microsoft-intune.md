@@ -27,10 +27,7 @@ ms.suite: ems
 
 # Troubleshoot policies in Microsoft Intune
 
-Listed here are some issues that may arise from your Microsoft Intune policy configuration, and troubleshooting recommendations for those issues.
-
-If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
-
+If you are having problems deploying and managing policies with Intune, start here. This topic contains some common problems you might encounter together with solutions.
 
 ## Is policy applied to device?
 **Issue:** It's not clear if a particular policy is being applied to a device, or a device behaves contrary to a policy.
