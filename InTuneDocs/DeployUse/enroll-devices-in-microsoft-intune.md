@@ -34,6 +34,31 @@ Intune can manage the following device platforms:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
+## Set mobile device management authority
+The MDM authority defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
+
+>[!IMPORTANT]
+> Consider carefully whether you want to manage mobile devices by using Intune only (online service) or System Center Configuration Manager with Intune (on-premises software solution in conjunction with the online service). After you set the mobile device management authority, this cannot be changed.
+
+1.  In the [Microsoft Intune administration console](http://manage.microsoft.com), choose **Admin** &gt; **Mobile Device Management**.
+
+2.  In the **Tasks** list, click **Set Mobile Device Management Authority**. The **Set MDM Authority** dialog box opens.
+
+    ![Set MDM authority dialog box](../media/intune-mdm-authority.png)
+
+3.  Intune requests confirmation that you want Intune as your MDM authority. Select the check box, and then choose **Yes** to use Microsoft Intune to manage mobile devices.
+
+## Configure the Intune Company Portal
+
+The Intune Company Portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
+
+> [!TIP]
+> When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.
+
+Customizing the Company Portal helps to provide a familiar and helpful experience for your end users. To do this, just sign in to the [Microsoft Intune administration console](https://manage.microsoft.com) as a tenant or service administrator, choose **Admin** &gt; **Company Portal**, and configure the Company Portal settings.
+
+![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
+
 ## Overview of device enrollment methods
 
 The following table shows enrollment methods for corporate-owned device enrollment methods with their benefits.
