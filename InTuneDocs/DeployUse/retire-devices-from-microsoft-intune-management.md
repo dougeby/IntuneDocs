@@ -36,6 +36,22 @@ Both a selective wipe and a full wipe remove the device from Intune management b
 
 For devices that need to be repurposed, you can also use a [full wipe](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe), which resets the device to factory default settings.
 
+## To delete devices in the Azure Active Directory portal
+
+1.  Login with your organization credentials to [http://aka.ms/accessaad](http://aka.ms/accessaad) or [https://portal.office.com](https://portal.office.com) and then choose **Admin centers** &gt; **Azure AD**.
+
+2.  Create an Azure Subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).
+
+4.  Select **Active Directory** and then select your organization.
+
+5.  Select the **Users** tab.
+
+6.  Select the user whose devices you want to delete.
+
+7.  Choose **Devices**.
+
+8.  Select the devices as appropriate and choose **Delete device**. The device will be deleted the next time it syncs with Active Directory. This typically happens within 4 hours. After syncing, the device is removed from management. This removes one device from the device limit for this user.
+
 ## Retire managed computers
 Computers managed with Intune client software can be removed from management from the Intune admin console. This also uninstalls the client software and deletes Intune policy from the computer. See information about [retiring computers managed with the Intune client software](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
 
