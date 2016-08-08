@@ -44,5 +44,5 @@ As an IT admin, one of your top priorities is to [keep the Windows PCs that you 
 
 
 
-### See Also
+### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
