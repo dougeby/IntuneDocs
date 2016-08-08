@@ -26,23 +26,23 @@ ms.suite: ems
 ---
 
 # Resolve Group Policy Objects (GPO) and Microsoft Intune policy conflicts
-Intune uses policies that help you manage settings on Windows PCs you manage. For example, you could use a policy to control settings for the Windows Firewall on PCs. Many of the Intune settings are similar to settings you might configure with Windows Group Policy. However, it is possible that, at times, the two methods might conflict with one another.
+Intune uses policies that help you manage settings on Windows PCs. For example, you can use a policy to control settings for the Windows Firewall on PCs. Many Intune settings are similar to settings that you might configure with Windows Group Policy. However, it is possible that, at times, the two methods might conflict with each another.
 
-When conflicts happen, domain-level Group Policy takes precedence over Intune policy, unless the PC can’t log on to the domain. In this case, Intune policy is applied to the client PC.
+When conflicts happen, domain-level Group Policy takes precedence over Intune policy, unless the PC can’t sign in to the domain. In this case, Intune policy is applied to the client PC.
 
 ## What to do if you are using Group Policy
-Check that any policies you apply are not being managed by Group Policy. To help prevent conflicts, you could employ one or more of the following methods:
+Make sure that policies that you apply are not being managed by Group Policy. To help prevent conflicts, you can use one or more of the following methods:
 
 -   Move your PCs to an Active Directory organizational unit (OU) that does not have Group Policy settings applied before you install the Intune client. You can also block Group Policy inheritance on OUs that contain PCs enrolled in Intune to which you do not want to apply Group Policy settings.
 
--   Use a security group filter to restrict GPOs only to PCs that are not managed by Intune. 
+-   Use a security group filter to restrict GPOs only to PCs that are not managed by Intune.
 
 -   Disable or remove the Group Policy Objects that conflict with the Intune policies.
 
 For more information about Active Directory and Windows Group Policy, see your Windows Server Documentation.
 
 ## How to filter existing GPOs to avoid conflicts with Intune policy
-If you have identified GPOs with settings that conflict with Intune policies, you can use security group filters to restrict those GPOs only to PCs that are not managed by Intune.
+If you have identified GPOs whose settings conflict with Intune policies, you can use security group filters to restrict those GPOs only to PCs that are not managed by Intune.
 
 <!--- ### Use WMI filters
 WMI filters selectively apply GPOs to computers that satisfy the conditions of a query. To apply a WMI filter, deploy a WMI class instance to all PCs in the enterprise before you enroll any PCs in the Intune service.
@@ -108,13 +108,13 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
-Group Policy lets you apply GPOs to only those security groups specified in the **Security Filtering** area of the Group Policy Management console for a selected GPO. By default, GPOs apply to **Authenticated Users**.
+You can apply GPOs to only those security groups that are specified in the **Security Filtering** area of the Group Policy Management console for a selected GPO. By default, GPOs apply to *Authenticated Users*.
 
--   In the **Active Directory Users and Computers** snap-in, create a new security group that contains computers and user accounts that you do not want to manage by using Intune. For example, you could name the group **Not In Microsoft Intune**.
+-   In the **Active Directory Users and Computers** snap-in, create a new security group that contains computers and user accounts that you do not want Intune to manage. For example, you might name the group *Not In Microsoft Intune*.
 
 -   In the Group Policy Management console, on the **Delegation** tab for the selected GPO, right-click the new security group to delegate appropriate **Read** and **Apply Group Policy** permissions to both users and computers in the security group. (**Apply Group Policy** permissions are available on the **Advanced** dialog box.)
 
--   Then apply the new security group filter to a selected GPO, and remove the **Authenticated Users** default filter.
+-   Then, apply the new security group filter to a selected GPO, and remove the **Authenticated Users** default filter.
 
 The new security group must be maintained as enrollment in the Intune service changes.
 

@@ -35,7 +35,7 @@ The following changes are under development for Intune. All of these features wi
 
 ## App management
 ### Hidden and shown apps for iOS 9.3
-For devices running iOS 9.3 or later, you will be able to use the hidden and shown apps list in the iOS general configuration policy to:
+For supervised devices running iOS 9.3 or later, you will be able to use the hidden and shown apps list in the iOS general configuration policy to:
 - Specify a list of apps that will be hidden from users. Users cannot view, or launch these apps.
 - Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
 
@@ -119,7 +119,7 @@ With the release of the new RMS sharing app, we will remove the following Intune
 - Intune PDF Viewer
 - Intune Image Viewer for Android from Google Play
 
-Instead of using the Intune Viewer apps, we recommend using the new Rights Management app (RMS sharing) for Android, which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. Learn more about the RMS sharing app (with link to documentation).
+Instead of using the Intune Viewer apps, we recommend using the new Rights Management app (RMS sharing) for Android, which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. Learn more about the [RMS sharing app](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app).
 <!--- goes in 1608 What's New--->
 
 

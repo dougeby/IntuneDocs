@@ -26,18 +26,48 @@ ms.suite: ems
 ---
 
 # Help protect your data with full or selective wipe using Microsoft Intune
-As with devices, at some point, you want or need to [retire apps](retire-apps-using-microsoft-intune.md) you have deployed to PCs and mobile devices because they are no longer needed. You might also want to remove company data from the device. To do this, Intune provides selective wipe and full wipe capabilities. Because mobile devices can store sensitive corporate data and provide access to many corporate resources, you can issue a remote device wipe command from the Intune to wipe a lost or stolen device. Also, users can issue a remote device wipe command from the Intune on privately owned devices enrolled in Intune.
+Whether because a device is no longer needed, is being repurposed, or has gone missing, you can wipe apps and data from devices managed with Intune. To do this, Intune provides selective wipe and full wipe capabilities. Also, users can issue a remote device wipe command from the Intune Company Portal on privately owned devices enrolled in Intune.
 
   > [!NOTE]
-  > This topic is only about wiping devices managed by Intune. You can also use [the Azure preview portal](https://portal.azure.com) to [wipe company data from apps](wipe-managed-company-app-data-with-microsoft-intune.md).
+  > This topic is only about wiping devices managed by Intune mobile device management. You can also use [the Azure preview portal](https://portal.azure.com) to [wipe company data from apps](wipe-managed-company-app-data-with-microsoft-intune.md). You can also [retire computers managed with the Intune client software](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
 
 ## Full wipe
 
-
 **Full wipe** restores a device to its factory default settings, removing all company and user data and settings. The device is removed from Intune. Full wipe is useful for resetting a device before giving it to a new user or instances where the device has been lost or stolen.  **Be careful about selecting full wipe. Data on the device cannot be recovered**.
+
 
 > [!Warning]
 > Windows 10 RTM devices (i.e. devices earlier than the Windows 10 version 1511) with less than 4 GB of RAM might become inaccessible if wiped. To access a Windows 10 device that has become unresponsive, you can boot the device from a USB drive or similar workaround.
+
+### Remotely wipe a device from the Intune administrator console
+
+1.  Select devices to be wiped. You can find them either by user or by device.
+
+    -   **By user:**
+
+        1.  In the [Intune administrator console](https://manage.microsoft.com/), choose **Groups** &gt; **All Users**.
+
+        2.  Choose the name of the user whose mobile device you want to wipe. Choose **View Properties**.
+
+        3.  On the user's **Properties**  page, choose **Devices**, and then choose the name of the mobile device you want to wipe. Use Ctrl+click to multi-select devices.
+
+    -   **By device:**
+
+        1.  In the [Intune administrator console](https://manage.microsoft.com/), choose **Groups** &gt; **All Mobile Devices**.
+
+      ![Starting a retire or wipe operation](../media/dev-sa-wipe.png)
+
+        2.  Choose **Devices**, and then choose the name of the mobile device you want to wipe. Use Ctrl+click to multi-select devices.
+
+2.  Choose **Retire/Wipe**.
+
+3.  A message appears, prompting you to confirm whether you want to retire the device.
+
+    -   To perform a **Selective wipe** which only removes company apps and data, choose **Yes**.
+
+    -   To perform a **Full wipe** that erases all apps and data and returns the device to factory default settings, select **Wipe the device before retiring**. This action applies to all platforms except Windows 8.1. **You cannot recover data removed by a full wipe**.
+
+Given the device is on and connected, it takes less than 15 minutes for a wipe command to propagate across all device types.
 
 ## Selective wipe
 
@@ -83,36 +113,6 @@ As with devices, at some point, you want or need to [retire apps](retire-apps-us
 |Certificate profile settings|Certificates removed and revoked.|Certificates removed and revoked.|Not supported|Certificates removed and revoked.|
 |Email|Removes email that is EFS enabled which includes the Mail app for Windows email and attachments.|Not supported|Email profiles that are provisioned through Intune are removed and cached email on the device is deleted.|Removes email that is EFS enabled which includes the Mail app for Windows email and attachments. Removes mail accounts that were provisioned by Intune.|
 |Azure Active Directory (AAD) Unjoin|No|No|AAD Record removed|Not applicable. Windows 10 does not support selective wipe for Azure Active Directory joined devices|
-
-### Remotely wipe a device from the Intune administrator console
-
-1.  Select devices to be wiped. You can find them either by user or by device.
-
-    -   **By user:**
-
-        1.  In the [Intune administrator console](https://manage.microsoft.com/), choose **Groups** &gt; **All Users**.
-
-        2.  Choose the name of the user whose mobile device you want to wipe. Choose **View Properties**.
-
-        3.  On the user's **Properties**  page, choose **Devices**, and then choose the name of the mobile device you want to wipe. Use Ctrl+click to multi-select devices.
-
-    -   **By device:**
-
-        1.  In the [Intune administrator console](https://manage.microsoft.com/), choose **Groups** &gt; **All Mobile Devices**.
-
-      ![Starting a retire or wipe operation](../media/dev-sa-wipe.png)
-
-        2.  Choose **Devices**, and then choose the name of the mobile device you want to wipe. Use Ctrl+click to multi-select devices.
-
-2.  Choose **Retire/Wipe**.
-
-3.  A message appears, prompting you to confirm whether you want to retire the device.
-
-    -   To perform a **Selective wipe** which only removes company apps and data, choose **Yes**.
-
-    -   To perform a **Full wipe** that erases all apps and data and returns the device to factory default settings, select **Wipe the device before retiring**. This action applies to all platforms except Windows 8.1. **You cannot recover data removed by a full wipe**.
-
-It takes less than 15 minutes for a wipe to propagate across all device types.
 
 ## Wipe encryption file system (EFS)-enabled content
 Selective wipe of EFS-encrypted content is supported by Windows 8.1 and Windows RT 8.1. The following apply to a selective wipe of EFS-enabled content:
