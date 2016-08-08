@@ -125,7 +125,7 @@ If a computer cannot connect to Intune, a message is displayed in the **Dashboar
 
 When you retire a computer:
 
--   It is removed from the Intune inventory, and the license associated with the computer is made available for re-use.
+-   It is removed from the Intune management and inventory, and the license associated with the computer is made available for re-use. Retire/Wipe removes the Intune software client but does not remove apps or data from the computer.
 
 -   Its status no longer displays in the Intune console.
 
