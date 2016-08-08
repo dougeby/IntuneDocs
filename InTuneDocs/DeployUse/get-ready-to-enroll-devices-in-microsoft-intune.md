@@ -61,7 +61,7 @@ The company name is displayed as the Company Portal title. The contact informati
 
 |Field name|Max length|More information|
     |----------|------------------------|----------------|
-    |Company name|40|This name is displayed as the title of the Company Portal.|
+    |Company name|40|This name is displayed as the title of the Company Portal. **Note**: Alpha-numeric characters only. This field doesn't support special characters.|
     |IT department contact name|40|This name is displayed on the **Contact IT** page.|
     |IT department phone number|20|This contact number is displayed on the **Contact IT** page.|
     |IT department email address|40|This contact address is displayed on the **Contact IT** page. You must enter a valid email address in the format **alias@domainname.com**.|
