@@ -34,13 +34,13 @@ Microsoft Intune helps you manage apps that you purchased through this program b
 > Currently, Intune assigns iOS Volume Purchase Program for Business (VPP) app licenses to users and not devices. Because of this, users must enter their Apple ID password to install the app.
 
 ## Manage volume-purchased apps for iOS devices
-You purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). This involves setting up an Apple VPP account from the Apple website and upload the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
+You purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
 
 ## Before you start
 Before you start, you'll need to get a VPP token from Apple and upload this to your Intune account. Additionally, you should understand the following:
 
 * Each organization can have only one VPP account and token.
-* After you associate an Apple VPP account to Intune, you cannot subsequently associate a different account. For this reason, it's very important that more than one person has the details of the account that you use.
+* After you associate an Apple VPP account to Intune, you cannot associate a different account later. For this reason, it's very important that more than one person has the details of the account that you use.
 * If you previously used a VPP token with a different product, you must generate a new one to use with Intune.
 * Each token is valid for one year.
 * By default, Intune syncs with the Apple VPP service twice a day. You can start a manual sync at any time.
