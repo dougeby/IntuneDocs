@@ -38,7 +38,7 @@ Use the policy settings listed in this topic to help you configure built-in and 
 Use the Microsoft Intune **general configuration policy** for Windows 10 to configure general settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices. 
 
 
-### Password
+## General - Password
 
 |Setting name|Details|
 |----------------|----------------------|
@@ -53,13 +53,13 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Remember password history** - **Prevent reuse of previous passwords**|Specifies the number off previously used passwords remembered by the device.|
 |**Require a password when the device returns from an idle state**|If enabled, the user must enter a password to unlock the device from an idle state.<br>(Windows 10 Mobile only)|
 
-### Encryption
+## General - Encryption
 
 |Setting name|Details|
 |----------------|----------------------|
 |**Require encryption on mobile device**|Enables encryption on targeted devices.<br>(Windows 10 Mobile only)|
 
-### System
+## General - System
 
 |Setting name|Details|
 |----------------|----------------------|
@@ -69,7 +69,7 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Allow diagnostic and usage data to be sent to Microsoft**|Determines the amount of diagnostic and usage data that is sent to Microsoft from devices.<br><br>**No** - No data is sent to Microsoft<br>**Basic** - The device sends only limited information to Microsoft<br>**Enhanced** - Sends enhanced diagnostic data to Microsoft<br>**Full (recommended)** - Sends the same data as **Enhanced**, plus additional data about the device state|
 
 
-### Account and synchronization
+## General - Account and synchronization
 
 |Setting name|Details|
 |----------------|----------------------|---------------------|
@@ -77,7 +77,7 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Allow adding non-Microsoft accounts manually**|Lets the user add email accounts to the device that are not associated with a Microsoft account.|
 |**Allow settings synchronization for Microsoft accounts**|Allow device and app settings associated with a Microsoft account to synchronize between devices.|
 
-### Microsoft Edge
+## General - Microsoft Edge
 
 |Setting name|Details|
 |----------------|----------------------|
@@ -93,7 +93,7 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Allow Password Manager**|Enable or disable the Edge Password Manager feature.|
 |**Enterprise Mode site list location**|Specifies where to find the list of web sites that will open in Enterprise mode. Users cannot edit this list.<br>(Windows 10 desktop only)|
 
-### Apps
+## General - Apps
 
 |Setting name|Details|
 |----------------|----------------------|---------------------|
@@ -101,7 +101,7 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 
 
 
-### Cellular
+## General - Cellular
 
 |Setting name|Details|
 |----------------|----------------------|---------------------|
@@ -109,7 +109,7 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Allow VPN over cellular**|Controls whether the device can access VPN connections when connected to a cellular network.|
 |**Allow VPN roaming over cellular**|Controls whether the device can access VPN connections when roaming on a cellular network.|
 
-### Hardware
+## General - Hardware
 
 |Setting name|Details|
 |----------------|----------------------|
@@ -128,7 +128,7 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Allow USB connection**|Controls whether devices can access external storage devices through a USB connection.|
 |**Allow AntiTheft mode**|Configure whether Windows Antitheft mode is enabled.|
 
-### Features
+## General - Features
 
 |Setting name|Details|
 |----------------|----------------------|---------------------|
@@ -137,7 +137,7 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Allow Cortana**|Enable or disable the Cortana voice assistant.|
 |**Allow action center notifications**|Enable or disable action center notifications on the device lock screen.<br>(Windows 10 Mobile only)|
 
-### Defender
+## General - Windows Defender
 
 All settings are for Windows 10 desktop only.
 
@@ -168,7 +168,7 @@ All settings are for Windows 10 desktop only.
 |**Processes to exclude when running a scan or using real-time protection**|Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes will not be included in any real-time, or scheduled scans.| 
 
 
-### Updates settings
+## General - Updates
 
 |Setting name|Details|
 |----------------|---------------|
@@ -182,14 +182,14 @@ This capability is intended to allow you to deploy Windows 10 settings that are 
 
 
 
-### Custom policy general settings
+## Custom policy - General
 
 |Setting name|Details|
     |----------------|--------------------|
     |**Name**|Enter a unique name for the policy to help you identify it in the Intune console.|
     |**Description**|Provide a description that gives an overview of the policy and other relevant information that helps you to locate it.|
 
-### Custom policy OMA-URI settings
+## Custom policy - OMA-URI settings
 
 |Setting name|Details|
     |--------|--------------------|
@@ -200,12 +200,12 @@ This capability is intended to allow you to deploy Windows 10 settings that are 
     |**Value**|Specify the value to associate with the OMA-URI you specified previously.|
 
 
-## Custom URI settings for Windows 10 devices
+## Windows 10 URI settings
 This topic lists the settings that you can configure for Windows 10 and Windows 10 Mobile devices in a Microsoft Intune **Windows 10 Custom Policy**.
 
 All devices must be enrolled with Intune if you want to use the Windows Custom URI Policy.
 
-### Policy URI settings
+## Policy URI settings
 
 |Policy name|Details|
 |---------------|------------|-----------|
@@ -278,7 +278,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 |**Update/DeferUpgradePeriod**<br>(desktop and mobile)|**Description:** Policy to defer feature upgrades for up to 8 months<br /><br />**URI full path:** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0**: Apply updates immediately (default)<br>**1**-**8**: number of months to defer feature upgrades.<br /><br />For more information, see:<br>[Introduction to Windows 10 servicing](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan for Windows 10 deployment](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>(desktop and mobile)|**Description:** Allows a CBB machine to stop receiving updates and upgrades for 5 weeks. This should be used in case there is an issue with an update.<br /><br />**URI full path:** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Data type:** Integer<br /><br />**Allowed values:**<br>**0**: Apply updates immediately (default)<br>**1**: Pause updates and upgrades (expires after 5 weeks)|
 
-### Windows Defender URI settings
+## Windows Defender URI settings
 
 |Policy name|Details|
 |---------------|-----------|
@@ -308,7 +308,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 |**ExcludedPaths**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Data type:** String<br /><br />**Allowed values:**<br /><br />*&lt;list of paths separated by semi-colon&gt;*<br /><br />Example: **c:\test;c:\test1.exe**<br /><br />**Default value:** No paths are excluded|
 |**ExcludedProcesses**<br>(desktop only)|**URI full path:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Data type:** String<br /><br />**Allowed values:**<br>*&lt;list of paths separated by semi-colon&gt;*<br>Example: **c:\test.exe;c:\test1.exe**<br>**Default value:** No processes are excluded|
 
-### Edge browser URI settings
+## Edge browser URI settings
 
 |Policy name|Details|
 |---------------|------------|-----------|
