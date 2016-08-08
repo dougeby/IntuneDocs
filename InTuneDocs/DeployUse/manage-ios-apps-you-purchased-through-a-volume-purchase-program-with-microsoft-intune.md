@@ -6,7 +6,7 @@ description: Use Intune to manage apps that you volume purchased from Apple by i
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -82,7 +82,7 @@ When a user with an eligible device first tries to install a VPP app, they will 
 > [!TIP]
 > Look at the **VPP Terms Status** column to see the acceptance status for each user to whom the app was deployed.
 
-If there are no other licenses available, the deployment will fail.
+If there are no more licenses available, the deployment will fail.
 
 ## To monitor Apple VPP apps
 You can monitor which VPP apps have been deployed, and how many licenses are used, from the **Apps** workspace in the **Managed Software** &gt; **Volume-Purchased Apps** node.
