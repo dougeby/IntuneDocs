@@ -43,7 +43,7 @@ After you've added the app to Intune, you can then [deploy it to devices that yo
 
 As part of the app lifecycle, new versions of apps are regularly released. Intune provides tools to easily [update apps](update-apps-using-microsoft-intune.md) that you have deployed to a newer version. Additionally, you can configure extra functionality for some apps, for example:
 - [iOS app configuration policies](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md) supply settings for compatible iOS apps that are used when the app is run. For example, an app might require specific branding settings or the name of a server to connect to.
-- [Managed browser policies](manage-internet-access-using-managed-browser-policies.md) help you to configure settings for the Intune managed browser, which replaces the default device browser and enables you to restrict the websites that your users can visit.
+- [Managed browser policies](manage-internet-access-using-managed-browser-policies.md) help you to configure settings for the Intune managed browser, which replaces the default device browser and lets you restrict the websites that your users can visit.
 
 ## Protect
 
