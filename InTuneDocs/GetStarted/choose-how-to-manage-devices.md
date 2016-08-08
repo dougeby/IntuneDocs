@@ -48,7 +48,7 @@ For mobile device operating systems including iOS, Android and Windows Phone, yo
 |**Description**|Personal device enrolled using Microsoft Intune|Corporate-owned device for single user|Corporate-owned device managed using a manager account shared by many users|Corporate-owned user-less device used by many users.|
 |**Device’s user**|Owner|Assigned user|No user-specific account|No specific user|
 |**Who enrolls?**|Owner|Administrator|Device Manager|Anyone|
-|**Who un-enrolls?**|Owner or administrator|Administrator|Administrator|Administrator|
+|**Who un-enrolls?**|Owner or administrator|Platform dependent|Platform dependent|Platform dependent|
 |**Who can reset?**|Owner or administrator|Administrator|Administrator|Administrator|
 
 <div class="alert alert-tip">
