@@ -31,20 +31,20 @@ The iOS app store lets you purchase multiple licenses for an app that you want t
 Microsoft Intune helps you manage apps that you purchased through this program by importing the license information from the app store, tracking how many of the licenses you have used, and preventing you from installing more copies of the app than you own.
 
 > [!Important]
-> Currently, Intune assigns iOS VPP app licenses to users and not devices. Because of this, users must enter their Apple ID password to install the app.
+> Currently, Intune assigns iOS Volume Purchase Program for Business (VPP) app licenses to users and not devices. Because of this, users must enter their Apple ID password to install the app.
 
 ## Manage volume-purchased apps for iOS devices
-You purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business (VPP)](http://www.apple.com/business/vpp/). This involves setting up an Apple VPP account from the Apple website and the Apple VPP token into Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
+You purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). This involves setting up an Apple VPP account from the Apple website and upload the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
 
 ## Before you start
-Before you begin, you'll need to get a VPP token from Apple and upload this to your Intune account. Additionally, you should understand the following:
+Before you start, you'll need to get a VPP token from Apple and upload this to your Intune account. Additionally, you should understand the following:
 
 * Each organization can have only one VPP account and token.
 * After you associate an Apple VPP account to Intune, you cannot subsequently associate a different account. For this reason, it's very important that more than one person has the details of the account that you use.
 * If you previously used a VPP token with a different product, you must generate a new one to use with Intune.
 * Each token is valid for one year.
 * By default, Intune syncs with the Apple VPP service twice a day. You can start a manual sync at any time.
-* After you have imported the VPP token in Intune, do not import the same token into any other device management solution. Doing so might result in the loss of license assignment and user records.
+* After you have imported the VPP token to Intune, do not import the same token to any other device management solution. Doing so might result in the loss of license assignment and user records.
 * Before you start to use iOS VPP with Intune, remove any existing VPP user accounts created with other mobile device management (MDM) vendors. Intune will not synchronize those user accounts into Intune as a security measure. Intune will only synchronize data from the Apple VPP service that Intune created.
 * You cannot deploy iOS VPP apps to devices that were enrolled using the Device Enrollment Protocol (DEP).
 
@@ -52,7 +52,7 @@ Before you begin, you'll need to get a VPP token from Apple and upload this to y
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin** &gt; **iOS and Mac OS X** &gt;  **Volume Purchase Program**.
 
-2.  Choose the **Apple VPP Account** link, and if you haven't already, sign up for the Volume Purchase Program for Business. After you sign up, download the Apple VPP token for your account.
+2.  Choose the **Apple VPP Account** link. If you haven't already, sign up for the Volume Purchase Program for Business. After you sign up, download the Apple VPP token for your account.
 
 3.  On the **Manage Apple Volume Purchase Program (VPP)** page of the Intune console, choose **Upload the VPP token**.
 
@@ -85,7 +85,7 @@ When a user with an eligible device first tries to install a VPP app, they will 
 If there are no other licenses available, the deployment will fail.
 
 ## To monitor Apple VPP apps
-You can monitor which VPP apps have been deployed, and how many licenses are used from the **Apps** workspace, in the **Managed Software** &gt; **Volume-Purchased Apps** node.
+You can monitor which VPP apps have been deployed, and how many licenses are used, from the **Apps** workspace in the **Managed Software** &gt; **Volume-Purchased Apps** node.
 
 > [!TIP]
 > You can also use app **Filters** to examine the status of each app installation.
