@@ -34,7 +34,7 @@ If you are having problems deploying and managing apps with Intune, start here. 
 
 1.  Ensure the user's account exists, and is enabled in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-3.  In the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), make sure the user is entering the right user name ato log in to Intune and that it is in the format: **joe@domain.com**. If the user seems to be entering the wrong password, ask them to reset it.
+3.  In the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), make sure the user is entering the right user name to log in to Intune and that it is in the format: **joe@domain.com**. If the user seems to be entering the wrong password, ask them to reset it.
 
 ### Contact IT information is missing in the Company Portal
 
