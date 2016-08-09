@@ -45,14 +45,14 @@ You can create and deploy mobile device security policies for the following devi
 -   Android and Samsung KNOX
 
 > [!NOTE]
-> Some settings are not applicable to some devices. See the table below for a full list of settings that you can configure.
+> Some settings are not applicable to some devices. See the tables below for a full list of settings that you can configure.
 
 ## Security settings
 
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Require a password to unlock mobile devices**|No|No|Yes|Yes|Yes|
-|**Required password type**<br /><br />This setting specifies the type of password that will be required, such as numeric only, or alphanumeric.|Yes|Yes|Yes|Yes|No|
+|**Required password type**<br /><br />This setting specifies the type of password that will be required, such as numeric only or alphanumeric.|Yes|Yes|Yes|Yes|No|
 |**Required password type – Minimum number of character sets**<br /><br />There are four character sets: lowercase letters, uppercase letters, numbers, and symbols. This setting specifies how many different character sets must be included in the password. However, for iOS devices, this specifies the number of symbol characters that must be included in the password.|Yes|Yes|Yes|Yes|No|
 |**Minimum password length**|Yes|Yes|Yes|Yes|Yes|
 |**Allow simple passwords**<br /><br />Simple passwords include ‘0000’ and ‘1234’.|No|No|Yes|Yes|No|
@@ -64,10 +64,10 @@ You can create and deploy mobile device security policies for the following devi
 |**Password quality**|No|No|No|No|Yes|
 |**Allow picture password and PIN**|Yes|Yes|No|No|No|
 |**Minutes of inactivity before password is required**|No|No|No|Yes|No|
-|**Allow fingerprint unlock**|No|No|No|at least iOS 7|No|
+|**Allow fingerprint unlock**|No|No|No|At least iOS 7|No|
 For iOS devices, when you configure the settings **Minutes of inactivity before screen turns off** and **Minutes of inactivity before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
 
-When you set deploy a password length policy to devices that run Windows RT, users will be forced to reset their password—even if their current password complies with the policy requirements.
+When you deploy a password length policy to devices that run Windows RT, users will be forced to reset their password—even if their current password complies with the policy requirements.
 
 ## Encryption settings
 
@@ -83,7 +83,7 @@ Here is additional information for devices that run Windows 8.1:
 
 -   For encryption to work, the device must meet the Microsoft [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) hardware certification requirements.
 
--   When you enforce encryption on a device, the recovery key is only accessible from the user's Microsoft account, which accessed from their OneDrive account. You cannot recover this key on behalf of a user.
+-   When you enforce encryption on a device, the recovery key is only accessible from the user's Microsoft account, which is accessed from their OneDrive account. You cannot recover this key on behalf of a user.
 
 ## Malware settings
 
@@ -97,7 +97,7 @@ Here is additional information for devices that run Windows 8.1:
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Require automatic updates**|Yes|No|No|No|No|
-|**Require automatic updates – Minimum classification of updates to install automatically**<br /><br />Choose the classification of updates that will be installed automatically:<br /><br />**Important** – installs all updates that are classified as important.<br /><br />**Recommended** – installs all updates that are classified as important or recommended.|Yes|No|No|No|No|
+|**Require automatic updates – Minimum classification of updates to install automatically**<br /><br />Choose the classification of updates that will be installed automatically:<br /><br />**Important**. Installs all updates that are classified as important.<br /><br />**Recommended**. Installs all updates that are classified as important or recommended.|Yes|No|No|No|No|
 |**Allow screen capture**|No|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX only)|
 |**Allow control center in lock screen**|No|No|No|At least iOS 7|No|
 |**Allow notification view in lock screen**|No|No|No|At least iOS 7|No|
@@ -132,8 +132,8 @@ Here is additional information for devices that run Windows 8.1:
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Allow users to download email attachments**<sup>1</sup>|n/a|n/a|n/a|n/a|n/a|
-|**Email synchronization period** <br /><br />This applies to devices that are managed by Exchange ActiveSync also.|n/a|n/a|n/a|n/a|n/a|
-|**Allow mobile devices that don’t fully support these settings to synchronize with Exchange (Exchange ActiveSync)** <br /><br />This applies to devices that are managed by Exchange ActiveSync also.|n/a|n/a|n/a|n/a|n/a|
+|**Email synchronization period** <br /><br />This setting applies to devices that are managed by Exchange ActiveSync also.|n/a|n/a|n/a|n/a|n/a|
+|**Allow mobile devices that don’t fully support these settings to synchronize with Exchange (Exchange ActiveSync)** <br /><br />This setting applies to devices that are managed by Exchange ActiveSync also.|n/a|n/a|n/a|n/a|n/a|
 |**Make Microsoft account optional in Windows Mail application**|Yes|No|No|No|No|
 |**Allow custom email accounts**|No|No|Windows Phone 8.1 only|No|No|
 
@@ -148,7 +148,7 @@ Here is additional information for devices that run Windows 8.1:
 |**Allow plug-ins**|Yes|No|No|No|No|
 |**Allow active scripting**|Yes|No|No|Yes|Yes (Samsung KNOX only)|
 |**Allow fraud warning**|Yes|No|No|Yes|No|
-|**Allow intranet site for single word entry**<br /><br />(This allows the use of a single word to direct Internet Explorer to a website, such as ‘Bing’.)|Yes|No|No|No|No|
+|**Allow intranet site for single word entry**<br /><br />(This setting allows the use of a single word to direct Internet Explorer to a website—for example, ‘Bing’.)|Yes|No|No|No|No|
 |**Allow automatic detection of intranet network**|Yes|No|No|No|No|
 |**Security level for Internet**|Yes|No|No|No|No|
 |**Security level for intranet**|Yes|No|No|No|No|
@@ -187,11 +187,11 @@ Here is additional information for devices that run Windows 8.1:
 |**Allow Wi-Fi**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
 |**Allow Wi-Fi tethering**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
 |**Allow automatic connection to free Wi-Fi hotspots**|No|No|Windows Phone 8.1 only|No|No|
-|**Allow Wi-Fi hotspot reporting**<br /><br />This send information about Wi-Fi connections to help discover nearby connections.|No|No|Windows Phone 8.1 only|No|No|
-|**Allow geolocation**<br /><br />This allows the device to utilize location information.|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
-|**Allow NFC**<br /><br />This allows operations that use near-field communication.|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
+|**Allow Wi-Fi hotspot reporting**<br /><br />This setting sends information about Wi-Fi connections to help discover nearby connections.|No|No|Windows Phone 8.1 only|No|No|
+|**Allow geolocation**<br /><br />This setting allows the device to utilize location information.|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
+|**Allow NFC**<br /><br />This setting allows operations that use near-field communication.|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
 |**Allow Bluetooth**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
-|**Allow power off**<br>If this is disabled, the setting **Number of repeated sign in failures to allow before the device is wiped** for Samsung KNOX devices does not function.|No|No|No|No|Yes (Samsung KNOX only)|
+|**Allow power off**<br>If this setting is disabled, the setting **Number of repeated sign in failures to allow before the device is wiped** for Samsung KNOX devices does not function.|No|No|No|No|Yes (Samsung KNOX only)|
 
 ## Device capabilities settings - cellular
 
