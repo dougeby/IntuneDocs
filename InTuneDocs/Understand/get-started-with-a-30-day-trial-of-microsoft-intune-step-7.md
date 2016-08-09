@@ -36,4 +36,4 @@ You can convert your free Intune evaluation to a paid subscription in the follow
 
 -   **Enterprise Agreement** (&gt;250 users) - The best licensing program for organizations with more than 250 users. The EA gives you the flexibility to choose among on-premises software and online services to best suit your user needs and help you optimize your technology spend. Contact your Microsoft account manager or local reseller for more details, or see the [Enterprise Volume Licensing site](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx).
 
--   **Online subscription program** (&lt;250 users) - [Online Services volume licensing](http://www.microsoft.com/licensing/online-services/default.aspx) program is designed specifically for organizations with less than 250 users. Use this program to subscribe, manage, and deploy your Intune services.
+-   **Online subscription program** (&lt;250 users) - [Online Services volume licensing](http://www.microsoft.com/licensing/online-services/default.aspx) program is designed specifically for organizations with fewer than 250 users. Use this program to subscribe, manage, and deploy your Intune services.

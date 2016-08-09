@@ -35,7 +35,7 @@ The following changes are under development for Intune. All of these features wi
 
 ## App management
 ### Hidden and shown apps for iOS 9.3
-For devices running iOS 9.3 or later, you will be able to use the hidden and shown apps list in the iOS general configuration policy to:
+For supervised devices running iOS 9.3 or later, you will be able to use the hidden and shown apps list in the iOS general configuration policy to:
 - Specify a list of apps that will be hidden from users. Users cannot view, or launch these apps.
 - Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
 
