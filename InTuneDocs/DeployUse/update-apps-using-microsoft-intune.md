@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update apps | Microsoft Intune
-description: Use the information in this topic to understand how you can update apps when a new version is required.
+description: Use the information in this topic to understand how to update apps when a new version is required.
 keywords:
 author: robstackmsft
 manager: angrobe
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Update apps using Microsoft Intune
-Microsoft Intune can help you manage app updates. Use the information in this topic to understand how you can update apps when a new version is required.
+Microsoft Intune can help you manage app updates. Use the information in this topic to understand how to update apps when a new version is required.
 
 ## How to update apps
 When a new version of an app you have deployed is released, Intune lets you update and deploy the newer version of the app. You can only replace a deployment with a newer version of the same app (using the same identifier). You cannot use app updates to update a deployment with a different app package.
@@ -43,7 +43,7 @@ The app identifier is a property that uniquely identifies an app. You cannot ins
 
 > [!IMPORTANT]
 > When you deploy an app with a deployment action of **Required install** and later change the deployment action to **Available install**, updates to the app are not automatically installed on devices that installed the app before the deployment change was made. To fix this issue, you can do the following:
-> 
+>
 > -   Have the user of the device go to the company portal, select the installed app, and have them choose **Install**.
 > -   Change the deployment action to **Uninstall**, and after the app has been uninstalled, redeploy the app with a deployment action of **Available install**.
 
@@ -60,6 +60,3 @@ The app identifier is a property that uniquely identifies an app. You cannot ins
 When devices next check for available apps, the app will be automatically updated to the latest version.
 For apps installed from an app package (line of business apps), the app will be upgraded automatically for both required, and available deployments, as long as the app has the same identifier.
 For apps deployed as a link to a store, the update is managed by the store from which the app originates.
-
-
-
