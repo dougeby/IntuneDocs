@@ -4,9 +4,9 @@
 title: Add users to your 30-day evaluation of Intune | Microsoft Intune
 description: How to add users, individually or in bulk, when you sign up for a free, 30-day evaluation of Intune
 keywords:
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
