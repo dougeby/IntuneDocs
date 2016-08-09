@@ -1,7 +1,6 @@
 ---
 # required metadata
 
-experimental: true
 experiment_id: kgremban_images_080416
 title: Introduction to Microsoft Intune | Microsoft Intune
 description: Learn how Intune is the mobile device management component of the Enterprise Mobility + Security solution.
@@ -32,9 +31,10 @@ Microsoft Intune is the "management arm" of the Microsoft Enterprise Mobility + 
 
 EMS is a complete integrated suite for enterprise mobility inclusive of productivity, identity, access control, management, and data protection. It gives you an effective way to deploy and operate a mobility solution in your organization.  
 
+Intune helps you manage mobile devices and mobile apps. It integrates closely with Azure Active Directory (Azure AD) for identity and access control and Azure Rights Management (Azure RMS) for data protection.  
+
 ![Image of enterprise mobility vision](..\media\em-vision.png)
 
-Intune helps you manage mobile devices and mobile apps. It integrates closely with Azure Active Directory (Azure AD) for identity and access control and Azure Rights Management (Azure RMS) for data protection.  
 
 Common business problems that Intune helps solve include:
 
