@@ -32,7 +32,7 @@ Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and
 
 |Setting name|Details|
 |----------------|----------------------------------|
-|**Apply all configurations to Windows 10**|Enables settings in this policy to be applied to Windows 10 devices in addition to Windows 8 and Windows 8.1 devices.|
+|**Apply all configurations to Windows 10**|Enables settings in this policy to be applied to Windows 10 devices, in addition to Windows 8 and Windows 8.1 devices.|
 
 ## Security settings
 
