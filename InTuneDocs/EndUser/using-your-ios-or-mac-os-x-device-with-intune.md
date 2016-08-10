@@ -6,7 +6,7 @@ description: List of links to tasks that you can do on your iOS or Mac OS X mobi
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,11 +27,14 @@ ms.suite: ems
 
 # Using your iOS or Mac OS X device with Intune
 
-This page contains links to all of the tasks that end users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users follow to do a variety of tasks, which are grouped into categories: enrollment-related information, management tasks, and compliance issues.
+This article inclues links to all of the tasks that end users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users follow to do a variety of tasks, which are grouped into categories: 
+- Company portal app installation and Intune enrollment 
+- Post-enrollment management tasks
+- Compliance issues
 
 ## Company Portal app installation and Intune enrollment
 
-The information in this section will help you with Intune Company Portal installation and device enrollment for iOS devices.
+The information in this section helps you with Intune Company Portal installation and device enrollment for iOS devices.
 
 - [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md)
@@ -40,7 +43,7 @@ The information in this section will help you with Intune Company Portal install
 
 ## Things you can do when your device is enrolled in Intune
 
-The information in this section will help you with actions you can take after your iOS device is enrolled in Intune.
+The information in this section helps you with actions you can take after your iOS device is enrolled in Intune.
 
 - [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 - [Set or change your passcode](set-or-change-your-passcode-ios.md)
@@ -53,7 +56,7 @@ The information in this section will help you with actions you can take after yo
 
 ## Fix issues with your device
 
-The information in this section will help you fix issues you might encounter when your iOS device is enrolled in Intune.
+The information in this section helps you fix issues that you might encounter when your iOS device is enrolled in Intune.
 
 - [How to reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device.md)
 - [Send errors to your IT admin](send-errors-to-your-it-admin-ios.md)
