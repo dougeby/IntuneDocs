@@ -43,7 +43,7 @@ You may have to run PowerShell as an admin to retrieve the PFN.
 
 For example, to get info about all the universal apps installed on the computer, use `Get-AppxPackage`.
 
-To get info about an app when you know the name part of the name, use `Get-AppxPackage *<app_name>`. Note the use of the wildcard character, which is particularly helpful if you're not sure of the full name of the app. For example, to get the info for OneNote, use `Get-AppxPackage *OneNote`.
+To get info about an app when you know the name or part of the name, use `Get-AppxPackage *<app_name>`. Note the use of the wildcard character, which is particularly helpful if you're not sure of the full name of the app. For example, to get the info for OneNote, use `Get-AppxPackage *OneNote`.
 
 
 Here is the information retrieved for OneNote:
