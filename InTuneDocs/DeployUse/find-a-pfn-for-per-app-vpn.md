@@ -27,22 +27,23 @@ ms.suite: ems
 
 # Find a package family name (PFN) for per-app VPN configuration
 
-There are two ways to find a PFN so that you can configure a per-app VPN.
+There are two ways to find a PFN so that you can set up a per-app VPN.
 
 ## Find a PFN for an app that's installed on a Windows 10 computer
 
-If the app you are working with is already installed on a Windows 10 computer, you can use the [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) PowerShell cmdlet to get the PFN.
+If the app that you are working with is already installed on a Windows 10 computer, you can use the [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) PowerShell cmdlet to get the PFN.
 
 The syntax for Get-AppxPackage is:
 
 ` Parameter Set: __AllParameterSets`
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
-> Note: you may have to run PowerShell as an admin in order to retrieve the PFN
+> [!NOTE]
+You may have to run PowerShell as an admin to retrieve the PFN.
 
-For example, to get info on all the universal apps installed on the computer use `Get-AppxPackage`.
+For example, to get info about all the universal apps installed on the computer, use `Get-AppxPackage`.
 
-To get info on an app you know the name of, or part of the name of, use `Get-AppxPackage *<app_name>`. Note the use of the wildcard character, particularly helpful if you're not sure of the full name of the app. For example to get the info for OneNote, use `Get-AppxPackage *OneNote`.
+To get info about an app when you know the name part of the name, use `Get-AppxPackage *<app_name>`. Note the use of the wildcard character, which is particularly helpful if you're not sure of the full name of the app. For example, to get the info for OneNote, use `Get-AppxPackage *OneNote`.
 
 
 Here is the information retrieved for OneNote:
@@ -73,13 +74,13 @@ Here is the information retrieved for OneNote:
 
 ## Find a PFN if the app is not installed on a computer
 
-1.	Go to https://www.microsoft.com/en-us/store/apps
+1.	Go to https://www.microsoft.com/en-us/store/apps.
 2.	Enter the name of the app in the search bar. In our example, search for OneNote.
-3.	Click the link to the app. Note that the URL that you access has a series of letters at the end. In our example, the URL looks like this:
-`https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
-4.	In a different tab, paste the following URL, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`,  replacing `<app id>` with the app id you obtained from https://www.microsoft.com/en-us/store/apps - that series of letters at the end of the URL in step 3. In our example, example of OneNote, you'd paste: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+3.	Choose the link to the app. Note that the URL has a series of letters at the end. In our example, the URL looks like this:
+`https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
+4.	In a different tab, paste the following URL, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Replace `<app id>` with the app id that you got from https://www.microsoft.com/en-us/store/apps - that series of letters at the end of the URL in step 3. In our example of OneNote, you'd paste: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
-In Edge, the information you want is displayed; in Internet Explorer, click **Open** to see the information. The PFN value is given on the first line. Here's how the results look for our example:
+Microsoft Edge shows the information that you want; in Internet Explorer, choose **Open** to see the information. The PFN value is given on the first line. Here are the results for our example:
 
 
 `{`
