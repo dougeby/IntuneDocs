@@ -65,7 +65,7 @@ To view the inventory that's collected by mobile devices, run the [Mobile Device
 |**Activation Lock Enabled**|iOS devices only|
 |**Encryption Enabled**|All devices|
 
-## What's collected from Windows PCs
+## What's collected from Windows PCs?
 > [!IMPORTANT]
 > This section applies only to Windows PCs that run the Intune Windows PC client software.
 
