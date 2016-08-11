@@ -28,7 +28,7 @@ ms.suite: ems
 # Windows PC management capabilities (with the Microsoft Intune PC client)
 In most scenarios, you will enroll your devices with Microsoft Intune, which provides a greater set of capabilities than the Intune PC client. However, you can also manage PCs by using the Intune PC client, which provides the following features:
 
--   **Software update management** - You can keep PCs up-to-date, and decide when updates are applied.
+-   **Software update management** - You can keep PCs up to date and decide when updates are applied.
 
 -   **Windows Firewall policy** - This helps to ensure that no PC that's used by your company has an inactive or improperly-configured Windows Firewall.
 
@@ -63,7 +63,7 @@ Following are the minimum hardware requirements for installing the Intune PC cli
 |Requirement|Details|
 |---------------|--------------------|
 |Network|The client requires the PC to have Internet connectivity.|
-|Processor and Memory|Refer to the processor and RAM requirements for the PC's operating system.|
+|Processor and memory|Refer to the processor and RAM requirements for the PC's operating system.|
 |Disk space|200 MB available disk space before the client software is installed.|
 
 ## Further requirements
