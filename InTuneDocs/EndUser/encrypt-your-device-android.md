@@ -40,13 +40,29 @@ If you ever unenroll your phone, it will remain encrypted.
 3.  Follow the on-screen instructions. During encryption, your device might restart several times.
 
 ### What to do if you have issues
-**Issue**: You have have already encrypted your device, and you see one of the following:
+**Issue**: You have already encrypted your device, and you see one of the following:
 
 - The encryption button is disabled.
 - You see a message saying that you still need to encrypt.
 - You get errors when trying to use the Company Portal app.
 
-**What to do**: Make sure that you've set a PIN or password on your device.
+**Things to try**: 
+
+1. Make sure that your device is charged and plugged in.
+
+2. Make sure that you've set a PIN or password on your device.
+
+3. If you have already set a PIN or password on your device, try the following steps, which your IT administrator might require to make your device more secure. The menu names that you see may be slightly different from the ones in the steps, depending on the type of Android device you have.
+
+	a. Go to **Settings** > **Security** > **Screen lock**. Confirm your current PIN or password.
+
+	b. On the **Choose screen lock** screen, choose the type of screen lock you want to use.
+
+	c. On the **Secure start-up** screen, tap **Require PIN to start device**, and tap **Continue**.
+
+	d. Choose a PIN (you can enter the same one that you entered previously), and tap **Confirm your PIN**.
+
+	e. Open the Company Portal app, select your device, and tap **Check Compliance**.
 
 Still need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
 
