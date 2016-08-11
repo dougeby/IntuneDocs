@@ -26,9 +26,11 @@ ms.suite: ems
 ---
 
 # Manage alerts in Microsoft Intune
-Use the **Alerts** workspace in the Intune admin console to assess the overall health of devices in your organization, and to identify problems.
+Use the **Alerts** workspace in the Intune admin console to assess the overall health of devices in your organization and to identify problems.
 
 ## View active alerts
+
+See general information and summary data about active alerts.
 
 #### To view active alerts
 
@@ -69,7 +71,7 @@ Notice board alerts provide important service announcements. They might provide 
 
 3.  If you want to export a notice board alert to a comma-separated value (CSV) or HTML file, in the Intune admin console, choose **Alerts**, then choose **All Alerts**, and then choose **Notices**. Select a notice, choose the **Export List** icon, and then follow the instructions shown.
 
-## Review Intune status summaries
+## Review Intune system status
 In the **System Overview** workspace, you can view **System Status** summaries for the Endpoint Protection, Updates, Agent Health, Policy, and Software categories to help you identify and prioritize issues that need immediate attention. Error messages that are generated when the system is interrupted link to the **Service Status** summary. The **Service Status** summary shows details about the problem at each location and the last time the status summary was updated.
 
 #### To view the status of your subscription
