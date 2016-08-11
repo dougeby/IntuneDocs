@@ -38,7 +38,7 @@ Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Required password type**|Specifies the type of password that will be required, such as alphanumeric or numeric only.|Yes|Yes|
+|**Required password type**|Specifies the type of password that's required, such as alphanumeric or numeric only.|Yes|Yes|
 |**Required password type – Minimum number of character sets**|Specifies how many different character sets must be included in the password. There are four character sets: lowercase letters, uppercase letters, numbers, and symbols. However, for iOS devices, this setting specifies the number of symbols that must be included in the password.|Yes|Yes|
 |**Minimum password length**<sup>1</sup>|Configures the minimum required length (in characters) for the password.|Yes|Yes|
 |**Number of repeated sign-in failures to allow before the device is wiped**|Wipes the device if the sign-in attempts fail this number of times.|Yes|Yes|
@@ -58,11 +58,11 @@ Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and
 
 -   To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](http://support.microsoft.com/kb/3013816) on each device.
 
--   If you enable this setting for Windows 8.1 devices, all users of the device must have a Microsoft Account.
+-   If you enable this setting for Windows 8.1 devices, all users of the device must have a Microsoft account.
 
 -   For encryption to work, the device must meet the Microsoft [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) hardware certification requirements.
 
--   When you enforce encryption on a device, the recovery key is only accessible from the user's Microsoft Account, accessed from their OneDrive account. You cannot recover this key on behalf of a user.
+-   When you enforce encryption on a device, the recovery key is only accessible from the user's Microsoft account, which is accessed from their OneDrive account. You cannot recover this key on behalf of a user.
 
 ## Malware settings
 
@@ -109,7 +109,7 @@ Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and
 |**Security level for trusted sites**|Configures the security level for the trusted sites zone.|Yes|No|
 |**Security level for restricted sites**|Configures the security level for the restricted sites zone.|Yes|No|
 |**Send Do Not Track header**|Sends  a do not track header to visited sites in Internet Explorer.|Yes|No|
-|**Allow Enterprise Mode menu access**|Lets users access the Enterprise Mode menu options from Internet Explorer.<br>If you select it, you can also specify a **Logging report location**, which contains a URL to a report that shows websites for which users have turned on Enterprise Mode access.|Yes|No|
+|**Allow Enterprise Mode menu access**|Lets users access the Enterprise Mode menu options from Internet Explorer.<br>If you select this setting, you can also specify a **Logging report location**, which contains a URL to a report that shows websites for which users have turned on Enterprise Mode access.|Yes|No|
 |**Enterprise Mode site list location**|Specifies the location of the list of websites that will use Enterprise Mode when it is active.|Yes|No|
 
 ## Device capabilities settings - cellular
