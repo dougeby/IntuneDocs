@@ -24,8 +24,10 @@ ms.reviewer: dagerrit
 #ms.custom:
 
 ---
-
 # Choose how to enroll mobile devices
+
+Your answers to this series of questions will help determine the best enrollment method for the devices you manage.
+
 
 ## **How will you manage shared iOS devices?**
 
@@ -37,3 +39,6 @@ ms.reviewer: dagerrit
   - **Apple Configurator on a Mac** - Apple Configurator is an Apple application that runs on a Mac PC. You can connect your iOS devices to the Mac with a USB cable to install an enrollment profile on the device. If you can factory reset devices to enroll them use Setup Assistant enrollment. If you don't want to factory reset devices, use Direct enrollment.
 
   - **Device Enrollment Manager** - Intune's device enrollment manager (DEM) allows a manager or administrator to enroll many mobile devices with a single user account. These devices cannot have user affinity (i.e. dedicated users) and must enroll by installing and signing in to the Company Portal app.
+
+  > [!div class="button"]
+  [< Back](choose-how-to-enroll-devices3.md)

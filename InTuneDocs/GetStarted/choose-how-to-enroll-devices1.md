@@ -27,12 +27,13 @@ ms.reviewer: dagerrit
 
 # Choose how to enroll mobile devices
 
-Your answers to the following questions will help determine the best enrollment method for the devices you manage.
+Your answers to this series of questions will help determine the best enrollment method for the devices you manage.
 
 ## **Do employees bring their own devices or are devices provided by your organization?**
 
-  - **Users-owned devices** - "Bring your own device" (BYOD) enrollment
-  - **Company-owned devices** - COD enrollment
-
 > [!div class="button"]
 [BYOD Enrollment >](choose-how-to-enroll-devices2.md)   [COD Enrollment >](choose-how-to-enroll-devices3.md)
+
+- **Users-owned devices** - "BYOD” (Bring your own device) enrollment – Users can install the Intune Company Portal app on their device and then enroll it, gaining access to company resources like email, company apps, company data, and support.  
+
+- **Company-owned devices** - Company-owned devices (COD) can be enrolled in a variety of ways, depending upon the needs of the organization and the types of devices being managed.
