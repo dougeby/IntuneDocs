@@ -15,13 +15,13 @@ ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: dagerrit
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+#ms.custom: EXPIERIMENT
 
 ---
 # Choose how to enroll mobile devices

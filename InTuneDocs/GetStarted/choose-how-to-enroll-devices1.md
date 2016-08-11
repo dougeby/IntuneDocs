@@ -15,13 +15,13 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: dagerrit
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+#ms.custom: EXPIERIMENT
 
 ---
 
