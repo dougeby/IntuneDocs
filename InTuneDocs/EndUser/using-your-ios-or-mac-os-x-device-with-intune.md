@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Using your iOS or Mac OS X device with Intune
 
-This article inclues links to all of the tasks that end users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users follow to do a variety of tasks, which are grouped into categories: 
+This article includes links to all of the tasks that end users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users follow to do a variety of tasks, which are grouped into categories: 
 - Company portal app installation and Intune enrollment 
 - Post-enrollment management tasks
 - Compliance issues

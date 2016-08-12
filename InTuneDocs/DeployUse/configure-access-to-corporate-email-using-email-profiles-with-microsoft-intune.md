@@ -47,13 +47,13 @@ In addition to configuring an email account on the device you can configure sync
 >
 >If the user has installed an email profile prior to provision of a profile by Intune, the result of the Intune email profile deployment depends on the device platform:
 
->-**iOS**: Intune detects an existing, duplicate email profile based on hostname and email address. The duplicate email profile created by the user will block the deployment of an Intune admin-created profile. This is a common problem as iOS users will typically create an email profile, then enroll. The company portal will inform the user that they are not compliant due to their manually-configured email profile, and will prompt the user to remove that profile.The user should remove their email profile so that the Intune profile can be deployed. To prevent the problem instruct your users to enroll before installing an email profile and to allow Intune to deploy the profile.
+>-**iOS**: An existing, duplicate email profile is detected based on hostname and email address. The duplicate email profile created by the user will block the deployment of an Intune admin-created profile. This is a common problem as iOS users will typically create an email profile, then enroll. The company portal will inform the user that they are not compliant due to their manually-configured email profile, and will prompt the user to remove that profile.The user should remove their email profile so that the Intune profile can be deployed. To prevent the problem instruct your users to enroll before installing an email profile and to allow Intune to deploy the profile.
 
->-**Windows**: Intune detects an existing, duplicate email profile based on hostname and email address. Intune will overwrite the existing email profile created by the user.
+>-**Windows**: An existing, duplicate email profile is detected based on hostname and email address. Intune will overwrite the existing email profile created by the user.
 
->-**Samsung KNOX**: Intune identifies a duplicate email account based on the email address, and will overwrite it with the Intune profile. If the user configures that account, it will be overwritten again by the Intune profile. Note that this may cause some confusion to the user whose account configuration gets overwritten.
+>-**Samsung KNOX**: A duplicate email account is detected based on the email address, and will overwrite it with the Intune profile. If the user configures that account, it will be overwritten again by the Intune profile. Note that this may cause some confusion to the user whose account configuration gets overwritten.
 
->Since Samsung KNOX does not use hostname to identify the profile, we recommend that you not create multiple email profiles to deploy to the same email address on different hosts, as these will overwrite each other.
+>Since Android does not use hostname to identify the profile, we recommend that you not create multiple email profiles to deploy to the same email address on different hosts, as these will overwrite each other.
 	
 
 ## Secure email profiles
