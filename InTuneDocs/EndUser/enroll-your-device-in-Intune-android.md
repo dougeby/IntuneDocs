@@ -97,17 +97,11 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![Enter PIN or password](./media/and-enroll-6-PIN-native.png)
 
-13.  Follow the instructions below that match the type of device you’re using (native Android or Samsung Knox). To determine if you have a Samsung Knox device, go to **Settings** &gt; **About device**. If you don't see "KNOX version" listed there, you have a native Android device.
-
-	-	Native (non-Samsung Knox) device: On the **Name the certificate** screen, tap **OK** to accept the default certificate.
-
-	![Name the certificate screen](./media/and-enroll-7-cert-native.png)
-
-	-	Samsung Knox device: Accept the privacy policy, and tap **CONFIRM**.
+13.  If you are using a Samsung Knox device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the screen below showing that your device is being enrolled.
 
 	![Samsung KNOX privacy policy](./media/and-enroll-7-knox-privacy-policy.png)
 
-	You’ll see the following message appear on your screen as Intune enrolls your device.
+	This screen shows that your device is being enrolled.
 
 	![Enrolling device screen](./media/and-enroll-8-device-enrolling.png)
 
