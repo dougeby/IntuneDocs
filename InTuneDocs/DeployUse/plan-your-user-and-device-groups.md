@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Plan your user and device groups
-Groups in Intune give you great flexibility when you manage your devices and users. You can set up groups to suit your organizational needs according to:
+Groups in Intune give you great flexibility when you're managing your devices and users. You can set up groups to suit your organizational needs according to:
 
 - geographic location
 - department
@@ -38,7 +38,7 @@ Groups in Intune give you great flexibility when you manage your devices and use
 ## How Intune groups work
 
 
-This is the default view of the Groups node in the Intune admin console:
+This is the default view of the **Groups** node in the Intune admin console:
 
 ![Screenshot of the default view of the Groups node in the Intune console](../media/Intune_Planning_Groups_Default_small.png)
 
@@ -56,9 +56,9 @@ Policies are deployed to groups, so group hierarchy is one of your key design co
 
 - A group can include and exclude members based on the following membership rules:
 
-    * **Criteria membership**. These are dynamic rules that Intune runs to include or exclude members. These criteria use security groups and other information synced with your local instance of Active Directory. When the security group or data changes, the group membership changes when you sync with Active Directory.
+    * **Criteria Membership**. These are dynamic rules that Intune runs to include or exclude members. These criteria use security groups and other information synced with your local instance of Active Directory. When the security group or data changes, the group membership changes when you sync with Active Directory.
 
-    * **Direct membership**. These are static rules that explicitly add or exclude members. The membership list is static.
+    * **Direct Membership**. These are static rules that explicitly add or exclude members. The membership list is static.
 
 -   Active Directory Domain Services (AD DS) is not required when you create user groups or device groups that include users or computers. But, for device groups to include mobile devices, your environment must be configured to support mobile devices.
 
@@ -86,7 +86,7 @@ Policies are deployed to groups, so group hierarchy is one of your key design co
 
     However, you cannot add a member to a child group if the member is excluded from the parent group.
 
-7. Group membership is recursive. For example:
+- Group membership is recursive. For example:
 
     * **Pat** is a member of only one group, the **Laptop Users** security group.
 
