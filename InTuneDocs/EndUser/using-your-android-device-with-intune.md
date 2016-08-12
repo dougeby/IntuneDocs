@@ -28,7 +28,11 @@ ms.suite: ems
 
 # Using your Android device with Intune
 
-This page contains links to all of the tasks that end users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users follow to do a variety of tasks, which are grouped into categories: enrollment-related information, management tasks, and compliance issues.
+This article includes links to all of the tasks that end users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users follow to do a variety of tasks, which are grouped into categories: 
+
+- Company portal app installation and Intune enrollment 
+- Post-enrollment management tasks
+- Compliance issues
 
 ## Company Portal app installation and Intune enrollment
 
