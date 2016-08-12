@@ -49,11 +49,7 @@ The enterprise signing certificate you use to sign apps typically lasts for 3 ye
 <!--- TFS 1280247--->
 ### Xamarin SDK for Intune apps is available
 The Intune App SDK Xamarin component allows you to enable the Intune mobile app management features in your mobile iOS and Android apps built with Xamarin. You can find the component in the [Xamarin store](https://components.xamarin.com/view/Microsoft.Intune.MAM) or on the [Microsoft Intune Github page](https://github.com/msintuneappsdk).
-<!--- TFS 1061478 --->
 
-## Device management
-### Increased device enrollment limits
-Intune increased the maximum configurable device enrollment limit from 5 to 15 devices per user.
 <!---TFS 1289896 --->
 
 ### TeamViewer Integration for Windows PCs running the Intune client software
