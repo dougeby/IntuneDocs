@@ -50,8 +50,8 @@ Android mobile devices allow users to enroll using the Company Portal app availa
     Your users will need to know how to enroll their devices and what to expect once they're brought into management. [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 4.  Your users will need to know how to enroll their devices and what to expect once they're brought into management.
-        - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-        - [End user guidance for Windows devices](../enduser/using-your-android-device-with-intune.md)
+  - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [End user guidance for Windows devices](../enduser/using-your-android-device-with-intune.md)
 
 ### See also
 [Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
