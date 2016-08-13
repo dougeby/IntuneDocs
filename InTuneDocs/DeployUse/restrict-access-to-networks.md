@@ -113,14 +113,14 @@ This table lists the information that is shared between your Intune tenant and y
 |complianceState|The true or false string that indicates whether the device is compliant or non-compliant.|
 |isManaged|The true or false string that indicates whether the client is managed by Intune or not.|
 |macAddress|The MAC address of the device.|
-|serialNumber|The serial number of the device. Applies only to iOS devices.|
-|imei|The IMEI (15 decimal digits: 14 digits plus a check digit) or IMEISV (16 digits) includes information on the origin, model, and serial number of the device. The structure of the IMEI/SV is specified in 3GPP TS 23.003. Applies only to devices with SIM cards.)|
-|udid|The unique device identifier, which is a sequence of 40 letters and numbers that is specific to iOS devices.|
-|meid|Mobile equipment identifier, which is a globally unique number that identifies a physical piece of CDMA mobile station equipment. The number format is defined by the 3GPP2 report S. R0048 but in practical terms, it can be seen as an IMEI but with hexadecimal digits. An MEID is 56 bits long (14 hex digits). It consists of three fields, including an 8-bit regional code (RR), a 24-bit manufacturer code, and a 24-bit manufacturer-assigned serial number.|
+|serialNumber|The serial number of the device. It applies only to iOS devices.|
+|imei|The IMEI (15 decimal digits: 14 digits plus a check digit) or IMEISV (16 digits) number includes information on the origin, model, and serial number of the device. The structure of this number is specified in 3GPP TS 23.003. It applies only to devices with SIM cards.)|
+|udid|The Unique Device Identifier, which is a sequence of 40 letters and numbers. It is specific to iOS devices.|
+|meid|The mobile equipment identifier, which is a globally unique number that identifies a physical piece of CDMA mobile station equipment. The number format is defined by the 3GPP2 report S. R0048, but in practical terms, it can be seen as an IMEI but with hexadecimal digits. An MEID is 56 bits long (14 hex digits). It consists of three fields, including an 8-bit regional code (RR), a 24-bit manufacturer code, and a 24-bit manufacturer-assigned serial number.|
 |osVersion|	Operating system version for the device.
 |model|Device model.
 |manufacturer|Device manufacturer.
-|azureDeviceId|	The device ID after it has work-place joined with Azure AD. Will be an empty GUID for devices that are not joined.|
+|azureDeviceId|	The device ID after it has workplace joined with Azure AD. Will be an empty GUID for devices that are not joined.|
 |lastContactTimeUtc|The date and time when the device last checked in with the Intune management service.
 
 
