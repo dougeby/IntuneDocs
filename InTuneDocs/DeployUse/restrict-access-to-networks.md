@@ -26,11 +26,11 @@ ms.suite: ems
 ---
 
 # Using Cisco ISE with Microsoft Intune
-Intune integration with Cisco Identity Services Engine (ISE) allows you to author network policies in your ISE environment by using the Intune device-enrollment and compliance state. These policies can work to ensure that access to your company network is restricted to devices that are managed by Intune and compliant with Intune policies.
+Intune integration with Cisco Identity Services Engine (ISE) allows you to author network policies in your ISE environment by using the Intune device-enrollment and compliance state. You can use these policies to ensure that access to your company network is restricted to devices that are managed by Intune and compliant with Intune policies.
 
 ## Configuration
 
-To enable this integration, you don’t need to do any setup in your Intune tenant. You will need to provide permissions to your Cisco ISE server to access your Intune tenant. After that is done, the rest of the setup happens in your Cisco ISE server. This article provides you instructions on providing your ISE server with permissions to access your Intune tenant.
+To enable this integration, you don’t need to do any setup in your Intune tenant. You will need to provide permissions to your Cisco ISE server to access your Intune tenant. After that's done, the rest of the setup happens in your Cisco ISE server. This article gives you instructions on providing your ISE server with permissions to access your Intune tenant.
 
 ### Step 1: Manage the certificates
 1. In the Azure Active Directory (Azure AD) console, export the certificate.
@@ -99,9 +99,9 @@ In the ISE admin console, provide these setting values:
   - **Server Type**: Mobile Device Manager
   - **Authentication type**: OAuth – Client Credentials
   - **Auto Discovery**: Yes
-  - **Auto Discover URL**: *Enter value from Step 1.*
-  - **Client ID**: *Enter value from Step 1.*
-  - **Token issuing URL**: *Enter value from Step 1.*
+  - **Auto Discover URL**: *Enter the value from Step 1.*
+  - **Client ID**: *Enter the value from Step 1.*
+  - **Token issuing URL**: *Enter the value from Step 1.*
 
 
 
@@ -110,23 +110,23 @@ This table lists the information that is shared between your Intune tenant and y
 
 |Property|	Description|
 |---------------|------------------------------------------------------------|
-|complianceState|The true or false string that indicates whether the device is compliant or non-compliant.|
+|complianceState|The true or false string that indicates whether the device is compliant or noncompliant.|
 |isManaged|The true or false string that indicates whether the client is managed by Intune or not.|
 |macAddress|The MAC address of the device.|
 |serialNumber|The serial number of the device. It applies only to iOS devices.|
-|imei|The IMEI (15 decimal digits: 14 digits plus a check digit) or IMEISV (16 digits) number includes information on the origin, model, and serial number of the device. The structure of this number is specified in 3GPP TS 23.003. It applies only to devices with SIM cards.)|
+|imei|The IMEI (15 decimal digits: 14 digits plus a check digit) or IMEISV (16 digits) number includes information on the origin, model, and serial number of the device. The structure of this number is specified in 3GPP TS 23.003. It applies only to devices with SIM cards.|
 |udid|The Unique Device Identifier, which is a sequence of 40 letters and numbers. It is specific to iOS devices.|
-|meid|The mobile equipment identifier, which is a globally unique number that identifies a physical piece of CDMA mobile station equipment. The number format is defined by the 3GPP2 report S. R0048, but in practical terms, it can be seen as an IMEI but with hexadecimal digits. An MEID is 56 bits long (14 hex digits). It consists of three fields, including an 8-bit regional code (RR), a 24-bit manufacturer code, and a 24-bit manufacturer-assigned serial number.|
-|osVersion|	Operating system version for the device.
-|model|Device model.
-|manufacturer|Device manufacturer.
-|azureDeviceId|	The device ID after it has workplace joined with Azure AD. Will be an empty GUID for devices that are not joined.|
+|meid|The mobile equipment identifier, which is a globally unique number that identifies a physical piece of CDMA mobile station equipment. The number format is defined by the 3GPP2 report S. R0048. However, in practical terms, it can be seen as an IMEI, but with hexadecimal digits. An MEID is 56 bits long (14 hex digits). It consists of three fields, including an 8-bit regional code (RR), a 24-bit manufacturer code, and a 24-bit manufacturer-assigned serial number.|
+|osVersion|The operating system version for the device.
+|model|The device model.
+|manufacturer|The device manufacturer.
+|azureDeviceId|The device ID after it has workplace joined with Azure AD. It is an empty GUID for devices that are not joined.|
 |lastContactTimeUtc|The date and time when the device last checked in with the Intune management service.
 
 
 ## User experience
 
-When a user attempts to access resources by using an unenrolled device, they will receive a prompt to enroll, such as the one shown here:
+When a user attempts to access resources by using an unenrolled device, they receive a prompt to enroll, such as the one shown here:
 
 ![Example of enrollment prompt](../media/cisco-ise-user-iphone.png)
 
