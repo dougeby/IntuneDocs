@@ -30,7 +30,7 @@ In most scenarios, you will enroll your devices with Microsoft Intune, which pro
 
 -   **Software update management** - You can keep PCs up to date and decide when updates are applied.
 
--   **Windows Firewall policy** - This helps to ensure that no PC that's used by your company has an inactive or improperly-configured Windows Firewall.
+-   **Windows Firewall policy** - This helps to ensure that no PC that's used in your company has an inactive or improperly-configured Windows Firewall.
 
 -   **Anti-malware protection** - Intune includes Endpoint Protection, which helps protect your PCs from malware.
 
