@@ -65,7 +65,7 @@ You can create and deploy mobile device security policies for the following devi
 |**Allow picture password and PIN**|Yes|Yes|No|No|No|
 |**Minutes of inactivity before password is required**|No|No|No|Yes|No|
 |**Allow fingerprint unlock**|No|No|No|At least iOS 7|No|
-For iOS devices, when you configure the settings **Minutes of inactivity before screen turns off** and **Minutes of inactivity before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
+<sup>1</sup>For iOS devices, when you configure the settings **Minutes of inactivity before screen turns off** and **Minutes of inactivity before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
 
 When you deploy a password length policy to devices that run Windows RT, users will be forced to reset their password—even if their current password complies with the policy requirements.
 
@@ -75,7 +75,7 @@ When you deploy a password length policy to devices that run Windows RT, users w
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Require encryption on mobile device**<sup>1</sup><br /><br />For Windows Phone 8 devices, you must set this to **Yes**.<br /><br />To enable encryption on iOS devices, enable the setting **Require a password to unlock mobile devices**.|Yes|No|Yes|No|Yes|
 |**Require encryption on storage cards**<br /><br />This setting applies to devices that are managed by Exchange ActiveSync also.|n/a|n/a|n/a <br />Apps and associated data are automatically encrypted.|n/a|Yes|
-Here is additional information for devices that run Windows 8.1:
+<sup>1</sup>Here is additional information for devices that run Windows 8.1:
 
 -   To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](http://support.microsoft.com/kb/3013816) on each device.
 
@@ -97,7 +97,7 @@ Here is additional information for devices that run Windows 8.1:
 |Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Require automatic updates**|Yes|No|No|No|No|
-|**Require automatic updates – Minimum classification of updates to install automatically**<br /><br />Choose the classification of updates that will be installed automatically:<br /><br />**Important**. Installs all updates that are classified as important.<br /><br />**Recommended**. Installs all updates that are classified as important or recommended.|Yes|No|No|No|No|
+|**Require automatic updates – Minimum classification of updates to install automatically**<br /><br />Choose the classification of updates that will be installed automatically:<br /><br />- **Important**. Installs all updates that are classified as important.<br /><br />- **Recommended**. Installs all updates that are classified as important or recommended.|Yes|No|No|No|No|
 |**Allow screen capture**|No|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX only)|
 |**Allow control center in lock screen**|No|No|No|At least iOS 7|No|
 |**Allow notification view in lock screen**|No|No|No|At least iOS 7|No|
