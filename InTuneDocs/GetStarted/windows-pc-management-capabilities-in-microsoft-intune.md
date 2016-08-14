@@ -43,7 +43,7 @@ In most scenarios, you will enroll your devices with Microsoft Intune, which pro
 Intune supports installing the PC client software on up to 7,000 Windows devices.
 
 ## Operating system requirements
-Intune can manage PCs that are running the following Windows versions (both 86-bit and 64-bit):
+Intune can manage PCs that are running the following Windows versions (both 32-bit and 64-bit):
 
 
 -   **Windows Vista** - Business, Enterprise, and Ultimate versions
