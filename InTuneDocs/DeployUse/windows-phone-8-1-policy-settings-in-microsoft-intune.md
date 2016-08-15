@@ -69,13 +69,13 @@ Use the Microsoft Intune **Windows Phone general configuration policy (Windows P
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
 |**Allow screen capture**|Lets the user capture the contents of the screen as an image file.|No|Yes|
-|**Allow diagnostic data submission**|Allows the device to submit diagnostic information to Microsoft.|No|Yes|
+|**Allow diagnostic data submission**|Enables the device to submit diagnostic information to Microsoft.|No|Yes|
 
 ### Cloud settings – accounts and synchronization
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Allow Microsoft account**|Allows a Microsoft account to be linked to the device.|No|Yes|
+|**Allow Microsoft account**|Enables a Microsoft account to be linked to the device.|No|Yes|
 
 ### Email settings
 
@@ -87,7 +87,7 @@ Use the Microsoft Intune **Windows Phone general configuration policy (Windows P
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Allow web browser**|Allows or blocks the built-in web browser on devices.|No|Yes|
+|**Allow web browser**|Enables or blocks the built-in web browser on devices.|No|Yes|
 
 ### Application settings - apps
 
