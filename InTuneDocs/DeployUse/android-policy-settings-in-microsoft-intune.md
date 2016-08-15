@@ -207,6 +207,7 @@ This capability is intended to allow you to deploy Android settings that are not
 
 - [Create a Wi-Fi profile with a pre-shared key](pre-shared-key-wi-fi-profile.md)
 - [Use a custom policy to create a per-app VPN profile for Android devices](per-app-vpn-for-android-pulse-secure.md)
+- [Use custom policies to allow and block apps for Samsung KNOX devices](custom-policy-to-allow-and-block-samsung-knox-apps.md)
 
 ### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

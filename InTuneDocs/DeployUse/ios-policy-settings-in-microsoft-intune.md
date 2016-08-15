@@ -239,6 +239,77 @@ You can configure the following settings on devices running iOS 7.1 and later th
 |**Allow the user to install configuration profiles and certificates**|Allow the user to install configuration profiles and certificates.|
 |**Allow use of the Messages app on the device**|Allow use of the Messages app to send text messages.|
 
+### Show or Hide Apps
+
+Use the **Hidden and shown apps list** to control the following on supervised devices running iOS 9.3 or later:
+
+- Specify a list of apps that will be hidden from users. Users cannot view, or launch these apps.
+- Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
+
+
+#### How to create a hidden or shown app list
+
+Specify the following settings:
+
+|Setting name|Details|
+|-|-|
+|**Hidden and shown apps list**|Enable this setting if you want to create a hidden, or shown apps list.|
+|**Hide the listed apps from users**|Select this option if you want to create a list of apps that will be hidden from users.|
+|**Show only the listed apps to users**|Select this option if you want to create a list of apps that are displayed to users.<br>When you create this list type, all other apps except for the iOS **Settings** and **Phone** (for iPhones) apps are hidden.<br>Additionally, you must add the Company Portal, and any apps you have deployed, and manage with Intune to the list.|
+|**Add**|Adds an app to the selected list.<br>For the hidden list, you must specify the **Name**, **Publisher**, and **App URL or Bundle ID** of each app you want to hide.<br>For the shown list, you can either **Select a managed app** which gives you a list of apps you manage with Intune to select from, or Select a store app, after which you must specify the **Name**, **Publisher**, and **App URL or Bundle ID** of each app you want to display.|
+|**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|
+|**Edit**|Let’s you edit the name, publisher and URL of the selected app.|
+|**Delete**|Deletes the selected app from the list.|
+
+#### App information for built-in iOS apps
+
+Use the information in this list to identify the name, publisher, and bundle ID of the built-in iOS apps that you might want to show or hide. If you want to show or hide all of the apps in the list, you can copy the data below into a text file with the extension **.csv**, then use the **Import Apps** option to import all of the apps simultaneously.
+
+```
+App Store,Apple,com.apple.AppStore
+Calculator,Apple,com.apple.calculator
+Calendar,Apple,com.apple.mobilecal
+Camera,Apple,com.apple.camera
+Clock,Apple,com.apple.mobiletimer
+Compass,Apple,com.apple.compass
+Contacts,Apple,com.apple.MobileAddressBook
+FaceTime,Apple,com.apple.facetime
+Find Friends,Apple,com.apple.mobileme.fmf1
+Find iPhone,Apple,com.apple.mobileme.fmip1
+Game Center,Apple,com.apple.gamecenter
+GarageBand,Apple,com.apple.mobilegarageband
+Health,Apple,com.apple.Health
+iBooks,Apple,com.apple.iBooks
+iTunes Store,Apple,com.apple.MobileStore
+iTunes U,Apple,com.apple.itunesu
+Keynote,Apple,com.apple.Keynote
+Mail,Apple,com.apple.mobilemail
+Maps,Apple,com.apple.Maps
+Messages,Apple,com.apple.MobileSMS
+Music,Apple,com.apple.Music
+News,Apple,com.apple.news
+Notes,Apple,com.apple.mobilenotes
+Numbers,Apple,com.apple.Numbers
+Pages,Apple,com.apple.Pages
+Photo Booth,Apple,com.apple.Photo-Booth
+Photos,Apple,com.apple.mobileslideshow
+Podcasts,Apple,com.apple.podcasts
+Reminders,Apple,com.apple.reminders
+Safari,Apple,com.apple.mobilesafari
+Settings,Apple,com.apple.Preferences
+Stocks,Apple,com.apple.stocks
+Tips,Apple,com.apple.tips
+Videos,Apple,com.apple.videos
+VoiceMemos,Apple,com.apple.VoiceMemos
+Wallet,Apple,com.apple.Passbook
+Watch,Apple,com.apple.Bridge
+Weather,Apple,com.apple.weather
+
+
+```
+
+
+
 
 ## Custom policy settings
 
