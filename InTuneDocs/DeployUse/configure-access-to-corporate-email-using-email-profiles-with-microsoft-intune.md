@@ -6,7 +6,7 @@ description: Email profile settings can be used to configure email access settin
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 07/021/2016
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,11 +45,13 @@ In addition to setting up an email account on the device, you can set up how muc
 >
 >If the user has installed an email profile prior to set up of a profile by Intune, the result of the Intune email profile deployment depends on the device platform:
 
->**iOS**: Intune detects an existing, duplicate email profile based on host name and email address. The duplicate email profile created by the user blocks the deployment of an Intune admin-created profile. This is a common problem, as iOS users typically create an email profile, then enroll. The company portal informs the user that they are not compliant due to their manually-configured email profile, and prompts the user to remove that profile. The user should remove their email profile, so the Intune profile can be set up. To prevent the problem, instruct your users to enroll before installing an email profile, and to allow Intune to set up the profile.
+[comment]: <> Passive construction in next three paragraphs is necessary until the process of duplicate detection is made clear by PM.
 
->**Windows**: Intune detects an existing, duplicate email profile based on host name and email address. Intune overwrites the existing email profile created by the user.
+>**iOS**: An existing, duplicate email profile is detected based on host name and email address. The duplicate email profile created by the user blocks the deployment of an Intune admin-created profile. This is a common problem, as iOS users typically create an email profile, then enroll. The company portal informs the user that they are not compliant due to their manually-configured email profile, and prompts the user to remove that profile. The user should remove their email profile, so the Intune profile can be set up. To prevent the problem, instruct your users to enroll before installing an email profile, and to allow Intune to set up the profile.
 
->**Samsung KNOX**: Intune identifies a duplicate email account based on the email address, and overwrites it with the Intune profile. If the user sets up that account, it is overwritten again by the Intune profile. Note that this may cause some confusion to the user.
+>**Windows**: An existing, duplicate email profile is detected based on host name and email address. Intune overwrites the existing email profile created by the user.
+
+>**Samsung KNOX**: An existing, duplicate email profile is detected based on the email address, and overwrites it with the Intune profile. If the user sets up that account, it is overwritten again by the Intune profile. Note that this may cause some confusion to the user.
 
 >Since Samsung KNOX does not use host name to identify the profile, we recommend that you not create multiple email profiles to use on the same email address on different hosts, as these overwrite each other.
 
