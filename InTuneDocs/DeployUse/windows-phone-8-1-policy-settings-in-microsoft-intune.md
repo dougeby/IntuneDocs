@@ -41,7 +41,7 @@ Use the Microsoft Intune **Windows Phone general configuration policy (Windows P
 
 |Setting name|Details|
 |----------------|----------------------------------|
-|**Apply all configurations to Windows 10**|Allows settings in this policy to be applied to Windows 10 Mobile devices in addition to Windows Phone 8.1 devices.|
+|**Apply all configurations to Windows 10**|Enables settings in this policy to be applied to Windows 10 Mobile devices in addition to Windows Phone 8.1 devices.|
 
 ### Password settings
 
@@ -49,11 +49,11 @@ Use the Microsoft Intune **Windows Phone general configuration policy (Windows P
 |----------------|-----------------------------------------|
 |**Require a password to unlock mobile devices**|Specifies whether users must enter a password to access their devices.|Yes|Yes|
 |**Required password type**|Specifies the type of password that will be required, such as alphanumeric or numeric only.|Yes|Yes|
-|**Required password type – Minimum number of character sets**|Specifies how many different character sets must be included in the password. There are four character sets: lowercase letters, uppercase letters, numbers, and symbols.  However, for iOS devices, this specifies the number of symbols that must be included in the password.|Yes|Yes|
+|**Required password type – Minimum number of character sets**|Specifies how many different character sets must be included in the password. There are four character sets: lowercase letters, uppercase letters, numbers, and symbols. However, for iOS devices, this specifies the number of symbols that must be included in the password.|Yes|Yes|
 |**Minimum password length**|Specifies the minimum number of characters that are required in the password.|Yes|Yes|
 |**Allow simple passwords**|Specifies that simple passwords such as ‘0000’ and ‘1234’ can be used.|Yes|Yes|
 |**Number of repeated sign-in failures to allow before the device is wiped**|Specifies the number of times an incorrect password can be remembered before the device is wiped.|Yes|Yes|
-|**Minutes of inactivity before screen turns off**|Specifies the amount of time a device must remain idle before the screen is automatically locked.|Yes|Yes|
+|**Minutes of inactivity before the screen turns off**|Specifies the amount of time a device must remain idle before the screen is automatically locked.|Yes|Yes|
 |**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|Yes|
 |**Remember password history**|Specifies whether previously used passwords are remembered to prevent the user from using them again.|Yes|Yes|
 |**Remember password history** – **Prevent reuse of previous passwords**|Specifies how many previously used passwords are remembered.|Yes|Yes|
@@ -81,7 +81,7 @@ Use the Microsoft Intune **Windows Phone general configuration policy (Windows P
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Allow custom email accounts**|Allows the device to connect to non-Microsoft email accounts.|No|Yes|
+|**Allow custom email accounts**|Enables the device to connect to non-Microsoft email accounts.|No|Yes|
 
 ### Application settings - browser
 
@@ -170,7 +170,7 @@ In the **Add or Edit OMA-URI Setting** dialog box, specify the following informa
     |**Setting description**|Provide a description that gives an overview of the setting and other relevant information to help you locate it.|
     |**Data type**|Select the data type in which you will specify this OMA-URI setting. Choose from:<br /><br />-   **String**<br />-   **String (XML)**<br />-   **Date and time**<br />-   **Integer**<br />-   **Floating point**<br />-   **Boolean**|
     |**OMA-URI (case sensitive)**|Specify the OMA-URI for which you want to supply a setting.|
-    |**Value**|Specify the value to associate with the OMA-URI you specified previously.|
+    |**Value**|Specify the value to associate with the OMA-URI that you specified previously.|
 
 ### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
