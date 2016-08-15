@@ -26,26 +26,26 @@ ms.suite: ems
 ---
 
 # Enable access to company resources with Microsoft Intune
-Microsoft Intune Wi-Fi, VPN, and email profiles work together to help your users gain access to the files and resources they need to do their work successfully, wherever they are. Certificate profiles help secure that access.
+Microsoft Intune Wi-Fi, VPN, and email profiles work together to help your users gain access to the files and resources that they need to do their work wherever they are. Certificate profiles help secure that access.
 
 ## [Wi-Fi profiles](wi-fi-connections-in-microsoft-intune.md) and supported platforms
 
-Deploy wireless network settings to your users. By deploying these settings, you minimize the end-user effort required to connect to the corporate network.
+Deploy wireless network settings to your users. These settings make it easy for your users to connect to the corporate network.
 #### Supported platforms
 
 |Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
-|Yes (you can import a Windows Wi-Fi profile)|Yes (you can configure OMA-URI) |Yes|Yes|Yes|
+|Yes (You can import a Windows Wi-Fi profile.)|Yes (You can configure OMA-URI.) |Yes|Yes|Yes|
 
 ## [VPN profiles](vpn-connections-in-microsoft-intune.md) and supported platforms
-Deploy Virtual Private Network (VPN) settings to your users. By deploying these settings, you minimize the end-user effort required to connect to resources on the corporate network.
+Deploy virtual private network (VPN) settings to your users. These settings make it easy for users to connect to resources on the corporate network.
 
 |Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
 |Yes|Yes|Yes|Yes|Yes|
 
 ## [Email profiles](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) and supported platforms
-Create, deploy and monitor native email client settings on devices in your organization.
+Create, deploy, and monitor native email client settings on devices in your organization.
 
 |Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
