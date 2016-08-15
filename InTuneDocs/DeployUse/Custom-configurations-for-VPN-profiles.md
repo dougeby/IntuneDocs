@@ -30,28 +30,28 @@ ms.suite: ems
 ## Create a custom configuration
 You can use custom configurations to create VPN profiles in Intune. To create a custom configuration:
 
-   1. In the Intune admin console **Policy** -> **Add Policy** -> *<Expand platform>* -> **Custom configuration** -> **Create Policy**.
+   1. In the Intune admin console, **Policy** > **Add Policy** > *<Expand platform>* > **Custom configuration** > **Create Policy**.
    2. Provide a name for the policy.
-   3. For each URI setting, click **Add** and provide the requested information. Here's an example:
+   3. For each URI setting, choose **Add**, and provide the requested information. Here's an example:
 
    ![VPN profile custom configuration dialog box](./media/Intune_Add_VPN_URI.png)
 
-   4.  After you've entered all of the URI settings, click **Save policy** and then deploy the policy.
+   4.  After you've entered all of URI settings, choose **Save policy**, and then deploy the policy.
 
 ## Deploy a configuration policy
 
-1.  In the **Policy** workspace, select the policy you want to deploy, then click **Manage Deployment**.
+1.  In the **Policy** workspace, choose the policy that you want to deploy, and then click **Manage Deployment**.
 
 2.  In the **Manage Deployment** dialog box:
 
-    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy, then click **Add** &gt; **OK**.
+    -   **To deploy the policy** - Choose one or more groups to which you want to deploy the policy, and then click **Add** &gt; **OK**.
 
-    -   **To close the dialog box without deploying it** - Click **Cancel**.
+    -   **To close the dialog box without deploying it** - Choose **Cancel**.
 
-When you select a deployed policy, you can view further information about the deployment in the lower part of the policies list.
+When you choose a deployed policy, you can view further information about the deployment in the lower part of the policies list.
 
 ##Example of URI settings for a custom VPN profile configuration
-Here are example entries for URI values to create a custom configuration for a VPN in a fictitious company called Contoso. For more information, such as the data type for each entry, see [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
+Here are example entries for URI values to create a custom configuration for a VPN in a fictitious company called Contoso. For more information, like the data type for each entry, see [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 Native Contoso VPN (IKEv2):
 ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -108,8 +108,8 @@ Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id**
 Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-For any questions about how these settings should be used, or more details about what they do, customers should refer to the CSP documentation:
-https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
+For any questions about how these settings should be used or more details about what they do, customers should refer to the configuration service provider (CSP) documentation:
+https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## URI settings for Android per-app VPN on PulseSecure
 ### CUSTOM URI FOR PACKAGE LIST
