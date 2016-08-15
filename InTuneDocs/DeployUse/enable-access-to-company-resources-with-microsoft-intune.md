@@ -51,7 +51,7 @@ Create, deploy, and monitor native email client settings on devices in your orga
 |---------------------|---------------------------|---|-------|------------|
 |No|Yes|Yes|No|Yes|
 > [!NOTE]
-> [This Intune team blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/) gives information about how to set up a Windows Phone 8.1 Wi-Fi profile using OMA-URI.
+> [This Intune team blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/) gives information about how to configure a Windows Phone 8.1 Wi-Fi profile using OMA-URI.
 
 ## [Certificate profiles](secure-resource-access-with-certificate-profiles.md) and supported platforms
 Help secure access to company resources including wireless networks and VPN connections.
