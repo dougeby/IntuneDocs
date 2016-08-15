@@ -28,7 +28,7 @@ ms.suite: ems
 # Using Cisco ISE with Microsoft Intune
 Intune integration with Cisco Identity Services Engine (ISE) allows you to author network policies in your ISE environment by using the Intune device-enrollment and compliance state. You can use these policies to ensure that access to your company network is restricted to devices that are managed by Intune and compliant with Intune policies.
 
-## Configuration
+## Configuration steps
 
 To enable this integration, you don’t need to do any setup in your Intune tenant. You will need to provide permissions to your Cisco ISE server to access your Intune tenant. After that's done, the rest of the setup happens in your Cisco ISE server. This article gives you instructions on providing your ISE server with permissions to access your Intune tenant.
 
