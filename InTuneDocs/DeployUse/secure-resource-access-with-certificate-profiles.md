@@ -30,7 +30,7 @@ When you give users access to corporate resources through VPN, Wi-Fi, or email p
 
 1. Make sure you have the right certificate infrastructure in place, as described in [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) and [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md).
 
-2. Install a root certificate or an intermediate Certification Authority (CA) certificate on each device so that the device recognizes the legitimacy of your CA. To do this, create and deploy a **Trusted Certificate Profile**. When you deploy this profile, the devices that you manage with Intune will request and receive the root certificate. You have to create a separate profile for each platform. The **Trusted Certificate Profile** is available for these platforms:
+2. Install a root certificate or an intermediate certification authority (CA) certificate on each device so that the device recognizes the legitimacy of your CA. To do this, create and deploy a **Trusted Certificate Profile**. When you deploy this profile, the devices that you manage with Intune will request and receive the root certificate. You have to create a separate profile for each platform. The **Trusted Certificate Profile** is available for these platforms:
  -  iOS 7.1 and later
  -  Mac OS X 10.9 and later
  -  Android 4.0 and later
@@ -51,7 +51,7 @@ You must create a separate profile for each platform. When you create the profil
 
 > [!NOTE]           
 > - If you don't have an enterprise certification authority, you must create one.
->- If you decide, based on your device platforms, to use the Simplified Certificate Enrollment Protocol (SCEP) profile, you also need to configure a Network Device Enrollment Service (NDES) server.
+>- If you decide, based on your device platforms, to use the Simplified Certificate Enrollment Protocol (SCEP) profile, you'll also need to configure a Network Device Enrollment Service (NDES) server.
 >-  Whether you plan to use SCEP or .PFX profiles, you must download and configure the Microsoft Intune Certificate Connector.
 >-  Learn how to configure all of the required services in [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) or [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md).
 
