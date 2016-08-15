@@ -81,5 +81,6 @@
         "branch": "master"
       }
     ],
-    "notification_subscribers": [""]
+    "notification_subscribers": [""],
+  "need_preview_pull_request": "true"
 }
