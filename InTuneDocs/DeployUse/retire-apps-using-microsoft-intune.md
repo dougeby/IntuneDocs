@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Retire apps using Microsoft Intune
 
-To retire an app, you simply uninstall it. When you deploy and manage apps with Intune, the process for uninstalling the app is the same for both mobile devices and PCs that are running Windows. The app must support the uninstallation process for this procedure to succeed.
+To retire an app, you simply uninstall it. When you deploy and manage apps with Intune, the process for uninstalling the app is the same for both mobile devices and Windows PCs. The app must support the uninstallation process for this procedure to succeed.
 
 ## Uninstall an app
 
