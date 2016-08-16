@@ -37,7 +37,7 @@ To enable this integration, you don’t need to do any setup in your Intune tena
 
 	#### Internet Explorer 11
 
-    a. Run Internet Explorer as an administrator, and log in to the AAD console.
+    a. Run Internet Explorer as an administrator, and log in to the Azure Active Directory console.
 
     b. Choose the lock icon in the address bar and choose **View certificates**
 
@@ -66,12 +66,15 @@ To enable this integration, you don’t need to do any setup in your Intune tena
 
 
 2. From within the ISE console, import the Intune certificate (the file you exported) into the  **Trusted Certificates** store.
-3. In your ISE console, go to **Administration** > **Certificates** > **System Certificates**.
-4. Select the ISE certificate and then choose **Export**.
-5. In a text editor, edit the exported certificate:
+### Obtain a self-signed cert from ISE 
+1.  In the ISE console, go to **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate** **.  
+2.       Export the self-signed certificate.
+3. In a text editor, edit the exported certificate:
+[comment]: <> I'd rather not put a period at the end of these two statements, I think it could be confusing.
  - Delete ** -----BEGIN CERTIFICATE-----**
  - Delete ** -----END CERTIFICATE-----**
- - Ensure all of the text is a single line
+ 
+Ensure all of the text is a single line
 
 ### Step 2: Create an app for ISE in your AAD tenant
 1. In the Azure Active Directory (AAD) console, choose **Applications** > **Add an Application** > **Add an application my organization is developing**.
