@@ -47,7 +47,7 @@ When you give users access to corporate resources through VPN, Wi-Fi, or email p
     -   Mac OS X 10.9 and later
     -   Windows Phone 8.1 and later
 
-You must create a separate profile for each platform. When you create the profile, associate it with the **Trusted Certificate Profile** that you've already created.
+You must create a separate profile for each platform. When you create the profile, associate it with the **Trusted Root Certificate Profile** that you've already created.
 
 > [!NOTE]           
 > - If you don't have an Enterprise Certification Authority, you must create one.
