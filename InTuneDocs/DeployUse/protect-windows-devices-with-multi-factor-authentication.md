@@ -44,9 +44,9 @@ If your organization has an on-premises IT infrastructure that includes an Activ
 >MFA can be required on a per-user or per-group basis on the ADFS server.  
 
 #### MFA without Intune
-If you set up MFA on your federation server, but you don’t enable MFA for enrollment in Intune, users will need to use MFA each time that they use corporate resources (not just at device enrollment).
+If you set up MFA on your federation server, but you don’t enable MFA for enrollment in Intune, users will need to use MFA each time that they access corporate resources (not just at device enrollment).
 
-You can also use Azure Active Directory MFA to require MFA on a per-user basis each time that users access corporate resources. Azure Active Directory MFA is a cloud service that does not require any on-premises IT infrastructure. To learn how to set up Azure Active Directory MFA, see [Getting started with Azure Multi-Factor Authentication in the cloud.](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-cloud/).
+You can also use Azure Active Directory (Azure AD) MFA to require MFA on a per-user basis each time that users access corporate resources. Azure AD MFA is a cloud service that does not require any on-premises IT infrastructure. To learn how to set up Azure AD MFA, see [Getting started with Azure Multi-Factor Authentication in the cloud.](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-cloud/).
 
 ## Requiring ADFS MFA during enrollment of Windows devices
 For information about how to enable MFA in ADFS, see [Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](http://technet.microsoft.com/library/dn280949.aspx).
