@@ -52,7 +52,7 @@ Use the Microsoft Intune **Windows Phone general configuration policy (Windows P
 |**Required password type – Minimum number of character sets**|Specifies how many different character sets must be included in the password. There are four character sets: lowercase letters, uppercase letters, numbers, and symbols. However, for iOS devices, this specifies the number of symbols that must be included in the password.|Yes|Yes|
 |**Minimum password length**|Specifies the minimum number of characters that are required in the password.|Yes|Yes|
 |**Allow simple passwords**|Specifies that simple passwords such as ‘0000’ and ‘1234’ can be used.|Yes|Yes|
-|**Number of repeated sign-in failures to allow before the device is wiped**|Specifies the number of times an incorrect password can be remembered before the device is wiped.|Yes|Yes|
+|**Number of repeated sign-in failures to allow before the device is wiped**|Specifies the number of times an incorrect password can be entered before the device is wiped.|Yes|Yes|
 |**Minutes of inactivity before the screen turns off**|Specifies the amount of time a device must remain idle before the screen is automatically locked.|Yes|Yes|
 |**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|Yes|
 |**Remember password history**|Specifies whether previously used passwords are remembered to prevent the user from using them again.|Yes|Yes|
