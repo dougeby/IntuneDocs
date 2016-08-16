@@ -28,6 +28,8 @@ ms.suite: ems
 # Enroll devices for management in Intune
 Microsoft Intune mobile device management (MDM) uses enrollment to bring devices into management and allow access to resources. The way you'll enroll devices depends on the device type, ownership, and the level of management needed. "Bring your own device" (BYOD) and company-owned device (COD) scenarios require an enrollment process. Organizations using Exchange ActiveSync, either on-premises or hosted in the cloud, can enable lighter management without enrollment requirements. Windows PCs can also be managed using Intune client software.
 
+See [choose how to enroll devices](/intune/get-started/choose-how-to-enroll-devices1.md) for help.
+
 ###  Supported device platforms
 
 Intune can manage the following device platforms:
