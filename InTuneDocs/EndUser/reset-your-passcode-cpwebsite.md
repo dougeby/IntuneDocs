@@ -39,7 +39,7 @@ To reset your passcode:
 
 2.  Tap **Reset Passcode**.
 
-    !resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  Tap **Sign out**, and then sign back in with your work or school credentials. You have to sign back in within five minutes.
 
