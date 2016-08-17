@@ -39,7 +39,9 @@ This topic describes the process of creating a MAM policy in the **Azure portal*
 MAM policies created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be recreated in the Azure portal.
 
 
-> You may not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies. If you want to deploy managed apps, you must create a MAM policy in the Intune admin console. If you create MAM policies on both Intune admin console and Azure portal, the app applies the policy that was created in the Azure portal.
+> You may not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies.
+If however you want to deploy managed apps, you must create a MAM policy in the Intune admin console. In this case you may want to create MAM policies in both the Intune admin console and the Azure portal: Intune admin console to make sure you have the ability to deploy managed apps, Azure portal so you can apply all the MAM policy settings.
+If you create MAM policies on both Intune admin console and Azure portal, the policy that is created in the Azure portal is applied when the app is accessed.
 
 To see a list of policy settings supported for Android and iOS platforms, select one of the following:
 
