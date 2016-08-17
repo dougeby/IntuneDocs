@@ -64,7 +64,7 @@ You can create and deploy mobile device security policies for the following devi
 |**Password quality**|No|No|No|No|Yes|
 |**Allow picture password and PIN**|Yes|Yes|No|No|No|
 |**Minutes of inactivity before password is required**|No|No|No|Yes|No|
-|**Allow fingerprint unlock**|No|No|No|At least iOS 7|No|
+|**Allow fingerprint unlock**|No|No|No|iOS 7 and later|No|
 <sup>1</sup>For iOS devices, when you configure the settings **Minutes of inactivity before screen turns off** and **Minutes of inactivity before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
 
 When you deploy a password length policy to devices that run Windows RT, users will be forced to reset their password—even if their current password complies with the policy requirements.
@@ -99,9 +99,9 @@ When you deploy a password length policy to devices that run Windows RT, users w
 |**Require automatic updates**|Yes|No|No|No|No|
 |**Require automatic updates – Minimum classification of updates to install automatically**<br /><br />Choose the classification of updates that will be installed automatically:<br /><br />- **Important**. Installs all updates that are classified as important.<br /><br />- **Recommended**. Installs all updates that are classified as important or recommended.|Yes|No|No|No|No|
 |**Allow screen capture**|No|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX only)|
-|**Allow control center in lock screen**|No|No|No|At least iOS 7|No|
-|**Allow notification view in lock screen**|No|No|No|At least iOS 7|No|
-|**Allow today view in lock screen**|No|No|No|At least iOS 7|No|
+|**Allow control center in lock screen**|No|No|No|iOS 7 and later|No|
+|**Allow notification view in lock screen**|No|No|No|iOS 7 and later|No|
+|**Allow today view in lock screen**|No|No|No|iOS 7 and later|No|
 |**User Account Control**|Yes|No|No|No|No|
 |**Allow diagnostic data submission**|Yes|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX only)|
 |**Allow untrusted TLS certificates**|No|No|No|Yes|No|
@@ -165,11 +165,11 @@ When you deploy a password length policy to devices that run Windows RT, users w
 |**Allow application store**|No|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX only)|
 |**Require a password to access application store**|No|No|No|Yes|No|
 |**Allow in-app purchases**|No|No|No|Yes|No|
-|**Allow managed documents in other unmanaged apps**|No|No|No|At least iOS 7|No|
-|**Allow unmanaged documents in other managed apps**|No|No|No|AT least iOS 7|No|
+|**Allow managed documents in other unmanaged apps**|No|No|No|iOS 7 and later|No|
+|**Allow unmanaged documents in other managed apps**|No|No|No|iOS 7 and later|No|
 |**Allow video conferencing**|No|No|No|Yes|No|
 |**Allow adult content in media store**|No|No|No|Yes|No|
-|**Allow app installation**|No|No|No|At least iOS 6|No|
+|**Allow app installation**|No|No|No|iOS 6 and later|No|
 
 ## Application settings - gaming
 
