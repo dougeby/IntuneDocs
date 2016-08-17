@@ -24,6 +24,7 @@ ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
+
 ---
 
 # Understand Microsoft Intune operations by using reports
