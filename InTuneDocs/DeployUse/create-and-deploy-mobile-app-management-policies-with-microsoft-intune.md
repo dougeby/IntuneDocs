@@ -43,7 +43,7 @@ Consider the following if you are currently using the **Intune admin console** t
 
 > * To deploy manage apps, you must create a MAM policy in the Intune admin console. In this case, you may want to create MAM policies in both the Intune admin console and the Azure portal: Intune admin console to make sure you have the ability to deploy managed apps, Azure portal because it is the new admin console that has all the MAM policy settings.
 
-> * If you create MAM policies on both Intune admin console and Azure portal, the policy that is created in the Azure portal is applied when the app is accessed.
+> * If you create MAM policies on both Intune admin console and Azure portal, the policy that is created in the Azure portal is applied to the apps.
 
 To see a list of policy settings supported for Android and iOS platforms, select one of the following:
 
