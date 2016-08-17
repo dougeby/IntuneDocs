@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Configure Intune certificate profiles
-After you've configured your infrastructure and certificates as described in [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) or [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md), you can set up certificate profiles. Here's the process:
+After you've configured your infrastructure and certificates as described in [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) or [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md), you can create certificate profiles. Here's the process:
 
 - **Task 1**: Export the Trusted Root CA certificate
 - **Task 2**: Create Trusted certificate profiles
