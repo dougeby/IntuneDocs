@@ -49,7 +49,7 @@ For mobile device operating systems including iOS, Android and Windows Phone, yo
 |**Who un-enrolls?**|Owner or administrator|Platform |Administrator or user|Administrator or user|
 |**Who can reset?**|Owner or administrator|Administrator|Administrator|Administrator|
 
-For additional guidance, see [choose how to enroll mobile devices](/intune/get-started/choose-how-to-enroll-devices1.md).
+For additional guidance, see [choose how to enroll mobile devices](/intune/get-started/choose-how-to-enroll-devices1).
 
 > [!NOTE]
 > See [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md) for a full list of the capabilities that enrolling devices gives you.
