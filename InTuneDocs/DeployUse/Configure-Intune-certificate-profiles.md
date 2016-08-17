@@ -45,8 +45,7 @@ You must create a Trusted certificate profile before you can create a Simple Cer
 ### To create a Trusted certificate profile
 
 1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**.
-2.  Set up one of these policy types:
-
+2.  Add one of these policy types:
     - **Android &gt; Trusted Certificate Profile (Android 4 and later)**
     - **iOS &gt; Trusted Certificate Profile (iOS 7.1 and later)**
     - **Mac OS X &gt; Trusted Certificate Profile (Mac OS X 10.9 and later)**
@@ -63,10 +62,10 @@ You must create a Trusted certificate profile before you can create a Simple Cer
 
 		`CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
 
-		In this example, the admin created a subject name format that, in addition to the `CN` and `E` variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. Supported strings are listed in the topic [CertStrToName function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).  
+		In this example, the admin created a subject name format that, in addition to the `CN` and `E` variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) lists supported strings.  
 4.  Choose **Save Policy**.
 
-The new policy is shown in the **Policy** workspace, and you can deploy it.
+The new policy is shown in the **Policy** workspace. Now you can deploy it.
 
 ## **Task 3**: Create SCEP or .PFX certificate profiles
 After you create a Trusted CA certificate profile, create SCEP or .PFX certificate profiles for each platform you want to use. When you create an SCEP certificate profile, you must specify a Trusted certificate profile for that same platform. This links the two certificate profiles, but you still must deploy each profile separately.
@@ -74,7 +73,7 @@ After you create a Trusted CA certificate profile, create SCEP or .PFX certifica
 ### To create an SCEP certificate profile
 
 1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**.
-2.  Set up one of these policy types:
+2.  Add one of these policy types:
     - **Android &gt; SCEP Certificate Profile (Android 4 and later)**
     - **iOS &gt; SCEP Certificate Profile (iOS 7.1 and later)**
     - **Mac OS X &gt; SCEP Certificate Profile (Mac OS X 10.9 and later)**
@@ -92,16 +91,16 @@ After you create a Trusted CA certificate profile, create SCEP or .PFX certifica
 
 	>     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
 
-	>    In this example, the admin created a subject name format that, in addition to the `CN` and `E` variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. Supported strings are listed in the topic [CertStrToName function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).
+	> In this example, the admin created a subject name format that, in addition to the `CN` and `E` variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) lists supported strings.
 
 4.  Choose **Save Policy**.
 
-The new policy is shown in the **Policy** workspace, and you can deploy it.
+The new policy is shown in the **Policy** workspace. Now you can deploy it.
 
 ### To create a .PFX certificate profile
 
 1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**.
-2.  Set up one of these policy types:
+2.  Add one of these policy types:
   - **Android &gt; .PFX Certificate Profile (Android 4 and later)**
   - **Windows &gt; PKCS #12 (.PFX) Certificate Profile (Windows 10 and later)**
   - **Windows &gt; PKCS #12 (.PFX) Certificate Profile (Windows Phone 10 and later)**
@@ -110,7 +109,7 @@ The new policy is shown in the **Policy** workspace, and you can deploy it.
 3.  Enter the information requested on the policy form.
 4.  Choose **Save Policy**.
 
-The new policy is shown in the **Policy** workspace, and you can deploy it.
+The new policy is shown in the **Policy** workspace. Now you can deploy it.
 
 ## Deploy certificate profiles
 When you deploy certificate profiles, the certificate file from the Trusted CA certificate profile is installed on the device. The device uses the SCEP or .PFX certificate profile to create a certificate request by the device.
