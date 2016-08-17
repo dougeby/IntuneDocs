@@ -27,14 +27,14 @@ ms.suite: ems
 
 # Deploy and monitor a device compliance policy in Microsoft Intune
 ## Deploy a compliance policy
-Deploy the compliance policy you [created](create-a-device-compliance-policy-in-microsoft-intune.md) to one or more groups of users or devices in your organization.
+Deploy the compliance policy you [created](create-a-device-compliance-policy-in-microsoft-intune.md) to one or more groups of users in your organization. When a compliance policy is deployed to a user, the user's devices are checked for compliance.
 
 1.  In the **Policy** workspace, select the policy you want to deploy, then choose **Manage Deployment**.
 ![Screenshot of the compliance policy page showing the Manage Deployment menu option at the top](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  In the **Manage Deployment** dialog box, choose one or more groups to which you want to deploy the policy, then choose **Add > OK**.
 ![Screenshot of the manage deployment dialog box](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
-You can deploy a compliance policy to users and/or devices. Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. To learn more about how to deploy policies, see [deploy a configuration policy](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+You can deploy a compliance policy to users. Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. To learn more about how to deploy policies, see [deploy a configuration policy](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 Use the status summary and alerts on the **Overview** page of the **Policy** workspace to identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
