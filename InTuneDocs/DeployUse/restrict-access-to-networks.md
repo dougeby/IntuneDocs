@@ -66,7 +66,7 @@ To enable this integration, you don’t need to do any setup in your Intune tena
 
 2. From within the ISE console, import the Intune certificate (the file you exported) into the  **Trusted Certificates** store.
 ### Obtain a self-signed cert from ISE 
-1.  In the ISE console, go to **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate** **.  
+1.  In the ISE console, go to **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate**.  
 2.       Export the self-signed certificate.
 3. In a text editor, edit the exported certificate:
 [comment]: <> I'd rather not put a period at the end of these two statements, I think it could be confusing.
