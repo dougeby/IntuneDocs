@@ -31,7 +31,7 @@ Your answers to this series of questions will help determine the best enrollment
 ## **How will you manage dedicated iOS devices?**
 
   > [!div class="button"]
-  [Tag with IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) [iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS Setup Assistant >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Tag with IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)   [iOS Setup Assistant >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Tag with IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   You can enroll corporate-owned devices with dedicated users in the following ways:
 
