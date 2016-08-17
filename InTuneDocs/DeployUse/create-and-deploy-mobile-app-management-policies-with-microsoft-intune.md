@@ -34,12 +34,16 @@ This topic describes the process of creating a MAM policy in the **Azure portal*
 - Devices that are not managed by any MDM solution (BYOD).
 
 >[!IMPORTANT]
+Consider the following if you are currently using the **Intune admin console** to manage your devices:
 
-> If you are currently using the **Intune admin console** to manage your devices, you can create a MAM policy that supports apps for devices enrolled in Intune using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
-MAM policies created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be recreated in the Azure portal.
+> * You can create a MAM policy that supports apps for devices enrolled in Intune using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+> * MAM policies created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be recreated in the Azure portal.
 
+> * You may not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies.
 
-> You may not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies. If you create MAM policies on both Intune admin console and Azure portal, the policy in the Azure portal is applied to the apps and deployed to users.
+> * To deploy manage apps, you must create a MAM policy in the Intune admin console. In this case, you may want to create MAM policies in both the Intune admin console and the Azure portal: Intune admin console to make sure you have the ability to deploy managed apps, Azure portal because it is the new admin console that has all the MAM policy settings.
+
+> * If you create MAM policies on both Intune admin console and Azure portal, the policy that is created in the Azure portal is applied to the apps.
 
 To see a list of policy settings supported for Android and iOS platforms, select one of the following:
 

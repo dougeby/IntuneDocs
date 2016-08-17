@@ -37,6 +37,7 @@ To enable this integration, you don’t need to do any setup in your Intune tena
 
 	#### Internet Explorer 11
 
+
     a. Run Internet Explorer as an administrator, and sign in to the Azure AD console.
 
     b. Choose the lock icon in the address bar and choose **View certificates**.
@@ -59,15 +60,21 @@ To enable this integration, you don’t need to do any setup in your Intune tena
 
     d. Choose the certificate, and then choose **Export**.  
 
-  > [!IMPORTANT]
-  > Check the expiration date of the certificate because you'll have to export and import a new certificate when this one expires.
-2. From within the ISE console, import the Intune certificate (the file that you exported) into the **Trusted Certificates** store.
-3. In your ISE console, go to **Administration** > **Certificates** > **System Certificates**.
-4. Select the ISE certificate, and then choose **Export**.
-5. In a text editor, edit the exported certificate:
- - Delete ** -----BEGIN CERTIFICATE-----**.
- - Delete ** -----END CERTIFICATE-----**.
- - Ensure all of the text is on a single line.
+	> [!IMPORTANT]
+	> Check the expiration date of the certificate, as you will have to export and import a new certificate when this one expires.
+
+
+2. From within the ISE console, import the Intune certificate (the file you exported) into the  **Trusted Certificates** store.
+### Obtain a self-signed cert from ISE 
+1.  In the ISE console, go to **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate**.  
+2.       Export the self-signed certificate.
+3. In a text editor, edit the exported certificate:
+[comment]: <> I'd rather not put a period at the end of these two statements, I think it could be confusing.
+ - Delete ** -----BEGIN CERTIFICATE-----**
+ - Delete ** -----END CERTIFICATE-----**
+ 
+Ensure all of the text is a single line
+
 
 ### Step 2: Create an app for ISE in your Azure AD tenant
 1. In the Azure AD console, choose **Applications** > **Add an Application** > **Add an application my organization is developing**.
