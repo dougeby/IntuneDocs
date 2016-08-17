@@ -43,7 +43,7 @@ Intune increased the maximum configurable device enrollment limit from 5 to 15 d
 <!---TFS 1289896 --->
 
 #### TeamViewer Integration for Windows PCs running the Intune client software
-[TeamViewer](https://www.teamviewer.com) integration for Windows PCs that run the Intune client lets you establish remote assistance sessions with Windows PCs to help support end-user helpdesk departments. This includes Windows 7, 8, 8.1 and Windows 10. For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
+[TeamViewer](https://www.teamviewer.com) integration for Windows PCs that run the Intune client lets you establish remote assistance sessions with Windows PCs to help support end-user helpdesk departments. This includes Windows 7, 8, 8.1 and Windows 10. For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 <!---TFS 1284856--->
 
 ### Company Portal updates
@@ -69,7 +69,7 @@ Only use DEM accounts when user-less enrollment for shared devices is unavailabl
 <!---TFS 1233681--->
 
 ### Change of names for Windows features
-- [Microsoft Passport for Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) is now known as **Windows Hello for Business**.
+- [Microsoft Passport for Windows](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) is now known as **Windows Hello for Business**.
 - [Enterprise data protection](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) is now known as **Windows Information Protection**.
 
 ## June 2016
@@ -133,9 +133,9 @@ For more information, see [this blog post](https://blogs.technet.microsoft.com/m
 
 
 ### App management
-- **MAM SDK: Support PIN length configuration.** You will be able to specify the length of the PIN for MAM apps similar to a device PIN. This will require end users to comply with the new restrictions you set. They will see a slightly modified PIN screen to account for the longer input. For details, see [MAM policy settings for Android](/intune/deploy-use/android-mam-policy-settings), and [MAM policy settings for iOS](/intune/deploy-use/ios-mam-policy-settings).
+- **MAM SDK: Support PIN length configuration.** You will be able to specify the length of the PIN for MAM apps similar to a device PIN. This will require end users to comply with the new restrictions you set. They will see a slightly modified PIN screen to account for the longer input. For details, see [MAM policy settings for Android](android-mam-policy-settings.md), and [MAM policy settings for iOS](ios-mam-policy-settings.md).
 
-- **Skype for Business for iOS and Android.** You can now target Skype for business with [MAM without enrollment policies](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune). Once users log in, the MAM policies will be applied.
+- **Skype for Business for iOS and Android.** You can now target Skype for business with [MAM without enrollment policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md). Once users log in, the MAM policies will be applied.
 
 - **New apps available for management with MAM policies.** The Microsoft Word, Excel, and PowerPoint apps for Android can now be associated with MAM policies on devices that are not enrolled with Intune. For a full list of supported apps, go the Microsoft Intune mobile application gallery on the [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) page.
 
