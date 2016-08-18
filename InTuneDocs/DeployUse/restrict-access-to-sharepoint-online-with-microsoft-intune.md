@@ -41,7 +41,7 @@ When a user attempts to connect to a file using a supported app such as OneDrive
 >[!IMPORTANT]
 >Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
 
->If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, and would like to do so, you must to submit a request.  You can find out more information about known issues as well as how to get access to this feature at the [connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
+>If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, and would like to do so, sign up for the Azure Active Directory public preview which includes device based conditional access for Intune managed devices or domain joined Windows PCs. Read [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) to learn more.
 
 **Before** configuring a conditional access policy for SharePoint Online, you must:
 - Have a **SharePoint Online subscription** and users must be licensed for SharePoint Online.
@@ -140,7 +140,7 @@ Next, configure the policy to require that only managed and compliant devices ca
         *	Windows devices will be required to be enrolled and compliant, domain joined with on-premises Active Directory, or both
 	    * Unsupported platforms like Mac.  However, apps using modern authentication coming from these platforms will be still be blocked.
         >[!TIP]
-        >You may not see this option if you not already using conditional access for PCs.  Use the **Specific platforms** instead. Conditional access for PCs is not currently available to all Intune customers.   You can find out more information about known issues as well as how to get access to this feature at the [Microsoft Connect site](http://go.microsoft.com/fwlink/?LinkId=761472).
+        >You may not see this option if you not already using conditional access for PCs.  Use the **Specific platforms** instead. Conditional access for PCs is not currently available to all Intune customers.   You can find out more information about how to get access to this feature  [in this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Specific platforms**
 
