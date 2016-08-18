@@ -23,7 +23,7 @@ ms.suite: ems
 
 
 ---
-# Configure certificate infrastructure
+# Configure certificate infrastructure for PFX
 This topic describes what you need in order to create and deploy .PFX certificate profiles.
 
 To do any certificate-based authentication in your organization, you need an Enterprise Certification Authority.
