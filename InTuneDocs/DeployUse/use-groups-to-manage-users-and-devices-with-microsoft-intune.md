@@ -25,8 +25,8 @@ ms.suite: ems
 
 ---
 ## Notice about coming improvements to the admin experience for groups
-	
-Based on your feedback to have one grouping and targeting experience across Enterprise Mobility & Security, we're converting Intune Groups to Azure Active Directory-based Security Groups. This will unify group management across Intune and Azure Active Directory (Azure AD). The new experience will keep you from having to duplicate groups between services, and provides extensibility using PowerShell and Graph. 
+
+Based on your feedback to have one grouping and targeting experience across Enterprise Mobility + Security, we're converting Intune Groups to Azure Active Directory-based Security Groups. This will unify group management across Intune and Azure Active Directory (Azure AD). The new experience will keep you from having to duplicate groups between services, and provides extensibility using PowerShell and Graph. 
 
 ### How does this affect me right now?
 This change doesn’t affect you now, but we can tell you what's coming:
@@ -43,9 +43,9 @@ Current customers will be migrated over a period of time. We’re finalizing the
  User and device groups that you created will be migrated to Azure AD security groups. Default Intune groups, such as the All Users group, will only be migrated if you are using them in deployments at the time of migration. Migration may be more complex for some groups, and we will notify you if additional steps are required for migration.
 
 ### What new features will be available to me?
-Here is the new functionality being introduced: 
- 
--	 Azure AD Security Groups will be supported in Intune for all types of deployments. 
+Here is the new functionality being introduced:
+
+-	 Azure AD Security Groups will be supported in Intune for all types of deployments.
 -	 Azure AD Security Groups will support grouping of devices along with users.
 -	 Azure AD Security Groups will support dynamic groups with Intune device attributes. For example, you will be able to dynamically group devices based on platform, such as iOS. That way, when a new iOS device is enrolled in your organization, it will automatically be added to the iOS dynamic device group.
 -	 Shared admin experiences for group management across Azure AD and Intune.
@@ -53,13 +53,13 @@ Here is the new functionality being introduced:
 
 
 
- 
+
 ### What Intune functionality won’t be available?
 Though the group experience will improve, there will be some Intune functionality that will not be available after the migration.
 
 #### Group management functionality
 
--	You will not be able to exclude members or groups when you create a new group. However ,Azure AD dynamic groups will allow you to use attributes to create advanced rules to exclude members based on criteria. 
+-	You will not be able to exclude members or groups when you create a new group. However ,Azure AD dynamic groups will allow you to use attributes to create advanced rules to exclude members based on criteria.
 -	There won’t be support for **Ungrouped Users** and **Ungrouped Devices** groups. Those groups won't be migrated.
 
 
@@ -72,7 +72,7 @@ Though the group experience will improve, there will be some Intune functionalit
 
 ### What should I do to prepare for this change?
  We have recommendations that will make this transition easier for you:
- 
+
 - Clean up any unwanted or unneeded Intune groups before migration.
 - Evaluate your use of exclusion in groups, and consider redesigning your groups so that you don't need to use exclusion.
 -  If you have admins who do not have permissions to create groups in Azure AD, ask your Azure AD administrator to add them to the **Intune Service Administrator** Azure AD role.
