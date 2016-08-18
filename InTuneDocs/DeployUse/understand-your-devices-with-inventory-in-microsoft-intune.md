@@ -2,11 +2,11 @@
 # required metadata
 
 title: Understand your devices with inventory | Microsoft Intune
-description: use Intune to view information about the hardware of the devices you manage.
+description: Use Intune to view information about the hardware of the devices you manage.
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.suite: ems
 Microsoft Intune lets you view the inventory of enrolled devices and Windows PCs that run the Intune client software.
 
 ## What's collected from enrolled devices?
-To view the inventory collected by mobile devices, run the [Mobile Device Inventory Reports](understand-microsoft-intune-operations-by-using-reports.md). Intune collects the following inventory from enrolled devices:
+To view the inventory that's collected by mobile devices, run the [Mobile Device Inventory Reports](understand-microsoft-intune-operations-by-using-reports.md). Intune collects the following inventory from enrolled devices:
 
 |Property|Collected by|
 |------------|-----------------------|
@@ -48,10 +48,10 @@ To view the inventory collected by mobile devices, run the [Mobile Device Invent
 |**Exchange ActiveSync ID**|All devices|
 |**Jailbroken or Rooted**|iOS and Android devices only|
 |**Unique Device ID**|All devices except Exchange ActiveSync|
-|**Serial number**|iOS, Mac OS X, Android, Windows 8.1, Windows 10 devices|
-|**Total Storage Space**|iOS, Mac OS X, Windows 8.1, Windows 10 devices|
-|**Free Storage Space**|iOS, Mac OS X, Windows 8.1, Windows 10 devices|
-|**Phone Number**<br>Phones categorized as corporate are identified with their full phone number, for example, when you run a mobile device inventory report. BYOD phone numbers are masked with &#42;, with only the last 4 digits displayed.|iOS, Android, and Windows Phone devices|
+|**Serial number**|iOS, Mac OS X, Android, Windows 8.1, and Windows 10 devices|
+|**Total Storage Space**|iOS, Mac OS X, Windows 8.1, and Windows 10 devices|
+|**Free Storage Space**|iOS, Mac OS X, Windows 8.1, and Windows 10 devices|
+|**Phone Number**<br>Phones that are categorized as corporate are identified with their full phone number (for example, when you run a mobile device inventory report). BYOD phone numbers are masked with &#42;, and only the last four digits are displayed.|iOS, Android, and Windows Phone devices|
 |**IMEI**|Exchange ActiveSync, iOS, Android, and Windows Phone devices|
 |**MEID**<br>Mobile Equipment Identifier|iOS devices only|
 |**Wi-Fi MAC**|All devices except Exchange ActiveSync|
@@ -65,11 +65,11 @@ To view the inventory collected by mobile devices, run the [Mobile Device Invent
 |**Activation Lock Enabled**|iOS devices only|
 |**Encryption Enabled**|All devices|
 
-## What's collected from Windows PCs
+## What's collected from Windows PCs?
 > [!IMPORTANT]
 > This section applies only to Windows PCs that run the Intune Windows PC client software.
 
-To view the inventory collected by Windows PCs, run the [Computer Inventory Reports](understand-microsoft-intune-operations-by-using-reports.md). Intune collects the following inventory from Windows PCs:
+To view the inventory that's collected by Windows PCs, run the [Computer Inventory Reports](understand-microsoft-intune-operations-by-using-reports.md). Intune collects the following inventory from Windows PCs:
 
 -   **Name**
 

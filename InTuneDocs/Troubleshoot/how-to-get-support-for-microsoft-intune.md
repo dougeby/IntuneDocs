@@ -31,6 +31,11 @@ ms.suite: ems
 This topic tells you how to open a service request or call for phone support in many languages.
 
 For self help with Intune, see [General troubleshooting tips for Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) or any of the troubleshooting topics for specific issues, listed in the **See also** section of this topic.
+
+>[!NOTE]
+>
+>Premier customers can open an Intune support ticket on the [Premier support page](https://support.microsoft.com/en-us/premier/contacts).
+
 ## Create an online service request
 
 1.  Sign in to the [Office 365 admin center](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage) with your Intune credentials.
