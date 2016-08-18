@@ -15,7 +15,7 @@ ms.assetid: c87fe9d2-efe5-425d-99c5-3c71734e1d5d
 
 # optional metadata
 
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 #ms.reviewer: damionw
