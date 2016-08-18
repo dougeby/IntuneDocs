@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: This feature has not been enabled| Microsoft Intune
+title: This feature has not been enabled| Microsoft Intune 
 description:
 keywords:
 author: nbigman
@@ -15,10 +15,10 @@ ms.assetid: c87fe9d2-efe5-425d-99c5-3c71734e1d5d
 
 # optional metadata
 
-ROBOTS:NOINDEX,NOFOLLOW
+ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: damionw
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
