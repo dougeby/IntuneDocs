@@ -6,7 +6,7 @@ description: Learn how to automatically upgrade Windows 10 devices to the latest
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,8 +33,9 @@ The Microsoft Intune **Edition Upgrade Policy** lets you automatically upgrade d
 ## Before you start
 Before you begin to upgrade devices to the latest version, you will need one of the following:
 * A product key that is valid to install the new version of Windows on all devices that you target with the policy (for Windows 10 Desktop editions).
-* A license file from Microsoft that contains the licensing information to install the new version of Windows on all devices that you target with the policy (for Windows 10 Mobile and Windows 10 Holographic editions).
-* The Windows 10 devices that you target must be enrolled in Microsoft Intune.
+**or**
+A license file from Microsoft that contains the licensing information to install the new version of Windows on all devices that you target with the policy (for Windows 10 Mobile and Windows 10 Holographic editions).
+* The Windows 10 devices that you target must be enrolled in Microsoft Intune. You cannot use the edition upgrade policy with PCs that run the Intune PC client software.
 
 ## Edition upgrade policy settings
 
