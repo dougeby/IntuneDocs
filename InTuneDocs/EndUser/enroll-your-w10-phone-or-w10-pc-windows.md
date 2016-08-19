@@ -43,7 +43,7 @@ To enroll your Windows 10 Mobile or Windows 10 desktop device:
 
     ![connect-to-work-or-school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-	If you see this screen, follow the steps in [Steps to follow if you see Your account](#steps-to-follow-if-you-see-access-your-account).
+	If you see this screen, follow the steps in [Steps to follow if you see Your account](#steps-to-follow-if-you-see-your-account).
 
 	![your-account](./media/w10-enroll-2-accounts-your-account.png)
 
