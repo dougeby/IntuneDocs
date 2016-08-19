@@ -34,7 +34,7 @@ If you followed the steps in [Enroll your Windows 10 Mobile or Windows 10 deskto
 
     ![settings-accounts-access-work-or-school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-	If you see this screen, follow the steps in [Troubleshooting steps to follow if you see Access work or school](#troubleshooting-steps-to-follow-if-you-see-your-account).
+	If you see this screen, follow the steps in [Troubleshooting steps to follow if you see Your account](#troubleshooting-steps-to-follow-if-you-see-your-account).
 
 	![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
