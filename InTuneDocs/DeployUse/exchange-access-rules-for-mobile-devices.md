@@ -55,6 +55,6 @@ The following procedure describes how to create a custom rule:
 
 ## Create a custom access rule
 
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com) &gt; choose **Policy** &gt; **Exchange ActiveSync**.
+1. In the [Microsoft Intune administration console](http://manage.microsoft.com), choose **Policy** &gt; **Exchange ActiveSync**.
 
 2.  In the **Platform Exceptions** list, Choose **Add Rule** and create a custom rule. Choose **Save**.
