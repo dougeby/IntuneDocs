@@ -4,7 +4,7 @@
 title: Create policies and publish an app | Microsoft Intune
 description: Explains how to create policies and publish an example app for your Intune subscription
 keywords:
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article

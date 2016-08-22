@@ -4,7 +4,7 @@
 title: Intune quick start guide | Microsoft Intune
 description: Requirements and prerequisites for starting to use your Intune subscription
 keywords:
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
