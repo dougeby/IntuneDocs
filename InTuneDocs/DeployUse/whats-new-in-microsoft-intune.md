@@ -36,7 +36,7 @@ All of these features will eventually be supported for hybrid customers' deploym
 <!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
 
 ### Hidden and shown apps for iOS 9.3
-For devices running iOS 9.3 or later, you can use the hidden and shown apps list in the iOS general configuration policy to:
+For supervised devices running iOS 9.3 or later, you can use the hidden and shown apps list in the iOS general configuration policy to:
 - Specify a list of apps that will be hidden from users. Users cannot view, or launch these apps.
 - Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
 

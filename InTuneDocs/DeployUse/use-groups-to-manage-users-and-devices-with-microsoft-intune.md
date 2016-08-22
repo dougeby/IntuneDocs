@@ -24,6 +24,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# Use groups to manage users and devices in Microsoft Intune
+
+This topic describes how to create groups in Intune. It also provides information about how the management of groups is going to change over the coming months. To learn about the *current* approach to group management, see [Create groups to manage users and devices with Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in this topic.
+
 ## Notice about coming improvements to the admin experience for groups
 
 Based on your feedback to have one grouping and targeting experience across Enterprise Mobility + Security, we're converting Intune Groups to Azure Active Directory-based Security Groups. This will unify group management across Intune and Azure Active Directory (Azure AD). The new experience will keep you from having to duplicate groups between services, and provides extensibility using PowerShell and Graph. 
@@ -78,7 +82,7 @@ Though the group experience will improve, there will be some Intune functionalit
 -  If you have admins who do not have permissions to create groups in Azure AD, ask your Azure AD administrator to add them to the **Intune Service Administrator** Azure AD role.
 
 
-# Create groups to manage users and devices with Microsoft Intune
+## Create groups to manage users and devices with Microsoft Intune
 
 This section describes how to create Intune groups in the Intune administration console.
 
