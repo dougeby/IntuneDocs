@@ -4,7 +4,7 @@
 title: Network infrastructure requirements | Microsoft Intune
 description: Intune firewall, port, domain, and proxy server requirements
 keywords:
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
