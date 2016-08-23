@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage Windows PCs with Intune client | Microsoft Intune
+title: Manage PCs with client software | Microsoft Intune
 description: Manage Windows PCs by installing the Intune client software.
 keywords:
 author: nathbarn
@@ -26,11 +26,11 @@ ms.suite: ems
 ---
 
 # Manage Windows PCs with Intune PC client software
-Instead of [enrolling Windows PCs as mobile devices](set-up-windows-device-management-with-microsoft-intune.md), you can manage Windows PCs by installing the Intune client software.
+Instead of [enrolling Windows PCs as mobile devices](set-up-windows-device-management-with-microsoft-intune.md), you can enroll and manage Windows PCs by installing the Intune client software.
 
 Intune manages Windows PCs using policies similar to the way Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) do. If you will be managing Active Directory domain-joined computers with Intune, you should [be sure that Intune policies do not conflict with any GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) that are in place for your organization.
 
-While the Intune client supports [policies that help protect PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) by managing software updates, Windows firewall, and Endpoint Protection, PCs managed with the Intune client cannot be targeted with other Intune policies.
+While the Intune software client supports [management capabilities that help protect PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) by managing software updates, Windows firewall, and Endpoint Protection, PCs managed with the Intune client cannot be targeted with other Intune policies, including those **Windows** policy settings specific to mobile device management.
 
 > [!NOTE]
 > Devices that run Windows 8.1 or later can be managed using the Intune client or they can be enrolled as mobile devices. The information below applies to computers that run the Intune client. Installing both the Intune PC client and enrolling the Windows device for mobile device management is not supported.
@@ -59,16 +59,18 @@ The following are software requirements for installing the client:
 ## Install the Intune computer client
 The Intune client software can be installed in one of the following ways:
 
--   [Manually deploy the Microsoft Intune client software](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). In this type of deployment, an administrator downloads the  Intune client software and manually installs it on each PC.
+-  [Manually deploy the Microsoft Intune client software](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). In this type of deployment, an administrator downloads the  Intune client software and manually installs it on each PC.
 
   To download the  Intune client software, open the [Intune administration console](https://manage.microsoft.com) and choose **Admin** > **Client Software Download**, and click **Download Client Software**.
 
--   You can use the same files you download to manually install the  Intune client to [deploy the client to domain-joined computers using Active Directory GPOs](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
+-  Use the same files you download to manually install the  Intune client software to [deploy the client to domain-joined computers using Active Directory GPOs](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
 
--   Finally, you can also deploy the  Intune client software to computers as part of an [operating system deployment](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
+-  Deploy the  Intune client software to computers as part of an [operating system deployment](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
+
+-  Send users instructions with the URL for Intune Company Portal, [https://portal.manage.microsoft.com](http://go.microsoft.com/fwlink/?LinkId=825632). When they open the Company Portal, users are prompted to enroll their PC by downloading and running the Intune client software.
 
 ## Computer management with the Intune computer client
-After the Intune client is installed, the client software enables several computer management capabilities including: [application management](deploy-apps-in-microsoft-intune.md), Endpoint Protection, hardware and software inventory, remote control (through remote assistance requests), software updates, and compliance settings reporting.
+After the Intune client software is installed, the client software enables several computer management capabilities including: [application management](deploy-apps-in-microsoft-intune.md), Endpoint Protection, hardware and software inventory, remote control (through remote assistance requests), software updates, and compliance settings reporting.
 
 Several computer management tasks enabled by the computer client are managed using Intune policies such as:
 
@@ -77,6 +79,8 @@ Several computer management tasks enabled by the computer client are managed usi
 -   Configuring [software update settings](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) for managed computers to check for, and download, required software updates.
 
 -   Helping to secure managed computers from potential threats and malicious software through [real-time monitoring and Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) management.
+
+![Policies template for Windows PCs](../media/pc_policy_template.png)
 
 In addition to the Intune client agent actions taken locally on individual computers, you can also use the Intune admin console to perform other [common computer management tasks](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) on Windows PCs with the client installed to:
 

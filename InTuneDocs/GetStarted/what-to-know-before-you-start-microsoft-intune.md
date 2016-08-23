@@ -4,7 +4,7 @@
 title: What to know before you start Microsoft Intune | Microsoft Intune
 description: Page with links to Intune prerequisites and requirements
 keywords:
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 06/08/2016
 ms.topic: get-started-article
