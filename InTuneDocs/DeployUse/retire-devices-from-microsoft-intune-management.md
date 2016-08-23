@@ -27,7 +27,14 @@ ms.suite: ems
 
 # Retire devices from Intune management
 
-Whether devices are corporate-owned or personal, there comes a time when a managed device needs to be removed from Intune management. Device retirement is relatively straight-forward. You can perform either a selective wipe or a full wipe on devices managed as mobile devices. You can also retire PCs managed with Intune client software.
+Whether devices are corporate-owned or personal, there comes a time when a managed device needs to be removed from Intune management. A device might need to retired for a variety of reasons:
+
+-	User leaves a company in a planned way (“managed” departure)
+-	User leaves abruptly (gets fired, quits, etc.).
+-	Loss of device
+-	Repurposing of a device (move to another user, reuse for a different purpose, etc.)
+
+You can perform either a selective wipe or a full wipe on devices managed as mobile devices or lock a device and reset its password. By wiping the device you free up the user's subscription to add a different device. You can also retire PCs managed with the Intune client software.
 
 ## Wipe data and apps from devices
 Both a selective wipe and a full wipe remove the device from Intune management by removing their policy and the company portal, which means the device no longer has the credentials necessary to log on to company resources such as Microsoft SharePoint, email, or Office 365.
