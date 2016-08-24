@@ -15,7 +15,7 @@ ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
 
 # optional metadata
 
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: mamoriss

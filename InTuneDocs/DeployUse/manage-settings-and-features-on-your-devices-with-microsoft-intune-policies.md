@@ -6,7 +6,7 @@ description: Use Intune to create and deploy policies that control settings and 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -137,9 +137,6 @@ Users can also open the Company Portal app and sync the device to immediately ch
 Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app deployment, profile deployment (Wi-Fi, VPN, email, etc.), or policy deployment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.
 
 Other changes, such as revising the contact information in the company portal, do not cause an immediate notification to devices.
-
-> [!TIP]
-> When a policy that contains settings is deployed to an Android device, the user is prompted to take action to comply with the policy. Until the user takes this action or the device is restarted, the new policy settings will not take effect.
 
 ### If multiple policies are deployed to the same user or device, how do I know which settings will get applied?
 When two or more policies are deployed to the same user or device, the evaluation for which setting is applied happens at the individual setting level:
