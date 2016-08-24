@@ -15,7 +15,7 @@ ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
 
 # optional metadata
 
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: esmich

@@ -14,7 +14,7 @@ ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58c
 
 # optional metadata
 
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: vadona

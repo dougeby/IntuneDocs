@@ -6,7 +6,7 @@ description: Links to information to share with your end users
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,9 @@ Be sure that you include the IT administrator's contact information when you [cu
 
 ## Where your end users can find information about common tasks
 
-Give your end users the following end-user help links when they are looking for information about using Intune on their devices. At these links, users will find steps on how to install the Company Portal app, enroll their devices, get managed apps, troubleshoot, and more.
+When enrolled users need help using Intune, they typically see a link in the Company Portal website or Company Portal app that points them to a specific article with steps on how to fix the issue or complete the task. For example, if Android users see a message saying that they are missing a required certificate, they can tap a "How to resolve this" link to go to an article with steps on how to get the certificate. 
+
+The links below are for IT administrators. These pages contain links to all of the articles that users are sent to when from the Company Portal website or app. The link are divided into sections: Company Portal app installation and Intune enrollment; tasks that users can do on their devices, like using managed apps and manually syncing their devices; and troubleshooting.
 
 - [Using your Android device with Intune](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -64,3 +66,5 @@ To understand how your end users get their apps, choose from the following devic
 ## Help end users understand Company Portal app messages
 
 To help your users solve issues that they might have when they are using the Company Portal, you can review a [list of messages users might see in the Company Portal](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
+
+If there is other information that you would like to see covered in this article, please add your suggestion to the Comment box at the bottom of this topic. Thanks!
