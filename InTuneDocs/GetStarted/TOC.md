@@ -23,7 +23,7 @@
 ### [Post configuration tasks](post-configuration-tasks.md)
 
 ## [Choose how to manage devices](choose-how-to-manage-devices.md)
-### [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Enrolled device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md)
 ### [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Rollout phases for Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
