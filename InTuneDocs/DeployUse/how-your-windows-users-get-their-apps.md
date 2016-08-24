@@ -6,7 +6,7 @@ description: Methods for making Windows apps available to end users
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
