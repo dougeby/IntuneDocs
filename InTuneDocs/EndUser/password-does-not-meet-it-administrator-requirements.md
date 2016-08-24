@@ -28,7 +28,7 @@ ROBOTS: noindex,nofollow
 
 # Password does not meet IT administrator requirements
 
-The password that you use to access your company or school resources does not meet one or more requirements that your IT administrator set up for your device. Depending on the policies that your IT administrator created, you could be having one or a combination of these issues:
+The password that you use to access your company or school resources does not meet one or more requirements that your IT administrator set up for your device. Depending on the policies that your IT administrator created, you could be experiencing one or a combination of the following issues:
 
 - Password does not contain complex characters
 - Password is too simple and not secure enough
@@ -38,7 +38,7 @@ The password that you use to access your company or school resources does not me
 - Password was used too recently
 - Password isn't complex enough to meet requirements
 
-For information about setting your PIN or password, or for other tasks that you can do with your device, use the link that matches the type of device you have:
+For information about setting your PIN or password, or for information about other tasks that you can do with your device, use the link that matches the type of device you have:
 
 - [Set your Android device PIN or password](set-your-pin-or-password-android.md)
 - [Set or change your iOS device passcode](set-or-change-your-passcode-ios.md)
