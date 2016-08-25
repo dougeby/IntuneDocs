@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll your device in Intune | Microsoft Intune
-description: Provides links to steps on how to enroll different devices in Intune
+description: Provides links to information about how to enroll different devices in Intune
 keywords:
 author: staciebarker
 manager: angrobe
