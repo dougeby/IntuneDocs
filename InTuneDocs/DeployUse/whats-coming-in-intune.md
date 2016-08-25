@@ -98,7 +98,12 @@ The following changes are being made in September to the apps tiles in the Compa
 - The **Company Apps** tile currently points to a list of all apps in the ALL tab of the Company Portal website, and it will continue to work the same way. The tile name will change to **All Apps**.
 - The **Other Apps** tile currently points to a view, inside the Company Portal app, that lists all apps that Apple permits the Company Portal app to show. The tile name will change to **Featured Apps**, and tapping the tile will take users to the FEATURED tab of the Company Portal website.
 -  The **Categories** tile currently points to a view, inside the Company Portal app, that lists categories of apps. The tile name will not change, but it will now point to the CATEGORIES tab of the Company Portal website.
+You can find updated screenshots [here](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
 <!---TFS 1317133--->
+
+### Prompt to install the iOS Managed Browser app if IT Pro sets that requirement for an app
+In the September release of the iOS Company Portal app, if you have configured a web clip to open only in the managed browser, and the managed browser is not installed on a device, the Company Portal app on the device will prompt the user to install the managed browser before the web clip can be installed. 
+<!---TFS 1228570--->
 
 ## Service deprecation
 ### Company Portal apps for Windows 8 and Windows Phone 8 are being deprecated starting in September 2016
