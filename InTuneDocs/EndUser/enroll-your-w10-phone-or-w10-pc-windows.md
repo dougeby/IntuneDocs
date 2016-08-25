@@ -45,7 +45,7 @@ To enroll your Windows 10 Mobile or Windows 10 desktop device:
 
 	If you see this screen, follow the steps in [Steps to follow if you see Your account](#steps-to-follow-if-you-see-your-account).
 
-	![Your account](./media/w10-enroll-2-accounts-your-account.png)
+	![Your-account](./media/w10-enroll-2-accounts-your-account.png)
 
 ## Steps to follow if you see Access work or school
 
@@ -67,7 +67,7 @@ To enroll your Windows 10 Mobile or Windows 10 desktop device:
 
   ![Tap close on the "You're all set!" screen](./media/w10-enroll-rs1-youre-all-set.png)
 
-5. If you want to double-check that your connection looks right, go back to **Settings**, where you should now see that your work or school account is listed.
+5. If you want to double-check that your connection looks right, go back to **Settings**, where you should now see your work or school account listed.
 
 	![Validate that the connection was set up correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
@@ -82,7 +82,7 @@ If you followed the previous steps, but still can’t access your work or school
 
 2.  Tap **Your account**.
 
-    ![Tap your acccount](./media/W10-enroll-2-accounts-your-account.png)
+    ![Tapyouraccount](./media/W10-enroll-2-accounts-your-account.png)
 
 3.  Tap **Add a work or school account**.
 
@@ -92,7 +92,7 @@ If you followed the previous steps, but still can’t access your work or school
 
 	![sign-in](./media/W10-enroll-4-sign-in.png)
 
-If you followed previous steps, but still can't access your work or school email address, files, or other data, try the instructions in [Troubleshooting steps to follow if you see Your account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).
+If you followed the previous steps, but still can't access your work or school email address, files, or other data, try the instructions in [Troubleshooting steps to follow if you see Your account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).
 
 We also recommend that you install the Company Portal app, which lets you easily identify and get the company apps that are relevant to you and your role. Depending on how your company configured Intune, the Company Portal app may have been installed as part of your enrollment process.
 
@@ -100,11 +100,11 @@ To verify whether you have the app, look for **Company Portal** in your apps lis
 
 1.  Tap **Start** &gt; **Store**.
 
-2.  Tap **Search** and type **company portal**.
+2.  Tap **Search**, and then type **company portal**.
 
 3.  In the list of results, tap **Company Portal** &gt; **Install**.
 
-4.  Tap  either **Install** or **Free**. The option shown depends on how your company configured the app.
+4.  Tap  either **Install** or **Free**. The option that is shown depends on how your company configured the app.
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
