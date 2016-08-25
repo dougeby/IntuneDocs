@@ -6,7 +6,7 @@ description: Troubleshoot policy configuration issues.
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,17 +53,6 @@ In the screenshot below you can see two clear examples:
 > [!NOTE]
 > Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
 
-## Policy refresh and update intervals
-Be aware that policies are refreshed and updated on regular intervals. In general, policies should be registered on devices within 15 minutes of your making a change. Here are more details about regular intervals for policy refreshing:
-
--   **Windows device enrolled for MDM**: Policy is updated every 8 hours for Windows 8.1 and Windows 10 devices and every 24 hours for Windows RT devices.
-
--   **Windows Phone**: Policy is updated every 8 hours. This can be forced by a refresh in the Company Portal, under **Settings**.
-
--   **iOS**: Policy is updated once a day at a random time interval. This can also be forced by opening the Company Portal , selecting the device, and choosing **Sync**.
-
--   **Android**: Policy is updated once a day at a random time interval. This can also be forced by opening the Company Portal , selecting the device, and choosing **Sync**.
-
 ## Microsoft Intune policy-related errors in policyplatform.log
 For non-MDM Windows devices, policy errors in the policyplatform.log file may be the result of non-default settings in the Windows User Account Control (UAC) on the device. Some non-default UAC settings can affect Microsoft Intune client installations and policy execution.
 
@@ -98,9 +87,6 @@ Depending on the device platform, if you want to change the policy  to a less se
 For example, in Windows RT,  on the desktop swipe in from right to open the **Charms** bar and choose  **Settings** &gt; **Control Panel**.  Select the **User Accounts** applet.
 In the left hand navigation menu, there is a **Reset Security Policies** link at the bottom. Choose it and then choose the **Reset Policies** button.
 Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired and re-enrolled back into the service for you to be able to apply a  less restrictive policy.
-
-## Android devices do not force Security Policy Changes without end user Acceptance
-Android MDM does not allow the service to force initial policy changes on devices as other platforms allow. This is due to Android functionality, and is not related to the Intune service. Android devices will prompt the end user via the notification window of the related policy change (i.e. Password, Encryption, etc.).  The end user must respond to the prompt and once accepted the policy should be applied.
 
 ## Unable to create policy or enroll clients if the company name contains special characters
 **Issue:** You can't create policy or enroll clients.
