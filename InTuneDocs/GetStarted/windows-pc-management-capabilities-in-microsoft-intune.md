@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Windows PC management capabilities | Microsoft Intune
-description: Learn about the capabilities of Intune when you manage Windows PCs with the Intune client software.
+title: Intune PC software client capabilities | Microsoft Intune
+description: Learn about the capabilities of Intune when you manage Windows PCs with the Intune software client.
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,8 +25,8 @@ ms.suite: ems
 
 ---
 
-# Windows PC management capabilities (with the Microsoft Intune PC client)
-In most scenarios, you will enroll your devices with Microsoft Intune, which provides a greater set of capabilities than the Intune PC client. However, you can also manage PCs by using the Intune PC client, which provides the following features:
+# Windows PC management capabilities when you use the Intune software client)
+In most scenarios, you will enroll your devices with Microsoft Intune, which provides a greater set of capabilities. However, you can also manage PCs by using the Intune software client, which provides the following features:
 
 -   **Software update management** - You can keep PCs up to date and decide when updates are applied.
 
@@ -37,10 +37,10 @@ In most scenarios, you will enroll your devices with Microsoft Intune, which pro
 -   **Remote assistance** - Intune lets users contact IT support staff, who can then provide assistance by using a remote desktop feature that is included with Intune (requires TeamViewer software).
 
 -   **Software license management** - Track how many software licenses are available, and how many available licenses are being used.
--   **App deployment** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the client software.
+-   **App deployment** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the software client.
 
 
-Intune supports installing the PC client software on up to 7,000 Windows devices.
+Intune supports installing the software client on up to 7,000 Windows devices.
 
 ## Operating system requirements
 Intune can manage PCs that are running the following Windows versions (both 32-bit and 64-bit):
@@ -58,7 +58,7 @@ Intune can manage PCs that are running the following Windows versions (both 32-b
 
 
 ## Minimum hardware requirements
-Following are the minimum hardware requirements for installing the Intune PC client:
+Following are the minimum hardware requirements for installing the Intune software client:
 
 |Requirement|Details|
 |---------------|--------------------|
@@ -67,7 +67,7 @@ Following are the minimum hardware requirements for installing the Intune PC cli
 |Disk space|200 MB available disk space before the client software is installed.|
 
 ## Further requirements
-Following are the software requirements for installing the Intune PC client:
+Following are the software requirements for installing the Intune software client:
 
 |Requirement|Details|
 |---------------|--------------------|
@@ -76,4 +76,4 @@ Following are the software requirements for installing the Intune PC client:
 |Remove incompatible client software|Before you install the Intune PC client software, you must uninstall the following client software from that PC:<br /><br />-   Any version of Configuration Manager<br />-   Any version of Microsoft Systems Management Server (SMS)|
 
 ### See also
-[Mobile device management capabilities in Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
+[Enrolled device management capabilities of Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
