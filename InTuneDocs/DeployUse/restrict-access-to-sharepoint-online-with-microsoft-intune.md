@@ -90,7 +90,7 @@ AAD DRS will be activated automatically for Intune and Office 365 customers. Cus
 
   - If the policy is set to require domain-join or compliant, and the PC does not meet either requirement, a message is displayed with instructions about how to install the Company Portal  app and enroll.
   >[!NOTE]
-  >Conditional access is not on PCs running the Intune software client.
+  >Conditional access is not on PCs running the Intune computer client.
 
 -    [Office 365 modern authentication must be enabled](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), and have all the latest Office updates.
 

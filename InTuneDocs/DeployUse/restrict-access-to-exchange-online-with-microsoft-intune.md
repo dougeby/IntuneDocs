@@ -115,7 +115,7 @@ You can setup conditional access for PCs that run Office desktop applications to
 
     For domain joined PCs, you must  set it up to [automatically register the device](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory.
     >[!NOTE]
-    >Conditional access is not on PCs running the Intune software client.
+    >Conditional access is not on PCs running the Intune computer client.
 
 -   [Office 365 modern authentication must be enabled](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), and have all the latest Office updates.
 
