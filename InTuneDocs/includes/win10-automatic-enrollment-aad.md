@@ -9,7 +9,7 @@ Automatic enrollment lets users enroll either company-owned or personal Windows 
 
 ### Configure automatic MDM enrollment
 
-1. In the [Azure management portal](https://manage.windows.azure.com), navigate to the **Active Directory** node and select your directory.
+1. In the [Azure management portal](https://manage.windowsazure.com) (https://manage.windowsazure.com), navigate to the **Active Directory** node and select your directory.
 
 2. Click the **Applications** tab and you should see **Microsoft Intune** in the list of applications.
 
