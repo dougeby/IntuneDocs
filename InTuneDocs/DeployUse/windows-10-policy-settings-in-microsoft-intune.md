@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Intune policy settings for Windows 10 devices in Microsoft Intune
 
-This topic contains information to help you to understand the Intune settings you can use to manage Windows 10 devices. Read this topic alongside the procedures in [Manage settings and features on your-devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) to configure built-in and custom settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices. You cannot use these policies with PCs that run the [Intune PC client software](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune).
+This topic contains information to help you to understand the Intune policy settings you can use to manage Windows 10 devices. Read this topic alongside the procedures in [Manage settings and features on your-devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) to configure built-in and custom settings for enrolled Windows 10 desktop, and Windows 10 Mobile devices. You cannot use these policies with PCs that run the [Intune PC client software](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 
 You can choose from two policy types:
 
