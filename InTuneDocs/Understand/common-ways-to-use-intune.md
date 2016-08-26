@@ -6,7 +6,7 @@ description: Lists six of the most common tasks that Intune helps with
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,6 +31,9 @@ Before diving into implementation tasks it is important to align your company’
 
 >[!NOTE]
 >Do you want to know how Microsoft IT uses Intune to enable Microsoft employees to access corporate resources on their mobile devices while also keeping corporate data protected? [Read this technical case study](https://www.microsoft.com/itshowcase/Article/Content/588) to see in detail how Microsoft IT uses Intune and other services to manage identity, devices, and apps, and data.  
+
+## Ensuring mobile devices are up to date
+In light of the recent "Trident" malware attacks on iOS devices, we've published a new blog post, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) to help you learn about the different ways that Intune can help keep your devices secure and up to date.
 
 ## Securing your on-premises email and data so it can be safely accessed by mobile devices
 Most enterprise mobility strategies begin with a plan to enable secure access to email for employees with mobile devices out on the internet. Many organizations still have on-premises data and application servers, like Microsoft Exchange, hosted on their corporate network. Intune and the Enterprise Mobility Suite (EMS) provide a uniquely integrated [conditional access solution](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) for Exchange Server that ensures no mobile apps will be able to access email until the device is enrolled with Intune, all without deploying another gateway machine to the edge of your corporate network!
