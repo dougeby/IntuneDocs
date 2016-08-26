@@ -27,12 +27,12 @@ ms.suite: ems
 
 
 # Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune
-For help connecting your Windows Phone with Intune, you can find help [here](../enduser/using-your-windows-device-with-intune.md).
+For help connecting your Windows Phone with Intune, [click here](../enduser/using-your-windows-device-with-intune.md).
 
 As an Intune administrator, you can enable Windows 10 Mobile and Windows Phone management in two ways:
 
-- **[Automatic enrollment through Azure Active Directory (Azure AD) Premium](#azure-active-directory-enrollment)** (preferred) -  Windows 10 and Window 10 Mobile devices are enroll by joining their work or school account to the device.
-- **[Company Portal enrollment](#company-portal-app-enrollment)** - Windows 8.1 and later devices are enrolled by downloading and installing the Company Portal app, and then entering their work or school account credentials in the app.
+- **[Automatic enrollment with Azure AD](#azure-active-directory-enrollment)** -  Window 10 Mobile and later devices are enroll by joining their work or school account to the device.
+- **[Company Portal enrollment](#company-portal-app-enrollment)** - Windows 8.1 and later devices are enrolled by downloading and installing the Company Portal app, and then entering their work or school account credentials in the Company Portal app.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 

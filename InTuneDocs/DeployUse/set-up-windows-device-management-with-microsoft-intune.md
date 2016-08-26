@@ -26,13 +26,21 @@ ms.suite: ems
 ---
 
 # Set up Windows device management
-To set up your Windows device, you can find help [here](../enduser/using-your-windows-device-with-intune.md).
+For help connecting your Windows PC with Intune, [click here](../enduser/using-your-windows-device-with-intune.md).
 
+As an Intune administrator, you can enable Windows PC management in two ways:
+
+- **[Automatic enrollment with Azure AD](#azure-active-directory-enrollment)** -  Windows 10 and Window 10 Mobile devices are enroll by joining their work or school account to the device.
+- **[Company Portal enrollment](#company-portal-app-enrollment)** - Windows 8.1 and later devices are enrolled by downloading and installing the Company Portal app, and then entering their work or school account credentials in the app.
+
+[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
+
+## Company Portal app enrollment
 With Intune, you can enable BYOD ("bring your own device") for Windows PC device enrollment to give access to company email and apps. Used with Azure Active Directory, this also provides a fast, no-touch way to bring new Windows 10 devices into management and gain access to company resources without having to reimage the computer. Once enrolled, users can log in and their devices can be targeted with policy, apps, and settings using the Intune administration console. You may also want to [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) or [manage computers with Intune client software](manage-windows-pcs-with-microsoft-intune.md) using the Intune client.
 
 Creating a DNS CNAME helps users connect and enroll in Intune without entering a server name.
 
-### Set up Windows device management
+## Set up Windows device management
 
   1.  Create **CNAME** DNS resource record for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to EnterpriseEnrollment-s.manage.microsoft.com. Although the CNAME DNS entry is optional for Windows device enrollment, it is recommended to create one or more records when necessary, to make things easier during the Windows device enrollment process. If no CNAME record is found, the user is prompted to enter the MDM server name manually.
 
