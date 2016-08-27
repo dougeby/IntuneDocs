@@ -29,12 +29,15 @@ ms.suite: ems
 
 Before you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
-You can manage the following mobile devices and computers:
+You can enroll, then manage the following device types:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
-You can manage these devices and PCs, even if they are not joined to a domain or brought onsite. See [Choose how to manage devices](/Intune/get-started/choose-how-to-manage-devices) for more about managing devices.
+Enrolling devices provides [these capabilities](/Intune/get-started/choose-how-to-manage-devices).
 
+Alternatively, you can manage Windows PCs with the Intune PC client software. The Intune PC client software supports Windows 7 and later, except Windows 10 Home.Managing PCs with the client software provides [these capabilities](/Intune/).
+
+Customers with Enterprise Management Suite can also use Azure Active Directory (Azure AD) to register Windows 10 devices.
 
 ### See also
 [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
