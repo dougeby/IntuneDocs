@@ -107,6 +107,7 @@
 #### [Create and deploy MAM policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM policies for Android](android-mam-policy-settings.md)
 #### [MAM policies for iOS](ios-mam-policy-settings.md)
+#### [Validate MAM policies](validate-mobile-application-management.md) 
 #### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [End user experience](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
