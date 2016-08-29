@@ -46,6 +46,3 @@ For instructions on how to unenroll, see [Unenroll your device from Intune by us
 
 Need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
 
-
-### See also
-[Using your Android device with Intune](using-your-android-device-with-intune.md)

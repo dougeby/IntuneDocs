@@ -35,5 +35,4 @@ Once you turn off **Unknown sources**, it may take a few minutes before you can 
 
 Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using your Android device with Intune](using-your-android-device-with-intune.md)
+
