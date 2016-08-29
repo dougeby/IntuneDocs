@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,9 @@ ms.suite: ems
 
 # Sync your device manually using the Company Portal website
 
-If your app installation is taking too long, you can try syncing your device manually, which might help to speed up the installation. Use the instructions below that match the type of device or Windows version you're using. Synchronizing your device to speed up app installations works only for the listed versions below.
+If your app installation or some other task is taking too long, you can try syncing your device manually, which might help to speed up the installation or task. Use the instructions below that match the device you're using. 
+
+The Sync feature works only for the versions listed below.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)

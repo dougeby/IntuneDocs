@@ -37,5 +37,4 @@ If you get an error while you’re using the Company Portal app on your iOS devi
 -   By shaking your device while you’re in the Company Portal app, and then tapping **Email** when the diagnostics alert appears. If the alert doesn’t appear when you shake the device, open **Settings** &gt; **Company Portal**, and make sure that the **Shake Gesture** option is on.
 
 
-### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+
