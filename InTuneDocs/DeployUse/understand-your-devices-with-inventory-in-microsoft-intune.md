@@ -6,7 +6,7 @@ description: Use Intune to view information about the hardware of the devices yo
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/17/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,7 @@ ms.suite: ems
 
 # Understand your devices with inventory in Microsoft Intune
 Microsoft Intune lets you view the inventory of enrolled devices and Windows PCs that run the Intune client software.
+Intune typically collects inventory from managed devices every 7 days. Because of this, there might be a delay before reports show the results of any recent changes to devices, for example, a change to the device name, or free storage space.
 
 ## What's collected from enrolled devices?
 To view the inventory that's collected by mobile devices, run the [Mobile Device Inventory Reports](understand-microsoft-intune-operations-by-using-reports.md). Intune collects the following inventory from enrolled devices:
