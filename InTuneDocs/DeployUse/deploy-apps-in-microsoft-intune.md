@@ -6,7 +6,7 @@ description: Use the information in this topic to help you deploy apps with Micr
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
