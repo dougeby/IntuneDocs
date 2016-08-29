@@ -53,5 +53,4 @@ You can use the following steps, or watch this video:
 
 If you are unable to reset your lost or stolen device, ask your IT administrator to reset it for you. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+

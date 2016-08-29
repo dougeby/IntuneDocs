@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 06/16/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,5 +34,4 @@ Your IT administrator requires this setting to be turned on to protect the corpo
 
 Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using your Android device with Intune](using-your-android-device-with-intune.md)
+

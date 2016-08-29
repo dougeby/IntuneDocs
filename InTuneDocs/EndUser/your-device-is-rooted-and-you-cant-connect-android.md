@@ -37,5 +37,3 @@ If you don't believe that you did anything to deliberately root your device, che
 - Your device manufacturer installed software on your device that the root detection software thinks is a security risk. You need to contact your IT administrator for help. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 
-### See also
-[Using your Android device with Intune](using-your-android-device-with-intune.md)

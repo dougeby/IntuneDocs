@@ -31,6 +31,10 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
 
+## Blog post - Ensuring mobile devices are up to date using Microsoft Intune
+In light of the recent "Trident" malware attacks on iOS devices, we've published a new blog post, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) to help you learn about the different ways that Intune can help keep your devices secure and up to date.
+
+
 ## August 2016
 ## App management
 <!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
@@ -113,7 +117,7 @@ The following changes are being made in September to the apps tiles in the Compa
 
 - The **Company Apps** tile currently points to a list of all apps in the ALL tab of the Company Portal website, and it will continue to work the same way. The tile name will change to **All Apps**.
 - The **Other Apps** tile currently points to a view, inside the Company Portal app, that lists all apps that Apple permits the Company Portal app to show. The tile name will change to **Featured Apps**, and tapping the tile will take users to the FEATURED tab of the Company Portal website.
--  The **Categories** tile currently points to a view, inside the Company Portal app, that lists categories of apps. The tile name will not change, but it will now point to the CATEGORIES tab of the Company Portal website.
+-  The **Categories** tile currently points to a view, inside the Company Portal app, that lists categories of apps. The tile name will not change, but it will now point to the CATEGORIES tab of the Company Portal website. You can find updated screenshots [here](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
 <!---TFS 1317133--->
 
 ### Cloud roadmap

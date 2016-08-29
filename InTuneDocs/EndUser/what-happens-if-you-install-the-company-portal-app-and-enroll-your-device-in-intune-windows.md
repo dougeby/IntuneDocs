@@ -89,5 +89,3 @@ For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-
 
 If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using your Windows device with Intune](using-your-windows-device-with-intune.md)

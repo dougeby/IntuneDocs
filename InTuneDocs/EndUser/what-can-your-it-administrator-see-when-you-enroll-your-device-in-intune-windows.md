@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -63,7 +63,4 @@ When  you enroll your Windows device in Intune, you are giving your IT administr
 -   Manufacturer
 
 
-If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-### See also
-[Using your Windows device with Intune](using-your-windows-device-with-intune.md)
+If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://
