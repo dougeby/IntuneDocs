@@ -33,7 +33,7 @@ Before diving into implementation tasks it is important to align your company’
 >Do you want to know how Microsoft IT uses Intune to enable Microsoft employees to access corporate resources on their mobile devices while also keeping corporate data protected? [Read this technical case study](https://www.microsoft.com/itshowcase/Article/Content/588) to see in detail how Microsoft IT uses Intune and other services to manage identity, devices, and apps, and data.  
 
 >[!IMPORTANT]
->Ensuring mobile devices are up to date
+>Ensuring mobile devices are up to date<br>
 >In light of the recent "Trident" malware attacks on iOS devices, we've published a new blog post, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) to help you learn about the different ways that Intune can help keep your devices secure and up to date.
 
 ## Securing your on-premises email and data so it can be safely accessed by mobile devices
