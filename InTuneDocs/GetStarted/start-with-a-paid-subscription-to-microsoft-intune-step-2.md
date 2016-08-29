@@ -32,6 +32,9 @@ By default, Intune uses the **<domain>.onmicrosoft.com** domain name that was cr
 
 Before you create new user accounts or synchronize accounts from your on-premises Active Directory, we strongly recommend that you decide whether to use only the .onmicrosoft.com domain or to add one or more of your custom domain names. Configuring a custom domain before adding users can help simplify the management of user identities for your subscription by enabling users to sign in with the credentials they use to access other domain resources.
 
+> [!NOTE]
+> If you use multiple domains with single-sign on (SSO) through Active Directory Federation Services (AD FS), such as @contoso.com or @fabrikam.com, use the [AD FS 2.0 Update Rollup 1](https://support.microsoft.com/en-us/kb/2607496) with **SupportMultipleDomain** enabled. See [this blog post](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
+
 When you subscribe to a cloud-based service from Microsoft, your instance of that service becomes a Microsoft  [Azure AD tenant](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant), which provides identity and directory services for your cloud-based service. And, because the tasks to configure Intune to use your organizations custom domain name are the same as for other Azure AD tenants, you can use the information and procedures found in [Add your domain](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
 > [!TIP]
