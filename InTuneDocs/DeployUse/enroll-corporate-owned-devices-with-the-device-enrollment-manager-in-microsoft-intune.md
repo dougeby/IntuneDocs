@@ -41,7 +41,7 @@ As an example, you could assign a device enrollment manager user account to a st
 
 
 **A device enrollment manager scenario:**
-A restaurant wants point-of-sale tablets for its wait staff and order monitors for its kitchen staff. The employees never need access to company data or to sign in as a user. The Intune admin creates a device enrollment manager account and enrolls the company-owned devices by using that account. Alternatively, the admin could give the device enrollment manager credentials to a restaurant manager, which would let the manager enroll and manage the devices.
+A restaurant wants point-of-sale tablets for its wait staff and order monitors for its kitchen staff. The employees never need to access company data or sign in as users. The Intune admin creates a device enrollment manager account and enrolls the company-owned devices by using that account. Alternatively, the admin could give the device enrollment manager credentials to a restaurant manager, which would let the manager enroll and manage the devices.
 
 The admin or manager can deploy role-specific apps to the restaurant devices. An admin can also select the device in the Intune console and retire it from mobile device management with the administration console.
 
