@@ -6,7 +6,7 @@ description: Requirements and prerequisites for starting to use your Intune subs
 keywords:
 author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
