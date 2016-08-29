@@ -6,7 +6,7 @@ description: Use the information in this topic to learn how to add apps for Wind
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

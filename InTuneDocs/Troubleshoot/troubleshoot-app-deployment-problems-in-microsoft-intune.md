@@ -30,12 +30,6 @@ If you are having problems deploying and managing apps with Intune, start here. 
 
 ## Common app deployment problems
 
-### Users can’t log in to the Intune Company Portal
-
-1.  Ensure the user's account exists, and is enabled in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  In the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), make sure the user is entering the right user name to log in to Intune and that it is in the format: **joe@domain.com**. If the user seems to be entering the wrong password, ask them to reset it.
-
 ### Contact IT information is missing in the Company Portal
 
 1.  In the Intune admin console, choose **Admin** &gt; **Company Portal**.
@@ -58,15 +52,6 @@ If you are having problems deploying and managing apps with Intune, start here. 
 
 4.  If the iOS app download progress bar is complete but the app installation fails, something might be wrong with the app files that you provided.
 
-### If an iOS app link takes you to a previous location in the iTunes App Store
-
-1.  The current iTunes App Store session is opening to the previous app page.
-
-2.  Close the iTunes App Store on the device and retry the link.
-
-### If you receive an error while launching an iOS app
-
-1.  The expiration date of the app might not be valid.
 
 ### If your app is stuck “in progress” while uploading
 
@@ -79,12 +64,6 @@ If you are having problems deploying and managing apps with Intune, start here. 
 1.  Make sure that your organization’s firewall allows access to the Apple provisioning and certification web sites.
 
 2.  For more information, view the Apple developer documentation.
-
-### Error: Publisher does not exist
-You use **Add Other Software Agreement** to add a 3rd party license agreement. You try to add the publisher from the **Other software licensing agreement** page. The page provides a list with the existing publishers in alphabetical order.
-You enter the missing publisher but receive the error **Publisher does not exist**.
-
-This is by design. Intune provides license tracking only for popular software titles. Intune requires that at least 4 separate accounts report the software before it is made available as a choice in the licensing workload.
 
 ### If managed apps are not reporting installation status
 
@@ -99,7 +78,7 @@ The following table lists common errors that may occur during Intune app deploym
 |0x80073CF0|The package could not be opened.|Possible causes:<br /><br />-   The package is unsigned.<br />-   The publisher name does not match the signing certificate subject.<br /><br />Check the AppxPackagingOM event log for more information.|
 |0x80073CF3|The package failed update, dependency, or conflict validation|Possible causes:<br /><br />-   The incoming package conflicts with an installed package.<br />-   A specified package dependency is not found.<br />-   The package does not support the correct processor architecture.<br /><br />Check the AppXDeployment-Server event log for more information.|
 |0x80073CFB|The provided package is already installed, and reinstallation of the package is blocked|You might receive this error if you are installing a package that is not identical to the package that is already installed. Confirm the digital signature is also part of the package. When a package is rebuilt or re-signed, that package is no longer bitwise identical to the previously installed package. Two possible options to fix this error are as follows:<br /><br />-   Increment the version number of the app, then rebuild and re-sign the package.<br />-   Remove the old package for every user on the system before you install the new package.|
-|0x87D1041C|Application installation succeeded but application is not detected.|- User installed app from company portal, then uninstalled directly from the device. Reinstall app from the company portal.<br /><br />- You may have a mismatch between the version number of a line-of-business app as recognized by Intune, and the version installed on the device. Ensure Intune has the correct version and reinstall the app.|
+|0x87D1041C|Application installation succeeded but application is not detected.|- The app was deployed succesfully by Intune, then subsequently uninstalled (possibly by the end user). Instruct the user to reinstall the app from the company portal. Required apps will be reinstalled automatically when the device next checks in.|
 
 ### Next steps
 If this troubleshooting information  didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).

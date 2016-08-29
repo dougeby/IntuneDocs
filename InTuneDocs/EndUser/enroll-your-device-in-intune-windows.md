@@ -6,7 +6,7 @@ description: Describes how to enroll a Windows device in Intune
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 06/03/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,11 +32,13 @@ If your company or school uses Microsoft Intune, you can enroll your Windows dev
 
 To enroll, use the link that corresponds to the device you are using:
 
-- [Windows 10 Mobile and Windows 10 desktop](enroll-your-w10-phone-or-w10-pc-windows.md)</br>
-- [Windows 8.1 or Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)</br>
-- [Windows RT](enroll-your-rt-windows.md)</br>
-- [Windows Phone 8.1](enroll-your-wp81-windows.md)</br>
-- [Windows Phone 8](enroll-your-wp8-windows.md)
+
+
+-  [Windows 10 Mobile and Windows 10 desktop](enroll-your-w10-phone-or-w10-pc-windows.md)
+-  [Windows 8.1 or Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
+-  [Windows RT](enroll-your-rt-windows.md)
+-  [Windows Phone 8.1](enroll-your-wp81-windows.md)
+-  [Windows Phone 8](enroll-your-wp8-windows.md)
 
 
 ### See also
