@@ -13,6 +13,8 @@ Automatic enrollment lets users enroll either company-owned or personal Windows 
 
 2. Click the **Applications** tab and you should see **Microsoft Intune** in the list of applications.
 
+    ![Azure AD apps with Microsoft Intune](../media/aad-intune-app.png)
+
 3. Click on the arrow for **Microsoft Intune** and you should see a page that enables you to configure Microsoft Intune.
 
 4. Click **Configure** to start configuring automatic MDM enrollment with Microsoft Intune.
