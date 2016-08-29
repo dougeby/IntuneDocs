@@ -32,7 +32,7 @@ All of these features will eventually be supported for hybrid customers' deploym
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
 
 >[!IMPORTANT] 
->Blog post - Ensuring mobile devices are up to date using Microsoft Intune
+>Blog post - Ensuring mobile devices are up to date using Microsoft Intune<br>
 >In light of the recent "Trident" malware attacks on iOS devices, we've published a new blog post, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) to help you learn about the different ways that Intune can help keep your devices secure and up to date.
 
 
