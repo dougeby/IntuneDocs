@@ -33,7 +33,7 @@ If your company or school uses Microsoft Intune, you can enroll your devices to 
 
 To enroll your Windows 10 Mobile or Windows 10 desktop device:
 
-1.  Go to Windows  **Settings** and tap **Accounts**.
+1.  Go to Windows  **Settings**, and then and tap **Accounts**.
 
     ![Windows Settings](./media/w10-enroll-rs1-settings-accounts.png)
 
@@ -45,7 +45,7 @@ To enroll your Windows 10 Mobile or Windows 10 desktop device:
 
 	If you see this screen, follow the steps in [Steps to follow if you see Your account](#steps-to-follow-if-you-see-your-account).
 
-	![Your-account](./media/w10-enroll-2-accounts-your-account.png)
+	![Your account](./media/w10-enroll-2-accounts-your-account.png)
 
 ## Steps to follow if you see Access work or school
 
@@ -55,7 +55,7 @@ To enroll your Windows 10 Mobile or Windows 10 desktop device:
 
 2.  Enter your work or school email address, and then tap **Next**.
 
-    ![enter-your-work-or-school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
+    ![Enter your work or school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
 3. Sign in to Intune with your work or school account.
 
@@ -82,7 +82,7 @@ If you followed the previous steps, but still can’t access your work or school
 
 2.  Tap **Your account**.
 
-    ![Tapyouraccount](./media/W10-enroll-2-accounts-your-account.png)
+    ![Tap your account](./media/W10-enroll-2-accounts-your-account.png)
 
 3.  Tap **Add a work or school account**.
 
