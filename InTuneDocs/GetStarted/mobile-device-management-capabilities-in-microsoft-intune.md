@@ -6,7 +6,7 @@ description: Read this topic to find out how Intune can help you manage devices 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/23/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,6 +53,7 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 |iOS mobile app provisioning profiles|Helps you deploy provisioning profiles to iOS apps that are nearing expiration. |[Use iOS mobile provisioning profile policies to prevent your apps from expiring](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Managed browser|Configures managed browser policies to control the websites that device users can visit. In addition, you can also apply mobile application management policies to the managed browser.|[Manage Internet access using managed browser policies with Microsoft Intune](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
 |Microsoft Passport|Lets you integrate with Microsoft Passport for Work, which is an alternative sign-in method for Windows 10 that uses on-premises Active Directory or  Azure Active Directory to replace a passwords, smart cards, or virtual smart cards.|[Control Microsoft Passport settings on devices with Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Volume purchased apps|Helps you manage apps that you purchased through a volume-purchase program by importing the license information from the app store, tracking how many of the licenses you have used, and preventing you from installing more copies of the app than you own.|[Manage volume-purchased apps using Microsoft Intune](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
 ## Company resource access
 
