@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 06/15/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,5 +40,4 @@ The following table lists errors that you might see while enrolling your iOS dev
 |UserLicenseTypeInvalid|You cannot enroll your mobile device because your user account is not yet a member of a required user group.<br /><br />Contact your IT administrators and tell them that you received the message **UserLicenseTypeInvalid** while trying to enroll your mobile device, and tell them to see the resolution in this table.|Before users can enroll their devices, they  must be a member of the right user group. This message means that they have the wrong license type for the designated mobile device management authority. For example, if Intune has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br /><br />Review the following for more information:<br /><br />Review [Set up iOS and Mac management with Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) and information about setting up users in [Sync Active Directory and add users to Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3 and [organizing users and devices](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |MdmAuthorityNotDefined|Your IT administrator needs to configure the way that mobile devices in your company are managed.<br /><br />Contact your IT administrators and tell them that you received the message **MdmAuthorityNotDefined** while trying to enroll your mobile device, and tell them to see the resolution in this table.|The mobile device management authority has not been designated in Intune.<br /><br />Review item #1 in the section "Step 6: Enroll mobile devices and install an app" in [Get started with a 30-day trial of Microsoft Intune](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).|
 
-### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+

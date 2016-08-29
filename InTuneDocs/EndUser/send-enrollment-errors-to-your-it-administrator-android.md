@@ -34,8 +34,8 @@ An email, addressed to your IT administrator, is automatically created and conta
 
 There are different ways you can send your device's data logs to your IT administrator to get help with errors:
 
-[Use a USB cable to send logs](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)</br>
-[Use email to send logs](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 
-### See also
-[Using your Android device with Intune](using-your-android-device-with-intune.md)
+
+- [Use a USB cable to send logs](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
+- [Use email to send logs](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
+

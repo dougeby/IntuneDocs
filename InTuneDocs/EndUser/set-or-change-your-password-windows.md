@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 5/25/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,5 +50,4 @@ If you have trouble setting a password that meets all of the password requiremen
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using your Windows device with Intune](using-your-windows-device-with-intune.md)
+
