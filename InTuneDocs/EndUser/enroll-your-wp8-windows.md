@@ -43,6 +43,4 @@ The Company Portal will appear in your app list after it is installed.
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)</br>
-[Using your Windows device with Intune](using-your-windows-device-with-intune.md)
+

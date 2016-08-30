@@ -41,5 +41,3 @@ To enroll, use the link that corresponds to the device you are using:
 -  [Windows Phone 8](enroll-your-wp8-windows.md)
 
 
-### See also
-[Using your Windows device with Intune](using-your-windows-device-with-intune.md)

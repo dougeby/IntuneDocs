@@ -6,7 +6,7 @@ description: Third-Party Software Notices and Information for Microsoft Intune
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
