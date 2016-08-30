@@ -6,7 +6,7 @@ description: Manage Windows PCs by installing the Intune client software.
 keywords:
 author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,29 +56,14 @@ The following are software requirements for installing the client:
 |Windows Installer 3.1|The PC must have, at a minimum, Windows Installer 3.1.<br /><br />To view the version of Windows Installer on a PC:<br /><br />-   On the PC, right-click **%windir%\System32\msiexec.exe**, and then click **Properties**.<br /><br />You can download the latest version of Windows Installer from [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) on the Microsoft Developer Network website.|
 |Remove incompatible client software|Before you install the Intune client software, you must uninstall the any Configuration Manager or System Management Server client software from that PC.|
 
-## Install the Intune computer client
-The Intune client software can be installed in one of the following ways:
-
--  [Manually deploy the Microsoft Intune client software](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). In this type of deployment, an administrator downloads the  Intune client software and manually installs it on each PC.
-
-  To download the  Intune client software, open the [Intune administration console](https://manage.microsoft.com) and choose **Admin** > **Client Software Download**, and click **Download Client Software**.
-
--  Use the same files you download to manually install the  Intune client software to [deploy the client to domain-joined computers using Active Directory GPOs](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
-
--  Deploy the  Intune client software to computers as part of an [operating system deployment](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
-
--  Send users instructions with the URL for Intune Company Portal, [https://portal.manage.microsoft.com](http://go.microsoft.com/fwlink/?LinkId=825632). When they open the Company Portal, users are prompted to enroll their PC by downloading and running the Intune client software.
-
 ## Computer management with the Intune computer client
-After the Intune client software is installed, the client software enables several computer management capabilities including: [application management](deploy-apps-in-microsoft-intune.md), Endpoint Protection, hardware and software inventory, remote control (through remote assistance requests), software updates, and compliance settings reporting.
+After the Intune client software is installed, management capabilities include: [application management](deploy-apps-in-microsoft-intune.md), [real-time monitoring and Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md), [Windows Firewall settings management](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md), hardware and software inventory, remote control (through remote assistance requests), [software update settings](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md), and compliance settings reporting.
 
-Several computer management tasks enabled by the computer client are managed using Intune policies such as:
+Management options available to PCs managed as mobile devices are unavailable to the software client-managed PCs including:
 
--   Configuring the [Windows Firewall settings](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) on managed computers.
-
--   Configuring [software update settings](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) for managed computers to check for, and download, required software updates.
-
--   Helping to secure managed computers from potential threats and malicious software through [real-time monitoring and Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) management.
+-   Full wipe (selective wipe is available)
+-   Conditional access
+-   Windows policies other than **Computer management** policies
 
 ![Policies template for Windows PCs](../media/pc_policy_template.png)
 
