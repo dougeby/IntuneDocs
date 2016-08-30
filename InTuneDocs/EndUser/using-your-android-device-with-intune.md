@@ -60,7 +60,7 @@ The information in this section helps you with actions you can take after your A
 
 ## Fix issues with your device
 
-The information in this section helps you fix issues you might encounter when your Android device is enrolled in Intune.
+The information in this section helps you fix issues that you might encounter when your Android device is enrolled in Intune.
 
 - [Use Verbose Logging to help your IT administrator fix device issues](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Send diagnostic data logs to your IT administrator using email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
