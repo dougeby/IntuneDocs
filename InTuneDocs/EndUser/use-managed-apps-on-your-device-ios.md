@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 05/11/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -67,5 +67,4 @@ Here are some examples of options that your IT admin can manage in an app and th
 
 Contact your IT admin for more information about the managed apps on your device. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 05/27/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 ---
 
 # You are prompted to install Lookout for Work
-Note: This feature has been added to the Android Company Portal app, but it won't be operational until August, 2016.
+Note: This feature has been added to the Android Company Portal app, but it won't be operational until September, 2016.
 
 Lookout for Work is an app that helps keep your device secure by checking for risks and security threats. When you see a notification saying that you must install Lookout for Work, it means that your IT administrator has set a policy requiring you to download and install the app from the Play Store.
 
@@ -37,5 +37,4 @@ Lookout for Work is an app that helps keep your device secure by checking for ri
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using your Android device with Intune](using-your-android-device-with-intune.md)
+

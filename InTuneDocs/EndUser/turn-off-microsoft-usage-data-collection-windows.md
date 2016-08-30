@@ -34,5 +34,4 @@ You can turn off the collection of that data on your Windows device by using the
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using your Windows device with Intune](using-your-windows-device-with-intune.md)
+
