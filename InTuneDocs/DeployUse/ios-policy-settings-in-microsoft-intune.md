@@ -6,7 +6,7 @@ description: Create policies that control settings and features on iOS devices t
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -87,6 +87,8 @@ All settings apply to iOS 7.1 and later.
 |**Require encrypted backup**|Require any device backups to be encrypted.|
 |**Allow managed apps to sync data to iCloud**|Allow apps that you manage with Intune to sync data to the user's iCloud account.|
 |**Allow Handoff to continue activities on another device**|Allow the user to continue work that they started on an iOS device on another iOS or Mac OS X device.|
+|**Allow iCloud Photo Sharing**|Allow use of the iOS shared photo stream feature.|
+|**Allow iCloud Photo Library**|Allow the user to store photos on iCloud. If disabled, any photos already stored on iCloud will be removed.|
 
 ### Application settings for the browser
 All settings apply to iOS 7.1 and later.
@@ -105,14 +107,14 @@ All settings apply to iOS 7.1 and later.
 
 |Setting name|Details|
 |----------------|-------|
-|**Allow application store**|Allow the device to access the app store.|
+|**Allow installing apps**|Allow the device to access the app store and install apps.|
 |**Require a password to access application store**|Require the user to enter a password before they can visit the app store.|
 |**Allow in-app purchases**|Allow store purchases to be made from within a running app.|
 |**Allow managed documents in other unmanaged apps**|Allow corporate documents to be viewed in any app.<br>**Example:** You want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as no. After the device receives the policy (for example, after a restart), it will no longer allow saving.|
 |**Allow unmanaged documents in other managed apps**|Allow any document to be viewed in corporate managed apps.|
 |**Allow video conferencing**|Allow video conferencing apps such as FaceTime on the device.|
-|**Allow adult content in media store**|Allow the device to access content rated as adult from the store.|
-|**Allow the user to download content from the iBook store flagged as 'Erotica'**|Allow the user to download books with the "Erotica" category.|
+|**Allow the user to trust new enterprise app authors**|Lets the user select to trust apps that were not downloaded from the app store.|
+
 
 ### Application settings for games
 All settings apply to iOS 7.1 and later.
@@ -122,12 +124,23 @@ All settings apply to iOS 7.1 and later.
 |**Allow adding Game Center friends**|Allow the user to add friends in Game Center.|
 |**Allow multiplayer gaming**|Allow the user to play multiplayer games on the device.|
 
+### Application settings for media content
+All settings apply to iOS 7.1 and later.
+
+|Setting name|Details|
+|----------------|-------|
+|**Ratings region**|Select a region, then select the maximum rating that users can download for **Movies**, **TV Shows** and **Apps**.|
+|**Allow adult content in media store**|Allow the device to access content rated as adult from the store.|
+|**Allow the user to download content from the iBook store flagged as 'Erotica'**|Allow the user to download books with the "Erotica" category.|
+
+
 ### Device capabilities settings for hardware
 All settings apply to iOS 7.1 and later.
 
 |Setting name|Details|
 |----------------|-------|
 |**Allow camera**|Specify whether the camera on the device can be used.|
+|**Force paired Apple Watches to use wrist detection**|When enabled, the Apple Watch won't display notifications when it is not being worn.|
 |**Require a pairing password for outgoing AirPlay requests**|Require a pairing password when the user uses AirPlay to stream content to other Apple devices.|
 
 ### Device capabilities settings for cellular
@@ -147,6 +160,7 @@ All settings apply to iOS 7.1 and later.
 |**Allow Siri**|Allow use of the Siri voice assistant on the device.|
 |**Allow Siri while device is locked**|Allow use of the Siri voice assistant on the device while it is locked.|
 |**Allow voice dialing**|Allow use of the voice dialing feature on the device.|
+|**Do not allow Airdrop from managed apps**|Stops managed apps from being able to send data via. Airdrop.|
 
 
 ### Settings for compliant and noncompliant apps
@@ -220,24 +234,55 @@ All settings apply to iOS 7.1 and later.
 |----------------|--------------------|
 |**Allow Activation Lock when the device is in supervised mode**|Enable Activation Lock on supervised iOS devices.|
 
-### Supervision
+### Supervised mode settings
 You can configure the following settings on devices running iOS 7.1 and later that are in supervised mode.
+
+### Supervised mode settings for device restrictions
 
 |Setting name|Details|
 |----------------|--------------------|
 |**Allow account modification**|Allow the user to change account settings such as email configurations.|
-|**Allow AirDrop**|Allow use of the AirDrop feature to exchange content with nearby devices.|
 |**Allow changes to app cellular data usage settings**|Allow the user to control which apps are allowed to use cellular data.|
-|**Allow Siri to query user-generated content from the Internet**|Allow Siri to access websites to answer questions.|
-|**Allow access to the iBooks store**|Allow the user to browse and purchase books from the iBooks store.|
-|**Allow changes to the Find My Friends app settings**|Allow the user to change settings for the Find My Friends app.|
 |**Allow the use of the erase all content and settings option on the device**|Allow the user to use the option of erasing all content and settings on the device.|
 |**Allow the user to enable restrictions in the device settings**|Allow the user to configure device restrictions (parental controls) on the device.|
-|**Allow Spotlight search to return results from the Internet**|Let Spotlight search connect to the Internet to provide further results.|
-|**Allow the use of the Game Center app**|Allow use of the Game Center app.|
-|**Allow host pairing to control the devices an iOS device can pair with**|Allow host pairing to let the administrator control which devices an iOS 7 device can pair with.|
+|**Allow host pairing to control the devices an iOS device can pair with**|Allow host pairing to let the administrator control which devices an iOS device can pair with.|
 |**Allow the user to install configuration profiles and certificates**|Allow the user to install configuration profiles and certificates.|
+|**Allow device name modification**|Allow the user to change the name of the device.|
+|**Allow passcode modification**|Allow the device password to be added, changed, or removed.|
+|**Allow Apple Watch pairing**|Allow the device to pair with an Apple Watch.|
+|**Allow notification settings modification**|Allow the user to change the device notification settings.|
+|**Allow wallpaper modification**|Allow the user to change the device wallpaper.|
+
+### Supervised mode settings for feature restrictions
+
+|Setting name|Details|
+|----------------|--------------------|
+|**Allow AirDrop**|Allow use of the AirDrop feature to exchange content with nearby devices.|
+|**Allow Siri to query user-generated content from the Internet**|Allow Siri to access websites to answer questions.|
+|**Use Siri profanity filter**|Prevents Siri from dictating, or speaking profane language.|
+|**Allow Spotlight search to return results from the Internet**|Let Spotlight search connect to the Internet to provide further results.|
+|**Allow word definition lookup**|Allow the iOS feature that lets you highlight a word and look up it's definition.|
+|**Allow predictive keyboards**|Allow the use of predictive keyboards that suggest words the user might want.|
+|**Allow auto-correction**|Lets the device automatically correct misspelled words.|
+|**Allow keyboard spell-check**|Allows the device spell checker.|
+|**Allow keyboard shortcuts**|Allows use of keyboard shortcuts.|
+
+### Supervised mode settings for app restrictions
+
+|Setting name|Details|
+|----------------|--------------------|
+|**Allow enterprise app trust settings modification**||
+|**Allow installing apps using Apple Configuration and iTunes only**||
+|**Allow automatic app downloads**||
+|**Allow changes to the Find My Friends app settings**|Allow the user to change settings for the Find My Friends app.|
+|**Allow access to the iBooks store**|Allow the user to browse and purchase books from the iBooks store.|
 |**Allow use of the Messages app on the device**|Allow use of the Messages app to send text messages.|
+|**Allow use of Podcasts**|Allow use of the Podcasts app.|
+|**Allow use of Music service**|Allow use of the Apple Music app.|
+|**Allow iTunes Radio service**|Allow use of the iTunes Radio app.|
+|**Allow Apple News**|Allow use of the Apple News app.|
+|**Allow Game Center**|Allow use of the Game Center app.|
+
 
 ### Show or Hide Apps
 

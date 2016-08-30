@@ -50,6 +50,3 @@ To turn on verbose logging:
 
 4.  Follow the prompts to choose an email app to use for sending the logs to your IT admin. The app will create a pre-addressed email with all the logs attached.
 
-
-### See also
-[Using your Android device with Intune](using-your-android-device-with-intune.md)

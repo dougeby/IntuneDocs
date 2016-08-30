@@ -31,7 +31,7 @@ Your answers to this series of questions will help determine the best enrollment
 ## **Are your company-owned devices shared or do they have dedicated users?**
 
 > [!div class="button"]
-[Shared >](choose-how-to-enroll-devices4.md)   [Dedicated >](choose-how-to-enroll-devices6.md)
+[Shared >](choose-how-to-enroll-devices4.md)<br>[Dedicated >](choose-how-to-enroll-devices6.md)
 
 - **Shared company-owned devices** - These devices don’t have a single user and usually aren’t configured to access email. Examples include kiosk devices or task-oriented devices users draw from a pool as needed and then return. Recommended enrollment methods depend upon the devices' platform.
 
