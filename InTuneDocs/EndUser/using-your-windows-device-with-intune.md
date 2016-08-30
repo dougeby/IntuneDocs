@@ -27,22 +27,22 @@ ms.suite: ems
 
 # Using your Windows device with Intune
 
-This article includes links to all of the tasks that end users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users follow to do a variety of tasks, which are grouped into categories: 
-- Company portal app installation and Intune enrollment 
+This article includes links to all of the tasks that users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users must follow to do a variety of tasks, which are grouped into categories as follows:
+- Company Portal app installation and Intune enrollment
 - Post-enrollment management tasks
 - Compliance issues
 
 ## Company Portal app installation and Intune enrollment
 
-The information in this section will help you with Intune Company Portal installation and device enrollment for Windows devices.
+The information in this section helps you with Intune Company Portal installation and device enrollment for Windows devices.
 
 - [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [What can your IT admin see when you enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+- [What can your IT admin see when you enroll your device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## Things you can do when your device is enrolled in Intune
 
-The information in this section will help you with actions you can take after your Windows device is enrolled in Intune.
+The information in this section helps you with actions that you can take after your Windows device is enrolled in Intune.
 
 - [Encrypt your device](encrypt-your-device-windows.md)
 - [Set or change your password](set-or-change-your-password-windows.md)
@@ -53,9 +53,9 @@ The information in this section will help you with actions you can take after yo
 - [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)
 - [Sync your device manually](sync-your-device-manually-windows.md)
 
-## Fix issues with your device
+## How to fix issues with your device
 
-The information in this section will help you fix issues you might encounter when your Windows device is enrolled in Intune.
+The information in this section helps you fix issues that you might encounter when your Windows device is enrolled in Intune.
 
 - [Device doesn't have the required minimum operating system version](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
 - [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
