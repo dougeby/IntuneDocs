@@ -23,7 +23,7 @@ ms.suite: ems
 
 
 ---
-# Set up certificate infrastructure
+# Configure certificate infrastructure
 This topic describes what you need in order to create and deploy .PFX certificate profiles.
 
 To do any certificate-based authentication in your organization, you need an Enterprise Certification Authority.
@@ -58,22 +58,22 @@ To use .PFX Certificate profiles, in addition to the Enterprise Certification Au
 
 |Object|Details|
 |----------|-----------|
-|**Certificate Template**|You set up this template on your issuing CA.|
+|**Certificate Template**|You configure this template on your issuing CA.|
 |**Trusted Root CA certificate**|You export this as a **.cer** file from the issuing CA or any device which trusts the issuing CA, and deploy it to devices by using the Trusted CA certificate profile.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
 
 
-## Set up your infrastructure
-Before you can set up certificate profiles, you must complete the following tasks. These tasks require knowledge of Windows Server 2012 R2 and Active Directory Certificate Services (ADCS):
+## Configure your infrastructure
+Before you can configure certificate profiles, you must complete the following tasks. These tasks require knowledge of Windows Server 2012 R2 and Active Directory Certificate Services (ADCS):
 
-- **Task 1** - Set up certificate templates on the certification authority.
-- **Task 2** - Enable, install, and set up the Intune Certificate Connector.
+- **Task 1** - Configure certificate templates on the certification authority.
+- **Task 2** - Enable, install, and configure the Intune Certificate Connector.
 
-### Task 1 - Set up certificate templates on the certification authority
+### Task 1 - Configure certificate templates on the certification authority
 In this task, you will publish the certificate template.
 
-##### To set up the certification authority
+##### To configure the certification authority
 
-1.  On the issuing CA, use the Certificate Templates snap-in to create a new custom template, or copy and edit an existing template (like the User template), for use with .pFX.
+1.  On the issuing CA, use the Certificate Templates snap-in to create a new custom template, or copy and edit an existing template (like the User template), for use with .PFX.
 
     The template must include the following:
 
@@ -84,14 +84,14 @@ In this task, you will publish the certificate template.
     -   On the **Extensions** tab, ensure the **Description of Application Policies** includes **Client Authentication**.
 
         > [!IMPORTANT]
-        > For iOS and Mac OS X certificate templates, on the **Extensions** tab, edit **Key Usage** and ensure **Signature is proof of origin** is not selected.
+        > For iOS and Mac OS X certificate templates, on the **Extensions** tab, edit **Key Usage** and ensure that **Signature is proof of origin** is not selected.
 
-2.  Review the **Validity period** on the **General** tab of the template. By default, Intune uses the value set up in the template. However, you have the option to set up the CA to allow the requester to specify a different value, which you can then set from within the Intune Administrator console. If you want to always use the value in the template, skip the remainder of this step.
+2.  Review the **Validity period** on the **General** tab of the template. By default, Intune uses the value configured in the template. However, you have the option to configure the CA to allow the requester to specify a different value, which you can then set from within the Intune Administrator console. If you want to always use the value in the template, skip the remainder of this step.
 
     > [!IMPORTANT]
     > The iOS and Mac OS X platforms always uses the value set in the template, regardless of other configurations you make.
 
-    To set up the CA to allow the requester to specify the validity period, run the following commands on the CA:
+    To configure the CA to allow the requester to specify the validity period, run the following commands on the CA:
 
     a.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
 
@@ -107,10 +107,10 @@ In this task, you will publish the certificate template.
 
 4.  On the CA computer, ensure that the computer that hosts the Intune Certificate Connector has enroll permission, so that it can access the template used in creating the .PFX profile. Set that permission on the **Security** tab of the CA computer properties.
 
-### Task 2 - Enable, install, and set up the Intune Certificate Connector
+### Task 2 - Enable, install, and configure the Intune Certificate Connector
 In this task you will:
 
-Download, install, and set up the Certificate Connector.
+Download, install, and configure the Certificate Connector.
 
 ##### To enable support for the Certificate Connector
 
@@ -120,7 +120,7 @@ Download, install, and set up the Certificate Connector.
 
 3.  Select **Enable Certificate Connector**, and then choose **OK**.
 
-##### To download, install, and set up the Certificate Connector
+##### To download, install, and configure the Certificate Connector
 
 1.  Open the [Intune administration console](https://manage.microsoft.com), and then choose **Admin** &gt; **Mobile Device Management** &gt; **Certificate Connector** &gt; **Download Certificate Connector**.
 
