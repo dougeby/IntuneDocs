@@ -58,7 +58,7 @@ After you deploy the policy to your Android device or user groups, users should 
    7.	For **Value**, create a semicolon-separated list of packages to associate with the profile. For example, if you want Excel and the Google Chrome browser to use the VPN connection, enter **com.microsoft.office.excel;com.android.chrome**.
 
 
-    ![Example Android per-app VPN custom policy](./media/android_per_app_vpn_oma_uri.png)
+[Example Android per-app VPN custom policy](./media/android_per_app_vpn_oma_uri.png)
 
 #### Set your app list to blacklist or whitelist (optional)
   You can specify a list of apps that *cannot* use the VPN connection by using the **BLACKLIST** value. All other apps will connect through the VPN.
