@@ -43,7 +43,7 @@ You can enroll iOS devices by exporting a Corporate Enrollment profile and then 
 ## Use the Device Enrollment Program (DEP)
 DEP deploys an enrollment profile “over the air” to devices that are purchased through DEP. When a user runs Setup Assistant on the device, the device is enrolled in Intune.  Devices enrolled through DEP cannot be unenrolled by users. For more information, see [Enroll Device Enrollment Program iOS devices](ios-device-enrollment-program-in-microsoft-intune.md).
 
-## Use the Company Portal on DEP–enrolled or Apple Configurator–enrolled devices
+## Use the Company Portal on DEP-enrolled or Apple Configurator-enrolled devices
 
 Devices that are configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete a number of additional steps to complete the Setup Assistant and install the Company Portal app.
 
