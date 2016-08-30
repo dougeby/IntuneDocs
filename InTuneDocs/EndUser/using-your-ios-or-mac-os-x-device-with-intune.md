@@ -27,8 +27,8 @@ ms.suite: ems
 
 # Using your iOS or Mac OS X device with Intune
 
-This article includes links to all of the tasks that end-users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users must follow to do a variety of tasks, which are grouped into the following categories: 
-- Company portal app installation and Intune enrollment
+This article includes links to all of the tasks that end-users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users must follow to do a variety of tasks, which are grouped into the following categories:
+- Company Portal app installation and Intune enrollment
 - Post-enrollment management tasks
 - Compliance issues
 
@@ -43,7 +43,7 @@ The information in this section helps you with Intune Company Portal installatio
 
 ## Things you can do when your device is enrolled in Intune
 
-The information in this section helps you with actions you can take after your iOS device is enrolled in Intune.
+The information in this section helps you with actions that you can take after your iOS device is enrolled in Intune.
 
 - [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 - [Set or change your passcode](set-or-change-your-passcode-ios.md)
