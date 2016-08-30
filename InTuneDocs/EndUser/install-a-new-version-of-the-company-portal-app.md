@@ -56,8 +56,4 @@ To update the Company Portal app:
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-For information about other tasks that you can do with your device, use the link that matches the type of device you have:
 
-- [Using your Android device with Intune](using-your-android-device-with-intune.md)</br>
-- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
-- [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

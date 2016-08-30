@@ -36,5 +36,4 @@ If you are using a PC, you can contact your IT administrator, or see the section
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using your Windows device with Intune](using-your-windows-device-with-intune.md)
+

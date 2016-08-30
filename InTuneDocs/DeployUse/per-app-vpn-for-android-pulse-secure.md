@@ -6,7 +6,7 @@ description: You can create a per-app VPN profile for Android devices managed by
 keywords:
 author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,9 @@ ms.suite: ems
 
 # Use a custom policy to create a per-app VPN profile for Android devices
 
-You can create a per-app VPN profile for Android devices that are managed by Intune. First, create a VPN profile that uses the Pulse Secure connection type. Then, create a custom configuration policy that associates the VPN profile with specific apps. After you deploy the policy to your Android device or user groups, when a user opens one of the specified apps on one of those devices, a VPN connection for that app opens.
+You can create a per-app VPN profile for Android 5.0 and later devices that are managed by Intune. First, create a VPN profile that uses the Pulse Secure connection type. Then, create a custom configuration policy that associates the VPN profile with specific apps. 
+
+After you deploy the policy to your Android device or user groups, users should start the PulseSecure VPN. PulseSecure will then allow traffic only from the specified apps to use the open VPN connection.
 
 > [!NOTE]
 >
@@ -55,8 +57,7 @@ You can create a per-app VPN profile for Android devices that are managed by Int
    6. For **OMA-URI**, specify this string: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, where *Name* is the VPN profile name you noted in Step 1. In our example, the string would be **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
    7.	For **Value**, create a semicolon-separated list of packages to associate with the profile. For example, if you want Excel and the Google Chrome browser to use the VPN connection, enter **com.microsoft.office.excel;com.android.chrome**.
 
-
-    ![Example Android per-app VPN custom policy](..\media\android_per_app_vpn_oma_uri.png)
+![Example Android per-app VPN custom policy](./media/android_per_app_vpn_oma_uri.png)
 
 #### Set your app list to blacklist or whitelist (optional)
   You can specify a list of apps that *cannot* use the VPN connection by using the **BLACKLIST** value. All other apps will connect through the VPN.

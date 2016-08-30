@@ -40,5 +40,4 @@ If your IT administrator has configured a VPN application to enable you to  conn
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using your Android device with Intune](using-your-android-device-with-intune.md)
+
