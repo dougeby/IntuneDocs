@@ -26,19 +26,7 @@ ms.suite: ems
 ---
 
 # Set up Android device management
-To set up your Android device, you can find help [here](../enduser/using-your-android-device-with-intune.md).
-
-With Microsoft Intune, you can enable BYOD ("bring your own device") for Android devices without any additional work for the platform.
-
-Select from the following device platform options to learn more:
-
-> [!div class="op_single_selector"]
-- [Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
-- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
-
-Android mobile devices allow users to enroll using the Company Portal app available from Google Play. To let users enroll their devices in Intune complete the following.
+As an Intune administrator, you can enable manage Android devices from the Company Portal. Users can then enroll their devices using the Company Portal app available from Google Play.
 
 1.  **Set up Intune**<br>
     If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
