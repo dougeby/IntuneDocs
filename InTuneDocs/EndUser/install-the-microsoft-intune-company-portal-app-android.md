@@ -50,5 +50,3 @@ To enroll your device in Intune to get access to company or school data and reso
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using your Android device with Intune](using-your-android-device-with-intune.md)
