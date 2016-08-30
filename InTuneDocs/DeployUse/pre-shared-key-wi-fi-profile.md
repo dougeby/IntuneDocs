@@ -57,7 +57,7 @@ Be sure to include the dot character at the beginning.
     SSID is the SSID for which you’re creating the policy. For example,
     `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
-  e.Value Field is where you paste your XML code. Here’s an example. Each value should be adapted to your network settings. See the comments section of the code for some pointers.
+  e. **Value Field** is where you paste your XML code. Here’s an example. Each value should be adapted to your network settings. See the comments section of the code for some pointers.
 4. Choose **OK**, save, and then deploy the policy.
 
     > [!NOTE]
