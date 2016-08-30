@@ -36,12 +36,12 @@ You can enroll corporate-enrolled iOS devices in three ways: by using Apple Conf
 
 You can enroll iOS devices by exporting a Corporate Enrollment profile and then connecting those mobile devices to a Mac that is running Apple Configurator. Apple Configurator supports two forms of enrollment:
 
-- **Setup Assistant enrollment**: Factory resets the device and prepares it for setup by the device’s new user. This method requires the admin to connect the iOS device through USB to a Mac computer running [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) to preconfigure the enrollment. Devices are then delivered to their users, who run the Setup Assistant process. This process configures the device with their work or school credentials and completes the enrollment process. For more information, see [Enroll iOS devices using Apple Configurator and Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md).
+- **Setup Assistant enrollment**: Resets the device to factory settings and prepares it for setup by the device's new user. This method requires the admin to connect the iOS device through USB to a Mac computer running [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) to preconfigure the enrollment. Devices are then delivered to their users, who run the Setup Assistant process. This process configures the device with their work or school credentials and completes the enrollment process. For more information, see [Enroll iOS devices using Apple Configurator and Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md).
 
 - **Direct enrollment**: Creates an Apple Configurator–compliant file for use during device preparation. The enrolled device isn’t factory reset, but it has no user affiliation. This method requires the admin to connect the iOS device through USB to a Mac computer running [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) to enroll the device. For more information, see [Enroll iOS devices using Apple Configurator Direct Enrollment](ios-direct-enrollment-in-microsoft-intune.md).
 
 ## Use the Device Enrollment Program (DEP)
-DEP deploys an enrollment profile “over the air” to devices that are purchased through Apple's Device Enrollment Program. When a user runs Setup Assistant on the device, the device is enrolled in Intune.  Devices enrolled through DEP cannot be unenrolled by users. For more information, see [Enroll Device Enrollment Program iOS devices](ios-device-enrollment-program-in-microsoft-intune.md).
+DEP deploys an enrollment profile “over the air” to devices that are purchased through DEP. When a user runs Setup Assistant on the device, the device is enrolled in Intune.  Devices enrolled through DEP cannot be unenrolled by users. For more information, see [Enroll Device Enrollment Program iOS devices](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## Use the Company Portal on DEP–enrolled or Apple Configurator–enrolled devices
 
@@ -70,9 +70,9 @@ Devices that are configured with user affinity can install and run the Company P
 
 ### About corporate-owned managed devices with no user affinity
 
-Devices that are configured with no user affinity do not support the Company Portal and should not install the app. The Company Portal is designed for users who have corporate credentials and require access to personalized corporate resources (e.g. email). Devices that are enrolled with no user affinity are not intended to have a dedicated user sign in. Kiosk, point of sale (POS), or shared-utility devices are typical use cases for devices enrolled with no user affinity.
+Devices that are configured with no user affinity do not support the Company Portal and should not have the app installed. The Company Portal is designed for users who have corporate credentials and require access to personalized corporate resources (e.g. email). Devices that are enrolled with no user affinity are not intended to have a dedicated user sign in. Kiosk, point of sale (POS), or shared-utility devices are typical use cases for devices that are enrolled with no user affinity.
 
-If user affinity is required, be sure that the device’s enrollment profile has **User Affinity** selected before enrolling the device. To change the affinity status on a device, you must retire the device and re-enroll it.
+If user affinity is required, be sure that the device’s enrollment profile has **User Affinity** selected before enrolling the device. To change the affinity status on a device, you must retire the device and reenroll it.
 
 
 
