@@ -1,3 +1,3 @@
 ---
-redirect_url: https://www.microsoft.com/EN-US/privacystatement/OnlineServices/Default.aspx
+redirect_url: https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx
 ---
