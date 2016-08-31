@@ -26,14 +26,14 @@ ms.suite: ems
 ---
 # Use groups to manage users and devices in Microsoft Intune
 
-This article describes how to create groups in Intune. It also provides information about how managing groups by using Intune is going to change over the next few months. To learn about the *current* approach to group management, see [Create groups to manage users and devices with Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in this article.
+This topic describes how to create groups in Intune. It also provides information about how the management of groups by using Intune is going to change over the coming months. To learn about the *current* approach to group management, see [Create groups to manage users and devices with Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in this topic.
 
-## Notice of upcoming improvements to the groups admin experience
+## Notice of upcoming improvements to the admin experience for groups
 
 You've let us know that you'd like one grouping and targeting experience across Enterprise Mobility + Security. We hear you. Based on your feedback, soon we will be converting Intune groups to Azure Active Directory-based security groups. This change will unify group management across Intune and Azure Active Directory (Azure AD). The new experience means that you won't have to duplicate groups between services. It also will provide extensibility through the options to use Windows PowerShell and Microsoft Graph.
 
 ### How does this affect me right now?
-This change doesn’t affect you right now. But here's a preview of what's coming:
+This change doesn’t affect you now. But here's what's coming:
 
 -	In September 2016, new accounts that are provisioned after the monthly service release will use Azure AD security groups instead of Intune user groups.   
 -	In October 2016, new accounts that are provisioned after the monthly service release will manage both user-based groups and device-based groups in the Azure AD portal. There will be no effect on existing customers.
@@ -41,7 +41,7 @@ This change doesn’t affect you right now. But here's a preview of what's comin
 
 
 ### How and when will I migrate to the new groups experience?
-We will migrate current Intune customers over a period of time. We’re finalizing the schedule for that migration and will update this topic in a few weeks to give you more details. You will receive notice before you are migrated. If you have any migration concerns, please contact our migration team at [intunegrps@microsoft.com](intunegrps@microsoft.com).
+We will migrate current Intune customers over a period of time. We’re finalizing the schedule for that migration and will update this topic in a few weeks to give you more details. We'll give you notice before you are migrated. If you have any migration concerns, please contact our migration team at [intunegrps@microsoft.com](intunegrps@microsoft.com).
 
 ### What happens to my existing user and device groups?
  User groups and device groups that you've created in Intune will migrate to Azure AD security groups. Default Intune groups, such as the All Users group, will migrate only if you are using them in deployments at the time of migration. Migration may be more complex for some groups. We will notify you if additional steps are required for migration in your organization.
@@ -56,7 +56,7 @@ Here's the new functionality we'll introduce with this migration from Intune to 
 - The Intune Service Administrator role will be added to Azure AD so that Intune service admins can perform group management tasks in Azure AD.
 
 ### What Intune functionality won’t be available?
-Although the groups experience will improve, there will be some Intune functionality that you won't be able to use after your organization migrates from Intune groups to Azure AD security groups.
+Although the groups experience will improve, there will be some Intune functionality that won't be available after your organization migrates from Intune groups to Azure AD security groups.
 
 #### Group management functionality
 
