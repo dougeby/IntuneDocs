@@ -6,7 +6,7 @@ description: Use the policy settings listed in this topic to help you configure 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/26/2016
+ms.date: 08/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -196,7 +196,7 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Required password type**|Specifies whether the password must be numeric only, or alphanumeric|
 |**Required password type** - **Minimum number of character sets**|There are four character sets, lowercase letters, uppercase letters, numbers, and symbols. This setting specifies how many of these sets must be included in the password.|
 |**Minimum password length**|Applies to Windows 10 Mobile only|
-|**Number of repeated sign-in failures to allow before the device is wiped**|-|
+|**Number of repeated sign-in failures to allow before the device is wiped**|For devices running Windows 10: If the device has BitLocker enabled, it will be placed into BitLocker recovery mode after sign-in fails the number of times you specify. If the device is not BitLocker enabled, then this setting will not apply.<br>For devices running Windows 10 Mobile: After sign-in fails the number of times you specify, the device will be wiped.|
 |**Minutes of inactivity before screen turns off**|Specifies the length of time a device must be idle before the screen is locked.|
 |**Password expiration (days)**|Specifies the length of time after which the device password must be changed.|
 |**Remember password history**|Specifies whether you want to restrict the end user from creating previously used passwords.|
