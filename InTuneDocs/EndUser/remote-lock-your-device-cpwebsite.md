@@ -66,5 +66,3 @@ To use Remote Lock to lock your device:
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-### See also
-[Using the Intune Company Portal website](using-the-intune-company-portal-website.md)

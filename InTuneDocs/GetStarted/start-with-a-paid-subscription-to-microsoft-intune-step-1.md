@@ -6,7 +6,7 @@ description: How to sign up for an Intune subscription or how to sign in if you 
 keywords:
 author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

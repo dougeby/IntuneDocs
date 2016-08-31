@@ -6,7 +6,7 @@ description: Web browsers that Intune supports
 keywords:
 author: barlanmsft
 manager: angrobe
-ms.date: 05/06/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
