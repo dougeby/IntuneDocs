@@ -63,7 +63,7 @@ The app displays on users' devices in the company portal, and users can install 
 For example, in this screenshot, the Bing for iOS app was deployed by using the **External Link** installation type with a custom icon. The option **Display this as a featured app and highlight it in the company portal** was selected.  
 ![iOS available app](./media/available-install-on-iOS.png)
 
-If you deployed the app as **Required** to an iOS device, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed by using the **Managed iOS app from the app store** installation type.
+If you deployed the app as **Required** to an iOS device, the user will get a notification that an app is ready to install. For example, in this screenshot, the Work Folders for iOS app was deployed by using the **Managed iOS app from the app store** installation type.  
 ![iOS required app](./media/iOS-Required-install.PNG)
 
 ## Next steps
