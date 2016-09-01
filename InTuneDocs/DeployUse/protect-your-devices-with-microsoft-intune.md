@@ -53,8 +53,8 @@ Intune gives you a range of features to help you protect apps and their data. Fo
 ### Add an additional layer of protection to Windows devices
 [Multi-factor authentication (MFA)](protect-windows-devices-with-multi-factor-authentication.md) is a more secure way of authenticating the users of Windows and Windows Phone devices on the network.  With MFA, users need to confirm their identity beyond user name and password, through a phone call, or text message.
 
-### Control Microsoft Passport settings on Windows devices
-Intune lets you integrate with [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) which is an alternative sign-in method for Windows 10 and later that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
+### Control Windows Hello for Business settings on Windows devices
+Intune lets you integrate with [Windows Hello for Business](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (formerly Microsoft Passport) which is an alternative sign-in method for Windows 10 and later that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
 
 ## Further capabilities for iOS devices
 
