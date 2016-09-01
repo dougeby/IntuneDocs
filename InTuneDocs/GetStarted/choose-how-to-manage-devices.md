@@ -6,7 +6,7 @@ description: Learn about the various ways you can enroll and manage devices.
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,53 +26,45 @@ ms.suite: ems
 ---
 
 # Choose how to manage devices
-Intune lets you manage a range of devices by *enrolling* them into the service. Users can then use a *company portal* to perform a range of operations such as enrolling their device, browsing and installing apps, making sure their device is compliant with company policies, and contacting their IT support.
 
-## Ways to manage mobile devices
-Intune can manage the following device platforms:
+To take advantage of the many feature that Intune offers such as app deployment, and control of device settings, your devices must be *managed*. How you manage devices depends on the Intune capabilities you want to use.
+This topic will help you choose which method meets your needs.
 
-[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+To manage devices that run iOS, Mac OS X, Android, or Windows Phone, you must *enroll* them.
 
-> [!NOTE]
-> If you previously enrolled devices running an earlier version of iOS than the supported version, the devices will remain enrolled. Check documentation to confirm the feature supports that version of iOS.
+To manage Windows PCs, you have two choices:
 
-Intune can manage users' devices, popularly known as "bring your own device" (BYOD). It can also manage company-owned devices including scenarios where the company provides a list of devices users may choose from, known as "choose your own device" (CYOD).
+1. Enroll the device **or**
+2. Install the *Intune software client*.
 
-### Enrolling devices into management
-For mobile device operating systems including iOS, Android and Windows Phone, you must always enroll devices. How you enroll devices depends on your organization's needs:
+## Decide which method to use
+Use this decision flow to decide how to get your devices managed.
 
-|Enrollment type|BYOD|CYOD|Shared device with manager account|Shared device without a user account|
-|-------------------|--------|--------|--------------------------------------|----------------------------------------|
-|**Description**|Personal device enrolled using Microsoft Intune|Corporate-owned device for single user|Corporate-owned device managed using a manager account shared by many users|Corporate-owned user-less device used by many users.|
-|**Device’s user**|Owner|Assigned user|No user-specific account|No specific user|
-|**Who enrolls?**|Owner|Administrator|Device Manager|Anyone|
-|**Who un-enrolls?**|Owner or administrator|Platform |Administrator or user|Administrator or user|
-|**Who can reset?**|Owner or administrator|Administrator|Administrator|Administrator|
+![Decision flow for how to get your devices managed.](./media/choose-manage-method.png)
 
-For additional guidance, see [choose how to enroll mobile devices](/intune/get-started/choose-how-to-enroll-devices1).
+Enroll Windows PCs to get the most functionality. However, the Intune software client might be more suitable for your needs when:
 
-> [!NOTE]
-> See [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md) for a full list of the capabilities that enrolling devices gives you.
+- The PC is running Windows 7
+- You want to manage Windows software updates and license usage
+- You want to manage malware with Endpoint Protection and Windows Firewall
+- You want to provide remote assistance to users using the TeamViewer software
 
-## Ways to manage Windows PCs
-Intune can manage Windows Vista and later Windows PCs using the Intune computer client. However, for Windows PCs, you can choose between enrolling them or installing the Intune PC client software which offers a few capabilities not available when you enroll devices. In most scenarios, you will enroll your Windows device with Intune which provides a greater set of capabilities than the computer client.
 
-Consider using the Intune computer client when you want to:
+For a detailed listing of the management capabilities you'll get with each method, see [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md) and [Intune PC software client capabilities](windows-pc-management-capabilities-in-microsoft-intune.md).
+For information about the devices and PCs that Intune supports, see [Supported mobile devices and computers](/intune/get-started/supported-mobile-devices-and-computers)
 
-- Use any of the Microsoft Intune computer client enabled capabilities to manage your Windows PCs
-- Manage a Windows PC that runs an operating system that is not supported for enrollment
-
-> [!NOTE]
-> See [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md) for a full list of the capabilities that installing the Intune computer client on supported Windows PCs gives you.
 
 ## Exchange ActiveSync management
-You can also manage devices by using Exchange ActiveSync. This requires you to install the On-Premises Connector or use the built-in Service to Service Connector to connect to your Exchange Server.
-
-To learn about the hardware and software requirements to install the On-Premises Connector, see [Requirements for the On-Premises Connector](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
-
-To learn about using the On-Premises Connector or Service to Service Connector with Exchange, see [Mobile device management with Exchange ActiveSync and Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
-
+In addition to enrolling a device or installing the Intune software client, you can also manage devices by [using Exchange ActiveSync](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune). This method requires you to install the On-Premises Connector or use the built-in Service-to-Service Connector to connect to your Exchange Server.
+Although this is a third option to manage devices, it provides a limited set of management capabilities when compared to the other methods.
 
 
 ## Next steps
-Now you've discovered some of the capabilities you can use when you enroll your devices with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Next, you'll need to [enroll your devices](/intune/deploy-use/enroll-devices-in-microsoft-intune). After you have enrolled your devices, you can take advantage of all of the capabilities you've read about in this topic. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+
+- [Choose how to enroll mobile devices](/intune/get-started/choose-how-to-enroll-devices1)
+- [Manage Windows PCs with Intune PC client software](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)
+
+
+
+- [Exchange ActiveSync mobile device management with Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
+
