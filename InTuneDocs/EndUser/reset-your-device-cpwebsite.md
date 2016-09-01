@@ -34,7 +34,7 @@ If you reset your device, it will no longer be listed in the Company Portal, and
 
 To reset your device:
 
-1.  Open the [Company Portal website](http://portal.manage.microsoft.com) and tap the device whose name you want to change.
+1.  Open the [Company Portal website](http://portal.manage.microsoft.com) and tap the device that you want to reset.
 
 2.  Tap **Reset**.
 
