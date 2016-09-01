@@ -50,7 +50,7 @@ If you no longer need to manage a computer with Intune, you can retire the compu
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Client Software Download**
 
-  ![Download the Intune PC client](./media/pc-SA-client-download.png)
+  ![Download the Intune PC client](../media/pc-sa-client-download.png)
 
 2.  On the **Client Software Download** page, click **Download Client Software** and save the **Microsoft_Intune_Setup.zip** package containing the software to a secure location on your network.
 
