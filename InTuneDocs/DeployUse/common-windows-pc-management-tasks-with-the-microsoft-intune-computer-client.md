@@ -2,7 +2,7 @@
 # required metadata
 
 title: Common Windows PC management tasks | Microsoft Intune
-description: Review the tasks in this topic to learn how to manage your computers that run the Intune PC client software.
+description: Review the tasks in this topic to learn how to manage Windows PCs that run the Intune software client.
 keywords:
 author: NathBarn
 manager: angrobe
@@ -25,16 +25,18 @@ ms.suite: ems
 
 ---
 
-# Common Windows PC management tasks with the Microsoft Intune computer client
-Review the tasks in this topic to learn how to manage your computers that run the Intune PC client software. If you have not yet installed the client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+# Common Windows PC management tasks with the Intune software client
+Review the tasks in this topic to learn how to manage your computers that run the Intune software client. If you have not yet installed the client on your computers, see [Install the Intune software client](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
 ## Use policies to simplify PC management
-### Manage the Windows Firewall
-Policies simplify the administration of Windows Firewall settings on managed computers. For details, see [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+
+Windows PCs running the Intune software client can be managed using Intune's **Computer Management** policies.
+
+![Policies template for Windows PCs](../media/pc_policy_template.png)
 
 ### Manage the Microsoft Intune Center
-The Microsoft Intune Center lets users:
+Users see the Intune software client as the **Microsoft Intune Center**. The Microsoft Intune Center lets users:
 
 -   Get applications from the company portal.
 
@@ -55,11 +57,14 @@ The Microsoft Intune Center is installed on all managed computers. You can confi
 |**Web site URL**|The URL of your support website.<br /><br />Maximum length: 150 characters|
 |**Notes**|A note that is displayed to users.<br /><br />Maximum length: 120 characters|
 
-### Manage software updates settings
-Use policies to configure the settings that managed computers use to check for, and download software updates from Microsoft and from third-parties. For more information, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+## Software updates settings
+Use policies to configure the settings that managed computers use to check for, and download software updates from Microsoft and from third-parties. These updates do not include operating system upgrades (i.e. upgrading from Windows 7 to Windows 10, or upgrades from one Windows 10 version to a later version). For more information, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
-### Manage Endpoint Protection settings
+### Endpoint Protection settings
 Use policies to configure settings for Endpoint Protection that you then deploy to managed computers. This includes scan schedules, actions to take when malware is detected, and more. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+
+## Windows Firewall settings
+Policies simplify the administration of Windows Firewall settings on managed computers. For details, see [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
 ## View hardware and software inventory
 Intune collects detailed information about the hardware and software of managed computers. Use the information in the following procedures to learn how to create:
@@ -119,17 +124,17 @@ Intune collects detailed information about the hardware and software of managed 
 
 2.  Select the devices you want to retire, and then choose **Retire/Wipe**.
 
-To re-enroll a computer into Intune, reinstall the client software on the computer using the information in the [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) topic.
+To re-enroll a computer into Intune, reinstall the software client on the PC using guidance in [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 If a computer cannot connect to Intune, a message is displayed in the **Dashboard** workspace.
 
 When you retire a computer:
 
--   It is removed from the Intune management and inventory, and the license associated with the computer is made available for re-use. Retire/Wipe removes the Intune software client but does not remove apps or data from the computer.
+-   It is removed from the Intune management and inventory, and the license associated with the computer is made available for re-use. Retire/Wipe removes the Intune software client but does not remove apps or data from the computer. This retirement does not perform a full wipe on the computer.
 
 -   Its status no longer displays in the Intune console.
 
--   Intune removes the client software from the computer. If the computer is not connected to the Intune service, the client software will be removed next time it connects.
+-   Intune removes the software client from the computer. If the computer is not connected to the Intune service, the software client will be removed next time it connects.
 
 -   Microsoft Intune Endpoint Protection is removed from the computer. If the computer has another endpoint application installed and it is disabled, that application can be re-enabled after Microsoft Intune Endpoint Protection is removed to ensure that your computers are protected.
 
@@ -166,9 +171,9 @@ Before you can deploy software to a user, you must link the user to a computer. 
 > [!TIP]
 > If you want to restrict end users ability to link themselves to computers, enable the option **Restrict users' ability to link themselves to computers** in the **Microsoft Intune Agent Settings** policy.
 
-## Request and provide remote assistance to Windows PCs that use the Intune client software
+## Request and provide remote assistance for Windows PCs
 
-Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software to let users of PCs that run the Intune client software get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
+Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to let users of PCs that run the Intune software client get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
 This functionality replaces the existing Windows Remote Assistance functionality in Intune.
 
 
