@@ -60,8 +60,7 @@ Intune integrates with Hello for Business in two ways:
 	- **Allowed**. Users can use the character type in their PIN, but it is not mandatory.
 	- **Required**. Users must include at least one of the character types in their PIN. For example, it's common practice to require at least one uppercase letter and one special character.
 	- **Not allowed** (default). Users must not use these character types in their PIN. (This is also the behavior if the setting is not configured.)
-> [!TIP]
-> Special characters include: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+	Special characters include: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **PIN expiration (days)**. It's a good practice to specify an expiration period for a PIN, after which users must change it. The default is 41 days.
 - **Remember PIN history**. Restricts the reuse of previously used PINs. By default, the last 5 PINs cannot be reused.
 - **Allow biometric authentication**. Enables biometric authentication, such as facial recognition or fingerprint, as an alternative to a PIN for Windows Hello for Business. Users must still configure a work PIN in case biometric authentication fails. Choose from:
