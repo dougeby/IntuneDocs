@@ -6,7 +6,7 @@ description: Read this topic to find out how Intune can help you manage devices 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -52,7 +52,7 @@ Management, inventory, app deployment, provisioning, and retirement are all hand
 |iOS mobile app configuration|Uses mobile app configuration policies to supply settings for iOS apps that might be required when the user runs the app. For example, an app might require the user to specify a port number or logon information. This can help streamline app configuration and reduce the number of support calls.|[Configure iOS apps with mobile app configuration policies in Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |iOS mobile app provisioning profiles|Helps you deploy provisioning profiles to iOS apps that are nearing expiration. |[Use iOS mobile provisioning profile policies to prevent your apps from expiring](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Managed browser|Configures managed browser policies to control the websites that device users can visit. In addition, you can also apply mobile application management policies to the managed browser.|[Manage Internet access using managed browser policies with Microsoft Intune](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
-|Microsoft Passport|Lets you integrate with Microsoft Passport for Work, which is an alternative sign-in method for Windows 10 that uses on-premises Active Directory or  Azure Active Directory to replace a passwords, smart cards, or virtual smart cards.|[Control Microsoft Passport settings on devices with Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Windows Hello for Business|Lets you integrate with Windows Hello for Business, which is an alternative sign-in method for Windows 10 that uses on-premises Active Directory or  Azure Active Directory to replace passwords, smart cards, or virtual smart cards.|[Control Windows Hello for Business settings on devices with Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 |Volume purchased apps|Helps you manage apps that you purchased through a volume-purchase program by importing the license information from the app store, tracking how many of the licenses you have used, and preventing you from installing more copies of the app than you own.|[Manage volume-purchased apps using Microsoft Intune](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
 ## Company resource access
