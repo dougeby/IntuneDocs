@@ -49,6 +49,9 @@ Intune integrates with Hello for Business in two ways:
 3.  If you selected **Enable Windows Hello for Business on enrolled devices**, configure the required settings that will be applied to all enrolled Windows 10 and Windows 10 Mobile devices.
 4.  When you are finished, choose **Save**.
 
+
+## Settings for the Windows Hello for Business policy
+
 - **Use a Trusted Platform Module (TPM)**. A TPM chip provides an additional layer of data security.<br>Choose one of the following values:
 	- **Required** (default). Only devices with an accessible TPM can provision Windows Hello for Business.
 	- **Preferred**. Devices first attempt to use a TPM. If this is not available, they can use software encryption.
