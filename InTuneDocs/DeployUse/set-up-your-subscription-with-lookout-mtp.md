@@ -64,9 +64,51 @@ See the [troubleshooting article](troubleshooting-lookout-integration)  for diag
 The next steps outline the tasks that must be done to complete the Lookout MTP set up within the Lookout MTP Console.
 
 ### Step 2: Configure the Intune connector
+
+In the Lookout MTP console, choose **System**, choose the **Connectors**, and select **Intune**.
+![screenshot of the Lookout MTP console with the connectors tab open, and Intune option highlighted](../media/mtp/lookout_mtp_setup-intune-connector.png)
+
+For connection settings, configure the heartbeat frequency in minutes.  With completion of this step, your Intune connector is now ready.  
+![screenshot of the connection settings tab with showing heartbeat frequency configured](../media/mtp/lookout-mtp-connection-settings.png)
+
 ### Step 3: Configure enrollment groups
+On the **Enrollment** tab, define a set of users whose devices should be enrolled with Lookout.   Best practice is to start with a small group of users to test and become familiar with the product integrations.  Once you are satisfied, you may extend the enrollment to additional groups of users.
+
+To get started with enrollments groups, define an Azure AD security group that would be a good first set of users to enroll in Lookout MTP.    On the Lookout MTP Console, go to the **Intune Connector Enrollment page** and add the Azure AD security group Display Name(s) for enrollment.
+
+When a user is in an enrollment group, any of their devices that are identified and supported in Azure AD will be enrolled and be eligible for activation in Lookout MTP.  The first time they open the Lookout for Work app on their supported device, it is activated in Lookout MTP.
+![screenshot of the Intune connector enrollment page](../media/mtp/lookout-mtp-enrollment.png)
+
+Best practice is to leave the increment to check for new devices to be the default 5 minutes.
+
+>[!IMPORTANT]
+> The display name is case sensitive.  Use the **Display Name** as shown the in the **Properties** page of the security group in the Azure portal. Note in the picture below that the **Properties** page of the security group, the Display Name is camel case.  The title however is displayed in all lower case and should not be used to enter into the Lookout MTP console.
+>![screenshot of the Azure portal, Azure Active Directory service, properties page](../media/mtp/aad-group-display-name.png)
+
+The current release has the following limitations:  
+* There is no validation that the names inputted are valid.  Please make sure to use the “Display Name” shown in Azure portal for the Azure AD security group.
+* Creating groups within groups is not currently supported.  Azure AD security groups specified should only contain users and not nested groups.
+
+
 ### Step 4: Configure state sync
-### Step 5: Configure email notifications
-### Step 6: Configure threat classification
+On the Intune connector State Sync page, specify what data should be sent to Intune.  You must enable both device status and threat status in order for the Integration to work correctly.  These are enabled by default.
+### Step 5: Configure error report email recipient information
+On the Intune connector error management page, enter the email address to which you want to send the error reports.
+
+![screenshot of the Intune connector error management page](../media/mtp/lookout-mtp-connector-error-notifications.png)
+
+### Step 6: Configure email notifications
+If you would like to receive email alerts for threats, sign in to https://aad.lookout.com  as the user receiving the notifications.  Navigate to System > Preferences and choose the desired notifications and set them to ON. Save your changes.
+![screenshot of the preferences page with the user account displayed](../media/mtp/lookout-mtp-email-notifications.png)
+If you no longer wish to receive email notifications, set the notifications to OFF and save your changes.
+### Step 7: Configure threat classification
+Lookout MTP classifies mobile threats of various types . This permits threat classifications to represent different risk levels. The MTP threat classifications have default risk levels associated with them. These can be edited at any time by the Lookout Administrator as shown in the Policy page shown in the screenshot below.
+![screenshot of the policy page showing threat and classifications](../media/mtp/lookout-mtp-threat-classification.png)
+
+>[!IMPORTANT]
+> The risk levels specified here is an important aspect of MTP because the Intune integration calculates device compliance according to these risk levels at runtime. In other words, Intune Admin sets a rule in policy to determine a device is non-compliant if it has an active threat with a minimum level of -high, moderate, or low. The threat classification policy in MTP directly drives the device compliance calculation in Intune.
+
 ## Watching enrollment
+Once the setup is complete, Lookout MTP will start to poll Azure AD for devices that correspond to the specified enrollment groups.  Information about the devices enrolled can be found on the Devices page.  The initial status for devices is shown as pending.  The device status will change once the Lookout for work app is installed, opened, and activated on the device.  Details on how to get the Lookout for work app pushed to the device can be found in [configure and deploy Lookout for work apps](configure-and-deploy-lookout-for-work-apps.md) topic.
 ## Next steps
+[Enable Lookout MTP connection Intune](enable-lookout-mtp-connection-in-intune.md)
