@@ -55,10 +55,3 @@ When the user opens the Lookout for Work on the device they will need to Activat
 
 ## Next steps
 * [Enable device threat protection rule in the compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md)
-
-* Create conditional access policy
-  * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  * [Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  * [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  * [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune,md)
-  * [Dynamics CRM](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
