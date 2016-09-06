@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Restrict access to company resource based on device, network, and application risk
 Microsoft Intune gives you the ability to control access from mobile devices to corporate resources based on risk assessments conducted by mobile threat protection (MTP) solutions.  The risk is based on telemetry that the MTP service collects from devices around operating system (OS) vulnerabilities, installed malicious apps, and network profiles. 
-For this release, Microsoft is collaborating with Lookout security to provide you the risk assessment capabilities.
+For this release, Microsoft is collaborating with Lookout security to provide you the risk assessment capabilities and compliance policy rule support for **Android devices 4.1 and later**.
 ## What problem does this solve?
 Companies and organizations need to protect sensitive data from emerging threat vectors that include physical, app-based, and network-based threats, as well as OS vulnerabilities.
 
