@@ -32,6 +32,12 @@ This topic describes some common issues you may encounter when with you Lookout 
 You may see a 404 *you are not authorized to access the service* error when you login. This issue can happen when the username you provided during your login to https://aad.lookout.com  is not a member of the Azure AD Group defined for having access to Lookout MTP.
 
 Lookout MTP is configured to only allows users from a configured AAD group to have access.  The group information was provided to Lookout MTP support for configuration.  If you are unsure which group is configured to have access, contact Lookout support.
+
+You can contact Lookout support through on the following methods:
+
+* email to enterprisesupport@lookout.com
+* Login to the  MTP  Console, and navigate to the Support page.
+* Go to:  https://enterprise.support.lookout.com/hc/en-us/requests and make a support request.
 ### Unable to sign in errors
 You may see the following error when the Azure AD global admin user has not accepted the initial Lookout setup.
 
@@ -75,6 +81,11 @@ You must wipe the device and ask the new user to enroll.  From the Intune Consol
 You can also, go to the Devices page of the Lookout MTP Console and choose **Delete**.  
 
 As long as the new user is in an Enrollment Group specified in the Lookout MTP console, the device will appear once Azure AD associates the device to the new user.
+
+## Compliance remediation workflows
+[You are prompted to install Lookout for work app on your device]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+[Your device does not meet the mobile risk policy](http://docs.microsoft.com/intune/enduser/your-device-does-not-meet-the-mobile-risk-policy-android)
+
 
 ### See also
 [Set up you subscription with Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
