@@ -66,7 +66,10 @@ b. Choose the lock icon &gt;  **More information**.
 
 
 2. From within the ISE console, import the Intune certificate (the file you exported) into the  **Trusted Certificates** store.
+
+
 ### Obtain a self-signed cert from ISE 
+
 1.  In the ISE console, go to **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate**.  
 2.       Export the self-signed certificate.
 3. In a text editor, edit the exported certificate:
