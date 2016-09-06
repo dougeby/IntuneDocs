@@ -41,7 +41,7 @@ The following table lists the device types supported by compliance policies and 
 --------------
 
 |Policy Setting| Windows 8.1 and later| Windows Phone 8.1 and later| iOS 6.0 and later|Android 4.0 and later<br/>Samsung KNOX Standard 4.0 and later|
-|-----|----|----|----|
+|-----|----|----|----|----|
 |**PIN or Password Configuration** |Remediated|Remediated|Remediated|Quarantined|
 |**Device encryption**|N/A|Remediated|Remediated (by setting PIN)|Quarantined|
 |**Jailbroken or rooted device**|N/A|N/A|Quarantined (not a setting)|Quarantined (not a setting)|
