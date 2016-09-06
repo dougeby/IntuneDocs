@@ -6,7 +6,7 @@ description: Mobile application management policies in Microsoft Intune let you 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ Mobile application management policies support:
 
 -   Devices that run Android 4 and later.
 
--   Devices that run iOS 7 and later.
+-   Devices that run iOS 8.0 and later.
 
 > [!TIP]
 > Mobile application management policies support devices that are enrolled with Intune.
@@ -118,7 +118,7 @@ After you have verified that the app is uploaded successfully, continue to step 
 
     -   **Mobile Application Management Policy (Android 4 and later)**
 
-    -   **Mobile Application Management Policy (iOS 7 and later)**
+    -   **Mobile Application Management Policy (iOS 8.0 and later)**
 
     You can use recommended settings or customize the settings. For details, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -140,7 +140,7 @@ After you have verified that the app is uploaded successfully, continue to step 
     |**Require device compliance with corporate policy for access**|This setting allows the app to be used only when the device is not jailbroken or rooted.|
     |**Recheck the access requirements after (minutes)**|In the **Timeout** field, specify the time period before the access requirements for the app are rechecked after the app is opened.|
     |**Offline grace period**|If the device is offline, specify the time period before the access requirements for the app are rechecked.|
-    |**Encrypt app data**|This setting specifies that all data associated with this app will be encrypted. This includes data stored externally, such as in SD cards.<br /><br />**Encryption for iOS**<br /><br />For apps that are associated with an Intune mobile application management policy, data is encrypted at rest through device-level encryption that the OS provides. This is enabled through a device PIN policy that the IT admin sets. When a PIN is required, the data will be encrypted according to the settings in the mobile application management policy. As stated in Apple documentation, [the modules that iOS 7 uses are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Encryption for Android**<br /><br />For apps that are associated with an Intune mobile application management policy, Microsoft provides encryption. Data is encrypted synchronously during file I/O operations.  Content on the device storage will always be encrypted. The encryption method is not FIPS 140-2 certified.|
+    |**Encrypt app data**|This setting specifies that all data associated with this app will be encrypted. This includes data stored externally, such as in SD cards.<br /><br />**Encryption for iOS**<br /><br />For apps that are associated with an Intune mobile application management policy, data is encrypted at rest through device-level encryption that the OS provides. This is enabled through a device PIN policy that the IT admin sets. When a PIN is required, the data will be encrypted according to the settings in the mobile application management policy. As stated in Apple documentation, [the modules that iOS uses are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Encryption for Android**<br /><br />For apps that are associated with an Intune mobile application management policy, Microsoft provides encryption. Data is encrypted synchronously during file I/O operations.  Content on the device storage will always be encrypted. The encryption method is not FIPS 140-2 certified.|
     |**Block screen capture** (Android devices only)|This setting specifies that the screen capture capabilities of the device are blocked when someone is using this app.|
     
 4. When you are finished, choose **Save Policy**.
@@ -153,8 +153,6 @@ Ensure that you select the mobile application management policy on the **Mobile 
 For details, see [Deploy apps in Microsoft Intune](deploy-apps.md).
 
 > [!IMPORTANT]
-> For devices that run operating systems earlier than iOS 7.1, associated policies will not be removed when the app is uninstalled.
->
 > If the device is unenrolled from Intune, polices are not removed from the apps. Any apps that had policies applied will retain the policy settings after the app is uninstalled and reinstalled.
 
 ### What to do when an app is already deployed on devices
