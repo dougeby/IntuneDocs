@@ -6,7 +6,7 @@ description: Use VPN profiles to deploy VPN settings to users and devices in you
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ For example, assume that you want to provision all iOS devices with the settings
 You can configure the following device types by using VPN profiles:
 
 * Devices that run Android 4 and later
-* Devices that run iOS 7.1 and later
+* Devices that run iOS 8.0 and later
 * Devices that run Mac OS X 10.9 and later
 * Enrolled devices that run Windows 8.1 and later
 * Devices that run Windows Phone 8.1 and later
@@ -51,6 +51,8 @@ Intune supports creating VPN profiles that use the following connection types:
 Connection type |iOS and Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 desktop and mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Yes |Yes   |No    |     No    |No  |No    | Yes (OMA-URI, mobile only)|     
+Cisco (IPsec)|Yes |No   |No  |  No|No  |No | No|
+Citrix|Yes |No   |No  |  No|No  |No | No|
 Pulse Secure|Yes  |Yes |Yes   |No  |Yes  |Yes| Yes|        
 F5 Edge Client|Yes |Yes |Yes |No  |Yes  |   Yes |  Yes|   
 Dell SonicWALL Mobile Connect|Yes |Yes |Yes |No  |Yes |Yes |Yes|         
@@ -89,7 +91,7 @@ The user authenticates to the VPN server by providing a user name and password.
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Add Policy**.
 2. Select a template for the new policy by expanding the relevant device type, and then choose the VPN profile for that device:
 	* **VPN Profile (Android 4 and later)**
-	* **VPN Profile (iOS 7.1 and later)**
+	* **VPN Profile (iOS 8.0 and later)**
 	* **VPN Profile (Mac OS X 10.9 and later)**
 	* **VPN Profile (Windows 8.1 and later)**
 	* **VPN Profile (Windows Phone 8.1 and later)**
@@ -117,6 +119,7 @@ Setting name  |More information
 **Login group or domain**|Specify the name of the login group or domain that you want to connect to. This option is displayed only when the connection type is **Dell SonicWALL Mobile Connect**.
 **Fingerprint**|Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) This option is displayed only when the connection type is **CheckPoint Mobile VPN**.
 **Per App VPN**|Select this option if you want to associate this VPN connection with an iOS or Mac OS X app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you deploy the software. For more information, see [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
+**On-demand VPN**|You can set up on-demand VPN for iOS 8.0 and later devices. Instructions for setting this up are provided in [On-demand VPN for iOS devices](#on-demand-vpn-for-ios-devices).
 **Automatically detect proxy settings** (iOS, Mac OS X, Windows 8.1, and Windows Phone 8.1 only)|If your VPN server requires a proxy server for the connection, specify whether you want devices to automatically detect the connection settings. For more information, see your Windows Server documentation.
 **Use automatic configuration script** (iOS, Mac OS X, Windows 8.1, and Windows Phone 8.1 only)|If your VPN server requires a proxy server for the connection, specify whether you want to use an automatic configuration script to define the settings, and then specify a URL to the file that contains the settings. For more information, see your Windows Server documentation.
 **Use proxy server** (iOS, Mac OS X, Windows 8.1, and Windows Phone 8.1 only)|If your VPN server requires a proxy server for the connection, select this option, and then specify the address and port number of the proxy server. For more information, see your Windows Server documentation.
@@ -146,6 +149,33 @@ Defining routes in corporate boundaries is useful when your VPN connection type 
 You can restrict VPN usage for Windows 10 devices to specific apps by creating a custom OMA-URI setting.
 
 The new policy appears in the **Configuration Policies** node of the **Policy** workspace.
+
+### On-demand VPN for iOS devices
+You can configure on-demand VPN for iOS 8.0 and later devices.
+
+> [!NOTE]
+>  
+> You cannot use per-app VPN and on-demand VPN in the same policy.
+ 
+1. On the policy configuration page, find **On-demand rules for this VPN connection**. The columns are labeled **Match**, the condition that the rules check for, and **Action**, the action that the policy will trigger when the condition is matched. 
+2. Choose **Add** to create a rule. There are two types of matches that you can set up in the rule. You can only configure one of these types per rule.
+  - **SSIDs**, which refer to wireless networks. 
+  - **DNS search domains**, which are.....  You can use full-qualified domain names such as *team. corp.contoso.com*, or use domains such as *contoso.com*, which is the equivalent of using * *.contoso.com*.
+3. Optional :provide a URL string probe, which is a URL that the rule uses as a test. If the device on which this profile is installed is able to access this URL without redirection, the VPN will be established and the device will connect to the target URL. The user will not see the URL string probe site. An example of a URL string probe is the address of an auditing Web server that checks device compliance before connecting the VPN. Another possibity is that the URL tests the ability of the VPN to connect to a site, before connecting the device to the target URL through the VPN.
+4. Choose one of these actions:
+  - **Connect**
+  - **Evaluate connection**, which has three settings
+	  a. **Domain action**  - choose **Connect if needed** or **Never connect**
+	  b. **Comma-separated list of domains** - you configure this only if you choose a **Domain action** of **Connect if needed** 
+      c. **Required URL string probe** - an HTTP or HTTPS (preferred) URL, such as *https://vpntestprobe.contoso.com*. The rule will check to see if there's a response from this address. If not, and the **Domain action** is **Connect if needed**, the VPN will be triggered.
+     > [!TIP]
+     >
+     >An example of when you might use this action is when some sites on your corporate network require a direct or VPN corporate network connection, but others do not. If you list in **Comma-separated list of DNS search domains** *corp.contoso.com*, you can choose **Connect if needed** and then list specific sites within that network that may require VPN, such as *sharepoint.corp.contoso.com*. The rule will then check if *vpntestprobe.contoso.com* can be reached. If it can't, the VPN will be triggered for the sharepoint site.
+  - **Ignore** - this causes no change in the VPN connectivity. If the VPN is connected, leave it connected, if it's not connected, don't connect it. For example, you may have a rule that connects the VPN for all of your internal corporate web sites, but want to make one of those internal sites accessible only when the device is actually connected to the corporate network. In that case, you would create an ignore rule for that one site.
+  - **Disconnect** - disconnect devices from the VPN when the conditions are matched. For example, you could list your corporate wireless networks in the **SSIDs** field, and create a rule that disconnects devices from the VPN when they connect to one of those networks.
+
+The on-demand VPN rules are evaluated from most specific to least specific. 
+
 
 ## Deploy the policy
 
