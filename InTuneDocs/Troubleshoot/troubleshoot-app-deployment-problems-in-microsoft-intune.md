@@ -6,7 +6,7 @@ description: This topic helps you solve app deployment problems with Microsoft I
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,49 +28,7 @@ ms.suite: ems
 # Troubleshoot app deployment problems in Microsoft Intune
 If you are having problems deploying and managing apps with Intune, start here. This topic contains some common problems you might encounter together with solutions.
 
-## Common app deployment problems
-
-### Contact IT information is missing in the Company Portal
-
-1.  In the Intune admin console, choose **Admin** &gt; **Company Portal**.
-
-2.  Set the **Contact IT** details.
-
-### If you can’t see specific apps in the list
-
-1.  Make sure you are checking the list of apps for a user or device to which the app was deployed.
-
-2.  Make sure that the device meets the requirements for the app.
-
-### If you get an error while downloading an app
-
-1.  Make sure there isn't more than one concurrent download per user. Each user can download one app at a time.
-
-2.  Make sure there are not too many concurrent downloads per account. Wait a few minutes and then try again.
-
-3.  If you receive an iOS native message that you can't install, that the installation is canceled or that you need to retry, it might be due to high traffic. Wait a few minutes and then try again.
-
-4.  If the iOS app download progress bar is complete but the app installation fails, something might be wrong with the app files that you provided.
-
-
-### If your app is stuck “in progress” while uploading
-
-1.  When uploading an app, first the metadata is added, followed by the app package. After the metadata has been uploaded, the app will appear in progress. If you see that your app is in the in-progress state for an unusually long time, delete the app and then upload it again.
-
-2.  Make sure not to manage the deployment of the app while it is in the “in progress” state.
-
-### If you encounter a failure when installing an iOS app
-
-1.  Make sure that your organization’s firewall allows access to the Apple provisioning and certification web sites.
-
-2.  For more information, view the Apple developer documentation.
-
-### If managed apps are not reporting installation status
-
-Installation status was not collected for managed app installations prior to the Microsoft Intune service update in November 2014. For devices that installed managed apps prior to this service update, update each associated app deployment with the appropriate deployment action (for example, **Available install**). Each device will update the app during the automatic check for available apps. For more information, see [Update apps using Microsoft Intune](/intune/deploy-use/update-apps-using-microsoft-intune).
-
-## <a name="BKMK_SoftDistErrorCodes"></a>App deployment error codes
-The following table lists common errors that may occur during Intune app deployment, the likely causes, and possible solutions to help you troubleshoot them.
+## Common app deployment error codes
 
 |Error code|Possible problem|Suggested resolution|
 |--------------|--------------------|------------------------|
