@@ -161,7 +161,7 @@ You can configure on-demand VPN for iOS 8.0 and later devices.
 2. Choose **Add** to create a rule. There are two types of matches that you can set up in the rule. You can only configure one of these types per rule.
   - **SSIDs**, which refer to wireless networks. 
   - **DNS search domains**, which are.....  You can use full-qualified domain names such as *team. corp.contoso.com*, or use domains such as *contoso.com*, which is the equivalent of using * *.contoso.com*.
-3. Optional :provide a URL string probe, which is a URL that the rule uses as a test. If the device on which this profile is installed is able to access this URL without redirection, the VPN will be established and the device will connect to the target URL. The user will not see the URL string probe site. An example of a URL string probe is the address of an auditing Web server that checks device compliance before connecting the VPN. Another possibity is that the URL tests the ability of the VPN to connect to a site, before connecting the device to the target URL through the VPN.
+3. Optional :provide a URL string probe, which is a URL that the rule uses as a test. If the device on which this profile is installed is able to access this URL without redirection, the VPN will be established and the device will connect to the target URL. The user will not see the URL string probe site. An example of a URL string probe is the address of an auditing Web server that checks device compliance before connecting the VPN. Another possibility is that the URL tests the ability of the VPN to connect to a site, before connecting the device to the target URL through the VPN.
 4. Choose one of these actions:
   - **Connect**
   - **Evaluate connection**, which has three settings
@@ -174,7 +174,7 @@ You can configure on-demand VPN for iOS 8.0 and later devices.
   - **Ignore** - this causes no change in the VPN connectivity. If the VPN is connected, leave it connected, if it's not connected, don't connect it. For example, you may have a rule that connects the VPN for all of your internal corporate web sites, but want to make one of those internal sites accessible only when the device is actually connected to the corporate network. In that case, you would create an ignore rule for that one site.
   - **Disconnect** - disconnect devices from the VPN when the conditions are matched. For example, you could list your corporate wireless networks in the **SSIDs** field, and create a rule that disconnects devices from the VPN when they connect to one of those networks.
 
-The on-demand VPN rules are evaluated from most specific to least specific. 
+Domain-specific rules are evaluated before all-domain rules. 
 
 
 ## Deploy the policy
