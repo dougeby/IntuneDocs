@@ -25,11 +25,11 @@ ms.suite: ems
 
 ---
 
-# Troubleshooting Lookout Integration with Intune
+# Troubleshoot Lookout Integration with Intune
 This topic describes some common issues you may encounter when with your Lookout mobile threat protection setup.
-## Troubleshooting login errors
+## Troubleshoot login errors
 ### 404 errors
-You may see a 404 *you are not authorized to access the service* error when you login. This issue can happen when the username you provided during your login to https://aad.lookout.com  is not a member of the Azure Active Directory (Azure AD) group configured to access Lookout MTP.
+You may see a 404 *you are not authorized to access the service*  error when you login. This issue can happen when the username you provided during your login to https://aad.lookout.com  is not a member of the Azure Active Directory (Azure AD) group configured to access Lookout MTP.
 
 Lookout MTP is configured to only allows users from a configured Azure AD group to have access.  The group information can be reviewed in the **Enrollment** tab of the **Intune connector** in the Lookout MTP console.  If you are unsure which group is configured with access to Lookout MTP, contact Lookout support.
 
@@ -47,7 +47,7 @@ You may see the following error when the Azure AD global admin user has not acce
 To resolve this issue, the global admin user must login to  https://aad.lookout.com/les?action=consent
 and accept to initiate the setup. More detailed information can be found in  [Setup your subscription with Lookout MTP](set-up-your-subscription-with-lookout-mtp.md) topic
 
-## Device status issues
+## Troubleshoot device status issues
 
 ### Device not showing up in the Lookout MTP console device list.
 
