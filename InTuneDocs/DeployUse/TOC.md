@@ -101,6 +101,11 @@
 #### [Restrict email access: examples](restrict-email-access-example-scenarios.md)
 
 ### [Restrict access to networks (Cisco ISE)](restrict-access-to-networks.md)
+### [Restrict access based on device, network, and application risk](restrict-access-based-on-device-network-app-risk.md)
+#### [Setup Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+#### [Enable Lookout in Intune](enable-lookout-mtp-connection-in-intune.md)
+#### [Deploy Lookout for work apps](configure-and-deploy-lookout-for-work-apps.md)
+#### [Enable device threat protection compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [Protect app data with MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md)
