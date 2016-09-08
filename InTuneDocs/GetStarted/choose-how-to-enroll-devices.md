@@ -35,7 +35,9 @@ Your answers to the following questions will help determine the best enrollment 
   - **Company-owned devices** - COD enrollment
 
 > [!div class="button"]
-[BYOD Enrollment >](#what-byod-devices-can-your-users-enroll)   [COD Enrollment >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
+[BYOD Enrollment >](#what-byod-devices-can-your-users-enroll)   
+> [!div class="button"]
+[COD Enrollment >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
 ## **What BYOD devices can your users enroll?**
 
