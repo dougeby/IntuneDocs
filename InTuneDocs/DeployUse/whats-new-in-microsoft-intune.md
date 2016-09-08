@@ -79,13 +79,11 @@ A new Notifications icon has been added to the Company Portal for Android on the
 
 
 ### iOS
-- **Changes in support for the iOS Company Portal app**
+- **Changes in support for the iOS Company Portal app**<br/>
 All users of the Microsoft Intune Company Portal app for iOS are now required to use its latest version. New users are able to download only the latest version, and current users are required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions cannot use the Company Portal or enroll until they update their device to iOS 8.0 or late,r and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.
 <!---TFS 1283165--->
 
-- **Minimum iOS Managed Browser version updated to 8.0**<br/>
-The Microsoft Intune Managed Browser app for iOS has been updated to support devices running iOS 8.0 or later. While iOS 7.1 devices can still use the existing Managed Browser app, encourage your users to update to iOS 8.0 or later to access and take full advantage of new Managed Browser features.  
-<!---TFS 1313253 checked--->
+
 ### Windows
 **Feedback button added to Windows Phone 8.1 Company Portal app**
 The Windows Phone 8.1 Company Portal app enables end users to send feedback about the app by using a new "send feedback" button. To find the button, users tap the “three dots” menu at the bottom right of the Company Portal app screen and then tap **send feedback**. The collected, anonymized feedback will help Microsoft improve the Company Portal app experience for users.
