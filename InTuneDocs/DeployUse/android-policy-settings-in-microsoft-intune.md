@@ -63,14 +63,14 @@ If the setting you are looking for does not appear in this topic, you might be a
 ### Encryption settings
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Require encryption on mobile device**|Requires that files on the mobile device are encrypted.|Yes|Yes|
 |**Require encryption on storage cards**|Specifies whether the device storage card must be encrypted.|No|Yes|
 
 ### System settings
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Allow screen capture**|Lets the user capture the screen contents as an image.|No|Yes|
 |**Allow diagnostic data submission**|Allows the device to submit diagnostic information to Google.|No|Yes|
 |**Allow factory reset**|Allows the user to perform a factory reset on the device.|No|Yes|
@@ -78,19 +78,19 @@ If the setting you are looking for does not appear in this topic, you might be a
 ### Cloud settings - documents and data
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------------------|----------------|
+|----------------|----|------------------------|----------------|
 |**Allow Google backup**|Allows the use of Google backup.|No|Yes|
 
 ### Cloud settings - accounts and synchronization
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Allow Google account auto sync**|Allows Google account settings to be automatically synchronized.|No|Yes|
 
 ### Application settings - browser
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Allow web browser**|Specifies whether the device's default web browser can be used.|No|Yes|
 |**Allow autofill**|Allows the autofill function of the web browser to be used.|No|Yes|
 |**Allow pop-up blocker**|Allows the use of the pop-up blocker in the web browser.|No|Yes|
@@ -100,13 +100,13 @@ If the setting you are looking for does not appear in this topic, you might be a
 ### Application settings - apps
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Allow Google Play store**|Allows the user to access the Google Play store on the device.|No|Yes|
 
 ### Device capabilities settings - hardware
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Allow camera**|Allows the use of the device camera.|Yes|Yes|
 |**Allow removable storage**|Allows the device to use removable storage, like an SD card.|No|Yes|
 |**Allow Wi-Fi**|Allows the use of the Wi-Fi capabilities of the device.|No|Yes|
@@ -119,7 +119,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 ### Device capabilities settings - cellular
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Allow voice roaming**|Allows voice roaming when the device is on a cellular network.|No|Yes|
 |**Allow data roaming**|Allows data roaming when the device is on a cellular network.|No|Yes|
 |**Allow SMS/MMS messaging**|Allows the use of SMS and MMS messaging on the device.|No|Yes|
@@ -127,7 +127,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 ### Device capabilities settings - features
 
 |Setting name|Details|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Allow voice assistant**|Allows the use of voice assistant software on the device.|No|Yes|
 |**Allow voice dialing**|Enables or disables the voice dialing feature on the device.|No|Yes|
 |**Allow copy and paste**|Allows copy and paste functions on the device.|No|Yes|
