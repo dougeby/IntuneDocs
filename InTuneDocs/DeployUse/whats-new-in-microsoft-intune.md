@@ -73,19 +73,19 @@ End users of noncompliant devices will be prompted to enroll, and will be requir
 
 ### Android
 
-**Addition of "Notifications" to the Company Portal for Android**
+**Addition of "Notifications" to the Company Portal for Android**<br/>
 A new Notifications icon has been added to the Company Portal for Android on the homepage. Tapping this icon accesses the Notifications page, which shows your end users all items that require attention in the Company Portal app, such as device noncompliance, enrollment update, and enrollment activation. The iOS Company Portal app already has this notifications experience. Having the new Notifications page means that user won’t see the Company Access Setup page every time they launch or resume the Company Portal as long as the device is already enrolled. If you create your own end-user guidance, you might want to update your documentation to reflect this change. Find updated screenshots [here](https://aka.ms/androidcpupdate).  
 <!---TFS 1095560--->
 
 
 ### iOS
-- **Changes in support for the iOS Company Portal app**<br/>
+**Changes in support for the iOS Company Portal app**<br/>
 All users of the Microsoft Intune Company Portal app for iOS are now required to use its latest version. New users are able to download only the latest version, and current users are required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions cannot use the Company Portal or enroll until they update their device to iOS 8.0 or late,r and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.
 <!---TFS 1283165--->
 
 
 ### Windows
-**Feedback button added to Windows Phone 8.1 Company Portal app**
+**Feedback button added to Windows Phone 8.1 Company Portal app**<br/>
 The Windows Phone 8.1 Company Portal app enables end users to send feedback about the app by using a new "send feedback" button. To find the button, users tap the “three dots” menu at the bottom right of the Company Portal app screen and then tap **send feedback**. The collected, anonymized feedback will help Microsoft improve the Company Portal app experience for users.
 <!---TFS 1317806--->
 
