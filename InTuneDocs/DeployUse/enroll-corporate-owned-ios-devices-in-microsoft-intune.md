@@ -6,7 +6,7 @@ description: Enrollment of corporate-owned iOS devices by using the Apple Device
 keywords:
 author: NathBarn
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,6 +46,11 @@ DEP deploys an enrollment profile “over the air” to devices that are purchas
 ## Use the Company Portal on DEP-enrolled or Apple Configurator-enrolled devices
 
 Devices that are configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete a number of additional steps to complete the Setup Assistant and install the Company Portal app.
+
+User affinity is required to support the following:
+  - Mobile application management (MAM) apps
+  -	Conditional access to email and company data
+  -	Company Portal app
 
 **How users enroll corporate-owned iOS devices with user affinity**
 1. When users turn on their device, they are prompted to complete the Setup Assistant. During setup, users are prompted for their credentials. They must use the credentials (i.e. the unique personal name or UPN) that are associated with their subscription in Intune.
