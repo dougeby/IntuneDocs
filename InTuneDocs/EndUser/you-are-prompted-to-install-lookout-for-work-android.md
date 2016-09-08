@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # You are prompted to install Lookout for Work
 
-If you see the message shown below, “Lookout for Work is not installed and activated,” it means that your IT administrator is requiring you to install the Lookout for Work app, which helps to protect your device by finding potential security threats.
+If you see the message “Lookout for Work is not installed and activated” shown below, it means that your IT administrator requires you to install the Lookout for Work app, which helps to protect your device by finding potential security threats.
 
 ![you must resolve a compliance issue](./media/lookout-resolve-compliance-issues_expanded-android.png)
 
@@ -47,13 +47,13 @@ If you see the message shown below, “Lookout for Work is not installed and act
 
 	![open Lookout for Work and tap Activate](./media/lookout-activate-button-android.png)
 
-4. Tap **Sign in with your work account**, and enter the account that you use to access work or school email, files, and other data.
+4. Tap **Sign in with a work account**, and enter the account that you use to access work or school email, files, and other data.
 
 	![sign in with your work or school account](./media/lookout-sign-in-android.png)
 
 5. Select the account that you use to access work or school email and files, and then tap **ADD ACCOUNT**.
 
-	![select your work or school account and tap Add Account](./media/lookout-pick-accoun-androidt.png)
+	![select your work or school account and tap Add Account](./media/lookout-pick-account-android.png)
 
 6. Tap **Accept** to give Lookout for Work permission to sign you in and read your profile.
 
@@ -76,6 +76,8 @@ If you see the message shown below, “Lookout for Work is not installed and act
 	The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
 	![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
+
+	If Lookout for Work finds a security threat on your device, you will see instructions on how to fix the issue.
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 

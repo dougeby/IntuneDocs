@@ -32,7 +32,7 @@ Use the Microsoft Intune **Exchange ActiveSync** policy to configure settings th
 ## Password settings
 
 |Setting name|Details
-|----------------|
+|----------------|---|
 |**Require a password to unlock mobile devices**|Specifies whether devices must be locked by using a password.<br>(not applicable to devices running Windows RT).|
 |**Required password type**|Specifies the type of password that will be required, such as numeric only or alphanumeric.|
 |**Minimum password length**|Specifies the minimum number of required characters in the device password.|
@@ -46,7 +46,7 @@ Use the Microsoft Intune **Exchange ActiveSync** policy to configure settings th
 ## Encryption settings
 
 |Setting name|Details|
-|----------------|
+|----------------|---|
 |**Require encryption on mobile device**<sup>1</sup>|Requires the data on a device to be encrypted when supported.<br><br>For Windows Phone 8 devices, you must set this to **Yes**.<br /><br />To enable encryption on iOS devices, enable the **Require a password to unlock mobile devices** setting.|
 |**Require encryption on storage cards**|Requires data that is stored on external storage such as an SD card to be encrypted (on supported devices).
 <sup>1</sup> Additional information for devices that run Windows 8.1
@@ -62,7 +62,7 @@ Use the Microsoft Intune **Exchange ActiveSync** policy to configure settings th
 ## Email settings
 
 |Setting name|Details
-|----------------|
+|----------------|---|
 |**Allow users to download email attachments**|Specifies whether email attachments can be downloaded to the device.|
 |**Email synchronization period**|Specifies the number of days of received email that will be synchronized to the device.
 |**Allow mobile devices that don’t fully support Exchange ActiveSync settings to synchronize with Exchange**|Specifies whether to allow Exchange access on devices that don't support one or more Exchange ActiveSync settings.
@@ -70,13 +70,13 @@ Use the Microsoft Intune **Exchange ActiveSync** policy to configure settings th
 ## Browser settings
 
 |Setting name|Details
-|----------------|-
+|----------------|---|
 |**Allow web browser**|Specifies whether the web browser on the device can be used.<br>(Not available for Windows RT or Windows Phone).
 
 ## Hardware settings
 
 |Setting name|Details
-|----------------|
+|----------------|---|
 |**Allow camera**|Specifies whether the camera on the device can be used.<br>(Not available for Windows RT or Windows Phone).
 
 

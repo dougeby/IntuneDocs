@@ -35,6 +35,21 @@ All of these features will eventually be supported for hybrid customers' deploym
 >Blog post - Ensuring mobile devices are up to date using Microsoft Intune<br>
 >In light of the recent "Trident" malware attacks on iOS devices, we've published a new blog post, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) to help you learn about the different ways that Intune can help keep your devices secure and up to date.
 
+## September 2016
+
+## Company Portal updates
+### Android
+
+**Addition of "Notifications" to the Company Portal for Android**
+
+A new Notifications icon has been added to the Company Portal for Android on the homepage. Tapping this icon accesses the Notifications page, which shows your end users all items that require attention in the Company Portal app, such as device noncompliance, enrollment update, and enrollment activation. The iOS Company Portal app already has this notifications experience. Having the new Notifications page means that user won’t see the Company Access Setup page every time they launch or resume the Company Portal as long as the device is already enrolled. If you create your own end-user guidance, you might want to update your documentation to reflect this change. Find updated screenshots [here](https://aka.ms/androidcpupdate).  
+<!---TFS 1095560--->
+
+### Windows
+**Feedback button added to Windows Phone 8.1 Company Portal app**
+
+The Windows Phone 8.1 Company Portal app enables end users to send feedback about the app by using a new "send feedback" button. To find the button, users tap the “three dots” menu at the bottom right of the Company Portal app screen and then tap **send feedback**. The collected, anonymized feedback will help Microsoft improve the Company Portal app experience for users.
+<!---TFS 1317806--->
 
 ## August 2016
 ## App management
@@ -93,6 +108,10 @@ The Microsoft Intune Managed Browser app for iOS has been updated to support dev
 <!---TFS 1313253 checked--->
 
 ## What's coming
+
+### iOS 10 support
+Intune will fully support iOS 10. More information will follow the iOS 10 public release.
+
 ### Intune Groups transitioning to Azure Active Directory Groups beginning in September 2016
 Intune is creating a new group management experience that uses Azure Active Directory (AAD) security groups as user and device groups in Intune. These groups will be used for all group management, policy deployment, and profile deployment **when we introduce the new Azure-based Intune admin portal**.
 

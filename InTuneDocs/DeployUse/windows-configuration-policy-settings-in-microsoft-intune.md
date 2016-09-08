@@ -37,7 +37,7 @@ Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and
 ## Security settings
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**Required password type**|Specifies the type of password that's required, such as alphanumeric or numeric only.|Yes|Yes|
 |**Required password type – Minimum number of character sets**|Specifies how many different character sets must be included in the password. There are four character sets: lowercase letters, uppercase letters, numbers, and symbols. However, for iOS devices, this setting specifies the number of symbols that must be included in the password.|Yes|Yes|
 |**Minimum password length**<sup>1</sup>|Configures the minimum required length (in characters) for the password.|Yes|Yes|
@@ -52,7 +52,7 @@ Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and
 ## Encryption settings
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Require encryption on mobile device**<sup>1</sup>|Requires that files on the device are encrypted.<br>For Windows Phone 8 devices, you must set this to **Yes**.|Yes|No|
 <sup>1</sup> Additional information for devices that run Windows 8.1
 
@@ -67,14 +67,14 @@ Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and
 ## Malware settings
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Require network firewall**|Requires that the Windows Firewall is turned on.|Yes|No|
 |**Enable SmartScreen**|Requires the use of Windows SmartScreen.|Yes|No|
 
 ## System settings
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-------|---------------------------|--------------|
 |**Require automatic updates**|Turns on the automatic updates setting on devices.|Yes|No|
 |**Require automatic updates – Minimum classification of updates to install automatically**|Chooses the classification of updates that will be installed automatically:<br /><br />-   **Important** – Installs all updates that are classified as important.<br />-   **Recommended** – Installs all updates that are classified as important or recommended.|Yes|No|
 |**User Account Control**|Requires the use of User Account Control (UAC) on devices.|Yes|No|
@@ -84,19 +84,19 @@ Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and
 ## Cloud settings – documents and data
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**Work Folders URL**|Sets the URL of the work folder to allow documents to be synchronized across devices.|Yes|No|
 
 ## Email settings
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Make Microsoft account optional in Windows Mail application**|Enables access to the Windows Mail application without a Microsoft account.|Yes|No|
 
 ## Application settings - browser
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Allow autofill**|Enables users to change autocomplete settings in the browser.|Yes|No|
 |**Allow pop-up blocker**|Enables or disables the browser pop-up blocker.|Yes|No|
 |**Allow plug-ins**|Enables users to add plug-ins to Internet Explorer.|Yes|No|
@@ -115,7 +115,7 @@ Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and
 ## Device capabilities settings - cellular
 
 |Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|----|------------------------------|--------------|
 |**Allow data roaming**|Enables data roaming when the device is on a cellular network.|Yes|No|
 
 
