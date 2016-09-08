@@ -47,13 +47,13 @@ If you see the message “Lookout for Work is not installed and activated” sho
 
 	![open Lookout for Work and tap Activate](./media/lookout-activate-button-android.png)
 
-4. Tap **Sign in with your work account**, and enter the account that you use to access work or school email, files, and other data.
+4. Tap **Sign in with a work account**, and enter the account that you use to access work or school email, files, and other data.
 
 	![sign in with your work or school account](./media/lookout-sign-in-android.png)
 
 5. Select the account that you use to access work or school email and files, and then tap **ADD ACCOUNT**.
 
-	![select your work or school account and tap Add Account](./media/lookout-pick-accoun-androidt.png)
+	![select your work or school account and tap Add Account](./media/lookout-pick-account-android.png)
 
 6. Tap **Accept** to give Lookout for Work permission to sign you in and read your profile.
 
@@ -76,6 +76,8 @@ If you see the message “Lookout for Work is not installed and activated” sho
 	The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
 	![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
+
+	If Lookout for Work finds a security threat on your device, you will see instructions on how to fix the issue.
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
