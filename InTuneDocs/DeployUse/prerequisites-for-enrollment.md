@@ -103,11 +103,11 @@ You use the **Office 365 management portal** to manually add cloud-based users a
 ## Set up device management
 After setting up the MDM authority, you need to set up device management for the operating systems that your organization wants to support. The steps that are required to set up device management vary by operating system. For example, the Android OS does not require you to do anything in the Intune administration console. On the other hand, Windows and iOS require a trust relationship between devices and Intune to allow management.
 
-> [!div class="op_single_selector"]
-- [Set up Android management with Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
-- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
+Set up management for the following platforms:
+- [Android](set-up-android-management-with-microsoft-intune.md)
+- [iOS and Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [Windows PCs and laptops](set-up-windows-device-management-with-microsoft-intune.md)
+- [Windows 10 Mobile and Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
 You can also:
  - Use the [device enrollment manager account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) to enroll many devices.
