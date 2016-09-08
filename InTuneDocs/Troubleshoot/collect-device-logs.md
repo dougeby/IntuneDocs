@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 06/01/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

@@ -4,7 +4,7 @@
 title: Third-Party Software Notices and Information | Microsoft Intune
 description: Third-Party Software Notices and Information for Microsoft Intune
 keywords:
-author: robstackmsft
+author: staciebarker
 manager: angrobe
 ms.date: 08/30/2016
 ms.topic: article
