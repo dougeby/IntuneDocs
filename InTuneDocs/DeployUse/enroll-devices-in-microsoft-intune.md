@@ -104,6 +104,12 @@ PCs managed with the Intune client software cannot be wiped, and cannot take adv
 
 [Manage Windows PCs with Intune](manage-windows-pcs-with-microsoft-intune.md)
 
+##  Supported device platforms
+
+Intune can manage the following device platforms:
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+
 ## Next steps
 - [Prerequisites for device enrollment](prerequisites-for-enrollment.md)
 - [Manage corporate-owned devices](manage-corporate-owned-devices.md)
