@@ -35,6 +35,19 @@ All of these features will eventually be supported for hybrid customers' deploym
 >Blog post - Ensuring mobile devices are up to date using Microsoft Intune<br>
 >In light of the recent "Trident" malware attacks on iOS devices, we've published a new blog post, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) to help you learn about the different ways that Intune can help keep your devices secure and up to date.
 
+## September 2016
+
+## Device management
+
+### iOS 10 support
+Intune fully supports iOS 10. All existing MDM and MAM scenarios and Intune management capabilities for iOS devices will continue to work seamlessly as users upgrade their devices and apps to iOS 10. 
+
+## Company Portal updates
+### Android
+
+**Addition of "Notifications" to the Company Portal for Android**
+A new Notifications icon has been added to the Company Portal for Android on the homepage. Tapping this icon accesses the Notifications page, which shows your end users all items that require attention in the Company Portal app, such as device noncompliance, enrollment update, and enrollment activation. The iOS Company Portal app already has this notifications experience. Having the new Notifications page means that user won’t see the Company Access Setup page every time they launch or resume the Company Portal as long as the device is already enrolled. If you create your own end-user guidance, you might want to update your documentation to reflect this change. Find updated screenshots [here](https://aka.ms/androidcpupdate).  
+
 
 ## August 2016
 ## App management
