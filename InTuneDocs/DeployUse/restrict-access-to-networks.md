@@ -33,7 +33,7 @@ Intune integration with Cisco Identity Services Engine (ISE) allows you to autho
 To enable this integration, you don’t need to do any setup in your Intune tenant. You will need to provide permissions to your Cisco ISE server to access your Intune tenant. After that's done, the rest of the setup happens in your Cisco ISE server. This article gives you instructions on providing your ISE server with permissions to access your Intune tenant.
 
 ### Step 1: Manage the certificates
-1. In the Azure Active Directory (Azure AD) console, export the certificate.
+Export the certificate from the Azure Active Directory (Azure AD) console, then import it into the Trusted Certificates store of the ISE console:
 
 #### Internet Explorer 11
 
@@ -50,6 +50,8 @@ To enable this integration, you don’t need to do any setup in your Intune tena
 
    f. On the **File to export** page, choose **Browse** to pick a location in which to save the file, and provide a file name. Though it seems like you’re picking a file to export, you’re actually naming the file that the exported certificate will be saved to. Choose **Next** &gt; **Finish**.
 
+   g. From within the ISE console, import the Intune certificate (the file you exported) into the  **Trusted Certificates** store.
+
 #### Safari
 
  a. Sign in to the Azure AD console.
@@ -58,14 +60,13 @@ b. Choose the lock icon &gt;  **More information**.
 
    c. Choose **View certificate** &gt; **Details**.
 
-   d. Choose the certificate, and then choose **Export**.  
+   d. Choose the certificate, and then choose **Export**. 
+
+   e. From within the ISE console, import the Intune certificate (the file you exported) into the  **Trusted Certificates** store.
 
 > [!IMPORTANT]
 >
 > Check the expiration date of the certificate, as you will have to export and import a new certificate when this one expires.
-
-
-2. From within the ISE console, import the Intune certificate (the file you exported) into the  **Trusted Certificates** store.
 
 
 ### Obtain a self-signed cert from ISE 
