@@ -33,24 +33,28 @@ This section discusses how to configure and deploy the Lookout for Work applicat
 >[!NOTE]
 >Do not click the box for requiring a managed browser.
 
-* Step 4:	On the **Software description** page fill in the following information:
+* Step 3:	On the **Software description** page fill in the following information:
   * **Publisher:** Lookout Mobile Security
   * **Name:**   Lookout for Work
   * **Description:**  Lookout offers the best protection against mobile threats to keep your device safe. When the Lookout app is installed on the device, the app protects your device from threats and will alert you, and your company administrator, if any are found.
   * **Category:** Computer Management
-* Step 5:  Upon successful completion you see a message **Upload of data to Microsoft Intune successfully completed**.
+* Step 4:  Upon successful completion you see a message **Upload of data to Microsoft Intune successfully completed**.
 
 On the Intune Console when you click on the **Apps** you will now see the Lookout for Work app in the list
 ![screenshot of Intune admin console apps page showing the Lookout for work apps in the list](../media/mtp/lookout-app-listed-intune-console.png)
 
-Step 6: At this point Intune knows how to deploy the Lookout for work android app.   You can deploy the app to users, by selecting the Lookout for Work app shown in the screen above and selecting **Manage Deployment**.
+Step 5: At this point Intune knows how to deploy the Lookout for work android app.   You can deploy the app to users, by selecting the Lookout for Work app shown in the screen above and selecting **Manage Deployment**.
 
-Step 7: You must select the same group of users   that was used during the Lookout MTP Enrollment to deploy the  apps .
-Step 8: Choose the **Required Install** option to require that the Lookout app be installed on the user’s device.
+You must select the same users added in to the Enrollment Management option in the Lookout MTP console.  See Step 3 in the [configure your subscription with Lookout MTP section](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) for information about adding user groups to Lookout MTP.
+>[!IMPORTANT]
+> The Intune app deployment Wizard is not aware of the Azure AD user groups and uses the Intune user groups instead. So you must create an Intune user group based on the Azure AD user group that is enrolled in the Lookout MTP console as described in [this](plan-your-user-and-device-groups.md)topic.
+
+Step 6: Choose the **Required Install** option to require that the Lookout app be installed on the user’s device.
 
 ### Device activation
 With the **Required Install** option selected for deployment, Intune will push the Lookout for work application to the device.   
-When the user opens the Lookout for Work on the device they will need to Activate, and choose the Sign in with Azure Active Directory option. A detailed walkthrough with the end-user flow can be found in the following topics:
+
+When the user opens the Lookout for Work on the device they are prompted to activate the app, and choose the Sign in with Azure Active Directory option. A detailed walkthrough with the end-user flow can be found in the following topics:
 
 * [Installing Lookout for work app on Android](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
