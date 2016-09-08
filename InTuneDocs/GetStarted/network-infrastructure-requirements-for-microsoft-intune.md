@@ -41,7 +41,7 @@ The following table lists the ports and services that the Intune client accesses
 
 
 |**Domain**|**Ports**|**IP address**|
-|------|----|
+|------|----|---|
 |manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>m.manage.microsoft.com<br>p.manage.microsoft.com<br>portal.manage.microsoft.com<br>r.manage.microsoft.com|80 and 443|134.170.168.254<br>134.170.51.126
 |account.manage.microsoft.com|80 and 443|157.56.13.59
 |fef.msua01.manage.microsoft.com|80 and 443|138.91.243.97
