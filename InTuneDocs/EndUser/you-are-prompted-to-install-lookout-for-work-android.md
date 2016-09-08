@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # You are prompted to install Lookout for Work
 
-If you see the message shown below, “Lookout for Work is not installed and activated,” it means that your IT administrator is requiring you to install the Lookout for Work app, which helps to protect your device by finding potential security threats.
+If you see the message “Lookout for Work is not installed and activated” shown below, it means that your IT administrator requires you to install the Lookout for Work app, which helps to protect your device by finding potential security threats.
 
 ![you must resolve a compliance issue](./media/lookout-resolve-compliance-issues_expanded-android.png)
 

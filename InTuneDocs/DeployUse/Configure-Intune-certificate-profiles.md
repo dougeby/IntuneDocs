@@ -6,7 +6,7 @@ description: Learn how to create an Intune certificate profile.
 keywords:
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,15 +54,9 @@ You must create a Trusted certificate profile before you can create a Simple Cer
 
     Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Enter the requested information to configure the Trusted certificate profile settings for Android, iOS, Mac OS X, Windows 8.1, or Windows Phone 8.1.
-
-	- In the **Certificate file** setting, import the Trusted Root CA certificate (.cer file) that you exported from your issuing CA. The **Destination store** setting applies only to devices running Windows 8.1 and later, and only if the device has more than one certificate store.
-	-  Under **Subject name format**, select **Custom** to enter a custom subject name format.  
-		The two variables currently supported for the custom format are `Common Name (CN)` and `Email (E)`. By using a combination of these variables and static strings, you can create a custom subject name format, like this one:  
-
-		`CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-		In this example, the admin created a subject name format that, in addition to the `CN` and `E` variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) lists supported strings.  
+3.  Enter the requested information to configure the Trusted certificate profile settings for Android, iOS, Mac OS X, Windows 8.1, or Windows Phone 8.1. 
+4.  In the **Certificate file** setting, import the Trusted Root CA certificate (.cer file) that you exported from your issuing CA. The **Destination store** setting applies only to devices running Windows 8.1 and later, and only if the device has more than one certificate store.
+	
 4.  Choose **Save Policy**.
 
 The new policy is shown in the **Policy** workspace. Now you can deploy it.
@@ -85,7 +79,7 @@ After you create a Trusted CA certificate profile, create SCEP or .PFX certifica
 3.  Follow the instructions on the profile configuration page to configure the SCEP certificate profile settings.
 	> [!NOTE]
 	>
-	> Under **Subject name format**, select **Custom** to enter a custom subject name format.
+	> Under **Subject name format**, select **Custom** to enter a custom subject name format (in iOS profiles, only).
 	>
 	> The two variables currently supported for the custom format are `Common Name (CN)` and `Email (E)`. By using a combination of these variables and static strings, you can create a custom subject name format, like this one:
 
