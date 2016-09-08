@@ -46,7 +46,7 @@ Use the Microsoft Intune **Windows Phone general configuration policy (Windows P
 ### Password settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----------------------------------|
 |**Require a password to unlock mobile devices**|Specifies whether users must enter a password to access their devices.|Yes|Yes|
 |**Required password type**|Specifies the type of password that will be required, such as alphanumeric or numeric only.|Yes|Yes|
 |**Required password type – Minimum number of character sets**|Specifies how many different character sets must be included in the password. There are four character sets: lowercase letters, uppercase letters, numbers, and symbols. However, for iOS devices, this specifies the number of symbols that must be included in the password.|Yes|Yes|
@@ -61,44 +61,44 @@ Use the Microsoft Intune **Windows Phone general configuration policy (Windows P
 ### Encryption settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----------------------------------|
 |**Require encryption on mobile device**|Requires that the data on supported mobile devices be encrypted.<br>For Windows Phone 8 devices, you must set this to **Yes**.|Yes|Yes|
 
 ### System settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------------------------------------|
 |**Allow screen capture**|Lets the user capture the contents of the screen as an image file.|No|Yes|
 |**Allow diagnostic data submission**|Enables the device to submit diagnostic information to Microsoft.|No|Yes|
 
 ### Cloud settings – accounts and synchronization
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|------|-----------------------------------|
 |**Allow Microsoft account**|Enables a Microsoft account to be linked to the device.|No|Yes|
 
 ### Email settings
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------------------------------------|
 |**Allow custom email accounts**|Enables the device to connect to non-Microsoft email accounts.|No|Yes|
 
 ### Application settings - browser
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------------------------------------|
 |**Allow web browser**|Enables or blocks the built-in web browser on devices.|No|Yes|
 
 ### Application settings - apps
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------------------------------------|
 |**Allow application store**|Lets users connect to the app store from the device.|No|Yes|
 
 ### Device capabilities settings - hardware
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|-----|------------------------------------|
 |**Allow camera**|Enables or blocks the device's camera.|No|Yes|
 |**Allow removable storage**|Lets the device use removable storage such as SD cards.|Yes|Yes|
 |**Allow Wi-Fi**|Enables or disables the Wi-Fi functionality of the device.|No|Yes|
@@ -112,7 +112,7 @@ Use the Microsoft Intune **Windows Phone general configuration policy (Windows P
 ### Device capabilities settings - features
 
 |Setting name|Details|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----------------------------------------|
+|----------------|----|-------------------------------------|
 |**Allow copy and paste**|Enables copy and paste functionality on devices.|No|Yes|
 
 ### Settings for allowed and blocked apps
