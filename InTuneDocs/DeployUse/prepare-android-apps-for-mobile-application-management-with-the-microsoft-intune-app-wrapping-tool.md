@@ -18,7 +18,7 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: matgates
+ms.reviewer: oldang
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

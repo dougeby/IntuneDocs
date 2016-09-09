@@ -18,7 +18,7 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: matgates
+ms.reviewer: oldang
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,9 +33,9 @@ The tool is a Mac OS command-line application that creates a ‘wrapper’ aroun
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 >[!IMPORTANT]
->The version of the app wrapper tool, which supports devices not enrolled in Intune, is available for public preview. If you wish to participate in the public preview, you can download the tool from [this github page]((https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) for iOS.
+>The version of the app wrapper tool, which supports devices not enrolled in Intune, is available for public preview. If you wish to participate in the public preview, you can download the tool from [this github page](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) for iOS.
 
-The scenario is described in the [Protect LOB apps on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) topic.
+>The scenario is described in the [Protect LOB apps on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) topic.
 
 ## Step 1 Fulfill the prerequisites for using the app wrapping tool
 Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to learn more about pre-requisites and how to set them.
