@@ -6,7 +6,7 @@ description: Use the information in this topic to learn how to wrap your Android
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 07/06/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,9 +30,14 @@ Use the **Microsoft Intune App Wrapping Tool for Android** to modify the behavio
 
 The tool is a Windows command-line application that runs in PowerShell and creates a ‘wrapper’ around your app. Once the app is processed, you can then change the app’s functionality using [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) that you configure.
 
-If your app is using the Azure Active Directory Authentication Library (ADAL), you must complete the steps in [How to wrap apps that use the Azure Active Directory Library](#how-to-wrap-apps-that-use-the-azure-active-directory-library) before you wrap your app. If you are unsure if your app uses this library, contact the developer of the app.
 
 Before running the tool, review the [Security considerations for running the app wrapping tool](#security-considerations-for-running-the-app-wrapping-tool). To download the tool, see [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267).
+
+>[!IMPORTANT]
+>The version of the app wrapper tool, which supports devices not enrolled in Intune, is available for public preview. If you wish to participate in the public preview, you can download the tool from [this github page](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) for Android.
+
+The scenario is described in the [Protect LOB apps on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) topic.
+
 
 ## Step 1 Fulfill the prerequisites for using the app wrapping tool
 
@@ -71,7 +76,7 @@ Note the folder to which you installed the tool. The default location is: **C:\P
     Import-Module .\IntuneAppWrappingTool.psm1
     ```
 
-3.  Run the tool by using the **invoke-AppWrappingTool** command together with the following parameters. Parameters that are marked as "optional" are for apps that use Azure Active Directory Library (ADAL). For more information, see [How to wrap apps that use the Azure Active Directory Library](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
+3.  Run the tool by using the **invoke-AppWrappingTool** command together with the following parameters.
 
 |Parameter|More information|Examples|
 |-------------|--------------------|---------|
@@ -123,28 +128,8 @@ To prevent potential spoofing, information disclosure, and elevation of privileg
 
 -   Secure the output directory that contains the wrapped app. Consider using a user-level directory for the output.
 
-## How to wrap apps that use the Azure Active Directory Library
-If your app is using the Azure Active Directory Authentication Library (ADAL), you must complete these steps before you wrap your app.
 
-### Step 1 Make sure you meet the requirements for ADAL
-For apps that use ADAL, the following must be true:
-
--   The app must incorporate an ADAL version greater than or equal to 1.0.2.
-
--   The developer must grant their app access to the Intune Mobile Application Management resource, as described in [Step 3 Configure access to mobile application management in AAD](#step-3-configure-access-to-mobile-app-management-in-aad).
-
-### Step 2 Review the identifiers you need to get when you register the app
-In the next step, you will use the Azure management portal to register your apps (which are using  ADAL with Azure Active Directory (AAD)) to get the unique identifiers listed in the following table. You then give the identifiers to the developer when you integrate ADAL with the app.
-
-|Identifier|More information|Default value|
-|--------------|--------------------|-----------------|
-|**Client ID**|A unique GUID identifier that is generated for the app after it is registered with AAD.<br /><br />If you know the app's Client ID, specify that value. Otherwise, use the default value.|6c7e8096-f593-4d72-807f-a5f86dcc9c77|
-|**Authority URI**|The authority Uniform Resource Identifier (URI) value for AAD) objects (for example, users and groups).<br /><br />The AuthorityURI parameter is optional for the app wrapping tool. The default URI is used if you don't use the parameter.||
-|**SkipBroker**|Value indicating whether the company portal will be used as a broker.<br /><br />**True** – company portal will not be used for ADAL authentication.<br /><br />**False** – company portal will be used for ADAL authentication. The company portal is using the enrolled user for Single Sign On purposes.||
-|**Non-Broker Redirect URI**|Login URI to be used when ADAL does not use the broker app (Intune company portal).|urn:ietf:wg:oauth:2.0:oob|
-|**Resource ID**|Pointer to the app's AAD resources.||
-
-### Step 3 Configure access to mobile app management in AAD
+### Step 1 Configure access to mobile app management in AAD
 Before you can use an app’s AAD registration values in the app wrapping tool, the app developer must grant that app access to the Intune Mobile Application Management resource by following these steps:
 
 1.  Log into an existing AAD account in the Azure management portal.
@@ -157,7 +142,7 @@ Before you can use an app’s AAD registration values in the app wrapping tool, 
 
 You can now use the app’s Client ID in the app wrapping tool. You can find the Client ID in the Azure Active Directory management portal, as described in the table in [Step 2 Review the identifiers you need to get when you register the app](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app).
 
-### Step 4 Use the AAD identifier values in the app wrapping tool
+### Step 2 Use the AAD identifier values in the app wrapping tool
 Using the identifier values that you got from the registration process, enter the values as command-line properties in the app wrapping tool. You must specify all of the values in the table in order for end users to successfully authenticate the app. Default values are used if you don't specify a value.
 
 |Identifier|Parameter|
