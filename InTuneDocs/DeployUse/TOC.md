@@ -99,7 +99,11 @@
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [Restrict email access: examples](restrict-email-access-example-scenarios.md)
-
+### [Allow only policy managed app access to O365 services](allow-policy-managed-apps-access-to-o365.md)
+#### [Exchange Online](mam-ca-for-exchange-online.md)
+#### [SharePoint Online](mam-ca-for-sharepoint-online.md)
+#### [Block apps with no ADAL](block-apps-with-no-modern-authentication.md)
+#### [Overlap with device based access restrictions](overlap-between-mam-ca-and-device-ca.md)
 ### [Restrict access to networks (Cisco ISE)](restrict-access-to-networks.md)
 
 ### [Protect app data with MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
