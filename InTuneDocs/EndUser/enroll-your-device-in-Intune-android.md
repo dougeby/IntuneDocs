@@ -6,7 +6,7 @@ description: Describes how to enroll an Android device in Intune
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -77,7 +77,7 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never makes or manages your phone calls**! Google controls the message text, and Microsoft cannot change it. When you allow access, all you're doing is allowing your device to write data logs to the device's SD card, which in turn lets you move those logs by using a USB cable.
+	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never makes or manages your phone calls**! Google controls the message text, and Microsoft cannot change it. When you allow access, all you're doing is allowing your device send your device's IMEI number to Intune. The IMEI is a number, similar to a serial number, that uniquely identifies a mobile device.
 
 	If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
 
@@ -87,7 +87,7 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never accesses your contacts!** Google controls the message text, and Microsoft cannot change it. When you allow access, it only allows the Company Portal app to create, use, and manage your work account.
 
-	If you deny access, the message will appear again the next time you tap **Send Data**, but you can turn off future messages by tapping the **Never ask again** check box. If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Storage**, and then turn on the permission.
+	If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
 
 11.  On the **Activate device administrator** screen, tap **Activate**.
 
