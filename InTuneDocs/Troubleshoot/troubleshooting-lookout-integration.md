@@ -6,7 +6,7 @@ description: This topic describes troubleshooting issues that commonly occur wit
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -26,14 +26,14 @@ ms.suite: ems
 ---
 
 # Troubleshoot Lookout Integration with Intune
-This topic describes some common issues you may encounter when with your Lookout mobile threat protection setup.
+This topic describes some common issues you may encounter with your Lookout mobile threat protection (MTP) setup.
 ## Troubleshoot login errors
 ### 403 errors
-You may see a 403 error when you login to the [Lookout MTP console](https://aad.lookout.com):  **you are not authorized to access the service**  This can happen when the username you specified during your login is not a member of the Azure Active Directory (Azure AD) group configured to access Lookout MTP.
+You may see a 403 error when you log in to the [Lookout MTP console](https://aad.lookout.com):  **you are not authorized to access the service**  This can happen when the username you specified is not a member of the Azure Active Directory (Azure AD) group that is configured to access Lookout MTP.
 
-Lookout MTP is configured to only allow users from a configured Azure AD group to have access.  This group access should be setup when the your account is created by Lookout support. If you are unsure which group is configured with access to Lookout MTP, contact Lookout support.
+Lookout MTP is configured to  allow only users from a configured Azure AD group to have access. If you are unsure which group is configured with access to Lookout MTP, contact Lookout Support.
 
-You can contact Lookout support through on the following methods:
+You can contact Lookout Support through on the following methods:
 
 * Email: enterprisesupport@lookout.com
 * Login to the  [MTP  Console](http://aad.lookout.com), and navigate to the **Support** module.
@@ -45,50 +45,50 @@ You may see the following error when the Azure AD global admin user has not acce
 ![screenshot of the Lookout login screen showing sign in error](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
 To resolve this issue, the global admin user must login to  https://aad.lookout.com/les?action=consent
-and accept to initiate the setup. More detailed information can be found in  [Setup your subscription with Lookout MTP](set-up-your-subscription-with-lookout-mtp.md) topic
+and accept the prompt to initiate the setup. More detailed information can be found in  [Set up your subscription with Lookout MTP](set-up-your-subscription-with-lookout-mtp.md) topic
 
 ## Troubleshoot device status issues
 
-### Device not showing up in the Lookout MTP console device list.
+### Device not showing up in the Lookout MTP console device list
 
-This could happen in the following one of two scenarios:
-* When the user that owns this device is not in the **Enrollment Group** specified in the **Lookout MTP Console**.   On the Lookout MTP Console, from the **System** module go to **Intune Connector** tab and then look at the **Enrollment Management**  settings.  The administrator should have configured a set of Azure AD groups for enrollment.  Verify that the user that owns the missing device is part of one of the specified Azure AD groups.  Once a new user is added to the enrollment group it will take up to the configured polling interval (5 minutes is the default) to see the device show up in the **Devices** module of the Lookout MTP Console.
+This could happen in either of the following scenarios:
+* When the user who owns this device is not in the **Enrollment Group** specified in the **Lookout MTP Console**.  From the **System** module, go to the  **Intune Connector** tab and look at the **Enrollment Management**  settings.  You should see one or more Azure AD groups configured for enrollment.  Verify that the user who owns the missing device is part of one of the specified Azure AD groups.  Once a new user is added to the enrollment group it will take up to the configured polling interval (5 minutes is the default) to see the device show up in the **Devices** module of the Lookout MTP Console.
 
-* If the device is unsupported by Lookout MTP.  Devices found that are unsupported will appear in the **Managed Devices** section of the connector settings on the Lookout MTP Console.
+* If the device is unsupported by Lookout MTP.  Devices that are unsupported will appear in the **Managed Devices** section of the connector settings on the Lookout MTP Console.
 
 ### Device continues to be reported as **pending**
 
-A device that is showing  **Pending**  means the end user has not opened the Lookout for work application and selected the  **Activate** button. For more details on the device activation with Lookout for work app, read the following topic:
+A device that is showing  **Pending**  means the end user has not opened the Lookout for work app and tapped the  **Activate** button. For more details on the device activation with Lookout for Work app, read the following topic:
 
-[Installing Lookout for work app on Android](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+[You are prompted to install Lookout for Work on your Android device ](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-### In the Lookout MTP Console, a device is showing as active, but does not have a device ID.  
-This means that the user that owns this device is not in the enrollment group specified in the Lookout MTP Console.   A device can get into this state is if the user who owns the device has been removed from the enrollment group or the enrollment group that the user belongs to has been removed.
+### In the Lookout MTP console, a device is showing as active, but does not have a device ID.  
+This means that the user who owns this device is not in the enrollment group, specified in the Lookout MTP Console.   A device can get into this state is if the user who owns the device has been removed from the enrollment group or the enrollment group that the user belongs to has been removed.
 
-On the Lookout MTP Console, from the **System** module, go to **Intune Connector** tab review the **Enrollment** settings.  The administrator should have configured a set of Azure AD groups for enrollment.  Verify that the user that owns the device is part of one of the AAD groups specified.  
+From the **System** module on the Lookout MTP console, go to the  **Intune Connector** tab, and review the **Enrollment** settings.  You should see one or more Azure AD groups configured for enrollment.  Verify that the user who owns the device is part of one of the Azure AD groups specified.  
 
 While a device is in this state, Lookout will continue to notify the user of any threats detected, but will not send any threat information to Intune.
 
 ### Device shows disconnected state
 
-Disconnected means that Lookout MTP has not heard from the device for over a preconfigured time interval (default is 30 days with a minimum of 7 days).This means that either the company portal app or the Lookout for Work app are not installed on the device or have been uninstalled. Reinstalling the apps should resolve this issue. When the user opens the Lookout for Work and activates the app, a full device resync with Lookout MTP and Intune will occur.    
+Disconnected means that Lookout MTP has not heard from the device for over a preconfigured time interval (default is 30 days with a minimum of 7 days). This means that either the Company Portal app or the Lookout for Work app is not installed on the device or has been uninstalled. Reinstalling the apps should resolve this issue. When the user opens Lookout for Work and activates the app, the device resyncs with Lookout MTP and Intune.    
 
 ### Forcing a resync on the device
-From the **Devices** module of the Lookout MTP console, the administrator can select the device and choose to delete the device.   The next time the device owner opens the Lookout for work app and selects **activate**, the device state will do a full resync.
+From the **Devices** module of the Lookout MTP console, the administrator can select the device and choose to delete it.   The next time the device owner opens the Lookout for Work app and taps **Activate**, the device state will do a full resync.
 
 ### The owner of the device is no longer using this device
-You must wipe the device and ask the new user to enroll.  From the [Intune administrator console](https://manage.microsoft.com), select the device, right click, and choose retire/wipe to remove the device from management. After retiring the device can be deleted.
+You must wipe the device and ask the new user to enroll.  From the [Intune administrator console](https://manage.microsoft.com), select the device, right click, and choose **Retire/Wipe** to remove the device from management. After retiring the device you can delete it.
 
 ![screenshot of the device module in the Intune admin console with the retire/wipe option displayed](../media/mtp/mtp-retire-device-intune-console.png)
 
-You can also, go to the **Devices** module of the Lookout MTP Console and choose **Delete**.  
+You can also go to the **Devices** module of the Lookout MTP Console and choose **Delete**.  
 
 As long as the new user is in one of the  enrollment groups specified in the Lookout MTP console, the device will appear once Azure AD associates the device to the new user.
 
 ## Compliance remediation workflows
-[You are prompted to install Lookout for work app on your device]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+[You are prompted to install Lookout for Work on your Android device]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-[Your device does not meet the mobile risk policy](http://docs.microsoft.com/intune/enduser/your-device-does-not-meet-the-mobile-risk-policy-android)
+[You need to resolve a threat that Lookout for Work found on your Android device ](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 
 ### See also

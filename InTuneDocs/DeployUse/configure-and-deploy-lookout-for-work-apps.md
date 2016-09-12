@@ -5,7 +5,7 @@ title: Deploy Lookout for Work app | Microsoft Intune
 description: Configure and deploy Lookout for Work apps for Android.
 author: karthikaraman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -56,9 +56,9 @@ With the **Required Install** option selected for deployment, Intune will push t
 
 When the user opens the Lookout for Work on the device they are prompted to activate the app, and choose the Sign in with Azure Active Directory option. A detailed walkthrough with the end-user flow can be found in the following topics:
 
-* [Installing Lookout for work app on Android](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
+* [You are prompted to install Lookout for Work on your Android device](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-* [Your device does not meet the mobile risk policy](http://docs.microsoft.com/intune/enduser/your-device-does-not-meet-the-mobile-risk-policy-android)
+* [You need to resolve a threat that Lookout for Work found on your Android device](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## Next steps
 * [Enable device threat protection rule in the compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md)
