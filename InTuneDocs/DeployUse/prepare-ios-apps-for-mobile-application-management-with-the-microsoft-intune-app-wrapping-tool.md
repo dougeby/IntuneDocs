@@ -33,7 +33,7 @@ The tool is a Mac OS command-line application that creates a ‘wrapper’ aroun
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 >[!IMPORTANT]
->The version of the app wrapper tool, which supports devices not enrolled in Intune, is available for public preview. If you wish to participate in the public preview, you can download the tool from [this github page](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) for iOS.
+>The version of the app wrapping tool, which supports devices not enrolled in Intune, is available for public preview. If you wish to participate in the public preview, you can download the tool from [this github page](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) for iOS.
 
 >The scenario is described in the [Protect LOB apps on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) topic.
 
@@ -82,8 +82,6 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
   |**-o**|Specifies the path in which to save the processed app.|
   |**-p**|Specifies the path to your provisioning profile for iOS apps.|
   |**-c**|Specifies the SHA1 hash of the signing certificate.|
-  |**-a**|Client ID of the input app (in GUID format) if the app uses Azure Active Directory Libraries (Optional).|
-  |**-r**|Redirect URI of the input app if the app uses Azure Active Directory Libraries (Optional).|
   |**-v**|Output verbose messages to the console (Optional).|
   |-f |Optional) <Path to a plist file specifying arguments>  |
   |-b|(Optional) Do not specify an argument to this flag if you want the wrapped app to have the same bundle version as the input app (not recommended). Use “-b <custom bundle version>” if you want the wrapped app to have a custom CFBundleVersion. We recommend incrementing the native app’s CFBundleVersion by the least significant component, eg. 1.0.0 -> 1.0.1 |
