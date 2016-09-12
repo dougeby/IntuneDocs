@@ -6,7 +6,7 @@ description: This topics provides details on how to configure Lookout MTP.
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod:
 ms.service:
