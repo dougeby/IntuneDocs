@@ -34,7 +34,7 @@ The tool is a Windows command-line application that runs in PowerShell and creat
 Before running the tool, review the [Security considerations for running the app wrapping tool](#security-considerations-for-running-the-app-wrapping-tool). To download the tool, see [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267).
 
 >[!IMPORTANT]
->The version of the app wrapper tool, which supports devices not enrolled in Intune, is available for public preview. If you wish to participate in the public preview, you can download the tool from [this github page](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) for Android.
+>The version of the app wrapping tool, which supports devices not enrolled in Intune, is available for public preview. If you wish to participate in the public preview, you can download the tool from [this github page](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) for Android.
 
 The scenario is described in the [Protect LOB apps on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) topic.
 
@@ -87,10 +87,6 @@ Note the folder to which you installed the tool. The default location is: **C:\P
 |**-KeyAlias**&lt;String&gt;|Name of the key to be used for signing.| |
 |**-KeyPassword**&lt;SecureString&gt;|Password used to decrypt the private key that will be used for signing.| |
 |**-SigAlg**&lt;SecureString&gt;|Name of the signature algorithm to be used for signing. The algorithm must be compatible with the private key.|Examples: SHA256withRSA, SHA1withRSA, MD5withRSA|
-|**-ClientID**&lt;GUID&gt;|Azure Active Directory Client ID of the input app (optional).| |
-|**-AuthorityURI**&lt;Uri&gt;|Azure Active Directory Authority URI of the input app (optional).| |
-|**-SkipBroker**&lt;Boolean&gt;|Indicates whether the input application supports device-wide brokered single sign-on (optional). |**True** - the input application does not support device-wide brokered single sign-on. Use the NonBrokerRedirectURI parameter. **False** - the input application supports device-wide brokered single sign-on|
-|**-NonBrokerRedirectURI**&lt;URI&gt;|Azure Active Directory Redirect URI to use if SkipBroker is true (optional).|  |
 
 
 **&lt;CommonParameters&gt;**
@@ -103,7 +99,6 @@ Note the folder to which you installed the tool. The default location is: **C:\P
     ```
     Help Invoke-AppWrappingTool
     ```
-- To find out more about Azure Active Directory (AAD) integration, see [How to wrap apps that use the Azure Active Directory library](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
 
 **Example:**
 
@@ -124,40 +119,10 @@ To prevent potential spoofing, information disclosure, and elevation of privileg
 
 -   If the output application and the tool are on a Universal Naming Convention (UNC) path and you are not running the tool and input files on the same computer, configure the environment to be secure by using [Internet Protocol Security (IPsec)](http://en.wikipedia.org/wiki/IPsec) or [Server Message Block (SMB) signing](https://support.microsoft.com/en-us/kb/887429).
 
--   Ensure that the application is coming from a trusted source, especially if you are using Azure Active Directory (AAD), which might enable the application to access the AAD token during runtime.
+-   Ensure that the application is coming from a trusted source, which might enable the application to access the AAD token during runtime.
 
 -   Secure the output directory that contains the wrapped app. Consider using a user-level directory for the output.
 
-
-### Step 1 Configure access to mobile app management in AAD
-Before you can use an app’s AAD registration values in the app wrapping tool, the app developer must grant that app access to the Intune Mobile Application Management resource by following these steps:
-
-1.  Log into an existing AAD account in the Azure management portal.
-
-2.  Chose **existing LOB application registration**.
-
-3.  In the **configure** section, choose **Configure Access to Web APIs in other applications**.
-
-4.  From the first drop-down list in the **Permission to other applications** section, choose **Intune Mobile Application Management**.
-
-You can now use the app’s Client ID in the app wrapping tool. You can find the Client ID in the Azure Active Directory management portal, as described in the table in [Step 2 Review the identifiers you need to get when you register the app](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app).
-
-### Step 2 Use the AAD identifier values in the app wrapping tool
-Using the identifier values that you got from the registration process, enter the values as command-line properties in the app wrapping tool. You must specify all of the values in the table in order for end users to successfully authenticate the app. Default values are used if you don't specify a value.
-
-|Identifier|Parameter|
-|--------------|-------------|
-|Client ID|ClientID|
-|Authority URI|Authority-URI|
-|SkipBroker|SkipBroker|
-|Non-Broker Redirect URI|NonBrokerRedirectURI|
-|Resource ID|ResourceID|
-Keep the following points in mind as you wrap your app:
-
--   To verify that the authentication was successful,
-  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] fetches the AAD token that is associated with the MAM resource-id. However, the token is not used in any call that would in turn verify the validity of the token. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] only reads the user principal name (UPN) of the signed-in user to determine app access. The AAD token is not used for any further service calls.
-
--   Double login prompts are prevented if you provide your client application’s Client ID and Authority URI. You need to register the Client ID to enable it to access the published [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM resource ID in the AAD Dashboard. If you don't register the Client ID, users get a login failure when the app runs.
 
 
 ### See also
