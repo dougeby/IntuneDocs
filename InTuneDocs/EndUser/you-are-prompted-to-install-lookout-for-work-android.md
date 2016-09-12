@@ -27,11 +27,10 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # You are prompted to install Lookout for Work
 
-If you see the message “Lookout for Work is not installed and activated” shown below, it means that your IT administrator requires you to install the Lookout for Work app, which helps to protect your device by finding potential security threats.
+Before you can access your work, your IT administrator needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats.
 
-![you must resolve a compliance issue](./media/lookout-resolve-compliance-issues_expanded-android.png)
 
-**What you need to do to fix the issue:**
+**What you need to do:**
 
 1.	Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Lookout for Work from Play Store**.
 
@@ -39,7 +38,7 @@ If you see the message “Lookout for Work is not installed and activated” sho
 
 	You are taken to the Lookout for Work installation page in the Play Store.
 
-2.	Install Lookout for Work, and tap **ACCEPT** to let Lookout for Work access your device.
+2.	Install Lookout for Work, and then tap **ACCEPT** to let Lookout for Work access your device.
 
 	![tap accept to let Lookout for Work access your device](./media/lookout-accept-store-permissions-android.png)
 
@@ -47,7 +46,7 @@ If you see the message “Lookout for Work is not installed and activated” sho
 
 	![open Lookout for Work and tap Activate](./media/lookout-activate-button-android.png)
 
-4. Tap **Sign in with a work account**, and enter the account that you use to access work or school email, files, and other data.
+4. Tap **Sign in with a work account**, and enter the account that you use to access work or school email and files.
 
 	![sign in with your work or school account](./media/lookout-sign-in-android.png)
 
