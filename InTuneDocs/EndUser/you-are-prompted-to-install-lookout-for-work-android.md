@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: You are prompted to install Lookout for Work | Microsoft Intune
+title: You are prompted to install Lookout for Work on your Android device | Microsoft Intune
 description:
 keywords:
 author: staciebarker
