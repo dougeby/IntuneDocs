@@ -54,7 +54,7 @@ When malicious apps such as malware is detected on the device, you can block suc
 
 **Device unblocked and is able to access company resources when the threat is remediated:**
 
-![diagram showing conditional access policy granting access when device is determined to be compliant after remdiation](../media/mtp/malicious-apps_unblocked.png)
+![diagram showing conditional access policy granting access when device is determined to be compliant after remediation](../media/mtp/malicious-apps-unblocked.png)
 ### Threat to network:
 Detect threats to your network such as Man-in-the-middle attacks and restrict access to WiFi networks based on the device risk.
 
