@@ -111,7 +111,7 @@ If you would like to receive email alerts for threats, sign in to the [Lookout M
 ![screenshot of the preferences page with the user account displayed](../media/mtp/lookout-mtp-email-notifications.png)
 If you no longer wish to receive email notifications, set the notifications to **OFF** and save your changes.
 ### Step 7: Configure threat classification
-Lookout MTP classifies mobile threats of various types. The MTP threat classifications have default risk levels associated with them. These can be changed at any time to suite your company requirements.
+Lookout MTP classifies mobile threats of various types. The [Lookout MTP threat classifications](http://personal.support.lookout.com/hc/en-us/articles/114094130693) have default risk levels associated with them. These can be changed at any time to suite your company requirements.
 
 ![screenshot of the policy page showing threat and classifications](../media/mtp/lookout-mtp-threat-classification.png)
 
