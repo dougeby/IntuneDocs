@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use groups to manage users and devices | Microsoft Intune
-description: Create and manage groups using the Groups workspace.
+description: Create and manage groups by using the Groups workspace.
 keywords:
 author: Nbigman
 manager: angrobe
@@ -26,51 +26,48 @@ ms.suite: ems
 ---
 # Use groups to manage users and devices in Microsoft Intune
 
-This topic describes how to create groups in Intune. It also provides information about how the management of groups is going to change over the coming months. To learn about the *current* approach to group management, see [Create groups to manage users and devices with Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in this topic.
+This topic describes how to create groups in Intune. It also provides information about how the management of groups by using Intune is going to change over the coming months. To learn about the *current* approach to group management, see [Create groups to manage users and devices with Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in this topic.
 
-## Notice about coming improvements to the admin experience for groups
+## Notice of upcoming improvements to the admin experience for groups
 
-Based on your feedback to have one grouping and targeting experience across Enterprise Mobility + Security, we're converting Intune Groups to Azure Active Directory-based Security Groups. This will unify group management across Intune and Azure Active Directory (Azure AD). The new experience will keep you from having to duplicate groups between services, and provides extensibility using PowerShell and Graph. 
+You've let us know that you'd like one grouping and targeting experience across Enterprise Mobility + Security. We hear you. Based on your feedback, soon we will be converting Intune groups to Azure Active Directory-based security groups. This change will unify group management across Intune and Azure Active Directory (Azure AD). The new experience means that you won't have to duplicate groups between services. It also will provide extensibility through the options to use Windows PowerShell and Microsoft Graph.
 
 ### How does this affect me right now?
-This change doesn’t affect you now, but we can tell you what's coming:
+This change doesn’t affect you now. But here's what's coming:
 
--	In September, new accounts provisioned after the monthly service release will use Azure AD security groups rather than Intune user groups.   
--	In October, new accounts provisioned after the monthly service release will manage both user and device based groups in Azure AD portal. No impact to existing customers
--	In November, Intune product team will start migrating existing customers to the new Azure AD based group management experience. All user and device groups in Intune today will be migrated to Azure AD security groups. Migration will be done in batches starting in November. We won’t start migrations until we can minimize any impact to your day-to-day work and expect no end-user impact. We will also provide you a notice prior to your account’s migration.
+-	In September 2016, new accounts that are provisioned after the monthly service release will use Azure AD security groups instead of Intune user groups.   
+-	In October 2016, new accounts that are provisioned after the monthly service release will manage both user-based groups and device-based groups in the Azure AD portal. There will be no effect on existing customers.
+-	In November 2016, the Intune product team will start to migrate existing customers to the new Azure AD-based group management experience. All user and device groups that exist in Intune today will be migrated to Azure AD security groups. We will do the migration in batches starting in November 2016. We won’t start migrations until we can minimize any effect on your day-to-day work, and when we expect there will be no effect on your users. We also will give you notice before we migrate your account.
 
 
 ### How and when will I migrate to the new groups experience?
-Current customers will be migrated over a period of time. We’re finalizing the schedule for that migration and will update this topic in a few weeks to provide more details. You will get a notice before you are migrated. If you have any migration concerns, please contact our migration team at [intunegrps@microsoft.com](intunegrps@microsoft.com).
+We will migrate current Intune customers over a period of time. We’re finalizing the schedule for that migration and will update this topic in a few weeks to give you more details. We'll give you notice before you are migrated. If you have any migration concerns, please contact our migration team at <intunegrps@microsoft.com>.
 
 ### What happens to my existing user and device groups?
- User and device groups that you created will be migrated to Azure AD security groups. Default Intune groups, such as the All Users group, will only be migrated if you are using them in deployments at the time of migration. Migration may be more complex for some groups, and we will notify you if additional steps are required for migration.
+ User groups and device groups that you've created in Intune will migrate to Azure AD security groups. Default Intune groups, such as the All Users group, will migrate only if you are using them in deployments at the time of migration. Migration may be more complex for some groups. We will notify you if additional steps are required for migration in your organization.
 
 ### What new features will be available to me?
-Here is the new functionality being introduced:
+Here's the new functionality we'll introduce with this migration from Intune to Azure Active Directory:
 
--	 Azure AD Security Groups will be supported in Intune for all types of deployments.
--	 Azure AD Security Groups will support grouping of devices along with users.
--	 Azure AD Security Groups will support dynamic groups with Intune device attributes. For example, you will be able to dynamically group devices based on platform, such as iOS. That way, when a new iOS device is enrolled in your organization, it will automatically be added to the iOS dynamic device group.
--	 Shared admin experiences for group management across Azure AD and Intune.
-- The *Intune Service Administrator role* will be added to Azure AD to allow service admins in Intune to perform group management tasks in Azure AD.
-
-
-
+-	 Azure AD security groups will be supported in Intune for all types of deployments.
+-	 Azure AD security groups will support the grouping of devices and users.
+-	 Azure AD security groups will support dynamic groups that have Intune device attributes. For example, you will be able to dynamically group devices by platform, like iOS. When a new iOS device is enrolled in your organization, it automatically will be added to the iOS dynamic device group.
+-	 You'll have a shared admin experience for group management across Azure AD and Intune.
+- The Intune Service Administrator role will be added to Azure AD so that Intune service admins can perform group management tasks in Azure AD.
 
 ### What Intune functionality won’t be available?
-Though the group experience will improve, there will be some Intune functionality that will not be available after the migration.
+Although the groups experience will improve, there will be some Intune functionality that won't be available after your organization migrates from Intune groups to Azure AD security groups.
 
 #### Group management functionality
 
--	You will not be able to exclude members or groups when you create a new group. However ,Azure AD dynamic groups will allow you to use attributes to create advanced rules to exclude members based on criteria.
--	There won’t be support for **Ungrouped Users** and **Ungrouped Devices** groups. Those groups won't be migrated.
+-	After migrating, you won't be able to exclude members or groups when you create a new group. However, with Azure AD dynamic groups, you can use attributes to create advanced rules that you can use to exclude members from a group based on criteria that you set.
+-	Ungrouped Users and Ungrouped Devices groups won't be supported. We will not migrate those groups from Intune to Azure AD.
 
 
-#### Group dependent functionality
+#### Group-dependent functionality
 
 -	The Service Admin role will not have **Manage groups** permissions.
--	You won’t be able to group Exchange ActiveSync devices.  Your **All EAS Managed Devices** group will be converted from a group to a report view.
+-	You won’t be able to group Exchange ActiveSync devices. Your All EAS Managed Devices group will be converted from a group to a report view.
 -  Pivoting with groups in reports will not be available.
 -  Custom group targeting of notification rules will not be available.
 
@@ -79,14 +76,14 @@ Though the group experience will improve, there will be some Intune functionalit
 
 - Clean up any unwanted or unneeded Intune groups before migration.
 - Evaluate your use of exclusion in groups, and consider redesigning your groups so that you don't need to use exclusion.
--  If you have admins who do not have permissions to create groups in Azure AD, ask your Azure AD administrator to add them to the **Intune Service Administrator** Azure AD role.
+-  If you have admins who do not have permissions to create groups in Azure AD, ask your Azure AD administrator to add them to the Intune Service Administrator Azure AD role.
 
 
 ## Create groups to manage users and devices with Microsoft Intune
 
 This section describes how to create Intune groups in the Intune administration console.
 
-To create and manage groups use the **Groups** workspace in the Microsoft Intune administration console. The **Groups Overview** page contains status summaries that help you identify and prioritize issues that require your attention for:
+You can create and manage groups in the **Groups** workspace in the Microsoft Intune admin console. The **Groups Overview** page shows status summaries that can help you identify and prioritize issues that require your attention. Status summaries cover these areas:
 
 -   Alerts
 -   Software updates
@@ -94,124 +91,110 @@ To create and manage groups use the **Groups** workspace in the Microsoft Intune
 -   Policy
 -   Software management
 
-Also, your group hierarchy is displayed with status summaries to help you identify and resolve problems for members of a selected group.
+Your group hierarchy also shows status summaries to help you identify and resolve problems for members of a selected group.
 
+## Create groups
 
 > [!TIP]
-> When you're creating your groups consider how you will apply policy. For example, you may have policies specific to device operating systems, and policies specific to different roles in your organization, or to Organizational Units you've already defined in Active Directory. Some consider it useful to have device groups specific to iOS, Android, and Windows, as well as user groups for each organizational role.
+> When you create groups, consider how you will apply policies. For example, you might have policies that are specific to a device operating system, and policies that are specific to different roles in your organization, or to organizational units that you've already defined in Active Directory. It might be useful to have separate device groups for iOS, Android, and Windows, as well as a user group for each organizational role.
 >
-> You'll probably want to create a default policy that applies to all groups and devices, to establish the basic compliance requirements of your company. Then create more specific policies for the broadest categories of users and devices, for example, email policies for each of the device operating systems.
+> You'll probably also want to create a default policy that applies to all groups and devices, to establish the basic compliance requirements of your organization. Then, you can create more specific policies for the broadest categories of users and devices. For example, you might create email policies for each of the device operating systems.
 >
-> Be careful naming your policies so that you can easily identify them later. For example, a good, descriptive policy name is **WP Email Policy for Entire Company**.
+> Be careful when you name your policies so that you can easily identify them later. For example, a good descriptive policy name is **WP Email Policy for Entire Company**.
 >
-> Each time you create a restrictive policy you'll want to communicate it to your users, so after you create the more general groups and policies pay attention to how you create smaller groups so that you can reduce unnecessary communication.
+> Each time you create a restrictive policy, you'll want to communicate it to your users. After you create the more general groups and policies, pay attention to how you create smaller groups, so that you can reduce unnecessary communication.
 
+### To create a device group
 
-## Create a device group
+1.  In the Intune admin console, choose **Groups** &gt; **Overview** &gt; **Create Group**.
 
-1.  In the Intune administration console, choose **Groups** &gt; **Overview** &gt; **Create Group**.
+2.  Enter a name and a description (optional) for the group, and then select a device group as the parent group. Choose **Next**.
 
-2.  Provide a name and optional description for the group and select a device group as the parent group. Choose **Next**.
+3.  On the **Define Membership Criteria** page, select the type of devices to include in the group. You have additional group configuration options based on the types of devices you choose to include:
 
-3.  On the **Define Membership Criteria** page, select the type of devices the group will include. Additional options to configure the group depend on the type of devices you select:
+    -   **Computer**. Select whether to include all members of the parent group; the organizational units you want to include or exclude; and domains you want to include or exclude. You can get organizational unit and domain information for a computer from inventory.
 
-    -   **Computer:** Specify whether to include all members of the parent group, the Organizational Units (OU) you want to include or exclude, and the domains you want to include or exclude. The OU and domain information for a computer is obtained from inventory.
+    -   **Mobile**. Select whether to include mobile devices that are managed by Intune, mobile devices that are managed by Exchange ActiveSync, or both.
 
-    -   **Mobile:** Specify to include only mobile devices that are managed by Intune, those managed by Exchange ActiveSync, or both.
+    -   **All devices**. This option includes all devices, with no exclusions based on any criteria.
 
-    -   **All devices:** This option includes all devices with no exclusions based on criteria.
+4.  On the **Define Direct Membership** page, choose **Browse** to select individual devices to include or exclude. If you select devices that are not in the parent group that you specified, Intune automatically adds those devices to the parent group.
 
-4.  On the **Define Direct Membership** page, include or exclude individual devices you specify by clicking **Browse**. If you use the option to select devices that are not in the parent group you specified, those devices are automatically added to the parent group.
+5.  On the **Summary** page, review your selections, and then choose **Finish**.
 
+The newly created group is shown in the **Groups** list, in the **Groups** workspace, under the parent group. That's also where you can edit or delete the group.
 
-5.  On the **Summary** page, review the actions that will be taken. Choose **Finish**.
+### To create a user group
 
-You can find the newly created group in the **Groups** list, in the **Groups** workspace, under the parent group. From here, you can also edit or delete the group.
+1.  In the Intune admin console, choose **Groups** &gt; **Overview** &gt; **Create Group**.
 
-## Create a user group
+2.  Enter a name and a description (optional) for the group, and then select a user group as the parent group. Choose **Next**.
 
-1.  In the Intune administration console, choose **Groups** &gt; **Overview** &gt; **Create Group**.
-
-2.  Provide a name and optional description for the group and select a user group as the parent group. Choose **Next**.
-
-3.  On the **Define Membership Criteria** page, specify whether to include all members of the parent group or to start with an empty group.  You can then  include or exclude members based on the **Security groups** of users that you manually configure in the [Office 365 admin center](http://go.microsoft.com/fwlink/?LinkId=698854) or that synchronize from your local Active Directory. If the membership of a security group changes, membership of user groups based on that security group can also change.
+3.  On the **Define Membership Criteria** page, choose whether to include all members of the parent group or to start with an empty group. Then, include or exclude members based on the security groups of users that you either manually configure in the [Office 365 admin center](http://go.microsoft.com/fwlink/?LinkId=698854), or sync from Active Directory. If the membership of a security group changes, the membership of user groups based on that security group also might change.
 
     > [!IMPORTANT]
-    > Currently, if your group includes members from specific security or manager groups, and you also exclude members from specific groups, the members you initially included will be removed. To create a group that has both included members and excluded members, we recommend that you first create a parent group with the included members, and then create a child to that group in which you list the excluded members. You can then use that child group as appropriate for Intune policies, profiles, and app distribution.
+    > Currently, if your group includes members from specific security groups or manager groups and you exclude members from some groups, the members you initially included will be removed. To create a group that has both included members and excluded members, we recommend that first you create a parent group that has the included members. Then, create a child group for that parent group. In the new child group, list the excluded members. Then, use that child group to manage Intune policies, profiles, and app distribution.
 
     > [!NOTE]
-    > In the Azure Management Portal you can create a group based on the manager that the users report to. The group will be dynamic, changing as employees are added to or removed from that manager's team in Azure Active Directory. The procedure for creating an Azure group based on a manager is described in [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) in the section called **To configure a group as a “Manager” group**.
+    > In the Azure portal, you can create groups based on the managers who users report to. This type of group is dynamic, and it will change as employees are added to or removed from a manager's team in Azure Active Directory. How to create an Azure group based on manager name is described in [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/), in the section **To configure a group as a “Manager” group**.
 
+4.  On the **Define Direct Membership** page, choose **Browse** to select individual users to include or exclude. If you select users that are not in the parent group that you specified, those devices are automatically added to the parent group. The option to manually add a user is at the bottom of the **Select Members** dialog box. This is helpful if you want to add a user who does not yet have an enrolled device.
 
-4.  On the **Define Direct Membership** page, include or exclude individual users you specify by clicking **Browse**. If you use the option to select users that are not in the parent group you specified, those devices are automatically added to the parent group. At the bottom of the **Select Members** dialog you will find the option of adding a user manually. This is helpful if you want to add a user who does not yet have an enrolled device.
+5.  On the **Summary** page, review your selections, and then choose **Finish**.
 
-
-5.  On the **Summary** page, review the actions that will be taken. Choose **Finish**.
-
-You can find the newly created group in the **Groups** list, in the **Groups** workspace, under the parent group. From here, you can also edit or delete the group.
+The newly created group is shown in the **Groups** list, in the **Groups** workspace, under the parent group. That's also where you can edit or delete the group.
 
 > [!TIP]
-> Security groups are a great resource for populating user groups. Since your security groups define who has access to which resources, that can translate well into Intune user groups. Security groups that are synced from Active Directory to Azure Active Directory, or that are created directly in Azure Active Directory through the Office 365 admin center or the Azure Administration portal, are all available to you for creating user groups in Intune.
+> Security groups are a good resource to use when you populate user groups. Because security groups define who can access which resources, security groups can translate well to Intune user groups. Security groups that are synced from Active Directory to Azure Active Directory, or which you create directly in Azure Active Directory through the Office 365 admin center or the Azure portal are available to you to use when you create user groups in Intune.
 
-## Tailor views to admin roles
-Filtered group views let you tailor the view admins can see based on their role and restrict which groups each IT admin can manage. This can be useful when:
+## Filter admin views by role
+In filtered group views, you can tailor what an IT admin can see based on the admin's role. You also can restrict which groups each IT admin can manage. This can be useful when:
 
--   Your IT admins should only be able to deploy items to specific users and devices.
+-   You want your IT admins to be able to deploy items only to specific users and devices
+-   You want your IT admins to see only the groups that are relevant to that admin
 
--   You want to display only relevant groups to each IT admin.
+You can configure filtered group views for service admins in the Intune admin console. For details, see [What to know before you start Microsoft Intune](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
 
-You can configure filtered group views for service administrators in the Intune administrator console. For details, see [What to know before you start Microsoft Intune](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
+After you set up filtered group views for a service admin, when the admin deploys software or policies, or runs reports, the admin can view and select only the groups that you specified. The admin also doesn't see status information on these pages of the admin console:
 
-After you configure filtered group views for a service administrator, that administrator:
+-   **System Overview**
+-   **Groups Overview**
+-   **Endpoint Protection Overview**
+-   **Alerts Overview**
+-   **Software Overview**
+-   **Policy Overview**
 
--   Can view and select only the groups you specified when deploying software or policies, or when using reports
+### To create a filtered group view
 
--   Does not receive status information on the following pages of the administration console:
+1.  In the Intune admin console, choose **Admin** &gt; **Administrator Management** &gt; **Service Administrators**.
 
-    -   **System Overview**
+2.  Select the service admin who you want to create a filtered group view for, and then choose **Manage Groups**.
 
-    -   **Groups Overview**
+3.  In the **Select the groups that will be visible to this service administrator** dialog box, add the groups that the service admin will be able to access, and then choose **OK**.
 
-    -   **Endpoint Protection Overview**
-
-    -   **Alerts Overview**
-
-    -   **Software Overview**
-
-    -   **Policy Overview**
-
-### Configure filtered group views
-
-1.  In the Intune administration console, choose **Admin** &gt; **Administrator Management** &gt; **Service Administrators**.
-
-2.  Select the service administrator for whom you want to filter groups, and then click **Manage Groups**.
-
-3.  In the **Select the groups that will be visible to this service administrator** dialog box, add the groups that the selected service administrator will be able to access, and then click **OK**.
-
-After you configure the filtered group views, the IT admin will be able to view and select only the groups you selected.
+After you've set up the filtered group views, the IT admin will be able to view and select only the groups you've indicated.
 
 ## Manage your groups
-After you create your groups, you will continue to manage them according to the needs of your organization.
+After you create your groups, you can continue to manage them according to the needs of your organization.
 
-You can edit your group to change its name and description and who belongs to the group.
+You can edit your group to change its name or description, or who belongs to the group.
 
 You can delete a group that no longer serves the needs of your organization. Deleting a group does not delete the users that belong to that group.
 
 ## Next steps
+After you set up your groups and policies, review **Intended Value** and **Status** to check the practical implications of your design.
 
-### Check your design
-After you set up your groups and policies, check the practical implications of your design by reviewing the **Intended Value** and the **Status**.
+### To check your design
 
-1. Select any device from a device group and browse through the categories of information at the top of the screen.
-2. Select **Policy** . You'll see something like this screenshot of an Android device's policy settings.
+1. Select any device from a device group and browse through the categories of information at the top of the page.
+2. Choose **Policy**. You'll see something like this screenshot of an Android device's policy settings.
 
-![Example iOS settings policy](../media/Intune-Device-Policy-v.2.jpg)
+![Example of Android settings policy](../media/Intune-Device-Policy-v.2.jpg)
 
-Each policy has an **Intended Value** and a **Status**. The intended value is what you meant to achieve when assigning the policy. The status is what you actually achieved when all of the policies that apply to the device, as well as the restrictions and requirements of the hardware and the operating system, are considered together.  In the screenshot you can see two clear examples:
+Each policy has an **Intended Value** and a **Status**. The intended value is what you intended to achieve when you assigned the policy. The status is what you achieve when all of the policies that apply to the device, as well as the restrictions and requirements of the hardware and operating system are considered together. In this screenshot you can see two clear examples:
 
 -   **Allow simple passwords** is set to **Yes**, as shown in the **Intended Value** column, but its **Status** is **Not applicable**. This is because simple passwords are not supported for Android devices.
-
--   Similarly, the expanded policy item, **Email settings for iOS devices**, is not applied to this device, because it is an Android device.
+-   Similarly, the expanded policy item **Email settings for iOS devices** is not applied to this device because it is an Android device.
 
 > [!NOTE]
-> Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
+> Remember that when two policies that have different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
