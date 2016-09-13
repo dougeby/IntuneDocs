@@ -68,7 +68,7 @@ If a condition is not met, the user is presented with one of the following messa
 >[!NOTE]
 >If you  enable conditional access for SharePoint Online, we recommend that you disable the domain on the list as described in the  [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) topic.  
 ## Support for mobile devices
-- iOS 7.1 and later
+- iOS 8.0 and later
 - Android 4.0 and later, Samsung Knox Standard 4.0 or later
 - Windows Phone 8.1 and later
 
