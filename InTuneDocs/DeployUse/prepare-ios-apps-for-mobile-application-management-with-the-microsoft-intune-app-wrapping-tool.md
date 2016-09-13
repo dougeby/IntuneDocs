@@ -6,7 +6,7 @@ description: Use the information in this topic to learn how to wrap your iOS app
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: matgates
+ms.reviewer: oldang
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,6 +32,11 @@ The tool is a Mac OS command-line application that creates a ‘wrapper’ aroun
 
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
+>[!IMPORTANT]
+>The version of the app wrapping tool, which supports devices not enrolled in Intune, is available for public preview. If you wish to participate in the public preview, you can download the tool from [this github page](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) for iOS.
+
+>The scenario is described in the [Protect LOB apps on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) topic.
+
 ## Step 1 Fulfill the prerequisites for using the app wrapping tool
 Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to learn more about pre-requisites and how to set them.
 
@@ -39,9 +44,8 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
 |---------------|--------------------------------|
 |Supported operating system and toolset|You must run the app wrapping tool on a Mac computer that runs OS X 10.8.5 or later, which has the XCode toolset version 5 or later installed.|
 |Signing certificate and provisioning profile|You must have an Apple signing certificate and provisioning profile. See your [Apple developer documentation](https://developer.apple.com/).|
-|Processing an app with the App Wrapping Tool|Apps must be developed and signed by your company, or an independent software vendor (ISV). You cannot use this tool to process apps from the Apple Store. Apps must be written for iOS 7.1 or later. Apps must also be in the Position Independent Executable (PIE) format. For more information about the PIE format, see your Apple developer documentation. Lastly, the app must have the extension **.app**, or **.ipa** format.|
+|Processing an app with the App Wrapping Tool|Apps must be developed and signed by your company, or an independent software vendor (ISV). You cannot use this tool to process apps from the Apple Store. Apps must be written for iOS 8.0 or later. Apps must also be in the Position Independent Executable (PIE) format. For more information about the PIE format, see your Apple developer documentation. Lastly, the app must have the extension **.app**, or **.ipa** format.|
 |Apps the wrapping tool cannot process|Encrypted apps, unsigned apps, and apps with extended file attributes.|
-|Apps that use the Azure Active Directory Library (ADAL)|If your app uses ADAL, the app must incorporate an ADAL version greater than or equal to 1.0.2, and the developer must grant their app access to the Intune Mobile Application Management resource.<br /><br />See [Information for apps that use the Azure Active Directory Library](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) in this article for details about how to use ADAL.|
 |Setting entitlements for your app|You must set entitlements, which give the app additional permissions and capabilities beyond those typically granted, before you wrap the app. See [Setting app entitlements](#setting-app-entitlements) for instructions.|
 
 ## Step 2 Install the app wrapping tool
@@ -57,8 +61,7 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
     You are now ready to run the app wrapping tool.
 
 ## Step 3 Run the app wrapping tool
-
-1.  On the Mac computer, open a Terminal window and navigate to the folder where you saved the files. Because the executable resides inside the package, you’ll need to run the command as follows:
+* On the Mac computer, open a Terminal window and navigate to the folder where you saved the files. Because the executable resides inside the package, you’ll need to run the command as follows:
 ```
     ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
@@ -68,7 +71,7 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
     **Example:** The following example command runs the app wrapping tool on an app named **MyApp.ipa**. A provisioning profile and SHA-1 hash are specified. The processed app is created and stored in the **/users/myadmin/Documents** on the Mac computer.
 
     ```
-    /users/myadmin/Downloads/IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager -i /users/myadmin/Downloads/MyApp.ipa -o /users/myadmin/Documents/MyApp_Wrapped.ipa -p /users/myadmin/Downloads/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB –a 20e1cd0d-268e-4308-9583-02ae97dd353e –r https://contoso/ -v true
+    /users/myadmin/Downloads/IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager -i /users/myadmin/Downloads/MyApp.ipa -o /users/myadmin/Documents/MyApp_Wrapped.ipa -p /users/myadmin/Downloads/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
     ```
     You can use the following command line properties with the app wrapping tool:
 
@@ -79,15 +82,28 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
   |**-o**|Specifies the path in which to save the processed app.|
   |**-p**|Specifies the path to your provisioning profile for iOS apps.|
   |**-c**|Specifies the SHA1 hash of the signing certificate.|
-  |**-a**|Client ID of the input app (in GUID format) if the app uses Azure Active Directory Libraries (Optional).|
-  |**-r**|Redirect URI of the input app if the app uses Azure Active Directory Libraries (Optional).|
   |**-v**|Output verbose messages to the console (Optional).|
+  |-f |Optional) <Path to a plist file specifying arguments>  |
+  |-b|(Optional) Do not specify an argument to this flag if you want the wrapped app to have the same bundle version as the input app (not recommended). Use “-b <custom bundle version>” if you want the wrapped app to have a custom CFBundleVersion. We recommend incrementing the native app’s CFBundleVersion by the least significant component, eg. 1.0.0 -> 1.0.1 |
 
-2. After processing completes, the message **The application was successfully wrapped** will be displayed.
+>[!IMPORTANT]
+>The -f and -b  flags are only supported in the public preview version of the App Wrapping tool that supports MAM on devices that are not enrolled in Intune .
+
+
+One way to run the App Wrapping Tool is to put all the command arguments into a [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file. Plist is a file format similar to XML that can help us input our command-line arguments into a key-value interface.
+
+Open Parameters.plist, a blank plist template, with a text editor or Xcode.
+Enter your arguments for input path, output path, provisioning profile path, SHA1 certificate hash, and verbose enabled.
+Finally, run the IntuneMAMPackager with the plist as the sole argument:
+```
+./IntuneMAMPackager –f Parameters.plist
+```
+
+* After processing completes, the message **The application was successfully wrapped** will be displayed.
 
     If an error occurs, see [Error messages](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#error-messages) for help.
 
-3.  The wrapped app is saved in the output folder you specified previously. You can now upload the app into [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and associate it with a mobile application management policy.
+*   The wrapped app is saved in the output folder you specified previously. You can now upload the app into [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and associate it with a mobile application management policy.
 
     > [!IMPORTANT]
     > You must upload the app as a new app. You cannot update an older, unwrapped version of the app.
@@ -118,8 +134,6 @@ If the app wrapping tool fails to complete successfully, one of the following er
 |The input application you specified is not signed. Specify a valid signed application.|The app wrapping tool requires apps to be signed. Consult your developer documentation to learn how to sign a wrapped app.|
 |The input application you specified must be in the .ipa or .app format.|Only .app and .ipa extensions are accepted by the app wrapping tool. Make sure your input file has a valid extension and has been compiled as a .app or .ipa file.|
 |The input app you specified has already been wrapped and is on the latest policy template version.|The app wrapping tool will not rewrap an existing wrapped app with the latest policy template version.|
-|The given Azure Active Directory Client ID not a well-formed GUID. Please specify a valid Client ID.|When using the Client ID parameter, make sure you’ve provided a valid Client ID in GUID format.|
-|The given Azure Active Directory reply URI is not a well-formed URI. Please specify a valid reply URI.|When using the reply URI command line property, make sure you’ve provided a valid reply URI.|
 |WARNING: You did not specify a SHA1 certificate hash. Make sure that your wrapped application is signed before deploying.|Ensure that you specify a valid SHA hash (using the **–c** command line property).|
 
 ### Log files for the app wrapping tool
@@ -141,43 +155,6 @@ Apps that have been wrapped by using the app wrapping tool generate logs which a
 
     Wrapped apps will also present users the option to send logs directly from the device via email after the app crashes. Users can send the log to you to examine and forward to Microsoft if required.
 
-## Information for apps that use the Azure Active Directory Library
-The information in this section applies only to apps that use the Azure Active Directory Library (ADAL). If you are unsure if your app uses this library, contact the developer of the app.
-
-The app must incorporate an ADAL version greater than or equal to 1.0.2.
-
-For apps that use ADAL, the following must be true:
-
--   The app must incorporate an ADAL version greater than or equal to 1.0.2
-
--   Developers must grant their app access to the Intune Mobile Application Management resource, as described in [Steps to follow for apps that use ADAL](#steps-to-follow-for-apps-that-use-adal).
-
-### Overview of identifiers you need to get
-Apps that use ADAL must register via the Azure management portal to obtain two unique identifiers for their app:
-
-|Identifier|More information|Default value|
-|--------------|--------------------|-----------------|
-|**Client ID**|A unique GUID identifier is generated for each app after it registers with Azure Active Directory.<br /><br />If you know the app's specific client ID, you can specify this value. Otherwise, the default value must be used.|6c7e8096-f593-4d72-807f-a5f86dcc9c77|
-|**Redirect URI**|A URI value that developers can provide when registering their app with Azure Active Directory to ensure that authentication tokens are returned specifically to that endpoint.<br /><br />Supplying a redirect URI is an optional parameter for the app wrapping tool. If it is not specified, a default URI will be used.|urn:ietf:wg:oauth:2.0:oob|
-
-
-### Steps to follow for apps that use ADAL
-
-1.  Review [Overview of identifiers you need to get](#overview-of-identifiers-you-need-to-get) to identify the values that you need to get.
-
-2.  Configure access to mobile application management in Azure Active Directory by doing the following:
-
-    1. Log into an existing Azure Active Directory account in the Azure management portal.
-
-    2.  Click **existing LOB application registration** in Azure Active Directory.
-
-    3.  In the configure section, choose **Configure Access to Web APIs in other applications**.
-
-    4.  In the **Permission to other applications** section, from the first drop-down list, choose **Intune Mobile Application Management**.
-
-        You can now use the app's Client ID in the app wrapping tool. You can find the app's Client ID in the Azure Active Directory management portal as described in the [Overview of identifiers you need to get](#overview-of-identifiers-you-need-to-get) section.
-
-3.  Use the **Client-ID** (using the property **–a**) and **Redirect-URI** values as command-line properties in the app wrapping tool. If you do not have these values, the default values are used. You must specify both values, or the end user will not be able to successfully authenticate the processed app.
 
 ### Certificate, provisioning profile, and authentication requirements
 
@@ -187,17 +164,6 @@ Apps that use ADAL must register via the Azure management portal to obtain two u
 |Certificate|**Make sure that the certificate is valid before you specify it** - The tool does not check whether a certificate is expired when processing iOS apps. If the hash for an expired certificate is provided, the tool will process and sign the app, but it will fail to install on devices.<br /><br />**Make sure that the certificate provided for signing the packaged application has a match in the provisioning profile** - The tool does not validate if the provisioning profile has a match for the certificate provided for signing the wrapped application.|
 |Authentication|A device must have a pin set for encryption to work. On devices to which you have deployed a wrapped application, touching the status bar on the device will require the user to re-authenticate with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. The default policy in a wrapped application is *authentication on re-launch*. iOS handles any external notification (for example a phone call) as exiting the app and then re-launching it.<br /><br />For wrapped apps, the first user who signs into any wrapped app from the same publisher is cached. After this point, only that user is allowed to access the app. To reset the user, the device has to be unenrolled and then re-enrolled.|
 
-### Troubleshooting and technical notes about ADAL
-
--   If no ADAL resources are found, the tool will include the ADAL dynamic library. The tool will search for the ADAL library with a name of **ADALiOS.bundle** in the root folder.
-
--   The tool does not search for ADAL binaries (if any) within the app. If the app links to an outdated version, there may be runtime errors during login if authentication policies are enabled.
-
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] fetches the AAD token to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM resource-id for authentication. However, it is not used in any call that would in-turn verify the validity of the token. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] only reads the UPN of the signed-in user to determine app access. The AAD token is not used for any further service calls.
-
--   Authentication tokens are shared between apps from the same publisher since they are stored in shared keychain. If you want to isolate a specific app, then you must use a different signing certificate and provisioning profile for that app.
-
--   Double login prompts are prevented if you provide your client application’s Client ID and Redirect URI. This Client ID needs to be registered to access the published [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM resource ID in the AAD Dashboard. Failure to do so will result in a login failure when the app runs.
 
 ## Setting app entitlements
 Before wrapping your app, you can grant **entitlements** to give the app  additional permissions and capabilities that exceed what an app typically can do.  An **entitlement file** is used during code signing to specify special permissions within your app (for example, access to a shared keychain). Specific app services, called **capabilities**, are enabled within Xcode during app development. Once enabled, the capabilities are reflected in your entitlements file. For more information about entitlements and capabilities, see [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in the iOS Developer Library. For a complete list of supported capabilities, see [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).

@@ -73,7 +73,7 @@ The diagram below illustrates the flow used by conditional access policies for E
 You can restrict access to Exchange Online email from **Outlook** and other **apps that use modern authentication**:-
 
 - Android 4.0 and later, Samsung Knox Standard 4.0 and later
-- iOS 7.1 and later
+- iOS 8.0 and later
 - Windows Phone 8.1 and later
 
 **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Microsoft Office clients.
@@ -99,7 +99,7 @@ You can restrict access to Exchange email from the built-in **Exchange ActiveSyn
 
 - Android 4.0 and later, Samsung Knox Standard 4.0 and later
 
-- iOS 7.1 and later
+- iOS 8.0 and later
 
 - Windows Phone 8.1 and later
 

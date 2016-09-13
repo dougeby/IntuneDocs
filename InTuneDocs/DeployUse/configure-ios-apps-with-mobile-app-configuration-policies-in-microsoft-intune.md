@@ -6,7 +6,7 @@ description: Use mobile app configuration policies in Intune to supply settings 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ Mobile app configuration policies can help you eliminate these problems by letti
 You do not deploy these policies directly to users and devices. Instead, you associate a policy with an app, and then deploy the app. The policy settings will be used whenever the app checks for them (typically, the first time it is run).
 
 > [!TIP]
-> This policy type is currently available only for devices running iOS 7.1 and later. It supports the following app installation types:
+> This policy type is currently available only for devices running iOS 8.0 and later. It supports the following app installation types:
 >
 > -   **Managed iOS app from the app store**
 > -   **App package for iOS**

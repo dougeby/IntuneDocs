@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Compliance policy settings for iOS devices in Microsoft Intune
 
-The policy settings described in this topic apply to  devices running iOS 6 and later.
+The policy settings described in this topic apply to  devices running iOS 8.0 and later.
 
 If you are looking for information about other platforms, select one of the following:
 > [!div class="op_single_selector"]
