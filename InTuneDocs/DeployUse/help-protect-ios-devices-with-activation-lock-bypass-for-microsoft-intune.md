@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Help protect iOS devices with Activation Lock bypass for Microsoft Intune
-Microsoft Intune can help you manage iOS Activation Lock, a feature of the Find My iPhone app for iOS 7.1 and later devices. Activation Lock is enabled automatically when a user opens the Find My iPhone app on a device. After it is enabled, the user's Apple ID and password must be entered before anyone can: 
+Microsoft Intune can help you manage iOS Activation Lock, a feature of the Find My iPhone app for iOS 8.0 and later devices. Activation Lock is enabled automatically when a user opens the Find My iPhone app on a device. After it is enabled, the user's Apple ID and password must be entered before anyone can: 
 
 -   Turn off Find My iPhone
 
@@ -49,7 +49,7 @@ To help solve these problems, Apple introduced Activation Lock bypass in iOS 7.1
 > Supervised mode for iOS devices lets you use Apple Configurator to lock down a device and limit functionality to specific business purposes. Supervised mode is generally only for corporate-owned devices.
 
 ## How Intune helps you manage Activation Lock
-Intune can request the Activation Lock status of both supervised and unsupervised devices that run iOS 7.1 and later. For supervised devices only, Intune can retrieve the Activation Lock bypass code and directly issue it to the device. If the device has been wiped, you can directly access the device by using the code as the user name and a blank password.
+Intune can request the Activation Lock status of both supervised and unsupervised devices that run iOS 8.0 and later. For supervised devices only, Intune can retrieve the Activation Lock bypass code and directly issue it to the device. If the device has been wiped, you can directly access the device by using the code as the user name and a blank password.
 
 **The business benefits of this are**:
 
@@ -82,7 +82,7 @@ You can see which devices are using Activation Lock in two ways:
 
     -   Not enabled
 
-    The **Activation Lock Status** box is blank for devices that do not run iOS 7.1 or later.
+    The **Activation Lock Status** box is blank for devices that do not run iOS 8.0 or later.
 
 -   Select a device in a groups view to see the Activation Lock status in the device details pane.
 

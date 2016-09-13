@@ -38,9 +38,9 @@ You deploy compliance policies to users. When a compliance policy is deployed to
 
 The following table lists the device types supported by compliance policies and how noncompliant settings are managed when the policy is used with a conditional access policy.
 
---------------
+-----------------------------
 
-|Policy Setting| Windows 8.1 and later| Windows Phone 8.1 and later| iOS 6.0 and later|Android 4.0 and later<br/>Samsung KNOX Standard 4.0 and later|
+|Policy Setting| Windows 8.1 and later| Windows Phone 8.1 and later| iOS 8.0 and later|Android 4.0 and later<br/>Samsung KNOX Standard 4.0 and later|
 |-----|----|----|----|----|
 |**PIN or Password Configuration** |Remediated|Remediated|Remediated|Quarantined|
 |**Device encryption**|N/A|Remediated|Remediated (by setting PIN)|Quarantined|
@@ -49,7 +49,9 @@ The following table lists the device types supported by compliance policies and 
 |**Minimum OS version**|Quarantined|Quarantined|Quarantined|Quarantined|
 |**Maximum OS version**|Quarantined| Quarantined| Quarantined| Quarantined|
 |**Windows health attestation**|Windows 10 and Windows 10 Mobile are Quarantined.<br /><br />Setting is not applicable to Windows 8.1|N/A|N/A|N/A|
---------------
+
+------------------------------
+
 **Remediated** = Compliance is enforced by the device operating system (for example, the user is forced to set a PIN).  There is never a case when the setting is noncompliant.
 
 **Quarantined** = The device operating system does not enforce compliance (for example, Android devices do not force the user to encrypt the device). When the devices is not compliant, the following actions take place:
