@@ -35,7 +35,8 @@ All of these features will eventually be supported for hybrid customers' deploym
 >Blog post - Ensuring mobile devices are up to date using Microsoft Intune<br>
 >In light of the recent "Trident" malware attacks on iOS devices, we've published a new blog post, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) to help you learn about the different ways that Intune can help keep your devices secure and up to date.
 
-
+## iOS 10 support
+Existing Intune MDM and MAM scenarios are compatible with iOS 10. For tips, refer to the [Intune Support Team Blog](https://blogs.technet.microsoft.com/intunesupport/2016/09/13/support-tip-intune-support-for-ios-10/).
 
 ## App Wrapping Tool supports MAM without device enrollment for Android and iOS
 The Intune App Wrapping Tool is a command line tool used to enable Intune MAM on line-of-business (LOB) apps for iOS and Android. It is the simplest way to incorporate the Intune MAM SDK into your app, so that your app can enforce MAM policies deployed through Intune. Using MAM policies, you can:
@@ -91,9 +92,6 @@ The Windows Phone 8.1 Company Portal app enables end users to send feedback abou
 
 
 ## What's coming
-
-### iOS 10 support
-Intune will fully support iOS 10. More information will follow the iOS 10 public release.
 
 ### Intune Groups transitioning to Azure Active Directory Groups
 Intune is creating a new group management experience that uses Azure Active Directory (AAD) security groups as user and device groups in Intune. These groups will be used for all group management, policy deployment, and profile deployment **when we introduce the new Azure-based Intune admin portal**.
