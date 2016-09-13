@@ -26,13 +26,13 @@ ms.suite: ems
 ---
 # Use groups to manage users and devices in Microsoft Intune
 
-This topic describes how to create groups in Intune. It also provides information about how the management of groups by using Intune is going to change over the coming months. 
+This topic describes how to create groups in Intune. It also provides information about how the management of groups is going to change over the coming months. 
 
 >[!IMPORTANT]
 >
->If you open the Groups workspace in the Intune portal and see a link to the Azure management portal, then you are already using the *new* Azure active directory (Azure AD) security groups approach to group management in Intune, described in [Notice of upcoming improvements to the admin experience for groups](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). To learn how to create Azure AD security groups, see [Managing access to resources with Azure Active Directory groups](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
+>If you open the Groups workspace in the Intune portal and see a link to the Azure active directory (Azure AD) portal, then you are already using the *new* Azure AD security groups approach to group management in Intune, described in [Notice of upcoming improvements to the admin experience for groups](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Click the link to the Azure AD portal to create and manage your groups. To learn how to work with Azure AD security groups, see [Managing access to resources with Azure Active Directory groups](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
 >
->To learn about the *current* approach to group management, see [Create groups to manage users and devices with Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in this topic.
+>If you do not see the link to the Azure AD portal, you are still using the *current* approach to group management, described in [Create groups to manage users and devices with Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in this topic.
 
 
 ## Notice of upcoming improvements to the admin experience for groups
