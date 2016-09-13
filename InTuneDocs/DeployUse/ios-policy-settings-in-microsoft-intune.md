@@ -202,7 +202,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 > [!NOTE]
 > The following notes apply to kiosk mode settings for iOS devices:
 >
-> -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or device enrollment manager to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
+> -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or the [Apple Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune) to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
 > -   If the iOS app that you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
 
 ### Reference information for compliant and noncompliant apps
@@ -271,9 +271,9 @@ You can configure the following settings on devices running iOS 8.0 and later th
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Allow enterprise app trust settings modification**||
-|**Allow installing apps using Apple Configuration and iTunes only**||
-|**Allow automatic app downloads**||
+|**Allow enterprise app trust settings modification**|Lets users change the trust settings for enterprise apps.|
+|**Allow installing apps using Apple Configuration and iTunes only**|Enables or disables the App Store from the device home screen. Users can still use iTunes, or the Apple Configurator tool to install and update apps.|
+|**Allow automatic app downloads**|Allow apps purchased on other devices to automatically download to this device. This setting does not affect app updates.|
 |**Allow changes to the Find My Friends app settings**|Allow the user to change settings for the Find My Friends app.|
 |**Allow access to the iBooks store**|Allow the user to browse and purchase books from the iBooks store.|
 |**Allow use of the Messages app on the device**|Allow use of the Messages app to send text messages.|
