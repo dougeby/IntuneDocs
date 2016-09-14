@@ -66,8 +66,9 @@
 ## [Retire devices](retire-devices-from-microsoft-intune-management.md)
 
 ## [Add apps](add-apps.md)
-### [Add apps for mobile devices](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Add apps for Windows PCs](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [Add apps for enrolled devices](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Add apps for Intune client PCs](add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [Manage license agreements for Intune client PCs](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Deploy apps](deploy-apps.md)
 ### [Deploy apps to devices and PCs](deploy-apps-in-microsoft-intune.md)
 ### [Monitor apps](monitor-apps-in-microsoft-intune.md)
