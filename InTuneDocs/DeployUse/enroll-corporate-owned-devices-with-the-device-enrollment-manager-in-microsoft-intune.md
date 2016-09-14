@@ -51,7 +51,7 @@ Devices that are enrolled with a device enrollment manager account have the foll
   - You can't reset these devices from the Company Portal.
   - Only the local device appears in the Company Portal app or website.
   - They can't use Apple Volume Purchase Program (VPP) apps because of per-user Apple ID requirements for app management.
-  - They can't also be enrolled with Apple Configurator or the Apple Device Enrollment Program (iOS devices).
+  - (iOS) They can't also be enrolled with Apple Configurator or the Apple Device Enrollment Program (DEP), but DEP or Apple Configurator-managed devices can be enrolled without user affinity.
 
 > [!NOTE]
 > To deploy company apps to devices that are managed by the device enrollment manager, deploy the Company Portal app as a **Required Install** to the device enrollment manager's user account.

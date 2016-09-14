@@ -51,7 +51,7 @@ The following are software requirements for installing the client:
 
 |Requirement|More information|
 |---------------|--------------------|
-|Operating system | Windows device running Windows 7 or later. |
+|Operating system | Windows device running Windows Vista or later. Home edition versions are not supported.|
 |Administrative permissions|The account that installs the client software must have local administrator permissions on that device.|
 |Windows Installer 3.1|The PC must have, at a minimum, Windows Installer 3.1.<br /><br />To view the version of Windows Installer on a PC:<br /><br />-   On the PC, right-click **%windir%\System32\msiexec.exe**, and then click **Properties**.<br /><br />You can download the latest version of Windows Installer from [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) on the Microsoft Developer Network website.|
 |Remove incompatible client software|Before you install the Intune client software, you must uninstall the any Configuration Manager or System Management Server client software from that PC.|
