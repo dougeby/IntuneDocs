@@ -38,15 +38,15 @@ Use this information to understand how and where your end users get the apps tha
 
 **Unmanaged apps** - Apps that can be managed through policies and that have not been wrapped by Intune or that do not incorporate the Intune MAM SDK. Application policies cannot be applied to these apps.
 
-Apple restrictions prohibit line-of-business and managed app store apps from being listed in the Company Portal app, so that means that users have to visit different views to find all of their apps. Apps for each tile shown on the Company Portal app Apps page are available as follows:
+Apple restrictions prohibit line-of-business and managed app store apps from being listed in the Company Portal app. To get around this issue, the apps tiles in the Company Portal app for iOS point users to different views in a single location (the Company Portal website) for all of their apps, as follows:
 
-- The **Company Apps** tile points to a list of all apps in the **ALL** tab of the [Company Portal website](http://portal.manage.microsoft.com).
+- The **Company Apps** tile previously pointed to a list of all apps in the ALL tab of the [Company Portal website](http://portal.manage.microsoft.com)., and it will continue to work the same way. The tile name has changed to **All Apps**.
 
-- The **Other Apps** tile currently points to a view, inside the Company Portal app, that lists all apps that Apple allows the Company Portal app to show. This includes all apps except line-of-business and managed app store apps.
+- The **Other Apps** tile previously pointed to a view, inside the Company Portal app, that lists all apps that Apple permits the Company Portal app to show. The tile name has changed to **Featured Apps**, and tapping the tile will take users to the FEATURED tab of the Company Portal website.
 
-- The **Categories** tile currently points to a view, inside the Company Portal app, that lists categories of apps.
+-  The **Categories** tile previously pointed to a view, inside the Company Portal app, that lists categories of apps. The tile name has not changed, but it now points to the CATEGORIES tab of the Company Portal website.
+You can find updated screenshots [here](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
 
-	![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
 
 
 ###See also

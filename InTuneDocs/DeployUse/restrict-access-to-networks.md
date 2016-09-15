@@ -6,7 +6,7 @@ description: Use Cisco ISE with Intune so that devices are Intune enrolled and p
 keywords:
 author: nbigman
 manager: angrobe
-ms.date: 06/24/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ Intune integration with Cisco Identity Services Engine (ISE) allows you to autho
 To enable this integration, you don’t need to do any setup in your Intune tenant. You will need to provide permissions to your Cisco ISE server to access your Intune tenant. After that's done, the rest of the setup happens in your Cisco ISE server. This article gives you instructions on providing your ISE server with permissions to access your Intune tenant.
 
 ### Step 1: Manage the certificates
-1. In the Azure Active Directory (Azure AD) console, export the certificate.
+Export the certificate from the Azure Active Directory (Azure AD) console, then import it into the Trusted Certificates store of the ISE console:
 
 #### Internet Explorer 11
 
@@ -50,6 +50,8 @@ To enable this integration, you don’t need to do any setup in your Intune tena
 
    f. On the **File to export** page, choose **Browse** to pick a location in which to save the file, and provide a file name. Though it seems like you’re picking a file to export, you’re actually naming the file that the exported certificate will be saved to. Choose **Next** &gt; **Finish**.
 
+   g. From within the ISE console, import the Intune certificate (the file you exported) into the  **Trusted Certificates** store.
+
 #### Safari
 
  a. Sign in to the Azure AD console.
@@ -58,14 +60,13 @@ b. Choose the lock icon &gt;  **More information**.
 
    c. Choose **View certificate** &gt; **Details**.
 
-   d. Choose the certificate, and then choose **Export**.  
+   d. Choose the certificate, and then choose **Export**. 
+
+   e. From within the ISE console, import the Intune certificate (the file you exported) into the  **Trusted Certificates** store.
 
 > [!IMPORTANT]
 >
 > Check the expiration date of the certificate, as you will have to export and import a new certificate when this one expires.
-
-
-2. From within the ISE console, import the Intune certificate (the file you exported) into the  **Trusted Certificates** store.
 
 
 ### Obtain a self-signed cert from ISE 
@@ -104,8 +105,57 @@ Ensure all of the text is a single line
 |Oauth 2.0 Token endpoint|Token Issuing URL|
 |Update your code with your Client ID|Client ID|
 
+### Step 4: Upload the self-signed certificate from ISE into the ISE app you created in Azure AD
+1.     Get the base64 encoded cert value and thumbprint from a .cer X509 public cert file. This example uses PowerShell:
+   
+      
+    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
+     `$cer.Import(“mycer.cer”)`
+      `$bin = $cer.GetRawCertData()`
+      `$base64Value = [System.Convert]::ToBase64String($bin)`
+      `$bin = $cer.GetCertHash()`
+      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
+      `$keyid = [System.Guid]::NewGuid().ToString()`
+ 
+	Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
+2.       Upload the certificate through the manifest file. Log in to the [Azure Management Portal](https://manage.windowsazure.com)
+2.      In to the Azure AD snap-in find the application that you want to configure with an X.509 certificate.
+3.      Download the application manifest file. 
+5.      Replace the empty “KeyCredentials”: [], property with the following JSON.  The KeyCredentials complex type is documented in[Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType).
 
-### Step 3: Configure ISE Settings
+ 
+    `“keyCredentials“: [`
+    `{`
+     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
+     `“keyId“: “$keyid_from_above“,`
+     `“type”: “AsymmetricX509Cert”,`
+     `“usage”: “Verify”,`
+     `“value”:  “$base64Value_from_above”`
+     `}2. `
+     `], `
+ 
+For example:
+ 
+    `“keyCredentials“: [`
+    `{`
+    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
+    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
+    `“type”: “AsymmetricX509Cert”,`
+    `“usage”: “Verify”,`
+    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
+    `}`
+    `],`
+ 
+6.      Save the change to the application manifest file.
+7.      Upload the edited application manifest file through the Azure management mortal.
+8.      Optional:  Download the manifest again, to check that your X.509 cert is present on the application.
+
+>[!NOTE]
+>
+> KeyCredentials is a collection, so you can upload multiple X.509 certificates for rollover scenarios, or delete certficates in compromise scenarios.
+
+
+### Step 4: Configure ISE Settings
 In the ISE admin console, provide these setting values:
   - **Server Type**: Mobile Device Manager
   - **Authentication type**: OAuth – Client Credentials

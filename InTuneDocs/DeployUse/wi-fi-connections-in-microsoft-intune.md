@@ -46,7 +46,7 @@ You can deploy Wi-Fi profiles to the following platforms:
 
 -   Android 4.0 and later
 
--   iOS 7.1 and later
+-   iOS 8.0 and later
 
 -   Mac OS X 10.9 and later
 
@@ -58,7 +58,7 @@ For devices that run Windows 8.1 or Windows 10 desktop or mobile, you can import
 
     -   Wi-Fi Profile (Android 4 and later)
 
-    -   Wi-Fi Profile (iOS 7.1 and later)
+    -   Wi-Fi Profile (iOS 8.0 and later)
 
     -   Wi-Fi Profile (Mac OS X 10.9 and later)
 
