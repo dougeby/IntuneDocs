@@ -61,12 +61,18 @@ Be sure to include the dot character at the beginning.
 4. Choose **OK**, save, and then deploy the policy.
 
     > [!NOTE]
-This policy can only be deployed to user groups.
+    > This policy can only be deployed to user groups.
 
 The next time each device checks in, the policy will be applied, and a Wi-Fi profile will be created on the device. The device will be able to connect to the network automatically.
 ## Android or Windows Wi-Fi profile
 
 Here’s an example of the XML code for an Android or Windows Wi-Fi profile:
+
+> [!IMPORTANT]
+> 
+> `<protected>false</protected>`: Set to **false**, as **true** could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
+> 
+>  `<hex>53534944</hex>` should be set to the hexadecimal value of `<name><SSID of wifi profile></name>`.
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -76,6 +82,7 @@ Here’s an example of the XML code for an Android or Windows Wi-Fi profile:
     <Type of encryption> = Type of encryption used by the network
     <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
     <password> = Password to connect to the network
+	<hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
     -->
     <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">

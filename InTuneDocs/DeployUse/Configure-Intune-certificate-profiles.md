@@ -47,7 +47,7 @@ You must create a Trusted certificate profile before you can create a Simple Cer
 1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**.
 2.  Add one of these policy types:
     - **Android &gt; Trusted Certificate Profile (Android 4 and later)**
-    - **iOS &gt; Trusted Certificate Profile (iOS 7.1 and later)**
+    - **iOS &gt; Trusted Certificate Profile (iOS 8.0 and later)**
     - **Mac OS X &gt; Trusted Certificate Profile (Mac OS X 10.9 and later)**
     - **Windows &gt; Trusted Certificate Profile (Windows 8.1 and later)**
     - **Windows &gt; Trusted Certificate Profile (Windows Phone 8.1 and later)**
@@ -69,7 +69,7 @@ After you create a Trusted CA certificate profile, create SCEP or .PFX certifica
 1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**.
 2.  Add one of these policy types:
     - **Android &gt; SCEP Certificate Profile (Android 4 and later)**
-    - **iOS &gt; SCEP Certificate Profile (iOS 7.1 and later)**
+    - **iOS &gt; SCEP Certificate Profile (iOS 8.0 and later)**
     - **Mac OS X &gt; SCEP Certificate Profile (Mac OS X 10.9 and later)**
     - **Windows &gt; SCEP Certificate Profile (Windows 8.1 and later)**
     - **Windows &gt; SCEP Certificate Profile (Windows Phone 8.1 and later)**
@@ -98,7 +98,7 @@ The new policy is shown in the **Policy** workspace. Now you can deploy it.
   - **Android &gt; .PFX Certificate Profile (Android 4 and later)**
   - **Windows &gt; PKCS #12 (.PFX) Certificate Profile (Windows 10 and later)**
   - **Windows &gt; PKCS #12 (.PFX) Certificate Profile (Windows Phone 10 and later)**
-  - **iOS > PKCS #12 (.PFX) Certificate Profile (iOS 7.1 and later)**    
+  - **iOS > PKCS #12 (.PFX) Certificate Profile (iOS 8.0 and later)**    
     Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Enter the information requested on the policy form.
 4.  Choose **Save Policy**.
