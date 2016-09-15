@@ -6,7 +6,7 @@ description: Intune integrates multi-factor authentication (MFA) to help you sec
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,11 +31,15 @@ Microsoft Intune integrates multi-factor authentication (MFA) to help you secure
 ## On-premises infrastructure requirements for ADFS MFA
 To set up multi-factor authentication, you need:
 
+-   Automatic enrollment, as described in [Set up Windows device management](set-up-windows-device-management-with-microsoft-intune.md).
 -   **An Active Directory domain to which the ADFS server is joined.**
 
 -   **Active Directory Federation Services (ADFS) server, configured for MFA.** A server that's running Windows Server 2012 R2 and is set up as an ADFS server. For more information, see: [Secure cloud and on-premises resources using Azure Multi-Factor Authentication Server with Windows Server 2012 R2 AD FS](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-adfs-w2k12/)
 
-All of the servers listed above must meet the system requirements in [System Requirements and Installation Information for Windows Server 2012 R2](http://technet.microsoft.com/library/dn303418.aspx).
+The servers have to meet the system requirements in [System Requirements and Installation Information for Windows Server 2012 R2](http://technet.microsoft.com/library/dn303418.aspx).
+
+ 
+
 
 #### MFA with Intune
 If your organization has an on-premises IT infrastructure that includes an Active Directory domain with Active Directory Federation Services (ADFS), you can set up MFA on your federation server and then enable MFA for Intune enrollment. By configuring MFA on Intune, users can authenticate once, during enrollment, and then use corporate resources without repeating the MFA process each time.
