@@ -70,9 +70,10 @@ Here’s an example of the XML code for an Android or Windows Wi-Fi profile:
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`: Set to **false**, as **true** could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
+> `<protected>false</protected>`must be set to **false**, as **true** could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
 > 
 >  `<hex>53534944</hex>` should be set to the hexadecimal value of `<name><SSID of wifi profile></name>`.
+>  Windows 10 devices may return a false *0x87D1FDE8 Remediation failed* error, but will still be provisioned with the profile.
 
     <!--
     <Name of wifi profile> = Name of profile
