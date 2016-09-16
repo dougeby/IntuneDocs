@@ -83,4 +83,4 @@ Here are the main steps you must do to implement this solution:
 2.	[Enable Lookout MTP connection in Intune](enable-lookout-mtp-connection-in-intune.md)
 3.  [Configure and deploy Lookout for work application](configure-and-deploy-lookout-for-work-apps.md)
 4.	[Configure compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md)
-5.	[Troubleshoot Lookout Integration](http://docs.microsoft.com/en-us/intune/troubleshoot/troubleshooting-lookout-integration.md)
+5.	[Troubleshoot Lookout Integration](http://docs.microsoft.com/en-us/intune/troubleshoot/troubleshooting-lookout-integration)
