@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,7 +48,7 @@ When you enroll your Android device, you are giving your IT administrator permis
 
 -   Require you to accept terms and conditions.
 
--   Enable or disable the camera on your device.
+-   Disable the camera (only on Samsung Knox devices, not Nexus devices) to prevent you from taking pictures of sensitive work material that shouldn't be shared.
 
 -   Force all the data, including corporate and personal data, on the device to be encrypted. This helps protect the data if the device is lost or stolen.
 
