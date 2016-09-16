@@ -75,7 +75,7 @@ If you are looking for information about other platforms, select one of the foll
 - **Require that USB debugging is  disabled (Android 4.2 or later)**: This setting specifies whether to detect the USB debugging option on the device is enabled.
 - **Require devices have enabled Scan device for security threats (Android 4.2-4.4)**: This setting specifies that the **Verify apps** feature is enabled on the device.
 - **Minimum Android security patch level (Android 6.0 or later)**: Use this setting to specify the minimum Android patch level.  Devices that are not at least at this patch level will be noncompliant. The date must be specified the format: YYYY-MM-DD.
-- **Require device threat protection to be enabled**: Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. select the maximum allowed threat level, which is one of the following:
+- **Require device threat protection to be enabled**: Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Select the maximum allowed threat level, which is one of the following:
 
   - **None (secured** This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as non-compliant.
   - **Low:** Device is evaluated as compliant if only low level threats are present. Anything higher puts the device in a non-compliant status.
