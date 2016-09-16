@@ -30,7 +30,7 @@ Use the **Microsoft Intune App Wrapping Tool for iOS** to modify the behavior of
 
 The tool is a Mac OS command-line application that creates a ‘wrapper’ around an app. Once an app is processed, you can then change the app's functionality using [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) that you configure.
 
-To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
+To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
 >[!IMPORTANT]
 >The version of the app wrapping tool, which supports devices not enrolled in Intune, is available for public preview. If you wish to participate in the public preview, you can download the tool from [this github page](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) for iOS.
