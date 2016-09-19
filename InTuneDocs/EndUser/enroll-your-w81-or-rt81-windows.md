@@ -6,7 +6,7 @@ description: Describes how to enroll a Windows 8.1 or Windows RT 8.1 device in I
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 06/27/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
