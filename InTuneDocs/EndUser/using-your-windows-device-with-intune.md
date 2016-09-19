@@ -6,7 +6,7 @@ description: List of links to tasks that you can do on your Windows device when 
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
