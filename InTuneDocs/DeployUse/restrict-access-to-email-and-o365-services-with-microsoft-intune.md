@@ -6,7 +6,7 @@ description: This topic describes how conditional can be used to allow only comp
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 06/16/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
