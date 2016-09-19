@@ -50,7 +50,7 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
 
 ## Step 2 Install the app wrapping tool
 
-1.  From the **Microsoft Intune App Wrapping Tool for iOS** page on the [Microsoft Github page](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), download the installation file for the app wrapping tool to a Mac computer.
+1.  From the **Microsoft Intune App Wrapping Tool for iOS** page on the [Microsoft Github page](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), download the files for the app wrapping tool to a Mac computer.
 
 2.  You must read the license.txt file which explains the End User License Agreement.
 3.  Save the files locally to your Mac computer.
