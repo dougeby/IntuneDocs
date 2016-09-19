@@ -4,7 +4,7 @@
 title: Plan your user and device groups | Microsoft Intune
 description: Plan groups to meet your organizational needs.
 keywords:
-author: nbigman
+author: sanchusa
 manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article

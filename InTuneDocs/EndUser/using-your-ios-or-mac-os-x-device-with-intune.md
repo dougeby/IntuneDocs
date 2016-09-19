@@ -6,7 +6,7 @@ description: List of links to tasks that you can do on your iOS or Mac OS X mobi
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 08/10/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
