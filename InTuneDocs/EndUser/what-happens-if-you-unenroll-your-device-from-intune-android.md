@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 06/28/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
