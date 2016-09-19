@@ -6,7 +6,7 @@ description: Protect and control access to company email on Exchange Online with
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 06/16/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
