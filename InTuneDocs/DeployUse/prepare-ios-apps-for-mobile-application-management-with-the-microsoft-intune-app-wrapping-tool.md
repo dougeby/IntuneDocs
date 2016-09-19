@@ -6,7 +6,7 @@ description: Use the information in this topic to learn how to wrap your iOS app
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,18 +50,15 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
 
 ## Step 2 Install the app wrapping tool
 
-1.  From the **Microsoft Intune App Wrapping Tool for iOS** page on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45218), download the installation file for the app wrapping tool to a Mac computer.
+1.  From the **Microsoft Intune App Wrapping Tool for iOS** page on the [Microsoft Github page](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), download the installation file for the app wrapping tool to a Mac computer.
 
-2.  On the Mac computer, double-click the installation file **Microsoft Intune App Wrapping Tool for iOS.dmg**.
-
-3.  Choose **Agree** to accept the End User License Agreement (EULA). The installer is mounted and displayed on the Mac computer.
-
-4.  Open the installer and  copy the displayed files to a new folder on the Mac computer. You can now disconnect the mounted installer drive.
+2.  You must read the license.txt file which explains the End User License Agreement.
+3.  Save the files locally to your Mac computer.
 
     You are now ready to run the app wrapping tool.
 
 ## Step 3 Run the app wrapping tool
-* On the Mac computer, open a Terminal window and navigate to the folder where you saved the files. Because the executable resides inside the package, you’ll need to run the command as follows:
+* On the Mac computer, open a Terminal window and navigate to the folder where you saved the files. The executable tool is named **IntuneMAMPackager** and is located in IntuneMAMPackager/Contents/MacOS. You'll need to run the command as follows:
 ```
     ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
