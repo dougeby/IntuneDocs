@@ -6,7 +6,7 @@ description: Describes how to enroll a Windows 10 mobile or desktop device in In
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 06/27/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
