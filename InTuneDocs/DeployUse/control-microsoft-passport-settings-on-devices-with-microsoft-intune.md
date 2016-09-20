@@ -6,7 +6,7 @@ description: Learn how Intune integrates with Windows Hello for Business, an alt
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 09/02/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,6 +35,18 @@ Intune integrates with Hello for Business in two ways:
 -   You can use an Intune policy to control which gestures users can and cannot use to sign in.
 
 -   You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).
+
+> [!IMPORTANT]
+> In Windows 10 desktop and mobile versions prior to the Anniversary Update, you could set two different PINS that could be used to authenticate to resources:
+- The **device PIN** could be used to unlock the device and connect to cloud resources.
+- The **work PIN** was used to access Azure AD resources on user’s personal devices (BYOD).
+
+>In the Anniversary Update, these two PINS were merged into one single device PIN.
+Any Intune configuration policies you set to control the device PIN, and additionally, any Windows Hello for Business policies you configured, now both set this new PIN value.
+If you have set both policy types to control the PIN, the Windows Hello for Business policy will be applied on both Windows 10 desktop and mobile devices.
+To ensure policy conflicts are resolved and that the PIN policy is applied correctly, update your Windows Hello for Business Policy to match the settings in your configuration policy, and ask your users to sync their devices in the Company Portal app.
+
+
 
 ## Create a Windows Hello for Business policy
 

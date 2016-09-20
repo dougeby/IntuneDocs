@@ -6,7 +6,7 @@ description: Mobile device management (MDM) uses enrollment to bring devices int
 keywords:
 author: NathBarn
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 09/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
