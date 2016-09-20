@@ -6,7 +6,7 @@ description: Links to information to share with your end users
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 09/20/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -63,8 +63,6 @@ To understand how your end users get their apps, choose from the following devic
 - [How your iOS users get their apps](how-your-ios-users-get-their-apps.md)
 - [How your Windows users get their apps](how-your-windows-users-get-their-apps.md)
 
-## Help end users understand Company Portal app messages
 
-To help your users solve issues that they might have when they are using the Company Portal, you can review a [list of messages users might see in the Company Portal](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
 If there is other information that you would like to see covered in this article, please add your suggestion to the Comment box at the bottom of this topic. Thanks!
