@@ -50,7 +50,7 @@ ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 |Company Portal|An app or a website that provides users with [access to company data and apps](/intune/get-started/microsoft-intune-company-portal).|
 |Compliance policy|Makes sure that the devices used to access company apps and data, [comply with certain rules ](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune)like using a PIN to access the device, and encryption of data stored on the device.|
 |Compliant and noncompliant apps|Part of a [general configuration policy](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies), these settings let you define a list of apps that users can, or cannot run. Intune will then inform you via. reports that a noncompliant app was installed, or run. For some platforms, Intune can also block install of a noncompliant app.|
-|Conditional access|[Allows access to company email and Office 365 services](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) only from devices that are compliant with rules you set.|
+|Conditional access|[Allows access to company email, Office 365, and other  services](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) only from devices that are compliant with rules you set.|
 |Custom policy|You [use these policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) when a general configuration policy does not contain a built-in setting that meets your needs. You might be able to use a custom policy to create a setting by other means like the Apple Configurator, or OMA-URI.|
 
 ## D
