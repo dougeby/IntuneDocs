@@ -38,10 +38,6 @@ When a user attempts to connect to a file using a supported app such as OneDrive
 
 ![Diagram to show the decision points that determine whether a device is allowed access to SharePoint is blocked ](../media/ConditionalAccess8-6.png)
 
->[!IMPORTANT]
->Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
-
->If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, and would like to do so, sign up for the Azure Active Directory public preview which includes device based conditional access for Intune managed devices or domain joined Windows PCs. Read [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) to learn more.
 
 **Before** configuring a conditional access policy for SharePoint Online, you must:
 - Have a **SharePoint Online subscription** and users must be licensed for SharePoint Online.
@@ -81,7 +77,7 @@ You can restrict access to SharePoint Online when accessed from a browser from *
 
 ## Support for PCs
 - Windows 8.1 and later (when enrolled with Intune)
-- Windows 7.0 or Windows 8.1 (when domain-joined)
+- Windows 7.0, Windows 8.1, or Windows 10 (when domain-joined),
 
   - Domain-joined PCs must be set up to [automatically register](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory.
 AAD DRS will be activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service will not see registered devices in their on-premises Active Directory.
@@ -132,7 +128,8 @@ Next, configure the policy to require that only managed and compliant devices ca
 ![Screenshot of the SharePoint Online Policy page](../media/mdm-ca-spo-policy-configuration.png)
 
 2.  Select **Enable conditional access policy for SharePoint Online**.
-
+>[NOTE!]
+> You can also create conditional access policy in the Azure AD management console. Azure AD management console allows you to create the Intune device conditional access policies (referred to as the **device-based conditional access policy** in Azure AD) in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party cloud apps that are not supported in the Intune administrator console. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 3.  Under **Application access**, you can choose to apply conditional access policy to:
 
     -   **All platforms**
@@ -142,8 +139,6 @@ Next, configure the policy to require that only managed and compliant devices ca
         Selecting **All platforms** option means that Azure Active Directory will apply this policy to all authentication requests, regardless of the platform reported by the client application.  All platforms will be required to enrolled and become compliant, except for:
         *	Windows devices will be required to be enrolled and compliant, domain joined with on-premises Active Directory, or both
 	    * Unsupported platforms like Mac.  However, apps using modern authentication coming from these platforms will be still be blocked.
-        >[!TIP]
-        >You may not see this option if you not already using conditional access for PCs.  Use the **Specific platforms** instead. Conditional access for PCs is not currently available to all Intune customers.   You can find out more information about how to get access to this feature  [in this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Specific platforms**
 
