@@ -127,6 +127,8 @@ Next, configure the policy to require that only managed and compliant devices ca
 
 >[!NOTE]
 > You can also create conditional access policy in the Azure AD management console. Azure AD management console allows you to create the Intune device conditional access policies (referred to as the **device-based conditional access policy** in Azure AD) in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party cloud apps that are not supported in the Intune administrator console. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+
+
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **SharePoint Online Policy**.
 ![Screenshot of the SharePoint Online Policy page](../media/mdm-ca-spo-policy-configuration.png)
 
