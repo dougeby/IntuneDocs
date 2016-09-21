@@ -63,6 +63,7 @@ If a condition is not met, the user is presented with one of the following messa
 
 >[!NOTE]
 >If you  enable conditional access for SharePoint Online, we recommend that you disable the domain on the list as described in the  [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) topic.  
+
 ## Support for mobile devices
 - iOS 8.0 and later
 - Android 4.0 and later, Samsung Knox Standard 4.0 or later
@@ -124,12 +125,13 @@ Next, configure the policy to require that only managed and compliant devices ca
 
 #### <a name="bkmk_spopolicy"></a>
 
+>[!NOTE]
+> You can also create conditional access policy in the Azure AD management console. Azure AD management console allows you to create the Intune device conditional access policies (referred to as the **device-based conditional access policy** in Azure AD) in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party cloud apps that are not supported in the Intune administrator console. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **SharePoint Online Policy**.
 ![Screenshot of the SharePoint Online Policy page](../media/mdm-ca-spo-policy-configuration.png)
 
 2.  Select **Enable conditional access policy for SharePoint Online**.
->[NOTE!]
-> You can also create conditional access policy in the Azure AD management console. Azure AD management console allows you to create the Intune device conditional access policies (referred to as the **device-based conditional access policy** in Azure AD) in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party cloud apps that are not supported in the Intune administrator console. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+
 3.  Under **Application access**, you can choose to apply conditional access policy to:
 
     -   **All platforms**
