@@ -28,7 +28,7 @@ ms.suite: ems
 # Prepare Android apps for mobile application management with the Intune App Wrapping Tool
 Use the **Microsoft Intune App Wrapping Tool for Android** to modify the behavior of your in-house Android apps by restricting features of the app without changing the code of the app itself.
 
-The tool is a Windows command-line application that runs in PowerShell and creates a "wrapper" around your Android app. Once the app is processed, you can then change the app’s functionality using [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) that you configure.
+The tool is a Windows command-line application that runs in PowerShell and creates a 'wrapper' around your Android app. Once the app is processed, you can then change the app’s functionality using [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) that you configure.
 
 
 Before running the tool, review the [Security considerations for running the app wrapping tool](#security-considerations-for-running-the-app-wrapping-tool). To download the tool, see [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267).
