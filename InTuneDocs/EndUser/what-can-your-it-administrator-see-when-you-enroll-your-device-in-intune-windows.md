@@ -62,5 +62,6 @@ When  you enroll your Windows device in Intune, you are giving your IT administr
 
 -   Manufacturer
 
+You can [read more](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows).
 
-If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://
+
