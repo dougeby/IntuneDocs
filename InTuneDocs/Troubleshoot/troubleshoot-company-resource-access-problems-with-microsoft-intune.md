@@ -6,7 +6,7 @@ description: Error and status codes in this topic to help you troubleshoot resou
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -15,7 +15,6 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: tscott
@@ -133,7 +132,7 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016314112|0x87D17D00|22000:Invalid key usage|
 |-2016315105|0x87D1791F|21007:Cannot verify account|
 |-2016315106|0x87D1791E|21006:Cannot decrypt certificate|
-|-2016315107|0x87D1791D|21005:Account not unique|
+|-2016315107|0x87D1791D|21005:Account not unique (Email Profile already exists on device)|
 |-2016315108|0x87D1791C|21004:Cannot create account|
 |-2016315109|0x87D1791B|21003:No host name|
 |-2016315110|0x87D1791A|21002:Cannot comply with encryption policy from server|
