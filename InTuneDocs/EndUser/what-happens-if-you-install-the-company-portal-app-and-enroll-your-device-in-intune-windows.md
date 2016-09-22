@@ -28,16 +28,16 @@ ms.suite: ems
 
 # What happens if you install the Company Portal app and enroll your Windows device in Intune?
 
-When you install the Company Portal app and then use it to enroll a Windows or Windows Phone device, you are enabling your IT administrator to manage your device to keep company or school data secure, as described below for devices earlier than Windows 10. For information about Windows 10 devices, see [this page](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+When you install the Company Portal app and then use it to enroll a Windows or Windows Phone device, you are letting your IT administrator manage your device to keep company or school data secure, as described below for devices earlier than Windows 10. See [this page](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) for Windows 10 devices.
 
 ## What happens to all Windows devices after enrollment
-When you enroll your Windows or Windows Phone device in Intune, you can:
+Enrolling your Windows or Windows Phone device in Intune lets you:
 
 -   Access the company’s network, and your email and work files
 
 -   Get company apps from the Company Portal website (for Windows 7 and Vista, you can get company apps from the Company Portal website only)
 
--   Automatically configure your company or school email account
+-   Automatically set up your company or school email account
 
 -   Reset your phone to factory settings if it is lost or stolen
 
@@ -45,19 +45,17 @@ When you enroll your device, you are giving your IT administrator permission to 
 
 -   Reset your device back to manufacturer’s default settings. This is helpful if the device is lost or stolen.
 
--   Remove all company-related data and business apps that were installed. Your personal data and settings aren’t removed.
+-   Remove only company-related files and business apps. **Your personal data and settings aren’t removed.**
 
--   Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
+-   Your IT administrator can see the software installed on the device, including software you have personally installed.
 
--   Force you to have a password or PIN on the device, which may lock you out of the device, or reset your device back to manufacturer’s default settings, which may include the deletion of data if there are too many incorrect password attempts.
+-   Set requirements on your device, such as requiring you to have a device password or PIN to protect company data. Your IT administrator might also limit how many times you can enter an incorrect password, and might lock you out of the device if you try too many times.
 
--   Force all the data on the device to be encrypted, which helps protect the data if the device is lost or stolen.
+-   Require you to encrypt the data on your device to help protect company data, in case your device is lost or stolen. 
 
 -   Require you to accept terms and conditions.
 
--   Your IT administrator may enforce policies on the computer. For example, you might be required to set a password or PIN on the computer, which may lock you out of the computer, or delete all data from your computer’s hard drive, if there are too many incorrect password attempts.
-
--   Disable the SD card.
+-   Prevent you from taking pictures of company-related data.
 
 ## What happens to all Windows PCs after enrollment
 
@@ -65,27 +63,18 @@ When you enroll your device, you are giving your IT administrator permission to 
 
 -  Intune Endpoint Protection may be installed on your computer. This is software that checks for viruses and malware.
 
--  Your IT administrator can take an inventory of all of the software installed on the computer, including software you have personally installed.
-
--  You may be required to accept terms and conditions.
-
--  Your IT administrator can collect or delete data from your computer’s hard drive. Your IT administrator can also delete the entire hard drive.
+-  Your IT administrator can collect or delete data from your computer’s hard drive.
 
 -  Your IT administrator can install apps and updates on your computer.
 
--  Your IT administrator may enforce policies on the computer. For example, you might be required to set a password or PIN on the computer, which may lock you out of the computer, or delete all data from your computer’s hard drive if there are too many incorrect password attempts.
-
-
 ## What happens every eight hours after device enrollment
-Approximately every eight hours, enrolled devices will:
+About every eight hours, enrolled devices will:
 
 -   Download any policy or app updates that your IT administrator has made available.
 
 -   Send any hardware inventory updates.
 
 -   Send any company app inventory updates.
-
-For the steps to enroll, see [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md). To learn about what your IT admin can see on your device, see [What can my IT admin see when I enroll my device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 

@@ -42,15 +42,15 @@ When you enroll your Android device, you are giving your IT administrator permis
 
 -   Reset your device back to manufacturer’s defaults. This is helpful if the device is lost or stolen.
 
--   Remove all company related data. Your personal data and settings aren’t removed.
+-   Remove all company-related data. Your personal data and settings aren’t removed.
 
--   Force you to have a password or PIN on the device, which may lock you out of the device, or reset your device back to manufacturer’s default settings, which may include the deletion of data, if there are too many incorrect password attempts.
+-   Set requirements on your device, such as requiring you to have a device password or PIN to protect company data. Your IT administrator might also limit how many times you can enter an incorrect password, and might lock you out of the device if you try too many times.
 
 -   Require you to accept terms and conditions.
 
 -   Disable the camera (only on Samsung Knox devices, not Nexus devices) to prevent you from taking pictures of sensitive work material that shouldn't be shared.
 
--   Force all the data, including corporate and personal data, on the device to be encrypted. This helps protect the data if the device is lost or stolen.
+-   Require that all data on the device is encrypted to help protect the data if the device is lost or stolen.
 
 -   After your device is added to the Company Portal, approximately every 8 hours it will:
 
