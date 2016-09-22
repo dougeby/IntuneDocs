@@ -70,7 +70,7 @@ Before running the tool, review the [Security considerations for running the app
 
 ## Step 2 Install the app wrapping tool
 
-1.  From the Microsoft Download Center, download and open the installation file for the app wrapping tool to a Windows machine.
+1.  From the Microsoft Download Center, download and open the installation file for the app wrapping tool to a Windows computer.
 
 2.  Accept the license agreement, then complete the installation.
 
@@ -132,7 +132,7 @@ The wrapped app is generated, and saved, along with a log file, in the output pa
 ## Security considerations for running the app wrapping tool
 To prevent potential spoofing, information disclosure, and elevation of privilege attacks:
 
--   Ensure that the input line-of-business (LOB) application, output application, and Java KeyStore are on the same Windows machine where the app wrapping tool is running.
+-   Ensure that the input line-of-business (LOB) application, output application, and Java KeyStore are on the same Windows computer where the app wrapping tool is running.
 
 -   Import the output application to the Intune console on the same machine where the tool is running. See [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) for more information about the Java keytool.
 
