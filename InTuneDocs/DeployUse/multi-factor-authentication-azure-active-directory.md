@@ -6,7 +6,7 @@ description: How to require multi-factor authentication in Azure AD for device e
 keywords:
 author: nbigman
 manager: angerobe
-ms.date: 08/17/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -48,6 +48,7 @@ To require MFA at device enrollment, follow these steps:
 	-  Require multi-factor authentication for enrollment when the device is not at work.
 	-  Choose **Block access to corporate resources** to prevent enrollment of a device when it is not connected to the corporate network. 
 4. You can also click the link to **define/edit your work network location**, to configure network connectivity requirements for device enrollment.
+
 > [!IMPORTANT]
 > 
 > Do not configure **Device based access rules** for Microsoft Intune Enrollment.
