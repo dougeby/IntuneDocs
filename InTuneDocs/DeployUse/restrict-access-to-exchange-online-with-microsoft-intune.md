@@ -104,6 +104,7 @@ You can restrict access to Exchange email from the built-in **Exchange ActiveSyn
 You can setup conditional access for PCs that run Office desktop applications to access **Exchange Online** and **SharePoint Online** for PCs that meet the following requirements:
 
 -   The PC must be running Windows 7.0,  Windows 8.1, or Windows 10.
+
 >[!NOTE]
 > To use conditional access with Windows 10 PCs, you must update those PCs with the Windows 10 Anniversary Update.
 -   The PC must either be domain joined or compliant with the compliance policy rules.
