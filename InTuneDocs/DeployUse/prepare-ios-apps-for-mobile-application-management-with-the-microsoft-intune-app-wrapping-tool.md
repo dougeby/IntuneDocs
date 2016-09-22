@@ -91,7 +91,7 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
 ###Use a template to input arguments
 An easy way to run the App Wrapping Tool is to put all the command arguments into a [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file. Plist is a file format similar to XML we can use to input our command-line arguments using a form interface.
 
-In the `IntuneMAMPackager/Contents/MacOS` folder, open `Parameters.plist`, a blank plist template, with a text editor or Xcode. Enter your arguments for the following keys:
+In the **IntuneMAMPackager/Contents/MacOS** folder, open `Parameters.plist`, a blank plist template, with a text editor or Xcode. Enter your arguments for the following keys:
 
 | Plist Key |  Default Value| Notes |
 |------------------|--------------|-----|
