@@ -38,18 +38,20 @@ The App Wrapping Tool does **not** support apps in the Apple App Store or Google
 You should use the App Wrapping Tool, rather than the SDK, if the  app has already been written or if the source code isn't available.
 
 
-### Supported Developer Platforms
+### Supported app development platforms
 
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |Yes|Yes|
 |**Android**| No |Yes|
+
 ## Intune App SDK
-The App SDK is designed mainly for customers who have apps in the App or Play stores and want to be able to manage the apps with Intune. However, any app can take advantage of integrating the SDK, even if it’s a LOB app.
+The App SDK is designed mainly for customers who have apps in the Apple App Store and/or Google Play Store and want to be able to manage the apps with Intune. However, any app can take advantage of integrating the SDK, even line-of-business apps.
 
 To learn more about the SDK, see the [Overview](/intune/develop/intune-app-sdk). To get started with the SDK, see [Getting Started With the Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started).
 
-### Supported Platforms
+### Supported app development platforms
+
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
 |**iOS**|Yes – use the Intune App SDK Xamarin component|Yes – use the Intune App SDK Cordova plugin|

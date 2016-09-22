@@ -62,11 +62,11 @@ Before running the tool, review the [Security considerations for running the app
 	```
 	keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
 	```
-	The command generates a key pair (a public key and associated private key of size 2048-bits) using the RSA algorithm, then wraps the public key into an X.509 v3 self-signed certificate, which is stored as a single-element certificate chain. This certificate chain and the private key are stored in a new keystore entry identified by the alias "ks." The keystore entry is valid for 50,000 days.
+	This example generates a key pair (a public key and associated private key of size 2048-bits) using the RSA algorithm, then wraps the public key into an X.509 v3 self-signed certificate, which is stored as a single-element certificate chain. This certificate chain and the private key are stored in a new keystore entry named "mykeystorefile" and identified by the alias "mykeyalias." The keystore entry is valid for 50,000 days.
 
 	The command will prompt you to provide passwords for the keystore and key. Use passwords that are secure and hard to guess, but remember them because they're needed later on to run the app wrapping tool.
 
-- For detailed documentation, read more about the Java [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) and Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) on the Oracle documentation website.
+	For detailed documentation, read more about the Java [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) and Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) on the Oracle documentation website.
 
 ## Step 2 Install the app wrapping tool
 
@@ -120,7 +120,7 @@ Import the PowerShell module.
 ```
 Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1" 
 ```
-Run the app wrapping tool on the native app **HelloWorld.apk**. The output app will be named .
+Run the app wrapping tool on the native app **HelloWorld.apk**. 
 ```
 invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
 ```

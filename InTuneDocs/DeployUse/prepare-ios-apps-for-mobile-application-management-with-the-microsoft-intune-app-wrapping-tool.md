@@ -85,15 +85,15 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
   |-xe| (Optional) Prints information about the iOS extensions in the app, and what entitlements are required to use them. See the "Setting app entitlements" section for more details. |
   |-x| (Optional) `<An array of paths to extension provisioning profiles>`. Use this if your app needs extension provisioning profiles.|
   |-f |(Optional) `<Path to a plist file specifying arguments.>` Use this flag in front of the [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file if you choose to use the plist template to specify the rest of the IntuneMAMPackager properties: -h, -i, -o, -p, etc. See the "Use a template to input arguments" section for more details. |
-  |-b|(Optional) Use `-b` without an argument if you want the wrapped output app to have the same bundle version as the input app (not recommended). <br/><br/> Use `-b <custom bundle version>` if you want the wrapped app to have a custom CFBundleVersion. If you choose to specify a custom CFBundleVersion, we recommend you increment the native app’s CFBundleVersion by the least significant component, eg. 1.0.0 -> 1.0.1. | 
+  |-b|(Optional) Use -b without an argument if you want the wrapped output app to have the same bundle version as the input app (not recommended). <br/><br/> Use `-b <custom bundle version>` if you want the wrapped app to have a custom CFBundleVersion. If you choose to specify a custom CFBundleVersion, we recommend you increment the native app’s CFBundleVersion by the least significant component, eg. 1.0.0 -> 1.0.1. |
 
 
-	###Use a template to input arguments
-An easy way to run the App Wrapping Tool is to put all the command arguments into a [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file. Plist is a file format similar to XML we can use to input our command-line arguments using a form interfance.
+###Use a template to input arguments
+An easy way to run the App Wrapping Tool is to put all the command arguments into a [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file. Plist is a file format similar to XML we can use to input our command-line arguments using a form interface.
 
-	In the `IntuneMAMPackager/Contents/MacOS` folder, open `Parameters.plist`, a blank plist template, with a text editor or Xcode. Enter your arguments for the following keys:
+In the `IntuneMAMPackager/Contents/MacOS` folder, open `Parameters.plist`, a blank plist template, with a text editor or Xcode. Enter your arguments for the following keys:
 
-	| Plist Key |  Default Value| Notes |
+| Plist Key |  Default Value| Notes |
 |----------------------------|--------------------|
 | Input Application Package Path  |empty| Same as -i. |
 | Output Application Package Path |empty| Same as -o.|
@@ -101,17 +101,16 @@ An easy way to run the App Wrapping Tool is to put all the command arguments int
 | SHA-1 Certificate Hash |empty| Same as -c. |
 | Verbose Enabled |false| Same as -v. |
 | Remove Missing Entitlements | false| Same as -c.|
-| Prevent Default Build |false | Equivalent to using `-b` without arguments. |
+| Prevent Default Build |false | Equivalent to using -b without arguments. |
 |Build String Override | empty| The custom CFBundleVersion of the wrapped output app |
 |Extension Provisioning Profile Paths | empty| An array of extension provisioning profiles for the app.
   
 
-	Finally, run the IntuneMAMPackager with the plist as the sole argument:
-	```
-	./IntuneMAMPackager –f Parameters.plist
-	```
+Finally, run the IntuneMAMPackager with the plist as the sole argument:
 
-
+```
+./IntuneMAMPackager –f Parameters.plist
+```
 
 * After processing completes, the message "**The application was successfully wrapped**" will be displayed.
 
