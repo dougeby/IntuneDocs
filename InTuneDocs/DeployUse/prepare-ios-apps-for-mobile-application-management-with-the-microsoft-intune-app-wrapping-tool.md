@@ -47,16 +47,16 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
 
 ## Step 2 Install the app wrapping tool
 
-1.  From the **Microsoft Intune App Wrapping Tool for iOS** [repository hosted on GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), download the files for the app wrapping tool locally to a mac OS machine.
+1.  From the **Microsoft Intune App Wrapping Tool for iOS** [repository hosted on GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), download the files for the app wrapping tool locally to a mac OS computer.
 
 2.  You must read the license.txt file which explains the End User License Agreement.
 
-3.  Save the files locally to your macOS machine.
+3.  Save the files locally to your macOS computer.
 
     You are now ready to run the app wrapping tool.
 
 ## Step 3 Run the app wrapping tool
-* On your macOS machine, open a Terminal window and navigate to the folder where you saved the app wrapping tool files. The executable tool is named **IntuneMAMPackager** and is located in **IntuneMAMPackager/Contents/MacOS**. You'll need to run the command as follows:
+* On your macOS computer, open a Terminal window and navigate to the folder where you saved the app wrapping tool files. The executable tool is named **IntuneMAMPackager** and is located in **IntuneMAMPackager/Contents/MacOS**. You'll need to run the command as follows:
 
 	```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
