@@ -39,7 +39,7 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
 
 |Requirement|More information|
 |---------------|--------------------------------|
-|Supported operating system and toolset|You must run the app wrapping tool on a macOS machine that runs OS X 10.8.5 or later, which has the XCode toolset version 5 or later installed.|
+|Supported operating system and toolset|You must run the app wrapping tool on a macOS computer that runs OS X 10.8.5 or later, which has the XCode toolset version 5 or later installed.|
 |Signing certificate and provisioning profile|You must have an Apple signing certificate and provisioning profile. See your [Apple developer documentation](https://developer.apple.com/).|
 |Processing an app with the App Wrapping Tool|Apps must be developed and signed by your company, or an independent software vendor (ISV). You cannot use this tool to process apps from the Apple Store. Apps must be written for iOS 8.0 or later. Apps must also be in the Position Independent Executable (PIE) format. For more information about the PIE format, see your Apple developer documentation. Lastly, the app must have the extension **.app**, or **.ipa** format.|
 |Apps the wrapping tool cannot process|Encrypted apps, unsigned apps, and apps with extended file attributes.|
