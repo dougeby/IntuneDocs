@@ -78,7 +78,7 @@ Note the folder to which you installed the tool. The default location is: **C:\P
 
 ## Step 3 Run the app wrapping tool
 
-1.  On the Windows machine where you installed the app wrapping tool, open a PowerShell window in administrator mode.
+1.  On the Windows computer where you installed the app wrapping tool, open a PowerShell window in administrator mode.
 
 2.  From the folder where you installed the tool, import the app wrapping tool PowerShell module:
 
