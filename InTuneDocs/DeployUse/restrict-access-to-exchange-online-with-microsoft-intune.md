@@ -105,14 +105,16 @@ You can setup conditional access for PCs that run Office desktop applications to
 
 -   The PC must be running Windows 7.0,  Windows 8.1, or Windows 10.
 
->[!NOTE]
-> To use conditional access with Windows 10 PCs, you must update those PCs with the Windows 10 Anniversary Update.
--   The PC must either be domain joined or compliant with the compliance policy rules.
+  >[!NOTE]
+  > To use conditional access with Windows 10 PCs, you must update those PCs with the Windows 10 Anniversary Update.
 
-    In order to be considered compliant, the PC must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and comply with the policies.
+  The PC must either be domain joined or compliant with the compliance policy rules.
 
-    For domain joined PCs, you must  set it up to [automatically register the device](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory.
-    >[!NOTE]
+  In order to be considered compliant, the PC must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and comply with the policies.
+
+  For domain joined PCs, you must  set it up to [automatically register the device](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory.
+
+  >[!NOTE]
     >Conditional access is not supported on PCs running the Intune computer client.
 
 -   [Office 365 modern authentication must be enabled](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), and have all the latest Office updates.
