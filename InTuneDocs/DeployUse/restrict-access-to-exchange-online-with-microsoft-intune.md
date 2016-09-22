@@ -104,7 +104,8 @@ You can restrict access to Exchange email from the built-in **Exchange ActiveSyn
 You can setup conditional access for PCs that run Office desktop applications to access **Exchange Online** and **SharePoint Online** for PCs that meet the following requirements:
 
 -   The PC must be running Windows 7.0,  Windows 8.1, or Windows 10.
-
+>[!NOTE]
+> To use conditional access with Windows 10 PCs, you must update those PCs with the Windows 10 Anniversary Update.
 -   The PC must either be domain joined or compliant with the compliance policy rules.
 
     In order to be considered compliant, the PC must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and comply with the policies.
@@ -180,7 +181,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 ### Step 4: Configure the conditional access policy
 
 >[!NOTE]
-> You can also create conditional access policy in the Azure AD management console. Azure AD management console allows you to create the Intune device conditional access policies (referred to as the **device-based conditional access policy** in Azure AD) in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party cloud apps that are not supported in the Intune administrator console. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+> You can also create conditional access policy in the Azure AD management console. Azure AD management console allows you to create the Intune device conditional access policies (referred to as the **device-based conditional access policy** in Azure AD) in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party Enterprise apps like Salesforce and Box that Azure AD supports. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange Online Policy**.

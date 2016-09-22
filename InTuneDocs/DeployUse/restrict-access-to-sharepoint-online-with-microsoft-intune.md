@@ -79,6 +79,8 @@ You can restrict access to SharePoint Online when accessed from a browser from *
 ## Support for PCs
 - Windows 8.1 and later (when enrolled with Intune)
 - Windows 7.0, Windows 8.1, or Windows 10 (when domain-joined),
+> [!NOTE]
+>To use conditional access with Windows 10 PCs, you must update those PCs with the Windows 10 Anniversary Update.
 
   - Domain-joined PCs must be set up to [automatically register](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory.
 AAD DRS will be activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service will not see registered devices in their on-premises Active Directory.
@@ -126,7 +128,7 @@ Next, configure the policy to require that only managed and compliant devices ca
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> You can also create conditional access policy in the Azure AD management console. Azure AD management console allows you to create the Intune device conditional access policies (referred to as the **device-based conditional access policy** in Azure AD) in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party cloud apps that are not supported in the Intune administrator console. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+> You can also create conditional access policy in the Azure AD management console. Azure AD management console allows you to create the Intune device conditional access policies (referred to as the **device-based conditional access policy** in Azure AD) in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party Enterprise apps like Salesforce and Box that Azure AD supports. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **SharePoint Online Policy**.
