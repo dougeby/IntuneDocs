@@ -37,6 +37,7 @@ The App Wrapping Tool does **not** support apps in the Apple App Store or Google
 
 You should use the App Wrapping Tool, rather than the SDK, if the  app has already been written or if the source code isn't available.
 
+**For more information on the App Wrapping Tool for MAM on devices that are not enrolled in Intune, see [Protect line of business apps and data on devices not enrolled in Microsoft Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)**.
 
 ### Supported app development platforms
 
