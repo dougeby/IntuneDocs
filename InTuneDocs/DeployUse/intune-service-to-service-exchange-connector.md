@@ -35,7 +35,7 @@ The **Service to Service Connector** supports only Exchange Online or new Exchan
 |Requirement|More information|
 |---------------|--------------------|
 |Exchange Online configured and running|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|Mobile device management authority| [Set the mobile device management authority to Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
+|Mobile device management authority| [Set the mobile device management authority to Microsoft Intune](prerequisites-for-enrollment.md#set-mobile-device-management-authority)|
 |Microsoft Exchange version|Exchange Online or new Exchange Online Dedicated service|
 |Active Directory Synchronization|Before you can use the Intune Connector, you must [set up Active Directory synchronization](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
 

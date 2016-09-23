@@ -37,7 +37,7 @@ The following table lists the requirements for the computer where you install th
 |---------------|--------------------|
 |Operating systems|Intune supports the on-premises Exchange Connector on a computer that runs any edition of Windows Server 2008 SP2 64 bit, Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.<br /><br />The connector is not supported on any Server Core installation.|
 |Microsoft Exchange version|Either on-premises Connector requires Microsoft Exchange 2010 SP1 or later, or legacy Exchange Online Dedicated. To determine whether your Exchange Online Dedicated environment is in the **new** or **legacy** configuration,  contact your account manager.|
-|Mobile device management authority| [Set the mobile device management authority to Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
+|Mobile device management authority| [Set the mobile device management authority to Intune](prerequisites-for-enrollment.md#set-mobile-device-management-authority).|
 |Hardware|The computer where you install the connector requires a 1.6 GHz CPU with 2 GB ram and 10 GB of free disk space  minimum hardware.|
 |Active Directory Synchronization|Before you can use either Connector to connect Intune to your Exchange Server, you must [set up Active Directory synchronization](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) so that your local users and security groups are synchronized with your instance of Azure Active Directory.|
 |Additional software|A full installation of Microsoft .NET Framework 4 and Windows PowerShell 2.0 must be installed on the computer that hosts the connector.|
