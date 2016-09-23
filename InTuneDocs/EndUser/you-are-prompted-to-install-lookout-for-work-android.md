@@ -46,9 +46,9 @@ Before you can access your work, your IT administrator needs you to install the 
 
 	![open Lookout for Work and tap Activate](./media/lookout-activate-button-android.png)
 
-4. Tap **Sign in with a work account**, and enter the account that you use to access work or school email and files.
+4. Tap **Sign in with Azure Active Directory**, and enter the account that you use to access work or school email and files.
 
-	![sign in with your work or school account](./media/lookout-sign-in-android.png)
+	![sign in with your work or school account](./media/lookout-sign-in-azure-android.png)
 
 5. Select the account that you use to access work or school email and files, and then tap **ADD ACCOUNT**.
 
