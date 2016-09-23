@@ -5,9 +5,9 @@ title: Sign-In Privacy Statement | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -18,7 +18,7 @@ ms.assetid: b3ca7273-31ae-4be4-b08f-5c13ade2a802
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

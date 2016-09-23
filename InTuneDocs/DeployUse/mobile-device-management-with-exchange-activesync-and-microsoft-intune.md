@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Exchange ActiveSync mobile device management with Microsoft Intune
-For Microsoft Intune to directly manage mobile devices, devices must be [enrolled in Intune](get-ready-to-enroll-devices-in-microsoft-intune.md). As an alternative, administrators can enable a more limited management solution that uses Exchange ActiveSync (EAS) management with an Exchange connector. Devices can be managed with either on-premises Exchange servers and Exchange Online using Office 365. Intune only supports one Exchange connector connection of any type per subscription.
+For Microsoft Intune to directly manage mobile devices, devices must be [enrolled in Intune](prerequisites-for-enrollment.md). As an alternative, administrators can enable a more limited management solution that uses Exchange ActiveSync (EAS) management with an Exchange connector. Devices can be managed with either on-premises Exchange servers and Exchange Online using Office 365. Intune only supports one Exchange connector connection of any type per subscription.
 
 ## Exchange access rules for mobile devices ##
 

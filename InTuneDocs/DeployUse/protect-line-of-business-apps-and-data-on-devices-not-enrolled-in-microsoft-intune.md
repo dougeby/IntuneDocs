@@ -27,13 +27,19 @@ ms.suite: ems
 
 # Protect line of business apps and data  on devices not enrolled in Microsoft Intune
 
-Mobile app management (MAM) policies help protect your company data by restricting data movement like copy and paste or by preventing users from saving company documents to a personal location.   To apply MAM policies to iOS and or Android line of business apps, you must first wrap the app with Microsoft Intune App Wrapping tool.  App wrapping is the process of applying a management layer to a mobile app without requiring any changes to the underlying application.  Once the app is wrapped, you can apply MAM policies to it and distribute it to your end-users.  
+Mobile app management (MAM) policies help protect company data by restricting actions that could leak company data and enforcing data access requirements, such as app PIN. To apply MAM policies to iOS and or Android line-of-business apps, you must first wrap the app with Microsoft Intune App Wrapping tool.  App wrapping is the process of applying a management layer to a mobile app without requiring any changes to the underlying application.  Once the app is wrapped, you can apply MAM policies to it and distribute it to your end-users.  
 
-This topic explains the steps required to apply MAM policies for apps that are accessed on **employee owned devices that are not managed**, and devices that are managed by a **third-party mobile device management (MDM) solution**.  To prepare your line of business apps that run on **devices that are enrolled in Intune**, see [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+This topic explains the steps required to apply MAM policies for apps that are accessed on **employee owned devices that are not managed**, and devices that are managed by a **third-party mobile device management (MDM) solution**.  To prepare your line of business apps that run on **devices that are enrolled in Intune MDM**, see [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+
+
 ##  Step 1: Prepare the app
-Before you can apply MAM policies to an app, you must first wrap the app with the Microsoft Intune App Wrapping tool.  The instructions to install and use the app wrapping tool are included in the download.  
+Before you can apply MAM policies to an app, you must first wrap the app with the Microsoft Intune App Wrapping tool.  For instructions to download and use the app wrapping tool, see the following pages:
+
+- [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 
+- [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+
 >[!IMPORTANT]  
->This version of the app wrapping tool, which supports devices not enrolled in Intune is available in public preview. If you wish to participate in the public preview, you can download the tool from [this github page](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) for iOS and [this github site](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) for Android.
+>This version of the app wrapping tool, which supports devices not enrolled in Intune, is supported for iOS and in public preview for Android. You can download the tool from [this GitHub repository](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) for iOS and [this GitHub repository](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) for Android.
 
 ## Step 2: Add the app
 
@@ -55,8 +61,7 @@ To associate your line-of-business app with MAM policies, you must add the app d
 Once the app metadata is uploaded to the service, the app will show up in the list of apps.  You can now [create a new policy or an existing policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) and apply it to the line of business app you added in step 2.
 
 >[!IMPORTANT]
->You must target the MAM policy to the users who are going to use the wrapped app.  Users who don’t have this policy deployed to them will not be able to use the
-              app.
+>You must target the MAM policy to the users who are going to use the wrapped app.  Users who don’t have this policy deployed to them will not be able to use the app.
 
 
   ![Screenshot of the Targeted list of apps blade with the new line of business app displayed](../media/mam-azure-portal-lob-on-targeted-app-list.png)
