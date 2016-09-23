@@ -35,7 +35,7 @@ Historically, companies and organizations have taken an active position of prote
 
 Intune gives you the ability to control the access to company resources and data based on risk assessment that device threat protection solutions like Lookout provides.
 
-## How do Intune and Lookout mobile threat protection help protect company resources?
+## How do Intune and Lookout device threat protection help protect company resources?
 Lookout’s mobile app (Lookout for work), running on mobile devices, captures file system, network stack, and device and application telemetry (where available) and send it to the Lookout device threat protection cloud service to calculate an aggregate device risk for mobile threats. You can also change the classification of the risk level for the threats in the Lookout console to suit your requirements.  
 The compliance policy in Intune now includes a new rule for Lookout mobile threat protection that is based on the Lookout device threat risk assessment. When this rule is enabled, Microsoft Intune then evaluates the device compliance with the policy that you enabled.
 

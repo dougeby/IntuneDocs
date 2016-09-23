@@ -40,7 +40,7 @@ Sign in to the [Azure AD management portal](https://manage.windowsazure.com) and
 
 ![screenshot of the Azure AD page showing the name of the tenant](../media/mtp/aad_tenant_name.png)
 When you choose the name of your subscription, the resulting URL  includes the subscription ID.  If you have any issues finding your subscription ID, see this [Microsoft support article](https://support.office.com/en-us/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b?ui=en-US&rs=en-US&ad=US) for tips on finding your subscription ID.   
-### Getting your Azure AD Group ID
+### Azure AD Group ID
 The Lookout console supports 2 levels of access:  
 * **Full Access:** The Azure AD admin can create a group for users that will have Full Access and optionally create a group for users that will have Restricted Access.  Only users in these groups will be able to login to the **Lookout console**.
 * **Restricted Access:** The users in this group will have no access to several configuration and enrollment related modules of the Lookout console, and have read-only access to the **Security Policy** module of the Lookout console.  
