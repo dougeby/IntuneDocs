@@ -52,7 +52,7 @@ Apps based on external links are not stored in your Intune cloud storage space.
 You can use managed iOS apps to manage and deploy iOS apps that are free of charge from the app store. You can also use managed iOS apps to associate [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) with [compatible apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) and review their status in the administrator console.<br /><br />Managed iOS apps are not stored in your Intune cloud storage space.
 
 > [!TIP]
-> Options for mobile devices are not available until you [set the MDM authority](get-ready-to-enroll-devices-in-microsoft-intune.md) to Intune.
+> Options for mobile devices are not available until you [set the MDM authority](prerequisites-for-enrollment.md) to Intune.
 
 ## Intune software publisher
 The Microsoft Intune Software Publisher starts when you add or modify apps from the Intune administrator console. From the publisher, you select and configure a software installer type that will either:
