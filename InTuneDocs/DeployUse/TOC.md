@@ -7,7 +7,7 @@
 ### [Device lifecycle](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [App lifecycle](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [Enroll devices](enroll-devices-in-microsoft-intune.md)
-### [Get ready to enroll devices in Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### [Prerequisites for MDM](prerequisites-for-enrollment.md)
 #### [iOS and Mac management](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android management](set-up-android-management-with-microsoft-intune.md)
 #### [Windows device management ](set-up-windows-device-management-with-microsoft-intune.md)
