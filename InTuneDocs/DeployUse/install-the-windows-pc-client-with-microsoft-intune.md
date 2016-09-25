@@ -29,7 +29,7 @@ ms.suite: ems
 Windows PCs can be enrolled by installing the Intune client software. The Intune client software can be installed in the following ways:
 
 - Manually installed
-- Installed by using Group policy
+- Installed by using Group Policy
 - Included in a disk image
 - Installed by users
 
@@ -76,7 +76,7 @@ All methods, except those for which users install the Intune client software the
     For more information about how to use Group Policy to automatically deploy software, see your Windows Server documentation.
 
 ## Deploy the client software as part of an image
-You can deploy the Intune client software to computers as part of an operating system image by using the following example procedure as a guide:
+You can deploy the Intune client software to computers as part of an operating system image by using the following procedure as a guide:
 
 1.  Copy the client installation files, **Microsoft_Intune_Setup.exe** and **MicrosoftIntune.accountcert**, to the **%Systemdrive%\Temp\Microsoft_Intune_Setup** folder on the reference computer.
 
@@ -99,11 +99,11 @@ You can deploy the Intune client software to computers as part of an operating s
 
 5.  Capture an image of the reference computer and then deploy this to targeted computers.
 
-When the targeted computer restarts at the completion of Windows Setup, the **WindowsIntuneEnrollPending** registry key is created. The enrollment package checks whether the computer is enrolled. If the computer is enrolled, no further action is taken. If the computer is not enrolled, the enrollment package creates a Microsoft Intune Automatic Enrollment Task.
+When the targeted computer restarts at the completion of Windows Setup, the **WindowsIntuneEnrollPending** registry key is created. The enrollment package checks to see if the computer is enrolled. If the computer is enrolled, no further action is taken. If the computer is not enrolled, the enrollment package creates a Microsoft Intune Automatic Enrollment Task.
 
-When the automatic enrollment task runs at the next scheduled time, it checks the existence of the **WindowsIntuneEnrollPending** registry value, and it tries to enroll the targeted PC in Intune. If the enrollment fails for any reason, the enrollment is retried the next time the task runs. The retries continue for a period of a month.
+When the automatic enrollment task runs at the next scheduled time, it checks the existence of the **WindowsIntuneEnrollPending** registry value, and it tries to enroll the targeted PC in Intune. If the enrollment fails for any reason, the enrollment is retried the next time the task runs. The retries continue for a month.
 
-The Intune Automatic Enrollment Task, the **WindowsIntuneEnrollPending** registry value, and the account certificate are deleted from the targeted computer when the enrollment is successful or after a month.
+The Intune Automatic Enrollment Task, the **WindowsIntuneEnrollPending** registry value, and the account certificate are deleted from the targeted computer either when the enrollment is successful or after a month (whichever comes first).
 
 ## Instruct users to self-enroll
 
@@ -118,9 +118,9 @@ Use one of the following procedures to help you monitor and validate successful 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **All Devices** &gt; **All Computers**.
 
-2.  In the list, find the computers that are communicating with Intune, or search for a specific managed computer by typing the computer name, or any part of the name, in the **Search devices** box.
+2.  In the list, find the computers that are communicating with Intune, or search for a specific managed computer by typing the computer name (or any part of the name) in the **Search devices** box.
 
-3.  Examine the status of the computer in the bottom pane of the console, and resolve any errors.
+3.  Examine the status of the computer in the bottom pane of the console. Resolve any errors.
 
 ### To create a computer inventory report to display all enrolled computers
 
