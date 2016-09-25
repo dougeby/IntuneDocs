@@ -67,7 +67,7 @@ For a series of questions that help you find the right method, see [Choose how t
 "Bring your own device" users install the Company Portal app and enroll their device. This enables users to connect to the company network and join the domain or Azure Active Directory. For most platforms, you have to enable BYOD enrollment for many COD scenarios. For more information, see [Prerequisites for device enrollment](prerequisites-for-enrollment.md). ([Go back to the table](#overview-of-device-enrollment-methods))
 
 ## Corporate-owned devices
-Corporate-owned devices (COD) can be managed by using the Intune console. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager who uses the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.
+Corporate-owned devices (COD) can be managed by using the Intune console. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.
 
 For more information, see [Enroll corporate-owned devices](manage-corporate-owned-devices.md).
 
@@ -75,7 +75,7 @@ For more information, see [Enroll corporate-owned devices](manage-corporate-owne
 Device enrollment manager is a special Intune account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Go back to the table](#overview-of-device-enrollment-methods))
 
 ### DEP
-Apple Device Enrollment Program (DEP) management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when the user turns on the device for the first time and runs the iOS Setup Assistant. This method supports **iOS Supervised** mode, which in turn enables:
+Apple Device Enrollment Program (DEP) management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when users turn on the device for the first time and run iOS Setup Assistant. This method supports **iOS Supervised** mode, which in turn enables:
   -	Locked enrollment
   -	Conditional access
   -	Jailbreak detection
@@ -84,7 +84,7 @@ Apple Device Enrollment Program (DEP) management lets you create and deploy poli
 Learn more about [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([Go back to the table](#overview-of-device-enrollment-methods))
 
 ### USB-SA
-USB-connected, corporate-owned devices are prepared with Intune policy. For USB-connected, Setup Assistant enrollment, the admin creates this Intune policy and exports it to Apple Configurator. The admin must enroll each device manually. Users receive their devices and run Setup Assistant, enrolling their device. This method supports **iOS Supervised** mode, which in turn enables:
+USB-connected, corporate-owned devices are prepared with Intune policy. For Setup Assistant enrollment, the admin creates this Intune policy and exports it to Apple Configurator. The admin must enroll each device manually. Users receive their devices and run Setup Assistant, enrolling their device. This method supports **iOS Supervised** mode, which in turn enables:
   -	Conditional access
   -	Jailbreak detection
   -	Mobile application management
