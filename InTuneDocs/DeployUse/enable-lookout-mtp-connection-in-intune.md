@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Enable Lookout MTP connection in the Intune admin console
-This topic shows you how to enable the Lookout MTP connection in Intune. You should have already configured the Intune Connector in the Lookout MTP console before doing this step.  If you have not already done so, do the steps described in  [Set up your subscription with Lookout mobile threat protection](set-up-your-subscription-with-lookout-mtp.md).
+This topic shows you how to enable the Lookout MTP connection in Intune. You should have already configured the Intune Connector in the Lookout console before doing this step.  If you have not already done so, do the steps described in  [Set up your subscription with Lookout mobile threat protection](set-up-your-subscription-with-lookout-mtp.md).
 
 To enable the Lookout MTP connection in Intune, on the **Administration** page in the [Microsoft Intune administrator console](https://manage.microsoft.com), choose **Third Party Service Integration**. Choose **Lookout status** and enable **Synchronization with MTP** using the toggle button.
 

@@ -28,10 +28,10 @@ ms.suite: ems
 # Set up iOS and Mac device management
 To set up your iOS or Mac device, you can find help [here](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md).
 
-Intune mobile device management of iPads, iPhones, and Mac OS X devices and give access to company email and apps. An Apple Push Notification service (APNs) certificate is required for Intune to manage iOS and Mac devices. Once the certificate is added to Intune, users can install the Company Portal app to enroll their devices or the administrator can set up [corporate-owned iOS device management](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
+Intune enables mobile device management of iPads, iPhones, and Mac OS X devices and gives users access to company email and apps. An Apple Push Notification service (APNs) certificate is required for Intune to manage iOS and Mac devices. Once the certificate is added to Intune, users can install the Company Portal app to enroll their devices or the administrator can set up [corporate-owned iOS device management](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Set up Intune**<br>
-    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
+    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](prerequisites-for-enrollment.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
 
 2.  **Get a certificate signing request**<br>
     As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **iOS and Mac OS X** &gt; **Upload an APNs Certificate**, and click **Download the APNs certificate request**. Save the certificate signing request (.csr) file locally. The .csr file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
@@ -54,4 +54,4 @@ Intune mobile device management of iPads, iPhones, and Mac OS X devices and give
 If your company or organization purchases iOS devices for users, those devices can also be enrolled for management as [company-owned iOS devices](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 ### See Also
-[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Prerequisites for enrollment with Microsoft Intune](prerequisites-for-enrollment.md)
