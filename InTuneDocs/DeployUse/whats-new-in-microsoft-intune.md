@@ -35,12 +35,12 @@ All of these features will eventually be supported for hybrid customers' deploym
 >In light of the recent "Trident" malware attacks on iOS devices, we've published a new blog post, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) to help you learn about the different ways that Intune can help keep your devices secure and up to date.
 
 ## New features, announcements and information
-* [iOS 10 support](#iOS-10-Support)
-* [App Wrapping Tool supports MAM without device enrollment for Android and iOS](#App-Wrapping-Tool-supports-MAM-without-device-enrollment-for-Android-and-iOS)
-* [Intune groups begin transitioning to Azure Active Directory in September](#Intune-groups-begin-transitioning-to-Azure-Active-Directory-in-September)
-* [Lookout integration to protect Android devices](#Lookout-integration-to-protect-Android-devices)
-* [Company Portal updates for Android, iOS and Windows](#Company-Portal-updates)
-* [What's Coming](#What's-coming)
+* [iOS 10 support](#ios-10-support)
+* [App Wrapping Tool supports MAM without device enrollment for Android and iOS](#app-wrapping-tool-supports-mam-without-device-enrollment-for-android-and-ios)
+* [Intune groups begin transitioning to Azure Active Directory in September](#intune-groups-begin-transitioning-to-azure-active-directory-in-september)
+* [Lookout integration to protect Android devices](#lookout-integration-to-protect-android-devices)
+* [Company Portal updates for Android, iOS and Windows](#company-portal-updates)
+* [What's Coming](#whats-coming)
 
 ## iOS 10 support
 Existing Intune MDM and MAM scenarios are compatible with iOS 10. For tips, refer to the [Intune Support Team Blog](https://blogs.technet.microsoft.com/intunesupport/2016/09/13/support-tip-intune-support-for-ios-10/).
