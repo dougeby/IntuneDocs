@@ -32,10 +32,6 @@ If you have an Exchange Online Dedicated environment and need to find out whethe
 To control email access to Exchange Online or to your new Exchange Online Dedicated environment, configure conditional access for Exchange Online in Intune.
 To learn more about how conditional access works, read the [restrict access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
->[!IMPORTANT]
->Conditional access for PCs and Windows 10 Mobile devices with apps using modern authentication is not currently available to all Intune customers. If you are already using these features, you do not need to take any action. You can continue to use them.
-
->If you have not created conditional access policies for PCs or Windows 10 Mobile for apps using modern authentication, and would like to do so, sign up for the Azure Active Directory public preview which includes device based conditional access for Intune managed devices or domain joined Windows PCs. Read [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) to learn more.  
 
 **Before** you can configure conditional access, you must:
 
@@ -107,14 +103,18 @@ You can restrict access to Exchange email from the built-in **Exchange ActiveSyn
 
 You can setup conditional access for PCs that run Office desktop applications to access **Exchange Online** and **SharePoint Online** for PCs that meet the following requirements:
 
--   The PC must be running Windows 7.0 or Windows 8.1.
+-   The PC must be running Windows 7.0,  Windows 8.1, or Windows 10.
 
--   The PC must either be domain joined or compliant with the compliance policy rules.
+  >[!NOTE]
+  > To use conditional access with Windows 10 PCs, you must update those PCs with the Windows 10 Anniversary Update.
 
-    In order to be considered compliant, the PC must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and comply with the policies.
+  The PC must either be domain joined or compliant with the compliance policy rules.
 
-    For domain joined PCs, you must  set it up to [automatically register the device](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory.
-    >[!NOTE]
+  In order to be considered compliant, the PC must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and comply with the policies.
+
+  For domain joined PCs, you must  set it up to [automatically register the device](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory.
+
+  >[!NOTE]
     >Conditional access is not supported on PCs running the Intune computer client.
 
 -   [Office 365 modern authentication must be enabled](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), and have all the latest Office updates.
@@ -183,6 +183,10 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
 ### Step 4: Configure the conditional access policy
 
+>[!NOTE]
+> You can also create conditional access policy in the Azure AD management console. Azure AD management console allows you to create the Intune device conditional access policies (referred to as the **device-based conditional access policy** in Azure AD) in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party Enterprise apps like Salesforce and Box that Azure AD supports. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+
+
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange Online Policy**.
 ![Screenshot of the Exchange Online conditional access policy page](../media/mdm-ca-exo-policy-configuration.png)
 
@@ -202,9 +206,6 @@ Only the groups which are targeted by the conditional access policy are evaluate
         Selecting the **All platforms** option means that Azure Active Directory will apply this policy to all authentication requests, regardless of the platform reported by the client application.  All platforms will be required to enrolled and become compliant, except for:
         *	Windows devices will be required to be enrolled and compliant, domain joined with on-premises Active Directory, or both
 	    * Unsupported platforms like Mac OS.  However, apps using modern authentication coming from these platforms will be still be blocked.
-
-        >[!TIP]
-           You may not see this option if you not already using conditional access for PCs.  Use the **Specific platforms** instead. Conditional access for PCs is not currently available to all Intune customers.   You can find out more information about how to get access to this feature [in this blog post ](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Specific platforms**
 
