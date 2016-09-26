@@ -35,6 +35,7 @@ All of these features will eventually be supported for hybrid customers' deploym
 >In light of the recent "Trident" malware attacks on iOS devices, we've published a new blog post, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) to help you learn about the different ways that Intune can help keep your devices secure and up to date.
 
 ## New features, announcements and information
+* [Windows conditional access](#windows-conditional-access)
 * [iOS 10 support](#ios-10-support)
 * [App Wrapping Tool supports MAM without device enrollment for Android and iOS](#app-wrapping-tool-supports-mam-without-device-enrollment-for-android-and-ios)
 * [Intune groups begin transitioning to Azure Active Directory in September](#intune-groups-begin-transitioning-to-azure-active-directory-in-september)
@@ -43,7 +44,7 @@ All of these features will eventually be supported for hybrid customers' deploym
 * [Intune glossary](#intune-glossary)
 * [What's coming](#whats-coming)
 
-## Windows Conditional Access
+## Windows conditional access
 You can now create conditional access policies through the Intune admin console to block Windows PCs from accessing Exchange Online and SharePoint Online. You can also create conditional access policies to block access to Office desktop and universal applications. 
 
 ## iOS 10 support
