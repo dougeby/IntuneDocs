@@ -40,7 +40,8 @@ All of these features will eventually be supported for hybrid customers' deploym
 * [Intune groups begin transitioning to Azure Active Directory in September](#intune-groups-begin-transitioning-to-azure-active-directory-in-september)
 * [Lookout integration to protect Android devices](#lookout-integration-to-protect-android-devices)
 * [Company Portal updates for Android, iOS and Windows](#company-portal-updates)
-* [What's Coming](#whats-coming)
+* [What's coming](#whats-coming)
+* [Intune glossary](#intune-glossary)
 
 ## iOS 10 support
 Existing Intune MDM and MAM scenarios are compatible with iOS 10. For tips, refer to the [Intune Support Team Blog](https://blogs.technet.microsoft.com/intunesupport/2016/09/13/support-tip-intune-support-for-ios-10/).
