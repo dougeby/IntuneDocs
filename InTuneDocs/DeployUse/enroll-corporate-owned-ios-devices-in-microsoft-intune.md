@@ -82,4 +82,4 @@ If user affinity is required, be sure that the device’s enrollment profile has
 
 
 ### See also
-[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Prerequisites for enrolling devices in Microsoft Intune](gprerequisites-for-enrollment.md)

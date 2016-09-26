@@ -49,7 +49,7 @@ Setup requirements for Window Phone mobile device management depend upon how you
 
 ## Configure setup requirements to enable Windows Phone management
 1.  **Set up Intune**
-    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
+    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](prerequisites-for-enrollment.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
 
 2.  **Set a DNS alias for the enrollment server address** (optional)
 

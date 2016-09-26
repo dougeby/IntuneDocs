@@ -60,7 +60,7 @@ In [step 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) of thi
 
 Open the Company Portal on the enrolled mobile device, choose **Apps**, and then install **Microsoft Skype**.
 
-To learn more about mobile device management using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], see [Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+To learn more about mobile device management using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], see [Prerequisites for enrolling devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md).
 
 
 ### Next steps
