@@ -35,7 +35,7 @@ Windows PCs can be enrolled by installing the Intune client software. The Intune
 
 ## Download the Intune client software
 
-All methods, except those for which users install the Intune client software themselves, require that you download the software so it can be deployed.
+All methods, except those in which users install the Intune client software themselves, require that you download the software so it can be deployed.
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Client Software Download**.
 
