@@ -6,7 +6,7 @@ description: Find out what’s new in this month’s, and past releases of Micro
 keywords:
 author: barlanmsft
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 09/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,8 +40,11 @@ All of these features will eventually be supported for hybrid customers' deploym
 * [Intune groups begin transitioning to Azure Active Directory in September](#intune-groups-begin-transitioning-to-azure-active-directory-in-september)
 * [Lookout integration to protect Android devices](#lookout-integration-to-protect-android-devices)
 * [Company Portal updates for Android, iOS and Windows](#company-portal-updates)
-* [What's coming](#whats-coming)
 * [Intune glossary](#intune-glossary)
+* [What's coming](#whats-coming)
+
+## Windows Conditional Access
+You can now create conditional access policies through the Intune admin console to block Windows PCs from accessing Exchange Online and SharePoint Online. You can also create conditional access policies to block access to Office desktop and universal applications. 
 
 ## iOS 10 support
 Existing Intune MDM and MAM scenarios are compatible with iOS 10. For tips, refer to the [Intune Support Team Blog](https://blogs.technet.microsoft.com/intunesupport/2016/09/13/support-tip-intune-support-for-ios-10/).
@@ -115,7 +118,7 @@ If you have configured a web clip to open only in the managed browser, and the m
 The Windows Phone 8.1 Company Portal app enables end users to send feedback about the app by using a new "send feedback" button. To find the button, users tap the “three dots” menu at the bottom right of the Company Portal app screen and then tap **send feedback**. The collected, anonymized feedback will help Microsoft improve the Company Portal app experience for users.
 <!---TFS 1317806--->
 
-## Intune glossary
+## Intune glossary</br>
 We’ve added a new [glossary topic]( https://docs.microsoft.com/intune/understand-explore/intune-glossary) to the library to help you understand some of the terms used in the Intune product.
 
 ----------
