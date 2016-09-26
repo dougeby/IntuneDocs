@@ -114,6 +114,9 @@ If you have configured a web clip to open only in the managed browser, and the m
 The Windows Phone 8.1 Company Portal app enables end users to send feedback about the app by using a new "send feedback" button. To find the button, users tap the “three dots” menu at the bottom right of the Company Portal app screen and then tap **send feedback**. The collected, anonymized feedback will help Microsoft improve the Company Portal app experience for users.
 <!---TFS 1317806--->
 
+## Intune glossary
+We’ve added a new [glossary topic]( https://docs.microsoft.com/intune/understand-explore/intune-glossary) to the library to help you understand some of the terms used in the Intune product.
+
 ----------
 
 ## What's coming
