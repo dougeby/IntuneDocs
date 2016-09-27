@@ -86,9 +86,7 @@ You can restrict access to **Outlook Web Access (OWA)** on Exchange Online when 
 
 **Unsupported browsers will be blocked**.
 
-The OWA apps for iOS and Android are not supported.  They should be blocked through ADFS claims rules.
-
-
+**The OWA app for iOS and Android can be modified not to use modern authentication, and is not supported.  Access from the OWA app must be blocked through ADFS claims rules.** 
 
 
 You can restrict access to Exchange email from the built-in **Exchange ActiveSync email client** on the following platforms:
