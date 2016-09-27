@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Restrict access to company resource based on device, network, and application risk
 You can control access from mobile devices to corporate resources, based on risk assessment conducted by Lookout, a device threat protection solution that is integrated with Microsoft Intune. The risk is based on telemetry that the Lookout service collects from devices for operating system (OS) vulnerabilities, installed malicious apps, and network profiles. 
-Based on the risk assessment you can then configure conditional access policies in Intune and allow or block devices that have been determined to be noncompliant due to threats detected on those devices.  This is currently supported only for **Android** devices running **4.1 and later** and enrolled in Microsoft Intune.  
+Based on the risk assessment you can then configure conditional access policies in Intune and allow or block devices that have been determined to be noncompliant due to threats detected on those devices.  This is currently supported only for **Android** devices running **4.1 and later** and enrolled in Microsoft Intune.  For information about platforms and languages that Lookout supports, see this [article](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
 ## What problem does this solve?
 Companies and organizations need to protect sensitive data from emerging threats that include physical, app-based, and network-based threats, as well as OS vulnerabilities.
 
