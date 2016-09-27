@@ -4,7 +4,7 @@
 title: What's coming | Microsoft Intune
 description:
 keywords:
-author: Lindavr
+author: barlanmsft
 manager: angrobe
 ms.date: 08/04/2016
 ms.topic: article
