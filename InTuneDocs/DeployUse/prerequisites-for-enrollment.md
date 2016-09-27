@@ -26,15 +26,15 @@ ms.suite: ems
 ---
 
 # Prerequisites for mobile device management in Intune
-Enabling employees to enroll their mobile devices with Intune requires the following steps. These same steps are required to manage company-owned devices.
+You can enable employees to enroll their mobile devices with Intune requires the following steps. These same steps are required to manage company-owned devices.
 
 |Steps|Details|  
 |-----------|-------------|  
-|**Step 1:** [Device enrollment dependencies](#step-1-device-enrollment-dependencies)|Ensure your custom domain name is configured and network communication is unblocked|  
+|**Step 1:** [Device enrollment dependencies](#step-1-device-enrollment-dependencies)|Ensure your custom domain name is configured and network communication is ready|  
 |**Step 2:** [Set device management authority](#step-2-set-mobile-device-management-authority)|The mobile device management authority defines the service assigned to your devices|
 |**Step 3:** [Configure the Intune Company Portal](#step-3-configure-the-intune-company-portal)|Configure user-facing settings for the Company Portal app|  
 |**Step 4:** [Assign Intune user licenses](#step-4-assign-intune-user-licenses)|Assign Intune licenses to users so they can enroll devices|
-|**Step 5:** [Set up device management](#step-5-set-up-device-management)|Enable platform-specific settings for iOS and Windows management. Android devices need no additional configuration.| 
+|**Step 5:** [Set up device management](#step-5-set-up-device-management)|Enable platform-specific settings for iOS and Windows management. Android devices need no additional configuration.|
 
 ## Step 1: Device enrollment dependencies
 
