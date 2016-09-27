@@ -94,30 +94,30 @@ Perform the following steps to install the Intune on-premises Exchange Connector
 
   For a hosted Exchange server, provide the Exchange server address. To find the hosted Exchange server URL:
 
-      1.  Open the Outlook Web App for Office 365.
+    1. Open the Outlook Web App for Office 365.
 
-      2.  Choose the **?** icon at the upper left, and then select **About**.
+    2. Choose the **?** icon at the upper left, and then select **About**.
 
-      3.  Locate the **POP External Server** value.
+    3. Locate the **POP External Server** value.
 
-      4.  Choose **Proxy Server** to specify proxy server settings for your hosted Exchange server.
-        1.  Select **Use a proxy server when synchronizing mobile device information**.
+    4. Choose **Proxy Server** to specify proxy server settings for your hosted Exchange server.
+        1. Select **Use a proxy server when synchronizing mobile device information**.
 
-        2.  Enter the **proxy server name** and the **port number** to be used to access the server.
+        2. Enter the **proxy server name** and the **port number** to be used to access the server.
 
-        3.  If it's necessary to provide user credentials to access the proxy server, select **Use credentials to connect to the proxy server**. Then enter the **domain\user** and the **password**.
+        3. If it's necessary to provide user credentials to access the proxy server, select **Use credentials to connect to the proxy server**. Then enter the **domain\user** and the **password**.
 
-        4.  Choose **OK**.
+        4. Choose **OK**.
 
-5.  In the **User (Domain\user)** and **Password** fields, enter the credentials that are necessary to connect to your Exchange server.
+    5. In the **User (Domain\user)** and **Password** fields, enter the credentials that are necessary to connect to your Exchange server.
 
-6.  Provide the necessary administrative credentials to send notifications to a user’s Exchange Server mailbox. You can configure these notifications with Conditional Access policies in Intune.
+    6.  Provide the necessary administrative credentials to send notifications to a user’s Exchange Server mailbox. You can configure these notifications with Conditional Access policies in Intune.
 
-    Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
+        Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
-7.  In the **Password** field, provide the password for this account to enable Intune to access the Exchange Server.
+    7.  In the **Password** field, provide the password for this account to enable Intune to access the Exchange Server.
 
-8. Choose **Connect**.
+    8. Choose **Connect**.
 
 It might take a few minutes for the connection to be configured.
 
