@@ -34,7 +34,7 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](https://g
 
 
 
-## Step 1 Fulfill the prerequisites for using the app wrapping tool
+## Step 1. Fulfill the prerequisites for using the app wrapping tool
 Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to learn more about pre-requisites and how to set them.
 
 |Requirement|More information|
@@ -45,7 +45,7 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
 |Apps the wrapping tool cannot process|Encrypted apps, unsigned apps, and apps with extended file attributes.|
 |Setting entitlements for your app|You must set entitlements, which give the app additional permissions and capabilities beyond those typically granted, before you wrap the app. See [Setting app entitlements](#setting-app-entitlements) for instructions.|
 
-## Step 2 Install the app wrapping tool
+## Step 2. Install the app wrapping tool
 
 1.  From the **Microsoft Intune App Wrapping Tool for iOS** [repository hosted on GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), download the files for the app wrapping tool locally to a mac OS computer.
 
@@ -55,7 +55,7 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
 
 4.  Open the **IntuneMAMPackager** package and save the files to a local folder on your macOS computer. You are now ready to run the app wrapping tool.
 
-## Step 3 Run the app wrapping tool
+## Step 3. Run the app wrapping tool
 * On your macOS computer, open a Terminal window and navigate to the folder where you saved the app wrapping tool files. The executable tool is named **IntuneMAMPackager** and is located in **IntuneMAMPackager/Contents/MacOS**. You'll need to run the command as follows:
 
 	```
