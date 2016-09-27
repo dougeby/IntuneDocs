@@ -32,7 +32,7 @@ Based on your feedback to have one grouping and targeting experience across Ente
 Beginning in November, existing Intune customers will be migrated to the new Azure AD based group management experience. Intune user and device groups will be migrated to Azure AD security groups. We won’t start migrations until we can minimize any impact to your day-to-day work and expect no end-user impact. We will also provide you a notice prior to your account’s migration.
 
 ### How and when will I migrate to the new groups experience?
-Current customers will be migrated over a period of time. We’re finalizing the schedule for that migration and will update this topic in a few weeks to provide more details. You will get a notice before you are migrated. If you have any migration concerns, please contact our migration team at [intunegrps@microsoft.com](intunegrps@microsoft.com).
+Current customers will be migrated over a period of time. We’re finalizing the schedule for that migration and will update this topic in a few weeks to provide more details. You will get a notice before you are migrated. If you have any migration concerns, please contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 ### What new features will be available to me?
 Here is the new functionality being introduced: 
@@ -49,7 +49,7 @@ Though the group experience will improve, there will be some Intune functionalit
 
 #### Group management functionality
 
--	You will not be able to exclude members or groups when you create a new group. However, Azure AD dynamic groups will allow you to use attributes to create advanced rules to exclude members based on criteria. For example, you could create an advanced rule that includes all people in your Sales department in a security group, but not those who have the word "Assistant" in their title, with this advanced rule : `•(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`. For more information see [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+-	You will not be able to exclude members or groups when you create a new group. However, Azure AD dynamic groups will allow you to use attributes to create advanced rules to exclude members based on criteria. For example, you could create an advanced rule that includes all people in your Sales department in a security group, but not those who have the word "Assistant" in their title, with this advanced rule : `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`. For more information see [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 -	There won’t be support for **Ungrouped Users** and **Ungrouped Devices** groups. Those groups won't be migrated.
 
 #### Group dependent functionality
@@ -100,7 +100,7 @@ Attributes are device properties that may be used in defining groups. This table
 |Organizational Unit (OU) attribute for device groups|OU attribute for dynamic groups. Attribute values made available to the admin pertaining to each tenant by adding it as one of the tenant components for viewing.|
 |Domain name attribute for device groups|Domain Name attribute for dynamic groups. Attribute values made available to the admin pertaining to each tenant by adding it as one of the tenant components for viewing|
 |Security group as an attribute for user groups|Groups cannot be attributes in Azure AD dynamic queries. Dynamic groups can only contain user or device specific attributes.|
-|Manager attribute for user groups|Advanced Rule for ‘manager’ attribute in dynamic groups|
+|Manager attribute for user groups|Advanced Rule for *manager* attribute in dynamic groups|
 |All users from the parent user group|Static group with that group as a member|
 |All mobile devices from the parent device group|Static group with that group as a member|
 |All mobile devices managed by Microsoft Intune Direct Management|Management Type attribute with ‘MDM’ as value for dynamic group|
