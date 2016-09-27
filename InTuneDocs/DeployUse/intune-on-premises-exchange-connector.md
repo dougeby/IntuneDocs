@@ -79,14 +79,14 @@ You must create an Active Directory user account that is used by the Intune Exch
 ## Install and configure the Intune on-premises Exchange Connector
 Perform the following steps to install the Intune on-premises Exchange Connector. The on-premises Exchange Connector can only be installed once per Intune subscription, and only on one computer. If you try to configure an additional on-premises Exchange Connector, the new connection will replace the original one.
 
-1.  On a supported operating system for the on-premises Connector, extract the files in **Exchange_Connector_Setup.zip** to a secure location.s
+1.  On a supported operating system for the on-premises Connector, extract the files in **Exchange_Connector_Setup.zip** to a secure location.
 
 2.  After the files are extracted, open the extracted folder and double-click **Exchange_Connector_Setup.exe** to install the on-premises Exchange Connector.
 
     > [!IMPORTANT]
     > If the destination folder is not a secure location, you should delete the certificate file **WindowsIntune.accountcert** after you install the on-premises Connector.
 
-3.  In the **Exchange server** field, select either **On-premises Microsoft Exchange Server** or **Hosted Microsoft Exchange Server**.
+3.  In the **Microsoft Intune Exchange Connector** dialog box, select either **On-premises Microsoft Exchange Server** or **Hosted Microsoft Exchange Server**.
 
   ![Choose your Exchange Server type](../media/IntuneSA1dconfigureExchConnector.png)
 
@@ -109,9 +109,9 @@ Perform the following steps to install the Intune on-premises Exchange Connector
 
         4.  Choose **OK**.
 
-5.  Provide  **User (Domain\user)** and **Password** credentials that are necessary to connect to your Exchange server.
+5.  In the **User (Domain\user)** and **Password** fields, enter the credentials that are necessary to connect to your Exchange server.
 
-6.  Provide the necessary administrative credentials to send notifications to a user’s Exchange Server mailbox. These notifications are configurable via Conditional Access policies using Intune.
+6.  Provide the necessary administrative credentials to send notifications to a user’s Exchange Server mailbox. You can configure these notifications with Conditional Access policies in Intune.
 
     Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
