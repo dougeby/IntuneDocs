@@ -6,7 +6,7 @@ description: Find out what’s new in this month’s, and past releases of Micro
 keywords:
 author: barlanmsft
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 09/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,6 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
 # What's new in Microsoft Intune -- September
 Learn what’s new in this release of Microsoft Intune. You can also find out about upcoming changes that you should be planning for, as well as information about past releases.
 
@@ -34,6 +33,19 @@ All of these features will eventually be supported for hybrid customers' deploym
 >[!IMPORTANT]
 >Blog post - Ensuring mobile devices are up to date using Microsoft Intune<br>
 >In light of the recent "Trident" malware attacks on iOS devices, we've published a new blog post, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) to help you learn about the different ways that Intune can help keep your devices secure and up to date.
+
+## New features, announcements and information
+* [Windows conditional access](#windows-conditional-access)
+* [iOS 10 support](#ios-10-support)
+* [App Wrapping Tool supports MAM without device enrollment for Android and iOS](#app-wrapping-tool-supports-mam-without-device-enrollment-for-android-and-ios)
+* [Intune groups begin transitioning to Azure Active Directory in September](#intune-groups-begin-transitioning-to-azure-active-directory-in-september)
+* [Lookout integration to protect Android devices](#lookout-integration-to-protect-android-devices)
+* [Company Portal updates for Android, iOS and Windows](#company-portal-updates)
+* [Intune glossary](#intune-glossary)
+* [What's coming](#whats-coming)
+
+## Windows conditional access
+You can now create conditional access policies through the Intune admin console to block Windows PCs from accessing Exchange Online and SharePoint Online. You can also create conditional access policies to block access to Office desktop and universal applications. 
 
 ## iOS 10 support
 Existing Intune MDM and MAM scenarios are compatible with iOS 10. For tips, refer to the [Intune Support Team Blog](https://blogs.technet.microsoft.com/intunesupport/2016/09/13/support-tip-intune-support-for-ios-10/).
@@ -107,6 +119,10 @@ If you have configured a web clip to open only in the managed browser, and the m
 The Windows Phone 8.1 Company Portal app enables end users to send feedback about the app by using a new "send feedback" button. To find the button, users tap the “three dots” menu at the bottom right of the Company Portal app screen and then tap **send feedback**. The collected, anonymized feedback will help Microsoft improve the Company Portal app experience for users.
 <!---TFS 1317806--->
 
+## Intune glossary</br>
+We’ve added a new [glossary topic](https://docs.microsoft.com/intune/understand-explore/intune-glossary) to the library to help you understand some of the terms used in the Intune product.
+
+----------
 
 ## What's coming
 
@@ -131,21 +147,12 @@ In addition to changes in group management, **the following functionality will b
 You will be able to restrict access to Exchange Online and SharePoint Online so that access can come only from Office mobile apps such as Outlook, Word, Excel, and OneDrive. This new feature pairs up perfectly with Intune mobile app management (MAM) policies as you can block access to built-in mail clients or other apps that have not been configured with the Intune MAM policies. This ensures your users are accessing your organization’s data with apps that can be protected using Intune MAM. You can get started in Intune mobile app management via the Azure portal. Look for the new Conditional Access section in the “Settings” blade.
 
 
-
 ### Service deprecation
 
 - **Company Portal apps for Windows 8 and Windows Phone 8 are being deprecated** <br/>
 Starting in October 2016, Microsoft Intune will deprecate support for Windows 8 and Windows Phone 8 Company Portal apps. Microsoft Intune will also deprecate support for the Windows Phone 8 platform. As a consequence, you will not be able to enroll or update any Windows Phone 8 devices. You can continue to manage Windows Phone 8 and Windows 8 devices that are already enrolled. Update Windows Phone 8 and Windows 8 devices to Windows 8.1 and Windows Phone 8.1, and use the corresponding Windows 8.1 and Windows Phone 8.1 Company Portal apps to continue distributing apps to these devices without disruptions.
 
-
-
-### Cloud roadmap
-Keep informed about upcoming developments for Intune with the [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune).
-
-
-## Previous Intune releases
-If you want to see what's released in Intune during the last six months, they are listed in the [Previous Intune releases](previous-intune-releases.md) article.
-
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Previous Intune releases](previous-intune-releases.md)
