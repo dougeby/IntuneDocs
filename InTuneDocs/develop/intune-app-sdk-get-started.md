@@ -33,17 +33,13 @@ This guide walks through the major steps needed to enable mobile app management 
 
 # Getting Started
 
-## Register for Microsoft Connect
+## Register your store app with Microsoft
 
-The Intune App SDK is currently accessible via Microsoft Connect and requires sign up. To do so, register for a [Microsoft Account](https://connect.microsoft.com/ConfigurationManagervnext/InvitationUse.aspx?ProgramID=8967&InvitationID=8967-YJYJ-8G6X) using your corporate e-mail.
+###If your app is internal to your company and will not be made available to a public app store:
+You **do not need** to register your app. For internal line-of-business apps, the IT administrator will deploy the app internally using Microsoft Intune. Intune will detect the app has been built with the SDK, and will allow the IT administrator to apply MAM policy settings to it. You can skip to the section [Enable your iOS or Android mobile app for MAM with the SDK](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk).
 
-Your registration will be in pending status until the Intune team reviews your request. The typical response time is within 2 - 3 business days. Once approved, you will receive an email notification with the link(s) to download the Intune App SDK for your platform(s) and all related guides. You may also access these guides on the MSDN site.
-
-## Register your store app with Microsoft Intune
-
-**If your enabled app is internal to your company and will not be made available in the Apple or Google app store**: You do not need to register your app. For such internal apps, the IT administrator will load them directly into the Microsoft Intune console for deployment, Intune will detect that the app has been built with the SDK, and will present the IT administrator with the option of applying MAM policy to it. You can skip to the section titled [Enable your iOS or Android mobile app for MAM with the SDK](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk).
-
-**If you are an ISV developing an app that will be made available to customers through either Apple or Google app stores**: You must first register your app with Microsoft Intune and agree to the registration terms. You can supply the app’s deep link at this time. Afterward an IT administrator can apply Intune MAM policy to the app. Until registration has been complete and confirmed by the Microsoft Intune team, your app deep link will not be given the option to apply MAM policy in the admin console. Microsoft also maintains a Microsoft Intune Partners web site where the app will be registered so that customers will know that it supports Microsoft Intune MAM policy.
+###If your app will be released to a public app store, such as the Apple App Store or Google Play: 
+You **must** first register your app with Microsoft Intune and agree to the registration terms. After registering, IT administrators can apply Intune MAM policy settings to the enlightened app, which will be listed as an Intune app partner. Until registration has been complete and confirmed by the Microsoft Intune team, Intune administrators will not have the option to apply MAM policy to your app's deep link. Microsoft will also add your app to its [Microsoft Intune Partners page](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners), where the app's icon will be displayed to show that it supports Microsoft Intune MAM policy.
 
 To begin the registration process, **review and sign** the [Microsoft Intune Partner Agreement](https://connect.microsoft.com/ConfigurationManagervnext/Survey/Survey.aspx?SurveyID=17806). This agreement describes the terms your company must accept before becoming a Microsoft Intune app partner. You will need to sign in before you can view this document. You can find the agreement in the Intune App SDK Microsoft Connect site under the Surveys tab or located here. We will also ask you to provide the name of the app, your company’s name, as well as the Google or iTunes store deep link to your app.
 
@@ -55,30 +51,47 @@ We will use your registration email address to confirm and complete receipt of t
 
 **Note**: All information collected in the form above and through e-mail correspondence with the Intune team will honor the [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacystatement/default.aspx).
 
+## Download the SDK files
+
+The Intune App SDKs for iOS and Android are hosted on a Microsoft GitHub account. The public repositories below contain the SDK files for iOS and Android, respectively:
+
+* [Intune App SDK for iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
+* [Intune App SDK for Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
+
+We recommend signing up for a GitHub account you can use to fork and pull from our repositories. GitHub allows developers to communicate with our product team, open issues and receive quick responses, view release notes, and provide feedback to Microsoft. For questions on the GitHub account and repositories, contact msintuneappsdk@microsoft.com.
+
 ## Enable your iOS or Android mobile app for MAM with the SDK
 
-To enable your iOS mobile app, you will need the following:
+To integrate the Intune App SDK into your iOS app, you will need the following: 
 
-1. **[Intune App SDK for iOS Developer Guide](intune-app-sdk-ios.md)**: this document will walk you step-by-step through enabling your mobile iOS app with the Intune App SDK. You can find this document in the documentation folder that you have downloaded as part of the Intune App SDK package.
-2. **Intune App SDK for iOS**: as part of the Intune App SDK package downloaded from Microsoft Intune, you will find a signed folder “Intune App SDK for iOS.” This folder has all the Intune App SDK for iOS content.
+* **[Intune App SDK for iOS Developer Guide](intune-app-sdk-ios.md)**: this document will walk you step-by-step through enabling your mobile iOS app with the Intune App SDK. 
 
-To enable your android mobile app with Intune App SDK, you will need the following:
 
-1. **[Intune App SDK for Android Developer Guide](intune-app-sdk-android.md)**: This document will walk you step-by-step through enabling your mobile android app with Intune App SDK. You can find this document in the documentation folder that you have downloaded as part of the Intune App SDK package.
-2. **Intune App SDK for Android**: As part of the Intune App SDK package downloaded from Microsoft Intune, you will find a signed folder “Intune App SDK for Android.” This folder has all the Intune App SDK for android content.
+To integrate the Intune App SDK into your Android app, you will need the following:
 
-## Turning off Telemetry for your app
+* **[Intune App SDK for Android Developer Guide](intune-app-sdk-android.md)**: This document will walk you step-by-step through enabling your mobile android app with Intune App SDK. 
 
-**Intune App SDK for iOS**: The SDK logs SDK telemetry data on usage events by default. This data is sent to Microsoft Intune.
 
-If you choose not to send SDK telemetry data to Microsoft Intune from your application, you **must disable** SDK telemetry transmission by setting the property `MAMTelemetryDisabled` to ‘YES’ in the `IntuneMAMSettings`.
 
-**Intune App SDK for Android**: SDK telemetry data is not logged through the SDK.
+## Configuring Telemetry for your app
+
+Microsoft Intune collects data on usage statistics for your app.
+
+* **Intune App SDK for iOS**: The SDK logs SDK telemetry data on usage events by default. This data is sent to Microsoft Intune.
+
+	* If you choose not to send SDK telemetry data to Microsoft Intune from your app, you **must disable** SDK telemetry transmission by setting the property `MAMTelemetryDisabled` to "YES" in the `IntuneMAMSettings`.
+
+* **Intune App SDK for Android**: SDK telemetry data is not logged through the SDK.
 
 ## Test your MAM enabled app with Microsoft Intune
 
-Once you’ve completed the necessary steps to enlighten (integrate the Intune App SDK) your iOS or Android Intune App SDK, you will need to ensure that all the app management policies are enabled and functioning for the end user and the IT administrator. To test your enlightened app, you will need the following:
+Once you’ve completed the necessary steps to integrate your iOS or Android app with the Intune App SDK, you will need to ensure that all the app management policies are enabled and functioning for the end user and the IT administrator. To test your integrated app, you will need the following:
 
-1. **Testing your MAM enabled app with Microsoft Intune**: This document will walk you through step-by-step how to test your MAM-enabled iOS or android apps with Microsoft Intune. You can find this document in the documentation folder that you have downloaded as part of the Intune App SDK package.
-2. **Microsoft Intune Account**: To test your MAM enabled apps with Microsoft Intune, you will need a Microsoft Intune account. If you are an ISV enabling your iOS or android store apps for MAM, you will receive a promo code once you complete the registration with Microsoft Intune as outlined in the registration step. The promo code will allow you to sign up for a Microsoft Intune trial for 1 year of extended use. If you are developing a line of business app that will not be shipped to the store, you are expected to have access for Microsoft Intune through your organization. You can also sign up for 1-month free trial in with [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
+<!--TODO-->
+
+1. **Testing your MAM enabled app with Microsoft Intune**: This document will walk you through step-by-step how to test your MAM-enabled iOS or Android apps with Microsoft Intune. You can find this document in the GitHub repositories of the SDKs.
+
+2. **Microsoft Intune Account**: To test your MAM enabled apps with Microsoft Intune, you will need a Microsoft Intune account. 
+	* If you are an ISV enabling your iOS or Android store apps for Intune MAM, you will receive a promo code once you complete the registration with Microsoft Intune as outlined in the registration step. The promo code will allow you to sign up for a Microsoft Intune trial for 1 year of extended use. 
+	* If you are developing a line of business app that will not be shipped to the store, you are expected to have access for Microsoft Intune through your organization. You can also sign up for 1-month free trial in with [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
 

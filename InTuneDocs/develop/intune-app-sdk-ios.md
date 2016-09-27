@@ -1,30 +1,3 @@
----
-# required metadata
-
-title: Microsoft Intune App SDK for iOS Developer Guide | Microsoft Intune
-description:
-keywords:
-author: Msmbaldwin
-manager: jeffgilb
-ms.date: 09/08/2016
-ms.topic: article
-ms.prod:
-ms.service: microsoft-intune
-ms.technology:
-ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
-ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
-
----
-
 
 # Microsoft Intune App SDK for iOS Developer Guide
 
@@ -60,16 +33,15 @@ Complete the steps below to enable the Intune App SDK:
 
 1. **Option 1**: Link to the `libIntuneMAM.a` library by doing the following:
 
-    Drag and drop the `libIntuneMAM.a` library to the “Linked Frameworks and Libraries” list of the project target.  
-
+    Drag and drop the `libIntuneMAM.a` library to the “Linked Frameworks and Libraries” list of the project target.
     ![Intune App SDK iOS - linked frameworks and libraries](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
 
-     **Note**: If you plan to release your app to the App Store, please use the version of `libIntuneMAM.a` that is built for release and not the debug version. The release version will be in the “release” folder. The debug version has verbose output which helps troubleshoot issues with the Intune App SDK.
+	 **Note**: If you plan to release your app to the App Store, please use the version of `libIntuneMAM.a` that is built for release and not the debug version. The release version will be in the “release” folder. The debug version has verbose output which helps troubleshoot issues with the Intune App SDK.
 
-    **Option 2**: Link the `IntuneMAM.framework` to your project. Drag and drop `IntuneMAM.framework` to the "Linked Frameworks and Libraries" list of the project target.
+	**Option 2**: Link the `IntuneMAM.framework` to your project. Drag and drop `IntuneMAM.framework` to the "Linked Frameworks and Libraries" list of the project target.
 
-    **Note**: If you use the framework, you must manually strip out the simulator architectures from the universal framework before submitting your app to the App Store. See the section called "Submitting your app to the App Store."
+	**Note**: If you use the framework, you must manually strip out the simulator architectures from the universal framework before submitting your app to the App Store. See the section called "Submitting your app to the App Store."
 
 2. Add the following iOS frameworks to the project:
     * `MessageUI.framework`
@@ -108,12 +80,12 @@ Complete the steps below to enable the Intune App SDK:
 6. Enable keychain sharing (if not already enabled) by clicking "Capabilities" in each project target and enabling the "Keychain Sharing" switch. Keychain sharing is required to proceed to the next step.
 
     **Note**: Your provisioning profile needs to support new keychain sharing values. The keychain access groups should support a wildcard character. You can verify this by opening the `.mobileprovision` file in a text editor, searching for 'keychain-access-groups' and ensuring  you have a wild card, e.g.: 
-    ```
-    <key>keychain-access-groups</key>
-    <array>
-    <string>YOURBUNDLESEEDID.*</string>
-    </array>
-    ```
+	```
+	<key>keychain-access-groups</key>
+	<array>
+	<string>YOURBUNDLESEEDID.*</string>
+	</array>
+	```
 7. After enabling keychain sharing, follow these steps to create a separate access group in which the Intune App SDK data will be stored. You can create a keychain access group by using the UI or by using the entitlements file:
 
     Using the UI to create a keychain access group: 
@@ -122,13 +94,13 @@ Complete the steps below to enable the Intune App SDK:
     * Add the shared keychain group `com.microsoft.intune.mam`. This access group is used by the Intune App SDK to store data.  
     * Add `com.microsoft.adalcache` to your existing access groups. 
 
-    ![Intune App SDK iOS - keychain sharing](../media/intune-app-sdk-ios-keychain-sharing.png) 
+	![Intune App SDK iOS - keychain sharing](../media/intune-app-sdk-ios-keychain-sharing.png) 
 
     If you are using the entitlement file to create the keychain access group, rather than the regular UI, you will need to prepend the key chain access group with `$(AppIdentifierPrefix)` in the entitlement file. For example:  
     - `$(AppIdentifierPrefix)com.microsoft.intune.mam` and 
-    - `$(AppIdentifierPrefix)com.microsoft.adalcache`.
+	- `$(AppIdentifierPrefix)com.microsoft.adalcache`.
 
-    **Note**: An entitlements file is an XML file unique to your mobile application that is used to specify special permissions and capabilities within your iOS app.
+	**Note**: An entitlements file is an XML file unique to your mobile application that is used to specify special permissions and capabilities within your iOS app.
 
 8. If the app defines URL schemes in its `Info.plist` file, add another scheme, with a `-intunemam` suffix, for each URL scheme.
 
@@ -155,21 +127,21 @@ Typically, ADAL requires apps to register and obtain a unique ID, known as `Clie
 If the app itself uses ADAL for its authentication scenario, the app must use its existing registration values and override the Intune App SDK default values to ensure that end users are not prompted for authentication twice (once by the Intune App SDK and once by the app). 
 
 
-1.  **What ADAL binaries should I use?** 
+1.	**What ADAL binaries should I use?** 
 The Intune App SDK currently uses the broker branch of [ADAL on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc) in order to support apps that require Conditional Access (apps that, therefore, depend on the Microsoft Authenticator app). However, the SDK is still compatible with the master branch of ADAL. Please use the branch that is appropriate for your app.
 
-2.  **How do I link to ADAL binaries?**
+2.	**How do I link to ADAL binaries?**
 Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` build configuration setting or “Other Linker Flags” in the UI. `PATH_TO_LIB` should be replaced with the ADAL binaries location. Also, make sure to copy the ADAL bundle to your app.  
 
-    For more detail, see the instructions from [ADAL on Github](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
+	For more detail, see the instructions from [ADAL on Github](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
-3.  **How do I share ADAL cache with other apps signed with the same provisioning profile?**
+3.	**How do I share ADAL cache with other apps signed with the same provisioning profile?**
 If your app does not have any keychain access groups defined, add the app’s bundle id as the first group.
 Enable ADAL SSO by adding `com.microsoft.adalcache` and `com.microsoft.workplacejoin` access groups in the keychain entitlements. 
 
-    In case you are explicitly setting the ADAL shared cache keychain group, make sure it is set to `<app_id_prefix>.com.microsoft.adalcache`. ADAL will set this for you unless you override it. If you want to specifiy a custom keychain group to replace `com.microsoft.adalcache`, please specify that in the `Info.plist` under "IntuneMAMSettings," using the key `ADALCacheKeychainGroupOverride`.
+	In case you are explicitly setting the ADAL shared cache keychain group, make sure it is set to `<app_id_prefix>.com.microsoft.adalcache`. ADAL will set this for you unless you override it. If you want to specifiy a custom keychain group to replace `com.microsoft.adalcache`, please specify that in the `Info.plist` under "IntuneMAMSettings," using the key `ADALCacheKeychainGroupOverride`.
 
-4.  **How do I force the Intune App SDK to use ADAL settings that my app already uses?** 
+4.	**How do I force the Intune App SDK to use ADAL settings that my app already uses?** 
 If your app already uses ADAL, see the section on `IntuneMAMSettings` below for information on populating the settings below:  
 
 - `ADALClientId`
@@ -177,30 +149,30 @@ If your app already uses ADAL, see the section on `IntuneMAMSettings` below for 
 - `ADALRedirectScheme` 
 - `ADALCacheKeychainGroupOverride` 
 
-5.  **How do I switch between AAD production and internal test environments?**
+5.	**How do I switch between AAD production and internal test environments?**
 The following settings in `MAMPolicies.plist` can be used to override the AAD environment used for ADAL calls. It’s currently set to use AAD Pre-production Environment (PPE) by default unless overridden by the following settings:
 - `AadAuthorityURI`
 
-    Alternatively, to test against PPE, you can use a compile-time or runtime switch. 
+	Alternatively, to test against PPE, you can use a compile-time or runtime switch. 
 
-    For a compile-time environment switch of MAM service URLs and AAD, set the `UsePPE` Boolean flag set  `true` in `MAMEnvironment.plist` (**note**: there is no support for doing this via `Info.plist`). 
+	For a compile-time environment switch of MAM service URLs and AAD, set the `UsePPE` Boolean flag set  `true` in `MAMEnvironment.plist` (**note**: there is no support for doing this via `Info.plist`). 
 
-    For a run-time environment switch, set `com.microsoft.intune.mam.useppe` in standard user defaults to “1” to use PPE. This replaces the existing `com.microsoft.intune.mam.AADAuthorityEnvironment` setting. 
+	For a run-time environment switch, set `com.microsoft.intune.mam.useppe` in standard user defaults to “1” to use PPE. This replaces the existing `com.microsoft.intune.mam.AADAuthorityEnvironment` setting. 
 
-6.  **How do I override the AAD authority URL with a tenant-specific URL supplied at runtime?** 
+6.	**How do I override the AAD authority URL with a tenant-specific URL supplied at runtime?** 
 Set the `aadAuthorityUriOverride` property on IntuneMAMPolicyManager instance.
 
-    **Note**: You would need this in the MAM without device enrollment scenario to allow the SDK to reuse the ADAL refresh token fetched by the app.
+	**Note**: You would need this in the MAM without device enrollment scenario to allow the SDK to reuse the ADAL refresh token fetched by the app.
 
-    **Note:** The SDK will continue to use this authority URL for policy refresh and any subsequent enrollment requests unless the value is cleared or changed.  Therefore, it is important to clear the value when a corporate user signs out of the app and reset it when a new corporate user signs back in.
+	**Note:** The SDK will continue to use this authority URL for policy refresh and any subsequent enrollment requests unless the value is cleared or changed.  Therefore, it is important to clear the value when a corporate user signs out of the app and reset it when a new corporate user signs back in.
 
 
 7. **What should I do if my app itself utilizes ADAL for authentication?**
 The steps below are required if the app already utilizes ADAL for authentication. If your app does not rely on ADAL, you should review the section on how to register with Intune service if your app does not use ADAL.
 
-    i. In the project’s `Info.plist`, under the `IntuneMAMSettings` dictionary with the key name `ADALClientId`, specify the `ClientID` to be used for ADAL calls. 
+	i. In the project’s `Info.plist`, under the `IntuneMAMSettings` dictionary with the key name `ADALClientId`, specify the `ClientID` to be used for ADAL calls. 
 
-    ii. In the project’s `Info.plist`, under the `IntuneMAMSettings` dictionary with the key name `ADALRedirectUri`, specify the Redirect URI to be used for ADAL calls. You may also need to specify the `ADALRedirectScheme` depending on the format of your app’s Redirect URI.
+	ii. In the project’s `Info.plist`, under the `IntuneMAMSettings` dictionary with the key name `ADALRedirectUri`, specify the Redirect URI to be used for ADAL calls. You may also need to specify the `ADALRedirectScheme` depending on the format of your app’s Redirect URI.
 
 
 
@@ -213,9 +185,9 @@ The Intune App SDK now provides the ability for iOS apps to receive MAM policies
 
 3. To test against PPE, you can include use a compile-time or runtime switch. 
 
-    For a compile-time environment switch of MAM service URLs and AAD, set the `UsePPE` Boolean flag set  `true` in `MAMEnvironment.plist` (**note**: there is no support for doing this via `Info.plist`). 
+	For a compile-time environment switch of MAM service URLs and AAD, set the `UsePPE` Boolean flag set  `true` in `MAMEnvironment.plist` (**note**: there is no support for doing this via `Info.plist`). 
 
-    For a run-time environment switch, set `com.microsoft.intune.mam.useppe` in standard user defaults to “1” to use PPE. This replaces the existing `com.microsoft.intune.mam.AADAuthorityEnvironment` setting. 
+	For a run-time environment switch, set `com.microsoft.intune.mam.useppe` in standard user defaults to “1” to use PPE. This replaces the existing `com.microsoft.intune.mam.AADAuthorityEnvironment` setting. 
 
 
 ###Registering Accounts 
@@ -622,14 +594,12 @@ If your app uses the **framework build** of the Intune App SDK, you must manuall
 
 1. Make sure `IntuneMAM.framework` is on your Desktop.
 2. Run the following commands:
-    
-    ```
-    lipo ~/Desktop/IntuneMAM.framework/IntuneMAM -remove i386 -remove x86_64 -output ~/Desktop/IntuneMAM.device_only
-    ```
-    The first command strips the simulator architectures from the framework's dylib.
-    ```
-    cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM 
-    ```
-    The second command copies the device-only dylib back into the framework directory.
-
-
+	
+	```
+	lipo ~/Desktop/IntuneMAM.framework/IntuneMAM -remove i386 -remove x86_64 -output ~/Desktop/IntuneMAM.device_only
+	```
+	The first command strips the simulator architectures from the framework's dylib.
+	```
+	cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM 
+	```
+	The second command copies the device-only dylib back into the framework directory.
