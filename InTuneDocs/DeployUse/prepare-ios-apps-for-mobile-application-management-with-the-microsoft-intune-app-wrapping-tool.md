@@ -34,7 +34,7 @@ To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](https://g
 
 
 
-## Step 1 Fulfill the prerequisites for using the app wrapping tool
+## Step 1. Fulfill the prerequisites for using the app wrapping tool
 Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to learn more about pre-requisites and how to set them.
 
 |Requirement|More information|
@@ -45,17 +45,17 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
 |Apps the wrapping tool cannot process|Encrypted apps, unsigned apps, and apps with extended file attributes.|
 |Setting entitlements for your app|You must set entitlements, which give the app additional permissions and capabilities beyond those typically granted, before you wrap the app. See [Setting app entitlements](#setting-app-entitlements) for instructions.|
 
-## Step 2 Install the app wrapping tool
+## Step 2. Install the app wrapping tool
 
 1.  From the **Microsoft Intune App Wrapping Tool for iOS** [repository hosted on GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), download the files for the app wrapping tool locally to a mac OS computer.
 
-2.  You must read the license.txt file which explains the End User License Agreement.
+2.  Double-click the installation file **Microsoft Intune App Wrapping Tool for iOS.dmg**. A window with the End User License Agreement (EULA) will appear. Read the document carefully.
 
-3.  Save the files locally to your macOS computer.
+3. Choose **Agree** to accept EULA, which mounts the package to your computer.
 
-    You are now ready to run the app wrapping tool.
+4.  Open the **IntuneMAMPackager** package and save the files to a local folder on your macOS computer. You are now ready to run the app wrapping tool.
 
-## Step 3 Run the app wrapping tool
+## Step 3. Run the app wrapping tool
 * On your macOS computer, open a Terminal window and navigate to the folder where you saved the app wrapping tool files. The executable tool is named **IntuneMAMPackager** and is located in **IntuneMAMPackager/Contents/MacOS**. You'll need to run the command as follows:
 
 	```
@@ -69,26 +69,26 @@ Read [this blog post](http://social.technet.microsoft.com/wiki/contents/articles
     **Example:** The following example command runs the app wrapping tool on an app named **MyApp.ipa**. A provisioning profile and SHA-1 hash are specified. The processed app is created, named **MyApp_Wrapped.ipa**, and stored on the user's Desktop folder.
 
     ```
-    ./IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
     ```
     You can use the following command line properties with the app wrapping tool:
 
 	|Property|How to use it|
   |------------|--------------------|
-  |**-h**|Displays detailed usage information on the available command-line properties for the app wrapping tool.|
   |**-i**|`<Path of the input native iOS application file>`. The file must end in .app or .ipa. |
   |**-o**|`<Path of the wrapped output application>` |
   |**-p**|`<Path of your provisioning profile for iOS apps>`|
   |**-c**|`<SHA1 hash of the signing certificate>`|
+    |-h|Displays detailed usage information on the available command-line properties for the app wrapping tool.|
   |-v|(Optional but helpful) Outputs verbose messages to the console.|
   |-e | (Optional) Use this flag to have the app wrapping tool remove missing entitlements as it processes the app. See the "Setting app entitlements" section for more details.|
   |-xe| (Optional) Prints information about the iOS extensions in the app, and what entitlements are required to use them. See the "Setting app entitlements" section for more details. |
   |-x| (Optional) `<An array of paths to extension provisioning profiles>`. Use this if your app needs extension provisioning profiles.|
-  |-f |(Optional) `<Path to a plist file specifying arguments.>` Use this flag in front of the [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file if you choose to use the plist template to specify the rest of the IntuneMAMPackager properties: -h, -i, -o, -p, etc. See the "Use a template to input arguments" section for more details. |
+  |-f |(Optional) `<Path to a plist file specifying arguments.>` Use this flag in front of the [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file if you choose to use the plist template to specify the rest of the IntuneMAMPackager properties: -i, -o, -p, etc. See the "Use a plist to input arguments" section for more details. |
   |-b|(Optional) Use -b without an argument if you want the wrapped output app to have the same bundle version as the input app (not recommended). <br/><br/> Use `-b <custom bundle version>` if you want the wrapped app to have a custom CFBundleVersion. If you choose to specify a custom CFBundleVersion, we recommend you increment the native app’s CFBundleVersion by the least significant component, eg. 1.0.0 -> 1.0.1. |
 
 
-###Use a template to input arguments
+###Use a plist to input arguments
 An easy way to run the App Wrapping Tool is to put all the command arguments into a [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file. Plist is a file format similar to XML we can use to input our command-line arguments using a form interface.
 
 In the **IntuneMAMPackager/Contents/MacOS** folder, open `Parameters.plist`, a blank plist template, with a text editor or Xcode. Enter your arguments for the following keys:
