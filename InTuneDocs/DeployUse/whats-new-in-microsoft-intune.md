@@ -120,7 +120,7 @@ The Windows Phone 8.1 Company Portal app enables end users to send feedback abou
 <!---TFS 1317806--->
 
 ## Intune glossary</br>
-We’ve added a new [glossary topic]( https://docs.microsoft.com/intune/understand-explore/intune-glossary) to the library to help you understand some of the terms used in the Intune product.
+We’ve added a new [glossary topic](https://docs.microsoft.com/intune/understand-explore/intune-glossary) to the library to help you understand some of the terms used in the Intune product.
 
 ----------
 
