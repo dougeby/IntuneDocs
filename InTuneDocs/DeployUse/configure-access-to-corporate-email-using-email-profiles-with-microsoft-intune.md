@@ -37,7 +37,7 @@ IT admins or users may also choose to install alternative email clients (for exa
 You can use email profiles to configure the native email client on the following device types:
 -	Windows Phone 8 and later
 -	Windows 10 (for the desktop), Windows 10 Mobile, and later
--	iOS 7.1 and later
+-	iOS 8.0 and later
 -	Samsung KNOX Standard (4.0 and later)
 
 In addition to setting up an email account on the device, you can set up how much email to synchronize, and depending on the device type, which content types to synchronize.
@@ -77,7 +77,7 @@ The password is not contained in the email profile, so the user needs to supply 
 
     -   **Email Profile for Samsung KNOX Standard (4.0 and later)**
 
-    -   **Email Profile (iOS 7.1 and later)**
+    -   **Email Profile (iOS 8.0 and later)**
 
     -   **Email Profile (Windows Phone 8 and later)**
 

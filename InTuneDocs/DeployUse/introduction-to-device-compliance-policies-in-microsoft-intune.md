@@ -35,12 +35,13 @@ You can use compliance policies with conditional access policies to only allow d
 You can also use compliance policies independently of conditional access. When used independently, the targeted devices are evaluated and reported with their compliance status. For example, you might want to report about how many devices are not encrypted, or which devices are jailbroken or rooted. However, when used independently, no access restrictions to company resources are in place.
 
 You deploy compliance policies to users. When a compliance policy is deployed to a user, the user's devices are checked for compliance.
+To learn about how long it takes for mobile devices to get a policy after they have been deployed, see [Manage settings and features on your devices](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies)
 
 The following table lists the device types supported by compliance policies and how noncompliant settings are managed when the policy is used with a conditional access policy.
 
---------------
+-----------------------------
 
-|Policy Setting| Windows 8.1 and later| Windows Phone 8.1 and later| iOS 6.0 and later|Android 4.0 and later<br/>Samsung KNOX Standard 4.0 and later|
+|Policy Setting| Windows 8.1 and later| Windows Phone 8.1 and later| iOS 8.0 and later|Android 4.0 and later<br/>Samsung KNOX Standard 4.0 and later|
 |-----|----|----|----|----|
 |**PIN or Password Configuration** |Remediated|Remediated|Remediated|Quarantined|
 |**Device encryption**|N/A|Remediated|Remediated (by setting PIN)|Quarantined|
@@ -49,7 +50,9 @@ The following table lists the device types supported by compliance policies and 
 |**Minimum OS version**|Quarantined|Quarantined|Quarantined|Quarantined|
 |**Maximum OS version**|Quarantined| Quarantined| Quarantined| Quarantined|
 |**Windows health attestation**|Windows 10 and Windows 10 Mobile are Quarantined.<br /><br />Setting is not applicable to Windows 8.1|N/A|N/A|N/A|
---------------
+
+------------------------------
+
 **Remediated** = Compliance is enforced by the device operating system (for example, the user is forced to set a PIN).  There is never a case when the setting is noncompliant.
 
 **Quarantined** = The device operating system does not enforce compliance (for example, Android devices do not force the user to encrypt the device). When the devices is not compliant, the following actions take place:

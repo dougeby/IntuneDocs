@@ -6,7 +6,7 @@ description: Create policies that control settings and features on iOS devices t
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/30/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,7 @@ Use the Microsoft Intune **iOS general configuration policy** to configure setti
 If the setting you are looking for does not appear in this topic, you might be able to create it by using an iOS custom policy that lets you import settings you created by using the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). For more information, see "Custom policy settings" later in this topic.
 
 ### Security settings
-All settings apply to iOS 7.1 and later.
+All settings apply to iOS 8.0 and later.
 
 |Setting name|Details|
 |----------------|-------|
@@ -64,7 +64,7 @@ All settings apply to iOS 7.1 and later.
 <sup>1</sup> For iOS devices, when you configure the settings **Minutes of inactivity before screen turns off** and **Minutes of inactivity before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.
 
 ### System settings
-All settings apply to iOS 7.1 and later.
+All settings apply to iOS 8.0 and later.
 
 |Setting name|Details|
 |----------------|-------|
@@ -77,7 +77,7 @@ All settings apply to iOS 7.1 and later.
 |**Allow passbook while locked**|Allow the user to access the Passbook app while the device is locked.|
 
 ### Cloud settings for documents and data
-All settings apply to iOS 7.1 and later.
+All settings apply to iOS 8.0 and later.
 
 |Setting name|Details|
 |----------------|-------|
@@ -91,7 +91,7 @@ All settings apply to iOS 7.1 and later.
 |**Allow iCloud Photo Library**|Allow the user to store photos on iCloud. If disabled, any photos already stored on iCloud will be removed.|
 
 ### Application settings for the browser
-All settings apply to iOS 7.1 and later.
+All settings apply to iOS 8.0 and later.
 
 |Setting name|Details|
 |----------------|-------|
@@ -103,7 +103,7 @@ All settings apply to iOS 7.1 and later.
 |**Allow fraud warning**|Allow fraud warnings in the browser.|
 
 ### Application settings for apps
-All settings apply to iOS 7.1 and later.
+All settings apply to iOS 8.0 and later.
 
 |Setting name|Details|
 |----------------|-------|
@@ -117,7 +117,7 @@ All settings apply to iOS 7.1 and later.
 
 
 ### Application settings for games
-All settings apply to iOS 7.1 and later.
+All settings apply to iOS 8.0 and later.
 
 |Setting name|Details|
 |----------------|-------|
@@ -125,7 +125,7 @@ All settings apply to iOS 7.1 and later.
 |**Allow multiplayer gaming**|Allow the user to play multiplayer games on the device.|
 
 ### Application settings for media content
-All settings apply to iOS 7.1 and later.
+All settings apply to iOS 8.0 and later.
 
 |Setting name|Details|
 |----------------|-------|
@@ -135,7 +135,7 @@ All settings apply to iOS 7.1 and later.
 
 
 ### Device capabilities settings for hardware
-All settings apply to iOS 7.1 and later.
+All settings apply to iOS 8.0 and later.
 
 |Setting name|Details|
 |----------------|-------|
@@ -144,7 +144,7 @@ All settings apply to iOS 7.1 and later.
 |**Require a pairing password for outgoing AirPlay requests**|Require a pairing password when the user uses AirPlay to stream content to other Apple devices.|
 
 ### Device capabilities settings for cellular
-All settings apply to iOS 7.1 and later.
+All settings apply to iOS 8.0 and later.
 
 |Setting name|Details|
 |----------------|-------|
@@ -153,7 +153,7 @@ All settings apply to iOS 7.1 and later.
 |**Allow global background fetch while roaming**|Allow the device to fetch data such as email while it is roaming on a cellular network.|
 
 ### Device capabilities settings for features
-All settings apply to iOS 7.1 and later.
+All settings apply to iOS 8.0 and later.
 
 |Setting name|Details|
 |----------------|-------|
@@ -202,7 +202,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 > [!NOTE]
 > The following notes apply to kiosk mode settings for iOS devices:
 >
-> -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or device enrollment manager to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
+> -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or the [Apple Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune) to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
 > -   If the iOS app that you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
 
 ### Reference information for compliant and noncompliant apps
@@ -228,14 +228,14 @@ To specify an app URL in the compliant and noncompliant apps list, or in the **S
 > You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.
 
 ### Enrollment settings
-All settings apply to iOS 7.1 and later.
+All settings apply to iOS 8.0 and later.
 
 |Setting name|Details|
 |----------------|--------------------|
 |**Allow Activation Lock when the device is in supervised mode**|Enable Activation Lock on supervised iOS devices.|
 
 ### Supervised mode settings
-You can configure the following settings on devices running iOS 7.1 and later that are in supervised mode.
+You can configure the following settings on devices running iOS 8.0 and later that are in supervised mode.
 
 ### Supervised mode settings for device restrictions
 
@@ -271,9 +271,9 @@ You can configure the following settings on devices running iOS 7.1 and later th
 
 |Setting name|Details|
 |----------------|--------------------|
-|**Allow enterprise app trust settings modification**||
-|**Allow installing apps using Apple Configuration and iTunes only**||
-|**Allow automatic app downloads**||
+|**Allow enterprise app trust settings modification**|Lets users change the trust settings for enterprise apps.|
+|**Allow installing apps using Apple Configuration and iTunes only**|Enables or disables the App Store from the device home screen. Users can still use iTunes, or the Apple Configurator tool to install and update apps.|
+|**Allow automatic app downloads**|Allow apps purchased on other devices to automatically download to this device. This setting does not affect app updates.|
 |**Allow changes to the Find My Friends app settings**|Allow the user to change settings for the Find My Friends app.|
 |**Allow access to the iBooks store**|Allow the user to browse and purchase books from the iBooks store.|
 |**Allow use of the Messages app on the device**|Allow use of the Messages app to send text messages.|

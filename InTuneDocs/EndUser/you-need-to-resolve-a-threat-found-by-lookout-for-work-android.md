@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Your device does not meet the mobile risk policy | Microsoft Intune
+title: You need to resolve a threat that Lookout for Work found on your Android device | Microsoft Intune
 description:
 keywords:
 author: staciebarker
@@ -25,11 +25,9 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 ---
 
-# Your device does not meet the mobile risk policy
+# You need to resolve a threat found by Lookout for Work
 
-If you see the message “Device doesn’t meet mobile risk policy" shown below, it means that your security app, Lookout for Work, has found a potential threat on your device. To fix the issue, open the Lookout for Work app that you installed on your device, and follow the instructions that Lookout for Work provides.
-
-When Lookout for Work finds a compliance issue on your device, you can’t access your company or school email and files until you resolve the issue.
+Lookout for Work has found a potential threat on your device, and you must fix the issue to regain access to your email and work.
 
 ![Lookout for Work found a threat on your device](./media/lookout-threat-found-android.png)
 
@@ -43,7 +41,7 @@ Tap the **device management portal** link to go to the [Company Portal website](
 
 ## Example of an app that Lookout for Work sees as a threat
 
-If you have installed an app that Lookout for Work thinks is a threat, you'll see a screen that is similar to the one below, where Lookout detects that a virus is on your device and prompts you to uninstall the app.
+If you have installed an app that Lookout for Work thinks is a threat, you'll see a screen that is similar to this:
 
 ![example of Lookout for Work virus alert message](./media/lookout-virus-alert-android.png)
 

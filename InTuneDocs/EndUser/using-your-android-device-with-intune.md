@@ -6,7 +6,7 @@ description: List of links to tasks that you can do on your Android mobile devic
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -74,3 +74,5 @@ The information in this section helps you fix issues that you might encounter wh
 - [You are asked to turn off USB debugging](you-are-asked-to-turn-off-usb-debugging-android.md)
 - [You are asked to turn on Scan device for security threats](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
 - [Your device does not meet the minimum security patch](your-device-does-not-meet-the-minimum-security-patch-android.md)
+- [You are prompted to install Lookout for Work on your Android device](you-are-prompted-to-install-lookout-for-work-android.md)
+- [You need to resolve a threat that Lookout for Work found on your Android device](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)

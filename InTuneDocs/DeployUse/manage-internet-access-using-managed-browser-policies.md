@@ -6,7 +6,7 @@ description: Deploy the managed browser application to restrict web browsing and
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ You can create managed browser policies for the following device types:
 
 -   Devices that run Android 4 and later
 
--   Devices that run iOS 7.1 and later
+-   Devices that run iOS 8.0 and later
 
 The Intune managed browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
@@ -50,9 +50,9 @@ The Intune managed browser supports opening web content from [Microsoft Intune a
 
 2.  Configure one of the following **Software** policy types:
 
-    -   **Managed Browser Policy (Android 4 and later)**
+    -   **Managed Browser (Android 4 and later)**
 
-    -   **Managed Browser Policy (iOS 7.1 and later)**
+    -   **Managed Browser (iOS 8.0 and later)**
 
     For more information about how to create and deploy policies, see the [Manage settings and features on your devices with Microsoft Intune Policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) topic.
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # How do I find the serial number on my device?
 
-On devices running iOS 7.1 and above, tap the **Settings** icon, tap **General** > **About**, and then scroll down until you find **Serial Number**.
+On devices running iOS 8.0 and above, tap the **Settings** icon, tap **General** > **About**, and then scroll down until you find **Serial Number**.
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
