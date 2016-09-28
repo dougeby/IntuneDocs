@@ -7,17 +7,17 @@
 The Microsoft Intune App SDK for iOS allows you to incorporate Intune Mobile App Management (MAM) into your iOS app. A MAM-enabled application is one integrated with the Intune App SDK, and allows IT administrators to deploy policies to your mobile app when the app is actively managed by Intune.
 
 
-## What’s in the SDK 
+# What’s in the SDK 
 
 The Intune App SDK for iOS includes a static library, resource files, API headers, a Debug settings plist and a configurator tool. Mobile apps may simply include the resource files and statically link to the libraries for most policy enforcement. Advanced Intune MAM features are enforced through APIs.
 
 This guide will cover the use of the following components of the Intune App SDK for iOS:
 
-* **`libIntuneMAM.a`**: The Intune App SDK static library. If your app does not use extensions, link this library to your project to enable your app for Intune mobile application management. Instructions are found in the “Building your app with Intune App SDK” section.
+* **libIntuneMAM.a**: The Intune App SDK static library. If your app does not use extensions, link this library to your project to enable your app for Intune mobile application management. Instructions are found in the “Building your app with Intune App SDK” section.
 
-* **`IntuneMAM.framework`**: The Intune App SDK framework. Link this framework to your project to enable your app for Intune mobile application management. Use the framework instead of the static library if your app uses extensions, so that your project does not create multiple copies of the static library.
+* **IntuneMAM.framework**: The Intune App SDK framework. Link this framework to your project to enable your app for Intune mobile application management. Use the framework instead of the static library if your app uses extensions, so that your project does not create multiple copies of the static library.
 
-* **`IntuneMAMResources.Bundle`**: A resource bundle that contains resources the SDK relies on. 
+* **IntuneMAMResources.bundle**: A resource bundle that contains resources the SDK relies on. 
 
 * **Headers**: Exposes the Intune App SDK APIs. If you use an API, you will need to include the header file that contains the API. The following header files include the API function calls required to enable the functionality of the Intune App SDK. 
 	
@@ -30,19 +30,20 @@ This guide will cover the use of the following components of the Intune App SDK 
 	* IntuneMAMLogger.h 
 
 
-## How the Intune App SDK works
+# How the Intune App SDK works
 
 The objective of the Intune App SDK for iOS is to add management capabilities to iOS applications with minimal code changes. The fewer code changes, the less time to market, but still guaranteeing the consistency and stability of your mobile application. 
 
-The application needs to be linked to the static library and must include the resource bundle. The `MAMDebugSettings.plist` file is optional and can be included in the package to simulate MAM policies being applied to the application without needing to deploy the application via Microsoft Intune. Additionally, in debug builds, the policies in the `MAMDebugSettings.plist` file can be applied by transferring the `MAMDebugSettings.plist` file to the application’s Documents directory via iTunes file sharing.
+The application needs to be linked to the static library and must include the resource bundle. The MAMDebugSettings.plist file is optional and can be included in the package to simulate MAM policies being applied to the application without needing to deploy the application via Microsoft Intune. Additionally, in debug builds, the policies in the MAMDebugSettings.plist file can be applied by transferring the file to the app’s Documents directory via iTunes file sharing.
 
-## Building the SDK into your mobile app 
+# Building the SDK into your mobile app 
 
 Complete the steps below to enable the Intune App SDK:
 
 1. **Option 1**: Link to the `libIntuneMAM.a` library by doing the following:
 
     Drag and drop the `libIntuneMAM.a` library to the “Linked Frameworks and Libraries” list of the project target.
+    ![Intune App SDK iOS - linked frameworks and libraries](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png) 
 
     **Note**: If you plan to release your app to the App Store, please use the version of `libIntuneMAM.a` that is built for release and not the debug version. The release version will be in the “release” folder. The debug version has verbose output which helps troubleshoot issues with the Intune App SDK.
     
@@ -51,17 +52,17 @@ Complete the steps below to enable the Intune App SDK:
     **Note**: If you use the framework, you must manually strip out the simulator architectures from the universal framework before submitting your app to the App Store. See the section called "Submitting your app to the App Store."
 
 2. Add the following iOS frameworks to the project:
-    * `MessageUI.framework`
-    * `Security.framework`
-    * `MobileCoreServices.framework`
-    * `SystemConfiguration.framework`
-    * `libsqlite3.dylib`
-    * `libc++.dylib`
-    * `ImageIO.framework`
-    * `LocalAuthentication.Framework`
-    * `AudioToolbox.framework`<br>
+    * MessageUI.framework
+    * Security.framework
+    * MobileCoreServices.framework
+    * SystemConfiguration.framework
+    * libsqlite3.dylib
+    * libc++.dylib
+    * ImageIO.framework
+    * LocalAuthentication.framework
+    * AudioToolbox.framework
 
-    **Note**: If the application is targeted for iOS 7, set the "Status" attribute of `LocalAuthentication.Framework` to "Optional." If "Status" is not set, the application will fail to launch on iOS 7.
+    **Note**: If the application is targeted for iOS 7, set the "Status" attribute of `LocalAuthentication.framework` to "Optional." If "Status" is not set, the application will fail to launch on iOS 7.
 
     **Note**: Xcode 7 has switched `.dylib` extensions to `.tbd`.
 
@@ -75,10 +76,10 @@ Complete the steps below to enable the Intune App SDK:
     **Note**: To find the `PATH_TO_LIB`, select the file `libIntuneMAM.a` and choose "Get Info" from the "File" menu. Copy and paste the "Where" information (the path) from the "General" section of the "Info" window.
 
 5. If your mobile app defines a main Nib or Storyboard in its Info.plist, remove the Main Storyboard or Main Nib file fields. Add the Storyboard or Nib values you removed previously under a new dictionary named IntuneMAMSettings with the following key names, as applicable:
-    * `MainStoryboardFile`
-    * `MainStoryboardFile~ipad`
-    * `MainNibFile`
-    * `MainNibFile~ipad `
+    * MainStoryboardFile
+    * MainStoryboardFile~ipad
+    * MainNibFile
+    * MainNibFile~ipad
     
    **Note**: If your mobile app doesn’t define a main Nib or Storyboard in its Info.plist, these settings are **not required**. 
 
@@ -86,7 +87,7 @@ Complete the steps below to enable the Intune App SDK:
 
 6. Enable keychain sharing (if not already enabled) by clicking "Capabilities" in each project target and enabling the "Keychain Sharing" switch. Keychain sharing is required to proceed to the next step.
 
-    **Note**: Your provisioning profile needs to support new keychain sharing values. The keychain access groups should support a wildcard character. You can verify this by opening the `.mobileprovision` file in a text editor, searching for 'keychain-access-groups' and ensuring  you have a wild card, e.g.: 
+    **Note**: Your provisioning profile needs to support new keychain sharing values. The keychain access groups should support a wildcard character. You can verify this by opening the .mobileprovision file in a text editor, searching for 'keychain-access-groups' and ensuring  you have a wild card, e.g.: 
 	```
 	<key>keychain-access-groups</key>
 	<array>
@@ -104,8 +105,8 @@ Complete the steps below to enable the Intune App SDK:
 	![Intune App SDK iOS - keychain sharing](../media/intune-app-sdk-ios-keychain-sharing.png) 
 
     If you are using the entitlement file to create the keychain access group, rather than the regular UI, you will need to prepend the key chain access group with `$(AppIdentifierPrefix)` in the entitlement file. For example:  
-    - `$(AppIdentifierPrefix)com.microsoft.intune.mam` 
-	- `$(AppIdentifierPrefix)com.microsoft.adalcache`
+    * `$(AppIdentifierPrefix)com.microsoft.intune.mam` 
+	* `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
 	**Note**: An entitlements file is an XML file unique to your mobile application that is used to specify special permissions and capabilities within your iOS app.
 
@@ -125,7 +126,7 @@ Complete the steps below to enable the Intune App SDK:
 
     Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` build configuration setting or “Other Linker Flags” in the UI. `PATH_TO_LIB` should be replaced with the ADAL binaries location. 
 
-## Configuring Azure Directory Authentication Library (ADAL) settings in your  app 
+# Configuring Azure Directory Authentication Library (ADAL) settings in your  app 
 
 The Intune App SDK uses ADAL for its authentication and conditional launch scenario. It also relies on ADAL to register the user identity with the MAM service for management without device enrollment scenarios. 
 
@@ -133,7 +134,7 @@ Typically, ADAL requires apps to register and obtain a unique ID, known as Clien
 
 If the app itself uses ADAL for its authentication scenario, the app must use its existing registration values and override the Intune App SDK default values to ensure that end users are not prompted for authentication twice (once by the Intune App SDK and once by the app). 
 
-###ADAL FAQs
+##ADAL FAQs
 
 **What ADAL binaries should I use?** 
 
@@ -191,9 +192,9 @@ The steps below are required if the app already utilizes ADAL for authentication
 
 
 
-##Registering your app with MAM service 
+#Registering your app with MAM service 
 
-### Using the APIs
+## Using the APIs
 The Intune App SDK now provides the ability for iOS apps to receive MAM policies from Intune without the need to be MDM-enrolled with Intune. To support this new functionality, the SDK provides new APIs that allow the app to receive MAM policies. In order to use the new APIs, complete the following steps:
 
 1. Use the latest release of the Intune App SDK which supports management of apps with or without device enrollment. If your app has used an older version of the SDK without this feature, you will need to update the Intune MAM library, as well as update the Headers folder with the headers from the latest SDK.
@@ -207,7 +208,7 @@ The Intune App SDK now provides the ability for iOS apps to receive MAM policies
 	For a run-time environment switch, set `com.microsoft.intune.mam.useppe` in standard user defaults to “1” to use PPE. This replaces the existing `com.microsoft.intune.mam.AADAuthorityEnvironment` setting. 
 
 
-###Registering Accounts 
+##Registering Accounts 
 
 An app can receive MAM policies from the Intune service if the app is enrolled on behalf of a specified user account.  It is the responsibility of the app to register any newly signed-in user with the Intune App SDK.  After the new user account has been authenticated, the app should call the `registerAndEnrollAccount` method found in Headers/IntuneMAMEnrollment.h: 
 
@@ -228,7 +229,7 @@ By calling the method above, the SDK will register the user account and attempt 
 Once this API has been invoked, the application can continue functioning as normal.  If the enrollment does succeed, the SDK will notify the user that an app restart is required.  At that time, the user can immediately restart the app.
 
 
-###De-registering Accounts 
+##De-registering Accounts 
 
 
 Before a user is signed out of an app, the app should de-register the user from the SDK.  This will ensure: 
@@ -264,7 +265,7 @@ If the app will delete the user’s work or school related data on its own, then
 ```
 
 
-###Enrolling Without Prior Sign-in 
+##Enrolling Without Prior Sign-in 
 
 An app which does not sign in the user with Azure Active Directory can still receive MAM policies from the Intune Service by calling the API below to have the SDK handle that authentication. Apps should use this when they have not authenticated a user with AAD but still need to retrieve MAM policies to protect data in their app -- for example: if another authentication service is being used for app log in, or if the app does not support signing in at all. To do this, the application should call the 
 `loginAndEnrollAccount`  method found in Headers/IntuneMAMEnrollment.h:
@@ -285,7 +286,7 @@ If the enrollment fails, the app should consider calling this API again at a fut
 
 Once this API has been invoked, the app can continue functioning as normal.  If the enrollment does succeed, the SDK will notify the user that an app restart is required, as is shown in the above section on registering accounts. 
 
-###Debug Information 
+##Debug Information 
 
 The app can receive debug notifications about the following requests to the Intune MAM Service: 
 
@@ -331,7 +332,7 @@ This object is defined in Headers/IntuneMAMEnrollmentStatus.h along with the spe
 It is important to note that this information is for debug purposes, and no app's business logic should be based off these notifications.  The idea is that the app can send this information to a telemetry service for debugging or monitoring purposes. 
 
 
-###Sample Code 
+##Sample Code 
 
 The following are example implementations of the delegate methods: 
 
@@ -384,7 +385,7 @@ The following are example implementations of the delegate methods:
 ```
 
 
-###App Restart 
+##App Restart 
 
 When an app receives MAM policies for the first time, it will need to restart to apply the required hooks.  In order to notify the app that a restart needs to happen, the SDK provides a delegate method in Headers/IntuneMAMPolicyDelegate.h. 
 ```
@@ -455,13 +456,11 @@ When an MAM-enabled app is actively managed by Microsoft Intune, the Intune App 
 
     * 180 x 180 for the iPhone 6s Plus and iPhone 6 Plus, 120x120 for other iPhone models and 152x152 for the iPad. 
     
-    * Remove the `.png` extension from file names. 
+    * Remove the .png extension from file names. 
     
-    * Use the `@2x` suffix for 2x scale versions and the `@3x` suffix for the 3x scale versions of the image files. If the images are not the correct size, they will be scaled to fit. If the `SplashIconFile` values are not specified, the Intune App SDK selects one of the app’s icons (60x60 for all iPhones, 76x76 for iPad).
+    * Use the `@2x` suffix for 2x scale versions and the `@3x` suffix for the 3x scale versions of the image files. If the images are not the correct size, they will be scaled to fit. If the SplashIconFile values are not specified, the Intune App SDK selects one of the app’s icons (60x60 for all iPhones, 76x76 for iPad).
 
 **Note**: This screen is triggered by launch but can be permanently dismissed by the user.
-
-
 
 
 
@@ -525,24 +524,24 @@ When the app is selectively wiped, the SDK will call the `wipeDataForAccount` me
 
 # Debugging the Intune App SDK in Xcode
 
-Before manually testing your MAM-enabled app with Microsoft Intune, you can use `Settings.bundle` while in Xcode. This will allow you to set test policies without requiring a connection to Intune. To enable it:
+Before manually testing your MAM-enabled app with Microsoft Intune, you can use a **Settings.bundle** file while in Xcode. This will allow you to set test policies without requiring a connection to Intune. To enable it:
 
-* Add a `Settings.bundle` by right-clicking on the top level folder in your project. Select "Add -> New File" from the menu. Select the “Settings Bundle” template found under "Resources" to add.
+* Add a Settings.bundle file by right-clicking on the top level folder in your project. Select "Add -> New File" from the menu. Select the “Settings Bundle” template found under "Resources" to add.
 
-* On debug builds only, copy the `MAMDebugSettings.plist` into `Settings.bundle`.
+* On debug builds only, copy the MAMDebugSettings.plist into Settings.bundle.
 
-* In Root.plist (which is in `Settings.bundle`), add a preference of "Type" Child Pane, "FileName" `MAMDebugSettings`.
+* In Root.plist (which is in Settings.bundle), add a preference with "Type" = Child Pane and "FileName" = MAMDebugSettings.
 
-* In `Settings -> Your-App-Name`, toggle “Enable Test Policies”.
+* In **Settings -> Your-App-Name**, turn on “Enable Test Policies."
 
 * Launch the app (either inside or outside of Xcode). 
 
-* In `Settings -> Your-App-Name -> Enable Test Policies`, toggle a policy, e.g. "PIN."
+* In **Settings -> Your-App-Name -> Enable Test Policies**, turn on a policy, e.g. "PIN."
 
 * Launch the app (either inside or outside of Xcode). Verify that PIN works as expected.
 
 > [!NOTE]
-> You can now use `Settings -> Your-App-Name -> Enable Test Policies` to enable and toggle settings.
+> You can now use **Settings -> Your-App-Name -> Enable Test Policies** to enable and toggle settings.
 
 # Recommended iOS Best Practices
 
