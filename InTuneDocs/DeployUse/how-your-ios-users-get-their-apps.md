@@ -40,7 +40,7 @@ Use this information to understand how and where your end users get the apps tha
 
 Apple restrictions prohibit line-of-business and managed app store apps from being listed in the Company Portal app. To get around this issue, the apps tiles in the Company Portal app for iOS point users to different views in a single location (the Company Portal website) for all of their apps, as follows:
 
-- The **Company Apps** tile previously pointed to a list of all apps in the ALL tab of the [Company Portal website](http://portal.manage.microsoft.com)., and it will continue to work the same way. The tile name has changed to **All Apps**.
+- The **Company Apps** tile previously pointed to a list of all apps in the ALL tab of the [Company Portal website](http://portal.manage.microsoft.com), and it will continue to work the same way. The tile name has changed to **All Apps**.
 
 - The **Other Apps** tile previously pointed to a view, inside the Company Portal app, that lists all apps that Apple permits the Company Portal app to show. The tile name has changed to **Featured Apps**, and tapping the tile will take users to the FEATURED tab of the Company Portal website.
 
@@ -50,5 +50,6 @@ You can find updated screenshots [here](https://gallery.technet.microsoft.com/Im
 
 
 ###See also
-[How your Android users get their apps](how-your-android-users-get-their-apps.md)</br>
+[How your Android users get their apps](how-your-android-users-get-their-apps.md)
+
 [How your Windows users get their apps](how-your-windows-users-get-their-apps.md)

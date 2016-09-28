@@ -51,5 +51,7 @@ Apps can be managed or unmanaged, as described below. The process of making apps
 
 ### See also
 [Add apps with Microsoft Intune](/intune/deploy-use/add-apps)
+
 [How your iOS users get their apps](how-your-ios-users-get-their-apps.md)
+
 [How your Windows users get their apps](how-your-windows-users-get-their-apps.md)
