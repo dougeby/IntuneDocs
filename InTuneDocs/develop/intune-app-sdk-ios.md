@@ -1,4 +1,31 @@
 
+---
+# required metadata
+
+title: Microsoft Intune App SDK for iOS Developer Guide | Microsoft Intune
+description:
+keywords:
+author: Msmbaldwin
+manager: jeffgilb
+ms.date: 09/08/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
+---
+
 # Microsoft Intune App SDK for iOS Developer Guide
 
 > [!NOTE]
