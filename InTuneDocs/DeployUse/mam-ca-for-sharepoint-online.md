@@ -6,7 +6,7 @@ description:
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 09/24/2016
+ms.date: 10/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ are new to the Azure portal experience read the [Azure portal for MAM policies](
 
 ![Screenshot of the settings blade showing conditional access section and the SharePoint Online blade open](../media/mam-ca-settings-spo.png)
 
-**Step 3:** On the **Allowed apps** blade, first select whether you want to allow all apps, or if only certain apps should have access to SharePoint Online. If you select to allow only certain apps to have access, a list of available apps is displayed. Select one or more apps from the list and save your changes.
+**Step 3:** On the **Allowed apps** blade, first select whether you want to allow all apps, or if only apps that are supported by Intune MAM policies should have access to Exchange Online. If you select the option to only allow apps that are supported by Intune MAM policies, the list of available apps is displayed.
 
 ![Screenshot of the allowed apps blade showing the list of apps](../media/mam-ca-spo-allowed-apps.png)
 
@@ -56,4 +56,5 @@ To remove an app from the allowed apps list, go to the **Allowed apps** blade, a
 ## Next steps
 [Configure app access for Exchange Online](mam-ca-for-exchange-online.md)
 ### See also
+[Block apps that do not have modern authentication](block-apps-with-no-modern-authentication.md)
 [Protect app data with MAM policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

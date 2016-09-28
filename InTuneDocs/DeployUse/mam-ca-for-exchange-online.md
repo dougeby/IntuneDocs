@@ -6,7 +6,7 @@ description: This topic describes how you can configure a conditional access pol
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 09/24/2016
+ms.date: 10/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Create a Exchange Online conditional access policy for MAM apps
+# Create an Exchange Online conditional access policy for MAM apps
 You can choose which apps should be allowed to access Exchange Online and select the users who are affected by the policy. This topic gives you step-by-step instructions on how to set up app access to the Exchange Online.
 
 
@@ -36,9 +36,8 @@ are new to the Azure portal experience read the [Azure portal for MAM policies](
 
 ![Screenshot of the settings blade showing the conditional access section wiht Exchange Online option highlighted](../media/mam-ca-settings-exo.png)
 
-**Step 3:** On the **Allowed apps** blade, first select whether you want to allow all apps, or if only certain apps should have access to Exchange Online. If you select to allow only certain apps to have access, a list of available apps is displayed. Select one or more apps from the list and save your changes.
+**Step 3:** On the **Allowed apps** blade, first select whether you want to allow all apps, or if only apps that are supported by Intune MAM policies should have access to Exchange Online. If you select the option to only allow apps that are supported by Intune MAM policies, the list of available apps is displayed. 
 
-![Screenshot showing the allowed apps blade](../media/mam-ca-exo-allowed-apps.png)
 
 >[!NOTE]
 >All EAS mail clients, including the build-in mail clients on iOS and Android that connect to Exchange
@@ -64,4 +63,5 @@ To remove an app from the allowed apps list, go to the **Allowed apps** blade, a
 ## Next steps
 [Configure app access for SharePoint Online](mam-ca-for-sharepoint-online.md)
 ### See also
+[Block apps that do not have modern authentication](block-apps-with-no-modern-authentication.md)
 [Protect app data with MAM policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

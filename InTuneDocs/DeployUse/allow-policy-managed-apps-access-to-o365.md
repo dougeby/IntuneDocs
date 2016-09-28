@@ -6,7 +6,7 @@ description: Understand the concepts of how MAM CA can help with controlling wha
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 09/24/2016
+ms.date: 10/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,22 +41,43 @@ The diagram below illustrates how company data is protected.  With MAM, you can 
 > Outlook app for iOS does not yet support conditional access for MAM, so this use case only works on Android
 
 ## Supported apps
+**Exchange Online**
+* Microsoft Outlook for Android and iOS
+
+**SharePoint Online**
 * Microsoft Word for iOS and Android
 * Microsoft Excel for iOS and Android
 * Microsoft PowerPoint for iOS and Android
 * Microsoft OneDrive for Business for iOS and Android
 * Microsoft OneNote for iOS
-* Microsoft Outlook for Android and iOS
 
->[!NOTE]
+
+>[!IMPORTANT]
 >Microsoft Excel, PowerPoint, Word, Skype for Business, and OneNote apps for iOS and Android are
 bundled together as a single option. When you select the bundled app list, the apps listed will be
 automatically included in the allowed app list.  The OneNote app for Android does not yet support MAM without enrollment.
 
+## Overlap with other conditional access and authentication methods
+### MAM CA with Azure Active Directory (Azure AD) Certificate Based Authentication (CBA)
+
+MAM CA must not be used with Azure AD Certificate Based Authentication (CBA). You can only have one of these configured at a time.
+### MAM CA with conditional access for devices (Device CA). 
+
+Device CA can be configured through the Intune MDM console or the Azure AD Premium console, and will require that users may only connect with SharePoint Online and Exchange Online if they are on managed and compliant devices (or domain joined PCs).  If a user belongs to one or more security groups that are targeted in both a MAM CA and a Device CA policy, the user must meet one of the two requirements. I.e. they can be on an approved mobile app (as long as the iOS Authenticator or Android Company Portal apps are installed), or they can be on a managed and compliant device (or domain joined PC).  Here are some examples to help illustrate this:
+* If a user is targeted by both a MAM CA policy and a device CA policy and tries to connect from the OneDrive app, they will be able to access company files on SharePoint online if one of the two following conditions are true:
+  * OneDrive has been approved for MAM CA
+  * The device that is used to access is compliant.  
+* If a user tries to connect from the native iOS email app, she will be required to be on a managed and compliant device (since the native mail app cannot be approved).
+* If a user tries to connect from a Windows home PC, the device CA policy will apply (i.e. she must be on a domain joined PC).
+
+
 ## End-user experience
-MAM CA verifies the identity of the approved application via a broker app that must be present on the device. On iOS, the Azure Authenticator app is the broker app. On Android, the Intune Company Portal app is the broker app.  If a user is signing in to an approved app (like OneDrive or Outlook) for the first time, she will be prompted to install the broker app and register the device with Azure ActiveDirectory. Device registration in AAD (previously known as Workplace Join) will create a device record and certificate against which tokens will be issued.  It is important to note that this is NOT the same as MDM enrollment; no management profiles or policies are applied, and there is no inventory taken of installed apps.  The process of installing the broker app and registering the device will happen on the first use of a managed app only.
-Here’s an example of when the user first signs in to an app but doesn’t yet the iOS Authenticator App:
-<screenshot here>
+MAM CA verifies the identity of the approved application via a broker app that must be present on the device. On iOS, the Azure Authenticator app is the broker app. On Android, the Intune Company Portal app is the broker app.  If a user is signing in to an approved app (like OneDrive or Outlook) for the first time, she will be prompted to install the broker app and register the device with Azure AD. Device registration in Azure AD (previously known as Workplace Join) will create a device record and certificate against which tokens will be issued.  It is important to note that this is NOT the same as MDM enrollment; no management profiles or policies are applied, and there is no inventory taken of installed apps.  The process of installing the broker app and registering the device will happen on the first use of a managed app only.
+
 
 ## Next steps
+[Create an Exchange Online Policy for MAM apps](mam-ca-for-exchange-online.md)
+[Create a SharePoint Online Policy for MAM apps](mam-ca-for-sharepoint-online.md)
 ### See also
+[Block apps that do not have modern authentication](block-apps-with-no-modern-authentication.md)
+[Protect app data with MAM policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
