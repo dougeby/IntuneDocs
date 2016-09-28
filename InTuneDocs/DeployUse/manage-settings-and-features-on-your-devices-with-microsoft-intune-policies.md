@@ -67,6 +67,7 @@ For a complete list of Intune policies, see [Microsoft Intune policy reference](
 
 	- [Settings for iOS devices](ios-policy-settings-in-microsoft-intune.md)
 	- [Settings for Android devices](android-policy-settings-in-microsoft-intune.md)
+	- [Settings for Android for Work devices](android-for-work-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows 8 and Windows 8.1 devices](windows-configuration-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows Phone 8.1 devices](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows 10 desktop and mobile devices](windows-10-policy-settings-in-microsoft-intune.md)
