@@ -35,21 +35,21 @@ This guide walks through the major steps needed to enable mobile app management 
 
 ## Register your store app with Microsoft
 
-###If your app is internal to your company and will not be made available to a public app store:
+* **If your app is internal to your company and will not be made available to a public app store**:
 You **do not need** to register your app. For internal line-of-business apps, the IT administrator will deploy the app internally using Microsoft Intune. Intune will detect the app has been built with the SDK, and will allow the IT administrator to apply MAM policy settings to it. You can skip to the section [Enable your iOS or Android mobile app for MAM with the SDK](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk).
 
-###If your app will be released to a public app store, such as the Apple App Store or Google Play: 
+* **If your app will be released to a public app store, such as the Apple App Store or Google Play**: 
 You **must** first register your app with Microsoft Intune and agree to the registration terms. After registering, IT administrators can apply Intune MAM policy settings to the enlightened app, which will be listed as an Intune app partner. Until registration has been complete and confirmed by the Microsoft Intune team, Intune administrators will not have the option to apply MAM policy to your app's deep link. Microsoft will also add your app to its [Microsoft Intune Partners page](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners), where the app's icon will be displayed to show that it supports Microsoft Intune MAM policy.
 
-To begin the registration process, **review and sign** the [Microsoft Intune Partner Agreement](https://connect.microsoft.com/ConfigurationManagervnext/Survey/Survey.aspx?SurveyID=17806). This agreement describes the terms your company must accept before becoming a Microsoft Intune app partner. You will need to sign in before you can view this document. You can find the agreement in the Intune App SDK Microsoft Connect site under the Surveys tab or located here. We will also ask you to provide the name of the app, your company’s name, as well as the Google or iTunes store deep link to your app.
+	To begin the registration process, **review and sign** the [Microsoft Intune Partner Agreement](https://connect.microsoft.com/ConfigurationManagervnext/Survey/Survey.aspx?SurveyID=17806). This agreement describes the terms your company must accept before becoming a Microsoft Intune app partner. You will need to sign in before you can view this document. You can find the agreement in the Intune App SDK Microsoft Connect site under the Surveys tab or located here. We will also ask you to provide the name of the app, your company’s name, as well as the Google or iTunes store deep link to your app.
 
-![Microsoft Connect](../media/microsoft-connect.png)
+	![Microsoft Connect](../media/microsoft-connect.png)
 
-We will use your registration email address to confirm and complete receipt of the registration process. Additionally, we use your registration email address to contact you should we have any concerns.
+	We will use your registration email address to confirm and complete receipt of the registration process. Additionally, we use your registration email address to contact you should we have any concerns.
 
-**What to expect in the registration process**: After you have submitted the form you will be contacted by Microsoft via your registration email address, to either confirm successful receipt or request additional information to complete the registration. You will also be contacted when your app is successfully registered with the Microsoft Intune and when your app is featured on the Microsoft Intune partners’ site. After receipt of the information has been confirmed, your app deep link will be included in the next monthly Intune Service update. For example, if the registration information is completed in July, the app deep link will be supported in mid-August. If your store app deep link changes in the future, you will need to re-register you app. Also, inform us if you update your app with a new version of the Intune App SDK.
+* **What to expect in the registration process**: After you have submitted the form you will be contacted by Microsoft via your registration email address, to either confirm successful receipt or request additional information to complete the registration. You will also be contacted when your app is successfully registered with the Microsoft Intune and when your app is featured on the Microsoft Intune partners’ site. After receipt of the information has been confirmed, your app deep link will be included in the next monthly Intune Service update. For example, if the registration information is completed in July, the app deep link will be supported in mid-August. If your store app deep link changes in the future, you will need to re-register you app. Also, inform us if you update your app with a new version of the Intune App SDK.
 
-**Note**: All information collected in the form above and through e-mail correspondence with the Intune team will honor the [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacystatement/default.aspx).
+	**Note**: All information collected in the form above and through e-mail correspondence with the Intune team will honor the [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacystatement/default.aspx).
 
 ## Download the SDK files
 
