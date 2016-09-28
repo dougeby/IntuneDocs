@@ -61,7 +61,7 @@ Multi-identity support is a feature that enables coexistence of policy-managed (
 
 For example, many users configure both corporate and personal email accounts in the Outlook app for iOS and Android. When a user is accessing data in their corporate account, the IT administrator must be confident that MAM policy management will be applied. However, when a user is accessing a personal email account, that data should be outside of the IT administrator's control. Microsoft Intune achieves this by targeting the management policy to the corporate account only in the application. This multi-identity feature helps solve the data protection problem that organizations are facing with devices and apps that support both personal and work accounts.
 
-**How to support multi-identity**: The Microsoft Intune App SDK APIs allow you to specify a User Principal Name (UPN) with specific data operations such as clipboard operations and file operations. The SDK uses the UPN to match the call made to the UPN that was used to enroll the device with the Microsoft Intune service. If the UPNs match, the call is treated as a "corporate data" call and the data is protected; if the UPNs do not match, the call is treated as a "personal data" call, and the data is not protected.
+* **How to support multi-identity**: The Microsoft Intune App SDK APIs allow you to specify a User Principal Name (UPN) with specific data operations such as clipboard operations and file operations. The SDK uses the UPN to match the call made to the UPN that was used to enroll the device with the Microsoft Intune service. If the UPNs match, the call is treated as a "corporate data" call and the data is protected; if the UPNs do not match, the call is treated as a "personal data" call, and the data is not protected.
 
 ### App management without device enrollment
 
@@ -72,4 +72,3 @@ For example, many users configure both corporate and personal email accounts in 
 Many users with personal devices wish to see and use corporate data without enrolling their personal device with a Mobile Device Management (MDM) product. Since MDM enrollment requires global control of the device, users hesitate to give that global control to their own personal device to their company.
 
 App management without device enrollment allows the Microsoft Intune service to deploy MAM policy to an app directly, without relying on an MDM channel to deploy the policy. Since no MDM channel is needed, MDM enrollment is not needed.
-

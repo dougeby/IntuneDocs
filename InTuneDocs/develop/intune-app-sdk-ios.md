@@ -477,9 +477,9 @@ Note that an identity is simply defined as a string. Identities are case-insensi
   
 An identity is simply the username of an account (e.g. user@contoso.com). Developers can set the identity of the app on the following different levels: 
 
-1. **Process identity**: the process identity sets the process-wide identity and is mainly used for single identity applications. This identity affects all operations, files, and UI.
-2. **UI identity**: determines what policies are applied to UI operations on the main thread such as cut/copy/paste, PIN, authentication, data sharing, etc. The UI identity does not affect file operations (encryption, backup, etc.). 
-3. **Thread identity**: The thread identity affects what policies are applied on the current thread. This affects all operations, files, and UI.
+* **Process identity**: the process identity sets the process-wide identity and is mainly used for single identity applications. This identity affects all operations, files, and UI.
+* **UI identity**: determines what policies are applied to UI operations on the main thread such as cut/copy/paste, PIN, authentication, data sharing, etc. The UI identity does not affect file operations (encryption, backup, etc.). 
+* **Thread identity**: The thread identity affects what policies are applied on the current thread. This affects all operations, files, and UI.
 
 It's the app's responsibility to set the identities appropriately whether or not the user is managed.
 
@@ -493,7 +493,7 @@ Apps often dispatch asynchronous and synchronous tasks to thread queues. The SDK
 
 ##File Owner
  
-The SDK keeps track of local file owner identity and applies policies accordingly. The file owner is established when the file is created or when the file is opened in truncate mode. The owner is set to the effective file operation identity of the thread performing the operation. Alternatively, apps can set the file owner identity explicitly using the `IntuneMAMFilePolicyManager`. Apps can use the `IntuneMAMFilePolicyManager` to retrieve the file owner and set the UI identity prior to displaying the file contents. 
+The SDK keeps track of local file owner identity and applies policies accordingly. The file owner is established when the file is created or when the file is opened in truncate mode. The owner is set to the effective file operation identity of the thread performing the operation. Alternatively, apps can set the file owner identity explicitly using the `IntuneMAMFilePolicyManager`. Apps can use the `IntuneMAMFilePolicyManager` to retrieve the file owner and set the UI identity prior to displaying the file contents.
 
 
 ##Shared Data Files
