@@ -41,9 +41,9 @@ Additionally, if you have created your own line of business (LOB) app, you can d
 1. Go to the [Google Play for Work store](https://play.google.com/work). Sign in with the same account you used to configure the connection between Intune and Android for Work.
 2. Search the store for the app you want to deploy using Intune.
 3. On the page for the app you chose, choose **Approve**. In this example, you have chosen the Microsoft Excel app.
-	![Approve app example](../media/approve.png)
+	![Approve app example](/intune/deploy-use/media/approve.png)
 4. A window for the app opens asking you to give permissions for the app to perform various operations. You must choose **Approve** to continue.
-	![Approve app permissions example](../media/approve-app-permissions.png)
+	![Approve app permissions example](/intune/deploy-use/media/approve-app-permissions.png)
 5. After a moment, you'll see a confirmation message that the app has been approved and is available in your IT admin console. 
 
 ## Publish, then synchronize, a line of business app from the Google Play for Work store 
@@ -52,7 +52,7 @@ Additionally, if you have created your own line of business (LOB) app, you can d
 2. Sign in with the same account you used to configure the connection between Intune and Android for Work. If you are signing in for the first time, you must register, and pay a fee to become a member of the Google Developer program.
 3. In the console, choose **Add new application**.
 4. The process to upload and provide information about your app is the same as for publishing any app to the Google Play store. However, you must select the setting **Only make this application available to my organization (<*organization name*>)** as shown below.
-	![Option to only make app available to your organization](../media/restrict.png)
+	![Option to only make app available to your organization](/intune/deploy-use/media/restrict.png)
 This ensures that the app is only available to your organization, and is not available in the public Google Play store.
 For more information about how to upload and publish Android apps, see the [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469).
 5. Once you have published your app, go to the [Google Play for Work store](https://play.google.com/work). Sign in with the same account you used to configure the connection between Intune and Android for Work. 
