@@ -14,7 +14,7 @@
 ## [Help secure access from hotel kiosks](help-secure-access-from-hotel-kiosks.md)
 ## [Best practices for using Microsoft Intune](best-practices-for-using-intune.md)--->
 <!--- ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)--->
-
+# [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Develop & Customize Apps](/intune/develop/intune-app-sdk)
 # [Troubleshoot](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
