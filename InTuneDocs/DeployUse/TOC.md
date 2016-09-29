@@ -2,6 +2,7 @@
 # [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
+# [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Device lifecycle](overview-of-device-lifecycle-in-microsoft-intune.md)
@@ -136,10 +137,6 @@
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-
-## [Migrate to Intune](migrate-to-intune.md)
-
-## [What's new](whats-new-in-microsoft-intune.md)
 
 # [Develop & Customize Apps](/intune/develop/intune-app-sdk)
 
