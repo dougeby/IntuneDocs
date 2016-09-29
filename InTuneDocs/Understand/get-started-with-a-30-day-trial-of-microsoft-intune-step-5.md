@@ -64,7 +64,7 @@ If prompted for a **Server address**, type “manage.microsoft.com”.
 ## Install the previously deployed app
 Open the Company Portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.
 
-To learn more about mobile device management using Intune, see [Get ready to enroll devices in Microsoft Intune](/Intune/deploy-use/prerequisites-for-enrollment.md).
+To learn more about mobile device management using Intune, see [Get ready to enroll devices in Microsoft Intune](/Intune/deploy-use/prerequisites-for-enrollment).
 
 ### Next steps
 Congratulations! You have just completed step 5 of the *Microsoft Intune evaluation* walkthrough.
