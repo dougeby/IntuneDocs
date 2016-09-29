@@ -75,7 +75,7 @@ If a conditional access policy is not met, the user is presented with one of the
 
 -   Native email app on iOS.
 
--   Native email app on Android 4 or later
+-   EAS mail clients such as Gmail on Android 4 or later
 > [!NOTE]
 > Microsoft Outlook app for Android and iOS is not supported.
 
