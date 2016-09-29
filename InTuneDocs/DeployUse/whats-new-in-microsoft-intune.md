@@ -1,0 +1,1 @@
+redirect_url: /intune/whats-new/whats-new-in-microsoft-intune
