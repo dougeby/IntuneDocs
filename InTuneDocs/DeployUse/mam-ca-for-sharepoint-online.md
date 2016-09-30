@@ -25,17 +25,18 @@ ms.suite: ems
 
 ---
 
-# Create a SharePoint Online conditional access policy for MAM apps
-You can choose which apps should be allowed to access SharePoint Online and the users who are affected by the policy. This topic gives you step-by-step instructions on how to set up app access to SharePoint Online service.
+# Create a SharePoint Online conditional access policy to only allow apps supported by MAM
+This topic gives you step-by-step instructions on how to set up conditional access for  Exchange Online to only allow mobile apps that support Intune mobile app management (MAM) policies.
 
 ## Configure a SharePoint Online policy
-**Step 1:** Sign into the [Azure portal](portal.azure.com) that includes the app access feature. If  
+**Step 1:** Sign into the [Azure portal](portal.azure.com) that includes the app access feature. If you
 are new to the Azure portal experience read the [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) topic.
+
 **Step 2:** Go to **Browse >Intune > Intune mobile application management blade > Settings**, and in the **conditional access** section, choose **SharePoint Online**.
 
 ![Screenshot of the settings blade showing conditional access section and the SharePoint Online blade open](../media/mam-ca-settings-spo.png)
 
-**Step 3:** On the **Allowed apps** blade, first select whether you want to allow all apps, or if only apps that are supported by Intune MAM policies should have access to Exchange Online. If you select the option to only allow apps that are supported by Intune MAM policies, the list of available apps is displayed.
+**Step 3:** On the **Allowed apps** blade, choose **Allow apps that support Intune app policies** option to allow only apps that are supported by Intune MAM policies to have the ability to access SharePoint Online. When you select the option to only allow apps that are supported by Intune MAM policies, the list of supported apps is displayed.
 
 ![Screenshot of the allowed apps blade showing the list of apps](../media/mam-ca-spo-allowed-apps.png)
 
@@ -50,8 +51,6 @@ are new to the Azure portal experience read the [Azure portal for MAM policies](
 ### Adding or deleting user groups
 To **delete a user group** from the **restricted user groups** list, open the Restricted user groups blade, highlight the user group you want to delete, and click on the … to see the delete option. Choose **Delete** to remove the user group from the list. You can follow the same procedure to remove a user group from the **exempted user group** list.
 
-### Adding or removing apps
-To remove an app from the allowed apps list, go to the **Allowed apps** blade, and choose the app you want to unselect the app and save you changes.
 
 ## Next steps
 [Configure app access for Exchange Online](mam-ca-for-exchange-online.md)

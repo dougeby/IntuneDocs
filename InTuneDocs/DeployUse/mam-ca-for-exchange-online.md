@@ -25,22 +25,23 @@ ms.suite: ems
 
 ---
 
-# Create an Exchange Online conditional access policy for MAM apps
-You can choose which apps should be allowed to access Exchange Online and select the users who are affected by the policy. This topic gives you step-by-step instructions on how to set up app access to the Exchange Online.
+# Create an Exchange Online conditional access to only allow apps supported by MAM
+This topic gives you step-by-step instructions on how to set up conditional access for  Exchange Online to only allow mobile apps that support Intune mobile app management (MAM) policies.
 
 
 ## Create an Exchange Online policy
-**Step 1:** Sign into the [Azure portal](portal.azure.com) that includes the app access feature. If  
+**Step 1:** Sign into the [Azure portal](portal.azure.com) that includes the app access feature. If you
 are new to the Azure portal experience read the [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) topic.
+
 **Step 2:** Go to **Browse >Intune > Intune mobile application management blade > Settings**, and in the **conditional access** section, choose **Exchange Online**.
 
 ![Screenshot of the settings blade showing the conditional access section wiht Exchange Online option highlighted](../media/mam-ca-settings-exo.png)
 
-**Step 3:** On the **Allowed apps** blade, first select whether you want to allow all apps, or if only apps that are supported by Intune MAM policies should have access to Exchange Online. If you select the option to only allow apps that are supported by Intune MAM policies, the list of available apps is displayed. 
+**Step 3:** On the **Allowed apps** blade, choose **Allow apps that support Intune app policies** option to allow only apps that are supported by Intune MAM policies to have the ability to access Exchange Online. When you select the option to only allow apps that are supported by Intune MAM policies, the list of supported apps is displayed.
 
 
 >[!NOTE]
->All EAS mail clients, including the build-in mail clients on iOS and Android that connect to Exchange
+>All EAS mail clients, including the built-in mail clients on iOS and Android that connect to Exchange
 Online will be prevented from sending or receiving email. Users will instead receive a single email
 informing them that they need to use the Outlook mail app. 
 
@@ -57,8 +58,6 @@ informing them that they need to use the Outlook mail app. 
 
 To **delete a user group** from the **restricted user groups** list, open the Restricted user groups blade, highlight the user group you want to delete, and click on the … to see the delete option. Choose **Delete** to remove the user group from the list. You can follow the same procedure to remove a user group from the **exempted user group** list.
 
-### Adding or removing apps
-To remove an app from the allowed apps list, go to the **Allowed apps** blade, and choose the app you want to unselect the app and save you changes.
 
 ## Next steps
 [Configure app access for SharePoint Online](mam-ca-for-sharepoint-online.md)
