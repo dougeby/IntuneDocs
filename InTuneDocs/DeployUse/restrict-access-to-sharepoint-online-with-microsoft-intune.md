@@ -41,7 +41,8 @@ When a user attempts to connect to a file using a supported app such as OneDrive
 
 **Before** configuring a conditional access policy for SharePoint Online, you must:
 - Have a **SharePoint Online subscription** and users must be licensed for SharePoint Online.
-- Have an **Azure Active Directory Premium subscription**. For more details, see the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).The **Enterprise Mobility Suite + Security subscription** includes both Intune and Azure Active Directory Premium subscriptions. For more details, see the [Enterprise Mobility Suite pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing).
+- Have an **Enterprise Mobility Suite + Security or an Azure Active Directory premium subscription**, and the users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility Suite pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+
 
   To connect to the required files, the device must:
 -   Be **enrolled** with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or a domain-joined PC.

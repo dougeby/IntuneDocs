@@ -32,7 +32,7 @@ You can control access to Microsoft Dynamics CRM Online from iOS and Android dev
 
 To learn more about how conditional access works, read the [restrict access to email, 0365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
-[!IMPORTANT] To deploy conditional access you must have subscriptions for Intune and Azure Active Directory Premium.  To learn more about Azure Active Directory Premium, see the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/). The **Enterprise Mobility Suite + Security subscription** includes both Intune and Azure Active Directory Premium subscriptions. For more details, see the [Enterprise Mobility Suite pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing).
+[!IMPORTANT] To deploy conditional access you must have subscriptions for Intune and Azure Active Directory Premium and users must be licensed for both products. The **Enterprise Mobility Suite + Security (EMS) subscription** includes both Intune and Azure Active Directory Premium subscriptions. For more details, see the [Enterprise Mobility Suite pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). If you don't have the EMS subscription, you can get a subscription for Azure Active Directory Premium. See the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
 
 When a targeted user attempts to use the Dynamics CRM app on their device, the following evaluation occurs:
 
