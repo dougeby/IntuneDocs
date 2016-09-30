@@ -79,7 +79,9 @@ End-users signing in to an app that is supported by MAM CA like OneDrive or Outl
 
 ## Next steps
 [Create an Exchange Online Policy for MAM apps](mam-ca-for-exchange-online.md)
+
 [Create a SharePoint Online Policy for MAM apps](mam-ca-for-sharepoint-online.md)
 ### See also
 [Block apps that do not have modern authentication](block-apps-with-no-modern-authentication.md)
+
 [Protect app data with MAM policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

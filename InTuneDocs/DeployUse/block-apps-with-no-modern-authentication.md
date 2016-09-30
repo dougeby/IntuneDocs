@@ -30,9 +30,11 @@ Conditional access for apps with MAM policies (MAM CA) relies on applications us
 
 To block access to these apps we recommend the following:
 
-* Setup ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx). 
+* Setup ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
 
 * For SharePoint Online*, disable non-modern authentication in the SharePoint Online service using the PowerShell commandlet [Set-SPOTenant](https://technet.microsoft.com/en-us/library/fp161390.aspx) to set the legacy authentication protocols property to false:
 ```
  ‘Set-SPOTenant -LegacyAuthProtocolsEnabled $false’
 ```
+### See also
+[Allow only apps supported by Intune to access O365 services](allow-policy-managed-apps-access-to-o365.md)

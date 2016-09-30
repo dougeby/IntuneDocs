@@ -54,6 +54,9 @@ To **delete a user group** from the **restricted user groups** list, open the Re
 
 ## Next steps
 [Configure app access for Exchange Online](mam-ca-for-exchange-online.md)
-### See also
+
 [Block apps that do not have modern authentication](block-apps-with-no-modern-authentication.md)
+
+### See also
+
 [Protect app data with MAM policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
