@@ -6,7 +6,7 @@ description: This topic describes the mobile app management policy settings for 
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -93,6 +93,16 @@ Specify when  cut, copy, and paste operations should be restricted. Choose from:
   When you do a selective wipe to remove company data, contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this is applicable only to the **Microsoft Outlook** app.
 
   **Default value = Yes**
+  - **Disable printing:** Choose **Yes** to prevent printing company data from apps that are associated with the MAM policy.
+
+    **Default value - Yes**
+    - **Disable printing:** Choose **Yes** to prevent printing company data from apps that are associated with the MAM policy.
+
+      **Default value - Yes**
+- **Disable printing:** Choose **Yes** to prevent printing company data from apps that are associated with the MAM policy.
+
+    **Default value - Yes**
+
 ##  iOS Access policy settings
 The term **Policy managed apps** is used to refer to apps that are configured with MAM policies.
 - **Require PIN for access:**  Choose **Yes** to require a PIN to use policy managed apps. The user is prompted to set this up the first time they run the app in a work context.
