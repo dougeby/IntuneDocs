@@ -2,6 +2,7 @@
 # [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
+# [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Device lifecycle](overview-of-device-lifecycle-in-microsoft-intune.md)
@@ -33,6 +34,7 @@
 ### [Manage settings and features on your devices with policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS settings](ios-policy-settings-in-microsoft-intune.md)
 #### [Android and Samsung KNOX settings](android-policy-settings-in-microsoft-intune.md)
+#### [Android for Work settings](android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 and Windows 8.1 settings](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1 settings](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Windows 10 desktop and mobile settings](windows-10-policy-settings-in-microsoft-intune.md)
@@ -71,6 +73,7 @@
 #### [Manage license agreements for Intune client PCs](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Deploy apps](deploy-apps.md)
 ### [Deploy apps to devices and PCs](deploy-apps-in-microsoft-intune.md)
+### [Deploy Android for Work apps](android-for-work-apps.md)
 ### [Monitor apps](monitor-apps-in-microsoft-intune.md)
 ### [Manage volume-purchased apps](manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [Manage volume-purchased iOS apps](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -79,6 +82,7 @@
 ## [Configure apps](update-apps-using-microsoft-intune.md)
 ### [Update apps ](update-apps-using-microsoft-intune.md)
 ### [iOS app configuration policies](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Android for Work app configuration policies](afw-app-configuration-policy.md)
 ### [iOS mobile app provisioning profiles](ios-mobile-app-provisioning-profiles.md)
 ### [Manage Internet access](manage-internet-access-using-managed-browser-policies.md)
 
@@ -136,10 +140,6 @@
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-
-## [Migrate to Intune](migrate-to-intune.md)
-
-## [What's new](whats-new-in-microsoft-intune.md)
 
 # [Develop & Customize Apps](/intune/develop/intune-app-sdk)
 
