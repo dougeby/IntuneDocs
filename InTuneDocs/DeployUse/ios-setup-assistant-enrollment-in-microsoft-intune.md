@@ -140,7 +140,7 @@ Using Apple Configurator, you can reset an iOS device to factory settings and pr
 
     7. On the Supervise Devices pane, select the level of supervision, and then choose **Next**.
 
-    8. On the **Create an Organization** pane, choose the **Organization** or create a new organization, and then choose **Next**.
+    8. On the Create an Organization pane, choose the **Organization** or create a new organization, and then choose **Next**.
 
     9. On the Configure iOS Setup Assistant pane, choose the steps to be presented to the user, and then choose **Prepare**. If prompted, authenticate to update trust settings.  
 
