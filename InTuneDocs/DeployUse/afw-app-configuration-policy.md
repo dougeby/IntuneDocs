@@ -57,7 +57,7 @@ You do not deploy these policies directly to users and devices. Instead, you ass
 
 4. In the **Mobile App Configuration Policy** section of the page, specify the following information:
 	- **Package ID for the application that this configuration applies to** - The package ID can be found in the 'id=' section of the app URL on it's Google Play page. For example, the package ID for the Microsoft Excel app is **com.microsoft.office.excel**.
-	- In the text box, enter the data for the app settings you want to configure. You get these settings from the supplier of the app. Not all apps support these settings. The Google Chrome browser does.
+	- In the text box, enter the data for the app settings you want to configure. You get these settings from the supplier of the app. Not all apps support these settings.
 5.  Click **Validate** to ensure that the data that you entered is in a valid property list format.
 
     > [!IMPORTANT]
