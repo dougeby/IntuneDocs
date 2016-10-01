@@ -1,4 +1,3 @@
 ---
-redirect_url:
-https://docs.microsoft.com/en-us/InTune/deploy-use/prerequisites-for-enrollment
+redirect_url: https://docs.microsoft.com/InTune/deploy-use/prerequisites-for-enrollment
 ---

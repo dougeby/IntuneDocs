@@ -6,7 +6,7 @@ description: Learn how to automatically upgrade Windows 10 devices to the latest
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,12 @@ The Microsoft Intune **Edition Upgrade Policy** lets you automatically upgrade d
 * Windows 10 Desktop
 * Windows 10 Holographic
 * Windows 10 Mobile
+
+The following upgrade paths are supported:
+- From Windows 10 Pro to Windows 10 Enterprise
+- From Windows 10 Home to Windows 10 Education
+- From Windows 10 Mobile to Windows 10 Mobile Enterprise
+- From Windows 10 Holographic Pro to Windows 10 Holographic Enterprise
 
 ## Before you start
 Before you begin to upgrade devices to the latest version, you will need one of the following:
