@@ -29,7 +29,7 @@ ms.suite: ems
 Intune supports the enrollment of corporate-owned iOS devices using [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) running on a Mac computer. This process resets the device to factory settings and prepares it to run Setup Assistant, installing the company's policies for the device’s new user.
 
 ## Setup Assistant enrollment for iOS devices with Microsoft Intune
-Using Apple Configurator, you can reset an iOS device to factory settings and prepare it for setup by the device’s new user. This method requires you to connect the iOS device to a Mac computer via USB to set up corporate enrollment, and it assumes you are using Apple Configurator 2.0. Most scenarios require that the policy applied to the iOS device include **user affinity** to enable the Intune Company Portal app.
+Using Apple Configurator, you can reset an iOS device to factory settings and prepare it to be set up for the device’s new user. This method requires you to connect the iOS device to a Mac computer via USB to set up corporate enrollment, and it assumes you are using Apple Configurator 2.0. Most scenarios require that the policy applied to the iOS device include **user affinity** to enable the Intune Company Portal app.
 
 **Prerequisites**
 * [iOS enrollment enabled](set-up-ios-and-mac-management-with-microsoft-intune.md) by installing an APNs certificate
@@ -40,19 +40,19 @@ Using Apple Configurator, you can reset an iOS device to factory settings and pr
 
 
 1.  **Create mobile device groups** (optional).
-    If your business requires mobile device groups to help manage devices, create those groups. [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+    If your business requires mobile device groups to help manage devices, create those groups. To learn more, see [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
 2.  **Create a profile for devices**.
     A device enrollment profile defines the settings applied to a group of devices. The following steps show how to create a device enrollment profile for iOS devices enrolled by using Apple Configurator.
 
-    1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add**.
+    1.  In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add**.
     ![Create device enrollment profile](../media/pol-sa-corp-enroll.png)
 
     2.  Enter details for the device profiles:
 
-        -   **Name**&mdash;Name of the device enrollment profile (not visible to users).
+        -   **Name**&mdash;The name of the device enrollment profile (not visible to users).
 
-        -   **Description**&mdash;Description of the device enrollment profile (not visible to users).
+        -   **Description**&mdash;A description of the device enrollment profile (not visible to users).
 
         -   **Enrollment Details**&mdash;Specifies how devices are enrolled.
 
@@ -69,7 +69,7 @@ Using Apple Configurator, you can reset an iOS device to factory settings and pr
     3.  Choose **Save Profile** to add the profile.
 
 3.  **Add iOS devices to enroll with Setup Assistant**.
-    In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices**, and then choose **Add devices**. You can add devices in two ways:
+    In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices**, and then choose **Add devices**. You can add devices in two ways:
 
     ![Add devices dialog box](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
@@ -132,22 +132,22 @@ Using Apple Configurator, you can reset an iOS device to factory settings and pr
     4.  Connect the iOS mobile devices to the Mac computer with a USB adapter.
 
         > [!WARNING]
-        > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. As a best practice, devices should be at the **Hello** screen when you start Setup Assistant.
+        > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. Devices should be at the **Hello** screen when you start Setup Assistant.
 
-    5.  Choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual** and then choose **Next**.
+    5.  Choose **Prepare**. On the Prepare iOS Device pane, select **Manual** and then choose **Next**.
 
-    6. On the **Enroll in MDM Server** pane, select the server name you created, and then choose **Next**.
+    6. On the Enroll in MDM Server pane, select the server name you created, and then choose **Next**.
 
-    7. On the **Supervise Devices** pane, select the level of supervision, and then choose **Next**.
+    7. On the Supervise Devices pane, select the level of supervision, and then choose **Next**.
 
     8. On the **Create an Organization** pane, choose the **Organization** or create a new organization, and then choose **Next**.
 
-    9. On the **Configure iOS Setup Assistant** pane, choose the steps to be presented to the user, and then choose **Prepare**. If prompted, authenticate to update trust settings.  
+    9. On the Configure iOS Setup Assistant pane, choose the steps to be presented to the user, and then choose **Prepare**. If prompted, authenticate to update trust settings.  
 
     10. When the iOS device finishes preparing, disconnect the USB cable.  
 
 8.  **Distribute devices**.
-    The devices are now ready for corporate enrollment. Turn off the devices and distribute them to users. When the device is turned on, the Setup Assistant will start.
+    The devices are now ready for corporate enrollment. Turn off the devices and distribute them to users. When users turn on their devices is, Setup Assistant will start.
 
 
 
