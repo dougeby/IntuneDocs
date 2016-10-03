@@ -50,7 +50,7 @@ Remote lock is not supported for Windows PCs enrolled with the Intune software c
 3.  In the list, choose the device or devices that you want to lock. On the taskbar, choose **Remote Tasks** and select **Remote Lock**.
 
 ## Reset the passcode on a device
-If a user forgets a passcode, you can help by removing the passcode from a device or by forcing a new temporary passcode on a device. The table below lists how passcode reset works on different mobile platforms.
+If a user forgets a passcode, you can help by removing the passcode from a device or by forcing a new temporary passcode on a device. The following table lists how passcode reset works on different mobile platforms.
 
 |Platform|Passcode reset|
 |------------|------------------|
