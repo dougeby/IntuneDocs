@@ -36,7 +36,7 @@ For supervised devices running iOS 9.3 or later, you can use the hidden and show
 - Specify a list of apps that will be hidden from users. Users cannot view, or launch these apps.
 - Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
 
-The apps you can specify include both apps you have deployed, and the built-in iOS apps like Messages and Notes. For details, see [iOS policy settings in Microsoft Intune]( https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
+The apps you can specify include both apps you have deployed, and the built-in iOS apps like Messages and Notes. For details, see [iOS policy settings in Microsoft Intune]( /intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 <!---TFS 1279009 checked--->
 ### Allowed and blocked apps policy for Samsung KNOX devices
 You can now configure a custom policy for Samsung KNOX devices that lets you create one of the following:
@@ -44,7 +44,7 @@ You can now configure a custom policy for Samsung KNOX devices that lets you cre
 - A list of apps that users of the device are allowed to install from the Google Play store. No other apps can be installed from the store.
 
 These settings can only be used by devices that run Samsung KNOX.
-For details, see [Use custom policies to allow and block apps for Samsung KNOX devices]( custom-policy-to-allow-and-block-samsung-knox-apps.md).
+For details, see [Use custom policies to allow and block apps for Samsung KNOX devices](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps).
 <!---TFS 1311629 checked --->
 ### New apps compatible with mobile application management (MAM) policies
 The Yammer app for [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) is now compatible with [Intune mobile application management (MAM) policies](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), whether or not the device is enrolled.
@@ -61,7 +61,7 @@ With the release of the new RMS sharing app, we are removing the following Intun
 - Intune PDF Viewer
 - Intune Image Viewer for Android from Google Play
 
-Instead of using the Intune Viewer apps, we recommend using the new [Rights Management app (RMS sharing) for Android](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app), which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. When the Intune viewer app is no longer supported, it will be removed from the Google Store and will not be available for future use.
+Instead of using the Intune Viewer apps, we recommend using the new [Rights Management app (RMS sharing) for Android](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app), which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. When the Intune viewer app is no longer supported, it will be removed from the Google Store and will not be available for future use.
 
 ## Device management
 ### Android 7.0 support
@@ -165,7 +165,7 @@ Intune increased the maximum configurable device enrollment limit from 5 to 15 d
 <!---TFS 1289896 --->
 
 #### TeamViewer Integration for Windows PCs running the Intune client software
-[TeamViewer](https://www.teamviewer.com) integration for Windows PCs that run the Intune client lets you establish remote assistance sessions with Windows PCs to help support end-user helpdesk departments. This includes Windows 7, 8, 8.1 and Windows 10. For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+[TeamViewer](https://www.teamviewer.com) integration for Windows PCs that run the Intune client lets you establish remote assistance sessions with Windows PCs to help support end-user helpdesk departments. This includes Windows 7, 8, 8.1 and Windows 10. For details, see [Common Windows PC management tasks with the Microsoft Intune computer client](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
 <!---TFS 1284856--->
 
 ### Company Portal updates
@@ -191,7 +191,7 @@ Only use DEM accounts when user-less enrollment for shared devices is unavailabl
 <!---TFS 1233681--->
 
 ### Change of names for Windows features
-- [Microsoft Passport for Windows](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) is now known as **Windows Hello for Business**.
+- [Microsoft Passport for Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) is now known as **Windows Hello for Business**.
 - [Enterprise data protection](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) is now known as **Windows Information Protection**.
 
 ## June 2016
@@ -215,10 +215,10 @@ Service health information for Intune has been moved to a central location with 
 	* Must be compliant with any deployed Intune compliance policies
 
  End users of noncompliant devices will be prompted to enroll, and remediate any compliance issues to gain access.
-- **Conditional access for browser.** You can set a conditional access policy for [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md) and [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md) so that they can only be accessed from supported web browsers on managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
+- **Conditional access for browser.** You can set a conditional access policy for [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) and [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) so that they can only be accessed from supported web browsers on managed and compliant iOS and Android devices. End users who try to sign in to Outlook Web Access (OWA) and SharePoint sites with iOS and Android devices will be prompted to enroll their device with Intune as well as to fix any non-compliance issues before they can complete sign-in.
 <!---TFS 1175844--->
 
-- **Dynamics CRM Online supports conditional access.** You can set a conditional access policy for [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md) so that it can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to the Dynamics CRM mobile app on iOS and Android will be prompted to enroll with Intune as well as remediate any non-compliance issues before sign-in can complete.
+- **Dynamics CRM Online supports conditional access.** You can set a conditional access policy for [Dynamics CRM Online](/intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) so that it can only be accessed by managed and compliant iOS and Android devices. End users who try to sign in to the Dynamics CRM mobile app on iOS and Android will be prompted to enroll with Intune as well as remediate any non-compliance issues before sign-in can complete.
 <!---TFS1295358--->
 
 ##E Company Portal updates
@@ -255,9 +255,9 @@ For more information, see [this blog post](https://blogs.technet.microsoft.com/m
 
 
 ### App management
-- **MAM SDK: Support PIN length configuration.** You will be able to specify the length of the PIN for MAM apps similar to a device PIN. This will require end users to comply with the new restrictions you set. They will see a slightly modified PIN screen to account for the longer input. For details, see [MAM policy settings for Android](android-mam-policy-settings.md), and [MAM policy settings for iOS](ios-mam-policy-settings.md).
+- **MAM SDK: Support PIN length configuration.** You will be able to specify the length of the PIN for MAM apps similar to a device PIN. This will require end users to comply with the new restrictions you set. They will see a slightly modified PIN screen to account for the longer input. For details, see [MAM policy settings for Android](/intune/deploy-use/android-mam-policy-settings), and [MAM policy settings for iOS](/intune/deploy-use/ios-mam-policy-settings).
 
-- **Skype for Business for iOS and Android.** You can now target Skype for business with [MAM without enrollment policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md). Once users log in, the MAM policies will be applied.
+- **Skype for Business for iOS and Android.** You can now target Skype for business with [MAM without enrollment policies](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune). Once users log in, the MAM policies will be applied.
 
 - **New apps available for management with MAM policies.** The Microsoft Word, Excel, and PowerPoint apps for Android can now be associated with MAM policies on devices that are not enrolled with Intune. For a full list of supported apps, go the Microsoft Intune mobile application gallery on the [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) page.
 
@@ -311,7 +311,7 @@ Intune notification rules define who an email alert will be sent to from Intune.
 All of these features are also supported for hybrid customers (Configuration Manager integrated with Intune).
 ### App management
 - **MAM user compliance.**
-You can now view the [status](monitor-mobile-app-management-policies-with-Microsoft-Intune.md) of your application management policies for any user in your Azure Active Directory (AAD) tenant. This includes:
+You can now view the [status](/intune/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) of your application management policies for any user in your Azure Active Directory (AAD) tenant. This includes:
    - Devices
    - Apps on the device
 
@@ -323,7 +323,7 @@ You can now view the [status](monitor-mobile-app-management-policies-with-Micros
 
 
 - **MAM controls to prevent Outlook contacts sync (Android).**
-A new setting is available for [mobile application management](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) without device enrollment. This setting  allows you to prevent an application from syncing contacts to the native address book on Android devices. When this setting is enabled, targeted applications will no longer be able to save contacts to the native address book. When this setting is disabled, targeted applications will be able to save contacts to the native address book. When you [remotely wipe a device or app](wipe-managed-company-app-data-with-Microsoft-Intune.md), contacts that have already been saved to the native address book will be removed. This new setting is supported initially by the Outlook application on Android devices.
+A new setting is available for [mobile application management](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) without device enrollment. This setting  allows you to prevent an application from syncing contacts to the native address book on Android devices. When this setting is enabled, targeted applications will no longer be able to save contacts to the native address book. When this setting is disabled, targeted applications will be able to save contacts to the native address book. When you [remotely wipe a device or app](/intune/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune), contacts that have already been saved to the native address book will be removed. This new setting is supported initially by the Outlook application on Android devices.
 
 ### Device management
 - **Phone number identification for corporate-owned devices.** Phones that are categorized as "Corporate" are now identified with their full phone number when, for example, you run a mobile device inventory report. BYOD phone numbers continue to be masked with ****, with only the last 4 digits displayed.
@@ -388,7 +388,7 @@ With the exception of the update to the Windows 10 general configuration policy,
 ### App management
 
 - **Take advantage of iOS "Open-in" management for devices that are enrolled in a third-party MDM solution**
-You can use your third-party mobile device management (MDM) vendor to take advantage of iOS "Open-In" management. You can set the restrictions in the configuration profile settings and deploy the app using [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
+You can use your third-party mobile device management (MDM) vendor to take advantage of iOS "Open-In" management. You can set the restrictions in the configuration profile settings and deploy the app using [Manage data transfer between iOS apps](/intune/deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune).
 
      This approach has two main benefits:
 
@@ -401,27 +401,27 @@ You can now manage the Microsoft Outlook app on devices that are not enrolled in
 
 
 - **Mobile app configuration policies give you more flexibility to specify user details for iOS apps**
-You can supply user settings that an iOS app might need when it is opened. For example, you can supply a network port, or a user name. For details, see [Configure iOS apps with mobile app configuration policies in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).
+You can supply user settings that an iOS app might need when it is opened. For example, you can supply a network port, or a user name. For details, see [Configure iOS apps with mobile app configuration policies in Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 
 - **Deploy Adobe Reader for Microsoft Intune to Intune-managed iOS devices in your enterprise**
 The Adobe Reader app for iOS can now be managed on enrolled devices with the Intune mobile application management policy.
 
 - **Ensure deployed web clips are opened in the managed browser**
-You can deploy targeted web clips that can only be opened using the managed browser on iOS and Android devices. For example, you deploy links to corporate resources through the Company Portal, and when users navigate to the links, they open directly into the managed browser where they can be protected by MAM policy. For details, see [Deploy apps ](deploy-apps.md).
+You can deploy targeted web clips that can only be opened using the managed browser on iOS and Android devices. For example, you deploy links to corporate resources through the Company Portal, and when users navigate to the links, they open directly into the managed browser where they can be protected by MAM policy. For details, see [Deploy apps ](/intune/deploy-use/deploy-apps).
 
 
 - **Find, manage, and distribute Windows Store for Business apps for Windows 10 devices from the Intune administrator console**
-Support for Windows Store for Business is available in Intune to help you find, manage, and distribute apps to the Windows 10 devices you’re managing. Windows Store for Business lets you manage the process of deploying and monitoring these apps from the Intune administrator console—the same console you use to manage your other apps. Specifically, Windows Store for Business manages the content and licensing  of “online licensed apps”. For details, see [Manage apps you purchased from the Windows Store for Business](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md).
+Support for Windows Store for Business is available in Intune to help you find, manage, and distribute apps to the Windows 10 devices you’re managing. Windows Store for Business lets you manage the process of deploying and monitoring these apps from the Intune administrator console—the same console you use to manage your other apps. Specifically, Windows Store for Business manages the content and licensing  of “online licensed apps”. For details, see [Manage apps you purchased from the Windows Store for Business](/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 
 ### Device management
 - **PFX certificates distribution for iOS devices**
-Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](secure-resource-access-with-certificate-profiles.md).
+Intune administrators can create and deploy iOS PFX certificates for Wi-Fi, email, and VPN authentication on iOS devices. This feature is already available for Android and Windows 10 devices. For details, see [Enable access to company resources using certificate profiles ](/intune/deploy-use/secure-resource-access-with-certificate-profiles).
 
 
 - **Apply apps and policies to different device groups based on user category selection**
-Intune administrators can now define custom device categories for users to select from during enrollment. For example, administrators might want their users to specify if they're enrolling a device used for the "Cash Register" or "Delivery Truck" or "Inventory Room." The category selected will cause the device to become a member of an Intune device group, which can be used for deploying different apps and policies to the enrolled device. For details, see [Categorize devices with device group mapping](categorize-devices-with-device-group-mapping-in-microsoft-intune.md).
+Intune administrators can now define custom device categories for users to select from during enrollment. For example, administrators might want their users to specify if they're enrolling a device used for the "Cash Register" or "Delivery Truck" or "Inventory Room." The category selected will cause the device to become a member of an Intune device group, which can be used for deploying different apps and policies to the enrolled device. For details, see [Categorize devices with device group mapping](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune).
 
 ### Changes and updates to Microsoft Company Portal
 The following changes have been made to the Company Portal in this release.
@@ -466,10 +466,10 @@ Intune administrators can now view the status of Windows 10 Device Health Attest
 	* Secure Boot
 	* Code Integrity
 
-	Read [Introduction to device compliance policies for Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) for more details on the device health setting, collected data points, and the health attestation report. The [HAS service details](https://msdn.microsoft.com/en-us/library/dn934876.aspx) explains the service in depth.
+	Read [Introduction to device compliance policies for Microsoft Intune](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) for more details on the device health setting, collected data points, and the health attestation report. The [HAS service details](https://msdn.microsoft.com/en-us/library/dn934876.aspx) explains the service in depth.
 
 * **Windows 10 Passport for Work Policy and certificate management**
-With Intune, you can [integrate with Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md), which is an alternative sign-in method for Windows 10 that uses Active Directory or an Azure Active Directory account to replace a password, smart card, or virtual smart card. Passport lets you use a user gesture to log in instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
+With Intune, you can [integrate with Microsoft Passport for Work](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune), which is an alternative sign-in method for Windows 10 that uses Active Directory or an Azure Active Directory account to replace a password, smart card, or virtual smart card. Passport lets you use a user gesture to log in instead of a password. A user gesture might be a simple PIN, biometric authentication such as Windows Hello, or an external device such as a fingerprint reader.
 
 * **VPN for specific apps**
 You can select apps that automatically connect to your corporate network over VPN. Create the list of apps when you set up the VPN profile, as described in Help users connect to their work using VPN profiles with Microsoft Intune.
@@ -479,10 +479,10 @@ You can now issue a remote full wipe of Windows 10 desktop devices enrolled in I
 
 
 ### Apple Volume Purchase Program (VPP) update
-Intune can now help you [manage apps you purchased through the Apple Volume Purchase Program (VPP) for Business](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md). This includes synchronizing license information between Apple and Intune, and tracking how many copies of each app you have deployed.
+Intune can now help you [manage apps you purchased through the Apple Volume Purchase Program (VPP) for Business](/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune). This includes synchronizing license information between Apple and Intune, and tracking how many copies of each app you have deployed.
 
 ### Use IMEI numbers to identify corporate-owned devices
-You can now [import international mobile equipment identity (IMEI) numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) for mobile device platforms that have an IMEI number to help identify corporate-owned mobile devices. Once enrolled in Intune, devices with imported IMEI numbers are tagged as Corporate, which can be used for applying policies that are different than those applied to personally owned devices.
+You can now [import international mobile equipment identity (IMEI) numbers](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) for mobile device platforms that have an IMEI number to help identify corporate-owned mobile devices. Once enrolled in Intune, devices with imported IMEI numbers are tagged as Corporate, which can be used for applying policies that are different than those applied to personally owned devices.
 
 ### More apps are now compatible with Intune MAM policies
 Additional apps from Microsoft partners are now compatible with Intune mobile application management (MAM) policies (for devices managed by Intune):
