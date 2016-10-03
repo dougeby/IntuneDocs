@@ -29,7 +29,7 @@ ms.suite: ems
 
 Android for Work apps work differently from standard Android Apps. All apps you install for Android for Work come from the Google Play for Work store. You log into the store, select the apps you want, and approve them.
 The app then appears in the **Volume-Purchased Apps** node of the Intune console. From here, you can manage deployment of the app in the same way you would deploy any other app.
-Additionally, if you have created your own line of business (LOB) app, you can deploy these. To do this, you need to sign up for a Google Developer account. This lets you publish apps to a private area in the Google Play store and then synchronize them with Intune.
+Additionally, if you have created your own line of business (LOB) apps, you can deploy them. To do that, you need to sign up for a Google Developer account which lets you publish apps to a private area in the Google Play store and then synchronize them with Intune.
 
 ## Before you start
 
@@ -51,7 +51,7 @@ Additionally, if you have created your own line of business (LOB) app, you can d
 1. Go to the Google Play Developer Console, [play.google.com/apps/publish](play.google.com/apps/publish).
 2. Sign in with the same account you used to configure the connection between Intune and Android for Work. If you are signing in for the first time, you must register, and pay a fee to become a member of the Google Developer program.
 3. In the console, choose **Add new application**.
-4. The process to upload and provide information about your app is the same as for publishing any app to the Google Play store. However, you must select the setting **Only make this application available to my organization (<*organization name*>)** as shown below.<br>
+4. You upload and provide information about your app in the same way as you publish any app to the Google Play store. However, you must select the setting **Only make this application available to my organization (<*organization name*>)** as shown below.<br>
   ![Option to only make app available to your organization](/intune/deploy-use/media/restrict.png)<br>
 This ensures that the app is only available to your organization, and is not available in the public Google Play store.
 For more information about how to upload and publish Android apps, see the [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469).
@@ -66,6 +66,6 @@ Typically, Intune will synchronize twice a day with the Google Play for Work sto
 2. On the **Android for Work Mobile Device Management Setup** page, choose **Sync Now**.
 3. The page also displays the time and status of the last sync.
 
-When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** workspace, you can [deploy it just like you would any other app](deploy-apps-in-microsoft-intune.md). You can deploy the app to users or devices. Currently, only the deployment action of **Required** and **Uninstall** can be used. 
+When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** workspace, you can [deploy it just like you would any other app](deploy-apps-in-microsoft-intune.md). You can deploy the app to users or devices. Currently, you can only select the **Required** and **Uninstall** actions. 
 
 After you deploy the app, it will be installed on the devices you targeted. The user of the device will not be asked for approval.

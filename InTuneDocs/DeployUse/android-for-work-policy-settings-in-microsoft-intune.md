@@ -54,7 +54,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 
 |Setting name|Details|
 |----------------|-|
-|**Allow data sharing between work and personal profiles**||
+|**Allow data sharing between work and personal profiles**|Lets users access saved app data between their work and personal profiles.|
 |**Hide work profile notifications when the device is locked**<br>(Android 6 and later)|Don't show any notifications from the work profile when the device is locked.|
 |**Set default app permission policy**|Sets the default permission policy for all apps in the work profile. Choose from<br>-**Prompt** - Ask the user to grant permissions to apps that require them.<br>-**Auto grant** - Automatically grant apps in the work profile any permissions they need.<br>-**Auto deny** - Automatically deny apps in the work profile any permissions they need.|
 
