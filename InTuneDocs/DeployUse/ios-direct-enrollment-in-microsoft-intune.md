@@ -25,37 +25,43 @@ ms.suite: ems
 
 ---
 
-# Directly enroll iOS devices using Apple Configurator
-Intune supports the enrollment of corporate-owned iOS devices using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process does not factory-reset the device and enrolls the device with a predefined policy. This method is for devices with **No user affinity** and requires you to USB-connect the iOS device to a Mac computer to setup corporate enrollment. When directly enrolling iOS devices, you can enroll a device without acquiring the device's serial number. You can also name the device for identification purposes before Intune captures the device name during enrollment. The Company Portal app is not supported for direct enrolled devices. This guidance assumes you are using Apple Configurator 2.0 on a Mac computer.
+# Directly enroll iOS devices by using Apple Configurator
+Intune supports the enrollment of corporate-owned iOS devices by using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process does not factory-reset the device and enrolls the device with a predefined policy. This method is for devices with **No user affinity** and requires you to USB-connect the iOS device to a Mac computer to set up corporate enrollment.
 
-1.  **Create a profile for devices**
-    A device enrollment profile defines the settings applied to devices. If you have not already, create a device enrollment profile for iOS devices enrolled using Apple Configurator.
+When directly enrolling iOS devices, you can enroll a device without acquiring the device's serial number. You can also name the device for identification purposes before Intune captures the device name during enrollment. The Company Portal app is not supported for direct enrolled devices. This guidance assumes you are using Apple Configurator 2.0 on a Mac computer.
 
-    1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add…**.
+1.  If you have not already, create a device enrollment profile for iOS devices enrolled through Apple Configurator. A device enrollment profile defines the settings applied to devices.
+
+    1.  In the [Microsoft Intune administration console](http://manage.microsoft.com) go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add**.
 
         ![Create device enrollment profile page](../media/pol-sa-corp-enroll.png)
 
     2.  Enter details for the device profiles:
 
-        -   **Name** – Name of the device enrollment profile. Not visible to users.
+        -   **Name**: Name of the device enrollment profile. Not visible to users.
 
-        -   **Description** - Description of the device enrollment profile. Not visible to users.
+        -   **Description**: Description of the device enrollment profile. Not visible to users.
 
-        -   **User affiliation** – Specifies how devices are enrolled. For Direct Enrollment, select **No user affinity**.
+        -   **User affiliation**: Specifies how devices are enrolled. For Direct Enrollment, select **No user affinity**.
 
-        -   **Device group pre-assignment** – All devices deployed this profile will initially belong to this group. You can reassign devices after enrollment.
+        -   **Device group pre-assignment**: All devices deployed this profile will initially belong to this group. You can reassign devices after enrollment.
 
             [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
     3.  Choose **Save Profile** to add the profile.
 
-5.  **Export a profile as .mobileconfig to deploy to iOS devices**
-	Select the device profile you created. Choose **Export…** in the taskbar. Choose **Download profile** and save the downloaded .mobileconfig file.
+5.  Export a profile as .mobileconfig to deploy to iOS devices:
 
-6.  **Transfer the file**
-    Copy the downloaded .mobileconfig file to a Mac computer.
+	1.   Select the device profile you created.
+
+    2.   Choose **Export** in the taskbar.
+
+    3.   Choose **Download profile** and save the downloaded .mobileconfig file.
+
+6.  Transfer the file by copying the downloaded .mobileconfig file to a Mac computer.
     > [!NOTE]
     > The enrollment profile URL is valid for two weeks from when it is exported. After two weeks, you must export a new enrollment profile URL to enroll iOS devices with Setup Assistant.
+
 7.  **Prepare the device with Apple Configurator**
     iOS devices are connected to the Mac computer and enrolled for mobile device management.
 
