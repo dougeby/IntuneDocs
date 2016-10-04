@@ -30,7 +30,7 @@ Instead of [enrolling Windows PCs as mobile devices](set-up-windows-device-manag
 
 Intune manages Windows PCs by using policies that are similar to those used by Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs). If you are managing Active Directory domain-joined computers with Intune, [be sure that Intune policies do not conflict with any GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) that are in place for your organization.
 
-While the Intune software client supports [management capabilities that help protect PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) by managing software updates, Windows Firewall, and Endpoint Protection, PCs that are managed with the Intune software client cannot be targeted by other Intune policies. That includes those **Windows** policy settings that are specific to mobile device management.
+While the Intune software client supports [management capabilities that help protect PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) by managing software updates, Windows Firewall, and Endpoint Protection, PCs that are managed with the Intune software client cannot be targeted by other Intune policies, including those **Windows** policy settings that are specific to mobile device management.
 
 > [!NOTE]
 > Devices that are running Windows 8.1 or later can be managed with either the Intune client or as mobile devices. This topic applies to computers that are running the Intune software client. You can't simultaneously use the Intune client and enroll the device in mobile device management.
