@@ -28,7 +28,7 @@ ms.suite: ems
 # Manage Windows PCs with Intune PC client software
 Instead of [enrolling Windows PCs as mobile devices](set-up-windows-device-management-with-microsoft-intune.md), you can enroll and manage Windows PCs by installing the Intune client software.
 
-Intune manages Windows PCs by using policies that are similar to those that Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs) use. If you are managing Active Directory domain-joined computers with Intune, [be sure that Intune policies do not conflict with any GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) that are in place for your organization.
+Intune manages Windows PCs by using policies that are similar to those used by Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs). If you are managing Active Directory domain-joined computers with Intune, [be sure that Intune policies do not conflict with any GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) that are in place for your organization.
 
 While the Intune software client supports [management capabilities that help protect PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) by managing software updates, Windows Firewall, and Endpoint Protection, PCs that are managed with the Intune software client cannot be targeted by other Intune policies. That includes those **Windows** policy settings that are specific to mobile device management.
 
@@ -66,7 +66,7 @@ After the Intune client software is installed, management capabilities include:
 - [Software update settings](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
 - Compliance settings reporting
 
-Certain management options that are available to PCs managed as mobile devices are unavailable to PCs that managed with the Intune software client, including:
+Certain management options that are available to PCs managed as mobile devices are unavailable to PCs managed with the Intune software client, including:
 
 -   Full wipe (selective wipe is available)
 -   Conditional access
