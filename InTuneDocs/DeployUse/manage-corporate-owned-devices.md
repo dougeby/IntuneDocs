@@ -27,11 +27,11 @@ ms.suite: ems
 
 # Enroll corporate-owned devices with Microsoft Intune
 
-You can enroll organization-owned or corporate-owned devices to manage by using Intune in a variety of ways, depending on the device, how the device was purchased, and the needs of the organization. You also can install the Company Portal app to enroll and manage corporate-owned devices, like in a "bring your own device" (BYOD) scenario.
+You can enroll organization-owned or corporate-owned devices to manage by using Intune in a variety of ways, depending on the type of device, how the device was purchased, and the needs of the organization. You also can install the Company Portal app to enroll and manage corporate-owned devices, like in a "bring your own device" (BYOD) scenario.
 
 ## Corporate-owned iOS devices
 
-These enrollment methods are good for "choose your own device" (CYOD) scenarios, in which the organization purchases the devices for users, but chooses to manage the device. If your organization purchases iOS devices, you can preconfigure enrollment so that the device is managed from the first time the user turns it on. Intune supports enrollment via [Apple's Device Enrollment Program (DEP)](ios-device-enrollment-program-in-microsoft-intune.md), or by using the Apple Configurator tool running on a Mac computer for [direct](ios-direct-enrollment-in-microsoft-intune.md) or [Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md) enrollment.
+Corporate-owned device enrollment methods are a good choice for "choose your own device" (CYOD) scenarios. In this scenario, the organization purchases the device for a user, but chooses to manage the device. If your organization purchases iOS devices, you can preconfigure enrollment so that the device is managed from the first time the user turns it on. Intune supports enrollment via [Apple's Device Enrollment Program (DEP)](ios-device-enrollment-program-in-microsoft-intune.md), or by using the Apple Configurator tool running on a Mac computer for [direct](ios-direct-enrollment-in-microsoft-intune.md) or [Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md) enrollment.
 
 Learn how to [enroll corporate-owned iOS devices](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
