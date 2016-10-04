@@ -5,7 +5,7 @@ title: Terms of Delegated Administration for Microsoft Intune | Microsoft Intune
 description:
 keywords:
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
