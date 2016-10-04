@@ -46,14 +46,6 @@ The new app will also allow users to leverage additional platform features like 
 
 Intune now supports Android for Work, an Android device program from Google that helps secure company data, apps and devices in the enterprise. You can read more about the features of Android for Work on the [Google for Work](https://www.google.com/work/android) website.
 
-With Intune, you can now:
-
-* Enroll Android for Work devices
-* Configure general and custom (OMA-URI) policies for feature and security settings
-* Support resource access profiles like Wi-Fi, VPN, email (Gmail and Nine Work) and certificates
-* Manage apps, including line-of-business apps, from the Google Play for Work store
-* Provide necessary mobile app configuration policies settings
-
 [Read Microsoft’s announcement about Intune support for Android for Work]( https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
 <!--TFS 1043303-->
 
