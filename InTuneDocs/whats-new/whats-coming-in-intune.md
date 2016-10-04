@@ -61,8 +61,6 @@ With Intune, you can now:
 ### Xamarin SDK for Intune apps is available
 The Intune App SDK Xamarin component allows you to enable the Intune mobile app management features in your mobile iOS and Android apps built with Xamarin. You can find the component in the [Xamarin store](https://components.xamarin.com/view/Microsoft.Intune.MAM) or on the [Microsoft Intune Github page](https://github.com/msintuneappsdk).-->
 
-<!--TFS 1168019 awaiting Chris Green / PM signoff on iX text
-
 ### Android Samsung KNOX compatibility with Intune
 
 Certain models of the Samsung Galaxy Ace phone cannot be managed by Intune as Samsung KNOX devices. When you enroll these devices with Intune, they will instead be managed as standard Android devices.
@@ -75,7 +73,7 @@ The model numbers affected are:
 * SM-G313U
 
 You and your end users need take no further action.
-For more information, visit the [Samsung KNOX](https://www.samsungknox.com) website.-->
+For more information, visit the [Samsung KNOX](https://www.samsungknox.com) website.
 
 <!--TFS 1173566 iX blurb provided by Barry; requires PM signoff
 
@@ -84,9 +82,11 @@ For more information, visit the [Samsung KNOX](https://www.samsungknox.com) webs
 In addition to Windows 8.1 and later, administrators can now enable multi-factor authentication for Android and iOS devices in the Microsoft Intune Enrollment application. -->    
 
 ### Company Portal app for Windows 8 is deprecated; support for Windows Phone 8 and Windows RT platforms are being deprecated
-Starting in November 2016, Microsoft Intune will deprecate support for Windows 8 and Windows Phone 8 Company Portal apps. Microsoft Intune will also deprecate support for the Windows Phone 8 and Windows RT platforms. As a consequence, you will not be able to enroll or update any Windows Phone 8 or Windows RT devices.
+Starting in October 2016, Microsoft Intune will deprecate support for the Windows 8 Company Portal. Microsoft Intune will also deprecate support for the Windows Phone 8 and Windows RT platforms. As a consequence, you will not be able to enroll or update any Windows Phone 8 or Windows RT devices.
 
 You can continue to manage Windows Phone 8, Windows RT  and Windows 8 devices that are already enrolled. Update Windows Phone 8 and Windows 8 devices to Windows 8.1 and Windows Phone 8.1, and use the corresponding Windows 8.1 and Windows Phone 8.1 Company Portal apps to continue distributing apps to these devices without disruptions.
+
+Starting in November 2016, we will deprecate support for the Windows Phone 8 Company Portal.
 <!--TFS 1255391-->
 
 ### Conditional access for mobile application management
