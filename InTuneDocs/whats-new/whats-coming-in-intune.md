@@ -49,10 +49,6 @@ Intune now supports Android for Work, an Android device program from Google that
 [Read Microsoft’s announcement about Intune support for Android for Work]( https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
 <!--TFS 1043303-->
 
-<!--TFS 1152340 is lacking any text currently; current guidance was to use similar text to this previous Xamarin entry
-### Xamarin SDK for Intune apps is available
-The Intune App SDK Xamarin component allows you to enable the Intune mobile app management features in your mobile iOS and Android apps built with Xamarin. You can find the component in the [Xamarin store](https://components.xamarin.com/view/Microsoft.Intune.MAM) or on the [Microsoft Intune Github page](https://github.com/msintuneappsdk).-->
-
 ### Android Samsung KNOX compatibility with Intune
 
 Certain models of the Samsung Galaxy Ace phone cannot be managed by Intune as Samsung KNOX devices. When you enroll these devices with Intune, they will instead be managed as standard Android devices.
@@ -110,6 +106,7 @@ You can enable your apps to use Intune mobile application management (MAM) polic
 
 * Support for Android N
 * Support for Intune MAM policies without requiring device enrollment
+* Support for Xamarin-based Android apps
 <!--TFS 1319511; please create new TFS entry for WN text associated with this TFS item-->
 
 <!--TFS 1319613; no iX review on PM text blurb
