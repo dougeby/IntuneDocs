@@ -86,6 +86,6 @@ When you're directly enrolling iOS devices, you can enroll a device without acqu
 
     6.  When the **Profile Installed** box confirms the profile as **Installed**, choose **Done**.
 
-9.  On the iOS device, open **Settings** and go to **General** &gt; **Device Management** &gt; **Management Profile** &gt;. Confirm that the profile installation is listed, and check the iOS policy restrictions and installed apps. Policy restrictions and apps might take up to 10 minutes to appear on the device.
+9.  On the iOS device, open **Settings** and go to **General** &gt; **Device Management** &gt; **Management Profile**. Confirm that the profile installation is listed, and check the iOS policy restrictions and installed apps. Policy restrictions and apps might take up to 10 minutes to appear on the device.
 
 10.  Distribute devices. The iOS device is now enrolled with Intune and managed.
