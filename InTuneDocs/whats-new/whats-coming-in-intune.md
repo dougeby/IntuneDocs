@@ -107,6 +107,8 @@ You can enable your apps to use Intune mobile application management (MAM) polic
 * Support for Android N
 * Support for Intune MAM policies without requiring device enrollment
 * Support for Xamarin-based Android apps
+
+You can test MAM without device enrollment and Xamarin support in the public preview of the Android App Wrapping Tool here: [https://github.com/msintuneappsdk/intune-app-wrapper-android-preview](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)
 <!--TFS 1319511; please create new TFS entry for WN text associated with this TFS item-->
 
 <!--TFS 1319613; no iX review on PM text blurb
