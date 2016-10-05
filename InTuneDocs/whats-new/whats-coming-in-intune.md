@@ -47,6 +47,8 @@ The new app will also allow users to leverage additional platform features like 
 Intune now supports Android for Work, an Android device program from Google that helps secure company data, apps and devices in the enterprise. You can read more about the features of Android for Work on the [Google for Work](https://www.google.com/work/android) website.
 
 [Read Microsoft’s announcement about Intune support for Android for Work]( https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
+
+<!---This month, some newly provisioned Intune tenants will start seeing the Android for Work features. We will announce later when existing tenants will begin to see this feature.--->
 <!--TFS 1043303-->
 
 ### Android Samsung KNOX compatibility with Intune
