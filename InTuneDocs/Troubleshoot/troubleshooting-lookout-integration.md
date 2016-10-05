@@ -92,4 +92,4 @@ As long as the new user is in one of the  enrollment groups specified in the Loo
 
 
 ### See also
-[Set up you subscription with Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+[Set up you subscription with Lookout MTP](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
