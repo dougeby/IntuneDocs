@@ -1,3 +1,4 @@
+
 ---
 # required metadata
 
@@ -504,7 +505,7 @@ Note that an identity is simply defined as a string. Identities are case-insensi
 An identity is simply the username of an account (e.g. user@contoso.com). Developers can set the identity of the app on the following different levels: 
 
 * **Process identity**: the process identity sets the process-wide identity and is mainly used for single identity applications. This identity affects all operations, files, and UI.
-* **UI identity**: determines what policies are applied to UI operations on the main thread such as cut/copy/paste, PIN, authentication, data sharing, etc. The UI identity does not affect file operations (encryption, backup, etc.). 
+* **UI identity**: determines what policies are applied to UI operations on the main thread such as cut/copy/paste, PIN, authentication, data sharing, etc. The UI identity does not affect file operations (encryption, backup, etc.).
 * **Thread identity**: The thread identity affects what policies are applied on the current thread. This affects all operations, files, and UI.
 
 It's the app's responsibility to set the identities appropriately whether or not the user is managed.
@@ -530,9 +531,12 @@ If the app creates files that contain data from both managed and unmanaged users
  
 If the app contains a Share Extension, the owner of the item being shared can be retrieved using the  `protectionInfoForItemProvider` method in `IntuneMAMDataProtectionManager`. If the shared item is a file, the SDK will handle setting the file owner. If the shared item is data, it’s the app's responsibility to set the file owner if this data is persisted to a file, and to call the `setUIPolicyIdentity` API (described below) before displaying this data in the UI.
  
-#Enabling Multi-Identity
+##Turning On Multi-Identity
  
-By default apps are considered single identity and the process identity is set to the enrolled user by the SDK. To enable multi-identity support, a boolean setting with the name 'MultiIdentity' with value 'YES' should be added to the IntuneMAMSettings dictionary within the apps' Info.plist file. When multi-identity is enabled, the process identity, UI identity, and thread identities will be set to nil and it will be the app's responsibility to set them appropriately.
+By default apps are considered single identity and the SDK sets the process identity to the enrolled user. To enable multi-identity support, a boolean setting with the name `MultiIdentity` with value 'YES' must be added to the **IntuneMAMSettings** dictionary within the app's Info.plist. 
+
+> [!NOTE]
+> When multi-identity is enabled, the process identity, UI identity, and thread identities will be set to nil. It is the app's responsibility to set them appropriately.
 
  
 ##Switching Identities
