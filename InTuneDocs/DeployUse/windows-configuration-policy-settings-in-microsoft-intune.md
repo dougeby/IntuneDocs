@@ -6,7 +6,7 @@ description: Use the Intune Windows general configuration policy (Windows 8.1 an
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,24 +36,23 @@ Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and
 
 ## Security settings
 
-|Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|------|----------------------------|--------------|
-|**Required password type**|Specifies the type of password that's required, such as alphanumeric or numeric only.|Yes|Yes|
-|**Required password type – Minimum number of character sets**|Specifies how many different character sets must be included in the password. There are four character sets: lowercase letters, uppercase letters, numbers, and symbols. However, for iOS devices, this setting specifies the number of symbols that must be included in the password.|Yes|Yes|
-|**Minimum password length**<sup>1</sup>|Configures the minimum required length (in characters) for the password.|Yes|Yes|
-|**Number of repeated sign-in failures to allow before the device is wiped**|Wipes the device if the sign-in attempts fail this number of times.|Yes|Yes|
-|**Minutes of inactivity before screen turns off**|Specifies the number of minutes a device must be idle before a password is required to unlock it.| Yes|Yes|
-|**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|Yes|
-|**Remember password history**|Specifies whether the user can configure previously used passwords.|Yes|Yes|
-|**Remember password history** – **Prevent reuse of previous passwords**|Specifies the number of previously used passwords that are remembered by the device.|Yes|Yes|
-|**Allow picture password and PIN**|Enables the use of a picture password and PIN. A picture password lets the user sign in with gestures on a picture. A PIN lets users quickly sign in with a four-digit code.|Yes|Yes|
-<sup>1</sup> When you deploy a password length policy to devices that run Windows RT, users will be forced to reset their passwords, even if their current password complies with the policy requirements.
+|Setting name|Details|
+|----------------|------|
+|**Required password type**|Specifies the type of password that's required, such as alphanumeric or numeric only.|
+|**Required password type – Minimum number of character sets**|Specifies how many different character sets must be included in the password. There are four character sets: lowercase letters, uppercase letters, numbers, and symbols. However, for iOS devices, this setting specifies the number of symbols that must be included in the password.|
+|**Minimum password length**|Configures the minimum required length (in characters) for the password.|
+|**Number of repeated sign-in failures to allow before the device is wiped**|Wipes the device if the sign-in attempts fail this number of times.|
+|**Minutes of inactivity before screen turns off**|Specifies the number of minutes a device must be idle before a password is required to unlock it.|
+|**Password expiration (days)**|Specifies the number of days before the device password must be changed.|
+|**Remember password history**|Specifies whether the user can configure previously used passwords.|
+|**Remember password history** – **Prevent reuse of previous passwords**|Specifies the number of previously used passwords that are remembered by the device.|
+|**Allow picture password and PIN**|Enables the use of a picture password and PIN. A picture password lets the user sign in with gestures on a picture. A PIN lets users quickly sign in with a four-digit code.|
 
 ## Encryption settings
 
-|Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|-----|-----------------------------|--------------|
-|**Require encryption on mobile device**<sup>1</sup>|Requires that files on the device are encrypted.<br>For Windows Phone 8 devices, you must set this to **Yes**.|Yes|No|
+|Setting name|Details|
+|----------------|-----|
+|**Require encryption on mobile device**<sup>1</sup>|Requires that files on the device are encrypted.|
 <sup>1</sup> Additional information for devices that run Windows 8.1
 
 -   To enforce encryption on devices that run Windows 8.1, you must install the [December 2014 MDM client update for Windows](http://support.microsoft.com/kb/3013816) on each device.
@@ -66,57 +65,57 @@ Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and
 
 ## Malware settings
 
-|Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|-----|-----------------------------|--------------|
-|**Require network firewall**|Requires that the Windows Firewall is turned on.|Yes|No|
-|**Enable SmartScreen**|Requires the use of Windows SmartScreen.|Yes|No|
+|Setting name|Details|
+|----------------|-----|
+|**Require network firewall**|Requires that the Windows Firewall is turned on.|
+|**Enable SmartScreen**|Requires the use of Windows SmartScreen.|
 
 ## System settings
 
-|Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|-------|---------------------------|--------------|
-|**Require automatic updates**|Turns on the automatic updates setting on devices.|Yes|No|
-|**Require automatic updates – Minimum classification of updates to install automatically**|Chooses the classification of updates that will be installed automatically:<br /><br />-   **Important** – Installs all updates that are classified as important.<br />-   **Recommended** – Installs all updates that are classified as important or recommended.|Yes|No|
-|**User Account Control**|Requires the use of User Account Control (UAC) on devices.|Yes|No|
-|**Allow diagnostic data submission**|Enables the device to submit diagnostic information to Microsoft.|Yes|No|
+|Setting name|Details|
+|----------------|-------|
+|**Require automatic updates**|Turns on the automatic updates setting on devices.|
+|**Require automatic updates – Minimum classification of updates to install automatically**|Chooses the classification of updates that will be installed automatically:<br /><br />-   **Important** – Installs all updates that are classified as important.<br />-   **Recommended** – Installs all updates that are classified as important or recommended.|
+|**User Account Control**|Requires the use of User Account Control (UAC) on devices.|
+|**Allow diagnostic data submission**|Enables the device to submit diagnostic information to Microsoft.|
 
 
 ## Cloud settings – documents and data
 
-|Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|------|----------------------------|--------------|
-|**Work Folders URL**|Sets the URL of the work folder to allow documents to be synchronized across devices.|Yes|No|
+|Setting name|Details|
+|----------------|------|
+|**Work Folders URL**|Sets the URL of the work folder to allow documents to be synchronized across devices.|
 
 ## Email settings
 
-|Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|-----|-----------------------------|--------------|
-|**Make Microsoft account optional in Windows Mail application**|Enables access to the Windows Mail application without a Microsoft account.|Yes|No|
+|Setting name|Details|
+|----------------|-----|
+|**Make Microsoft account optional in Windows Mail application**|Enables access to the Windows Mail application without a Microsoft account.|
 
 ## Application settings - browser
 
-|Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|-----|-----------------------------|--------------|
-|**Allow autofill**|Enables users to change autocomplete settings in the browser.|Yes|No|
-|**Allow pop-up blocker**|Enables or disables the browser pop-up blocker.|Yes|No|
-|**Allow plug-ins**|Enables users to add plug-ins to Internet Explorer.|Yes|No|
-|**Allow active scripting**|Enables the browser to run scripts, such as Active X scripts.|Yes|No|
-|**Allow fraud warning**|Enables or disables warnings for potential fraudulent websites.|Yes|No|
-|**Allow intranet site for single word entry**|Enables use of a single word to direct Internet Explorer to a web site, such as Bing.|Yes|No|
-|**Allow automatic detection of intranet network**|Helps configure security for intranet sites in Internet Explorer.|Yes|No|
-|**Security level for Internet**|Sets the Internet Explorer security level for Internet sites.|Yes|No|
-|**Security level for intranet**|Sets the Internet Explorer security level for intranet sites.|Yes|No|
-|**Security level for trusted sites**|Configures the security level for the trusted sites zone.|Yes|No|
-|**Security level for restricted sites**|Configures the security level for the restricted sites zone.|Yes|No|
-|**Send Do Not Track header**|Sends  a do not track header to visited sites in Internet Explorer.|Yes|No|
-|**Allow Enterprise Mode menu access**|Lets users access the Enterprise Mode menu options from Internet Explorer.<br>If you select this setting, you can also specify a **Logging report location**, which contains a URL to a report that shows websites for which users have turned on Enterprise Mode access.|Yes|No|
-|**Enterprise Mode site list location**|Specifies the location of the list of websites that will use Enterprise Mode when it is active.|Yes|No|
+|Setting name|Details|
+|----------------|-----|
+|**Allow autofill**|Enables users to change autocomplete settings in the browser.|
+|**Allow pop-up blocker**|Enables or disables the browser pop-up blocker.|
+|**Allow plug-ins**|Enables users to add plug-ins to Internet Explorer.|
+|**Allow active scripting**|Enables the browser to run scripts, such as Active X scripts.|
+|**Allow fraud warning**|Enables or disables warnings for potential fraudulent websites.|
+|**Allow intranet site for single word entry**|Enables use of a single word to direct Internet Explorer to a web site, such as Bing.|
+|**Allow automatic detection of intranet network**|Helps configure security for intranet sites in Internet Explorer.|
+|**Security level for Internet**|Sets the Internet Explorer security level for Internet sites.|
+|**Security level for intranet**|Sets the Internet Explorer security level for intranet sites.|
+|**Security level for trusted sites**|Configures the security level for the trusted sites zone.|
+|**Security level for restricted sites**|Configures the security level for the restricted sites zone.|
+|**Send Do Not Track header**|Sends  a do not track header to visited sites in Internet Explorer.|
+|**Allow Enterprise Mode menu access**|Lets users access the Enterprise Mode menu options from Internet Explorer.<br>If you select this setting, you can also specify a **Logging report location**, which contains a URL to a report that shows websites for which users have turned on Enterprise Mode access.|
+|**Enterprise Mode site list location**|Specifies the location of the list of websites that will use Enterprise Mode when it is active.|
 
 ## Device capabilities settings - cellular
 
-|Setting name|Details|Windows 8.1 and Windows RT 8.1|Windows RT|
-|----------------|----|------------------------------|--------------|
-|**Allow data roaming**|Enables data roaming when the device is on a cellular network.|Yes|No|
+|Setting name|Details|
+|----------------|----|
+|**Allow data roaming**|Enables data roaming when the device is on a cellular network.|
 
 
 

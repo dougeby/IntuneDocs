@@ -6,7 +6,7 @@ description: Use this topic to synchronize, then deploy Android for Work apps fr
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
