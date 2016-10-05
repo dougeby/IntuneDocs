@@ -49,7 +49,7 @@ To enroll your Windows 10 Mobile or Windows 10 desktop device:
 
 ## Steps to follow if you see Access work or school
 
-1.  Tap **Access work or school**.
+1.  Tap **Access work or school**, and then tap **Connect**.
 
     ![Tap Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 

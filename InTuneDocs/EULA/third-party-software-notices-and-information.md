@@ -6,7 +6,7 @@ description: Third-Party Software Notices and Information for Microsoft Intune
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 08/30/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,11 +32,11 @@ This file is based on or incorporates material from the projects listed below (c
 
 Third Party Code:
 
-1.  Azure Active Directory Authentication Library for .NET v. 2.14.201151115 (https://github.com/AzureAD/azure-activedirectory-library-for-dotnet) 
+1.  Azure Active Directory Authentication Library for .NET v. 2.24.304111323 (https://github.com/AzureAD/azure-activedirectory-library-for-dotnet) 
 As the recipient of the above Third-Party Code, Microsoft sets forth a copy of the notices and other information below. 
 Provided for Informational Purposes Only
 
-Azure Active Directory Authentication Library for .NET v. 2.14.201151115 NOTICES AND INFORMATION BEGIN HERE
+Azure Active Directory Authentication Library for .NET v. 2.24.304111323 NOTICES AND INFORMATION BEGIN HERE
 =============
 
 Copyright (c) Microsoft Open Technologies, Inc. 
@@ -81,6 +81,6 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.
 
-END OF Azure Active Directory Authentication Library for .NET v. 2.14.201151115 NOTICES AND INFORMATION
+END OF Azure Active Directory Authentication Library for .NET v. 2.24.304111323 NOTICES AND INFORMATION
 =============
 

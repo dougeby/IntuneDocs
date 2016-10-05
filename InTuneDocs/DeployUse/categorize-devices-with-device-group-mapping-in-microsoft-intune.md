@@ -6,7 +6,7 @@ description: Use Microsoft Intune device group mapping to group devices into cat
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,13 +30,12 @@ Use Microsoft Intune **device group mapping** to automatically add devices to gr
 
 Device group mapping uses the following workflow:
 1. Create categories that users will choose from when they enroll their device
-2. You create groups for each category you want to use. Depending on the version of Intune you are using, these will either be Intune groups, or Azure Active Directory security groups.
+2. You create groups, or use existing groups for each category you want to use. Depending on the version of Intune you are using, these will either be Intune groups, or Azure Active Directory security groups.
 2. You configure rules that map the category you choose to the device group you created.
-3. When end users enroll their device, they must choose a category from the list of categories you configured. After they choose, their device is automatically added to the corresponding group you created.
-4. You can deploy policies and apps to these groups.
+3. When end users enroll their device, they must choose a category from the list of categories you configured. After they choose, their device is automatically added to the corresponding group you created. If a device is already enrolled, the end user will be asked to select a category the next time they access the Company Portal app.
+4. You can then deploy policies and apps to these groups.
 
 You can create any device categories you want, for example:
-* Personal
 * Point of sale device
 * Demonstration device
 * Sales
@@ -55,7 +54,7 @@ Due to the phased implementation of Azure Active Directory-based security groups
 -  If you do not see a link to the Azure portal, then you are still using Intune groups. Follow the [How to configure device group mapping (for Intune groups)](##How-to-configure-device-group-mapping-(for-Intune-groups) procedure below.
 
 ## How to configure device group mapping for Intune groups
-1. For each device category you want to use, create an Intune device group. For information about how to create groups, see [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+1. For each device category you want to use, create an Intune device group, or identify an existing group. For information about how to create groups, see [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 2. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
 3. In the **Administration** workspace, expand **Mobile Device Management**, and then choose **Device Group Mapping**.
 4. On the **Device Group Mapping** page, enable device group mapping.
@@ -70,19 +69,19 @@ Due to the phased implementation of Azure Active Directory-based security groups
 ### Step 1 - Create device categories in the Intune administration console
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
 3. In the **Administration** workspace, expand **Mobile Device Management**, and then choose **Device Categories**.
-4. On the **Device Categories** page, you'll see a list of device categories: 
+4. On the **Device Categories** page, you'll see a list where you can configure device categories: 
 - You can enter a name, then click **Add**, to add it as a new device category.
-- Additionally, you can select a category and then **Modify** or **Delete** it.
+- Additionally, you can select a category and then **Delete** it.
 
-Each device category is created with a corresponding device category ID. You'll use this ID when you create Azure Active Directory security groups in step 2.
+You'll use the device category name when you create Azure Active Directory security groups in step 2.
 
 ### Step 2 - Create Azure Active Directory security groups
 
-In this step, you'll create dynamic groups in the Azure portal based on the device category and device category ID.
+In this step, you'll create dynamic groups in the Azure portal based on the device category and device category name.
 
 To continue, refer to the topic [Using attributes to create advanced rules](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in the Azure Active Directory documentation.
 Use the information in this topic to create a device group with an advanced rule using the **deviceCategory** attribute.
-For example (**device.deviceCategory -eq** "<*the device category ID you got from the Intune administration console*>")
+For example (**device.deviceCategory -eq** "<*the device category name you got from the Intune administration console*>")
 
 
 ## After you configure device groups

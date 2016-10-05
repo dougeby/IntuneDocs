@@ -8,7 +8,7 @@ description: Use the information in this topic to help you decide which Microsof
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -84,7 +84,7 @@ Applies to Windows Phone and enrolled Windows devices only.
 |**Custom Configuration  (Windows 10 Desktop and Mobile and later)**|Deploy OMA-URI settings that can be used to control device features. This is useful when the setting that you need is not available in a configuration policy.<br />    For details, see [Windows 10 policy settings in Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Custom Configuration (Windows Phone 8.1 and later)**|Deploy OMA-URI settings that can be used to control device features. This is useful when the setting that you need is not available in a configuration policy.<br /><br />For details, see [Windows Phone 8.1 settings in Microsoft Intune](windows-phone-8-1-policy-settings-in-microsoft-intune.md).|
 |**Edition Upgrade Policy (Windows 10 Desktop and later)**<br><br>**Edition Upgrade Policy (Windows 10 Holographic and later)**<br><br>**Edition Upgrade Policy (Windows 10 Mobile and later)**|Configure and deploy policies that contain license or product key information that is used to update Windows 10 devices to a newer version.<br><br>For details, see [Edition upgrade policy settings in Microsoft Intune](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
-|**Email Profile (Windows Phone 8 and later)**<br /><br />**Email Profile (Windows 10 Desktop and Mobile and later)**|Create, deploy, and monitor Exchange ActiveSync email settings on managed devices. This lets users access corporate email on their personal devices without any required setup on their part.<br /><br />For details, see [Configure access to corporate email using email profiles with Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
+|**Email Profile (Windows Phone 8.1 and later)**<br /><br />**Email Profile (Windows 10 Desktop and Mobile and later)**|Create, deploy, and monitor Exchange ActiveSync email settings on managed devices. This lets users access corporate email on their personal devices without any required setup on their part.<br /><br />For details, see [Configure access to corporate email using email profiles with Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**General Configuration (Windows 10 Desktop and Mobile and later)**|Configure mobile device security and functional settings for enrolled Windows 10 desktop and Mobile devices.<br /><br />For details, see [Windows 10 policy settings in Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
 |**General Configuration (Windows 10 Team and later)**|Configure device security and functional settings for enrolled Windows 10 Team devices (for example, a Surface Hub device).<br /><br />For details, see [Windows Team configuration policy settings in Microsoft Intune](windows-team-configuration-policy-settings-in-microsoft-intune.md).|
 |**General Configuration (Windows 8.1 and later)**|Configure mobile device security and functional settings for enrolled Windows devices.<br /><br />For details, see [Windows policy settings in Microsoft Intune](windows-configuration-policy-settings-in-microsoft-intune.md).|
