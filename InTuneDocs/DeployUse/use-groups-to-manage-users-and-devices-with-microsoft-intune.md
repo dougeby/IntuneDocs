@@ -30,7 +30,9 @@ This topic describes how to create groups in Intune. It also provides informatio
 
 >[!IMPORTANT]
 >
->If you open the Groups workspace in the Intune portal and see a link to the Azure active directory (Azure AD) portal, then you are already using the *new* Azure AD security groups approach to group management in Intune, described in [Notice of upcoming improvements to the admin experience for groups](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Click the link to the Azure AD portal to create and manage your groups. 
+>If you open the Groups workspace in the Intune portal and see a link to the Azure active directory (Azure AD) portal, then you are already using the *new* Azure AD security groups approach to group management in Intune, described in [Notice of upcoming improvements to the admin experience for groups](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Click the link to the Azure AD portal to create and manage your groups.
+>
+>![Screenshot of the link to Azure group management](../media/groups-link-azure.png) 
 >
 >If you do not see the link to the Azure AD portal, you are still using the *current* approach to group management, described in [Create groups to manage users and devices with Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in this topic.
 
