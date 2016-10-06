@@ -36,11 +36,11 @@ Use mobile app configuration policies in Microsoft Intune to supply settings tha
 
 If users enter these settings incorrectly, this can increase the burden on your help desk and slow the adoption of new apps.
 
-Mobile app configuration policies can help you eliminate these problems by letting you deploy these settings to users in a policy before they run the app. The settings are then supplied automatically, and users need to take no action.
+Mobile app configuration policies can help you eliminate these problems by letting you deploy these settings to users before they run the app. The settings are then supplied automatically, and users need to take no action.
 
-To utilize app configuration policies, the developer of the app must have exposed enterprise app configurations when they created it. For example, Google Chrome exposes settings that let you set default bookmarks, and allowed and denied sites, and more. Contact the developer of the app to see if these settings are supported.
+To utilize app configuration policies, the developer of the app must have exposed enterprise app configurations when they created it. For example, Google Chrome exposes settings that let you set default bookmarks, and allowed and denied sites, and more. Contact the developer of the app to see if these settings are supported and how to specify them in the policy.
 
-You do not deploy these policies directly to users and devices. Instead, you associate a policy with an app, and then deploy the app. The policy settings will be used whenever the app checks for them (typically, the first time it is run).
+You deploy the app configuration policy to the same users to whom you have deployed the app you want to configure. The policy settings will be used whenever the app is run.
 
 ## Configure a mobile app configuration policy
 
@@ -67,7 +67,7 @@ The new policy is displayed in the **Configuration Policies** node.
 
 
 ## Deploy the app configuration policy
-After you have created a mobile app configuration policy, you must deploy it to the same users to whom you deploy the app with which it will be associated.
+After you have created a mobile app configuration policy, you must deploy it to the same users to whom you deploy the app to which the settings will apply.
 
 For information about how to deploy policies, see [deploy a configuration policy](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)
 
