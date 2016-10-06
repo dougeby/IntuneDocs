@@ -110,12 +110,12 @@ In the **System** module, on the **Connectors** page, specify the number of days
 
 ![](../media/mtp/lookout-console-enrollment-settings.png)
 
-### Step 6: Configure email notifications
-If you want to receive email alerts for threats, sign in to the [Lookout console](https://aad.lookout.com)with the user account that should receive the notifications. On the **Preferences** tab of the **System** module, choose the desired notifications and set them to **ON**. Save your changes.
+### Step 7: Configure email notifications
+If you want to receive email alerts for threats, sign in to the [Lookout console](https://aad.lookout.com) with the user account that should receive the notifications. On the **Preferences** tab of the **System** module, choose the desired notifications and set them to **ON**. Save your changes.
 
 ![screenshot of the preferences page with the user account displayed](../media/mtp/lookout-mtp-email-notifications.png)
 If you no longer want to receive email notifications, set the notifications to **OFF** and save your changes.
-### Step 7: Configure threat classification
+### Step 8: Configure threat classification
 Lookout device threat protection classifies mobile threats of various types. The [Lookout threat classifications](http://personal.support.lookout.com/hc/en-us/articles/114094130693) have default risk levels associated with them. These can be changed at any time to suite your company requirements.
 
 ![screenshot of the policy page showing threat and classifications](../media/mtp/lookout-mtp-threat-classification.png)
