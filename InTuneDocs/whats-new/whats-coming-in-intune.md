@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's coming | Microsoft Intune
+title: The early edition | Microsoft Intune
 description:
 keywords:
 author: barlanmsft
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # What's coming in Microsoft Intune - October
-This information is provided under NDA on an extremely limited basis and is subject to change. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Intune/PM buddy if you have any questions or concerns.
+The **Early Edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided under NDA on an extremely limited basis and is subject to change. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Intune/PM buddy if you have any questions or concerns.
 
 This page is updated periodically. Check back for new What’s Coming updates.
 
@@ -44,9 +44,9 @@ The new app will also allow users to leverage additional platform features like 
 
 ### Android for Work support
 
-Intune now supports Android for Work, an Android device program from Google that helps secure company data, apps and devices in the enterprise. You can read more about the features of Android for Work on the [Google for Work](https://www.google.com/work/android) website.
+Intune is now part of the [Android for Work program](https://enterprise.google.com/android/partners/). We will begin rolling out support for Android for Work features to Intune starting this month.
 
-[Read Microsoft’s announcement about Intune support for Android for Work]( https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
+[Read Microsoft’s announcement about Intune support for Android for Work](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
 
 <!---This month, some newly provisioned Intune tenants will start seeing the Android for Work features. We will announce later when existing tenants will begin to see this feature.--->
 <!--TFS 1043303-->

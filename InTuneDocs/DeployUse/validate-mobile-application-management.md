@@ -30,10 +30,10 @@ ms.reviewer: joglocke
 This topic provides information on checking for issues after you set up mobile application management (MAM). This guidance applies to MAM policies in the Azure portal.
 
 ### Checking for symptoms
-Users are unlikely to report issues since MAM is a data protection tool. If there is a problem with the MAM configuration the user will have unrestricted access, as they would have without MAM, and would not be aware that there is an issue. For this reason we recommend that you validate your MAM configuration by piloting your MAM policies with a small group of users who can deliberately test the MAM restrictions. 
+Users are unlikely to report issues since MAM is a data protection tool. If there is a problem with the MAM configuration the user will have unrestricted access, as they would have without MAM, and would not be aware that there is an issue. For this reason we recommend that you validate your MAM configuration by piloting your MAM policies with a small group of users who can deliberately test the MAM restrictions.
 
 
-### What to check 
+### What to check
 
 If testing shows that your MAM policy behavior is not as anticipated, we recommend that you check the following:
 
@@ -46,7 +46,7 @@ If testing shows that your MAM policy behavior is not as anticipated, we recomme
 
 2. Choose a user from the list or search for and choose a user, then choose **Select user**. At the top of the **App reporting** column you will see whether the user is licensed for MAM. Below that you will see whether the user is licensed for O365 and the app status for all of the user's devices.
 
-![App statuts for MAM](..\media\ts-mam-use-apps.png) 
+![App statuts for MAM](..\media\ts-mam-user-apps.png) 
 
 ### What to do
 Here are the actions to take based on the user status:
