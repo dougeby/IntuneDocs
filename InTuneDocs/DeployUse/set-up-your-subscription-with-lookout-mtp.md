@@ -71,7 +71,7 @@ The next steps outline the tasks that you must do to complete the Lookout set up
 
 ### Step 2: Configure the Intune connector
 
-1.  In the Lookout console, go to the **System** module, choose the **Connectors** tab, and select **Intune**.
+1.  In the Lookout console, from the **System** module, choose the **Connectors** tab, and select **Intune**.
 
   ![screenshot of the Lookout console with the connectors tab open, and Intune option highlighted](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
@@ -104,6 +104,11 @@ In the **State Sync** option, specify the type of data that should be sent to In
 In the **Error Management** option, enter the email address that should receive the error reports.
 
 ![screenshot of the Intune connector error management page](../media/mtp/lookout-mtp-connector-error-notifications.png)
+
+### Step 6. Configure enrollment settings
+In the **System** module, on the **Connectors** page, specify the number of days before a device is considered as disconnected.  Disconnected devices are considered as non-compliant and will be blocked from accessing your company applications based on the Intune conditional access policies. You can specify values between 1 and 90 days.
+
+![](../media/mtp/lookout-console-enrollment-settings.png)
 
 ### Step 6: Configure email notifications
 If you want to receive email alerts for threats, sign in to the [Lookout console](https://aad.lookout.com)with the user account that should receive the notifications. On the **Preferences** tab of the **System** module, choose the desired notifications and set them to **ON**. Save your changes.
