@@ -32,8 +32,6 @@ Use mobile app configuration policies in Microsoft Intune to supply settings tha
 
 -   Language settings.
 
--   Security settings.
-
 -   Branding settings such as a company logo.
 
 If users enter these settings incorrectly, this can increase the burden on your help desk and slow the adoption of new apps.
@@ -68,17 +66,17 @@ You do not deploy these policies directly to users and devices. Instead, you ass
 The new policy is displayed in the **Configuration Policies** node.
 
 
-## Associate a mobile app configuration policy with an app
-After you have created a mobile app configuration policy, you must associate it with the iOS app to which you want the settings in the configuration policy to apply.
+## Deploy the app configuration policy
+After you have created a mobile app configuration policy, you must deploy it to the same users to whom you deploy the app with which it will be associated.
 
-To do this, follow the steps to [synchronize a Google Play for Work app from the store](android-for-work-apps.md) and [Deploy apps with Microsoft Intune](deploy-apps-in-microsoft-intune.md). When you reach the **Mobile App Configuration** page of the wizard, select the policy that you want to associate with the app from the **App Configuration Policy** drop-down list.
+For information about how to deploy policies, see [deploy a configuration policy](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)
 
-Then, continue to deploy and monitor the app deployment as usual.
+For information about how to deploy Android for Work apps, see [How to deploy Android for Work apps with Intune](android-for-work-apps.md).
 
 When the deployed app is run on a device, it will run with the settings that you configured in the mobile app configuration policy.
 
 > [!TIP]
-> If one or more mobile app configuration policies conflict, neither policy is enforced. The conflict will be reported in the Intune administration console **Dashboard**.
+> Only deploy one app configuration policy for each app to a user.
 
 
 

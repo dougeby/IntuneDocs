@@ -33,7 +33,7 @@ Additionally, if you have created your own line of business (LOB) apps, you can 
 
 ## Before you start
 
-1. Make sure you have connected Intune and Android for Work.
+1. Make sure you have configured Intune and Android for Work in the Admin tab of the Intune console.
 
 ## Synchronize an app from the Google Play for Work store
 
@@ -66,6 +66,6 @@ Typically, Intune will synchronize twice a day with the Google Play for Work sto
 2. On the **Android for Work Mobile Device Management Setup** page, choose **Sync Now**.
 3. The page also displays the time and status of the last sync.
 
-When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** workspace, you can [deploy it just like you would any other app](deploy-apps-in-microsoft-intune.md). You can deploy the app to users or devices. Currently, you can only select the **Required** and **Uninstall** actions. 
+When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** workspace, you can [deploy it just like you would any other app](deploy-apps-in-microsoft-intune.md). You can deploy the app to groups of users only. Currently, you can only select the **Required** and **Uninstall** actions. 
 
 After you deploy the app, it will be installed on the devices you targeted. The user of the device will not be asked for approval.
