@@ -90,9 +90,10 @@
 ## [Protect apps and data](protect-apps-and-data-with-microsoft-intune.md)
 ### [Device compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [Create a device compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [For Android](android-compliance-policy-settings-in-microsoft-intune.md)
-#### [For iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-#### [For Windows & Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
+#### [ Android](android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+#### [iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+#### [Windows & Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Deploy a device compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
 ### [Restrict access to email, O365, & other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
