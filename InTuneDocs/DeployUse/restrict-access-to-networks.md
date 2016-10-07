@@ -6,7 +6,7 @@ description: Use Cisco ISE with Intune so that devices are Intune enrolled and p
 keywords:
 author: nbigman
 manager: angrobe
-ms.date: 10/02/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -109,13 +109,13 @@ Ensure all of the text is a single line
 1.     Get the base64 encoded cert value and thumbprint from a .cer X509 public cert file. This example uses PowerShell:
    
       
-    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
-     `$cer.Import(“mycer.cer”)`
-      `$bin = $cer.GetRawCertData()`
-      `$base64Value = [System.Convert]::ToBase64String($bin)`
-      `$bin = $cer.GetCertHash()`
-      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
-      `$keyid = [System.Guid]::NewGuid().ToString()`
+      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+      $cer.Import(“mycer.cer”)
+      $bin = $cer.GetRawCertData()
+      $base64Value = [System.Convert]::ToBase64String($bin)
+      $bin = $cer.GetCertHash()
+      $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+      $keyid = [System.Guid]::NewGuid().ToString()
  
 	Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
 2.       Upload the certificate through the manifest file. Log in to the [Azure Management Portal](https://manage.windowsazure.com)

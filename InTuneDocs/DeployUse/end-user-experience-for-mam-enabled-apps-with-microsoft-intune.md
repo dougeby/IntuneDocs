@@ -147,30 +147,24 @@ If you are using an Android device, You may see a blocking message with instruct
 
 ![Screenshot of the error message and instructions to remove the account](../media/AppManagement/Android_SwitchUser.png)
 
-##  Viewing media files with the Rights Management sharing app
-To view company AV, PDF, and image files on Android devices, use the [Microsoft Rights Management (RMS) sharing app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
+##  Viewing media files with the Azure Information Protection app (previously known as Rights Management sharing app)
+To view company AV, PDF, and image files on Android devices, use the [Azure Information Protection app](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
-Download this app from the  Google Play store.  Once the app is installed on your device, launch the app and authenticate with your company credentials. You should now be able to view unprotected and protected files from other policy-managed apps.
+Download this app from the  Google Play store.  
 
 The following filetypes are supported:
 
 * **Audio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (enhanced AAC+), AAC ELD (enhanced low delay AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
 * **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8.
 * **Image:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
-* PDF, PPDF
+* **PDF, PPDF**
 
 ------------
 |**pfile**|**text**|
 |----|----|
-|Pfile is a generic “wrapper” format for protected files that encapsulates the encrypted content and the RMS licenses and can be used to protect any file type.|Text files, including XML, CSV, etc. can be opened for viewing in the app even when they are protected. File types: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+|Pfile is a generic “wrapper” format for protected files that encapsulates the encrypted content and the Azure Information Protection licenses and can be used to protect any file type.|Text files, including XML, CSV, etc. can be opened for viewing in the app even when they are protected. File types: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
-**Android devices that are not enrolled in Intune**
 
-Before you can use the RMS sharing app to view files from other apps managed by Intune, launch the RMS app and authenticate with your work account.  When you log in, you will see the following message **only if you don’t have an RMS license**:
-
-**Authentication Successful – You can now view corporate files, but your organization isn’t set up to let you protect files. Contact your IT admin for more details.**
-
-This does not prevent you from using the RMS sharing app to view company files. You can still open and view company files from other apps managed by Intune, and the MAM policies will still apply.  What this message is saying is that you will not be able to add the additional protection capabilities that the RMS sharing app provides.  You must have an RMS license to add protection to your files. To learn more about RMS file protection capabilities, see [Protect a file on a device](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place)  and [Protect a file that you share by email](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
 
 ### See also
