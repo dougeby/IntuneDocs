@@ -28,9 +28,9 @@ ms.suite: ems
 
 # Encrypt your device
 
-If your company or organization requires you to encrypt your Android device before you can access company files, email, or data, follow these steps below to encrypt your device. You might be asked to set a PIN or password before encrypting if your IT administrator requires one.
+If your company or organization requires you to encrypt your Android device before you can access company files, email, or data, follow these steps to encrypt your device. You might be asked to set a PIN or password before encrypting if your IT administrator requires one.
 
-If you ever unenroll your phone, it will remain encrypted.
+If you unenroll your phone, it will remain encrypted.
 
 1.  Ensure that a screen lock PIN or password has been set for your device.
 
@@ -46,24 +46,20 @@ If you ever unenroll your phone, it will remain encrypted.
 - You see a message saying that you still need to encrypt.
 - You get errors when trying to use the Company Portal app.
 
-**Things to try**: 
+**Things to try**
 
-1. Make sure that your device is charged and plugged in.
+- Make sure that your device is charged and plugged in.
+- Make sure that you've set a PIN or password on your device.
+- If you have already set a PIN or password on your device, try the following steps, which your IT administrator might require to make your device more secure. The menu names that you see might be slightly different from the ones in the steps, depending on the type of Android device you have.
 
-2. Make sure that you've set a PIN or password on your device.
+	1. Go to **Settings** > **Security** > **Screen lock**. Confirm your current PIN or password.
 
-3. If you have already set a PIN or password on your device, try the following steps, which your IT administrator might require to make your device more secure. The menu names that you see may be slightly different from the ones in the steps, depending on the type of Android device you have.
+	2. On the **Choose screen lock** screen, choose the type of screen lock you want to use.
 
-	a. Go to **Settings** > **Security** > **Screen lock**. Confirm your current PIN or password.
+	3. On the **Secure start-up** screen, tap **Require PIN to start device**, and tap **Continue**.
 
-	b. On the **Choose screen lock** screen, choose the type of screen lock you want to use.
+	4. Choose a PIN (you can enter the same one that you entered previously), and tap **Confirm your PIN**.
 
-	c. On the **Secure start-up** screen, tap **Require PIN to start device**, and tap **Continue**.
-
-	d. Choose a PIN (you can enter the same one that you entered previously), and tap **Confirm your PIN**.
-
-	e. Open the Company Portal app, select your device, and tap **Check Compliance**.
+	5. Open the Company Portal app, select your device, and tap **Check Compliance**.
 
 Still need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
-
-
