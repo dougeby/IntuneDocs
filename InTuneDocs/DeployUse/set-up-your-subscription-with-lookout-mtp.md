@@ -85,6 +85,7 @@ On the **Enrollment Management** option, define a set of users whose devices sho
 To get started with enrollments groups,  first define an Azure AD security group that would be a good first set of users to enroll in Lookout device threat protection. Once you have the group created in Azure, AD, in the Lookout Console, go to the **Enrollment Management** option and add the Azure AD security group **Display Name(s)** for enrollment.
 
 When a user is in an enrollment group, any of their devices that are identified and supported in Azure AD are enrolled and eligible for activation in Lookout device threat protection.  The first time they open the Lookout for Work app on their supported device, the device is activated in Lookout.
+
 ![screenshot of the Intune connector enrollment page](../media/mtp/lookout-mtp-enrollment.png)
 
 The best practice is to use the default (5 minutes) for the increment of time to check for new devices.
