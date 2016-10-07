@@ -43,7 +43,7 @@ If you are looking for information about other platforms, select one of the foll
 
 -  **Minimum password length:** Specify the minimum number of digits or characters that the user’s password must contain.
 
-- **Password quality:** Enable this setting to configure password requirements for Android devices. Choose from:
+- **Password quality:** This setting detects if the password requirements you specify is configured on the device. Enable this setting to require that users configure certain password requirements for Android devices. Choose from:
   -   **Low security biometric**
   - **Required**
   -   **At least numeric**
@@ -69,10 +69,10 @@ If you are looking for information about other platforms, select one of the foll
 ## Device health and security settings
 
 - **Device must not be jailbroken or rooted:** If you enable this setting, jailbroken devices will be evaluated as noncompliant.
-- **Require that devices prevent installation of apps from unknown sources:** You do not have to configure this setting as Android for Work devices provide this capability.  
+- **Require that devices prevent installation of apps from unknown sources:** You do not have to configure this setting as Android for Work devices always restrict installation from unknown sources. .  
 
 - **Require that USB debugging is  disabled**: You do not have to configure this settings as USB debugging is already disabled on Android for Work devices.
-- **Require devices have enabled Scan device for security threats **: This setting specifies that the **Verify apps** feature is enabled on the device.
+
 - **Minimum Android security patch level **: Use this setting to specify the minimum Android patch level.  Devices that are not at least at this patch level will be noncompliant. The date must be specified the format: YYYY-MM-DD.
 - **Require device threat protection to be enabled**: Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Select the maximum allowed threat level, which is one of the following:
 
