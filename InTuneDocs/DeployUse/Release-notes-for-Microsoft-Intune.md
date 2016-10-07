@@ -52,8 +52,8 @@ At this point, one of the following occurs: 
 * If email profiles A and B are identical, the device rejects email profile B because email profile B already contains email profile A.
 * If email profile A is different from email profile B, as mentioned in the example, the device ends up with two email profiles.
 
->AZURE.NOTE
-The host name and the attribute used for user name are checked to distinguish one email profile from another.
+> [!NOTE]
+> The host name and the attribute used for user name are checked to distinguish one email profile from another.
 
 In both cases, the resource access profile (email profile) was not removed from the device in order to prevent the unintentional removal of a user’s access to email or the client's SCEP certificate.
 
