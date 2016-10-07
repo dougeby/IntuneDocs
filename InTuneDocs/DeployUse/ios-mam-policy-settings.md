@@ -93,12 +93,7 @@ Specify when  cut, copy, and paste operations should be restricted. Choose from:
   When you do a selective wipe to remove company data, contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this is applicable only to the **Microsoft Outlook** app.
 
   **Default value = Yes**
-  - **Disable printing:** Choose **Yes** to prevent printing company data from apps that are associated with the MAM policy.
-
-    **Default value - Yes**
-    - **Disable printing:** Choose **Yes** to prevent printing company data from apps that are associated with the MAM policy.
-
-      **Default value - Yes**
+  
 - **Disable printing:** Choose **Yes** to prevent printing company data from apps that are associated with the MAM policy.
 
     **Default value - Yes**
