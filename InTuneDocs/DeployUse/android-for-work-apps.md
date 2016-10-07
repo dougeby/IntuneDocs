@@ -2,11 +2,11 @@
 # required metadata
 
 title: Deploy apps to Android for Work devices | Microsoft Intune
-description: Use this topic to synchronize, then deploy Android for Work apps from the Google Play for Work Store.
+description: Use this topic to synchronize, then deploy app to Android for Work devices from the Google Play for Work Store.
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,15 +25,15 @@ ms.suite: ems
 
 ---
 
-# How to deploy Android for Work apps with Intune
+# How to deploy apps to Android for Work devices with Intune
 
-Android for Work apps work differently from standard Android Apps. All apps you install for Android for Work come from the Google Play for Work store. You log into the store, select the apps you want, and approve them.
+You deploy apps to Android for Work devices in a different way than you deploy them to standard Android devices. All apps you install for Android for Work come from the Google Play for Work store. You log into the store, browse for the apps you want, and approve them.
 The app then appears in the **Volume-Purchased Apps** node of the Intune console. From here, you can manage deployment of the app in the same way you would deploy any other app.
 Additionally, if you have created your own line of business (LOB) apps, you can deploy them. To do that, you need to sign up for a Google Developer account which lets you publish apps to a private area in the Google Play store and then synchronize them with Intune.
 
 ## Before you start
 
-1. Make sure you have connected Intune and Android for Work.
+1. Make sure you have configured Intune and Android for Work to work together in the **Admin** tab of the Intune console.
 
 ## Synchronize an app from the Google Play for Work store
 
@@ -66,6 +66,6 @@ Typically, Intune will synchronize twice a day with the Google Play for Work sto
 2. On the **Android for Work Mobile Device Management Setup** page, choose **Sync Now**.
 3. The page also displays the time and status of the last sync.
 
-When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** workspace, you can [deploy it just like you would any other app](deploy-apps-in-microsoft-intune.md). You can deploy the app to users or devices. Currently, you can only select the **Required** and **Uninstall** actions. 
+When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** workspace, you can [deploy it just like you would any other app](deploy-apps-in-microsoft-intune.md). You can deploy the app to groups of users only. Currently, you can only select the **Required** and **Uninstall** actions. From October 2016, we will begin adding the **Available** deployment action to new tenants. 
 
 After you deploy the app, it will be installed on the devices you targeted. The user of the device will not be asked for approval.

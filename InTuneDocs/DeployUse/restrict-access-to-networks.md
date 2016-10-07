@@ -6,7 +6,7 @@ description: Use Cisco ISE with Intune so that devices are Intune enrolled and p
 keywords:
 author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -109,13 +109,13 @@ Ensure all of the text is a single line
 1.     Get the base64 encoded cert value and thumbprint from a .cer X509 public cert file. This example uses PowerShell:
    
       
-    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
-     `$cer.Import(“mycer.cer”)`
-      `$bin = $cer.GetRawCertData()`
-      `$base64Value = [System.Convert]::ToBase64String($bin)`
-      `$bin = $cer.GetCertHash()`
-      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
-      `$keyid = [System.Guid]::NewGuid().ToString()`
+      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+      $cer.Import(“mycer.cer”)
+      $bin = $cer.GetRawCertData()
+      $base64Value = [System.Convert]::ToBase64String($bin)
+      $bin = $cer.GetCertHash()
+      $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+      $keyid = [System.Guid]::NewGuid().ToString()
  
 	Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
 2.       Upload the certificate through the manifest file. Log in to the [Azure Management Portal](https://manage.windowsazure.com)
@@ -124,27 +124,27 @@ Ensure all of the text is a single line
 5.      Replace the empty “KeyCredentials”: [], property with the following JSON.  The KeyCredentials complex type is documented in[Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType).
 
  
-    `“keyCredentials“: [`
-    `{`
-     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
-     `“keyId“: “$keyid_from_above“,`
-     `“type”: “AsymmetricX509Cert”,`
-     `“usage”: “Verify”,`
-     `“value”:  “$base64Value_from_above”`
-     `}2. `
-     `], `
+    “keyCredentials“: [
+    {
+     “customKeyIdentifier“: “$base64Thumbprint_from_above”,
+     “keyId“: “$keyid_from_above“,
+     “type”: “AsymmetricX509Cert”,
+     “usage”: “Verify”,
+     “value”:  “$base64Value_from_above”
+     }2. 
+     ], 
  
 For example:
  
-    `“keyCredentials“: [`
-    `{`
-    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
-    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
-    `“type”: “AsymmetricX509Cert”,`
-    `“usage”: “Verify”,`
-    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
-    `}`
-    `],`
+    “keyCredentials“: [
+    {
+    “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
+    “keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,
+    “type”: “AsymmetricX509Cert”,
+    “usage”: “Verify”,
+    “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
+    }
+    ],
  
 6.      Save the change to the application manifest file.
 7.      Upload the edited application manifest file through the Azure management mortal.

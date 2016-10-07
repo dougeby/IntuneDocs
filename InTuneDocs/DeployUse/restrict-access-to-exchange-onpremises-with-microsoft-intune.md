@@ -6,7 +6,7 @@ description: Protect and control access to company email on Exchange On-premises
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -71,19 +71,19 @@ If a conditional access policy is not met, the user is presented with one of the
 -   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal   website, or the Company Portal   app where they can find information about the problem and how to remediate it.
 
 ## Support for mobile devices
--   Windows Phone 8 and later.
+-   Windows Phone 8.1 and later
 
 -   Native email app on iOS.
 
 -   EAS mail clients such as Gmail on Android 4 or later.
-- EAS mail clients **Android for Work devices:** Only **Gmail** and **Nine Work** apps in the **work profile** are supported on Android for Work devices. For conditional access to work with Android for Work, you must deploy an email profile for the Gmail or Nine Work app, and also deploy those apps as  a required install.  
+- EAS mail clients **Android for Work devices:** Only **Gmail** and **Nine Work** apps in the **work profile** are supported on Android for Work devices. For conditional access to work with Android for Work, you must deploy an email profile for the Gmail or Nine Work app, and also deploy those apps as  a required install. 
 
 > [!NOTE]
 > Microsoft Outlook app for Android and iOS is not supported.
 
 ## Support for PCs
 
-The **Mail** application on Windows 8 and later (when enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
+The **Mail** application on Windows 8.1 and later (when enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
 ##  Configure a conditional access policy
 
