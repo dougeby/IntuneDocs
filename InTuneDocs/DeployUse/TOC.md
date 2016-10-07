@@ -11,6 +11,7 @@
 ### [Prerequisites for MDM](prerequisites-for-enrollment.md)
 #### [iOS and Mac management](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android management](set-up-android-management-with-microsoft-intune.md)
+#### [Android for Work management](set-up-android-for-work.md)
 #### [Windows device management ](set-up-windows-device-management-with-microsoft-intune.md)
 #### [Windows 10 Mobile and Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Manage corporate-owned devices](manage-corporate-owned-devices.md)
