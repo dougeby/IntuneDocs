@@ -67,7 +67,7 @@ To learn about what your IT administrator can and can't see on your device, use 
 -   Android mobile devices
 
 -   Windows devices
-	-   10 Mobile
+	-   Windows 10 Mobile
 	-   Windows 10 Desktop
 	-   Windows Phone 8.1
 	-   Windows 8.1
