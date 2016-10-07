@@ -6,7 +6,7 @@ description: Use mobile app configuration policies in Intune to supply settings 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 10/11/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ If users enter these settings incorrectly, this can increase the burden on your 
 
 Mobile app configuration policies can help you eliminate these problems by letting you deploy these settings to users before they run the app. The settings are then supplied automatically, and users need to take no action.
 
-To utilize app configuration policies, the developer of the app must have exposed enterprise app configurations when they created it. For example, Google Chrome exposes settings that let you set default bookmarks, and allowed and denied sites, and more. Contact the developer of the app to see if these settings are supported and how to specify them in the policy.
+To utilize app configuration policies, the developer of the app must have exposed enterprise app configurations when they created it. For example, Google Chrome exposes settings that let you set default bookmarks, allowed and denied sites, and more. Contact the developer of the app to see if these settings are supported and how to specify them in the policy.
 
 You deploy the app configuration policy to the same users to whom you have deployed the app you want to configure. The policy settings will be used whenever the app is run.
 
@@ -71,7 +71,7 @@ After you have created a mobile app configuration policy, you must deploy it to 
 
 For information about how to deploy policies, see [deploy a configuration policy](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)
 
-For information about how to deploy Android for Work apps, see [How to deploy Android for Work apps with Intune](android-for-work-apps.md).
+For information about how to deploy apps to Android for Work devices, see [How to deploy Android for Work apps with Intune](android-for-work-apps.md).
 
 When the deployed app is run on a device, it will run with the settings that you configured in the mobile app configuration policy.
 

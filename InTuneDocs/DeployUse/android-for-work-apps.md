@@ -2,11 +2,11 @@
 # required metadata
 
 title: Deploy apps to Android for Work devices | Microsoft Intune
-description: Use this topic to synchronize, then deploy Android for Work apps from the Google Play for Work Store.
+description: Use this topic to synchronize, then deploy app to Android for Work devices from the Google Play for Work Store.
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 10/11/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,9 +25,9 @@ ms.suite: ems
 
 ---
 
-# How to deploy Android for Work apps with Intune
+# How to deploy apps to Android for Work devices with Intune
 
-Android for Work apps work differently from standard Android Apps. All apps you install for Android for Work come from the Google Play for Work store. You log into the store, select the apps you want, and approve them.
+You deploy apps to Android for Work devices in a different way than you deploy them to standard Android devices. All apps you install for Android for Work come from the Google Play for Work store. You log into the store, browse for the apps you want, and approve them.
 The app then appears in the **Volume-Purchased Apps** node of the Intune console. From here, you can manage deployment of the app in the same way you would deploy any other app.
 Additionally, if you have created your own line of business (LOB) apps, you can deploy them. To do that, you need to sign up for a Google Developer account which lets you publish apps to a private area in the Google Play store and then synchronize them with Intune.
 
