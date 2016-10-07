@@ -44,7 +44,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
    Provide your company's name for the **Organization name**. For **Enterprise mobility management (EMM) provider**, *Microsoft Intune* should be displayed. Agree to the Android for Work agreement, and then click **Confirm**. Your request will be processed .
 
 ## Specify Android for Work Enrollment Settings
-   Android for Work is only supported on certain Android devices, usually Android version 6 and higher.  Google maintains a list of supported devices here. Any device that supports Android for Work will also support conventional Android management.  Intune lets you specify how devices support Android for Work should be managed:
+   Android for Work is only supported on certain Android devices, usually Android version 6 and higher.  Any device that supports Android for Work will also support conventional Android management.  Intune lets you specify how devices support Android for Work should be managed:
 
    - **Manage all devices as Android** - (Disabled) All Android devices, including devices that support Android for Work, will be enrolled as conventional Android devices.
    - **Manage supported devices as Android for Work** - (Enabled) All devices that support Android for Work are enrolled as Android for Work devices. Any Android device that does not support Android for Work is enrolled as a conventional Android device.
