@@ -32,6 +32,11 @@ If your company or school uses Microsoft Intune, you can enroll your iOS device 
 
 If you're trying to enroll a Mac OS X device, see [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
 
+**Before you start:**
+
+- Make sure that you finish enrolling, once you start the steps. If you start, but don't finish, enrollment may not work if you come back later and try again.
+- Check that your WiFi is working. Otherwise, enrollment will fail.
+- If you blocked Safari on your device, unblock it. You must use Safari to enroll.
 
 
 **To enroll your iOS device:**
@@ -89,6 +94,7 @@ If you're trying to enroll a Mac OS X device, see [Enroll your Mac OS X device i
 	![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png)
 
 Your device is now enrolled in Intune, and you are taken back to the Company Portal app.
+
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
