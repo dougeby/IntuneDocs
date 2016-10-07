@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Create a policy that allows only mobile apps that support Intune MAM policies to access Office 365 services
-[Intune mobile app management (MAM) policies](protect-apps-and-data-with-microsoft-intune.md) help protect your company data on devices that are enrolled for management in Intune. You can also use MAM policies on **employee owned devices that are not enrolled for management in Intune**.  In this case, even though you don't manage the device, you still need to make sure that your company data and resources is protected. Using MAM CA, you can create a policy that allows only mobile apps that support Intune MAM policies to access O365 services like Exchange Online.
+[Intune mobile app management (MAM) policies](protect-apps-and-data-with-microsoft-intune.md) help protect your company data on devices that are enrolled for management in Intune. You can also use MAM policies on **employee owned devices that are not enrolled for management in Intune**.  In this case, even though you don't manage the device, you still need to make sure that your company data and resources is protected. Using conditional access for MAM (MAM CA), you can create a policy that allows only mobile apps that support Intune MAM policies to access O365 services like Exchange Online.
 
 For example, by only allowing the **Microsoft Outlook app** to access Exchange Online, you can **block the built-in mail apps on iOS and Android**, which don't have the data protection from Intune MAM policies to get email from **Exchange Online**.
 
