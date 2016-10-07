@@ -27,9 +27,7 @@ ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 
 # Enable enrollment of Android for Work devices
 
-You can allow users to enroll their Android for Work devices with Intune. Android for Work lets workers use their smartphones at work. Android for Work helps keep work and personal information separate on their devices. To enable enrollment, you must add an Android for Work binding to Intune.
-
-Once enrolled as an Android for Work device, you can deploy apps to managed devices. Apps and the data they access remain exclusively within the Android for Work environment on the device. To enroll devices that support Android for Work but were previously enrolled as regular Android device, the devices must be unenrolled and then re-enrolled.
+To enable management of Android for Work devices, you must add an Android for Work binding to Intune. To enroll devices that support Android for Work but were previously enrolled as regular Android device, the devices must be unenrolled and then re-enrolled.
 
 ## Add Android for Work Binding for Intune
 
@@ -37,24 +35,29 @@ Once enrolled as an Android for Work device, you can deploy apps to managed devi
 If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](prerequisites-for-enrollment.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
 
 2. **Configure Android for Work binding**<br>
-    As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **Android for Work**, and click **Configure** to open Google Play's Android for Work website.
+    As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **Android for Work**, and click **Configure** to open Google Play's Android for Work website. This will open in a new tab in your browser.
 
-3. **Log in to Google Play**<br>
-   On Google's sign-in page, enter with the Google account that will be associated with all Android for Work management tasks for this binding. This could be Google account shared among the administrators who manage Intune.
+3. **Log in to Google**<br>
+   On Google's sign-in page, enter with the Google account that will be associated with all Android for Work management tasks for this tenant. This could be Google account shared among the administrators who manage Intune. This is the Google account that your organization uses to manage and publish apps in the Play for Work console.
 
 4. **Provide Organization details**<br>
    Provide your company's name for the **Organization name**. For **Enterprise mobility management (EMM) provider**, *Microsoft Intune* should be displayed. Agree to the Android for Work agreement, and then click **Confirm**. Your request will be processed .
 
-5. **Specify Android for Work Enrollment Settings**<br>
-   Intune lets you specify how Android for Work devices are enrolled. This setting lets you specify how devices are enrolled
+## Specify Android for Work Enrollment Settings
+   Android for Work is only supported on certain Android devices, usually Android version 6 and higher.  Google maintains a list of supported devices here. Any device that supports Android for Work will also support conventional Android management.  Intune lets you specify how devices support Android for Work should be managed:
 
-   - **Enroll no device as Android for Work** - (Disabled) All Android devices, including Android for Work devices, without Android for Work functionality.
-   - **Enroll all supported devices as Android for Work** - (Enabled) All devices that can support Android for Work are enrolled as Android for Work devices.
-   - **Only enroll supported devices for these user groups as Android for Work** - (Testing) Lets you deploy to a limited number of devices. Only members of the selected groups are enrolled as Android for Work devices. All others are enrolled as Android devices.
+   - **Manage all devices as Android** - (Disabled) All Android devices, including devices that support Android for Work, will be enrolled as conventional Android devices.
+   - **Manage supported devices as Android for Work** - (Enabled) All devices that support Android for Work are enrolled as Android for Work devices. Any Android device that does not support Android for Work is enrolled as a conventional Android device.
+   - **Manage supported devices for users only in these user groups as Android for Work** - (Testing) Lets you target Android for Work management to a limited set of users. Only members of the selected groups who enroll a device that supports Android for Work are enrolled as Android for Work devices. All others are enrolled as Android devices.
+
+## Next steps for Android for Work
+After configuring the Android for Work binding and settings, you can manage do the following:
+- [Configure Android for Work apps](afw-app-configuration-policy.md)
+- [Add Android for Work configuration policies](android-for-work-policy-settings-in-microsoft-intune.md)
 
 ## Unbinding your Android for Work administrative account
 
-You can turn off Android for Work enrollment and management. Clicking **Unbind** removes all enrolled Android for Work from enrollment and removes the relationship between the Android for Work account and Intune.
+You can turn off Android for Work enrollment and management. Clicking **Unbind** removes all enrolled Android for Work devices from enrollment and removes the relationship between the Android for Work account and Intune.
 
 ### How to unbind an Android for Work account
 
