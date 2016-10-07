@@ -73,7 +73,7 @@
 #### [Manage license agreements for Intune client PCs](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Deploy apps](deploy-apps.md)
 ### [Deploy apps to devices and PCs](deploy-apps-in-microsoft-intune.md)
-### [Deploy Android for Work apps](android-for-work-apps.md)
+### [Deploy apps to Android for Work devices](android-for-work-apps.md)
 ### [Monitor apps](monitor-apps-in-microsoft-intune.md)
 ### [Manage volume-purchased apps](manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [Manage volume-purchased iOS apps](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
