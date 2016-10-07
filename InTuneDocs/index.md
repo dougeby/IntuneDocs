@@ -9,8 +9,8 @@ title: Intune Documentation | Microsoft Docs
 description: Technical documentation for Microsoft Intune - Mobile Device and Application Management
 keywords: intune documentation, app management, device management, MDM documentation, MAM documentation
 author: arob98
-manager: arob98
-ms.date: 10/06/2016
+manager: angrobe
+ms.date: 10/07/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
@@ -22,14 +22,14 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
     <section id="hero-content">
       <h1>Intune Documentation</h1>
       <h2>Learn how to deploy and manage Microsoft Intune, a mobile device and application management service.</h2>
-      <h3>Manage Intune with Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Learn more... &rarr;</a></h3>
+      <h3>Want to manage Intune with Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Read about hybrid mobile device management &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
       <div class="features row">
         <ul class="column column-half">
           <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">What's new?</a></li>
-          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Common scenarios that rely on Intune</a></li>
+          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Common ways to use Intune</a></li>
           <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Protect app data</a></li>
         </ul>
         <ul class="column column-half">
