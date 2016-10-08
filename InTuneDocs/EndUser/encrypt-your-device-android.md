@@ -28,14 +28,14 @@ ms.suite: ems
 
 # Encrypt your device
 
-If your company or organization requires you to encrypt your Android device before you can access company files, email, or data, follow these steps to encrypt your device. You might be asked to set a PIN or password before encrypting if your IT administrator requires one.
+If your company or organization requires you to encrypt your Android device before you can use company files, email, or data, follow these steps to encrypt your device. You might be asked to set a PIN or password before encrypting if your IT admin requires one.
 
 If you unenroll your phone, it will remain encrypted.
 
 1.  Ensure that a screen lock PIN or password has been set for your device.
 
-2.  In **Settings**, click **Security** &gt; **Encrypt Phone**.
-    (On some phones, you’ll need to click **Storage** &gt; **Storage encryption** or **Storage** &gt; **Lock screen and security** &gt; **Other security settings** to find the "Encrypt" option).
+2.  In **Settings**, choose **Security** &gt; **Encrypt Phone**.
+    (On some phones, you’ll need to choose **Storage** &gt; **Storage encryption** or **Storage** &gt; **Lock screen and security** &gt; **Other security settings** to find the "Encrypt" option).
 
 3.  Follow the on-screen instructions. During encryption, your device might restart several times.
 
@@ -50,7 +50,7 @@ If you unenroll your phone, it will remain encrypted.
 
 - Make sure that your device is charged and plugged in.
 - Make sure that you've set a PIN or password on your device.
-- If you have already set a PIN or password on your device, try the following steps, which your IT administrator might require to make your device more secure. The menu names that you see might be slightly different from the ones in the steps, depending on the type of Android device you have.
+- If you've already set a PIN or password on your device, try the following steps, which your IT admin might require to make your device more secure. The menu names that you see might be slightly different from the ones in the steps, depending on the type of Android device you have.
 
 	1. Go to **Settings** > **Security** > **Screen lock**. Confirm your current PIN or password.
 
@@ -62,4 +62,4 @@ If you unenroll your phone, it will remain encrypted.
 
 	5. Open the Company Portal app, select your device, and tap **Check Compliance**.
 
-Still need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
+Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
