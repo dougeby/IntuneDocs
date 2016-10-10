@@ -31,11 +31,6 @@ ms.suite: ems
 For example, by only allowing the **Microsoft Outlook app** to access Exchange Online, you can **block the built-in mail apps on iOS and Android**, which don't have the data protection from Intune MAM policies to get email from **Exchange Online**.
 
 
-The diagram below illustrates what we just described above.  With MAM, you can configure policies that prevent corporate data from being transferred to the device or to non-protected apps like Facebook or Twitter. You can also keep corporate data and personal data separate on apps that support [multi-identity](protect-apps-and-data-with-microsoft-intune.md#multi-identity), like the Office 365 apps.
-With MAM CA, access to cloud apps like Exchange Online can be from non-protected apps can be blocked.
-
-![Diagrammatic representation of data protection by MAM policies and MAM CA](../media/mam-ca-with_mam-policy.png)
-
 ## Supported apps
 **Exchange Online**
 * Microsoft Outlook for Android and iOS
