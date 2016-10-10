@@ -6,7 +6,7 @@ description: Custom profile to create a list of allowed and blocked apps for KNO
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.suite: ems
 
 Use the procedures in this topic to create a Microsoft Intune custom policy that creates one of the following:
 
-- A list of apps that are blocked from running on the device. No other apps will be allowed to run. Apps in this list are blocked from being run, even if they were already installed when the policy was applied.
+- A list of apps that are blocked from running on the device. Apps in this list are blocked from being run, even if they were already installed when the policy was applied.
 - A list of apps that users of the device are allowed to install from the Google Play store. Only the apps you list can be installed. No other apps can be installed from the store.
 
 These settings can only be used by devices that run Samsung KNOX.
