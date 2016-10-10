@@ -92,4 +92,4 @@ In both cases, the resource access profile (email profile) was not removed from 
 ## Language support in the Azure portal
 The Azure portal supports these languages: Chinese (Simplified), Chinese (Traditional), Czech, Dutch, English, German, Hungarian, Italian, Japanese, Portuguese (Brazil), Portuguese (Portugal), Russian, Spanish, English, French, Korean, Polish, Swedish, Turkish.
 
-The Intune Admin Console and the user-facing mobile experiences support Danish, Greek, Finish, Norwegian, and Romanian, in addition to all the languages that the Azure portal supports.
+The Intune Admin Console and the user-facing mobile experiences support Danish, Greek, Finnish, Norwegian, and Romanian, in addition to all the languages that the Azure portal supports.
