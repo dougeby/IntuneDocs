@@ -2,12 +2,13 @@
 # [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
+# [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Device lifecycle](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [App lifecycle](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [Enroll devices](enroll-devices-in-microsoft-intune.md)
-### [Get ready to enroll devices in Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### [Prerequisites for MDM](prerequisites-for-enrollment.md)
 #### [iOS and Mac management](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android management](set-up-android-management-with-microsoft-intune.md)
 #### [Windows device management ](set-up-windows-device-management-with-microsoft-intune.md)
@@ -103,7 +104,7 @@
 
 ### [Restrict access to networks (Cisco ISE)](restrict-access-to-networks.md)
 ### [Restrict access based on device, network, and application risk](restrict-access-based-on-device-network-app-risk.md)
-#### [Set up Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+#### [Set up Lookout device threat protection](set-up-your-subscription-with-lookout-mtp.md)
 #### [Enable Lookout in Intune](enable-lookout-mtp-connection-in-intune.md)
 #### [Deploy Lookout for work apps](configure-and-deploy-lookout-for-work-apps.md)
 #### [Enable device threat protection compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md)
@@ -133,10 +134,6 @@
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-
-## [Migrate to Intune](migrate-to-intune.md)
-
-## [What's new](whats-new-in-microsoft-intune.md)
 
 # [Develop & Customize Apps](/intune/develop/intune-app-sdk)
 

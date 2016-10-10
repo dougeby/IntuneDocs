@@ -28,13 +28,13 @@ ms.suite: ems
 
 # Enroll your Android device in Intune
 
-If your company or school uses Microsoft Intune, you can enroll your Android device to get access to company email, files, and other resources. Enrolling your devices allows your IT department to manage those work or school resources and keep them secure, while giving you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens when I install and Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
+If your company or school uses Microsoft Intune, you can enroll your Android device to get access to company email, files, and other resources. When you enroll your devices, your IT department can manage those work or school resources, keep them secure, and give you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens when I install and Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
 
-These enrollment instructions are for Samsung Knox Android devices and "native" (non-Samsung Knox) Android devices. To determine if you have a Samsung Knox device, go to **Settings** &gt; **About device**. If you don't see "KNOX version" listed there, you have a native Android device.
+These enrollment instructions are for Samsung Knox Android devices and "native" (non-Samsung Knox) Android devices. To check if you have a Samsung Knox device, go to **Settings** &gt; **About device**. If you don't see "KNOX version" listed there, you have a native Android device.
 
-Before or after enrolling, you may be asked to choose a category that best describes how you use your device. Your IT administrator uses this category to help determine what apps you have access to.
+Before or after enrolling, you may be asked to choose a category that best describes how you use your device. Your IT admin uses this category to help check the apps that you have access to.
 
-If you get an error while trying to enroll your device in Intune, you can [send enrollment errors to your IT admin](send-enrollment-errors-to-your-it-administrator-android.md).
+If you get an error while you try to enroll your device in Intune, you can [send enrollment errors to your IT admin](send-enrollment-errors-to-your-it-administrator-android.md).
 
 **To enroll your Android device:**
 
@@ -46,11 +46,11 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![android-company-portal-sign-in](./media/and-enroll-0-welcome-screen.png)   
 
-4.  If your IT administrator set up company terms and conditions, tap **ACCEPT** to accept the terms.
+4.  If your IT admin set up company terms and conditions, tap **ACCEPT** to accept the terms.
 
 	![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  Sign in to the Company Portal app using your work or school account and password, and tap **Sign in**.
+5.  Sign in to the Company Portal app using your work or school account and password, and then tap **Sign in**.
 
 	![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
@@ -62,7 +62,7 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![Why enroll your device screen](./media/and-enroll-4b-why-enroll.png)
 
-8.  Review a list of what your IT administrator can and can't see on your device, and tap **CONTINUE**.
+8.  Review a list of what your IT admin can and can't see on your device, and then tap **CONTINUE**.
 
 	![Privacy settings](./media/and-enroll-4c-we-care-privacy.png)
 
@@ -72,22 +72,22 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 10.  If you're using Android 6.0 or later, do this step. Otherwise, go to the next step.
 
-	If your IT administrator has set up certain policies, you may see the following messages:
+	If your IT admin has set up certain policies, you may see the following messages:
 	-	**Allow Company Portal to make and manage phone calls?**
 
-	![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
+		![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never makes or manages your phone calls**! Google controls the message text, and Microsoft cannot change it. When you allow access, all you're doing is allowing your device send your device's IMEI number to Intune. The IMEI is a number, similar to a serial number, that uniquely identifies a mobile device.
+	If you see this message, tap **ALLOW**. It is safe to tap ALLOW because **Microsoft never makes or manages your phone calls**! Google controls the message text, and Microsoft cannot change it. When you allow access, all you're doing is letting your device send your device's international mobile station equipment identity (IMEI) number to Intune. The IMEI number is like a serial number that uniquely identifies a mobile device.
 
-	If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
+	If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** box. If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
 
 	-	**Allow Company Portal to access your contacts?**
 
-	![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
+		![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-	If you see this message, tap **ALLOW**. It is safe to tap ALLOW, because **Microsoft never accesses your contacts!** Google controls the message text, and Microsoft cannot change it. When you allow access, it only allows the Company Portal app to create, use, and manage your work account.
+	If you see this message, tap **ALLOW**. It is safe to tap ALLOW because **Microsoft never accesses your contacts!** Google controls the message text, and Microsoft cannot change it. When you allow access, it only lets the Company Portal app create, use, and manage your work account.
 
-	If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** check box.  If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
+	If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** box. If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
 
 11.  On the **Activate device administrator** screen, tap **Activate**.
 
@@ -97,7 +97,7 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![Enter PIN or password](./media/and-enroll-6-PIN-native.png)
 
-13.  If you are using a Samsung Knox device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the screen below showing that your device is being enrolled.
+13.  If you are using a Samsung Knox device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the following screen that shows that your device is being enrolled.
 
 	![Samsung KNOX privacy policy](./media/and-enroll-7-knox-privacy-policy.png)
 
@@ -105,7 +105,7 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![Enrolling device screen](./media/and-enroll-8-device-enrolling.png)
 
-14. When the **Company Access Setup** screen appears, tap **CONTINUE**. If you see a message indicating that your device is out of compliance, follow the instructions to fix the issue, and then tap **CONTINUE**.
+14. When the **Company Access Setup** screen appears, tap **CONTINUE**. If a message indicates that your device is out of compliance, follow the instructions to fix the issue, and then tap **CONTINUE**.
 
 	![Company access setup screen](./media/and-enroll-9-comp-access-setup.png)  
 
@@ -113,9 +113,6 @@ If you get an error while trying to enroll your device in Intune, you can [send 
 
 	![Company access setup complete screen](./media/and-enroll-10-comp-access-setup-complete.png)
 
-Before trying to install company apps, go to **Settings** &gt; **Security**, and turn on **Unknown sources**. If you don't turn on this option before trying to install apps, you'll see the message "Install blocked." For security reasons, your device is set to block installations of apps obtained from unknown sources." You can tap **Settings** on the error dialog to go to the **Unknown sources** option.
+Before you try to install company apps, go to **Settings** &gt; **Security**, and turn on **Unknown sources**. If you don't turn on this option before you try to install apps, you'll see the following message: "Install blocked. For security reasons, your device is set to block installations of apps obtained from unknown sources." You can tap **Settings** on the error dialog box to go to the **Unknown sources** option.
 
-Still need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
-
-
-
+Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.

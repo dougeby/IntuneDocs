@@ -6,7 +6,7 @@ description: Mobile device management (MDM) uses enrollment to bring devices int
 keywords:
 author: NathBarn
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 09/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,17 +41,24 @@ The following table shows Intune's enrollment methods with their supported capab
 
 | **Method** |	**Wipe** |	**Affinity**	|	**Lock** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | [more](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[BYOD](#byod)** | No|	Yes |	No | [more](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|	No |No |No	| [more](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 |**[DEP](#dep)**|	Yes |	Optional |	Optional|[more](ios-device-enrollment-program-in-microsoft-intune.md)|
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [more](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
 |**[USB-Direct](#usb-direct)**|	No |	No	| No|[more](ios-direct-enrollment-in-microsoft-intune.md)|
 
-**Windows and Android enrollment methods**
+**Windows enrollment methods**
 
 | **Method** |	**Wipe** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | [more](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[BYOD](#byod)** | Yes|	Yes |	No | [more](prerequisites-for-enrollment.md#set-up-device-management)|
+|**[DEM](#dem)**|	No |No |No	|[more](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+
+**Android enrollment methods**
+
+| **Method** |	**Wipe** |	**Affinity**	|	**Lock** | **Details**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | No|	Yes |	No | [more](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|	No |No |No	|[more](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 For a series of question that help you find the right method, see [Choose how to enroll devices](/intune/get-started/choose-how-to-enroll-devices1).

@@ -80,7 +80,7 @@ When your device is enrolled, your IT administrator can:
 
 -   Require you to accept terms and conditions.
 
--   Enable or disable the camera on your device.
+-   Enable or disable the camera on your device to prevent you from taking pictures of sensitive company data.
 
 -   Enable or disable web browsing on your device.
 
@@ -96,6 +96,4 @@ When your device is enrolled, your IT administrator can:
 
 -   Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, roaming charges may be incurred.
 
-For the steps on how to enroll your device, see [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) or [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
-
-If you have questions, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you have questions, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

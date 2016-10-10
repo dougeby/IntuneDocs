@@ -153,4 +153,4 @@ Using Apple Configurator you can factory reset iOS devices and prepares them for
 
 
 ### See also
-[Get ready to enroll devices](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Prerequisites for enrolling devices](prerequisites-for-enrollment.md)

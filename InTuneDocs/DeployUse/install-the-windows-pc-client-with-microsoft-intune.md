@@ -136,4 +136,4 @@ Use one of the following procedures to help you monitor and validate successful 
 
 ### See Also
 [Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
-[Troubleshoot client setup](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune)
+[Troubleshoot client setup](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)

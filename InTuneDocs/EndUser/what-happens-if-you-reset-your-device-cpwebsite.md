@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,4 +32,4 @@ To read about what happens if you reset your device, use the link below that mat
 
 - [Android](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 - [iOS](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
-- [Windows](/what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+- [Windows](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)

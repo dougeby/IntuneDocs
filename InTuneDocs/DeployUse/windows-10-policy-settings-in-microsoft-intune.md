@@ -6,7 +6,7 @@ description: Use the policy settings listed in this topic to help you configure 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -59,7 +59,7 @@ For each OMA-URI setting you want to add, enter the following information. Use t
 - **Value** - Specify the value to associate with the OMA-URI you entered.
 
 ### Example
-In the screenshot below, the setting **Conectivity/AllowVPNOverCellular** has been enabled. This lets a Windows 10 device open a VPN connection when on a cellular network.
+In the screenshot below, the setting **Connectivity/AllowVPNOverCellular** has been enabled. This lets a Windows 10 device open a VPN connection when on a cellular network.
 
 > ![Example of a custom policy containing VPN settings](./media/custom-policy-example.png)
 

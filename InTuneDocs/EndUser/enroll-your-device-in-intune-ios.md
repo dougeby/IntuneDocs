@@ -28,10 +28,15 @@ ms.suite: ems
 
 # Enroll your iOS device in Intune
 
-If your company or school uses Microsoft Intune, you can enroll your iOS device to get access to company email, files, and other resources. Enrolling your devices allows your IT department to manage those work or school resources and keep them secure, while giving you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+If your company or school uses Microsoft Intune, you can enroll your iOS device to get access to company email, files, and other resources. When you enroll your devices, your IT department can manage those work or school resources, keep them secure, and give you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 If you're trying to enroll a Mac OS X device, see [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
 
+**Before you start:**
+
+- Make sure that you finish enrolling after you start the steps. If you start but don't finish, enrollment may not work if you come back later and try again.
+- Make sure that your Wi-Fi is working. Otherwise, enrollment will fail.
+- If you blocked Safari on your device, unblock it. You must use Safari to enroll.
 
 
 **To enroll your iOS device:**
@@ -46,7 +51,7 @@ If you're trying to enroll a Mac OS X device, see [Enroll your Mac OS X device i
 
 	![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
-4. Review a list of what your IT administrator can and can’t see on your enrolled device, and tap **Continue**.
+4. Review a list of what your IT admin can and can’t see on your enrolled device, and then tap **Continue**.
 
 	![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -74,13 +79,13 @@ If you're trying to enroll a Mac OS X device, see [Enroll your Mac OS X device i
 
  	![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
-	An “Enrolling device” message displays on the screen.
+	An “Enrolling device” message shows on the screen.
 
-11.  When a message displays asking if you want to open the page in the Company Portal, tap **Open**.
+11.  When a message asks if you want to open the page in the Company Portal, tap **Open**.
 
 	![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
-12. On the **Company Access Setup** screen, tap **Continue**. If your IT administrator set up additional security requirements, such as the need to set a password, follow the on-screen instructions until you meet all of the compliance requirements and are returned to the Company Access Setup screen, and then tap **Continue**.
+12. On the **Company Access Setup** screen, tap **Continue**. If your IT admin set up additional security requirements, like the need to set a password, follow the on-screen instructions until you meet all the compliance requirements and are returned to the Company Access Setup screen, and then tap **Continue**.
 
 	![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
@@ -90,6 +95,5 @@ If you're trying to enroll a Mac OS X device, see [Enroll your Mac OS X device i
 
 Your device is now enrolled in Intune, and you are taken back to the Company Portal app.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
-
+Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

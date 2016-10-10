@@ -27,8 +27,6 @@ ms.suite: ems
 
 
 # Error evaluating device
-Your device was found to be noncompliant with one or more of your company’s policies and an error occurred while evaluating the device for this condition.
+Your device was found to be noncompliant with one or more of your company’s policies, but we can't display the error right now, because the system had a problem while trying to evaluate your device.  
 
-To solve this problem, wait a few minutes, and then tap **Check Compliance**.
-
-If the problem persists, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+To solve this problem, wait a few minutes, and then tap **Check Compliance**. If the problem persists, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
