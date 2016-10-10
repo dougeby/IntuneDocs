@@ -6,7 +6,7 @@ description: Email profile settings can be used to configure email access settin
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,13 +39,16 @@ You can use email profiles to configure the native email client on the following
 -	Windows 10 (for the desktop), Windows 10 Mobile, and later
 -	iOS 8.0 and later
 -	Samsung KNOX Standard (4.0 and later)
+-	Android for Work
+
+>[!NOTE]
+>Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate profile 
 
 In addition to setting up an email account on the device, you can set up how much email to synchronize, and depending on the device type, which content types to synchronize.
+
 >[!NOTE]
 >
 >If the user has installed an email profile prior to set up of a profile by Intune, the result of the Intune email profile deployment depends on the device platform:
-
-[comment]: <> Passive construction in next three paragraphs is necessary until the process of duplicate detection is made clear by PM.
 
 >**iOS**: An existing, duplicate email profile is detected based on host name and email address. The duplicate email profile created by the user blocks the deployment of an Intune admin-created profile. This is a common problem, as iOS users typically create an email profile, then enroll. The company portal informs the user that they are not compliant due to their manually-configured email profile, and prompts the user to remove that profile. The user should remove their email profile, so the Intune profile can be set up. To prevent the problem, instruct your users to enroll before installing an email profile, and to allow Intune to set up the profile.
 
@@ -54,6 +57,8 @@ In addition to setting up an email account on the device, you can set up how muc
 >**Samsung KNOX**: An existing, duplicate email profile is detected based on the email address, and overwrites it with the Intune profile. If the user sets up that account, it is overwritten again by the Intune profile. Note that this may cause some confusion to the user.
 
 >Since Samsung KNOX does not use host name to identify the profile, we recommend that you not create multiple email profiles to use on the same email address on different hosts, as these overwrite each other.
+
+>**Android for Work**: The Intune profile is only applied to the work profile of the device and doesn't affect profiles on the user profile of the device.
 
 
 ## Secure email profiles
@@ -82,6 +87,10 @@ The password is not contained in the email profile, so the user needs to supply 
     -   **Email Profile (Windows Phone 8 and later)**
 
     -   **Email Profile (Windows 10 Desktop and Mobile and later)**
+    
+	-   **Email Profile (Android for Work  - Gmail)**
+
+	-	**Email Profile (Android for Work  - Nine Work)**
 
     You can only create and deploy a custom email profile policy. Recommended settings are not available.
 
@@ -95,14 +104,14 @@ The password is not contained in the email profile, so the user needs to supply 
     |**Account name**|The display name for the email account as it will appear to users on their devices.|
     |**Username**|How the user name for the email account will be obtained. Select **Username** for an on-premises Exchange server, or select **User Principal Name** for Office 365.|
     |**Email address**|How the email address for the user on each device is generated. Select **Primary SMTP Address** to use the primary SMTP address to log into Exchange or use  **User Principal Name** to use the full principal name as the email address.|
-    |**Authentication method** (Samsung KNOX and iOS)|Select either **Username and Password** or **Certificates** as the authentication method used by the email profile.|
+    |**Authentication method** (Android for Work, Samsung KNOX and iOS)|Select either **Username and Password** or **Certificates** as the authentication method used by the email profile.|
     |**Select a client certificate for client authentication (Identity Certificate)** (Samsung KNOX and iOS)|Select the client SCEP certificate that you previously created that will be used to authenticate the Exchange connection. For more information about how to use certificate profiles in Intune, see [Secure resource access with  certificate profiles](secure-resource-access-with-certificate-profiles.md). This option is displayed only when the authentication method is **Certificates**.|
     |**Use S/MIME** (Samsung KNOX and iOS)|Send outgoing email using S/MIME encryption.|
     |**Signing certificate** (Samsung KNOX and iOS)|Select the signing certificate that will be used to sign outgoing email. This option is displayed only when you select **Use S/MIME**.|
     |**Number of days of email to synchronize**|The number of days of email that you want to synchronize, or select **Unlimited** to synchronize all available email.|
-    |**Sync schedule** (Samsung KNOX, Windows Phone 8 and later, Windows 10)|Select the schedule by which devices will synchronize data from the Exchange server. You can also select **As Messages arrive**, which synchronizes data as soon as it arrives, or **Manual**, where the user of the device must initiate the synchronization.|
+    |**Sync schedule** (Android for Work, Samsung KNOX, Windows Phone 8 and later, Windows 10)|Select the schedule by which devices will synchronize data from the Exchange server. You can also select **As Messages arrive**, which synchronizes data as soon as it arrives, or **Manual**, where the user of the device must initiate the synchronization.|
     |**Use SSL**|Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server. For devices that run Samsung KNOX 4.0 or later, you must export your Exchange Server SSL certificate, and deploy it as an Android Trusted Certificate Profile in Intune. Intune does not support accessing this certificate if it is installed on the Exchange server by other means.|
-    |**Content type to synchronize**|Select the content types that you want to synchronize to devices.|
+    |**Content type to synchronize** (all platforms except Android for Work Gmail)|Select the content types that you want to synchronize to devices.|
 	|**Allow email to be sent from third party applications** (iOS only)|Allow the user to select this profile as the default  account for sending email, and allow third-party applications to open email in the native email app, for example, to attach files to email.|
     > [!IMPORTANT]
     > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
