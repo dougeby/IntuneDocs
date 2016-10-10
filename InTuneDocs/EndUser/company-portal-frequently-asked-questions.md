@@ -71,8 +71,6 @@ To learn about what your IT administrator can and can't see on your device, use 
 	-   Windows 10 Desktop
 	-   Windows Phone 8.1
 	-   Windows 8.1
-	-   Windows RT devices
-	-   Windows Phone 8
 	-   iPhones, iPads, and Mac OS X
 	-   Android mobile devices
 
