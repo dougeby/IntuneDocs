@@ -5,7 +5,7 @@ title: Deploy Lookout for Work app | Microsoft Intune
 description: Configure and deploy Lookout for Work apps for Android.
 author: karthikaraman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -27,7 +27,7 @@ ms.suite: ems
 # Configure and deploy Lookout for Work apps
 This article explains how to configure and deploy the Lookout for Work app for Android and iOS devices.
 
-## Android
+## Android (Google Play Store app)
 
 * **Step 1:**	Upload the Lookout for Work Android app in the [Microsoft Intune administrator console](https://manage.microsoft.com) as described in the [Add apps for mobile devices in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) topic.
 >[!NOTE]
@@ -35,7 +35,7 @@ This article explains how to configure and deploy the Lookout for Work app for A
 
 ![screenshot of Intune admin console apps page showing the Lookout for work apps in the list](../media/mtp/lookout-app-listed-intune-console.png)
 
-* **Step 3:** Deploy the app to users. Select the Lookout for Work app shown in the screen above and select **Manage Deployment**.
+* **Step 2:** Deploy the app to users. Select the Lookout for Work app shown in the screen above and select **Manage Deployment**.
 
   You must select the same users that were added to the Enrollment Management option in the Lookout  console.  See Step 3 in the [configure your subscription with Lookout device threat protection section](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) for information about adding user groups to Lookout MTP.
 >[!IMPORTANT]
@@ -44,7 +44,7 @@ This article explains how to configure and deploy the Lookout for Work app for A
 Choose the **Required Install** option to require that the Lookout app be installed on the user’s device.
 
 
-## iOS
+## iOS (Enterprise-signed version of Lookout app)
 
 * **Step 1:** Make sure **iOS management** is set up on your device. For instruction on how to setup your device for iOS management, see [Set up iOS and Mac device management](Set up iOS and Mac device management.md).
 
