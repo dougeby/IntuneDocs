@@ -31,7 +31,7 @@ This article explains how to configure and deploy the Lookout for Work app for A
 
 * **Step 1:**	Upload the Lookout for Work Android app in the [Microsoft Intune administrator console](https://manage.microsoft.com) as described in the [Add apps for mobile devices in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) topic.
 >[!NOTE]
->Do not click the box for requiring a managed browser.
+> Do not click the box for requiring a managed browser.
 
 ![screenshot of Intune admin console apps page showing the Lookout for work apps in the list](../media/mtp/lookout-app-listed-intune-console.png)
 
@@ -52,9 +52,10 @@ Choose the **Required Install** option to require that the Lookout app be instal
 
 
 * **Step 3:** Enable Azure Active Directory authentication for the iOS users by doing the following:
-  1.  Login to the [Azure Active Directory management portal] [https://manage.windowsazure.com], and navigate to the application page.
+  1.  Login to the [Azure Active Directory management portal](https://manage.windowsazure.com), and navigate to the application page.
   2.  Add the **Lookout for Work iOS app** as a **native client application**.
   ![screenshot of the add apps dialog showing the native client app option](../media/mtp/aad-add-app.png)
+  
   3. Replace the **com.lookout.enterprise.yourcompanyname** with the customer bundle ID you selected when you signed the IPA.
   4.  Add additional redirect URI: **&lt;companyportal://code/>** followed by a URLencoded version of your original redirect URI.
   5.  Add **Delegated Permissions** to your app.
