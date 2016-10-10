@@ -97,7 +97,7 @@
 #### [Windows & Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [Deploy a device compliance policy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [Restrict access to email, O365, & other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [Restrict access based on device compliance](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 #### [Exchange Online & new Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
@@ -106,7 +106,9 @@
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [Restrict email access: examples](restrict-email-access-example-scenarios.md)
-
+### [Allow only policy managed app access to O365 services](allow-policy-managed-apps-access-to-o365.md)
+#### [Exchange Online](mam-ca-for-exchange-online.md)
+#### [Block apps with no ADAL](block-apps-with-no-modern-authentication.md)
 ### [Restrict access to networks (Cisco ISE)](restrict-access-to-networks.md)
 ### [Restrict access based on device, network, and application risk](restrict-access-based-on-device-network-app-risk.md)
 #### [Set up Lookout device threat protection](set-up-your-subscription-with-lookout-mtp.md)
