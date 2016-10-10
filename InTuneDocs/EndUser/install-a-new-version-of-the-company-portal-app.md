@@ -28,7 +28,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # Install a new version of the Company Portal app
 
-If your version of the Company Portal is no longer supported, or there is a newer version of the Company Portal available, you need to update the Company Portal app to a later version. Use the steps below that match the type of device you have.
+If your version of the Company Portal app is no longer supported, or there is a newer version of the Company Portal app available, you need to update it to a later version. Use the steps  that match the type of device you have.
 
 ## To update the Intune Company Portal app on your Android device
 
