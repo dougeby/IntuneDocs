@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Remove your device from the Company Portal
 
-If you decide you no longer want your device to be managed by Intune and your IT admin, you can remove it from the Company Portal by using the [Company Portal website](http://portal.manage.microsoft.com). The Company Portal website is a web page that you can use to manage computers and devices that you have enrolled in Intune. On the Company Portal website, you can peform most of the tasks available on your Company Portal app.
+If you decide you no longer want your device to be managed by Intune and your IT admin, you can remove it from the Company Portal by using the [Company Portal website](http://portal.manage.microsoft.com). The Company Portal website is a web page that you can use to manage computers and devices that you have enrolled in Intune. On the Company Portal website, you can perform most of the tasks available on your Company Portal app.
 
 If you remove your device, it will no longer be listed in the Company Portal, and you might also lose access to company or school data, apps, and email.
 
