@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# What's coming in Microsoft Intune - October
+# The Early Edition for Microsoft Intune - October
 The **Early Edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided under NDA on an extremely limited basis and is subject to change. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Intune/PM buddy if you have any questions or concerns.
 
 This page is updated periodically. Check back for new What’s Coming updates.
@@ -33,7 +33,7 @@ This page is updated periodically. Check back for new What’s Coming updates.
 The following changes are under development for Intune. All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
 ### Manage printing from apps managed using MAM policies
-You can now prevent printing company data from apps that have MAM policies. This setting is available on the [Azure portal](..deployuse/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) and is supported on both [iOS](..deployuse/ios-mam-policy-settings) and [Android](..deployuse/android-mam-policy-settings) devices.
+You can now prevent printing company data from apps that have MAM policies. This setting is available on the [Azure portal](InTune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) and is supported on both [iOS](..deployuse/ios-mam-policy-settings) and [Android](InTune/deploy-use/android-mam-policy-settings) devices.
 <!--TFS 1014328-->
 
 ### New Microsoft Intune Company Portal available for Windows 10 devices
@@ -80,7 +80,7 @@ Starting in November 2016, we will deprecate support for the Windows Phone 8 Com
 <!--TFS 1255391-->
 
 ### Conditional access for mobile application management
-You can now create a conditional access policy to block unmanaged mobile applications from accessing [Exchange Online](..deployuse/restrict-access-to-exchange-online-with-microsoft-intune.md) and [SharePoint Online](..deployuse/restrict-access-to-sharepoint-online-with-microsoft-intune.md). You can block the built-in mail clients and apps that are not MAM enabled with Intune App SDK.  This can be done by creating a conditional access policy and specifying the applications that you want to have access to Exchange Online and SharePoint Online using the Azure portal.
+You can now create a conditional access policy to block unmanaged mobile applications from accessing [Exchange Online](..deployuse/restrict-access-to-exchange-online-with-microsoft-intune.md). You can block the built-in mail clients and apps that are not MAM enabled with Intune App SDK.  This can be done by creating a conditional access policy and specifying the applications that you want to have access to Exchange Online using the Azure portal.
 <!--TFS 1317673-->
 
 <!--TFS 1318014; awaiting approval in notes as to whether to proceed
