@@ -48,7 +48,7 @@ To create a work profile:
 
 	![What your IT admin can and can't see on your device](./media/andr-afw-what-it-can-see-on-your-device.png)
 
-5.  On the **What comes next** screen, read about what's going to happen next, and then tap **ENROLL**.
+5.  On the **What comes next** screen, read about what's going to happen next, and then tap **CONTINUE**.
 
 	![What comes next screen](./media/andr-afw-what-comes-next.png)
 

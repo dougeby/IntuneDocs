@@ -32,11 +32,7 @@ Before you can access your work, your IT administrator needs you to install the 
 
 **What you need to do:**
 
-1.	Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Lookout for Work from App Store**.
-
-	![you are required to install Lookout for Work](./media/lookout-required-app-install-android.png)
-
-	You are taken to the Lookout for Work installation page in the App Store.
+1.	When you get the notification, **Required application – Install Lookout for Work from App Store**, tap it. You are taken to the Lookout for Work installation page in the App Store.
 
 2.	Install Lookout for Work, and then tap **ACCEPT** to let Lookout for Work access your device.
 
@@ -50,7 +46,7 @@ Before you can access your work, your IT administrator needs you to install the 
 
 	![sign in with your work or school account](./media/lookout-sign-in-azure-android.png)
 
-5. Select the account that you use to access work or school email and files, and then tap **ADD ACCOUNT**.
+5. Select the account that you use to access work or school email and files, and then tap **ADD ACCOUNT**. You will see a screen that looks something like the following.
 
 	![select your work or school account and tap Add Account](./media/lookout-pick-account-android.png)
 
@@ -73,8 +69,6 @@ Before you can access your work, your IT administrator needs you to install the 
 	![Lookout for Work found no security threats](./media/lookout-scan-no-threats-found-android.png)
 
 	The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
-
-	![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
 
 	If Lookout for Work finds a security threat on your device, you will see instructions on how to fix the issue.
 
