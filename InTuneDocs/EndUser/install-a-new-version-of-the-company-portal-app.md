@@ -32,11 +32,11 @@ If your version of the Company Portal is no longer supported, or there is a newe
 
 ## To update the Intune Company Portal app on your Android device
 
-The Play Store will alert you when a new version of the Company Portal is available. You will not see a prompt in the Company Portal app itself. Follow the directions in the alert to update your device.
+The Play Store alerts you when a new version of the Company Portal is available. You won't see a prompt in the Company Portal app itself. Follow the directions in the alert to update your device.
 
 ## To update the Intune Company Portal app on your iOS device
 
-When a new version is available, you'll see the "update" option when you're looking at the app in your list of installed apps.  
+When a new version is available, you see the "update" option when you're looking at the app in your list of installed apps.  
 
 To update the Company Portal app:
 
@@ -55,5 +55,3 @@ To update the Company Portal app:
 
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
