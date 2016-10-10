@@ -71,7 +71,7 @@ The next steps outline the tasks that you must do to complete the Lookout set up
 
 ### Step 2: Configure the Intune connector
 
-1.  In the Lookout console, go to the **System** module, choose the **Connectors** tab, and select **Intune**.
+1.  In the Lookout console, from the **System** module, choose the **Connectors** tab, and select **Intune**.
 
   ![screenshot of the Lookout console with the connectors tab open, and Intune option highlighted](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
@@ -85,6 +85,7 @@ On the **Enrollment Management** option, define a set of users whose devices sho
 To get started with enrollments groups,  first define an Azure AD security group that would be a good first set of users to enroll in Lookout device threat protection. Once you have the group created in Azure, AD, in the Lookout Console, go to the **Enrollment Management** option and add the Azure AD security group **Display Name(s)** for enrollment.
 
 When a user is in an enrollment group, any of their devices that are identified and supported in Azure AD are enrolled and eligible for activation in Lookout device threat protection.  The first time they open the Lookout for Work app on their supported device, the device is activated in Lookout.
+
 ![screenshot of the Intune connector enrollment page](../media/mtp/lookout-mtp-enrollment.png)
 
 The best practice is to use the default (5 minutes) for the increment of time to check for new devices.
@@ -105,12 +106,17 @@ In the **Error Management** option, enter the email address that should receive 
 
 ![screenshot of the Intune connector error management page](../media/mtp/lookout-mtp-connector-error-notifications.png)
 
-### Step 6: Configure email notifications
-If you want to receive email alerts for threats, sign in to the [Lookout console](https://aad.lookout.com)with the user account that should receive the notifications. On the **Preferences** tab of the **System** module, choose the desired notifications and set them to **ON**. Save your changes.
+### Step 6. Configure enrollment settings
+In the **System** module, on the **Connectors** page, specify the number of days before a device is considered as disconnected.  Disconnected devices are considered as non-compliant and will be blocked from accessing your company applications based on the Intune conditional access policies. You can specify values between 1 and 90 days.
+
+![](../media/mtp/lookout-console-enrollment-settings.png)
+
+### Step 7: Configure email notifications
+If you want to receive email alerts for threats, sign in to the [Lookout console](https://aad.lookout.com) with the user account that should receive the notifications. On the **Preferences** tab of the **System** module, choose the desired notifications and set them to **ON**. Save your changes.
 
 ![screenshot of the preferences page with the user account displayed](../media/mtp/lookout-mtp-email-notifications.png)
 If you no longer want to receive email notifications, set the notifications to **OFF** and save your changes.
-### Step 7: Configure threat classification
+### Step 8: Configure threat classification
 Lookout device threat protection classifies mobile threats of various types. The [Lookout threat classifications](http://personal.support.lookout.com/hc/en-us/articles/114094130693) have default risk levels associated with them. These can be changed at any time to suite your company requirements.
 
 ![screenshot of the policy page showing threat and classifications](../media/mtp/lookout-mtp-threat-classification.png)
