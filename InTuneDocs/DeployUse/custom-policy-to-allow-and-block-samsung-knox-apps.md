@@ -58,7 +58,7 @@ These settings can only be used by devices that run Samsung KNOX.
 
 4. Click **OK**, and then click **Save Policy**. 
 
->[TIP]
+>[!TIP]
 > You can find the package ID of an app by browsing to the app on the Google Play store. The package ID is contained in the URL of the app's page. For example, the package ID of the Microsoft Word app is **com.microsoft.office.word**.
 
 The next time each targeted device checks in, the app settings will be applied.
