@@ -2,7 +2,7 @@
 # required metadata
 
 title: Send diagnostic data logs to your IT admin using a USB cable | Microsoft Intune
-description: Send data logs by using an USB cable
+description: Send data logs by using a USB cable
 keywords:
 author: staciebarker
 manager: angrobe
