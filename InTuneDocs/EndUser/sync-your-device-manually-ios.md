@@ -42,4 +42,4 @@ If your app installation is taking too long, use the following instructions to m
 
 A spinning circle appears on the screen until the sync is finished.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
