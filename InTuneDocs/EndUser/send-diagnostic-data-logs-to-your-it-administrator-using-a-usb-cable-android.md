@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Send diagnostic data logs to your IT administrator using a USB cable | Microsoft Intune
-description:
+title: Send diagnostic data logs to your IT admin using a USB cable | Microsoft Intune
+description: Send data logs by using a USB cable
 keywords:
 author: staciebarker
 manager: angrobe
@@ -26,20 +26,18 @@ ms.suite: ems
 ---
 
 
-# Send diagnostic data logs to your IT administrator using a USB cable
+# Send diagnostic data logs to your IT admin using a USB cable
 
-If you want to send data logs to your IT administrator to get some help with an issue, you can send the logs by using a computer and a USB cable instead of sending the logs from your mobile device. Here's how:
+If you want to send data logs to your IT admin, you can send the logs by using a computer and a USB cable instead of sending the logs from your mobile device.
+
+ Before you start, make sure that you have your IT admin's email address, which is typically listed on your [Company Portal website](http://portal.manage.microsoft.com) or in your Company Portal app.
 
 1.  On the error screen, tap **Send Info**. When you see a message asking which method you want to use to send the logs, choose the option that will save the files to your device.
 
-2.  Before you start, make sure that you have your IT administrator's email address, which is typically listed on your [Company Portal website](http://portal.manage.microsoft.com) or in your Company Portal app.
-
 2.  Use a USB cable to connect your Android device to a computer.
 
-3.  On the computer, look for a directory that has the name of your phone. In that directory, find &lt;Android Device&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
+3.  On the computer, look for a directory that has the name of your device. In that directory, find &lt;Android Device&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
 
-4.  Attach all of the files to an email and send them to your IT admin.
+4.  Attach the files to an email and send them to your IT admin.
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
