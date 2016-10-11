@@ -27,10 +27,12 @@ ms.suite: ems
 
 
 # Sync your Windows device manually
-If your app installation is taking too long, use the following instructions to manually sync your Windows device. Syncing manually might help to speed up the installation. The only versions that are supported are the ones listed. Use the link, shown in the "In this Article" section above, that matches the type of device you have:
+If your app installation is taking too long, you can try manually syncing your Windows device. Syncing manually might help to speed up the installation.
+
+Only the following versions are supported. Use the instructions that match the type of device that you have.
 
 * [Windows 10 Mobile](#windows-10-mobile)
-* [Windows 10 Desktop](#windows-10-desktop)
+* [Windows 10 desktop](#windows-10-desktop)
 * [Windows Phone 8.1](#windows-phone-8-1)
 
 
@@ -39,61 +41,61 @@ To manually sync your Windows 10 Mobile device to speed up a slow app installati
 
 1. Go to **All apps** > **Settings** > **Accounts**.
 
-    ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
+    ![Choosing Accounts on the Settings screen](./media/win10m-sync-1-settings-accounts.png)
 
 2. Choose **Work access**.
 
-    ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
+    ![Choosing work access as the account type](./media/win10m-sync-2-work-access.png)
 
 3. Under **Enroll in to device management**, choose your company name.
 
-    ![win10m-sync-3-tap-comp-name](./media/win10m-sync-3-tap-comp-name.png)
+    ![Choosing the company name for device management](./media/win10m-sync-3-tap-comp-name.png)
 
 4. Choose the **Sync** icon.
 
-    ![win10m-sync-4-tap-sync](./media/win10m-sync-4-tap-sync.png)
+    ![Choosing the Sync icon](./media/win10m-sync-4-tap-sync.png)
 
-    The message “We’re synching your account” appears at the top of the screen. The Sync button is grayed out until your device finishes syncing.
+    The message “We’re synching your account” appears at the top of the screen. The **Sync** button is grayed out until your device finishes syncing.
 
 ## Windows 10 desktop
 To manually sync your Windows 10 desktop device to speed up a slow app installation:
 
 1. Choose the **Start** button, and then choose **Settings**.
 
-    ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
+    ![The Start button](./media/win10pc-sync-1-start-button.png)
 
 2. On the **Settings** page, choose **Accounts**.
 
-    ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
+    ![Choosing Accounts on the Settings page](./media/win10pc-sync-2-settings-accounts.png)
 
 3. On the **Accounts** page, choose **Work access**.
 
-    ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
+    ![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
 
 4. Under the section **Enroll in to device management**, choose the name of your company.
 
-    ![win10pc-sync-4-tap-com-name](./media/win10pc-sync-4-tap-com-name.png)
+    ![Choosing the company name for device management](./media/win10pc-sync-4-tap-com-name.png)
 
 5. Choose the **Sync** button.
 
-    ![win10pc-sync-5-tap-sync](./media/win10pc-sync-5-tap-sync.png)
+    ![Choosing the Sync button](./media/win10pc-sync-5-tap-sync.png)
 
-   The button becomes grayed out until the sync is complete.
+   The button becomes grayed out until the sync is finished.
 
 ## Windows Phone 8.1
 To manually sync your Windows Phone 8.1 device to speed up a slow app installation:
 
 1. Go to **All apps** > **Settings** > **workplace**.
 
-    ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
+    ![List of settings](./media/wp81-1-sync-settings-workplace.png)
 
 2. Choose the name of your company.
 
-    ![wp81-2-sync-tap-compname](./media/wp81-2-sync-tap-compname.png)
+    ![Choosing the company name for the workplace account](./media/wp81-2-sync-tap-compname.png)
 
 3. Choose the **Sync** icon.
 
-    ![wp81-3-sync-tap-sync-button](./media/wp81-3-sync-tap-sync-button.png)
+    ![Choosing the Sync icon](./media/wp81-3-sync-tap-sync-button.png)
 
    The message “We’re synching your account” appears at the top of the screen until your device finishes syncing.
 
