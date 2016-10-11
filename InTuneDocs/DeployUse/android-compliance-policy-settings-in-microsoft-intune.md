@@ -41,7 +41,7 @@ If you are looking for information about other platforms, select one of the foll
 
 -  **Minimum password length:** Specify the minimum number of digits or characters that the user’s password must contain.
 
-- **Password quality:** Enable this setting to configure password requirements for Android devices. Choose from:
+- **Password quality:** This setting detects if the password requirements you specify is configured on the device. Enable this setting to require that users configure certain password requirements for Android devices. Choose from:
   -   **Low security biometric**
   - **Required**
   -   **At least numeric**
