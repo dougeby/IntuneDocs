@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Send diagnostic data logs to your IT administrator using email | Microsoft Intune
-description:
+title: Send diagnostic data logs to your IT admin using email | Microsoft Intune
+description: Send data logs by using email on an Android device
 keywords:
 author: staciebarker
 manager: angrobe
@@ -26,11 +26,11 @@ ms.suite: ems
 ---
 
 
-# Send diagnostic data logs to your IT administrator using email
+# Send diagnostic data logs to your IT admin using email
 
-If you get an error on your Android device while you're working with your school or company apps or while you're in the Company Portal app, you can send diagnostic data logs  to help your IT admin figure out and fix the error. To include all of the details in the logs, which will make it easier for your IT admin to figure out the issue, turn on Verbose Logging. you can read more about [verbose logging](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+If you get an error on your Android device while you're working with your school or company apps or while you're in the Company Portal app, you can send diagnostic data logs to help your IT admin diagnose and fix the error. To include all details in the logs, which will make it easier for your IT admin to figure out the issue, turn on verbose logging. For more about verbose logging see [Use verbose logging to help your IT administrator fix device issues android](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-To send logs to your IT administrator using email:
+To send logs to your IT admin using email:
 
 1.  Open the Company Portal app.
 
