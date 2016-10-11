@@ -28,8 +28,6 @@ ms.suite: ems
 
 # iOS device doesn't have the required minimum operating system version
 
-Your iOS device doesn’t meet the minimum operating system version required by your IT department.  Before updating your device, check the current operating system version by tapping **Settings** &gt; **About**. To update your device to the latest version, tap **Settings** &gt; **General** &gt; **Software Update**.
+Your iOS device doesn’t meet the minimum operating system version that your IT department requires. Before you update your device, check the current operating system version by choosing **Settings** &gt; **About**. To update your device to the latest version, choose **Settings** &gt; **General** &gt; **Software Update**.
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
