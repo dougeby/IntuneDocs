@@ -27,6 +27,6 @@ ms.suite: ems
 
 
 # Turn off Microsoft usage data collection
-To improve its products and services, Microsoft automatically collects anonymous data about the reliability and performance of the Company Portal app and how t's used. You can turn off the collection of that data on your Android device by using the **Usage Data** setting in the Company Portal app. IT administrators have no control over the collection of the data, and they cannot change your selection for the setting.
+To improve its products and services, Microsoft automatically collects anonymous data about the reliability and performance of the Company Portal app and how it's used. You can turn off the collection of that data on your Android device by using the **Usage Data** setting in the Company Portal app. IT administrators have no control over the collection of the data, and they cannot change your selection for the setting.
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
