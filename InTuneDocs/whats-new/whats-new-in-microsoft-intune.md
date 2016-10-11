@@ -50,7 +50,7 @@ The following Intune topics are new, or updated with Android for Work informatio
 
 For IT professionals:
 - [Set up Android for Work](/intune/deploy-use/set-up-android-for-work)
-- [Nathan Bigman's resource access topics]()
+<!--- [Nathan Bigman's resource access topics]()-->
 - [Restrict email access to Exchange Online and new Exchange Online Dedicated with Intune](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
 - [Restrict email access to Exchange on-premises and legacy Exchange Online Dedicated with Intune](/intune/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
 - [Android for Work compliance policy settings](/intune/deploy-use/afw-compliance-policy-settings-in-microsoft-intune)
