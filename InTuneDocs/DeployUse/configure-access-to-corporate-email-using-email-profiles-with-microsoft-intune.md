@@ -58,7 +58,7 @@ In addition to setting up an email account on the device, you can set up how muc
 
 >Since Samsung KNOX does not use host name to identify the profile, we recommend that you not create multiple email profiles to use on the same email address on different hosts, as these overwrite each other.
 
->**Android for Work**: The Intune profile is only applied to the work profile of the device and doesn't affect profiles on the user profile of the device.
+>**Android for Work**: The Intune profile is only applied to the work profile of the device and doesn't affect email profiles on the user profile of the device.
 
 
 ## Secure email profiles
@@ -105,7 +105,7 @@ The password is not contained in the email profile, so the user needs to supply 
     |**Username**|How the user name for the email account will be obtained. Select **Username** for an on-premises Exchange server, or select **User Principal Name** for Office 365.|
     |**Email address**|How the email address for the user on each device is generated. Select **Primary SMTP Address** to use the primary SMTP address to log into Exchange or use  **User Principal Name** to use the full principal name as the email address.|
     |**Authentication method** (Android for Work, Samsung KNOX and iOS)|Select either **Username and Password** or **Certificates** as the authentication method used by the email profile.|
-    |**Select a client certificate for client authentication (Identity Certificate)** (Samsung KNOX and iOS)|Select the client SCEP certificate that you previously created that will be used to authenticate the Exchange connection. For more information about how to use certificate profiles in Intune, see [Secure resource access with  certificate profiles](secure-resource-access-with-certificate-profiles.md). This option is displayed only when the authentication method is **Certificates**.|
+    |**Select a client certificate for client authentication (Identity Certificate)** (Android for Work, Samsung KNOX and iOS)|Select the client SCEP certificate that you previously created that will be used to authenticate the Exchange connection. For more information about how to use certificate profiles in Intune, see [Secure resource access with  certificate profiles](secure-resource-access-with-certificate-profiles.md). This option is displayed only when the authentication method is **Certificates**.|
     |**Use S/MIME** (Samsung KNOX and iOS)|Send outgoing email using S/MIME encryption.|
     |**Signing certificate** (Samsung KNOX and iOS)|Select the signing certificate that will be used to sign outgoing email. This option is displayed only when you select **Use S/MIME**.|
     |**Number of days of email to synchronize**|The number of days of email that you want to synchronize, or select **Unlimited** to synchronize all available email.|
