@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Existing company email account found
-You already have a company email account. To continue to connect to your company email, you’ll need to take the following steps to enable your IT admin to properly set up and manage your account:
+You already have a company email account. To continue to connect to your company email, take the following steps to enable your IT admin to properly set up and manage your account:
 
 1.  In **Settings** on your device, remove the connection you previously set up to your company email.
 
