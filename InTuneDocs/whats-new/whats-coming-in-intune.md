@@ -32,18 +32,13 @@ This page is updated periodically. Check back for new What’s Coming updates.
 
 The following changes are under development for Intune. All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
-### Manage printing from apps managed using MAM policies
-You can now prevent printing company data from apps that have MAM policies. This setting is available on the [Azure portal](InTune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) and is supported on both [iOS](..deployuse/ios-mam-policy-settings) and [Android](InTune/deploy-use/android-mam-policy-settings) devices.
-<!--TFS 1014328-->
+## New capabilities
 
-### New Microsoft Intune Company Portal available for Windows 10 devices
-Microsoft is releasing a new Microsoft Intune Company Portal for Windows 10 devices. This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today.
-
-The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store.
-<!--TFS 1016502-->
+### Conditional access for mobile application management
+You can now create a conditional access policy to block unmanaged mobile applications from accessing [Exchange Online](..deployuse/restrict-access-to-exchange-online-with-microsoft-intune.md). You can block the built-in mail clients and apps that are not MAM enabled with Intune App SDK.  This can be done by creating a conditional access policy and specifying the applications that you want to have access to Exchange Online using the Azure portal.
+<!--TFS 1317673-->
 
 ### Android for Work support
-
 Intune is now part of the [Android for Work program](https://enterprise.google.com/android/partners/). We will begin rolling out support for Android for Work features to Intune starting this month.
 
 [Read Microsoft’s announcement about Intune support for Android for Work](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
@@ -51,8 +46,25 @@ Intune is now part of the [Android for Work program](https://enterprise.google.c
 <!---This month, some newly provisioned Intune tenants will start seeing the Android for Work features. We will announce later when existing tenants will begin to see this feature.--->
 <!--TFS 1043303-->
 
-### Android Samsung KNOX compatibility with Intune
+### Lookout integration to protect iOS devices
+In October, Microsoft is integrating with Lookout’s mobile threat protection solution to protect iOS mobile devices by detecting malware, risky apps, and more, on devices. Lookout’s solution helps you determine the threat level, which is configurable. You can create a compliance policy rule in Intune to determine device compliance based on the risk assessment by Lookout. Using conditional access policies, you can allow or block access to company resources based on the device compliance status.
 
+End users of noncompliant iOS devices will be prompted to enroll, and will be required to install the Lookout for Work app on their devices, activate the app, and remediate threats reported in the Lookout for Work application to gain access to company data.
+<!--TFS 1319493-->
+
+### New Microsoft Intune Company Portal available for Windows 10 devices
+Microsoft is releasing a new Microsoft Intune Company Portal for Windows 10 devices. This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today.
+
+The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store.
+<!--TFS 1016502-->
+
+### Manage printing from apps managed using MAM policies
+You can now prevent printing company data from apps that have MAM policies. This setting is available on the [Azure portal](InTune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) and is supported on both [iOS](..deployuse/ios-mam-policy-settings) and [Android](InTune/deploy-use/android-mam-policy-settings) devices.
+<!--TFS 1014328-->
+
+## Notices
+
+### Android Samsung KNOX compatibility with Intune
 Certain models of the Samsung Galaxy Ace phone cannot be managed by Intune as Samsung KNOX devices. When you enroll these devices with Intune, they will instead be managed as standard Android devices.
 The model numbers affected are:
 
@@ -62,8 +74,7 @@ The model numbers affected are:
 * SM-G313MY
 * SM-G313U
 
-You and your end users need take no further action.
-For more information, visit the [Samsung KNOX](https://www.samsungknox.com) website.
+You and your end users need take no further action. For more information, visit the [Samsung KNOX](https://www.samsungknox.com) website.
 
 <!--TFS 1173566 iX blurb provided by Barry; requires PM signoff
 
@@ -79,10 +90,6 @@ You can continue to manage Windows Phone 8, Windows RT  and Windows 8 devices th
 Starting in November 2016, we will deprecate support for the Windows Phone 8 Company Portal.
 <!--TFS 1255391-->
 
-### Conditional access for mobile application management
-You can now create a conditional access policy to block unmanaged mobile applications from accessing [Exchange Online](..deployuse/restrict-access-to-exchange-online-with-microsoft-intune.md). You can block the built-in mail clients and apps that are not MAM enabled with Intune App SDK.  This can be done by creating a conditional access policy and specifying the applications that you want to have access to Exchange Online using the Azure portal.
-<!--TFS 1317673-->
-
 <!--TFS 1318014; awaiting approval in notes as to whether to proceed
 
 ### "Default" policy is deprecated
@@ -97,11 +104,7 @@ To minimize unintentionally assigned profiles, Intune is removing support for th
 In order to streamline uploading IMEI numbers for Corporate devices and Apple serial numbers for Configurator enrollment, Intune is removing the row by row review of hardware identifiers already found in the system. This review allows the IT Pro to accept associated Details from the CSV to overwrite the existing details for a hardware identifier already in the system. The review will be replaced by a single option to automatically overwrite Details for all hardware identifiers or ignore new details for existing identifiers. This change will apply to the new console only. Until the existing Admin console is retired, no change will take place.
 -->
 
-### Lookout integration to protect iOS devices
-In October, Microsoft is integrating with Lookout’s mobile threat protection solution to protect iOS mobile devices by detecting malware, risky apps, and more, on devices. Lookout’s solution helps you determine the threat level, which is configurable. You can create a compliance policy rule in Intune to determine device compliance based on the risk assessment by Lookout. Using conditional access policies, you can allow or block access to company resources based on the device compliance status.
 
-End users of noncompliant iOS devices will be prompted to enroll, and will be required to install the Lookout for Work app on their devices, activate the app, and remediate threats reported in the Lookout for Work application to gain access to company data.
-<!--TFS 1319493-->
 
 ### Intune App SDK and App Wrapping Tool for Android
 You can enable your apps to use Intune mobile application management (MAM) policies by using either the Intune App Wrapping Tool or the Intune App SDK. New updates for the App Wrapping Tool and SDK will include:
