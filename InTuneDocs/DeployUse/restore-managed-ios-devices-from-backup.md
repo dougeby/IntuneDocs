@@ -41,6 +41,5 @@ If the backup is being restored onto a different device, then the enrollment sta
 > If you’re targeting your end users with conditional access policies, they will not be able to access corporate email until after they re-enroll.
 
 > [!TIP]
-> Tip
-An example communication for your users could be as follows:
+> An example communication for your users could be as follows:
 To re-enroll on your new device, make sure that the Company Portal app is on version 2.1.22 or later. To check the version, open the Company Portal app, tap the Menu button in the upper right, and then tap About. If you are on an earlier version, exit the Company Portal app and open the App Store. Tap the Updates button in the bottom right corner, then tap the UPDATE button next to the Company Portal item in the list. Once the update completes, launch the Company Portal app and  [re-enroll your iOS device into Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
