@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Set your PIN or password
 
-Your IT administrator may require you to set a PIN or password on your Android device when you're using Intune to access your work or school data. If you see a message prompting you to set a PIN or password, use the following steps.
+Your IT administrator might require you to set a PIN or password on your Android device when you're using Intune to access your work or school data. If you see a message that prompts you to set a PIN or password, use the following steps.
 
 1.  Tap  **Settings** &gt; **Security** &gt; **Screen Lock** &gt; **Password**.
 
@@ -35,4 +35,3 @@ Your IT administrator may require you to set a PIN or password on your Android d
 
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
