@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Send errors to your IT admin
+# Send errors to your IT admin 
 
 If you get errors on your iOS device while using the Company Portal app, you can send information to help your IT admin troubleshoot the problem. You can send error information in different ways:
 
