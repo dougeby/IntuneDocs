@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Encrypt your device
 
-If your company or organization requires you to encrypt your Android device before you can access company files, email, or data, follow these steps below to encrypt your device. You might be asked to set a PIN or password before encrypting if your IT administrator requires one.
+If your company or organization asks you to encrypt your Android device before you can access company files, email, or data, follow these steps below to encrypt your device. You might be asked to set a PIN or password before encrypting if your IT administrator requires one.
 
 If you ever unenroll your phone, it will remain encrypted.
 
