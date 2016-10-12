@@ -53,10 +53,10 @@ To reset your passcode:
 
     |Platform|Support|
     |------------|-----------|
-    |Android|Creates a new, temporary, alphanumeric passcode.|
-    |iOS|Removes the passcode from the device and does not create a new temporary passcode. If you're using Touch ID, you'll need to set it up again on your device, because it gets removed when you reset your passcode.|
-    |Windows 10 (mobile devices only)|Creates a new, temporary, alphanumeric passcode. Windows Hello is supported.|
-    |Windows Phone 8.1|Creates a new, temporary, numeric passcode.|
+    |Android|Creates a temporary, alphanumeric passcode.|
+    |iOS|Removes the passcode from the device and does not create a temporary passcode. If you're using Touch ID, you'll need to set it up again on your device, because it gets removed when you reset your passcode.|
+    |Windows 10 (mobile devices only)|Creates a temporary, alphanumeric passcode. Windows Hello is supported.|
+    |Windows Phone 8.1|Creates a temporary, numeric passcode.|
     After you unlock your device, you can set a new passcode by going to **Settings** on your device.
 
 5.  Unlock your device and then set a new passcode, or change the temporary passcode by going to **Settings** on your device.
