@@ -36,6 +36,10 @@ You can enable employees to enroll their mobile devices with Intune requires the
 |**Step 4:** [Assign Intune user licenses](#step-4-assign-intune-user-licenses)|Assign Intune licenses to users so they can enroll devices|
 |**Step 5:** [Set up device management](#step-5-set-up-device-management)|Enable platform-specific settings for iOS and Windows management. Android devices need no additional configuration.|
 
+Looking for Intune with Configuration Manager?
+> [!div class="button"]
+[View SCCM docs >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+
 ## Step 1: Device enrollment dependencies
 
 Before you enable mobile device enrollment, be sure you've done the following:

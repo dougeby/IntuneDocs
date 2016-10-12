@@ -26,8 +26,6 @@ ms.suite: ems
 ---
 
 
-# iOS device doesn't comply with the maximum operating system version
+# iOS device doesn't comply with the setting for the latest operating system version
 
-Your iOS device does not comply with your IT admin's policy for the maximum version of the operating system. Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
+Your iOS device does not comply with your IT admin's policy for the latest version of the operating system that you can use. Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
