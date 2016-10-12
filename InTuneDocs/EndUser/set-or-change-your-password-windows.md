@@ -37,7 +37,7 @@ If you have trouble setting a password that meets all of the password requiremen
 
 1. From the **home** screen, choose **Settings**, and then choose **lock screen**.
 2. Scroll down to **Password**, and choose **change password**.
-3. Enter your current password in the **Current password** admin.
+3. Enter your current password in the **Current password** box.
 4. Enter your new password in the **New password** box, and then reenter it in the **Confirm password** box.
 4. Choose **done**.
 
