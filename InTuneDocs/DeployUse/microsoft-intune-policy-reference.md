@@ -111,7 +111,7 @@ Applies to Windows Phone and enrolled Windows devices only.
 |**Exchange ActiveSync Policy**|Configure mobile device security and functional settings for devices that are managed by Exchange ActiveSync.<br /><br />For details, see [Exchange ActiveSync policy settings in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md).|
 |**Mobile Device Security Policy**|<ul><li>Configures settings for mobile devices (all platforms) including:<br /><br /><ul><li>Security</li><li>Encryption</li><li>System</li><li>Email</li><li>Applications</li></ul></li></ul>
 > [!IMPORTANT]
-Microsoft Intune now features separate **configuration policies** for each device platform, and these policies contain the most up-to-date settings that you can use. You can continue to use the mobile device security policy and any existing deployments will still work, but you should plan to migrate to the new configuration policies as soon as possible.<br />For details, see [Mobile device security policy settings in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).|
+Microsoft Intune now features separate **configuration policies** for each device platform, and these policies contain the most up-to-date settings that you can use. You can continue to use the mobile device security policy and any existing deployments will still work, but you should plan to migrate to the new configuration policies as soon as possible.<br />For details, see [Mobile device security policy settings in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
 ## Policies for Windows PCs managed by the Intune software client
 
