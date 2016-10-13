@@ -55,12 +55,6 @@ Install the **Intune Company Portal** app from Microsoft Corporation, available 
 ### Windows Phone 8.1
 Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
 
- ### Windows Phone 8.0
- Users click **system settings** &gt; **company apps**, and sign in with Intune user credentials added above. The Company Portal app is deployed to your phone.
-
-If prompted for a **Server address**, type “manage.microsoft.com”.
-
-
 ## Install the previously deployed app
 Open the Company Portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.
 

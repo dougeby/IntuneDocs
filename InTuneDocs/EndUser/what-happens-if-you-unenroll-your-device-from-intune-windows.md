@@ -28,11 +28,7 @@ ms.suite: ems
 
 # What happens if you unenroll your Windows device from Intune?
 
-For additional information about what happens, use the link, shown in the "In this Article" section above, that matches the type of device you're using.
-
-- [Windows 10 mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
-- [Windows 10, Windows 8.1 or Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
-- [Windows RT running Windows 8.1 or Windows RT](#windows-rt-running-windows-8-1-or-windows-rt)
+Use the links at the right side of this page, under "In this article," to find information about the type of device you're using.
 
 
 ## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
@@ -60,7 +56,7 @@ In addition, for Windows 8.1:
 
 -   You might not have access to some company resources, such as file shares or internal web sites, on your device anymore.
 
-## Windows 10 mobile, Windows Phone 8.1 or Windows Phone 8
+## Windows 10 mobile and Windows Phone 8.1
 
 -   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the Company Portal anymore, and you won't be able to install apps from the Company Portal app or Company Portal website.
 
@@ -71,7 +67,7 @@ In addition, for Windows 8.1:
     > [!IMPORTANT]
     > The only exception to this is encryption policies, which will still apply. If your company policy required that your Windows Phone be encrypted, the only way to unencrypt your phone is to reset your phone using the **Settings** menu on your Windows Phone.
 
-## Windows RT running Windows 8.1 or Windows RT
+## Windows RT running Windows 8.1
 
 -   The Company Portal app is uninstalled from your device, which means that your device won’t appear in the Company Portal anymore, and you won't be able to install apps from the Company Portal.
 
