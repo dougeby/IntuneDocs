@@ -140,7 +140,7 @@
 ### [Retire apps ](retire-apps-using-microsoft-intune.md)
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+## [Resources about the end-user experience](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 # [Develop & Customize Apps](/intune/develop/intune-app-sdk)
 
