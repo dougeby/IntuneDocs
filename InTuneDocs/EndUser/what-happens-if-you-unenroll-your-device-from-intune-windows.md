@@ -44,7 +44,7 @@ Use the links at the right side of this page, under **In this article**, to find
 
 -   Any settings that were changed on your device when you added it (for example, disabling the camera) no longer apply.
 
--   Your computer no longer receives automatic software updates or antivirus software updates from the Intune service. However, depending on how it is set up, your computer might still receive updates from the Windows Server Update Services, Windows Update, or Microsoft Update.
+-   Your computer no longer receives automatic software updates or antivirus software updates from the Intune service. But, depending on how it is set up, your computer might still receive updates from the Windows Server Update Services, Windows Update, or Microsoft Update.
 
 In addition, for Windows 8.1:
 
