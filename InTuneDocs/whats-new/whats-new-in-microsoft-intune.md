@@ -6,7 +6,7 @@ description: Find out what’s new in this month’s, and past releases of Micro
 keywords:
 author: barlanmsft
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 10/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,10 +29,6 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 
 All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/library/mt718155.aspx).
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
-
->[!IMPORTANT]
->Blog post - Ensuring mobile devices are up to date using Microsoft Intune<br>
->In light of the recent "Trident" malware attacks on iOS devices, we've published a new blog post, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) to help you learn about the different ways that Intune can help keep your devices secure and up to date.
 
 ## New capabilities
 
