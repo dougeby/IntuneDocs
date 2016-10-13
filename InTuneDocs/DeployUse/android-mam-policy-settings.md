@@ -6,7 +6,7 @@ description: This topic describes the mobile app management policy settings for 
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -73,6 +73,9 @@ The term **Policy managed apps** is used to refer to apps that are configured wi
 - **Disable contact sync:** Choose **Yes** to prevent contact information from synchronizing to the native address book app on the device. If you choose **No**, the app will save the  contact information to the native address book app on the device.<br/>When you do a selective wipe to remove company data, contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this is applicable only to the **Microsoft Outlook** app.
 
   **Default value = Yes**
+- **Disable printing:** Choose **Yes** to prevent printing company data from apps that are associated with the MAM policy.
+
+  **Default value - Yes**
 
 ##  Android access policy settings
 The term **Policy managed apps** is used to refer to apps that are configured with MAM policies
