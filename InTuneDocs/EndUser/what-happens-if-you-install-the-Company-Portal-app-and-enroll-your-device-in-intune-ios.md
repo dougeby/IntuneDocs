@@ -30,19 +30,19 @@ ms.suite: ems
 
 When you install the Company Portal app and enroll your iOS or Mac OS X device in Intune, you can use the Company Portal app to:
 
--   Access the company’s network, and your email and work files
+-   Access the company’s network, and your email and work files.
 
--   Get company apps from the Company Portal
+-   Get company apps from the Company Portal.
 
--   Remotely reset your phone to factory settings if it is lost or stolen
+-   Remotely reset your phone to factory settings if it is lost or stolen.
 
--   Automatically configure your company email account
+-   Automatically set up your company email account.
 
-When  you enroll your device in Intune, you are giving your IT administrator permission to manage your device to help protect the company information on the device.
+When you enroll your device in Intune, you are giving your IT admin permission to manage your device to help protect the company information on the device.
 
 **What IT cannot see**
 
--   Call and Web history
+-   Call and web history
 
 -	Location
 
@@ -70,7 +70,7 @@ When  you enroll your device in Intune, you are giving your IT administrator per
 
 -   Device name
 
-When your device is enrolled, your IT administrator can:
+When your device is enrolled, your IT admin can:
 
 -   Reset your device back to manufacturer’s default settings if the device is lost or stolen.
 
@@ -90,10 +90,10 @@ When your device is enrolled, your IT administrator can:
 
 -   Enable or disable Photo Stream to iCloud.
 
--   Enable or disable data roaming on your device. If data roaming is allowed, roaming charges may be incurred.
+-   Enable or disable data roaming on your device. If data roaming is allowed, you might incur roaming charges.
 
--   Enable or disable voice roaming on your device. If voice roaming is allowed, roaming charges may be incurred.
+-   Enable or disable voice roaming on your device. If voice roaming is allowed, you might incur roaming charges.
 
--   Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, roaming charges may be incurred.
+-   Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, you might incur roaming charges.
 
-If you have questions, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you have questions, contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

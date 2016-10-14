@@ -37,7 +37,6 @@ iOS | Supported
 Windows 10 Mobile | Supported only if the phone has a passcode set     
 Windows 10 Desktop | Not supported  
 Windows Phone 8.1 | Supported only if the phone has a passcode set
-Windows Phone 8.0 | Not supported
 PC (Windows 8.0 and earlier) | Not supported       
 PC (Windows 8.1) | Not supported
 
