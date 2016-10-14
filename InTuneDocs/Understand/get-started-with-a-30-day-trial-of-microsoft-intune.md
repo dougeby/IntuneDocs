@@ -43,12 +43,12 @@ Before you get started with Intune, you'll need the following:
 
 -   If you have an existing Microsoft Online Services account, you'll need the  administrator credentials for that account. If you don’t have such an account, or if you want to use this Intune tenant for evaluation purposes only, you don't need these administrator credentials.
 
--   If you'll manage iOS or Windows Phone devices with the Intune evaluation, you'll need certificates (or keys) and accounts to retrieve those certificates (see the following table). Android devices don't need any additional certificates.
+-   If you'll manage iOS or Windows Phone 8.1 devices with the Intune evaluation, you'll need certificates (or keys) and accounts to retrieve those certificates (see the following table). Android devices don't need any additional certificates.
 
     |Platform|Certificate Requirements|More information|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 and Windows Phone 8 |No certificate is required for Windows Phone 8.1 users who install the Company Portal app from the Store. A Symantec certificate is required for Windows Phone 8.0 or to use Intune to deploy the Company Portal app to Windows Phone 8.1 devices.|This guidance assumes your users get the Company Portal app from the Store on a Windows Phone 8.1 or later device. For information about Windows Phone 8.0 support, see [Set up Windows Phone management with Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).|
-    |Windows 10, Windows RT 8.1, Windows RT, or Windows 8.1 devices|There are no certificate requirements for enrolling Windows RT and Windows devices.|[Install the Windows PC client with Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |Windows Phone 8.1 |No certificate is required for Windows Phone 8.1 users who install the Company Portal app from the Store. |This guidance assumes your users get the Company Portal app from the Store on a Windows Phone 8.1 or later device. |
+    |Windows 10, Windows RT 8.1, or Windows 8.1 devices|There are no certificate requirements for enrolling Windows RT and Windows devices.|[Install the Windows PC client with Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
     |iOS 7.1 or later|Get an Apple Push Notification service certificate.|Request an Apple Push Notification service certificate from Apple, as described here: [Set up iOS and Mac management with Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
 ## Steps to complete a 30-day evaluation of Intune

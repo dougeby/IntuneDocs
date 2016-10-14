@@ -28,15 +28,11 @@ ms.suite: ems
 # Prepare Android apps for mobile application management with the Intune App Wrapping Tool
 Use the **Microsoft Intune App Wrapping Tool for Android** to modify the behavior of your in-house Android apps by restricting features of the app without changing the code of the app itself.
 
-The tool is a Windows command-line application that runs in PowerShell and creates a 'wrapper' around your Android app. Once the app is processed, you can then change the app’s functionality using [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) that you configure.
+The tool is a Windows command-line application that runs in PowerShell and creates a 'wrapper' around your Android app. Once the app is wrapped, you can then change the app’s functionality by configuring [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) in Intune.
 
 
-Before running the tool, review the [Security considerations for running the app wrapping tool](#security-considerations-for-running-the-app-wrapping-tool). To download the tool, see [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267).
+Before running the tool, review the [Security considerations for running the app wrapping tool](#security-considerations-for-running-the-app-wrapping-tool). To download the tool, visit the [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) on GitHub.
 
->[!IMPORTANT]
->The version of the App Wrapping Tool for Android, which supports devices not enrolled in Intune Mobile Device Management (MDM), is available for public preview. If you wish to participate in the public preview, you can download the tool from [this GitHub repository](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview).
-
->The scenario is described in the [Protect LOB apps on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md) topic.
 
 
 ## Step 1 Fulfill the prerequisites for using the app wrapping tool
@@ -70,7 +66,7 @@ Before running the tool, review the [Security considerations for running the app
 
 ## Step 2 Install the app wrapping tool
 
-1.  From the Microsoft Download Center, download and open the installation file for the app wrapping tool to a Windows computer.
+1.  From the [GitHub repository](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android), download and open the installation file **InstallAWT.exe** for the Intune App Wrapping Tool for Android to a Windows computer.
 
 2.  Accept the license agreement, then complete the installation.
 
