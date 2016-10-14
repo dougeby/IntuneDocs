@@ -28,11 +28,11 @@ ms.suite: ems
 
 # What happens when you create a work profile
 
-A work profile is something that you set up on your device to enable you to access your work or school email, apps, and files.
+A work profile is something that you set up on your device to keep your work or school email, apps, and data separate from your personal data.
 
 When you create a work profile:
 
-- Your IT administrator can manage only the work-related apps, settings, and configurations on your device, not your personal apps or data.
+- Your IT administrator can manage only the work-related email, apps, settings, and data on your device, not your personal apps or data.
 
 - You get work apps from the Play Store for Work. To get personal apps, you continue to go to the Google Play Store that you always use to get your personal apps. The IT administrator cannot see or manage your personal apps.
 

@@ -46,7 +46,7 @@ Choose the **Required Install** option to require that the Lookout app be instal
 
 ## iOS (Enterprise-signed version of Lookout app)
 
-* **Step 1:** Make sure **iOS management** is set up on your device. For instruction on how to setup your device for iOS management, see [Set up iOS and Mac device management](Set up iOS and Mac device management.md).
+* **Step 1:** Make sure **iOS management** is set up on your device. For instruction on how to setup your device for iOS management, see [Set up iOS and Mac device management](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 * **Step 2:** **Re-sign** the Lookout for Work iOS app. Lookout distributes its Lookout for Work iOS app outside of the iOS App Store. **Before distributing the app**, you must re-sign the app with your iOS Enterprise Developer Certificate. For detailed instructions to re-sign the Lookout for Work iOS apps, see [Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/en-us/articles/114094038714) on the Lookout site.
 
@@ -55,7 +55,7 @@ Choose the **Required Install** option to require that the Lookout app be instal
   1.  Login to the [Azure Active Directory management portal](https://manage.windowsazure.com), and navigate to the application page.
   2.  Add the **Lookout for Work iOS app** as a **native client application**.
   ![screenshot of the add apps dialog showing the native client app option](../media/mtp/aad-add-app.png)
-  
+
   3. Replace the **com.lookout.enterprise.yourcompanyname** with the customer bundle ID you selected when you signed the IPA.
   4.  Add additional redirect URI: **&lt;companyportal://code/>** followed by a URLencoded version of your original redirect URI.
   5.  Add **Delegated Permissions** to your app.
