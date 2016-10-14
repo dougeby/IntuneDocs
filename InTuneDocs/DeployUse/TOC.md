@@ -141,7 +141,8 @@
 ### [Wipe managed company app data](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Resources about the end-user experience](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+### [Restore managed iOS devices](restore-managed-ios-devices-from-backup.md)
 
-# [Develop & Customize Apps](/intune/develop/intune-app-sdk)
+# [Develop and Customize Apps](/intune/develop/intune-app-sdk)
 
 # [Troubleshoot](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)

@@ -51,7 +51,7 @@ If you are new to using the Azure portal, read the [Azure portal for Microsoft I
 Windows devices are currently not supported.
 ##  Supported apps
 * **Microsoft apps:** These apps have the Intune App SDK built in and require no further processing before you apply MAM policies.
-To see the full list of supported Microsoft apps, go to the [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) on the Microsoft Intune application partners page. Click an app to see the supported scenarios and platforms, and to see whether the app supports multiple identities.
+To see the full list of supported Microsoft apps, go to the [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) on the Microsoft Intune application partners page. Click an app to see the supported scenarios and platforms, and to see whether the app supports multiple identities.
 * **Your organization's line-of-business apps:** These require preparing the apps to include the Intune App SDK before you can apply MAM policies.
 
   * For devices that are managed by Intune, see [Decide how to prepare apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).

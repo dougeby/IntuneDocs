@@ -27,48 +27,29 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # You are prompted to install Lookout for Work on your iOS device
 
-Before you can access your work, your IT administrator needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats.
-
+Before you can access your work, your IT administrator needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your IT admin set up Lookout for Work.
 
 **What you need to do:**
 
-1.	When you get the notification, **Required application – Install Lookout for Work from App Store**, tap it. You are taken to the Lookout for Work installation page in the App Store.
+1.	If you see the following prompt, tap **Install** to allow Lookout for Work to be installed on your device.
 
-2.	Install Lookout for Work, and then tap **ACCEPT** to let Lookout for Work access your device.
+	![Tap install to install Lookout for Work](./media/ios-lfw-install-app-request.png)
 
-	![tap accept to let Lookout for Work access your device](./media/lookout-accept-store-permissions-android.png)
+2. When you see the following message, tap **Settings**, turn on **Location Services**, and then tap **Continue**.
 
-3. Open Lookout for Work and tap **Activate**.
+	![Tap Settings and then Location Services](./media/ios-lfw-allow-location-services.png)
 
-	![open Lookout for Work and tap Activate](./media/lookout-activate-button-android.png)
+3. Review the permissions that Lookout for Work needs, and tap **Continue**.
 
-4. Tap **Sign in with Azure Active Directory**, and enter the account that you use to access work or school email and files.
+	![you are now connected to Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
 
-	![sign in with your work or school account](./media/lookout-sign-in-azure-android.png)
+4. At the prompt asking you to allow Lookout for Work to send you notifications, tap **Allow**.
 
-5. Select the account that you use to access work or school email and files, and then tap **ADD ACCOUNT**. You will see a screen that looks something like the following.
+	![Tap Settings and then Location Services](./media/ios-lfw-allow-notifications.png)
 
-	![select your work or school account and tap Add Account](./media/lookout-pick-account-android.png)
+	Lookout for Work finishes installing, and you see the following screen if no security threats are found on your device.
 
-6. Tap **Accept** to give Lookout for Work permission to sign you in and read your profile.
-
-	![tap Accept to give Lookout for Work permission to read your profile](./media/lookout-needs-permission-to-view-profile-android.png)
-
-	A screen appears showing that Lookout for Work is connecting to the Lookout Security Cloud.
-
-7. Review the items about how Lookout protects your device, and then tap **OK**.
-
-	![review how Lookout for Work protects your device](./media/lookout-how-it-protects-your-device-android.png)
-
-	When you see the following screen, it means that Lookout is now set up and connected.
-
-	![you are now connected to Lookout for Work](./media/lookout-you-are-now-connected-android.png)
-
-	Lookout for Work starts checking right away for security threats on your device. If no threats are found, you’ll see the following screen.
-
-	![Lookout for Work found no security threats](./media/lookout-scan-no-threats-found-android.png)
-
-	The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
+	![Lookout for Work found no security threats](./media/ios-lfw-no-threats-found.png)
 
 	If Lookout for Work finds a security threat on your device, you will see instructions on how to fix the issue.
 
