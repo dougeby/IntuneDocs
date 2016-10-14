@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Create a work profile and enroll your device in Intune
 
-A work profile is something that you set up on your device to enable you to access your work or school email, apps, and files. You can find out more about [what happens when you create a work profile](what-happens-when-you-create-a-work-profile-android.md).
+Enrolling your Android device gives you access to company email, apps, and other work data. As part of enrollment, you set up a work profile, which separates the personal data on your device from your work data. Your IT admin can manage only the work profile, which contains your work data. Your IT admin cannot manage the personal data on your device. Find out more about [what happens when you create a work profile](what-happens-when-you-create-a-work-profile-android.md).
 
 To create a work profile:
 
@@ -62,11 +62,11 @@ To create a work profile:
 
 	You'll see a couple of messages that say "Setting up your work profile" and "Enrolling your device."
 
-8. On the **You're Halfway There!** screen, tap the Company Portal app icon that has the badge on it.
+8. On the **You're Halfway There!** screen, wait a few seconds until the Company Portal app opens.
 
 	![Tap the Company Portal app with the badge](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
-9. On the Android Company Portal **Welcome** screen, tap **Sign in**, and then sign in with your work or school account.
+9. On the Android Company Portal **Welcome** screen, tap **Sign in**, and then sign in with the same work or school account that you used to sign in earlier in this process.
 
 10. On the **Company Access Setup** screen, note that your Work Profile Setup is now complete, and then tap **CONTINUE**.
 
@@ -78,11 +78,11 @@ To create a work profile:
 
 	![Company Access Setup shows work profile and enrollment are complete](./media/andr-afw-company-access-setup-green-checks.png)
 
-12. On the **Company Access Setup complete** screen, tap **DONE**.
+12. On the **Company Access Setup complete** screen, tap **DONE**. You may have to complete additional steps if your IT admin has added other requirements.
 
 	![Company Access Setup is complete](./media/andr-afw-company-access-setup-complete.png)
 
-	You are taken to the Play Store for Work, where you can now get company apps.
+	You can now get company apps from the Play Store for Work.
 
 	![Play Store for Work apps page](./media/andr-afw-tap-work-play-store-icon.png)
 

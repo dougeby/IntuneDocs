@@ -39,6 +39,7 @@ This article includes links to all of the tasks that end users can do on their I
 The information in this section helps you with Intune Company Portal installation and device enrollment for Android devices.
 
 - [Enroll your device in Intune](enroll-your-device-in-Intune-android.md)
+- [Create a work profile and enroll your device in Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Things you can do when your device is enrolled in Intune
