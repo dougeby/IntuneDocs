@@ -57,27 +57,10 @@ Before users can access the Company Portal, their account must be granted a lice
 
 > [!NOTE]
 > The Company Portal may not be available in certain countries. The application is published to all available territories in the Apple iOS App Store. For the Company Portal app for Android, the application can be found in the Google Play store. However, as of October 4, 2016, it is not available in the following countries:
-- Antigua and Barbuda,
-- Aruba
-- Benin
-- Burkina Faso
-- Cambodia
-- China
-- Cuba
-- Gabon
-- Guinea-Bissau
-- Haiti
-- Iran
-- Laos
-- Mali
-- Mozambique
-- Myanmar (Burma)
-- Netherlands Antilles
-- Niger
-- Papua New Guinea
-- Sudan
-- Togo
-For these countries, an alternative solution is to [sideload the Android version of the Company Portal app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
+
+> Antigua and Barbuda, Aruba, Benin, Burkina Faso, Cambodia, China, Cuba, Gabon, Guinea-Bissau, Haiti, Iran, Laos, Mali, Mozambique, Myanmar (Burma), Netherlands Antilles, Niger, Papua New Guinea, Sudan, Togo.
+
+> For these countries, an alternative solution is to [sideload the Android version of the Company Portal app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
 ### See also
 [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
