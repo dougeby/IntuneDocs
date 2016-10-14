@@ -6,7 +6,7 @@ description: Create a compliance policy to help secure mobile devices and PCs us
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -59,24 +59,24 @@ The following table lists the compliance policy settings and the platforms on wh
 -------------
 |Setting|iOS|Android|Windows|
 |-----|----|-----|-----|
-|Require a password to unlock mobile devices|iOS 6 and later|Android 4.0 and later <br>Samsung KNOX Standard 4.0 and later|Windows Phone 8 and later|
-|Allow simple passwords|iOS 6 and later|Not supported|Windows Phone 8 and later|
-|Minimum password length|iOS 6 and later| Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later| Windows Phone 8 and later<br>Windows 8.1|
-|Required password type|iOS 6 and later|Not available|Windows Phone 8 and later <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
-|Minimum number of character sets|iOS 6 and later|Not available|Windows Phone 8 and later <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Require a password to unlock mobile devices|iOS 6 and later|Android 4.0 and later <br>Samsung KNOX Standard 4.0 and later|Windows Phone 8.1 and later|
+|Allow simple passwords|iOS 6 and later|Not supported|Windows Phone 8.1 and later|
+|Minimum password length|iOS 6 and later| Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later| Windows Phone 8.1 and later<br>Windows 8.1|
+|Required password type|iOS 6 and later|Not available|Windows Phone 8.1 and later <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Minimum number of character sets|iOS 6 and later|Not available|Windows Phone 8.1 and later <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Password quality|Not available|Android 4.0 and later <br>Samsung KNOX Standard 4.0 and later|Not available|
-|Minutes of inactivity before password is required|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8 and later<br>Windows RT and Windows RT 8.1<br>Windows 8.1|
-|Password expiration (days)|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8 and later<br>Windows RT and Windows RT 8.1<br>Windows 8.1|
-|Remember password history|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8 and later<br>Windows RT and Windows RT 8.1<br>Windows 8.1|
-|Prevent reuse of previous passwords|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8 and later<br>Windows RT and Windows RT 8.1<br>Windows 8.1|
+|Minutes of inactivity before password is required|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8.1 and later<br>Windows RT and Windows RT 8.1<br>Windows 8.1|
+|Password expiration (days)|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8.1 and later<br>Windows RT and Windows RT 8.1<br>Windows 8.1|
+|Remember password history|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8.1 and later<br>Windows RT and Windows RT 8.1<br>Windows 8.1|
+|Prevent reuse of previous passwords|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8.1 and later<br>Windows RT and Windows RT 8.1<br>Windows 8.1|
 |Require a password when the device returns from an idle state| Not available| Not available|Windows 10 Mobile|
-|Require encryption on mobile device|Not applicable|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8 and later<br> Windows 8.1|
+|Require encryption on mobile device|Not applicable|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8.1 and later<br> Windows 8.1|
 |Require devices to be reported as healthy| Not available| Not available|Windows <br>Windows 10 Mobile|
 |Device must Not be jailbroken or rooted|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Not available|
 |Email account must be managed by Intune|iOS 6 and later|Not available| Not available|
 |Select the email profile that must be managed by Intune|iOS 6 and later|Not available| Not available|
-|Minimum OS required|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later| Windows Phone 8 and later<br>Windows 8.1|
-|Maximum OS version allowed|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8 and later<br>Windows 8.1|
+|Minimum OS required|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later| Windows Phone 8.1 and later<br>Windows 8.1|
+|Maximum OS version allowed|iOS 6 and later|Android 4.0 and later<br>Samsung KNOX Standard 4.0 and later|Windows Phone 8.1 and later<br>Windows 8.1|
 
 Select one of the following to learn more about compliance settings supported on each platform:
 > [!div class="op_single_selector"]
