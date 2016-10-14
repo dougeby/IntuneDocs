@@ -1,6 +1,7 @@
 
   - Apple iOS 8.0 and later
   - Google Android 4.0 and later (including Samsung KNOX SDK 4.0 and higher)
+  - Google Android for Work ([requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
   - Windows Phone 8.1 and later
   - Windows 8.1 RT
   - PCs running Windows 8.1
