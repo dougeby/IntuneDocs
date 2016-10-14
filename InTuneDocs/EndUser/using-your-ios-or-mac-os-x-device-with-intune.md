@@ -66,3 +66,5 @@ The information in this section helps you fix issues that you might encounter wh
 - [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [Device doesn't have the required minimum operating system version](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)
 - [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
+- [You are prompted to install Lookout for Work on your iOS device](you-are-prompted-to-install-lookout-for-work-ios.md)
+- [You need to resolve a threat that Lookout for Work found on your iOS device](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)

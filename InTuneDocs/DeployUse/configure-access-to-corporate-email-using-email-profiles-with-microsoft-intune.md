@@ -6,7 +6,7 @@ description: Email profile settings can be used to configure email access settin
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,14 +35,14 @@ If you need to take additional measures for data loss prevention, use [Condition
 IT admins or users may also choose to install alternative email clients (for example, Microsoft Outlook for Android or iOS). These email clients may not support email profiles, and can't be set up by using Intune email profiles.  
 
 You can use email profiles to configure the native email client on the following device types:
--	Windows Phone 8 and later
+-	Windows Phone 8.1 and later
 -	Windows 10 (for the desktop), Windows 10 Mobile, and later
 -	iOS 8.0 and later
 -	Samsung KNOX Standard (4.0 and later)
 -	Android for Work
 
 >[!NOTE]
->Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate profile 
+>Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate profile. 
 
 In addition to setting up an email account on the device, you can set up how much email to synchronize, and depending on the device type, which content types to synchronize.
 
@@ -58,11 +58,11 @@ In addition to setting up an email account on the device, you can set up how muc
 
 >Since Samsung KNOX does not use host name to identify the profile, we recommend that you not create multiple email profiles to use on the same email address on different hosts, as these overwrite each other.
 
->**Android for Work**: The Intune profile is only applied to the work profile of the device and doesn't affect email profiles on the user profile of the device.
+>**Android for Work**: The Intune profile is only applied to specific email apps in the work profile of the device and doesn't affect email configuration on the user profile of the device.
 
 
 ## Secure email profiles
-You can secure email profiles using one of two methods: through a certificate or a password.
+You can secure email profiles using either a certificate or a password.
 
 ### Certificates
 When you create the email profile, you choose a certificate profile that you have previously created in Intune. This is known as the identity certificate, and is used to authenticate against a trusted certificate profile (or a root certificate) to establish that the user’s device is allowed to connect. The trusted certificate is deployed to the computer that authenticates the email connection, typically, the native mail server.
@@ -84,7 +84,7 @@ The password is not contained in the email profile, so the user needs to supply 
 
     -   **Email Profile (iOS 8.0 and later)**
 
-    -   **Email Profile (Windows Phone 8 and later)**
+    -   **Email Profile (Windows Phone 8.1 and later)**
 
     -   **Email Profile (Windows 10 Desktop and Mobile and later)**
     
@@ -133,4 +133,5 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
 
 > [!NOTE]
-> If you want to remove an email profile from a device, edit the deployment and remove any groups of which the device is a member.
+> - For Android for Work, make sure you also deploy the Gmail or Nine Work apps in addition to the appropriate email profile. 
+> - If you want to remove an email profile from a device, edit the deployment and remove any groups of which the device is a member. 

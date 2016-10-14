@@ -52,7 +52,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
 
 ## Next steps for Android for Work
 After configuring the Android for Work binding and settings, you can manage do the following:
-- [Configure Android for Work apps](afw-app-configuration-policy.md)
+- [Deploy Android for Work apps](android-for-work-apps.md)
 - [Add Android for Work configuration policies](android-for-work-policy-settings-in-microsoft-intune.md)
 
 ## Unbinding your Android for Work administrative account
