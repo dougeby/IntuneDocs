@@ -6,7 +6,7 @@ description: Learn how to create an Intune certificate profile.
 keywords:
 author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,7 +48,7 @@ You must create a Trusted certificate profile before you can create a Simple Cer
 
 -  Android 4 and later
 
--  Android for work
+-  Android for Work
 
 -  iOS 7.1 and later
 
@@ -70,6 +70,11 @@ You must create a Trusted certificate profile before you can create a Simple Cer
 
 The new policy is shown in the **Policy** workspace. Now you can deploy it.
 
+> [!NOTE]
+>
+> Android and Android for Work devices will display a notice that a third party has installed a trusted certificate.
+	
+
 ## **Task 3**: Create SCEP or .PFX certificate profiles
 After you create a Trusted CA certificate profile, create SCEP or .PFX certificate profiles for each platform you want to use. When you create an SCEP certificate profile, you must specify a Trusted certificate profile for that same platform. This links the two certificate profiles, but you still must deploy each profile separately.
 
@@ -79,7 +84,7 @@ After you create a Trusted CA certificate profile, create SCEP or .PFX certifica
 
 -  Android 4 and later
 
--  Android for work
+-  Android for Work
 
 -  iOS 7.1 and later
 

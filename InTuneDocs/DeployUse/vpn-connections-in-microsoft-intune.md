@@ -6,7 +6,7 @@ description: Use VPN profiles to deploy VPN settings to users and devices in you
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,20 +50,20 @@ Intune supports creating VPN profiles that use the following connection types:
 
 
 
-Connection type |iOS and Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 desktop and mobile |
+Connection type |iOS and Mac OS X  |Android and Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 desktop and mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|Yes |Yes   |No    |     No    |No  |No    | Yes (OMA-URI, mobile only)|     
-Cisco (IPsec)|Yes |No   |No  |  No|No  |No | No|
-Citrix|Yes |No   |No  |  No|No  |No | No|
-Pulse Secure|Yes  |Yes |Yes   |No  |Yes  |Yes| Yes|        
-F5 Edge Client|Yes |Yes |Yes |No  |Yes  |   Yes |  Yes|   
-Dell SonicWALL Mobile Connect|Yes |Yes |Yes |No  |Yes |Yes |Yes|         
-CheckPoint Mobile VPN|Yes |Yes |Yes |Yes |Yes|Yes|Yes|
-Microsoft SSL (SSTP)|No |No |No |No |No|No|VPNv1 OMA-URI*|
-Microsoft Automatic|No |No |No |No |No|Yes (OMA-URI)|Yes|
-IKEv2|iOS custom profile|No |No |No |No|Yes (OMA-URI)|Yes|
-PPTP|iOS custom profile|No |No |No |No|No|Yes|
-L2TP|iOS custom profile|No |No |No |No|Yes (OMA-URI)|Yes|
+Cisco AnyConnect|Yes |Yes   |No    |No  |No    | Yes (OMA-URI, mobile only)|     
+Cisco (IPsec)|Yes |No   |No  |No  |No | No|
+Citrix|Yes |No   |No  |No  |No | No|
+Pulse Secure|Yes  |Yes |Yes   |Yes  |Yes| Yes|        
+F5 Edge Client|Yes |Yes |Yes |Yes  |   Yes |  Yes|   
+Dell SonicWALL Mobile Connect|Yes |Yes |Yes |Yes |Yes |Yes|         
+CheckPoint Mobile VPN|Yes |Yes |Yes |Yes|Yes|Yes|
+Microsoft SSL (SSTP)|No |No |No |No|No|VPNv1 OMA-URI*|
+Microsoft Automatic|No |No |No |No|Yes (OMA-URI)|Yes|
+IKEv2|iOS custom profile|No |No |No|Yes (OMA-URI)|Yes|
+PPTP|iOS custom profile|No |No |No|No|Yes|
+L2TP|iOS custom profile|No |No |No|Yes (OMA-URI)|Yes|
 
 \* Without additional settings that are otherwise available for Windows 10.
 
@@ -102,6 +102,8 @@ The user authenticates to the VPN server by providing a user name and password.
 
 > [!Note]
 > A VPN profile for Android for Work devices will enable a VPN connection only for apps that are installed on the device's work profile.
+>
+> Some VPN connection types support per-app VPN for Android for Work devices, and for enabling per-app VPN on apps distributed through Intune.  
 
 3. Use the following table to help you configure the VPN profile settings:
 
