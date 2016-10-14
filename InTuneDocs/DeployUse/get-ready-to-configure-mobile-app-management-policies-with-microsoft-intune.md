@@ -57,6 +57,7 @@ For instructions on how to create a MAM policy on the Intune admin console, see 
 
 >[!NOTE]
 >Windows devices don’t support these mobile application management policies. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+
 ##  Supported apps
 * **Microsoft apps:** These apps have the Intune App SDK built in and require no further processing before you apply MAM policies.
 To see the full list of supported Microsoft apps, go to the [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) on the Microsoft Intune application partners page. Click an app to see the supported scenarios and platforms, and to see whether the app supports multiple identities.
