@@ -6,7 +6,7 @@ description: Email profile settings can be used to configure email access settin
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ If you need to take additional measures for data loss prevention, use [Condition
 IT admins or users may also choose to install alternative email clients (for example, Microsoft Outlook for Android or iOS). These email clients may not support email profiles, and can't be set up by using Intune email profiles.  
 
 You can use email profiles to configure the native email client on the following device types:
--	Windows Phone 8 and later
+-	Windows Phone 8.1 and later
 -	Windows 10 (for the desktop), Windows 10 Mobile, and later
 -	iOS 8.0 and later
 -	Samsung KNOX Standard (4.0 and later)
@@ -84,7 +84,7 @@ The password is not contained in the email profile, so the user needs to supply 
 
     -   **Email Profile (iOS 8.0 and later)**
 
-    -   **Email Profile (Windows Phone 8 and later)**
+    -   **Email Profile (Windows Phone 8.1 and later)**
 
     -   **Email Profile (Windows 10 Desktop and Mobile and later)**
     
