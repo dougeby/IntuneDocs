@@ -6,7 +6,7 @@ description: set up Intune Company Portal
 keywords:
 author: barlanmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,6 +54,30 @@ Some of the tasks that users can do in the Company Portal are:
 -   Contact the IT department for support
 
 Before users can access the Company Portal, their account must be granted a license to use [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and have a sign-in status of **Allowed**. Learn more about [adding users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) and [assigning licenses for your subscription](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). You can also [customize the Company Portal website](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) with your company's logo, Terms of Use, and more. Users access the Company Portal website by using going to the website, and signing in with work or school account.
+
+> [!NOTE]
+> The Company Portal may not be available in certain countries. The application is published to all available territories in the Apple iOS App Store. For the Company Portal app for Android, the application can be found in the Google Play store. However, as of October 4, 2016, it is not available in the following countries:
+- Antigua and Barbuda,
+- Aruba
+- Benin
+- Burkina Faso
+- Cambodia
+- China
+- Cuba
+- Gabon
+- Guinea-Bissau
+- Haiti
+- Iran
+- Laos
+- Mali
+- Mozambique
+- Myanmar (Burma)
+- Netherlands Antilles
+- Niger
+- Papua New Guinea
+- Sudan
+- Togo
+For these countries, an alternative solution is to [sideload the Android version of the Company Portal app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
 ### See also
 [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
