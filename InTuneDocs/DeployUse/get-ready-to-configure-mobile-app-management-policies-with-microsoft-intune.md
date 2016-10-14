@@ -92,7 +92,7 @@ You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sub
 
 5.  MAM policies are deployed to user groups in Azure Active Directory. To create user groups for your MAM policies, create a user group as described in the **Create a user group** section of [this](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3) topic.
 
-## Non-Global admin users
+### Non-Global admin users
 
 Global administrators have access to the [Azure portal](https://portal.azure.com).  If you want users who are not Global administrators to be able to configure policies and do other mobile app management tasks, you can assign the contributor role to the users. For detailed instructions, see [Use role assignments to manage access to your Azure subscription resources](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/).
 
