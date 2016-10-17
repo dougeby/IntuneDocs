@@ -31,7 +31,7 @@ ms.suite: ems
 If you lose your device PIN or password for a device that you have enrolled in Intune, you can use the [Company Portal website](http://portal.manage.microsoft.com) to reset it. You can use the Company Portal website to manage computers and devices that you have enrolled in Intune and to do most of the same tasks that you can do when you use your Company Portal app.
 
 > [!NOTE]
-> You may not see the **Reset Passcode** button on the Company Portal website, depending on how your IT admin has configured Intune. Passcode reset is not supported on Windows 8.1 and Windows RT devices.
+> You might not see the **Reset Passcode** button on the Company Portal website, depending on how your IT admin has configured Intune. Passcode reset is not supported on Windows 8.1 devices.
 
 To reset your passcode:
 

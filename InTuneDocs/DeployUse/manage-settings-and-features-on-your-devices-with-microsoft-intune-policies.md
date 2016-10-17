@@ -6,7 +6,7 @@ description: Use Intune to create and deploy policies that control settings and 
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -67,6 +67,7 @@ For a complete list of Intune policies, see [Microsoft Intune policy reference](
 
 	- [Settings for iOS devices](ios-policy-settings-in-microsoft-intune.md)
 	- [Settings for Android devices](android-policy-settings-in-microsoft-intune.md)
+	- [Settings for Android for Work devices](android-for-work-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows 8 and Windows 8.1 devices](windows-configuration-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows Phone 8.1 devices](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows 10 desktop and mobile devices](windows-10-policy-settings-in-microsoft-intune.md)
@@ -121,7 +122,6 @@ If a device doesn't check in to get the policy after the first notification is s
 - iOS and Mac OS X: Every 6 hours.
 - Android: Every 8 hours.
 - Windows Phone: Every 8 hours.
-- Enrolled Windows RT devices: Every 24 hours.
 - Windows 8.1 and Windows 10 PCs enrolled as devices: Every 8 hours.
 
 If the device has just enrolled, the check-in frequency will be more frequent, as follows:

@@ -71,8 +71,9 @@ To learn about what your IT administrator can and can't see on your device, use 
 	-   Windows 10 Desktop
 	-   Windows Phone 8.1
 	-   Windows 8.1
-	-   Windows RT devices
-	-   Windows Phone 8
+	-   iPhones, iPads, and Mac OS X
+	-   Android mobile devices
+
 
 ## Can you remove a computer or device from the Company Portal?
 You can either remove or reset a computer or device from the Company Portal. There is a difference between **remove** and **reset**.
