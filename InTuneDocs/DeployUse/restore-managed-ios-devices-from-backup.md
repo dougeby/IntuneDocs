@@ -44,7 +44,7 @@ If the backup is being restored onto a different device, then the enrollment sta
 > An example communication for your users could be as follows:
 To enroll on your new device, make sure that the Company Portal app is on version 2.1.22 or later. To check the version, open the Company Portal app, tap the Menu button in the upper right, and then tap About. If you are on an earlier version, exit the Company Portal app and open the App Store. Tap the Updates button in the bottom right corner, then tap the Update button next to the Company Portal item in the list. Once the update completes, launch the Company Portal app and [enroll your iOS device into Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
 
-### Resolving known issues with restores
+## Resolving known issues with restores
 
 Your users may experience some difficulty with the Company Portal app on previously released versions after a restore. If the user had the Company Portal app on version 2.1.21 or less and they restore their device from backup, they should not open the Company Portal app without first unenrolling the device from Intune by navigating to the Company Portal website, selecting the device, and unenrolling it.
 
