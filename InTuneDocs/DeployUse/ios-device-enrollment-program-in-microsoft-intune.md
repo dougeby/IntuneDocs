@@ -62,6 +62,10 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP token
 
     Provide **General** details including **Name** and **Description**, and specify whether devices assigned to the profile have user affinity or belong to a group.
       - **Prompt for user affinity**: The device must be affiliated with a user during initial setup before it can be permitted to access company data and email as that user. **User affinity** should be set up for DEP-managed devices that belong to users and need to use the company portal (that is, to install apps).</br> **Note:** DEP devices with user affinity cannot support multifactor authentication.
+
+      > [!NOTE]
+      > DEP with user affinity requires WS-Trust 1.3 Username/Mixed endpoint to be enabled to request user token.
+
       - **No user affinity**: The device is not affiliated with a user. Use this affiliation for devices that do tasks without accessing local user data. Apps that require user affiliation, including the Company Portal app that is used to install line-of-business apps, won’t work.
 
     You can also **Assign devices to the following group**. Choose **Select...** to choose a group.

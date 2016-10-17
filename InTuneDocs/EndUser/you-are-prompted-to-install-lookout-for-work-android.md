@@ -44,7 +44,7 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
 	![tap accept to let Lookout for Work access your device](./media/lookout-accept-store-permissions-android.png)
 
-3. Open Lookout for Work, and then tap **Activate**.
+3. Open Lookout for Work, and then tap **ACTIVATE**.
 
 	![open Lookout for Work and tap Activate](./media/lookout-activate-button-android.png)
 

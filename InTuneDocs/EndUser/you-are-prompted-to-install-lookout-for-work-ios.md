@@ -47,11 +47,12 @@ Before you can access your work, your IT administrator needs you to install the 
 
 	![Tap Settings and then Location Services](./media/ios-lfw-allow-notifications.png)
 
-	Lookout for Work finishes installing, and you see the following screen if no security threats are found on your device.
+	
+Lookout for Work finishes installing, and you see the following screen if no security threats are found on your device.
 
-	![Lookout for Work found no security threats](./media/ios-lfw-no-threats-found.png)
+![Lookout for Work found no security threats](./media/ios-lfw-no-threats-found.png)
 
-	If Lookout for Work finds a security threat on your device, you will see instructions on how to fix the issue.
+If Lookout for Work finds a security threat on your device, you will see instructions on how to fix the issue.
 
 **If the installation doesn't work**
 
