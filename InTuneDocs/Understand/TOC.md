@@ -1,5 +1,6 @@
 # [Understand and Explore](introduction-to-microsoft-intune.md)
 ## [Introduction to Intune](introduction-to-microsoft-intune.md)
+## [Modern Windows Management](modern-windows-management)
 ## [Intune evaluation guide](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ### [Sign in or sign up for a 30-day evaluation](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 ### [Add users](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)

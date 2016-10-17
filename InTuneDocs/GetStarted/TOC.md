@@ -17,7 +17,7 @@
 
 ## [Migrate to Intune](migrate-to-intune.md)
 
-## [Intune quick start guide](start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Quick start guide](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Sign in to Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configure a custom domain name](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Synchronize AD and add users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
@@ -27,6 +27,13 @@
 ### [Customize the Company Portal](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Enroll mobile devices & install an app](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Post configuration tasks](post-configuration-tasks.md)
+
+## [Quick guides](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Quick guide: Prevent company data leaks from Office 365 mobile apps](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Quick guide: Protect company data with data encryption](protect-data-encryption.md)
+### [Quick guide: Publish mobile apps to your users](publish-mobile-apps-to-users.md)
+### [Quick guide: Simplify email configuration on mobile devices](simplify-email-configuration-on-mobile-devices.md)
+### [Quick guide: Protect Windows PCs against malware threats](protect-pcs-against-malware-threats.md)
 
 ## [Rollout phases for Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Project scope](project-scope.md)
