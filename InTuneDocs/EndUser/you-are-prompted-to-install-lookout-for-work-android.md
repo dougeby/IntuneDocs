@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 # You are prompted to install Lookout for Work
 
 Before you can access your work, your IT admin needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats.
+
+If you have trouble with the installation, try the troublshooting steps at the end of this topic.
 
 
 **What you need to do:**
@@ -77,5 +79,9 @@ Before you can access your work, your IT admin needs you to install the Lookout 
 	![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
 
 	If Lookout for Work finds a security threat on your device, you will see instructions about how to fix the issue.
+
+**If the installation doesn't work**
+
+Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work manually from the Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
 
 Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
