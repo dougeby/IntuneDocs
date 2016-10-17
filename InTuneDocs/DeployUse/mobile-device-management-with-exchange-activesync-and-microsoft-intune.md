@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Exchange ActiveSync mobile device management with Microsoft Intune
-For Microsoft Intune to directly manage mobile devices, devices must be [enrolled in Intune](prerequisites-for-enrollment.md). As an alternative, administrators can enable a more limited management solution that uses Exchange ActiveSync (EAS) management with an Exchange connector. Devices can be managed with either on-premises Exchange servers and Exchange Online using Office 365. Intune only supports one Exchange connector connection of any type per subscription.
+For Microsoft Intune to directly manage mobile devices, devices must be [enrolled in Intune](prerequisites-for-enrollment.md). As an alternative, admins can enable a more limited management solution that uses Exchange ActiveSync (EAS) management with an Exchange connector. Devices can be managed with either on-premises Exchange servers or Exchange Online using Office 365. Intune supports only one Exchange connector connection of any type per subscription.
 
 ## Exchange access rules for mobile devices ##
 
@@ -35,14 +35,14 @@ Exchange needs a set of rules that defines what happens when mobile devices atte
 [Exchange access rules for mobile devices](exchange-access-rules-for-mobile-devices.md)
 
 ## Install the Exchange connector
-The Exchange connector lets you manage your Exchange deployment in the Intune console. You must first install and configure the appropriate Intune-to-Exchange connector. Choose the appropriate option based whether your Exchange server is on-premises or hosted as a service in the cloud:
+The Exchange connector lets you manage your Exchange deployment in the Intune console. You must first install and set up the appropriate Intune-to-Exchange connector. Choose the appropriate option based on whether your Exchange server is on-premises or hosted as a service in the cloud:
 
 -   [Configure the Intune for Exchange Online or new Exchange Online Dedicated environments](intune-service-to-service-exchange-connector.md)
 -   [Install the Intune connector for on-premises Exchange servers and legacy Exchange Online Dedicated environments](intune-on-premises-exchange-connector.md)
 
 
 ## Apply policy for Exchange-managed mobile devices
-The Intune console can be used to manage [EAS policy settings](exchange-activesync-policy-settings-in-microsoft-intune.md) and to [restrict access to company resources](restrict-access-to-email-and-o365-services-with-microsoft-intune.md). For a list of Exchange ActiveSync policy settings and features supported by specific mobile devices, see [Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270).
+The Intune console can be used to manage [EAS policy settings](exchange-activesync-policy-settings-in-microsoft-intune.md) and to [restrict access to company resources](restrict-access-to-email-and-o365-services-with-microsoft-intune.md). For a list of Exchange ActiveSync policy settings and features that specific mobile devices support, see [Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270).
 
 > [!NOTE]
 > After connecting Intune to a Microsoft Exchange environment, the EAS policy for all users managed through Intune will be reset to the current default policy on the Microsoft Exchange server, unless a more specific policy is defined within Intune.
