@@ -27,7 +27,7 @@ ms.reviewer: amyro
 
 # Your paid Microsoft Intune or Enterprise Mobility subscription might include a license to use certain downloadable software
 
-The following software might be included in your paid Microsoft Online Services subscription.  You can confirm which software you are licensed for by reviewing your agreement terms.
+The following software might be included in your paid Microsoft Online Services subscription. Review your agreement terms to see your licensed software.
 
 | **Microsoft Service**    | **On-premises software**           |
 | ------------- |-------------|
@@ -36,12 +36,12 @@ The following software might be included in your paid Microsoft Online Services 
 |Microsoft Intune |	System Center Configuration Manager |
 |Azure Active Directory Premium |	Microsoft Identity Manager |
 
-The location to download the above software will depend on the method you purchased your Microsoft Online Service.
+The location to download the software depends on the method you used to buy your Microsoft Online Service.
 
-If you have purchased via an Account Agreement or have prepaid through a Microsoft Certified Partner, then you should have received email after activating your product which included a link to the [Volume License download portal](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
+If you bought via an account agreement or prepaid through a Microsoft Certified Partner, then email that you received after you activated your product includes a link to the [Volume License download portal](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
-If you have purchased directly with a credit card or through a Cloud Solutions Provider, then you will download software from the [Microsoft Online Software Download Center](https://www.microsoft.com/online/downloads/HomeRealmDiscovery.aspx).
+If you bought directly with a credit card or through a Cloud Solutions Provider, then you will download software from the [Microsoft Online Software Download Center](https://www.microsoft.com/online/downloads/HomeRealmDiscovery.aspx).
 
-If you are unsure which software you qualify for, contact your account executive or partner or reach out to [Microsoft Online Services support](https://technet.microsoft.com/en-us/dn932057.aspx).
+If you are unsure of your licensed software, contact your account executive or partner, or reach out to [Microsoft Online Services support](https://technet.microsoft.com/en-us/dn932057.aspx).
 
-If you instead signed up for a trial, you can obtain trial versions of these by visiting the [TechNet Evaluation Center](https://www.microsoft.com/evalcenter/try).
+If you instead signed up for a trial, you can obtain trial versions by visiting the [TechNet Evaluation Center](https://www.microsoft.com/evalcenter/try).
