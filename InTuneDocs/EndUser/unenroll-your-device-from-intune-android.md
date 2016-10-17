@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Unenroll your Android device from Intune
 
-When you unenroll your Android device from Intune, your device will no longer be able to access company resources.  For more about what happens when you unenroll, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
+When you unenroll your Android device from Intune, your device can no longer access company resources.  For more about what happens when you unenroll, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
 To unenroll your device from Intune and uninstall the Company Portal app, follow these steps, or watch this video:
 
@@ -36,18 +36,16 @@ To unenroll your device from Intune and uninstall the Company Portal app, follow
 
 1.  Sign in to the Company Portal app.
 
-2.  Tap **MY DEVICES** and then select the device you want to unenroll.
+2.  Tap **MY DEVICES**, and then select the device that you want to unenroll.
 
-    ![android-company-portal-unenroll-choose-device](./media/andr-1-my-devices-choose.png)
+    ![Choose the device that you want to unenroll.](./media/andr-1-my-devices-choose.png)
 
 3.  Tap the trash can icon.
 
-    ![android-company-portal-unenroll-tap-trash](./media/andr-2-tap-trashcan.png)
+    ![Tap the trash icon.](./media/andr-2-tap-trashcan.png)
 
     On the warning page, tap **OK** to unenroll your device.
 
-    ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
+    ![Remove the device.](./media/andr-3-warning-about-remove.png)
 
-Still need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
-
-
+Still need help? Contact your IT administrator (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or email the Microsoft Android team at wintunedroidfbk@microsoft.com.

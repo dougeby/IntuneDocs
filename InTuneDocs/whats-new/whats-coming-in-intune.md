@@ -1,12 +1,13 @@
+
 ---
 # required metadata
 
-title: What's coming | Microsoft Intune
+title: The early edition | Microsoft Intune
 description:
 keywords:
 author: barlanmsft
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,93 +26,103 @@ ms.suite: ems
 
 ---
 
-# What's coming in Microsoft Intune - August
-This information is provided under NDA on an extremely limited basis and is subject to change. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Intune/PM buddy if you have any questions or concerns.
+# The Early Edition for Microsoft Intune - October
+The **Early Edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided under NDA on an extremely limited basis and is subject to change. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Intune/PM buddy if you have any questions or concerns.
 
 This page is updated periodically. Check back for new What’s Coming updates.
 
 The following changes are under development for Intune. All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
+## New capabilities
 
-## App management
-### Hidden and shown apps for iOS 9.3
-For supervised devices running iOS 9.3 or later, you will be able to use the hidden and shown apps list in the iOS general configuration policy to:
-- Specify a list of apps that will be hidden from users. Users cannot view, or launch these apps.
-- Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
+### Conditional access for mobile application management
+You can now create a conditional access policy to block unmanaged mobile applications from accessing [Exchange Online](..deployuse/restrict-access-to-exchange-online-with-microsoft-intune.md). You can block the built-in mail clients and apps that are not MAM enabled with Intune App SDK.  This can be done by creating a conditional access policy and specifying the applications that you want to have access to Exchange Online using the Azure portal.
+<!--TFS 1317673-->
 
-The apps you can specify include both apps you have deployed, and the built-in iOS apps like Messages and Notes.
-<!---TFS 1279009--->
+### Android for Work support
+Intune is now part of the [Android for Work program](https://enterprise.google.com/android/partners/). We will begin rolling out support for Android for Work features to Intune starting this month.
 
-### Allowed and blocked apps policy for Samsung KNOX devices
+[Read Microsoft’s announcement about Intune support for Android for Work](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
 
-You can now configure a custom policy for Samsung KNOX devices that lets you create one of the following:
-- A list of apps that are blocked from running on the device. Even if installed, an app defined in the blocked list cannot be activated on the device.
-- A list of apps that users of the device are allowed to install from the Google Play store. No other apps can be installed from the store.
+<!---This month, some newly provisioned Intune tenants will start seeing the Android for Work features. We will announce later when existing tenants will begin to see this feature.--->
+<!--TFS 1043303-->
 
-These settings can only be used by devices that run Samsung KNOX.
-<!--- For details, see [Use custom policies to allow and block apps for Samsung KNOX devices]( custom-policy-to-allow-and-block-samsung-knox-apps.md)--->
-<!---TFS 1311629 --->
+### Lookout integration to protect iOS devices
+In October, Microsoft is integrating with Lookout’s mobile threat protection solution to protect iOS mobile devices by detecting malware, risky apps, and more, on devices. Lookout’s solution helps you determine the threat level, which is configurable. You can create a compliance policy rule in Intune to determine device compliance based on the risk assessment by Lookout. Using conditional access policies, you can allow or block access to company resources based on the device compliance status.
 
-### New apps compatible with mobile application management (MAM) policies
-The Yammer app for [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) will be compatible with [Intune mobile application management (MAM) policies](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), whether or not the device is enrolled.
+End users of noncompliant iOS devices will be prompted to enroll, and will be required to install the Lookout for Work app on their devices, activate the app, and remediate threats reported in the Lookout for Work application to gain access to company data.
+<!--TFS 1319493-->
 
-For a full list of MAM compatible apps, see the [Microsoft Intune application partners](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) site.
-<!--- TFS 1252335 & 1252336--->
+### New Microsoft Intune Company Portal available for Windows 10 devices
+Microsoft is releasing a new Microsoft Intune Company Portal for Windows 10 devices. This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today.
 
-## Device management
-### Android 7.0 support
-In August, Intune will provide “day 0” support for the forthcoming Android 7.0 operating system for mobile devices.
-<!---TFS 1262053--->
-### Google removal of remote passcode reset capability on Android 7.0 devices
-Google is removing the ability of IT administrators and end users to remotely reset the passcode of Android 7.0 devices. Previously, IT administrators could remotely reset a user’s passcode, and end users could reset their passcodes from the Company Portal website.
+The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store. For more details, go to [aka.ms/universal-app](https://aka.ms/universal-app).
+<!--TFS 1016502-->
 
-## Group management
-### Intune Groups transitioning to Azure Active Directory Groups beginning in September 2016
-Intune is creating a new group management experience that uses Azure Active Directory (AAD) security groups as user and device groups in Intune. These groups will be used for all group management, policy deployment, and profile deployment **when we introduce the new Azure-based Intune admin portal**.
+### Manage printing from apps managed using MAM policies
+You can now prevent printing company data from apps that have MAM policies. This setting is available on the [Azure portal](InTune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) and is supported on both [iOS](..deployuse/ios-mam-policy-settings) and [Android](InTune/deploy-use/android-mam-policy-settings) devices.
+<!--TFS 1014328-->
 
-This new experience will keep you from having to duplicate groups between services, **allow you access to some new Azure Active Directory Premium (AADP) group features**, and provide extensibility using PowerShell and Graph. This will also unify the group management experience across enterprise mobility management.
+## Notices
 
-To enable the move to Security Groups, the experience in the **current admin console** will undergo some modifications. **These changes, and the use of AAD security groups, will be recorded in the Intune documentation**.
+### Android Samsung KNOX compatibility with Intune
+Certain models of the Samsung Galaxy Ace phone cannot be managed by Intune as Samsung KNOX devices. When you enroll these devices with Intune, they will instead be managed as standard Android devices.
+The model numbers affected are:
 
-Customers who are new to Intune will see **some of the security group changes before current tenants do**.
+* SM-G313HU
+* SM-G313HY
+* SM-G313M
+* SM-G313MY
+* SM-G313U
 
-In addition to changes in group management, **the following functionality will be deprecated**:
-- Excluding members or groups while creating a new group
-- **Ungrouped Users** and **Ungrouped Devices** groups
-- **Manage Groups** in the Service Admin role
-- Custom group-based alerts for Notification Rules
-- Pivoting with groups in reports
-<!--- TFS 1295329--->
+You and your end users need take no further action. For more information, visit the [Samsung KNOX](https://www.samsungknox.com) website.
 
-## Service deprecation
-### Company Portal apps for Windows 8 and Windows Phone 8 are being deprecated starting in September 2016
-Starting in October 2016, Microsoft Intune will deprecate support for Windows 8 and Windows Phone 8 Company Portal apps. Microsoft Intune will also deprecate support for the Windows Phone 8 platform. As a consequence, you will not be able to enroll or update any Windows Phone 8 devices. You can continue to manage Windows Phone 8 and Windows 8 devices that are already enrolled. Update Windows Phone 8 and Windows 8 devices to Windows 8.1 and Windows Phone 8.1, and use the corresponding Windows 8.1 and Windows Phone 8.1 Company Portal apps to continue distributing apps to these devices without disruptions.
-<!---TFS 1255391--->
+<!--TFS 1173566 iX blurb provided by Barry; requires PM signoff
 
-### Custom Group Targeting of Notification Rules Removal
-Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. Starting in June 2016, targeting user-created groups will no longer be supported.
+### Multi-factor authentication for Android and iOS enrollment
 
-The preliminary timeline for this change is as follows:
-- In September 2016, new tenants will not see step two of the Create Notification Rule Wizard. Existing tenants are unaffected.
-- Around October 2016, some existing tenants will not see the “select device groups” in the wizard.
-- At a later date, we expect that all tenants will not see the “select device groups” in the wizard.
+In addition to Windows 8.1 and later, administrators can now enable multi-factor authentication for Android and iOS devices in the Microsoft Intune Enrollment application. -->    
 
-<!---	TFS 1278864--->
-### Changes in support for the iOS Company Portal app
-In September, all users of the Microsoft Intune Company Portal app for iOS will be required to use its latest version. New users will only be able to download the latest version and current users will be required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions won’t be able to use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.
+### Company Portal app for Windows 8 is deprecated; support for Windows Phone 8 and Windows RT platforms are being deprecated
+Starting in October 2016, Microsoft Intune will deprecate support for the Windows 8 Company Portal. Microsoft Intune will also deprecate support for the Windows Phone 8 and Windows RT platforms. As a consequence, you will not be able to enroll or update any Windows Phone 8 or Windows RT devices.
 
-<!---TFS 1283165--->
+You can continue to manage Windows Phone 8, Windows RT  and Windows 8 devices that are already enrolled. Update Windows Phone 8 and Windows 8 devices to Windows 8.1 and Windows Phone 8.1, and use the corresponding Windows 8.1 and Windows Phone 8.1 Company Portal apps to continue distributing apps to these devices without disruptions.
+
+Starting in November 2016, we will deprecate support for the Windows Phone 8 Company Portal.
+<!--TFS 1255391-->
+
+<!--TFS 1318014; awaiting approval in notes as to whether to proceed
+
+### "Default" policy is deprecated
+
+To minimize unintentionally assigned profiles, Intune is removing support for the "default" Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) device serial numbers in the new Azure console. Serial numbers synchronized from an Apple DEP account will initially have no Corporate Device Enrollment profile assigned.  A profile must be assigned manually after synchronization. This change will apply to the new console only. Until the existing Admin console is retired, no change will take place.
+-->
+
+<!--TFS 1318023; awaiting approval in notes as to whether to proceed
+
+### Deprecation of row-by-row iOS Details review for iOS device CSV uploads
+
+In order to streamline uploading IMEI numbers for Corporate devices and Apple serial numbers for Configurator enrollment, Intune is removing the row by row review of hardware identifiers already found in the system. This review allows the IT Pro to accept associated Details from the CSV to overwrite the existing details for a hardware identifier already in the system. The review will be replaced by a single option to automatically overwrite Details for all hardware identifiers or ignore new details for existing identifiers. This change will apply to the new console only. Until the existing Admin console is retired, no change will take place.
+-->
 
 
-### Intune Viewer apps
-With the release of the new RMS sharing app, we will remove the following Intune Viewer apps in August 2016:
-- Intune AV Viewer
-- Intune PDF Viewer
-- Intune Image Viewer for Android from Google Play
 
-Instead of using the Intune Viewer apps, we recommend using the new Rights Management app (RMS sharing) for Android, which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. Learn more about the [RMS sharing app](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app).
-<!--- goes in 1608 What's New--->
+### Intune App SDK and App Wrapping Tool for Android
+You can enable your apps to use Intune mobile application management (MAM) policies by using either the Intune App Wrapping Tool or the Intune App SDK. New updates for the App Wrapping Tool and SDK will include:
 
+* Support for Android N
+* Support for Intune MAM policies without requiring device enrollment
+* Support for Xamarin-based Android apps
+
+You can test MAM without device enrollment and Xamarin support in the public preview of the Android App Wrapping Tool here: [https://github.com/msintuneappsdk/intune-app-wrapper-android-preview](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)
+<!--TFS 1319511; please create new TFS entry for WN text associated with this TFS item-->
+
+<!--TFS 1319613; no iX review on PM text blurb
+
+### Private preview customers using MAM Conditional Access will have their policies reset
+
+Due to changes in the policy structure for Conditional Access for Mobile App Management, any existing policies that were set by customers through the private preview will be removed. Customers will need to set new policies once the change is made. The timing will coincide with the October service update.
+-->
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.

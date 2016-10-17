@@ -6,7 +6,7 @@ description: Use Intune to configure a wide range of settings that you can deplo
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,6 +46,7 @@ You can create and deploy mobile device security policies for the following devi
 
 > [!NOTE]
 > Some settings are not applicable to some devices. See the tables below for a full list of settings that you can configure.
+> From October  2016, Microsoft Intune will deprecate support for Windows 8 Company Portal apps. Microsoft Intune will also deprecate support for the Windows Phone 8 and WinRT platforms. As a consequence, you will not be able to enroll or update any Windows Phone 8 or WinRT devices. You can continue to manage Windows Phone 8, WinRT  and Windows 8 devices that are already enrolled. Update Windows Phone 8 and Windows 8 devices to Windows 8.1 and Windows Phone 8.1, and use the corresponding Windows 8.1 and Windows Phone 8.1 Company Portal apps to continue distributing apps to these devices without disruptions.
 
 ## Security settings
 

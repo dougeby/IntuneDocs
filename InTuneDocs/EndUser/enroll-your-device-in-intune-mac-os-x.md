@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Enroll your Mac OS X device in Intune
 
-Enrolling your Mac OS X device in Intune enables you to access the company’s network, your work email and work files, and lets you get company apps. For more about what happens when you enroll your device, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+When you enroll your Mac OS X device in Intune, you can access the company’s network, your work email, and work files. You can also get company apps. For more about what happens when you enroll your device, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 If you're trying to enroll an iOS device, see [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md).
 
@@ -41,17 +41,16 @@ To enroll your Mac OS X device:
 
 	![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png)
 
-3.  Tap **Install** to start enrolling your device.
+3.  Tap **Install** to start to enroll your device.
 
    	![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png)
 
-4.  On the **Install Management Profile** dialog, tap **Install**. If a dialog box appears asking you to enter your credentials, enter your username and password, and then tap **Continue** &gt; **Install**.
+4.  On the **Install Management Profile** dialog box, tap **Install**. If a dialog box asks you to enter your credentials, enter your user name and password, and then tap **Continue** &gt; **Install**.
 
   	![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
-	When you finish enrolling, you'll see a Management Profile page showing that your profile has been verified.
+	When you finish enrolling, a **Management Profile** page shows that your profile has been verified.
 
 	![management-profile-verified](./media/4-macosx-enroll-done.png)
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
+Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

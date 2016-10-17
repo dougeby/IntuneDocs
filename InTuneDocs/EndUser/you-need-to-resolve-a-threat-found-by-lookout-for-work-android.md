@@ -27,7 +27,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # You need to resolve a threat found by Lookout for Work
 
-Lookout for Work has found a potential threat on your device, and you must fix the issue to regain access to your email and work.
+Lookout for Work has found a potential threat on your device, and you must fix the issue to regain access to your email and work. The message that you see might look something like this:
 
 ![Lookout for Work found a threat on your device](./media/lookout-threat-found-android.png)
 
