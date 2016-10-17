@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,7 +53,8 @@ Before you can access your work, your IT administrator needs you to install the 
 
 	If Lookout for Work finds a security threat on your device, you will see instructions on how to fix the issue.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+**If the installation doesn't work**
 
+Sometimes installations can fail due to technical issues beyond your control. If this happens, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 
