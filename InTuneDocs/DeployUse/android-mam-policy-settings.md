@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Android mobile app management policy settings in Microsoft Intune
 The policy settings described in this topic can be [configured](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for a mobile app management (MAM) policy on the **Settings** blade in the Azure portal.
-There are two categories of policy settings: data relocation settings and access settings. In this topic, the term **Policy managed apps** refers to apps that are configured with MAM policies.
+There are two categories of policy settings: data relocation settings and access settings. In this topic, the term *policy-managed apps** refers to apps that are configured with MAM policies.
 
 ##  Data relocation settings
 
@@ -45,7 +45,7 @@ There are two categories of policy settings: data relocation settings and access
   -   **All apps**: Allow data transfer from any app.
   -   **None**: Do not allow data transfer from any app.
 
-      Default value = **All apps**.
+  Default value = **All apps**.
 
 -   **Prevent Save As**: Choose **Yes** to disable the use of the Save As option in any app that uses this policy. Choose **No** if you want to allow the use of Save As.
 
@@ -56,14 +56,14 @@ There are two categories of policy settings: data relocation settings and access
   -   **Policy Managed Apps with paste in**: Allow cut or copy between policy-managed apps. Allow cut or copied data from any app to be pasted into this app.
   -   **Any App**: There are no restrictions for cut, copy, and paste actions between any apps.
 
-    Default value = **Policy managed apps with paste in**.
+  Default value = **Policy managed apps with paste in**.
 -   **Restrict web content to display in the Managed Browser**: When this setting is enabled, any links in the app will be opened in the Managed Browser app.
 
   For devices that are not enrolled in Intune, web links in policy-managed apps will open only in the Managed Browser app by using the MAM policy.
 
   If you are using Intune to manage your devices, see [manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
-    Default value = **Yes**.
+  Default value = **Yes**.
 - **Encrypt app data**: Choose **Yes** to enable encryption. When this setting is enabled, for apps that are associated with a MAM policy, Microsoft provides encryption. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted.
   >[!NOTE]
   >The encryption method is not FIPS 140-2 certified.
@@ -96,7 +96,7 @@ There are two categories of policy settings: data relocation settings and access
   -   **Timeout**: Specify the time (in minutes) before the access requirements for the app are rechecked.
   -   **Offline grace period**: If the device is offline, specify the time (in minutes) before the access requirements for the app are rechecked.
 
-    Default values = **30**-minute timeout and **720**-minute offline grace period.
+  Default values = **30**-minute timeout and **720**-minute offline grace period.
 
 -   **Offline interval before app data is wiped (days)**: You can choose to wipe the company data if a device has been offline for a certain period.  Specify the number of days a device can be offline before the company data is removed from the device.
 
