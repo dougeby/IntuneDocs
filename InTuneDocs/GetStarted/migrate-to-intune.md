@@ -50,7 +50,7 @@ Devices must be unenrolled from your existing enterprise mobility management sol
 
 ## Enrolling devices in Intune
 
-Users scheduled for migration should immediately enroll in Intune to either regain or prevent loss of access to corporate resources, email, and applications. If you’ve configured conditional access and users try to connect to email before enrolling in Intune, their access is blocked and an enrollment email greets them. This email guides them to enroll their device in Intune.  Alternatively, users can enroll in Intune via the Intune Company Portal app or natively through the operating system on Windows 8.1 and Windows 10 Mobile. Refer to [What to tell your end users about using Microsoft Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md) for further guidance on enrollment steps per platform.
+Users scheduled for migration should immediately enroll in Intune to either regain or prevent loss of access to corporate resources, email, and applications. If you’ve configured conditional access and users try to connect to email before enrolling in Intune, their access is blocked and an enrollment email greets them. This email guides them to enroll their device in Intune.  Alternatively, users can enroll in Intune via the Intune Company Portal app or natively through the operating system on Windows 8.1 and Windows 10 Mobile. Refer to [What to tell your end users about using Microsoft Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) for further guidance on enrollment steps per platform.
 
 ## Configure Intune conditional access (optional)
 
