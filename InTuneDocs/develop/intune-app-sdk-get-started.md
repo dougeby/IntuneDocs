@@ -57,8 +57,7 @@ Microsoft will use the email address(es) listed in your questionnaire responses 
 3. You will be notified when your app is successfully registered with the Microsoft Intune service and when your app is featured on the [Microsoft Intune partners](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) site. 
 4. Finally, your app deep link will be added to the next monthly Intune Service update. For example, if the registration information is completed in July, the app deep link will be supported in mid-August. 
 
-> [!NOTE]
-> If your store app deep link changes in the future, you will need to re-register your app. Additionally, please inform us if you update your app with a new version of the Intune App SDK.
+If your store app deep link changes in the future, you will need to re-register your app. Additionally, please inform us if you update your app with a new version of the Intune App SDK.
 
 
 
