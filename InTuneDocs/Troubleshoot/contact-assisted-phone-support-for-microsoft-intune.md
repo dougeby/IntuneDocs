@@ -2,7 +2,7 @@
 # required metadata
 
 title: Contact Assisted Phone Support | Microsoft Intune
-description:
+description: Phone numbers for Intune support
 keywords:
 author: Nbigman
 manager: angrobe
