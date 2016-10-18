@@ -33,7 +33,7 @@ To understand how Intune MAM policies can protect your company data, see [Protec
 ## When should I use the Azure portal?
 The Azure portal is the new admin console for creating MAM policies and supports the following MAM scenarios:
 - **Devices that are enrolled in Intune**
-- **Devices that are managed by a third-party MDM solution**
+- **Devices that are managed by a another MDM solution**
 - **Devices that are not managed by any MDM solution (BYOD)**
 
 
@@ -64,7 +64,7 @@ To see the full list of supported Microsoft apps, go to the [Microsoft Intune mo
 * **Your organization's line-of-business apps:** These require preparing the apps to include the Intune App SDK before you can apply MAM policies.
 
   * For devices that are managed by Intune, see [Decide how to prepare apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
-  * For devices that are not managed (like employee-owned devices), or for devices that are managed by a third-party mobile device management solution, see [Protect line-of-business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
+  * For devices that are not managed (like employee-owned devices), or for devices that are managed by another mobile device management solution, see [Protect line-of-business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
 ## Prerequisites
 
