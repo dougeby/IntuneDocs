@@ -3,10 +3,10 @@
 
 title: Restore Intune managed iOS devices from backup | Microsoft Intune
 description: Provide guidance to end users on how to re-enroll their devices after restoring from backup.
-keywords:
+keywords: restore, managed, iOS
 author: barlanmsft
 manager: angrobe
-ms.date: 10/13/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,3 +43,13 @@ If the backup is being restored onto a different device, then the enrollment sta
 > [!TIP]
 > An example communication for your users could be as follows:
 To enroll on your new device, make sure that the Company Portal app is on version 2.1.22 or later. To check the version, open the Company Portal app, tap the Menu button in the upper right, and then tap About. If you are on an earlier version, exit the Company Portal app and open the App Store. Tap the Updates button in the bottom right corner, then tap the Update button next to the Company Portal item in the list. Once the update completes, launch the Company Portal app and [enroll your iOS device into Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
+
+## Resolving known issues with restores
+
+Users may experience some difficulty if they restored their device and launched the Company Portal app when they still had Company Portal version 2.1.21 or earlier. These difficulties can be addressed by taking the appropriate steps for the user’s situation.
+
+### For users who will only use their new device
+Launch the Company Portal app and unenroll by selecting the current device tile and tapping the __Remove__ button. After removing, follow the standard enrollment steps to [enroll an iOS device into Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
+
+### For users who will use both their old and new devices
+Clear cookies from Safari by tapping __Settings__ > __Safari__ > __Clear History and Website Data__. After clearing,  uninstall and reinstall the Company Portal app, then follow the standard enrollment steps to [enroll an iOS device into Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
