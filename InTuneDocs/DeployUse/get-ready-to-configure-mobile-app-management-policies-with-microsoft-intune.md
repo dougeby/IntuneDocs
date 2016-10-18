@@ -30,20 +30,21 @@ This topic describes the prerequisites and the steps you must complete **before*
 
 To understand how Intune MAM policies can protect your company data, see [Protect apps and data using mobile app management policies](protect-apps-and-data-with-microsoft-intune.md).
 
-## When should I use the Azure portal?
+## What is the Azure portal?
 The Azure portal is the new admin console for creating MAM policies and supports the following MAM scenarios:
 - **Devices that are enrolled in Intune**
 - **Devices that are managed by a another MDM solution**
 - **Devices that are not managed by any MDM solution (BYOD)**
 
 
-Currently, both the **Intune administrator console** and the **Azure portal** allow you to configure MAM policies.  However, consider the following to determine which console works best for your scenario:
+Currently, both the **Intune administrator console** and the **Azure portal** allow you to configure MAM policies.  Consider the following:
 
 * The policies that you create on the **Azure portal** is supported for **all MAM scenarios** listed above. The **Intune administrator console** only supports creating policies for **devices that are enrolled and managed by Intune**.
-* Other **app management features** like deploying apps and app configuration policies are currently only available in the **Intune administrator console**.
-* Azure portal is the new MAM admin console.  You may not see all MAM policy settings in the Intune administrator console as **new settings** may only be added to the **Azure portal**.
+* You may not see all MAM policy settings in the Intune administrator console as **new settings** may only be added to the **Azure portal**.
 * If you create MAM policies in **both** the Intune admin console and the Azure portal, the policy in the **Azure portal is applied to the apps and deployed to users**.
     * MAM policies that are created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be re-created in the Azure portal.
+* Other **app management features** like deploying apps and app configuration policies are currently only available in the **Intune administrator console**.
+
 
 If you are new to Azure portal, read the [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) topic to get the basics of using the Azure portal.
 
