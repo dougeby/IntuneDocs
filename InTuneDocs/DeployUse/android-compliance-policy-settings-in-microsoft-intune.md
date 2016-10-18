@@ -41,7 +41,7 @@ If you are looking for information about other platforms, select one of the foll
 
 -  **Minimum password length**: Specify the minimum number of digits or characters that the user’s password must have.
 
-- **Password quality:** This setting detects if the password requirements that you specify are set up on the device. Enable this setting to require that users meet certain password requirements for Android devices. Choose from:
+- **Password quality**: This setting detects if the password requirements that you specify are set up on the device. Enable this setting to require that users meet certain password requirements for Android devices. Choose from:
 
   -   **Low security biometric**
   -   **Required**
@@ -50,11 +50,11 @@ If you are looking for information about other platforms, select one of the foll
   -   **At least alphanumeric**
   -   **Alphanumeric with symbols**
 
-- **Minutes of inactivity before password is required**: Specify the idle time before the user must re-enter their password.
+- **Minutes of inactivity before password is required**: Specify the idle time before the user must reenter their password.
 
 - **Password expiration (days)**: Select the number of days before the user’s password expires and they must create a new one.
 
-- **Remember password history**: Use this setting in conjunction with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
+- **Remember password history**: Use this setting together with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
 
 - **Prevent reuse of previous passwords**: If you selected **Remember password history**, specify the number of previously used passwords that cannot be reused.
 
