@@ -26,19 +26,19 @@ ms.suite: ems
 ---
 
 # Azure portal for Microsoft Intune MAM policies
-## Accessing the Azure  portal
-The **Azure  portal** lets you create and manage mobile app management (MAM) policies.
+## Using the Azure portal
+The Azure  portal lets you create and manage mobile app management (MAM) policies.
 
 Azure portal supports creating MAM policies for:
-- Apps running on devices **enrolled and managed by Intune**.
-- Apps running on devices that are **not enrolled** in any MDM solution.
-- Apps running on devices that are **enrolled in a third-party MDM solution**.
+- Apps running on devices enrolled and managed in Intune.
+- Apps running on devices that are not enrolled in any MDM solution.
+- Apps running on devices that are enrolled in a third-party MDM solution.
 
 >[!IMPORTANT]
 
-> If you are currently using the Intune admin console to manage your devices, you can create a MAM policy that supports apps for devices enrolled in Intune  by using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+> If you are using the Intune admin console to manage your devices, you can create a MAM policy that supports apps for devices enrolled in Intune by using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
-> You may not see all MAM policy settings on the Intune admin console. The Azure portal is the new admin console for creating MAM policies. If you create MAM policies both on the Intune admin console and in the Azure portal, the policy in the Azure portal is applied to the apps and deployed to users.
+> You might not see all MAM policy settings on the Intune admin console. The Azure portal is the new admin console for creating MAM policies. If you create MAM policies both on the Intune admin console and in the Azure portal, the policy in the Azure portal is applied to the apps and deployed to users.
 
 ## Sign in to the Azure portal and customize your start page
 
@@ -46,7 +46,7 @@ Azure portal supports creating MAM policies for:
 
     ![Screenshot of the Azure portal sign-in page](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  After you are successfully signed in, you will see the **Dashboard** page. The **Dashboard** page can be customized.
+2.  After you are signed in, you will see the **Dashboard** page. The **Dashboard** page can be customized.
 
     ![Screenshot of the Azure portal dashboard](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
