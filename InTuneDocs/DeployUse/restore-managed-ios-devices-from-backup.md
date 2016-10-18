@@ -6,7 +6,7 @@ description: Provide guidance to end users on how to re-enroll their devices aft
 keywords: restore, managed, iOS
 author: barlanmsft
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,6 +46,10 @@ To enroll on your new device, make sure that the Company Portal app is on versio
 
 ## Resolving known issues with restores
 
-Your users may experience some difficulty with the Company Portal app on previously released versions after a restore. If the user had the Company Portal app on version 2.1.21 or less and they restore their device from backup, they should not open the Company Portal app without first unenrolling the device from Intune by navigating to the Company Portal website, selecting the device, and unenrolling it.
+Users may experience some difficulty if they restored their device and launched the Company Portal app when they still had Company Portal version 2.1.21 or earlier. These difficulties can be addressed by taking the appropriate steps for the user’s situation.
 
-If your users will be using both the previous device and the newly restored device, they will need to clear cookies from Safari by tapping __Settings__ > __Safari__ > __Clear History and Website Data__. They will then need to uninstall and reinstall the Company Portal app. 
+### For users who will only use their new device
+Launch the Company Portal app and unenroll by selecting the current device tile and tapping the __Remove__ button. After removing, follow the standard enrollment steps to [enroll an iOS device into Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
+
+### For users who will use both their old and new devices
+Clear cookies from Safari by tapping __Settings__ > __Safari__ > __Clear History and Website Data__. After clearing,  uninstall and reinstall the Company Portal app, then follow the standard enrollment steps to [enroll an iOS device into Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
