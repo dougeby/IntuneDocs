@@ -36,7 +36,7 @@ The following changes are under development for Intune. All of these features wi
 ## New capabilities
 
 ### Conditional access for mobile application management
-You can now create a conditional access policy to block unmanaged mobile applications from accessing [Exchange Online](..deployuse/restrict-access-to-exchange-online-with-microsoft-intune.md). You can block the built-in mail clients and apps that are not MAM enabled with Intune App SDK.  This can be done by creating a conditional access policy and specifying the applications that you want to have access to Exchange Online using the Azure portal.
+You can now create a conditional access policy to block unmanaged mobile applications from accessing [Exchange Online](/intune/deployuse/restrict-access-to-exchange-online-with-microsoft-intune.md). You can block the built-in mail clients and apps that are not MAM enabled with Intune App SDK.  This can be done by creating a conditional access policy and specifying the applications that you want to have access to Exchange Online using the Azure portal.
 <!--TFS 1317673-->
 
 ### Android for Work support
