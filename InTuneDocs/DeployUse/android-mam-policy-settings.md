@@ -61,7 +61,7 @@ There are two categories of policy settings: data relocation settings and access
 
   For devices that are not enrolled in Intune, web links in policy-managed apps will open only in the Managed Browser app by using the MAM policy.
 
-  If you are using Intune to manage your devices, see [manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
+  If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
   Default value = **Yes**.
 - **Encrypt app data**: Choose **Yes** to enable encryption. When this setting is enabled, for apps that are associated with a MAM policy, Microsoft provides encryption. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted.
@@ -70,7 +70,9 @@ There are two categories of policy settings: data relocation settings and access
 
   Default value = **Yes**.
 
-- **Disable contact sync**: Choose **Yes** to prevent contact information from syncing to the native address book app on the device. If you choose **No**, the app will save the contact information to the native address book app on the device.<br/>When you do a selective wipe to remove company data, contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this applies only to the Microsoft Outlook app.
+- **Disable contact sync**: Choose **Yes** to prevent contact information from syncing to the native address book app on the device. If you choose **No**, the app will save the contact information to the native address book app on the device.
+
+  When you do a selective wipe to remove company data, contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this applies only to the Microsoft Outlook app.
 
   Default value = **Yes**.
 - **Disable printing**: Choose **Yes** to prevent printing company data from apps that are associated with the MAM policy.
