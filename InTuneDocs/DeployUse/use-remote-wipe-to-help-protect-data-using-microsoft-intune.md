@@ -55,7 +55,7 @@ Whether because a device is no longer needed, is being repurposed, or has gone m
 
         1.  In the [Intune administrator console](https://manage.microsoft.com/), choose **Groups** &gt; **All Mobile Devices**.
 
-      ![Starting a retire or wipe operation](../media/dev-sa-wipe.png)
+         ![Starting a retire or wipe operation](../media/dev-sa-wipe.png)
 
         2.  Choose **Devices**, and then choose the name of the mobile device you want to wipe. To select multiple devices, use Ctrl+click.
 
