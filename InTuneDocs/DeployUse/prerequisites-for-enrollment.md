@@ -32,9 +32,11 @@ You can enable employees to enroll their mobile devices with Intune requires the
 |-----------|-------------|  
 |**Step 1:** [Enable connections](#step-1-enable-connections)|Ensure your custom domain name is configured and network communication is ready|  
 |**Step 2:** [Set MDM authority](#step-2-set-mdm-authority)|The mobile device management authority defines the service assigned to your devices|
-|**Step 3:** [Configure Company Portal](#step-3-configure-company-portal)|Configure user-facing settings for the Company Portal app|  
-|**Step 4:** [Assign user licenses](#step-4-assign-user-licenses)|Assign Intune licenses to users so they can enroll devices|
-|**Step 5:** [Enable enrollment](#step-5-enable-enrollment)|Enable platform-specific settings for iOS and Windows management. Android devices need no additional configuration.|
+|**Step 3:** [Create groups](#step-3-create-groups)|Configure user-facing settings for the Company Portal app|  
+|**Step 4:** [Configure Company Portal](#step-4-configure-company-portal)|Configure user-facing settings for the Company Portal app|  
+|**Step 5:** [Assign user licenses](#step-5-assign-user-licenses)|Assign Intune licenses to users so they can enroll devices|
+|**Step 6:** [Enable enrollment](#step-6-enable-enrollment)|Enable platform-specific settings for iOS and Windows management. Android devices need no additional configuration.|
+|**Step 7:** [Next steps](#step-7-next-steps)|Enable platform-specific settings for iOS and Windows management. Android devices need no additional configuration.|
 
 Looking for Intune with Configuration Manager?
 > [!div class="button"]
@@ -62,7 +64,11 @@ The MDM authority defines the management service that has permission to manage a
 
 3.  Intune requests confirmation that you want Intune as your MDM authority. Select the check box, and then choose **Yes** to use Microsoft Intune to manage mobile devices.
 
-## Step 3: Configure Company Portal
+## Step 3: Create groups
+
+You can create user and device groups to simplify management and improve targeting of deployed apps, policies, and company resources. [Learn how to create groups](use-groups-to-manage-users-and-devices-with-microsoft-intune.md#create-groups).
+
+## Step 4: Configure Company Portal
 
 The Intune Company Portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 
@@ -108,7 +114,7 @@ You can customize your Company Portal with your company logo, company name, them
 
 After you save your changes, you can use the links that are provided at the bottom of the **Company Portal** page of the administration console to view the Company Portal website. These links cannot be changed. When a user signs in, these links display your subscriptions in the Company Portal.
 
-## Step 4: Assign user licenses
+## Step 5: Assign user licenses
 
 You use the **Office 365 management portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts that are synchronized from your on-premises Active Directory to Azure Active Directory (Azure AD). You can [synchronize on-premises users to Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
 
@@ -125,15 +131,23 @@ You use the **Office 365 management portal** to manually add cloud-based users a
 3. Run [Azure AD Connect sync](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) to integrate your on-premises users with Azure AD.
 4. Once the user account information has successfully synchronized, you can then assign Microsoft Intune licenses using the [Office 365 Management Portal](https://portal.office.com/Admin/Default.aspx).
 
-## Step 5: Enable enrollment
+## Step 6: Enable enrollment
 After setting up the MDM authority, you need to set up device management for the operating systems that your organization wants to support. The steps that are required to set up device management vary by operating system. For example, the Android OS does not require you to do anything in the Intune administration console. On the other hand, Windows and iOS require a trust relationship between devices and Intune to allow management.
 
 Set up management for the following platforms:
-- [Android](set-up-android-management-with-microsoft-intune.md)
 - [iOS and Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [Android](set-up-android-management-with-microsoft-intune.md)
+- [Android for Work](set-up-android-for-work.md)
 - [Windows PCs and laptops](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 Mobile and Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-You can also:
- - Use the [device enrollment manager account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) to enroll many devices.
- - [Specify company-owned devices by using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) to help enroll devices and target policy.
+You can also enable [enrollment of corporate-owned devices](manage-corporate-owned-devices).
+
+## Step 7: Next steps
+
+Now that enrollment is enabled, you should set up management to meet your business's needs. The following are some  management options:
+
+- [Deploy policies that manage settings and features on devices](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+- [Enable access to company resources like email, Wi-Fi, and VPN](enable-access-to-company-resources-with-microsoft-intune.md)
+- [Add apps](add-apps.md) and [deploy app](deploy-apps.md) to managed devices
+- [Create device compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune.md) and [restrict access based on compliance](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
