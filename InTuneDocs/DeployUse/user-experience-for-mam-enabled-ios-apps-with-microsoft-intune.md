@@ -63,6 +63,7 @@ User A works for two companies - **Company X**, and **Company Y**. User A has a 
 If you are using an iOS device, when you try to add a second work account on the same device, you may see a blocking message.  The accounts will be displayed and you can choose the account you want to remove.
 
 ![Screenshot of the dialog box with the blocking message and Yes and No options](../media/AppManagement/iOS_SwitchUser.PNG)
-
+## Next steps
+[What to expect when your Android app is managed by MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 ### See also
 [Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

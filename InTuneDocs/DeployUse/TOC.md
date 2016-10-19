@@ -125,7 +125,7 @@
 #### [Validate MAM policies](validate-mobile-application-management.md)
 #### [Monitor policy compliance](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-#### [End user experience](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+
 #### [Intune admin console for MAM policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Prepare line of business apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
@@ -142,6 +142,8 @@
 
 ## [Resources about the end-user experience](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 ### [Restore managed iOS devices](restore-managed-ios-devices-from-backup.md)
+### [Android apps with MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+### [iOS apps with MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 # [Develop and Customize Apps](/intune/develop/intune-app-sdk)
 

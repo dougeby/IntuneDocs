@@ -6,7 +6,7 @@ description: This topic describes what to expect when your app is managed by mob
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -80,7 +80,8 @@ The following filetypes are supported:
 |----|----|
 |Pfile is a generic “wrapper” format for protected files that encapsulates the encrypted content and the Azure Information Protection licenses and can be used to protect any file type.|Text files, including XML, CSV, etc. can be opened for viewing in the app even when they are protected. File types: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
-
+## Next steps
+[What to expect when your iOS app is managed by MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ### See also
 [Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
