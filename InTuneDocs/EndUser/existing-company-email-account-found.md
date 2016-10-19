@@ -26,13 +26,14 @@ ms.suite: ems
 ---
 
 # Existing company email account found
-You already have a company email account. To continue to connect to your company email, you’ll need to take the following steps to enable your IT admin to properly set up and manage your account:
+
+You already have a company email account. To continue to connect to your company email account, take the following steps to enable your IT admin to properly set up and manage it:
 
 1.  In **Settings** on your device, remove the connection you previously set up to your company email.
 
     For example, on an iOS device, tap **Settings** &gt; **Mail, Contacts, Calendar**. Select your work email account, and then click **Delete**.
 
-2.  Open the Company Portal app on your device and tap **Check Compliance**.
+2.  Open the Company Portal app on your device, and then tap **Check Compliance**.
 
 3.  Wait a short time for new email settings to be applied to your device automatically.
 

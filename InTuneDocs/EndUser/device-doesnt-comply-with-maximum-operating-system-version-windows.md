@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows device doesn't comply with the maximum operating system version | Microsoft Intune
+title: Windows device doesn't comply with the setting for the maximum operating system version | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -26,7 +26,6 @@ ms.suite: ems
 ---
 
 
-# Windows device doesn't comply with the maximum operating system version
+# Windows device doesn't comply with the setting for the latest operating system version
 
-Your IT administrator has set a maximum version of the operating system that you are allowed to have on your  Windows device, but your device doesn't comply with that setting. To find out what the maximum allowed operating system is for your device, you need to contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
+Your IT administrator has set the latest version of the operating system that you are allowed to have on your Windows device, but your device doesn't comply with that setting. To find out what the latest allowed operating system is for your device, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

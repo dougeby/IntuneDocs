@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Enroll your Windows Phone 8.1 device in Intune
 
-If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. Enrolling your devices enables your organization to keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 
 To enroll your Phone 8.1 device in Intune, follow the instructions that apply to your company or school:
@@ -42,7 +42,7 @@ Install the Company Portal app on your device:
 
 1.  Tap **Start** &gt; **Store**.
 
-2.  Tap **Search** and type **company portal**.
+2.  Tap **Search**, and then type **company portal**.
 
 3.  In the list of results, tap **Company Portal**.
 
@@ -72,7 +72,7 @@ Enroll your device:
 
     ![Workplace settings screen](./media/WP81-enroll-3-workplace-add-acct.png)
 
-7.  Enter additional information as requested and then tap **sign in** to complete the enrollment. You should now see your workplace account listed on the **Settings** &gt; **Workplace** page.
+7.  Enter more information as requested, and then tap **sign in** to finish the enrollment. You should now see your workplace account listed on the **Settings** &gt; **Workplace** page.
 
     ![Account added screen](./media/WP81-enroll-4-account-added.png)
 
@@ -82,11 +82,10 @@ Enroll your device:
 
 2.  Tap **add account**, and then sign in using your work account.
 
-3.  Enter additional information as requested, and then tap **sign in** to complete the enrollment.
+3.  Enter more information as requested, and then tap **sign in** to finish the enrollment.
 
-4.  If prompted to install the company app or Hub, make sure the relevant box is checked and then tap **done**.
+4.  If prompted to install the company app or Hub, make sure the relevant box is checked, and then tap **done**.
 
-If your IT admin has configured the Company Portal to be installed  during enrollment, you will see the Company Portal appear in your app list.
+If your IT admin has set up the Company Portal to be installed  during enrollment, you will see the Company Portal appear in your app list.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
+Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

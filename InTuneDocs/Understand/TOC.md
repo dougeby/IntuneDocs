@@ -1,5 +1,6 @@
 # [Understand and Explore](introduction-to-microsoft-intune.md)
 ## [Introduction to Intune](introduction-to-microsoft-intune.md)
+## [Modern Windows Management](modern-windows-management)
 ## [Intune evaluation guide](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ### [Sign in or sign up for a 30-day evaluation](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 ### [Add users](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)
@@ -15,5 +16,5 @@
 # [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
-# [Develop & Customize Apps](/intune/develop/intune-app-sdk)
+# [Develop and Customize Apps](/intune/develop/intune-app-sdk)
 # [Troubleshoot](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)

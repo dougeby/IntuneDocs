@@ -6,7 +6,7 @@ description: Use Wi-Fi profiles to help users connect to your Wi-Fi networks.
 keywords:
 author: Nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ For example, you install a new Wi-Fi network named **Contoso Wi-Fi** and want to
 
 1.   Create a Wi-Fi profile containing the settings necessary to connect to the **Contoso Wi-Fi** wireless network.
 
-2. Deploy the profile to the group of users with iOS devices.
+2.   Deploy the profile to the group of users with iOS devices.
 
 3.   Users find the new **Contoso Wi-Fi** network in the list of wireless networks and can easily connect to this network.
 
@@ -45,6 +45,8 @@ For example, you install a new Wi-Fi network named **Contoso Wi-Fi** and want to
 You can deploy Wi-Fi profiles to the following platforms:
 
 -   Android 4.0 and later
+
+-	Android for Work   
 
 -   iOS 8.0 and later
 
@@ -58,11 +60,14 @@ For devices that run Windows 8.1 or Windows 10 desktop or mobile, you can import
 
     -   Wi-Fi Profile (Android 4 and later)
 
+	-   Wi-Fi Profile (Android for Work)
+
     -   Wi-Fi Profile (iOS 8.0 and later)
 
     -   Wi-Fi Profile (Mac OS X 10.9 and later)
-
-    There are no recommended settings for this policy type. You must create a custom policy.
+	
+    
+	There are no recommended settings for this policy type. You must create a custom policy.
 
 3.  Provide the name and description for the profile.
 

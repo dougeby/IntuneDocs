@@ -2,11 +2,12 @@
 # required metadata
 
 title: Collect device logs| Microsoft Intune
-description:
+description: Learn how to collect logs from your managed devices.
 keywords:
-author: Nbigman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

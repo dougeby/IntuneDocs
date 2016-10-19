@@ -6,7 +6,7 @@ description: How your groups will be migrated from Intune to Azure AD
 keywords:
 author: nbigman
 manager: angerobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,10 +29,8 @@ ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 	
 Based on your feedback to have one grouping and targeting experience across Enterprise Mobility & Security, we're converting Intune Groups to Azure Active Directory-based Security Groups. This will unify group management across Intune and Azure Active Directory (Azure AD). The new experience will keep you from having to duplicate groups between services, and provides extensibility using PowerShell and Graph. 
 
-Beginning in November, existing Intune customers will be migrated to the new Azure AD based group management experience. Intune user and device groups will be migrated to Azure AD security groups. We won’t start migrations until we can minimize any impact to your day-to-day work and expect no end-user impact. We will also provide you a notice prior to your account’s migration.
-
 ### How and when will I migrate to the new groups experience?
-Current customers will be migrated over a period of time. We’re finalizing the schedule for that migration and will update this topic in a few weeks to provide more details. You will get a notice before you are migrated. If you have any migration concerns, please contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+Current customers will be migrated over a period of time, beginning no earlier than December 2016. You will get a notice before your groups migrated. If you have any migration concerns, please contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 ### What new features will be available to me?
 Here is the new functionality being introduced: 
