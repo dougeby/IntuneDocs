@@ -107,7 +107,7 @@ You can find updated screenshots [here](https://gallery.technet.microsoft.com/Im
 If you have configured a web clip to open only in the managed browser, and the managed browser is not installed on a device, the Company Portal app on the device will prompt the user to install the managed browser before the web clip can be installed.
 <!---TFS 1228570--->
 
-#### Windows
+### Windows
 **Feedback button added to Windows Phone 8.1 Company Portal app**<br/>
 The Windows Phone 8.1 Company Portal app enables end users to send feedback about the app by using a new "send feedback" button. To find the button, users tap the “three dots” menu at the bottom right of the Company Portal app screen and then tap **send feedback**. The collected, anonymized feedback will help Microsoft improve the Company Portal app experience for users.
 <!---TFS 1317806--->
@@ -117,17 +117,17 @@ We’ve added a new [glossary topic](https://docs.microsoft.com/intune/understan
 
 
 ## August 2016
-## App management
+### App management
 <!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
 
-### Hidden and shown apps for iOS 9.3
+__Hidden and shown apps for iOS 9.3__
 For supervised devices running iOS 9.3 or later, you can use the hidden and shown apps list in the iOS general configuration policy to:
 - Specify a list of apps that will be hidden from users. Users cannot view, or launch these apps.
 - Specify a list of apps that users can view and launch. No other apps can be viewed or launched.
 
 The apps you can specify include both apps you have deployed, and the built-in iOS apps like Messages and Notes. For details, see [iOS policy settings in Microsoft Intune]( /intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 <!---TFS 1279009 checked--->
-### Allowed and blocked apps policy for Samsung KNOX devices
+__Allowed and blocked apps policy for Samsung KNOX devices__
 You can now configure a custom policy for Samsung KNOX devices that lets you create one of the following:
 - A list of apps that are blocked from running on the device. Even if installed, an app defined in the blocked list cannot be activated on the device.
 - A list of apps that users of the device are allowed to install from the Google Play store. No other apps can be installed from the store.
@@ -135,7 +135,7 @@ You can now configure a custom policy for Samsung KNOX devices that lets you cre
 These settings can only be used by devices that run Samsung KNOX.
 For details, see [Use custom policies to allow and block apps for Samsung KNOX devices](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps).
 <!---TFS 1311629 checked --->
-### New apps compatible with mobile application management (MAM) policies
+__New apps compatible with mobile application management (MAM) policies__
 The Yammer app for [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) is now compatible with [Intune mobile application management (MAM) policies](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), whether or not the device is enrolled.
 
 For a full list of MAM compatible apps, see the [Microsoft Intune application partners](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) site.
@@ -143,7 +143,7 @@ For a full list of MAM compatible apps, see the [Microsoft Intune application pa
 
 <!--- I started putting TFS numbers in the What's Coming topic and found it helpful when updating the What's New. Up to you if you want to continue. --->
 
-### Intune Viewer apps
+__Intune Viewer apps__
 With the release of the new RMS sharing app, we are removing the following Intune Viewer apps, beginning in August, 2016:
 - Intune AV Viewer
 - Intune PDF Viewer
@@ -151,21 +151,21 @@ With the release of the new RMS sharing app, we are removing the following Intun
 
 Instead of using the Intune Viewer apps, we recommend using the new [Rights Management app (RMS sharing) for Android](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app), which allows you to deploy one app instead of three separate apps to securely view corporate files on Android devices. When the Intune viewer app is no longer supported, it will be removed from the Google Store and will not be available for future use.
 
-## Device management
-### Android 7.0 support
+### Device management
+__Android 7.0 support__
 Intune provides “day 0” support for the forthcoming Android 7.0 operating system for mobile devices.
 <!---TFS 1262053--->
 
-### Google removal of remote passcode reset capability on Android 7.0 devices
+__Google removal of remote passcode reset capability on Android 7.0 devices__
 Google is removing the ability of IT administrators and end users to remotely reset the passcode of Android 7.0 devices. Previously, IT administrators could remotely reset a user’s passcode, and end users could reset their passcodes from the Company Portal website.
 
-## Company Portal updates
-### Company Portal website
+### Company Portal updates
+__Company Portal website__
 - **Feedback link from the Company Portal to Microsoft** <br/>
 The Company Portal website enables end users to tap a new "Feedback" link, at the bottom of the page, to send feedback to Microsoft about their experience with the site. The collected, anonymized feedback will help Microsoft improve the Company Portal website experience for users.
 <!--- TFS 1313657 checked--->
 
-### iOS
+__iOS__
 - **Minimum iOS Managed Browser version updated to 8.0**<br/>
 The Microsoft Intune Managed Browser app for iOS has been updated to support devices running iOS 8.0 or later. While iOS 7.1 devices can still use the existing Managed Browser app, encourage your users to update to iOS 8.0 or later to access and take full advantage of new Managed Browser features.  
 <!---TFS 1313253 checked--->
@@ -258,11 +258,12 @@ __TeamViewer Integration for Windows PCs running the Intune client software__
 <!---TFS 1284856--->
 
 ### Company Portal updates
+
 __Company Portal website__
 - **Improved end-user experience when enrolling Windows devices**<br/>
 When you are using conditional access, the enrollment steps for Windows 8.1, Windows 10 Desktop, and Windows 10 Mobile have been clarified in the Company Portal website. Users will now see separate “Device enrollment” and “Workplace Join” steps, making it easier for them to see the status of their device and to complete the process if they experience a Workplace Join (WPJ) failure. The separate steps are also expected to simplify the troubleshooting process for IT administrators. Previously, when end users tried to enroll and all enrollment steps succeeded except for WPJ, the enrolled device would not appear on the list of devices for users to identify, causing confusion for users.
 
-__* ### Android__
+__Android__
 - **Android Company Portal app**<br/>
 If Android end users see an error message that says their device is missing a required certificate, they can tap a "How to resolve this" button to get [steps](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) for installing the missing certificate. If users complete the steps, but see an additional "missing certificate" error message, they are asked to contact their IT administrator and provide this [link](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), which contains steps that IT administrators can use to fix the certificate issue.
 
@@ -270,7 +271,7 @@ If Android end users see an error message that says their device is missing a re
 Android devices can no longer install applications through the Company Portal website unless the devices have been enrolled in Intune by using the Intune Company Portal app for Android.
 <!---TFS 1299082--->
 
-__* ### iOS__
+__iOS__
 - **Changes to Device Enrollment Managers accounts in the iOS Company Portal app**<br/>
 To improve performance and scale, Intune no longer displays all Device Enrollment Managers (DEM) devices in the **My Devices** pane of the iOS Company Portal app. Only the local device running the app is displayed, and only if it is enrolled via the Company Portal app.
 
