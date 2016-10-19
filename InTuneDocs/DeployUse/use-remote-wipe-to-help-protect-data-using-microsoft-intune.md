@@ -114,7 +114,7 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |Email|Removes email that is EFS enabled, which includes the Mail app for Windows email and attachments.|Not supported.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|Removes email that is EFS enabled, which includes the Mail app for Windows email and attachments. Removes mail accounts that were provisioned by Intune.|
 |Azure Active Directory (AAD) Unjoin|No.|No.|AAD Record removed.|Not applicable. Windows 10 does not support selective wipe for Azure Active Directory joined devices.|
 
-## Wipe content that is encryption file system (EFS)-enabled
+## Wipe encryption file system (EFS)-enabled content
 Selective wipe of EFS-encrypted content is supported by Windows 8.1 and Windows RT 8.1. The following points apply to a selective wipe of EFS-enabled content:
 
 -   Only apps and data that are protected by EFS using the same Internet domain as the Intune account are selectively wiped. For more information, see [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx).
