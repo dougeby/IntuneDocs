@@ -107,6 +107,7 @@
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [Restrict email access: examples](restrict-email-access-example-scenarios.md)
 ### [Allow only policy managed app access to O365 services](allow-policy-managed-apps-access-to-o365.md)
+#### [Using apps with MAM CA](using-apps-with-mam-ca.md)
 #### [Exchange Online](mam-ca-for-exchange-online.md)
 #### [Block apps with no ADAL](block-apps-with-no-modern-authentication.md)
 ### [Restrict access to networks (Cisco ISE)](restrict-access-to-networks.md)
@@ -144,6 +145,8 @@
 ### [Restore managed iOS devices](restore-managed-ios-devices-from-backup.md)
 ### [Android apps with MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 ### [iOS apps with MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+### [Using apps with MAM CA](using-apps-with-mam-ca.md)
+
 
 # [Develop and Customize Apps](/intune/develop/intune-app-sdk)
 
