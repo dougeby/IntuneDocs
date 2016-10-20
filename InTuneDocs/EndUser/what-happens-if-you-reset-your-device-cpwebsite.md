@@ -28,7 +28,7 @@ ms.suite: ems
 
 # What happens if you reset your device
 
-To read about what happens if you reset your device, use the link below that matches the type of device you're using.
+To read about what happens if you reset your device, choose the link below that matches the type of device you're using:
 
 - [Android](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 - [iOS](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
