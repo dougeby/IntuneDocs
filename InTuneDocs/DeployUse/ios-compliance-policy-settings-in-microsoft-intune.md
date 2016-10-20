@@ -2,7 +2,7 @@
 # required metadata
 
 title: Compliance policy settings for iOS devices | Microsoft Intune
-description:
+description: This topic describes the rules and settings that you can set in a compliance policy for iOS devices.
 keywords:
 author: karthikaraman
 manager: angrobe
