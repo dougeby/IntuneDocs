@@ -2,7 +2,7 @@
 # required metadata
 
 title: Device compliance policies | Microsoft Intune
-description: This topic explains concepts that help you learn what device compliance policies are and how they work.
+description: This topic explains what device compliance policies are and how they work.
 keywords:
 author: karthikaraman
 manager: angrobe
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Device compliance policies in Microsoft Intune
 ## What is a compliance policy?
-To help protect company data, you need to make sure that the devices used to access company apps and data comply with certain rules, like using a PIN to access the device and encrypting data stored on the device. A set of such rules is called a compliance policy.
+To help protect company data, you need to make sure that the devices used to access company apps and data comply with certain rules. These rules might include using a PIN to access devices and encrypting data stored on devices. A set of such rules is called a compliance policy.
 
 ## How should I use compliance policies?
 You can use compliance policies with conditional access policies to allow only devices that comply with compliance policy rules to access email and other services. To learn how the two policies can be used together, read the [Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
@@ -41,19 +41,19 @@ The following table lists the device types that compliance policies support. The
 
 -----------------------------
 
-|Policy setting| Windows 8.1 and later| Windows Phone 8.1 and later| iOS 8.0 and later|Android 4.0 and later<br/>Samsung KNOX Standard 4.0 and later|
+|Policy setting| Windows 8.1 and later| Windows Phone 8.1 and later| iOS 8.0 and later|Android 4.0 and later<br/>Samsung Knox Standard 4.0 and later|
 |-----|----|----|----|----|
-|**PIN or Password Configuration** |Remediated|Remediated|Remediated|Quarantined|
-|**Device encryption**|N/A|Remediated|Remediated (by setting PIN)|Quarantined|
-|**Jailbroken or rooted device**|N/A|N/A|Quarantined (not a setting)|Quarantined (not a setting)|
-|**Email profile**|N/A|N/A|Quarantined|N/A|
+|**PIN or password configuration** |Remediated|Remediated|Remediated|Quarantined|
+|**Device encryption**|Not applicable|Remediated|Remediated (by setting PIN)|Quarantined|
+|**Jailbroken or rooted device**|Not applicable|Not applicable|Quarantined (not a setting)|Quarantined (not a setting)|
+|**Email profile**|Not applicable|Not applicable|Quarantined|Not applicable|
 |**Minimum OS version**|Quarantined|Quarantined|Quarantined|Quarantined|
-|**Maximum OS version**|Quarantined| Quarantined| Quarantined| Quarantined|
-|**Windows health attestation**|Windows 10 and Windows 10 Mobile are quarantined.<br /><br />Setting is not applicable to Windows 8.1.|N/A|N/A|N/A|
+|**Maximum OS version**|Quarantined|Quarantined|Quarantined|Quarantined|
+|**Windows health attestation**|Quarantined: Windows 10 and Windows 10 Mobile<br /><br />Not applicable: Windows 8.1|Not applicable|Not applicable|Not applicable|
 
 ------------------------------
 
-**Remediated** = Compliance is enforced by the device operating system. (For example, the user is forced to set a PIN.) The setting is always compliant.
+**Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.) The setting is always compliant.
 
 **Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:
 

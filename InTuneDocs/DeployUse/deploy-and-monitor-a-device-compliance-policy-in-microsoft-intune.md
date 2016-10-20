@@ -33,10 +33,10 @@ Deploy the compliance policy that you [created](create-a-device-compliance-polic
 ![Screenshot of the compliance policy page showing the Manage Deployment menu option at the top](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  In the **Manage Deployment** dialog box, choose one or more groups to which you want to deploy the policy, and then choose **Add** > **OK**.
-![Screenshot of the manage deployment dialog box](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
+![Screenshot of the Manage Deployment dialog box](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
 Use Active Directory groups that you have already created and synced to Intune, or create these groups manually in the Intune console. To learn more about how to deploy policies, see [Deploy a configuration policy](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-Use the status summary and alerts on the **Overview** page of the **Policy** workspace to identify issues with the policy that require your attention. Additionally, a status summary appears in the **Dashboard** workspace.
+Use the status summary and alerts on the **Overview** page of the **Policy** workspace to identify issues with the policy that need your attention. Additionally, a status summary appears in the **Dashboard** workspace.
 
 > [!IMPORTANT]
 > If you have not deployed a compliance policy and you enable an Exchange conditional access policy, all targeted devices will have access.
