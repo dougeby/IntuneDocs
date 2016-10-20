@@ -2,7 +2,7 @@
 # required metadata
 
 title: Compliance policy settings for Windows devices| Microsoft Intune
-description:
+description: This topic described the rules and settings you can configure for a compliance policy for Windows devices.
 keywords:
 author: karthikaraman
 manager: angrobe
