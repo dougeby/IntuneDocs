@@ -5,8 +5,9 @@ title: Access corporate email with email profiles | Microsoft Intune
 description: Email profile settings can be used to configure email access settings for specific email clients on mobile devices.  
 keywords:
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -113,8 +114,10 @@ The password is not contained in the email profile, so the user needs to supply 
     |**Use SSL**|Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server. For devices that run Samsung KNOX 4.0 or later, you must export your Exchange Server SSL certificate, and deploy it as an Android Trusted Certificate Profile in Intune. Intune does not support accessing this certificate if it is installed on the Exchange server by other means.|
     |**Content type to synchronize** (all platforms except Android for Work Gmail)|Select the content types that you want to synchronize to devices.|
 	|**Allow email to be sent from third party applications** (iOS only)|Allow the user to select this profile as the default  account for sending email, and allow third-party applications to open email in the native email app, for example, to attach files to email.|
-    > [!IMPORTANT]
-    > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
+
+> [!IMPORTANT]
+>
+> If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
 
 4.  When you are finished, click **Save Policy**.
 

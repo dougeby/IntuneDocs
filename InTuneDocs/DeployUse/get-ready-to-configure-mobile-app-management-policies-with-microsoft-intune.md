@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get ready to configure MAM policies | Microsoft Intune
+title: Prerequisites for MAM policies | Microsoft Intune
 description: This topic describes the pre-requisites and setting up users before you can create mobile app management policies.
 keywords:
 author: karthikaraman
@@ -25,22 +25,30 @@ ms.suite: ems
 
 ---
 
-# Get ready to configure mobile app management policies with Microsoft Intune
-This topic describes what you need to do before you can create mobile app management (MAM) policies in the Azure portal.
+# Get ready to configure mobile app management policies on the Azure portal
+This topic describes the prerequisites and the steps you must complete **before** you can create mobile app management (MAM) policies in the Azure portal.
 
-The Azure portal is the new admin console for creating MAM policies. We recommend that you use this portal to create MAM  policies. The Azure portal supports the following MAM scenarios:
-- Devices that are enrolled in Intune
-- Devices that are managed by a third-party MDM solution
-- Devices that are not managed by any MDM solution (BYOD)
+To understand how Intune MAM policies can protect your company data, see [Protect apps and data using mobile app management policies](protect-apps-and-data-with-microsoft-intune.md).
 
-If you are new to using the Azure portal, read the [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) topic to get a quick overview.
+## What is the Azure portal?
+The Azure portal is the new admin console for creating MAM policies and supports the following MAM scenarios:
+- **Devices that are enrolled in Intune**
+- **Devices that are managed by a another MDM solution**
+- **Devices that are not managed by any MDM solution (BYOD)**
 
->[!IMPORTANT]
 
-> If you are currently using the Intune admin console to manage your devices, you can create MAM policies that support apps for devices enrolled in Intune by using the Intune admin console. But we recommend that you use the Azure portal, even for devices that are enrolled in Intune. For instructions on how to create a MAM policy by using the Intune admin console, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Currently, both the **Intune administrator console** and the **Azure portal** allow you to configure MAM policies.  Consider the following:
 
-> You may not see all MAM policy settings in the Intune admin console. If you create MAM policies in both the Intune admin console and the Azure portal, the policy in the Azure portal is applied to the apps and deployed to users.
-> MAM policies that are created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be re-created in the Azure portal.
+* The policies that you create on the **Azure portal** is supported for **all MAM scenarios** listed above. The **Intune administrator console** only supports creating policies for **devices that are enrolled and managed by Intune**.
+* You may not see all MAM policy settings in the Intune administrator console as **new settings** may only be added to the **Azure portal**.
+* If you create MAM policies in **both** the Intune admin console and the Azure portal, the policy in the **Azure portal is applied to the apps and deployed to users**.
+    * MAM policies that are created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be re-created in the Azure portal.
+* Other **app management features** like deploying apps and app configuration policies are currently only available in the **Intune administrator console**.
+
+
+If you are new to Azure portal, read the [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) topic to get the basics of using the Azure portal.
+
+For instructions on how to create a MAM policy on the Intune admin console, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 
 ##  Supported platforms
@@ -48,18 +56,23 @@ If you are new to using the Azure portal, read the [Azure portal for Microsoft I
 
 - Android 4 or later
 
-Windows devices are currently not supported.
+>[!NOTE]
+>Windows devices don’t support these mobile application management policies. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+
 ##  Supported apps
 * **Microsoft apps:** These apps have the Intune App SDK built in and require no further processing before you apply MAM policies.
 To see the full list of supported Microsoft apps, go to the [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) on the Microsoft Intune application partners page. Click an app to see the supported scenarios and platforms, and to see whether the app supports multiple identities.
 * **Your organization's line-of-business apps:** These require preparing the apps to include the Intune App SDK before you can apply MAM policies.
 
   * For devices that are managed by Intune, see [Decide how to prepare apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
-  * For devices that are not managed (like employee-owned devices), or for devices that are managed by a third-party mobile device management solution, see [Protect line-of-business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
+  * For devices that are not managed (like employee-owned devices), or for devices that are managed by another mobile device management solution, see [Protect line-of-business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
-*Before* you can configure MAM policies, you need the following:
+## Prerequisites
 
 -   A subscription to Microsoft Intune.    Users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps that have MAM policies.
+You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription if you are currently using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to manage your devices.  You also have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription if you have purchased an Enterprise Mobility Suite (EMS) license. If you are trying [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to check out the MAM capabilities, you can get a trial account on the [Microsoft Intune webpage](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
+
+    To check whether you have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription, in the Office portal, go to the **Billing** page.  You should see [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] as **Active** in the subscriptions.
 
 -   An Office 365 subscription, which is required for the following:
   - To apply MAM policies to apps with multiple-identity support.
@@ -70,30 +83,21 @@ To see the full list of supported Microsoft apps, go to the [Microsoft Intune mo
 - Azure Active Directory (Azure AD) to create users. Azure AD authenticates users when they open the app and enter their work credentials.
 
     > [!NOTE]
-    > If you are setting up users by using the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console, be aware that the MAM policy configuration is moving to the Azure portal. To use this portal, you need to set up Azure AD user groups by using the Office 365 portal.
+    > User groups must be setup in Azure AD. Intune user groups cannot be used to deploy MAM policies in the Azure portal.
 
+### Create users and assign Microsoft Intune licenses
 
-## Create users and assign Microsoft Intune licenses
+1.  Sign in to the   [Office portal](http://portal.office.com) with your admin credentials.
 
-1. Make sure that you have an Intune subscription. You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription if you are currently using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to manage your devices.  You also have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription if you have purchased an Enterprise Mobility Suite (EMS) license. If you are trying [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to check out the MAM capabilities, you can get a trial account on the [Microsoft Intune webpage](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
+2.  Add users as described in the **Add users** section of [this](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-2) topic and assign Intune licenses. To give a user the ability to access the Office portal, the Azure AD portal, and the Azure  portal, assign the **Global administrator** role to the user.
 
-    To check whether you have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription, in the Office portal, go to the **Billing** page.  You should see [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] as **Active** in the subscriptions.
+5.  MAM policies are deployed to user groups in Azure Active Directory. To create user groups for your MAM policies, create a user group as described in the **Create a user group** section of [this](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3) topic.
 
-2.  Sign in to the   [Office portal](http://portal.office.com) with your admin credentials.
+### Non-Global admin users
 
-3.  Go to the **Active Users** page to add users and assign [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses.
+Global administrators have access to the [Azure portal](https://portal.azure.com).  If you want users who are not Global administrators to be able to configure policies and do other mobile app management tasks, you can assign the contributor role to the users. For detailed instructions, see [Use role assignments to manage access to your Azure subscription resources](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/).
 
-    ![Active Users page in the Office portal](../media/AppManagement/OfficePortal_AddUsers.png)
-
-    ![Edit user page in the Office portal](../media/AppManagement/OfficePortal_AssignLicenses.png)
-
-4.  To give a user the ability to access the Office portal, the Azure AD portal, and the Azure  portal, assign the **Global administrator** role to the user.
-
-    ![Page for editing user roles in the Office portal](../media/AppManagement/OfficePortal_AddRoletoUser.png)
-
-5.  MAM policies are deployed to user groups in Azure Active Directory. To create user groups for your MAM policies, go to the **Groups** page in the Office portal and choose the **Add a group option** in the top menu to create a new security group.  Type a name and a description, and then click **Create**. When the group is created, you can add users to the group by clicking **Edit members**. The security group is created in Azure Active Directory.
-
-    ![Page for security groups in the Office portal](../media/AppManagement/OfficePortal_CreateGroups.png)
+---------------------------------
 
 The following table lists the roles and permissions that you can assign to admin users.
 
@@ -104,27 +108,8 @@ The following table lists the roles and permissions that you can assign to admin
 |Owner (Azure  portal)|Access to the Azure  portal (can do both role management and mobile app management tasks).|
 |Contributor (Azure  portal)|Access to the Azure  portal (can do only the mobile app management tasks).|
 
-## Assign the contributor role to a user
-
-Global administrators have access to the [Azure portal](https://portal.azure.com).  If you want other admin users to be able to configure policies and do other mobile app management tasks, you can assign the contributor role to the users:
 
 
-1.  On the **Settings** blade,  in the **Resource management** section, click **Users**.
-
-    ![Users blade in the Azure portal](../media/AppManagement/AzurePortal_MAM_AddUsers.png)
-
-2.  Click **Add** to open the **Add access** blade.
-
-3.  Click **Select a role**, and then click **Contributor**.
-
-    ![Select a role blade in the Azure portal](../media/AppManagement/AzurePortal_MAM_AddRole.png)
-
-4.  Click **Add user**, and search for the user by name or email address. The users that you see in this list are the first 1,000 users that you previously created in Azure AD by using the Office portal. Click **OK** on the **Add access** blade to save and assign the role to the user.
-
-    ![Add users blade in the Azure portal](../media/AppManagement/AzurePortal_MAM_AddusertoRole.png)
-
-    > [!IMPORTANT]
-    > If you select a user who does not have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] license assigned to them, they will not be able to access the portal.
 
 ## Next steps
 [Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
