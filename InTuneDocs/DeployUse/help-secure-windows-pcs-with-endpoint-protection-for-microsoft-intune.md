@@ -4,7 +4,7 @@
 title: Endpoint Protection for Windows PCs| Microsoft Intune
 description: Secure your managed computers with Endpoint Protection, which provides real-time protection against malware threats.
 keywords:
-author: NathBarn
+author: NathBarnms.author: nathbarn
 manager: arob98
 ms.date: 07/25/2016
 ms.topic: article

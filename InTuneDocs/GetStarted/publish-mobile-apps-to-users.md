@@ -4,7 +4,7 @@
 title: Publish mobile apps to your users | Microsoft Intune
 description:
 keywords:
-author: jeffgilb
+author: jeffgilbms.author: jeffgilb
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

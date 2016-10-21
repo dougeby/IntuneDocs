@@ -4,7 +4,7 @@
 title: Deploy apps | Microsoft Intune
 description: This topic explains concepts you'll need to understand before you start deploying apps with Intune.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

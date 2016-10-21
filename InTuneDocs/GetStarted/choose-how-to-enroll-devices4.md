@@ -4,7 +4,7 @@
 title: Choose how to enroll mobile devices | Microsoft Intune
 description: Decide how to enroll mobile devices in Intune by answering a few simple questions
 keywords:
-author: NathBarn
+author: NathBarnms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article

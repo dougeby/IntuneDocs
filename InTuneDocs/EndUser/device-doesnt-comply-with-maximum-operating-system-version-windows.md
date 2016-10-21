@@ -4,7 +4,7 @@
 title: Windows device doesn't comply with the setting for the maximum operating system version | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: Staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

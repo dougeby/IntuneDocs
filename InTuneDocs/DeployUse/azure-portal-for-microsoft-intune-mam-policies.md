@@ -4,7 +4,7 @@
 title: Azure portal for MAM policies | Microsoft Intune
 description: Create mobile app management policies by using the Azure portal. The policies you create here can be applied to devices with or without enrollment in Intune.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

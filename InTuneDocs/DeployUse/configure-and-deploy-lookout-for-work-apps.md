@@ -3,7 +3,7 @@
 
 title: Deploy Lookout for Work app | Microsoft Intune
 description: Configure and deploy Lookout for Work apps for Android.
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
