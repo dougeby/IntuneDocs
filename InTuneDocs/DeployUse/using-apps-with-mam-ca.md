@@ -30,6 +30,24 @@ MAM CA verifies the identity of the approved application by means of a broker ap
 
 End-users signing in for the first time, to an app that is supported by MAM CA, like OneDrive or Outlook, are prompted to install the broker app and register the device with Azure AD. Device registration in Azure AD (previously known as Workplace Join) will create a device record and certificate against which tokens are issued.  This is **not** the same as **MDM enrollment**. There are no management profiles or policies that are applied, and there is no inventory taken of apps on the device.  The process of installing the broker app and registering the device will only happen on the first use of a managed app.
 
+The following table shows the list of properties that get recorded in Azure AD when a device is registered:
+
+* accountEnabled
+* approximateLastLogonTimeStamp
+* deletionTimestamp
+* deviceId
+* deviceObjectVersion
+* devicePhysicalIds
+* dirSyncEnabled
+* isCompliant
+* IsManaged
+* lastDirSyncTime
+* objectId
+* objectType
+
+
+
+
 ## MAM CA with conditional access based on device compliance  
 
 You can configure [Conditional access based on device compliance](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**Device CA**) on the [Intune administrator console](https://manage.microsoft.com) or the [Azure AD Premium management console] (https://manage.windowsazure.com). Device CA require users to connect to Exchange Online only through Intune-managed  devices that are compliant with the Intune device compliance policy or domain-joined PCs.  If a user belongs to one or more security groups that are targeted for both  MAM CA and Device CA policies, the user must meet one of the two requirements:
