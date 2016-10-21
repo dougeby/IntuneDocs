@@ -4,7 +4,7 @@
 title: Deploy apps to Android for Work devices | Microsoft Intune
 description: Use this topic to synchronize, then deploy app to Android for Work devices from the Google Play for Work Store.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

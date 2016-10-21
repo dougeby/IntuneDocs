@@ -4,7 +4,7 @@
 title: Enroll your device in Intune | Microsoft Intune
 description: Provides links to information about how to enroll different devices in Intune
 keywords:
-author: staciebarker
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

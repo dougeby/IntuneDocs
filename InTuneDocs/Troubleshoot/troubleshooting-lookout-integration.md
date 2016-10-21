@@ -4,7 +4,7 @@
 title: Troubleshoot Lookout Integration | Microsoft Intune
 description: This topic describes troubleshooting issues that commonly occur with Lookout Integration
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

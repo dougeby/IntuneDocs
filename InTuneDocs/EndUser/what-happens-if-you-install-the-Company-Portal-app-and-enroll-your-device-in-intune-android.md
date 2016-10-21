@@ -4,7 +4,7 @@
 title: What happens if you install the Company Portal app and enroll your Android device in Intune? | Microsoft Intune
 description:
 keywords:
-author: staciebarker
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 09/16/2016
 ms.topic: article
