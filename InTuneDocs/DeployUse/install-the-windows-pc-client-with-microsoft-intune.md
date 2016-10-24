@@ -33,6 +33,8 @@ Windows PCs can be enrolled by installing the Intune client software. The Intune
 - Include in a disk image
 - Installed by users
 
+The Intune software client that is first downloaded contains the minimum software necessary to enroll the PC in Intune management. After a PC enrolls, the Intune software client then downloads the full client software needed for PC management. This series of downloads minimizes the time required to initially enroll and ensures that, after completing the second download, the client has the most recent software available.
+
 ## Download Intune client software
 
 All methods, except where users install the Intune client software themselves, require that you download the software so it can be deployed.
