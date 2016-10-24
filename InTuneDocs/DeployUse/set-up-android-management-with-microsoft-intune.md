@@ -4,7 +4,7 @@
 title: Set up Android management | Microsoft Intune
 description: Enable mobile device management (MDM) for Android and KNOX devices with Microsoft Intune.
 keywords:
-author: NathBarn
+author: NathBarnms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article

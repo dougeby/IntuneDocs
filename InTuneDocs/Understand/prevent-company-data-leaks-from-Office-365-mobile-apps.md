@@ -4,7 +4,7 @@
 title: Prevent company data leaks from Office 365 mobile apps  | Microsoft Intune
 description:
 keywords:
-author: jeffgilb
+author: jeffgilbms.author: jeffgilb
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

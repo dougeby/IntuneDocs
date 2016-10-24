@@ -4,7 +4,7 @@
 title: Overview of the app lifecycle | Microsoft Intune
 description: Learn about the lifecycle of Intune managed apps, from adding them, to their eventual retirement.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

@@ -4,7 +4,7 @@
 title: Specify IMEI numbers | Microsoft Intune
 description: Microsoft Intune lets admins import IMEI numbers for mobile device platforms to help identify corporate-owned mobile devices
 keywords:
-author: NathBarn
+author: NathBarnms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article

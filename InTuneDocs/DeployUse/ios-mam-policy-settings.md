@@ -4,7 +4,7 @@
 title: iOS MAM policy settings | Microsoft Intune
 description: This topic describes the mobile app management policy settings for iOS devices.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

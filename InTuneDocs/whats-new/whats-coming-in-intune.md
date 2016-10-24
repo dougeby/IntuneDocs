@@ -5,7 +5,7 @@
 title: The early edition | Microsoft Intune
 description:
 keywords:
-author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 10/05/2016
 ms.topic: article

@@ -4,7 +4,7 @@
 title: Setup your subscription with Lookout | Microsoft Intune
 description: This topics provides details on how to configure Lookout device threat protection.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
