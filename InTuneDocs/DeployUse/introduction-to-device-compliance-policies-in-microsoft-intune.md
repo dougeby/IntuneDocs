@@ -55,13 +55,13 @@ The following table lists the device types that compliance policies support. The
 
 ------------------------------
 
-**Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.) The setting is always compliant.
+**Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)
 
 **Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:
 
 -   The device is blocked if a conditional access policy applies to the user.
 
--   The company portal notifies the user about any compliance issues.
+-   The company portal notifies the user about any compliance problems.
 
 ## Next steps
 [Create a device compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md)
@@ -77,7 +77,8 @@ The following table lists the device types that compliance policies support. The
 title: Device compliance policies | Microsoft Intune
 description: This topic explains the concepts you need to understand what device compliance policies are and how they work.
 keywords:
-author: karthikaramanms.author: karaman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
