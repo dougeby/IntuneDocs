@@ -1,3 +1,4 @@
+---
 # required metadata
 
 title: Manage corporate-owned devices | Microsoft Intune
