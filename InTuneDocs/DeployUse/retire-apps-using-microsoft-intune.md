@@ -4,7 +4,7 @@
 title: Retire apps | Microsoft Intune
 description: Learn how to retire or uninstall apps using Intune.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article

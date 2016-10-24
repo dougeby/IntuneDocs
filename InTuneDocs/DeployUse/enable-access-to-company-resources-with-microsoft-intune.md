@@ -4,9 +4,9 @@
 title: Enable access to company resources | Microsoft Intune
 description:  Wi-Fi, VPN, and email profiles work together to help your users gain access to the files and resources they need.
 keywords:
-author: Nbigman
+author: Nbigmanms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

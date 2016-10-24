@@ -4,7 +4,7 @@
 title: Using your Android device with Intune | Microsoft Intune
 description: List of links to tasks that you can do on your Android mobile device when the device is enrolled in Intune
 keywords:
-author: staciebarker
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -39,6 +39,7 @@ This article includes links to all of the tasks that end users can do on their I
 The information in this section helps you with Intune Company Portal installation and device enrollment for Android devices.
 
 - [Enroll your device in Intune](enroll-your-device-in-Intune-android.md)
+- [Create a work profile and enroll your device in Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Things you can do when your device is enrolled in Intune

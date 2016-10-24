@@ -422,6 +422,32 @@ The return value of this method will tell the SDK if the application will handle
  - If true is returned, the application will be responsible for handling the restart.   
  - If false is returned, the SDK will restart the application after this method returns.  The SDK will immediately bring up a dialog telling the user the application must be restarted. 
 
+#Implementing Save-as Controls
+
+Intune allows IT administrators to select which storage locations a managed app can save data to. Apps can query the Intune App SDK for allowed storage locations using the **isSaveToAllowedForLocation** API.
+
+Before saving managed data to a cloud-storage or local locations, apps must check with the **isSaveToAllowedForLocation** API to know if the IT administrator has allowed data to be saved there.
+
+When using the **isSaveToAllowedForLocation** API, apps must pass in the UPN used for the storage location, if it is available.
+
+##Supported Locations
+
+The **isSaveToAllowedForLocation** API provides constants to check the following locations:
+
+* IntuneMAMSaveLocationOther 
+* IntuneMAMSaveLocationOneDriveForBusiness 
+* IntuneMAMSaveLocationSharePoint 
+* IntuneMAMSaveLocationBox 
+* IntuneMAMSaveLocationDropbox 
+* IntuneMAMSaveLocationGoogleDrive 
+* IntuneMAMSaveLocationLocalDrive 
+
+Apps should use the constants in the **isSaveToAllowedForLocation** API to check if data can be saved to locations considered "managed," such as OneDrive for Business, or "personal." Additionally, the API should be used when the app is unable to determine whether a location is "managed" or "personal." 
+
+When a location is known to be "personal," apps should use the **IntuneMAMSaveLocationOther** value. 
+
+The **IntuneMAMSaveLocationLocalDrive** constant should be used when the app is saving data to any location on the local device.
+
 
 
 # Configure the Intune App SDK Settings
@@ -504,7 +530,7 @@ Note that an identity is simply defined as a string. Identities are case-insensi
 An identity is simply the username of an account (e.g. user@contoso.com). Developers can set the identity of the app on the following different levels: 
 
 * **Process identity**: the process identity sets the process-wide identity and is mainly used for single identity applications. This identity affects all operations, files, and UI.
-* **UI identity**: determines what policies are applied to UI operations on the main thread such as cut/copy/paste, PIN, authentication, data sharing, etc. The UI identity does not affect file operations (encryption, backup, etc.). 
+* **UI identity**: determines what policies are applied to UI operations on the main thread such as cut/copy/paste, PIN, authentication, data sharing, etc. The UI identity does not affect file operations (encryption, backup, etc.).
 * **Thread identity**: The thread identity affects what policies are applied on the current thread. This affects all operations, files, and UI.
 
 It's the app's responsibility to set the identities appropriately whether or not the user is managed.
@@ -530,9 +556,12 @@ If the app creates files that contain data from both managed and unmanaged users
  
 If the app contains a Share Extension, the owner of the item being shared can be retrieved using the  `protectionInfoForItemProvider` method in `IntuneMAMDataProtectionManager`. If the shared item is a file, the SDK will handle setting the file owner. If the shared item is data, it’s the app's responsibility to set the file owner if this data is persisted to a file, and to call the `setUIPolicyIdentity` API (described below) before displaying this data in the UI.
  
-#Enabling Multi-Identity
+##Turning On Multi-Identity
  
-By default apps are considered single identity and the process identity is set to the enrolled user by the SDK. To enable multi-identity support, a boolean setting with the name 'MultiIdentity' with value 'YES' should be added to the IntuneMAMSettings dictionary within the apps' Info.plist file. When multi-identity is enabled, the process identity, UI identity, and thread identities will be set to nil and it will be the app's responsibility to set them appropriately.
+By default apps are considered single identity and the SDK sets the process identity to the enrolled user. To enable multi-identity support, a boolean setting with the name `MultiIdentity` with value 'YES' must be added to the **IntuneMAMSettings** dictionary within the app's Info.plist. 
+
+> [!NOTE]
+> When multi-identity is enabled, the process identity, UI identity, and thread identities will be set to nil. It is the app's responsibility to set them appropriately.
 
  
 ##Switching Identities
