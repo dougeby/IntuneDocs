@@ -4,7 +4,7 @@
 title: Choose how to manage devices | Microsoft Intune
 description: Learn about the various ways you can enroll and manage devices.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 08/31/2016
 ms.topic: article

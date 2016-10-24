@@ -4,7 +4,7 @@
 title: Android device doesn't comply with the maximum operating system version | Microsoft Intune
 description:
 keywords:
-author: staciebarker
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

@@ -4,7 +4,7 @@
 title: Check compliance on your Android device | Microsoft Intune
 description:
 keywords:
-author: staciebarker
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

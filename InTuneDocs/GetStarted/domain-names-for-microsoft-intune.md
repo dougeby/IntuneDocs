@@ -4,7 +4,7 @@
 title: Domain names for Microsoft Intune | Microsoft Intune
 description: add domain name for Intune
 keywords:
-author: andredm7
+author: andredm7ms.author: andredm
 manager: swadhwa
 ms.date: 10/11/2016
 ms.topic: article

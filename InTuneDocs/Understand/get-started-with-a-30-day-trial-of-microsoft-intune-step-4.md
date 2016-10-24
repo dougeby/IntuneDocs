@@ -4,7 +4,7 @@
 title: Create policies and publish an app to users | Microsoft Intune
 description: How to create policies and publish an app when you sign up for a free, 30-day evaluation of Intune
 keywords:
-author: lindavr
+author: lindavrms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

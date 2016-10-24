@@ -5,7 +5,7 @@
 title: Android and Samsung KNOX policy settings | Microsoft Intune
 description: Create policies that control settings and features on Android devices that you manage with Intune.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

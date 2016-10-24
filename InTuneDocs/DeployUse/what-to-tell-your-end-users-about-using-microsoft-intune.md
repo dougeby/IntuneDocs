@@ -4,7 +4,7 @@
 title: Resources about the end-user experience with Microsoft Intune | Microsoft Intune
 description: Links to information to share with your end users
 keywords:
-author: staciebarker
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: get-started-article

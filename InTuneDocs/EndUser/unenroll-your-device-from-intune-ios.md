@@ -4,7 +4,7 @@
 title: Unenroll your iOS device from Intune | Microsoft Intune
 description: Describes how to unenroll an iOS device from Intune
 keywords:
-author: Staciebarker
+author: Staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

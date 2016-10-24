@@ -6,7 +6,7 @@ experiment_id: kgremban_images_080416
 title: Introduction to Microsoft Intune | Microsoft Intune
 description: Learn how Intune is the mobile device management component of the Enterprise Mobility + Security solution.
 keywords:
-author: Lindavr
+author: Lindavrms.author: lindavr
 manager: angrobe
 ms.date: 08/10/2016
 ms.topic: article

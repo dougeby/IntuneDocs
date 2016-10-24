@@ -4,7 +4,7 @@
 title: Proof of concept | Microsoft Intune
 description: Recommendations for the proof of concept phase of an Intune deployment.
 keywords:
-author: Nbigman
+author: Nbigmanms.author: nbigman
 manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
