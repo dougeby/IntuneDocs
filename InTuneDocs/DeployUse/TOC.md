@@ -143,9 +143,9 @@
 
 ## [Resources about the end-user experience](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 ### [Restore managed iOS devices](restore-managed-ios-devices-from-backup.md)
-### [Android apps with MAM policies](https://review.docs.microsoft.com/en-us/InTune/deploy-use/using-apps-with-mam-ca?branch=pr-en-us-1949)
+### [Android apps with MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 ### [iOS apps with MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-### [Using apps with MAM CA](using-apps-with-mam-ca.md)
+<!---# [Using apps with MAM CA]() --->
 
 
 # [Develop and Customize Apps](/intune/develop/intune-app-sdk)
