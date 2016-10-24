@@ -4,7 +4,7 @@
 title: Path to modern Windows management | Microsoft Intune
 description:
 keywords:
-author: NathBarn
+author: NathBarnms.author: nathbarn
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

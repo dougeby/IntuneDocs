@@ -4,7 +4,7 @@
 title: Wi-Fi connections | Microsoft Intune
 description: Use Wi-Fi profiles to help users connect to your Wi-Fi networks.
 keywords:
-author: Nbigman
+author: Nbigmanms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

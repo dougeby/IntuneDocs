@@ -4,9 +4,9 @@
 title: Password does not meet IT administrator requirements | Microsoft Intune
 description:
 keywords:
-author: staciebarker
+author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/20/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -28,7 +28,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # Password does not meet IT administrator requirements
 
-The password that you use to access your company or school resources does not meet one or more requirements that your IT admin has set up. Depending on how many requirements your IT admin set up, you might be several of the following issues:
+The password that you use to access your company or school resources does not meet one or more requirements that your IT admin has set up. To fix the issue, follow the instructions that are shown on your device. Descriptions of the issues are listed below.
+
+For the steps on how to set your PIN or password, use the link that matches the type of device you have:
+
+- [Set your Android device PIN or password](set-your-pin-or-password-android.md)
+- [Set or change your iOS device passcode](set-or-change-your-passcode-ios.md)
+- [Set or change your Windows device password](set-or-change-your-password-windows.md)
+
+PIN or password issue descriptions:
 
 - **Password does not contain complex characters**. Your IT admin requires you to use complex characters in your password. Examples of complex characters might be numbers, capital letters, and symbols like $, %, and #. 
 
@@ -43,11 +51,5 @@ The password that you use to access your company or school resources does not me
 - **Your password was used too recently**. Your IT admin is preventing you from using previous passwords that you've used in the past. Choose a password that you haven't used before. 
 
 - **Password isn't complex enough to meet requirements**. Your IT admin requires you to use more complex characters in your password. Try using characters like numbers, capital letters, and symbols like $, %, and #. 
-
-For information about setting your PIN or password, or for information about other tasks that you can do with your device, use the link that matches the type of device you have:
-
-- [Set your Android device PIN or password](set-your-pin-or-password-android.md)
-- [Set or change your iOS device passcode](set-or-change-your-passcode-ios.md)
-- [Set or change your Windows device password](set-or-change-your-password-windows.md)
 
 If you have trouble figuring out how to make your password comply with the requirements, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

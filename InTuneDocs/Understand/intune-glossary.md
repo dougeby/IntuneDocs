@@ -4,7 +4,7 @@
 title: Intune glossary | Microsoft Intune
 description: Learn about some of the terminology in Microsoft Intune
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 09/23/2016
 ms.topic: article

@@ -4,7 +4,7 @@
 title: Restrict email access to Dynamics CRM Online | Microsoft Intune
 description: Protect and control access to Dynamics CRM online with  conditional access.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

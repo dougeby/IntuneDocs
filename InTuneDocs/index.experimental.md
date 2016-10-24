@@ -7,7 +7,7 @@ layout: HubPage
 title: Intune Documentation - MDM documentation | Microsoft Docs
 description: Technical documentation for Microsoft Intune - Mobile Device and Application Management
 keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
-author: jeffgilb
+author: jeffgilbms.author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage

@@ -4,7 +4,7 @@
 title: Configure MAM policies in the Intune console | Microsoft Intune
 description: Mobile application management policies in Microsoft Intune let you modify the functionality of apps that you deploy to help align them with your company's compliance and security policies.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -43,7 +43,7 @@ Unlike other Intune policies, you do not deploy a mobile application management 
 
 To apply restrictions to an app, the app must incorporate the Microsoft Intune App SDK. There are three methods of obtaining this type of app:
 
--   **Use a policy managed app**. A policy managed app has the App SDK built in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. For more information, see the [list of apps that you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+-   **Use a policy managed app**. A policy managed app has the App SDK built in. To add this type of app, you specify a link to the app from an app store such as the iTunes store or Google Play. No further processing is required for this type of app. For more information, see the [list of apps that you can use with Microsoft Intune mobile application management policies](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
 
 -   **Use a wrapped app**. A wrapped app is an app that you repackage to include the App SDK by using the Microsoft Intune App Wrapping Tool. This tool is typically used to process company apps that were created in house. You can't use it to process apps that were downloaded from the app store. For more information, see [Prepare iOS apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -142,7 +142,7 @@ After you have verified that the app is uploaded successfully, continue to step 
     |**Offline grace period**|If the device is offline, specify the time period before the access requirements for the app are rechecked.|
     |**Encrypt app data**|This setting specifies that all data associated with this app will be encrypted. This includes data stored externally, such as in SD cards.<br /><br />**Encryption for iOS**<br /><br />For apps that are associated with an Intune mobile application management policy, data is encrypted at rest through device-level encryption that the OS provides. This is enabled through a device PIN policy that the IT admin sets. When a PIN is required, the data will be encrypted according to the settings in the mobile application management policy. As stated in Apple documentation, [the modules that iOS uses are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Encryption for Android**<br /><br />For apps that are associated with an Intune mobile application management policy, Microsoft provides encryption. Data is encrypted synchronously during file I/O operations.  Content on the device storage will always be encrypted. The encryption method is not FIPS 140-2 certified.|
     |**Block screen capture** (Android devices only)|This setting specifies that the screen capture capabilities of the device are blocked when someone is using this app.|
-    
+
 4. When you are finished, choose **Save Policy**.
 
 The new policy appears in the **Configuration Policies** node of the **Policy** workspace.

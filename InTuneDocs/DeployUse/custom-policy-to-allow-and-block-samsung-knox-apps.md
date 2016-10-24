@@ -4,7 +4,7 @@
 title: Allowed and blocked apps for KNOX | Microsoft Intune
 description: Custom profile to create a list of allowed and blocked apps for KNOX.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

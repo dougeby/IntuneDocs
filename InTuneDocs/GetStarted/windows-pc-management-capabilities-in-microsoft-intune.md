@@ -4,7 +4,7 @@
 title: Intune PC software client capabilities | Microsoft Intune
 description: Learn about the capabilities of Intune when you manage Windows PCs with the Intune software client.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 09/14/2016
 ms.topic: article

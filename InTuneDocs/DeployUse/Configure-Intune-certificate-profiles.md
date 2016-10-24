@@ -4,7 +4,7 @@
 title: Configure certificate profiles | Microsoft Intune
 description: Learn how to create an Intune certificate profile.
 keywords:
-author: nbigman
+author: nbigmanms.author: nbigman
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

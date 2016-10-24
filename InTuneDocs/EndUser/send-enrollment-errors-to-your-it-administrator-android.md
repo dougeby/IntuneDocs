@@ -4,7 +4,7 @@
 title: Send enrollment errors to your IT admin | Microsoft Intune
 description: Send enrollment errors to your admin
 keywords:
-author: staciebarker
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

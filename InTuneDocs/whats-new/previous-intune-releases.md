@@ -4,7 +4,7 @@
 title: Previous releases | Microsoft Intune
 description:
 keywords:
-author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
