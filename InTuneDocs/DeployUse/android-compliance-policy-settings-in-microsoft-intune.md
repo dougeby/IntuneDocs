@@ -4,7 +4,7 @@
 title: Compliance policy settings for Android devices | Microsoft Intune
 description: This topic describes the device compliance policy settings for Android devices.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

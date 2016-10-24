@@ -4,7 +4,7 @@
 title: Intune network bandwidth use | Microsoft Intune
 description: intune network bandwidth usage
 keywords:
-author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

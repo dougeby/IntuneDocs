@@ -4,7 +4,7 @@
 title: Migrate to Intune | Microsoft Intune
 description:
 keywords:
-author: jeffgilb
+author: jeffgilbms.author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article

@@ -4,7 +4,7 @@
 title: Microsoft Intune supported web browsers | Microsoft Intune
 description: Web browsers that Intune supports
 keywords:
-author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -31,7 +31,7 @@ Before you set up Intune, review this topic and other requirements listed in [Wh
 
 |Intune feature |Supported browsers|
 |---------|---------|
-|Intune Admin console     |  Internet Explorer 10 or later<br /><br />Google Chrome (versions prior to version 42)<br /><br />Mozilla Firefox <br /><br />**Note:** Microsoft Edge and mobile browsers are not supported for the Admin console<sup>1</sup>.                      
+|Intune Admin console     |  Internet Explorer 10 or later<br /><br />Google Chrome (versions prior to version 42)<br /><br />Mozilla Firefox with Silverlight enabled<br /><br />**Note:** Microsoft Edge and mobile browsers are not supported for the Admin console<sup>1</sup>.                      
 |Office 365 Admin Portal     |All browsers, including mobile browsers and managed browsers  |
 |Company Portal website     |**On mobile devices:** use the default web browser for each supported platform   <br /><br />**On Windows PCs:** Internet Explorer 10 or later, or Microsoft Edge<br /><br />**On Mac OS X 10.9 or later:** Apple Safari    |
 

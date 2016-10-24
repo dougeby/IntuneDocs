@@ -4,7 +4,7 @@
 title: Intune integration with Microsoft cloud services | Microsoft Intune
 description: Intune integration with Microsoft cloud services and products and with other Microsoft products
 keywords:
-author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

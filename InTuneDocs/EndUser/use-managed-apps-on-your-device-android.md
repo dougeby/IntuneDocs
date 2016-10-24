@@ -4,7 +4,7 @@
 title: Use managed apps on your Android device | Microsoft Intune
 description:
 keywords:
-author: staciebarker
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 08/28/2016
 ms.topic: article
