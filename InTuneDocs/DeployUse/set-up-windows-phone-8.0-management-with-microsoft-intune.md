@@ -6,7 +6,7 @@ description: Enable mobile device management (MDM) for Windows Phone 8.0 devices
 keywords:
 author: NathBarn
 manager: angrobe
-ms.date: 07/09/2016
+ms.date: 10/21/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

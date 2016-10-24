@@ -4,7 +4,7 @@
 title: Configure MAM policies in the Intune console | Microsoft Intune
 description: Mobile application management policies in Microsoft Intune let you modify the functionality of apps that you deploy to help align them with your company's compliance and security policies.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

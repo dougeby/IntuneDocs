@@ -4,7 +4,7 @@
 title: Manage device settings with policies | Microsoft Intune
 description: Use Intune to create and deploy policies that control settings and features on enrolled devices that you manage.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

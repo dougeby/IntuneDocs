@@ -4,7 +4,7 @@
 title: Manage Intune licenses using PowerShell | Microsoft Intune
 description: Manage Intune licenses using PowerShell
 keywords:
-author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

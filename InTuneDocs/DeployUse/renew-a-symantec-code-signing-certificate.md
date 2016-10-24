@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Renew a Symantec enterprise code-signing certificate for Windows devices
 
-The Symantec certificate used to manage certain Windows and Windows Phone mobile devices must be renewed periodically.
+The Symantec certificate used to deploy Windows and Windows Phone mobile apps must be renewed periodically.
 
 ## How to renew the Symantec enterprise code-signing certificate
 
