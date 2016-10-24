@@ -4,8 +4,7 @@
 title: Access corporate email with email profiles | Microsoft Intune
 description: Email profile settings can be used to configure email access settings for specific email clients on mobile devices.  
 keywords:
-author: Nbigman
-ms.author: nbigman
+author: Nbigmanms.author: nbigman
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -43,7 +42,7 @@ You can use email profiles to configure the native email client on the following
 -	Android for Work
 
 >[!NOTE]
->Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate profile. 
+>Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate profile.
 
 In addition to setting up an email account on the device, you can set up how much email to synchronize, and depending on the device type, which content types to synchronize.
 
@@ -88,7 +87,7 @@ The password is not contained in the email profile, so the user needs to supply 
     -   **Email Profile (Windows Phone 8.1 and later)**
 
     -   **Email Profile (Windows 10 Desktop and Mobile and later)**
-    
+
 	-   **Email Profile (Android for Work  - Gmail)**
 
 	-	**Email Profile (Android for Work  - Nine Work)**
@@ -136,5 +135,5 @@ The new policy displays in the **Configuration Policies** node of the **Policy**
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
 
 > [!NOTE]
-> - For Android for Work, make sure you also deploy the Gmail or Nine Work apps in addition to the appropriate email profile. 
-> - If you want to remove an email profile from a device, edit the deployment and remove any groups of which the device is a member. 
+> - For Android for Work, make sure you also deploy the Gmail or Nine Work apps in addition to the appropriate email profile.
+> - If you want to remove an email profile from a device, edit the deployment and remove any groups of which the device is a member.

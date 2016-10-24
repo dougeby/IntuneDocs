@@ -4,7 +4,7 @@
 title: Using your Windows device with Intune | Microsoft Intune
 description: List of links to tasks that you can do on your Windows device when the device is enrolled in Intune
 keywords:
-author: Staciebarker
+author: Staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

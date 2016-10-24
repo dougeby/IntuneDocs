@@ -4,7 +4,7 @@
 title: Mobile device security policy settings | Microsoft Intune
 description: Use Intune to configure a wide range of settings that you can deploy to managed devices in your organization.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
