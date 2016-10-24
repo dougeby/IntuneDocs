@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,4 +37,4 @@ To check the version for Windows 10 and Windows 8.1, select the Windows logo key
 - For Windows 10, ignore the version number and look at the OS build number (example: OS Build 10586.29). The "10" in 10586.29 stands for Windows 10.
 - For Windows 8.1, look at the version number. It will show 6.3.*xxxx* instead of 8.1.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
