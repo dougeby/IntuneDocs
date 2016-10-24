@@ -30,7 +30,7 @@ MAM CA verifies the identity of the approved application by means of a broker ap
 
 End-users signing in for the first time, to an app that is supported by MAM CA, like OneDrive or Outlook, are prompted to install the broker app and register the device with Azure AD. Device registration in Azure AD (previously known as Workplace Join) will create a device record and certificate against which tokens are issued.  This is **not** the same as **MDM enrollment**. There are no management profiles or policies that are applied, and there is no inventory taken of apps on the device.  The process of installing the broker app and registering the device will only happen on the first use of a managed app.
 
-The following table shows the list of properties that get recorded in Azure AD when a device is registered:
+The following is a list of properties  get recorded in Azure AD when a device is registered:
 
 * accountEnabled
 * approximateLastLogonTimeStamp
