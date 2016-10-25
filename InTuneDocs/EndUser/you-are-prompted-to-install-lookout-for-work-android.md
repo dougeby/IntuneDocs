@@ -84,4 +84,4 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work manually from the Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
