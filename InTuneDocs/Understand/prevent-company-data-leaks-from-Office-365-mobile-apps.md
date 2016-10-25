@@ -4,7 +4,7 @@
 title: Prevent company data leaks from Office 365 mobile apps  | Microsoft Intune
 description:
 keywords:
-author: jeffgilb
+author: jeffgilbms.author: jeffgilb
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -36,7 +36,7 @@ If yes, Microsoft Intune allows you to set MAM policies for Office 365 mobile ap
 ## How do I do it?
 1.	Get a basic understanding of [how Intune mobile application management (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) works.
 2.	Find out [what you need to do before you can create MAM policies](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) in the Azure portal.
-3.	[Create and deploy MAM policies](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) with Intune.
+3.	[Create and deploy MAM policies](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) with Intune.
 
 ### Additional information:
 - [End user experience](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) using MAM enabled apps.

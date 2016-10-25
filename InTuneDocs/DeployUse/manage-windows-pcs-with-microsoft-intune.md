@@ -28,12 +28,12 @@ ms.suite: ems
 # Manage Windows PCs with Intune PC client software
 Instead of [enrolling Windows PCs as mobile devices](set-up-windows-device-management-with-microsoft-intune.md), you can enroll and manage Windows PCs by installing the Intune client software.
 
-Intune manages Windows PCs by using policies that are similar to those used by Windows Server Active Directory Domain Services (AD DS) Group Policy Objects (GPOs). If you are managing Active Directory domain-joined computers with Intune, [be sure that Intune policies do not conflict with any GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) that are in place for your organization.
+Intune manages Windows PCs by using policies similar to the way Windows Server Active Directory Domain Services (AD DS) and Group Policy Objects (GPOs) do. If you are managing Active Directory domain-joined computers with Intune, you should [be sure that Intune policies do not conflict with any GPOs](resolve-gpo-and-microsoft-intune-policy-conflicts.md) that are in place for your organization.
 
 While the Intune software client supports [management capabilities that help protect PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md) by managing software updates, Windows Firewall, and Endpoint Protection, PCs that are managed with the Intune software client cannot be targeted by other Intune policies, including those **Windows** policy settings that are specific to mobile device management.
 
 > [!NOTE]
-> Devices that are running Windows 8.1 or later can be managed with either the Intune client or as mobile devices. This topic applies to computers that are running the Intune software client. You can't simultaneously use the Intune client and enroll the device in mobile device management.
+> Devices that are running Windows 8.1 or later can be managed with either the Intune client or as mobile devices. Installing the Intune client and enrolling in mobile device management is not supported.
 
 ## Requirements for Intune PC client management
 
@@ -66,7 +66,7 @@ After the Intune client software is installed, management capabilities include:
 - [Software update settings](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
 - Compliance settings reporting
 
-Certain management options that are available to PCs managed as mobile devices are unavailable to PCs managed with the Intune software client, including:
+Certain management options that are available to PCs that are managed as mobile devices are unavailable to PCs that are managed with the Intune software client, including:
 
 -   Full wipe (selective wipe is available)
 -   Conditional access
@@ -74,7 +74,7 @@ Certain management options that are available to PCs managed as mobile devices a
 
 ![Policies template for Windows PCs](../media/pc_policy_template.png)
 
-In addition to the Intune client agent actions that you perform locally on individual computers, you can also use the Intune administration console to perform other [common computer management tasks](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) on Windows PCs that have the client installed. These include:
+In addition to the Intune client agent actions that you perform locally on individual computers, you can also use the Intune admin console to perform other [common computer management tasks](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) on Windows PCs that have the client installed. These include:
 
 -   Viewing hardware and software inventory information about managed computers
 -   Remotely restarting a computer

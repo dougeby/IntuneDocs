@@ -4,9 +4,9 @@
 title: Use managed apps on your iOS device | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: Staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Use managed apps on your iOS device
 
-Managed apps are apps that your IT administrator can configure to help protect company data that you can access in that app. When you access company data in a managed app on your iOS device, you may notice that the app works a little differently from what you expect. For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.
+Managed apps are apps that your IT admin can set up to help protect company data that you can access in that app. When you access company data in a managed app on your iOS device, you may notice that the app works a little differently than what you expect. For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.
 
 Different managed apps can also work together on your device to allow you to do your daily tasks, while keeping corporate data protected. For example, if you open a company file in one managed app, and another managed app is required to view that file, the managed app that allows you to view the file opens automatically. If a required app is not available, certain actions, like opening a document or accessing a web link from within a managed document, might not be available.
 
@@ -41,10 +41,10 @@ You get managed apps in a couple of different ways:
 
 -   When your device is enrolled in Microsoft Intune, you either install the app from your Company Portal app or Company Portal website, or your IT admin might install it on your device. To learn about enrolling, see [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) or [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
 
--   You install an app from the App Store and then sign in with your corporate user account that is managed by Intune.
+-   You install an app from the App Store, and then sign in with your corporate user account that is managed by Intune.
 
 ### What can my IT admin manage in an app?
-Here are some examples of options that your IT admin can manage in an app and that can affect your interactions with company data on your device:
+Here are some examples of options that your IT admin can manage in an app, and that can affect your interactions with company data on your device:
 
 -   Access to specific websites
 
@@ -56,7 +56,7 @@ Here are some examples of options that your IT admin can manage in an app and th
 
 -   PIN access requirements
 
--   Your login, using company credentials
+-   Your sign in, using company credentials
 
 -   Ability to back up to the cloud
 
@@ -65,6 +65,4 @@ Here are some examples of options that your IT admin can manage in an app and th
 -   Data encryption requirements
 
 
-Contact your IT admin for more information about the managed apps on your device. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
+Contact your IT admin for more information about the managed apps on your device. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

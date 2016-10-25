@@ -1,4 +1,3 @@
-
 ---
 # required metadata
 
@@ -422,6 +421,32 @@ The return value of this method will tell the SDK if the application will handle
 
  - If true is returned, the application will be responsible for handling the restart.   
  - If false is returned, the SDK will restart the application after this method returns.  The SDK will immediately bring up a dialog telling the user the application must be restarted. 
+
+#Implementing Save-as Controls
+
+Intune allows IT administrators to select which storage locations a managed app can save data to. Apps can query the Intune App SDK for allowed storage locations using the **isSaveToAllowedForLocation** API.
+
+Before saving managed data to a cloud-storage or local locations, apps must check with the **isSaveToAllowedForLocation** API to know if the IT administrator has allowed data to be saved there.
+
+When using the **isSaveToAllowedForLocation** API, apps must pass in the UPN used for the storage location, if it is available.
+
+##Supported Locations
+
+The **isSaveToAllowedForLocation** API provides constants to check the following locations:
+
+* IntuneMAMSaveLocationOther 
+* IntuneMAMSaveLocationOneDriveForBusiness 
+* IntuneMAMSaveLocationSharePoint 
+* IntuneMAMSaveLocationBox 
+* IntuneMAMSaveLocationDropbox 
+* IntuneMAMSaveLocationGoogleDrive 
+* IntuneMAMSaveLocationLocalDrive 
+
+Apps should use the constants in the **isSaveToAllowedForLocation** API to check if data can be saved to locations considered "managed," such as OneDrive for Business, or "personal." Additionally, the API should be used when the app is unable to determine whether a location is "managed" or "personal." 
+
+When a location is known to be "personal," apps should use the **IntuneMAMSaveLocationOther** value. 
+
+The **IntuneMAMSaveLocationLocalDrive** constant should be used when the app is saving data to any location on the local device.
 
 
 

@@ -4,7 +4,7 @@
 title: Monitor MAM policies with Microsoft Intune | Microsoft Intune
 description: See how many users have the policy, drill down to find out more details.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -77,4 +77,5 @@ The detailed view displays the error message, the app that was accessed when the
 ### See also
 [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-[End user experience for MAM enabled app](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [What to expect when your iOS app is managed by MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
