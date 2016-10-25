@@ -42,7 +42,7 @@ The decision to integrate [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]
 
 When you use [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] with [!INCLUDE[cmshort](../includes/cmshort_md.md)], you do not use the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] to manage [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and instead use the [!INCLUDE[cmshort](../includes/cmshort_md.md)] console. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] still uses its cloud storage in Azure to host software that you deploy to devices that you manage with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-For more information, see [Manage Mobile Devices with Configuration Manager and Microsoft Intune](http://msdn.microsoft.com/library/2c6bd0e5-d436-41c8-bf38-30152d76be10) in the [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1 documentation.
+For more information, see [Manage Mobile Devices with Configuration Manager and Microsoft Intune](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) in the [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1 documentation.
 
 ### See also
 [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
