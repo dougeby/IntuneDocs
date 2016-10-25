@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,4 +29,4 @@ ms.suite: ems
 This version of the Company Portal can no longer be used. Install the latest **Company Portal** app from the Windows Store to continue.
 
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

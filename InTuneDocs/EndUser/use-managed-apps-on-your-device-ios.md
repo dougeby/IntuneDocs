@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -65,4 +65,4 @@ Here are some examples of options that your IT admin can manage in an app, and t
 -   Data encryption requirements
 
 
-Contact your IT admin for more information about the managed apps on your device. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Contact your IT admin for more information about the managed apps on your device. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

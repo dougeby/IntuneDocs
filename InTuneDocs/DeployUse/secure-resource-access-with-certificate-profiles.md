@@ -6,7 +6,7 @@ description: Secure VPN, Wi-Fi, and email access with a certificate installed on
 keywords:
 author: Nbigmanms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,6 +34,7 @@ When you give users access to corporate resources through VPN, Wi-Fi, or email p
  -  iOS 8.0 and later
  -  Mac OS X 10.9 and later
  -  Android 4.0 and later
+ -  Android for Work
  -  Windows 8.1 and later
  -  Windows Phone 8.1 and later
 
@@ -41,6 +42,7 @@ When you give users access to corporate resources through VPN, Wi-Fi, or email p
 
   -  iOS 8.0 and later
   -  Android 4.0 and later
+  -  Android for Work
   -  Windows 10 (desktop and mobile) and later
 
   Use a **SCEP Certificate Profile** for devices running these platforms:
