@@ -6,7 +6,7 @@ description: Help your IT admin fix device issues by using verbose logging
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,4 +32,4 @@ When your Android device is enrolled in Intune, you can use *verbose logging* to
 
 To turn verbose logging on or off, sign in to the Company Portal app using your work or school credentials, tap **Settings**, and tap the on/off button next to **Verbose Logging**.
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
