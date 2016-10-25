@@ -6,7 +6,7 @@ description: Provides links to information about how to enroll different devices
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -16,10 +16,10 @@ ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
