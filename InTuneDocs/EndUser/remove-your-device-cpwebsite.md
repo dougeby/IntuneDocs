@@ -44,4 +44,4 @@ To remove your device:
 
 Your device has now been removed.
 
-Still need help? Contact your IT admin. To find your admin's contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
