@@ -6,7 +6,7 @@ description: Find a PFN so that you can configure a per-app VPN.
 keywords:
 author: nbigmanms.author: nbigman
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
