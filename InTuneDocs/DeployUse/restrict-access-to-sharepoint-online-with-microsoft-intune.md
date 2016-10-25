@@ -68,13 +68,12 @@ If a condition is not met, the user is presented with one of the following messa
 ## Support for mobile devices
 - iOS 8.0 and later
 - Android 4.0 and later, Samsung Knox Standard 4.0 or later
-- Android 5.0 and later for Managed Browser
 - Windows Phone 8.1 and later
 
 You can restrict access to SharePoint Online when accessed from a browser from **iOS** and **Android** devices.  Access will only be allowed from only supported browsers on compliant devices:
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS and Android)
+* Managed Browser (iOS and Android 5.0 and later)
 
 **Unsupported browsers will be blocked**.
 

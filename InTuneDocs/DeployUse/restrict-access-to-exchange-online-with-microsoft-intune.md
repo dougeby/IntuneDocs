@@ -71,7 +71,6 @@ The diagram below illustrates the flow used by conditional access policies for E
 You can restrict access to Exchange Online email from **Outlook** and other **apps that use modern authentication**:-
 
 - Android 4.0 and later, Samsung Knox Standard 4.0 and later, and Android for Work
-- Android 5.0 and later for Managed Browser
 - iOS 8.0 and later
 - Windows Phone 8.1 and later
 
@@ -85,7 +84,7 @@ You can restrict access to **Outlook Web Access (OWA)** on Exchange Online when 
 
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS and Android)
+* Managed Browser (iOS and Android 5.0 and later)
 
 **Unsupported browsers will be blocked**.
 
