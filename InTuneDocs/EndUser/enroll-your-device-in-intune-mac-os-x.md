@@ -53,4 +53,4 @@ To enroll your Mac OS X device:
 
 	![management-profile-verified](./media/4-macosx-enroll-done.png)
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

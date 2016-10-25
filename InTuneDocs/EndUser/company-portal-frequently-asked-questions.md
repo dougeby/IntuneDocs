@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -71,9 +71,6 @@ To learn about what your IT administrator can and can't see on your device, use 
 	-   Windows 10 Desktop
 	-   Windows Phone 8.1
 	-   Windows 8.1
-	-   iPhones, iPads, and Mac OS X
-	-   Android mobile devices
-
 
 ## Can you remove a computer or device from the Company Portal?
 You can either remove or reset a computer or device from the Company Portal. There is a difference between **remove** and **reset**.
@@ -99,4 +96,4 @@ To see how to reset your device, choose one of the following links:
 For you to be able to see a device, it must first be added to the Company Portal. Go to the Company Portal as directed by your administrator and follow the steps for your device. You also won’t see devices that are owned and managed by your company.
 
 ## If you have questions, contact your IT administrator
-If you need help, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you need help, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,4 +28,4 @@ ms.suite: ems
 
 # Windows device doesn't comply with the setting for the latest operating system version
 
-Your IT administrator has set the latest version of the operating system that you are allowed to have on your Windows device, but your device doesn't comply with that setting. To find out what the latest allowed operating system is for your device, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Your IT administrator has set the latest version of the operating system that you are allowed to have on your Windows device, but your device doesn't comply with that setting. To find out what the latest allowed operating system is for your device, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

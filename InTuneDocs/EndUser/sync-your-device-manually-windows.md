@@ -29,7 +29,7 @@ ms.suite: ems
 # Sync your Windows device manually
 If your app installation is taking too long, you can try manually syncing your Windows device. Syncing manually might help to speed up the installation.
 
-Only the following versions are supported. Use the instructions that match the type of device that you have.
+Only the following versions are supported. If your device isn't listed, sync isn't supported. Use the instructions that match the type of device that you have.
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 desktop](#windows-10-desktop)
@@ -130,4 +130,4 @@ To manually sync your Windows Phone 8.1 device to speed up a slow app installati
 
    The message “We’re synching your account” appears at the top of the screen until your device finishes syncing.
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
