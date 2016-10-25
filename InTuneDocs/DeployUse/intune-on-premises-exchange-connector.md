@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Exchange connector for on-premises EAS | Microsoft Intune
-description: Use the Connector tool to enable communication between the Intune admin console and on-premises Exchange Server for Exchange ActiveSync MDM.
+title: Exchange connector for On-premises EAS | Microsoft Intune
+description: Use the Connector tool to enable communication between the Intune admin console and On-premises Exchange Server for Exchange ActiveSync MDM.
 keywords:
 author: NathBarn
 manager: angrobe
@@ -25,17 +25,17 @@ ms.suite: ems
 
 ---
 
-# Install the Intune on-premises Exchange Connector
+# Install the Intune On-premises Exchange Connector
 
 
-To set up a connection that enables Microsoft Intune to communicate with the Exchange Server that hosts the mailboxes for the mobile devices, you must download and configure the on-premises Connector from the Intune administration console. Intune only supports one Exchange Connector connection of any type per subscription.
+To set up a connection that enables Microsoft Intune to communicate with the Exchange Server that hosts the mailboxes for the mobile devices, you must download and configure the On-premises Connector from the Intune administration console. Intune only supports one Exchange Connector connection of any type per subscription.
 
 ## On-premises Exchange Connector requirements
-The following table lists the requirements for the computer on which you install the on-premises Exchange Connector.
+The following table lists the requirements for the computer on which you install the On-premises Exchange Connector.
 
 |Requirement|More information|
 |---------------|--------------------|
-|Operating systems|Intune supports the on-premises Exchange Connector on a computer that runs any edition of Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.<br /><br />The Connector is not supported on any Server Core installation.|
+|Operating systems|Intune supports the On-premises Exchange Connector on a computer that runs any edition of Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.<br /><br />The Connector is not supported on any Server Core installation.|
 |Microsoft Exchange|On-premises Connectors require Microsoft Exchange 2010 SP1 or later or legacy Exchange Online Dedicated. To determine if your Exchange Online Dedicated environment is in the **new** or **legacy** configuration, contact your account manager.|
 |Mobile device management authority| [Set the mobile device management authority to Intune](prerequisites-for-enrollment.md#set-mobile-device-management-authority).|
 |Hardware|The computer on which you install the connector requires a 1.6 GHz CPU with 2 GB of RAM and 10 GB of free disk space.|
@@ -62,35 +62,35 @@ You must create an Active Directory user account that is used by the Intune Exch
  -   Set-ADServerSettings
  -   Get-Command
 
-## Download the on-premises Exchange Connector software installation package
+## Download the On-premises Exchange Connector software installation package
 
-1. On a supported Windows Server operating system for the on-premises Exchange Connector, open the [Microsoft Intune administration console](http://manage.microsoft.com) (http://manage.microsoft.com) with a user account that is an administrator in the Exchange tenant and that has a license to use Exchange Server.
+1. On a supported Windows Server operating system for the On-premises Exchange Connector, open the [Microsoft Intune administration console](http://manage.microsoft.com) (http://manage.microsoft.com) with a user account that is an administrator in the Exchange tenant and that has a license to use Exchange Server.
 ![Open set up Exchange Connection](../media/ExchangeConnector.gif)
 
 2.  In the workspace shortcuts pane, choose **Admin**>**Mobile Device Management** > **Microsoft Exchange**>**Setup Exchange Connection**.
 
 3.  On the **Setup Exchange Connection** page, choose **Download On-Premises Connector**.
 
-4.  The on-premises Exchange Connector is contained in a compressed (.zip) folder that can be opened or saved. In the **File Download** dialog box, choose **Save** to store the compressed folder to a secure location.
+4.  The On-premises Exchange Connector is contained in a compressed (.zip) folder that can be opened or saved. In the **File Download** dialog box, choose **Save** to store the compressed folder to a secure location.
 
 > [!IMPORTANT]
-> Do not rename or move the files that are in the on-premises Exchange Connector folder. Moving or renaming the folder's contents will cause the installation to fail.
+> Do not rename or move the files that are in the On-premises Exchange Connector folder. Moving or renaming the folder's contents will cause the installation to fail.
 
-## Install and configure the Intune on-premises Exchange Connector
-Perform the following steps to install the Intune on-premises Exchange Connector. The on-premises Exchange Connector can only be installed once per Intune subscription, and only on one computer. If you try to configure an additional on-premises Exchange Connector, the new connection will replace the original one.
+## Install and configure the Intune On-premises Exchange Connector
+Perform the following steps to install the Intune On-premises Exchange Connector. The On-premises Exchange Connector can only be installed once per Intune subscription, and only on one computer. If you try to configure an additional On-premises Exchange Connector, the new connection will replace the original one.
 
-1.  On a supported operating system for the on-premises Connector, extract the files in **Exchange_Connector_Setup.zip** to a secure location.
+1.  On a supported operating system for the On-premises Connector, extract the files in **Exchange_Connector_Setup.zip** to a secure location.
 
-2.  After the files are extracted, open the extracted folder and double-click **Exchange_Connector_Setup.exe** to install the on-premises Exchange Connector.
+2.  After the files are extracted, open the extracted folder and double-click **Exchange_Connector_Setup.exe** to install the On-premises Exchange Connector.
 
     > [!IMPORTANT]
-    > If the destination folder is not a secure location, you should delete the certificate file **WindowsIntune.accountcert** after you install the on-premises Connector.
+    > If the destination folder is not a secure location, you should delete the certificate file **WindowsIntune.accountcert** after you install the On-premises Connector.
 
 3.  In the **Microsoft Intune Exchange Connector** dialog box, select either **On-premises Microsoft Exchange Server** or **Hosted Microsoft Exchange Server**.
 
   ![Choose your Exchange Server type](../media/IntuneSA1dconfigureExchConnector.png)
 
-  For an on-premises Exchange server, provide either the server name or the fully-qualified domain name of the Exchange server that hosts the **Client Access Server** role.
+  For an On-premises Exchange server, provide either the server name or the fully-qualified domain name of the Exchange server that hosts the **Client Access Server** role.
 
   For a hosted Exchange server, provide the Exchange server address. To find the hosted Exchange server URL:
 
@@ -126,7 +126,7 @@ During configuration, the Exchange Connector stores your proxy settings to enabl
 After the Exchange Connector sets up the connection, mobile devices that are associated with users that are managed in Exchange Connector are automatically synchronized and added to the Exchange Connector. This synchronization might take some time to complete.
 
 > [!NOTE]
-> If you have installed the on-premises Exchange Connector, and if at some point you delete the Exchange connection, you must uninstall the on-premises Exchange Connector from the computer onto which it was installed.
+> If you have installed the On-premises Exchange Connector, and if at some point you delete the Exchange connection, you must uninstall the On-premises Exchange Connector from the computer onto which it was installed.
 
 ## Validate the Exchange connection
 
