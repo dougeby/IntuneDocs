@@ -4,7 +4,7 @@ description: Create and deploy .PFX certificate profiles.
 keywords:
 author: nbigmanms.author: nbigman
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
