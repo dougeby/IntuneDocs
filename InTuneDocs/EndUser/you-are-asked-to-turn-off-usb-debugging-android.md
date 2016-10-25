@@ -4,9 +4,9 @@
 title: You are asked to turn off USB debugging | Microsoft Intune
 description:
 keywords:
-author: staciebarker
+author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,12 +29,10 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 If you see the message, “USB debugging must be disabled,” you need to go to **Settings** > **Developer options**, and turn off **USB debugging**.
 
-Your IT administrator requires this setting to be turned off to protect the corporate data on your Android device.
+Your IT admin requires this setting to be turned off to protect the corporate data on your Android device.
 
-If **USB debugging** is turned on, your device data is less safe when you have a USB device connected.
+If **USB debugging** is turned on, your device data is less safe when you have a connected USB device.
 
-Once you turn off **USB debugging**, it may take a few minutes before you can continue to use your Android device to access company or school data.
+After you turn off **USB debugging**, it may take a few minutes before you can continue to use your Android device to access company or school data.
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

@@ -4,9 +4,9 @@
 title: Enroll your Windows 10 device in Intune | Microsoft Intune
 description: Describes how to enroll a Windows 10 mobile or desktop device in Intune
 keywords:
-author: Staciebarker
+author: Staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +49,7 @@ To enroll your Windows 10 Mobile or Windows 10 desktop device:
 
 ## Steps to follow if you see Access work or school
 
-1.  Tap **Access work or school**.
+1.  Tap **Access work or school**, and then tap **Connect**.
 
     ![Tap Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 

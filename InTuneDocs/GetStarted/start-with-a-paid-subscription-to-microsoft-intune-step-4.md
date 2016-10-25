@@ -4,7 +4,7 @@
 title: Manage Intune licenses | Microsoft Intune
 description: Explains how to assign licenses to users for your Intune subscription
 keywords:
-author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

@@ -4,7 +4,7 @@
 title: Microsoft Intune Company Portal Application License Terms | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: Staciebarkerms.author: stabar
 manager: arob98
 ms.date: 08/24/2016
 ms.topic: article

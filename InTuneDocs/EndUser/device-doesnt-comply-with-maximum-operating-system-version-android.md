@@ -4,9 +4,9 @@
 title: Android device doesn't comply with the maximum operating system version | Microsoft Intune
 description:
 keywords:
-author: staciebarker
+author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,6 @@ ms.suite: ems
 
 # Android device doesn't comply with the maximum operating system version
 
-Your Android device does not comply with your IT admin's policy for the maximum version of the operating system. Contact your IT administrator for help. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Your Android device does not comply with your IT admin's policy for the maximum version of the operating system. Contact your IT administrator for help. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 

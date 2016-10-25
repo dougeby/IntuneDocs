@@ -4,7 +4,7 @@
 title: Restrict access to SharePoint Online | Microsoft Intune
 description: Protect and control access to  company data on SharePoint Online with conditional access.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
@@ -41,7 +41,8 @@ When a user attempts to connect to a file using a supported app such as OneDrive
 
 **Before** configuring a conditional access policy for SharePoint Online, you must:
 - Have a **SharePoint Online subscription** and users must be licensed for SharePoint Online.
-- Have a subscription for the **Enterprise Mobility Suite** or **Azure Active Directory Premium**.
+- Have an **Enterprise Mobility + Security or an Azure Active Directory premium subscription**, and the users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+
 
   To connect to the required files, the device must:
 -   Be **enrolled** with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or a domain-joined PC.
