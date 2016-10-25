@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -89,4 +89,4 @@ When you remove your Windows RT device, the following happens:
 
 -   Any settings that were changed on your device when you added it (for example, disabling the camera or requiring a certain password length) no longer apply.
 
-If you have questions, contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you have questions, contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
