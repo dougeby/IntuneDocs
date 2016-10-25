@@ -4,7 +4,7 @@
 title: Next steps after your Intune evaluation is completed | Microsoft Intune
 description: What you need to know about subscriptions and licensing after you set up your free, 30-day evaluation of Intune
 keywords:
-author: lindavr
+author: lindavrms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

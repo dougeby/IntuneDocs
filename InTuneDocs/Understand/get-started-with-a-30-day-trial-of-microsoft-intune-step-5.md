@@ -4,7 +4,7 @@
 title: Enroll evaluation mobile devices | Microsoft Intune
 description: How to enroll mobile devices and install an app when you sign up for a free, 30-day evaluation of Intune
 keywords:
-author: lindavr
+author: lindavrms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -55,16 +55,10 @@ Install the **Intune Company Portal** app from Microsoft Corporation, available 
 ### Windows Phone 8.1
 Users install the **Company Portal** app from Microsoft Corporation, available in the Windows Phone store, and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
 
- ### Windows Phone 8.0
- Users click **system settings** &gt; **company apps**, and sign in with Intune user credentials added above. The Company Portal app is deployed to your phone.
-
-If prompted for a **Server address**, type “manage.microsoft.com”.
-
-
 ## Install the previously deployed app
 Open the Company Portal on the mobile device, choose **Apps**, and then install **Microsoft Skype**.
 
-To learn more about mobile device management using Intune, see [Get ready to enroll devices in Microsoft Intune](/Intune/deploy-use/prerequisites-for-enrollment.md).
+To learn more about mobile device management using Intune, see [Get ready to enroll devices in Microsoft Intune](/Intune/deploy-use/prerequisites-for-enrollment).
 
 ### Next steps
 Congratulations! You have just completed step 5 of the *Microsoft Intune evaluation* walkthrough.
