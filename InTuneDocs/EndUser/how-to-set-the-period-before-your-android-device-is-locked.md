@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,4 +44,4 @@ To reconnect to your work, you’ll need to set the password timeout on your dev
 
 2.  Select a password timeout value.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

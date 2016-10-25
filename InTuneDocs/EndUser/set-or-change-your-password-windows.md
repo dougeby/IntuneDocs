@@ -48,4 +48,4 @@ If you have trouble setting a password that meets all of the password requiremen
 3. Enter your new password in the **New password** box, and then reenter it in the **Confirm password** box.
 4. Choose **done**.
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

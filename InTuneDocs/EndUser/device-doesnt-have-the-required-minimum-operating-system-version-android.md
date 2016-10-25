@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,5 +30,5 @@ ms.suite: ems
 
 Your Android device doesn’t meet the minimum operating system version required by your IT department. Before updating your device, check the current operating system version by tapping **Settings** &gt; **About phone**, and then check to see if an update is available for your device by tapping **Settings**, and then finding the update option.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
