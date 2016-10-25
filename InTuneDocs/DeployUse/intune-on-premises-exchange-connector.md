@@ -28,7 +28,7 @@ ms.suite: ems
 # Install the Intune On-premises Exchange Connector
 
 
-To set up a connection that enables Microsoft Intune to communicate with the Exchange Server that hosts the mailboxes for the mobile devices, you must download and configure the On-premises Connector from the Intune administration console. Intune only supports one Exchange Connector connection of any type per subscription.
+To set up a connection that enables Microsoft Intune to communicate with the Exchange Server that hosts the mailboxes for the mobile devices, you must download and configure the On-premises Exchange Connector from the Intune administration console. Intune only supports one Exchange Connector connection of any type per subscription.
 
 ## On-premises Exchange Connector requirements
 The following table lists the requirements for the computer on which you install the On-premises Exchange Connector.
