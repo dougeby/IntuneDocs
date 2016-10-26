@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage Intune licenses | Microsoft Intune
-description: Explains how to assign licenses to users for your Intune subscription
+description: Assign licenses to users for your Intune subscription
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe

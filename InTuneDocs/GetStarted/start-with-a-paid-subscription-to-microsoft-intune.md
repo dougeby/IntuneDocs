@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Intune quick start guide
-This quick start guide leads you through the steps of setting up a paid subscription of Microsoft Intune to quickly and easily managing the mobile devices and Windows PCs that your organization uses. You can follow each step in order, or just skip ahead if a step is not applicable to your specific environment or business needs.
+This quick start guide leads you through the steps of setting up a paid subscription of Microsoft Intune to quickly and easily manage the mobile devices and Windows PCs that your organization uses. You can follow each step in order, or just skip ahead if a step is not applicable to your specific environment or business needs.
 
 >[!NOTE]
 >This article focuses on setting up Intune as a standalone service. Alternatively, if you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [extend Configuration Manager to manage mobile devices](https://technet.microsoft.com/library/jj884158.aspx). You can do this by connecting Intune with Configuration Manager in a hybrid mobile device management (MDM) deployment.

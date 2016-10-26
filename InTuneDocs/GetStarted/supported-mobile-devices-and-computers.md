@@ -29,7 +29,7 @@ ms.suite: ems
 
 Before you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
-You can enroll, then manage the following device types:
+You can enroll then manage the following device types:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create policies and publish an app | Microsoft Intune
-description: Explains how to create policies and publish an example app for your Intune subscription
+description: Create policies and publish an example app for your Intune subscription
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe

@@ -38,7 +38,7 @@ The following sections explain these accounts and portals.
 
 ## Administrator accounts and user accounts with special permissions
 
-Below are the accounts and permissions that you'll use for Intune.
+Below are the accounts and permissions that you will use for Intune.
 
 ### Tenant administrator
 |Permission levels|More information|

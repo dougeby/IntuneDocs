@@ -2,7 +2,7 @@
 # required metadata
 
 title: What to know before you start Microsoft Intune | Microsoft Intune
-description: Page with links to Intune prerequisites and requirements
+description: Links to Intune prerequisites and requirements
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe

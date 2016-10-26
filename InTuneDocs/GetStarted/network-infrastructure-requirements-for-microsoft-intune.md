@@ -35,7 +35,7 @@ There is no requirement to use on-premises infrastructure (like a server where y
 To manage computers that are behind firewalls and proxy servers, you must set up firewalls and proxy servers to allow communications for Intune.
 
 ## Requirements for firewalls, ports, and domains
-Managed devices require configurations that let **All Users** access various services through firewalls.
+Managed devices require configurations that let **All Users** access services through firewalls.
 
 The following table lists the ports and services that the Intune client accesses.
 
