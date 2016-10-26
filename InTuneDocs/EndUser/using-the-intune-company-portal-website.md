@@ -4,7 +4,7 @@
 title: Using the Intune Company Portal website | Microsoft Intune
 description: Describes the Company Portal website and provides links to steps for tasks that end users can do on the website
 keywords:
-author: barlanms.author: barlan
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

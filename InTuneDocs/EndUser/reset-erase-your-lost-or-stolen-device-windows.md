@@ -4,7 +4,7 @@
 title: Reset (erase) your lost or stolen Windows device | Microsoft Intune
 description: Reset a lost or stolen Windows device
 keywords:
-author: barlanms.author: barlan
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

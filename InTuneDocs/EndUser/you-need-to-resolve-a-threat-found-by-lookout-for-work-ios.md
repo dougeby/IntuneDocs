@@ -4,7 +4,7 @@
 title: You need to resolve a threat that Lookout for Work found on your iOS device | Microsoft Intune
 description:
 keywords:
-author: barlanms.author: barlan
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article
