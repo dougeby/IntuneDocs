@@ -4,7 +4,7 @@
 title: Microsoft Intune Company Portal | Microsoft Intune
 description: set up Intune Company Portal
 keywords:
-author: barlanmsftms.author: barlan
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

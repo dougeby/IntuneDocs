@@ -4,7 +4,7 @@
 title: Customize the Company Portal | Microsoft Intune
 description: Explains how to customize the Company Portal for your Intune subscription
 keywords:
-author: barlanmsftms.author: barlan
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article
