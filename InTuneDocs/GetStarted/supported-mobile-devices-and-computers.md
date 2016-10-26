@@ -4,7 +4,8 @@
 title: Supported mobile devices and computers | Microsoft Intune
 description: Mobile devices and computers that Intune supports
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/26/2016
 ms.topic: get-started-article
@@ -39,11 +40,11 @@ You can enroll then manage the following device types:
 >
 >The model numbers affected are:
 >
->SM-G313HU
->SM-G313HY
->SM-G313M
->SM-G313MY
->SM-G313U
+>SM-G313HU<br>
+>SM-G313HY<br>
+>SM-G313M<br>
+>SM-G313MY<br>
+>SM-G313U<br>
 
 Enrolling devices provides [these capabilities](/Intune/get-started/choose-how-to-manage-devices).
 
