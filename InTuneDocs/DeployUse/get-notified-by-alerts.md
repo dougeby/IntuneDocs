@@ -6,7 +6,7 @@ description: Learn how alerts keep you in touch with what's happening in Microso
 keywords:
 author: Nbigmanms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

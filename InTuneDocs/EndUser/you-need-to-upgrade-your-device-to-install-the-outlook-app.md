@@ -3,7 +3,7 @@
 title: You need to upgrade your device to install the Outlook app | Microsoft Intune
 description:
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -35,3 +35,5 @@ Go to **Settings**, and then use the **update** or **system update** option.
 
 ## To upgrade your iOS device
 Tap **Settings** &gt; **General** &gt; **Software Update**.
+
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

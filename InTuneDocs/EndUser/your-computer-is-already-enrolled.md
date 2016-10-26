@@ -4,7 +4,7 @@
 title: Your computer is already enrolled | Microsoft Intune
 description:
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -40,4 +40,4 @@ To link your computer:
 
 If you prefer to unenroll your device, use the instructions for the type of device you have: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md), or [Windows](unenroll-your-device-from-intune-windows.md).
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

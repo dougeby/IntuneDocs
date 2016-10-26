@@ -4,9 +4,9 @@
 title: Unenroll your device from Intune if you declined "Terms of Use" | Microsoft Intune
 description: Describes how to unenroll an Android device from Intune if you declined the terms of use and cannot sign in to the Company Portal app
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Unenroll your device from Intune if you declined "Terms of Use"
 
-The best way to unenroll your Android device is to accept the terms of use, sign in to the Company Portal app, and then use [these instructions](unenroll-your-device-from-intune-android.md) to unenroll. However, if you declined the terms of use while trying to sign in to the Company Portal app, you are prevented from signing in to the Company Portal app on future tries. In this case, you should use these "workaround" instructions to unenroll your device.
+The best way to unenroll your Android device is to accept the terms of use, sign in to the Company Portal app, and then use [these instructions](unenroll-your-device-from-intune-android.md) to unenroll. However, if you declined the terms of use while trying to sign in to the Company Portal app, you are prevented from signing in to the Company Portal app on future tries, so you need to use these "workaround" instructions to unenroll your device.
 
 When you uninstall the Company Portal app, you are also unenrolling your device from Intune. Your device will no longer be able to access company resources. For more about what happens when you unenroll, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
@@ -44,4 +44,4 @@ To unenroll your device from Intune and uninstall the Company Portal app:
 
     You can now uninstall the Company Portal app.
 
-Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
+Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the [Microsoft Android team](mailto:wintunedroidfbk@microsoft.com).

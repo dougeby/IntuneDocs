@@ -2,11 +2,11 @@
 # required metadata
 
 title: Using your Android device with Intune | Microsoft Intune
-description: List of links to tasks that you can do on your Android mobile device when the device is enrolled in Intune
+description: List of links to tasks that end users can do on their Android mobile device when the device is enrolled in Intune
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Using your Android device with Intune
 
-This article includes links to all of the tasks that end users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users must take to do a variety of tasks, which are grouped into the following categories:
+This article includes links to all of the tasks that end users can do on their Intune-managed devices. IT admins can refer to this information to see the steps that users must take to do a variety of tasks, which are grouped into the following categories:
 
 - Company Portal app installation and Intune enrollment
 - Post-enrollment management tasks
@@ -36,15 +36,15 @@ This article includes links to all of the tasks that end users can do on their I
 
 ## Company Portal app installation and Intune enrollment
 
-The information in this section helps you with Intune Company Portal installation and device enrollment for Android devices.
+The information in this section helps users with Intune Company Portal installation and device enrollment for Android devices.
 
 - [Enroll your device in Intune](enroll-your-device-in-Intune-android.md)
 - [Create a work profile and enroll your device in Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## Things you can do when your device is enrolled in Intune
+## Things users can do when their device is enrolled in Intune
 
-The information in this section helps you with actions you can take after your Android device is enrolled in Intune.
+The information in this section helps users with actions they can take after their Android device is enrolled in Intune.
 
 - [Use managed apps on your device](use-managed-apps-on-your-device-android.md)
 - [Encrypt your device](encrypt-your-device-android.md)
@@ -59,9 +59,9 @@ The information in this section helps you with actions you can take after your A
 - [What happens if you reset your Android device using the Company Portal app?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
-## Fix issues with your device
+## Steps to fix device and compliance issues
 
-The information in this section helps you fix issues that you might encounter when your Android device is enrolled in Intune.
+The information in this section helps users fix issues that they might encounter when their Android device is enrolled in Intune.
 
 - [Use Verbose Logging to help your IT administrator fix device issues](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Send diagnostic data logs to your IT administrator using email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)

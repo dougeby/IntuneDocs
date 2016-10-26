@@ -4,9 +4,9 @@
 title: Sync your iOS device manually | Microsoft Intune
 description:
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Sync your iOS device manually
 
-If your app installation is taking too long, use the following instructions to manually sync your iOS device. Syncing manually might help to speed up the installation. The sync feature applies only to iOS, not to Mac OS X.
+If your app installation is taking too long, you can try syncing your device manually. Syncing manually might help to speed up the installation. The sync feature applies only to iOS, not to Mac OS X.
 
 1. Open the iOS Company Portal app.
 
@@ -42,4 +42,4 @@ If your app installation is taking too long, use the following instructions to m
 
 A spinning circle appears on the screen until the sync is finished.
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

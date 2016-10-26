@@ -4,9 +4,9 @@
 title: Use managed apps on your Android device | Microsoft Intune
 description:
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,4 +76,4 @@ Some common apps that your IT department might manage are:
 
 -   Microsoft Word, Excel, and PowerPoint
 
-Contact your IT admin for more information about the managed apps on your device. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Contact your IT admin for more information about the managed apps on your device. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

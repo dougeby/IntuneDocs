@@ -4,7 +4,7 @@
 title: Password does not meet IT administrator requirements | Microsoft Intune
 description:
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
 ms.date: 10/20/2016
 ms.topic: article
@@ -52,4 +52,4 @@ PIN or password issue descriptions:
 
 - **Password isn't complex enough to meet requirements**. Your IT admin requires you to use more complex characters in your password. Try using characters like numbers, capital letters, and symbols like $, %, and #. 
 
-If you have trouble figuring out how to make your password comply with the requirements, contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you have trouble figuring out how to make your password comply with the requirements, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

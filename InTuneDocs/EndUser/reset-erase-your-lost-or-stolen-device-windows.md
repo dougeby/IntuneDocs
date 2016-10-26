@@ -4,7 +4,7 @@
 title: Reset (erase) your lost or stolen Windows device | Microsoft Intune
 description: Reset a lost or stolen Windows device
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -41,4 +41,4 @@ If a device that has been enrolled in Intune is lost or stolen, you can reset it
 
 3.  Tap the **Reset** icon, and then tap **reset**.
 
-If you are unable to reset your lost or stolen device, contact IT to reset it for you. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you are unable to reset your lost or stolen device, contact IT to reset it for you. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
