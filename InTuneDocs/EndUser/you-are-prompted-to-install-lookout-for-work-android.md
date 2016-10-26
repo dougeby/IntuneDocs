@@ -4,7 +4,7 @@
 title: You are prompted to install Lookout for Work on your Android device | Microsoft Intune
 description:
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article

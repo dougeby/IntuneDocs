@@ -4,7 +4,7 @@
 title: Device doesn't have Code Integrity enabled | Microsoft Intune
 description:
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

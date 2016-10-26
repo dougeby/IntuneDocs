@@ -4,7 +4,7 @@
 title: Set or change your passcode | Microsoft Intune
 description: Set or change your passcode
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
