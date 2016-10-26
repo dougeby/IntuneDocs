@@ -6,7 +6,7 @@ description: Mobile devices and computers that Intune supports
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/26/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,6 +32,18 @@ Before you set up Microsoft Intune, review this topic and other requirements lis
 You can enroll then manage the following device types:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+
+>[!IMPORTANT]
+>Certain models of the Samsung Galaxy Ace phone cannot be managed by Intune as Samsung KNOX devices. 
+>When you enroll these devices with Intune, they will instead be managed as standard Android devices.
+>
+>The model numbers affected are:
+>
+>SM-G313HU
+>SM-G313HY
+>SM-G313M
+>SM-G313MY
+>SM-G313U
 
 Enrolling devices provides [these capabilities](/Intune/get-started/choose-how-to-manage-devices).
 
