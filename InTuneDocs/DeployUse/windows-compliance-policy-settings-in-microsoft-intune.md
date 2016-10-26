@@ -6,7 +6,7 @@ description: This topic described the rules and settings you can configure for a
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

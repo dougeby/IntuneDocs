@@ -6,7 +6,7 @@ description: What to do when your users fail to get access to resources through 
 keywords:
 author: karaman
 manager: angrobe
-ms.date: 07/24/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

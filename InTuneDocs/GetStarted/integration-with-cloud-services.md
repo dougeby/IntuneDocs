@@ -4,7 +4,7 @@
 title: Intune integration with Microsoft cloud services | Microsoft Intune
 description: Intune integration with Microsoft cloud services and products and with other Microsoft products
 keywords:
-author: barlanmsftms.author: barlan
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -31,7 +31,7 @@ Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], revi
 ##Integration with other Microsoft cloud services
 
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] shares a common foundation with other Microsoft cloud services. When you use the same account to subscribe to multiple cloud services, those services use the same Microsoft Azure AD infrastructure, and they are tenants of Azure AD. Azure AD provides the core directory and identity management capabilities for Microsoft cloud services.
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] shares a common foundation with other Microsoft cloud services. When you use the same account to subscribe to multiple cloud services, those services use your same Microsoft Azure AD infrastructure, and they are tenants of Azure AD. Azure AD provides the core directory and identity management capabilities for Microsoft cloud services.
 
 Learn more about [administering Azure AD ](http://technet.microsoft.com/library/hh967611.aspx) in the TechNet Library.
 

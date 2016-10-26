@@ -32,5 +32,10 @@ To block access to these apps we recommend the following:
 
 * Setup ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
 
+>[!IMPORTANT]
+>MAM CA must not be used with Azure Active Directory (Azure AD) certificate based authentication. You can only have one of these configured at a time.
+
+
+
 ### See also
 [Allow only apps supported by Intune to access O365 services](allow-policy-managed-apps-access-to-o365.md)

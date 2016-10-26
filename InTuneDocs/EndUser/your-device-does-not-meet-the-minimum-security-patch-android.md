@@ -4,7 +4,7 @@
 title: Your device does not meet the minimum security patch | Microsoft Intune
 description:
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
 ms.date: 09/25/2016
 ms.topic: article

@@ -4,7 +4,7 @@
 title: Microsoft Intune Company Portal | Microsoft Intune
 description: set up Intune Company Portal
 keywords:
-author: barlanmsftms.author: barlan
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article
@@ -29,7 +29,7 @@ ms.suite: ems
 
 Before you set up Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
-The Intune Company Portal is a tool that provides users with access to company data and apps. The Company Portal is available in two forms:
+The Intune Company Portal provides users with access to company data and apps. The Company Portal is available in two forms:
 
 -   **The Company Portal app**: An application that is available on devices you manage with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Learn more about the Company Portal apps for [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
 , and [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
