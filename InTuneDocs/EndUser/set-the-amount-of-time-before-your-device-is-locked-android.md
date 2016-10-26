@@ -4,7 +4,7 @@
 title: Set the amount of time before your device is locked | Microsoft Intune
 description:
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

@@ -4,7 +4,7 @@
 title: Use Verbose Logging to help your IT admin fix device issues | Microsoft Intune
 description: Help your IT admin fix device issues by using verbose logging
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

@@ -4,7 +4,7 @@
 title: Troubleshoot your Windows 10 device enrollment | Microsoft Intune
 description:
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
