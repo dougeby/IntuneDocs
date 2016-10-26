@@ -49,7 +49,7 @@ All methods, except those in which users install the Intune client software them
 2.  On the **Client Software Download** page, click **Download Client Software**. Then save the **Microsoft_Intune_Setup.zip** package that contains the software to a secure location on your network.
 
     > [!NOTE]
-    > The Intune client software installation package contains information about your account. If unauthorized users gain access to the installation package, they can enroll computers to the account that is represented by its embedded certificate.
+    > The Intune client software installation package contains information about your account. If unauthorized users gain access to the installation package, they can enroll computers to the account that is represented by its embedded certificate and might gain access to company resources.
 
 3.  Extract the contents of the installation package to the secure location on your network.
 
@@ -112,7 +112,7 @@ The Intune Automatic Enrollment Task, the **WindowsIntuneEnrollPending** registr
 
 ## Instruct users to self-enroll
 
-Users can install the Intune client software by going to  [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com). If the web portal can detect that the device is a Windows PC, it will to prompt users to enroll the PC by downloading the Intune software client. Once the software has been downloaded, users can install it to bring their PCs into management.
+Users can install the Intune client software by going to  [the Company Portal website](http://portal..manage.microsoft.com). If the web portal can detect that the device is a Windows PC, it will to prompt users to enroll the PC by downloading the Intune software client. Once the software has been downloaded, users can install it to bring their PCs into management.
 
 ![Intune Portal prompting to you to download the Intune software client](../media/software-client-download.png)
 
