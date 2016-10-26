@@ -6,7 +6,7 @@ description: Use Microsoft Intune device group mapping to group devices into cat
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 10/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: sumitp
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -50,8 +50,8 @@ Based on your feedback, we are in the process of unifying the grouping and targe
 
 Due to the phased implementation of Azure Active Directory-based security groups, you must open the **Groups** workspace in the [Intune administration console](https://manage.microsoft.com) to identify which procedure to use:
 
--  If you see a link to the Azure portal, then you are no longer using Intune groups. Follow the [How to configure device group mapping (for Azure Active Directory groups)](##How-to-configure-device-group-mapping-(for-Azure-Active-Directory-groups) procedure below.
--  If you do not see a link to the Azure portal, then you are still using Intune groups. Follow the [How to configure device group mapping (for Intune groups)](##How-to-configure-device-group-mapping-(for-Intune-groups) procedure below.
+-  If you see a link to the Azure portal, then you are no longer using Intune groups. Follow the [How to configure device group mapping (for Azure Active Directory groups)](##How-to-configure-device-group-mapping-for-Azure-Active-Directory-groups) procedure below.
+-  If you do not see a link to the Azure portal, then you are still using Intune groups. Follow the [How to configure device group mapping (for Intune groups)](##How-to-configure-device-group-mapping-for-Intune-groups) procedure below.
 
 ## How to configure device group mapping for Intune groups
 1. For each device category you want to use, create an Intune device group, or identify an existing group. For information about how to create groups, see [Use groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
