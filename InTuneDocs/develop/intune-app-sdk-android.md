@@ -316,7 +316,7 @@ The following notifications are sent to the app and some of them may require app
 
 ## Protecting Backup data 
 
-As of Android Marshmallow (API 23), Android has two ways for an app to back up its data. Each option is available to your app and requires different steps to ensure that Intune data protection is correctly implemented. You can review the table below on corresponding actions required for correct data protection behavior.  You can read more about the backup methods in the official [Android API guide](http://developer.android.com/guide/topics/data/backup.html). 
+As of Android Marshmallow (API 23), Android has two ways for an app to back up its data. Each option is available to your app and requires different steps to ensure that Intune data protection is correctly implemented. You can review the table below on corresponding actions required for correct data protection behavior.  You can read more about the backup methods in the [Android API guide](http://developer.android.com/guide/topics/data/backup.html). 
 
 ### Auto Backup for Apps
 
