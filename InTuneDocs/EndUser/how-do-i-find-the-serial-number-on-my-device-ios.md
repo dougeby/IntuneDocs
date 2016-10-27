@@ -4,7 +4,7 @@
 title: How do I find the serial number on my device? | Microsoft Intune
 description:
 keywords:
-author: barlanms.author: barlan
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

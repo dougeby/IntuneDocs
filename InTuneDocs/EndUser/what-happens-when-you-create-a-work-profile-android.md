@@ -4,7 +4,7 @@
 title: What happens when you create a work profile | Microsoft Intune
 description: Describes how to encrypt an Android device
 keywords:
-author: barlanms.author: barlan
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
