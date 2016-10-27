@@ -4,7 +4,7 @@
 title: Your computer is already enrolled | Microsoft Intune
 description:
 keywords:
-author: barlanms.author: barlan
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

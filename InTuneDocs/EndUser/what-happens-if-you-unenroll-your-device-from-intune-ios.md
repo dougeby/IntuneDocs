@@ -4,7 +4,7 @@
 title: What happens if you unenroll your iOS device from Intune? | Microsoft Intune
 description:
 keywords:
-author: barlanms.author: barlan
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
