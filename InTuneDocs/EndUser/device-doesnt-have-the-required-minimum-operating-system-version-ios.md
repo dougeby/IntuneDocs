@@ -4,7 +4,7 @@
 title: iOS device doesn't have the required minimum operating system version | Microsoft Intune
 description:
 keywords:
-author: barlanms.author: barlan
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

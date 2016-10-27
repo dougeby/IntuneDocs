@@ -4,7 +4,7 @@
 title: Install and sign in to the Intune Company Portal app | Microsoft Intune
 description:
 keywords:
-author: barlanms.author: barlan
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

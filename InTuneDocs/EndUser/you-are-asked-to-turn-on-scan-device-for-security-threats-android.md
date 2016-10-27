@@ -4,7 +4,7 @@
 title: You are asked to turn on Scan device for security threats | Microsoft Intune
 description:
 keywords:
-author: barlanms.author: barlan
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
