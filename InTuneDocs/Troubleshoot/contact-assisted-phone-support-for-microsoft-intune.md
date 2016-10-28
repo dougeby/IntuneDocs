@@ -4,7 +4,7 @@
 title: Contact Assisted Phone Support | Microsoft Intune
 description: Phone numbers for Intune support
 keywords:
-author: Nbigmanms.author: nbigman
+author: staciebarkerms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
