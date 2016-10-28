@@ -26,20 +26,20 @@ ms.suite: ems
 ---
 
 # Monitor mobile app management policies with Microsoft Intune
-After you have set up a mobile app management (MAM) policy and applied it to users, you can monitor the compliance status on the [Azure portal](https://portal.azure.com). The Azure portal includes information about the users affected by the policy, the compliance status, and any issues that your users might be experiencing.
+After you have set up a mobile app management (MAM) policy and applied it to users, you can monitor the compliance status in the [Azure portal](https://portal.azure.com). The Azure portal includes information about the users affected by the policy, the compliance status, and any issues that your users might be experiencing.
 ## Summary view
 On the **Intune mobile application management** blade, you can see a summary of the compliance status:
 
 
 ![Summary tile on the Intune mobile application management blade](../media/mam-azure-portal-user-status-summary.png)
 
--   **Users:** The total number of users in your company who are using the apps that are associated with the policy.
+-   **Users**: The total number of users in your company who are using the apps that are associated with the policy.
 
--   **MANAGED BY POLICY:** The number of users who have used at least one of the apps in the work context.
+-   **MANAGED BY POLICY**: The number of users who have used at least one of the apps in the work context.
 
--   **NO POLICY:** The number of users who are using the apps that are associated with the policy, but who are not targeted by the policy. You might consider adding these users to the policy.
+-   **NO POLICY**: The number of users who are using the apps that are associated with the policy, but who are not targeted by the policy. You might consider adding these users to the policy.
 
-- **Flagged users:** The number of users who are experiencing issues. Currently, only users with jailbroken devices are reported under **Flagged users**.
+- **Flagged users**: The number of users who are experiencing issues. Currently, only users with jailbroken devices are reported under **Flagged users**.
 
 
 ## Detailed view
