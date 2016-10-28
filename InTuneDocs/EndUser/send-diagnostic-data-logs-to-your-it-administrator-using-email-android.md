@@ -4,7 +4,7 @@
 title: Send diagnostic data logs to your IT admin using email | Microsoft Intune
 description: Send data logs by using email on an Android device
 keywords:
-author: barlanms.author: barlan
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
