@@ -88,7 +88,9 @@ There are two categories of policy settings: data relocation settings and access
  -  **Allow simple PIN**: Specify whether to let users use simple PIN sequences like 1234 or 1111. Default value = **Yes**.
  - **PIN Length**: Specify the minimum number of digits in a PIN. Default value = **4**.
  - **Number of attempts before PIN reset**: Specify the number of PIN entry attempts that can be made before the user must reset the PIN. There is no default value for this setting.
-- **Require corporate credentials for access**: Choose **Yes** to require corporate credentials instead of a PIN for app access. If you set this to **Yes**, this overrides the requirements for PIN or Touch ID. The user will be prompted to provide their corporate credentials.
+ - **Require fingerprint instead of PIN (Android 6.0+):** Choose **Yes** to require a fingerprint identity instead of a numbered PIN for app access.
+ On Android devices, you can allow the user to identify themselves using fingerprint instead of a numbered PIN. When the end user tries to access this app using their work account, they are prompted to provide their fingerprint identity instead of entering a PIN number.
+ - **Require corporate credentials for access**: Choose **Yes** to require corporate credentials instead of a PIN or fingerprint for app access. If you set this to **Yes**, this overrides the requirements for PIN or Touch ID. The user will be prompted to provide their corporate credentials.
 
   Default value = **No**.
 - **Block managed apps from running on jailbroken or rooted devices**: Choose **Yes** to block apps from running on jailbroken or rooted devices. The user will continue to be able to use the apps for personal tasks, but will have to use a different device for work.
