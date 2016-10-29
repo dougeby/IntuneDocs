@@ -4,7 +4,7 @@
 title: Remotely lock a device from the Company Portal website | Microsoft Intune
 description:
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

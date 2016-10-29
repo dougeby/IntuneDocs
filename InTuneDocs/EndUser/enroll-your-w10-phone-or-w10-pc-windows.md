@@ -4,7 +4,7 @@
 title: Enroll your Windows 10 device in Intune | Microsoft Intune
 description: Describes how to enroll a Windows 10 mobile or desktop device in Intune
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article

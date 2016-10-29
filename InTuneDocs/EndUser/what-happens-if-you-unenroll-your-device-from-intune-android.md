@@ -4,7 +4,7 @@
 title: What happens if you unenroll your Android device from Intune? | Microsoft Intune
 description:
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article

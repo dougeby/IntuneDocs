@@ -4,7 +4,7 @@
 title: Sync your Windows device manually | Microsoft Intune
 description:
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article

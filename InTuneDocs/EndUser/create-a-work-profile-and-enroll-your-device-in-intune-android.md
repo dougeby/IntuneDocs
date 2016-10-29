@@ -4,7 +4,7 @@
 title: Create a work profile and enroll your device in Intune | Microsoft Intune
 description: Describes how to encrypt an Android device
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanmsftms.author: barlanmsft
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

@@ -4,7 +4,7 @@
 title: Intune network bandwidth use | Microsoft Intune
 description: intune network bandwidth usage
 keywords:
-author: barlanmsftms.author: barlan
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -32,7 +32,7 @@ Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], revi
 Use the information in the following sections to plan for network traffic for [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] clients.
 
 ## Average network traffic
-The following table lists the approximate size and frequency of common content that travels across the network for each client.
+This table lists the approximate size and frequency of common content that travels across the network for each client.
 
 > [!NOTE]
 > To ensure that computers and mobile devices receive the necessary updates and content from the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] service, they must be periodically connected to the Internet. The time taken to receive updates or content will vary, but as a guideline, they should remain continuously connected to the Internet for at least 1 hour each day.
