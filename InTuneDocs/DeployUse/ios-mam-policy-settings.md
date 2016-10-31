@@ -4,7 +4,8 @@
 title: iOS MAM policy settings | Microsoft Intune
 description: This topic describes the mobile app management policy settings for iOS devices.
 keywords:
-author: karthikaramanms.author: karaman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article
@@ -69,7 +70,7 @@ There are two categories of policy settings: data relocation settings and access
 
 - **Restrict web content to display in the Managed Browser**: When this setting is enabled, any links in the app will be opened in the Managed Browser app.
 
-  For devices that are not enrolled in Intune, the web links in policy-managed apps can open only in the Managed Browser app by using the MAM policy.
+  For devices that are not enrolled in Intune, the web links in policy-managed apps can open only in the Managed Browser app.
 
   If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
