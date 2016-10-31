@@ -4,9 +4,9 @@
 title: How your iOS users get their apps | Microsoft Intune
 description: Methods for making iOS apps available to end users
 keywords:
-author: Staciebarkerms.author: stabar
+author: Staciebarkerms.author: staciebarker
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/28/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,14 +40,18 @@ Use this information to understand how and where your end users get the apps tha
 
 Apple restrictions prohibit line-of-business and managed App Store apps from being listed in the Company Portal app. To get around this issue, the tiles in the Company Portal app for iOS point users to different views in a single location (the Company Portal website) for all of their apps.
 
-- **Company Apps** previously pointed to a list of all apps in the ALL tab of the [Company Portal website](http://portal.manage.microsoft.com), and it will continue to work the same way. The tile name has changed to **All Apps**.
+Enrolled users get their apps by tapping on the following tiles on the Apps screen of the Company Portal app:
 
-- **Other Apps** previously pointed to a view inside the Company Portal app that listed all apps that Apple permits the Company Portal app to show. The tile name has changed to **Featured Apps**, and tapping the tile will take users to the FEATURED tab of the Company Portal website.
+- **All Apps** points to a list of all apps in the ALL tab of the [Company Portal website](http://portal.manage.microsoft.com).
 
--  **Categories** previously pointed to a view inside the Company Portal app that listed categories of apps. The tile name has not changed, but it now points to the CATEGORIES tab of the Company Portal website.
-You can find updated screenshots in [Improvements in how iOS end users get their apps](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
+- **Featured Apps** take users to the FEATURED tab of the Company Portal website.
 
+- **Categories** points to the CATEGORIES tab of the Company Portal website.
 
+ 
+![iOS Company Portal apps screen](./media/ios-cp-app-main-apps-screen.png)
+
+For information on how to add apps and put them in these tiles, see [Add apps for enrolled devices to Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 ### See also
 [How your Android users get their apps](how-your-android-users-get-their-apps.md)
