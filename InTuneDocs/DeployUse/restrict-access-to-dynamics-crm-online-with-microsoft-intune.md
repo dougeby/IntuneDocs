@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Restrict email access to Dynamics CRM Online | Microsoft Intune
+title: Restrict access to Dynamics CRM Online | Microsoft Intune
 description: Protect and control access to Dynamics CRM online with  conditional access.
 keywords:
 author: karthikaramanms.author: karaman
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Restrict email access to Dynamics CRM Online with Intune
+# Restrict access to Dynamics CRM Online with Intune
 You can control access to Microsoft Dynamics CRM Online from iOS and Android devices with Microsoft Intune conditional access.  Intune conditional access has two components:
 * [Device compliance policy](introduction-to-device-compliance-policies-in-microsoft-intune.md) that the device must comply with in order to be considered compliant.
 * [Conditional access policy](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) that where you specify the conditions that the device must meet in order to access the service.
