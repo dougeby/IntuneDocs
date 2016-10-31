@@ -2,7 +2,7 @@
 # required metadata
 
 title: Wrap iOS apps with the Intune App Wrapping Tool | Microsoft Intune
-description: Use the information in this topic to learn how to wrap your iOS apps without modifying the code of the app itself. Prepare the apps so you can apply mobile app management policies. 
+description: Use the information in this topic to learn how to wrap your iOS apps without modifying the code of the app itself. Prepare the apps so you can apply mobile app management policies.
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
@@ -50,14 +50,14 @@ See [Skype for Business Online: Enable your tenant for modern authentication](ht
 
 1.  Download the files for the App Wrapping Tool from the Microsoft Intune App Wrapping Tool for iOS [repository hosted on GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) to a macOS computer.
 
-2.  Double-click Microsoft Intune App Wrapping Tool for iOS.dmg. A window with the End User License Agreement (EULA) will appear. Read the document carefully.
+2.  Double-click **Microsoft Intune App Wrapping Tool for iOS.dmg**. A window with the End User License Agreement (EULA) will appear. Read the document carefully.
 
 3. Choose **Agree** to accept EULA, which mounts the package to your computer.
 
 4.  Open IntuneMAMPackager and save the files to a local folder on your macOS computer. You are now ready to run the App Wrapping Tool.
 
 ## Run the App Wrapping Tool
-* Open a Terminal and navigate to the folder where you saved the app wrapping tool files. The executable tool is named IntuneMAMPackager and is located in IntuneMAMPackager/Contents/MacOS. Run the command as follows:
+* Open a terminal and navigate to the folder where you saved the app wrapping tool files. The executable tool is named IntuneMAMPackager and is located in IntuneMAMPackager/Contents/MacOS. Run the command as follows:
 
 	```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
@@ -67,7 +67,7 @@ See [Skype for Business Online: Enable your tenant for modern authentication](ht
     > [!NOTE]
     > Some parameters are optional as shown in the following table.
 
-    **Example:** The following example command runs the App Wrapping Tool on the MyApp.ipa app. A provisioning profile and SHA-1 hash are specified. The processed app (MyApp_Wrapped.ipa) is created and stored in the user's Desktop folder.
+    **Example:** The following example command runs the App Wrapping Tool on the MyApp.ipa app. A provisioning profile and SHA-1 hash are specified. The processed app (MyApp_Wrapped.ipa) is created and stored in your Desktop folder.
 
     ```
     ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
@@ -76,33 +76,32 @@ See [Skype for Business Online: Enable your tenant for modern authentication](ht
 
 |Property|How to use it|
 |---------------|--------------------------------|
-  |**-i**|`<Path of the input native iOS application file>`. The file name must end in .app or .ipa. |
-  |**-o**|`<Path of the wrapped output application>` |
-  |**-p**|`<Path of your provisioning profile for iOS apps>`|
-  |**-c**|`<SHA1 hash of the signing certificate>`|
-    |-h|Displays detailed usage information on the available command line properties for the App Wrapping Tool.|
-  |-v|(Optional) Outputs verbose messages to the console.|
-  |-e | (Optional) Use this flag to have the App Wrapping Tool remove missing entitlements as it processes the app. See Setting app entitlements for more details.|
-  |-xe| (Optional) Prints information about the iOS extensions in the app and what entitlements are required to use them. See Setting app entitlements for more details. |
-  |-x| (Optional) `<An array of paths to extension provisioning profiles>`. Use this if your app needs extension provisioning profiles.|
-  |-f |(Optional) `<Path to a plist file specifying arguments.>` Use this flag in front of the [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file if you choose to use the plist template to specify the rest of the IntuneMAMPackager properties like -i, -o, and -p. See Use a plist to input arguments. |
-  |-b|(Optional) Use -b without an argument if you want the wrapped output app to have the same bundle version as the input app (not recommended). <br/><br/> Use `-b <custom bundle version>` if you want the wrapped app to have a custom CFBundleVersion. If you choose to specify a custom CFBundleVersion, we recommend you increment the native app’s CFBundleVersion by the least significant component, such as 1.0.0 -> 1.0.1. |
-
+|**-i**|`<Path of the input native iOS application file>`. The file name must end in .app or .ipa. |
+|**-o**|`<Path of the wrapped output application>` |
+|**-p**|`<Path of your provisioning profile for iOS apps>`|
+|**-c**|`<SHA1 hash of the signing certificate>`|
+|**-h**|Displays detailed usage information about the available command line properties for the App Wrapping Tool.|
+|**-v**|(Optional) Outputs verbose messages to the console.|
+|**-e**| (Optional) Use this flag to have the App Wrapping Tool remove missing entitlements as it processes the app. See Setting app entitlements for more details.|
+|**-xe**| (Optional) Prints information about the iOS extensions in the app and what entitlements are required to use them. See Setting app entitlements for more details. |
+|**-x**| (Optional) `<An array of paths to extension provisioning profiles>`. Use this if your app needs extension provisioning profiles.|
+|**-f**|(Optional) `<Path to a plist file specifying arguments.>` Use this flag in front of the [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file if you choose to use the plist template to specify the rest of the IntuneMAMPackager properties like -i, -o, and -p. See Use a plist to input arguments. |
+|**-b**|(Optional) Use -b without an argument if you want the wrapped output app to have the same bundle version as the input app (not recommended). <br/><br/> Use `-b <custom bundle version>` if you want the wrapped app to have a custom CFBundleVersion. If you choose to specify a custom CFBundleVersion, we recommend you increment the native app’s CFBundleVersion by the least significant component, such as 1.0.0 -> 1.0.1. |
 
 ### Use a plist to input arguments
-An easy way to run the App Wrapping Tool is to put all the command arguments into a [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file. Plist is a file format similar to XML you can use to input your command line arguments using a form interface.
+An easy way to run the App Wrapping Tool is to put all the command arguments into a [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file. Plist is a file format similar to XML that you can use to input your command line arguments using a form interface.
 
 In the IntuneMAMPackager/Contents/MacOS folder, open `Parameters.plist` (a blank plist template) with a text editor or Xcode. Enter your arguments for the following keys:
 
 | Plist key |  Default value| Notes |
 |------------------|--------------|-----|
-| Input Application Package Path  |empty| Same as -i. |
-| Output Application Package Path |empty| Same as -o.|
-| Provisioning Profile Path |empty| Same as -p. |
-| SHA-1 Certificate Hash |empty| Same as -c. |
-| Verbose Enabled |false| Same as -v. |
-| Remove Missing Entitlements | false| Same as -c.|
-| Prevent Default Build |false | Equivalent to using -b without arguments. |
+| Input Application Package Path  |empty| Same as -i|
+| Output Application Package Path |empty| Same as -o|
+| Provisioning Profile Path |empty| Same as -p|
+| SHA-1 Certificate Hash |empty| Same as -c|
+| Verbose Enabled |false| Same as -v|
+| Remove Missing Entitlements | false| Same as -c|
+| Prevent Default Build |false | Equivalent to using -b without arguments|
 |Build String Override | empty| The custom CFBundleVersion of the wrapped output app |
 |Extension Provisioning Profile Paths | empty| An array of extension provisioning profiles for the app.
 
@@ -117,7 +116,7 @@ Run the IntuneMAMPackager with the plist as the sole argument:
 
     If an error occurs, see [Error messages](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#error-messages) for help.
 
-*   The wrapped app is saved in the output folder you specified previously. You can upload the app into [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and associate it with a mobile application management policy.
+*   The wrapped app is saved in the output folder you specified previously. You can upload the app into [wit_nextref](../includes/wit_nextref_md.md) and associate it with a mobile application management policy.
 
     > [!IMPORTANT]
     > When uploading a wrapped app, you can try to update an older version of the app if an older (wrapped or native) version was already deployed to Intune. If you experience an error, upload the app as a new app and delete the older version.
@@ -140,7 +139,7 @@ If the app wrapping tool fails to complete successfully, one of the following er
 |The input provisioning profile file you specified was not found. Specify a valid input provisioning profile file.|Make sure that the path to the input provisioning file is valid and that the file you specified exists.|
 |The output application folder you specified was not found. Specify a valid path to the output application.|Make sure that the output path you specified is valid and exists.|
 |Output app does not have .ipa extension.|Only apps with the .app and .ipa extensions are accepted by the App Wrapping Tool. Make sure your output file has a valid extension.|
-|An invalid signing certificate was specified. Specify a valid Apple signing certificate.|Make sure you’ve downloaded the correct signing certificate from the Apple developer portal. Your certificate might be expired or might be missing a public or private key. If your Apple certificate and provisioning profile can be used to correctly sign an app within Xcode, then they are valid for the app wrapping tool.|
+|An invalid signing certificate was specified. Specify a valid Apple signing certificate.|Make sure you’ve downloaded the correct signing certificate from the Apple developer portal. Your certificate might be expired or might be missing a public or private key. If your Apple certificate and provisioning profile can be used to correctly sign an app within Xcode, then they are valid for the App Wrapping Tool.|
 |The input application you specified is invalid. Specify a valid application.|Make sure you have a valid iOS application that has been compiled as an .app or .ipa file.|
 |The input application you specified is encrypted. Specify a valid unencrypted application.|The App Wrapping Tool does not support encrypted apps. Provide an unencrypted app.|
 |The input application you specified is not in a Position Independent Executable (PIE) format. Specify a valid application in PIE format.|Position Independent Executable (PIE) apps can be loaded at a random memory address when run. This can have security benefits. For more about security benefits, see your Apple Developer documentation.|
@@ -182,7 +181,7 @@ The App Wrapping Tool has some requirements that must be met in order to guarant
 
 
 ## Setting app entitlements
-Before wrapping your app, you can grant *entitlements* to give the app additional permissions and capabilities that exceed what an app typically can do. An *entitlement file* is used during code signing to specify special permissions within your app (for example, access to a shared keychain). Specific app services called *capabilities* are enabled within Xcode during app development. Once enabled, the capabilities are reflected in your entitlements file. For more information about entitlements and capabilities, see [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in the iOS Developer Library. For a complete list of supported capabilities, see [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
+Before wrapping your app, you can grant *entitlements* to give the app additional permissions and capabilities that exceed what an app can typically do. An *entitlement file* is used during code signing to specify special permissions within your app (for example, access to a shared keychain). Specific app services called *capabilities* are enabled within Xcode during app development. Once enabled, the capabilities are reflected in your entitlements file. For more information about entitlements and capabilities, see [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in the iOS Developer Library. For a complete list of supported capabilities, see [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
 
 ### Supported capabilities for the App Wrapping Tool for iOS
 
@@ -236,19 +235,17 @@ To review the existing entitlements of a signed app and provisioning profile:
 
 2.  Expand the .zip file. This will produce a Payload folder containing your .app bundle.
 
-3.  Use the codesign tool to check the entitlements on the .app bundle like this:
+3.  Use the codesign tool to check the entitlements on the .app bundle, where `YourApp.app` is the actual name of your .app bundle.:
 
     ```
     $ codesign -d --entitlements :- "Payload/YourApp.app"
     ```
-    where `YourApp.app` is the actual name of your .app bundle.
 
-4.  Use the security tool to check the entitlements of the app's embedded provisioning profile:
+4.  Use the security tool to check the entitlements of the app's embedded provisioning profile, where `YourApp.app` is the actual name of your .app bundle.
 
     ```
     $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
-    where `YourApp.app` is the actual name of your .app bundle.
 
 ### Remove entitlements from an app by using the –e parameter
 This command removes any enabled capabilities in the app that are not in the entitlements file. If you remove capabilities that are being used by the app, it can break your app. An example of where you might remove missing capabilities is in a vendor-produced app that has all capabilities by default.
@@ -264,11 +261,11 @@ Use the following security and privacy best practices when you use the App Wrapp
 
     The wrapped application imported into the [wit_nextref](../includes/wit_nextref_md.md) console should be on the same computer that you run the tool on. If the file is on a UNC path, ensure that it is accessible on the computer running the [wit_nextref](../includes/wit_nextref_md.md) console. The path must be secured via IPsec or SMB signing.
 
--   The environment where the app wrapping tool is downloaded from the GitHub repository needs to be secured via IPsec or SMB signing.
+-   The environment where the App Wrapping Tool is downloaded from the GitHub repository needs to be secured via IPsec or SMB signing.
 
 -   The app you process must come from a trustworthy source to ensure protection against attacks.
 
--   Ensure that the output folder you specify in the app wrapping tool is secured, particularly if it is a remote folder.
+-   Ensure that the output folder you specify in the App Wrapping Tool is secured, particularly if it is a remote folder.
 
 -   iOS apps that include a file upload dialog box can allow users to circumvent, cut, copy, and paste restrictions applied to the app. For example, a user could use the file upload dialog box to upload a screenshot of the app data.
 
