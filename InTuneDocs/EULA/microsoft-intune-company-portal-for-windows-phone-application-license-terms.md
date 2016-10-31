@@ -4,7 +4,7 @@
 title: Microsoft Intune Company Portal for Windows Phone Application License Terms | Microsoft Intune
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: arob98
 ms.date: 08/30/2016
 ms.topic: article
