@@ -4,7 +4,8 @@
 title: Compliance policy settings for iOS devices | Microsoft Intune
 description: This topic describes the rules and settings that you can set in a compliance policy for iOS devices.
 keywords:
-author: karthikaramanms.author: karaman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/28/2016
 ms.topic: article
@@ -71,7 +72,7 @@ Use this setting together with the in the **Minutes of inactivity before passwor
 **Minutes of inactivity before password is required** setting.
 
 ### Email profile
-- **Email account must be managed by Intune**: When this option is set to **Yes**, the device must use the email account deployed to the device. The device is considered noncompliant in the following situations:
+- **Email account must be managed by Intune**: When this option is set to **Yes**, the device must use the email profile deployed to the device. The device is considered noncompliant in the following situations:
   - The email profile is deployed to a user group other than the user group that the compliance policy targets.
   - The user has already set up an email account on the device that matches the Intune email profile deployed to the device. Intune cannot overwrite the user-provisioned profile, and therefore cannot manage it. To ensure compliance, the user must remove the existing email settings. Then, Intune can install the managed email profile.
 
