@@ -43,9 +43,9 @@ When you manage an Android for Work device with Intune, you don’t manage the e
 
 ## App publishing and distribution
 
-The Google Play for Work service is an integral part of app distribution and management. All apps deployed to Android for Work devices in the work profile come from Play for Work. To manage and deploy apps in the Play Store, you log in as an Intune administrator to the Play for Work website and approve apps for your Intune tenant. These apps sync to the Intune console where they can then be deployed and managed using Intune. Line of business (LOB) apps developed by your organization must be published to Play for Work using Google’s Android app publishing console. Line of business apps must be configured with access restricted to your organization.
+The Google Play for Work service is an integral part of app distribution and management. All apps deployed to Android for Work devices in the work profile come from Play for Work. To manage and deploy apps in the Play Store, you log in as an Intune administrator to the Play for Work website and approve apps for your Intune tenant. These apps sync to the Intune console where they can then be deployed and managed using Intune. Line of business (LOB) apps developed by your organization must be published to Play for Work using Google’s Android app publishing console. Line of business apps must be configured in the Android app publishing console to restrict access to your organization.
 
-Apps install without user interaction and without requiring that the user allow **Installation from Unknown Sources**. To browse and install optional or available apps, the user the Play Store app on their device marked with the orange Android for Work icon. Learn more about [Deploying apps for Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps).
+Apps install without user interaction and without requiring that the user allow **Installation from Unknown Sources**. To browse and install optional or available apps, the user the work-badged Play Store app on their device. Learn more about [Deploying apps for Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps).
 
 ## App configuration
 
@@ -59,9 +59,9 @@ Intune provides configuration templates for Gmail and Nine Work apps. Other emai
 
 If you are using EAS conditional access for an Android for Work devices, you must use either the Gmail or Nine Work email app. The Microsoft Outlook for Android app, or any other email app that uses modern authentication via ADAL, is also supported. Learn more about [Email profiles for company email](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
-## App restriction policies
+## Mobile app management policies
 
-Restriction policies applied to apps enabled for mobile application management are fully supported in the work profile and in the personal profile. You can configure restriction policy for mobile application management without enrollment by using the [Azure console](https://portal.azure.com) (https://portal.azure.com). Learn more about [Compliance policy settings](afw-compliance-policy-settings-in-microsoft-intune.md).
+Restriction policies applied to apps enabled for mobile application management (MAM) are fully supported in the work profile and in the personal profile. You can configure restriction policy for mobile application management without enrollment by using the [Azure console](https://portal.azure.com) (https://portal.azure.com). Learn more about [Compliance policy settings](afw-compliance-policy-settings-in-microsoft-intune.md). For more information, see [mobile app management policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 ## VPN profiles
 
@@ -69,7 +69,7 @@ VPN support is similar to Android VPN profiles. The same VPN providers and basic
 
 1.  **Work profile-scoped VPN** – VPN connections are scoped to just the apps deployed to the work profile. Only Android for Work managed apps can use the VPN connection. Personal apps on the device cannot use a managed VPN connection.
 
-2.  **App-specific VPN** – If a VPN provider supports configuration for app-specific VPN and provides the capability to configure per-app VPN via the Android for Work app configuration profile, then app-specific VPN can be configured in Intune. Learn more about [VPN connection profiles](vpn-connections-in-microsoft-intune.md).
+2.  **App-specific VPN** – If a VPN provider supports configuration for app-specific VPN and provides the capability to configure per-app VPN via the Android for Work app configuration profile, then app-specific VPN can be configured in Intune. Check with the VPN provider to see if they support this capability. Learn more about [VPN connection profiles](vpn-connections-in-microsoft-intune.md).
 
 ## Certificate profiles
 
