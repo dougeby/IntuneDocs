@@ -4,9 +4,10 @@
 title: What's new | Microsoft Intune
 description: Find out what’s new in this month’s, and past releases of Microsoft Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2016
+ms.date: 11/1/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
