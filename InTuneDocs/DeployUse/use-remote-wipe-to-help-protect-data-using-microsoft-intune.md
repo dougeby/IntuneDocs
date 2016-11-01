@@ -88,7 +88,7 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 
 **Android**
 
-|Data type|Android|Android Samsung KNOX|
+|Data type|Android|Android Samsung KNOX Standard|
 |-------------|-----------|------------------------|
 |Web links|Removed.|Removed.|
 |Unmanaged Google Play apps|Apps and data remain installed.|Apps and data remain installed.|

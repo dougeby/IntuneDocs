@@ -4,7 +4,7 @@
 title: Exchange access rules for mobile devices | Microsoft Intune
 description: Exchange ActiveSync access rules to allow or block device connections with EAS
 keywords:
-author: NathBarnms.author: nathbarn
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article

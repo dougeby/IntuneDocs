@@ -4,7 +4,7 @@
 title: Troubleshoot email profiles | Microsoft Intune
 description: Email profile issues and how to troubleshoot and resolve them.
 keywords:
-author: Nbigmanms.author: nbigman
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 08/01/2016
 ms.topic: article
@@ -62,12 +62,12 @@ If the user has installed an email profile prior to provision of a profile by In
 
 -**Windows**: Intune detects an existing, duplicate email profile based on hostname and email address. Intune will overwrite the existing email profile created by the user.
 
--**Samsung KNOX**: Intune identifies a duplicate email account based on the email address, and will overwrite it with the Intune profile. If the user configures that account, it will be overwritten again by the Intune profile. Note that this may cause some confusion to the user whose account configuration gets overwritten.
+-**Samsung KNOX Standard**: Intune identifies a duplicate email account based on the email address, and will overwrite it with the Intune profile. If the user configures that account, it will be overwritten again by the Intune profile. Note that this may cause some confusion to the user whose account configuration gets overwritten.
 
 Since Samsung KNOX does not use hostname to identify the profile, we recommend that you not create multiple email profiles to deploy to the same email address on different hosts, as these will overwrite each other.
 
-## Error  0x87D1FDE8 for KNOX device
-**Issue**:After creating and deploying an Exchange Active Sync email profile for Samsung KNOX for  various Android devices they report the error **0x87D1FDE8** or **remediation failed** in the device's properties &gt; policy tab.
+## Error  0x87D1FDE8 for KNOX Standard device
+**Issue**: After creating and deploying an Exchange Active Sync email profile for Samsung KNOX Standard for various Android devices, the error **0x87D1FDE8** or **remediation failed** is reported in the device's properties &gt; policy tab.
 
 Review the configuration of your EAS profile for Samsung KNOX and source policy. The Samsung Notes sync option is no longer supported and that option should not be selected in your profile. Be sure devices have had enough time to process the policy, up to 24 hours.
 

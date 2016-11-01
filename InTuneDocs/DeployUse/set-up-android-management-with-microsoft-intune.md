@@ -2,9 +2,9 @@
 # required metadata
 
 title: Set up Android management | Microsoft Intune
-description: Enable mobile device management (MDM) for Android and KNOX devices with Microsoft Intune.
+description: Enable mobile device management (MDM) for Android and KNOX Standard devices with Microsoft Intune.
 keywords:
-author: NathBarnms.author: nathbarn
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Set up Android device management
-As an Intune administrator, you can enable manage Android devices from the Company Portal. Users can then enroll their devices using the Company Portal app available from Google Play.
+As an Intune administrator, you can enable management of Android devices, including Samsung Knox Standard devices, from the Company Portal. Users can then enroll their devices using the Company Portal app that is available from Google Play.
 
 1.  **Set up Intune**<br>
     If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](prerequisites-for-enrollment.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
