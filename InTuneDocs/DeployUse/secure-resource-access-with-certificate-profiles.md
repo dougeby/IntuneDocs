@@ -4,7 +4,8 @@
 title: Certificate profiles for resource access |Microsoft Intune
 description: Secure VPN, Wi-Fi, and email access with a certificate installed on each user device.
 keywords:
-author: Nbigmanms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
