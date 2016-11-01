@@ -4,7 +4,7 @@
 title: Manage PCs with client software | Microsoft Intune
 description: Manage Windows PCs by installing the Intune client software.
 keywords:
-author: nathbarnms.author: nathbarn
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 08/30/2016
 ms.topic: article
