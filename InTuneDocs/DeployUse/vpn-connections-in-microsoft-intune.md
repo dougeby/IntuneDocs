@@ -4,7 +4,8 @@
 title: VPN connections | Microsoft Intune
 description: Use VPN profiles to deploy VPN settings to users and devices in your organization.
 keywords:
-author: Nbigmanms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article
