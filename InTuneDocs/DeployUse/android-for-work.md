@@ -61,7 +61,7 @@ If you are using EAS conditional access for an Android for Work devices, you mus
 
 ## Mobile app management policies
 
-Restriction policies applied to apps enabled for mobile application management (MAM) are fully supported in the work profile and in the personal profile. You can configure restriction policy for mobile application management without enrollment by using the [Azure console](https://portal.azure.com) (https://portal.azure.com). Learn more about [Compliance policy settings](afw-compliance-policy-settings-in-microsoft-intune.md). For more information, see [mobile app management policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+Restriction policies applied to apps enabled for mobile application management (MAM) are fully supported in the work profile and in the personal profile. You can publish line-of-business apps in the Android app publishing console at https://play.google.com/apps/publish. This console includes an option to make apps private to your organization. Learn more about [Compliance policy settings](afw-compliance-policy-settings-in-microsoft-intune.md). For more information, see [mobile app management policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 ## VPN profiles
 
