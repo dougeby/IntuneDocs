@@ -4,7 +4,7 @@
 title: Install the PC client software | Microsoft Intune
 description: Use this guide to help you get your Windows PCs managed by the Microsoft Intune client software.
 keywords:
-author: NathBarnms.author: nathbarn
+author: staciebarkerms.author: stabar
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article
