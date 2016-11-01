@@ -4,7 +4,7 @@
 title: Enroll your Windows 8.1 or Windows RT 8.1 device | Microsoft Intune
 description: Describes how to enroll a Windows 8.1 or Windows RT 8.1 device in Intune
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
