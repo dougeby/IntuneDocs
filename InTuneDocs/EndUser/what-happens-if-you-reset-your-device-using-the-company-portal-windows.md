@@ -4,7 +4,7 @@
 title: What happens if you reset your Windows device using the Company Portal? | Microsoft Intune
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
