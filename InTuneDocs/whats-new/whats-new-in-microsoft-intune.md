@@ -4,9 +4,10 @@
 title: What's new | Microsoft Intune
 description: Find out what’s new in this month’s, and past releases of Microsoft Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2016
+ms.date: 11/1/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,13 +19,13 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: mamoriss
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-# What's new in Microsoft Intune -- October 2016
+# What's new in Microsoft Intune - October 2016
 Learn what’s new in this release of Microsoft Intune. You can also find out about upcoming changes that you should be planning for, as well as information about past releases.
 
 All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/library/mt718155.aspx).
@@ -75,6 +76,9 @@ You can enable your apps to use Intune mobile application management (MAM) polic
 ### Manage printing from apps managed using MAM policies
 You can now prevent printing company data from apps that have MAM policies. This setting is available on the [Azure portal](/Intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) and is supported on both [iOS](/Intune/deploy-use/ios-mam-policy-settings) and [Android](/Intune/deploy-use/android-mam-policy-settings) devices.
 <!--TFS 1014328-->
+
+### Support for fingerprints on Android devices
+Android mobile app management (MAM) policies now allow users to access an app with their fingerprint instead of typing out their PIN. See this and other [mobile app management policy settings for Android here](/Intune/deploy-use/android-mam-policy-settings).
 
 ## Notices
 
