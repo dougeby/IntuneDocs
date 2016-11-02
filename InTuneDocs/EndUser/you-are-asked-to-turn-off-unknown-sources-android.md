@@ -4,9 +4,9 @@
 title: You are asked to turn off Unknown sources | Microsoft Intune
 description:
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

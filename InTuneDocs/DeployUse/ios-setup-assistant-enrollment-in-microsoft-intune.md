@@ -4,7 +4,7 @@
 title: Enroll iOS devices with Setup Assistant | Microsoft Intune
 description: Enroll corporate-owned iOS devices by using the Apple Configurator tool to reset the device to factory settings and prepare it to run Setup Assistant.
 keywords:
-author: NathBarnms.author: nathbarn
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article

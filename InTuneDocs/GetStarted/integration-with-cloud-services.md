@@ -4,7 +4,7 @@
 title: Intune integration with Microsoft cloud services | Microsoft Intune
 description: Intune integration with Microsoft cloud services and products and with other Microsoft products
 keywords:
-author: barlanmsftms.author: barlan
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -31,7 +31,7 @@ Before you set up [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], revi
 ##Integration with other Microsoft cloud services
 
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] shares a common foundation with other Microsoft cloud services. When you use the same account to subscribe to multiple cloud services, those services use the same Microsoft Azure AD infrastructure, and they are tenants of Azure AD. Azure AD provides the core directory and identity management capabilities for Microsoft cloud services.
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] shares a common foundation with other Microsoft cloud services. When you use the same account to subscribe to multiple cloud services, those services use your same Microsoft Azure AD infrastructure, and they are tenants of Azure AD. Azure AD provides the core directory and identity management capabilities for Microsoft cloud services.
 
 Learn more about [administering Azure AD ](http://technet.microsoft.com/library/hh967611.aspx) in the TechNet Library.
 
@@ -42,7 +42,7 @@ The decision to integrate [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]
 
 When you use [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] with [!INCLUDE[cmshort](../includes/cmshort_md.md)], you do not use the [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] to manage [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and instead use the [!INCLUDE[cmshort](../includes/cmshort_md.md)] console. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] still uses its cloud storage in Azure to host software that you deploy to devices that you manage with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-For more information, see [Manage Mobile Devices with Configuration Manager and Microsoft Intune](http://msdn.microsoft.com/library/2c6bd0e5-d436-41c8-bf38-30152d76be10) in the [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1 documentation.
+For more information, see [Manage Mobile Devices with Configuration Manager and Microsoft Intune](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) in the [!INCLUDE[cm5short](../includes/cm5short_md.md)] SP1 documentation.
 
 ### See also
 [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)

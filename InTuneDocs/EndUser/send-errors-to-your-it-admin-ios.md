@@ -4,9 +4,9 @@
 title: Send errors to your IT admin | Microsoft Intune
 description: Send errors to your admin
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

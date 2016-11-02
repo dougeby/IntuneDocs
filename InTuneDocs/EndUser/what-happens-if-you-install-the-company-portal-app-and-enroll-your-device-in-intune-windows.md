@@ -4,9 +4,9 @@
 title: What happens if you install the Company Portal app and enroll your Windows device in Intune? | Microsoft Intune
 description:
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,4 +76,4 @@ About every eight hours, enrolled devices will:
 
 -   Send any company app inventory updates.
 
-If you have questions, contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you have questions, contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

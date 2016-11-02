@@ -4,7 +4,7 @@
 title: Remotely lock a device from the Company Portal website | Microsoft Intune
 description:
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -63,5 +63,5 @@ To use Remote Lock to lock your device:
 
 	If a retry doesn’t work, contact your IT administrator for help. If you find your device and want to unlock it after using Remote Lock, just enter your passcode.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 

@@ -4,9 +4,9 @@
 title: Encrypt your device | Microsoft Intune
 description: Describes how to encrypt an Android device
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -15,7 +15,7 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: arnab

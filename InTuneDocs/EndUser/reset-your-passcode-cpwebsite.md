@@ -4,7 +4,7 @@
 title: Reset your device passcode from the Company Portal website | Microsoft Intune
 description:
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -63,4 +63,4 @@ To reset your passcode:
 
     To see a notification confirming that your password was reset successfully, click the notification flag at the top right of the Company Portal website.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

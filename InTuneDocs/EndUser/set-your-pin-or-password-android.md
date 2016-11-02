@@ -4,9 +4,9 @@
 title: Set your PIN or password | Microsoft Intune
 description:
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,4 +36,4 @@ You can use the following steps to set a PIN or password.
 2.  Choose and confirm your new password.
 
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

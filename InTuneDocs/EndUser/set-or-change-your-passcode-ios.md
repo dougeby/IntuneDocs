@@ -4,9 +4,9 @@
 title: Set or change your passcode | Microsoft Intune
 description: Set or change your passcode
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,4 +46,4 @@ If you have trouble setting a passcode that meets the passcode requirements, con
 2. Tap **Change Passcode** and enter your old password.
 3. Enter a new passcode that meets your IT admin's requirements, and then enter it again to verify it.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

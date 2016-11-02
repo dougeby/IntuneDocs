@@ -4,8 +4,8 @@
 title: Set up Windows device management with Microsoft Intune | Microsoft Intune
 description: Enable mobile device management (MDM) for Windows PCs including Windows 10 devices with Microsoft Intune.
 keywords:
-author: NathBarnms.author: nathbarn
-manager: angrobe
+author: staciebarker
+manager: stabar
 ms.date: 08/29/2016
 ms.topic: article
 ms.prod:
@@ -59,7 +59,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
 
   ![Windows device management dialog box](../media/enroll-intune-winenr.png)
 
-4.  **Optional steps**<br>The **Add Sideloading keys** step is not needed for Windows 10. The **Upload Code-Signing Certificate** step is only needed if you will distribute line-of-business (LOB) apps that are not available from the Windows Store to devices. [Learn more](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
+4.  **Optional steps**<br>The **Add Sideloading keys** step is not needed for Windows 10. The **Upload Code-Signing Certificate** step is only needed if you will distribute line-of-business (LOB) apps that are not available from the Windows Store to devices.
 
 6.  **Inform users**<br>You'll need to tell your users how to enroll their devices and what to expect after they're brought into management:
       - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)

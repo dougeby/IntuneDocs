@@ -4,7 +4,7 @@
 title: Enroll your Mac OS X device in Intune | Microsoft Intune
 description: Describes how to enroll a Mac OS X device in Intune
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -53,4 +53,4 @@ To enroll your Mac OS X device:
 
 	![management-profile-verified](./media/4-macosx-enroll-done.png)
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

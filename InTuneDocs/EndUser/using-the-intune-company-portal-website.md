@@ -2,11 +2,11 @@
 # required metadata
 
 title: Using the Intune Company Portal website | Microsoft Intune
-description: Describes the Company Portal website and provides links to steps for tasks that you can do on the website
+description: Describes the Company Portal website and provides links to steps for tasks that end users can do on the website
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 # Using the Intune Company Portal website
-The [Company Portal website](http://portal.manage.microsoft.com) is a webpage that you can use to manage computers and devices that you have enrolled in Intune.
+The [Company Portal website](http://portal.manage.microsoft.com) is a webpage that end users can use to manage computers and devices that they have enrolled in Intune.
 
-You can use the Company Portal website  to:
+Users can do the following tasks from the Company Portal website:
 
 -   [Rename your device](rename-your-device-cpwebsite.md)
 
@@ -42,13 +42,13 @@ You can use the Company Portal website  to:
 
 -	[Sync your device manually to speed up slow app installations](sync-your-device-manually-cpwebsite.md)
 
--   Find your IT admin's contact information, if your IT admin configured it
+-   Find the IT admin's contact information, if you configured it
 
--   See details about your device, including whether it is compliant with your company's or school's policies
+-   See details about their device, including whether it is compliant with your company's or school's policies
 
--   Remotely manage your PC (works only for PCs)
+-   Remotely manage their PC (works only for PCs)
 
-You can do most of the same tasks on the **Company Portal website** that you can do by using the **Company Portal app** that you install on your device. To find more about the Company Portal app, how to enroll a device in Intune, and more, tap the link for the type of device you have:
+End users can do most of the same tasks on the **Company Portal website** that they can do by using the **Company Portal app** that they install on your device. See the following pages for links to all of the tasks that end users can do on their device:
 
 - [Using your Android device with Intune](using-your-android-device-with-intune.md)
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)

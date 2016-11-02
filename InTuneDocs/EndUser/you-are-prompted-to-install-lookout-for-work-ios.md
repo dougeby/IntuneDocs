@@ -4,7 +4,7 @@
 title: You are prompted to install Lookout for Work on your iOS device | Microsoft Intune
 description:
 keywords:
-author: staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article
@@ -57,5 +57,4 @@ If Lookout for Work finds a security threat on your device, you will see instruc
 **If the installation doesn't work**
 
 Sometimes installations can fail due to technical issues beyond your control. If this happens, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
 

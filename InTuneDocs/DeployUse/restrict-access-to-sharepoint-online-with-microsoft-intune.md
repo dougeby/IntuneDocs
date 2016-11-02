@@ -73,7 +73,7 @@ If a condition is not met, the user is presented with one of the following messa
 You can restrict access to SharePoint Online when accessed from a browser from **iOS** and **Android** devices.  Access will only be allowed from only supported browsers on compliant devices:
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS and Android)
+* Managed Browser (iOS and Android 5.0 and later)
 
 **Unsupported browsers will be blocked**.
 
