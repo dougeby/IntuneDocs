@@ -31,7 +31,7 @@ ms.suite: ems
 ## Create a custom configuration
 You can use custom configurations to create VPN profiles in Intune. To create a custom configuration:
 
-   1. In the Intune admin console, **Policy** > **Add Policy** > *<Expand platform>* > **Custom configuration** > **Create Policy**.
+   1. In the Intune admin console, **Policy** > **Add Policy** > *Expand platform* > **Custom configuration** > **Create Policy**.
    2. Provide a name for the policy.
    3. For each URI setting, choose **Add**, and provide the requested information. Here's an example:
 
@@ -115,7 +115,7 @@ https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
 ## URI settings for Android per-app VPN on PulseSecure
 ### CUSTOM URI FOR PACKAGE LIST
 -  Data type = String
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  Value = Delimiter separated package list.
    - Delimiters:  semicolon (;), colon (:), comma (,), Pipe (|)
 
