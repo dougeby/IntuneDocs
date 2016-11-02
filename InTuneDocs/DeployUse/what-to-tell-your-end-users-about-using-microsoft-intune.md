@@ -2,11 +2,11 @@
 # required metadata
 
 title: Resources about the end-user experience with Microsoft Intune | Microsoft Intune
-description: Links to information to share with your end users
-keywords:
-author: staciebarkerms.author: stabar
+description: Share information with your end users to make your Intune deployment successful.
+keywords: end users, users, communication
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/2/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,7 +52,3 @@ To understand how your end users get their apps, choose from the following devic
 - [Android](how-your-android-users-get-their-apps.md)
 - [iOS](how-your-ios-users-get-their-apps.md)
 - [Windows](how-your-windows-users-get-their-apps.md)
-
-
-
-Want to see other information covered in this article? Please add your suggestion to the Comment box at the bottom of this topic. Thanks!
