@@ -2,12 +2,12 @@
 
 # required metadata
 
-title: Android and Samsung KNOX policy settings | Microsoft Intune
+title: Android and Samsung KNOX Standard policy settings | Microsoft Intune
 description: Create policies that control settings and features on Android devices that you manage with Intune.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Android and Samsung KNOX policy settings in Microsoft Intune
+# Android and Samsung KNOX Standard policy settings in Microsoft Intune
 
 Intune supplies a range of built-in general settings that you can configure on Android devices. Additionally, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to create custom settings that are not available from Intune.
 
@@ -36,7 +36,7 @@ Use the Intune **Android general configuration policy** to configure settings fo
 
 -   **Mobile device security settings** - Choose from a list of predefined settings that let you control a range of features and functionality on the device.
 
--   **Kiosk mode** (for Samsung KNOX devices only) - Lock a device to allow only certain features to work. For example, you can allow a device to run only one managed app that you specify, or you can disable the volume buttons on a device. These settings might be used for a demonstration model of a device or a device that is dedicated to performing only one function, such as a point-of-sale device.
+-   **Kiosk mode** (for Samsung KNOX Standard devices only) - Lock a device to allow only certain features to work. For example, you can allow a device to run only one managed app that you specify, or you can disable the volume buttons on a device. These settings might be used for a demonstration model of a device or a device that is dedicated to performing only one function, such as a point-of-sale device.
 
 -   **Compliant and noncompliant apps** - Specify a list of apps that are compliant or noncompliant in your company. On Android and iOS devices, the **Noncompliant Apps Report** can be used to view the compliance of apps that you specified in the list against the apps that users have installed. The report can't actually block the installation of the app.
 
@@ -47,7 +47,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 
 ### Password settings
 
-|Setting name|Details|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|-|----------------|----------------|
 |**Require a password to unlock mobile devices**|Specifies whether to require a password on supported devices.|Yes|Yes|
 |**Minimum password length**|Specifies the minimum length of the password.|Yes|Yes|
@@ -62,14 +62,14 @@ If the setting you are looking for does not appear in this topic, you might be a
 
 ### Encryption settings
 
-|Setting name|Details|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
 |**Require encryption on mobile device**|Requires that files on the mobile device are encrypted.|Yes|Yes|
 |**Require encryption on storage cards**|Specifies whether the device storage card must be encrypted.|No|Yes|
 
 ### System settings
 
-|Setting name|Details|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
 |**Allow screen capture**|Lets the user capture the screen contents as an image.|No|Yes|
 |**Allow diagnostic data submission**|Allows the device to submit diagnostic information to Google.|No|Yes|
@@ -77,19 +77,19 @@ If the setting you are looking for does not appear in this topic, you might be a
 
 ### Cloud settings - documents and data
 
-|Setting name|Details|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------------------|----------------|
 |**Allow Google backup**|Allows the use of Google backup.|No|Yes|
 
 ### Cloud settings - accounts and synchronization
 
-|Setting name|Details|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
 |**Allow Google account auto sync**|Allows Google account settings to be automatically synchronized.|No|Yes|
 
 ### Application settings - browser
 
-|Setting name|Details|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
 |**Allow web browser**|Specifies whether the device's default web browser can be used.|No|Yes|
 |**Allow autofill**|Allows the autofill function of the web browser to be used.|No|Yes|
@@ -99,13 +99,13 @@ If the setting you are looking for does not appear in this topic, you might be a
 
 ### Application settings - apps
 
-|Setting name|Details|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------|----------------|
 |**Allow Google Play store**|Allows the user to access the Google Play store on the device.|No|Yes|
 
 ### Device capabilities settings - hardware
 
-|Setting name|Details|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
 |**Allow camera**|Allows the use of the device camera.|Yes|Yes|
 |**Allow removable storage**|Allows the device to use removable storage, like an SD card.|No|Yes|
@@ -114,11 +114,11 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow geolocation**|Allows the device to utilize location information.|No|Yes|
 |**Allow NFC**|Allows operations that use near field communication if the device supports it.|No|Yes|
 |**Allow Bluetooth**|Allows the use of Bluetooth on the device.|No|Yes|
-|**Allow power off**|Allows the user to power off the device.<br /><br />If this setting is disabled, the setting **Number of repeated sign in failures to allow before the device is wiped** for Samsung KNOX devices does not function.|No|Yes|
+|**Allow power off**|Allows the user to power off the device.<br /><br />If this setting is disabled, the setting **Number of repeated sign in failures to allow before the device is wiped** for Samsung KNOX Standard devices does not function.|No|Yes|
 
 ### Device capabilities settings - cellular
 
-|Setting name|Details|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
 |**Allow voice roaming**|Allows voice roaming when the device is on a cellular network.|No|Yes|
 |**Allow data roaming**|Allows data roaming when the device is on a cellular network.|No|Yes|
@@ -126,7 +126,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 
 ### Device capabilities settings - features
 
-|Setting name|Details|Android 4.0+|Samsung KNOX|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------|----------------|
 |**Allow voice assistant**|Allows the use of voice assistant software on the device.|No|Yes|
 |**Allow voice dialing**|Enables or disables the voice dialing feature on the device.|No|Yes|
@@ -150,7 +150,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |**Delete**|Deletes the selected app from the list.|
 
 ### Kiosk mode settings
-Specify the following settings for **Samsung KNOX devices**:
+Specify the following settings for **Samsung KNOX Standard devices**:
 
 |Setting name|Details|
 |----------------|--------------------|
