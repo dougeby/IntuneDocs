@@ -6,7 +6,7 @@ description: Share information with your end users to make your Intune deploymen
 keywords: end users, users, communication
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/2/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
