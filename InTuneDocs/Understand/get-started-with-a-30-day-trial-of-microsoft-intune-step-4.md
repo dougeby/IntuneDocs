@@ -43,7 +43,7 @@ In these steps, you'll set up a mobile device configuration policy and a Windows
 
 3.  In the **Tasks** list on the **Policy Overview** page, choose **Add Policy**.
 
-4.  In the policy list, expand the platform you want to create a policy for, select **General Configuration**, choose **Create and Deploy a Policy with the Recommended Settings**, and then choose **Create Policy**.
+4.  In the policy list, expand the platform you want to create a policy for, select **General Configuration**, choose **Create and Deploy a Custom Policy**, and then choose **Create Policy**.
 
 5.  When prompted to **Select the groups to which you want to deploy this policy**, select **My Trial Users** from the list, and choose **Add** &gt; **OK**.
 
