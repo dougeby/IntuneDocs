@@ -59,14 +59,15 @@ You must create a Trusted certificate profile before you can create a Simple Cer
 
 -  Windows Phone 8.1 and later
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 2.  Add a **Trusted Certificate Profile** policy.
 
     Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Enter the requested information to configure the Trusted certificate profile settings for Android, iOS, Mac OS X, Windows 8.1, or Windows Phone 8.1. 
+3.  Enter the requested information to configure the Trusted certificate profile settings for Android, iOS, Mac OS X, Windows 8.1, or Windows Phone 8.1.
 4.  In the **Certificate file** setting, import the Trusted Root CA certificate (.cer file) that you exported from your issuing CA. The **Destination store** setting applies only to devices running Windows 8.1 and later, and only if the device has more than one certificate store.
-	
+
 4.  Choose **Save Policy**.
 
 The new policy is shown in the **Policy** workspace. Now you can deploy it.
@@ -74,7 +75,7 @@ The new policy is shown in the **Policy** workspace. Now you can deploy it.
 > [!NOTE]
 >
 > Android and Android for Work devices will display a notice that a third party has installed a trusted certificate.
-	
+
 
 ## **Task 3**: Create SCEP or .PFX certificate profiles
 After you create a Trusted CA certificate profile, create SCEP or .PFX certificate profiles for each platform you want to use. When you create an SCEP certificate profile, you must specify a Trusted certificate profile for that same platform. This links the two certificate profiles, but you still must deploy each profile separately.
@@ -96,7 +97,7 @@ After you create a Trusted CA certificate profile, create SCEP or .PFX certifica
 -  Windows Phone 8.1 and later
 
 2.  Add a **SCEP Certificate Profile** policy
-    
+
     Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Follow the instructions on the profile configuration page to configure the SCEP certificate profile settings.
@@ -123,8 +124,8 @@ The new policy is shown in the **Policy** workspace. Now you can deploy it.
   - Windows Phone 10 and later
   - iOS 8.0 and later)    
 
-	
-2.  Add a **.PFX Certificate Profile** policy. 
+
+2.  Add a **.PFX Certificate Profile** policy.
       Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Enter the information requested on the policy form.
 4.  Choose **Save Policy**.

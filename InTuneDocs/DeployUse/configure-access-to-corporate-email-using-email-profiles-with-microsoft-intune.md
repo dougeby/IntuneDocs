@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Configure access to corporate email using email profiles with Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Many mobile platforms include a native email client that ships as part of the operating system. Some of these clients can be set up by using email profiles, as described in this topic.
 
 Email profile settings can be used to set up email access settings for specific email clients on mobile devices. On supported platforms, the native email clients can be set up by Microsoft Intune to let users access their corporate email on their personal devices, without any additional setup.
