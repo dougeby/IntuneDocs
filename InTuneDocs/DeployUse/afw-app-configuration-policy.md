@@ -6,7 +6,7 @@ description: Use mobile app configuration policies in Intune to supply settings 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,6 +24,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 # Configure Android for Work apps with mobile app configuration policies in Microsoft Intune
 Use mobile app configuration policies in Microsoft Intune to supply settings that might be required when users run an app. For example, an app might require users to specify:
@@ -77,7 +79,3 @@ When the deployed app is run on a device, it will run with the settings that you
 
 > [!TIP]
 > Only deploy one app configuration policy for each app to a user.
-
-
-
-
