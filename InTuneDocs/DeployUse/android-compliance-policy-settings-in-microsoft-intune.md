@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Compliance policy settings for Android devices in Microsoft Intune
 
-The policy settings described in this topic apply to devices running Android 4.0 and later, or Samsung KNOX 4.0 and later.
+The policy settings described in this topic apply to devices running Android 4.0 and later, or Samsung KNOX Standard 4.0 and later.
 
 If you are looking for information about other platforms, select one of the following:
 > [!div class="op_single_selector"]
