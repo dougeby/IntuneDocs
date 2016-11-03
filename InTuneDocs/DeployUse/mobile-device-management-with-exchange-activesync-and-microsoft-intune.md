@@ -4,7 +4,7 @@
 title: Exchange ActiveSync Device Management | Microsoft Intune
 description: Manage mobile devices with Exchange ActiveSync (EAS) management using the Exchange connector
 keywords:
-author: nathbarnms.author: nathbarn
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

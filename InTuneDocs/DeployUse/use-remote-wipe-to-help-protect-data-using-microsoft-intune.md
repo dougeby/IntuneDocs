@@ -6,7 +6,7 @@ description: Intune provides selective wipe and full wipe capabilities to remove
 keywords:
 author: NathBarnms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -88,7 +88,7 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 
 **Android**
 
-|Data type|Android|Android Samsung KNOX|
+|Data type|Android|Android Samsung KNOX Standard|
 |-------------|-----------|------------------------|
 |Web links|Removed.|Removed.|
 |Unmanaged Google Play apps|Apps and data remain installed.|Apps and data remain installed.|

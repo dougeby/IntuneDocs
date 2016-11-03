@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # How your Android users get their apps
-Use this information to understand how and where your Android end users get the apps that you distribute through Microsoft Intune. The information can vary by device type (native Android devices or Samsung Knox devices).
+Use this information to understand how and where your Android end users get the apps that you distribute through Microsoft Intune. The information can vary by device type (native Android devices or Samsung Knox Standard devices).
 
 ## Native (non-Samsung Knox) Android devices
 
@@ -36,7 +36,7 @@ Use this information to understand how and where your Android end users get the 
 | Available apps      | Users tap **install** in the Company Portal. A notification appears, which users then tap to start the installation. After the installation is successful, the notification disappears. | Users tap the app in the Company Portal and are taken to an app page in the Play Store, where they can start the installation.|
 | Required apps      | Users are shown a notification, which they cannot dismiss, indicating that they need to install an app. Users tap the notification to start the installation. After the installation is successful, the notification disappears.    | Users are shown a notification, which they cannot dismiss, indicating that they need to install an app. Users tap the notification and are taken to an app page in the Play Store, where they can start the installation. After the installation is successful, the notification disappears. |
 
-## Samsung Knox Android devices
+## Samsung Knox Standard Android devices
 
 | App type | Line-of-business (LOB) apps | Play Store apps  |
 | ------------- |-------------| -----|
