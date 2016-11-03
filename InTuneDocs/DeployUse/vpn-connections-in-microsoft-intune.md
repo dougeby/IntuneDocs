@@ -28,7 +28,7 @@ ms.suite: ems
 
 # VPN connections in Microsoft Intune
 
-Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a *VPN connection profile* to initiate a connection with the VPN server. Use *VPN profiles* in Microsoft Intune to deploy VPN settings to users and devices in your organization, so they can easily and securely connect to the network. 
+Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a *VPN connection profile* to initiate a connection with the VPN server. Use *VPN profiles* in Microsoft Intune to deploy VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
 
 For example, assume that you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile that contains the settings necessary to connect to the corporate network, and then you deploy this profile to all users who have iOS devices. The users will see the VPN connection in the list of available networks and can connect with minimal effort.
 
@@ -43,6 +43,8 @@ You can configure the following device types by using VPN profiles:
 * Devices that run Windows 10 desktop and mobile
 
 The VPN profile configuration options differ depending on the device type that you select.
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 ## VPN connection types
 
@@ -163,17 +165,17 @@ You can configure on-demand VPN for iOS 8.0 and later devices.
 > [!NOTE]
 >  
 > You cannot use per-app VPN and on-demand VPN in the same policy.
- 
-1. On the policy configuration page, find **On-demand rules for this VPN connection**. The columns are labeled **Match**, the condition that the rules check for, and **Action**, the action that the policy will trigger when the condition is matched. 
+
+1. On the policy configuration page, find **On-demand rules for this VPN connection**. The columns are labeled **Match**, the condition that the rules check for, and **Action**, the action that the policy will trigger when the condition is matched.
 2. Choose **Add** to create a rule. There are two types of matches that you can set up in the rule. You can only configure one of these types per rule.
-  - **SSIDs**, which refer to wireless networks. 
+  - **SSIDs**, which refer to wireless networks.
   - **DNS search domains**, which are.....  You can use full-qualified domain names such as *team. corp.contoso.com*, or use domains such as *contoso.com*, which is the equivalent of using * *.contoso.com*.
 3. Optional :provide a URL string probe, which is a URL that the rule uses as a test. If the device on which this profile is installed is able to access this URL without redirection, the VPN will be established and the device will connect to the target URL. The user will not see the URL string probe site. An example of a URL string probe is the address of an auditing Web server that checks device compliance before connecting the VPN. Another possibility is that the URL tests the ability of the VPN to connect to a site, before connecting the device to the target URL through the VPN.
 4. Choose one of these actions:
   - **Connect**
   - **Evaluate connection**, which has three settings
 	  a. **Domain action**  - choose **Connect if needed** or **Never connect**
-	  b. **Comma-separated list of domains** - you configure this only if you choose a **Domain action** of **Connect if needed** 
+	  b. **Comma-separated list of domains** - you configure this only if you choose a **Domain action** of **Connect if needed**
       c. **Required URL string probe** - an HTTP or HTTPS (preferred) URL, such as *https://vpntestprobe.contoso.com*. The rule will check to see if there's a response from this address. If not, and the **Domain action** is **Connect if needed**, the VPN will be triggered.
      > [!TIP]
      >
@@ -181,7 +183,7 @@ You can configure on-demand VPN for iOS 8.0 and later devices.
   - **Ignore** - this causes no change in the VPN connectivity. If the VPN is connected, leave it connected, if it's not connected, don't connect it. For example, you may have a rule that connects the VPN for all of your internal corporate web sites, but want to make one of those internal sites accessible only when the device is actually connected to the corporate network. In that case, you would create an ignore rule for that one site.
   - **Disconnect** - disconnect devices from the VPN when the conditions are matched. For example, you could list your corporate wireless networks in the **SSIDs** field, and create a rule that disconnects devices from the VPN when they connect to one of those networks.
 
-Domain-specific rules are evaluated before all-domain rules. 
+Domain-specific rules are evaluated before all-domain rules.
 
 
 ## Deploy the policy

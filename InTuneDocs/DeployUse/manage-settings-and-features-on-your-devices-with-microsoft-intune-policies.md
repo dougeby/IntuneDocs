@@ -101,6 +101,8 @@ After you create a policy, you will typically want to deploy it to one or more g
 
 When you select a deployed policy, you can view further information about the deployment in the lower part of the policies list.
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 ## Manage policies
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy**, and then browse to and select the policy that you want to manage.
@@ -133,7 +135,7 @@ If the device has just enrolled, the check-in frequency will be more frequent, a
 
 Users can also open the Company Portal app and sync the device to immediately check for the policy anytime.
 
-### What actions cause Intune to immediately send a notification  to a device?
+### What actions cause Intune to immediately send a notification to a device?
 Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app deployment, profile deployment (Wi-Fi, VPN, email, etc.), or policy deployment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.
 
 Other changes, such as revising the contact information in the company portal, do not cause an immediate notification to devices.
