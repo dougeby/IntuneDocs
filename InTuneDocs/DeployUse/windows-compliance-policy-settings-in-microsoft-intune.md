@@ -4,7 +4,8 @@
 title: Compliance policy settings for Windows devices| Microsoft Intune
 description: This topic describes the rules and settings you can configure for a compliance policy for Windows devices.
 keywords:
-author: karthikaramanms.author: karaman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -51,7 +52,7 @@ The settings listed in this section are supported on Windows Phone 8.1 and later
 - **Required password type**: Specify whether the user must create
 an **Alphanumeric** password or a **Numeric** password.
 
-  For devices that run Windows and are accessed with a Microsoft account, the compliance policy will fail to evaluate correctly if he minimum password length is greater than eight characters or if the minimum number of character sets is more than two.
+  For devices that run Windows and are accessed with a Microsoft account, the compliance policy will fail to evaluate correctly if the minimum password length is greater than eight characters or if the minimum number of character sets is more than two.
 
 - **Minimum number of character sets**: If **Required password type** is set to
 **Alphanumeric**, this setting specifies the minimum number of
@@ -84,7 +85,7 @@ character sets that the password must have. The four character sets are:
 
 ### Device health settings
 - **Require devices to be reported as healthy**: You can set a rule to require that **Windows 10 Mobile** devices must be reported as healthy in new or existing compliance policies.  If this setting is enabled, Windows 10 devices are evaluated via the Health Attestation Service (HAS) for these data points:
-  -  **BitLocker is enabled**: When BitLocker is on, the device can help protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer.
+  -  **BitLocker is enabled**: When BitLocker is on, the device can help protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data. BitLocker also helps ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that help protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer.
   -  **Code integrity is enabled**: Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel. It also detects whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.
   - **Secure Boot is enabled**: When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
 
@@ -141,10 +142,10 @@ The settings listed in this section are supported on Windows PCs.
 ### Device health settings
 - **Require devices to be reported as healthy**: Supported on Windows 10 devices.
 You can set a rule to require that Windows 10 devices must be reported as healthy in new or existing compliance policies. If this setting is enabled, Windows 10 devices are evaluated via the Health Attestation Service (HAS) for  these data points:
-  -  **BitLocker is enabled**: When BitLocker is on, the device can help protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer.
+  -  **BitLocker is enabled**: When BitLocker is on, the device can help protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data. BitLocker also helps ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that help protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer.
   -  **Code integrity is enabled**: Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel. It also detects whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.
   - **Secure Boot is enabled**: When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
-  - **Early-launch antimalware is enabled**: Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.
+  - **Early-launch antimalware is enabled**: Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers are initialized.
 
   For information on how the HAS service works, see [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
@@ -159,7 +160,7 @@ You can set a rule to require that Windows 10 devices must be reported as health
 
   When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
-To find the OS version to use for the **Minimum OS required** and **Maximum OS version allowed** settings, run the **winver** command from the command prompt. The winver command returns the reported version of the OS.
+To find the OS version to use for the **Minimum OS required** and **Maximum OS version allowed** settings, run the **winver** command from the command prompt. The **winver** command returns the reported version of the OS.
 
 - Windows 8.1 PCs return a version of **6.3**. If the OS version rule is set to Windows 8.1 for Windows, then the device is reported as noncompliant even if the device has Windows 8.1.
 
