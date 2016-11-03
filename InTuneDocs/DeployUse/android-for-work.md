@@ -25,7 +25,7 @@ ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 
 ---
 
-# Manage Android for Work management with Intune
+# Manage Android for Work devices with Intune
 
 Android for Work is a set of Android device features and services. These features and services provide additional management capabilities and privacy when people use their Android devices for work. Intune can help you deploy apps and company resources to Android for Work devices to ensure work and personal information is separate. When successfully deployed, apps and the data they access remain exclusively within the Android for Work environment on the device.
 

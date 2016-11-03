@@ -42,11 +42,9 @@ For details, see [Restrict access to email and O365 services with Microsoft Intu
 - **Resource access policies**: These policies work together to help your users gain access to the files and resources that they need to do their work successfully, wherever they are.
 For details, see [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 For a complete list of Intune policies, see [Microsoft Intune policy reference](microsoft-intune-policy-reference.md).
-
-
-
 
 ## Create a configuration policy
 
@@ -100,8 +98,6 @@ After you create a policy, you will typically want to deploy it to one or more g
     -   To close the dialog box without deploying the policy, choose **Cancel**.
 
 When you select a deployed policy, you can view further information about the deployment in the lower part of the policies list.
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 ## Manage policies
 
