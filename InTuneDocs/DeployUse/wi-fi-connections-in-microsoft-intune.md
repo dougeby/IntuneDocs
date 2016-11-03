@@ -32,7 +32,7 @@ Use Microsoft Intune Wi-Fi profiles to deploy wireless network settings to users
 
 For example, you install a new Wi-Fi network named **Contoso Wi-Fi** and want to set up all iOS devices to connect to this network. Here's the process:
 
-![Wi-Fi profile process summary](..\media\wi-fi-process-diagram.png) 
+![Wi-Fi profile process summary](..\media\wi-fi-process-diagram.png)
 
 1.   Create a Wi-Fi profile containing the settings necessary to connect to the **Contoso Wi-Fi** wireless network.
 
@@ -55,6 +55,8 @@ You can deploy Wi-Fi profiles to the following platforms:
 
 For devices that run Windows 8.1 or Windows 10 desktop or mobile, you can import a Wi-Fi configuration profile that was previously exported to a file. For details, see [Export or Import a Wi-Fi configuration profile for Windows devices](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), click **Policy** &gt; **Add Policy**.
 
 2.  Select one of the following policy types, and then click **Create Policy**:
@@ -66,8 +68,8 @@ For devices that run Windows 8.1 or Windows 10 desktop or mobile, you can import
     -   Wi-Fi Profile (iOS 8.0 and later)
 
     -   Wi-Fi Profile (Mac OS X 10.9 and later)
-	
-    
+
+
 	There are no recommended settings for this policy type. You must create a custom policy.
 
 3.  Provide the name and description for the profile.
@@ -75,7 +77,7 @@ For devices that run Windows 8.1 or Windows 10 desktop or mobile, you can import
 4. Specify the **Network Connections** values.
  - **SSID (Service Set Identifier)**: Users see the network name, not the SSID.
  - **Connect when the network is not broadcasting its name (SSID)**: Select this option to allow devices to connect to the network when it is not visible in the list of networks (because it is hidden and not broadcasting its name).
- 
+
 5. Configure the **Security Settings** for the selected platform. The available settings depend on the security types you select, and are described in [Security settings](#security-settings).
 
 6. (iOS and MAC OS X only) Configure **Proxy Settings**
@@ -91,8 +93,8 @@ For devices that run Windows 8.1 or Windows 10 desktop or mobile, you can import
 The new policy is displayed in the **Configuration Policies** node of the **Policy** workspace. See **Next steps** for information about deploying the profile.
 
 ## Export or Import a Wi-Fi configuration profile for Windows devices
- 
-For devices that run Windows 8.1 or Windows 10 desktop or mobile, you can import a Wi-Fi configuration profile that was previously exported to a file. 
+
+For devices that run Windows 8.1 or Windows 10 desktop or mobile, you can import a Wi-Fi configuration profile that was previously exported to a file.
 
 ### Export a Wi-Fi profile
 In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi profile to an XML file readable by Intune. On a Windows computer that already has the required WiFi profile installed, follow this following procedure.
@@ -152,7 +154,7 @@ A profile is a type of policy, so use the Policy workspace to deploy it.
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
 
 ## Security settings
-These tables have the details for the security settings that are available for Android, iOS, and Mac OS X Wi-Fi profiles. 
+These tables have the details for the security settings that are available for Android, iOS, and Mac OS X Wi-Fi profiles.
 
 ### Security settings for Android devices
 
