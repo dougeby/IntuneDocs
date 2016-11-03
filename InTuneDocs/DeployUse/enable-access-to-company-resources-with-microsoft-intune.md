@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,21 +34,21 @@ Microsoft Intune Wi-Fi, VPN, and email profiles work together to help your users
 Deploy wireless network settings to your users. These settings make it easy for your users to connect to the corporate network.
 #### Supported platforms
 
-|Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX|
+|Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Yes (You can import a Windows Wi-Fi profile.)|Yes (You can configure OMA-URI.) |Yes|Yes|Yes|
 
 ## [VPN profiles](vpn-connections-in-microsoft-intune.md) and supported platforms
 Deploy virtual private network (VPN) settings to your users. These settings make it easy for users to connect to resources on the corporate network.
 
-|Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX|
+|Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Yes|Yes|Yes|Yes|Yes|
 
 ## [Email profiles](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) and supported platforms
 Create, deploy, and monitor native email client settings on devices in your organization.
 
-|Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX|
+|Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |No|Yes|Yes|No|Yes|
 > [!NOTE]
@@ -57,6 +57,6 @@ Create, deploy, and monitor native email client settings on devices in your orga
 ## [Certificate profiles](secure-resource-access-with-certificate-profiles.md) and supported platforms
 Help secure access to company resources including wireless networks and VPN connections.
 
-|Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX|
+|Windows 8.1 and later|Windows Phone 8.1 and later|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
 |Yes|Yes|Yes|Yes|Yes|

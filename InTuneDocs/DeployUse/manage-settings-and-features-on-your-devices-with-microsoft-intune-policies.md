@@ -6,7 +6,7 @@ description: Use Intune to create and deploy policies that control settings and 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 10/11/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

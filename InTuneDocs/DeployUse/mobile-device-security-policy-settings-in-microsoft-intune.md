@@ -6,7 +6,7 @@ description: Use Intune to configure a wide range of settings that you can deplo
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 10/11/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,7 +42,7 @@ You can create and deploy mobile device security policies for the following devi
 
 -   iOS
 
--   Android and Samsung KNOX
+-   Android and Samsung KNOX Standard
 
 > [!NOTE]
 > Some settings are not applicable to some devices. See the tables below for a full list of settings that you can configure.
@@ -50,7 +50,7 @@ You can create and deploy mobile device security policies for the following devi
 
 ## Security settings
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Require a password to unlock mobile devices**|No|No|Yes|Yes|Yes|
 |**Required password type**<br /><br />This setting specifies the type of password that will be required, such as numeric only or alphanumeric.|Yes|Yes|Yes|Yes|No|
@@ -72,7 +72,7 @@ When you deploy a password length policy to devices that run Windows RT, users w
 
 ## Encryption settings
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Require encryption on mobile device**<sup>1</sup><br /><br />For Windows Phone 8 devices, you must set this to **Yes**.<br /><br />To enable encryption on iOS devices, enable the setting **Require a password to unlock mobile devices**.|Yes|No|Yes|No|Yes|
 |**Require encryption on storage cards**<br /><br />This setting applies to devices that are managed by Exchange ActiveSync also.|n/a|n/a|n/a <br />Apps and associated data are automatically encrypted.|n/a|Yes|
@@ -88,49 +88,49 @@ When you deploy a password length policy to devices that run Windows RT, users w
 
 ## Malware settings
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Require network firewall**|Yes|No|No|No|No|
 |**Enable SmartScreen**|Yes|No|No|No|No|
 
 ## System settings
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Require automatic updates**|Yes|No|No|No|No|
 |**Require automatic updates – Minimum classification of updates to install automatically**<br /><br />Choose the classification of updates that will be installed automatically:<br /><br />- **Important**. Installs all updates that are classified as important.<br /><br />- **Recommended**. Installs all updates that are classified as important or recommended.|Yes|No|No|No|No|
-|**Allow screen capture**|No|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX only)|
+|**Allow screen capture**|No|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX Standard only)|
 |**Allow control center in lock screen**|No|No|No|iOS 7 and later|No|
 |**Allow notification view in lock screen**|No|No|No|iOS 7 and later|No|
 |**Allow today view in lock screen**|No|No|No|iOS 7 and later|No|
 |**User Account Control**|Yes|No|No|No|No|
-|**Allow diagnostic data submission**|Yes|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX only)|
+|**Allow diagnostic data submission**|Yes|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX Standard only)|
 |**Allow untrusted TLS certificates**|No|No|No|Yes|No|
 |**Allow personal wallet software while locked**|No|No|No|Yes|No|
-|**Allow factory reset**|No|No|No|No|Yes (Samsung KNOX only)|
+|**Allow factory reset**|No|No|No|No|Yes (Samsung KNOX Standard only)|
 
 
 ## Cloud settings – documents and data
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Allow backup to iCloud**|No|No|No|Yes|No|
 |**Allow document sync to iCloud**|No|No|No|Yes|No|
 |**Allow Photo Stream sync to iCloud**|No|No|No|Yes|No|
 |**Require encrypted backup**|No|No|No|Yes|No|
 |**Work Folders URL**<br /><br />This setting sets the URL of the work folder to allow documents to be synchronized across devices.|Yes|No|No|No|No|
-|**Allow Google backup**|No|No|No|No|Yes (Samsung KNOX only)|
+|**Allow Google backup**|No|No|No|No|Yes (Samsung KNOX Standard only)|
 
 ## Cloud settings – accounts and synchronization
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Allow Microsoft account**|No|No|Windows Phone 8.1 only|No|No|
-|**Allow Google account auto sync**|No|No|No|No|Yes (Samsung KNOX only)|
+|**Allow Google account auto sync**|No|No|No|No|Yes (Samsung KNOX Standard only)|
 
 ## Email settings
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Allow users to download email attachments**<sup>1</sup>|n/a|n/a|n/a|n/a|n/a|
 |**Email synchronization period** <br /><br />This setting applies to devices that are managed by Exchange ActiveSync also.|n/a|n/a|n/a|n/a|n/a|
@@ -140,14 +140,14 @@ When you deploy a password length policy to devices that run Windows RT, users w
 
 ## Application settings - browser
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Allow web browser**|No|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX only)|
-|**Allow autofill**|Yes|No|No|Yes|Yes (Samsung KNOX only)|
-|**Allow pop-up blocker**|Yes|No|No|Yes|Yes (Samsung KNOX only)|
-|**Allow cookies**|No|No|No|Yes|Yes (Samsung KNOX only)|
+|**Allow web browser**|No|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX Standard only)|
+|**Allow autofill**|Yes|No|No|Yes|Yes (Samsung KNOX Standard only)|
+|**Allow pop-up blocker**|Yes|No|No|Yes|Yes (Samsung KNOX Standard only)|
+|**Allow cookies**|No|No|No|Yes|Yes (Samsung KNOX Standard only)|
 |**Allow plug-ins**|Yes|No|No|No|No|
-|**Allow active scripting**|Yes|No|No|Yes|Yes (Samsung KNOX only)|
+|**Allow active scripting**|Yes|No|No|Yes|Yes (Samsung KNOX Standard only)|
 |**Allow fraud warning**|Yes|No|No|Yes|No|
 |**Allow intranet site for single word entry**<br /><br />(This setting allows the use of a single word to direct Internet Explorer to a website—for example, ‘Bing’.)|Yes|No|No|No|No|
 |**Allow automatic detection of intranet network**|Yes|No|No|No|No|
@@ -161,9 +161,9 @@ When you deploy a password length policy to devices that run Windows RT, users w
 
 ## Application settings - apps
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Allow application store**|No|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX only)|
+|**Allow application store**|No|No|Windows Phone 8.1 only|Yes|Yes (Samsung KNOX Standard only)|
 |**Require a password to access application store**|No|No|No|Yes|No|
 |**Allow in-app purchases**|No|No|No|Yes|No|
 |**Allow managed documents in other unmanaged apps**|No|No|No|iOS 7 and later|No|
@@ -174,45 +174,45 @@ When you deploy a password length policy to devices that run Windows RT, users w
 
 ## Application settings - gaming
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Allow Game Center friends**|No|No|No|Yes|No|
 |**Allow multiplayer gaming**|No|No|No|Yes|No|
 
 ## Device capabilities settings - hardware
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
 |**Allow camera**|No|No|Windows Phone 8.1 only|Yes|Yes|
-|**Allow removable storage**|No|No|Yes|No|Yes (Samsung KNOX only)|
-|**Allow Wi-Fi**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
-|**Allow Wi-Fi tethering**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
+|**Allow removable storage**|No|No|Yes|No|Yes (Samsung KNOX Standard only)|
+|**Allow Wi-Fi**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX Standard only)|
+|**Allow Wi-Fi tethering**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX Standard only)|
 |**Allow automatic connection to free Wi-Fi hotspots**|No|No|Windows Phone 8.1 only|No|No|
 |**Allow Wi-Fi hotspot reporting**<br /><br />This setting sends information about Wi-Fi connections to help discover nearby connections.|No|No|Windows Phone 8.1 only|No|No|
-|**Allow geolocation**<br /><br />This setting allows the device to utilize location information.|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
-|**Allow NFC**<br /><br />This setting allows operations that use near-field communication.|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
-|**Allow Bluetooth**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
-|**Allow power off**<br>If this setting is disabled, the setting **Number of repeated sign in failures to allow before the device is wiped** for Samsung KNOX devices does not function.|No|No|No|No|Yes (Samsung KNOX only)|
+|**Allow geolocation**<br /><br />This setting allows the device to utilize location information.|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX Standard only)|
+|**Allow NFC**<br /><br />This setting allows operations that use near-field communication.|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX Standard only)|
+|**Allow Bluetooth**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX Standard only)|
+|**Allow power off**<br>If this setting is disabled, the setting **Number of repeated sign in failures to allow before the device is wiped** for Samsung KNOX Standard devices does not function.|No|No|No|No|Yes (Samsung KNOX Standard only)|
 
 ## Device capabilities settings - cellular
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Allow voice roaming**|No|No|No|Yes|Yes (Samsung KNOX only)|
-|**Allow data roaming**|Yes|No|No|Yes|Yes (Samsung KNOX only)|
+|**Allow voice roaming**|No|No|No|Yes|Yes (Samsung KNOX Standard only)|
+|**Allow data roaming**|Yes|No|No|Yes|Yes (Samsung KNOX Standard only)|
 |**Allow automatic synchronization while roaming**|No|No|No|Yes|No|
-|**Allow SMS/MMS messaging**|No|No|No|No|Yes (Samsung KNOX only)|
+|**Allow SMS/MMS messaging**|No|No|No|No|Yes (Samsung KNOX Standard only)|
 
 ## Device capabilities settings - features
 
-|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX|
+|Setting name|Windows 8.1 and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|iOS|Android and Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Allow voice assistant**|No|No|No|Yes|Yes (Samsung KNOX only)|
+|**Allow voice assistant**|No|No|No|Yes|Yes (Samsung KNOX Standard only)|
 |**Allow voice assistant while device is locked**|No|No|No|Yes|No|
-|**Allow voice dialing**|No|No|No|Yes|Yes (Samsung KNOX only)|
-|**Allow copy and paste**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX only)|
-|**Allow clipboard share between applications**|No|No|No|No|Yes (Samsung KNOX only)|
-|**Allow YouTube**|No|No|No|No|Yes (Samsung KNOX only)|
+|**Allow voice dialing**|No|No|No|Yes|Yes (Samsung KNOX Standard only)|
+|**Allow copy and paste**|No|No|Windows Phone 8.1 only|No|Yes (Samsung KNOX Standard only)|
+|**Allow clipboard share between applications**|No|No|No|No|Yes (Samsung KNOX Standard only)|
+|**Allow YouTube**|No|No|No|No|Yes (Samsung KNOX Standard only)|
 
 ### See also
 [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
