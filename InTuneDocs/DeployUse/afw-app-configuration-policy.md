@@ -25,9 +25,10 @@ ms.suite: ems
 
 ---
 
+# Configure Android for Work apps with mobile app configuration policies in Microsoft Intune
+
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
-# Configure Android for Work apps with mobile app configuration policies in Microsoft Intune
 Use mobile app configuration policies in Microsoft Intune to supply settings that might be required when users run an app. For example, an app might require users to specify:
 
 -   A custom port number.
