@@ -28,3 +28,4 @@ ms.suite: ems
 # Devices and Groups in Microsoft Intune
 
 
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
