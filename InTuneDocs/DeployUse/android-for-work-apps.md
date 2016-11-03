@@ -27,6 +27,8 @@ ms.suite: ems
 
 # How to deploy apps to Android for Work devices with Intune
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 You deploy apps to Android for Work devices in a different way than you deploy them to standard Android devices. All apps you install for Android for Work come from the Google Play for Work store. You log into the store, browse for the apps you want, and approve them.
 The app then appears in the **Volume-Purchased Apps** node of the Intune console. From here, you can manage deployment of the app in the same way you would deploy any other app.
 Additionally, if you have created your own line of business (LOB) apps, you can deploy them. To do that, you need to sign up for a Google Developer account which lets you publish apps to a private area in the Google Play store and then synchronize them with Intune.
@@ -44,9 +46,9 @@ Additionally, if you have created your own line of business (LOB) apps, you can 
   ![Approve app example](/intune/deploy-use/media/approve.png)
 4. A window for the app opens asking you to give permissions for the app to perform various operations. You must choose **Approve** to continue.<br>
   ![Approve app permissions example](/intune/deploy-use/media/approve-app-permissions.png)
-5. After a moment, you'll see a confirmation message that the app has been approved and is available in your IT admin console. 
+5. After a moment, you'll see a confirmation message that the app has been approved and is available in your IT admin console.
 
-## Publish, then synchronize, a line of business app from the Google Play for Work store 
+## Publish, then synchronize, a line of business app from the Google Play for Work store
 
 1. Go to the Google Play Developer Console, [play.google.com/apps/publish](play.google.com/apps/publish).
 2. Sign in with the same account you used to configure the connection between Intune and Android for Work. If you are signing in for the first time, you must register, and pay a fee to become a member of the Google Developer program.
@@ -55,7 +57,7 @@ Additionally, if you have created your own line of business (LOB) apps, you can 
   ![Option to only make app available to your organization](/intune/deploy-use/media/restrict.png)<br>
 This ensures that the app is only available to your organization, and is not available in the public Google Play store.
 For more information about how to upload and publish Android apps, see the [Google Developer Console Help](https://support.google.com/googleplay/android-developer/answer/113469).
-5. Once you have published your app, go to the [Google Play for Work store](https://play.google.com/work). Sign in with the same account you used to configure the connection between Intune and Android for Work. 
+5. Once you have published your app, go to the [Google Play for Work store](https://play.google.com/work). Sign in with the same account you used to configure the connection between Intune and Android for Work.
 6. In the **Apps** node of the store, verify you can see the app you have published. Note that it has been automatically approved to be synchronized with Intune.
 
 ## Deploy an Android for Work app
@@ -66,6 +68,6 @@ Typically, Intune will synchronize twice a day with the Google Play for Work sto
 2. On the **Android for Work Mobile Device Management Setup** page, choose **Sync Now**.
 3. The page also displays the time and status of the last sync.
 
-When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** workspace, you can [deploy it just like you would any other app](deploy-apps-in-microsoft-intune.md). You can deploy the app to groups of users only. Currently, you can only select the **Required** and **Uninstall** actions. From October 2016, we will begin adding the **Available** deployment action to new tenants. 
+When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** workspace, you can [deploy it just like you would any other app](deploy-apps-in-microsoft-intune.md). You can deploy the app to groups of users only. Currently, you can only select the **Required** and **Uninstall** actions. From October 2016, we will begin adding the **Available** deployment action to new tenants.
 
 After you deploy the app, it will be installed on the devices you targeted. The user of the device will not be asked for approval.
