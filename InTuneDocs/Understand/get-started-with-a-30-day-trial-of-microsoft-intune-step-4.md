@@ -4,7 +4,8 @@
 title: Create policies and publish an app to users | Microsoft Intune
 description: How to create policies and publish an app when you sign up for a free, 30-day evaluation of Intune
 keywords:
-author: lindavrms.author: lindavr
+author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -29,7 +30,7 @@ ms.suite: ems
 # Create policies and publish an app to evaluation users
 Intune policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. If you are planning to use Intune for devices that you configure for production use after the evaluation, it's absolutely essential that you follow the instructions in [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) and [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
-You can perform two types of app installations using Intune. The first is a **required install**, which automatically deploys the app to managed computers. The other is an **available install**, which deploys the app, or a link to the app, to the Intune Company Portal so that users can choose whether to install it on their computers or on their mobile devices.
+You can perform two types of app installations using Intune. The first is a **required install**, which automatically deploys the app to managed devices. The other is an **available install**, which deploys the app, or a link to the app, to the Intune Company Portal so that users can choose whether to install it on their computers or on their mobile devices.
 
 Before using Intune to deploy apps, make sure that you have the appropriate licenses to publish, distribute, and use the app. The **Licenses** workspace lets you add and manage license agreement information for apps or software purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft apps or software purchased by other means. You can then create license reports, which display managed license usage information throughout your company, to stay informed of license usage activity.
 
@@ -43,7 +44,7 @@ In these steps, you'll set up a mobile device configuration policy and a Windows
 
 3.  In the **Tasks** list on the **Policy Overview** page, choose **Add Policy**.
 
-4.  In the policy list, expand the platform you want to create a policy for, select **General Configuration**, choose **Create and Deploy a Policy with the Recommended Settings**, and then choose **Create Policy**.
+4.  In the policy list, expand the platform you want to create a policy for, select **General Configuration**, choose **Create and Deploy a Custom Policy**, and then choose **Create Policy**.
 
 5.  When prompted to **Select the groups to which you want to deploy this policy**, select **My Trial Users** from the list, and choose **Add** &gt; **OK**.
 
