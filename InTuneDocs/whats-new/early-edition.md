@@ -68,10 +68,12 @@ App developers can now use the Intune App SDK for Cordova plugin to enable MAM f
 ### Intune App SDK Xamarin Component Now Supports MAM without Enrollment
 App developers can now use the Intune App SDK Xamarin component to enable MAM functionality without device enrollment in their Xamarin-based apps for Android and iOS. The Intune App SDK Xamarin component can be found [here](https://github.com/msintuneappsdk/intune-app-sdk-xamarin).
 
-## Deprecations
+## Notices
 
 ### Symantec Signing Certificate No Longer Required for Windows Phone 8 Company Portal
 The Windows Phone 8 Company Portal app will no longer require a Symantec signing certificate to be uploaded in the Intune Admin Console.
+
+## Deprecations
 
 ### Support for the Windows Phone 8 Company Portal
 Support for Windows Phone 8 Company Portal will now be deprecated. Support for the Windows Phone 8 and WinRT platforms was deprecated in October 2016. Support for the Windows 8 Company Portal was also deprecated in October 2016.
