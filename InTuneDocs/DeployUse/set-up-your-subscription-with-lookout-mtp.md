@@ -26,14 +26,14 @@ ms.suite: ems
 ---
 
 # Set up your subscription for  Lookout device threat protection
-To get your subscription ready for the Lookout device threat protection service, Lookout support (enterprisesupport@lookout.com) needs the following information about your Azure Active Directory (Azure AD) subscription. Your Lookout Mobility Endpoint Security account will be associated with your Azure AD subscription to integrate Lookout with Intune. 
+To get your subscription ready for the Lookout device threat protection service, Lookout support (enterprisesupport@lookout.com) needs the following information about your Azure Active Directory (Azure AD) subscription. Your Lookout Mobility Endpoint Security tenant will be associated with your Azure AD subscription to integrate Lookout with Intune. 
 
 * **Azure AD Tenant ID**
 * **Azure AD Group Object ID** for **full** Lookout console access
 * **Azure AD Group Object ID** for **restricted** Lookout console access (optional)
 
 > [!IMPORTANT]
-> An existing Lookout Mobile Endpoint tenant that is not already associated with your Azure AD tenant cannot be used for the integration with Azure AD and Intune. Contact Lookout support to create a new Lookout Mobile Endpoint tenant. Use the new tenant to onboard your Azure AD users.
+> An existing Lookout Mobile Endpoint Security tenant that is not already associated with your Azure AD tenant cannot be used for the integration with Azure AD and Intune. Contact Lookout support to create a new Lookout Mobile Endpoint Security tenant. Use the new tenant to onboard your Azure AD users.
 
 Use the following section to gather the information you need to give to the Lookout support team.  
 
