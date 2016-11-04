@@ -4,12 +4,13 @@
 title: Restrict access using device threat protection | Microsoft Intune
 description: Restrict access to company resources based on device, network and application risk.
 keywords:
-author: karthikaramanms.author: karaman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 
