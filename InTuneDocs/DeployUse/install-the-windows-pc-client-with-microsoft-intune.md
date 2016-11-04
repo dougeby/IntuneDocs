@@ -112,7 +112,7 @@ The Intune Automatic Enrollment Task, the **WindowsIntuneEnrollPending** registr
 
 ## Instruct users to self-enroll
 
-Users can install the Intune client software by going to  [the Company Portal website](http://portal..manage.microsoft.com). If the web portal can detect that the device is a Windows PC, it will to prompt users to enroll the PC by downloading the Intune software client. Once the software has been downloaded, users can install it to bring their PCs into management.
+Users can install the Intune client software by going to  [the Company Portal website](http://portal.manage.microsoft.com). If the web portal can detect that the device is a Windows PC, it will to prompt users to enroll the PC by downloading the Intune software client. Once the software has been downloaded, users can install it to bring their PCs into management.
 
 ![Intune Portal prompting to you to download the Intune software client](../media/software-client-download.png)
 

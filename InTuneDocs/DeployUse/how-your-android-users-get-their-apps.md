@@ -4,7 +4,7 @@
 title: How your Android users get their apps | Microsoft Intune
 description: Methods for making Android apps available to end users
 keywords:
-author: Staciebarkerms.author: stabar
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
