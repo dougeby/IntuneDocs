@@ -33,7 +33,7 @@ To get your subscription ready for the Lookout device threat protection service,
 * **Azure AD Group Object ID** for **restricted** Lookout console access (optional)
 
 > [!IMPORTANT]
-> An existing Lookout Mobile Endpoint tenant that is not already associated with your Azure AD tenant, it cannot be used for the integration with Azure AD and Intune. Contact Lookout support to create a new Lookout Mobile Endpoint tenant. Use the new tenant to onboard your Azure AD users.
+> An existing Lookout Mobile Endpoint tenant that is not already associated with your Azure AD tenant cannot be used for the integration with Azure AD and Intune. Contact Lookout support to create a new Lookout Mobile Endpoint tenant. Use the new tenant to onboard your Azure AD users.
 
 Use the following section to gather the information you need to give to the Lookout support team.  
 
