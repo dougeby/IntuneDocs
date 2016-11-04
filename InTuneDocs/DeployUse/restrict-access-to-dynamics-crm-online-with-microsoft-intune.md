@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Restrict access to Dynamics CRM Online with Intune
-You can control access to Microsoft Dynamics CRM Online from iOS and Android devices with Microsoft Intune conditional access.  Intune conditional access has two components:
+You can control access to Microsoft Dynamics CRM Online from iOS and Android devices by using Microsoft Intune conditional access.  Intune conditional access has two components:
 * A [device compliance policy](introduction-to-device-compliance-policies-in-microsoft-intune.md) that the device must comply with in order to be considered compliant.
 * A [conditional access policy](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) where you specify the conditions that the device must meet in order to access the service.
 
@@ -38,15 +38,15 @@ When a targeted user attempts to use the Dynamics CRM app on their device, the f
 
 ![Diagram show the decision points used to determine whether a device is allowed access to a service or is blocked](../media/mdm-ca-dynamics-crm-flow-diagram.png)
 
-The device that needs access to Dynamics CRM Online must:
-* Be an **Android** or **iOS** device.
-* Be **enrolled** with Microsoft Intune.
-* Be **compliant** with any deployed Microsoft Intune compliance policies.
+The device that needs access to Dynamics CRM Online must be:
+* An **Android** or **iOS** device.
+* **Enrolled** with Intune.
+* **Compliant** with any deployed Intune compliance policies.
 
-The device state is stored in Azure Active Directory, which grants or blocks access, based on the conditions that you specify.
+The device state is stored in Azure Active Directory, which grants or blocks access based on the conditions that you specify.
 
 If a condition is not met, the user is presented with one of the following messages when they sign in:
-* If the device is not enrolled with Microsoft Intune or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app and enroll.
+* If the device is not enrolled with Intune or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app and enroll.
 * If the device is not compliant, a message is displayed that directs the user to the Microsoft Intune Company Portal website or Company Portal app, where they can find information about the problem and how to remediate it.
 
 ## Configure conditional access for Dynamics CRM Online  
@@ -55,16 +55,16 @@ If a condition is not met, the user is presented with one of the following messa
 Before you start, configure Azure Active Directory security groups for the conditional access policy. You can configure these groups in the **Office 365 admin center**. You use these groups to target or exempt users from the policy. When a user is targeted by a policy, each device they use must be compliant in order to access resources.
 
 You can specify two group types to use for the Dynamics CRM policy:
-* **Targeted groups**. Contains groups of users that the policy will apply to.
+* **Targeted groups**. Contains groups of users that the policy applies to.
 * **Exempted groups**. Contains groups of users that are exempt from the policy.
 
-If a user is in both groups, they will be exempt from the policy.
+If a user is in both groups, they are exempt from the policy.
 
 ### Step 2: Configure and deploy a compliance policy
 [Create](create-a-device-compliance-policy-in-microsoft-intune.md) a compliance policy and [deploy](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) it to all devices that will be affected by the policy. These are all the devices that are used by the users in the Targeted groups.
 
 > [!NOTE]
-> While compliance policies are deployed to Microsoft Intune groups, conditional access policies are targeted to Azure Active Directory security groups.
+> While compliance policies are deployed to Intune groups, conditional access policies are targeted to Azure Active Directory security groups.
 
 > [!IMPORTANT]
 > If you have not deployed a compliance policy, the devices will be treated as compliant.
@@ -73,11 +73,11 @@ When you are ready, continue to Step 3.
 ### Step 3: Configure the Dynamics CRM policy
 Next, configure the policy to require that only managed and compliant devices can access Dynamics CRM. This policy will be stored in Azure Active Directory.
 
-1.  In the Microsoft Intune administration console, choose **Policy > Conditional Access > Dynamics CRM Online Policy**.
+1.  In the Intune administration console, choose **Policy > Conditional Access > Dynamics CRM Online Policy**.
 
   ![Screenshot of the Dynamics CRM Online conditional access policy page](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  Choose **Enable conditional access** policy.
+2.  Choose the **Enable conditional access** policy.
 3.  Under **Application access**, you can choose to apply conditional access policy to:
   * **iOS**
   * **Android**
@@ -90,7 +90,7 @@ You have now configured conditional access for Dynamics CRM. You do not have to 
 
 In the **Groups** workspace, you can view the conditional access status of your devices.
 
-Select any mobile device group and then, on the **Devices** tab, choose one of the following **Filters**:
+Choose any mobile device group and then, on the **Devices** tab, choose one of the following **Filters**:
 * **Devices that are not registered with AAD**. These devices are blocked from Dynamics CRM.
 * **Devices that are not compliant**. These devices are blocked from Dynamics CRM.
 * **Devices that are registered with AAD and compliant**. These devices can access Dynamics CRM.
