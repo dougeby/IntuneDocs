@@ -55,17 +55,17 @@ Microsoft is releasing a new Microsoft Intune Company Portal for Windows 10 devi
 
 The new app will also allow users to leverage additional platform features like Single Sign-On and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store. It will also be available for sideloading.
 
-### Support for Windows Store for Business Apps being deployed as Available
+### Support for Windows Store for Business Apps Being Deployed as Available
 You can now deploy apps you synchronized from the Windows Store for Business (WSfB) with a deployment action of __Available__ or __Required__. After syncing WSfB apps into Intune, administrators will be able to target those apps as available installs to groups of users. End users will see the deployed WSfB apps as available for install in the Universal Company Portal, where they can choose whether they would like to acquire the apps.
 
 <!--### Conditional Access for MAM with SharePoint Online
 
 You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint online.  You can get started in Intune mobile app management via the Azure portal. Look for the  Conditional Access section in the “Settings” blade which now includes the option for SharePoint online.-->
 
-### Intune App SDK for Cordova plugin now supports MAM without enrollment
+### Intune App SDK for Cordova plugin Now Supports MAM without Enrollment
 App developers can now use the Intune App SDK for Cordova plugin to enable MAM functionality without device enrollment in their Cordova-based apps for Android and iOS. The Intune App SDK for Cordova plugin can be found [here](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam).
 
-### Intune App SDK Xamarin component now supports MAM without enrollment
+### Intune App SDK Xamarin Component Now Supports MAM without Enrollment
 App developers can now use the Intune App SDK Xamarin component to enable MAM functionality without device enrollment in their Xamarin-based apps for Android and iOS. The Intune App SDK Xamarin component can be found [here](https://github.com/msintuneappsdk/intune-app-sdk-xamarin).
 
 ## Deprecations
