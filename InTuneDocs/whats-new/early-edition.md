@@ -38,6 +38,12 @@ The following changes are under development for Intune. All of these features wi
 
 ## New capabilities
 
+### View App States for All Platforms in Real Time
+With this update, app installation status is shown in real-time in the console. Previously, when you deployed an app, you had to wait for a targeted device to report back before the app install status was displayed in the Intune console.
+
+### Streamline iOS App Management for your End Users
+If the end user of an enrolled iOS device previously installed an app from the app store and you then deploy the app with a deployment action of __Available__, then the end user will currently have to open the Company Portal, select the app, and tap __Install__ to enable Intune to take over management of the app. With this update, Intune can now automatically take over management of the previously installed app and no end user action is required.
+
 ### New Microsoft Intune Company Portal App for Windows 10 devices
 Microsoft is releasing a new Microsoft Intune Company Portal for Windows 10 devices. This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today. The new app will also allow users to leverage additional platform features like Single Sign On and Certificate based authentication on Windows 10 devices.
 
@@ -46,17 +52,25 @@ The app will be made available as an upgrade to the existing Windows 8.1 Company
 ### Windows Store for Business Apps in the New Company Portal App for Windows 10
 You can now deploy apps you synchronized from the Windows Store for Business (WSfB) with a deployment action of Available or Required. After syncing Windows Store for Business apps into Intune, administrators will be able to target those apps as available installs to groups of users. End users will see the deployed WSfB apps as available for install in the Universal Company Portal, where they can choose whether they would like to acquire the apps.
 
-### Conditional Access for MAM with SharePoint Online
+<!--### Conditional Access for MAM with SharePoint Online
 
-You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint online.  You can get started in Intune mobile app management via the Azure portal. Look for the  Conditional Access section in the “Settings” blade which now includes the option for SharePoint online.
+You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint online.  You can get started in Intune mobile app management via the Azure portal. Look for the  Conditional Access section in the “Settings” blade which now includes the option for SharePoint online.-->
+
+### Intune App SDK for Cordova plugin now supports MAM without enrollment
+App developers can now use the Intune App SDK for Cordova plugin to enable MAM functionality without device enrollment in their Cordova-based apps for Android and iOS. The Intune App SDK for Cordova plugin can be found [here](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam).
+
+### Intune App SDK Xamarin component now supports MAM without enrollment
+App developers can now use the Intune App SDK Xamarin component to enable MAM functionality without device enrollment in their Xamarin-based apps for Android and iOS. The Intune App SDK Xamarin component can be found [here](https://github.com/msintuneappsdk/intune-app-sdk-xamarin).
+
 
 ## Deprecations
 
-### Certificates and Support for the Windows Phone 8 Company Portal
+### Symantec Signing Certificate No Longer Required for Windows Phone 8 Company Portal
 
-From November 2016, the Windows Phone 8 Company Portal will no longer be required to upload a Symantec Signing Cert in the Intune Admin Console. In addition, the support for Windows Phone 8 Company Portal will also be deprecated.
+The Windows Phone 8 Company Portal will no longer be required to upload a Symantec signing certifcate in the Intune Admin Console.
 
-Support for the Windows Phone 8 and WinRT platforms was deprecated in October 2016. Support for the Windows 8 Company Portal was also deprecated in October 2016.
+### Support for the Windows Phone 8 Company Portal
+Support for Windows Phone 8 Company Portal will now be deprecated. Support for the Windows Phone 8 and WinRT platforms was deprecated in October 2016. Support for the Windows 8 Company Portal was also deprecated in October 2016.
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
