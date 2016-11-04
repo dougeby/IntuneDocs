@@ -49,7 +49,7 @@ Microsoft is releasing a new Microsoft Intune Company Portal for Windows 10 devi
 
 The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store. It will also be available for sideloading.
 
-### Windows Store for Business Apps in the New Company Portal App for Windows 10
+### Support for Windows Store for Business Apps being deployed as Available
 You can now deploy apps you synchronized from the Windows Store for Business (WSfB) with a deployment action of Available or Required. After syncing Windows Store for Business apps into Intune, administrators will be able to target those apps as available installs to groups of users. End users will see the deployed WSfB apps as available for install in the Universal Company Portal, where they can choose whether they would like to acquire the apps.
 
 <!--### Conditional Access for MAM with SharePoint Online
