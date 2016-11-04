@@ -36,7 +36,7 @@ To learn more about how conditional access works, read the [restrict access to e
 
 When a targeted user attempts to use the Dynamics CRM app on their device, the following evaluation occurs:
 
-![Diagram show the decision points used to determine whether a device is allowed access to a service or is blocked](../media/mdm-ca-dynamics-crm-flow-diagram.png)
+![Diagram that shows the decision points that are used to determine whether a device is allowed access to a service or is blocked](../media/mdm-ca-dynamics-crm-flow-diagram.png)
 
 The device that needs access to Dynamics CRM Online must be:
 * An **Android** or **iOS** device.
