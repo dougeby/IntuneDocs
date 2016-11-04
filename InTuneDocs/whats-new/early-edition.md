@@ -127,4 +127,3 @@ Due to changes in the policy structure for Conditional Access for Mobile App Man
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
- 
