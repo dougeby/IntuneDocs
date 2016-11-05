@@ -6,7 +6,7 @@ description: Learn how to monitor apps you deployed with Intune.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.suite: ems
 # Monitor app deployments in Microsoft Intune
 
 ## Monitor an app deployment
-You can see the apps that you manage and the status of any deployments in the Intune administration console.
+You can see the apps that you manage and the status of any deployments in the Intune administration console. App status is displayed in real-time. You don't have to wait for the device to check-in before you can see this.
 
 ### To view apps that you manage and their status
 In the **Apps** workspace, choose the **Apps** node, and then choose **Apps**.
