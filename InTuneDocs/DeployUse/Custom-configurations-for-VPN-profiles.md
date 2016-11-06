@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,15 @@ ms.suite: ems
 # Custom configurations for VPN profiles
 
 ## Create a custom configuration
-You can use custom configurations to create VPN profiles in Intune. To create a custom configuration:
+You can use custom configurations to create VPN profiles in Intune for:
+
+* Devices that run Android 4 and later
+* Android for Work devices
+* Enrolled devices that run Windows 8.1 and later
+* Devices that run Windows Phone 8.1 and later
+* Devices that run Windows 10 desktop and mobile
+
+To create a custom configuration:
 
    1. In the Intune admin console, **Policy** > **Add Policy** > *Expand platform* > **Custom configuration** > **Create Policy**.
    2. Provide a name for the policy.
