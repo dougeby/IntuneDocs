@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/05/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -75,7 +75,7 @@ b. Choose the lock icon &gt;  **More information**.
 1.  In the ISE console, go to **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate**.  
 2.       Export the self-signed certificate.
 3. In a text editor, edit the exported certificate:
-[comment]: <> I'd rather not put a period at the end of these two statements, I think it could be confusing.
+
  - Delete ** -----BEGIN CERTIFICATE-----**
  - Delete ** -----END CERTIFICATE-----**
  
