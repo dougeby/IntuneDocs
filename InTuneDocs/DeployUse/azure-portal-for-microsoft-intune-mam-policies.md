@@ -31,7 +31,7 @@ ms.suite: ems
 The Azure portal lets you create and manage mobile app management (MAM) policies.
 
 Azure portal supports creating MAM policies for:
-- Apps running on devices **enrolled and managed in Intune**.
+- Apps running on devices that are **enrolled and managed in Intune**.
 
 - Apps running on devices that are **not enrolled** in any MDM solution.
 - Apps running on devices that are **enrolled in a third-party MDM solution**.
