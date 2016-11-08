@@ -6,7 +6,7 @@ description: This topic describes the device compliance policy settings for Andr
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,8 @@ ms.suite: ems
 The policy settings described in this topic apply to devices running Android 4.0 and later, or Samsung KNOX Standard 4.0 and later.
 
 If you are looking for information about other platforms, select one of the following:
-> [!div class="op_single_selector"]
+> [!div class = "op_single_selector"]
+- [Compliance policy settings for Android for work](afw-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Windows devices](windows-compliance-policy-settings-in-microsoft-intune.md)
 
