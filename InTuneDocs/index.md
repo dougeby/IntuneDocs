@@ -8,7 +8,8 @@ layout: HubPage
 title: Intune Documentation | Microsoft Docs
 description: Technical documentation for Microsoft Intune - Mobile Device and Application Management
 keywords: intune documentation, app management, device management, MDM documentation, MAM documentation
-author: arob98ms.author: angrobe
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 10/07/2016
 ms.topic: hubpage
@@ -260,7 +261,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
       <div class="resource-list row">
           <ul class="column-half">
           <li><a href="https://microsoftintune.uservoice.com/" target="_blank">Give feedback on Intune functionality</a></li>
-          <li><a href="https://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" target="_blank">Give feedback on Intune documentation</a></li>
+          <li><a href="https://microsoftintune.uservoice.com/forums/291681-ideas/category/115707-documentation" target="_blank">Give feedback on documentation</a></li>
           <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune documentation downloads</a></li>
           </ul>
           <ul class="column-half">
