@@ -74,6 +74,8 @@ You can restrict access to Exchange Online email from **Outlook** and other **ap
 - iOS 8.0 and later
 - Windows Phone 8.1 and later
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Microsoft Office clients.
 
 -   The ADAL based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, the user is directed to a sign-in web page. This new sign-in method enables better security like **multi-factor authentication**, and **certificate-based authentication**.

@@ -6,7 +6,7 @@ description: Connect Microsoft Intune to the Windows Store for Business if you w
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 10/31/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -68,7 +68,7 @@ You can now continue, and set up synchronization in the Intune console.
 
 ## Deploy apps
 
-You deploy apps from the store in the same way you deploy any other Intune app. For more information, see [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
+You deploy apps from the store in the same way you deploy any other Intune app with a deployment action of **Required**, or **Available**. For more information, see [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 When you deploy a Windows Store for Business app, a license is used by each user who installs the app. If you use all of the available licenses for a deployed app, you will not be able to deploy any more copies. You must take one of the following actions:
 * Uninstall the app from some devices.
 * Reduce the scope of the current deployment to target only the users you have sufficient licenses for.
