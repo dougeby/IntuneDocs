@@ -4,9 +4,9 @@
 title: Install your company's Virtual Private Network (VPN) | Microsoft Intune
 description:
 keywords:
-author: staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,6 @@ If your IT administrator has configured a VPN application to enable you to  conn
 3.  Tap **Install corporate VPN profile** and follow the prompts. The installation steps may be slightly different, depending on which VPN provider your company is using.
 
 
-
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 

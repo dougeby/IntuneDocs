@@ -4,9 +4,9 @@
 title: Compliance policy settings for Android devices | Microsoft Intune
 description: This topic describes the device compliance policy settings for Android devices.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,13 +37,14 @@ If you're looking for information about other platforms, select one of the follo
 
 ## System security settings
 ### Password
-- **Require a password to unlock mobile devices:** Set this to **Yes** to require users to enter a password before they can access their device.
+- **Require a password to unlock mobile devices**: Set this to **Yes** to require users to enter a password before they can access their device.
 
--  **Minimum password length:** Specify the minimum number of digits or characters that the user’s password must contain.
+-  **Minimum password length**: Specify the minimum number of digits or characters that the user’s password must have.
 
-- **Password quality:** Enable this setting to configure password requirements for Android devices. Choose from:
+- **Password quality**: This setting detects if the password requirements that you specify are set up on the device. Enable this setting to require that users meet certain password requirements for Android devices. Choose from:
+
   -   **Low security biometric**
-  - **Required**
+  -   **Required**
   -   **At least numeric**
   -   **At least alphabetic**
   -   **At least alphanumeric**
@@ -51,9 +52,9 @@ If you're looking for information about other platforms, select one of the follo
 
 - **Minutes of inactivity before password is required:**  Specify the idle time before the user must re-enter their password.
 
-- **Password expiration (days):** Select the number of days before the user’s password expires and they must create a new one.
+- **Password expiration (days)**: Select the number of days before the user’s password expires and they must create a new one.
 
-- **Remember password history:** Use this setting in conjunction with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
+- **Remember password history**: Use this setting together with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
 
 - **Prevent reuse of previous passwords:** Specify the number of previously used passwords that cannot be re-used (if **Remember password history** is selected).
 
@@ -69,8 +70,9 @@ If you're looking for information about other platforms, select one of the follo
 
 - **Device must not be jailbroken or rooted:** If you enable this setting, jailbroken devices are evaluated as noncompliant.
 - **Require that devices prevent installation of apps from unknown sources (Android 4.0 or later)**: To block devices that have **Security > Unknown sources** enabled on the device, enable this setting and set it to **Yes**.  
+
 >[!IMPORTANT]
->Side-loading applications requires that the  **Unknown sources** setting is enabled.  You should only enforce this compliance policy if you are not side-loading Android apps on devices.
+>Side-loading applications require that the  **Unknown sources** setting is enabled. Enforce this compliance policy only if you are not side-loading Android apps on devices.
 
 - **Require that USB debugging is  disabled (Android 4.2 or later)**: Specify whether to detect if the USB debugging option on the device is enabled.
 - **Require devices have enabled Scan device for security threats (Android 4.2-4.4)**: Specify that the **Verify apps** feature is enabled on the device.
@@ -85,6 +87,7 @@ If you're looking for information about other platforms, select one of the follo
   For more details, see [Enable device threat protection rule in the compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md).
 
 ## Device property settings
+
 - **Minimum OS required:** When  a device does not meet the minimum OS version requirement, it is reported as noncompliant.
   A link with information about how to upgrade is displayed. The user can choose to upgrade their device, after which they can access company resources.
 

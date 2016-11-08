@@ -4,7 +4,7 @@
 title: Protect app data using MAM policies | Microsoft Intune
 description: This topic explains how  mobile app management policies can help protect your company data, prevent data loss, and keep personal and work information separate.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -128,8 +128,6 @@ However, there are some limitations to be aware of, like:
 Apps that support multi-identity gives you the ability to use different accounts - work and personal, to access the same apps while MAM policies are applied on when the apps are used in the work context.  
 
 For example, when the end user launches the OneDrive app using their work account, they cannot move the files to a personal storage location. However, when the end user uses OneDrive with their personal account, they can copy and move data from their personal OneDrive without restrictions.  
-
-For a detailed explanation of the experience of using apps that are associated with MAM policies, and how apps with Multi-identity support enable applying MAM policies only in work context, read [using apps with multi-identity support](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)
 
 All Office mobile apps support multi-identity.
 

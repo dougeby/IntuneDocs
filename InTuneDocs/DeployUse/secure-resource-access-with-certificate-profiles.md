@@ -4,9 +4,10 @@
 title: Certificate profiles for resource access |Microsoft Intune
 description: Secure VPN, Wi-Fi, and email access with a certificate installed on each user device.
 keywords:
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,13 +35,17 @@ When you give users access to corporate resources through VPN, Wi-Fi, or email p
  -  iOS 8.0 and later
  -  Mac OS X 10.9 and later
  -  Android 4.0 and later
+ -  Android for Work
  -  Windows 8.1 and later
  -  Windows Phone 8.1 and later
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 3. Create certificate profiles so that devices request a certificate to be used for authentication of VPN, Wi-Fi, and email access, as described in [Configure Intune certificate profiles](configure-intune-certificate-profiles.md). You can create and deploy a **PKCS #12 (.PFX) Certificate Profile** *or* a **SCEP Certificate Profile** for devices running these platforms:
 
   -  iOS 8.0 and later
   -  Android 4.0 and later
+  -  Android for Work
   -  Windows 10 (desktop and mobile) and later
 
   Use a **SCEP Certificate Profile** for devices running these platforms:

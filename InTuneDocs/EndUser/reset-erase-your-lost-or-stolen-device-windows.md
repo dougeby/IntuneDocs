@@ -2,9 +2,9 @@
 # required metadata
 
 title: Reset (erase) your lost or stolen Windows device | Microsoft Intune
-description:
+description: Reset a lost or stolen Windows device
 keywords:
-author: Staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -28,19 +28,17 @@ ms.suite: ems
 
 # Reset (erase) your lost or stolen device
 
-If a phone that has been enrolled in Intune is lost or stolen, you can reset it to factory default settings by using the [Company Portal website](http://portal.manage.microsoft.com).
+If a device that has been enrolled in Intune is lost or stolen, you can reset it to factory default settings by using the [Company Portal website](http://portal.manage.microsoft.com).
 
 
 > [!WARNING]
-> Resetting a device to factory defaults removes both your personal and work information from it. For more about what happens when you reset your device, see [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md).
+> Resetting a device to factory defaults removes both your personal and work information from it. For more about what happens when you reset your device, see [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 
 
 1.  In your browser, open your [Company Portal website](http://portal.manage.microsoft.com), and sign in to your work account.
 
 2.  Under **My Devices**, select the lost or stolen device.
 
-3.  Tap the **Reset** icon and then tap **reset**.
+3.  Tap the **Reset** icon, and then tap **reset**.
 
-If you are unable to reset your lost or stolen device, contact IT to reset it for you. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
+If you are unable to reset your lost or stolen device, contact IT to reset it for you. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

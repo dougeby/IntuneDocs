@@ -4,7 +4,7 @@
 title: Monitor app deployments| Microsoft Intune
 description: Learn how to monitor apps you deployed with Intune.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

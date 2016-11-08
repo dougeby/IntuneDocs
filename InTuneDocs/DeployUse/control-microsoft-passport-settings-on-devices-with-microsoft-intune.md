@@ -4,7 +4,7 @@
 title: Control Windows Hello for Business settings on devices | Microsoft Intune
 description: Learn how Intune integrates with Windows Hello for Business, an alternative sign-in method that uses Active Directory or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 09/20/2016
 ms.topic: article

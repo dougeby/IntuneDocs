@@ -4,7 +4,7 @@
 title: Common Windows PC management tasks | Microsoft Intune
 description: Review the tasks in this topic to learn how to manage Windows PCs that run the Intune software client.
 keywords:
-author: NathBarn
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 08/04/2016
 ms.topic: article
