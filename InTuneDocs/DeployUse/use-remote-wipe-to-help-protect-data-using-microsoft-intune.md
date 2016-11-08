@@ -71,7 +71,7 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 
 ## Selective wipe
 
-**Selective wipe** removes company data, including mobile app management (MAM) data where applicable, settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device. The device is removed from Intune. The following tables describe what data is removed, and the effect on data that remains on the device after a selective wipe. (The tables are organized by platform.)
+**Selective wipe** removes company data, including mobile app management (MAM) data (where applicable), settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device. The device is removed from Intune. The following tables describe what data is removed, and the effect on data that remains on the device after a selective wipe. (The tables are organized by platform.)
 
 **iOS**
 
