@@ -3,13 +3,13 @@
 ---
 # required metadata
 
-title: The early edition | Microsoft Intune
+title: The Early Edition | Microsoft Intune
 description:
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/4/2016
+ms.date: 11/8/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,14 +46,14 @@ Intune can now automatically take over management of the previously installed ap
 
 Previously, if the end user of an enrolled iOS device installed an app from the App Store before you deployed that same app with a deployment action of __Available__, then the end user had to:
 
-1. Open the Company Portal.
+1. Open the __Company Portal__.
 2. Select the app.
 3. Tap __Install__ to enable Intune to take over management of the app.
 
 ### New Microsoft Intune Company Portal App for Windows 10 devices
 Microsoft is releasing a new Intune Company Portal for Windows 10 devices. This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike - while still enabling all the same functionality that they are using today.
 
-The new app will also allow users to leverage additional platform features like Single Sign-On and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store. It will also be available for sideloading.
+The new app will also allow users to leverage additional platform features like single sign-on and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store. It will also be available for sideloading.
 
 ### Support for Windows Store for Business Apps Being Deployed as Available
 You can now deploy apps you synchronized from the Windows Store for Business (WSfB) with a deployment action of __Available__ or __Required__. After syncing WSfB apps into Intune, administrators will be able to target those apps as available installs to groups of users. End users will see the deployed WSfB apps as available for install in the Universal Company Portal, where they can choose whether they would like to acquire the apps.
