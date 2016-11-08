@@ -28,3 +28,5 @@ ms.suite: ems
 # App Deployment and Management in Microsoft Intune
 
 
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+

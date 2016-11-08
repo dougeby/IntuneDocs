@@ -28,3 +28,4 @@ ms.suite: ems
 # What's new in the Microsoft Intune Preview
 
 
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]

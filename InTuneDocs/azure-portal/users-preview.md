@@ -28,3 +28,4 @@ ms.suite: ems
 # Working with users in the Microsoft Intune Preview
 
 
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]

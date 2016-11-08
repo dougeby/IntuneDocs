@@ -28,3 +28,4 @@ ms.suite: ems
 # Enrollment and Setup
 
 
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
