@@ -72,7 +72,7 @@ If you're looking for information about other platforms, select one of the follo
 - **Require that devices prevent installation of apps from unknown sources (Android 4.0 or later)**: To block devices that have **Security > Unknown sources** enabled on the device, enable this setting and set it to **Yes**.  
 
 >[!IMPORTANT]
->Side-loading applications require that the  **Unknown sources** setting is enabled. Enforce this compliance policy only if you are not side-loading Android apps on devices.
+>Side-loading applications requires that the  **Unknown sources** setting is enabled. Enforce this compliance policy only if you are not side-loading Android apps on devices.
 
 - **Require that USB debugging is  disabled (Android 4.2 or later)**: Specify whether to detect if the USB debugging option on the device is enabled.
 - **Require devices have enabled Scan device for security threats (Android 4.2-4.4)**: Specify that the **Verify apps** feature is enabled on the device.
