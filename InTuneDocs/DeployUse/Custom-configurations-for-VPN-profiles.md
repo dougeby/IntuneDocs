@@ -4,9 +4,10 @@
 title: Custom configurations for VPN profiles | Microsoft Intune
 description: Use custom configurations to create VPN profiles in Intune.
 keywords:
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,9 +29,17 @@ ms.suite: ems
 # Custom configurations for VPN profiles
 
 ## Create a custom configuration
-You can use custom configurations to create VPN profiles in Intune. To create a custom configuration:
+You can use custom configurations to create VPN profiles in Intune for:
 
-   1. In the Intune admin console, **Policy** > **Add Policy** > *<Expand platform>* > **Custom configuration** > **Create Policy**.
+* Devices that run Android 4 and later
+* Android for Work devices
+* Enrolled devices that run Windows 8.1 and later
+* Devices that run Windows Phone 8.1 and later
+* Devices that run Windows 10 desktop and mobile
+
+To create a custom configuration:
+
+   1. In the Intune admin console, **Policy** > **Add Policy** > *Expand platform* > **Custom configuration** > **Create Policy**.
    2. Provide a name for the policy.
    3. For each URI setting, choose **Add**, and provide the requested information. Here's an example:
 
@@ -114,7 +123,7 @@ https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
 ## URI settings for Android per-app VPN on PulseSecure
 ### CUSTOM URI FOR PACKAGE LIST
 -  Data type = String
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  Value = Delimiter separated package list.
    - Delimiters:  semicolon (;), colon (:), comma (,), Pipe (|)
 

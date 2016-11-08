@@ -2,11 +2,11 @@
 # required metadata
 
 title: Azure portal for MAM policies | Microsoft Intune
-description: Create mobile app management policies using the Azure portal. The policies you create here can be applied to devices with or without enrollment in Intune.
+description: Create mobile app management policies by using the Azure portal. The policies you create here can be applied to devices with or without enrollment in Intune.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,23 +26,27 @@ ms.suite: ems
 ---
 
 # Azure portal for Microsoft Intune MAM policies
-## Access the Azure  portal
-The **Azure  portal** allows you create and manage mobile app management (MAM) policies.
+
+## Use the Azure portal
+The Azure portal lets you create and manage mobile app management (MAM) policies.
 
 Azure portal supports creating MAM policies for:
-- Apps running on devices that are **enrolled and managed by Intune**.
+- Apps running on devices **enrolled and managed in Intune**.
+
 - Apps running on devices that are **not enrolled** in any MDM solution.
-- Apps running on devices that are **enrolled in a third party MDM solution**.
+- Apps running on devices that are **enrolled in a third-party MDM solution**.
 
 >[!IMPORTANT]
 
-> If you are currently using the Intune admin console to manage your devices, you can create a MAM policy that supports apps for devices enrolled in Intune by using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
-> You might not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies. If you create MAM policies by using both Intune admin console and the Azure portal, the policy in the Azure portal is applied to the apps and deployed to users.
+> If you are using the Intune admin console to manage your devices, you can create a MAM policy that supports apps for devices enrolled in Intune by using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
+> You might not see all MAM policy settings on the Intune admin console. The Azure portal is the new admin console for creating MAM policies. If you create MAM policies both on the Intune admin console and in the Azure portal, the policy in the Azure portal is applied to the apps and deployed to users.
+
 
 ## Sign in to the Azure portal and customize your start page
 
-1.  Go the [Azure  portal](https://portal.azure.com) and sign in with  your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] credentials.
+1.  Go the [Azure portal](https://portal.azure.com) and sign in with your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] credentials.
 
     ![Screenshot of the Azure portal sign-in page](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
@@ -52,11 +56,12 @@ Azure portal supports creating MAM policies for:
 
 3.  On the **Browse** menu, find **Intune**.![Screenshot of the Browse menu with Intune highlighted](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  Choose **Intune > Intune mobile application management > Settings**.
+4.  Choose **Intune** > **Intune mobile application management** > **Settings**.
 
     ![Screenshot of the Intune mobile application management blade](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
     > [!TIP]
+
     > To pin a blade to the **Start** page, you can use the **pin** option on the blade. Click the pin icon on the **Intune mobile application management blade** to pin that blade to the **Start** page.
 
     ![Screenshot of the Intune mobile application management blade with the pin icon highlighted](../media/AppManagement/AzurePortal_MAM_PinBladeAction.png)

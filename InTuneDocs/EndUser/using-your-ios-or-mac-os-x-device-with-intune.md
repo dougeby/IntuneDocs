@@ -4,9 +4,9 @@
 title: Using your iOS or Mac OS X device with Intune | Microsoft Intune
 description: List of links to tasks that you can do on your iOS or Mac OS X mobile device when the device is enrolled in Intune
 keywords:
-author: Staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,16 +34,16 @@ This article includes links to all of the tasks that end-users can do on their I
 
 ## Company Portal app installation and Intune enrollment
 
-The information in this section helps you with Intune Company Portal installation and device enrollment for iOS devices.
+The information in this section helps users with Intune Company Portal installation and device enrollment for iOS devices.
 
 - [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md)
 - [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
-## Things you can do when your device is enrolled in Intune
+## Things users can do when their device is enrolled in Intune
 
-The information in this section helps you with actions that you can take after your iOS device is enrolled in Intune.
+The information in this section helps users with actions that they can take after their iOS device is enrolled in Intune.
 
 - [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 - [Set or change your passcode](set-or-change-your-passcode-ios.md)
@@ -54,9 +54,9 @@ The information in this section helps you with actions that you can take after y
 - [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 - [Sync your device manually](sync-your-device-manually-ios.md)
 
-## Fix issues with your device
+## Steps to fix device and compliance issues
 
-The information in this section helps you fix issues that you might encounter when your iOS device is enrolled in Intune.
+The information in this section helps users fix issues that they might encounter when their iOS device is enrolled in Intune.
 
 - [How to reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device.md)
 - [Send errors to your IT admin](send-errors-to-your-it-admin-ios.md)
@@ -66,3 +66,5 @@ The information in this section helps you fix issues that you might encounter wh
 - [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [Device doesn't have the required minimum operating system version](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)
 - [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
+- [You are prompted to install Lookout for Work on your iOS device](you-are-prompted-to-install-lookout-for-work-ios.md)
+- [You need to resolve a threat that Lookout for Work found on your iOS device](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)

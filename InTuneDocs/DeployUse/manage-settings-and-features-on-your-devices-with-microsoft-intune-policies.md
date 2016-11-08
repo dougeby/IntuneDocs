@@ -4,9 +4,9 @@
 title: Manage device settings with policies | Microsoft Intune
 description: Use Intune to create and deploy policies that control settings and features on enrolled devices that you manage.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,11 +42,9 @@ For details, see [Restrict access to email and O365 services with Microsoft Intu
 - **Resource access policies**: These policies work together to help your users gain access to the files and resources that they need to do their work successfully, wherever they are.
 For details, see [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 For a complete list of Intune policies, see [Microsoft Intune policy reference](microsoft-intune-policy-reference.md).
-
-
-
 
 ## Create a configuration policy
 
@@ -67,6 +65,7 @@ For a complete list of Intune policies, see [Microsoft Intune policy reference](
 
 	- [Settings for iOS devices](ios-policy-settings-in-microsoft-intune.md)
 	- [Settings for Android devices](android-policy-settings-in-microsoft-intune.md)
+	- [Settings for Android for Work devices](android-for-work-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows 8 and Windows 8.1 devices](windows-configuration-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows Phone 8.1 devices](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 	- [Settings for Windows 10 desktop and mobile devices](windows-10-policy-settings-in-microsoft-intune.md)
@@ -121,7 +120,6 @@ If a device doesn't check in to get the policy after the first notification is s
 - iOS and Mac OS X: Every 6 hours.
 - Android: Every 8 hours.
 - Windows Phone: Every 8 hours.
-- Enrolled Windows RT devices: Every 24 hours.
 - Windows 8.1 and Windows 10 PCs enrolled as devices: Every 8 hours.
 
 If the device has just enrolled, the check-in frequency will be more frequent, as follows:
@@ -133,7 +131,7 @@ If the device has just enrolled, the check-in frequency will be more frequent, a
 
 Users can also open the Company Portal app and sync the device to immediately check for the policy anytime.
 
-### What actions cause Intune to immediately send a notification  to a device?
+### What actions cause Intune to immediately send a notification to a device?
 Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app deployment, profile deployment (Wi-Fi, VPN, email, etc.), or policy deployment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.
 
 Other changes, such as revising the contact information in the company portal, do not cause an immediate notification to devices.

@@ -4,7 +4,7 @@
 title: Create groups to organize users and devices | Microsoft Intune
 description: How to create device groups and user groups when you sign up for a free, 30-day evaluation of Intune
 keywords:
-author: lindavr
+author: lindavrms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

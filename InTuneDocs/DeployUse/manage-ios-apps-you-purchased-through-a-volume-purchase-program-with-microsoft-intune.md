@@ -4,9 +4,9 @@
 title: Manage volume-purchased iOS apps | Microsoft Intune
 description: Use Intune to manage apps that you volume purchased from Apple by importing the license information from the app store, tracking how many of the licenses you have used, and preventing you from installing more copies of the app than you own.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/01/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,6 +32,7 @@ Microsoft Intune helps you manage apps that you purchased through this program b
 
 > [!Important]
 > Currently, Intune assigns iOS Volume Purchase Program for Business (VPP) app licenses to users and not devices. Because of this, users must enter their Apple ID password to install the app.
+> The Apple Volume Purchase Program for Education is not supported in this release.
 
 ## Manage volume-purchased apps for iOS devices
 You purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/). This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.

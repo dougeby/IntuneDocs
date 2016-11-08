@@ -2,9 +2,9 @@
 # required metadata
 
 title: Protect apps and data | Microsoft Intune
-description:
-keywords: This topic describes the various Intune features and capabilities that are available to you to help protect your company apps and data.
-author: karthikaraman
+description: This topic describes the various Intune features and capabilities that are available to you to help protect your company apps and data.
+keywords:
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -51,7 +51,7 @@ You can protect your company data using MAM policies for devices that are **enro
 
 To associate an app with a MAM policy, the app must incorporate the Microsoft Intune App Software Development Kit (SDK), or use the App wrapping tool.
 
-Apps like Microsoft Office apps have the App SDK built-in. The full list of supported apps can be found on the [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) in the Microsoft Intune application partners page. Choose the app to see the supported scenarios, platforms and whether or not the app supports multi-identity.
+Apps like Microsoft Office apps have the App SDK built-in. The full list of supported apps can be found on the [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) in the Microsoft Intune application partners page. Choose the app to see the supported scenarios, platforms and whether or not the app supports multi-identity.
 
 You can also [enable your custom built line of business apps](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) to use with MAM policies.
 
