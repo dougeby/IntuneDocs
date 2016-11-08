@@ -4,7 +4,7 @@
 title: How your iOS users get their apps | Microsoft Intune
 description: Methods for making iOS apps available to end users
 keywords:
-author: Staciebarkerms.author: staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 10/28/2016
 ms.topic: article

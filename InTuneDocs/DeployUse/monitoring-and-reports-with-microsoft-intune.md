@@ -4,7 +4,7 @@
 title: Monitoring and reports | Microsoft Intune
 description: Use Intune monitoring and reports to monitor the status of devices in your organization.
 keywords:
-author: Nbigmanms.author: nbigman
+manager: angrobe
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article

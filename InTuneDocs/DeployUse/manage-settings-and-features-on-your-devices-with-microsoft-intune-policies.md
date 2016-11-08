@@ -6,7 +6,7 @@ description: Use Intune to create and deploy policies that control settings and 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 10/11/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,11 +42,9 @@ For details, see [Restrict access to email and O365 services with Microsoft Intu
 - **Resource access policies**: These policies work together to help your users gain access to the files and resources that they need to do their work successfully, wherever they are.
 For details, see [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 For a complete list of Intune policies, see [Microsoft Intune policy reference](microsoft-intune-policy-reference.md).
-
-
-
 
 ## Create a configuration policy
 
@@ -133,7 +131,7 @@ If the device has just enrolled, the check-in frequency will be more frequent, a
 
 Users can also open the Company Portal app and sync the device to immediately check for the policy anytime.
 
-### What actions cause Intune to immediately send a notification  to a device?
+### What actions cause Intune to immediately send a notification to a device?
 Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app deployment, profile deployment (Wi-Fi, VPN, email, etc.), or policy deployment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.
 
 Other changes, such as revising the contact information in the company portal, do not cause an immediate notification to devices.
