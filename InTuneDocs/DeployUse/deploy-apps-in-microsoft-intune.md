@@ -55,8 +55,10 @@ In this procedure, you'll deploy an app to selected groups of devices or users.
 6. If the app you are deploying is compatible with Intune VPN profiles, the **VPN Profile** page is displayed. On this page, you can choose to associate iOS apps with a VPN profile that you have deployed. The VPN connection automatically opens when the app is launched. To make a VPN profile available, it must have the **Per-app VPN** profile setting enabled.
  For information about how to configure VPN profiles, including information about how to associate profiles with apps, see [VPN connections in Microsoft Intune](vpn-connections-in-microsoft-intune.md).
 
+<!---
 >[!TIP]
 >If an end user previously installed an iOS app and you now deploy it with a deployment action of **Available**, Intune will automatically begin to manage that app with no further action required by you, or the end-user.
+--->
 
 ## Example
 
