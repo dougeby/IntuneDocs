@@ -52,9 +52,9 @@ There are two categories of policy settings: data relocation settings and access
   Default value = **Yes**
 - **Restrict cut, copy, and paste with other apps**: Specify when cut, copy, and paste actions should be restricted. Choose from:
   -   **Blocked**: Does not allow cut, copy, and paste actions between policy-managed apps.
-  -   **Policy Managed Apps**: Enables cut, copy, and paste actions only between policy-managed apps.
-  -   **Policy Managed Apps with paste in**: Enables cut or copy between policy-managed apps. Enables cut or copied data from any app to be pasted into this app.
-  -   **Any App**: There are no restrictions for cut, copy, and paste actions between any apps.
+  -   **Policy Managed apps**: Enables cut, copy, and paste actions only between policy-managed apps.
+  -   **Policy Managed apps with paste in**: Enables cut or copy between policy-managed apps. Enables cut or copied data from any app to be pasted into this app.
+  -   **Any app**: There are no restrictions for cut, copy, and paste actions between any apps.
 
   Default value = **Policy managed apps with paste in**
 -   **Restrict web content to display in the Managed Browser**: Choose **yes** to specify that all links in the app will be opened in the Managed Browser app.
@@ -89,8 +89,8 @@ There are two categories of policy settings: data relocation settings and access
  - **PIN Length**: Specify the minimum number of digits in a PIN. Default value = **4**.
  - **Number of attempts before PIN reset**: Specify the number of PIN entry attempts that can be made before the user must reset the PIN. There is no default value for this setting.
  - **Require fingerprint instead of PIN (Android 6.0+):** Choose **Yes** to require a fingerprint identity instead of a numbered PIN for app access.
- On Android devices, you can allow the user to identify themselves by using fingerprint instead of a numbered PIN. When they try to access this app by using their work account, they are prompted to provide their fingerprint identity instead of entering a PIN.
- - **Require corporate credentials for access**: Choose **Yes** to require corporate credentials instead of a PIN or fingerprint for app access. If you set this to **Yes**, this setting overrides the requirements for PIN or Touch ID. The user will be prompted to provide their corporate credentials. Default value = **No**.
+ On Android devices, you can enable the user to identify themselves by using fingerprint instead of a numbered PIN. When they try to access this app by using their work account, they are prompted to provide their fingerprint identity instead of entering a PIN.
+ - **Require corporate credentials for access**: Choose **Yes** to require corporate credentials instead of a PIN or fingerprint for app access. If you set this to **Yes**, this setting overrides the requirements for a PIN or Touch ID. The user will be prompted to provide their corporate credentials. Default value = **No**.
 
 
 - **Block managed apps from running on jailbroken or rooted devices**: Choose **Yes** to block apps from running on jailbroken or rooted devices. The user can continue to use the apps for personal tasks, but must use a different device for work.
