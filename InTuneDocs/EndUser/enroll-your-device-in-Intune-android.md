@@ -30,7 +30,7 @@ ms.suite: ems
 
 If your company or school uses Microsoft Intune, you can enroll your Android device to get access to company email, files, and other resources. When you enroll your devices, your IT department can manage those work or school resources, keep them secure, and give you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens when I install and Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
 
-These enrollment instructions are for Samsung Knox Android devices and "native" (non-Samsung Knox) Android devices. To check if you have a Samsung Knox device, go to **Settings** &gt; **About device**. If you don't see "KNOX version" listed there, you have a native Android device.
+These enrollment instructions are for Samsung KNOX Android devices and "native" (non-Samsung Knox) Android devices. To check if you have a Samsung KNOX device, go to **Settings** &gt; **About device**. If you don't see "KNOX version" listed there, you have a native Android device.
 
 Before or after enrolling, you may be asked to choose a category that best describes how you use your device. Your IT admin uses this category to help check the apps that you have access to.
 

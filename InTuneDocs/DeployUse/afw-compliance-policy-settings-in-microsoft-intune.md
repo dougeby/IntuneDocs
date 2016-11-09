@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Compliance policy settings for Android for Work devices in Microsoft Intune
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 The policy settings described in this topic apply to Android for Work devices.
 
 If you are looking for information about other platforms, select one of the following:
