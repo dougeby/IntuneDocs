@@ -38,7 +38,7 @@ The following changes are under development for Intune. All of these features wi
 
 ## New Capabilities
 
-### View App States for All Platforms in Real Time
+<!--### View App States for All Platforms in Real Time
 App installation status is now shown in real-time in the console. When you previously deployed an app, you had to wait for a targeted device to report back before the app install status was displayed in the Intune console.
 
 ### Streamline iOS App Management for your End Users
@@ -48,7 +48,7 @@ Previously, if the end user of an enrolled iOS device installed an app from the 
 
 1. Open the __Company Portal__.
 2. Select the app.
-3. Tap __Install__ to enable Intune to take over management of the app.
+3. Tap __Install__ to enable Intune to take over management of the app.-->
 
 ### New Microsoft Intune Company Portal App for Windows 10 devices
 Microsoft is releasing a new Intune Company Portal for Windows 10 devices. This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike - while still enabling all the same functionality that they are using today.
