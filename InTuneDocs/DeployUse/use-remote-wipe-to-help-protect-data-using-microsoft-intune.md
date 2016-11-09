@@ -4,7 +4,7 @@
 title: Use remote wipe to help protect data | Microsoft Intune
 description: Intune provides selective wipe and full wipe capabilities to remove sensitive corporate data and remove access to many corporate resources.
 keywords:
-author: NathBarnms.author: nathbarn
+author: staciebarkerms.author: staciebarker
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
@@ -71,7 +71,7 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 
 ## Selective wipe
 
-**Selective wipe** removes company data, including mobile app management (MAM) data where applicable, settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device. The device is removed from Intune. The following tables describe what data is removed, and the effect on data that remains on the device after a selective wipe. (The tables are organized by platform.)
+**Selective wipe** removes company data, including mobile app management (MAM) data (where applicable), settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device. The device is removed from Intune. The following tables describe what data is removed, and the effect on data that remains on the device after a selective wipe. (The tables are organized by platform.)
 
 **iOS**
 
