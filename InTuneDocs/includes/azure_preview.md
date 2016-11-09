@@ -1,0 +1,1 @@
+<Token xmlns:xlink="http://www.w3.org/1999/xlink">This topic provides documentation for the Azure Portal-based preview of Intune. This information is for preview purposes only, and might change before release.</Token>

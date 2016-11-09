@@ -105,7 +105,7 @@ You can also use Microsoft Intune to manage Windows PCs with the Intune client s
 
  - Report software and hardware inventories
  - Install desktop applications (for example .exe and .msi files)
- - Firewall settings
+ - Manage firewall settings
 
 PCs that are managed with the Intune client software cannot be fully wiped, although selective wipe is available. PCs managed with the Intune software client cannot take advantage of many Intune management features such as conditional access, VPN and Wi-Fi settings, or deployment of certificates and email configurations.
 

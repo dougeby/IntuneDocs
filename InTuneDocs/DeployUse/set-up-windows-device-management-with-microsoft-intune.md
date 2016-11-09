@@ -61,8 +61,12 @@ If you haven’t already, prepare for mobile device management by  [setting the 
 
 4.  **Optional steps**<br>The **Add Sideloading keys** step is not needed for Windows 10. The **Upload Code-Signing Certificate** step is only needed if you will distribute line-of-business (LOB) apps that are not available from the Windows Store to devices.
 
-6.  **Inform users**<br>You'll need to tell your users how to enroll their devices and what to expect after they're brought into management:
-      - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+6.  **Tell your users how to enroll their devices and what to expect after they're brought into management.**
+
+	For end-user enrollment instructions, see [Enroll your Windows device in Intune](../enduser/enroll-your-device-in-intune-windows.md).
+
+	For more information about end-user tasks, see these articles:
+      - [Resources about the end-user experience with Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [End user guidance for Windows devices](../enduser/using-your-windows-device-with-intune.md)
 
 ### See also
