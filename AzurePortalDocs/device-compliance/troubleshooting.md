@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Devices and Groups | Microsoft Intune Preview
-description: Use this topic to learn how to work with devices and groups in Microsoft Intune
+title: On-Premises Access | Microsoft Intune Preview
+description: Use this topic to learn about On-Premises Access Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d5ea781e-a850-4528-8f18-9380cea7a0c8
+ms.assetid: 49265491-6256-445a-9d30-3f97a16d3953
 
 # optional metadata
 
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Devices and Groups in Microsoft Intune
+# On-Premises Access for Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

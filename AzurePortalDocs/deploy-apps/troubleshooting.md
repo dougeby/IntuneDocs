@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Device Compliance | Microsoft Intune Preview
-description: Use this topic to learn about device compliance in Microsoft Intune
+title: On-Premises Access | Microsoft Intune Preview
+description: Use this topic to learn about On-Premises Access Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 99094bcd-210f-4f10-ab59-5dfa23c12462
+ms.assetid: 49265491-6256-445a-9d30-3f97a16d3953
 
 # optional metadata
 
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Device Compliance in Microsoft Intune
+# On-Premises Access for Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
