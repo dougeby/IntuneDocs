@@ -70,8 +70,8 @@ App developers can now use the Intune App SDK Xamarin component to enable MAM fu
 
 ## Notices
 
-### Symantec Signing Certificate No Longer Required for Windows Phone 8 Company Portal
-The Windows Phone 8 Company Portal app will no longer require a Symantec signing certificate to be uploaded in the Intune Admin Console.
+### Symantec Signing Certificate No Longer Requires Signed Windows Phone 8 Company Portal for Upload
+Uploading the Symantec signing certificate will no longer require a signed Windows Phone 8 Company Portal app. The certificate can be uploaded independently.
 
 ## Deprecations
 
