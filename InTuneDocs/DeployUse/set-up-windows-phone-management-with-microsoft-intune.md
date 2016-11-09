@@ -62,7 +62,11 @@ You can let users install and enroll their devices by using the Intune Company P
 
 4.  **Optional steps**<br>The **Add Sideloading keys** step is not needed for Windows 10. The **Upload Code-Signing Certificate** step is only needed if you will distribute line-of-business (LOB) apps that are not available from the Windows Store to devices.
 
-5.  **Inform users**<br>Your users will need to know how to enroll their devices and what to expect after they're brought into management.
+5.  **Tell your users how to enroll their devices to get access to company resources.**
+
+	For end-user enrollment instructions, see [Enroll your Windows device in Intune](../enduser/enroll-your-device-in-intune-windows.md). You can also send users to [What can your IT administrator see when you enroll your device in Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+
+	For information about other end-user tasks, see these articles:
     - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
     - [End user guidance for Windows devices](../enduser/using-your-windows-device-with-intune.md)
 

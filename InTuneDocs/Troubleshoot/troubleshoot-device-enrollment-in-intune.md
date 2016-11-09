@@ -4,7 +4,7 @@
 title: Troubleshoot device enrollment| Microsoft Intune
 description: Suggestions for troubleshooting device enrollment issues.
 keywords:
-author: nathbarnms.author: nathbarn
+author: staciebarkerms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
