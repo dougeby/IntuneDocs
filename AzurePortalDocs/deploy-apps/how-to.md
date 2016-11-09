@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: App Deployment and Management | Microsoft Intune Preview
-description: Use this topic to learn how to work with apps in Microsoft Intune
+title: On-Premises Access | Microsoft Intune Preview
+description: Use this topic to learn about On-Premises Access Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: c135f588-9a92-429e-83ab-011d4e5ffa58
+ms.assetid: 49265491-6256-445a-9d30-3f97a16d3953
 
 # optional metadata
 
@@ -25,8 +25,7 @@ ms.suite: ems
 
 ---
 
-# App Deployment and Management in Microsoft Intune
+# On-Premises Access for Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
-

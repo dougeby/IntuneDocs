@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshooting and Support | Microsoft Intune Preview
-description: Use this topic to get help and support for Microsoft Intune
+title: On-Premises Access | Microsoft Intune Preview
+description: Use this topic to learn about On-Premises Access Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 3a29e8ff-3f08-44a3-aa0a-eda784c9349d
+ms.assetid: 49265491-6256-445a-9d30-3f97a16d3953
 
 # optional metadata
 
@@ -25,6 +25,7 @@ ms.suite: ems
 
 ---
 
-# Troubleshooting and Support for Microsoft Intune
+# On-Premises Access for Microsoft Intune
+
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

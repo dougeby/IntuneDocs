@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Users | Microsoft Intune Preview
-description: Use this topic to learn how to work with users in Microsoft Intune
+title: On-Premises Access | Microsoft Intune Preview
+description: Use this topic to learn about On-Premises Access Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 5025a7b0-1f10-4577-90f8-b1b03437d8f0
+ms.assetid: 49265491-6256-445a-9d30-3f97a16d3953
 
 # optional metadata
 
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Working with users in the Microsoft Intune Preview
+# On-Premises Access for Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
