@@ -24,7 +24,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What's New Archive 
+# What's New Archive
+
+This page is an archive of recent announcements made in [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md). 
 
 ## September 2016
 ### New features, announcements and information
@@ -114,3 +116,6 @@ The Windows Phone 8.1 Company Portal app enables end users to send feedback abou
 
 ### Intune glossary</br>
 We’ve added a new [glossary topic](https://docs.microsoft.com/intune/understand-explore/intune-glossary) to the library to help you understand some of the terms used in the Intune product.
+
+### See also
+See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
