@@ -28,4 +28,4 @@ ms.suite: ems
 # Introduction to the Azure Portal for Microsoft Intune
 
 
-[!INCLUDE[azure_preview](/intune-azure/includes/azure_preview)]
+[!INCLUDE[azure_preview](/intune-azure/includes/azure_preview.md)]
