@@ -58,9 +58,9 @@ The public preview of the updated Intune App Wrapping Tool now supports MAM with
 
 Anyone can test the public preview software and read helpful documentation, located in msintuneappsdk's GitHub:
 
-  http://www.github.com/msintuneappsdk/intune-app-wrapper-ios-preview
+<p style="margin-left: 40px">http://www.github.com/msintuneappsdk/intune-app-wrapper-ios-preview
 
-  http://www.github.com/msintuneappsdk/intune-app-wrapper-android-preview
+<p style="margin-left: 40px">http://www.github.com/msintuneappsdk/intune-app-wrapper-android-preview
 
 Before you install and use Microsoft Intune App Wrapper for Android and iOS Pre-Release you must:
 
@@ -89,21 +89,21 @@ __iOS__
 <p style="margin-left: 40px">All users of the Microsoft Intune Company Portal app for iOS are now required to use its latest version. New users are able to download only the latest version, and current users are required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions cannot use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.
 <!---TFS 1283165--->
 
-  **Improvements in how iOS end users get their apps**<br/>
-  The following changes have been made to the apps tiles in the Company Portal app for iOS to point users to different views in a single location, the Company Portal website, for all of their apps. Apple restrictions prohibit line-of-business and managed app store apps from being listed in the Company Portal app, and require users to visit different views to find all of their apps.
+<p style="margin-left: 40px">**Improvements in how iOS end users get their apps**<br/>
+<p style="margin-left: 40px">The following changes have been made to the apps tiles in the Company Portal app for iOS to point users to different views in a single location, the Company Portal website, for all of their apps. Apple restrictions prohibit line-of-business and managed app store apps from being listed in the Company Portal app, and require users to visit different views to find all of their apps.
 
-  - The **Company Apps** tile previously pointed to a list of all apps in the ALL tab of the Company Portal website, and it will continue to work the same way. The tile name has changed to **All Apps**.
-  - The **Other Apps** tile previously pointed to a view, inside the Company Portal app, that lists all apps that Apple permits the Company Portal app to show. The tile name has changed to **Featured Apps**, and tapping the tile will take users to the FEATURED tab of the Company Portal website.
-  -  The **Categories** tile previously pointed to a view, inside the Company Portal app, that lists categories of apps. The tile name has not changed, but it now points to the CATEGORIES tab of the Company Portal website. You can find updated screenshots [here](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
+<p style="margin-left: 40px">- The **Company Apps** tile previously pointed to a list of all apps in the ALL tab of the Company Portal website, and it will continue to work the same way. The tile name has changed to **All Apps**.
+<p style="margin-left: 40px">- The **Other Apps** tile previously pointed to a view, inside the Company Portal app, that lists all apps that Apple permits the Company Portal app to show. The tile name has changed to **Featured Apps**, and tapping the tile will take users to the FEATURED tab of the Company Portal website.
+<p style="margin-left: 40px">-  The **Categories** tile previously pointed to a view, inside the Company Portal app, that lists categories of apps. The tile name has not changed, but it now points to the CATEGORIES tab of the Company Portal website. You can find updated screenshots [here](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
   <!---TFS 1317133--->
 
-  **Prompt to install the iOS Managed Browser app if IT Pro sets that requirement for an app**<br/>
-  If you have configured a web clip to open only in the managed browser, and the managed browser is not installed on a device, the Company Portal app on the device will prompt the user to install the managed browser before the web clip can be installed.
+<p style="margin-left: 40px">**Prompt to install the iOS Managed Browser app if IT Pro sets that requirement for an app**<br/>
+<p style="margin-left: 40px">If you have configured a web clip to open only in the managed browser, and the managed browser is not installed on a device, the Company Portal app on the device will prompt the user to install the managed browser before the web clip can be installed.
   <!---TFS 1228570--->
 
 __Windows__
-  **Feedback button added to Windows Phone 8.1 Company Portal app**<br/>
-  The Windows Phone 8.1 Company Portal app enables end users to send feedback about the app by using a new "send feedback" button. To find the button, users tap the “three dots” menu at the bottom right of the Company Portal app screen and then tap **send feedback**. The collected, anonymized feedback will help Microsoft improve the Company Portal app experience for users.
+<p style="margin-left: 40px">**Feedback button added to Windows Phone 8.1 Company Portal app**<br/>
+<p style="margin-left: 40px">The Windows Phone 8.1 Company Portal app enables end users to send feedback about the app by using a new "send feedback" button. To find the button, users tap the “three dots” menu at the bottom right of the Company Portal app screen and then tap **send feedback**. The collected, anonymized feedback will help Microsoft improve the Company Portal app experience for users.
 <!---TFS 1317806--->
 
 ### Intune glossary</br>
