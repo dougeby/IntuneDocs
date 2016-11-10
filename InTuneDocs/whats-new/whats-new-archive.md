@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 # What's New Archive
 
-This page is an archive of recent announcements made in [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md). 
+This page is an archive of recent announcements made in [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md).
 
 ## September 2016
 ### New features, announcements and information
@@ -79,17 +79,17 @@ End users of noncompliant devices will be prompted to enroll, and will be requir
 
 ### Company Portal updates
 
-* __Android__
+ __Android__
 
-**Addition of "Notifications" to the Company Portal for Android**<br/>
-A new Notifications icon has been added to the Company Portal for Android on the homepage. Tapping this icon accesses the Notifications page, which shows your end users all items that require attention in the Company Portal app, such as device noncompliance, enrollment update, and enrollment activation. The iOS Company Portal app already has this notifications experience. Having the new Notifications page means that user won’t see the Company Access Setup page every time they launch or resume the Company Portal as long as the device is already enrolled. If you create your own end-user guidance, you might want to update your documentation to reflect this change. Find updated screenshots [here](https://aka.ms/androidcpupdate).  
-<!---TFS 1095560--->
+  * **Addition of "Notifications" to the Company Portal for Android**<br/>
+  A new Notifications icon has been added to the Company Portal for Android on the homepage. Tapping this icon accesses the Notifications page, which shows your end users all items that require attention in the Company Portal app, such as device noncompliance, enrollment update, and enrollment activation. The iOS Company Portal app already has this notifications experience. Having the new Notifications page means that user won’t see the Company Access Setup page every time they launch or resume the Company Portal as long as the device is already enrolled. If you create your own end-user guidance, you might want to update your documentation to reflect this change. Find updated screenshots [here](https://aka.ms/androidcpupdate).  
+  <!---TFS 1095560--->
 
-**Providing feedback in the Company Portal for Android**</br>
-A new item has been added to the menu of the Company Portal for Android. Tapping **Help & Feedback** shows three actions:
-* Use **Get Help** to report an issues to your IT department about the Company Portal. IT will create an email using your  email client and attach the Company Portal logs to it. **Get Help** replaces the **Send Data** feature on the **Settings** page.
-* Use **Give Feedback** to provide feedback to the Company Portal team.
-* Use **Rate our app** to leave the Company Portal app a rating or review on Google Play.
+  * **Providing feedback in the Company Portal for Android**</br>
+  A new item has been added to the menu of the Company Portal for Android. Tapping **Help & Feedback** shows three actions:
+    * Use **Get Help** to report an issues to your IT department about the Company Portal. IT will create an email using your  email client and attach the Company Portal logs to it. **Get Help** replaces the **Send Data** feature on the **Settings** page.
+    * Use **Give Feedback** to provide feedback to the Company Portal team.
+    * Use **Rate our app** to leave the Company Portal app a rating or review on Google Play.
 
 * __iOS__
 **Changes in support for the iOS Company Portal app**<br/>
