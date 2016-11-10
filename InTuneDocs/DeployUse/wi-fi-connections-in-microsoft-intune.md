@@ -34,7 +34,7 @@ For example, you install a new Wi-Fi network named **Contoso Wi-Fi** and want to
 
 ![Wi-Fi profile process summary](..\media\wi-fi-process-diagram.png)
 
-1.   Create a Wi-Fi profile containing the settings that are necessary to connect to the **Contoso Wi-Fi** wireless network.
+1.   Create a Wi-Fi profile that contains the settings that are necessary to connect to the **Contoso Wi-Fi** wireless network.
 
 2.   Deploy the profile to the group of users with iOS devices.
 
@@ -82,17 +82,17 @@ There are no recommended settings for this policy type. You must create a custom
 
 6. Configure **Proxy Settings** ((iOS and MAC OS X only).
 
-    |Setting name|More information|Use when:|
+    |Setting name|More information|When to use|
     |----------------|-------------------|-------------|
     |**Proxy settings for this Wi-Fi connection**|Choose the proxy settings type:<br /><br />-   **None** (default)<br />-   **Manual** -   Manually specify the URL and port number of the proxy server.<br />-   **Automatic** – Use a configuration file to configure the proxy server.|Always|
-    |**Proxy server address** and **Port number**|Specify the URL and port number of the proxy server.|**Proxy settings for this Wi-Fi connection** is set to **Manual**|
-    |**Proxy Server URL**|Specify the URL of the file that contains the proxy server settings.|**Proxy settings for this Wi-Fi connection** is set to **Automatic**|
+    |**Proxy server address** and **Port number**|Specify the URL and port number of the proxy server.|If **Proxy settings for this Wi-Fi connection** is set to **Manual**|
+    |**Proxy Server URL**|Specify the URL of the file that contains the proxy server settings.|If **Proxy settings for this Wi-Fi connection** is set to **Automatic**|
 
 7.  Save the Wi-Fi profile
 
 The new policy is displayed in the **Configuration Policies** node of the **Policy** workspace. See **Next steps** for information about deploying the profile.
 
-## Export or Import a Wi-Fi configuration profile for Windows devices
+## Export or import a Wi-Fi configuration profile for Windows devices
 
 For devices that run Windows 8.1 or Windows 10 desktop or mobile, you can import a Wi-Fi configuration profile that was previously exported to a file.
 
@@ -105,7 +105,7 @@ In Windows, you can use the **netsh wlan** utility to export an existing Wi-Fi p
 
 3.  Run the command `netsh wlan show profiles`, and note the name of the profile you'd like to export.  In this example, the profile name is **WiFiName**.
 
-4.  Run this command: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`.This creates a Wi-Fi profile file named “Wi-Fi-WiFiName.xml in your target folder ”.
+4.  Run this command: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`.This creates a Wi-Fi profile file named “Wi-Fi-WiFiName.xml" in your target folder.
 
 ### Import a Wi-Fi profile
 Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that you can then deploy to the required user or device groups.
@@ -124,7 +124,7 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
     |Setting name|More information|
     |----------------|--------------------|
     |**Name**|Enter a unique name for the Wi-Fi profile to identify it in the Intune console.|
-    |**Description**|Provide a description of the Wi-Fi profile and other relevant information that helps you to locate it.|
+    |**Description**|Provide a description of the Wi-Fi profile and other relevant information that helps you locate it.|
 
 4.  Specify the following values under the **Custom Wi-Fi Profile** heading:
 
@@ -132,9 +132,9 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
     |----------------|--------------------|
     |**Configuration profile file**|Choose **Import** to select the XML file that contains the Wi-Fi profile settings that you want to import into Intune.|
     |**Custom configuration profile name (displayed to users)**|Choose how to display the name of the Wi-Fi configuration profile as it will be shown to users on their device.|
-    |**Configuration profile details**|Choose how to display the XML code for the configuration profile you selected.|
+    |**Configuration profile details**|Choose how to display the XML code for the configuration profile that you selected.|
 
-5.  When you are finished, choose **Save Policy**.
+5.  When you're finished, choose **Save Policy**.
 
 6.  The new policy displays in the **Configuration Policies** node of the **Policy** workspace.
 
@@ -142,16 +142,16 @@ Use the **Windows Wi-Fi Import Policy** to import a set of Wi-Fi settings that y
 
 Because a profile is a type of policy, you use the Policy workspace to deploy it.
 
-1.  In the **Policy** workspace, select the policy you want to deploy, then click **Manage Deployment**.
+1.  In the **Policy** workspace, select the policy you want to deploy, then choose **Manage Deployment**.
 
 2.  In the **Manage Deployment** dialog box:
 
-    -   **To deploy the policy** - Select one or more groups to which you want to deploy the policy. Then choose  **Add** &gt; **OK**.
+    -   **To deploy the policy**: Select one or more groups to which you want to deploy the policy. Then choose  **Add** &gt; **OK**.
 
-    -   **To close the dialog box without deploying it** - click **Cancel**.
+    -   **To close the dialog box without deploying it**: Click **Cancel**.
 
 
-A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
+The **Overview** page of the **Policy** workspace displays issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
 
 ## Security settings
 These tables have the details for the security settings that are available for Android, iOS, and Mac OS X Wi-Fi profiles.
@@ -162,10 +162,10 @@ These tables have the details for the security settings that are available for A
 |----------------|--------------------|-------------|
 |**Security type**|Select the security protocol for the wireless network:<br /><br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **No authentication (Open)** if the network is unsecured.|Always|
 |**EAP Type**|Choose the Extensible Authentication Protocol (EAP) type that's used to authenticate secured wireless connections:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|If you selected the **WPA-Enterprise/WPA2-Enterprise** security type.|
-|**Select root certificates for server validation**|Choose **Select**, and then choose the trusted root certificate profile used to authenticate the connection. **Important:** To create the trusted root certificate profile, see [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md).|If you selected any **EAP Type**.|
-|**Authentication method**|Select the authentication method for the connection:<br /><br />-   **Certificates** to specify the client certificate<br />-   **Username and Password** to specify a different method for authentication|The **EAP type** is **PEAP** or **EAP-TTLS**.|
+|**Select root certificates for server validation**|Choose **Select**, and then choose the trusted root certificate profile that you used to authenticate the connection. **Important:** To create the trusted root certificate profile, see [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md).|If you selected any **EAP Type**.|
+|**Authentication method**|Select the authentication method that's used for the connection:<br /><br />-   **Certificates** to specify the client certificate<br />-   **Username and Password** to specify a different method for authentication|The **EAP type** is **PEAP** or **EAP-TTLS**.|
 |**Select a non-EAP method for authentication (Inner identity)**|Select how you will authenticate the connection:<br /><br />-   **None**<br />-   **Unencrypted password (PAP)**<br />-   **Challenge Handshake Authentication Protocol (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP Version 2 (MS-CHAP v2)**<br /><br />The options that are available depend on the EAP type that you selected.|The **Authentication method** is **Username and Password**.|
-|**Enable identity privacy (Outer Identity)**|Specify the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification which is sent in a secure tunnel.|If the **EAP type** is **PEAP** or **EAP-TTLS**.|
+|**Enable identity privacy (Outer Identity)**|Specify the text that's sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent. The real identification is then sent in a secure tunnel.|If the **EAP type** is **PEAP** or **EAP-TTLS**.|
 |**Select a client certificate for client authentication (Identity Certificate)**|Choose **Select**, and then choose the SCEP certificate profile that's used to authenticate the connection. **Important:** To create an SCEP certificate profile, see [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md).|If the security type is **WPA-Enterprise/WPA2-Enterprise**, and any **EAP type** is selected.|
 
 ### Security settings for iOS and Mac OS X devices
@@ -179,7 +179,7 @@ These tables have the details for the security settings that are available for A
 |**Provision PAC**|Sets up the PAC file on your devices.<br /><br />When used, you can also select **Provision PAC Anonymously** to ensure that the PAC file is set up without authenticating the server.|If **Use Protected Access Credential (PAC)** is selected.|
 |**Authentication method**|Select the authentication method that's used for the connection:<br /><br /><ul><li>**Certificates** to specify the client certificate</li><li>**Username and Password** to specify one of the following non-EAP methods for authentication (also known as Inner identity):<br /><br /><ul><li>**None**</li><li>**Unencrypted password (PAP)**</li><li>**Challenge Handshake Authentication Protocol (CHAP)**</li><li>**Microsoft CHAP (MS-CHAP)**</li><li>**Microsoft CHAP Version 2 (MS-CHAP v2)**</li><li>**EAP-TLS**</li></ul></li></ul>|If the **EAP type** is **PEAP**, or **EAP-TTLS**.|
 |**Select a client certificate for client authentication (Identity Certificate)**|Select the SCEP certificate profile that's used to authenticate the connection. **Important:** To create a SCEP certificate profile, see [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md).|If the security type is **WPA-Enterprise/WPA2-Enterprise** and the **EAP type** is **EAP-TLS**, **PEAP** or **EAP-TTLS**.|
-|**Enable identity privacy (Outer Identity)**|Specify text that's sent in response to an EAP identity request. This text can be any value.<br /><br />During authentication, this anonymous identity is initially sent, followed by the real identification sent in a secure tunnel.|If the **EAP type** is set to **PEAP**, **EAP-TTLS**, or **EAP-FAST**.|
+|**Enable identity privacy (Outer Identity)**|Specify text that's sent in response to an EAP identity request. This text can be any value.<br /><br />During authentication, this anonymous identity is initially sent. The real identification is then sent in a secure tunnel.|If the **EAP type** is set to **PEAP**, **EAP-TTLS**, or **EAP-FAST**.|
 
 
 ### See also
