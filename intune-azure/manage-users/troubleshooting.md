@@ -28,4 +28,4 @@ ms.suite: ems
 # On-Premises Access for Microsoft Intune
 
 
-[!INCLUDE[azure_preview](/intune-azure/includes/azure_preview.md)]
+[!INCLUDE[azure_preview](../includes/azure_preview.md.md)]
