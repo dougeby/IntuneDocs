@@ -108,7 +108,7 @@ The following list of common business problems our customers are trying to solve
 * [Protect your Office 365 mail and data so that it can be safely accessed by mobile devices](common-ways-to-use-intune.md#Protecting-your-Office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [Issue corporate-owned phones to your workforce](common-ways-to-use-intune.md#Issue-corporate-owned-phones-to-your-information-workers)
 * [Issue limited-use shared tables to your task workers](common-ways-to-use-intune.md#Issue-limited-use-shared-tablets-to-your-task-workers)
-* [Offer a “bring your own device (BYOD)” or personal device program to all employees](common-ways-to-use-intune.md#Offer-a-bring-your-own-device-program-to-all-employees)
+* [Offer a bring-your-own-device (BYOD) or personal device program to all employees](common-ways-to-use-intune.md#Offer-a-bring-your-own-device-program-to-all-employees)
 * [Enable your employees to securely access Office 365 from an unmanaged public kiosk](common-ways-to-use-intune.md#Enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
 
 ### Next steps
