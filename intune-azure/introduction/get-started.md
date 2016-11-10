@@ -27,4 +27,4 @@ ms.suite: ems
 
 # Get started with Microsoft Intune
 
-[!INCLUDE[azure_preview](/intune-azure/includes/azure_preview)]
+[!INCLUDE[azure_preview](/intune-azure/includes/azure_preview.md)]
