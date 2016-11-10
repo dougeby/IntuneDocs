@@ -24,15 +24,13 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What's new in Microsoft Intune - October 2016
+# What's new in Microsoft Intune - November 2016
 Learn what’s new in this release of Microsoft Intune. You can also find out about upcoming changes that you should be planning for, as well as information about past releases.
 
 All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/library/mt718155.aspx).
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
 
-## What's new
-
-### New Capabilities
+## New Capabilities
 
 <!--### View App States for All Platforms in Real Time
 App installation status is now shown in real-time in the console. When you previously deployed an app, you had to wait for a targeted device to report back before the app install status was displayed in the Intune console.
