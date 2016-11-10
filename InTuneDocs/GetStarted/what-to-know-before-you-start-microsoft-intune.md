@@ -4,9 +4,10 @@
 title: What to know before you start Microsoft Intune | Microsoft Intune
 description: Links to Intune prerequisites and requirements
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +28,7 @@ ms.suite: ems
 
 # What to know before you start Microsoft Intune
 
-Before you start setting up Microsoft Intune, review each of the following requirements:
+Before you start setting up Microsoft Intune, review the following requirements:
 
 - [Supported mobile devices and computers](supported-mobile-devices-and-computers.md)
 - [Intune supported web browsers](supported-web-browsers.md)

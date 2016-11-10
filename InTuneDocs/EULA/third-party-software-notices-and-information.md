@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/9/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,8 +32,10 @@ This file is based on or incorporates material from the projects listed below (â
 
 Third Party Code:
 
+As the recipient of the Third-Party Code, Microsoft sets forth a copy of the notices and other information below.
+
 1.  [Azure Active Directory Authentication Library for .NET](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet).
-As the recipient of the above Third-Party Code, Microsoft sets forth a copy of the notices and other information below.
+2. Logging Sample for Windows Store Apps (ETW Logging in WinRT)
 
 ## Azure Active Directory Authentication Library for .NET
 
@@ -90,4 +92,16 @@ __8. Limitation of Liability.__ In no event and under no legal theory, whether i
 
 __9. Accepting Warranty or Additional Liability.__ While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.
 
-### END OF Azure Active Directory Authentication Library for .NET
+### End of Azure Active Directory Authentication Library for .NET
+
+## Logging Sample for Windows Store Apps (ETW Logging in WinRT)
+
+Copyright (c) Microsoft
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use these files except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+### End of Logging Sample for Windows Store Apps (ETW Logging in WinRT)
