@@ -8,6 +8,8 @@
 ## [Get started](/intune-azure/deploy-apps/get-started)
 ## [Plan and design](/intune-azure/deploy-apps/plan-and-design)
 ## [How to](/intune-azure/deploy-apps/how-to)
+### [Add apps](/intune-azure/deploy-apps/add-apps)
+### [Deploy and monitor apps](/intune-azure/deploy-apps/deploy-apps)
 ## [Troubleshoot](/intune-azure/deploy-apps/troubleshooting)
 # [Configure device settings](/intune-azure/device-settings/what-is)
 # [Set device compliance](/intune-azure/device-compliance/what-is)
