@@ -5,7 +5,8 @@ title: Understand operations by using reports | Microsoft Intune
 description: Create and manage reports about software, hardware, and software licenses in your organization.
 
 keywords:
-manager: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
