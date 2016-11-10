@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Device logs
 
-As part of your troubleshooting efforts you might want to collect logs from user devices. Instructions for collecting those logs are described here. Typically you might need access to the device to get these logs, or request from the user that they collect the logs and send them to you.
+As part of your troubleshooting efforts you might want to collect logs from user devices. Instructions for collecting those logs are described here. Typically you need to access to the device to get these logs or request from the user that they collect the logs and send them to you.
 
 ### Android logs
 Android logs are located in *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*.
@@ -49,10 +49,10 @@ Users can send you enrollment errors, as described in [Send iOS enrollment error
 ### Mac OS X logs
 
 1. Open the **Console** app.
-2. Under **FILES** choose **system.log**.
+2. Under **FILES**, choose **system.log**.
 3. On the menu bar on the top, choose **File** > **Save a Copy As…**. Then save the file.
 
-### Windows phone
+### Windows Phone
 
 In the Windows Phone Company Portal app, users choose the three dots (**…**) to access the menu, and then choose **Send Logs**. This option is available both before and after signing in to the Company Portal app.
 
