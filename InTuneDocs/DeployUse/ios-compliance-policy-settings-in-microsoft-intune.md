@@ -34,6 +34,7 @@ The policy settings described in this topic apply to devices running iOS 8.0 and
 If you are looking for information about other platforms, select one of the following:
 > [!div class="op_single_selector"]
 - [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Compliance policy settings for Android for work](afw-compliance-policy-settings-in-microsoft-intune)
 - [Compliance policy settings for Windows devices](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## System security settings

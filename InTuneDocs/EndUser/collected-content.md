@@ -37,7 +37,7 @@ ms.suite:
 ## Device Doesn't Comply
 ### [With maximum OS version | Android](device-doesnt-comply-with-maximum-operating-system-version-android.md)
 ### [With maximum OS version | Windows](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
-### [With maximum OS version | iOS](device-doesnt-comply-with-maximum-operating-system-version-ios.md)
+### [With maximum OS version | iOS](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
 
 ## Device Doesn't Have
 ### [Bitlocker | Windows](device-doesnt-have-bitlocker-enabled-windows.md)
@@ -65,23 +65,23 @@ ms.suite:
 ### [Evaluating device](error-evaluating-device)
 
 ## Existing email
-### [Email found](existing-company-email-found)
+### [Email found](existing-company-email-account-found)
 
 ## How to / do I
-### [Find the serial number on my device](find-the-serial-number-on-my-device)
+### [Find the serial number on my device | iOS](how-do-i-find-the-serial-number-on-my-device-ios)
 ### [Encrypt your Windows device](how-to-encrypt-your-windows-device)
-### [Reconnect a compromised Android device](reconnect-a-compromised-android-device)
-### [Reconnect a compromised iOS device](reconnect-a-compromised-ios-device)
+### [Reconnect a compromised Android device](how-to-reconnect-a-compromised-android-device)
+### [Reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device)
 ### [Set the period before your Android is locked](how-to-set-the-period-before-your-android-device-is-locked)
 
 ## Install
-### [A new version of the Company Portal app](a-new-version-of-the-company-portal-app)
+### [A new version of the Company Portal app](install-a-new-version-of-the-company-portal-app)
 ### [and sign in to the Company Portal app | iOS](install-and-sign-in-to-the-intune-company-portal-app-ios)
 ### [Android](install-the-microsoft-intune-company-portal-app-android)
 ### [VPN | Android](install-your-companys-virtual-private-network-VPN-android)
 
 ## Password
-### [does not meet admin requirements](password-does-not-meet-administrator-requirements)
+### [does not meet admin requirements](password-does-not-meet-it-administrator-requirements)
 
 ## Remote lock
 ### [Company Portal website](remote-lock-your-device-cpwebsite)
@@ -96,7 +96,7 @@ ms.suite:
 ### [Android](reset-erase-your-lost-or-stolen-device-android)
 ### [iOS](reset-erase-your-lost-or-stolen-device-ios)
 ### [Windows](reset-erase-your-lost-or-stolen-device-windows)
-### [Website](reset-erase-your-lost-or-stolen-device-cpwebsite)
+### [Website](reset-your-device-cpwebsite)
 
 ## Reset passcode
 ### [Website](reset-your-passcode-cpwebsite)
@@ -105,7 +105,7 @@ ms.suite:
 ### [Diags on Android w/USB](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 ### [Diags on email on Android](send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
 ### [Enrollment errors | Android](send-enrollment-errors-to-your-it-administrator-android)
-### [Enrollment errors | iOS](send-enrollment-errors-to-your-it-admin-ios)
+### [Enrollment errors | iOS](send-errors-to-your-it-admin-ios)
 
 ## Set
 ### [Passcode | iOS](set-or-change-your-passcode-ios)

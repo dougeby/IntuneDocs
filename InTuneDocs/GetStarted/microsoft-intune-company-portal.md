@@ -6,7 +6,7 @@ description: set up Intune Company Portal
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jve
+ms.reviewer: jve, arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -60,7 +60,7 @@ Before users can access the Company Portal, their account must be granted a lice
 
 > __iOS__: The Company Portal app for iOS is published to [all available territories](https://go.microsoft.com/fwlink/?linkid=831284) for the Apple iOS App Store.
 
-> __Android__: The Company Portal app for Android Antigua and Barbuda, Aruba, Benin, Burkina Faso, Cambodia, China, Cuba, Gabon, Guinea-Bissau, Haiti, Iran, Laos, Mali, Mozambique, Myanmar (Burma), Netherlands Antilles, Niger, Papua New Guinea, Sudan, Togo. For these countries, an alternative solution is to [sideload the Android version of the Company Portal app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
+> __Android__: The Company Portal app for Android is not currently available in China. For these countries, an alternative solution is to [sideload the Android version of the Company Portal app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
 ### See also
 [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
