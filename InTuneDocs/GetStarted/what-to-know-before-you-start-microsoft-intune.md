@@ -28,7 +28,7 @@ ms.suite: ems
 
 # What to know before you start Microsoft Intune
 
-Before you start setting up Microsoft Intune, review each of the following requirements:
+Before you start setting up Microsoft Intune, review the following requirements:
 
 - [Supported mobile devices and computers](supported-mobile-devices-and-computers.md)
 - [Intune supported web browsers](supported-web-browsers.md)
