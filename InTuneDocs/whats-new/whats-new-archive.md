@@ -58,9 +58,9 @@ The public preview of the updated Intune App Wrapping Tool now supports MAM with
 
 Anyone can test the public preview software and read helpful documentation, located in msintuneappsdk's GitHub:
 
-http://www.github.com/msintuneappsdk/intune-app-wrapper-ios-preview
+  http://www.github.com/msintuneappsdk/intune-app-wrapper-ios-preview
 
-http://www.github.com/msintuneappsdk/intune-app-wrapper-android-preview
+  http://www.github.com/msintuneappsdk/intune-app-wrapper-android-preview
 
 Before you install and use Microsoft Intune App Wrapper for Android and iOS Pre-Release you must:
 
@@ -79,39 +79,38 @@ End users of noncompliant devices will be prompted to enroll, and will be requir
 
 ### Company Portal updates
 
- __Android__
+__Android__
 
-  * **Addition of "Notifications" to the Company Portal for Android**<br/>
+  **Addition of "Notifications" to the Company Portal for Android**<br/>
   A new Notifications icon has been added to the Company Portal for Android on the homepage. Tapping this icon accesses the Notifications page, which shows your end users all items that require attention in the Company Portal app, such as device noncompliance, enrollment update, and enrollment activation. The iOS Company Portal app already has this notifications experience. Having the new Notifications page means that user won’t see the Company Access Setup page every time they launch or resume the Company Portal as long as the device is already enrolled. If you create your own end-user guidance, you might want to update your documentation to reflect this change. Find updated screenshots [here](https://aka.ms/androidcpupdate).  
   <!---TFS 1095560--->
 
-  * **Providing feedback in the Company Portal for Android**</br>
+  **Providing feedback in the Company Portal for Android**</br>
   A new item has been added to the menu of the Company Portal for Android. Tapping **Help & Feedback** shows three actions:
-    * Use **Get Help** to report an issues to your IT department about the Company Portal. IT will create an email using your  email client and attach the Company Portal logs to it. **Get Help** replaces the **Send Data** feature on the **Settings** page.
-    * Use **Give Feedback** to provide feedback to the Company Portal team.
-    * Use **Rate our app** to leave the Company Portal app a rating or review on Google Play.
+  * Use **Get Help** to report an issues to your IT department about the Company Portal. IT will create an email using your  email client and attach the Company Portal logs to it. **Get Help** replaces the **Send Data** feature on the **Settings** page.
+  * Use **Give Feedback** to provide feedback to the Company Portal team.
+  * Use **Rate our app** to leave the Company Portal app a rating or review on Google Play.
 
-* __iOS__
-**Changes in support for the iOS Company Portal app**<br/>
-All users of the Microsoft Intune Company Portal app for iOS are now required to use its latest version. New users are able to download only the latest version, and current users are required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions cannot use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.
-<!---TFS 1283165--->
+__iOS__
+  **Changes in support for the iOS Company Portal app**<br/>
+  All users of the Microsoft Intune Company Portal app for iOS are now required to use its latest version. New users are able to download only the latest version, and current users are required to update to it. The latest version requires iOS 8.0 or later, so devices running older iOS versions cannot use the Company Portal or enroll until they update their device to iOS 8.0 or later and then update the Company Portal app to the latest version. Enrolled devices running versions below iOS 8.0 will continue to be managed and listed in the Intune Admin Console.
+  <!---TFS 1283165--->
 
-**Improvements in how iOS end users get their apps**<br/>
-The following changes have been made to the apps tiles in the Company Portal app for iOS to point users to different views in a single location, the Company Portal website, for all of their apps. Apple restrictions prohibit line-of-business and managed app store apps from being listed in the Company Portal app, and require users to visit different views to find all of their apps.
+  **Improvements in how iOS end users get their apps**<br/>
+  The following changes have been made to the apps tiles in the Company Portal app for iOS to point users to different views in a single location, the Company Portal website, for all of their apps. Apple restrictions prohibit line-of-business and managed app store apps from being listed in the Company Portal app, and require users to visit different views to find all of their apps.
 
-- The **Company Apps** tile previously pointed to a list of all apps in the ALL tab of the Company Portal website, and it will continue to work the same way. The tile name has changed to **All Apps**.
-- The **Other Apps** tile previously pointed to a view, inside the Company Portal app, that lists all apps that Apple permits the Company Portal app to show. The tile name has changed to **Featured Apps**, and tapping the tile will take users to the FEATURED tab of the Company Portal website.
--  The **Categories** tile previously pointed to a view, inside the Company Portal app, that lists categories of apps. The tile name has not changed, but it now points to the CATEGORIES tab of the Company Portal website.
-You can find updated screenshots [here](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
-<!---TFS 1317133--->
+  - The **Company Apps** tile previously pointed to a list of all apps in the ALL tab of the Company Portal website, and it will continue to work the same way. The tile name has changed to **All Apps**.
+  - The **Other Apps** tile previously pointed to a view, inside the Company Portal app, that lists all apps that Apple permits the Company Portal app to show. The tile name has changed to **Featured Apps**, and tapping the tile will take users to the FEATURED tab of the Company Portal website.
+  -  The **Categories** tile previously pointed to a view, inside the Company Portal app, that lists categories of apps. The tile name has not changed, but it now points to the CATEGORIES tab of the Company Portal website. You can find updated screenshots [here](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
+  <!---TFS 1317133--->
 
-**Prompt to install the iOS Managed Browser app if IT Pro sets that requirement for an app**<br/>
-If you have configured a web clip to open only in the managed browser, and the managed browser is not installed on a device, the Company Portal app on the device will prompt the user to install the managed browser before the web clip can be installed.
-<!---TFS 1228570--->
+  **Prompt to install the iOS Managed Browser app if IT Pro sets that requirement for an app**<br/>
+  If you have configured a web clip to open only in the managed browser, and the managed browser is not installed on a device, the Company Portal app on the device will prompt the user to install the managed browser before the web clip can be installed.
+  <!---TFS 1228570--->
 
-* __Windows__
-**Feedback button added to Windows Phone 8.1 Company Portal app**<br/>
-The Windows Phone 8.1 Company Portal app enables end users to send feedback about the app by using a new "send feedback" button. To find the button, users tap the “three dots” menu at the bottom right of the Company Portal app screen and then tap **send feedback**. The collected, anonymized feedback will help Microsoft improve the Company Portal app experience for users.
+__Windows__
+  **Feedback button added to Windows Phone 8.1 Company Portal app**<br/>
+  The Windows Phone 8.1 Company Portal app enables end users to send feedback about the app by using a new "send feedback" button. To find the button, users tap the “three dots” menu at the bottom right of the Company Portal app screen and then tap **send feedback**. The collected, anonymized feedback will help Microsoft improve the Company Portal app experience for users.
 <!---TFS 1317806--->
 
 ### Intune glossary</br>
