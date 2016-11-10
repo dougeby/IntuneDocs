@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: On-Premises Access | Microsoft Intune Preview
-description: Use this topic to learn about On-Premises Access Microsoft Intune
+title: Get Started | Microsoft Docs
+description: Use this topic to learn how to get started with Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 49265491-6256-445a-9d30-3f97a16d3953
+ms.assetid: 
 
 # optional metadata
 
@@ -25,7 +25,6 @@ ms.suite: ems
 
 ---
 
-# On-Premises Access for Microsoft Intune
-
+# Get started with Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

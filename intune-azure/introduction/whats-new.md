@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Introduction to the Azure Portal | Microsoft Intune Preview
+title: Introduction to the Azure Portal | Microsoft Docs
 description: Use this topic to learn how to find your way around the new portal for Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 7625769c-623f-4262-9e6a-6d997e919204
+ms.assetid: 
 
 # optional metadata
 

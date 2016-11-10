@@ -1,5 +1,6 @@
 # [Introduction](/intune-azure/introduction/what-is-microsoft-intune)
 # [Plan and design](/intune-azure/plan-and-design/get-started)
+## [Get started](/intune-azure/plan-and-design/get-started)
 # [Enroll devices](/intune-azure/enroll-devices/what-is)
 # [Manage devices](/intune-azure/manage-devices/what-is)
 # [Manage users](/intune-azure/manage-users/what-is)
