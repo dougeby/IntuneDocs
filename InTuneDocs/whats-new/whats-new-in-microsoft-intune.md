@@ -82,4 +82,4 @@ Support for Windows Phone 8 Company Portal will now be deprecated. Support for t
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
-* [Previous Intune releases](previous-intune-releases.md)
+* [Previous Intune releases](whats-new-archive.md)
