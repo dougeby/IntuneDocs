@@ -4,22 +4,22 @@
 title: Enroll your device in Intune | Microsoft Intune
 description: Provides links to information about how to enroll different devices in Intune
 keywords:
-author: staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,5 +36,3 @@ To see enrollment instructions, use the link that matches the type of device you
 - [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md)
 - [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md)
 - [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)
-
-

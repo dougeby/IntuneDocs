@@ -4,9 +4,10 @@
 title: Restrict access to networks with Cisco ISE | Microsoft Intune
 description: Use Cisco ISE with Intune so that devices are Intune enrolled and policy compliant before they access Wi-Fi and VPN that are controlled by Cisco ISE.
 keywords:
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -74,7 +75,7 @@ b. Choose the lock icon &gt;  **More information**.
 1.  In the ISE console, go to **Administration** > **Certificates** > **System Certificates** > **Generate Self Signed Certificate**.  
 2.       Export the self-signed certificate.
 3. In a text editor, edit the exported certificate:
-[comment]: <> I'd rather not put a period at the end of these two statements, I think it could be confusing.
+
  - Delete ** -----BEGIN CERTIFICATE-----**
  - Delete ** -----END CERTIFICATE-----**
  
@@ -109,13 +110,13 @@ Ensure all of the text is a single line
 1.     Get the base64 encoded cert value and thumbprint from a .cer X509 public cert file. This example uses PowerShell:
    
       
-    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
-     `$cer.Import(“mycer.cer”)`
-      `$bin = $cer.GetRawCertData()`
-      `$base64Value = [System.Convert]::ToBase64String($bin)`
-      `$bin = $cer.GetCertHash()`
-      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
-      `$keyid = [System.Guid]::NewGuid().ToString()`
+      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
+      $cer.Import(“mycer.cer”)
+      $bin = $cer.GetRawCertData()
+      $base64Value = [System.Convert]::ToBase64String($bin)
+      $bin = $cer.GetCertHash()
+      $base64Thumbprint = [System.Convert]::ToBase64String($bin)
+      $keyid = [System.Guid]::NewGuid().ToString()
  
 	Store the values for $base64Thumbprint, $base64Value and $keyid, to be used in the next step.
 2.       Upload the certificate through the manifest file. Log in to the [Azure Management Portal](https://manage.windowsazure.com)
@@ -124,27 +125,27 @@ Ensure all of the text is a single line
 5.      Replace the empty “KeyCredentials”: [], property with the following JSON.  The KeyCredentials complex type is documented in[Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType).
 
  
-    `“keyCredentials“: [`
-    `{`
-     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
-     `“keyId“: “$keyid_from_above“,`
-     `“type”: “AsymmetricX509Cert”,`
-     `“usage”: “Verify”,`
-     `“value”:  “$base64Value_from_above”`
-     `}2. `
-     `], `
+    “keyCredentials“: [
+    {
+     “customKeyIdentifier“: “$base64Thumbprint_from_above”,
+     “keyId“: “$keyid_from_above“,
+     “type”: “AsymmetricX509Cert”,
+     “usage”: “Verify”,
+     “value”:  “$base64Value_from_above”
+     }2. 
+     ], 
  
 For example:
  
-    `“keyCredentials“: [`
-    `{`
-    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
-    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
-    `“type”: “AsymmetricX509Cert”,`
-    `“usage”: “Verify”,`
-    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
-    `}`
-    `],`
+    “keyCredentials“: [
+    {
+    “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
+    “keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,
+    “type”: “AsymmetricX509Cert”,
+    “usage”: “Verify”,
+    “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
+    }
+    ],
  
 6.      Save the change to the application manifest file.
 7.      Upload the edited application manifest file through the Azure management mortal.

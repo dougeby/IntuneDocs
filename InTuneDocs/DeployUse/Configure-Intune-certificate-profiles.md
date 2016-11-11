@@ -4,9 +4,10 @@
 title: Configure certificate profiles | Microsoft Intune
 description: Learn how to create an Intune certificate profile.
 keywords:
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,35 +45,58 @@ You must create a Trusted certificate profile before you can create a Simple Cer
 
 ### To create a Trusted certificate profile
 
-1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**.
-2.  Add one of these policy types:
-    - **Android &gt; Trusted Certificate Profile (Android 4 and later)**
-    - **iOS &gt; Trusted Certificate Profile (iOS 8.0 and later)**
-    - **Mac OS X &gt; Trusted Certificate Profile (Mac OS X 10.9 and later)**
-    - **Windows &gt; Trusted Certificate Profile (Windows 8.1 and later)**
-    - **Windows &gt; Trusted Certificate Profile (Windows Phone 8.1 and later)**
+1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**, and choose a device platform. You can create a trusted certificate profile for these devices:
+
+-  Android 4 and later
+
+-  Android for Work
+
+-  iOS 7.1 and later
+
+-  Mac OS X 10.9 and later
+
+-  Windows 8.1 and later
+
+-  Windows Phone 8.1 and later
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
+2.  Add a **Trusted Certificate Profile** policy.
 
     Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Enter the requested information to configure the Trusted certificate profile settings for Android, iOS, Mac OS X, Windows 8.1, or Windows Phone 8.1. 
+3.  Enter the requested information to configure the Trusted certificate profile settings for Android, iOS, Mac OS X, Windows 8.1, or Windows Phone 8.1.
 4.  In the **Certificate file** setting, import the Trusted Root CA certificate (.cer file) that you exported from your issuing CA. The **Destination store** setting applies only to devices running Windows 8.1 and later, and only if the device has more than one certificate store.
-	
+
 4.  Choose **Save Policy**.
 
 The new policy is shown in the **Policy** workspace. Now you can deploy it.
+
+> [!NOTE]
+>
+> Android and Android for Work devices will display a notice that a third party has installed a trusted certificate.
+
 
 ## **Task 3**: Create SCEP or .PFX certificate profiles
 After you create a Trusted CA certificate profile, create SCEP or .PFX certificate profiles for each platform you want to use. When you create an SCEP certificate profile, you must specify a Trusted certificate profile for that same platform. This links the two certificate profiles, but you still must deploy each profile separately.
 
 ### To create an SCEP certificate profile
 
-1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**.
-2.  Add one of these policy types:
-    - **Android &gt; SCEP Certificate Profile (Android 4 and later)**
-    - **iOS &gt; SCEP Certificate Profile (iOS 8.0 and later)**
-    - **Mac OS X &gt; SCEP Certificate Profile (Mac OS X 10.9 and later)**
-    - **Windows &gt; SCEP Certificate Profile (Windows 8.1 and later)**
-    - **Windows &gt; SCEP Certificate Profile (Windows Phone 8.1 and later)**
+1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy** and choose a device platform.  You can create a SCEP certificate profile for these devices:
+
+-  Android 4 and later
+
+-  Android for Work
+
+-  iOS 7.1 and later
+
+-  Mac OS X 10.9 and later
+
+-  Windows 8.1 and later
+
+-  Windows Phone 8.1 and later
+
+2.  Add a **SCEP Certificate Profile** policy
 
     Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -93,13 +117,16 @@ The new policy is shown in the **Policy** workspace. Now you can deploy it.
 
 ### To create a .PFX certificate profile
 
-1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**.
-2.  Add one of these policy types:
-  - **Android &gt; .PFX Certificate Profile (Android 4 and later)**
-  - **Windows &gt; PKCS #12 (.PFX) Certificate Profile (Windows 10 and later)**
-  - **Windows &gt; PKCS #12 (.PFX) Certificate Profile (Windows Phone 10 and later)**
-  - **iOS > PKCS #12 (.PFX) Certificate Profile (iOS 8.0 and later)**    
-    Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+1.  In the [Intune administration console](https://manage.microsoft.com), choose **Policy** &gt; **Add Policy**, and choose a device platform. .PFX certificates are supported for:
+  - Android 4 and later
+  - Android for Work
+  - Windows 10 and later
+  - Windows Phone 10 and later
+  - iOS 8.0 and later)    
+
+
+2.  Add a **.PFX Certificate Profile** policy.
+      Learn more: [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Enter the information requested on the policy form.
 4.  Choose **Save Policy**.
 

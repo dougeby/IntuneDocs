@@ -4,7 +4,7 @@
 title: Administrative accounts, websites, and permissions | Microsoft Intune
 description: administrative accounts permissions websites
 keywords:
-author: barlanmsft
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -38,7 +38,7 @@ The following sections explain these accounts and portals.
 
 ## Administrator accounts and user accounts with special permissions
 
-Below are the accounts and permissions that you'll use for Intune.
+Below are the accounts and permissions that you will use for Intune.
 
 ### Tenant administrator
 |Permission levels|More information|
@@ -56,7 +56,7 @@ Below are the accounts and permissions that you'll use for Intune.
 ### Device enrollment managers
 |Permission levels|More information|
 |--------------------------|-------------------------|
-|Device enrollment managers are standard user accounts that have additional permission to enroll more than five devices.|By default, each [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] user can enroll up to five devices. However, you can give a user account the device enrollment manager permission and then use that account to enroll large groups of corporate-owned devices. This is useful when the devices might be assigned to users on a temporary basis, or might serve in a kiosk mode where a user-to-device association is not required.|
+|Device enrollment managers are standard user accounts that have additional permission to enroll more than 15 devices.|By default, each [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] user can enroll up to 15 devices. However, you can give a user account the device enrollment manager permission and then use that account to enroll large groups of corporate-owned devices. This is useful when the devices might be assigned to users on a temporary basis, or might serve in a kiosk mode where a user-to-device association is not required.|
 
 
 ## Administrative websites for Intune

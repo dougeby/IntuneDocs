@@ -4,9 +4,9 @@
 title: Unenroll your Windows device from Intune | Microsoft Intune
 description: Describes how to unenroll a Windows device from Intune
 keywords:
-author: Staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,11 +50,11 @@ To unenroll your device, use the link, shown in the "In this Article" section ab
 
 1.  Go to **PC Settings** &gt; **Network** &gt; **Workplace**.
 
-2.  Under **Workplace Join**, tap **Leave**.
+2.  Under **Workplace Join**, select **Leave**.
 
-3.  Under **Turn on device management,** tap **Turn off**.
+3.  Under **Turn on device management,** select **Turn off**.
 
-4.  On the popup window that opens, tap **Turn off**.
+4.  On the popup window that opens, select **Turn off**.
 
 ## Unenroll your Windows Phone 8.1 device
 
@@ -64,7 +64,6 @@ To unenroll your device, use the link, shown in the "In this Article" section ab
 
 3.  Tap **Delete** at the bottom of the screen.
 
-4.  On the **Delete account** dialog, tap **Delete**.
+4.  On the **Delete account** dialog box, tap **Delete**.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
