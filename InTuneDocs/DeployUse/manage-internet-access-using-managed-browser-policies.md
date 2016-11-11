@@ -4,7 +4,7 @@
 title: Manage web access with the managed browser | Microsoft Intune
 description: Deploy the managed browser application to restrict web browsing and the transfer of web data to other apps.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

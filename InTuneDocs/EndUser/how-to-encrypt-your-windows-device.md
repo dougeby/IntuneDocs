@@ -4,9 +4,9 @@
 title: How to encrypt your Windows device | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,4 +35,4 @@ If you have a desktop device, follow the instructions below to encrypt it.
 
 2.  Click **Turn on BitLocker**, and then follow the instructions shown to encrypt each of your drives.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Sync Active Directory and add users to Intune | Microsoft Intune
-description: Describes synchronizing on-premises users with Azure AD and granting administrator permissions for your Intune subscription
+description:  Synchronize on-premises users with Azure AD and grant administrator permissions for your Intune subscription
 keywords:
-author: barlanmsft
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

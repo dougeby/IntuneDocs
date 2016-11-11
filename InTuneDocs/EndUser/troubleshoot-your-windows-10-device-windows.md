@@ -4,9 +4,9 @@
 title: Troubleshoot your Windows 10 device enrollment | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 8/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,4 +58,4 @@ If you followed the steps above, but still can't access your work or school emai
 
 - If you don’t see your work or school account, tap **Connect**, and then sign in with your work or school credentials.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
