@@ -4,7 +4,8 @@
 title: What's New Archive | Microsoft Intune
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 11/11/2016
 ms.topic: article
@@ -103,9 +104,9 @@ You can continue to manage Windows Phone 8, Windows RT  and Windows 8 devices th
 Starting in November 2016, we will deprecate support for the Windows Phone 8 Company Portal.
 <!--TFS 1255391-->
 
-## What's coming
+### What's coming
 
-### New Microsoft Intune Company Portal available for Windows 10 devices
+__New Microsoft Intune Company Portal available for Windows 10 devices__
 Microsoft is releasing a new Microsoft Intune Company Portal for Windows 10 devices. This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today.
 
 The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store. For more details, go to [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
