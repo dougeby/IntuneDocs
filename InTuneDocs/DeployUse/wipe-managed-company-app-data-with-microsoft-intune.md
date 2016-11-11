@@ -6,7 +6,7 @@ description: Learn how you can selectively remove company data from devices remo
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -59,6 +59,10 @@ The **Intune mobile application management** blade has a summarized report on th
 1.  In the **Intune mobile application management** blade, choose the **Wipe request** tile to open the **Wipe request** blade.
 
 2.  In the **Wipe request** blade, you can see the list of your requests grouped by users.  Since the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user.  The status indicates whether a wipe request is still **pending**, **failed**, or **successful**.
+
+The user must open the app for the wipe to occur, and the wipe may take up to 30 minutes after the request was made. 
+
+Wipes with pending status are displayed until you manually delete them.  To manually delete a wipe request, right-click and choose delete.
 
 ### See also
 [Protect app data using mobile app management policies ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

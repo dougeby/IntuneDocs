@@ -9,7 +9,7 @@ manager: angrobe
 ms.date: 10/20/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 
@@ -38,7 +38,7 @@ For the steps on how to set your PIN or password, use the link that matches the 
 
 PIN or password issue descriptions:
 
-- **Password does not contain complex characters**. Your IT admin requires you to use complex characters in your password. Examples of complex characters might be numbers, capital letters, and symbols like $, %, and #. 
+- **Password does not contain complex characters**. Your IT admin requires you to use complex characters in your password. Examples of complex characters might be numbers, capital letters, and symbols like $, %, and #.
 
 - **Password is too simple and not secure enough**. Examples of simple passwords might be 1234 or 1111. If you're not sure what kinds of passwords are allowed, try making sure that your password doesn't contain sequential or repeating numbers, like the ones in the example.
 
@@ -48,8 +48,8 @@ PIN or password issue descriptions:
 
 - **Password is too short**. Your IT admin requires you to use a longer password with more characters.
 
-- **Your password was used too recently**. Your IT admin is preventing you from using previous passwords that you've used in the past. Choose a password that you haven't used before. 
+- **Your password was used too recently**. Your IT admin is preventing you from using previous passwords that you've used in the past. Choose a password that you haven't used before.
 
-- **Password isn't complex enough to meet requirements**. Your IT admin requires you to use more complex characters in your password. Try using characters like numbers, capital letters, and symbols like $, %, and #. 
+- **Password isn't complex enough to meet requirements**. Your IT admin requires you to use more complex characters in your password. Try using characters like numbers, capital letters, and symbols like $, %, and #.
 
 If you have trouble figuring out how to make your password comply with the requirements, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

@@ -6,7 +6,7 @@ description: Learn about some of the terminology in Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/23/2016
+ms.date: 03/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -131,11 +131,13 @@ ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 |||
 |-|-|
 |Selective wipe|A [selective wipe](/intune/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune) removes only company data including mobile app management (MAM) data where applicable, settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device.|
+|Subscription|The agreement you enter that allows you to access an Intune tenant.|
 
 ## T
 |||
 |-|-|
 |TeamViewer|A third-party application that works with Intune to provide [remote assistance capabilities](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-for-windows-pcs) for Windows PCs managed with the Intune software client.|
+|Tenant|A single instance of the Intune service you can access with a subscription.|
 |Terms and conditions|A policy type you deploy to users that contains information users must [read and accept](/intune/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) before they can use the Company Portal to enroll and access their work.|
 
 ## V

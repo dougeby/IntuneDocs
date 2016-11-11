@@ -34,12 +34,13 @@ As an Intune administrator, you can enable management of Android devices, includ
 2.  **Android enrollment enabled**<br>
     No additional configurations in the Intune console are needed to enable Android mobile device enrollment.
 
-3.  **Tell users how to get access to company resources with the company portal**<br>
-    Your users will need to know how to enroll their devices and what to expect once they're brought into management. [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+3.  **Tell your users how to enroll their devices to get access to company resources.**
 
-4.  Your users will need to know how to enroll their devices and what to expect once they're brought into management.
-  - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-  - [End user guidance for Windows devices](../enduser/using-your-android-device-with-intune.md)
+	For end-user enrollment instructions, see [Enroll your Android device in Intune](../enduser/enroll-your-device-in-intune-android.md). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
+
+	For information about other end-user tasks, see these articles:
+  - [Resources about the end-user experience with Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [End user guidance for Android devices](../enduser/using-your-android-device-with-intune.md)
 
 ### See also
 [Prerequisites to enrolling devices in Microsoft Intune](prerequisites-for-enrollment.md)
