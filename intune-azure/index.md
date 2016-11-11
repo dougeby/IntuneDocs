@@ -1,1 +1,1 @@
-# Welcome to intune-azure!
+# Welcome to Microsoft Intune in the Azure Portal Preview
