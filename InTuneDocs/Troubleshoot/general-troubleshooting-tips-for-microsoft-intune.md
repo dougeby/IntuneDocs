@@ -70,7 +70,7 @@ After you deploy Microsoft Intune, you might encounter problems with your config
 
     To create a support request, [visit the Office 365 admin center](https://portal.office.com/admin/default.aspx). For more information about support options, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
-## Community resources
+## Find community resources
 You can find other helpful information in these community resources:
 
 -   The [Microsoft Intune Survival Guide](http://social.technet.microsoft.com/wiki/contents/articles/23431.microsoft-intune-survival-guide.aspx) contains links to many resources that can help you configure, maintain, and troubleshoot Intune.
