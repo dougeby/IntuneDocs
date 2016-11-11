@@ -45,7 +45,7 @@ After you deploy Microsoft Intune, you might encounter problems with your config
 
 -   How frequently does this problem occur, and is it sporadic or consistent?
 
--   Could the user be experiencing an authentication issue? If this is a possiblity, see if the user can sign in to other services that use Azure Active Directory. Also, see if the user can log in from a different device.
+-   Could the user be experiencing an authentication issue? If this is a possiblity, see if the user can sign in to other services that use Azure Active Directory. Also, see if the user can sign in from a different device.
 
 -   Have you checked the service status? You can monitor Intune service health in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx). Choose **Service Health** in the left pane.
 
@@ -57,7 +57,7 @@ After you deploy Microsoft Intune, you might encounter problems with your config
   - [Send Android enrollment errors to your IT administrator](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
   - [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios)
 
--   With admin console data, (for example, for policy implementation issues), examine the intended policy and the status of that policy, as described in [Use groups to manage users and devices with Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   With admin console data (for example, for policy implementation issues), examine the intended policy and the status of that policy, as described in [Use groups to manage users and devices with Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## Research the solution
 
