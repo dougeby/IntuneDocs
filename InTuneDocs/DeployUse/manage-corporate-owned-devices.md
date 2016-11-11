@@ -4,7 +4,8 @@
 title: Manage corporate-owned devices | Microsoft Intune
 description: Enroll corporate-owned devices in a variety of ways, based on the type of device, how it was purchased, and the needs of the organization.
 keywords:
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
@@ -39,7 +40,7 @@ Learn how to [enroll corporate-owned iOS devices](enroll-corporate-owned-ios-dev
 
 ## Create a device enrollment manager account
 
-You can create a single-user device enrollment manager (DEM) account in Intune to manage a large number of mobile devices for your organization. After you create a DEM account, a designated account manager can enroll more than the five devices that a standard user can enroll.
+You can create a single-user device enrollment manager (DEM) account in Intune to manage a large number of mobile devices for your organization. After you create a DEM account, a designated account manager can enroll more than the 15 devices that a standard user can enroll.
 
 You can use a DEM account to enroll only devices that aren't used by a single, specific user. Those types of devices are good for point-of-sale or utility apps, for example, but not for users who need to access email or company resources.
 
