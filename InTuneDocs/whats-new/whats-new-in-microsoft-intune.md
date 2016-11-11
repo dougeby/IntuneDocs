@@ -56,6 +56,12 @@ You can now deploy apps you synchronized from the Windows Store for Business (WS
 
 You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint online.  You can get started in Intune mobile app management via the Azure portal. Look for the  Conditional Access section in the “Settings” blade which now includes the option for SharePoint online.-->
 
+> [!IMPORTANT]
+
+> __An Update on Intune and Android for Work__
+
+> While you can deploy Android for Work apps with an action of __Required__, you can only deploy apps as __Available__ if your Intune groups have been migrated to the new Azure AD groups experience.
+
 ### Intune App SDK for Cordova Plugin Now Supports MAM without Enrollment
 App developers can now use the Intune App SDK for Cordova plugin to enable MAM functionality without device enrollment in their Cordova-based apps for Android and iOS. The Intune App SDK for Cordova plugin can be found [here](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam).
 
@@ -76,4 +82,4 @@ Support for Windows Phone 8 Company Portal will now be deprecated. Support for t
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
-* [Previous Intune releases](previous-intune-releases.md)
+* [Previous Intune releases](whats-new-archive.md)
