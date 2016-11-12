@@ -88,7 +88,7 @@ If you're looking for information about other platforms, select one of the follo
 
 ## Device property settings
 
-- **Minimum OS required:** When  a device does not meet the minimum OS version requirement, it is reported as noncompliant.
+- **Minimum OS required:** When  a device doesn't meet the minimum OS version requirement, it is reported as noncompliant.
   A link with information about how to upgrade is displayed. The user can choose to upgrade their device, after which they can access company resources.
 
 - **Maximum OS version allowed:** When a device is using an OS version that's later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until the rule changes to allow the OS version, this device cannot be used to access company resources.
