@@ -79,9 +79,9 @@ If you're looking for information about other platforms, select one of the follo
 - **Minimum Android security patch level (Android 6.0 or later)**: Specify the minimum Android patch level.  Devices that are not at least at this patch level will be noncompliant. The date must be specified in this format: YYYY-MM-DD.
 - **Require device threat protection to be enabled**: Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Select the maximum allowed threat level, which is one of the following:
 
-  - **None (secured)** This is the most secure. This means that the device cannot have any threats. If the device is detected as having any threats, it is evaluated as non-compliant.
-  - **Low:** The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in non-compliant status.
-  - **Medium:** The device is evaluated as compliant if the threats that are present on the device are low- or medium-level. If high-level threats are detected on the device, it is determined to be non-compliant.
+  - **None (secured)** This is the most secure. This means that the device cannot have any threats. If the device is detected as having any threats, it is evaluated as noncompliant.
+  - **Low:** The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in noncompliant status.
+  - **Medium:** The device is evaluated as compliant if the threats that are present on the device are low- or medium-level. If high-level threats are detected on the device, it is determined to be noncompliant.
   - **High:** This is the least secure. Essentially this allows all threat levels, which is perhaps only useful if you using this solution only for reporting purposes.
 
   For more details, see [Enable device threat protection rule in the compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md).
