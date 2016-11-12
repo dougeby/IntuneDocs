@@ -30,23 +30,23 @@ ms.suite: ems
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
-Support for Intune, and for Intune when used with Configuration Manager, is free of charge. Premier Support customers incur a charges for procedure questions (for example, how to go about configuring an Intune feature).
+Support for Intune, and for Intune when used with Configuration Manager, is free of charge. Premier Support customers incur charges for procedure questions (for example, how to go about configuring an Intune feature).
 
-## Create an online service request
+## Create an online service ticket
 
 1.  Sign in to the [Office 365 admin center](https://portal.office.com) with your Intune credentials.
 	>[!NOTE]
 	>
 	>Premier Support customers can open an Intune support ticket on the [Premier support page](https://support.microsoft.com/en-us/premier/contacts).
 
-2.  Choose the Admin tile.
+2.  Choose the **Admin** tile.
 3.  On the left, under **Support**, choose **Support** to open a ticket. It's likely you will see the following message:
 
 	![Open a new Intune support ticket](../media/suport-open-ticket.png)
 
 	>[!NOTE]
 	>
-	>  Customers who have, or have had, an O365 account with 100 or fewer licenses, will see this, and should refer to [Alternate method to open a support ticket](#alternate-method-to-open-a-support-ticket).
+	>  Customers who have, or have had, an O365 account with 100 or fewer licenses, will see this message. If you see it, refer to [Create a support ticket with alternate methods](#create-a-support-ticket-with-alternate-methods).
 	> ![Alternate Intune support](../media/alternate-support-ui.png)
 
     -   For billing, licensing, and account issues select **Billing and product info**.
@@ -92,7 +92,7 @@ For moderately severe issues, our first response for Professional customers is w
 - The situation has moderate business impact and can be dealt with during business hours.
 - A single user, customer, or service is partially affected.
 
-For other issues, our first response for Professional customers will is within eight hours. For Premier Support customers, the response varies according to your support agreement.  These are cases where:
+For other issues, our first response for Professional customers  is within eight hours. For Premier Support customers, the response varies according to your support agreement.  These are cases where:
 
 - The situation has minimal business impact.
 - The issue is important but does not have an immediate, significant service or productivity impact for the customer.
@@ -103,13 +103,13 @@ For other issues, our first response for Professional customers will is within e
 >
 > Technical support for System Center Configuration Manager or System Center Endpoint Protection requires either payment or is decremented from your existing licensing or Premier Support agreements.
 
-## Self-help
+## Find online resources to help you troubleshoot
 
-You may be able to resolve your issue without opening a support ticket.
+You might be able to resolve your issue without opening a support ticket.
 
 For self-help with Intune, see [General troubleshooting tips for Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) or any of the troubleshooting topics for specific issues. You can also search for a solution or post your question to the [Intune forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 
-## Support for volume licensing customers
+## Find support for volume licensing
 If you have already purchased licenses from Microsoft under a volume licensing program, use the following resources for support:
 
 -   For support related to licenses and locating keys, see [Volume Licensing Service Center](http://go.microsoft.com/fwlink/p/?LinkID=282016).
