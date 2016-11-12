@@ -40,7 +40,7 @@ Support for Intune, and for Intune when used with Configuration Manager, is free
 	>Premier Support customers can open an Intune support ticket on the [Premier support page](https://support.microsoft.com/en-us/premier/contacts).
 
 2.  Choose the **Admin** tile.
-3.  On the left, under **Support**, choose **Support** to open a ticket. It's likely you will see the following message:
+3.  On the left, under **Support**, choose **Support** to open a ticket.
 
 	![Open a new Intune support ticket](../media/suport-open-ticket.png)
 
@@ -49,9 +49,9 @@ Support for Intune, and for Intune when used with Configuration Manager, is free
 	>  Customers who have, or have had, an O365 account with 100 or fewer licenses, will see this message. If you see it, refer to [Create a support ticket with alternate methods](#create-a-support-ticket-with-alternate-methods).
 	> ![Alternate Intune support](../media/alternate-support-ui.png)
 
-    -   For billing, licensing, and account issues select **Billing and product info**.
+    -   For billing, licensing, and account issues, select **Billing and product info**.
 
-    -   For all other Intune issues select **Mobile device management**.
+    -   For all other Intune issues, select **Mobile device management**.
 
     > [!NOTE]
     > You might have to choose **more** at the bottom of the list to see all of the categories.
@@ -103,7 +103,7 @@ For other issues, our first response for Professional customers  is within eight
 >
 > Technical support for System Center Configuration Manager or System Center Endpoint Protection requires either payment or is decremented from your existing licensing or Premier Support agreements.
 
-## Find online resources to help you troubleshoot
+## Resolve issues without opening a support ticket
 
 You might be able to resolve your issue without opening a support ticket.
 
