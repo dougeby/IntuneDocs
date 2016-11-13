@@ -30,21 +30,15 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-## Basic
+## Wi-Fi settings for basic and enterprise profiles
 
-**Network name** - Enter a name for this Wi-Fi connection. This is the name that users will see when they browse the list of available connections on their device.
-SSID
-Connect automatically
-Hidden network
-
-
+- **Network name** - Enter a name for this Wi-Fi connection. This is the name that users will see when they browse the list of available connections on their device.
+- **SSID** - Short for service set identifier. This is the real name of the wireless network that devices will connect to. However, users only see the network name you created above when they choose the connection.
+- **Connect automatically** - Makes the device connect whenever it is in the range of this network. 
+- **Hidden network** - Prevents this network from being shown in the list of available networks on the device.
 
 
-## Enterprise
+## Wi-Fi settings for enterprise profiles only
 
-**Network name** - Enter a name for this Wi-Fi connection. This is the name that users will see when they browse the list of available connections on their device.
-SSID
-Connect automatically
-Hidden network
-EAP type
+- **EAP type** - 
 
