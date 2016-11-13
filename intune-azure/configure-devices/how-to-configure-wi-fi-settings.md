@@ -26,11 +26,27 @@ ms.suite: ems
 
 ---
 
-# How to configure WI-Fi settings in Microsoft Intune
+# How to configure Wi-Fi settings in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
+Use Microsoft Intune Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. When you deploy a Wi-Fi profile, your users will have access to your corporate Wi-Fi network without having to configure it themselves.
 
+For example, you install a new Wi-Fi network named Contoso Wi-Fi and want to set up all iOS devices to connect to this network. Here's the process:
+
+1. Create a Wi-Fi profile containing the settings necessary to connect to the Contoso Wi-Fi wireless network.
+2. Assign the profile to a group containing all users of iOS devices.
+3. Users find the new Contoso Wi-Fi network in the list of wireless networks on their device and can easily connect to it.
+
+Wi-Fi profiles support the following device platforms:
+
+- Android 4 and later
+- iOS 8.0 and later
+- macOS (Mac OS X 10.9 and later)
+
+For devices running Windows 8.1, Windows 10, and Windows 10 Mobile, you can import a Wi-Fi configuration that was previously exported from another device.
+
+Use the information in this topic to learn the basics about configuring a Wi-Fi profile, and then read further topics for each platform to learn about device specifics.
 
 ## Create a device profile containing Wi-Fi settings
 

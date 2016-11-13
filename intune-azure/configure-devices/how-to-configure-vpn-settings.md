@@ -30,7 +30,7 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-
+Use the information in this topic to learn the basics about configuring a VPN profile, and then read further topics for each platform to learn about device specifics.
 
 ## Create a device profile containing VPN settings
 
