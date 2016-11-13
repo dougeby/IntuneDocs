@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: On-Premises Access | Microsoft Docs
+title: Troubleshooting device configuration in Microsoft Intune | Microsoft Docs
 description: Use this topic to learn about On-Premises Access Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# On-Premises Access for Microsoft Intune
+# Troubleshooting device configuration in Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
