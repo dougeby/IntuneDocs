@@ -4,7 +4,7 @@
 title: Downloadable software | Microsoft Intune
 description: Review software that is available for download that might be available with your Intune or EMS subscription.
 keywords:
-author: NathBarnms.author: nathbarn
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
