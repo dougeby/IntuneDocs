@@ -37,6 +37,14 @@ The following is a list of properties that are directly derived from the device:
 * deviceOSVersion
 * displayName
 
+## To remove a device from Azure AD registration.
+You can remove the device registration either through the Azure AD admin console which is typically done by the IT admin.  It can also be done by the end-user on the device itself.
+
+* **Azure AD admin console**: In the Azure AD admin console**, delete the device that you want to remove.
+* **iOS device**: Open the Azure Authenticator app, swipe left on the account, and choose unregister.  
+* **Android device**: Uninstall the company portal app or remove the account from the **System settings**.
+
+
 
 ## MAM CA with conditional access based on device compliance  
 
