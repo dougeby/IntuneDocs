@@ -6,7 +6,7 @@ description: See how many users have the policy, and drill down to find more det
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
