@@ -6,7 +6,7 @@ description: Protect and control access to  company data on SharePoint Online wi
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

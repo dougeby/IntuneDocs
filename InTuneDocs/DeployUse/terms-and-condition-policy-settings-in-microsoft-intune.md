@@ -4,7 +4,7 @@
 title: Terms and condition policy settings | Microsoft Intune
 description: You can deploy Intune terms and conditions to user groups to explain how enrollment, access to work resources, and using the Company Portal app affect devices and users.
 keywords:
-author: NathBarnms.author: nathbarn
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article

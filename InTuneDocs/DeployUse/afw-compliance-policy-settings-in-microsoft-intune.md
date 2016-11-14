@@ -6,7 +6,7 @@ description: This topic describes the device compliance policy settings for Andr
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
