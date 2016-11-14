@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Windows 10 and later device restrictions
+# Windows 10 and later device restriction settings
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -47,7 +47,7 @@ ms.suite: ems
 - 	**Cortana** - 	
 - 	**Voice recording** - 	
 ## Password
-- 	**Password required** - 	
+- 	**Password required** - Require the end user to enter a password to access the device.	
 - 	**Required password type**	
 - 	**Minimum password length** - 	
 - 	**Number of sign-in failures before wiping device**	

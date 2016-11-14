@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Android device restrictions
+# Android and Samsung KNOX Standard device restriction settings
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -36,15 +36,15 @@ ms.suite: ems
 - 	**Clipboard sharing between apps** - 	
 - 	**Diagnostic data submission** - 	
 - 	**Factory reset** - 	
-- 	**Geolocation** - 	
+- 	**Geolocation** - Allows the device to utilize location information (Samsung KNOX Standard only).	
 - 	**Power off** - 	
 - 	**Screen capture** - 	
 - 	**Voice assistant** - 	
 - 	**YouTube** - 	
 		
 ## Password	
-- 	**Password required** - 	
-- 	**Minimum password length**	
+- 	**Password required** - Require the end user to enter a password to access the device.	
+- 	**Minimum password length**	- Enter the minimum length of password a user must configure (between 4 and 16 characters).
 - 	**Maximum minutes of inactivity until screen locks** - 	
 - 	**Number of sign-in failures before wiping device** - 	
 - 	**Password expiration (days)** - 	
@@ -78,10 +78,10 @@ ms.suite: ems
 - 	**SMS/MMS messaging** - 	
 - 	**Voice dialing** - 	
 - 	**Voice roaming** - 	
-- 	**Bluetooth** - 	
-- 	**NFC** - 	
-- 	**Wi-Fi** - 	
-- 	**Wi-Fi tethering** - 	
+- 	**Bluetooth** - Allows the use of Bluetooth on the device (Samsung KNOX Standard only).	
+- 	**NFC** - Allows operations that use near field communication if the device supports it (Samsung KNOX Standard only).	
+- 	**Wi-Fi** - Allows the use of the Wi-Fi capabilities of the device (Samsung KNOX Standard only).	
+- 	**Wi-Fi tethering** - Allows the use of Wi-Fi tethering on the device (Samsung KNOX Standard only).	
 		
 ## Kiosk	
 - 	**Select a managed app** - 	
