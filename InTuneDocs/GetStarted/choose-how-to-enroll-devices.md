@@ -9,7 +9,7 @@ manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 

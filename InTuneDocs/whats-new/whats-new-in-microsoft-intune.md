@@ -6,7 +6,7 @@ description: Find out what’s new in this month’s, and past releases of Micro
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 11/11/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/library/mt718155.aspx).
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
 
-## New Capabilities
+## New capabilities
 
 <!--### View App States for All Platforms in Real Time
 App installation status is now shown in real-time in the console. When you previously deployed an app, you had to wait for a targeted device to report back before the app install status was displayed in the Intune console.
@@ -62,15 +62,15 @@ You can block apps that are not supported by Intune mobile app management (MAM) 
 
 > While you can deploy Android for Work apps with an action of __Required__, you can only deploy apps as __Available__ if your Intune groups have been migrated to the new Azure AD groups experience.
 
-### Intune App SDK for Cordova Plugin Now Supports MAM without Enrollment
+### Intune App SDK for Cordova plugin now supports MAM without enrollment
 App developers can now use the Intune App SDK for Cordova plugin to enable MAM functionality without device enrollment in their Cordova-based apps for Android and iOS. The Intune App SDK for Cordova plugin can be found [here](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam).
 
-### Intune App SDK Xamarin Component Now Supports MAM without Enrollment
+### Intune App SDK Xamarin component now supports MAM without enrollment
 App developers can now use the Intune App SDK Xamarin component to enable MAM functionality without device enrollment in their Xamarin-based apps for Android and iOS. The Intune App SDK Xamarin component can be found [here](https://github.com/msintuneappsdk/intune-app-sdk-xamarin).
 
 ## Notices
 
-### Symantec Signing Certificate No Longer Requires Signed Windows Phone 8 Company Portal for Upload
+### Symantec signing certificate no longer requires signed Windows Phone 8 Company Portal for upload
 Uploading the Symantec signing certificate will no longer require a signed Windows Phone 8 Company Portal app. The certificate can be uploaded independently.
 
 ## Deprecations
