@@ -26,15 +26,15 @@ ms.suite: ems
 
 ---
 
-# macOS device restrictions
+# macOS device restriction settings
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## Password	
-- 	**Password required** - 	
-- 	**Required password type** - 	
-- 	**Minimum password length** - 	
-- 	**Simple passwords** - 	
+- 	**Password required** - Require the end user to enter a password to access the device.	
+- 	**Required password type** - Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers). Important: This setting is supported only on Mac OS X version 10.10.3 and later.	
+- 	**Minimum password length** - Enter the minimum length of password a user must configure (between 4 and 16 characters).	
+- 	**Simple passwords** - Allow the use of simple passwords such as 0000 or 1234.	
 - 	**Maximum minutes after screen lock before password is required** - 	
 - 	**Maximum minutes of inactivity until screen locks** - 	
 - 	**Password expiration (days)**	

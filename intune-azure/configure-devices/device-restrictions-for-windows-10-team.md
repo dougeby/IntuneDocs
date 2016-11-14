@@ -26,14 +26,14 @@ ms.suite: ems
 
 ---
 
-# Device restrictions (Windows 10 Team)
+# Windows 10 Team device restriction settings
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-- **Wake screen when someone in room** - 	
-- **PIN for wireless projection** - 	
-- **Miracast wireless projection** - 	
-- **Miracast wireless projection channel** - 	
+- **Wake screen when someone in room** - Allows the device to wake automatically when its sensor detects someone in the room.	
+- **PIN for wireless projection** - Specifies whether you must enter a PIN before you can use the wireless projection capabilities of the device.	
+- **Miracast wireless projection** - Enable this option if you want to let the Windows 10 Team device use Miracast enabled devices to project.
+- **Miracast wireless projection channel** - Select the Miracast channel that will be used to project content.	
 - **Meeting information displayed on welcome screen** - 	
 - **Welcome screen background image URL** - 	
 - **Maintenance window for updates** - 	

@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Windows 8.1 and later device restrictions
+# Windows 8.1 and later device restriction settings
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -36,7 +36,7 @@ ms.suite: ems
 - 	**Firewall** - 	
 - 	**User Account Control** - 	
 ## Password
-- 	**Required password type** - 	
+- 	**Required password type** - Require the end user to enter a password to access the device.	
 - 	**Minimum password length**	
 - 	**Number of sign-in failures before wiping device** - 	
 - 	**Maximum minutes of inactivity until screen locks** - 	

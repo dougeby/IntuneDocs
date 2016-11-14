@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# iOS device restrictions
+# iOS device restriction settings
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -55,7 +55,7 @@ ms.suite: ems
 - 	**Wrist detection for paired Apple watch** - 	
 		
 ## Password	
-- 	**Password required** - 	
+- 	**Password required** - Require the end user to enter a password to access the device.	
 - 	**Simple passwords** - 	
 - 	**Required password type** - 	
 - 	**Number of non-alphanumeric characters in password** - 	
