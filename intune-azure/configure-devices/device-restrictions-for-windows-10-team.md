@@ -39,6 +39,6 @@ ms.suite: ems
 - **Maintenance window for updates** - 	
 - **Start time** - 	
 - **Duration in hours** - 	
-- **Azure Operational Insights** - 	
-- **Workspace ID** - 	
-- **Workspace Key** - 	
+- **Azure Operational Insights** - Azure Operational Insights , part of the Microsoft Operations Manager suite collects, stores, and analyzes log file data from Windows 10 Team devices.<br>To connect to Azure Operational insights, you must specify a **Workspace ID** and a **Workspace Key**.	
+	- **Workspace ID** 	
+	- **Workspace Key** 	
