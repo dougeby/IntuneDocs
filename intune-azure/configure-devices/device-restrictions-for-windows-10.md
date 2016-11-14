@@ -31,24 +31,24 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## General
-- 	**Screen capture** - 	
+- 	**Screen capture** - Let's the user capture the device screen as an image. (Windows 10 Mobile only)	
 - 	**Copy and paste (mobile only)**	
-- 	**Manual unenrollment** - 	
+- 	**Manual unenrollment** - Lets the user manually delete the workplace account from the device.	
 - 	**Manual root certificate installation** - 	
 - 	**Diagnostic data submission** - 	
 - 	**Camera**	
-- 	**Removable storage** - 	
+- 	**Removable storage** - Specifies whether external storage devices such as an SD card can be used with the device.	
 - 	**Geolocation**	
-- 	**Internet sharing** - 	
+- 	**Internet sharing** - Allow the use of Internet connection sharing on the device.	
 - 	**Phone reset** - 	
-- 	**USB connection** - 	
+- 	**USB connection** - Controls whether devices can access external storage devices through a USB connection.	
 - 	**AntiTheft mode** - 	
 - 	**Action center notifications**	
 - 	**Cortana** - 	
 - 	**Voice recording** - 	
 ## Password
 - 	**Password required** - Require the end user to enter a password to access the device.	
-- 	**Required password type**	
+- 	**Required password type** - Specifies whether the password must be numeric only, or alphanumeric.	
 - 	**Minimum password length** - 	
 - 	**Number of sign-in failures before wiping device**	
 - 	**Maximum minutes of inactivity until screen locks** - 	
@@ -60,9 +60,9 @@ ms.suite: ems
 
 - 	**App store (mobile only)** - 	
 ## Edge Browser
-- 	**Microsoft Edge browser (mobile only)** - 	
+- 	**Microsoft Edge browser (mobile only)** - Allow the use of the Edge web browser on the device.	
 - 	**SmartScreen** - 	
-- 	**Send do-not-track headers**	
+- 	**Send do-not-track headers** - Configures the Edge browser to send do not track headers to websites that users visit.	
 - 	**Cookies** - 	
 - 	**JavaScript**	
 - 	**Pop-ups**	
@@ -88,10 +88,10 @@ ms.suite: ems
 - 	**Manual Wi-Fi configuration** - Controls whether the user can configure their own Wi-Fi connections, or whether they can only use connections configured by a Wi-Fi profile (Windows 10 Mobile only).
 ## Defender	
 
-- 	**Real-time monitoring** - 	
-- 	**Behavior monitoring**	- 
-- 	**Network Inspection System (NIS)**	- 
-- 	**Scan all downloads** - 	
+- 	**Real-time monitoring** - Enables real-time scanning for malware, spyware, and other unwanted software.	
+- 	**Behavior monitoring**	- Lets Defender check for certain known patterns of suspicious activity on devices.
+- 	**Network Inspection System (NIS)**	- The Network Inspection System (NIS) helps to protect devices against network-based exploits by using the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
+- 	**Scan all downloads** - Controls whether Defender scans all files downloaded from the Internet.	
 - 	**Scan scripts loaded in Microsoft web browsers** - 
 - 	**End user access to Defender**	- 
 - 	**Signature update interval (in hours)** - 
