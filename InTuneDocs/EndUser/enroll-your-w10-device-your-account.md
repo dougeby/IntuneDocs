@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll your Windows device in Intune | Microsoft Intune
+title: Enroll your Windows 10 device in Intune | Microsoft Intune
 description: Enroll a Windows 10 1511 device into Intune
 keywords:
 author: barlanmsft
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Steps to follow if you see Your account
+# Enroll your Windows 10 device in Intune
 
 1.  Go to Windows **Settings**, and then tap **Accounts**.
 

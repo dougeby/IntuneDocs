@@ -36,20 +36,12 @@ Want to know more? Find out what happens when you [enroll your device in Intune]
 1.	Go to __Start__ ![Windows Start Menu](./media/windows-start-menu.png) and type __About your PC__. Select __About Your PC__.
 2.	In your __Settings__, you will see a list of information about the version of Windows 10 that is installed on your PC. Within this list, locate the __Version__.
 ![Windows 10 Desktop About Your PC](./media/settings-about-pc.png)
-3.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school).
-
-> [!Note]
-> If your version is __1511__, continue with [these steps](enroll-your-w10-device-your-account).
+3.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school). If your version is __1511__, continue with [these steps](enroll-your-w10-device-your-account).
 
 ## Windows 10 Mobile devices
 1.	On __Start__, swipe over to the __All apps__ list, then select the __Settings__ app.
 2.	Tap on __System__ then __About__.
 3.	Under __Device information__, tap __More info__. You will see a list of information about your device. Within this list, locate the __Version__.
-4.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school).
-
-> [!Note]
-> If your version is __1511__, continue with [these steps](enroll-your-w10-device-your-account).
-
-
+4.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school). If your version is __1511__, continue with [these steps](enroll-your-w10-device-your-account).
 
 Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
