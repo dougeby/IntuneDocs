@@ -93,7 +93,8 @@ One way that Intune provides mobile app security is through its **app protection
 
 When a user logs on to her device with her corporate credentials, her corporate identity allows her access to data that is denied to her personal identity. As that corporate data is used, Intune controls how it is saved and shared. Those same protections are not applied to data that is accessed when the user logs on to her device with her personal identity. In this way, IT has control of corporate data while the end user maintains control and privacy over personal data.
 
-## Common business problems that Intune helps solve
+
+## Enterprise mobiity management with and without device enrollment
 Most enterprise mobility management solutions support basic mobile device and mobile app technologies. These are usually tied to the device being enrolled in your organization’s MDM solution. Intune supports these scenarios and additionally supports many “without enrollment” scenarios.  
 
 Organizations differ to the extent they will adopt “without enrollment” scenarios. Some organizations standardize on it. Some allow it for companion devices such as a personal tablet. Others don’t support it at all. Even in this last case, where an organization requires all employee devices to be enrolled in MDM, these organizations typically support "without enrollment" scenarios for contractors, vendors, and for other devices that have a specific exemption.
@@ -102,6 +103,7 @@ You can even use Intune’s “without-enrollment” technology on enrolled devi
 
 Whatever your organization’s position on enrolled and unenrolled mobile devices and apps, Intune has tools that will help increase your workforce productivity while protecting your corporate data.
 
+## Common business problems that Intune helps solve
 The following list of common business problems our customers are trying to solve link to more detailed information about the solutions we can provide.
 
 * [Protect your on-premises email and data so that it can be accessed by mobile devices](common-ways-to-use-intune.md#Protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)

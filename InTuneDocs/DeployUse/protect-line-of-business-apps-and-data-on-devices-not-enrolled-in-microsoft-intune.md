@@ -6,10 +6,10 @@ description: This topic describes how you can prepare your custom line of busine
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 
@@ -35,7 +35,7 @@ This topic explains the steps required to apply MAM policies for apps that are a
 ##  Step 1: Prepare the app
 Before you can apply MAM policies to an app, you must first wrap the app with the Microsoft Intune App Wrapping tool.  For instructions to download and use the app wrapping tool, see the following pages:
 
-- [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 
+- [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 - [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
 
 >[!IMPORTANT]  

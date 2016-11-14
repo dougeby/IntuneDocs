@@ -43,7 +43,7 @@ Microsoft Intune lets admins import international mobile equipment identity (IME
         AABBBBBBCCCCCCE,PO 1234
         ```
 
-    -   **Manually add device details** - Enter the IMEI number and device details of up to five devices.
+    -   **Manually add device details** - Enter the IMEI number and device details of up to 15 devices.
 
    *Details* are for administrative use so you can identify the IMEI number that's associated with a device. This information is not sent to the device, but it will appear in the Intune console.
 

@@ -7,7 +7,7 @@
 
 # [Troubleshoot](general-troubleshooting-tips-for-microsoft-intune.md)
 ## [How to get support](how-to-get-support-for-microsoft-intune.md)
-## [Troubleshoot endpoint protection](Troubleshoot-Endpoint-Protection-in-microsoft-intune.md)
+## [Troubleshoot Endpoint Protection](Troubleshoot-Endpoint-Protection-in-microsoft-intune.md)
 ## [Troubleshoot company resource access problems](Troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 ## [Troubleshoot app deployment problems](Troubleshoot-app-deployment-problems-in-microsoft-intune.md)
 ## [Troubleshoot device enrollment](troubleshoot-device-enrollment-in-intune.md)

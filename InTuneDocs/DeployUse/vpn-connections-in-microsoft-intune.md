@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,7 +56,7 @@ Intune supports creating VPN profiles that use the following connection types:
 Connection type |iOS and Mac OS X  |Android and Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 desktop and mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Yes |Yes   |No    |No  |No    | Yes (OMA-URI, mobile only)|     
-Cisco (IPsec)|Yes |No   |No  |No  |No | No|
+Cisco (IPsec)|Yes |Yes   |No  |No  |No | No|
 Citrix|Yes |No   |No  |No  |No | No|
 Pulse Secure|Yes  |Yes |Yes   |Yes  |Yes| Yes|        
 F5 Edge Client|Yes |Yes |Yes |Yes  |   Yes |  Yes|   
@@ -115,7 +115,7 @@ Setting name  |More information
 **Name**     |Enter a unique name for the VPN profile to help you identify it in the Intune console.         
 **Description**     |Provide a description that gives an overview of the VPN profile and other relevant information that helps you to locate it.         
 **VPN connection name (displayed to users)**     |Specify a name for the VPN profile. This is the name that users will see in the list of available VPN connections on their devices.         
-**Connection type**     |  Select one of the following connection types to use in the VPN profile: **Cisco AnyConnect** (not available for Windows 8.1 or Windows Phone 8.1), **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
+**Connection type**     |  Select one of the following connection types to use in the VPN profile: **Cisco AnyConnect** (not available for Windows 8.1 or Windows Phone 8.1), **Pulse Secure**, **Citrix**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **CheckPoint Mobile VPN**.
 **VPN server description**     | Specify a description for the VPN server that devices will connect to. Example: **Contoso VPN Server**. When the connection type is **F5 Edge Client**, use the **Server list** field to specify a list of server descriptions and IP addresses.
 **Server IP address or FQDN**    |Provide the IP address or fully qualified domain name of the VPN server that devices will connect to. Examples: **192.168.1.1**, **vpn.contoso.com**.  When the connection type is **F5 Edge Client**, use the **Server list** field to specify a list of server descriptions and IP addresses.         |         
 **Server list**     |Choose **Add** to add a new VPN server to use for the VPN connection. You can also specify which server will be the default server for the connection. This option is displayed only when the connection type is **F5 Edge Client**.         
@@ -123,8 +123,8 @@ Setting name  |More information
 **Authentication method**| Select the authentication method that the VPN connection uses: **Certificates** or **Username and Password**. (**Username and Password** is not available when the connection type is Cisco AnyConnect.) The **Authentication method** option is not available for Windows 8.1.
 **Remember the user credentials at each logon**|Select this option to ensure that the user credentials are remembered so that the user does not have to enter credentials each time a connection is established.
 **Select a client certificate for client authentication (Identity Certificate)**|Select the client SCEP certificate that you previously created and that will be used to authenticate the VPN connection. For more information about how to use certificate profiles in Intune, see [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md). This option is displayed only when the authentication method is **Certificates**.
-**Role**| Specify the name of the user role that has access to this connection. A user role defines personal settings and options, and it enables or disables certain access features. This option is displayed only when the connection type is **Pulse Secure**.
-**Realm**|Specify the name of the authentication realm that you want to use. An authentication realm is a grouping of authentication resources that the Pulse Secure connection type uses. This option is displayed only when the connection type is **Pulse Secure**.
+**Role**| Specify the name of the user role that has access to this connection. A user role defines personal settings and options, and it enables or disables certain access features. This option is displayed only when the connection type is **Pulse Secure** or **Citrix**.
+**Realm**|Specify the name of the authentication realm that you want to use. An authentication realm is a grouping of authentication resources that the Pulse Secure or Citrix connection type uses. This option is displayed only when the connection type is **Pulse Secure** or **Citrix**.
 **Login group or domain**|Specify the name of the login group or domain that you want to connect to. This option is displayed only when the connection type is **Dell SonicWALL Mobile Connect**.
 **Fingerprint**|Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) This option is displayed only when the connection type is **CheckPoint Mobile VPN**.
 **Per App VPN**|Select this option if you want to associate this VPN connection with an iOS or Mac OS X app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you deploy the software. For more information, see [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
