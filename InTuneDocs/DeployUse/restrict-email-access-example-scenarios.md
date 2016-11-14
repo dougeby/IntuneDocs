@@ -4,9 +4,9 @@
 title: Restrict access to email example scenarios | Microsoft Intune
 description: A few example scenarios and how they could be implemented with conditional access.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

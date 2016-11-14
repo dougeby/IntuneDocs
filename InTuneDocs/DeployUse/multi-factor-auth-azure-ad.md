@@ -4,12 +4,13 @@
 title: This feature has not been enabled| Microsoft Intune 
 description:
 keywords:
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
 ms.date: 08/15/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: c87fe9d2-efe5-425d-99c5-3c71734e1d5d
 

@@ -4,9 +4,9 @@
 title: Create and deploy MAM policies | Microsoft Intune
 description: Use the step-by-step instructions in this topic to create and deploy mobile app management policies.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -117,8 +117,9 @@ Only users with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses 
 >[!IMPORTANT]
 > If you are using Intune with Configuration Manager to manage your iOS and Android devices, the policy is only applied to the users directly in the group that you selected.  Members of child groups  nested within the group you selected will not be affected.
 
-The end users can download the apps from the App store or Google Play. For a detailed walkthrough of how MAM protects company data on the device see [end user experience with MAM enabled apps](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md) topic.
-
+The end users can download the apps from the App store or Google Play. For more information, see:
+* [What to expect when your Android app is managed by MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [What to expect when your iOS app is managed by MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 ##  Change existing policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies,  users who are already signed  in to the apps won’t see the changes for an 8-hour period.
 
@@ -171,4 +172,5 @@ To see a full list of the policy setting for iOS and Android, select one of the 
 [Monitor compliance and user status](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### See also
-[End user experience for MAM enabled apps](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [What to expect when your iOS app is managed by MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Set up Android management | Microsoft Intune
-description: Enable mobile device management (MDM) for Android and KNOX devices with Microsoft Intune.
+description: Enable mobile device management (MDM) for Android and KNOX Standard devices with Microsoft Intune.
 keywords:
-author: NathBarn
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -26,20 +26,21 @@ ms.suite: ems
 ---
 
 # Set up Android device management
-As an Intune administrator, you can enable manage Android devices from the Company Portal. Users can then enroll their devices using the Company Portal app available from Google Play.
+As an Intune administrator, you can enable management of Android devices, including Samsung Knox Standard devices, from the Company Portal. Users can then enroll their devices using the Company Portal app that is available from Google Play.
 
 1.  **Set up Intune**<br>
-    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
+    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](prerequisites-for-enrollment.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
 
 2.  **Android enrollment enabled**<br>
     No additional configurations in the Intune console are needed to enable Android mobile device enrollment.
 
-3.  **Tell users how to get access to company resources with the company portal**<br>
-    Your users will need to know how to enroll their devices and what to expect once they're brought into management. [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+3.  **Tell your users how to enroll their devices to get access to company resources.**
 
-4.  Your users will need to know how to enroll their devices and what to expect once they're brought into management.
-  - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-  - [End user guidance for Windows devices](../enduser/using-your-android-device-with-intune.md)
+	For end-user enrollment instructions, see [Enroll your Android device in Intune](../enduser/enroll-your-device-in-intune-android.md). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
+
+	For information about other end-user tasks, see these articles:
+  - [Resources about the end-user experience with Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [End user guidance for Android devices](../enduser/using-your-android-device-with-intune.md)
 
 ### See also
-[Get ready to enroll devices in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[Prerequisites to enrolling devices in Microsoft Intune](prerequisites-for-enrollment.md)

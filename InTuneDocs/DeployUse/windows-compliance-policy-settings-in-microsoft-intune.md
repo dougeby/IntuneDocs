@@ -2,11 +2,11 @@
 # required metadata
 
 title: Compliance policy settings for Windows devices| Microsoft Intune
-description:
+description: This topic described the rules and settings you can configure for a compliance policy for Windows devices.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,6 +33,7 @@ If you are looking for information about other platforms, select one of the foll
 > [!div class="op_single_selector"]
 - [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Compliance policy settings for Android for Work](afw-compliance-policy-settings-in-microsoft-intune)
 
 ## Compliance policy settings for Windows Phone devices
 The settings listed in this section are supported on Windows Phone 8.1 and later.

@@ -4,12 +4,12 @@
 title: Troubleshoot Lookout Integration | Microsoft Intune
 description: This topic describes troubleshooting issues that commonly occur with Lookout Integration
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 
@@ -92,4 +92,4 @@ As long as the new user is in one of the  enrollment groups specified in the Loo
 
 
 ### See also
-[Set up you subscription with Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+[Set up you subscription with Lookout MTP](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
