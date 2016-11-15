@@ -63,13 +63,13 @@ ms.suite: ems
 - 	**Microsoft Edge browser (mobile only)** - Allow the use of the Edge web browser on the device.	
 - 	**SmartScreen** - 	
 - 	**Send do-not-track headers** - Configures the Edge browser to send do not track headers to websites that users visit.	
-- 	**Cookies** - 	
+- 	**Cookies** - Lets the browser save internet cookies to the device.	
 - 	**JavaScript**	
-- 	**Pop-ups**	
+- 	**Pop-ups** - Applies to Windows 10 desktop only	
 - 	**Search suggestions** - 	
 - 	**Send intranet traffic to Internet Explorer** - 	
-- 	**Autofill** - 	
-- 	**Password Manager** - 	
+- 	**Autofill** - Allow users to change autocomplete settings in the browser.<br>(Windows 10 desktop only)	
+- 	**Password Manager** - Enable or disable the Edge Password Manager feature.	
 - 	**Enterprise mode site list location** - 	
 ## Cloud and Storage
 - 	**Microsoft account** - 	
@@ -92,23 +92,24 @@ ms.suite: ems
 - 	**Behavior monitoring**	- Lets Defender check for certain known patterns of suspicious activity on devices.
 - 	**Network Inspection System (NIS)**	- The Network Inspection System (NIS) helps to protect devices against network-based exploits by using the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
 - 	**Scan all downloads** - Controls whether Defender scans all files downloaded from the Internet.	
-- 	**Scan scripts loaded in Microsoft web browsers** - 
-- 	**End user access to Defender**	- 
-- 	**Signature update interval (in hours)** - 
+- 	**Scan scripts loaded in Microsoft web browsers** - Lets Defender scan scripts that are used in Internet Explorer.
+- 	**End user access to Defender**	- Controls whether the Windows Defender user interface is hidden from end users.
+When this setting is changed, it will take effect the next time the end user's PC is restarted.
+- 	**Signature update interval (in hours)** - Specify the interval at which Defender will check for new signature files.
 - 	**Monitor file and program activity** - 	
 - 	**Days before deleting quarantined malware** - 	
 - 	**CPU usage limit during a scan** - 
-- 	**Scan archive files** - 	
-- 	**Scan incoming mail messages**	- 
-- 	**Scan removable drives during a full scan** - 	
+- 	**Scan archive files** - Allows Defender to scan archived files such as Zip or Cab files.	
+- 	**Scan incoming mail messages**	- Allows Defender to scan email messages as they arrive on the device. 
+- 	**Scan removable drives during a full scan** - Lets Defender scan removable drives like USB sticks.	
 - 	**Scan mapped network drives during a full scan** - 
 - 	**Scan files opened from network folders** - 
 - 	**Cloud protection** - 
-- 	**Prompt users before sample submission** - 	
+- 	**Prompt users before sample submission** - Controls whether files that might require further analysis by Microsoft to determine if they are malicious are automatically sent to Microsoft.	
 - 	**Time to perform a daily quick scan** - 
 - 	**Type of system scan to perform** - 	
 ## Defender Exclusions
 
 - 	**Files and folders to exclude from scans and real-time protection** - 
 - 	**File extensions to exclude from scans and real-time protection** - 
-- 	**Processes to exclude from scans and real-time protection** - 	
+- 	**Processes to exclude from scans and real-time protection** - Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes will not be included in any real-time, or scheduled scans.	

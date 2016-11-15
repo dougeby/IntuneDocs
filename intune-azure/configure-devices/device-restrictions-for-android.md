@@ -45,14 +45,14 @@ ms.suite: ems
 ## Password	
 - 	**Password required** - Require the end user to enter a password to access the device.	
 - 	**Minimum password length**	- Enter the minimum length of password a user must configure (between 4 and 16 characters).
-- 	**Maximum minutes of inactivity until screen locks** - 	
-- 	**Number of sign-in failures before wiping device** - 	
-- 	**Password expiration (days)** - 	
-- 	**Required password type** - 	
-- 	**Prevent reuse of previous passwords** - 	
-- 	**Fingerprint unlock**	
-- 	**Smart Lock and other trust agents** - 	
-- 	**Encryption** - 	
+- 	**Maximum minutes of inactivity until screen locks** - Specifies the number of minutes of inactivity before the device automatically locks.	
+- 	**Number of sign-in failures before wiping device** - Specifies the number of sign-in failures to allow before the device is wiped.	
+- 	**Password expiration (days)** - Specifies the number of days before the device password must be changed.	
+- 	**Required password type** - Specifies the password complexity level that's required and whether biometric devices can be used.	
+- 	**Prevent reuse of previous passwords** - Stops the end user from creating a password they have used before.	
+- 	**Fingerprint unlock** - Allows the use of a fingerprint to unlock supported devices.	
+- 	**Smart Lock and other trust agents** - Lets you control the Smart Lock feature on compatible Android devices. This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag.) You can use this setting to prevent users from configuring Smart Lock.	
+- 	**Encryption** - Requires that files on the device are encrypted.	
 		
 ## Google Play Store	
 
