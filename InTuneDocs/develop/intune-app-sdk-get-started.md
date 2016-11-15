@@ -39,23 +39,23 @@ This guide walks through the major steps needed to enable mobile app management 
 
 You **do not need** to register your app. For internal line-of-business apps, the IT administrator will deploy the app internally. Intune will detect that the app has been built with the SDK, and will allow the IT administrator to apply MAM policy settings to it. You can skip to the section [Enable your iOS or Android mobile app for MAM with the SDK](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk).
 
-**If your app will be released to a public app store, such as the Apple App Store or Google Play**: 
+**If your app will be released to a public app store, such as the Apple App Store or Google Play**:
 
 You **must** first register your app with Microsoft Intune and agree to the registration terms. After registering, IT administrators can apply Intune MAM policy settings to the enlightened app, which will be listed as an Intune app partner. Until registration has been complete and confirmed by the Microsoft Intune team, Intune administrators will not have the option to apply MAM policy to your app's deep link. Microsoft will also add your app to its [Microsoft Intune Partners page](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps), where the app's icon will be displayed to show that it supports Microsoft Intune MAM policy.
 
-To begin the registration process, fill out the **[Microsoft Intune App Partner Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)**. 
+To begin the registration process, fill out the **[Microsoft Intune App Partner Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)**.
 
 Microsoft will use the email address(es) listed in your questionnaire responses to reach out and continue the registration process. Additionally, we use your registration email address to contact you should we have any concerns.
 
 > [!NOTE]
 > All information collected in the form above and through e-mail correspondence with the Microsoft Intune team will honor the [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacystatement/default.aspx).
 
-**What to expect in the registration process**: 
+**What to expect in the registration process**:
 
-1. After you have submitted the questionnaire you will be contacted by Microsoft via your registration email address, to either confirm successful receipt or request additional information to complete the registration. 
-2. After we receive all necessary information from you, we will send you the Microsoft Intune App Partner Agreement to sign. This agreement describes the terms your company must accept before becoming a Microsoft Intune app partner. 
-3. You will be notified when your app is successfully registered with the Microsoft Intune service and when your app is featured on the [Microsoft Intune partners](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) site. 
-4. Finally, your app deep link will be added to the next monthly Intune Service update. For example, if the registration information is completed in July, the app deep link will be supported in mid-August. 
+1. After you have submitted the questionnaire you will be contacted by Microsoft via your registration email address, to either confirm successful receipt or request additional information to complete the registration.
+2. After we receive all necessary information from you, we will send you the Microsoft Intune App Partner Agreement to sign. This agreement describes the terms your company must accept before becoming a Microsoft Intune app partner.
+3. You will be notified when your app is successfully registered with the Microsoft Intune service and when your app is featured on the [Microsoft Intune partners](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) site.
+4. Finally, your app deep link will be added to the next monthly Intune Service update. For example, if the registration information is completed in July, the app deep link will be supported in mid-August.
 
 If your store app deep link changes in the future, you will need to re-register your app. Additionally, please inform us if you update your app with a new version of the Intune App SDK.
 
@@ -79,21 +79,29 @@ We recommend signing up for a GitHub account you can use to fork and pull from o
 
 
 
-## Enable your iOS or Android mobile app for MAM with the SDK
+## Developer Guides
 
-To integrate the Intune App SDK into your native iOS app, you will need the following: 
+To integrate the Intune App SDK into your native iOS app, you will need the following:
 
-* **[Intune App SDK for iOS Developer Guide](intune-app-sdk-ios.md)**: this document will walk you step-by-step through enabling your mobile iOS app with the Intune App SDK. 
+* **[Intune App SDK for iOS Developer Guide](intune-app-sdk-ios.md)**: this document will walk you step-by-step through enabling your mobile iOS app with the Intune App SDK.
 
 
 To integrate the Intune App SDK into your native Android app, you will need the following:
 
-* **[Intune App SDK for Android Developer Guide](intune-app-sdk-android.md)**: This document will walk you step-by-step through enabling your mobile android app with Intune App SDK. 
+* **[Intune App SDK for Android Developer Guide](intune-app-sdk-android.md)**: This document will walk you step-by-step through enabling your mobile android app with Intune App SDK.
 
-Documentation for the Intune App SDK Xamarin Component and Intune App SDK Cordova Plugin can be found within their respective GitHub repositories. 
+To build Cordova apps with the Intune App SDK Cordova Plugin, you should read:
+
+* **[Intune App SDK Cordova Plugin guide](intune-app-sdk-cordova)**: This document will help you build iOS and Android apps using Cordova for Intune mobile application management.
+
+To build Xamarin apps with the Intune App SDK Xamarin Component, you should read:
+
+* **[Intune App SDK Xamarin Component guide](intune-app-sdk-xamarin)**: This document will help you build iOS and Android apps using Cordova for Intune mobile application management.
 
 
-## Configuring Telemetry for your app
+
+
+## Configure Telemetry for your app
 
 Microsoft Intune collects data on usage statistics for your app.
 
@@ -111,7 +119,6 @@ Once you’ve completed the necessary steps to integrate your iOS or Android app
 
 * **Testing your MAM enabled app with Microsoft Intune**: This document will walk you through step-by-step how to test your MAM-enabled iOS or Android apps with Microsoft Intune. You can find this document in the GitHub repositories of the SDKs.
 
-* **Microsoft Intune Account**: To test your MAM enabled apps with Microsoft Intune, you will need a Microsoft Intune account. 
-	* If you are an ISV enabling your iOS or Android store apps for Intune MAM, you will receive a promo code once you complete the registration with Microsoft Intune as outlined in the registration step. The promo code will allow you to sign up for a Microsoft Intune trial for 1 year of extended use. 
+* **Microsoft Intune Account**: To test your MAM enabled apps with Microsoft Intune, you will need a Microsoft Intune account.
+	* If you are an ISV enabling your iOS or Android store apps for Intune MAM, you will receive a promo code once you complete the registration with Microsoft Intune as outlined in the registration step. The promo code will allow you to sign up for a Microsoft Intune trial for 1 year of extended use.
 	* If you are developing a line of business app that will not be shipped to the store, you are expected to have access for Microsoft Intune through your organization. You can also sign up for 1-month free trial in with [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
-
