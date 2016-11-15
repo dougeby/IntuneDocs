@@ -44,11 +44,11 @@ ms.suite: ems
 
 	![sign-in](./media/W10-enroll-4-sign-in.png)
 
-If you followed the previous steps, but still can't access your work or school email address, files, or other data, try the instructions in [Troubleshooting steps to follow if you see Your account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).
+Still can't access your work or school email, files, or other data? Try to fix your access by [troubleshooting issues with your account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). If it still doesn't work, you'll need to contact your IT administrator for further help.
 
-We also recommend that you install the Company Portal app, which lets you easily identify and get the company apps that are relevant to you and your role. Depending on how your company configured Intune, the Company Portal app may have been installed as part of your enrollment process.
+An easy way to get help from your IT administrator is through the contact information available in the Company Portal app, which also lets you find and download recommended and required apps for your daily work. It's possible that you already have the Company Portal app installed on your device. A quick way to check is to look for __Company Portal__ in your __All apps__ list.
 
-To verify whether you have the app, look for **Company Portal** in your apps list. If you don't see the Company Portal in your list of apps, follow these steps to install it.
+If you don't see the Company Portal in your list of apps, follow these steps to install it.
 
 1.  Tap **Start** &gt; **Store**.
 
@@ -56,4 +56,4 @@ To verify whether you have the app, look for **Company Portal** in your apps lis
 
 3.  In the list of results, tap **Company Portal** &gt; **Install**.
 
-4.  Tap  either **Install** or **Free**. The option that is shown depends on how your company configured the app.
+4.  Tap either **Install** or **Free**. There is no difference between these two options for you; the choice that is shown depends on how your organization set up the Company Portal app.
