@@ -116,5 +116,6 @@ For Xamarin Forms and other UI frameworks, we have provided a tool called `MAM.R
 
 3.	Set the build action of the added `remapping-config.json` file to **RemappingConfigFile**. The included `remapping-config.json` only works with Xamarin.Forms. For other UI frameworks, refer to the Readme included with the Remapper nuget package.
 
+## Test your app
+
 You have completed the basic steps of building the component into your app. Now you can follow the steps included in the Xamarin Android sample app. We have provided two samples, one for Xamarin.Forms and another for Android.
----
