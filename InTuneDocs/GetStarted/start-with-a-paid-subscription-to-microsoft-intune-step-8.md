@@ -26,42 +26,41 @@ ms.suite: ems
 ---
 
 # Enroll mobile devices and install an app
-To set up mobile device management with Intune, you must first set the mobile device management authority, enable management for device platforms, and enroll your devices with the Company Portal app. You can then deploy the Microsoft Skype application that you published in step 6.
+To set up mobile device management with Intune, you must first set the *mobile device management authority*, which identifies the service that can manage devices associated with your account. This guidance assumes you will use the Intune service instead of System Center Configuration Manager. Once the MDM authority is set, you can enable management for device platforms, and enroll your devices with the Company Portal app.
 
-## Enable device management and enroll devices
+## Enable device enrollment
 
-1.  **Make Intune your mobile device management authority**
-    In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** > **Mobile Device Management**, and then choose **Set MDM Authority** under **Tasks**.  Choose **Yes** in the MDM Authority dialog box.
+1. **Make Intune your mobile device management authority**
+    In the [Intune administration console](https://manage.microsoft.com/), choose **Admin** > **Mobile Device Management**, and then choose **Set MDM Authority** under **Tasks**.  
+
+2. Choose **Yes** in the MDM Authority dialog box.
+
 	![Admin console. Set mdm to Intune](./media/mdmAuthority.png)
 
-2.  **Enable MDM for your device platform**
-    Enable mobile device management for the device platform you want to manage. Depending on your platform, different requirements are needed:
+## Choose how to enroll devices
 
-    -   **iOS and Mac OS X**: see [Set up iOS and Mac management with Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
+Intune can manage devices in a variety of ways depending upon your company's requirements. "Bring your own device" (BYOD), corpoarte-owned devices, "choose your own device" (CYOD), and kiosk-mode devices are just a few available enrollment scenarios.
 
-    -   **Windows Phone**: see [Set up Windows Phone management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune).
+Follow these steps to [Choose how to enroll devices](choose-how-to-enroll-devices1.md).
 
-    -   **Android**: Android mobile devices allow users to enroll using the Company Portal app available from [Google Play](https://play.google.com/store/apps/details?id=com.skype.raider). No additional configuration in Intune is required.
+## Enable MDM for your device platform
+Enrollment must be enabled for iOS, Mac, and Android for Work devices establishing a relationship between the platform provider and your Intune tenant. Windows and Android devices do not require additional steps, but for Windows devices you can simplify device enrollment for your users by creating a special DNS registry entry.
 
-3.  **Enroll devices**:
+Enable device enrollment for the device platform you want to manage. Depending on your platform, different requirements are needed:
 
-    -   **Android** - Install the **Intune Company Portal** app from Microsoft Corporation available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune user credentials added above.
+-  [iOS and Mac OS X](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [Window PC](set-up-windows-device-management-with-microsoft-intune.md)
+-  [Window 10 Mobile and Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Android for Work](set-up-android-for-work.md)
 
-    -   **iOS and Mac OS X** - Install the **Microsoft Intune Company Portal** app from Microsoft Corporation available in the App Store and sign in with the Intune user credentials added above. View **Enrolled devices** to add your device.
+Once enrollment is enabled, users can download the Company Portal app to their device and complete the device enrollment process.
 
-    -   **Windows Phone 8.1**- Users install the **Company Portal** app from Microsoft Corporation available in the Windows Phone store and sign in with the Intune user credentials added above.  View **Enrolled devices** to add your device.
-
-    -   **Windows Phone 8.0**  - Users choose **system settings** &gt; **company apps**, and sign in with Intune user credentials added above. The Company Portal app is deployed to your phone.
-
-    If prompted for a **Server address**, type “manage.microsoft.com”.
-
-## Install an app on an enrolled device
-In [step 6](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) of this quick start guide, you published the Skype app to your custom Intune Users group. Now you'll install that app on a newly enrolled device.
-
-Open the Company Portal on the enrolled mobile device, choose **Apps**, and then install **Microsoft Skype**.
-
-To learn more about mobile device management using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], see [Prerequisites for enrolling devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment).
-
+### Enable company-owned device enrollment
+You can also enable a variety of [company-owned device enrollment](manage-corporate-owned-devices.md) scenarios including:
+- [Apple Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune.md)
+- [Apple Configurator Setup Assistant enrollment](ios-setup-assistant-enrollment-in-microsoft-intune.md)
+- [Apple Configurator Setup Assistant enrollment](ios-direct-enrollment-in-microsoft-intune.md)
+- [Device Enrollment Manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 
 ### Next steps
 Congratulations! You have just completed the last step of the *Intune quick start guide*. Now that your initial configuration is complete, you can consider enabling additional MDM functionality.
