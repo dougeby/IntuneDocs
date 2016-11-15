@@ -1,13 +1,12 @@
 ---
 # required metadata
 
-
 title: What is Microsoft Intune | Microsoft Docs
-description: Learn how Intune is the mobile device management component of the Enterprise Mobility + Security solution.
+description: Learn how Intune is the mobile device management component of the Enterprise Mobility + Security solution and how it helps you protect company data.
 keywords: what is Intune
 author: Lindavrms.author: lindavr
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 11/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,12 +36,10 @@ Intune integrates closely with Azure Active Directory (Azure AD) for identity an
 
 Together, Office 365 and EMS enable your workforce to be productive on all of their devices while keeping your organization's information protected. Office 365 with EMS is a complete, integrated suite for enterprise mobility inclusive of productivity, identity, access control, management, and data protection. It gives you an effective way to deploy and operate a mobility solution in your organization.
 
-
-<!--- ![Image of enterprise mobility vision](..\media\em-vision.png) --->
 ## How does Intune work?
 Intune provides mobile device management (MDM) and mobile app management (MAM). Intune’s MDM and MAM features then contribute to the EMS suite of data protection and compliance scenarios.  
 
-How you’ll use the MDM/MAM features of Intune and EMS data protection depends on the business problem you’re trying to solve. For example:
+How you’ll use the MDM/MAM features of Intune and EMS data protection depends on the [business problem you’re trying to solve](#Common-business-problems-that-Intune-helps-solve). For example:
 * You’ll make strong use of MDM if you're creating a pool of single-use devices to be shared by shift workers in a retail store.
 * You’ll lean on MAM and data protection if you allow your workforce to use their personal devices to access corporate data (BYOD).  
 * If you are issuing corporate phones to information workers, you’ll rely heavily on all of the technologies.
@@ -51,7 +48,7 @@ How you’ll use the MDM/MAM features of Intune and EMS data protection depends 
 MDM works by using the protocols or APIs that are available in the mobile operating systems. It includes tasks like:
 * Enrolling devices into management so IT has an inventory of devices that are accessing corporate services
 * Configuring devices to ensure they meet company security and health standards
-* Providing certificates and Wi-Fi/VPN profiles that are the basic keys devices need to access corporate resources
+* Providing certificates and Wi-Fi/VPN profiles to access corporate services
 * Reporting on and measuring device compliance to corporate standards
 * Removing corporate data from managed devices  
 
@@ -82,17 +79,16 @@ When you use Intune with the other services in EMS, you can provide your organiz
 * [App protection policy (PIN, encryption, save-as, clipboard, etc.)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [Corporate data wipe from a mobile app](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [Rights management support](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
-
-## Intune mobile application security explained
-When we talk about mobile application security, we mean:
+![Image that shows the levels of app management data security](../media/managing-mobile-apps.png)
+### Intune mobile app security
+Providing app security is a part of MAM, and in Intune, when we talk about mobile app security, we mean:
 * Keeping personal information isolated from corporate IT awareness
 * Restricting the actions users can take with corporate information such as copy, cut/paste, save, and view
 * Removing corporate data from mobile apps, also known as selective wipe or corporate wipe
 
 One way that Intune provides mobile app security is through its **app protection policy** feature. App protection policy uses Azure AD identity to isolate corporate data from personal data. Data that is accessed using a corporate credential will be given additional corporate protections.
 
-When a user logs on to her device with her corporate credentials, her corporate identity allows her access to data that is denied to her personal identity. As that corporate data is used, Intune controls how it is saved and shared. Those same protections are not applied to data that is accessed when the user logs on to her device with her personal identity. In this way, IT has control of corporate data while the end user maintains control and privacy over personal data.
-
+When a user logs on to her device with her corporate credentials, her corporate identity allows her access to data that is denied to her personal identity. As that corporate data is used, Intune, along with other EMS technologies, controls how it is saved and shared. Those same protections are not applied to data that is accessed when the user logs on to her device with her personal identity. In this way, IT has control of corporate data while the end user maintains control and privacy over personal data.
 
 ## Enterprise mobiity management with and without device enrollment
 Most enterprise mobility management solutions support basic mobile device and mobile app technologies. These are usually tied to the device being enrolled in your organization’s MDM solution. Intune supports these scenarios and additionally supports many “without enrollment” scenarios.  
@@ -101,17 +97,17 @@ Organizations differ to the extent they will adopt “without enrollment” scen
 
 You can even use Intune’s “without-enrollment” technology on enrolled devices. For example, a device enrolled in MDM may have open-in protections provided by the mobile operating system. In addition, IT may apply the app protection policy to EMS-managed mobile apps to control save-as or to provide multi-factor authentication.
 
-Whatever your organization’s position on enrolled and unenrolled mobile devices and apps, Intune has tools that will help increase your workforce productivity while protecting your corporate data.
+Whatever your organization’s position on enrolled and unenrolled mobile devices and apps, Intune, as a part of EMS, has tools that will help increase your workforce productivity while protecting your corporate data.
 
 ## Common business problems that Intune helps solve
-The following list of common business problems our customers are trying to solve link to more detailed information about the solutions we can provide.
+The following list of common business problems our customers are trying to solve link to more detailed information about the solutions we can provide. Only the last one requires MDM enrollment:
 
 * [Protect your on-premises email and data so that it can be accessed by mobile devices](common-ways-to-use-intune.md#Protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [Protect your Office 365 mail and data so that it can be safely accessed by mobile devices](common-ways-to-use-intune.md#Protecting-your-Office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [Issue corporate-owned phones to your workforce](common-ways-to-use-intune.md#Issue-corporate-owned-phones-to-your-information-workers)
-* [Issue limited-use shared tables to your task workers](common-ways-to-use-intune.md#Issue-limited-use-shared-tablets-to-your-task-workers)
 * [Offer a bring-your-own-device (BYOD) or personal device program to all employees](common-ways-to-use-intune.md#Offer-a-bring-your-own-device-program-to-all-employees)
 * [Enable your employees to securely access Office 365 from an unmanaged public kiosk](common-ways-to-use-intune.md#Enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
+* [Issue limited-use shared tables to your task workers](common-ways-to-use-intune.md#Issue-limited-use-shared-tablets-to-your-task-workers)
 
 ### Next steps
 * Read about some of the [common ways to use Intune](common-ways-to-use-intune.md).
