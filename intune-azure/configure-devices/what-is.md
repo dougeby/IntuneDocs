@@ -43,13 +43,13 @@ For more information, see [](how-to-configure-email-settings.md)
 Supports: Android, iOS, Windows Phone 8.1 and Windows 10.
 
 ## Wi-Fi
-Description
+Use Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. When you deploy a Wi-Fi profile, your users will have access to your corporate Wi-Fi without having to configure it themselves.
 For more information, see [](how-to-configure-wi-fi-settings.md)
 Supports: Android, iOS, macOS and Windows 8.1 (import only).
 
 ## VPN
-Description
-For more information, see [](how-to-configure-vpn-settings.md)
+Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use VPN profiles to deploy VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
+For more information, see [How to configure VPN settings](how-to-configure-vpn-settings.md).
 Supports: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
 
 ## Certificates
@@ -69,15 +69,15 @@ Supports: iOS only.
 
 ## Edition upgrade
 Description
-For more information, see []()
+For more information, see [How to configure Windows 10 edition upgrades](how-to-configure-windows-10-edition-upgrade.md)
 Supports: Windows 10 only.
 
 ## Windows Information Protection
 Description
-For more information, see []()
+For more information, see [How to configure Windows Information Protection](how-to-configure-windows-information-protection.md)
 Supports: Windows 10 only.
 
 ## Custom
 Description
-For more information, see [](how-to-configure-custom-settings.md)
+For more information, see [How to configure custom settings](how-to-configure-custom-settings.md)
 Supports: Android, iOS, macOS and Windows Phone 8.1.

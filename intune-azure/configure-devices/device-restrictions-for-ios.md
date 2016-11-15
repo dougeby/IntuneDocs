@@ -34,12 +34,12 @@ ms.suite: ems
 - 	**Camera** - 	
 - 	**Diagnostic data submission** - 	
 - 	**FaceTime** - 	
-- 	**Screen capture** - 	
+- 	**Screen capture** - Allow the user to capture the contents of the screen as an image.	
 - 	**Siri** - 	
 - 	**Siri while device is locked** - 	
-- 	**Siri profanity filter (supervised only)** - 	
+- 	**Siri profanity filter (supervised only)** - Prevents Siri from dictating, or speaking profane language.	
 - 	**Siri to query user-generated content from the internet (supervised only)** - 	
-- 	**Untrusted TLS certificates** - 	
+- 	**Untrusted TLS certificates** - Allow untrusted Transport Layer Security certificates on the device.	
 - 	**Control Center access while device locked** - 	
 - 	**Notifications while device locked** - 	
 - 	**Passbook while device locked** - 	
@@ -52,11 +52,11 @@ ms.suite: ems
 - 	**Auto-correction (supervised only)** - 	
 - 	**Keyboard spell-check (supervised only)** - 	
 - 	**Keyboard shortcuts (supervised only)** - 	
-- 	**Wrist detection for paired Apple watch** - 	
+- 	**Wrist detection for paired Apple watch** - When enabled, the Apple Watch won't display notifications when it is not being worn.	
 		
 ## Password	
 - 	**Password required** - Require the end user to enter a password to access the device.	
-- 	**Simple passwords** - 	
+- 	**Simple passwords** - Allow simple passwords like 0000 and 1234.	
 - 	**Required password type** - 	
 - 	**Number of non-alphanumeric characters in password** - 	
 - 	**Minimum password length** - 
@@ -68,7 +68,7 @@ ms.suite: ems
 - 	**Fingerprint unlock** - 	
 		
 ## App Store, 
-- 	**Doc Viewing, Gaming	App store (supervised only)** - 	
+- 	**Doc Viewing, Gaming, App store (supervised only)** - 	
 - 	**Password to access app store** - 	
 - 	**In-app purchases** - 	
 - 	**Explicit iTunes music, podcast, or news content (supervised only)** - 	
@@ -79,7 +79,32 @@ ms.suite: ems
 - 	**Adding Game Center friends (supervised only)** - 	
 - 	**Multiplayer gaming (supervised only)** - 	
 		
-## Restricted apps		
+## Restricted apps	
+
+In the restricted apps list, you can configure one of the following lists:
+
+A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run.
+An **Approved apps** list - List the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.
+
+To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.
+
+### How to specify the URL to an app in the store
+
+To specify an app URL in the compliant and noncompliant apps list, or in the Select a managed app that will be allowed to run when the device is in kiosk mode option (iOS only), use the following format:
+
+Using a search engine, find the app that you want to use in the iTunes App Store and open the page for the app.
+Copy the URL of the page and use this as the URL to configure the compliant or noncompliant apps list or the app that you want to run in kiosk mode.
+
+Example: Search for Microsoft Word for iPad. The URL that you use will be https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+
+	> [!Note]
+	> You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.
+
+
+
+### Additional options
+
+You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, <*app publisher*> or click **Export** to create a csv file containing the contents of the restricted apps list in the same format.
 		
 ## Cellular	
 - 	**Data roaming** - 	
@@ -95,24 +120,24 @@ ms.suite: ems
 - 	**iCloud Photo Library** - 	
 		
 ## Kiosk	
-- 	**Activation Lock (supervised only)** - 	
+- 	**Activation Lock (supervised only)** - Enable Activation Lock on supervised iOS devices.	
 - 	**App that runs in kiosk mode** - 	
-- 	**Assistive touch** - 	
+- 	**Assistive touch** - Enable or disable the **Assistive Touch** accessibility setting, which helps the user perform on-screen gestures that might be difficult for them to perform.	
 - 	**Invert colors** - 	
 - 	**Mono audio** - 	
 - 	**VoiceOver** - 	
-- 	**Zoom** - 	
+- 	**Zoom** - Enable or disable the Zoom accessibility setting, which lets the user use touch to zoom in to the device display.	
 - 	**Auto lock** - 	
 - 	**Ringer switch** - 	
-- 	**Screen rotation** - 	
+- 	**Screen rotation** - Enable or disable changing the screen orientation when the user rotates the device.	
 - 	**Screen sleep button** - 	
-- 	**Touch** - 	
+- 	**Touch** - Enable or disable the touchscreen on the device.	
 - 	**Volume buttons** - 	
-- 	**Assistive touch control** - 	
+- 	**Assistive touch control** - Enable or disable assistive touch adjustments, which let the user adjust the assistive touch function.	
 - 	**Invert colors control** - 	
 - 	**Speak on selected text** - 	
 - 	**VoiceOver control** - 	
-- 	**Zoom control** - 	
+- 	**Zoom control** - Enable or disable zoom adjustments, which let the user adjust the zoom function.	
 		
 ## Safari	
 - 	**Safari (supervised only)** - 	

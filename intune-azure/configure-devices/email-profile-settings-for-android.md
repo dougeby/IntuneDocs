@@ -33,24 +33,24 @@ ms.suite: ems
 
 
 - Email server
-- Account name
-- Username attribute from AAD
-- Email address attribute from AAD
-- Authentication method
+- Account name - 
+- Username attribute from AAD - 
+- Email address attribute from AAD - 
+- Authentication method - 
 
 - **Security**
-	- SSL
-	- Require S/MIME
+	- SSL - 
+	- Require S/MIME - 
 
 
 
 - **Synchronization**
-	- Amount of email to synchronize
-	- Sync schedule
+	- Amount of email to synchronize - 
+	- Sync schedule - 
 
 
 - **Content type to sync**
-	- Email
-	- Contacts
-	- Calender
+	- Email - 
+	- Contacts - 
+	- Calender - 
 	- Tasks
