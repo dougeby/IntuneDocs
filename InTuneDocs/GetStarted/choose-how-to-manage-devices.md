@@ -6,7 +6,7 @@ description: Learn about the various ways you can enroll and manage devices.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -67,4 +67,3 @@ Although this is a third option to manage devices, it provides a limited set of 
 
 
 - [Exchange ActiveSync mobile device management with Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
-
