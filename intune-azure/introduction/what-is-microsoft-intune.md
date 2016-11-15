@@ -67,8 +67,6 @@ Define a compliance level for your devices, then report about any devices which 
 Restrict access to Exchange services depending on conditions you specify.
 
 
-If you are looking for documentation for the existing Intune portal, see [the Intune Documentation Library](https://docs.microsoft.com/en-us/intune/)
-
 ## What's new in the preview?
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
