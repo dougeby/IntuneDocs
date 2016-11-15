@@ -4,8 +4,9 @@
 title: Introduction to the Microsoft Intune preview | Microsoft Docs
 description: 
 keywords:
-author: robstackmsftms.author: robstack
-manager: angrobe
+author: robstackmsft
+ms.author: robstack
+nmanager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod:
@@ -24,6 +25,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
+
 
 # Introduction to the Microsoft Intune preview
 
@@ -47,6 +49,7 @@ If you are looking for documentation for the existing Intune portal, see [the In
 
 ## What's in this library?
 
+The documentation broadly matches the layout of the Intune product to make it easier to find the information you need.
 
 ### Introduction
 An overview of the new experience, and links to help and support.
