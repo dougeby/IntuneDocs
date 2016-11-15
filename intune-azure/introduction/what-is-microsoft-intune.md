@@ -32,18 +32,14 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Welcome to the documentation for the public preview of the new admin experience for Microsoft Intune!
+Microsoft Intune is moving to Azure and we are creating new workflows, functionality, and content for it. Because this new experience is in preview, some functionality from the existing console might not yet be present, so keep an eye on this page to find out when it is introduced. Additionally, our product documentation is being constantly updated during the preview period. If you have any suggestions on documentation you'd like to see, please leave feedback in one of the topics in this library. We'd love to hear from you.
 
 Highlights of the new experience include:
 
 - An integrated console you'll use to manage all of your Enterprise Mobility + Security (EMS) components
-- A standard admin console build on web standards
-- Microsoft Graph API support for many actions
-- Uses Azure AD groups instead of Intune groups to provide compatibility across all your applications
-
-Because this new experience is in preview, some functionality from the existing console might not yet be present, so keep an eye on this page to find out when it is introduced.
-Additionally, our product documentation is being constantly updated during the preview period. If you have any suggestions on documentation you'd like to see, please leave feedback in one of the topics in this library. We'd love to hear from you.
-
+- A standard admin console built on web standards
+- Microsoft Graph API support to automate many actions
+- Reliance on Azure AD groups instead of Intune groups to provide compatibility across all your applications
 
 If you are looking for documentation for the existing Intune portal, see [the Intune Documentation Library](https://docs.microsoft.com/en-us/intune/)
 
@@ -70,8 +66,6 @@ Define a compliance level for your devices, then report about any devices which 
 ### Conditional access
 Restrict access to Exchange services depending on conditions you specify.
 
-
-If you are looking for documentation for the existing Intune portal, see [the Intune Documentation Library](https://docs.microsoft.com/en-us/intune/)
 
 ## What's new in the preview?
 
