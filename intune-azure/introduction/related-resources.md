@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Introduction to the Azure Portal | Microsoft Docs
-description: Use this topic to learn how to find your way around the new portal for Microsoft Intune
+title: Related resources for Microsoft Intune| Microsoft Docs
+description: 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Introduction to the Azure Portal for Microsoft Intune
+# Related resources for Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
