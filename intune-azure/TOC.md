@@ -70,7 +70,7 @@
 #### [Wi-Fi settings for macOS devices](/intune-azure/configure-devices/wi-fi-for-macos)
 #### [Wi-Fi settings for Windows 8.1 and Windows 10 devices](/intune-azure/configure-devices/wi-fi-for-windows-8-1)
 ### [How to configure Windows 10 edition upgrade settings](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
-### [How to configure certificate settings](/intune-azure/configure-devices/)
+### [How to configure certificate settings](/intune-azure/configure-devices/how-to-configure-certificates)
 #### [Trusted certificates](/intune-azure/configure-devices/)
 #### [SCEP certificates](/intune-azure/configure-devices/)
 #### [PKCS certificates](/intune-azure/configure-devices/)
