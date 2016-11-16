@@ -80,7 +80,9 @@ When you use Intune with the other services in EMS, you can provide your organiz
 * [App protection policy (PIN, encryption, save-as, clipboard, etc.)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [Corporate data wipe from a mobile app](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [Rights management support](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+
 ![Image that shows the levels of app management data security](../media/managing-mobile-apps.png)
+
 ### Intune mobile app security
 Providing app security is a part of MAM, and in Intune, when we talk about mobile app security, we mean:
 * Keeping personal information isolated from corporate IT awareness
