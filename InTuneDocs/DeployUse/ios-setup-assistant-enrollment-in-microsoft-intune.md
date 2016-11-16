@@ -86,7 +86,7 @@ Using Apple Configurator, you can reset an iOS device to factory settings and pr
         111111111,PO 1234
         ```
 
-    -   **Manually add device details**&mdash;Enter the serial number and device details of up to five devices.
+    -   **Manually add device details**&mdash;Enter the serial number and device details of up to 15 devices.
 
     > [!NOTE]
     > If you must later remove corporate-owned devices from Intune management, you might need to remove the device serial number from Intune in the **By iOS Serial Number** device group under **Corporate Pre-enrolled devices** to disable device enrollment. If Intune performs a disaster recovery procedure on or around the time you remove serial numbers, you will need to verify that only active devices’ serial numbers are present in that group.

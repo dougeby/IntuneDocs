@@ -9,7 +9,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/8/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ The following changes are under development for Intune. All of these features wi
 
 ## New Capabilities
 
-### View App States for All Platforms in Real Time
+<!--### View App States for All Platforms in Real Time
 App installation status is now shown in real-time in the console. When you previously deployed an app, you had to wait for a targeted device to report back before the app install status was displayed in the Intune console.
 
 ### Streamline iOS App Management for your End Users
@@ -48,17 +48,17 @@ Previously, if the end user of an enrolled iOS device installed an app from the 
 
 1. Open the __Company Portal__.
 2. Select the app.
-3. Tap __Install__ to enable Intune to take over management of the app.
+3. Tap __Install__ to enable Intune to take over management of the app.-->
 
-### New Microsoft Intune Company Portal App for Windows 10 devices
+### New Microsoft Intune Company Portal App for Windows 10 Devices
 Microsoft is releasing a new Intune Company Portal for Windows 10 devices. This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike - while still enabling all the same functionality that they are using today.
 
 The new app will also allow users to leverage additional platform features like single sign-on and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store. It will also be available for sideloading.
 
-### Support for Windows Store for Business Apps Being Deployed as Available
+<!--### Support for Windows Store for Business Apps Being Deployed as Available
 You can now deploy apps you synchronized from the Windows Store for Business (WSfB) with a deployment action of __Available__ or __Required__. After syncing WSfB apps into Intune, administrators will be able to target those apps as available installs to groups of users. End users will see the deployed WSfB apps as available for install in the Universal Company Portal, where they can choose whether they would like to acquire the apps.
 
-<!--### Conditional Access for MAM with SharePoint Online
+### Conditional Access for MAM with SharePoint Online
 
 You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint online.  You can get started in Intune mobile app management via the Azure portal. Look for the  Conditional Access section in the “Settings” blade which now includes the option for SharePoint online.-->
 
@@ -70,8 +70,8 @@ App developers can now use the Intune App SDK Xamarin component to enable MAM fu
 
 ## Notices
 
-### Symantec Signing Certificate No Longer Required for Windows Phone 8 Company Portal
-The Windows Phone 8 Company Portal app will no longer require a Symantec signing certificate to be uploaded in the Intune Admin Console.
+### Symantec Signing Certificate No Longer Requires Signed Windows Phone 8 Company Portal for Upload
+Uploading the Symantec signing certificate will no longer require a signed Windows Phone 8 Company Portal app. The certificate can be uploaded independently.
 
 ## Deprecations
 

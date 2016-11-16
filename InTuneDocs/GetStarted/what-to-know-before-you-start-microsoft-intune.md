@@ -4,9 +4,10 @@
 title: Prerequisites | Microsoft Intune
 description: Links to Intune prerequisites and requirements
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +28,7 @@ ms.suite: ems
 
 # Prerequisites to getting started with Intune
 
-Before you start setting up Microsoft Intune, review each of the following requirements:
+Before you start setting up Microsoft Intune, review the following requirements:
 
 - [Supported devices and browsers](supported-mobile-devices-and-computers.md)
 - [Network bandwidth usage](network-bandwidth-use.md)

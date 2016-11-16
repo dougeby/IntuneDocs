@@ -4,9 +4,10 @@
 title: Third-Party Software Notices and Information | Microsoft Intune
 description: Third-Party Software Notices and Information for Microsoft Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -15,10 +16,10 @@ ms.assetid: 517882a7-5281-40dc-9429-85ccb0fb4e19
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,19 +27,17 @@ ms.suite: ems
 ---
 
 # Third-Party Software Notices and Information
-Do Not Translate or Localize
 
-This file is based on or incorporates material from the projects listed below (collectively, “Third Party Code”). Microsoft is not the original author of the Third Party Code. The original copyright notice and the license under which Microsoft received such Third Party Code, are set forth below. Such licenses and notices are provided for informational purposes only. Microsoft licenses the Third Party Code to you under the license terms governing the Microsoft Product. Microsoft reserves all other rights not expressly granted under this agreement, whether by implication, estoppel or otherwise.
+This file is based on or incorporates material from the projects listed below (“Third Party Programs”). The original copyright notice and the license under which Microsoft received such Third Party Programs, are set forth below. Such licenses and notices are provided for informational purposes only. Microsoft licenses the Third Party Programs to you under the licensing terms for the Microsoft product. Microsoft reserves all other rights not expressly granted under this agreement, whether by implication, estoppel or otherwise.
 
 Third Party Code:
 
+As the recipient of the Third-Party Code, Microsoft sets forth a copy of the notices and other information below.
+
 1.  [Azure Active Directory Authentication Library for .NET](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet).
-As the recipient of the above Third-Party Code, Microsoft sets forth a copy of the notices and other information below.
+2. Logging Sample for Windows Store Apps (ETW Logging in WinRT)
 
-Provided for Informational Purposes Only
-
-Azure Active Directory Authentication Library for .NET NOTICES AND INFORMATION BEGIN HERE
-=============
+## Azure Active Directory Authentication Library for .NET
 
 Copyright (c) Microsoft Open Technologies, Inc.
 All Rights Reserved
@@ -49,7 +48,7 @@ Licensed under the Apache License, Version 2.0 (the "License"); you may not use 
 Version 2.0, January 2004
 http://www.apache.org/licenses/
 
-## TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+### TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 __1. Definitions.__
 "License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
 "Licensor" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.
@@ -93,5 +92,16 @@ __8. Limitation of Liability.__ In no event and under no legal theory, whether i
 
 __9. Accepting Warranty or Additional Liability.__ While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.
 
-### END OF Azure Active Directory Authentication Library for .NET NOTICES AND INFORMATION
-=============
+### End of Azure Active Directory Authentication Library for .NET
+
+## Logging Sample for Windows Store Apps (ETW Logging in WinRT)
+
+Copyright (c) Microsoft
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use these files except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+### End of Logging Sample for Windows Store Apps (ETW Logging in WinRT)
