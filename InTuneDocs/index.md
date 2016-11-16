@@ -11,7 +11,7 @@ keywords: intune documentation, app management, device management, MDM documenta
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 10/07/2016
+ms.date: 11/15/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
@@ -29,7 +29,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
       <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">What's new?</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">150+ licenses? Leverage your FastTrack benefits</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Common ways to use Intune</a></li>
           <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Protect app data</a></li>
         </ul>
