@@ -73,7 +73,7 @@ That, in combination with operating system features for protecting data (for exa
 
 When you use Intune with the other services in EMS, you can provide your organization mobile app security over and above what is provided by the mobile operating system and the mobile apps themselves through app configuration. An app that is managed with EMS has access to a broader set of mobile app and data protections that includes:
 
-* Single sign-on  
+* [Single sign-on](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
 *	[Multi-factor authentication](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
 * [App conditional access (allow access if the mobile app contains corporate data)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
 * [Isolating corporate data from personal data inside the same app](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
@@ -81,7 +81,7 @@ When you use Intune with the other services in EMS, you can provide your organiz
 * [Corporate data wipe from a mobile app](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
 * [Rights management support](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
 
-![Image that shows the levels of app management data security](../media/managing-mobile-apps.png)
+![Image that shows the levels of app management data security](./media/managing-mobile-apps.png)
 
 ### Intune mobile app security
 Providing app security is a part of MAM, and in Intune, when we talk about mobile app security, we mean:
