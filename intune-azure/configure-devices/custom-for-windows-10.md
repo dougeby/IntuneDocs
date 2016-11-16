@@ -36,22 +36,24 @@ ms.suite: ems
 2. On the **Create Profile** blade, choose **Settings** to add one or more OMA-URI settings.
 3. On the **Custom OMA-URI Settings** blade, click **Add** to add a new value. You can also click **Export** to create a list of all the values you configured in a comma-seperated values (.csv) file.
 4. For each OMA-URI setting you want to add, enter the following information. Use the list in this topic to learn about the settings you can use: 
-- **Setting name** - Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
-- **Setting description** - Optionally, enter a description for the setting.
-- **Data type** - Choose from:
-	- **String**
-	- **String (XML)**
-	- **Date and time**
-	- **Integer**
-	- **Floating point**
-	- **Boolean**
-- **OMA-URI (case sensitive)** - Specify the OMA-URI you want to supply a setting for.
-- **Value** - Specify the value to associate with the OMA-URI you entered.
+	- **Setting name** - Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
+	- **Setting description** - Optionally, enter a description for the setting.
+	- **Data type** - Choose from:
+		- **String**
+		- **String (XML)**
+		- **Date and time**
+		- **Integer**
+		- **Floating point**
+		- **Boolean**
+	- **OMA-URI (case sensitive)** - Specify the OMA-URI you want to supply a setting for.
+	- **Value** - Specify the value to associate with the OMA-URI you entered.
+5. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+The profile will be created and appears on the profiles list blade.
 
 ## Example
 In the screenshot below, the setting **Connectivity/AllowVPNOverCellular** has been enabled. This lets a Windows 10 device open a VPN connection when on a cellular network.
 
-> ![Example of a custom policy containing VPN settings](./media/custom-policy-example.png)
+> ![Example of a custom policy containing VPN settings](/media/custom-policy-example.png)
 
 
 ## Policy settings

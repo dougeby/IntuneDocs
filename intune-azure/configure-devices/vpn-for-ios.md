@@ -26,21 +26,20 @@ ms.suite: ems
 
 ---
 
-# VPN for iOS
+# VPN settings for iOS devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Depending on the settings you choose, not all values in the list below will be configurable.
 
-**Base VPN Settings**
+## **Base VPN Settings**
 
 
 **Connection name** - Enter a name for this connection. End users will see this name when they browse their device for the list of available VPN connections.
-**Servers** - Add one or more VPN servers that devices will connect to.
-
+**Servers** - Adds one or more VPN servers that devices will connect to with the following options:
 - **Add** - Opens the **Add Row** blade where you can specify the following information:
-	- **Description** - 
-	- **IP address or FQDN** - 
+	- **Description** - Specify a descriptive name for the entry like **Contoso VPN server**.
+	- **IP address or FQDN** - Provide the IP address or fully qualified domain name of the VPN server that devices will connect to. Examples: **192.168.1.1**, **vpn.contoso.com**. 
 	- **Default server** - Enables this server as the default server that devices will use to establish the connection. Make sure to set only one server as the default.
 - **Import** - Browse to a file containing a comma-seperated list of servers in the format description, IP address or FQDN, Default server. Choose **OK** to import these into the **Servers** list.
 - **Export** - Exports the list of servers to a comma-seperated-values (csv) file.
@@ -59,24 +58,24 @@ Depending on the settings you choose, not all values in the list below will be c
 - **Citrix**
 - **Custom VPN**
 
-**Enter key and value pairs for the custom VPN attributes** (if you selected the connection type **Custom VPN**)
-
-Add
-Import
-Export
-- 
 **Split tunneling** - **Enable** or **Disable** this option which lets devices decide which connection to use depending on the traffic. For example, a user in a hotel will use the VPN connection to access work files, but use the hotel's standard network for regular web browsing.
 
+## Custom VPN settings
+
+If you selected **Custom VPN**, configure these further settings:
+
+- **VPN identifier** This is an identifier for the VPN app you are using, and is supplied by your VPN provider. 
+- **Enter key and value pairs for the custom VPN attributes** Add or import **Keys** and **Values** that customize your VPN connection. Again, these values are typically supplied by your VPN provider.
+
+
+## Proxy settings
+
+- **Automatic configuration script** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) which contains the configuration file.
+- **Use proxy server** - Enable this option if you want to manually enter the proxy server settings.
+	- **Address** - Enter the proxy server address (as an IP address).
+	- **Port number** - Enter the port number associated with the proxy server.
 
 
 
-**Proxy settings**
-
-Automatically detect proxy settings
-Automatic configuration script
-Use proxy server
-Address
-Port number
-Bypass proxy for local addresses
 
 

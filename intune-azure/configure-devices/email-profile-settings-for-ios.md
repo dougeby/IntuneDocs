@@ -32,9 +32,9 @@ ms.suite: ems
 
 
 
-- Email server
-- Account name
-- Username attribute from AAD
+- **Email server** - The host name of your Exchange server.
+- **Account name** - The display name for the email account as it will appear to users on their devices.
+- **Username attribute from AAD** - This is the attribute in Active Directory (AD) or Azure AD, that will be used to generate the username for this email profile. Select **Primary SMTP Address**, such as user1@contoso.com or **User Principal Name**, such as user1 or user1@contoso.com.
 - Email address attribute from AAD
 - Authentication method
 - Require S/MIME

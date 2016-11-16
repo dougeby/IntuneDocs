@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# VPN for iOS
+# VPN settings for Windows 10 devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

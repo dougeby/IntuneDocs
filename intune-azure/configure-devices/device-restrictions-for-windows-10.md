@@ -49,13 +49,14 @@ ms.suite: ems
 ## Password
 - 	**Password required** - Require the end user to enter a password to access the device.	
 - 	**Required password type** - Specifies whether the password must be numeric only, or alphanumeric.	
-- 	**Minimum password length** - 	
-- 	**Number of sign-in failures before wiping device**	
-- 	**Maximum minutes of inactivity until screen locks** - 	
-- 	**Password expiration (days)** - 	
-- 	**Prevent reuse of previous passwords** - 	
-- 	**Require password when device returns from idle state**	
-- 	**Encryption** - 	
+- 	**Minimum password length** - Applies to Windows 10 Mobile only.	
+- 	**Number of sign-in failures before wiping device**	- For devices running Windows 10: If the device has BitLocker enabled, it's put into BitLocker recovery mode after sign-in fails the number of times that you specified. If the device is not BitLocker enabled, then this setting doesn't apply.
+For devices running Windows 10 Mobile: After sign-in fails the number of times you specify, the device is wiped.
+- 	**Maximum minutes of inactivity until screen locks** - Specifies the length of time a device must be idle before the screen is locked.	
+- 	**Password expiration (days)** - Specifies the length of time after which the device password must be changed.	
+- 	**Prevent reuse of previous passwords** - Specifies the number of previously used passwords that are remembered by the device.	
+- 	**Require password when device returns from idle state** - Specifies that the user must enter a password to unlock the device (Windows 10 Mobile only).	
+- 	**Encryption** - Enable encryption on targeted devices (Windows 10 Mobile only).	
 ## App Store
 
 - 	**App store (mobile only)** - 	
@@ -98,13 +99,13 @@ When this setting is changed, it will take effect the next time the end user's P
 - 	**Signature update interval (in hours)** - Specify the interval at which Defender will check for new signature files.
 - 	**Monitor file and program activity** - 	
 - 	**Days before deleting quarantined malware** - 	
-- 	**CPU usage limit during a scan** - 
+- 	**CPU usage limit during a scan** - Lets you limit the amount of CPU that scans are allowed to use (from **1** to **100**).
 - 	**Scan archive files** - Allows Defender to scan archived files such as Zip or Cab files.	
 - 	**Scan incoming mail messages**	- Allows Defender to scan email messages as they arrive on the device. 
 - 	**Scan removable drives during a full scan** - Lets Defender scan removable drives like USB sticks.	
 - 	**Scan mapped network drives during a full scan** - 
 - 	**Scan files opened from network folders** - 
-- 	**Cloud protection** - 
+- 	**Cloud protection** - Allows or blocks the Microsoft Active Protection Service from receiving information about malware activity from devices that you manage. This information is used to improve the service in the future.
 - 	**Prompt users before sample submission** - Controls whether files that might require further analysis by Microsoft to determine if they are malicious are automatically sent to Microsoft.	
 - 	**Time to perform a daily quick scan** - 
 - 	**Type of system scan to perform** - 	
