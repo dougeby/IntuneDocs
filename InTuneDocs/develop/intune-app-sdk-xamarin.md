@@ -6,6 +6,7 @@ description:
 keywords: sdk, Xamarin, intune
 author: oydang
 manager: karthikaraman
+ms.author: oydang
 ms.date: 11/15/2016
 ms.topic: article
 ms.prod:
@@ -81,7 +82,7 @@ Xamarin apps built with the Intune App SDK Xamarin Component can now receive Int
       ```
 
 2.	Now that the component is added and initialized, you can follow the general steps required for building the App SDK into an iOS mobile app. You can find the full documentation for enabling native iOS apps in the [Intune App SDK for iOS Developer Guide](intune-app-sdk-ios).
-3. **Note**: There are several modifications specific to Xamarin-based iOS apps. For instance, when enabling keychain groups, you'll need to add the following to include the Xamarin sample app we included in the component. Below is an example of the groups you would need to have in your Keychain Access groups:
+3. **Important**: There are several modifications specific to Xamarin-based iOS apps. For instance, when enabling keychain groups, you'll need to add the following to include the Xamarin sample app we included in the component. Below is an example of the groups you would need to have in your Keychain Access groups:
 
       ```xml
       <?xml version="1.0" encoding="UTF-8"?>
