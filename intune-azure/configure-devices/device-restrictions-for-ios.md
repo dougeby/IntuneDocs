@@ -31,12 +31,12 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## General	
-- 	**Camera** - 	
-- 	**Diagnostic data submission** - 	
-- 	**FaceTime** - 	
+- 	**Camera** - Select whether the camera on the device can be used. 	
+- 	**Diagnostic data submission** - Allow or block the device from submitting diagnostic data to Apple.	
+- 	**FaceTime** - Allow the FaceTime app to be used on the device.	
 - 	**Screen capture** - Allow the user to capture the contents of the screen as an image.	
-- 	**Siri** - 	
-- 	**Siri while device is locked** - 	
+- 	**Siri** - Allow use of the Siri voice assistant on the device.	
+- 	**Siri while device is locked** - Allow use of the Siri voice assistant on the device while it is locked.	
 - 	**Siri profanity filter (supervised only)** - Prevents Siri from dictating, or speaking profane language.	
 - 	**Siri to query user-generated content from the internet (supervised only)** - 	
 - 	**Untrusted TLS certificates** - Allow untrusted Transport Layer Security certificates on the device.	
@@ -71,13 +71,13 @@ ms.suite: ems
 - 	**Doc Viewing, Gaming, App store (supervised only)** - 	
 - 	**Password to access app store** - 	
 - 	**In-app purchases** - 	
-- 	**Explicit iTunes music, podcast, or news content (supervised only)** - 	
-- 	**Download content from iBook store flagged as 'Erotica'** - 	
+- 	**Explicit iTunes music, podcast, or news content (supervised only)** - Allow the device to access content rated as adult from the store.	
+- 	**Download content from iBook store flagged as 'Erotica'** - Allow the user to download books with the "Erotica" category.	
 - 	**Viewing corporate documents in unmanaged apps** - 	
 - 	**Viewing non-corporate documents in corporate apps** - 	
-- 	**Disallow AirDrop from managed apps** - 	
-- 	**Adding Game Center friends (supervised only)** - 	
-- 	**Multiplayer gaming (supervised only)** - 	
+- 	**Disallow AirDrop from managed apps** - Stops managed apps from being able to send data via. Airdrop.	
+- 	**Adding Game Center friends (supervised only)** - Allow the user to add friends in Game Center.	
+- 	**Multiplayer gaming (supervised only)** - Allow the user to play multiplayer games on the device.	
 		
 ## Restricted apps	
 
@@ -90,10 +90,10 @@ To configure the list, click **Add**, then specify a name of your choice, option
 
 ### How to specify the URL to an app in the store
 
-To specify an app URL in the compliant and noncompliant apps list, or in the Select a managed app that will be allowed to run when the device is in kiosk mode option (iOS only), use the following format:
+To specify an app URL in the apps list, use the following format:
 
 Using a search engine, find the app that you want to use in the iTunes App Store and open the page for the app.
-Copy the URL of the page and use this as the URL to configure the compliant or noncompliant apps list or the app that you want to run in kiosk mode.
+Copy the URL of the page and use this as the URL to configure the allowed or prohibited apps list or an app that you want to run in kiosk mode.
 
 Example: Search for Microsoft Word for iPad. The URL that you use will be https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
@@ -109,7 +109,7 @@ You can also click **Import** to populate the list from a csv file in the format
 ## Cellular	
 - 	**Data roaming** - 	
 - 	**Global background fetch while roaming** - 	
-- 	**Voice dialing**	
+- 	**Voice dialing** - Allow use of the voice dialing feature on the device.	
 - 	**Voice roaming** - 	
 		
 ## Cloud and Storage	
@@ -123,21 +123,25 @@ You can also click **Import** to populate the list from a csv file in the format
 - 	**Activation Lock (supervised only)** - Enable Activation Lock on supervised iOS devices.	
 - 	**App that runs in kiosk mode** - 	
 - 	**Assistive touch** - Enable or disable the **Assistive Touch** accessibility setting, which helps the user perform on-screen gestures that might be difficult for them to perform.	
-- 	**Invert colors** - 	
+- 	**Invert colors** - Enable or disable the Invert Colors accessibility setting, which adjusts the display to help users with visual impairments.	
 - 	**Mono audio** - 	
-- 	**VoiceOver** - 	
-- 	**Zoom** - Enable or disable the Zoom accessibility setting, which lets the user use touch to zoom in to the device display.	
-- 	**Auto lock** - 	
+- 	**VoiceOver** - Enable or disable the accessibility setting **VoiceOver**, which reads aloud text on the device display.	
+- 	**Zoom** - Enable or disable the **Zoom** accessibility setting, which lets the user use touch to zoom in to the device display.	
+- 	**Auto lock** - Enable or disable automatic locking of the device.	
 - 	**Ringer switch** - 	
 - 	**Screen rotation** - Enable or disable changing the screen orientation when the user rotates the device.	
 - 	**Screen sleep button** - 	
 - 	**Touch** - Enable or disable the touchscreen on the device.	
-- 	**Volume buttons** - 	
+- 	**Volume buttons** - Enable or disable the use of the volume buttons on the device.	
 - 	**Assistive touch control** - Enable or disable assistive touch adjustments, which let the user adjust the assistive touch function.	
-- 	**Invert colors control** - 	
+- 	**Invert colors control** - Enable or disable invert colors adjustments, which let the user adjust the invert colors function.	
 - 	**Speak on selected text** - 	
-- 	**VoiceOver control** - 	
+- 	**VoiceOver control** - Enable or disable voiceover adjustments, which let the user adjust the VoiceOver function (for example, how fast on-screen text is read aloud).	
 - 	**Zoom control** - Enable or disable zoom adjustments, which let the user adjust the zoom function.	
+
+>[!NOTE]
+> Before you can configure an iOS device for kiosk mode, you must use the Apple Configurator tool or the Apple Device Enrollment Program to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
+>If the iOS app that you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
 		
 ## Safari	
 - 	**Safari (supervised only)** - 	

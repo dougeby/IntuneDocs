@@ -30,7 +30,15 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use the Microsoft Intune **Device Configuration** workload to manage settings and features on all of the devices you manage. You can manage the following capabilities on your devices:
+Use the Microsoft Intune **Device Configuration** workload to manage settings and features on all of the devices you manage. 
+
+When you open this workload, you'll see the following options:
+
+- **Overview** - This page gives you status and reports that help you monitor device configurations that you have assigned to users and devices.
+- **Manage Profiles** - This section is where you'll go to create device configuration profiles. You can find a list below of all the profile types you can create.
+- **Setup Certificate Authority** - This workflow walks you though the steps required to configure certificates. You'll need to do this if you want to work with Intune certificate profiles. For more information, see []()
+
+You can manage the following capabilities on your devices:
 
 ## Device restrictions
 Description
@@ -54,7 +62,7 @@ Supports: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
 
 ## Certificates
 Description
-For more information, see []()
+For more information, see [How to configure certificates](how-to-configure-certificates.md)
 Supports: Android, iOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
 
 ## Education
