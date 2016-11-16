@@ -7,7 +7,7 @@ description: Support is available both online and by telephone for paid and tria
 keywords:
 author: staciebarkerms.author: staciebarker
 manager: angrobe
-ms.date: 10/31/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,11 +42,12 @@ Support for Intune, and for Intune when used with Configuration Manager, is free
 2.  Choose the Admin tile.
 3.  On the left, under **Support**, choose **Support** to open  ticket. You will likely see this:
 
-	![Open a new Intune support ticket](../media/suport-open-ticket.png)
+	![Open a new Intune support ticket](../media/support-open-ticket.png)
 
 	>[!NOTE]
 	>
 	>  Customers who have, or have had, an O365 account with 100 or fewer licenses, will see this, and should refer to [Alternate method to open a support ticket](#alternate-method-to-open-a-support-ticket).
+	>  
 	> ![Alternate Intune support](../media/alternate-support-ui.png)
 
     -   For billing, licensing, and account issues select **Billing and product info**.

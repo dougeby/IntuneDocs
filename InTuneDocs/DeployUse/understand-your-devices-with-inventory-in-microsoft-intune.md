@@ -6,7 +6,7 @@ description: Use Intune to view information about the hardware of the devices yo
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,9 +49,9 @@ To view the inventory that's collected by mobile devices, run the [Mobile Device
 |**Exchange ActiveSync ID**|All devices|
 |**Jailbroken or Rooted**|iOS and Android devices only|
 |**Unique Device ID**|All devices except Exchange ActiveSync|
-|**Serial number**|iOS, Mac OS X, Android, Windows 8.1, and Windows 10 devices|
-|**Total Storage Space**|iOS, Mac OS X, Windows 8.1, and Windows 10 devices|
-|**Free Storage Space**|iOS, Mac OS X, Windows 8.1, and Windows 10 devices|
+|**Serial number**|iOS, Mac OS X, Android, Windows 8.1, and Windows 10 desktop devices|
+|**Total Storage Space**|iOS, Mac OS X, Windows 8.1, and Windows 10 desktop and Mobile devices|
+|**Free Storage Space**|iOS, Mac OS X, Windows 8.1, and Windows 10 desktop devices|
 |**Phone Number**<br>Phones that are categorized as corporate are identified with their full phone number (for example, when you run a mobile device inventory report). BYOD phone numbers are masked with &#42;, and only the last four digits are displayed.|iOS, Android, and Windows Phone devices|
 |**IMEI**|Exchange ActiveSync, iOS, Android, and Windows Phone devices|
 |**MEID**<br>Mobile Equipment Identifier|iOS devices only|

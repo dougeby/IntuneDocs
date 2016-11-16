@@ -56,7 +56,7 @@ Below are the accounts and permissions that you will use for Intune.
 ### Device enrollment managers
 |Permission levels|More information|
 |--------------------------|-------------------------|
-|Device enrollment managers are standard user accounts that have additional permission to enroll more than five devices.|By default, each [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] user can enroll up to five devices. However, you can give a user account the device enrollment manager permission and then use that account to enroll large groups of corporate-owned devices. This is useful when the devices might be assigned to users on a temporary basis, or might serve in a kiosk mode where a user-to-device association is not required.|
+|Device enrollment managers are standard user accounts that have additional permission to enroll more than 15 devices.|By default, each [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] user can enroll up to 15 devices. However, you can give a user account the device enrollment manager permission and then use that account to enroll large groups of corporate-owned devices. This is useful when the devices might be assigned to users on a temporary basis, or might serve in a kiosk mode where a user-to-device association is not required.|
 
 
 ## Administrative websites for Intune
