@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# VPN for macOS
+# VPN settings for macOS devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

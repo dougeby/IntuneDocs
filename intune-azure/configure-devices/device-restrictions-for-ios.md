@@ -42,14 +42,14 @@ ms.suite: ems
 - 	**Untrusted TLS certificates** - Allow untrusted Transport Layer Security certificates on the device.	
 - 	**Control Center access while device locked** - 	
 - 	**Notifications while device locked** - 	
-- 	**Passbook while device locked** - 	
-- 	**Today view while device locked** - 	
-- 	**Enterprise app trust** - 	
+- 	**Passbook while device locked** - Allow the user to access the Passbook app while the device is locked.	
+- 	**Today view while device locked** - Allow the user to see the Today view when the device is locked.	
+- 	**Enterprise app trust** - Lets the user select to trust apps that were not downloaded from the app store.	
 - 	**AirDrop (supervised only)** - 	
-- 	**Spotlight search to return results from internet (supervised only)** - 	
-- 	**Word definition lookup (supervised only)** - 	
-- 	**Predictive keyboards (supervised only)** - 	
-- 	**Auto-correction (supervised only)** - 	
+- 	**Spotlight search to return results from internet (supervised only)** - Let Spotlight search connect to the Internet to provide further results.	
+- 	**Word definition lookup (supervised only)** - Allow the iOS feature that lets you highlight a word and look up it's definition.	
+- 	**Predictive keyboards (supervised only)** - Allow the use of predictive keyboards that suggest words the user might want.	
+- 	**Auto-correction (supervised only)** - Lets the device automatically correct misspelled words.	
 - 	**Keyboard spell-check (supervised only)** - 	
 - 	**Keyboard shortcuts (supervised only)** - 	
 - 	**Wrist detection for paired Apple watch** - When enabled, the Apple Watch won't display notifications when it is not being worn.	
@@ -57,15 +57,17 @@ ms.suite: ems
 ## Password	
 - 	**Password required** - Require the end user to enter a password to access the device.	
 - 	**Simple passwords** - Allow simple passwords like 0000 and 1234.	
-- 	**Required password type** - 	
-- 	**Number of non-alphanumeric characters in password** - 	
-- 	**Minimum password length** - 
-- 	**Number of sign-in failures before wiping device** - 	
-- 	**Maximum minutes after screen lock before password is required** - 	
-- 	**Maximum minutes of inactivity until screen locks**	
-- 	**Password expiration (days)**	
-- 	**Prevent reuse of previous passwords** - 	
-- 	**Fingerprint unlock** - 	
+- 	**Required password type** - Specify the type of password that will be required, such as numeric only or alphanumeric.	
+- 	**Number of non-alphanumeric characters in password** - Specify the number of symbol characters (like **#** or **@**) that must be included in the password.	
+- 	**Minimum password length** - Specify the minimum number of characters in the password.
+- 	**Number of sign-in failures before wiping device** - Specify the number of failed login attempts before this setting wipes the device.	
+- 	**Maximum minutes after screen lock before password is required**<sup>1</sup> - Specify how long the device can remain idle before the user must re-enter their password.	
+- 	**Maximum minutes of inactivity until screen locks**<sup>1</sup> - Specify the number of minutes before the device display is turned off.	
+- 	**Password expiration (days)** - Specify the number of days before the device password must be changed.	
+- 	**Prevent reuse of previous passwords** - Specify the number of previously used passwords that the device remembers.	
+- 	**Fingerprint unlock** - Allow using a fingerprint to unlock compatible devices.
+
+<sup>1</sup>When you configure the settings **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.	
 		
 ## App Store, 
 - 	**Doc Viewing, Gaming, App store (supervised only)** - 	

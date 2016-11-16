@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# VPN for Windows 8.1
+# VPN settings for Windows 8.1 devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

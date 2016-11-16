@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# VPN for iOS
+# VPN settings for Windows Phone 8.1 devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -69,9 +69,9 @@ Custom XML
 
 **Proxy settings**
 
-Automatically detect proxy settings
-Automatic configuration script
-Use proxy server
-Address
-Port number
-Bypass proxy for local addresses
+- **Automatically detect proxy settings** - 
+- **Automatic configuration script** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) which contains the configuration file.
+- **Use proxy server** - Enable this option if you want to manually enter the proxy server settings.
+	- **Address** - Enter the proxy server address (as an IP address).
+	- **Port number** - Enter the port number associated with the proxy server.
+- **Bypass proxy for local addresses** - 
