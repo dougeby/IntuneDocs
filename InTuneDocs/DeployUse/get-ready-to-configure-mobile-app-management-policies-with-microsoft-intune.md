@@ -33,13 +33,13 @@ To understand how Intune MAM policies can protect your company data, see [Protec
 ## What is the Azure portal?
 The Azure portal is the new admin console for creating MAM policies. It supports the following MAM scenarios:
 - Devices that are enrolled in Intune
-- Devices that are managed by a another Mobile Device Management (MDM) solution
+- Devices that are managed by another Mobile Device Management (MDM) solution
 - Devices that are not managed by any MDM solution (BYOD)
 
 
 Currently, both the **Intune administrator console** and the **Azure portal** enable you to configure MAM policies.  Consider the following:
 
-* The policies that you create on the **Azure portal** are supported for **all MAM scenarios** listed above. The **Intune administrator console** only supports creating policies for **devices that are enrolled and managed by Intune**.
+* The policies that you create on the **Azure portal** are supported for **all MAM scenarios** that are listed previously. The **Intune administrator console** only supports creating policies for **devices that are enrolled and managed by Intune**.
 
 * You might not see all MAM policy settings in the Intune administrator console because **new settings** can only be added to the **Azure portal**.
 * If you create MAM policies in **both** the Intune admin console and the Azure portal, the policy in the **Azure portal is applied to the apps and deployed to users**.
@@ -49,7 +49,7 @@ Currently, both the **Intune administrator console** and the **Azure portal** en
 * Other **app management features**, such as deploying apps and app configuration policies, are currently only available in the **Intune administrator console**.
 
 
-If you are new to Azure portal, read [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) to get the basics of using the Azure portal.
+If you are new to the Azure portal, read [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) to get the basics of using the Azure portal.
 
 For instructions about how to create a MAM policy on the Intune admin console, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
@@ -73,19 +73,19 @@ To see the full list of supported Microsoft apps, go to the [Microsoft Intune mo
 
 ## Prerequisites
 
--   A Microsoft Intune subscription. Users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps that have MAM policies.
+-   **A Microsoft Intune subscription**. Users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps that have MAM policies.
 You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription if you are currently using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to manage your devices. You also have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription if you have purchased an Enterprise Mobility Suite (EMS) license. If you are trying [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to check out the MAM capabilities, you can get a trial account on the [Microsoft Intune page](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
 
     To verify if you have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription, in the Office portal, go to the **Billing** page.  If you have a subscription, you should see [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] as **Active** in the subscriptions.
 
--   An Office 365 subscription, which is required for the following:
+-   **An Office 365 subscription**, which is required for the following:
 
   - To apply MAM policies to apps with multiple-identity support.
 
   - To create SharePoint Online and Exchange Online work
  accounts. Exchange on-premises and SharePoint on-premises are not supported.
 
--   Skype for Business Online setup for modern authentication. For more information, see [Enable modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+-   **Skype for Business Online setup for modern authentication**. For more information, see [Enable modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) to create users. Azure AD authenticates users when they open the app and enter their work credentials.
@@ -97,7 +97,7 @@ You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sub
 
 1.  Sign in to the   [Office portal](http://portal.office.com) with your admin credentials.
 
-2.  Add users as described in the **Steps to complete a 30-day evaluation of Intune** section of the [Intune evaluation guide](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) , and then assign Intune licenses. To give a user the ability to access the Office portal, the Azure AD portal, and the Azure  portal, assign the **Global administrator** role to the user.
+2.  Add users as described in the **Steps to complete a 30-day evaluation of Intune** section of the [Intune evaluation guide](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune), and then assign Intune licenses. To give a user the ability to access the Office portal, the Azure AD portal, and the Azure  portal, assign the **Global administrator** role to the user.
 
 5.  MAM policies are deployed to user groups in Azure Active Directory. To create user groups for your MAM policies, create a user group as described in the **Create a user group** section of [Create groups to organize evaluation subscription users and devices](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
 

@@ -33,7 +33,7 @@ The Company Portal app is required for all apps that are associated with MAM pol
 
 For devices that are not enrolled in Intune, the Company Portal app must be installed on the device. However, the user does not have to launch  or sign into the Company Portal app before they can use apps that are managed by MAM policies.
 
-The Company Portal app is a way for Intune to share data in a secure location. Therefore it's a requirement for all apps that are associated with MAM policies, even if the device is not enrolled in Intune.
+The Company Portal app is a way for Intune to share data in a secure location. Therefore, the Company Portal app is a requirement for all apps that are associated with MAM policies, even if the device is not enrolled in Intune.
 
 
 ##  Use apps with multi-identity support
@@ -74,13 +74,13 @@ The following file types are supported:
 
 * **Audio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (enhanced AAC+), AAC ELD (enhanced low delay AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Ogg Vorbis, PCM/WAVE
 * **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8
-* **Image:** .jpg, .pjpg, .png, .ppng, .bmp, .pbmp, .gif, .pgif, .jpeg, .pjpeg.
+* **Image:** .jpg, .pjpg, .png, .ppng, .bmp, .pbmp, .gif, .pgif, .jpeg, .pjpeg
 * **Documents:** PDF, PPDF
 
 
 |**pfile**|**text**|
 |----|----|
-|Pfile is a generic “wrapper” format for protected files that encapsulates the encrypted content and the Azure Information Protection licenses. It can be used to protect any file type.|Text files, including XML, CSV, etc. can be opened for viewing in the app even when they are protected. File types: .txt, .ptxt, .csv, .pcsv, .log, .plog, .xml, .pxml.|
+|Pfile is a generic “wrapper” format for protected files that encapsulates the encrypted content and the Azure Information Protection licenses. It can be used to protect any file type.|Text files, including XML, CSV, and so on, can be opened for viewing in the app even when they are protected. File types: .txt, .ptxt, .csv, .pcsv, .log, .plog, .xml, .pxml.|
 
 ## Next steps
 [What to expect when your iOS app is managed by MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
