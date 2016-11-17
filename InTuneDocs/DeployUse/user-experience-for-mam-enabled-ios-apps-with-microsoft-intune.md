@@ -30,7 +30,7 @@ ms.suite: ems
 
 ##  Access apps
 
-If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it.  A restart is required so that MAM polices can be applied to the app. The following screenshot from the Skype app illustrate this restart request:
+If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it.  A restart is required so that MAM polices can be applied to the app. The following screenshot from the Skype app illustrates this restart request:
 
 
 ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png)

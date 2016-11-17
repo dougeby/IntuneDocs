@@ -33,7 +33,7 @@ To understand how Intune MAM policies can protect your company data, see [Protec
 ## What is the Azure portal?
 The Azure portal is the new admin console for creating MAM policies. It supports the following MAM scenarios:
 - Devices that are enrolled in Intune
-- Devices that are managed by a another MDM solution
+- Devices that are managed by a another Mobile Device Management (MDM) solution
 - Devices that are not managed by any MDM solution (BYOD)
 
 
