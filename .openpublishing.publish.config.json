@@ -26,17 +26,6 @@
       }
     },
     {
-      "docset_name": "IntGetStarted",
-      "build_source_folder": "InTuneDocs/GetStarted",
-      "build_output_subfolder": "InTuneDocs/GetStarted",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      }
-    },
-    {
       "docset_name": "IntPlanDesign",
       "build_source_folder": "InTuneDocs/PlanDesign",
       "build_output_subfolder": "InTuneDocs/PlanDesign",
