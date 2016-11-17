@@ -38,7 +38,7 @@ ms.suite: ems
 - 	**Factory reset** - 	
 - 	**Geolocation** - Allows the device to utilize location information (Samsung KNOX Standard only).	
 - 	**Power off** - 	
-- 	**Screen capture** - 	
+- 	**Screen capture** - Lets the user capture the screen contents as an image.	
 - 	**Voice assistant** - Allows the use of voice assistant software on the device.	
 - 	**YouTube** - Allows the use of the YouTube app on the device.	
 		
@@ -58,7 +58,28 @@ ms.suite: ems
 
 - 	**Google Play store** - 	
 		
-## Restricted Apps		
+## Restricted apps	
+
+In the restricted apps list, you can configure one of the following lists:
+
+A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run.
+An **Approved apps** list - List the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.
+
+To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.
+
+### How to specify the URL to an app in the store
+
+To specify an app URL in the compliant and noncompliant apps list, take the following steps:
+
+In the [Apps section of Google Play](https://play.google.com/store/apps), search for the app you want to use.
+
+Open the installation page for the app, and then copy the URL to the clipboard. You can now use this as the URL in either the compliant or noncompliant apps list.
+
+Example: Search Google Play for Microsoft Office Mobile. The URL you use will be **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+
+### Additional options
+
+You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, <*app publisher*> or click **Export** to create a csv file containing the contents of the restricted apps list in the same format.		
 		
 ## Browser	
 - 	**Web browser** - Specifies whether the device's default web browser can be used.	
@@ -84,6 +105,6 @@ ms.suite: ems
 - 	**Wi-Fi tethering** - Allows the use of Wi-Fi tethering on the device (Samsung KNOX Standard only).	
 		
 ## Kiosk	
-- 	**Select a managed app** - 	
-- 	**Screen sleep button**	- 
-- 	**Volume buttons** - 	
+- 	**Select a managed app** - Browse to, then select a managed app that can run when the device is in kiosk mode (apps specified as a link to the store are not currently supported). No other apps will be allowed to run on the device.	
+- 	**Screen sleep button**	- Enables or disables the screen sleep wake button on the device.
+- 	**Volume buttons** - Enables or disables the use of the volume buttons on the device.	
