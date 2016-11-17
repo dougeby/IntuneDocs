@@ -6,7 +6,7 @@ description: Enable mobile device management (MDM) for iOS devices including iPa
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,10 @@ Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X de
 3.  **Get an Apple Push Notification service certificate**<br>
     Go to the [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844), and sign in with your company Apple ID to create the APNs certificate by using the .csr file. After choosing **Upload** on Apple's Push Certificate Portal, you will receive a .json file that cannot be used for APNs. Complete the download, return to the Apple Push Certificates Portal for **Certificates for Third-Party Servers**, and then choose **Download**.
 
-    Download the APNs (.pem) certificate, and save the file locally. This Apple ID must be used later to renew your APNs certificate.
+    Download the APNs (.pem) certificate, and save the file locally. 
+
+	> [!NOTE]
+	> Every year, you need to renew (not replace) this APNs certificate. Use this same Apple ID to sign in to Apple's Push Certificate Portal to renew the certificate, and then use the same instructions in this topic to download the certificate, and then upload it to Intune.
 
 4.  **Add the APNs certificate to Intune**<br>
     In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **iOS and Mac OS X** &gt; **Upload an APNs Certificate**, and then choose **Upload the APNs certificate**. Go to the certificate (.pem) file, choose **Open**, and then enter your **Apple ID**. With the APNs certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices.
