@@ -28,31 +28,35 @@ ms.suite: ems
 ---
 # ﻿Microsoft Intune App SDK Cordova Plugin
 
+> [!NOTE]
+> You may wish to first read the [Intune App SDK overview](intune-app-sdk.md), which covers the current features of the SDK and describes how to prepare for integration on each supported platform.
+
+
 ## Overview
 
 The [Intune App SDK Cordova Plugin](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam) enables [Intune mobile app management features](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Cordova. The plugin allows developers to integrate Intune app and data protection features into their Cordova-based app.
 
 You will find that you can enable SDK features without changing your app’s behavior. Once you've built the plugin into your iOS or Android mobile app, the IT admin will be able to deploy policy via Microsoft Intune supporting a variety of features that enable data protection. We have built the plugin so that most the steps are automatically performed in the Cordova build process. As a result, you should be able to get your app enabled for management quickly. To get started, follow the steps below based on your target platform.
 
-Before you install and use Microsoft Intune App SDK Cordova Plugin you **must**:
 
-* Review the [Intune App SDK Cordova Plugin License Terms](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam/blob/master/Intune_App_SDK_Cordova_plugin_RTM_license.pdf).
-* Print and retain a copy of the license terms for your records. By downloading and using Intune App SDK Cordova plugin you agree to such license terms.  If you do not accept them, do not use the software.
 
-See the [official documentation](/intune/develop/intune-app-sdk) for a more detailed description of the Intune App SDK.
 
-## Supported Scenarios
+## What's Supported?
 
-### Platforms
-* Android
+### Developer machines
+* Windows
+* Mac OS
+
+
+### Mobile app platforms
+* Android 4.0+
 * iOS
 
+### Intune Mobile Application Management scenarios
 
-### EMM scenarios
-
-* Intune MAM on Intune MDM enrolled devices
-* Intune MAM on third-party EMM enrolled devices
-* Intune MAM on unenrolled, unmanaged devices
+* Intune MDM-enrolled devices
+* Third-party EMM-enrolled devices
+* Unmanaged devices (not enrolled with any MDM)
 
 Cordova apps built with the Intune App SDK Cordova Plugin can now receive Intune mobile application management (MAM) policies on both Intune mobile device management (MDM) enrolled devices and unenrolled devices.
 
@@ -60,11 +64,21 @@ Cordova apps built with the Intune App SDK Cordova Plugin can now receive Intune
 
 ## Prerequisites
 
+### Technical prerequisites
+
 * **[Android only]** The latest Microsoft Intune Company Portal app must always be installed on the device.
 
 
 * Version 0.8.0+ of the [Azure Active Directory Authentication Libraries (ADAL) plugin for Cordova](https://github.com/AzureAD/azure-activedirectory-library-for-cordova) is required.
-  * **Note:** Due to an Apache Cordova bug the filed [here](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22), apps that already have the plugin dependency will not automatically upgrade the plugin to the requested version.
+  * **Important:** Due to an Apache Cordova bug the filed [here](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22), apps that already have the plugin dependency will not automatically upgrade the plugin to the requested version.
+
+
+### Before you install and use Microsoft Intune App SDK Cordova Plugin you **must**:
+
+* Review the [Intune App SDK Cordova Plugin License Terms](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam/blob/master/Intune_App_SDK_Cordova_plugin_RTM_license.pdf).
+
+* Print and retain a copy of the license terms for your records. By downloading and using Intune App SDK Cordova plugin you agree to such license terms.  If you do not accept them, do not use the software.
+
 
 ## Quick start
 
@@ -129,11 +143,11 @@ To add signing information to the wrapped apk, modify `build.json` as you normal
 
 2. **Cordova 6.x.x:** In `[PROJECT_ROOT]/platforms/android/cordova/lib/Adb.js`, change line 60 from
 
-	```
+	```javascript
 	var args = ['-s', target, 'install'];
 	```
 	to
-	```
+	```javascript
 	var args = ['-s', target, 'install', '-t'];
 	```
 
@@ -144,8 +158,8 @@ After launching the app for the first time you should see a dialog notifying you
 
 ## Known Limitations
 ### Android
-* Multi-Dex support is incomplete.
-* App must be target Android 4.0 (Android API 14) or above.
+* MultiDex support is incomplete.
+* App must target Android 4.0 (Android API 14) or above.
 
 ### iOS
 * Whenever you modify the list of UTI’s under the **CFBundleDocumentTypes** node of the **Info.plist** file, you must clear the Intune UTI’s in the Imported UTI’s section of the same plist file (**UTImportedTypeDeclarations** node) before building again. All of the Intune UTI’s will start with the prefix `com.microsoft.intune.mam`.
