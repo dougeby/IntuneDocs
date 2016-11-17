@@ -61,7 +61,7 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP token
     In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then choose **Add**.
 
     Provide **General** details including **Name** and **Description**, and specify whether devices assigned to the profile have user affinity or belong to a group.
-      - **Prompt for user affinity**: The device must be affiliated with a user during initial setup before it can be permitted to access company data and email as that user. **User affinity** should be set up for DEP-managed devices that belong to users and need to use the company portal (that is, to install apps).</br> **Note:** DEP devices with user affinity cannot support multifactor authentication.
+      - **Prompt for user affinity**: The device must be affiliated with a user during initial setup before it can be permitted to access company data and email as that user. **User affinity** should be set up for DEP-managed devices that belong to users and need to use the company portal (that is, to install apps). Multifactor authentication (MFA) doesn't work during enrollment on DEP devices with user affinity. After enrollment, MFA works as expected on these devices. 
 
       > [!NOTE]
       > DEP with user affinity requires WS-Trust 1.3 Username/Mixed endpoint to be enabled to request user token.
