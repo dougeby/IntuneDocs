@@ -111,11 +111,12 @@ The following table lists the roles and permissions that you can assign to admin
 
 
 
+|||
+|--|----|
 |**Role**|**Permissions**|
-|------
 |Global administrator (Office 365 portal)|Access to the Office 365 portal and the Azure AD portal.<br /><br />Access to the Azure  portal (can do both role management and mobile app management tasks).|
 |Owner (Azure  portal)|Access to the Azure  portal (can do both role management and mobile app management tasks).|
-|Contributor (Azure  portal)|Access to the Azure  portal (can do only  mobile app management tasks).|
+|Contributor (Azure  portal)|Access to the Azure  portal (can do only the mobile app management tasks).|
 
 
 
