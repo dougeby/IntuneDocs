@@ -106,24 +106,25 @@ When you finish creating a policy as described in the previous procedure, it is 
 
     ![Screenshot of the User groups blade with the Add user group menu option highlighted](../media/AppManagement/AzurePortal_MAM_AddUserstoPolicy.png)
 
-2.  A list of user groups is displayed on the **Add user group** blade. This is a list of all the security groups in your **Azure Active Directory**.  You can select the user groups you want this policy to apply to and choose **Select**. Choosing **Select**, deploys the policy to users.
+2.  A list of user groups is displayed on the **Add user group** blade. This is a list of all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
 
     ![Screenshot of the Add user group blade showing the list of Azure Active Directory users](../media/AppManagement/AzurePortal_MAM_SelectUserstoDeploy.png)
 
     You have now created a policy and deployed it to users.
 
-Only users with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses assigned to them will be affected by the policy.  Users who are in the security group that you selected that don’t have a [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] license assigned to them are not affected.
+Only users with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses assigned to them are affected by the policy. Users who are in the security group that you selected who don’t have a [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] license assigned to them are not affected.
 
 >[!IMPORTANT]
-> If you are using Intune with Configuration Manager to manage your iOS and Android devices, the policy is only applied to the users directly in the group that you selected.  Members of child groups  nested within the group you selected will not be affected.
+> If you are using Intune with Configuration Manager to manage your iOS and Android devices, the policy is only applied to the users directly in the group that you selected. Members of child groups nested within the group you selected are not affected.
 
-The end users can download the apps from the App store or Google Play. For more information, see:
+End users can download the apps from the App store or Google Play. For more information, see:
 * [What to expect when your Android app is managed by MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 * [What to expect when your iOS app is managed by MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+
 ##  Change existing policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies,  users who are already signed  in to the apps won’t see the changes for an 8-hour period.
 
-To see the effect of the changes immediately the end user will have to log out of the app, and sign back in.
+To see the effect of the changes immediately, the end user will have to log out of the app, and sign back in.
 
 ### To change the list of apps associated with the policy
 
@@ -133,7 +134,7 @@ To see the effect of the changes immediately the end user will have to log out o
 
 2.  In the policy blade, choose **Targeted apps** to open the list of apps.
 
-3.  Remove or add apps from the list and choose the **Save icon** to save your changes.
+3.  Remove or add apps from the list and choose the **Save** icon to save your changes.
 
 ### To change the list of user groups
 
@@ -141,13 +142,13 @@ To see the effect of the changes immediately the end user will have to log out o
 
 2.  In the policy blade, choose **User groups** to open the **User group** blade that shows the list of current user groups who have this policy.
 
-3.  To **add a new user group** to the policy, choose **Add user group**, and select the user group. Choose **Select** to deploy the policy to the group you selected.
+3.  To add a new user group to the policy, choose **Add user group**, and select the user group. Choose **Select** to deploy the policy to the group you selected.
 
-    ![Screenshot of the Add user group blade with two users selected](../media/AppManagement/AzurePortal_MAM_ChangePolicy_SelectUser.png)
+    ![Screenshot of the Add user group blade with two user groups selected](../media/AppManagement/AzurePortal_MAM_ChangePolicy_SelectUser.png)
 
-4.  To **delete a user group**, highlight the user group you want to remove, choose the ellipses (…), then choose **Delete** to remove the user group.
+4.  To delete a user group, highlight the user group you want to remove. Then choose the ellipses (…), and choose **Delete** to remove the user group.
 
-    ![Screenshot showing a Delete option ](../media/AppManagement/AzurePortal_MAM_ChangePolicy_DeleteUser.png)
+    ![Screenshot showing Delete option ](../media/AppManagement/AzurePortal_MAM_ChangePolicy_DeleteUser.png)
 
 ### To change policy settings
 
@@ -157,12 +158,12 @@ To see the effect of the changes immediately the end user will have to log out o
 
 2.  Choose **Policy settings** to open the **Policy settings** blade.
 
-3.  Change the settings, and choose the **Save icon** to save your changes.
+3.  Change the settings, and choose the **Save** icon to save your changes.
 
     ![Screenshot of the Policy settings blade showing the save menu option at the top](../media/AppManagement/AzurePortal_MAM_ChangePolicy_ChangeSettings.png)
 
 ## Policy settings
-To see a full list of the policy setting for iOS and Android, select one of the following:
+To see a full list of the policy settings for iOS and Android, select one of the following:
 
 > [!div class="op_single_selector"]
 - [iOS policies](ios-mam-policy-settings.md)
