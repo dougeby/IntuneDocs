@@ -26,22 +26,22 @@ ms.suite: ems
 ---
 
 # Create and deploy mobile app management policies with Microsoft Intune
-Mobile app management (MAM) policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how MAM policies work and the scenarios supported by Intune MAM policies, read the [protect app data using mobile app management policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) topic.
+Mobile app management (MAM) policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how MAM policies work and the scenarios supported by Intune MAM policies, see [protect app data using mobile app management policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-This topic describes the process of creating a MAM policy in the **Azure portal**. The Azure portal is the new admin console for creating MAM policies, and we recommend that you use this portal to create MAM  policies. Azure portal supports the following MAM scenarios:
-- Devices enrolled in Intune
-- Devices managed by a third-party MDM solution
+This topic describes the process of creating a MAM policy in the **Azure portal**. The Azure portal is the new admin console for creating MAM policies, and we recommend that you use this portal to create MAM policies. Azure portal supports the following MAM scenarios:
+- Devices enrolled in Intune.
+- Devices managed by a third-party MDM solution.
 - Devices that are not managed by any MDM solution (BYOD).
 
 >[!IMPORTANT]
 Consider the following if you are currently using the **Intune admin console** to manage your devices:
 
 > * You can create a MAM policy that supports apps for devices enrolled in Intune using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
-> * MAM policies created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be recreated in the Azure portal.
+> * MAM policies created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be re-created in the Azure portal.
 
 > * You may not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies.
 
-> * To deploy manage apps, you must create a MAM policy in the Intune admin console. In this case, you may want to create MAM policies in both the Intune admin console and the Azure portal: Intune admin console to make sure you have the ability to deploy managed apps, Azure portal because it is the new admin console that has all the MAM policy settings.
+> * To deploy managed apps, you must create a MAM policy in the Intune admin console. In this case, you may want to create MAM policies in both the Intune admin console and the Azure portal: Intune admin console to make sure you have the ability to deploy managed apps, and the Azure portal because it is the new admin console that has all the MAM policy settings.
 
 > * If you create MAM policies on both Intune admin console and Azure portal, the policy that is created in the Azure portal is applied to the apps.
 
@@ -60,44 +60,44 @@ Before creating a MAM policy, review the [pre-requisites and support](get-ready-
     > [!TIP]
     > If this is the first time you are using the Azure portal, read [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) first to get familiar with the portal.
 
-2.  In the **Settings** blade, choose **App policy**.  This opens the **App policy** blade where you'll create new policies and edit existing policies. Choose **Add a policy**.
+2.  In the **Settings** blade, choose **App policy**. This opens the **App policy** blade, where you'll create new policies and edit existing policies. Choose **Add a policy**.
 
     ![Screenshot of the App policy blade with the Add a policy menu option highlighted ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
-3.  Type  a name for the policy, add  a brief description, and select the platform type to create a policy for iOS or Android.  You can create more than one policy for each platform.
+3.  Type a name for the policy, add a brief description, and select the platform type to create a policy for iOS or Android. You can create more than one policy for each platform.
 
     ![Screenshot of the Add a policy blade](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
-4.  Choose **Apps** to open the **Apps blade** where a list of available apps is displayed. You can select one or more apps from the list that you want to associate with the policy that you are creating. One you have selected the apps, choose the **Select** button at the bottom of the **Apps** blade to save your selection.
+4.  Choose **Apps** to open the **Apps blade**, where a list of available apps is displayed. Select one or more apps from the list that you want to associate with the policy that you are creating. Once you have selected the apps, choose **Select** at the bottom of the **Apps** blade to save your selection.
 
     > [!IMPORTANT]
     > You must select at least one app to create a policy.
 
 5.  On the **Add a policy blade**, choose **Configure required settings** to open the policy settings blade.
 
-    There are two categories of policy settings,**Data relocation** and **Access**.  Data relocation policies are applicable to data movement in and out of the apps, while the access polices determine how the end user accesses the apps in a work context.
-    To get you started the policy settings have default values.  You do not have to make any changes if the default values meet your requirements.
+    There are two categories of policy settings, **Data relocation** and **Access**.  Data relocation policies are applicable to data movement in and out of the apps, while the access polices determine how the end user accesses the apps in a work context.
+    To get you started, the policy settings have default values. You do not have to make any changes if the default values meet your requirements.
 
     > [!TIP]
     > These policy settings are enforced only when using apps in the work context.  When the end user uses the app to do a personal task, they will not be affected by these policies.
 
     ![Screenshot of the settings blade along with the Add a policy blade](../media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
-6.  Choose **OK** to save this configuration.  You are now back in the **Add a policy** blade. Choose **Create** to create the policy and save your settings.
+6.  Choose **OK** to save this configuration. You are now back in the **Add a policy** blade. Choose **Create** to create the policy and save your settings.
 
     ![Screenshot of the Add a policy blade showing that the Apps and Settings have been configured](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
 
 
-When you finish creating a policy as described in the previous procedure, it is not deployed to any users.  Follow the steps described below to deploy the policy.
+When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see the following section, "Deploy a policy to users."
 
 > [!IMPORTANT]
-> If you create a MAM policy for an app using the Intune admin console and a MAM policy using the Azure portal, the policy you created using the Azure portal takes precedence. However, the reporting in the Intune or Configuration Manager console will report the policy settings created from the Azure  portal. For example:
+> If you create a MAM policy for an app using the Intune admin console and a MAM policy using the Azure portal, the policy you created using the Azure portal takes precedence. However, the reporting in the Intune or Configuration Manager console will report the policy settings created from the Intune admin console. For example:
 >
-> -   You created a mobile application management policy in the Intune admin console that blocks copy from an app.
-> -   You created a mobile app management policy in the Azure console that allows copy from an app
+> -   You created a MAM policy in the Intune admin console that blocks copy from an app.
+> -   You created a MAM policy in the Azure console that allows copy from an app.
 > -   You associate both of these policies to the same app.
-> -   The result is that the policy you created from the Azure console takes precedence and copy is allowed.
+> -   The policy you created from the Azure console takes precedence, and copy is allowed.
 > -   However, status and reports in the Intune console will incorrectly indicate that copy is blocked.
 
 ## Deploy a policy to users
