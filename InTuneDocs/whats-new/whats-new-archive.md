@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's New Archive | Microsoft Intune
-description:
+description: Archived What's New announcements for Microsoft Intune
 keywords:
 author: barlanmsft
 ms.author: barlan
