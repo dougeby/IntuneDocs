@@ -30,7 +30,9 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use the information in this topic to learn the basics about configuring a VPN profile, and then read further topics for each platform to learn about device specifics.
+Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a VPN connection profile to initiate a connection with the VPN server. Use **VPN profiles** in Microsoft Intune to deploy VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
+
+For example, assume that you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile that contains the settings necessary to connect to the corporate network, and then you assign this profile to all users who have iOS devices. The users will see the VPN connection in the list of available networks and can connect with minimal effort.
 
 ## Create a device profile containing VPN settings
 

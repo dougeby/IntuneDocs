@@ -30,16 +30,18 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
+Use the Microsoft Intune iOS custom profile to deploy settings that you created by using the [Apple Configurator tool](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12) to iOS devices. This tool lets you create many settings that control the operation of these devices and export them to a configuration profile. You can then import this configuration profile into an Intune iOS custom profile and assign the settings to users and devices in your organization.
+
+This capability allows you to deploy iOS settings that are not configurable with other Intune profile types.
+
+
 1. Use the instructions in [How to configure custom device settings in Microsoft Intune](how-to-configure-custom-settings.md) to get started.
-2. On the **Create Profile** blade,
+2. On the **Create Profile** blade, specify the following:
 
-Custom configuration profile name
+- **Custom configuration profile name** - Provide a name for the policy as it will be displayed on the device, and in Intune status.
+- **Configuration profile file** - Browse to the configuration profile that you created by using the Apple Configurator.
+Ensure that the settings you export from the Apple Configurator tool are compatible with the version of iOS on the devices to which you deploy the iOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) website.
 
-
-**Configuration profile file**
-
-Custom configuration profile name displayed to users
-
-File contents
+The file you imported will be displayed in the **File contents** area of the blade.
 
 
