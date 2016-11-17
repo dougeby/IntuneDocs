@@ -30,14 +30,14 @@ ms.suite: ems
 # Microsoft Intune App SDK Xamarin Component
 
 > [!NOTE]
-> You may wish to first read the [Intune App SDK overview](intune-app-sdk.md), which covers the current features of the SDK and describes how to prepare for integration on each supported platform.
+> You may wish to first read the [Get Started with Intune App SDK](intune-app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
 
 
 
 ## Overview
-The [Intune App SDK Xamarin component](https://components.xamarin.com/view/microsoft.intune.mam) enables [Intune mobile app management features](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Xamarin. The component allows developers to easily build in app restriction and data protection features into their Xamarin-based app.
+The [Intune App SDK Xamarin component](https://components.xamarin.com/view/microsoft.intune.mam) enables [Intune mobile app management features](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Xamarin. The component allows developers to easily build in Intune app protection features into their Xamarin-based app.
 
-You will find that you can enable SDK features without changing your app’s behavior. Once you've built the component into your iOS or Android mobile app, the IT admin will be able to deploy policy via Microsoft Intune supporting a variety of features that enable data protection.
+You will find that you can enable SDK features without changing your app’s behavior. Once you've built the component into your iOS or Android mobile app, the IT admin will be able to deploy policy via Microsoft Intune Mobile Application Management (MAM) supporting a variety of data protection features.
 
 ## What's supported?
 
