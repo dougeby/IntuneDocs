@@ -39,7 +39,7 @@ The [Intune App SDK Xamarin component](https://components.xamarin.com/view/micro
 
 You will find that you can enable SDK features without changing your app’s behavior. Once you've built the component into your iOS or Android mobile app, the IT admin will be able to deploy policy via Microsoft Intune supporting a variety of features that enable data protection.
 
-## What's Supported?
+## What's supported?
 
 ### Developer machines
 * Windows

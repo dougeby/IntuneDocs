@@ -41,7 +41,7 @@ You will find that you can enable SDK features without changing your app’s beh
 
 
 
-## What's Supported?
+## What's supported?
 
 ### Developer machines
 * Windows
