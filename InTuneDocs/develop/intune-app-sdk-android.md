@@ -78,7 +78,9 @@ For example, when deriving from `MAMActivity`, instead of overriding `onCreate` 
 The Intune App SDK requires three [Android system permissions](https://developer.android.com/guide/topics/security/permissions.html) on apps that integrate it:
 
 * `android.permission.GET_ACCOUNTS`  (requested at runtime if required)
+
 * `android.permission.MANAGE_ACCOUNTS`
+
 * `android.permission.USE_CREDENTIALS`
 
 The Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)) requires these permissions to perform brokered authentication. If these permissions are not granted to the app or are revoked by the user, authentication flows that require the broker (the Company Portal app) will be disabled.
@@ -354,7 +356,7 @@ These are the developer options when `android:allowBackup =true`.
 ###### Full backup according to a configuration file
 
 Provide a resource under the `com.microsoft.intune.mam.FullBackupContent` metadata tag in your manifest. For example:
-    `<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:resource="@xml/my_scheme" />`.
+    `<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:resource="@xml/my_scheme" />`
 
 Add the following attribute in the `<application>` tag: `android:fullBackupContent="@xml/my_scheme"`, where `my_scheme` is an XML resource in your app.
 
