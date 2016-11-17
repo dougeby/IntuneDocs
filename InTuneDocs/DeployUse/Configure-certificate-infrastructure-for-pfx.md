@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -80,7 +80,7 @@ In this task, you will publish the certificate template.
 
     -   Specify a friendly **Template display name** for the template.
 
-    -   On the **Subject Name** tab, select **Supply in the request**. (Security is enforced by the Intune policy module for NDES).
+    -   On the **Subject Name** tab, select **Supply in the request**. 
 
     -   On the **Extensions** tab, ensure the **Description of Application Policies** includes **Client Authentication**.
 
@@ -145,8 +145,6 @@ Download, install, and configure the Certificate Connector.
 5.  In the **Certificate Connector** UI:
 
     a. Choose **Sign In** and enter your Intune service administrator credentials, or credentials for a tenant administrator with the global administration permission.
-
-  <!--  If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.-->
 
     b. Select the **Advanced** tab, and then provide credentials for an account that has the **Issue and Manage Certificates** permission on your issuing Certificate Authority.
 
