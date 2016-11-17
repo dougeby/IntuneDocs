@@ -79,6 +79,7 @@ Complete the steps below to enable the Intune App SDK:
 1. **Option 1**: Link to the `libIntuneMAM.a` library by doing the following:
 
     Drag and drop the `libIntuneMAM.a` library to the “Linked Frameworks and Libraries” list of the project target.
+
     ![Intune App SDK iOS - linked frameworks and libraries](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     **Note**: If you plan to release your app to the App Store, please use the version of `libIntuneMAM.a` that is built for release and not the debug version. The release version will be in the “release” folder. The debug version has verbose output which helps troubleshoot issues with the Intune App SDK.
