@@ -29,7 +29,7 @@ ms.suite: ems
 # Microsoft Intune App SDK for iOS Developer Guide
 
 > [!NOTE]
-> You may wish to first read the [Get Started with Intune App SDK Guide](intune-app-sdk-get-started.md), which explains how to prepare for integration on each supported platform.*
+> You may wish to first read the [Get Started with Intune App SDK](intune-app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
 
 ## Overview
 
