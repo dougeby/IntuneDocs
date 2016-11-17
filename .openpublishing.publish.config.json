@@ -15,17 +15,6 @@
       }
     },
     {
-      "docset_name": "IntUnderstand",
-      "build_source_folder": "InTuneDocs/Understand",
-      "build_output_subfolder": "InTuneDocs/Understand",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      }
-    },
-    {
       "docset_name": "intune-azure",
       "build_source_folder": "intune-azure",
       "build_output_subfolder": "intune-azure",
