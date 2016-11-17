@@ -65,24 +65,24 @@ For instructions about how to create a MAM policy on the Intune admin console, s
 * **Microsoft apps:** These apps have the Intune App SDK built in and require no further processing before you apply MAM policies.
 To see the full list of supported Microsoft apps, go to the [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) on the Microsoft Intune application partners page. Click an app to see the supported scenarios and platforms, and to see whether the app supports multiple identities.
 
-* **Your organization's line-of-business apps:** These require preparing the apps to include the Intune App SDK before you can apply MAM policies.
+* **Your organization's line-of-business apps:** You must prepare these apps to include the Intune App SDK before you can apply MAM policies.
 
   * For devices that are managed by Intune, see [Decide how to prepare apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
-  * For devices that are not managed (like employee-owned devices), or for devices that are managed by another mobile device management solution, see [Protect line-of-business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
+  * For devices that are not managed (such as employee-owned devices), or for devices that are managed by another mobile device management solution, see [Protect line-of-business apps and data on devices not enrolled in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
 ## Prerequisites
 
--   A subscription to Microsoft Intune.    Users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps that have MAM policies.
-You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription if you are currently using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to manage your devices.  You also have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription if you have purchased an Enterprise Mobility Suite (EMS) license. If you are trying [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to check out the MAM capabilities, you can get a trial account on the [Microsoft Intune page](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
+-   A Microsoft Intune subscription. Users need [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses to get apps that have MAM policies.
+You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription if you are currently using [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to manage your devices. You also have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription if you have purchased an Enterprise Mobility Suite (EMS) license. If you are trying [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to check out the MAM capabilities, you can get a trial account on the [Microsoft Intune page](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
 
-    To verify if you have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription, in the Office portal, go to the **Billing** page.  You should see [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] as **Active** in the subscriptions.
+    To verify if you have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] subscription, in the Office portal, go to the **Billing** page.  If you have a subscription, you should see [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] as **Active** in the subscriptions.
 
 -   An Office 365 subscription, which is required for the following:
 
   - To apply MAM policies to apps with multiple-identity support.
 
-  - To create  SharePoint Online and Exchange Online work
+  - To create SharePoint Online and Exchange Online work
  accounts. Exchange on-premises and SharePoint on-premises are not supported.
 
 -   Skype for Business Online setup for modern authentication. For more information, see [Enable modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
@@ -99,7 +99,7 @@ You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sub
 
 2.  Add users as described in the **Add users** section of [this](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-2) topic, and then assign Intune licenses. To give a user the ability to access the Office portal, the Azure AD portal, and the Azure  portal, assign the **Global administrator** role to the user.
 
-5.  MAM policies are deployed to user groups in Azure Active Directory. To create user groups for your MAM policies, create a user group as described in the **Create a user group** section of [this](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3) topic.
+5.  MAM policies are deployed to user groups in Azure Active Directory. To create user groups for your MAM policies, create a user group as described in the **Create a user group** section of [Create groups to organize evaluation subscription users and devices](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
 
 ### Assign roles to non-global admin users
 
@@ -109,9 +109,10 @@ Global administrators have access to the [Azure portal](https://portal.azure.com
 
 The following table lists the roles and permissions that you can assign to admin users.
 
-|||
-|--|----|
+
+
 |**Role**|**Permissions**|
+|------
 |Global administrator (Office 365 portal)|Access to the Office 365 portal and the Azure AD portal.<br /><br />Access to the Azure  portal (can do both role management and mobile app management tasks).|
 |Owner (Azure  portal)|Access to the Azure  portal (can do both role management and mobile app management tasks).|
 |Contributor (Azure  portal)|Access to the Azure  portal (can do only  mobile app management tasks).|

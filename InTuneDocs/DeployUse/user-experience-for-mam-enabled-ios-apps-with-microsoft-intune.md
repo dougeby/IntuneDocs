@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # What to expect when your iOS app is managed by MAM policies
- This topic describes the user experience for apps with mobile access management (MAM) policies. MAM  policies are applied only when apps are used in the work context: for example, when the user is accessing apps with a work account, or accessing files that are stored in a company OneDrive business location.
+ This topic describes the user experience for apps with mobile access management (MAM) policies. MAM  policies are applied only when apps are used in the work context: for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive business location.
 
 ##  Access apps
 
@@ -59,7 +59,7 @@ Intune supports the deployment of MAM policies to  one user account per device o
 
 Read the following example scenario to get a deeper understanding of how multiple user accounts are treated.
 
-User A works for two companies—**Company X**, and **Company Y**. User A has a work account for each company, and both use Intune to deploy MAM policies. **Company X** deploys MAM policies **before** **Company Y**. The account that's associated with **Company X** gets the MAM policy, but not the account that's associated with Company Y. If you want the user account that's associated with Company Y to be managed by the MAM policies, you must remove the user account that's associated with Company X.
+User A works for two companies—**Company X** and **Company Y**. User A has a work account for each company, and both use Intune to deploy MAM policies. **Company X** deploys MAM policies **before** **Company Y**. The account that's associated with **Company X** gets the MAM policy, but not the account that's associated with Company Y. If you want the user account that's associated with Company Y to be managed by the MAM policies, you must remove the user account that's associated with Company X.
 
 ### Add a second account
 
