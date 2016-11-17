@@ -31,16 +31,16 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## General	
-- 	**Camera** - 	
+- 	**Camera** - Allows the use of the device camera.	
 - 	**Copy and paste** - 	
-- 	**Clipboard sharing between apps** - 	
+- 	**Clipboard sharing between apps** - Allows use of the clipboard to copy and paste between apps.	
 - 	**Diagnostic data submission** - 	
 - 	**Factory reset** - 	
 - 	**Geolocation** - Allows the device to utilize location information (Samsung KNOX Standard only).	
 - 	**Power off** - 	
 - 	**Screen capture** - 	
-- 	**Voice assistant** - 	
-- 	**YouTube** - 	
+- 	**Voice assistant** - Allows the use of voice assistant software on the device.	
+- 	**YouTube** - Allows the use of the YouTube app on the device.	
 		
 ## Password	
 - 	**Password required** - Require the end user to enter a password to access the device.	
@@ -61,17 +61,17 @@ ms.suite: ems
 ## Restricted Apps		
 		
 ## Browser	
-- 	**Web browser** - 	
-- 	**Autofill** - 	
-- 	**Cookies** - 	
-- 	**Javascript** - 	
-- 	**Pop-ups** - 	
+- 	**Web browser** - Specifies whether the device's default web browser can be used.	
+- 	**Autofill** - Allows the autofill function of the web browser to be used.	
+- 	**Cookies** - Allows the device web browser to use cookies.	
+- 	**Javascript** - Allows the device web browser to run Java scripts.	
+- 	**Pop-ups** - Allows the use of the pop-up blocker in the web browser.	
  		
 ## Cloud and Storage	
-- 	**Google backup** - 	
-- 	**Google account auto sync** - 	
-- 	**Removable storage** - 	
-- 	**Encryption on storage cards** - 	
+- 	**Google backup** - Allows the use of Google backup.	
+- 	**Google account auto sync** - Allows Google account settings to be automatically synchronized.	
+- 	**Removable storage** - Allows the device to use removable storage, like an SD card.	
+- 	**Encryption on storage cards** - Specifies whether the device storage card must be encrypted.	
 		
 ## Cellular and Connectivity	
 - 	**Data roaming** - 	

@@ -38,10 +38,10 @@ ms.suite: ems
 - 	**Siri** - Allow use of the Siri voice assistant on the device.	
 - 	**Siri while device is locked** - Allow use of the Siri voice assistant on the device while it is locked.	
 - 	**Siri profanity filter (supervised only)** - Prevents Siri from dictating, or speaking profane language.	
-- 	**Siri to query user-generated content from the internet (supervised only)** - 	
+- 	**Siri to query user-generated content from the internet (supervised only)** - Allow Siri to access websites to answer questions.	
 - 	**Untrusted TLS certificates** - Allow untrusted Transport Layer Security certificates on the device.	
-- 	**Control Center access while device locked** - 	
-- 	**Notifications while device locked** - 	
+- 	**Control Center access while device locked** - Allow the user to access the control center app when the device is locked.	
+- 	**Notifications while device locked** - Allow the user to access the notifications view without unlocking the device.	
 - 	**Passbook while device locked** - Allow the user to access the Passbook app while the device is locked.	
 - 	**Today view while device locked** - Allow the user to see the Today view when the device is locked.	
 - 	**Enterprise app trust** - Lets the user select to trust apps that were not downloaded from the app store.	
@@ -50,9 +50,32 @@ ms.suite: ems
 - 	**Word definition lookup (supervised only)** - Allow the iOS feature that lets you highlight a word and look up it's definition.	
 - 	**Predictive keyboards (supervised only)** - Allow the use of predictive keyboards that suggest words the user might want.	
 - 	**Auto-correction (supervised only)** - Lets the device automatically correct misspelled words.	
-- 	**Keyboard spell-check (supervised only)** - 	
-- 	**Keyboard shortcuts (supervised only)** - 	
-- 	**Wrist detection for paired Apple watch** - When enabled, the Apple Watch won't display notifications when it is not being worn.	
+- 	**Keyboard spell-check (supervised only)** - Allows the device spell checker.	
+- 	**Keyboard shortcuts (supervised only)** - Allows use of keyboard shortcuts.	
+- 	**Wrist detection for paired Apple watch** - When enabled, the Apple Watch won't display notifications when it is not being worn.
+- **Require AirPlay outgoing requests pairing password** - 
+- **Account modification (supervised only)** - 
+- **Apple Watch pairing (supervised only)** - 
+- **Bluetooth modification (supervised only)** - 
+- **Remote screen observation by Classroom app (supervised only)** - 
+- **Enabling restrictions in the device settings (supervised only)** - 
+- **Use of the erase all content and settings option on the device (supervised only)** - 
+- **Device name modification (supervised only)** - 
+- **Diagnostics submission settings modification (supervised only)** - 
+- **Host pairing to control the devices an iOS device can pair with (supervised only)** - 
+- **Notification settings modification (supervised only)** - 
+- **Passcode modification (supervised only)** -  
+- **Wallpaper modification (supervised only)** - 
+- **Enterprise app trust settings modification (supervised only)** - 
+- **Installing apps from App Store (supervised only)** - 
+- **Changes to the Find My Friends app settings (supervised only)** - 
+- **iBooks store (supervised only)** - 
+- **Messages app on the device (supervised only)** - 
+- **Podcasts (supervised only)** - 
+- **Music service (supervised only)** - 
+- **iTunes Radio service (supervised only)** - 
+- **Apple News (supervised only)** - 
+- **Configuration profile changes** - 
 		
 ## Password	
 - 	**Password required** - Require the end user to enter a password to access the device.	
@@ -69,16 +92,20 @@ ms.suite: ems
 
 <sup>1</sup>When you configure the settings **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required**, they are applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen will turn off automatically after 5 minutes, and the device will be locked after an additional 5 minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device will lock 5 minutes later.	
 		
-## App Store, 
-- 	**Doc Viewing, Gaming, App store (supervised only)** - 	
-- 	**Password to access app store** - 	
-- 	**In-app purchases** - 	
+## App Store, Doc Viewing, Gaming
+
+
+- **App store (supervised only) **- 	
+- 	**Password to access app store** - Require the user to enter a password before they can visit the app store.	
+- 	**In-app purchases** - Allow store purchases to be made from within a running app.	
+- 	**Automatic app downloads (supervised only)** - 
 - 	**Explicit iTunes music, podcast, or news content (supervised only)** - Allow the device to access content rated as adult from the store.	
 - 	**Download content from iBook store flagged as 'Erotica'** - Allow the user to download books with the "Erotica" category.	
-- 	**Viewing corporate documents in unmanaged apps** - 	
-- 	**Viewing non-corporate documents in corporate apps** - 	
-- 	**Disallow AirDrop from managed apps** - Stops managed apps from being able to send data via. Airdrop.	
-- 	**Adding Game Center friends (supervised only)** - Allow the user to add friends in Game Center.	
+- 	**Viewing corporate documents in unmanaged apps** - Allow corporate documents to be viewed in any app.<br>**Example:** You want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as no. After the device receives the policy (for example, after a restart), it will no longer allow saving.	
+- 	**Viewing non-corporate documents in corporate apps** - Allow any document to be viewed in corporate managed apps.	
+- 	**Treat AirDrop as an unmanaged destination** - Stops managed apps from being able to send data via. Airdrop.
+- 	**Adding Game Center friends (supervised only)** - Allow the user to add friends in Game Center.
+- 	**Game Center (supervised only)** - 	
 - 	**Multiplayer gaming (supervised only)** - Allow the user to play multiplayer games on the device.	
 		
 ## Restricted apps	
@@ -99,45 +126,54 @@ Copy the URL of the page and use this as the URL to configure the allowed or pro
 
 Example: Search for Microsoft Word for iPad. The URL that you use will be https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
-	> [!Note]
-	> You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.
+> [!Note]
+> You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.
 
 
 
 ### Additional options
 
 You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, <*app publisher*> or click **Export** to create a csv file containing the contents of the restricted apps list in the same format.
+
+## Show or hide apps
+
+Apps list
+
 		
 ## Cellular	
-- 	**Data roaming** - 	
-- 	**Global background fetch while roaming** - 	
+- 	**Data roaming** - Allow data roaming when the device is on a cellular network.	
+- 	**Global background fetch while roaming** - Allow the device to fetch data such as email while it is roaming on a cellular network.	
 - 	**Voice dialing** - Allow use of the voice dialing feature on the device.	
-- 	**Voice roaming** - 	
+- 	**Voice roaming** - Allow voice roaming when the device is on a cellular network.
+- 	**Changes to app cellular data usage settings (supervised only)** - 	
 		
 ## Cloud and Storage	
-- 	**Backup to iCloud** - 	
-- 	**Document sync to iCloud (supervised only)** - 	
-- 	**Photo stream syncing to iCloud** - 	
-- 	**Encrypted backup** - 	
-- 	**iCloud Photo Library** - 	
+- 	**Backup to iCloud** - Allow the user to back up the device to iCloud.	
+- 	**Document sync to iCloud (supervised only)** - Allow document and key-value synchronization to your iCloud storage space.	
+- 	**Photo stream syncing to iCloud** - Allow photos on the device to sync to iCloud.	
+- 	**Encrypted backup** - Require any device backups to be encrypted.	
+- 	**iCloud Photo Library** - Allow the user to store photos on iCloud. If disabled, any photos already stored on iCloud will be removed.	
+- 	**Managed apps sync to cloud** - 
+- 	**Shared photo stream** - 
+- 	**Activity continuation** - 
 		
 ## Kiosk	
 - 	**Activation Lock (supervised only)** - Enable Activation Lock on supervised iOS devices.	
-- 	**App that runs in kiosk mode** - 	
+- 	**App that runs in kiosk mode** - Choose **Browse**, and then specify the managed app or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device. For more help, see "How to specify URLs to app stores" later in this topic.	
 - 	**Assistive touch** - Enable or disable the **Assistive Touch** accessibility setting, which helps the user perform on-screen gestures that might be difficult for them to perform.	
 - 	**Invert colors** - Enable or disable the Invert Colors accessibility setting, which adjusts the display to help users with visual impairments.	
-- 	**Mono audio** - 	
+- 	**Mono audio** - Enable or disable the accessibility setting Mono audio.	
 - 	**VoiceOver** - Enable or disable the accessibility setting **VoiceOver**, which reads aloud text on the device display.	
 - 	**Zoom** - Enable or disable the **Zoom** accessibility setting, which lets the user use touch to zoom in to the device display.	
 - 	**Auto lock** - Enable or disable automatic locking of the device.	
-- 	**Ringer switch** - 	
+- 	**Ringer switch** - Enable or disable the ringer (mute) switch on the device.	
 - 	**Screen rotation** - Enable or disable changing the screen orientation when the user rotates the device.	
-- 	**Screen sleep button** - 	
+- 	**Screen sleep button** - Enable or disable the screen sleep wake button on the device.	
 - 	**Touch** - Enable or disable the touchscreen on the device.	
 - 	**Volume buttons** - Enable or disable the use of the volume buttons on the device.	
 - 	**Assistive touch control** - Enable or disable assistive touch adjustments, which let the user adjust the assistive touch function.	
 - 	**Invert colors control** - Enable or disable invert colors adjustments, which let the user adjust the invert colors function.	
-- 	**Speak on selected text** - 	
+- 	**Speak on selected text** - Enable or disable the Speak Selection accessibility settings, which can read aloud the text that the user selects.	
 - 	**VoiceOver control** - Enable or disable voiceover adjustments, which let the user adjust the VoiceOver function (for example, how fast on-screen text is read aloud).	
 - 	**Zoom control** - Enable or disable zoom adjustments, which let the user adjust the zoom function.	
 
@@ -146,14 +182,11 @@ You can also click **Import** to populate the list from a csv file in the format
 >If the iOS app that you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
 		
 ## Safari	
-- 	**Safari (supervised only)** - 	
-- 	**Autofill** - 	
-- 	**Cookies** - 	
-- 	**JavaScript** - 	
-- 	**Fraud warnings** - 	
-- 	**Pop-ups** - 	
+- 	**Safari (supervised only)** - Specify whether the Safari browser can be used on the device.	
+- 	**Autofill** - Allow the user to change autocomplete settings in the browser.	
+- 	**Cookies** - Allow the browser to use cookies.	
+- 	**JavaScript** - Allow Java scripts to run in the browser.	
+- 	**Fraud warnings** - Allow fraud warnings in the browser.	
+- 	**Pop-ups** - Enable or disable the browser pop-up blocker.	
 		
-## Domains	
-- 	**Unmarked email domain** - 	
-- 	**Managed web domains** - 	
-- 	**Safari password auto fill domains (supervised only)** - 	
+
