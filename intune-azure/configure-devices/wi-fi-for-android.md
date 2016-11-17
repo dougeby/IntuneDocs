@@ -40,5 +40,27 @@ ms.suite: ems
 
 ## Wi-Fi settings for enterprise profiles only
 
-- **EAP type** - 
+- **EAP type** - Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections from:
+	- **EAP-TLS**
+	- **EAP-TTLS**
+	- **PEAP**
 
+### Further options when you choose an EAP type
+
+#### Server Trust
+
+||||
+|-|-|-|
+|Setting name|More information|Use when:|
+|**Certificate server names**|-|EAP type is **EAP-TLS** or **EAP-TTLS**|
+|**Root certificate for server validation**|-|EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**|
+|**Identity privacy (outer identity)**|-|EAP type is **PEAP**|
+
+
+#### Client Authentication
+
+||||
+|-|-|-|
+|Setting name|More information|Use when:|
+|**Client certificate for client authentication (Identity certificate)**|-|EAP type is **EAP-TLS**|
+|**Authentication method**|-|EAP type is **EAP-TTLS** or **PEAP**|
