@@ -58,9 +58,11 @@ Learn how to [tag corporate-owned devices by using IMEI numbers](specify-corpora
 
 ## Identify a device as corporate-owned
 
-In a list of devices, the value for **Ownership** is **Corporate**. A corporate-owned device has one of these characteristics:
+Intune recognizes a device as "corporate" when any of the following conditions are true:
 
- - The device was [enrolled by using a DEM account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
- - The device was enrolled by using the [Apple DEP](ios-device-enrollment-program-in-microsoft-intune.md) or [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md).
- - The device manufacturer [predeclared the device by using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
- - The device is registered in [Azure Active Directory or Enterprise Mobility Suite as a Windows 10 Enterprise device](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview).
+ - The device was [enrolled by using a DEM account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) (all platforms).
+ - The device was enrolled by using the [Apple DEP](ios-device-enrollment-program-in-microsoft-intune.md) or [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) (iOS only).
+ - The device manufacturer [predeclared the device by using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) (all platforms with IMEI numbers).
+ - The device is registered in [Azure Active Directory or Enterprise Mobility Suite as a Windows 10 Enterprise device](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (Windows 10 only).
+
+When a device is tagged as corporate, you see **Corporate** in the **Ownership** column for that device record in the administrator console. 
