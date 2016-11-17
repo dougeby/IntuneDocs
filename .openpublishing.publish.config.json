@@ -16,6 +16,21 @@
       "template_folder": "_themes"
     },
     {
+      "docset_name": "IntTroubleshoot",
+      "build_source_folder": "Troubleshoot",
+      "build_output_subfolder": "troubleshoot",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "intune-azure",
       "build_source_folder": "intune-azure",
       "build_output_subfolder": "intune-azure",
@@ -30,9 +45,54 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "IntTroubleshoot",
-      "build_source_folder": "Troubleshoot",
-      "build_output_subfolder": "troubleshoot",
+      "docset_name": "IntUnderstand",
+      "build_source_folder": "Understand",
+      "build_output_subfolder": "intune/understand-explore",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "Enduser",
+      "build_source_folder": "Enduser",
+      "build_output_subfolder": "intune/enduser",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "IntDeployUse",
+      "build_source_folder": "DeployUse",
+      "build_output_subfolder": "intune/deploy-use",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "IntGetStarted",
+      "build_source_folder": "GetStarted",
+      "build_output_subfolder": "intune/get-started",
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": true,
