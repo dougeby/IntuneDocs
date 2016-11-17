@@ -154,9 +154,6 @@ Download, install, and configure the Certificate Connector.
 
 6.  Open a command prompt and type **services.msc**. Then press **Enter**, right-click the **Intune Connector Service**, and choose **Restart**.
 
-To validate that the service is running, open a browser and enter the following URL, which should return a **403** error:
-
-**https:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
 ### Next steps
 You are now ready to set up certificate profiles, as described in [Configure certificate profiles](Configure-Intune-certificate-profiles.md).
