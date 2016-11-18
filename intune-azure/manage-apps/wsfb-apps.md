@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to monitor apps with Microsoft Intune | Microsoft Docs
+title: How to manage apps you purchased from the Windows Store for Business with Microsoft Intune | Microsoft Docs
 description:  
 keywords:
 author: robstackmsft
@@ -12,7 +12,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
+ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 
 # optional metadata
 
@@ -25,6 +25,6 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to monitor apps with Microsoft Intune
+# How to manage apps you purchased from the Windows Store for Business with Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

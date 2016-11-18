@@ -27,6 +27,8 @@ ms.suite: ems
 
 # How to add an app to Microsoft Intune
 
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
 1. In the **Apps** workload, choose **Manage** > **All Apps**.
 2. Above the list of apps, choose **Add**.
 3. In the **Add App** blade, choose the type of app you want to add from:

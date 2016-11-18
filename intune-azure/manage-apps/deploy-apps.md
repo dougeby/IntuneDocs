@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to deploy and monitor apps with Microsoft Intune | Microsoft Docs
-description: Learn how to assign apps to users and devices, then monitor those deployments. 
+title: How to assign apps to groups with Microsoft Intune | Microsoft Docs
+description: 
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -25,6 +25,19 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to deploy and monitor apps
+# How to assign apps to groups with Microsoft Intune
+
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+1. In the **Mobile Apps** workload, choose **Manage** > **All Apps**.
+2. On the list of apps blade, select the app you want to assign, then choose '**...**' > **Assign Groups**.
+3. On the <*app name*> - **Groups Assigned** blade, choose **Manage** > **Groups Assigned**.
+4. Choose **Assign Groups** then, on the **Select groups** blade, choose the Azure AD groups to which you want to assign the app.
+5. For each app you choose, choose an **assignment type** for the app from: 
+	- **Available**
+	- **Not Applicable**
+	- **Required**
+	- **Uninstall**
+	- **Available Without Enrollment**
 
 
