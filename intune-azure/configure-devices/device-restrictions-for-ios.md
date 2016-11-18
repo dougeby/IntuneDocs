@@ -45,7 +45,7 @@ ms.suite: ems
 - 	**Passbook while device locked** - Allow the user to access the Passbook app while the device is locked.	
 - 	**Today view while device locked** - Allow the user to see the Today view when the device is locked.	
 - 	**Enterprise app trust** - Lets the user select to trust apps that were not downloaded from the app store.	
-- 	**AirDrop (supervised only)** - 	
+- 	**AirDrop (supervised only)** - Allow use of the AirDrop feature to exchange content with nearby devices.	
 - 	**Spotlight search to return results from internet (supervised only)** - Let Spotlight search connect to the Internet to provide further results.	
 - 	**Word definition lookup (supervised only)** - Allow the iOS feature that lets you highlight a word and look up it's definition.	
 - 	**Predictive keyboards (supervised only)** - Allow the use of predictive keyboards that suggest words the user might want.	
@@ -53,22 +53,22 @@ ms.suite: ems
 - 	**Keyboard spell-check (supervised only)** - Allows the device spell checker.	
 - 	**Keyboard shortcuts (supervised only)** - Allows use of keyboard shortcuts.	
 - 	**Wrist detection for paired Apple watch** - When enabled, the Apple Watch won't display notifications when it is not being worn.
-- **Require AirPlay outgoing requests pairing password** - 
+- **Require AirPlay outgoing requests pairing password** - Require a pairing password when the user uses AirPlay to stream content to other Apple devices.
 - **Account modification (supervised only)** - Allow the user to change account settings such as email configurations.
 - **Apple Watch pairing (supervised only)** - Allow the device to pair with an Apple Watch.
 - **Bluetooth modification (supervised only)** - Block the end user from changing Bluetooth settings on the device.
-- **Remote screen observation by Classroom app (supervised only)** - 
+- **Remote screen observation by Classroom app (supervised only)** - Allow or block the Classroom app from observing the screen on remote devices.
 - **Enabling restrictions in the device settings (supervised only)** - Allow the user to configure device restrictions (parental controls) on the device.
-- **Use of the erase all content and settings option on the device (supervised only)** - 
+- **Use of the erase all content and settings option on the device (supervised only)** - Allow the user to use the option of erasing all content and settings on the device.
 - **Device name modification (supervised only)** - Allow the user to change the name of the device.
-- **Diagnostics submission settings modification (supervised only)** - 
+- **Diagnostics submission settings modification (supervised only)** - Allow or block the device from submitting diagnostic data to Apple.
 - **Host pairing to control the devices an iOS device can pair with (supervised only)** - Allow host pairing to let the administrator control which devices an iOS device can pair with.
 - **Notification settings modification (supervised only)** - Allow the user to change the device notification settings.
 - **Passcode modification (supervised only)** - Allow the device password to be added, changed, or removed. 
 - **Wallpaper modification (supervised only)** - Allow the user to change the device wallpaper.
-- **Enterprise app trust settings modification (supervised only)** - 
-- **Installing apps from App Store (supervised only)** - 
-- **Changes to the Find My Friends app settings (supervised only)** - 
+- **Enterprise app trust settings modification (supervised only)** - Lets the user select to trust apps that were not downloaded from the app store.
+- **Installing apps from App Store (supervised only)** - Allow the device to access the app store and install apps.
+- **Changes to the Find My Friends app settings (supervised only)** - Allow the user to change settings for the Find My Friends app.
 - **iBooks store (supervised only)** - Allow the user to browse and purchase books from the iBooks store.
 - **Messages app on the device (supervised only)** - Allow use of the Messages app to send and read text messages.
 - **Podcasts (supervised only)** - Allow use of the Podcasts app.
@@ -95,7 +95,7 @@ ms.suite: ems
 ## App Store, Doc Viewing, Gaming
 
 
-- **App store (supervised only) **- 	
+- **App store (supervised only) ** - Block access to the app store on supervised devices.	
 - 	**Password to access app store** - Require the user to enter a password before they can visit the app store.	
 - 	**In-app purchases** - Allow store purchases to be made from within a running app.	
 - 	**Automatic app downloads (supervised only)** - 
@@ -105,7 +105,7 @@ ms.suite: ems
 - 	**Viewing non-corporate documents in corporate apps** - Allow any document to be viewed in corporate managed apps.	
 - 	**Treat AirDrop as an unmanaged destination** - Stops managed apps from being able to send data via. Airdrop.
 - 	**Adding Game Center friends (supervised only)** - Allow the user to add friends in Game Center.
-- 	**Game Center (supervised only)** - 	
+- 	**Game Center (supervised only)** - Block or enable the use of the Game Center app.	
 - 	**Multiplayer gaming (supervised only)** - Allow the user to play multiplayer games on the device.	
 		
 ## Restricted apps	
@@ -212,7 +212,7 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 - 	**Global background fetch while roaming** - Allow the device to fetch data such as email while it is roaming on a cellular network.	
 - 	**Voice dialing** - Allow use of the voice dialing feature on the device.	
 - 	**Voice roaming** - Allow voice roaming when the device is on a cellular network.
-- 	**Changes to app cellular data usage settings (supervised only)** - 	
+- 	**Changes to app cellular data usage settings (supervised only)** - Allow the user to control which apps are allowed to use cellular data.	
 		
 ## Cloud and Storage	
 - 	**Backup to iCloud** - Allow the user to back up the device to iCloud.	
@@ -220,9 +220,9 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 - 	**Photo stream syncing to iCloud** - Allow photos on the device to sync to iCloud.	
 - 	**Encrypted backup** - Require any device backups to be encrypted.	
 - 	**iCloud Photo Library** - Allow the user to store photos on iCloud. If disabled, any photos already stored on iCloud will be removed.	
-- 	**Managed apps sync to cloud** - 
-- 	**Shared photo stream** - 
-- 	**Activity continuation** - 
+- 	**Managed apps sync to cloud** - Allow apps that you manage with Intune to sync data to the user's iCloud account.
+- 	**Shared photo stream** - Allow use of the iOS shared photo stream feature.
+- 	**Activity continuation** - Allow the user to continue work that they started on an iOS device on another iOS or Mac OS X device (Handoff).
 		
 ## Kiosk	
 - 	**Activation Lock (supervised only)** - Enable Activation Lock on supervised iOS devices.	

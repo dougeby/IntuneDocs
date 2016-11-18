@@ -32,9 +32,9 @@ ms.suite: ems
 
 ## General	
 - 	**Apply all configurations to Windows 10** - Enables settings in this policy to be applied to Windows 10 devices, in addition to Windows 8.1 devices.	
-- 	**Diagnostic data submission** - 	
-- 	**Firewall** - 	
-- 	**User Account Control** - 	
+- 	**Diagnostic data submission** - Enables the device to submit diagnostic information to Microsoft.	
+- 	**Firewall** - Requires that the Windows Firewall is turned on.	
+- 	**User Account Control** - Requires the use of User Account Control (UAC) on devices.	
 ## Password
 - 	**Required password type** - Require the end user to enter a password to access the device.	
 - 	**Minimum password length** - Configures the minimum required length (in characters) for the password.	
@@ -53,22 +53,22 @@ When you enforce encryption on a device, the recovery key is only accessible fro
 ## Browser	
 - 	**Autofill** - Enables users to change autocomplete settings in the browser.	
 - 	**Fraud warnings** - Enables or disables warnings for potential fraudulent websites.	
-- 	**SmartScreen** - 	
-- 	**JavaScript** - 	
+- 	**SmartScreen** - Enables or disables warnings for potential fraudulent websites.	
+- 	**JavaScript** - Enables the browser to run scripts, such as Java script.	
 - 	**Pop-ups** - Enables or disables the browser pop-up blocker.	
 - 	**Send do-not-track headers** - Sends a do not track header to visited sites in Internet Explorer.	
-- 	**Plugins** - 	
-- 	**Single word entry on intranet site** - 	
-- 	**Auto detect of intranet site** - 	
+- 	**Plugins** - Enables users to add plug-ins to Internet Explorer.	
+- 	**Single word entry on intranet site** - Enables use of a single word to direct Internet Explorer to a web site, such as Bing.	
+- 	**Auto detect of intranet site** - Helps configure security for intranet sites in Internet Explorer.	
 - 	**Internet security level** - Sets the Internet Explorer security level for Internet sites.
 - 	**Intranet security level** - Sets the Internet Explorer security level for intranet sites.	
-- 	**Trusted sites security level** - 	
-- 	**High security for restricted sites** - 	
-- 	**Enterprise mode menu access** - 	
-- 	**Logging report location URL** - 	
-- 	**Enterprise mode site list location** - 	
+- 	**Trusted sites security level** - Configures the security level for the trusted sites zone.	
+- 	**High security for restricted sites** - Configures the security level for the restricted sites zone.	
+- 	**Enterprise mode menu access** - Lets users access the Enterprise Mode menu options from Internet Explorer.
+If you select this setting, you can also specify a **Logging report location**, which contains a URL to a report that shows websites for which users have turned on Enterprise Mode access.	
+- 	**Enterprise mode site list location** - Specifies the location of the list of websites that will use Enterprise Mode when it is active.	
 ## Cellular
-- 	**Data roaming** - 	
+- 	**Data roaming** - Enables data roaming when the device is on a cellular network.	
 ## Cloud and Storage	
 - 	**Work folders URL** - Sets the URL of the work folder to allow documents to be synchronized across devices.
 - 	**Access to Windows Mail app without a Microsoft account** - Enables access to the Windows Mail application without a Microsoft account. 	

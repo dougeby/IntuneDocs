@@ -35,22 +35,24 @@ ms.suite: ems
 - **Email server** - The host name of your Exchange server.
 - **Account name** - The display name for the email account as it will appear to users on their devices.
 - **Username attribute from AAD** - This is the attribute in Active Directory (AD) or Azure AD, that will be used to generate the username for this email profile. Select **Primary SMTP Address**, such as user1@contoso.com or **User Principal Name**, such as user1 or user1@contoso.com. 
-- Email address attribute from AAD - 
-- Authentication method - 
+- **Email address attribute from AAD** - How the email address for the user on each device is generated. Select **Primary SMTP Address** to use the primary SMTP address to log into Exchange or use **User Principal Name** to use the full principal name as the email address.
+- **Authentication method** - Select either **Username and Password** or **Certificates** as the authentication method used by the email profile.
+	- If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that will be used to authenticate the Exchange connection. 
 
-- **Security**
-	- **SSL** - Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server. For devices that run Samsung KNOX Standard 4.0 or later, you must export your Exchange Server SSL certificate, and deploy it as an Android Trusted Certificate Profile in Intune. Intune does not support accessing this certificate if it is installed on the Exchange server by other means.
-	- Require S/MIME - 
+### Security settings
 
+- **SSL** - Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server.
+- **S/MIME** - Send outgoing email using S/MIME encryption.
+	- If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that will be used to authenticate the Exchange connection.
 
+### Synchronization settings
 
-- **Synchronization**
-	- Amount of email to synchronize - 
-	- Sync schedule - 
+- **Amount of email to synchronize** - Choose the number of days of email that you want to synchronize, or select **Unlimited** to synchronize all available email.
+- **Sync schedule** - Select the schedule by which devices will synchronize data from the Exchange server. You can also select **As Messages arrive**, which synchronizes data as soon as it arrives, or **Manual**, where the user of the device must initiate the synchronization.
 
+### Content sync settings
 
-- **Content type to sync**
-	- Email - 
-	- Contacts - 
-	- Calender - 
-	- Tasks
+- **Content type to sync** - Select the content types that you want to synchronize to devices from:
+	- **Contacts** 
+	- **Calendar** 
+	- **Tasks**

@@ -52,9 +52,9 @@ ms.suite: ems
 ||||
 |-|-|-|
 |Setting name|More information|Use when:|
-|**Certificate server names**|-|EAP type is **EAP-TLS** or **EAP-TTLS**|
-|**Root certificate for server validation**|-|EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**|
-|**Identity privacy (outer identity)**|-|EAP type is **PEAP**|
+|**Certificate server names**|Specify one or more common names used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on end users devices when they connect to this Wi-Fi network.|EAP type is **EAP-TLS** or **EAP-TTLS**|
+|**Root certificate for server validation**|Choose the trusted root certificate profile used to authenticate the connection. |EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**|
+|**Identity privacy (outer identity)**|Specify the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.|EAP type is **PEAP**|
 
 
 #### Client Authentication
@@ -62,5 +62,5 @@ ms.suite: ems
 ||||
 |-|-|-|
 |Setting name|More information|Use when:|
-|**Client certificate for client authentication (Identity certificate)**|-|EAP type is **EAP-TLS**|
-|**Authentication method**|-|EAP type is **EAP-TTLS** or **PEAP**|
+|**Client certificate for client authentication (Identity certificate)**|Choose the SCEP or PKCS certificate profile used to authenticate the connection.|EAP type is **EAP-TLS**|
+|**Authentication method**|Select the authentication method for the connection:<br>- **Certificates** to select the SCEP or PKCS the client certificate that is the identity certificate presented to the server.<br><br>- **Username and Password** to specify a different method for authentication. <br><br>If you selected **Username and Password**, configure:<br><br>-  **Non-EAP method (inner identity)**, then select how you will authenticate the connection from:<br>- **None**<br>- **Unencrypted password (PAP)**<br>- **Challenge Handshake Authentication Protocol (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Version 2 (MS-CHAP v2)**<br>The available options depend on the EAP type you selected.<br><br>**and**<br><br>- **Identity privacy (outer identity)** - Specify the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.|EAP type is **EAP-TTLS** or **PEAP**|
