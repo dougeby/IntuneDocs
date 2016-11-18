@@ -74,23 +74,6 @@ The Company Portal app for Android uses Google Play Services to communicate with
 |Remote lock|||
 |Passcode reset|||
 
-| __Intune Admin Console__|
- - Full wipe
- - Selective wipe
- - New or updated app deployments
- - Remote lock
- - Passcode reset
-
-* __Intune Company Portal app for Android__
- - Remove a remote device
- - Reset device
- - Install available line-of-business app
-
-* __Intune Company Portal website__
- - Remove device (local and remote)
- - Reset device
- - Device passcode reset
-
 ## Deprecations
 
 ### Removal of Exchange Online mobile inbox policies <!--770687-->
