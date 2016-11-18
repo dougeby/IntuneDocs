@@ -35,7 +35,8 @@
 ## [Plan and design](/intune-azure/manage-apps/plan-and-design)
 ## [How to](/intune-azure/manage-apps/how-to)
 ### [Add apps](/intune-azure/manage-apps/add-apps)
-### [Deploy and monitor apps](/intune-azure/manage-apps/deploy-apps)
+### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
+### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
 ## [Troubleshoot](/intune-azure/manage-apps/troubleshooting)
 
 # [Configure devices](/intune-azure/configure-devices/what-is)
