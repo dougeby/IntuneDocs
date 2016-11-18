@@ -53,14 +53,8 @@ You can now enforce MFA when a select group of users enroll an iOS, Android, Win
 ### Conditional access for MAM with SharePoint Online <!--VSO 679339-->
 You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint Online.  You can get started using Intune mobile app management in the Azure portal. Look for the __Conditional Access__ section in the __Settings__ blade which will include the option for SharePoint Online. This feature will ship separately from the rest of the service release; look for it to turn on in late December.
 
-### Ability to restrict Intune enrollment by platform <!--747596-->
-Intune is adding new enrollment restrictions that control which platforms are allowed to enroll. Intune separates platforms as iOS, Mac OS X, Android, Windows and Windows Mobile. For iOS only, there is one additional option to block the enrollment of personally owned devices. Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in this article. To set the restrictions in the Intune admin console, choose Admin > Mobile Device Management > Enrollment Rules > Platform Restrictions.
-
 ### Telecom expense management integration <!--747605-->
 You can now integrate with third-party telecom expense management services and use Intune to enforce limits on domestic and roaming data usage.
-
-### Deploy apps from the Windows Store for Business as Available <!--VSO 676516-->
-You can now deploy apps you synchronized from the Windows Store for Business with a deployment action of __Available__ or __Required__.
 
 ## Notices
 
