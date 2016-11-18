@@ -66,22 +66,22 @@ We are publishing the Company Portal app for Android for download in China. Du
 
 The Company Portal app for Android uses Google Play Services to communicate with the Microsoft Intune service. Since Google Play Services are not yet available in China, performing any of the following tasks can take up to 8 hours to complete. 
 
-__Intune Admin Console__
-- Full wipe
-- Selective wipe
-- New or updated app deployments
-- Remote lock
-- Passcode reset
+* __Intune Admin Console__
+ - Full wipe
+ - Selective wipe
+ - New or updated app deployments
+ - Remote lock
+ - Passcode reset
 
-__Intune Company Portal app for Android__
-- Remove a remote device
-- Reset device
-- Install available line-of-business app</br>
+* __Intune Company Portal app for Android__
+ - Remove a remote device
+ - Reset device
+ - Install available line-of-business app
  
-__Intune Company Portal website__
-- Remove device (local and remote)
-- Reset device
-- Device passcode reset
+* __Intune Company Portal website__
+ - Remove device (local and remote)
+ - Reset device
+ - Device passcode reset
 
 ## Deprecations
 
