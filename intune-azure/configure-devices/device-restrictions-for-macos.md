@@ -58,6 +58,6 @@ Using a search engine, find the app that you want to use in the iTunes App Store
 Copy the URL of the page and use this as the URL to configure the allowed or prohibited apps list or an app that you want to run in kiosk mode.
 
 > [!Note]
-> You can also use the iTunes software to find the app and then use the **Copy Link** command to get the app URL.
+> You can also use iTunes to find the app and then use the **Copy Link** command to get the app URL.
 
 

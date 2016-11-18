@@ -84,7 +84,7 @@ You can also click **Import** to populate the list from a csv file in the format
 ## Cellular and Connectivity	
 - 	**Wi-Fi** - Enables or disables the Wi-Fi functionality of the device.
 - 	**Wi-Fi tethering** - Enables the use of Wi-Fi tethering on the device.	
-- 	**Automatically connect to Wi-Fi hotspots** - 	
+- 	**Automatically connect to Wi-Fi hotspots** - Enables the device to automatically connect to free Wi-Fi hotspots and automatically accept any terms of use.	
 - 	**Wi-Fi hotspot reporting** - Sends information about Wi-Fi connections to help the user discover nearby connections.	
 - 	**NFC** - Enables or disables operations that use near field communication on devices that support it.	
 - 	**Bluetooth** - Enables or disables the Bluetooth functionality of the device.	
