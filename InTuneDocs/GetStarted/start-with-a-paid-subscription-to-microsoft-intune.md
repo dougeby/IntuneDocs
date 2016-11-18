@@ -32,7 +32,7 @@ This guide gets you started with your paid subscription of Microsoft Intune to m
 If you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [extend Configuration Manager to manage mobile devices](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 >[!TIP]
->If you purchase at least 150 licenses for Intune in an eligible plan, you can use the *FastTrack Center Benefit*, which is a service where Microsoft specialists work with you to get your environment ready for Intune. See [Microsoft Intune Service Benefit Description](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
+>If you purchase at least 150 licenses for Intune in an eligible plan, you can use the *FastTrack Center Benefit*, which is a service where Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
 
 ## Checklist
 
