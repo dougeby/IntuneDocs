@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Enroll corporate-owned devices with the device enrollment manager in Microsoft Intune
-Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special Intune account that can enroll up to 1,000 devices. We recommend that you use devices enrolled through this account as shared devices rather than personal ("BYOD") devices. Users will not be able to use "native" email apps, for example.
+Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special Intune account that can enroll up to 1,000 devices. Each enrolled device uses a single license. We recommend that you use devices enrolled through this account as shared devices rather than personal ("BYOD") devices. Users will not be able to use "native" email apps, for example.
 
 As an example, you could assign a device enrollment manager user account to a store manager or supervisor to let them:
 
