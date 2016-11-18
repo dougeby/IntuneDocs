@@ -35,7 +35,7 @@ This page is updated periodically. Check back for additional updates.
 The following changes are under development for Intune. All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
 <!--736542-->
-## Public Preview of the new Intune admin experience on Azure
+## Public preview of the new Intune admin experience on Azure
 
 In early calendar year 2017 we will be migrating our full admin experience onto Azure, allowing for powerful and integrated management of core EMS workflows on a modern service platform that’s extensible using Graph APIs.
 
@@ -54,7 +54,7 @@ You can now enforce MFA when a select group of users enroll an iOS, Android, Win
 You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint Online.  You can get started using Intune mobile app management in the Azure portal. Look for the __Conditional Access__ section in the __Settings__ blade which will include the option for SharePoint Online. This feature will ship separately from the rest of the service release; look for it to turn on in late December.
 
 ### Telecom expense management integration <!--747605-->
-You can now integrate with third-party telecom expense management services and use Intune to enforce limits on domestic and roaming data usage.
+You can now integrate with certain third-party telecom expense management services and use Intune to enforce limits on domestic and roaming data usage.
 
 ## Notices
 
