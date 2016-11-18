@@ -80,7 +80,7 @@ The Company Portal app for Android uses Google Play Services to communicate with
 Beginning in December, admins will no longer be able to view or configure Exchange Online (EAS) mobile mailbox policies within the Intune console. This change will roll out to all Intune tenants over December and January. All existing policies will stay as configured; for configuring new policies, use the Exchange Management Shell. Find out more information [here]( https://technet.microsoft.com/en-us/library/bb123783%28v=exchg.150%29.aspx).
 
 ### Intune AV Player, Image Viewer, and PDF Viewer apps are no longer supported on Android <!--747553-->
-From mid-December 2016 on, users will no longer be able to use the Intune AV Player, Image Viewer, and PDF Viewer apps. These apps have been replaced with the Azure Information Protection app. Find out more about the [Azure Information Protection app here](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq).
+From mid-December 2016 on, users will no longer be able to use the Intune AV Player, Image Viewer, and PDF Viewer apps. These apps have been replaced with the Azure Information Protection app. Find out more about the Azure Information Protection app [here](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq).
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
