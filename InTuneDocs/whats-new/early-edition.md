@@ -82,7 +82,7 @@ __Intune Admin Console__
 __Intune Company Portal app for Android__
 - Remove a remote device
 - Reset device
-- Install available line-of-business app
+- Install available line-of-business app</br>
  
 __Intune Company Portal website__
 - Remove device (local and remote)
