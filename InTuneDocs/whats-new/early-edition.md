@@ -41,7 +41,7 @@ The following changes are under development for Intune. All of these features wi
 
 >In early calendar year 2017 we will be migrating our full admin experience onto Azure, allowing for powerful and integrated management of core EMS workflows on a modern service platform that’s extensible using Graph APIs.
 
->New trial tenants will start to see the public preview of the new admin experience in the Azure portal this month. While in preview state, capabilities and parity with the existing Intune console will be delivered iteratively. 
+>New trial tenants will start to see the public preview of the new admin experience in the Azure portal this month. While in preview state, capabilities and parity with the existing Intune console will be delivered iteratively.
 
 >The admin experience in the Azure portal will use the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, if you want to test or look at any of the new functionality until your tenant is migrated, sign up for a new Intune trial account or take a look at the new documentation.
 
@@ -68,7 +68,7 @@ You can now deploy apps you synchronized from the Windows Store for Business wit
 Previously, admins would go to either the Intune console or the Configuration Manager (earlier than release 1610) console to set MFA for Intune enrollments. With this updated feature, you will now login to the [Microsoft Azure portal](manage.windowsazure.com) using your Intune credentials and configure MFA settings through Azure AD. Learn more about this [here](https://aka.ms/mfa_ad).
 
 ### Company Portal app for Android now available in China <!--VSO 658093-->
-We are publishing the Company Portal app for Android for download in China. Due to the absence of Google Play Store in China, Android devices must obtain apps from Chinese app marketplaces. The Company Portal app for Android will be available for download at/on 360, Tencent, Xiaomi, Wandoujia and Huawei. 
+We are publishing the Company Portal app for Android for download in China. Due to the absence of Google Play Store in China, Android devices must obtain apps from Chinese app marketplaces. The Company Portal app for Android will be available for download on 360, Tencent, Xiaomi, Wandoujia and Huawei. 
 
 The Company Portal app for Android uses Google Play Services to communicate with the Microsoft Intune service. Since Google Play Services are not yet available in China, performing any of the following tasks can take up to 8 hours to complete. 
 
