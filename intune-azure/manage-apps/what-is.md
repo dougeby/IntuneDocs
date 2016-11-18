@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage apps with Microsoft Intune | Microsoft Docs
+title: What is app management with Microsoft Intune | Microsoft Docs
 description: Use this topic to learn how to manage apps with Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Manage apps with Microsoft Intune
+# What is app management with Microsoft Intune?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

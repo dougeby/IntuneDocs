@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to monitor apps with Microsoft Intune | Microsoft Docs
-description:  
+title: Manage iOS VPP apps | Microsoft Docs
+description: 
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -12,7 +12,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
+ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 
 # optional metadata
 
@@ -25,6 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to monitor apps with Microsoft Intune
+# How to manage iOS apps you purchased through a volume-purchase program with Microsoft Intune
+
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
