@@ -77,7 +77,8 @@ The Company Portal app for Android uses Google Play Services to communicate with
  - Remove a remote device
  - Reset device
  - Install available line-of-business app
- 
+
+</br>
 * __Intune Company Portal website__
  - Remove device (local and remote)
  - Reset device
