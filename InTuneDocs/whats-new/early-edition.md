@@ -43,9 +43,9 @@ New trial tenants will start to see the public preview of the new admin experien
 
 The admin experience in the Azure portal will use the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, if you want to test or look at any of the new functionality until your tenant is migrated, sign up for a new Intune trial account or take a look at the new documentation.
 
-## New Capabilities
-
 If you have any questions about the timeline for your tenant’s migration, contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+
+## New Capabilities
 
 ### MFA across all platforms <!--747590-->
 You can now enforce MFA when a select group of users enroll an iOS, Android, Windows 8.1 or later, or Windows Phone 8.1 or later device from the Azure Management Portal by configuring MFA on Enrollment in the Microsoft Intune Enrollment application.
