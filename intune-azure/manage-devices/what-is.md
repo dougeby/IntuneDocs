@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Manage devices | Microsoft Docs
-description: Use this topic to learn about On-Premises Access Microsoft Intune
+title: Manage devices with Microsoft Intune | Microsoft Docs
+description: 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -25,7 +25,24 @@ ms.suite: ems
 
 ---
 
-# What is the Manage Devices workload in Microsoft Intune
+# Manage Devices with Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+The **Devices and groups** workload lets you perform the following actions:
+
+**Manage your devices**, including:
+- View a list of all devices you manage (choose **Manage** > **All devices**)
+
+Select one of those devices to open the <*device name*> **Overview** blade where you can select one of:
+
+
+
+- **Overview**  - See general information about the device including information about it's name, the owner, whether it is a BYOD device, when it last checked-in, and more. Additionally, you can perform the following remote actions on the device:
+	- **Retire**
+	- **Wipe**
+	- **Remote Lock**
+	- **Passcode Removal**
+- **Hardware** - See more detailed information about the device including it's free storage space, model and manufacturer, and more.
+- **Detected Applications** - Displays a list of all apps that Intune found installed on the device.
