@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage users | Microsoft Docs
-description: Use this topic to learn about On-Premises Access Microsoft Intune
+description: 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -29,3 +29,5 @@ ms.suite: ems
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+The **Manage Users** workload lets you perform the following actions:
