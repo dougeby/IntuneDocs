@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: On-Premises Access | Microsoft Docs
-description: Use this topic to learn about On-Premises Access Microsoft Intune
+title: What is Microsoft Intune device enrollment | Microsoft Docs
+description: 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# On-Premises Access for Microsoft Intune
+# What is Microsoft Intune device enrollment
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
