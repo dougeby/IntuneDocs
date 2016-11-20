@@ -4,9 +4,10 @@
 title: Troubleshoot device enrollment| Microsoft Intune
 description: Suggestions for troubleshooting device enrollment issues.
 keywords:
-author: staciebarkerms.author: staciebarker
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 11/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +35,7 @@ This topic provides suggestions for troubleshooting device enrollment issues. If
 
 Before you begin troubleshooting, check to make sure that you've configured Intune properly to enable enrollment. You can read about those configuration requirements in:
 
--	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/gprerequisites-for-enrollment.md)
+-	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
 -	[Set up iOS and Mac device management](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -	[Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -	[Set up Windows device management](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
