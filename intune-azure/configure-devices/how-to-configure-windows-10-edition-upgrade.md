@@ -35,7 +35,7 @@ Use the information in this topic to learn how to configure a Windows 10 edition
 - Windows 10 Desktop
 - Windows 10 Holographic
 - Windows 10 Mobile
-+ 
+
 The following upgrade paths are supported:
 
 - From Windows 10 Pro to Windows 10 Enterprise

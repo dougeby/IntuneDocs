@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune Device restriction settings for Windows 10 devices | Microsoft Docs
-description: Description.
+title: Intune device restriction settings for Windows 10 devices | Microsoft Docs
+description: 
 keywords:
 author: robstackmsft
 ms.author: robstack

@@ -46,7 +46,7 @@
 ## [How to configure the Company Portal app](/intune-azure/manage-apps/)
 ## [Troubleshoot apps](/intune-azure/manage-apps/troubleshooting)
 
-# [Configure devices](/intune-azure/configure-devices/what-is)
+# [Configure devices](/intune-azure/configure-devices/what-are-device-profiles)
 ## [What are device profiles](/intune-azure/configure-devices/what-are-device-profiles)
 <!---## [Get started](/intune-azure/configure-devices/get-started)
 ## [Plan and design](/intune-azure/configure-devices/plan-and-design) --->
@@ -81,12 +81,8 @@
 ### [How to configure certificates](/intune-azure/configure-devices/how-to-configure-certificates)
 #### [Certificate infrastructure for SCEP](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
 #### [Certificate infrastructure for PFX](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
-#### [Trusted certificates](/intune-azure/configure-devices/trusted-certificate-settings)
-#### [SCEP certificates](/intune-azure/configure-devices/scep-certificate-settings)
-#### [PKCS certificates](/intune-azure/configure-devices/pkcs-certificate-settings)
 ### [How to configure Windows Information Protection settings](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-### [How to configure iOS Education settings]()
-### [How to configure iOS presets](/intune-azure/configure-devices/)
+### [How to configure iOS Education settings](/intune-azure/configure-devices/education-settings-for-ios)
 ### [How to configure custom settings](/intune-azure/configure-devices/how-to-configure-custom-settings)
 #### [Custom settings for Android devices](/intune-azure/configure-devices/custom-for-android)
 ##### [Custom device profile to create a Wi-Fi profile with a pre-shared key](/intune-azure/configure-devices/wi-fi-profile-with-shared-key)

@@ -77,16 +77,18 @@ You'll import this certificate when you set up a trusted certificate profile.
 ## Task 2: Create Trusted certificate profiles
 You must create a Trusted certificate profile before you can create a Simple Certificate Enrollment Protocol (SCEP) or a PKCS certificate profile. You need a Trusted certificate profile and an SCEP or .PFX profile for each device platform.
 
-To create a Trusted certificate profile
+### To create a Trusted certificate profile
+
 1. In the Azure Portal, select the **Device Configurations** workload.
 2. On the **Device configuration** blade, select **Manage** > **Profiles**.
 3. On the profiles blade, click **Create Profile**.
-4. On the **Create Profile** blade, enter a **Name** and **Description** for the device restriction profile.
-5. From the **Platform** drop-down list, select the device platform to which you want to apply custom settings. Currently, you can choose one of the following platforms for device restriction settings:
+4. On the **Create Profile** blade, enter a **Name** and **Description** for the trusted certificate profile.
+5. From the **Platform** drop-down list, select the device platform for this trusted certificate. Currently, you can choose one of the following platforms for device restriction settings:
 	- **Android**
 	- **iOS**
 	- **macOS**
 	- **Windows Phone 8.1**
+	- **Windows 8.1 and later**
 	- **Windows 10 and later**
 6. From the **Profile** type drop-down list, choose **Trusted certificate**.
 7. Browse to the certificate you saved in task 1, then click **OK**.
@@ -99,60 +101,83 @@ The profile will be created and appears on the profiles list blade.
 > Android devices will display a notice that a third party has installed a trusted certificate.
 
 ## Task 3: Create SCEP or .PFX certificate profiles
-After you create a Trusted CA certificate profile, create SCEP or .PFX certificate profiles for each platform you want to use. When you create an SCEP certificate profile, you must specify a Trusted certificate profile for that same platform. This links the two certificate profiles, but you still must deploy each profile separately.
+After you create a Trusted CA certificate profile, create SCEP or .PFX certificate profiles for each platform you want to use. When you create an SCEP certificate profile, you must specify a Trusted certificate profile for that same platform. This links the two certificate profiles, but you still must assign each profile separately.
 
-To create an SCEP certificate profile
-In the Intune administration console, choose Policy > Add Policy and choose a device platform. You can create a SCEP certificate profile for these devices:
+### To create an SCEP certificate profile
 
-Android 4 and later
-Android for Work
-iOS 7.1 and later
-Mac OS X 10.9 and later
-Windows 8.1 and later
-Windows Phone 8.1 and later
 
-Add a SCEP Certificate Profile policy
-Learn more: Manage settings and features on your devices with Microsoft Intune policies.
+
+1. In the Azure Portal, select the **Device Configurations** workload.
+2. On the **Device configuration** blade, select **Manage** > **Profiles**.
+3. On the profiles blade, click **Create Profile**.
+4. On the **Create Profile** blade, enter a **Name** and **Description** for the SCEP certificate profile.
+5. From the **Platform** drop-down list, select the device platform for this SCEP certificate. Currently, you can choose one of the following platforms for device restriction settings:
+	- **Android**
+	- **iOS**
+	- **macOS**
+	- **Windows Phone 8.1**
+	- **Windows 8.1 and later**
+	- **Windows 10 and later**
+6. From the **Profile** type drop-down list, choose **SCEP certificate**.
+7. On the **SCEP Certificate** blade, configure the following settings:
+	- **Certificate validity period** - 
+	- **Key storage provider (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10) - 
+	- **Subject name format** - 
+	- **Subject alternative name** - 
+	- **Key usage** - 
+	- **Key size (bits)** - 
+	- **Hash algorithm** (Android, Windows Phone 8.1, Windows 8.1, Windows 10) - 
+	- **Root Certificate** - 
+	- **Extended key usage** - 
+	- **Enrollment Settings** - 
+	- **Renewal threshold (%)** - 
+	- **SCEP Server URLs** - 
+8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
+
+The profile will be created and appears on the profiles list blade.
+
 Follow the instructions on the profile configuration page to configure the SCEP certificate profile settings.
-Note
-Under Subject name format, select Custom to enter a custom subject name format (in iOS profiles, only).
-The two variables currently supported for the custom format are Common Name (CN) and Email (E). By using a combination of these variables and static strings, you can create a custom subject name format, like this one:
-Copy
- 
-CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-In this example, the admin created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. CertStrToName function lists supported strings.
-Choose Save Policy.
+>[!Note]
+> For iOS devices only: Under Subject name format, select Custom to enter a custom subject name format.
+> The two variables currently supported for the custom format are **Common Name (CN)** and **Email (E)**. By using a combination of these variables and static strings, you can create a custom subject name format, like this one:
+> **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [This topic](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) show the **CertStrToName** function and its supported strings.
 
-The new policy is shown in the Policy workspace. Now you can deploy it.
 
-To create a .PFX certificate profile
-In the Intune administration console, choose Policy > Add Policy, and choose a device platform. .PFX certificates are supported for:
-Android 4 and later
-Android for Work
-Windows 10 and later
-Windows Phone 10 and later
-iOS 8.0 and later) 
-Add a .PFX Certificate Profile policy. Learn more: Manage settings and features on your devices with Microsoft Intune policies.
-Enter the information requested on the policy form.
-Choose Save Policy.
+### To create a .PFX certificate profile
 
-The new policy is shown in the Policy workspace. Now you can deploy it.
+In the Azure Portal, select the **Device Configurations** workload.
+2. On the **Device configuration** blade, select **Manage** > **Profiles**.
+3. On the profiles blade, click **Create Profile**.
+4. On the **Create Profile** blade, enter a **Name** and **Description** for the PKCS certificate profile.
+5. From the **Platform** drop-down list, select the device platform for this PKCS certificate. Currently, you can choose one of the following platforms for device restriction settings:
+	- **Android**
+	- **iOS**
+	- **Windows 10 and later**
+6. From the **Profile** type drop-down list, choose **PKCS certificate**.
+7. On the **PKCS Certificate** blade, configure the following settings:
+	- **Renewal threshold (%)** - 
+	- **Certificate validity period** - 
+	- **Key storage provider (KSP)** (Windows 10) - 
+	- **Certificate authority** - 
+	- **Certificate authority name** - 
+	- **Certificate template name** - 
+	- **Subject name format** - 
+	- **Subject alternative name** - 
+	- **Extended key usage** (Android) - 
+	- **Root Certificate** (Android) - 
+8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
-## Task 4: Deploy certificate profiles
-When you deploy certificate profiles, the certificate file from the Trusted CA certificate profile is installed on the device. The device uses the SCEP or .PFX certificate profile to create a certificate request by the device.
+The profile will be created and appears on the profiles list blade.
 
-Certificate profiles install only on devices running the platform you use when you create the profile.
+## Task 4: Assign certificate profiles
 
-You can deploy certificate profiles to user collections or to device collections.
-Tip
-To publish a certificate to a device quickly after the device enrolls, deploy the certificate profile to a user group rather than to a device group. If you deploy to a device group, a full device registration is required before the device receives policies.
-Although you deploy each profile separately, you also need to deploy the Trusted Root CA and the SCEP or .PFX profile. Otherwise, the SCEP or .PFX certificate policy will fail.
+Consider the following before you assign certificate profiles to groups:
 
-Deploy certificate profiles the same way you deploy other policies for Intune:
+- When you assign certificate profiles to groups, the certificate file from the Trusted CA certificate profile is installed on the device. The device uses the SCEP or .PFX certificate profile to create a certificate request by the device.
+- Certificate profiles install only on devices running the platform you use when you created the profile.
+- You can deploy certificate profiles to user collections or to device collections.
+- To publish a certificate to a device quickly after the device enrolls, deploy the certificate profile to a user group rather than to a device group. If you deploy to a device group, a full device registration is required before the device receives policies.
+- Although you deploy each profile separately, you also need to deploy the Trusted Root CA and the SCEP or .PFX profile. Otherwise, the SCEP or .PFX certificate policy will fail.
 
-In the Policy workspace, select the policy you want to deploy, and then choose Manage Deployment.
-In the Manage Deployment dialog box:
-To deploy the policy, select one or more groups to deploy the policy to, and then choose Add > OK.
-To close the dialog box without deploying it, choose Cancel.
-
-When you select a deployed policy, you can see more information about the deployment in the lower part of the list of policies.
+See [How to assign device profiles](how-to-assign-device-profiles.md) for general information about how to assign device profiles.
