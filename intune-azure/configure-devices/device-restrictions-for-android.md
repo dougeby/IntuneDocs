@@ -32,12 +32,12 @@ ms.suite: ems
 
 ## General	
 - 	**Camera** - Allows the use of the device camera.	
-- 	**Copy and paste** - 	
+- 	**Copy and paste** - Allows copy and paste functions on the device.	
 - 	**Clipboard sharing between apps** - Allows use of the clipboard to copy and paste between apps.	
 - 	**Diagnostic data submission** - 	
-- 	**Factory reset** - 	
+- 	**Factory reset** - Allows the user to perform a factory reset on the device.	
 - 	**Geolocation** - Allows the device to utilize location information (Samsung KNOX Standard only).	
-- 	**Power off** - 	
+- 	**Power off** - Allows the user to power off the device.<br>If this setting is disabled, the setting **Number of sign in failures before wiping device** for Samsung KNOX Standard devices does not function.	
 - 	**Screen capture** - Lets the user capture the screen contents as an image.	
 - 	**Voice assistant** - Allows the use of voice assistant software on the device.	
 - 	**YouTube** - Allows the use of the YouTube app on the device.	
@@ -56,7 +56,7 @@ ms.suite: ems
 		
 ## Google Play Store	
 
-- 	**Google Play store** - 	
+- 	**Google Play store** - Allows the user to access the Google Play store on the device.	
 		
 ## Restricted apps	
 
@@ -95,10 +95,10 @@ You can also click **Import** to populate the list from a csv file in the format
 - 	**Encryption on storage cards** - Specifies whether the device storage card must be encrypted.	
 		
 ## Cellular and Connectivity	
-- 	**Data roaming** - 	
-- 	**SMS/MMS messaging** - 	
-- 	**Voice dialing** - 	
-- 	**Voice roaming** - 	
+- 	**Data roaming** - Allows data roaming when the device is on a cellular network.	
+- 	**SMS/MMS messaging** - Allows the use of SMS and MMS messaging on the device.	
+- 	**Voice dialing** - Enables or disables the voice dialing feature on the device.	
+- 	**Voice roaming** - Allows voice roaming when the device is on a cellular network.	
 - 	**Bluetooth** - Allows the use of Bluetooth on the device (Samsung KNOX Standard only).	
 - 	**NFC** - Allows operations that use near field communication if the device supports it (Samsung KNOX Standard only).	
 - 	**Wi-Fi** - Allows the use of the Wi-Fi capabilities of the device (Samsung KNOX Standard only).	

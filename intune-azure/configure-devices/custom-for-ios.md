@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Custom settings for iOS devices
+# Intune custom settings for iOS devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

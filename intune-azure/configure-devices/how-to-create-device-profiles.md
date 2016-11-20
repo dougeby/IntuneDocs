@@ -47,7 +47,6 @@ ms.suite: ems
 		-  [Certificate settings](/intune-azure/configure-devices/how-to-configure-certificates)
 		-  [Windows Information Protection settings](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
 		-  [Education settings]()
-		-  [Preset settings]()
 		-  [Custom settings](/intune-azure/configure-devices/how-to-configure-custom-settings)
 4. Once you are done configuring settings, on the **Create Profile** blade, choose **Create**.
 

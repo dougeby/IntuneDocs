@@ -30,4 +30,10 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
+1. In the **Device Configuration** workload, choose **Manage** > **Profiles**.
+2. In the list of profiles blade, choose the profile you want to manage, and then, on the <*profile name*> **Reports** blade, choose **Manage** > **Assignments**.
+3. On the next blade, click **Select groups**, and then, in the **Select groups** blade, choose the Azure AD groups to which you want to assign the profile. You can hold down the **CTRL** key to select multiple groups.
+4. When you are done, on the **Select groups** blade, choose **Select**.
 
+
+See [How to monitor device profiles](how-to-monitor-device-profiles.md) for information to help you monitor device profile assignments.
