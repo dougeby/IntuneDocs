@@ -32,7 +32,7 @@ ms.suite: ems
 
 Depending on the settings you choose, not all values in the list below will be configurable.
 
-**Base VPN Settings**
+## Base VPN settings
 
 
 **Connection name** - Enter a name for this connection. End users will see this name when they browse their device for the list of available VPN connections.
@@ -49,11 +49,12 @@ Connection type
 
 Custom XML
 
-**Proxy settings**
 
-Automatically detect proxy settings
-Automatic configuration script
-Use proxy server
-Address
-Port number
-Bypass proxy for local addresses
+## Proxy settings
+
+- **Automatically detect proxy settings** - If your VPN server requires a proxy server for the connection, specify whether you want devices to automatically detect the connection settings. For more information, see your Windows Server documentation.
+- **Automatic configuration script** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) which contains the configuration file.
+- **Use proxy server** - Enable this option if you want to manually enter the proxy server settings.
+	- **Address** - Enter the proxy server address (as an IP address).
+	- **Port number** - Enter the port number associated with the proxy server.
+- **Bypass proxy for local addresses** - If your VPN server requires a proxy server for the connection, select this option if you do not want to use the proxy server for local addresses that you specify. For more information, see your Windows Server documentation.

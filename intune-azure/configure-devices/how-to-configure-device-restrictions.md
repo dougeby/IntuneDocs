@@ -44,7 +44,7 @@ Use the information in this topic to learn the basics about configuring device r
 	- **macOS**
 	- **Windows Phone 8.1**
 	- **Windows 10 and later**
-6. From the **Profile** type drop-down list, choose **Device restrictions** (if you want to create a device restrictions profile for Windows 10 Team devices like a Surface Hub, choose **Device restrictions (Windows 10 Team)**.
+6. From the **Profile** type drop-down list, choose **Device restrictions**. If you want to create a device restrictions profile for Windows 10 Team devices like a Surface Hub, choose **Device restrictions (Windows 10 Team)**.
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
 	- [Android settings](device-restrictions-for-android.md)
 	- [iOS settings](device-restrictions-for-ios.md)

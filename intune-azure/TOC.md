@@ -1,12 +1,12 @@
 # [Introduction](/intune-azure/introduction/what-is-microsoft-intune)
 ## [Introduction](/intune-azure/introduction/what-is-microsoft-intune)
-## [Get started](/intune-azure/introduction/get-started)
+<!---## [Get started](/intune-azure/introduction/get-started)
 ## [What's new](/intune-azure/introduction/whats-new)
 ## [Get support](/intune-azure/introduction/get-support)
 ## [Related resources](/intune-azure/introduction/related-resources)
 
 # [Plan and design](/intune-azure/plan-and-design/get-started)
-## [Get started](/intune-azure/plan-and-design/get-started)
+## [Get started](/intune-azure/plan-and-design/get-started) --->
 
 # [Enroll devices](/intune-azure/enroll-devices/what-is)
 ## [What is](/intune-azure/enroll-devices/what-is)
@@ -16,18 +16,18 @@
 ## [Troubleshoot](/intune-azure/enroll-devices/troubleshooting)
 
 # [Manage devices](/intune-azure/manage-devices/what-is)
-## [What is](/intune-azure/manage-devices/what-is)
-## [Get started](/intune-azure/manage-devices/get-started)
+## [What is device management](/intune-azure/manage-devices/what-is)
+<!--- ## [Get started](/intune-azure/manage-devices/get-started)
 ## [Plan and design](/intune-azure/manage-devices/plan-and-design)
 ## [How to](/intune-azure/manage-devices/how-to)
-## [Troubleshoot](/intune-azure/manage-devices/troubleshooting)
+## [Troubleshoot](/intune-azure/manage-devices/troubleshooting) --->
 
 # [Manage users](/intune-azure/manage-users/what-is)
 ## [What is](/intune-azure/manage-users/what-is)
-## [Get started](/intune-azure/manage-users/get-started)
+<!--- ## [Get started](/intune-azure/manage-users/get-started)
 ## [Plan and design](/intune-azure/manage-users/plan-and-design)
 ## [How to](/intune-azure/manage-users/how-to)
-## [Troubleshoot](/intune-azure/manage-users/troubleshooting)
+## [Troubleshoot](/intune-azure/manage-users/troubleshooting) --->
 
 # [Manage apps](/intune-azure/manage-apps/what-is)
 ## [What is app management](/intune-azure/manage-apps/what-is)
@@ -47,9 +47,9 @@
 ## [Troubleshoot apps](/intune-azure/manage-apps/troubleshooting)
 
 # [Configure devices](/intune-azure/configure-devices/what-is)
-## [What is device configuration](/intune-azure/configure-devices/what-is)
-## [Get started](/intune-azure/configure-devices/get-started)
-## [Plan and design](/intune-azure/configure-devices/plan-and-design)
+## [What are device profiles](/intune-azure/configure-devices/what-are-device-profiles)
+<!---## [Get started](/intune-azure/configure-devices/get-started)
+## [Plan and design](/intune-azure/configure-devices/plan-and-design) --->
 ## [How to work with device profiles](/intune-azure/configure-devices/how-to-create-device-profiles)
 ### [How to configure device profiles](/intune-azure/configure-devices/how-to-create-device-profiles)
 ### [How to configure device restrictions](/intune-azure/configure-devices/how-to-configure-device-restrictions)
@@ -96,6 +96,8 @@
 #### [Custom settings for macOS devices](/intune-azure/configure-devices/custom-for-macos)
 #### [Custom settings for Windows Phone 8.1 devices](/intune-azure/configure-devices/custom-for-windows-phone-8-1)
 #### [Custom settings for Windows 10 devices](/intune-azure/configure-devices/custom-for-windows-10)
+### [How to assign device profiles](/intune-azure/configure-devices/how-to-assign-device-profiles)
+### [How to monitor device profiles](/intune-azure/configure-devices/how-to-monitor-device-profiles)
 ## [Troubleshoot](/intune-azure/configure-devices/troubleshooting)
 
 # [Set device compliance](/intune-azure/set-device-compliance/what-is)

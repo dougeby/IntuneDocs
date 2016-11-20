@@ -32,7 +32,7 @@ ms.suite: ems
 
 Depending on the settings you choose, not all values in the list below will be configurable.
 
-## **Base VPN Settings**
+## Base VPN settings
 
 
 **Connection name** - Enter a name for this connection. End users will see this name when they browse their device for the list of available VPN connections.

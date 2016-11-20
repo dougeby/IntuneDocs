@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure device settings and features with Microsoft Intune | Microsoft Docs
+title: What are device profiles in Microsoft Intune | Microsoft Docs
 description: 
 keywords:
 author: robstackmsftms.author: robstack
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Configure device settings and features with Microsoft Intune
+# Configure device settings and features with device profiles in Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
