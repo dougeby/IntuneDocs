@@ -6,6 +6,7 @@ description:
 keywords:
 author: Msmbaldwin
 manager: jeffgilb
+ms.author: oydang
 ms.date: 09/08/2016
 ms.topic: article
 ms.prod:
@@ -88,10 +89,18 @@ To integrate the Intune App SDK into your native Android app, you will need the 
 
 * **[Intune App SDK for Android Developer Guide](intune-app-sdk-android.md)**: This document will walk you step-by-step through enabling your mobile Android app with the Intune App SDK.
 
-You can find documentation for the Intune App SDK Xamarin Component and Intune App SDK Cordova Plugin in their respective GitHub repositories.
+To build Cordova apps with the Intune App SDK Cordova Plugin, you will need the following:
+
+* **[Intune App SDK Cordova Plugin guide](intune-app-sdk-cordova)**: This document will help you build iOS and Android apps using Cordova for Intune mobile application management.
+
+To build Xamarin apps with the Intune App SDK Xamarin Component, you will need the following:
+
+* **[Intune App SDK Xamarin Component guide](intune-app-sdk-xamarin)**: This document will help you build iOS and Android apps using Cordova for Intune mobile application management.
 
 
-## Set up telemetry for your app
+
+
+## Configure Telemetry for your app
 
 Microsoft Intune collects data on usage statistics for your app.
 
