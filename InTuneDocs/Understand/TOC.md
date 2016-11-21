@@ -1,4 +1,4 @@
-# [Understand and Explore](introduction-to-microsoft-intune.md)
+# Understand and Explore
 ## [Introduction to Intune](introduction-to-microsoft-intune.md)
 ## [Intune evaluation guide](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ### [Sign in or sign up for a 30-day evaluation](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
