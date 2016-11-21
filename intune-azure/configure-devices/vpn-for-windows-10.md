@@ -57,7 +57,7 @@ Depending on the settings you choose, not all values in the list below will be c
 
 **Login group or domain** (Dell SonicWALL Mobile Connect only) - Specify the name of the login group or domain that you want to connect to. 
 
-**Custom XML** - Specify any custom XML commands that configure the VPN connection.
+**Custom XML**/**EAP XML** - Specify any custom XML commands that configure the VPN connection.
 Example for Pulse Secure:
 ```
 <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
@@ -84,14 +84,12 @@ Example for F5 Edge Client:
 
 Refer to each manufacturer's VPN documentation for more information about how to write custom XML commands.
 
-**EAP XML** (Automatic, IKEv2, L2TP and PPTP only) - 
-
 **Split tunneling** - **Enable** or **Disable** this option which lets devices decide which connection to use depending on the traffic. For example, a user in a hotel will use the VPN connection to access work files, but use the hotel's standard network for regular web browsing.
-- **Split tunneling routes for this VPN connection** - 
+- **Split tunneling routes for this VPN connection** - Add optional routes for third-party VPN providers. Specify a destination prefix, and a prefix size for each.
 
 ## Apps and Traffic Rules
 
-**Restrict VPN connection to these apps** - 
+**Restrict VPN connection to these apps** - Enable this option if you only want apps you specify to use the VPN connection.
 **Associated Apps** - Provide a list of apps that will automatically use the VPN connection. The type of app will determine the app identifier. For a universal app, provide the package family name. For a desktop app, provide the file path of the app.
 
 >[!IMPORTANT] We recommend that you secure all lists of apps that you compile for use in configuration of per-app VPN. If an unauthorized user modifies your list and you import it into the per-app VPN app list, you will potentially authorize VPN access to apps that should not have access. One way you can secure app lists is by using an access control list (ACL).
@@ -108,12 +106,11 @@ Refer to each manufacturer's VPN documentation for more information about how to
 
 ## DNS Settings
 
-**DNS names and servers for this VPN connection** - 
-
-
-**DNS Name** - 
-**DNS Server** - 
-- **Proxy** - 
+**DNS names and servers for this VPN connection** - Select which DNS servers the VPN connection will use after the connection is established.
+For each server. specify:
+- **DNS Name** 
+- **DNS Server** 
+- **Proxy** 
 
 ## Proxy settings
 

@@ -46,9 +46,11 @@ ms.suite: ems
 		-  [Windows 10 edition upgrade settings](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
 		-  [Certificate settings](/intune-azure/configure-devices/how-to-configure-certificates)
 		-  [Windows Information Protection settings](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-		-  [Education settings]()
+		-  [Education settings](/intune-azure/configure-devices/education-settings-for-ios.md)
 		-  [Custom settings](/intune-azure/configure-devices/how-to-configure-custom-settings)
 4. Once you are done configuring settings, on the **Create Profile** blade, choose **Create**.
 
 The new profile is created on the list of profiles blade.
+
+For information about how to assign device profiles, see [How to assign device profiles with Microsoft Intune](/intune-azure/configure-devices/how-to-assign-device-profiles).
 
