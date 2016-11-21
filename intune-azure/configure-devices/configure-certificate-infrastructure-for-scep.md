@@ -125,15 +125,15 @@ In this task you will:
 
 Here are screenshots of an example template configuration.
 
-![Template, request handling tab](..\media\scep_ndes_request_handling.png) 
+![Template, request handling tab](.\media\scep_ndes_request_handling.png) 
 
-![Template, subject name tab](..\media\scep_ndes_subject_name.jpg) 
+![Template, subject name tab](.\media\scep_ndes_subject_name.jpg) 
 
-![Template, security tab](..\media\scep_ndes_security.jpg) 
+![Template, security tab](.\media\scep_ndes_security.jpg) 
 
-![Template, extensions tab](..\media\scep_ndes_extensions.jpg) 
+![Template, extensions tab](.\media\scep_ndes_extensions.jpg) 
 
-![Template, issuance requirements tab](..\media\scep_ndes_issuance_reqs.jpg) 
+![Template, issuance requirements tab](.\media\scep_ndes_issuance_reqs.jpg) 
 
 >   [!IMPORTANT]
     > For Application Policies (in the 4th screenshot), only add the application policies required. Confirm your choices with your security admins.

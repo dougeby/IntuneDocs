@@ -45,9 +45,47 @@ Depending on the settings you choose, not all values in the list below will be c
 - **Import** - Browse to a file containing a comma-seperated list of servers in the format description, IP address or FQDN, Default server. Choose **OK** to import these into the **Servers** list.
 - **Export** - Exports the list of servers to a comma-seperated-values (csv) file.
 
-Connection type
+**Connection type** - Select the VPN connection type from the following list of vendors:
+- **Check Point Capsule VPN**
+- **Dell SonicWALL Mobile Connect**
+- **F5 Edge Client**
+- **Pulse Secure**
 
-Custom XML
+**Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) 
+
+**Login group or domain** (Dell SonicWALL Mobile Connect only) - Specify the name of the login group or domain that you want to connect to. 
+
+**Role** (Pulse Secure only) - Specify the name of the user role that has access to this connection. A user role defines personal settings and options, and it enables or disables certain access features. 
+
+**Realm** (Pulse Secure only) - Specify the name of the authentication realm that you want to use. An authentication realm is a grouping of authentication resources that the Pulse Secure connection type uses.
+
+
+**Custom XML** - Specify any custom XML commands that configure the VPN connection.
+Example for Pulse Secure:
+```
+<pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
+
+```
+
+Example for CheckPoint Mobile VPN:
+```
+<CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
+
+``` 
+
+Example for Dell SonicWALL Mobile Connect:
+```
+<MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
+
+```
+
+Example for F5 Edge Client:
+```
+<f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
+
+``` 
+
+Refer to each manufacturer's VPN documentation for more information about how to write custom XML commands.
 
 
 ## Proxy settings

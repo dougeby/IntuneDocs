@@ -55,7 +55,7 @@ To use .PFX Certificate profiles, in addition to the Enterprise Certification Au
     For information about certificates for WAP, see the **Plan certificates** section of [Planning to Publish Applications Using Web Application Proxy](https://technet.microsoft.com/library/dn383650.aspx). For general information about WAP servers, see [Working with Web Application Proxy](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
-### Certificates and Templates
+## Certificates and Templates
 
 |Object|Details|
 |----------|-----------|
@@ -69,10 +69,10 @@ Before you can configure certificate profiles, you must complete the following t
 - **Task 1** - Configure certificate templates on the certification authority.
 - **Task 2** - Enable, install, and configure the Intune Certificate Connector.
 
-### Task 1 - Configure certificate templates on the certification authority
+## Task 1 - Configure certificate templates on the certification authority
 In this task, you will publish the certificate template.
 
-##### To configure the certification authority
+### To configure the certification authority
 
 1.  On the issuing CA, use the Certificate Templates snap-in to create a new custom template, or copy and edit an existing template (like the User template), for use with .PFX.
 
@@ -108,30 +108,25 @@ In this task, you will publish the certificate template.
 
 4.  On the CA computer, ensure that the computer that hosts the Intune Certificate Connector has enroll permission, so that it can access the template used in creating the .PFX profile. Set that permission on the **Security** tab of the CA computer properties.
 
-### Task 2 - Enable, install, and configure the Intune Certificate Connector
+## Task 2 - Enable, install, and configure the Intune Certificate Connector
 In this task you will:
 
 Download, install, and configure the Certificate Connector.
 
-##### To enable support for the Certificate Connector
+### To enable support for the Certificate Connector
 
-1.  Open the [Intune administration console](https://manage.microsoft.com), and choose **Admin** &gt; **Certificate Connector**.
+1.  In the **Device Configuration** workflow, choose **Setup** > **Certificate Authority**.
 
-2.  Choose **Configure On-Premises Certificate Connector**.
+2.  Under **Step 1**, choose **Enable**.
 
-3.  Select **Enable Certificate Connector**, and then choose **OK**.
+### To download, install, and configure the Certificate Connector
 
-##### To download, install, and configure the Certificate Connector
-
-1.  Open the [Intune administration console](https://manage.microsoft.com), and then choose **Admin** &gt; **Mobile Device Management** &gt; **Certificate Connector** &gt; **Download Certificate Connector**.
-
+1.  In the **Device Configuration** workflow, choose **Setup** > **Certificate Authority**.
+2.  choose **Download the certificate connector**.
 2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**).
-
   Run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option, and then choose **Install**. When the installation has completed, continue by creating a certificate profile as described in [Configure certificate profiles](configure-intune-certificate-profiles.md).
 
-   <!-- Not sure about step 3 below -->
-
-3.  When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed in Task 3.
+3.  When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed.
 
     After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, choose **Next** to view the properties of that certificate. Then choose **Next**, and then **Install**.
 
@@ -161,4 +156,4 @@ To validate that the service is running, open a browser and enter the following 
 **http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
 ### Next steps
-You are now ready to set up certificate profiles, as described in [Configure certificate profiles](how-to-configure-certificates.md).
+You are now ready to set up certificate profiles, as described in [How to configure certificates with Microsoft Intune](how-to-configure-certificates.md).

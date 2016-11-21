@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# VPN settings for Android devices
+# Intune VPN settings for Android devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
