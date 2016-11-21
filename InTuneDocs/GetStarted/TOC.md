@@ -26,7 +26,6 @@
 ### [Pilot](pilot.md)
 ### [Enterprise rollout](enterprise-rollout.md)
 ### [Operations and maintenance](operations-and-maintenance.md)
-<!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Develop and Customize Apps](/intune/develop/intune-app-sdk)
