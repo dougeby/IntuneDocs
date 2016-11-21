@@ -1,6 +1,6 @@
 # [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
 
-# [Get Started](what-to-know-before-you-start-microsoft-intune.md)
+# Get Started
 ## [What to know before you start](what-to-know-before-you-start-microsoft-intune.md)
 ### [Supported mobile devices and computers](supported-mobile-devices-and-computers.md)
 ### [Supported web browsers](supported-web-browsers.md)
@@ -28,7 +28,7 @@
 ### [Enroll mobile devices & install an app](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Post configuration tasks](post-configuration-tasks.md)
 
-## [Quick guides](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+## Quick guides
 ### [Quick guide: Prevent company data leaks from Office 365 mobile apps](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Quick guide: Protect company data with data encryption](protect-data-encryption.md)
 ### [Quick guide: Publish mobile apps to your users](publish-mobile-apps-to-users.md)
