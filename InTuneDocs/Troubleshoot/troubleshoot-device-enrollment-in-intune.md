@@ -17,7 +17,7 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 # optional metadata
 
 #ROBOTS:
-#audience:
+#audience:+
 #ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
@@ -53,16 +53,16 @@ Your managed device users can collect enrollment and diagnostic logs for you to 
 ## General enrollment issues
 These issues may occur on all device platforms.
 
-### Device Cap reached
+### Device cap reached
 **Issue:** A user receives an error on their device during enrollment, such as a **Company Portal Temporarily Unavailable** error on an iOS device, and the DMPdownloader.log on Configuration Manager contains the error **DeviceCapReached**.
 
-**Resolution:** By design, users can enroll no more than 5 devices.
+**Resolution:**
 
 #### Check number of devices enrolled and allowed
 
-1.  Validate in the Intune admin portal that the user has no more than 5 devices assigned
+1.  Validate in the Intune admin portal that the user has no more than the allowable maximum of 15 devices assigned.
 
-2.  Check in the Intune admin portal under Admin\Mobile Device Management\Enrollment Rules that the Device enrollment limit is set to 5
+2.  Check in the Intune admin console under Admin\Mobile Device Management\Enrollment Rules that the Device enrollment limit is set to 15.
 
 Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
@@ -72,7 +72,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 1.  Browse to [http://aka.ms/accessaad](http://aka.ms/accessaad) or choose **Admin** &gt; **Azure AD** from [https://portal.office.com](https://portal.office.com).
 
-2.  Login with your Org ID using the link on the left side of the page.
+2.  Log in with your Org ID using the link on the left side of the page.
 
 3.  Create an Azure Subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).
 
@@ -95,7 +95,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 ### Company Portal Temporarily Unavailable
 **Issue:** A user receives a **Company Portal Temporarily Unavailable** error on their device.
 
-#### Troubleshooting Company Portal Temporarily Unavailable error
+**Resolution:**
 
 1.  Remove the Intune Company Portal app from the device.
 
@@ -110,7 +110,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 ### MDM authority not defined
 **Issue:** A user receives an **MDM authority not defined** error.
 
-#### Troubleshooting MDM authority not defined error
+**Resolution:**
 
 1.  Verify that the MDM Authority has been set appropriately for the version of the Intune service you are using  , that is, for Intune, O365 MDM, or System Center Configuration Manager with Intune. For Intune,  the MDM Authority is set in **Admin** &gt; **Mobile Device Management**. For Configuration Manager with Intune, you set it when configuring the Intune connector, and in O365 it's a setting **Mobile Devices**.
 
@@ -160,16 +160,65 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 
 ## Android issues
+### Devices fail to check in with the Intune service and display as "Unhealthy" in the Intune admin console
+**Issue:** Some Samsung devices that are running Android versions 4.4.x and 5.x might stop checking in with the Intune service. If devices don't check in:
+
+- They can't receive policy, apps, and remote commands from the Intune service.
+- They show a Management State of **Unhealthy** in the administrator console.
+- Users who are protected by conditional access policies might lose access to corporate resources.
+
+Samsung has confirmed that the Samsung Smart Manager software, which ships on certain Samsung devices, can deactivate the Intune Company Portal and its components. When Company Portal is in a deactivated state, it can't run in the background and therefore can't contact the Intune service.
+
+**Resolution #1:**
+
+Tell your users to start the Company Portal app manually. Once the app restarts, the device checks in with the Intune service.
+
+> [!IMPORTANT]
+> Opening the Company Portal app manually is a temporary solution, because Samsung Smart Manager may deactivate the Company Portal app again.
+
+**Resolution #2:**
+
+Tell your users to try upgrading to Android 6.0. The deactivation issue doesn't occur on Android 6.0 devices. To check if an update is available, users can go to **Settings** > **About device** > **Download updates manually**, and follow the prompts on the device.
+
+**Resolution #3:**
+
+If Resolution #2 doesn't work, have your users follow these steps to make Smart Manager exclude the  Company Portal app:
+
+1. Launch the Smart Manager app on the device.
+
+  ![Select Smart Manager icon on device](./media/smart-manager-app-icon.png)
+
+2. Choose the **Battery** tile.
+
+  ![Select the Battery tile](./media/smart-manager-battery-tile.png)
+
+3. Under **App power saving** or **App optimization**, select **Detail**.
+
+  ![Select Detail under App power saving or App optimization](./media/smart-manager-app-power-saving-detail.png)
+
+4. Choose **Company Portal** from the list of apps.
+
+  ![Select Company Portal from the apps list](./media/smart-manager-company-portal.png)
+
+5. Choose **Turned off**.
+
+  ![Select Turned off from App optimization dialog](./media/smart-manager-app-optimization-turned-off.png)
+
+6. Under **App power saving** or **App optimization**, confirm that Company Portal is turned off.
+
+  ![Verify that Company Portal is turned off](./media/smart-manager-verify-comp-portal-turned-off.png)
+
+
 ### Profile installation failed
 **Issue:** A user receives a **Profile installation failed** error on an Android device.
 
-### Troubleshooting steps for failed profile installation
+**Resolution:**
 
 1.  Confirm that the user has been assigned an appropriate license for the version of the Intune service you are using.
 
 2.  Confirm that the device is not already enrolled with another MDM provider or that it does not already have a management profile installed.
 
-4.  Confirm that Chrome for Android is the default browser and that cookies are enabled.
+3.  Confirm that Chrome for Android is the default browser and that cookies are enabled.
 
 ### Android certificate issues
 
