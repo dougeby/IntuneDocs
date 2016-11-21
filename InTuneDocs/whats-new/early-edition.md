@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,7 +51,7 @@ If you have any questions about the timeline for your tenant’s migration, cont
 You can now enforce MFA when a select group of users enroll an iOS, Android, Windows 8.1 or later, or Windows Phone 8.1 or later device from the Azure Management Portal by configuring MFA on Enrollment in the Microsoft Intune Enrollment application.
 
 ### Conditional access for MAM with SharePoint Online <!--VSO 679339-->
-You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint Online.  You can get started using Intune mobile app management in the Azure portal. Look for the __Conditional Access__ section in the __Settings__ blade which will include the option for SharePoint Online. This feature will ship separately from the rest of the service release; look for it to turn on in late December.
+You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint Online.  You can get started using Intune mobile app management in the Azure portal. Look for the __Conditional Access__ section in the __Settings__ blade which will include the option for SharePoint Online. This feature will ship separately from the rest of the service release.
 
 ### Telecom expense management integration <!--747605-->
 You can now integrate with certain third-party telecom expense management services and use Intune to enforce limits on domestic and roaming data usage.
@@ -77,7 +77,7 @@ The Company Portal app for Android uses Google Play Services to communicate with
 ## Deprecations
 
 ### Removal of Exchange Online mobile inbox policies <!--770687-->
-Beginning in December, admins will no longer be able to view or configure Exchange Online (EAS) mobile mailbox policies within the Intune console. This change will roll out to all Intune tenants over December and January. All existing policies will stay as configured; for configuring new policies, use the Exchange Management Shell. Find out more information [here]( https://technet.microsoft.com/en-us/library/bb123783%28v=exchg.150%29.aspx).
+Beginning in December, admins will no longer be able to view or configure Exchange Online (EAS) mobile mailbox policies within the Intune console. This change will roll out to all Intune tenants over December and January. All existing policies will stay as configured; for configuring new policies, use the Exchange Management Shell. Find out more information [here](https://technet.microsoft.com/en-us/library/bb123783%28v=exchg.150%29.aspx).
 
 ### Intune AV Player, Image Viewer, and PDF Viewer apps are no longer supported on Android <!--747553-->
 From mid-December 2016 on, users will no longer be able to use the Intune AV Player, Image Viewer, and PDF Viewer apps. These apps have been replaced with the Azure Information Protection app. Find out more about the Azure Information Protection app [here](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq).
