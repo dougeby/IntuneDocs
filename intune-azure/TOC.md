@@ -23,11 +23,11 @@
 ## [Troubleshoot](/intune-azure/manage-devices/troubleshooting) --->
 
 # [Manage users](/intune-azure/manage-users/what-is)
-## [What is](/intune-azure/manage-users/what-is)
+## [What is users and groups management](/intune-azure/manage-users/what-is)
 <!--- ## [Get started](/intune-azure/manage-users/get-started)
-## [Plan and design](/intune-azure/manage-users/plan-and-design)
-## [How to](/intune-azure/manage-users/how-to)
-## [Troubleshoot](/intune-azure/manage-users/troubleshooting) --->
+## [Plan and design](/intune-azure/manage-users/plan-and-design) --->
+## [How to use device group mapping](/intune-azure/manage-users/how-to-use-device-group-mapping)
+<!--- ## [Troubleshoot](/intune-azure/manage-users/troubleshooting) --->
 
 # [Manage apps](/intune-azure/manage-apps/what-is)
 ## [What is app management](/intune-azure/manage-apps/what-is)
