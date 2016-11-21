@@ -6,7 +6,7 @@ description: This topic provides guidance for administrators ready to deploy Mic
 keywords:
 author: nathbarn
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

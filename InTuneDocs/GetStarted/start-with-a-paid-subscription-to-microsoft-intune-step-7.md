@@ -2,11 +2,11 @@
 # required metadata
 
 title: Customize the Company Portal | Microsoft Intune
-description: Customize the Company Portal for your Intune subscription
+description: Intune Company Portal lets users do common tasks like enroll devices, install apps, and find IT department info.
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Enroll mobile devices and install an app | Microsoft Intune
-description: Enroll mobile devices and install an app on an Intune-enrolled device
+title: Enable device enrollment | Microsoft Intune
+description: Set MDM authority and enable enrollment for iOS, Windows, Android, and Mac devices.
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,7 +48,7 @@ Enrollment must be enabled for iOS, Mac, and Android for Work devices establishi
 
 Enable device enrollment for the device platform you want to manage. Depending on your platform, different requirements are needed:
 
--  [iOS and Mac OS X](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS and macOS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
 -  [Window PC](set-up-windows-device-management-with-microsoft-intune.md)
 -  [Window 10 Mobile and Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)

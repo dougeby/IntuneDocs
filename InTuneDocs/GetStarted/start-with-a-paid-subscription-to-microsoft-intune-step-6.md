@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Create policies and publish an app | Microsoft Intune
-description: Create policies and publish an example app for your Intune subscription
+title: Deploy policies and apps | Microsoft Intune
+description: You can enable policy settings and deploy apps that will be applied as soon as devices are enrolled into management.
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
