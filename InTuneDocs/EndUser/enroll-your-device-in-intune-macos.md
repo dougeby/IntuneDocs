@@ -7,7 +7,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/16/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,13 +29,14 @@ ms.suite: ems
 # Enroll your macOS device in Intune
 
 Getting access to your organization’s apps, data, and resources makes it possible for you to do your job. If you're using a macOS device at work, this means installing a __Management Profile__. This is simply a file set up by your IT administrator that loads settings and access information onto your Mac. Want to know more? Find out [what happens when you install the Company Portal app and enroll your device in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+
   > [!NOTE]
   > If you're actually trying to enroll an iOS device, such as an iPhone or iPad, [try these instructions instead](enroll-your-device-in-intune-ios.md).
 
 1. On your __Dock__, find __Safari__ and open a new window, then open the [Company Portal website](http://portal.manage.microsoft.com).
 2. Log into the Company Portal website with your work or school account.
 
-[!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
+  [!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
 3. When you log in, you will see any available __Apps__, __My Devices__, and any available __contact information__ for your IT staff. At the top of the page, you'll see a notice that says **Either this device isn't enrolled, or the Company Portal can't identify it. <u>Tap Here</u> to select a different device.** Click __Tap Here__.
 
