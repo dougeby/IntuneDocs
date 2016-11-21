@@ -2,8 +2,8 @@
 # [Get Started](get-started.md)
 ## [Quick start Guide](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Prerequisites](what-to-know-before-you-start-microsoft-intune.md)
-### [Supported mobile devices and computers](supported-mobile-devices-and-computers.md)
-### [Network bandwidth usage](network-bandwidth-use.md)
+#### [Supported mobile devices and computers](supported-mobile-devices-and-computers.md)
+#### [Network bandwidth usage](network-bandwidth-use.md)
 ### [Sign in to Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configure a custom domain name](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Synchronize AD and add users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
@@ -20,14 +20,12 @@
 ### [Publish mobile apps to your users](publish-mobile-apps-to-users.md)
 ### [Simplify email configuration on mobile devices](simplify-email-configuration-on-mobile-devices.md)
 ### [Protect Windows PCs against malware threats](protect-pcs-against-malware-threats.md)
-
 ## [Phases of Intune deployment](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Project scope](project-scope.md)
 ### [Proof of concept](proof-of-concept.md)
 ### [Pilot](pilot.md)
 ### [Enterprise rollout](enterprise-rollout.md)
 ### [Operations and maintenance](operations-and-maintenance.md)
-
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
