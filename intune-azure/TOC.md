@@ -31,9 +31,9 @@
 
 # [Manage apps](/intune-azure/manage-apps/what-is)
 ## [What is app management](/intune-azure/manage-apps/what-is)
-## [Get started](/intune-azure/manage-apps/get-started)
-## [Plan and design](/intune-azure/manage-apps/plan-and-design)
-## [How to add and deploy apps](/intune-azure/manage-apps/how-to)
+<!--- ## [Get started](/intune-azure/manage-apps/get-started)
+## [Plan and design](/intune-azure/manage-apps/plan-and-design) --->
+## [How to add and deploy apps](/intune-azure/manage-apps/add-apps)
 ### [Add apps](/intune-azure/manage-apps/add-apps)
 ### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
 ### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
@@ -43,8 +43,8 @@
 ## [How to work with volume-purchased apps](/intune-azure/manage-apps/volume-purchased-apps)
 ### [iOS VPP apps](/intune-azure/manage-apps/ios-vpp-apps)
 ### [Windows Store for Business apps](/intune-azure/manage-apps/wsfb-apps)
-## [How to configure the Company Portal app](/intune-azure/manage-apps/)
-## [Troubleshoot apps](/intune-azure/manage-apps/troubleshooting)
+## [How to configure the Company Portal app](/intune-azure/manage-apps/company-portal-app)
+## <!--- [Troubleshoot apps](/intune-azure/manage-apps/troubleshooting) --->
 
 # [Configure devices](/intune-azure/configure-devices/what-are-device-profiles)
 ## [What are device profiles](/intune-azure/configure-devices/what-are-device-profiles)
