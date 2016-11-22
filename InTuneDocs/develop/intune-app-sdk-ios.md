@@ -35,9 +35,9 @@ The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection 
 
 ## Prerequisites
 
-* You will need a Mac OS computer that runs OS X 10.8.5 or later and has the XCode toolset version 5 or later installed.
+* You will need a Mac OS computer that runs OS X 10.8.5 or later and has the Xcode toolset version 5 or later installed.
 
-* Review the [Intune App SDK for iOS License Terms](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Print and retain a copy of the license terms for your records. By downloading and using Intune App SDK for iOS you agree to such license terms.  If you do not accept them, do not use the software.
+* Review the [Intune App SDK for iOS License Terms](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Print and retain a copy of the license terms for your records. By downloading and using the Intune App SDK for iOS, you agree to such license terms.  If you do not accept them, do not use the software.
 
 ## What’s in the SDK
 
@@ -66,7 +66,7 @@ This guide covers the use of the following components of the Intune App SDK for 
 
 The objective of the Intune App SDK for iOS is to add management capabilities to iOS applications with minimal code changes. The fewer the code changes, the less time to market--without affecting the consistency and stability of your mobile application.
 
-The application needs to be linked to the static library and must include the resource bundle. The MAMDebugSettings.plist file is optional and can be included in the package to simulate MAM policies being applied to the application without requiring you to deploy the application via Microsoft Intune. Additionally, in debug builds, you can apply the policies in the MAMDebugSettings.plist file by transferring the file to the app’s Documents directory via iTunes file sharing.
+The application needs to be linked to the static library and must include the resource bundle. The MAMDebugSettings.plist file is optional. It can be included in the package to simulate MAM policies being applied to the application without requiring you to deploy the application via Microsoft Intune. Additionally, in debug builds, you can apply the policies in the MAMDebugSettings.plist file by transferring the file to the app’s Documents directory via iTunes file sharing.
 
 ## Build the SDK into your mobile app
 
@@ -76,7 +76,7 @@ To enable the Intune App SDK, follow these steps:
     ![Intune App SDK iOS: linked frameworks and libraries](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
 	> [!NOTE]
-	> If you plan to release your app to the App Store, please use the version of `libIntuneMAM.a` that is built for release and not the debug version. The release version will be in the “release” folder. The debug version has verbose output that helps troubleshoot issues with the Intune App SDK.
+	> If you plan to release your app to the App Store, please use the version of `libIntuneMAM.a` that is built for release and not the debug version. The release version will be in the **release** folder. The debug version has verbose output that helps troubleshoot problems with the Intune App SDK.
 
     **Option 2**: Link `IntuneMAM.framework` to your project. Drag `IntuneMAM.framework` to the **Linked Frameworks and Libraries** list of the project target.
 
@@ -136,7 +136,9 @@ To enable the Intune App SDK, follow these steps:
     If you're using the UI to create the keychain access group:
 
     a. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
-    b. Add the shared keychain group `com.microsoft.intune.mam`. The Intune App SDK uses this access group to store data.  
+
+    b. Add the shared keychain group `com.microsoft.intune.mam`. The Intune App SDK uses this access group to store data.
+
     c. Add `com.microsoft.adalcache` to your existing access groups.
 
 	![Intune App SDK iOS: keychain sharing](../media/intune-app-sdk-ios-keychain-sharing.png)
@@ -184,15 +186,15 @@ The Intune App SDK currently uses the broker branch of [ADAL on GitHub](https://
 
 Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` build configuration setting or **Other Linker Flags** in the UI. `PATH_TO_LIB` should be replaced with the location of the ADAL binaries. Also, make sure to copy the ADAL bundle to your app.  
 
-For more detail, see the instructions from [ADAL on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
+For more details, see the instructions from [ADAL on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
 **How do I share the ADAL cache with other apps signed with the same provisioning profile?**
 
 If your app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 
-Enable ADAL SSO by adding `com.microsoft.adalcache` and `com.microsoft.workplacejoin` access groups in the keychain entitlements.
+Enable ADAL single sign-on (SSO) by adding `com.microsoft.adalcache` and `com.microsoft.workplacejoin` access groups in the keychain entitlements.
 
-If you are explicitly setting the ADAL shared cache keychain group, make sure it is set to `<app_id_prefix>.com.microsoft.adalcache`. ADAL will set this for you unless you override it. If you want to specify a custom keychain group to replace `com.microsoft.adalcache`, specify that in the Info.plist file under "IntuneMAMSettings," by using the key `ADALCacheKeychainGroupOverride`.
+If you are explicitly setting the ADAL shared cache keychain group, make sure it is set to `<app_id_prefix>.com.microsoft.adalcache`. ADAL will set this for you unless you override it. If you want to specify a custom keychain group to replace `com.microsoft.adalcache`, specify that in the Info.plist file under IntuneMAMSettings, by using the key `ADALCacheKeychainGroupOverride`.
 
 **How do I force the Intune App SDK to use ADAL settings that my app already uses?**
 
@@ -215,10 +217,10 @@ For a runtime environment switch, set `com.microsoft.intune.mam.useppe` in stand
 
 **How do I override the Azure AD authority URL with a tenant-specific URL supplied at runtime?**
 
-Set the `aadAuthorityUriOverride` property on IntuneMAMPolicyManager instance.
+Set the `aadAuthorityUriOverride` property on the IntuneMAMPolicyManager instance.
 
 > [!NOTE]
-> You would need this in the MAM without device enrollment scenario to let the SDK reuse the ADAL refresh token fetched by the app.
+> You would need this in the scenario of MAM without device enrollment to let the SDK reuse the ADAL refresh token fetched by the app.
 
 The SDK will continue to use this authority URL for policy refresh and any subsequent enrollment requests, unless the value is cleared or changed.  So it's important to clear the value when a corporate user signs out of the app and reset it when a new corporate user signs in.
 
@@ -239,7 +241,7 @@ The Intune App SDK now provides the ability for iOS apps to receive MAM policies
 
 2. Add IntuneMAMEnrollment.h to any files that will call the APIs.
 
-3. To test against PPE, you can include use a compile-time or runtime switch.
+3. To test against PPE, you can use a compile-time or runtime switch.
 
 	For a compile-time environment switch of MAM service URLs and Azure AD, set the `UsePPE` Boolean flag to true in MAMEnvironment.plist. (Note that there is no support for doing this via Info.plist.)
 
@@ -248,7 +250,7 @@ The Intune App SDK now provides the ability for iOS apps to receive MAM policies
 
 ### Register accounts
 
-An app can receive MAM policies from the Intune service if the app is enrolled on behalf of a specified user account. It is the responsibility of the app to register any newly signed-in user with the Intune App SDK. After the new user account has been authenticated, the app should call the `registerAndEnrollAccount` method in Headers/IntuneMAMEnrollment.h:
+An app can receive MAM policies from the Intune service if the app is enrolled on behalf of a specified user account. The app is responsible for registering any newly signed-in user with the Intune App SDK. After the new user account has been authenticated, the app should call the `registerAndEnrollAccount` method in Headers/IntuneMAMEnrollment.h:
 
 ```objc
 /**
@@ -264,15 +266,17 @@ An app can receive MAM policies from the Intune service if the app is enrolled o
 ```
 By calling the `registerAndEnrollAccount` method, the SDK will register the user account and attempt to enroll the app on behalf of this account. If the enrollment fails for any reason, the SDK will automatically retry the enrollment 24 hours later. For debugging purposes, the app can receive notifications, via a delegate, about the results of any enrollment requests.
 
-After this API has been invoked, the application can continue functioning as normal. If the enrollment succeeds, the SDK will notify the user that an app restart is required. At that time, the user can immediately restart the app.
+After this API has been invoked, the application can continue to function as normal. If the enrollment succeeds, the SDK will notify the user that an app restart is required. At that time, the user can immediately restart the app.
 
 ### Deregister accounts
 
 Before a user is signed out of an app, the app should deregister the user from the SDK. This will ensure:
 
 1. Enrollment retries will no longer happen for the user’s account.
+
 2. If the user has successfully enrolled the application, the user and app will be unenrolled from the Intune MAM service, and MAM policies will be removed.
-3. Optionally, a selective wipe can be initiated to ensure that any work-related or school-related data is deleted.
+
+3. If the app initiates a selective wipe (optional), any work-related or school-related data is deleted.
 
 Before the user is signed out, the app should call the following API in Headers/IntuneMAMEnrollment.h:
 
@@ -302,7 +306,7 @@ If the app will delete the user’s work-related or school-related data on its o
 
 ## Enroll without prior sign-in
 
-An app that does not sign in the user with Azure Active Directory can still receive MAM policies from the Intune service by calling the API to have the SDK handle that authentication. Apps should use this technique when they have not authenticated a user with Azure AD but still need to retrieve MAM policies to protect data. An example is if another authentication service is being used for app sign-in, or if the app does not support signing in at all. To do this, the application should call the
+An app that does not sign in the user with Azure Active Directory can still receive MAM policies from the Intune service by calling the API to have the SDK handle that authentication. Apps should use this technique when they have not authenticated a user with Azure AD but still need to retrieve MAM policies to help protect data. An example is if another authentication service is being used for app sign-in, or if the app does not support signing in at all. To do this, the application should call the
 `loginAndEnrollAccount`  method in Headers/IntuneMAMEnrollment.h:
 
 ```objc
@@ -458,7 +462,7 @@ When a location is known to be "personal," apps should use the **IntuneMAMSaveLo
 
 The **IntuneMAMSaveLocationLocalDrive** constant should be used when the app is saving data to any location on the local device.
 
-## Configure the Intune App SDK settings
+## Set up the Intune App SDK
 
 You use the IntuneMAMSettings dictionary in the application’s Info.plist file to set up the Intune App SDK. The following table lists all supported settings.
 
@@ -478,8 +482,8 @@ MainNibFile<br>MainNibFile~ipad  | String  | This setting should have the applic
 MainStoryboardFile<br>MainStoryboardFile~ipad  | String  | This setting should have the application’s main storyboard file name. | Required if the application defines UIMainStoryboardFile in Info.plist.
 MAMPolicyRequired| Boolean| Specifies whether the app will be blocked from starting if the app does not have an Intune MAM policy. Defaults to NO.
 MAMPolicyWarnAbsent | Boolean| Specifies whether the app will warn the user during launch if the app does not have an Intune MAM policy. Note that apps cannot be submitted to the store with this setting set to YES. | Optional.
-MultiIdentity | Boolean| Specifies whether the app is multi-identity aware | Optional.
-SplashIconFile <br>SplashIconFile~ipad | String  | Specifies the Intune splash (startup) icon file. See the “Image files on startup” section for more details. | Optional.
+MultiIdentity | Boolean| Specifies whether the app is multi-identity aware. | Optional.
+SplashIconFile <br>SplashIconFile~ipad | String  | Specifies the Intune splash (startup) icon file. | Optional.
 SplashDuration | Number | Minimum amount of time, in seconds, that the Intune startup screen will be shown at application launch. Defaults to 1.5. | Optional.
 BackgroundColor| String| Specifies the background color for the startup and PIN screens. Accepts a hexadecimal RGB string in the form of #XXXXXX, where X can range from 0-9 or A-F. The pound sign might be omitted.   | Optional. Defaults to light grey.
 ForegroundColor| String| Specifies the foreground color for the startup and PIN screens, like text color. Accepts a hexadecimal RGB string in the form of #XXXXXX, where X can range from 0-9 or A-F. The pound sign might be omitted.  | Optional. Defaults to black.
@@ -489,10 +493,9 @@ MAMTelemetryUsePPE | Boolean | Specifies if the SDK will send data to the PPE ba
 
 ## Telemetry
 
-By default, the Intune App SDK for iOS logs telemetry data on usage events. This data is sent to Microsoft Intune. Data is logged on the following usage events:
+By default, the Intune App SDK for iOS logs telemetry data on the following usage events. This data is sent to Microsoft Intune.
 
 * **App launch**: To help Microsoft Intune learn about MAM-enabled app usage by management type (MAM with MDM, MAM without MDM enrollment, and so on).
-
 * **EnrollApplication API call**: To help Microsoft Intune learn about success rate and other performance metrics of `enrollApplication` calls from the client side.
 
 > [!NOTE]
@@ -510,40 +513,40 @@ Note that an identity is simply defined as a string. Identities are case-insensi
 
 An identity is simply the user name of an account (for example, user@contoso.com). Developers can set the identity of the app on the following levels:
 
-* **Process identity**: Sets the process-wide identity and is mainly used for single identity applications. This identity affects all operations, files, and UI.
-* **UI identity**: Determines what policies are applied to UI operations on the main thread, like cut/copy/paste, PIN, authentication, and data sharing. The UI identity does not affect file operations like encryption and backup.
-* **Thread identity**: Affects what policies are applied on the current thread. This identity affects all operations, files, and UI.
+* **Process identity**: Sets the process-wide identity and is mainly used for single identity applications. This identity affects all tasks, files, and UI.
+* **UI identity**: Determines what policies are applied to UI tasks on the main thread, like cut/copy/paste, PIN, authentication, and data sharing. The UI identity does not affect file tasks like encryption and backup.
+* **Thread identity**: Affects what policies are applied on the current thread. This identity affects all tasks, files, and UI.
 
 The app is responsible for setting the identities appropriately, whether or not the user is managed.
 
-At any time, every thread has an effective identity for UI operations and file operations. This is the identity that's used to check what policies, if any, should be applied. If the identity is "no identity" or the user is not managed, no policies will be applied.
+At any time, every thread has an effective identity for UI tasks and file tasks. This is the identity that's used to check what policies, if any, should be applied. If the identity is "no identity" or the user is not managed, no policies will be applied.
 
 ### Thread queues
 
-Apps often dispatch asynchronous and synchronous tasks to thread queues. The SDK intercepts Grand Central Dispatch (GCD) calls and associates the current thread identity with the dispatched tasks. When the tasks are finished, the SDK temporarily changes the thread identity to the identity associated with the task, finishes the tasks, then restores the original thread identity.
+Apps often dispatch asynchronous and synchronous tasks to thread queues. The SDK intercepts Grand Central Dispatch (GCD) calls and associates the current thread identity with the dispatched tasks. When the tasks are finished, the SDK temporarily changes the thread identity to the identity associated with the tasks, finishes the tasks, then restores the original thread identity.
 
 
 Because `NSOperationQueue` is built on top of GCD, `NSOperations` will run on the identity of the thread at the time the tasks are added to `NSOperationQueue`. `NSOperations` or functions dispatched directly through GCD can also change the current thread identity as they are running. This identity will override the identity inherited from the dispatching thread.
 
 ### File owner
 
-The SDK keeps track of local file owner identity and applies policies accordingly. The file owner is established when the file is created or when the file is opened in truncate mode. The owner is set to the effective file operation identity of the thread that's performing the operation.
+The SDK tracks the identities of local file owners and applies policies accordingly. A file owner is established when a file is created or when a file is opened in truncate mode. The owner is set to the effective file task identity of the thread that's performing the task.
 
-Alternatively, apps can set the file owner identity explicitly by using `IntuneMAMFilePolicyManager`. Apps can use `IntuneMAMFilePolicyManager` to retrieve the file owner and set the UI identity before displaying the file contents.
+Alternatively, apps can set the file owner identity explicitly by using `IntuneMAMFilePolicyManager`. Apps can use `IntuneMAMFilePolicyManager` to retrieve the file owner and set the UI identity before showing the file contents.
 
 ### Shared data
 
-If the app creates files that contain data from both managed and unmanaged users, the app is responsible for encrypting the managed user’s data. You can encrypt data by using the `protect` and `unprotect` APIs in `IntuneMAMDataProtectionManager`.
+If the app creates files that have data from both managed and unmanaged users, the app is responsible for encrypting the managed user’s data. You can encrypt data by using the `protect` and `unprotect` APIs in `IntuneMAMDataProtectionManager`.
 
 The `protect` method accepts an identity that can be a managed or unmanaged user. If the user is managed, the data will be encrypted. If the user is unmanaged, a header will be added to the data that's encoding the identity, but the data will not be encrypted. You can use the `protectionInfo` method to retrieve the data’s owner.
 
 ### Share extensions
 
-If the app contains a share extension, the owner of the item being shared can be retrieved through the  `protectionInfoForItemProvider` method in `IntuneMAMDataProtectionManager`. If the shared item is a file, the SDK will handle setting the file owner. If the shared item is data, the app is responsible for setting the file owner if this data is persisted to a file, and for calling the `setUIPolicyIdentity` API before displaying this data in the UI.
+If the app has a share extension, the owner of the item being shared can be retrieved through the  `protectionInfoForItemProvider` method in `IntuneMAMDataProtectionManager`. If the shared item is a file, the SDK will handle setting the file owner. If the shared item is data, the app is responsible for setting the file owner if this data is persisted to a file, and for calling the `setUIPolicyIdentity` API before showing this data in the UI.
 
 ### Turning on multi-identity
 
-By default, apps are considered single identity. The SDK sets the process identity to the enrolled user. To enable multi-identity support, add a Boolean setting with the name `MultiIdentity` and a value of YES to the **IntuneMAMSettings** dictionary in the app's Info.plist file.
+By default, apps are considered single identity. The SDK sets the process identity to the enrolled user. To enable multi-identity support, add a Boolean setting with the name `MultiIdentity` and a value of YES to the IntuneMAMSettings dictionary in the app's Info.plist file.
 
 > [!NOTE]
 > When multi-identity is enabled, the process identity, UI identity, and thread identities are set to nil. The app is responsible for setting them appropriately.
@@ -552,17 +555,17 @@ By default, apps are considered single identity. The SDK sets the process identi
 
 * **App-initiated identity switch**:
 
-	At launch, multi-identity apps are considered to be running under an unknown, unmanaged account. The conditional launch UI will not run, and no policies will be enforced on the app. The app is responsible for notifying the SDK whenever the identity should be changed. Typically, this will happen whenever the app is about to display data for a specific user account.
+	At launch, multi-identity apps are considered to be running under an unknown, unmanaged account. The conditional launch UI will not run, and no policies will be enforced on the app. The app is responsible for notifying the SDK whenever the identity should be changed. Typically, this will happen whenever the app is about to show data for a specific user account.
 
-	An example is when the user attempts to open a document, mailbox, or a tab in a notebook. The app needs to notify the SDK before the file, mailbox, or tab is actually opened. This is done through the `setUIPolicyIdentity` API in `IntuneMAMPolicyManager`. This API should be called whether or not the user is managed. If the user is managed, the SDK will perform the conditional launch checks (jailbreak detection, PIN, authentication, etc.).
+	An example is when the user attempts to open a document, a mailbox, or a tab in a notebook. The app needs to notify the SDK before the file, mailbox, or tab is actually opened. This is done through the `setUIPolicyIdentity` API in `IntuneMAMPolicyManager`. This API should be called whether or not the user is managed. If the user is managed, the SDK will perform the conditional launch checks, like jailbreak detection, PIN, and authentication.
 
-	The result of the identity switch is returned to the app asynchronously through a completion handler. The app should postpone opening the document, mailbox, tab, etc. until a success result code is returned. If the identity switch failed, the app should cancel the operation.
+	The result of the identity switch is returned to the app asynchronously through a completion handler. The app should postpone opening the document, mailbox, or tab until a success result code is returned. If the identity switch failed, the app should cancel the task.
 
 * **SDK-initiated identity switch**:
 
 	Sometimes, the SDK needs to ask the app to switch to a specific identity. Multi-identity apps must implement the `identitySwitchRequired` method in `IntuneMAMPolicyDelegate` to handle this request.
 
-	When this method is called, if the app is able to handle the request to switch to the specified identity, it should pass `IntuneMAMAddIdentityResultSuccess` into the completion handler. If it is unable to handle switching the identity, the app should pass `IntuneMAMAddIdentityResultFailed` into the completion handler.
+	When this method is called, if the app can handle the request to switch to the specified identity, it should pass `IntuneMAMAddIdentityResultSuccess` into the completion handler. If it can't handle switching the identity, the app should pass `IntuneMAMAddIdentityResultFailed` into the completion handler.
 
 	The app does not have to call `setUIPolicyIdentity` in response to this call. If the SDK needs the app to switch to an unmanaged user account, the empty string will be passed into the `identitySwitchRequired` call.
 
@@ -570,7 +573,7 @@ By default, apps are considered single identity. The SDK sets the process identi
 
 	When the app is selectively wiped, the SDK will call the `wipeDataForAccount` method in `IntuneMAMPolicyDelegate`. The app is responsible for removing the specified user’s account and any data associated with it. The SDK is capable of removing all files owned by the user and will do so if the app returns FALSE from the `wipeDataForAccount` call.
 
-	Note that this method is called from a background thread. The app should not return until all data for the user has been removed (with the exception of files if the app will return "FALSE").
+	Note that this method is called from a background thread. The app should not return a value until all data for the user has been removed (with the exception of files if the app returns FALSE).
 
 ## Debug the Intune App SDK in Xcode
 
@@ -580,7 +583,7 @@ Before you manually test your MAM-enabled app with Microsoft Intune, you can use
 
 2. On debug builds only, copy MAMDebugSettings.plist into Settings.bundle.
 
-3. In Root.plist (which is in Settings.bundle), add a preference with "Type" = Child Pane and "FileName" = MAMDebugSettings.
+3. In Root.plist (which is in Settings.bundle), add a preference with `Type` = `Child Pane` and `FileName` = `MAMDebugSettings`.
 
 4. In **Settings** > **Your-App-Name**, turn on **Enable Test Policies**.
 
@@ -588,16 +591,16 @@ Before you manually test your MAM-enabled app with Microsoft Intune, you can use
 
 6. In **Settings** > **Your-App-Name** > **Enable Test Policies**, turn on a policy--for example, **PIN**.
 
-7. Start the app (either inside or outside of Xcode). Check that the PIN works as expected.
+7. Start the app (either inside or outside Xcode). Check that the PIN works as expected.
 
 > [!NOTE]
-> You can use **Settings** > **Your-App-Name** > **Enable Test Policies** to enable and toggle settings.
+> You can use **Settings** > **Your-App-Name** > **Enable Test Policies** to enable and switch settings.
 
 ## iOS best practices
 
 Here are recommended best practices for developing for iOS:
 
-* The iOS file system is case sensitive. Ensure the case is correct for file names like `libIntuneMAM.a` and `IntuneMAMResources.bundle`.
+* The iOS file system is case-sensitive. Ensure that the case is correct for file names like `libIntuneMAM.a` and `IntuneMAMResources.bundle`.
 
 * If Xcode has trouble finding `libIntuneMAM.a`, you can fix the problem by adding the path to this library into the linker search paths.
 
@@ -607,17 +610,17 @@ Here are recommended best practices for developing for iOS:
 
 No. In fact, only work or school accounts should be registered with the Intune App SDK. Apps are responsible for determining if an account is used in a work or school context.   
 
-**What about users that have already signed in to the application?  Do they need to be enrolled?**
+**What about users that have already signed in to the application? Do they need to be enrolled?**
 
 The application is responsible for enrolling users after they have been successfully authenticated. The application is also responsible for enrolling any existing accounts that might have been present before the application had MDM-less MAM functionality.   
 
-To do this, the application should make use of the `registeredAccounts:` method.  This method returns an NSDictionary that has all of the accounts registered into the Intune MAM service. If any existing accounts in the application are not present in the list, the application should register and enroll those accounts via `registerAndEnrollAccount:`.
+To do this, the application should make use of the `registeredAccounts:` method. This method returns an NSDictionary that has all of the accounts registered into the Intune MAM service. If any existing accounts in the application are not in the list, the application should register and enroll those accounts via `registerAndEnrollAccount:`.
 
 **How often does the SDK retry enrollments?**
 
 The SDK will automatically retry all previously failed enrollments on a 24-hour interval. The SDK does this to ensure that if a user’s organization enabled MAM after the user signed in to the application, the user will successfully enroll and receive policies.
 
-The SDK will stop re-trying when it detects that a user has successfully enrolled the application.  This is because only one user can enroll an application at any given time. If the user is unenrolled, the retries will begin again on the same 24-hour interval.
+The SDK will stop retrying when it detects that a user has successfully enrolled the application. This is because only one user can enroll an application at a particular time. If the user is unenrolled, the retries will begin again on the same 24-hour interval.
 
 **Why does the user need to be deregistered?**
 
@@ -626,17 +629,19 @@ The SDK will take these actions in the background periodically:
  - If the application is not yet enrolled, it will try to enroll all registered accounts every 24 hours.
  - If the application is enrolled, the SDK will check for MAM policy updates every 8 hours.
 
-By deregistering a user, it notifies the SDK that the user will no longer be using the application and can halt any of the above periodic events for that user account.  It will also trigger an app unenroll and selective wipe if necessary.
+Deregistering a user notifies the SDK that the user will no longer use the application, and the SDK can stop any of the periodic events for that user account. It also triggers an app unenroll and selective wipe if necessary.
 
 **Should I set the doWipe flag to true in the deregister method?**
-This method should be called before the user is signed out of the application.  If, as part of the sign-out, the user’s data is deleted from the application, then `doWipe` can be set to false.  However, if the application does not actually remove the user’s data, then this should be set to true so that the SDK can manually delete the data itself.
+
+This method should be called before the user is signed out of the application.  If the user’s data is deleted from the application as part of the sign-out, `doWipe` can be set to false. But if the application does not remove the user’s data, `doWipe` should be set to true so that the SDK can delete the data.
 
 **Are there any other ways that an application can be un-enrolled?**
-Yes, the IT admin can send a selective wipe command to the application. This will deregister and unenroll the user, and it will wipe the user’s data. The SDK automatically handles this scenario and will send a notification via the unenroll delegate method.
 
-## Submitting your app to the App Store
+Yes, the IT admin can send a selective wipe command to the application. This will deregister and unenroll the user, and it will wipe the user’s data. The SDK automatically handles this scenario and sends a notification via the unenroll delegate method.
 
-Both the static library and framework builds of the Intune App SDK are universal binaries. This means they contain code for all device and simulator architectures. Apple will reject apps submitted to the App Store if they contain simulator code. When compiling against the static library for device-only builds, the linker will automatically strip out the simulator code.
+## Submit your app to the App Store
+
+Both the static library and framework builds of the Intune App SDK are universal binaries. This means they have code for all device and simulator architectures. Apple will reject apps submitted to the App Store if they have simulator code. When compiling against the static library for device-only builds, the linker will automatically strip out the simulator code.
 
 1. Make sure `IntuneMAM.framework` is on your desktop.
 
@@ -645,9 +650,8 @@ Both the static library and framework builds of the Intune App SDK are universal
 	```bash
 	lipo ~/Desktop/IntuneMAM.framework/IntuneMAM -remove i386 -remove x86_64 -output ~/Desktop/IntuneMAM.device_only
 	```
-	The first command strips the simulator architectures from the framework's dylib.
 
 	```bash
 	cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
 	```
-	The second command copies the device-only dylib back into the framework directory.
+	The first command strips the simulator architectures from the framework's DYLIB file. The second command copies the device-only DYLIB file back into the framework directory.
