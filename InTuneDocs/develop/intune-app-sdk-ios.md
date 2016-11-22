@@ -226,11 +226,15 @@ The SDK will continue to use this authority URL for policy refresh and any subse
 
 **What should I do if my app itself uses ADAL for authentication?**
 
-The following actions are required if the app already uses ADAL for authentication. If your app does not rely on ADAL, review the section on how to register with the Intune service if your app does not use ADAL.
+The following actions are required if the app already uses ADAL for authentication:
 
 * In the project’s Info.plist file, under the IntuneMAMSettings dictionary with the key name `ADALClientId`, specify the client ID to be used for ADAL calls.
 
 * In the project’s Info.plist file, under the IntuneMAMSettings dictionary with the key name `ADALRedirectUri`, specify the redirect URI to be used for ADAL calls. You might also need to specify `ADALRedirectScheme`, depending on the format of your app’s redirect URI.
+
+**What if my app does not already use ADAL for authentication?**
+
+If your app does not use ADAL, the Intune App SDK will provide default values for ADAL parameters and handle authentication against Azure AD.
 
 ## Register your app with the Intune MAM service
 
@@ -480,7 +484,7 @@ ContainingAppBundleId | String | Specifies the bundle ID of the extension’s co
 DebugSettingsEnabled| Boolean | If set to YES, test policies within the Settings bundle can be applied. Applications should *not* be shipped with this setting enabled. | Optional.
 MainNibFile<br>MainNibFile~ipad  | String  | This setting should have the application’s main nib file name.  | Required if the application defines MainNibFile in Info.plist.
 MainStoryboardFile<br>MainStoryboardFile~ipad  | String  | This setting should have the application’s main storyboard file name. | Required if the application defines UIMainStoryboardFile in Info.plist.
-MAMPolicyRequired| Boolean| Specifies whether the app will be blocked from starting if the app does not have an Intune MAM policy. Defaults to NO.
+MAMPolicyRequired| Boolean| Specifies whether the app will be blocked from starting if the app does not have an Intune MAM policy. Defaults to NO. | Optional.
 MAMPolicyWarnAbsent | Boolean| Specifies whether the app will warn the user during launch if the app does not have an Intune MAM policy. Note that apps cannot be submitted to the store with this setting set to YES. | Optional.
 MultiIdentity | Boolean| Specifies whether the app is multi-identity aware. | Optional.
 SplashIconFile <br>SplashIconFile~ipad | String  | Specifies the Intune splash (startup) icon file. | Optional.
