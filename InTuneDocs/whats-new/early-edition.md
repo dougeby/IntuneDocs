@@ -46,7 +46,7 @@ The admin experience in the Azure portal will use the already announced new grou
 If you have any questions about the timeline for your tenant’s migration, contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 ### Telecom expense management integration in public preview of Azure portal<!--747605-->
-We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](www.saaswedo.com). 
+We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com). 
 
 ## New Capabilities
 
