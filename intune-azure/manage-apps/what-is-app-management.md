@@ -35,8 +35,13 @@ Use the Microsoft Intune **Mobile Apps** workload to manage settings and feature
 When you open this workload, you'll see the following options:
 
 ### Manage
-- **All Apps** - This is where you'll create, deploy, and monitor most of your apps.
-- **Licensed Apps** - View, deploy, and monitor volume-purchased apps from the Apple store and the Windows Store for Business.
+- **All Apps** - This is where you'll create, assign, and monitor most of your apps. For details, see:
+	[Add apps]()
+	[Assign apps]()
+	[Monitor apps]()
+- **Licensed Apps** - View, deploy, and monitor volume-purchased apps from the Apple store and the Windows Store for Business. For details, see:
+	More information
+	[iOS volume-purchased apps]()
 - **App Configuration Policies** - App configuration policies let you supply settings that might be required when a user runs an app.
 - **App Restriction Policies** - 
 - **App Selective Wipe** - 

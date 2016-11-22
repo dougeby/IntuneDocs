@@ -28,3 +28,10 @@ ms.suite: ems
 # How to monitor apps with Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+You can monitor the assignment progress of Intune apps in two ways:
+
+1. In the **Mobile Apps** workload, choose **Manage** > **All Apps**.
+2. In the list of apps blade, choose the app you want, and then, either:
+	- On the <*app name*> blade, choose **Overview** to see basic information about the app and it's assignments.
+	- On the <*app name*> blade, choose **Reports** to see more detailed information about the app and its assignments.
