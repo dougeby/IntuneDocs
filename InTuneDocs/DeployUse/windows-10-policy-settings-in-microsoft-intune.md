@@ -78,7 +78,7 @@ Use this section to learn about the OMA-URI settings you can configure with a **
 |**WiFi/AllowWiFi**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowWiFi|Mobile only<br />**Data type:** Integer<br />**Values:**<br>**0** – Don't allow **use Wi-Fi connection**<br>**1** –Allow **use Wi-Fi connection** (default)|
 |**WiFi/AllowInternetSharing**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowInternetSharing|Desktop and mobile<br>**Data type:** Integer<br />**Values:<br>** **0** – Don't allow Internet sharing <br> **1** – Allow Internet sharing (default)|
 |**WiFi/AllowAutoConnectToWiFiSenseHotspots**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowAutoConnectToWiFiSenseHotspots|Desktop and mobile<br />**Data type:** Integer<br />**Values:<br>** **0** – Not allowed<br> **1** – Allowed (default)|
-|**WiFi/AllowManualWiFiConfiguration**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowManualWiFiConfiguration|Mobile only<br />**Data type:** Integer<br />**Values:**<br>**0** – No Wi-Fi connection outside of MDM provisioned is allowed<br>**1** – Adding new network SSIDs beyond the already MDM SSIDs is allowed (default)|
+|**WiFi/AllowManualWiFiConfiguration**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowManualWiFiConfiguration|Mobile only<br />**Data type:** Integer<br />**Values:**<br>**0** – Only allow Wi-Fi connections that you configure with MDM.<br>**1** – Adding new network SSIDs in addition to the SSIDs that have already been created by MDM is allowed (default)|
 |**System/AllowLocation**<br>./Vendor/MSFT/Policy/Config/System/AllowLocation|Desktop and mobile<br />**Data type:** Integer<br />**Values:<br>** **0** – Not allowed<br> **1** – Allowed (default)|
 |**System/AllowTelemetry**<br>./Vendor/MSFT/Policy/Config/System/AllowTelemetry|Desktop and mobile<br>**Data type:** Integer<br />**Values:**<br>**0** – Not allowed (Enterprise-only setting)<br>**1** – Limited<br>**2** – Full (default)<br>**3** - Full and  diagnostics information|
 |**System/AllowExperimentation**<br>./Vendor/MSFT/Policy/Config/System/AllowExperimentation|Desktop and mobile<br />**Data type:** Integer<br />**Values:**<br>**0** – Not allowed<br>**1**- Settings only (default)<br>**2**- Settings and experimentation|
@@ -277,7 +277,7 @@ Use the Microsoft Intune **general configuration policy** for Windows 10 to conf
 |**Allow Bluetooth advertising**|Allows devices to receive advertisements over Bluetooth|
 |**Allow phone reset**|Controls whether the user can do a factory reset on their device|
 |**Allow USB connection**|Controls whether devices can access external storage devices through a USB connection|
-|**Allow AntiTheft mode**|Configure whether Windows Antitheft mode is enabled|
+|**Allow AntiTheft mode**|Configure whether Windows AntiTheft mode is enabled|
 
 ### Features
 
