@@ -39,5 +39,7 @@ ms.suite: ems
 	- **Required**
 	- **Uninstall**
 	- **Available Without Enrollment**
+6. Once you are done, choose **Save**.
 
+See [How to monitor apps](monitor-apps.md) for information to help you monitor app assignments.
 
