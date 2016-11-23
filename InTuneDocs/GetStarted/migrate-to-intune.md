@@ -6,7 +6,7 @@ description:
 keywords:
 author: jeffgilbms.author: jeffgilb
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

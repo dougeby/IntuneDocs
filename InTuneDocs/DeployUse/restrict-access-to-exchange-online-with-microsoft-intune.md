@@ -4,9 +4,10 @@
 title: Restrict email access to Exchange Online | Microsoft Intune
 description: Protect and control access to company email on Exchange Online with conditional access.
 keywords:
-author: karthikaramanms.author: karaman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -190,7 +191,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange Online Policy**.
-![Screenshot of the Exchange Online conditional access policy page](../media/mdm-ca-exo-policy-configuration.png)
+
 
 2.  On the **Exchange Online Policy** page, select **Enable conditional access policy for Exchange Online**.
 

@@ -46,12 +46,12 @@ The admin experience in the Azure portal will use the already announced new grou
 If you have any questions about the timeline for your tenant’s migration, contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 ### Telecom expense management integration in public preview of Azure portal<!--747605-->
-We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](www.saaswedo.com). 
+We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com).
 
 ## New Capabilities
 
 ### Multi-factor authentication across all platforms <!--747590-->
-You can now enforce multi-factor authentication (MFA) when a select group of users enroll an iOS, Android, Windows 8.1 or later, or Windows Phone 8.1 or later device from the Azure Management Portal by configuring MFA on Enrollment in the Microsoft Intune Enrollment application.
+You can now enforce multi-factor authentication (MFA) on a selected group of users when they enroll an iOS, Android, Windows 8.1+, or Windows Phone 8.1+ device from the Azure Management Portal by configuring MFA on the Microsoft Intune Enrollment application in Azure Active Directory.
 
 ### Conditional access for MAM with SharePoint Online <!--VSO 679339-->
 You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint Online.  You can get started using Intune mobile app management in the Azure portal. Look for the __Conditional Access__ section in the __Settings__ blade which will include the option for SharePoint Online. This feature will ship separately from the rest of the service release.

@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,7 +50,7 @@ When you give users access to corporate resources through VPN, Wi-Fi, or email p
 
   Use a **SCEP Certificate Profile** for devices running these platforms:
     -   Mac OS X 10.9 and later
-    -   Windows Phone 8.1 and later
+    -   Windows Phone 8.1 
 
 You must create a separate profile for each platform. When you create the profile, associate it with the **Trusted Root Certificate Profile** that you've already created.
 
