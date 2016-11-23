@@ -36,21 +36,29 @@ When you open this workload, you'll see the following options:
 
 ### Manage
 - **All Apps** - This is where you'll create, assign, and monitor most of your apps. For details, see:
-	[Add apps]()
-	[Assign apps]()
-	[Monitor apps]()
+	- [Add apps](add-apps.md)
+	- [Assign apps](deploy-apps.md)
+	- [Monitor apps](monitor-apps.md)
 - **Licensed Apps** - View, deploy, and monitor volume-purchased apps from the Apple store and the Windows Store for Business. For details, see:
-	More information
-	[iOS volume-purchased apps]()
-- **App Configuration Policies** - App configuration policies let you supply settings that might be required when a user runs an app.
-- **App Restriction Policies** - 
-- **App Selective Wipe** - 
+	- [iOS volume-purchased apps](ios-vpp-apps.md)
+	- [Windows Store for Business volume-purchased apps](wsfb-apps.md)
+- **App Configuration Policies** - App configuration policies let you supply settings that might be required when a user runs an app. For details, see:
+	- [App configuration policies](app-configuration-policies.md)
+- **App Protection Policies**
+	- [App protection policies](app-protection-policies.md)
+- **App Selective Wipe**
+	- [App selective wipe](app-selective-wipe.md)
 
 ### Monitor
 - **App Inventory**
 - **App Restrictions User Status**
 
+	For details, see [Monitor apps](monitor-apps.md)
+
 ### Setup
 - **iOS VPP Tokens**
+	- [iOS volume-purchased apps](ios-vpp-apps.md)
 - **Windows Store for Business**
-- **Company Portal configuration**
+	- [Windows Store for Business volume-purchased apps](wsfb-apps.md)
+- **Company Portal configuration** - Customize the Company Portal to give it your company branding. For details, see:
+	- [Company portal configuration](company-portal-app.md)
