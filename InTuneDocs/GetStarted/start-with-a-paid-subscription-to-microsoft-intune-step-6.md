@@ -60,7 +60,7 @@ First you must make apps available in Intune by one of the following methods:
 ### Deploy apps
 
 Now that the app is availabile in Intune, you can deploy it to managed devices:
-- [Deploy apps to devices](../deploy-use/deploy-apps-in-microsoft-intune)
+- [Deploy apps to devices](https://docs.microsoft.com/intune/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - Deploy volume-purchased apps:
 	- [iOS - Volume-purchase Program](https://docs.microsoft.com/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
 	- [Windows Store for Business](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
