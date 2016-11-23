@@ -36,9 +36,7 @@ Groups in Intune give you great flexibility for managing your devices and users.
 
 >[!IMPORTANT]
 >
->If you open the Groups workspace in the Intune portal and see a link to the Azure active directory (Azure AD) portal, then you are already using the *new* Azure AD security groups approach to group management in Intune. To learn how to create groups, see [Managing groups in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups).
->
->![Screenshot of the link to Azure group management](../media/groups-link-azure.png)
+>If you open the Groups workspace in the Intune portal and see **Intune user groups are now managed as groups in Azure Active Directory** with a link to the Azure Active Directory portal, then you are already using the *new* Azure AD security groups approach to group management in Intune. To learn how to create groups, see [Managing groups in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups).
 >
 >If you do not see the link to the Azure AD portal, you are still using the Intune portal for groups management.
 
