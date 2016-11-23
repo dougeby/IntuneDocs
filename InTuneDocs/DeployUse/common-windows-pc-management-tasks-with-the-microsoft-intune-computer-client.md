@@ -4,7 +4,7 @@
 title: Common Windows PC management tasks | Microsoft Intune
 description: Review the tasks in this topic to learn how to manage Windows PCs that run the Intune software client.
 keywords:
-author: NathBarn
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 08/04/2016
 ms.topic: article
@@ -46,25 +46,24 @@ Users see the Intune software client as the **Microsoft Intune Center**. The Mic
 
 -  Request remote assistance.
 
-The Microsoft Intune Center is installed on all managed computers. You can configure the following settings in an Intune policy and these are displayed to users in the Microsoft Intune Center:
+The Microsoft Intune Center is installed on all managed computers. You can configure the following settings in an Intune policy, and these are displayed to users in the Microsoft Intune Center:
 
 |Policy setting|Details|
 |------------------|--------------------|
-|**Name**|The name of the administrator who manages the computer.<br /><br />Maximum length: 40 characters|
-|**Phone number**|The telephone number of the administrator who manages the computer.<br /><br />Maximum length: 20 characters|
-|**Email address**|The email address of the administrator who manages the computer.<br /><br />Maximum length: 40 characters|
-|**Web site name**|The name of your support website for users.<br /><br />Maximum length: 40 characters|
-|**Web site URL**|The URL of your support website.<br /><br />Maximum length: 150 characters|
-|**Notes**|A note that is displayed to users.<br /><br />Maximum length: 120 characters|
+|**Name**|The name of the administrator who manages the computer.<br />Maximum length: 40 characters|
+|**Phone number**|The telephone number of the administrator who manages the computer.<br />Maximum length: 20 characters|
+|**Email address**|The email address of the administrator who manages the computer.<br />Maximum length: 40 characters|
+|**Web site name**|The name of your support website for users.<br />>Maximum length: 40 characters|
+|**Web site URL**|The URL of your support website.<br />Maximum length: 150 characters|
+|**Notes**|A note that is displayed to users.<br />Maximum length: 120 characters|
 
-## Software updates settings
-Use policies to configure the settings that managed computers use to check for, and download software updates from Microsoft and from third-parties. These updates do not include operating system upgrades (i.e. upgrading from Windows 7 to Windows 10, or upgrades from one Windows 10 version to a later version). For more information, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+See the following resources for information about policies and settings that you can configure for Windows PCs:
 
-### Endpoint Protection settings
-Use policies to configure settings for Endpoint Protection that you then deploy to managed computers. This includes scan schedules, actions to take when malware is detected, and more. For more information, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) - These policies make managed computers check for, and download software updates from, Microsoft and from third parties. These updates do not include OS upgrades (e.g., upgrading from Windows 7 to Windows 10, or upgrades from one Windows 10 version to a later version).
 
-## Windows Firewall settings
-Policies simplify the administration of Windows Firewall settings on managed computers. For details, see [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+- [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) - These settings include scan schedules and actions to take when malware is detected.
+
+- [Help protect Windows PCs using Windows Firewall policies in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) - These policies simplify the administration of Windows Firewall settings on managed computers.
 
 ## View hardware and software inventory
 Intune collects detailed information about the hardware and software of managed computers. Use the information in the following procedures to learn how to create:

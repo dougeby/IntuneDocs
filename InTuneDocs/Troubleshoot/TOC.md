@@ -3,11 +3,11 @@
 # [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
-# [Develop & Customize Apps](/intune/develop/intune-app-sdk)
+# [Develop and Customize Apps](/intune/develop/intune-app-sdk)
 
 # [Troubleshoot](general-troubleshooting-tips-for-microsoft-intune.md)
 ## [How to get support](how-to-get-support-for-microsoft-intune.md)
-## [Troubleshoot endpoint protection](Troubleshoot-Endpoint-Protection-in-microsoft-intune.md)
+## [Troubleshoot Endpoint Protection](Troubleshoot-Endpoint-Protection-in-microsoft-intune.md)
 ## [Troubleshoot company resource access problems](Troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 ## [Troubleshoot app deployment problems](Troubleshoot-app-deployment-problems-in-microsoft-intune.md)
 ## [Troubleshoot device enrollment](troubleshoot-device-enrollment-in-intune.md)

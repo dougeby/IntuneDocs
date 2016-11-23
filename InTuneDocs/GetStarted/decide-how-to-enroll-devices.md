@@ -4,12 +4,12 @@
 title: Choose how to enroll mobile devices | Microsoft Intune
 description: Decide how to enroll mobile devices in Intune by answering a few simple questions
 keywords:
-author: NathBarn
+author: NathBarnms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 
@@ -61,8 +61,8 @@ Your answers to the following questions will help determine the best enrollment 
 
 ## **What operating system are your shared devices running?**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
 ## **How will you manage shared iOS devices?**
 

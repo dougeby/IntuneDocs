@@ -4,9 +4,9 @@
 title: Enroll your iOS device in Intune | Microsoft Intune
 description: Describes how to enroll an iOS device in Intune
 keywords:
-author: Staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -96,4 +96,4 @@ If you're trying to enroll a Mac OS X device, see [Enroll your Mac OS X device i
 Your device is now enrolled in Intune, and you are taken back to the Company Portal app.
 
 
-Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

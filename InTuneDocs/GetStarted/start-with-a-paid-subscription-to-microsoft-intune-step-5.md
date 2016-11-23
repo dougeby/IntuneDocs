@@ -2,11 +2,11 @@
 # required metadata
 
 title: Create groups to organize users and devices | Microsoft Intune
-description: Explains how to create users and groups for your Intune subscription
+description: Create users and groups for your Intune subscription
 keywords:
-author: barlanmsft
+author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

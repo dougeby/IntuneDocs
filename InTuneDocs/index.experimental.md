@@ -7,9 +7,10 @@ layout: HubPage
 title: Intune Documentation - MDM documentation | Microsoft Docs
 description: Technical documentation for Microsoft Intune - Mobile Device and Application Management
 keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 11/15/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
@@ -28,7 +29,7 @@ ROBOTS: NOINDEX,NOFOLLOW
       <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Introduction to Microsoft Intune</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">150+ licenses? Leverage your FastTrack benefits</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Common scenarios that rely on Intune</a></li>
           <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Intune quick start guide</a></li>
         </ul>

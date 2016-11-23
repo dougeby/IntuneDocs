@@ -4,7 +4,7 @@
 title: Next steps after your Intune evaluation is completed | Microsoft Intune
 description: What you need to know about subscriptions and licensing after you set up your free, 30-day evaluation of Intune
 keywords:
-author: lindavr
+author: lindavrms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Next steps after your Intune evaluation is completed
-If you purchase at least 150 licenses for Microsoft Intune in an eligible plan, you can use the "FastTrack Center Benefit," a service where Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility Suite (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
+If you purchase at least 150 licenses for Microsoft Intune in an eligible plan, you can use the "FastTrack Center Benefit," a service where Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
 
 You can convert your free Intune evaluation to a paid subscription in the following ways:
 

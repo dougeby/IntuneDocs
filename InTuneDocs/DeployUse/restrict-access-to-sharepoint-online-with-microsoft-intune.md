@@ -4,9 +4,9 @@
 title: Restrict access to SharePoint Online | Microsoft Intune
 description: Protect and control access to  company data on SharePoint Online with conditional access.
 keywords:
-author: karthikaraman
+author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -60,7 +60,8 @@ If a condition is not met, the user is presented with one of the following messa
 
 -   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website where they can find information about the problem, and how to remediate it.
 
-**Conditional access is enforced across all SharePoint sites and external sharing is blocked**
+**Conditional access does not apply to external sharing**. To learn how to prevent external sharing in your tenant or a site collection, see [Manage external sharing for your SharePoint Online environment
+](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
 >[!NOTE]
 >If you  enable conditional access for SharePoint Online, we recommend that you disable the domain on the list as described in the  [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) topic.  
@@ -73,7 +74,7 @@ If a condition is not met, the user is presented with one of the following messa
 You can restrict access to SharePoint Online when accessed from a browser from **iOS** and **Android** devices.  Access will only be allowed from only supported browsers on compliant devices:
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS and Android)
+* Managed Browser (iOS and Android 5.0 and later)
 
 **Unsupported browsers will be blocked**.
 

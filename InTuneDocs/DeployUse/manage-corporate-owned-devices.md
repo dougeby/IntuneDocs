@@ -2,9 +2,10 @@
 # required metadata
 
 title: Manage corporate-owned devices | Microsoft Intune
-description: Bring corporate-owned devices (COD) into management in a variety of ways depending upon the device, how it was purchased, and organization needs.
+description: Enroll corporate-owned devices in a variety of ways, based on the type of device, how it was purchased, and the needs of the organization.
 keywords:
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
@@ -25,34 +26,43 @@ ms.suite: ems
 
 ---
 
-# Enroll corporate-owned devices with Microsoft Intune
-Organization or corporate-owned devices (COD) can be brought into management by Intune in a variety of ways depending upon the device, how it was purchased, and the needs of the organization. Corporate-owned devices can also be enrolled and managed by installing the Company Portal app as in "bring your own device" (BYOD) scenarios.
+# Enroll corporate-owned devices by using Intune
 
-## Corporate-owned iOS devices
-These enrollment methods are good for "Choose your own device" (CYOD) scenarios where the organization purchases the devices for users, but wants to retain management of the device. If your organization has purchased iOS devices, you can pre-configure enrollment so that the device is managed from the first time its user turns it on. Intune supports enrollment via [Apple's Device Enrollment Program (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) or using the Apple Configurator tool running on a Mac computer for [direct](ios-direct-enrollment-in-microsoft-intune.md) or [Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md) enrollment.
+You can enroll organization-owned or corporate-owned devices to manage with Intune in a variety of ways, depending on the type of device, how the device was purchased, and the needs of the organization. You also can install the Company Portal app to enroll and manage corporate-owned devices, like in a "bring your own device" (BYOD) scenario.
 
-[Enroll corporate-owned iOS devices](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
+## Enroll corporate-owned iOS devices
 
-## Device enrollment manager
-Organizations can use Intune to manage large numbers of mobile devices with a single user account called a device enrollment manager account. After creating a device enrollment manager account, that account can be used by a manager to enroll more than the standard five devices allowed by default to normal users. Enrolling devices with a device enrollment manager only works for devices that aren't used by a specific user. These devices are good for point-of-sale or utility apps, for example, but bad for users who need access to email or company resources.
+Corporate-owned device enrollment methods are a good choice for "choose your own device" (CYOD) scenarios. In a CYOD environment, the organization pays for a device that the user selects, and the organization manages the device.
 
-[Enroll corporate-owned devices with the device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+If you offer users iOS devices to choose from, you can preconfigure enrollment so that the device is managed with Intune from the first time the user turns it on. Intune supports enrollment via the [Apple Device Enrollment Program (DEP)](ios-device-enrollment-program-in-microsoft-intune.md), or by using the Apple Configurator tool on a Mac computer for [direct](ios-direct-enrollment-in-microsoft-intune.md) or [Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md) enrollment.
 
-## Enroll corporate-owned Windows 10 desktops
+Learn how to [enroll corporate-owned iOS devices](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
-If your organization has Azure Active Directory Premium (AADP) or Enterprise Management Suite (EMS), you can [enroll Windows 10 for enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) and they will be automatically tagged as "corporate-owned" when users add their work or school account.
+## Create a device enrollment manager account
 
-## Identify devices as corporate-owned
+You can create a single-user device enrollment manager (DEM) account in Intune to manage a large number of mobile devices for your organization. After you create a DEM account, a designated account manager can enroll more than the 15 devices that a standard user can enroll.
 
-Corporate-owned devices are listed as **Corporate**  under **Ownership** in lists of devices. Devices can be identified as corporate-owned in the following ways:
+You can use a DEM account to enroll only devices that aren't used by a single, specific user. Those types of devices are good for point-of-sale or utility apps, for example, but not for users who need to access email or company resources.
 
- - [Enrolled with device enrollment manager (DEM)](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
- - Enrolled with Apple's [device enrollment program (DEP)](ios-device-enrollment-program-in-microsoft-intune.md)  or [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md)
- - [Predeclare devices with IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
- - [Azure Active Directory/Enterprise Management Suite registration of Windows 10 devices](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+Learn how to [enroll corporate-owned devices by using a DEM account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 
-### International mobile equipment identity (IMEI)
+## Enroll corporate-owned Windows 10 Enterprise devices
 
-Unique international mobile equipment identity (IMEI) numbers are a common device property for many mobile device manufacturers. Intune administrators can import IMEI numbers for devices the company owns. When the device becomes managed by Intune, it is tagged as a corporate-owned device.
+If you use Azure Active Directory Premium or Microsoft Enterprise Mobility Suite in your organization, you can [enroll Windows 10 Enterprise devices](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview). When a user adds a work or school account on a device, the device is automatically tagged as "corporate-owned."
 
-[Specify corporate-owned devices with international mobile equipment identity (IMEI) numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+## Import IMEI numbers
+
+Many mobile device manufacturers use a unique number called an International Mobile Equipment Identity (IMEI) on their devices. You can import IMEI numbers for devices that your organization owns. When the device becomes managed by Intune, it's tagged as a corporate-owned device.
+
+Learn how to [tag corporate-owned devices by using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
+
+## Identify a device as corporate-owned
+
+Intune recognizes a device as "corporate" when any of the following conditions are true:
+
+ - The device was [enrolled by using a DEM account](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) (all platforms).
+ - The device was enrolled by using the [Apple DEP](ios-device-enrollment-program-in-microsoft-intune.md) or [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) (iOS only).
+ - The device manufacturer [predeclared the device by using IMEI numbers](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) (all platforms with IMEI numbers).
+ - The device is registered in [Azure Active Directory or Enterprise Mobility Suite as a Windows 10 Enterprise device](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (Windows 10 only).
+
+When a device is tagged as corporate, you see **Corporate** in the **Ownership** column for that device record in the administrator console. 

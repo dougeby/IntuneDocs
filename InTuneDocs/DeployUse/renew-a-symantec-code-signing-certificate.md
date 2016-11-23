@@ -4,8 +4,8 @@
 title: Renew a Symantec enterprise code-signing certificate to use with Intune | Microsoft Intune
 description: Guidance to renew Symantec certificates used to manage certain Windows and Windows Phone mobile devices
 keywords:
-author: NathBarn
-manager: angrobe
+author: staciebarker
+manager: stabar
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod:
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Renew a Symantec enterprise code-signing certificate for Windows devices
 
-The Symantec certificate used to manage certain Windows and Windows Phone mobile devices must be renewed periodically. For Windows Phone 8.0 devices, a signed Company Portal app and the code-signing certificate are needed for device enrollment. Later Windows Phone devices can use the company portal app downloaded from the store. A code-signing certificate is also be required for deploying line-of-business apps.
+The Symantec certificate used to deploy Windows and Windows Phone mobile apps must be renewed periodically.
 
 ## How to renew the Symantec enterprise code-signing certificate
 

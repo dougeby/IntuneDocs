@@ -5,8 +5,9 @@ title: Restrict email access to Exchange Online | Microsoft Intune
 description: Protect and control access to company email on Exchange Online with conditional access.
 keywords:
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -70,9 +71,11 @@ The diagram below illustrates the flow used by conditional access policies for E
 ## Support for mobile devices
 You can restrict access to Exchange Online email from **Outlook** and other **apps that use modern authentication**:-
 
-- Android 4.0 and later, Samsung Knox Standard 4.0 and later
+- Android 4.0 and later, Samsung Knox Standard 4.0 and later, and Android for Work
 - iOS 8.0 and later
 - Windows Phone 8.1 and later
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 **Modern authentication** brings Active Directory Authentication Library (ADAL)-based sign in to Microsoft Office clients.
 
@@ -84,7 +87,7 @@ You can restrict access to **Outlook Web Access (OWA)** on Exchange Online when 
 
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS and Android)
+* Managed Browser (iOS and Android 5.0 and later)
 
 **Unsupported browsers will be blocked**.
 
@@ -188,7 +191,7 @@ Only the groups which are targeted by the conditional access policy are evaluate
 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange Online Policy**.
-![Screenshot of the Exchange Online conditional access policy page](../media/mdm-ca-exo-policy-configuration.png)
+
 
 2.  On the **Exchange Online Policy** page, select **Enable conditional access policy for Exchange Online**.
 
@@ -230,6 +233,9 @@ Only the groups which are targeted by the conditional access policy are evaluate
   ![screenshot of the certificate prompt on an Android device](../media/mdm-browser-ca-android-cert-prompt.png)
 
 5.  Under **Exchange ActiveSync apps**, you can choose to block noncompliant devices from accessing Exchange Online. You can also select whether to allow or block access to email when the device is not running a supported platform. Supported platforms include Android, iOS, Windows, and Windows Phone.
+
+ Exchange Active Sync apps **Android for Work** devices:
+ -  Only **Gmail** and **Nine Work** apps in the **work profile** are supported on Android for Work devices. For conditional access to work on  Android for Work devices, you must deploy an email profile for the Gmail or Nine Work app, and also deploy it as a **required** install.
 
 6.  Under **Targeted Groups**, select the Active Directory security groups of users to which the policy will apply. You can either choose to target all users or a selected list of user groups.
 ![Screenshot of the Exchange Online conditional access policy page showing the Targeted and Exempted group options](../media/IntuneSA5eTargetedExemptedGroups.PNG)

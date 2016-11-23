@@ -4,9 +4,9 @@
 title: Device doesn't have Code Integrity enabled | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,4 +36,4 @@ Enabling Secure Boot is an advanced task. If you are using a mobile device, cont
 
 If you are using a PC, you can contact your IT administrator. Or, see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

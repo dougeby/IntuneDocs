@@ -2,9 +2,10 @@
 title: Configure certificate infrastructure for SCEP |Microsoft Intune
 description: Infrastructure for creating and deploying SCEP certificate profiles.
 keywords:
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -347,7 +348,7 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 
 To validate that the service is running, open a browser and enter the following URL, which should return a **403** error:
 
-**http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
+**https:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
 ## Next steps
 You are now ready to configure certificate profiles, as described in [Configure certificate profiles](Configure-Intune-certificate-profiles.md).

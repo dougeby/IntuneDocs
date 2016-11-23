@@ -4,7 +4,7 @@
 title: Remotely lock a device from the Company Portal website | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -37,7 +37,6 @@ iOS | Supported
 Windows 10 Mobile | Supported only if the phone has a passcode set     
 Windows 10 Desktop | Not supported  
 Windows Phone 8.1 | Supported only if the phone has a passcode set
-Windows Phone 8.0 | Not supported
 PC (Windows 8.0 and earlier) | Not supported       
 PC (Windows 8.1) | Not supported
 
@@ -64,5 +63,5 @@ To use Remote Lock to lock your device:
 
 	If a retry doesn’t work, contact your IT administrator for help. If you find your device and want to unlock it after using Remote Lock, just enter your passcode.
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 

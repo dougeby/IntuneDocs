@@ -4,9 +4,9 @@
 title: Install and sign in to the Intune Company Portal app | Microsoft Intune
 description:
 keywords:
-author: Staciebarker
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,4 +40,4 @@ The Company Portal is an app that you install on your iOS device to give you acc
 
     If you are signing into the Company Portal app for the first time, and your company or school is using Intune, you will be prompted to enroll your device in Intune. To enroll, follow the steps in [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) or [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md).
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

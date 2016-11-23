@@ -2,11 +2,11 @@
 # required metadata
 
 title: Customize the Company Portal | Microsoft Intune
-description: Explains how to customize the Company Portal for your Intune subscription
+description: Intune Company Portal lets users do common tasks like enroll devices, install apps, and find IT department info.
 keywords:
-author: barlanmsft
+author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,14 +25,37 @@ ms.suite: ems
 
 ---
 
-
 # Customize the Company Portal
-The [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
+The Intune Company Portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
+
+The Intune Company Portal provides users with access to company data and apps. The Company Portal is available in two forms:
+
+-   **The Company Portal app**: An application that is available on devices you manage with Intune. Learn more about the Company Portal apps for [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+, and [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
+
+
+- **The Company Portal website**: A website that lets end users do most of the tasks they can do from the Company Portal app. The Intune Company Portal URL is [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Learn more about this website at [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website).
 
 > [!TIP]
 > When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.
 
-Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, just log into the [Microsoft Intune administrator console](https://manage.microsoft.com) as a tenant or service administrator, choose **Admin** &gt; **Company Portal** and configure the Company Portal settings.
+Some of the tasks that users can do in the Company Portal are:
+
+-   Enroll devices
+-   View the status of their devices
+-   Reset their device
+-   Reset their password
+-   Remotely lock their device
+-   Download software that is deployed by your organization
+-   Contact the IT department for support
+
+> [!NOTE]
+> The Company Portal app is not yet available in certain countries.
+> __iOS__: The Company Portal app for iOS is published to [all available territories](https://go.microsoft.com/fwlink/?linkid=831284) for the Apple iOS App Store.
+> __Android__: The Company Portal app for Android is not currently available in China. For these countries, an alternative solution is to [sideload the Android version of the Company Portal app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
+
+## Customize Company Portal settings
+Customizing the Company Portal helps provide a familiar and helpful experience for your end users. Log in to the [Microsoft Intune administrator console](https://manage.microsoft.com) as a tenant or service administrator, choose **Admin** &gt; **Company Portal** and configure the Company Portal settings.
 
 ![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png)
 

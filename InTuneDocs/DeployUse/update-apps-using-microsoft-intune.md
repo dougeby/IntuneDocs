@@ -4,7 +4,7 @@
 title: Update apps | Microsoft Intune
 description: Use the information in this topic to understand how to update apps when a new version is required.
 keywords:
-author: robstackmsft
+author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article

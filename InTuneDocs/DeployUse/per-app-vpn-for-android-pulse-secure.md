@@ -4,9 +4,10 @@
 title: Per-app VPN for Android using Pulse Secure | Microsoft Intune
 description: You can create a per-app VPN profile for Android devices managed by Intune.
 keywords:
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,9 +28,9 @@ ms.suite: ems
 
 # Use a custom policy to create a per-app VPN profile for Android devices
 
-You can create a per-app VPN profile for Android 5.0 and later devices that are managed by Intune. First, create a VPN profile that uses the Pulse Secure connection type. Then, create a custom configuration policy that associates the VPN profile with specific apps. 
+You can create a per-app VPN profile for Android 5.0 and later devices that are managed by Intune. First, create a VPN profile that uses the Pulse Secure or Citrix connection type. Then, create a custom configuration policy that associates the VPN profile with specific apps. 
 
-After you deploy the policy to your Android device or user groups, users should start the PulseSecure VPN. PulseSecure will then allow traffic only from the specified apps to use the open VPN connection.
+After you deploy the policy to your Android device or user groups, users should start the Pulse Secure or Citrix VPN. The connection will then allow traffic only from the specified apps to use the open VPN connection.
 
 > [!NOTE]
 >
@@ -40,7 +41,7 @@ After you deploy the policy to your Android device or user groups, users should 
 
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Add Policy**.
 2. To select a template for the new policy, expand **Android**, and then choose **VPN Profile (Android 4 and later)**.
-3. In the template, for **Connection type**, choose **Pulse Secure**.
+3. In the template, for **Connection type**, choose **Pulse Secure** or **Citrix**.
 4. Finish and save the VPN profile. For more details about VPN profiles, see [VPN connections](../deploy-use/vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
