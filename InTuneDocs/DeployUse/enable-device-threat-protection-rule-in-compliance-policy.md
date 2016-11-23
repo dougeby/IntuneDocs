@@ -4,7 +4,7 @@
 title: Enable device protection rule in compliance policy | Microsoft Intune
 description: Enable mobile threat protection rule in the device compliance policy.
 keywords:
-author: karthikaramanms.author: karaman
+author: karthikaraman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -62,5 +62,5 @@ You can see the compliance state of a device on the **All Devices** page of the 
   * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   * [Exchange On-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   * [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  * [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune,md)
+  * [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   * [Dynamics CRM](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
