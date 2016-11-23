@@ -3,7 +3,7 @@
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
 # [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
-# [Deploy and Use](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
+# Deploy and Use
 ## [Overview of device and app lifecycles](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Device lifecycle](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [App lifecycle](overview-of-app-lifecycle-in-microsoft-intune.md)
@@ -89,7 +89,7 @@
 ### [Android for Work app configuration policies](afw-app-configuration-policy.md)
 ### [iOS mobile app provisioning profiles](ios-mobile-app-provisioning-profiles.md)
 ### [Manage Internet access](manage-internet-access-using-managed-browser-policies.md)
-
+### [Sideload LOB apps](sideload-apps-for-windows.md)
 
 ## [Protect apps and data](protect-apps-and-data-with-microsoft-intune.md)
 ### [Device compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune.md)

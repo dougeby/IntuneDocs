@@ -69,6 +69,25 @@ You can wipe apps and data from Intune-managed devices that are no longer needed
 
 If the device is on and connected, it takes less than 15 minutes for a wipe command to propagate across all device types.
 
+#### To delete devices in the Azure Active Directory portal
+
+1.  Browse to [http://aka.ms/accessaad](http://aka.ms/accessaad) or choose **Admin** &gt; **Azure AD** from [https://portal.office.com](https://portal.office.com).
+
+2.  Login with your Org ID using the link on the left side of the page.
+
+3.  Create an Azure Subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).
+
+4.  Select **Active Directory** and then select your organization.
+
+5.  Select the **Users** tab.
+
+6.  Select the user whose devices you want to delete.
+
+7.  Choose **Devices**.
+
+8.  Remove devices as appropriate, such as those that are no longer in use, or those that have inaccurate definitions.
+
+
 ## Selective wipe
 
 **Selective wipe** removes company data, including mobile app management (MAM) data (where applicable), settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device. The device is removed from Intune. The following tables describe what data is removed, and the effect on data that remains on the device after a selective wipe. (The tables are organized by platform.)
@@ -100,7 +119,7 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |Wi-Fi and VPN profile settings|Removed.|Removed.|
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|
 |Management Agent|Device Administrator privilege is revoked.|Device Administrator privilege is revoked.|
-|Email|Email received by the Microsoft Outlook app for Android is removed.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted. If Microsoft Exchange is hosted on premises, email profiles and cached email are not removed.|
+|Email|Email received by the Microsoft Outlook app for Android is removed.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
 |Outlook|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|
 |Azure Active Directory (AAD) Unjoin|AAD Record removed.|AAD Record removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
