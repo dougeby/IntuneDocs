@@ -34,7 +34,7 @@ You can enroll then manage the following device types:
 
 Enrolling devices provides [these capabilities](/Intune/get-started/choose-how-to-manage-devices).
 
-Alternatively, you can manage Windows PCs with the Intune PC client software. The Intune PC client software supports Windows 7 and later, except Windows 10 Home. Managing PCs with the client software provides [these capabilities](set-up-windows-device-management-with-microsoft-intune.md).
+Alternatively, you can manage Windows PCs with the Intune PC client software. The Intune PC client software supports Windows 7 and later, except Windows 10 Home. Managing PCs with the client software provides [these capabilities](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune).
 
 Customers with Enterprise Management Suite can also use Azure Active Directory (Azure AD) to register Windows 10 devices.
 
