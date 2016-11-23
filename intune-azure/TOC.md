@@ -44,7 +44,7 @@
 ### [iOS VPP apps](/intune-azure/manage-apps/ios-vpp-apps)
 ### [Windows Store for Business apps](/intune-azure/manage-apps/wsfb-apps)
 ## [How to configure the Company Portal app](/intune-azure/manage-apps/company-portal-app)
-## <!--- [Troubleshoot apps](/intune-azure/manage-apps/troubleshooting) --->
+<!--- ##  [Troubleshoot apps](/intune-azure/manage-apps/troubleshooting) --->
 
 # [Configure devices](/intune-azure/configure-devices/what-are-device-profiles)
 ## [What are device profiles](/intune-azure/configure-devices/what-are-device-profiles)
