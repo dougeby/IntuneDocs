@@ -1,5 +1,5 @@
 # [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Get Started](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Get Started](/intune/get-started/get-started)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
 # [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
