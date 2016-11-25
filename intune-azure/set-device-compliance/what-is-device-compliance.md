@@ -92,9 +92,8 @@ If you have been using the Intune admin console previously, note the following d
 
 ##  Next steps
 
-Get started on compliance profiles
+[Get started on compliance profiles](get-started-with-device-compliance.md)
 
-Create a compliance profile
 
 ### See also
 

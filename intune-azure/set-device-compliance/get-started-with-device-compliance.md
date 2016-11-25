@@ -78,6 +78,7 @@ This section is a detailed view of what you see in the **Overview**. A list of a
 Compliance status validity period
 
 ##  Next steps
-
-
-Create a compliance profile
+[Create a compliance profile for Android](create-a-compliance-profile-for-android.md)
+[Create a compliance profile for Android for work](create-a-compliance-profile-for-android-for-work.md)
+[Create a compliance profile for iOS](create-a-compliance-profile-for-ios.md)
+[Create a compliance profile for Windows](create-a-compliance-profile-for-windows.md)
