@@ -96,12 +96,15 @@
 ### [How to monitor device profiles](/intune-azure/configure-devices/how-to-monitor-device-profiles)
 ## [Troubleshoot](/intune-azure/configure-devices/troubleshooting)
 
-# [Set device compliance](/intune-azure/set-device-compliance/what-is)
-## [What is](/intune-azure/set-device-compliance/what-is)
-## [Get started](/intune-azure/set-device-compliance/get-started)
-## [Plan and design](/intune-azure/set-device-compliance/plan-and-design)
-## [How to](/intune-azure/set-device-compliance/how-to)
-## [Troubleshoot](/intune-azure/set-device-compliance/troubleshooting)
+# [Set device compliance](/intune-azure/set-device-compliance/what-is-device-compliance)
+## [What is device compliance](/intune-azure/set-device-compliance/what-is-device-compliance)
+## [Get started](/intune-azure/set-device-compliance/get-started-with-device-compliance)
+## [How to create a compliance profile-Android](/intune-azure/set-device-compliance/create-a-compliance-profile-for-android)
+## [How to create a compliance profile-Android for Work](/intune-azure/set-device-compliance/create-a-compliance-profile-for-android-for-work)
+## [How to create a compliance profile-iOS](/intune-azure/set-device-compliance/create-a-compliance-profile-for-ios)
+## [How to create a compliance profile-Windows](/intune-azure/set-device-compliance/create-a-compliance-profile-for-windows)
+## [How to monitor device compliance](/intune-azure/set-device-compliance/monitor-device-compliance)
+
 
 # [Conditional access](/intune-azure/conditional-access/what-is)
 ## [What is](/intune-azure/conditional-access/what-is)
