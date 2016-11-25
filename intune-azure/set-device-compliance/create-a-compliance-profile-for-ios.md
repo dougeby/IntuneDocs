@@ -38,7 +38,7 @@ The table below describes how noncompliant settings are managed when a complianc
 -------------------------------
 
 
-| **Policy setting** | **iOS 8.0 and later** |   
+| **Policy setting** | **iOS 8.0 and later** |
 | --- | --- |
 | **PIN or password configuration** | Remediated |   
 | **Device encryption** | Remediated (by setting PIN) |
