@@ -31,8 +31,7 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 In this topic, you will learn more about what you need before you can start creating a device compliance profile and a quick glance on what you can see and do in the Azure portal. If you device compliance is new
-to you, you may want to read this topic to learn what device compliance
-is and how you might use it in your company.
+to you, you may want to read this topic to learn what device compliance is and how you might use it in your company.
 
 ##  Pre-requisites
 
@@ -41,7 +40,7 @@ is and how you might use it in your company.
 
 -   A subscription to Azure Active Directory
 
--   RBAC requirements?
+
 
 ##  Supported Platforms:
 
@@ -59,29 +58,20 @@ is and how you might use it in your company.
 ##  Azure portal workflow
 
 
-Here is an overview of the device compliance workflow on the Azure
-portal.
+Here is an overview of how you can create a device compliance in the Azure portal.
 
 ### Overview
 
-When you first open the device compliance workflow, you will see an
-Overview section that will provide you a summary view of your compliance
-profiles that you have created and deployed and their status. If you
-don’t have any profiles configured yet, the overview will just include
-the various reports but with no data as there is no data yet.
+When you choose the **Set device compliance** workload, the blade opens with an  **Overview** section that displays a summary view of your compliance profiles that you have created and the status of the devices they have been applied to. If you
+don’t have any profiles configured yet, the overview will just include the various reports but with no data.
 
 ### Manage
 
-This is the section, where you can create, edit and delete compliance
-profiles. You will also be able to assign profiles to users from here.
-The How to create a compliance profile topic has more details.
+You can create, edit and delete compliance profiles. You will also be able to assign profiles to users from here.
 
 ### Monitor
 
-The monitor section is a detailed view of what you see in the Overview
-section. A list of all the reports are displayed in this section and you
-can interactively drill down through each of these reports. The How to
-monitor device compliance topic has more detailed information.
+This section is a detailed view of what you see in the **Overview**. A list of all the reports are displayed in this section and you can interactively drill down through each of these reports.
 
 ### Setup
 

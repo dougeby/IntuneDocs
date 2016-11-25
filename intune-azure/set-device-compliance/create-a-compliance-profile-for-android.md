@@ -32,7 +32,7 @@ ms.suite: ems
 
 # How to create a device compliance profile for Android
 
-Compliance profiles are created for each platform.  You can create a compliance profile in the Azure portal. To learn more about what compliance profile is see **What is a device compliance profile** topic. To learn about the prerequisites that you need to address before creating a compliance profile see **Get started with device compliance** topic.
+Compliance profiles are created for each platform.  You can create a compliance profile in the Azure portal. To learn more about what compliance profile is see [What is a device compliance](what-is-device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance profile see [Get started with device compliance](get-started-with-device-compliance.md) topic.
 
 The table below describes how noncompliant settings are managed when a compliance profile is used with a conditional access profile.
 
@@ -60,28 +60,27 @@ The table below describes how noncompliant settings are managed when a complianc
 
 ## Create a compliance profile in the Azure portal
 
-1. From the **Intune** blade, choose **Set Device compliance**. In the Manage section of the **Compliance** blade, choose **All device compliance profiles**, and choose **Create**.
+1. From the **Intune** blade, choose **Set Device compliance**. In the **Manage** section of the **Compliance** blade, choose **All device compliance profiles**, and choose **Create**.
 2. Type a name, description and choose the platform that you want this profile to apply to.
-3. Choose compliance requirements to open the Compliance requirement blade.  You can specify the Security, Device health, and Device property settings by selecting those options. When you are done, choose OK.
-4. You are now back in the Compliance requirements blade. Chose ok which takes you back to the Create profile blade.
-5. Choose Actions for noncompliance to say what actions should happen when a device is determined as noncompliant with this profile.
-6. In the **Actions for noncompliance** blade, choose Add to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+3. Choose compliance requirements to open the Compliance requirement blade.  You can specify the **Security**, **Device health**, and **Device property** settings. When you are done, choose **OK**.
+4. You are now back in the **Compliance requirements** blade. Choose **OK**.
+5. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this profile.
+6. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 7. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance profile.
 8. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access profile to block access to company resources like SharePoint online.
-9. Choose Add to finish creating the action.
-10. You can create multiple actions and the sequence in which they should occur. Click OK when you are finished creating all the actions.
-11. The overview blade now will display the metrics for the new compliance profile that you are created.
+9. Choose **Add** to finish creating the action.
+10. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.
 
 ## Assign user groups
 
-To assign a compliance profile to users, choose a profile that you have configured. Existing profiles can be found in the Compliance –Profiles blade.
+To assign a compliance profile to users, choose a profile that you have configured. Existing profiles can be found in the **Compliance –Profiles** blade.
 
-1. Choose the profile and in the profile blade, choose **Assignments**. This opens the blade where you can select Azure Active Directory security groups and assign them to the profile.
-2. Choose Select groups to open the blade that displays the Azure AD security groups. Here you can find the security groups in your Azure Active Directory.  You can select the user groups you want this profile to apply to and choose **Select**. Choosing **Select** , deploys the profile to users.
+1. Choose the profile and choose **Assignments**. This opens the blade where you can select **Azure Active Directory security groups** and assign them to the profile.
+2. Choose **Select groups** to open the blade that displays the Azure AD security groups. Here you can find the security groups in your Azure Active Directory.  You can select the user groups you want this profile to apply to and choose **Select**. Choosing **Select**  deploys the profile to users.
 
 You have applied the profile to users.  The devices used by the users who are targeted by the profile will be evaluated for compliance.
 
-##  Compliance profile settings for Android
+##  Compliance profile settings
 
 ## System security settings
 
@@ -97,12 +96,10 @@ You have applied the profile to users.  The devices used by the users who are ta
   - **At least alphanumeric**
   - **Alphanumeric with symbols**
 - **Minutes of inactivity before password is required** : Specify the idle time before the user must reenter their password.
-- **Password expiration (days)**: Select the number of days before the user&#39;s password expires and they must create a new one.
+- **Password expiration (days)**: Select the number of days before the password expires and they must create a new one.
 - **Remember password history** : Use this setting together with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
 - **Prevent reuse of previous passwords** : If you selected **Remember password history** , specify the number of previously used passwords that cannot be reused.
 - **Require a password when the device returns from an idle state** : Use this setting together with the **Minutes of inactivity before password is required** setting. The user is prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.
-
-+
 
 ### Encryption
 
@@ -111,7 +108,7 @@ You have applied the profile to users.  The devices used by the users who are ta
 ## Device health and security settings
 
 - **Device must not be jailbroken or rooted** : If you enable this setting, jailbroken devices will be evaluated as noncompliant.
-- **Require that devices prevent installation of apps from unknown sources (Android 4.0 or later)**: To block devices that have **Security** &gt; **Unknown sources** enabled on the device, enable this setting and set it to **Yes**.
+- **Require that devices prevent installation of apps from unknown sources (Android 4.0 or later)**: To block devices that have **Security** >; **Unknown sources** enabled on the device, enable this setting and set it to **Yes**.
 
 ##### Important
 
@@ -124,7 +121,7 @@ Side-loading applications require that the **Unknown sources** setting is enable
   - **None (secured)**: This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as noncompliant.
   - **Low** : The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium** : The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
-  - **High** : This is the least secure. Essentially, this allows all threat levels. Perhaps it&#39;s useful if you are using this solution only for reporting purposes.
+  - **High** : This is the least secure. Essentially, this allows all threat levels. Perhaps it is useful if you are using this solution only for reporting purposes.
 
 For more details, see [Enable device threat protection rule in the compliance profile](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
@@ -135,4 +132,4 @@ For more details, see [Enable device threat protection rule in the compliance pr
 
 ## Next steps
 
-How to monitor device compliance
+[How to monitor device compliance](monitor-device-compliance.md)

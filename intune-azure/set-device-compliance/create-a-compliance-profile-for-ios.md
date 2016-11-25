@@ -31,7 +31,7 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Compliance profiles are created for each platform.  You can create a compliance profile in the Azure portal. To learn more about what compliance profile is see **What is a device compliance profile** topic. To learn about the prerequisites that you need to address before creating a compliance profile see **Get started with device compliance** topic.
+Compliance profiles are created for each platform.  You can create a compliance profile in the Azure portal. To learn more about what compliance profile is see [what is a device compliance](what-is-device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance profile see [Get started with device compliance](get-started-with-device-compliance.md) topic.
 
 The table below describes how noncompliant settings are managed when a compliance profile is used with a conditional access profile.
 
@@ -50,7 +50,7 @@ The table below describes how noncompliant settings are managed when a complianc
 ----------------------------
 
 
-**Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)+
+**Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)
 
 **Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:+
 
@@ -59,29 +59,27 @@ The table below describes how noncompliant settings are managed when a complianc
 
 ## Create a compliance profile in the Azure portal
 
-1. From the Intune blade, choose Set Device compliance to open the Compliance blade. In the Manage section of the Compliance blade, choose All device compliance profiles.
-2. From the All device compliance profiles blade, choose Create.
-3. Type a name, description and choose the platform that you want this profile to apply to.
-4. Choose compliance requirements to open the Compliance requirement blade.  You can specify the Security, Device health, and Device property settings by selecting those options. When you are done, choose OK.
-5. You are now back in the Compliance requirements blade. Chose ok which takes you back to the Create profile blade.
-6. Choose Actions for noncompliance to say what actions should happen when a device is determined as noncompliant with this profile.
-7. In the **Actions for noncompliance** blade, choose Add to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
-8. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance profile.
-9. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access profile to block access to company resources like SharePoint online.
-10. Choose Add to finish creating the action.
-11. You can create multiple actions and the sequence in which they should occur. Click OK when you are finished creating all the actions.
-12. The overview blade now will display the metrics for the new compliance profile that you are created.
+1. From the **Intune** blade, choose **Set Device compliance**.In the **Manage** section of the **Compliance** blade, choose **All device compliance profiles** and choose **Create**.
+2. Type a name, description and choose the platform that you want this profile to apply to.
+3. Choose **Compliance requirements** to open the compliance requirements blade.  You can specify the **Security**, **Device health**, and **Device property** settings here, When you are done, choose **OK**.
+4. You are now back in the Compliance requirements blade. Choose **OK**.
+5. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this profile.
+6. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+7. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance profile.
+8. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access profile to block access to company resources like SharePoint online.
+9. Choose **Add** to finish creating the action.
+10. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.
 
 ## Assign user groups
 
-To assign a compliance profile to users, choose a profile that you have configured. Existing profiles can be found in the Compliance –Profiles blade.
+To assign a compliance profile to users, choose a profile that you have configured. Existing profiles can be found in the **Compliance –Profiles** blade.
 
-1. Choose the profile and in the profile blade, choose **Assignments**. This opens the blade where you can select Azure Active Directory security groups and assign them to the profile.
-2. Choose Select groups to open the blade that displays the Azure AD security groups. Here you can find the security groups in your Azure Active Directory.  You can select the user groups you want this profile to apply to and choose **Select**. Choosing **Select** , deploys the profile to users.
+1. Choose the profile you want to assign to users and choose **Assignments**. This opens the blade where you can select **Azure Active Directory security groups** and assign them to the profile.
+2. Choose **Select groups** to open the blade that displays the Azure AD security groups.  Choosing **Select**  deploys the profile to users.
 
 You have applied the profile to users.  The devices used by the users who are targeted by the profile will be evaluated for compliance.
 
-## Compliance profile settings for iOS
+## Compliance profile settings
 
 ## System security settings
 
@@ -89,7 +87,7 @@ You have applied the profile to users.  The devices used by the users who are ta
 
 - **Require a password to unlock mobile devices** : Set this to **Yes** to require the user to enter a password before they can access their device. iOS devices that use a password are encrypted.
 - **Allow simple passwords** : Set this to **Yes** to let the user create a simple password like **1234** or **1111**.
-- **Minimum password length** : Specify the minimum number of digits or characters that the user&#39;s password must have.
+- **Minimum password length** : Specify the minimum number of digits or characters that the password must have.
 - **Required password type** : Specify whether the user must create an **Alphanumeric** password or a **Numeric** password.
 - **Minimum number of character sets** : If you set **Required password type** to **Alphanumeric** , use this setting to specify the minimum number of character sets that the password must have. The four character sets are:
   - Lowercase letters
@@ -102,7 +100,7 @@ Setting a higher number will require the user to create a password that is more 
 For iOS devices, this setting refers to the number of special characters (for example, **!** , **#** , **&amp;** ) that must be included in the password.
 
 - **Minutes of inactivity before password is required** : Specify the idle time before the user must reenter their password.
-- **Password expiration (days)**: Select the number of days before the user&#39;s password expires and they must create a new one.
+- **Password expiration (days)**: Select the number of days before the password expires and they must create a new one.
 - **Remember password history** : Use this setting in conjunction with **Prevent reuse of previous passwords** to restrict the user from creating previously used passwords.
 - **Prevent reuse of previous passwords** : If you selected **Remember password history** , specify the number of previously used passwords that cannot be reused.
 - **Require a password when the device returns from an idle state** : Use this setting together with the in the **Minutes of inactivity before password is required** setting. The user is prompted to enter a password to access a device that has been inactive for the time specified in the **Minutes of inactivity before password is required** setting.
@@ -127,4 +125,4 @@ For details about email profiles, see [Configure access to corporate email using
 
 ## Next steps
 
-How to monitor device compliance
+[How to monitor device compliance](monitor-device-compliance.md)

@@ -29,16 +29,16 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-You can view the Summary of the status of your compliance profiles in the Overview blade.
-You can interactively click through the charts to drill down into the details. If you have multiple compliance profiles configured, you can also view the status for each policy by going to the policy blade and choosing Reports from the Manage section.  The details of the reports available for the preview are listed below.
+You can view the summary of the status of your **compliance profiles** in the **Overview** blade.
+You can interactively click through the charts to drill down into the details. If you have multiple compliance profiles configured, you can also view the status for each policy by going to the policy blade and choosing **Reports** in the **Manage** section.  The details of the reports available for the preview are listed below.
 
 ##  Device compliance
 
 The summarized view of the device compliance report shows starts with showing you the aggregated information about the number of devices that are reporting as one of the following:
 
-- Compliant: Device has been evaluated for compliance recently and has been determined as compliant with the compliance profile settings you specified.
-- Noncompliant: The device has been evaluated and determined as noncompliant.  If there was a grace period specified in the profile, the grace period has expired putting the device in a noncompliant status.
-- Grace period: Device has been evaluated and determined as noncompliant. However, the grace period still applies before the device is actually marked as noncompliant.
+- **Compliant**: Device has been evaluated for compliance recently and has been determined as compliant with the compliance profile settings you specified.
+- **Noncompliant**: The device has been evaluated and determined as noncompliant.  If there was a grace period specified in the profile, the grace period has expired putting the device in a noncompliant status.
+- **Grace period**: Device has been evaluated and determined as noncompliant. However, the grace period still applies before the device is actually marked as noncompliant.
 
 You can drill down on each section to see more details on the individual devices and users.
 
@@ -46,7 +46,7 @@ You can drill down on each section to see more details on the individual devices
 
 The setting compliance report provides the details for each compliance settings such as:
 
-- Number of devices that are noncompliant with the setting
-- The platform that the setting is applied to
+- Number of devices that are noncompliant with the setting.
+- The platform that the setting is applied to.
 
 You can drill down on each of the setting to see more information about the profiles on which these settings have been enabled, and the configured the value of the setting.
