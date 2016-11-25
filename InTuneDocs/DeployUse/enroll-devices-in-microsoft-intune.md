@@ -32,14 +32,15 @@ If you use [Exchange ActiveSync](#mobile-device-management-with-exchange-actives
 
 ## Overview of device enrollment methods
 
-The following table shows Intune's enrollment methods with their supported capabilities. These capabilities include:
-- **Wipe** - Factory reset the device, removing all data. For more information, see [Retire devices](retire-devices-from-microsoft-intune-management.md).
+The following table shows Intune enrollment methods and the supported capabilities and requirements of each method. The capabilities and requirements are described below.
+
+- **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data. For more information, see [Retire devices](retire-devices-from-microsoft-intune-management.md).
 - **Affinity** - Associates devices with users. Required for mobile application management (MAM) and conditional access to company data. For more information, see [User affinity](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices).
 - **Lock** - Prevents users from removing the device from management. iOS devices require Supervised mode for Lock. For more information, see [Remote lock](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
 
 **iOS enrollment methods**
 
-| **Method** |	**Wipe** |	**Affinity**	|	**Lock** | **Details** |
+| **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|	Yes |	No | [More information](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|	No |No |No	| [More information](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
@@ -49,14 +50,14 @@ The following table shows Intune's enrollment methods with their supported capab
 
 **Windows enrollment methods**
 
-| **Method** |	**Wipe** |	**Affinity**	|	**Lock** | **Details**|
+| **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Yes|	Yes |	No | [More information](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|	No |No |No	|[More information](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android enrollment methods**
 
-| **Method** |	**Wipe** |	**Affinity**	|	**Lock** | **Details**|
+| **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|	Yes |	No | [More information](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|	No |No |No	|[More information](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|

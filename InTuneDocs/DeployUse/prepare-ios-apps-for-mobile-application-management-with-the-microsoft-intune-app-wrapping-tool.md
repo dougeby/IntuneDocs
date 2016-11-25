@@ -27,52 +27,56 @@ ms.suite: ems
 
 # Prepare iOS apps for mobile application management with the Intune App Wrapping Tool
 
-Use the Microsoft Intune App Wrapping Tool for iOS to change the behavior of in-house iOS apps by restricting features of the app without changing the code of the app itself.
+Use the Microsoft Intune App Wrapping Tool for iOS to change the behavior of in-house iOS apps by enabling Intune app protection features without changing the code of the app itself.
 
-The tool is a macOS command-line application that creates a wrapper around an app. Once an app is processed, you can change the app's functionality using Intune [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) that you set up.
+The tool is a macOS command-line application that creates a wrapper around an app. Once an app is processed, you can change the app's functionality using Intune [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) deployed by the IT administrator.
 
-To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
+To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) on GitHub.
 
 
 
-## Fulfill the prerequisites for using the App Wrapping Tool
-See [Skype for Business Online: Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to learn more about prerequisites and how to set them.
+## Fulfill the prerequisites for the App Wrapping Tool
+See the [How to obtain prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) blog post to learn more about how to obtain the prerequisites.
 
 |Requirement|More information|
 |---------------|--------------------------------|
-|Supported operating system and toolset|You must run the App Wrapping Tool on a macOS computer that runs OS X 10.8.5 or later and has the XCode toolset version 5 or later installed.|
-|Signing certificate and provisioning profile|You must have an Apple signing certificate and provisioning profile. See your [Apple developer documentation](https://developer.apple.com/).|
-|Processing an app with the App Wrapping Tool|Apps must be developed and signed by your company or an independent software vendor (ISV). You cannot use this tool to process apps from the Apple Store. Apps must be written for iOS 8.0 or later. Apps must also be in the Position Independent Executable (PIE) format. For more about the PIE format, see your Apple developer documentation. Lastly, the app must have the extension **.app** or **.ipa**.|
-|Apps the tool cannot process|Encrypted apps, unsigned apps, and apps with extended file attributes.|
+|Supported operating system and toolset | You must run the App Wrapping Tool on a macOS computer that runs OS X 10.8.5 or later and has the XCode toolset version 5 or later installed.|
+|Signing certificate and provisioning profile | You must have an Apple signing certificate and provisioning profile. See your [Apple developer documentation](https://developer.apple.com/).|
+|Processing an app with the App Wrapping Tool  |Apps must be developed and signed by your company or an independent software vendor (ISV). You cannot use this tool to process apps from the Apple Store. Apps must be written for iOS 8.0 or later. Apps must also be in the Position Independent Executable (PIE) format. For more about the PIE format, see your Apple developer documentation. Lastly, the app must have the extension **.app** or **.ipa**.|
+|Apps the tool cannot process | Encrypted apps, unsigned apps, and apps with extended file attributes.|
 |Setting entitlements for your app|Before you wrap the app, you must set entitlements, which give the app additional permissions and capabilities beyond those typically granted. See [Setting app entitlements](#setting-app-entitlements) for instructions.|
 
 ## Install the App Wrapping Tool
 
-1.  Download the files for the App Wrapping Tool from the Microsoft Intune App Wrapping Tool for iOS [repository hosted on GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) to a macOS computer.
+1.  Download the files for the App Wrapping Tool from [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) to a macOS computer.
 
 2.  Double-click **Microsoft Intune App Wrapping Tool for iOS.dmg**. A window with the End User License Agreement (EULA) will appear. Read the document carefully.
 
 3. Choose **Agree** to accept EULA, which mounts the package to your computer.
 
-4.  Open IntuneMAMPackager and save the files to a local folder on your macOS computer. You are now ready to run the App Wrapping Tool.
+4.  Open the **IntuneMAMPackager** folder and save its contents to your macOS computer. You are now ready to run the App Wrapping Tool.
 
 ## Run the App Wrapping Tool
-* Open a terminal and go to the folder where you saved the app wrapping tool files. The executable tool is named IntuneMAMPackager and is located in IntuneMAMPackager/Contents/MacOS. Run the command as follows:
 
-	```
+### Use terminal
+
+Open the macOS Terminal program and navigate to the folder where you saved the app wrapping tool files. The executable tool is named IntuneMAMPackager and is located in IntuneMAMPackager/Contents/MacOS. Run the command as follows:
+
+```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+```
 
-	```
+> [!NOTE]
+> Some parameters are optional as shown in the following table.
 
-    > [!NOTE]
-    > Some parameters are optional as shown in the following table.
+**Example:** The following example command runs the App Wrapping Tool on the app named MyApp.ipa. A provisioning profile and SHA-1 hash of the signing certificate are specified and used to sign the wrapped app. The output app (MyApp_Wrapped.ipa) is created and stored in your Desktop folder.
 
-    **Example:** The following example command runs the App Wrapping Tool on the MyApp.ipa app. A provisioning profile and SHA-1 hash are specified. The processed app (MyApp_Wrapped.ipa) is created and stored in your Desktop folder.
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
+```
 
-    ```
-    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
-    ```
-    You can use the following command line properties with the App Wrapping Tool:
+### Command-line parameters
+You can use the following command line parameters with the App Wrapping Tool:
 
 |Property|How to use it|
 |---------------|--------------------------------|
@@ -108,20 +112,20 @@ In the IntuneMAMPackager/Contents/MacOS folder, open `Parameters.plist` (a blank
 
 Run the IntuneMAMPackager with the plist as the sole argument:
 
-```
+```bash
 ./IntuneMAMPackager –f Parameters.plist
 ```
 
-* After processing finishes, the message "The application was successfully wrapped" will be displayed.
+### Post-wrapping
 
-    If an error occurs, see [Error messages](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#error-messages) for help.
+After the wrapping process completes, the message "The application was successfully wrapped" will be displayed. If an error occurs, see [Error messages](#error-messages-and-log-files) for help.
 
-*   The wrapped app is saved in the output folder you specified previously. You can upload the app into [wit_nextref](../includes/wit_nextref_md.md) and associate it with a mobile application management policy.
+The wrapped app is saved in the output folder you specified previously. You can upload the app to the Intune admin console and associate it with a mobile application management policy.
 
-    > [!IMPORTANT]
-    > When uploading a wrapped app, you can try to update an older version of the app if an older (wrapped or native) version was already deployed to Intune. If you experience an error, upload the app as a new app and delete the older version.
+> [!IMPORTANT]
+> When uploading a wrapped app, you can try to update an older version of the app if an older (wrapped or native) version was already deployed to Intune. If you experience an error, upload the app as a new app and delete the older version.
 
-    You can now deploy the app to your [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] groups, and the app will run on the device using the app restrictions you specify.
+You can now deploy the app to your user groups and target app protection policies to the app. The app will run on the device using the app protection policies you specified.
 
 ## Error messages and log files
 Use the following information to troubleshoot issues you have with the app wrapping tool.
@@ -171,13 +175,13 @@ Apps that have been wrapped by using the App Wrapping Tool generate logs that ar
 
 ### Certificate, provisioning profile, and authentication requirements
 
-The App Wrapping Tool has some requirements that must be met in order to guarantee full functionality.
+The App Wrapping Tool for iOS has some requirements that must be met in order to guarantee full functionality.
 
 |Requirement|Details|
 |---------------|-----------|
-|Provisioning profile|Make sure that the provisioning profile is valid before you include it. The App Wrapping Tool does not check whether the provisioning profile is expired when processing an iOS app. If an expired provisioning profile is specified, the app wrapping tool will include the expired provisioning profile, and you will not know there is a problem until the app fails to install on an iOS device.|
-|Certificate|Make sure that the certificate is valid before you specify it. The tool does not check whether a certificate is expired when processing iOS apps. If the hash for an expired certificate is provided, the tool will process and sign the app, but it will fail to install on devices.<br /><br />Make sure that the certificate provided for signing the packaged application has a match in the provisioning profile. The tool does not validate if the provisioning profile has a match for the certificate provided for signing the wrapped application.|
-|Authentication|A device must have a PIN for encryption to work. On devices to which you have deployed a wrapped app, touching the status bar on the device will require the user to re-authenticate with [wit_nextref](../includes/wit_nextref_md.md). The default policy in a wrapped app is *authentication on re-launch*. iOS handles any external notification (like a phone call) by exiting the app and then re-launching it.
+|iOS provisioning profile|Make sure that the provisioning profile is valid before you include it. The App Wrapping Tool does not check whether the provisioning profile is expired when processing an iOS app. If an expired provisioning profile is specified, the app wrapping tool will include the expired provisioning profile, and you will not know there is a problem until the app fails to install on an iOS device.|
+|iOS signing certificate|Make sure that the signing certificate is valid before you specify it. The tool does not check whether a certificate is expired when processing iOS apps. If the hash for an expired certificate is provided, the tool will process and sign the app, but it will fail to install on devices.<br /><br />Make sure that the certificate provided for signing the wrapped app has a match in the provisioning profile. The tool does not validate if the provisioning profile has a match for the certificate provided for signing the wrapped application.|
+|Authentication|A device must have a PIN for encryption to work. On devices to which you have deployed a wrapped app, touching the status bar on the device will require the user to sign in again with a work or school account. The default policy in a wrapped app is *authentication on re-launch*. iOS handles any external notification (like a phone call) by exiting the app and then re-launching it.
 
 
 ## Setting app entitlements
@@ -200,27 +204,27 @@ Before wrapping your app, you can grant *entitlements* to give the app additiona
 
 1.  Enable capabilities in your app:
 
-    1.  In Xcode, go to your app’s target, and click **Capabilities**.
+    a.  In Xcode, go to your app’s target, and click **Capabilities**.
 
-    2.  Turn on the appropriate capabilities. For detailed information about each capability and how to determine the correct values, see [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in the iOS Developer Library.
+    b.  Turn on the appropriate capabilities. For detailed information about each capability and how to determine the correct values, see [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in the iOS Developer Library.
 
-    3.  Note any IDs that you created during the process.
+    c.  Note any IDs that you created during the process.
 
-    4.  Build and sign your app to be wrapped.
+    d.  Build and sign your app to be wrapped.
 
 2.  Enable entitlements in your provisioning profile:
 
-    1.  Sign in to the Apple Developer Member Center.
+    a.  Sign in to the Apple Developer Member Center.
 
-    2.  Create a provisioning profile for your app. For instructions, see [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
+    b.  Create a provisioning profile for your app. For instructions, see [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
 
-    3.  In your provisioning profile, enable the same entitlements that you have in your app. You will need to supply the same IDs that you specified during the development of your app.
+    c.  In your provisioning profile, enable the same entitlements that you have in your app. You will need to supply the same IDs that you specified during the development of your app.
 
-    4.  Finish the provisioning profile wizard and download your file.
+    d.  Finish the provisioning profile wizard and download your file.
 
 3.  Ensure that you have satisfied all the prerequisites, and then wrap the app.
 
-### Troubleshooting common errors with entitlements
+### Troubleshoot common errors with entitlements
 If the App Wrapping Tool for iOS shows an entitlement error, try the following troubleshooting steps.
 
 |Issue|Cause|Resolution|
@@ -228,7 +232,7 @@ If the App Wrapping Tool for iOS shows an entitlement error, try the following t
 |Failed to parse entitlements generated from the input application.|The App Wrapping Tool cannot read the entitlements file that was extracted from the app. The entitlements file might be malformed.|Inspect the entitlements file for your app. The following instructions explain how to do so. When inspecting the entitlements file, check for any malformed syntax. The file should be in XML format.|
 |Entitlements are missing in the provisioning profile (missing entitlements are listed). Repackage the app with a provisioning profile that has these entitlements.|There is a mismatch between the entitlements enabled in the provisioning profile and the capabilities enabled in the app. This mismatch also applies to the IDs associated with particular capabilities (like app groups and keychain access).|Generally, you can create a new provisioning profile that enables the same capabilities as the app. When IDs between the profile and app don't match, the App Wrapping Tool will replace the IDs if it is able to. If you still get this error after creating a new provisioning profile, you can try  removing entitlements from the app by using the –e parameter (see Using the –e parameter to remove entitlements from an app section).|
 
-### Finding the existing entitlements of a signed app
+### Find the existing entitlements of a signed app
 To review the existing entitlements of a signed app and provisioning profile:
 
 1.  Find the .ipa file and change its the extension to .zip.
@@ -259,7 +263,7 @@ Use the following security and privacy best practices when you use the App Wrapp
 
 -   The signing certificate, provisioning profile, and the line-of-business app you specify must be on the same macOS machine that you use to run the app wrapping tool. If the files are on a UNC path, ensure that these are accessible from the macOS machine. The path must be secured via IPsec or SMB signing.
 
-    The wrapped application imported into the [wit_nextref](../includes/wit_nextref_md.md) console should be on the same computer that you run the tool on. If the file is on a UNC path, ensure that it is accessible on the computer running the [wit_nextref](../includes/wit_nextref_md.md) console. The path must be secured via IPsec or SMB signing.
+    The wrapped application imported into the admin console should be on the same computer that you run the tool on. If the file is on a UNC path, ensure that it is accessible on the computer running the admin console. The path must be secured via IPsec or SMB signing.
 
 -   The environment where the App Wrapping Tool is downloaded from the GitHub repository needs to be secured via IPsec or SMB signing.
 
