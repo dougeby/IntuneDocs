@@ -48,11 +48,14 @@ You can remove the device registration either through the Azure AD admin console
 
 ## MAM CA with conditional access based on device compliance  
 
-You can configure [Conditional access based on device compliance](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**Device CA**) on the [Intune administrator console](https://manage.microsoft.com) or the [Azure AD Premium management console] (https://manage.windowsazure.com). Device CA require users to connect to Exchange Online only through Intune-managed  devices that are compliant with the Intune device compliance policy or domain-joined PCs.  If a user belongs to one or more security groups that are targeted for both  MAM CA and Device CA policies, the user must meet one of the two requirements:
+You can configure [Conditional access based on device compliance](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**Device CA**) on the [Intune administrator console](https://manage.microsoft.com) or the [Azure AD Premium management console] (https://manage.windowsazure.com). Device CA require users to connect to Exchange Online and SharePoint Online only through Intune-managed  devices that are compliant with the Intune device compliance policy or domain-joined PCs.  If a user belongs to one or more security groups that are targeted for both  MAM CA and Device CA policies, the user must meet one of the two requirements:
 * The app used to access the service is a mobile app that is supported by MAM CA, and the device that the app is running on, has **iOS Authenticator (for iOS devices)**, or the **Company Portal app (for Android devices)** installed.
 * The device used to access the service is **Intune-managed and compliant** with the Intune device compliance policy, or it is a **domain-joined PC**.  Here are some examples to help illustrate this:
-  * If a user tries to connect from the **native iOS email app**, he or she will be required to be on a **managed and compliant device** since the native mail app is not supported by MAM CA.
-  * If a user tries to connect from a **Windows home PC**, the **Device CA policy** will apply, requiring that the he or she must use a domain-joined PC.
+* If a user is targeted by both a MAM CA policy and a Device CA policy and tries to connect from the **OneDrive app**, they will be able to access company files on **SharePoint online** if one of the two following conditions is true:
+  * OneDrive is supported by MAM CA.
+  * The device that is used to access is compliant with the Intune device compliance policy.
+* If a user tries to connect from the **native iOS email app**, he or she will be required to be on a **managed and compliant device** since the native mail app is not supported by MAM CA.
+* If a user tries to connect from a **Windows home PC**, the **Device CA policy** will apply, requiring that the he or she must use a domain-joined PC.
 
 
 
