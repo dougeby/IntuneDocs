@@ -6,7 +6,7 @@ description: Learn about some of the terminology in Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 03/11/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

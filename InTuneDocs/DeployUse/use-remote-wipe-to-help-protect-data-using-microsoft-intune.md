@@ -4,7 +4,7 @@
 title: Use remote wipe to help protect data | Microsoft Intune
 description: Intune provides selective wipe and full wipe capabilities to remove sensitive corporate data and remove access to many corporate resources.
 keywords:
-author: NathBarnms.author: nathbarn
+author: staciebarkerms.author: staciebarker
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Help protect your data with full or selective wipe using Microsoft Intune
-Whether because a device is no longer needed, is being repurposed, or has gone missing, you can wipe apps and data from devices managed with Intune. To do this, Intune provides selective wipe and full wipe capabilities. Also, users can issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
+You can wipe apps and data from Intune-managed devices that are no longer needed, are being repurposed, or have gone missing. To do this, Intune provides selective wipe and full wipe capabilities. Users can also issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
 
   > [!NOTE]
   > This topic is only about wiping devices managed by Intune mobile device management. You can also use the [Azure portal](https://portal.azure.com) to [wipe company data from apps](wipe-managed-company-app-data-with-microsoft-intune.md). You can also [retire computers managed with the Intune client software](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
@@ -69,9 +69,28 @@ Whether because a device is no longer needed, is being repurposed, or has gone m
 
 If the device is on and connected, it takes less than 15 minutes for a wipe command to propagate across all device types.
 
+#### To delete devices in the Azure Active Directory portal
+
+1.  Browse to [http://aka.ms/accessaad](http://aka.ms/accessaad) or choose **Admin** &gt; **Azure AD** from [https://portal.office.com](https://portal.office.com).
+
+2.  Login with your Org ID using the link on the left side of the page.
+
+3.  Create an Azure Subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).
+
+4.  Select **Active Directory** and then select your organization.
+
+5.  Select the **Users** tab.
+
+6.  Select the user whose devices you want to delete.
+
+7.  Choose **Devices**.
+
+8.  Remove devices as appropriate, such as those that are no longer in use, or those that have inaccurate definitions.
+
+
 ## Selective wipe
 
-**Selective wipe** removes company data, including mobile app management (MAM) data where applicable, settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device. The device is removed from Intune. The following tables describe what data is removed, and the effect on data that remains on the device after a selective wipe. (The tables are organized by platform.)
+**Selective wipe** removes company data, including mobile app management (MAM) data (where applicable), settings, and email profiles from a device. Selective wipe leaves the user's personal data on the device. The device is removed from Intune. The following tables describe what data is removed, and the effect on data that remains on the device after a selective wipe. (The tables are organized by platform.)
 
 **iOS**
 
@@ -82,7 +101,8 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |Wi-Fi and VPN profile settings|Removed.|
 |Certificate profile settings|Certificates are removed and revoked.|
 |Management Agent|Management profile is removed.|
-|Email|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
+|Email|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted. If Microsoft Exchange is hosted on premises, email profiles and cached email are not removed.|
+|Outlook|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|
 |Azure Active Directory (AAD) Unjoin|AAD Record is removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
 
@@ -100,6 +120,7 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|
 |Management Agent|Device Administrator privilege is revoked.|Device Administrator privilege is revoked.|
 |Email|Email received by the Microsoft Outlook app for Android is removed.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
+|Outlook|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|
 |Azure Active Directory (AAD) Unjoin|AAD Record removed.|AAD Record removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
 
@@ -111,7 +132,7 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |Settings|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|Configurations that were set by Intune policy are no longer enforced, and users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed.|Removed.|Not supported.|Removed.|
 |Certificate profile settings|Certificates removed and revoked.|Certificates removed and revoked.|Not supported.|Certificates removed and revoked.|
-|Email|Removes email that is EFS enabled, which includes the Mail app for Windows email and attachments.|Not supported.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|Removes email that is EFS enabled, which includes the Mail app for Windows email and attachments. Removes mail accounts that were provisioned by Intune.|
+|Email|Removes email that is EFS enabled, which includes the Mail app for Windows email and attachments.|Not supported.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|Removes email that is EFS enabled, which includes the Mail app for Windows email and attachments. Removes mail accounts that were provisioned by Intune.</br>**Exception**: If Microsoft Exchange is hosted on premises, email accounts are not removed.|
 |Azure Active Directory (AAD) Unjoin|No.|No.|AAD Record removed.|Not applicable. Windows 10 does not support selective wipe for Azure Active Directory joined devices.|
 
 ## Wipe encryption file system (EFS)-enabled content

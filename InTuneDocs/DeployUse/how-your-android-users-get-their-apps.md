@@ -6,7 +6,7 @@ description: Methods for making Android apps available to end users
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.suite: ems
 # How your Android users get their apps
 Use this information to understand how and where your Android end users get the apps that you distribute through Microsoft Intune. The information can vary by device type (native Android devices or Samsung Knox Standard devices).
 
-## Native (non-Samsung Knox) Android devices
+## Native (non-Samsung Knox Standard) Android devices
 
 | App type | Line-of-business (LOB) apps | Play Store apps  |
 | ------------- |-------------| -----|

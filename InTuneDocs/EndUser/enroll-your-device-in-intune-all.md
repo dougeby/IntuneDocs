@@ -9,7 +9,7 @@ manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 
@@ -36,5 +36,3 @@ To see enrollment instructions, use the link that matches the type of device you
 - [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md)
 - [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md)
 - [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)
-
-

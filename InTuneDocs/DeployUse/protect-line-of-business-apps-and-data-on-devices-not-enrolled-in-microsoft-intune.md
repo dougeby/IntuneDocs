@@ -6,10 +6,10 @@ description: This topic describes how you can prepare your custom line-of-busine
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 

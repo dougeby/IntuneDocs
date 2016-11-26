@@ -6,7 +6,7 @@ description: This topic explains how  mobile app management policies can help pr
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
