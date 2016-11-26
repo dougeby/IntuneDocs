@@ -107,8 +107,5 @@
 
 
 # [Conditional access](/intune-azure/conditional-access/what-is)
-## [What is](/intune-azure/conditional-access/what-is)
-## [Get started](/intune-azure/conditional-access/get-started)
-## [Plan and design](/intune-azure/conditional-access/plan-and-design)
-## [How to](/intune-azure/conditional-access/how-to)
-## [Troubleshoot](/intune-azure/conditional-access/troubleshooting)
+## [What is conditional access](/intune-azure/conditional-access/what-is-conditional-access)
+## [How to create a conditional access policy](/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises)
