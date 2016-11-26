@@ -60,9 +60,9 @@ The table below describes how noncompliant settings are managed when a complianc
 
 ## Create a compliance profile in the Azure portal
 
-1. From the **Intune** blade, choose **Set Device compliance**. In the **Manage** section of the **Compliance** blade, choose **All device compliance profiles**, and choose **Create**.
+1. From the **Intune** blade, choose **Set Device compliance**. Under **Manage**, choose **All device compliance profiles**, and choose **Create**.
 2. Type a name, description and choose the platform that you want this profile to apply to.
-3. Choose compliance requirements to open the Compliance requirement blade.  You can specify the **Security**, **Device health**, and **Device property** settings. When you are done, choose **OK**.
+3. Choose **Compliance requirements** to specify the **Security**, **Device health**, and **Device property** settings. When you are done, choose **OK**.
 4. You are now back in the **Compliance requirements** blade. Choose **OK**.
 5. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this profile.
 6. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
