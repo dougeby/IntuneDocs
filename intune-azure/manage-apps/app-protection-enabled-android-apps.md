@@ -6,12 +6,12 @@ description: This topic describes what to expect when your app is managed by mob
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
+ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 
 # optional metadata
 

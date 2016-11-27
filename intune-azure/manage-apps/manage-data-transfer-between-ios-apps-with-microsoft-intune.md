@@ -6,12 +6,12 @@ description: Use this topic to understand how you can use the iOS Open in featur
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
+ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 
 # optional metadata
 

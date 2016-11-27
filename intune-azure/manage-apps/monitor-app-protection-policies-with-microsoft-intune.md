@@ -6,12 +6,12 @@ description: See how many users have the policy, and drill down to find more det
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
+ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 
 # optional metadata
 

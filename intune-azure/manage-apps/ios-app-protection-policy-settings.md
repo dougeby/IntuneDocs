@@ -7,12 +7,12 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
+ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 
 # optional metadata
 

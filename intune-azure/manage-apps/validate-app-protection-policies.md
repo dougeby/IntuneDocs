@@ -6,12 +6,12 @@ description: This topics describes how you can test and validate if your MAM pol
 keywords:
 author: karthikaramanms.author: karaman
 manager: angerobe
-ms.date: 08/16/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
+ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 
 # optional metadata
 
@@ -46,7 +46,7 @@ If testing shows that your MAM policy behavior is not as anticipated, we recomme
 
 2. Choose a user from the list or search for and choose a user, then choose **Select user**. At the top of the **App reporting** column you will see whether the user is licensed for MAM. Below that you will see whether the user is licensed for O365 and the app status for all of the user's devices.
 
-![App statuts for MAM](..\media\ts-mam-user-apps.png) 
+![App statuts for MAM](..\media\ts-mam-user-apps.png)
 
 ### What to do
 Here are the actions to take based on the user status:

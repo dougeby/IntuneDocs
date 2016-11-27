@@ -6,12 +6,12 @@ description: This topic describes the mobile app management policy settings for 
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
+ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 
 # optional metadata
 

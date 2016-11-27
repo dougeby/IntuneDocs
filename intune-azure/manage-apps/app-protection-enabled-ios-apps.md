@@ -6,12 +6,12 @@ description: This topic describes what to expect when your iOS app is managed by
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
+ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 
 # optional metadata
 
