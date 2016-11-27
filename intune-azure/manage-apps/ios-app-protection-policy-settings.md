@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: iOS MAM policy settings | Microsoft Intune
-description: This topic describes the mobile app management policy settings for iOS devices.
+title: iOS app protection policy settings | Microsoft Intune
+description: This topic describes the app protection policy settings for iOS devices.
 keywords:
 author: karthikaraman
 ms.author: karaman
@@ -26,10 +26,10 @@ ms.suite: ems
 
 ---
 
-#  iOS mobile app management policy settings
-The policy settings described in this topic can be [configured](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for a mobile app management (MAM) policy on the **Settings** blade in the Azure portal.
+#  iOS app protection policy settings
+The policy settings described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal.
 
-There are two categories of policy settings: data relocation settings and access settings. In this topic, the term *policy-managed apps* refers to apps that are configured with MAM policies.
+There are two categories of policy settings: data relocation settings and access settings. In this topic, the term *policy-managed apps* refers to apps that are configured with app protection policies.
 
 ##  Data relocation settings
 
@@ -38,7 +38,7 @@ There are two categories of policy settings: data relocation settings and access
   Default value = **Yes**.
 
 - **Allow app to transfer data to other apps**: Choose one of the options to indicate the apps that can receive data from policy-managed apps:
-  - **Policy managed apps**: Allow transfer to only apps that have the MAM policy.
+  - **Policy managed apps**: Allow transfer to only apps that have the app protection policy.
   - **All apps**: Allow transfer to any app.
   - **None**: Do not allow data transfer to any app, including other policy-managed apps.
 
@@ -72,11 +72,9 @@ There are two categories of policy settings: data relocation settings and access
 
   For devices that are not enrolled in Intune, the web links in policy-managed apps can open only in the Managed Browser app.
 
-  If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
-
   Default value = **Yes**.
 
-- **Encrypt app data**: For apps that are associated with an Intune MAM policy, data is encrypted at rest through device-level encryption provided by the OS. When a PIN is required, the data is encrypted according to the settings in the MAM policy. As stated in Apple documentation, [the modules that iOS 7 uses are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).
+- **Encrypt app data**: For apps that are associated with an Intune app protection policy, data is encrypted at rest through device-level encryption provided by the OS. When a PIN is required, the data is encrypted according to the settings in the app protection policy. As stated in Apple documentation, [the modules that iOS 7 uses are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).
 
   In the policy settings, you can specify PIN encryption values. These values determine when the data is encrypted. The options are:
   -   **When device is locked**: All app data associated with this policy is encrypted while the device is locked.
@@ -92,7 +90,7 @@ There are two categories of policy settings: data relocation settings and access
 
   Default value = **Yes**.
 
-- **Disable printing**: Choose **Yes** to prevent printing company data from apps that are associated with the MAM policy.
+- **Disable printing**: Choose **Yes** to prevent printing company data from apps that are associated with the app protection policy.
 
     Default value = **Yes**.
 

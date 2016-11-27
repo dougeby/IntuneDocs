@@ -38,7 +38,19 @@
 ### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
 ### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
 ## [How to use app configuration policies](/intune-azure/manage-apps/app-configuration-policies)
-## [How to use app protection policies](/intune-azure/manage-apps/app-protection-policies)
+## [What is app protection policy](what-is-app-protection-policy.md)
+### [How to create and deploy app protection policies](/intune-azure/manage-apps/app-protection-policies)
+#### [Android app protection settings](/intune-azure/manage-apps/android-app-protection-policy-settings)
+#### [iOS app protection settings](/intune-azure/manage-apps/ios-app-protection-policy-settings)
+### [How to validate app protection policies](/intune-azure/manage-apps/validate-app-protection-policies)
+### [How to monitor app protection user status](/intune-azure/manage-apps/monitor-app-protection-policies-with-microsoft-intune)
+### [How to manage data transfer between iOS apps](/intune-azure/manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune)
+### [Android apps with app protection policies](/intune-azure/manage-apps/app-protection-enabled-android-apps)
+### [iOS apps with app protection policies](/intune-azure/manage-apps/app-protection-enabled-ios-apps)
+
+
+
+
 ## [How to selectively wipe apps](/intune-azure/manage-apps/app-selective-wipe)
 ## [How to work with volume-purchased apps](/intune-azure/manage-apps/volume-purchased-apps)
 ### [iOS VPP apps](/intune-azure/manage-apps/ios-vpp-apps)

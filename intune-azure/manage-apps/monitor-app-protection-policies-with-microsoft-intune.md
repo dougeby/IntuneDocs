@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Monitor MAM policies with Microsoft Intune | Microsoft Intune
+title: Monitor app protection policies with Microsoft Intune | Microsoft Intune
 description: See how many users have the policy, and drill down to find more details.
 keywords:
 author: karthikaramanms.author: karaman
@@ -25,13 +25,13 @@ ms.suite: ems
 
 ---
 
-# Monitor mobile app management policies with Microsoft Intune
-After you have set up a mobile app management (MAM) policy and applied it to users, you can monitor the compliance status in the [Azure portal](https://portal.azure.com). The Azure portal includes information about the users affected by the policy, the compliance status, and any issues that your users might be experiencing.
+# How to monitor app protection policy user status with Microsoft Intune
+After you have set up an mobile app protection policy and applied it to users, you can monitor the compliance status in the [Azure portal](https://portal.azure.com). The Azure portal includes information about the users affected by the policy, the compliance status, and any issues that your users might be experiencing.
 ## Summary view
-On the **Intune mobile application management** blade, you can see a summary of the compliance status:
+In the **Manage apps** workload, choose **Monitor** > **App protection user status**, to see the summary view:
 
 
-![Summary tile on the Intune mobile application management blade](../media/mam-azure-portal-user-status-summary.png)
+![Summary tile on the Intune mobile application management blade](../media/app-protection-user-status-summary.png)
 
 -   **Users**: The total number of users in your company who are using the apps that are associated with the policy.
 
@@ -49,7 +49,7 @@ You can get to the detailed view of the summary by choosing the **User status** 
 You can search for a single user and check the compliance status for that user. The **App reporting** blade shows the following information for a selected user:
 - Devices that are associated with the user account
 
-- Apps with a MAM policy on the device
+- Apps with an app protection policy on the device
 
 - Status:
 
@@ -58,21 +58,21 @@ You can search for a single user and check the compliance status for that user. 
   - **Not checked in**: The policy was deployed to the user, but the app has not been used in the work context since then.
 
 >[!NOTE]
-> If the user you searched for does not have the MAM policy deployed to them, you will see a message informing you that the user is not targeted for any app policies.
+> If the user you searched for does not have the app protection policy deployed to them, you will see a message informing you that the user is not targeted for any app policies.
 
 To see the reporting for a user, follow these steps:
 
 1.  To select a user, choose the **Summary** tile or choose the **APP REPORTING BY USER** option on the **Settings** blade:
 
-    ![App reporting option on the Settings blade](../media/mam-azure-portal-app-reporting-by-user-settings-blade.png)
+    ![App reporting option on the Settings blade](../media/app-protection-app-reporting-by-user-settings-blade.png)
 
 2. On the **App reporting** blade that opens, choose **Select user** to search for an Azure Active Directory user.
 
-    ![Select user option on the App reporting blade](../media/mam-azure-portal-app-reporting-select-user.png)
+    ![Select user option on the App reporting blade](../media/app-protection-app-reporting-select-user.png)
 
 3. Select the user from the list. You will see the details of the compliance status for that user.
 
-    ![App reporting details](../media/mam-azure-portal-app-reporting-by-user.png)
+    ![App reporting details](../media/app-protection-app-reporting-by-user.png)
 
 ### Flagged users
 The detailed view shows the error message, the app that was accessed when the error happened, the platform of the device, and a time stamp.  
@@ -80,5 +80,5 @@ The detailed view shows the error message, the app that was accessed when the er
 ### See also
 [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [What to expect when your Android app is managed by MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [What to expect when your iOS app is managed by MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by app protection policies](app-protection-enabled-android-apps.md)
+* [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-ios-apps.md)

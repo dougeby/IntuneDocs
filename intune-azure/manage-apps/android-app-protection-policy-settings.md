@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Android MAM policy settings | Microsoft Intune
-description: This topic describes the mobile app management policy settings for Android devices.
+title: Android app protection policy settings | Microsoft Intune
+description: This topic describes the app protection policy settings for Android devices.
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
@@ -25,9 +25,9 @@ ms.suite: ems
 
 ---
 
-# Android mobile app management policy settings in Microsoft Intune
-The policy settings that are described in this topic can be [configured](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for a mobile app management (MAM) policy on the **Settings** blade in the Azure portal.
-There are two categories of policy settings: data relocation settings and access settings. In this topic, the term *policy-managed apps* refers to apps that are configured with MAM policies.
+# Android app protection policy settings in Microsoft Intune
+The policy settings that are described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal.
+There are two categories of policy settings: data relocation settings and access settings. In this topic, the term *policy-managed apps* refers to apps that are configured with app protection policies.
 
 ##  Data relocation settings
 
@@ -35,7 +35,7 @@ There are two categories of policy settings: data relocation settings and access
 
   Default value = **Yes**
 - **Allow app to transfer data to other apps**: Choose one of the options to indicate which type of apps can receive company data from policy-managed apps:
-  -   **Policy managed apps**: Enables transfer to apps that have the MAM policy only.
+  -   **Policy managed apps**: Enables transfer to apps that have the app protection policy only.
   -   **All apps**: Enables transfer to any app.
   -   **None**: Does not allow data transfer to any app.
 
@@ -59,12 +59,10 @@ There are two categories of policy settings: data relocation settings and access
   Default value = **Policy managed apps with paste in**
 -   **Restrict web content to display in the Managed Browser**: Choose **yes** to specify that all links in the app will be opened in the Managed Browser app.
 
-  For devices that are not enrolled in Intune, links in policy-managed apps can only open in the Managed Browser app if you use the MAM policy.
-
-  If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
+  For devices that are not enrolled in Intune, links in policy-managed apps can only open in the Managed Browser app if you use the app protection policy.
 
   Default value = **Yes**
-- **Encrypt app data**: Choose **Yes** to enable encryption. When this setting is enabled, Microsoft provides encryption for apps that are associated with a MAM policy. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted.
+- **Encrypt app data**: Choose **Yes** to enable encryption. When this setting is enabled, Microsoft provides encryption for apps that are associated with an app protection policy. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted.
   >[!NOTE]
   >The encryption method is not FIPS 140-2 certified.
 
@@ -75,7 +73,7 @@ There are two categories of policy settings: data relocation settings and access
   When you do a selective wipe to remove company data, contacts that are synced directly between the app and the native address book are removed. Any contacts that are synced between the native address book to another external source cannot be wiped. Currently this applies only to the Microsoft Outlook app.
 
   Default value = **Yes**
-- **Disable printing**: Choose **Yes** to prevent the printing of company data from apps that are associated with the MAM policy.
+- **Disable printing**: Choose **Yes** to prevent the printing of company data from apps that are associated with the app protection policy.
 
   Default value = **Yes**
 
