@@ -50,7 +50,7 @@ You can configure MAM policies for apps running on devices that are:
 
 -   **They help protect your company data at the app level.** Because mobile application management doesn't require device management, you can protect company data on both managed and unmanaged devices. The management is centered on the user identity, which removes the requirement for device management.
 
--   **End user productivity is not impacted, and the policies aren't applied when you're using the app in a personal context.** The policies are applied only in a work context, which gives you the ability to protect company data without touching personal data.
+-   **User productivity is not impacted, and the policies aren't applied when you're using the app in a personal context.** The policies are applied only in a work context, which gives you the ability to protect company data without touching personal data.
 
 There are additional benefits to using MDM with MAM policies, and companies can use MAM with and without MDM at the same time. For example, an employee might use a company-issued phone, as well as a personal tablet. In this case, the company phone is enrolled in MDM and protected by MAM policies, and the personal device is protected by MAM policies only.
 
@@ -114,7 +114,7 @@ For BYOD devices that aren't enrolled in any MDM solution, MAM policies can help
 
 However, there are some limitations to be aware of:
 
--   You can't deploy apps to the device. The end user has to get the apps from the store.
+-   You can't deploy apps to the device. The user has to get the apps from the store.
 
 -   You can't provision certificate profiles on these devices.
 
@@ -125,7 +125,7 @@ However, there are some limitations to be aware of:
 
 Apps that support multi-identity let you use different accounts (work and personal) to access the same apps, while MAM policies are applied only when the apps are used in the work context.  
 
-For example, when an end user starts the OneDrive app by using their work account, they can't move the files to a personal storage location. However, when they use OneDrive with their personal account, they can copy and move data from their personal OneDrive without restrictions.  
+For example, when a user starts the OneDrive app by using their work account, they can't move the files to a personal storage location. However, when they use OneDrive with their personal account, they can copy and move data from their personal OneDrive without restrictions.  
 
 All Office mobile apps support multi-identity access.
 
