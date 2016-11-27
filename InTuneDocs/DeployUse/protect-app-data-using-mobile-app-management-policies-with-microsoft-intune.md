@@ -130,6 +130,6 @@ For example, when an end user starts the OneDrive app by using their work accoun
 All Office mobile apps support multi-identity access.
 
 ##  Next steps
-[Get ready to configure mobile application management policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+- [Get ready to configure mobile application management policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-[Create and deploy mobile application management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+- [Create and deploy mobile application management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
