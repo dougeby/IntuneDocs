@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# What is app protection policies in Microsoft Intune?
+# What is Microsoft Intune app protection policies?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -75,13 +75,14 @@ Windows devices are currently not supported. However, when you enroll Windows 10
 
 ####  Apps without App protection policies:
 
-![Image that shows data can move freely between apps when there are no App protection policies in place](../media/Apps_without_MAM_policies.png)
+![Image that shows data can move freely between apps when there are no App protection policies in place](../media/apps-without-protection-policies.png)
 
 When apps are used without restrictions, company and personal data can get intermingled.  Company data could end up in locations like personal storage or transferred to apps outside of your  purview,  resulting in data loss. The arrows in the diagram show unrestricted data movement between apps (corporate and personal) and to storage locations.
 
 ### Data protection with App protection policies:
 
-![Image that shows how company data is protect when App protection policies are applied ](../media/Apps_with_mobile_app_policies.png)
+![Image that shows how company data is protect when App protection policies are applied ](../media/apps-with-protection-policies.png)
+
 
 You can use App protection policies to prevent company data from saving to the local storage of the device, and restrict data movement to other apps that are not protected by App protection policies. App protection policy settings include:
 - Data relocation policies like
@@ -90,7 +91,7 @@ You can use App protection policies to prevent company data from saving to the l
 
 ### Data protection with App protection policies on devices managed by a MDM solution:
 
-![Image that shows how App protection policies work on BYOD devices](../media/MAM_BYOD_November.png)
+![Image that shows how App protection policies work on BYOD devices](../media/app-protection-policies-with-mdm.png)
 
 **For devices enrolled in an MDM solution**-
 
@@ -115,7 +116,7 @@ The MDM solution:
 
 ### Data protection with App protection policies for devices without enrollment
 
-![Image that shows how App protection policies work on managed devices](../media/MAM_ManagedDevices_November.png)
+![Image that shows how App protection policies work on managed devices](../media/app-protection-policies-without-mdm.png)
 
 The diagram above illustrates how the data protection policies work at the app level without MDM.
 
@@ -139,4 +140,4 @@ All Office mobile apps support multi-identity.
 
 ##  Next steps
 
-[Create and deploy  app protection policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+[How to create and deploy app protection policies with Microsoft Intune](app-protection-policies.md)
