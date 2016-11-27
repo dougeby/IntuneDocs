@@ -118,6 +118,6 @@
 ## [How to monitor device compliance](/intune-azure/set-device-compliance/monitor-device-compliance)
 
 
-# [Conditional access](/intune-azure/conditional-access/what-is)
+# [Conditional access](/intune-azure/conditional-access/what-is-conditional-access)
 ## [What is conditional access](/intune-azure/conditional-access/what-is-conditional-access)
 ## [How to create a conditional access policy](/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises)
