@@ -38,7 +38,7 @@
 ### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
 ### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
 ## [How to use app configuration policies](/intune-azure/manage-apps/app-configuration-policies)
-## [What is app protection policy](what-is-app-protection-policy.md)
+## [What is app protection policy](/intune-azure/manage-apps/what-is-app-protection-policy.md)
 ### [How to create and deploy app protection policies](/intune-azure/manage-apps/app-protection-policies)
 #### [Android app protection settings](/intune-azure/manage-apps/android-app-protection-policy-settings)
 #### [iOS app protection settings](/intune-azure/manage-apps/ios-app-protection-policy-settings)
