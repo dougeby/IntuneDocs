@@ -2,7 +2,7 @@
 # required metadata
 
 title: Protect app data using MAM policies | Microsoft Intune
-description: This topic explains how  mobile application management policies can help protect your company data, prevent data loss, and keep personal and work information separate.
+description: This topic explains how mobile application management policies can help protect your company data, prevent data loss, and keep personal and work information separate.
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
@@ -28,7 +28,7 @@ ms.suite: ems
 # Protect app data using mobile application management policies with Microsoft Intune
 
 ## How you can protect app data
-Your employees use mobile devices for both personal and work tasks. While making sure your employees can be productive, you also want to prevent data loss, intentional and unintentional.  In addition, you want to have the ability to protect company data that employees access by using devices that you don't manage.
+Your employees use mobile devices for both personal and work tasks. While making sure your employees can be productive, you also want to prevent data loss—intentional and unintentional.  In addition, you want to have the ability to protect company data that employees access by using devices that you don't manage.
 
 You can use Intune mobile application management (MAM) policies to help protect your company’s data. Because Intune MAM policies can be used **independent of any mobile device management (MDM) solution**, you can use MAM to protect your company’s data with or without enrolling devices in a device management solution. By implementing **app-level policies**, you can restrict access to company resources and keep data within the purview of your IT department.
 
@@ -56,7 +56,7 @@ There are additional benefits to using MDM with MAM policies, and companies can 
 
 - **MDM makes sure that the device is protected.** For example, you can require a PIN to access the device, or you can deploy managed apps to the device. You can also deploy apps to devices through your MDM solution to give you more control over app management.
 
-- **MAM policies make sure that the app-layer protections are in place.** For example, you can have a policy to require a PIN to open an app in a work context, to prevent data from being shared between apps, or to prevent company app data from being saved to a personal storage location.
+- **MAM policies make sure that the app-layer protections are in place.** For example, you can have a policy to require a PIN to open an app in a work context, a policy to prevent data from being shared between apps, or a policy to prevent company app data from being saved to a personal storage location.
 
 ## Devices that support MAM
 MAM policies are currently supported on:
@@ -66,11 +66,11 @@ MAM policies are currently supported on:
 Windows devices are currently not supported.
 ##  How MAM policies protect app data
 
-####  Apps without MAM policies
+###  Apps without MAM policies
 
 ![Image that shows how data can move freely between apps when there are no MAM policies in place](../media/Apps_without_MAM_policies.png)
 
-When you use apps without restrictions, company and personal data can get intermingled. Company data might end up in locations like personal storage or be transferred to apps outside of your purview, which could result in data loss. The arrows in the diagram show unrestricted data movement between apps (corporate and personal) and to storage locations.
+When you use apps without restrictions, company and personal data can get intermingled. Company data might end up in locations like personal storage or might be transferred to apps outside of your purview, which could result in data loss. The arrows in the diagram show unrestricted data movement between apps (corporate and personal) and to storage locations.
 
 ### Data protection with MAM policies
 
