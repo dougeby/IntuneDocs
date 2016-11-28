@@ -1,5 +1,5 @@
 # Introduction
-## [What is Intune](/intune-azure/introduction/what-is-microsoft-intune)
+## [What is the Azure portal preview](/intune-azure/introduction/what-is-microsoft-intune)
 <!---## [Get started](/intune-azure/introduction/get-started)
 ## [What's new](/intune-azure/introduction/whats-new)
 ## [Get support](/intune-azure/introduction/get-support)
