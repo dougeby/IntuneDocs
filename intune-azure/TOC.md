@@ -14,6 +14,7 @@
 ## [Plan and design](/intune-azure/enroll-devices/plan-and-design)
 ## [How to](/intune-azure/enroll-devices/how-to)
 ### [How to use device group mapping](/intune-azure/enroll-devices/how-to-use-device-group-mapping)
+### [How to use Windows Hello for Business](/intune-azure/enroll-devices/how-to-use-windows-hello)
 ## [Troubleshoot](/intune-azure/enroll-devices/troubleshooting)
 
 # [Manage devices](/intune-azure/manage-devices/what-is)
