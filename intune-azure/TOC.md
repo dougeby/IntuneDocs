@@ -13,6 +13,7 @@
 ## [Get started](/intune-azure/enroll-devices/get-started)
 ## [Plan and design](/intune-azure/enroll-devices/plan-and-design)
 ## [How to](/intune-azure/enroll-devices/how-to)
+### [How to use device group mapping](/intune-azure/enroll-devices/how-to-use-device-group-mapping)
 ## [Troubleshoot](/intune-azure/enroll-devices/troubleshooting)
 
 # [Manage devices](/intune-azure/manage-devices/what-is)
@@ -26,11 +27,11 @@
 ## [What is users and groups management](/intune-azure/manage-users/what-is)
 <!--- ## [Get started](/intune-azure/manage-users/get-started)
 ## [Plan and design](/intune-azure/manage-users/plan-and-design) --->
-## [How to use device group mapping](/intune-azure/manage-users/how-to-use-device-group-mapping)
+
 <!--- ## [Troubleshoot](/intune-azure/manage-users/troubleshooting) --->
 
 # [Manage apps](/intune-azure/manage-apps/what-is)
-## [What is app management](/intune-azure/manage-apps/what-is)
+## [What is app management](/intune-azure/manage-apps/what-is-app-management)
 <!--- ## [Get started](/intune-azure/manage-apps/get-started)
 ## [Plan and design](/intune-azure/manage-apps/plan-and-design) --->
 ## [How to add and deploy apps](/intune-azure/manage-apps/add-apps)
