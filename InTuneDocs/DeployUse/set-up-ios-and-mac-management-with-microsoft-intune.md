@@ -6,7 +6,7 @@ description: Enable mobile device management (MDM) for iOS devices including iPa
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,8 +26,6 @@ ms.suite: ems
 ---
 
 # Set up iOS and Mac device management
-For help to set up your iOS or Mac device, see [Using your iOS or Mac OS X device with Intune](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md).
-
 Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X devices and gives users access to company email and apps. An Apple Push Notification service (APNs) certificate is required for Intune to manage iOS and Mac devices. After the certificate is added to Intune, users can install the Company Portal app to enroll their devices, or the admin can set up [corporate-owned iOS device management](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Set up Intune**<br>
@@ -41,14 +39,20 @@ Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X de
 3.  **Get an Apple Push Notification service certificate**<br>
     Go to the [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844), and sign in with your company Apple ID to create the APNs certificate by using the .csr file. After choosing **Upload** on Apple's Push Certificate Portal, you will receive a .json file that cannot be used for APNs. Complete the download, return to the Apple Push Certificates Portal for **Certificates for Third-Party Servers**, and then choose **Download**.
 
-    Download the APNs (.pem) certificate, and save the file locally. This Apple ID must be used later to renew your APNs certificate.
+    Download the APNs (.pem) certificate, and save the file locally. 
+
+	> [!NOTE]
+	> Every year, you need to renew (not replace) this APNs certificate. Use this same Apple ID to sign in to Apple's Push Certificate Portal to renew the certificate, and then use the same instructions in this topic to download the certificate, and then upload it to Intune.
 
 4.  **Add the APNs certificate to Intune**<br>
     In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **iOS and Mac OS X** &gt; **Upload an APNs Certificate**, and then choose **Upload the APNs certificate**. Go to the certificate (.pem) file, choose **Open**, and then enter your **Apple ID**. With the APNs certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices.
 
-5.  **Tell users how to get access to company resources with the company portal**<br>
-    Your users will need to know how to enroll their devices and what to expect after they're brought into management.
-    - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+5.  **Tell your users how to enroll their devices to get access to company resources.**
+
+    For end-user enrollment instructions, see [Enroll your iOS device in Intune](../enduser/enroll-your-device-in-intune-ios.md) and [Enroll your Mac OS X device in Intune](../enduser/enroll-your-device-in-intune-mac-os-x.md). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
+
+	For information about other end-user tasks, see these articles:
+    - [Resources about the end-user experience with Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
     - [End user guidance for iOS and Mac devices](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
 
 If your company or organization buys iOS devices for users, those devices can also be enrolled for management as [company-owned iOS devices](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).

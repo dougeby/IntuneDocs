@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -106,7 +106,7 @@ The password is not contained in the email profile, so the user needs to supply 
     |**Description**|A description that helps you identify this profile.|
     |**Host**|The host name of your company server that hosts your native email service.|
     |**Account name**|The display name for the email account as it will appear to users on their devices.|
-    |**Username**|How the user name for the email account will be obtained. Select **Username** for an on-premises Exchange server, or select **User Principal Name** for Office 365.|
+    |**Username**|This is the attribute in Active Directory (AD) or Azure AD, that will be used to generate the username for this email profile. Select Primary SMTP Address, such as *user1@contoso.com* or User Principal Name, such as *user1* or *user1@contoso.com*.|
     |**Email address**|How the email address for the user on each device is generated. Select **Primary SMTP Address** to use the primary SMTP address to log into Exchange or use  **User Principal Name** to use the full principal name as the email address.|
     |**Authentication method** (Android for Work, Samsung KNOX and iOS)|Select either **Username and Password** or **Certificates** as the authentication method used by the email profile.|
     |**Select a client certificate for client authentication (Identity Certificate)** (Android for Work, Samsung KNOX and iOS)|Select the client SCEP certificate that you previously created that will be used to authenticate the Exchange connection. For more information about how to use certificate profiles in Intune, see [Secure resource access with  certificate profiles](secure-resource-access-with-certificate-profiles.md). This option is displayed only when the authentication method is **Certificates**.|

@@ -43,9 +43,9 @@ Microsoft Intune lets admins import international mobile equipment identity (IME
         AABBBBBBCCCCCCE,PO 1234
         ```
 
-    -   **Manually add device details** - Enter the IMEI number and device details of up to five devices.
+    -   **Manually add device details** - Enter the IMEI number and device details of up to 15 devices.
 
-   *Details* are for administrative use so you can identify the IMEI number that's associated with a device. This information is not sent to the device, but it will appear in the Intune console.
+   The *Details* field is for administrative use. You can specify details to help identify the device in the list of Corporate-owned devices listed by hardware ID. This information is not sent to the device, but it will appear in the Intune console.
 
 2.   Choose **Next**.
 3.  On the **Review Devices** pane, you can confirm the imported device IMEI numbers. You can also decide whether to overwrite the **Details** for IMEI numbers that are being imported again. You can uncheck the **Overwrite** box to preserve the Current details. Choose **Finish** to import the IMEI numbers.
