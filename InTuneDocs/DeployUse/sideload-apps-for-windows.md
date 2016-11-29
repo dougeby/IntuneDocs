@@ -6,7 +6,7 @@ description: Learn how to sign line of business apps so you can use Intune to de
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 11/16/2016
+ms.date: 11/28/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -80,7 +80,7 @@ You can deploy the Company Portal app to Windows devices, including Windows Phon
 
     -   WinPhoneCompanyPortal.ps1 – A PowerShell script you can use to sign the Company Portal app file so it can be deployed to Windows Phone 8.1 devices
 
-    Alternatively, you can download the Windows Phone 8.1 Company Portal (offline licensed package) from the [Windows Store for Business](http://businessstore.microsoft.com/). The Company Portal app will need to be acquired with an offline license and the appropriate package downloaded for offline use. Windows 8 and Windows Phone 8 platform listings in the selection do refer to their 8.1 counterparts.
+    Alternatively, you can download the Windows Phone 8.1 Company Portal (offline licensed package) or the Windows 10 Company Portal (offline licensed package) from the [Windows Store for Business](http://businessstore.microsoft.com/). The Company Portal app will need to be acquired with an offline license and the appropriate package downloaded for offline use. Windows 8 and Windows Phone 8 platform listings in the selection refer to their 8.1 counterparts. For details about how to do this with Intune, see [Manage apps you purchased from the Windows Store for Business](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md).
 
 2.  **Download the Windows Phone SDK**
     Download the Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) and install the SDK to your computer. This SDK is needed to generate an application enrollment token.
