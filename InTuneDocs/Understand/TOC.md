@@ -1,7 +1,7 @@
 # Understand and Explore
 ## [Introduction to Intune](introduction-to-microsoft-intune.md)
 ## [Sign up for a free trial](sign-up-for-a-30-day-free-trial-of-microsoft-intune.md)
-## [Evaluate mobile device management](mobile-device-management-trial-guide-microsoft-intune.md)
+## [Evaluate Intune MDM](mobile-device-management-trial-guide-microsoft-intune.md)
 ### [Create groups to organize users & devices](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
 ### [Create policies and publish an app](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Other options and extras](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
