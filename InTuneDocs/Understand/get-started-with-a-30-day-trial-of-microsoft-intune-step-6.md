@@ -4,7 +4,8 @@
 title: Other options and extras for Intune evaluations | Microsoft Intune
 description: Describes alerts, notification, and reports, plus general Intune capabilities that you need to know about when you sign up for a free, 30-day evaluation of Intune
 keywords:
-author: lindavrms.author: lindavr
+author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 11/29/2016
 ms.topic: get-started-article
@@ -55,6 +56,7 @@ To learn more about capabilities that were recently introduced to Intune, see [W
 
 Support options are described in [How to get support for Microsoft Intune](/Intune/Troubleshoot/how-to-get-support-for-microsoft-intune), and you can join discussions about Intune in [Microsoft Intune forums](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 
-### Next steps
+## Next steps
 Read about the [common ways to use Intune](common-ways-to-use-intune.md)
+
 Convert to a [paid subscription](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
