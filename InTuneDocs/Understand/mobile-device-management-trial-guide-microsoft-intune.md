@@ -57,6 +57,7 @@ To familiarize yourself quickly with Intune, we suggest starting with the evalua
 - A device that you’ll use to test how Intune users will enroll and manage their devices using the Company Portal. We’re using an iPad and an Android phone for this guide.
 - To manage the iPad or other iOS device, you’ll need an [Apple Push Notification service certificate](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
 - An [Intune trial subscription](sign-up-for-30-day-trial-microsoft-intune.md)
+
 ## Set your MDM authority
 The first step you need to take to manage mobile devices with Intune is to set your **mobile device management (MDM) authority**.
 
