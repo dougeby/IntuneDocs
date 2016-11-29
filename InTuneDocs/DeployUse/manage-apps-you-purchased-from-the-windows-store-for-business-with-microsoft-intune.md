@@ -6,7 +6,7 @@ description: Connect Microsoft Intune to the Windows Store for Business if you w
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 11/28/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,7 +64,9 @@ You can now continue, and set up synchronization in the Intune console.
 ## Synchronize apps
 
 1. On the **Windows Store for Business** page, choose **Sync now** to synchronize the apps you've purchased from the store with Intune.
-2. In the **Apps** workspace, choose **Apps** > **Volume-Purchased Apps** to view the available apps, and to verify that your purchased apps were imported correctly. The apps in this node are displayed with the total number of licenses you own, and the number of licenses you have available.
+2. In the **Apps** workspace, choose **Apps** > **Volume-Purchased Apps** to view the apps you can deploy, and to verify that your purchased apps were imported correctly. The apps in this node are displayed with the total number of licenses you own, and the number of licenses you have available.
+For example, you can purchase the Company Portal app (online licensed) from the Windows Store for Business, sync it to the Intune console and then deploy this as a required app in to the required Windows 10 devices. 
+
 
 ## Deploy apps
 
