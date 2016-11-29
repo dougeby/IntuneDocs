@@ -93,7 +93,7 @@ Now it’s time to head over to the Intune admin console to start managing your 
 > [!NOTE]
 > Your users won't show up in Intune until they've enrolled a device to be managed.
 
-### Next steps
+## Next steps
 Evaluation scenario: [Evaluate mobile device management in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md) 
 
 Learn more about using your Azure Active Directory user accounts with Intune:
