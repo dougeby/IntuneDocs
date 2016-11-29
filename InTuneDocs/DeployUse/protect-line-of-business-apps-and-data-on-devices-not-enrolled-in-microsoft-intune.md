@@ -33,13 +33,10 @@ This topic explains the steps that are required to apply MAM policies for apps t
 
 
 ##  Step 1: Prepare the app
-Before you can apply MAM policies to an app, you must first wrap the app with the Microsoft Intune App Wrapping Tool. For instructions on to download and use this tool, see the following pages:
 
-- [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
-- [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+Before you can apply MAM policies to an app, you must first wrap the app by using the Microsoft Intune App Wrapping Tool for [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) and [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool), or use the [Intune App SDK](/../develop/intune-app-sdk) to manually integrate Intune app protection features.
 
->[!IMPORTANT]  
->This version of the App Wrapping Tool, which supports devices that are not enrolled in Intune, is supported for iOS and is in public preview for Android. To download the tool, see the [iOS page on GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) and the [Android page on GitHub](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview).
+For more information on using the App Wrapping Tool vs. the SDK, see [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
 
 ## Step 2: Add the app
 
@@ -71,8 +68,8 @@ You can deploy apps to your users in the following ways:
 * For devices that are enrolled in a third-party MDM solution, you can distribute the apps through your MDM solution.
 * For devices that aren't managed by any MDM solution, you need a custom solution. Users must download and install the app on their device.
 
-## Changing the metadata
-If you need to change the app details like the name of the app or the bundle identifier, you must [remove the app](#remove-apps) and [add it](#step-2-add-the-app) with the new metadata.
+## Change the metadata
+If you need to change the app details, like the name of the app or the bundle identifier, you must [remove the app](#remove-apps) and [add it](#step-2-add-the-app) with the new metadata.
 
 ##  Remove apps
 You can remove a line-of-business app from the app list. This will remove the app from the list and will remove the association with MAM policies, but will not remove or uninstall the app from the user’s device.  
