@@ -1,4 +1,4 @@
----
+--
 # required metadata
 
 title: Sideload apps for Windows and Windows Phone | Microsoft Intune
@@ -47,12 +47,12 @@ The steps below will help you get the required certificate and sign the apps. Yo
 4.  **Verify certificates imported**<br>
     To verify that the certificates have been imported correctly, go to the **Certificates** snap-in, right-click **Certificates**, and select **Find Certificates**. In the **Contains** field, enter “Symantec”, and click **Find Now**. The certificates you imported should appear in the results.
 
-    ![Find the Symantec certificate](../../media/wit.gif)
+    ![Find the Symantec certificate](/media/wit.gif)
 
 5. **Export a signing certificate**<br>
     Having verified that the certificates are present, you can export the .pfx file to sign the company portal. Select the Symantec certificate with **Intended purpose** “code-signing.” Right-click the code-signing certificate and select **Export**.
 
-    ![Export the signing certificate](../../media/wit-walk-cert2.gif)
+    ![Export the signing certificate](/media/wit-walk-cert2.gif)
 
     In the **Certificate Export Wizard**, select **Yes, export the private key** and then click **Next**. **Select Personal Information Exchange –PKCS #12 (.PFX)** and check **Include all the certificates in the certification path if possible**. Complete the wizard. For more information, see [How to Export a Certificate with the Private Key](http://go.microsoft.com/fwlink/?LinkID=203031).
 
