@@ -99,7 +99,7 @@ Your policy appears in the list of configuration policies, and has been deployed
 Open the Company Portal on the mobile device, choose **Apps**, and then install Microsoft Skype.
 
 This completes the Intune mobile device management guide, but you can learn more about Intune by following the links in the Next steps section.
-### Next steps
+## Next steps
 Learn more about other [Intune capabilities](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 Read about the [common ways to use Intune](common-ways-to-use-intune.md)
 Convert to a [paid subscription](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
