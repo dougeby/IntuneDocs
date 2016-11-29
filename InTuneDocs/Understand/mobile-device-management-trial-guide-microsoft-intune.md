@@ -119,5 +119,5 @@ Open the Company Portal on the mobile device, choose **Apps**, and then install 
 
 
 
-### Next steps
+## Next steps
 [Create groups to organize users and devices](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
