@@ -28,7 +28,7 @@ ms.suite: ems
 # Protect app data using mobile application management policies with Microsoft Intune
 
 ## How you can protect app data
-Your employees use mobile devices for both personal and work tasks. While making sure your employees can be productive, you also want to prevent data loss—intentional and unintentional.  In addition, you want to have the ability to protect company data that employees access by using devices that you don't manage.
+Your employees use mobile devices for both personal and work tasks. While you're making sure your employees can be productive, you also want to prevent data loss—intentional and unintentional.  In addition, you want to have the ability to protect company data that employees access by using devices that you don't manage.
 
 You can use Intune mobile application management (MAM) policies to help protect your company’s data. Because Intune MAM policies can be used **independent of any mobile device management (MDM) solution**, you can use MAM to protect your company’s data with or without enrolling devices in a device management solution. By implementing **app-level policies**, you can restrict access to company resources and keep data within the purview of your IT department.
 
@@ -56,7 +56,7 @@ There are additional benefits to using MDM with MAM policies, and companies can 
 
 - **MDM makes sure that the device is protected.** For example, you can require a PIN to access the device, or you can deploy managed apps to the device. You can also deploy apps to devices through your MDM solution to give you more control over app management.
 
-- **MAM policies make sure that the app-layer protections are in place.** For example, you can have a policy to require a PIN to open an app in a work context, a policy to prevent data from being shared between apps, or a policy to prevent company app data from being saved to a personal storage location.
+- **MAM policies make sure that the app-layer protections are in place.** For example, you can have a policy that requires a PIN to open an app in a work context, prevents data from being shared between apps, and prevents company app data from being saved to a personal storage location.
 
 ## Devices that support MAM
 MAM policies are currently supported on:
