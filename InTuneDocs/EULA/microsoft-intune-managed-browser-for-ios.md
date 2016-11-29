@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: arob98
-ms.date: 08/30/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 122a12c2-ef30-43ac-a21c-af34a3ba64d9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
