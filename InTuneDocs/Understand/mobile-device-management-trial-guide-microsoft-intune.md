@@ -74,7 +74,7 @@ We will set Intune as the MDM authority for the trial; this will not affect your
 
 For this guide, we'll be enrolling an Android phone and an Apple iPad, but provide links to [learn more about device enrollment in Intune](#Learn-more-about-device-enrollment) at the end of this section.
 ### Android
-Install the **Intune Company Portal** app from Microsoft Corporation, available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune [user credentials you created](sign-up-for-30-day-trial-microsoft-intune.md#Add-users) when you signed up for the free trial.
+Install the **Intune Company Portal** app from Microsoft Corporation, available on [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612), and sign in with the Intune [user credentials you created](sign-up-for-30-day-trial-microsoft-intune.md#Add users) when you signed up for the free trial.
 
 ### iOS
 Before users can enroll their iOS devices, you need to set up Intune to manage these devices.
