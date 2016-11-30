@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Supported mobile devices and computers
+# Supported devices and browsers for Intune
 
 You can enroll then manage the following device types:
 
@@ -50,7 +50,7 @@ Different administrative tasks require you to use one of the following administr
 
 |Intune feature |Supported browsers|
 |---------|---------|
-|Intune Admin console     |  Internet Explorer 10 or later<br /><br />**Note:** Microsoft Edge and mobile browsers are not supported for the Admin console.                      
+|Intune Admin console     |  Internet Explorer 10 or later<br /><br />Google Chrome (versions prior to version 42)<br /><br />Mozilla Firefox with Silverlight enabled<br />**Note:** Mozilla will remove support for Silverlight effective March 2017. [Learn more](https://go.microsoft.com/fwlink/?linkid=836872).<br /><br />Microsoft Edge and mobile browsers are not supported for the Admin console.                      
 |Office 365 Admin Portal     |All browsers, including mobile browsers and managed browsers  |
 |Company Portal website     |**On mobile devices:** use the default web browser for each supported platform   <br /><br />**On Windows PCs:** Internet Explorer 10 or later, or Microsoft Edge<br /><br />**On Mac OS X 10.9 or later:** Apple Safari    |
 
