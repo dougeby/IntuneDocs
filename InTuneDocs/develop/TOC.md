@@ -1,5 +1,5 @@
 # [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
-# [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
+# [Get Started](/intune/get-started/get-started)
 # [What's New](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # Develop and Customize Apps
