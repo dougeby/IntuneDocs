@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 # What's New - Archive
 
-This page is an archive of recent announcements made in [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md).
+This page is a rolling list of the last six months of announcements made in [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md).
 
 [!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
 

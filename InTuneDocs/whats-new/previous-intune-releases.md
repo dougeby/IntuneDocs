@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Previous Intune releases
 
+This page is a list of announcements made in [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md).
+
 [!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
 
 ## May 2016
