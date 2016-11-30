@@ -45,7 +45,7 @@ Depending on the settings you choose, not all values in the list below will be c
 - **Export** - Exports the list of servers to a comma-seperated-values (csv) file.
 
 **Authentication method** - 
-- **Certificates** - Choose a SCEP or PKCS certificate profile you previously created to authenticate the connection. For more details about certificate profiles, see [SCEP certificate settings for iOS devices](scep-certificate-for-ios) or [PKCS certificate settings for iOS devices](pkcs-certificate-for-ios).
+- **Certificates** - Choose a SCEP or PKCS certificate profile you previously created to authenticate the connection. For more details about certificate profiles, see [How to configure certificates](how-to-configure-certificates.md).
 - **Username and password** - End users must supply a username and password to log into the VPN server.
 
 **Connection type** - Select the VPN connection type from the following list of vendors:
