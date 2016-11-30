@@ -6,7 +6,7 @@ description: Understand the concepts of how MAM CA can help with controlling wha
 keywords:
 author: karthikaraman
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,7 +55,7 @@ Description of the abbreviations used in the diagrams:
 * Microsoft OneNote for iOS
 
 >[!IMPORTANT]
->Microsoft Excel, PowerPoint, Word, Skype for Business, and OneNote apps for iOS and Android are bundled together as a single option. The OneNote app for Android does not yet support MAM without enrollment.
+>For Android devices, the initial device registration must be done by logging into either the OneDrive app, or the Outlook app. The OneNote app for Android does not yet support MAM without enrollment.
 
 To learn about the user experience with an app that has MAM CA policies, see [What to expect when using an app with MAM CA](use-apps-with-mam-ca.md).
 

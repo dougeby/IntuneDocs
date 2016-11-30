@@ -37,6 +37,11 @@ The following is a list of properties that are directly derived from the device:
 * deviceOSVersion
 * displayName
 
+> [!NOTE]
+> On Android devices:
+  * It is required that the Company Portal app is installed on the device, but end-user is not required to log in into app.
+  * Device registration must be done through the OneDrive or Outlook app. 
+
 ## To remove a device from Azure AD registration.
 You can remove the device registration either through the Azure AD admin console which is typically done by the IT admin.  It can also be done by the end-user on the device itself.
 
