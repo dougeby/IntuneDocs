@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to configure certificates with Microsoft Intune | Microsoft Docs
-description: Description.
+description: Learn how to use Intune to create and assign certificates that help you secure Wi-Fi, VPN, and other connections.
 keywords:
 author: robstackmsft
 ms.author: robstack

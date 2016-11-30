@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune custom settings for iOS devices | Microsoft Docs
-description: Description.
+description: Learn the settings you can use in an iOS custom profile.
 keywords:
 author: robstackmsft
 ms.author: robstack

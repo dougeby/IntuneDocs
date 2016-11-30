@@ -1,6 +1,6 @@
 ---
 title: Configure certificate infrastructure for PFX | Microsoft Docs
-description: Create and deploy .PFX certificate profiles.
+description: Learn how to configure your infrastructure to use PKCS certificates with Intune.
 keywords:
 author: robstackmsft
 ms.author: robstack

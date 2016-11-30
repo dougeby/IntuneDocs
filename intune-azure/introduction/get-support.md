@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get support for Microsoft Intune | Microsoft Docs
-description: 
+description: Having problems? Read this topic to find more ways to get help.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
