@@ -42,7 +42,7 @@ are new to the Azure portal experience read the [Azure portal for MAM policies](
 
 **Step 4:** To apply this policy to users, open the **Restricted user groups** blade, and choose **Add user group**. Select one or more user groups that should get this policy.
 
-![Screenshot of the restricted user group blade with add user group option highlighted](../media/mam-ca-add-user-group.png)
+![Screenshot of the restricted user group blade with add user group option highlighted](../media/mam-ca-spo-restricted-groups.png)
 
 
 **Step 5:** You may want some users in the user group you selected in the previous step not to be affected by this policy. In such cases, add the group of users to the exempted user groups list. From the **SharePoint Online** blade, choose **Exempted user groups**. Choose **Add user group** to open the list of user groups. Select the groups you want to exempt from this policy.  

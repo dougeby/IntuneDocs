@@ -112,6 +112,7 @@
 ### [Allow only policy managed app access to O365 services](allow-policy-managed-apps-access-to-o365.md)
 #### [Apps with MAM CA](use-apps-with-mam-ca.md)
 #### [Exchange Online](mam-ca-for-exchange-online.md)
+#### [SharePoint Online](mam-ca-for-sharepoint-online.md)
 #### [Block apps with no ADAL](block-apps-with-no-modern-authentication.md)
 ### [Restrict access to networks (Cisco ISE)](restrict-access-to-networks.md)
 ### [Restrict access based on device, network, and application risk](restrict-access-based-on-device-network-app-risk.md)
