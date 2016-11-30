@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 11/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,6 +55,14 @@ You can now enforce multi-factor authentication (MFA) on a selected group of use
 
 ### Conditional access for MAM with SharePoint Online <!--VSO 679339-->
 You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint Online.  You can get started using Intune mobile app management in the Azure portal. Look for the __Conditional Access__ section in the __Settings__ blade which will include the option for SharePoint Online. This feature will ship separately from the rest of the service release.
+
+### Ability to restrict Intune mobile device enrollment
+Intune is adding new enrollment restrictions that control which mobile device platforms are allowed to enroll. Intune separates mobile device platforms as iOS, macOS, Android, Windows and Windows Mobile. 
+* macOS and Windows 8.1 or higher can be restricted from enrolling as mobile device platforms. 
+* Restricting mobile device enrollment does not restrict PC agent enrollment. 
+* For iOS only, there is one additional option to block the enrollment of personally owned devices. 
+Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+
 
 ## Notices
 
