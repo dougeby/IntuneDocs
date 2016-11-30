@@ -13,7 +13,8 @@
 ## [Get started](/intune-azure/enroll-devices/get-started)
 ## [Plan and design](/intune-azure/enroll-devices/plan-and-design)
 ## [How to](/intune-azure/enroll-devices/how-to)
-### [Map device groups](/intune-azure/enroll-devices/how-to-use-device-group-mapping) <!---Was Use device group mapping--->
+### [Map device groups](/intune-azure/enroll-devices/how-to-use-device-group-mapping)
+<!---Was Use device group mapping--->
 ### [Use Windows Hello for Business](/intune-azure/enroll-devices/how-to-use-windows-hello)
 ## [Troubleshoot](/intune-azure/enroll-devices/troubleshooting)
 
@@ -25,7 +26,8 @@
 ## [Troubleshoot](/intune-azure/manage-devices/troubleshooting) --->
 
 # Manage users
-## [What is user management?](/intune-azure/manage-users/what-is) <!--- Was What is users & group management--->
+## [What is user management?](/intune-azure/manage-users/what-is)
+<!--- Was What is users & group management--->
 <!--- ## [Get started](/intune-azure/manage-users/get-started)
 ## [Plan and design](/intune-azure/manage-users/plan-and-design) --->
 
@@ -40,7 +42,8 @@
 #### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
 #### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
 #### [Use app configuration policies](/intune-azure/manage-apps/app-configuration-policies)
-#### [Selectively wipe apps](/intune-azure/manage-apps/app-selective-wipe) <!---Is this specific to app protection policy or more general app management?--->
+#### [Selectively wipe apps](/intune-azure/manage-apps/app-selective-wipe)
+<!---Is this specific to app protection policy or more general app management?--->
 #### [Work with volume-purchased apps](/intune-azure/manage-apps/volume-purchased-apps)
 ##### [iOS VPP apps](/intune-azure/manage-apps/ios-vpp-apps)
 ##### [Windows Store for Business apps](/intune-azure/manage-apps/wsfb-apps)
