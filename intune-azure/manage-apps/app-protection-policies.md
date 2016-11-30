@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to work with app protection policies in Microsoft Intune | Microsoft Docs
-description:  
+description:  Learn how Intune app protection policies can help protect company data used by apps you manage.
 keywords:
 author: robstackmsft
 ms.author: robstack

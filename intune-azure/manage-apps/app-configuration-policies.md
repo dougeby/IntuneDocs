@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to use app configuration policies with Microsoft Intune | Microsoft Docs
-description: 
+description: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run.
 keywords:
 author: robstackmsft
 ms.author: robstack
