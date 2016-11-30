@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to configure Microsoft Intune VPN settings | Microsoft Docs
-description: Description.
+description: Learn how to use Intune to configure VPN connections on devices you manage.
 keywords:
 author: robstackmsft
 ms.author: robstack

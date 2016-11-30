@@ -2,7 +2,7 @@
 # required metadata
 
 title: Introduction to the Microsoft Intune preview | Microsoft Docs
-description: 
+description: Get the basics about Intune, and how it can help you manage your devices.
 keywords:
 author: robstackmsft
 ms.author: robstack

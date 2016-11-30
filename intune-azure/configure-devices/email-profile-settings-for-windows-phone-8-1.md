@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune email settings for Windows Phone 8.1 devices | Microsoft Docs
-description: Description.
+description: Learn about the Intune settings you can use to configure email connections on Windows Phone 8.1 devices.
 keywords:
 author: robstackmsft
 ms.author: robstack

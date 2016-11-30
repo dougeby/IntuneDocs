@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to configure Microsoft Intune email settings | Microsoft Docs
-description: Description.
+description: Learn how to configure Intune to create connections to corporate email on devices you manage.
 keywords:
 author: robstackmsft
 ms.author: robstack

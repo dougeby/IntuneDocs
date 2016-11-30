@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune custom settings for Android devices | Microsoft Docs
-description: Description.
+description: Learn the settings you can use in an Android custom profile.
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -34,7 +34,7 @@ Use the Microsoft Intune Android **Custom** profile to deploy OMA-URI settings t
 
 This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies.
 
-## Custom policy settings for Windows Phone 8.1 devices
+## Custom profile settings for Android devices
 
 1. Use the instructions in [How to configure custom device settings in Microsoft Intune](how-to-configure-custom-settings.md) to get started.
 2. On the **Create Profile** blade, choose **Settings** to add one or more OMA-URI settings.

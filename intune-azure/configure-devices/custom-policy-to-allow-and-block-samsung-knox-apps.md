@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a Microsoft Intune policy that allows and blocks apps for Samsung KNOX | Microsoft Docs
-description: Custom profile to create a list of allowed and blocked apps for KNOX.
+description: Create a custom profile to allow and block apps for Samsung KNOX Standard devices.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
