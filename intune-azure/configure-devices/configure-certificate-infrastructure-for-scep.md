@@ -1,6 +1,6 @@
 ---
 title: Configure certificate infrastructure for SCEP |Microsoft Docs
-description: Infrastructure for creating and deploying SCEP certificate profiles.
+description: Learn how to configure your infrastructure before you create and deploy Intune SCEP certificate profiles.
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -244,12 +244,12 @@ In this task you will:
 
 4. In IIS manager, choose **Default Web Site** -> **Request Filtering** -> **Edit Feature Setting**, and change the **Maximum URL length** and **Maximum query string** to *65534*, as shown.
 
-    ![IIS max URL and query length](..\media\SCEP_IIS_max_URL.png) 
+    ![IIS max URL and query length](\media\SCEP_IIS_max_URL.png) 
 
 5.  Restart the server. Running **iisreset** on the server will not be sufficient to finalize these changes.
 6. Browse to http://*FQDN*/certsrv/mscep/mscep.dll. You should see an NDES page similar to this:
 
-    ![Test NDES](..\media\SCEP_NDES_URL.png) 
+    ![Test NDES](\media\SCEP_NDES_URL.png) 
 
     If you get a **503 Service unavailable**, check the eventviewer. It's likely that the application pool is stopped due to a missing right for the NDES user. Those rights are described in Task 1.
 

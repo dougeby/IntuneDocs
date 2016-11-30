@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to monitor apps with Microsoft Intune | Microsoft Docs
-description:  
+description: After you've assigned an app to users or devices, use this information to help you monitor its status.
 keywords:
 author: robstackmsft
 ms.author: robstack

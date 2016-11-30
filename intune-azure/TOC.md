@@ -1,5 +1,5 @@
-# [Introduction](/intune-azure/introduction/what-is-microsoft-intune)
-## [Introduction](/intune-azure/introduction/what-is-microsoft-intune)
+# Introduction
+## [What is the Azure portal preview](/intune-azure/introduction/what-is-microsoft-intune)
 <!---## [Get started](/intune-azure/introduction/get-started)
 ## [What's new](/intune-azure/introduction/whats-new)
 ## [Get support](/intune-azure/introduction/get-support)
@@ -8,32 +8,34 @@
 # [Plan and design](/intune-azure/plan-and-design/get-started)
 ## [Get started](/intune-azure/plan-and-design/get-started) --->
 
-# [Enroll devices](/intune-azure/enroll-devices/what-is)
+# Enroll devices
 ## [What is](/intune-azure/enroll-devices/what-is)
 ## [Get started](/intune-azure/enroll-devices/get-started)
 ## [Plan and design](/intune-azure/enroll-devices/plan-and-design)
 ## [How to](/intune-azure/enroll-devices/how-to)
+### [How to use device group mapping](/intune-azure/enroll-devices/how-to-use-device-group-mapping)
+### [How to use Windows Hello for Business](/intune-azure/enroll-devices/how-to-use-windows-hello)
 ## [Troubleshoot](/intune-azure/enroll-devices/troubleshooting)
 
-# [Manage devices](/intune-azure/manage-devices/what-is)
+# Manage devices
 ## [What is device management](/intune-azure/manage-devices/what-is)
 <!--- ## [Get started](/intune-azure/manage-devices/get-started)
 ## [Plan and design](/intune-azure/manage-devices/plan-and-design)
 ## [How to](/intune-azure/manage-devices/how-to)
 ## [Troubleshoot](/intune-azure/manage-devices/troubleshooting) --->
 
-# [Manage users](/intune-azure/manage-users/what-is)
+# Manage users
 ## [What is users and groups management](/intune-azure/manage-users/what-is)
 <!--- ## [Get started](/intune-azure/manage-users/get-started)
 ## [Plan and design](/intune-azure/manage-users/plan-and-design) --->
-## [How to use device group mapping](/intune-azure/manage-users/how-to-use-device-group-mapping)
+
 <!--- ## [Troubleshoot](/intune-azure/manage-users/troubleshooting) --->
 
-# [Manage apps](/intune-azure/manage-apps/what-is)
-## [What is app management](/intune-azure/manage-apps/what-is)
+# Manage apps
+## [What is app management](/intune-azure/manage-apps/what-is-app-management)
 <!--- ## [Get started](/intune-azure/manage-apps/get-started)
 ## [Plan and design](/intune-azure/manage-apps/plan-and-design) --->
-## [How to add and deploy apps](/intune-azure/manage-apps/add-apps)
+## How to add and deploy apps
 ### [Add apps](/intune-azure/manage-apps/add-apps)
 ### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
 ### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
@@ -58,11 +60,11 @@
 ## [How to configure the Company Portal app](/intune-azure/manage-apps/company-portal-app)
 <!--- ##  [Troubleshoot apps](/intune-azure/manage-apps/troubleshooting) --->
 
-# [Configure devices](/intune-azure/configure-devices/what-are-device-profiles)
+# Configure devices
 ## [What are device profiles](/intune-azure/configure-devices/what-are-device-profiles)
 <!---## [Get started](/intune-azure/configure-devices/get-started)
 ## [Plan and design](/intune-azure/configure-devices/plan-and-design) --->
-## [How to work with device profiles](/intune-azure/configure-devices/how-to-create-device-profiles)
+## How to work with device profiles
 ### [How to configure device profiles](/intune-azure/configure-devices/how-to-create-device-profiles)
 ### [How to configure device restrictions](/intune-azure/configure-devices/how-to-configure-device-restrictions)
 #### [Device restrictions for Android devices](/intune-azure/configure-devices/device-restrictions-for-android)
@@ -108,7 +110,7 @@
 ### [How to monitor device profiles](/intune-azure/configure-devices/how-to-monitor-device-profiles)
 ## [Troubleshoot](/intune-azure/configure-devices/troubleshooting)
 
-# [Set device compliance](/intune-azure/set-device-compliance/what-is-device-compliance)
+# Set device compliance
 ## [What is device compliance](/intune-azure/set-device-compliance/what-is-device-compliance)
 ## [Get started](/intune-azure/set-device-compliance/get-started-with-device-compliance)
 ## [How to create a compliance profile-Android](/intune-azure/set-device-compliance/create-a-compliance-profile-for-android)
@@ -118,6 +120,7 @@
 ## [How to monitor device compliance](/intune-azure/set-device-compliance/monitor-device-compliance)
 
 
-# [Conditional access](/intune-azure/conditional-access/what-is-conditional-access)
+
+# Conditional access
 ## [What is conditional access](/intune-azure/conditional-access/what-is-conditional-access)
 ## [How to create a conditional access policy](/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises)

@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Intune quick start guide
-This guide gets you started with your paid subscription of Microsoft Intune to manage the mobile devices and Windows PCs. You can follow each step in order, or just skip ahead if a step is not applicable to your specific environment or business needs. If you want to try out Intune, see the [Intune evaluation guide](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).  
+This guide gets you started with your paid subscription to Microsoft Intune. Follow these steps to manage the mobile devices and Windows PCs, as well as apps in your organization. You can follow each step in order, or skip ahead if a step is not applicable to your environment or business needs. If you want to try out Intune, see the [Intune evaluation guide](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).  
 
 If you're currently using Microsoft System Center Configuration Manager to manage computers and servers, you can [extend Configuration Manager to manage mobile devices](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
@@ -38,16 +38,16 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 
 | Steps | Status  |
 | ------------- |-------------|
-| 1  | [Prerequisites](what-to-know-before-you-start-microsoft-intune.md) |
-| 2 |  [Sign in to Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)     |  
-| 3 | [Configure a custom domain name](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  |
-| 4 | [Synchronize AD and add users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)  |
-| 5 | [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) |
-| 6 | [Organize users and devices](start-with-a-paid-subscription-to-microsoft-intune-step-5.md) |
-| 7 | [Create policies and publish an app](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) |
-| 8 | [Customize the Company Portal](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) |
-| 9 | [Enroll mobile devices & install an app](start-with-a-paid-subscription-to-microsoft-intune-step-8.md) |
-|10 | [Next steps](post-configuration-tasks.md) |
+| 1  | [Prerequisites](what-to-know-before-you-start-microsoft-intune.md) - What you need and what to know before you start|
+| 2 |  [Sign in to Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md) - Sign in to your trial subscription or create a new subscription to start managing your organization   |  
+| 3 | [Configure a custom domain name](start-with-a-paid-subscription-to-microsoft-intune-step-2.md) - Use your company's domain name to manage Intune by updating your DNS registration   |
+| 4 | [Synchronize AD and add users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) - Connect Active Directory to synchronize users or add users to Intune  |
+| 5 | [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) - Give users permission to use Intune|
+| 6 | [Organize users and devices](start-with-a-paid-subscription-to-microsoft-intune-step-5.md) - Use groups to organize deployments of policy, apps, and resources |
+| 7 | [Create policies and publish an app](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) - Enable settings and apps that can be deployed to users |
+| 8 | [Customize the Company Portal](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) - Customize the Company Portal app that users see when working with Intune  |
+| 9 | [Enroll mobile devices & install an app](start-with-a-paid-subscription-to-microsoft-intune-step-8.md) - Enable Intune management of iOS, Windows, Android, and Mac devices |
+|10 | [Next steps](post-configuration-tasks.md) - Additional configurations and steps to get the most out of your Intune subscription|
 
 
 >[!div class="step-by-step"]

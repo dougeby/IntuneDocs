@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to configure the Microsoft Intune Company Portal app | Microsoft Docs
-description:  
+description: Learn how you can apply company specific branding to the Intune Company Portal app. 
 keywords:
 author: robstackmsft
 ms.author: robstack

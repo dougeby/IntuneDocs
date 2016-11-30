@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to create and deploy app protection policies in Microsoft Intune | Microsoft Docs
-description:  
+description:  Learn how Intune app protection policies can help protect company data used by apps you manage.
 keywords:
 author: karthikaraman
 ms.author: karaman
