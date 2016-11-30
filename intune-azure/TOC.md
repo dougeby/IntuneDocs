@@ -38,7 +38,7 @@
 ## [What is app protection policy?](/intune-azure/manage-apps/what-is-app-protection-policy)
 <!--- ## [Get started](/intune-azure/manage-apps/get-started)
 ## [Plan and design](/intune-azure/manage-apps/plan-and-design) --->
-## How to
+## How to manage apps
 ### [Add apps](/intune-azure/manage-apps/add-apps)
 ### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
 ### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
@@ -49,6 +49,7 @@
 #### [iOS VPP apps](/intune-azure/manage-apps/ios-vpp-apps)
 #### [Windows Store for Business apps](/intune-azure/manage-apps/wsfb-apps)
 ### [Configure the Company Portal app](/intune-azure/manage-apps/company-portal-app)
+## How to use app protection policies
 ### [Create & deploy app protection policies](/intune-azure/manage-apps/app-protection-policies)
 #### [Android settings](/intune-azure/manage-apps/android-app-protection-policy-settings)
 #### [iOS settings](/intune-azure/manage-apps/ios-app-protection-policy-settings)
