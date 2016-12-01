@@ -52,10 +52,10 @@ You can now enforce multi-factor authentication (MFA) on a selected group of use
 ### Conditional access for MAM with SharePoint Online <!--VSO 679339-->
 You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint Online.  You can get started using Intune mobile app management in the Azure portal. Look for the __Conditional Access__ section in the __Settings__ blade which will include the option for SharePoint Online. This feature will ship separately from the rest of the service release. Find out more about this new feature [here](https://docs.microsoft.com/intune/deploy-use/mam-ca-for-sharepoint-online).
 
-### Ability to restrict Intune mobile device enrollment
+### Ability to restrict mobile device enrollment<!--747596-->
 Intune is adding new enrollment restrictions that control which mobile device platforms are allowed to enroll. Intune separates mobile device platforms as iOS, macOS, Android, Windows and Windows Mobile.
 * macOS and Windows 8.1 or higher can be restricted from enrolling as mobile device platforms.
-* Restricting mobile device enrollment does not restrict PC agent enrollment.
+* Restricting mobile device enrollment does not restrict PC client enrollment.
 * For iOS only, there is one additional option to block the enrollment of personally owned devices.
 
 Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
@@ -81,7 +81,7 @@ The Company Portal app for Android uses Google Play Services to communicate with
 
 ## Deprecations
 
-### Firefox no longer supports Silverlight
+### Firefox to no longer support Silverlight<!--VSO TBA-->
 Mozilla is removing support for Silverlight in version 52 of the [Firefox browser](https://www.mozilla.org/firefox), effective March 2017. As a result, you will no longer be able to log in to the existing Intune console using Firefox versions greater than 51. We recommend using Internet Explorer 10 or 11 to access the admin console, or a [version of Firefox prior to version 52](https://ftp.mozilla.org/pub/firefox/releases/). The Azure portal uses modern browsers A list of supported browsers for the Azure preview portal is available [here](https://docs.microsoft.com/en-us/azure/azure-preview-portal-supported-browsers-devices).
 
 ### Removal of Exchange Online mobile inbox policies <!--770687-->
