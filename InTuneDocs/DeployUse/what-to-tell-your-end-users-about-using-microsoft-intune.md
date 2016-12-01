@@ -6,7 +6,7 @@ description: Share information with your end users to make your Intune deploymen
 keywords: end users, users, communication
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 11/2/2016
+ms.date: 11/30/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ You can use this [customizable, end-user Intune enrollment template for IT admin
 Use the following links to see the steps that users are sent to from the Company Portal website or app. The links are divided into sections about Company Portal app installation and Intune enrollment, general tasks that users can do on their devices, and troubleshooting.
 
 - [Using your Android device with Intune](/Intune/EndUser/using-your-android-device-with-intune)
-- [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+- [Using your iOS or macOS device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
 - [Using your Windows device with Intune](/Intune/EndUser/using-your-windows-device-with-intune)
 - [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website)
 
