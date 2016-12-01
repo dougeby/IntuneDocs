@@ -4,9 +4,10 @@
 title: Prerequisites for MAM policies | Microsoft Intune
 description: This topic describes the prerequisites for setting up users before you create mobile app management policies.
 keywords:
-author: karthikaramanms.author: karaman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 10/22/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,17 +32,18 @@ This topic describes the prerequisites and the steps you must complete **before*
 To understand how Intune MAM policies can protect your company data, see [Protect apps and data using mobile app management policies](protect-apps-and-data-with-microsoft-intune.md).
 
 ## What is the Azure portal?
+
 The Azure portal is the new admin console for creating MAM policies. It supports the following MAM scenarios:
 - Devices that are enrolled in Intune
 - Devices that are managed by another Mobile Device Management (MDM) solution
 - Devices that are not managed by any MDM solution (BYOD)
-
 
 Currently, both the **Intune administrator console** and the **Azure portal** enable you to configure MAM policies.  Consider the following:
 
 * The policies that you create on the **Azure portal** are supported for **all MAM scenarios** that are listed previously. The **Intune administrator console** only supports creating policies for **devices that are enrolled and managed by Intune**.
 
 * You might not see all MAM policy settings in the Intune administrator console because **new settings** can only be added to the **Azure portal**.
+
 * If you create MAM policies in **both** the Intune admin console and the Azure portal, the policy in the **Azure portal is applied to the apps and deployed to users**.
     * MAM policies that are created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be re-created in the Azure portal.
 

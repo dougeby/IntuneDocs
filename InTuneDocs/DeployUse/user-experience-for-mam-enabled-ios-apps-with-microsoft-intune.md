@@ -43,7 +43,7 @@ For devices that are **enrolled for management in Intune**, the user sees a mess
 
 MAM polices are only applied in the work context. Therefore, the app might behave differently depending on whether the context is work or personal.
 
- For example, the user gets a PIN prompt when accessing work data. For the **Outlook app**, the user is prompted for a PIN when they launch the app. For the **OneDrive app**, this happens when the user types in the work account.  For Microsoft **Word**, **PowerPoint**, and **Excel**, this happens when the user accesses documents that are stored in the company OneDrive for Business location.
+ For example, the user gets a PIN prompt when accessing work data. For the **Outlook app**, the user is prompted for a PIN when they launch the app. For the **OneDrive app**, the user is prompted for a pin when they type in the work account.  For Microsoft **Word**, **PowerPoint**, and **Excel**, the user is prompted for a pin when they access documents that are stored in the company OneDrive for Business location.
 
 ##  Manage user accounts on the device
 

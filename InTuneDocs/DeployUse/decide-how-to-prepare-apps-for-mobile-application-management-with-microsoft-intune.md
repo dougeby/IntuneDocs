@@ -35,9 +35,17 @@ You don't need the source code to use the tool, but you do need signing credenti
 
 The App Wrapping Tool does **not** support apps in the Apple App Store or Google Play Store. It also doesn't support certain features that require developer integration (see the following feature comparison table).
 
-You should use the App Wrapping Tool, rather than the SDK, if the  app has already been written or if the source code isn't available.
 
 For more information about the App Wrapping Tool for MAM on devices that are not enrolled in Intune, see [Protect line of business apps and data on devices not enrolled in Microsoft Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
+
+### Reasons to use the App Wrapping Tool:
+* Your app does not have built-in data protection features.
+* Your app is simple.
+* Your app is deployed internally.
+* You don't have access to the app's source code
+* You didn't develop the app.
+* Your app has minimal user authentication experiences.
+
 
 ### Supported app development platforms
 
@@ -51,12 +59,20 @@ The App SDK is designed mainly for customers who have apps in the Apple App Stor
 
 To learn more about the SDK, see the [Overview](/intune/develop/intune-app-sdk). To get started with the SDK, see [Getting Started With the Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started).
 
+### Reasons to use the SDK
+* Your app does not have built-in data protection features.
+* Your app is complex and contains many experiences.
+* Your app is deployed on a public app store such as Google Play or Apple's App Store.
+* You are an app developer and have the technical background to use the SDK.
+* Your app has other SDK integrations.
+* Your app is frequently updated.
+
 ### Supported app development platforms
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Yes – use the Intune App SDK Xamarin component.|Yes – use the Intune App SDK Cordova plugin.|
-|**Android**| Yes – use the Intune App SDK Xamarin Component.|Yes – use the Intune App SDK Cordova plugin.|
+|**iOS**|Yes – use the [Intune App SDK Xamarin Component](/../develop/intune-app-sdk-xamarin).|Yes – use the [Intune App SDK Cordova Plugin](/../develop/intune-app-sdk-cordova).|
+|**Android**| Yes - use the [Intune App SDK Xamarin Component](/../develop/intune-app-sdk-xamarin).|Yes – use the [Intune App SDK Cordova Plugin](/../develop/intune-app-sdk-cordova).|
 
 ## Feature comparison
 This table lists the settings that you can use for the App SDK and App Wrapping Tool.
@@ -74,7 +90,7 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Require simple PIN for access|X|X|
 |Replace built-in app PIN with Intune PIN|X||
 |Specify the number of attempts before PIN reset|X|X|
-|Require fingerprint instead of PIN (iOS only)<br></br>**Note:** Only available in MAM-only environments.|X||
+|Allow fingerprint instead of PIN |X|X|
 |Require corporate credentials for access|X|X|
 |Block managed apps from running on jailbroken or rooted devices|X|X|
 |Encrypt app data|X|X|
@@ -86,6 +102,7 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Prevent “Save as” |X||
 |Support for Multi-Identity|X||
 |Support for MAM without device enrollment|X|X|
+|Customizable Style |X|||
 ### See also
 
 [Android app wrapping tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>

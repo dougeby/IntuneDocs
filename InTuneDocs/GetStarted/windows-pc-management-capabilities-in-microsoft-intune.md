@@ -6,7 +6,7 @@ description: Learn about the capabilities of Intune when you manage Windows PCs 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
