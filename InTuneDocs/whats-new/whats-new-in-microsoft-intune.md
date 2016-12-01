@@ -57,13 +57,14 @@ Intune is adding new enrollment restrictions that control which mobile device pl
 * macOS and Windows 8.1 or higher can be restricted from enrolling as mobile device platforms.
 * Restricting mobile device enrollment does not restrict PC agent enrollment.
 * For iOS only, there is one additional option to block the enrollment of personally owned devices.
+
 Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
 
 
 ## Notices
 
 ### Multi-Factor Authentication on Enrollment moving to the Azure portal <!--VSO 750545-->
-Previously, admins would go to either the Intune console or the Configuration Manager (earlier than release 1610) console to set MFA for Intune enrollments. With this updated feature, you will now login to the [Microsoft Azure portal](https://manage.windowsazure.com) using your Intune credentials and configure MFA settings through Azure AD. Learn more about this [here](https://aka.ms/mfa_ad).
+Previously, admins would go to either the Intune console or the Configuration Manager (earlier than release October 2016) console to set MFA for Intune enrollments. With this updated feature, you will now login to the [Microsoft Azure portal](https://manage.windowsazure.com) using your Intune credentials and configure MFA settings through Azure AD. Learn more about this [here](https://aka.ms/mfa_ad).
 
 ### Company Portal app for Android now available in China <!--VSO 658093-->
 We are publishing the Company Portal app for Android for download in China. Due to the absence of Google Play Store in China, Android devices must obtain apps from Chinese app marketplaces. The Company Portal app for Android will be available for download on 360, Tencent, Xiaomi, Wandoujia and Huawei. 
