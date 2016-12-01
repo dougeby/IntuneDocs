@@ -1,1 +1,3 @@
-# Welcome to Microsoft Intune in the Azure Portal Preview
+---
+redirect_url: /intune-azure/introduction/what-is-microsoft-intune
+---
