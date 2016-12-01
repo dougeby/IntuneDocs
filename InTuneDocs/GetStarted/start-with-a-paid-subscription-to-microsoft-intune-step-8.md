@@ -48,7 +48,7 @@ Enrollment must be enabled for iOS, Mac, and Android for Work devices establishi
 
 Enable device enrollment for the device platform you want to manage. Depending on your platform, different requirements are needed:
 
--  [iOS and macOS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS and macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
 -  [Window PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Window 10 Mobile and Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
