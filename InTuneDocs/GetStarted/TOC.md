@@ -1,6 +1,6 @@
 # [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
 # [Get Started](get-started.md)
-## [Quick start Guide](start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Quick start guide](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Prerequisites](what-to-know-before-you-start-microsoft-intune.md)
 #### [Supported mobile devices and computers](supported-mobile-devices-and-computers.md)
 #### [Network bandwidth usage](network-bandwidth-use.md)
