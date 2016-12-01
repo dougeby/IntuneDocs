@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune VPN settings for Android devices | Microsoft Docs
-description: Description.
+description: Learn about the Intune settings you can use to configure VPN connections on Android devices.
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -42,7 +42,7 @@ Depending on the settings you choose, not all values in the list below will be c
 - **Export** - Exports the list of servers to a comma-seperated-values (csv) file.
 
 **Authentication method** - 
-- **Certificates** - Select a SCEP or PKCS certificate profile you previously created to authenticate the connection. For more details about certificate profiles, see [SCEP certificate settings for Android devices](scep-certificate-for-android) or [PKCS certificate settings for Android devices](pkcs-certificate-for-android).
+- **Certificates** - Select a SCEP or PKCS certificate profile you previously created to authenticate the connection. For more details about certificate profiles, see [How to configure certificates](how-to-configure-certificates.md).
 - **Username and password** - End users must supply a user name and password to log into the VPN server.
 
 **Connection type** - Select the VPN connection type from the following list of vendors:

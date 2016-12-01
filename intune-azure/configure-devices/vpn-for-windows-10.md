@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune VPN settings for Windows 10 devices | Microsoft Docs
-description: Description.
+description: Learn about the Intune settings you can use to configure VPN connections on Windows 10 devices.
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -32,6 +32,7 @@ ms.suite: ems
 
 Depending on the settings you choose, not all values in the list below will be configurable.
 
+
 ## Base VPN settings
 
 
@@ -42,8 +43,7 @@ Depending on the settings you choose, not all values in the list below will be c
 	- **Description** - 
 	- **IP address or FQDN** - 
 	- **Default server** - Enables this server as the default server that devices will use to establish the connection. Make sure to set only one server as the default.
-- **Import** - Browse to a file containing a comma-seperated list of servers in the format description, IP address or FQDN, Default server. Choose **OK** to import these into the **Servers** list.
-- **Export** - Exports the list of servers to a comma-seperated-values (csv) file.
+- **Import** - Browse to a file containing a comma-seperated list of servers in the format description, IP address or FQDN, Default server. Choose **OK** to import these into the **Servers** list.- **Export** - Exports the list of servers to a comma-seperated-values (csv) file.
 
 **Connection type** - Select the VPN connection type from the following list of vendors:
 - **Pulse Secure**
@@ -92,7 +92,8 @@ Refer to each manufacturer's VPN documentation for more information about how to
 **Restrict VPN connection to these apps** - Enable this option if you only want apps you specify to use the VPN connection.
 **Associated Apps** - Provide a list of apps that will automatically use the VPN connection. The type of app will determine the app identifier. For a universal app, provide the package family name. For a desktop app, provide the file path of the app.
 
->[!IMPORTANT] We recommend that you secure all lists of apps that you compile for use in configuration of per-app VPN. If an unauthorized user modifies your list and you import it into the per-app VPN app list, you will potentially authorize VPN access to apps that should not have access. One way you can secure app lists is by using an access control list (ACL).
+>[!IMPORTANT]
+>We recommend that you secure all lists of apps that you compile for use in configuration of per-app VPN. If an unauthorized user modifies your list and you import it into the per-app VPN app list, you will potentially authorize VPN access to apps that should not have access. One way you can secure app lists is by using an access control list (ACL).
 
 **Network traffic rules for this VPN connection** - Select which protocols, and which local and remote port and address ranges, will be enabled for the VPN connection. If you do not create a network traffic rule, all protocols, ports, and address ranges are enabled. After you create a rule, the VPN connection will use only the protocols, ports, and address ranges that you specify in that rule.
 

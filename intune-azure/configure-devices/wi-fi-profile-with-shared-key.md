@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune custom device profile to create a Wi-Fi profile with a pre-shared key | Microsoft Docs
-description: Use Custom Configuration to create a Wi-Fi profile with a pre-shared key.
+description: Use an Intune custom profile to create a Wi-Fi profile with a pre-shared key.
 keywords:
 author: robstackmsft
 ms.author: robstack
