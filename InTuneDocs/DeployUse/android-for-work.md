@@ -6,10 +6,10 @@ description: Intune manages Android for Work to provide additional management ca
 keywords:
 author: nathbarn
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 
@@ -51,7 +51,7 @@ Apps install without user interaction and without requiring that the user allow 
 
 ## App configuration
 
-Android for Work provides infrastructure for deploying app configuration values to apps that support them. By specifying configuration values for work apps, you ensure they are properly set when users launch the app for the first time. Support for app configuration requires that app developers create their Android apps specifically to support managed configuration values. If they do, then you can use Intune to specify and apply these configuration settings. Learn more about [Android for Work app configuration settings](deploy-use/afw-app-configuration-policy.md).
+Android for Work provides infrastructure for deploying app configuration values to apps that support them. By specifying configuration values for work apps, you ensure they are properly set when users launch the app for the first time. Support for app configuration requires that app developers create their Android apps specifically to support managed configuration values. If they do, then you can use Intune to specify and apply these configuration settings. Learn more about [Android for Work app configuration settings](afw-app-configuration-policy.md).
 
 ## Email configuration
 

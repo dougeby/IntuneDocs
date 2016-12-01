@@ -6,7 +6,7 @@ description: Enable mobile device management (MDM) for Windows PCs including Win
 keywords:
 author: staciebarker
 manager: stabar
-ms.date: 08/29/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,11 @@ You can let users install and enroll their devices by using the Intune Company P
 1. **Set up Intune**<br>
 If you haven’t already, prepare for mobile device management by  [setting the mobile device management (MDM) authority](prerequisites-for-enrollment.md#set-mobile-device-management-authority) as **Microsoft Intune** and then setting up MDM.
 
-2. **Create CNAMEs** (optional)<br>Create **CNAME** DNS resource records for your company’s domain to simplify enrollment. Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, `https://manage.microsoft.com`. CNAME resource records must have the following information:
+2. **Create CNAMEs** (optional)<br>Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment.manage.microsoft.com.
+
+	If you currently have a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com, we suggest that you replace it with a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com. This change is recommended, because the manage.microsoft.com endpoint is being deprecated for enrollments in a future release.
+
+	CNAME resource records must have the following information:
 
   |TYPE|Host name|Points to|TTL|
   |--------|-------------|-------------|-------|

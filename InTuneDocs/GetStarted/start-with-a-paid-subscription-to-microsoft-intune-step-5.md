@@ -6,7 +6,7 @@ description: Create users and groups for your Intune subscription
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,19 @@ ms.suite: ems
 
 # Create groups to organize users and devices
 Groups in Intune give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics) and use them to perform a wide variety of administrative tasks, from deploying policies for a set of users to deploying applications to a set of devices.
+
+## Group management moving to Azure AD
+
+**Starting in November 2016**, new accounts will manage user and device groups in the Azure Acitve Directory (AD) portal. In December 2016, the Intune product team will begin to migrate existing customers to the new Azure AD-based group management experience. All user and device groups will be migrated to Azure AD security groups. We won’t start migrations until we can minimize any effect on your day-to-day work, and when we expect there will be no effect on your users. We also will give you notice before we migrate your account.
+
+
+>[!IMPORTANT]
+>
+>If you open the Groups workspace in the Intune portal and see **Intune user groups are now managed as groups in Azure Active Directory** with a link to the Azure Active Directory portal, then you are already using the *new* Azure AD security groups approach to group management in Intune. To learn how to create groups, see [Managing groups in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
+>
+>If you do not see the link to the Azure AD portal, you are still using the Intune portal for groups management.
+
+## Group management in the Intune portal
 
 Device and user groups are both created in the GROUPS workspace of the Intune administration console.
 
