@@ -54,7 +54,6 @@ You can block apps that are not supported by Intune mobile app management (MAM) 
 
 ### Ability to restrict mobile device enrollment<!--747596-->
 Intune is adding new enrollment restrictions that control which mobile device platforms are allowed to enroll. Intune separates mobile device platforms as iOS, macOS, Android, Windows and Windows Mobile.
-* macOS and Windows 8.1 or higher can be restricted from enrolling as mobile device platforms.
 * Restricting mobile device enrollment does not restrict PC client enrollment.
 * For iOS only, there is one additional option to block the enrollment of personally owned devices.
 
