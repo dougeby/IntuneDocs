@@ -6,7 +6,7 @@
 #### [Network bandwidth usage](network-bandwidth-use.md)
 ### [Sign in to Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configure a custom domain name](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
-### [Synchronize AD and add users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
+### [Add users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
 ### [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
 ### [Organize users and devices](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Deploy policies and apps](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
