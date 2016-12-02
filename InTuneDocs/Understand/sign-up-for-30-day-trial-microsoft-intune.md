@@ -77,7 +77,7 @@ In the Office 365 Admin center, you can add users individually or in bulk by upl
 ![Image of add user  button options](./media/sign-up/add-user.png)
 
 2.  When you add the user, the final step will be to send the user an email with their temporary Intune password. For the purposes of this evaluation, use your own work email address so you will receive the log-on information and see the email your users will get. You can then use these user identities to enroll test devices.
-![Image of add user final step](./media/sign-up/new-user2.png)
+![Image of add user final step](./media/sign-up/new-user-2.png)
 
 If you want to assign a user an admin role after you create it, you can edit the role in the Office 365 Admin center by selecting the user name from your list of users, and then choosing **Edit** in the Role line to see the list of user roles you can select from and assign to that user.
 
