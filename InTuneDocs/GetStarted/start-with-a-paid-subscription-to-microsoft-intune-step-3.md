@@ -18,7 +18,7 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,13 +32,12 @@ As an administrator you can add users to Intune to let them enroll devices and a
 This topic helps you:
 
 - [Add users to Intune](#add-users-to-intune)
-- [Sync users from Active Directory](#sync-users-from-active-directory)
 - [Grant additional Intune permissions](#grant-intune-permissions)
 
 ## Add users to Intune
 You can manually add users to your Intune subscription via the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), they are not automatically assigned an Intune license. Instead, at a later time, an Intune tenant administrator must edit the user account to assign a license to the user from the Office 365 portal. For guidance, see [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-## Sync Active Directory and add users to Intune
+### Sync Active Directory and add users to Intune
 You can configure directory synchronization to import user accounts from your on-premises Active Directory to Microsoft Azure Active Directory (Azure AD) which includes Intune users. Having your on-premises Active Directory service connected with all of your Azure Active Directory-based services makes managing user identity much simpler. You can also configure single sign-on features to make the authentication experience for your users familiar and easy. By linking the same [Azure AD tenant](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) with multiple services, the user accounts that you have previously synchronized are available to all cloud-based services.
 
 ### How to sync on-premises users with Azure AD
