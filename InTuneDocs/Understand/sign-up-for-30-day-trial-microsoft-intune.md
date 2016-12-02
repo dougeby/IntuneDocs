@@ -54,18 +54,18 @@ There are two portals you will use for Intune: the Office 365 Admin center ([por
 
 Normally, you’ll do your work in the Intune administration console, shown below. This is the site where you set up and manage your groups, policies, devices, and apps.
 
-![Image of Intune administration console](./media/Sign up/intune-admin-console.png)
+![Image of Intune administration console](./media/sign-up/intune-admin-console.png)
 
 However, you will use the Office 365 Admin center, shown below, to add and manage your users and other aspects of your account, including billing and support.
 
-![Image of Office 365 Admin center](./media/Sign up/office-admin-center.png)
+![Image of Office 365 Admin center](./media/sign-up/office-admin-center.png)
 
 You can navigate from the Office 365 Admin center to the Intune admin console. The admin centers are under the last item in the left navigation pane. Choose **Intune** to open the Intune admin console in a new tab.
 
-![Image of link to Intune administration console](./media/Sign up/link-to-intune.png)
+![Image of link to Intune administration console](./media/sign-up/link-to-intune.png)
 
 To get from Intune back to the Office 365 Admin center, choose the **Add Users** task on the Groups Overview page.
-<!--- Image for how to get back to Intune --->
+![Image of link back to Office 365  Admin center](./media/sign-up/task-add-users.png)
 
 ## Add users
 Before you leave the Office 365 Admin center for Intune, you need to add some users to your trial account.
@@ -74,12 +74,14 @@ In the Office 365 Admin center, you can add users individually or in bulk by upl
 
 ### Add an individual user
 1. Choose either of the options to add a use to open a form that allows you to create a user. Only the items starred with an asterisk (\*) are required.
-<!--- 2 images --->
+![Image of add user  button options](./media/sign-up/add-user.png)
+
 2.  When you add the user, the final step will be to send the user an email with their temporary Intune password. For the purposes of this evaluation, use your own work email address so you will receive the log-on information and see the email your users will get. You can then use these user identities to enroll test devices.
-<!--- image --->
+![Image of add user final step](./media/sign-on/new-user2.png)
 
 If you want to assign a user an admin role after you create it, you can edit the role in the Office 365 Admin center by selecting the user name from your list of users, and then choosing **Edit** in the Role line to see the list of user roles you can select from and assign to that user.
-<!--- image --->
+
+![Image of user  role options](./media/sign-in/change-user-role.png)
 
 ### Import multiple users
 You will find the wizard for importing multiple users in the **More** list.
