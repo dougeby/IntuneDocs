@@ -52,16 +52,18 @@ After completing the sign-up process, you will be directed to a page used to add
 ## Keeping the Admin center and the Intune administration console straight
 There are two portals you will use for Intune: the Office 365 Admin center ([portal.office.com](https://portal.office.com)) and the Intune administration console ([manage.microsoft.com](https://manage.microsoft.com)).
 
-Normally, you’ll do your work in the Intune administration console. This is the site where you set up and manage your groups, policies, devices, and apps.
+Normally, you’ll do your work in the Intune administration console, shown below. This is the site where you set up and manage your groups, policies, devices, and apps.
 
-<!--- Image of Intune Admin console --->
-However, you will use the Office 365 Admin center to add and manage your users and other aspects of your account, including billing and support.
+![Image of Intune administration console](./media/Sign up/intune-admin-console.png)
 
-<!--- Image of O365 Admin Center --->
+However, you will use the Office 365 Admin center, shown below, to add and manage your users and other aspects of your account, including billing and support.
+
+![Image of Office 365 Admin center](./media/Sign up/office-admin-center.png)
 
 You can navigate from the Office 365 Admin center to the Intune admin console. The admin centers are under the last item in the left navigation pane. Choose **Intune** to open the Intune admin console in a new tab.
 
-<!--- Image of link to Intune --->
+![Image of link to Intune administration console](./media/Sign up/link-to-intune.png)
+
 To get from Intune back to the Office 365 Admin center, choose the **Add Users** task on the Groups Overview page.
 <!--- Image for how to get back to Intune --->
 
@@ -94,7 +96,7 @@ Now it’s time to head over to the Intune admin console to start managing your 
 > Your users won't show up in Intune until they've enrolled a device to be managed.
 
 ## Next steps
-Evaluation scenario: [Evaluate mobile device management in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md) 
+Evaluation scenario: [Evaluate mobile device management in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
 Learn more about using your Azure Active Directory user accounts with Intune:
 - [Identity requirements](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
