@@ -60,12 +60,13 @@ The table below describes how noncompliant settings are managed when a complianc
 1. From the **Intune** blade, choose **Set Device compliance**. Under **Manage**, choose **All device compliance policies** and choose **Create**.
 2. Type a name, description and choose the platform that you want this policy to apply to.
 3. Choose **Compliance requirements** to open the compliance requirements blade.  You can specify the **Security**, **Device health**, and **Device property** settings here, When you are done, choose **Ok**.
-4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
+
+<!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
-9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.
+9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
 ## Assign user groups
 
