@@ -33,7 +33,7 @@ ms.suite: ems
 To help protect company data, you need to make sure that the devices used to access company apps and data comply with certain rules. These rules might include using a PIN to access devices and encrypting data
 stored on devices. A set of such rules is called a **compliance policy**.
 
-##  How should I use device compliance policy?
+##  How should I use a device compliance policy?
 
 
 You can use compliance policy with conditional access to allow only devices that comply with compliance policy rules to access email and other services.
