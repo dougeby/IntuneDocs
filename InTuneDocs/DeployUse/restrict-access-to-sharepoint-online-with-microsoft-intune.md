@@ -117,7 +117,7 @@ If you haven't already done so, create and deploy a compliance policy to the use
 > [!NOTE]
 > While compliance policies are deployed to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] groups, conditional access policies are targeted to Azure Active Directory security groups.
 
-For details about how to configure the compliance policy, see [create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md).
+For details about how to configure the compliance policy, see [Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md).
 
 > [!IMPORTANT]
 > If you haven't deployed a compliance policy, the devices will be treated as compliant.
@@ -125,12 +125,12 @@ For details about how to configure the compliance policy, see [create a complian
 When you're ready, continue to **Step 3**.
 
 ### Step 3: Configure the SharePoint Online policy
-Next, configure the policy to require that only managed and compliant devices can access SharePoint Online. This policy will be will be stored in Azure Active Directory.
+Next, configure the policy to require that only managed and compliant devices can access SharePoint Online. This policy will be stored in Azure Active Directory.
 
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> You can also create conditional access policy in the Azure AD management console. Azure AD management console allows you to create the Intune device conditional access policies (referred to as the **device-based conditional access policy** in Azure AD) in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party Enterprise apps like Salesforce and Box that Azure AD supports. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+> You can also create a conditional access policy in the Azure AD management console. The Azure AD management console lets you create an Intune device conditional access policy (referred to as the **device-based conditional access policy** in Azure AD), in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party enterprise apps that Azure AD supports, like Salesforce and Box. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **SharePoint Online Policy**.
@@ -138,63 +138,63 @@ Next, configure the policy to require that only managed and compliant devices ca
 
 2.  Select **Enable conditional access policy for SharePoint Online**.
 
-3.  Under **Application access**, you can choose to apply conditional access policy to:
+3.  Under **Application access**, you can choose to apply the conditional access policy to:
 
     -   **All platforms**
 
-        This will require that any device used to access **SharePoint Online**,  is enrolled in Intune and compliant with the policies.  Any client application using **modern authentication** is subject to the conditional access policy. If the platform is currently not supported by Intune, access to **SharePoint Online** is blocked.
+        This requires that any device used to access **SharePoint Online** is enrolled in Intune and compliant with the policies. Any client application that uses **modern authentication** is subject to the conditional access policy. If the platform is currently not supported by Intune, access to **SharePoint Online** is blocked.
 
-        Selecting **All platforms** option means that Azure Active Directory will apply this policy to all authentication requests, regardless of the platform reported by the client application.  All platforms will be required to enrolled and become compliant, except for:
-        *	Windows devices will be required to be enrolled and compliant, domain joined with on-premises Active Directory, or both
-	    * Unsupported platforms like Mac.  However, apps using modern authentication coming from these platforms will be still be blocked.
+        Selecting the **All platforms** option means that Azure Active Directory applies this policy to all authentication requests, regardless of the platform that is reported by the client application. All platforms are required to be enrolled and become compliant, except for:
+        *	Windows devices, which are required to be enrolled and compliant, domain joined with on-premises Active Directory, or both.
+	    * Unsupported platforms like Mac. However, apps using modern authentication that come from these platforms are still blocked.
 
     -   **Specific platforms**
 
-         Conditional access policy apply to any client app that is using modern authentication on the platforms you specify.
+         The conditional access policy applies to any client app that's using modern authentication on the platforms that you specify.
 
-     For windows PCs, the PC must either be domain-joined, or enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. You can set the following requirements:
+     For Windows PCs, the PC must either be domain-joined, or enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. You can set the following requirements:
 
-     -   **Devices must be domain-joined or compliant.** Choose this option if you want the  PCs to either be domain-joined or compliant with the policies set in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. If the PC does not meet either of these requirements, the user is prompted to enroll the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+     -   **Devices must be domain joined or compliant.** Choose this option if you want the PCs to either be domain joined or compliant with the policies that are set in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. If the PC doesn't meet either of these requirements, the user is prompted to enroll the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-     -   **Devices must be domain-joined.** Choose this option to require that the PCs must be domain-joined to access Exchange Online. If the PC is not domain-joined access to email is blocked and the user is prompted to contact the IT admin.
+     -   **Devices must be domain joined.** Choose this option to require that the PCs must be domain joined to access Exchange Online. If the PC is not domain joined, access to email is blocked and the user is prompted to contact the IT admin.
 
      -   **Devices must be compliant.** Choose this option to require that the PCs must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. If the PC is not enrolled, a message with instructions on how to enroll is displayed.
 
-4.   Under **Browser access** to SharePoint Online and OneDrive for Business, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS), and Chrome (Android). Access from other browsers will be blocked.  The same platform restrictions you selected for Application access for OneDrive also apply here.
+4.   Under **Browser access** to SharePoint Online and OneDrive for Business, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS), and Chrome (Android). Access from other browsers is blocked. The same platform restrictions that you selected for Application access for OneDrive also apply here.
 
-  On **Android** devices, users must enable the browser access.  To do this the end-user must enable the “Enable Browser Access” option on the enrolled device as follows:
-  1.	Launch the **Company Portal app**.
-  2.	Go to the **Settings** page from the triple dots (…) or the hardware menu button.
+  On **Android** devices, users must enable browser access. To do this, the user must Choose the **Enable Browser Access** option on the enrolled device as follows:
+  1.	Open the **Company Portal** app.
+  2.	Go to the **Settings** page from the ellipsis (…) or hardware menu button.
   3.	Press the **Enable Browser Access** button.
-  4.  In the Chrome browser, sign out of Office 365 and restart Chrome.
+  4.    In the Chrome browser, sign out of Office 365 and restart Chrome.
 
-  On **iOS and Android** platforms, To identify the device that is used to access the service, Azure Active Directory will issue a Transport layer security ( TLS) certificate to the device.  The device displays the certificate with a prompt to the end-user to select the certificate as seen in the screenshots below. The end-user must select this certificate before they can continue to use the browser.
+  On **iOS and Android** platforms, to identify the device that is used to access the service, Azure Active Directory issues a Transport Layer Security (TLS) certificate to the device. The device displays the certificate with a prompt to the user to select the certificate as shown in the following screenshots. The user must select this certificate before they can use the browser.
 
   **iOS**
 
-  ![screenshot of the certificate prompt on an ipad](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![Screenshot of the certificate prompt on an iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
-  ![screenshot of the certificate prompt on an Android device](../media/mdm-browser-ca-android-cert-prompt.png)
-5.  Under **Targeted Groups**, choose **Modify** to select the Azure Active Directory security groups to which the policy will apply. You can choose to target this to all users or just a select groups of users.
+  ![Screenshot of the certificate prompt on an Android device](../media/mdm-browser-ca-android-cert-prompt.png)
+5.  Under **Targeted Groups**, choose **Modify** to select the Azure Active Directory security groups that the policy will apply to. You can choose to target this to all users or just a select groups of users.
 
 6.  Under **Exempted Groups**, optionally, choose **Modify** to select the Azure Active Directory security groups that are exempt from this policy.
 
-6.  When you are done, choose **Save**.
+7.  When you're done, choose **Save**.
 
-You do not have to deploy the conditional access policy, it takes effect immediately.
+You don't have to deploy the conditional access policy—it takes effect immediately.
 
 ### Step 4: Monitor the compliance and conditional access policies
 In the **Groups** workspace, you can view the status of your devices.
 
-Select any mobile device group and then, on the **Devices** tab, select one of the following **Filters**:
+Select any mobile device group and then, on the **Devices** tab, choose one of the following **Filters**:
 
--   **Devices that are not registered with AAD** – These devices are blocked from SharePoint Online.
+-   **Devices that are not registered with AAD**. These devices are blocked from SharePoint Online.
 
--   **Devices that are not compliant** – These devices are blocked from SharePoint Online.
+-   **Devices that are not compliant**. These devices are blocked from SharePoint Online.
 
--   **Devices that are registered with AAD and compliant** – These devices can access SharePoint Online.
+-   **Devices that are registered with AAD and compliant**. These devices can access SharePoint Online.
 
 ### See also
 [Restrict access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
