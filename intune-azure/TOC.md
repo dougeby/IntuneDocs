@@ -123,11 +123,11 @@
 ## [What is device compliance?](/intune-azure/set-device-compliance/what-is-device-compliance)
 ## [Get started](/intune-azure/set-device-compliance/get-started-with-device-compliance)
 ## How to
-### [Create Android compliance profile](/intune-azure/set-device-compliance/create-a-compliance-profile-for-android)
-### [Create Android for Work compliance profile](/intune-azure/set-device-compliance/create-a-compliance-profile-for-android-for-work)
-### [Create iOS compliance profile](/intune-azure/set-device-compliance/create-a-compliance-profile-for-ios)
-### [Create Windows compliance profile](/intune-azure/set-device-compliance/create-a-compliance-profile-for-windows)
-### [Monitor device compliance](/intune-azure/set-device-compliance/monitor-device-compliance)
+### [Create Android compliance policy](/intune-azure/set-device-compliance/create-a-compliance-policy-for-android)
+### [Create Android for Work compliance policy](/intune-azure/set-device-compliance/create-a-compliance-policy-for-android-for-work)
+### [Create iOS compliance policy](/intune-azure/set-device-compliance/create-a-compliance-policy-for-ios)
+### [Create Windows compliance policy](/intune-azure/set-device-compliance/create-a-compliance-policy-for-windows)
+<!--- ### [Monitor device compliance](/intune-azure/set-device-compliance/monitor-device-compliance)--->
 
 
 

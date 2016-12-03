@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to create a compliance profile for Android | Microsoft Docs
-description: Learn how to create a compliance profile for Android devices.
+title: How to create a compliance policy for Android | Microsoft Docs
+description: Learn how to create a compliance policy for Android devices.
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
@@ -25,25 +25,25 @@ ms.suite: ems
 
 ---
 
-# How to create a device compliance profile for Android devices
+# How to create a device compliance policy for Android devices
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-# How to create a device compliance profile for Android
+# How to create a device compliance policy for Android
 
-Compliance profiles are created for each platform.  You can create a compliance profile in the Azure portal. To learn more about what compliance profile is see [What is a device compliance](what-is-device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance profile see [Get started with device compliance](get-started-with-device-compliance.md) topic.
+Compliance policies are created for each platform.  You can create a compliance policy in the Azure portal. To learn more about what compliance policy is see [What is a device compliance](what-is-device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](get-started-with-device-compliance.md) topic.
 
-The table below describes how noncompliant settings are managed when a compliance profile is used with a conditional access profile.
+The table below describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 
 --------------------
 
-|**Profile setting**| **Android 4.0 and later, Samsung Knox Standard 4.0 and later** |
+|**policy setting**| **Android 4.0 and later, Samsung Knox Standard 4.0 and later** |
 | --- | ----|
 | **PIN or password configuration** |  Quarantined |
 | **Device encryption** | Quarantined |
 | **Jailbroken or rooted device** | Quarantined (not a setting) |
-| **Email profile** | Not applicable |
+| **email profile** | Not applicable |
 | **Minimum OS version** | Quarantined |
 | **Maximum OS version** |   Quarantined |
 | **Windows health attestation** | Not applicable |
@@ -55,32 +55,32 @@ The table below describes how noncompliant settings are managed when a complianc
 
 **Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the devices is not compliant, the following actions take place:+
 
-- The device is blocked if a conditional access profile applies to the user.
+- The device is blocked if a conditional access policy applies to the user.
 - The company portal notifies the user about any compliance problems.
 
-## Create a compliance profile in the Azure portal
+## Create a compliance policy in the Azure portal
 
-1. From the **Intune** blade, choose **Set Device compliance**. Under **Manage**, choose **All device compliance profiles**, and choose **Create**.
-2. Type a name, description and choose the platform that you want this profile to apply to.
+1. From the **Intune** blade, choose **Set Device compliance**. Under **Manage**, choose **All device compliance policies**, and choose **Create**.
+2. Type a name, description and choose the platform that you want this policy to apply to.
 3. Choose **Compliance requirements** to specify the **Security**, **Device health**, and **Device property** settings. When you are done, choose **OK**.
-4. You are now back in the **Compliance requirements** blade. Choose **OK**.
-5. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this profile.
-6. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
-7. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance profile.
-8. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access profile to block access to company resources like SharePoint online.
-9. Choose **Add** to finish creating the action.
-10. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.
+
+<!-- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
+5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
+7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
+8. Choose **Add** to finish creating the action.
+9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
 
 ## Assign user groups
 
-To assign a compliance profile to users, choose a profile that you have configured. Existing profiles can be found in the **Compliance –Profiles** blade.
+To assign a compliance policy to users, choose a policy that you have configured. Existing policies can be found in the **Compliance –policies** blade.
 
-1. Choose the profile and choose **Assignments**. This opens the blade where you can select **Azure Active Directory security groups** and assign them to the profile.
-2. Choose **Select groups** to open the blade that displays the Azure AD security groups. Here you can find the security groups in your Azure Active Directory.  You can select the user groups you want this profile to apply to and choose **Select**. Choosing **Select**  deploys the profile to users.
+1. Choose the policy and choose **Assignments**. This opens the blade where you can select **Azure Active Directory security groups** and assign them to the policy.
+2. Choose **Select groups** to open the blade that displays the Azure AD security groups. Here you can find the security groups in your Azure Active Directory.  You can select the user groups you want this policy to apply to and choose **Select**. Choosing **Select**  deploys the policy to users.
 
-You have applied the profile to users.  The devices used by the users who are targeted by the profile will be evaluated for compliance.
+You have applied the policy to users.  The devices used by the users who are targeted by the policy will be evaluated for compliance.
 
-##  Compliance profile settings
+##  Compliance policy settings
 
 ## System security settings
 
@@ -112,7 +112,7 @@ You have applied the profile to users.  The devices used by the users who are ta
 
 ##### Important
 
-Side-loading applications require that the **Unknown sources** setting is enabled. Enforce this compliance profile only if you are not side-loading Android apps on devices.
+Side-loading applications require that the **Unknown sources** setting is enabled. Enforce this compliance policy only if you are not side-loading Android apps on devices.
 
 - **Require that USB debugging is disabled (Android 4.2 or later)**: This setting specifies whether to detect the USB debugging option on the device is enabled.
 - **Require devices have enabled Scan device for security threats (Android 4.2-4.4)**: This setting specifies that the **Verify apps** feature is enabled on the device.
@@ -123,13 +123,13 @@ Side-loading applications require that the **Unknown sources** setting is enable
   - **Medium** : The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
   - **High** : This is the least secure. Essentially, this allows all threat levels. Perhaps it is useful if you are using this solution only for reporting purposes.
 
-For more details, see [Enable device threat protection rule in the compliance profile](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
+For more details, see [Enable device threat protection rule in the compliance policy](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## Device property settings
 
 - **Minimum OS required** : When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is shown. The user can choose to upgrade their device, after which they can access company resources.
 - **Maximum OS version allowed** : When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rules to allow the OS version, this device cannot be used to access company resources.
 
-## Next steps
+<!--- ## Next steps
 
-[How to monitor device compliance](monitor-device-compliance.md)
+[How to monitor device compliance](monitor-device-compliance.md)--->
