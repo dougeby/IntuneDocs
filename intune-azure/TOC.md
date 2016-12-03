@@ -133,4 +133,6 @@
 
 # Conditional access
 ## [What is conditional access?](/intune-azure/conditional-access/what-is-conditional-access)
-## [How to create a conditional access policy](/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises)
+## How to
+## [Install Exchange on-premises connector](/intune-azure/conditional-access/install-intune-on-premises-exchange-connector)
+## [Create a conditional access policy](/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises)
