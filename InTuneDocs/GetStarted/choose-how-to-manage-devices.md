@@ -41,22 +41,15 @@ Use this decision flow to decide how to get your devices managed.
 
 ![Decision flow for how to get your devices managed.](./media/choose-manage-method.png)
 
-Enroll Windows PCs to get the most functionality. However, the Intune software client might be more suitable for your needs when:
+Enroll Windows PCs to get the most functionality. However, the Intune software client might be more suitable for:
 
-- The PC is running Windows 7.
-- You want to manage Windows software updates and license usage.
-- You want to manage malware with Endpoint Protection and Windows Firewall.
-- You want to provide remote assistance to users using the TeamViewer software.
-
+- Windows 7
+- Windows software updates and license usage
+- Endpoint Protection and Windows Firewall
+- Remote assistance to users using the TeamViewer software
 
 For a detailed listing of the management capabilities you'll get with each method, see [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md) and [Intune PC software client capabilities](windows-pc-management-capabilities-in-microsoft-intune.md).
 For information about the devices and PCs that Intune supports, see [Supported mobile devices and computers](/intune/get-started/supported-mobile-devices-and-computers).
-
-
-## Exchange ActiveSync management
-In addition to enrolling a device or installing the Intune software client, you can also manage devices by [using Exchange ActiveSync](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune). This method requires you to install the On-Premises Connector or use the built-in Service-to-Service Connector to connect to your Exchange Server.
-Although this is a third option to manage devices, it provides a limited set of management capabilities when compared to the other methods.
-
 
 ## Next steps
 
