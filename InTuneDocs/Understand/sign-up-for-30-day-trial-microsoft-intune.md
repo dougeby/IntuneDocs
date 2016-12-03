@@ -52,18 +52,21 @@ After completing the sign-up process, you will be directed to a page used to add
 ## Keeping the Admin center and the Intune administration console straight
 There are two portals you will use for Intune: the Office 365 Admin center ([portal.office.com](https://portal.office.com)) and the Intune administration console ([manage.microsoft.com](https://manage.microsoft.com)).
 
-Normally, you’ll do your work in the Intune administration console. This is the site where you set up and manage your groups, policies, devices, and apps.
+Normally, you’ll do your work in the Intune administration console, shown below. This is the site where you set up and manage your groups, policies, devices, and apps.
 
-<!--- Image of Intune Admin console --->
-However, you will use the Office 365 Admin center to add and manage your users and other aspects of your account, including billing and support.
+![Image of Intune administration console](./media/sign-up/intune-admin-console.png)
 
-<!--- Image of O365 Admin Center --->
+However, you will use the Office 365 Admin center, shown below, to add and manage your users and other aspects of your account, including billing and support.
+
+![Image of Office 365 Admin center](./media/sign-up/office-admin-center.png)
 
 You can navigate from the Office 365 Admin center to the Intune admin console. The admin centers are under the last item in the left navigation pane. Choose **Intune** to open the Intune admin console in a new tab.
 
-<!--- Image of link to Intune --->
+![Image of link to Intune administration console](./media/sign-up/link-to-intune.png)
+
 To get from Intune back to the Office 365 Admin center, choose the **Add Users** task on the Groups Overview page.
-<!--- Image for how to get back to Intune --->
+
+![Image of link back to Office 365  Admin center](./media/sign-up/task-add-users.png)
 
 ## Add users
 Before you leave the Office 365 Admin center for Intune, you need to add some users to your trial account.
@@ -72,21 +75,28 @@ In the Office 365 Admin center, you can add users individually or in bulk by upl
 
 ### Add an individual user
 1. Choose either of the options to add a use to open a form that allows you to create a user. Only the items starred with an asterisk (\*) are required.
-<!--- 2 images --->
-2.  When you add the user, the final step will be to send the user an email with their temporary Intune password. For the purposes of this evaluation, use your own work email address so you will receive the log-on information and see the email your users will get. You can then use these user identities to enroll test devices.
-<!--- image --->
+![Image of add user button options](./media/sign-up/add-user.png)
 
-If you want to assign a user an admin role after you create it, you can edit the role in the Office 365 Admin center by selecting the user name from your list of users, and then choosing **Edit** in the Role line to see the list of user roles you can select from and assign to that user.
-<!--- image --->
+
+2.  When you add the user, the final step will be to send the user an email with their temporary Intune password. For the purposes of this evaluation, use your own work email address so you will receive the log-on information and see the email your users will get. You can then use these user identities to enroll test devices.<br/>
+
+ ![Image of add user final step](./media/sign-up/new-user-2.png)
+
+3. If you want to assign a user an admin role after you create it, you can edit the role in the Office 365 Admin center by selecting the user name from your list of users, and then choosing **Edit** in the Role line to see the list of user roles you can select from and assign to that user.
+
+ ![Image of user  role options](./media/sign-up/change-user-role.png)
 
 ### Import multiple users
-You will find the wizard for importing multiple users in the **More** list.
-<!--- image --->
-To help you set up your .csv file correctly, you can download a template file to populate with your user data. Download the .csv file that contains headers and sample user information to see exactly the kind of data is needed for each field.
-<!--- image --->
-After you’ve created and saved your .csv file, choose **Browse** to select the file. Verify, and choose **Next**. Your users will be uploaded and added to your list of active users.
+1. You will find the wizard for importing multiple users in the **More** list.
 
-<!--- image --->
+ ![Image of option to add multiple users](./media/sign-up/add-multiple-users.png)
+
+2. To help you set up your .csv file correctly, you can download a template file to populate with your user data. Download the .csv file that contains headers and sample user information to see exactly the kind of data is needed for each field.
+
+ ![Image of first step in bulk enrollment wizard](./media/sign-up/bulk-enroll-step-1.png)
+
+
+3. After you’ve created and saved your .csv file, choose **Browse** to select the file. Verify, and choose **Next**. Your users will be uploaded and added to your list of active users.
 
 Now it’s time to head over to the Intune admin console to start managing your users, their devices, and their apps.
 
@@ -94,7 +104,7 @@ Now it’s time to head over to the Intune admin console to start managing your 
 > Your users won't show up in Intune until they've enrolled a device to be managed.
 
 ## Next steps
-Evaluation scenario: [Evaluate mobile device management in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md) 
+Evaluation scenario: [Evaluate mobile device management in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
 Learn more about using your Azure Active Directory user accounts with Intune:
 - [Identity requirements](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
