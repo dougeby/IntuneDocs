@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 12/02/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,10 +25,9 @@ ms.suite: ems
 
 ---
 
-
 # You see errors while trying to enroll your iOS device in Intune
 
-The following table lists errors that you might see while enrolling your iOS device in Intune. Share this link with your It admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+The following table lists errors that you might see while enrolling your iOS device in Intune. Share this link with your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 |Error message|Issue|What to tell your IT admin|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
