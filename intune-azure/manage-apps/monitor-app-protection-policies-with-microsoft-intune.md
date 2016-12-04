@@ -26,7 +26,12 @@ ms.suite: ems
 ---
 
 # How to monitor app protection policy user status with Microsoft Intune
-After you have set up an mobile app protection policy and applied it to users, you can monitor the compliance status in the [Azure portal](https://portal.azure.com). The Azure portal includes information about the users affected by the policy, the compliance status, and any issues that your users might be experiencing.
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+**If you are not in the Intune service in the Azure portal preview program** go [here](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) to learn how to create app protection policies.
+
+After you have set up an app protection policy and applied it to users, you can monitor the compliance status in the [Azure portal](https://portal.azure.com). The Azure portal includes information about the users affected by the policy, the compliance status, and any issues that your users might be experiencing.
+
 ## Summary view
 In the **Manage apps** workload, choose **Monitor** > **App protection user status**, to see the summary view:
 
@@ -62,13 +67,12 @@ You can search for a single user and check the compliance status for that user. 
 
 To see the reporting for a user, follow these steps:
 
-1.  To select a user, choose the **Summary** tile or choose the **APP REPORTING BY USER** option on the **Settings** blade:
+1.  To select a user, choose the **Summary** tile or choose the **App protection user status** option
 
-    ![App reporting option on the Settings blade](../media/app-protection-app-reporting-by-user-settings-blade.png)
 
 2. On the **App reporting** blade that opens, choose **Select user** to search for an Azure Active Directory user.
 
-    ![Select user option on the App reporting blade](../media/app-protection-app-reporting-select-user.png)
+
 
 3. Select the user from the list. You will see the details of the compliance status for that user.
 

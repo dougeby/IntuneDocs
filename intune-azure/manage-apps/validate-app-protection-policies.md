@@ -27,6 +27,9 @@ ms.reviewer: joglocke
 
 # How to validate your app protection policy setup
 
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+
 This topic provides information on checking for issues after you set up app protection policy. This guidance applies to app protection policies in the Azure portal **preview**.
 
 ### Checking for symptoms
@@ -42,11 +45,11 @@ If testing shows that your app protection policy behavior is not as anticipated,
 - The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**.
 
 #### User app protection status
-1. In the Azure portal choose **Intune mobile application management** > **settings** > **app management** > **All settings** > **App reporting by user** > **users**.
+1. In the Azure portal choose **Manage apps** > **Monitor** >  **App protection user status** > **users**.
 
 2. Choose a user from the list or search for and choose a user, then choose **Select user**. At the top of the **App reporting** column you will see whether the user is licensed for app protection. Below that you will see whether the user is licensed for O365 and the app status for all of the user's devices.
 
-![App status for app protection policy](..\media\ts-mam-user-apps.png)
+
 
 ### What to do
 Here are the actions to take based on the user status:
