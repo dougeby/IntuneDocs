@@ -32,9 +32,6 @@ This topic describes the prerequisites and the steps you must complete **before*
 To understand how Intune MAM policies can protect your company data, see [Protect apps and data using mobile app management policies](protect-apps-and-data-with-microsoft-intune.md).
 
 ## What is the Azure portal?
-
-**If you are in the Intune service in Azure portal preview**, go [here](https://docs.microsoft.com/en-us/intune-azure/manage-apps/app-protection-policies) to learn how to create app protection policies in the preview portal.
-
 The Azure portal is the new admin console for creating MAM policies and supports the following MAM scenarios:
 - **Devices that are enrolled in Intune**
 - **Devices that are managed by another MDM solution**
@@ -49,7 +46,8 @@ Currently, both the **Intune administrator console** and the **Azure portal** al
     * MAM policies that are created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be re-created in the Azure portal.
 * Other **app management features** like deploying apps and app configuration policies are currently only available in the **Intune administrator console**.
 
-
+z
+If you are new to Azure portal, read the [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) topic to get the basics of using the Azure portal.
 
 For instructions on how to create a MAM policy on the Intune admin console, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
