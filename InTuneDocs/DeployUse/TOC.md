@@ -121,7 +121,7 @@
 #### [Enable device threat protection compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [Protect app data with MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md)
+
 #### [Get ready to configure MAM policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Create and deploy MAM policies](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM policies for Android](android-mam-policy-settings.md)

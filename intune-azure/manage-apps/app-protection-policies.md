@@ -29,6 +29,8 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
+**If you are not in the Intune service in the Azure portal preview program** go [here](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) to learn how to create app protection policies.
+
 App protection policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [What is Microsoft Intune app protection policies](what-is-app-protection-policy.md).
 
 ##  Create an app protection policy
