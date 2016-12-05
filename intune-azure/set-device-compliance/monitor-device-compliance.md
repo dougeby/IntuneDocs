@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to monitor device compliance  | Intune Azure preview | Microsoft Docs
-description: Learn how to monitor device compliance.
+description: "Intune Azure preview: Learn how to monitor device compliance."
 keywords:
 author: karthikaraman
 ms.author: karaman

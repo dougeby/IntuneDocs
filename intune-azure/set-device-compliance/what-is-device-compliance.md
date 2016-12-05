@@ -2,7 +2,7 @@
 # required metadata
 
 title: Device compliance | Intune Azure preview | Microsoft Docs
-description: Use this topic to learn about device compliance in Microsoft Intune
+description: "Intune Azure preview: Use this topic to learn about device compliance in Microsoft Intune"
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe

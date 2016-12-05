@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to configure Windows 10 edition upgrades with Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: Learn how to use Intune to upgrade Windows 10 devices you manage.
+description: "Intune Azure preview: Learn how to use Intune to upgrade Windows 10 devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack

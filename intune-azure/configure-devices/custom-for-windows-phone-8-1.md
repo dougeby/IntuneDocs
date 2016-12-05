@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune custom settings for Windows Phone 8.1 devices | Intune Azure preview | Microsoft Docs
-description: Learn about the settings you can use in a Windows Phone 8.1 custom profile.
+description: "Intune Azure preview: Learn about the settings you can use in a Windows Phone 8.1 custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack

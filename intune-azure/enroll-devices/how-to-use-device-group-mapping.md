@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to use device categories in Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: 
+description: "Intune Azure preview: "
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

@@ -2,7 +2,7 @@
 # required metadata
 
 title: What is Microsoft Intune device enrollment | Intune Azure preview | Microsoft Docs
-description: 
+description: "Intune Azure preview: "
 keywords:
 author: staciebarker
 ms.author: stabar

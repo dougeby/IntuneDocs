@@ -1,6 +1,6 @@
 ---
 title: Configure certificate infrastructure for SCEP | Intune Azure preview | Microsoft Docs
-description: Learn how to configure your infrastructure before you create and deploy Intune SCEP certificate profiles.
+description: "Intune Azure preview: Learn how to configure your infrastructure before you create and deploy Intune SCEP certificate profiles."
 keywords:
 author: robstackmsft
 ms.author: robstack

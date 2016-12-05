@@ -2,7 +2,7 @@
 # required metadata
 
 title: On-Premises Access | Intune Azure preview | Microsoft Docs
-description: Use this topic to learn about On-Premises Access Microsoft Intune
+description: "Intune Azure preview: Use this topic to learn about On-Premises Access Microsoft Intune"
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

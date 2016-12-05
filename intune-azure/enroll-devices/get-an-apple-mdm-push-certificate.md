@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get an Apple MDM Push certificate | Intune Azure preview | Microsoft Docs
-description: 
+description: "Intune Azure preview: "
 keywords:
 author: staciebarker
 ms.author: stabar

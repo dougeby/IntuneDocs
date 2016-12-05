@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune custom per-app VPN profile for Android using Pulse Secure | Intune Azure preview | Microsoft Docs
-description: Learn how to create a per-app VPN profile for Android devices managed by Intune.
+description: "Intune Azure preview: Learn how to create a per-app VPN profile for Android devices managed by Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
