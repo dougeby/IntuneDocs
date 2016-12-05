@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: arob98
-ms.date: 08/30/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -117,4 +117,3 @@ for this application, unless other terms accompany those items. If so, those ter
     2.  Covered Parties knew or should have known about the possibility of the damages.
 
     The above limitation or exclusion may not apply to you because your country may not allow the exclusion or limitation of incidental, consequential or other damages.
-
