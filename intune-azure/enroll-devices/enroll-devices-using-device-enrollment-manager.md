@@ -59,36 +59,19 @@ Devices that are enrolled with a device enrollment manager account have the foll
 > To deploy company apps to devices that are managed by the device enrollment manager, deploy the Company Portal app as a **Required Install** to the device enrollment manager's user account.
 > To improve performance, viewing the Company Portal app on a DEM device only shows the local device. Remote management of other DEM devices can only be done from the Intune admin console.
 
-## Create device enrollment manager accounts
-Device enrollment manager accounts are user accounts with permission to enroll large numbers of corporate-owned devices. Only users in the Intune console can be device enrollment managers.
+The device enrollment manager can now enroll mobile devices by using the same procedure that an end user uses for a BYOD scenario in the Company Portal. The manager end user can install the Company Portal app and enroll the device using her DEM credentials on up to 1000 devices.
 
-#### Add a device enrollment manager to Intune
+Device enrollment manager accounts are user accounts with permission to enroll large numbers of corporate-owned devices. Only users in the Intune console can be device enrollment managers. The device enrollment manager user cannot be an Intune admin.
 
-1.  In the **Enrollment** workload, choose **Apple Enrollment**.
+## Add a device enrollment manager
 
-2.  Choose **Add user**.
+1.  In the **Enrollment** workload, choose **Device Enrollment Managers**.
 
-3.  Confirm that the user account that will be a device enrollment manager is listed. If it isn't, add the user by choosing **New** and completing the **Add user** process. A subscription license is required for each user that accesses the service. The device enrollment manager cannot be an Intune admin. Check whether you need to add more licenses before you use this feature.
+2.  Select **Add**.
 
-4.  Sign in to the [Microsoft Intune administration console](http://manage.microsoft.com) with your admin credentials.
+3.  On the **Add User** blade, enter a user principal name for the DEM user, and select **Add**. The DEM user is added to the list of DEM users.
 
-5.  In the navigation pane, choose **Admin**, go to **Administrator Management**, and select **Device Enrollment Manager**. The **Device Enrollment Managers** page opens.
-
-6.  Choose **Add…**. The **Add Device Enrollment Manager** dialog box opens.
-
-7.  Enter the **User ID** of the Intune account, and then choose **OK**. The device enrollment manager user cannot be an Intune admin.
-
-8.  The device enrollment manager can now enroll mobile devices by using the same procedure that an end user uses for a BYOD scenario in the Company Portal. The manager end user can install the Company Portal app and enroll the device using her DEM credentials on up to 1000 devices.
-
-## Delete a device enrollment manager from Intune
-
-1.  Sign in to the [Microsoft Intune admin portal](http://manage.microsoft.com) with your admin credentials.
-
-2.  In the navigation pane, choose **Admin**, go to **Administrator Management**, and select **Device Enrollment Manager**. The **Device Enrollment Managers** page opens.
-
-3.  Select the device enrollment manager **User** that you want to delete, and then choose **Delete**. This user won’t be deleted from Intune, and the devices this user manages will remain enrolled in Intune. Deleting a device enrollment manager prevents that user from enrolling more devices in Intune.
-
-4.  Choose **Yes** to confirm that you want to delete the device enrollment manager.
+## Remove a device enrollment manager
 
 Deleting a device enrollment manager does not affect enrolled devices. When a device enrollment manager is deleted:
 
@@ -101,3 +84,17 @@ Deleting a device enrollment manager does not affect enrolled devices. When a de
 -   The deleted device enrollment manager account credentials still cannot wipe or retire devices.
 
 -   The deleted device enrollment manager account’s relationship to enrolled devices remains, but no additional devices can be enrolled.
+
+**To remove a device enrollment manager**:
+
+1.  In the **Enrollment** workload, choose **Device Enrollment Managers**.
+
+2. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Remove**.
+
+## View the properties of a device enrollment manager
+
+1. In the **Enrollment** workload, choose **Device Enrollment Managers**.
+
+2. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Properties**.
+
+
