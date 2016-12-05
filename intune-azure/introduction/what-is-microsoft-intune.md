@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Introduction to the Microsoft Intune preview | Microsoft Docs
+title: Introduction to the Microsoft Intune in the Azure portal preview | Microsoft Docs
 description: Get the basics about Intune, and how it can help you manage your devices.
 keywords:
 author: robstackmsft
@@ -27,34 +27,41 @@ ms.suite: ems
 ---
 
 
-# Introduction to the Microsoft Intune preview
+# Introduction to the Microsoft Intune in the Azure portal preview
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Microsoft Intune is moving to Azure and we are creating new workflows, functionality, and content for it. Because this new experience is in preview, some functionality from the console you have been using might not yet be present, so keep an eye on this page to find out when it is introduced. Additionally, our product documentation is being constantly updated during the preview period. If you have any suggestions on documentation you'd like to see, please leave feedback in one of the topics in this library. We'd love to hear from you.
+Microsoft Intune is moving to the Azure portal and this means that the workflows and functionality you are used to will change.
+The new portal offers you a preview of new and updated functionality in the Azure portal where you can manage your organization's' mobile devices, PCs, and apps. 
+All Intune functionality will eventually move to Azure, but you can perform certain Intune tasks in the Azure portal today. Because this new experience is in preview, some functionality might not yet be present in the portal. Review the [What’s new in the preview](#what's-new-in-the-preview?) section for details. 
+
+New product documentation will be released, and continually  updated during the preview. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you
+
+<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
 
 Highlights of the new experience include:
 
-- An integrated console you'll use to manage all of your Enterprise Mobility + Security (EMS) components
-- A standard admin console built on web standards
+- An integrated console for all your Enterprise Mobility + Security (EMS) components
+- An HTML-based console built on web standards
 - Microsoft Graph API support to automate many actions
-- Reliance on Azure AD groups instead of Intune groups to provide compatibility across all your applications
+- Azure AD groups to provide compatibility across all your Azure applications
 
 If you are looking for documentation for the existing Intune portal, see [the Intune Documentation Library](https://docs.microsoft.com/en-us/intune/)
 
+## Before you start
+
+To use Intune in the Azure portal, you must have an Intune admin and tenant account. You can sign up for an account [here](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+
 ## What's in this library?
 
-The documentation broadly matches the layout of the Intune product to make it easier to find the information you need.
+The documentation reflects the layout of the Intune portal to make it easier to find the information you need.
 
-### Introduction
-An overview of the new experience, and links to help and support.
-[Read more](/intune-azure/introduction/what-is-microsoft-intune)
-### Plan and design
+<!--- ### Plan and design
 Information to help you plan and design your Intune environment.
-[Read more](/intune-azure/plan-and-design/get-started)
+[Read more](/intune-azure/plan-and-design/get-started) --->
 ### Enroll devices
-All you need to know to get your devices managed by Intune.
+How to get your devices managed by Intune.
 [Read more](/intune-azure/enroll-devices/what-is)
 ### Manage devices
 Get to know the devices you manage with inventory, and reports.
@@ -63,17 +70,17 @@ Get to know the devices you manage with inventory, and reports.
 Learn about the users of devices you manage.
 [Read more](/intune-azure/manage-users/what-is)
 ### Manage apps
-Contains information about how to add, deploy, and manage apps.
-[Read more](/intune-azure/manage-apps/what-is)
+Contains information about how to publish, manage, configure, and protect apps.
+[Read more](/intune-azure/manage-apps/what-is-app-management)
 ### Configure devices
 Contains information about the profiles you can use to configure settings and features on devices you manage.
-[Read more](/intune-azure/configure-devices/what-is) 
+[Read more](/intune-azure/configure-devices/what-are-device-profiles) 
 ### Set device compliance
 Define a compliance level for your devices, then report about any devices which are not compliant
-[Read more](/intune-azure/set-device-compliance/what-is)
+[Read more](/intune-azure/set-device-compliance/what-is-device-compliance)
 ### Conditional access
 Restrict access to Exchange services depending on conditions you specify.
-[Read more](/intune-azure/conditional-access/what-is)
+[Read more](/intune-azure/conditional-access/what-is-conditional-access)
 
 
 ## What's new in the preview?
