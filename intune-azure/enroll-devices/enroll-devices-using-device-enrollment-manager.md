@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll devices using the device enrollment manager in Microsoft Intune | Microsoft Docs
+title: Enroll devices using the device enrollment manager in Microsoft Intune | Intune Azure preview | Microsoft Docs
 description: Use the device enrollment manager account to enroll devices in Intune. 
 keywords:
 author: staciebarker

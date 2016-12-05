@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for Android | Microsoft Docs
+title: How to create a compliance policy for Android | Intune Azure preview | Microsoft Docs
 description: Learn how to create a compliance policy for Android devices.
 keywords:
 author: karthikaramanms.author: karaman

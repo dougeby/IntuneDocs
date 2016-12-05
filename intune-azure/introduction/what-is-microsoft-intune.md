@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Introduction to the Microsoft Intune in the Azure portal preview | Microsoft Docs
+title: Introduction to the Microsoft Intune in the Azure portal preview | Intune Azure preview | Microsoft Docs
 description: Get the basics about Intune, and how it can help you manage your devices.
 keywords:
 author: robstackmsft

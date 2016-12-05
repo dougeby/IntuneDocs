@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new in the Microsoft Intune Preview | Microsoft Docs
+title: What's new in the Microsoft Intune Preview | Intune Azure preview | Microsoft Docs
 description: Find out what's new in the Intue Azure preview
 keywords:
 author: robstackmsftms.author: robstack

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to configure Microsoft Intune Wi-Fi settings | Microsoft Docs
+title: How to configure Microsoft Intune Wi-Fi settings | Intune Azure preview | Microsoft Docs
 description: Learn how to use Intune to configure Wi-Fi connections on devices you manage.
 keywords:
 author: robstackmsft

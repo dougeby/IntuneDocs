@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Android app protection policy settings | Microsoft Intune
+title: Android app protection policy settings | Intune Azure preview | Microsoft Docs
 description: This topic describes the app protection policy settings for Android devices.
 keywords:
 author: karthikaramanms.author: karaman
