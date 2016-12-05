@@ -10,21 +10,13 @@
 
 # Enroll devices
 ## [What is device enrollment?](/intune-azure/enroll-devices/what-is)
-<!--- ## [Get started](/intune-azure/enroll-devices/get-started) --->
-<!--- ## [Plan and design](/intune-azure/enroll-devices/plan-and-design)  --->
+## [Get started](/intune-azure/enroll-devices/get-started)
+## [Plan and design](/intune-azure/enroll-devices/plan-and-design)
 ## [How to](/intune-azure/enroll-devices/how-to)
-### [Set the MDM authority](/intune-azure/enroll-devices/set-mdm-authority)
-### [Get an Apple DEP token](/intune-azure/enroll-devices/get-apple-dep-token)
-### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-device-enrollment-program-devices)
-### [Enroll iOS devices using Setup Assistant](/intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-using-setup-assistant)
-### [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager)
-### [Create terms and conditions](/intune-azure/enroll-devices/create-terms-and-conditions)
-### [Set enrollment restrictions](/intune-azure/enroll-devices/set-enrollment-restrictions)
 ### [Map device groups](/intune-azure/enroll-devices/how-to-use-device-group-mapping)
-### [Add corporate identifiers](/intune-azure/enroll-devices/add-corporate-identifiers)
 <!---Was Use device group mapping--->
 ### [Use Windows Hello for Business](/intune-azure/enroll-devices/how-to-use-windows-hello)
-<!--- ## [Troubleshoot](/intune-azure/enroll-devices/troubleshooting) --->
+## [Troubleshoot](/intune-azure/enroll-devices/troubleshooting)
 
 # Manage devices
 ## [What is device management?](/intune-azure/manage-devices/what-is)
@@ -43,29 +35,30 @@
 
 # Manage apps
 ## [What is app management?](/intune-azure/manage-apps/what-is-app-management)
-## [What is app protection policy?](/intune-azure/manage-apps/what-is-app-protection-policy)
 <!--- ## [Get started](/intune-azure/manage-apps/get-started)
 ## [Plan and design](/intune-azure/manage-apps/plan-and-design) --->
-## How to manage apps
-### [Add apps](/intune-azure/manage-apps/add-apps)
-### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
-### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
-### [Use app configuration policies](/intune-azure/manage-apps/app-configuration-policies)
-### [Selectively wipe apps](/intune-azure/manage-apps/app-selective-wipe)
+### How to
+#### [Add apps](/intune-azure/manage-apps/add-apps)
+#### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
+#### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
+#### [Use app configuration policies](/intune-azure/manage-apps/app-configuration-policies)
+#### [Selectively wipe apps](/intune-azure/manage-apps/app-selective-wipe)
 <!---Is this specific to app protection policy or more general app management?--->
-### [Work with volume-purchased apps](/intune-azure/manage-apps/volume-purchased-apps)
-#### [iOS VPP apps](/intune-azure/manage-apps/ios-vpp-apps)
-#### [Windows Store for Business apps](/intune-azure/manage-apps/wsfb-apps)
-### [Configure the Company Portal app](/intune-azure/manage-apps/company-portal-app)
-## How to use app protection policies
-### [Create & deploy app protection policies](/intune-azure/manage-apps/app-protection-policies)
-#### [Android settings](/intune-azure/manage-apps/android-app-protection-policy-settings)
-#### [iOS settings](/intune-azure/manage-apps/ios-app-protection-policy-settings)
-### [Validate app protection policies](/intune-azure/manage-apps/validate-app-protection-policies)
-### [Monitor app protection user status](/intune-azure/manage-apps/monitor-app-protection-policies-with-microsoft-intune)
-### [Manage data transfer between iOS apps](/intune-azure/manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune)
-### [Android apps with app protection policies](/intune-azure/manage-apps/app-protection-enabled-android-apps)
-### [iOS apps with app protection policies](/intune-azure/manage-apps/app-protection-enabled-ios-apps)
+#### [Work with volume-purchased apps](/intune-azure/manage-apps/volume-purchased-apps)
+##### [iOS VPP apps](/intune-azure/manage-apps/ios-vpp-apps)
+##### [Windows Store for Business apps](/intune-azure/manage-apps/wsfb-apps)
+#### [Configure the Company Portal app](/intune-azure/manage-apps/company-portal-app)
+
+## [What is app protection policy?](/intune-azure/manage-apps/what-is-app-protection-policy)
+### How to
+#### [Create & deploy app protection policies](/intune-azure/manage-apps/app-protection-policies)
+##### [Android settings](/intune-azure/manage-apps/android-app-protection-policy-settings)
+##### [iOS settings](/intune-azure/manage-apps/ios-app-protection-policy-settings)
+#### [Validate app protection policies](/intune-azure/manage-apps/validate-app-protection-policies)
+#### [Monitor app protection user status](/intune-azure/manage-apps/monitor-app-protection-policies-with-microsoft-intune)
+#### [Manage data transfer between iOS apps](/intune-azure/manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune)
+#### [Android apps with app protection policies](/intune-azure/manage-apps/app-protection-enabled-android-apps)
+#### [iOS apps with app protection policies](/intune-azure/manage-apps/app-protection-enabled-ios-apps)
 
 
 <!--- ##  [Troubleshoot apps](/intune-azure/manage-apps/troubleshooting) --->
@@ -131,16 +124,14 @@
 ## [What is device compliance?](/intune-azure/set-device-compliance/what-is-device-compliance)
 ## [Get started](/intune-azure/set-device-compliance/get-started-with-device-compliance)
 ## How to
-### [Create Android compliance policy](/intune-azure/set-device-compliance/create-a-compliance-policy-for-android)
-### [Create Android for Work compliance policy](/intune-azure/set-device-compliance/create-a-compliance-policy-for-android-for-work)
-### [Create iOS compliance policy](/intune-azure/set-device-compliance/create-a-compliance-policy-for-ios)
-### [Create Windows compliance policy](/intune-azure/set-device-compliance/create-a-compliance-policy-for-windows)
-<!--- ### [Monitor device compliance](/intune-azure/set-device-compliance/monitor-device-compliance)--->
+### [Create Android compliance profile](/intune-azure/set-device-compliance/create-a-compliance-profile-for-android)
+### [Create Android for Work compliance profile](/intune-azure/set-device-compliance/create-a-compliance-profile-for-android-for-work)
+### [Create iOS compliance profile](/intune-azure/set-device-compliance/create-a-compliance-profile-for-ios)
+### [Create Windows compliance profile](/intune-azure/set-device-compliance/create-a-compliance-profile-for-windows)
+### [Monitor device compliance](/intune-azure/set-device-compliance/monitor-device-compliance)
 
 
 
 # Conditional access
 ## [What is conditional access?](/intune-azure/conditional-access/what-is-conditional-access)
-## How to
-## [Install Exchange on-premises connector](/intune-azure/conditional-access/install-intune-on-premises-exchange-connector)
-## [Create a conditional access policy](/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises)
+## [How to create a conditional access policy](/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises)
