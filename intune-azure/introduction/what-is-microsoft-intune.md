@@ -74,13 +74,13 @@ Contains information about how to publish, manage, configure, and protect apps.
 [Read more](/intune-azure/manage-apps/what-is-app-management)
 ### Configure devices
 Contains information about the profiles you can use to configure settings and features on devices you manage.
-[Read more](/intune-azure/configure-devices/what-is) 
+[Read more](/intune-azure/configure-devices/what-are-device-profiles) 
 ### Set device compliance
 Define a compliance level for your devices, then report about any devices which are not compliant
-[Read more](/intune-azure/set-device-compliance/what-is)
+[Read more](/intune-azure/set-device-compliance/what-is-device-compliance)
 ### Conditional access
 Restrict access to Exchange services depending on conditions you specify.
-[Read more](/intune-azure/conditional-access/what-is)
+[Read more](/intune-azure/conditional-access/what-is-conditional-access)
 
 
 ## What's new in the preview?
