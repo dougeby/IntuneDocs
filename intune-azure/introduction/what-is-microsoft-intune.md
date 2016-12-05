@@ -71,7 +71,7 @@ Learn about the users of devices you manage.
 [Read more](/intune-azure/manage-users/what-is)
 ### Manage apps
 Contains information about how to publish, manage, configure, and protect apps.
-[Read more](/intune-azure/manage-apps/what-is)
+[Read more](/intune-azure/manage-apps/what-is-app-management)
 ### Configure devices
 Contains information about the profiles you can use to configure settings and features on devices you manage.
 [Read more](/intune-azure/configure-devices/what-is) 
