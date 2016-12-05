@@ -68,10 +68,10 @@ Previously, admins would go to either the Intune console or the Configuration Ma
 ### Company Portal app for Android now available in China <!--VSO 658093-->
 We are publishing the Company Portal app for Android for download in China. Due to the absence of Google Play Store in China, Android devices must obtain apps from Chinese app marketplaces. The Company Portal app for Android will be available for download on the following stores:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+* [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
 * [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
 * [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
-* [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 
 The Company Portal app for Android uses Google Play Services to communicate with the Microsoft Intune service. Since Google Play Services are not yet available in China, performing any of the following tasks can take up to 8 hours to complete. 
 
