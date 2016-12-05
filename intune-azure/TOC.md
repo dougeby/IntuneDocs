@@ -144,3 +144,7 @@
 ## How to
 ### [Install Exchange on-premises connector](/intune-azure/conditional-access/install-intune-on-premises-exchange-connector)
 ### [Create a conditional access policy](/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises)
+
+# Develop and customize
+## [Intune app SDK](/intune/develop/intune-app-sdk)
+## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/intune-graph-overview)
