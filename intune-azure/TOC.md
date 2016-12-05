@@ -10,13 +10,21 @@
 
 # Enroll devices
 ## [What is device enrollment?](/intune-azure/enroll-devices/what-is)
-## [Get started](/intune-azure/enroll-devices/get-started)
-## [Plan and design](/intune-azure/enroll-devices/plan-and-design)
+<!--- ## [Get started](/intune-azure/enroll-devices/get-started) --->
+<!--- ## [Plan and design](/intune-azure/enroll-devices/plan-and-design)  --->
 ## [How to](/intune-azure/enroll-devices/how-to)
+### [Set the MDM authority](/intune-azure/enroll-devices/set-mdm-authority)
+### [Get an Apple DEP token](/intune-azure/enroll-devices/get-apple-dep-token)
+### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-device-enrollment-program-devices)
+### [Enroll iOS devices using Setup Assistant](/intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-using-setup-assistant)
+### [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager)
+### [Create terms and conditions](/intune-azure/enroll-devices/create-terms-and-conditions)
+### [Set enrollment restrictions](/intune-azure/enroll-devices/set-enrollment-restrictions)
 ### [Map device groups](/intune-azure/enroll-devices/how-to-use-device-group-mapping)
+### [Add corporate identifiers](/intune-azure/enroll-devices/add-corporate-identifiers)
 <!---Was Use device group mapping--->
 ### [Use Windows Hello for Business](/intune-azure/enroll-devices/how-to-use-windows-hello)
-## [Troubleshoot](/intune-azure/enroll-devices/troubleshooting)
+<!--- ## [Troubleshoot](/intune-azure/enroll-devices/troubleshooting) --->
 
 # Manage devices
 ## [What is device management?](/intune-azure/manage-devices/what-is)
