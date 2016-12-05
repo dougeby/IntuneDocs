@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to use device categories in Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: "
+description: "Intune Azure preview: Learn how to use device categories that users can choose when they enroll their devices."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -18,7 +18,7 @@ ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use Microsoft Intune device group mapping to automatically add devices to groups based on categories that you define, in order to make it easier for you to manage those devices. 
+Use Microsoft Intune device group mapping to automatically add devices to groups based on categories that you define, in order to make it easier for you to manage those devices.
 
 Device categories use the following workflow:
 1.	Create categories that users will choose from when they enroll their device
@@ -48,7 +48,7 @@ You can create any device categories you want, for example:
 ### Step 1 - Create device categories in the Intune Azure portal
 1.	In the Intune Azure Portal, choose **Enrollment**.
 2.	In the **Enrollment** workload, choose **Device Categories**.
-3.	On the **Device Categories** page, choose **Create** to add a new category. 
+3.	On the **Device Categories** page, choose **Create** to add a new category.
 4.	In the next blade, enter a **Name** for the new category, and an optional **Description**.
 5.	When you are done, click **Create**. You’ll see the category you just created in the list of categories.
 

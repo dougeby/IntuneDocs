@@ -2,7 +2,7 @@
 # required metadata
 
 title: What is Microsoft Intune device enrollment | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: "
+description: "Intune Azure preview: Learn about enrollment for iOS, Android, and Windows devices."
 keywords:
 author: staciebarker
 ms.author: stabar
@@ -19,7 +19,7 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,13 +33,13 @@ You can enroll devices, including Windows PCs, to enable mobile device managemen
 If you use Exchange ActiveSync, either on-premises or hosted in the cloud, you can enable simple Intune management without enrollment. More information is coming soon. Windows PCs can also be managed using [Intune client software](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
 
 - **Affinity** - Associates devices with users. Required for mobile application management (MAM) and conditional access to company data. For more information, see [User affinity](enroll-ios-device-enrollment-program-devices.md).
-- **Lock** - Prevents users from removing the device from management. iOS devices require Supervised mode for Lock. 
+- **Lock** - Prevents users from removing the device from management. iOS devices require Supervised mode for Lock.
 
 **iOS enrollment methods**
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | More information 
+|**[BYOD](#byod)** | No|	Yes |	No | More information
 ## Overview of device enrollment methods
 
 The following table shows Intune enrollment methods and the supported capabilities and requirements of each method. The capabilities and requirements are described below.
@@ -66,7 +66,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 
 ## BYOD
-"Bring your own device" users install the Company Portal app and enroll their device. This enables users to connect to the company network and join the domain or Azure Active Directory. For most platforms, you have to enable BYOD enrollment for many COD scenarios. 
+"Bring your own device" users install the Company Portal app and enroll their device. This enables users to connect to the company network and join the domain or Azure Active Directory. For most platforms, you have to enable BYOD enrollment for many COD scenarios.
 
 ## Corporate-owned devices
 Corporate-owned devices (COD) can be managed by using the Intune console. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.
@@ -111,5 +111,3 @@ PCs that are managed with the Intune client software cannot be fully wiped, alth
 ## Supported device platforms and browsers
 
 See [Supported devices and browsers for Intune](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers)
-
-
