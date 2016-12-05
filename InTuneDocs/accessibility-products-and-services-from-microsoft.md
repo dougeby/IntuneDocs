@@ -4,9 +4,9 @@
 title: Accessibility Products and Services from Microsoft | Microsoft Intune
 description:
 keywords:
-author: 
+author:
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -72,4 +72,3 @@ ms.suite: ems
 
 ## For More Information
 [!INCLUDE[accessibility17](./includes/accessibility17_md.md)]
-
