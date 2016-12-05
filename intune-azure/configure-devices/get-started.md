@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get started configuring devices with Microsoft Intune | Microsoft Docs
+title: Get started configuring devices with Microsoft Intune | Intune Azure preview | Microsoft Docs
 description: Learn how to get started configuring devices with Intune.
 keywords:
 author: robstackmsftms.author: robstack

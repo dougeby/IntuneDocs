@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to selectively wipe apps with Microsoft Intune | Microsoft Docs
+title: How to selectively wipe apps with Microsoft Intune | Intune Azure preview | Microsoft Docs
 description: Learn how to selectively wipe apps with Microsoft Intune.
 keywords:
 author: robstackmsft

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to manage apps you purchased from the Windows Store for Business with Microsoft Intune | Microsoft Docs
-description: Learn how you can sync apps into Intune from the Windows Store for Business and then assign and track them. 
+title: How to manage apps you purchased from the Windows Store for Business | Intune Azure preview | Intune Azure preview | Microsoft Docs
+description: Learn how you can sync apps into Intune from the Windows Store for Business and then assign and track them.
 keywords:
 author: robstackmsft
 ms.author: robstack

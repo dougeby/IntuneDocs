@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune custom settings for Android devices | Microsoft Docs
+title: Intune custom settings for Android devices | Intune Azure preview | Microsoft Docs
 description: Learn the settings you can use in an Android custom profile.
 keywords:
 author: robstackmsft

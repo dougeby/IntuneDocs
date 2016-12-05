@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Android devices | Microsoft Docs
+title: Intune VPN settings for Android devices | Intune Azure preview | Microsoft Docs
 description: Learn about the Intune settings you can use to configure VPN connections on Android devices.
 keywords:
 author: robstackmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune email settings for iOS devices | Microsoft Docs
+title: Intune email settings for iOS devices | Intune Azure preview | Microsoft Docs
 description: Learn about the Intune settings you can use to configure email connections on iOS devices.
 keywords:
 author: robstackmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: iOS app protection policy settings | Microsoft Intune
+title: iOS app protection policy settings |Intune Azure preview | Microsoft Docs
 description: This topic describes the app protection policy settings for iOS devices.
 keywords:
 author: karthikaraman

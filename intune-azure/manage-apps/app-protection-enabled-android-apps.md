@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Android apps with app protection policies | Microsoft Intune
+title: Android apps with app protection policies | Intune Azure preview | Microsoft Docs
 description: This topic describes what to expect when your app is managed by app protection policies.
 keywords:
 author: karthikaramanms.author: karaman

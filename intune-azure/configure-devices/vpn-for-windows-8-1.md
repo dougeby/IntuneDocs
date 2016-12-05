@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Windows 8.1 devices | Microsoft Docs
+title: Intune VPN settings for Windows 8.1 devices | Intune Azure preview | Microsoft Docs
 description: Learn about the Intune settings you can use to configure VPN connections on Windows 8.1 devices.
 keywords:
 author: robstackmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll iOS devices with Apple Configurator by using Setup Assistant | Microsoft Docs
+title: Enroll iOS devices with Apple Configurator by using Setup Assistant | Intune Azure preview | Microsoft Docs
 description: 
 keywords:
 author: staciebarker

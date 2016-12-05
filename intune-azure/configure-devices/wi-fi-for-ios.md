@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune Wi-Fi settings for iOS devices | Microsoft Docs
+title: Intune Wi-Fi settings for iOS devices | Intune Azure preview | Microsoft Docs
 description: Learn the Intune settings you can use to configure Wi-Fi connections on iOS devices.
 keywords:
 author: robstackmsft

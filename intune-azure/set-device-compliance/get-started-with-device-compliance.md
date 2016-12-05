@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get started on device compliance | Microsoft Docs
+title: Get started on device compliance | Intune Azure preview | Microsoft Docs
 description: Use this topic to understand the prerequisites you need to create compliance policies in Microsoft Intune
 keywords:
 author: karthikaramanms.author: karaman
