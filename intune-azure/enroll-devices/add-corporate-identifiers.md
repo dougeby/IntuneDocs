@@ -35,7 +35,7 @@ To create the list, create a two-column, comma-separated value (.csv) list witho
 
 In a text editor, the .csv list looks something like this:
 
-01 234567 890123,device details
+01 234567 890123,device details</br>
 02 234567 890123,device details
 
 **To add a .csv list of corporate identifiers**
