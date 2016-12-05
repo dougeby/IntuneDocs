@@ -57,9 +57,9 @@ To use Intune in the Azure portal, you must have an Intune admin and tenant acco
 
 The documentation reflects the layout of the Intune portal to make it easier to find the information you need.
 
-### Plan and design
+<!--- ### Plan and design
 Information to help you plan and design your Intune environment.
-[Read more](/intune-azure/plan-and-design/get-started)
+[Read more](/intune-azure/plan-and-design/get-started) --->
 ### Enroll devices
 How to get your devices managed by Intune.
 [Read more](/intune-azure/enroll-devices/what-is)
