@@ -6,7 +6,7 @@ description: Read accessibility information about Microsoft products.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,4 +34,3 @@ Describes the accessibility features of [!INCLUDE[wit_firstref](./includes/wit_f
 
 [Accessibility Products and Services from Microsoft](accessibility-products-and-services-from-microsoft.md)
 Describes the accessibility products and services that are available from Microsoft.
-
