@@ -54,16 +54,16 @@ When a user attempts to connect to a file by using a supported app such as OneDr
 
 The device state is stored in Azure Active Directory, which grants or blocks access to the files, based on the conditions that you specify.
 
-If a condition is not met, the user is presented with one of the following messages when they sign in:
+If a condition isn't met, the user sees one of the following messages when they sign in:
 
--   If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal  app and enroll.
+-   If the device isn't enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app and enroll.
 
--   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website, where they can find information about the problem and how to remediate it.
+-   If the device isn't compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website, where they can find information about the problem and how to remediate it.
 
-**Conditional access does not apply to external sharing**. To learn how to prevent external sharing in your tenant or site collection, see [Manage external sharing for your SharePoint Online environment](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
+**Conditional access doesn't apply to external sharing**. To learn how to prevent external sharing in your tenant or site collection, see [Manage external sharing for your SharePoint Online environment](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
 
 >[!NOTE]
->If you  enable conditional access for SharePoint Online, we recommend that you disable the domain on the list as described in the  [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) topic.  
+>If you enable conditional access for SharePoint Online, we recommend that you disable the domain on the list, as described in the [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) topic.  
 
 ## Support for mobile devices
 The following are supported:
@@ -80,18 +80,18 @@ You can restrict access to SharePoint Online when **iOS** and **Android** device
 
 ## Support for PCs
 The following are supported:
-- Windows 8.1 and later (when enrolled with Intune)
-- Windows 7.0, Windows 8.1, or Windows 10 (when domain-joined),
+- Windows 8.1 and later (when PCs are enrolled with Intune)
+- Windows 7.0, Windows 8.1, or Windows 10 (when PCs are domain joined),
 > [!NOTE]
 >To use conditional access with Windows 10 PCs, you must update those PCs with the Windows 10 Anniversary Update.
 
   - You must set up domain-joined PCs to [automatically register](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory. The Azure AD Device Registration service will be activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration service will not see registered devices in on-premises Active Directory.
 
-  - If the policy is set to require a domain join and the PC isn't domain-joined, a message is displayed to contact the IT admin.
+  - If the policy is set to require a domain join and the PC isn't domain joined, a message is displayed to contact the IT admin.
 
   - If the policy is set to require a domain join or compliance, and the PC doesn't meet either requirement, a message is displayed with instructions about how to install the Company Portal app and enroll.
   >[!NOTE]
-  >Conditional access is not supported on PCs running the Intune computer client.
+  >Conditional access is not supported on PCs that are running the Intune computer client.
 
 [Office 365 modern authentication must be enabled](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) and have all the latest Office updates.
 
@@ -101,18 +101,18 @@ Modern authentication brings sign-in based on Active Directory Authentication Li
 ## Configure conditional access for SharePoint Online
 
 ### Step 1: Configure Active Directory security groups
-Before you start, configure Azure Active Directory security groups for the conditional access policy. You can configure these groups in the **Office 365 admin center** or in the **Intune account portal**. These groups are used to target or exempt users from the policy. When a user is targeted by a policy, each device they use must be compliant in order to access resources.
+Before you start, configure Azure Active Directory security groups for the conditional access policy. You can configure these groups in the **Office 365 admin center** or in the **Intune account portal**. You use these groups to target or exempt users from the policy. When a user is targeted by a policy, each device that they use must be compliant in order to access resources.
 
 You can specify two group types in a SharePoint Online policy:
 
--   **Targeted groups**: Contains groups of users which the policy will apply to.
+-   **Targeted groups**: Contains groups of users that the policy applies to.
 
--   **Exempted groups**:Contains groups of users that are exempt from the policy.
+-   **Exempted groups**: Contains groups of users that are exempt from the policy.
 
-If a user is in both groups, they will be exempt from the policy.
+If a user is in both groups, they are exempt from the policy.
 
 ### Step 2: Configure and deploy a compliance policy
-If you haven't already done so, create and deploy a compliance policy to the users that the SharePoint Online policy will be targeted to.
+If you haven't already done so, create a compliance policy, and deploy it to the users that the SharePoint Online policy targets.
 
 > [!NOTE]
 > While compliance policies are deployed to [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] groups, conditional access policies are targeted to Azure Active Directory security groups.
@@ -120,17 +120,17 @@ If you haven't already done so, create and deploy a compliance policy to the use
 For details about how to configure the compliance policy, see [Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md).
 
 > [!IMPORTANT]
-> If you haven't deployed a compliance policy, the devices will be treated as compliant.
+> If you haven't deployed a compliance policy, the devices are treated as compliant.
 
 When you're ready, continue to **Step 3**.
 
 ### Step 3: Configure the SharePoint Online policy
-Next, configure the policy to require that only managed and compliant devices can access SharePoint Online. This policy will be stored in Azure Active Directory.
+Next, configure the policy to require that only managed and compliant devices can access SharePoint Online. This policy is stored in Azure Active Directory.
 
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> You can also create a conditional access policy in the Azure AD management console. The Azure AD management console lets you create an Intune device conditional access policy (referred to as the **device-based conditional access policy** in Azure AD), in addition to other conditional access policies like multi-factor authentication.  You can also set conditional access policies for third-party enterprise apps that Azure AD supports, like Salesforce and Box. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+> You can also create a conditional access policy for Intune devices in the Azure AD management console (the policy is referred to as the **device-based conditional access policy** in Azure AD). In addition, you can create other conditional access policies like multi-factor authentication. You can also set conditional access policies for third-party enterprise apps that Azure AD supports, like Salesforce and Box. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **SharePoint Online Policy**.
@@ -142,7 +142,7 @@ Next, configure the policy to require that only managed and compliant devices ca
 
     -   **All platforms**
 
-        This requires that any device used to access **SharePoint Online** is enrolled in Intune and compliant with the policies. Any client application that uses **modern authentication** is subject to the conditional access policy. If the platform is currently not supported by Intune, access to **SharePoint Online** is blocked.
+        This requires that any device used to access **SharePoint Online** is enrolled in Intune and is compliant with the policies. Any client application that uses **modern authentication** is subject to the conditional access policy. If the platform isn't currently supported by Intune, access to **SharePoint Online** is blocked.
 
         Selecting the **All platforms** option means that Azure Active Directory applies this policy to all authentication requests, regardless of the platform that is reported by the client application. All platforms are required to be enrolled and become compliant, except for:
         *	Windows devices, which are required to be enrolled and compliant, domain joined with on-premises Active Directory, or both.
@@ -150,25 +150,25 @@ Next, configure the policy to require that only managed and compliant devices ca
 
     -   **Specific platforms**
 
-         The conditional access policy applies to any client app that's using modern authentication on the platforms that you specify.
+         The conditional access policy applies to any client app that is using modern authentication on the platforms that you specify.
 
-     For Windows PCs, the PC must either be domain-joined, or enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. You can set the following requirements:
+     For Windows PCs, a PC must either be domain joined, or enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. You can set the following requirements:
 
-     -   **Devices must be domain joined or compliant.** Choose this option if you want the PCs to either be domain joined or compliant with the policies that are set in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. If the PC doesn't meet either of these requirements, the user is prompted to enroll the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+     -   **Devices must be domain joined or compliant.** Choose this option to require that PCs must either be domain joined or compliant with the policies that are set in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. If a PC doesn't meet either of these requirements, the user is prompted to enroll the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-     -   **Devices must be domain joined.** Choose this option to require that the PCs must be domain joined to access Exchange Online. If the PC is not domain joined, access to email is blocked and the user is prompted to contact the IT admin.
+     -   **Devices must be domain joined.** Choose this option to require that PCs must be domain joined to access Exchange Online. If a PC isn't domain joined, access to email is blocked and the user is prompted to contact the IT admin.
 
-     -   **Devices must be compliant.** Choose this option to require that the PCs must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. If the PC is not enrolled, a message with instructions on how to enroll is displayed.
+     -   **Devices must be compliant.** Choose this option to require that PCs must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. If a PC isn't enrolled, a message with instructions on how to enroll is displayed.
 
-4.   Under **Browser access** to SharePoint Online and OneDrive for Business, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS), and Chrome (Android). Access from other browsers is blocked. The same platform restrictions that you selected for Application access for OneDrive also apply here.
+4.   Under **Browser access** to SharePoint Online and OneDrive for Business, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS) and Chrome (Android). Access from other browsers is blocked. The same platform restrictions that you selected for Application access for OneDrive also apply here.
 
-  On **Android** devices, users must enable browser access. To do this, the user must Choose the **Enable Browser Access** option on the enrolled device as follows:
+  On **Android** devices, users must enable browser access. To do this, a user must choose the **Enable Browser Access** option on the enrolled device as follows:
   1.	Open the **Company Portal** app.
   2.	Go to the **Settings** page from the ellipsis (…) or hardware menu button.
   3.	Press the **Enable Browser Access** button.
   4.    In the Chrome browser, sign out of Office 365 and restart Chrome.
 
-  On **iOS and Android** platforms, to identify the device that is used to access the service, Azure Active Directory issues a Transport Layer Security (TLS) certificate to the device. The device displays the certificate with a prompt to the user to select the certificate as shown in the following screenshots. The user must select this certificate before they can use the browser.
+  On **iOS** and **Android** platforms, to identify the device that is used to access the service, Azure Active Directory issues a Transport Layer Security (TLS) certificate to the device. The device displays the certificate with a prompt to the user to select the certificate, as shown in the following screenshots. The user must select this certificate before they can use the browser.
 
   **iOS**
 
@@ -177,7 +177,7 @@ Next, configure the policy to require that only managed and compliant devices ca
   **Android**
 
   ![Screenshot of the certificate prompt on an Android device](../media/mdm-browser-ca-android-cert-prompt.png)
-5.  Under **Targeted Groups**, choose **Modify** to select the Azure Active Directory security groups that the policy will apply to. You can choose to target this to all users or just a select groups of users.
+5.  Under **Targeted Groups**, choose **Modify** to select the Azure Active Directory security groups that the policy applies to. You can choose to target this to all users or just a select group of users.
 
 6.  Under **Exempted Groups**, optionally, choose **Modify** to select the Azure Active Directory security groups that are exempt from this policy.
 
@@ -188,7 +188,7 @@ You don't have to deploy the conditional access policy—it takes effect immedia
 ### Step 4: Monitor the compliance and conditional access policies
 In the **Groups** workspace, you can view the status of your devices.
 
-Select any mobile device group and then, on the **Devices** tab, choose one of the following **Filters**:
+Select any mobile device group. Then, on the **Devices** tab, choose one of the following **Filters**:
 
 -   **Devices that are not registered with AAD**. These devices are blocked from SharePoint Online.
 
