@@ -4,9 +4,10 @@
 title: Sync your device manually by using the Company Portal website | Microsoft Intune
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,14 +27,14 @@ ms.suite: ems
 ---
 
 
-# Sync your device manually by using the Company Portal website
+# Use the Company Portal website to sync your device
 
-If your app installation or some other task is taking too long, you can try syncing your device manually. Syncing manually might help to speed up the installation or task.
+Sometimes installing an app or doing some other task may take longer than it normally does. If it takes too long, you can try to manually sync your device to speed up what you're trying to do.
 
-The sync feature works only for the following devices. If your device isn't listed, sync isn't supported. Use the link that matches the device you're using. 
+> [!Note]
+> The sync feature is not currently available for all devices. If your device is not listed, try resetting your device by turning off Wifi for roughly 30 seconds, then reconnect to your network. 
 
 * [iOS](sync-your-device-manually-ios.md)
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 desktop](sync-your-device-manually-windows.md#windows-10-desktop)
-* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8-1)
-
+* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8.1)
