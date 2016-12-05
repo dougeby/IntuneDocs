@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get started on device compliance | Microsoft Docs
-description: Use this topic to understand the prerequisites you need to create compliance profiles in Microsoft Intune
+description: Use this topic to understand the prerequisites you need to create compliance policies in Microsoft Intune
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe
@@ -30,7 +30,7 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-In this topic, you will learn more about what you need before you can start creating a device compliance profile and a quick glance on what you can see and do in the Azure portal. If you device compliance is new
+In this topic, you will learn more about what you need before you can start creating a device compliance policy and a quick glance on what you can see and do in the Azure portal. If you device compliance is new
 to you, you may want to read this topic to learn what device compliance is and how you might use it in your company.
 
 ##  Pre-requisites
@@ -58,27 +58,30 @@ to you, you may want to read this topic to learn what device compliance is and h
 ##  Azure portal workflow
 
 
-Here is an overview of how you can create a device compliance in the Azure portal.
+Here is an overview of how you can create and manage device compliance in the Azure portal.
 
-### Overview
+<!---### Overview
 
-When you choose the **Set device compliance** workload, the blade opens with an  **Overview** section that displays a summary view of your compliance profiles that you have created and the status of the devices they have been applied to. If you
-don’t have any profiles configured yet, the overview will just include the various reports but with no data.
+When you choose the **Set device compliance** workload, the blade opens with an  **Overview** section that displays a summary view of your compliance policies that you have created and the status of the devices they have been applied to. If you
+don’t have any policies configured yet, the overview will just include the various reports but with no data.--->
 
 ### Manage
 
-You can create, edit and delete compliance profiles. You will also be able to assign profiles to users from here.
+You can create, edit and delete compliance policies. You will also be able to assign policies to users from here.
 
-### Monitor
+<!---### Monitor
 
-This section is a detailed view of what you see in the **Overview**. A list of all the reports are displayed in this section and you can interactively drill down through each of these reports.
+This section is a detailed view of what you see in the **Overview**. A list of all the reports are displayed in this section and you can interactively drill down through each of these reports.--->
 
 ### Setup
 
 Compliance status validity period
 
 ##  Next steps
-[Create a compliance profile for Android](create-a-compliance-profile-for-android.md)
-[Create a compliance profile for Android for work](create-a-compliance-profile-for-android-for-work.md)
-[Create a compliance profile for iOS](create-a-compliance-profile-for-ios.md)
-[Create a compliance profile for Windows](create-a-compliance-profile-for-windows.md)
+[Create a compliance policy for Android](create-a-compliance-policy-for-android.md)
+
+[Create a compliance policy for Android for work](create-a-compliance-policy-for-android-for-work.md)
+
+[Create a compliance policy for iOS](create-a-compliance-policy-for-ios.md)
+
+[Create a compliance policy for Windows](create-a-compliance-policy-for-windows.md)

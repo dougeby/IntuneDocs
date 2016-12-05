@@ -84,14 +84,6 @@ For additional information about the support status of Android for Work, read th
 
 The **Mail** application on Windows 8.1 and later (when enrolled with Intune)
 
-## Configure the Exchange on-premises connector
-
-1. Choose the **Conditional access** workload in the Azure portal to open the **On-premises** blade.
-2. From the **Setup** section, choose **Exchange ActiveSync on-premises connector**.
-3. In the **On-premises connector** blade, choose the **Learn more** link to learn how to configure the connector.
-4.  Next, choose **Download the on-premises connector** and
-follow the instructions provided in the **Learn more** link to configure the connector.
-5. Once configured correctly, you can validate the connection in the Exchange Active Sync on-premises blade using the **connection status** and the **last successful synchronization** attempt.
 
 ## Configure Exchange on-premises access
 
@@ -101,7 +93,7 @@ follow the instructions provided in the **Learn more** link to configure the con
 4. On the **Exchange on-premises access** blade, choose **Yes** to enable Exchange on-premises access control.
 
   >[!NOTE]
-  >If you have not configured the Exchange Active Sync on-premises connector, this option will be disabled.  You must first install and configure this connector before enabling conditional access for Exchange on-premises.
+  >If you have not configured the Exchange Active Sync on-premises connector, this option will be disabled.  You must first install and configure this connector before enabling conditional access for Exchange on-premises. For more details, see [Install the Intune On-premises Exchange Connector](install-intune-on-premises-exchange-connector.md)
 
 5. Under **Assignment**, choose **Groups Included**.  Use the security user group that should have conditional access applied to it.  This would require the users to enroll their devices in Intune and be compliant with the compliance profiles.
 6. If you want to exclude a certain groups of users, you can do so by choosing **Groups Excluded** and selecting a user group that you want to be exempt from requiring device enrollment and compliance.
