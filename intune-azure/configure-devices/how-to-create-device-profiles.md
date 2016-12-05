@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to create Microsoft Intune device configuration profiles| Intune Azure preview | Microsoft Docs
-description: Learn how to create Intune device profiles.
+description: "Intune Azure preview: Learn how to create Intune device profiles."
 keywords:
 author: robstackmsft
 ms.author: robstack

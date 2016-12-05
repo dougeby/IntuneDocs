@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get support for Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: Having problems? Read this topic to find more ways to get help.
+description: "Intune Azure preview: Having problems? Read this topic to find more ways to get help."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

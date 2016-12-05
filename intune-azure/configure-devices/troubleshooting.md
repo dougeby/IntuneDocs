@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshooting device configuration in Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: If you're stuck, use this topic to help you solve problems with Intune device configurations.
+description: "Intune Azure preview: If you're stuck, use this topic to help you solve problems with Intune device configurations."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

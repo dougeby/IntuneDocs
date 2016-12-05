@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add Apple Configurator serial numbers | Intune Azure preview | Microsoft Docs
-description: 
+description: "Intune Azure preview: "
 keywords:
 author: staciebarker
 ms.author: stabar

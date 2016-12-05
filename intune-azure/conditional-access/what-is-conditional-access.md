@@ -2,7 +2,7 @@
 # required metadata
 
 title: What is conditional access | Intune Azure preview | Microsoft Docs
-description: Use this topic to learn about conditional access.
+description: "Intune Azure preview: Use this topic to learn about conditional access."
 keywords:
 author: karthikaramanms.author: karaman
 manager: angrobe

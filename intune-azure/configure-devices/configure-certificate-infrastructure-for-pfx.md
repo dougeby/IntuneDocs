@@ -1,6 +1,6 @@
 ---
 title: Configure certificate infrastructure for PFX | Intune Azure preview | Microsoft Docs
-description: Learn how to configure your infrastructure to use PKCS certificates with Intune.
+description: "Intune Azure preview: Learn how to configure your infrastructure to use PKCS certificates with Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack

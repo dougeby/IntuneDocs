@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get Started | Intune Azure preview | Microsoft Docs
-description: Use this topic to learn how to get started with Microsoft Intune
+description: "Intune Azure preview: Use this topic to learn how to get started with Microsoft Intune"
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

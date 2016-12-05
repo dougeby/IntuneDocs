@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune device restriction settings for macOS devices | Intune Azure preview | Microsoft Docs
-description: Learn the Intune settings you can use to control device settings and functionality on macOS devices.
+description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on macOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack

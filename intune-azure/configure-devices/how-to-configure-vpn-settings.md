@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to configure Microsoft Intune VPN settings | Intune Azure preview | Microsoft Docs
-description: Learn how to use Intune to configure VPN connections on devices you manage.
+description: "Intune Azure preview: Learn how to use Intune to configure VPN connections on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack

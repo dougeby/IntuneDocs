@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll iOS corporate-owned Device Enrollment Program devices | Intune Azure preview | Microsoft Docs
-description: 
+description: "Intune Azure preview: "
 keywords:
 author: staciebarker
 ms.author: stabar

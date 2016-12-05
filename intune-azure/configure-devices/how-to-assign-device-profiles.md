@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to assign device profiles with Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: Once you've created an Intune device profile, use this topic to learn how to assign it to devices.
+description: "Intune Azure preview: Once you've created an Intune device profile, use this topic to learn how to assign it to devices."
 keywords:
 author: robstackmsft
 ms.author: robstack

@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to configure Windows Information Protection with Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: Learn about the Intune settings you can use to manage Windows Information protection.
+description: "Intune Azure preview: Learn about the Intune settings you can use to manage Windows Information protection."
 keywords:
 author: robstackmsft
 ms.author: robstack

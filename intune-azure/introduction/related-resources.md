@@ -2,7 +2,7 @@
 # required metadata
 
 title: Related resources for Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: Find more information to help you get the most from Intune.
+description: "Intune Azure preview: Find more information to help you get the most from Intune."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
