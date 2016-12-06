@@ -105,12 +105,12 @@ Whatever your organization’s position on enrolled and unenrolled mobile device
 ## Common business problems that Intune helps solve
 The following list of business problems link to more detailed information about the solutions we can provide. Only the last item requires MDM enrollment as part of the solution:
 
-* [Protect your on-premises email and data so that it can be accessed by mobile devices](common-ways-to-use-intune.md#Protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
-* [Protect your Office 365 mail and data so that it can be safely accessed by mobile devices](common-ways-to-use-intune.md#Protecting-your-Office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
-* [Issue corporate-owned phones to your workforce](common-ways-to-use-intune.md#Issue-corporate-owned-phones-to-your-information-workers)
-* [Offer a bring-your-own-device (BYOD) or personal device program to all employees](common-ways-to-use-intune.md#Offer-a-bring-your-own-device-program-to-all-employees)
-* [Enable your employees to securely access Office 365 from an unmanaged public kiosk](common-ways-to-use-intune.md#Enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
-* [Issue limited-use shared tables to your task workers](common-ways-to-use-intune.md#Issue-limited-use-shared-tablets-to-your-task-workers)
+* [Protect your on-premises email and data so that it can be accessed by mobile devices](common-ways-to-use-intune.md#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
+* [Protect your Office 365 mail and data so that it can be safely accessed by mobile devices](common-ways-to-use-intune.md#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
+* [Issue corporate-owned phones to your workforce](common-ways-to-use-intune.md#issue-corporate-owned-phones-to-your-information-workers)
+* [Offer a bring-your-own-device (BYOD) or personal device program to all employees](common-ways-to-use-intune.md#offer-a-bring-your-own-device-program-to-all-employees)
+* [Enable your employees to securely access Office 365 from an unmanaged public kiosk](common-ways-to-use-intune.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
+* [Issue limited-use shared tables to your task workers](common-ways-to-use-intune.md#issue-limited-use-shared-tablets-to-your-task-workers)
 
 ### Next steps
 * Read about some of the [common ways to use Intune](common-ways-to-use-intune.md).
