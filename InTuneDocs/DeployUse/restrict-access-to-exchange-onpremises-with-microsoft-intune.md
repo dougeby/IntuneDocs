@@ -50,42 +50,43 @@ To learn more about how conditional access works, read the [Restrict access to e
 
 -   You must configure **Exchange ActiveSync** with certificate-based authentication or user credential entry.
 
-When conditional access policies are configured and targeted to a user, before a user can connect to their email, the **device** they use must be:
+When you configure conditional access policies and target them to a user, before a user can connect to their email, the **device** they use must be:
 
--  Either **enrolled** with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or is a domain joined PC.
+-  Either a domain-joined PC or **enrolled** with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 -  **Registered in Azure Active Directory**. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
 
-  AAD DRS will be activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service will not see registered devices in their on-premises Active Directory. **This does not apply to Windows PCs and Windows Phone devices**.
+  The Azure Active Directory Device Registration service is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration service will not see registered devices in on-premises Active Directory. **This does not apply to Windows PCs and Windows Phone devices**.
 
--   **Compliant** with any [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] compliance policies deployed to that device.
+-   **Compliant** with any [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] compliance policies that are deployed to that device.
 
-The following diagram illustrates the flow that is used by conditional access policies for Exchange on-premises to evaluate whether to allow or block devices.
+The following diagram illustrates the flow that conditional access policies for Exchange on-premises use to evaluate whether to allow or block devices.
 
-![Diagram that shows the decision points that determine if a device is allowed access to Exchange on-premises or blocked](../media/ConditionalAccess8-2.png)
+![Diagram that shows the decision points that determine if a device is allowed access to Exchange on-premises or is blocked](../media/ConditionalAccess8-2.png)
 
-If a conditional access policy is not met, the user is presented with one of the following messages when they sign in:
+If a conditional access policy is not met, the user sees one of the following messages when they sign in:
 
-- If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
+- If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
 
--   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.
+-   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website or the Company Portal app, where they can find information about the problem and how to remediate it.
 
 ## Support for mobile devices
--   Windows Phone 8.1 and later
+The following are supported:
+-   Windows Phone 8.1 and later.
 
--   Native email app on iOS.
+-   The native email app on iOS.
 
--   EAS mail clients such as Gmail on Android 4 or later.
-- EAS mail clients **Android for Work devices:** Only **Gmail** and **Nine Work** apps in the **work profile** are supported on Android for Work devices. For conditional access to work with Android for Work, you must deploy an email profile for the Gmail or Nine Work app, and also deploy those apps as  a required install. 
+-   Exchange ActiveSync mail clients, such as Gmail on Android 4 or later.
+- Exchange ActiveSync mail clients **Android for Work devices**: Only **Gmail** and **Nine Work** apps in the **work profile** are supported on Android for Work devices. For conditional access to work with Android for Work, you must deploy an email profile for the Gmail or Nine Work app, and also deploy those apps as a required install. 
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 > [!NOTE]
-> Microsoft Outlook app for Android and iOS is not supported.
+> The Microsoft Outlook app for Android and iOS isn't supported.
 
 ## Support for PCs
-
-The **Mail** application on Windows 8.1 and later (when enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
+The following is supported:
+-   The **Mail** application on Windows 8.1 and later (when the PC is enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
 
 ##  Configure a conditional access policy
 
