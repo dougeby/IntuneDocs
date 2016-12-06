@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Manage volume-purchased apps with Microsoft Intune | Microsoft Docs
-description:  Learn about how you can use Intune to manage and monitor your use of volume-purchased apps from stores.
+title: Manage volume-purchased apps with Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview:  Learn about how you can use Intune to manage and monitor your use of volume-purchased apps from stores."
 keywords:
 author: robstackmsft
 ms.author: robstack

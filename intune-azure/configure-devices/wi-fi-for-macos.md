@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune Wi-Fi settings for macOS devices | Microsoft Docs
-description: Learn the Intune settings you can use to configure Wi-Fi connections on macOS devices.
+title: Intune Wi-Fi settings for macOS devices | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn the Intune settings you can use to configure Wi-Fi connections on macOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack

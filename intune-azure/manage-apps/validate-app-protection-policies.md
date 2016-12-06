@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Validate your app protection setup | Microsoft Intune
-description: This topics describes how you can test and validate if your app protection policy is set up correctly and working as expected.
+title: Validate your app protection setup | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: This topics describes how you can test and validate if your app protection policy is set up correctly and working as expected."
 keywords:
 author: karthikaramanms.author: karaman
 manager: angerobe

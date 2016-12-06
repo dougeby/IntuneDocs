@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Plan and design for apps with Microsoft Intune | Microsoft Docs
-description: Learn how to plan for managing apps with Intune.
+title: Plan and design for apps with Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to plan for managing apps with Intune."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

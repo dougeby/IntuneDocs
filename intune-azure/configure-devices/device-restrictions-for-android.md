@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for Android devices | Microsoft Docs
-description: Learn the Intune settings you can use to control device settings and functionality on Android devices.
+title: Intune device restriction settings for Android devices | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on Android devices."
 keywords:
 author: robstackmsft
 ms.author: robstack

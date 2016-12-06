@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to configure Microsoft Intune email settings | Microsoft Docs
-description: Learn how to configure Intune to create connections to corporate email on devices you manage.
+title: How to configure Microsoft Intune email settings | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to configure Intune to create connections to corporate email on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack

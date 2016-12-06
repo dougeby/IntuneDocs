@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to use conditional access in Microsoft Intune | Microsoft Docs
-description: 
+title: How to use conditional access in Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: "
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

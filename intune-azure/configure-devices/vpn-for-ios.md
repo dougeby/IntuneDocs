@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune VPN settings for iOS devices | Microsoft Docs
-description: Learn about the Intune settings you can use to configure VPN connections on iOS devices.
+title: Intune VPN settings for iOS devices | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn about the Intune settings you can use to configure VPN connections on iOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack

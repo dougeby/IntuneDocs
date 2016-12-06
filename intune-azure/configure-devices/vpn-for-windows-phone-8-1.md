@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Windows Phone 8.1 devices | Microsoft Docs
-description: Learn about the Intune settings you can use to configure VPN connections on Windows Phone 8.1 devices.
+title: Intune VPN settings for Windows Phone 8.1 devices | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn about the Intune settings you can use to configure VPN connections on Windows Phone 8.1 devices."
 keywords:
 author: robstackmsft
 ms.author: robstack

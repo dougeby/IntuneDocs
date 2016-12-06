@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get started with device enrollment in Microsoft Intune | Microsoft Docs
-description: 
+title: Get started with device enrollment in Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: "
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

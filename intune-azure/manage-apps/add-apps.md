@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to add apps to Microsoft Intune | Microsoft Docs
-description: These procedures help you get your apps into Intune ready to be assigned to users and devices. 
+title: How to add apps to Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: These procedures help you get your apps into Intune ready to be assigned to users and devices. "
 keywords:
 author: robstackmsft
 ms.author: robstack

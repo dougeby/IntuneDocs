@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set the mobile device management authority in Microsoft Intune | Microsoft Docs
-description: Learn how to set the mobile device management authority in Intune. 
+title: Set the mobile device management authority in Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to set the mobile device management authority in Intune. "
 keywords:
 author: staciebarker
 ms.author: stabar

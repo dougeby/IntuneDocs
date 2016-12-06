@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to use Windows Hello for Business with Microsoft Intune | Microsoft Docs
-description: 
+title: How to use Windows Hello for Business with Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -18,7 +18,7 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

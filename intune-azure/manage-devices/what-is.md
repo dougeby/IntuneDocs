@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Manage devices with Microsoft Intune | Microsoft Docs
-description: Learn how to view the devices you manage with Intune, and perform various operations on them.
+title: Manage devices with Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to view the devices you manage with Intune, and perform various operations on them."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enroll iOS corporate-owned Device Enrollment Program devices | Microsoft Docs
-description: 
+title: Enroll iOS corporate-owned Device Enrollment Program devices | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to enroll corporate-owned iOS devices using the Device Enrollment Program."
 keywords:
 author: staciebarker
 ms.author: stabar
@@ -19,7 +19,7 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ Before you follow the steps in this topic, complete the following prerequisites:
 
 - [Get an Apple MDM Push certificate](get-an-apple-mdm-push-certificate.md)
 - [Get an Apple DEP token](get-apple-dep-token.md)
-- 
+-
 ## Create an Apple DEP profile for devices
 
 A device enrollment profile defines the settings applied to a group of devices. The following steps show how to create a device enrollment profile for iOS devices enrolled by using DEP.
@@ -57,7 +57,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 5. For **User Affinity** choose whether devices with this profile will enroll with or without user affinity.
 
- - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. Choose user affinity for DEP-managed devices that belong to users and that need to use the company portal for services like installing apps. Note that Multifactor authentication (MFA) doesn't work during enrollment on DEP devices with user affinity. After enrollment, MFA works as expected on these devices. 
+ - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. Choose user affinity for DEP-managed devices that belong to users and that need to use the company portal for services like installing apps. Note that Multifactor authentication (MFA) doesn't work during enrollment on DEP devices with user affinity. After enrollment, MFA works as expected on these devices.
 
 	>[!NOTE]
 	>DEP with user affinity requires WS-Trust 1.3 Username/Mixed endpoint to be enabled to request user token.
@@ -68,17 +68,17 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
-	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. This item is set during activation and cannot be changed without a factory reset. 
+	- **Locked enrollment** - (Requires Management Mode = Supervised) Disables iOS settings that could allow removal of the management profile. If you leave the check box blank, it allows the management profile to be removed from the Settings menu. This item is set during activation and cannot be changed without a factory reset.
 
-	- **Allow Pairing** - specifies whether iOS devices can sync with computers. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**. 
+	- **Allow Pairing** - specifies whether iOS devices can sync with computers. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 
-	- **Apple Configurator Certificates** - If you chose **Allow Apple Configurator by certificate** under **Allow Pairing**, select an Apple Configurator Certificate to import. 
+	- **Apple Configurator Certificates** - If you chose **Allow Apple Configurator by certificate** under **Allow Pairing**, select an Apple Configurator Certificate to import.
 
 7. Select **Setup Assistant Settings**, configure the following profile settings, and then select **Save**:
 
 	- **Department Name** - Appears when users tap **About Configuration** during activation.
 
-	- **Department Phone** - Appears when the user clicks the Need Help button during activation. 
+	- **Department Phone** - Appears when the user clicks the Need Help button during activation.
     - **Setup Assistant Options** - These optional settings can be set up later in the iOS **Settings** menu.
         - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device will be secured or have access controlled in some other manner (that is, kiosk mode that restricts the device to one app).
         - **Location Services** - If enabled, Setup Assistant prompts for the service during activation
@@ -117,4 +117,3 @@ Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://
 ## Distribute devices to users
 
 You can now distribute corporate-owned devices to users. When an iOS device is turned on, it will be enrolled for management by Intune.
-

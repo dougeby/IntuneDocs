@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What are device profiles in Microsoft Intune | Microsoft Docs
-description: Learn about Intune device profiles and how they can help manage and protect devices in your company.
+title: What are device profiles in Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn about Intune device profiles and how they can help manage and protect devices in your company."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

@@ -12,7 +12,7 @@
 ## [What is device enrollment?](/intune-azure/enroll-devices/what-is)
 <!--- ## [Get started](/intune-azure/enroll-devices/get-started) --->
 <!--- ## [Plan and design](/intune-azure/enroll-devices/plan-and-design)  --->
-## [How to](/intune-azure/enroll-devices/how-to)
+## How to
 ### [Set the MDM authority](/intune-azure/enroll-devices/set-mdm-authority)
 ### [Get an Apple DEP token](/intune-azure/enroll-devices/get-apple-dep-token)
 ### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-device-enrollment-program-devices)
@@ -125,7 +125,7 @@
 
 ### [Assign device profiles](/intune-azure/configure-devices/how-to-assign-device-profiles)
 ### [Monitor device profiles](/intune-azure/configure-devices/how-to-monitor-device-profiles)
-## [Troubleshoot](/intune-azure/configure-devices/troubleshooting)
+<!-- ## [Troubleshoot](/intune-azure/configure-devices/troubleshooting) -->
 
 # Set device compliance
 ## [What is device compliance?](/intune-azure/set-device-compliance/what-is-device-compliance)
@@ -142,5 +142,9 @@
 # Conditional access
 ## [What is conditional access?](/intune-azure/conditional-access/what-is-conditional-access)
 ## How to
-## [Install Exchange on-premises connector](/intune-azure/conditional-access/install-intune-on-premises-exchange-connector)
-## [Create a conditional access policy](/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises)
+### [Install Exchange on-premises connector](/intune-azure/conditional-access/install-intune-on-premises-exchange-connector)
+### [Create a conditional access policy](/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises)
+
+# Develop and customize
+## [Intune app SDK](/intune/develop/intune-app-sdk)
+## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/intune-graph-overview)

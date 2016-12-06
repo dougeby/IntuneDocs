@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for Windows | Microsoft Docs
-description: Learn how to create a compliance policy for Windows devices.
+title: How to create a compliance policy for Windows | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to create a compliance policy for Windows devices."
 keywords:
 author: karthikaraman
 ms.author: karaman

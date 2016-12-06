@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enroll iOS devices with Apple Configurator by using Setup Assistant | Microsoft Docs
-description: 
+title: Enroll iOS devices with Apple Configurator by using Setup Assistant | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to use the Apple Configuration to enroll corporate-owned iOS devices with Setup Assistant."
 keywords:
 author: staciebarker
 ms.author: stabar
@@ -19,7 +19,7 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -99,7 +99,7 @@ After you create the profile and assign serial numbers, you have to export the p
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
     ```
 
-4. Upload this profile URL to the Apple DEP service using Apple Configurator to define the Intune profile used by iOS devices. 
+4. Upload this profile URL to the Apple DEP service using Apple Configurator to define the Intune profile used by iOS devices.
 
 
     1.  On a Mac computer, open **Apple Configurator 2**. In the menu bar, choose **Apple Configurator 2**, and then choose **Preferences**.
@@ -139,4 +139,3 @@ After you create the profile and assign serial numbers, you have to export the p
 
 2. **Distribute devices**.
     The devices are now ready for corporate enrollment. Turn off the devices and distribute them to users. When users turn on their devices, Setup Assistant will start.
-

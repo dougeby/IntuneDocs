@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Add Apple Configurator serial numbers | Microsoft Docs
-description: 
+title: Add Apple Configurator serial numbers | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to add serial numbers to corporate-owned iOS devices using the Apple Configurator."
 keywords:
 author: staciebarker
 ms.author: stabar
@@ -19,7 +19,7 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

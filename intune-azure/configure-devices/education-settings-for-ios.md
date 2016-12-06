@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to configure Intune education settings for iOS devices | Microsoft Docs
-description: Learn about the settings you can use to control Education settings on iOS devices.
+title: How to configure Intune education settings for iOS devices | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn about the settings you can use to control Education settings on iOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What is the Microsoft Intune users and groups workload | Microsoft Docs
-description: Learn how to see and manage users using Microsoft Intune and Azure.
+title: What is the Microsoft Intune users and groups workload | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to see and manage users using Microsoft Intune and Azure."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

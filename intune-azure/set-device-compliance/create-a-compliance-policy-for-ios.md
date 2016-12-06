@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for iOS | Microsoft Docs
-description: Learn how to create a compliance policy for iOS devices.
+title: How to create a compliance policy for iOS | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to create a compliance policy for iOS devices."
 keywords:
 author: karthikaraman
 ms.author: karaman

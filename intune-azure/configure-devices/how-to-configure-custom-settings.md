@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to configure Microsoft Intune custom device settings | Microsoft Docs
-description: Learn how to use Intune to configure custom settings on devices you manage.
+title: How to configure Microsoft Intune custom device settings | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to use Intune to configure custom settings on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack

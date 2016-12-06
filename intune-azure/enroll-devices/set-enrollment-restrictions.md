@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set enrollment restrictions in Microsoft Intune | Microsoft Docs
-description: Restrict enrollment by platform and set a device enrollment limit in Intune. 
+title: Set enrollment restrictions in Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Restrict enrollment by platform and set a device enrollment limit in Intune. "
 keywords:
 author: staciebarker
 ms.author: stabar

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What is Microsoft Intune device enrollment | Microsoft Docs
-description: 
+title: What is Microsoft Intune device enrollment | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn about enrollment for iOS, Android, and Windows devices."
 keywords:
 author: staciebarker
 ms.author: stabar
@@ -19,7 +19,7 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,21 +32,21 @@ You can enroll devices, including Windows PCs, to enable mobile device managemen
 
 If you use Exchange ActiveSync, either on-premises or hosted in the cloud, you can enable simple Intune management without enrollment. More information is coming soon. Windows PCs can also be managed using [Intune client software](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
 
-## Overview of device enrollment methods
-
-The following table shows Intune enrollment methods and the supported capabilities and requirements of each method. The capabilities and requirements are described below.
-
-- **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data.
 - **Affinity** - Associates devices with users. Required for mobile application management (MAM) and conditional access to company data. For more information, see [User affinity](enroll-ios-device-enrollment-program-devices.md).
-- **Lock** - Prevents users from removing the device from management. iOS devices require Supervised mode for Lock. 
+- **Lock** - Prevents users from removing the device from management. iOS devices require Supervised mode for Lock.
 
 **iOS enrollment methods**
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | More information coming soon|
+|**[BYOD](#byod)** | No|	Yes |	No | More information
+## Overview of device enrollment methods
+
+The following table shows Intune enrollment methods and the supported capabilities and requirements of each method. The capabilities and requirements are described below.
+
+- **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data.coming soon|
 |**[DEM](#dem)**|	No |No |No	| [More information](enroll-devices-using-device-enrollment-manager.md)|
-|**[DEP](#dep)**|	Yes |	Optional |	Optional|[More information](enroll-ios-device-enrollment-program-devices)|
+|**[DEP](#dep)**|	Yes |	Optional |	Optional|More information to come|
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md)|
 |**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md)|
 
@@ -62,11 +62,11 @@ The following table shows Intune enrollment methods and the supported capabiliti
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|	Yes |	No | [More information coming soon|
-|**[DEM](#dem)**|	No |No |No	|[More information](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEM](#dem)**|	No |No |No	|[More information to come]|
 
 
 ## BYOD
-"Bring your own device" users install the Company Portal app and enroll their device. This enables users to connect to the company network and join the domain or Azure Active Directory. For most platforms, you have to enable BYOD enrollment for many COD scenarios. 
+"Bring your own device" users install the Company Portal app and enroll their device. This enables users to connect to the company network and join the domain or Azure Active Directory. For most platforms, you have to enable BYOD enrollment for many COD scenarios.
 
 ## Corporate-owned devices
 Corporate-owned devices (COD) can be managed by using the Intune console. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.
@@ -92,7 +92,7 @@ USB-connected, corporate-owned devices are prepared with Intune policy. For Setu
 Learn more about [Setup Assistant enrollment with Apple Configurator](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md). ([Go back to the table](#overview-of-device-enrollment-methods))
 
 ### USB-Direct
-For direct enrollment, the admin creates an Intune policy and exports it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a factory reset. The admin must enroll each device manually. Devices are managed as user-less devices. They are not locked or supervised and cannot support conditional access, jailbreak detection, or mobile application management. Learn more about [direct enrollment with Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md). ([Go back to the table](#overview-of-device-enrollment-methods))
+For direct enrollment, the admin creates an Intune policy and exports it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a factory reset. The admin must enroll each device manually. Devices are managed as user-less devices. They are not locked or supervised and cannot support conditional access, jailbreak detection, or mobile application management. ([Go back to the table](#overview-of-device-enrollment-methods))
 
 ## Mobile device management with Exchange ActiveSync and Intune
 Mobile devices that aren't enrolled but that connect to Exchange ActiveSync (EAS) can be managed by Intune using EAS MDM policy. Intune uses an Exchange Connector to communicate with EAS, either on-premises or cloud-hosted. More information is coming soon.
@@ -111,5 +111,3 @@ PCs that are managed with the Intune client software cannot be fully wiped, alth
 ## Supported device platforms and browsers
 
 See [Supported devices and browsers for Intune](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers)
-
-

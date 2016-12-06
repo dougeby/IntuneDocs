@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Decide how to enroll iOS devices in Microsoft Intune | Microsoft Docs
-description: Instructions for configuring and uploading an MDM push certificate, which is a prerequisite for managing Apple devices in Intune. 
+title: Decide how to enroll iOS devices in Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Instructions for configuring and uploading an MDM push certificate, which is a prerequisite for managing Apple devices in Intune. "
 keywords:
 author: staciebarker
 ms.author: stabar

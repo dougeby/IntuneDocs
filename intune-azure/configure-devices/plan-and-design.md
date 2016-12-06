@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Plan and design Intune device configurations | Microsoft Docs
-description: Use this topic to help you plan to use Intune device configuration profiles.
+title: Plan and design Intune device configurations | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Use this topic to help you plan to use Intune device configuration profiles."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe

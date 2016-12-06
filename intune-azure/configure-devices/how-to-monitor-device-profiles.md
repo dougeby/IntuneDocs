@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to monitor device profiles with Microsoft Intune | Microsoft Docs
-description: Learn how to monitor assigned Intune device profiles.
+title: How to monitor device profiles with Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to monitor assigned Intune device profiles."
 keywords:
 author: robstackmsft
 ms.author: robstack
