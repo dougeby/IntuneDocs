@@ -69,3 +69,6 @@ Different administrative tasks require that you use one of the following adminis
 
 
 Only users with service administrator permissions or tenant administrators with the global administrator role can sign in to this portal. To access the administration console, your account must have a license to use Intune and a sign-in status of **Allowed**.
+>[!div class="step-by-step"]
+
+>[&larr; **Prerequisites**](what-to-know-before-you-start-microsoft-intune.md)     [**Networking** &rarr;](network-bandwidth-use.md)  
