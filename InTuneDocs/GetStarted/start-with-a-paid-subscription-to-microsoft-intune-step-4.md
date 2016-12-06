@@ -62,7 +62,7 @@ You must create a new license SKU definition that applies only to the desired se
 
 You can run the following command to exclude the Intune service plan. You can use the same method to expand to an entire security group or you can use more granular filters.
 
-**Example 1**
+**Example 1**<br>
 Create a new user on the command line and assign an EMS license without enabling the Intune portion of the license:
 
     Connect-MsolService
@@ -77,7 +77,7 @@ Verify with:
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
-**Example 2**
+**Example 2**<br>
 Disable the Intune portion of EMS license for a user that is already assigned with a license:
 
     Connect-MsolService
@@ -92,9 +92,5 @@ Verify with:
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com" .Licenses.ServiceStatus
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
-
-### Next steps
-Congratulations! You have just completed step 4 of the *Intune quick start guide*.
->[!div class="step-by-step"]
 
 >[&larr; **Sync users to Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organize users and devices** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
