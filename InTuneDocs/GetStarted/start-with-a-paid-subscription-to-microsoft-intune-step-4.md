@@ -93,4 +93,6 @@ Verify with:
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
+>[!div class="step-by-step"]
+
 >[&larr; **Sync users to Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organize users and devices** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
