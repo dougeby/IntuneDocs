@@ -38,15 +38,15 @@ To learn more about how conditional access works, read the [Restrict access to e
 
 -   Your Exchange version must be **Exchange 2010 or later**. Exchange Server Client Access Server (CAS) arrays are supported.
 
--   You must use the **on-premises Exchange connector**, which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Microsoft Exchange on-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. For details on the connector, see [Intune on-premises Exchange connector](intune-on-premises-exchange-connector.md).
+-   You must use the **on-premises Exchange connector**, which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Exchange on-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. For details on the connector, see [Intune on-premises Exchange connector](intune-on-premises-exchange-connector.md).
 
     -   The on-premises Exchange connector that is available to you in the Intune console is specific to your Intune tenant and can't be used with any other tenant. We recommend that you also ensure that the Exchange connector for your tenant is installed **on only one machine**.
 
-        You should download this connector from the Intune admin console. For a walkthrough on how to configure the on-premises Exchange connector, see [configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md).
+        You can download the connector from the Intune admin console. For a walkthrough on how to configure the on-premises Exchange connector, see [configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md).
 
-    -   You can install the connector on any machine as long as that machine is able to communicate with the Exchange server.
+    -   You can install the connector on any machine as long as that machine can communicate with the Exchange server.
 
-    -   The connector supports the **Exchange CAS environment**. You can technically install the connector on the Exchange CAS server directly if you want to. However, we don't recommended it because it increases the load on the server. When you configure the connector, you must set it up to communicate to one of the Exchange CAS servers.
+    -   The connector supports the **Exchange CAS environment**. You can technically install the connector on the Exchange CAS server directly if you want to. However, we don't recommend it because it increases the load on the server. When you configure the connector, you must set it up to communicate with one of the Exchange CAS servers.
 
 -   You must configure **Exchange ActiveSync** with certificate-based authentication or user credential entry.
 
@@ -64,11 +64,11 @@ The following diagram illustrates the flow that conditional access policies for 
 
 ![Diagram that shows the decision points that determine if a device is allowed access to Exchange on-premises or is blocked](../media/ConditionalAccess8-2.png)
 
-If a conditional access policy is not met, the user sees one of the following messages when they sign in:
+If a conditional access policy isn't met, the user sees one of the following messages when they sign in:
 
-- If the device is not enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
+- If the device isn't enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
 
--   If the device is not compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website or the Company Portal app, where they can find information about the problem and how to remediate it.
+-   If the device isn't compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website or the Company Portal app, where they can find information about the problem and how to remediate it.
 
 ## Support for mobile devices
 The following are supported:
@@ -77,7 +77,7 @@ The following are supported:
 -   The native email app on iOS.
 
 -   Exchange ActiveSync mail clients, such as Gmail on Android 4 or later.
-- Exchange ActiveSync mail clients **Android for Work devices**: Only **Gmail** and **Nine Work** apps in the **work profile** are supported on Android for Work devices. For conditional access to work with Android for Work, you must deploy an email profile for the Gmail or Nine Work app, and also deploy those apps as a required install. 
+- Exchange ActiveSync mail clients on **Android for Work devices**: Only **Gmail** and **Nine Work** apps in the **work profile** are supported on Android for Work devices. For conditional access to work with Android for Work, you must deploy an email profile for the Gmail or Nine Work app, and also deploy those apps as a required installation. 
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -96,7 +96,7 @@ The following is supported:
 2.  Configure the policy with the settings that you require:
 ![Screenshot of the Exchange on-premises policy page](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **Block email apps from accessing Exchange on-premises if the device is noncompliant or not enrolled to Microsoft Intune**: When you select this option, devices that aren't managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or aren't compliant with a compliance policy are blocked from accessing Exchange services.
+  - **Block email apps from accessing Exchange on-premises if the device isn't compliant or isn't enrolled with Microsoft Intune**: When you select this option, devices that aren't managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or aren't compliant with a compliance policy are blocked from accessing Exchange services.
 
   - **Default rule override - Always allow enrolled and compliant devices to access Exchange**: When you select this option, devices that are enrolled in Intune and are compliant with the compliance policies are allowed to access Exchange.
   This rule overrides the **Default Rule**, which means that even if you set the **Default Rule** to quarantine or block access, enrolled and compliant devices are still able to access Exchange.
@@ -105,7 +105,7 @@ The following is supported:
 
   - **Exempted Groups**: Select the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] user groups that are exempt from the conditional access policy. Users in this list are exempt even if they're also in the **Targeted Groups** list.
 
-  - **Platform Exceptions**: Choose **Add Rule** to configure a rule that defines access levels for specified mobile device families and models. Because these devices can be of any type, you can also configure device types that are not supported by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+  - **Platform Exceptions**: Choose **Add Rule** to configure a rule that defines access levels for specified mobile device families and models. Because these devices can be of any type, you can also configure device types that aren't supported by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
   - **Default Rule**: For a device that isn't covered by any of the other rules, you can choose to allow it to access Exchange, block it, or quarantine it. When you set the rule to allow access, for devices that are enrolled and compliant, email access is granted automatically for iOS, Windows, and Samsung KNOX devices. The user doesn't have to go through any process to get their email.
 
@@ -115,9 +115,9 @@ The following is supported:
 
   - **User Notification**: In addition to the notification email that Exchange sends, Intune sends an email that contains steps to unblock the device. You can edit the default message to customize it to your needs. In the event that the user’s device is blocked before they receive the Intune notification email that contains remediation instructions (this email is delivered to the user’s Exchange mailbox), they can use an unblocked device or another method to access Exchange and view the message.
 
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
   > [!NOTE]
-  > In order for Exchange to be able to send the notification email, you must specify the account that should be used to send the notification email.
+  > In order for Exchange to be able to send the notification email, you must specify the account that is used to send the notification email.
   >
   > For details, see [Configure Exchange on-premises connector for on-premises or hosted Exchange](intune-on-premises-exchange-connector.md).
 
