@@ -8,7 +8,7 @@ author: Lindavr
 ms.author: lindavr
 manager: angrobe
 ms.date: 11/15/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
