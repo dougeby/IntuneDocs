@@ -147,4 +147,4 @@
 
 # Develop and customize
 ## [Intune app SDK](/intune/develop/intune-app-sdk)
-<!-- ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/intune-graph-overview) -->
+## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/intune-graph-overview)
