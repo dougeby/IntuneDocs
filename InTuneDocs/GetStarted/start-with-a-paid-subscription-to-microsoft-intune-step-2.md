@@ -54,24 +54,9 @@ You cannot rename or remove that initial domain name. However, you can add, veri
 	> [!TIP]
 	> Make sure to create a DNS alias (CNAME) for [Windows devices enrollment](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune), while making changes in your DNS hosting provider.
 
-The steps to add and verify a custom domain can alternatively be [performed in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
+The steps to add and verify a custom domain can also be [performed in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
 
-In a hybrid cloud scenario, after you added your custom domain name, and it has been verified that your organization owns it, you can keep managing user accounts in your on-premises Active Directory, then synchronize it with Azure AD.
-
-## To synchronize on-premises users with Azure AD##
-
-1. [Add the UPN suffix](https://technet.microsoft.com/en-us/library/cc772007.aspx) for your custom domain in your on-premises Active Directory.
-2. Set the new UPN suffix for the on-premises users that you plan to import.
-3. Run [Azure AD Connect sync](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) to integrate your on-premises users with Azure AD.
-4. Once the user account information has successfully synchronized, you can then assign Microsoft Intune licenses using the [Office 365 Management Portal](https://portal.office.com/Admin/Default.aspx).
-
-### See also
-
-[About your initial onmicrosoft.com domain in Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
-
-[What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
-### Next steps
-Congratulations! You have just completed step 2 of the *Intune quick start guide*.
+You can learn more [about your initial onmicrosoft.com domain in Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
 
 >[!div class="step-by-step"]
 

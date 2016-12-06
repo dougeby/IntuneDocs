@@ -68,10 +68,6 @@ Now that the app is availabile in Intune, you can deploy it to managed devices:
 
 	Once you have configured apps for deployment you can [configure apps](https://docs.microsoft.com/intune/deploy-use/update-apps-using-microsoft-intune) and [monitor apps](https://docs.microsoft.com/intune/deploy-use/monitor-apps-in-microsoft-intune).
 
-
-### Next steps
-Congratulations! You have just completed step 6 of the *Intune quick start guide*.
-
 >[!div class="step-by-step"]
 
 >[&larr; **Organize users and devices**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Customize Company Portal** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
