@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +46,7 @@ To see what you can do by using the Company Portal website versus what you can d
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
-- [iOS and Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [iOS and macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Windows](using-your-windows-device-with-intune.md)
 - [Company Portal website](using-the-intune-company-portal-website.md)
 
@@ -57,12 +57,12 @@ To learn about what your IT administrator can and can't see on your device, use 
 
 > [!div class="op_single_selector"]
 - [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [iOS and Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [iOS and macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## What kind of computers or devices can you add to the Company Portal?
 
--   iPhones, iPads, and Mac OS X devices
+-   iPhones, iPads, and macOS devices
 
 -   Android mobile devices
 
@@ -79,7 +79,7 @@ When you *remove* a computer or device, you are unenrolling your device from Int
 
 > [!div class="op_single_selector"]
 - [Android](unenroll-your-device-from-intune-android.md)
-- [iOS and Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [iOS and macOS](unenroll-your-device-from-intune-ios.md)
 - [Windows](unenroll-your-device-from-intune-windows.md)
 
 When you *reset* a computer or device, the Company Portal tries to reset your computer or device back the manufacturer’s default settings. Resetting your device removes all company and personal data from the device! If you have lost your device, you can also reset it remotely from the Company Portal website.
@@ -88,7 +88,7 @@ To see how to reset your device, choose one of the following links:
 
 > [!div class="op_single_selector"]
 - [Android](reset-erase-your-lost-or-stolen-device-android.md)
-- [iOS and Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [iOS and macOS](reset-erase-your-lost-or-stolen-device-ios.md)
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Reset your device from the Company Portal website](reset-your-device-cpwebsite.md)
 
