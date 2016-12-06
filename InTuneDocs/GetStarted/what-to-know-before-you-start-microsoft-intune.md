@@ -32,3 +32,7 @@ Before you start setting up Microsoft Intune, review the following requirements:
 
 - [Supported devices and browsers](supported-mobile-devices-and-computers.md)
 - [Network bandwidth usage](network-bandwidth-use.md)
+
+>[!div class="step-by-step"]
+
+>[**Domain settings** &rarr;](supported-mobile-devices-and-computers.md)  

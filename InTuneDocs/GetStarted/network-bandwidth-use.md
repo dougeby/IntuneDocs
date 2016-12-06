@@ -225,3 +225,7 @@ The following table lists the ports and services that the Intune client accesses
 |Samsung KNOX Standard device communication through the firewall|To enable Samsung KNOX Standard devices to contact KNOX Standard servers through the firewall, follow the instructions on the Samsung KNOX Standard FAQ.||
 |Conditional access communication|443|204.79.197.200|
 |Documentation, Help, and support:</br></br>*.livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
+
+>[!div class="step-by-step"]
+
+>[&larr; **Prerequisites**](supported-mobile-devices-and-computers.md)     [**Networking** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  

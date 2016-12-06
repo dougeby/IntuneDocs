@@ -43,14 +43,12 @@ If you already have a work or school account, you will be able to simply **sign 
 ## Post sign up considerations
 If you sign up for a new subscription, you'll receive an email message that contains your account information at the email address that you provided during the sign up process. This email confirms your subscription is active.
 
-After completing the sign up process you will be directed to a page used to add users and assign them licenses using the Office 365 admin center. If you will only have cloud-based accounts using your default onmicrosoft.com domain name then you can go ahead and add users and assign licenses at this point. However, if you will use your organization's custom domain name or want to synchronize user account information from on-premises Active Directory, then you can close that browser window and move on to step 2 of this quick start guide.
+After completing the sign up process you will be directed to a page used to add users and assign them licenses using the Office 365 admin center. If you will only have cloud-based accounts using your default onmicrosoft.com domain name then you can go ahead and add users and assign licenses at this point. However, if you will use your organization's custom domain name or want to synchronize user account information from on-premises Active Directory, then you can close that browser window and move on to step 2 of this quick start guide. You can also learn more [About your initial onmicrosoft.com domain in Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
 
 >[!TIP]
 > The next time you sign in to Intune you'll automatically be directed to the Intune administration console.
 
-### Next steps
-Congratulations! You have just completed step 1 of the *Intune quick start guide*.
 
 >[!div class="step-by-step"]
 
->[&larr; **Get started**](.\start-with-a-paid-subscription-to-microsoft-intune.md)     [**Domain settings** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
+>[&larr; **Prerequisites**](.\what-to-know-before-you-start-microsoft-intune.md)     [**Domain settings** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
