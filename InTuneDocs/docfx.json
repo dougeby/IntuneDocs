@@ -8,22 +8,10 @@
         "exclude": [
           "**/obj/**",
           "Understand/**",
-          "GetStarted/**",
           "DeployUse/**",
           "PlanDesign/**",
           "**/includes/**"
         ]
-      },
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ],
-        "src": "GetStarted",
-        "dest": "get-started"
       },
       {
         "files": [
@@ -74,7 +62,6 @@
           "**/obj/**",
           "_themes/**",
           "Understand/**",
-          "GetStarted/**",
           "DeployUse/**",
           "PlanDesign/**"
         ]
