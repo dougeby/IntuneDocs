@@ -4,10 +4,10 @@
 title: Manage alerts | Microsoft Intune
 description: Use the Alerts workspace in Intune to assess the overall health of devices in your organization.
 keywords:
-author: karthikaraman
-ms.author: karaman
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/7/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

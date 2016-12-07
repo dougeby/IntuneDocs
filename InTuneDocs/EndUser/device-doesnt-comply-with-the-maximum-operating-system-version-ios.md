@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: iOS device doesn't comply with the maximum operating system version | Microsoft Intune
+title: Your device doesn't comply with the maximum operating system version | Microsoft Intune
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,6 +26,8 @@ ms.suite: ems
 ---
 
 
-# iOS device doesn't comply with the setting for the latest operating system version
+# Your device's operating system version isn't yet supported
 
-Your iOS device does not comply with your IT admin's policy for the latest version of the operating system that you can use. Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+With the rapid pace of development for mobile technologies, sometimes your device could actually be ahead of what your IT admin has had the opportunity to test. It's possible that being on the newest version of iOS may not work with some of your company's other tools.
+
+You will need to contact your IT admin to resolve this issue. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

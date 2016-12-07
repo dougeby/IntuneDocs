@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 10/12/2016
+ms.date: 12/7/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 
 
-# Introduction to the Microsoft Intune in the Azure portal preview
+# Introduction to Microsoft Intune in the Azure portal preview
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
