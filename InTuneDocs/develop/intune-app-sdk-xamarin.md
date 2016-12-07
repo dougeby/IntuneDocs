@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Microsoft Intune App SDK Xamarin Component | Microsoft Intune
+title: Microsoft Intune App SDK Xamarin Component | Microsoft Docs
 description:
 keywords: sdk, Xamarin, intune
-author: oydang
-manager: karthikaraman
-ms.author: oydang
+author: mtillman
+manager: angrobe
+ms.author: mtillman
 ms.date: 11/15/2016
 ms.topic: article
 ms.prod:
