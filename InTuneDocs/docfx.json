@@ -11,16 +11,58 @@
           "GetStarted/**",
           "DeployUse/**",
           "PlanDesign/**",
-          "Troubleshoot/**",
-	  "EndUser/**",
           "**/includes/**"
         ]
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "src": "GetStarted",
+        "dest": "get-started"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "src": "DeployUse",
+        "dest": "deploy-use"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "src": "Understand",
+        "dest": "understand-explore"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "src": "PlanDesign",
+        "dest": "plan-design"
       }
     ],
     "resource": [
         {
           "files": [
-          "**/images/**", 
+          "**/images/**",
           "**/*.png",
           "**/*.jpg",
           "**/*.gif",
@@ -34,9 +76,7 @@
           "Understand/**",
           "GetStarted/**",
           "DeployUse/**",
-          "PlanDesign/**",
-	  "EndUser/**",
-          "Troubleshoot/**"   
+          "PlanDesign/**"
         ]
       }
     ],
