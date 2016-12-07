@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Resources about the end-user experience with Microsoft Intune | Microsoft Intune
+title: How to talk to your end users about Intune | Microsoft Intune
 description: Share information with your end users to make your Intune deployment successful.
 keywords: end users, users, communication
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 12/07/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,15 @@ ms.suite: ems
 
 ---
 
-# Resources about the end-user experience with Microsoft Intune
+# Consider the end-user experience
+
+Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. There are many steps to ensuring a successful deployment, including evaluating Intune through a [free trial](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md), [protecting your email](/Intune/Understand/common-ways-to-use-intune#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices.md), and [embedding your apps with the Intune SDK](/intune/develop/intune-app-sdk.md).
+
+None of these technologies will ensure that your users understand the importance of why you're managing their devices. In fact, many of your end users may feel as though you are infringing on their privacy - especially if you are deploying Intune as a [BYOD solution](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md). Understanding and proactively addressing your end users' concerns about why your company needs to access various permissions on their devices is critical to a successful rollout. Adoption is not just about getting the technology working and distributed throughout your workforce, but about getting your end user population to embrace the access that Intune provides them.
+
+## Things to consider about your end users
+
+* Do you end users have a range of experience with technologies? Do they
 
 Use the following links and information to understand the steps that your end users take to do different tasks in Intune.
 
