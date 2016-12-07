@@ -203,7 +203,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 > [!NOTE]
 > The following notes apply to kiosk mode settings for iOS devices:
 >
-> -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or the [Apple Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune) to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
+> -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or the [Apple Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune.md) to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
 > -   If the iOS app that you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
 
 ### Reference information for compliant and noncompliant apps
