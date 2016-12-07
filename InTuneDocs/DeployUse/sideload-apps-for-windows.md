@@ -1,4 +1,4 @@
---
+---
 # required metadata
 
 title: Sideload apps for Windows and Windows Phone | Microsoft Intune
@@ -6,7 +6,7 @@ description: Learn how to sign line of business apps so you can use Intune to de
 keywords:
 author: robstackmsft
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service:
