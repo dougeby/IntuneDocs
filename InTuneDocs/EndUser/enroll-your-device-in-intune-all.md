@@ -34,5 +34,5 @@ To see enrollment instructions, use the link that matches the type of device you
 
 - [Enroll your Android device in Intune](enroll-your-device-in-Intune-android.md)
 - [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md)
-- [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md)
+- [Enroll your macOS device in Intune](enroll-your-device-in-intune-mac-os-x.md)
 - [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)

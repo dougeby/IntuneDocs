@@ -6,7 +6,7 @@ description: Use this topic to synchronize, then deploy app to Android for Work 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 12/6/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,7 +50,7 @@ Additionally, if you have created your own line of business (LOB) apps, you can 
 
 ## Publish, then synchronize, a line of business app from the Google Play for Work store
 
-1. Go to the Google Play Developer Console, [play.google.com/apps/publish](play.google.com/apps/publish).
+1. Go to the Google Play Developer Console, [play.google.com/apps/publish](https://play.google.com/apps/publish).
 2. Sign in with the same account you used to configure the connection between Intune and Android for Work. If you are signing in for the first time, you must register, and pay a fee to become a member of the Google Developer program.
 3. In the console, choose **Add new application**.
 4. You upload and provide information about your app in the same way as you publish any app to the Google Play store. However, you must select the setting **Only make this application available to my organization (<*organization name*>)** as shown below.<br>

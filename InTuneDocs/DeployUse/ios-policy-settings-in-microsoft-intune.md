@@ -4,9 +4,10 @@
 title: iOS policy settings | Microsoft Intune
 description: Create policies that control settings and features on iOS devices that you manage with Intune.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -202,7 +203,7 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 > [!NOTE]
 > The following notes apply to kiosk mode settings for iOS devices:
 >
-> -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or the [Apple Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune) to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
+> -   Before you can configure an iOS device for kiosk mode, you must use the [Apple Configurator tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) or the [Apple Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune.md) to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
 > -   If the iOS app that you specify is installed after you deploy the configuration policy, the device will not enter kiosk mode until after it is restarted.
 
 ### Reference information for compliant and noncompliant apps
@@ -299,7 +300,7 @@ Specify the following settings:
 |Setting name|Details|
 |-|-|
 |**Hidden and shown apps list**|Enable this setting if you want to create a hidden, or shown apps list.|
-|**Hide the listed apps from users**|Select this option if you want to create a list of apps that will be hidden from users.|
+|**Hide the listed apps from users**|Select this option if you want to create a list of apps that will be hidden from users.<br>When you create this list type, all apps except for the iOS **Settings** and **Phone** (for iPhones) apps can be hidden.|
 |**Show only the listed apps to users**|Select this option if you want to create a list of apps that are displayed to users.<br>When you create this list type, all other apps except for the iOS **Settings** and **Phone** (for iPhones) apps are hidden.<br>Additionally, you must add the Company Portal, and any apps you have deployed, and manage with Intune to the list.|
 |**Add**|Adds an app to the selected list.<br>For the hidden list, you must specify the **Name**, **Publisher**, and **App URL or Bundle ID** of each app you want to hide.<br>For the shown list, you can either **Select a managed app** which gives you a list of apps you manage with Intune to select from, or Select a store app, after which you must specify the **Name**, **Publisher**, and **App URL or Bundle ID** of each app you want to display.|
 |**Import Apps**|Imports a list of apps you have specified in a comma-separated values file. Use the format, application name, publisher, app URL in the file.|

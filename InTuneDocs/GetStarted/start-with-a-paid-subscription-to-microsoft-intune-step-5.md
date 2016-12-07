@@ -83,11 +83,6 @@ Use user groups to deploy software and device policies. For example, set up an "
 
 You can find the newly created group in the **Groups** list, in the **Groups** workspace, under **All Users**. From here, you can also edit or delete the group.
 
-
-
-### Next steps
-Congratulations! You have just completed step 5 of the *Intune quick start guide*.
-
 >[!div class="step-by-step"]
 
 >[&larr; **Manage Intune licenses**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Create policies and apps** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
