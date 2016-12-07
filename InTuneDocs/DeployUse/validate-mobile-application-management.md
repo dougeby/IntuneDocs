@@ -4,8 +4,7 @@
 title: [Validate your MAM setup | Microsoft Intune]
 description: This topics describes how you can test and validate if your MAM policy is set up correctly and working as expected.
 keywords:
-author: karthikaramanms.author: karaman
-manager: angerobe
+author: NathBarnms.author: nathbarnmanager: angerobe
 ms.date: 08/16/2016
 ms.topic: article
 ms.prod:
@@ -46,7 +45,7 @@ If testing shows that your MAM policy behavior is not as anticipated, we recomme
 
 2. Choose a user from the list or search for and choose a user, then choose **Select user**. At the top of the **App reporting** column you will see whether the user is licensed for MAM. Below that you will see whether the user is licensed for O365 and the app status for all of the user's devices.
 
-![App statuts for MAM](..\media\ts-mam-user-apps.png) 
+![App statuts for MAM](..\media\ts-mam-user-apps.png)
 
 ### What to do
 Here are the actions to take based on the user status:
