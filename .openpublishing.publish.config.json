@@ -18,6 +18,18 @@
       "template_folder": "_themes"
     },
     {
+      "docset_name": "InTuneDocs",
+      "build_source_folder": "InTuneDocs",
+      "build_output_subfolder": "InTuneDocs",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "IntDeployUse",
       "build_source_folder": "InTuneDocs/DeployUse",
       "build_output_subfolder": "intune/deploy-use",
@@ -39,21 +51,6 @@
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "IntTestOnly",
-      "build_source_folder": "InTuneDocs/IntTestOnly",
-      "build_output_subfolder": "intune/Inttestonly",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -107,15 +104,18 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "InTuneDocs",
+      "docset_name": "IntTestOnly",
       "build_source_folder": "InTuneDocs",
-      "build_output_subfolder": "InTuneDocs",
+      "build_output_subfolder": "intune/inttestonly",
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
-        "Conceptual": "Content"
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
       },
+      "build_entry_point": "docs",
       "template_folder": "_themes"
     }
   ],

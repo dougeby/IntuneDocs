@@ -6,7 +6,7 @@ description: Before you start deploying apps with Intune, take some time to fami
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -81,6 +81,16 @@ If this registry key is not configured, Intune will automatically set this value
 Universal Windows Platform line-of-business apps must be signed with a code-signing certificate that is trusted on each device to which the app is deployed. You can use a certificate from an in-house public key infrastructure (PKI), or a certificate from a third-party public root certificate installed on the device.
 
 On Windows 10 Mobile devices, you can use a non-Symantec code-signing certificate to sign universal **.appx** apps. For **.xap** apps, and also **.appx** packages built for Windows Phone 8.1 that you want to install on Windows 10 Mobile devices, you must use a Symantec code-signing certificate.
+
+### Dependencies for UWP apps
+
+When you add a Windows 10 Universal appxbundle package to Intune, you must also ensure that any dependencies for the app are uploaded.
+To do this, ensure that the **Dependencies** folder that was created when the app was built is in the same folder as the .appxbundle file itself.
+That way, when you upload the app to Intune, any files in the **Dependencies** folder will also be uploaded. The following screen shot illustrates this:
+
+
+![How to select Windows 10 UWP appxbundle dependencies](./media/w10-dependencies.png)
+
 
 ## Next steps
 

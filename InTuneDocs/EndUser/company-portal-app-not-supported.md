@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Company Portal app not supported | Microsoft Intune
+title: Update your Company Portal app | Microsoft Intune
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,8 +25,7 @@ ms.suite: ems
 
 ---
 
-# Company Portal app not supported
-This version of the Company Portal can no longer be used. Install the latest **Company Portal** app from the Windows Store to continue.
-
+# Your Company Portal app is out of date
+You need to update your Company Portal app in order to continue to access things like your corporate email, contacts, and documents. To fix this, open the **Windows Store** and install the new version of the **Company Portal** app.
 
 Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
