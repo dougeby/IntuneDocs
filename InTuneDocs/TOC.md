@@ -24,7 +24,7 @@
 ### [Enroll mobile devices](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Post configuration tasks](get-started/post-configuration-tasks.md)
 ## [Migrate to Intune](get-started/migrate-to-intune.md)
-## [Next steps](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+## Next steps
 ### [Prevent company data leaks from Office 365 mobile apps](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Protect company data with data encryption](get-started/protect-data-encryption.md)
 ### [Publish mobile apps to your users](get-started/publish-mobile-apps-to-users.md)
@@ -66,8 +66,7 @@
 #### [Common PC management tasks](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Resolve PC policy conflicts](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 
-## [Configure devices](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
+## Configure devices
 ### [Manage settings and features on your devices with policies](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS settings](deploy-use/ios-policy-settings-in-microsoft-intune.md)
 #### [Android and Samsung KNOX settings](deploy-use/android-policy-settings-in-microsoft-intune.md)
@@ -119,7 +118,7 @@
 #### [Manage volume-purchased iOS apps](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 #### [Manage volume-purchased Windows apps](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
-## [Configure apps](deploy-use/update-apps-using-microsoft-intune.md)
+## Configure apps
 ### [Update apps ](deploy-use/update-apps-using-microsoft-intune.md)
 ### [iOS app configuration policies](deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
 ### [Android for Work app configuration policies](deploy-use/afw-app-configuration-policy.md)
@@ -174,7 +173,7 @@
 #### [Use the SDK when you write an app](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-## [Retire apps and data](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
+## Retire apps and data
 ### [Use full or selective wipe](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 ### [Retire apps ](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Wipe managed company app data](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
