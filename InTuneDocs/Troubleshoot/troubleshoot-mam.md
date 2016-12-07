@@ -134,7 +134,7 @@ If you are having problems with Intune mobile application management, start here
 
 ### MAM app experience on iOS
 
-1. **I am able to use the iOS share extension to open work or school data in unmanaged apps, even with the data transfer policy set to "managed apps only" or "no apps." Doesn't this leak data?** Intune MAM without device enrollment cannot control the iOS share extension without managing the device. Therefore, the Intune App SDK _**encrypts "corporate" data that is shared with unmanaged apps**_ before allowing it to be transfered out of the MAM app. You can validate this by attempting to open the "corporate" file outside of the managed app. The file should be encrypted and unable to be opened outside the managed app.
+1. **I am able to use the iOS share extension to open work or school data in unmanaged apps, even with the data transfer policy set to "managed apps only" or "no apps." Doesn't this leak data?** Intune MAM without device enrollment cannot control the iOS share extension without managing the device. Therefore, the Intune App SDK _**encrypts "corporate" data that is shared with unmanaged apps**_ before allowing it to be transferred out of the MAM app. You can validate this by attempting to open the "corporate" file outside of the managed app. The file should be encrypted and unable to be opened outside the managed app.
 
 ## Common end-user error messages
 
@@ -144,37 +144,39 @@ If you are having problems with Intune mobile application management, start here
 
 
 
-## Common issues
-**Issue:** App protection policy without device enrollment, made in the Azure portal, is not applying to the Skype for Business app on iOS and Android devices.
+## Common Intune administrative issues
 
-Resolution: Skype for Business must be set up for modern authentication.  Please follow instructions in [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to set up modern authentication for Skype.
+1. **Issue:** App protection policy without device enrollment, made in the Azure portal, is not applying to the Skype for Business app on iOS and Android devices.
 
-**Issue:** MAM without Enrollment policies are not applying to any (supported Office App)[https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners] for any user.
+  **Resolution**: Skype for Business must be set up for modern authentication.  Please follow instructions in [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to set up modern authentication for Skype.
 
-Resolution: Confirm that the user is licensed for Intune.  
+2. **Issue:** MAM without Enrollment policies are not applying to any [supported Office App](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) for any user.
 
-**Issue:** IT admin user is unable to configure MAM policies in Azure Portal
+  **Resolution**: Confirm that the user is licensed for Intune. It can take up to 8 hours for a newly deployed app protection policy to be applied.
 
-Resolution:
-The following roles have access to the Azure Portal:
+3. **Issue:** IT admin user is unable to configure MAM policies in Azure Portal.
 
-- Global administrator, which you can set up in the [Office Portal](http://portal.office.com/)
-- Owner, which you can set up in the [Azure Portal](https://portal.azure.com/).
-- Contributor, which you can set up in the [Azure Portal](https://portal.azure.com/).
+  **Resolution**:
 
-Refer to [Get ready to configure mobile app management policies with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) for help  setting up these roles.
+  The following user roles have access to the Azure Portal:
 
-**Issue:** App report does not show user(s) we recently targeted MAM policy to.
+  - Global administrator, which you can set up in the [Office Portal](http://portal.office.com/)
+  - Owner, which you can set up in the [Azure Portal](https://portal.azure.com/).
+  - Contributor, which you can set up in the [Azure Portal](https://portal.azure.com/).
 
-Resolution: If a user is newly targeted with a MAM policy, it can take up to 24 hours for that user to show up in reports as a targeted user.
+  Refer to [Get ready to configure mobile app management policies with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) for help  setting up these roles.
 
-**Issue:** Policy changes/updates can take up to 8 hours to apply.  
+4. **Issue:** App report does not show user(s) we recently targeted MAM policy to.
 
-Resolution: End user can log out of the app and log back in to force sync with service .  
+  **Resolution**: If a user is newly targeted with a MAM policy, it can take up to 24 hours for that user to show up in reports as a targeted user.
 
-**Issue:** MAM policy is not applying to Apple DEP devices
+5. **Issue:** Policy changes/updates can take up to 8 hours to apply.  
 
-Resolution: Please ensure you are using User Affinity with Apple Device Enrollment Program (DEP). User Affinity is required for any app that requires user authentication under DEP.
+  **Resolution**: End-user can log out of the app and log back in to force sync with service .  
+
+6. **Issue:** MAM policy is not applying to Apple DEP devices.
+
+  **Resolution**: Please ensure you are using User Affinity with Apple Device Enrollment Program (DEP). User Affinity is required for any app that requires user authentication under DEP.
 Refer to [Enroll corporate-owned Device Enrollment Program iOS devices](https://docs.microsoft.com/en-us/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) for more information on iOS DEP enrollment.
 
 ### See also
