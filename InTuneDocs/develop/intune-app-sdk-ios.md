@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Microsoft Intune App SDK for iOS developer guide | Microsoft Intune
+title: Microsoft Intune App SDK for iOS developer guide | Microsoft Docs
 description:
 keywords:
-author: Msmbaldwin
+author: mtillman
 manager: angrobe
-ms.author: oydang
-ms.date: 09/08/2016
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
