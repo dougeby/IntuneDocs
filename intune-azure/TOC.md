@@ -13,7 +13,7 @@
 <!--- ## [Get started](/intune-azure/enroll-devices/get-started) --->
 <!--- ## [Plan and design](/intune-azure/enroll-devices/plan-and-design)  --->
 ## How to
-### [Get an Apple MDM push certificate](get-an-apple-mdm-push-certificate)
+### [Get an Apple MDM push certificate](/intune-azure/enroll-devices/get-an-apple-mdm-push-certificate)
 ### [Set the MDM authority](/intune-azure/enroll-devices/set-mdm-authority)
 ### [Get an Apple DEP token](/intune-azure/enroll-devices/get-apple-dep-token)
 ### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-device-enrollment-program-devices)
