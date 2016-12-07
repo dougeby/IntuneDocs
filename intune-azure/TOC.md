@@ -86,7 +86,7 @@
 #### [Windows 10 Team](/intune-azure/configure-devices/device-restrictions-for-windows-10-team)
 
 ### [Configure email settings](/intune-azure/configure-devices/how-to-configure-email-settings)
-#### [Android](/intune-azure/configure-devices/email-profile-settings-for-android.md)
+#### [Android](/intune-azure/configure-devices/email-profile-settings-for-android)
 #### [iOS](/intune-azure/configure-devices/email-profile-settings-for-ios)
 #### [Windows Phone 8.1](/intune-azure/configure-devices/email-profile-settings-for-windows-phone-8-1)
 #### [Windows 10](/intune-azure/configure-devices/email-profile-settings-for-windows-10)
@@ -103,7 +103,7 @@
 #### [Android](/intune-azure/configure-devices/wi-fi-for-android)
 #### [iOS](/intune-azure/configure-devices/wi-fi-for-ios)
 #### [macOS](/intune-azure/configure-devices/wi-fi-for-macos)
-#### [Windows 8.1 & Windows 10](/intune-azure/configure-devices/wi-fi-for-windows-8-1)
+#### [Windows 8.1 & Windows 10](/intune-azure/configure-devices/wi-fi-import-for-windows-8-1)
 
 ### [Configure Windows 10 edition upgrade settings](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
 ### [Configure certificates](/intune-azure/configure-devices/how-to-configure-certificates)
