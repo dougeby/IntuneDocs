@@ -7,44 +7,8 @@
         ],
         "exclude": [
           "**/obj/**",
-          "Understand/**",
-          "DeployUse/**",
-          "PlanDesign/**",
           "**/includes/**"
         ]
-      },
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ],
-        "src": "DeployUse",
-        "dest": "deploy-use"
-      },
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ],
-        "src": "Understand",
-        "dest": "understand-explore"
-      },
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ],
-        "src": "PlanDesign",
-        "dest": "plan-design"
       }
     ],
     "resource": [
@@ -60,10 +24,7 @@
           ],
         "exclude": [
           "**/obj/**",
-          "_themes/**",
-          "Understand/**",
-          "DeployUse/**",
-          "PlanDesign/**"
+          "_themes/**"
         ]
       }
     ],
@@ -73,7 +34,8 @@
       "layout": "Conceptual",
       "breadcrumb_path": "/enterprise-mobility/toc.json",
       "product_feedback_displaytext" : "Intune Feedback",
-      "product_feedback_url": "https://microsoftintune.uservoice.com/"
+      "product_feedback_url": "https://microsoftintune.uservoice.com/",
+      "contributors_to_exclude": [ "herohua" ]
     }
   }
 }
