@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Microsoft Intune App SDK for iOS developer guide | Microsoft Intune
+title: Microsoft Intune App SDK for iOS developer guide | Microsoft Docs
 description:
 keywords:
-author: Msmbaldwin
+author: mtillman
 manager: angrobe
-ms.author: oydang
-ms.date: 09/08/2016
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,6 +38,8 @@ The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection 
 * You will need a Mac OS computer that runs OS X 10.8.5 or later and has the Xcode toolset version 5 or later installed.
 
 * Review the [Intune App SDK for iOS License Terms](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Print and retain a copy of the license terms for your records. By downloading and using the Intune App SDK for iOS, you agree to such license terms.  If you do not accept them, do not use the software.
+
+* Download the files for the Intune App SDK for iOS on [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios).
 
 ## What’s in the SDK
 
@@ -330,9 +332,9 @@ If the enrollment fails, the app should consider calling this API again at a fut
 
 After this API has been invoked, the app can continue functioning as normal. If the enrollment succeeds, the SDK will notify the user that an app restart is required.
 
-## Debug information
+## Status, result, and debug notifications
 
-The app can receive debug notifications about the following requests to the Intune MAM service:
+The app can receive status, result, and debug notifications about the following requests to the Intune MAM service:
 
  - Enrollment requests
  - Policy update requests
@@ -373,7 +375,7 @@ These delegate methods return an `IntuneMAMEnrollmentStatus` object that has the
 
 This object is defined in Headers/IntuneMAMEnrollmentStatus.h, along with the specific status codes that can be returned.
 
-It is important to note that no app's business logic should be based on these notifications. The idea is that the app can send this information to a telemetry service for debugging or monitoring purposes.
+
 
 
 ## Sample code
@@ -645,7 +647,7 @@ Yes, the IT admin can send a selective wipe command to the application. This wil
 
 ## Submit your app to the App Store
 
-Both the static library and framework builds of the Intune App SDK are universal binaries. This means they have code for all device and simulator architectures. Apple will reject apps submitted to the App Store if they have simulator code. When compiling against the static library for device-only builds, the linker will automatically strip out the simulator code.
+Both the static library and framework builds of the Intune App SDK are universal binaries. This means they have code for all device and simulator architectures. Apple will reject apps submitted to the App Store if they have simulator code. When compiling against the static library for device-only builds, the linker will automatically strip out the simulator code. Follow the steps below to ensure all simulator code is removed before you upload your app to the App Store.
 
 1. Make sure `IntuneMAM.framework` is on your desktop.
 
