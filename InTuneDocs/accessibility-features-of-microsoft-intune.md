@@ -6,7 +6,7 @@ description: Learn about the features of Intune that make it more accessible to 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,4 +50,3 @@ In addition to accessibility features and tools in Microsoft Windows, the follow
 |Display the actions for a selected device|Right arrow|
 > [!NOTE]
 > [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] portals are navigable using the standard Internet Explorer keyboard shortcuts.
-

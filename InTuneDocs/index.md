@@ -11,7 +11,7 @@ keywords: intune documentation, app management, device management, MDM documenta
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 10/07/2016
+ms.date: 12/7/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
@@ -22,16 +22,16 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 <article id="main">
     <section id="hero-content">
       <h1>Intune Documentation</h1>
-      <h2>Learn how to deploy and manage Microsoft Intune, a mobile device and application management service.</h2>
-      <h3>Want to manage Intune with Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Read about hybrid mobile device management &rarr;</a></h3>
+      <h2>Mobile device and app management, and PC management from the cloud. </h2>
+      <h3>Want to manage Intune with Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">Read about hybrid mobile device management &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">What's new?</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">150+ licenses? Leverage your FastTrack benefits</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Common ways to use Intune</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Protect app data</a></li>
+          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune in the Azure portal preview</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Protect access to company resources</a></li>

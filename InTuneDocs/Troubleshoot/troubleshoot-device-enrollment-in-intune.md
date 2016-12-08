@@ -4,9 +4,10 @@
 title: Troubleshoot device enrollment| Microsoft Intune
 description: Suggestions for troubleshooting device enrollment issues.
 keywords:
-author: staciebarkerms.author: staciebarker
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 11/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -16,7 +17,7 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 # optional metadata
 
 #ROBOTS:
-#audience:
+#audience:+
 #ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
@@ -34,7 +35,7 @@ This topic provides suggestions for troubleshooting device enrollment issues. If
 
 Before you begin troubleshooting, check to make sure that you've configured Intune properly to enable enrollment. You can read about those configuration requirements in:
 
--	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/gprerequisites-for-enrollment.md)
+-	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
 -	[Set up iOS and Mac device management](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -	[Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -	[Set up Windows device management](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -52,16 +53,16 @@ Your managed device users can collect enrollment and diagnostic logs for you to 
 ## General enrollment issues
 These issues may occur on all device platforms.
 
-### Device Cap reached
+### Device cap reached
 **Issue:** A user receives an error on their device during enrollment, such as a **Company Portal Temporarily Unavailable** error on an iOS device, and the DMPdownloader.log on Configuration Manager contains the error **DeviceCapReached**.
 
-**Resolution:** By design, users can enroll no more than 5 devices.
+**Resolution:**
 
 #### Check number of devices enrolled and allowed
 
-1.  Validate in the Intune admin portal that the user has no more than 5 devices assigned
+1.  Validate in the Intune admin portal that the user has no more than the allowable maximum of 15 devices assigned.
 
-2.  Check in the Intune admin portal under Admin\Mobile Device Management\Enrollment Rules that the Device enrollment limit is set to 5
+2.  Check in the Intune admin console under Admin\Mobile Device Management\Enrollment Rules that the Device enrollment limit is set to 15.
 
 Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
@@ -71,7 +72,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 1.  Browse to [http://aka.ms/accessaad](http://aka.ms/accessaad) or choose **Admin** &gt; **Azure AD** from [https://portal.office.com](https://portal.office.com).
 
-2.  Login with your Org ID using the link on the left side of the page.
+2.  Log in with your Org ID using the link on the left side of the page.
 
 3.  Create an Azure Subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).
 
@@ -91,10 +92,10 @@ Administrators can delete devices in the Azure Active Directory portal.
 >
 > A user account which is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
-### Company Portal Temporarily Unavailable
+### Company Portal emporarily Unavailable
 **Issue:** A user receives a **Company Portal Temporarily Unavailable** error on their device.
 
-#### Troubleshooting Company Portal Temporarily Unavailable error
+**Resolution:**
 
 1.  Remove the Intune Company Portal app from the device.
 
@@ -109,7 +110,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 ### MDM authority not defined
 **Issue:** A user receives an **MDM authority not defined** error.
 
-#### Troubleshooting MDM authority not defined error
+**Resolution:**
 
 1.  Verify that the MDM Authority has been set appropriately for the version of the Intune service you are using  , that is, for Intune, O365 MDM, or System Center Configuration Manager with Intune. For Intune,  the MDM Authority is set in **Admin** &gt; **Mobile Device Management**. For Configuration Manager with Intune, you set it when configuring the Intune connector, and in O365 it's a setting **Mobile Devices**.
 
@@ -159,37 +160,103 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 
 ## Android issues
+### Devices fail to check in with the Intune service and display as "Unhealthy" in the Intune admin console
+**Issue:** Some Samsung devices that are running Android versions 4.4.x and 5.x might stop checking in with the Intune service. If devices don't check in:
+
+- They can't receive policy, apps, and remote commands from the Intune service.
+- They show a Management State of **Unhealthy** in the administrator console.
+- Users who are protected by conditional access policies might lose access to corporate resources.
+
+Samsung has confirmed that the Samsung Smart Manager software, which ships on certain Samsung devices, can deactivate the Intune Company Portal and its components. When Company Portal is in a deactivated state, it can't run in the background and therefore can't contact the Intune service.
+
+**Resolution #1:**
+
+Tell your users to start the Company Portal app manually. Once the app restarts, the device checks in with the Intune service.
+
+> [!IMPORTANT]
+> Opening the Company Portal app manually is a temporary solution, because Samsung Smart Manager may deactivate the Company Portal app again.
+
+**Resolution #2:**
+
+Tell your users to try upgrading to Android 6.0. The deactivation issue doesn't occur on Android 6.0 devices. To check if an update is available, users can go to **Settings** > **About device** > **Download updates manually**, and follow the prompts on the device.
+
+**Resolution #3:**
+
+If Resolution #2 doesn't work, have your users follow these steps to make Smart Manager exclude the  Company Portal app:
+
+1. Launch the Smart Manager app on the device.
+
+  ![Select Smart Manager icon on device](./media/smart-manager-app-icon.png)
+
+2. Choose the **Battery** tile.
+
+  ![Select the Battery tile](./media/smart-manager-battery-tile.png)
+
+3. Under **App power saving** or **App optimization**, select **Detail**.
+
+  ![Select Detail under App power saving or App optimization](./media/smart-manager-app-power-saving-detail.png)
+
+4. Choose **Company Portal** from the list of apps.
+
+  ![Select Company Portal from the apps list](./media/smart-manager-company-portal.png)
+
+5. Choose **Turned off**.
+
+  ![Select Turned off from App optimization dialog](./media/smart-manager-app-optimization-turned-off.png)
+
+6. Under **App power saving** or **App optimization**, confirm that Company Portal is turned off.
+
+  ![Verify that Company Portal is turned off](./media/smart-manager-verify-comp-portal-turned-off.png)
+
+
 ### Profile installation failed
 **Issue:** A user receives a **Profile installation failed** error on an Android device.
 
-### Troubleshooting steps for failed profile installation
+**Resolution:**
 
 1.  Confirm that the user has been assigned an appropriate license for the version of the Intune service you are using.
 
 2.  Confirm that the device is not already enrolled with another MDM provider or that it does not already have a management profile installed.
 
-4.  Confirm that Chrome for Android is the default browser and that cookies are enabled.
+3.  Confirm that Chrome for Android is the default browser and that cookies are enabled.
 
 ### Android certificate issues
 
-**Issue**: User receives the following message on their device:
+**Issue**: Users receive the following message on their device:
 *You cannot sign in because your device is missing a required certificate.*
 
-**Resolution**:
+**Resolution 1**:
 
-- The user may be able to retrieve the missing certificate by following [these instructions](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
-- If the user is unable to retrieve the certificate, you may be missing intermediate certificates on your ADFS server. The intermediate certificates are required by Android to trust the server.
+- Ask your users to follow the instructions in [Your device is missing a required certificate](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). If the error still appears after users follow the instructions, try Resolution 2.
 
-You can import the certificates in to the intermediate store on the ADFS server or proxies as follows:
+**Resolution 2**:
 
-1.	On the ADFS server, launch the **Microsoft Management Console** and add the Certificates snap in for the **Computer account**.
-5.	Find the certificate that your ADFS service is using and view its parent certificate.
-6.	Copy the parent certificate and paste it under **Computer\Intermediate Certification Authorities\Certificates**.
-7.	Copy your ADFS, ADFS Decrypting, and ADFS Signing certificates and paste them in the Personal Store for the ADFS service.
-8.	Restart the ADFS servers.
+If users still see the missing certificate error after entering their corporate credentials and getting redirected for the federated login experience, an intermediate certificate may be missing from your Active Directory Federation Services (AD FS) server.
 
+The certificate error occurs because Android devices require intermediate certificates to be included in an [SSL Server hello](https://technet.microsoft.com/library/cc783349.aspx), but currently a default AD FS server or AD FS Proxy server installation sends only the AD FS’s service SSL certificate in the SSL server hello response to an SSL Client hello.
+
+To fix the issue, import the certificates into the Computers Personal Certificates on the AD FS server or proxies as follows:
+
+1.	On the ADFS and proxy servers, launch the Certificate Management console for the local computer by right-clicking the **Start** button, choosing **Run** and typing **certlm.msc**.
+2.	Expand **Personal** and select **Certificates**.
+3.	Find the certificate for your AD FS service communication (a publicly signed certificate), and double-click to view its properties.
+4.	Select the **Certification Path** tab to see the certificate’s parent certificate/s.
+5.	On each parent certificate, select **View Certificate**.
+6.	Select the **Details** tab and choose **Copy to file…**.
+7.	Follow the wizard prompts to export or save the public key of the certificate to the desired file location.
+8.	Import the parent certificates that were exported in Step 3 to Local Computer\Personal\Certificates by right-clicking **Certificates**, selecting **All Tasks** > **Import**, and then following the wizard prompts to import the certificate(s).
+9.	Restart the AD FS servers.
+10.	Repeat the above steps on all of your AD FS and proxy servers.
 The user should now be able to sign in to the Company Portal on the Android device.
 
+**To validate that the certificate installed correctly**:
+
+The follow steps describe just one of many methods and tools that you can use to validate that the certificate installed correctly.
+
+1. Go to the [free Digicert tool](ttps://www.digicert.com/help/).
+2. Enter your AD FS server’s fully qualified domain name (e.g., sts.contoso.com) and select **CHECK SERVER**.
+
+If the Server certificate is installed correctly, you see all check marks in the results. If the problem above exists, you see a red X in the "Certificate Name Matches" and the “SSL Certificate is correctly Installed” sections of the report.
 
 
 ## iOS issues
