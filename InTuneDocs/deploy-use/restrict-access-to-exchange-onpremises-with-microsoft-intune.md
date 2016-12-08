@@ -123,7 +123,6 @@ The following is supported:
 
 3.  When you're done, choose **Save**.
 
-
 -   You don't have to deploy the conditional access policy—it takes effect immediately.
 
 -   After a user sets up an Exchange ActiveSync profile, it might take from one to three hours for the device to be blocked (if it isn't managed by [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
