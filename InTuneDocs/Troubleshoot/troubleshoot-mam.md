@@ -172,7 +172,6 @@ Refer to [Enroll corporate-owned Device Enrollment Program iOS devices](https://
 
 ## Common end-user dialogs
 
-<<<<<<< HEAD
 ### MAM dialogs on iOS
 
 Dialog/Error message | Cause | Remediation |
