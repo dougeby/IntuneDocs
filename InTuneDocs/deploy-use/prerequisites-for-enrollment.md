@@ -117,7 +117,7 @@ After you save your changes, you can use the links that are provided at the bott
 
 ## Step 5: Assign user licenses
 
-You use the **Office 365 management portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts that are synchronized from your on-premises Active Directory to Azure Active Directory (Azure AD). You can [synchronize on-premises users to Azure AD](../get-started/domain-names-for-microsoft-intune.md#to-synchronize-on-premises-users-with-azure-ad).
+You use the **Office 365 management portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts that are synchronized from your on-premises Active Directory to Azure Active Directory (Azure AD). You can [synchronize on-premises users to Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Sign in to the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) by using your tenant administrator credentials.
 

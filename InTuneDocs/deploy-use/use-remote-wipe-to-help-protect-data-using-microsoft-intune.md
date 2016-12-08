@@ -29,7 +29,7 @@ ms.suite: ems
 You can wipe apps and data from Intune-managed devices that are no longer needed, are being repurposed, or have gone missing. To do this, Intune provides selective wipe and full wipe capabilities. Users can also issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
 
   > [!NOTE]
-  > This topic is only about wiping devices managed by Intune mobile device management. You can also use the [Azure portal](https://portal.azure.com) to [wipe company data from apps](wipe-managed-company-app-data-with-microsoft-intune.md). You can also [retire computers managed with the Intune client software](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md#retire-a-computer).
+  > This topic is only about wiping devices managed by Intune mobile device management. You can also use the [Azure portal](https://portal.azure.com) to [wipe company data from apps](wipe-managed-company-app-data-with-microsoft-intune.md). You can also [retire computers managed with the Intune client software](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## Full wipe
 

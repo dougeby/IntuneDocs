@@ -39,7 +39,7 @@ As an Intune admin, you can enable enrollment and management for Windows 10 Mobi
 ## Company Portal app enrollment
 You can let users install and enroll their devices by using the Intune Company Portal app. If you create DNS CNAME resource records, users connect and enroll in Intune without entering a server name.
 
-1.  **Set up Intune**<br>If you haven’t already, prepare for mobile device management by  [setting the mobile device management (MDM) authority](prerequisites-for-enrollment.md#step-2-set-mdm-authority.md) as **Microsoft Intune** and then setting up MDM.
+1.  **Set up Intune**<br>If you haven’t already, prepare for mobile device management by  [setting the mobile device management (MDM) authority](prerequisites-for-enrollment.md#step-2-set-mdm-authority) as **Microsoft Intune** and then setting up MDM.
 
 2.  **Create CNAMEs** (optional)<br>Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
 
