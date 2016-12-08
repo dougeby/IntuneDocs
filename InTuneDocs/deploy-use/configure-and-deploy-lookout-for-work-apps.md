@@ -3,8 +3,7 @@
 
 title: Deploy Lookout for Work app | Microsoft Intune
 description: Configure and deploy Lookout for Work apps for Android.
-author: karthikaramanms.author: karaman
-manager: angrobe
+author: NathBarnms.author: nathbarnmanager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod:
@@ -46,7 +45,8 @@ On the Intune Console when you click on the **Apps** you will now see the Lookou
 
 * **Step 5**: Deploy the app to users by selecting the Lookout for Work app and choosing  **Manage Deployment**.
 
-  You must select the same users added in to the Enrollment Management option in the Lookout MTP console.  See Step 3 in the [configure your subscription with Lookout MTP section](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) for information about adding user groups to Lookout MTP.
+  You must select the same users added in to the Enrollment Management option in the Lookout MTP console.  See Step 3 in the [configure your subscription with Lookout MTP section](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) for information about adding user groups to Lookout MTP.
+
   >[!IMPORTANT]
   > The Intune app deployment Wizard is not aware of the Azure AD user groups and uses the Intune user groups instead. So you must create an Intune user group based on the Azure AD user group that is enrolled in the Lookout MTP console as described in [this](plan-your-user-and-device-groups.md)topic.
 
@@ -82,7 +82,8 @@ On the Intune Console when you click on the **Apps** you will now see the Lookou
 
 * **Step 6:** **To deploy the app to users**, select the Lookout for Work app, and choose **Manage Deployment**.
 
-  You must select the same users that were added to the Enrollment Management option in the Lookout  console.  See Step 3 in the [configure your subscription with Lookout device threat protection section](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) for information about adding user groups to Lookout MTP.
+  You must select the same users that were added to the Enrollment Management option in the Lookout  console.  See Step 3 in the [configure your subscription with Lookout device threat protection section](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) for information about adding user groups to Lookout MTP.
+
 >[!IMPORTANT]
 > The Intune app deployment wizard is not aware of the Azure AD user groups and uses the Intune user groups instead, so you must create an Intune user group based on the Azure AD user group that is enrolled in the Lookout console as described in [this](plan-your-user-and-device-groups.md) topic.
 

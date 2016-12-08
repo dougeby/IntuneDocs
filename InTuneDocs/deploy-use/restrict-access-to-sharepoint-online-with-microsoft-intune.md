@@ -4,8 +4,7 @@
 title: Restrict access to SharePoint Online | Microsoft Intune
 description: Protect and control access to company data on SharePoint Online by using conditional access.
 keywords:
-author: karthikaramanms.author: karaman
-manager: angrobe
+author: andredm7ms.author: andredmmanager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
 ms.prod:

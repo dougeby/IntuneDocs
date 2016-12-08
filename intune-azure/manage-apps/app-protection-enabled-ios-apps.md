@@ -4,8 +4,7 @@
 title: iOS apps with app protection policies |Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: This topic describes what to expect when your iOS app is managed by app protection policies."
 keywords:
-author: karthikaramanms.author: karaman
-manager: angrobe
+author: NathBarnms.author: nathbarnmanager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:

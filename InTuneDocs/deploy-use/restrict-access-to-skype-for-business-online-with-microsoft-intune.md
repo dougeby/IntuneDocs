@@ -4,8 +4,7 @@
 title: Restrict access to Skype for Business Online | Microsoft Intune
 description: Protect and control access to Skype for Business Online by using conditional access.
 keywords:
-author: karthikaramanms.author: karaman
-manager: angrobe
+author: andredm7ms.author: andredmmanager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
