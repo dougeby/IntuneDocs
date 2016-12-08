@@ -28,7 +28,7 @@ ms.suite: ems
 # Troubleshoot company resource access problems with Microsoft Intune
 Use the error and status codes in this topic to help you troubleshoot problems when a Microsoft Intune action returns an error code.
 
-If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
+If this information does not solve your problem, see [How to get support for Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
 ## Status codes for MDM managed Windows devices
 
@@ -374,4 +374,4 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016346011|0x87D10065|The specified SyncML command is being carried out, but has not yet completed.|
 
 ### Next steps
-If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md).

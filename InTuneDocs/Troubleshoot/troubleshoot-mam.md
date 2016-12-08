@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot mobile application management | Microsoft Intune
+title: Troubleshoot mobile application management | Microsoft Docs
 description: This topic describes some troubleshooting tips for conditional access deployments.
 keywords:
 author: NathBarn
@@ -30,10 +30,6 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 # Troubleshoot mobile application management
 
 If you are having problems with Intune mobile application management, start here. This topic contains some common problems and questions you might have and provides solutions and answers.
-
-
-
-
 
 ## Common IT administrator issues
 
