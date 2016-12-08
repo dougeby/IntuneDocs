@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: [Validate your MAM setup | Microsoft Intune]
+title: Validate your MAM setup | Microsoft Intune
 description: This topics describes how you can test and validate if your MAM policy is set up correctly and working as expected.
 keywords:
 author: NathBarnms.author: nathbarnmanager: angerobe

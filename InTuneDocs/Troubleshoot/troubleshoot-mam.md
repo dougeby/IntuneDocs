@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [Troubleshoot mobile application management | Microsoft Intune]
-description:
+title: Troubleshoot mobile application management | Microsoft Intune
+description: This topic describes some troubleshooting tips for conditional access deployments.
 keywords:
 author: NathBarn
 ms.author: nathbarn
@@ -35,7 +35,7 @@ If you are having problems with mobile application management, start here. This 
 
 Resolution: Skype for Business must be set up for modern authentication.  Please follow instructions in [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to set up modern authentication for Skype.
 
-**Issue:** MAM without Enrollment policies are not applying to any (supported Office App)[https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners] for any user.
+**Issue:** MAM without Enrollment policies are not applying to any [supported Office App(https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) for any user.
 
 Resolution: Confirm that the user is licensed for Intune.  
 

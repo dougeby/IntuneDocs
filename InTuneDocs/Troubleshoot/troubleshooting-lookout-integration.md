@@ -44,7 +44,7 @@ You may see the following error when the Azure AD global admin user has not acce
 ![screenshot of the Lookout login screen showing sign in error](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
 To resolve this issue, the global admin user must login to  https://aad.lookout.com/les?action=consent
-and accept the prompt to initiate the setup. More detailed information can be found in  [Set up your subscription with Lookout MTP](set-up-your-subscription-with-lookout-mtp.md) topic
+and accept the prompt to initiate the setup. More detailed information can be found in  [Set up your subscription with Lookout MTP](/Intunedocs/deploy-use/set-up-your-subscription-with-lookout-mtp) topic.
 
 ## Troubleshoot device status issues
 
