@@ -92,7 +92,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 >
 > A user account which is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
-### Company Portal Temporarily Unavailable
+### Company Portal emporarily Unavailable
 **Issue:** A user receives a **Company Portal Temporarily Unavailable** error on their device.
 
 **Resolution:**
@@ -222,24 +222,41 @@ If Resolution #2 doesn't work, have your users follow these steps to make Smart 
 
 ### Android certificate issues
 
-**Issue**: User receives the following message on their device:
+**Issue**: Users receive the following message on their device:
 *You cannot sign in because your device is missing a required certificate.*
 
-**Resolution**:
+**Resolution 1**:
 
-- The user may be able to retrieve the missing certificate by following [these instructions](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
-- If the user is unable to retrieve the certificate, you may be missing intermediate certificates on your ADFS server. The intermediate certificates are required by Android to trust the server.
+- Ask your users to follow the instructions in [Your device is missing a required certificate](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). If the error still appears after users follow the instructions, try Resolution 2.
 
-You can import the certificates in to the intermediate store on the ADFS server or proxies as follows:
+**Resolution 2**:
 
-1.	On the ADFS server, launch the **Microsoft Management Console** and add the Certificates snap in for the **Computer account**.
-5.	Find the certificate that your ADFS service is using and view its parent certificate.
-6.	Copy the parent certificate and paste it under **Computer\Intermediate Certification Authorities\Certificates**.
-7.	Copy your ADFS, ADFS Decrypting, and ADFS Signing certificates and paste them in the Personal Store for the ADFS service.
-8.	Restart the ADFS servers.
+If users still see the missing certificate error after entering their corporate credentials and getting redirected for the federated login experience, an intermediate certificate may be missing from your Active Directory Federation Services (AD FS) server.
 
+The certificate error occurs because Android devices require intermediate certificates to be included in an [SSL Server hello](https://technet.microsoft.com/library/cc783349.aspx), but currently a default AD FS server or AD FS Proxy server installation sends only the AD FS’s service SSL certificate in the SSL server hello response to an SSL Client hello.
+
+To fix the issue, import the certificates into the Computers Personal Certificates on the AD FS server or proxies as follows:
+
+1.	On the ADFS and proxy servers, launch the Certificate Management console for the local computer by right-clicking the **Start** button, choosing **Run** and typing **certlm.msc**.
+2.	Expand **Personal** and select **Certificates**.
+3.	Find the certificate for your AD FS service communication (a publicly signed certificate), and double-click to view its properties.
+4.	Select the **Certification Path** tab to see the certificate’s parent certificate/s.
+5.	On each parent certificate, select **View Certificate**.
+6.	Select the **Details** tab and choose **Copy to file…**.
+7.	Follow the wizard prompts to export or save the public key of the certificate to the desired file location.
+8.	Import the parent certificates that were exported in Step 3 to Local Computer\Personal\Certificates by right-clicking **Certificates**, selecting **All Tasks** > **Import**, and then following the wizard prompts to import the certificate(s).
+9.	Restart the AD FS servers.
+10.	Repeat the above steps on all of your AD FS and proxy servers.
 The user should now be able to sign in to the Company Portal on the Android device.
 
+**To validate that the certificate installed correctly**:
+
+The follow steps describe just one of many methods and tools that you can use to validate that the certificate installed correctly.
+
+1. Go to the [free Digicert tool](ttps://www.digicert.com/help/).
+2. Enter your AD FS server’s fully qualified domain name (e.g., sts.contoso.com) and select **CHECK SERVER**.
+
+If the Server certificate is installed correctly, you see all check marks in the results. If the problem above exists, you see a red X in the "Certificate Name Matches" and the “SSL Certificate is correctly Installed” sections of the report.
 
 
 ## iOS issues

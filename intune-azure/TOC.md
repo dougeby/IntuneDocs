@@ -13,11 +13,13 @@
 <!--- ## [Get started](/intune-azure/enroll-devices/get-started) --->
 <!--- ## [Plan and design](/intune-azure/enroll-devices/plan-and-design)  --->
 ## How to
+### [Get an Apple MDM push certificate](/intune-azure/enroll-devices/get-an-apple-mdm-push-certificate)
 ### [Set the MDM authority](/intune-azure/enroll-devices/set-mdm-authority)
 ### [Get an Apple DEP token](/intune-azure/enroll-devices/get-apple-dep-token)
 ### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-device-enrollment-program-devices)
 ### [Enroll iOS devices using Setup Assistant](/intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-using-setup-assistant)
-### [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager)
+### [Enroll devices using Device Enrollment Manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager)
+### [Add Apple Configurator serial numbers](/intune-azure/enroll-devices/add-apple-configurator-serial-numbers)
 ### [Create terms and conditions](/intune-azure/enroll-devices/create-terms-and-conditions)
 ### [Set enrollment restrictions](/intune-azure/enroll-devices/set-enrollment-restrictions)
 ### [Map device groups](/intune-azure/enroll-devices/how-to-use-device-group-mapping)
@@ -31,6 +33,7 @@
 <!--- ## [Get started](/intune-azure/manage-devices/get-started)
 ## [Plan and design](/intune-azure/manage-devices/plan-and-design)
 ## [How to](/intune-azure/manage-devices/how-to)
+### [Use full or selective wipe](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune)
 ## [Troubleshoot](/intune-azure/manage-devices/troubleshooting) --->
 
 # Manage users
@@ -86,7 +89,7 @@
 #### [Windows 10 Team](/intune-azure/configure-devices/device-restrictions-for-windows-10-team)
 
 ### [Configure email settings](/intune-azure/configure-devices/how-to-configure-email-settings)
-#### [Android](/intune-azure/configure-devices/email-profile-settings-for-android.md)
+#### [Android](/intune-azure/configure-devices/email-profile-settings-for-android)
 #### [iOS](/intune-azure/configure-devices/email-profile-settings-for-ios)
 #### [Windows Phone 8.1](/intune-azure/configure-devices/email-profile-settings-for-windows-phone-8-1)
 #### [Windows 10](/intune-azure/configure-devices/email-profile-settings-for-windows-10)
@@ -103,7 +106,7 @@
 #### [Android](/intune-azure/configure-devices/wi-fi-for-android)
 #### [iOS](/intune-azure/configure-devices/wi-fi-for-ios)
 #### [macOS](/intune-azure/configure-devices/wi-fi-for-macos)
-#### [Windows 8.1 & Windows 10](/intune-azure/configure-devices/wi-fi-for-windows-8-1)
+#### [Windows 8.1 & Windows 10](/intune-azure/configure-devices/wi-fi-import-for-windows-8-1)
 
 ### [Configure Windows 10 edition upgrade settings](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
 ### [Configure certificates](/intune-azure/configure-devices/how-to-configure-certificates)
