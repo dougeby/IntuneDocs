@@ -4,8 +4,7 @@
 title: Get started on device compliance | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Use this topic to understand the prerequisites you need to create compliance policies in Microsoft Intune"
 keywords:
-author: karthikaramanms.author: karaman
-manager: angrobe
+author: NathBarnms.author: nathbarnmanager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
