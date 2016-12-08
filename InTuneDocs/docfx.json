@@ -7,20 +7,15 @@
         ],
         "exclude": [
           "**/obj/**",
-          "Understand/**",
-          "GetStarted/**",
-          "DeployUse/**",
-          "PlanDesign/**",
-          "Troubleshoot/**",
-	  "EndUser/**",
-          "**/includes/**"
+          "**/includes/**",
+          "**/old-TOC.md"
         ]
       }
     ],
     "resource": [
         {
           "files": [
-          "**/images/**", 
+          "**/images/**",
           "**/*.png",
           "**/*.jpg",
           "**/*.gif",
@@ -30,13 +25,7 @@
           ],
         "exclude": [
           "**/obj/**",
-          "_themes/**",
-          "Understand/**",
-          "GetStarted/**",
-          "DeployUse/**",
-          "PlanDesign/**",
-	  "EndUser/**",
-          "Troubleshoot/**"   
+          "_themes/**"
         ]
       }
     ],
@@ -46,7 +35,8 @@
       "layout": "Conceptual",
       "breadcrumb_path": "/enterprise-mobility/toc.json",
       "product_feedback_displaytext" : "Intune Feedback",
-      "product_feedback_url": "https://microsoftintune.uservoice.com/"
+      "product_feedback_url": "https://microsoftintune.uservoice.com/",
+      "contributors_to_exclude": [ "herohua" ]
     }
   }
 }

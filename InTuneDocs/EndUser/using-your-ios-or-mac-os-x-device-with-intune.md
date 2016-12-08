@@ -38,7 +38,7 @@ The information in this section helps users with Intune Company Portal installat
 
 - [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md)
-- [Enroll your macOS device in Intune](enroll-your-device-in-intune-mac-os-x.md)
+- [Enroll your macOS device in Intune](enroll-your-device-in-intune-macos.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
 ## Things users can do when their device is enrolled in Intune
