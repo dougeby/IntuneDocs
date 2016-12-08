@@ -53,7 +53,7 @@ If you are having problems with Intune mobile application management, start here
 
   - Global administrator, which you can set up in the [Office Portal](http://portal.office.com/)
   - Owner, which you can set up in the [Azure Portal](https://portal.azure.com/).
-  - Contributor, which you can set up in the [Azure Portal](https://portal.azure.com/).<br><br>
+  - Contributor, which you can set up in the [Azure Portal](https://portal.azure.com/).<br>
 
   Refer to [Get ready to configure mobile app management policies with Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) for help  setting up these roles.
 
