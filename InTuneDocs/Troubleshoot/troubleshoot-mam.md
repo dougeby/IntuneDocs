@@ -2,9 +2,10 @@
 # required metadata
 
 title: Troubleshoot mobile application management | Microsoft Docs
-description:
+description: This topic describes some troubleshooting tips for conditional access deployments.
 keywords:
-author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angerobe
 ms.date: 09/12/2016
 ms.topic: article

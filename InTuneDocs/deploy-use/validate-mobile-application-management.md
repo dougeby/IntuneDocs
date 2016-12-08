@@ -4,8 +4,7 @@
 title: Validate your MAM setup | Microsoft Docs
 description: This topics describes how you can test and validate if your MAM policy is set up correctly and working as expected.
 keywords:
-author: karthikaramanms.author: karaman
-manager: angerobe
+author: NathBarnms.author: nathbarnmanager: angerobe
 ms.date: 08/16/2016
 ms.topic: article
 ms.prod:

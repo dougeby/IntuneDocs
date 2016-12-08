@@ -4,8 +4,8 @@
 title: Compliance policy settings for Windows devices| Microsoft Intune
 description: This topic describes the rules and settings you can configure for a compliance policy for Windows devices.
 keywords:
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
