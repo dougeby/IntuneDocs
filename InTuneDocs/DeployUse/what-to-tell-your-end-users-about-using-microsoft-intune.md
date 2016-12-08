@@ -25,15 +25,23 @@ ms.suite: ems
 
 ---
 
-# Consider the end-user experience
+# Consider the end user experience
 
 Microsoft Intune helps you enable your workforce with mobile devices while keeping your corporate data protected. There are many steps to ensuring a successful deployment, including evaluating Intune through a [free trial](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md), [protecting your email](/Intune/Understand/common-ways-to-use-intune#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices.md), and [embedding your apps with the Intune SDK](/intune/develop/intune-app-sdk.md).
 
-None of these technologies will ensure that your users understand the importance of why you're managing their devices. In fact, many of your end users may feel as though you are infringing on their privacy - especially if you are deploying Intune as a [BYOD solution](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md). Understanding and proactively addressing your end users' concerns about why your company needs to access various permissions on their devices is critical to a successful rollout. Adoption is not just about getting the technology working and distributed throughout your workforce, but about getting your end user population to embrace the access that Intune provides them.
+None of these technologies will ensure that your users understand the importance of why you're managing their devices. In fact, many of your end users may feel as though you are infringing on their privacy - especially if you are deploying Intune as a [BYOD solution](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md).
+
+Understanding and proactively addressing your end users' concerns about why your company needs to access various permissions on their devices is critical to a successful rollout.
+
+Adoption is not just about getting the technology working and distributed throughout your workforce, but about getting your end user population to embrace the secured access that Intune provides them.
 
 ## Things to consider about your end users
 
-* Do you end users have a range of experience with technologies? Do they
+__Experience__: Your end users may have a range of experience with a variety of technology. With this experience comes a range of different feelings they could have about their devices, devices they've used with previous employers, and even technology that is unrelated to what they're using for work.
+
+__Understanding__: Users may not have a full understanding of what access you do (and do not) have to their devices and their information. Users are likely to be concerned about the potential for IT and leadership to keep track of their every move. This can be especially worrying for less experienced users, who may believe that all activity on their devices is private. A more experienced user may have specific fears stemming from "big brother" spying on their devices, and may then evangelize their concerns to coworkers.
+
+__
 
 Use the following links and information to understand the steps that your end users take to do different tasks in Intune.
 
