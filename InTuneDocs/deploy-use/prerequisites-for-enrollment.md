@@ -46,8 +46,8 @@ Looking for Intune with Configuration Manager?
 ## Step 1: Enable connections
 
 Before you enable mobile device enrollment, be sure you've done the following:
-- [Review required network URLs and ports](../get-started/network-infrastructure-requirements-for-microsoft-intune)
-- [Add and verify your domain name](../get-started/domain-names-for-microsoft-intune)
+- [Review required network URLs and ports](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
+- [Add and verify your domain name](../get-started/domain-names-for-microsoft-intune.md)
 
 ## Step 2: Set MDM authority
 The MDM authority defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
@@ -117,7 +117,7 @@ After you save your changes, you can use the links that are provided at the bott
 
 ## Step 5: Assign user licenses
 
-You use the **Office 365 management portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts that are synchronized from your on-premises Active Directory to Azure Active Directory (Azure AD). You can [synchronize on-premises users to Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
+You use the **Office 365 management portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts that are synchronized from your on-premises Active Directory to Azure Active Directory (Azure AD). You can [synchronize on-premises users to Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Sign in to the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) by using your tenant administrator credentials.
 
@@ -142,7 +142,7 @@ Set up management for the following platforms:
 - [Windows PCs and laptops](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 Mobile and Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-You can also enable [enrollment of corporate-owned devices](manage-corporate-owned-devices).
+You can also enable [enrollment of corporate-owned devices](manage-corporate-owned-devices.md).
 
 ## Step 7: Next steps
 

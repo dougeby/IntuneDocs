@@ -91,11 +91,11 @@ To integrate the Intune App SDK into your native Android app, you will need the 
 
 To build Cordova apps with the Intune App SDK Cordova Plugin, you will need the following:
 
-* **[Intune App SDK Cordova Plugin guide](intune-app-sdk-cordova)**: This document will help you build iOS and Android apps using Cordova for Intune mobile application management.
+* **[Intune App SDK Cordova Plugin guide](intune-app-sdk-cordova.md)**: This document will help you build iOS and Android apps using Cordova for Intune mobile application management.
 
 To build Xamarin apps with the Intune App SDK Xamarin Component, you will need the following:
 
-* **[Intune App SDK Xamarin Component guide](intune-app-sdk-xamarin)**: This document will help you build iOS and Android apps using Cordova for Intune mobile application management.
+* **[Intune App SDK Xamarin Component guide](intune-app-sdk-xamarin.md)**: This document will help you build iOS and Android apps using Cordova for Intune mobile application management.
 
 
 
