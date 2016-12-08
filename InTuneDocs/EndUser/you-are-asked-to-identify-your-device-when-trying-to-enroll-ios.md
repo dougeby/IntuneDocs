@@ -28,7 +28,7 @@ ms.suite: ems
 
 # You are asked to identify your device when you're trying to enroll
 
-If you are trying to enroll your iOS or Mac OS X device in Intune, and you see a screen that asks you to identify your device, at least one of your devices has already been enrolled and assigned to your account using a method other than the Company Portal app. For the Company Portal app to work correctly, you must identify if the device you're using has already been enrolled in Intune.
+If you are trying to enroll your iOS or macOS device in Intune, and you see a screen that asks you to identify your device, at least one of your devices has already been enrolled and assigned to your account using a method other than the Company Portal app. For the Company Portal app to work correctly, you must identify if the device you're using has already been enrolled in Intune.
 
 1. If you see your device in the list, tap it. If you don't see it, tap **new device**.
 2. Tap **continue.**

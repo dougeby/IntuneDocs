@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Benefits of Intune App SDK | Microsoft Intune
+title: Benefits of Intune App SDK | Microsoft Docs
 description:
 keywords:
-author: Msmbaldwin
-manager: jeffgilb
-ms.date: 09/08/2016
+author: mtillman
+manager: angrobe
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

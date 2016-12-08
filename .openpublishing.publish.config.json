@@ -4,80 +4,9 @@
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-      "docset_name": "EndUser",
-      "build_source_folder": "InTuneDocs/EndUser",
-      "build_output_subfolder": "intune/enduser",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "InTuneDocs",
+      "docset_name": "IntTestOnly",
       "build_source_folder": "InTuneDocs",
-      "build_output_subfolder": "InTuneDocs",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "IntDeployUse",
-      "build_source_folder": "InTuneDocs/DeployUse",
-      "build_output_subfolder": "intune/deploy-use",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "IntGetStarted",
-      "build_source_folder": "InTuneDocs/GetStarted",
-      "build_output_subfolder": "intune/get-started",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "IntTroubleshoot",
-      "build_source_folder": "InTuneDocs/Troubleshoot",
-      "build_output_subfolder": "troubleshoot",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "IntUnderstand",
-      "build_source_folder": "InTuneDocs/Understand",
-      "build_output_subfolder": "intune/understand-explore",
+      "build_output_subfolder": "inttestonly",
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": true,
@@ -96,6 +25,20 @@
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "InTuneDocs",
+      "build_source_folder": "InTuneDocs",
+      "build_output_subfolder": "InTuneDocs",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
