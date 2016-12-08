@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: [Troubleshoot mobile application management | Microsoft Intune]
-description:
+title: Troubleshoot mobile application management | Microsoft Intune
+description: This topic describes some troubleshooting tips for conditional access deployments.
 keywords:
-author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angerobe
 ms.author: oldang
 ms.date: 09/12/2016
@@ -36,6 +37,7 @@ If you are having problems with Intune mobile application management, start here
 
 ### MAM Basics
 
+
 1. **What is MAM?** Intune mobile application management (MAM) refers to the set of features that enable IT administrators to manage corporate mobile applications. The features include app deployment, app protection policies, and app administration.
 
 2. **What are the benefits of MAM?** MAM protects an organization's data within an application. With MAM-WE, a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in bring-your-own-device (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, are able to be managed by Intune MAM. See the official list of [Intune-enlightened apps](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) available for public use.
@@ -44,10 +46,6 @@ If you are having problems with Intune mobile application management, start here
   1. **Intune MDM + MAM**: This is the first configuration supported by MAM when it first launched. IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune standalone console at http://manage.microsoft.com.
 
   2. **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Azure portal at http://portal.azure.com.
-
-  > [!NOTE]
-  > All Intune administrative functionality will eventually migrate to the Azure Portal at http://portal.azure.com.
-
 
 ### MAM apps
 
@@ -174,6 +172,7 @@ Refer to [Enroll corporate-owned Device Enrollment Program iOS devices](https://
 
 ## Common end-user dialogs
 
+<<<<<<< HEAD
 ### MAM dialogs on iOS
 
 Dialog/Error message | Cause | Remediation |
@@ -203,6 +202,7 @@ Dialog/Error message | Cause | Remediation |
 **Device non-compliant**: This app can't be used because you are using a rooted device. Contact your IT administrator for help. | Intune detected the user is on a rooted device. | Reset the device to default factory settings.
 **Account not set up**: This app must be managed by Microsoft Intune, but your account has not been set up. Contact your IT administrator for help. | The user account does not have an Intune A Direct license. | Make sure the user's account has an Intune license assigned in the [Office portal](http://portal.office.com).
 **Unable to register the app**: This app must be managed by Microsoft Intune, but we were unable to register this app at this time. Contact your IT administrator for help. | Failure to automatically enroll the app with the MAM service when app protection policy is required. | Clear the app's data. <br><br> Send logs to Intune through the Company Portal app or file a support ticket [here](/how-to-get-support-for-microsoft-intune).
+
 
 
 

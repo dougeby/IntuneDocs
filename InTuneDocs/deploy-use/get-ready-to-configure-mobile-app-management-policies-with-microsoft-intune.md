@@ -4,8 +4,8 @@
 title: Prerequisites for MAM policies | Microsoft Intune
 description: This topic describes the prerequisites for setting up users before you create mobile app management policies.
 keywords:
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/29/2016
 ms.topic: article

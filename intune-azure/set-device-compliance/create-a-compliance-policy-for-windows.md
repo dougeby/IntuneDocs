@@ -4,8 +4,8 @@
 title: How to create a compliance policy for Windows | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to create a compliance policy for Windows devices."
 keywords:
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
