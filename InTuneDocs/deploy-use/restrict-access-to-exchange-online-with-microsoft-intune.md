@@ -26,6 +26,7 @@ ms.suite: ems
 
 ---
 
+
 # Restrict email access to Exchange Online and new Exchange Online Dedicated with Intune
 
 > [!NOTE]
