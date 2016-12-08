@@ -32,23 +32,27 @@ You can enroll devices, including Windows PCs, to enable mobile device managemen
 
 If you use Exchange ActiveSync, either on-premises or hosted in the cloud, you can enable simple Intune management without enrollment. More information is coming soon. Windows PCs can also be managed using [Intune client software](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
 
+- **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data. For more information, see [Use full or selective wipe on devices](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune).
 - **Affinity** - Associates devices with users. Required for mobile application management (MAM) and conditional access to company data. For more information, see [User affinity](enroll-ios-device-enrollment-program-devices.md).
-- **Lock** - Prevents users from removing the device from management. iOS devices require Supervised mode for Lock.
+- **Lock** - Prevents users from removing the device from management. iOS devices require Supervised mode for Lock. 
+
+
+## Overview of device enrollment methods
+
+The following table shows Intune enrollment methods and the supported capabilities and requirements of each method. The capabilities and requirements are described below.
+
 
 **iOS enrollment methods**
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | More information
-## Overview of device enrollment methods
-
-The following table shows Intune enrollment methods and the supported capabilities and requirements of each method. The capabilities and requirements are described below.
-
-- **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data.coming soon|
+|**[BYOD](#byod)** | No|	Yes |	No | More information coming soon|
 |**[DEM](#dem)**|	No |No |No	| [More information](enroll-devices-using-device-enrollment-manager.md)|
-|**[DEP](#dep)**|	Yes |	Optional |	Optional|More information to come|
+|**[DEP](#dep)**|	Yes |	Optional |	Optional|[More information](enroll-ios-device-enrollment-program-devices.md)|
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md)|
 |**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md)|
+
+
 
 **Windows enrollment methods**
 
@@ -62,7 +66,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|	Yes |	No | [More information coming soon|
-|**[DEM](#dem)**|	No |No |No	|[More information to come]|
+|**[DEM](#dem)**|	No |No |No	|[More information coming soon]|
 
 
 ## BYOD

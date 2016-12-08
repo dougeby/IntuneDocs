@@ -49,7 +49,7 @@ Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X de
 
 5.  **Tell your users how to enroll their devices to get access to company resources.**
 
-    For end-user enrollment instructions, see [Enroll your iOS device in Intune](../enduser/enroll-your-device-in-intune-ios.md) and [Enroll your Mac OS X device in Intune](../enduser/enroll-your-device-in-intune-mac-os-x.md). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
+    For end-user enrollment instructions, see [Enroll your iOS device in Intune](../enduser/enroll-your-device-in-intune-ios.md) and [Enroll your Mac OS X device in Intune](../enduser/enroll-your-device-in-intune-macos.md). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
 
 	For information about other end-user tasks, see these articles:
     - [Resources about the end-user experience with Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
