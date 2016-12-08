@@ -140,6 +140,11 @@ If you are having problems with Intune mobile application management, start here
 
 ### MAM error messages on iOS
 
+Error message | Cause | Remediation |
+--- | --- | --- |
+**App not set up**: This app has not been set up for you to use. Contact your IT administrator for help. | Failure to detect app protection policy for the app, which requires policy. |Make sure an iOS app protection policy has been targeted and deployed directly to the user's security group and this app.
+**Welcome to the Intune Managed Browser**: This app works best when managed by Microsoft Intune. You can always use this app to browse the web, and when it is managed by Intune you ga | 
+
 ### MAM error messages on Android
 
 
