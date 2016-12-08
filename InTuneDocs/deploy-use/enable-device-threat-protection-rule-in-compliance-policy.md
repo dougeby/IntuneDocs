@@ -4,7 +4,8 @@
 title: Enable device protection rule in compliance policy | Microsoft Intune
 description: Enable mobile threat protection rule in the device compliance policy.
 keywords:
-author: karthikaraman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

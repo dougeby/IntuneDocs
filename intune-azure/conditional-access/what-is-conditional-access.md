@@ -4,8 +4,7 @@
 title: What is conditional access | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Use this topic to learn about conditional access."
 keywords:
-author: karthikaramanms.author: karaman
-manager: angrobe
+author: andredm7ms.author: andredmmanager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
