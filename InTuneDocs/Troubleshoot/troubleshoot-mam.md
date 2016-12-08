@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: [Troubleshoot mobile application management | Microsoft Intune]
+title: Troubleshoot mobile application management | Microsoft Docs
 description:
 keywords:
 author: karaman
@@ -35,7 +35,7 @@ If you are having problems with mobile application management, start here. This 
 Resolution: Skype for Business must be set up for modern authentication.  Please follow instructions in [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to set up modern authentication for Skype.
 
 **Issue:** MAM without Enrollment policies are not applying to any (supported Office App)[https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners] for any user.
- 
+
 Resolution: Confirm that the user is licensed for Intune.  
 
 **Issue:** IT admin user is unable to configure MAM policies in Azure Portal
@@ -47,11 +47,11 @@ The following roles have access to the Azure Portal:
 - Owner, which you can set up in the [Azure Portal](https://portal.azure.com/).
 - Contributor, which you can set up in the [Azure Portal](https://portal.azure.com/).
 
-Refer to [Get ready to configure mobile app management policies with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) for help  setting up these roles. 
+Refer to [Get ready to configure mobile app management policies with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) for help  setting up these roles.
 
 **Issue:** App report does not show user(s) we recently targeted MAM policy to.
 
-Resolution: If a user is newly targeted with a MAM policy, it can take up to 24 hours for that user to show up in reports as a targeted user. 
+Resolution: If a user is newly targeted with a MAM policy, it can take up to 24 hours for that user to show up in reports as a targeted user.
 
 **Issue:** Policy changes/updates can take up to 8 hours to apply.  
 
@@ -65,6 +65,4 @@ Refer to [Enroll corporate-owned Device Enrollment Program iOS devices](https://
 
 ### See also
 - [Validating your mobile application management setup](https://docs.microsoft.com/en-us/intune/deploy-use/validate-mobile-application-management)
-- [Get ready to configure mobile app management policies with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) 
-
-
+- [Get ready to configure mobile app management policies with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)

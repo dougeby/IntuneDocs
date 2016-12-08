@@ -34,9 +34,9 @@ This topic explains the steps that are required to apply MAM policies for apps t
 
 ##  Step 1: Prepare the app
 
-Before you can apply MAM policies to an app, you must first wrap the app by using the Microsoft Intune App Wrapping Tool for [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) and [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool), or use the [Intune App SDK](/../develop/intune-app-sdk) to manually integrate Intune app protection features.
+Before you can apply MAM policies to an app, you must first wrap the app by using the Microsoft Intune App Wrapping Tool for [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md), or use the [Intune App SDK](../develop/intune-app-sdk.md) to manually integrate Intune app protection features.
 
-For more information on using the App Wrapping Tool vs. the SDK, see [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
+For more information on using the App Wrapping Tool vs. the SDK, see [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 ## Step 2: Add the app
 

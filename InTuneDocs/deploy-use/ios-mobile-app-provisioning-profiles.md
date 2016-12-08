@@ -55,4 +55,4 @@ After the certificate expires, you must sign the app again with a new certificat
 	- **Description** - Optionally, provide a description for the policy.
 	- **Configuration profile file** - Click **Import**, and then choose an Apple Mobile Configuration Profile file (with the extension **.mobileprovision**) that you downloaded from the Apple Developer website.
 4. When you are done, choose **Save Policy**.
-5. Now, deploy the policy to the required iOS devices. For more information, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+5. Now, deploy the policy to the required iOS devices. For more information, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).

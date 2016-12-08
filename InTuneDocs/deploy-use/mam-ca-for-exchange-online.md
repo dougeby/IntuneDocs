@@ -30,7 +30,7 @@ This topic gives you step-by-step instructions on how to set up conditional acce
 
 
 ## Create an Exchange Online policy
-1.  Sign into the [Azure portal](portal.azure.com) that includes the app access feature. If you
+1.  Sign into the [Azure portal](https://portal.azure.com) that includes the app access feature. If you
 are new to the Azure portal experience read the [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) topic.
 
 2.  Choose **Browse >Intune > Intune mobile application management blade > Settings**, and in the **conditional access** section, choose **Exchange Online**.

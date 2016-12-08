@@ -39,11 +39,11 @@ As an Intune admin, you can enable enrollment and management for Windows 10 Mobi
 ## Company Portal app enrollment
 You can let users install and enroll their devices by using the Intune Company Portal app. If you create DNS CNAME resource records, users connect and enroll in Intune without entering a server name.
 
-1.  **Set up Intune**<br>If you haven’t already, prepare for mobile device management by  [setting the mobile device management (MDM) authority](prerequisites-for-enrollment.md#set-mobile-device-management-authority) as **Microsoft Intune** and then setting up MDM.
+1.  **Set up Intune**<br>If you haven’t already, prepare for mobile device management by  [setting the mobile device management (MDM) authority](prerequisites-for-enrollment.md#step-2-set-mdm-authority.md) as **Microsoft Intune** and then setting up MDM.
 
 2.  **Create CNAMEs** (optional)<br>Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
 
-	Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, https://manage.microsoft.com. 
+	Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, https://manage.microsoft.com.
 
 	If you currently have a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com, we suggest that you replace it with a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com. This change is recommended, because the manage.microsoft.com endpoint is being deprecated for enrollments in a future release.
 
@@ -70,7 +70,7 @@ You can let users install and enroll their devices by using the Intune Company P
 
 5.  **Tell your users how to enroll their devices to get access to company resources.**
 
-	For end-user enrollment instructions, see [Enroll your Windows device in Intune](../enduser/enroll-your-device-in-intune-windows.md). You can also send users to [What can your IT administrator see when you enroll your device in Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+	For end-user enrollment instructions, see [Enroll your Windows device in Intune](../enduser/enroll-your-device-in-intune-windows.md). You can also send users to [What can your IT administrator see when you enroll your device in Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 	For information about other end-user tasks, see these articles:
     - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)

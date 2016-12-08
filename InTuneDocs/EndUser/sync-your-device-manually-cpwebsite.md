@@ -32,9 +32,9 @@ ms.suite: ems
 Sometimes installing an app or doing some other task may take longer than it normally does. If it takes too long, you can try to manually sync your device to speed up what you're trying to do.
 
 > [!Note]
-> The sync feature is not currently available for all devices. If your device is not listed, try resetting your device by turning off Wifi for roughly 30 seconds, then reconnect to your network. 
+> The sync feature is not currently available for all devices. If your device is not listed, try resetting your device by turning off Wifi for roughly 30 seconds, then reconnect to your network.
 
 * [iOS](sync-your-device-manually-ios.md)
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 desktop](sync-your-device-manually-windows.md#windows-10-desktop)
-* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-8.1)
+* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-81)

@@ -42,7 +42,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | [More information](prerequisites-for-enrollment.md#set-up-device-management)|
+|**[BYOD](#byod)** | No|	Yes |	No | [More information](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|	No |No |No	| [More information](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 |**[DEP](#dep)**|	Yes |	Optional |	Optional|[More information](ios-device-enrollment-program-in-microsoft-intune.md)|
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
@@ -52,7 +52,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Yes|	Yes |	No | [More information](prerequisites-for-enrollment.md#set-up-device-management)|
+|**[BYOD](#byod)** | Yes|	Yes |	No | [More information](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android enrollment methods**
