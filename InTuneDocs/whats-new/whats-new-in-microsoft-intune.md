@@ -32,8 +32,7 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 > All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://docs.microsoft.com/en-us/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 ## Public preview of the new Intune admin experience on Azure<!--736542-->
-
-In early calendar year 2017 we will be migrating our full admin experience onto Azure, allowing for powerful and integrated management of core EMS workflows on a modern service platform that’s extensible using Graph APIs. In advance of the general availability of this portal for all Intune tenants, we're excited to announce that we will begin rolling out a preview of this new admin experience later this month to select tenants.
+In early calendar year 2017, we will be migrating our full admin experience onto Azure, allowing for powerful and integrated management of core EMS workflows on a modern service platform that’s extensible using Graph APIs. In advance of the general availability of this portal for all Intune tenants, we're excited to announce that we will begin rolling out a preview of this new admin experience later this month to select tenants.
 
 The admin experience in the Azure portal will use the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, find out more about what we have in store for Microsoft Intune in the Azure portal in our [new documentation](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
 
