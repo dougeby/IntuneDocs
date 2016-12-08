@@ -1,12 +1,13 @@
 ---
 # required metadata
 
-title: Microsoft Intune App SDK for Android developer guide | Microsoft Intune
+title: Microsoft Intune App SDK for Android developer guide | Microsoft Docs
 description:
 keywords: SDK
-author: Msmbaldwin
-manager: jeffgilb
-ms.date: 09/08/2016
+author: mtillman
+manager: angrobe
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

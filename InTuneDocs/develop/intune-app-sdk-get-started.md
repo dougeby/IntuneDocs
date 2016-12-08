@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Get started with the Microsoft Intune App SDK | Microsoft Intune
+title: Get started with the Microsoft Intune App SDK | Microsoft Docs
 description:
 keywords:
-author: Msmbaldwin
-manager: jeffgilb
+author: mtillman
+manager: angrobe
 ms.author: oydang
-ms.date: 09/08/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

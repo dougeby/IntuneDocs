@@ -56,7 +56,7 @@ ms.suite:
 ### [Windows](enroll-your-device-in-intune-windows.md)
 ### [Android](enroll-your-device-in-intune-android.md)
 ### [iOS](enroll-your-device-in-intune-ios.md)
-### [OS X](enroll-your-device-in-intune-mac-os-x.md)
+### [OS X](enroll-your-device-in-intune-macos.md)
 ### [Win10: Phone or PC](enroll-your-w10-phone-or-w10-pc-windows.md)
 ### [Win8.1/RT8.1](enroll-your-w81-or-rt81-windows.md)
 ### [WinPhone 8.1](enroll-your-wp81-windows.md)
