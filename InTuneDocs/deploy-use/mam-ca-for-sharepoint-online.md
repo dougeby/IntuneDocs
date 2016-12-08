@@ -30,7 +30,7 @@ ms.suite: ems
 This topic gives you step-by-step instructions on how to set up conditional access for  Exchange Online to only allow mobile apps that support Intune mobile app management (MAM) policies.
 
 ## Configure a SharePoint Online policy
-**Step 1:** Sign into the [Azure portal](portal.azure.com) that includes the app access feature. If you
+**Step 1:** Sign into the [Azure portal](https://portal.azure.com) that includes the app access feature. If you
 are new to the Azure portal experience read the [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) topic.
 
 **Step 2:** Go to **Browse >Intune > Intune mobile application management blade > Settings**, and in the **conditional access** section, choose **SharePoint Online**.
