@@ -4,8 +4,7 @@
 title: Block apps with no modern authentication | Microsoft Intune
 description:
 keywords:
-author: karthikaramanms.author: karaman
-manager: angrobe
+author: andredm7ms.author: andredmmanager: angrobe
 ms.date: 10/15/2016
 ms.topic: article
 ms.prod:

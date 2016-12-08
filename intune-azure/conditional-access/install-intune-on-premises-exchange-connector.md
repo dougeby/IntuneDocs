@@ -4,8 +4,7 @@
 title: Exchange connector for On-premises EAS | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Use the Connector tool to enable communication between the Intune admin console and On-premises Exchange Server for Exchange ActiveSync MDM."
 keywords:
-author: karthikaramanms.author: karaman
-manager: angrobe
+author: andredm7ms.author: andredmmanager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
