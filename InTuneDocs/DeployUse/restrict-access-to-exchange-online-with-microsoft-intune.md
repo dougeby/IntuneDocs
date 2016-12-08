@@ -53,13 +53,13 @@ When you configure conditional access policies and target them to a user, before
 
 -  **Registered in Azure Active Directory**. This happens automatically when the device is enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
 
-  Azure Active Directory Device Registration service is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration service will not see registered devices in on-premises Active Directory.
+  The Azure Active Directory Device Registration service is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration service will not see registered devices in on-premises Active Directory.
 
 -   **Compliant** with any [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] compliance policies that are deployed to that device or domain joined to an on-premises domain.
 
 If a conditional access policy isn't met, the user sees one of the following messages when they sign in:
 
-- If the device isn't enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the company portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the record in Azure Active Directory.
+- If the device isn't enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the record in Azure Active Directory.
 
 -   If the device is evaluated as not compliant with the compliance policy rules, the user is directed to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website or the Company Portal app, where they can find information about the problem and how to remediate it.
 
@@ -79,7 +79,7 @@ You can restrict access to Exchange Online email from **Outlook** and other **ap
 
 **Modern authentication** brings sign-in based on Active Directory Authentication Library (ADAL) to Microsoft Office clients.
 
--   The ADAL-based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication).  To authenticate, a user is directed to a sign-in web page.
+-   The ADAL-based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication). To authenticate, a user is directed to a sign-in web page.
 -   This new sign-in method enables better security like **multi-factor authentication** and **certificate-based authentication**. For more detailed information, see [How modern authentication works](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). You can set up ADFS claim rules to block non-modern authentication protocols. Detailed instructions are provided in [Scenario 3: Block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
 
 You can restrict access to **Outlook Web Access (OWA)** on Exchange Online when a user accesses it from a browser on **iOS** and **Android** devices. Access is only allowed from supported browsers on compliant devices:
@@ -161,7 +161,7 @@ After you run the report, examine these four columns to determine whether a user
 Devices that are part of a targeted group are blocked from accessing Exchange unless the column values match those listed in the following table:
 
 --------------------------
-|Management channel|AAD registered|Compliant|Exchange ActiveSync ID|Resulting action|
+|Management Channel|AAD Registered|Compliant|Exchange ActiveSync ID|Resulting action|
 |----------------------|------------------|-------------|--------------------------|--------------------|
 |**Managed by Microsoft Intune and Exchange ActiveSync**|Yes|Yes|A value is displayed|Email access is allowed|
 |Any other value|No|No|No value is displayed|Email access is blocked|
@@ -169,7 +169,7 @@ Devices that are part of a targeted group are blocked from accessing Exchange un
 You can export the contents of the report and use the **Email Address** column to tell your users that they will be blocked.
 
 ### Step 3: Configure user groups for the conditional access policy
-Conditional access policies are targeted to different Azure Active Directory security groups of users. You can also exempt certain user groups from this policy. When a user is targeted by a policy, each device that they use must be compliant in order to access email.
+Conditional access policies are targeted to different Azure Active Directory security groups of users. You can also exempt certain user groups from a conditional access policy. When a user is targeted by a policy, each device that they use must be compliant in order to access email.
 
 You can configure these groups in the **Office 365 admin center** or in the **Intune account portal**.
 
@@ -177,7 +177,7 @@ You can specify two group types in each policy:
 
 -   **Targeted groups**: User groups that the policy is applied to.
 
--   **Exempted groups**: User groups that are exempt from the policy (optional)
+-   **Exempted groups**: User groups that are exempt from the policy (optional).
 
 If a user is in both groups, they are exempt from the policy.
 
@@ -188,7 +188,7 @@ Only the groups that are targeted by the conditional access policy are evaluated
 >[!NOTE]
 > You can also create a conditional access policy in the Azure AD management console. The Azure AD management console lets you create an Intune device conditional access policy (referred to as the **device-based conditional access policy** in Azure AD), in addition to other conditional access policies like multi-factor authentication.
 
->You can also set conditional access policies for third-party enterprise apps that Azure AD supports, like Salesforce and Box. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+>You can also set conditional access policies for third-party enterprise apps that Azure AD supports, like Salesforce and Box. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory-connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange Online Policy**.
@@ -204,25 +204,25 @@ Only the groups that are targeted by the conditional access policy are evaluated
 
     -   **All platforms**
 
-        This requires that any device that is used to access **Exchange  Online** is enrolled in Intune and compliant with the policies. Any client application that uses **modern authentication** is subject to the conditional access policy. If the platform is currently not supported by Intune, access to **Exchange Online** is blocked.
+        This requires that any device that is used to access **Exchange Online** is enrolled in Intune and compliant with the policies. Any client application that uses **modern authentication** is subject to the conditional access policy. If the platform is currently not supported by Intune, access to **Exchange Online** is blocked.
 
         Selecting the **All platforms** option means that Azure Active Directory applies this policy to all authentication requests, regardless of the platform that is reported by the client application. All platforms are required to enroll and become compliant, except for:
-        *	Windows devices are required to be enrolled and compliant, domain joined with on-premises Active Directory, or both.
+        *	Windows devices, which are required to be enrolled and compliant, domain joined with on-premises Active Directory, or both.
 	    * Unsupported platforms like Mac OS. However, apps that use modern authentication coming from these platforms is still blocked.
 
     -   **Specific platforms**
 
-         Conditional access policy applies to any client app that is using **modern authentication** on the device platforms that you specify.
+         The conditional access policy applies to any client app that is using **modern authentication** on the device platforms that you specify.
 
-4. Under **Outlook web access (OWA)**, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS) and Chrome (Android). Access from other browsers is blocked. The same platform restrictions that you selected for Application access for Outlook also apply here.
+4. Under **Outlook Web Access (OWA)**, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS) and Chrome (Android). Access from other browsers is blocked. The same platform restrictions that you selected for Application access for Outlook also apply here.
 
-  On **Android** devices, users must enable browser access. To do this, the user must enable the “Enable Browser Access” option on the enrolled device as follows:
+  On **Android** devices, users must enable browser access. To do this, the user must enable the **Enable Browser Access** option on the enrolled device as follows:
   1.	Open the **Company Portal app**.
   2.	Go to the **Settings** page from the ellipsis (…) or the hardware menu button.
   3.	Press the **Enable Browser Access** button.
   4.	In the Chrome browser, sign out of Office 365 and restart Chrome.
 
-  On **iOS** and **Android** platforms, to identify the device that is used to access the service, Azure Active Directory issues a transport layer security (TLS) certificate to the device. The device displays the certificate with a prompt to the user to select the certificate, as shown in the following screenshots. The user must select this certificate before they can continue to use the browser.
+  On **iOS** and **Android** platforms, to identify the device that is used to access the service, Azure Active Directory issues a Transport Layer Security (TLS) certificate to the device. The device displays the certificate with a prompt to the user to select the certificate, as shown in the following screenshots. The user must select this certificate before they can continue to use the browser.
 
   **iOS**
 
@@ -232,7 +232,7 @@ Only the groups that are targeted by the conditional access policy are evaluated
 
   ![screenshot of the certificate prompt on an Android device](../media/mdm-browser-ca-android-cert-prompt.png)
 
-5.  Under **Exchange ActiveSync apps**, you can choose to block noncompliant devices from accessing Exchange Online. You can also select whether to allow or block access to email when the device is not running a supported platform. Supported platforms include Android, iOS, Windows, and Windows Phone.
+5.  Under **Exchange ActiveSync apps**, you can choose to block noncompliant devices from accessing Exchange Online. You can also select whether to allow or block access to email when the device isn't running a supported platform. Supported platforms include Android, iOS, Windows, and Windows Phone.
 
  Exchange Active Sync apps on **Android for Work** devices:
  -  Only **Gmail** and **Nine Work** apps in the **work profile** are supported on Android for Work devices. For conditional access to work on Android for Work devices, you must deploy an email profile for the Gmail or Nine Work app, and also deploy it as a **required** installation.
@@ -245,7 +245,7 @@ Only the groups that are targeted by the conditional access policy are evaluated
     > Exchange only enforces the Exchange allow, block, and quarantine rules, and Exchange policies if:
     >
     > -   A user isn't licensed for Intune.
-    > -   A user is licensed for Intune, but the user doesn't belong to any security groups targeted in the conditional access policy.
+    > -   A user is licensed for Intune, but the user doesn't belong to any security groups that are targeted in the conditional access policy.
 
 6.  Under **Exempted Groups**, select the Active Directory security groups of users that are exempt from this policy. If a user is in both the targeted and exempted groups, they are exempt from the policy.
 
@@ -255,11 +255,11 @@ Only the groups that are targeted by the conditional access policy are evaluated
 
 -   After a user creates an email account, the device is blocked immediately.
 
--   If a blocked user enrolls the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and fixes any noncompliance issues, email access is unblocked within 2 minutes.
+-   If a blocked user enrolls the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and fixes any noncompliance issues, email access is unblocked within two minutes.
 
--   If the user un-enrolls their device, email is blocked after around 6 hours.
+-   If the user unenrolls their device, email is blocked after around six hours.
 
-**To see some example scenarios of how you would configure conditional access policy to restrict device access, see [restrict email access example scenarios](restrict-email-access-example-scenarios.md).**
+To see some **example scenarios of how you would configure a conditional access policy to restrict device access**, see [Restrict email access example scenarios](restrict-email-access-example-scenarios.md).**
 
 ## Monitor the compliance and conditional access policies
 
