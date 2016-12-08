@@ -2,82 +2,21 @@
   "build_entry_point": "docs",
   "need_generate_pdf": false,
   "need_generate_intellisense": false,
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
+    ],
+    "master": [
+      "Publish",
+      "Pdf"
+    ]
+  },
   "docsets_to_publish": [
     {
-      "docset_name": "EndUser",
-      "build_source_folder": "InTuneDocs/EndUser",
-      "build_output_subfolder": "intune/enduser",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "InTuneDocs",
+      "docset_name": "IntTestOnly",
       "build_source_folder": "InTuneDocs",
-      "build_output_subfolder": "InTuneDocs",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "IntDeployUse",
-      "build_source_folder": "InTuneDocs/DeployUse",
-      "build_output_subfolder": "intune/deploy-use",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "IntGetStarted",
-      "build_source_folder": "InTuneDocs/GetStarted",
-      "build_output_subfolder": "intune/get-started",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "IntTroubleshoot",
-      "build_source_folder": "InTuneDocs/Troubleshoot",
-      "build_output_subfolder": "troubleshoot",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "IntUnderstand",
-      "build_source_folder": "InTuneDocs/Understand",
-      "build_output_subfolder": "intune/understand-explore",
+      "build_output_subfolder": "inttestonly",
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": true,
@@ -104,9 +43,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "IntTestOnly",
+      "docset_name": "InTuneDocs",
       "build_source_folder": "InTuneDocs",
-      "build_output_subfolder": "intune/inttestonly",
+      "build_output_subfolder": "InTuneDocs",
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": true,
@@ -115,13 +54,17 @@
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "build_entry_point": "docs",
       "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [
     ""
   ],
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/IntuneDocs",
   "git_repository_branch_open_to_public_contributors": "master",
@@ -133,7 +76,12 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
     }
   ],
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": true
 }
