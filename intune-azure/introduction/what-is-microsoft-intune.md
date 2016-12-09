@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Introduction to the Microsoft Intune in the Azure portal preview | Intune Azure preview | Microsoft Docs
+title: Introduction to Microsoft Intune in the Azure portal preview | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Get the basics about Intune, and how it can help you manage your devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ ms.suite: ems
 
 Microsoft Intune is moving to the Azure portal and this means that the workflows and functionality you are used to will change.
 The new portal offers you a preview of new and updated functionality in the Azure portal where you can manage your organization's' mobile devices, PCs, and apps. 
-All Intune functionality will eventually move to Azure, but you can perform certain Intune tasks in the Azure portal today. Because this new experience is in preview, some functionality might not yet be present in the portal. Review the [What’s new in the preview](#what's-new-in-the-preview?) section for details. 
+All Intune functionality will eventually move to Azure, but you can perform certain Intune tasks in the Azure portal today. Because this new experience is in preview, some functionality might not yet be present in the portal. Review the [What’s new in the preview](#what's-new-in-the-preview) section for details. 
 
 New product documentation will be released, and continually  updated during the preview. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you
 
