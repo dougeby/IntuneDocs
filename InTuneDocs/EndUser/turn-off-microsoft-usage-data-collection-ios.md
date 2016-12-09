@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Turn off Microsoft usage data collection for iOS | Microsoft Intune
+title: Turn off Microsoft usage data collection for iOS | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

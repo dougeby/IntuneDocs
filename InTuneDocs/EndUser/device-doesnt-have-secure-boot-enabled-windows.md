@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Device doesn't have Secure Boot enabled | Microsoft Intune
+title: Device doesn't have Secure Boot enabled | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

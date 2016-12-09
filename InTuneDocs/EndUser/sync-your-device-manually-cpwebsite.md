@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sync your device manually by using the Company Portal website | Microsoft Intune
+title: Sync your device manually by using the Company Portal website | Microsoft Docs
 description:
 keywords:
 author: barlanmsft

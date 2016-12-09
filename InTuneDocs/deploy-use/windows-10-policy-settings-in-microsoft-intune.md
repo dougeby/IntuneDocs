@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows 10 policy settings | Microsoft Intune
+title: Windows 10 policy settings | Microsoft Docs
 description: Use the policy settings listed in this topic to help you configure built-in and custom settings for enrolled Windows 10 desktop and Windows 10 Mobile devices.
 keywords:
 author: robstackmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Encrypt your device | Microsoft Intune
+title: Encrypt your device | Microsoft Docs
 description: Describes how to encrypt an Android device
 keywords:
 author: barlanmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Terms of Delegated Administration for Microsoft Intune | Microsoft Intune
+title: Terms of Delegated Administration for Microsoft Intune | Microsoft Docs
 description:
 keywords:
 author: barlanmsft

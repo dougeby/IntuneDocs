@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage Windows Store for Business apps | Microsoft Intune
+title: Manage Windows Store for Business apps | Microsoft Docs
 description: Connect Microsoft Intune to the Windows Store for Business if you want to manage and deploy volume-purchased apps from the Intune console
 keywords:
 author: robstackmsftms.author: robstack

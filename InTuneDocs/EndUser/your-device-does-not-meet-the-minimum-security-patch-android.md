@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Your device does not meet the minimum security patch | Microsoft Intune
+title: Your device does not meet the minimum security patch | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

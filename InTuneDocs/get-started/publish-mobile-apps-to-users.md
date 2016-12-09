@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Publish mobile apps to your users | Microsoft Intune
+title: Publish mobile apps to your users | Microsoft Docs
 description:
 keywords:
 author: jeffgilbms.author: jeffgilb

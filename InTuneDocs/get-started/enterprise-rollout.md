@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enterprise rollout | Microsoft Intune
+title: Enterprise rollout | Microsoft Docs
 description: Recommendations for the rollout phase of an Intune deployment.
 keywords:
 author: Nbigmanms.author: nbigman

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install a new version of the Company Portal app | Microsoft Intune
+title: Install a new version of the Company Portal app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

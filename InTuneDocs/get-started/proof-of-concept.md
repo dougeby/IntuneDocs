@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Proof of concept | Microsoft Intune
+title: Proof of concept | Microsoft Docs
 description: Recommendations for the proof of concept phase of an Intune deployment.
 keywords:
 author: Nbigmanms.author: nbigman

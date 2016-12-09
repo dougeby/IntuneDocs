@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a device compliance policy | Microsoft Intune
+title: Create a device compliance policy | Microsoft Docs
 description: Create a compliance policy to help secure mobile devices and PCs used to access your company data.
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe
