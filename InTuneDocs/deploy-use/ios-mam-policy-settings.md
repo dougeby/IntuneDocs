@@ -35,7 +35,7 @@ There are two categories of policy settings: data relocation settings and access
 
 - **Prevent iTunes and iCloud backups**: Choose **Yes** to disable, or choose **No** to allow backup of company data from policy-managed apps.
 
-  Default value = **Yes**.
+  Default value = **Yes**
 
 - **Allow app to transfer data to other apps**: Choose one of the options to indicate the apps that can receive data from policy-managed apps:
   - **Policy managed apps**: Allow transfer to only apps that have the MAM policy.
@@ -47,18 +47,18 @@ There are two categories of policy settings: data relocation settings and access
   >[!NOTE]
   >This setting does not control use of the Open In feature on mobile devices. To manage Open In, see [Manage data transfer between iOS apps with Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
 
-  Default value = **Policy managed apps**.
+  Default value = **All apps**
 
 - **Allow app to receive data from other apps**: Specify apps that are allowed to transfer data to the policy-managed apps:
   -  **Policy managed apps**: Allow data transfers only from other policy-managed apps.
   -  **All apps**: Allow data transfer from any app.
   -  **None**: Do not allow data transfer from any app.
 
-  Default value = **All apps**.
+  Default value = **All apps**
 
 - **Prevent Save As**: Choose **Yes** to disable the use of the Save As option in any app that uses this policy. Choose **No** if you want to allow the use of Save As.
 
-  Default value = **Yes**.
+  Default value = **No**
 
 - **Restrict cut, copy and paste with other apps**: Specify when cut, copy, and paste actions should be restricted. Choose from:
   -   **Blocked**: Do not allow cut, copy, and paste actions between policy-managed apps.
@@ -66,7 +66,7 @@ There are two categories of policy settings: data relocation settings and access
   -   **Policy managed apps with paste in**: Allow cut or copy between policy-managed apps. Allow cut or copied data from any app to be pasted into this app.
   - **Any app**: There are no restrictions for cut, copy, and paste actions between any apps.
 
-  Default value = **Policy managed apps with paste in**.
+  Default value = **Any app**
 
 - **Restrict web content to display in the Managed Browser**: When this setting is enabled, any links in the app will be opened in the Managed Browser app.
 
@@ -74,7 +74,7 @@ There are two categories of policy settings: data relocation settings and access
 
   If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
-  Default value = **Yes**.
+  Default value = **No**
 
 - **Encrypt app data**: For apps that are associated with an Intune MAM policy, data is encrypted at rest through device-level encryption provided by the OS. When a PIN is required, the data is encrypted according to the settings in the MAM policy. As stated in Apple documentation, [the modules that iOS 7 uses are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).
 
@@ -85,16 +85,16 @@ There are two categories of policy settings: data relocation settings and access
   -   **Use device settings**: App data is encrypted based on the default settings on the device.
   When you enable this setting, the user is required to set up and use a PIN to access their device.  If there is no PIN, the apps will not open and the user will be prompted to set a PIN with the message “Your company has required that you must first enable a device PIN to access this application.”
 
-  Default value = Encryption option is not selected.
+  Default value = **When device is locked**
 - **Disable contact sync**: Choose **Yes** to prevent contact information from syncing to the native address book app on the device. If you choose **No**, the app will save the contact information to the native address book app on the device.
 
   When you do a selective wipe to remove company data, contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this applies only to the Microsoft Outlook app.
 
-  Default value = **Yes**.
+  Default value = **No**
 
 - **Disable printing**: Choose **Yes** to prevent printing company data from apps that are associated with the MAM policy.
 
-    Default value = **Yes**.
+    Default value = **No**
 
 ##  Access settings
 
