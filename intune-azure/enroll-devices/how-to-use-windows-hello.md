@@ -54,7 +54,7 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
 
 ## Create a Windows Hello for Business policy
 
-1.  In the **Enroll devices** workload, choose **Manage** > **Windows Hello for Business**.
+1.  In the **Enroll devices** blade, choose **Manage** > **Windows Hello for Business**.
 2.  On the blade that opens, choose the **Default** settings.
 3.  On the **All Users** blade, click **Properties** and then:
 	- 	Enter a **Name**, and optional **Description** for the Windows Hello for Business settings.
