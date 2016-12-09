@@ -54,15 +54,15 @@ Assuaging these user concerns will make your deployment smoother. We have a list
 
 * __Be resourceful.__ The Intune documentation has a variety of content to help your end users figure out how to do certain tasks, like enrolling and troubleshooting their devices. Among these are articles that users are sent to from the Company Portal, which are divided into sections about Company Portal app installation and Intune enrollment, general tasks that users can do on their devices, and troubleshooting.
 
- - [Using your Android device with Intune](/Intune/EndUser/using-your-android-device-with-intune)
- - [Using your iOS or macOS device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
- - [Using your Windows device with Intune](/Intune/EndUser/using-your-windows-device-with-intune)
- - [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website)
+  - [Using your Android device with Intune](/Intune/EndUser/using-your-android-device-with-intune)
+  - [Using your iOS or macOS device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+  - [Using your Windows device with Intune](/Intune/EndUser/using-your-windows-device-with-intune)
+  - [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website)
 
 * __Be aware.__ Your end user experience will impact your productivity, and understanding their experience will make it easier for you to troubleshoot their problems when they come to you. Understanding how end users get their apps can make it much easier for you to diagnose what issues they're experiencing, and can help you fix their problems faster.
 
- - [Android](how-your-android-users-get-their-apps.md)
- - [iOS](how-your-ios-users-get-their-apps.md)
- - [Windows](how-your-windows-users-get-their-apps.md)
+  - [Android](how-your-android-users-get-their-apps.md)
+  - [iOS](how-your-ios-users-get-their-apps.md)
+  - [Windows](how-your-windows-users-get-their-apps.md)
 
 * __Be forthcoming.__ Clearly tell your users what you're going to manage on their devices. Tell them what kind of data you're collecting and why you're collecting it. Tell them how you're planning to use this functionality. You're trying to combine trust with well-crafted compliance policies to make sure that end users know that even if you *could* look at certain types of personal data, that you don't *want* to, and the liability that you could incur for invading their privacy. Crafting a statement with your legal and HR departments can help with particularly difficult employees. 
