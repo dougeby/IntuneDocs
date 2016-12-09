@@ -4,8 +4,7 @@
 title: How to create an Exchange on-premises conditional access policy | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: This topic describes how you can configure Exchange on-premises conditional access in Intune."
 keywords:
-author: karthikaramanms.author: karaman
-manager: angrobe
+author: andredm7ms.author: andredmmanager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:

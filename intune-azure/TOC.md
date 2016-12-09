@@ -30,11 +30,11 @@
 
 # Manage devices
 ## [What is device management?](/intune-azure/manage-devices/what-is)
-<!--- ## [Get started](/intune-azure/manage-devices/get-started)
-## [Plan and design](/intune-azure/manage-devices/plan-and-design)
+<!--- ## [Get started](/intune-azure/manage-devices/get-started) --->
+<!--- ## [Plan and design](/intune-azure/manage-devices/plan-and-design) --->
 ## [How to](/intune-azure/manage-devices/how-to)
 ### [Use full or selective wipe](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune)
-## [Troubleshoot](/intune-azure/manage-devices/troubleshooting) --->
+<!--- ## [Troubleshoot](/intune-azure/manage-devices/troubleshooting) --->
 
 # Manage users
 ## [What is user management?](/intune-azure/manage-users/what-is)
@@ -128,6 +128,7 @@
 
 ### [Assign device profiles](/intune-azure/configure-devices/how-to-assign-device-profiles)
 ### [Monitor device profiles](/intune-azure/configure-devices/how-to-monitor-device-profiles)
+### [Set up a telecom expense management service](/intune-azure/configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune)
 <!-- ## [Troubleshoot](/intune-azure/configure-devices/troubleshooting) -->
 
 # Set device compliance

@@ -4,7 +4,7 @@
 title: Compliance policy settings for Android for Work | Microsoft Intune
 description: This topic describes the device compliance policy settings for Android devices that are compatible with Android for Work.
 keywords:
-author: karthikaramanms.author: karaman
+author: andredm7ms.author: andredm
 manager: angrobe
 ms.date: 11/13/2016
 ms.topic: article
