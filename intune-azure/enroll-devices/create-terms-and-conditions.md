@@ -35,7 +35,7 @@ You can create and deploy multiple policies containing different terms and condi
 
 **To create terms and conditions**:
 
-1. In the **Enrollment** workload, choose **Terms and Conditions**.
+1. In the **Enrollment** blade, choose **Terms and Conditions**.
 
 2. Select **Create**.
 

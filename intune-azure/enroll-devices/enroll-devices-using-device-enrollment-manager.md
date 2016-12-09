@@ -65,7 +65,7 @@ Device enrollment manager accounts are user accounts with permission to enroll l
 
 ## Add a device enrollment manager
 
-1.  In the **Enrollment** workload, choose **Device Enrollment Managers**.
+1.  In the **Enrollment** blade, choose **Device Enrollment Managers**.
 
 2.  Select **Add**.
 
@@ -87,13 +87,13 @@ Deleting a device enrollment manager does not affect enrolled devices. When a de
 
 **To remove a device enrollment manager**:
 
-1.  In the **Enrollment** workload, choose **Device Enrollment Managers**.
+1.  In the **Enrollment** blade, choose **Device Enrollment Managers**.
 
 2. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Remove**.
 
 ## View the properties of a device enrollment manager
 
-1. In the **Enrollment** workload, choose **Device Enrollment Managers**.
+1. In the **Enrollment** blade, choose **Device Enrollment Managers**.
 
 2. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Properties**.
 
