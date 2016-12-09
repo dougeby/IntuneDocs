@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a work profile and enroll your device in Intune | Microsoft Intune
+title: Create a work profile and enroll your device in Intune | Microsoft Docs
 description: Describes how to encrypt an Android device
 keywords:
 author: barlanmsftms.author: barlan

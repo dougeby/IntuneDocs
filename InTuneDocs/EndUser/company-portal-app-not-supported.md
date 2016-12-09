@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Update your Company Portal app | Microsoft Intune
+title: Update your Company Portal app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wi-Fi connections | Microsoft Intune
+title: Wi-Fi connections | Microsoft Docs
 description: Use Wi-Fi profiles to help users connect to your Wi-Fi networks.
 keywords:
 author: robstackmsft

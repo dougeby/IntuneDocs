@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sync your iOS device manually | Microsoft Intune
+title: Sync your iOS device manually | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

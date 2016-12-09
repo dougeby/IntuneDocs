@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Understand operations by using reports | Microsoft Intune
+title: Understand operations by using reports | Microsoft Docs
 description: Create and manage reports about software, hardware, and software licenses in your organization.
 
 keywords:

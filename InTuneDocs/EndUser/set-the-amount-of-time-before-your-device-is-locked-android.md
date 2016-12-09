@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set the amount of time before your device is locked | Microsoft Intune
+title: Set the amount of time before your device is locked | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

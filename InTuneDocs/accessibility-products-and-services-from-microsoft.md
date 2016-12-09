@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Accessibility Products and Services from Microsoft | Microsoft Intune
+title: Accessibility Products and Services from Microsoft | Microsoft Docs
 description:
 keywords:
 author:

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wrap Android apps with App Wrapping Tool | Microsoft Intune
+title: Wrap Android apps with App Wrapping Tool | Microsoft Docs
 description: Use the information in this article to learn how to wrap your Android apps without changing the code of the app itself. Prepare the apps so you can apply mobile app management policies.
 keywords:
 author: mtillmanms.author: mtillmanmanager: angrobe

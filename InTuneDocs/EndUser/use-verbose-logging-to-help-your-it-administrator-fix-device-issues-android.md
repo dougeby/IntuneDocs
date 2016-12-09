@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use Verbose Logging to help your IT admin fix device issues | Microsoft Intune
+title: Use Verbose Logging to help your IT admin fix device issues | Microsoft Docs
 description: Help your IT admin fix device issues by using verbose logging
 keywords:
 author: barlanmsftms.author: barlan

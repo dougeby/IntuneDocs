@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add users and grant permissions | Microsoft Intune
+title: Add users and grant permissions | Microsoft Docs
 description:  Synchronize on-premises users with Azure AD and grant administrator permissions for your Intune subscription
 keywords:
 author: nathbarnms.author: nathbarn

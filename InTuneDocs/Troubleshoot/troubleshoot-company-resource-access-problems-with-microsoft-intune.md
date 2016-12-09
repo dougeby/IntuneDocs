@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot company resource access problems | Microsoft Intune
+title: Troubleshoot company resource access problems | Microsoft Docs
 description: Error and status codes in this topic to help you troubleshoot resource access problems.
 keywords:
 author: robstackmsftms.author: robstack

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Remove your device from the Company Portal | Microsoft Intune
+title: Remove your device from the Company Portal | Microsoft Docs
 description: Remove a device from the Company Portal
 keywords:
 author: barlanmsftms.author: barlan

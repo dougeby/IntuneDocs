@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to reconnect a compromised iOS device | Microsoft Intune
+title: How to reconnect a compromised iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

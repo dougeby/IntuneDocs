@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wipe managed company app data | Microsoft Intune
+title: Wipe managed company app data | Microsoft Docs
 description: Learn how you can selectively remove company data from devices remotely.
 keywords:
 author: NathBarnms.author: nathbarnmanager: angrobe

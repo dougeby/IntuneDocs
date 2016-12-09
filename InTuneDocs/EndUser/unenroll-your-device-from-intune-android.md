@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Unenroll your Android device from Intune | Microsoft Intune
+title: Unenroll your Android device from Intune | Microsoft Docs
 description: Describes how to unenroll an Android device from Intune
 keywords:
 author: barlanmsftms.author: barlan

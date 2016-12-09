@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Android and Samsung KNOX Standard policy settings | Microsoft Intune
+title: Android and Samsung KNOX Standard policy settings | Microsoft Docs
 description: Create policies that control settings and features on Android devices that you manage with Intune.
 keywords:
 author: robstackmsft

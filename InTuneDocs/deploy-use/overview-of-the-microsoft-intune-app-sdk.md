@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview of the Microsoft Intune App SDK | Microsoft Intune
+title: Overview of the Microsoft Intune App SDK | Microsoft Docs
 description:
 keywords:
 author: Msmbaldwin

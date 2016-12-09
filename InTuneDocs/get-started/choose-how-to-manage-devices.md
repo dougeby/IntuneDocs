@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Choose how to manage devices | Microsoft Intune
+title: Choose how to manage devices | Microsoft Docs
 description: Learn about the various ways you can enroll and manage devices.
 keywords:
 author: nathbarnms.author: nathbarn

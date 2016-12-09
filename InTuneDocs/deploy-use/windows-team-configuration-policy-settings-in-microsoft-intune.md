@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows Team configuration policy settings| Microsoft Intune
+title: Windows Team configuration policy settings| Microsoft Docs
 description: Use the Microsoft Intune **Windows 10 Team general configuration policy** to configure settings for enrolled Windows 10 Team devices such as the Microsoft Surface Hub.
 keywords:
 author: robstackmsftms.author: robstack

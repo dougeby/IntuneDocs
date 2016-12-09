@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: View hardware and software inventory for Windows PCs | Microsoft Intune
+title: View hardware and software inventory for Windows PCs | Microsoft Docs
 description: How to view hardware and software information about Windows PCs that you manage with Intune.
 keywords:
 author: staciebarkerms.author: stabar
