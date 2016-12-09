@@ -40,11 +40,11 @@ In a text editor, the .csv list looks something like this:
 
 **To add a .csv list of corporate identifiers**
 
-1. In the **Enrollment** workload, choose **Corporate Device Identifiers**.
+1. In the **Enrollment** blade, choose **Corporate Device Identifiers**.
 2. If you are importing a file with new details that will overwrite the existing ones, select **Overwrite details for existing identifiers** to have the new details replace the existing details.
 3. Navigate to the IMEI CSV file, and select **Add**.
 
 **To delete a .csv list of corporate identifiers**
 
-1. In the **Enrollment** workload, choose **Corporate Device Identifiers**.
+1. In the **Enrollment** blade, choose **Corporate Device Identifiers**.
 2. Choose **Delete**.
