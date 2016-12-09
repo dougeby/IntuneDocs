@@ -30,11 +30,11 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use these steps to add serial numbers to Intune when you are enrolling corporate-owned iOS devices using Apple Configurator running on a Mac computer. This process resets the device to factory settings and prepares it to run Setup Assistant, installing the company's policies for the device’s new user. For more details about using enrolling iOS devices by using Apple Configurator, see _______________________.
+Use these steps to add serial numbers to Intune when you are enrolling corporate-owned iOS devices using Apple Configurator running on a Mac computer. This process resets the device to factory settings and prepares it to run Setup Assistant, installing the company's policies for the device’s new user. For more details about using enrolling iOS devices by using Apple Configurator, see [Enroll iOS devices with Apple Configurator](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md).
 
 ## Prerequisites
 
-- [Enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md)
+You must [enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md) before adding Apple Configurator serial numbers to Intune.
 
 **To add Apple Configurator serial numbers to Intune:**
 
@@ -43,7 +43,7 @@ Use these steps to add serial numbers to Intune when you are enrolling corporate
 	01 234567 890123,device details</br>
 	02 234567 890123,device details
 
-2. In the Azure portal **Enrollment** workload, choose **Apple Enrollment**.
+2. In the Azure portal **Enrollment** blade, choose **Apple Enrollment**.
 
 3. Under **Manage Apple Configurator Enrollment Settings**, select **Apple Configurator Serial Numbers**.
 
