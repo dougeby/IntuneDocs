@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Restrict email access to Exchange Online | Microsoft Intune
+title: Restrict email access to Exchange Online | Microsoft Docs
 description: Protect and control access to company email on Exchange Online with conditional access.
 keywords:
 author: andredm7

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prerequisites for MAM policies | Microsoft Intune
+title: Prerequisites for MAM policies | Microsoft Docs
 description: This topic describes the prerequisites for setting up users before you create mobile app management policies.
 keywords:
 author: NathBarn

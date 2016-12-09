@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Rename your device from the Company Portal website | Microsoft Intune
+title: Rename your device from the Company Portal website | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot device enrollment| Microsoft Intune
+title: Troubleshoot device enrollment| Microsoft Docs
 description: Suggestions for troubleshooting device enrollment issues.
 keywords:
 author: staciebarker

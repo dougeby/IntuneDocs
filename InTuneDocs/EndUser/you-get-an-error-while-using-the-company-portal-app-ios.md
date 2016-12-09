@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: You get an error while using the Company Portal app | Microsoft Intune
+title: You get an error while using the Company Portal app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

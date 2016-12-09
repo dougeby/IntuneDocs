@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Error evaluating device | Microsoft Intune
+title: Error evaluating device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

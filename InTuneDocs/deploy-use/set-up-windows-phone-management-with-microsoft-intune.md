@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Windows 10 Mobile and Windows Phone management | Microsoft Intune
+title: Set up Windows 10 Mobile and Windows Phone management | Microsoft Docs
 description: Enable mobile device management (MDM) for Windows 10 Mobile or Windows Phone devices with Microsoft Intune.
 keywords:
 author: staciebarker

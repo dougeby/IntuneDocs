@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll your Windows 10 device in Intune | Microsoft Intune
+title: Enroll your Windows 10 device in Intune | Microsoft Docs
 description: Enroll a Windows 10 1607 device into Intune
 keywords:
 author: barlanmsft

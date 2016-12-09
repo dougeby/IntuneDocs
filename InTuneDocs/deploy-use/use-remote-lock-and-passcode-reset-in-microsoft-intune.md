@@ -1,5 +1,5 @@
 ---
-title: Remote lock and passcode reset | Microsoft Intune
+title: Remote lock and passcode reset | Microsoft Docs
 description: Intune provides both remote lock and passcode reset capabilities.
 keywords:
 author: staciebarkerms.author: staciebarker

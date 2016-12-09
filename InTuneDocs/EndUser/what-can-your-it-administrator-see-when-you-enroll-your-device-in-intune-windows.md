@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What can your IT administrator see when you enroll your device in Intune? | Microsoft Intune
+title: What can your IT administrator see when you enroll your device in Intune? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

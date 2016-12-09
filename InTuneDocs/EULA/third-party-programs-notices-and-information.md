@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Third-Party Program Notices and Information | Microsoft Intune
+title: Third-Party Program Notices and Information | Microsoft Docs
 description: Third-Party Program Notices and Information for Microsoft Intune
 keywords:
 author: barlanmsft

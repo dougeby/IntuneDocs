@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: iOS MAM policy settings | Microsoft Intune
+title: iOS MAM policy settings | Microsoft Docs
 description: This topic describes the mobile app management policy settings for iOS devices.
 keywords:
 author: NathBarn

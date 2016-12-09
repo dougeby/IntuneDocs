@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot app deployment problems | Microsoft Intune
+title: Troubleshoot app deployment problems | Microsoft Docs
 description: This topic helps you solve app deployment problems with Microsoft Intune.
 keywords:
 author: robstackmsftms.author: robstack
