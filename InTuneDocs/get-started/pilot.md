@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Pilot | Microsoft Intune
+title: Pilot | Microsoft Docs
 description: Recommendations for the pilot phase of an Intune deployment.
 keywords:
 author: Nbigmanms.author: nbigman

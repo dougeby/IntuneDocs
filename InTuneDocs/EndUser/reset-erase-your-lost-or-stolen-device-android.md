@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Check compliance on your Android device | Microsoft Intune
+title: Check compliance on your Android device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

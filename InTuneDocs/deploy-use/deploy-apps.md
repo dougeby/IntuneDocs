@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy apps | Microsoft Intune
+title: Deploy apps | Microsoft Docs
 description: This topic explains concepts you'll need to understand before you start deploying apps with Intune.
 keywords:
 author: robstackmsftms.author: robstack

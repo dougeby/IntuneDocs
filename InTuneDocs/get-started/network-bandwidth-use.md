@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune network bandwidth use | Microsoft Intune
+title: Intune network bandwidth use | Microsoft Docs
 description: intune network bandwidth usage
 keywords:
 author: nathbarnms.author: nathbarn

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: VPN connections | Microsoft Intune
+title: VPN connections | Microsoft Docs
 description: Use VPN profiles to deploy VPN settings to users and devices in your organization.
 keywords:
 author: robstackmsft

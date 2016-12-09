@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install your company's Virtual Private Network (VPN) | Microsoft Intune
+title: Install your company's Virtual Private Network (VPN) | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

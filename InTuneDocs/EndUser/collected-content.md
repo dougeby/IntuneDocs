@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Collected Content | Microsoft Intune
+title: Collected Content | Microsoft Docs
 description:
 keywords:
 author: barlanmsft

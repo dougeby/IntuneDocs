@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Restrict access to Skype for Business Online | Microsoft Intune
+title: Restrict access to Skype for Business Online | Microsoft Docs
 description: Protect and control access to Skype for Business Online by using conditional access.
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: App based conditional access to 0365 | Microsoft Intune
+title: App based conditional access to 0365 | Microsoft Docs
 description: Understand the concepts of how MAM CA can help with controlling what apps have access to O365 services.
 keywords:
 author: andredm7

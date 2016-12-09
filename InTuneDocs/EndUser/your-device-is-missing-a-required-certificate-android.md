@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Your device is missing a required certificate | Microsoft Intune
+title: Your device is missing a required certificate | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

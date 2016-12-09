@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reset your device passcode from the Company Portal website | Microsoft Intune
+title: Reset your device passcode from the Company Portal website | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

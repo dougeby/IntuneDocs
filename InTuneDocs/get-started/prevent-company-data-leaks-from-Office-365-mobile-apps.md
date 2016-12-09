@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prevent company data leaks from Office 365 mobile apps  | Microsoft Intune
+title: Prevent company data leaks from Office 365 mobile apps  | Microsoft Docs
 description: Use Intune to secure your organization’s data with mobile app management (MAM) policies that help prevent company data leaks from Office 365 mobile apps or other line of business (LOB) apps.
 keywords:
 author: jeffgilbms.author: jeffgilb

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Collect device logs| Microsoft Intune
+title: Collect device logs| Microsoft Docs
 description: Learn how to collect logs from your managed devices.
 keywords:
 author: staciebarkerms.author: staciebarker

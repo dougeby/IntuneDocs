@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens if you unenroll your Android device from Intune? | Microsoft Intune
+title: What happens if you unenroll your Android device from Intune? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot Endpoint Protection | Microsoft Intune
+title: Troubleshoot Endpoint Protection | Microsoft Docs
 description: Solve problems while using Microsoft Intune endpoint protection.
 keywords:
 author: staciebarkerms.author: stabar

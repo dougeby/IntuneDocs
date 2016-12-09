@@ -2,7 +2,7 @@
 ---
 # required metadata
 
-title: General troubleshooting tips | Microsoft Intune
+title: General troubleshooting tips | Microsoft Docs
 description: General resources to help resolve issues with Intune.
 keywords:
 author: staciebarker
