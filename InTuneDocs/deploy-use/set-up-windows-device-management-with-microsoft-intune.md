@@ -70,7 +70,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
 	For end-user enrollment instructions, see [Enroll your Windows device in Intune](../enduser/enroll-your-device-in-intune-windows.md).
 
 	For more information about end-user tasks, see these articles:
-      - [Resources about the end-user experience with Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+      - [Resources about the end-user experience with Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
       - [End user guidance for Windows devices](../enduser/using-your-windows-device-with-intune.md)
 
 ### See also

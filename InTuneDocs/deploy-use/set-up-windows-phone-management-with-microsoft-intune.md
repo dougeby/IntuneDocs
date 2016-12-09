@@ -73,7 +73,7 @@ You can let users install and enroll their devices by using the Intune Company P
 	For end-user enrollment instructions, see [Enroll your Windows device in Intune](../enduser/enroll-your-device-in-intune-windows.md). You can also send users to [What can your IT administrator see when you enroll your device in Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 	For information about other end-user tasks, see these articles:
-    - [What to tell your end users about using Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    - [What to tell your end users about using Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
     - [End user guidance for Windows devices](../enduser/using-your-windows-device-with-intune.md)
 
 No additional work is required unless you will deploy the Company Portal to devices.  Steps 2 and 3 in the admin console can be safely ignored.

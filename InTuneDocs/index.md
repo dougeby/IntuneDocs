@@ -138,7 +138,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
+                  <a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">
                     <h3>What to tell your end users</h3>
                     <p>Understand the steps your end users need to perform to use their devices with Intune and share this information with end users to help them complete tasks on their own.</p>
                   </a>
