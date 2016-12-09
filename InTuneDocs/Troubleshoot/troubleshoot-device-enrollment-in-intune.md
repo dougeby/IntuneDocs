@@ -92,7 +92,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 >
 > A user account which is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
-### Company Portal emporarily Unavailable
+### Company Portal Temporarily Unavailable
 **Issue:** A user receives a **Company Portal Temporarily Unavailable** error on their device.
 
 **Resolution:**
