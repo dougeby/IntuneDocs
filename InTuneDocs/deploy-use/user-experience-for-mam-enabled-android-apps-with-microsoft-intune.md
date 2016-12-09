@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Android apps with MAM policies | Microsoft Intune
+title: Android apps with MAM policies | Microsoft Docs
 description: This topic describes what to expect when your app is managed by mobile app management policies.
 keywords:
 author: NathBarnms.author: nathbarnmanager: angrobe

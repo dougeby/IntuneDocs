@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prerequisites for mobile device enrollment | Microsoft Intune
+title: Prerequisites for mobile device enrollment | Microsoft Docs
 description: Set up mobile device management (MDM) prerequisites and get ready to enroll different operating systems.
 keywords:
 author: staciebarker

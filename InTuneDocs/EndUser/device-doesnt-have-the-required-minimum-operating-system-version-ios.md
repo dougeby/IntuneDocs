@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: iOS device doesn't have the required minimum operating system version | Microsoft Intune
+title: iOS device doesn't have the required minimum operating system version | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

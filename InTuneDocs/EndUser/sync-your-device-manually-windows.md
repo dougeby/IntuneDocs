@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sync your Windows device manually | Microsoft Intune
+title: Sync your Windows device manually | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

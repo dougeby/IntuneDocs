@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: You are asked to turn on Scan device for security threats | Microsoft Intune
+title: You are asked to turn on Scan device for security threats | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

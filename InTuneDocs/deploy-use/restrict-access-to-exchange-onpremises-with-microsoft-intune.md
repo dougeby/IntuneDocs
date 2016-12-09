@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Restrict email access to Exchange on-premises | Microsoft Intune
-description: Protect and control access to company email on Exchange on-premises with conditional access.
+title: Restrict email access to Exchange On-premises | Microsoft Docs
+description: Protect and control access to company email on Exchange On-premises with conditional access.
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe
 ms.date: 10/12/2016

@@ -33,15 +33,21 @@ If you are having problems with Intune mobile application management, start here
 
 ## Common IT administrator issues
 
-1. **Issue:** App protection policy without device enrollment, made in the Azure portal, is not applying to the Skype for Business app on iOS and Android devices.
+### Policy not applied to Skype for Business
+
+**Issue:** App protection policy without device enrollment, made in the Azure portal, is not applying to the Skype for Business app on iOS and Android devices.
 
   **Resolution**: Skype for Business must be set up for modern authentication.  Please follow instructions in [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to set up modern authentication for Skype.
 
-2. **Issue:** App protection policies are not applying to any [supported Office App](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) for any user.
+### Office app policy not applied
+
+**Issue:** App protection policies are not applying to any [supported Office App](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) for any user.
 
   **Resolution**: Confirm that the user is licensed for Intune and the Office apps are targeted by a deployed app protection policy. It can take up to 8 hours for a newly deployed app protection policy to be applied.
 
-3. **Issue:** IT administrator user is unable to configure app protection policies in Azure Portal.
+### Admin can't configure app protection policy in Azure portal
+
+**Issue:** IT administrator user is unable to configure app protection policies in Azure Portal.
 
   **Resolution**:
 
@@ -53,22 +59,26 @@ If you are having problems with Intune mobile application management, start here
 
   Refer to [Get ready to configure mobile app management policies with Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) for help  setting up these roles.
 
-4. **Issue:** Admin console reports do not show user account(s) to which app protection policy was recently deployed.
+### User accounts missing from app protectin policy reports
+
+**Issue:** Admin console reports do not show user accounts to which app protection policy was recently deployed.
 
   **Resolution**: If a user is newly targeted by an app protection policy, it can take up to 24 hours for that user to show up in reports as a targeted user.
 
-5. **Issue:** Policy changes/updates can take up to 8 hours to apply.  
+### Policy changes not working
+
+**Issue:** Policy changes/updates can take up to 8 hours to apply.  
 
   **Resolution**: End-user can log out of the app and log back in to force sync with service .  
 
-6. **Issue:** App protection policy is not applying to Apple DEP devices.
+### App protection policy not working with DEP
+
+**Issue:** App protection policy is not applying to Apple DEP devices.
 
   **Resolution**: Please ensure you are using User Affinity with Apple Device Enrollment Program (DEP). User Affinity is required for any app that requires user authentication under DEP.
 Refer to [Enroll corporate-owned Device Enrollment Program iOS devices](../deploy-use/ios-device-enrollment-program-in-microsoft-intune.md) for more information on iOS DEP enrollment.
 
-## Common end-user issues
-
-### Issues on iOS
+## End-user issues on iOS
 
 Dialog/Error message | Cause | Remediation |
 -- | --- | --- |
@@ -85,7 +95,7 @@ Dialog/Error message | Cause | Remediation |
 **Error**: This app has encountered a problem and must close. If this error persists, please contact your IT administrator. | Failure to read the MAM app PIN from the Apple iOS Keychain. | Restart the device. Make sure the app version is up-to-date. <br><br> Reinstall the app.
 
 
-### Issues on Android
+## End-user issues on Android
 
 Dialog/Error message | Cause | Remediation |
 -- | --- | --- |

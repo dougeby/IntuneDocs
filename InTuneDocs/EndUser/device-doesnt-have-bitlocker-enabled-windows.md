@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Device doesn't have BitLocker enabled | Microsoft Intune
+title: Device doesn't have BitLocker enabled | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

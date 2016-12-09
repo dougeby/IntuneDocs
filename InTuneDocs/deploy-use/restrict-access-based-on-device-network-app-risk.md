@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Restrict access using device threat protection | Microsoft Intune
+title: Restrict access using device threat protection | Microsoft Docs
 description: Restrict access to company resources based on device, network and application risk.
 keywords:
 author: NathBarn

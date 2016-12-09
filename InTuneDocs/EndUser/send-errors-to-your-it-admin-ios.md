@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Send errors to your IT admin | Microsoft Intune
+title: Send errors to your IT admin | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

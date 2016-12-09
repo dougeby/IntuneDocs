@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Using apps with MAM CA | Microsoft Intune
+title: Using apps with MAM CA | Microsoft Docs
 description: Understand the concepts of how MAM CA can help with controlling what apps have access to O365 services.
 keywords:
 author: andredm7

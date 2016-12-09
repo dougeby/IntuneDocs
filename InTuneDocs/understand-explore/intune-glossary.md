@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune glossary | Microsoft Intune
+title: Intune glossary | Microsoft Docs
 description: Learn about some of the terminology in Microsoft Intune
 keywords:
 author: robstackmsftms.author: robstack

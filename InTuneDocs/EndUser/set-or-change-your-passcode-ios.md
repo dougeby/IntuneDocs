@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set or change your passcode | Microsoft Intune
+title: Set or change your passcode | Microsoft Docs
 description: Set or change your passcode
 keywords:
 author: barlanmsftms.author: barlan

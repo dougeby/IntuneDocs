@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Specify IMEI numbers | Microsoft Intune
+title: Specify IMEI numbers | Microsoft Docs
 description: Microsoft Intune lets admins import IMEI numbers for mobile device platforms to help identify corporate-owned mobile devices
 keywords:
 author: staciebarkerms.author: stabar

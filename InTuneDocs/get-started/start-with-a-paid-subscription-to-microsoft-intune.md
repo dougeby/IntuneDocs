@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get Started | Microsoft Intune
+title: Get Started | Microsoft Docs
 description: Requirements and prerequisites for starting to use your Intune subscription
 keywords:
 author: nathbarnms.author: nathbarn

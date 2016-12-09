@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll your iOS device in Intune | Microsoft Intune
+title: Enroll your iOS device in Intune | Microsoft Docs
 description: Describes how to enroll an iOS device in Intune
 keywords:
 author: barlanmsftms.author: barlan
