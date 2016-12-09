@@ -43,11 +43,12 @@ Before you follow the steps in this topic, complete the following prerequisites:
 - [Get an Apple MDM Push certificate](get-an-apple-mdm-push-certificate.md)
 - [Get an Apple DEP token](get-apple-dep-token.md)
 
+
 ## Create an Apple DEP profile for devices
 
 A device enrollment profile defines the settings applied to a group of devices. The following steps show how to create a device enrollment profile for iOS devices enrolled by using DEP.
 
-1. In the **Enrollment** workload, choose **Apple Enrollment**.
+1. In the **Enrollment** blade, choose **Apple Enrollment**.
 
 2. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Profiles**.
 
@@ -99,7 +100,7 @@ Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://
 
 ## Synchronize DEP-managed devices
 
-1. In the Azure portal **Enrollment** workload, choose **Apple Enrollment**.
+1. In the Azure portal **Enrollment** blade, choose **Apple Enrollment**.
 
 2. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Serial Numbers**.
 
