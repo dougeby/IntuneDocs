@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Monitoring and reports | Microsoft Intune
+title: Monitoring and reports | Microsoft Docs
 description: Use Intune monitoring and reports to monitor the status of devices in your organization.
 keywords:
 manager: angrobe

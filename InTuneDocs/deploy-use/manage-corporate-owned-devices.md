@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage corporate-owned devices | Microsoft Intune
+title: Manage corporate-owned devices | Microsoft Docs
 description: Enroll corporate-owned devices in a variety of ways, based on the type of device, how it was purchased, and the needs of the organization.
 keywords:
 author: staciebarker

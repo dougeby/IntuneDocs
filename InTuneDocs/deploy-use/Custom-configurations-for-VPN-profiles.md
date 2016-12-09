@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Custom configurations for VPN profiles | Microsoft Intune
+title: Custom configurations for VPN profiles | Microsoft Docs
 description: Use custom configurations to create VPN profiles in Intune.
 keywords:
 author: robstackmsft

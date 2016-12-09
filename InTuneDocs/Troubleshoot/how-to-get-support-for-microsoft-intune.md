@@ -2,7 +2,7 @@
 # required metadata
 
 
-title: How to get support | Microsoft Intune
+title: How to get support | Microsoft Docs
 description: Support is available both online and by telephone for paid and trial subscriptions.
 keywords:
 author: staciebarkerms.author: staciebarker

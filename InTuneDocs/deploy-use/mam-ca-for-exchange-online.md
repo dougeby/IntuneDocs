@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure app access for Exchange Online | Microsoft Intune
+title: Configure app access for Exchange Online | Microsoft Docs
 description: This topic describes how you can configure a conditional access policy for MAM apps.
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe

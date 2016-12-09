@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How do I find the serial number on my device? | Microsoft Intune
+title: How do I find the serial number on my device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to reconnect a compromised Android device | Microsoft Intune
+title: How to reconnect a compromised Android device | Microsoft Docs
 description:
 keywords:
 author: barlanmsft

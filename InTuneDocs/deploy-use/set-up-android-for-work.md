@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Android for Work management  | Microsoft Intune
+title: Set up Android for Work management  | Microsoft Docs
 description: Enable mobile device management (MDM) for Android for Work devices with Microsoft Intune.
 keywords:
 author: NathBarnms.author: nathbarn

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Choose how to enroll mobile devices | Microsoft Intune
+title: Choose how to enroll mobile devices | Microsoft Docs
 description: Decide how to enroll mobile devices in Intune by answering a few simple questions
 keywords:
 author: NathBarnms.author: nathbarn

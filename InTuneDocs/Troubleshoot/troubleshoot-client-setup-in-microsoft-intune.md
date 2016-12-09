@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot client setup | Microsoft Intune
+title: Troubleshoot client setup | Microsoft Docs
 description: Troubleshoot common client setup problems.
 keywords:
 author: staciebarkerms.author: staciebarker

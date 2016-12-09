@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Allowed and blocked apps for KNOX | Microsoft Intune
+title: Allowed and blocked apps for KNOX | Microsoft Docs
 description: Custom profile to create a list of allowed and blocked apps for KNOX.
 keywords:
 author: robstackmsftms.author: robstack

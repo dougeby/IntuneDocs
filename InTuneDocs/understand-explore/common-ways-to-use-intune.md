@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Common ways to use Intune | Microsoft Intune
+title: Common ways to use Intune | Microsoft Docs
 description: Lists six of the most common tasks that Intune helps with
 keywords:
 author: robstackmsft

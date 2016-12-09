@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Android device doesn't comply with the maximum operating system version | Microsoft Intune
+title: Android device doesn't comply with the maximum operating system version | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

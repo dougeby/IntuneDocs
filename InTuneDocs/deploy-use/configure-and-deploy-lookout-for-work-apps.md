@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy Lookout for Work app | Microsoft Intune
+title: Deploy Lookout for Work app | Microsoft Docs
 description: Configure and deploy Lookout for Work apps for Android.
 author: NathBarnms.author: nathbarnmanager: angrobe
 ms.date: 10/12/2016

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: The Early Edition | Microsoft Intune
+title: The Early Edition | Microsoft Docs
 description:
 keywords:
 author: barlanmsft

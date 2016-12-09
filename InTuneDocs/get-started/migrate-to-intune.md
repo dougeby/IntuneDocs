@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migrate to Intune | Microsoft Intune
+title: Migrate to Intune | Microsoft Docs
 description:
 keywords:
 author: jeffgilbms.author: jeffgilb

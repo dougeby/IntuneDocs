@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: You are prompted to install Lookout for Work on your iOS device | Microsoft Intune
+title: You are prompted to install Lookout for Work on your iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

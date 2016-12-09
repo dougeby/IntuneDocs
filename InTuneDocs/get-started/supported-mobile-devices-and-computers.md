@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Supported mobile devices and browsers | Microsoft Intune
+title: Supported mobile devices and browsers | Microsoft Docs
 description: Lists supported devices and the browsers that can run Intune
 keywords:
 author: nathbarn

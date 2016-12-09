@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot email profiles | Microsoft Intune
+title: Troubleshoot email profiles | Microsoft Docs
 description: Email profile issues and how to troubleshoot and resolve them.
 keywords:
 author: robstackmsftms.author: robstack

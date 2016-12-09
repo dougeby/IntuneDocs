@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: You are asked to identify your device when you're trying to enroll | Microsoft Intune
+title: You are asked to identify your device when you're trying to enroll | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

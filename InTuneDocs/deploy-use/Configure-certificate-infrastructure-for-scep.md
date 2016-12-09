@@ -1,5 +1,5 @@
 ---
-title: Configure certificate infrastructure for SCEP |Microsoft Intune
+title: Configure certificate infrastructure for SCEP | Microsoft Docs
 description: Infrastructure for creating and deploying SCEP certificate profiles.
 keywords:
 author: robstackmsft
@@ -98,7 +98,7 @@ In this task you will:
 
 ##### To configure the certification authority
 
-1.  Log on as an enterprise administrator. 
+1.  Log on as an enterprise administrator.
 
 2.  On the issuing CA, use the Certificate Templates snap-in to create a new custom template or copy an existing template and then edit an existing template (like the User template), for use with NDES.
 
@@ -114,7 +114,7 @@ In this task you will:
         > For iOS and Mac OS X certificate templates, on the **Extensions** tab, edit **Key Usage** and ensure **Signature is proof of origin** is not selected.
 
     -   On the **Security** tab, add the NDES service account, and give it **Enroll** permissions to the template. Intune admins who will create SCEP profiles require **Read** rights so that they can browse to the template when creating SCEP profiles.
-    
+
     > [!NOTE]
     > To revoke certificates the NDES service account needs *Issue and Manage Certificates* rights for each certificate template used by a certificate profile.
 
@@ -125,19 +125,19 @@ In this task you will:
 
 Here are screenshots of an example template configuration.
 
-![Template, request handling tab](..\media\scep_ndes_request_handling.png) 
+![Template, request handling tab](..\media\scep_ndes_request_handling.png)
 
-![Template, subject name tab](..\media\scep_ndes_subject_name.jpg) 
+![Template, subject name tab](..\media\scep_ndes_subject_name.jpg)
 
-![Template, security tab](..\media\scep_ndes_security.jpg) 
+![Template, security tab](..\media\scep_ndes_security.jpg)
 
-![Template, extensions tab](..\media\scep_ndes_extensions.jpg) 
+![Template, extensions tab](..\media\scep_ndes_extensions.jpg)
 
-![Template, issuance requirements tab](..\media\scep_ndes_issuance_reqs.jpg) 
+![Template, issuance requirements tab](..\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
     > For Application Policies (in the 4th screenshot), only add the application policies required. Confirm your choices with your security admins.
-   
+
 
 
 To configure the CA to allow the requester to specify the validity period, on the CA run the following commands:
@@ -244,12 +244,12 @@ In this task you will:
 
 4. In IIS manager, choose **Default Web Site** -> **Request Filtering** -> **Edit Feature Setting**, and change the **Maximum URL length** and **Maximum query string** to *65534*, as shown.
 
-    ![IIS max URL and query length](..\media\SCEP_IIS_max_URL.png) 
+    ![IIS max URL and query length](..\media\SCEP_IIS_max_URL.png)
 
 5.  Restart the server. Running **iisreset** on the server will not be sufficient to finalize these changes.
 6. Browse to http://*FQDN*/certsrv/mscep/mscep.dll. You should see an NDES page similar to this:
 
-    ![Test NDES](..\media\SCEP_NDES_URL.png) 
+    ![Test NDES](..\media\SCEP_NDES_URL.png)
 
     If you get a **503 Service unavailable**, check the eventviewer. It's likely that the application pool is stopped due to a missing right for the NDES user. Those rights are described in Task 1.
 

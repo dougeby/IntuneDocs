@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: You are asked to turn off USB debugging | Microsoft Intune
+title: You are asked to turn off USB debugging | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

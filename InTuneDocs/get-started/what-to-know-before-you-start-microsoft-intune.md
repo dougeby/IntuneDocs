@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prerequisites | Microsoft Intune
+title: Prerequisites | Microsoft Docs
 description: Links to Intune prerequisites and requirements
 keywords:
 author: nathbarn
