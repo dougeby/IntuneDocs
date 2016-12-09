@@ -178,7 +178,7 @@
 ### [Retire apps ](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Wipe managed company app data](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [Resources about the end-user experience](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
+## [How to educate your end users about Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
 ### [Restore managed iOS devices](deploy-use/restore-managed-ios-devices-from-backup.md)
 ### [Android apps with MAM policies](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 ### [iOS apps with MAM policies](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
