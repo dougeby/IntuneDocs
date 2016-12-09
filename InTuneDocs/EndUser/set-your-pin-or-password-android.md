@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set your PIN or password | Microsoft Intune
+title: Set your PIN or password | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

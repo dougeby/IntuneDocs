@@ -1,6 +1,6 @@
 ---
 redirect_url: https://docs.microsoft.com/en-us/intune/deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune
-title: End-user experience with apps with MAM policies | Microsoft Intune
+title: End-user experience with apps with MAM policies | Microsoft Docs
 description: The topic describes what to expect when using apps that have MAM policies.
 author: NathBarn
 ms.author: nathbarn

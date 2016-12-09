@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview of the app lifecycle | Microsoft Intune
+title: Overview of the app lifecycle | Microsoft Docs
 description: Learn about the lifecycle of Intune managed apps, from adding them, to their eventual retirement.
 keywords:
 author: robstackmsftms.author: robstack

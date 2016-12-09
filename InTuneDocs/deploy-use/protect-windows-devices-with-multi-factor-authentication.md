@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Multi-factor authentication for Windows | Microsoft Intune
+title: Multi-factor authentication for Windows | Microsoft Docs
 description: Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources.
 keywords:
 author: robstackmsft

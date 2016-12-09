@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Using your Android device with Intune | Microsoft Intune
+title: Using your Android device with Intune | Microsoft Docs
 description: List of links to tasks that end users can do on their Android mobile device when the device is enrolled in Intune
 keywords:
 author: barlanmsftms.author: barlan

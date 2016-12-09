@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: You need to resolve a threat that Lookout for Work found on your Android device | Microsoft Intune
+title: You need to resolve a threat that Lookout for Work found on your Android device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

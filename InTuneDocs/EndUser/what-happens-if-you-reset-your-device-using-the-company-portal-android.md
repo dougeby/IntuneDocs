@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens if you reset your Android device using the Company Portal? | Microsoft Intune
+title: What happens if you reset your Android device using the Company Portal? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Understand your devices with inventory | Microsoft Intune
+title: Understand your devices with inventory | Microsoft Docs
 description: Use Intune to view information about the hardware of the devices you manage.
 keywords:
 author: robstackmsftms.author: robstack

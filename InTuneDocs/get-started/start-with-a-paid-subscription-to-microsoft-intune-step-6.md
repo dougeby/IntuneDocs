@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy policies and apps | Microsoft Intune
+title: Deploy policies and apps | Microsoft Docs
 description: You can enable policy settings and deploy apps that will be applied as soon as devices are enrolled into management.
 keywords:
 author: nathbarnms.author: nathbarn

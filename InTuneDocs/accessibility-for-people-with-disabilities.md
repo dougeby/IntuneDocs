@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Accessibility for People with Disabilities | Microsoft Intune
+title: Accessibility for People with Disabilities | Microsoft Docs
 description: Read accessibility information about Microsoft products.
 keywords:
 author: robstackmsftms.author: robstack

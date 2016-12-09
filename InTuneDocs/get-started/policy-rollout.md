@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Policy rollout | Microsoft Intune
+title: Policy rollout | Microsoft Docs
 description: Recommendations for a phased rollout of policy in Microsoft Intune.
 keywords:
 author: Nbigmanms.author: nbigman

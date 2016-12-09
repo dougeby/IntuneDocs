@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protecting company data with data encryption | Microsoft Intune
+title: Protecting company data with data encryption | Microsoft Docs
 description: This guide can help you protect your company from data loss by forcing a passcode and data encryption using a policy on  mobile apps.
 keywords: encryption, PIN, data
 author: arob98ms.author: angrobe

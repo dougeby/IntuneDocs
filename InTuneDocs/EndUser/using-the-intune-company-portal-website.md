@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Using the Intune Company Portal website | Microsoft Intune
+title: Using the Intune Company Portal website | Microsoft Docs
 description: Describes the Company Portal website and provides links to steps for tasks that end users can do on the website
 keywords:
 author: barlanmsftms.author: barlan

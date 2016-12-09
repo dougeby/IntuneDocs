@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Send enrollment errors to your IT admin | Microsoft Intune
+title: Send enrollment errors to your IT admin | Microsoft Docs
 description: Send enrollment errors to your admin
 keywords:
 author: barlanmsftms.author: barlan

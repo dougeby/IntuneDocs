@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to set the period before your Android device is locked | Microsoft Intune
+title: How to set the period before your Android device is locked | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

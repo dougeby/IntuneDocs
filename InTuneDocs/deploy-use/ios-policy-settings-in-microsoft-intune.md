@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: iOS policy settings | Microsoft Intune
+title: iOS policy settings | Microsoft Docs
 description: Create policies that control settings and features on iOS devices that you manage with Intune.
 keywords:
 author: robstackmsft

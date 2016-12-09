@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Restrict access to email and Office 365 services | Microsoft Intune
+title: Restrict access to email and Office 365 services | Microsoft Docs
 description: This topic describes how you can use conditional access to allow only compliant devices to access company email and company data on SharePoint Online and other services.
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe

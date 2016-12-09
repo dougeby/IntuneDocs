@@ -2,7 +2,7 @@
 # required metadata
 
 
-title: Configuration policy reference | Microsoft Intune
+title: Configuration policy reference | Microsoft Docs
 description: Use the information in this topic to help you decide which Microsoft Intune policy you need to use to manage your devices.
 
 keywords:

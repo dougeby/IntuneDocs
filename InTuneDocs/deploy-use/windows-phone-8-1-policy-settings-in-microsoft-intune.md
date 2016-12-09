@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows Phone 8.1 policy settings | Microsoft Intune
+title: Windows Phone 8.1 policy settings | Microsoft Docs
 description: Intune supplies a range of built-in general settings that you can configure on Windows Phone 8.1 devices. Additionally, you can specify OMA-URI values to create custom settings that are not available from Intune.
 keywords:
 author: robstackmsftms.author: robstack

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wipe for Exchange managed mobile devices | Microsoft Intune
+title: Wipe for Exchange managed mobile devices | Microsoft Docs
 description: Microsoft Intune allows you to wipe or reset mobile devices that are managed using Exchange ActiveSync (EAS) with the Intune Exchange Connector
 keywords:
 author: staciebarkerms.author: staciebarker

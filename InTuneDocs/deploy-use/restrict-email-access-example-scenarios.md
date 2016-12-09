@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Restrict access to email example scenarios | Microsoft Intune
+title: Restrict access to email example scenarios | Microsoft Docs
 description: A few example scenarios and how they could be implemented with conditional access.
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe

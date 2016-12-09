@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Intune Managed Browser for iOS | Microsoft Intune
+title: Microsoft Intune Managed Browser for iOS | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
