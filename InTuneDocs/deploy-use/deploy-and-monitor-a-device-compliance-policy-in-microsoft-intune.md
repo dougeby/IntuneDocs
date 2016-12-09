@@ -4,8 +4,8 @@
 title: Deploy and monitor a compliance policy | Microsoft Intune
 description: Use the step-by-step instructions in this topic to deploy and monitor a device compliance policy.
 keywords:
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
