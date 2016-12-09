@@ -32,7 +32,7 @@ Microsoft Intune helps you enable your workforce with mobile devices while keepi
 
 None of these technologies will ensure that your users understand the importance of why you're managing their devices. In fact, many of your end users may feel as though you are infringing on their privacy - especially if you are deploying Intune as a [BYOD solution](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md).
 
-> [!Note] 
+> [!Important] 
 > Understanding and proactively addressing your end users' concerns about why your company needs to manage devices is critical to a successful rollout.
 
 Adoption is not just about getting the technology working and distributed throughout your workforce, but about getting your end user population to embrace the secured access that Intune provides them. Users may be intimidated of enterprise mobility because, by and large, we aren't explaining to them what they need to know about what enterprise mobility is for, and what it can (and can't) do.
@@ -61,4 +61,4 @@ Assuaging these user concerns will make your deployment smoother. We have a list
     - [iOS](how-your-ios-users-get-their-apps.md)
     - [Windows](how-your-windows-users-get-their-apps.md)
 
-* __Be forthcoming.__ Clearly tell your users what you're going to manage on their devices. Tell them what kind of data you're collecting and why you're collecting it. Tell them how you're planning to use this functionality. You're trying to combine trust with well-crafted compliance policies to make sure that end users know that even if you *could* look at certain types of personal data, that you don't *want* to, and the liability that you could incur for invading their privacy. Crafting a statement with your legal and HR departments can help with particularly difficult employees. 
+* __Be forthcoming.__ Clearly tell your users what you're going to manage on their devices. Tell them what kind of data you're collecting and why you're collecting it. Tell them how you're planning to use this functionality. You're trying to combine trust with well-crafted compliance policies to make sure that end users know that even if you *could* look at certain types of personal data, that you don't *want* to, and the liability that you could incur for invading their privacy. Crafting a statement with your legal and HR departments can help with particularly difficult employees.
