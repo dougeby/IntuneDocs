@@ -33,7 +33,7 @@ You can limit the types of devices that are allowed to enroll in Intune by speci
 
 ## Set device type restrictions
 
-1. In the **Enrollment** workload, choose **Enrollment Restrictions**.
+1. In the **Enrollment** blade, choose **Enrollment Restrictions**.
 
 2. Under **Device Type Restrictions**, select **Default**.
 
@@ -51,7 +51,7 @@ You can limit the types of devices that are allowed to enroll in Intune by speci
 
 ## Set device limit restrictions
 
-1. In the **Enrollment** workload, choose **Enrollment Restrictions**.
+1. In the **Enrollment** blade, choose **Enrollment Restrictions**.
 
 2. Under **Device Limit Restrictions**, select **Default**.
 
