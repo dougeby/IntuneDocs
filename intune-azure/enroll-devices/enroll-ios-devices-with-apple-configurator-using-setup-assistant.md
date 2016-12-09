@@ -46,7 +46,7 @@ Using Apple Configurator, you can reset an iOS device to factory settings and pr
 
 A device enrollment profile defines the settings applied to a group of devices. The following steps show how to create a device enrollment profile for iOS devices enrolled by using Apple Configurator.
 
-1. In the **Enrollment** workload, choose **Apple Enrollment**.
+1. In the **Enrollment** blade, choose **Apple Enrollment**.
 
 2. Under **Manage Apple Configurator Enrollment Settings**, select **AC Profiles**.
 
@@ -56,9 +56,9 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 5. For **User Affinity** choose whether devices with this profile will enroll with or without user affinity.
 
-- **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. User affinity should be set up for DEP-managed devices that belong to users and that need to use the company portal for services like installing apps.
+   - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. User affinity should be set up for DEP-managed devices that belong to users and that need to use the company portal for services like installing apps.
 
-- **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
+   - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
 
 6. Select **Create** to save the profile.
 
@@ -78,7 +78,7 @@ After you create Apple Configurator profiles, you can assign device serial numbe
 
 After you create the profile and assign serial numbers, you have to export the profile from Intune, either as a URL or as a file in the format described below. You then manually import it to the Apple Configurator program on a Mac, after which the Apple Configurator program deploys it to the devices.
 
-### To export a profile using Setup Assistant Enrollment
+### To export a profile using Setup Assistant enrollment
 
 1. On the **Apple Configurator Enrollment Profiles** blade, choose the profile to export.
 
@@ -86,10 +86,10 @@ After you create the profile and assign serial numbers, you have to export the p
 
 3. copy the profile URL into [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12), with the iOs device attached. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
 
->[!WARNING]
->Using this method removes all data from the device and resets it to factory default settings.
+    >[!WARNING]
+    >Using this method removes all data from the device and resets it to factory default settings.
 
-   To support Apple Configurator 2, the 2.0 Profile URL must be edited. To do so, replace this code:</br></br>
+     To support Apple Configurator 2, the 2.0 Profile URL must be edited. To do so, replace this code:</br></br>
     ```
    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
     ```</br></br>
