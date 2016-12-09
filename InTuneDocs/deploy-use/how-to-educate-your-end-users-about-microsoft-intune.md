@@ -32,7 +32,8 @@ Microsoft Intune helps you enable your workforce with mobile devices while keepi
 
 None of these technologies will ensure that your users understand the importance of why you're managing their devices. In fact, many of your end users may feel as though you are infringing on their privacy - especially if you are deploying Intune as a [BYOD solution](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md).
 
-Understanding and proactively addressing your end users' concerns about why your company needs to why your company needs to manage their device is critical to a successful rollout.
+> [!Note] 
+> Understanding and proactively addressing your end users' concerns about why your company needs to manage devices is critical to a successful rollout.
 
 Adoption is not just about getting the technology working and distributed throughout your workforce, but about getting your end user population to embrace the secured access that Intune provides them. Users may be intimidated of enterprise mobility because, by and large, we aren't explaining to them what they need to know about what enterprise mobility is for, and what it can (and can't) do.
 
