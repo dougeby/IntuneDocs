@@ -4,9 +4,10 @@
 title: How to talk to your end users about Intune | Microsoft Intune
 description: Share information with your end users to make your Intune deployment successful.
 keywords: end users, users, communication
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/08/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +19,7 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,37 +34,32 @@ None of these technologies will ensure that your users understand the importance
 
 Understanding and proactively addressing your end users' concerns about why your company needs to access various permissions on their devices is critical to a successful rollout.
 
-Adoption is not just about getting the technology working and distributed throughout your workforce, but about getting your end user population to embrace the secured access that Intune provides them.
+Adoption is not just about getting the technology working and distributed throughout your workforce, but about getting your end user population to embrace the secured access that Intune provides them. Users may be intimidated of enterprise mobility because, by and large, we aren't explaining to them what they need to know about what enterprise mobility is for, and what it can (and can't) do.
 
 ## Things to consider about your end users
 
-__Experience__: Your end users may have a range of experience with a variety of technology. With this experience comes a range of different feelings they could have about their devices, devices they've used with previous employers, and even technology that is unrelated to what they're using for work.
+__What level of experience do your end users have?__ Your end users may have a range of experience with a variety of technology. With this experience comes a range of different feelings they could have about their devices, devices they've used with previous employers, and even technology that is unrelated to what they're using for work.
 
-__Understanding__: Users may not have a full understanding of what access you do (and do not) have to their devices and their information. Users are likely to be concerned about the potential for IT and leadership to keep track of their every move. This can be especially worrying for less experienced users, who may believe that all activity on their devices is private. A more experienced user may have specific fears stemming from "big brother" spying on their devices, and may then evangelize their concerns to coworkers.
+__What does mobility management mean to me?__ Users may not have a full understanding of what access you do (and do not) have to their devices and their information. Users are likely to be concerned about the potential for IT and leadership to keep track of their every move. This can be especially worrying for less experienced users, who may believe that all activity on their devices is private. A more experienced user may have specific fears stemming from "big brother" spying on their devices, and may then evangelize their concerns to coworkers.
 
-__
+__How could this inconvenience my end users?__ It takes time to install apps, enroll devices, and maintain compliance. Ensuring your corporate data's security is the top priority of any Intune deployment, but requiring an unreasonable passcode on a personal device will cause your users to resent your management of their devices. Sending required app updates in the middle of business-critical conference calls could cause your users to become less productive, defeating the purpose of enabling them with mobile devices.
 
-Use the following links and information to understand the steps that your end users take to do different tasks in Intune.
+## Things you should do
 
-Be sure that you include IT administrator contact information when you [customize the Company Portal](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) so that your users can get help if they need it.
+Assuaging these user concerns will make your deployment smoother. We have a list of ways to consider to make it easier for your end users to accept device management.
 
-## Enrollment guide that you can customize for your users
+* __Be accessible.__ End users need to know where they can get help with their devices. Be sure that you include IT administrator contact information when you [customize the Company Portal](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) so that your users can get help if they need it.
 
-You can use this [customizable, end-user Intune enrollment template for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) to create your own enrollment instructions for your end users. This Microsoft Word document has detailed steps and screenshots of end-user enrollment for iOS, Mac OS X, and Android devices.
+* __Be personal.__ Providing instructions that aren't specific to your deployment can make end users feel like you haven't given any thought to their experience. You can use this [customizable, end user Intune enrollment template for IT administrators](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) to create your own enrollment instructions for your end users.
 
-## How your end users find how-to and troubleshooting information
-
-Use the following links to see the steps that users are sent to from the Company Portal website or app. The links are divided into sections about Company Portal app installation and Intune enrollment, general tasks that users can do on their devices, and troubleshooting.
+* __Be resourceful.__ The Intune documentation has a variety of content to help your end users figure out how to do certain tasks, like enrolling and troubleshooting their devices. Among these are articles that users are sent to from the Company Portal, which are divided into sections about Company Portal app installation and Intune enrollment, general tasks that users can do on their devices, and troubleshooting.
 
 - [Using your Android device with Intune](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or macOS device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
 - [Using your Windows device with Intune](/Intune/EndUser/using-your-windows-device-with-intune)
 - [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website)
 
-
-## How your end users get their apps
-
-To understand how your end users get their apps, choose from the following device platform options:
+* __Be aware.__ Your end user experience will impact your productivity, and understanding their experience will make it easier for you to troubleshoot their problems when they come to you. Understanding how end users get their apps can make it much easier for you to diagnose what issues they're experiencing, and can help you fix their problems faster.
 
 - [Android](how-your-android-users-get-their-apps.md)
 - [iOS](how-your-ios-users-get-their-apps.md)
