@@ -95,7 +95,7 @@ Dialog/Error message | Cause | Remediation |
 **Error**: This app has encountered a problem and must close. If this error persists, please contact your IT administrator. | Failure to read the MAM app PIN from the Apple iOS Keychain. | Restart the device. Make sure the app version is up-to-date. <br><br> Reinstall the app.
 
 
-### End-user issues on Android
+## End-user issues on Android
 
 Dialog/Error message | Cause | Remediation |
 -- | --- | --- |
