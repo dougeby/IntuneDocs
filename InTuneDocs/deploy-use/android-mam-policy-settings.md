@@ -39,7 +39,7 @@ There are two categories of policy settings: data relocation settings and access
   -   **All apps**: Enables transfer to any app.
   -   **None**: Does not allow data transfer to any app.
 
- Default value = **Policy managed apps**.
+ Default value = **All apps**.
 - **Allow app to receive data from other apps**: Specify which apps can transfer data to the policy-managed apps:
   -   **Policy managed apps**: Enables data transfers from other policy-managed apps only.
   -   **All apps**: Enables data transfer from any app.
@@ -49,21 +49,21 @@ There are two categories of policy settings: data relocation settings and access
 
 -   **Prevent Save As**: Choose **Yes** to disable the use of the Save As option in any app that uses this policy. Choose **No** if you want to enables the use of Save As.
 
-  Default value = **Yes**
+  Default value = **No**
 - **Restrict cut, copy, and paste with other apps**: Specify when cut, copy, and paste actions should be restricted. Choose from:
   -   **Blocked**: Does not allow cut, copy, and paste actions between policy-managed apps.
   -   **Policy Managed apps**: Enables cut, copy, and paste actions only between policy-managed apps.
   -   **Policy Managed apps with paste in**: Enables cut or copy between policy-managed apps. Enables cut or copied data from any app to be pasted into this app.
   -   **Any app**: There are no restrictions for cut, copy, and paste actions between any apps.
 
-  Default value = **Policy managed apps with paste in**
+  Default value = **Any app**
 -   **Restrict web content to display in the Managed Browser**: Choose **yes** to specify that all links in the app will be opened in the Managed Browser app.
 
   For devices that are not enrolled in Intune, links in policy-managed apps can only open in the Managed Browser app if you use the MAM policy.
 
   If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
-  Default value = **Yes**
+  Default value = **No**
 - **Encrypt app data**: Choose **Yes** to enable encryption. When this setting is enabled, Microsoft provides encryption for apps that are associated with a MAM policy. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted.
   >[!NOTE]
   >The encryption method is not FIPS 140-2 certified.
@@ -74,10 +74,10 @@ There are two categories of policy settings: data relocation settings and access
 
   When you do a selective wipe to remove company data, contacts that are synced directly between the app and the native address book are removed. Any contacts that are synced between the native address book to another external source cannot be wiped. Currently this applies only to the Microsoft Outlook app.
 
-  Default value = **Yes**
+  Default value = **No**
 - **Disable printing**: Choose **Yes** to prevent the printing of company data from apps that are associated with the MAM policy.
 
-  Default value = **Yes**
+  Default value = **No**
 
 ##  Access settings
 
@@ -109,3 +109,5 @@ There are two categories of policy settings: data relocation settings and access
 
   Default value = **90** days
 - **Block screen capture and Android Assistant (Android 6 Marshmallow or later)**: Choose **Yes** to block screen capture and the **Android Assistant** capabilities of the device when using this app.
+
+  Default values = **No**
