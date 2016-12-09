@@ -50,7 +50,7 @@ Assuaging these user concerns will make your deployment smoother. We have a list
 
 * __Be accessible.__ End users need to know where they can get help with their devices. Be sure that you include IT administrator contact information when you [customize the Company Portal](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) so that your users can get help if they need it.
 
-* __Be personal.__ Providing instructions that aren't specific to your deployment can make end users feel like you haven't given any thought to their experience. You can use this [customizable, end user Intune enrollment template for IT administrators](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) to create your own enrollment instructions for your end users.
+* __Be personal.__ Providing instructions that aren't specific to your deployment can make end users feel like you haven't given any thought to their experience. You can use this [customizable, end user Intune enrollment template for IT administrators](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) to create your own enrollment instructions for your end users. 
 
 * __Be resourceful.__ The Intune documentation has a variety of content to help your end users figure out how to do certain tasks, like enrolling and troubleshooting their devices. Among these are articles that users are sent to from the Company Portal, which are divided into sections about Company Portal app installation and Intune enrollment, general tasks that users can do on their devices, and troubleshooting.
 
@@ -64,3 +64,5 @@ Assuaging these user concerns will make your deployment smoother. We have a list
 - [Android](how-your-android-users-get-their-apps.md)
 - [iOS](how-your-ios-users-get-their-apps.md)
 - [Windows](how-your-windows-users-get-their-apps.md)
+
+* __Be forthcoming.__ Clearly tell your users what you're going to manage on their devices. Tell them what kind of data you're collecting and why you're collecting it. Tell them how you're planning to use this functionality. You're trying to combine trust with well-crafted compliance policies to make sure that end users know that even if you *could* look at certain types of personal data, that you don't *want* to, and the liability that you could incur for invading their privacy. Crafting a statement with your legal and HR departments can help with particularly difficult employees. 
