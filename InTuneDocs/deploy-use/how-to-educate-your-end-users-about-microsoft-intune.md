@@ -7,7 +7,7 @@ keywords: end users, users, communication
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -63,7 +63,7 @@ Assuaging these user concerns will make your deployment smoother. We have a list
 
 * __Be forthcoming.__ Clearly tell your users what you're going to manage on their devices. Tell them what kind of data you're collecting and why you're collecting it. Inform them of how you're planning to use all asset data.
 
->[Note]
-> Transparency, wherever possible, is fundamental to the success of your deployment. 
+>[!Note]
+> Transparency, wherever possible, is fundamental to the success of your deployment.
 
 You're trying to combine trust with well-crafted compliance policies to make sure that end users know that even if you *could* look at certain types of personal data, that you don't *want* to, and the liability that you could incur for invading their privacy. Crafting a statement with your legal and HR departments can help with particularly difficult employees.
