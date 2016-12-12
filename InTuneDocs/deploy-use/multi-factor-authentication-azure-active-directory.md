@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angerobe
-ms.date: 09/22/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -16,7 +16,7 @@ ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: 
 #audience:
 #ms.devlang:
 #ms.reviewer: damionw
@@ -31,6 +31,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 Intune integrates Azure AD multi-factor authentication (MFA) for device enrollment to help you secure your corporate resources. MFA requires authentication factors like text authentication in addition to user names and passwords. This is supported for iOS, Android, Windows 8.1 or later, or Windows Phone 8.1 or later devices.
 
 > [!NOTE]
+>
+> This is the new experience for MFA in Intune. The older experience, from which customers are being migrated, is described in [Protect Windows devices with multi-factor authentication](protect-windows-devices-with-multi-factor-authentication.md).
 >
 > In older versions of Configuration Manager (earlier than release 1610), you will still see the MFA setting in the Configuration Manager admin console. Do not attempt to configure MFA in the Configuration Manager admin console, as it will not work. Configure MFA as described in this topic.
 
