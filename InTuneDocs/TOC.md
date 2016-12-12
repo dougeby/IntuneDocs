@@ -30,12 +30,6 @@
 ### [Publish mobile apps to your users](get-started/publish-mobile-apps-to-users.md)
 ### [Simplify email configuration on mobile devices](get-started/simplify-email-configuration-on-mobile-devices.md)
 ### [Protect Windows PCs against malware threats](get-started/protect-pcs-against-malware-threats.md)
-## [Phases of Intune deployment](get-started/rollout-phases-for-microsoft-intune-deployment.md)
-### [Project scope](get-started/project-scope.md)
-### [Proof of concept](get-started/proof-of-concept.md)
-### [Pilot](get-started/pilot.md)
-### [Enterprise rollout](get-started/enterprise-rollout.md)
-### [Operations and maintenance](get-started/operations-and-maintenance.md)
 
 # [What's New](whats-new/whats-new-in-microsoft-intune.md)
 
