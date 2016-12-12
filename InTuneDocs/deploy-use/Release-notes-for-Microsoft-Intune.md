@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Release notes for Microsoft Intune | Microsoft Intune
+title: Release notes for Microsoft Intune | Microsoft Docs
 description: Intune release notes
 keywords:
 author: Staciebarkerms.author: stabar

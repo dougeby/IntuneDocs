@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How your Android users get their apps | Microsoft Intune
+title: How your Android users get their apps | Microsoft Docs
 description: Methods for making Android apps available to end users
 keywords:
 author: barlanmsftms.author: barlan

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: You need to upgrade your device to install the Outlook app | Microsoft Intune
+title: You need to upgrade your device to install the Outlook app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

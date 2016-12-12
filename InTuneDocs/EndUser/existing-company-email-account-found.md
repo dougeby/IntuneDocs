@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Existing company email account found | Microsoft Intune
+title: Existing company email account found | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

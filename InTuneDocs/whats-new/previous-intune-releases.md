@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Previous releases | Microsoft Intune
+title: Previous releases | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

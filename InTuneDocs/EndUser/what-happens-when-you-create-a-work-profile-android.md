@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens when you create a work profile | Microsoft Intune
+title: What happens when you create a work profile | Microsoft Docs
 description: Describes how to encrypt an Android device
 keywords:
 author: barlanmsftms.author: barlan

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage PCs with client software | Microsoft Intune
+title: Manage PCs with client software | Microsoft Docs
 description: Manage Windows PCs by installing the Intune client software.
 keywords:
 author: staciebarker

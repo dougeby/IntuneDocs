@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Post-configuration tasks | Microsoft Intune
+title: Post-configuration tasks | Microsoft Docs
 description: Complete optional configuration tasks to enhance mobile device management functionality.
 keywords:
 author: nathbarnms.author: nathbarn

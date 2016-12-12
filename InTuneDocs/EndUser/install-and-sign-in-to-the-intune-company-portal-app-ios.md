@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install and sign in to the Intune Company Portal app | Microsoft Intune
+title: Install and sign in to the Intune Company Portal app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

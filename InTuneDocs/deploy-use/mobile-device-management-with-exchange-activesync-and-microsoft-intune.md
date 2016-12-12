@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Exchange ActiveSync Device Management | Microsoft Intune
+title: Exchange ActiveSync Device Management | Microsoft Docs
 description: Manage mobile devices with Exchange ActiveSync (EAS) management using the Exchange connector
 keywords:
 author: staciebarkerms.author: stabar

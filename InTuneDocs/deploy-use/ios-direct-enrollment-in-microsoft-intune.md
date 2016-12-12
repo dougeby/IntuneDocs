@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Direct enrollment for iOS devices | Microsoft Intune
+title: Direct enrollment for iOS devices | Microsoft Docs
 description: Use the Apple Configurator tool to directly enroll corporate-owned iOS devices with a predefined policy by USB-connecting them to a Mac computer.
 keywords:
 author: staciebarkerms.author: stabar

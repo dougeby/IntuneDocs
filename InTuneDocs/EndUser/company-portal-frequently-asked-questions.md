@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What is the Company Portal? | Microsoft Intune
+title: What is the Company Portal? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

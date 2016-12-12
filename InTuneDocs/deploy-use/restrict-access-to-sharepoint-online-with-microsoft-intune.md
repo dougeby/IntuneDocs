@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Restrict access to SharePoint Online | Microsoft Intune
+title: Restrict access to SharePoint Online | Microsoft Docs
 description: Protect and control access to company data on SharePoint Online by using conditional access.
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe

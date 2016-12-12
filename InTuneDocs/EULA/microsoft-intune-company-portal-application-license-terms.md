@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Microsoft Intune Company Portal Application License Terms | Microsoft Intune
+title: Microsoft Intune Company Portal Application License Terms | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: arob98
+manager: angerob
 ms.date: 11/29/2016
 ms.topic: article
 ms.prod:

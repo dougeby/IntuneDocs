@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: About Android for Work | Microsoft Intune
+title: About Android for Work | Microsoft Docs
 description: Intune manages Android for Work to provide additional management capabilities and privacy when people use their Android devices for work.
 keywords:
 author: nathbarn

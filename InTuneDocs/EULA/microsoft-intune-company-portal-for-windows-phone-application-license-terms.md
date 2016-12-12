@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Microsoft Intune Company Portal for Windows Phone Application License Terms | Microsoft Intune
+title: Microsoft Intune Company Portal for Windows Phone Application License Terms | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
-manager: arob98
+manager: angerob
 ms.date: 12/05/2016
 ms.topic: article
 ms.prod:

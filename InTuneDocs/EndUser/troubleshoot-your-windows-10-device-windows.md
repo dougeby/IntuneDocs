@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot your Windows 10 device enrollment | Microsoft Intune
+title: Troubleshoot your Windows 10 device enrollment | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

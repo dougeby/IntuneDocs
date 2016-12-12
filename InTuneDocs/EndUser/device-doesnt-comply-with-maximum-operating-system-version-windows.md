@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows device doesn't comply with the setting for the maximum operating system version | Microsoft Intune
+title: Windows device doesn't comply with the setting for the maximum operating system version | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

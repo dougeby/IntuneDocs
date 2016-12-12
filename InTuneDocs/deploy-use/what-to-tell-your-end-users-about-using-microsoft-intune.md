@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Resources about the end-user experience with Microsoft Intune | Microsoft Intune
+title: Resources about the end-user experience with Microsoft Intune | Microsoft Docs
 description: Share information with your end users to make your Intune deployment successful.
 keywords: end users, users, communication
 author: barlanmsftms.author: barlan
