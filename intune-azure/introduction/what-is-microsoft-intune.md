@@ -121,7 +121,7 @@ As the public preview progresses, and more features are added, we'll let you kno
 The Azure portal does not support row-by-row review of hardware identifiers for IMEI numbers and Apple serial numbers. In the classic Intune console, you can import details from a comma-seperated-values (.csv) file and overwrite the existing details for individual hardware identifiers. The Azure portal features a single, streamlined option to automatically overwrite details for all hardware identifiers or to ignore new details for existing identifiers.
 
 #### How this affects you
-In the Azure portal, admins will not be able to decide, line item by line, which International Mobile Equipment Identity (IMEI) devices to update. The Intune console continues to support this functionality.
+In the Azure portal, you will not be able to decide, line item by line, which International Mobile Equipment Identity (IMEI) devices to update. The Intune console continues to support this functionality.
 
 #### How to get ready for this change
 We are providing this information in advance so, if it affects you, you can make your support admins aware of this change. This will coincide with the move to the Azure portal, anticipated for the first half of 2017.
