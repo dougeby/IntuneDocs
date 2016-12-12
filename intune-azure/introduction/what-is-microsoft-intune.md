@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 12/09/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -102,3 +102,27 @@ As the public preview progresses, and more features are added, we'll let you kno
 - Conditional access for On-Premises Exchange
 - Device enrollment
 - Role-based access control
+
+## Deprecated features in the preview
+
+### Azure portal support for row-by-row review of hardware identifiers 
+The Azure portal does not support row-by-row review of hardware identifiers for IMEI numbers and Apple serial numbers. In the classic Intune console, you can import details from a comma-seperated-values (.csv) file and overwrite the existing details for individual hardware identifiers. The Azure portal features a single, streamlined option to automatically overwrite details for all hardware identifiers or to ignore new details for existing identifiers.
+
+#### How this affects you
+In the Azure portal, admins will not be able to decide, line item by line item, which International Mobile Equipment Identity (IMEI) devices to update. The Intune administrator console will continue to support this functionality..
+
+#### How to get ready for this change
+Make your support admins aware of this change, which will coincide with the move to the new Azure portal, anticipated in H1, 2017. This notice is being provided far in advance so that you can inform your teams, if this is important to you.
+
+Please click Additional Information to learn more.
+
+
+### Azure portal will not support Default Corporate Device Enrollment profiles in Apple DEP
+The new Azure portal will not support the “default” Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) device serial numbers. This functionality, available in the existing Intune administrator console, is being discontinued to prevent unintentionally assigned profiles. In the Azure portal, serial numbers synchronized from an Apple DEP account will initially have no Corporate Device Enrollment profile assigned.
+
+#### How this affects you
+In the Azure portal, admins will not be able to set a default profile policy across all Apple devices. The Intune administrator console will continue to support this functionality.
+
+#### How to get ready for this change
+Make your support admins aware of this change, which will coincide with the move to the new Azure portal, anticipated in H1, 2017. This notice is being provided far in advance so that you can inform your teams, if this is important to you. 
+
