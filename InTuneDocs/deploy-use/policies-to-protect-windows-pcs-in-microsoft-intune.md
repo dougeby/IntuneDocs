@@ -6,7 +6,7 @@ description: Use these policies to help you ensure the security of Windows PCs w
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
