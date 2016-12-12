@@ -33,4 +33,3 @@ This guide includes:
 - [Quick start guide for Intune](start-with-a-paid-subscription-to-microsoft-intune.md) - Step-by-step instructions to transfer your trial subscription from testing to enterprise management or to set up a new subscription for your organization
 - [Migrate to Intune](migrate-to-intune.md) - Guidance to migrate from your current enterprise mobility management solution to Intune
 - [Next steps with Intune](prevent-company-data-leaks-from-Office-365-mobile-apps.md) - Overview and next steps for common Intune tasks
-- [Phases of Intune deployment](rollout-phases-for-microsoft-intune-deployment.md) - Planning guidance for large Intune deployments
