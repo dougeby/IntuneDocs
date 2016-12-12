@@ -6,7 +6,7 @@ description: Mobile application management policies in Microsoft Intune let you 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
