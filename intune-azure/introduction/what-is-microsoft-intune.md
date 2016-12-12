@@ -46,12 +46,25 @@ Highlights of the new experience include:
 - An HTML-based console built on web standards
 - Microsoft Graph API support to automate many actions
 - Azure AD groups to provide compatibility across all your Azure applications
+- Support for most modern web browsers
 
 If you are looking for documentation for the existing Intune portal, see [the Intune Documentation Library](https://docs.microsoft.com/en-us/intune/)
 
 ## Before you start
 
 To use Intune in the Azure portal, you must have an Intune admin and tenant account. You can sign up for an account [here](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+
+## Supported web browsers for the Azure portal
+
+The Azure portal runs on most modern PCs, Macs, and tablets. Mobile phones are not supported.
+Currently, the following browsers are supported:
+- Microsoft Edge (latest version)
+- Microsoft Internet Explorer 11
+- Safari (latest version, Mac only)
+- Chrome (latest version)
+- Firefox (latest version)
+
+For the latest information about supported browsers, see [here](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices).
 
 ## What's in this library?
 
@@ -82,7 +95,6 @@ Define a compliance level for your devices, then report about any devices which 
 Restrict access to Exchange services depending on conditions you specify.
 [Read more](/intune-azure/conditional-access/what-is-conditional-access)
 
-
 ## What's new in the preview?
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
@@ -103,26 +115,24 @@ As the public preview progresses, and more features are added, we'll let you kno
 - Device enrollment
 - Role-based access control
 
-## Deprecated features in the preview
+## Deprecated features in the Azure portal
 
-### Azure portal support for row-by-row review of hardware identifiers 
+### Support for row-by-row review of hardware identifiers 
 The Azure portal does not support row-by-row review of hardware identifiers for IMEI numbers and Apple serial numbers. In the classic Intune console, you can import details from a comma-seperated-values (.csv) file and overwrite the existing details for individual hardware identifiers. The Azure portal features a single, streamlined option to automatically overwrite details for all hardware identifiers or to ignore new details for existing identifiers.
 
 #### How this affects you
-In the Azure portal, admins will not be able to decide, line item by line item, which International Mobile Equipment Identity (IMEI) devices to update. The Intune administrator console will continue to support this functionality..
+In the Azure portal, admins will not be able to decide, line item by line, which International Mobile Equipment Identity (IMEI) devices to update. The Intune console continues to support this functionality.
 
 #### How to get ready for this change
-Make your support admins aware of this change, which will coincide with the move to the new Azure portal, anticipated in H1, 2017. This notice is being provided far in advance so that you can inform your teams, if this is important to you.
-
-Please click Additional Information to learn more.
+We are providing this information in advance so, if it affects you, you can make your support admins aware of this change. This will coincide with the move to the Azure portal, anticipated for the first half of 2017.
 
 
-### Azure portal will not support Default Corporate Device Enrollment profiles in Apple DEP
-The new Azure portal will not support the “default” Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) device serial numbers. This functionality, available in the existing Intune administrator console, is being discontinued to prevent unintentionally assigned profiles. In the Azure portal, serial numbers synchronized from an Apple DEP account will initially have no Corporate Device Enrollment profile assigned.
+### Support for default Corporate Device Enrollment profiles in Apple DEP
+The Azure portal does not support the “default” Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) device serial numbers. This functionality, available in the existing Intune console, is being discontinued to prevent unintentionally assigned profiles. In the Azure portal, serial numbers synchronized from an Apple DEP account will initially have no Corporate Device Enrollment profile assigned.
 
 #### How this affects you
-In the Azure portal, admins will not be able to set a default profile policy across all Apple devices. The Intune administrator console will continue to support this functionality.
+In the Azure portal, you will not be able to set a default profile policy across all Apple devices. The Intune console continues to support this functionality.
 
 #### How to get ready for this change
-Make your support admins aware of this change, which will coincide with the move to the new Azure portal, anticipated in H1, 2017. This notice is being provided far in advance so that you can inform your teams, if this is important to you. 
+We are providing this information in advance so, if it affects you, you can make your support admins aware of this change. This will coincide with the move to the Azure portal, anticipated for the first half of 2017.
 
