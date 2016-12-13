@@ -2,9 +2,11 @@
 # required metadata
 
 title: What is conditional access? | Intune Azure preview | Microsoft Docs
-description: Intune Azure preview: Learn how to define the conditions users and devices must meet to access company resources in Microsoft Intune Azure preview.
+description: "Intune Azure preview: Learn how to define the conditions users and devices must meet to access company resources in Microsoft Intune Azure preview."
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
