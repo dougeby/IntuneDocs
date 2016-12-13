@@ -28,7 +28,7 @@ ms.suite: ems
 
 Use the Microsoft Intune App Wrapping Tool for iOS to enable Intune app protection policies for in-house iOS apps without changing the code of the app itself.
 
-The tool is a macOS command-line application that creates a wrapper around an app. Once an app is processed, you can change the app's functionality using Intune [app protection policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) deployed by the IT administrator.
+The tool is a macOS command-line application that creates a wrapper around an app. Once an app is processed, you can change the app's functionalty by deploying [app protection policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) to it.
 
 To download the tool, see [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) on GitHub.
 
@@ -65,7 +65,7 @@ You will need the following to distribute apps wrapped by Intune:
 
 * A developer account with the Apple Developer Enterprise Program.
 
-* In-house & ad-hoc distribution signing certificate with valid Team Identifier.
+* In-house and ad-hoc distribution signing certificate with valid Team Identifier.
 
   * You will need the SHA1 hash of the signing certificate as a parameter to the Intune App Wrapping Tool.
 
@@ -73,7 +73,7 @@ You will need the following to distribute apps wrapped by Intune:
 * In-house distribution provisioning profile.
 
 ### Steps to create an Apple Developer Enterprise account
-1. Navigate to the [Apple Developer Enterprise Program site](https://developer.apple.com/programs/enterprise/).
+1. Go to the [Apple Developer Enterprise Program site](https://developer.apple.com/programs/enterprise/).
 
 2. In the top right of the page, click **Enroll**.
 
@@ -83,11 +83,9 @@ You will need the following to distribute apps wrapped by Intune:
 
 5. Select your **Entity Type** and click **Continue**.
 
-6. Fill out the form with your organization's information. Click **Continue**.
+6. Fill out the form with your organization's information. Click **Continue**. At this point, Apple contacts you to verify that you are authorized to enroll your organization.
 
-7. At this point, you will be contacted by Apple to verify that you are authorized to enroll your organization.
-
-8. After verification, you will be asked to **Agree to License**.
+8. After verification, click **Agree to License**.
 
 9. After agreeing to license, finish by **purchasing and activating the program**.
 
@@ -95,7 +93,7 @@ You will need the following to distribute apps wrapped by Intune:
 
 ### Steps to create an Apple signing certificate
 
-1. Navigate to the [Apple Developer portal](https://developer.apple.com/).
+1. Go to the [Apple Developer portal](https://developer.apple.com/).
 
 2. In the top right of the page, click **Account**.
 
@@ -119,7 +117,7 @@ You will need the following to distribute apps wrapped by Intune:
 
 9. Follow the instructions above to create a Certificate Signing Request. On your macOS computer, launch the **Keychain Access** application.
 
-10. On the macOS menu at the top of the screen, go to  **Keychain Access -> Certificate Assistant -> Request a Certificate From a Certificate Authority**.  
+10. On the macOS menu at the top of the screen, go to  **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority**.  
 
   ![Request a certificate from a Certificate Authority in Keychain Access](../media/app-wrapper/iOS-signing-cert-5.png)
 
@@ -129,7 +127,7 @@ You will need the following to distribute apps wrapped by Intune:
 
 12. Return to the Apple developer site. Click **Continue**. Then upload the CSR file.
 
-13. Apple will generate your signing certificate. Download and save it to a memorable location on your macOS computer.
+13. Apple generates your signing certificate. Download and save it to a memorable location on your macOS computer.
 
   ![Download your signing certificate](../media/app-wrapper/iOS-signing-cert-7.png)
 
@@ -139,7 +137,7 @@ You will need the following to distribute apps wrapped by Intune:
 
   ![Add your certificate to a keychain](../media/app-wrapper/iOS-signing-cert-8.png)
 
-16. An informational window will appear. Scroll to the bottom and look under the **Fingerprints** label. You will see a field labeled **SHA1**. Copy this string. This will be used for the -c parameter for the App Wrapping Tool.
+16. An informational window appears. Scroll to the bottom and look under the **Fingerprints** label. Copy the **SHA1** string to use as the -c parameter for the App Wrapping Tool.
 
   ![Add your certificate to a keychain](../media/app-wrapper/iOS-signing-cert-9.png)
 
@@ -151,13 +149,13 @@ You will need the following to distribute apps wrapped by Intune:
 
 2. Click **Certificates, IDs & Profiles**.
 
-3. Click the ![Apple Developer portal plus sign](../media/app-wrapper/iOS-signing-cert-2.png) in the rop right corner to add an iOS provisioning profile.
+3. Click the ![Apple Developer portal plus sign](../media/app-wrapper/iOS-signing-cert-2.png) in the top right corner to add an iOS provisioning profile.
 
 4. Choose to create an **In House** provisioning profile under **Distribution**.
 
   ![Select In House provisioning profile](../media/app-wrapper/iOS-provisioning-profile-1.png)
 
-5. Click **Continue**. **Link** the previously generated signing certificate to the provisioning profile.
+5. Click **Continue**. Make sure to link the previously generated signing certificate to the provisioning profile.
 
 6. Follow the steps to download your profile (with extension .mobileprovision) to your macOS computer.
 
