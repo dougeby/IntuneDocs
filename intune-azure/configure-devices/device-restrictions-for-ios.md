@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -217,11 +217,11 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 ## Cloud and Storage	
 - 	**Backup to iCloud** - Allow the user to back up the device to iCloud.	
 - 	**Document sync to iCloud (supervised only)** - Allow document and key-value synchronization to your iCloud storage space.	
-- 	**Photo stream syncing to iCloud** - Allow photos on the device to sync to iCloud.	
+- 	**Photo stream syncing to iCloud** - Lets users enable **My Photo Stream** on their device which allow photos to sync to iCloud and be available on all the users devices.	
 - 	**Encrypted backup** - Require any device backups to be encrypted.	
-- 	**iCloud Photo Library** - Allow the user to store photos on iCloud. If disabled, any photos already stored on iCloud will be removed.	
+- 	**iCloud Photo Library** - If set to **No**, disables the use of iCloud photo library which lets users store photos and videos in the cloud.	Any photos not fully downloaded from iCloud Photo Library to the device will be removed from the device if this is set to **No**.
 - 	**Managed apps sync to cloud** - Allow apps that you manage with Intune to sync data to the user's iCloud account.
-- 	**Shared photo stream** - Allow use of the iOS shared photo stream feature.
+- 	**Shared photo stream** - Set to **No** to disable **iCloud Photo Sharing** on the device..
 - 	**Activity continuation** - Allow the user to continue work that they started on an iOS device on another iOS or Mac OS X device (Handoff).
 		
 ## Kiosk	
