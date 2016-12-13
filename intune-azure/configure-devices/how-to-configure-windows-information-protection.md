@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to configure Windows Information Protection with Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Learn about the Intune settings you can use to manage Windows Information protection."
+title: Configure Windows Information Protection - Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn about the Intune settings you can use to manage Windows Information Protection."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure Windows Information Protection with Microsoft Intune
+# How to configure Windows Information Protection with Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -36,4 +36,5 @@ With the increase of employee-owned devices in the enterprise, there’s also an
 
 This Intune policy manages the list of apps protected by Windows Information Protection, enterprise network locations, protection level, and encryption settings.
 
+## Next steps
 For more information, see [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).

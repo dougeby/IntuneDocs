@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to create Microsoft Intune device configuration profiles| Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Learn how to create Intune device profiles."
+title: Create Intune device configuration profiles| Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to create Intune device configuration profiles."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to create Microsoft Intune device configuration profiles
+# How to create device configuration profiles in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -52,5 +52,5 @@ ms.suite: ems
 
 The new profile is created on the list of profiles blade.
 
+## Next steps
 For information about how to assign device profiles, see [How to assign device profiles with Microsoft Intune](/intune-azure/configure-devices/how-to-assign-device-profiles).
-
