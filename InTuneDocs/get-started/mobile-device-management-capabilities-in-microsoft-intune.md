@@ -6,7 +6,7 @@ description: Read this topic to find out how Intune can help you manage devices 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

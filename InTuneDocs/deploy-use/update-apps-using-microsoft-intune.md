@@ -6,7 +6,7 @@ description: Use the information in this topic to understand how to update apps 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
