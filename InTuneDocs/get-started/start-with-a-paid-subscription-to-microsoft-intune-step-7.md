@@ -49,13 +49,6 @@ Some of the tasks that users can do in the Company Portal are:
 -   Download software that is deployed by your organization
 -   Contact the IT department for support
 
-> [!NOTE]
-> The Company Portal app is not yet available in certain countries.
->
-> __iOS__: The Company Portal app for iOS is published to [all available territories](https://go.microsoft.com/fwlink/?linkid=831284) for the Apple iOS App Store.
->
-> __Android__: The Company Portal app for Android is not currently available in China. For these countries, an alternative solution is to [sideload the Android version of the Company Portal app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
-
 ## Customize Company Portal settings
 Customizing the Company Portal helps provide a familiar and helpful experience for your end users. Log in to the [Microsoft Intune administrator console](https://manage.microsoft.com) as a tenant or service administrator, choose **Admin** &gt; **Company Portal** and configure the Company Portal settings.
 
