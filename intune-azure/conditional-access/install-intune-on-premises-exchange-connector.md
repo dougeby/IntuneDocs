@@ -2,9 +2,11 @@
 # required metadata
 
 title: Exchange connector for on-premises EAS | Intune Azure preview | Microsoft Docs
-description: Intune Azure preview: Exchange ActiveSync MDM - Use Connector tool to enable communication between the Intune admin console and on-premises Exchange Server
+description: "Intune Azure preview: Exchange ActiveSync MDM - Use Connector tool to enable communication between the Intune admin console and on-premises Exchange Server"
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
