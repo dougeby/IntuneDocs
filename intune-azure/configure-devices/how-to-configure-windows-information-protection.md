@@ -36,5 +36,5 @@ With the increase of employee-owned devices in the enterprise, there’s also an
 
 This Intune policy manages the list of apps protected by Windows Information Protection, enterprise network locations, protection level, and encryption settings.
 
-## Next steps
+### Next steps
 For more information, see [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
