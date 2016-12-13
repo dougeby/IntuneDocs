@@ -35,5 +35,5 @@ ms.suite: ems
 3. On the next blade, click **Select groups**, and then, in the **Select groups** blade, choose the Azure AD groups to which you want to assign the profile. You can hold down the **CTRL** key to select multiple groups.
 4. When you are done, on the **Select groups** blade, choose **Select**.
 
-## Next steps
+### Next steps
 See [How to monitor device profiles](how-to-monitor-device-profiles.md) for information to help you monitor device profile assignments.
