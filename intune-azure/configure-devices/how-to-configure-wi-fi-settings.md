@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to configure Microsoft Intune Wi-Fi settings | Intune Azure preview | Microsoft Docs
+title: How to configure Intune Wi-Fi settings | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to use Intune to configure Wi-Fi connections on devices you manage."
 keywords:
 author: robstackmsft
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure Wi-Fi settings in Microsoft Intune
+# How to configure Wi-Fi settings in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -70,4 +70,3 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
-
