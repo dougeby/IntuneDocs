@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Intune custom settings for iOS devices
+# Intune custom settings for iOS devices in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -43,5 +43,3 @@ This capability allows you to deploy iOS settings that are not configurable with
 Ensure that the settings you export from the Apple Configurator tool are compatible with the version of iOS on the devices to which you deploy the iOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) website.
 
 The file you imported will be displayed in the **File contents** area of the blade.
-
-

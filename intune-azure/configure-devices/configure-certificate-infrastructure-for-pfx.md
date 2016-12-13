@@ -25,11 +25,13 @@ ms.suite: ems
 
 ---
 # Configure certificate infrastructure
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
 This topic describes what you need in order to create and deploy .PFX certificate profiles.
 
 To do any certificate-based authentication in your organization, you need an Enterprise Certification Authority.
 
-To use .PFX Certificate profiles, in addition to the Enterprise Certification Authority, you  also need:
+To use .PFX Certificate profiles, in addition to the Enterprise Certification Authority, you also need:
 
 -   A computer that can communicate with the Certification Authority, or you can use the Certification Authority computer itself.
 
