@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to create an Exchange on-premises conditional access policy | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: This topic describes how you can configure Exchange on-premises conditional access in Intune."
+title: Exchange on-premises conditional access policy | Intune Azure preview | Microsoft Docs
+description: Intune Azure preview: How you can configure Exchange on-premises conditional access and legacy Exchange Online Dedicated in Intune
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe
 ms.date: 12/07/2016
@@ -17,14 +17,14 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer:
+#ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# How to create a conditional access policy for  Exchange on-premises and legacy Exchange Online Dedicated in Microsoft Intune
+# How to create a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated in Microsoft Intune Azure preview
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -46,8 +46,7 @@ This connector should be downloaded from the Intune admin console. For a walkthr
 
 The connector can be installed on any machine as long as that machine is able to communicate with the Exchange server.
 
--
-  - The connector supports **Exchange CAS environment**. You can technically install the connector on the Exchange CAS server directly if you wish to, but it is not recommended, as it will increase the load on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
+- The connector supports **Exchange CAS environment**. You can technically install the connector on the Exchange CAS server directly if you wish to, but it is not recommended, as it will increase the load on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
 - **Exchange ActiveSync** must be configured with certificate based authentication, or user credential entry.
 
 When conditional access policies are configured and targeted to a user, before a user can connect to their email, the **device** they use must be:
@@ -77,7 +76,7 @@ If the device does not meet conditional access settings, the user is presented w
 
 > Android for Work is currently being rolled out across Intune tenants over the next few months.
 
-For additional information about the support status of Android for Work, read the Android for Work announcement in the October 2016 edition of [What's New in Microsoft Intune](https://docs.microsoft.com/en-us/intune/whats-new/whats-new-archive#october-2016).+
+For additional information about the support status of Android for Work, read the Android for Work announcement in the October 2016 edition of [What's New in Microsoft Intune](https://docs.microsoft.com/en-us/intune/whats-new/whats-new-archive#october-2016).
 
 ## Support for PCs
 
