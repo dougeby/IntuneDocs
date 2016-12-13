@@ -63,6 +63,7 @@
 ## Configure devices
 ### [Manage settings and features on your devices with policies](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS settings](deploy-use/ios-policy-settings-in-microsoft-intune.md)
+#### [Restore managed iOS devices](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android and Samsung KNOX settings](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Use a custom policy to create a Wi-Fi profile with a pre-shared key](deploy-use/pre-shared-key-wi-fi-profile.md)
 ##### [Use a custom policy to create a per-app VPN profile for Android devices](deploy-use/per-app-vpn-for-android-pulse-secure.md)
@@ -123,7 +124,7 @@
 ## [Protect apps and data](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [Device compliance policies](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [Create a device compliance policy](deploy-use/create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [ Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
 #### [Android for Work](deploy-use/afw-compliance-policy-settings-in-microsoft-intune.md)
 #### [iOS](deploy-use/ios-compliance-policy-settings-in-microsoft-intune.md)
 #### [Windows & Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
@@ -153,7 +154,9 @@
 #### [Get ready to configure MAM policies](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Create and deploy MAM policies](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [MAM policies for Android](deploy-use/android-mam-policy-settings.md)
+#### [Android apps with MAM policies](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 #### [MAM policies for iOS](deploy-use/ios-mam-policy-settings.md)
+#### [iOS apps with MAM policies](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 #### [Validate MAM policies](deploy-use/validate-mobile-application-management.md)
 #### [Monitor policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Manage data transfer between iOS apps](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -173,9 +176,9 @@
 ### [Wipe managed company app data](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [How to educate your end users about Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Restore managed iOS devices](deploy-use/restore-managed-ios-devices-from-backup.md)
-### [Android apps with MAM policies](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [iOS apps with MAM policies](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+### [How your Android users get their apps](deploy-use/how-your-android-users-get-their-apps.md)
+### [How your iOS users get their apps](deploy-use/how-your-ios-users-get-their-apps.md)
+### [How your Windows users get their apps](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Develop and Customize Apps
 ## [Overview of the Microsoft Intune App SDK](develop/intune-app-sdk.md)
