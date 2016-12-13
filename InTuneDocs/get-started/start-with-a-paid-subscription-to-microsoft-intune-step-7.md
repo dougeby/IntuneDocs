@@ -51,7 +51,9 @@ Some of the tasks that users can do in the Company Portal are:
 
 > [!NOTE]
 > The Company Portal app is not yet available in certain countries.
+>
 > __iOS__: The Company Portal app for iOS is published to [all available territories](https://go.microsoft.com/fwlink/?linkid=831284) for the Apple iOS App Store.
+>
 > __Android__: The Company Portal app for Android is not currently available in China. For these countries, an alternative solution is to [sideload the Android version of the Company Portal app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
 ## Customize Company Portal settings
