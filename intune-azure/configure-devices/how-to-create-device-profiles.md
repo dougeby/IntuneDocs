@@ -52,5 +52,5 @@ ms.suite: ems
 
 The new profile is created on the list of profiles blade.
 
-## Next steps
+### Next steps
 For information about how to assign device profiles, see [How to assign device profiles with Microsoft Intune](/intune-azure/configure-devices/how-to-assign-device-profiles).
