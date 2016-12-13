@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Intune custom settings for macOS devices
+# Custom settings for macOS devices in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -43,4 +43,3 @@ This capability allows you to deploy macOS settings that are not configurable wi
 Ensure that the settings you export from the Apple Configurator tool are compatible with the version of macOS on the devices to which you deploy the macOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) website.
 
 The file you imported will be displayed in the **File contents** area of the blade.
-
