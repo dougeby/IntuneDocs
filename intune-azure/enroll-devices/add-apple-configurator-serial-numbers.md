@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Add Apple Configurator serial numbers
+# Add Apple Configurator serial numbers in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -36,7 +36,7 @@ Use these steps to add serial numbers to Intune when you are enrolling corporate
 
 You must [enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md) before adding Apple Configurator serial numbers to Intune.
 
-**To add Apple Configurator serial numbers to Intune:**
+**To add Apple Configurator serial numbers to Intune**
 
 1. Create a two-column, comma-separated value (.csv) list without a header. Add the IMEI identifier in the left column, and the details in the right column. The current maximum for the list is 500 rows. In a text editor, the .csv list looks something like this:
 
@@ -71,6 +71,6 @@ The device serial numbers can have one of two states:
 - Not Contacted - the device has never connected to the Intune service.
 - Pending Reset - the device is enrolled, but a change has been made (for example, enrollment settings or the applied DEP profile have changed). If you change the DEP profile of a device, the changes are not applied until the device is unenrolled, and then re-enrolled.
 
-**To view the state of a serial number:**
+**To view the state of a serial number**
 
 On the **Apple Configurator Serial Numbers** blade, select the serial number whose state you want to see, and look under the **State** item.

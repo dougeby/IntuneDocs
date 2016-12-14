@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll iOS devices with Apple Configurator and direct enrollment | Intune Azure preview | Microsoft Docs
+title: iOS direct enrollment with Apple Configurator | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with direct enrollment."
 keywords:
 author: staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Enroll iOS devices with Apple Configurator and direct enrollment
+# Enroll iOS devices with Apple Configurator and direct enrollment in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -93,6 +93,6 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
    f. When the **Profile Installed** box confirms the profile as Installed, choose **Done**.
 
-4. On the iOS device, open **Settings** and go to **General** > **Device Management** > **Management Profil**e. Confirm that the profile installation is listed, and check the iOS policy restrictions and installed apps. Policy restrictions and apps might take up to 10 minutes to appear on the device.
+4. On the iOS device, open **Settings** and go to **General** > **Device Management** > **Management Profile**. Confirm that the profile installation is listed, and check the iOS policy restrictions and installed apps. Policy restrictions and apps might take up to 10 minutes to appear on the device.
 
 5. Distribute devices. The iOS device is now enrolled with Intune and managed.
