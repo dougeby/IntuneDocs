@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Choose iOS device enrollment method for Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Learn how to set up enrollment of iOS devices."
+title: Choose iOS device enrollment method for Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to set up enrollment of iOS devices in Microsoft Intune."
 keywords:
 author: staciebarker
 ms.author: stabar
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Choose iOS device enrollment method for Microsoft Intune
+# Choose iOS device enrollment method for Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -52,6 +52,3 @@ DEP deploys an enrollment profile “over the air” to devices that are purchas
 
 ## Use the device enrollment manager (DEM)
 Device enrollment manager is a type of user account that can enroll and manage up to 1,000 devices. You add existing users to the DEM account to give them these capabilities. Each device that the DEM user enrolls uses a single Intune license. For more information, see [Enroll devices using device enrollment manager](enroll-devices-using-device-enrollment-manager.md).
-
-
-

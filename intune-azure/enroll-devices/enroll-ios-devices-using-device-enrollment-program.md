@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll iOS devices using Device Enrollment Program | Intune Azure preview | Microsoft Docs
+title: Enroll iOS devices - Device Enrollment Program | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to enroll corporate-owned iOS devices using the Device Enrollment Program."
 keywords:
 author: staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Enroll iOS devices using Device Enrollment Program
+# Enroll iOS devices using Device Enrollment Program in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -139,7 +139,6 @@ Devices that are configured with user affinity can install and run the Company P
 4. The user can now sign in to the Company Portal by using the UPN that they used when setting up the device.
 
 5. After logging in, users are prompted to enroll their device. The first step is to identify their device. The app presents a list of iOS devices that have already been corporate enrolled and assigned to the user’s Intune account. They should choose the matching device. If this device is not already corporate enrolled, they should choose new device to continue with the standard enrollment flow.
-
 
 6. On the next screen, users must confirm the serial number of the new device. Users can tap the link confirm the Serial Number to launch the Settings app to verify the serial number. Users must then enter the last four characters of the serial number into the Company Portal app.
 
