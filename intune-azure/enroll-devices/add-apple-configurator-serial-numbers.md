@@ -26,17 +26,17 @@ ms.suite: ems
 
 ---
 
-# Add Apple Configurator serial numbers
+# Add Apple Configurator serial numbers in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use these steps to add serial numbers to Intune when you are enrolling corporate-owned iOS devices using Apple Configurator running on a Mac computer. This process resets the device to factory settings and prepares it to run Setup Assistant, installing the company's policies for the device’s new user. For more details about using enrolling iOS devices by using Apple Configurator, see [Enroll iOS devices with Apple Configurator](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md).
+Use these steps to add serial numbers to Intune when you are enrolling corporate-owned iOS devices using Apple Configurator running on a Mac computer. This process resets the device to factory settings and prepares it to run Setup Assistant, installing the company's policies for the device’s new user. For more details about using enrolling iOS devices by using Apple Configurator, see [Enroll iOS devices with Apple Configurator](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md).
 
 ## Prerequisites
 
-You must [enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md) before adding Apple Configurator serial numbers to Intune.
+You must [enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md) before adding Apple Configurator serial numbers to Intune.
 
-**To add Apple Configurator serial numbers to Intune:**
+**To add Apple Configurator serial numbers to Intune**
 
 1. Create a two-column, comma-separated value (.csv) list without a header. Add the IMEI identifier in the left column, and the details in the right column. The current maximum for the list is 500 rows. In a text editor, the .csv list looks something like this:
 
@@ -55,7 +55,7 @@ You must [enroll iOS devices with Apple Configurator by using Setup Assistant](e
 
 ## Assign a profile to specific serial numbers
 
-You can assign profiles in more than one place. You can use the steps below, or you can assign profiles from the Apple Configurator Enrollment Profiles blade (see [Enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md).  
+You can assign profiles in more than one place. You can use the steps below, or you can assign profiles from the Apple Configurator Enrollment Profiles blade (see [Enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md).  
 
 1. On the **Apple Configurator Serial Numbers** blade, select the serial numbers you want to assign a profile to, and then select **Assign Profile**.
 
@@ -71,6 +71,6 @@ The device serial numbers can have one of two states:
 - Not Contacted - the device has never connected to the Intune service.
 - Pending Reset - the device is enrolled, but a change has been made (for example, enrollment settings or the applied DEP profile have changed). If you change the DEP profile of a device, the changes are not applied until the device is unenrolled, and then re-enrolled.
 
-**To view the state of a serial number:**
+**To view the state of a serial number**
 
 On the **Apple Configurator Serial Numbers** blade, select the serial number whose state you want to see, and look under the **State** item.
