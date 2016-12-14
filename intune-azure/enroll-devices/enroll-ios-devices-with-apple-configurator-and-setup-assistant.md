@@ -73,7 +73,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 After you create Apple Configurator profiles, you can assign device serial numbers to the profiles. To be able to assign serial numbers, you must first add them to Intune by following the steps in [Add Apple Configurator serial numbers](add-apple-configurator-serial-numbers.md).
 
-**To assign serial numbers to Apple Configurator profiles:**
+### Assign serial numbers to Apple Configurator profiles
 
 1. From the **Apple Configurator Enrollment Profiles** blade, select the profile that you want to assign serial numbers to.
 
@@ -85,7 +85,7 @@ After you create Apple Configurator profiles, you can assign device serial numbe
 
 After you create the profile and assign serial numbers, you have to export the profile from Intune, either as a URL or as a file in the format described below. You then manually import it to the Apple Configurator program on a Mac, after which the Apple Configurator program deploys it to the devices.
 
-### To export a profile using Setup Assistant enrollment
+### Export a profile using Setup Assistant enrollment
 
 1. On the **Apple Configurator Enrollment Profiles** blade, choose the profile to export.
 
@@ -144,7 +144,7 @@ After you create the profile and assign serial numbers, you have to export the p
 
 Devices that are configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete the additional steps described below to complete the Setup Assistant and install the Company Portal app.
 
-**How users enroll corporate-owned iOS devices with user affinity **
+### How users enroll corporate-owned iOS devices with user affinity
 
 1. When users turn on their device, they are prompted to complete the Setup Assistant. During setup, users are prompted for their credentials. They must use the credentials (i.e., the unique personal name or UPN) that are associated with their subscription in Intune.
 
