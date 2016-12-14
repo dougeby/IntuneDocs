@@ -63,7 +63,7 @@ For each user, you can get details on:
   * Last used
 
 ### Android 7.1.1 support for Intune <!--694397-->
-Intune fully supports Android 7.1.1 for Android devices in MDM scenarios.
+Intune now fully supports Android 7.1.1 for Android devices. 
 
 ## Notices
 
