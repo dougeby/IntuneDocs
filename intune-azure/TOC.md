@@ -154,4 +154,4 @@
 ### [App Wrapping Tool for iOS](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
 ### [App Wrapping Tool for Android](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
 ## [Intune App SDK](/intune/develop/intune-app-sdk)
-## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/intune_graph_overview)
+## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
