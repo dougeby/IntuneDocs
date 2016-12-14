@@ -31,7 +31,7 @@ ms.suite: ems
 
 You can create a list of International Mobile Equipment Identity (IMEI) numbers to identify your corporate devices. These devices may or may not be enrolled, and they have a state of either “Enrolled” or “Not contacted.” “Not contacted” means that the device never checks in with the Intune service. 
 
-To create the list, create a two-column, comma-separated value (.csv) list without a header. Add the IMEI identifier in the left column, and the details in the right column. The current maximum for the list if 500 rows.
+To create the list, create a two-column, comma-separated value (.csv) list without a header. Add the IMEI identifier in the left column, and the details in the right column. The current maximum for the list is 500 rows.
 
 In a text editor, the .csv list looks something like this:
 
