@@ -73,10 +73,10 @@ You can also learn more about Azure AD security groups:
 > [!NOTE]
 You may notice that the Azure AD security group documentation does not discuss the creation of groups for devices. That functionality will be enabled in Azure AD before the Intune group migration begins.
 
-# Migration details
+## Migration details
 Here are the details of how your Intune groups will be migrated to Azure AD security groups.
 
-## Migration of existing groups
+### Migration of existing groups
 
 | Intune group becomes...|...Azure AD security group|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
@@ -88,10 +88,10 @@ Here are the details of how your Intune groups will be migrated to Azure AD secu
 |A group with an exclude condition|...will not be migrated. Exclude conditions are not supported during the creation of static groups in Azure AD. An exclude condition can be used when creating a dynamic group in Azure AD.|
 |The default groups **All Users**, **Ungrouped Users**, **All Devices**, **Ungrouped devices**, **All Computers**, **All Mobile Devices**, **All MDM managed devices**, and **All EAS managed devices**, that you use in Intune policy  |Azure AD security groups. Default groups that are not being used would have to be created by the customer when needed by using dynamic groups.|
 
-## Changes in hierarchical views
+### Changes in hierarchical views
 Hierarchical view for groups in Intune 	Parent child relationship in Intune was a Superset-subset relationship, while in Azure AD that’s not the case. Child can have members that the parent didn’t have. Groups can also be cyclic in nature in Azure AD – a parent group can be a child group’s child.
 
-## Attribute conversion during migration
+### Attribute conversion during migration
 Attributes are device properties that may be used in defining groups. This table describes how those criteria will be migrated to Azure AD security groups.
 
 | Intune attribute|Azure AD attribute|
@@ -108,13 +108,13 @@ Attributes are device properties that may be used in defining groups. This table
 |Nested groups within dynamic groups|Dynamic group with one level of nesting|
 
 
-# Migration of policies
+## Migration of policies
 While the group migration is taking place, you will continue to manage your policies in the Intune console. There will be a link in the Intune console to your Azure management console, where you will manage your groups. Your policies will continue to be deployed to the migrated Azure AD security groups that parallel your old Intune groups.
 
 When all of Intune's functionality is migrated to the Azure management portal (around the first quarter of 2017), you will manage policies and groups there.
 
 	 
-## See also
+### See also
 [Managing access to resources with Azure Active Directory groups](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)
 
 [Managing groups in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)
