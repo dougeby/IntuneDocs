@@ -91,7 +91,9 @@ Now it’s time to head over to Intune to start managing your users, their devic
 
 ## Keeping the admin experiences straight
 ### Classic Intune
-There are two portals you will use for classic Intune: the Office 365 Admin center ([portal.office.com](https://portal.office.com)) and the Intune administration console ([manage.microsoft.com](https://manage.microsoft.com)).
+There are two portals you will use for classic Intune: 
+- The Office 365 Admin center ([portal.office.com](https://portal.office.com))
+- The Intune administration console ([manage.microsoft.com](https://manage.microsoft.com))
 
 Normally, you’ll do your work in the Intune administration console, shown below. This is the site where you set up and manage your groups, policies, devices, and apps.
 
