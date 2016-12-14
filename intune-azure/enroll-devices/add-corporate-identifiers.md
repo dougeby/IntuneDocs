@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to add IMEI identifiers to Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Learn how to add corporate identifiers to Intune. "
+title: How to add IMEI identifiers to Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to add corporate identifiers (IMEI numbers) to Microsoft Intune. "
 keywords:
 author: staciebarker
 ms.author: stabark
@@ -25,11 +25,11 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to add IMEI identifiers to Microsoft Intune
+# How to add IMEI identifiers to Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-You can create a list of International Mobile Equipment Identity (IMEI) numbers to identify your corporate devices. These devices may or may not be enrolled, and they have a state of either “Enrolled” or “Not contacted.” “Not contacted” means that the device never checks in with the Intune service. 
+You can create a list of International Mobile Equipment Identity (IMEI) numbers to identify your corporate devices. These devices may or may not be enrolled, and they have a state of either “Enrolled” or “Not contacted.” “Not contacted” means that the device never checks in with the Intune service.
 
 To create the list, create a two-column, comma-separated value (.csv) list without a header. Add the IMEI identifier in the left column, and the details in the right column. The current maximum for the list is 500 rows.
 

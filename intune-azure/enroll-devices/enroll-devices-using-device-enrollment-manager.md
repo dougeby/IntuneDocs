@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll devices using the device enrollment manager in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Enroll devices - device enrollment manager | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Use the device enrollment manager account to enroll devices in Intune. "
 keywords:
 author: staciebarker
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# Enroll devices using device enrollment manager in Microsoft Intune
+# Enroll devices using device enrollment manager in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,7 +42,7 @@ As an example, you could assign a device enrollment manager user account to a st
 -   Configure access to company data.
 
 
-**A device enrollment manager scenario:**
+**A device enrollment manager scenario**
 A restaurant wants point-of-sale tablets for its wait staff, and order monitors for its kitchen staff. The employees never need to access company data or sign in as users. The Intune admin creates a device enrollment manager account and enrolls the company-owned devices by using that account. Alternatively, the admin could give the device enrollment manager credentials to a restaurant manager, which would let the manager enroll and manage the devices.
 
 The admin or manager can deploy role-specific apps to the restaurant devices. An admin can also select and retire retire the device from mobile device management.
@@ -85,7 +85,7 @@ Deleting a device enrollment manager does not affect enrolled devices. When a de
 
 -   The deleted device enrollment manager account’s relationship to enrolled devices remains, but no additional devices can be enrolled.
 
-**To remove a device enrollment manager**:
+**To remove a device enrollment manager**
 
 1.  In the **Enrollment** blade, choose **Device Enrollment Managers**.
 
@@ -96,5 +96,3 @@ Deleting a device enrollment manager does not affect enrolled devices. When a de
 1. In the **Enrollment** blade, choose **Device Enrollment Managers**.
 
 2. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Properties**.
-
-
