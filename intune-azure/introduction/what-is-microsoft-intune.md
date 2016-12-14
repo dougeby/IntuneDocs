@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 12/12/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -95,6 +95,10 @@ Define a compliance level for your devices, then report about any devices which 
 ### Conditional access
 Restrict access to Exchange services depending on conditions you specify.
 [Read more](/intune-azure/conditional-access/what-is-conditional-access)
+### Access control
+Control who can perform various Intune actions, and who those actions apply to. You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles.
+[Read more](/intune-azure/access-control/role-based-access-control)
+
 
 ## What's new in the preview?
 

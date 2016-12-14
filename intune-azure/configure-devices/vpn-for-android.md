@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Intune VPN settings for Android devices
+# VPN settings for Android devices in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -36,12 +36,12 @@ Depending on the settings you choose, not all values in the list below will be c
 **Servers** - Adds one or more VPN servers that devices will connect to with the following options:
 - **Add** - Opens the **Add Row** blade where you can specify the following information:
 	- **Description** - Specify a descriptive name for the entry like **Contoso VPN server**.
-	- **IP address or FQDN** - Provide the IP address or fully qualified domain name of the VPN server that devices will connect to. Examples: **192.168.1.1**, **vpn.contoso.com**. 
+	- **IP address or FQDN** - Provide the IP address or fully qualified domain name of the VPN server that devices will connect to. Examples: **192.168.1.1**, **vpn.contoso.com**.
 	- **Default server** - Enables this server as the default server that devices will use to establish the connection. Make sure to set only one server as the default.
 - **Import** - Browse to a file containing a comma-seperated list of servers in the format description, IP address or FQDN, Default server. Choose **OK** to import these into the **Servers** list.
 - **Export** - Exports the list of servers to a comma-seperated-values (csv) file.
 
-**Authentication method** - 
+**Authentication method** -
 - **Certificates** - Select a SCEP or PKCS certificate profile you previously created to authenticate the connection. For more details about certificate profiles, see [How to configure certificates](how-to-configure-certificates.md).
 - **Username and password** - End users must supply a user name and password to log into the VPN server.
 
