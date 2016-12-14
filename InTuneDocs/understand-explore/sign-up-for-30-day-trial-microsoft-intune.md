@@ -119,8 +119,8 @@ There are two portals you will use for the Intune Azure preview:
 
 The first time you sign on to Intune in Azure, you may not see it on your Azure dashboard. To add the Intune service to your Azure dashboard:
 1. Choose **More services >** in the list of Azure services to the left of the dashboard, and enter Intune in the search box.
-2. Select Intune from the list and click the star to add the service to the list of services.<br/> ![Image of selecting Intune from services list](./media/sign-up/azure-add-intune1.png)
-3. Click **Intune** in the list of services to open the Intune dashboard.
+2. Choose **Intune** from the list, and select the star to add the service to the list of services.<br/> ![Image of selecting Intune from services list](./media/sign-up/azure-add-intune1.png)
+3. Choose **Intune** in the list of services to open the Intune dashboard.
 
 Normally, you’ll do your work in the Intune dashboard, shown below. This is the site where you set up and manage your groups, policies, devices, and apps.
 
