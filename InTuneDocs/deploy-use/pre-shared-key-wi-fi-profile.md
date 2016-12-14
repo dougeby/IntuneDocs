@@ -76,6 +76,7 @@ Here’s an example of the XML code for an Android or Windows Wi-Fi profile:
 >  `<hex>53534944</hex>` should be set to the hexadecimal value of `<name><SSID of wifi profile></name>`.
 >  Windows 10 devices may return a false *0x87D1FDE8 Remediation failed* error, but will still be provisioned with the profile.
 
+```
     <!--
     <Name of wifi profile> = Name of profile
     <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
@@ -115,10 +116,12 @@ Here’s an example of the XML code for an Android or Windows Wi-Fi profile:
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## EAP-based Wi-Fi profile
 Here’s  an example of the XML code for an EAP-based Wi-Fi profile:
 
+```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name>testcert</name>
       <SSIDConfig>
@@ -196,6 +199,7 @@ Here’s  an example of the XML code for an EAP-based Wi-Fi profile:
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## Create the XML file from an existing Wi-Fi connection
 You can also create an XML file from an existing Wi-Fi connection:

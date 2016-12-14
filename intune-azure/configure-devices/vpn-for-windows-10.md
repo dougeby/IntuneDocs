@@ -59,24 +59,28 @@ Depending on the settings you choose, not all values in the list below will be c
 
 **Custom XML**/**EAP XML** - Specify any custom XML commands that configure the VPN connection.
 Example for Pulse Secure:
+
 ```
 <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 
 ```
 
 Example for CheckPoint Mobile VPN:
+
 ```
 <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 
 ```
 
 Example for Dell SonicWALL Mobile Connect:
+
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 
 ```
 
 Example for F5 Edge Client:
+
 ```
 <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 
