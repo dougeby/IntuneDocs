@@ -67,18 +67,16 @@ Intune fully supports Android 7.1.1 for Android devices in MDM scenarios.
 
 ## Notices
 
+### Defaulting to managing Windows desktop devices through Windows settings <!--663050-->
+The Company Portal website will provide Windows 10 desktop users with enrollment instructions that guide them through the process of adding a work or school account via Windows settings. This method of enrollment allows Intune to manage Windows 10 desktop computers as mobile devices.
+
+If your organization wants to manage Windows 10 desktops as PCs, click [here](https://docs.microsoft.com/en-us/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) to learn more about how the Intune client can be installed and used on those devices.
+
 ### Company Portal for iOS links open inside the app <!--665954-->
 Links inside of the Company Portal app for iOS, including those to documentation and apps, will open directly in the Company Portal app using an in-app view of Safari. This update will ship separately from the service update in January.
 
 ### Improving mobile app management support for selective wipe <!--581242-->
 End users will be given additional guidance on how to regain access to work or school data if that data is automatically removed due to the "Offline interval before app data is wiped" policy, or the removal of the Intune Company Portal on Android.
-
-## Deprecations
-
-### Defaulting to managing Windows desktop devices through Windows settings <!--663050-->
-The Company Portal website will provide Windows 10 desktop users with enrollment instructions that guide them through the process of adding a work or school account via Windows settings. This method of enrollment allows Intune to manage Windows 10 desktop computers as mobile devices.
-
-If your organization wants to manage Windows 10 desktops as PCs, click [here](https://docs.microsoft.com/en-us/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) to learn more about how the Intune client can be installed and used on those devices.
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
