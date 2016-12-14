@@ -51,16 +51,7 @@ If you have any questions about the timeline for your tenant’s migration, cont
 _Actions for non-compliance_ is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
 
 ### In-console reports available for MAM without enrollment <!--677961-->
-Detailed app protection reporting will offer two new, improved, in-console reports:
-
-  * Managed users
-  * Unmanaged users
-
-For each user, you can get details on:
-
-  * Policies on those apps
-  * Device name/type
-  * Last used
+New app protection reports have been added for both enrolled devices and devices that have not been enrolled. Find out more about how you can [monitor mobile app management policies with Intune here](https://docs.microsoft.com/en-us/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune). 
 
 ### Android 7.1.1 support for Intune <!--694397-->
 Intune now fully supports Android 7.1.1 for Android devices. 
