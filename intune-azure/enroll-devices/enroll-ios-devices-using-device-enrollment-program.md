@@ -128,7 +128,7 @@ You can now distribute corporate-owned devices to users. When an iOS device is t
 
 Devices that are configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete the additional steps described below to complete the Setup Assistant and install the Company Portal app.
 
-**How users enroll corporate-owned iOS devices with user affinity **
+### How users enroll corporate-owned iOS devices with user affinity 
 
 1. When users turn on their device, they are prompted to complete the Setup Assistant. During setup, users are prompted for their credentials. They must use the credentials (i.e., the unique personal name or UPN) that are associated with their subscription in Intune.
 
