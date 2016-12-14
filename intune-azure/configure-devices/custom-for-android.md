@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Custom for Android
+# Custom settings for Android devices in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -45,5 +45,3 @@ This capability is intended to allow you to deploy Android settings that are not
 	- **OMA-URI** - Specify the OMA-URI you want to supply a setting for.
 	- **Value** - Enter the value you want to associate with the OMA-URI you entered.
 4. Click **OK** once you are done, then continue to add more settings as required.
-
-
