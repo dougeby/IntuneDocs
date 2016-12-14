@@ -30,11 +30,11 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use these steps to add serial numbers to Intune when you are enrolling corporate-owned iOS devices using Apple Configurator running on a Mac computer. This process resets the device to factory settings and prepares it to run Setup Assistant, installing the company's policies for the device’s new user. For more details about using enrolling iOS devices by using Apple Configurator, see [Enroll iOS devices with Apple Configurator](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md).
+Use these steps to add serial numbers to Intune when you are enrolling corporate-owned iOS devices using Apple Configurator running on a Mac computer. This process resets the device to factory settings and prepares it to run Setup Assistant, installing the company's policies for the device’s new user. For more details about using enrolling iOS devices by using Apple Configurator, see [Enroll iOS devices with Apple Configurator](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md).
 
 ## Prerequisites
 
-You must [enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md) before adding Apple Configurator serial numbers to Intune.
+You must [enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md) before adding Apple Configurator serial numbers to Intune.
 
 **To add Apple Configurator serial numbers to Intune:**
 
@@ -55,7 +55,7 @@ You must [enroll iOS devices with Apple Configurator by using Setup Assistant](e
 
 ## Assign a profile to specific serial numbers
 
-You can assign profiles in more than one place. You can use the steps below, or you can assign profiles from the Apple Configurator Enrollment Profiles blade (see [Enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md).  
+You can assign profiles in more than one place. You can use the steps below, or you can assign profiles from the Apple Configurator Enrollment Profiles blade (see [Enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md).  
 
 1. On the **Apple Configurator Serial Numbers** blade, select the serial numbers you want to assign a profile to, and then select **Assign Profile**.
 

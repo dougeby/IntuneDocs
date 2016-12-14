@@ -43,7 +43,7 @@ Before you follow the steps in this topic, complete the following prerequisites:
 - Enable connections (more information coming soon)
 - [Set the MDM Authority](set-mdm-authority.md)
 - Create groups (more information coming soon)
-- [Configure the Company Portal](company-portal-app.md)
+- [Configure the Company Portal](../manage-apps/company-portal-app.md)
 - Assign user licenses (more information coming soon)
 - [Get an Apple MDM Push certificate](get-an-apple-mdm-push-certificate.md)
 - [Get an Apple DEP token](get-apple-dep-token.md)
