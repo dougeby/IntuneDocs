@@ -4,7 +4,9 @@
 title: Restrict access to email and Office 365 services | Microsoft Docs
 description: This topic describes how you can use conditional access to allow only compliant devices to access company email and company data on SharePoint Online and other services.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
+author: andredm7
+ms.author: andredm
+manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
@@ -38,7 +40,7 @@ A typical flow of conditional access:
 
 ![Diagram that shows the decision points that are used to determine whether a device is allowed access to a service or is blocked](../media/ConditionalAccess4.png)
 
-## Setup requirements
+## Setup considerations
 
 ### Licensing
 
