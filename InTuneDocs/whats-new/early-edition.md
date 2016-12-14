@@ -54,7 +54,7 @@ _Actions for non-compliance_ is a new feature of compliance policies that lets y
 New app protection reports have been added for both enrolled devices and devices that have not been enrolled. Find out more about how you can [monitor mobile app management policies with Intune here](https://docs.microsoft.com/en-us/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune). 
 
 ### Android 7.1.1 support for Intune <!--694397-->
-Intune now fully supports Android 7.1.1 for Android devices. 
+Intune now fully supports and manages Android 7.1.1. 
 
 ## Notices
 
