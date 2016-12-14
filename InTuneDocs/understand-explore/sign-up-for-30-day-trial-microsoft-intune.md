@@ -30,7 +30,7 @@ ms.suite: ems
 This article walks you through a sign-up for an Intune trial and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> Starting in December 2016, Microsoft Intune is moving to the Azure portal, and some free trial sign ups will be in Intune in the Azure portal and some will be in classic Intune. If your trial is in the Azure portal, you will find [Intune Azure preview content](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune) more useful.
+> Starting in December 2016, Microsoft Intune is moving to the Azure portal, and some free trial sign ups will be in Intune in the Azure portal and some will be in classic Intune. If your trial is in the Azure portal, you will find [Intune Azure preview content](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune) more useful after you complete the steps in this article.
 
 ## Assumptions
 This sign-up article and the evaluation guide assume you are using the trial for evaluation purposes only and intend to start with a clean environment when you subscribe.
@@ -50,26 +50,9 @@ If you have a work or school account and want to use that for your Intune trial,
 ### Post sign-up considerations
 When you sign up for a trial, you'll receive an email message that contains your account information at the email address that you provided during the sign-up process. This email confirms your trial is active.
 
-After completing the sign-up process, you will be directed to a page used to add users and assign them licenses using the Office 365 Admin center. The next time you sign in to Intune, you'll automatically be directed to the Intune administration console.
+After completing the sign-up process, you will be directed to a page used to add users and assign them licenses using the Office 365 Admin center. The next time you sign in to **classic Intune** (https://manage.microsoft.com), you'll automatically be directed to the Intune administration console.
 
-## Keeping the Admin center and the Intune administration console straight
-There are two portals you will use for Intune: the Office 365 Admin center ([portal.office.com](https://portal.office.com)) and the Intune administration console ([manage.microsoft.com](https://manage.microsoft.com)).
-
-Normally, you’ll do your work in the Intune administration console, shown below. This is the site where you set up and manage your groups, policies, devices, and apps.
-
-![Image of Intune administration console](./media/sign-up/intune-admin-console.png)
-
-However, you will use the Office 365 Admin center, shown below, to add and manage your users and other aspects of your account, including billing and support.
-
-![Image of Office 365 Admin center](./media/sign-up/office-admin-center.png)
-
-You can navigate from the Office 365 Admin center to the Intune admin console. The admin centers are under the last item in the left navigation pane. Choose **Intune** to open the Intune admin console in a new tab.
-
-![Image of link to Intune administration console](./media/sign-up/link-to-intune.png)
-
-To get from Intune back to the Office 365 Admin center, choose the **Add Users** task on the Groups Overview page.
-
-![Image of link back to Office 365  Admin center](./media/sign-up/task-add-users.png)
+If your trial is in the **Azure portal**, go to https://portal.azure.com and sign in with your Intune trial credentials.
 
 ## Add users
 Before you leave the Office 365 Admin center for Intune, you need to add some users to your trial account.
@@ -101,14 +84,65 @@ In the Office 365 Admin center, you can add users individually or in bulk by upl
 
 3. After you’ve created and saved your .csv file, choose **Browse** to select the file. Verify, and choose **Next**. Your users will be uploaded and added to your list of active users.
 
-Now it’s time to head over to the Intune admin console to start managing your users, their devices, and their apps.
-
 > [!NOTE]
 > Your users won't show up in Intune until they've enrolled a device to be managed.
 
+Now it’s time to head over to Intune to start managing your users, their devices, and their apps.
+
+## Keeping the admin experiences straight
+### Classic Intune
+There are two portals you will use for classic Intune: the Office 365 Admin center ([portal.office.com](https://portal.office.com)) and the Intune administration console ([manage.microsoft.com](https://manage.microsoft.com)).
+
+Normally, you’ll do your work in the Intune administration console, shown below. This is the site where you set up and manage your groups, policies, devices, and apps.
+
+![Image of Intune administration console](./media/sign-up/intune-admin-console.png)
+
+However, you will use the Office 365 Admin center, shown below, to add and manage your users and other aspects of your account, including billing and support.
+
+![Image of Office 365 Admin center](./media/sign-up/office-admin-center.png)
+
+You can navigate from the Office 365 Admin center to the Intune admin console. The admin centers are under the last item in the left navigation pane. Choose **Intune** to open the Intune admin console in a new tab.
+
+![Image of link to Intune administration console](./media/sign-up/link-to-intune.png)
+
+To get from Intune back to the Office 365 Admin center, choose the **Add Users** task on the Groups Overview page.
+
+![Image of link back to Office 365  Admin center](./media/sign-up/task-add-users.png)
+
+### Intune Azure preview
+There are two portals you will use for the Intune Azure preview:
+- The Office 365 Admin center ([portal.office.com](https://portal.office.com))
+- The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com))
+<!--- - The classic Intune admin center--->
+
+The first time you sign on to Intune in Azure, you may not see it on your Azure dashboard. To add the Intune service to your Azure dashboard:
+1. Choose **More services >** in the list of Azure services to the left of the dashboard, and enter Intune in the search box.
+2. Select Intune from the list and click the star to add the service to the list of services.<br/> ![Image of selecting Intune from services list](./media/sign-up/azure-add-intune1.png)
+3. Click **Intune** in the list of services to open the Intune dashboard.
+
+Normally, you’ll do your work in the Intune dashboard, shown below. This is the site where you set up and manage your groups, policies, devices, and apps.
+
+ ![Image of Intune dashboard](./media/sign-up/intune-azure-dashboard.png)
+
+
+ <!---You can navigate to the log on page for the classic Intune admin center from the dashboard.--->
+
+However, you will use the Office 365 Admin center, shown below, to add and manage your users and other aspects of your account, including billing and support.
+
+![Image of Office 365 Admin center](./media/sign-up/office-admin-center.png)
+
+To navigate from the Office 365 Admin center to the Intune dashboard, enter https://portal.azure.com in your browser address bar. If you are already logged into Office 365, you will be taken directly to the Intune service on Azure.
+
+To get from Intune back to the Office 365 Admin center, enter https://portal.office.com in your browser address bar. If you are already logged into Intune, you will be taken directly to the Office 365 Admin Center.
+
 ## Next steps
+### Classic Intune
 Evaluation scenario: [Evaluate mobile device management in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
+### Intune Azure preview
+Learn more about [Intune in the Azure portal preview](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune)
+
+### Integration with other products
 Learn more about using your Azure Active Directory user accounts with Intune:
 - [Identity requirements](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 - [Directory synchronization requirements](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
