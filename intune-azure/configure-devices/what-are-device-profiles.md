@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What are device profiles in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: What are device profiles in Microsoft Intune? | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn about Intune device profiles and how they can help manage and protect devices in your company."
 keywords:
 author: robstackmsftms.author: robstack
@@ -11,26 +11,26 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 
+ms.assetid:
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# Configure device settings and features with device profiles in Microsoft Intune
-
+# Configure device settings and features with device profiles in Intune Azure preview
+<!--- This topic doesn't really answer the topic title: What are device profiles?" It needs to answer that question, then it can go on to discuss what profiles are in Intune and how to use them. Linda--->
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use the Microsoft Intune **Device Configuration** workload to manage settings and features on all of the devices you manage. 
+Use the Microsoft Intune **Device Configuration** workload to manage settings and features on all of the devices you manage.
 
 When you open this workload, you'll see the following options:
 
