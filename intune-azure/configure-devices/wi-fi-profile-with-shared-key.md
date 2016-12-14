@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune custom device profile to create a Wi-Fi profile with a pre-shared key | Intune Azure preview | Microsoft Docs
+title: Create a Wi-Fi profile with a pre-shared key | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Use an Intune custom profile to create a Wi-Fi profile with a pre-shared key."
 keywords:
 author: robstackmsft
@@ -26,7 +26,9 @@ ms.suite: ems
 
 
 ---
-# Use a Microsoft Intune custom device profile to create a Wi-Fi profile with a pre-shared key
+# Use an Intune custom device profile to create a Wi-Fi profile with a pre-shared key in Intune Azure preview
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
 Here's how to use Intune’s **Custom device profiles** to create a Wi-Fi profile with a pre-shared key. This topic also has an example of how to create an EAP-based Wi-Fi profile.
 
 > [!NOTE]
@@ -70,9 +72,9 @@ The next time each device checks in, the policy will be applied, and a Wi-Fi pro
 Here’s an example of the XML code for an Android or Windows Wi-Fi profile:
 
 > [!IMPORTANT]
-> 
+>
 > `<protected>false</protected>`must be set to **false**, as **true** could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
-> 
+>
 >  `<hex>53534944</hex>` should be set to the hexadecimal value of `<name><SSID of wifi profile></name>`.
 >  Windows 10 devices may return a false *0x87D1FDE8 Remediation failed* error, but will still be provisioned with the profile.
 
@@ -204,6 +206,3 @@ You can also create an XML file from an existing Wi-Fi connection:
     It’s best to use a computer that has not connected to many wireless networks, because you’ll have to search through each profile to find the right one.
 3.     Search through the XML files to locate the one with the right name.
 4.     After you have located the correct XML file, copy and paste the XML code into the Data field of the OMA-URI settings page.
-
-
-
