@@ -70,7 +70,7 @@ The Datalert service is now active, and it begins monitoring data usage and bloc
 
 If you disable the Datalert service in the Azure portal:
 
-- -	All of the actions that have been applied to devices, due to past violations of the usage limits, are undone.
+- All of the actions that have been applied to devices, due to past violations of the usage limits, are undone.
 - Users are no longer blocked from data access and roaming.
 - Intune still receives the signals coming from the service, but ignores them.
 

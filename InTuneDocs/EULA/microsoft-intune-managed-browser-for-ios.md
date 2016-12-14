@@ -4,8 +4,9 @@
 title: Microsoft Intune Managed Browser for iOS | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
-manager: arob98
+author: barlanmsft
+ms.author: barlan
+manager: angrobe
 ms.date: 11/29/2016
 ms.topic: article
 ms.prod:
@@ -18,7 +19,7 @@ ms.assetid: 122a12c2-ef30-43ac-a21c-af34a3ba64d9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: angrobe
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
