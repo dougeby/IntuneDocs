@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,6 +64,7 @@ In the restricted apps list, you can configure one of the following lists:
 
 A **Prohibited apps** list - List the apps (not managed by Intune) that users are not allowed to install and run.
 An **Approved apps** list - List the apps that users are allowed to install. To remain compliant, users must not install apps that are not listed. Apps that are managed by Intune are automatically allowed.
+Device profiles that contain restricted app settings must be deployed to groups of users.
 
 To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the URL to the app in the app store.
 
