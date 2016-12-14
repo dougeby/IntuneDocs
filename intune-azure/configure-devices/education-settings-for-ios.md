@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: How to configure Intune education settings for iOS devices | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Learn about the settings you can use to control Education settings on iOS devices."
+title: Configure Intune education settings for iOS | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn about the settings you can use to control education settings on iOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure Intune education settings for iOS devices
+# How to configure Intune education settings for iOS devices in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -40,10 +40,10 @@ ms.suite: ems
 5. From the **Platform** drop-down list, choose **iOS**.
 6. From the **Profile type** drop-down list, choose **Education**.
 7. On the **Education** blade, select the following:
-	- **Teacher root certificate file** 
-	- **Teacher PKCS12 / PFX profile** 
-	- **Student root certificate file** 
-	- **Student PKCS12 / PFX profile** 
+	- **Teacher root certificate file**
+	- **Teacher PKCS12 / PFX profile**
+	- **Student root certificate file**
+	- **Student PKCS12 / PFX profile**
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.

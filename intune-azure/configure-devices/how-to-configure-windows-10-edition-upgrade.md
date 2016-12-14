@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to configure Windows 10 edition upgrades with Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Configure Windows 10 edition upgrades with Intune | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to use Intune to upgrade Windows 10 devices you manage."
 keywords:
 author: robstackmsft
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure Windows 10 edition upgrades with Microsoft Intune
+# How to configure Windows 10 edition upgrades with Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -65,4 +65,3 @@ Before you begin to upgrade devices to the latest version, you will need one of 
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
-

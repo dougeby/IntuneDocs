@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune device restrictions for Windows 10 Team devices | Intune Azure preview | Microsoft Docs
+title: Intune device restrictions for Windows 10 Team | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn about the device restrictions available for Windows 10 Team devices."
 keywords:
 author: robstackmsft
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Windows 10 Team device restriction settings
+# Windows 10 Team device restriction settings in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
