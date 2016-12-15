@@ -4,9 +4,10 @@
 title: Post-configuration tasks | Microsoft Docs
 description: Complete optional configuration tasks to enhance mobile device management functionality.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 12/05/2016
+ms.date: 12/15/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

@@ -4,8 +4,8 @@
 title: Prerequisites for MAM policies | Microsoft Docs
 description: This topic describes the prerequisites for setting up users before you create mobile app management policies.
 keywords:
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/29/2016
 ms.topic: article

@@ -4,7 +4,7 @@
 title: Android MAM policy settings | Microsoft Docs
 description: This topic describes the mobile app management policy settings for Android devices.
 keywords:
-author: NathBarnms.author: nathbarn
+author: andredm7ms.author: andredm
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article
@@ -64,7 +64,7 @@ There are two categories of policy settings: data relocation settings and access
   If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
   Default value = **No**
-- **Encrypt app data**: Choose **Yes** to enable encryption. When this setting is enabled, Microsoft provides encryption for apps that are associated with a MAM policy. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted.
+- **Encrypt app data**: Choose **Yes** to enable encryption. When this setting is enabled, Intune encrypts data in apps that are associated with a MAM policy. Intune uses an OpenSSL encryption scheme along with the Android Keystore system to securely encrypt app data. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted.
   >[!NOTE]
   >The encryption method is not FIPS 140-2 certified.
 

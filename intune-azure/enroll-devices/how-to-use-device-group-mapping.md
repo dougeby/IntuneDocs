@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: How to use device categories in Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Learn how to use device categories that users can choose when they enroll their devices."
+title: How to use device categories in Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to use device categories that users can choose when they enroll their devices in Intune."
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
@@ -18,14 +19,14 @@ ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer:
+#ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# How to use device categories in Microsoft Intune
+# How to use device categories in Intune Azure preview
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,11 +39,11 @@ Device categories use the following workflow:
 
 
 You can create any device categories you want, for example:
-•	Point of sale device
-•	Demonstration device
-•	Sales
-•	Accounting
-•	Manager
+- Point of sale device
+- Demonstration device
+- Sales
+- Accounting
+- Manager
 
 ## How to configure device categories
 ### Step 1 - Create device categories in the Intune Azure portal
@@ -68,5 +69,5 @@ When users enroll their device, they are presented with a list of the categories
 If the **Device category** column isn’t displayed, click **Columns**, choose **Device category** from the list, and then click **Apply**.
 
 ## Further information
-•	You can edit a device category in the Azure Portal, but if you do this, you must manually update any Azure Active Directory Security groups that reference this category.
-•	If you delete a category, any devices that were assigned to it will subsequently display the category name **Unassigned**.
+- You can edit a device category in the Azure Portal, but if you do this, you must manually update any Azure Active Directory Security groups that reference this category.
+- If you delete a category, any devices that were assigned to it will subsequently display the category name **Unassigned**.

@@ -4,8 +4,10 @@
 title: iOS apps with MAM policies | Microsoft Docs
 description: This topic describes what to expect when your iOS app is managed by mobile app management policies.
 keywords:
-author: NathBarnms.author: nathbarnmanager: angrobe
-ms.date: 10/18/2016
+author: barlanmsft
+ms.author: barlan
+manager: angrobe
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,10 +31,12 @@ ms.suite: ems
 
 ##  Access apps
 
-If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it.  A restart is required so that MAM polices can be applied to the app. The following screenshot from the Skype app illustrates this restart request:
+If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it.  A restart is required so that MAM polices can be applied to the app. 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 For devices that are **enrolled for management in Intune**, the user sees a message that their app is now managed:
 

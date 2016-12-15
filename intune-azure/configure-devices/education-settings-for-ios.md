@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,8 +33,8 @@ ms.suite: ems
 
 ## Create a device profile containing iOS education settings
 
-1. In the Azure portal, select the **Device Configurations** workload.
-2. On the **Device configuration** blade, select **Manage** > **Profiles**.
+1. In the Azure portal, select the **Configure devices** workload.
+2. On the **Device Configuration** blade, select **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the edition upgrade profile.
 5. From the **Platform** drop-down list, choose **iOS**.
