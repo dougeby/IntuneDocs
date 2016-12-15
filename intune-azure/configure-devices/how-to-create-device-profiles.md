@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 
-1. In the **Device Configuration** workload, choose **Profiles**.
+1. In the **Configure devices** workload, choose **Profiles**.
 2. On the blade showing the list of profiles, choose **Create Profile**.
 3. On the **Create Profile** blade, specify the following:
 	- **Name** - Enter a descriptive name for the new profile.

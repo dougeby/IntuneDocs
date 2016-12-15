@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,17 +26,28 @@ ms.suite: ems
 
 ---
 
-# How to configure email settings in Intune Azure preview
+# How to configure email settings in the Microsft Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+Email profile settings can be used to configure devices you manage with the settings necessary to connect to company email. This can help ensure that settings are standard across all of your devices, and also help to reduce support calls from end users who do not know the correct email settings.
+
+The built-in mail client is supported for most platforms. Most third-party email apps are not currently supported.
+
+You can use email profiles to configure the native email client on the following device types:
+
+Android 4.0 and later
+iOS 8.0 and later
+Windows Phone 8.1 and later
+Windows 10 (desktop) and Windows 10 Mobile
 
 Use the information in this topic to learn the basics about configuring an email profile, and then read further topics for each platform to learn about device specifics.
 
 ## Create a device profile containing email settings
 
-1. In the Azure Portal, select the **Device Configurations** workload.
-2. On the **Device configuration** blade, select **Manage** > **Profiles**.
-3. On the profiles blade, click **Create Profile**.
+1. In the Azure Portal, select the **Configure devices** workload.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
+3. On the profiles blade, choose **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the email profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply email settings. Currently, you can choose one of the following platforms for email device settings:
 	- **Android**
@@ -52,3 +63,22 @@ Use the information in this topic to learn the basics about configuring an email
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
+
+## Securing email access
+
+You can help secure email profiles using one of two methods:
+
+1. **Certificates** - When you create the email profile, you choose a certificate profile that you have previously created in Intune. This is known as the identity certificate, and is used to authenticate against a trusted certificate profile (or a root certificate) to establish that the user’s device is allowed to connect. The trusted certificate is deployed to the computer that authenticates the email connection, typically, the native mail server.
+For more information about how to create and use certificate profiles in Intune, see [How to configure certificates with Intune](/intune-azure/configure-devices/how-to-configure-certificates).
+2. **User name and password** - The user authenticates to the native mail server by providing their user name and password.
+The password is not contained in the email profile, so the user needs to supply this when they connect to email.
+
+
+## How Intune handles existing email accounts
+
+If the user has already configured an email account, the result of the Intune email profile assignment depends on the device platform:
+
+- **iOS:** An existing, duplicate email profile is detected based on host name and email address. The duplicate email profile will blocks the assignment of an Intune profile. In this case, the Company Portal informs the user that they are not compliant and prompts the user to remove the manually configured profile. To help prevent this problem, instruct your users to enroll before installing an email profile, which allows Intune to set up the profile.
+- **Windows:** An existing, duplicate email profile is detected based on host name and email address. Intune overwrites the existing email profile created by the user.
+- **Android** An existing, duplicate email profile is detected based on the email address, and overwrites it with the Intune profile.
+Since Android does not use host name to identify the profile, we recommend that you not create multiple email profiles to use on the same email address on different hosts, as these overwrite each other.
