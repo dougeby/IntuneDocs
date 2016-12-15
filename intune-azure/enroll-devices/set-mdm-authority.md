@@ -35,7 +35,7 @@ The mobile device management authority setting determines how you manage your de
 
 - **Intune Hybrid** - integration of the Intune cloud solution with System Center Configuration Manager. You configure Intune by using the Configuration Manager console.
 
-- **Mobile Device Management for Office 365** - integration of Office 365 with the Intune cloud solution. You configure Intune from your Office 365 Admin Center. Includes a subset of the capabilities that are available with Intune Standalone. 
+- **Mobile Device Management for Office 365** - integration of Office 365 with the Intune cloud solution. You configure Intune from your Office 365 Admin Center. Includes a subset of the capabilities that are available with Intune Standalone.
 
 >[!IMPORTANT]
 >Once you set the mobile device management authority, you cannot change it, so make your choice carefully.
