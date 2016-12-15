@@ -4,8 +4,10 @@
 title: Protect apps and data | Microsoft Docs
 description: This topic describes the various Intune features and capabilities that are available to you to help protect your company apps and data.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
-ms.date: 07/18/2016
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

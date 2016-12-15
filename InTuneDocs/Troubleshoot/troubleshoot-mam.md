@@ -4,11 +4,10 @@
 title: Troubleshoot mobile application management | Microsoft Docs
 description: This topic describes some troubleshooting tips for conditional access deployments.
 keywords:
-author: NathBarn
-ms.author: nathbarn
+author: oydang
+ms.author: oydang
 manager: angerobe
-ms.author: oldang
-ms.date: 09/12/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
