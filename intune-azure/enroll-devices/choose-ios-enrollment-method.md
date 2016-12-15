@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Choose iOS device enrollment method for Intune | Intune Azure preview | Microsoft Docs
+title: Choose how to enroll iOS devices in Intune | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to set up enrollment of iOS devices in Microsoft Intune."
 keywords:
 author: staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Choose iOS device enrollment method for Intune Azure preview
+# Choose how to enroll iOS devices in Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

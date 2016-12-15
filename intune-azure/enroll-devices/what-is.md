@@ -49,10 +49,10 @@ The following table shows Intune enrollment methods and the supported capabiliti
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|	Yes |	No | More information coming soon|
-|**[DEM](#dem)**|	No |No |No	| [More information](enroll-devices-using-device-enrollment-manager.md)|
+|**[DEM](#dem)**|	No |No |No	| [More information](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager.md)|
 |**[DEP](#dep)**|	Yes |	Optional |	Optional|[More information](enroll-ios-devices-using-device-enrollment-program.md)|
 |**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
-|**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
+|**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
 
 
@@ -68,7 +68,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|	Yes |	No | More information coming soon|
-|**[DEM](#dem)**|	No |No |No	|[More information](enroll-devices-using-device-enrollment-manager.md)|
+|**[DEM](#dem)**|	No |No |No	|[More information](/enroll-devices-using-device-enrollment-manager.md)|
 
 
 ## BYOD
