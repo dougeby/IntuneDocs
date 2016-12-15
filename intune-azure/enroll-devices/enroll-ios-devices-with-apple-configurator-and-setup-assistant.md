@@ -41,7 +41,7 @@ Complete the following prerequisites before setting up iOS device enrollment:
 - Enable connections (more information coming soon)
 - [Set the MDM Authority](set-mdm-authority.md)
 - Create groups (more information coming soon)
-- [Configure the Company Portal](../manage-apps/company-portal-app.md)
+- [Configure the Company Portal](/intune-azure/manage-apps/company-portal-app.md)
 - Assign user licenses (more information coming soon)
 - [Get an Apple MDM push certificate](get-an-apple-mdm-push-certificate.md)
 - Physical access to iOS devices—devices must be reset to factory settings without password protection
