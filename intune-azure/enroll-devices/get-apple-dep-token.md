@@ -52,7 +52,7 @@ Select [Create a DEP token via Apple Deployment Programs](https://deploy.apple.c
 
     This certificate (.p7m) file is used to establish a trust relationship between Intune and Apple’s Device Enrollment Program servers.
 
-**Step 3. Enter the Apple ID used to create your Apple DEP token. This ID can be used to renew your Apple DEP token. **
+**Step 3. Enter the Apple ID used to create your Apple DEP token. This ID can be used to renew your Apple DEP token.**
 
 **Step 4. Browse to your Apple DEP token to upload. Intune will automatically synchronize with your DEP account.**<br>
 Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices.
