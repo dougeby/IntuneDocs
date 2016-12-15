@@ -7,7 +7,7 @@ keywords: encryption, PIN, data
 author: arob98ms.author: angrobe
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
