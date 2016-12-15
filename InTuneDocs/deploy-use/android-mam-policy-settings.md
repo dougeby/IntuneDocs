@@ -4,7 +4,7 @@
 title: Android MAM policy settings | Microsoft Docs
 description: This topic describes the mobile app management policy settings for Android devices.
 keywords:
-author: NathBarnms.author: nathbarn
+author: andredm7ms.author: andredm
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article
