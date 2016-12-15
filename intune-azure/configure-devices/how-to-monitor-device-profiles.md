@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ ms.suite: ems
 
 You can monitor the assignment progress of Intune device profiles in two ways:
 
-1. In the **Device Configuration** workload, choose **Manage** > **Profiles**.
+1. In the **Configure devices** workload, choose **Manage** > **Profiles**.
 2. In the list of profiles blade, choose the profile you want to manage, and then, either:
 	- On the <*profile name*> **Reports** blade, choose **Overview** to see basic information about the profile and it's assignments.
 	- On the <*profile name*> **Reports** blade, choose **Reports** to see more detailed information about the profile and its assignments.
