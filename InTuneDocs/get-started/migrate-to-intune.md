@@ -2,12 +2,15 @@
 # required metadata
 
 title: Migrate to Intune | Microsoft Docs
-description:
+description: The migration to Intune from your existing enterprise mobility management solution may follow the general sequence of steps below.
 keywords:
-author: jeffgilbms.author: jeffgilb
-manager: jeffgilb
-ms.date: 11/22/2016
-ms.topic: get-started-article
+
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 12/15/2016
+ms.topic: article
+
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:

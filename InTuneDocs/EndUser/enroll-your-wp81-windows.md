@@ -4,9 +4,10 @@
 title: Enroll your Windows Phone 8.1 device in Intune | Microsoft Docs
 description: Describes how to enroll a Windows Phone 8.1 device in Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

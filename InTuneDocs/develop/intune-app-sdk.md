@@ -2,11 +2,11 @@
 # required metadata
 
 title: Benefits of Intune App SDK | Microsoft Docs
-description:
+description: The Intune App SDK is available for both the iOS and Android platform, and enables mobile app management features with Microsoft Intune. 
 keywords:
 author: mtillman
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,7 +66,7 @@ For example, many users configure both corporate and personal email accounts in 
 ### App management without device enrollment
 
 >[!IMPORTANT]
->Intune mobile app management without device enrollment is currently only available with the Intune App SDK for iOS. 
+>Intune mobile app management without device enrollment (MAM-WE) is not yet available with the Intune App SDK for Android. MAM-WE is available with the SDK for iOS, SDK Xamarin Component, and SDK Cordova Plugin.
 
 
 Many users with personal devices wish to see and use corporate data without enrolling their personal device with a Mobile Device Management (MDM) product. Since MDM enrollment requires global control of the device, users hesitate to give that global control to their own personal device to their company.

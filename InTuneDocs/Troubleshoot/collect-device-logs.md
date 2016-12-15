@@ -4,9 +4,10 @@
 title: Collect device logs| Microsoft Docs
 description: Learn how to collect logs from your managed devices.
 keywords:
-author: staciebarkerms.author: staciebarker
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 11/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
