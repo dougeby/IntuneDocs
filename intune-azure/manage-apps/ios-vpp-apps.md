@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to manage iOS apps you purchased through a volume-purchase program with Microsoft Intune
+# How to manage iOS apps you purchased through a volume-purchase program with Intune Azure preview
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

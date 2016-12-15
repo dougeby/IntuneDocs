@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to use app configuration policies with Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: How to use app configuration policies - Intune | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run."
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to use app configuration policies with Microsoft Intune
+# How to use app configuration policies with Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -80,14 +80,14 @@ When the assigned app is run on a device, it will run with the settings that you
 ## Information about the XML file format
 
 Intune supports the following data types in a property list:
-	
+
 - &lt;integer&gt;
 - &lt;real&gt;
 - &lt;string&gt;
 - &lt;array&gt;
 - &lt;dict&gt;
 - &lt;true /&gt; or &lt;false /&gt;
-	 
+
 For more information about data types, see [About Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in the iOS Developer Library.
 
 Additionally, Intune supports the following token types in the property list:
@@ -100,7 +100,7 @@ Additionally, Intune supports the following token types in the property list:
 - \{\{username\}\} - (Example: **John Doe**)
 - \{\{serialnumber\}\} - (Example: **F4KN99ZUG5V2**) for iOS devices
 - \{\{serialnumberlast4digits\}\} - (Example: **G5V2**) for iOS devices
-	
+
 The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.
 
 

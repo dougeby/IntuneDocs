@@ -11,26 +11,26 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 
+ms.assetid:
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# What is app management with Microsoft Intune?
+# What is app management with the Intune Azure preview?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use the Microsoft Intune **Mobile Apps** workload to manage settings and features on all of the devices you manage. 
+Use the Microsoft Intune **Mobile Apps** workload to manage settings and features on all of the devices you manage.
 
 When you open this workload, you'll see the following options:
 
