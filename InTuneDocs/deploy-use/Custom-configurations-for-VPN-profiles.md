@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Custom configurations for VPN profiles | Microsoft Docs
+title: Custom configurations for Microsoft Intune VPN profiles | Microsoft Docs
 description: Use custom configurations to create VPN profiles in Intune.
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,41 +26,36 @@ ms.suite: ems
 
 ---
 
-# Custom configurations for VPN profiles
+# Custom configurations for Microsoft Intune VPN profiles
 
 ## Create a custom configuration
-You can use custom configurations to create VPN profiles in Intune for:
+You can use Intune custom configuration polices to create VPN profiles for:
 
 * Devices that run Android 4 and later
 * Android for Work devices
 * Enrolled devices that run Windows 8.1 and later
 * Devices that run Windows Phone 8.1 and later
-* Devices that run Windows 10 desktop and mobile
+* Enrolled devices that run Windows 10 desktop 
+* Device that run Windows 10 Mobile
 
-To create a custom configuration:
+This type of policy can be useful when the standard Intune VPN policies do not contain the settings you want to use.
 
-   1. In the Intune admin console, **Policy** > **Add Policy** > *Expand platform* > **Custom configuration** > **Create Policy**.
-   2. Provide a name for the policy.
-   3. For each URI setting, choose **Add**, and provide the requested information. Here's an example:
+## To create a custom configuration policy:
+
+   1. In the [Intune admin console](https://manage.microsoft.com), choose **Policy** > **Add Policy** > *Expand platform* > **Custom configuration** > **Create Policy**.
+   2. Enter a name for the policy.
+   3. For each URI setting you want to specify, choose **Add**, and provide the requested information. Here's an example:
 
    ![VPN profile custom configuration dialog box](./media/Intune_Add_VPN_URI.png)
 
    4.  After you've entered all of URI settings, choose **Save policy**, and then deploy the policy.
 
-## Deploy a configuration policy
+Then, [deploy the policy](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) as normal.
 
-1.  In the **Policy** workspace, choose the policy that you want to deploy, and then click **Manage Deployment**.
+## Example URI settings
 
-2.  In the **Manage Deployment** dialog box:
-
-    -   **To deploy the policy** - Choose one or more groups to which you want to deploy the policy, and then click **Add** &gt; **OK**.
-
-    -   **To close the dialog box without deploying it** - Choose **Cancel**.
-
-When you choose a deployed policy, you can view further information about the deployment in the lower part of the policies list.
-
-##Example of URI settings for a custom VPN profile configuration
-Here are example entries for URI values to create a custom configuration for a VPN in a fictitious company called Contoso. For more information, like the data type for each entry, see [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
+These settings can be used to create a custom configuration for a VPN in a fictitious company called Contoso.
+For full details about all the settings you can use, see [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 Native Contoso VPN (IKEv2):
 ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -143,4 +138,4 @@ Examples:
 
 
 ### See also
-(VPN connections in Microsoft Intune)[vpn-connections-in-microsoft-intune.md]
+[VPN connections in Microsoft Intune](vpn-connections-in-microsoft-intune.md)

@@ -76,7 +76,10 @@ There are two categories of policy settings: data relocation settings and access
 
   Default value = **No**
 
-- **Encrypt app data**: For apps that are associated with an Intune MAM policy, data is encrypted at rest through device-level encryption provided by the OS. When a PIN is required, the data is encrypted according to the settings in the MAM policy. As stated in Apple documentation, [the modules that iOS 7 uses are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).
+- **Encrypt app data**: For apps that are associated with an Intune MAM policy, data is encrypted at rest using the device-level encryption scheme provided by iOS. When a PIN is required, the data is encrypted according to the settings in the MAM policy.
+
+  > [!NOTE]
+  > Go [here](https://support.apple.com/HT202739) in the Apple documentation to see which iOS encryption modules are FIPS 140-2 certified or pending FIPS 140-2 certification.
 
   In the policy settings, you can specify PIN encryption values. These values determine when the data is encrypted. The options are:
   -   **When device is locked**: All app data associated with this policy is encrypted while the device is locked.
