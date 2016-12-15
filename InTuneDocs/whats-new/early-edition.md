@@ -50,14 +50,17 @@ If you have any questions about the timeline for your tenant’s migration, cont
 ### Actions for non-compliance <!--730266-->
 _Actions for non-compliance_ is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
 
-### In-console reports available for MAM without enrollment <!--677961-->
+### In-console reports for MAM without enrollment <!--677961-->
 New app protection reports have been added for both enrolled devices and devices that have not been enrolled. Find out more about how you can [monitor mobile app management policies with Intune here](https://docs.microsoft.com/en-us/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune). 
 
-### Android 7.1.1 support for Intune <!--694397-->
+### Android 7.1.1 support <!--694397-->
 Intune now fully supports and manages Android 7.1.1. 
 
 ### Custom app categories <!--748805-->
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
+
+### Assign line of business apps whether or not devices are enrolled <!--748803-->
+You can now assign line of business and apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
 
 ## Notices
 
