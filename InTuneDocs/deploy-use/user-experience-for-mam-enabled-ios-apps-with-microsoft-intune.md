@@ -1,11 +1,10 @@
 ---
 # required metadata
 
-title: iOS apps with MAM policies | Microsoft Intune
+title: iOS apps with MAM policies | Microsoft Docs
 description: This topic describes what to expect when your iOS app is managed by mobile app management policies.
 keywords:
-author: karthikaramanms.author: karaman
-manager: angrobe
+author: NathBarnms.author: nathbarnmanager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
 ms.prod:

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get notified by alerts | Microsoft Intune
+title: Get notified by alerts | Microsoft Docs
 description: Learn how alerts keep you in touch with what's happening in Microsoft Intune.
 keywords:
 author: arob98

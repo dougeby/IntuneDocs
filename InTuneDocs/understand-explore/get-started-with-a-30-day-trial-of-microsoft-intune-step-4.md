@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Create policies and publish an app to users | Microsoft Intune
+title: Create policies and publish an app to users | Microsoft Docs
 description: How to create policies and publish an app when you sign up for a free, 30-day evaluation of Intune
 keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

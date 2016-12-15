@@ -1,10 +1,11 @@
 ---
 # required metadata
 
-title: Troubleshoot conditional access| Microsoft Intune
+title: Troubleshoot conditional access| Microsoft Docs
 description: What to do when your users fail to get access to resources through Intune conditional access.
 keywords:
-author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

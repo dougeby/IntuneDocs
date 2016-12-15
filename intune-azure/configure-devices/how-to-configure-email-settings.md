@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to configure Microsoft Intune email settings | Intune Azure preview | Microsoft Docs
+title: How to configure Intune email settings | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to configure Intune to create connections to corporate email on devices you manage."
 keywords:
 author: robstackmsft
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure email settings in Microsoft Intune
+# How to configure email settings in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -52,4 +52,3 @@ Use the information in this topic to learn the basics about configuring an email
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
-

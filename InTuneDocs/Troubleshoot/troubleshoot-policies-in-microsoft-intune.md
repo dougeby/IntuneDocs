@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Troubleshoot policies | Microsoft Intune
+title: Troubleshoot policies | Microsoft Docs
 description: Troubleshoot policy configuration issues.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

@@ -42,6 +42,6 @@ The mobile device management authority setting determines how you manage your de
 
 **To set the mobile device management authority:**
 
-1. In the **Enrollment** workload, choose **Overview**.
+1. In the **Enrollment** blade, choose **Overview**.
 
 2. In the **Start managing devices** blade, choose **Set MDM Authority to Intune**. A message indicates that you have successfully set your MDM authority to Intune.

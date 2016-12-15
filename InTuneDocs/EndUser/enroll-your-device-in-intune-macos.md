@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll your macOS device in Intune | Microsoft Intune
+title: Enroll your macOS device in Intune | Microsoft Docs
 description: Describes how to enroll a macOS device in Intune
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
@@ -51,7 +51,7 @@ Getting access to your organization’s apps, data, and resources makes it possi
  ![Enroll this device macOS](./media/macOS_enroll_003_enroll_popup.png)
 
   > [!NOTE]
-  > Intune needs access to your computer to make sure that your device is secure enough to access your organization's resources. Find out [what happens when you enroll your device in Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios).
+  > Intune needs access to your computer to make sure that your device is secure enough to access your organization's resources. Find out [what happens when you enroll your device in Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
 
 6. __System Preferences__ will open, and ask you if you want to __Install "Management Profile"?__ Click __Install__ to proceed, or get more details by clicking __Show Profile__.
 

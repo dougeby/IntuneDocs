@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Exchange access rules for mobile devices | Microsoft Intune
+title: Exchange access rules for mobile devices | Microsoft Docs
 description: Exchange ActiveSync access rules to allow or block device connections with EAS
 keywords:
 author: staciebarkerms.author: stabar

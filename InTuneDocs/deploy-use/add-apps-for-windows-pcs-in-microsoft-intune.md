@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Add apps for Windows PCs that run the Intune software client| Microsoft Intune
+title: Add apps for Windows PCs that run the Intune software client| Microsoft Docs
 description: Use the information in this topic to learn how to add apps for Windows PCs to Intune before you deploy them.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

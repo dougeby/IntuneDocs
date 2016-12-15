@@ -2,12 +2,13 @@
 
 # required metadata
 
-title: Android for Work policy settings | Microsoft Intune
+title: Android for Work policy settings | Microsoft Docs
 description: Create policies that control settings and features on Android for Work devices that you manage with Intune.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -71,9 +72,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 Use the Microsoft Intune **Android for Work custom configuration policy** to deploy OMA-URI settings that can be used to control features on Android for Work devices. These are standard settings that many mobile device manufacturers use to control device features.
 
 This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies.
-
-> [!NOTE]
-> Currently, Android custom policies only support configuring Wi-Fi settings for Android devices that include a pre-shared key.
+Intune supports a limited number of Android custom policies at present. See the examples in this topic to find out which policies you can configure.
 
 ### General settings
 

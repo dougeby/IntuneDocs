@@ -6,7 +6,7 @@ description: "Intune Azure preview: Use this topic to learn the basics about app
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/13/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ Use the Microsoft Intune **Mobile Apps** workload to manage settings and feature
 When you open this workload, you'll see the following options:
 
 ### Manage
-- **All Apps** - This is where you'll create, assign, and monitor most of your apps. For details, see:
+- **Apps** - This is where you'll create, assign, and monitor most of your apps. For details, see:
 	- [Add apps](add-apps.md)
 	- [Assign apps](deploy-apps.md)
 	- [Monitor apps](monitor-apps.md)
@@ -50,8 +50,9 @@ When you open this workload, you'll see the following options:
 	- [App selective wipe](app-selective-wipe.md)
 
 ### Monitor
-- **App Inventory**
-- **App Restrictions User Status**
+- **Discovered Apps**
+- **App Install Status**
+- **App Protection User Status**
 
 	For details, see [Monitor apps](monitor-apps.md)
 
@@ -60,5 +61,5 @@ When you open this workload, you'll see the following options:
 	- [iOS volume-purchased apps](ios-vpp-apps.md)
 - **Windows Store for Business**
 	- [Windows Store for Business volume-purchased apps](wsfb-apps.md)
-- **Company Portal configuration** - Customize the Company Portal to give it your company branding. For details, see:
+- **Company Portal Branding** - Customize the Company Portal to give it your company branding. For details, see:
 	- [Company portal configuration](company-portal-app.md)

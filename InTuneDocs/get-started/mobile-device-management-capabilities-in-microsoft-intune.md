@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Enrolled device management capabilities | Microsoft Intune
+title: Enrolled device management capabilities | Microsoft Docs
 description: Read this topic to find out how Intune can help you manage devices that you enroll.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

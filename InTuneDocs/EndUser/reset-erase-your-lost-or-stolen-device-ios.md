@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reset (erase) your lost or stolen iOS device | Microsoft Intune
+title: Reset (erase) your lost or stolen iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

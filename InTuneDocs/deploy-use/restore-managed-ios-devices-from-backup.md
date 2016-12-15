@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Restore Intune managed iOS devices from backup | Microsoft Intune
+title: Restore Intune managed iOS devices from backup | Microsoft Docs
 description: Provide guidance to end users on how to re-enroll their devices after restoring from backup.
 keywords: restore, managed, iOS
 author: barlanmsft

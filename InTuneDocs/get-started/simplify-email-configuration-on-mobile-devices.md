@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Simplify email configuration on mobile devices | Microsoft Intune
+title: Simplify email configuration on mobile devices | Microsoft Docs
 description:
 keywords:
 author: jeffgilbms.author: jeffgilb

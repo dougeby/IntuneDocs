@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Firewall policies for Windows PCs | Microsoft Intune
+title: Firewall policies for Windows PCs | Microsoft Docs
 description: Intune can help you to secure PCs you manage with the Intune client in a number of ways, including helping you to configure Windows Firewall settings.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

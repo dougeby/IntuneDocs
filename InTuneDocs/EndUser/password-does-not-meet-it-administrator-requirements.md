@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Password does not meet IT administrator requirements | Microsoft Intune
+title: Password does not meet IT administrator requirements | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

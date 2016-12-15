@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Turn off Microsoft usage data collection for Android | Microsoft Intune
+title: Turn off Microsoft usage data collection for Android | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

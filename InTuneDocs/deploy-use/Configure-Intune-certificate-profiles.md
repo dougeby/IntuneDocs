@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure certificate profiles | Microsoft Intune
+title: Configure certificate profiles | Microsoft Docs
 description: Learn how to create an Intune certificate profile.
 keywords:
 author: robstackmsft

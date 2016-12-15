@@ -28,18 +28,20 @@ ms.suite: ems
 
 # What is Microsoft Intune device enrollment
 
-You can enroll devices, including Windows PCs, to enable mobile device management (MDM) with Microsoft Intune. This topic describes different ways to enroll mobile devices in Intune management. The way you enroll your devices depends on the device type, ownership, and the level of management that's needed. "Bring your own device" (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs. Corporate-owned device (COD) enrollment enables management scenarios like remote wipe, shared devices, or user affinity for a device.
+You enroll devices, including Windows PCs, in Intune so that you can manage those devices. We refer to this capability in the Intune documentation as mobile device management (MDM). This topic describes different ways to enroll mobile devices in Intune management.
 
-If you use Exchange ActiveSync, either on-premises or hosted in the cloud, you can enable simple Intune management without enrollment. More information is coming soon. Windows PCs can also be managed using [Intune client software](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
+The way you enroll your devices depends on the device type, ownership, and the level of management you needed. "Bring your own device" (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs. Corporate-owned device (COD) enrollment enables management scenarios like remote wipe, shared devices, or user affinity for a device.
 
-- **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data. For more information, see [Use full or selective wipe on devices](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune).
-- **Affinity** - Associates devices with users. Required for mobile application management (MAM) and conditional access to company data. For more information, see [User affinity](enroll-ios-device-enrollment-program-devices.md).
-- **Lock** - Prevents users from removing the device from management. iOS devices require Supervised mode for Lock. 
+If you use Exchange ActiveSync, either on-premises or hosted in the cloud, you can enable simple Intune management without enrollment (more information is coming soon). You can manage Windows PCs as mobile devices, which is the recommended method described below. You can also manage them as PCs by using [Intune client software](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
 
 
 ## Overview of device enrollment methods
 
-The following table shows Intune enrollment methods and the supported capabilities and requirements of each method. The capabilities and requirements are described below.
+The following table shows Intune enrollment methods and the supported capabilities and requirements of each method. The capabilities and requirements are described below. The following terms are used in the table:
+
+- **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data. For more information, see [Use full or selective wipe on devices](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune).
+- **Affinity** - Associates devices with users. Required for mobile application management (MAM) and conditional access to company data. For more information, see [User affinity](enroll-ios-devices-using-device-enrollment-program.md).
+- **Lock** - Prevents users from removing the device from management. iOS devices require Supervised mode for Lock.
 
 
 **iOS enrollment methods**
@@ -48,9 +50,9 @@ The following table shows Intune enrollment methods and the supported capabiliti
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|	Yes |	No | More information coming soon|
 |**[DEM](#dem)**|	No |No |No	| [More information](enroll-devices-using-device-enrollment-manager.md)|
-|**[DEP](#dep)**|	Yes |	Optional |	Optional|[More information](enroll-ios-device-enrollment-program-devices.md)|
-|**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md)|
-|**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md)|
+|**[DEP](#dep)**|	Yes |	Optional |	Optional|[More information](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
+|**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
 
 
 
@@ -65,8 +67,8 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|	Yes |	No | [More information coming soon|
-|**[DEM](#dem)**|	No |No |No	|[More information coming soon]|
+|**[BYOD](#byod)** | No|	Yes |	No | More information coming soon|
+|**[DEM](#dem)**|	No |No |No	|[More information](enroll-devices-using-device-enrollment-manager.md)|
 
 
 ## BYOD
@@ -76,7 +78,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 Corporate-owned devices (COD) can be managed by using the Intune console. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.
 
 ### DEM
-Device enrollment manager is a special Intune account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](enroll-devices-using-device-enrollment-manager.md). ([Go back to the table](#overview-of-device-enrollment-methods))
+Device enrollment manager is a special user account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](enroll-devices-using-device-enrollment-manager.md). ([Go back to the table](#overview-of-device-enrollment-methods))
 
 ### DEP
 Apple Device Enrollment Program (DEP) management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when users turn on the device for the first time and run iOS Setup Assistant. This method supports **iOS Supervised** mode, which in turn enables:
@@ -85,7 +87,7 @@ Apple Device Enrollment Program (DEP) management lets you create and deploy poli
   -	Jailbreak detection
   -	Mobile application management
 
-Learn more about [DEP](enroll-ios-device-enrollment-program-devices.md). ([Go back to the table](#overview-of-device-enrollment-methods))
+Learn more about [DEP](enroll-ios-devices-using-device-enrollment-program.md). ([Go back to the table](#overview-of-device-enrollment-methods))
 
 ### USB-SA
 USB-connected, corporate-owned devices are prepared with Intune policy. For Setup Assistant enrollment, the admin creates this Intune policy and exports it to Apple Configurator. The admin must enroll each device manually. Users receive their devices and run Setup Assistant, enrolling their device. This method supports **iOS Supervised** mode, which in turn enables:
@@ -93,7 +95,7 @@ USB-connected, corporate-owned devices are prepared with Intune policy. For Setu
   -	Jailbreak detection
   -	Mobile application management
 
-Learn more about [Setup Assistant enrollment with Apple Configurator](enroll-ios-devices-with-apple-configurator-using-setup-assistant.md). ([Go back to the table](#overview-of-device-enrollment-methods))
+Learn more about [Setup Assistant enrollment with Apple Configurator](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). ([Go back to the table](#overview-of-device-enrollment-methods))
 
 ### USB-Direct
 For direct enrollment, the admin creates an Intune policy and exports it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a factory reset. The admin must enroll each device manually. Devices are managed as user-less devices. They are not locked or supervised and cannot support conditional access, jailbreak detection, or mobile application management. ([Go back to the table](#overview-of-device-enrollment-methods))

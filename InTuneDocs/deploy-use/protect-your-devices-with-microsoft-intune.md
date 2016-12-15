@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Protect devices | Microsoft Intune
+title: Protect devices | Microsoft Docs
 description: Learn about some of the ways that Intune can help you protect your devices against unauthorized access and other threats.
 keywords:
 author: Robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,13 +40,13 @@ Intune [configuration policies](manage-settings-and-features-on-your-devices-wit
 Since the first step in protecting company data on mobile devices is to require a passcode to use the device, sometimes you have to [reset a passcode](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) or help an employee do so, either by removing the passcode or setting a temporary passcode remotely. You can also [lock a device remotely](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) if it is lost or stolen.
 
 ### Retire devices and remove data
-When a device needs to be [removed from Intune management](retire-devices-from-microsoft-intune-management) (for example, a user leaves, or the device is lost or stolen), it's likely that you will want to remove data from that device. Intune provides a range of methods to ensure your company data remains secure.
+When a device needs to be [removed from Intune management](retire-devices-from-microsoft-intune-management.md) (for example, a user leaves, or the device is lost or stolen), it's likely that you will want to remove data from that device. Intune provides a range of methods to ensure your company data remains secure.
 
 ### Require devices to be compliant
-Intune features [device compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune) that let you evaluate (and in some cases remediate) devices that are not compliant with rules you specify. For example, you can report about iOS devices that are jailbroken, whether devices are encrypted, or whether Windows 10 devices are reported as healthy by the Health Attestation Service.
+Intune features [device compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune.md) that let you evaluate (and in some cases remediate) devices that are not compliant with rules you specify. For example, you can report about iOS devices that are jailbroken, whether devices are encrypted, or whether Windows 10 devices are reported as healthy by the Health Attestation Service.
 
 ### Protect apps and the data they use
-Intune gives you a range of features to help you protect apps and their data. For example, mobile application management (MAM) policies can prevent data from being backed up from a protected app, restrict copy and paste to other apps, require a PIN to access an app, and more. For more details about protecting apps, see [Protect apps and data with Microsoft Intune](protect-apps-and-data-with-microsoft-intune)
+Intune gives you a range of features to help you protect apps and their data. For example, mobile application management (MAM) policies can prevent data from being backed up from a protected app, restrict copy and paste to other apps, require a PIN to access an app, and more. For more details about protecting apps, see [Protect apps and data with Microsoft Intune](protect-apps-and-data-with-microsoft-intune.md)
 
 ## Further capabilities for Windows devices
 

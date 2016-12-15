@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: This feature has not been enabled| Microsoft Intune 
+title: This feature has not been enabled| Microsoft Docs 
 description:
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angerobe
-ms.date: 08/15/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up iOS and Mac management | Microsoft Intune
+title: Set up iOS and Mac management | Microsoft Docs
 description: Enable mobile device management (MDM) for iOS devices including iPads and iPhones as well as Mac OS X devices with Microsoft Intune.
 keywords:
 author: staciebarkerms.author: stabar
@@ -29,7 +29,7 @@ ms.suite: ems
 Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X devices and gives users access to company email and apps. An Apple Push Notification service (APNs) certificate is required for Intune to manage iOS and Mac devices. After the certificate is added to Intune, users can install the Company Portal app to enroll their devices, or the admin can set up [corporate-owned iOS device management](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Set up Intune**<br>
-    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](prerequisites-for-enrollment.md#set-mobile-device-management-authority) as **Microsoft Intune** and setting up MDM.
+    If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](prerequisites-for-enrollment.md#step-2-set-mdm-authority) as **Microsoft Intune** and setting up MDM.
 
 2.  **Get a certificate signing request**<br>
     As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Administration** &gt; **Mobile Device Management** &gt; **iOS and Mac OS X** &gt; **Upload an APNs Certificate**, and then choose **Download the APNs certificate request**. Save the certificate signing request (.csr) file locally. The .csr file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
@@ -39,7 +39,7 @@ Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X de
 3.  **Get an Apple Push Notification service certificate**<br>
     Go to the [Apple Push Certificates Portal](http://go.microsoft.com/fwlink/?LinkId=269844), and sign in with your company Apple ID to create the APNs certificate by using the .csr file. After choosing **Upload** on Apple's Push Certificate Portal, you will receive a .json file that cannot be used for APNs. Complete the download, return to the Apple Push Certificates Portal for **Certificates for Third-Party Servers**, and then choose **Download**.
 
-    Download the APNs (.pem) certificate, and save the file locally. 
+    Download the APNs (.pem) certificate, and save the file locally.
 
 	> [!NOTE]
 	> Every year, you need to renew (not replace) this APNs certificate. Use this same Apple ID to sign in to Apple's Push Certificate Portal to renew the certificate, and then use the same instructions in this topic to download the certificate, and then upload it to Intune.

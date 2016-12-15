@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Device compliance policies | Microsoft Intune
+title: Device compliance policies | Microsoft Docs
 description: This topic explains what device compliance policies are and how they work.
 keywords:
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article

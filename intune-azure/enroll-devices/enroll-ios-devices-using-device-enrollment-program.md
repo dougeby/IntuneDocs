@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll iOS corporate-owned Device Enrollment Program devices | Intune Azure preview | Microsoft Docs
+title: Enroll iOS devices - Device Enrollment Program | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to enroll corporate-owned iOS devices using the Device Enrollment Program."
 keywords:
 author: staciebarker
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Enroll iOS corporate-owned Device Enrollment Program devices
+# Enroll iOS devices using Device Enrollment Program in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -40,6 +40,11 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP token
 
 Before you follow the steps in this topic, complete the following prerequisites:
 
+- Enable connections (more information coming soon)
+- [Set the MDM Authority](set-mdm-authority.md)
+- Create groups (more information coming soon)
+- [Configure the Company Portal](../manage-apps/company-portal-app.md)
+- Assign user licenses (more information coming soon)
 - [Get an Apple MDM Push certificate](get-an-apple-mdm-push-certificate.md)
 - [Get an Apple DEP token](get-apple-dep-token.md)
 
@@ -47,7 +52,7 @@ Before you follow the steps in this topic, complete the following prerequisites:
 
 A device enrollment profile defines the settings applied to a group of devices. The following steps show how to create a device enrollment profile for iOS devices enrolled by using DEP.
 
-1. In the **Enrollment** workload, choose **Apple Enrollment**.
+1. In the **Enrollment** blade, choose **Apple Enrollment**.
 
 2. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Profiles**.
 
@@ -99,7 +104,7 @@ Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://
 
 ## Synchronize DEP-managed devices
 
-1. In the Azure portal **Enrollment** workload, choose **Apple Enrollment**.
+1. In the Azure portal **Enrollment** blade, choose **Apple Enrollment**.
 
 2. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Serial Numbers**.
 
@@ -117,3 +122,28 @@ Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://
 ## Distribute devices to users
 
 You can now distribute corporate-owned devices to users. When an iOS device is turned on, it will be enrolled for management by Intune.
+
+
+## How users install and use the Company Portal on their devices
+
+Devices that are configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete the additional steps described below to complete the Setup Assistant and install the Company Portal app.
+
+### How users enroll corporate-owned iOS devices with user affinity 
+
+1. When users turn on their device, they are prompted to complete the Setup Assistant. During setup, users are prompted for their credentials. They must use the credentials (i.e., the unique personal name or UPN) that are associated with their subscription in Intune.
+
+2. During setup, users are prompted for an Apple ID. They must provide an Apple ID to allow the device to install the Company Portal. They can also provide the ID from the iOS settings menu after setup is finished.
+
+3. After completing setup, the iOS device must install the Company Portal app from the App Store.
+
+4. The user can now sign in to the Company Portal by using the UPN that they used when setting up the device.
+
+5. After logging in, users are prompted to enroll their device. The first step is to identify their device. The app presents a list of iOS devices that have already been corporate enrolled and assigned to the user’s Intune account. They should choose the matching device. If this device is not already corporate enrolled, they should choose new device to continue with the standard enrollment flow.
+
+6. On the next screen, users must confirm the serial number of the new device. Users can tap the link confirm the Serial Number to launch the Settings app to verify the serial number. Users must then enter the last four characters of the serial number into the Company Portal app.
+
+	This step verifies that the device is the corporate device enrolled in Intune. If the serial number on the device does not match, the wrong device was selected. The user should go back to the previous screen and select a different device.
+
+7. After the serial number is verified, the Company Portal app redirects to the Company Portal website to finalize enrollment. Then the website prompts users to return to the app.
+
+Enrollment is now complete, and users can now use this device with the full set of capabilities.

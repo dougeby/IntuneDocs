@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Customize console views for admin roles | Microsoft Intune
+title: Customize console views for admin roles | Microsoft Docs
 description: Use this topic to help you filter the Intune admin console view to allow your admins to see only the items they need for their role.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

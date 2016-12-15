@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Manage web access with the managed browser | Microsoft Intune
+title: Manage web access with the managed browser | Microsoft Docs
 description: Deploy the managed browser application to restrict web browsing and the transfer of web data to other apps.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

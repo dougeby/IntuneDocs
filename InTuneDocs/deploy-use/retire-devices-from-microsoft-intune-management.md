@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retire devices | Microsoft Intune
+title: Retire devices | Microsoft Docs
 description: Intune supports both a selective wipe and a full wipe to remove the device from Intune management by removing their policy and the company portal.
 keywords:
 author: staciebarkerms.author: staciebarker
@@ -60,7 +60,7 @@ For devices that need to be repurposed, you can also use a [full wipe](use-remot
 8.  Choose the devices as appropriate, and then choose **Delete device**. The device will be deleted the next time it syncs with Active Directory. This typically happens within four hours. After syncing, the device is removed from management. This removes one device from the device limit for this user.
 
 ## Retire managed computers
-Computers that Intune client software manages can be removed from management in the Intune admin console. This also uninstalls the client software and deletes the Intune policy from the computer. See information about [retiring computers managed with the Intune client software](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+Computers that Intune client software manages can be removed from management in the Intune admin console. This also uninstalls the client software and deletes the Intune policy from the computer. See information about [retiring computers managed with the Intune client software](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## Block access a device
 If a device is lost or when you must retire a device because an employee left your company without returning a company-owned hardware, you can also [passcode reset and remotely lock](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) the device. This keeps company information from being misused, although you might have to write the device off as a loss.

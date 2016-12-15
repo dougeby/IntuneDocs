@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Retire apps | Microsoft Intune
+title: Retire apps | Microsoft Docs
 description: Learn how to retire or uninstall apps using Intune.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

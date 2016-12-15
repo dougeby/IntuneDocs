@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshoot device enrollment| Microsoft Intune
+title: Troubleshoot device enrollment| Microsoft Docs
 description: Suggestions for troubleshooting device enrollment issues.
 keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,7 +64,7 @@ These issues may occur on all device platforms.
 
 2.  Check in the Intune admin console under Admin\Mobile Device Management\Enrollment Rules that the Device enrollment limit is set to 15.
 
-Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 Administrators can delete devices in the Azure Active Directory portal.
 
@@ -92,7 +92,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 >
 > A user account which is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
-### Company Portal emporarily Unavailable
+### Company Portal Temporarily Unavailable
 **Issue:** A user receives a **Company Portal Temporarily Unavailable** error on their device.
 
 **Resolution:**
@@ -227,7 +227,7 @@ If Resolution #2 doesn't work, have your users follow these steps to make Smart 
 
 **Resolution 1**:
 
-- Ask your users to follow the instructions in [Your device is missing a required certificate](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). If the error still appears after users follow the instructions, try Resolution 2.
+Ask your users to follow the instructions in [Your device is missing a required certificate](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). If the error still appears after users follow the instructions, try Resolution 2.
 
 **Resolution 2**:
 

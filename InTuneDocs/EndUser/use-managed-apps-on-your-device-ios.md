@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use managed apps on your iOS device | Microsoft Intune
+title: Use managed apps on your iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

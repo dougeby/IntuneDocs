@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Certificate profiles for resource access |Microsoft Intune
+title: Certificate profiles for resource access | Microsoft Docs
 description: Secure VPN, Wi-Fi, and email access with a certificate installed on each user device.
 keywords:
 author: robstackmsft
@@ -50,7 +50,7 @@ When you give users access to corporate resources through VPN, Wi-Fi, or email p
 
   Use a **SCEP Certificate Profile** for devices running these platforms:
     -   Mac OS X 10.9 and later
-    -   Windows Phone 8.1 
+    -   Windows Phone 8.1
 
 You must create a separate profile for each platform. When you create the profile, associate it with the **Trusted Root Certificate Profile** that you've already created.
 

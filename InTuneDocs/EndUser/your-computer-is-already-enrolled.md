@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Your computer is already enrolled | Microsoft Intune
+title: Your computer is already enrolled | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

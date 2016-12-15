@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# VPN settings for Windows Phone 8.1 devices
+# VPN settings for Windows Phone 8.1 devices in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -38,11 +38,11 @@ Depending on the settings you choose, not all values in the list below will be c
 **Servers** - Add one or more VPN servers that devices will connect to.
 
 - **Add** - Opens the **Add Row** blade where you can specify the following information:
-	- **Description** - 
-	- **IP address or FQDN** - 
+	- **Description** -
+	- **IP address or FQDN** -
 	- **Default server** - Enables this server as the default server that devices will use to establish the connection. Make sure to set only one server as the default.
-- **Import** - Browse to a file containing a comma-seperated list of servers in the format description, IP address or FQDN, Default server. Choose **OK** to import these into the **Servers** list.
-- **Export** - Exports the list of servers to a comma-seperated-values (csv) file.
+- **Import** - Browse to a file containing a comma-separated list of servers in the format description, IP address or FQDN, Default server. Choose **OK** to import these into the **Servers** list.
+- **Export** - Exports the list of servers to a comma-separated-values (csv) file.
 
 **Bypass VPN on company Wi-Fi network** - Enable this option to specify that the VPN connection will not be used when the device is connected to the company Wi-Fi network.
 **Bypass VPN on home Wi-Fi network** - Enable this option to specify that the VPN connection will not be used when the device is connected to a home Wi-Fi network.
@@ -54,9 +54,9 @@ Depending on the settings you choose, not all values in the list below will be c
 - **Pulse Secure**
 
 
-**Login group or domain** (Dell SonicWALL Mobile Connect only) - Specify the name of the login group or domain that you want to connect to. 
-**Role** (Pulse Secure only) - Specify the name of the user role that has access to this connection. A user role defines personal settings and options, and it enables or disables certain access features. 
-**Realm** (Pulse Secure only) - Specify the name of the authentication realm that you want to use. An authentication realm is a grouping of authentication resources that the Pulse Secure connection type uses. 
+**Login group or domain** (Dell SonicWALL Mobile Connect only) - Specify the name of the login group or domain that you want to connect to.
+**Role** (Pulse Secure only) - Specify the name of the user role that has access to this connection. A user role defines personal settings and options, and it enables or disables certain access features.
+**Realm** (Pulse Secure only) - Specify the name of the authentication realm that you want to use. An authentication realm is a grouping of authentication resources that the Pulse Secure connection type uses.
 
 **DNS suffix search list** - **Add** one or more DNS suffices. Each DNS suffix that you specify will be searched when connecting to a website by using a short name. For example, specify the DNS suffixes **domain1.contoso.com** and **domain2.contoso.com**, visit the URL **http://mywebsite**, and the URLs **http://mywebsite.domain1.contoso.com** and **http://mywebsite.domain2.contoso.com will be searched**.
 
@@ -71,7 +71,7 @@ Example for CheckPoint Mobile VPN:
 ```
 <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 
-``` 
+```
 
 Example for Dell SonicWALL Mobile Connect:
 ```
@@ -83,7 +83,7 @@ Example for F5 Edge Client:
 ```
 <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 
-``` 
+```
 
 Refer to each manufacturer's VPN documentation for more information about how to write custom XML commands.
 
