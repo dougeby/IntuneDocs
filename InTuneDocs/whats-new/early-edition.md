@@ -56,6 +56,9 @@ New app protection reports have been added for both enrolled devices and devices
 ### Android 7.1.1 support for Intune <!--694397-->
 Intune now fully supports and manages Android 7.1.1. 
 
+### Custom app categories <!--748805-->
+You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
+
 ## Notices
 
 ### Defaulting to managing Windows desktop devices through Windows settings <!--663050-->
