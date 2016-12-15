@@ -26,7 +26,8 @@ ms.suite: ems
 
 ---
 
-# What is Microsoft Intune device enrollment
+# What is Microsoft Intune device enrollment in Intune Azure preview
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 You enroll devices, including Windows PCs, in Intune so that you can manage those devices. We refer to this capability in the Intune documentation as mobile device management (MDM). This topic describes different ways to enroll mobile devices in Intune management.
 

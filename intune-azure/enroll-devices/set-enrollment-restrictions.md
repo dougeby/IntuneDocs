@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set enrollment restrictions in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Set enrollment restrictions in Intune | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Restrict enrollment by platform and set a device enrollment limit in Intune. "
 keywords:
 author: staciebarker
@@ -25,11 +25,11 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# Set enrollment restrictions in Microsoft Intune
+# Set enrollment restrictions in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-You can limit the types of devices that are allowed to enroll in Intune by specifying the allowable platforms. You can also set the maximum number of devices that a user is allowed to enroll. 
+You can limit the types of devices that are allowed to enroll in Intune by specifying the allowable platforms. You can also set the maximum number of devices that a user is allowed to enroll.
 
 ## Set device type restrictions
 
