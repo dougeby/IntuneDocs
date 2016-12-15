@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -79,9 +79,9 @@ You must create a Trusted certificate profile before you can create a Simple Cer
 
 ### To create a Trusted certificate profile
 
-1. In the Azure Portal, select the **Device Configurations** workload.
-2. On the **Device configuration** blade, select **Manage** > **Profiles**.
-3. On the profiles blade, click **Create Profile**.
+1. In the Azure Portal, select the **Configure devices** workload.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
+3. On the profiles blade, choose **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the trusted certificate profile.
 5. From the **Platform** drop-down list, select the device platform for this trusted certificate. Currently, you can choose one of the following platforms for device restriction settings:
 	- **Android**
@@ -107,9 +107,9 @@ After you create a Trusted CA certificate profile, create SCEP or .PFX certifica
 
 
 
-1. In the Azure Portal, select the **Device Configurations** workload.
-2. On the **Device configuration** blade, select **Manage** > **Profiles**.
-3. On the profiles blade, click **Create Profile**.
+1. In the Azure Portal, select the **Configure devices** workload.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
+3. On the profiles blade, choose **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the SCEP certificate profile.
 5. From the **Platform** drop-down list, select the device platform for this SCEP certificate. Currently, you can choose one of the following platforms for device restriction settings:
 	- **Android**
@@ -146,8 +146,8 @@ In this example, you created a subject name format that, in addition to the CN a
 
 ### To create a .PFX certificate profile
 
-In the Azure Portal, select the **Device Configurations** workload.
-2. On the **Device configuration** blade, select **Manage** > **Profiles**.
+In the Azure Portal, select the **Configure devices** workload.
+2. On the **Device configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, click **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the PKCS certificate profile.
 5. From the **Platform** drop-down list, select the device platform for this PKCS certificate. Currently, you can choose one of the following platforms for device restriction settings:

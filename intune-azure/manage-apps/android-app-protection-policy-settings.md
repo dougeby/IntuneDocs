@@ -61,7 +61,7 @@ There are two categories of policy settings: data relocation settings and access
   For devices that are not enrolled in Intune, links in policy-managed apps can only open in the Managed Browser app if you use the app protection policy.
 
   Default value = **Yes**
-- **Encrypt app data**: Choose **Yes** to enable encryption. When this setting is enabled, Microsoft provides encryption for apps that are associated with an app protection policy. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted.
+- **Encrypt app data**: Choose **Yes** to enable encryption. When this setting is enabled, Intune encrypts data in apps that are associated with an app protection policy. Intune uses an OpenSSL encryption scheme along with the Android Keystore system to securely encrypt app data. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted.
   >[!NOTE]
   >The encryption method is not FIPS 140-2 certified.
 

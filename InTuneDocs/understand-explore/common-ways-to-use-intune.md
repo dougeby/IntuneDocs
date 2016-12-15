@@ -8,7 +8,7 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/09/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:

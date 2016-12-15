@@ -123,7 +123,7 @@ Download, install, and configure the Certificate Connector.
 
 ### To download, install, and configure the Certificate Connector
 
-1.  In the **Device Configuration** workflow, choose **Setup** > **Certificate Authority**.
+1.  In the **Configure devices** workload, choose **Setup** > **Certificate Authority**.
 2.  choose **Download the certificate connector**.
 2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**).
   Run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option, and then choose **Install**. When the installation has completed, continue by creating a certificate profile as described in [How to configure certificate profiles](how-to-configure-certificates.md).

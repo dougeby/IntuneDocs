@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get an Apple DEP certificate for Microsoft Intune | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Instructions for configuring and uploading an MDM push certificate, which is a prerequisite for managing Apple devices in Intune. "
+title: Get an Apple DEP certificate for Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Instructions for configuring and uploading an MDM push certificate, a prerequisite for managing Apple devices in Intune. "
 keywords:
 author: staciebarker
 ms.author: stabar
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# Get an Apple DEP certificate for Microsoft Intune
+# Get an Apple DEP certificate for Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -52,7 +52,7 @@ Select [Create a DEP token via Apple Deployment Programs](https://deploy.apple.c
 
     This certificate (.p7m) file is used to establish a trust relationship between Intune and Apple’s Device Enrollment Program servers.
 
-**Step 3. Enter the Apple ID used to create your Apple DEP token. This ID can be used to renew your Apple DEP token. **
+**Step 3. Enter the Apple ID used to create your Apple DEP token. This ID can be used to renew your Apple DEP token.**
 
 **Step 4. Browse to your Apple DEP token to upload. Intune will automatically synchronize with your DEP account.**<br>
 Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices.
