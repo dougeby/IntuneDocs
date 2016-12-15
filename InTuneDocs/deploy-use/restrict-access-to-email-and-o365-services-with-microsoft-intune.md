@@ -27,7 +27,7 @@ ms.suite: ems
 ---
 
 # Restrict access to email, Office 365, and other services with Microsoft Intune
-You can restrict access to your company email, Office 365 services like **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**,  **SharePoint Online**, **Skype for Business Online**, and other services by using Azure Active Directory Conditional Access with Intune. This capability allows you to make sure that access to your company email and Office 365 services is restricted to devices that are compliant with the conditional access rules that you set either in the Intune admin console, or Azure classic portal.
+You can restrict access to your company email, Office 365 services like **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**,  **SharePoint Online**, **Skype for Business Online**, and other services by using Enterprise Mobility + Security (EMS) Conditional Access. This capability allows you to make sure that access to your company email and Office 365 services is restricted to devices that are compliant with the conditional access rules that you set either in the Intune admin console, or Azure classic portal.
 ## How does conditional access work?
 You can use compliance policy settings to evaluate the compliance of a device. A conditional access policy uses the evaluation to restrict or allow access to a specific service. When you use a conditional access policy in combination with a device compliance policy, only compliant devices are allowed to access the service. The compliance policy and the conditional access policy are deployed to the user. Any device that the user uses to access the services is checked for compliance with the policies.
 
@@ -44,7 +44,13 @@ A typical flow of conditional access:
 
 ### Licensing
 
-You must have an **Enterprise Mobility + Security (EMS) subscription** or an **Azure Active Directory (Azure AD) Premium subscription**, and the users you plan to apply conditional access must be assigned with the EMS or Azure AD Premium licenses. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+Even though Microsoft Intune and Azure Active Directory (Azure AD) Premium work seamlessly together to provide multiple layers of control through conditional access, customers who wish to deploy conditional access policies in Intune are required to have license for both products.
+
+**Azure AD Premium licenses** can be purchased as a standalone service or can be purchased (along with Intune) as part of Enterprise. If you have deployed conditional access policies with Intune, please ensure that you have obtained the proper Azure AD Premium or **EMS licenses**.
+
+- Learn more about [Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+
+Additionally, make sure the users you plan to apply conditional access policies are [assigned with the Azure AD Premium or EMS licenses](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 
 ### Device compliance settings
 
