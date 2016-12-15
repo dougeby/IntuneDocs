@@ -42,7 +42,7 @@ Select **Download your CSR** to download and save the .csr file locally. The .cs
 Select **Create your MDM push Certificate** to go to the Apple Push Certificates Portal. Sign in with your company Apple ID to create the push certificate certificate by using the .csr file. After choosing **Upload** on Apple's Push Certificate Portal, you will receive a .json file. Do use this file for the push certificate. Complete the download, return to the Apple Push Certificates Portal for Certificates for Third-Party Servers, and then choose **Download**. Download the push certficate (.pem file), and save the file locally.
 Note
 
-**Step 3. Enter the Apple ID used to create your Apple MDM push certificate. **
+**Step 3. Enter the Apple ID used to create your Apple MDM push certificate.**
 
 **Step 4. Browse to your Apple MDM push certificate to upload.**<br>
 Go to the certificate (.pem) file, choose **Open**, and then choose **Upload**. With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices.
