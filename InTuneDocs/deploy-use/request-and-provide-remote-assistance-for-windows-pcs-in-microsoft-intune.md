@@ -2,11 +2,11 @@
 # required metadata
 
 title: Request and provide remote assistance for Windows PCs | Microsoft Docs
-description: Describes end-user and IT admin steps for providing remote assistance for Windows PCs and for remotely starting a PC.
+description: Describes end-user and IT admin steps for providing remote assistance for Windows desktops that are being managed as PCs and for remotely starting a PC.
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,9 @@ ms.suite: ems
 
 # Request and provide remote assistance for Windows PCs
 
-Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running the Intune software client. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance. This functionality replaces the existing Windows Remote Assistance functionality in Intune.
+The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client.
+
+Intune can use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running the Intune software client. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance. This functionality replaces the existing Windows Remote Assistance functionality in Intune.
 
 
 ## Before you start
@@ -35,7 +37,7 @@ Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software, 
 Before you begin to establish and to respond to remote assistance requests, ensure that the following prerequisites are in place:
 
 - You must have [signed up for a TeamViewer account](https://login.teamviewer.com/LogOn#register) to log in to the TeamViewer website.
-- Windows PCs that you want to administer must be [managed by the Windows PC client](manage-windows-pcs-with-microsoft-intune.md)
+- Windows PCs that you want to administer must be [managed by the Windows software client](manage-windows-pcs-with-microsoft-intune.md)
 - All Windows PC operating systems supported by Intune can be administered.
 
 ## Configure the TeamViewer Connector
@@ -64,7 +66,7 @@ Before you begin to establish and to respond to remote assistance requests, ensu
 
 <br>If a request goes unanswered for more than 4 hours, it is removed.
 2. To accept the request, choose **Approve request and launch Remote Assistance**.
-3. In the **A New Remote Assistance Request is Pending** dialog box, choose **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
+3. In the **A New Remote Assistance Request is Pending** dialog box, choose **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your PC.
 4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC.
 
 While in a remote assistance session, you can use all available TeamViewer commands to control the remote PC. For help with these commands, download the [Manual for remote control](http://www.teamviewer.com/en/support/documents/) from the TeamViewer website.
@@ -76,9 +78,9 @@ From the **Actions** menu of the **TeamViewer** window, choose **End Session**.
 ## Remotely restart a Windows PC
 When helping your users with issues, you might need to remotely restart their PC from time to time. Use the following steps to remotely restart a Windows PC.
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the computer you want to restart).
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the PC you want to restart).
 
-2.  Select one or more computers, and then choose **Remote Tasks** &gt; **Restart Computer**.
+2.  Select one or more PCs, and then choose **Remote Tasks** &gt; **Restart Computer**.
 
 3.  To view the task status, choose **Remote Tasks** in the bottom right corner of the page.
 
