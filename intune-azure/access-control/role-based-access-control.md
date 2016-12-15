@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/14/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -89,7 +89,7 @@ The new role is displayed in the list on the **Roles** blade.
 	- **Scope** - Select a group containing the users who the member above will be allowed to manage.
 5. When you are done, click **OK**.
 
-The new assignment us displayed int the list of assignments.
+The new assignment is displayed in the list of assignments.
 
 ## Custom role settings reference
 
