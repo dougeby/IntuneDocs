@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll iOS device with Apple Configurator and direct enrollment | Intune Azure preview | Microsoft Docs
+title: Enroll iOS devices with Apple Configurator and direct enrollment | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with direct enrollment."
 keywords:
 author: staciebarker
@@ -53,17 +53,19 @@ Complete the following prerequisites before setting up iOS device enrollment:
 
 A device enrollment profile defines the settings applied to a group of devices. The following steps show how to create a device enrollment profile for iOS devices enrolled by using Apple Configurator.
 
-1. In the **Enrollment** blade, choose **Apple Enrollment**.
+1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
 
-2. Under **Manage Apple Configurator Enrollment Settings**, select **AC Profiles**.
+2. On the Intune blade, choose **Enroll devices**, and then choose **Apple Enrollment**.
 
-3. On the **Apple Configurator Enrollment Profiles** blade, select **Create**.
+3. Under **Manage Apple Configurator Enrollment Settings**, select **AC Profiles**.
 
-4. On the **Create Enrollment Profile** blade, enter a name and description for the profile.
+4. On the **Apple Configurator Enrollment Profiles** blade, select **Create**.
 
-5. For **User Affinity** choose **Enroll without user affinity** to ensure that the device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
+5. On the **Create Enrollment Profile** blade, enter a name and description for the profile.
 
-6. Select **Create** to save the profile.
+6. For **User Affinity** choose **Enroll without user affinity** to ensure that the device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
+
+7. Select **Create** to save the profile.
 
 ## Export the profile as .mobileconfig to iOS devices
 

@@ -46,28 +46,40 @@ You can create any device categories you want, for example:
 - Manager
 
 ## How to configure device categories
-### Step 1 - Create device categories in the Intune Azure portal
-1.	In the Intune Azure portal, choose **Enrollment**.
-2.	In the **Enrollment** blade, choose **Device Categories**.
-3.	On the **Device Categories** page, choose **Create** to add a new category.
-4.	In the next blade, enter a **Name** for the new category, and an optional **Description**.
-5.	When you are done, click **Create**. You’ll see the category you just created in the list of categories.
+### Step 1 - Create device categories in the Intune blade of the Azure portal
+1.	In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**
+
+2.	In the Intune blade of the Azure portal, choose **Enroll Devices**.
+
+3.	In the **Enrollment** blade, choose **Device Categories**.
+
+4.	On the **Device Categories** page, choose **Create** to add a new category.
+
+5.	In the next blade, enter a **Name** for the new category, and an optional **Description**.
+
+6.	When you are done, click **Create**. You’ll see the category you just created in the list of categories.
 
 You'll use the device category name when you create Azure Active Directory security groups in step 2.
 
 ### Step 2 - Create Azure Active Directory security groups
 In this step, you'll create dynamic groups in the Azure portal based on the device category and device category name.
-To continue, refer to the topic [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in the Azure Active Directory documentation. Use the information in this topic to create a device group with an advanced rule using the **deviceCategory** attribute. For example (**device.deviceCategory -eq** "*<the device category name you got from the Intune portal>*")
-After you configure device groups
-When users enroll their device, they are presented with a list of the categories you configured. After they choose a category and finish enrollment, their device is added to the Active Directory security group that corresponds with the category they chose.
+
+To continue, refer to the topic [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in the Azure Active Directory documentation. 
+
+Use the information in this section to create a device group with an advanced rule using the **deviceCategory** attribute. For example (**device.deviceCategory -eq** "*<the device category name you got from the Intune portal>*")
+
+After you configure device groups, and users enroll their device, they are presented with a list of the categories you configured. After they choose a category and finish enrollment, their device is added to the Active Directory security group that corresponds with the category they chose.
 
 ### How to view the categories of devices you manage
-1.	In the Intune Azure Portal, open the **Devices and Groups** blade.
+1.	In the Intune blade of the Azure portal, choose **Devices and Groups**.
+
 2.	Under **Manage**, click **MDM devices**.
+
 3.	In the list of devices, examine the **Device category** column.
 
 If the **Device category** column isn’t displayed, click **Columns**, choose **Device category** from the list, and then click **Apply**.
 
 ## Further information
 - You can edit a device category in the Azure Portal, but if you do this, you must manually update any Azure Active Directory Security groups that reference this category.
+
 - If you delete a category, any devices that were assigned to it will subsequently display the category name **Unassigned**.
