@@ -24,12 +24,10 @@ ms.suite: ems
 
 ---
 
-# How to create a device compliance policy for Android devices
+# How to create a device compliance policy for Android devices in Intune Azure preview
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
-
-# How to create a device compliance policy for Android
 
 Compliance policies are created for each platform.  You can create a compliance policy in the Azure portal. To learn more about what compliance policy is see [What is a device compliance](what-is-device-compliance.md) topic. To learn about the prerequisites that you need to address before creating a compliance policy see [Get started with device compliance](get-started-with-device-compliance.md) topic.
 
@@ -79,7 +77,7 @@ To assign a compliance policy to users, choose a policy that you have configured
 
 You have applied the policy to users.  The devices used by the users who are targeted by the policy will be evaluated for compliance.
 
-##  Compliance policy settings
+<!---##  Compliance policy settings--->
 
 ## System security settings
 
@@ -109,7 +107,7 @@ You have applied the policy to users.  The devices used by the users who are tar
 - **Device must not be jailbroken or rooted** : If you enable this setting, jailbroken devices will be evaluated as noncompliant.
 - **Require that devices prevent installation of apps from unknown sources (Android 4.0 or later)**: To block devices that have **Security** >; **Unknown sources** enabled on the device, enable this setting and set it to **Yes**.
 
-##### Important
+### Important
 
 Side-loading applications require that the **Unknown sources** setting is enabled. Enforce this compliance policy only if you are not side-loading Android apps on devices.
 
