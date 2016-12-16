@@ -51,10 +51,10 @@ If you have any questions about the timeline for your tenant’s migration, cont
 _Actions for non-compliance_ is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
 
 ### In-console reports for MAM without enrollment <!--677961-->
-New app protection reports have been added for both enrolled devices and devices that have not been enrolled. Find out more about how you can [monitor mobile app management policies with Intune here](https://docs.microsoft.com/en-us/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune). 
+New app protection reports have been added for both enrolled devices and devices that have not been enrolled. Find out more about how you can [monitor mobile app management policies with Intune here](https://docs.microsoft.com/en-us/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune).
 
 ### Android 7.1.1 support <!--694397-->
-Intune now fully supports and manages Android 7.1.1. 
+Intune now fully supports and manages Android 7.1.1.
 
 ### Custom app categories <!--748805-->
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
@@ -76,7 +76,7 @@ Links inside of the Company Portal app for iOS, including those to documentation
 End users will be given additional guidance on how to regain access to work or school data if that data is automatically removed due to the "Offline interval before app data is wiped" policy.<!--, or the removal of the Intune Company Portal on Android.-->
 
 ### New documentation for app protection policies <!--583398-->
-We have updated our documentation for admins and app developers who want to enable app protection policies (known as MAM policies) in their iOS and Android apps using the Intune App Wrapping Tool or Intune App SDK. 
+We have updated our documentation for admins and app developers who want to enable app protection policies (known as MAM policies) in their iOS and Android apps using the Intune App Wrapping Tool or Intune App SDK.
 
 The following articles have been updated:
 
@@ -90,8 +90,8 @@ The following articles are new additions to the docs library:
 * [Intune App SDK Cordova Plugin](https://docs.microsoft.com/intune/develop/intune-app-sdk-cordova)
 * [Intune App SDK Xamarin Component](https://docs.microsoft.com/intune/develop/intune-app-sdk-xamarin)
 
-__Progress bar when launching the Company Portal on iOS__<!--665978-->
-The Company Portal for iOS is introducing a progress bar on the launch screen to provide the user with information about the loading processes that occur. There will be a phased rollout of the progress bar to replace the spinner. This means that some of your users will see the new progress bar while others will continue to see the spinner. 
+### Progress bar when launching the Company Portal on iOS <!--665978-->
+The Company Portal for iOS is introducing a progress bar on the launch screen to provide the user with information about the loading processes that occur. There will be a phased rollout of the progress bar to replace the spinner. This means that some of your users will see the new progress bar while others will continue to see the spinner.
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.

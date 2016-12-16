@@ -52,15 +52,17 @@ Before you follow the steps in this topic, complete the following prerequisites:
 
 A device enrollment profile defines the settings applied to a group of devices. The following steps show how to create a device enrollment profile for iOS devices enrolled by using DEP.
 
-1. In the **Enrollment** blade, choose **Apple Enrollment**.
+1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
 
-2. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Profiles**.
+2. On the Intune blade, choose **Enroll devices**, and then choose **Apple Enrollment**.
 
-3. On the **Apple DEP Profiles** blade, select **Create**.
+3. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Profiles**.
 
-4. On the **Create Enrollment Profile** blade, enter a name and description for the profile.
+4. On the **Apple DEP Profiles** blade, select **Create**.
 
-5. For **User Affinity** choose whether devices with this profile will enroll with or without user affinity.
+5. On the **Create Enrollment Profile** blade, enter a name and description for the profile.
+
+6. For **User Affinity** choose whether devices with this profile will enroll with or without user affinity.
 
  - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. Choose user affinity for DEP-managed devices that belong to users and that need to use the company portal for services like installing apps. Note that Multifactor authentication (MFA) doesn't work during enrollment on DEP devices with user affinity. After enrollment, MFA works as expected on these devices.
 
@@ -69,7 +71,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
  - **Enroll without user affinity** - The device is not affiliated with a user. Use this affiliation for devices that perform tasks without accessing local user data. Apps requiring user affiliation (including the Company Portal app used for installing line-of-business apps) won’t work.
 
-6. Select **Device Management Settings**, configure the following profile settings, and then select **Save**:
+7. Select **Device Management Settings**, configure the following profile settings, and then select **Save**:
 
 	- **Supervised** - a management mode that enables more management options and disabled Activation Lock by default. If you leave the check box blank, you have limited management capabilities.
 
@@ -79,7 +81,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 	- **Apple Configurator Certificates** - If you chose **Allow Apple Configurator by certificate** under **Allow Pairing**, select an Apple Configurator Certificate to import.
 
-7. Select **Setup Assistant Settings**, configure the following profile settings, and then select **Save**:
+8. Select **Setup Assistant Settings**, configure the following profile settings, and then select **Save**:
 
 	- **Department Name** - Appears when users tap **About Configuration** during activation.
 
@@ -96,7 +98,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
         - **Siri** - If enabled, Setup Assistant prompts for this service during activation
         - **Diagnostic Data** - If enabled, Setup Assistant prompts for this service during activation
 
-8. To save the profile settings, select **Create** on the **Create Enrollment Profile** blade.
+9. To save the profile settings, select **Create** on the **Create Enrollment Profile** blade.
 
 ## Assign Apple DEP serial numbers to profiles
 
@@ -104,7 +106,7 @@ Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://
 
 ## Synchronize DEP-managed devices
 
-1. In the Azure portal **Enrollment** blade, choose **Apple Enrollment**.
+1. On the Intune blade of the Azure portal, choose **Enroll Devices**, and then choose **Apple Enrollment**.
 
 2. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Serial Numbers**.
 
