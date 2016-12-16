@@ -24,8 +24,9 @@ ms.suite: ems
 
 ---
 
-# What to expect when your iOS app is managed by app protection policies
- This topic describes the user experience for apps with app protection policies. App protection polices are applied only when apps are used in the work context: like accessing apps using your work account, or accessing files stored in your company OneDrive business location.
+# What to expect when your iOS app is managed by app protection policies in Intune Azure preview
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+This topic describes the user experience for apps with app protection policies. App protection polices are applied only when apps are used in the work context: like accessing apps using your work account, or accessing files stored in your company OneDrive business location.
 ##  Accessing apps
 
 If the device is **not enrolled in Intune**, the end-user will be asked to restart the app when they first use the app.  A restart is required so app protection polices can be applied to the app. The following screenshot illustrates this using the Skype app:
