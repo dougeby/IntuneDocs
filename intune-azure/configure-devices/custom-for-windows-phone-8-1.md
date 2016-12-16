@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Intune custom settings for Windows Phone 8.1 devices
+# Custom settings for Windows Phone 8.1 devices in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -46,7 +46,3 @@ This capability is intended to allow you to deploy settings that are not configu
 	- **Value** - Enter the value you want to associate with the OMA-URI you entered.
 
 4. Click **OK** once you are done, then continue to add more settings as required.
-
-
-
-

@@ -6,7 +6,7 @@ description: How to link a user to an Intune-managed Windows PC.
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,26 +26,28 @@ ms.suite: ems
 ---
 
 # Manage user-device linking for Windows PCs
-Before you can deploy software to a user, you must link the user to a computer. You can link a user to multiple computers, but each computer can be linked to only one user. Users are automatically linked to any computers that they enroll in Intune by using the company portal.
+The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client. 
 
-To link a user to a computer:
+Before you can deploy software to a user, you must link the user to a PC. You can link a user to multiple PCs, but each PC can be linked to only one user. Users are automatically linked to any PCs that they enroll in Intune by using the company portal.
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the computer you want to link to a user).
+To link a user to a PC:
 
-2.  Select the computer that you want to link a user, and then choose **Link User**.
+1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the PC you want to link to a user).
 
-    The **Link User** dialog box displays a list of available users with their display name, user ID, and the number of computers to which each user is currently linked. If a user is already linked to the selected computer, that user’s name and user ID are displayed under **Current user**. If the computer is not linked to any user, **No User** appears under **Current User**.
+2.  Select the PC that you want to link a user, and then choose **Link User**.
+
+    The **Link User** dialog box displays a list of available users with their display name, user ID, and the number of PCs to which each user is currently linked. If a user is already linked to the selected PC, that user’s name and user ID are displayed under **Current user**. If the PC is not linked to any user, **No User** appears under **Current User**.
 
 3.  Do one of the following:
 
-    -   To leave the computer linked to its current user, if there is one, choose **Cancel**.
+    -   To leave the PC linked to its current user, if there is one, choose **Cancel**.
 
     -   To remove the link to the current user, if there is one, choose **Remove link **&gt; **OK**.
 
-    -   To link the computer to a new user, in the **All users** list, select a user. Confirm that the user data is correct, and then choose **OK**.
+    -   To link the PC to a new user, in the **All users** list, select a user. Confirm that the user data is correct, and then choose **OK**.
 
 > [!TIP]
-> If you want to restrict end users ability to link themselves to computers, enable the option **Restrict users' ability to link themselves to computers** in the **Microsoft Intune Agent Settings** policy.
+> If you want to restrict end users ability to link themselves to PCs, enable the option **Restrict users' ability to link themselves to PCs** in the **Microsoft Intune Agent Settings** policy.
 
 ### See also
 

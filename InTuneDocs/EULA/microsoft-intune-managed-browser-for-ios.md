@@ -2,11 +2,12 @@
 # required metadata
 
 title: Microsoft Intune Managed Browser for iOS | Microsoft Docs
-description:
+description: The license terms are an agreement between Microsoft Corporation (or based on where you live, one of its affiliates) and you. 
 keywords:
-author: barlanmsftms.author: barlan
-manager: arob98
-ms.date: 11/29/2016
+author: barlanmsft
+ms.author: barlan
+manager: angrobe
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +19,7 @@ ms.assetid: 122a12c2-ef30-43ac-a21c-af34a3ba64d9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: angrobe
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

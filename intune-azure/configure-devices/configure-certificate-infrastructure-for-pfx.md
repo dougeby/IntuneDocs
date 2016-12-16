@@ -25,11 +25,13 @@ ms.suite: ems
 
 ---
 # Configure certificate infrastructure
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
 This topic describes what you need in order to create and deploy .PFX certificate profiles.
 
 To do any certificate-based authentication in your organization, you need an Enterprise Certification Authority.
 
-To use .PFX Certificate profiles, in addition to the Enterprise Certification Authority, you  also need:
+To use .PFX Certificate profiles, in addition to the Enterprise Certification Authority, you also need:
 
 -   A computer that can communicate with the Certification Authority, or you can use the Certification Authority computer itself.
 
@@ -121,7 +123,7 @@ Download, install, and configure the Certificate Connector.
 
 ### To download, install, and configure the Certificate Connector
 
-1.  In the **Device Configuration** workflow, choose **Setup** > **Certificate Authority**.
+1.  In the **Configure devices** workload, choose **Setup** > **Certificate Authority**.
 2.  choose **Download the certificate connector**.
 2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**).
   Run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option, and then choose **Install**. When the installation has completed, continue by creating a certificate profile as described in [How to configure certificate profiles](how-to-configure-certificates.md).

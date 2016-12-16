@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for macOS devices | Intune Azure preview | Microsoft Docs
+title: Intune device restriction settings for macOS | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on macOS devices."
 keywords:
 author: robstackmsft
@@ -26,20 +26,20 @@ ms.suite: ems
 
 ---
 
-# macOS device restriction settings
+# macOS device restriction settings in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-## Password	
-- 	**Password required** - Require the end user to enter a password to access the device.	
-- 	**Required password type** - Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers). This setting is supported only on Mac OS X version 10.10.3 and later.	
+## Password
+- 	**Password required** - Require the end user to enter a password to access the device.
+- 	**Required password type** - Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers). This setting is supported only on Mac OS X version 10.10.3 and later.
 - 	**Number of non-alphanumeric characters in password** - Specify the number of complex characters required in the password (**0** to **4**).<br>A complex character is a symbol, such as **?**.
-- 	**Minimum password length** - Enter the minimum length of password a user must configure (between **4** and **16** characters).	
-- 	**Simple passwords** - Allow the use of simple passwords such as **0000** or **1234**.	
-- 	**Maximum minutes after screen lock before password is required** - Specify how long the computer must be inactive before a password is required to unlock it.	
-- 	**Maximum minutes of inactivity until screen locks** - Specify the length of time that the computer must be idle before the screen locks.	
-- 	**Password expiration (days)** - Specify how many days elapse before the user must change the password (**1** to **255** days).	
-- 	**Prevent reuse of previous passwords** - Specify the number of previously used passwords that cannot be reused (**1** to **24**).	
+- 	**Minimum password length** - Enter the minimum length of password a user must configure (between **4** and **16** characters).
+- 	**Simple passwords** - Allow the use of simple passwords such as **0000** or **1234**.
+- 	**Maximum minutes after screen lock before password is required** - Specify how long the computer must be inactive before a password is required to unlock it.
+- 	**Maximum minutes of inactivity until screen locks** - Specify the length of time that the computer must be idle before the screen locks.
+- 	**Password expiration (days)** - Specify how many days elapse before the user must change the password (**1** to **255** days).
+- 	**Prevent reuse of previous passwords** - Specify the number of previously used passwords that cannot be reused (**1** to **24**).
 
 ## Restricted apps
 
@@ -59,5 +59,3 @@ Copy the URL of the page and use this as the URL to configure the allowed or pro
 
 > [!Note]
 > You can also use iTunes to find the app and then use the **Copy Link** command to get the app URL.
-
-

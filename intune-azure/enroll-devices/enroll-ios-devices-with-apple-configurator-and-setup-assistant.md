@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enroll iOS devices with Apple Configurator by using Setup Assistant | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Learn how to use the Apple Configuration to enroll corporate-owned iOS devices with Setup Assistant."
+title: Enroll iOS - Apple Configurator-Setup Assistant | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant."
 keywords:
 author: staciebarker
 ms.author: stabar
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Enroll iOS devices with Apple Configurator by using Setup Assistant
+# Enroll iOS devices with Apple Configurator and Setup Assistant in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -36,9 +36,16 @@ Using Apple Configurator, you can reset an iOS device to factory settings and pr
 
 ## Prerequisites
 
-- [Get an Apple MDM Push certificate](get-an-apple-mdm-push-certificate.md)
+Complete the following prerequisites before setting up iOS device enrollment:
+
+- Enable connections (more information coming soon)
+- [Set the MDM Authority](set-mdm-authority.md)
+- Create groups (more information coming soon)
+- [Configure the Company Portal](/intune-azure/manage-apps/company-portal-app.md)
+- Assign user licenses (more information coming soon)
+- [Get an Apple MDM push certificate](get-an-apple-mdm-push-certificate.md)
 - Physical access to iOS devices—devices must be reset to factory settings without password protection
-- Device serial numbers—see How to get an iOS serial number
+- Device serial numbers—see [How to get an iOS serial number](https://support.apple.com/en-us/HT204308)
 - USB connection cables
 - A Mac computer with Apple Configurator 2.0
 
@@ -66,7 +73,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 After you create Apple Configurator profiles, you can assign device serial numbers to the profiles. To be able to assign serial numbers, you must first add them to Intune by following the steps in [Add Apple Configurator serial numbers](add-apple-configurator-serial-numbers.md).
 
-**To assign serial numbers to Apple Configurator profiles:**
+### Assign serial numbers to Apple Configurator profiles
 
 1. From the **Apple Configurator Enrollment Profiles** blade, select the profile that you want to assign serial numbers to.
 
@@ -78,13 +85,13 @@ After you create Apple Configurator profiles, you can assign device serial numbe
 
 After you create the profile and assign serial numbers, you have to export the profile from Intune, either as a URL or as a file in the format described below. You then manually import it to the Apple Configurator program on a Mac, after which the Apple Configurator program deploys it to the devices.
 
-### To export a profile using Setup Assistant enrollment
+### Export a profile using Setup Assistant enrollment
 
 1. On the **Apple Configurator Enrollment Profiles** blade, choose the profile to export.
 
 2. On the blade for the profile, select **Export Profile**.
 
-3. copy the profile URL into [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12), with the iOs device attached. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
+3. Copy the profile URL into [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12), with the iOs device attached. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
 
     >[!WARNING]
     >Using this method removes all data from the device and resets it to factory default settings.
@@ -133,9 +140,26 @@ After you create the profile and assign serial numbers, you have to export the p
 8.  **Distribute devices**.
     The devices are now ready for corporate enrollment. Turn off the devices and distribute them to users. When users turn on their devices, Setup Assistant will start.
 
-### To export a profile using Direct Enrollment
+## How users install and use the Company Portal on their devices
 
-1. On the **Export Profile** blade, download the enrollment profile to [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) to push directly as a management profile to a connected iOS device. This method does not do a factory reset of the device.
+Devices that are configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete the additional steps described below to complete the Setup Assistant and install the Company Portal app.
 
-2. **Distribute devices**.
-    The devices are now ready for corporate enrollment. Turn off the devices and distribute them to users. When users turn on their devices, Setup Assistant will start.
+### How users enroll corporate-owned iOS devices with user affinity
+
+1. When users turn on their device, they are prompted to complete the Setup Assistant. During setup, users are prompted for their credentials. They must use the credentials (i.e., the unique personal name or UPN) that are associated with their subscription in Intune.
+
+2. During setup, users are prompted for an Apple ID. They must provide an Apple ID to allow the device to install the Company Portal. They can also provide the ID from the iOS settings menu after setup is finished.
+
+3. After completing setup, the iOS device must install the Company Portal app from the App Store.
+
+4. The user can now sign in to the Company Portal by using the UPN that they used when setting up the device.
+
+5. After logging in, users are prompted to enroll their device. The first step is to identify their device. The app presents a list of iOS devices that have already been corporate enrolled and assigned to the user’s Intune account. They should choose the matching device. If this device is not already corporate enrolled, they should choose new device to continue with the standard enrollment flow.
+
+6. On the next screen, users must confirm the serial number of the new device. Users can tap the link confirm the Serial Number to launch the Settings app to verify the serial number. Users must then enter the last four characters of the serial number into the Company Portal app.
+
+	This step verifies that the device is the corporate device enrolled in Intune. If the serial number on the device does not match, the wrong device was selected. The user should go back to the previous screen and select a different device.
+
+7. After the serial number is verified, the Company Portal app redirects to the Company Portal website to finalize enrollment. Then the website prompts users to return to the app.
+
+Enrollment is now complete, and users can now use this device with the full set of capabilities.

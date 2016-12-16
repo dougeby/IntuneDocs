@@ -45,6 +45,7 @@ To require MFA at device enrollment, follow these steps:
 3. Choose **Microsoft Intune enrollment**.
 4. Choose **Configure**. 
 5. Under **multi-factor authentication and location-based access rules** you can:
+	
 	-  Enable the access rules
 	-  Choose whether to apply the rules to all users or to specific Azure AD security groups.
 	-  Require multi-factor authentication for enrollment of all devices.

@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -149,6 +149,8 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |**Import Apps**|Imports a list of apps that you have specified in a comma-separated values file. Use the format, application name, publisher, and app URL in the file.|
 |**Edit**|Lets you edit the name, publisher, and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
+
+Policies containing compliant and noncompliant app settings must be deployed to groups of users.
 
 ### Kiosk mode settings
 Specify the following settings for **Samsung KNOX Standard devices**:

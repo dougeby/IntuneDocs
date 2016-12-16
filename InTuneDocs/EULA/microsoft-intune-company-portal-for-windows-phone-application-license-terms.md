@@ -2,11 +2,12 @@
 # required metadata
 
 title: Microsoft Intune Company Portal for Windows Phone Application License Terms | Microsoft Docs
-description:
+description: These license terms are an agreement between Microsoft Corporation (or based on where you live, one of its affiliates) and you.
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angerob
-ms.date: 12/05/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

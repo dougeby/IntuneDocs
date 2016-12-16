@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -84,12 +84,12 @@ All settings apply to iOS 8.0 and later.
 |----------------|-------|
 |**Allow backup to iCloud**|Allow the user to back up the device to iCloud.|
 |**Allow document sync to iCloud**|Allow document and key-value synchronization to your iCloud storage space.|
-|**Allow Photo Stream sync to iCloud**|Allow photos on the device to sync to iCloud.|
+|**Allow Photo Stream sync to iCloud**|Lets users enable **My Photo Stream** on their device which allow photos to sync to iCloud and be available on all the users devices.|
 |**Require encrypted backup**|Require any device backups to be encrypted.|
 |**Allow managed apps to sync data to iCloud**|Allow apps that you manage with Intune to sync data to the user's iCloud account.|
 |**Allow Handoff to continue activities on another device**|Allow the user to continue work that they started on an iOS device on another iOS or Mac OS X device.|
-|**Allow iCloud Photo Sharing**|Allow use of the iOS shared photo stream feature.|
-|**Allow iCloud Photo Library**|Allow the user to store photos on iCloud. If disabled, any photos already stored on iCloud will be removed.|
+|**Allow iCloud Photo Sharing**|Set to **No** to disable **iCloud Photo Sharing** on the device.|
+|**Allow iCloud Photo Library**|If set to **No**, disables the use of iCloud photo library which lets users store photos and videos in the cloud.	Any photos not fully downloaded from iCloud Photo Library to the device will be removed from the device if this is set to **No**.|
 
 ### Application settings for the browser
 All settings apply to iOS 8.0 and later.
@@ -178,6 +178,8 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |**Import Apps**|Import a list of apps you have specified in a comma-separated values file. In the file, use this format: application name, publisher, app URL.|
 |**Edit**|Edit the name, publisher, and URL of the selected app.|
 |**Delete**|Delete the selected app from the list.|
+
+Policies containing compliant and noncompliant app settings must be deployed to groups of users.
 
 ### Kiosk mode settings
 

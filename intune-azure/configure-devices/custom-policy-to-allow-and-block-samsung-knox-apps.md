@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Create a Microsoft Intune policy that allows and blocks apps for Samsung KNOX | Intune Azure preview | Microsoft Docs
+title: Intune policy allow/block apps for Samsung KNOX | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Create a custom profile to allow and block apps for Samsung KNOX Standard devices."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,8 +25,8 @@ ms.suite: ems
 
 
 ---
-# Use custom policies to allow and block apps for Samsung KNOX Standard devices
-
+# Use custom policies to allow and block apps for Samsung KNOX Standard devices in Intune Azure preview
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
 Use the procedures in this topic to create a Microsoft Intune custom policy that creates one of the following:
 
 - A list of apps that are blocked from running on the device. Apps in this list are blocked from being run, even if they were already installed when the policy was applied.
@@ -34,18 +34,18 @@ Use the procedures in this topic to create a Microsoft Intune custom policy that
 
 These settings can only be used by devices that run Samsung KNOX Standard.
 
-## To create an allowed or blocked app list
+## Create an allowed or blocked app list
 
-1. In the **Device Configuration** workload, choose **Manage** > **Profiles**.
+1. In the **Configure devices** workload, choose **Manage** > **Profiles**.
 2. In the list of profiles blade, choose **Create Profile**.
 3. On the **Create Profile** blade, enter a **Name** and optional **Description** for this device profile.
 2. Choose a **Platform type** of **Android**, and a Profile type of **Custom**.
 3. Click **Settings**.
 3. On the **Custom OMA-URI Settings** blade, choose **Add**.
 4. In the **Add or Edit OMA-URI Setting** dialog box, specify the following:
-	
+
 ### For a list of apps that are blocked from running on the device:
-	
+
 - **Name** - Enter **PreventStartPackages**.
 - **Description** - Enter an optional description like 'List of apps that are blocked from running.'
 - 	**Data type** - From the drop-down list, choose **String**.
@@ -59,7 +59,7 @@ These settings can only be used by devices that run Samsung KNOX Standard.
 - **OMA-URI** - Enter **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
 - **Value** - Enter a list of the app package names you want to allow. You can use **; : ,** or **|** as a delimiter. (Example: package1;package2;)
 
-4. Click **OK**, and then, on the **Create Profile** blade, choose **Create**. 
+4. Click **OK**, and then, on the **Create Profile** blade, choose **Create**.
 
 >[!TIP]
 > You can find the package ID of an app by browsing to the app on the Google Play store. The package ID is contained in the URL of the app's page. For example, the package ID of the Microsoft Word app is **com.microsoft.office.word**.
@@ -67,8 +67,4 @@ These settings can only be used by devices that run Samsung KNOX Standard.
 The next time each targeted device checks in, the app settings will be applied.
 
 
-## Assign the custom profile
-
-
-
-
+<!---## Assign the custom profile--->

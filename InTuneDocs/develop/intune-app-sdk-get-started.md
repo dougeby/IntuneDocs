@@ -2,12 +2,12 @@
 # required metadata
 
 title: Get started with the Microsoft Intune App SDK | Microsoft Docs
-description:
+description: Quickly enable your mobile app for mobile application management (MAM) with Microsoft Intune.
 keywords:
 author: mtillman
 manager: angrobe
 ms.author: oydang
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

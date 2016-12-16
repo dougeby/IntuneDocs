@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,7 +64,7 @@ These issues may occur on all device platforms.
 
 2.  Check in the Intune admin console under Admin\Mobile Device Management\Enrollment Rules that the Device enrollment limit is set to 15.
 
-Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 Administrators can delete devices in the Azure Active Directory portal.
 
