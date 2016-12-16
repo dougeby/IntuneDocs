@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to add an app to Microsoft Intune
+# How to add an app to Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -61,7 +61,7 @@ Depending on the app you have chosen, some of the values in this blade might hav
 Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.
 - **App Description** - Enter a description for the app. This will be displayed to users in the company portal.
 - **Publisher** - Enter the name of the publisher of the app.
-- **Minimum Operating System** - 
+- **Minimum Operating System** -
 - **Category** - (optional). Select one of the built-in app categories. This will make it easier for users to find the app when they browse the company portal.
 - **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
 - **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
@@ -82,7 +82,7 @@ Make sure all app names that you use are unique. If the same app name exists twi
 - **App Description** - Enter a description for the app. This will be displayed to users in the company portal.
 - **Publisher** - Enter the name of the publisher of the app.
 - **App store URL** - Enter the app store URL of the app you want to create.
-- **Minimum Operating System** - 
+- **Minimum Operating System** -
 - **Category** - (optional). Select one of the built-in app categories. This will make it easier for users to find the app when they browse the company portal.
 - **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
 - **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
@@ -109,7 +109,7 @@ Make sure all app names that you use are unique. If the same app name exists twi
 - **App Description** - Enter a description for the app. This will be displayed to users in the company portal.
 - **Publisher** - Enter the name of the publisher of the app.
 - **Applicable Device Type** - Select whether this app can be installed on iPads, iPhones, or compatible iPods.
-- **Minimum Operating System** - 
+- **Minimum Operating System** -
 - **Category** - (optional). Select one of the built-in app categories. This will make it easier for users to find the app when they browse the company portal.
 - **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
 - **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
@@ -138,7 +138,7 @@ Make sure all app names that you use are unique. If the same app name exists twi
 - **App Description** - Enter a description for the app. This will be displayed to users in the company portal.
 - **Publisher** - Enter the name of the publisher of the app.
 - **App store URL** - Enter the app store URL of the app you want to create.
-- **Minimum Operating System** - 
+- **Minimum Operating System** -
 - **Category** - (optional). Select one of the built-in app categories. This will make it easier for users to find the app when they browse the company portal.
 - **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
 - **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
@@ -179,12 +179,12 @@ Make sure all app names that you use are unique. If the same app name exists twi
 - **App Description** - Enter a description for the app. This will be displayed to users in the company portal.
 - **Publisher** - Enter the name of the publisher of the app.
 - **App store URL** - Enter the app store URL of the app you want to create.
-- **Minimum Operating System** - 
+- **Minimum Operating System** -
 - **Category** - (optional). Select one of the built-in app categories. This will make it easier for users to find the app when they browse the company portal.
 - **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
 - **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL will be displayed to users in the company portal.
 - **Privacy URL** - Optionally, enter the URL of a website that contains privacy information for this app. The URL will be displayed to users in the company portal.
 - **Developer** - Optionally, enter the name of the app developer.
-- **Owner** - 
+- **Owner** -
 - **Notes** - Enter any notes you would like to associate with this app.
 - **Upload Icon** - Upload an icon that will be associated with the app. This is the icon that will be displayed with the app when users browse the company portal.
