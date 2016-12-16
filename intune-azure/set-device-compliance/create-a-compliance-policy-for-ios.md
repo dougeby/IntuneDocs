@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to create a device compliance policy for iOS devices
+# How to create a device compliance policy for iOS devices in Intune Azure preview
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -79,7 +79,7 @@ To assign a compliance policy to users, choose a policy that you have configured
 
 You have applied the policy to users.  The devices used by the users who are targeted by the policy will be evaluated for compliance.
 
-## Compliance policy settings
+<!---## Compliance policy settings--->
 
 ## System security settings
 
