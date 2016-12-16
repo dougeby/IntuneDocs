@@ -16,7 +16,7 @@
 ### [Set the MDM authority](/intune-azure/enroll-devices/set-mdm-authority)
 ### [Get an Apple MDM push certificate](/intune-azure/enroll-devices/get-an-apple-mdm-push-certificate)
 ### [Get an Apple DEP token](/intune-azure/enroll-devices/get-apple-dep-token)
-### Choose how to enroll iOS devices](/intune-azure/enroll-devices/choose-ios-enrollment-method)
+### [Choose how to enroll iOS devices](/intune-azure/enroll-devices/choose-ios-enrollment-method)
 #### [Enroll iOS devices using Setup Assistant](/intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant)
 #### [Enroll iOS devices using direct enrollment](/intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment)
 #### [Add Apple Configurator serial numbers](/intune-azure/enroll-devices/add-apple-configurator-serial-numbers)
