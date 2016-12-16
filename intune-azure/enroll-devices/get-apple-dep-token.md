@@ -33,8 +33,8 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP token
 
 To manage corporate-owned iOS devices with Apple’s Device Enrollment Program (DEP), your organization must join Apple DEP and get devices through that program. Details of that process are available at: https://deploy.apple.com. Advantages of the program include hands-free setup of devices without using a USB cable to connect each device to a computer.
 
-**To get the Apple DEP certificate**<br>
-Open the **Enrollment** blade, choose **Apple DEP Token**, and then follow the numbered steps in the Azure portal, which are shown below.
+**To get the Apple DEP certificate**</br>
+In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**. On the Intune blade, choose **Enroll devices** > **Apple DEP Token**, and then follow the numbered steps in the Azure portal, which are shown below.
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
 Select **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
