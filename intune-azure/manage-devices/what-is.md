@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage devices with Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Manage devices with Intune | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to view the devices you manage with Intune, and perform various operations on them."
 keywords:
 author: robstackmsftms.author: robstack
@@ -11,21 +11,21 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 
+ms.assetid:
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+#ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# Manage Devices with Microsoft Intune
+# Manage devices with Intune Azure preview
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -42,7 +42,7 @@ The **Devices and groups** workload lets you perform the following actions:
 		- **Remote lock** - Locks the device. The device owner must use their passcode to unlock it.
 		- **Reset passcode** - Generates a new passcode for the device which will be displayed on the <*device name*> **Overview** blade.
 		- **Bypass Activation Lock** - This will remove the activation lock from an iOS device without the user’s Apple ID and password. Once you bypass the activation lock, the device turns on activation lock again when the Find My iPhone app launches. Only bypass the activation lock if you have physical access to the device.
-		- **Lost mode** - If a device has been stolen, you can enable lost mode. This lets you specify a message and a phone number that will be displayed on the lock screen of the device. 
+		- **Lost mode** - If a device has been stolen, you can enable lost mode. This lets you specify a message and a phone number that will be displayed on the lock screen of the device.
 		- **Restart** - Causes the device to restart. The device owner is not automatically notified of the restart, therefore might lose work.
 	- **Hardware** - See more detailed information about the device including it's free storage space, model and manufacturer, and more.
 	- **Detected Applications** - Displays a list of all apps that Intune found installed on the device.
