@@ -30,11 +30,11 @@
 ### [Use Windows Hello for Business](/intune-azure/enroll-devices/how-to-use-windows-hello)
 <!--- ## [Troubleshoot](/intune-azure/enroll-devices/troubleshooting) --->
 
-# Manage devices
+# Devices and groups
 ## [What is device management?](/intune-azure/manage-devices/what-is)
 <!--- ## [Get started](/intune-azure/manage-devices/get-started) --->
 <!--- ## [Plan and design](/intune-azure/manage-devices/plan-and-design) --->
-## [How to](/intune-azure/manage-devices/how-to)
+## How to
 ### [Use full or selective wipe](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune)
 <!--- ## [Troubleshoot](/intune-azure/manage-devices/troubleshooting) --->
 
