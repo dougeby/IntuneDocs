@@ -43,23 +43,27 @@ You must [enroll iOS devices with Apple Configurator by using Setup Assistant](e
 	01 234567 890123,device details</br>
 	02 234567 890123,device details
 
-2. In the Azure portal **Enrollment** blade, choose **Apple Enrollment**.
+2. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
 
-3. Under **Manage Apple Configurator Enrollment Settings**, select **Apple Configurator Serial Numbers**.
+3.  On the Intune blade, choose **Enroll devices**, and then choose **Apple Enrollment**.
 
-4. On the **Apple Configurator Serial Numbers** blade, select **Add**.
+4. Under **Manage Apple Configurator Enrollment Settings**, select **Apple Configurator Serial Numbers**.
 
-5. On the **Add Serial Numbers** blade, select a profile to apply to the serial numbers you're importing. If you are importing a file with new details that will overwrite the existing ones, select Overwrite details for existing identifiers to have the new details replace the existing details.
+5. On the **Apple Configurator Serial Numbers** blade, select **Add**.
 
-6. Navigate to the .csv file of serial numbers, and select **Add**.
+6. On the **Add Serial Numbers** blade, select a profile to apply to the serial numbers you're importing. If you are importing a file with new details that will overwrite the existing ones, select Overwrite details for existing identifiers to have the new details replace the existing details.
+
+7. Navigate to the .csv file of serial numbers, and select **Add**.
 
 ## Assign a profile to specific serial numbers
 
 You can assign profiles in more than one place. You can use the steps below, or you can assign profiles from the Apple Configurator Enrollment Profiles blade (see [Enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md).  
 
-1. On the **Apple Configurator Serial Numbers** blade, select the serial numbers you want to assign a profile to, and then select **Assign Profile**.
+1. On the Intune blade, choose **Enroll devices**, and then choose **Apple Enrollment**.
 
-2. On the **Assign Profile** blade, select the profile you want to assign, and then select **Assign**.
+2. On the **Apple Configurator Serial Numbers** blade, select the serial numbers you want to assign a profile to, and then select **Assign Profile**.
+
+3. On the **Assign Profile** blade, select the profile you want to assign, and then select **Assign**.
 
 ## Delete serial numbers
 You can delete serial numbers that you imported previously. You can delete serial numbers only if the device is unenrolled first. Once you remove a serial number, you can’t use Apple Configurator via Setup Assistant unless you re-add the serial number.

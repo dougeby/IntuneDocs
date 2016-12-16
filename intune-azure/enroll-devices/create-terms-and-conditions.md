@@ -35,17 +35,19 @@ You can create and deploy multiple policies containing different terms and condi
 
 **To create terms and conditions**:
 
-1. In the **Enrollment** blade, choose **Terms and Conditions**.
+1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
 
-2. Select **Create**.
+2. On the Intune blade, choose **Enroll devices**, and then choose **Terms and Conditions**.
 
-3. On the **Create Terms and Conditions** blade, specify the following information:
+3. Select **Create**.
+
+4. On the **Create Terms and Conditions** blade, specify the following information:
 
    - **Display name**: Name to use for the terms. Users see this name in the Company Portal app.
 
    - **Description**: Optional details that help you identify the policy in the Azure portal.
 
-4. Select the arrow next to Define terms of use to open the Terms and Conditions blade, and then enter the following information:
+5. Select the arrow next to Define terms of use to open the Terms and Conditions blade, and then enter the following information:
 
    - **Title**: The title users see in the Company Portal.
 
@@ -53,4 +55,4 @@ You can create and deploy multiple policies containing different terms and condi
 
    - **Terms and Conditions**: The legal label that users see and must either accept or reject, for example, “I agree to the terms and conditions.”
 
-5. Select **Ok**.
+6. Select **Ok**.
