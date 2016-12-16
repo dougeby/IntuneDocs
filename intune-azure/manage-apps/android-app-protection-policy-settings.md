@@ -24,7 +24,7 @@ ms.suite: ems
 
 ---
 
-# Android app protection policy settings in Microsoft Intune
+# Android app protection policy settings in Intune Azure preview
 The policy settings that are described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal.
 There are two categories of policy settings: data relocation settings and access settings. In this topic, the term *policy-managed apps* refers to apps that are configured with app protection policies.
 

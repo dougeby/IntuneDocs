@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# How to create a device compliance policy for Windows devices
+# How to create a device compliance policy for Windows devices in Intune Azure preview
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -77,7 +77,7 @@ To assign a compliance policy to users, choose a policy that you have configured
 
 You have applied the policy to users.  The devices used by the users who are targeted by the policy will be evaluated for compliance.
 
-## Compliance policy settings
+<!---## Compliance policy settings--->
 
 ## System security settings
 
@@ -126,7 +126,7 @@ For information on how the HAS service works, see [Health Attestation CSP](https
 - **Minimum OS required:** When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
 - **Maximum OS version allowed:** When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
 
-## Compliance policy settings for Windows PCs
+<!---## Compliance policy settings for Windows PCs--->
 
 ## System security settings
 
@@ -166,7 +166,6 @@ Use this setting in conjunction with **Prevent reuse of previous passwords** to 
 
 If **Remember password history:** is selected, specify the number of previously used passwords that cannot be re-used.
 
-+
 
 ## Device health settings
 
@@ -182,15 +181,13 @@ For information on how the HAS service works, see [Health Attestation CSP](https
 
 - **Minimum OS required:** - Supported on Windows 8.1, and Windows 10.
 
-Specify the major.minor.build number here. The version number must correspond to the version returned by the winver command.
+Specify the major.minor.build number here. The version number must correspond to the version returned by the ```winver``` command.
 
 When a device has a earlier version that the specified OS version, it is reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device after which they can access company resources.
 
 - **Maximum OS version allowed:** - Supported on Windows 8.1, and Windows 10.
 
 When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
-
-+
 
 To find the OS version to use for the **Minimum OS required** , and **Maximum OS version allowed** settings, run the **winver** command from the command prompt. The winver command returns the reported version of the OS.+
 

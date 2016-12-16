@@ -26,7 +26,9 @@ ms.suite: ems
 
 ---
 
-#  iOS app protection policy settings
+#  iOS app protection policy settings in Intune Azure preview
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
 The policy settings described in this topic can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal.
 
 There are two categories of policy settings: data relocation settings and access settings. In this topic, the term *policy-managed apps* refers to apps that are configured with app protection policies.

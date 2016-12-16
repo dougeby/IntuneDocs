@@ -24,7 +24,7 @@ ms.suite: ems
 
 ---
 
-# Get started with device compliance in Microsoft Intune
+# Get started with device compliance in Intune Azure preview
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

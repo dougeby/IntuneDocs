@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to create and deploy app protection policies in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Create and deploy app protection policies | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview:  Learn how Intune app protection policies can help protect company data used by apps you manage."
 keywords:
 author: NathBarn
@@ -25,11 +25,11 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to create and deploy app protection policies in Microsoft Intune
+# How to create and deploy app protection policies in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-**If you are not in the Intune service in the Azure portal preview program** go [here](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) to learn how to create app protection policies.
+**If you are not in the Intune service in the Azure portal preview program**, this topic explains [how to create app protection policies](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the classic Intune console.
 
 App protection policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [What is Microsoft Intune app protection policies](what-is-app-protection-policy.md).
 

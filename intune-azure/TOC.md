@@ -55,7 +55,7 @@
 ### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
 ### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
 ### [Use app configuration policies](/intune-azure/manage-apps/app-configuration-policies)
-### [Selectively wipe apps](/intune-azure/manage-apps/app-selective-wipe)
+<!--- ### [Selectively wipe apps](/intune-azure/manage-apps/app-selective-wipe)--->
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Work with volume-purchased apps](/intune-azure/manage-apps/volume-purchased-apps)
 #### [iOS VPP apps](/intune-azure/manage-apps/ios-vpp-apps)
