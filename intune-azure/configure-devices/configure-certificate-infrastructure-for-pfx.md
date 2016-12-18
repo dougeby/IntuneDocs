@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -117,13 +117,15 @@ Download, install, and configure the Certificate Connector.
 
 ### To enable support for the Certificate Connector
 
-1.  In the **Device Configuration** workflow, choose **Setup** > **Certificate Authority**.
-
+1.  Sign into the Azure portal.
+2.  Choose **More Services** > **Other** > **Intune**.
+3.  On the **Intune** blade, choose **Configure devices**.
+2.  On the **Device Configuration** blade, choose **Setup** > **Certificate Authority**.
 2.  Under **Step 1**, choose **Enable**.
 
 ### To download, install, and configure the Certificate Connector
 
-1.  In the **Configure devices** workload, choose **Setup** > **Certificate Authority**.
+1.  On the **Configure devices** blade, choose **Setup** > **Certificate Authority**.
 2.  choose **Download the certificate connector**.
 2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**).
   Run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option, and then choose **Install**. When the installation has completed, continue by creating a certificate profile as described in [How to configure certificate profiles](how-to-configure-certificates.md).
