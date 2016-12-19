@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,8 +51,10 @@ Before you begin to upgrade devices to the latest version, you will need one of 
 
 ## Create a device profile containing device restriction settings
 
-1. In the Azure portal, select the **Configure devices** workload.
-2. On the **Device Configuration** blade, select **Manage** > **Profiles**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the edition upgrade profile.
 5. From the **Platform** drop-down list, choose **Windows 10 and later**.

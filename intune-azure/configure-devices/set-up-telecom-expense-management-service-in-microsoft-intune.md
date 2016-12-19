@@ -5,7 +5,7 @@ keywords: Saaswedo
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/08/2016
+ms.date: 12/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,13 +49,15 @@ Intune currently integrates with the following TEM providers:
 
 ## Configure Intune to work with the Datalert service
 
-1. In the **Configure Devices** workload, choose **Telecom Expense Management** under **Setup**.
-
-2. Under Telecom Expense Management, select Connection status.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Setup** > **Telecom Expense Management**.
+2. Under **Telecom Expense Management**, select **Connection status**.
 
 3. Select **List of TEM service providers**, and then select your provider from the list shown. A page that is specific to your provider opens. For Saaswedo, the Datalert page opens.
 
-4. On the Datalert page, enter the following:
+4. On the **Datalert** page, enter the following:
 
     a. Select **Unlock** to enable you to enter the settings on the page.
 

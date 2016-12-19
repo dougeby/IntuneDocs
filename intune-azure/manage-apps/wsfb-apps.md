@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,7 +56,10 @@ You can now continue, and set up synchronization in the Intune console.
 
 ## Configure synchronization
 
-1. In the **Mobile Apps** workload, choose **Setup** > **Windows Store for Business**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Manage apps**.
+1. On the **Mobile Apps** blade, choose **Setup** > **Windows Store for Business**.
 2. Click **Enable**.
 3. If you haven't already done so, click the link to sign-up for the Windows Store for Business and associate your account as detailed previously.
 5. From the **Language** drop-down list, choose the language in which apps from the Windows Store for Business will be displayed in the Intune portal. Regardless of the language in which they are displayed, they will be installed in the end user's language when available.
@@ -64,7 +67,7 @@ You can now continue, and set up synchronization in the Intune console.
 
 ## Synchronize apps
 
-1. In the **Mobile Apps** workload, choose **Setup** > **Windows Store for Business**.
+1. In the **Manage apps** workload, choose **Setup** > **Windows Store for Business**.
 2. Click **Sync** to get the apps you've purchased from the Windows Store into Intune.
 
 ## Assign apps

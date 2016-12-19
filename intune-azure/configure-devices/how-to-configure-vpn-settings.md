@@ -36,7 +36,9 @@ For example, assume that you want to provision all iOS devices with the settings
 
 ## Create a device profile containing VPN settings
 
-1. In the Azure Portal, select the **Configure devices** workload.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the VPN profile.
