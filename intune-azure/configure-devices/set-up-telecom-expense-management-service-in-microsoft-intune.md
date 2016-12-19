@@ -49,6 +49,9 @@ Intune currently integrates with the following TEM providers:
 
 ## Configure Intune to work with the Datalert service
 
+>[!NOTE]
+>To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune). 
+
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
 3. On the **Intune** blade, choose **Configure devices**.
