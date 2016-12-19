@@ -41,7 +41,11 @@ After you deploy the policy to your Android device or user groups, users should 
 
 ## Step 1: Create a VPN profile
 
-1. In the **Configure devices** workload, choose **Manage** > **Profiles**.
+
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 2. On the list of profiles blade, choose **Create Profile**.
 3. On the **Create Profile** blade, enter a **Name** and optional **Description** for the VPN profile.
 4. From the **Platform** drop-down list, choose **Android**.
@@ -52,8 +56,10 @@ Take note of the VPN profile name to use in the next step. For example, **MyAppV
 
 ## Step 2: Create a custom configuration policy
 
-1. In the Azure Portal, select the **Configure devices** workload.
-2. On the **Device Configuration** blade, select **Manage** > **Profiles**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, click **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the custom profile.
 5. From the **Platform** drop-down list, choose **Android**.

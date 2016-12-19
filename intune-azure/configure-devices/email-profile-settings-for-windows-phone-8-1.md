@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 
-
+- **Apply all settings to Windows Phone 8.1 only** - This is a setting you can configure in the classic Intune portal. In the Azure portal, this setting cannot be changed. If this is set to **Configured**, any settings will only be applied to Windows Phone 8.1 devices. If set to **Not Configured**, these settings will also apply to Windows 10 Mobile devices.
 - **Email server** - The host name of your Exchange server.
 - **Account name** - The display name for the email account as it will appear to users on their devices.
 - **Username attribute from AAD** - This is the attribute in Active Directory (AD) or Azure AD, that will be used to generate the username for this email profile. Select **Primary SMTP Address**, such as **user1@contoso.com** or **User Principal Name**, such as **user1** or **user1@contoso.com**.

@@ -6,7 +6,7 @@ description: "Intune Azure preview: Create a custom profile to allow and block a
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 12/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,10 @@ These settings can only be used by devices that run Samsung KNOX Standard.
 
 ## Create an allowed or blocked app list
 
-1. In the **Configure devices** workload, choose **Manage** > **Profiles**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 2. In the list of profiles blade, choose **Create Profile**.
 3. On the **Create Profile** blade, enter a **Name** and optional **Description** for this device profile.
 2. Choose a **Platform type** of **Android**, and a Profile type of **Custom**.

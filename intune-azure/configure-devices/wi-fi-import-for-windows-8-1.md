@@ -42,8 +42,10 @@ In Windows, use the **netsh wlan** utility to export an existing Wi-Fi profile t
 
 ## Import the Wi-Fi settings into Intune
 
-1. In the Azure Portal, select the **Configure devices** workload.
-2. On the **Device Configuration** blade, select **Manage** > **Profiles**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, click **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the device restriction profile.
 5. From the **Platform** drop-down list, choose **Windows 8.1 and later**.
