@@ -1,11 +1,11 @@
 ---
-title: Configure certificate infrastructure for PFX | Intune Azure preview | Microsoft Docs
+title: Configure Intune certificate infrastructure for PKCS | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to configure your infrastructure to use PKCS certificates with Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,20 +24,20 @@ ms.suite: ems
 
 
 ---
-# Configure certificate infrastructure
+# Configure your Intune certificate infrastructure for PKCS
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-This topic describes what you need in order to create and deploy .PFX certificate profiles.
+This topic describes what you need in order to create and deploy PKCS certificate profiles with Intune.
 
 To do any certificate-based authentication in your organization, you need an Enterprise Certification Authority.
 
-To use .PFX Certificate profiles, in addition to the Enterprise Certification Authority, you also need:
+To use PKCS Certificate profiles, in addition to the Enterprise Certification Authority, you also need:
 
 -   A computer that can communicate with the Certification Authority, or you can use the Certification Authority computer itself.
 
 -  The Intune Certificate Connector, which runs on the computer that can communicate with the Certification Authority.
 
-## On-premises infrastructure description
+## Important terms
 
 
 -    **Active Directory domain**: All servers listed in this section (except for the Web Application Proxy Server) must be joined to your Active Directory domain.
@@ -46,7 +46,7 @@ To use .PFX Certificate profiles, in addition to the Enterprise Certification Au
     If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
 
 -  **Computer that can communicate with Certification Authority**: Alternatively, use the Certification Authority computer itself.
--  **Microsoft Intune Certificate Connector**: You use the Intune admin console to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. For .PFX Certificate profiles, install the Certificate Connector on the computer that communicates with the Certification Authority.
+-  **Microsoft Intune Certificate Connector**: From the Azure portal, you download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector. For PKCS Certificate profiles, install the Certificate Connector on the computer that communicates with the Certification Authority.
 -  **Web Application Proxy server** (optional): You can use a server that runs Windows Server 2012 R2 or later as a Web Application Proxy (WAP) server. This configuration:
     -  Allows devices to receive certificates using an Internet connection.
     -  Is a security recommendation when devices connect through the Internet to receive and renew certificates.
@@ -76,7 +76,7 @@ In this task, you will publish the certificate template.
 
 ### To configure the certification authority
 
-1.  On the issuing CA, use the Certificate Templates snap-in to create a new custom template, or copy and edit an existing template (like the User template), for use with .PFX.
+1.  On the issuing CA, use the Certificate Templates snap-in to create a new custom template, or copy and edit an existing template (like the User template), for use with PKCS.
 
     The template must include the following:
 
@@ -108,7 +108,7 @@ In this task, you will publish the certificate template.
 
     b.  Validate that the template published by viewing it under the **Certificate Templates** folder.
 
-4.  On the CA computer, ensure that the computer that hosts the Intune Certificate Connector has enroll permission, so that it can access the template used in creating the .PFX profile. Set that permission on the **Security** tab of the CA computer properties.
+4.  On the CA computer, ensure that the computer that hosts the Intune Certificate Connector has enroll permission, so that it can access the template used in creating the PKCS certificate profile. Set that permission on the **Security** tab of the CA computer properties.
 
 ## Task 2 - Enable, install, and configure the Intune Certificate Connector
 In this task you will:
@@ -128,7 +128,7 @@ Download, install, and configure the Certificate Connector.
 1.  On the **Configure devices** blade, choose **Setup** > **Certificate Authority**.
 2.  choose **Download the certificate connector**.
 2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**).
-  Run the installer on the computer that is able to connect with the Certification Authority. Choose the .PFX Distribution option, and then choose **Install**. When the installation has completed, continue by creating a certificate profile as described in [How to configure certificate profiles](how-to-configure-certificates.md).
+  Run the installer on the computer that is able to connect with the Certification Authority. Choose the PKCS (PFX) Distribution option, and then choose **Install**. When the installation has completed, continue by creating a certificate profile as described in [How to configure certificate profiles](how-to-configure-certificates.md).
 
 3.  When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed.
 
