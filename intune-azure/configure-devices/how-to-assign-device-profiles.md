@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to assign device profiles with Intune Azure preview
+# How to assign Intune device profiles
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

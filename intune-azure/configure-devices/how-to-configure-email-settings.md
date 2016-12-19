@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,16 +30,16 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Email profile settings can be used to configure devices you manage with the settings necessary to connect to company email. This can help ensure that settings are standard across all of your devices, and also help to reduce support calls from end users who do not know the correct email settings.
+Email profile settings can be used to configure devices you manage with the settings necessary to connect to , and synchronize with company email. This can help ensure that settings are standard across all of your devices, and also help to reduce support calls from end users who do not know the correct email settings.
 
 The built-in mail client is supported for most platforms. Most third-party email apps are not currently supported.
 
 You can use email profiles to configure the native email client on the following device types:
 
-Android 4.0 and later
-iOS 8.0 and later
-Windows Phone 8.1 and later
-Windows 10 (desktop) and Windows 10 Mobile
+- Android 4.0 and later
+- iOS 8.0 and later
+- Windows Phone 8.1 and later
+- Windows 10 (desktop) and Windows 10 Mobile
 
 Use the information in this topic to learn the basics about configuring an email profile, and then read further topics for each platform to learn about device specifics.
 
@@ -65,8 +65,11 @@ Use the information in this topic to learn the basics about configuring an email
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
 
-## Securing email access
+## Further information
+
+### Securing email access
 
 You can help secure email profiles using one of two methods:
 
@@ -76,7 +79,7 @@ For more information about how to create and use certificate profiles in Intune,
 The password is not contained in the email profile, so the user needs to supply this when they connect to email.
 
 
-## How Intune handles existing email accounts
+### How Intune handles existing email accounts
 
 If the user has already configured an email account, the result of the Intune email profile assignment depends on the device platform:
 
