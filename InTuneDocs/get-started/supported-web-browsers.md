@@ -1,3 +1,3 @@
 ---
-redirect_url: https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers#intune-supported-web-browsers
+redirect_url: https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-web-browsers
 ---
