@@ -31,7 +31,10 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 
-1. In the **Configure devices** workload, choose **Profiles**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 2. On the blade showing the list of profiles, choose **Create Profile**.
 3. On the **Create Profile** blade, specify the following:
 	- **Name** - Enter a descriptive name for the new profile.

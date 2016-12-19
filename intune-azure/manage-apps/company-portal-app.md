@@ -34,10 +34,10 @@ The Microsoft Intune company portal is where users access company data and can d
 > [!Tip]
 > When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.
 
-Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, from the Mobile Apps workload, choose  Setup > Company Portal configuration, then configure your required Company Portal settings.
+Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, from the **Manage apps** workload, choose  **Setup** > **Company Portal Branding**, then configure the required settings.
 
 ## Company contact information and privacy statement
-The company name is displayed as the Company Portal title. The contact information and details are displayed to users in the Contact IT screen of the Company Portal. The privacy statement is displayed when a user clicks on the privacy link.
+The company name is displayed as the Company Portal title. The contact information and details are displayed to users in the **Contact IT** screen of the Company Portal. The privacy statement is displayed when a user clicks on the privacy link.
 
 
 |Field name|Max length|More information|

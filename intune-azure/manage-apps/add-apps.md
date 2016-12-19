@@ -29,7 +29,10 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-1. In the **Apps** workload, choose **Manage** > **All Apps**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Manage apps**.
+1. In the **Manage apps** workload, choose **Manage** > **Apps**.
 2. Above the list of apps, choose **Add**.
 3. In the **Add App** blade, choose the type of app you want to add from:
 	- **Android LOB App** - Install an Android app from it's setup file.
