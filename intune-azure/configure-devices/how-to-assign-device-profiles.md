@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 12/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,11 +26,15 @@ ms.suite: ems
 
 ---
 
-# How to assign device profiles with Intune Azure preview
+# How to assign Intune device profiles
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-1. In the **Configure devices** workload, choose **Manage** > **Profiles**.
+
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+1. On the **Configure devices** blade, choose **Manage** > **Profiles**.
 2. In the list of profiles blade, choose the profile you want to manage, and then, on the <*profile name*> **Reports** blade, choose **Manage** > **Assignments**.
 3. On the next blade, click **Select groups**, and then, in the **Select groups** blade, choose the Azure AD groups to which you want to assign the profile. You can hold down the **CTRL** key to select multiple groups.
 4. When you are done, on the **Select groups** blade, choose **Select**.

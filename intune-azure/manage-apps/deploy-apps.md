@@ -29,7 +29,10 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-1. In the **Mobile Apps** workload, choose **Manage** > **Apps**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Manage apps**.
+1. In the **Manage Apps** workload, choose **Manage** > **Apps**.
 2. On the list of apps blade, click the app you want to assign.
 3. On the <*app name*> - **Overview** blade, choose **Manage** > **Assignments**.
 4. Choose **Select Groups** then, on the **Select groups** blade, choose the Azure AD groups to which you want to assign the app.

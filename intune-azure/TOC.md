@@ -151,7 +151,7 @@
 ### [Create a conditional access policy](/intune-azure/conditional-access/create-conditional-access-policy-for-exchange-on-premises)
 
 # Access control
-## [What is role-based access control](/intune-azure/access-control/role-based-access-control)
+## [What is role-based access control?](/intune-azure/access-control/role-based-access-control)
 
 # Develop and customize
 ## [Intune App Wrapping Tool](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
