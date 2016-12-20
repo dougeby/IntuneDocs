@@ -6,8 +6,8 @@ description: These license terms are an agreement between Microsoft Corporation 
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: angerob
-ms.date: 12/19/2016
+manager: angrobe
+ms.date: 12/20/2016
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
