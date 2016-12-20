@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -103,6 +103,8 @@ You must create a trusted certificate profile before you can create a SCEP or PK
 8. When you're done, choose **OK**, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
+
 
 > [!Note]
 > Android devices will display a notice that a third party has installed a trusted certificate.
