@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,7 +53,9 @@ ms.suite: ems
 		-  [Custom settings](/intune-azure/configure-devices/how-to-configure-custom-settings)
 4. Once you are done configuring settings, on the **Create Profile** blade, choose **Create**.
 
-The new profile is created on the list of profiles blade.
+The profile will be created and appears on the profiles list blade.
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
+
 
 ### Next steps
 For information about how to assign device profiles, see [How to assign device profiles with Microsoft Intune](/intune-azure/configure-devices/how-to-assign-device-profiles).
