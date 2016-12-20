@@ -76,18 +76,13 @@ If you haven’t already, prepare for mobile device management by  [setting the 
 
 3.  **Verify CNAME**<br>In the [classic Intune administration console](http://manage.microsoft.com), choose **Admin** &gt; **Mobile Device Management** &gt; **Windows**. Enter the URL of the verified domain of the company website in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.
 
-  ![Windows device management dialog box](../media/enroll-intune-winenr.png)
-
 4.  **Optional steps**<br>The **Add Sideloading keys** step is not needed for Windows 10. <br>The **Upload Code-Signing Certificate** step is needed only if you are distributing to devices the line-of-business (LOB) apps that are not available from the Windows Store.
 
 5.  **Tell your users how to enroll their devices and what to expect after their devices are under management.**
 
-	For end-user enrollment instructions, see [Enroll your Windows device in Intune](../enduser/enroll-your-device-in-intune-windows.md).
+	For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows).
 
-	For more information about end-user tasks, see these articles:
-      - [Resources about the end-user experience with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
-      - [End user guidance for Windows devices](https://docs.microsoft.com/intune/enduser/using-your-windows-device-with-intune)
+	For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
 
-### See also
 
 
