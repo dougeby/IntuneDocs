@@ -33,62 +33,27 @@ There are two categories of policy settings: data relocation settings and access
 
 ##  Data relocation settings
 
-- **Prevent iTunes and iCloud backups**: Choose **Yes** to disable, or choose **No** to allow backup of company data from policy-managed apps.
+| Setting | How to use | Default value |
+|------|------|------|
+| **Prevent iTunes and iCloud backups** | Choose **Yes** to disable, or choose **No** to allow backup of company data from policy-managed apps. | Yes |
+| **Allow app to transfer data to other apps** | Specify what apps can receive data from policy-managed apps: <ul><li> **Policy managed apps**: Allow transfer only to other policy-managed apps.</li> <li>**All apps**: Allow transfer to any app. </li> <li>**None**: Do not allow data transfer to any app, including other policy-managed apps.</li></ul> Additionally, if you set this option to **Policy managed apps** or **None**, the iOS 9 feature that allows Spotlight Search to search data within apps will be blocked. <br><br> | All apps |
+| **Allow app to receive data from other apps** | Specify what apps can transfer data to policy-managed apps: <ul><li>**Policy managed apps**: Allow transfer only from other policy-managed apps.</li><li>**All apps**: Allow data transfer from any app.</li><li>**None**: Do not allow data transfer from any app, including other policy-managed apps. | All apps |
+| **Prevent "Save As"** | Choose **Yes** to disable the use of the Save As option in any app that uses this policy. Choose **No** if you want to allow the use of Save As. | No |
+| **Restrict cut, copy and paste with other apps** | Specify when cut, copy, and paste actions can be used with the app. Choose from: <ul><li>**Blocked**:  Do not allow cut, copy, and paste actions between this app and any other app.</li><li>**Policy managed apps**: Allow cut, copy, and paste actions between this app and other policy-managed apps.</li><li>**Policy managed with paste in**: Allow cut or copy between this app and other policy-managed apps. Allow data from any app to be pasted into this app.</li><li>**Any app**: No restrictions for cut, copy, and paste to and from this app. | Any app |
+|**Restrict web content to display in the Managed Browser** | Choose **Yes** to enforce web links in the app to be opened in the Managed Browser app. <br><br> For devices not enrolled in Intune, the web links in policy-managed apps can open only in the Managed Browser app. <br><br> If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md). | No |
+| **Encrypt app data** | For policy-managed apps, data is encrypted at rest using the device-level encryption scheme provided by iOS. When a PIN is required, the data is encrypted according to the settings in the app protection policy. <br><br> Go to the official Apple documentation [here](https://support.apple.com/HT202739) to see which iOS encryption modules are FIPS 140-2 certified or pending FIPS 140-2 certification. <br><br> Specify when data is encrypted. Choose from: <ul><li>**When device is locked**: All app data that is associated with this policy is encrypted while the device is locked.</li><li>**When device is locked and there are open files**: All app data associated with this policy is encrypted while the device is locked, except for data in the files that are currently open in the app.</li><li>**After device restart**:All app data associated with this policy is encrypted when the device is restarted, until the device is unlocked for the first time.</li><li>**Use device settings**: App data is encrypted based on the default settings on the device. <br><br> When you enable this setting, the user is required to set up and use a PIN to access their device.  If there is no PIN, the apps will not open and the user will be prompted to set a PIN with the message “Your organization has required you to first enable a device PIN to access this app.” </li> | When device is locked | 
 
-  Default value = **Yes**
 
-- **Allow app to transfer data to other apps**: Choose one of the options to indicate the apps that can receive data from policy-managed apps:
-  - **Policy managed apps**: Allow transfer to only apps that have the MAM policy.
-  - **All apps**: Allow transfer to any app.
-  - **None**: Do not allow data transfer to any app, including other policy-managed apps.
 
-  Additionally, if you set this option to **Policy managed apps** or **None**, the iOS 9 feature that allows Spotlight Search to search data within apps will be blocked.
-
-  >[!NOTE]
-  >This setting does not control use of the Open In feature on mobile devices. To manage Open In, see [Manage data transfer between iOS apps with Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
-
-  Default value = **All apps**
-
-- **Allow app to receive data from other apps**: Specify apps that are allowed to transfer data to the policy-managed apps:
-  -  **Policy managed apps**: Allow data transfers only from other policy-managed apps.
-  -  **All apps**: Allow data transfer from any app.
-  -  **None**: Do not allow data transfer from any app.
-
-  Default value = **All apps**
-
-- **Prevent Save As**: Choose **Yes** to disable the use of the Save As option in any app that uses this policy. Choose **No** if you want to allow the use of Save As.
-
-  Default value = **No**
-
-- **Restrict cut, copy and paste with other apps**: Specify when cut, copy, and paste actions should be restricted. Choose from:
-  -   **Blocked**: Do not allow cut, copy, and paste actions between policy-managed apps.
-  -   **Policy managed apps**: Allow cut, copy, and paste actions only between policy-managed apps.
-  -   **Policy managed apps with paste in**: Allow cut or copy between policy-managed apps. Allow cut or copied data from any app to be pasted into this app.
-  - **Any app**: There are no restrictions for cut, copy, and paste actions between any apps.
-
-  Default value = **Any app**
-
-- **Restrict web content to display in the Managed Browser**: When this setting is enabled, any links in the app will be opened in the Managed Browser app.
-
-  For devices that are not enrolled in Intune, the web links in policy-managed apps can open only in the Managed Browser app.
-
-  If you are using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
-
-  Default value = **No**
-
-- **Encrypt app data**: For apps that are associated with an Intune MAM policy, data is encrypted at rest using the device-level encryption scheme provided by iOS. When a PIN is required, the data is encrypted according to the settings in the MAM policy.
 
   > [!NOTE]
-  > Go [here](https://support.apple.com/HT202739) in the Apple documentation to see which iOS encryption modules are FIPS 140-2 certified or pending FIPS 140-2 certification.
+  > None of the data relocation settings controls the Apple managed open-in feature on iOS devices. To use manage Apple open-in, see [Manage data transfer between iOS apps with Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
 
-  In the policy settings, you can specify PIN encryption values. These values determine when the data is encrypted. The options are:
-  -   **When device is locked**: All app data associated with this policy is encrypted while the device is locked.
-  -   **When device is locked (except for open files)**: All app data associated with this policy is encrypted while the device is locked, except for data that in the files that are currently open in the app.
-  -   **After device restart**: All app data associated with this policy is encrypted when the device is restarted, until the device is unlocked for the first time.
-  -   **Use device settings**: App data is encrypted based on the default settings on the device.
-  When you enable this setting, the user is required to set up and use a PIN to access their device.  If there is no PIN, the apps will not open and the user will be prompted to set a PIN with the message “Your company has required that you must first enable a device PIN to access this application.”
 
-  Default value = **When device is locked**
+
+
+
+
 - **Disable contact sync**: Choose **Yes** to prevent contact information from syncing to the native address book app on the device. If you choose **No**, the app will save the contact information to the native address book app on the device.
 
   When you do a selective wipe to remove company data, contacts synced directly from the app to the native address book are removed. Any contacts synced from the native address book to another external source cannot be wiped. Currently this applies only to the Microsoft Outlook app.
