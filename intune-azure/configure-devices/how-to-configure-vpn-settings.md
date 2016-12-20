@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,6 +34,32 @@ Virtual private networks (VPNs) give your users secure remote access to your com
 
 For example, assume that you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile that contains the settings necessary to connect to the corporate network, and then you assign this profile to all users who have iOS devices. The users will see the VPN connection in the list of available networks and can connect with minimal effort.
 
+## VPN connection types
+
+You can create VPN profiles using the following connection types:
+
+|||
+|-|-|
+|Connection type|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Pulse Secure|Yes|Yes|Yes|Yes|Yes|Yes|
+|Cisco (IPSec)|No|Yes|No|No|No|No|
+|Citrix|Yes|Yes|No|No|No|No|
+|F5 Edge Client|Yes|Yes|Yes|Yes|Yes|Yes|
+|Dell SonicWALL Mobile Connect|Yes|Yes|Yes|Yes|Yes|Yes|
+|Check Point Capsule VPN|Yes|Yes|Yes|Yes|Yes|Yes|
+|Cisco AnyConnect|Yes|Yes|Yes|No|No|No|
+|Automatic|No|No|No|No|No|Yes|
+|IKEv2|No|No|No|No|No|Yes|
+|L2TP|No|No|No|No|No|Yes|
+|PPTP|No|No|No|No|No|Yes|
+|Custom|No|Yes|Yes|No|No|No|
+
+
+> [!IMPORTANT]
+> Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to help you deploy the applicable app by using Intune.  
+
+ Learn how to  create custom VPN profiles by using URI settings in [Create custom VPN profiles](create-custom-vpn-profiles.md).     
+
 ## Create a device profile containing VPN settings
 
 1. Sign into the Azure portal.
@@ -47,7 +73,7 @@ For example, assume that you want to provision all iOS devices with the settings
 	- **iOS**
 	- **macOS**
 	- **Windows Phone 8.1**
-	- **Windows 8.1**
+	- **Windows 8.1 and later**
 	- **Windows 10 and later**
 6. From the **Profile** type drop-down list, choose **VPN**.
 7. Depending on the platform you chose, the settings you can configure will be different. Go to one of the following topics for detailed settings for each platform:
@@ -60,3 +86,19 @@ For example, assume that you want to provision all iOS devices with the settings
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
+
+
+## Methods of securing VPN profiles
+
+VPN profiles can use a number of different connection types and protocols from different manufacturers. These connections are typically secured through one of two methods.
+
+### Certificates
+
+When you create the VPN profile, you choose a SCEP or PFX certificate profile that you previously created in Intune. This is known as the identity certificate. It's used to authenticate against a trusted certificate profile (or *root certificate*) that you created to establish that the user’s device is allowed to connect. The trusted certificate is deployed to the computer that authenticates the VPN connection, typically, the VPN server.
+
+For more information about how to create and use certificate profiles in Intune, see [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md).
+
+### User name and password
+
+The user authenticates to the VPN server by providing a user name and password.
