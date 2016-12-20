@@ -77,19 +77,12 @@ You can let users install and enroll their devices by using the Intune Company P
 
 2.  **Verify CNAME**<br>In the [Intune administration console](http://manage.microsoft.com), choose **Administration** &gt; **Mobile Device Management** &gt; **Windows Phone**. Enter the URL of the verified domain of the company website in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.
 
-  ![Windows device management dialog box](../media/enroll-intune-winenr.png)
-
 3.  **Optional steps**<br>The **Add Sideloading keys** step is not needed for Windows 10. <br>The **Upload Code-Signing Certificate** step is needed only if you are distributing to devices the line-of-business (LOB) apps that are not available from the Windows Store.
 
 4.  **Tell your users how to enroll their devices and what to expect after their devices are under management.**
 
-	For end-user enrollment instructions, see [Enroll your Windows device in Intune](../enduser/enroll-your-device-in-intune-windows.md). You can also send users to [What can my IT admin see on my devic](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+	For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/en-us/intune/enduser/enroll-your-device-in-intune-windows). You can also send users to [What can my IT admin see on my devic](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
-	For more information about end-user tasks, see these articles:
-      - [Resources about the end-user experience with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
-      - [End user guidance for Windows devices](https://docs.microsoft.com/intune/enduser/using-your-windows-device-with-intune)
+	For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
 
 No additional work is required unless you will deploy the Company Portal to devices.  Steps 2 and 3 in the admin console can be safely ignored.
-
-### See also
-
