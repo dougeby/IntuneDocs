@@ -4,10 +4,11 @@
 title: Microsoft Intune Company Portal Application License Terms | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angerob
-ms.date: 11/29/2016
-ms.topic: article
+ms.date: 12/19/2016
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:

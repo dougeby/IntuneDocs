@@ -49,7 +49,7 @@ Enroll Windows PCs to get the most functionality. However, the Intune software c
 - Remote assistance to users using the TeamViewer software
 
 For a detailed listing of the management capabilities you'll get with each method, see [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md) and [Intune PC software client capabilities](windows-pc-management-capabilities-in-microsoft-intune.md).
-For information about the devices and PCs that Intune supports, see [Supported mobile devices and computers](/intune/get-started/supported-mobile-devices-and-computers).
+For information about the devices and PCs that Intune supports, see [Supported mobile devices and computers](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
 
 ## Next steps
 
