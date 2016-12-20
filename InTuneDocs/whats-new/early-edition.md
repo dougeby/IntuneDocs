@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -68,9 +68,9 @@ Intune now fully supports and manages Android 7.1.1.
 ## Notices
 
 ### Defaulting to managing Windows desktop devices through Windows settings <!--663050-->
-The Company Portal website will provide Windows 10 desktop users with enrollment instructions that guide them through the process of adding a work or school account via Windows settings. This method of enrollment allows Intune to manage Windows 10 desktop computers as mobile devices.
+The default behavior for enrolling Windows 10 desktops is changing. New enrollments will follow the typical MDM agent enrollment flow rather than through the PC agent.
 
-If your organization wants to manage Windows 10 desktops as PCs, click [here](https://docs.microsoft.com/en-us/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) to learn more about how the Intune client can be installed and used on those devices.
+The Company Portal website will provide Windows 10 desktop users with enrollment instructions that guide them through the process of adding Windows 10 desktop computers as mobile devices. This will not impact currently enrolled PCs, and your organization can still manage Windows 10 desktops using the PC agent [if you prefer](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune).
 
 ### Company Portal for iOS links open inside the app <!--665954-->
 Links inside of the Company Portal app for iOS, including those to documentation and apps, will open directly in the Company Portal app using an in-app view of Safari. This update will ship separately from the service update in January.
