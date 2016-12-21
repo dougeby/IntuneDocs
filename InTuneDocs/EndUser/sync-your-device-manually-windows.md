@@ -4,7 +4,8 @@
 title: Sync your Windows device manually | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 12/20/2016
 ms.topic: article
@@ -29,7 +30,8 @@ ms.suite: ems
 
 Sometimes trying to install an app on your Windows device may take longer than you think it should. If this happens, you can try to manually sync your Windows device. Syncing may help speed up the installation.
 
-> [!Note] Apps could take awhile to install if you are on a network with slower speeds or higher amounts of devices downloading content at the same time.
+> [!Note] 
+> Apps could take awhile to install if you are on a network with slower speeds or higher amounts of devices downloading content at the same time.
 
 The following versions of Windows can sync manually. Unfortunately, if your device is using a different version of Windows, you can't start a manual sync.
 
