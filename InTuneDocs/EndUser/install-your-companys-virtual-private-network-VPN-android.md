@@ -37,6 +37,6 @@ If your IT administrator has configured a VPN application to enable you to  conn
 3.  Tap **Install corporate VPN profile** and follow the prompts. The installation steps may be slightly different, depending on which VPN provider your company is using.
 
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 

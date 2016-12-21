@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Your device doesn't comply with the maximum operating system version | Microsoft Docs
+title: Your iOS version isn't yet supported | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Your device's operating system version isn't yet supported
+# Your iOS device's operating system version isn't yet supported
 
 With the rapid pace of development for mobile technologies, sometimes your device could actually be ahead of what your IT admin has had the opportunity to test. It's possible that being on the newest version of iOS may not work with some of your company's other tools.
 

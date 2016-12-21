@@ -26,7 +26,7 @@
 03/07/2016  03:45 PM             4,156 cancel-my-subscription-for-microsoft-intune.md
 03/07/2016  03:45 PM             2,662 categorize-devices-with-device-group-mapping-in-microsoft-intune.md
 03/07/2016  03:45 PM            18,296 choose-the-right-microsoft-intune-policy-to-use-deleted.md
-03/07/2016  03:45 PM               405 company-portal-app-not-supported.md
+03/07/2016  03:45 PM               405 you-need-to-update-your-company-portal-app-windows.md
 03/07/2016  03:45 PM             8,296 company-portal-frequently-asked-questions.md
 03/07/2016  03:45 PM             4,465 computer-management-capabilities-in-microsoft-intune-deleted.md
 03/07/2016  03:45 PM            18,727 configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md
@@ -56,7 +56,7 @@
 03/07/2016  03:45 PM            15,371 enroll-corporate-owned-ios-devices-in-microsoft-intune.md
 03/07/2016  03:45 PM             2,495 enroll-your-device-in-microsoft-intune.md
 03/07/2016  03:45 PM             6,188 enterprise-rollout.md
-03/07/2016  03:45 PM               555 error-evaluating-device.md
+03/07/2016  03:45 PM               555 your-device-is-noncompliant-cant-evaluate.md
 03/07/2016  03:45 PM             4,515 exchange-activesync-policy-settings-in-microsoft-intune.md
 03/07/2016  03:45 PM               986 existing-company-email-account-found.md
 03/07/2016  03:45 PM               608 fix-issues-with-mobile-device-enrollment.md
