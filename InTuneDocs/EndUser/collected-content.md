@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/1/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ ms.suite:
 ## Device Doesn't Comply
 ### [With maximum OS version | Android](your-android-version-isnt-yet-supported.md)
 ### [With maximum OS version | Windows](your-windows-version-isnt-yet-supported.md)
-### [With maximum OS version | iOS](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
+### [With maximum OS version | iOS](you-need-to-update-your-ios-device.md)
 
 ## Device Doesn't Have
 ### [Bitlocker | Windows](you-need-to-enable-windows-encryption.md)
