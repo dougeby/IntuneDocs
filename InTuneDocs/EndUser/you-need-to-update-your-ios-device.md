@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: iOS device doesn't have the required minimum operating system version | Microsoft Docs
+title: You need to update your iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,8 @@ ms.suite: ems
 
 # iOS device doesn't have the required minimum operating system version
 
-Your iOS device doesn’t meet the minimum operating system version that your IT department requires. Before you update your device, check the current operating system version by choosing **Settings** &gt; **About**. To update your device to the latest version, choose **Settings** &gt; **General** &gt; **Software Update**.
+[!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
+
+Update your iOS device by tapping **Settings** > **General** > **Software Update**.
 
 Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

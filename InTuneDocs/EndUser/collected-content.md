@@ -28,7 +28,7 @@ ms.suite:
 # Collected end-user content links
 
 ## Company Portal
-### [Company Portal App Not Supported](company-portal-app-not-supported.md)
+### [Company Portal App Not Supported](you-need-to-update-your-company-portal-app-windows.md)
 ### [Company Portal FAQs](company-portal-frequently-asked-questions.md)
 
 ## Android Work Profile
@@ -40,12 +40,12 @@ ms.suite:
 ### [With maximum OS version | iOS](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
 
 ## Device Doesn't Have
-### [Bitlocker | Windows](device-doesnt-have-bitlocker-enabled-windows.md)
-### [Code integrity | Windows](device-doesnt-have-code-integrity-enabled-windows.md)
+### [Bitlocker | Windows](you-need-to-enable-windows-encryption.md)
+### [Code integrity | Windows](you-need-to-enable-code-integrity.md)
 ### [Secure boot | Windows](you-need-to-enable-secure-boot-windows.md)
-### [Minimum required OS | Android](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-### [Minimum required OS | iOS](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)
-### [Minimum required OS | Windows](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
+### [Minimum required OS | Android](you-need-to-update-your-android-device.md)
+### [Minimum required OS | iOS](you-need-to-update-your-ios-device.md)
+### [Minimum required OS | Windows](you-need-to-update-your-windows-device.md)
 
 ## Encrypt your device
 ### [Android](encrypt-your-device-android.md)

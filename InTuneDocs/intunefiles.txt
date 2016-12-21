@@ -24,7 +24,7 @@
  cancel-my-subscription-for-microsoft-intune.md
  categorize-devices-with-device-group-mapping-in-microsoft-intune.md
  choose-the-right-microsoft-intune-policy-to-use-deleted.md
- company-portal-app-not-supported.md
+ you-need-to-update-your-company-portal-app-windows.md
  company-portal-frequently-asked-questions.md
  computer-management-capabilities-in-microsoft-intune-deleted.md
  configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md

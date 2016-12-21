@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Update your Company Portal app | Microsoft Docs
+title: You need to update your Company Portal app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Your Company Portal app is out of date
+# Your Company Portal app for Windows is out of date
 
 You need to update your Company Portal app in order to continue to access things like your corporate email, contacts, and documents. To fix this, open the **Windows Store** and install the new version of the **Company Portal** app.
 
