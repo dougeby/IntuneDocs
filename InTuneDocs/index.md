@@ -11,7 +11,7 @@ keywords: intune documentation, app management, device management, MDM documenta
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/7/2016
+ms.date: 12/20/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
@@ -35,8 +35,8 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Protect access to company resources</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-ios">Microsoft Intune App SDK for iOS Developer Guide</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-android">Microsoft Intune App SDK for Android Developer Guide</a></li>
+          <li><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/intune_graph_overview">Working with Intune in Microsoft Graph</a></li>
+          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Resources about the end-user experience with Microsoft Intune</a></li>
         </ul>
       </div>
     </section>
@@ -59,13 +59,13 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                    <h3>Introduction to Intune</h3>
+                    <h3>What is Intune?</h3>
                     <p>Learn about how Intune provides device, app, and data management capabilities for mobile devices (iOS devices, Android devices, Windows phones) and Windows PCs.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
-                    <h3>Intune evaluation guide</h3>
+                    <h3>Is Intune right for you?</h3>
                     <p>Use the trial guide to walk through the steps to get your trial set up with up to 100 users and devices.</p>
                   </a>
                 </li>
@@ -92,21 +92,21 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
-                    <h3>What to know before you start</h3>
-                    <p>Quickly familiarize yourself with the baseline requirements for any Intune deployment.</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Intune quick start guide</h3>
-                    <p>Building on the 30-day trial guide, this topic walks you through Azure Active Directory synchronization, domain and DNS considerations, and other Intune customizations.</p>
+                    <h3>Getting started guide</h3>
+            <p>Building on the 30-day trial guide, this topic walks you through Azure Active Directory synchronization, domain and DNS considerations, and other Intune customizations.</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/get-started/rollout-phases-for-microsoft-intune-deployment">
-                    <h3>Rollout phases</h3>
-                    <p>Define your Intune goals, architecture, pilot, and production rollout plans.</p>
+                  <a href="/intune/get-started/prevent-company-data-leaks-from-office-365-mobile-apps">
+                    <h3>Prevent company data leaks from Office 365 mobile apps</h3>
+                    <p>Secure your organization’s data using app protection policies that help prevent company data leaks.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/get-started/simplify-email-configuration-on-mobile-devices">
+                    <h3>Simplify email configuration on mobile devices</h3>
+                    <p>Save your company time and resources by deploying email (as well as VPN and WiFi) profiles to Windows, iOS and Android mobile devices managed by the Intune service.</p>
                   </a>
                 </li>
               </ul>
@@ -153,8 +153,8 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Restrict access to email and O365 services</h3>
-                    <p>Use Intune's conditional access capability to restrict access to company email and Office 365 services.</p>
+                    <h3>Protect access to email and O365 services</h3>
+                    <p>Use Intune's conditional access capability to protect access to company email and Office 365 services.</p>
                   </a>
                 </li>
                 <li class="column-third">
