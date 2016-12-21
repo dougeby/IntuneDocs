@@ -26,6 +26,7 @@ ms.suite: ems
 ---
 
 # Your Company Portal app is out of date
+
 You need to update your Company Portal app in order to continue to access things like your corporate email, contacts, and documents. To fix this, open the **Windows Store** and install the new version of the **Company Portal** app.
 
 Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

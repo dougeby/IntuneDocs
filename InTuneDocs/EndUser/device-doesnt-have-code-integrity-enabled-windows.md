@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Device doesn't have Code Integrity enabled | Microsoft Docs
+title: You need to enable Code Integrity | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -25,15 +25,15 @@ ms.suite: ems
 
 ---
 
+# You need to enable Code Integrity
 
-# Device doesn't have Code Integrity enabled
+Keeping your organizational information requires different types of security to prevent different types of problems. One way they want to maintain that security is to use Windows Code Integrity, which makes sure that deep-level programs (drivers) and system files haven't been modified.
 
-Your organization requires that you enable Windows Code Integrity. This feature checks drivers and system files on your device to help make sure they are safe.
+Code Integrity is automatically turned on when your system actively uses Secure Boot.
 
-To enable Windows Code Integrity, enable the Secure Boot feature. The Code Integrity feature will then be turned on automatically.
+> [!Tip]
+> Enabling Secure Boot is an advanced task. If you are using a Windows mobile device, contact your IT administrator for help. If you a desktop device, you can contact your IT administrator.
 
-Enabling Secure Boot is an advanced task. If you are using a mobile device, contact your IT administrator for help.
-
-If you are using a PC, you can contact your IT administrator. Or, see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.
+<!--Or, see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.-->
 
 Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

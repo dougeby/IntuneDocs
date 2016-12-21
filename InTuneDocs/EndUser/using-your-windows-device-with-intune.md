@@ -61,5 +61,5 @@ The information in this section helps users fix issues that they might encounter
 - [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
 - [Device doesn't have BitLocker enabled](device-doesnt-have-bitlocker-enabled-windows.md)
 - [Device doesn't have antimalware software enabled](device-doesnt-have-antimalware-software-enabled-windows.md)
-- [Device doesn't have Secure Boot enabled](device-doesnt-have-secure-boot-enabled-windows.md)
+- [Device doesn't have Secure Boot enabled](you-need-to-enable-secure-boot-windows.md)
 - [Device doesn't have Code Integrity enabled](device-doesnt-have-code-integrity-enabled-windows.md)

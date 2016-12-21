@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Device doesn't have Secure Boot enabled | Microsoft Docs
+title: You need to enable Secure Boot | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -35,5 +35,3 @@ Enabling Secure Boot is an advanced task. If you are using a mobile device, cont
 If you are using a PC, you can contact your IT administrator, or see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.
 
 Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-

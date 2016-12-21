@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Your Windows version isn't yet supported | Microsoft Docs
+title: Your Android version isn't yet supported | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 2df53b9b-9195-45c9-b5dd-7eb7642ff219
+ms.assetid: 58f2a207-88cf-446c-ac9f-ad10a124e4e2
 
 # optional metadata
 
@@ -24,8 +24,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# Your Windows device's operating system version isn't yet supported
+# Your Android device's operating system version isn't yet supported
 
-With the rapid pace of development for mobile technologies, sometimes your device could actually be ahead of what your IT admin has had the opportunity to test. It's possible that being on the newest version of Windows may not work with some of your company's other tools.
+With the rapid pace of development for mobile technologies, sometimes your device could actually be ahead of what your IT admin has had the opportunity to test. It's possible that being on the newest version of Android may not work with some of your company's other tools.
 
 You will need to contact your IT admin to resolve this issue. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

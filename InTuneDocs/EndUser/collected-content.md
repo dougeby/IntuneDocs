@@ -35,14 +35,14 @@ ms.suite:
 ### [Create a work profile and enroll your device in Intune | Android](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 
 ## Device Doesn't Comply
-### [With maximum OS version | Android](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+### [With maximum OS version | Android](your-android-version-isnt-yet-supported.md)
 ### [With maximum OS version | Windows](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
 ### [With maximum OS version | iOS](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
 
 ## Device Doesn't Have
 ### [Bitlocker | Windows](device-doesnt-have-bitlocker-enabled-windows.md)
 ### [Code integrity | Windows](device-doesnt-have-code-integrity-enabled-windows.md)
-### [Secure boot | Windows](device-doesnt-have-secure-boot-enabled-windows.md)
+### [Secure boot | Windows](you-need-to-enable-secure-boot-windows.md)
 ### [Minimum required OS | Android](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
 ### [Minimum required OS | iOS](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)
 ### [Minimum required OS | Windows](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)

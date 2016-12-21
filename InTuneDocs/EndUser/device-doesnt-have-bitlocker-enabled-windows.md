@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Device doesn't have BitLocker enabled | Microsoft Docs
+title: You need to enable encryption | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,10 +24,10 @@ ms.suite: ems
 #ms.custom:
 
 ---
+# You need to enable encryption
 
+When you encrypt a device, you are wrapping the information on it in a layer of protective code that prevents unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to you enable BitLocker.
 
-# Device doesn't have BitLocker enabled
+BitLocker is software that encrypts your drive and helps to protect your data. Follow [these instructions](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) on how to enable BitLocker on Windows 10 devices, see .
 
-Your organization requires that you enable BitLocker, which is software that encrypts your drive and helps to protect your data. For instructions on how to enable BitLocker on Windows 10 devices, see [How to turn on BitLocker on Windows 10 devices](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d). For other devices, contact your IT administrator for help. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
+Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

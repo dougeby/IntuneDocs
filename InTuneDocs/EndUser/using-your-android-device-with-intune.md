@@ -68,7 +68,7 @@ The information in this section helps users fix issues that they might encounter
 - [Send diagnostic data logs to your IT administrator using a USB cable](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
 - [Send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android.md)
 - [Device doesn't have the required minimum operating system version](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [Device doesn't comply with the maximum operating system version](your-android-version-isnt-yet-supported.md)
 - [Your device is rooted and you can't connect](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Your device is missing a required certificate](your-device-is-missing-a-required-certificate-android.md)
 - [You are asked to turn off Unknown sources](you-are-asked-to-turn-off-unknown-sources-android.md)
