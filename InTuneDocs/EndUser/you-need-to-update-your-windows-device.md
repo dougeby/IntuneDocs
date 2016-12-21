@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,6 +36,6 @@ For computers running Windows, search for **operating system** and follow the pr
 > [!Note]
 > To update computers that have operating systems earlier than Windows 8.1, search for **Windows updates**.
 
-For Windows 10 and Windows 8.1, type __Windows version__ into the __search bar__. Under __Can I help?__, select __windows version__. The version number will appear. This number will look something like __10.0.14393.447__. 
+For Windows 10 and Windows 8.1, type __Windows version__ into the __search bar__. Under __Can I help?__, select __windows version__. The version number will appear. This number will look something like __10.0.14393.447__.
 
 Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

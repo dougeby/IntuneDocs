@@ -62,7 +62,7 @@ ms.suite:
 ### [WinPhone 8.1](enroll-your-wp81-windows.md)
 
 ## Error
-### [Evaluating device](error-evaluating-device.md)
+### [Evaluating device](your-device-is-noncompliant-cant-evaluate.md)
 
 ## Existing email
 ### [Email found](existing-company-email-account-found.md)
