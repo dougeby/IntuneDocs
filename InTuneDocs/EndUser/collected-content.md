@@ -36,7 +36,7 @@ ms.suite:
 
 ## Device Doesn't Comply
 ### [With maximum OS version | Android](your-android-version-isnt-yet-supported.md)
-### [With maximum OS version | Windows](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
+### [With maximum OS version | Windows](your-windows-version-isnt-yet-supported.md)
 ### [With maximum OS version | iOS](device-doesnt-comply-with-the-maximum-operating-system-version-ios.md)
 
 ## Device Doesn't Have
