@@ -48,4 +48,4 @@ To unenroll your device from Intune and uninstall the Company Portal app, follow
 
     ![Remove the device.](./media/andr-3-warning-about-remove.png)
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
