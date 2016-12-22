@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,10 +45,10 @@ There are a few minor differences between the Company Portal app and the Company
 To see what you can do by using the Company Portal website versus what you can do by using the Company Portal app on your device, choose one of the following links:
 
 > [!div class="op_single_selector"]
-- [Android](using-your-android-device-with-intune.md)
-- [iOS and macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Windows](using-your-windows-device-with-intune.md)
-- [Company Portal website](using-the-intune-company-portal-website.md)
+- [Using your Android device with Intune](using-your-android-device-with-intune.md)
+- [Using your iOS and macOS devices with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
+- [Using the Company Portal website](using-the-intune-company-portal-website.md)
 
 ## What happens when you add a computer or device to the Company Portal?
 When you add a computer or device to the Company Portal, some software might be installed or an app might be downloaded (depending on the device).  You are also giving your IT administrator permission to manage your device to help protect the company information on the device.
@@ -62,9 +62,9 @@ To learn about what your IT administrator can and can't see on your device, use 
 
 ## What kind of computers or devices can you add to the Company Portal?
 
--   iPhones, iPads, and macOS devices
+-   Apple devices using iOS (iPhone, iPad) and macOS (iMac, MacBook)
 
--   Android mobile devices
+-   Android devices
 
 -   Windows devices
 	-   Windows 10 Mobile

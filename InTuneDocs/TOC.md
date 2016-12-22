@@ -30,7 +30,9 @@
 ### [Simplify email configuration on mobile devices](get-started/simplify-email-configuration-on-mobile-devices.md)
 ### [Protect Windows PCs against malware threats](get-started/protect-pcs-against-malware-threats.md)
 
-# [What's New](whats-new/whats-new-in-microsoft-intune.md)
+# What's New
+## [What's new](whats-new/whats-new-in-microsoft-intune.md)
+## [What's new archive](whats-new/whats-new-archive.md)
 
 # Deploy and Use
 ## [Overview of device and app lifecycles](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
