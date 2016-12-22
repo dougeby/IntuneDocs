@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/22/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,14 +36,14 @@ Depending on the settings you choose, not all values in the list below will be c
 ## Base VPN settings
 
 
-**Connection name** - Enter a name for this connection. End users will see this name when they browse their device for the list of available VPN connections.
-**Authentication method** -
-**Servers** - Add one or more VPN servers that devices will connect to.
-- **Add** - Opens the **Add Row** blade where you can specify the following information:
-	- **Description** -
-	- **IP address or FQDN** -
-	- **Default server** - Enables this server as the default server that devices will use to establish the connection. Make sure to set only one server as the default.
-- **Import** - Browse to a file containing a comma-separated list of servers in the format description, IP address or FQDN, Default server. Choose **OK** to import these into the **Servers** list.- **Export** - Exports the list of servers to a comma-separated-values (csv) file.
+- **Connection name** - Enter a name for this connection. End users will see this name when they browse their device for the list of available VPN connections.
+- **Servers** - Add one or more VPN servers that devices will connect to.
+	- **Add** - Opens the **Add Row** blade where you can specify the following information:
+		- **Description** - Specify a descriptive name for the server like **Contoso VPN server**.
+		- **IP address or FQDN** - Provide the IP address or fully qualified domain name of the VPN server that devices will connect to. Examples: **192.168.1.1**, **vpn.contoso.com**.
+		- **Default server** - Enables this server as the default server that devices will use to establish the connection. Make sure to set only one server as the default.
+	- **Import** - Browse to a file containing a comma-separated list of servers in the format description, IP address or FQDN, Default server. Choose **OK** to import these into the **Servers** list.
+	- **Export** - Exports the list of servers to a comma-separated-values (csv) file.
 
 **Connection type** - Select the VPN connection type from the following list of vendors:
 - **Pulse Secure**
@@ -58,28 +58,29 @@ Depending on the settings you choose, not all values in the list below will be c
 **Login group or domain** (Dell SonicWALL Mobile Connect only) - Specify the name of the login group or domain that you want to connect to.
 
 **Custom XML**/**EAP XML** - Specify any custom XML commands that configure the VPN connection.
-Example for Pulse Secure:
+
+**Example for Pulse Secure:**
 
 ```
-<pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
+	<pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 ```
 
-Example for CheckPoint Mobile VPN:
+**Example for CheckPoint Mobile VPN:**
 
 ```
-<CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
+	<CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-Example for Dell SonicWALL Mobile Connect:
+**Example for Dell SonicWALL Mobile Connect:**
 
 ```
-<MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
+	<MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 ```
 
-Example for F5 Edge Client:
+**Example for F5 Edge Client:**
 
 ```
-<f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
+	<f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
 Refer to each manufacturer's VPN documentation for more information about how to write custom XML commands.

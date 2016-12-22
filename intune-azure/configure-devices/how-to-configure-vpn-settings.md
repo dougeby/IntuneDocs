@@ -19,7 +19,7 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
