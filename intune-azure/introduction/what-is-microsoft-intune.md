@@ -37,7 +37,7 @@ The new portal offers you a preview of new and updated functionality in the Azur
 All Intune functionality will eventually move to Azure, but you can perform certain Intune tasks in the Azure portal today. Because this new experience is in preview, some functionality might not yet be present in the portal. Review the [What’s new in the preview](#what's-new-in-the-preview) section for details.
 
 > [!IMPORTANT]
-> **Don’t see the new portal yet?**
+> **Don’t see the new portal yet?**<br>
 > We’ve already begun to roll out the preview to select tenants. Existing tenants will be migrated to the new experience starting in early calendar year 2017. You will receive a notification in the Office Message Center prior to your tenant’s migration. If you have any questions about the timeline for your tenant’s migration, contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 
