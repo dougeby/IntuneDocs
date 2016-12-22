@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 12/14/2016
+ms.date: 12/22/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,12 @@ Microsoft Intune is moving to the Azure portal and this means that the workflows
 The new portal offers you a preview of new and updated functionality in the Azure portal where you can manage your organization's' mobile devices, PCs, and apps.
 All Intune functionality will eventually move to Azure, but you can perform certain Intune tasks in the Azure portal today. Because this new experience is in preview, some functionality might not yet be present in the portal. Review the [What’s new in the preview](#what's-new-in-the-preview) section for details.
 
-New product documentation will be released, and continually updated during the preview. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you.
+> [!IMPORTANT]
+> **Don’t see the new portal yet?**<br>
+> We’ve already begun to roll out the preview to select tenants. Existing tenants will be migrated to the new experience starting in early calendar year 2017. You will receive a notification in the Office Message Center prior to your tenant’s migration. If you have any questions about the timeline for your tenant’s migration, contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+
+
+You'll find new product documentation in this library, and it will be continually updated during the preview. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you.
 
 <!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
 
