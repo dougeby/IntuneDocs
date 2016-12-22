@@ -89,7 +89,7 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 4. **How does Intune remotely wipe data?** Intune can wipe app data in two different ways: full wipe and selective wipe. For more information about remote wipe, read this [article](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md).
 
-  1. **What is full wipe?** [Full wipe](use-remote-wipe-to-help-protect-data-using-microsoft-intune#full-wipe#full-wipe) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
+  1. **What is full wipe?** [Full wipe](use-remote-wipe-to-help-protect-data-using-microsoft-intune#full-wipe) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
   >[!NOTE]
   > Full wipe can only be achieved on devices enrolled with Intune mobile device management (MDM).
 
