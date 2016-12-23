@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 12/23/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,6 +29,11 @@ ms.suite: ems
 # How to configure custom device settings in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+## When to use custom settings
+
+Custom device settings can be useful when Intune doesn't have the settings you want to configure built-in, and available from other device profiles.
+Custom settings are configured differently for each platform. For example, with Android and Windows devices, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to control features on devices. For Apple devices, you can import a file you created with the [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12).
 
 Use the information in this topic to learn the basics about configuring profiles with custom settings, and then read further topics for each platform to learn about device specifics.
 
