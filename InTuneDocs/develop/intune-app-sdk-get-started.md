@@ -133,7 +133,7 @@ This badge indicates to IT administrators, end-users, and potential Intune custo
 
 The badge is a briefcase icon and can be seen in the samples below:
 
-![Badge example 1](/media/intune-app-badge/example-1.png) ![Badge example 2](/media/intune-app-badge/example-2.png)
+![Badge example 1](../media/intune-app-badge/example-1.png) ![Badge example 2](../media/intune-app-badge/example-2.png)
 
 **What you'll need to badge your app**:
 
