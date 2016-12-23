@@ -123,7 +123,9 @@ After you finish the necessary steps to integrate your iOS or Android app with t
 
 	* If you are developing a line-of-business app that will not be shipped to the store, you are expected to have access to Microsoft Intune through your organization. You can also sign up for a one-month free trial in [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
 
-* **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](../deploy-use/ios-mam-policies.md) and [Android app protection policies](../deploy-use/android-mam-policies.md).
+* **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](../deploy-use/ios-mam-policy-settings.md) and [Android app protection policies](../deploy-use/android-mam-policy-settings.md).
+
+* **Troubleshoot**: If you run into any issues while manually testing your app's user experience, check out the [Troubleshooting MAM](../troubleshoot/troubleshoot-mam.md). This article offers help for common issues, dialogs, and error messages that may be experienced in Intune-enlightened apps. 
 
 ### Badge your app (optional)
 
