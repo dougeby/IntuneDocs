@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 12/28/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -88,7 +88,8 @@ An example of an Intune support training agenda is provided below.
 
 -   Q&A
 
->[!TIP] [Additional resources](additional-resources.md) provides technical resources that may be valuable for your support team to review and leverage during their ramp up of Microsoft Intune.
+>[!TIP] 
+> [Additional resources](additional-resources.md) provides technical resources that may be valuable for your support team to review and leverage during their ramp up of Microsoft Intune.
 
 ## What opportunities are there to involve the support team earlier? 
 

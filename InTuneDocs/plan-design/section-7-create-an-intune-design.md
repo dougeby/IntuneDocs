@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 12/28/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -122,7 +122,8 @@ If your organization has global presence, make sure to plan where your tenant wi
 
 -   Asia and Pacific
 
->[!IMPORTANT] It’s not possible to change the country/tenant location later.
+>[!IMPORTANT] 
+> It’s not possible to change the country/tenant location later.
 
 ## External dependencies
 
@@ -287,7 +288,8 @@ Certificate profiles allow Intune to issue a certificate to a user or device. In
 
 It’s recommended to document which user group needs a certificate, how many certificate profiles will be needed, and which user groups to deploy them to.
 
->[!NOTE] Remember that the trusted root certificate is required for the SCEP certificate, so make sure all users targeted for the SCEP certificate also receive a trusted root certificate. If SCEP certificates are needed, design and document what SCEP certificate templates will be needed.
+>[!NOTE] 
+> Remember that the trusted root certificate is required for the SCEP certificate, so make sure all users targeted for the SCEP certificate also receive a trusted root certificate. If SCEP certificates are needed, design and document what SCEP certificate templates will be needed.
 
 Here’s an example how you can document the certificates during the design:
 
@@ -362,7 +364,8 @@ Since apps can be deployed to users and devices, it’s recommended to decide wh
 -   Are the apps publicly available in an app store, or are they custom Line of Business Apps?
 
 
->[!TIP] Check out the [different types of applications that Intune support](https://docs.microsoft.com/intune/deploy-use/add-apps).
+>[!TIP] 
+> Check out the [different types of applications that Intune support](https://docs.microsoft.com/intune/deploy-use/add-apps).
 
 #### App protection policies
 
