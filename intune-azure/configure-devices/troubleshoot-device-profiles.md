@@ -119,10 +119,10 @@ When you delete a policy, or you remove a device from a group to which a policy 
 
 ### Windows PCs running the Intune client software
 
-- **Endpoint Protection settings**: Settings are restored to their recommended values. The only exception is the **Join Microsoft Active Protection Service** setting, for which the default value is **No**. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
-- **Software updates settings**: Settings are reset to the default state for the operating system. For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+- **Endpoint Protection settings**: Settings are restored to their recommended values. The only exception is the **Join Microsoft Active Protection Service** setting, for which the default value is **No**. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
+- **Software updates settings**: Settings are reset to the default state for the operating system. For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).
 - **Microsoft Intune Center settings**: Any support contact information that was configured by the policy is deleted from computers.
-- **Windows Firewall settings**: Settings are reset to the default for the computer operating system. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- **Windows Firewall settings**: Settings are reset to the default for the computer operating system. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 
 ## How can I refresh the policies on a device to ensure that they are current (applies to Windows PCs running the Intune client software only)?
@@ -142,13 +142,6 @@ In the Intune admin console every device has a policy tab under **Device Propert
 
 -   **Pending**: The policy was sent to the device, but hasn't reported status to the service. For example, encryption on Android requires the user to enable encryption and might therefore be pending.
 
-In the screenshot below you can see two clear examples:
-
--   **Allow simple passwords** is set to **Yes**, as shown in the **Intended Value** column, but its **Status** is **Not applicable**. This is because simple passwords are not supported for Android devices.
-
--   Similarly, the expanded policy item **Email settings for iOS devices** is not applied to this device, as it is an Android device.
-
-![Intune device policy](../media/Intune-Device-Policy-v.2.jpg)
 
 > [!NOTE]
 > Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
@@ -508,4 +501,4 @@ Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may ne
 --->
 
 ### Next steps
-If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
