@@ -130,7 +130,7 @@
 ### [Assign device profiles](/intune-azure/configure-devices/how-to-assign-device-profiles)
 ### [Monitor device profiles](/intune-azure/configure-devices/how-to-monitor-device-profiles)
 ### [Set up a telecom expense management service](/intune-azure/configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune)
-<!-- ## [Troubleshoot](/intune-azure/configure-devices/troubleshooting) -->
+## [Troubleshoot](/intune-azure/configure-devices/troubleshoot-device-profiles.md)
 
 # Set device compliance
 ## [What is device compliance?](/intune-azure/set-device-compliance/what-is-device-compliance)
