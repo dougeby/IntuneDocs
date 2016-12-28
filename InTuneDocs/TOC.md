@@ -30,6 +30,18 @@
 ### [Simplify email configuration on mobile devices](get-started/simplify-email-configuration-on-mobile-devices.md)
 ### [Protect Windows PCs against malware threats](get-started/protect-pcs-against-malware-threats.md)
 
+# [Plan and Design](plan-design/introduction.md)
+## [Section 1: Determine deployment goals, objectives and challenges](plan-design/section-1-determine-deployment-goals-objectives-challenges.md)
+## [Section 2: Identify use case scenarios](plan-design/section-2-identify-use-case-scenarios.md)
+## [Section 3: Determine use case scenario requirements](plan-design/section-3-determine-use-case-requirements.md)
+## [Section 4: Develop a rollout plan](plan-design/section-4-develop-a-rollout-plan.md)
+## [Section 5: Develop a communication plan](plan-design/section-5-develop-a-rollout-communication-plan.md)
+## [Section 6: Develop a support plan](plan-design/section-6-develop-a-support-plan.md)
+## [Section 7: Create an Intune design](plan-design/section-7-create-an-intune-design.md)
+## [Section 8: Intune implementation](plan-design/section-8-onboarding-process.md)
+## [Section 9: Testing and validation](plan-design/section-9-test-and-validation.md)
+## [Additional resources](plan-design/additional-resources.md)
+
 # What's New
 ## [What's new](whats-new/whats-new-in-microsoft-intune.md)
 ## [What's new archive](whats-new/whats-new-archive.md)
