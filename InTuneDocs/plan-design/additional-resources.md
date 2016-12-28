@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 12/28/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,27 +28,11 @@ ms.suite: ems
 
 # Additional resources
 
-## Links
+## Templates
 
-Check out these links for additional information that may be helpful during the Intune deployment planning, design and implementation process.
+Find table templates that may be helpful to use during your Intune deployment planning, design and implementation process. You can download the table templates below from [here](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0). 
 
--   [Microsoft Intune Documentation Library](https://docs.microsoft.com/intune/)
-
--   [Intune Blog](https://blogs.technet.microsoft.com/enterprisemobility/)
-
--   [Intune Roadmap ](https://www.microsoft.com/server-cloud/roadmap/)
-
--   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter/default.aspx)
-
--   [Intune User Voice](http://microsoftintune.uservoice.com/)
-
--   [Microsoft Virtual Academy EMS Deployment Training](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408?l=wjq9vmwvD_5805996570)
-
--   [Enrollment Guide](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)
-
-## Table templates
-
-Find table templates that may be helpful to use during your Intune deployment planning, design and implementation process. Here's a list of table templates for each section:
+Here's a list of table templates for each section:
 
 ### Deployment planning
 
@@ -80,4 +64,21 @@ Find table templates that may be helpful to use during your Intune deployment pl
 - IT admin scenario validation testing
 - End user scenario validation testing
 
-You can download the table templates below from [here](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
+## Links
+
+Check out these links for additional information that may be helpful during the Intune deployment planning, design and implementation process.
+
+-   [Microsoft Intune Documentation Library](https://docs.microsoft.com/intune/)
+
+-   [Intune Blog](https://blogs.technet.microsoft.com/enterprisemobility/)
+
+-   [Intune Roadmap ](https://www.microsoft.com/server-cloud/roadmap/)
+
+-   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter/default.aspx)
+
+-   [Intune User Voice](http://microsoftintune.uservoice.com/)
+
+-   [Microsoft Virtual Academy EMS Deployment Training](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408?l=wjq9vmwvD_5805996570)
+
+-   [Enrollment Guide](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)
+
