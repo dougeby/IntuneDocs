@@ -6,7 +6,7 @@ description: Use mobile app configuration policies in Intune to supply settings 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

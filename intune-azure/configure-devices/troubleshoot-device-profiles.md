@@ -1,35 +1,162 @@
 ---
 # required metadata
 
-title: Troubleshoot company resource access problems | Microsoft Docs
-description: Error and status codes in this topic to help you troubleshoot resource access problems.
+title: Troubleshooting device profiles in Microsoft Intune | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: If you're stuck, use this topic to help you solve problems with Intune device profiles."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/27/2016
+ms.date: 12/28/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
+ms.assetid: 
 
 # optional metadata
 
+#ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: tscott
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# Troubleshoot company resource access problems with Microsoft Intune
-Use the error and status codes in this topic to help you troubleshoot problems when a Microsoft Intune action returns an error code.
+# Troubleshooting device profiles in Microsoft Intune
 
-If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
-## Status codes for MDM managed Windows devices
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+The information in this topic can be used to help you troubleshoot common issues around Intune device profiles.
+
+## How long does it take for mobile devices to get a policy or apps after they have been deployed?
+When a policy or an app is deployed, Intune immediately begins attempting to notify the device that it should check in with the Intune service. This typically takes less than five minutes.
+
+If a device doesn't check in to get the policy after the first notification is sent, Intune makes three more attempts.  If the device is offline (for example, it is turned off or not connected to a network), it might not receive the notifications. In this case, the device will get the policy on its next scheduled check-in with the Intune service as follows:
+
+- iOS and Mac OS X: Every 6 hours.
+- Android: Every 8 hours.
+- Windows Phone: Every 8 hours.
+- Windows 8.1 and Windows 10 PCs enrolled as devices: Every 8 hours.
+
+If the device has just enrolled, the check-in frequency will be more frequent, as follows:
+
+- iOS and Mac OS X: Every 15 minutes for 6 hours, and then every 6 hours.
+- Android: Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.
+- Windows Phone: Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours.
+- Windows PCs enrolled as devices: Every 3 minutes for 30 minutes, and then every 8 hours.
+
+Users can also open the Company Portal app and sync the device to immediately check for the policy anytime.
+
+## What actions cause Intune to immediately send a notification to a device?
+Devices check in with Intune either when they receive a notification that tells them to check in or during their regularly scheduled check-in.  When you target a device or user specifically with an action such as a wipe, lock, passcode reset, app deployment, profile deployment (Wi-Fi, VPN, email, etc.), or policy deployment, Intune will immediately begin trying to notify the device that it should check in with the Intune service to receive these updates.
+
+Other changes, such as revising the contact information in the company portal, do not cause an immediate notification to devices.
+
+## If multiple policies are deployed to the same user or device, how do I know which settings will get applied?
+When two or more policies are deployed to the same user or device, the evaluation for which setting is applied happens at the individual setting level:
+
+-   Compliance policy settings always have precedence over configuration policy settings.
+
+-   The most restrictive compliance policy setting is applied if it is evaluated against the same setting in a different compliance policy.
+
+-   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict will be displayed in the Intune console. You must manually resolve such conflicts.
+
+## What happens when mobile application management policies conflict with each other? Which one will be applied to the app?
+Conflict values are the most restrictive settings available in a MAM policy, except for the number entry fields (like PIN attempts before reset).  The number entry fields will be set the same as the values, as if you created a MAM policy in the console by using the recommended settings option.
+
+Conflicts occur when two policy settings are the same.  For example, you configured two MAM policies that are identical except for the copy/paste setting.  In this scenario, the copy/paste setting will be set to the most restrictive value, but the rest of the settings will be applied as configured.
+
+If one policy is deployed to the app and takes effect, and then a second one is deployed, the first one will take precedence and stay applied, while the second shows in conflict. If they are both applied at the same time, meaning that there is no preceding policy, then they will both be in conflict. Any conflicting settings will be set to the most restrictive values.
+
+## What happens when iOS custom policies conflict?
+Intune does not evaluate the payload of Apple Configuration files or a custom Open Mobile Alliance Uniform Resource Identifier (OMA-URI) policy. It merely serves as the delivery mechanism.
+
+When you deploy a custom policy, ensure that the configured settings do not conflict with compliance, configuration, or other custom policies. In the case of a custom policy with settings conflicts, the order in which settings are applied is random.
+
+## What happens when a policy is deleted or no longer applicable?
+When you delete a policy, or you remove a device from a group to which a policy was deployed, the policy and settings will be removed from the device according to the following lists.
+
+### Enrolled devices
+
+- Wi-Fi, VPN, certificate, and email profiles: These profiles are removed from all supported enrolled devices.
+- All other policy types:
+	- **Windows and Android devices**: Settings are not removed from the device.
+	- **Windows Phone 8.1 devices**: The following settings are removed:
+		- Require a password to unlock mobile devices
+		- Allow simple passwords
+		- Minimum password length
+		- Required password type
+		- Password expiration (days)
+		- Remember password history
+		- Number of repeated sign-in failures to allow before the device is wiped
+		- Minutes of inactivity before password is required
+		- Required password type – minimum number of character sets
+		- Allow camera
+		- Require encryption on mobile device
+		- Allow removable storage
+		- Allow web browser
+		- Allow application store
+		- Allow screen capture
+		- Allow geolocation
+		- Allow Microsoft account
+		- Allow copy and paste
+		- Allow Wi-Fi tethering
+		- Allow automatic connection to free Wi-Fi hotspots
+		- Allow Wi-Fi hotspot reporting
+		- Allow factory reset
+		- Allow Bluetooth
+		- Allow NFC
+		- Allow Wi-Fi
+
+	- **iOS**: All settings are removed, except:
+		- Allow voice roaming
+		- Allow data roaming
+		- Allow automatic synchronization while roaming
+
+### Windows PCs running the Intune client software
+
+- **Endpoint Protection settings**: Settings are restored to their recommended values. The only exception is the **Join Microsoft Active Protection Service** setting, for which the default value is **No**. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
+- **Software updates settings**: Settings are reset to the default state for the operating system. For details, see [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).
+- **Microsoft Intune Center settings**: Any support contact information that was configured by the policy is deleted from computers.
+- **Windows Firewall settings**: Settings are reset to the default for the computer operating system. For details, see [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
+
+
+## How can I refresh the policies on a device to ensure that they are current (applies to Windows PCs running the Intune client software only)?
+
+1.  In any device group, select the devices on which you want to refresh the policies, and then choose **Remote Tasks** &gt; **Refresh Policies**.
+2.  Choose **Remote Tasks** in the lower-right corner of the Intune administration console to check the task status.
+
+
+
+### How do I know that my profile was assigned to a device?
+
+In the Intune admin console every device has a policy tab under **Device Properties**. Each policy has an **Intended Value** and a **Status**. The intended value is what you meant to achieve when assigning the policy. The status is what is actually applied when all of the policies that apply to the device, as well as the restrictions and requirements of the hardware and the operating system, are considered together. Possible statuses are:
+
+-   **Conforms**: the device has received the policy and reports to the service that it  conforms to the setting.
+
+-   **Not applicable**: The policy setting is not applicable. For example,  email settings for iOS devices would not apply to an Android device.
+
+-   **Pending**: The policy was sent to the device, but hasn't reported status to the service. For example, encryption on Android requires the user to enable encryption and might therefore be pending.
+
+
+> [!NOTE]
+> Remember that when two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies in practice.
+
+
+## I changed a device restriction policy, but the changes haven't taken effect
+Windows Phone devices do not allow security policies set via MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4. The more restrictive policy has already been applied to the device.
+
+Depending on the device platform, if you want to change the policy  to a less secure value you may need to reset security policies.
+For example, in Windows,  on the desktop swipe in from right to open the **Charms** bar and choose  **Settings** &gt; **Control Panel**.  Select the **User Accounts** applet.
+In the left hand navigation menu, there is a **Reset Security Policies** link at the bottom. Choose it and then choose the **Reset Policies** button.
+Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired and re-enrolled back into the service for you to be able to apply a less restrictive policy.
+
+
+<!--- ## Status codes for MDM managed Windows devices
 
 |Status code|Error message|What to do|
 |---------------|-----------------|--------------|
@@ -244,7 +371,7 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016331106|0x87D13AA3|5006:Passcode requires alpha characters|
 |-2016331107|0x87D13A9D|5005:Passcode requires number|
 |-2016331108|0x87D13A9C|5004:Passcode has ascending descending characters|
-|-2016331109|0x87D13A9B|5003:Passcode has repeating characters|
+|2016331109|0x87D13A9B|5003:Passcode has repeating characters|
 |-2016331110|0x87D13A9A|5002:Too few complex characters|
 |-2016331111|0x87D13A99|5001:Too few unique characters|
 |-2016331112|0x87D13A98|5000:Passcode too short|
@@ -268,7 +395,7 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016332110|0x87D136B2|4002:Duplicate UUID|
 |-2016332111|0x87D136B1|4001:Installation failure|
 |-2016332112|0x87D136B0|4000:Cannot parse profile|
-|-2016333111|0x87D132C9|3001:Inconsistent value comparison sense (internal error)|
+|2016333111|0x87D132C9|3001:Inconsistent value comparison sense (internal error)|
 |-2016333112|0x87D132C8|3000:Inconsistent restriction sense (internal error)|
 |-2016334108|0x87D12EE4|2004:Unsupported field value|
 |-2016334109|0x87D12EE3|2003:Bad data type in field|
@@ -292,7 +419,7 @@ If this information does not solve your problem, see [How to get support for Mic
 |Status code|Hexadecimal error code|Error message|
 |---------------|--------------------------|-----------------|
 |-2016344008|0x87D10838|(1404): Certificate access denied|
-|-2016344009|0x87D10837|(1403): Certificate not found|
+|2016344009|0x87D10837|(1403): Certificate not found|
 |-2016344010|0x87D10836|DCMO(1402): The Operation failed|
 |-2016344011|0x87D10835|DCMO(1401): User chose not to accept the operation when prompted|
 |-2016344012|0x87D10834|DCMO(1400): Client error|
@@ -301,7 +428,7 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016344110|0x87D107D2|DCMO(1202): Enable operation is performed successfully but the Device Capability is currently detached|
 |-2016344111|0xF3FB4D95|DCMO(1201): Enable operation is performed successfully and the Device Capability is currently attached|
 |-2016344112|0x87D107D0|DCMO(1200): Operation is performed successfully|
-|-2016345595|0x87D10205|Syncml(517): The response to an atomic command was too large to fit in a single message.|
+|2016345595|0x87D10205|Syncml(517): The response to an atomic command was too large to fit in a single message.|
 |-2016345596|0x87D10204|Syncml(516): Command was inside Atomic element and Atomic failed. This command was not rolled back successfully.|
 |-2016345598|0x87D10202|Syncml(514): The SyncML command was not completed successfully, since the operation was already cancelled before processing the command.|
 |-2016345599|0x87D10201|Syncml(513): The recipient does not support or refuses to support the specified version of the SyncML Synchronization Protocol used in the request SyncML Message.|
@@ -309,7 +436,7 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016345601|0x87D101FF|Syncml(511): A severe error occurred in the server while processing the request.|
 |-2016345602|0x87D101FE|Syncml(510): An error occurred while processing the request. The error is related to a failure in the recipient data store.|
 |-2016345603|0x87D101FD|Syncml(509): Reserved for future use.|
-|-2016345604|0x87D101FC|Syncml(508): An error occurred that necessitates a refresh of the current synchronization state of the client with the server.|
+|2016345604|0x87D101FC|Syncml(508): An error occurred that necessitates a refresh of the current synchronization state of the client with the server.|
 |-2016345605|0x87D101FB|Syncml(507): The error caused all SyncML commands within an Atomic element type to fail.|
 |-2016345606|0x87D101FA|Syncml(506): An application error occurred while processing the request.|
 |-2016345607|0x87D101F9|Syncml(505): The recipient does not support or refuses to support the specified version of SyncML DTD used in the request SyncML Message.|
@@ -318,7 +445,7 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016345610|0x87D101F6|Syncml(502): The recipient, while acting as a gateway or proxy, received an invalid response from the upstream recipient it accessed in attempting to fulfill the request.|
 |-2016345611|0x87D101F5|Syncml(501): The recipient does not support the command required to fulfill the request.|
 |-2016345612|0x87D101F4|Syncml(500): The recipient encountered an unexpected condition which prevented it from fulfilling the request|
-|-2016345684|0x87D101AC|Syncml(428): Move failed|
+|2016345684|0x87D101AC|Syncml(428): Move failed|
 |-2016345685|0x87D101AB|Syncml(427): Parent cannot be deleted since it contains children.|
 |-2016345686|0x87D101AA|Syncml(426): Partial item not accepted.|
 |-2016345687|0x87D101A9|Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.|
@@ -329,7 +456,7 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016345692|0x87D101A4|Syncml(420): The recipient has no more storage space for the remaining synchronization data.|
 |-2016345693|0x87D101A3|Syncml(419): The client request created a conflict which was resolved by the server command winning.|
 |-2016345694|0x87D101A2|Syncml(418): The requested Put or Add command failed because the target already exists.|
-|-2016345695|0x87D101A1|Syncml(417): The request failed at this time and the originator should retry the request later.|
+|2016345695|0x87D101A1|Syncml(417): The request failed at this time and the originator should retry the request later.|
 |-2016345696|0x87D101A0|Syncml(416): The request failed because the specified byte size in the request was too big.|
 |-2016345697|0x87D1019F|Syncml(415): Unsupported media type or format.|
 |-2016345698|0x87D1019E|Syncml(414): The requested command failed because the target URI is too long for what the recipient is able or willing to process.|
@@ -370,7 +497,8 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016345910|0x87D100CA|Accepted for processing. The request to either run a remote execution of an application or to alert a user or application was successfully performed.|
 |-2016345911|0x87D100C9|The requested item was added.|
 |-2016345912|0x87D100C8|The SyncML command completed successfully.|
-|-2016346011|0x87D10065|The specified SyncML command is being carried out, but has not yet completed.|
+|-2016346011|0x87D10065|The specified SyncML command is being carried out, but has not yet completed.| 
+--->
 
 ### Next steps
-If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune).

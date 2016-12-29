@@ -112,7 +112,7 @@
 ### [Configure Windows 10 edition upgrade settings](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
 ### [Configure certificates](/intune-azure/configure-devices/how-to-configure-certificates)
 #### [SCEP](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-#### [PFX](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+#### [PKCS](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
 
 ### [Configure Windows Information Protection settings](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
 ### [Configure iOS Education settings](/intune-azure/configure-devices/education-settings-for-ios)
@@ -130,7 +130,7 @@
 ### [Assign device profiles](/intune-azure/configure-devices/how-to-assign-device-profiles)
 ### [Monitor device profiles](/intune-azure/configure-devices/how-to-monitor-device-profiles)
 ### [Set up a telecom expense management service](/intune-azure/configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune)
-<!-- ## [Troubleshoot](/intune-azure/configure-devices/troubleshooting) -->
+## [Troubleshoot](/intune-azure/configure-devices/troubleshoot-device-profiles.md)
 
 # Set device compliance
 ## [What is device compliance?](/intune-azure/set-device-compliance/what-is-device-compliance)

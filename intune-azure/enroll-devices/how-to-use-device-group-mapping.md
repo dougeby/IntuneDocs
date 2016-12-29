@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/28/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use Microsoft Intune device group mapping to automatically add devices to groups based on categories that you define, in order to make it easier for you to manage those devices.
+Use Microsoft Intune device categories to automatically add devices to groups based on categories that you define, in order to make it easier for you to manage those devices.
 
 Device categories use the following workflow:
 1.	Create categories that users will choose from when they enroll their device
@@ -46,18 +46,15 @@ You can create any device categories you want, for example:
 - Manager
 
 ## How to configure device categories
+
 ### Step 1 - Create device categories in the Intune blade of the Azure portal
-1.	In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**
-
-2.	In the Intune blade of the Azure portal, choose **Enroll Devices**.
-
-3.	In the **Enrollment** blade, choose **Device Categories**.
-
-4.	On the **Device Categories** page, choose **Create** to add a new category.
-
-5.	In the next blade, enter a **Name** for the new category, and an optional **Description**.
-
-6.	When you are done, click **Create**. You’ll see the category you just created in the list of categories.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Enroll devices**.
+3. In the **Enrollment** blade, choose **Device Categories**.
+4. On the **Device Categories** page, choose **Create** to add a new category.
+5. In the next blade, enter a **Name** for the new category, and an optional **Description**.
+6. When you are done, click **Create**. You’ll see the category you just created in the list of categories.
 
 You'll use the device category name when you create Azure Active Directory security groups in step 2.
 
@@ -73,7 +70,7 @@ After you configure device groups, and users enroll their device, they are prese
 ### How to view the categories of devices you manage
 1.	In the Intune blade of the Azure portal, choose **Devices and Groups**.
 
-2.	Under **Manage**, click **MDM devices**.
+2.	Under **Manage**, click **All devices**.
 
 3.	In the list of devices, examine the **Device category** column.
 
