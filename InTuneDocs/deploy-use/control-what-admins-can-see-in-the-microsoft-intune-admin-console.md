@@ -6,7 +6,7 @@ description: Use this topic to help you filter the Intune admin console view to 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
