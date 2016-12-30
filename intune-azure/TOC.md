@@ -23,8 +23,8 @@
 #### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
 ### [Enroll devices using device enrollment manager](/intune-azure/enroll-devicesenroll-devices-using-device-enrollment-manager)
 ### Set up Windows device management
-### [Set up Windows phone and Windows 10 mobile management](/intune-azure/enroll-devices/set-up-windows-phone-management)
-### [Set up Windows device management](/intune-azure/enroll-devices/set-up-windows-device-management)
+#### [Set up Windows phone and Windows 10 mobile management](/intune-azure/enroll-devices/set-up-windows-phone-management)
+#### [Set up Windows device management](/intune-azure/enroll-devices/set-up-windows-device-management)
 ### [Create terms and conditions](/intune-azure/enroll-devices/create-terms-and-conditions)
 ### [Set enrollment restrictions](/intune-azure/enroll-devices/set-enrollment-restrictions)
 ### [Map device groups](/intune-azure/enroll-devices/how-to-use-device-group-mapping)
