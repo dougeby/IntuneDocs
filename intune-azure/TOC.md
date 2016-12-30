@@ -51,7 +51,7 @@
 
 # Manage apps
 ## [What is app management?](/intune-azure/manage-apps/what-is-app-management)
-## [What is app protection policy?](/intune-azure/manage-apps/what-is-app-protection-policy)
+## [What are app protection policies?](/intune-azure/manage-apps/what-is-app-protection-policy)
 <!--- ## [Get started](/intune-azure/manage-apps/get-started)
 ## [Plan and design](/intune-azure/manage-apps/plan-and-design) --->
 ## How to manage apps
@@ -134,7 +134,7 @@
 ### [Assign device profiles](/intune-azure/configure-devices/how-to-assign-device-profiles)
 ### [Monitor device profiles](/intune-azure/configure-devices/how-to-monitor-device-profiles)
 ### [Set up a telecom expense management service](/intune-azure/configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune)
-## [Troubleshoot](/intune-azure/configure-devices/troubleshoot-device-profiles.md)
+## [Troubleshoot](/intune-azure/configure-devices/troubleshoot-device-profiles)
 
 # Set device compliance
 ## [What is device compliance?](/intune-azure/set-device-compliance/what-is-device-compliance)
