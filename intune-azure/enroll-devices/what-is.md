@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/30/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,9 @@ ms.suite: ems
 # What is Microsoft Intune device enrollment in Intune Azure preview
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-You enroll devices, including Windows PCs, in Intune so that you can manage those devices. We refer to this capability in the Intune documentation as mobile device management (MDM). This topic describes different ways to enroll mobile devices in Intune management.
+This topic describes enrollment and lists the different ways to enroll mobile devices in Intune management.
+
+You enroll devices, including Windows PCs, in Intune so that you can manage those devices. We refer to this capability in the Intune documentation as mobile device management (MDM). When devices are enrolled as mobile devices (not as PCs), they are issued an MDM certificate, which the devices then use to communicate with the Intune service. 
 
 The way you enroll your devices depends on the device type, ownership, and the level of management you needed. "Bring your own device" (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs. Corporate-owned device (COD) enrollment enables management scenarios like remote wipe, shared devices, or user affinity for a device.
 
@@ -76,7 +78,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 "Bring your own device" users install the Company Portal app and enroll their device. This enables users to connect to the company network and join the domain or Azure Active Directory. For most platforms, you have to enable BYOD enrollment for many COD scenarios.
 
 ## Corporate-owned devices
-Corporate-owned devices (COD) can be managed by using the Intune console. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.
+Corporate-owned devices (COD) can be managed by using the Azure portal. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.
 
 ### DEM
 Device enrollment manager is a special user account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](enroll-devices-using-device-enrollment-manager.md). ([Go back to the table](#overview-of-device-enrollment-methods))
@@ -127,7 +129,10 @@ You can also use Microsoft Intune to manage Windows PCs with the Intune client s
 
 PCs that are managed with the Intune client software cannot be fully wiped, although selective wipe is available. PCs managed with the Intune software client cannot take advantage of many Intune management features such as conditional access, VPN and Wi-Fi settings, or deployment of certificates and email configurations. More information is coming soon.
 
-
 ## Supported device platforms and browsers
 
 See [Supported devices and browsers for Intune](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers)
+
+## Mobile device cleanup after MDM certificate expiration
+
+The MDM certificate is renewed automatically when mobile devices are communicating with the Intune service. If mobile devices (not PCs) are wiped, or they fail to communicate with the Intune service for some period of time, the MDM certificate will not get renewed. The device is removed from the Azure portal 180 days after the MDM certificate expires.
