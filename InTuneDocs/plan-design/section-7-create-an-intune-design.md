@@ -167,13 +167,13 @@ In addition, If SCEP certificates will be issued, you need to determine which se
 
 More information about configuring certificates in Intune:
 
--   [How to configure the certificate infrastructure for SCEP](/intune/deploy-use/Configure-certificate-infrastructure-for-scep.md).
+-   [How to configure the certificate infrastructure for SCEP](https://docs.microsoft.com/intune/deploy-use/configure-certificate-infrastructure-for-scep).
 
--   [How to configure the certificate infrastructure for PFX](/intune/deploy-use/Configure-certificate-infrastructure-for-pfx.md).
+-   [How to configure the certificate infrastructure for PFX](https://docs.microsoft.com/intune/deploy-use/configure-certificate-infrastructure-for-pfx).
 
--   [How to configure Intune certificate profiles](/intune/deploy-use/Configure-Intune-certificate-profiles.md).
+-   [How to configure Intune certificate profiles](https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles).
 
--   [How to configure resource access policies](/intune/deploy-use/enable-access-to-company-resources-with-microsoft-intune.md).
+-   [How to configure resource access policies](https://docs.microsoft.com/intune/deploy-use/enable-access-to-company-resources-with-microsoft-intune).
 
 ## Device Platform Considerations
 
