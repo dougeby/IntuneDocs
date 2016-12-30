@@ -48,7 +48,7 @@ If a design component does not exist in at least 1 test criteria that aligns to 
 
 -   **Integration components:** All integration components (Certificate Connector, Intune service to service connector for hosted Exchange, and Intune on-premises Exchange connector) should be installed and configured if needed.
 
-Design changes could be needed to accommodate unforeseen difficulties. In addition, all design changes should be fully documented with the reason for each change. Here's an example to illustrate what a changes could be:
+Design changes could be needed to accommodate unforeseen difficulties. In addition, all design changes should be fully documented with the reason for each change. Here's an example to illustrate what a change could be:
 
 -   You might realize that you don’t meet the requirements of Network Device Enrollment Service (NDES), and you also learn that the VPN and Wi-Fi profiles can be configured with a root CA satisfying the same requirements without a NDES implementation.
 
