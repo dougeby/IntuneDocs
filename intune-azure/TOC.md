@@ -47,7 +47,7 @@
 
 # Manage apps
 ## [What is app management?](/intune-azure/manage-apps/what-is-app-management)
-## [What is app protection policy?](/intune-azure/manage-apps/what-is-app-protection-policy)
+## [What are app protection policies?](/intune-azure/manage-apps/what-is-app-protection-policy)
 <!--- ## [Get started](/intune-azure/manage-apps/get-started)
 ## [Plan and design](/intune-azure/manage-apps/plan-and-design) --->
 ## How to manage apps
