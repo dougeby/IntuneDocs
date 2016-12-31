@@ -30,7 +30,7 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 
-Step 1 - Specify the software setup file
+## Step 1 - Specify the software setup file
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
