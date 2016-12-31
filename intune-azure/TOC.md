@@ -56,7 +56,14 @@
 ## [Plan and design](/intune-azure/manage-apps/plan-and-design) --->
 ## How to manage apps
 ### [Add apps](/intune-azure/manage-apps/add-apps)
-### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
+#### [Android line-of-business apps](/intune-azure/manage-apps/android-lob-app)
+#### [Android store apps](/intune-azure/manage-apps/android-store-app)
+#### [iOS line-of-business apps](/intune-azure/manage-apps/ios-lob-app)
+#### [iOS store apps](/intune-azure/manage-apps/ios-store-app)
+#### [Web apps](/intune-azure/manage-apps/web-app)
+#### [Windows Phone 8.1 store apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
+#### [Windows store apps](/intune-azure/manage-apps/windows-store-app)
+### [Assign apps](/intune-azure/manage-apps/deploy-apps)
 ### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
 ### [Use app configuration policies](/intune-azure/manage-apps/app-configuration-policies)
 <!--- ### [Selectively wipe apps](/intune-azure/manage-apps/app-selective-wipe)--->
