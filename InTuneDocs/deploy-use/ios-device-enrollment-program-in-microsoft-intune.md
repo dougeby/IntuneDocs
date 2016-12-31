@@ -4,7 +4,8 @@
 title: Apple DEP management for iOS devices | Microsoft Docs
 description: Deploy an enrollment profile that enrolls iOS devices bought through the iOS Device Enrollment Program (DEP) “over the air” to manage Apple devices.
 keywords:
-author: staciebarkerms.author: stabar
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 12/31/2016
 ms.topic: article
@@ -117,7 +118,7 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP token
 
 ## Changes to Intune group assignments
 
-Starting in late 2016, device group management is moving to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the **Corporate Enrollment Profile** options. Because this change will roll out over a series of months, you might not see the change right away. After moving to the new portal, dynamic device group assignments can be defined based on the Corporate Enrollment Profile names. This process ensures that devices that are assigned to a device group already will automatically enroll in the group with policy and apps deployed. [Learn more about Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+Starting in December 2016, device group management is moving to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the **Corporate Enrollment Profile** options. Because this change will roll out over a series of months, you might not see the change right away. After moving to the new portal, dynamic device group assignments can be defined based on the Corporate Enrollment Profile names. This process ensures that devices that are assigned to a device group already will automatically enroll in the group with policy and apps deployed. [Learn more about Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### See also
 [Prerequisites for enrolling devices](prerequisites-for-enrollment.md)
