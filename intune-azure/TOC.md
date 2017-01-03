@@ -21,9 +21,9 @@
 #### [Enroll iOS devices using direct enrollment](/intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment)
 #### [Add Apple Configurator serial numbers](/intune-azure/enroll-devices/add-apple-configurator-serial-numbers)
 #### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
-### [Enroll devices using device enrollment manager](/intune-azure/enroll-devicesenroll-devices-using-device-enrollment-manager)
+### [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager)
 ### Set up Windows device management
-#### [Set up Windows phone and Windows 10 mobile management](/intune-azure/enroll-devices/set-up-windows-phone-management)
+#### [Set up Windows Phone and Windows 10 mobile management](/intune-azure/enroll-devices/set-up-windows-phone-management)
 #### [Set up Windows device management](/intune-azure/enroll-devices/set-up-windows-device-management)
 ### [Create terms and conditions](/intune-azure/enroll-devices/create-terms-and-conditions)
 ### [Set enrollment restrictions](/intune-azure/enroll-devices/set-enrollment-restrictions)
