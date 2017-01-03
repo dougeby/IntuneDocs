@@ -30,24 +30,28 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune supports the enrollment of corporate-owned iOS devices using [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) running on a Mac computer. This process resets the device to factory settings and prepares it to run Setup Assistant, installing the company's policies for the device’s new user.  
+Intune supports the enrollment of corporate-owned iOS devices using [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) running on a Mac computer. This process resets the device to factory settings, prepares it to run Setup Assistant, and installs the company's policies for the device’s new user.  
 
 Using Apple Configurator, you can reset an iOS device to factory settings and prepare it to be set up for the device’s new user. This method requires you to connect the iOS device to a Mac computer via USB to set up corporate enrollment, and it assumes you are using Apple Configurator 2.0. Most scenarios require that the policy applied to the iOS device include user affinity to enable the Intune Company Portal app.
+
+Other methods of enrolling iOS devices are described in [Choose how to enroll iOS devices in Intune](choose-ios-enrollment-method).
 
 ## Prerequisites
 
 Complete the following prerequisites before setting up iOS device enrollment:
 
-- Enable connections (more information coming soon)
+- [Configure domains](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Set the MDM Authority](set-mdm-authority.md)
-- Create groups (more information coming soon)
+- [Create groups](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [Configure the Company Portal](/intune-azure/manage-apps/company-portal-app.md)
-- Assign user licenses (more information coming soon)
+- Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](get-an-apple-mdm-push-certificate.md)
-- Physical access to iOS devices—devices must be reset to factory settings without password protection
-- Device serial numbers—see [How to get an iOS serial number](https://support.apple.com/en-us/HT204308)
-- USB connection cables
-- A Mac computer with Apple Configurator 2.0
+- Ensure that you have physical access to iOS devices
+- Have the device serial numbers (see [How to get an iOS serial number](https://support.apple.com//HT204308))
+- Have USB connection cables on hand
+- Ensure that you have a Mac PC with [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) installed
+- [Add Apple Configurator serial numbers](add-apple-configurator-serial-numbers.md)
+
 
 ## Create an Apple Configurator profile for devices
 
