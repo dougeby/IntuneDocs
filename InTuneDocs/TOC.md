@@ -179,6 +179,7 @@
 #### [LOB apps on devices not managed by Intune](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Use the SDK when you write an app](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
+### [MAM and app protection FAQ](deploy-use/mam-faq.md)
 
 ## Retire apps and data
 ### [Use full or selective wipe](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
