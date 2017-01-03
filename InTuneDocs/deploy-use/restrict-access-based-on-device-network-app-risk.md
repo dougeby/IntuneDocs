@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Restrict access using device threat protection | Microsoft Docs
-description: Restrict access to company resources based on device, network and application risk.
+title: Protect access using device threat protection | Microsoft Docs
+description: Protect access to company resources based on device, network and application risk.
 keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Restrict access to company resource based on device, network, and application risk
+# Protect access to company resource based on device, network, and application risk
 You can control mobile device access to corporate resources based on risk assessment conducted by Lookout, a device threat protection solution integrated with Microsoft Intune. Risk is assessed based on telemetry collected from devices by the Lookout service including:
 - Operating system vulnerabilities
 - Malicious apps installed
@@ -78,7 +78,7 @@ When malicious apps such as malware are detected on devices, you can block devic
 ![diagram showing conditional access policy granting access when device is determined to be compliant after remediation](../media/mtp/malicious-apps-unblocked.png)
 
 ### Control access based on threat to network
-Detect threats to your network such as Man-in-the-middle attacks and restrict access to WiFi networks based on the device risk.
+Detect threats to your network such as Man-in-the-middle attacks and protect access to WiFi networks based on the device risk.
 
 **Block network access through WiFi:**
 ![diagram showing conditional access blocking WiFi access based on network threats](../media/mtp/network-wifi-blocked.png)
