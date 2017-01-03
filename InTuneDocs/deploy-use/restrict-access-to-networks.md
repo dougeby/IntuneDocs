@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Restrict access to networks with Cisco ISE | Microsoft Docs
+title: Protect access to networks with Cisco ISE | Microsoft Docs
 description: Use Cisco ISE with Intune so that devices are Intune enrolled and policy compliant before they access Wi-Fi and VPN that are controlled by Cisco ISE.
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
