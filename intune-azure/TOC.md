@@ -20,7 +20,11 @@
 #### [Enroll iOS devices using Setup Assistant](/intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant)
 #### [Enroll iOS devices using direct enrollment](/intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment)
 #### [Add Apple Configurator serial numbers](/intune-azure/enroll-devices/add-apple-configurator-serial-numbers)
-### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
+#### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
+### [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager)
+### Set up Windows device management
+#### [Set up Windows Phone and Windows 10 mobile management](/intune-azure/enroll-devices/set-up-windows-phone-management)
+#### [Set up Windows device management](/intune-azure/enroll-devices/set-up-windows-device-management)
 ### [Create terms and conditions](/intune-azure/enroll-devices/create-terms-and-conditions)
 ### [Set enrollment restrictions](/intune-azure/enroll-devices/set-enrollment-restrictions)
 ### [Map device groups](/intune-azure/enroll-devices/how-to-use-device-group-mapping)
@@ -47,12 +51,19 @@
 
 # Manage apps
 ## [What is app management?](/intune-azure/manage-apps/what-is-app-management)
-## [What is app protection policy?](/intune-azure/manage-apps/what-is-app-protection-policy)
+## [What are app protection policies?](/intune-azure/manage-apps/what-is-app-protection-policy)
 <!--- ## [Get started](/intune-azure/manage-apps/get-started)
 ## [Plan and design](/intune-azure/manage-apps/plan-and-design) --->
 ## How to manage apps
 ### [Add apps](/intune-azure/manage-apps/add-apps)
-### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
+#### [Android line-of-business apps](/intune-azure/manage-apps/android-lob-app)
+#### [Android store apps](/intune-azure/manage-apps/android-store-app)
+#### [iOS line-of-business apps](/intune-azure/manage-apps/ios-lob-app)
+#### [iOS store apps](/intune-azure/manage-apps/ios-store-app)
+#### [Web apps](/intune-azure/manage-apps/web-app)
+#### [Windows Phone 8.1 store apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
+#### [Windows store apps](/intune-azure/manage-apps/windows-store-app)
+### [Assign apps](/intune-azure/manage-apps/deploy-apps)
 ### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
 ### [Use app configuration policies](/intune-azure/manage-apps/app-configuration-policies)
 <!--- ### [Selectively wipe apps](/intune-azure/manage-apps/app-selective-wipe)--->
@@ -112,7 +123,7 @@
 ### [Configure Windows 10 edition upgrade settings](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
 ### [Configure certificates](/intune-azure/configure-devices/how-to-configure-certificates)
 #### [SCEP](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-#### [PFX](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+#### [PKCS](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
 
 ### [Configure Windows Information Protection settings](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
 ### [Configure iOS Education settings](/intune-azure/configure-devices/education-settings-for-ios)
@@ -130,7 +141,7 @@
 ### [Assign device profiles](/intune-azure/configure-devices/how-to-assign-device-profiles)
 ### [Monitor device profiles](/intune-azure/configure-devices/how-to-monitor-device-profiles)
 ### [Set up a telecom expense management service](/intune-azure/configure-devices/set-up-telecom-expense-management-service-in-microsoft-intune)
-<!-- ## [Troubleshoot](/intune-azure/configure-devices/troubleshooting) -->
+## [Troubleshoot](/intune-azure/configure-devices/troubleshoot-device-profiles)
 
 # Set device compliance
 ## [What is device compliance?](/intune-azure/set-device-compliance/what-is-device-compliance)

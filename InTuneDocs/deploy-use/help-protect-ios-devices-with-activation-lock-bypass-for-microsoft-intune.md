@@ -6,7 +6,7 @@ description: Microsoft Intune can help you manage iOS Activation Lock, a feature
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

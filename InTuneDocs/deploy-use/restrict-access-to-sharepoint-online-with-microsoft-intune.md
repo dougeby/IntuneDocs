@@ -1,11 +1,13 @@
 ---
 # required metadata
 
-title: Restrict access to SharePoint Online | Microsoft Docs
+title: Protect access to SharePoint Online | Microsoft Docs
 description: Protect and control access to company data on SharePoint Online by using conditional access.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
-ms.date: 11/14/2016
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,12 +26,12 @@ ms.suite: ems
 
 ---
 
-# Restrict access to SharePoint Online with Microsoft Intune
+# Protect access to SharePoint Online with Microsoft Intune
 Use [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] conditional access to control access to files that are located on SharePoint Online.
 Conditional access has two components:
 - A device compliance policy that the device must comply with in order to be considered compliant.
 - A conditional access policy where you specify the conditions that the device must meet in order to access the service.
-To learn more about how conditional access works, read the [Restrict access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) topic.
+To learn more about how conditional access works, read the [Protect access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) topic.
 
 You deploy the compliance and conditional access policies to users. Any device that a user uses to access the services is checked for compliance with the policies.
 
@@ -70,7 +72,7 @@ The following are supported:
 - Android 4.0 and later, Samsung Knox Standard 4.0 or later
 - Windows Phone 8.1 and later
 
-You can restrict access to SharePoint Online when **iOS** and **Android** devices access it from a browser. Access is only allowed from supported browsers on compliant devices:
+You can protect access to SharePoint Online when **iOS** and **Android** devices access it from a browser. Access is only allowed from supported browsers on compliant devices:
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser (iOS and Android 5.0 and later)
@@ -196,4 +198,4 @@ Select any mobile device group. Then, on the **Devices** tab, choose one of the 
 -   **Devices that are registered with AAD and compliant**. These devices can access SharePoint Online.
 
 ### See also
-[Restrict access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[Protect access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
