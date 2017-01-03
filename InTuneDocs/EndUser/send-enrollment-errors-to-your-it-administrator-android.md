@@ -6,7 +6,7 @@ description: Send enrollment errors to your admin
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,6 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
 
 # Send enrollment errors to your IT admin
 
