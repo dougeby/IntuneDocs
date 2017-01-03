@@ -21,9 +21,9 @@
 #### [Enroll iOS devices using direct enrollment](/intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment)
 #### [Add Apple Configurator serial numbers](/intune-azure/enroll-devices/add-apple-configurator-serial-numbers)
 #### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
-### [Enroll devices using device enrollment manager](/intune-azure/enroll-devicesenroll-devices-using-device-enrollment-manager)
+### [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager)
 ### Set up Windows device management
-#### [Set up Windows phone and Windows 10 mobile management](/intune-azure/enroll-devices/set-up-windows-phone-management)
+#### [Set up Windows Phone and Windows 10 mobile management](/intune-azure/enroll-devices/set-up-windows-phone-management)
 #### [Set up Windows device management](/intune-azure/enroll-devices/set-up-windows-device-management)
 ### [Create terms and conditions](/intune-azure/enroll-devices/create-terms-and-conditions)
 ### [Set enrollment restrictions](/intune-azure/enroll-devices/set-enrollment-restrictions)
@@ -56,7 +56,14 @@
 ## [Plan and design](/intune-azure/manage-apps/plan-and-design) --->
 ## How to manage apps
 ### [Add apps](/intune-azure/manage-apps/add-apps)
-### [Deploy apps](/intune-azure/manage-apps/deploy-apps)
+#### [Android line-of-business apps](/intune-azure/manage-apps/android-lob-app)
+#### [Android store apps](/intune-azure/manage-apps/android-store-app)
+#### [iOS line-of-business apps](/intune-azure/manage-apps/ios-lob-app)
+#### [iOS store apps](/intune-azure/manage-apps/ios-store-app)
+#### [Web apps](/intune-azure/manage-apps/web-app)
+#### [Windows Phone 8.1 store apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
+#### [Windows store apps](/intune-azure/manage-apps/windows-store-app)
+### [Assign apps](/intune-azure/manage-apps/deploy-apps)
 ### [Monitor apps](/intune-azure/manage-apps/monitor-apps)
 ### [Use app configuration policies](/intune-azure/manage-apps/app-configuration-policies)
 <!--- ### [Selectively wipe apps](/intune-azure/manage-apps/app-selective-wipe)--->
