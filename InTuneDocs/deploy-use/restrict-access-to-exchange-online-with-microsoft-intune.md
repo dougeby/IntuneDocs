@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Restrict email access to Exchange Online | Microsoft Docs
+title: Protect email access to Exchange Online | Microsoft Docs
 description: Protect and control access to company email on Exchange Online with conditional access.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,12 +27,12 @@ ms.suite: ems
 ---
 
 
-# Restrict email access to Exchange Online and new Exchange Online Dedicated with Intune
+# Protect email access to Exchange Online and new Exchange Online Dedicated with Intune
 
 > [!NOTE]
 >If you have an Exchange Online Dedicated environment and need to find out whether it's in the new or the legacy configuration, contact your account manager.
 
-To control email access to Exchange Online or to your new Exchange Online Dedicated environment, you can configure conditional access for Exchange Online by using Microsoft Intune. To learn more about how conditional access works, read the [Restrict access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+To control email access to Exchange Online or to your new Exchange Online Dedicated environment, you can configure conditional access for Exchange Online by using Microsoft Intune. To learn more about how conditional access works, read the [Protect access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
 
 **Before** you can configure conditional access, you must:
@@ -70,7 +70,7 @@ The following diagram illustrates the flow that is used by conditional access po
 ![Diagram that illustrates the decisions points that determine if a device is allowed access or is blocked](../media/ConditionalAccess8-1.png)
 
 ## Support for mobile devices
-You can restrict access to Exchange Online email from **Outlook** and other **apps that use modern authentication**. The following are supported:
+You can protect access to Exchange Online email from **Outlook** and other **apps that use modern authentication**. The following are supported:
 
 - Android 4.0 and later, Samsung Knox Standard 4.0 and later, and Android for Work
 - iOS 8.0 and later
@@ -83,7 +83,7 @@ You can restrict access to Exchange Online email from **Outlook** and other **ap
 -   The ADAL-based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication). To authenticate, a user is directed to a sign-in web page.
 -   This new sign-in method enables better security like **multi-factor authentication** and **certificate-based authentication**. For more detailed information, see [How modern authentication works](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). You can set up ADFS claim rules to block non-modern authentication protocols. Detailed instructions are provided in [Scenario 3: Block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
 
-You can restrict access to **Outlook Web Access (OWA)** on Exchange Online when a user accesses it from a browser on **iOS** and **Android** devices. Access is only allowed from supported browsers on compliant devices:
+You can protect access to **Outlook Web Access (OWA)** on Exchange Online when a user accesses it from a browser on **iOS** and **Android** devices. Access is only allowed from supported browsers on compliant devices:
 
 * Safari (iOS)
 * Chrome (Android)
@@ -94,7 +94,7 @@ You can restrict access to **Outlook Web Access (OWA)** on Exchange Online when 
 **The OWA app for iOS and Android can be modified not to use modern authentication, and it isn't supported. Access from the OWA app must be blocked through ADFS claim rules.**
 
 
-You can restrict access to Exchange email from the built-in **Exchange ActiveSync email client** on the following platforms:
+You can protect access to Exchange email from the built-in **Exchange ActiveSync email client** on the following platforms:
 
 - Android 4.0 and later, Samsung Knox Standard 4.0 and later
 
@@ -260,7 +260,7 @@ Only the groups that are targeted by the conditional access policy are evaluated
 
 -   If the user unenrolls their device, email is blocked after around six hours.
 
-To see some **example scenarios of how you would configure a conditional access policy to restrict device access**, see [Restrict email access example scenarios](restrict-email-access-example-scenarios.md).
+To see some **example scenarios of how you would configure a conditional access policy to protect device access**, see [Protect email access example scenarios](restrict-email-access-example-scenarios.md).
 
 ## Monitor the compliance and conditional access policies
 
@@ -270,6 +270,6 @@ On the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dashboard, choose 
 ![Screenshot of the Intune dashboard showing the number of devices that are blocked from accessing Exchange](../media/IntuneSA6BlockedDevices.PNG)
 
 ## Next steps
-- [Restrict access to SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+- [Protect access to SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-- [Restrict access to Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+- [Protect access to Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
