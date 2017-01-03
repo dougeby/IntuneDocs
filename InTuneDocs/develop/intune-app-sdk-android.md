@@ -263,26 +263,27 @@ String toString();
 > [!NOTE]
 > `MAMComponents.get(AppPolicy.class)` will always return a non-null App Policy, even if the device or app is not under an Intune management policy.
 
-### Example: Determining if PIN is required for the app
+### Example: Determine if PIN is required for the app
 
 If the app has its own PIN user experience, you might want to disable it if the IT administrator has configured the SDK to prompt for an app PIN. To determine if the IT administrator has deployed the app PIN policy to this app, for the current end user, call the following method:
 
 ```java
+
 MAMComponents.get(AppPolicy.class).getIsPinRequired();
 ```
 
-### Example: Determining the primary Intune user
+### Example: Determine the primary Intune user
 
 In addition to the APIs exposed in AppPolicy, the user principal name (**UPN**) is also exposed by the `getPrimaryUser()` API defined inside the **MAMUserInfo** interface. To get the UPN, call the following:
 
 ```java
 MAMUserInfo info = MAMComponents.get(MAMUserInfo.class);
-       if (info != null) return info.getPrimaryUser();
+if (info != null) return info.getPrimaryUser();
 ```
 
 The full definition of the MAMUserInfo interface is below:
 
-```
+```java
 /**
  * External facing user informations.
  *
@@ -297,7 +298,7 @@ public interface MAMUserInfo {
 }
 ```
 
-### Example: Determining if saving to device or cloud storage is permitted
+### Example: Determine if saving to device or cloud storage is permitted
 
 Many apps implement features that allow the end user to save files locally or to a cloud storage service. The Intune App SDK allows IT administrators to protect against data leakage by applying policy restrictions as they see fit in their organization.  One of the policies that IT can control is whether the end user can save to a "personal," unmanaged data store. This includes saving to a local location, SD card, or third-party backup services.
 
@@ -313,17 +314,18 @@ SaveLocation service, String username);
 ... where `service` is one of the following SaveLocations:
 
 
-* SaveLocation.ONEDRIVE_FOR_BUSINESS
-* SaveLocation.SHAREPOINT
-* SaveLocation.BOX
-* SaveLocation.DROPBOX
-* SaveLocation.GOOGLE_DRIVE
-* SaveLocation.LOCAL
-* SaveLocation.OTHER
+	* SaveLocation.ONEDRIVE_FOR_BUSINESS
+	* SaveLocation.SHAREPOINT
+	* SaveLocation.BOX
+	* SaveLocation.DROPBOX
+	* SaveLocation.GOOGLE_DRIVE
+	* SaveLocation.LOCAL
+	* SaveLocation.OTHER
 
 The previous method of determining whether a user’s policy allowed them to save data to various locations was `getIsSaveToPersonalAllowed()` within the same **AppPolicy** class. This function is now **deprecated** and should not be used, the following invocation is equivalent to `getIsSaveToPersonalAllowed()`:
 
-```
+```java
+
 MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(SaveLocation.LOCAL, userNameInQuestion);
 ```
 
@@ -331,9 +333,9 @@ MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(SaveLocation.LOCAL
 > Use `SaveLocation.OTHER` if the location in question is not listed in the **SaveLocations** enum.
 
 
-## Registering for notifications from the SDK  
+## Register for notifications from the SDK  
 
-###Overview
+### Overview
 The Intune App SDK allows your app to control the behavior of certain policies, such as selective wipe, when they are deployed by the IT administrator. When an IT administrator deploys such a policy, the Intune service sends down a notification to the SDK.
 
 Your app must register for notifications from the SDK by creating a **MAMNotificationReceiver** and  registering it with **MAMNotificationReceiverRegistry**. This is done by providing the receiver and the type of notification desired in  `App.onCreate`, as the example below illustrates:
@@ -399,13 +401,13 @@ The following notifications are sent to the app and some of them may require app
 
 ## Configure Azure Active Directory Authentication Libraries (ADAL)  
 
-First, please read the ADAL integration guidelines found in the [GitHub repo for ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-android).
+First, please read the ADAL integration guidelines found in the [ADAL repository on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-android).
 
 The SDK relies on [ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) for its [authentication](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/) and conditional launch scenarios, which require apps to be configured with [Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). The configuration values are communicated to the SDK via AndroidManifest metadata.
 
 To configure your app and enable proper authentication, add the following to the app node in AndroidManifest.xml. Some of these configurations are only required if your app uses ADAL for authentication in general; in that case, you will need the specific values your app uses to register itself with AAD. This is done to ensure that the end user does not get prompted for authentication twice, due to AAD recognizing two separate registration values: one from the app and one from the SDK.
 
-```
+```xml
 <meta-data
 	android:name="com.microsoft.intune.mam.aad.Authority"
 	android:value="https://AAD authority/" />
@@ -921,9 +923,7 @@ Normally, the AAD configuration for Intune MAM to use is given in Android Manife
 If your app requires dynamic configuration, you must use the `registerADALConnectionDetails` method in **MAMEnrollmentManager** before calling `enrollApplication`. For example:
 
 ```java
-enrollmentManager.registerADALConnectionDetails(userToEnroll,
-	new ADALConnectionDetails(aadAuthority, clientID,
-	nonBrokerRedirectURI, skipBroker))
+enrollmentManager.registerADALConnectionDetails(userToEnroll,new ADALConnectionDetails(aadAuthority, clientID, nonBrokerRedirectURI, skipBroker));
 
 ```
 
@@ -1057,7 +1057,7 @@ The Data Backup guide specifies a general algorithm for restoring your applicati
 
 3.	Avoid returning while consuming backup entities in the `while(data.readNextHeader())`* construct, as the entities we automatically write will be lost.
 
-*Please assume that `data` is the local variable name for the **BackupDataInput** that is passed to your app upon restore.
+* Where `data` is the local variable name for the **BackupDataInput** that is passed to your app upon restore.
 
 ## Application Configuration channel (preview)
 
@@ -1115,7 +1115,7 @@ You must reuse resources that already exist within your app. For example, you mu
 Below is the complete list of allowed style attributes, the UI elements they control, their XML attribute item names, and the type of resource expected for each.
 
 |Style attribute | UI elements affected | Attribute item name | Expected resource type |
-| -- | -- |
+| -- | -- | -- | -- |
 | Background color | PIN screen background color <Br>PIN box fill color | background_color | Color |
 | Foreground color | Foreground text color <br> PIN box border in default state <br> Characters (including obfuscated characters) in PIN box when user enters a PIN| foreground_color | Color|
 | Accent color | PIN box border when highlighted <br> Hyperlinks |accent_color | Color |
@@ -1157,7 +1157,7 @@ For large code bases that run without [ProGuard](http://proguard.sourceforge.net
 	MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(contentURI);
 	```
 
-* **Exported Services**: The AndroidManifest.xml file included in the Intune App SDK contains **MAMNotificationReceiverService**, which must be an exported service to allow the Company Portal to send notifications to an enlightened app. The service checks the caller to ensure that only the Company Portal is allowed to send notifications. 
+* **Exported Services**: The AndroidManifest.xml file included in the Intune App SDK contains **MAMNotificationReceiverService**, which must be an exported service to allow the Company Portal to send notifications to an enlightened app. The service checks the caller to ensure that only the Company Portal is allowed to send notifications.
 
 ## Recommended Android best practices
 
