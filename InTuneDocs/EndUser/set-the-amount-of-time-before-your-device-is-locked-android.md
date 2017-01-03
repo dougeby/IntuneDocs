@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set the amount of time before your device is locked | Microsoft Intune
+title: Set the amount of time before your device is locked | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -34,6 +34,6 @@ To keep the data on your Android device more secure, your IT administrator can s
 
 2.  Specify the password timeout value.
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Encrypt your Windows device | Microsoft Intune
+title: Encrypt your Windows device | Microsoft Docs
 description: Describes how to encrypt a Windows device
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

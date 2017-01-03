@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens if you reset your device | Microsoft Intune
+title: What happens if you reset your device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

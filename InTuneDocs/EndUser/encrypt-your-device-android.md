@@ -1,12 +1,13 @@
 ---
 # required metadata
 
-title: Encrypt your device | Microsoft Intune
+title: Encrypt your device | Microsoft Docs
 description: Describes how to encrypt an Android device
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/7/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -62,4 +63,4 @@ If you unenroll your phone, it will remain encrypted.
 
 	5. Open the Company Portal app, select your device, and tap **Check Compliance**.
 
-Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
+Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the [Microsoft Android team](mailto:wintunedroidfbk@microsoft.com).

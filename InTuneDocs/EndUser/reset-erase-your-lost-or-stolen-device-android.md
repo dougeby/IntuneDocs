@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Check compliance on your Android device | Microsoft Intune
+title: Check compliance on your Android device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,5 +35,3 @@ If your device hasn't checked in with Intune in a while, you might not be able t
 2. Tap **Check Compliance**.
 
 If you are unable to reset your lost or stolen device, ask your IT administrator to reset it for you. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-

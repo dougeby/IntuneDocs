@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens if you install the Company Portal app and enroll your Windows device in Intune? | Microsoft Intune
+title: What happens if you install the Company Portal app and enroll your Windows device in Intune? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

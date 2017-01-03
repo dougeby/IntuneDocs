@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a work profile and enroll your device in Intune | Microsoft Intune
+title: Create a work profile and enroll your device in Intune | Microsoft Docs
 description: Describes how to encrypt an Android device
 keywords:
 author: barlanmsftms.author: barlan
@@ -86,6 +86,6 @@ To create a work profile:
 
 	![Play Store for Work apps page](./media/andr-afw-tap-work-play-store-icon.png)
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 

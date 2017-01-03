@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: You need to resolve a threat that Lookout for Work found on your iOS device | Microsoft Intune
+title: You need to resolve a threat that Lookout for Work found on your iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -51,6 +51,6 @@ If you see something like this, tap the app name shown at the top of your screen
 
 After you uninstall the app, you regain access to your email and other company or school data right away. If you ignore the request to uninstall the app, you will lose access to your company email and data until you uninstall the app.
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Reset your device from the Company Portal website | Microsoft Intune
+title: Reset your device from the Company Portal website | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -44,6 +44,6 @@ To reset your device:
 
 Your device has now been reset.
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 
