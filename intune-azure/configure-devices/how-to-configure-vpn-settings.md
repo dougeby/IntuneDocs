@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,7 +58,7 @@ You can create VPN profiles using the following connection types:
 > [!IMPORTANT]
 > Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [What is app management in Microsoft Intune?](/intune-azure/manage-apps/what-is-app-management) topic to help you deploy the app by using Intune.  
 
- Learn how to  create custom VPN profiles by using URI settings in [Create custom VPN profiles](create-custom-vpn-profiles.md).     
+Learn how to  create custom VPN profiles by using URI settings in [Create custom VPN profiles](create-custom-vpn-profiles.md).     
 
 ## Create a device profile containing VPN settings
 
@@ -95,7 +95,7 @@ VPN profiles can use a number of different connection types and protocols from d
 
 ### Certificates
 
-When you create the VPN profile, you choose a SCEP or PFX certificate profile that you previously created in Intune. This is known as the identity certificate. It's used to authenticate against a trusted certificate profile (or *root certificate*) that you created to establish that the user’s device is allowed to connect. The trusted certificate is deployed to the computer that authenticates the VPN connection, typically, the VPN server.
+When you create the VPN profile, you choose a SCEP or PKCS certificate profile that you previously created in Intune. This is known as the identity certificate. It's used to authenticate against a trusted certificate profile (or *root certificate*) that you created to establish that the user’s device is allowed to connect. The trusted certificate is deployed to the computer that authenticates the VPN connection, typically, the VPN server.
 
 For more information about how to create and use certificate profiles in Intune, see [How to configure certificates with Microsoft Intune](how-to-configure-certificates.md).
 

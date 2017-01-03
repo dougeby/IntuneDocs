@@ -6,7 +6,7 @@ description: "Intune Azure preview: Use this topic to learn the basics about app
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 12/30/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,9 +30,26 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use the Microsoft Intune **Mobile Apps** workload to manage settings and features on all of the devices you manage.
 
-When you open this workload, you'll see the following options:
+As an IT admin, you'll most likely be tasked with making sure that your end users have access to the apps they need to do their work. This can be a challenge, as there are a wide range of device platforms and app types, you might need to manage apps on company devices as well as users own devices, and you need to do all of this, while ensuring you network, and your data remain secure.
+Microsoft Intune provides a wide range of capabilities to help you stay on top of app management like:
+
+
+
+- Adding and assigning apps
+- Configuring apps
+- Making corporate data in apps more secure
+- Removing corporate data from apps
+- Keeping apps up-to-date
+- Reporting where apps are installed, and how they are being used
+
+You'll find most things app-related in the **Mobile Apps** workload which you can access as follows:
+
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Manage apps**.
+
+	![The Mobile Apps workload](./media/apps-workload.png)
 
 ### Manage
 - **Apps** - This is where you'll create, assign, and monitor most of your apps. For details, see:

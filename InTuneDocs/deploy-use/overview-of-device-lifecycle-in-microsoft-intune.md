@@ -6,7 +6,7 @@ description: Learn how Intune helps you manage devices through their lifecycleâ€
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
