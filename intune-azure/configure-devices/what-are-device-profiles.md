@@ -6,7 +6,7 @@ description: "Intune Azure preview: Learn about Intune device profiles and how t
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 01/03/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ When you open this workload, you'll see the following options:
 
 - **Overview** - This page gives you status and reports that help you monitor device configurations that you have assigned to users and devices.
 - **Manage Profiles** - This section is where you'll go to create device configuration profiles. You can find a list below of all the profile types you can create.
-- **Setup Certificate Authority** - This workflow walks you though the steps required to configure certificates. You'll need to do this if you want to work with Intune certificate profiles. For more information, see []()
+- **Setup Certificate Authority** - This workflow walks you though the steps required to configure certificates. You'll need to do this if you want to work with Intune certificate profiles.
 
 ## Getting started
 
