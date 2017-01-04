@@ -30,7 +30,9 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use these steps to add serial numbers to Intune when you are enrolling corporate-owned iOS devices using Apple Configurator running on a Mac computer. This process resets the device to factory settings and prepares it to run Setup Assistant, installing the company's policies for the device’s new user. For more details about using enrolling iOS devices by using Apple Configurator, see [Enroll iOS devices with Apple Configurator](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md).
+Use these steps to add serial numbers to Intune when you want to enroll corporate-owned iOS devices by using Apple Configurator with Setup Assistant. You must add the serial numbers before you go on to the next step: [Enroll iOS devices with Apple Configurator and Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md).
+
+Other methods of enrolling iOS devices are described in [Choose how to enroll iOS devices in Intune](choose-ios-enrollment-method.md).
 
 ## Prerequisites
 
@@ -40,8 +42,8 @@ You must [enroll iOS devices with Apple Configurator by using Setup Assistant](e
 
 1. Create a two-column, comma-separated value (.csv) list without a header. Add the IMEI identifier in the left column, and the details in the right column. The current maximum for the list is 500 rows. In a text editor, the .csv list looks something like this:
 
-	01 234567 890123,device details</br>
-	02 234567 890123,device details
+	F7TLWCLBX196,device details</br>
+	DLXQPCWVGHMJ,device details
 
 2. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
 
@@ -57,7 +59,7 @@ You must [enroll iOS devices with Apple Configurator by using Setup Assistant](e
 
 ## Assign a profile to specific serial numbers
 
-You can assign profiles in more than one place. You can use the steps below, or you can assign profiles from the Apple Configurator Enrollment Profiles blade (see [Enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md).  
+Intune lets you assign profiles from two different places in the Azure portal. You can use the steps below, or you can assign profiles from the Apple Configurator Enrollment Profiles blade, which is where you create the profile (see [Enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). You can use the steps below to assign the profile only if you have already created the profile.
 
 1. On the Intune blade, choose **Enroll devices**, and then choose **Apple Enrollment**.
 
