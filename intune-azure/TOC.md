@@ -10,7 +10,7 @@
 
 # Enroll devices
 ## [What is device enrollment?](/intune-azure/enroll-devices/what-is)
-## Get started]
+## Get started
 ### [Set the MDM authority](/intune-azure/enroll-devices/set-mdm-authority)
 ## Plan and design
 ### [Get an Apple MDM push certificate](/intune-azure/enroll-devices/get-an-apple-mdm-push-certificate)
