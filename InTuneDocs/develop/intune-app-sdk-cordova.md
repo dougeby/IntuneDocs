@@ -20,7 +20,7 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: karthikaraman
+ms.reviewer: oydang
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:

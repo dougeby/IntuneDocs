@@ -1,11 +1,13 @@
 ---
 # required metadata
 
-title: Restrict access to Dynamics CRM Online | Microsoft Docs
+title: Protect access to Dynamics CRM Online | Microsoft Docs
 description: Protect and control access to Dynamics CRM online with  conditional access.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
-ms.date: 10/25/2016
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,12 +26,12 @@ ms.suite: ems
 
 ---
 
-# Restrict access to Dynamics CRM Online with Intune
+# Protect access to Dynamics CRM Online with Intune
 You can control access to Microsoft Dynamics CRM Online from iOS and Android devices by using Microsoft Intune conditional access.  Intune conditional access has two components:
 * A [device compliance policy](introduction-to-device-compliance-policies-in-microsoft-intune.md) that the device must comply with in order to be considered compliant.
 * A [conditional access policy](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) where you specify the conditions that the device must meet in order to access the service.
 
-To learn more about how conditional access works, read the [restrict access to email, 0365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+To learn more about how conditional access works, read the [protect access to email, 0365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
 > [!IMPORTANT]
 > To deploy conditional access, you must have subscriptions for Intune and Azure Active Directory Premium, and users must be licensed for both products. The **Enterprise Mobility + Security (EMS) subscription** includes both Intune and Azure Active Directory Premium subscriptions. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). If you don't have the EMS subscription, you can get a subscription for Azure Active Directory Premium. See the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
@@ -96,9 +98,9 @@ Choose any mobile device group and then, on the **Devices** tab, choose one of t
 * **Devices that are registered with AAD and compliant**. These devices can access Dynamics CRM.
 
 ##  Next steps
-* [Restrict access to Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [Protect access to Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [Restrict access to Exchange on-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [Restrict access to SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [Protect access to Exchange on-premises](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [Protect access to SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [Restrict access to Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [Protect access to Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)

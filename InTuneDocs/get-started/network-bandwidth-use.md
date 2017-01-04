@@ -7,7 +7,7 @@ keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -111,7 +111,9 @@ The following table lists the ports and services that the Intune client accesses
 
 |**Domain**|**Ports**|**IP address**|
 |------|----|---|
-|manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>m.manage.microsoft.com<br>p.manage.microsoft.com<br>portal.manage.microsoft.com<br>r.manage.microsoft.com|80 and 443|134.170.168.254<br>134.170.51.126
+|manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>p.manage.microsoft.com<br>r.manage.microsoft.com|80 and 443|134.170.168.254<br>134.170.51.126
+|m.manage.microsoft.com|80 and 443| 13.91.59.243<br>40.68.30.140
+|portal.manage.microsoft.com|80 and 443|40.121.50.69<br>52.169.30.159
 |account.manage.microsoft.com|80 and 443|157.56.13.59
 |fef.msua01.manage.microsoft.com|80 and 443|138.91.243.97
 |fef.msua02.manage.microsoft.com|80 and 443|23.96.112.46
@@ -228,4 +230,4 @@ The following table lists the ports and services that the Intune client accesses
 
 >[!div class="step-by-step"]
 
->[&larr; **Prerequisites**](supported-mobile-devices-and-computers.md)     [**Networking** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  
+>[&larr; **Prerequisites**](what-to-know-before-you-start-microsoft-intune.md)     [**Subscription** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  

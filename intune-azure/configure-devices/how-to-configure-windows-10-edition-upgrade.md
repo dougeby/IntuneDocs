@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to configure Windows 10 edition upgrades with Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Configure Windows 10 edition upgrades with Intune | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to use Intune to upgrade Windows 10 devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure Windows 10 edition upgrades with Microsoft Intune
+# How to configure Windows 10 edition upgrades with Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -51,8 +51,10 @@ Before you begin to upgrade devices to the latest version, you will need one of 
 
 ## Create a device profile containing device restriction settings
 
-1. In the Azure portal, select the **Device Configurations** workload.
-2. On the **Device configuration** blade, select **Manage** > **Profiles**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the edition upgrade profile.
 5. From the **Platform** drop-down list, choose **Windows 10 and later**.
@@ -65,4 +67,5 @@ Before you begin to upgrade devices to the latest version, you will need one of 
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
 

@@ -6,7 +6,7 @@ description: Error and status codes in this topic to help you troubleshoot resou
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

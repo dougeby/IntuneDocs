@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to create Microsoft Intune device configuration profiles| Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Learn how to create Intune device profiles."
+title: Create Intune device configuration profiles| Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Learn how to create Intune device configuration profiles."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,12 +26,15 @@ ms.suite: ems
 
 ---
 
-# How to create Microsoft Intune device configuration profiles
+# How to create device configuration profiles in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 
-1. In the **Device Configuration** workload, choose **Profiles**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 2. On the blade showing the list of profiles, choose **Create Profile**.
 3. On the **Create Profile** blade, specify the following:
 	- **Name** - Enter a descriptive name for the new profile.
@@ -50,7 +53,9 @@ ms.suite: ems
 		-  [Custom settings](/intune-azure/configure-devices/how-to-configure-custom-settings)
 4. Once you are done configuring settings, on the **Create Profile** blade, choose **Create**.
 
-The new profile is created on the list of profiles blade.
+The profile will be created and appears on the profiles list blade.
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
 
+
+### Next steps
 For information about how to assign device profiles, see [How to assign device profiles with Microsoft Intune](/intune-azure/configure-devices/how-to-assign-device-profiles).
-

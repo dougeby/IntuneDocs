@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune custom per-app VPN profile for Android using Pulse Secure | Intune Azure preview | Microsoft Docs
+title: Per-app VPN profile for Android - Pulse Secure | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to create a per-app VPN profile for Android devices managed by Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,9 +26,11 @@ ms.suite: ems
 
 ---
 
-# Use an Intune custom profile to create a per-app VPN profile for Android devices
+# Use an Intune custom profile to create a per-app VPN profile for Android devices in Intune Azure preview
 
-You can create a per-app VPN profile for Android 5.0 and later devices that are managed by Intune. First, create a VPN profile that uses the Pulse Secure connection type. Then, create a custom configuration policy that associates the VPN profile with specific apps. 
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+You can create a per-app VPN profile for Android 5.0 and later devices that are managed by Intune. First, create a VPN profile that uses the Pulse Secure connection type. Then, create a custom configuration policy that associates the VPN profile with specific apps.
 
 After you deploy the policy to your Android device or user groups, users should start the PulseSecure VPN. PulseSecure will then allow traffic only from the specified apps to use the open VPN connection.
 
@@ -39,7 +41,11 @@ After you deploy the policy to your Android device or user groups, users should 
 
 ## Step 1: Create a VPN profile
 
-1. In the **Device Configuration** workload, choose **Manage** > **Profiles**.
+
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 2. On the list of profiles blade, choose **Create Profile**.
 3. On the **Create Profile** blade, enter a **Name** and optional **Description** for the VPN profile.
 4. From the **Platform** drop-down list, choose **Android**.
@@ -50,8 +56,10 @@ Take note of the VPN profile name to use in the next step. For example, **MyAppV
 
 ## Step 2: Create a custom configuration policy
 
-1. In the Azure Portal, select the **Device Configurations** workload.
-2. On the **Device configuration** blade, select **Manage** > **Profiles**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, click **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the custom profile.
 5. From the **Platform** drop-down list, choose **Android**.

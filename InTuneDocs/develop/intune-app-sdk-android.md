@@ -2,12 +2,12 @@
 # required metadata
 
 title: Microsoft Intune App SDK for Android developer guide | Microsoft Docs
-description:
+description: The Microsoft Intune App SDK for Android lets you incorporate Intune mobile app management (MAM) into your Android app.
 keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 12/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,7 +34,7 @@ ms.suite: ems
 
 The Microsoft Intune App SDK for Android lets you incorporate Intune mobile app management (MAM) into your Android app. A MAM-enabled application is one that's integrated with the Intune App SDK. It lets IT admins deploy policies to your mobile app when Intune actively manages the app.
 
-# What's in the SDK
+## What's in the SDK
 
 The Intune App SDK for Android is a standard Android library with no external dependencies. The SDK consists of:  
 
@@ -52,16 +52,16 @@ The Intune App SDK for Android is a standard Android library with no external de
 
 * **THIRDPARTYNOTICES.TXT**:  An attribution notice that acknowledges third-party and/or OSS code that will be compiled into your app.
 
-# Requirements
+## Requirements
 
 The Intune App SDK is a compiled Android project. As a result, it's largely unaffected by the version of Android that the app uses for its minimum or target API versions. The SDK supports Android API 14 (Android 4.0+) to Android API 24.
 
 The Intune App SDK for Android relies on the presence of the [Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) app on the device for enabling MAM policies. For MAM without device enrollment, the user is *not* required to enroll the device by using the Company Portal app.
 
 
-# How the Intune App SDK works
+## How the Intune App SDK works
 
-##Entry points
+###Entry points
 
 The Intune App SDK requires changes to an app's source code to enable Intune app management policies. This is done through the replacement of the Android base classes with equivalent Intune base classes, whose names have the prefix `MAM`. The SDK classes live between the Android base class and the app's own derived version of that class. Using an activity as an example, you end up with an inheritance hierarchy that looks like: `Activity` > `MAMActivity` > `AppSpecificActivity`.
 
@@ -74,7 +74,7 @@ When an Android [entry point](https://developer.android.com/guide/components/fun
 For example, when deriving from `MAMActivity`, instead of overriding `onCreate` and calling `super.onCreate`, `Activity` must override `onMAMCreate` and call `super.onMAMCreate`. This lets Intune restrict `Activity` launch (among others) in certain cases.
 
 
-##SDK permissions
+###SDK permissions
 
 The Intune App SDK requires three [Android system permissions](https://developer.android.com/guide/topics/security/permissions.html) on apps that integrate it:
 
@@ -87,7 +87,7 @@ The Intune App SDK requires three [Android system permissions](https://developer
 The Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)) requires these permissions to perform brokered authentication. If these permissions are not granted to the app or are revoked by the user, authentication flows that require the broker (the Company Portal app) will be disabled.
 
 
-##Company Portal app
+###Company Portal app
 
 Why is the Company Portal app required? When the Company Portal app is installed onto the device and has retrieved an application restriction policy for the user from the Intune service, the SDK entry points are initialized asynchronously. Initialization is required only when Android initially creates the process. During initialization, a connection is established with the Company Portal app, and the policy is retrieved from the app.  
 
@@ -95,11 +95,11 @@ Why is the Company Portal app required? When the Company Portal app is installed
 > When the Company Portal app is not on the device, the behavior of the Intune-enabled app will not be altered and will behave as a normal app.
 
 
-# How to integrate with the Intune App SDK
+## How to integrate with the Intune App SDK
 
 As stated earlier, the SDK requires changes to the app's source code to enable app management policies. Here are the steps necessary to enable MAM in your  app.
 
-## Replace classes, methods, and activities with their MAM equivalent (required)
+### Replace classes, methods, and activities with their MAM equivalent (required)
 
 Android base classes must be replaced with their respective MAM equivalents. To do so, find all instances of the classes listed in the following table and replace them with the Intune App SDK equivalent.
 
@@ -152,7 +152,7 @@ Android base classes must be replaced with their respective MAM equivalents. To 
 >
 >For example, when deriving from `MAMActivity`, instead of overriding `onCreate` and calling `super.onCreate`, `Activity` must override `onMAMCreate` and call `super.onMAMCreate`. This lets Intune restrict `Activity` launch (among others) in certain cases.
 
-### PendingIntent classes and renamed methods
+#### PendingIntent classes and renamed methods
 
 After you derive from one of the MAM entry points, it's safe to use `Context` as you would normally--for example, starting `Activity` classes and using `PackageManager`.  
 
@@ -160,7 +160,7 @@ After you derive from one of the MAM entry points, it's safe to use `Context` as
 
 In some cases, a method available in the Android class has been marked as final in the MAM replacement class. In this case, the MAM replacement class provides a similarly named method (generally suffixed with `MAM`) that you should override instead. For example, instead of overriding `ContentProvider.query`, you would override `MAMContentProvider.queryMAM`. The Java compiler should enforce the final restrictions to prevent accidental override of the original method instead of the MAM equivalent.
 
-##Enable features that require app participation
+###Enable features that require app participation
 
 The SDK cannot implement some policies on its own. The app can control its behavior to achieve these features by using several APIs that you can find in the following `AppPolicy` interface.
 
@@ -230,7 +230,7 @@ String toString();
 
 ```
 
-## Enable IT control over app saving behavior
+### Enable IT control over app saving behavior
 
 Many apps implement features that let the user save files locally or to a cloud storage service. The Intune App SDK helps IT admins protect against data leakage by applying policy restrictions as they see fit in their organization.  One of the policies that IT can control is whether the user can save to a "personal," unmanaged data store. This includes saving to a local location, an SD card, or third-party backup services.
 
@@ -245,7 +245,7 @@ MAMComponents.get(AppPolicy.class).getIsSaveToPersonalAllowed();
 > [!NOTE]
 > `MAMComponents.get(AppPolicy.class)` will always return a non-null app policy, even if the device or app is not under an Intune management policy.
 
-## Let the app detect if a PIN policy is required
+### Let the app detect if a PIN policy is required
 
 For some Intune app restrictions, you might want your app to disable some of its functionality so it doesn't duplicate functionality in the Intune App SDK. For example, if the app has its own PIN user experience, you might want to disable it if the SDK is set up to require the user to enter a PIN.
 
@@ -255,7 +255,7 @@ To determine if an Intune PIN policy is set up to require an app PIN on launch, 
 MAMComponents.get(AppPolicy.class).getIsPinRequired();
 ```
 
-## Register for notifications from the SDK  
+### Register for notifications from the SDK  
 
 The Intune App SDK lets your app control the behavior of certain policies, like a selective wipe, when the IT admin deploys them. When an IT admin deploys such a policy, the Intune service sends a notification to the SDK.
 
@@ -303,7 +303,7 @@ public interface MAMNotificationReceiver {
 
 ```
 
-##Types of notifications
+###Types of notifications
 
 The following notifications are sent to the app. Some of them might require app participation.
 
@@ -315,11 +315,11 @@ The following notifications are sent to the app. Some of them might require app 
 
 
 
-## Protection of backup data
+### Protection of backup data
 
 As of Android Marshmallow (API 23), Android has two ways for an app to back up its data. Each option is available to your app and requires different steps to ensure that Intune data protection is correctly implemented. You can read more about the backup methods in the [Android API guide](http://developer.android.com/guide/topics/data/backup.html).
 
-### Automatic backup for apps
+#### Automatic backup for apps
 
 Android began offering [automatic full backups](https://developer.android.com/guide/topics/data/autobackup.html) to apps on Android Marshmallow devices, regardless of the app's target API. If you explicitly set `android:allowBackup` to false in your AndroidManifest.xml file, Android will never queue your app for backups, and "corporate" data will stay within the app. In this case, no further action is necessary.
 
@@ -338,49 +338,49 @@ If you have not written a backup agent to back up your app by using `MAMBackupAg
 
 
 
-### Key/value backup
+#### Key/value backup
 
 The key/value backup option is available to all APIs and uses `BackupAgentHelper` and `BackupAgent`.
 
-#### BackupAgentHelper
+##### BackupAgentHelper
 
 `BackupAgentHelper` is much simpler to implement than `BackupAgent`, in terms of both native Android functionality and MAM integration. `BackupAgentHelper` lets you register entire files and shared preferences to either `FileBackupHelper` or `SharedPreferencesBackupHelper`, respectively. These are then added to `BackupAgentHelper` upon creation.
 
-#### BackupAgent
+##### BackupAgent
 
 `BackupAgent` lets you be much more explicit about what data is backed up. But this option will mean that you can't take advantage of the Android backup framework. Because you are responsible for the implementation, more steps are required to ensure appropriate data protection from MAM. Because most of the work is pushed onto you, the developer, MAM integration is slightly more involved.
 
-##### App does not have a backup agent
+###### App does not have a backup agent
 
 These are the developer options when `android:allowBackup =true`.
 
-###### Full backup according to a configuration file
+####### Full backup according to a configuration file
 
 Provide a resource under the `com.microsoft.intune.mam.FullBackupContent` metadata tag in your manifest. For example:
     `<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:resource="@xml/my_scheme" />`
 
 Add the following attribute in the `<application>` tag: `android:fullBackupContent="@xml/my_scheme"`, where `my_scheme` is an XML resource in your app.
 
-###### Full backup without exclusions
+####### Full backup without exclusions
 
 Provide a tag in the manifest, like `<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />`.
 
 Add the following attribute in the `<application>` tag:
 `android:fullBackupContent="true"`.
 
-##### App has a backup agent
+###### App has a backup agent
 
 Follow the recommendations earlier in this guide for `BackupAgent` and `BackupAgentHelper`.
 
 Consider switching to using `MAMDefaultFullBackupAgent`, which provides easy backup on Android Marshmallow.
 
-#### Before your backup
+##### Before your backup
 
 Before you begin your backup, you must check that the files or data buffers that you plan to back up are allowed to be backed up. We've given you an `isBackupAllowed` function in `MAMFileProtectionManager` and `MAMDataProtectionManager` to check this. If the file or data buffer is not allowed to be backed up, you should not try to continue using it in your backup.
 
 At some point during your backup, if you want to back up the identities for the files that you checked in step 1, you must call `backupMAMFileIdentity(BackupDataOutput data, File … files)` with the files that you plan to extract data from. This will automatically create new backup entities and write them to `BackupDataOutput` for you. These entities will be automatically consumed upon restore.
 
-### Azure Directory Authentication Library setup  
+#### Azure Directory Authentication Library setup  
 
 The SDK relies on ADAL for its authentication and conditional launch scenarios. These scenarios require that apps have some amount of Azure Active Directory (Azure AD) configuration. The configuration values are communicated to the SDK via `AndroidManifest` metadata.
 
@@ -401,17 +401,17 @@ To set up your app and enable proper authentication, add the following to the ap
 
 The GUIDs are not expected to have the preceding or trailing curly bracket.
 
-#### Common ADAL configurations
+##### Common ADAL configurations
 
 The following are common configurations for the values explained earlier.
 
-##### App does not integrate ADAL
+###### App does not integrate ADAL
 
 * The authority must be set to the desired environment where Azure AD accounts have been set up.
 
 * SkipBroker must be set to true.
 
-##### App integrates ADAL
+###### App integrates ADAL
 
 * The authority must be set to the desired environment where Azure AD accounts have been set up.
 
@@ -423,7 +423,7 @@ The following are common configurations for the values explained earlier.
 
 * Azure AD must be set up to accept the broker redirect URI.
 
-##### App integrates ADAL but does not support the Azure AD Authenticator app
+###### App integrates ADAL but does not support the Azure AD Authenticator app
 
 * The authority must be set to the desired environment where Azure AD accounts have been set up.
 
@@ -431,11 +431,11 @@ The following are common configurations for the values explained earlier.
 
 * `NonBrokerRedirectURI` must be set to a valid redirect URI for the app. Or, `urn:ietf:wg:oauth:2.0:oob` should be set up as a valid Azure AD redirect URI.
 
-### Logging in the SDK
+#### Logging in the SDK
 
 Logging is done through the `java.util.logging` framework. To receive the logs, set up global logging as described in the [Java technical guide](http://docs.oracle.com/javase/6/docs/technotes/guides/logging/overview.html). Depending on the app, `App.onCreate` is usually the best place to initiate logging. Note that log messages are keyed by the class name, which might be hidden.
 
-##Multi-identity
+###Multi-identity
 
 By default, the Intune App SDK applies a policy to the app as a whole. Multi-identity is a MAM feature that you can enable to apply a policy on a per-identity level. This requires significantly more app participation than other MAM features. The app is required to inform the app SDK when it intends to change the active identity. The SDK must also notify the app when an identity change is required.
 
@@ -443,7 +443,7 @@ Currently, only one managed identity is supported. After the user enrolls the de
 
 Note that an identity is simply defined as a string. Identities are case-insensitive. Requests to the SDK for an identity might not return the same casing that was originally used when the identity was set.
 
-###Enabling multi-identity
+####Enabling multi-identity
 
 By default, all apps are considered to be single-identity apps. An app declares that it is multi-identity aware by placing the following metadata in the Android manifest.
 
@@ -452,7 +452,7 @@ By default, all apps are considered to be single-identity apps. An app declares 
             android:name="com.microsoft.intune.mam.MAMMultiIdentity"
             android:value="true" />
 ```
-###Setting the identity
+####Setting the identity
 
 You can set the identity of the app on the following levels:
 
@@ -525,7 +525,7 @@ Apps can also override a method on `MAMActivity` to be notified of the result of
 > Switching the identity might require re-creating the activity. In this case, the ```onSwitchMAMIdentityComplete``` callback will be delivered to the new instance of the activity.
 
 
-###Implicit identity changes
+####Implicit identity changes
 
 In addition to the app's ability to set the identity, a thread or a context's identity might change based on data ingress from another MAM-enabled app. For instance, if an activity is launched from an `Intent` class sent by another MAM app, the activity’s identity will be set based on the effective identity in the other app at the point where the `Intent` class was sent.
 
@@ -572,7 +572,7 @@ Most apps probably won't need to block or delay an identity switch in a differen
 > [!NOTE]
 > A multi-identity app will always receive incoming data from both managed and unmanaged apps. The app is responsible for treating data from managed identities in a managed manner. If a requested identity is managed ```(MAMPolicyManager.getIsIdentityManaged)```, but the app can't use that account (for example, because accounts like email accounts must be set up in the app first), the identity switch should be refused.
 
-##File protection
+###File protection
 
 Every file has an identity associated with it at the time of creation, based on thread and process identity. This identity is used for both file encryption and selective wipe. Only files whose identity has a policy that requires encryption will be encrypted. The SDK's default selective wipe will wipe only files associated with the identity for which a wipe has been requested. The app can query or change a file’s identity by using ```MAMFileProtectionManager```.
 ```
@@ -616,7 +616,7 @@ String getIdentity();
 >
 > * When file identity tagging becomes available, all previously created files are treated as personal (belonging to the empty-string identity) unless the app was previously installed as a single-identity managed app. In that case, they are treated as belonging to the enrolled user.
 
-###Data protection
+####Data protection
 
 It is not possible to tag a file as belonging to multiple identities. Apps that must store data that belongs to different users in the same file can do so manually by using the features that ```MAMDataProtectionManager``` provides. This lets the app encrypt data and tie it to a particular user. The encrypted data is suitable for storing to disk in a file. You can query the data associated with the identity, and the data can be unencrypted later.
 
@@ -711,19 +711,19 @@ public final class MAMDataProtectionManager {
 	public static MAMDataProtectionInfo getProtectionInfo(final byte[] input) throws IOException;
 }
 ```
-##Content providers
+###Content providers
 
 If the app is providing potentially corporate data other than ```ParcelFileDescriptor``` through ```ContentProvider```, the app must call the ```MAMContentProvider``` method ```isProvideContentAllowed(String)```, passing the owner ```UPN``` for the content. If this function returns false, the content cannot be returned to the caller. File descriptors returned through a content provider are handled automatically, based on the file identity.
 
-##Selective wipe
+###Selective wipe
 
 If an app registers for the ```WIPE_USER_DATA``` notification, it will not receive the benefit of SDK default selective wipe behavior. For apps that are multi-identity aware, this might be more significant because MAM default selective wipe will wipe only files that match the identity to be wiped.
 
 If you are building an app that's multi-identity aware, you can register for ```WIPE_USER_AUXILIARY_DATA```. This notification lets you take advantage of the SDK default wipe behavior. This notification will be sent immediately before you perform the SDK default selective wipe. Note that an app should never register for both ```WIPE_USER_DATA``` and ```WIPE_USER_AUXILIARY_DATA```.
 
-## Known platform limitations
+### Known platform limitations
 
-### File size limitations
+#### File size limitations
 
 On Android, the limitations of the Dalvik executable file format might become an issue for large code bases that run without ProGuard. Specifically, the following limitations might  occur:
 
@@ -739,7 +739,7 @@ When you're including many projects, every `android:package` will get a copy of 
 
 * Remove all unnecessary and unused libraries (for example, `android.support.v4`).
 
-### Policy enforcement limitations
+#### Policy enforcement limitations
 
 **Screen capture**: The SDK can't enforce a new screen capture setting value in `Activity` classes that have already gone through `Activity.onCreate`. This can result in a period of time where the app has been set up to disable screenshots but screenshots can still be taken.
 
@@ -749,7 +749,7 @@ When you're including many projects, every `android:package` will get a copy of 
 
 **Exported services**: The `AndroidManifest.xml` file included in the Intune App SDK has `MAMNotificationReceiverService`. This must be an exported service to let the Company Portal app send notifications to an enlightened app. The service checks the caller to ensure that only the Company Portal app is allowed to send notifications.
 
-## Android best practices
+### Android best practices
 
 The Intune SDK maintains the contract provided by the Android API, though failure conditions might be triggered more frequently as a result of policy enforcement. These Android best practices will reduce the likelihood of failure:
 

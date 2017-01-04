@@ -18,13 +18,13 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 #audience:
 #ms.devlang:
 ms.reviewer: joglocke
-#ms.suite: ems
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# How to validate your app protection policy setup
+# How to validate your app protection policy setup in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ This topic provides suggestions for troubleshooting device enrollment issues. If
 
 Before you begin troubleshooting, check to make sure that you've configured Intune properly to enable enrollment. You can read about those configuration requirements in:
 
--	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
+-	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -	[Set up iOS and Mac device management](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -	[Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -	[Set up Windows device management](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -64,7 +64,7 @@ These issues may occur on all device platforms.
 
 2.  Check in the Intune admin console under Admin\Mobile Device Management\Enrollment Rules that the Device enrollment limit is set to 15.
 
-Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 Administrators can delete devices in the Azure Active Directory portal.
 
