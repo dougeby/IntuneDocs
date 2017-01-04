@@ -6,7 +6,7 @@ description: Enable mobile device management (MDM) for Windows PCs including Win
 keywords:
 author: staciebarker
 manager: stabar
-ms.date: 01/04/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
