@@ -27,22 +27,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # You need to update your Android device's operating system
 
-If you've seen a message that says your “Minimum Android security patch level is not configured," you need to install an update to ensure that your device remains secure. A _patch_ is released to maintain software to keep it running smoothly and up to date. Your IT admin requires you to install this patch to make sure that corporate data is kept as protected as possible on your device. 
+If you've seen a message that says your “Minimum Android security patch level is not configured," you need to install an update to ensure that your device remains secure. A _patch_ is released to maintain software to keep it running smoothly and up to date. Your IT admin requires you to install this patch to make sure that corporate data is kept as protected as possible on your device. The location of the security patch you need will vary depending on whether you have a specific type of Samsung device.
 
-The location of the current security patch level varies depending on the type of Android device that you have. You'll need to figure out if you have a Samsung Knox device or another type of Android device. To check if you have a Samsung Knox device, go to **Settings** > **About phone**. If you don't see the word "Knox" listed there, you don't have a Samsung Knox device.
+If you have a Samsung device, go to **Settings** > **About phone**, and check to see if the word "Knox" is anywhere onscreen. If so, follow the Samsung Knox directions below.
 
 [!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
 
-**To check the latest software version on your device:**
+## If you have a Samsung Knox device
 
-- Non-Samsung Knox devices: Try going to **Settings** > **About** > **Software information** > **More**, and then look under **Android security patch level**. The menu names and locations might differ slightly for different Android devices.
+Go to **Settings** > **System updates** > **Check for new system update**. Install the update and your Samsung Knox device should have the correct security patch installed.
 
-- Samsung Knox devices: Go to **Settings** > **About phone** > **Security software version**.
+## If you do not have a Samsung Knox device
 
-**To install the required security patch:**
-
-- Non-Samsung Knox devices: Go to **Settings** > **About** > **Software updates**.
-
-- Samsung Knox devices: Go to **Settings** > **System updates** > **Check for new system update**.
+Go to **Settings** > **About** > **Software updates**. Install the update and your device should have the correct security patch installed. 
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

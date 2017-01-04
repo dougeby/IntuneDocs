@@ -25,9 +25,9 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# Your device is missing a certificate that usually comes installed on your phone
+# Your Android device is missing a certificate that usually comes installed on your phone
 
-If your Android device isn’t enrolled in Intune, and it’s missing a certificate that usually comes installed on your phone, you won’t be able to sign in to the Company Portal app. When you try to sign in, you’ll see the following message:
+If your device isn’t enrolled in Intune, and it’s missing a certificate that usually comes installed on your phone, you won’t be able to sign in to the Company Portal app. When you try to sign in, you’ll see the following message:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -48,4 +48,4 @@ You can fix this issue by getting the required certificate from [Digicert's cert
 6. Reopen the Company Portal app. You should now be able to sign in to the Company Portal app. If you still cannot use the Company Portal app, contact your IT admin using the information provided on the [Company Portal website](http://portal.manage.microsoft.com) for further instructions.
 
 >[!NOTE]
-> If installing this certificate doesn't solve the issue, and you see a different "missing certificate" message, you will need to take additional steps to [install the missing certificate](your-device-is-missing-an-IT-required-certificate-android.md). 
+> If installing this certificate doesn't solve the issue, and you see a different "missing certificate" message, you will need to take additional steps to [install the missing certificate](your-device-is-missing-an-IT-required-certificate-android.md).
