@@ -33,5 +33,5 @@ When you tap **Send info**, an email is created automatically. The email is addr
 
 There are different ways you can send your device's data logs to your IT admin to get help with errors:
 
-- [Use a USB cable to send logs](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [Use email to send logs](send-logs-to-your-it-administrator-using-email-android.md)
+- [Use a USB cable to send logs](send-logs-to-your-it-admin-using-cable-android.md)
+- [Use email to send logs](send-logs-to-your-it-admin-using-email-android.md)
