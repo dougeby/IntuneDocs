@@ -5,7 +5,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,6 @@ ms.suite: ems
 The Outlook app helps millions of users connect all their email accounts, calendars and files in one convenient spot for both [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) devices.
 
 If you're trying to download Outlook and, instead of installing, a message pops up on your device that says that your device's operating system isn't current enough. You'll need to upgrade your device to install Outlook.
-
 
 ## If you have an Android device
 Go to **Settings**, and then use the **update** or **system update** option.

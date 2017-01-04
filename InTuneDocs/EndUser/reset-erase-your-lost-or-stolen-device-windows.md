@@ -6,7 +6,7 @@ description: Reset a lost or stolen Windows device
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
