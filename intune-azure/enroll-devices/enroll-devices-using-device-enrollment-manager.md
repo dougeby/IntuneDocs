@@ -42,9 +42,7 @@ Only users in the Intune console can be device enrollment managers. The device e
 The DEM user can:
 
 -   Enroll up to 1000 devices in Intune.
-
 -   Sign in to the Company Portal to get company apps.
-
 -   Configure access to company data by deploying role-specific apps to the tablets.
 
 ## Limitations of devices that are enrolled with a DEM account
