@@ -1,0 +1,33 @@
+---
+# required metadata
+
+title: Your device is missing a required certificate | Microsoft Docs
+description:
+keywords:
+author: barlanmsftms.author: barlan
+manager: angrobe
+ms.date: 01/04/2017
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
+
+# optional metadata
+
+ROBOTS: NOINDEX,NOFOLLOW
+#audience:
+#ms.devlang:
+ms.reviewer: arnab
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+---
+
+
+# Your device is missing a required certificate
+
+## What's a certificate?
+[Cryptography](https://technet.microsoft.com/en-us/library/cc962030.aspx) is the science of providing security for information. Traditionally, cryptography has been used to pass coded messages to [ensure that communication is kept secret](https://technet.microsoft.com/en-us/library/cc962019.aspx). In its simpliest form, cryptography substitutes or transposes letters to create a coded message into an unreadable, scrambled, or hidden message. Only someone with a decoding key, or _certificate_, can convert the coded message back into its original, readable form. Your Android device uses certificates with Intune to make sure that communications between your device and your organizational resources, such as email and documents, are kept safe from one end, through the air, to the other.
+
+Many apps use certificates for devices. 
