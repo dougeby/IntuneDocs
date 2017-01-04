@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Enroll your Windows 8.1 or Windows RT 8.1 device | Microsoft Docs
-description: Describes how to enroll a Windows 8.1 or Windows RT 8.1 device in Intune
+title: How to enroll your Windows 8.1 or Windows RT 8.1 device | Microsoft Docs
+description: Learn how to enroll a Windows 8.1 or Windows RT 8.1 device in Intune
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,6 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
 
 # Enroll your Windows 8.1 or Windows RT 8.1 device in Intune
 
