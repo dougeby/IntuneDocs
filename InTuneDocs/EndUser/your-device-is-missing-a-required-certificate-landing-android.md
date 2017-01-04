@@ -30,4 +30,6 @@ ms.suite: ems
 ## What's a certificate?
 [Cryptography](https://technet.microsoft.com/en-us/library/cc962030.aspx) is the science of providing security for information. Traditionally, cryptography has been used to pass coded messages to [ensure that communication is kept secret](https://technet.microsoft.com/en-us/library/cc962019.aspx). In its simpliest form, cryptography substitutes or transposes letters to create a coded message into an unreadable, scrambled, or hidden message. Only someone with a decoding key, or _certificate_, can convert the coded message back into its original, readable form. Your Android device uses certificates with Intune to make sure that communications between your device and your organizational resources, such as email and documents, are kept safe from one end, through the air, to the other.
 
-Many apps use certificates for devices. 
+If your Android device isn’t enrolled in Intune, and it’s missing a certain certificate that is required by your IT admin, you won’t be able to sign in to the Company Portal app. When you try to sign in, you'll see the following message:
+
+![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)

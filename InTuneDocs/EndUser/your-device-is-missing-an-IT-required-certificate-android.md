@@ -25,21 +25,18 @@ ms.suite: ems
 #ms.custom:
 ---
 
-## Your device is missing a certificate required by your IT admin
+# Your device is missing a certificate required by your IT admin
 
 If your Android device isn’t enrolled in Intune, and it’s missing a certain certificate that is required by your IT admin, you won’t be able to sign in to the Company Portal app. When you try to sign in, you'll see the following message:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
-
->[!NOTE]
-> If you have already seen one "missing certificate" message, and followed the steps in [Your device is missing a certificate that usually comes installed on your phone](#your-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone), that's okay. That is a different message and certificate from this one, so go ahead and follow the steps in this section to get the missing certificate.
 
 To fix this issue and get the required certificate, there are two main steps that you'll need to do:
 
 - Identify the missing certificate by looking on a company or school PC.
 - Use your device to download the missing certificate from the Internet.
 
-### Identify the missing certificate by looking on a company or school PC
+## Identify the missing certificate by looking on a company or school PC
 
 1. On a PC, open Internet Explorer. If you don't have a PC to use for this purpose, contact your IT admin. For your IT admin's contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
@@ -57,7 +54,7 @@ To fix this issue and get the required certificate, there are two main steps tha
 
 5. In the **Certificate** dialog box, choose the **Certification path** tab, and then identify the certificate that you need to get from the Internet. The name of the certificate that you need will be in the same position as the one that is highlighted in the previous example screenshot.
 
-### Download and install the missing certificate on your Android mobile device
+## Download and install the missing certificate on your Android mobile device
 
 1. Using a search engine like Bing or Google, search for the name of the missing certificate that you identified in the previous section. The certificate may end in different "extensions," like ".crt" or ".pem", etc.
 
