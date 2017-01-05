@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Restrict access to email and Office 365 services | Microsoft Docs
+title: Protect access to email and Office 365 services | Microsoft Docs
 description: This topic describes how you can use conditional access to allow only compliant devices to access company email and company data on SharePoint Online and other services.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,8 +26,8 @@ ms.suite: ems
 
 ---
 
-# Restrict access to email, Office 365, and other services with Microsoft Intune
-You can restrict access to your company email, Office 365 services like **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**,  **SharePoint Online**, **Skype for Business Online**, and other services by using Azure Active Directory Conditional Access with Intune. This capability allows you to make sure that access to your company email and Office 365 services is restricted to devices that are compliant with the conditional access rules that you set either in the Intune admin console, or Azure classic portal.
+# Protect access to email, Office 365, and other services with Microsoft Intune
+You can protect access to your company email, Office 365 services like **Exchange On-premises**, **Exchange Online**, **Exchange Online Dedicated**,  **SharePoint Online**, **Skype for Business Online**, and other services by using Enterprise Mobility + Security (EMS) Conditional Access. This capability allows you to make sure that access to your company email and Office 365 services is restricted to devices that are compliant with the conditional access rules that you set either in the Intune admin console, or Azure classic portal.
 ## How does conditional access work?
 You can use compliance policy settings to evaluate the compliance of a device. A conditional access policy uses the evaluation to restrict or allow access to a specific service. When you use a conditional access policy in combination with a device compliance policy, only compliant devices are allowed to access the service. The compliance policy and the conditional access policy are deployed to the user. Any device that the user uses to access the services is checked for compliance with the policies.
 
@@ -44,7 +44,13 @@ A typical flow of conditional access:
 
 ### Licensing
 
-You must have an **Enterprise Mobility + Security (EMS) subscription** or an **Azure Active Directory (Azure AD) Premium subscription**, and the users you plan to apply conditional access must be assigned with the EMS or Azure AD Premium licenses. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+Microsoft Intune and Azure Active Directory (Azure AD) Premium work seamlessly together to provide multiple layers of control through EMS conditional access, if you want to deploy conditional access policies using Intune, you're required to have license for both products.
+
+**Azure AD Premium licenses** can be purchased as a standalone service or can be purchased (along with Intune) as part of Enterprise. If you have deployed conditional access policies with Intune, please ensure that you have obtained the proper Azure AD Premium or **EMS licenses**.
+
+- Learn more about [Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+
+Additionally, make sure the users you plan to apply conditional access policies are [assigned with the Azure AD Premium or EMS licenses](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 
 ### Device compliance settings
 
@@ -54,7 +60,7 @@ To set up conditional access, configure a device compliance policy and a conditi
 
 ### Conditional access policy
 
-You can set a conditional access policy to restrict access based on:
+You can set a conditional access policy to protect access based on:
 - The device compliance status.
 - The platform that is running on the device.
 - The type of apps that are used to access the services.

@@ -6,7 +6,7 @@ description: Describes the Windows PC management policies and the settings for t
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 10/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Use policies to simplify Windows PC management
 
-Windows PCs running the Intune software client can be managed using Intune's **Computer Management** policies. Use Intune's **Computer Management** policies to configure the settings in the Microsoft Intune Center, to control updates to PCs, and to configure Windows Firewall for PCs.
+To manage Windows desktops as PCs, by running the Intune software client on them, you can use only the policies that are under **Computer Management** policies in the Intune admin console. All of the other policies listed in the admin console are for mobile devices only. Using the **Computer Management** policies, you can configure the settings in the Microsoft Intune Center, control updates to PCs, and configure Windows Firewall for PCs.
 
 ![Policies template for Windows PCs](../media/pc_policy_template.png)
 

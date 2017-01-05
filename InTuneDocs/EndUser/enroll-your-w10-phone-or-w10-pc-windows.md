@@ -54,4 +54,4 @@ Want to know more? Find out what happens when you [enroll your device in Intune]
 3.	Under __Device information__, tap __More info__. You will see a list of information about your device. Within this list, locate the __Version__.
 4.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school.md). If your version is __1511__, continue with [these steps](enroll-your-w10-device-your-account.md).
 
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

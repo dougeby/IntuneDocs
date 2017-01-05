@@ -29,8 +29,9 @@ ms.suite: ems
 
 As an Intune admin, you can enable enrollment and management for Windows PCs in two ways:
 
-- **[Automatic enrollment with Azure Active Directory](#azure-active-directory-enrollment)** -  Windows 10 and Window 10 Mobile users enroll their devices by adding a work or school account to the device
-- **[Company Portal enrollment](#company-portal-app-enrollment)** - Windows 8.1 and later users enroll their devices by downloading and installing the Company Portal app and then entering their work or school account credentials in the app.
+- **[Automatic enrollment with Azure Active Directory](#azure-active-directory-enrollment)** -  Windows 10 and Window 10 Mobile users enroll their devices by adding a work or school account to the device.
+
+- **[Company Portal enrollment](#set-up-company-portal-app-enrollment)** - Windows 8.1 and later users enroll their devices by downloading and installing the Company Portal app and then entering their work or school account credentials in the app.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
@@ -61,17 +62,14 @@ If you haven’t already, prepare for mobile device management by  [setting the 
 
 3.  **Verify CNAME**<br>In the [Intune administration console](http://manage.microsoft.com), choose **Admin** &gt; **Mobile Device Management** &gt; **Windows**. Enter the URL of the verified domain of the company website in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.
 
-  ![Windows device management dialog box](../media/enroll-intune-winenr.png)
-
 4.  **Optional steps**<br>The **Add Sideloading keys** step is not needed for Windows 10. The **Upload Code-Signing Certificate** step is only needed if you will distribute line-of-business (LOB) apps that are not available from the Windows Store to devices.
 
 6.  **Tell your users how to enroll their devices and what to expect after they're brought into management.**
 
-	For end-user enrollment instructions, see [Enroll your Windows device in Intune](../enduser/enroll-your-device-in-intune-windows.md).
+	For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows).
 
-	For more information about end-user tasks, see these articles:
-      - [Resources about the end-user experience with Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-      - [End user guidance for Windows devices](../enduser/using-your-windows-device-with-intune.md)
+	For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
+
 
 ### See also
 [Prerequisites for enrolling devices in Microsoft Intune](prerequisites-for-enrollment.md)

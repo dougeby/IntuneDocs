@@ -24,7 +24,7 @@
  cancel-my-subscription-for-microsoft-intune.md
  categorize-devices-with-device-group-mapping-in-microsoft-intune.md
  choose-the-right-microsoft-intune-policy-to-use-deleted.md
- company-portal-app-not-supported.md
+ you-need-to-update-your-company-portal-app-windows.md
  company-portal-frequently-asked-questions.md
  computer-management-capabilities-in-microsoft-intune-deleted.md
  configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md
@@ -51,7 +51,7 @@
  enroll-corporate-owned-ios-devices-in-microsoft-intune.md
  enroll-your-device-in-microsoft-intune.md
  enterprise-rollout.md
- error-evaluating-device.md
+ your-device-is-noncompliant-cant-evaluate.md
  exchange-activesync-policy-settings-in-microsoft-intune.md
  existing-company-email-account-found.md
  fix-issues-with-mobile-device-enrollment.md
@@ -184,7 +184,7 @@
  4,954 using-the-intune-company-portal-website.md
    383 using-your-android-device-with-intune-removed-.md
 03/07/2016  03:45 PM            31,962 using-your-android-device-with-intune.md
-03/07/2016  03:45 PM            23,622 using-your-ios-or-mac-os-x-device-with-intune.md
+03/07/2016  03:45 PM            23,622 using-your-ios-or-macOS-device-with-intune.md
 03/07/2016  03:45 PM            33,300 using-your-windows-device-with-intune.md
    409 wait-while-your-device-is-being-evaluated.md
  1,267 walkthrough-set-up-email-access-for-ios-devices-with-microsoft-intune_deleted.md

@@ -1,11 +1,13 @@
 ---
 # required metadata
 
-title: Restrict email access to Exchange On-premises | Microsoft Docs
+title: Protect email access to Exchange On-premises | Microsoft Docs
 description: Protect and control access to company email on Exchange On-premises with conditional access.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
-ms.date: 10/12/2016
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,14 +26,14 @@ ms.suite: ems
 
 ---
 
-# Restrict email access to Exchange on-premises and legacy Exchange Online Dedicated with Intune
+# Protect email access to Exchange on-premises and legacy Exchange Online Dedicated with Intune
 
 > [!NOTE]
 > If you have an Exchange Online Dedicated environment and need to find out whether it's in the new or the legacy configuration, please contact your account manager.
 
 
 To control email access to Exchange on-premises or to your legacy Exchange Online Dedicated environment, you can configure conditional access to Exchange on-premises by using Microsoft Intune.
-To learn more about how conditional access works, read the [Restrict access to email and O365 services]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+To learn more about how conditional access works, read the [Protect access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
 **Before** you can configure conditional access, verify the following:
 
@@ -130,9 +132,9 @@ The following is supported:
 
 -   If the user unenrolls from [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], it might take from one to three hours for the device to be blocked.
 
-**To see some example scenarios of how you would configure a conditional access policy to restrict device access, see [Restrict email access example scenarios](restrict-email-access-example-scenarios.md).**
+**To see some example scenarios of how you would configure a conditional access policy to protect device access, see [Protect email access example scenarios](restrict-email-access-example-scenarios.md).**
 
 ## Next steps
--   [Restrict access to SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+-   [Protect access to SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
--   [Restrict access to Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+-   [Protect access to Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)

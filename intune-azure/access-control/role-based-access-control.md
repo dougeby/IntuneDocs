@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/14/2016
+ms.date: 12/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -69,6 +69,9 @@ You hire a new IT admin who will be in charge of deploying and managing apps to 
 
 ### How to create a custom role
 
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Access control**.
 1. On the **Roles** blade of the **Access control** workload, choose **Add custom**.
 2. On the **Add Custom Role** blade, enter a name and description for the new role, and then click **Permissions**.
 3. On the **Permissions** blade, choose the permissions you want to use with this role. Use the custom role settings reference list later in this topic to help you.
@@ -89,7 +92,7 @@ The new role is displayed in the list on the **Roles** blade.
 	- **Scope** - Select a group containing the users who the member above will be allowed to manage.
 5. When you are done, click **OK**.
 
-The new assignment us displayed int the list of assignments.
+The new assignment is displayed in the list of assignments.
 
 ## Custom role settings reference
 

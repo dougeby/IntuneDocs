@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/14/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ This topic provides suggestions for troubleshooting device enrollment issues. If
 
 Before you begin troubleshooting, check to make sure that you've configured Intune properly to enable enrollment. You can read about those configuration requirements in:
 
--	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
+-	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -	[Set up iOS and Mac device management](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -	[Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -	[Set up Windows device management](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -326,7 +326,7 @@ If the Server certificate is installed correctly, you see all check marks in the
 
 
 ### Other iOS enrollment errors
-A list of iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
+A list of iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-iOS-or-macOS-device-with-intune).
 
 ## PC  Issues
 
