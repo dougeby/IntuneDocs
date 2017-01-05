@@ -43,17 +43,16 @@ As an Intune administrator, you can enable management of Android devices, includ
   - [Resources about the end-user experience with Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
   - [End user guidance for Android devices](../enduser/using-your-android-device-with-intune.md)
 
-> [!Note] 
-> Due to the absence of Google Play Store in China, Android devices must obtain the Company Portal from Chinese app marketplaces. The Company Portal app for Android will be available for download on the following stores:
+Due to the absence of Google Play Store in China, Android devices must obtain the Company Portal from Chinese app marketplaces. The Company Portal app for Android will be available for download on the following stores:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
 * [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 * [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
 
-> The Company Portal app for Android uses Google Play Services to communicate with the Microsoft Intune service. Since Google Play Services are not yet available in China, performing any of the following tasks can take up to 8 hours to complete. 
+The Company Portal app for Android uses Google Play Services to communicate with the Microsoft Intune service. Since Google Play Services are not yet available in China, performing any of the following tasks can take up to 8 hours to complete. 
 
-> |Intune Admin Console| Intune Company Portal app for Android |Intune Company Portal Website|   
+|Intune Admin Console| Intune Company Portal app for Android |Intune Company Portal Website|   
 |---|---|---|
 |Full wipe| Remove a remote device| Remove device (local and remote)|
 |Selective wipe| Reset device| Reset device|
