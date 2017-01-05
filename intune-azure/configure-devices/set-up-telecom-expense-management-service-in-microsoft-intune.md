@@ -5,7 +5,7 @@ keywords: Saaswedo
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ Before you can use the Datalert service with Intune, you need to configure setti
 ## Supported platforms
 
 - Samsung Knox
-- iOS 7.1 and later
+- iOS 8.0 and later
 
 ## Prerequisites
 
