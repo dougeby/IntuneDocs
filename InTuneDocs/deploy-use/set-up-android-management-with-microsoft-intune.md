@@ -4,9 +4,10 @@
 title: Set up Android management | Microsoft Docs
 description: Enable mobile device management (MDM) for Android and KNOX Standard devices with Microsoft Intune.
 keywords:
-author: staciebarkerms.author: stabar
+author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,6 +42,23 @@ As an Intune administrator, you can enable management of Android devices, includ
 	For information about other end-user tasks, see these articles:
   - [Resources about the end-user experience with Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
   - [End user guidance for Android devices](../enduser/using-your-android-device-with-intune.md)
+
+Due to the absence of Google Play Store in China, Android devices must obtain the Company Portal from Chinese app marketplaces. The Company Portal app for Android will be available for download on the following stores:
+* [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+* [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+* [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+* [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+* [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+
+The Company Portal app for Android uses Google Play Services to communicate with the Microsoft Intune service. Since Google Play Services are not yet available in China, performing any of the following tasks can take up to 8 hours to complete. 
+
+|Intune Admin Console| Intune Company Portal app for Android |Intune Company Portal Website|   
+|---|---|---|
+|Full wipe| Remove a remote device| Remove device (local and remote)|
+|Selective wipe| Reset device| Reset device|
+|New or updated app deployments| Install available line-of-business apps| Device passcode reset|
+|Remote lock|||
+|Passcode reset|||
 
 ### See also
 [Prerequisites to enrolling devices in Microsoft Intune](prerequisites-for-enrollment.md)
