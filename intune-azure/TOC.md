@@ -3,10 +3,21 @@
 <!---## [Get started](/intune-azure/introduction/get-started)
 ## [What's new](/intune-azure/introduction/whats-new)
 ## [Get support](/intune-azure/introduction/get-support)
-## [Related resources](/intune-azure/introduction/related-resources)
+## [Related resources](/intune-azure/introduction/related-resources) -->
 
-# [Plan and design](/intune-azure/plan-and-design/get-started)
-## [Get started](/intune-azure/plan-and-design/get-started) --->
+# [Plan and Design](/intune/plan-design/introduction?toc=%2fintune-azure%2ftoc.json)
+## [Section 1: Determine deployment goals, objectives and challenges](/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=%2fintune-azure%2ftoc.json)
+## [Section 2: Identify use case scenarios](/intune/plan-design/section-2-identify-use-case-scenarios?toc=%2fintune-azure%2ftoc.json)
+## [Section 3: Determine use case scenario requirements](/intune/plan-design/section-3-determine-use-case-requirements?toc=%2fintune-azure%2ftoc.json)
+## [Section 4: Develop a rollout plan](/intune/plan-design/section-4-develop-a-rollout-plan?toc=%2fintune-azure%2ftoc.json)
+## [Section 5: Develop a communication plan](/intune/plan-design/section-5-develop-a-rollout-communication-plan?toc=%2fintune-azure%2ftoc.json)
+## [Section 6: Develop a support plan](/intune/plan-design/section-6-develop-a-support-plan?toc=%2fintune-azure%2ftoc.json)
+## [Section 7: Create an Intune design](/intune/plan-design/section-7-create-an-intune-design?toc=%2fintune-azure%2ftoc.json)
+## [Section 8: Intune implementation](/intune/plan-design/section-8-onboarding-process?toc=%2fintune-azure%2ftoc.json)
+## [Section 9: Testing and validation](/intune/plan-design/section-9-test-and-validation?toc=%2fintune-azure%2ftoc.json)
+## [Additional resources](/intune/plan-design/additional-resources?toc=%2fintune-azure%2ftoc.json)
+
+<!-- ## [Get started](/intune-azure/plan-and-design/get-started) --->
 
 # Enroll devices
 ## [What is device enrollment?](/intune-azure/enroll-devices/what-is)
