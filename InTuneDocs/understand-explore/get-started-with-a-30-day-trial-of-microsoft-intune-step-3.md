@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create groups to organize users and devices | Microsoft Docs
+title: Create groups to organize users and devices in free trial | Microsoft Docs
 description: How to create device groups and user groups when you sign up for a free, 30-day evaluation of Microsoft Intune.
 keywords:
 author: lindavr
