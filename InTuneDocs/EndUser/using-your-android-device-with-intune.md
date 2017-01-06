@@ -64,7 +64,7 @@ The information in this section helps users with actions they can take after the
 The information in this section helps users fix issues that they might encounter when their Android device is enrolled in Intune.
 
 - [Use Verbose Logging to help your IT administrator fix device issues](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Send logs to your IT admin using email](send-logs-to-your-it-admin-using-email-android.md)
+- [Send logs to your IT admin using email](send-logs-to-your-it-admin-by-email-android.md)
 - [Send logs to your IT admin using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
 - [Send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-admin-android.md)
 - [Device doesn't have the required minimum operating system version](you-need-to-update-your-android-device.md)
