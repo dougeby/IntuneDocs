@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/23/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -95,7 +95,7 @@ ms.suite: ems
 ## App Store, Doc Viewing, Gaming
 
 
-- **App store (supervised only) ** - Block access to the app store on supervised devices.
+-   **App store (supervised only)** - Block access to the app store on supervised devices.
 - 	**Password to access app store** - Require the user to enter a password before they can visit the app store.
 - 	**In-app purchases** - Allow store purchases to be made from within a running app.
 - 	**Automatic app downloads (supervised only)** -
