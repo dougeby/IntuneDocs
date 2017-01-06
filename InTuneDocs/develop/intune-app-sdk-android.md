@@ -34,9 +34,10 @@ ms.suite: ems
 
 The Microsoft Intune App SDK for Android lets you incorporate Intune app protection policies (also known as MAM policies) into your native Android app. An Intune-enlightened application is one that is integrated with the Intune App SDK. Intune administrators can easily deploy app protection policies to your Intune-enlightened app when Intune actively manages the app.
 
+
 ## What's in the SDK
 
-The Intune App SDK for Android is a standard Android library with no external dependencies. The SDK consists of:  
+The Intune App SDK consists of the following files:  
 
 * **Microsoft.Intune.MAM.SDK.jar**: The interfaces necessary to enable MAM and  interoperability with the Intune Company Portal app. Apps must specify it as an Android library reference.
 
@@ -60,6 +61,24 @@ The Intune App SDK for Android relies on the presence of the [Company Portal](ht
 
 
 ## How the Intune App SDK works
+
+### Build integration
+
+The Intune App SDK is a standard Android library with no external dependencies. **Microsoft.Intune.MAM.SDK.jar** contains both the interfaces necessary for an app protection policy enablement and the code necessary to interoperate with the Microsoft Intune Company Portal app.
+
+**Microsoft.Intune.MAM.SDK.jar** must be specified as an Android library reference. To do this, open your app project in Android Studio and go to **File > New > New module** and select **Import .JAR/.AAR Package**. Select our Android archive package Microsoft.Intune.MAM.SDK.jar. To ensure successful export of Activities and Services:
+
+1. (Recommended) Use the [Android manifest merger](https://developer.android.com/studio/build/manifest-merge.html) tool in Android Studio, which is part of the Android Developer Tools v.20 or above.
+
+2. Explicitly include the SDK JAR.
+
+3. Explicitly include the Activities and Services referenced in Microsoft.Intune.MAM.SDK in the AndroidManifest.xml of every consumer.
+
+4. Explicitly include the SDK's resources in every consumer.
+
+Additionally, **Microsoft.Intune.MAM.SDK.Support.v4** and **Microsoft.Intune.MAM.SDK.Support.v7** contain Intune variants of android.support.v4 and android.support.v7 respectively. They are not built into Microsoft.Intune.MAM.SDK in case an app does not want to include the support libraries. They are standard JAR files instead of Android library projects.
+
+
 
 ### Entry points
 
@@ -1146,6 +1165,10 @@ Azure Active Directory Authentication Libraries (ADAL) may have its own ProGuard
 
 For large code bases that run without [ProGuard](http://proguard.sourceforge.net/), the limitations of the Dalvik executable file format become an isssue. Specifically, the following limitations may occur:
 
+1.	The 65K limit on fields.
+2.	The 65K limit on methods.
+
+
 
 ### Policy enforcement limitations
 
@@ -1157,9 +1180,13 @@ For large code bases that run without [ProGuard](http://proguard.sourceforge.net
 	MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(contentURI);
 	```
 
-* **Exported Services**: The AndroidManifest.xml file included in the Intune App SDK contains **MAMNotificationReceiverService**, which must be an exported service to allow the Company Portal to send notifications to an enlightened app. The service checks the caller to ensure that only the Company Portal is allowed to send notifications.
+### Exported services
 
-## Recommended Android best practices
+ The AndroidManifest.xml file included in the Intune App SDK contains **MAMNotificationReceiverService**, which must be an exported service to allow the Company Portal to send notifications to an enlightened app. The service checks the caller to ensure that only the Company Portal is allowed to send notifications.
+
+
+
+## Expectations of the SDK consumer
 
 The Intune SDK maintains the contract provided by the Android API, though failure conditions may be triggered more frequently as a result of policy enforcement. These Android best practices will reduce the likelihood of failure:
 
@@ -1170,3 +1197,11 @@ The Intune SDK maintains the contract provided by the Android API, though failur
 * Any derived functions must call through to their super class versions.
 
 * Avoid use of any API in an ambiguous way. For example, using `Activity.startActivityForResult` without checking the requestCode will cause strange behavior.
+
+## Recommended Android best practices
+
+* All library projects should share the same android:package where possible. This will not sporadically fail in run-time; this is purely a build-time problem. Newer versions of the Intune App SDK will remove some of the redundancy.
+
+* Use the newest Android SDK build tools.
+
+* Remove all unnecessary and unused libraries (e.g. android.support.v4)
