@@ -27,7 +27,9 @@ ms.suite: ems
 
 # Retire devices from Intune management
 
-Whether devices are corporate-owned or personally owned, eventually a managed device needs to be removed from Intune management. Devices are never removed from Intune without your intervention, even if the devices haven't connected to the Intune service for a period of time. 
+Whether devices are corporate-owned or personally owned, eventually a managed device needs to be removed from Intune management. 
+
+Devices are never removed from Intune without your intervention, even if the devices haven't connected to the Intune service for a period of time. 
 
 You might need to retire a device for a variety of reasons:
 

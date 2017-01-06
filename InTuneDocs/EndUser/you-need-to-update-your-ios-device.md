@@ -25,8 +25,7 @@ ms.suite: ems
 
 ---
 
-
-# iOS device doesn't have the required minimum operating system version
+# Your iOS device doesn't have the required minimum operating system version
 
 [!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
 

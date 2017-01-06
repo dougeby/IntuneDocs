@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -87,6 +87,6 @@ Enroll your device:
 
 4.  If prompted to install the company app or Hub, make sure the relevant box is checked, and then tap **done**.
 
-If your IT admin has set up the Company Portal to be installed  during enrollment, you will see the Company Portal appear in your app list.
+If your IT admin has set up the Company Portal to be installed during enrollment, you will see the Company Portal appear in your app list.
 
 Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
