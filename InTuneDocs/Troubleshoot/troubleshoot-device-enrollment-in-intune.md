@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 01/06/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,11 +43,8 @@ Before you begin troubleshooting, check to make sure that you've configured Intu
 
 Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
 
-- [Send Android diagnostic data logs to your IT administrator using a USB cable](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-- [Send Android diagnostic data logs to your IT administrator using email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
-- [Send Android enrollment errors to your IT administrator](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-- [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios)
-
+- [Send Android enrollment errors to your IT admin](https://docs.microsoft.com/intune/enduser/send-enrollment-errors-to-your-it-admin-android)
+- [Send iOS errors to your IT admin](https://docs.microsoft.com/intune/enduser/send-errors-to-your-it-admin-ios)
 
 
 ## General enrollment issues
@@ -260,6 +257,36 @@ If the Server certificate is installed correctly, you see all check marks in the
 
 
 ## iOS issues
+
+### Devices are inactive or the admin console cannot communicate with them
+**Issue:** iOS devices aren’t checking in with the Intune service. Devices must check in periodically with the service to maintain access to protected corporate resources. If devices don’t check in:
+
+- They can't receive policy, apps, and remote commands from the Intune service.
+- They show a Management State of **Unhealthy** in the administrator console.
+- Users who are protected by conditional access policies might lose access to corporate resources.
+
+Samsung has confirmed that the Samsung Smart Manager software, which ships on certain Samsung devices, can deactivate the Intune Company Portal and its components. When Company Portal is in a deactivated state, it can't run in the background and therefore can't contact the Intune service.
+
+**Resolution:** Share the following resolutions with your end users to help them regain access to corporate resources.
+
+When users start the iOS Company Portal app, it can tell if their device has lost contact with Intune. If it detects that there is no contact, it automatically tries to sync with Intune to reconnect, and users will see the **Trying to sync…** inline notification. 
+
+  ![Trying to sync notification](./media/ios_cp_app_trying_to_sync_notification.png)
+
+If the sync is successful, you see a **Sync successful** inline notification in the iOS Company Portal app, indicating that your device is in a healthy state.
+
+  ![Sync successful notification](./media/ios_cp_app_sync_successful_notification.png)
+
+If the sync is unsuccessful, users see an **Unable to sync** inline notification in the iOS Company Portal app. 
+
+  ![Unable to sync notification](./media/ios_cp_app_unable_to_sync_notification.png)
+
+To fix the issue, users must select the **Set up** button, which is to the right of the **Unable to sync** notification. The Set up button takes users to the Company Access Setup flow screen, where they can follow the prompts to enroll their device. 
+
+  ![Company Access Setup screen](./media/ios_cp_app_company_access_setup.png)
+
+Once enrolled, the devices return to a healthy state and regain access to company resources.
+
 ### Profile installation failed
 **Issue:** A user receives a **Profile installation failed** error on an iOS device.
 
@@ -326,7 +353,7 @@ If the Server certificate is installed correctly, you see all check marks in the
 
 
 ### Other iOS enrollment errors
-A list of iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
+A list of iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-iOS-or-macOS-device-with-intune).
 
 ## PC  Issues
 
