@@ -4,7 +4,8 @@
 title: What is app management with Intune | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Use this topic to learn the basics about app management with Microsoft Intune"
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 01/11/2017
 ms.topic: get-started-article
@@ -42,8 +43,8 @@ Intune offers a range of capabilities to help you get the apps you need, on the 
 
 ## App management capabilities by platform
 
-|||
-|-|-|
+||||||
+|-|-|-|-|-|
 |&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
 |Add and assign apps to devices and users|Yes|Yes|Yes|Yes|
 |Assign apps to devices not enrolled with Intune|Yes|No|No|Yes|
