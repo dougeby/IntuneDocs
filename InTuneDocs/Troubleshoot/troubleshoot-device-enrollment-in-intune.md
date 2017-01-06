@@ -326,7 +326,7 @@ If the Server certificate is installed correctly, you see all check marks in the
 
 
 ### Other iOS enrollment errors
-A list of iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
+A list of iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-iOS-or-macOS-device-with-intune).
 
 ## PC  Issues
 

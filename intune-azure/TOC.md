@@ -10,27 +10,29 @@
 
 # Enroll devices
 ## [What is device enrollment?](/intune-azure/enroll-devices/what-is)
-<!--- ## [Get started](/intune-azure/enroll-devices/get-started) --->
-<!--- ## [Plan and design](/intune-azure/enroll-devices/plan-and-design)  --->
-## How to
+## Get started
 ### [Set the MDM authority](/intune-azure/enroll-devices/set-mdm-authority)
+## Plan and design
 ### [Get an Apple MDM push certificate](/intune-azure/enroll-devices/get-an-apple-mdm-push-certificate)
 ### [Get an Apple DEP token](/intune-azure/enroll-devices/get-apple-dep-token)
 ### [Choose how to enroll iOS devices](/intune-azure/enroll-devices/choose-ios-enrollment-method)
+## How to
+### [Enroll Android devices](/intune-azure/enroll-devices/enroll-android-and-knox-standard-devices)
+### Enroll iOS devices
 #### [Enroll iOS devices using Setup Assistant](/intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant)
 #### [Enroll iOS devices using direct enrollment](/intune-azure/enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment)
 #### [Add Apple Configurator serial numbers](/intune-azure/enroll-devices/add-apple-configurator-serial-numbers)
 #### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
 ### [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager)
-### Set up Windows device management
-#### [Set up Windows Phone and Windows 10 mobile management](/intune-azure/enroll-devices/set-up-windows-phone-management)
-#### [Set up Windows device management](/intune-azure/enroll-devices/set-up-windows-device-management)
-### [Create terms and conditions](/intune-azure/enroll-devices/create-terms-and-conditions)
-### [Set enrollment restrictions](/intune-azure/enroll-devices/set-enrollment-restrictions)
-### [Map device groups](/intune-azure/enroll-devices/how-to-use-device-group-mapping)
-### [Add corporate identifiers](/intune-azure/enroll-devices/add-corporate-identifiers)
-<!---Was Use device group mapping--->
-### [Use Windows Hello for Business](/intune-azure/enroll-devices/how-to-use-windows-hello)
+### Enroll Windows devices
+#### [Enroll Windows Phone and Windows 10 mobile devices](/intune-azure/enroll-devices/set-up-windows-phone-management)
+#### [Enroll Windows devices as mobile devices](/intune-azure/enroll-devices/set-up-windows-device-management)
+### Manage device enrollment
+#### [Create terms and conditions](/intune-azure/enroll-devices/create-terms-and-conditions)
+#### [Set enrollment restrictions](/intune-azure/enroll-devices/set-enrollment-restrictions)
+#### [Map device groups](/intune-azure/enroll-devices/how-to-use-device-group-mapping)
+#### [Add corporate identifiers](/intune-azure/enroll-devices/add-corporate-identifiers)
+#### [Use Windows Hello for Business](/intune-azure/enroll-devices/how-to-use-windows-hello)
 <!--- ## [Troubleshoot](/intune-azure/enroll-devices/troubleshooting) --->
 
 # Devices and groups
