@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Windows device management | Intune Azure preview | Microsoft Docs
+title: Enroll Windows PCs as mobile devices | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Enable mobile device management (MDM) for Windows PCs including Windows 10 devices with Microsoft Intune."
 keywords:
 author: staciebarker
@@ -25,11 +25,11 @@ ms.suite: ems
 
 ---
 
-# Set up Windows device management for Intune Azure preview
+# Enroll Windows PCs as mobile devices for Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-These instructions explain how to set up enrollment for Windows PCs that you want to manage as mobile devices using Intune mobile device management. To set up enrollment for Windows mobile devices instead, see [Enroll Windows phone and Windows 10 devices](set-up-windows-phone-management.md), which has different instructions.
+These instructions explain how to set up enrollment for Windows PCs that you want to manage as mobile devices using Intune mobile device management. To set up enrollment for Windows mobile devices instead, see [Enroll Windows phone and Windows 10 devices](enroll-windows-mobile-devices.md), which has different instructions.
 
 As an Intune admin, you can enable enrollment and management for Windows PCs in two ways:
 
