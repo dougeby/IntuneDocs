@@ -1,8 +1,8 @@
 # Introduction
 ## [What is the Azure portal preview?](/intune-azure/introduction/what-is-microsoft-intune)
-<!---## [Get started](/intune-azure/introduction/get-started)
+<!---## [Get started](/intune-azure/introduction/get-started) --->
 ## [What's new](/intune-azure/introduction/whats-new)
-## [Get support](/intune-azure/introduction/get-support)
+<!--- ## [Get support](/intune-azure/introduction/get-support)
 ## [Related resources](/intune-azure/introduction/related-resources)
 
 # [Plan and design](/intune-azure/plan-and-design/get-started)
