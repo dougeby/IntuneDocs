@@ -44,6 +44,7 @@
 
 # What's New
 ## [What's new](whats-new/whats-new-in-microsoft-intune.md)
+## [What's new in the Azure preview](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune)
 ## [What's new archive](whats-new/whats-new-archive.md)
 
 # Deploy and Use
