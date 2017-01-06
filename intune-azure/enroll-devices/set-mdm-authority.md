@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 01/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ The mobile device management authority setting determines how you manage your de
 - **Mobile Device Management for Office 365** - integration of Office 365 with the Intune cloud solution. You configure Intune from your Office 365 Admin Center. Includes a subset of the capabilities that are available with Intune Standalone.
 
 >[!IMPORTANT]
->Once you set the mobile device management authority, you cannot change it, so make your choice carefully.
+>Once you set the mobile device management authority, you have to contact [Microsoft Support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) to change it, so make your choice carefully.
 
 **To set the mobile device management authority:**
 
