@@ -1,24 +1,25 @@
 ---
 # required metadata
 
-title: What is app management with Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: What is app management with Intune | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Use this topic to learn the basics about app management with Microsoft Intune"
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 01/11/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid:
+ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer:
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -31,52 +32,74 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 
-As an IT admin, you'll most likely be tasked with making sure that your end users have access to the apps they need to do their work. This can be a challenge, as there are a wide range of device platforms and app types, you might need to manage apps on company devices as well as users own devices, and you need to do all of this, while ensuring you network, and your data remain secure.
-Microsoft Intune provides a wide range of capabilities to help you stay on top of app management like:
+As an IT admin, you'll likely be tasked with making sure that your end users have access to the apps they need to do their work. This can be a challenge because:
+- There are a wide range of device platforms and app types.
+- You might need to manage apps on company devices as well as users own devices.
+- You need to do all of this, while ensuring your network, and your data remain secure. 
+
+Additionally, you might want to assign, and manage apps on devices that are not enrolled with Intune.
+
+Intune offers a range of capabilities to help you get the apps you need, on the devices you want.
+
+## App management capabilities by platform
+
+||||||
+|-|-|-|-|-|
+|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
+|Add and assign apps to devices and users|Yes|Yes|Yes|Yes|
+|Assign apps to devices not enrolled with Intune|Yes|No|No|Yes|
+|Use app configuration policies to control the startup behavior of apps|No|Yes|No|No|
+|Protect company data in apps with app protection policies|Yes|Yes|No|No<sup>1</sup>|
+|Remove only corporate data from an installed app (App selective wipe)|Yes|Yes|Yes|Yes|
+|Monitor app assignments|Yes|Yes|Yes|Yes|
+|Assign and track volume-purchased apps from an app store|No|No|No|Yes|
+|Mandatory install of apps on devices (Required)<sup>2</sup>|Yes|Yes|Yes|Yes|
+|Optional installation on devices from the Company Portal (Available install)|Yes|Yes|Yes|Yes|
+|Install shortcut to an app on the web (web clip)|Yes|Yes|Yes|Yes|
+|In-house (line-of-business) apps|Yes|Yes|No|No|
+|Apps from a store|Yes|Yes|Yes|Yes|
+|Update apps|Yes|Yes|Yes|Yes|
+
+<sup>1</sup> Consider using [Windows Information Protection](/intune-azure/configure-devices/how-to-configure-windows-information-protection) to protect apps on devices that run Windows 10.
+
+<sup>2</sup>Applies to devices managed by Intune only.
 
 
-
-- Adding and assigning apps
-- Configuring apps
-- Making corporate data in apps more secure
-- Removing corporate data from apps
-- Keeping apps up-to-date
-- Reporting where apps are installed, and how they are being used
+## How to get started
 
 You'll find most things app-related in the **Mobile Apps** workload which you can access as follows:
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Manage apps**.
 
 	![The Mobile Apps workload](./media/apps-workload.png)
 
 ### Manage
-- **Apps** - This is where you'll create, assign, and monitor most of your apps. For details, see:
+- **Apps** - This is where you'll add, assign, and monitor most of your apps. 
 	- [Add apps](add-apps.md)
 	- [Assign apps](deploy-apps.md)
 	- [Monitor apps](monitor-apps.md)
-- **Licensed Apps** - View, deploy, and monitor volume-purchased apps from the Apple store and the Windows Store for Business. For details, see:
-	- [iOS volume-purchased apps](ios-vpp-apps.md)
+- **Licensed Apps** - View, deploy, and monitor volume-purchased apps from the app stores.
 	- [Windows Store for Business volume-purchased apps](wsfb-apps.md)
 - **App Configuration Policies** - App configuration policies let you supply settings that might be required when a user runs an app. For details, see:
 	- [App configuration policies](app-configuration-policies.md)
-- **App Protection Policies**
+- **App Protection Policies** - Lets you associate settings with an app to help protect the company data it uses. For example, you might restrict the capabilities of an app to communicate with other apps, or require the user to enter a PIN to access a company app.
 	- [App protection policies](app-protection-policies.md)
-- **App Selective Wipe**
+- **App Selective Wipe** - Remove only corporate data from a users device you select.
 	- [App selective wipe](app-selective-wipe.md)
 
 ### Monitor
-- **Discovered Apps**
-- **App Install Status**
-- **App Protection User Status**
+- **Discovered Apps** - Shows all apps that were assigned by Intune, and installed on a device.
+- **App Install Status** - Shows the status of an app assignment you created.
+- **App Protection User Status** - Shows the status of an app protection policy for a user you select.
 
-	For details, see [Monitor apps](monitor-apps.md)
+For details, see [Monitor apps](monitor-apps.md)
 
 ### Setup
-- **iOS VPP Tokens**
-	- [iOS volume-purchased apps](ios-vpp-apps.md)
-- **Windows Store for Business**
+<!--- **iOS VPP Tokens**
+	- [iOS volume-purchased apps](ios-vpp-apps.md) --->
+- **Windows Store for Business** - Setup integration to the Windows Store for Business. After you do this, you can synchronize purchased applications to Intune, assign them, and track your license usage. 
 	- [Windows Store for Business volume-purchased apps](wsfb-apps.md)
-- **Company Portal Branding** - Customize the Company Portal to give it your company branding. For details, see:
+- **Company Portal Branding** - Customize the Company Portal to give it your company branding. 
 	- [Company portal configuration](company-portal-app.md)
