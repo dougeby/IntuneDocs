@@ -29,7 +29,7 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-These instructions explain how to set up enrollment for Windows mobile devices. The instructions are slightly different for setting up Windows PCs to be managed as mobile devices. See [Enroll Windows phone and Windows 10 devices](set-up-windows-phone-management.md) for instructions.
+These instructions explain how to set up enrollment for Windows mobile devices. The instructions are slightly different for setting up Windows PCs to be managed as mobile devices. See [Enroll Windows phone and Windows 10 devices](enroll-windows-mobile-devices.md) for instructions.
 
 As an Intune admin, you can enable enrollment and management for Windows Phone 8.1 devices, and Windows 10 and Windows 10 mobile devices and in two ways:
 
