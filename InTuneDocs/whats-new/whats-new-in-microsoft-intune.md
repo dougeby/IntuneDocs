@@ -32,7 +32,7 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 > All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://docs.microsoft.com/en-us/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 ## Non-service announcement
-For January, we are announcing a new feature within the Company Portal prior to announcing this month's service release and other updates for this month. We will then announce all other features when we announce our regular service release.
+For January, we are announcing a new feature within the Company Portal prior to announcing this month's service release. We will  announce all other features when we announce our regular service release later this month.
 
 <!--Stacie, put your stuff here--> 
 
