@@ -46,7 +46,7 @@ Apps can be assigned to devices whether or not they are managed by Intune. Use t
 |End users install available apps from web-based Company Portal|Yes|Yes|
 
 > [!NOTE]
-> Currently, you can assign apps to Android, Windows 10 Mobile, and Windows 10 desktop devices that are not enrolled with Intune.
+> Currently, you can assign iOS and Android apps (both line of business and store-purchased) to devices that are not enrolled with Intune.
 
 ## How to assign an app
 

@@ -47,7 +47,7 @@ Intune offers a range of capabilities to help you get the apps you need, on the 
 |-|-|-|-|-|
 |&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
 |Add and assign apps to devices and users|Yes|Yes|Yes|Yes|
-|Assign apps to devices not enrolled with Intune|Yes|No|No|Yes|
+|Assign apps to devices not enrolled with Intune|Yes|Yes|No|No|
 |Use app configuration policies to control the startup behavior of apps|No|Yes|No|No|
 |Protect company data in apps with app protection policies|Yes|Yes|No|No<sup>1</sup>|
 |Remove only corporate data from an installed app (App selective wipe)|Yes|Yes|Yes|Yes|
