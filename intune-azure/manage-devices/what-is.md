@@ -6,7 +6,7 @@ description: "Intune Azure preview: Learn how to view the devices you manage wit
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 01/07/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ The **Devices and groups** workload lets you perform the following actions:
 	- **Overview**  - See general information about the device including information about it's name, the owner, whether it is a BYOD device, when it last checked-in, and more. Additionally, you can perform the following remote actions on the device (not all actions are supported by all device platforms):
 		- **Remove company data** - Removes only company data managed by Intune. Does not remove personal data from the device. The device will no longer be managed by Intune, and will no longer be able to access corporate resources (not supported for Windows devices that are joined to Azure Active Directory).
 		- **Factory reset** - Returns the device to its default settings. The device will no longer be managed by Intune and both company and personal data are removed. You cannot undo this action.
-		- **Remote lock** - Locks the device. The device owner must use their passcode to unlock it.
+		- **Remote lock** - Locks the device. The device owner must use their passcode to unlock it. You can only remotely lock a device that has a PIN or password set.
 		- **Reset passcode** - Generates a new passcode for the device which will be displayed on the <*device name*> **Overview** blade.
 		- **Bypass Activation Lock** - This will remove the activation lock from an iOS device without the user’s Apple ID and password. Once you bypass the activation lock, the device turns on activation lock again when the Find My iPhone app launches. Only bypass the activation lock if you have physical access to the device.
 		- **Lost mode** - If a device has been stolen, you can enable lost mode. This lets you specify a message and a phone number that will be displayed on the lock screen of the device.
