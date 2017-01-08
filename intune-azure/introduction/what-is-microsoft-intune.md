@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 01/06/2016
+ms.date: 01/08/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,13 +76,15 @@ For the latest information about supported browsers, see [here](https://docs.mic
 
 The documentation reflects the layout of the Intune portal to make it easier to find the information you need.
 
+![Azure portal workloads](./media/azure-portal-workloads.png)
+
 <!--- ### Plan and design
 Information to help you plan and design your Intune environment.
 [Read more](/intune-azure/plan-and-design/get-started) --->
 ### Enroll devices
 How to get your devices managed by Intune.
 [Read more](/intune-azure/enroll-devices/what-is)
-### Manage devices
+### Devices & Groups
 Get to know the devices you manage with inventory, and reports.
 [Read more](/intune-azure/manage-devices/what-is)
 ### Manage users
