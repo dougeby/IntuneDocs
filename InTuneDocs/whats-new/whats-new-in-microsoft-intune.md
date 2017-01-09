@@ -34,17 +34,12 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 ## Non-service announcement
 For January, we are announcing a new feature within the Company Portal prior to announcing this month's service release. We will  announce all other features when we announce our regular service release later this month.
 
-## What's new in Intune <!--725193-->
-
 ### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them
 
-When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources. Find out more about what to do when [devices are inactive, or the admin console cannot communicate with them](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
+When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources. There are currently two ways to resolve issues when devices are inactive, or the admin console cannot communicate with them: 
 
-## What's new in the public preview <!--725193-->
-
-### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them
-
-When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources.  Find out more about what to do when [devices are inactive, or the admin console cannot communicate with them](/intune-azure/enroll-devices/troubleshoot-device-enrollment#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
+* [Resolve the issue in the Intune classic portal](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
+* [Resolve the issue in the Intune preview portal in Azure](/intune-azure/enroll-devices/troubleshoot-device-enrollment#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
