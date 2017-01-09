@@ -36,7 +36,7 @@ For January, we are announcing a new feature within the Company Portal prior to 
 
 ### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them
 
-When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources. There are currently two ways to resolve issues when devices are inactive, or the admin console cannot communicate with them: 
+When users’ devices lose contact with Intune, there are new troubleshooting steps now available to help them regain access to company resources. There are currently two ways to resolve issues when devices are inactive, or the admin console cannot communicate with them: 
 
 * [Resolve the issue in the Intune classic portal](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)
 * [Resolve the issue in the Intune portal in Azure](/intune-azure/enroll-devices/troubleshoot-device-enrollment#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)
