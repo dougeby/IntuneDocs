@@ -33,8 +33,8 @@ Once you've added an app to Intune, you'll want to get it out to users and devic
 
 Apps can be assigned to devices whether or not they are managed by Intune. Use the following table to help you understand the various options for assigning apps to users and devices:
 
-|||
-|-|-|
+||||
+|-|-|-|-|
 |&nbsp;|Devices enrolled with Intune|Devices not enrolled with Intune|
 |Assign to users|Yes|Yes|
 |Assign to devices|Yes|No|
