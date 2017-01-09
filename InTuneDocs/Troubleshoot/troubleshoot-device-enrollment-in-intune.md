@@ -59,7 +59,7 @@ These issues may occur on all device platforms.
 
 1.  Validate in the Intune admin portal that the user has no more than the allowable maximum of 15 devices assigned.
 
-2.  Check in the Intune admin console under Admin\Mobile Device Management\Enrollment Rules that the Device enrollment limit is set to 15.
+2.  Under **Admin** > **Mobile Device Management** > **Enrollment Rules** in the Intune admin console, check that the Device enrollment limit is set to 15.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -71,7 +71,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 2.  Log in with your Org ID using the link on the left side of the page.
 
-3.  Create an Azure Subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).
+3.  If you don't already have one, create an Azure subscription by choosing the **Register your free Azure Active Directory** subscription link. If you have a paid account, you shouldn't need to use a credit card or payment.
 
 4.  Select **Active Directory** and then select your organization.
 
@@ -85,12 +85,12 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 > [!NOTE]
 
-> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+> You can avoid the device enrollment cap by using Device Enrollment Manager account, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 >
-> A user account which is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
+> A user account that is added to Device Enrollment Managers account will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
 ### Company Portal Temporarily Unavailable
-**Issue:** A user receives a **Company Portal Temporarily Unavailable** error on their device.
+**Issue:** Users receive a **Company Portal Temporarily Unavailable** error on their device.
 
 **Resolution:**
 
@@ -98,23 +98,23 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 2.  On the device, open the browser, browse to [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com), and attempt a user login.
 
-3.  If the user fails to log in, have them try another network.
+3.  If the user fails to log in, have her try another network.
 
 4.  If that fails, validate that the user’s credentials have synced correctly with Azure Active Directory.
 
-5.  If the user successfully logs in, an iOS device will prompt you to install the Intune Company Portal app and enroll. On an Android device you will need to manually install the Intune Company Portal app, after which you can retry enrolling.
+5.  If the user successfully logs in, an iOS device will prompt you to install the Intune Company Portal app and enroll. On an Android device, you will need to manually install the Intune Company Portal app, after which you can retry enrolling.
 
 ### MDM authority not defined
 **Issue:** A user receives an **MDM authority not defined** error.
 
 **Resolution:**
 
-1.  Verify that the MDM Authority has been set appropriately for the version of the Intune service you are using  , that is, for Intune, O365 MDM, or System Center Configuration Manager with Intune. For Intune,  the MDM Authority is set in **Admin** &gt; **Mobile Device Management**. For Configuration Manager with Intune, you set it when configuring the Intune connector, and in O365 it's a setting **Mobile Devices**.
+1.  Verify that the MDM Authority has been set appropriately for the type of Intune service you are using (that is, Intune, Office 365, or System Center Configuration Manager with Intune. For Intune, the MDM Authority is set in **Admin** &gt; **Mobile Device Management**. For Configuration Manager with Intune, you set it when configuring the Intune connector, and in Office 365, it's a setting **Mobile Devices**.
 
     > [!NOTE]
-    > Once you set the MDM authority, you can only change it by contacting Support, as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+    > Once you set the MDM authority, you can change it only by contacting Support, as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
-2.  Verify that the user’s credentials have synced correctly with Azure Active Directory, by checking that their UPN matches the Active Directory information in the Account Portal.
+2.  Verify that the user’s credentials have synced correctly with Azure Active Directory by checking that the user's UPN matches the Active Directory information in the Office 365 portal.
     If the UPN does not match the Active Directory information:
 
     1.  Turn off DirSync on the local server.
@@ -153,7 +153,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 **Issue:** When you add a second verified domain to your ADFS, users with the user principal name (UPN) suffix of the second domain may not be able to log into the portals or enroll devices.
 
 
-**Resolution:** Microsoft Office 365 customers who utilize single sign-on (SSO) through AD FS 2.0 and have multiple top level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix.  There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the **SupportMultipleDomain** switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. See [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
+**Resolution:** Microsoft Office 365 customers who use single sign-on (SSO) through AD FS 2.0 and have multiple top level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix. There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the **SupportMultipleDomain** switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. See [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
 
 
 ## Android issues
@@ -366,15 +366,15 @@ This may be because the computer had been previously enrolled, or has the cloned
 
 **Resolution:**
 
-1. From the **Start** menu, **Run** -> **MMC**.
-1. **File** -> **Add/ Remove Snap-ins**.
-1. Double-click **Certificates**, choose **Computer account**, **Next**, select **Local Computer**.
-1. Double-click **Certificates (Local computer)**, choose **Personal/ Certificates**.
-1. Look for the Intune cert issued by Sc_Online_Issuing, and delete it if present
-1. Delete this registry key if it exists: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** and all sub keys.
-1. Attempt re-enrollment.
-1. If the machine can still not enroll, look for and delete this key, if it exists: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
-1. Attempt re-enrollment.
+1. From the **Start** menu, type **Run** -> **MMC**.
+1. Choose **File** > **Add/ Remove Snap-ins**.
+1. Double-click **Certificates**, choose **Computer account** > **Next**, and select **Local Computer**.
+1. Double-click **Certificates (Local computer)** and choose **Personal/ Certificates**.
+1. Look for the Intune cert issued by Sc_Online_Issuing, and delete it, if present.
+1. If the following registry key exists, delete it: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** and all sub keys.
+1. Try to re-enroll.
+1. If the PC still cannot enroll, look for and delete this key, if it exists: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Try to re-enroll.
 
     > [!IMPORTANT]
     > This section, method, or task contains steps that tell you how to modify the registry. However, serious problems might occur if you modify the registry incorrectly. Therefore, make sure that you follow these steps carefully. For added protection, back up the registry before you modify it. Then, you can restore the registry if a problem occurs.
