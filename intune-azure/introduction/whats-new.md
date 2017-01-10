@@ -41,6 +41,10 @@ You can now create, edit, and assign categories for apps you add to Intune. Curr
 ### Assign line of business apps whether or not devices are enrolled <!--748803-->
 You can now assign line of business and apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
 
+### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them
+
+When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources. See [Devices are inactive, or the admin console cannot communicate with them](/intune-azure/enroll-devices/troubleshoot-device-enrollment#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
+
 ## December 2016 (initial release)
 
 ### Telecom expense management integration in public preview of Azure portal<!--747605-->
