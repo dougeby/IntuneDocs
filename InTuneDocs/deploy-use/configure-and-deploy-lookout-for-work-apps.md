@@ -24,6 +24,9 @@ ms.suite: ems
 ---
 
 # Configure and deploy Lookout for Work apps
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This article explains how to configure and deploy the Lookout for Work app for Android and iOS devices.
 
 ## Android (Google Play Store app)

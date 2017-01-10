@@ -28,6 +28,8 @@ ms.suite: ems
 
 # VPN connections in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a *VPN connection profile* to initiate a connection with the VPN server. Use *VPN profiles* in Microsoft Intune to deploy VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
 
 For example, assume that you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile that contains the settings necessary to connect to the corporate network, and then you deploy this profile to all users who have iOS devices. The users will see the VPN connection in the list of available networks and can connect with minimal effort.

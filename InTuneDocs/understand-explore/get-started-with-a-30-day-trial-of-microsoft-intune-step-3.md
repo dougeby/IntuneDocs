@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Create groups to organize evaluation subscription users and devices
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Groups in Intune give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics) and use them to perform a variety of administrative tasks at scale, from setting policies for a set of users to deploying applications to a set of devices.
 
 ## Create a device group

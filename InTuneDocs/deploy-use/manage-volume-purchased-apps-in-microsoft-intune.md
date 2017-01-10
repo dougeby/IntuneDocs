@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Manage volume-purchased apps using Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Some app stores give you the ability to purchase multiple licenses for an app that you want to run in your company. This helps you reduce the administrative overhead of tracking multiple purchased copies of apps.
 
 Microsoft Intune helps you manage apps that you purchased through such a program by importing the license information from the app store, tracking how many of the licenses you have used, and preventing you from installing more copies of the app than you own.

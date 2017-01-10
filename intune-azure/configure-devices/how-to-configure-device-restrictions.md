@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 01/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -62,4 +62,10 @@ Use the information in this topic to learn the basics about configuring device r
 
 The profile will be created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
+
+## Example of device restriction settings
+
+In this high-level example, you'll create a device restriction policy that blocks the use of the built-in camera app on Android devices.
+
+![How to disable the camera on Android devices](./media/disable-android-camera.png)
 

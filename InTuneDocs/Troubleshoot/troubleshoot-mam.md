@@ -28,6 +28,8 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 
 # Troubleshoot mobile application management
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 If you are having problems with Intune mobile application management, start here. This topic contains some common problems and questions you might have and provides solutions and answers.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.

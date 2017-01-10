@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Categorize devices with device group mapping in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use Microsoft Intune **device group mapping** to automatically add devices to groups based on categories that you define, in order to make it easier for you to manage those devices. 
 
 Device group mapping uses the following workflow:

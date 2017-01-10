@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Enroll mobile devices and install an app
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 To set up mobile device management with Intune, you must first set the *mobile device management authority*, which identifies the service that can manage devices associated with your account. This guidance assumes you will use the Intune service instead of System Center Configuration Manager. Once the MDM authority is set, you can enable management for device platforms, and enroll your devices with the Company Portal app.
 
 ## Enable device enrollment

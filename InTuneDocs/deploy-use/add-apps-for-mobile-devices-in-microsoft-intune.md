@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Add apps for enrolled devices to Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Before you can deploy or manage an app, you must add it to Microsoft Intune. This topic shows you how to add apps for enrolled devices.
 
 

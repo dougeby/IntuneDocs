@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Develop an Intune support plan
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Having an Intune support plan can be beneficial in more effectively identifying and resolving Intune related issues and improving the end user’s overall Intune experience. Here are some questions to consider when developing your Intune support plan:
 
 -   Which team(s) will be responsible for providing Intune support?

@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # What is Intune?
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. With Intune, you can:
 * Manage the mobile devices your workforce uses to access company data.
 * Manage the mobile apps your workforce uses.

@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Configure devices to connect to your corporate Wi-Fi networks
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use Microsoft Intune Wi-Fi profiles to deploy wireless network settings to users and devices in your organization. When you deploy a Wi-Fi profile, your users have access to your corporate Wi-Fi without having to configure it themselves.
 
 For example, you install a new Wi-Fi network named **Contoso Wi-Fi** and want to set up all iOS devices to connect to this network. Here's the process:

@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Add apps with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. These concepts will help you understand which apps you can deploy to which platform. They'll also help you understand the prerequisites that must be in place before you deploy the apps.
 
 ## App types that you can deploy

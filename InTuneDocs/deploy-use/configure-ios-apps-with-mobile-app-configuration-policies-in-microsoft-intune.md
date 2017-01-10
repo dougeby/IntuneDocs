@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Configure iOS apps with mobile app configuration policies in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use mobile app configuration policies in Microsoft Intune to supply settings that might be required when users run an app. For example, an app might require users to specify:
 
 -   A custom port number.

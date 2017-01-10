@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Specify corporate-owned devices with international mobile equipment identity (IMEI) numbers
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune lets admins import international mobile equipment identity (IMEI) numbers for mobile device platforms by using IMEI numbers to help identify corporate-owned mobile devices. After devices are enrolled in Intune, you can see devices that have imported IMEI numbers under **Groups** > **Overview** > **All Devices**. **Device group** lists devices that have imported IMEI numbers as **Corporate** in the **Ownership** column.
 
 1. In the [Microsoft Intune administration console](http://manage.microsoft.com), choose **Groups** &gt; **All Devices** &gt; **All Corporate Pre-enrolled Devices** &gt; **By IMEI (All platforms)**, and then choose **Add devices…**. You can add devices in two ways:

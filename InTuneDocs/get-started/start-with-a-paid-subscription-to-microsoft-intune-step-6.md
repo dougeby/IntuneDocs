@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Create policies and publish apps
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Before you start enrolling apps into Intune, you can enable policy settings and apps that will be deployed as soon as those devices come into management. Intune policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. You can configure policy, add apps, and deploy those apps so that devices receive settings and apps as soon as they enroll in Intune.
 
 Policies and apps are platform-specific.

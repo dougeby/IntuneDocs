@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Get notified by Microsoft Intune alerts
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Alerts keep you in touch with what's happening in Microsoft Intune.
 
 For example, alerts can notify you about the following events:

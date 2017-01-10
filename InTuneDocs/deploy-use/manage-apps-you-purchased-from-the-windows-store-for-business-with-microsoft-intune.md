@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Manage apps you purchased from the Windows Store for Business with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The [Windows Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Intune console. For example:
 * You can synchronize the list of apps you have purchased from the store with Intune.
 * Apps that are synchronized appear in the Intune administration console, and you can deploy these like any other apps.

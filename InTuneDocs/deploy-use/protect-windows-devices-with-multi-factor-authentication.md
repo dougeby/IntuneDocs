@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Protect Windows devices with multi-factor authentication
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources. MFA requires authentication factors like text authentication in addition to user names and passwords. Intune supports the use of MFA during enrollment of Windows 8.1 or later, Windows Phone 8.1, or Windows 10 Desktop and Mobile devices.
 
 >[!NOTE]

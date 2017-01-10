@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Exchange access rules for mobile devices
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Exchange access rules for mobile devices determine the level of access that those devices have to Exchange ActiveSync. These settings affect all mobile devices, including those that aren't enrolled in Microsoft Intune. You can start off by defining a **Default Rule**, which applies to any mobile device that does not have a custom rule applied to it.
 
 The following table contains the access levels that are managed by Exchange ActiveSync:
