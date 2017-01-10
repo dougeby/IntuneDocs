@@ -35,10 +35,10 @@ As the public preview progresses, and more features are added, we'll let you kno
 
 ## January 2017
 
-#### Custom app categories <!--748805-->
+### Custom app categories <!--748805-->
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
 
-#### Assign line of business apps whether or not devices are enrolled <!--748803-->
+### Assign line of business apps whether or not devices are enrolled <!--748803-->
 You can now assign line of business and apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
 
 ## December 2016 (initial release)
