@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/06/17
+ms.date: 01/10/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -266,8 +266,6 @@ If the Server certificate is installed correctly, you see all check marks in the
 - They can't receive policy, apps, and remote commands from the Intune service.
 - They show a Management State of **Unhealthy** in the administrator console.
 - Users who are protected by conditional access policies might lose access to corporate resources.
-
-Samsung has confirmed that the Samsung Smart Manager software, which ships on certain Samsung devices, can deactivate the Intune Company Portal and its components. When Company Portal is in a deactivated state, it can't run in the background and therefore can't contact the Intune service.
 
 **Resolution:** Share the following resolutions with your end users to help them regain access to corporate resources.
 
