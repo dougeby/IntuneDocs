@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Exchange ActiveSync policy settings in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the Microsoft Intune **Exchange ActiveSync** policy to configure settings that control a range of features and functionality on devices that are managed by Exchange ActiveSync.
 
 

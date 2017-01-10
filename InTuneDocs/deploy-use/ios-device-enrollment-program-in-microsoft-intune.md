@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Enroll corporate-owned Device Enrollment Program iOS devices
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune can deploy an enrollment profile that enrolls iOS devices that were bought through the Device Enrollment Program (DEP) “over the air.” The enrollment package can include setup assistant options for the device. Devices enrolled through DEP cannot be unenrolled by users.
 
 ## Apple DEP management for iOS devices with Microsoft Intune

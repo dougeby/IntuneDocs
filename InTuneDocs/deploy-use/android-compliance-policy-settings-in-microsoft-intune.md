@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Compliance policy settings for Android devices in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The policy settings described in this topic apply to devices that are running Android 4.0 and later or Samsung KNOX 4.0 and later.
 
 If you're looking for information about other platforms, select one of the following:

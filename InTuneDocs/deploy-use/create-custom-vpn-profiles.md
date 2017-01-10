@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Custom configurations for Microsoft Intune VPN profiles
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## Create a custom configuration
 You can use Intune custom configuration polices to create VPN profiles for:
 

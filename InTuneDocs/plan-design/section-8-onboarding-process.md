@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Intune implementation
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 During the onboarding phase, you’ll implement Intune into your production environment. The implementation process will consist of setting up and configuring Intune and external dependencies (if required), based on your [use case requirements](section-3-determine-use-case-requirements.md) that were reviewed in previous sections of this guide.
 
 The following section provides an overview of the Intune implementation process that includes requirements and high-level tasks. 

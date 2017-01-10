@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Compliance policy settings for Windows devices in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The policy settings described in this topic apply to devices running the Windows operating system. The following sections describe the supported Windows versions.
 
 If you are looking for information about other platforms, select one of these:

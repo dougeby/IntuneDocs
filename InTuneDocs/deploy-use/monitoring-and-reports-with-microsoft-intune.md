@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Monitoring and reports with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune offers an IT admin two ways to monitor an organization's devices. Monitoring includes the status of software licenses and actions that affect devices, like wiping a device.
 
 -   **[Reports](../deploy-use/understand-microsoft-intune-operations-by-using-reports.md)** help you monitor the status of devices that are managed by Intune. This includes software update status, an inventory of the software that is installed, and certificate compliance.

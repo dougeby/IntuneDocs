@@ -29,6 +29,8 @@ ms.suite: ems
 
 # Microsoft Intune configuration policy reference
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the information in this topic to help you decide which Microsoft Intune configuration policy you need to use to manage your devices.
 
 > [!TIP]

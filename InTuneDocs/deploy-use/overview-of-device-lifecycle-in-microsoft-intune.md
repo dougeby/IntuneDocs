@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Overview of the mobile device management (MDM) lifecycle
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 All devices that you manage have what we call a *lifecycle*. Intune can help you manage this lifecycle—from enrollment, through configuration and protection, to retiring the device when it's no longer required:
 
 ![The device lifecycle](./media/device-lifecycle.png "the Intune device lifecycle")

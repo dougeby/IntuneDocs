@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Create an Intune design
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The section of the guide should be used in parallel with other topics in Section 2. This design will be based on the information you are collecting and decisions you will be making completing the previous sections of this guide. In this design section, we’ll focus on Intune standalone, which is a Microsoft cloud-based service which resides in the cloud.
 
 Although there’s minimal on-premises infrastructure requirements, it’s still recommended to work on a design plan to make sure you’ll have the right mobile device management solution that meets your goals, objectives, and requirements.

@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Mobile device security policy settings in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > Microsoft Intune now features separate configuration policies for each device platform. These policies contain the most up-to-date settings that you can use. You can continue to use the mobile device security policy, and any existing deployments will still work. However, you should plan to migrate to the new configuration policies as soon as possible because the mobile device security policy will be removed in the future.
 

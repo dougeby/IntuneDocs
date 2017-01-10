@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Sign up for a Microsoft Intune free trial
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This article walks you through a sign-up for an Intune trial and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]

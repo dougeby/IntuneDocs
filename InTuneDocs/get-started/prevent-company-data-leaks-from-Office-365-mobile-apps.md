@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Quick Start Guide: Prevent company data leaks from Office 365 mobile apps
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune can help you secure your organization’s data using mobile application management (MAM) policies that help prevent company data leaks from Office 365 mobile apps or other line of business (LOB) apps. Intune MAM policies can be used without requiring end users to enroll their devices in Intune mobile device management (MDM). So, if you have users who do not want to enroll their BYOD iOS or Android mobile devices into a Microsoft MDM solution (Intune, Configuration Manager, or EAS), you want to protect corporate data without managing end users devices, or you are already using a non-Microsoft MDM solution, Intune can help you increase your company’s data security.   
 
 ## Is this quick start guide right for me?

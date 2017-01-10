@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Troubleshoot device enrollment in Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic provides suggestions for troubleshooting device enrollment issues. If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
 
