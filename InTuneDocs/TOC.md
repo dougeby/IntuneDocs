@@ -7,7 +7,7 @@
 ### [Other options and extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Convert to a paid subscription](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Common scenarios](understand-explore/common-ways-to-use-intune.md)
-## [Glossary](understand-explore/intune-glossary.md)
+
 
 # [Get Started](get-started/get-started.md)
 ## [Setup Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
@@ -215,3 +215,5 @@
 ## [Troubleshoot mobile application management](troubleshoot/troubleshoot-mam.md)
 
 ## [Troubleshoot Lookout Integration](troubleshoot/troubleshooting-lookout-integration.md)
+
+# [Glossary](understand-explore/intune-glossary.md)
