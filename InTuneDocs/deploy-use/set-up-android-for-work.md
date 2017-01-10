@@ -27,6 +27,8 @@ ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 
 # Enable enrollment of Android for Work devices
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 To enable management of Android for Work devices, you must add an Android for Work binding to Intune. To enroll devices that support Android for Work but were previously enrolled as regular Android device, the devices must be unenrolled and then re-enrolled.

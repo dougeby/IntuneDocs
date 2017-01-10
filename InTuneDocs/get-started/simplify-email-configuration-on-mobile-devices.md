@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Quick Start Guide: Simplify email configuration on mobile devices
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune saves your company time and resources by allowing you to deploy email (as well as VPN and WiFi) profiles to Windows, iOS and Android mobile devices managed by the Intune service. Automatically configuring email profiles can greatly improve the end-user experience and increase satisfaction levels while at the same time reduce your helpdesk costs.
 
 ## Is this quick start guide right for me?

@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Troubleshoot Endpoint Protection in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the information in this section to help you solve problems while using Microsoft Intune endpoint protection.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.

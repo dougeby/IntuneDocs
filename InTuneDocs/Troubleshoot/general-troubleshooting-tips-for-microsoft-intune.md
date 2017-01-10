@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # General troubleshooting tips for Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 After you deploy Microsoft Intune, you might encounter problems with your configuration or with client devices. Use the following resources to help you discover what's causing the problem so you can resolve it.
 
 > [!NOTE]

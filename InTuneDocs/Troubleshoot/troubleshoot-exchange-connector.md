@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Troubleshoot the Exchange Connector
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic describes how to troubleshoot issues that may be related to the Intune Exchange Connector.
 
 ## Steps for checking the Connector configuration 

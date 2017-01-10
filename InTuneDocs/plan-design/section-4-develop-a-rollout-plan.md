@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Develop an Intune rollout plan
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This section will help you to determine the organizational groups that will be targeted for your Intune rollout, as well as the rollout timeframe for each group, and the enrollment approaches that will be used.
 
 ## Determine Intune rollout targeted groups and timeframes

@@ -28,8 +28,10 @@ ms.suite: ems
 
 # Protect email access to Exchange on-premises and legacy Exchange Online Dedicated with Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!NOTE]
-> If you have an Exchange Online Dedicated environment and need to find out whether it's in the new or the legacy configuration, please contact your account manager.
+> If you have an Exchange Online Dedicated environment and need to find out whether it's in the new or the legacy configuration, contact your account manager.
 
 
 To control email access to Exchange on-premises or to your legacy Exchange Online Dedicated environment, you can configure conditional access to Exchange on-premises by using Microsoft Intune.

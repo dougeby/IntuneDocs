@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Post-configuration tasks
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 After you complete the initial configuration steps for an Intune  paid subscription, you should consider enabling additional mobile device management functionality.
 
 -   **Connect Exchange to Intune:** For users with mobile devices  that haven't  enrolled in Intune, you can enable Exchange ActiveSync management using a connector for on-premises Exchange and for Exchange Online in  Microsoft Office 365. The Exchange connector connects you to your Exchange deployment and lets you manage mobile devices through the Intune administration console. To learn more about the Exchange connector, see [Mobile device management with Exchange ActiveSync and Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).

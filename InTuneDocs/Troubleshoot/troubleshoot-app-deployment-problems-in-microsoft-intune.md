@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Troubleshoot app deployment problems in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 If you are having problems deploying and managing apps with Intune, start here. This topic contains some common problems you might encounter together with solutions.
 
 ## Common app deployment error codes

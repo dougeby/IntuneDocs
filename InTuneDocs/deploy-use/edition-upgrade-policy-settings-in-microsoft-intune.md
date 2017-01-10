@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Windows edition upgrade policy settings in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The Microsoft Intune **Edition Upgrade Policy** lets you automatically upgrade devices that run one of the following Windows 10 versions to a newer edition:
 * Windows 10 Desktop
 * Windows 10 Holographic

@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Intune network bandwidth use
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Before you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 Use the information in the following sections to plan for network traffic for Microsoft Intune clients.

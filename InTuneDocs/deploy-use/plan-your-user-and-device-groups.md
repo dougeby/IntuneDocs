@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Plan your user and device groups
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Groups in Intune give you great flexibility when you're managing your devices and users. You can set up groups to suit your organizational needs according to:
 
 - geographic location

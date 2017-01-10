@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Enroll corporate-owned iOS devices in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune supports the enrollment of corporate-owned iOS devices through the Apple Device Enrollment Program (DEP) or the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer.
 
 **Prerequisite:** An [Apple Push Notification service  certificate](set-up-ios-and-mac-management-with-microsoft-intune.md) is required.

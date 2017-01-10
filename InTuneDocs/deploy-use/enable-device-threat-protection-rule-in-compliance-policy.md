@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Enable device threat protection rule in the compliance policy
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune with Lookout mobile threat protection lets you detect threats on mobile devices and assess risk on those devices. You can create a compliance policy rule that assesses risk to determine if the device is compliant. You can then use conditional access policy to block access to services based on device compliance.
 
 Prerequisites for compliance policy with Lookout device threat protection:

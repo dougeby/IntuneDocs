@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Set up your subscription for Lookout device threat protection
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The following steps are required to set up Lookout device threat protection:
 
 | #        |Step  |
