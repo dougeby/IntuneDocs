@@ -98,4 +98,5 @@ You can find what's new in the Intune preview in Azure [here](https://docs.micro
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [What's new in the Azure preview](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [What's new archive](whats-new-archive.md)

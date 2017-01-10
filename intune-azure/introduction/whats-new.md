@@ -6,7 +6,7 @@ description: "Intune Azure preview: Find out what's new in the Intue Azure previ
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 01/06/2017
+ms.date: 01/11/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,18 @@ ms.suite: ems
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
 
+## January 2017
+
+#### Custom app categories <!--748805-->
+You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
+
+#### Assign line of business apps whether or not devices are enrolled <!--748803-->
+You can now assign line of business and apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
+
 ## December 2016 (initial release)
+
+### Telecom expense management integration in public preview of Azure portal<!--747605-->
+We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com). To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 - Deploy and manage apps from a store to iOS, Android, and Windows devices
 - Deploy and manage line of business (LOB) apps to iOS, Android, and Windows devices
