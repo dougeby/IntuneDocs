@@ -45,6 +45,10 @@ You can block apps that are not supported by Intune mobile app management (MAM) 
 ### Android 7.1.1 support <!--694397-->
 Intune now fully supports and manages Android 7.1.1.
 
+### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them
+
+When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources. See [Devices are inactive, or the admin console cannot communicate with them](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
+
 ## Notices
 
 ### Defaulting to managing Windows desktop devices through Windows settings <!--663050-->
@@ -72,10 +76,6 @@ The following articles are new additions to the docs library:
 
 * [Intune App SDK Cordova Plugin](https://docs.microsoft.com/intune/develop/intune-app-sdk-cordova)
 * [Intune App SDK Xamarin Component](https://docs.microsoft.com/intune/develop/intune-app-sdk-xamarin)
-
-### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them
-
-When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources. See [Devices are inactive, or the admin console cannot communicate with them](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
 
 <!--### Progress bar when launching the Company Portal on iOS <!--665978
 The Company Portal for iOS is introducing a progress bar on the launch screen to provide the user with information about the loading processes that occur. There will be a phased rollout of the progress bar to replace the spinner. This means that some of your users will see the new progress bar while others will continue to see the spinner.-->
