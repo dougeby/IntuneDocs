@@ -28,6 +28,8 @@ ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 
 # A new way of using groups in Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 We've heard your feedback and are making some changes to how you work with groups in Microsoft Intune.
 We are in the process of migrating all of our customers Intune groups to Azure Active Directory security groups.
 

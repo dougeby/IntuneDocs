@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Manage alerts in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the **Alerts** workspace in the Intune admin console to assess the overall health of devices in your organization and to identify problems.
 
 ## View active alerts

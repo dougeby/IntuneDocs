@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Mac OS X configuration policy settings in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune supplies a range of built-in general settings that you can configure on Mac OS X devices. Additionally, you can use the Apple Configurator tool to create custom settings that are not available from Intune.
 
 ## General configuration policy settings

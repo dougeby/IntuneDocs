@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Troubleshoot software updates in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the information in this section to help you solve software update problems in Microsoft Intune.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.

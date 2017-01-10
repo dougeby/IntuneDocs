@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Configure the Intune service to service connector for Exchange Online
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use this information to connect Microsoft Intune and Exchange Online or the new Exchange Online Dedicated service. To determine whether your Exchange Online Dedicated environment is the **new** or **legacy** version, contact your account manager. Intune only supports one Exchange connector connection of any type per subscription.
 
 ## Service to Service Connector requirements

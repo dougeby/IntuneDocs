@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Protect access to company resource based on device, network, and application risk
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can control mobile device access to corporate resources based on risk assessment conducted by Lookout, a device threat protection solution integrated with Microsoft Intune. Risk is assessed based on telemetry collected from devices by the Lookout service including:
 - Operating system vulnerabilities
 - Malicious apps installed

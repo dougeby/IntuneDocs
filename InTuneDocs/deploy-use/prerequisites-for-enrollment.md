@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Prerequisites for mobile device management in Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can enable employees to enroll their mobile devices with Intune requires the following steps. These same steps are required to manage company-owned devices.
 
 |Steps|Details|  

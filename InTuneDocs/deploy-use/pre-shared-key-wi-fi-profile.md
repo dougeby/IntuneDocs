@@ -27,6 +27,9 @@ ms.suite: ems
 
 ---
 # Use a custom policy to create a Wi-Fi profile with a pre-shared key
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Here's how to use Intune’s **Custom Configuration** to create a Wi-Fi profile with a pre-shared key. This topic also has an example of how to create an EAP-based Wi-Fi profile.
 
 > [!NOTE]

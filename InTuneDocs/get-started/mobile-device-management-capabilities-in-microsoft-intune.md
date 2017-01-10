@@ -26,6 +26,8 @@ ms.suite: ems
 ---
 # Enrolled device management capabilities of Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune lets you manage a range of devices by *enrolling* them into the service. You can enroll some device types yourself, or users can enroll using the *company portal* app. This also lets them perform operations like browsing and installing apps, ensuring that their devices are compliant with company policies, and contacting their IT support.
 
 This topic gives a full list of the capabilities that you get after you enroll your device.

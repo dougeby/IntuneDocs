@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Overview of the Microsoft Intune App SDK
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The Intune App SDK is available for both the iOS and Android platforms, and enables mobile app management features with Microsoft Intune. In addition, it strives to reduce the amount of code changes that the developer has to make.
 
 You will find that you can enable most of the SDK features without changing your app’s behavior. For enhanced end-user and IT administrator experiences, you can utilize our APIs to customize your app behavior for features that require your app participation.

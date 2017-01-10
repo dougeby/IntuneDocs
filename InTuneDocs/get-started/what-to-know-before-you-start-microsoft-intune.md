@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Prerequisites to getting started with Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Before you start setting up Microsoft Intune, review the following requirements:
 
 - [Supported devices and computers](#intune-supported-devices)

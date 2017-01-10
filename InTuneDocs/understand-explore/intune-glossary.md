@@ -27,6 +27,8 @@ ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 
 # Microsoft Intune glossary
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## A
 
 |||

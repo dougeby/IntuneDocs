@@ -28,6 +28,8 @@ ROBOTS:
 
 # Multi-factor authentication for Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune integrates Azure AD multi-factor authentication (MFA) for device enrollment to help you secure your corporate resources. MFA requires authentication factors like text authentication in addition to user names and passwords. This is supported for iOS, Android, Windows 8.1 or later, or Windows Phone 8.1 or later devices.
 
 > [!NOTE]
