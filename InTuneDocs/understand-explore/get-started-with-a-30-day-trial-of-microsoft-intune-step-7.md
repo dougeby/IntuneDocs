@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Ways to subscribe to Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 If you purchase at least 150 licenses for Microsoft Intune in an eligible plan, you can use the "FastTrack Center Benefit," a service where Microsoft specialists work with you to get your environment ready for Intune. See [FastTrack Center Benefit for Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
 
 You can convert your free Intune evaluation to a paid subscription in the following ways:

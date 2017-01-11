@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Additional resources
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## Templates
 
 Find table templates that may be helpful to use during your Intune deployment planning, design and implementation process. You can download the table templates below from [here](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0). 

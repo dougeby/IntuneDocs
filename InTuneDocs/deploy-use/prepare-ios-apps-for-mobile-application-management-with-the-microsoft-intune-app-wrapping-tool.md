@@ -26,6 +26,8 @@ ms.suite: ems
 
 # Prepare iOS apps for mobile application management with the Intune App Wrapping Tool
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the Microsoft Intune App Wrapping Tool for iOS to enable Intune app protection policies for in-house iOS apps without changing the code of the app itself.
 
 The tool is a macOS command-line application that creates a wrapper around an app. Once an app is processed, you can change the app's functionalty by deploying [app protection policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) to it.

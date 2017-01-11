@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Troubleshoot email profiles in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Listed here are some email profile issues and how to troubleshoot and resolve them.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.

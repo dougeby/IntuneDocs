@@ -25,6 +25,9 @@ ms.suite: ems
 
 ---
 # What to expect when using an app with MAM CA
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 MAM CA verifies the identity of the approved application by means of a broker app that must be present on the device:
 *  On **iOS**, the **Azure Authenticator app** is the broker app.
 * On **Android**, the **Intune Company Portal app** is the broker app. 

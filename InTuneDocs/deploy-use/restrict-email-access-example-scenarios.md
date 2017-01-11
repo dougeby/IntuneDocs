@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Protect access to email with Microsoft Intune: Example scenarios
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## Scenario 1: Block users from using noncompliant devices to access Exchange Online
 ### Scenario requirements
 - All users in the **Accounting** Azure Active Directory security group must be blocked from accessing Exchange Online if their device is not compliant with a compliance policy that you deployed.

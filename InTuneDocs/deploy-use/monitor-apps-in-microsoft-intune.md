@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Monitor app deployments in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## Monitor an app deployment
 You can see the apps that you manage and the status of any deployments in the Intune administration console. <!---App status is displayed in real-time. You don't have to wait for the device to check-in before you can see this.--->
 

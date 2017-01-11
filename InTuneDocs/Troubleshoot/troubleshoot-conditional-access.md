@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Troubleshoot conditional access
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Typically, a user is trying to access email or SharePoint and receives a prompt to enroll. That prompt will lead the user to the company portal.
 
 This topic describes what to do when your users fail to get access to resources through Intune conditional access.

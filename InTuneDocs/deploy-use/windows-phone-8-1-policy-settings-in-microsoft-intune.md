@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Windows Phone 8.1 policy settings in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune supplies a range of built-in general settings that you can configure on Windows Phone 8.1 devices. Additionally, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to create custom settings that are not available from Intune.
 
 ## General configuration settings

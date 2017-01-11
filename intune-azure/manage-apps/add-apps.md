@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,17 +45,7 @@ The following platforms are supported. Click one of the topics for more informat
 - [Windows Phone 8.1 store apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
 - [Windows store apps](/intune-azure/manage-apps/windows-store-app)
 
-
-
-
-
-
-
-
-
-
-
-
-
+> [!NOTE]
+> When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
 
 

@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Determine Intune use case scenario requirements
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In this section, you will determine the requirements for each organizational group within each use case scenario. Going through this process will help you better prepare for the other Intune deployment planning areas like architecture and design, onboarding, and rollout. It can also help identify potential gaps, and challenges related to your Intune deployment project.
 
 You might have different sets of requirements for each of your use case/sub use case scenarios and their associated organizational groups and mobile device platforms. For example, your corporate use case scenario requirements may require devices to enroll into Intune with a more restrictive set of device settings (e.g. PIN 6 characters, disabling cloud backup), as compared to your "Bring your own device" (BYOD) use case scenario, where it requires less restrictive settings (e.g. PIN 4 characters, allowing cloud backup). 

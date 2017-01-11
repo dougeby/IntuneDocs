@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Set up Android device management
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 As an Intune administrator, you can enable management of Android devices, including Samsung Knox Standard devices, from the Company Portal. Users can then enroll their devices using the Company Portal app that is available from Google Play.
 
 1.  **Set up Intune**<br>

@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Set up Windows device management
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 As an Intune admin, you can enable enrollment and management for Windows PCs in two ways:
 
 - **[Automatic enrollment with Azure Active Directory](#azure-active-directory-enrollment)** -  Windows 10 and Window 10 Mobile users enroll their devices by adding a work or school account to the device.

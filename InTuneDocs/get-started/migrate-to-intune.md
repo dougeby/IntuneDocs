@@ -30,6 +30,7 @@ ms.suite: ems
 
 # Migrate to Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 The migration to Intune from your existing enterprise mobility management solution may follow the general sequence of steps below:
 

@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Set up iOS and Mac device management
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X devices and gives users access to company email and apps. An Apple Push Notification service (APNs) certificate is required for Intune to manage iOS and Mac devices. After the certificate is added to Intune, users can install the Company Portal app to enroll their devices, or the admin can set up [corporate-owned iOS device management](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Set up Intune**<br>
@@ -53,9 +56,8 @@ Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X de
     For end-user enrollment instructions, see [Enroll your iOS device in Intune](../enduser/enroll-your-device-in-intune-ios.md) and [Enroll your Mac OS X device in Intune](../enduser/enroll-your-device-in-intune-macos.md). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
 
 	For information about other end-user tasks, see these articles:
-    - [Resources about the end-user experience with Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
-    - [End user guidance for iOS and Mac devices](../enduser/using-your-iOS-or-macOS-device-with-intune.md)
-
+    - [Resources about the end-user experience with Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    - [End user guidance for iOS and Mac devices](../enduser/using-your-ios-or-macOS-device-with-intune.md)
 
 If your company or organization buys iOS devices for users, those devices can also be enrolled for management as [company-owned iOS devices](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 

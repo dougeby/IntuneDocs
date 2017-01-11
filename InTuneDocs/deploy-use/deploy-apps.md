@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Deploy apps with Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic explains some of the concepts you need to understand before you start deploying apps with Microsoft Intune.
 
 
