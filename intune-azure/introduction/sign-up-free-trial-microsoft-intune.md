@@ -54,7 +54,7 @@ The first time you sign on to the Intune Azure preview, you may not see Intune o
 2. Choose **Intune** from the list, and select the star to add the service to the list of services.<br/> ![Image of selecting Intune from services list](./media/azure-add-intune1.png)
 3. Then choose **Intune** in the list of services to open the Intune dashboard.
 
-When you sign up for a trial, you'll receive an email message that contains your account information at the email address that you provided during the sign-up process. This email confirms your trial is active.
+When you sign up for a trial, you will also receive an email message that contains your account information at the email address that you provided during the sign-up process. This email confirms your trial is active.
 
 
 <!--- ## Add users
