@@ -37,9 +37,10 @@ As the public preview progresses, and more features are added, we'll let you kno
 
 ### Custom app categories <!--748805-->
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
+See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).
 
 ### Assign line of business apps whether or not devices are enrolled <!--748803-->
-You can now assign line of business and apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
+You can now assign line of business and apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app. See [What is app management](/intune-azure/manage-apps/what-is-app-management).
 
 ### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them
 
