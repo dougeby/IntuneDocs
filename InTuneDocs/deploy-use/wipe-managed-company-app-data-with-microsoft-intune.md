@@ -4,8 +4,8 @@
 title: Wipe managed company app data | Microsoft Docs
 description: Learn how you can selectively remove company data from devices remotely.
 keywords:
-author: NathBarnms.author: nathbarnmanager: angrobe
-ms.date: 11/08/2016
+author: stabarms.author: staciebarkermanager: angrobe
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,29 +38,31 @@ To selectively remove company app data, create a wipe request by using the steps
 
 ## Create a wipe request
 
-1.  On the **Intune Mobile application management** blade, choose the **Wipe requests** tile.
+1.  Sign in to the Azure portal, and choose **More Services** > **Other** > **Intune**.
 
-    ![Screenshot of Intune mobile application management blade with Summary tiles](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
+2.  On the Intune blade, choose **Manage apps**.
 
-2.  Choose  **New wipe requests**. This opens the **New wipe request** blade.
+3.  Choose  **New wipe requests**. This opens the **New wipe request** blade.
 
     ![Screenshot of the New wipe request blade](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
-3.  Choose **User** to open the **User** blade, and select the user whose app data you want to wipe.
+4.  Choose **User** to open the **User** blade, and select the user whose app data you want to wipe.
 
-4.  Choose **Device**.  This opens the **Device** blade that lists all the devices associated with the selected user.  Select the device you want to wipe.
+5.  Choose **Device**.  This opens the **Device** blade that lists all the devices associated with the selected user.  Select the device you want to wipe.
 
-5.  You are now back on the **New wipe request** blade. Choose **Ok** to make a wipe request. The service creates and tracks a separate wipe request for each protected app on the device.
-
+6.  You are now back on the **New wipe request** blade. Choose **Ok** to make a wipe request. The service creates and tracks a separate wipe request for each protected app on the device.
 
 ![Screenshot of the Wipe requests tile ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 ## Monitor your wipe requests
-The **Intune mobile application management** blade has a summarized report on the **Wipe request** tile.  It shows the overall status and includes the number of pending requests and failures. You can get more details by following these steps:
 
-1.  On the **Intune mobile application management** blade, choose the **Wipe request** tile to open the **Wipe request** blade.
+On the **Wipe request** tile, there is a summarized report that shows the overall status of the wipe request, and includes the number of pending requests and failures. To get more details, follow these steps:
 
-2.  On the **Wipe request** blade, you can see the list of your requests grouped by users. Because the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user. The status indicates whether a wipe request is **pending**, **failed**, or **successful**.
+1.  On the Intune blade, choose **Manage apps**.
+
+2.  On the **Wipe request** blade, choose the **Wipe request** tile to open the **Wipe request** blade.
+
+3.  On the **Wipe request** blade, you can see the list of your requests grouped by users. Because the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user. The status indicates whether a wipe request is **pending**, **failed**, or **successful**.
 
 The user must open the app for the wipe to occur, and the wipe may take up to 30 minutes after the request was made.
 

@@ -5,7 +5,7 @@ keywords: Saaswedo
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,6 +31,9 @@ Intune has integrated with the third-party software developer Saaswedo’s Datal
 
 Before you can use the Datalert service with Intune, you need to configure settings in the Datalert console and in Intune. The connection must be turned on for the Datalert service and for Intune. If the Datalert side of the connection is enabled, but not the Intune side, Intune receives the communication, but ignores it.
 
+>[!NOTE]
+>To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) for activation and Datalert support for the required software licenses.
+
 ## Supported platforms
 
 - Samsung Knox
@@ -49,8 +52,7 @@ Intune currently integrates with the following TEM providers:
 
 ## Configure Intune to work with the Datalert service
 
->[!NOTE]
->To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune). 
+ 
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
@@ -58,19 +60,34 @@ Intune currently integrates with the following TEM providers:
 2. On the **Device Configuration** blade, choose **Setup** > **Telecom Expense Management**.
 2. Under **Telecom Expense Management**, select **Connection status**.
 
-3. Select **List of TEM service providers**, and then select your provider from the list shown. A page that is specific to your provider opens. For Saaswedo, the Datalert page opens.
+3. Select **List of TEM service providers**, and then select your provider from the list shown. A page that is specific to your provider opens. For Saaswedo, the Datalert page opens. You'll need to work with Saaswedo Datalert to purchase a subscription.
 
-4. On the **Datalert** page, enter the following:
+4. In the **Datalert** management console:
 
-    a. Select **Unlock** to enable you to enter the settings on the page.
+    a. Go to the **Settings** tab, and then go to the **MDM configuration** section.
 
-	b. For **Server MDM**, choose **Microsoft Intune**.
+    b. Select **Unlock** to enable you to enter the settings on the page.
 
-    c. For **Tenant ID**, enter your Intune tenant ID, and select the **Connection** button. Selecting **Connection** makes the Datalert service check in with Intune to ensure that there are no pre-existing Datalert connections with Intune. After a few seconds, a Microsoft log-in page appears, followed by the Datalert Azure authentication.
+	c. For **Server MDM**, choose **Microsoft Intune**.
 
-    d. On the Microsoft authentication page, select **Accept**. You are redirected to a Datalert “thank you” page, which closes after a few seconds. Datalert validates the connection, and displays green check marks beside a list of items that it validated. If the validation fails, you see a message in red. If this happens, contact Datalert Support for help.
+    d. For **Tenant ID**, enter your Intune tenant ID, and select the **Connection** button. Selecting **Connection** makes the Datalert service check in with Intune to ensure that there are no pre-existing Datalert connections with Intune. After a few seconds, a Microsoft log-in page appears, followed by the Datalert Azure authentication.
 
-The Datalert service is now active, and it begins monitoring data usage and blocking cellular and roaming data on devices that exceed the configured usage limits.
+    e. On the Microsoft authentication page, select **Accept**. You are redirected to a Datalert “thank you” page, which closes after a few seconds. Datalert validates the connection, and displays green check marks beside a list of items that it validated. If the validation fails, you see a message in red. If this happens, contact Datalert Support for help.
+
+5. Wait a few minutes, and then go to the Azure portal and check that the Connection status appears as **Active**. 
+
+    >[!NOTE]
+    >To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
+
+6. Return to the Datalert management console, and configure your data lines:
+
+    a. Go to the **Settings** tab.
+
+    b. Go to the **Setup** wizard and follow the steps in the wizard.
+
+
+
+The Datalert service is now active, and it starts monitoring data usage and disabling cellular and roaming data on devices that exceed the configured usage limits.
 
 ## Turning off the Datalert service
 
@@ -88,4 +105,4 @@ If you disable the Datalert service in the Azure portal:
 
 ## Viewing data usage and roaming reports
 
-At this time, data usage reporting is available only in Saaswedo’s Datalert console.
+At this time, data usage reporting is available only in Saaswedo’s Datalert management console.
