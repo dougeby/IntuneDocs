@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Decide how to prepare apps for mobile application management with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can enable your apps to use mobile application management (MAM) policies by using either the Intune App Wrapping Tool or the Intune App SDK. Use this information to learn about these two methods and when to use them.
 
 ## Intune App Wrapping Tool

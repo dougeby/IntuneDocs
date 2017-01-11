@@ -27,4 +27,6 @@ ms.suite: ems
 
 #  Windows Phone 8.0 Company Portal app deprecated
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 As of September 2016, the Windows 8.0 Company Portal app has been deprecated. Enrolled Window 8.0 devices will remain in management but no new devices can be enrolled.

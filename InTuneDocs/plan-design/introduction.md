@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Intune Deployment Planning, Design and Implementation Guide
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 A successful Intune deployment starts with having a good plan and design. The purpose of this guide is to step you through the process of developing a deployment plan, creating a design, onboarding Intune, and conducting a production rollout.
 
 ## What’s included in this guide?

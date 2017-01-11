@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Set up iOS and Mac device management
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X devices and gives users access to company email and apps. An Apple Push Notification service (APNs) certificate is required for Intune to manage iOS and Mac devices. After the certificate is added to Intune, users can install the Company Portal app to enroll their devices, or the admin can set up [corporate-owned iOS device management](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Set up Intune**<br>

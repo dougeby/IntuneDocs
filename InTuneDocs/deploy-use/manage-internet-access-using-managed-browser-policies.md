@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Manage Internet access using managed browser policies with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The managed browser is a web browsing application that you can deploy in your organization by using Microsoft Intune. A managed browser policy configures an allow list or a block list that restricts the websites that users of the managed browser can visit.
 
 Because this app is a managed app, you can also apply mobile application management policies to the app. These policies might include controlling the use of cut, copy, and paste, preventing screen captures, and ensuring that links to content that users select open only in other managed apps. For details, see [Configure and deploy mobile application management policies in the Microsoft Intune console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).

@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Microsoft Intune service description
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune is a cloud-based service that helps you manage devices that run Windows, Mac OS X, iOS, Android, or Windows Mobile. Intune also helps protect corporate applications and data. You can use Intune alone, or you can integrate it with System Center Configuration Manager to extend your management capabilities.
 
 Microsoft offers the Intune Onboarding benefit for eligible services in eligible plans. The Onboarding benefit lets you work remotely with Microsoft specialists to get your Intune environment ready for use. For more about the Onboarding benefit, see [Microsoft Intune Onboarding Benefit Description](http://go.microsoft.com/fwlink/?LinkId=619281).

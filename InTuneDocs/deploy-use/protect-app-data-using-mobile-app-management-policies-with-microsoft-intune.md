@@ -26,6 +26,8 @@ ms.suite: ems
 
 # Protect app data using mobile application management policies with Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## How you can protect app data
 Your employees use mobile devices for both personal and work tasks. While you're making sure your employees can be productive, you also want to prevent data loss—intentional and unintentional.  In addition, you want to have the ability to protect company data that employees access by using devices that you don't manage.
 

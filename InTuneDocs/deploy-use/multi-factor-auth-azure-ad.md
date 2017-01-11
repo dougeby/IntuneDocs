@@ -27,4 +27,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 ---
 
 # This feature has not been enabled
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft is testing this feature. If you configure it, there will be no impact on your configuration, as the feature has not been enabled.

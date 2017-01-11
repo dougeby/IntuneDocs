@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Enroll devices for management in Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can enroll devices, including Windows PCs, to enable mobile device management (MDM) with Microsoft Intune. This topic describes different ways to enroll mobile devices in Intune management. The way you enroll your devices depends on the device type, ownership, and the level of management that's needed. "Bring your own device" (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs. Corporate-owned device (COD) enrollment enables management scenarios like remote wipe, shared devices, or user affinity for a device.
 
 If you use [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), either on-premises or hosted in the cloud, you can enable simple Intune management without enrollment. Windows PCs can also be managed using [Intune client software](#manage-windows-pcs-with-intune).

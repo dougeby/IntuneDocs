@@ -1,5 +1,7 @@
 # Frequently asked questions about MAM and app protection
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This article provides answers to some frequently asked questions on Intune mobile application management (MAM) and Intune app protection.
 
 ## MAM Basics

@@ -28,6 +28,9 @@ ms.suite: ems
 
 # Configure a custom domain name
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+
 When your organization signs up for a Microsoft cloud-based service like Intune, you're given an initial domain name hosted in Azure Active Directory (AD) that looks like the following: **yourdomain.onmicrosoft.com**. In this example, **yourdomain** is the domain name that you chose when you signed up, and **onmicrosoft.com** is the suffix assigned to the accounts you add to your subscription. When your organization owns a custom domain, you can configure your instance of Intune to use that domain instead of the domain name provided with your subscription.
 
 Before you create user accounts or synchronize your on-premises Active Directory, we strongly recommend that you decide whether to use only the .onmicrosoft.com domain or to add one or more of your custom domain names. Configuring a custom domain before adding users can help simplify the management of user identities for your subscription by enabling users to sign in with the credentials they use to access other domain resources.

@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 01/10/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Prerequisites to getting started with Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Before you start setting up Microsoft Intune, review the following requirements:
 
 - [Supported devices and computers](#intune-supported-devices)
@@ -47,7 +49,7 @@ Intune device management provides [these capabilities](mobile-device-management-
 
 ### Windows PC software client
 
-An [Intune software client](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) can be deployed and installed on Windows PCs as an alternate enrollment method. You can use the Intune software client to manage Windows 7 and later PCs, with the exception of Windows 10 Home edition. Managing PCs with the client software provides [these capabilities](windows-pc-management-capabilities-in-microsoft-intune.md).
+An [Intune software client](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) can be deployed and installed on Windows PCs as an alternate enrollment method. You can use the Intune software client to manage Windows 7 and later PCs. Managing PCs with the client software provides [these capabilities](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 ### Exchange ActiveSync management
 

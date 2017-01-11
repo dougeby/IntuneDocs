@@ -1,8 +1,7 @@
 ---
 # required metadata
-
-title: What's new in the Microsoft Intune Preview | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Find out what's new in the Intue Azure preview"
+title: "What's new in the Microsoft Intune Preview | Intune Azure preview | Microsoft Docs"
+description: "Intune Azure preview: Find out what's new in the Intune Azure preview"
 keywords:
 author: barlanmsft
 ms.author: barlan

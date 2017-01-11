@@ -27,6 +27,8 @@ ms.reviewer: dagerrit
 
 # Choose how to enroll mobile devices
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Your answers to this series of questions will help determine the best enrollment method for the devices you manage.
 
 ## **Do employees bring their own devices (BYOD) or are devices provided by your organization (COD)?**

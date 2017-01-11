@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Protect access to Dynamics CRM Online with Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can control access to Microsoft Dynamics CRM Online from iOS and Android devices by using Microsoft Intune conditional access.  Intune conditional access has two components:
 * A [device compliance policy](introduction-to-device-compliance-policies-in-microsoft-intune.md) that the device must comply with in order to be considered compliant.
 * A [conditional access policy](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) where you specify the conditions that the device must meet in order to access the service.

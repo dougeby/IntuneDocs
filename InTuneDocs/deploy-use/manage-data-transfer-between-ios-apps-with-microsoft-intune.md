@@ -25,6 +25,9 @@ ms.suite: ems
 ---
 
 # Manage data transfer between iOS apps with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## Manage iOS apps
 Protecting your company data includes making sure that file transfers are restricted to apps that are managed by you.  You can manage iOS apps in the following ways:
 

@@ -29,6 +29,8 @@ ms.suite: ems
 
 # Contact assisted phone support for Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## Phone numbers and business hours
 
 |Country/region|Technical support hours|Business hours|Languages supported|Toll-free phone numbers|Local phone numbers|

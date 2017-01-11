@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Overview of the app lifecycle
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The Intune app lifecycle begins when an app is added and progresses through additional phases until you remove the app.
 
 ![The app lifecycle](./media/app-lifecycle.png "the Intune app lifecycle")

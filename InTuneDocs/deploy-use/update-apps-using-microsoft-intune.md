@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Update apps using Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune can help you manage app updates. Use the information in this topic to understand how to update apps when a new version is required.
 
 ## How to update apps

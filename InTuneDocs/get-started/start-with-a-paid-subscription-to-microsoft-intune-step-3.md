@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Add users and give administrative permission to Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 As an administrator, you can add users directly or synchronize users from your on-premises Active Directory. Once added, users can enroll devices and access company resources. You can also give users additional permissions including *tenant administrator*, *service administrator*, and *device enrollment manager permissions*.
 
 This topic helps you:

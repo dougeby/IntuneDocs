@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Troubleshoot client setup in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the following information to help you troubleshoot common client setup problems. If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
 ## Client installation fails

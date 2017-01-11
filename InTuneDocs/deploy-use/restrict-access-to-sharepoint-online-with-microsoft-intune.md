@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Protect access to SharePoint Online with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] conditional access to control access to files that are located on SharePoint Online.
 Conditional access has two components:
 - A device compliance policy that the device must comply with in order to be considered compliant.

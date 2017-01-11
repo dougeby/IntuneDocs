@@ -27,6 +27,8 @@ ms.suite: ems
 ---
 # Use custom policies to allow and block apps for Samsung KNOX Standard devices
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the procedures in this topic to create a Microsoft Intune custom policy that creates one of the following:
 
 - A list of apps that are blocked from running on the device. Apps in this list are blocked from being run, even if they were already installed when the policy was applied.
