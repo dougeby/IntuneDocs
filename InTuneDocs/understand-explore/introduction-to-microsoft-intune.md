@@ -101,7 +101,7 @@ Most enterprise mobility management solutions support basic mobile device and mo
 
 Organizations differ to the extent they will adopt “without enrollment” scenarios. Some organizations standardize on it. Some allow it for companion devices such as a personal tablet. Others don’t support it at all. Even in this last case, where an organization requires all employee devices to be enrolled in MDM, these organizations typically support "without enrollment" scenarios for contractors, vendors, and for other devices that have a specific exemption.
 
-You can even use Intune’s “without-enrollment” technology on enrolled devices. For example, a device enrolled in MDM may have open-in protections provided by the mobile operating system. In addition, IT may apply the app protection policy to EMS-managed mobile apps to control save-as or to provide multi-factor authentication.
+You can even use Intune’s “without-enrollment” technology on enrolled devices. For example, a device enrolled in MDM may have open-in protections provided by the mobile operating system. (Open-in protection is an iOS feature that restricts you from opening a document from one app, like Outlook, into another app, like Word, unless both apps are managed by the MDM provider.) In addition, IT may apply the app protection policy to EMS-managed mobile apps to control save-as or to provide multi-factor authentication.
 
 Whatever your organization’s position on enrolled and unenrolled mobile devices and apps, Intune, as a part of EMS, has tools that will help increase your workforce productivity while protecting your corporate data.
 
