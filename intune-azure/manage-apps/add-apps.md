@@ -49,16 +49,3 @@ The following platforms are supported. Click one of the topics for more informat
 > When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
