@@ -38,7 +38,7 @@ ms.suite: ems
 7. In the **Edit App** blade, configure the following information. Once you are done, click **Add**:
 	- **App URL** - Enter the URL of the web site that hosts the app you want to deploy.
 	- **App Name** - Enter the name of the app as it will be displayed in the company portal.
-	- **App Description** - Enter a description for the app. This will be displayed to users in the company portal.
+	- **App Description** - Enter a description for the app. This will be displayed to end users in the company portal.
 	- **Publisher** - Enter the name of the publisher of this app.
 	- **Category (optional)** - Select one or more of the built-in app categories, or a category you created. This will make it easier for users to find the app when they browse the company portal.
 	- **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
