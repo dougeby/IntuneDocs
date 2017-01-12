@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ After you deploy the policy to your Android device or user groups, users should 
 
 > [!NOTE]
 >
-> Only the Pulse Secure connection type is supported for this profile.
+> Only the Pulse Secure and Citrix connection types are supported for this profile.
 
 
 ### Step 1: Create a VPN profile
