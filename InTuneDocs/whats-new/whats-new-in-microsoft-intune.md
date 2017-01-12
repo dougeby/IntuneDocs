@@ -19,7 +19,7 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: priyar
+ms.reviewer: cacampbell
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,8 +36,8 @@ Learn what’s new in this release of Microsoft Intune. You can also find out ab
 <!--### Actions for non-compliance <!--730266
 _Actions for non-compliance_ is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.-->
 
-<!--### In-console reports for MAM without enrollment <!--677961
-New app protection reports have been added for both enrolled devices and devices that have not been enrolled. Find out more about how you can [monitor mobile app management policies with Intune here](https://docs.microsoft.com/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune).-->
+### In-console reports for MAM without enrollment <!--677961-->
+New app protection reports have been added for both enrolled devices and devices that have not been enrolled. Find out more about how you can [monitor mobile app management policies with Intune here](https://docs.microsoft.com/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune).
 
 <!--### Conditional access for MAM with SharePoint Online <!--679339
 You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint Online.  You can get started using Intune mobile app management in the Azure portal. Look for the __Conditional Access__ section in the __Settings__ blade which will include the option for SharePoint Online. This feature will ship separately from the rest of the service release. <!--Find out more about this new feature [here](https://docs.microsoft.com/intune/deploy-use/mam-ca-for-sharepoint-online).-->
