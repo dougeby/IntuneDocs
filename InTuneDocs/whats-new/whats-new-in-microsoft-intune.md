@@ -19,7 +19,7 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: priyar
+ms.reviewer: cacampbell
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
