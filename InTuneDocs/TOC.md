@@ -44,7 +44,7 @@
 
 # [What's New](whats-new/whats-new-in-microsoft-intune.md)
 ## [What's new](whats-new/whats-new-in-microsoft-intune.md)
-## [What's new in the Azure preview](/intune-azure/introduction/whats-new?toc=%2fintunedocs%2fTOC%2f.json)
+## [What's new in the Azure preview](/intune-azure/introduction/whats-new?toc=%2fIntuneDocs%2ftoc.json)
 ## [What's new archive](whats-new/whats-new-archive.md)
 
 # Deploy and Use
