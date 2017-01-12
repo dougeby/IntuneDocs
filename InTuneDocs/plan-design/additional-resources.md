@@ -28,11 +28,11 @@ ms.suite: ems
 
 # Additional resources
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
 ## Templates
 
-Find table templates that may be helpful to use during your Intune deployment planning, design and implementation process. You can download the table templates below from [here](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0). 
+Find table templates that may be helpful to use during your Intune deployment planning, design and implementation process. You can download the table templates below from [here](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
 Here's a list of table templates for each section:
 
@@ -83,4 +83,3 @@ Check out these links for additional information that may be helpful during the 
 -   [Microsoft Virtual Academy EMS Deployment Training](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408?l=wjq9vmwvD_5805996570)
 
 -   [Enrollment Guide](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)
-
