@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,12 +33,14 @@ If you have a Samsung device, go to **Settings** > **About phone**, and check to
 
 [!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
 
-## If you have a Samsung Knox device
+## For most Android devices (non-Samsung Knox)
+
+Go to **Settings** > **About** > **Software updates**. Install the update and your device should have the correct security patch installed.
+
+## For Samsung Knox Android devices
 
 Go to **Settings** > **System updates** > **Check for new system update**. Install the update and your Samsung Knox device should have the correct security patch installed.
 
-## If you do not have a Samsung Knox device
 
-Go to **Settings** > **About** > **Software updates**. Install the update and your device should have the correct security patch installed. 
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
