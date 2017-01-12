@@ -45,8 +45,7 @@ You can block apps that are not supported by Intune mobile app management (MAM) 
 ### Android 7.1.1 support <!--694397-->
 Intune now fully supports and manages Android 7.1.1.
 
-### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them
-
+### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them <!--unknown-->
 When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources. See [Devices are inactive, or the admin console cannot communicate with them](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
 
 ## Notices
@@ -61,6 +60,9 @@ Links inside of the Company Portal app for iOS, including those to documentation
 
 ### Improving mobile app management support for selective wipe <!--581242-->
 End users will be given additional guidance on how to regain access to work or school data if that data is automatically removed due to the "Offline interval before app data is wiped" policy.<!--, or the removal of the Intune Company Portal on Android.-->
+
+### Modernizing the Company Portal website <!--753980-->
+Beginning in February, the Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Company Portal website hamburger menu](./media/CP_hamburger_menu.png) which will contain helpdesk contact details and information on existing managed devices. The landing page will be rearranged to emphasize apps that are available to users, with carousels for Featured and Recently Updated apps. You can find before and after images available on the [What's new in the Company Portal UI page](https://docs.microsoft.com/intune/whats-new/whats-new-in-company-portal-ui#January_2017).
 
 ### New documentation for app protection policies <!--583398-->
 We have updated our documentation for admins and app developers who want to enable app protection policies (known as MAM policies) in their iOS and Android apps using the Intune App Wrapping Tool or Intune App SDK.
@@ -96,4 +98,5 @@ You can find what's new in the Intune preview in Azure [here](https://docs.micro
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [What's new in the Azure preview](https://docs.microsoft.com/intune-azure/introduction/whats-new)
+* [What's new in the Company Portal UI](https://docs.microsoft.com/intune/whats-new-in-company-portal-ui)
 * [What's new archive](whats-new-archive.md)
