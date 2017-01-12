@@ -25,6 +25,9 @@ ms.suite: ems
 ---
 
 # Create an Exchange Online conditional access to only allow apps supported by MAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic gives you step-by-step instructions on how to set up conditional access for  Exchange Online to only allow mobile apps that support Intune mobile app management (MAM) policies.
 
 

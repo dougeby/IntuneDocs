@@ -1,8 +1,10 @@
 # Introduction
 ## [What is the Azure portal preview?](/intune-azure/introduction/what-is-microsoft-intune)
-<!---## [Get started](/intune-azure/introduction/get-started)
+## Get started
+<!---(/intune-azure/introduction/get-started) --->
+### [Sign up for a free trial](/intune-azure/introduction/sign-up-free-trial-microsoft-intune)
 ## [What's new](/intune-azure/introduction/whats-new)
-## [Get support](/intune-azure/introduction/get-support)
+<!--- ## [Get support](/intune-azure/introduction/get-support)
 ## [Related resources](/intune-azure/introduction/related-resources)
 
 ## [Get started](/intune-azure/plan-and-design/get-started) --->
@@ -24,8 +26,8 @@
 #### [Enroll iOS devices using the device enrollment program](/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
 ### [Enroll devices using device enrollment manager](/intune-azure/enroll-devices/enroll-devices-using-device-enrollment-manager)
 ### Enroll Windows devices
-#### [Enroll Windows Phone and Windows 10 mobile devices](/intune-azure/enroll-devices/set-up-windows-phone-management)
-#### [Enroll Windows devices as mobile devices](/intune-azure/enroll-devices/set-up-windows-device-management)
+#### [Enroll Windows Phone and Windows 10 mobile devices](/intune-azure/enroll-devices/enroll-windows-mobile-devices)
+#### [Enroll Windows PCs as mobile devices](/intune-azure/enroll-devices/enroll-windows-pcs-as-mobile-devices)
 ### Manage device enrollment
 #### [Create terms and conditions](/intune-azure/enroll-devices/create-terms-and-conditions)
 #### [Set enrollment restrictions](/intune-azure/enroll-devices/set-enrollment-restrictions)

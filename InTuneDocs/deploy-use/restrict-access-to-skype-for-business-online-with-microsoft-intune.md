@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Protect access to Skype for Business Online with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can use a conditional access policy for **Skype for Business Online** to control access to Skype for Business Online.
 Conditional access has two components:
 - A device compliance policy that the device must comply with in order to be considered compliant.

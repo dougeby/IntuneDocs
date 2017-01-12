@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Enroll iOS devices with Apple Configurator by using Setup Assistant
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune supports the enrollment of corporate-owned iOS devices using [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) running on a Mac computer. This process resets the device to factory settings and prepares it to run Setup Assistant, installing the company's policies for the device’s new user.
 
 ## Setup Assistant enrollment for iOS devices with Microsoft Intune

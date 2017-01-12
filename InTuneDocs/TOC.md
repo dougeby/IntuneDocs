@@ -7,7 +7,7 @@
 ### [Other options and extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Convert to a paid subscription](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Common scenarios](understand-explore/common-ways-to-use-intune.md)
-## [Glossary](understand-explore/intune-glossary.md)
+
 
 # [Get Started](get-started/get-started.md)
 ## [Setup Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
@@ -42,8 +42,9 @@
 ## [Section 9: Testing and validation](plan-design/section-9-test-and-validation.md)
 ## [Additional resources](plan-design/additional-resources.md)
 
-# What's New
+# [What's New](whats-new/whats-new-in-microsoft-intune.md)
 ## [What's new](whats-new/whats-new-in-microsoft-intune.md)
+## [What's new in the Azure preview](/intune-azure/introduction/whats-new)
 ## [What's new archive](whats-new/whats-new-archive.md)
 
 # Deploy and Use
@@ -215,3 +216,5 @@
 ## [Troubleshoot mobile application management](troubleshoot/troubleshoot-mam.md)
 
 ## [Troubleshoot Lookout Integration](troubleshoot/troubleshooting-lookout-integration.md)
+
+# [Glossary](understand-explore/intune-glossary.md)

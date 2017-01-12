@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Evaluate mobile device management in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This evaluation guide will show you how mobile device management works in Intune. You will:
 - Enroll a device to be managed by Intune.
 - Create groups to organize users and devices.

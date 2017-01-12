@@ -28,6 +28,8 @@ ms.reviewer: joglocke
 
 # Validating your mobile application management setup
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic provides information on checking for issues after you set up mobile application management (MAM). This guidance applies to MAM policies in the Azure portal.
 
 ### Checking for symptoms

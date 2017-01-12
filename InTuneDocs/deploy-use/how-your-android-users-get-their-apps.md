@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # How your Android users get their apps
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use this information to understand how and where your Android end users get the apps that you distribute through Microsoft Intune. The information can vary by device type (native Android devices or Samsung Knox Standard devices).
 
 ## Native (non-Samsung Knox Standard) Android devices

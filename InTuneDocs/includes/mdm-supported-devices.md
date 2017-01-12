@@ -5,7 +5,7 @@
   - Mac OS X 10.9 and later
 
 ### Windows
-  - PCs running Windows 10 (Home, Pro, Education, and Enterprise versions)
+  - PCs running Windows 10 (Pro, Education, and Enterprise versions)
   - Windows Phone 8.1 and later
   - Windows 8.1 RT
   - PCs running Windows 8.1

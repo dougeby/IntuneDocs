@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ ms.suite: ems
 
 
 1. Sign into the Azure portal.
-2. Choose **More Services** > **Other** > **Intune**.
+2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 3. On the **Intune** blade, choose **Configure devices**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 2. On the blade showing the list of profiles, choose **Create Profile**.
@@ -51,6 +51,8 @@ ms.suite: ems
 		-  [Windows Information Protection settings](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
 		-  [Education settings](/intune-azure/configure-devices/education-settings-for-ios.md)
 		-  [Custom settings](/intune-azure/configure-devices/how-to-configure-custom-settings)
+
+	![Create device profile](./media/create-device-profile.png)
 4. Once you are done configuring settings, on the **Create Profile** blade, choose **Create**.
 
 The profile will be created and appears on the profiles list blade.

@@ -29,6 +29,8 @@ ms.suite: ems
 
 # Protect email access to Exchange Online and new Exchange Online Dedicated with Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!NOTE]
 >If you have an Exchange Online Dedicated environment and need to find out whether it's in the new or the legacy configuration, contact your account manager.
 

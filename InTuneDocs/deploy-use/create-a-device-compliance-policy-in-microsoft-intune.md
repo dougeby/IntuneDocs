@@ -25,6 +25,9 @@ ms.suite: ems
 ---
 
 # Create a device compliance policy in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic outlines the steps you can use to create a compliance policy that a device must follow in order to be considered compliant.
 
 ##  Step 1: Add a new policy
