@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
+ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7searchScope: - Company Portal
 
 # optional metadata
 
