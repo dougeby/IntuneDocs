@@ -59,7 +59,7 @@ MAM policies are created at the Azure Portal. If this is the first time you are 
 
 Follow the steps below to create MAM policies:
 
-1. Go to the [Azure portal](portal.azure.com), and enter your credentials.
+1. Go to the [Azure portal](http://portal.azure.com), and enter your credentials.
 
 2. Choose **More Services**, and type "Intune".
 
