@@ -6,7 +6,7 @@ description: Set MDM authority and enable enrollment for iOS, Windows, Android, 
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 01/17/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,7 +51,7 @@ Enrollment must be enabled for iOS, Mac, and Android for Work devices establishi
 
 Enable device enrollment for the device platform you want to manage. Depending on your platform, different requirements are needed:
 
--  [iOS and macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS and macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -  [Window PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Window 10 Mobile and Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
