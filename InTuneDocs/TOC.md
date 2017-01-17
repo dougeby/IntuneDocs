@@ -73,6 +73,7 @@
 #### [Install the PC client](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [Common PC management tasks](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Resolve PC policy conflicts](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [Manage Android for Work](deploy-use/android-for-work.md)
 
 ## Configure devices
 ### [Manage settings and features on your devices with policies](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -156,11 +157,11 @@
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Block apps with no ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Protect access to networks (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Protect access based on device, network, and application risk](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [Set up Lookout device threat protection](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [Enable Lookout in Intune](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [Deploy Lookout for work apps](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [Enable device threat protection compliance policy](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [Protect access based on device, network, and application risk](deploy-use/device-threat-protection.md)
+#### [Set up Lookout device threat protection](deploy-use/device-threat-protection-subscription-setup.md)
+#### [Enable Lookout in Intune](deploy-use/device-threat-protection-enable.md)
+#### [Deploy Lookout for work apps](deploy-use/device-threat-protection-apps.md)
+#### [Enable device threat protection compliance policy](deploy-use/device-threat-protection-policy.md)
 
 ### [Protect app data with MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure portal for MAM policies](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
