@@ -1,3 +1,3 @@
 ---
-redirect_url: https://docs.microsoft.com/intune/device-threat-protection-subscription-setup
+redirect_url: https://docs.microsoft.com/intune/deploy-use/device-threat-protection-subscription-setup
 ---
