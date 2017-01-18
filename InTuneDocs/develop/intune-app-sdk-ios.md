@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft Intune App SDK for iOS developer guide | Microsoft Docs
-description: The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies--in the form of mobile app management (MAM)--into your iOS app. 
+description: The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies--in the form of mobile app management (MAM)--into your iOS app.
 keywords:
 author: mtillman
 manager: angrobe
@@ -157,7 +157,7 @@ To enable the Intune App SDK, follow these steps:
 
 9. For mobile apps developed for iOS 9+, include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Additionally, for each protocol listed, add a new protocol and append it with `-intunemam`. You must also include `http-intunemam`, `https-intunemam`, and `ms-outlook-intunemam` in the array.
 
-10. If the app has app groups defined in its entitlements, add these groups to the IntuneMAMSettings dictionary under the `AppGroupIdentitifiers` key as an array of strings.
+10. If the app has app groups defined in its entitlements, add these groups to the IntuneMAMSettings dictionary under the `AppGroupIdentifiers` key as an array of strings.
 
 11. Link your mobile application to the Azure Directory Authentication Library (ADAL). The ADAL library for Objective C is [available on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
@@ -644,6 +644,8 @@ This method should be called before the user is signed out of the application.  
 **Are there any other ways that an application can be un-enrolled?**
 
 Yes, the IT admin can send a selective wipe command to the application. This will deregister and unenroll the user, and it will wipe the user’s data. The SDK automatically handles this scenario and sends a notification via the unenroll delegate method.
+
+**
 
 ## Submit your app to the App Store
 
