@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: This feature has not been enabled| Microsoft Docs 
+title: Coming soon| Microsoft Docs 
 description:
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angerobe
-ms.date: 12/27/2016
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,8 +26,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 ---
 
-# This feature has not been enabled
+# Coming soon
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft is testing this feature. If you configure it, there will be no impact on your configuration, as the feature has not been enabled.
+This feature is currently in preview. Although it is not active yet, you can configure its options in the console. However, it will not actually be enabled.
