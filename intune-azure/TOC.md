@@ -59,8 +59,8 @@
 # Manage users
 ## [What is user management?](/intune-azure/manage-users/what-is)
 <!--- Was What is users & group management--->
-<!--- ## [Get started](/intune-azure/manage-users/get-started)
-## [Plan and design](/intune-azure/manage-users/plan-and-design) --->
+## [Get started](/intune-azure/manage-users/get-started-with-groups)
+<!--- ## [Plan and design](/intune-azure/manage-users/plan-and-design) --->
 
 <!--- ## [Troubleshoot](/intune-azure/manage-users/troubleshooting) --->
 
