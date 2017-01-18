@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/13/2017
+ms.date: 01/18/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,3 +42,8 @@ When you choose **Manage users**, you are taken to the Microsoft Azure Users and
 4. Display audit activity for group actions.
 
 ![Manage users workload](./media/manage-users.png)
+
+
+## Next step
+
+[Get started with groups](/intune-azure/manage-users/get-started-with-groups)
