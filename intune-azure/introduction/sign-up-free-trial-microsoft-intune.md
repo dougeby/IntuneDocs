@@ -30,7 +30,7 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-This article walks you through a sign-up for trial of Intune standalone for the Azure portal preview. <!---and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. ---> <!---or app data when devices are not enrolled in Intune.--->
+This article walks you through signing up for a trial of Intune standalone for the Azure portal preview. <!---and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. ---> <!---or app data when devices are not enrolled in Intune.--->
 
 <!--- ## Assumptions
 This sign-up article and the evaluation guide assume you are using the trial for evaluation purposes only and intend to start with a clean environment when you subscribe.
@@ -45,9 +45,9 @@ You can do everything in the trial version that you can do in a subscription ver
  <!--- If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) instead. However, this article assumes that you are not using such an account.---><br/> ![Image of sign-up page](./media/1-clicking-try.png)
 
  > [!TIP]
-> If most of your IT operations and users are in a different locale than you, you may want to set that locale for your trial to test performance.
+> If most of your IT operations and users are in a different locale than you, you may want to select that locale under **Where's your company located?**.
 
-2. At the end of the sign-up process, you'll get a message with your new account information. <br/> ![Image of account  information](./media/2-end-of-sign-up-process.png) <br/>At this point, if you click **You're ready to go**, you will be guided to the Office 365 Admin Center, where you can add users to your test environment. <br/><br/>However, if you want to go directly into the Intune Azure portal preview, open a new browser window, and enter **https://portal.azure.com** in the address bar. You will be taken to the Azure sign-in page where you can use your Intune credentials to sign in. Use this address whenever you want to sign into your Intune trial. <br/> ![Image of Azure portal sign-in page](./media/azure-portal-signin.png)
+2. At the end of the sign-up process, you'll get a message with your new account information. <br/> ![Image of account  information](./media/2-end-of-sign-up-process.png) <br/>At this point, if you click **You're ready to go**, you will be taken to the Office 365 Admin Center, where you can add users to your test environment. <br/><br/>However, if you want to go directly into the Intune Azure portal preview, open a new browser window, and enter **https://portal.azure.com** in the address bar. You will be taken to the Azure sign-in page where you can use the credentials you were given to sign in. Use this address whenever you want to sign into your Intune trial. <br/> ![Image of Azure portal sign-in page](./media/azure-portal-signin.png)
 
 The first time you sign on to the Intune Azure preview, you may not see Intune on your Azure dashboard. To add the Intune service to your Azure dashboard:
 1. Choose **More services >** in the list of Azure services to the left of the dashboard, and enter **Intune** in the search box.
@@ -118,7 +118,7 @@ To get from Intune back to the Office 365 Admin center, choose the **Add Users**
 There are three portals you will use for the Intune Azure preview:
 - The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) where you can explore the [capabilities of Intune in the Azure portal](what-is-microsoft-intune.md).
 - The Office 365 Admin center ([portal.office.com](https://portal.office.com)) where you can add and manage users if you are not using Azure Active Directory for that. You can also manage other aspects of your account, including billing and support.
-- The classic Intune admin console ([manage.microsoft.com](https://manage.microsoft.com)) where you can explore features that have not yet been built out on Azure.
+- The classic Intune admin console ([manage.microsoft.com](https://manage.microsoft.com)) where you can explore features that have not yet been added to Azure.
 
 Normally, you’ll do your work in the Intune dashboard, shown below. This is the site where you set up and manage your groups, policies, devices, and apps.
 
