@@ -99,7 +99,7 @@
 #### [VPN connections in Intune](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [Email profiles in Intune](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Use groups to manage users & devices](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-#### [Migrate groups to Azure](deploy-use/migrating-groups-to-azure-active-directory)
+#### [Migrate groups to Azure](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [Map devices to groups](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Understand your devices with inventory](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
