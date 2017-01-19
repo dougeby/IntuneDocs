@@ -28,7 +28,7 @@ ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 
 # Get started with groups in the Intune Azure portal preview
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[azure preview](../includes/azure_preview.md)]
 
 We've heard your feedback and have made changes to how you work with groups in Microsoft Intune.
 If you are using Intune from the Azure portal, your Intune groups have been migrated to Azure Active Directory security groups.
@@ -88,6 +88,3 @@ Attributes are device properties that may be used in defining groups. This table
 ## What happens to policies and apps you previously deployed?
 
 Policies and apps continue to be deployed to groups, just like before. However, you'll now manage these groups from the Azure portal, instead of the classic Intune console.
-
-	 
-
