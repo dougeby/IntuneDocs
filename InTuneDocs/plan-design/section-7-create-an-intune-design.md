@@ -141,7 +141,7 @@ Let’s explore in more detail these common external dependencies below
 
 ### Identity
 
-Identity is how we identify the users who below to your organization and are enrolling a device. Intune requires Azure Active Directory (Azure AD) as the user identity provider. If you already use this service, you’ll be able to leverage your existing identity already in the cloud. In addition, Azure AD Connect is the recommended tool to synchronize your on-premises user identities with Microsoft cloud services. If your organization is already using Office 365, it’s important that Intune uses the same Azure Active Directory environment.
+Identity is how we identify the users who belong to your organization and are enrolling a device. Intune requires Azure Active Directory (Azure AD) as the user identity provider. If you already use this service, you’ll be able to leverage your existing identity already in the cloud. In addition, Azure AD Connect is the recommended tool to synchronize your on-premises user identities with Microsoft cloud services. If your organization is already using Office 365, it’s important that Intune uses the same Azure Active Directory environment.
 
 You can find more information regarding Intune’s Identity requirements below.
 
@@ -153,7 +153,7 @@ You can find more information regarding Intune’s Identity requirements below.
 
 ### User and device groups
 
-User and device groups determines the target of a deployment. This could include deployment targeting for policies, applications, and profiles. Intune cloud only support user and device groups – you’ll need to determine what user and device groups will be required. It’s recommended that all groups are created in the on-premises Active Directory, then synchronized to Azure Active Directory. You can find more information about user and device group planning and creation below.
+User and device groups determines the target of a deployment. This could include deployment targeting for policies, applications, and profiles. Intune cloud-only supports user and device groups – you’ll need to determine what user and device groups will be required. It’s recommended that all groups are created in the on-premises Active Directory, then synchronized to Azure Active Directory. You can find more information about user and device group planning and creation below.
 
 -   Learn more about [planning your user and device groups](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
