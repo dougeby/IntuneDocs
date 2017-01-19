@@ -141,7 +141,7 @@
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
 
 ### [Configure Windows Information Protection settings](configure-devices/how-to-configure-windows-information-protection.md)
-### [Configure iOS education settings](configure-devices/education-settings-for-ios.md)
+<!--- ### [Configure iOS education settings](configure-devices/education-settings-for-ios.md) --->
 
 ### [Configure custom settings](configure-devices/how-to-configure-custom-settings.md)
 #### [Android](configure-devices/custom-for-android.md)
