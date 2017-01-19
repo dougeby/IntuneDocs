@@ -612,6 +612,12 @@ Here are recommended best practices for developing for iOS:
 
 ## FAQ
 
+
+**Are all of the APIs addressable through native Swift or the Objective-C and Swift interoperability?**
+
+The Intune App SDK APIs are in objective-C only and do not support native Swift.  
+
+
 **Do all users of my application need to be registered with the MAM service?**
 
 No. In fact, only work or school accounts should be registered with the Intune App SDK. Apps are responsible for determining if an account is used in a work or school context.   
@@ -645,7 +651,7 @@ This method should be called before the user is signed out of the application.  
 
 Yes, the IT admin can send a selective wipe command to the application. This will deregister and unenroll the user, and it will wipe the user’s data. The SDK automatically handles this scenario and sends a notification via the unenroll delegate method.
 
-**
+
 
 ## Submit your app to the App Store
 
