@@ -9,7 +9,7 @@
 
 ## [Get started](plan-and-design/get-started.md) --->
 
-# [Plan and Design](/intune/plan-design/introduction?toc=%2fintune-azure%2ftoc.json)
+# [Plan and design](/intune/plan-design/introduction?toc=%2fintune-azure%2ftoc.json)
 ## [Section 1: Determine deployment goals, objectives and challenges](/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges?toc=%2fintune-azure%2ftoc.json)
 ## [Section 2: Identify use case scenarios](/intune/plan-design/section-2-identify-use-case-scenarios?toc=%2fintune-azure%2ftoc.json)
 ## [Section 3: Determine use case scenario requirements](/intune/plan-design/section-3-determine-use-case-requirements?toc=%2fintune-azure%2ftoc.json)
@@ -141,7 +141,7 @@
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
 
 ### [Configure Windows Information Protection settings](configure-devices/how-to-configure-windows-information-protection.md)
-<!--- ### [Configure iOS Education settings](configure-devices/education-settings-for-ios.md) --->
+<!--- ### [Configure iOS education settings](configure-devices/education-settings-for-ios.md) --->
 
 ### [Configure custom settings](configure-devices/how-to-configure-custom-settings.md)
 #### [Android](configure-devices/custom-for-android.md)
