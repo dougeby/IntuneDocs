@@ -110,3 +110,10 @@ This article provides answers to some frequently asked questions on Intune mobil
 ## App experience on iOS
 
 **I am able to use the iOS share extension to open work or school data in unmanaged apps, even with the data transfer policy set to "managed apps only" or "no apps." Doesn't this leak data?** Intune app protection policy cannot control the iOS share extension without managing the device. Therefore, Intune _**encrypts "corporate" data before it is shared outside the app**_. You can validate this by attempting to open the "corporate" file outside of the managed app. The file should be encrypted and unable to be opened outside the managed app.
+
+### See also
+- [Android mobile app management policy settings in Microsoft Intune](android-mam-policy-settings.md)
+- [iOS mobile app management policy settings](ios-mam-policy-settings.md)
+- [Validating your mobile application management setup](validate-mobile-application-management.md)
+- [Get ready to configure mobile app management policies with Microsoft Intune](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+- [How to get support for Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
