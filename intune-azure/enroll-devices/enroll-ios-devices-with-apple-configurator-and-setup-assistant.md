@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Enroll iOS devices with Apple Configurator and Setup Assistant in Intune Azure preview
+# Enroll iOS devices with Apple Configurator and Setup Assistant 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

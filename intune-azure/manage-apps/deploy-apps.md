@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to assign apps to groups with Intune Azure preview
+# How to assign apps to groups
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

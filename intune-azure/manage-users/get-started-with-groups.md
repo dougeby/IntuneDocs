@@ -26,9 +26,9 @@ ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 
 ---
 
-# Get started with groups in the Intune Azure portal preview
+# Get started with groups
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[azure preview](../includes/azure_preview.md)]
 
 We've heard your feedback and have made changes to how you work with groups in Microsoft Intune.
 If you are using Intune from the Azure portal, your Intune groups have been migrated to Azure Active Directory security groups.
@@ -47,7 +47,7 @@ Some of the Intune groups capabilities you previously might have used are not av
 - The **All Exchange ActiveSync Managed Devices** group that's built-in to the Intune console was not migrated to Azure AD. However, you can still access information about EAS managed devices from the Azure portal.
 
 
-## How to get started
+## How to get started?
 
 - Read the following Azure AD topics to learn about Azure AD security groups and how they work:
 	-  [Managing access to resources with Azure Active Directory groups](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
@@ -65,9 +65,9 @@ Some of the Intune groups capabilities you previously might have used are not av
 |Dynamic user group|Static Azure AD security groups with an Azure AD security group hierarchy|
 |Static device group|Static Azure AD security group|
 |Dynamic device group|Dynamic Azure AD security group|
-|A group with an include condition|Static Azure AD security group containing any static or dynamic members from the include condition in Intune.|
+|A group with an include condition|Static Azure AD security group containing any static or dynamic members from the include condition in Intune|
 |A group with an exclude condition|Not migrated|
-|The built-in groups, **All Users**, **Ungrouped Users**, **All Devices**, **Ungrouped devices**, **All Computers**, **All Mobile Devices**, **All MDM managed devices**, and **All EAS managed devices**|Azure AD security groups.|
+|The built-in groups, **All Users**, **Ungrouped Users**, **All Devices**, **Ungrouped devices**, **All Computers**, **All Mobile Devices**, **All MDM managed devices**, and **All EAS managed devices**|Azure AD security groups|
 
 In Intune, all groups have to have a parent group. Groups can only contain members from their parent group. In Azure AD, child groups can contain members that the parent group does not have.
 
@@ -88,6 +88,3 @@ Attributes are device properties that may be used in defining groups. This table
 ## What happens to policies and apps you previously deployed?
 
 Policies and apps continue to be deployed to groups, just like before. However, you'll now manage these groups from the Azure portal, instead of the classic Intune console.
-
-	 
-

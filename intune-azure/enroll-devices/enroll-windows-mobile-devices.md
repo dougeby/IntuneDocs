@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Enroll Windows phone and Windows 10 Mobile devices for Intune Azure preview
+# Enroll Windows phone and Windows 10 Mobile devices 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

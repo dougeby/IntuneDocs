@@ -26,15 +26,15 @@ ms.suite: ems
 
 ---
 
-# What is the Manage Users workload in Intune Azure preview?
+# What is user management?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 If you are new to Intune in the Azure portal, remember that you no longer create Intune-specific groups. Intune uses Azure AD groups just like many other applications that you use.
-If you want to learn more about how to work with groups in Azure AD, see [Managing access to resources with Azure Active Directory groups](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups)
+If you want to learn more about how to work with groups in Azure AD, see [Managing access to resources with Azure Active Directory groups](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups).
 
-When you choose **Manage users**, you are taken to the Microsoft Azure Users and groups workload where you can perform the following actions
+When you choose **Manage users**, you are taken to the Microsoft Azure Users and groups workload where you can perform the following actions:
 
 1. See overview information about the users and groups you manage.
 2. See details about all users you manage with Azure.

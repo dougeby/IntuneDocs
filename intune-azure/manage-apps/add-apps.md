@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to add an app to Intune Azure preview
+# How to add an app 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -48,7 +48,7 @@ The following platforms are supported. Click one of the topics for more informat
 > [!NOTE]
 > When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
 
-<!--- ## How to create and edit categories for apps 
+## How to create and edit categories for apps 
 
 App categories can be used to help you sort apps to make them easier for end users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**. 
 When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app, and assign categories. To create and edit your own categories, use the following procedure: 
