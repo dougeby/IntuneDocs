@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Identify Intune use case scenarios
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
 Mobile device management use case scenarios describe the user type or role and the ownership of their device (e.g. company or personal). User case scenarios are helpful because they let you to segment your users into manageable groups. Identifying your use case scenarios is an important part of the planning process for a successful Intune deployment.
 
@@ -58,7 +58,7 @@ Here are a few examples of use case and sub use case scenarios. You can utilize 
 |:---:|:---:|
 | Corporate | Information worker |              
 | Corporate | Executives |           
-| Corporate | Kiosk | 
+| Corporate | Kiosk |
 | BYOD | Information worker |           
 | BYOD | Executives |
 
@@ -70,9 +70,9 @@ Now you need to identify the organizational groups that are associated with each
 |:---:|:---:|:---:|
 | Corporate | Information worker | HR, Finance |               
 | Corporate | Executive | HR, Finance |            
-| Corporate | Kiosk | Retail | 
+| Corporate | Kiosk | Retail |
 | BYOD | Information worker | Marketing, Sales |            
-| BYOD | Executive | Marketing, Sales | 
+| BYOD | Executive | Marketing, Sales |
 
 ## Identify mobile device platforms for use case scenarios
 
@@ -82,9 +82,9 @@ Here you’ll identify the mobile device platforms associated with each use case
 |:---:|:---:|:---:|:---:|
 | Corporate | Information worker | HR, Finance | iOS |                                                           
 | Corporate | Executives | HR, Finance | iOS |                                                           
-| Corporate | Kiosk | Retail | Android | 
+| Corporate | Kiosk | Retail | Android |
 | BYOD | Information worker | Marketing, Sales | iOS |                                                           
-| BYOD | Executives | Marketing, Sales | iOS | 
+| BYOD | Executives | Marketing, Sales | iOS |
 
 ## Next Section
 
