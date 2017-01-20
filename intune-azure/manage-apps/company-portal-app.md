@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to configure the Company Portal app in Intune Azure preview
+# How to configure the Company Portal app
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

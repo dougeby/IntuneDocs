@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# What are app protection policies in Intune Azure preview?
+# What are app protection policies?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to manage apps you purchased from the Windows Store for Business with Intune Azure preview
+# How to manage apps you purchased from the Windows Store for Business
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to use device categories in Intune Azure preview
+# Map device groups
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

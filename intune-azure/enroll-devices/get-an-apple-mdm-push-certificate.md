@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Get an Apple MDM Push certificate in Intune Azure preview
+# Get an Apple MDM Push certificate 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

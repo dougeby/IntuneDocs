@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to use app configuration policies with Intune Azure preview
+# How to use app configuration policies
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

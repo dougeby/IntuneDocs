@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to add IMEI identifiers to Intune Azure preview
+# Add corporate identifiers
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
