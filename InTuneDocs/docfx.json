@@ -36,7 +36,8 @@
       "breadcrumb_path": "/enterprise-mobility/toc.json",
       "product_feedback_displaytext" : "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
-      "contributors_to_exclude": [ "herohua" ]
+      "contributors_to_exclude": [ "herohua" ],
+      "searchScope": ["Intune"]
     }
   }
 }
