@@ -44,7 +44,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 <td>
 
-<img src="![Company Portal website before February 2017](https://docs.microsoft.com/intune/whats-new/CP_website_before_Feb_2017.png)">
+<img src="![Company Portal website before February 2017](https://docs.microsoft.com/intune/media/CP_website_before_Feb_2017.png)">
 
 </td>
 
@@ -52,7 +52,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 <td>
 
-<img src="![Company Portal website after February 2017](https://docs.microsoft.com/intune/whats-new/CP_website_after_Feb_2017.png)">
+<img src="![Company Portal website after February 2017](https://docs.microsoft.com/intune/media/CP_website_after_Feb_2017.png)">
 
 </td>
 
