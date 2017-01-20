@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Enroll Android devices in Intune Azure preview
+# Enroll Android devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

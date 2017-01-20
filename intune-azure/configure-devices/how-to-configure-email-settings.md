@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure email settings in the Microsft Intune Azure preview
+# How to configure email settings 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

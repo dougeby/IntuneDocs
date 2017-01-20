@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# Set terms and conditions in Intune Azure preview
+# Set terms and conditions 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

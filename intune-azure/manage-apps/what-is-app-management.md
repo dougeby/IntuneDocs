@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# What is app management with the Intune Azure preview?
+# What is app management?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

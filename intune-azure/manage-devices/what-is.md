@@ -4,7 +4,8 @@
 title: Manage devices with Intune | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to view the devices you manage with Intune, and perform various operations on them."
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 01/08/2017
 ms.topic: get-started-article
@@ -25,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Manage devices with Intune Azure preview
+# What is device management? 
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

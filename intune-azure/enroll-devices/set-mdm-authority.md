@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# Set the mobile device management authority in Intune Azure preview
+# Set the mobile device management authority 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

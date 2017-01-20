@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# Set enrollment restrictions in Intune Azure preview
+# Set enrollment restrictions 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

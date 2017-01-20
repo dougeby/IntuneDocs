@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure Windows 10 edition upgrades with Intune Azure preview
+# How to configure Windows 10 edition upgrades 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
