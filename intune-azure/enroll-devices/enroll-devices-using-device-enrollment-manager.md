@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# Enroll devices using device enrollment manager in Intune Azure preview
+# Enroll devices using device enrollment manager
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
