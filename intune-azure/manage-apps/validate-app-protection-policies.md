@@ -4,7 +4,9 @@
 title: Validate your app protection setup | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: This topics describes how you can test and validate if your app protection policy is set up correctly and working as expected."
 keywords:
-author: NathBarnms.author: nathbarnmanager: angerobe
+author: NathBarn
+ms.author: nathbarn
+manager: angerobe
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
@@ -24,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to validate your app protection policy setup in Intune Azure preview
+# How to validate your app protection policy setup
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

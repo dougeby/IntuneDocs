@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# What is Microsoft Intune device enrollment in Intune Azure preview
+# What is device enrollment?
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 This topic describes enrollment and lists the different ways to enroll mobile devices in Intune management.

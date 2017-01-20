@@ -4,7 +4,8 @@
 title: How to use Windows Hello for Business | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
@@ -25,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to use Windows Hello for Business with Intune Azure preview
+# Use Windows Hello for Business
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

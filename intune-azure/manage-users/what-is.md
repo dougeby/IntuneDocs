@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# What is the Manage Users workload in Intune Azure preview?
+# What is user management?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

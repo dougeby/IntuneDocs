@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to add an app to Intune Azure preview
+# How to add an app 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

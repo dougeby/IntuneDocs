@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure custom device settings in Intune Azure preview
+# How to configure custom device settings
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

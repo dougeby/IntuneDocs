@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Add Apple Configurator serial numbers in Intune Azure preview
+# Add Apple Configurator serial numbers 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
