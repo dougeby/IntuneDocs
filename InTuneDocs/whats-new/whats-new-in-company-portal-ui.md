@@ -64,12 +64,6 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 </html>
 
-
-
-
-
-
-
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
