@@ -4,7 +4,8 @@
 title: What are device profiles in Microsoft Intune? | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn about Intune device profiles and how they can help manage and protect devices in your company."
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: get-started-article
@@ -25,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Configure device settings and features with device profiles in Intune Azure preview
+# What are device profiles?
 <!--- This topic doesn't really answer the topic title: What are device profiles?" It needs to answer that question, then it can go on to discuss what profiles are in Intune and how to use them. Linda--->
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

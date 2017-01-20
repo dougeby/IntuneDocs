@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to create device configuration profiles in Intune Azure preview
+# How to create device configuration profiles 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

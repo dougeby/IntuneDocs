@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure Wi-Fi settings in Intune Azure preview
+# How to configure Wi-Fi settings 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

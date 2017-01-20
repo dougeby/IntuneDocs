@@ -4,7 +4,9 @@
 title: Monitor app protection policies with Intune | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: See how many users have the policy, and drill down to find more details."
 keywords:
-author: NathBarnms.author: nathbarnmanager: angrobe
+author: NathBarn
+ms.author: nathbarn
+manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
@@ -24,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to monitor app protection policy user status with Microsoft Intune
+# How to monitor app protection policy user status
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 **If you are not in the Intune new Azure portal preview program**, this topic explains [how to create app protection policies](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the classic Intune console.
