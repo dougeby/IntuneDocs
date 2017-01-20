@@ -34,6 +34,8 @@ Learn what updates we've made to the Company Portal UI in this release of Micros
 ### Modernizing the Company Portal website <!--753980-->
 Beginning in February, the Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Company Portal website hamburger menu](../media/CP_hamburger_menu.png) which will contain helpdesk contact details and information on existing managed devices. The landing page will be rearranged to emphasize apps that are available to users, with carousels for Featured and Recently Updated apps. You can find before and after images available on the [What's new in the Company Portal UI page](https://docs.microsoft.com/intune/whats-new/whats-new-in-company-portal-ui).
 
+![Company Portal website before February 2017](../media/CP_website_before_Feb_2017.png)
+
 <html>
 
 <body>
@@ -44,7 +46,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 <td>
 
-<img src="![Company Portal website before February 2017](https://docs.microsoft.com/intune/media/CP_website_before_Feb_2017.png)">
+<img src="![Company Portal website before February 2017](../media/CP_website_before_Feb_2017.png)">
 
 </td>
 
@@ -52,7 +54,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 <td>
 
-<img src="![Company Portal website after February 2017](https://docs.microsoft.com/intune/media/CP_website_after_Feb_2017.png)">
+<img src="![Company Portal website after February 2017](../media/CP_website_after_Feb_2017.png)">
 
 </td>
 
@@ -63,6 +65,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 </body>
 
 </html>
+
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
