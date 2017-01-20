@@ -44,7 +44,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 <td>
 
-<img src="https://review.docs.microsoft.com/InTune/media/CP_website_before_Feb_2017.png" style="float: left; margin-right: 5px; margin-bottom: 10px;>
+<img src="https://review.docs.microsoft.com/InTune/media/CP_website_before_Feb_2017.png" style="float: left; margin-right: 5px; margin-bottom: 10px;">
 
 </td>
 
@@ -52,7 +52,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 <td>
 
-<img src="https://review.docs.microsoft.com/InTune/media/CP_website_after_Feb_2017.png" style="float: right; margin-left: 5px; margin-bottom: 10px;>>
+<img src="https://review.docs.microsoft.com/InTune/media/CP_website_after_Feb_2017.png" style="float: right; margin-left: 5px; margin-bottom: 10px;">
 
 </td>
 
