@@ -4,8 +4,8 @@
 title: Frequently asked questions about MAM and app protection
 description: This article provides answers to some frequently asked questions on Intune mobile application management (MAM) and Intune app protection.
 keywords: 
-author: oldang
-ms.author: oldang
+author: oydang
+ms.author: oydang
 manager: mtillman
 ms.date: 01/20/2017
 ms.topic: article
@@ -19,7 +19,7 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: oldang
+ms.reviewer: oydang
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
