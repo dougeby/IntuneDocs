@@ -1,10 +1,9 @@
-
 ---
 # required metadata
 
-title: “Frequently asked questions about MAM and app protection"
-description: "This article provides answers to some frequently asked questions on Intune mobile application management (MAM) and Intune app protection."
-keywords: "FAQ", "MAM"
+title: Frequently asked questions about MAM and app protection
+description: This article provides answers to some frequently asked questions on Intune mobile application management (MAM) and Intune app protection.
+keywords: 
 author: oldang
 ms.author: oldang
 manager: mtillman
