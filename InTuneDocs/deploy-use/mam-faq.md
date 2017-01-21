@@ -1,5 +1,7 @@
 
 ---
+# required metadata
+
 title: “Frequently asked questions about MAM and app protection"
 description: "This article provides answers to some frequently asked questions on Intune mobile application management (MAM) and Intune app protection."
 keywords: "FAQ", "MAM"
@@ -12,6 +14,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: oldang
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
 
 # Frequently asked questions about MAM and app protection
