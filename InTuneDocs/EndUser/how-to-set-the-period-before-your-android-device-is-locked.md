@@ -26,6 +26,7 @@ ms.suite: ems
 ---
 
 # How to set the period before your Android device is locked
+
 To reconnect to your work, you’ll need to set the password timeout on your device by following the steps for the type of device you have.
 
 ## Native (non-Samsung KNOX) device
