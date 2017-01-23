@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Compliance policy settings for AFW | Microsoft Docs
+title: Compliance settings Android for Work | Microsoft Docs
 description: This topic describes the device compliance policy settings for Android devices that are compatible with Android for Work.
 keywords:
 author: andredm7ms.author: andredm
