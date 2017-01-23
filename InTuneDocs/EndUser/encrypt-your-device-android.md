@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Encrypt your device | Microsoft Docs
-description: Describes how to encrypt an Android device
+title: How to protect your Android device with encryption | Microsoft Docs
+description: Protect your Android device
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,9 +27,12 @@ ms.suite: ems
 ---
 
 
-# Encrypt your device
+# How to protect your Android device using encryption
 
-If your company or organization asks you to encrypt your Android device before you can access company files, email, or data, follow these steps below to encrypt your device. You might be asked to set a PIN or password before encrypting if your IT admin requires one.
+When you encrypt a device, you are wrapping the information on it in a layer of protective code that prevents unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to encrypt your Android device before you can access company files, email, or data.
+
+> [!Note]
+> You might be asked to set a PIN or password before encrypting if your IT admin requires one.
 
 If you unenroll your phone, it will remain encrypted.
 
