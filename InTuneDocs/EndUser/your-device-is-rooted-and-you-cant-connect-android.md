@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Your Android device is rooted and you can't connect | Microsoft Docs
+title: Your Android device is rooted and can't connect | Microsoft Docs
 description:
 keywords:
 author: barlanmsft

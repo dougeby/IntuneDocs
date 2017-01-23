@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: How to set the period before your Android device is locked | Microsoft Docs
+title: Set how much time before your screen locks | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# How to set the period before your Android device is locked
+# How to set the amount of time before your Android device locks its screen
 
 To reconnect to your work, you’ll need to set the password timeout on your device by following the steps for the type of device you have.
 
