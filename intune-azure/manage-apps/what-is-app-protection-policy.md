@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: What is app protection policies in Intune | Intune Azure preview | Microsoft Docs
+title: What are app protection policies | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Use this topic to learn to protect your company data with Microsoft Intune app protection policies."
 keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 01/23/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
