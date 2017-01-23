@@ -6,7 +6,7 @@ description: Describes how to unenroll an Android device from Intune
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Unenroll your Android device from Intune
+# How to unenroll your Android device from Intune
 
 When you unenroll your Android device from Intune, your device can no longer access company resources.  For more about what happens when you unenroll, see [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 

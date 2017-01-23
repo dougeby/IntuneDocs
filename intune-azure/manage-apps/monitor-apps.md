@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to monitor apps with Intune | Intune Azure preview | Microsoft Docs
+title: How to monitor app assignments | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: After you've assigned an app to users or devices, use this information to help you monitor its status."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to monitor apps
+# How to monitor app assignments
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
