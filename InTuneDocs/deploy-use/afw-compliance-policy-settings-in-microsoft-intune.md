@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Compliance policy settings for Android for Work | Microsoft Docs
+title: Compliance settings Android for Work | Microsoft Docs
 description: This topic describes the device compliance policy settings for Android devices that are compatible with Android for Work.
 keywords:
 author: andredm7ms.author: andredm
 manager: angrobe
-ms.date: 11/13/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

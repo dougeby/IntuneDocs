@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: You need to resolve a threat that Lookout for Work found on your iOS device | Microsoft Docs
+title: Resolving threats found by Lookout for Work on iOS | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 # You need to resolve a threat found by Lookout for Work
 
-Lookout for Work has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see might look something like this one: 
+Lookout for Work has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see might look something like this one:
 
 ![Out of compliance message from Lookout from Work](./media/ios-lfw-noncompliant-in-ssp.png)
 
@@ -52,5 +52,3 @@ If you see something like this, tap the app name shown at the top of your screen
 After you uninstall the app, you regain access to your email and other company or school data right away. If you ignore the request to uninstall the app, you will lose access to your company email and data until you uninstall the app.
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-

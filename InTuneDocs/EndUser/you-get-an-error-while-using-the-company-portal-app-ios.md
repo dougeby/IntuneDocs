@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: You get an error while using the Company Portal app | Microsoft Docs
+title: You get an error in the Company Portal app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
