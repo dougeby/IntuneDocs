@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Compliance policy settings for iOS devices | Microsoft Docs
+title: Compliance policy setting for iOS devices | Microsoft Docs
 description: This topic describes the rules and settings that you can set in a compliance policy for iOS devices.
 keywords:
 author: andredm7
