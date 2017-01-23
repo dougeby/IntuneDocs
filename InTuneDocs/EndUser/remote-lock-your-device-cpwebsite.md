@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Remotely lock your device from the Company Portal website | Microsoft Docs
+title: Lock your device from the Company Portal | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

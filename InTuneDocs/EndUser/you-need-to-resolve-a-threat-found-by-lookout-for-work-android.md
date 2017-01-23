@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: You need to resolve a threat that Lookout for Work found on your Android device | Microsoft Docs
+title: Resolving threats found by Lookout for Work on Android | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,5 +50,3 @@ If you have installed an app that Lookout for Work thinks is a threat, you'll se
 After you uninstall the app, you regain access to your company email and data right away. If you ignore the request to uninstall the app, you will lose access to your email and data until you uninstall the app.
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
