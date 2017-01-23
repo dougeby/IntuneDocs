@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Password does not meet IT administrator requirements | Microsoft Docs
+title: Your password does not meet your IT admin's requirements | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 ---
 
-# Password does not meet IT administrator requirements
+# Your password does not meet your IT admin's requirements
 
 The password that you use to access your company or school resources does not meet one or more requirements that your IT admin has set up. To fix the issue, follow the instructions that are shown on your device. Descriptions of the issues are listed below.
 

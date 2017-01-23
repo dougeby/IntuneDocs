@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Install a new version of the Company Portal app | Microsoft Docs
+title: How to update the Company Portal app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 ---
 
-# Install a new version of the Company Portal app
+# How to update the Company Portal app
 
 If your version of the Company Portal app is no longer supported, or there is a newer version of the Company Portal app available, you need to update it to a later version. Use the steps  that match the type of device you have.
 

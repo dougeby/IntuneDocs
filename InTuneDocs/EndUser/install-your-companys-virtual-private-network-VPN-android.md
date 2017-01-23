@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# Install your company's Virtual Private Network (VPN)
+# How to install your company's Virtual Private Network (VPN)
 
 If your IT administrator has configured a VPN application to enable you to  connect to your company's resources, you'll see a notification on your Android device indicating that you need to install a VPN app. Follow these steps to install the VPN app:
 
@@ -38,5 +38,3 @@ If your IT administrator has configured a VPN application to enable you to  conn
 
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
