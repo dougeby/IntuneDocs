@@ -2,7 +2,7 @@
 # required metadata
 
 title: Your Windows version isn't yet supported | Microsoft Docs
-description:
+description: 
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
