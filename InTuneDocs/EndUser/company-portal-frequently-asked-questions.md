@@ -2,11 +2,11 @@
 # required metadata
 
 title: What is the Company Portal? | Microsoft Docs
-description:
+description: Find out more about the Company Portal app.
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.suite: ems
 ## What is the Company Portal and what can you do with it?
 The Company Portal gives you access to the data and apps of your company or school. You can get the Company Portal two different ways:
 
-- By installing the Company Portal app on your device. You typically get the Company Portal app by going to the app store on your device, but your IT administrator can also install the Company Portal app for you.
+- By installing the Company Portal app on your device. You typically get the Company Portal app by going to the app store on your device, but your IT admin can also install the Company Portal app for you.
 - By going to the [Company Portal website](http://portal.manage.microsoft.com) that your IT administrator set up.
 
 There are a few minor differences between the Company Portal app and the Company Portal website, but you can do most of the same tasks on both. Following are some tasks you can do:
@@ -62,7 +62,7 @@ To learn about what your IT administrator can and can't see on your device, use 
 
 ## What kind of computers or devices can you add to the Company Portal?
 
--   Apple devices using iOS (iPhone, iPad) and macOS (iMac, MacBook)
+-   Apple devices using iOS (such as iPhone and iPad) and macOS (such as MacBook and iMac)
 
 -   Android devices
 
@@ -96,4 +96,4 @@ To see how to reset your device, choose one of the following links:
 For you to be able to see a device, it must first be added to the Company Portal. Go to the Company Portal as directed by your administrator and follow the steps for your device. You also won’t see devices that are owned and managed by your company.
 
 ## If you have questions, contact your IT administrator
-If you need help, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+If you need help, contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
