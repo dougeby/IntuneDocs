@@ -7,7 +7,7 @@ description: Use this guide to help you get your Windows PCs managed by the Micr
 keywords:
 author: staciebarker
 ms.author: stabar
-ms.date: 07/19/2016
+ms.date: 01/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,20 +27,22 @@ ms.suite: ems
 ---
 
 # Install the Intune software client on Windows PCs
-Windows PCs can be enrolled by installing the Intune client software. The Intune client software can be installed in the following ways:
+Windows PCs can be enrolled by installing the Intune client software. The Intune client software can be installed by using the following methods:
 
-- Manually installed
-- Installed by using Group Policy
-- Included in a disk image
-- Installed by users
+- By the IT admin:
+  - Manual installation
+  - Installation by using Group Policy
+  - Installation is included in a disk image
 
-The Intune software client that is first downloaded contains the minimum software necessary to enroll the PC in Intune management. After a PC enrolls, the Intune software client then downloads the full client software that's needed for PC management.
+- By end users, who manually install the software client
 
-This series of downloads minimizes the time that's required to initially enroll your PC in Intune. It also ensures that the client has the most recent software available after the second download has finished.
+The Intune software client, which the IT admin deploys to the user or which the end user downloads, contains the minimum software necessary to enroll the PC in Intune management. After a PC has been enrolled, the Intune software client then downloads the full client software that's needed for PC management.
+
+This series of downloads reduces the impact on the network's bandwidth and minimizes the time required to initially enroll the PC in Intune. It also ensures that the client has the most recent software available after the second download has finished.
 
 ## Download the Intune client software
 
-All methods, except those in which users install the Intune client software themselves, require that you download the software so it can be deployed.
+All methods, except those in which users install the Intune client software themselves, require that IT admins download the software first so that it can be subsequently deployed to end users.
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Client Software Download**.
 
@@ -49,7 +51,7 @@ All methods, except those in which users install the Intune client software them
 2.  On the **Client Software Download** page, click **Download Client Software**. Then save the **Microsoft_Intune_Setup.zip** package that contains the software to a secure location on your network.
 
     > [!NOTE]
-    > The Intune client software installation package contains information about your account. If unauthorized users gain access to the installation package, they can enroll computers to the account that is represented by its embedded certificate and might gain access to company resources.
+    > The Intune client software installation package contains unique and specific information, which is available through an embedded certificate, about your account. If unauthorized users gain access to the installation package, they can enroll computers to the account that is represented by its embedded certificate and might gain access to company resources.
 
 3.  Extract the contents of the installation package to the secure location on your network.
 
@@ -58,7 +60,7 @@ All methods, except those in which users install the Intune client software them
 
 ## Deploy the client software manually
 
-On a computer, go to the folder where the client software installation files are located. Then run **Microsoft_Intune_Setup.exe** to install the client software.
+On the computer(s) on which the software client is going to be installed, go to the folder where the client software installation files are located. Then run **Microsoft_Intune_Setup.exe** to install the client software.
 
     > [!NOTE]
     > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
@@ -113,6 +115,8 @@ The Intune Automatic Enrollment Task, the **WindowsIntuneEnrollPending** registr
 ## Instruct users to self-enroll
 
 Users can install the Intune client software by going to  [the Company Portal website](http://portal.manage.microsoft.com). If the web portal can detect that the device is a Windows PC, it will to prompt users to enroll the PC by downloading the Intune software client. Once the software has been downloaded, users can install it to bring their PCs into management.
+
+The exact information that users see in the web portal may vary, depending on your account's MDM Authority and the platform and version of the user's PC.
 
 ![Intune Portal prompting to you to download the Intune software client](../media/software-client-download.png)
 
