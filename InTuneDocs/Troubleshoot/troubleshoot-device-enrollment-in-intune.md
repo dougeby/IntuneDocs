@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/10/17
+ms.date: 01/24/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -303,32 +303,20 @@ Once enrolled, the devices return to a healthy state and regain access to compan
 ### Enrolled iOS device doesn't appear in console when using System Center Configuration Manager with Intune
 **Issue:** User enrolls iOS device but it does not appear in the Configuration Manager admin console. The device does not indicate that it's been enrolled. Possible causes:
 
-- You may have enrolled your Intune Connector into one account, and then enrolled it into another account.
+- The Microsoft Intune Connector in your Configuration Manager site isn't communicating with the Intune service.
+- Either the Data Discovery Manager (ddm) component or the State Manager (statmgr) component is not processing messages from the Intune service.
 - You may have downloaded the MDM certificate from one account and used it on another account.
 
 
-**Resolution:** Perform the following steps:
+**Resolution:** Review the following log files for possible errors:
 
-1. Disable iOS inside of the Windows Intune Connector.
-	1. Right-click the Intune subscription and select **Properties**.
-	1. On the "iOS" tab, uncheck "Enable iOS Enrollment".
+- dmpdownloader.log
+- ddm.log
+- statmgr.log
 
-
-
-1. In SQL, run the following steps on the CAS DB
-
-	1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-	1. delete from MDMPolicy where PolicyType = 7
-	1. delete from MDMPolicyAssignment where PolicyType = 7
-	1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-	1. delete from MDMPolicy where PolicyType = 11
-	1. delete from MDMPolicyAssignment where PolicyType = 11
-	1. DELETE Drs_Signals
-1. Restart the SMS Executive Service or Restart the CM Server
+Examples will be added soon about what to look for in these log files.
 
 
-
-1. Get a new APN certificate and upload it: Right-click the Intune subscription in the left pane of Configuration Manager. Select **Create APNs certificate request** and follow the instructions.
 ## Issues when using System Center Configuration Manager with Intune
 ### Mobile devices disappear
 **Issue:** After successfully enrolling a mobile device to Configuration Manager it disappears from the mobile device collection, but the device still has the Management Profile and is listed in CSS Gateway.
