@@ -39,23 +39,23 @@
       "contributors_to_exclude": [ "herohua" ],
       "searchScope": ["Intune"],
       "_op_documentIdPathDepotMapping": {
-        "EndUser": {
+        "EndUser/": {
           "depot_name": "Azure.EndUser",
           "folder_relative_path_in_docset": "."
         },
-        "Troubleshoot": {
+        "Troubleshoot/": {
           "depot_name": "Azure.IntTroubleshoot",
           "folder_relative_path_in_docset": "."
         },
-        "understand-explore": {
+        "understand-explore/": {
           "depot_name": "Azure.IntUnderstand",
           "folder_relative_path_in_docset": "."
         },
-        "deploy-use": {
+        "deploy-use/": {
           "depot_name": "Azure.IntDeployUse",
           "folder_relative_path_in_docset": "."
         },
-        "get-started": {
+        "get-started/": {
           "depot_name": "Azure.IntGetStarted",
           "folder_relative_path_in_docset": "."
         }
