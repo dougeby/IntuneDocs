@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 12/31/2016
+ms.date: 1/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune can deploy an enrollment profile that enrolls iOS devices that were bought through the Device Enrollment Program (DEP) “over the air.” The enrollment package can include setup assistant options for the device. Devices enrolled through DEP cannot be unenrolled by users.
+Microsoft Intune can deploy an enrollment profile that enrolls iOS devices that were bought through the Device Enrollment Program (DEP) “over the air.” The enrollment package can include setup assistant options for the device.
 
 ## Apple DEP management for iOS devices with Microsoft Intune
 To manage corporate-owned iOS devices with Apple’s Device Enrollment Program (DEP), your organization must join Apple DEP and get devices through that program. Details of that process are available at:  [https://deploy.apple.com](https://deploy.apple.com). Advantages of the program include hands-free setup of devices without using a USB cable to connect each device to a computer.
@@ -89,9 +89,9 @@ Before you can enroll corporate-owned iOS devices with DEP, you need a DEP token
         - **Supervised** - Enables more management options and disables Activation Lock by default
      - **Lock enrollment profile to device** - Set during activation and cannot be changed without a factory reset
         - **Disable** - Allows the management profile to be removed from the **Settings** menu
-        - **Enable** - (Requires **Preparation Mode** = **Supervised**) Disables iOS settings that could allow removal of the management profile
+        - **Enable** - (Requires **Preparation Mode** = **Supervised**) Disables the iOS Settings menu option to remove the management profile
      - **Setup Assistant Options** - These optional settings can be set up later in the iOS **Settings** menu.
-        - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device will be secured or have access controlled in some other manner (that is, kiosk mode that restricts the device to one app).
+        - **Passcode** - Prompt for passcode during activation. Always require a passcode unless the device will be secured or have access controlled in some other manner (that is, kiosk mode that restricts the device to one app)
         - **Location Services** - If enabled, Setup Assistant prompts for the service during activation
         - **Restore** - If enabled, Setup Assistant prompts for iCloud backup during activation
         - **Apple ID** - If enabled, iOS will prompt users for an Apple ID when Intune attempts to install an app without an ID. An Apple ID is required to download iOS App Store apps, including those installed by Intune.

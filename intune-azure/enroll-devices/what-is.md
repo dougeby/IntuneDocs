@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 01/25/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,7 +44,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 - **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data. For more information, see [Use full or selective wipe on devices](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune).
 - **Affinity** - Associates devices with users. Required for mobile application management (MAM) and conditional access to company data. For more information, see [User affinity](enroll-ios-devices-using-device-enrollment-program.md).
-- **Lock** - Prevents users from removing the device from management. iOS devices require Supervised mode for Lock.
+- **Lock** - Indicates if users are prevented from unenrolling their devices from management. Users can unenroll their devices on all platforms by using their Company Portal app. They cannot use the native operating system menus to unenroll.
 
 
 **iOS enrollment methods**
