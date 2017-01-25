@@ -65,8 +65,9 @@ MAM policies are currently supported on:
 -   Android 4 or later
 
 >[!NOTE]
->Windows devices are not supported in the MAM without enrollment scenario. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
->
+>Windows devices are not supported in the MAM without enrollment scenario. However, when you >enroll Windows 10 devices with Intune, you can use Windows Information Protection, which >offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+
+
 ##  How MAM policies protect app data
 
 ###  Apps without MAM policies
