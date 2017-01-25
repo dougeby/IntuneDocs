@@ -37,7 +37,24 @@
       "product_feedback_displaytext" : "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
       "contributors_to_exclude": [ "herohua" ],
-      "searchScope": ["Intune"]
+      "searchScope": ["Intune"],
+      "_op_documentIdPathDepotMapping": {
+        "EndUser": {
+          "depot_name": "Azure.EndUser"
+        },
+        "Troubleshoot": {
+          "depot_name": "Azure.IntTroubleshoot"
+        },
+        "Understand": {
+          "depot_name": "Azure.IntUnderstand"
+        },
+        "DeployUse": {
+          "depot_name": "Azure.IntDeployUse"
+        },
+        "GetStarted": {
+          "depot_name": "Azure.IntGetStarted"
+        }
+      }
     }
   }
 }
