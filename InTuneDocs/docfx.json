@@ -47,15 +47,15 @@
           "depot_name": "Azure.IntTroubleshoot",
           "folder_relative_path_in_docset": "."
         },
-        "Understand": {
+        "understand-explore": {
           "depot_name": "Azure.IntUnderstand",
           "folder_relative_path_in_docset": "."
         },
-        "DeployUse": {
+        "deploy-use": {
           "depot_name": "Azure.IntDeployUse",
           "folder_relative_path_in_docset": "."
         },
-        "GetStarted": {
+        "get-started": {
           "depot_name": "Azure.IntGetStarted",
           "folder_relative_path_in_docset": "."
         }
