@@ -6,7 +6,7 @@ description: Mobile device management (MDM) uses enrollment to bring devices int
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 - **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data. For more information, see [Retire devices](retire-devices-from-microsoft-intune-management.md).
 - **Affinity** - Associates devices with users. Required for mobile application management (MAM) and conditional access to company data. For more information, see [User affinity](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Lock** - Prevents users from removing the device from management. iOS devices require Supervised mode for Lock. For more information, see [Remote lock](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
+- **Lock** - Indicates if users are prevented from unenrolling their devices from management. Users can unenroll their devices on all platforms by using their Company Portal app. They cannot use the native operating system menus to unenroll. 
 
 **iOS enrollment methods**
 
