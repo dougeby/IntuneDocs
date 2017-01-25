@@ -5,7 +5,7 @@ title: Wipe managed company app data | Microsoft Docs
 description: Learn how you can selectively remove company data from devices remotely.
 keywords:
 author: stabarms.author: staciebarkermanager: angrobe
-ms.date: 01/11/2017
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,9 +40,9 @@ To selectively remove company app data, create a wipe request by using the steps
 
 1.  Sign in to the Azure portal, and choose **More Services** > **Other** > **Intune**.
 
-2.  On the Intune blade, choose **Manage apps**.
+2.  On the Intune blade, choose **Manage apps** > **App Selective Wipe**.
 
-3.  Choose  **New wipe requests**. This opens the **New wipe request** blade.
+3.  Choose  **New wipe request**. The **New wipe request** blade opens.
 
     ![Screenshot of the New wipe request blade](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
