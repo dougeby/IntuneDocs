@@ -67,7 +67,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 5. On the **Create Enrollment Profile** blade, enter a name and description for the profile.
 
-6. For **User Affinity** choose whether devices with this profile will enroll with or without user affinity.
+6. For **User Affinity**, choose whether devices with this profile will enroll with or without user affinity.
 
    - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. User affinity should be set up for DEP-managed devices that belong to users and that need to use the company portal for services like installing apps.
 
