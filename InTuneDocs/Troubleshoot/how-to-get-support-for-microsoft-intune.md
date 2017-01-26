@@ -26,13 +26,29 @@ ms.suite: ems
 
 ---
 
-# How to get admin support for Microsoft Intune
+# How admins get support for Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
 Support for Intune, and for Intune when used with Configuration Manager, is free of charge. Premier Support customers incur charges for procedure questions (for example, how to go about configuring an Intune feature).
+
+## Find help without opening a support ticket
+
+Check out the following resources for answers before creating a support ticket.
+
+### Microsoft Intune TechNet forums
+
+Ask a question or start a discussion with Microsoft technical experts! We provide answers and insights on the searchable [Microsoft Intune TechNet Forum](https://social.technet.microsoft.com/Forums/home).
+
+	![Microsoft Intune TechNet Forum](../media/technet-forum-for-support.png)
+
+### Microsoft Intune UserVoice product feedback site
+
+Do you have feedback about how Microsoft can make Intune even better? Please let us know by adding your ideas on the Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) feedback site. You can also vote on ideas that others have added to UserVoice. 
+
+	![Microsoft Intune UserVoice feedback page](../media/intune-uservoice-feedback-page.png)
 
 ## Create an online service ticket
 
