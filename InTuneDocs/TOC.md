@@ -42,10 +42,10 @@
 ## [Section 9: Testing and validation](plan-design/section-9-test-and-validation.md)
 ## [Additional resources](plan-design/additional-resources.md)
 
-# What's New
-## [What's new](whats-new/whats-new-in-microsoft-intune.md)
-## [What's new in the Azure preview](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
-## [What's new archive](whats-new/whats-new-archive.md)
+# [What's New](whats-new/whats-new-in-microsoft-intune.md)
+## [What's New in the Company Portal UI](whats-new/whats-new-in-company-portal-ui.md)
+## [What's New in the Azure preview](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
+## [What's New archive](whats-new/whats-new-archive.md)
 
 # Deploy and Use
 ## [Overview of device and app lifecycles](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
