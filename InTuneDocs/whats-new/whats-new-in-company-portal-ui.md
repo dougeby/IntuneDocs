@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 01/26/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What's new in the Company Portal UI - January 2017
+# What's new in the Company Portal UI
 Learn what updates we've made to the Company Portal UI in this release of Microsoft Intune. This can help you with user communications and any custom documentation that you've created to support your deployment.
 
 ## January 2017
@@ -44,7 +44,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 <td>
 
-<img src="https://review.docs.microsoft.com/InTune/media/CP_website_before_Feb_2017.png" style="float: left; margin-right: 5px; margin-bottom: 10px;">
+<img src="https://docs.microsoft.com/InTune/media/CP_website_before_Feb_2017.png" style="float: left; margin-right: 5px; margin-bottom: 10px;">
 
 </td>
 
@@ -52,7 +52,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 <td>
 
-<img src="https://review.docs.microsoft.com/InTune/media/CP_website_after_Feb_2017.png" style="float: right; margin-left: 5px; margin-bottom: 10px;">
+<img src="https://docs.microsoft.com/InTune/media/CP_website_after_Feb_2017.png" style="float: right; margin-left: 5px; margin-bottom: 10px;">
 
 </td>
 
