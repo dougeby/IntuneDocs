@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Enroll Windows PCs as mobile devices for Intune Azure preview
+# Enroll Windows PCs as mobile devices 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

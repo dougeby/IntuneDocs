@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 01/19/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to add an app to Intune Azure preview
+# How to add an app 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -59,7 +59,7 @@ When you add an app to Intune, you are given the option to select the category y
 4. In the **Mobile apps** workload, choose **Setup** > **App categories**. 
 5. On the **App categories** blade, a list of the current categories is shown. Choose one of the following actions: 
 	- **Create a category** - On the **Create category** blade, enter a name for the new category. Names can be entered in one language only, and are not translated by Intune. When you are done, click **Create**.
-	- **Edit a category** - For any category in the list, choose '**...**'. On the **Properties** blade, you can enter a new name for the category, or delete the category. 
+	- **Edit a category** - For any category in the list, choose '**...**'. On the **Properties** blade, you can enter a new name for the category, or delete the category. --->
 
 
 

@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# Get an Apple DEP certificate for Intune Azure preview
+# Get an Apple DEP certificate 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

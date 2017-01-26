@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Reset (erase) your lost or stolen Windows device | Microsoft Docs
+title: Reset (erase) lost & stolen Windows devices | Microsoft Docs
 description: Reset a lost or stolen Windows device
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

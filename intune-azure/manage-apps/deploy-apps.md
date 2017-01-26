@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to assign apps to groups with Intune | Intune Azure preview | Microsoft Docs
+title: How to assign apps to groups | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Once you've added an app to Intune, you'll want to assign it to groups of users or devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to assign apps to groups with Intune Azure preview
+# How to assign apps to groups
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

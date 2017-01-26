@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens if you reset your Windows device using the Company Portal? | Microsoft Docs
+title: What happens if you reset your Windows device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

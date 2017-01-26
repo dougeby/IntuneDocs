@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Use full or selective wipe on devices using Intune Azure preview
+# Use full or selective wipe 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

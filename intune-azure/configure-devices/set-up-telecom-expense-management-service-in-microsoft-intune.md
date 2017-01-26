@@ -5,7 +5,7 @@ keywords: Saaswedo
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 01/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,7 +48,7 @@ Before you can use the Datalert service with Intune, you need to configure setti
 
 Intune currently integrates with the following TEM providers:
 
-[Saaswedo Datalert telecom expense management service](http://www.saaswedo.com/solutions-logicielles/datalert/?lang=en)
+[Saaswedo Datalert telecom expense management service](http://www.datalert.biz/)
 
 ## Configure Intune to work with the Datalert service
 

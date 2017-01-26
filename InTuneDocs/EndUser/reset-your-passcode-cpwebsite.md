@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: How to reset your device passcode from the Company Portal website | Microsoft Docs
+title: How to reset your  passcode from the Company Portal website | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

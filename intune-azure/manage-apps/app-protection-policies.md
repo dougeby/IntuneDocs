@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to create and deploy app protection policies in Intune Azure preview
+# How to create and assign app protection policies
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
