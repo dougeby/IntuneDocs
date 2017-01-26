@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new in the Company Portal UI | Microsoft Docs
-description: Find out what has changed in the Company Portal UI
+title: What's new in Intune App UI | Microsoft Docs
+description: "Find out what has changed in UI for apps that work on end user devices with Intune."
 keywords:
 author: barlanmsft
 ms.author: barlan
@@ -26,13 +26,13 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What's new in the Company Portal UI
-Learn what updates we've made to the Company Portal UI in this release of Microsoft Intune. This can help you with user communications and any custom documentation that you've created to support your deployment.
+# What's new in the Intune App UI
+Learn what updates we've made to the UI for apps that your end users will operate in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment.
 
 ## January 2017
 
 ### Modernizing the Company Portal website <!--753980-->
-Beginning in February, the Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Company Portal website hamburger menu](../media/CP_hamburger_menu.png) which will contain helpdesk contact details and information on existing managed devices. The landing page will be rearranged to emphasize apps that are available to users, with carousels for Featured and Recently Updated apps. You can find before and after images available on the [What's new in the Company Portal UI page](https://docs.microsoft.com/intune/whats-new/whats-new-in-company-portal-ui).
+Beginning in February, the Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Company Portal website hamburger menu](../media/CP_hamburger_menu.png) which will contain helpdesk contact details and information on existing managed devices. The landing page will be rearranged to emphasize apps that are available to users, with carousels for Featured and Recently Updated apps. You can find before and after images available on the [What's new in the Company Portal UI page](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
 
 <html>
 
