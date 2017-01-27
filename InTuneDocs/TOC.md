@@ -43,7 +43,7 @@
 ## [Additional resources](plan-design/additional-resources.md)
 
 # [What's New](whats-new/whats-new-in-microsoft-intune.md)
-## [What's New in the Company Portal UI](whats-new/whats-new-in-company-portal-ui.md)
+## [What's New in the Intune App UI](whats-new/whats-new-in-intune-app-ui.md)
 ## [What's New in the Azure preview](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [What's New archive](whats-new/whats-new-archive.md)
 
