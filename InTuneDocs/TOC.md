@@ -159,9 +159,9 @@
 #### [Block apps with no ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Protect access to networks (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [Protect access based on device, network, and application risk](deploy-use/device-threat-protection.md)
-#### [Set up Lookout device threat protection](deploy-use/device-threat-protection-subscription-setup.md)
-#### [Enable Lookout in Intune](deploy-use/device-threat-protection-enable.md)
-#### [Deploy Lookout for work apps](deploy-use/device-threat-protection-apps.md)
+#### [Set up device threat protection](deploy-use/device-threat-protection-subscription-setup.md)
+#### [Enable device threat protection](deploy-use/device-threat-protection-enable.md)
+#### [Deploy device threat protection apps](deploy-use/device-threat-protection-apps.md)
 #### [Enable device threat protection compliance policy](deploy-use/device-threat-protection-policy.md)
 
 ### [Protect app data with MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -217,6 +217,6 @@
 
 ## [Troubleshoot mobile application management](troubleshoot/troubleshoot-mam.md)
 
-## [Troubleshoot Lookout Integration](troubleshoot/troubleshooting-lookout-integration.md)
+## [Troubleshoot device threat protection](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [Glossary](understand-explore/intune-glossary.md)
