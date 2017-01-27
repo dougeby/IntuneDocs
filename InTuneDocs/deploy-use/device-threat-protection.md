@@ -104,8 +104,8 @@ Detect threats to your network such as Man-in-the-middle attacks, and prevent sy
 
 ## Next steps
 Here are the main steps you must do to implement this solution:
-1.	[Set up your subscription with Lookout mobile threat protection](set-up-your-subscription-with-lookout-mtp.md)
-2.	[Enable Lookout MTP connection in Intune](enable-lookout-mtp-connection-in-intune.md)
-3.  [Configure and deploy Lookout for work application](configure-and-deploy-lookout-for-work-apps.md)
-4.	[Configure compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md)
-5.	[Troubleshoot Lookout Integration](http://docs.microsoft.com/en-us/intune/troubleshoot/troubleshooting-lookout-integration)
+1.	[Set up your subscription with device threat protection](device-threat-protection-subscription-setup.md)
+2.	[Enable device threat protection connection in Intune](device-threat-protection-enable.md)
+3.  [Configure and deploy the device threat protection app](device-threat-protection-apps.md)
+4.	[Configure device threat protection compliance policy](device-threat-protection-policy.md)
+5.	[Troubleshoot device threat protection integration](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
