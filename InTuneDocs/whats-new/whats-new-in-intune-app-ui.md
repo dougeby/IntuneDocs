@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new in Intune App UI | Microsoft Docs
+title: What's new in Intune app UI | Microsoft Docs
 description: "Find out what has changed in UI for apps that work on end user devices with Intune."
 keywords:
 author: barlanmsft
@@ -26,7 +26,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What's new in the Intune App UI
+# What's new in the Intune app UI
 Learn what updates we've made to the UI for apps that your end users will operate in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment.
 
 ## January 2017
@@ -44,7 +44,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 <td>
 
-<img src="https://docs.microsoft.com/InTune/media/CP_website_before_Feb_2017.png" style="float: left; margin-right: 5px; margin-bottom: 10px;">
+<img src="https://docs.microsoft.com/InTune/media/CP_website_before_Feb_2017.png" alt="An image of the current version of the Company Portal website." style="float: left; margin-right: 5px; margin-bottom: 10px;">
 
 </td>
 
@@ -52,7 +52,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 <td>
 
-<img src="https://docs.microsoft.com/InTune/media/CP_website_after_Feb_2017.png" style="float: right; margin-left: 5px; margin-bottom: 10px;">
+<img src="https://docs.microsoft.com/InTune/media/CP_website_after_Feb_2017.png" alt="An image of the updated version of the Company Portal website." style="float: right; margin-left: 5px; margin-bottom: 10px;">
 
 </td>
 

@@ -42,7 +42,7 @@
 ## [Section 9: Testing and validation](plan-design/section-9-test-and-validation.md)
 ## [Additional resources](plan-design/additional-resources.md)
 
-# [What's New](whats-new/whats-new-in-microsoft-intune.md)
+# [What's new](whats-new/whats-new-in-microsoft-intune.md)
 ## [What's new in app UI](whats-new/whats-new-in-intune-app-ui.md)
 ## [What's new in the Azure preview](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [What's new archive](whats-new/whats-new-archive.md)
