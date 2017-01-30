@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: The Early Edition | Microsoft Docs
+title: Early edition | Microsoft Docs
 description:
 keywords:
 author: barlanmsft
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# The Early Edition for Microsoft Intune - January
+# The Early Edition for Microsoft Intune - January 2017
 
 The **Early Edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided under NDA on an extremely limited basis and is subject to change. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Intune/PM buddy if you have any questions or concerns.
 

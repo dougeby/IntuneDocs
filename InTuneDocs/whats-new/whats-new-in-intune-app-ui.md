@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new in Intune App UI | Microsoft Docs
+title: What's new in Intune app UI | Microsoft Docs
 description: "Find out what has changed in UI for apps that work on end user devices with Intune."
 keywords:
 author: barlanmsft
