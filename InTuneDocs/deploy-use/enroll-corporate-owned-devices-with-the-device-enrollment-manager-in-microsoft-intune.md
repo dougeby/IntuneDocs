@@ -6,7 +6,7 @@ description: The device enrollment manager (DEM) account can manage large number
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 01/04/17
+ms.date: 01/29/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,9 +30,12 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special user account that can enroll up to 1,000 devices. You add existing users to the DEM account to give them the special DEM capabilities. Each enrolled device uses a single license. We recommend that you use devices enrolled through this account as shared devices rather than personal ("BYOD") devices.  
+Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special user account that can enroll up to 1,000 devices. You add existing users to the DEM account to give them the special DEM capabilities. Each enrolled device uses a single license. We recommend that you use devices enrolled through this account as shared devices (that is, with no user affinity) rather than personal ("BYOD") devices.  
 
 Users must exist in the Azure portal to be added as device enrollment managers. For optimal security, the DEM user should not also be an Intune admin.
+
+>[!NOTE]
+>The DEM enrollment method can't be used with the [Apple Configurator enrollment method](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) or the [DEP enrollment method](ios-device-enrollment-program-in-microsoft-intune.md). 
 
 ## Example of a device enrollment manager scenario
 
