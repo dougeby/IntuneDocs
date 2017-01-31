@@ -7,7 +7,7 @@ keywords: end users, users, communication
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/12/2016
+ms.date: 01/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
