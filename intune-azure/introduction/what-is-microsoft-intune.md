@@ -1,25 +1,25 @@
 ---
 # required metadata
 
-title: Introduction to Microsoft Intune in the Azure portal preview | Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Get the basics about Intune, and how it can help you manage your devices."
+title: Introduction to Intune in the Azure portal preview | Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Get the basics about Intune in the Azure portal preview, and how it can help you manage your devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 12/12/2016
-ms.topic: article
+ms.date: 01/08/2017
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 
+ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,10 +33,15 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Microsoft Intune is moving to the Azure portal and this means that the workflows and functionality you are used to will change.
-The new portal offers you a preview of new and updated functionality in the Azure portal where you can manage your organization's' mobile devices, PCs, and apps. 
-All Intune functionality will eventually move to Azure, but you can perform certain Intune tasks in the Azure portal today. Because this new experience is in preview, some functionality might not yet be present in the portal. Review the [What’s new in the preview](#what's-new-in-the-preview) section for details. 
+The new portal offers you a preview of new and updated functionality in the Azure portal where you can manage your organization's' mobile devices, PCs, and apps.
+All Intune functionality will eventually move to Azure, but you can perform certain Intune tasks in the Azure portal today. Because this new experience is in preview, some functionality might not yet be present in the portal. Review the [What’s new in the preview](#what's-new-in-the-preview) section for details.
 
-New product documentation will be released, and continually  updated during the preview. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you.
+> [!IMPORTANT]
+> **Don’t see the new portal yet?**<br>
+> We’ve already begun to roll out the preview to select tenants. Existing tenants will be migrated to the new experience starting in early calendar year 2017. You will receive a notification in the Office Message Center prior to your tenant’s migration. If you have any questions about the timeline for your tenant’s migration, contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+
+
+You'll find new product documentation in this library, and it will be continually updated during the preview. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you.
 
 <!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
 
@@ -48,7 +53,7 @@ Highlights of the new experience include:
 - Azure AD groups to provide compatibility across all your Azure applications
 - Support for most modern web browsers
 
-If you are looking for documentation for the existing Intune portal, see [the Intune Documentation Library](https://docs.microsoft.com/en-us/intune/).
+If you are looking for documentation for the classic Intune console, see [the Intune Documentation Library](https://docs.microsoft.com/en-us/intune/).
 
 ## Before you start
 
@@ -71,13 +76,15 @@ For the latest information about supported browsers, see [here](https://docs.mic
 
 The documentation reflects the layout of the Intune portal to make it easier to find the information you need.
 
+![Azure portal workloads](./media/azure-portal-workloads.png)
+
 <!--- ### Plan and design
 Information to help you plan and design your Intune environment.
 [Read more](/intune-azure/plan-and-design/get-started) --->
 ### Enroll devices
 How to get your devices managed by Intune.
 [Read more](/intune-azure/enroll-devices/what-is)
-### Manage devices
+### Devices & Groups
 Get to know the devices you manage with inventory, and reports.
 [Read more](/intune-azure/manage-devices/what-is)
 ### Manage users
@@ -88,52 +95,18 @@ Contains information about how to publish, manage, configure, and protect apps.
 [Read more](/intune-azure/manage-apps/what-is-app-management)
 ### Configure devices
 Contains information about the profiles you can use to configure settings and features on devices you manage.
-[Read more](/intune-azure/configure-devices/what-are-device-profiles) 
+[Read more](/intune-azure/configure-devices/what-are-device-profiles)
 ### Set device compliance
 Define a compliance level for your devices, then report about any devices which are not compliant
 [Read more](/intune-azure/set-device-compliance/what-is-device-compliance)
 ### Conditional access
 Restrict access to Exchange services depending on conditions you specify.
 [Read more](/intune-azure/conditional-access/what-is-conditional-access)
-
-## What's new in the preview?
-
-As the public preview progresses, and more features are added, we'll let you know about them here.
-
-### December 2016 (initial release)
-
-- Deploy and manage apps from a store to iOS, Android, and Windows devices
-- Deploy and manage line of business (LOB) apps to iOS, Android, and Windows devices
-- Deploy and manage volume-purchased apps to iOS, and Windows devices
-- Deploy and manage web apps for Android, iOS, and Windows devices
-- Volume-purchased apps for iOS (business and education)
-- iOS managed app configuration profiles
-- Configure app protection policies, and deploy line of business apps to devices that are not enrolled with Intune
-- VPN profiles, per-app VPN, Wi-Fi, email, and certificate profiles
-- Compliance policies
-- Conditional access for Azure AD
-- Conditional access for On-Premises Exchange
-- Device enrollment
-- Role-based access control
-
-## Deprecated features in the Azure portal
-
-### Support for row-by-row review of hardware identifiers 
-The Azure portal does not support row-by-row review of hardware identifiers for IMEI numbers and Apple serial numbers. In the classic Intune console, you can import details from a comma-separated-values (.csv) file and overwrite the existing details for individual hardware identifiers. The Azure portal features a single, streamlined option that automatically overwrites details for all hardware identifiers or ignores new details for existing identifiers.
-
-#### How this affects you
-In the Azure portal, you will not be able to decide, row by row, which International Mobile Equipment Identity (IMEI) devices to update. The Intune console will continue to support this functionality.
-
-#### How to get ready for this change
-We are providing this information in advance so, if it affects you, you can make your support admins aware of this change. This change will coincide with the move to the Azure portal, anticipated for the first half of 2017.
+### Access control
+Control who can perform various Intune actions, and who those actions apply to. You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles.
+[Read more](/intune-azure/access-control/role-based-access-control)
 
 
-### Support for default Corporate Device Enrollment profiles in Apple DEP
-The Azure portal does not support the “default” Corporate Device Enrollment profile for Apple Device Enrollment Program (DEP) device serial numbers. This functionality, available in the classic Intune console, is being discontinued to prevent unintentionally assigned profiles. In the Azure portal, serial numbers synchronized from an Apple DEP account will initially have no Corporate Device Enrollment profile assigned.
+## What's New?
 
-#### How this affects you
-In the Azure portal, you will not be able to set a default profile policy across all Apple devices. The Intune console will continue to support this functionality.
-
-#### How to get ready for this change
-We are providing this information in advance so, if it affects you, you can make your support admins aware of this change. This will coincide with the move to the Azure portal, anticipated for the first half of 2017.
-
+[Find out what's new in the preview release](/intune-azure/introduction/whats-new).

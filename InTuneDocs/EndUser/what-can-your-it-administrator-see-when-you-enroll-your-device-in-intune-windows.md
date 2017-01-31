@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: What can your IT administrator see when you enroll your device in Intune? | Microsoft Docs
+title: What can your IT admin see when you enroll a device in Intune? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 12655728-a1af-4d89-97bc-925fe36c0dc4
+ms.assetid: 12655728-a1af-4d89-97bc-925fe36c0dc4searchScope: - Company Portal
 
 # optional metadata
 
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 
-# What can your IT administrator see when you enroll your device in Intune?
+# What can your IT admin see when you enroll a device in Intune?
 
 When you enroll your Windows device in Intune, you are giving your IT administrator permission to manage your device to help protect the company information on the device.
 

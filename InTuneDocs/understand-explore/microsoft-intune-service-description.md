@@ -8,7 +8,7 @@ author: lindavr
 ms.author: lindavr
 manager: angrobe
 ms.date: 09/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -27,6 +27,8 @@ ms.suite: ems
 ---
 
 # Microsoft Intune service description
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune is a cloud-based service that helps you manage devices that run Windows, Mac OS X, iOS, Android, or Windows Mobile. Intune also helps protect corporate applications and data. You can use Intune alone, or you can integrate it with System Center Configuration Manager to extend your management capabilities.
 

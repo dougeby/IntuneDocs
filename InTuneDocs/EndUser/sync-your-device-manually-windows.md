@@ -4,14 +4,15 @@
 title: Sync your Windows device manually | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bdsearchScope: - Company Portal
 
 # optional metadata
 
@@ -25,37 +26,18 @@ ms.suite: ems
 
 ---
 
-
 # Sync your Windows device manually
-If your app installation is taking too long, you can try manually syncing your Windows device. Syncing manually might help to speed up the installation.
 
-Only the following versions are supported. If your device isn't listed, sync isn't supported. Use the instructions that match the type of device that you have.
+Sometimes trying to install an app on your Windows device may take longer than you think it should. If this happens, you can try to manually sync your Windows device. Syncing may help speed up the installation.
 
-* [Windows 10 Mobile](#windows-10-mobile)
-* [Windows 10 desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-81)
+> [!Note] 
+> Apps could take awhile to install if you are on a network with slower speeds or higher amounts of devices downloading content at the same time.
 
+The following versions of Windows can sync manually. Unfortunately, if your device is using a different version of Windows, you can't start a manual sync.
 
-## Windows 10 Mobile
-To manually sync your Windows 10 Mobile device to speed up a slow app installation:
-
-1. Go to **All apps** > **Settings** > **Accounts**.
-
-    ![Choosing Accounts on the Settings screen](./media/win10m-sync-1-settings-accounts.png)
-
-2. Choose **Work access**.
-
-    ![Choosing work access as the account type](./media/win10m-sync-2-work-access.png)
-
-3. Under **Enroll in to device management**, choose your company name.
-
-    ![Choosing the company name for device management](./media/win10m-sync-3-tap-comp-name.png)
-
-4. Choose the **Sync** icon.
-
-    ![Choosing the Sync icon](./media/win10m-sync-4-tap-sync.png)
-
-    The message “We’re synching your account” appears at the top of the screen. The **Sync** button is grayed out until your device finishes syncing.
+* [Sync Windows 10 desktop](#windows-10-desktop)
+* [Sync Windows 10 Mobile](#windows-10-mobile)
+* [Sync Windows Phone 8.1](#windows-phone-81)
 
 ## Windows 10 desktop
 There is more than one version of Windows 10, so there are two sets of steps. To figure out which steps to use, look at the screenshots, and then follow the steps that look like what you see on your device.
@@ -112,6 +94,27 @@ There is more than one version of Windows 10, so there are two sets of steps. To
     ![Choosing the Sync button](./media/win10pc-sync-5-tap-sync.png)
 
    The button becomes grayed out until the sync is finished.
+
+   ## Windows 10 Mobile
+   To manually sync your Windows 10 Mobile device to speed up a slow app installation:
+
+   1. Go to **All apps** > **Settings** > **Accounts**.
+
+       ![Choosing Accounts on the Settings screen](./media/win10m-sync-1-settings-accounts.png)
+
+   2. Choose **Work access**.
+
+       ![Choosing work access as the account type](./media/win10m-sync-2-work-access.png)
+
+   3. Under **Enroll in to device management**, choose your company name.
+
+       ![Choosing the company name for device management](./media/win10m-sync-3-tap-comp-name.png)
+
+   4. Choose the **Sync** icon.
+
+       ![Choosing the Sync icon](./media/win10m-sync-4-tap-sync.png)
+
+       The message “We’re synching your account” appears at the top of the screen. The **Sync** button is grayed out until your device finishes syncing.
 
 ## Windows Phone 8.1
 To manually sync your Windows Phone 8.1 device to speed up a slow app installation:

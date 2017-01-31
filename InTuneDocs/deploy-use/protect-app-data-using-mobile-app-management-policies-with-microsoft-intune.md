@@ -4,7 +4,7 @@
 title: Protect app data using MAM policies | Microsoft Docs
 description: This topic explains how mobile application management policies can help protect your company data, prevent data loss, and keep personal and work information separate.
 keywords:
-author: NathBarnms.author: nathbarnmanager: angrobe
+author: andredm7ms.author: andredmmanager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
 ms.prod:
@@ -25,6 +25,8 @@ ms.suite: ems
 ---
 
 # Protect app data using mobile application management policies with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## How you can protect app data
 Your employees use mobile devices for both personal and work tasks. While you're making sure your employees can be productive, you also want to prevent data loss—intentional and unintentional.  In addition, you want to have the ability to protect company data that employees access by using devices that you don't manage.
@@ -62,7 +64,10 @@ MAM policies are currently supported on:
 -   iOS 8.1 or later
 -   Android 4 or later
 
-Windows devices are currently not supported.
+>[!NOTE]
+>Windows devices are not supported in the MAM without enrollment scenario. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+
+
 ##  How MAM policies protect app data
 
 ###  Apps without MAM policies

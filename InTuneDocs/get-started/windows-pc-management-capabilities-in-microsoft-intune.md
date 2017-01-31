@@ -7,7 +7,7 @@ keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Windows PC management capabilities when you use the Intune software client
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In most scenarios, you will enroll your devices with Microsoft Intune, which provides a greater set of capabilities. However, you can also manage PCs by using the Intune software client, which provides the following features:
 
 -   **[Software update management](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - You can keep PCs up to date and decide when updates are applied.

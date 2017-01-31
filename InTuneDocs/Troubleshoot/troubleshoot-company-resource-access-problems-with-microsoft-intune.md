@@ -6,7 +6,7 @@ description: Error and status codes in this topic to help you troubleshoot resou
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,6 +25,9 @@ ms.suite: ems
 ---
 
 # Troubleshoot company resource access problems with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the error and status codes in this topic to help you troubleshoot problems when a Microsoft Intune action returns an error code.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.

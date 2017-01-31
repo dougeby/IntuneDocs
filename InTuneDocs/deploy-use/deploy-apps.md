@@ -6,7 +6,7 @@ description: This topic explains concepts you'll need to understand before you s
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,6 +26,8 @@ ms.suite: ems
 ---
 
 # Deploy apps with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 This topic explains some of the concepts you need to understand before you start deploying apps with Microsoft Intune.
 

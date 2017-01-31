@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Get started with apps in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Get started with apps | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: This topic gives you some introductory information you'll need to know before you start working with apps in Intune."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 12/07/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:

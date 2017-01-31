@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Wipe for Exchange-managed mobile devices
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune allows you to wipe or reset mobile devices that are managed using Exchange ActiveSync (EAS) with the Intune Exchange Connector. The following table describes the wipe capabilities available through Exchange ActiveSync:
 
 |Type of wipe|Windows 8.1 and Windows RT 8.1|iOS|Android|

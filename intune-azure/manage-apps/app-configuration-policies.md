@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to use app configuration policies with Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: How to use Intune app configuration policies | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to use app configuration policies with Microsoft Intune
+# How to use Intune app configuration policies
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -55,7 +55,10 @@ You do not assign these policies directly to users and devices. Instead, you ass
 
 ## Create an app configuration policy
 
-1.  In the **Mobile Apps** workload, choose **Manage** > **App Configuration Policies**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Manage apps**.
+1.  In the **Manage apps** workload, choose **Manage** > **App Configuration Policies**.
 
 2.  In the list of policies blade, choose **Add**.
 
@@ -80,14 +83,14 @@ When the assigned app is run on a device, it will run with the settings that you
 ## Information about the XML file format
 
 Intune supports the following data types in a property list:
-	
+
 - &lt;integer&gt;
 - &lt;real&gt;
 - &lt;string&gt;
 - &lt;array&gt;
 - &lt;dict&gt;
 - &lt;true /&gt; or &lt;false /&gt;
-	 
+
 For more information about data types, see [About Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in the iOS Developer Library.
 
 Additionally, Intune supports the following token types in the property list:
@@ -100,7 +103,7 @@ Additionally, Intune supports the following token types in the property list:
 - \{\{username\}\} - (Example: **John Doe**)
 - \{\{serialnumber\}\} - (Example: **F4KN99ZUG5V2**) for iOS devices
 - \{\{serialnumberlast4digits\}\} - (Example: **G5V2**) for iOS devices
-	
+
 The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.
 
 

@@ -6,7 +6,7 @@ description: Learn about how to use Intune to manage apps you purchased in volum
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,6 +26,8 @@ ms.suite: ems
 ---
 
 # Manage volume-purchased apps using Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Some app stores give you the ability to purchase multiple licenses for an app that you want to run in your company. This helps you reduce the administrative overhead of tracking multiple purchased copies of apps.
 

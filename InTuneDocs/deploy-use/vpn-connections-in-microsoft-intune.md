@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,8 @@ ms.suite: ems
 ---
 
 # VPN connections in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Virtual private networks (VPNs) give your users secure remote access to your company network. Devices use a *VPN connection profile* to initiate a connection with the VPN server. Use *VPN profiles* in Microsoft Intune to deploy VPN settings to users and devices in your organization, so they can easily and securely connect to the network.
 
@@ -73,7 +75,7 @@ L2TP|iOS custom profile|No |No |No|Yes (OMA-URI)|Yes|
 > [!IMPORTANT]
 > Before you can use VPN profiles deployed to a device, you must install the applicable VPN app for the profile. You can use the information in the [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) topic to help you deploy the applicable app by using Intune.  
 
- Learn how to  create custom VPN profiles by using URI settings in [Custom configurations for VPN profiles](custom-configurations-for-vpn-profiles.md).     
+ Learn how to  create custom VPN profiles by using URI settings in [Custom configurations for VPN profiles](create-custom-vpn-profiles.md).     
 
 ## Methods of securing VPN profiles
 
@@ -201,7 +203,4 @@ After successful deployment, users will see the VPN connection name that you spe
 
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
 
-### See also
-[Custom configurations for VPN profiles](Custom-configurations-for-VPN-profiles.md)
 
-[Per-app VPN for Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)

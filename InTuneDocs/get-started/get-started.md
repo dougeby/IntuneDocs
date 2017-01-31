@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -26,6 +26,8 @@ ms.assetid: 5b56f8b4-269b-4e7f-b7e9-b0401bdd42f4
 ---
 
 # Get started with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 This topic helps administrators who are ready to start using Microsoft Intune to manage devices and services for their users. If you aren't ready to buy Intune, you can [evaluate the service with an Intune trial account](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).
 

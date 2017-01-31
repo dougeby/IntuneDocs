@@ -7,7 +7,7 @@ keywords:
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,71 +27,19 @@ ms.suite: ems
 ---
 # Use groups to manage users and devices in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic describes how to create groups in Intune. It also provides information about how the management of groups is going to change over the coming months. 
 
 >[!IMPORTANT]
 >
->If you open the Groups workspace in the Intune portal and see a link to the Azure active directory (Azure AD) portal, then you are already using the *new* Azure AD security groups approach to group management in Intune, described in [Notice of upcoming improvements to the admin experience for groups](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Click the link to the Azure AD portal to create and manage your groups.
+>If you open the Groups workspace in the Intune portal and see a link to the Azure active directory (Azure AD) portal, then you are using the *new* Azure AD security groups approach to group management in Intune, described in [Migrating groups to Azure Active Directory](migrating-groups-to-azure-active-directory.md). Click the link to the Azure AD portal to create and manage your groups.
 >
 >![Screenshot of the link to Azure group management](../media/groups-link-azure.png) 
 >
 >If you do not see the link to the Azure AD portal, you are still using the *current* approach to group management, described in [Create groups to manage users and devices with Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in this topic.
 
-
-## Notice of upcoming improvements to the admin experience for groups
-
-You've let us know that you'd like one grouping and targeting experience across Enterprise Mobility + Security. We hear you. Based on your feedback, soon we will be converting Intune groups to Azure Active Directory-based security groups. This change will unify group management across Intune and Azure Active Directory (Azure AD). The new experience means that you won't have to duplicate groups between services. It also will provide extensibility through the options to use Windows PowerShell and Microsoft Graph.
-
-### How does this affect me right now?
-If you're already an Intune customer, this change doesn’t affect you now. But here's what's coming:
-
--	New accounts will use Azure AD security groups instead of Intune *user* groups.   
--	In November 2016, new accounts that are provisioned after the monthly service release will manage both user-based groups and device-based groups in the Azure AD portal. There will be no effect on existing customers.
--	In December 2016, the Intune product team will begin to migrate existing customers to the new Azure AD-based group management experience. All user and device groups that exist in Intune today will be migrated to Azure AD security groups. We won’t start migrations until we can minimize any effect on your day-to-day work, and when we expect there will be no effect on your users. We also will give you notice before we migrate your account.
-
-
-### How and when will I migrate to the new groups experience?
-We will migrate current Intune customers over a period of time. We’re finalizing the schedule for that migration and will update this topic in a few weeks to give you more details. We'll give you notice before you are migrated. If you have any migration concerns, please contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com). See [Migrating groups to Azure Active Directory](migrating-groups-to-azure-active-directory.md) for details about how groups will be migrated.
-
-### What happens to my existing user and device groups?
- User groups and device groups that you've created in Intune will migrate to Azure AD security groups. Default Intune groups, such as the All Users group, will migrate only if you are using them in deployments at the time of migration. Migration may be more complex for some groups. We will notify you if additional steps are required for migration in your organization.
-
-### What new features will be available to me?
-Here's the new functionality we'll introduce with this migration from Intune to Azure Active Directory:
-
--	 Azure AD security groups will be supported in Intune for all types of deployments.
--	 Azure AD security groups will support the grouping of devices and users.
--	 Azure AD security groups will support dynamic groups that have Intune device attributes. For example, you will be able to dynamically group devices by platform, like iOS. When a new iOS device is enrolled in your organization, it automatically will be added to the iOS dynamic device group.
--	 You'll have a shared admin experience for group management across Azure AD and Intune.
-- The Intune Service Administrator role will be added to Azure AD so that Intune service admins can perform group management tasks in Azure AD.
-
-### What Intune functionality won’t be available?
-Although the groups experience will improve, there will be some Intune functionality that won't be available after your organization migrates from Intune groups to Azure AD security groups.
-
-#### Group management functionality
-
--	After migrating, you won't be able to exclude members or groups when you create a new group. However, with Azure AD dynamic groups, you can use attributes to create advanced rules that you can use to exclude members from a group based on criteria that you set.
--	Ungrouped Users and Ungrouped Devices groups won't be supported. We will not migrate those groups from Intune to Azure AD.
-
-
-#### Group-dependent functionality
-
--	The Service Admin role will not have **Manage groups** permissions.
--	You won’t be able to group Exchange ActiveSync devices. Your All EAS Managed Devices group will be converted from a group to a report view.
--  Pivoting with groups in reports will not be available.
--  Custom group targeting of notification rules will not be available.
-
-### What should I do to prepare for this change?
- We have recommendations that will make this transition easier for you:
-
-- Clean up any unwanted or unneeded Intune groups before migration.
-- Evaluate your use of exclusion in groups, and consider redesigning your groups so that you don't need to use exclusion.
--  If you have admins who do not have permissions to create groups in Azure AD, ask your Azure AD administrator to add them to the Intune Service Administrator Azure AD role.
-
-
-## Create groups to manage users and devices with Microsoft Intune
-
-This section describes how to create Intune groups in the Intune administration console.
+This topic describes how to create Intune groups in the Intune administration console.
 
 You can create and manage groups in the **Groups** workspace in the Microsoft Intune admin console. The **Groups Overview** page shows status summaries that can help you identify and prioritize issues that require your attention. Status summaries cover these areas:
 
@@ -114,7 +62,7 @@ Your group hierarchy also shows status summaries to help you identify and resolv
 >
 > Each time you create a restrictive policy, you'll want to communicate it to your users. After you create the more general groups and policies, pay attention to how you create smaller groups, so that you can reduce unnecessary communication.
 
-### To create a device group
+## To create a device group
 
 1.  In the Intune admin console, choose **Groups** &gt; **Overview** &gt; **Create Group**.
 
@@ -134,7 +82,7 @@ Your group hierarchy also shows status summaries to help you identify and resolv
 
 The newly created group is shown in the **Groups** list, in the **Groups** workspace, under the parent group. That's also where you can edit or delete the group.
 
-### To create a user group
+## To create a user group
 
 1.  In the Intune admin console, choose **Groups** &gt; **Overview** &gt; **Create Group**.
 

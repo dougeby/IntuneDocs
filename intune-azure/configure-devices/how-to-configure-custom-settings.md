@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to configure Microsoft Intune custom device settings | Intune Azure preview | Microsoft Docs
+title: How to configure Intune custom device settings | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to use Intune to configure custom settings on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/23/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,17 +26,24 @@ ms.suite: ems
 
 ---
 
-# How to configure custom device settings in Microsoft Intune
+# How to configure custom device settings
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+## When to use custom settings
+
+Custom device settings can be useful when Intune doesn't have the settings you want to configure built-in, and available from other device profiles.
+Custom settings are configured differently for each platform. For example, with Android and Windows devices, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to control features on devices. For Apple devices, you can import a file you created with the [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12).
 
 Use the information in this topic to learn the basics about configuring profiles with custom settings, and then read further topics for each platform to learn about device specifics.
 
 ## Create a device profile containing custom settings
 
-1. In the Azure Portal, select the **Device Configurations** workload.
-2. On the **Device configuration** blade, select **Manage** > **Profiles**.
-3. On the profiles blade, click **Create Profile**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
+3. On the profiles blade, choose **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the custom profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply custom settings. Currently, you can choose one of the following platforms for custom device settings:
 	- **Android**
@@ -54,4 +61,5 @@ Use the information in this topic to learn the basics about configuring profiles
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
+If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's New Archive | Microsoft Docs
+title: What's new archive | Microsoft Docs
 description: Archived What's New announcements for Microsoft Intune
 keywords:
 author: barlanmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What's New - Archive
+# What's new archive
 
 This page is a rolling list of the last six months of announcements made in [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md).
 

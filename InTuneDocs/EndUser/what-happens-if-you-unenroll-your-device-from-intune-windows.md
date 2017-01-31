@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: What happens if you unenroll your Windows device from Intune? | Microsoft Docs
+title: What happens if you unenroll your Windows device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8csearchScope: - Company Portal
 
 # optional metadata
 

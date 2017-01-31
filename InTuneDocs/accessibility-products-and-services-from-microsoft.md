@@ -2,12 +2,13 @@
 # required metadata
 
 title: Accessibility Products and Services from Microsoft | Microsoft Docs
-description:
+description: Details about accessibility products and services from Microsoft.
 keywords:
-author:
-manager: jeffgilb
-ms.date: 12/05/2016
-ms.topic: article
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 12/30/2016
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:

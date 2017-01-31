@@ -1,10 +1,12 @@
 ---
 # required metadata
 
-title: Manage data transfer between iOS apps |Intune Azure preview | Microsoft Docs
-description: "Intune Azure preview: Use this topic to understand how you can use the iOS Open in feature and mobile app management policies to manage data transfers between apps."
+title: Manage transferring data between iOS apps |Intune Azure preview | Microsoft Docs
+description: "Intune Azure preview: Use this topic to understand how you can use the iOS Open-in feature and mobile app management policies to manage data transfers between apps."
 keywords:
-author: NathBarnms.author: nathbarnmanager: angrobe
+author: NathBarn
+ms.author: nathbarn
+manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod:
@@ -24,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to manage data transfer between iOS apps with Microsoft Intune
+# How to manage data transfer between iOS apps 
 ## Manage iOS apps
 Protecting your company data includes making sure that file transfers are restricted to apps that are managed by you.  You can manage iOS apps in the following ways:
 

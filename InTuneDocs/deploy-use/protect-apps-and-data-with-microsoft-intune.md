@@ -4,8 +4,10 @@
 title: Protect apps and data | Microsoft Docs
 description: This topic describes the various Intune features and capabilities that are available to you to help protect your company apps and data.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
-ms.date: 07/18/2016
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,6 +28,7 @@ ms.suite: ems
 
 # Protect apps and data with Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune protects company data through multiple technology layers. At the identity layer, conditional access protects access to services by only allowing access from managed and compliant devices. At the client application layer, mobile application management (MAM) protects data loss by preventing data from moving to nonprotected apps or storage locations—and by wiping data when a device is lost or stolen. We recommend using these two layers of protection together to help secure data while keeping your mobile workforce productive.
 

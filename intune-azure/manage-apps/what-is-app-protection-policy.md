@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: What is app protection policies in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: What are app protection policies | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Use this topic to learn to protect your company data with Microsoft Intune app protection policies."
 keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
-ms.topic: article
+ms.date: 01/23/2017
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# What is Microsoft Intune app protection policies?
+# What are app protection policies?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -65,21 +65,21 @@ There are additional benefits to using MDM with App protection  policies, and co
 - **App protection policies makes sure that the app-layer protections are in place**. For example, you can require a PIN to open an app in a work context, or if data can be shared between apps, or preventing company app data from being saved to a personal storage location.
 
 
-### App protection polices are currently supported on:
+### Supported platforms for app protection polices
 -   iOS 8.1 or later
 
 -   Android 4 or later
 
 Windows devices are currently not supported. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
-##  How App protection policies protect app data
+##  How app protection policies protect app data
 
-####  Apps without App protection policies:
+####  Apps without app protection policies
 
 ![Image that shows data can move freely between apps when there are no App protection policies in place](../media/apps-without-protection-policies.png)
 
 When apps are used without restrictions, company and personal data can get intermingled.  Company data could end up in locations like personal storage or transferred to apps outside of your  purview,  resulting in data loss. The arrows in the diagram show unrestricted data movement between apps (corporate and personal) and to storage locations.
 
-### Data protection with App protection policies:
+### Data protection with app protection policies
 
 ![Image that shows how company data is protect when App protection policies are applied ](../media/apps-with-protection-policies.png)
 
@@ -89,7 +89,7 @@ You can use App protection policies to prevent company data from saving to the l
  **Prevent Save As**, **Restrict cut, copy, and paste**.
 - Access policy settings like **Require simple PIN for access**, **Block managed apps from running on jailbroken or rooted devices**.
 
-### Data protection with App protection policies on devices managed by a MDM solution:
+### Data protection with app protection policies on devices managed by a MDM solution
 
 ![Image that shows how App protection policies work on BYOD devices](../media/app-protection-policies-with-mdm.png)
 
@@ -114,7 +114,7 @@ The MDM solution:
 -   Wipe company data from apps without removing those apps from the device
 
 
-### Data protection with App protection policies for devices without enrollment
+### Data protection with app protection policies for devices without enrollment
 
 ![Image that shows how App protection policies work on managed devices](../media/app-protection-policies-without-mdm.png)
 

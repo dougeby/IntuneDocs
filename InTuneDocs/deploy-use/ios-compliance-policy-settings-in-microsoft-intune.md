@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Compliance policy settings for iOS devices | Microsoft Docs
+title: Compliance policy setting for iOS devices | Microsoft Docs
 description: This topic describes the rules and settings that you can set in a compliance policy for iOS devices.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,8 @@ ms.suite: ems
 
 
 # Compliance policy settings for iOS devices in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 The policy settings described in this topic apply to devices running iOS 8.0 and later.
 

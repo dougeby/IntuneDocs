@@ -6,7 +6,7 @@ description: Learn about some of the ways that Intune can help you protect your 
 keywords:
 author: Robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,6 +26,8 @@ ms.suite: ems
 ---
 
 # Protect devices with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune offers a full set of capabilities to help you protect the devices you manage, and the data stored on those devices. Read this topic to learn the basics of these capabilities and to find out how to learn more.
 

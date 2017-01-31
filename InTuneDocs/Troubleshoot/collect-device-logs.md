@@ -4,9 +4,10 @@
 title: Collect device logs| Microsoft Docs
 description: Learn how to collect logs from your managed devices.
 keywords:
-author: staciebarkerms.author: staciebarker
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 11/07/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,6 +27,8 @@ ms.suite: ems
 ---
 
 # Device logs
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 As part of your troubleshooting efforts you might want to collect logs from user devices. Instructions for collecting those logs are described here. Typically you need to access to the device to get these logs or request from the user that they collect the logs and send them to you.
 

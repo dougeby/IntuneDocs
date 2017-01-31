@@ -2,13 +2,13 @@
 
 # required metadata
 
-title: Android and Samsung KNOX Standard policy settings | Microsoft Docs
+title: Android and Samsung KNOX policy settings | Microsoft Docs
 description: Create policies that control settings and features on Android devices that you manage with Intune.
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,8 @@ ms.suite: ems
 ---
 
 # Android and Samsung KNOX Standard policy settings in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune supplies a range of built-in general settings that you can configure on Android devices. Additionally, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to create custom settings that are not available from Intune.
 
@@ -149,6 +151,8 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |**Import Apps**|Imports a list of apps that you have specified in a comma-separated values file. Use the format, application name, publisher, and app URL in the file.|
 |**Edit**|Lets you edit the name, publisher, and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
+
+Policies containing compliant and noncompliant app settings must be deployed to groups of users.
 
 ### Kiosk mode settings
 Specify the following settings for **Samsung KNOX Standard devices**:

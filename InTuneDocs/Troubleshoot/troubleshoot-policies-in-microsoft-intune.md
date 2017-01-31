@@ -4,9 +4,10 @@
 title: Troubleshoot policies | Microsoft Docs
 description: Troubleshoot policy configuration issues.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 12/12/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +28,9 @@ ms.suite: ems
 
 # Troubleshoot policies in Microsoft Intune
 
-If you are having problems deploying and managing policies with Intune, start here. This topic contains some common problems you might encounter together with solutions.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+If you are having problems deploying and managing Intune policies, start here. This topic contains some common problems you might encounter together with solutions.
 
 ## General Issues
 

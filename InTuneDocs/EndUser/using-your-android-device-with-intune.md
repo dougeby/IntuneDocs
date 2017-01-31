@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
+ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2bsearchScope: - Company Portal
 
 # optional metadata
 
@@ -64,16 +64,16 @@ The information in this section helps users with actions they can take after the
 The information in this section helps users fix issues that they might encounter when their Android device is enrolled in Intune.
 
 - [Use Verbose Logging to help your IT administrator fix device issues](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Send diagnostic data logs to your IT administrator using email](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [Send diagnostic data logs to your IT administrator using a USB cable](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [Send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-administrator-android.md)
-- [Device doesn't have the required minimum operating system version](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [Device doesn't comply with the maximum operating system version](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [Send logs to your IT admin using email](send-logs-to-your-it-admin-by-email-android.md)
+- [Send logs to your IT admin using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
+- [Send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-admin-android.md)
+- [Device doesn't have the required minimum operating system version](you-need-to-update-your-android-device.md)
+- [Device doesn't comply with the maximum operating system version](your-android-version-isnt-yet-supported.md)
 - [Your device is rooted and you can't connect](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Your device is missing a required certificate](your-device-is-missing-a-required-certificate-android.md)
-- [You are asked to turn off Unknown sources](you-are-asked-to-turn-off-unknown-sources-android.md)
-- [You are asked to turn off USB debugging](you-are-asked-to-turn-off-usb-debugging-android.md)
-- [You are asked to turn on Scan device for security threats](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Your device is missing a required certificate](your-device-is-missing-a-required-certificate-landing-android.md)
+- [You need to to turn off unknown sources](you-need-to-turn-off-unknown-sources-android.md)
+- [You need to turn off USB debugging](you-need-to-turn-off-usb-debugging-android.md)
+- [You need to turn on scanning for security threats](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [Your device does not meet the minimum security patch](your-device-does-not-meet-the-minimum-security-patch-android.md)
 - [You are prompted to install Lookout for Work on your Android device](you-are-prompted-to-install-lookout-for-work-android.md)
 - [You need to resolve a threat that Lookout for Work found on your Android device](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)

@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,8 @@ ms.suite: ems
 ---
 
 # iOS policy settings in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune supplies a range of built-in general settings that you can configure on iOS devices. Additionally, you can use the Apple Configurator tool to create custom settings that are not available from Intune.
 
@@ -178,6 +180,8 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |**Import Apps**|Import a list of apps you have specified in a comma-separated values file. In the file, use this format: application name, publisher, app URL.|
 |**Edit**|Edit the name, publisher, and URL of the selected app.|
 |**Delete**|Delete the selected app from the list.|
+
+Policies containing compliant and noncompliant app settings must be deployed to groups of users.
 
 ### Kiosk mode settings
 

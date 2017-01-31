@@ -4,8 +4,10 @@
 title: Use the SDK to enable apps for MAM | Microsoft Docs
 description: This topic gives you a quick overview of why you should use the Intune App SDK.
 keywords:
-author: mtillmanms.author: mtillmanmanager: angrobe
-ms.date: 08/24/2016
+author: mtillman
+ms.author: mtillman
+manager: angrobe
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -17,7 +19,7 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -25,6 +27,9 @@ ms.suite: ems
 ---
 
 # Use the SDK to enable apps for mobile application management
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the Microsoft Intune App SDK to let Intune manage certain features of your iOS or Android apps. After your app is enabled, you can deploy policies to the app. These policies use those features to help protect your corporate data. Examples of the types of protections that you can implement with the SDK are:
 
 -   Prevent users from copying corporate documents to the cloud.

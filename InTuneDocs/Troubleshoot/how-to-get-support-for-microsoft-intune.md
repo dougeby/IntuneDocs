@@ -7,7 +7,7 @@ description: Support is available both online and by telephone for paid and tria
 keywords:
 author: staciebarkerms.author: staciebarker
 manager: angrobe
-ms.date: 11/16/2016
+ms.date: 01/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,13 +26,43 @@ ms.suite: ems
 
 ---
 
-# How to get admin support for Microsoft Intune
+# How admins get support for Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
 Support for Intune, and for Intune when used with Configuration Manager, is free of charge. Premier Support customers incur charges for procedure questions (for example, how to go about configuring an Intune feature).
 
-## Create an online service ticket
+## Find help without opening a support ticket
+
+Before creating a support ticket, check out the following resources for answers and information. You might also want to review [general troubleshooting tips for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
+
+### Microsoft Intune TechNet forums
+
+Ask a question or start a discussion with Microsoft technical experts! We provide answers and insights on the searchable [Microsoft Intune TechNet Forum](https://social.technet.microsoft.com/Forums/home).
+
+![Microsoft Intune TechNet Forum](./media/technet-forum-for-support.png)
+
+### Microsoft Intune UserVoice product feedback site
+
+Do you have feedback about how Microsoft can make Intune even better? Please let us know by adding your ideas on the Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) feedback site. You can also vote on ideas that others have added to UserVoice. 
+
+![Microsoft Intune UserVoice feedback page](./media/intune-uservoice-feedback-page.png)
+
+## Create an online support ticket
+
+If you are unable to find answers by using the self-help resources, you can create an online support ticket.
+
+**Please limit each support ticket to a single issue** to help us serve you better. Here's why:
+
+- Support engineers who provide assistance are likely to specialize in specific areas, and it's easier to identify the right subject matter experts to help with your issue.
+- Engineering teams can prioritize their work in product areas where the most incidents are being generated.
+- It's easier to escalate challenging issues to the correct resource.
+
+Please review the [definition of a support incident](#definition-of-a-support-incident) before creating a support ticket.
+
+**To create an online support ticket**:
 
 1.  Sign in to the [Office 365 admin center](https://portal.office.com) with your Intune credentials.
 	>[!NOTE]
@@ -75,12 +105,12 @@ Follow this procedure if your support page looks like this:
 ## Get phone support
 See [Contact assisted phone support for Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) for a list of support phone numbers by country and region, support hours, and supported languages for each region.
 
-## Track your service requests
+## Track your support requests
 1.  Sign in to the [Office 365 admin center](https://portal.office.com) with your Intune credentials.
 2.  Choose the **Admin** tile.
 3.  On the left, under **Support**, choose **Service requests**. Then you can review your requests.
 
-Our initial responses to service requests depend on the severity of the issue. For the most severe issues, our first response for Professional customers is within two hours. For Premier Support customers, the response varies according to your support agreement. These are cases where:
+Our initial responses to support requests depend on the severity of the issue. For the most severe issues, our first response for Professional customers is within two hours. For Premier Support customers, the response varies according to your support agreement. These are cases where:
 
 - One or more services aren’t accessible or are unusable.
 - Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability.
@@ -103,12 +133,6 @@ For other issues, our first response for Professional customers  is within eight
 >
 > Technical support for System Center Configuration Manager or System Center Endpoint Protection requires either payment or is decremented from your existing licensing or Premier Support agreements.
 
-## Resolve issues without opening a support ticket
-
-You might be able to resolve your issue without opening a support ticket.
-
-For self-help with Intune, see [General troubleshooting tips for Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) or any of the troubleshooting topics for specific issues. You can also search for a solution or post your question to the [Intune forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
-
 ## Find support for volume licensing
 If you have already purchased licenses from Microsoft under a volume licensing program, use the following resources for support:
 
@@ -117,3 +141,13 @@ If you have already purchased licenses from Microsoft under a volume licensing p
 -   For billing questions, see [Billing and subscription management support](http://support.microsoft.com/oas/default.aspx?prid=15371).
 
 -   For general information about volume licensing, see [Volume licensing](http://go.microsoft.com/fwlink/p/?LinkID=282015).
+
+## Definition of a support incident
+
+A support incident is defined as a single support issue and the work needed to resolve it. A single support issue cannot be broken down into subordinate problems. If you can identify subordinate problems, each subordinate problem is considered as a separate incident. Multiple contacts and off-line research may be needed to resolve a given issue. The time spent in delivering these solutions is independent of the amount you will be charged.
+
+"Break-fix" support is included with subscriptions to Microsoft Intune and Mobile Device Management for Office 365, so opening additional support incidents never incurs additional charges.
+
+If a support engineer asks that you open additional support incidents for additional issues, please understand that it’s in the best interests of everyone. Thank you for your understanding and partnering with us to provide world-class support experiences!
+
+For prices per incident and levels of severity, see [Professional Support Options](https://support.microsoft.com/gp/offerprophone).

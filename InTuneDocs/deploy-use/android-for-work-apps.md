@@ -27,6 +27,8 @@ ms.suite: ems
 
 # How to deploy apps to Android for Work devices with Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 You deploy apps to Android for Work devices in a different way than you deploy them to standard Android devices. All apps you install for Android for Work come from the Google Play for Work store. You log into the store, browse for the apps you want, and approve them.

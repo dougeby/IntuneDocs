@@ -6,7 +6,7 @@ description: Use the information in this topic to understand how to update apps 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Update apps using Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune can help you manage app updates. Use the information in this topic to understand how to update apps when a new version is required.
 
 ## How to update apps

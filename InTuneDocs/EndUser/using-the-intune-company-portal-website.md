@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
+ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852esearchScope: - Company Portal
 
 # optional metadata
 
@@ -51,5 +51,5 @@ Users can do the following tasks from the Company Portal website:
 End users can do most of the same tasks on the **Company Portal website** that they can do by using the **Company Portal app** that they install on your device. See the following pages for links to all of the tasks that end users can do on their device:
 
 - [Using your Android device with Intune](using-your-android-device-with-intune.md)
-- [Using your iOS or macOS device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Using your iOS or macOS device with Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Using your Windows device with Intune](using-your-windows-device-with-intune.md)

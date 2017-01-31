@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Manage iOS VPP apps with Intune | Intune Azure preview | Microsoft Docs
+title: Manage iOS volume-purchased apps | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn about how you can sync apps you purchased in volume from the iOS store into Intune and then manage and track their usage."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to manage iOS apps you purchased through a volume-purchase program with Microsoft Intune
+# How to manage iOS apps you purchased through a volume-purchase program
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -53,7 +53,10 @@ Before you start, you'll need to get a VPP token from Apple and upload this to y
 
 ## To get and upload an Apple VPP token
 
-1.  In the **Mobile Apps** workload, choose **Setup** > **iOS VPP Tokens**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Manage apps**.
+1.  In the **Manage Apps** workload, choose **Setup** > **iOS VPP Tokens**.
 2.  On the list of VPP tokens blade, click **Add**.
 3.  On the New VPP Token blade, specify the following information:
 	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the Volume Purchase Program for Education. After you sign up, download the Apple VPP token for your account and select it here.
@@ -68,7 +71,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 
 ## To assign a volume-purchased app
 
-1. In the **Mobile Apps** workload, choose **Manage** > **Licensed Apps**.
+1. In the **Manage Apps** workload, choose **Manage** > **Licensed Apps**.
 2. On the list of apps blade, choose the app you want to assign, and then choose '**...**' > **Assign Groups**.
 3. On the <*app name*> - **Groups Assigned** blade, choose **Manage** > **Groups Assigned**.
 4. Choose **Assign Groups** then, on the **Select groups** blade, choose the Azure AD groups to which you want to assign the app.

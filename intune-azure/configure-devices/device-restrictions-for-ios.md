@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/12/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,9 +36,9 @@ ms.suite: ems
 - 	**FaceTime** - Allow the FaceTime app to be used on the device.
 - 	**Screen capture** - Allow the user to capture the contents of the screen as an image.
 - 	**Siri** - Allow use of the Siri voice assistant on the device.
-- 	**Siri while device is locked** - Allow use of the Siri voice assistant on the device while it is locked.
-- 	**Siri profanity filter (supervised only)** - Prevents Siri from dictating, or speaking profane language.
-- 	**Siri to query user-generated content from the internet (supervised only)** - Allow Siri to access websites to answer questions.
+	- 	**Siri while device is locked** - Allow use of the Siri voice assistant on the device while it is locked.
+	- 	**Siri profanity filter (supervised only)** - Prevents Siri from dictating, or speaking profane language.
+	- 	**Siri to query user-generated content from the internet (supervised only)** - Allow Siri to access websites to answer questions.
 - 	**Untrusted TLS certificates** - Allow untrusted Transport Layer Security certificates on the device.
 - 	**Control Center access while device locked** - Allow the user to access the control center app when the device is locked.
 - 	**Notifications while device locked** - Allow the user to access the notifications view without unlocking the device.
@@ -95,7 +95,7 @@ ms.suite: ems
 ## App Store, Doc Viewing, Gaming
 
 
-- **App store (supervised only) ** - Block access to the app store on supervised devices.
+-   **App store (supervised only)** - Block access to the app store on supervised devices.
 - 	**Password to access app store** - Require the user to enter a password before they can visit the app store.
 - 	**In-app purchases** - Allow store purchases to be made from within a running app.
 - 	**Automatic app downloads (supervised only)** -
@@ -107,6 +107,8 @@ ms.suite: ems
 - 	**Adding Game Center friends (supervised only)** - Allow the user to add friends in Game Center.
 - 	**Game Center (supervised only)** - Block or enable the use of the Game Center app.
 - 	**Multiplayer gaming (supervised only)** - Allow the user to play multiplayer games on the device.
+- 	**Ratings region** - Choose the ratings region for which you want to configure allowed downloads, then choose the allowed ratings for **Movies** and **TV Shows**.
+- 	**Apps** - Choose the allowed age rating of apps that users will be able to download, or you can choose **Allow All Apps**.
 
 ## Restricted apps
 
@@ -123,6 +125,7 @@ To specify an app URL in the apps list, use the following format:
 
 Using a search engine, find the app that you want to use in the iTunes App Store and open the page for the app.
 Copy the URL of the page and use this as the URL to configure the allowed or prohibited apps list or an app that you want to run in kiosk mode.
+Device profiles that contain restricted app settings must be deployed to groups of users.
 
 Example: Search for Microsoft Word for iPad. The URL that you use will be https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
@@ -225,8 +228,8 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 - 	**Activity continuation** - Allow the user to continue work that they started on an iOS device on another iOS or Mac OS X device (Handoff).
 
 ## Kiosk
-- 	**Activation Lock (supervised only)** - Enable Activation Lock on supervised iOS devices.
-- 	**App that runs in kiosk mode** - Choose **Browse**, and then specify the managed app or app from a store that will be allowed to run when the device is in kiosk mode. No other apps will be allowed to run on the device. For more help, see "How to specify URLs to app stores" later in this topic.
+- 	**Activation Lock** - Enable Activation Lock on supervised iOS devices.
+- 	**App that runs in kiosk mode** - Choose **Managed App** to select an app you've added to Intune, or **Store App** to specify the URL to an app in the store. No other apps will be allowed to run on the device. For more help, see "How to specify URLs to app stores" later in this topic.
 - 	**Assistive touch** - Enable or disable the **Assistive Touch** accessibility setting, which helps the user perform on-screen gestures that might be difficult for them to perform.
 - 	**Invert colors** - Enable or disable the Invert Colors accessibility setting, which adjusts the display to help users with visual impairments.
 - 	**Mono audio** - Enable or disable the accessibility setting Mono audio.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What happens if you reset your Windows device using the Company Portal? | Microsoft Docs
+title: What happens if you reset your Windows device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
+ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02asearchScope: - Company Portal
 
 # optional metadata
 

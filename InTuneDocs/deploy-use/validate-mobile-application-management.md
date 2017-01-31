@@ -4,8 +4,10 @@
 title: Validate your MAM setup | Microsoft Docs
 description: This topics describes how you can test and validate if your MAM policy is set up correctly and working as expected.
 keywords:
-author: NathBarnms.author: nathbarnmanager: angerobe
-ms.date: 08/16/2016
+author: andredm7
+ms.author: andredm
+manager: angerobe
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,6 +27,8 @@ ms.reviewer: joglocke
 ---
 
 # Validating your mobile application management setup
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 This topic provides information on checking for issues after you set up mobile application management (MAM). This guidance applies to MAM policies in the Azure portal.
 

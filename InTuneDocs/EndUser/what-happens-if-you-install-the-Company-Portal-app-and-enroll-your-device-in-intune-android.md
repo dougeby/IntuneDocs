@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: What happens if you install the Company Portal app and enroll your Android device in Intune? | Microsoft Docs
+title: Installing the Company Portal app for Android | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
+ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69searchScope: - Company Portal
 
 # optional metadata
 

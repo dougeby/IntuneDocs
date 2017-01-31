@@ -7,7 +7,7 @@ keywords:
 author: NathBarnms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -26,6 +26,8 @@ ms.reviewer: dagerrit
 ---
 
 # Choose how to enroll mobile devices
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Your answers to this series of questions will help determine the best enrollment method for the devices you manage.
 

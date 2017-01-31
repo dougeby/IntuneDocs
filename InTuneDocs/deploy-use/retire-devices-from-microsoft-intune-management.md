@@ -6,7 +6,7 @@ description: Intune supports both a selective wipe and a full wipe to remove the
 keywords:
 author: staciebarkerms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,13 @@ ms.suite: ems
 
 # Retire devices from Intune management
 
-Whether devices are corporate-owned or personally owned, eventually a managed device needs to be removed from Intune management. You might need to retire a device for a variety of reasons:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Whether devices are corporate-owned or personally owned, eventually a managed device needs to be removed from Intune management. 
+
+Devices are never removed from Intune without your intervention, even if the devices haven't connected to the Intune service for a period of time. 
+
+You might need to retire a device for a variety of reasons:
 
 -	User leaves a company in a planned way (“managed” departure)
 -	User leaves abruptly (gets fired, quits, etc.).
