@@ -106,7 +106,7 @@
 
 ## [Protect devices](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Remote lock & passcode reset](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [Protect Windows devices with MFA](deploy-use/https://docs.microsoft.com/en-us/intune/deploy-use/multi-factor-authentication-azure-active-directory)
+### [Protect Windows devices with MFA](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [Control Windows Hello for Business settings](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Bypass Activation Lock on iOS](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Policies to protect Windows PCs](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
