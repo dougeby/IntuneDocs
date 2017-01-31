@@ -33,9 +33,10 @@ ROBOTS:
 Intune integrates Azure AD multi-factor authentication (MFA) for device enrollment to help you secure your corporate resources.
 
 MFA works by requiring any two or more of the following verification methods: 
-•	Something you know (typically a password or PIN).
-•	Something you have (a trusted device that is not easily duplicated, like a phone).
-•	Something you are (biometrics).
+
+- Something you know (typically a password or PIN).
+- Something you have (a trusted device that is not easily duplicated, like a phone).
+- Something you are (biometrics).
 
 MFA is supported for iOS, Android, Windows 8.1 or later, or Windows Phone 8.1 or later devices.
 
