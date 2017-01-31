@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angerobe
-ms.date: 12/12/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod:
 ms.service:
@@ -30,16 +30,20 @@ ROBOTS:
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune integrates Azure AD multi-factor authentication (MFA) for device enrollment to help you secure your corporate resources. MFA requires authentication factors like text authentication in addition to user names and passwords. This is supported for iOS, Android, Windows 8.1 or later, or Windows Phone 8.1 or later devices.
+Intune integrates Azure AD multi-factor authentication (MFA) for device enrollment to help you secure your corporate resources.
+
+MFA works by requiring any two or more of the following verification methods: 
+•	Something you know (typically a password or PIN).
+•	Something you have (a trusted device that is not easily duplicated, like a phone).
+•	Something you are (biometrics).
+
+MFA is supported for iOS, Android, Windows 8.1 or later, or Windows Phone 8.1 or later devices.
 
 > [!NOTE]
->
-> This is the new experience for MFA in Intune. The older experience, from which customers are being migrated, is described in [Protect Windows devices with multi-factor authentication](protect-windows-devices-with-multi-factor-authentication.md).
->
 > In older versions of Configuration Manager (earlier than release 1610), you will still see the MFA setting in the Configuration Manager admin console. Do not attempt to configure MFA in the Configuration Manager admin console, as it will not work. Configure MFA as described in this topic.
 
-### Configuring Intune to require multi-factor authentication at device enrollment
-To require MFA at device enrollment, follow these steps:
+### Configure Intune to require multi-factor authentication at device enrollment
+To require MFA when a device is enrolled, follow these steps:
 
 1. Sign in to your [Microsoft Azure portal](https://manage.windowsazure.com) with your admin credentials.
 2. Choose your tenant.
