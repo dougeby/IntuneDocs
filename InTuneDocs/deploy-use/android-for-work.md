@@ -39,7 +39,7 @@ Android for Work requires newer Android hardware because many management capabil
 
 ## Onboarding
 
-Before enrolling Android for Work devices, you must complete some onboarding steps. These steps establish a connection between your Intune tenant and Google’s Play for Work service, which is an integral part of the Android for Work app distribution and management process. Learn more about [Enabling Android for Work enrollment](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work).
+Before enrolling Android for Work devices, you must complete some onboarding steps. These steps establish a connection between your Intune tenant and Google’s Play for Work service, which is an integral part of the Android for Work app distribution and management process. Learn more about [Enabling Android for Work enrollment](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work).
 
 ## Work profile management
 
@@ -49,7 +49,7 @@ When you manage an Android for Work device with Intune, you don’t manage the e
 
 The Google Play for Work service is an integral part of app distribution and management. All apps deployed to Android for Work devices in the work profile come from Play for Work. To manage and deploy apps in the Play Store, you log in as an Intune administrator to the Play for Work website and approve apps for your Intune tenant. These apps sync to the Intune console where they can then be deployed and managed using Intune. Line of business (LOB) apps developed by your organization must be published to Play for Work using Google’s Android app publishing console. Line of business apps must be configured in the Android app publishing console to restrict access to your organization.
 
-Apps install without user interaction and without requiring that the user allow **Installation from Unknown Sources**. To browse and install optional or available apps, the user the work-badged Play Store app on their device. Learn more about [Deploying apps for Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps).
+Apps are installed without user interaction and without requiring that the user allow **Installation from Unknown Sources**. To browse and install optional or available apps, the user can browse the Play Store on their device. Learn more about [Deploying apps for Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
 
 ## App configuration
 

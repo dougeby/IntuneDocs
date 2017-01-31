@@ -33,6 +33,8 @@ You can enroll devices, including Windows PCs, to enable mobile device managemen
 
 If you use [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), either on-premises or hosted in the cloud, you can enable simple Intune management without enrollment. Windows PCs can also be managed using [Intune client software](#manage-windows-pcs-with-intune).
 
+By default, devices for all platforms are allowed to enroll in Intune. To block devices from enrolling, sign to the [Microsoft Intune admin portal](http://manage.microsoft.com) with your admin credentials. Choose **Admin** > **Mobile Device Management** > **Enrollment Rules** and then clear the applicable check boxes for the platforms that you want to block.
+
 ## Overview of device enrollment methods
 
 The following table shows Intune enrollment methods and the supported capabilities and requirements of each method. The capabilities and requirements are described below.

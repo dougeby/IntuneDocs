@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll your device using a work profile | Microsoft Docs
-description: Describes how to encrypt an Android device
+description: How to make Android devices safer with work profiles.
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe

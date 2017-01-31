@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-# What's New - Archive
+# What's new archive
 
 This page is a rolling list of the last six months of announcements made in [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md).
 
