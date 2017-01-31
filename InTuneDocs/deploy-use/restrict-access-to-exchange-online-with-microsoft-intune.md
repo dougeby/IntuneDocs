@@ -76,7 +76,6 @@ You can protect access to Exchange Online email from **Outlook** and other **app
 
 - Android 4.0 and later, Samsung Knox Standard 4.0 and later, and Android for Work
 - iOS 8.0 and later
-- Windows Phone 8.1 and later
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
