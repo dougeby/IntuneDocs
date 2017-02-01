@@ -1,4 +1,4 @@
----
+ll---
 # required metadata
 
 title: What's new in Intune app UI | Microsoft Docs
@@ -31,7 +31,26 @@ Learn what updates we've made to the UI for apps that your end users will operat
 
 ## What's coming
 
-### Modernizing the Company Portal website <!--753980-->
+### Bringing material design to the Company Portal app for Android <!--621622, announced 1702-->
+Beginning in February, the Company Portal app for Android will follow material design guidelines to create a more modern look and feel. This improved user experience includes:
+
+* __Colors__: tab headers can be colored according to your custom color palette.
+
+
+
+* __Interface__: Featured Apps and All Apps buttons have been updated in the Apps tab. The Search button is now a floating action button.
+
+
+
+* __Navigation__: All Apps shows a tabbed view of Featured, All and Categories for easier navigation.
+
+
+
+* __Service__: My Devices and Contact IT tabs have improved readability.
+
+
+
+### Modernizing the Company Portal website <!--753980, announced 1701-->
 Beginning in February, the Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Small image of the hamburger menu that is now added at the top left corner of the Company Portal website](../media/CP_hamburger_menu.png) which will contain helpdesk contact details and information on existing managed devices. The landing page will be rearranged to emphasize apps that are available to users, with carousels for Featured and Recently Updated apps.
 
 <html>
