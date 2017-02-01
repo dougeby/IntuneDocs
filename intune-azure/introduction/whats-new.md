@@ -33,7 +33,7 @@ ms.suite: ems
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
 
-<--!## February 2017
+<!--## February 2017-->
 
 <!--### Custom app categories <!--748805
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
