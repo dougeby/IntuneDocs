@@ -1,18 +1,18 @@
 ---
 # required metadata
 
-title: Your Android device is rooted and you can't connect | Microsoft Docs
+title: Your Android device is rooted and can't connect
 description:
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
+ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8casearchScope: - Company Portal
 
 # optional metadata
 

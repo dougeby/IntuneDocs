@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: You get an error while using the Company Portal app | Microsoft Docs
+title: You get an error in the Company Portal app | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
+ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7searchScope: - Company Portal
 
 # optional metadata
 

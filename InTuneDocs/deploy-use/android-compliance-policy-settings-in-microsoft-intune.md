@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Compliance policy settings for Android devices | Microsoft Docs
+title: Compliance policy settings for Android | Microsoft Docs
 description: This topic describes the device compliance policy settings for Android devices.
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,6 +26,8 @@ ms.suite: ems
 
 
 # Compliance policy settings for Android devices in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 The policy settings described in this topic apply to devices that are running Android 4.0 and later or Samsung KNOX 4.0 and later.
 

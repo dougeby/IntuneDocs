@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Remotely lock your device from the Company Portal website | Microsoft Docs
+title: Lock your device from the Company Portal | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
+ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42bsearchScope: - Company Portal
 
 # optional metadata
 

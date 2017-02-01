@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Windows Team configuration policy settings in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the Microsoft Intune **Windows 10 Team general configuration policy** to configure settings for enrolled Windows 10 Team devices such as the Microsoft Surface Hub.
 
 |Setting name|Details|

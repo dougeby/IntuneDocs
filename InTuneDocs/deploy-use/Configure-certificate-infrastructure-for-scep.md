@@ -24,6 +24,9 @@ ms.suite: ems
 #ms.custom:
 ---
 # Configure certificate infrastructure for SCEP
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic describes what infrastructure you need in order to create and deploy SCEP certificate profiles.
 
 ### On-premises infrastructure

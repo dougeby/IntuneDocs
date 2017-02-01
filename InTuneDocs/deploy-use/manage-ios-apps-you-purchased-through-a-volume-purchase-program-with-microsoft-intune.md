@@ -6,7 +6,7 @@ description: Use Intune to manage apps that you volume purchased from Apple by i
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 01/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. This helps you reduce the administrative overhead of tracking multiple purchased copies of apps.
 
 Microsoft Intune helps you manage apps that you purchased through this program by importing the license information from the app store, tracking how many of the licenses you have used, and preventing you from installing more copies of the app than you own.
@@ -47,7 +50,7 @@ Before you start, you'll need to get a VPP token from Apple and upload this to y
 * By default, Intune syncs with the Apple VPP service twice a day. You can start a manual sync at any time.
 * After you have imported the VPP token to Intune, do not import the same token to any other device management solution. Doing so might result in the loss of license assignment and user records.
 * Before you start to use iOS VPP with Intune, remove any existing VPP user accounts created with other mobile device management (MDM) vendors. Intune will not synchronize those user accounts into Intune as a security measure. Intune will only synchronize data from the Apple VPP service that Intune created.
-* You cannot deploy iOS VPP apps to user's devices that were enrolled using the Device Enrollment Protocol (DEP).
+* You can only deploy iOS VPP apps to user's devices that were enrolled using the Device Enrollment Protocol (DEP) if user affinity for the device is configured.
 
 ## To get and upload an Apple VPP token
 

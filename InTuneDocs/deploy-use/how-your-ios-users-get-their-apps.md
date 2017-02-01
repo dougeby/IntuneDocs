@@ -28,6 +28,8 @@ ms.suite: ems
 
 # How your iOS users get their apps
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use this information to understand how and where your end users get the apps that you distribute through Microsoft Intune.
 
 **Required apps**--Apps that are required by the admin and that are installed on the device with minimal user involvement, depending on the platform.

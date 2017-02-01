@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Protect email access to Exchange Online | Microsoft Docs
+title: Protect email to Exchange Online | Microsoft Docs
 description: Protect and control access to company email on Exchange Online with conditional access.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,24 +29,28 @@ ms.suite: ems
 
 # Protect email access to Exchange Online and new Exchange Online Dedicated with Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+You can configure conditional access for Exchange Online or Exchange Online Dedicated by using Microsoft Intune. To learn more about how conditional access works, read the [Protect access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+
 > [!NOTE]
 >If you have an Exchange Online Dedicated environment and need to find out whether it's in the new or the legacy configuration, contact your account manager.
 
-To control email access to Exchange Online or to your new Exchange Online Dedicated environment, you can configure conditional access for Exchange Online by using Microsoft Intune. To learn more about how conditional access works, read the [Protect access to email, O365, and other services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+## Before you begin
 
-
-**Before** you can configure conditional access, you must:
+To configure conditional access, you must:
 
 -   Have an **Office 365 subscription that includes Exchange Online (such as E3)**, and users must be licensed for Exchange Online.
 
 - Have an **Enterprise Mobility + Security (EMS) subscription** or an **Azure Active Directory (Azure AD) Premium subscription**, and users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  Consider configuring the optional **Intune service-to-service connector**, which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. You don't need to use the connector to use compliance policies or conditional access policies—but it's required to run reports that help evaluate the impact of conditional access.
+	-  Learn more about the [Intune service-to-service connector](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
-   > Don't configure the service-to-service connector if you intend to use conditional access for both Exchange Online and Exchange on-premises.
+   > Do not configure the Intune service-to-service connector if you intend to use conditional access for both Exchange Online and Exchange on-premises.
 
-   For instructions on how to configure the connector, see [Intune service-to-service connector](intune-service-to-service-exchange-connector.md).
+### Device compliance requirements
 
 When you configure conditional access policies and target them to a user, before a user can connect to their email, the **device** they use must be:
 
@@ -64,6 +68,7 @@ If a conditional access policy isn't met, the user sees one of the following mes
 
 -   If the device is evaluated as not compliant with the compliance policy rules, the user is directed to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website or the Company Portal app, where they can find information about the problem and how to remediate it.
 
+### How conditional access works with Exchange Online
 
 The following diagram illustrates the flow that is used by conditional access policies for Exchange Online.
 
@@ -74,7 +79,6 @@ You can protect access to Exchange Online email from **Outlook** and other **app
 
 - Android 4.0 and later, Samsung Knox Standard 4.0 and later, and Android for Work
 - iOS 8.0 and later
-- Windows Phone 8.1 and later
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -89,7 +93,8 @@ You can protect access to **Outlook Web Access (OWA)** on Exchange Online when a
 * Chrome (Android)
 * Intune Managed Browser (iOS, Android 5.0 and later)
 
-**Unsupported browsers are blocked**.
+   > [!IMPORTANT]
+   > **Unsupported browsers are blocked**.
 
 **The OWA app for iOS and Android can be modified not to use modern authentication, and it isn't supported. Access from the OWA app must be blocked through ADFS claim rules.**
 

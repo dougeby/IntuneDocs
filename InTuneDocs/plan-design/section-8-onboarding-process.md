@@ -28,11 +28,13 @@ ms.suite: ems
 
 # Intune implementation
 
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+
 During the onboarding phase, you’ll implement Intune into your production environment. The implementation process will consist of setting up and configuring Intune and external dependencies (if required), based on your [use case requirements](section-3-determine-use-case-requirements.md) that were reviewed in previous sections of this guide.
 
-The following section provides an overview of the Intune implementation process that includes requirements and high-level tasks. 
+The following section provides an overview of the Intune implementation process that includes requirements and high-level tasks.
 
->[!TIP] 
+>[!TIP]
 > Check [Additional resources](additional-resources.md) for more information about the Intune implementation process.
 
 ## Intune requirements
@@ -51,7 +53,7 @@ The main Intune standalone requirements are provided below:
 
 -   Intune Certificate Connector (for SCEP certificate deployment, if needed)
 
->[!TIP] 
+>[!TIP]
 > You can find more information about Intune standalone requirements [here](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune).
 
 ## Intune implementation process
@@ -138,7 +140,7 @@ Intune supports iOS, Mac OS, Android, Windows desktop and Windows mobile device 
 
 -   Learn more about [how to enroll devices](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune).
 
->[!TIP] 
+>[!TIP]
 > Check out this [Microsoft Virtual Academy Intune session module](https://mva.microsoft.com/training-courses/deploying-microsoft-enterprise-mobility-suite-16408?l=PPWNoZxvD_1404778676) for more information on the Intune implementation process.
 
 ## Next Section

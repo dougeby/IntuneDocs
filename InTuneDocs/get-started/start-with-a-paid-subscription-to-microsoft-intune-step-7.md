@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Customize the Company Portal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The Intune Company Portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 
 The Intune Company Portal provides users with access to company data and apps. The Company Portal is available in two forms:

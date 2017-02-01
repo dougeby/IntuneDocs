@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: What happens if you unenroll your iOS device from Intune? | Microsoft Docs
+title: What happens if you unenroll your iOS device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
+ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3csearchScope: - Company Portal
 
 # optional metadata
 

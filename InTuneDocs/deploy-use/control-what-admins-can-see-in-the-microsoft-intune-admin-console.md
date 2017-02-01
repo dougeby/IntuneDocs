@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Customize Intune console views according to admin roles
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can filter the Microsoft Intune administration console view to allow your admins to see only the items they need to see for their role. For example, you can allow only admin console operators to update malware definitions or reset the passcode on devices. You do this by using preset **designations** that you assign to specific users. When these users access the admin console, they can only see items that are specific to their designation.
 
 ## To create a custom view

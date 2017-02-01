@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: Android and Samsung KNOX Standard policy settings | Microsoft Docs
+title: Android and Samsung KNOX policy settings | Microsoft Docs
 description: Create policies that control settings and features on Android devices that you manage with Intune.
 keywords:
 author: robstackmsft
@@ -28,6 +28,8 @@ ms.suite: ems
 ---
 
 # Android and Samsung KNOX Standard policy settings in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune supplies a range of built-in general settings that you can configure on Android devices. Additionally, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to create custom settings that are not available from Intune.
 

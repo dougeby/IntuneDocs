@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: You see errors while trying to enroll your iOS device in Intune | Microsoft Docs
+title: You see errors while trying to enroll your iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 12/02/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58
+ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58searchScope: - Company Portal
 
 # optional metadata
 

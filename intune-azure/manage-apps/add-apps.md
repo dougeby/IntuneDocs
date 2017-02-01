@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/19/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to add an app to Intune Azure preview
+# How to add an app 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -45,17 +45,21 @@ The following platforms are supported. Click one of the topics for more informat
 - [Windows Phone 8.1 store apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
 - [Windows store apps](/intune-azure/manage-apps/windows-store-app)
 
+> [!NOTE]
+> When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
 
+## How to create and edit categories for apps 
 
+App categories can be used to help you sort apps to make them easier for end users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**. 
+When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app, and assign categories. To create and edit your own categories, use the following procedure: 
 
-
-
-
-
-
-
-
-
+1. Sign into the Azure portal. 
+2. Choose **More Services** > **Monitoring + Management** > **Intune**. 
+3. On the **Intune** blade, choose **Manage apps**. 
+4. In the **Mobile apps** workload, choose **Setup** > **App categories**. 
+5. On the **App categories** blade, a list of the current categories is shown. Choose one of the following actions: 
+	- **Create a category** - On the **Create category** blade, enter a name for the new category. Names can be entered in one language only, and are not translated by Intune. When you are done, click **Create**.
+	- **Edit a category** - For any category in the list, choose '**...**'. On the **Properties** blade, you can enter a new name for the category, or delete the category. --->
 
 
 

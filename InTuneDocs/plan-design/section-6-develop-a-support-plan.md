@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Develop an Intune support plan
 
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+
 Having an Intune support plan can be beneficial in more effectively identifying and resolving Intune related issues and improving the end user’s overall Intune experience. Here are some questions to consider when developing your Intune support plan:
 
 -   Which team(s) will be responsible for providing Intune support?
@@ -42,7 +44,7 @@ Having an Intune support plan can be beneficial in more effectively identifying 
 
 Let’s review each area in more detail.
 
-## Which teams are responsible for providing support? 
+## Which teams are responsible for providing support?
 
 Organizations may have different tiers/levels (1-3) of support. For example, tier 1 and 2 may be part of the support team, and tier 3 include members of the MDM team responsible for the deployment of Intune.
 
@@ -50,7 +52,7 @@ Organizations may have different tiers/levels (1-3) of support. For example, tie
 
 Tier 1 is normally the first level of support and typically the first tier to be contacted by the user for support requests. If tier 1 is unable to resolve the end user’s issue, they would escalate it to tier 2, and tier 2 would escalate it to tier 3 if needed. In addition, Microsoft support may be considered as tier 4.
 
--   Learn more about [Intune support](/intune/troubleshoot/how-to-get-support-for-microsoft-intune.md).
+-   Learn more about [Intune support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 For the initial production rollout phases, organizations could have all three tiers participating in a bridge or skype call. Here’s one example of how an organization could implement their IT support/helpdesk work-flows:
 
@@ -88,10 +90,10 @@ An example of an Intune support training agenda is provided below.
 
 -   Q&A
 
->[!TIP] 
+>[!TIP]
 > [Additional resources](additional-resources.md) provides technical resources that may be valuable for your support team to review and leverage during their ramp up of Microsoft Intune.
 
-## What opportunities are there to involve the support team earlier? 
+## What opportunities are there to involve the support team earlier?
 
 Involving the IT support/helpdesk staff in early stages of Intune deployment planning and pilot efforts can be very beneficial to organizations. It provides the support staff with opportunities for exposure to the solution and gaining valuable experience. This also helps prepare the IT support/helpdesk staff for supporting the organizations full production rollout.
 

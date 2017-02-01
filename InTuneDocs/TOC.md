@@ -7,7 +7,7 @@
 ### [Other options and extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Convert to a paid subscription](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Common scenarios](understand-explore/common-ways-to-use-intune.md)
-## [Glossary](understand-explore/intune-glossary.md)
+
 
 # [Get Started](get-started/get-started.md)
 ## [Setup Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
@@ -42,8 +42,9 @@
 ## [Section 9: Testing and validation](plan-design/section-9-test-and-validation.md)
 ## [Additional resources](plan-design/additional-resources.md)
 
-# What's New
-## [What's new](whats-new/whats-new-in-microsoft-intune.md)
+# [What's new](whats-new/whats-new-in-microsoft-intune.md)
+## [What's new in app UI](whats-new/whats-new-in-intune-app-ui.md)
+## [What's new in the Azure preview](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [What's new archive](whats-new/whats-new-archive.md)
 
 # Deploy and Use
@@ -72,6 +73,7 @@
 #### [Install the PC client](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 #### [Common PC management tasks](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Resolve PC policy conflicts](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [Manage Android for Work](deploy-use/android-for-work.md)
 
 ## Configure devices
 ### [Manage settings and features on your devices with policies](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -97,13 +99,14 @@
 #### [VPN connections in Intune](deploy-use/vpn-connections-in-microsoft-intune.md)
 #### [Email profiles in Intune](deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
 ### [Use groups to manage users & devices](deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
+#### [Migrate groups to Azure](deploy-use/migrating-groups-to-azure-active-directory.md)
 ### [Map devices to groups](deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Understand your devices with inventory](deploy-use/understand-your-devices-with-inventory-in-microsoft-intune.md)
 
 
 ## [Protect devices](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Remote lock & passcode reset](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [Protect Windows devices with MFA](deploy-use/protect-windows-devices-with-multi-factor-authentication.md)
+### [Protect Windows devices with MFA](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [Control Windows Hello for Business settings](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Bypass Activation Lock on iOS](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Policies to protect Windows PCs](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -155,11 +158,11 @@
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Block apps with no ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Protect access to networks (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Protect access based on device, network, and application risk](deploy-use/restrict-access-based-on-device-network-app-risk.md)
-#### [Set up Lookout device threat protection](deploy-use/set-up-your-subscription-with-lookout-mtp.md)
-#### [Enable Lookout in Intune](deploy-use/enable-lookout-mtp-connection-in-intune.md)
-#### [Deploy Lookout for work apps](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [Enable device threat protection compliance policy](deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md)
+### [Protect access based on device, network, and application risk](deploy-use/device-threat-protection.md)
+#### [Set up device threat protection](deploy-use/device-threat-protection-subscription-setup.md)
+#### [Enable device threat protection](deploy-use/device-threat-protection-enable.md)
+#### [Deploy device threat protection apps](deploy-use/device-threat-protection-apps.md)
+#### [Enable device threat protection compliance policy](deploy-use/device-threat-protection-policy.md)
 
 ### [Protect app data with MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure portal for MAM policies](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
@@ -214,4 +217,6 @@
 
 ## [Troubleshoot mobile application management](troubleshoot/troubleshoot-mam.md)
 
-## [Troubleshoot Lookout Integration](troubleshoot/troubleshooting-lookout-integration.md)
+## [Troubleshoot device threat protection](troubleshoot/device-threat-protection-troubleshooting.md)
+
+# [Glossary](understand-explore/intune-glossary.md)

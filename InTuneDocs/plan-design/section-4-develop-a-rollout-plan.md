@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Develop an Intune rollout plan
 
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+
 This section will help you to determine the organizational groups that will be targeted for your Intune rollout, as well as the rollout timeframe for each group, and the enrollment approaches that will be used.
 
 ## Determine Intune rollout targeted groups and timeframes
@@ -54,8 +56,8 @@ Here’s an example of an Intune rollout plan that includes targeted groups and 
 |:---:|:---:|:---:|:---:|:---:|
 | Limited Pilot | IT (50 users) |  |  |  |                                                         
 | Expanded Pilot | IT (200 users), IT Executives (10 users) |  |  |  |                                                         
-| Production rollout phase 1 |  | Sales and Marketing (2000 users) |  |  | 
-| Production rollout phase 2 |  |  | Retail (1000 users) |  | 
+| Production rollout phase 1 |  | Sales and Marketing (2000 users) |  |  |
+| Production rollout phase 2 |  |  | Retail (1000 users) |  |
 | Production rollout phase 3 |  |  |  | HR (50 users), Finance (40 users), Executives (30 users) |
 
 ## Determine the Intune enrollment approach
@@ -83,11 +85,11 @@ Here’s an example of an Intune rollout plan with targeted groups, timelines an
 | Expanded Pilot |  |  |  |  |                                                         
 | Self-service | IT |  |  |  |
 | White glove | IT Executives |  |  |  |
-| Production rollout phase 1 |  | Sales, Marketing |  |  | 
-| Self-service |  | Sales and Marketing |  |  | 
-| Production rollout phase 2 |  |  | Retail |  | 
-| Self-service |  |  |  |  | 
-| Production rollout phase 3 |  |  | Retail |  | 
+| Production rollout phase 1 |  | Sales, Marketing |  |  |
+| Self-service |  | Sales and Marketing |  |  |
+| Production rollout phase 2 |  |  | Retail |  |
+| Self-service |  |  |  |  |
+| Production rollout phase 3 |  |  | Retail |  |
 | Self-service |  |  |  | HR, Finance |
 | White glove |  |  |  | Executives |
 

@@ -4,21 +4,22 @@
 title: Enroll your Windows 10 device in Intune | Microsoft Docs
 description: Describes how to enroll a Windows 10 mobile or desktop device in Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
+ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3searchScope: - Company Portal
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: priyar
+ms.reviewer: jieyan
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -45,13 +46,13 @@ Want to know more? Find out what happens when you [enroll your device in Intune]
 
  ![Windows 10 Desktop About Your PC](../media/settings_about_pc.png)
 
-3.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school.md). If your version is __1511__, continue with [these steps](enroll-your-w10-device-your-account.md).
+3.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school.md). If your version is __1511 or less__, continue with [these steps](enroll-your-w10-device-your-account.md).
 
 ## Windows 10 Mobile devices
 
 1.	On __Start__, swipe over to the __All apps__ list, then select the __Settings__ app.
 2.	Tap on __System__ then __About__.
 3.	Under __Device information__, tap __More info__. You will see a list of information about your device. Within this list, locate the __Version__.
-4.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school.md). If your version is __1511__, continue with [these steps](enroll-your-w10-device-your-account.md).
+4.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school.md). If your version is __1511 or less__, continue with [these steps](enroll-your-w10-device-your-account.md).
 
 Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

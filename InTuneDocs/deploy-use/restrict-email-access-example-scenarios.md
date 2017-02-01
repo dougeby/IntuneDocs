@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect access to email example scenarios | Microsoft Docs
+title: Protect email scenarios | Microsoft Docs
 description: A few example scenarios and how they could be implemented with conditional access.
 keywords:
 author: andredm7
@@ -27,6 +27,8 @@ ms.suite: ems
 ---
 
 # Protect access to email with Microsoft Intune: Example scenarios
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## Scenario 1: Block users from using noncompliant devices to access Exchange Online
 ### Scenario requirements

@@ -27,6 +27,8 @@ ms.suite: ems
 
 # Resources about the end-user experience with Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the following links and information to understand the steps that your end users take to do different tasks in Intune.
 
 Be sure that you include IT administrator contact information when you [customize the Company Portal](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) so that your users can get help if they need it.

@@ -27,6 +27,9 @@ ms.suite: ems
 ---
 
 # Get ready to configure mobile app management policies on the Azure portal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic describes the prerequisites and the steps you must complete **before** you can create mobile app management (MAM) policies in the Azure portal.
 
 To understand how Intune MAM policies can protect your company data, see [Protect apps and data using mobile app management policies](protect-apps-and-data-with-microsoft-intune.md).

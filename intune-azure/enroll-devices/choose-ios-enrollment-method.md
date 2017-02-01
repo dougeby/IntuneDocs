@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Choose how to enroll iOS devices in Intune Azure preview
+# Choose how to enroll iOS devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

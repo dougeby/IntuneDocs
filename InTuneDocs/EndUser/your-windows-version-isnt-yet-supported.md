@@ -2,7 +2,7 @@
 # required metadata
 
 title: Your Windows version isn't yet supported | Microsoft Docs
-description:
+description: 
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
@@ -11,7 +11,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 2df53b9b-9195-45c9-b5dd-7eb7642ff219
+ms.assetid: 2df53b9b-9195-45c9-b5dd-7eb7642ff219searchScope: - Company Portal
 
 # optional metadata
 

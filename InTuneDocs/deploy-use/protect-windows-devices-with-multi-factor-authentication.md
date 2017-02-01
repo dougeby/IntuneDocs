@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Multi-factor authentication for Windows | Microsoft Docs
+title: Multi-factor authentication for Intune device enrollments | Microsoft Docs
 description: Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources.
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 01/19/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,10 @@ ms.suite: ems
 
 ---
 
-# Protect Windows devices with multi-factor authentication
+# Protect Windows devices with multi-factor authentication for Intune device enrollments
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune integrates multi-factor authentication (MFA) to help you secure your corporate resources. MFA requires authentication factors like text authentication in addition to user names and passwords. Intune supports the use of MFA during enrollment of Windows 8.1 or later, Windows Phone 8.1, or Windows 10 Desktop and Mobile devices.
 
 >[!NOTE]

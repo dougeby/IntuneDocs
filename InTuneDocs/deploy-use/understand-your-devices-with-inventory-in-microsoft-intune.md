@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Understand your devices with inventory in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune lets you view the inventory of enrolled devices and Windows PCs that run the Intune client software.
 Intune typically collects inventory from managed devices every 7 days. Because of this, there might be a delay before reports show the results of any recent changes to devices, for example, a change to the device name, or free storage space.
 

@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Determine Intune deployment goals, objectives and challenges
 
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+
 Having a good deployment plan begins with first identifying your organization’s deployment goals and objectives, along with potential challenges. Each organization is unique and will have their own deployment goals, objectives and challenges. Let’s discuss each area in more detail.
 
 ## Deployment Goals

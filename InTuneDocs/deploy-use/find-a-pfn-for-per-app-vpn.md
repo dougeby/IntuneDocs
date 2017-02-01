@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Find a package family name (PFN) for per-app VPN configuration
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 There are two ways to find a PFN so that you can set up a per-app VPN.
 
 ## Find a PFN for an app that's installed on a Windows 10 computer

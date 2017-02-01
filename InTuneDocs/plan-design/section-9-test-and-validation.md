@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Intune testing and validation
 
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+
 The testing phase should be during and after the implementation phase, you will need to have test accounts, groups, and devices for testing all required IT (admin) and end user (use case) scenarios previously identified.
 
 It's recommended to incorporate your IT support/helpdesk staff in the testing phase so that support documentation is created, and the IT support/helpdesk staff become comfortable supporting the product. If a component or scenario does not function based on the use cases, make sure to document the necessary changes and include the reason a change was made.

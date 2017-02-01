@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Troubleshoot apps in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Troubleshoot apps | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn about ways to fix Intune app problems when something goes wrong."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: You are prompted to install Lookout for Work on your Android device | Microsoft Docs
+title: You need to install Lookout for Work on your Android device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
+ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fcsearchScope: - Company Portal
 
 # optional metadata
 
@@ -25,7 +25,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 
 ---
 
-# You are prompted to install Lookout for Work
+# You need to install Lookout for Work
 
 Before you can access your work, your IT admin needs you to install the Lookout for Work app, which helps to protect your device by finding potential security threats.
 
@@ -82,6 +82,6 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
 **If the installation doesn't work**
 
-Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work manually from the Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
+Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work manually from the Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise)
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

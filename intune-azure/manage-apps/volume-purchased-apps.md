@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# Manage volume-purchased apps with Intune Azure preview
+# Manage volume-purchased apps
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

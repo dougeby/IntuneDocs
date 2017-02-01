@@ -29,6 +29,8 @@ ms.suite: ems
 
 # Android for Work policy settings in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Intune supplies a range of built-in general settings that you can configure on Android for Work devices.

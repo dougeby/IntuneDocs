@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure VPN settings in Intune Azure preview
+# How to configure VPN settings 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

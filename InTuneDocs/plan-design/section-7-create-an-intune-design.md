@@ -28,6 +28,8 @@ ms.suite: ems
 
 # Create an Intune design
 
+[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+
 The section of the guide should be used in parallel with other topics in Section 2. This design will be based on the information you are collecting and decisions you will be making completing the previous sections of this guide. In this design section, we’ll focus on Intune standalone, which is a Microsoft cloud-based service which resides in the cloud.
 
 Although there’s minimal on-premises infrastructure requirements, it’s still recommended to work on a design plan to make sure you’ll have the right mobile device management solution that meets your goals, objectives, and requirements.
@@ -122,7 +124,7 @@ If your organization has global presence, make sure to plan where your tenant wi
 
 -   Asia and Pacific
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > It’s not possible to change the country/tenant location later.
 
 ## External dependencies
@@ -137,9 +139,9 @@ External dependencies are services and products that are separate from Intune bu
 
 Let’s explore in more detail these common external dependencies below
 
-### Identity 
+### Identity
 
-Identity is how we identify the users who below to your organization and are enrolling a device. Intune requires Azure Active Directory (Azure AD) as the user identity provider. If you already use this service, you’ll be able to leverage your existing identity already in the cloud. In addition, Azure AD Connect is the recommended tool to synchronize your on-premises user identities with Microsoft cloud services. If your organization is already using Office 365, it’s important that Intune uses the same Azure Active Directory environment.
+Identity is how we identify the users who belong to your organization and are enrolling a device. Intune requires Azure Active Directory (Azure AD) as the user identity provider. If you already use this service, you’ll be able to leverage your existing identity already in the cloud. In addition, Azure AD Connect is the recommended tool to synchronize your on-premises user identities with Microsoft cloud services. If your organization is already using Office 365, it’s important that Intune uses the same Azure Active Directory environment.
 
 You can find more information regarding Intune’s Identity requirements below.
 
@@ -151,7 +153,7 @@ You can find more information regarding Intune’s Identity requirements below.
 
 ### User and device groups
 
-User and device groups determines the target of a deployment. This could include deployment targeting for policies, applications, and profiles. Intune cloud only support user and device groups – you’ll need to determine what user and device groups will be required. It’s recommended that all groups are created in the on-premises Active Directory, then synchronized to Azure Active Directory. You can find more information about user and device group planning and creation below.
+User and device groups determines the target of a deployment. This could include deployment targeting for policies, applications, and profiles. Intune cloud-only supports user and device groups – you’ll need to determine what user and device groups will be required. It’s recommended that all groups are created in the on-premises Active Directory, then synchronized to Azure Active Directory. You can find more information about user and device group planning and creation below.
 
 -   Learn more about [planning your user and device groups](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
@@ -259,7 +261,7 @@ You should create at least one Configuration Policy per platform. You can create
 |:---:|:---:|:---:|:---:|
 | Corporate - iOS | iOS | PIN is required, Length: 6, Restrict Cloud Backup | Corporate Devices |                                                           
 | Corporate - Android | Android | PIN is required, Length: 6, Restrict Cloud Backup | Corporate Devices |                                                           
-| BYOD – iOS  | iOS | PIN is required, Length: 4 | BYOD devices | 
+| BYOD – iOS  | iOS | PIN is required, Length: 4 | BYOD devices |
 | BYOD – Android  | Android | PIN is required, Length: 4 | BYOD devices |
 
 ### Profiles
@@ -288,7 +290,7 @@ Certificate profiles allow Intune to issue a certificate to a user or device. In
 
 It’s recommended to document which user group needs a certificate, how many certificate profiles will be needed, and which user groups to deploy them to.
 
->[!NOTE] 
+>[!NOTE]
 > Remember that the trusted root certificate is required for the SCEP certificate, so make sure all users targeted for the SCEP certificate also receive a trusted root certificate. If SCEP certificates are needed, design and document what SCEP certificate templates will be needed.
 
 Here’s an example how you can document the certificates during the design:
@@ -364,7 +366,7 @@ Since apps can be deployed to users and devices, it’s recommended to decide wh
 -   Are the apps publicly available in an app store, or are they custom Line of Business Apps?
 
 
->[!TIP] 
+>[!TIP]
 > Check out the [different types of applications that Intune support](https://docs.microsoft.com/intune/deploy-use/add-apps).
 
 #### App protection policies

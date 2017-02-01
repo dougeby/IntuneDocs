@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure Windows Information Protection with Intune Azure preview
+# How to configure Windows Information Protection 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
