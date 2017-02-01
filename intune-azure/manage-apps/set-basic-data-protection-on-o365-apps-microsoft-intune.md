@@ -66,8 +66,8 @@ This article uses OneDrive for Business as the example to demonstrate the userâ€
 
 5. Once you set the PIN and confirm it, return to the OneDrive for Business app. You will see a one-time notice that your IT administrator is now protecting work data in OneDrive. <br/> ![Image of one-time notice from your IT administrator](./media/one-time-notice.png)
 6. Click past this notice to access the files on your OneDrive for Business. <br/> ![Image of OneDrive files on iOS device](./media/onedrive-files-ios.png) <br/>
->[!NOTE]
 
+>[!NOTE]
 >When you change a deployed policy, the changes will be applied next time you open the app.
 
 
