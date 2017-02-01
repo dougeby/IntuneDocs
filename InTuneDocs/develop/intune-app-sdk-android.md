@@ -485,7 +485,20 @@ The following are common ways an app can be configured with ADAL. Find your app'
 	| NonBrokerRedirectURI | A valid redirect URI for the app, or `urn:ietf:wg:oauth:2.0:oob` by default. <br><br> Make sure to configure the value as an acceptable redirect URI for your app's ClientID.
 	| SkipBroker | **True** |
 
+### Secret Key
 
+Because AAD authentication requires that a secret key be set for any Android API < 18, apps must override the MAMApplication method `getADALSecretKey`.
+
+```java
+public byte[] getADALSecretKey();
+```
+
+This is an important step. MAM will request ADAL authentication on behalf of the app in several scenarios, including MAM service enrollment on app startup. Some of these scenarios require the secret key to be set before an app that integrates ADAL would normally set the key (during its own authentication). For the SDK to share the ADAL token cache with the app and reduce the number of user authentication prompts, the app should implement this method **such that it returns a consistent secret key that the app will also use**.
+
+Please follow the [ADAL guidelines for generating a secret key](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library) when overriding `getADALSecretKey`.
+
+> [!NOTE]
+> If your app does not call `AuthenticationSettings.getSecretKey`, or does not integrate ADAL at all, you may simply return null.
 
 ## Multi-Identity (optional)
 
