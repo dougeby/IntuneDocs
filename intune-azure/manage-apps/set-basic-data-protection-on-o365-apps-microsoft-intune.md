@@ -59,12 +59,13 @@ This article uses OneDrive for Business as the example to demonstrate the userâ€
 
 
 4. Re-start the OneDrive for Business app. The app starts with the MAM policies turned on and you are prompted to set a PIN for the device (if you do not have a PIN configured for the device yet). <br/> ![Image of prompt to create a PIN](./media/pin-prompt-ios.png)
+
 >[!NOTE]
 >Most of your users won't see this prompt. Only users who haven't enabled a PIN on their iOS device will see this prompt.
 
 
-5. Once you set the PIN and confirm it, return to the OneDrive for Business app. You will see a one-time notice that your IT administrator is now protecting work data in OneDrive. ![Image of one-time notice from your IT administrator](./media/one-time-notice.png)
-6. Click past this notice to access the files on your OneDrive for Business. <br/> ![Image of OneDrive files on iOS device](./media/onedrive-files-ios.png)
+5. Once you set the PIN and confirm it, return to the OneDrive for Business app. You will see a one-time notice that your IT administrator is now protecting work data in OneDrive. <br/> ![Image of one-time notice from your IT administrator](./media/one-time-notice.png)
+6. Click past this notice to access the files on your OneDrive for Business. <br/> ![Image of OneDrive files on iOS device](./media/onedrive-files-ios.png) <br/>
 >[!NOTE]
 
 >When you change a deployed policy, the changes will be applied next time you open the app.
@@ -74,7 +75,7 @@ This article uses OneDrive for Business as the example to demonstrate the userâ€
 
 1. Start the OneDrive for Business app to open the sign-in page.  <br/> ![Image of OneDrive app welcome screen](./media/onedrive-android-welcome.png)
 2. Type your work account user name. You are redirected to the Office 365 authentication page to enter your work credentials. <br/> ![Image of O365 sign-in on Android](./media/o365-sign-in-android.png)
-3. After your credentials are successfully authenticated by Azure Active Directory, you will see a message instructing you to install the Company Portal app, if it is not already installed on the device. Tap on **Get the app** to proceed. <br/> ![Image of message to get the Company Portal app](./media/get-company-portal-android.png) <br/>If you already have the Company Portal app installed on your phone, the OneDrive for Business app will automatically start and you can skip to the end note.
+3. After your credentials are successfully authenticated by Azure Active Directory, you will see a message instructing you to install the Company Portal app, if it is not already installed on the device. Tap on **Go to store** to proceed. <br/> ![Image of message to get the Company Portal app](./media/get-company-portal-android.png) <br/>If you already have the Company Portal app installed on your phone, the OneDrive for Business app will automatically start and you can skip to the end note.
 >[!IMPORTANT]
 >On Android, once you set up Office apps to be managed by a MAM policy, the device user **must** install the Company Portal app to access work emails and documents, even though the end user doesn't need to open or sign into the app to actually read emails or documents.
 
@@ -116,13 +117,13 @@ This article uses OneDrive for Business as the example to demonstrate the userâ€
 |Block managed apps from running on jailbroken or rooted devices | No | No|
 |Recheck the access requirements after (minutes) - Timeout | 30 | 30|
 |Recheck the access requirements after (minutes) - Offline grace period | 720 |720|
-|Offline ???integral or interval??? (days) before app data is wiped | 90 | 90|
+|Offline interval (days) before app data is wiped | 90 | 90|
 |Block screen capture (Android devices only) | N/A | No |
 
 ### Why is an app PIN policy only configured for Android devices?
 Encryption works differently on iOS and Android.
 
-On iOS, for apps that are associated with an Intune MAM policy, data is encrypted at rest through device-level encryption provided by the operating system. So, when you turn on the app encryption policy, you are automatically also requiring that the user have and enter a device PIN to access work data. Users who do not already have a device PIN configured on the device will be prompted to create a device PIN.
+On iOS, for apps that are associated with an Intune MAM policy, data is encrypted at rest through device-level encryption provided by the operating system. So, when you turn on the app encryption policy, you are automatically also requiring the user to have and enter a device PIN to access work data. Users who do not already have a device PIN configured on the device will be prompted to create a device PIN.
 
 On Android, for apps that are associated with an Intune MAM policy, data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted. On devices that are not MDM-managed, MAM policy cannot force the requirement of a device PIN. To ensure that users are required to use some PIN To access work data, the wizard enables the app PIN policy.
 
