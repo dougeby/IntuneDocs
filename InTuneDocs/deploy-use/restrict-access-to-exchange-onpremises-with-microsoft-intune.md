@@ -30,18 +30,19 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+You can configure conditional access control email access to Exchange on-premises or to legacy Exchange Online Dedicated by using Microsoft Intune.
+To learn more about how conditional access works, read the [Protect access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+
 > [!NOTE]
 > If you have an Exchange Online Dedicated environment and need to find out whether it's in the new or the legacy configuration, contact your account manager.
 
+## Before you begin
 
-To control email access to Exchange on-premises or to your legacy Exchange Online Dedicated environment, you can configure conditional access to Exchange on-premises by using Microsoft Intune.
-To learn more about how conditional access works, read the [Protect access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
-
-**Before** you can configure conditional access, verify the following:
+Make sure to verify the following:
 
 -   Your Exchange version must be **Exchange 2010 or later**. Exchange Server Client Access Server (CAS) arrays are supported.
 
--   You must use the **on-premises Exchange connector**, which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Exchange on-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. For details on the connector, see [Intune on-premises Exchange connector](intune-on-premises-exchange-connector.md).
+-   You must use the [Intune on-premises Exchange connector](intune-on-premises-exchange-connector.md), which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Exchange on-premises. This lets you manage devices through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console.
 
     -   The on-premises Exchange connector that is available to you in the Intune console is specific to your Intune tenant and can't be used with any other tenant. We recommend that you also ensure that the Exchange connector for your tenant is installed **on only one machine**.
 
@@ -53,6 +54,8 @@ To learn more about how conditional access works, read the [Protect access to em
 
 -   You must configure **Exchange ActiveSync** with certificate-based authentication or user credential entry.
 
+### Device compliance requirements
+
 When you configure conditional access policies and target them to a user, before a user can connect to their email, the **device** they use must be:
 
 -  Either a domain-joined PC or **enrolled** with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
@@ -62,6 +65,8 @@ When you configure conditional access policies and target them to a user, before
   The Azure Active Directory Device Registration service is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration service will not see registered devices in on-premises Active Directory. **This does not apply to Windows PCs and Windows Phone devices**.
 
 -   **Compliant** with any [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] compliance policies that are deployed to that device.
+
+### How conditional access works with Exchange on-premises
 
 The following diagram illustrates the flow that conditional access policies for Exchange on-premises use to evaluate whether to allow or block devices.
 
