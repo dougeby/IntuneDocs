@@ -42,10 +42,10 @@
 ## [Section 9: Testing and validation](plan-design/section-9-test-and-validation.md)
 ## [Additional resources](plan-design/additional-resources.md)
 
-# [What's New](whats-new/whats-new-in-microsoft-intune.md)
-## [What's New in the Intune App UI](whats-new/whats-new-in-intune-app-ui.md)
-## [What's New in the Azure preview](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
-## [What's New archive](whats-new/whats-new-archive.md)
+# [What's new](whats-new/whats-new-in-microsoft-intune.md)
+## [What's new in app UI](whats-new/whats-new-in-intune-app-ui.md)
+## [What's new in the Azure preview](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
+## [What's new archive](whats-new/whats-new-archive.md)
 
 # Deploy and Use
 ## [Overview of device and app lifecycles](deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
@@ -106,7 +106,7 @@
 
 ## [Protect devices](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Remote lock & passcode reset](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [Protect Windows devices with MFA](deploy-use/protect-windows-devices-with-multi-factor-authentication.md)
+### [Protect Windows devices with MFA](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [Control Windows Hello for Business settings](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Bypass Activation Lock on iOS](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Policies to protect Windows PCs](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
