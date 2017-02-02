@@ -35,7 +35,7 @@ Learn what updates we've made to the UI for apps that your end users will operat
 ## What's coming
 
 ### New user experience for the Company Portal app for Android <!--621622, announced 1702-->
-Beginning in February, the Company Portal app for Android will follow [material design guidelines](https://material.io/guidelines/material-design/introduction.html) to create a more modern look and feel while improving readability across all tabs. This improved user experience includes:
+Beginning in February, the Company Portal app for Android will follow [material design guidelines](https://material.io/guidelines/material-design/introduction.html) to create a more modern look and feel. This improved user experience includes:
 
 * __Colors__: tab headers can be colored according to your custom color palette.
 
@@ -45,7 +45,7 @@ Beginning in February, the Company Portal app for Android will follow [material 
 
 ![On the left, an image of the Company Portal app for Android before the update. On the right, an image of the Company Portal app for Android after the update. Both images show the Apps tab as the selected tab from the three available tabs of Apps, Devices, and Contact IT.](./media/CP_Android_AppsTab_BeforeAfter.png)
 
-* __Navigation__: All Apps shows a tabbed view of __Featured__, __All__ and __Categories__ for easier navigation.
+* __Navigation__: All Apps shows a tabbed view of __Featured__, __All__ and __Categories__ for easier navigation. __Contact IT__ has been streamlined for improved readability.
 
 ![The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information.](./media/CP_Android_ContactIT_After.png)
 
