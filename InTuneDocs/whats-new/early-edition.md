@@ -40,33 +40,27 @@ This page is updated periodically. Check back for additional updates.
 ### Modernizing the Company Portal website <!--753980-->
 The Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Small image of the hamburger menu that is now added at the top left corner of the Company Portal website](../media/CP_hamburger_menu.png) which will contain helpdesk contact details and information on existing managed devices. The landing page will be rearranged to emphasize apps that are available to users, with carousels for Featured and Recently Updated apps. You can find before and after images available on the [What's new in the Company Portal UI page](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
 
-### Non-managed devices can access targeted apps <!--664691-->
-As part of the design changes on the Company Portal website, beginning in February, iOS and Android users will be able to install apps targeted to them as "available without enrollment" on their non-managed devices. Using their Intune credentials, users will be able to log into the Company Portal website and see the list of apps targeted to them. The app packages of the "available without enrollment"'" apps are made available for download via the CP website. Apps which require enrollment for installation are not affected by this change, as users will be prompted to enroll their device if they wish to install those apps.
-
-### View all actions on managed devices <!--677150-->
-A new __Device Actions__ report shows who has performed remote actions like factory reset on devices, and additionally shows the status of that action.
-
 ## Notices
 
 ### Group migration will not require any updates to groups or policies for iOS devices <!--898837-->
 For every Intune device group pre-assigned by a Corporate Device Enrollment profile, a corresponding dynamic device group will be created in AAD based on the Corporate Device Enrollment profile’s name, during the migration to Azure Active Directory device groups. This will ensure the as devices enroll, they will be automatically grouped and received the same policies and apps as the original Intune group.
 
-Once a tenant enters the migration process for grouping and targeting, Intune will automatically create a dynamic AAD group to correspond to an Intune group targeted by a Corporate Device Enrollment profile. If the Intune Admin deletes the targeted Intune group, the corresponding dynamic AAD group will not be deleted. The group's members and the dynamic query will be cleared, but the group itself will remain until the IT Admin removes it up via AAD portal.
+Once a tenant enters the migration process for grouping and targeting, Intune will automatically create a dynamic AAD group to correspond to an Intune group targeted by a Corporate Device Enrollment profile. If the Intune Admin deletes the targeted Intune group, the corresponding dynamic AAD group will not be deleted. The group's members and the dynamic query will be cleared, but the group itself will remain until the IT Admin removes it via the AAD portal.
 
 Similarly, if the IT Admin changes which Intune group is targeted by a Corporate Device Enrollment profile, Intune will create new dynamic group reflecting the new profile assignment, but will not remove the dynamic group created for the old assignment.
 
 ### New MDM server address for Windows devices <!--893007-->
-Windows and Windows Phone 8.1+ users attempting to enroll a device will fail if they enter __manage.microsoft.com__ as the MDM server address (if prompted). The MDM server address is changing from __manage.microsoft.com__ to __enrollment.manage.microsoft.com__. Notify your user to use __enrollment.manage.microsoft.com__ as the MDM server address if prompted for it while enrolling a Windows or and Windows Phone 8.1+ device.
+Windows and Windows Phone users attempting to enroll a device will fail if they enter __manage.microsoft.com__ as the MDM server address (if prompted). The MDM server address is changing from __manage.microsoft.com__ to __enrollment.manage.microsoft.com__. Notify your user to use __enrollment.manage.microsoft.com__ as the MDM server address if prompted for it while enrolling a Windows or and Windows Phone device. This update will require any CNAME in DNS that redirects __EnterpriseEnrollment.contoso.com__ to __manage.microsoft.com__ to be replaced with a CNAME in DNS that redirects __EnterpriseEnrollment.contoso.com__ to __EnterpriseEnrollment-s.manage.microsoft.com__. For additional information about this change, visit [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange).
 
-### Bringing material design to the Company Portal app for Android <!--621622-->
-Beginning in February, the Company Portal app for Android will follow material design guidelines to create a more modern look and feel. This improved user experience includes:
+### New user experience for the Company Portal app for Android <!--621622-->
+Beginning in February, the Company Portal app for Android will follow [material design guidelines](https://material.io/guidelines/material-design/introduction.html) to create a more modern look and feel. This improved user experience includes:
 
 * __Colors__: tab headers can be colored according to your custom color palette.
 * __Interface__: Featured Apps and All Apps buttons have been updated in the Apps tab. The Search button is now a floating action button.
 * __Navigation__: All Apps shows a tabbed view of Featured, All and Categories for easier navigation.
 * __Service__: My Devices and Contact IT tabs have improved readability.
 
-<!--You can find before and after images on the [What's new in the Company Portal UI page](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).-->
+You can find before and after images on the [What's new in the Company Portal UI page](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
 
 ## Public preview of the new Intune admin experience on Azure <!--736542-->
 
@@ -86,7 +80,13 @@ Intune is adding new enrollment restrictions that control which mobile device pl
 * Restricting mobile device enrollment does not restrict PC client enrollment.  
 * For iOS and Android only, there is one additional option to block the enrollment of personally owned devices.
 
-Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned. <!--, as explained in this article-->
+Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+
+### View all actions on managed devices <!--677150-->
+A new __Device Actions__ report shows who has performed remote actions like factory reset on devices, and additionally shows the status of that action.
+
+### Non-managed devices can access assigned apps <!--664691-->
+As part of the design changes on the Company Portal website, iOS and Android users will be able to install apps assigned to them as "available without enrollment" on their non-managed devices. Using their Intune credentials, users will be able to log into the Company Portal website and see the list of apps assigned to them. The app packages of the "available without enrollment" apps are made available for download via the Company Portal website. Apps which require enrollment for installation are not affected by this change, as users will be prompted to enroll their device if they wish to install those apps.
 
 #### Custom app categories <!--748805-->
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
