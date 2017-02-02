@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 02/02/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,17 +33,21 @@ ms.suite: ems
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
 
-## January 2017
+<!--## February 2017-->
 
 <!--### Custom app categories <!--748805
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
 See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).-->
 
-### Assign line of business apps whether or not devices are enrolled <!--748803-->
+<!--### Display device categories <!--814654
+You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade.-->
+
+## January 2017
+
+### Assign line of business apps whether or not devices are enrolled <!--748823-->
 You can now assign line of business and apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app. See [What is app management](/intune-azure/manage-apps/what-is-app-management).
 
 ### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them
-
 When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources. See [Devices are inactive, or the admin console cannot communicate with them](/intune-azure/enroll-devices/troubleshoot-device-enrollment#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
 
 ## December 2016 (initial release)
