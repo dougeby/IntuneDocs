@@ -44,7 +44,7 @@ You can now view the device category as a column in the device list. You can als
 
 ## January 2017
 
-### Assign line of business apps whether or not devices are enrolled <!--748803-->
+### Assign line of business apps whether or not devices are enrolled <!--748823-->
 You can now assign line of business and apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app. See [What is app management](/intune-azure/manage-apps/what-is-app-management).
 
 ### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them

@@ -80,6 +80,14 @@ If you have any questions about the timeline for your tenant’s migration, cont
 
 ### February 2017
 
+#### Ability to restrict mobile device enrollment <!--747600, 795782-->
+Intune is adding new enrollment restrictions that control which mobile device platforms are allowed to enroll. Intune separates mobile device platforms as iOS, macOS, Android, Windows and Windows Mobile.
+
+* Restricting mobile device enrollment does not restrict PC client enrollment.  
+* For iOS and Android only, there is one additional option to block the enrollment of personally owned devices.
+
+Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned. <!--, as explained in this article-->
+
 #### Custom app categories <!--748805-->
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
 See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).
