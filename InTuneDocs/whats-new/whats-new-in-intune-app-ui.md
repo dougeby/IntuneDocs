@@ -34,7 +34,7 @@ Learn what updates we've made to the UI for apps that your end users will operat
 
 ## What's coming
 
-### Bringing material design to the Company Portal app for Android <!--621622, announced 1702-->
+### New user experience for the Company Portal app for Android <!--621622, announced 1702-->
 Beginning in February, the Company Portal app for Android will follow [material design guidelines](https://material.io/guidelines/material-design/introduction.html) to create a more modern look and feel while improving readability across all tabs. This improved user experience includes:
 
 * __Colors__: tab headers can be colored according to your custom color palette.
