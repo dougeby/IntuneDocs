@@ -38,15 +38,15 @@ Beginning in February, the Company Portal app for Android will follow material d
 
 
 
-* __Interface__: Featured Apps and All Apps buttons have been updated in the Apps tab. The Search button is now a floating action button.
+* __Interface__: __Featured Apps__ and __All Apps__ buttons have been updated in the __Apps__ tab. The __Search__ button is now a floating action button.
 
 
 
-* __Navigation__: All Apps shows a tabbed view of Featured, All and Categories for easier navigation.
+* __Navigation__: All Apps shows a tabbed view of __Featured__, __All__ and __Categories__ for easier navigation.
 
 
 
-* __Service__: My Devices and Contact IT tabs have improved readability.
+* __Service__: __My Devices__ and __Contact IT__ tabs have improved readability.
 
 
 
