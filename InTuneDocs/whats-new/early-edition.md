@@ -82,10 +82,10 @@ Intune is adding new enrollment restrictions that control which mobile device pl
 
 Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
 
-### View all actions on managed devices <!--677150-->
+#### View all actions on managed devices <!--677150-->
 A new __Device Actions__ report shows who has performed remote actions like factory reset on devices, and additionally shows the status of that action.
 
-### Non-managed devices can access assigned apps <!--664691-->
+#### Non-managed devices can access assigned apps <!--664691-->
 As part of the design changes on the Company Portal website, iOS and Android users will be able to install apps assigned to them as "available without enrollment" on their non-managed devices. Using their Intune credentials, users will be able to log into the Company Portal website and see the list of apps assigned to them. The app packages of the "available without enrollment" apps are made available for download via the Company Portal website. Apps which require enrollment for installation are not affected by this change, as users will be prompted to enroll their device if they wish to install those apps.
 
 #### Custom app categories <!--748805-->
