@@ -49,7 +49,7 @@ Beginning in February, the Company Portal app for Android will follow [material 
 
 <div style="text-align:center" markdown="1"
 
-![The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information.](./media/CP_Android_ContactIT_After.png)<-
+![The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information.](./media/CP_Android_ContactIT_After.png)
 
 </div>
 
