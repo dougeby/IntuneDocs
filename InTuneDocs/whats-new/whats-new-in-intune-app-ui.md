@@ -59,8 +59,6 @@ Beginning in February, the Company Portal app for Android will follow [material 
 </body>
 </html>
 
-![](./media/CP_Android_ContactIT_After.png)
-
 
 
 ### Modernizing the Company Portal website <!--753980, announced 1701-->
