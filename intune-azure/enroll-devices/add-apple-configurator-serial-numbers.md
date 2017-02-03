@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/03/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,13 +30,9 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use these steps to add serial numbers to Intune when you want to enroll corporate-owned iOS devices by using Apple Configurator with Setup Assistant. You must add the serial numbers before you go on to the next step: [Enroll iOS devices with Apple Configurator and Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md).
+Use these steps to add serial numbers to Intune when you want to [enroll corporate-owned iOS devices by using Apple Configurator with Setup Assistant]((enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). You can add serial numbers one at a time, or upload a comma-separate-value (CSV) file of serial numbers. After you add serial numbers, you can assign a profile to them. The profile contains specific management settings that you want to apply to devices. 
 
 Other methods of enrolling iOS devices are described in [Choose how to enroll iOS devices in Intune](choose-ios-enrollment-method.md).
-
-## Prerequisites
-
-You must [enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md) before adding Apple Configurator serial numbers to Intune.
 
 **To add Apple Configurator serial numbers to Intune**
 
