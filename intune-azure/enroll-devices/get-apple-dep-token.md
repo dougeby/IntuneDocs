@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/03/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,6 +32,9 @@ ms.suite: ems
 Before you can enroll corporate-owned iOS devices with DEP, you need a DEP token from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform Enrollment Profile uploads to Apple and to assign devices to those profiles.
 
 To manage corporate-owned iOS devices with Apple’s Device Enrollment Program (DEP), your organization must join Apple DEP and get devices through that program. Details of that process are available at: https://deploy.apple.com. Advantages of the program include hands-free setup of devices without using a USB cable to connect each device to a computer.
+
+> [!NOTE]
+> Read this note only if you are a customer who has been migrated from the Intune administration console to the Azure portal. If you deleted an Apple DEP token from the Intune administration console during the migration period, you may find that the DEP token has been restored to your Intune account. If this happens, just delete the DEP token from the Azure portal. 
 
 **To get the Apple DEP certificate**</br>
 In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**. On the Intune blade, choose **Enroll devices** > **Apple DEP Token**, and then follow the numbered steps in the Azure portal, which are shown below.
