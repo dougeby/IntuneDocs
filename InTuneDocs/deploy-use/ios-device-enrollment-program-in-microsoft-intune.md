@@ -18,7 +18,7 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 
 #ROBOTS:
 #audience:
-#ms.devlang:
+#ms.devlang:s
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
@@ -31,6 +31,9 @@ ms.suite: ems
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune can deploy an enrollment profile that enrolls iOS devices that were bought through the Device Enrollment Program (DEP) “over the air.” The enrollment package can include setup assistant options for the device.
+
+>[!NOTE]
+>This enrollment method can't be used with the [device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) method.
 
 ## Prerequisites for enrolling iOS devices by using Apple DEP management
 
@@ -127,7 +130,7 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
 2. Choose the devices to which you want to assign the profile that you created. You can choose **All devices** or select specific devices, and then select **Add**.
 
 > [!Important]
-> Currently, Intune let you designate a "default" device enrollment profile," which means that new serial numbers are automatically assigned to that default profile when you synchronize new serial numbers with the Apple DEP service. When your tenant is migrated to the new Azure portal in the near future, you will no longer be able to set a default profile and have serial numbers be automatically assigned to that profile. Instead, you will have to assign serial numbers to a specific profile. [Learn more](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
+> Currently, Intune lets you designate a "default" device enrollment profile," which means that new serial numbers are automatically assigned to that default profile when you synchronize new serial numbers with the Apple DEP service. When your tenant is migrated to the new Azure portal in the near future, you will no longer be able to set a default profile and have serial numbers be automatically assigned to that profile. Instead, you will have to assign serial numbers to a specific profile. [Learn more](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
 
 ### Assign DEP Devices for Management
 
@@ -141,7 +144,7 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
 
 ### Synchronize DEP-Managed Devices
 
-    This step synchronizes devices with the Apple DEP Service, and makes the devices appear in the Intune console.
+This step synchronizes devices with the Apple DEP Service, and makes the devices appear in the Intune console.
 
 1. As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**, and then choose **Sync now**. A sync request is sent to Apple.
 
