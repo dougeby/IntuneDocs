@@ -70,7 +70,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 
 <td>
 
-<img src="https://docs.microsoft.com/InTune/media/whats-new/CP_website_after_Feb_2017.png" alt="An image of the updated version of the Company Portal website" style="float: right; margin-left: 5px; margin-bottom: 10px;">
+<img src="https://docs.microsoft.com/InTune/media/whats-new/media/CP_website_after_Feb_2017.png" alt="An image of the updated version of the Company Portal website" style="float: right; margin-left: 5px; margin-bottom: 10px;">
 
 </td>
 
