@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,10 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune supports the enrollment of corporate-owned iOS devices using [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) running on a Mac computer. This process resets the device to factory settings, prepares it to run Setup Assistant, and installs the company's policies for the device’s new user.  
+Intune supports the enrollment of corporate-owned iOS devices using [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) running on a Mac computer. This process resets the device to factory settings, prepares it to run Setup Assistant, and installs the company's policies for the device’s new user.
+
+>[!NOTE]
+>This enrollment method can't be used with the [device enrollment manager](enroll-devices-using-device-enrollment-manager.md) method.
 
 Using Apple Configurator, you can reset an iOS device to factory settings and prepare it to be set up for the device’s new user. This method requires you to connect the iOS device to a Mac computer via USB to set up corporate enrollment, and it assumes you are using Apple Configurator 2.0. Most scenarios require that the policy applied to the iOS device include user affinity to enable the Intune Company Portal app.
 
@@ -99,18 +102,17 @@ After you create the profile and assign serial numbers, you have to export the p
 
 3. Copy the profile URL into [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12), with the iOs device attached. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
 
-    >[!WARNING]
-    >Using this method removes all data from the device and resets it to factory default settings.
-
-     To support Apple Configurator 2, the 2.0 Profile URL must be edited. To do so, replace this code:</br></br>
+  To support Apple Configurator 2, the 2.0 Profile URL must be edited. To do so, replace this code:
     ```
-   https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```</br></br>
-   With this code:
+    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+    ```
+    With this code:
 
     ```
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
     ```
+
+   You will upload this profile URL to the Apple DEP service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
 
 4. Upload this profile URL to the Apple DEP service using Apple Configurator to define the Intune profile used by iOS devices.
 

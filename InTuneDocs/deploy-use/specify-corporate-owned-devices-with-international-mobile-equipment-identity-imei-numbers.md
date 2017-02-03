@@ -55,3 +55,6 @@ Microsoft Intune lets admins import international mobile equipment identity (IME
 4.  The imported IMEI numbers and descriptions are added to the **By IMEI (All platforms)** list.
 
 When a device that has IMEI number enrolls in Intune, usually when a user installs the Company Portal app and completes the enrollment process, the device will be tagged as corporate-owned and appear as enrolled in the **IMEI Devices** group.
+
+>[!NOTE] 
+> When your organization is migrated to the new Azure portal in the near future, you will see a change to this feature. In the existing Intune administrator console, admins can accept associated details from an uploaded CSV and overwrite the existing details for individual hardware identifiers. In the new Azure portal, you’ll be able to automatically overwrite the details for all hardware identifiers or to ignore all new details for existing identifiers.
