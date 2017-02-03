@@ -47,45 +47,40 @@ Beginning in February, the Company Portal app for Android will follow [material 
 
 * __Navigation__: All Apps shows a tabbed view of __Featured__, __All__ and __Categories__ for easier navigation. __Contact IT__ has been streamlined for improved readability.
 
-<div style="text-align:center" markdown="1"
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/en-us/InTune/whats-new/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information.">
+          </td>
+      </tr>
+   </table>
+</body>
+</html>
 
-![The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information.](./media/CP_Android_ContactIT_After.png)
+![](./media/CP_Android_ContactIT_After.png)
 
-</div>
+
 
 ### Modernizing the Company Portal website <!--753980, announced 1701-->
 Beginning in February, the Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Small image of the hamburger menu that is now added at the top left corner of the Company Portal website](./media/CP_hamburger_menu.png) which will contain helpdesk contact details and information on existing managed devices. The landing page will be rearranged to emphasize apps that are available to users, with carousels for Featured and Recently Updated apps.
 
 <html>
-
 <body>
-
-<table>
-
-<tr>
-
-<td>
-
-<img src="https://docs.microsoft.com/InTune/whats-new/media/CP_website_before_Feb_2017.png" alt="An image of the current version of the Company Portal website" style="float: left; margin-right: 5px; margin-bottom: 10px;">
-
-</td>
-
+  <table>
+    <tr>
+      <td>
+        <img src="https://docs.microsoft.com/InTune/whats-new/media/CP_website_before_Feb_2017.png" alt="An image of the current version of the Company Portal website." style="float: left; margin-right: 5px; margin-bottom: 10px;">
+      </td>
 <!-- Column two -->
-
-<td>
-
-<img src="https://docs.microsoft.com/InTune/media/whats-new/media/CP_website_after_Feb_2017.png" alt="An image of the updated version of the Company Portal website" style="float: right; margin-left: 5px; margin-bottom: 10px;">
-
-</td>
-
-</tr>
-
-</table>
-
+      <td>
+        <img src="https://docs.microsoft.com/InTune/media/whats-new/media/CP_website_after_Feb_2017.png" alt="An image of the updated version of the Company Portal website." style="float: right; margin-left: 5px; margin-bottom: 10px;">
+      </td>
+    </tr>
+  </table>
 </body>
-
 </html>
-
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
