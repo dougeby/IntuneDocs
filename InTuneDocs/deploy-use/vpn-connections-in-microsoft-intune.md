@@ -46,13 +46,9 @@ You can configure the following device types by using VPN profiles:
 
 The VPN profile configuration options differ depending on the device type that you select.
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 ## VPN connection types
 
 Intune supports creating VPN profiles that use the following connection types:
-
-
 
 
 Connection type |iOS and Mac OS X  |Android and Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 desktop and mobile |
@@ -202,5 +198,3 @@ Domain-specific rules are evaluated before all-domain rules.
 After successful deployment, users will see the VPN connection name that you specified in the list of VPN connections on their devices.
 
 A status summary and alerts on the **Overview** page of the **Policy** workspace identify issues with the policy that require your attention. Additionally, a status summary appears in the Dashboard workspace.
-
-

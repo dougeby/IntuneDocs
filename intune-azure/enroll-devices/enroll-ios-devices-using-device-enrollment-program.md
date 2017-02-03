@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -104,7 +104,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 9. To save the profile settings, select **Create** on the **Create Enrollment Profile** blade.
 
-## Assign Apple DEP serial numbers to profiles
+## Assign Apple DEP serial numbers to your MDM server
 
 1. Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://deploy.apple.com) and sign in with your company Apple ID. 
 
