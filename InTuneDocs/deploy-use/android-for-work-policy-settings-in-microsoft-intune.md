@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,9 +31,7 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-Intune supplies a range of built-in general settings that you can configure on Android for Work devices.
+Intune supplies a range of built-in general settings that you can configure on [Android for Work devices](android-for-work.md).
 
 ## General configuration policy
 
@@ -66,8 +64,6 @@ If the setting you are looking for does not appear in this topic, you might be a
 |**Allow data sharing between work and personal profiles**|Lets apps in the work profile share data with apps in the users personal profile. Choose from:<br><br>- **Prevent any sharing across boundaries**<br>- **Apps in work profile can handle sharing request from personal profile**<br>- **No restrictions on sharing**|
 |**Hide work profile notifications when the device is locked**<br>(Android 6 and later)|Control whether to show any notifications from the work profile when the device is locked.|
 |**Set default app permission policy**<br>(Android 6 and later)|Sets the default permission policy for all apps in the work profile.|
-
-
 
 
 ## Custom policy settings

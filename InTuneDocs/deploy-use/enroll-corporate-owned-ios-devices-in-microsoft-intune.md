@@ -37,11 +37,11 @@ Microsoft Intune supports the enrollment of corporate-owned iOS devices through 
 You can enroll corporate-enrolled iOS devices by using one of three methods:
 
 - Apple Configurator, using either Setup Assistant or direct enrollment
-- device enrollment program
+- Device enrollment program
 - Company Portal app
 
 >[!NOTE]
->This enrollment method can't be used with the [device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) method.
+>The Apple Configurator and Device enrollment program enrollment methods can't be used with the [device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) method.
 
 By default, all iOS devices are allowed to enroll in Intune. To block personal or corporate-owned devices from enrolling, sign to the [Microsoft Intune admin portal](http://manage.microsoft.com) with your admin credentials. Choose **Admin** > **Mobile Device Management** > **Enrollment Rules** and then clear the applicable options.
 

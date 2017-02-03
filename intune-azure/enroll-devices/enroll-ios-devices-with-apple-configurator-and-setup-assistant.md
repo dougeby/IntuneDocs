@@ -102,18 +102,17 @@ After you create the profile and assign serial numbers, you have to export the p
 
 3. Copy the profile URL into [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12), with the iOs device attached. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
 
-    >[!WARNING]
-    >Using this method removes all data from the device and resets it to factory default settings.
-
-     To support Apple Configurator 2, the 2.0 Profile URL must be edited. To do so, replace this code:</br></br>
+  To support Apple Configurator 2, the 2.0 Profile URL must be edited. To do so, replace this code:
     ```
-   https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```</br></br>
-   With this code:
+    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+    ```
+    With this code:
 
     ```
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
     ```
+
+   You will upload this profile URL to the Apple DEP service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
 
 4. Upload this profile URL to the Apple DEP service using Apple Configurator to define the Intune profile used by iOS devices.
 
