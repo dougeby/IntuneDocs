@@ -6,7 +6,7 @@ description: Use mobile app configuration policies in Intune to supply settings 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 11/3/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,19 +33,17 @@ ms.suite: ems
 
 Use mobile app configuration policies in Microsoft Intune to supply settings that might be required when users run an app. For example, an app might require users to specify:
 
--   A custom port number.
+-   A custom port number
+-   Language settings
+-   Branding settings such as a company logo
 
--   Language settings.
+If users enter settings incorrectly, it can increase the burden on your help desk and slow the adoption of new apps.
 
--   Branding settings such as a company logo.
+Mobile app configuration policies let you deploy these settings to devices before users run the app. The settings are supplied automatically, and users need to take no action.
 
-If users enter these settings incorrectly, this can increase the burden on your help desk and slow the adoption of new apps.
+To utilize app configuration policies, the app developer must have exposed enterprise app configurations when they created it. For example, Google Chrome exposes settings that let you set default bookmarks, allowed and denied sites, and more. Contact the developer of the app to see if these settings are supported and how to specify them in the policy.
 
-Mobile app configuration policies can help you eliminate these problems by letting you deploy these settings to users before they run the app. The settings are then supplied automatically, and users need to take no action.
-
-To utilize app configuration policies, the developer of the app must have exposed enterprise app configurations when they created it. For example, Google Chrome exposes settings that let you set default bookmarks, allowed and denied sites, and more. Contact the developer of the app to see if these settings are supported and how to specify them in the policy.
-
-You deploy the app configuration policy to the same users to whom you have deployed the app you want to configure. The policy settings will be used whenever the app is run.
+You deploy the app configuration policy to the same users to whom you have deployed the app you want to configure. App settings are applied when the app is run.
 
 ## Configure a mobile app configuration policy
 
