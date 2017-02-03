@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ Learn what updates we've made to the UI for apps that your end users will operat
 ## What's coming
 
 ### New user experience for the Company Portal app for Android <!--621622, announced 1702-->
-Beginning in February, the Company Portal app for Android will follow [material design guidelines](https://material.io/guidelines/material-design/introduction.html) to create a more modern look and feel. This improved user experience includes:
+Beginning in March, the Company Portal app for Android will follow [material design guidelines](https://material.io/guidelines/material-design/introduction.html) to create a more modern look and feel. This improved user experience includes:
 
 * __Colors__: tab headers can be colored according to your custom color palette.
 
