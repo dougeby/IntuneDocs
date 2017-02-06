@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/30/2017
+ms.date: 02/06/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,9 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 
-Use this topic to learn about any known issues in the Intune preview. If there's an issue you want to report, and it's not shown here, consider filing a report on our [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
+Use this topic to learn about any known issues in the Intune preview.
+If you want to report a bug that is not listed here, [open a support request](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
+If you want to request a new feature be added to Intune, consider filing a report on our [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
 
 ## Administration and accounts
 
