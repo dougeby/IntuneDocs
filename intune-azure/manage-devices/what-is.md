@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/08/2017
+ms.date: 02/06/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid:
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer:
+#ms.reviewer: ilwu
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -58,5 +58,5 @@ Now choose one of the following:
 	![Managed device hardware inventory](./media/hardware-inventory.png)
 	- **Detected Applications** - Displays a list of all apps that Intune found installed on the device.
 	![Detected applications node](./media/detected-applications.png)
-- **Monitor** Choose **Device Actions** to see a list of device actions that have been performed on devices you manage. In this example, you've sent a **Reset passcode** action to an Android device you manage:
+- **Monitor** Choose **Device Actions** to see a list of device actions that have been performed on devices you manage and the current state of those actions.
 ![Monitor device actions](./media/monitor-device-actions.png)
