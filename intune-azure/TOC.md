@@ -87,7 +87,7 @@
 #### [Windows Store for Business apps](manage-apps/wsfb-apps.md)
 ### [Configure the Company Portal app](manage-apps/company-portal-app.md)
 ## How to use app protection policies
-### [Create & deploy app protection policies](manage-apps/app-protection-policies.md)
+### [Create & assign app protection policies](manage-apps/app-protection-policies.md)
 #### [Android settings](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS settings](manage-apps/ios-app-protection-policy-settings.md)
 ### [Validate app protection policies](manage-apps/validate-app-protection-policies.md)
