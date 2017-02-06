@@ -39,7 +39,7 @@ The **Devices and groups** workload gives you insights into the devices you mana
 
 	![Devices and groups workload](./media/devices-and-groups-workload.png)
 
-Now choose one of the following:
+Now, choose one of the following:
 
 - **Overview** Get information about devices you've enrolled, and the operating systems each device runs.
 - **Manage** - Choose **All Devices** to see a list of all the devices you manage.
