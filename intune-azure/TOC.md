@@ -80,7 +80,7 @@
 ### [Assign apps](manage-apps/deploy-apps.md)
 ### [Monitor apps](manage-apps/monitor-apps.md)
 ### [Use app configuration policies](manage-apps/app-configuration-policies.md)
-<!--- ### [Selectively wipe apps](manage-apps/app-selective-wipe.md)--->
+### [Selectively wipe apps](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Work with volume-purchased apps](manage-apps/volume-purchased-apps.md)
 #### [iOS VPP apps](manage-apps/ios-vpp-apps.md)
