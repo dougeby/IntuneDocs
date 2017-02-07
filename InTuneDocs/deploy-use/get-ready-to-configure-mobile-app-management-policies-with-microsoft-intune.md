@@ -108,23 +108,7 @@ You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sub
 
 ### Assign roles to non-global admin users
 
-Global administrators have access to the [Azure portal](https://portal.azure.com).  If you want users who are not global administrators to be able to configure policies and do other mobile app management tasks, you can assign the contributor role to the users. For detailed instructions, see [Use role assignments to manage access to your Azure subscription resources](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/).
-
-
-
-The following table lists the roles and permissions that you can assign to admin users.
-
-
-
-|||
-|--|----|
-|**Role**|**Permissions**|
-|Global administrator (Office 365 portal)|Access to the Office 365 portal and the Azure AD portal.<br /><br />Access to the Azure  portal (can do both role management and mobile app management tasks).|
-|Owner (Azure  portal)|Access to the Azure  portal (can do both role management and mobile app management tasks).|
-|Contributor (Azure  portal)|Access to the Azure  portal (can do only the mobile app management tasks).|
-
-
-
+Global administrators have access to the [Azure portal](https://portal.azure.com).  If you want users who are not global administrators to be able to configure policies and do other mobile app management tasks, check the [Use role assignments to manage access to your Azure subscription resources](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/) article.
 
 ## Next steps
 [Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
