@@ -4,8 +4,8 @@
 title: Protect access using device threat protection | Microsoft Docs
 description: Protect access to company resources based on device, network and application risk.
 keywords:
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
