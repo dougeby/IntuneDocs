@@ -4,8 +4,8 @@
 title: Enable Lookout MTP in Intune | Microsoft Docs
 description: Enable Lookout mobile threat protection in the Intune admin console.
 keywords:
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
