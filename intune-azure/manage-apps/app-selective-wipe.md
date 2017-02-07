@@ -81,12 +81,12 @@ Wipes with pending status are displayed until you manually delete them.  To manu
 
 3.  Right-click on the wipe request you want to delete, then choose **Delete wipe request**.
 
-	![Screenshot of the New wipe request blade](../media/AppManagement/delete-wipe-request.png)
+	![Screenshot of the New wipe request blade](../media/delete-wipe-request.png)
 
 4.  You're prompted to confirm the deletion, choose **Yes** or **No**, then click **OK**.
 
 
 ### See also
-[Protect app data using mobile app management policies ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[What's app protection policy](what-is-app-protection-policy.md)
 
-[Using the Azure portal](azure-portal-for-microsoft-intune-mam-policies.md)
+[What's app management](what-is-app-management.md)
