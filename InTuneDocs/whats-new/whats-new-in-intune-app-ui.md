@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -73,7 +73,7 @@ Beginning in February, the Company Portal website will support apps that are tar
       </td>
 <!-- Column two -->
       <td>
-        <img src="https://docs.microsoft.com/InTune/media/whats-new/media/CP_website_after_Feb_2017.png" alt="An image of the updated version of the Company Portal website." style="float: right; margin-left: 5px; margin-bottom: 10px;">
+        <img src="https://docs.microsoft.com/InTune/whats-new/media/CP_website_after_Feb_2017.png" alt="An image of the updated version of the Company Portal website." style="float: right; margin-left: 5px; margin-bottom: 10px;">
       </td>
     </tr>
   </table>
