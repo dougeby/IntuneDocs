@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -61,6 +61,9 @@ Beginning in March, the Company Portal app for Android will follow [material des
 * __Service__: My Devices and Contact IT tabs have improved readability.
 
 You can find before and after images on the [UI updates page](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
+
+### Associate multiple management tools with the Windows Store for Business <!--VSO TBD from Cory-->
+If you are using more than one management tool to deploy Windows Store for Business apps, previously, you could only associate one of these with the Windows Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager. For details, see [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
 
 ## Public preview of the new Intune admin experience on Azure <!--736542-->
 
