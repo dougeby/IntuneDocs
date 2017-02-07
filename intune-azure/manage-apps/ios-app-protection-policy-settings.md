@@ -61,3 +61,18 @@ There are two categories of policy settings: data relocation settings and access
 | **Block managed apps from running on jailbroken or rooted devices** |  Choose **Yes** to prevent this app from running on jailbroken or rooted devices. The user will continue to be able to use this app for personal tasks, but will have to use a different device to access work or school data in this app. | Yes |
 | **Recheck the access requirements after (minutes)** | Configure the following settings: <ul><li>**Timeout**: Specify the time (in minutes) before the access requirements for the app are rechecked. Default value = **30** minutes.</li><li>**Offline grace period**: If the device is offline, specify the time (in minutes) before the access requirements for the app are rechecked. Default value = **720** minutes (12 hours).</li></ul>| Timeout: 30 <br><br> Offline: 720 |
 | **Offline interval before app data is wiped (days)** | Work or school data in this app can be wiped if a device has been offline for more than a certain period. Specify the number of days a device can be offline before the work or school data is removed from the device. <br><br> | 90 days |
+
+##  Add-ins for Outlook app
+
+Outlook recently brought add-ins to Outlook for iOS which let you integrate popular apps with the email client. Add-ins for Outlook are available on the web, Windows, Mac, and Outlook for iOS. Since add-ins are managed via Microsoft Exchange, users will be able to share data and messages across Outlook and unmanaged add-in applications unless add-ins are turned off for the user by their Exchange.
+
+If you want to stop your end users from accessing and installing Outlook add-ins (this affects all Outlook clients), make sure you have the following changes to roles in the Exchange admin center:
+
+- To prevent users from installing Office Store add-ins, remove the My Marketplace role from them.
+- To prevent users from side loading add-ins, remove the My Custom Apps role from them.
+- To prevent users from installing all add-ins, remove both, My Custom Apps and My Marketplace roles from them.
+
+These instructions apply to Office 365, Exchange 2016, Exchange 2013 across Outlook on the web, Windows, Mac and mobile.
+
+- Learn more about [add-ins for Outlook](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx).
+- Learn more about [how to specify the administrators and users who can install and manage add-ins for Outlook app](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx).
