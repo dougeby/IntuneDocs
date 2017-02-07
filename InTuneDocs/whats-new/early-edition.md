@@ -45,6 +45,7 @@ The Company Portal website will support apps that are targeted to users who do n
 
 Beginning in March, the Company Portal for Windows 10 will include a guided Intune walkthrough experience for devices that have not been identified or enrolled. The new experience provides step-by-step instructions, customized for the user’s build of Windows 10, that guide users through performing AAD registration (required for identification for Conditional Access features) and MDM enrollment (required for device management features). The guided experience will be accessible from the Company Portal home page and is optional; users can continue to use the app if they do not complete registration and enrollment, but may experience limited functionality.
 
+###
 
 ## Notices
 
@@ -68,7 +69,7 @@ Beginning in March, the Company Portal app for Android will follow [material des
 
 You can find before and after images on the [UI updates page](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
 
-### Associate multiple management tools with the Windows Store for Business <!--VSO TBD from Cory-->
+### Associate multiple management tools with the Windows Store for Business <!--926135-->
 If you are using more than one management tool to deploy Windows Store for Business apps, previously, you could only associate one of these with the Windows Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager. For details, see [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
 
 ## Public preview of the new Intune admin experience on Azure <!--736542-->
