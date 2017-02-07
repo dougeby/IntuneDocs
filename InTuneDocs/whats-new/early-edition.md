@@ -63,6 +63,9 @@ Beginning in March, the Company Portal app for Android will follow [material des
 
 You can find before and after images on the [UI updates page](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
 
+### Associate multiple management tools with the Windows Store for Business <!--VSO TBD from Cory-->
+If you are using more than one management tool to deploy Windows Store for Business apps, previously, you could only associate one of these with the Windows Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager. For details, see [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
+
 ## Public preview of the new Intune admin experience on Azure <!--736542-->
 
 In early calendar year 2017 we will be migrating our full admin experience onto Azure, allowing for powerful and integrated management of core EMS workflows on a modern service platform that’s extensible using Graph APIs.
