@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -68,6 +68,10 @@ The profile will be created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
 
 ## Further information
+
+### Remove an email profile
+
+If you want to remove an email profile from a device, edit the assignment and remove any groups of which the device is a member. Note that you cannot remove an email profile in this way if it is the only email profile on a device.
 
 ### Securing email access
 
