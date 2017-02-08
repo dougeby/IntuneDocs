@@ -51,12 +51,31 @@ Depending on the settings you choose, not all values in the list below will be c
 	- **Custom VPN**
 - **Split tunneling** - **Enable** or **Disable** this option which lets devices decide which connection to use depending on the traffic. For example, a user in a hotel will use the VPN connection to access work files, but use the hotel's standard network for regular web browsing.
 
+
 ## Custom VPN settings
 
 If you selected **Custom VPN** as the connection type, configure these further settings:
 
 - **VPN identifier** This is an identifier for the VPN app you are using, and is supplied by your VPN provider.
 - **Enter key and value pairs for the custom VPN attributes** Add or import **Keys** and **Values** that customize your VPN connection. Again, these values are typically supplied by your VPN provider.
+
+## Apps (per-app VPN) settings
+
+- **Per-app VPN** - Enable this option if you want to URLs that will enable the VPN connection when they are visited from the Safari browser. To configure this, you must have selected **Certificates** as the authentication method in the base VPN settings.
+- **URLs that will enable the VPN connection while using the Safari browser** - Click add to add one or more web site URLs. When these URL's are visited, the VPN connection will be enabled.
+
+- **On-demand rules** - This lets you configure conditional rules that control when the VPN connection is initiated. For example, you could create a condition where the VPN connection is only used when a device is not connected to one of your company Wi-Fi networks. Alternatively, you could create a condition where, if a device cannot access a DNS search domain you specify, then the VPN connection is not initiated.
+
+	- **SSIDs or DNS search domains** - Select whether this condition will use wireless network **SSIDs**, or **DNS search domains**. Choose Add to configure one or more SSIDs or search domains.
+	- **URL string probe** - Optionally, provide a URL that the rule uses as a test. If the device on which this profile is installed is able to access this URL without redirection, the VPN connection will be initiated and the device will connect to the target URL. The user will not see the URL string probe site. An example of a URL string probe is the address of an auditing Web server that checks device compliance before connecting the VPN. Another possibility is that the URL tests the ability of the VPN to connect to a site, before connecting the device to the target URL through the VPN.
+	- **Domain action** - Choose one of the following:
+		- Connect if needed - 
+		- Never connect - 
+	- **Action** - Choose one of the following:
+		- Connect - 
+		- Evaluate connection - 
+		- Ignore - 
+		- Disconnect - 
 
 
 ## Proxy settings
