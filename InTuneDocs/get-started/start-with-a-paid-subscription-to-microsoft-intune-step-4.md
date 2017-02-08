@@ -4,7 +4,8 @@
 title: Manage Intune licenses | Microsoft Docs
 description: Assign licenses to users for your Intune subscription
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
 ms.topic: get-started-article
@@ -85,10 +86,8 @@ Disable the Intune portion of EMS license for a user that is already assigned wi
 
     Connect-MsolService
 
-    Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -RemoveLicenses IAPProdPartnerTest:EMS
-
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
-    Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
+    Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -LicenseOptions $CustomEMS
 
 Verify with:
 
