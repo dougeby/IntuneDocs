@@ -73,18 +73,15 @@ Additionally, you'll be able to see the device name, and its device type, which 
 
 ## Delete a wipe request
 
-Wipes with pending status are displayed until you manually delete them.  To manually delete a wipe request
+Wipes with pending status are displayed until you manually delete them.  To manually delete a wipe request:
 
-1.  On the Intune mobile application management blade, click on the **Wipe requests** tile.
+1.  On the **Wipe request** blade, choose the **Wipe request** tile to open the **Wipe request** blade.
 
-2.  On the **Wipe request** blade, choose the **Wipe request** tile to open the **Wipe request** blade.
-
-3.  Right-click on the wipe request you want to delete, then choose **Delete wipe request**.
+2.  Right-click on the wipe request you want to delete, then choose **Delete wipe request**.
 
 	![Screenshot of the New wipe request blade](../media/delete-wipe-request.png)
 
-4.  You're prompted to confirm the deletion, choose **Yes** or **No**, then click **OK**.
-
+3.  You're prompted to confirm the deletion, choose **Yes** or **No**, then click **OK**.
 
 ### See also
 [What's app protection policy](what-is-app-protection-policy.md)
