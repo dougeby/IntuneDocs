@@ -6,7 +6,7 @@ description: Intune provides selective wipe and full wipe capabilities to remove
 keywords:
 author: staciebarkerms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -129,7 +129,7 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 
 **Android for Work**
 
-Performing selective wipe on an Android for Work device removes all data, apps, and settings in the work profile on that device. This retires the device from management with Intune.
+Performing selective wipe on an Android for Work device removes all data, apps, and settings in the work profile on that device. This retires the device from management with Intune. Full wipe is not supported for Android for Work.
 
 **Windows**
 
