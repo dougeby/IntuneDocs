@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Prerequisites | Microsoft Docs
-description: Links to Intune prerequisites and requirements
+title: Supported devices - Microsoft Intune | Microsoft Docs
+description: Lists supported device platforms and browsers for Intune device management
 keywords:
 author: nathbarn
 ms.author: nathbarn
@@ -26,11 +26,11 @@ ms.suite: ems
 
 ---
 
-# Prerequisites to getting started with Intune
+# Supported devices and browsers
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-This guidance is for system administrators responsible for device management in the enterprise. For help using Intune on your mobile device, see [frequently asked questions about the Intune Company Portal](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
+This article is for system administrators responsible for device management in the enterprise. For help installing Intune on devices, see [using Intune on your device](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Before you start setting up Microsoft Intune, review the following requirements:
 
