@@ -4,7 +4,8 @@
 title: Manage Intune licenses | Microsoft Docs
 description: Assign licenses to users for your Intune subscription
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
 ms.topic: get-started-article
@@ -92,7 +93,7 @@ Disable the Intune portion of EMS license for a user that is already assigned wi
 
 Verify with:
 
-    (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com" .Licenses.ServiceStatus
+    (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
