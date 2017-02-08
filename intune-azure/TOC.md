@@ -42,7 +42,7 @@
 ### Manage device enrollment
 #### [Create terms and conditions](enroll-devices/create-terms-and-conditions.md)
 #### [Set enrollment restrictions](enroll-devices/set-enrollment-restrictions.md)
-#### [Map device groups](enroll-devices/how-to-use-device-group-mapping.md)
+#### [Map devices to groups](enroll-devices/how-to-use-device-group-mapping.md)
 #### [Add corporate identifiers](enroll-devices/add-corporate-identifiers.md)
 #### [Use Windows Hello for Business](enroll-devices/how-to-use-windows-hello.md)
 <!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
