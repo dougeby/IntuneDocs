@@ -25,7 +25,7 @@ ms.suite: ems
 ---
 
 # Using managed devices to get work done
-[Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune) provides mobile device management, mobile application management, and PC management capabilities to organizations. This provides employees with access to corporate apps, data, and resources from virtually anywhere on almost any device, while helping to keep corporate information secure.
+Microsoft Intune provides mobile device management, mobile application management, and PC management capabilities to organizations. This provides employees with access to corporate apps, data, and resources from virtually anywhere on almost any device, while helping to keep corporate information secure.
 
 When you enroll a device into management with Intune, your IT department can manage those work or school resources, keep the device more secure, while giving you, their employee, the freedom to use your preferred device to get your work done. A primary way this is done is by enrolling the device into management through the Company Portal.
 
