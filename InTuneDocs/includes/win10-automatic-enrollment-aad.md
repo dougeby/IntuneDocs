@@ -1,4 +1,4 @@
-## Azure Active Directory enrollment
+## Set up Windows 10 and Windows 10 Mobile automatic enrollment with Azure Active Directory Premium
 
 Automatic enrollment lets users enroll either company-owned or personal Windows 10 PCs and Windows 10 Mobile devices in Intune by adding a work or school account and agreeing to be managed. Simple as that. In the background, the user's device registers and joins Azure Active Directory. Once registered, the device is managed with Intune.
 
@@ -11,13 +11,13 @@ Automatic enrollment lets users enroll either company-owned or personal Windows 
 
 1. In the [Azure management portal](https://manage.windowsazure.com) (https://manage.windowsazure.com), navigate to the **Active Directory** node and select your directory.
 
-2. Click the **Applications** tab and you should see **Microsoft Intune** in the list of applications.
+2. Choose the **Applications** tab. **Microsoft Intune** appears in the list of applications.
 
     ![Azure AD apps with Microsoft Intune](../media/aad-intune-app.png)
 
-3. Click on the arrow for **Microsoft Intune** and you should see a page that enables you to configure Microsoft Intune.
+3. Select the arrow for **Microsoft Intune**. You'll see a page that enables you to configure Microsoft Intune.
 
-4. Click **Configure** to start configuring automatic MDM enrollment with Microsoft Intune.
+4. Select **Configure** to start configuring automatic MDM enrollment with Microsoft Intune.
 
 5. Specify the URLs for Intune:
 

@@ -27,7 +27,7 @@ ms.suite: ems
 # Set up a telecom expense management service in Intune Azure preview
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune has integrated with the third-party software developer Saaswedo’s Datalert telecom expense management (TEM) solution. Datalert is real-time TEM software that lets you manage telecom data usage and avoid costly and unexpected data and roaming overages for your Intune-managed devices. Intune's integration with Datalert enables you to centrally set, monitor and enforce roaming and domestic data usage limits by using automated alerts when the limits exceed defined thresholds. You can configure the service to apply different actions to individuals or groups of end users, including disabling roaming, when users exceed the threshold. Reports that provide data usage and monitoring information are available from the Datalert management console.
+Intune has integrated with the third-party software developer Saaswedo’s Datalert telecom expense management solution. Datalert is real-time telecom expense management software that lets you manage telecom data usage and avoid costly and unexpected data and roaming overages for your Intune-managed devices. Intune's integration with Datalert enables you to centrally set, monitor and enforce roaming and domestic data usage limits by using automated alerts when the limits exceed defined thresholds. You can configure the service to apply different actions to individuals or groups of end users, including disabling roaming, when users exceed the threshold. Reports that provide data usage and monitoring information are available from the Datalert management console.
 
 Before you can use the Datalert service with Intune, you need to configure settings in the Datalert console and in Intune. The connection must be turned on for the Datalert service and for Intune. If the Datalert side of the connection is enabled, but not the Intune side, Intune receives the communication, but ignores it.
 
@@ -44,9 +44,9 @@ Before you can use the Datalert service with Intune, you need to configure setti
 - A subscription to Microsoft Intune
 - A subscription to the Datalert telecom expense management service
 
-## List of TEM providers
+## List of telecom expense management providers
 
-Intune currently integrates with the following TEM providers:
+Intune currently integrates with the following telecom expense management providers:
 
 [Saaswedo Datalert telecom expense management service](http://www.datalert.biz/)
 

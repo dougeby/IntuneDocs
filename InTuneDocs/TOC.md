@@ -57,7 +57,6 @@
 #### [Android management](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work management](deploy-use/set-up-android-for-work.md)
 #### [Windows device management ](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile and Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Manage corporate-owned devices](deploy-use/manage-corporate-owned-devices.md)
 #### [Enroll corporate-owned iOS devices](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Setup Assistant enrollment](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
