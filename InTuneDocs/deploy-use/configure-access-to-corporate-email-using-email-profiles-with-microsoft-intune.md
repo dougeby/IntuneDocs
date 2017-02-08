@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -140,4 +140,4 @@ A status summary and alerts on the **Overview** page of the **Policy** workspace
 
 > [!NOTE]
 > - For Android for Work, make sure you also deploy the Gmail or Nine Work apps in addition to the appropriate email profile.
-> - If you want to remove an email profile from a device, edit the deployment and remove any groups of which the device is a member.
+> - If you want to remove an email profile from a device, edit the deployment and remove any groups of which the device is a member. Note that you cannot remove an email profile in this way if it is the only email profile on a device.

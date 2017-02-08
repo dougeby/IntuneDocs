@@ -6,7 +6,7 @@ description: Intune provides selective wipe and full wipe capabilities to remove
 keywords:
 author: staciebarkerms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -122,14 +122,14 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |Wi-Fi and VPN profile settings|Removed.|Removed.|
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|
 |Management Agent|Device Administrator privilege is revoked.|Device Administrator privilege is revoked.|
-|Email|Email received by the Microsoft Outlook app for Android is removed.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
-|Outlook|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|
+|Email|N/A. See the Outlook item.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
+|Outlook|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.</br>Exception: If Exchange is hosted on premises, email is not removed.|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.</br>Exception: If Exchange is hosted on premises, email is not removed.|
 |Azure Active Directory (AAD) Unjoin|AAD Record removed.|AAD Record removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
 
 **Android for Work**
 
-Performing selective wipe on an Android for Work device removes all data, apps, and settings in the work profile on that device. This retires the device from management with Intune.
+Performing selective wipe on an Android for Work device removes all data, apps, and settings in the work profile on that device. This retires the device from management with Intune. Full wipe is not supported for Android for Work.
 
 **Windows**
 
