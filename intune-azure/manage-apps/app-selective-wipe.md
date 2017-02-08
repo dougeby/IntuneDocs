@@ -4,10 +4,10 @@
 title: How to wipe only corporate data from apps | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to selectively wipe apps with Microsoft Intune."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
