@@ -15,7 +15,7 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061esearchScope: - Company Portal
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: chrisbal

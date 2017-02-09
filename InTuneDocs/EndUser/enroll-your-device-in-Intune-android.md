@@ -15,7 +15,7 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620searchScope: - Company Portal
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: arnab

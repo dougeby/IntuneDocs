@@ -16,7 +16,7 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3searchScope: - Company Portal
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW 
 #audience:
 #ms.devlang:
 ms.reviewer: jieyan

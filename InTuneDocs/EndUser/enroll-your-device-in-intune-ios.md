@@ -15,7 +15,7 @@ ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4searchScope: - Company Portal
 
 # optional metadata
 
-ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: esmich

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fixing common problems with your iOS device
+title: Fixing common issues with your iOS device
 description:
 keywords:
 author: barlanmsft
@@ -18,7 +18,7 @@ searchScope:
 
 # optional metadata
 
-ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: esmich
@@ -28,9 +28,9 @@ ms.suite: ems
 
 ---
 
-## Steps to fix device and compliance issues
+## Fix common issues with your iOS device
 
-Sometimes errors can occur with your iOS device that may be able to be fixed through troubleshooting. 
+Sometimes issues can occur with your iOS device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your IT admin through their contact information on the [Company Portal website](http://portal.manage.microsoft.com).
 
 - [How to reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device.md)
 - [Send errors to your IT admin](send-errors-to-your-it-admin-ios.md)
