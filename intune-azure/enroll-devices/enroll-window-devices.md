@@ -6,7 +6,7 @@ description: "Intune Azure preview: Enable Intune mobile device management (MDM)
 keywords:
 author: staciebarker
 manager: stabar
-ms.date: 02/08/17
+ms.date: 02/09/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -57,9 +57,9 @@ If some of the following prerequisites aren't in the Intune Azure preview yet, y
 You can let users install and enroll their devices by using the Intune Company Portal. If you create DNS CNAME resource records,  users connect and enroll in Intune without entering a server name.
 
 1. **Create CNAMEs** (optional)<br>
- Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment.manage.microsoft.com.
+ Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
 
-	Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, manage.microsoft.com.
+	Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, enrollment.manage.microsoft.com.
 
 	If you currently have a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com, we suggest that you replace it with a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com. This change is recommended, because the manage.microsoft.com endpoint is being deprecated for enrollments in a future release.
 
