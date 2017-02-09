@@ -3,11 +3,11 @@
 
 title: How to educate your end users about Microsoft Intune | Microsoft Intune
 description: Share information with your end users to make your Intune deployment successful.
-keywords: end users, users, communication
+keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/13/2017
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,15 +53,17 @@ Assuaging these user concerns will make your deployment smoother. We have a list
 
 * __Be personal.__ Providing instructions that aren't specific to your deployment can make end users feel like you haven't given any thought to their experience. You can use this [customizable, end user Intune enrollment template for IT administrators](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) to create your own enrollment instructions for your end users.
 
-* __Be resourceful.__ The Intune documentation has a variety of content to help your end users figure out how to do certain tasks, like enrolling and troubleshooting their devices. Among these are articles that users are sent to from the Company Portal, which are divided into sections about Company Portal app installation and Intune enrollment, general tasks that users can do on their devices, and troubleshooting.
+* __Be resourceful.__ The Intune documentation has a variety of content to help your end users figure out how to do certain tasks, like enrolling and troubleshooting their devices. Among these are articles that users are sent to from the Company Portal, which are divided into sections about Company Portal app installation and Intune enrollment, general tasks that users can do on their devices, and troubleshooting. This documentation can be found in our explanations of how to [use managed devices to get work done](/Intune/EndUser/use-managed-devices-to-get-work-done.md).
+
+* __Find different ways to communicate.__ As with [different learning styles](http://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/), users have preferred ways to consume information. For users that prefer video to documentation, we offer [video versions of how to enroll various device types](https://channel9.msdn.com/Series/IntuneEnrollment) and more on Channel 9. These videos are available to embed directly into your own [SharePoint site](https://support.office.com/en-us/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) or through
 
 * __Be aware.__ Your end user experience will impact your productivity, and understanding their experience will make it easier for you to troubleshoot their problems when they come to you. Understanding how end users get their apps can make it much easier for you to diagnose what issues they're experiencing, and can help you fix their problems faster.
 
-    - [How your Android users get their apps](how-your-android-users-get-their-apps.md)
-    - [How your iOS users get their apps](how-your-ios-users-get-their-apps.md)
-    - [How your Windows users get their apps](how-your-windows-users-get-their-apps.md)
+  * [How your Android users get their apps](how-your-android-users-get-their-apps)
+  * [How your iOS users get their apps](how-your-ios-users-get-their-apps)
+  * [How your Windows users get their apps](how-your-windows-users-get-their-apps)
 
-* __Be forthcoming.__ Clearly tell your users what you're going to manage on their devices. Tell them what kind of data you're collecting and why you're collecting it. Inform them of how you're planning to use all asset data.
+* __Be forthcoming.__ Clearly tell your users what you're going to manage on their devices. Tell them what kind of data you're collecting and why you're collecting it. Inform them of how you're planning to use all asset data. [Microsoft believes that you have a right to as much information as possible about how we handle your customer data in the cloud](https://www.microsoft.com/en-us/trustcenter/about/transparency), and we believe that this philosophy can greatly increase your end user satisfaction with Intune. 
 
 >[!Note]
 > Transparency, wherever possible, is fundamental to the success of your deployment.

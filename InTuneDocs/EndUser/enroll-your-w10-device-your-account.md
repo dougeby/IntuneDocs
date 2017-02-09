@@ -28,17 +28,17 @@ ms.suite: ems
 
 # Enroll your Windows 10 device in Intune
 
-1.  Go to Windows **Settings**, and then tap **Accounts**.
+1.  Go to Windows **Settings**, and then select **Accounts**.
 
     ![Go to Settings and Accounts](./media/W10-enroll-1-settings-accounts.png)
 
-2.  Tap **Your account**.
+2.  Select **Your account**.
 
-    ![Tap your account](./media/W10-enroll-2-accounts-your-account.png)
+    ![Select your account](./media/W10-enroll-2-accounts-your-account.png)
 
-3.  Tap **Add a work or school account**.
+3.  Select **Add a work or school account**.
 
-	![Tap add a work or school account](./media/w10-enroll-3-add-work-school-acct.png)
+	![Select add a work or school account](./media/w10-enroll-3-add-work-school-acct.png)
 
 4.  Sign in with your work or school credentials.
 
