@@ -30,7 +30,7 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-This article is for system administrators responsible for device management in the enterprise. For help installing Intune on devices, see [using Intune on your device](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
+This article is for system administrators responsible for device management in the enterprise. For help installing Intune on your phone, see [using managed devices to get work done](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Before you start setting up Microsoft Intune, review the following requirements:
 
