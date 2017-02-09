@@ -72,7 +72,7 @@ The following diagram illustrates the flow that conditional access policies for 
 
 ![Diagram that shows the decision points that determine if a device is allowed access to Exchange on-premises or is blocked](../media/ConditionalAccess8-2.png)
 
-If a conditional access policy isn't met, the user sees one of the following messages when they sign in:
+If a conditional access policy isn't met, there is a 10 minute window between the device being blocked and the user receiving one of the following quarantine messages when they sign in:
 
 - If the device isn't enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the device record in Azure Active Directory.
 
