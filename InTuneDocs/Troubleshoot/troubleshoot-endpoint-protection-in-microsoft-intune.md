@@ -4,9 +4,9 @@
 title: Troubleshoot Endpoint Protection | Microsoft Docs
 description: Solve problems while using Microsoft Intune endpoint protection.
 keywords:
-author: staciebarkerms.author: stabar
+author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,10 +29,9 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Use the information in this section to help you solve problems while using Microsoft Intune endpoint protection.
+Use the information in this section to help you solve problems while using Microsoft Intune endpoint protection. You can also review information about [troubleshooting Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10).
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
-
 
 ### Endpoint Protection error messages
 This section describes potential causes and solutions for the following errors and warnings, which appear in the **Endpoint Protection Status** pane in the  [Intune admin console](https://manage.microsoft.com).
