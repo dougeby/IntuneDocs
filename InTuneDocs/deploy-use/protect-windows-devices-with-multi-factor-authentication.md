@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Protect Windows devices with multi-factor authentication for Intune device enrollments
+# Multi-factor authentication for Intune device enrollments
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to enroll your Windows 8.1 or Windows RT 8.1 device | Microsoft Docs
-description: 
+description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
@@ -15,7 +15,7 @@ ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0csearchScope: - Company Portal
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: priyar

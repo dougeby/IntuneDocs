@@ -5,7 +5,7 @@ title: Monitor MAM policies with Microsoft Intune | Microsoft Docs
 description: See how many users have the policy, and drill down to find more details.
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 ---
 
 # Monitor mobile app management policies with Microsoft Intune
-You can monitor the compliance status of the mobile app management (MAM) policies that you've applied to users at the Intune app protection blade on the [Azure portal](https://portal.azure.com). You'll be able to find information about the users affected by the MAM policies, its compliance status, and any issues that your users might be experiencing.
+You can monitor the compliance status of the mobile app management (MAM) policies that you've applied to users. You'll be able to find information about the users affected by the MAM policies, its compliance status, and any issues that your users might be experiencing.
 
 There are three different places to monitor the compliance status:
 
@@ -40,7 +40,7 @@ There are three different places to monitor the compliance status:
 Follow the three steps below to open the Summary view:
 
 1. Go to the [Azure portal](https://portal.azure.com), and enter your credentials.
-2. Choose **More Services**, and type "Intune".
+2. Choose **More Services**, and type **Intune** in the filter textbox.
 3. Choose **Intune App Protection**.
 
 On **Intune mobile application management** blade, you can see a summary of the compliance status:
@@ -99,8 +99,6 @@ You can find the same reports from the Detailed view, and additional reports to 
 
 -   **App protection app report:** It provides two different app protection statuses that admins can select before generating the report. The statuses can be protected or unprotected.
 
-	![Screenshot-1](../media/MAM-reporting-1.png)
-
     -   User status for managed MAM activity (Protected): This report outlines the activity of each managed MAM app, on a per user basis.
 
         -   It shows all apps targeted by MAM policies for each user, and break down the status of each app as checked in with MAM policies, or that was targeted with a MAM policy but the app was never checked in.
@@ -112,6 +110,27 @@ You can find the same reports from the Detailed view, and additional reports to 
         -   All apps are checked in, but aren't getting any MAM policies.
 
 ![Screenshot-2](../media/MAM-reporting-4.png)
+
+## Table grouping
+
+Once the **App protection user report** data shows up, you can aggregate data by the following:
+
+- **Validation result:** The data shows up grouped by app protection status, which can be failure, warning or success.
+- **App name:** The data shows up grouped by apps (the actual app name) with failure, warning or success.
+
+## Export app protection activities to CSV
+
+You can export all your app protection policy activities to a single .csv file. This can be helpful to analyze all the app protection statuses reported from the users.
+
+Follow these steps to generate the App protection report:
+
+1. On the Intune mobile application management blade, choose App protection report.
+
+	![Screenshot-6](../media/app-protection-report-csv-2.png)
+
+2. Choose Yes to save your report, then choose Save As and select the folder you want to save the report in.
+
+	![Screenshot-7](../media/app-protection-report-csv-1.png)
 
 ## See also
 [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
