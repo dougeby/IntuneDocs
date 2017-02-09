@@ -57,7 +57,6 @@
 #### [Android management](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work management](deploy-use/set-up-android-for-work.md)
 #### [Windows device management ](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile and Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Manage corporate-owned devices](deploy-use/manage-corporate-owned-devices.md)
 #### [Enroll corporate-owned iOS devices](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Setup Assistant enrollment](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -107,7 +106,7 @@
 
 ## [Protect devices](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Remote lock & passcode reset](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [Protect Windows devices with MFA](deploy-use/protect-windows-devices-with-multi-factor-authentication.md)
+### [Protect Windows devices with MFA](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [Control Windows Hello for Business settings](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Bypass Activation Lock on iOS](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Policies to protect Windows PCs](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)

@@ -15,7 +15,7 @@ ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cbsearchScope: - Company Portal
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: NOINDEX,NOFOLLOW 
 #audience:
 #ms.devlang:
 ms.reviewer: chrisgre

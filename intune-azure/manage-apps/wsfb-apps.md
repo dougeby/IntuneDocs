@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,6 +51,9 @@ Before you enable synchronization in the Intune console, you must configure your
 1. Ensure that you sign into the Business Store using the same tenant account you use to sign into Intune.
 2. In the Business Store, choose **Settings** > **Management tools**.
 3. On the Management tools page, choose **Add a management tool**, and choose **Microsoft Intune**.
+
+> [!NOTE]
+> If you are using more than one management tool to deploy Windows Store for Business apps, previously, you could only associate one of these with the Windows Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager.
 
 You can now continue, and set up synchronization in the Intune console.
 

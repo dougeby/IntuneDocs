@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -16,7 +16,7 @@ ms.assetid: 812e82df-76df-402b-bfe9-29302838f40esearchScope: - Company Portal
 
 # optional metadata
 
-#ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: priyar
@@ -28,11 +28,14 @@ ms.suite: ems
 
 # Enroll your Windows 10 device in Intune
 
+
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment-with-AAD/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 1.  Open **Settings** > **Access work or school** > **Connect**.
 
-    ![Tap Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+1.  Select **Access work or school**, and then select **Connect**.
+
+    ![Select Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
 2.  Enter your work or school email address, and then select **Next**.
 
