@@ -55,7 +55,7 @@ This configuration is **required** for devices that are managed by a third-party
 
 1.  In the Azure portal, [configure a mobile app management policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for iOS. Configure policy settings per your company requirements and select the apps that should have this policy.
 
-2.  Deploy the apps and the email profile that you want managed **through your third-party MDM solution** using the generalized steps below. This experience is also demonstrated in Example 1.
+2.  Deploy the apps and the email profile that you want managed **through your third-party MDM solution** using the generalized steps below. This experience is also covered by Example 1.
 
   1.  Deploy the app  with the following app configuration settings:
 
@@ -65,8 +65,6 @@ This configuration is **required** for devices that are managed by a third-party
 
   2.  Deploy the Open in management policy using your third-party MDM provider to enrolled devices.
 
-> [!IMPORTANT]
-> Depending on your third-party MDM provider, the exact syntax for your app configuration setting may be different from the generalized example above. You may have to use a dynamic variable such as {UserPrincipalName} for the user's identity.
 
 ### Example 1: Admin experience in third-party MDM console
 
@@ -81,7 +79,7 @@ This configuration is **required** for devices that are managed by a third-party
 |Third-party MDM provider| Configuration Key | Value Type | Configuration Value|
 |-------|----|----|
 |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress}
+|MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
 
 
 ### Example 2: End-user experience
