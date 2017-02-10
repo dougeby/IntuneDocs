@@ -50,18 +50,41 @@ To make sure that apps that you deploy using your third party MDM solution are a
 > The user UPN setting is only required for apps deployed to devices managed by a third-party MDM.  For Intune managed devices, this setting is not required.
 
 ## Configure user UPN setting
-This configuration is required for devices that are managed by a third-party MDM solution. The procedure described below is a general flow on how to implement the UPN setting and the resulting end user experience:
+This configuration is **required** for devices that are managed by a third-party MDM solution. The procedure described below is a general flow on how to implement the UPN setting and the resulting end user experience:
 
 
-1.  In the Azure portal, [configure a mobile app management policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for iOS platform. Configure policy settings per your company requirements and select the apps that should have this policy.
+1.  In the Azure portal, [configure a mobile app management policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for iOS. Configure policy settings per your company requirements and select the apps that should have this policy.
 
-2.  Deploy the apps and the email profile that you want managed **through your third-party MDM solution** using the setting described in steps 3 and 4.
+2.  Deploy the apps and the email profile that you want managed **through your third-party MDM solution** using the generalized steps below. This experience is also demonstrated in Example 1.
 
-3.  Deploy the app with the following app configuration settings: key=IntuneMAMUPN, Value=<username@company.com> [example: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+  1.  Deploy the app  with the following app configuration settings:
 
-4.  Deploy the Open in management policy to enrolled devices.
+      **key** = IntuneMAMUPN,  **value** = <username@company.com>
 
-### Example end user experience
+      Example: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+
+  2.  Deploy the Open in management policy using your third-party MDM provider to enrolled devices.
+
+> [!IMPORTANT]
+> Depending on your third-party MDM provider, the exact syntax for your app configuration setting may be different from the generalized example above. You may have to use a dynamic variable such as {UserPrincipalName} for the user's identity.
+
+### Example 1: Admin experience in third-party MDM console
+
+1. Go to the admin console of third-party MDM provider. Go to the section of the console in which you deploy application configuration settings to enrolled iOS devices.
+
+2. In the Application Configuration section, enter the following setting:
+
+  **key** = IntuneMAMUPN,  **value** = <username@company.com>
+
+  The exact syntax of the key/value pair may differ based on your third-party MDM provider. The table below shows examples of third-party MDM providers and the exact values you should enter for the key/value pair.
+
+|Third-party MDM provider| Configuration Key | Value Type | Configuration Value|
+|-------|----|----|
+|VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
+|MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress}
+
+
+### Example 2: End-user experience
 
 1.  End user installs Microsoft Word app on the device.
 
