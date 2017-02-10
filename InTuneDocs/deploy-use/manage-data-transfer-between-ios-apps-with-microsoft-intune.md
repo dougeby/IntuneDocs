@@ -77,7 +77,7 @@ This configuration is **required** for devices that are managed by a third-party
   The exact syntax of the key/value pair may differ based on your third-party MDM provider. The table below shows examples of third-party MDM providers and the exact values you should enter for the key/value pair.
 
 |Third-party MDM provider| Configuration Key | Value Type | Configuration Value|
-|-------|----|----|
+| ------- | ---- | ---- | ---- |
 |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
 
