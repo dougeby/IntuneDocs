@@ -76,7 +76,7 @@ These apps and services are only allowed for data transfer to and from Intune-ma
 | com.android.chrome | Google Chrome Browser | Chrome is used for some WebView components on Android 7.0+ and is never hidden from view. Data flow to and from the app, however, is always restricted.
 | com.skype.raider | Skype | The Skype app is allowed only for certain actions that result in a phone call. |
 | com.android.providers.media | Android media content provider | The media content provider allowed only for the ringtone selection action. |
-| com.google.android.gms and com.google.android.gsf | Google Play Services packages | These packages are allowed for Google Cloud Messaging actions, such as push notifications. |
+| com.google.android.gms; com.google.android.gsf | Google Play Services packages | These packages are allowed for Google Cloud Messaging actions, such as push notifications. |
 
 
 ##  Access settings
