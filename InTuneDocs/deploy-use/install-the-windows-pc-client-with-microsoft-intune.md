@@ -114,11 +114,54 @@ You can deploy the Intune client software to computers as part of an operating s
 
 ## Instruct users to self-enroll
 
-Users can install the Intune client software by going to  [the Company Portal website](http://portal.manage.microsoft.com). If the web portal can detect that the device is a Windows PC, it will to prompt users to enroll the PC by downloading the Intune software client. Once the software has been downloaded, users can install it to bring their PCs into management.
+Users install the Intune client software by going to  [the Company Portal website](http://portal.manage.microsoft.com). The exact information that users see in the web portal varies, depending on your account's MDM Authority and the OS platform/version of the user's PC.
 
-The exact information that users see in the web portal may vary, depending on your account's MDM Authority and the platform and version of the user's PC.
+  ![Default enrollment options per platform](../media/default-enrollment-options-table.png)
 
-![Intune Portal prompting to you to download the Intune software client](../media/software-client-download.png)
+Users are shown no options to enroll if they haven't been assigned an Intune license or if the organization's MDM Authority hasn't been set to Intune.
+
+If users have been assigned an Intune license, and the organization's MDM Authority has been set to Intune:
+
+- Windows 7 or Windows 8 PC users are shown ONLY the option to enroll to Intune by downloading and installing the PC software client that is unique to their organization.
+
+- Windows 10 or Windows 8.1 PC users are shown two enrollment options:
+
+  -  Enroll PC as a mobile device: Users choose the **Find Out How to Enroll** button and are taken to instructions on how to enroll their PC as a mobile device. This option is intended to be the default option.
+  - Enroll PC using the Intune software client: You'll need to tell your users to select the **Click here to download it** link, which takes them through the software client installation.
+
+The following screenshots illustrate these options.
+
+Users are first prompted to identify or to enroll their device.
+
+  ![identify or enroll device](../media/identify-device-or-enroll.png)
+
+Users are shown the following page. To have your users install the PC software client, you'll need to tell them to select the **Click here to download it** link, which enables users to download the PC software client and takes them through the installation process. The **Find out how to enroll** button takes users to documentation about how to enroll using MDM enrollment.
+
+  ![choose Click here to download it link](../media/enroll-your-windows-device.png)
+
+When users click the link, they see a Download Software button, which they select to start the PC software client installation.
+
+  ![choose Download Software button](../media/download-pc-client-software.png)
+
+Users are then asked to sign in with their corporate credentials.
+
+  ![Sign in with your credentials](../media/sign-in-to-intune.png)
+
+Users are taken to the Welcome page for the installation.
+
+  ![Welcome page for PC client installation](../media/welcome-to-pc-agent-install-wizard.png)
+
+Users choose **Next**, and the installation starts.
+
+  ![Welcome page for PC client installation](../media/welcome-to-pc-agent-install-wizard.png)
+
+When the installation completes, users choose **Finish**.
+
+  ![Finish the PC client installation](../media/completed-the-setup-wizard.png)
+
+If users try to enroll their PC as a mobile device after having already enrolled using the Intune PC software client, they see the following screen.
+
+  ![Screen shown if PC already enrolled](../media/page-shown-if-pc-already-enrolled.png)
 
 ## Monitor and validate successful client deployment
 Use one of the following procedures to help you monitor and validate successful client deployment.
