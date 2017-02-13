@@ -48,6 +48,16 @@ The following platforms are supported. Click one of the topics for more informat
 > [!NOTE]
 > When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
 
+## Cloud storage space
+All apps that you create by using the software installer installation type (for example, a line-of-business app) are  packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. Your full subscription includes 20 GB of storage space.
+
+You can purchase additional storage for Intune using your original purchase method.  If you paid by invoice or credit card, visit the [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Otherwise, contact your partner or sales associate.
+
+Requirements for cloud storage space are as follows:
+
+-   All app installation files must be in the same folder.
+-   The maximum file size for any file that you upload is 2 GB.
+
 ## How to create and edit categories for apps 
 
 App categories can be used to help you sort apps to make them easier for end users to find in the company portal. You can assign one or more categories to an app, for example, **Developer apps**, or **Communication apps**. 

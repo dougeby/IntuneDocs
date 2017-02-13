@@ -6,7 +6,7 @@ description: Before you start deploying apps with Intune, take some time to fami
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -68,7 +68,7 @@ Before you begin to use the software publisher, you must install the full versio
 ## Cloud storage space
 All apps that you create by using the software installer installation type (for example, a line-of-business app) are  packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. Your full subscription includes 20 GB of storage space.
 
-You can see how much space you are using in the **Storage Use** node of the **Admin** workspace.
+You can see how much space you are using in the **Storage Use** node of the **Admin** workspace. You can purchase additional storage for Intune using your original purchase method.  If you paid by invoice or credit card, visit the [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Otherwise, contact your partner or sales associate.
 
 Requirements for cloud storage space are as follows:
 
