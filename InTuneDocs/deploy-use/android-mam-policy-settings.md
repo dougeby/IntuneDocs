@@ -68,7 +68,7 @@ There are two categories of policy settings: data relocation settings and access
   | com.google.android.webview | [WebView](https://developer.android.com/reference/android/webkit/WebView.html), which is necessary for many apps including Outlook. |
   | com.android.webview |[Webview](https://developer.android.com/reference/android/webkit/WebView.html), which is necessary for many apps including Outlook.|
   | com.google.android.tts | Google Text-to-speech |
-  | com.android.proviers.settings | Android system settings |
+  | com.android.providers.settings | Android system settings |
   | com.azure.authenticator | Azure Authenticator app, which is required for successful authentication in many scenarios. |
   | com.microsoft.windowsintune.companyportal | Intune Company Portal|
 
