@@ -110,7 +110,7 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 **What about encryption?** IT administrators can deploy an app protection policy that requires app data to be encrypted. As part of the policy, the IT administrator can also specify when the content is encrypted.
 
-  1. **How does Intune encrypt data?** See the [Android app protection policy settings](../deploy-use/android-mam-policy-settings.md) and [iOS app protection policy settings](ios-mam-policy-settings.md) for detailed information on the encryption app protection policy setting.
+  1. **How does Intune encrypt data?** See the [Android app protection policy settings](../deploy-use/android-mam-policy-settings.md) and [iOS app protection policy settings](../deploy-use/ios-mam-policy-settings.md) for detailed information on the encryption app protection policy setting.
 
   2. **What gets encrypted?** Only data marked as "corporate" is encrypted according to the IT administrator's app protection policy. Data is considered "corporate" when it originates from a business location. For the Office apps, Intune considers the following as business locations: email (Exchange) or cloud storage (OneDrive app with a OneDrive for Business account). For line-of-business apps enlightened by the Intune App Wrapping Tool, all app data is considered "corporate."
 
