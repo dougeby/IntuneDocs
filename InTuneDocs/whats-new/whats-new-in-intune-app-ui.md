@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/07/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.suite: ems
 
 ---
 # UI updates for Intune end user apps
-Learn what updates we've made to the UI for apps that your end users will operate in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment.
+Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
 
 > [!Note]
 > Please note that the images below are previews, and the announced product may differ from the presented versions.
@@ -64,21 +64,8 @@ Beginning in March, the Company Portal app for Android will follow [material des
 ### Modernizing the Company Portal website <!--753980, announced 1701-->
 Beginning in February, the Company Portal website will support apps that are targeted to users who do not have managed devices. The website will align with other Microsoft products and services by using a new contrasting color scheme, dynamic illustrations, and a "hamburger menu," ![Small image of the hamburger menu that is now added at the top left corner of the Company Portal website](./media/CP_hamburger_menu.png) which will contain helpdesk contact details and information on existing managed devices. The landing page will be rearranged to emphasize apps that are available to users, with carousels for Featured and Recently Updated apps.
 
-<html>
-<body>
-  <table>
-    <tr>
-      <td>
-        <img src="https://docs.microsoft.com/InTune/whats-new/media/CP_website_before_Feb_2017.png" alt="An image of the current version of the Company Portal website." style="float: left; margin-right: 5px; margin-bottom: 10px;">
-      </td>
-<!-- Column two -->
-      <td>
-        <img src="https://docs.microsoft.com/InTune/whats-new/media/CP_website_after_Feb_2017.png" alt="An image of the updated version of the Company Portal website." style="float: right; margin-left: 5px; margin-bottom: 10px;">
-      </td>
-    </tr>
-  </table>
-</body>
-</html>
+![On the left, an image of the current version of the Company Portal website with its previous version of Apps, My Devices, and Featured and Categories views. On the right, an image of the updated version of the Company Portal website with a refreshed app carousel, list of Recently Published apps, and updated Categories view.](./media/CP_Website_BeforeAfter_Feb2016.png)
+
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
