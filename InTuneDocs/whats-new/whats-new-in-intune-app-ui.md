@@ -27,7 +27,7 @@ ms.suite: ems
 
 ---
 # UI updates for Intune end user apps
-Learn what updates we've made to the UI for apps that your end users will operate in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment.
+Learn what updates we've made to the UI for apps that your end users will see in this release of Microsoft Intune. This can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
 
 > [!Note]
 > Please note that the images below are previews, and the announced product may differ from the presented versions.
