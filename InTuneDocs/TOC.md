@@ -166,15 +166,14 @@
 #### [Enable device threat protection compliance policy](deploy-use/device-threat-protection-policy.md)
 
 ### [Protect app data with MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Azure portal for MAM policies](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Get ready to configure MAM policies](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Create and deploy MAM policies](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [MAM policies for Android](deploy-use/android-mam-policy-settings.md)
-#### [Android apps with MAM policies](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-#### [MAM policies for iOS](deploy-use/ios-mam-policy-settings.md)
-#### [iOS apps with MAM policies](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-#### [Validate MAM policies](deploy-use/validate-mobile-application-management.md)
-#### [Monitor policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Azure portal for app protection policies](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [Get ready to configure app protection policies](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Create and deploy app protection policies](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [App protection policies for Android](deploy-use/android-mam-policy-settings.md)
+#### [App protection policies for iOS](deploy-use/ios-mam-policy-settings.md)
+#### [Validate app protection policies](deploy-use/validate-mobile-application-management.md)
+#### [Monitor app protection policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+
 #### [Manage data transfer between iOS apps](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [Intune admin console for MAM policies](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)

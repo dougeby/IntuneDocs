@@ -31,9 +31,6 @@ Intune has integrated with the third-party software developer Saaswedo’s Datal
 
 Before you can use the Datalert service with Intune, you need to configure settings in the Datalert console and in Intune. The connection must be turned on for the Datalert service and for Intune. If the Datalert side of the connection is enabled, but not the Intune side, Intune receives the communication, but ignores it.
 
->[!NOTE]
->To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) for activation and Datalert support for the required software licenses.
-
 ## Supported platforms
 
 - Samsung Knox
@@ -75,9 +72,6 @@ Intune currently integrates with the following telecom expense management provid
     e. On the Microsoft authentication page, select **Accept**. You are redirected to a Datalert “thank you” page, which closes after a few seconds. Datalert validates the connection, and displays green check marks beside a list of items that it validated. If the validation fails, you see a message in red. If this happens, contact Datalert Support for help.
 
 5. Wait a few minutes, and then go to the Azure portal and check that the Connection status appears as **Active**. 
-
-    >[!NOTE]
-    >To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 6. Return to the Datalert management console, and configure your data lines:
 

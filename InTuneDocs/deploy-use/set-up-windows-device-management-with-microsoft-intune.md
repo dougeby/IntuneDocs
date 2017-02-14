@@ -6,7 +6,7 @@ description: Enable mobile device management (MDM) for Windows devices with Micr
 keywords:
 author: staciebarker
 manager: stabar
-ms.date: 02/09/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,13 +31,13 @@ ms.suite: ems
 
 Use one of the following methods to set up enrollment for Windows devices:
 
-- **[Windows 10 and Windows 10 Mobile automatic enrollment with Azure Active Directory Premium](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)** 
+- **Windows 10 and Windows 10 Mobile automatic enrollment with Azure Active Directory Premium** 
  -  This method is applicable only for Windows 10 and Windows 10 Mobile devices.
  -  You must have Azure Active Directory Premium to use this method. Otherwise, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
  -  If you choose not to enable automatic enrollment, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
 
 
-- **[Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME](#set-up-windows-8--1-and-windows-phone-8--1-enrollment-by-configuring-cname)** 
+- **Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME** 
  - You must use this method to enroll Windows 8.1 and Windows Phone 8.1 devices.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
@@ -54,8 +54,6 @@ Create **CNAME** DNS resource records for your company’s domain. For example, 
 
     Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, https://enrollment.manage.microsoft.com.
 
-
-    If you currently have a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com, we suggest that you replace it with a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com. This change is recommended, because the manage.microsoft.com endpoint is being deprecated for enrollments in a future release.
 
 	CNAME resource records must have the following information:
 
