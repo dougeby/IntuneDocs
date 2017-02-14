@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Use managed devices to get work done | Microsoft Docs
-description: Find out more about the Company Portal app.
+description: Understand what it means to enroll your device into management with Intune.
 keywords:
 author: barlanmsft
 ms.author: barlan
