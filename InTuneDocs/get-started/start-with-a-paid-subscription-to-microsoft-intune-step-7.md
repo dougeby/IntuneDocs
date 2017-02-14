@@ -6,7 +6,7 @@ description: Intune Company Portal lets users do common tasks like enroll device
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,8 @@ ms.suite: ems
 # Customize the Company Portal
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+This topic tells administrators how they can customize the Intune Company Portal app and Company Portal website.
 
 The Intune Company Portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 
