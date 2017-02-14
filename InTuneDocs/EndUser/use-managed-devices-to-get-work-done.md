@@ -28,7 +28,7 @@ ms.suite: ems
 ---
 
 # Using managed devices to get work done
-Microsoft Intune is a piece of software that lets organizations manage devices (like smartphones, tablets, and PCs),  apps, and other corporatre resources like email. This gets employees access to their work information from virtually anywhere on almost any device while helping to keep corporate information secure.
+Microsoft Intune is a piece of software that lets organizations manage devices (like smartphones, tablets, and PCs),  apps, and other corporate resources like email. This gets employees access to their work information from virtually anywhere on almost any device while helping to keep corporate information secure.
 
 When you enroll a device into management with Intune, your IT department can manage those work or school resources, keep the device more secure, while giving you, their employee, the freedom to use your preferred device to get your work done. A primary way this is done is by enrolling the device into management through the Company Portal.
 
