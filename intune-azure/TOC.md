@@ -38,6 +38,7 @@
 #### [Add Apple Configurator serial numbers](enroll-devices/add-apple-configurator-serial-numbers.md)
 #### [Enroll iOS devices using the device enrollment program](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Enroll devices using device enrollment manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+### [Enroll macOS devices](enroll-macos-devices.md)
 ### [Enroll Windows devices](enroll-devices/enroll-window-devices.md)
 ### Manage device enrollment
 #### [Create terms and conditions](enroll-devices/create-terms-and-conditions.md)
