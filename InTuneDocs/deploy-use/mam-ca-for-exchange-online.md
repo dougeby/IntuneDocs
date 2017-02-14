@@ -28,12 +28,12 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-This topic gives you step-by-step instructions on how to set up conditional access for  Exchange Online to only allow mobile apps that support Intune mobile app management (MAM) policies.
+This topic gives you step-by-step instructions on how to set up conditional access for  Exchange Online to only allow mobile apps that support Intune app protection policies.
 
 
 ## Create an Exchange Online policy
 1.  Sign into the [Azure portal](https://portal.azure.com) that includes the app access feature. If you
-are new to the Azure portal experience read the [Azure portal for MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) topic.
+are new to the Azure portal experience read the [Azure portal for app protection policies](azure-portal-for-microsoft-intune-mam-policies.md) topic.
 
 2.  Choose **More services**, and type: "Intune".
 
@@ -45,7 +45,7 @@ are new to the Azure portal experience read the [Azure portal for MAM policies](
 
 	![Screenshot of the settings blade showing the conditional access section wiht Exchange Online option highlighted](../media/MAM-conditional-access-1.png)
 
-6. On the **Allowed apps** blade, choose the **Allow apps that support Intune app policies** option to allow only apps that are supported by Intune MAM policies to have the ability to access Exchange Online. When you select this option, the list of supported apps is displayed.
+6. On the **Allowed apps** blade, choose the **Allow apps that support Intune app policies** option to allow only apps that are supported by Intune app protection policies to have the ability to access Exchange Online. When you select this option, the list of supported apps is displayed.
 
 	>[!NOTE]
 	>All Exchange Active Sync mail clients, including the built-in mail clients on iOS and >Android that connect to Exchange Online, will be prevented from sending or receiving >email. Users will instead receive a single email informing them that they need to use the >Outlook mail app.
@@ -65,4 +65,4 @@ To **delete a user group** from the **restricted user groups** list, open the **
 ## Next steps
 [Block apps that do not have modern authentication](block-apps-with-no-modern-authentication.md)
 ### See also
-[Protect app data with MAM policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Protect app data with app protection policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
