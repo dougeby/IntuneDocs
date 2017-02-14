@@ -25,13 +25,12 @@ ms.suite: ems
 
 ---
 
-# Android mobile app management policy settings in Microsoft Intune
+# Android app protection policy settings in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-The policy settings that are described in this topic can be [configured](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for a mobile app management (MAM) policy on the **Settings** blade in the Azure portal.
-There are two categories of policy settings: data relocation settings and access settings. In this topic, the term _**policy-managed apps**_ refers to apps that are configured with MAM policies.
-
+The app policy settings that are described in this topic can be [configured](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) on the **Settings** blade in the Azure portal.
+There are two categories of policy settings: data relocation settings and access settings. In this topic, the term _**policy-managed apps**_ refers to apps that are configured with app protection policies.
 
 ##  Data relocation settings
 

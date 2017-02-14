@@ -24,8 +24,8 @@ ms.suite: ems
 
 ---
 
-# Monitor mobile app management policies with Microsoft Intune
-You can monitor the compliance status of the mobile app management (MAM) policies that you've applied to users. You'll be able to find information about the users affected by the MAM policies, its compliance status, and any issues that your users might be experiencing.
+# Monitor app protection policies with Microsoft Intune
+You can monitor the compliance status of the app protection policies that you've applied to users. You'll be able to find information about the users affected by the app protection policies, its compliance status, and any issues that your users might be experiencing.
 
 There are three different places to monitor the compliance status:
 
@@ -63,7 +63,7 @@ You can get to the detailed view of the summary by choosing the **User status** 
 You can search for a single user and check the compliance status for that user. The **App reporting** blade shows the following information for a selected user:
 - Devices that are associated with the user account
 
-- Apps with a MAM policy on the device
+- Apps with an app protection policy on the device
 
 - Status:
 
@@ -72,7 +72,7 @@ You can search for a single user and check the compliance status for that user. 
   - **Not checked in**: The policy was deployed to the user, but the app has not been used in the work context since then.
 
 >[!NOTE]
-> If the users you searched for does not have the MAM policy deployed to them, you'll see a message informing you that the user is not targeted by any MAM policies.
+> If the users you searched for does not have the app protection policy deployed to them, you'll see a message informing you that the user is not targeted by any app protection policies.
 
 To see the reporting for a user, follow these steps:
 
@@ -91,7 +91,7 @@ The detailed view shows the error message, the app that was accessed when the er
 
 ## Reporting view
 
-You can find the same reports from the Detailed view, and additional reports to help you with the MAM policy compliance status:
+You can find the same reports from the Detailed view, and additional reports to help you with the app protection policy compliance status:
 
 ![Screenshot-4](../media/MAM-reporting-7.png)
 
@@ -101,13 +101,13 @@ You can find the same reports from the Detailed view, and additional reports to 
 
     -   User status for managed MAM activity (Protected): This report outlines the activity of each managed MAM app, on a per user basis.
 
-        -   It shows all apps targeted by MAM policies for each user, and break down the status of each app as checked in with MAM policies, or that was targeted with a MAM policy but the app was never checked in.
+        -   It shows all apps targeted by app protection policies for each user, and break down the status of each app as checked in with app protection policies, or that was targeted with an app protection policy but the app was never checked in.
 <br></br>
     -   User status for unmanaged MAM activity (Unprotected): This report outlines the activity of MAM-enabled apps that are currently unmanaged, on a per user basis. This might happen according to the following reasons:
 
-        -   These apps are either being used by a user or an app that is not currently targeted by a MAM policy.
+        -   These apps are either being used by a user or an app that is not currently targeted by an app protection policy.
 
-        -   All apps are checked in, but aren't getting any MAM policies.
+        -   All apps are checked in, but aren't getting any app protection policies.
 
 ![Screenshot-2](../media/MAM-reporting-4.png)
 
@@ -135,5 +135,5 @@ Follow these steps to generate the App protection report:
 ## See also
 [Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [What to expect when your Android app is managed by MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [What to expect when your iOS app is managed by MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
