@@ -4,10 +4,10 @@
 title: What is the Manage Users workload? | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to see and manage users using Microsoft Intune and Azure."
 keywords:
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/18/2017
+ms.date: 02/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,12 +31,13 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-If you are new to Intune in the Azure portal, remember that you no longer create Intune-specific groups. Intune uses Azure AD groups just like many other applications that you use.
-If you want to learn more about how to work with groups in Azure AD, see [Managing access to resources with Azure Active Directory groups](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups).
+If you are new to Intune in the Azure portal, remember that you no longer create groups for Intune. Intune uses Azure AD groups just like many other applications that you use.
 
-When you choose **Manage users**, you are taken to the Microsoft Azure Users and groups workload where you can perform the following actions:
+To learn more about using groups in Azure AD, see [Managing access to resources with Azure Active Directory groups](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups).
 
-1. See overview information about the users and groups you manage.
+To manage groups in the [Azure portal](https://portal.azure.com), search for **Intune**, choose **Manage users**, and you are taken to the **Users and groups** workload where you can perform the following actions:
+
+1. See **Overview** information about the users and groups you manage.
 2. See details about all users you manage with Azure.
 3. Create groups of users and devices.
 4. Display audit activity for group actions.

@@ -62,7 +62,9 @@ When you configure conditional access policies and target them to a user, before
 
 -   **Compliant** with any [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] compliance policies that are deployed to that device or domain joined to an on-premises domain.
 
-If a conditional access policy isn't met, the user sees one of the following messages when they sign in:
+### When the device is not compliant
+
+If a conditional access policy isn't met, the device gets immediately quarantined, and the user receives an e-mail sees one of the following quarantine notifications when they sign in:
 
 - If the device isn't enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device’s Exchange ActiveSync ID with the record in Azure Active Directory.
 
