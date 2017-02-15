@@ -2,13 +2,13 @@
 # required metadata
 
 title: Intune custom settings for iOS devices
-titlesuffix: Intune Azure preview
+titleSuffix: Intune Azure preview
 description: "Intune Azure preview: Learn the settings you can use in an iOS custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
