@@ -42,7 +42,7 @@ The mobile device management authority setting determines how you manage your de
 
 **To set the mobile device management authority:**
 
-1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
 2. On the Intune blade, choose **Enroll devices**, and then choose **Overview**.
 

@@ -5,9 +5,9 @@ title: Add IMEI identifiers to Intune | Intune Azure preview | Microsoft Docs
 description: "Intune Azure preview: Learn how to add corporate identifiers (IMEI numbers) to Microsoft Intune. "
 keywords:
 author: staciebarker
-ms.author: stabark
+ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ In a text editor, the .csv list looks something like this:
 
 **To add a .csv list of corporate identifiers**
 
-1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
 2. On the Intune blade, choose **Enroll devices**, and then choose **Corporate Device Identifiers**.
 
@@ -50,6 +50,8 @@ In a text editor, the .csv list looks something like this:
 
 **To delete a .csv list of corporate identifiers**
 
-1. On the Intune blade, choose **Enroll devices**, and then choose **Corporate Device Identifiers**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2. Choose **Delete**.
+2. On the Intune blade, choose **Enroll devices**, and then choose **Corporate Device Identifiers**.
+
+3. Choose **Delete**.
