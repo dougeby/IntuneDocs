@@ -70,7 +70,7 @@ Currently, the following browsers are supported:
 - Chrome (latest version)
 - Firefox (latest version)
 
-For the latest information about supported browsers, see [here](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices).
+Check the [Azure portal](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices) for the latest information about supported browsers.
 
 ## What's in this library?
 
