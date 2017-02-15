@@ -6,7 +6,7 @@ description: Manage Intune licenses with PowerShell
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,8 @@ ms.suite: ems
 # Manage Intune licenses using PowerShell
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+This topic tells administrators how they use PowerShell to manage Intune user licenses.
 
 Before users can sign in to use the Intune service or enroll their devices into management, you must first assign each user a license to your Intune subscription, as described in [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). However, organizations that use Microsoft Enterprise Mobility + Security might have users who only require Azure Active Directory Premium or Intune services in the EMS package. You can assign one or a subset of services using [Azure Active Directory PowerShell cmdlets](https://msdn.microsoft.com/library/jj151815.aspx).
 

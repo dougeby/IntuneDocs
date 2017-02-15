@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ You can limit the types of devices that are allowed to enroll in Intune by speci
 
 ## Set device type restrictions
 
-1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**
+1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
 
 2. On the Intune blade, choose **Enroll devices**, and then choose **Enrollment Restrictions**.
 
@@ -53,10 +53,12 @@ You can limit the types of devices that are allowed to enroll in Intune by speci
 
 ## Set device limit restrictions
 
-1. On the Intune blade of the Azure portal, choose **Enroll devices**, and then choose **Enrollment Restrictions**.
+1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
 
-2. Under **Device Limit Restrictions**, select **Default**.
+2. On the Intune blade, choose **Enroll devices**, and then choose **Enrollment Restrictions**.
 
-3. On the **All Users** blade, select **Device Limit**.
+3. Under **Device Limit Restrictions**, select **Default**.
 
-4. Select the maximum number of devices that a user can enroll, and then select **Save**.
+4. On the **All Users** blade, select **Device Limit**.
+
+5. Select the maximum number of devices that a user can enroll, and then select **Save**.
