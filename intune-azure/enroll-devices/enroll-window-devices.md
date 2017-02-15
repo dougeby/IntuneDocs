@@ -6,7 +6,7 @@ description: "Intune Azure preview: Enable Intune mobile device management (MDM)
 keywords:
 author: staciebarker
 manager: stabar
-ms.date: 02/03/17
+ms.date: 02/09/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,11 +29,16 @@ ms.suite: ems
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-You can enable enrollment and management for Windows devices in two ways:
+Use one of the following methods to set up enrollment for Windows devices:
 
-- **[Automatic enrollment with Azure Active Directory](#azure-active-directory-enrollment)** -  Windows 10 and Window 10 Mobile users enroll their devices by adding a work or school account to the device.
+- **Windows 10 and Windows 10 Mobile automatic enrollment with Azure Active Directory Premium** 
+ -  This method is applicable only for Windows 10 and Windows 10 Mobile devices.
+ -  You must have Azure Active Directory Premium to use this method. Otherwise, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
+ -  If you choose not to enable automatic enrollment, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
 
-- **[Company Portal enrollment](#set-up-company-portal-app-enrollment)** - Windows Phone 8.1 and later users enroll their devices by downloading and installing the Company Portal app and then entering their work or school account credentials in the app.
+- **Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME** 
+ - You must use this method to enroll Windows 8.1 and Windows Phone 8.1 devices.
+
 
 ## Prerequisites
 
@@ -46,15 +51,14 @@ If some of the following prerequisites aren't in the Intune Azure preview yet, y
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## Set up Company Portal app enrollment
+## Set up Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME
 
-You can let users install and enroll their devices by using the Intune Company Portal app. If you create DNS CNAME resource records,  users connect and enroll in Intune without entering a server name.
+You can let users install and enroll their devices by using the Intune Company Portal. If you create DNS CNAME resource records,  users connect and enroll in Intune without entering a server name.
 
-1. **Create CNAMEs** (optional)<br>Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment.manage.microsoft.com.
+1. **Create CNAMEs** (optional)<br>
+ Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
 
-	Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, manage.microsoft.com.
-
-	If you currently have a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com, we suggest that you replace it with a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com. This change is recommended, because the manage.microsoft.com endpoint is being deprecated for enrollments in a future release.
+	Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, enrollment.manage.microsoft.com.
 
 	If there is more than one verified domain, create a CNAME record for each domain. The CNAME resource records must contain the following information:
 

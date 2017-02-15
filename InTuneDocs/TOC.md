@@ -11,7 +11,8 @@
 
 # [Get Started](get-started/get-started.md)
 ## [Setup Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Prerequisites](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [Prerequisites]
+#### [Supported devices](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Network usage](get-started/network-bandwidth-use.md)
 ### [Sign in to Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configure domains](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -57,7 +58,6 @@
 #### [Android management](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work management](deploy-use/set-up-android-for-work.md)
 #### [Windows device management ](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile and Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Manage corporate-owned devices](deploy-use/manage-corporate-owned-devices.md)
 #### [Enroll corporate-owned iOS devices](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Setup Assistant enrollment](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -165,13 +165,13 @@
 #### [Enable device threat protection compliance policy](deploy-use/device-threat-protection-policy.md)
 
 ### [Protect app data with MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Azure portal for MAM policies](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Get ready to configure MAM policies](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Create and deploy MAM policies](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [MAM policies for Android](deploy-use/android-mam-policy-settings.md)
-#### [MAM policies for iOS](deploy-use/ios-mam-policy-settings.md)
-#### [Validate MAM policies](deploy-use/validate-mobile-application-management.md)
-#### [Monitor policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Azure portal for app protection policies](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [Get ready to configure app protection policies](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Create and deploy app protection policies](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [App protection policies for Android](deploy-use/android-mam-policy-settings.md)
+#### [App protection policies for iOS](deploy-use/ios-mam-policy-settings.md)
+#### [Validate app protection policies](deploy-use/validate-mobile-application-management.md)
+#### [Monitor app protection policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Manage data transfer between iOS apps](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [Intune admin console for MAM policies](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)

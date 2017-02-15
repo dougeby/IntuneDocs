@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Prepare apps for mobile application management | Microsoft Docs
+title: Decide how to prepare apps for mobile application management with Microsoft Intune | Microsoft Docs
 description: The information in this topic helps you decide when you should use the App wrapping tool and the App SDK to enable your custom line-of-business apps to use the mobile app management policies.
 keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/8/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# Decide how to prepare apps for mobile application management with Microsoft Intune
+# Prepare line of business apps for MAM
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -61,7 +61,7 @@ For more information about the App Wrapping Tool for MAM on devices that are not
 ## Intune App SDK
 The App SDK is designed mainly for customers who have apps in the Apple App Store or Google Play Store, and want to be able to manage the apps with Intune. However, any app can take advantage of integrating the SDK, even line-of-business apps.
 
-To learn more about the SDK, see the [Overview](/intune/develop/intune-app-sdk). To get started with the SDK, see [Getting Started With the Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started).
+To learn more about the SDK, see the [Overview](../develop/intune-app-sdk.md). To get started with the SDK, see [Getting Started With the Microsoft Intune App SDK](../develop/intune-app-sdk-get-started.md).
 
 ### Reasons to use the SDK
 * Your app does not have built-in data protection features.
@@ -75,8 +75,8 @@ To learn more about the SDK, see the [Overview](/intune/develop/intune-app-sdk).
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Yes – use the [Intune App SDK Xamarin Component](/../develop/intune-app-sdk-xamarin).|Yes – use the [Intune App SDK Cordova Plugin](/../develop/intune-app-sdk-cordova).|
-|**Android**| Yes - use the [Intune App SDK Xamarin Component](/../develop/intune-app-sdk-xamarin).|Yes – use the [Intune App SDK Cordova Plugin](/../develop/intune-app-sdk-cordova).|
+|**iOS**|Yes – use the [Intune App SDK Xamarin Component](../develop/intune-app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](../develop/intune-app-sdk-cordova.md).|
+|**Android**| Yes - use the [Intune App SDK Xamarin Component](../develop/intune-app-sdk-xamarin.md).|Yes – use the [Intune App SDK Cordova Plugin](../develop/intune-app-sdk-cordova.md).|
 
 ## Feature comparison
 This table lists the settings that you can use for the App SDK and App Wrapping Tool.

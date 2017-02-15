@@ -16,7 +16,7 @@ ms.assetid: 43b738b7-6a56-498a-a433-112da5104876searchScope: - Company Portal
 
 # optional metadata
 
-#ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: priyar

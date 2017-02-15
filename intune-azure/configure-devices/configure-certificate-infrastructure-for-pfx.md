@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,7 @@ ms.suite: ems
 
 
 ---
-# Configure your Intune certificate infrastructure for PKCS
+# Configure your Microsoft Intune certificate infrastructure for PKCS
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 This topic describes what you need in order to create and deploy PKCS certificate profiles with Intune.
