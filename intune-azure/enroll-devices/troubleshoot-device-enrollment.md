@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,7 +52,7 @@ These issues may occur on all device platforms.
 
 #### Check number of devices enrolled and allowed
 
-On the Intune blade of the Azure portal, go to **Enroll devices** > **Enrollment Restrictions** and validate that the user has no more than the allowable maximum of 15 devices assigned.
+In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade of the Azure portal, go to **Enroll devices** > **Enrollment Restrictions** and validate that the user has no more than the allowable maximum of 15 devices assigned.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 

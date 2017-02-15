@@ -19,11 +19,11 @@ Automatic enrollment lets users enroll either company-owned or personal Windows 
 
 4. Select **Configure** to start configuring automatic MDM enrollment with Microsoft Intune.
 
-5. Specify the URLs for Intune:
+5. Use the default values for the following URLs:
 
-  - **MDM Enrollment URL** – Use the default value.
-  - **MDM Terms of Use URL** – Use the default value. This URL displays terms of use for users when enrolling devices.
-  - **MDM Compliance URL** – Use the default value. If a device is found to be out of compliance, an **Access denied** message is displayed with this URL. The URL points to a page that helps users understand why their device is not compliant with policy and how they can bring it back into compliance.
+  - **MDM Enrollment**
+  - **MDM Terms of Use** 
+  - **MDM Compliance**
 
 6.  Specify which users’ devices should be managed by Microsoft Intune. These users’ Windows 10 devices will be automatically enrolled for management with Microsoft Intune.
 

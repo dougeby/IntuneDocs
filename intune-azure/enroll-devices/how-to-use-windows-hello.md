@@ -55,7 +55,7 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
 
 ## Create a Windows Hello for Business policy
 
-1.  In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
+1.  In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
 2.  On the Intune blade, choose **Enroll devices**, and then choose **Manage** > **Windows Hello for Business**.
 

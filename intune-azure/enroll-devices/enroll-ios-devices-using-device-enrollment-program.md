@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,7 +56,7 @@ Complete the following prerequisites before setting up iOS device enrollment:
 
 A device enrollment profile defines the settings applied to a group of devices. The following steps show how to create a device enrollment profile for iOS devices enrolled by using DEP.
 
-1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
 2. On the Intune blade, choose **Enroll devices**, and then choose **Apple Enrollment**.
 
@@ -116,9 +116,11 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 ## Synchronize DEP-managed devices
 
-1. On the Intune blade of the Azure portal, choose **Enroll Devices**, and then choose **Apple Enrollment**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Serial Numbers**.
+2. On the Intune blade of the Azure portal, choose **Enroll Devices**, and then choose **Apple Enrollment**.
+
+3. Under **Manage Apple Device Enrollment Program (DEP) Settings**, select **DEP Serial Numbers**.
 
 4. On the **Apple DEP Serial Numbers** blade, select **Sync**.
 
