@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to monitor device profiles with Intune Azure preview
+# How to monitor device profiles in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
