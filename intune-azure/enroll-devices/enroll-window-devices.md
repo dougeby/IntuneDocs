@@ -36,7 +36,7 @@ Use one of the following methods to set up enrollment for Windows devices:
  -  You must have Azure Active Directory Premium to use this method. Otherwise, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
  -  If you choose not to enable automatic enrollment, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
 
-- [**Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME**](#set-up-windows-8-1-and-windows-phone-8-1-enrollment-by-configuring-cname)
+- [**Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname)
  - You must use this method to enroll Windows 8.1 and Windows Phone 8.1 devices.
 
 
