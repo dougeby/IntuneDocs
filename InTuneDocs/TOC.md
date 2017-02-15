@@ -6,6 +6,7 @@
 ### [Create policies and publish an app](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Other options and extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Convert to a paid subscription](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [MAM and app protection FAQ](understand-explore/mam-faq.md)
 ## [Common scenarios](understand-explore/common-ways-to-use-intune.md)
 
 
@@ -182,7 +183,6 @@
 #### [LOB apps on devices not managed by Intune](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Use the SDK when you write an app](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
-### [MAM and app protection FAQ](deploy-use/mam-faq.md)
 
 ## Retire apps and data
 ### [Use full or selective wipe](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
