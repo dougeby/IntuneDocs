@@ -24,11 +24,11 @@ ms.suite: ems
 
 ---
 
-# Azure portal for Microsoft Intune MAM policies
+# Azure portal for Intune app protection policies
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-The Azure portal is used to create and manage mobile app management (MAM) policies for:
+The Azure portal is used to create and manage app protection policies for:
 
 - Apps running on devices that are **enrolled and managed in Intune**.
 
@@ -36,9 +36,9 @@ The Azure portal is used to create and manage mobile app management (MAM) polici
 - Apps running on devices that are **enrolled in a third-party MDM solution**.
 
 >[!IMPORTANT]
-> The Azure portal is the new admin console for creating MAM policies, but you can also create a MAM policy that supports apps for devices enrolled into Intune by using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) for MDM scenarios.
+> The Azure portal is the new admin console for creating app protection policies, but you can also create an app protection policy that supports apps for devices enrolled into Intune by using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) for MDM scenarios.
 
-> You might not see all the MAM policy settings available on the Intune admin console. Additionally, if you create MAM policies both on the Intune admin console and in the Azure portal, the policies created in the Azure portal will override the ones created on the Intune admin console. In this scenario, the Azure portal MAM policies will be applied to the apps and deployed to users.
+> You might not see all the app protection policy settings available on the Intune admin console. Additionally, if you create app protection policies both on the Intune admin console and in the Azure portal, the policies created in the Azure portal will override the ones created on the Intune admin console. In this scenario, the Azure portal app protection policies will be applied to the apps and deployed to users.
 
 
 ## Sign in to the Azure portal and customize your start page
@@ -51,11 +51,11 @@ The Azure portal is used to create and manage mobile app management (MAM) polici
 
     ![Screenshot of the Azure portal dashboard](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  On the **Browse** menu, find **Intune**.
+3.  Choose **More services** from left menu, then type **Intune** in the text box filter.
 
 	![Screenshot of the Browse menu with Intune highlighted](../media/AppManagement/MAM-Azure-Portal-1.png)
 
-4.  Choose **Intune** > **Intune mobile application management** > **Settings**.
+4.  Choose **Intune App Protection** > **Intune mobile application management** > **All Settings**.
 
     ![Screenshot of the Intune mobile application management blade](../media/AppManagement/MAM-Azure-Portal-2.png)
 
@@ -66,4 +66,4 @@ The Azure portal is used to create and manage mobile app management (MAM) polici
     ![Screenshot of the dashboard with the pinned Intune tile](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
 
 ## Next steps
-[Get ready to configure mobile app management policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[Get ready to configure app protection policies](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)

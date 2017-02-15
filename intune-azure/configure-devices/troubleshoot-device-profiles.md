@@ -6,7 +6,7 @@ description: "Intune Azure preview: If you're stuck, use this topic to help you 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

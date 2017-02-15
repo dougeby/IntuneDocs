@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Intune custom settings for iOS devices | Intune Azure preview | Microsoft Docs
+title: Intune custom settings for iOS devices
+titleSuffix: Intune Azure preview
 description: "Intune Azure preview: Learn the settings you can use in an iOS custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +27,7 @@ ms.suite: ems
 
 ---
 
-# Intune custom settings for iOS devices in Intune Azure preview
+# Microsoft Intune custom settings for iOS devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

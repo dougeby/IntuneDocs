@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to add an app 
+# How to add an app to Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -47,6 +47,16 @@ The following platforms are supported. Click one of the topics for more informat
 
 > [!NOTE]
 > When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
+
+## Cloud storage space
+All apps that you create by using the software installer installation type (for example, a line-of-business app) are  packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. Your full subscription includes 20 GB of storage space.
+
+You can purchase additional storage for Intune using your original purchase method.  If you paid by invoice or credit card, visit the [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Otherwise, contact your partner or sales associate.
+
+Requirements for cloud storage space are as follows:
+
+-   All app installation files must be in the same folder.
+-   The maximum file size for any file that you upload is 2 GB.
 
 ## How to create and edit categories for apps 
 
