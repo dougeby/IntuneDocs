@@ -6,7 +6,7 @@ description: Assign licenses to users for your Intune subscription
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,9 +29,11 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Before users can sign in to use the Intune service or enroll their devices into management, you must first assign each user a license to your Intune subscription by using the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854).
+This topic tells administrators how they can assign Intune licenses to users so they can bring devices into management.
 
-Organizations that use Microsoft Enterprise Mobility + Security (EMS) might have users who only require Azure Active Directory Premium or Intune services in the EMS package. You can assign one or a subset of services using [Azure Active Directory PowerShell cmdlets](https://msdn.microsoft.com/library/jj151815.aspx). For more information, see [Manage Intune licenses using PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
+Before users can sign in to use the Intune service or enroll their devices into management, you must first assign each user a license to your Intune subscription in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854).
+
+Organizations that use Microsoft Enterprise Mobility + Security (EMS) might have users who only require Azure Active Directory Premium or Intune services in the EMS package. You can assign one or a set of services using [Azure Active Directory PowerShell cmdlets](https://msdn.microsoft.com/library/jj151815.aspx). For more information, see [Manage Intune licenses using PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
 
 ## How Intune licenses are assigned
 When user accounts are synchronized from your on-premsies Active Directory or manually added to your cloud services subscription via the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), they are not automatically assigned an Intune license. Instead, at a later time, an Intune tenant administrator must edit the user account to assign a license to the user from the Office 365 portal.
