@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# What are device profiles?
+# What are Microsoft Intune device profiles?
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

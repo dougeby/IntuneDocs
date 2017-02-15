@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to create custom VPN profiles with Microsoft Intune
+# How to create custom VPN profiles in Microsoft Intune
 
 ## Create a custom configuration
 You can use Intune custom configuration polices to create VPN profiles for:

@@ -6,7 +6,7 @@ description: "Intune Azure preview: Create a custom profile to allow and block a
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 
 
 ---
-# Use custom policies to allow and block apps for Samsung KNOX Standard devices in Intune Azure preview
+# Use custom policies to allow and block apps for Samsung KNOX Standard devices in Microsoft Intune
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 Use the procedures in this topic to create a Microsoft Intune custom policy that creates one of the following:
 
