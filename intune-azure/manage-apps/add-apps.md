@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to add an app 
+# How to add an app to Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

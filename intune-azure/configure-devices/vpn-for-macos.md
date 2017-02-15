@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# VPN settings for macOS devices in Intune Azure preview
+# VPN settings for macOS devices in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

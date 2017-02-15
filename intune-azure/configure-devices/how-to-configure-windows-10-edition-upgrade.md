@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.suite: ems
 
 ---
 
-# How to configure Windows 10 edition upgrades 
+# How to configure Windows 10 edition upgrades in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to add Android line-of-business (LOB) apps to Intune
+# How to add Android line-of-business (LOB) apps to Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
