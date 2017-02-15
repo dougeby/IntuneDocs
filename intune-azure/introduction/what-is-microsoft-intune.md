@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Introduction to Intune in the Azure portal preview | Intune Azure preview | Microsoft Docs
+title: Introduction to Intune in the Azure portal preview
 description: "Intune Azure preview: Get the basics about Intune in the Azure portal preview, and how it can help you manage your devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 01/08/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer:
+#ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,7 +33,7 @@ ms.suite: ems
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Microsoft Intune is moving to the Azure portal and this means that the workflows and functionality you are used to will change.
-The new portal offers you a preview of new and updated functionality in the Azure portal where you can manage your organization's' mobile devices, PCs, and apps.
+The new portal offers you a preview of new and updated functionality in the Azure portal where you can manage your organization's mobile devices, PCs, and apps.
 All Intune functionality will eventually move to Azure, but you can perform certain Intune tasks in the Azure portal today. Because this new experience is in preview, some functionality might not yet be present in the portal. Review the [What’s new in the preview](#what's-new-in-the-preview) section for details.
 
 > [!IMPORTANT]
@@ -50,14 +50,14 @@ Highlights of the new experience include:
 - An integrated console for all your Enterprise Mobility + Security (EMS) components
 - An HTML-based console built on web standards
 - Microsoft Graph API support to automate many actions
-- Azure AD groups to provide compatibility across all your Azure applications
+- Azure Active Directory (AD) groups to provide compatibility across all your Azure applications
 - Support for most modern web browsers
 
-If you are looking for documentation for the classic Intune console, see [the Intune Documentation Library](https://docs.microsoft.com/en-us/intune/).
+If you are looking for documentation for the classic Intune console, see [the Intune documentation library](https://docs.microsoft.com/en-us/intune/).
 
 ## Before you start
 
-To use Intune in the Azure portal, you must have an Intune admin and tenant account. You can sign up for an account [here](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+To use Intune in the Azure portal, you must have an Intune admin and tenant account. [Sign up for an account](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) if you don't already have one.
 
 ## Supported web browsers for the Azure portal
 
@@ -70,7 +70,7 @@ Currently, the following browsers are supported:
 - Chrome (latest version)
 - Firefox (latest version)
 
-For the latest information about supported browsers, see [here](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices).
+Check the [Azure portal](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices) for the latest information about supported browsers.
 
 ## What's in this library?
 
@@ -82,31 +82,24 @@ The documentation reflects the layout of the Intune portal to make it easier to 
 Information to help you plan and design your Intune environment.
 [Read more](/intune-azure/plan-and-design/get-started) --->
 ### Enroll devices
-How to get your devices managed by Intune.
-[Read more](/intune-azure/enroll-devices/what-is)
+[How to get your devices managed by Intune](/intune-azure/enroll-devices/what-is).
 ### Devices & Groups
-Get to know the devices you manage with inventory, and reports.
-[Read more](/intune-azure/manage-devices/what-is)
+[Get to know the devices you manage with inventory and reports](/intune-azure/manage-devices/what-is).
 ### Manage users
-Learn about the users of devices you manage.
-[Read more](/intune-azure/manage-users/what-is)
+[Learn about the users of devices you manage](/intune-azure/manage-users/what-is).
 ### Manage apps
-Contains information about how to publish, manage, configure, and protect apps.
-[Read more](/intune-azure/manage-apps/what-is-app-management)
+[How to publish, manage, configure, and protect apps](/intune-azure/manage-apps/what-is-app-management).
 ### Configure devices
-Contains information about the profiles you can use to configure settings and features on devices you manage.
-[Read more](/intune-azure/configure-devices/what-are-device-profiles)
+[Understand the profiles you can use to configure settings and features on devices you manage](/intune-azure/configure-devices/what-are-device-profiles).
 ### Set device compliance
-Define a compliance level for your devices, then report about any devices which are not compliant
-[Read more](/intune-azure/set-device-compliance/what-is-device-compliance)
+[Define a compliance level for your devices, then report about any devices which are not compliant](/intune-azure/set-device-compliance/what-is-device-compliance).
 ### Conditional access
-Restrict access to Exchange services depending on conditions you specify.
-[Read more](/intune-azure/conditional-access/what-is-conditional-access)
+[Restrict access to Exchange services depending on conditions you specify](/intune-azure/conditional-access/what-is-conditional-access).
 ### Access control
-Control who can perform various Intune actions, and who those actions apply to. You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles.
-[Read more](/intune-azure/access-control/role-based-access-control)
+[Control who can perform various Intune actions, and who those actions apply to](/intune-azure/access-control/role-based-access-control). You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles.
 
 
-## What's New?
+
+## What's new?
 
 [Find out what's new in the preview release](/intune-azure/introduction/whats-new).

@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# How to manage apps you purchased from the Windows Store for Business
+# How to manage apps you purchased from the Windows Store for Business with Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
