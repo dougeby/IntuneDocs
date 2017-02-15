@@ -53,7 +53,7 @@ To make sure that apps that you deploy using your third party MDM solution are a
 Configuring the user UPN setting is **required** for devices that are managed by a third-party EMM solution. The procedure described below is a general flow on how to configure the UPN setting and the resulting end user experience:
 
 
-1.  In the Azure portal, [configure an app protection policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) for iOS platform. Configure policy settings per your company requirements and select the apps that should have this policy.
+1.  In the [Azure portal](https://portal.azure.com), [create and assign an app protection policy](app-protection-policies.md) for iOS. Configure policy settings per your company requirements and select the iOS apps that should have this policy.
 
 2.  Deploy the apps and the email profile that you want managed **through your third-party MDM solution** using the generalized steps below. This experience is also covered by Example 1.
 
@@ -105,7 +105,7 @@ After configuring the user UPN setting, you should validate the iOS app's abilit
 
 For example, the **Require app PIN** policy setting is easy to visually test on a device. If the policy setting is set to **Yes**, the end user should see a prompt to set or enter a PIN when attempting to access company data.
 
-First,  [create and deploy an app protection policy](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) to the iOS app. See [Validate app protection policies](validate-mobile-application-management.md) for more information on how to test app protection policy.
+First,  [create and assign an app protection policy](app-protection-policies.md) to the iOS app. See [Validate app protection policies](validate-app-protection-policies.md) for more information on how to test app protection policy.
 
 
 ### See also
