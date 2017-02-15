@@ -32,34 +32,34 @@ When you enroll your Windows device in Intune, you are giving your IT administra
 
 **What IT cannot see**
 
--   Call and Web history
+- Call and Web history
 
 -	Location
 
--   Email and text messages
+- Email and text messages
 
--   Contacts
+- Contacts
 
 -	Passwords
 
--   Calendar
+- Calendar
 
--   Camera roll
+- Camera roll
 
 **What IT can see**
 
--   Model
+- Model
 
--   Serial number
+- Serial number
 
--   Operating system
+- Operating system
 
--   App names
+- App names
 
--   Owner
+- Owner
 
--   Device name
+- Device name
 
--   Manufacturer
+- Manufacturer
 
 For more information, see [What happens if you install the Company Portal app and enroll your Windows device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
