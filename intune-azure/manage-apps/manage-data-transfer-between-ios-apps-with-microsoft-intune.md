@@ -68,7 +68,7 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 ### Example 1: Admin experience in third-party MDM console
 
-1. Go to the admin console of third-party MDM provider. Go to the section of the console in which you deploy application configuration settings to enrolled iOS devices.
+1. Go to the admin console of your third-party MDM provider. Go to the section of the console in which you deploy application configuration settings to enrolled iOS devices.
 
 2. In the Application Configuration section, enter the following setting:
 
@@ -95,9 +95,9 @@ Configuring the user UPN setting is **required** for devices that are managed by
     > [!NOTE]
     > The end user can add other personal accounts to Word to do their personal work and not be affected by the app protection policies when using the Word app in a personal context.
 
-5.  When the login is successful, the app policy settings are applied to the Word app.
+5.  When the login is successful, the app protection policy settings are applied to the Word app.
 
-6.  Now the data transfer succeeds and the document is tagged as corporate identity in the app. In addition, the data is treated in a work context and the policy settings are applied accordingly.
+6.  Now the data transfer succeeds and the document is tagged with a corporate identity in the app. In addition, the data is treated in a work context and the policy settings are applied accordingly.
 
 ### Validate user UPN setting for third-party EMM
 
