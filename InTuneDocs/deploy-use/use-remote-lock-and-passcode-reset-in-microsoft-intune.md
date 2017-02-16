@@ -2,9 +2,9 @@
 title: Remote lock and passcode reset | Microsoft Docs
 description: Intune provides both remote lock and passcode reset capabilities.
 keywords:
-author: staciebarkerms.author: staciebarker
+author: NathBarnms.author: NathBarn
 manager: angrobe
-ms.date: 01/06/17
+ms.date: 02/16/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.reviewer: chrisgre
 Microsoft Intune provides both remote lock and passcode reset capabilities.
 
 ## Lock a device remotely
-If a user loses a device, you can lock the device remotely. The device must already have a PIN or passcode set on it before you can use remote lock. 
+If a user loses a device, you can lock the device remotely. The device must already have a PIN or passcode set on it before you can use remote lock.
 
 The following table lists how remote lock works on different mobile platforms.
 
@@ -37,7 +37,8 @@ The following table lists how remote lock works on different mobile platforms.
 |macOS|Not supported|
 |iOS|Supported|
 |Android|Supported|
-|Windows 10 and Windows 10 Mobile|Supported|
+|Windows 10 (mobile)|Supported|
+|Windows 10 (desktop)|Not supported|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
 |Windows RT 8.1 and Windows RT|Supported if the current user of the device is the same user who enrolled the device.|
 |Windows 8.1|Supported if the current user of the device is the same user who enrolled the device.|
