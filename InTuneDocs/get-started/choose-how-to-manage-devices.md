@@ -6,7 +6,7 @@ description: Learn about the various ways you can enroll and manage devices.
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/16/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune

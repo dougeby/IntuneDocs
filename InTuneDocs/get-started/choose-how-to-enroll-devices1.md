@@ -6,7 +6,7 @@ description: Decide how to enroll mobile devices in Intune by answering a few si
 keywords:
 author: NathBarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/16/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
