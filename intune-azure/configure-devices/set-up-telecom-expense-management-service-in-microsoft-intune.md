@@ -5,7 +5,7 @@ keywords: Saaswedo
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -141,7 +141,9 @@ Follow these steps to create the Datalert app in Intune for each platform. iOS i
 
 ### Step 4: Add corporate paid phone lines to the Datalert console 
 
-You now have configured the Intune and Datalert services to communicate with each other. You now need to add your corporate paid phone lines to the Datalert console and define thresholds and actions for any cellular or roaming usage violations. To set these items, follow the steps in the setup wizard, under the **Settings** tab, of your Datalert console.
+You now have configured the Intune and Datalert services to communicate with each other. You now need to add your corporate paid phone lines to the Datalert console and define thresholds and actions for any cellular or roaming usage violations. 
+
+To set these items, go to the [Datalert setup for Microsoft Intune page](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup), and follow the steps in the setup wizard under the **Settings** tab.
 
   ![Screenshot of the Add a policy blade](../media/tem-add-phone-lines-to-datalert-console.png)
 
