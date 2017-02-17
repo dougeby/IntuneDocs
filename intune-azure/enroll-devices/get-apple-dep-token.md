@@ -36,7 +36,7 @@ To manage corporate-owned iOS devices with DEP, your organization must join Appl
 > [!NOTE]
 > This note only applies to Intune customers who have been migrated from the Intune administration console to the Azure portal. If you deleted an Apple DEP token from the Intune administration console during the migration period, you may find that the DEP token has been restored to your Intune account. If this happens, just delete the DEP token from the Azure portal.
 
-## To get the Apple DEP certificate
+## Steps to get the Apple DEP certificate
 In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Apple DEP Token**, and then follow the numbered steps in the Azure portal, which are shown below.
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
