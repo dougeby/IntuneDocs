@@ -1,3 +1,3 @@
 ---
-redirect_url: https://docs.microsoft.com/intune/deploy-use/protect-windows-devices-with-multi-factor-authentication
+redirect_url: https://docs.microsoft.com/intune/deploy-use/multi-factor-authentication-azure-active-directory
 ---
