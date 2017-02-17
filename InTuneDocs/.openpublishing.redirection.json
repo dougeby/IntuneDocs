@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+        "source_path": "InTuneDocs/EndUser/company-portal-frequently-asked-questions.md",
+        "redirect_url": "intune/enduser/use-managed-devices-to-get-work-done",
+        "redirect_document_id": true
+    }
+  ]
+}
