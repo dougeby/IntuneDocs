@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,25 +30,27 @@ ms.custom: intune-enduser
 
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  Tap **Access work or school**, and then tap **Connect**.
+1.  Open the Windows **Settings** app by going to the **Start menu** and selecting the **Settings** button. You can also search for "settings" in the search bar.
 
-    ![Tap Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+2. Select **Accounts** > **Access work or school** > **Connect**.
 
-2.  Enter your work or school email address, and then tap **Next**.
+    ![Select Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+3.  Enter your work or school email address, and then select **Next**.
 
     ![Enter your work or school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
 
-3. Sign in to Intune with your work or school account.
+4. Sign in to Intune with your work or school account.
 
 	![Add a work or school account](./media/w10-enroll-rs1-enter-your-credentials.png)
 
 	You’ll see a message indicating that your company or school is registering your device.
 
-4. When you see the **You’re all set!** screen, tap **Close**. You’re done.
+5. When you see the **You’re all set!** screen, select **Close**. You’re done.
 
-  ![Tap close on the "You're all set!" screen](./media/w10-enroll-rs1-youre-all-set.png)
+  ![Select close on the "You're all set!" screen](./media/w10-enroll-rs1-youre-all-set.png)
 
-5. If you want to double-check that your connection looks right, go back to **Settings**, where you should now see your work or school account listed.
+6. If you want to double-check that your connection looks right, go back to **Settings**, where you should now see your work or school account listed.
 
 	![Validate that the connection was set up correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
