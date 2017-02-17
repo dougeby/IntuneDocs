@@ -25,18 +25,18 @@ ms.suite: ems
 #ms.custom:
 ---
 
-# Get an Apple DEP certificate 
+# Get an Apple DEP certificate
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Before you can enroll corporate-owned iOS devices with DEP, you need a DEP token from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform Enrollment Profile uploads to Apple and to assign devices to those profiles.
+Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP token from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
 
-To manage corporate-owned iOS devices with Apple’s Device Enrollment Program (DEP), your organization must join Apple DEP and get devices through that program. Details of that process are available at: https://deploy.apple.com. Advantages of the program include hands-free setup of devices without using a USB cable to connect each device to a computer.
+To manage corporate-owned iOS devices with DEP, your organization must join Apple DEP and get devices through that program. Details of that process are available at: https://deploy.apple.com. Advantages of the program include hands-free setup of devices without using a USB cable to connect each device to a computer.
 
 > [!NOTE]
-> Read this note only if you are a customer who has been migrated from the Intune administration console to the Azure portal. If you deleted an Apple DEP token from the Intune administration console during the migration period, you may find that the DEP token has been restored to your Intune account. If this happens, just delete the DEP token from the Azure portal. 
+> This note only applies to Intune customers who have been migrated from the Intune administration console to the Azure portal. If you deleted an Apple DEP token from the Intune administration console during the migration period, you may find that the DEP token has been restored to your Intune account. If this happens, just delete the DEP token from the Azure portal.
 
-**To get the Apple DEP certificate**</br>
+## Steps to get the Apple DEP certificate
 In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Apple DEP Token**, and then follow the numbered steps in the Azure portal, which are shown below.
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
@@ -45,13 +45,13 @@ Select **Download your public key** to download and save the encryption key (.pe
 **Step 2. Download an Apple DEP token from the appropriate Apple website.**<br>
 Select [Create a DEP token via Apple Deployment Programs](https://deploy.apple.com) (https://deploy.apple.com), and sign in with your company Apple ID. You must use this Apple ID to renew your DEP token.
 
-   1.  In the [Device Enrollment Program Portal](https://deploy.apple.com), go to **Device Enrollment Program** &gt; **Manage Servers**, and then choose **Add MDM Server**.
+   a.  In the [Device Enrollment Program Portal](https://deploy.apple.com), go to **Device Enrollment Program** &gt; **Manage Servers**, and then choose **Add MDM Server**.
 
-   2.  Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
+   b.  Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
 
-   3.  The **Add &lt;ServerName&gt;** dialog box opens. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
+   c.  The **Add &lt;ServerName&gt;** dialog box opens. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
 
-   4.  The **Add &lt;ServerName&gt;** dialog box shows a **Your Server Token** link. Download the server token (.p7m) file to your computer, and then choose **Done**.
+   d.  The **Add &lt;ServerName&gt;** dialog box shows a **Your Server Token** link. Download the server token (.p7m) file to your computer, and then choose **Done**.
 
     This certificate (.p7m) file is used to establish a trust relationship between Intune and Apple’s Device Enrollment Program servers.
 

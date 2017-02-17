@@ -26,11 +26,11 @@ ms.suite: ems
 
 ---
 
-# Add Apple Configurator serial numbers 
+# Add Apple Configurator serial numbers
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use these steps to add serial numbers to Intune when you want to [enroll corporate-owned iOS devices by using Apple Configurator with Setup Assistant]((enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). You can add serial numbers one at a time, or upload a comma-separate-value (CSV) file of serial numbers. After you add serial numbers, you can assign a profile to them. The profile contains specific management settings that you want to apply to devices. 
+Use these steps to add serial numbers to Intune when you want to [enroll corporate-owned iOS devices by using Apple Configurator with Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). You can add serial numbers one at a time, or upload a comma-separated-value (CSV) file of serial numbers. After you add serial numbers, you can assign a profile to them. The profile contains specific management settings that you want to apply to devices.
 
 Other methods of enrolling iOS devices are described in [Choose how to enroll iOS devices in Intune](choose-ios-enrollment-method.md).
 
