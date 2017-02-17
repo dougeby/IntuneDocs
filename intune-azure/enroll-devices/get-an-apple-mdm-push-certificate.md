@@ -32,7 +32,7 @@ ms.suite: ems
 
 Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X devices and gives users access to company email and apps. An Apple Push Notification service (APNs) certificate is required for Intune to manage iOS and Mac devices. After you add the certificate to Intune, your users can install the Company Portal app to enroll their devices, or you can set up corporate-owned iOS device management.
 
-## To get your certificate
+## Steps to get your certificate
 In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Apple MDM Push Certificate**, and then follow the numbered steps in the Azure portal, which are shown below.
 
 **Step 1. Download the Intune certificate signing request required to create an Apple MDM push certificate.**<br>
