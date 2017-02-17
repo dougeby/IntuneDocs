@@ -22,7 +22,7 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: classic-portal
+ms.custom: intune-classic
 
 ---
 

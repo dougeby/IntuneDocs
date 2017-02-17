@@ -22,7 +22,7 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: classic-portal
+ms.custom: intune-classic
 
 ---
 

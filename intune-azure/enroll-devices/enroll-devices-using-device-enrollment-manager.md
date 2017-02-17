@@ -22,7 +22,7 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: azure-portal
+ms.custom: intune-azure
 ---
 
 # Enroll devices using device enrollment manager

@@ -21,7 +21,7 @@ ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 #ms.reviewer: angrobe
 #ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: classic-portal
+ms.custom: intune-classic
 
 ---
 

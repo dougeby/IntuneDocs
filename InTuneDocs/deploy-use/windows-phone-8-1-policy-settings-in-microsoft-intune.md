@@ -21,7 +21,7 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: classic-portal
+ms.custom: intune-classic
 
 ---
 

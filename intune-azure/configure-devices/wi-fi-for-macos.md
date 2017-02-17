@@ -22,7 +22,7 @@ ms.assetid: 322a38d5-21f5-48ee-bc59-0a4f9da78d38
 ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: azure-portal
+ms.custom: intune-azure
 
 ---
 

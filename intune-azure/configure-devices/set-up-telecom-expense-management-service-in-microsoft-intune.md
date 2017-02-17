@@ -21,7 +21,7 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: azure-portal
+ms.custom: intune-azure
 ---
 
 # Set up a telecom expense management service in Intune Azure preview

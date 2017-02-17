@@ -22,7 +22,7 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: azure-portal
+ms.custom: intune-azure
 ---
 
 # How to add iOS line-of-business (LOB) apps to Microsoft Intune

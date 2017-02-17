@@ -22,7 +22,7 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 #ms.reviewer: joglocke
 #ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: classic-portal
+ms.custom: intune-classic
 
 ---
 

@@ -22,7 +22,7 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: classic-portal
+ms.custom: intune-classic
 
 ---
 

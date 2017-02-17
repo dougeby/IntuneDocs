@@ -22,7 +22,7 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: azure-portal
+ms.custom: intune-azure
 
 ---
 

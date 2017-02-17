@@ -20,7 +20,7 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: azure-portal
+ms.custom: intune-azure
 
 ---
 
