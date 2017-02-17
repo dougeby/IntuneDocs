@@ -22,7 +22,7 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: azure-portal
 
 ---
 

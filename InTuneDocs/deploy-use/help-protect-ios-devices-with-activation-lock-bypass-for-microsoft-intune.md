@@ -21,7 +21,7 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

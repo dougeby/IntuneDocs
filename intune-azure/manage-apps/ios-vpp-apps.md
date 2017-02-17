@@ -22,7 +22,7 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: azure-portal
 ---
 
 # How to manage iOS apps you purchased through a volume-purchase program with Microsoft Intune

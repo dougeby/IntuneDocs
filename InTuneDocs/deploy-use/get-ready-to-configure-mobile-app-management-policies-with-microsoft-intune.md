@@ -22,7 +22,7 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

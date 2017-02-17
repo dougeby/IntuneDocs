@@ -22,7 +22,7 @@ ms.assetid: 122a12c2-ef30-43ac-a21c-af34a3ba64d9
 ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

@@ -22,7 +22,7 @@ ms.assetid: 7e5c79c5-2883-4841-9be6-74cba16ee447
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: azure-portal
 ---
 
 # Get an Apple DEP certificate

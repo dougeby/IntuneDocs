@@ -22,7 +22,7 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: oydang
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

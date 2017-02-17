@@ -21,7 +21,7 @@ ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

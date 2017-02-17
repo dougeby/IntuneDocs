@@ -21,7 +21,7 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

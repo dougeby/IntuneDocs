@@ -22,7 +22,7 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: azure-portal
 ---
 
 # How to manage apps you purchased from the Windows Store for Business with Microsoft Intune

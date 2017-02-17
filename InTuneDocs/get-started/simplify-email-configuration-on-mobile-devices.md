@@ -21,7 +21,7 @@ ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

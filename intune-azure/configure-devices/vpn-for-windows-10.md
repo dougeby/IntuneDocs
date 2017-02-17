@@ -22,7 +22,7 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: azure-portal
 
 ---
 

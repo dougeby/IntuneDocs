@@ -21,7 +21,7 @@ ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 #ms.reviewer: [ALIAS]
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

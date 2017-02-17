@@ -21,7 +21,7 @@ ms.assetid: e116b620-1e12-4b5c-9905-2f7acf2ae530
 ms.reviewer: lancecra
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

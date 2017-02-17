@@ -22,7 +22,7 @@ ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: azure-portal
 ---
 
 # Manage volume-purchased apps with Micrsoft Intune

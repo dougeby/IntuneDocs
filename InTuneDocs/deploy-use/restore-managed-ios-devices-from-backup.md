@@ -22,7 +22,7 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

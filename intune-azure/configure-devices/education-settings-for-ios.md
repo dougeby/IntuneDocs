@@ -22,7 +22,7 @@ ms.assetid: 44c427f8-0f22-43c2-8c29-e0f9fa533b1f
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: azure-portal
 
 ---
 

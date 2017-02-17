@@ -21,7 +21,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom: EXPIERIMENT
+ms.custom: classic-portal EXPIERIMENT
 
 ---
 # Choose how to enroll mobile devices

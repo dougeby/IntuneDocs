@@ -22,7 +22,7 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

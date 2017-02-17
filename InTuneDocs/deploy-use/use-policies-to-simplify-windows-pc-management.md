@@ -21,7 +21,7 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

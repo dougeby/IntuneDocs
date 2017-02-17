@@ -21,7 +21,7 @@ ROBOTS: noindex,nofollow
 #ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

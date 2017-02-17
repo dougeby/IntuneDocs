@@ -20,7 +20,7 @@ ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

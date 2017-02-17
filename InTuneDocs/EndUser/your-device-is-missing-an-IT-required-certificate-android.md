@@ -22,7 +22,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 ---
 
 # Your Android device is missing a certificate required by your IT admin

@@ -22,7 +22,7 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: classic-portal
 
 ---
 

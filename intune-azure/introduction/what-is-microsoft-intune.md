@@ -22,7 +22,7 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 #ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: azure-portal
 
 ---
 
