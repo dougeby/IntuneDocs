@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What is app management | Intune Azure preview | Microsoft Docs
+title: What is app managementtitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Use this topic to learn the basics about app management with Microsoft Intune"
 keywords:
 author: robstackmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll macOS devices in Intune | Intune Azure preview | Microsoft Docs
+title: Enroll macOS devices in IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to enroll macOS devices in Intune Azure preview."
 keywords:
 author: staciebarker

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to configure the Company Portal app | Intune Azure preview | Microsoft Docs
+title: How to configure the Company Portal apptitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how you can apply company specific branding to the Intune Company Portal app. "
 keywords:
 author: robstackmsft

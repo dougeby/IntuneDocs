@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll iOS devices with Apple Configurator and direct enrollment | Intune Azure preview | Microsoft Docs
+title: Enroll iOS devices with Apple Configurator and direct enrollmenttitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with direct enrollment."
 keywords:
 author: staciebarker

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Introduction to Intune in the Azure portal preview
+title: Introduction to Intune in the Azure portal previewtitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Get the basics about Intune in the Azure portal preview, and how it can help you manage your devices."
 keywords:
 author: robstackmsft

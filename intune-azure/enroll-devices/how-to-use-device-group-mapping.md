@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to use device categories in Intune | Intune Azure preview | Microsoft Docs
+title: How to use device categories in IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use device categories that users can choose when they enroll their devices in Intune."
 keywords:
 author: robstackmsft

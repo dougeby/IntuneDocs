@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get started with groups in the Intune Azure portal preview | Microsoft Docs
+title: Get started with groups in the Intune Azure portal previewtitleSuffix: "Intune Azure preview"
 description: Learn what's new with groups in the Intune Azure portal preview
 keywords:
 author: nathbarn
