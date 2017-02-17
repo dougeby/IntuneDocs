@@ -21,7 +21,7 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 # Configure certificate infrastructure for SCEP in Microsoft Intune
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

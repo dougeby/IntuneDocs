@@ -22,7 +22,7 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

@@ -21,7 +21,7 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 

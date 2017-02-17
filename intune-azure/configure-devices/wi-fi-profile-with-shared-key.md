@@ -22,7 +22,7 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 
 ---
