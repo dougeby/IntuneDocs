@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to monitor app protection policies | Intune Azure preview | Microsoft Docs
+title: How to monitor app protection policiestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: See how many users have the policy, and drill down to find more details."
 keywords:
 author: andredm7
@@ -22,7 +22,7 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

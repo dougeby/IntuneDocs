@@ -22,7 +22,7 @@ ms.assetid: d1646677-641b-4b4a-96d6-4529cdd64a27
 ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 

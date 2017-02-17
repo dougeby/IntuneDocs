@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to use Intune app configuration policies | Intune Azure preview | Microsoft Docs
+title: How to use Intune app configuration policiestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # How to use Microsoft Intune app configuration policies

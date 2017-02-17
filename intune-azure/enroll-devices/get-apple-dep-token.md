@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get an Apple DEP certificate for Intune | Intune Azure preview | Microsoft Docs
+title: Get an Apple DEP certificate for IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Instructions for configuring and uploading an MDM push certificate, a prerequisite for managing Apple devices in Intune. "
 keywords:
 author: staciebarker
@@ -22,7 +22,7 @@ ms.assetid: 7e5c79c5-2883-4841-9be6-74cba16ee447
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # Get an Apple DEP certificate

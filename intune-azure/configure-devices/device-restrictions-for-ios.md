@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune device restrictions settings for iOS | Intune Azure preview | Microsoft Docs
+title: Intune device restrictions settings for iOStitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on iOS devices."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

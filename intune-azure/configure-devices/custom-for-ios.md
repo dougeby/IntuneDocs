@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune custom settings for iOS devices
+title: Intune custom settings for iOS devicestitleSuffix: "Intune Azure preview"
 titleSuffix: Intune Azure preview
 description: "Intune Azure preview: Learn the settings you can use in an iOS custom profile."
 keywords:
@@ -23,7 +23,7 @@ ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to add Android line-of-business apps to Intune | Intune Azure preview | Microsoft Docs
+title: How to add Android line-of-business apps to IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about adding Android line-of-business apps to Intune."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # How to add Android line-of-business (LOB) apps to Microsoft Intune
