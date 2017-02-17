@@ -55,7 +55,7 @@ Intune currently integrates with the following telecom expense management provid
 
 ## Deploy the Intune and Datalert integrated solution
 
-Before you start, make sure that you already have an Intune and a Datalert telecom expensive management service subscription.
+Before you start, make sure that you already have an Intune and a Datalert telecom expense management service subscription.
 
 ### Step 1: Connect the Datalert service to Microsoft Intune
 
