@@ -47,7 +47,7 @@ To set up multi-factor authentication, you need:
 
 The servers have to meet the system requirements in [System Requirements and Installation Information for Windows Server 2012 R2](http://technet.microsoft.com/library/dn303418.aspx).
 
- 
+
 
 
 #### MFA with Intune
@@ -69,6 +69,6 @@ For information about how to enable MFA in ADFS, see [Manage Risk with Additiona
 >[!Important]  
 >Enable MFA in your Azure AD tenant or on-premises environment before you require MFA for Intune enrollment of Windows devices. If you do not, users who try to enroll their Windows devices or try to Azure AD join their devices will get an error message when automatic enrollment during Azure AD Join is set up.
 
-1.  In the Intune admin console, choose **Admin** &gt; **Mobile Device Management** &gt; **Multi-factor authentication**.
+1.  In the Intune admin console, choose **Admin** > **Mobile Device Management** > **Multi-factor authentication**.
 
 2.  Choose **Configure Multi-factor Authentication**, and then choose **Enable Multi-factor Authentication**.
