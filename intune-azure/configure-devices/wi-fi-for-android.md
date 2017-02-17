@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune Wi-Fi settings for Android devices | Intune Azure preview | Microsoft Docs
+title: Intune Wi-Fi settings for Android devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the Intune settings you can use to configure Wi-Fi connections on Android devices."
 keywords:
 author: robstackmsft

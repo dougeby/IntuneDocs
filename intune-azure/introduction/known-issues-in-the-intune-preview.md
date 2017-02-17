@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: "Known issues in the Microsoft Intune Preview | Intune Azure preview | Microsoft Docs"
+title: "Known issues in the Microsoft Intune Preview"titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Read about known issues in the preview"
 keywords:
 author: robstackmsft

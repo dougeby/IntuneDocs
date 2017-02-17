@@ -1,5 +1,5 @@
 ---
-title: Configure Intune certificate infrastructure for PKCS | Intune Azure preview | Microsoft Docs
+title: Configure Intune certificate infrastructure for PKCStitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to configure your infrastructure to use PKCS certificates with Intune."
 keywords:
 author: robstackmsft

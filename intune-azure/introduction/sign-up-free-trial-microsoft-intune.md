@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sign up for a 30-day free trial | Intune Azure preview | Microsoft Docs
+title: Sign up for a 30-day free trialtitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: How to sign up for Intune on Azure."
 keywords:
 author: lindavr

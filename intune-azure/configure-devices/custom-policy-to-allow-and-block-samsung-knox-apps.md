@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune policy allow/block apps for Samsung KNOX | Intune Azure preview | Microsoft Docs
+title: Intune policy allow/block apps for Samsung KNOXtitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Create a custom profile to allow and block apps for Samsung KNOX Standard devices."
 keywords:
 author: robstackmsftms.author: robstack

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage apps from Windows Store for Business | Intune Azure preview | Microsoft Docs
+title: Manage apps from Windows Store for BusinesstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how you can sync apps into Intune from the Windows Store for Business and then assign and track them."
 keywords:
 author: robstackmsft

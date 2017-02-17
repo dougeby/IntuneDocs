@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create and deploy app protection policies | Intune Azure preview | Microsoft Docs
+title: Create and deploy app protection policiestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview:  Learn how Intune app protection policies can help protect company data used by apps you manage."
 keywords:
 author: NathBarn

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune custom settings for macOS devices | Intune Azure preview | Microsoft Docs
+title: Intune custom settings for macOS devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the settings you can use in a macOS custom profile."
 keywords:
 author: robstackmsft
