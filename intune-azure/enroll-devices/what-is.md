@@ -19,7 +19,7 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer:
+#ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -31,7 +31,7 @@ ms.suite: ems
 
 This topic describes enrollment and lists the different ways to enroll mobile devices in Intune management.
 
-You enroll devices, including Windows PCs, in Intune so that you can manage those devices. We refer to this capability in the Intune documentation as mobile device management (MDM). When devices are enrolled as mobile devices (not as PCs), they are issued an MDM certificate, which the devices then use to communicate with the Intune service. 
+You enroll devices, including Windows PCs, in Intune so that you can manage those devices. We refer to this capability in the Intune documentation as mobile device management (MDM). When devices are enrolled as mobile devices (not as PCs), they are issued an MDM certificate, which the devices then use to communicate with the Intune service.
 
 The way you enroll your devices depends on the device type, ownership, and the level of management you needed. "Bring your own device" (BYOD) enrollment lets users enroll their personal phones, tablets, or PCs. Corporate-owned device (COD) enrollment enables management scenarios like automatic enrollment, shared devices, or pre-authorized enrollment requirements.
 
@@ -81,7 +81,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 Corporate-owned devices (COD) can be managed by using the Azure portal. iOS devices can be enrolled directly through the tools that are provided by Apple. All device types can be enrolled by an admin or manager using the device enrollment manager. Devices with an IMEI number can also be identified and tagged as company-owned to enable COD scenarios.
 
 ### DEM
-Device enrollment manager is a special user account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](enroll-devices-using-device-enrollment-manager.md). ([Go back to the table](#overview-of-device-enrollment-methods))
+Device enrollment manager (DEM) is a special user account that's used to enroll and manage multiple corporate-owned devices. Managers can install the Company Portal and enroll many user-less devices. Learn more about [DEM](enroll-devices-using-device-enrollment-manager.md). ([Go back to the table](#overview-of-device-enrollment-methods))
 
 ### DEP
 Apple Device Enrollment Program (DEP) management lets you create and deploy policy “over the air” to iOS devices that are purchased and managed with DEP. The device is enrolled when users turn on the device for the first time and run iOS Setup Assistant. This method supports **iOS Supervised** mode, which in turn enables:
@@ -92,7 +92,7 @@ Apple Device Enrollment Program (DEP) management lets you create and deploy poli
 To learn more about iOS enrollment, see:
 
 - [Choose how to enroll iOS devices](choose-ios-enrollment-method.md)
-- [Enroll iOS devices using Device Enrollment Program](enroll-ios-devices-using-device-enrollment-program.md). 
+- [Enroll iOS devices using Device Enrollment Program](enroll-ios-devices-using-device-enrollment-program.md)
 - [Go back to the table above](#overview-of-device-enrollment-methods)
 
 ### USB-SA
@@ -103,10 +103,10 @@ IT admins use Apple Configurator, via USB, to prepare each corporate-owned devic
 To learn more about iOS enrollment, see:
 
 - [Decide how to enroll iOS devices](choose-ios-enrollment-method.md)
-- [Enroll iOS devices with Configurator and Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). 
+- [Enroll iOS devices with Configurator and Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
 
 ### USB-Direct
-For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a factory reset. Devices are managed as user-less devices. They are not locked or supervised and cannot support conditional access, jailbreak detection, or mobile application management. 
+For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a factory reset. Devices are managed as user-less devices. They are not locked or supervised and cannot support conditional access, jailbreak detection, or mobile application management.
 
 To learn more about iOS enrollment, see:
 
