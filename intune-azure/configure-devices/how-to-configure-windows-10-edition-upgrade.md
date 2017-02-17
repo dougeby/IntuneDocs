@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Windows 10 edition upgrades with Intune | Intune Azure preview | Microsoft Docs
+title: Configure Windows 10 edition upgrades with IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use Intune to upgrade Windows 10 devices you manage."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

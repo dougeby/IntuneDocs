@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Full or selective wipe on devices using Intune | Intune Azure preview | Microsoft Docs
+title: Full or selective wipe on devices using IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to do a selective wipe of company data on a device or to do a full wipe to factory reset the device."
 keywords:
 author: staciebarker
@@ -22,7 +22,7 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 #ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

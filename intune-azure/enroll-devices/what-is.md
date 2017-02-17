@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What is Microsoft Intune device enrollment | Intune Azure preview | Microsoft Docs
+title: What is Microsoft Intune device enrollmenttitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about enrollment for iOS, Android, and Windows devices."
 keywords:
 author: staciebarker
@@ -22,7 +22,7 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 #ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

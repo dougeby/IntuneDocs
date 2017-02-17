@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create Intune device configuration profiles| Intune Azure preview | Microsoft Docs
+title: Create Intune device configuration profiles| Intune Azure previewtitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to create Intune device configuration profiles."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

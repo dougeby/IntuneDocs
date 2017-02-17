@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to add Android store apps to Intune | Intune Azure preview | Microsoft Docs
+title: How to add Android store apps to IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about adding Android store apps to Intune."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # How to add Android store apps to Microsoft Intune

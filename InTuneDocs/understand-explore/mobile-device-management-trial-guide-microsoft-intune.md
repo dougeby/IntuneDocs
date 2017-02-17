@@ -22,7 +22,7 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 #ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 

@@ -22,7 +22,7 @@ ROBOTS: noindex,nofollow
 #ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 # What's new archive

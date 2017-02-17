@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to add Windows store apps to Intune | Intune Azure preview | Microsoft Docs
+title: How to add Windows store apps to IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about adding Windows store apps to Intune."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # How to add Windows store apps to Microsoft Intune

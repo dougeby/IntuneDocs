@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get an Apple MDM Push certificate | Intune Azure preview | Microsoft Docs
+title: Get an Apple MDM Push certificatetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the steps for getting an Apple MDM Push certificate to manage iOS devices with Intune."
 keywords:
 author: staciebarker
@@ -22,7 +22,7 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
