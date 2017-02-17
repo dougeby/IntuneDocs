@@ -3,7 +3,7 @@
 
 title: Frequently asked questions about MAM and app protection
 description: This article provides answers to some frequently asked questions on Intune mobile application management (MAM) and Intune app protection.
-keywords: 
+keywords:
 author: oydang
 ms.author: oydang
 manager: mtillman
@@ -22,7 +22,7 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: oydang
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -35,7 +35,7 @@ This article provides answers to some frequently asked questions on Intune mobil
 ## MAM Basics
 
 
-**What is MAM?** [Intune mobile application management](overview-of-app-lifecycle-in-microsoft-intune.md) refers to the suite of Intune management features that lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
+**What is MAM?** [Intune mobile application management](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md) refers to the suite of Intune management features that lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
 
 **What are the benefits of MAM app protection?** MAM protects an organization's data within an application. With MAM-WE, a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in bring-your-own-device (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, are able to be managed by Intune MAM. See the official list of [Intune-enlightened apps](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) available for public use.
 
@@ -49,11 +49,11 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 **What are app protection policies**? App protection policies are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app.
 
-**What are examples of app protection policies?** See the [Android app protection policy settings](android-mam-policy-settings.md) and [iOS app protection policy settings](ios-mam-policy-settings.md) for detailed information on each app protection policy setting.
+**What are examples of app protection policies?** See the [Android app protection policy settings](../deploy-use/android-mam-policy-settings.md) and [iOS app protection policy settings](../deploy-use/ios-mam-policy-settings.md) for detailed information on each app protection policy setting.
 
 ## Apps you can manage with app protection policies
 
-**Which apps can be managed by app protection policies?** Any app that has been enlightened by the [Intune App SDK](../develop/intune-app-sdk.md) or wrapped by the [Intune App Wrapping Tool](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) can be managed using Intune app protection policies. See the official list of [Intune-enlightened apps](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) available for public use.
+**Which apps can be managed by app protection policies?** Any app that has been enlightened by the [Intune App SDK](../develop/intune-app-sdk.md) or wrapped by the [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) can be managed using Intune app protection policies. See the official list of [Intune-enlightened apps](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) available for public use.
 
 **What are the baseline requirements to use app protection policies on an Intune-enlightened app?**
   1. The end-user must have an Azure Active Directory (AAD) account. See [Add users and give administrative permission to Intune](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md) to learn how to create Intune users in Azure Active Directory.
@@ -110,25 +110,25 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 **What about encryption?** IT administrators can deploy an app protection policy that requires app data to be encrypted. As part of the policy, the IT administrator can also specify when the content is encrypted.
 
-  1. **How does Intune encrypt data?** See the [Android app protection policy settings](android-mam-policy-settings.md) and [iOS app protection policy settings](ios-mam-policy-settings.md) for detailed information on the encryption app protection policy setting.
+  1. **How does Intune encrypt data?** See the [Android app protection policy settings](../deploy-use/android-mam-policy-settings.md) and [iOS app protection policy settings](../deploy-use/ios-mam-policy-settings.md) for detailed information on the encryption app protection policy setting.
 
   2. **What gets encrypted?** Only data marked as "corporate" is encrypted according to the IT administrator's app protection policy. Data is considered "corporate" when it originates from a business location. For the Office apps, Intune considers the following as business locations: email (Exchange) or cloud storage (OneDrive app with a OneDrive for Business account). For line-of-business apps enlightened by the Intune App Wrapping Tool, all app data is considered "corporate."
 
-**How does Intune remotely wipe data?** Intune can wipe app data in three different ways: full device wipe, selective wipe for MDM, and MAM selective wipe. For more information about remote wipe for MDM, see [Help protect your data with full or selective wipe using Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). For more information about selective wipe using MAM, see [Wipe managed company app data with Microsoft Intune](wipe-managed-company-app-data-with-microsoft-intune.md)
+**How does Intune remotely wipe data?** Intune can wipe app data in three different ways: full device wipe, selective wipe for MDM, and MAM selective wipe. For more information about remote wipe for MDM, see [Help protect your data with full or selective wipe using Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). For more information about selective wipe using MAM, see [Wipe managed company app data with Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  1. **What is full wipe?** [Full wipe](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
+  1. **What is full wipe?** [Full wipe](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
   >[!NOTE]
   > Full wipe can only be achieved on devices enrolled with Intune mobile device management (MDM).
 
-  2. **What is selective wipe for MDM?** See [Help protect your data with full or selective wipe using Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) to read about selective wipe.
+  2. **What is selective wipe for MDM?** See [Help protect your data with full or selective wipe using Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) to read about selective wipe.
 
-  3. **What is selective wipe for MAM?** Selective wipe for MAM simply removes company app data from an app. The request is initiated using the Intune Azure portal. To learn how to initiate a wipe request, see [Wipe managed company app data with Microsoft Intune](wipe-managed-company-app-data-with-microsoft-intune.md)
+  3. **What is selective wipe for MAM?** Selective wipe for MAM simply removes company app data from an app. The request is initiated using the Intune Azure portal. To learn how to initiate a wipe request, see [Wipe managed company app data with Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
   4. **How quickly does selective wipe for MAM happen?** If the user is using the app when selective wipe is initiated, the Intune App SDK checks every 30 minutes for a selective wipe request from the Intune MAM service. It also checks for selective wipe when the user launches the app for the first time and signs in with their work or school account.
 
 **Why don't On-Premises (on-prem) services work with Intune protected apps?** Intune app protection depends on the identity of the user to be consistent between the application and the Intune App SDK. The only way to guarantee that is through modern authentication. There are scenarios in which apps may work with an on-prem configuration, but they are neither consistent nor guaranteed.
 
-**Is there a secure way to open web links from managed apps?** Yes! The IT administrator can deploy and set app protection policy for the [Intune Managed Browser app](manage-internet-access-using-managed-browser-policies.md), a web browser developed by Microsoft Intune that can be managed easily with Intune. The IT administrator can require all web links in Intune-enlightened apps to be opened using the Managed Browser app.
+**Is there a secure way to open web links from managed apps?** Yes! The IT administrator can deploy and set app protection policy for the [Intune Managed Browser app](../deploy-use/manage-internet-access-using-managed-browser-policies.md), a web browser developed by Microsoft Intune that can be managed easily with Intune. The IT administrator can require all web links in Intune-enlightened apps to be opened using the Managed Browser app.
 
 
 ## App experience on Android
@@ -140,8 +140,8 @@ This article provides answers to some frequently asked questions on Intune mobil
 **I am able to use the iOS share extension to open work or school data in unmanaged apps, even with the data transfer policy set to "managed apps only" or "no apps." Doesn't this leak data?** Intune app protection policy cannot control the iOS share extension without managing the device. Therefore, Intune _**encrypts "corporate" data before it is shared outside the app**_. You can validate this by attempting to open the "corporate" file outside of the managed app. The file should be encrypted and unable to be opened outside the managed app.
 
 ### See also
-- [Android app protection policy settings in Microsoft Intune](android-mam-policy-settings.md)
-- [iOS app protection polic settings](ios-mam-policy-settings.md)
-- [Validating your mobile application management setup](validate-mobile-application-management.md)
-- [Get ready to configure app protection policies with Microsoft Intune](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+- [Android mobile app management policy settings in Microsoft Intune](../deploy-use/android-mam-policy-settings.md)
+- [iOS mobile app management policy settings](../deploy-use/ios-mam-policy-settings.md)
+- [Validating your mobile application management setup](../deploy-use/validate-mobile-application-management.md)
+- [Get ready to configure mobile app management policies with Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [How to get support for Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md)

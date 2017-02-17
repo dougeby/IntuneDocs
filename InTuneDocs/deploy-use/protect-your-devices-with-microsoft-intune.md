@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Protect devices | Microsoft Docs
+title: Protect devices with Microsoft Intune | Microsoft Docs
 description: Learn about some of the ways that Intune can help you protect your devices against unauthorized access and other threats.
 keywords:
 author: Robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -52,8 +52,8 @@ Intune gives you a range of features to help you protect apps and their data. Fo
 
 ## Further capabilities for Windows devices
 
-### Add an additional layer of protection to Windows devices
-[Multi-factor authentication (MFA)](protect-windows-devices-with-multi-factor-authentication.md) is a more secure way of authenticating the users of Windows and Windows Phone devices on the network.  With MFA, users need to confirm their identity beyond user name and password, through a phone call, or text message.
+### Add an additional layer of protection to devices
+[Multi-factor authentication (MFA)](multi-factor-authentication-azure-active-directory.md) is a more secure way of authenticating the users of devices on the network.  With MFA, users need to confirm their identity beyond user name and password, through a phone call, or text message.
 
 ### Control Windows Hello for Business settings on Windows devices
 Intune lets you integrate with [Windows Hello for Business](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (formerly Microsoft Passport) which is an alternative sign-in method for Windows 10 and later that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.

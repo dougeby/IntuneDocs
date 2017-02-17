@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add IMEI identifiers to Intune | Intune Azure preview | Microsoft Docs
+title: Add IMEI identifiers to IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to add corporate identifiers (IMEI numbers) to Microsoft Intune. "
 keywords:
 author: staciebarker
@@ -22,7 +22,7 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # Add corporate identifiers

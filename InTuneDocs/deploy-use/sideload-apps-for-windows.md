@@ -21,7 +21,7 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 #ms.reviewer: 
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 # Sign line-of-business apps so they can be deployed to Windows devices with Intune

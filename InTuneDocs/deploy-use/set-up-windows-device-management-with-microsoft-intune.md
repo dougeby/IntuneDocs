@@ -6,7 +6,7 @@ description: Enable mobile device management (MDM) for Windows devices with Micr
 keywords:
 author: staciebarker
 manager: stabar
-ms.date: 02/13/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -31,13 +31,13 @@ ms.suite: ems
 
 Use one of the following methods to set up enrollment for Windows devices:
 
-- **Windows 10 and Windows 10 Mobile automatic enrollment with Azure Active Directory Premium** 
+- [**Windows 10 and Windows 10 Mobile automatic enrollment with Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium) 
  -  This method is applicable only for Windows 10 and Windows 10 Mobile devices.
  -  You must have Azure Active Directory Premium to use this method. Otherwise, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
  -  If you choose not to enable automatic enrollment, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
 
 
-- **Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME** 
+- [**Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname) 
  - You must use this method to enroll Windows 8.1 and Windows Phone 8.1 devices.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]

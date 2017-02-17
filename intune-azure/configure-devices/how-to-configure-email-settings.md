@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to configure Intune email settings | Intune Azure preview | Microsoft Docs
+title: How to configure Intune email settingstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to configure Intune to create connections to corporate email on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# How to configure email settings 
+# How to configure email settings in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

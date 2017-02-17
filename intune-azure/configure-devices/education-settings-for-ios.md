@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Intune education settings for iOS | Intune Azure preview | Microsoft Docs
+title: Configure Intune education settings for iOStitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about the settings you can use to control education settings on iOS devices."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 44c427f8-0f22-43c2-8c29-e0f9fa533b1f
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
