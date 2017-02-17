@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage iOS volume-purchased apps | Intune Azure preview | Microsoft Docs
+title: Manage iOS volume-purchased appstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about how you can sync apps you purchased in volume from the iOS store into Intune and then manage and track their usage."
 keywords:
 author: robstackmsft

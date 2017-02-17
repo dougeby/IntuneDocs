@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Exchange on-premises conditional access policy | Intune Azure preview | Microsoft Docs
+title: Exchange on-premises conditional access policytitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: How you can configure Exchange on-premises conditional access and legacy Exchange Online Dedicated in Intune"
 keywords:
 author: andredm7

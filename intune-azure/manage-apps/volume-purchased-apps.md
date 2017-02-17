@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage volume-purchased apps with Intune | Intune Azure preview | Microsoft Docs
+title: Manage volume-purchased apps with IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview:  Learn about how you can use Intune to manage and monitor your use of volume-purchased apps from stores."
 keywords:
 author: robstackmsft

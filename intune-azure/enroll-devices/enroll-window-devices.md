@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll Windows devices | Intune Azure preview | Microsoft Docs
+title: Enroll Windows devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Enable Intune mobile device management (MDM) for Windows devices."
 keywords:
 author: staciebarker

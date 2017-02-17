@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a Wi-Fi profile with a pre-shared key | Intune Azure preview | Microsoft Docs
+title: Create a Wi-Fi profile with a pre-shared keytitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Use an Intune custom profile to create a Wi-Fi profile with a pre-shared key."
 keywords:
 author: robstackmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll Android devices in Intune | Intune Azure preview | Microsoft Docs
+title: Enroll Android devices in IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to enroll Android devices in Intune Azure preview."
 keywords:
 author: staciebarker

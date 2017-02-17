@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune custom settings for iOS devices
+title: Intune custom settings for iOS devicestitleSuffix: "Intune Azure preview"
 titleSuffix: Intune Azure preview
 description: "Intune Azure preview: Learn the settings you can use in an iOS custom profile."
 keywords:
