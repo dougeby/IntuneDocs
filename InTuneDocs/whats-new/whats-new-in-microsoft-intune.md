@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new | Microsoft Docs
-description: Find out what’s new in this month’s, and past releases of Microsoft Intune
+description: Find out what’s new in this month’s and past releases of Microsoft Intune
 keywords:
 author: barlanmsft
 ms.author: barlan
