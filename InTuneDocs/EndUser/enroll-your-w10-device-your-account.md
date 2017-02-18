@@ -36,15 +36,15 @@ ms.custom: intune-enduser
 
     ![Go to Settings and Accounts](./media/W10-enroll-1-settings-accounts.png)
 
-2. Select **Your account**.
+3. Select **Your account**.
 
     ![Select your account](./media/W10-enroll-2-accounts-your-account.png)
 
-3. Select **Add a work or school account**.
+4. Select **Add a work or school account**.
 
 	![Select add a work or school account](./media/w10-enroll-3-add-work-school-acct.png)
 
-4. Sign in with your work or school credentials.
+5. Sign in with your work or school credentials.
 
 	![Sign in](./media/W10-enroll-4-sign-in.png)
 
