@@ -6,7 +6,7 @@ description: List of links to tasks that users can do on their Windows device wh
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -15,7 +15,7 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715asearchScope: - Company Portal
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW 
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: priyar
@@ -27,22 +27,15 @@ ms.custom: intune-enduser
 
 # Using your Windows device with Intune
 
-This article includes links to all of the tasks that users can do on their Intune-managed devices. IT administrators can refer to this information to see the steps that users must follow to do a variety of tasks, which are grouped into categories as follows:
-- Company Portal app installation and Intune enrollment
-- Post-enrollment management tasks
-- Compliance issues
+There are a number of things you can do with Intune to make your work life easier. Here's a list of the most common things you might be asked to do by your company.
 
-## Company Portal app installation and Intune enrollment
-
-The information in this section helps users with Intune Company Portal installation and device enrollment for Windows devices.
+## Enrolling into Intune and installing the Company Portal
 
 - [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [What can your IT admin see when you enroll your device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+- [What info can your company see when you enroll your device in Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## Things users can do when their device is enrolled in Intune
-
-The information in this section helps users with actions that they can take after their Windows device is enrolled in Intune.
+## Things you can do when your device is enrolled in Intune
 
 - [Encrypt your device](encrypt-your-device-windows.md)
 - [Set or change your password](set-or-change-your-password-windows.md)
@@ -52,14 +45,3 @@ The information in this section helps users with actions that they can take afte
 - [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 - [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)
 - [Sync your device manually](sync-your-device-manually-windows.md)
-
-## Steps to fix device and compliance issues
-
-The information in this section helps users fix issues that they might encounter when their Windows device is enrolled in Intune.
-
-- [Device doesn't have the required minimum operating system version](you-need-to-update-your-windows-device.md)
-- [Device doesn't comply with the maximum operating system version](your-windows-version-isnt-yet-supported.md)
-- [Device doesn't have BitLocker enabled](you-need-to-enable-windows-encryption.md)
-- [Device doesn't have antimalware software enabled](your-device-needs-antimalware-software.md)
-- [Device doesn't have Secure Boot enabled](you-need-to-enable-secure-boot-windows.md)
-- [Device doesn't have Code Integrity enabled](you-need-to-enable-code-integrity.md)

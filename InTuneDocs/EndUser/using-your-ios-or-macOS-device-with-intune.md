@@ -36,9 +36,7 @@ There are a number of things you can do with Intune to make your work life easie
 - [Enroll your macOS device in Intune](enroll-your-device-in-intune-macos.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
-## Things users can do when their device is enrolled in Intune
-
-The information in this section helps users with actions that they can take after their iOS device is enrolled in Intune.
+## Things you can do when your device is enrolled in Intune
 
 - [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 - [Set or change your passcode](set-or-change-your-passcode-ios.md)
@@ -47,4 +45,4 @@ The information in this section helps users with actions that they can take afte
 - [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md)
 - [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 - [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
-- [Sync your device manually](sync-your-device-manually-ios.md)
+- [Manually sync your device](sync-your-device-manually-ios.md)
