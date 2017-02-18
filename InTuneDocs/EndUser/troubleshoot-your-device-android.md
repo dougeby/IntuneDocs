@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
-ms.reviewer: esmich
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 
 # Fix common issues with your Android device
 
-Sometimes issues can occur with your iOS device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your IT admin through their contact information on the [Company Portal website](http://portal.manage.microsoft.com).
+Sometimes issues can occur with your Android device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your IT admin through their contact information on the [Company Portal website](http://portal.manage.microsoft.com).
 
 - [How to reconnect a compromised iOS device](how-to-reconnect-a-compromised-ios-device.md)
 - [Send errors to your IT admin](send-errors-to-your-it-admin-ios.md)
