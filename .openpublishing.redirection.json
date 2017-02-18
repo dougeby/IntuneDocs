@@ -68,11 +68,6 @@
         "redirect_document_id": true
     },
     {
-        "source_path": "InTuneDocs/EndUser/company-portal-frequently-asked-questions.md",
-        "redirect_url": "https://docs.microsoft.com/intune/enduser/use-managed-devices-to-get-work-done",
-        "redirect_document_id": true
-    },
-    {
         "source_path": "InTuneDocs/EndUser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md",
         "redirect_url": "https://docs.microsoft.com/intune/enduser/send-logs-to-your-it-admin-using-cable-android",
         "redirect_document_id": true
