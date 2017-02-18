@@ -28,23 +28,15 @@ ms.custom: intune-enduser
 
 # Using your Android device with Intune
 
-This article includes links to all of the tasks that end users can do on their Intune-managed devices. IT admins can refer to this information to see the steps that users must take to do a variety of tasks, which are grouped into the following categories:
+There are a number of things you can do with Intune to make your work life easier. Here's a list of the most common things you might be asked to do by your company.
 
-- Company Portal app installation and Intune enrollment
-- Post-enrollment management tasks
-- Compliance issues
-
-## Company Portal app installation and Intune enrollment
-
-The information in this section helps users with Intune Company Portal installation and device enrollment for Android devices.
+## Enrolling into Intune and installing the Company Portal
 
 - [Enroll your device in Intune](enroll-your-device-in-Intune-android.md)
 - [Create a work profile and enroll your device in Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## Things users can do when their device is enrolled in Intune
-
-The information in this section helps users with actions they can take after their Android device is enrolled in Intune.
+## Things you can do when your device is enrolled in Intune
 
 - [Use managed apps on your device](use-managed-apps-on-your-device-android.md)
 - [Encrypt your device](encrypt-your-device-android.md)

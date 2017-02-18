@@ -36,7 +36,7 @@ Sometimes issues can occur with your Android device that may be able to be fixed
 - [Send logs to your IT admin using email](send-logs-to-your-it-admin-by-email-android.md)
 - [Send logs to your IT admin using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
 - [Send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-admin-android.md)
-- [Device doesn't have the required minimum operating system version](you-need-to-update-your-android-device.md)
+- [You need to update your Android device](you-need-to-update-your-android-device.md)
 - [Device doesn't comply with the maximum operating system version](your-android-version-isnt-yet-supported.md)
 - [Your device is rooted and you can't connect](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Your device is missing a required certificate](your-device-is-missing-a-required-certificate-landing-android.md)
