@@ -43,6 +43,6 @@ Sometimes issues can occur with your Android device that may be able to be fixed
 - [You need to turn off unknown sources](you-need-to-turn-off-unknown-sources-android.md)
 - [You need to turn off USB debugging](you-need-to-turn-off-usb-debugging-android.md)
 - [You need to turn on scanning for security threats](you-need-to-turn-on-scanning-for-security-threats-android.md)
-- [Your device does not meet the minimum security patch](your-device-does-not-meet-the-minimum-security-patch-android.md)
+- [Your device does not meet the minimum security patch](you-need-to-update-your-device-OS-security-patch-android.md)
 - [You are prompted to install Lookout for Work on your Android device](you-are-prompted-to-install-lookout-for-work-android.md)
 - [You need to resolve a threat that Lookout for Work found on your Android device](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
