@@ -33,7 +33,7 @@ There are a number of things you can do with Intune to make your work life easie
 
 - [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [What info can your company see when you enroll your device in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+- [What info can your company see when you enroll your device in Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 ## Things you can do when your device is enrolled in Intune
 
