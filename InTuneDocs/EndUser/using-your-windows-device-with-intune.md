@@ -15,7 +15,7 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715asearchScope: - Company Portal
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW 
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: priyar
@@ -52,14 +52,3 @@ The information in this section helps users with actions that they can take afte
 - [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 - [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)
 - [Sync your device manually](sync-your-device-manually-windows.md)
-
-## Steps to fix device and compliance issues
-
-The information in this section helps users fix issues that they might encounter when their Windows device is enrolled in Intune.
-
-- [Device doesn't have the required minimum operating system version](you-need-to-update-your-windows-device.md)
-- [Device doesn't comply with the maximum operating system version](your-windows-version-isnt-yet-supported.md)
-- [Device doesn't have BitLocker enabled](you-need-to-enable-windows-encryption.md)
-- [Device doesn't have antimalware software enabled](your-device-needs-antimalware-software.md)
-- [Device doesn't have Secure Boot enabled](you-need-to-enable-secure-boot-windows.md)
-- [Device doesn't have Code Integrity enabled](you-need-to-enable-code-integrity.md)
