@@ -2,97 +2,97 @@
   "redirections": [
     {
         "source_path": "InTuneDocs/EndUser/company-portal-frequently-asked-questions.md",
-        "redirect_url": "/intune/enduser/use-managed-devices-to-get-work-done",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/use-managed-devices-to-get-work-done",
         "redirect_document_id": true
     },
     {
         "source_path": "intunedocs/enduser/device-doesnt-comply-with-maximum-operating-system-android.md",
-        "redirect_url": "/intune/enduser/your-android-version-isnt-yet-supported",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/your-android-version-isnt-yet-supported",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/device-doesnt-comply-with-maximum-operating-system-version-ios.md",
-        "redirect_url": "/intune/enduser/your-ios-version-isnt-yet-supported",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/your-ios-version-isnt-yet-supported",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/device-doesnt-comply-with-maximum-operating-system-version-windows.md",
-        "redirect_url": "/intune/enduser/your-windows-version-isnt-yet-supported",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/your-windows-version-isnt-yet-supported",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/device-doesnt-have-bitlocker-enabled-windows.md",
-        "redirect_url": "/intune/enduser/you-need-to-enable-windows-encryption",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-enable-windows-encryption",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/device-doesnt-have-secure-boot-enabled-windows.md",
-        "redirect_url": "/intune/enduser/you-need-to-enable-secure-boot-windows",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-enable-secure-boot-windows",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/device-doesnt-have-the-required-minimum-operating-system-android.md",
-        "redirect_url": "/intune/enduser/you-need-to-update-your-android-device",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-update-your-android-device",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/device-doesnt-have-the-required-minimum-operating-system-windows.md",
-        "redirect_url": "/intune/enduser/you-need-to-update-your-windows-device",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-update-your-windows-device",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/device-doesnt-have-the-required-minimum-operating-system-ios.md",
-        "redirect_url": "/intune/enduser/you-need-to-update-your-ios-device",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-update-your-ios-device",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/enroll-your-device-in-mac-os-x.md",
-        "redirect_url": "/intune/enduser/enroll-your-device-in-intune-macOS",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macOS",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/company-portal-frequently-asked-questions.md",
-        "redirect_url": "/intune/enduser/use-managed-devices-to-get-work-done",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/use-managed-devices-to-get-work-done",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md",
-        "redirect_url": "/intune/enduser/send-logs-to-your-it-admin-using-cable-android",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/send-logs-to-your-it-admin-using-cable-android",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/send-enrollment-errors-to-your-it-administrator-android.md",
-        "redirect_url": "/intune/enduser/send-enrollment-errors-to-your-it-admin-android",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/send-enrollment-errors-to-your-it-admin-android",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/you-are-asked-to-turn-off-unknown-sources.md",
-        "redirect_url": "/intune/enduser/you-need-to-turn-off-unknown-sources-android",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-turn-off-unknown-sources-android",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/using-your-ios-or-mac-os-x-device-with-intune.md",
-        "redirect_url": "/intune/enduser/using-your-ios-or-macos-device-with-intune",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/using-your-ios-or-macos-device-with-intune",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/you-are-asked-to-turn-off-usb-debugging-android.md",
-        "redirect_url": "/intune/enduser/you-need-to-turn-off-usb-debugging-android",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-turn-off-usb-debugging-android",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android.md",
-        "redirect_url": "/intune/enduser/you-need-to-turn-on-scanning-for-security-threats-android",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-turn-on-scanning-for-security-threats-android",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/your-device-does-not-meet-the-minimum-security-patch-android.md",
-        "redirect_url": "intune/enduser/you-need-to-update-your-device-os-security-patch-android",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-update-your-device-os-security-patch-android",
         "redirect_document_id": true
     },
     {
         "source_path": "InTuneDocs/EndUser/your-device-is-missing-a-required-certificate-android.md",
-        "redirect_url": "/intune/enduser/your-device-is-missing-a-required-certificate-landing-android",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/your-device-is-missing-a-required-certificate-landing-android",
         "redirect_document_id": true
     }
   ]
