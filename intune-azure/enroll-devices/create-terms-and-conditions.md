@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Set terms and conditions in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Set terms and conditions in Microsoft IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Set terms and conditions that users see in the Company Portal for Intune. "
 keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # Set terms and conditions 
@@ -35,7 +35,7 @@ You can create and deploy multiple policies containing different terms and condi
 
 **To create terms and conditions**:
 
-1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
 2. On the Intune blade, choose **Enroll devices**, and then choose **Terms and Conditions**.
 

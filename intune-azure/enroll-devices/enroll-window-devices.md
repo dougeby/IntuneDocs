@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Enroll Windows devices | Intune Azure preview | Microsoft Docs
+title: Enroll Windows devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Enable Intune mobile device management (MDM) for Windows devices."
 keywords:
 author: staciebarker
 manager: stabar
-ms.date: 02/09/17
+ms.date: 02/15/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
@@ -31,12 +31,12 @@ ms.suite: ems
 
 Use one of the following methods to set up enrollment for Windows devices:
 
-- **Windows 10 and Windows 10 Mobile automatic enrollment with Azure Active Directory Premium** 
+- [**Windows 10 and Windows 10 Mobile automatic enrollment with Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
  -  This method is applicable only for Windows 10 and Windows 10 Mobile devices.
  -  You must have Azure Active Directory Premium to use this method. Otherwise, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
  -  If you choose not to enable automatic enrollment, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
 
-- **Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME** 
+- [**Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname)
  - You must use this method to enroll Windows 8.1 and Windows Phone 8.1 devices.
 
 

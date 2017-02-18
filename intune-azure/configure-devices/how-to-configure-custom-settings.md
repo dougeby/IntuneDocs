@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to configure Intune custom device settings | Intune Azure preview | Microsoft Docs
+title: How to configure Intune custom device settingstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use Intune to configure custom settings on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/23/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# How to configure custom device settings
+# How to configure custom device settings in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

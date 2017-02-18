@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 1/30/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -162,7 +162,7 @@ Your corporate-owned devices can now be distributed to users. When an iOS device
 
 ## Changes to Intune group assignments
 
-Starting in December 2016, device group management is moving to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the **Corporate Enrollment Profile** options. Because this change will roll out over a series of months, you might not see the change right away. After moving to the new portal, dynamic device group assignments can be defined based on the Corporate Enrollment Profile names. This process ensures that devices that are assigned to a device group already will automatically enroll in the group with policy and apps deployed. [Learn more about Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+Starting in December 2016, device group management is moving to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the Corporate Enrollment Profile options. Because this change will roll out over a series of months, you might not see the change right away. After moving to the new portal, dynamic device group assignments can be defined based on the Corporate Enrollment Profile names. For every Intune device group pre-assigned by a Corporate Device Enrollment profile, a corresponding dynamic device group will be created in AAD based on the Corporate Device Enrollment profile’s name, during the migration to Azure Active Directory device groups. This process ensures that devices that are assigned to a device group already will automatically enroll in the group with policy and apps deployed. [Learn more about Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### See also
 [Prerequisites for enrolling devices](prerequisites-for-enrollment.md)

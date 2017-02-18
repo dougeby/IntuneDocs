@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get started on device compliance | Intune Azure preview | Microsoft Docs
+title: Get started on device compliancetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Use this topic to understand the prerequisites you need to create compliance policies in Microsoft Intune"
 keywords:
 author: NathBarnms.author: nathbarnmanager: angrobe
@@ -20,7 +20,7 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

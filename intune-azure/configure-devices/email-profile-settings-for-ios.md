@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune email settings for iOS devices | Intune Azure preview | Microsoft Docs
+title: Intune email settings for iOS devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about the Intune settings you can use to configure email connections on iOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# Email profile settings for iOS devices in Intune Azure preview
+# Email profile settings for iOS devices in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Enroll iOS devices- Apple Configurator-Setup Assistant | Intune Azure preview | Microsoft Docs
+title: Enroll iOS devices- Apple Configurator-Setup AssistanttitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant."
 keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
@@ -60,7 +60,7 @@ Complete the following prerequisites before setting up iOS device enrollment:
 
 A device enrollment profile defines the settings applied to a group of devices. The following steps show how to create a device enrollment profile for iOS devices enrolled by using Apple Configurator.
 
-1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
 2. On the Intune blade, choose **Enroll devices**, and then choose **Apple Enrollment**.
 
@@ -84,11 +84,13 @@ After you create Apple Configurator profiles, you can assign device serial numbe
 
 ### Assign serial numbers to Apple Configurator profiles
 
-1. From the **Apple Configurator Enrollment Profiles** blade, select the profile that you want to assign serial numbers to.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2. In the blade named for the profile, select **Serial Numbers** > **Assign**.
+2. From the **Apple Configurator Enrollment Profiles** blade, select the profile that you want to assign serial numbers to.
 
-3. Select the serial numbers that you want to assign to the profile, and then select the **Assign** button.
+3. In the blade named for the profile, select **Serial Numbers** > **Assign**.
+
+4. Select the serial numbers that you want to assign to the profile, and then select the **Assign** button.
 
 ## Export the profile to iOS devices
 
@@ -96,11 +98,13 @@ After you create the profile and assign serial numbers, you have to export the p
 
 ### Export a profile using Setup Assistant enrollment
 
-1. On the **Apple Configurator Enrollment Profiles** blade, choose the profile to export.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2. On the blade for the profile, select **Export Profile**.
+2. On the **Apple Configurator Enrollment Profiles** blade, choose the profile to export.
 
-3. Copy the profile URL into [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12), with the iOs device attached. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
+3. On the blade for the profile, select **Export Profile**.
+
+4. Copy the profile URL into [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12), with the iOs device attached. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
 
   To support Apple Configurator 2, the 2.0 Profile URL must be edited. To do so, replace this code:
     ```
@@ -114,7 +118,7 @@ After you create the profile and assign serial numbers, you have to export the p
 
    You will upload this profile URL to the Apple DEP service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
 
-4. Upload this profile URL to the Apple DEP service using Apple Configurator to define the Intune profile used by iOS devices.
+5. Upload this profile URL to the Apple DEP service using Apple Configurator to define the Intune profile used by iOS devices.
 
 
     1.  On a Mac computer, open **Apple Configurator 2**. In the menu bar, choose **Apple Configurator 2**, and then choose **Preferences**.
@@ -145,7 +149,7 @@ After you create the profile and assign serial numbers, you have to export the p
 
     10. When the iOS device finishes preparing, disconnect the USB cable.  
 
-8.  **Distribute devices**.
+6.  **Distribute devices**.
     The devices are now ready for corporate enrollment. Turn off the devices and distribute them to users. When users turn on their devices, Setup Assistant will start.
 
 ## How users install and use the Company Portal on their devices

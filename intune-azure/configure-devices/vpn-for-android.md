@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune VPN settings for Android devices | Intune Azure preview | Microsoft Docs
+title: Intune VPN settings for Android devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about the Intune settings you can use to configure VPN connections on Android devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# VPN settings for Android devices in Intune Azure preview
+# VPN settings for Android devices in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

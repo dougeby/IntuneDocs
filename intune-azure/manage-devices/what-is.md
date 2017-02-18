@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Manage devices with Intune | Intune Azure preview | Microsoft Docs
+title: Manage devices with IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to view the devices you manage with Intune, and perform various operations on them."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/06/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid:
 #ms.reviewer: ilwu
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# What is device management? 
+# What is Microsoft Intune device management? 
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Set enrollment restrictions in Intune | Intune Azure preview | Microsoft Docs
+title: Set enrollment restrictions in IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Restrict enrollment by platform and set a device enrollment limit in Intune. "
 keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,18 +22,22 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # Set enrollment restrictions 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-You can limit the types of devices that are allowed to enroll in Intune by specifying the allowable platforms. You can also set the maximum number of devices that a user is allowed to enroll.
+You can set the types and maximum number of devices that you will allow to enroll. On the Enrollment Restrictions blade, you can set:
+
+- The platforms that are allowed to enroll, and whether to block enrollment of personally owned devices for Android and iOS.
+
+- The maximum number of devices that a user is allowed to enroll.
 
 ## Set device type restrictions
 
-1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
 2. On the Intune blade, choose **Enroll devices**, and then choose **Enrollment Restrictions**.
 
@@ -41,19 +45,22 @@ You can limit the types of devices that are allowed to enroll in Intune by speci
 
 4. On the **All Users** blade, select **Platforms**.
 
-5. For platforms that are allowed to enroll in Intune, select **Allow**. For platforms that you want to block from enrolling, select **Block**.
+5. For platforms that are allowed to enroll in Intune, select **Allow**. For platforms that you want to block from enrolling, select **Block**. Platforms are set to **Allow** by default. 
+
+    >[!NOTE]
+    >These settings do not apply to or block Windows enrollments that use the Intune software client. These settings affect only enrollment using mobile device management. 
 
 6. Select **Save**.
 
 7. Select **Platform Configurations**.
 
-8. Choose whether to Allow or Block personally owned iOS devices from enrolling.
+8. Choose whether to **Allow** or **Block** personally owned iOS and Android devices from enrolling.
 
 9. Select **Save**.
 
 ## Set device limit restrictions
 
-1. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
 2. On the Intune blade, choose **Enroll devices**, and then choose **Enrollment Restrictions**.
 

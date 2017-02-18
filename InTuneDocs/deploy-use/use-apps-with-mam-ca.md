@@ -21,7 +21,7 @@ ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 # What to expect when using an app with app-based CA

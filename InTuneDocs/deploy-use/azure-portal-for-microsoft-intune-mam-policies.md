@@ -20,7 +20,7 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -51,7 +51,7 @@ The Azure portal is used to create and manage app protection policies for:
 
     ![Screenshot of the Azure portal dashboard](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  Choose **More services** menu, type **Intune** in the text box filter.
+3.  Choose **More services** from left menu, then type **Intune** in the text box filter.
 
 	![Screenshot of the Browse menu with Intune highlighted](../media/AppManagement/MAM-Azure-Portal-1.png)
 

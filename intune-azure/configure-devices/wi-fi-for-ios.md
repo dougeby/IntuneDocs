@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune Wi-Fi settings for iOS devices | Intune Azure preview | Microsoft Docs
+title: Intune Wi-Fi settings for iOS devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the Intune settings you can use to configure Wi-Fi connections on iOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: 89229a5e-3421-4221-a62f-fa800620cc0d
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# Intune Wi-Fi settings for iOS devices in Intune Azure preview
+# Wi-Fi settings for iOS devices in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

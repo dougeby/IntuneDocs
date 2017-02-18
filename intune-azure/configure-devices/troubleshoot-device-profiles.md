@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Troubleshooting device profiles in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Troubleshooting device profiles in Microsoft IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: If you're stuck, use this topic to help you solve problems with Intune device profiles."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune custom settings for Windows 10 devices | Intune Azure preview | Microsoft Docs
+title: Intune custom settings for Windows 10 devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about the settings you can use in a Windows 10 custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# Custom device settings for Windows 10 devices in Intune Azure preview
+# Custom device settings for Windows 10 devices in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

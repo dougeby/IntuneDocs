@@ -22,7 +22,7 @@ ms.assetid: b9df1728-21fa-44c2-b62e-e8d087e95900
 ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 

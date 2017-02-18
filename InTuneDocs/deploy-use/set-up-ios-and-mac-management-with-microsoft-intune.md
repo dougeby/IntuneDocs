@@ -4,8 +4,7 @@
 title: Set up iOS and Mac management | Microsoft Docs
 description: Enable mobile device management (MDM) for iOS devices including iPads and iPhones as well as Mac OS X devices with Microsoft Intune.
 keywords:
-author: staciebarker
-ms.author: stabar
+author: staciebarkerms.author: stabar
 manager: angrobe
 ms.date: 11/17/2016
 ms.topic: article
@@ -22,7 +21,7 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -30,7 +29,7 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X devices and gives users access to company email and apps. An Apple Push Notification service (APNs) certificate is required for Intune to manage iOS and Mac devices. After the certificate is added to Intune, users can install the Company Portal app to enroll their devices, or the admin can set up [corporate-owned iOS device management](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
+Intune enables mobile device management (MDM) of iPads, iPhones, and macOS devices and gives users access to company email and apps. An Apple Push Notification service (APNs) certificate is required for Intune to manage iOS and Mac devices. After the certificate is added to Intune, users can install the Company Portal app to enroll their devices, or the admin can set up [corporate-owned iOS device management](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Set up Intune**<br>
     If you haven’t already, prepare for mobile device management by  [setting the mobile device management authority](prerequisites-for-enrollment.md#step-2-set-mdm-authority) as **Microsoft Intune** and setting up MDM.
@@ -53,7 +52,7 @@ Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X de
 
 5.  **Tell your users how to enroll their devices to get access to company resources.**
 
-    For end-user enrollment instructions, see [Enroll your iOS device in Intune](../enduser/enroll-your-device-in-intune-ios.md) and [Enroll your Mac OS X device in Intune](../enduser/enroll-your-device-in-intune-macos.md). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
+    For end-user enrollment instructions, see [Enroll your iOS device in Intune](../enduser/enroll-your-device-in-intune-ios.md) and [Enroll your macOS device in Intune](../enduser/enroll-your-device-in-intune-macos.md). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
 
 	For information about other end-user tasks, see these articles:
     - [Resources about the end-user experience with Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)

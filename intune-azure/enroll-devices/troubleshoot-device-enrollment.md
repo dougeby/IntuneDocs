@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshoot device enrollment | Intune Azure preview | Microsoft Docs
+title: Troubleshoot device enrollmenttitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to troubleshoot device enrollment."
 keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
@@ -52,7 +52,7 @@ These issues may occur on all device platforms.
 
 #### Check number of devices enrolled and allowed
 
-On the Intune blade of the Azure portal, go to **Enroll devices** > **Enrollment Restrictions** and validate that the user has no more than the allowable maximum of 15 devices assigned.
+In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade of the Azure portal, go to **Enroll devices** > **Enrollment Restrictions** and validate that the user has no more than the allowable maximum of 15 devices assigned.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 

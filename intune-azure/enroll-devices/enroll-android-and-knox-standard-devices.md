@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Enroll Android devices in Intune | Intune Azure preview | Microsoft Docs
+title: Enroll Android devices in IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to enroll Android devices in Intune Azure preview."
 keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/16/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
@@ -40,7 +40,7 @@ You must set the MDM authority to **Microsoft Intune** to prepare to manage mobi
 
 By default, Intune already allows enrollment of Android and Samsung Knox Standard devices. 
 
-To block Android devices from enrollment, see [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions). 
+To block Android devices, or to block only personally owned Android devices from enrollment, see [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions). 
 
 To set the maximum number of devices that a user can enroll, see [Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions).
 
