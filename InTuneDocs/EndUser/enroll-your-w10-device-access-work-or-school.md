@@ -12,7 +12,9 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 812e82df-76df-402b-bfe9-29302838f40esearchScope: - Company Portal
+ms.assetid: 812e82df-76df-402b-bfe9-29302838f40e
+searchScope:
+ - Company Portal
 
 # optional metadata
 
@@ -28,7 +30,7 @@ ms.custom: intune-enduser
 
 # Enroll your Windows 10 device in Intune
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment-with-AAD/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 1.  Open the Windows **Settings** app by going to the **Start menu** and selecting the **Settings** button. You can also search for "settings" in the search bar.
 

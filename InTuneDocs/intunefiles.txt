@@ -302,7 +302,7 @@
 03/07/2016  03:45 PM            11,318 start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md
  2,720 TOC.md
 03/07/2016  03:45 PM            37,917 what-s-new-in-microsoft-intune.md
-03/07/2016  03:45 PM            32,124 what-to-tell-your-end-users-about-using-microsoft-intune.md
+03/07/2016  03:45 PM            32,124 how-to-educate-your-end-users-about-microsoft-intune.md
  1,095 wipe-for-Exchange-managed-mobile-devices.md
               36 File(s)        345,839 bytes
 
