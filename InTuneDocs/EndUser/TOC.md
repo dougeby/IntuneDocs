@@ -5,7 +5,7 @@
 ### [What happens when you enroll an iOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Fixing common issues with iOS](troubleshoot-your-device-iOS.md)
 ## [Using your Android device with Intune](using-your-android-device-with-intune.md)
-### [What happens when you enroll an Android device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android)
+### [What happens when you enroll an Android device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Fixing common issues with Android](troubleshoot-your-device-android.md)
 ## [Using your Windows device with Intune](using-your-windows-device-with-intune.md)
 ### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
