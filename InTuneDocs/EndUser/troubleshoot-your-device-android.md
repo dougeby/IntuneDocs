@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fixing common issues with your Android device | Microsoft Docs
+title: Fix common issues with your Android device | Microsoft Docs
 description: Find out ways to solve common issues with your Android device.
 keywords:
 author: barlanmsft

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fixing common issues with your Windows device | Microsoft Docs
+title: Fix common issues with your Windows device | Microsoft Docs
 description: Find out ways to solve common issues with your Windows device.
 keywords:
 author: barlanmsft
