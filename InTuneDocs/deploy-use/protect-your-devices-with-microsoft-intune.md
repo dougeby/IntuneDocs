@@ -6,7 +6,7 @@ description: Learn about some of the ways that Intune can help you protect your 
 keywords:
 author: Robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,10 +50,10 @@ Intune features [device compliance policies](introduction-to-device-compliance-p
 ### Protect apps and the data they use
 Intune gives you a range of features to help you protect apps and their data. For example, mobile application management (MAM) policies can prevent data from being backed up from a protected app, restrict copy and paste to other apps, require a PIN to access an app, and more. For more details about protecting apps, see [Protect apps and data with Microsoft Intune](protect-apps-and-data-with-microsoft-intune.md)
 
-## Further capabilities for Windows devices
-
 ### Add an additional layer of protection to devices
 [Multi-factor authentication (MFA)](multi-factor-authentication-azure-active-directory.md) is a more secure way of authenticating the users of devices on the network.  With MFA, users need to confirm their identity beyond user name and password, through a phone call, or text message.
+
+## Further capabilities for Windows devices
 
 ### Control Windows Hello for Business settings on Windows devices
 Intune lets you integrate with [Windows Hello for Business](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (formerly Microsoft Passport) which is an alternative sign-in method for Windows 10 and later that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
