@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Choose how to enroll iOS devices in Intune | Intune Azure preview | Microsoft Docs
+title: Choose how to enroll iOS devices in IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to set up enrollment of iOS devices in Microsoft Intune."
 keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
@@ -38,7 +38,7 @@ Use the following information to decide which method to use for enrolling iOS de
 
 ## User-owned iOS devices (BYOD)
 
-If users want to enroll their personal, BYOD (bring your own device) devices, the only available enrollment method is for users to download the Company Portal app for iOS from the App Store, and follow the enrollment instructions in the app. Once enrolled, users can connect to the company network, join the domain or Azure Active Directory, and get access to corporate resources.
+If users want to enroll their personal, BYOD (bring your own device) devices, the only available enrollment method is for users to download the Company Portal app for iOS from the App Store, and follow the enrollment instructions in the app. Once enrolled, users can connect to the company network, join the domain or Azure Active Directory, and get access to corporate resources. You can block enrollment of personally owned iOS devices. See [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) for instructions.
 
 ## Apple Configurator
 

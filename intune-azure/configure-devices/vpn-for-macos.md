@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune VPN settings for macOS devices | Intune Azure preview | Microsoft Docs
+title: Intune VPN settings for macOS devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about the Intune settings you can use to configure VPN connections on macOS devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# VPN settings for macOS devices in Intune Azure preview
+# VPN settings for macOS devices in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

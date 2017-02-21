@@ -1,12 +1,12 @@
 ---
 # required metadata
-title: "What's new in the Microsoft Intune Preview | Intune Azure preview | Microsoft Docs"
-description: "Intune Azure preview: Find out what's new in the Intune Azure preview"
+title: What's new in the Microsoft Intune PreviewtitleSuffix: "Intune Azure preview"
+description: Find out what's new in the Intune Azure preview
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,26 +21,37 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
-
+ms.custom: intune-azure
 ---
 
 # What's new in the Microsoft Intune preview
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
-
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
 
-<!--## February 2017-->
+## February 2017
 
-<!--### Custom app categories <!--748805
+### Ability to restrict mobile device enrollment <!--747600, 795782-->
+Intune is adding new enrollment restrictions that control which mobile device platforms are allowed to enroll. Intune separates mobile device platforms as iOS, macOS, Android, Windows and Windows Mobile.
+
+* Restricting mobile device enrollment does not restrict PC client enrollment.  
+* For iOS and Android only, there is one additional option to block the enrollment of personally owned devices.
+
+Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+
+### View all actions on managed devices <!--677150-->
+A new __Device Actions__ report shows who has performed remote actions like factory reset on devices, and additionally shows the status of that action. See [What is device management?](https://docs.microsoft.com/intune-azure/manage-devices/what-is).
+
+### Non-managed devices can access assigned apps <!--664691-->
+As part of the design changes on the Company Portal website, iOS and Android users will be able to install apps assigned to them as "available without enrollment" on their non-managed devices. Using their Intune credentials, users will be able to log into the Company Portal website and see the list of apps assigned to them. The app packages of the "available without enrollment" apps are made available for download via the Company Portal website. Apps which require enrollment for installation are not affected by this change, as users will be prompted to enroll their device if they wish to install those apps.
+
+### Custom app categories <!--748805-->
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
-See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).-->
+See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).
 
-<!--### Display device categories <!--814654
-You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade.-->
+### Display device categories <!--814654-->
+You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade. See [How to add an app to Intune](/intune-azure/manage-apps/add-apps). 
 
 ## January 2017
 

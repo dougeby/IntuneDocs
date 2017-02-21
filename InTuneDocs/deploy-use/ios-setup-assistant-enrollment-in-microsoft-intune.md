@@ -6,7 +6,7 @@ description: Enroll corporate-owned iOS devices by using the Apple Configurator 
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -110,7 +110,10 @@ A device enrollment profile defines the settings applied to a group of devices.
 
   -  **Manually add device details**&mdash;Enter the serial number and any notes or details for up to 15 devices.
 
-  To make changes to this list of serial numbers later, see [Add or update iOS serial numbers](#add-or-update-ios-serial-numbers).
+  On the **Review Devices** pane, you can confirm the serial numbers. You can also decide whether to overwrite the **Details** for serial numbers that are being imported again, or you can uncheck the **Overwrite** box to preserve the Current details. 
+
+> [!NOTE] 
+> In the existing Intune administrator console, admins can accept associated details from an uploaded CSV and overwrite the existing details for individual serial numbers. In the new Azure portal, you’ll only be able to overwrite the details for all serial numbers or to ignore new details for all serial numbers.
 
   > [!NOTE]
   > If you want to remove corporate-owned devices from Intune management later, you might need to go to **By iOS Serial Number** device group under **Corporate Pre-enrolled devices** and remove the device serial number from Intune in order to disable device enrollment. If Intune performs a disaster recovery procedure on or around the time you remove serial numbers, you'll need to verify that only active devices’ serial numbers are present in that group.
@@ -184,23 +187,6 @@ The devices are now ready for corporate enrollment.
 
 Turn off the devices and distribute them to users. When users turn on their devices, Setup Assistant will start.
 
-## Add or update iOS serial numbers
-
-The steps above explain all of the steps you need to take to enroll devices from "day 0," including how to upload iOS serial numbers, but you'll probably want to add or update the details about your serial numbers from time to time. Use these steps to add or update the list of iOS device serial numbers. 
-
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com), choose **Groups** &gt; **All Devices** &gt; **Corporate Pre-enrolled Devices** &gt; **By iOS Serial Number**, and then choose **Add devices…**. If you want to remove a serial number of updating it, select the serial number, and then select **Remove** instead of selecting **Add devices...**.
-
-2. To continue adding or updating serial numbers, select one of the following, as described in the steps earlier in this topic, and then select **Next**:
-
-   -  **Upload a .csv file that has serial numbers** 
-   -  **Manually add device details** 
-
-3.  On the **Review Devices** pane, you can confirm the serial numbers. You can also decide whether to overwrite the **Details** for serial numbers that are being imported again, or you can uncheck the **Overwrite** box to preserve the Current details. 
-
-4.  Choose **Finish** to import the serial numbers.  The imported serial numbers and details are added to the **By iOS Serial Number** list.
-
-> [!NOTE] 
-> When your organization is migrated to the new Azure portal in the near future, you will see a change to this feature. In the existing Intune administrator console, admins can accept associated details from an uploaded CSV and overwrite the existing details for individual serial numbers. In the new Azure portal, you’ll only be able to overwrite the details for all serial numbers or to ignore new details for all serial numbers.
 
 ### See also
 [Prerequisites for enrolling devices](prerequisites-for-enrollment.md)

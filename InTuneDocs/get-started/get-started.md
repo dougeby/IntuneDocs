@@ -21,7 +21,7 @@ ms.assetid: 5b56f8b4-269b-4e7f-b7e9-b0401bdd42f4
 #ms.reviewer: [ALIAS]
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 

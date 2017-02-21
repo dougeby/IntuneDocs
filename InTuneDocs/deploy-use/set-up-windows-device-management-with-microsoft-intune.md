@@ -2,11 +2,11 @@
 # required metadata
 
 title: Set up Windows device management with Microsoft Intune | Microsoft Docs
-description: Enable mobile device management (MDM) for Windows PCs including Windows 10 devices with Microsoft Intune.
+description: Enable mobile device management (MDM) for Windows devices with Microsoft Intune.
 keywords:
 author: staciebarker
 manager: stabar
-ms.date: 01/26/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -29,25 +29,31 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-As an Intune admin, you can enable enrollment and management for Windows PCs in two ways:
+Use one of the following methods to set up enrollment for Windows devices:
 
-- **[Automatic enrollment with Azure Active Directory](#azure-active-directory-enrollment)** -  Windows 10 and Window 10 Mobile users enroll their devices by adding a work or school account to the device.
+- [**Windows 10 and Windows 10 Mobile automatic enrollment with Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium) 
+ -  This method is applicable only for Windows 10 and Windows 10 Mobile devices.
+ -  You must have Azure Active Directory Premium to use this method. Otherwise, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
+ -  If you choose not to enable automatic enrollment, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
 
-- **[Company Portal enrollment](#set-up-company-portal-app-enrollment)** - Windows 8.1 and later users enroll their devices by downloading and installing the Company Portal app and then entering their work or school account credentials in the app.
+
+- [**Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname) 
+ - You must use this method to enroll Windows 8.1 and Windows Phone 8.1 devices.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## Set up Company Portal app enrollment
-You can let users install and enroll their devices by using the Intune Company Portal app. If you create DNS CNAME resource records,  users connect and enroll in Intune without entering a server name.
+## Set up Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME
+You can let users install and enroll their devices by using the Intune Company Portal. If you create DNS CNAME resource records,  users connect and enroll in Intune without entering a server name.
 
 1. **Set up Intune**<br>
 If you haven’t already, prepare for mobile device management by  [setting the mobile device management (MDM) authority](prerequisites-for-enrollment.md#step-2-set-mdm-authority) as **Microsoft Intune** and then setting up MDM.
 
-2. **Create CNAMEs** (optional)<br>Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
+2. **Create CNAMEs** (optional)<br>
+Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
 
-    Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, https://enrollment.manage.microsoft.com.	
 
-    If you currently have a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to manage.microsoft.com, we suggest that you replace it with a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com. This change is recommended, because the manage.microsoft.com endpoint is being deprecated for enrollments in a future release.
+    Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, https://enrollment.manage.microsoft.com.
+
 
 	CNAME resource records must have the following information:
 
@@ -72,6 +78,9 @@ If you haven’t already, prepare for mobile device management by  [setting the 
 
 	For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
 
+For more information about end-user tasks, see these articles:
+      - [Resources about the end-user experience with Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+      - [End user guidance for Windows devices](../enduser/using-your-windows-device-with-intune.md)
 
 ### See also
 [Prerequisites for enrolling devices in Microsoft Intune](prerequisites-for-enrollment.md)

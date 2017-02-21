@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Configure Intune device restriction settings | Intune Azure preview | Microsoft Docs
+title: Configure Intune device restriction settingstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use Intune to configure settings and features on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/10/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# How to configure device restriction settings in Intune Azure preview
+# How to configure device restriction settings in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

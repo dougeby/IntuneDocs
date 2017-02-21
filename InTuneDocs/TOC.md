@@ -6,12 +6,14 @@
 ### [Create policies and publish an app](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Other options and extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Convert to a paid subscription](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [MAM and app protection FAQ](understand-explore/mam-faq.md)
 ## [Common scenarios](understand-explore/common-ways-to-use-intune.md)
 
 
 # [Get Started](get-started/get-started.md)
 ## [Setup Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Prerequisites](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [Prerequisites]
+#### [Supported devices](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Network usage](get-started/network-bandwidth-use.md)
 ### [Sign in to Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configure domains](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -57,7 +59,6 @@
 #### [Android management](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work management](deploy-use/set-up-android-for-work.md)
 #### [Windows device management ](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile and Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Manage corporate-owned devices](deploy-use/manage-corporate-owned-devices.md)
 #### [Enroll corporate-owned iOS devices](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Setup Assistant enrollment](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -78,6 +79,7 @@
 ## Configure devices
 ### [Manage settings and features on your devices with policies](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS settings](deploy-use/ios-policy-settings-in-microsoft-intune.md)
+#### [Restore managed iOS devices](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android and Samsung KNOX settings](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Use a custom policy to create a Wi-Fi profile with a pre-shared key](deploy-use/pre-shared-key-wi-fi-profile.md)
 ##### [Use a custom policy to create a per-app VPN profile for Android devices](deploy-use/per-app-vpn-for-android-pulse-secure.md)
@@ -106,7 +108,7 @@
 
 ## [Protect devices](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Remote lock & passcode reset](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [Protect Windows devices with MFA](deploy-use/multi-factor-authentication-azure-active-directory.md)
+### [Protect devices with multi-factor authentication](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [Control Windows Hello for Business settings](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Bypass Activation Lock on iOS](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Policies to protect Windows PCs](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -139,7 +141,7 @@
 ## [Protect apps and data](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [Device compliance policies](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [Create a device compliance policy](deploy-use/create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [ Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
 #### [Android for Work](deploy-use/afw-compliance-policy-settings-in-microsoft-intune.md)
 #### [iOS](deploy-use/ios-compliance-policy-settings-in-microsoft-intune.md)
 #### [Windows & Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
@@ -165,13 +167,14 @@
 #### [Enable device threat protection compliance policy](deploy-use/device-threat-protection-policy.md)
 
 ### [Protect app data with MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Azure portal for MAM policies](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Get ready to configure MAM policies](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Create and deploy MAM policies](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [MAM policies for Android](deploy-use/android-mam-policy-settings.md)
-#### [MAM policies for iOS](deploy-use/ios-mam-policy-settings.md)
-#### [Validate MAM policies](deploy-use/validate-mobile-application-management.md)
-#### [Monitor policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Azure portal for app protection policies](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [Get ready to configure app protection policies](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Create and deploy app protection policies](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [App protection policies for Android](deploy-use/android-mam-policy-settings.md)
+#### [App protection policies for iOS](deploy-use/ios-mam-policy-settings.md)
+#### [Validate app protection policies](deploy-use/validate-mobile-application-management.md)
+#### [Monitor app protection policy compliance](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+
 #### [Manage data transfer between iOS apps](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [Intune admin console for MAM policies](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -182,17 +185,16 @@
 #### [LOB apps on devices not managed by Intune](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Use the SDK when you write an app](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
-### [MAM and app protection FAQ](deploy-use/mam-faq.md)
 
 ## Retire apps and data
 ### [Use full or selective wipe](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 ### [Retire apps ](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Wipe managed company app data](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [Resources about the end-user experience](deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
-### [Restore managed iOS devices](deploy-use/restore-managed-ios-devices-from-backup.md)
-### [Android apps with MAM policies](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [iOS apps with MAM policies](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+## [How to educate your end users about Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
+### [How your Android users get their apps](deploy-use/how-your-android-users-get-their-apps.md)
+### [How your iOS users get their apps](deploy-use/how-your-ios-users-get-their-apps.md)
+### [How your Windows users get their apps](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Develop and Customize Apps
 ## [Overview of the Microsoft Intune App SDK](develop/intune-app-sdk.md)

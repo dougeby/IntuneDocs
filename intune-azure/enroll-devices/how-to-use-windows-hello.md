@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to use Windows Hello for Business | Intune Azure preview | Microsoft Docs
+title: How to use Windows Hello for BusinesstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
@@ -55,7 +55,7 @@ To ensure policy conflicts are resolved and that the PIN policy is applied corre
 
 ## Create a Windows Hello for Business policy
 
-1.  In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
+1.  In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
 2.  On the Intune blade, choose **Enroll devices**, and then choose **Manage** > **Windows Hello for Business**.
 

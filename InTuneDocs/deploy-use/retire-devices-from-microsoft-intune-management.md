@@ -6,7 +6,7 @@ description: Intune supports both a selective wipe and a full wipe to remove the
 keywords:
 author: staciebarkerms.author: staciebarker
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -29,9 +29,9 @@ ms.suite: ems
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Whether devices are corporate-owned or personally owned, eventually a managed device needs to be removed from Intune management. 
+Whether devices are corporate-owned or personally owned, eventually a managed device needs to be removed from Intune management.
 
-Devices are never removed from Intune without your intervention, even if the devices haven't connected to the Intune service for a period of time. 
+Devices are never removed from Intune without your intervention, even if the devices haven't connected to the Intune service for a period of time.
 
 You might need to retire a device for a variety of reasons:
 
@@ -48,6 +48,9 @@ Both a selective wipe and a full wipe remove the device from Intune management b
 [Selective wipe](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) is the preferred action for employees who have enrolled their own devices in Intune because it does not affect personal information on the device. Only corporate data is removed.
 
 For devices that need to be repurposed, you can also use a [full wipe](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe), which resets the device to factory default settings.
+
+### Removing user licenses and managed devices
+When you remove a user license, that user's enrolled devices cease to be enrolled. As a best practice, you should use selective wipe to remove company data from managed devices before removing the Intune license for a user. Once you remove the user license, the device cannot be targeted for remote actions.
 
 ## To delete devices in the Azure Active Directory portal
 

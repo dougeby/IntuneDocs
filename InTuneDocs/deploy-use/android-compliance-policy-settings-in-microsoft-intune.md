@@ -20,7 +20,7 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -35,6 +35,7 @@ If you're looking for information about other platforms, select one of the follo
 > [!div class="op_single_selector"]
 - [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Windows devices](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Compliance policy settings for Android for Work devices](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## System security settings
 ### Password

@@ -21,7 +21,7 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -35,7 +35,7 @@ Organizations can use Intune to manage large numbers of mobile devices with a si
 Users must exist in the Azure portal to be added as device enrollment managers. For optimal security, the DEM user should not also be an Intune admin.
 
 >[!NOTE]
->The DEM enrollment method can't be used with the [Apple Configurator enrollment method](enroll-corporate-owned-ios-devices-in-microsoft-intune.md) or the [DEP enrollment method](ios-device-enrollment-program-in-microsoft-intune.md). 
+>The DEM enrollment method can't be used with the [Apple Configurator Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md) or [direct enrollment](ios-direct-enrollment-in-microsoft-intune.md), or the [DEP enrollment method](ios-device-enrollment-program-in-microsoft-intune.md). 
 
 ## Example of a device enrollment manager scenario
 

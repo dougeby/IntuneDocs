@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune custom settings for Android devices | Intune Azure preview | Microsoft Docs
+title: Intune custom settings for Android devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the settings you can use in an Android custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# Custom settings for Android devices in Intune Azure preview
+# Custom settings for Android devices in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

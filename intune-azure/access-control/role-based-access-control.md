@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Role-based access control (RBAC) for Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Role-based access control (RBAC) for Microsoft IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how RBAC lets you control who can perform actions and make changes."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

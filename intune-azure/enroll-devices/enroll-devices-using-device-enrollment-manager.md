@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Enroll devices - device enrollment manager | Intune Azure preview | Microsoft Docs
+title: Enroll devices - device enrollment managertitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Use the device enrollment manager account to enroll devices in Intune. "
 keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # Enroll devices using device enrollment manager
@@ -72,7 +72,7 @@ Devices that are enrolled with a device enrollment manager account have the foll
 
 ## Add a device enrollment manager
 
-1.  In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
+1.  In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
 2.  On the Intune blade, choose **Enroll devices**, and then choose **Device Enrollment Managers**.
 
@@ -94,12 +94,16 @@ Removing a device enrollment manager does not affect enrolled devices. When a de
 
 **To remove a device enrollment manager**
 
-1. On the Intune blade, choose **Enroll devices**, and then choose **Device Enrollment Managers**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Remove**.
+2. On the Intune blade, choose **Enroll devices**, and then choose **Device Enrollment Managers**.
+
+3. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Remove**.
 
 ## View the properties of a device enrollment manager
 
-1. On the Intune blade, choose **Enroll devices**, and then choose **Device Enrollment Managers**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Properties**.
+2. On the Intune blade, choose **Enroll devices**, and then choose **Device Enrollment Managers**.
+
+3. On the **Device Enrollment Managers** blade, right-click the DEM user, and select **Properties**.

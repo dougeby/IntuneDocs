@@ -16,19 +16,19 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1csearchScope: - Company Portal
 
 # optional metadata
 
-ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
 # Enroll your macOS device in Intune
 
-Getting access to your organization’s apps, data, and resources makes it possible for you to do your job. If you're using a macOS device at work, this means installing a __Management Profile__. This is simply a file set up by your IT administrator that loads settings and access information onto your Mac. Want to know more? Find out [what happens when you install the Company Portal app and enroll your device in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Getting access to your organization’s apps, data, and resources makes it possible for you to do your job. If you're using a macOS device at work, this means installing a __Management Profile__. This is simply a file set up by your IT admin that loads settings and access information onto your Mac. Want to know more? Find out [what happens when you install the Company Portal app and enroll your device in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
   > [!NOTE]
   > If you're actually trying to enroll an iOS device, such as an iPhone or iPad, [try these instructions instead](enroll-your-device-in-intune-ios.md).

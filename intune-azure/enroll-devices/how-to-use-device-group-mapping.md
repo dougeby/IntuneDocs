@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to use device categories in Intune | Intune Azure preview | Microsoft Docs
+title: How to use device categories in IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use device categories that users can choose when they enroll their devices in Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 #ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
@@ -48,7 +48,7 @@ You can create any device categories you want, for example:
 ## How to configure device categories
 
 ### Step 1 - Create device categories in the Intune blade of the Azure portal
-1. Sign into the Azure portal.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 2. Choose **More Services** > **Other** > **Intune**.
 3. On the **Intune** blade, choose **Enroll devices**.
 3. In the **Enrollment** blade, choose **Device Categories**.
@@ -68,15 +68,31 @@ Use the information in this section to create a device group with an advanced ru
 After you configure device groups, and users enroll their device, they are presented with a list of the categories you configured. After they choose a category and finish enrollment, their device is added to the Active Directory security group that corresponds with the category they chose.
 
 ### How to view the categories of devices you manage
-1.	In the Intune blade of the Azure portal, choose **Devices and Groups**.
 
-2.	Under **Manage**, click **All devices**.
+1.	In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-3.	In the list of devices, examine the **Device category** column.
+2. In the Intune blade of the Azure portal, choose **Devices and Groups**.
 
-If the **Device category** column isn’t displayed, click **Columns**, choose **Device category** from the list, and then click **Apply**.
+3.	Under **Manage**, click **All devices**.
+
+4.	In the list of devices, examine the **Category** column.
+
+If the **Category** column isn’t displayed, click **Columns**, choose **Category** from the list, and then click **Apply**.
+
+### To change the category of a device
+
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Devices & Groups**.
+4. On the **Devices and Groups** blade, choose **Manage** > **All devices**.
+5. In the list of devices, choose the device you want, then, on the device properties blade, choose **Manage** > **Properties**.
+6. On the next blade, you can change the **Device category** of the selected device to any of the category names you previously configured.
+
+
 
 ## Further information
 - You can edit a device category in the Azure Portal, but if you do this, you must manually update any Azure Active Directory Security groups that reference this category.
 
 - If you delete a category, any devices that were assigned to it will subsequently display the category name **Unassigned**.
+
+

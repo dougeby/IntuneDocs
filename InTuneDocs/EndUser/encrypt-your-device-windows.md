@@ -15,13 +15,13 @@ ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7fsearchScope: - Company Portal
 
 # optional metadata
 
-#ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 

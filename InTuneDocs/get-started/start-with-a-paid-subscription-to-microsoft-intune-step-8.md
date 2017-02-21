@@ -6,7 +6,7 @@ description: Set MDM authority and enable enrollment for iOS, Windows, Android, 
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 01/17/2017
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,13 +21,15 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
-# Enroll mobile devices and install an app
+# Enable enrollment for mobile devices
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+This topic describes how an Intune administrator can enable mobile device enrollment. For help using Intune on your phone, see [using managed devices to get work done](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions). 
 
 To set up mobile device management with Intune, you must first set the *mobile device management authority*, which identifies the service that can manage devices associated with your account. This guidance assumes you will use the Intune service instead of System Center Configuration Manager. Once the MDM authority is set, you can enable management for device platforms, and enroll your devices with the Company Portal app.
 

@@ -4,7 +4,7 @@
 title: Exchange ActiveSync Device Management | Microsoft Docs
 description: Manage mobile devices with Exchange ActiveSync (EAS) management using the Exchange connector
 keywords:
-author: staciebarkerms.author: stabar
+author: andredm7ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 

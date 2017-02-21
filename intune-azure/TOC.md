@@ -4,6 +4,7 @@
 <!---(introduction/get-started.md) --->
 ### [Sign up for a free trial](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [What's new](introduction/whats-new.md)
+## [Known issues](introduction/known-issues-in-the-intune-preview.md)
 <!--- ## [Get support](introduction/get-support.md)
 ## [Related resources](introduction/related-resources.md)
 
@@ -37,11 +38,12 @@
 #### [Add Apple Configurator serial numbers](enroll-devices/add-apple-configurator-serial-numbers.md)
 #### [Enroll iOS devices using the device enrollment program](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Enroll devices using device enrollment manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+### [Enroll macOS devices](enroll-devices/enroll-macos-devices.md)
 ### [Enroll Windows devices](enroll-devices/enroll-window-devices.md)
 ### Manage device enrollment
 #### [Create terms and conditions](enroll-devices/create-terms-and-conditions.md)
 #### [Set enrollment restrictions](enroll-devices/set-enrollment-restrictions.md)
-#### [Map device groups](enroll-devices/how-to-use-device-group-mapping.md)
+#### [Map devices to groups](enroll-devices/how-to-use-device-group-mapping.md)
 #### [Add corporate identifiers](enroll-devices/add-corporate-identifiers.md)
 #### [Use Windows Hello for Business](enroll-devices/how-to-use-windows-hello.md)
 <!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
@@ -79,14 +81,14 @@
 ### [Assign apps](manage-apps/deploy-apps.md)
 ### [Monitor apps](manage-apps/monitor-apps.md)
 ### [Use app configuration policies](manage-apps/app-configuration-policies.md)
-<!--- ### [Selectively wipe apps](manage-apps/app-selective-wipe.md)--->
+### [Selectively wipe apps](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Work with volume-purchased apps](manage-apps/volume-purchased-apps.md)
 #### [iOS VPP apps](manage-apps/ios-vpp-apps.md)
 #### [Windows Store for Business apps](manage-apps/wsfb-apps.md)
 ### [Configure the Company Portal app](manage-apps/company-portal-app.md)
 ## How to use app protection policies
-### [Create & deploy app protection policies](manage-apps/app-protection-policies.md)
+### [Create & assign app protection policies](manage-apps/app-protection-policies.md)
 #### [Android settings](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS settings](manage-apps/ios-app-protection-policy-settings.md)
 ### [Validate app protection policies](manage-apps/validate-app-protection-policies.md)

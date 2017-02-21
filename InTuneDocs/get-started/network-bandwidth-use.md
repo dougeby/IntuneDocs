@@ -21,13 +21,15 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Intune network bandwidth use
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+This guidance is for system administrators responsible for device management in the enterprise. For help using Intune on your mobile device, see [frequently asked questions about the Intune Company Portal](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Before you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 

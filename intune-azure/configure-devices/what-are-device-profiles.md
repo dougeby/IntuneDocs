@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: What are device profiles in Microsoft Intune? | Intune Azure preview | Microsoft Docs
+title: What are device profiles in Microsoft Intune?titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about Intune device profiles and how they can help manage and protect devices in your company."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,16 +22,15 @@ ms.assetid:
 ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# What are device profiles?
-<!--- This topic doesn't really answer the topic title: What are device profiles?" It needs to answer that question, then it can go on to discuss what profiles are in Intune and how to use them. Linda--->
+# What are Microsoft Intune device profiles?
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use the Microsoft Intune **Configure devices** workload to manage settings and features on all of the devices you manage.
+Use the Microsoft Intune **Configure devices** workload to manage settings and features on all of the devices you manage. You'll mostly use this workload to create device profiles, which let you manage and control a whole range of different features and functionality on the devices you manage.
 
 When you open this workload, you'll see the following options:
 
@@ -69,11 +68,6 @@ Supports: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
 This profile type lets you configure trusted, SCEP, and PKCS certificates that can be assigned to devices and used to authenticate Wi-Fi, VPN, and email profiles.
 For more information, see [How to configure certificates](how-to-configure-certificates.md)
 Supports: Android, iOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
-
-## Education
-Helps you to specify the correct certificates for using iOS devices in an educational environment.
-For more information, see [How to configure Intune education settings for iOS devices](education-settings-for-ios.md)
-Supports: iOS only.
 
 ## Edition upgrade
 This profile type lets you automatically upgrade devices that run some versions of Windows 10 to a newer edition

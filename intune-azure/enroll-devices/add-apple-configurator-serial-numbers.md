@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Add Apple Configurator serial numbers | Intune Azure preview | Microsoft Docs
+title: Add Apple Configurator serial numberstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to add serial numbers to corporate-owned iOS devices using the Apple Configurator."
 keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/17
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,15 +22,15 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# Add Apple Configurator serial numbers 
+# Add Apple Configurator serial numbers
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use these steps to add serial numbers to Intune when you want to [enroll corporate-owned iOS devices by using Apple Configurator with Setup Assistant]((enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). You can add serial numbers one at a time, or upload a comma-separate-value (CSV) file of serial numbers. After you add serial numbers, you can assign a profile to them. The profile contains specific management settings that you want to apply to devices. 
+Use these steps to add serial numbers to Intune when you want to [enroll corporate-owned iOS devices by using Apple Configurator with Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). You can add serial numbers one at a time, or upload a comma-separated-value (CSV) file of serial numbers. After you add serial numbers, you can assign a profile to them. The profile contains specific management settings that you want to apply to devices.
 
 Other methods of enrolling iOS devices are described in [Choose how to enroll iOS devices in Intune](choose-ios-enrollment-method.md).
 
@@ -41,7 +41,7 @@ Other methods of enrolling iOS devices are described in [Choose how to enroll iO
 	F7TLWCLBX196,device details</br>
 	DLXQPCWVGHMJ,device details
 
-2. In the Azure portal, choose **More Services**, enter **Intune** in the text box, and then choose **Other** > **Intune**.
+2. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
 3.  On the Intune blade, choose **Enroll devices**, and then choose **Apple Enrollment**.
 
@@ -57,11 +57,13 @@ Other methods of enrolling iOS devices are described in [Choose how to enroll iO
 
 Intune lets you assign profiles from two different places in the Azure portal. You can use the steps below, or you can assign profiles from the Apple Configurator Enrollment Profiles blade, which is where you create the profile (see [Enroll iOS devices with Apple Configurator by using Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md). You can use the steps below to assign the profile only if you have already created the profile.
 
-1. On the Intune blade, choose **Enroll devices**, and then choose **Apple Enrollment**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2. On the **Apple Configurator Serial Numbers** blade, select the serial numbers you want to assign a profile to, and then select **Assign Profile**.
+2. On the Intune blade, choose **Enroll devices**, and then choose **Apple Enrollment**.
 
-3. On the **Assign Profile** blade, select the profile you want to assign, and then select **Assign**.
+3. On the **Apple Configurator Serial Numbers** blade, select the serial numbers you want to assign a profile to, and then select **Assign Profile**.
+
+4. On the **Assign Profile** blade, select the profile you want to assign, and then select **Assign**.
 
 ## Delete serial numbers
 You can delete serial numbers that you imported previously. You can delete serial numbers only if the device is unenrolled first. Once you remove a serial number, you can’t use Apple Configurator via Setup Assistant unless you re-add the serial number.

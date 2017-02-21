@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -41,7 +41,7 @@ For more information about how your users can send you data logs, see the follow
 
 - [Use Verbose Logging to help your IT admin fix device issues](/intune/enduser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android): Describes how users turn on Verbose Logging, which sends you all of their data logs automatically. By default, Verbose Logging is turned on.
 
-- [Send Android diagnostic data logs to your IT admin using email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [Send Android diagnostic data logs to your IT admin using email](/intune/enduser/send-logs-to-your-it-admin-by-email-android)
 
 - [Send diagnostic data logs to your IT admin using a USB cable](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 

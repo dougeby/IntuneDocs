@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 1/30/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,11 +18,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 
 #ROBOTS:
 #audience:
-#ms.devlang:
+#ms.devlang:s
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -31,6 +31,9 @@ ms.suite: ems
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune can deploy an enrollment profile that enrolls iOS devices that were bought through the Device Enrollment Program (DEP) “over the air.” The enrollment package can include setup assistant options for the device.
+
+>[!NOTE]
+>This enrollment method can't be used with the [device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) method.
 
 ## Prerequisites for enrolling iOS devices by using Apple DEP management
 
@@ -127,7 +130,7 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
 2. Choose the devices to which you want to assign the profile that you created. You can choose **All devices** or select specific devices, and then select **Add**.
 
 > [!Important]
-> Currently, Intune let you designate a "default" device enrollment profile," which means that new serial numbers are automatically assigned to that default profile when you synchronize new serial numbers with the Apple DEP service. When your tenant is migrated to the new Azure portal in the near future, you will no longer be able to set a default profile and have serial numbers be automatically assigned to that profile. Instead, you will have to assign serial numbers to a specific profile. [Learn more](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
+> Currently, Intune lets you designate a "default" device enrollment profile," which means that new serial numbers are automatically assigned to that default profile when you synchronize new serial numbers with the Apple DEP service. When your tenant is migrated to the new Azure portal in the near future, you will no longer be able to set a default profile and have serial numbers be automatically assigned to that profile. Instead, you will have to assign serial numbers to a specific profile. [Learn more](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program)
 
 ### Assign DEP Devices for Management
 
@@ -141,7 +144,7 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
 
 ### Synchronize DEP-Managed Devices
 
-    This step synchronizes devices with the Apple DEP Service, and makes the devices appear in the Intune console.
+This step synchronizes devices with the Apple DEP Service, and makes the devices appear in the Intune console.
 
 1. As an administrative user, open the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Admin** &gt; **Mobile Device Management** &gt; **iOS** &gt; **Device Enrollment Program**, and then choose **Sync now**. A sync request is sent to Apple.
 
@@ -159,7 +162,7 @@ Your corporate-owned devices can now be distributed to users. When an iOS device
 
 ## Changes to Intune group assignments
 
-Starting in December 2016, device group management is moving to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the **Corporate Enrollment Profile** options. Because this change will roll out over a series of months, you might not see the change right away. After moving to the new portal, dynamic device group assignments can be defined based on the Corporate Enrollment Profile names. This process ensures that devices that are assigned to a device group already will automatically enroll in the group with policy and apps deployed. [Learn more about Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+Starting in December 2016, device group management is moving to Azure Active Directory. After the transition to Azure Active Directory groups, group assignment will not appear in the Corporate Enrollment Profile options. Because this change will roll out over a series of months, you might not see the change right away. After moving to the new portal, dynamic device group assignments can be defined based on the Corporate Enrollment Profile names. For every Intune device group pre-assigned by a Corporate Device Enrollment profile, a corresponding dynamic device group will be created in AAD based on the Corporate Device Enrollment profile’s name, during the migration to Azure Active Directory device groups. This process ensures that devices that are assigned to a device group already will automatically enroll in the group with policy and apps deployed. [Learn more about Azure Active Directory groups](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### See also
 [Prerequisites for enrolling devices](prerequisites-for-enrollment.md)

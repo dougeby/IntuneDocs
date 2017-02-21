@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to add iOS store apps to Intune | Intune Azure preview | Microsoft Docs
+title: How to add iOS store apps to IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about adding iOS store apps to Intune."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,10 +22,10 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
-# How to add iOS store apps to Intune
+# How to add iOS store apps to Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

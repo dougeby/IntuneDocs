@@ -21,10 +21,9 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
-
 
 # What happens if you install the Company Portal app and enroll your Android device in Intune?
 

@@ -20,15 +20,15 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
-# Create and deploy mobile app management policies with Microsoft Intune
+# Create and deploy app protection policies with Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-This topic describes the process of creating a MAM policy in the **Azure portal**. The Azure portal is the new admin console for creating MAM policies, and we recommend that you use this portal to create MAM policies. Azure portal supports the following MAM scenarios:
+This topic describes the process of creating an app protection policy in the **Azure portal**. The Azure portal is the new admin console for creating app protection policies, and we recommend that you use this portal to create app protection policies. Azure portal supports the following MAM scenarios:
 
 - Devices enrolled in Intune.
 - Devices managed by a third-party MDM solution.
@@ -37,14 +37,14 @@ This topic describes the process of creating a MAM policy in the **Azure portal*
 >[!IMPORTANT]
 Here are a few considerations if you're using the **Intune admin console** to manage your devices:
 
-> * You can create a MAM policy that supports apps for devices enrolled in Intune using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
-> * MAM policies created in the Intune admin console cannot be imported into the Azure portal.  The MAM policies must be re-created in the Azure portal.
+> * You can create an app protection policy that supports apps for devices enrolled in Intune using the [Intune admin console](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+> * App protection policies created in the Intune admin console cannot be imported into the Azure portal.  The app protection policies must be re-created in the Azure portal.
 
-> * You may not see all MAM policy settings in the Intune admin console. The Azure portal is the new admin console for creating MAM policies.
+> * You may not see all app protection policy settings in the Intune admin console. The Azure portal is the new admin console for creating app protection policies.
 
-> * To deploy managed apps, you must create a MAM policy in the Intune admin console. In this case, you may want to create MAM policies in both the Intune admin console and the Azure portal: Intune admin console to make sure you have the ability to deploy managed apps, and the Azure portal because it is the new admin console that has all the MAM policy settings.
+> * To deploy managed apps, you must create a app protection policy in the Intune admin console. In this case, you may want to create app protection policies in both the Intune admin console and the Azure portal: Intune admin console to make sure you have the ability to deploy managed apps, and the Azure portal because it is the new admin console that has all the app protection policy settings.
 
-> * If you create MAM policies on both Intune admin console and Azure portal, the policy that is created in the Azure portal is applied to the apps.
+> * If you create app protection policies on both Intune admin console and Azure portal, the policy that is created in the Azure portal is applied to the apps.
 
 To see a list of policy settings supported for Android and iOS platforms, select one of the following:
 
@@ -52,12 +52,12 @@ To see a list of policy settings supported for Android and iOS platforms, select
 - [iOS policies](ios-mam-policy-settings.md)
 - [Android policies](android-mam-policy-settings.md)
 
-- For a more detailed description of how MAM policies work and the scenarios supported by Intune MAM policies, see [protect app data using mobile app management policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+- For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [protect app data using app protection policies](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-##  Create a MAM policy
-MAM policies are created at the Azure Portal. If this is the first time you are using the Azure portal, read [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) to get more familiar with the Azure Portal. Before creating a MAM policy, review the [pre-requisites and support](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) information.
+##  Create an app protection policy
+App protection policies are created at the Azure Portal. If this is the first time you are using the Azure portal, read [Azure portal for Microsoft Intune app protection policies](azure-portal-for-microsoft-intune-mam-policies.md) to get more familiar with the Azure Portal. Before creating an app protection policy, review the [pre-requisites and support](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md) information.
 
-Follow the steps below to create MAM policies:
+Follow the steps below to create app protection policies:
 
 1. Go to the [Azure portal](http://portal.azure.com), and enter your credentials.
 
@@ -69,7 +69,7 @@ Follow the steps below to create MAM policies:
 
     ![Screenshot of the Intune mobile application management blade](../media/AppManagement/AzurePortal_MAM_Mainblade-2.png)
 
-2.  In the **Settings** blade, choose **App policy**. This opens the **App policy** blade, where you'll create new policies and edit existing policies. Choose **Add a policy**.
+2.  In the **All Settings** blade, choose **App policy**. This opens the **App policy** blade, where you'll create new policies and edit existing policies. Choose **Add a policy**.
 
     ![Screenshot of the App policy blade with the Add a policy menu option highlighted ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -101,10 +101,10 @@ Follow the steps below to create MAM policies:
 When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see the following section, "Deploy a policy to users."
 
 > [!IMPORTANT]
-> If you create a MAM policy for an app using the Intune admin console and a MAM policy using the Azure portal, the policy you created using the Azure portal takes precedence. However, the reporting in the Intune or Configuration Manager console will report the policy settings created from the Intune admin console. For example:
+> If you create an app protection policy for an app using the Intune admin console and an app protection policy using the Azure portal, the policy you created using the Azure portal takes precedence. However, the reporting in the Intune or Configuration Manager console will report the policy settings created from the Intune admin console. For example:
 >
-> -   You created a MAM policy in the Intune admin console that blocks copy from an app.
-> -   You created a MAM policy in the Azure console that allows copy from an app.
+> -   You created an app protection policy in the Intune admin console that blocks copy from an app.
+> -   You created an app protection policy in the Azure console that allows copy from an app.
 > -   You associate both of these policies to the same app.
 > -   The policy you created from the Azure console takes precedence, and copy is allowed.
 > -   However, status and reports in the Intune console will incorrectly indicate that copy is blocked.
@@ -127,8 +127,8 @@ Only users with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] licenses 
 > If you are using Intune with Configuration Manager to manage your iOS and Android devices, the policy is only applied to the users directly in the group that you selected. Members of child groups nested within the group you selected are not affected.
 
 End users can download the apps from the App store or Google Play. For more information, see:
-* [What to expect when your Android app is managed by MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [What to expect when your iOS app is managed by MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ##  Change existing policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies,  users who are already signed  in to the apps won’t see the changes for an 8-hour period.
@@ -182,5 +182,5 @@ To see a full list of the policy settings for iOS and Android, select one of the
 [Monitor compliance and user status](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### See also
-* [What to expect when your Android app is managed by MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [What to expect when your iOS app is managed by MAM policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)

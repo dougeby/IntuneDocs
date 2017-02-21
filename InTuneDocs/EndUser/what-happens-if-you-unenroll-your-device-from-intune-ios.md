@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: What happens if you unenroll your iOS device? | Microsoft Docs
+title: What happens if you unenroll your iOS or macOS device? | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,17 +18,17 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3csearchScope: - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
-ms.reviewer: esmich
+ms.reviewer: esmich, elocholi
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
 
-# What happens if you unenroll your iOS device from Intune?
+# What happens if you unenroll your iOS or macOS device from Intune?
 
-When you unenroll your iOS device from Intune:
+When you unenroll your iOS or macOS device from Intune:
 
 -   Your device doesn’t appear in the Company Portal anymore.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Device compliance | Intune Azure preview | Microsoft Docs
+title: Device compliancetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Use this topic to learn about device compliance in Microsoft Intune"
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe
@@ -20,7 +20,7 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

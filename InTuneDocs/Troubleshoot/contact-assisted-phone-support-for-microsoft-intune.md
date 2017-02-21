@@ -1,8 +1,7 @@
-
 ---
 # required metadata
 
-title: Contact assisted phone support | Microsoft Docs
+title: "Contact assisted phone support | Microsoft Docs"
 description: Phone numbers for Microsoft Intune help.
 keywords: business hours
 author: staciebarker
@@ -23,7 +22,7 @@ ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 

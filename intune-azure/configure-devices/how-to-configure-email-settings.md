@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to configure Intune email settings | Intune Azure preview | Microsoft Docs
+title: How to configure Intune email settingstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to configure Intune to create connections to corporate email on devices you manage."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# How to configure email settings 
+# How to configure email settings in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -68,6 +68,10 @@ The profile will be created and appears on the profiles list blade.
 If you want to go ahead and assign this profile to groups, see [How to assign device profiles](how-to-assign-device-profiles.md).
 
 ## Further information
+
+### Remove an email profile
+
+If you want to remove an email profile from a device, edit the assignment and remove any groups of which the device is a member. Note that you cannot remove an email profile in this way if it is the only email profile on a device.
 
 ### Securing email access
 
