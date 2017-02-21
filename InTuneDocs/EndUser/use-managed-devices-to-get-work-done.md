@@ -104,7 +104,4 @@ Microsoft recommends that you first try to see if you can fix your issue yoursel
 - [Fix common issues with your iOS device](troubleshoot-your-device-ios)
 - [Fix common issues with your Windows device](troubleshoot-your-device-windows)
 
-You can post a comment below to ask for help, but we may not always be able to answer your questions. You can try to
-
-
-If you need help, contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+You can post a comment below to ask for help, but every organization has different requirements, so we may not always be able to answer your questions. Reaching out to your IT admin for help is likely to get you the quickest and most relevant response. Their contact information should be available on the [Company Portal website](http://portal.manage.microsoft.com).
