@@ -100,8 +100,8 @@ For you to be able to see a device, it must first be added to the Company Portal
 ## Where else can I go for help?
 Microsoft recommends that you first try to see if you can fix your issue yourself. We provide a list of ways you can try to resolve issues you may run into for each platform that Intune supports.
 
-- [Fix common issues with your Android device](troubleshoot-your-device-android)
-- [Fix common issues with your iOS device](troubleshoot-your-device-ios)
-- [Fix common issues with your Windows device](troubleshoot-your-device-windows)
+- [Fix common issues with your Android device](troubleshoot-your-device-android.md)
+- [Fix common issues with your iOS device](troubleshoot-your-device-ios.md)
+- [Fix common issues with your Windows device](troubleshoot-your-device-windows.md)
 
 You can post a comment below to ask for help, but every organization has different requirements, so we may not always be able to answer your questions. Reaching out to your IT admin for help is likely to get you the quickest and most relevant response. Their contact information should be available on the [Company Portal website](http://portal.manage.microsoft.com).
