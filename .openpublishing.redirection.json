@@ -6,7 +6,7 @@
         "redirect_document_id": true
     },
     {
-      "source_path": "InTuneDocs/enduser/EndUser/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md",
+      "source_path": "InTuneDocs/EndUser/what-information-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md",
       "redirect_url": "https://docs.microsoft.com/intune/enduser/what-info-can-your-company-see-when-you-enroll-your-device-in-intune",
       "redirect_document_id": true
 
@@ -16,6 +16,11 @@
       "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-update-your-device-OS-security-patch-android",
       "redirect_document_id": true
 
+    },
+    {
+        "source_path": "InTuneDocs/EndUser/company-portal-frequently-asked-questions.md",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/use-managed-devices-to-get-work-done",
+        "redirect_document_id": true
     },
     {
         "source_path": "intunedocs/enduser/device-doesnt-comply-with-maximum-operating-system-android.md",
@@ -60,11 +65,6 @@
     {
         "source_path": "InTuneDocs/EndUser/enroll-your-device-in-mac-os-x.md",
         "redirect_url": "https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macOS",
-        "redirect_document_id": true
-    },
-    {
-        "source_path": "InTuneDocs/EndUser/company-portal-frequently-asked-questions.md",
-        "redirect_url": "https://docs.microsoft.com/intune/enduser/use-managed-devices-to-get-work-done",
         "redirect_document_id": true
     },
     {
