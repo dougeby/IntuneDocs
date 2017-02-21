@@ -39,4 +39,4 @@ If you have one of the following devices, you will experience this issue.
 
 - [Huawei Honor 8](https://store.hihonor.com/us/honor-8)
 
-You will need to contact your IT admin to resolve this issue. Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the [Microsoft Android team](mailto:wintunedroidfbk@microsoft.com).
+You will need to contact your IT admin to resolve this issue. You can get contact information for your IT admin at the [Company Portal website](http://portal.manage.microsoft.com) for contact information.
