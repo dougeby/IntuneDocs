@@ -25,7 +25,6 @@ ms.custom: intune-enduser
 
 ---
 
-
 # What happens if you install the Company Portal app and enroll your Android device in Intune?
 
 When you install the Company Portal app and enroll your Android device in Intune, you can use the Company Portal app to:

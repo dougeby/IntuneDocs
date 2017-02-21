@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sync your iOS device manually | Microsoft Docs
+title: Manually sync your iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan

@@ -160,8 +160,6 @@ Next, configure the policy to require that only managed and compliant devices ca
 
      -   **Devices must be domain joined or compliant.** Choose this option to require that PCs must either be domain joined or compliant with the policies that are set in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. If a PC doesn't meet either of these requirements, the user is prompted to enroll the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-     -   **Devices must be domain joined.** Choose this option to require that PCs must be domain joined to access Exchange Online. If a PC isn't domain joined, access to email is blocked and the user is prompted to contact the IT admin.
-
      -   **Devices must be compliant.** Choose this option to require that PCs must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. If a PC isn't enrolled, a message with instructions on how to enroll is displayed.
 
 4.   Under **Browser access** to SharePoint Online and OneDrive for Business, you can choose to allow access to Exchange Online only through the supported browsers: Safari (iOS) and Chrome (Android). Access from other browsers is blocked. The same platform restrictions that you selected for Application access for OneDrive also apply here.
