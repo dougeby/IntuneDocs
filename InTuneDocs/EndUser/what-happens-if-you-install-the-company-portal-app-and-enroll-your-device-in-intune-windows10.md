@@ -25,7 +25,6 @@ ms.custom: intune-enduser
 
 ---
 
-
 # What happens if you install the Company Portal app and enroll your Windows 10 device in Intune?
 
 When you install the Company Portal app and then use the app to enroll your Windows 10 Enterprise or Professional device in Intune, you can then use the Company Portal app to:

@@ -2,7 +2,7 @@
   "redirections": [
     {
         "source_path": "InTuneDocs/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md",
-        "redirect_url": "https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-users-about-microsoft-intune",
+        "redirect_url": "https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune",
         "redirect_document_id": true
     },
     {
