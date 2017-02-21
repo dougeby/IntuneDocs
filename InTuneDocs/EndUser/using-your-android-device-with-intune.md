@@ -4,14 +4,17 @@
 title: Using your Android device with Intune | Microsoft Docs
 description: List of links to tasks that end users can do on their Android mobile device when the device is enrolled in Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 02/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2bsearchScope: - Company Portal
+ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
+searchScope:
+ - Company Portal
 
 # optional metadata
 
@@ -50,7 +53,3 @@ There are a number of things you can do with Intune to make your work life easie
 - [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [What happens if you reset your Android device using the Company Portal app?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
-
-## Steps to fix device and compliance issues
-
-The information in this section helps users fix issues that they might encounter when their Android device is enrolled in Intune.

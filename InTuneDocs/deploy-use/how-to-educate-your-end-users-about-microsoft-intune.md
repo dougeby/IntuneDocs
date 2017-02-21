@@ -49,7 +49,7 @@ __How could this inconvenience my end users?__ It takes time to install apps, en
 
 Assuaging these user concerns will make your deployment smoother. We have a list of ways to consider to make it easier for your end users to embrace device management.
 
-* __Be resourceful.__ The Intune documentation has a variety of content to help your end users figure out how to do certain tasks, like enrolling and troubleshooting their devices. Among these are articles that users are sent to from the Company Portal, which are divided into sections about Company Portal app installation and Intune enrollment, general tasks that users can do on their devices, and troubleshooting. This documentation can be found in our explanations of how to [use managed devices to get work done](/Intune/EndUser/use-managed-devices-to-get-work-done.md).
+* __Be resourceful.__ The Intune documentation has a variety of content to help your end users figure out how to do certain tasks, like enrolling and troubleshooting their devices. Among these are articles that users are sent to from the Company Portal, which are divided into sections about Company Portal app installation and Intune enrollment, general tasks that users can do on their devices, and troubleshooting. This documentation can be found in our explanations of how to [use managed devices to get work done](/Intune/EndUser/use-managed-devices-to-get-work-done).
 
 * __Be accessible.__ End users need to know where they can get help with their devices. Be sure that you include IT administrator contact information when you [customize the Company Portal](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) so that your users can get help if they need it.
 
