@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,7 +20,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
-ms.reviewer: nathbarn
+ms.reviewer: robstack
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -79,7 +79,7 @@ To learn about what your IT admin can and can't see on your device, use the link
 ## Can you remove a computer or device from the Company Portal?
 You can either remove or reset a computer or device from the Company Portal. There is a difference between **remove** and **reset**.
 
-When you *remove* a computer or device, you are unenrolling your device from Intune. Once you unenroll, you won’t be able to access the Company Portal from that device anymore, and some company data might be removed from your device. To see how to remove your device from the Company Portal, choose one of the following links:
+When you *remove* a computer or device from the Company Portal, you are unenrolling your device from Intune. Once you unenroll, you won’t be able to access the Company Portal from that device anymore, and some company data might be removed from your device. To see how to remove your device from the Company Portal, choose one of the following links:
 
 - [Unenrolling your Android device](unenroll-your-device-from-intune-android.md)
 - [Unenrolling your iOS or macOS device](unenroll-your-device-from-intune-ios.md)
@@ -97,5 +97,14 @@ To see how to reset your device, choose one of the following links:
 ## What if I can't see my device in the Company Portal?
 For you to be able to see a device, it must first be added to the Company Portal. Go to whichever Company Portal was recommended by your admin and follow the steps for your device. You also won’t see devices that are owned and managed by your company.
 
-## If you have questions, contact your IT admin
+## Where else can I go for help?
+Microsoft recommends that you first try to see if you can fix your issue yourself. We provide a list of ways you can try to resolve issues you may run into for each platform that Intune supports.
+
+- [Fix common issues with your Android device](troubleshoot-your-device-android)
+- [Fix common issues with your iOS device](troubleshoot-your-device-ios)
+- [Fix common issues with your Windows device](troubleshoot-your-device-windows)
+
+You can post a comment below to ask for help, but we may not always be able to answer your questions. You can try to
+
+
 If you need help, contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
