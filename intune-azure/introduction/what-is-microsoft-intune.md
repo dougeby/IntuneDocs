@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Introduction to Intune in the Azure portal preview
+title: Introduction to Intune in the Azure portal previewtitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Get the basics about Intune in the Azure portal preview, and how it can help you manage your devices."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 #ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

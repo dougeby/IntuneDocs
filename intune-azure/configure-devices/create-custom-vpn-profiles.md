@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to create custom VPN profiles with Microsoft Intune | Microsoft Docs
+title: How to create custom VPN profiles with Microsoft IntunetitleSuffix: "Intune Azure preview"
 description: Use custom configurations to create VPN profiles in Intune.
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

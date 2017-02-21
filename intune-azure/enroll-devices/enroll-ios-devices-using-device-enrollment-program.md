@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll iOS devices - Device Enrollment Program | Intune Azure preview | Microsoft Docs
+title: Enroll iOS devices - Device Enrollment ProgramtitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to enroll corporate-owned iOS devices using the Device Enrollment Program."
 keywords:
 author: staciebarker
@@ -22,7 +22,7 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

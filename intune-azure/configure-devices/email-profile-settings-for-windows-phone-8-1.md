@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune email settings for Windows Phone 8.1 | Intune Azure preview | Microsoft Docs
+title: Intune email settings for Windows Phone 8.1titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about the Intune settings you can use to configure email connections on Windows Phone 8.1 devices."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

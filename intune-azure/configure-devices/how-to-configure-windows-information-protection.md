@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Windows Information Protection - Intune | Intune Azure preview | Microsoft Docs
+title: Configure Windows Information Protection - IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about the Intune settings you can use to manage Windows Information Protection."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: f233672c-7d9b-4554-af1f-92c001a1a3c5
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

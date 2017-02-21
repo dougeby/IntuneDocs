@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create compliance policy for Android for Work | Intune Azure preview | Microsoft Docs
+title: Create compliance policy for Android for WorktitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to create a compliance policy for Android for Work devices."
 keywords:
 author: andredm7
@@ -22,7 +22,7 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

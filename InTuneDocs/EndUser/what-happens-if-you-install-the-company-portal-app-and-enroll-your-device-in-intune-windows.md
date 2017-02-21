@@ -21,7 +21,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
@@ -35,7 +35,7 @@ Enrolling your Windows or Windows Phone device in Intune lets you:
 
 -   Access the company’s network, and your email and work files.
 
--   Get company apps from the Company Portal website. (For Windows 7 and Windows Vista, you can get company apps from the Company Portal website only.)
+-   Get company apps from the Company Portal website. (__Note__: for Windows 7 and Windows Vista, you can only get company apps from the Company Portal website.)
 
 -   Automatically set up your company or school email account.
 
@@ -68,6 +68,7 @@ When you enroll your device, you are giving your IT admin permission to do thing
 -  Your IT admin can install apps and updates on your computer.
 
 ## What happens every eight hours after device enrollment
+
 About every eight hours, enrolled devices will:
 
 -   Download any policy or app updates that your IT admin has made available.

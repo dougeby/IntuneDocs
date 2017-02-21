@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intune email settings for Windows 10 devices | Intune Azure preview | Microsoft Docs
+title: Intune email settings for Windows 10 devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about the Intune settings you can use to configure email connections on Windows 10 devices."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

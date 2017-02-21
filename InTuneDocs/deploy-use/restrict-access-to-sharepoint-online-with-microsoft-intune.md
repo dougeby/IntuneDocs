@@ -22,7 +22,7 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -159,8 +159,6 @@ Next, configure the policy to require that only managed and compliant devices ca
      For Windows PCs, a PC must either be domain joined, or enrolled with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. You can set the following requirements:
 
      -   **Devices must be domain joined or compliant.** Choose this option to require that PCs must either be domain joined or compliant with the policies that are set in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. If a PC doesn't meet either of these requirements, the user is prompted to enroll the device with [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
-
-     -   **Devices must be domain joined.** Choose this option to require that PCs must be domain joined to access Exchange Online. If a PC isn't domain joined, access to email is blocked and the user is prompted to contact the IT admin.
 
      -   **Devices must be compliant.** Choose this option to require that PCs must be enrolled in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] and compliant. If a PC isn't enrolled, a message with instructions on how to enroll is displayed.
 

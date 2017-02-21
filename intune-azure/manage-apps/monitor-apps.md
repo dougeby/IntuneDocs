@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to monitor app assignments | Intune Azure preview | Microsoft Docs
+title: How to monitor app assignmentstitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: After you've assigned an app to users or devices, use this information to help you monitor its status."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # How to monitor app assignments with Microsoft Intune

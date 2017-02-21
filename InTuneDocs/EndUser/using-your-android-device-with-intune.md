@@ -6,7 +6,7 @@ description: List of links to tasks that end users can do on their Android mobil
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -15,36 +15,28 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2bsearchScope: - Company Portal
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW 
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
 
 # Using your Android device with Intune
 
-This article includes links to all of the tasks that end users can do on their Intune-managed devices. IT admins can refer to this information to see the steps that users must take to do a variety of tasks, which are grouped into the following categories:
+There are a number of things you can do with Intune to make your work life easier. Here's a list of the most common things you might be asked to do by your company.
 
-- Company Portal app installation and Intune enrollment
-- Post-enrollment management tasks
-- Compliance issues
-
-## Company Portal app installation and Intune enrollment
-
-The information in this section helps users with Intune Company Portal installation and device enrollment for Android devices.
+## Enrolling into Intune and installing the Company Portal
 
 - [Enroll your device in Intune](enroll-your-device-in-Intune-android.md)
 - [Create a work profile and enroll your device in Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## Things users can do when their device is enrolled in Intune
-
-The information in this section helps users with actions they can take after their Android device is enrolled in Intune.
+## Things you can do when your device is enrolled in Intune
 
 - [Use managed apps on your device](use-managed-apps-on-your-device-android.md)
 - [Encrypt your device](encrypt-your-device-android.md)
@@ -62,18 +54,3 @@ The information in this section helps users with actions they can take after the
 ## Steps to fix device and compliance issues
 
 The information in this section helps users fix issues that they might encounter when their Android device is enrolled in Intune.
-
-- [Use Verbose Logging to help your IT administrator fix device issues](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Send logs to your IT admin using email](send-logs-to-your-it-admin-by-email-android.md)
-- [Send logs to your IT admin using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
-- [Send enrollment errors to your IT administrator](send-enrollment-errors-to-your-it-admin-android.md)
-- [Device doesn't have the required minimum operating system version](you-need-to-update-your-android-device.md)
-- [Device doesn't comply with the maximum operating system version](your-android-version-isnt-yet-supported.md)
-- [Your device is rooted and you can't connect](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Your device is missing a required certificate](your-device-is-missing-a-required-certificate-landing-android.md)
-- [You need to to turn off unknown sources](you-need-to-turn-off-unknown-sources-android.md)
-- [You need to turn off USB debugging](you-need-to-turn-off-usb-debugging-android.md)
-- [You need to turn on scanning for security threats](you-need-to-turn-on-scanning-for-security-threats-android.md)
-- [Your device does not meet the minimum security patch](your-device-does-not-meet-the-minimum-security-patch-android.md)
-- [You are prompted to install Lookout for Work on your Android device](you-are-prompted-to-install-lookout-for-work-android.md)
-- [You need to resolve a threat that Lookout for Work found on your Android device](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for iOS | Intune Azure preview | Microsoft Docs
+title: How to create a compliance policy for iOStitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to create a compliance policy for iOS devices."
 keywords:
 author: andredm7
@@ -22,7 +22,7 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 

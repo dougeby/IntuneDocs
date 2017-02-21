@@ -21,7 +21,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
@@ -39,36 +39,6 @@ When you install the Company Portal app and enroll your iOS or macOS device in I
 -   Automatically set up your company email account.
 
 When you enroll your device in Intune, you are giving your IT admin permission to manage your device to help protect the company information on the device.
-
-**What IT cannot see**
-
--   Call and web history
-
--	Location
-
--   Email and text messages
-
--   Contacts
-
--	Passwords
-
--   Calendar
-
--   Camera roll
-
-**What IT can see**
-
--   Model
-
--   Serial number
-
--   Operating system
-
--   App names
-
--   Owner
-
--   Device name
 
 When your device is enrolled, your IT admin can:
 

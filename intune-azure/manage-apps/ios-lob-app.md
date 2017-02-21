@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to add iOS line-of-business apps to Intune | Intune Azure preview | Microsoft Docs
+title: How to add iOS line-of-business apps to IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about adding iOS line-of-business apps to Intune."
 keywords:
 author: robstackmsft
@@ -22,7 +22,7 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # How to add iOS line-of-business (LOB) apps to Microsoft Intune

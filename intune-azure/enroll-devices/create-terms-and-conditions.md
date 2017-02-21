@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set terms and conditions in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Set terms and conditions in Microsoft IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Set terms and conditions that users see in the Company Portal for Intune. "
 keywords:
 author: staciebarker
@@ -22,7 +22,7 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # Set terms and conditions 
