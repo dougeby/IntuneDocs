@@ -2,7 +2,7 @@
   "redirections": [
     {
         "source_path": "InTuneDocs/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md",
-        "redirect_url": "https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-users-about-microsoft-intune",
+        "redirect_url": "https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune",
         "redirect_document_id": true
     },
     {
@@ -16,11 +16,6 @@
       "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-update-your-device-OS-security-patch-android",
       "redirect_document_id": true
 
-    },
-    {
-        "source_path": "InTuneDocs/EndUser/company-portal-frequently-asked-questions.md",
-        "redirect_url": "https://docs.microsoft.com/intune/enduser/use-managed-devices-to-get-work-done",
-        "redirect_document_id": true
     },
     {
         "source_path": "intunedocs/enduser/device-doesnt-comply-with-maximum-operating-system-android.md",
