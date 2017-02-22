@@ -7,7 +7,7 @@ description: Use this guide to help you get your Windows PCs managed by the Micr
 keywords:
 author: staciebarker
 ms.author: stabar
-ms.date: 02/14/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -183,6 +183,83 @@ Use one of the following procedures to help you monitor and validate successful 
     > [!TIP]
     > Click any column heading in the report to sort the list by the contents of that column.
 
+## Uninstall the Windows client software
+
+There are two ways to unenroll the Windows client software:
+
+- From the Intune admin console (recommended method)
+- From a command prompt on the client
+
+### Unenroll by using the Intune admin console
+
+To unenroll the software client by using the Intune admin console, go to **Groups** > **All Computers** > **Devices**. Right-click the client, and select **Retire/Wipe**.
+
+### Unenroll by using a command prompt on the client
+
+Using an elevated command prompt, run one of the following commands.
+
+**Method 1**:
+
+    ```
+    "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
+    ```
+
+**Method 2** note that not all of these agents are installed on every SKU of Windows):
+
+    ```
+    wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Microsoft Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Microsoft Policy Platform" call uninstall<br>
+    wmic product where name="Microsoft Security Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client Service" call uninstall<br>
+    wmic product where name="Microsoft Easy Assist v2" call uninstall<br>
+    wmic product where name="Microsoft Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Microsoft Intune Center" call uninstall<br>
+    wmic product where name="Microsoft Online Management Update Manager" call uninstall<br>
+    wmic product where name="Microsoft Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Microsoft Intune" call uninstall<br>
+    wmic product where name="Windows Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Windows Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Windows Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Windows Policy Platform" call uninstall<br>
+    wmic product where name="Windows Security Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client Service" call uninstall<br>
+    wmic product where name="Windows Easy Assist v2" call uninstall<br>
+    wmic product where name="Windows Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Windows Intune Center" call uninstall<br>
+    wmic product where name="Windows Online Management Update Manager" call uninstall<br>
+    wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Windows Intune" call uninstall
+    ```
+
+> [!TIP]
+> Client unenrollment will leave a stale sever-side record for the affected client. The unenrollment process is asynchronous, and there are nine agents to uninstall, so it may take up to 30 mins to complete.
+
+### Check the unenrollment status
+
+Check "%ProgramFiles%\Microsoft\OnlineManagement" and ensure that only the following directories are shown on the left:
+
+- AgentInstaller
+- Logs
+- Updates
+- Common 
+
+### Remove the OnlineManagement folder
+
+The unenrollment process does not remove the OnlineManagement folder. Wait 30 minutes after the uninstall, and then run this command. If you run it too soon, the uninstall could be left in an unknown state. To remove the folder, start an elevated prompt and run:
+
+    ```
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    ```
 
 ### See also
 [Manage Windows PCs with Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
