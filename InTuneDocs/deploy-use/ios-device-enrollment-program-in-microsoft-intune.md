@@ -81,7 +81,7 @@ The following steps explain how to enroll iOS devices on "day 0" by using Apple 
 
 2. Provide **General** details including **Name** and **Description**, and specify whether devices assigned to the profile have user affinity or belong to a group:
 
-   - **Prompt for user affinity**: The device must be affiliated with a user during initial setup before it can be permitted to access company data and email as that user. **User affinity** should be set up for DEP-managed devices that belong to users and need to use the company portal (that is, to install apps). Multifactor authentication (MFA) doesn't work during enrollment on DEP devices with user affinity. After enrollment, MFA works as expected on these devices.
+   - **Prompt for user affinity**: The device must be affiliated with a user during initial setup before it can be permitted to access company data and email as that user. **User affinity** should be set up for DEP-managed devices that belong to users and need to use the company portal (that is, to install apps). Multifactor authentication (MFA) doesn't work during enrollment on DEP devices with user affinity. After enrollment, MFA works as expected on these devices. New users who are required to change their password when they first sign in cannot be prompted during enrollment on DEP devices. Additionally, users whose passwords have expired won't be prompted to reset their password during DEP enrollment and must reset the password from a different device. 
 
    > [!NOTE]
    > DEP with user affinity requires WS-Trust 1.3 Username/Mixed endpoint to be enabled to request user token.
