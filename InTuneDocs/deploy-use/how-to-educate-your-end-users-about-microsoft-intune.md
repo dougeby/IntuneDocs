@@ -60,15 +60,15 @@ Assuaging these user concerns will make your deployment smoother. We have a list
 * __Be aware.__ Your end user experience will impact your productivity, and understanding their experience will make it easier for you to troubleshoot their problems when they come to you. Understanding how end users get their apps can make it much easier for you to diagnose what issues they're experiencing, and can help you fix their problems faster.
 
 * **Android**
-  * [Using an Android device with Intune](using-your-android-device-with-intune.md)
+  * [Using an Android device with Intune](https://docs.microsoft.com/Intune/EndUser/using-your-android-device-with-intune)
   * [How your Android users get their apps](how-your-android-users-get-their-apps.md)
 
 * **iOS**
-  * [Using an iOS device with Intune](using-your-ios-device-with-intune.md)
+  * [Using an iOS device with Intune](https://docs.microsoft.com/Intune/EndUser/using-your-ios-device-with-intune)
   * [How your iOS users get their apps](how-your-ios-users-get-their-apps.md)
 
 * **Windows**
-  * [Using a Windows device with Intune](using-your-windows-device-with-intune.md)
+  * [Using a Windows device with Intune](https://docs.microsoft.com/Intune/EndUser/using-your-windows-device-with-intune)
   * [How your Windows users get their apps](how-your-windows-users-get-their-apps.md)
 
 * __Be forthcoming.__ Clearly tell your users what you're going to manage on their devices. Tell them what kind of data you're collecting and why you're collecting it. Inform them of how you're planning to use all asset data. [Microsoft believes that you have a right to as much information as possible about how we handle your customer data in the cloud](https://www.microsoft.com/trustcenter/about/transparency), and we believe that this philosophy can greatly increase your end user satisfaction with Intune.
