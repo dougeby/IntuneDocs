@@ -6,7 +6,7 @@ description: Troubleshoot common client setup problems.
 keywords:
 author: staciebarkerms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -125,11 +125,21 @@ The following table describes error codes that are displayed in **Alerts** if cl
 |**0x80070032**|One or more prerequisites for installing the client software were not found on the client computer.|Make sure that all required updates are installed on the client computer and then retry the client software installation. For more information about prerequisites for installing the client software, see [Network infrastructure requirements for Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
 |**0x80043008**|Could not start the Microsoft Online Management Updates service.|Contact Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).|
 |**0x80043009**|The client computer is already enrolled into the service.|You must retire the client computer before you can re-enroll it in the service. For instructions, see [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management).|
+|**0x8004300A**|(Stage 21) Error occurs when the enrollment package is deployed to the GPO to be installed at user scope and not machine scope. |Make sure the GPO is targeted correctly via GPSI at machine scope. To see forum postings on this subject, see this [TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/bb9fa71c-c132-4954-abb0-70be8acbd925/failed-to-install-windows-intune?forum=microsoftintuneprod).|
 |**0x8004300B**|The client software installation package cannot run because the version of Windows that is running on the client is not supported.|Intune does not support the version of Windows that is running on the client computer. For a list of supported operating systems, see [Network infrastructure requirements for Microsoft Intune](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune).|
 |**0xAB2**|The Windows Installer could not access VBScript run time for a custom action.|This error is caused by a custom action that is based on Dynamic-Link Libraries (DLLs). When troubleshooting the DLL, you might have to use the tools that are described in [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](http://go.microsoft.com/fwlink/?LinkID=234255).|
 |**0x8004300f**|The software cannot be installed because the System Center Configuration Manager client is already installed.|Remove the Configuration Manager client and then retry the client software installation.|
 |**0x80043010**|The software cannot be installed because the Open Mobile Alliance Device Management (OMADM) client is already installed.|Un-enroll the OMADM client and then retry the client software installation.|
 If installation problems persist, contact Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md). Have the client computer enrollment log (located in %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log and %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) and Windows Update log (%*windir*%\windowsupdate.log) available to show to support engineers.
+
+## What to do if Endpoint Protection is not uninstalled when you uninstall the client
+
+Sometimes the Host Protection (Endpoint Protection) agent may be left after you run the above commands. If that happens, run this command from an elevated prompt:
+
+    ```
+    "C:\Program Files\Managed Defender\Setup.exe" /x /q /s
+    ```
+
 
 ### Next steps
 If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
