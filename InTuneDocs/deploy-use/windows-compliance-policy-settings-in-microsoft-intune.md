@@ -92,6 +92,9 @@ character sets that the password must have. The four character sets are:
   -  **Code integrity is enabled**: Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel. It also detects whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.
   - **Secure Boot is enabled**: When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
 
+  > [!IMPORTANT]
+  > Windows devices do not support third-party **Early Launch Anti Malware** (ELAM) software installed as part of the Device health attestation.
+
   For information on how the HAS service works, see [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 ###  Device property settings
 - **Minimum OS required**: When a device does not meet the minimum OS
