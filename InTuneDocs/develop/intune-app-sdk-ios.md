@@ -223,9 +223,11 @@ The SDK will continue to use this authority URL for policy refresh and any subse
 
 The following actions are required if the app already uses ADAL for authentication:
 
-* In the project’s Info.plist file, under the IntuneMAMSettings dictionary with the key name `ADALClientId`, specify the client ID to be used for ADAL calls.
+1. In the project’s Info.plist file, under the IntuneMAMSettings dictionary with the key name `ADALClientId`, specify the client ID to be used for ADAL calls.
 
-* In the project’s Info.plist file, under the IntuneMAMSettings dictionary with the key name `ADALRedirectUri`, specify the redirect URI to be used for ADAL calls. You might also need to specify `ADALRedirectScheme`, depending on the format of your app’s redirect URI.
+2. Also under the IntuneMAMSettings dictionary with the key name `ADALAuthority`, specify the Azure AD authority.
+
+3. Also under the IntuneMAMSettings dictionary with the key name `ADALRedirectUri`, specify the redirect URI to be used for ADAL calls. You might also need to specify `ADALRedirectScheme`, depending on the format of your app’s redirect URI.
 
 **What if my app does not already use ADAL for authentication?**
 
