@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Your Android device isn't able to be encrypted | Microsoft Docs
+title: Your Android device seems to be encrypted, but Company Portal says otherwise
 description:
 keywords:
 author: barlanmsft
@@ -29,7 +29,7 @@ ms.custom: intune-enduser
 ---
 
 
-# Your Android device isn't able to be encrypted
+# Your Android device seems to be encrypted, but Company Portal says otherwise
 
 When you encrypt a device, you are encoding the information on it using a secret key that is known only to you and thus, prevent unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to encrypt your Android device before you can access company files, email, or data.
 
