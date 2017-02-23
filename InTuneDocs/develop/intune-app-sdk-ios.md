@@ -201,7 +201,7 @@ If you are explicitly setting the ADAL shared cache keychain group, make sure it
 
 **How do I force the Intune App SDK to use ADAL settings that my app already uses?**
 
-If your app already uses ADAL, see [Set up the Intune App SDK](#set-up-the-intune-app-sdk) for information on populating the following settings:  
+If your app already uses ADAL, see [Configure settings for the Intune App SDK](#configure-settings-for-the-intune-app-sdk) for information on populating the following settings:  
 
 * ADALClientId
 * ADALAuthority
@@ -474,6 +474,8 @@ ForegroundColor| String| Specifies the foreground color for the startup and PIN 
 AccentColor | String| Specifies the accent color for the PIN screen, like button text color and box highlight color. Accepts a hexadecimal RGB string in the form of #XXXXXX, where X can range from 0-9 or A-F. The pound sign might be omitted.| Optional. Defaults to system blue. |
 MAMTelemetryDisabled| Boolean| Specifies if the SDK will not send any telemetry data to its back end.| Optional. |
 
+> [!NOTE]
+> If your app will be released to the App Store, `MAMPolicyRequired` must be set to "NO," per App Store standards.
 
 ## Telemetry
 
