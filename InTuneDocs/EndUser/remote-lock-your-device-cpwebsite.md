@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,13 +49,13 @@ To be safe, you can lock it by using the Remote Lock option on the [Company Port
 
   ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
 
-2.	The device will open in a popup window. Tap the **Remote Lock** button.
+3.	The device will open in a popup window. Tap the **Remote Lock** button.
 
 	![All options for a selected device on the Company Portal website, including Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/iwp-screen-with-all-options.png)
 
-3.	A notice will appear to let you know that you are about to lock your device. Tap **Remote Lock**, and the Company Portal website will try to lock your device.
+4.	A notice will appear to let you know that you are about to lock your device. Tap **Remote Lock**, and the Company Portal website will try to lock your device.
 
-	Once you tap **Remote Lock**, a “Remote lock pending” message will appear.  When Remote Lock succeeds, the status changes to “Remote lock successful.”
+	Once you select **Remote Lock**, a “Remote lock pending” message will appear.  When Remote Lock succeeds, the status changes to “Remote lock successful.”
 
 	The Remote Lock status displays in three places:
 
