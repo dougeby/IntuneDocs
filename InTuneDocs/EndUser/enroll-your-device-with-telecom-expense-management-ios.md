@@ -12,7 +12,7 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid:
+ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
 searchScope:
  - Company Portal
 
@@ -30,8 +30,10 @@ ms.custom: intune-enduser
 
 # Enroll your iOS device in telecom expense management
 
-Your organization may be using telecom expense management software to ensure that
+Your organization may be using telecom expense management software to ensure that their data and voice plans are being used within acceptable limits. Once you have completed enrolling your device, you will then be prompted to specify whether the device you've enrolled is a corporate or personal device.
 
-1.  When a message asks if you want to open the page in the Company Portal, tap **Open**.
+	![A screenshot of the "selecting the best category for a device" screen on an iOS device. It shows a selection of corporate or personal enrollment.](./media/ios-enroll-10-corporate-enrollment-tem.png)
 
-	![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
+Select the appropriate option, and you will receive a notification to install the [__Datalert__](https://itunes.apple.com/us/app/datalert/id771029268?mt=8) app from the App Store. The Datalert app is how your organization can measure data usage. You will need to provide information such as your phone number and verify using a code. Once you've enrolled, you will begin to see your data usage in the Datalert app.
+
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
