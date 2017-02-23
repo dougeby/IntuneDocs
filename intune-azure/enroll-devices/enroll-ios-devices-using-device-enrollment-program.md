@@ -68,7 +68,7 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 6. For **User Affinity** choose whether devices with this profile will enroll with or without user affinity.
 
- - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. Choose user affinity for DEP-managed devices that belong to users and that need to use the company portal for services like installing apps. Note that Multifactor authentication (MFA) doesn't work during enrollment on DEP devices with user affinity. After enrollment, MFA works as expected on these devices.
+ - **Enroll with user affinity** - The device must be affiliated with a user during initial setup and can then be permitted to access company data and email. Choose user affinity for DEP-managed devices that belong to users and that need to use the company portal for services like installing apps. Note that Multifactor authentication (MFA) doesn't work during enrollment on DEP devices with user affinity. After enrollment, MFA works as expected on these devices. New users who are required to change their password when they first sign in cannot be prompted during enrollment on DEP devices. Additionally, users whose passwords have expired won't be prompted to reset their password during DEP enrollment and must reset the password from a different device.
 
 	>[!NOTE]
 	>DEP with user affinity requires WS-Trust 1.3 Username/Mixed endpoint to be enabled to request user token.
@@ -106,11 +106,11 @@ A device enrollment profile defines the settings applied to a group of devices. 
 
 ## Assign Apple DEP serial numbers to your MDM server
 
-1. Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://deploy.apple.com) and sign in with your company Apple ID. 
+1. Go to the [Device Enrollment Program Portal](https://deploy.apple.com) (https://deploy.apple.com) and sign in with your company Apple ID.
 
-2. Go to  **Deployment Program** &gt; **Device Enrollment Program** &gt; **Manage Devices**. 
+2. Go to  **Deployment Program** &gt; **Device Enrollment Program** &gt; **Manage Devices**.
 
-3. Specify how you will **Choose Devices**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**. 
+3. Specify how you will **Choose Devices**, and then provide device information and specify details by device **Serial Number**, **Order Number**, or **Upload CSV File**.
 
 4. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
@@ -142,7 +142,7 @@ You can now distribute corporate-owned devices to users. When an iOS device is t
 
 Devices that are configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete the additional steps described below to complete the Setup Assistant and install the Company Portal app.
 
-### How users enroll corporate-owned iOS devices with user affinity 
+### How users enroll corporate-owned iOS devices with user affinity
 
 1. When users turn on their device, they are prompted to complete the Setup Assistant. During setup, users are prompted for their credentials. They must use the credentials (i.e., the unique personal name or UPN) that are associated with their subscription in Intune.
 
