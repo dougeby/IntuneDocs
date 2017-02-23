@@ -31,7 +31,7 @@ ms.custom: intune-classic
 > [!NOTE]
 > You might want to first read the [Get Started with Intune App SDK Guide](intune-app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
 
-The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies--in the form of mobile app management (MAM)--into your iOS app. A MAM-enabled application is one that's integrated with the Intune App SDK. It lets IT admins deploy policies to your mobile app when Intune actively manages the app.
+The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies -- also known as MAM policies -- into your iOS app. A MAM-enabled application is one that is integrated with the Intune App SDK. It lets IT admins deploy app protection policies to your mobile app when Intune actively manages the app.
 
 ## Prerequisites
 
@@ -207,7 +207,6 @@ If your app already uses ADAL, see [Set up the Intune App SDK](#set-up-the-intun
 * ADALRedirectUri
 * ADALRedirectScheme
 * ADALCacheKeychainGroupOverride
-
 
 
 **How do I override the Azure AD authority URL with a tenant-specific URL supplied at runtime?**
@@ -512,12 +511,16 @@ Note that an identity is simply defined as a string. Identities are case-insensi
 An identity is simply the user name of an account (for example, user@contoso.com). Developers can set the identity of the app on the following levels:
 
 * **Process identity**: Sets the process-wide identity and is mainly used for single identity applications. This identity affects all tasks, files, and UI.
+
 * **UI identity**: Determines what policies are applied to UI tasks on the main thread, like cut/copy/paste, PIN, authentication, and data sharing. The UI identity does not affect file tasks like encryption and backup.
+
 * **Thread identity**: Affects what policies are applied on the current thread. This identity affects all tasks, files, and UI.
 
 The app is responsible for setting the identities appropriately, whether or not the user is managed.
 
-At any time, every thread has an effective identity for UI tasks and file tasks. This is the identity that's used to check what policies, if any, should be applied. If the identity is "no identity" or the user is not managed, no policies will be applied.
+At any time, every thread has an effective identity for UI tasks and file tasks. This is the identity that's used to check what policies, if any, should be applied. If the identity is "no identity" or the user is not managed, no policies will be applied. The diagrams below show how the effective identities are determined.
+
+  ![Intune App SDK iOS: linked frameworks and libraries](../media/intune-app-sdk/ios-thread-identities.png)
 
 ### Thread queues
 
