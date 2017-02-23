@@ -35,7 +35,7 @@ To remove your device:
 
   ![An image of the Company Portal website with an expanded side menu on the left side of the screen, with Home, All Apps, My Devices, Helpdesk, and Signout buttons.](/media/iwp-expanded-sidebar.png)
 
-2. On the __My Devices__ page, select the name of the device you want to lock.
+2. On the __My Devices__ page, select the name of the device you want to remove.
 
     ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
 
