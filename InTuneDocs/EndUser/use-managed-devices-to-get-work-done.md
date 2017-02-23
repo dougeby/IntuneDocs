@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -87,12 +87,9 @@ When you *remove* a computer or device from the Company Portal, you are unenroll
 
 When you *reset* a computer or device, the Company Portal tries to reset your computer or device back the manufacturer’s default settings. Resetting your device removes all company and personal data from the device! If you have lost your device, you can also reset it remotely from the Company Portal website.
 
-To see how to reset your device, choose one of the following links:
+You can find out how to reset your device here:
 
-- [Reset (erase) your Android device](reset-erase-your-lost-or-stolen-device-android.md)
-- [Reset (erase) your iOS or macOS device](reset-erase-your-lost-or-stolen-device-ios.md)
-- [Reset your Windows device](reset-erase-your-lost-or-stolen-device-windows.md)
-- [Reset your device from the Company Portal website](reset-your-device-cpwebsite.md)
+- [Reset (erase) your device from the Company Portal website](reset-erase-your-device-cpwebsite.md)
 
 ## What if I can't see my device in the Company Portal?
 For you to be able to see a device, it must first be added to the Company Portal. Go to whichever Company Portal was recommended by your admin and follow the steps for your device. You also won’t see devices that are owned and managed by your company.
