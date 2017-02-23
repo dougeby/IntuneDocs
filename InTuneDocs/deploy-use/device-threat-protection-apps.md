@@ -84,7 +84,7 @@ This article explains how to configure and deploy the Lookout for Work app for A
 
 6. **To deploy the app to users**, select the Lookout for Work app, and choose **Manage Deployment**.
 
-  You must select the same users that were added to the Enrollment Management option in the Lookout  console.  See Step 3 in the [configure your subscription with Lookout device threat protection section](configure-and-deploy-lookout-for-work-apps.md) for information about adding user groups to Lookout MTP.
+  You must select the same users that were added to the Enrollment Management option in the Lookout  console.  See Step 3 in the [configure your subscription with Lookout device threat protection section](https://docs.microsoft.com/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps) for information about adding user groups to Lookout MTP.
 
   >[!IMPORTANT]
   > The Intune app deployment wizard is not aware of the Azure AD user groups and uses the Intune user groups instead, so you must create an Intune user group based on the Azure AD user group that is enrolled in the Lookout console as described in [this](plan-your-user-and-device-groups.md) topic.
@@ -100,4 +100,4 @@ When the user opens the Lookout for Work on the device they are prompted to acti
 * [You need to resolve a threat that Lookout for Work found on your Android device](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## Next steps
-* [Enable device threat protection rule in the compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md)
+* [Enable device threat protection rule in the compliance policy](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
