@@ -91,4 +91,5 @@ Wi-Fi profiles managed by Android for Work are removed when the device is retire
 
 ## Next steps
 [Enabling Android for Work enrollment](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work)
+
 [Deploying apps for Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps)
