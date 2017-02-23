@@ -43,4 +43,4 @@ This completes the setup of the Lookout and Intune integration in the Intune adm
 
 
 ## Next steps
-[Configure Lookout for Work app ](configure-and-deploy-lookout-for-work-apps.md)
+[Configure Lookout for Work app ](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)
