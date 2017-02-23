@@ -89,7 +89,7 @@ When you *reset* a computer or device, the Company Portal tries to reset your co
 
 You can find out how to reset your device here:
 
-- [Reset (erase) your device from the Company Portal website](reset-your-device-cpwebsite.md)
+- [Reset (erase) your device from the Company Portal website](reset-erase-your-device-cpwebsite.md)
 
 ## What if I can't see my device in the Company Portal?
 For you to be able to see a device, it must first be added to the Company Portal. Go to whichever Company Portal was recommended by your admin and follow the steps for your device. You also won’t see devices that are owned and managed by your company.
