@@ -41,9 +41,9 @@ To be safe, you can lock it by using the Remote Lock option on the [Company Port
 
 ## To use Remote Lock to lock your device
 
-1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](Intune/whats-new/media/CP_hamburger_menu.png), then select __My Devices__.
+1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/whats-new/media/CP_hamburger_menu.png), then select __My Devices__.
 
-  ![An image of the Company Portal website with an expanded side menu on the left side of the screen, with Home, All Apps, My Devices, Helpdesk, and Signout buttons.](./media/iwp-expanded-sidebar.png)
+  ![An image of the Company Portal website with an expanded side menu on the left side of the screen, with Home, All Apps, My Devices, Helpdesk, and Signout buttons.](/media/iwp-expanded-sidebar.png)
 
 2. On the __My Devices__ page, select the name of the device you want to lock.
 
