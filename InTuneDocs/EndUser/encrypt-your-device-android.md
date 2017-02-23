@@ -7,12 +7,14 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3searchScope: - Company Portal
+ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
+searchScope:
+ - Company Portal
 
 # optional metadata
 
@@ -44,7 +46,7 @@ If you unenroll your phone, it will remain encrypted.
 3.  Follow the on-screen instructions. During encryption, your device might restart several times.
 
 > [!Note]
-> Certain Android devices cannot be encrypted. Find out more [here](your-device-isnt-able-to-be-encrypted-android.md).
+> Certain Android devices cannot be encrypted. Find out more [here](your-device-appears-encrypted-but-cp-says-otherwise-android.md.md).
 
 ### What to do if you have issues
 **Issue**: You have already encrypted your device, and you see one of the following:
