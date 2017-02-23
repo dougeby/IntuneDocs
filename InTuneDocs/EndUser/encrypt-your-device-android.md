@@ -46,7 +46,7 @@ If you unenroll your phone, it will remain encrypted.
 3.  Follow the on-screen instructions. During encryption, your device might restart several times.
 
 > [!Note]
-> Certain Android devices cannot be encrypted. Find out more [here](your-device-appears-encrypted-but-cp-says-otherwise-android.md.md).
+> Certain Android devices cannot be encrypted. Find out more [here](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### What to do if you have issues
 **Issue**: You have already encrypted your device, and you see one of the following:
