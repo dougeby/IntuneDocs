@@ -169,7 +169,7 @@ Microsoft Support will ask you to confirm the following information:
 
 If you are using coexistence, you need to verify both the Intune and Office 365 checklists.
 
-### Authority reset from Intune to Configuration Manager
+### Reset MDM authority from Intune to Configuration Manager
 
 Complete these steps before contacting Microsoft Support to reset your MDM authority.
 
@@ -183,7 +183,7 @@ Complete these steps before contacting Microsoft Support to reset your MDM autho
 - Delete all polices that are for MDM Devices under **Policy** > **Configuration Policies**.
 - Delete all published applications that are for MDM Devices in **Apps** > **Managed Software**.
 
-### Authority reset from Configuration Manager to Intune
+### Reset MDM authority from Configuration Manager to Intune
 
 Complete these steps before contacting Microsoft Support to reset your MDM authority.
 
@@ -197,7 +197,7 @@ Complete these steps before contacting Microsoft Support to reset your MDM autho
 - Restart the SMS Executive Service.
 - Provide us with some example users so that we can verify, after the process completes, that Configuration Manager licenses were removed.
 
-### Authority reset from Office 365 to Configuration Manager
+### Reset MDM authority from Office 365 to Configuration Manager
 
 1. Navigate to [https://protection.office.com](https://protection.office.com).
 2. Select the **Security Policies** tab, and select **Device Management**. 
