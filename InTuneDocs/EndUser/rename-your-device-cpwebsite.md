@@ -37,7 +37,6 @@ To rename your device:
 
   ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
 
-
 3.	The device will open in a popup window. Tap the **Rename** button.
 
 	![All options for a selected device on the Company Portal website, including Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/iwp-screen-with-all-options.png)
