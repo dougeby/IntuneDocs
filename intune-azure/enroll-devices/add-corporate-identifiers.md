@@ -4,10 +4,10 @@
 title: Add IMEI identifiers to IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to add corporate identifiers (IMEI numbers) to Microsoft Intune. "
 keywords:
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,6 +47,9 @@ In a text editor, the .csv list looks something like this:
 3. If you are importing a file with new details that will overwrite the existing ones, select **Overwrite details for existing identifiers** to have the new details replace the existing details.
 
 4. Navigate to the IMEI CSV file, and select **Add**.
+
+> [!IMPORTANT]
+> If you are importing IMEI numbers for Android devices, be aware that some Android devices can have multiple IMEI numbers. If you import an IMEI number but it is not the IMEI reported to Intune by the device, the device will be classifed as a personal device instead of a company-owned device.
 
 **To delete a .csv list of corporate identifiers**
 
