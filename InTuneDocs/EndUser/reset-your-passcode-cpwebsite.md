@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,21 +34,26 @@ If you lose your device PIN or password for a device that you have enrolled in I
 
 To reset your passcode:
 
-1.  Open the [Company Portal website](http://portal.manage.microsoft.com) and choose the device whose passcode you want to reset.
+1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/whats-new/media/CP_hamburger_menu.png), then select __My Devices__.
 
-2.  Choose **Reset Passcode**.
+2. On the __My Devices__ page, select the name of the device whose passcode you want to reset.
 
-    ![Device details with Reset Passcode button](./media/iwp-screen-with-all-options.png)
+  ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Choose **Sign out**, and then sign back in with your work or school credentials. You have to sign back in within five minutes.
+3.	The device will open in a popup window. Select the **Reset Passcode** button.
 
-    ![Reset message with sign-out button](./media/iwp-2-sign-out.png)
+	![All options for a selected device on the Company Portal website, including Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/iwp-screen-with-all-options.png)
 
-4.  Choose **Reset Passcode**.
+4.  A banner will appear asking you to confirm that you want to reset your passcode, and that your device will sign you out after it does this. You will then need to wait 5 minutes before signing in again.
 
-    ![Message that explains what happens when you reset the passcode](./media/iwp-3-tap-reset-passcode-after-signin.png)
+  ![The reset passcode banner with its warning about resetting device passcode and how the user will be logged out. The buttons for user input are Sign Out and Cancel.](./media/iwp-reset-passcode-popup.png)
 
-    Check the table to see how **Reset Passcode** works on your device.
+4.  Select **Sign out**, and you will receive on final message letting you know about the removal of the passcode from the device. If you do not have the device with you, do not remove the passcode, as whomever has physical access to the device will be able to access most of the information on it - personal or corporate.
+
+  ![The second reset passcode banner with its warning about resetting device passcode and how the passcode will be removed from the device. It also advises how to set a new passcode by going to device settings to do so.](./media/iwp-reset-passcode-2nd-popup.png)
+
+
+As different devices have different types of passcodes, you can find out how resetting your passcode could impact your specific device in the table below. 
 
     |Device Type|What Happens When You Reset|
     |------------|-----------|
