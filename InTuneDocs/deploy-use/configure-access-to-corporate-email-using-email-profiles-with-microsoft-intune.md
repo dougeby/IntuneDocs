@@ -46,7 +46,7 @@ You can use email profiles to configure the native email client on the following
 -	Android for Work
 
 >[!NOTE]
->Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate profile.
+>Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate profile. Email apps such as Nine Work might not be free. Review the app’s licensing details or contact the app company with any questions.
 
 In addition to setting up an email account on the device, you can set up how much email to synchronize, and depending on the device type, which content types to synchronize.
 
