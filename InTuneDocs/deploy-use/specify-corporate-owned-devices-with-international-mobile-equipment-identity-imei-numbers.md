@@ -6,7 +6,7 @@ description: Microsoft Intune lets admins import IMEI numbers for mobile device 
 keywords:
 author: staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
