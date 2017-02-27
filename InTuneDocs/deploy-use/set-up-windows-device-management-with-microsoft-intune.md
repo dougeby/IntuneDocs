@@ -6,7 +6,7 @@ description: Enable mobile device management (MDM) for Windows devices with Micr
 keywords:
 author: NathBarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/26/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -14,7 +14,7 @@ ms.technology:
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 
 # optional metadata
-
+ht
 #ROBOTS:
 #audience:
 #ms.devlang:
@@ -54,7 +54,7 @@ If you haven’t already, prepare for mobile device management by  [setting the 
 Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
 
 
-   Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, https://enrollment.manage.microsoft.com.
+   Although creating CNAME DNS entries is optional, CNAME records make enrollment easier for users. If no enrollment CNAME record is found, users are prompted to manually enter the MDM server name, enrollment.manage.microsoft.com.
 
    CNAME resource records must have the following information:
 
