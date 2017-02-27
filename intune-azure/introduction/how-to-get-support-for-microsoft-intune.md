@@ -72,7 +72,7 @@ Please review the [definition of a support incident](#definition-of-a-support-in
 2.  Choose the **Admin** tile.
 3.  On the left, under **Support**, choose **Support** to open a ticket.
 
-	![Open a new Intune support ticket](../media/support-open-ticket.png)
+	![Open a new Intune support ticket](./media/support-open-ticket.png)
 
 	>[!NOTE]
 	>  Customers who have, or have had, an O365 account with 100 or fewer licenses, will see this message. If you see it, refer to [Create a support ticket with alternate methods](#create-a-support-ticket-with-alternate-methods).
