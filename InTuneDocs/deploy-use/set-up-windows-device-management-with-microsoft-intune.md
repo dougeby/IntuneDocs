@@ -14,7 +14,7 @@ ms.technology:
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 
 # optional metadata
-ht
+
 #ROBOTS:
 #audience:
 #ms.devlang:
