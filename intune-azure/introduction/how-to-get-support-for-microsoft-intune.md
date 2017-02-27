@@ -2,8 +2,9 @@
 # required metadata
 
 
-title: How to get support | Microsoft Docs
-description: Support is available both online and by telephone for paid and trial subscriptions.
+title: How to get support for Microsoft Intune
+titleSuffix: "Intune Azure preview"
+description: "Intune Azure preview: Support is available both online and by telephone for paid and trial subscriptions."
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
@@ -28,7 +29,7 @@ ms.custom: intune-classic
 
 # How to get support for Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
