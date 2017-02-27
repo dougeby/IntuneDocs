@@ -77,7 +77,7 @@ Please review the [definition of a support incident](#definition-of-a-support-in
 	>[!NOTE]
 	>  Customers who have, or have had, an O365 account with 100 or fewer licenses, will see this message. If you see it, refer to [Create a support ticket with alternate methods](#create-a-support-ticket-with-alternate-methods).
 
-	> ![Alternate Intune support](../media/alternate-support-ui.png)
+	> ![Alternate Intune support](./media/alternate-support-ui.png)
 
     -   For billing, licensing, and account issues, select **Billing and product info**.
 
@@ -92,13 +92,13 @@ Please review the [definition of a support incident](#definition-of-a-support-in
 
 Follow this procedure if your support page looks like this:
 
-![Alternate Intune support](../media/alternate-support-ui.png)
+![Alternate Intune support](./media/alternate-support-ui.png)
 
 
 1. Choose **Need help**.
 2. In the text box, provide a description of your issue, and then choose **Get help**.
 
-	![Alternate Intune support ticket](../media/support-need-help.png)
+	![Alternate Intune support ticket](./media/support-need-help.png)
 
 3. Review the suggested online resources, or choose **Let us call you** to receive a call from Microsoft Support.
 
