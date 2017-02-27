@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -84,6 +84,12 @@ The admin experience in the Azure portal will use the already announced new grou
 If you have any questions about the timeline for your tenant’s migration, contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 You can find what's new in the Intune preview in Azure [here](https://docs.microsoft.com/intune-azure/introduction/whats-new).
+
+## What's coming
+
+### Apple to require updates for Application Transport Security
+
+Beginning in Spring 2017, Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS/macOS Company Portal apps. Review our [Intune support blog](https://blogs.technet.microsoft.com/intunesupport/) for more details. 
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
