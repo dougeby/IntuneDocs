@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Enroll iOS devices with Apple Configurator and direct enrollmenttitleSuffix: "Intune Azure preview"
+title: Enroll iOS devices with Apple Configurator and direct enrollment
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with direct enrollment."
 keywords:
 author: staciebarker
@@ -47,7 +48,7 @@ Complete the following prerequisites before setting up iOS device enrollment:
 - [Configure domains](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Set the MDM Authority](set-mdm-authority.md)
 - [Create groups](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [Configure the Company Portal](/intune-azure/manage-apps/company-portal-app.md)
+- [Configure the Company Portal](/intune-azure/manage-apps/company-portal-app)
 - Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](get-an-apple-mdm-push-certificate.md)
 - Ensure that you have physical access to iOS devices
