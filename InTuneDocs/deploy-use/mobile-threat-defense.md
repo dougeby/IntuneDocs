@@ -54,3 +54,5 @@ Access is granted when the device is remediated:
 ## Mobile Threat Defense partners
 
 Learn how to protect access to company resource based on device, network, and application risk with:
+
+- [Lookout](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector)
