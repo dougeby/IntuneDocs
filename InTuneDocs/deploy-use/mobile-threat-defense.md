@@ -45,11 +45,11 @@ The connector protects company resources by creating a channel of communication 
 
 When a device is considered infected by the Mobile Threat Defense solution:
 
-![](http://i.imgur.com/tetdVMr.png)
+![](http://i.imgur.com/FWaPvkm.png)
 
 Access is granted when the device is remediated:
 
-![](http://i.imgur.com/k1JHL0D.png)
+![](http://i.imgur.com/RPeHUla.png)
 
 ## Mobile Threat Defense partners
 
