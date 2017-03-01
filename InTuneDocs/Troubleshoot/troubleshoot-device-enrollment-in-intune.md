@@ -7,7 +7,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/24/17
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -269,7 +269,7 @@ If the Server certificate is installed correctly, you see all check marks in the
 
 **Resolution:** Share the following resolutions with your end users to help them regain access to corporate resources.
 
-When users start the iOS Company Portal app, it can tell if their device has lost contact with Intune. If it detects that there is no contact, it automatically tries to sync with Intune to reconnect, and users will see the **Trying to sync…** inline notification. 
+When users start the iOS Company Portal app, it can tell if their device has lost contact with Intune. If it detects that there is no contact, it automatically tries to sync with Intune to reconnect, and users will see the **Trying to sync…** inline notification.
 
   ![Trying to sync notification](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -277,11 +277,11 @@ If the sync is successful, you see a **Sync successful** inline notification in 
 
   ![Sync successful notification](./media/ios_cp_app_sync_successful_notification.png)
 
-If the sync is unsuccessful, users see an **Unable to sync** inline notification in the iOS Company Portal app. 
+If the sync is unsuccessful, users see an **Unable to sync** inline notification in the iOS Company Portal app.
 
   ![Unable to sync notification](./media/ios_cp_app_unable_to_sync_notification.png)
 
-To fix the issue, users must select the **Set up** button, which is to the right of the **Unable to sync** notification. The Set up button takes users to the Company Access Setup flow screen, where they can follow the prompts to enroll their device. 
+To fix the issue, users must select the **Set up** button, which is to the right of the **Unable to sync** notification. The Set up button takes users to the Company Access Setup flow screen, where they can follow the prompts to enroll their device.
 
   ![Company Access Setup screen](./media/ios_cp_app_company_access_setup.png)
 

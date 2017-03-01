@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -89,7 +89,7 @@ You can find what's new in the Intune preview in Azure [here](https://docs.micro
 
 ### Apple to require updates for Application Transport Security <!--748318-->
 
-Beginning in Spring 2017, Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS/macOS Company Portal apps. Review our [Intune support blog](https://aka.ms/compportalats) for more details. 
+Beginning in Spring 2017, Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps. Review our [Intune support blog](https://aka.ms/compportalats) for more details. 
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
