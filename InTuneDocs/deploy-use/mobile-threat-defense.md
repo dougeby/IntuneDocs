@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune Mobile Threat Defense connectors allow you to leverage your chosen Mobile Threat Defense vendor as a source of information for your compliance policies and conditional access rules. This allows IT Administrators to add a layer of protection to their corporate resources, specifically from compromised mobile devices accessing sensitive corporate resources.
+Intune Mobile Threat Defense connectors allow you to leverage your chosen Mobile Threat Defense vendor as a source of information for your compliance policies and conditional access rules. This allows IT Administrators to add a layer of protection to their corporate resources such as Exchange and Sharepoint, specifically from compromised mobile devices.
 
 ## What problem does this solve?
 
@@ -45,11 +45,11 @@ The connector protects company resources by creating a channel of communication 
 
 When a device is considered infected by the Mobile Threat Defense solution:
 
-![](http://i.imgur.com/FWaPvkm.png)
+![](http://i.imgur.com/E3PvCT4.png)
 
 Access is granted when the device is remediated:
 
-![](http://i.imgur.com/RPeHUla.png)
+![](http://i.imgur.com/LzDqHSB.png)
 
 ## Mobile Threat Defense partners
 
