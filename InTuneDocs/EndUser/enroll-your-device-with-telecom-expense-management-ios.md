@@ -32,7 +32,7 @@ ms.custom: intune-enduser
 
 Your organization may be using telecom expense management software to ensure that their data and voice plans are being used within acceptable limits. Once you have completed enrolling your device, you will then be prompted select the best category for that device.
 
-	![A screenshot of the "selecting the best category for a device" screen on an iOS device. It shows a selection of corporate or personal enrollment.](./media/ios-enroll-10-tem-select-best-category.png)
+  ![A screenshot of the "selecting the best category for a device" screen on an iOS device. It shows a selection of corporate or personal enrollment.](./media/ios-enroll-10-tem-select-best-category.png)
 
 1. Select the appropriate option, and you will receive a notification to install the [__Datalert__](https://itunes.apple.com/us/app/datalert/id771029268?mt=8) app from the App Store. The Datalert app is how your organization can measure data usage. You will need to provide information such as your phone number and verify using a code. .
 
