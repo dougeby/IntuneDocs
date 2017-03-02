@@ -99,7 +99,7 @@ If you get an error while you try to enroll your device in Intune, you can [send
 
 	![Enter PIN or password](./media/and-enroll-6-PIN-native.png)
 
-13.  If you are using a Samsung Knox device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the following screen that shows that your device is being enrolled.
+13.  If you are using a Samsung KNOX device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the following screen that shows that your device is being enrolled.
 
 	![Samsung KNOX privacy policy](./media/and-enroll-7-knox-privacy-policy.png)
 
