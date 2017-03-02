@@ -1,3 +1,3 @@
 ---
-redirect_url: https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector
+redirect_url: https://docs.microsoft.com/intune/deploy-use/lookout-mobile-threat-defense-connector
 ---
