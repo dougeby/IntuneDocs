@@ -74,23 +74,31 @@ The objective of the Intune App SDK for iOS is to add management capabilities to
 To enable the Intune App SDK, follow these steps:
 
 1. **Option 1**: Link to the `libIntuneMAM.a` library. Drag the `libIntuneMAM.a` library to the **Linked Frameworks and Libraries** list of the project target.
+
     ![Intune App SDK iOS: linked frameworks and libraries](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
 	> [!NOTE]
 	> If you plan to release your app to the App Store, please use the version of `libIntuneMAM.a` that is built for release and not the debug version. The release version will be in the **release** folder. The debug version has verbose output that helps troubleshoot problems with the Intune App SDK.
 
-    **Option 2**: Link `IntuneMAM.framework` to your project. Drag `IntuneMAM.framework` to the **Linked Frameworks and Libraries** list of the project target.
+	Add `-force_load {PATH_TO_LIB}/libIntuneMAM.a` to either of the following, replacing `{PATH_TO_LIB}` with the Intune App SDK location:
+	  * The project’s `OTHER_LDFLAGS` build configuration setting
+	  * The UI’s **Other Linker Flags**
+
+		> [!NOTE]
+		> To find `PATH_TO_LIB`, select the file `libIntuneMAM.a` and choose **Get Info** from the **File** menu. Copy and paste the **Where** information (the path) from the **General** section of the **Info** window.
+
+2. **Option 2**: Link `IntuneMAM.framework` to your project. Drag `IntuneMAM.framework` to the **Linked Frameworks and Libraries** list of the project target.
 
 	> [!NOTE]
 	> If you use the framework, you must manually strip out the simulator architectures from the universal framework before you submit your app to the App Store. See the section "Submitting your app to the App Store."
 
-2. Add these iOS frameworks to the project:
+3. Add these iOS frameworks to the project:
     * MessageUI.framework
     * Security.framework
     * MobileCoreServices.framework
     * SystemConfiguration.framework
-    * libsqlite3.dylib
-    * libc++.dylib
+    * libsqlite3.tbd
+    * libc++.tbd
     * ImageIO.framework
     * LocalAuthentication.framework
     * AudioToolbox.framework
@@ -98,23 +106,19 @@ To enable the Intune App SDK, follow these steps:
 	> [!NOTE]
 	> If the application is targeted for iOS 7, set the `Status` attribute of `LocalAuthentication.framework` to Optional. If `Status` is not set, the application will fail to start on iOS 7.
 	>
-	> Also, Xcode 7 has switched `.dylib` extensions to `.tbd`.
+	> Also, Xcode 7 has changed `.dylib` extensions to `.tbd`.
 
-3. Add the `IntuneMAMResources.bundle` resource bundle to the project by dragging the resource bundle under **Copy Bundle Resources** within **Build Phases**.
-![Intune App SDK iOS: copy bundle resources](../media/intune-app-sdk-ios-copy-bundle-resources.png)
+4. Add the `IntuneMAMResources.bundle` resource bundle to the project by dragging the resource bundle under **Copy Bundle Resources** within **Build Phases**.
 
-4. Add `-force_load {PATH_TO_LIB}/libIntuneMAM.a` to either of the following, replacing `{PATH_TO_LIB}` with the Intune App SDK location:
-    * The project’s `OTHER_LDFLAGS` build configuration setting
-    * The UI’s **Other Linker Flags**<br>
+	![Intune App SDK iOS: copy bundle resources](../media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-	> [!NOTE]
-	> To find `PATH_TO_LIB`, select the file `libIntuneMAM.a` and choose **Get Info** from the **File** menu. Copy and paste the **Where** information (the path) from the **General** section of the **Info** window.
-
-5. If your mobile app defines a main nib or storyboard file in its Info.plist file, remove the **Main Storyboard** or **Main Nib** field. Add the storyboard or nib values you removed previously under a new dictionary named IntuneMAMSettings with the following key names, as applicable:
+5. If your mobile app defines a main nib or storyboard file in its Info.plist file, cut the **Main Storyboard** or **Main Nib** field(s). In Info.plist, paste these fields and their corresponding values under a new dictionary named **IntuneMAMSettings** with the following key names, as applicable:
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
     * MainNibFile~ipad
+
+
 
 	> [!NOTE]
     > If your mobile app doesn’t define a main nib or storyboard file in its Info.plist file, these settings are not required.
@@ -152,20 +156,20 @@ To enable the Intune App SDK, follow these steps:
 	> [!NOTE]
 	> An entitlements file is an XML file that's unique to your mobile application. It's used to specify special permissions and capabilities in your iOS app.
 
-8. If the app defines URL schemes in its Info.plist file, add another scheme, with a `-intunemam` suffix, for each URL scheme.
+7. If the app defines URL schemes in its Info.plist file, add another scheme, with a `-intunemam` suffix, for each URL scheme.
 
-9. For mobile apps developed on iOS 9+, include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Additionally, for each protocol listed, add a new protocol and append it with `-intunemam`. You must also include `http-intunemam`, `https-intunemam`, and `ms-outlook-intunemam` in the array.
+8. For mobile apps developed on iOS 9+, include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Additionally, for each protocol listed, add a new protocol and append it with `-intunemam`. You must also include `http-intunemam`, `https-intunemam`, and `ms-outlook-intunemam` in the array.
 
-10. If the app has app groups defined in its entitlements, add these groups to the IntuneMAMSettings dictionary under the `AppGroupIdentifiers` key as an array of strings.
+9. If the app has app groups defined in its entitlements, add these groups to the IntuneMAMSettings dictionary under the `AppGroupIdentifiers` key as an array of strings.
 
-11. Link your mobile application to the Azure Directory Authentication Library (ADAL). The ADAL library for Objective C is [available on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
+10. Link your mobile application to the Azure Directory Authentication Library (ADAL). The ADAL library for Objective C is [available on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
     > [!NOTE]
 	> The Intune App SDK has been tested against the ADAL broker branch code from June 19, 2015. Please ensure that you are linking with the latest/working version of the ADAL library.
 
-12. Include the `ADALiOSBundle.bundle` resource bundle in the project by dragging the resource bundle under **Copy Bundle Resources** within **Build Phases**.
+11. Include the `ADALiOSBundle.bundle` resource bundle in the project by dragging the resource bundle under **Copy Bundle Resources** within **Build Phases**.
 
-13. Use the `-force_load PATH_TO_ADAL_LIBRARY` linker option when you're linking to the library.
+12. Use the `-force_load PATH_TO_ADAL_LIBRARY` linker option when you're linking to the library.
 
     Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` build configuration setting or **Other Linker Flags** in the UI. `PATH_TO_LIB` should be replaced with the location of the ADAL binaries.
 
@@ -447,7 +451,9 @@ The `IntuneMAMSaveLocationLocalDrive` constant should be used when the app is sa
 
 ## Configure settings for the Intune App SDK
 
-You use the **IntuneMAMSettings** dictionary in the application’s Info.plist file to set up and configure the Intune App SDK. The following table lists all supported settings.
+You can use the **IntuneMAMSettings** dictionary in the application’s Info.plist file to set up and configure the Intune App SDK. If the IntuneMAMSettings dictionary is not seen in your Info.plist file, you should create a dictionary in your app's Info.plist with the field name "IntuneMAMSettings." 
+
+Under the IntuneMAMSettings dictionary, you can add key/value rows of configuration settings to configure the SDK. The table below lists all supported settings.
 
 Some of these settings might have been covered in previous sections, and some do not apply to all apps.
 
