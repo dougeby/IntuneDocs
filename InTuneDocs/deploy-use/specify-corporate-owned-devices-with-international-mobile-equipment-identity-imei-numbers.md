@@ -4,7 +4,7 @@
 title: Specify IMEI numbers | Microsoft Docs
 description: Microsoft Intune lets admins import IMEI numbers for mobile device platforms to help identify corporate-owned mobile devices
 keywords:
-author: staciebarkerms.author: stabar
+author: NathBarnms.author: nathbarn
 manager: angrobe
 ms.date: 02/24/2017
 ms.topic: article
@@ -54,7 +54,10 @@ Microsoft Intune lets admins import international mobile equipment identity (IME
 3.  On the **Review Devices** pane, you can confirm the imported device IMEI numbers. You can also decide whether to overwrite the **Details** for IMEI numbers that are being imported again. You can uncheck the **Overwrite** box to preserve the Current details. Choose **Finish** to import the IMEI numbers.
 4.  The imported IMEI numbers and descriptions are added to the **By IMEI (All platforms)** list.
 
+> [!IMPORTANT]
+> If you are importing IMEI numbers for Android devices, be aware that some Android devices can have multiple IMEI numbers. If you import an IMEI number but it is not the IMEI reported to Intune by the device, the device will be classifed as a personal device instead of a company-owned device.
+
 When a device that has IMEI number enrolls in Intune, usually when a user installs the Company Portal app and completes the enrollment process, the device will be tagged as corporate-owned and appear as enrolled in the **IMEI Devices** group.
 
->[!NOTE] 
+>[!NOTE]
 > When your organization is migrated to the new Azure portal in the near future, you will see a change to this feature. In the existing Intune administrator console, admins can accept associated details from an uploaded CSV and overwrite the existing details for individual hardware identifiers. In the new Azure portal, you’ll be able to automatically overwrite the details for all hardware identifiers or to ignore all new details for existing identifiers.

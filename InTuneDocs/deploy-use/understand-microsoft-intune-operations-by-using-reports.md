@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,5 +76,4 @@ In addition, reports support the following actions:
 |**Load**|On the **Create New Report** page, choose **Load** to retrieve any previously saved sets of report parameters.|
 |**Delete**|In the **Reports** workspace, select the desired report type and choose **Load**. Then, in the list of reports, choose the delete (x) icon next to the report.|
 
-### See also
-[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+

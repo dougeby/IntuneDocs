@@ -61,6 +61,7 @@ These conditions can be viewed for each device in the Azure Management Portal an
 	 -	 An iOS device may get stuck in a checking-compliance state, preventing the user from initiating another check-in. Restarting the company portal may fix this, and the compliance state will reflect the device state in Intune. After all of the data is collected from a device sync the compliance check is, fast, less than half a second on average.
 
 		Typically, the reason devices stay in this state is because they are having trouble connecting to the service or the sync is taking a long time.  If the problem persists on different network configurations (cellular, Wi-Fi, VPN), through device restarts, and after verifying that the SSP is up-to-date on the device, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+
  - For Android devices:
  	- Certain Android devices may seem to be encrypted, but Intune Company Portal recognizes these devices as not encrypted. 
 	

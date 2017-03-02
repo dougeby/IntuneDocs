@@ -156,7 +156,7 @@
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [Protect email access: examples](deploy-use/restrict-email-access-example-scenarios.md)
 ### [Allow only policy managed app access to O365 services](deploy-use/allow-policy-managed-apps-access-to-o365.md)
-#### [Apps with MAM CA](deploy-use/use-apps-with-mam-ca.md)
+#### [Use apps with App-based CA](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Block apps with no ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Protect access to networks (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
@@ -206,6 +206,7 @@
 
 # [Troubleshoot](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [How to get support](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [Monitor Intune with reports](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Troubleshoot Endpoint Protection](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [Troubleshoot company resource access problems](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 ## [Troubleshoot app deployment problems](troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md)
