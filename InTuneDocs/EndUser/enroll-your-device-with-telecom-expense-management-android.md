@@ -44,7 +44,7 @@ Your organization may be using telecom expense management software to ensure tha
 
 3. You will then receive a verification code through an SMS message. Provide the code and tap __OK__.
 
-  ![A screenshot of the Datalert app requesting the SMS verification code.](.media/and-enroll-14-tem-datalert-sms-code.png)
+  ![A screenshot of the Datalert app requesting the SMS verification code.](.media/and-enroll-14-tem-datalert-sms.png)
 
 4. Once you've provided the verification code, Datalert setup will complete. Tap __Finish__ and you will be able to monitor your data from the Datalert app.
 
