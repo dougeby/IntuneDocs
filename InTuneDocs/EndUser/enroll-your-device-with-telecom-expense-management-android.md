@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Enroll your Android device in telecom expense management
 
-Your organization may be using telecom expense management software to ensure that their data and voice plans are being used within acceptable limits. Once you have completed enrolling your device, you will then be prompted to specify whether the device you've enrolled is a corporate or personal device.
+Your organization may be using telecom expense management software to ensure that their data and voice plans are being used within acceptable limits. Once you have completed enrolling your device, you will then be prompted to select the best category for that device.
 
 	![A screenshot of the "selecting the best category for a device" screen on an iOS device. It shows a selection of corporate or personal enrollment.](./media/and-enroll-11-tem-select-best-category.png)
 
@@ -40,7 +40,7 @@ Your organization may be using telecom expense management software to ensure tha
 
 2. Provide your device's phone number.
 
-  ![A screenshot of the Datalert app requesting a phone number.](./media/and-enroll-13-tem-datalert-setup.png)
+  ![A screenshot of the Datalert app requesting a phone number.](./media/and-enroll-13-tem-datalert-phone-number.png)
 
 3. You will then receive a verification code through an SMS message. Provide the code and tap __OK__.
 
