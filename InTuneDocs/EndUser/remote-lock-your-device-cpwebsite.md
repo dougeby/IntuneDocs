@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42bsearchScope: - Company Portal
+ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42bsearchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: mamoriss

@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69searchScope: - Company Portal
+ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: arnab
