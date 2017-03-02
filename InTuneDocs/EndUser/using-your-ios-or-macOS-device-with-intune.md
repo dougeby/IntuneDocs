@@ -40,7 +40,8 @@ There are a number of things you can do with Intune to make your work life easie
 
 - [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 - [Set or change your passcode](set-or-change-your-passcode-ios.md)
-- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
+- [Reset (erase) your lost or stolen device](reset-erase-your-device-cpwebsite.md)
 - [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-ios.md)
 - [Unenroll your device from Intune](unenroll-your-device-from-intune-ios.md)
 - [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
