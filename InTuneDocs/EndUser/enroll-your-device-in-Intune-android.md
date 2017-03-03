@@ -4,14 +4,17 @@
 title: Enroll your Android device in Intune | Microsoft Docs
 description: Describes how to enroll an Android device in Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620searchScope: - Company Portal
+ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
+searchScope:
+ - Company Portal
 
 # optional metadata
 
