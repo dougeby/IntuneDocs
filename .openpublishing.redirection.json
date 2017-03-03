@@ -84,6 +84,11 @@
         "redirect_document_id": true
     },
     {
+        "source_path": "InTuneDocs/EndUser/device-doesnt-have-the-required-minimum-operating-system-ios.md",
+        "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-update-your-ios-device",
+        "redirect_document_id": true
+    },
+    {
         "source_path": "InTuneDocs/EndUser/enroll-your-device-in-mac-os-x.md",
         "redirect_url": "https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macOS",
         "redirect_document_id": true
