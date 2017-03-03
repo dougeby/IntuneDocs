@@ -195,7 +195,7 @@
 ## [How to educate your end users about Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
 ### [Using an Android device with Intune](EndUser/using-your-android-device-with-intune.md)
 #### [How your Android users get their apps](deploy-use/how-your-android-users-get-their-apps.md)
-### [Using an iOS device with Intune](EndUser/using-your-iOS-device-with-intune.md)
+### [Using an iOS device with Intune](EndUser/using-your-iOS-or-macos-device-with-intune.md)
 #### [How your iOS users get their apps](deploy-use/how-your-ios-users-get-their-apps.md)
 ### [Using a Windows device with Intune](EndUser/using-your-windows-device-with-intune.md)
 #### [How your Windows users get their apps](deploy-use/how-your-windows-users-get-their-apps.md)
