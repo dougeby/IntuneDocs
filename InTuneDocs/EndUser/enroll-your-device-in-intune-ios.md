@@ -4,14 +4,17 @@
 title: Enroll your iOS device in Intune | Microsoft Docs
 description: Describes how to enroll an iOS device in Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 02/22/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4searchScope: - Company Portal
+ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
+searchScope:
+ - Company Portal
 
 # optional metadata
 
