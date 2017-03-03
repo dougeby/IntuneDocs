@@ -35,7 +35,9 @@ The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection 
 
 ## Prerequisites
 
-* You will need a Mac OS computer that runs OS X 10.8.5 or later and has the Xcode toolset version 5 or later installed.
+* You will need a Mac OS computer that runs OS X 10.8.5 or later and has the Xcode 8 or later installed.
+
+* Your app must be targeted for iOS 9 or above.
 
 * Review the [Intune App SDK for iOS License Terms](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Print and retain a copy of the license terms for your records. By downloading and using the Intune App SDK for iOS, you agree to such license terms.  If you do not accept them, do not use the software.
 
@@ -451,7 +453,7 @@ The `IntuneMAMSaveLocationLocalDrive` constant should be used when the app is sa
 
 ## Configure settings for the Intune App SDK
 
-You can use the **IntuneMAMSettings** dictionary in the application’s Info.plist file to set up and configure the Intune App SDK. If the IntuneMAMSettings dictionary is not seen in your Info.plist file, you should create a dictionary in your app's Info.plist with the field name "IntuneMAMSettings." 
+You can use the **IntuneMAMSettings** dictionary in the application’s Info.plist file to set up and configure the Intune App SDK. If the IntuneMAMSettings dictionary is not seen in your Info.plist file, you should create a dictionary in your app's Info.plist with the field name "IntuneMAMSettings."
 
 Under the IntuneMAMSettings dictionary, you can add key/value rows of configuration settings to configure the SDK. The table below lists all supported settings.
 
