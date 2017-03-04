@@ -62,6 +62,13 @@ These conditions can be viewed for each device in the Azure Management Portal an
 
 		Typically, the reason devices stay in this state is because they are having trouble connecting to the service or the sync is taking a long time.  If the problem persists on different network configurations (cellular, Wi-Fi, VPN), through device restarts, and after verifying that the SSP is up-to-date on the device, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
+ - For Android devices:
+ 	- Certain Android devices may seem to be encrypted, but the Company Portal app recognizes these devices as not encrypted. 
+	
+		-	Devices that are in this state require the user to set a secure start-up passcode. The user will see a device notification from the Company Portal app asking to set a start-up passcode for the device. After tapping the device notification and confirming the existing PIN or password, choose the **Require PIN to start device** option on the **Secure start-up** screen. Then, tap the **Check Compliance** button for the device from the Company Portal app. The device should now be detected as encrypted.
+	
+		- 	Some device manufacturers encrypt their devices using a default PIN instead of the secret PIN set by the user. Intune recognizes encryption using the default PIN as insecure because this method of encryption can put the data on the device at risk from malicious users with physical access to the device. If this is the issue, consider using [app protection policies](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+
 ## Policy issues
 
 When you create a compliance policy and link it to an email policy, both policies have to be deployed to the same user, so be careful when planning which policies are deployed to which groups. Users that have only one policy applied are likely to find that their devices are not compliant.
