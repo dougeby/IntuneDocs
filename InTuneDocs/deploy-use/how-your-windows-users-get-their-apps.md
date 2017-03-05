@@ -6,7 +6,7 @@ description: Methods for making Windows apps available to users
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: arob98
+manager: angrobe
 ms.date: 12/05/2016
 ms.topic: article
 ms.prod:
