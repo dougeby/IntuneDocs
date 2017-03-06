@@ -160,11 +160,12 @@
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [Block apps with no ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Protect access to networks (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
-### [Protect access based on device, network, and application risk](deploy-use/device-threat-protection.md)
-#### [Set up device threat protection](deploy-use/device-threat-protection-subscription-setup.md)
-#### [Enable device threat protection](deploy-use/device-threat-protection-enable.md)
-#### [Deploy device threat protection apps](deploy-use/device-threat-protection-apps.md)
-#### [Enable device threat protection compliance policy](deploy-use/device-threat-protection-policy.md)
+### [Protect access based on device, network, and application risk](deploy-use/mobile-threat-defense.md)
+#### [Lookout Mobile Threat Defense connector](deploy-use/lookout-mobile-threat-defense-connector.md)
+##### [Set up Mobile Threat Defense](deploy-use/device-threat-protection-subscription-setup.md)
+##### [Enable Mobile Threat Defense](deploy-use/device-threat-protection-enable.md)
+##### [Deploy Mobile Threat Defense apps](deploy-use/device-threat-protection-apps.md)
+##### [Enable Mobile Threat Defense compliance policy](deploy-use/device-threat-protection-policy.md)
 
 ### [Protect app data with MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure portal for app protection policies](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
@@ -192,9 +193,12 @@
 ### [Wipe managed company app data](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [How to educate your end users about Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [How your Android users get their apps](deploy-use/how-your-android-users-get-their-apps.md)
-### [How your iOS users get their apps](deploy-use/how-your-ios-users-get-their-apps.md)
-### [How your Windows users get their apps](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Using an Android device with Intune](EndUser/using-your-android-device-with-intune.md)
+#### [How your Android users get their apps](deploy-use/how-your-android-users-get-their-apps.md)
+### [Using an iOS device with Intune](EndUser/using-your-iOS-or-macos-device-with-intune.md)
+#### [How your iOS users get their apps](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Using a Windows device with Intune](EndUser/using-your-windows-device-with-intune.md)
+#### [How your Windows users get their apps](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Develop and Customize Apps
 ## [Overview of the Microsoft Intune App SDK](develop/intune-app-sdk.md)
@@ -206,6 +210,7 @@
 
 # [Troubleshoot](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [How to get support](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [Monitor Intune with reports](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Troubleshoot Endpoint Protection](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [Troubleshoot company resource access problems](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 ## [Troubleshoot app deployment problems](troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md)

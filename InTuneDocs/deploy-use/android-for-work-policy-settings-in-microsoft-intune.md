@@ -63,7 +63,7 @@ If the setting you are looking for does not appear in this topic, you might be a
 |----------------|-|
 |**Allow data sharing between work and personal profiles**|Lets apps in the work profile share data with apps in the users personal profile. Choose from:<br><br>- **Prevent any sharing across boundaries**<br>- **Apps in work profile can handle sharing request from personal profile**<br>- **No restrictions on sharing**|
 |**Hide work profile notifications when the device is locked**<br>(Android 6 and later)|Control whether to show any notifications from the work profile when the device is locked.|
-|**Set default app permission policy**<br>(Android 6 and later)|Sets the default permission policy for all apps in the work profile.|
+|**Set default app permission policy**<br>(Android 6 and later)|Sets the default permission policy for all apps in the work profile. Starting in Android 6, some permissions required by apps are prompted to the end user at runtime.  This policy setting allows IT to decide how or if users are prompted to grant permissions for apps in the work profile. <br/><br/>For example, IT may push an app to the work profile that requires location access.  Normally that app would pop up a dialog to the user asking if they wanted to grant location access to the app, and the user could approve it or deny it.  This policy allows IT to decide whether all permissions should be auto-granted without a prompt, auto-denied without a prompt, or let the end user decide.|
 
 
 ## Custom policy settings

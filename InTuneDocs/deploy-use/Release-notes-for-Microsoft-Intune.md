@@ -6,7 +6,7 @@ description: Intune release notes
 keywords:
 author: Staciebarkerms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-classic
 
 Microsoft Intune is an integrated, cloud-based client management solution that provides tools, reports, and upgrade licenses to the latest version of Windows. It also helps keep your computers up-to-date and secure. In addition, Intune lets you manage mobile devices on the network either through Exchange ActiveSync or directly through Intune. The following release notes describe important information and known issues in Microsoft Intune.
 
-
+<!-- 3-6-17: customer asked if this is still current; Stacie asked Chris Baldwin about it. Chris said it's a Samsung issue, but that he hasn't heard any reports about it for months, so he suggested that I share that with the customer and remove this item from the release notes. I'm only going to comment it out in case it resurfaces.
 ## Android users can’t send email when conditional access for Exchange Online is implemented
 
 **Issue:** Users running Samsung Android 5.1.1 and later on their devices can't send email when conditional access for Exchange Online has been set up. Samsung acknowledges that the issue is in its built-in email client in Android 5.1.1 and later, and is investigating a fix.
@@ -45,7 +45,7 @@ Microsoft Intune is an integrated, cloud-based client management solution that p
 3. Remove the affected user from the exempted group, and confirm that the user can now send email.
 
 Microsoft will continue to work closely with Samsung on a fix or additional workarounds.
-
+-->
 
 
 ## Changing resource access profiles between groups for iOS and Android might fail
