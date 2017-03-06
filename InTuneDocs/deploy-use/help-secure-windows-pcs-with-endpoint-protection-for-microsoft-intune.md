@@ -4,8 +4,9 @@
 title: Endpoint Protection for Windows PCs| Microsoft Docs
 description: Secure your managed computers with Endpoint Protection, which provides real-time protection against malware threats.
 keywords:
-author: nathbarnms.author: nathbarn
-manager: arob98
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
 ms.date: 01/31/2017
 ms.topic: article
 ms.prod:
