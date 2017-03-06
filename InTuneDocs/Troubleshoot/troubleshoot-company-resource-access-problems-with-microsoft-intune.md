@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Troubleshoot company resource access problems | Microsoft Intune
+title: Troubleshoot company resource access problems | Microsoft Docs
 description: Error and status codes in this topic to help you troubleshoot resource access problems.
 keywords:
-author: Nbigmanms.author: nbigman
+author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,11 +20,14 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Troubleshoot company resource access problems with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the error and status codes in this topic to help you troubleshoot problems when a Microsoft Intune action returns an error code.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.

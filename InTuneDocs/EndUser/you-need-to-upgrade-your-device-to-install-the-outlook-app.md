@@ -1,16 +1,16 @@
 ---
 # required metadata
-title: You need to upgrade your device to install the Outlook app | Microsoft Intune
+title: You need to upgrade your device | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58c
+ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58csearchScope: - Company Portal
 
 # optional metadata
 
@@ -20,20 +20,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vadona
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
 # You need to upgrade your device to install the Outlook app
 
-If you are trying to download the Outlook email app, and you see a message saying that your Android or iOS device operating system version is below the minimum required version, you need to upgrade your device before proceeding.
+The Outlook app helps millions of users connect all their email accounts, calendars and files in one convenient spot for both [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) devices.
 
-To upgrade, use the instructions below that match the type of device you're using:
+If you're trying to download Outlook and, instead of installing, a message pops up on your device that says that your device's operating system isn't current enough. You'll need to upgrade your device to install Outlook.
 
-## To upgrade your Android device
+## If you have an Android device
 Go to **Settings**, and then use the **update** or **system update** option.
 
-## To upgrade your iOS device
-Tap **Settings** &gt; **General** &gt; **Software Update**.
+## If you have an iOS device
+Tap **Settings** > **General** > **Software Update**.
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

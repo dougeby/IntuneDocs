@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Set or change your passcode | Microsoft Intune
+title: Set or change your passcode | Microsoft Docs
 description: Set or change your passcode
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253searchScope: - Company Portal
 
 # optional metadata
 
@@ -21,7 +21,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 #ms.reviewer: esmich
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
@@ -33,17 +33,17 @@ Your IT admin can set more than one passcode requirement. For example, the passc
 
 If you have trouble setting a passcode that meets the passcode requirements, contact your IT admin for help.
 
-## Set your passcode##
+## Set your passcode
 
 1. Tap **Settings** > **Touch ID & Passcode**.
 2. On the **Touch ID & Passcode** menu, tap **Turn Passcode On**.
 3. Enter a new passcode that meets your IT admin's requirements, and then enter it again to verify it.
 
-## Change your passcode##
+## Change your passcode
 
 1. Tap **Settings** > **Touch ID & Passcode**.
 2. Enter your passcode. The **Touch ID & Passcode** menu opens.
 2. Tap **Change Passcode** and enter your old password.
 3. Enter a new passcode that meets your IT admin's requirements, and then enter it again to verify it.
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

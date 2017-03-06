@@ -1,34 +1,40 @@
 ---
 # required metadata
 
-title: Encrypt your device | Microsoft Intune
-description: Describes how to encrypt an Android device
+title: How to protect your Android device with encryption | Microsoft Docs
+description: Protect your Android device
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
+searchScope:
+ - Company Portal
 
 # optional metadata
 
-#ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
 
-# Encrypt your device
+# How to protect your Android device using encryption
 
-If your company or organization asks you to encrypt your Android device before you can access company files, email, or data, follow these steps below to encrypt your device. You might be asked to set a PIN or password before encrypting if your IT admin requires one.
+When you encrypt a device, you are wrapping the information on it in a layer of protective code that prevents unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to encrypt your Android device before you can access company files, email, or data.
+
+> [!Note]
+> You might be asked to set a PIN or password before encrypting if your IT admin requires one.
 
 If you unenroll your phone, it will remain encrypted.
 
@@ -38,6 +44,9 @@ If you unenroll your phone, it will remain encrypted.
     (On some phones, you’ll need to choose **Storage** &gt; **Storage encryption** or **Storage** &gt; **Lock screen and security** &gt; **Other security settings** to find the "Encrypt" option).
 
 3.  Follow the on-screen instructions. During encryption, your device might restart several times.
+
+> [!Note]
+> Certain Android devices cannot be encrypted. Find out more [here](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### What to do if you have issues
 **Issue**: You have already encrypted your device, and you see one of the following:
@@ -62,4 +71,5 @@ If you unenroll your phone, it will remain encrypted.
 
 	5. Open the Company Portal app, select your device, and tap **Check Compliance**.
 
-Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
+
+Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the [Microsoft Android team](mailto:wintunedroidfbk@microsoft.com).

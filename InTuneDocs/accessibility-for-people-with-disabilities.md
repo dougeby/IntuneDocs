@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Accessibility for People with Disabilities | Microsoft Intune
+title: Accessibility for People with Disabilities | Microsoft Docs
 description: Read accessibility information about Microsoft products.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
-ms.topic: article
+ms.date: 12/30/2016
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -21,7 +22,7 @@ ms.assetid: 3a503548-434c-410a-a419-7eadd7e7fb99
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -34,4 +35,3 @@ Describes the accessibility features of [!INCLUDE[wit_firstref](./includes/wit_f
 
 [Accessibility Products and Services from Microsoft](accessibility-products-and-services-from-microsoft.md)
 Describes the accessibility products and services that are available from Microsoft.
-

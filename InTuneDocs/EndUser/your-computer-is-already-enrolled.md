@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Your computer is already enrolled | Microsoft Intune
+title: Your computer is already enrolled | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
+ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704searchScope: - Company Portal
 
 # optional metadata
 
@@ -21,10 +21,9 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
-
 
 # Your computer is already enrolled
 

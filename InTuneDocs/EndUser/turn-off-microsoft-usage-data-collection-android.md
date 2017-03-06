@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Turn off Microsoft usage data collection for Android | Microsoft Intune
+title: How to turn off Microsoft data collection | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: df53feab-4f5e-46ae-b1e8-9adb048711e5
+ms.assetid: df53feab-4f5e-46ae-b1e8-9adb048711e5searchScope: - Company Portal
 
 # optional metadata
 
@@ -21,12 +21,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
-
 # Turn off Microsoft usage data collection
-To improve its products and services, Microsoft automatically collects anonymous data about the reliability and performance of the Company Portal app and how it's used. You can turn off the collection of that data on your Android device by using the **Usage Data** setting in the Company Portal app. IT administrators have no control over the collection of the data, and they cannot change your selection for the setting.
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Microsoft automatically collects certain data about our products and services. We do this to improve the reliability and performance of our products, including the Company Portal app. Even though this data is anonymized, some users may not feel comfortable with this collection. Your IT admin does not have control over the collection of this data, and they cannot change your selection for the setting.
+
+If you wish to turn off the collection of that data on your Android device, open the **Usage Data** setting in the Company Portal app.
+
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

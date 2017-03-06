@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Remotely lock a device from the Company Portal website | Microsoft Intune
+title: Lock your device from the Company Portal | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
+ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42bsearchScope: - Company Portal
 
 # optional metadata
 
@@ -21,47 +21,51 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
+# Remotely lock your device from the Company Portal website
 
-# Remotely lock a device from the Company Portal website
+Accidents happen, and sometimes devices can go missing. If your device has been lost or stolen, the first worry you might have is that the information on it could be accessed by anyone, wherever your device is.
 
-If your device has been lost or stolen, you can lock the device by using the Remote Lock option on the [Company Portal website](http://portal.manage.microsoft.com). Remote Lock works for the following types of devices:
+[!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-Platform  |Support details  
----------|---------
-Android | Supported       
-iOS | Supported
-Windows 10 Mobile | Supported only if the phone has a passcode set     
-Windows 10 Desktop | Not supported  
-Windows Phone 8.1 | Supported only if the phone has a passcode set
-PC (Windows 8.0 and earlier) | Not supported       
-PC (Windows 8.1) | Not supported
+To be safe, you can lock it by using the Remote Lock option on the [Company Portal website](http://portal.manage.microsoft.com). Remote Lock works for:
 
-</br>
-To use Remote Lock to lock your device:
+* Android
+* iOS
+* macOS
+* Windows 10 Mobile (if the device already had a passcode set)
+* Windows Phone 8.1 (if the device already had a passcode set)
 
-1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the name of the device you want to lock.
+## To use Remote Lock to lock your device
 
-2.	Tap **Remote Lock**.
+1.	On the [Company Portal website](http://portal.manage.microsoft.com), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/whats-new/media/CP_hamburger_menu.png), then select __My Devices__.
 
-	![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+  ![An image of the Company Portal website with an expanded side menu on the left side of the screen, with Home, All Apps, My Devices, Helpdesk, and Signout buttons.](/media/iwp-expanded-sidebar.png)
 
-3.	Read the warning message, indicating that you are about to lock your device, and then tap **Remote Lock** to have the Company Portal website try to lock your device.
+2. On the __My Devices__ page, select the name of the device you want to lock.
 
-	Once you tap **Remote Lock**, a “Remote lock pending” status appears.  When Remote Lock succeeds, the status changes to “Remote lock successful.”
+  ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
+
+3.	The device will open in a popup window. Tap the **Remote Lock** button.
+
+	![All options for a selected device on the Company Portal website, including Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/iwp-screen-with-all-options.png)
+
+4.	A notice will appear to let you know that you are about to lock your device. Tap **Remote Lock**, and the Company Portal website will try to lock your device.
+
+	Once you select **Remote Lock**, a “Remote lock pending” message will appear.  When Remote Lock succeeds, the status changes to “Remote lock successful.”
 
 	The Remote Lock status displays in three places:
 
 	* The notifications area of the website.
-	* The Details page for the device.
-	* The tile that shows the device name on the My Devices section of the page.
+	* The **Details** page for the device.
+	* The tile that shows the device name on the **My Devices** section of the page.
 
-	If you see a “Remote Lock failed” notification, wait a few minutes, and then try again to lock your device. Once you tap to retry, the status changes back to “Remote lock pending.”
+> [!Note]
+> If you see a “Remote Lock failed” notification, wait a few minutes, and try to lock your device again. After you begin to retry, the status will change back to “Remote lock pending.” If the retry doesn't work, you'll need to reach out to your IT admin.
 
-	If a retry doesn’t work, contact your IT administrator for help. If you find your device and want to unlock it after using Remote Lock, just enter your passcode.
+If you find your device and want to unlock it after using Remote Lock, just enter your passcode.
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

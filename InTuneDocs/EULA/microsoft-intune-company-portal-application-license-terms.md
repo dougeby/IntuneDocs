@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Microsoft Intune Company Portal Application License Terms | Microsoft Intune
+title: Microsoft Intune Company Portal Application License Terms | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
-manager: arob98
-ms.date: 08/24/2016
-ms.topic: article
+author: barlanmsft
+ms.author: barlan
+manager: angrobe
+ms.date: 12/19/2016
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -21,7 +22,7 @@ ms.assetid: 94ae5ce0-55fd-494b-bc7d-5153f47711fb
 ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -117,4 +118,3 @@ for this application, unless other terms accompany those items. If so, those ter
     2.  Covered Parties knew or should have known about the possibility of the damages.
 
     The above limitation or exclusion may not apply to you because your country may not allow the exclusion or limitation of incidental, consequential or other damages.
-

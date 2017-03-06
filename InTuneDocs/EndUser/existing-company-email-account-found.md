@@ -1,40 +1,40 @@
 ---
 # required metadata
 
-title: Existing company email account found | Microsoft Intune
+title: An existing company email account was found | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
+ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cbsearchScope: - Company Portal
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: NOINDEX,NOFOLLOW 
 #audience:
 #ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
-# Existing company email account found
+# An existing company email account was found
 
-You already have a company email account. To continue to connect to your company email account, take the following steps to enable your IT admin to properly set up and manage it:
+You've already got an email account with your organization or company, and now you want to access that account on your mobile device. Your IT admin needs your help to keep your email access secure on its journey from the person who sent it to your device. Your current email may have worked, but taking these steps will keep your information safer.
 
-1.  In **Settings** on your device, remove the connection you previously set up to your company email.
+1.  Find the **Settings** for your device and remove the connection you previously set up to your company email.
 
-    For example, on an iOS device, tap **Settings** &gt; **Mail, Contacts, Calendar**. Select your work email account, and then click **Delete**.
+    For example, on an iOS device, tap **Settings** > **Mail** > **Accounts**. Select your work email account then tap **Delete**.
 
-2.  Open the Company Portal app on your device, and then tap **Check Compliance**.
+2.  Exit **Settings** and open the Company Portal app on your device, then tap **Check Compliance**.
 
 3.  Wait a short time for new email settings to be applied to your device automatically.
 
-If new email settings do not appear after a while, contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

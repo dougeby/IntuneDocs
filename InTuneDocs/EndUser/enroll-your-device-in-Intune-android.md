@@ -1,40 +1,45 @@
 ---
 # required metadata
 
-title: Enroll your Android device in Intune | Microsoft Intune
+title: Enroll your Android device in Intune | Microsoft Docs
 description: Describes how to enroll an Android device in Intune
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/09/2016
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
+searchScope:
+ - Company Portal
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
 
 # Enroll your Android device in Intune
 
-If your company or school uses Microsoft Intune, you can enroll your Android device to get access to company email, files, and other resources. When you enroll your devices, your IT department can manage those work or school resources, keep them secure, and give you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens when I install and Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md).
+If your company or school uses Microsoft Intune, you can enroll your Android device to get access to company email, files, and other resources. When you enroll your devices, your IT department can manage those work or school resources, keep them secure, and give you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens when I install and Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
 
-These enrollment instructions are for Samsung Knox Android devices and "native" (non-Samsung Knox) Android devices. To check if you have a Samsung Knox device, go to **Settings** &gt; **About device**. If you don't see "KNOX version" listed there, you have a native Android device.
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+These enrollment instructions are for native and Samsung KNOX Android devices devices. Samsung KNOX is a type of security that certain Samsung devices use to provide additional protection outside of what native Android provides. To check if you have a Samsung KNOX device, go to **Settings** > **About device**. If you don't see "KNOX version" listed there, you have a native Android device.
 
 Before or after enrolling, you may be asked to choose a category that best describes how you use your device. Your IT admin uses this category to help check the apps that you have access to.
 
-If you get an error while you try to enroll your device in Intune, you can [send enrollment errors to your IT admin](send-enrollment-errors-to-your-it-administrator-android.md).
+If you get an error while you try to enroll your device in Intune, you can [send enrollment errors to your IT admin](send-enrollment-errors-to-your-it-admin-android.md).
 
 **To enroll your Android device:**
 
@@ -114,5 +119,8 @@ If you get an error while you try to enroll your device in Intune, you can [send
 	![Company access setup complete screen](./media/and-enroll-10-comp-access-setup-complete.png)
 
 Before you try to install company apps, go to **Settings** &gt; **Security**, and turn on **Unknown sources**. If you don't turn on this option before you try to install apps, you'll see the following message: "Install blocked. For security reasons, your device is set to block installations of apps obtained from unknown sources." You can tap **Settings** on the error dialog box to go to the **Unknown sources** option.
+
+> [!Note]
+> If your organization is using telecom expense management software, you will have an additional few steps to complete before your device is fully enrolled. Find out more [here](enroll-your-device-with-telecom-expense-management-android.md).
 
 Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.

@@ -1,0 +1,60 @@
+---
+# required metadata
+
+title: Add IMEI identifiers to IntunetitleSuffix: "Intune Azure preview"
+description: "Intune Azure preview: Learn how to add corporate identifiers (IMEI numbers) to Microsoft Intune. "
+keywords:
+author: NathBarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 02/24/2017
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: dagerrit
+ms.suite: ems
+#ms.tgt_pltfrm:
+ms.custom: intune-azure
+---
+
+# Add corporate identifiers
+
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+You can create a list of International Mobile Equipment Identity (IMEI) numbers to identify your corporate devices. These devices may or may not be enrolled, and they have a state of either “Enrolled” or “Not contacted.” “Not contacted” means that the device never checks in with the Intune service.
+
+To create the list, create a two-column, comma-separated value (.csv) list without a header. Add the IMEI identifier in the left column, and the details in the right column. The current maximum for the list is 500 rows.
+
+In a text editor, the .csv list looks something like this:
+
+01 234567 890123,device details</br>
+02 234567 890123,device details
+
+**To add a .csv list of corporate identifiers**
+
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
+
+2. On the Intune blade, choose **Enroll devices**, and then choose **Corporate Device Identifiers**.
+
+3. If you are importing a file with new details that will overwrite the existing ones, select **Overwrite details for existing identifiers** to have the new details replace the existing details.
+
+4. Navigate to the IMEI CSV file, and select **Add**.
+
+> [!IMPORTANT]
+> If you are importing IMEI numbers for Android devices, be aware that some Android devices can have multiple IMEI numbers. If you import an IMEI number but it is not the IMEI reported to Intune by the device, the device will be classifed as a personal device instead of a company-owned device.
+
+**To delete a .csv list of corporate identifiers**
+
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
+
+2. On the Intune blade, choose **Enroll devices**, and then choose **Corporate Device Identifiers**.
+
+3. Choose **Delete**.

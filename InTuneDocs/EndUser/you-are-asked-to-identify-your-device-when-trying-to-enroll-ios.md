@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: You are asked to identify your device when you're trying to enroll | Microsoft Intune
+title: You need to identify your iOS device when trying to enroll | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
+ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6searchScope: - Company Portal
 
 # optional metadata
 
@@ -21,14 +21,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
 
-# You are asked to identify your device when you're trying to enroll
+# You need to identify your device when you're trying to enroll
 
-If you are trying to enroll your iOS or Mac OS X device in Intune, and you see a screen that asks you to identify your device, at least one of your devices has already been enrolled and assigned to your account using a method other than the Company Portal app. For the Company Portal app to work correctly, you must identify if the device you're using has already been enrolled in Intune.
+If you are trying to enroll your iOS or macOS device in Intune, and you see a screen that asks you to identify your device, at least one of your devices has already been enrolled and assigned to your account using a method other than the Company Portal app. For the Company Portal app to work correctly, you must identify if the device you're using has already been enrolled in Intune.
 
 1. If you see your device in the list, tap it. If you don't see it, tap **new device**.
 2. Tap **continue.**

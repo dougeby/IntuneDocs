@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Use managed apps on your Android device | Microsoft Intune
+title: Use managed apps on your Android device | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
+ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2searchScope: - Company Portal
 
 # optional metadata
 
@@ -21,7 +21,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 

@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Turn off Microsoft usage data collection for Windows | Microsoft Intune
+title: How to turn off Microsoft data collection for Windows | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
+ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369searchScope: - Company Portal
 
 # optional metadata
 
@@ -21,17 +21,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
 
-# Turn off Microsoft usage data collection
+# How to turn off Microsoft data collection
 
-In order to improve its products and services, Microsoft automatically collects anonymous data about the reliability and performance of the Company Portal app and how it is used.
+Microsoft automatically collects certain data about our products and services. We do this to improve the reliability and performance of our products, including the Company Portal app. Even though this data is anonymized, some users may not feel comfortable with this collection. Your IT admin does not have control over the collection of this data, and they cannot change your selection for the setting.
 
-You can turn off the collection of that data on your Windows device by using the **Usage Data** setting in the Company Portal app. IT administrators have no control over the collection of the data, and they cannot change your selection for the setting.
+If you wish to turn off the collection of usage data on your Windows device, find the **Usage Data** setting in the Company Portal app.
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

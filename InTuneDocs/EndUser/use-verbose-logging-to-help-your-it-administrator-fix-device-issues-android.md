@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Use Verbose Logging to help your IT admin fix device issues | Microsoft Intune
+title: Help your IT admin fix device issues with verbose logging | Microsoft Docs
 description: Help your IT admin fix device issues by using verbose logging
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
+ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aasearchScope: - Company Portal
 
 # optional metadata
 
@@ -21,12 +21,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
 
-# Use verbose logging to help your IT admin fix device issues
+# Help your IT admin fix device issues with verbose logging
 
 When your Android device is enrolled in Intune, you can use *verbose logging* to make the Company Portal app and Intune-managed apps record detailed logs about what's happening on your device. These logs help your IT admin fix any issues that you might have when you're using the Company Portal or an app that's managed by Intune. Verbose logging is enabled on your device  by default, and the  logs that are sent to your IT admin include your email address.
 

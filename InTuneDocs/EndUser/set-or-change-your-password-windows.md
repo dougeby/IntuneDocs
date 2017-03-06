@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Set or change your passcode | Microsoft Intune
+title: Set or change your password | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
+ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437csearchScope: - Company Portal
 
 # optional metadata
 
@@ -21,17 +21,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 #ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
-# Set or change your passcode
+# Make your device safer with the right password
 
-If your Windows device doesn't comply with your IT admin's password policy, a message appears that briefly describes the issue and explains what you need to do to make your password meet the requirements.
+Accessing corporate resources, such as email and documents, is something that people need to do every day from their Windows devices. Your organization wants to make sure that your device is doing this safely. One way to make sure that your device is securely accessing these resources is requiring devices to use a password.
 
-Your IT admin can set more than one password requirement. For example, the password might have to be a certain number of characters, and it might have to be a mix of numbers and letters. Because more than one requirement might be set, these instructions explain only how to set or change your password. They don't explain every possible combination of requirements.
+If your Windows device doesn't comply with your IT admin's password policy, you will see a message that briefly describes the issue and explains what you need to do to make your password meet the requirements.
 
-If you have trouble setting a password that meets all of the password requirements, contact your IT admin for help.
+> [!Note]
+> Your IT admin can set more than one password requirement. For example, the password might have to be a certain number of characters, and it might have to be a mix of numbers and letters. Because more than one requirement might be set, these instructions explain only how to set or change your password. They don't explain every possible combination of requirements.
 
 ## To change your password on Windows Phone 8.1
 

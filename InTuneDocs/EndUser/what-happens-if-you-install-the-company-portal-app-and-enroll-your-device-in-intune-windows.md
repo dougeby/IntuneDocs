@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: What happens if you install the Company Portal app and enroll your Windows device in Intune? | Microsoft Intune
+title: Installing the Company Portal app for Windows | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
+ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39searchScope: - Company Portal
 
 # optional metadata
 
@@ -21,7 +21,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
@@ -35,7 +35,7 @@ Enrolling your Windows or Windows Phone device in Intune lets you:
 
 -   Access the company’s network, and your email and work files.
 
--   Get company apps from the Company Portal website. (For Windows 7 and Windows Vista, you can get company apps from the Company Portal website only.)
+-   Get company apps from the Company Portal website. (__Note__: for Windows 7 and Windows Vista, you can only get company apps from the Company Portal website.)
 
 -   Automatically set up your company or school email account.
 
@@ -68,6 +68,7 @@ When you enroll your device, you are giving your IT admin permission to do thing
 -  Your IT admin can install apps and updates on your computer.
 
 ## What happens every eight hours after device enrollment
+
 About every eight hours, enrolled devices will:
 
 -   Download any policy or app updates that your IT admin has made available.

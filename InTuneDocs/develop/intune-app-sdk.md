@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Benefits of Intune App SDK | Microsoft Intune
-description:
+title: Benefits of Intune App SDK | Microsoft Docs
+description: The Intune App SDK is available for both the iOS and Android platform, and enables mobile app management features with Microsoft Intune.
 keywords:
-author: Msmbaldwin
-manager: jeffgilb
-ms.date: 09/08/2016
+author: mtillman
+manager: angrobe
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,22 +21,24 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
-# Intune App SDK Overview
-The Intune App SDK is available for both the iOS and Android platform, and enables mobile app management features with Microsoft Intune. It strives to minimize the amount of code changes required from the app developer. You will find that you can enable most of the SDK's features without changing your app’s behavior. For enhanced end-user and IT administrator experience, you can utilize our APIs to customize your app behavior for features that require your app participation. 
+# Intune App SDK overview
+The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection policies. It strives to minimize the amount of code changes required from the app developer. You will find that you can enable most of the SDK's features without changing your app’s behavior. For enhanced end-user and IT administrator experience, you can utilize our APIs to customize your app behavior for features that require your app participation.
 
-Once you’ve enabled your app, IT administrators can deploy policies to Intune managed apps and take advantage of these features to protect their corporate data.
+Once you have enabled your app for app protection policies, IT administrators can deploy these policies to protect their corporate data within the app.
 
-## Regular Features
+## App protection features
 
-### Control users’ ability to move corporate documents
-IT administrators can control file relocation of corporate documents in Intune managed apps. For instance, they can deploy a policy that disables file backup apps from backing up corporate data to the cloud.
+The following are examples of Intune app protection features that can be enabled with the SDK.
+
+### Control users’ ability to move corporate files
+IT administrators can control where work or school data in the app can be moved. For instance, they can deploy a policy that disables the app from backing up corporate data to the cloud.
 
 ### Configure clipboard restrictions
-IT administrators can configure the clipboard behavior in Intune-managed apps. For instance, they can deploy a policy so that end users are unable to use the clipboard to cut/copy from an Intune-managed app and paste into a non-managed, personal app.
+IT administrators can configure the clipboard behavior in Intune-managed apps. For instance, they can deploy a policy to prevent end users from cutting or copying data from the app and pasting into an unmanaged, personal app.
 
 ### Enforce encryption on saved data
 IT administrators can enforce a policy that ensures that data saved to the device by the app is encrypted.
@@ -45,30 +47,31 @@ IT administrators can enforce a policy that ensures that data saved to the devic
 IT administrators can remotely wipe corporate data from an Intune-managed app. This feature is identity-based and will only delete the files associated with the corporate identity of the end user. To do that, the feature requires the app’s participation. The app can specify the identity for which the wipe should occur based on user settings. In the absence of these specified user settings from the app, the default behavior is to wipe the application directory and notify the end user that access has been removed.
 
 ### Enforce the use of a managed browser
-IT administrators can enforce the use of the Intune Managed Browser app when opening links from within Intune-managed apps. This ensures that links that appear in a corporate environment are kept within the domain of Intune-managed apps.
+IT administrators can force web links in the app to be opened with the [Intune Managed Browser app](../deploy-use/manage-internet-access-using-managed-browser-policies.md). This ensures that links that appear in a corporate environment are kept within the domain of Intune-managed apps.
 
 ### Enforce a PIN policy
-IT administrators can enforce a PIN policy when an Intune-managed app is launched. This ensures that the user launching the app is the same user that initially signed in with an enrolled work or school account. When end users configure their PIN, the Intune App SDK uses Azure Active Directory to verify the credentials of end users against the enrolled Intune account.
+IT administrators can require the end-user to enter a PIN before accessing corporate data in the app. This ensures that the person using the app is the same person who initially signed in with their work or school account. When end users configure their PIN, the Intune App SDK uses Azure Active Directory to verify the credentials of end-users against the enrolled Intune account.
 
-### Require users to enter credentials before they can start apps
-IT administrators can require users to enter their credentials before users can start an Intune-managed app. Intune App SDK uses Azure Active Directory to provide a single sign-on experience, where the credentials, once entered, are reused for subsequent logins. We also support authentication of identity management solutions [federated with Azure Active Directory](https://msdn.microsoft.com/library/azure/jj679342.aspx).
+### Require users to sign in with work or school account for app access
+IT administrators can require users to sign in with their work or school account to access the app. The Intune App SDK uses Azure Active Directory to provide a single sign-on experience, where the credentials, once entered, are reused for subsequent logins. We also support authentication of identity management solutions federated with Azure Active Directory.
 
 ### Check device health and compliance
-IT administrators can a check the health of the device and its compliance with corporate policies before end users access Intune-managed apps. On the iOS platform, this policy checks if the device has been jailbroken. On the Android platform, this policy checks if the device has been rooted.
+IT administrators can a check the health of the device and its compliance with Intune policies before end-users access the app. On iOS, this policy checks if the device has been jailbroken. On Android, this policy checks if the device has been rooted.
 
-### SDK multi-identity support
-Multi-identity support is a feature that enables coexistence of policy-managed (corporate) and unmanaged (personal) accounts in a single app.
+### Multi-identity support
+Multi-identity support is a feature of the SDK that enables coexistence of policy-managed (corporate) and unmanaged (personal) accounts in a single app.
 
-For example, many users configure both corporate and personal email accounts in the Outlook app for iOS and Android. When a user is accessing data in their corporate account, the IT administrator must be confident that MAM policy management will be applied. However, when a user is accessing a personal email account, that data should be outside of the IT administrator's control. Microsoft Intune achieves this by targeting the management policy to the corporate account only in the application. This multi-identity feature helps solve the data protection problem that organizations are facing with devices and apps that support both personal and work accounts.
+For example, many users configure both corporate and personal email accounts in the Office mobile apps for iOS and Android. When a user accesses data with their corporate account, the IT administrator must be confident that app protection policy will be applied. However, when a user is accessing a personal email account, that data should be outside of the IT administrator's control. The Intune App SDK achieves this by targeting the app protection policy to **only** the corporate identity in the app.
 
-* **How to support multi-identity**: The Microsoft Intune App SDK APIs allow you to specify a User Principal Name (UPN) with specific data operations such as clipboard operations and file operations. The SDK uses the UPN to match the call made to the UPN that was used to enroll the device with the Microsoft Intune service. If the UPNs match, the call is treated as a "corporate data" call and the data is protected; if the UPNs do not match, the call is treated as a "personal data" call, and the data is not protected.
+The multi-identity feature helps solve the data protection problem that organizations face with store apps that support both personal and work accounts.
 
-### App management without device enrollment
+
+### App protection without device enrollment
 
 >[!IMPORTANT]
->Intune mobile app management without device enrollment is currently only available with the Intune App SDK for iOS. 
+>Intune app protection without device enrollment is not yet available with the Intune App SDK for Android. It is available with the Intune App Wrapping Tools, SDK for iOS, SDK Xamarin Component, and SDK Cordova Plugin.
 
 
-Many users with personal devices wish to see and use corporate data without enrolling their personal device with a Mobile Device Management (MDM) product. Since MDM enrollment requires global control of the device, users hesitate to give that global control to their own personal device to their company.
+Many users with personal devices want to access corporate data without enrolling their personal device with a Mobile Device Management (MDM) provider. Since MDM enrollment requires global control of the device, users are often hesitant to give control of their personal device over to their company.
 
-App management without device enrollment allows the Microsoft Intune service to deploy MAM policy to an app directly, without relying on an MDM channel to deploy the policy. Since no MDM channel is needed, MDM enrollment is not needed.
+App protection without device enrollment allows the Microsoft Intune service to deploy app protection policy to an app directly, without relying on a device management channel to deploy the policy.

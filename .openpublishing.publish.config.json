@@ -1,86 +1,72 @@
 {
-  "build_entry_point": "docs.ps1",
-    "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/IntuneDocs",
-    "git_repository_branch_open_to_public_contributors": "live",
-    "docsets_to_publish": [
-        {
-            "docset_name": "InTuneDocs",
-            "build_output_subfolder": "InTuneDocs",
-            "locale": "en-us",
-            "version": 0,
-      "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-        {
-            "docset_name": "IntUnderstand",
-            "build_output_subfolder": "InTuneDocs/Understand",
-            "locale": "en-us",
-            "version": 0,
-      "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-                {
-            "docset_name": "IntGetStarted",
-            "build_output_subfolder": "InTuneDocs/GetStarted",
-            "locale": "en-us",
-            "version": 0,
-      "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-                {
-            "docset_name": "IntPlanDesign",
-            "build_output_subfolder": "InTuneDocs/PlanDesign",
-            "locale": "en-us",
-            "version": 0,
-      "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-                {
-            "docset_name": "IntDeployUse",
-            "build_output_subfolder": "InTuneDocs/DeployUse",
-            "locale": "en-us",
-            "version": 0,
-      "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-                        {
-            "docset_name": "IntTroubleshoot",
-            "build_output_subfolder": "InTuneDocs/Troubleshoot",
-            "locale": "en-us",
-            "version": 0,
-      "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        },
-                        {
-            "docset_name": "EndUser",
-            "build_output_subfolder": "InTuneDocs/EndUser",
-            "locale": "en-us",
-            "version": 0,
-      "open_to_public_contributors": true,
-            "type_mapping": {
-                "Conceptual": "Content"
-            }
-        }
+  "build_entry_point": "docs",
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
     ],
-    "dependent_repositories": [
-      {
-        "path_to_root": "_themes",
-        "url": "https://github.com/Microsoft/templates.docs.msft",
-        "branch": "master"
-      }
-    ],
-    "notification_subscribers": [""],
-  "need_preview_pull_request": "true"
+    "master": [
+      "Publish",
+      "Pdf"
+    ]
+  },
+  "docsets_to_publish": [
+    {
+      "docset_name": "intune-azure",
+      "build_source_folder": "intune-azure",
+      "build_output_subfolder": "intune-azure",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "InTuneDocs",
+      "build_source_folder": "InTuneDocs",
+      "build_output_subfolder": "InTuneDocs",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "template_folder": "_themes"
+    }
+  ],
+  "notification_subscribers": [
+    ""
+  ],
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/IntuneDocs",
+  "git_repository_branch_open_to_public_contributors": "master",
+  "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
+    }
+  ],
+  "need_generate_pdf_url_template": true
 }

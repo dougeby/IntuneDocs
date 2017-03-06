@@ -1,111 +1,58 @@
 ---
 # required metadata
 
-title: Enroll your Windows 10 device in Intune | Microsoft Intune
+title: Enroll your Windows 10 device in Intune | Microsoft Docs
 description: Describes how to enroll a Windows 10 mobile or desktop device in Intune
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 01/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
+ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3searchScope: - Company Portal
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW 
 #audience:
 #ms.devlang:
-ms.reviewer: priyar
+ms.reviewer: jieyan
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
 
-# Enroll your Windows 10 Mobile or Windows 10 desktop device in Intune
+# Enroll your Windows 10 devices in Intune
 
-If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. Enrolling your devices enables your organization to keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+Enrolling your devices into Microsoft Intune allows your Windows 10 devices to get access to your organization’s secure data, including email, files, and other resources. This is true for both Windows 10 desktop and Windows 10 Mobile devices. Enrolling your devices helps secure this access for both you and your organization, and helps keep your work data separate from your personal data.
 
+Want to know more? Find out what happens when you [enroll your device in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and what that means for the [information on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
-To enroll your Windows 10 Mobile or Windows 10 desktop device:
+## Windows 10 desktop devices
+1.	Go to __Start__.
 
-1.  Go to Windows  **Settings**, and then and tap **Accounts**.
+ ![Windows Start Menu](../media/windows-start-menu.png).
 
-    ![Windows Settings](./media/w10-enroll-rs1-settings-accounts.png)
+2. Type the phrase "about your PC" into the __search bar__, then select __About your PC__.
 
-2.  Look at the next two screens, and find the one that looks like the one you see on your device. Follow the steps that go with the screen that you see on your device.
+ ![search settings for about your pc](../media/searching_for_about_your_pc.png)
 
-	If you see this screen, follow the instructions in [Steps to follow if you see Access work or school](#steps-to-follow-if-you-see-access-work-or-school).
+2.	In your __Settings__, you will see a list of information about the version of Windows 10 that is installed on your PC. Within this list, locate the __Version__.
 
-    ![Connect to work or school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+ ![Windows 10 Desktop About Your PC](../media/settings_about_pc.png)
 
-	If you see this screen, follow the steps in [Steps to follow if you see Your account](#steps-to-follow-if-you-see-your-account).
+3.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school.md). If your version is __1511 or less__, continue with [these steps](enroll-your-w10-device-your-account.md).
 
-	![Your account](./media/w10-enroll-2-accounts-your-account.png)
+## Windows 10 Mobile devices
 
-## Steps to follow if you see Access work or school
+1.	On __Start__, swipe over to the __All apps__ list, then select the __Settings__ app.
+2.	Tap on __System__ then __About__.
+3.	Under __Device information__, tap __More info__. You will see a list of information about your device. Within this list, locate the __Version__.
+4.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school.md). If your version is __1511 or less__, continue with [these steps](enroll-your-w10-device-your-account.md).
 
-1.  Tap **Access work or school**, and then tap **Connect**.
-
-    ![Tap Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)
-
-2.  Enter your work or school email address, and then tap **Next**.
-
-    ![Enter your work or school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
-
-3. Sign in to Intune with your work or school account.
-
-	![Add a work or school account](./media/w10-enroll-rs1-enter-your-credentials.png)
-
-	You’ll see a message indicating that your company or school is registering your device.
-
-4. When you see the **You’re all set!** screen, tap **Close**. You’re done.
-
-  ![Tap close on the "You're all set!" screen](./media/w10-enroll-rs1-youre-all-set.png)
-
-5. If you want to double-check that your connection looks right, go back to **Settings**, where you should now see your work or school account listed.
-
-	![Validate that the connection was set up correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)
-
-If you followed the previous steps, but still can’t access your work or school email account and files, follow the steps in [Troubleshooting steps to follow if you see Access work or school](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
-
-
-## Steps to follow if you see Your account
-
-1.  Go to Windows **Settings**, and then tap **Accounts**.
-
-    ![Go to Settings and Accounts](./media/W10-enroll-1-settings-accounts.png)
-
-2.  Tap **Your account**.
-
-    ![Tap your account](./media/W10-enroll-2-accounts-your-account.png)
-
-3.  Tap **Add a work or school account**.
-
-	![Tap add a work or school account](./media/w10-enroll-3-add-work-school-acct.png)
-
-4.  Sign in with your work or school credentials.
-
-	![sign-in](./media/W10-enroll-4-sign-in.png)
-
-If you followed the previous steps, but still can't access your work or school email address, files, or other data, try the instructions in [Troubleshooting steps to follow if you see Your account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).
-
-We also recommend that you install the Company Portal app, which lets you easily identify and get the company apps that are relevant to you and your role. Depending on how your company configured Intune, the Company Portal app may have been installed as part of your enrollment process.
-
-To verify whether you have the app, look for **Company Portal** in your apps list. If you don't see the Company Portal in your list of apps, follow these steps to install it.
-
-1.  Tap **Start** &gt; **Store**.
-
-2.  Tap **Search**, and then type **company portal**.
-
-3.  In the list of results, tap **Company Portal** &gt; **Install**.
-
-4.  Tap  either **Install** or **Free**. The option that is shown depends on how your company configured the app.
-
-Still need help? Contact your IT administrator. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
+Still need help? Contact your IT admin. For their contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

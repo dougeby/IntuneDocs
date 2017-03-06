@@ -1,27 +1,27 @@
 ---
 # required metadata
 
-title: What happens when you create a work profile | Microsoft Intune
+title: What happens when you create a work profile | Microsoft Docs
 description: Describes how to encrypt an Android device
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
+ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6searchScope: - Company Portal
 
 # optional metadata
 
-#ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
@@ -47,6 +47,4 @@ When you create a work profile:
 
 For the steps to create a work profile, see [Create a work profile and enroll your device](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
-
-
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

@@ -1,34 +1,33 @@
 ---
 # required metadata
 
-title: Enroll your Windows 8.1 or Windows RT 8.1 device | Microsoft Intune
-description: Describes how to enroll a Windows 8.1 or Windows RT 8.1 device in Intune
+title: How to enroll your Windows 8.1 or Windows RT 8.1 device | Microsoft Docs
+description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
+ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0csearchScope: - Company Portal
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
+# How to enroll your Windows 8.1 or Windows RT 8.1 device in Intune
 
-# Enroll your Windows 8.1 or Windows RT 8.1 device in Intune
-
-If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your IT administrator can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 
 To enroll your Windows 8.1 or Windows RT 8.1 device:

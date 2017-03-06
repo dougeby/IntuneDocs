@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot app deployment problems | Microsoft Intune
+title: Troubleshoot app deployment problems | Microsoft Docs
 description: This topic helps you solve app deployment problems with Microsoft Intune.
 keywords:
 author: robstackmsftms.author: robstack
@@ -21,11 +21,14 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Troubleshoot app deployment problems in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 If you are having problems deploying and managing apps with Intune, start here. This topic contains some common problems you might encounter together with solutions.
 
 ## Common app deployment error codes

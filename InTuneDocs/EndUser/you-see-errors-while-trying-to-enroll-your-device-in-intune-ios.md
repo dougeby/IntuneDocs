@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: You see errors while trying to enroll your iOS device in Intune | Microsoft Intune
+title: You see errors while trying to enroll your iOS device | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58
+ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58searchScope: - Company Portal
 
 # optional metadata
 
@@ -21,14 +21,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
-
 # You see errors while trying to enroll your iOS device in Intune
 
-The following table lists errors that you might see while enrolling your iOS device in Intune. Share this link with your It admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+The following table lists errors that you might see while enrolling your iOS device in Intune. Share this link with your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
 
 |Error message|Issue|What to tell your IT admin|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|

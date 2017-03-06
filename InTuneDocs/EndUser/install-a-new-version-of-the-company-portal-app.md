@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Install a new version of the Company Portal app | Microsoft Intune
+title: How to update the Company Portal app | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
-ms.service:
+ms.service: microsoft-intune
 ms.technology:
-ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490searchScope: - Company Portal
 
 
 # optional metadata
@@ -22,11 +22,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 #ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
-# Install a new version of the Company Portal app
+# How to update the Company Portal app
 
 If your version of the Company Portal app is no longer supported, or there is a newer version of the Company Portal app available, you need to update it to a later version. Use the steps  that match the type of device you have.
 
@@ -54,4 +54,4 @@ To update the Company Portal app:
     > If you are unable to access the Windows Store, contact your IT administrator.
 
 
-Still need help? Contact your IT administrator. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
+Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

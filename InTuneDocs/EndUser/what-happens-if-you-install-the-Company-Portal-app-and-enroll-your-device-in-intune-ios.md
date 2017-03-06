@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: What happens if you install the Company Portal app and enroll your iOS or Mac OS X device in Intune? | Microsoft Intune
+title: Installing the Company Portal app for iOS and macOS | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlanmsft
+author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
+ms.assetid: a2467c02-aac5-41c8-b788-cbda830941efsearchScope: - Company Portal
 
 # optional metadata
 
@@ -21,14 +21,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-enduser
 
 ---
 
 
-# What happens if you install the Company Portal app and enroll your iOS or Mac OS X device in Intune?
+# What happens if you install the Company Portal app and enroll your iOS or macOS device in Intune?
 
-When you install the Company Portal app and enroll your iOS or Mac OS X device in Intune, you can use the Company Portal app to:
+When you install the Company Portal app and enroll your iOS or macOS device in Intune, you can use the Company Portal app to:
 
 -   Access the company’s network, and your email and work files.
 
@@ -39,36 +39,6 @@ When you install the Company Portal app and enroll your iOS or Mac OS X device i
 -   Automatically set up your company email account.
 
 When you enroll your device in Intune, you are giving your IT admin permission to manage your device to help protect the company information on the device.
-
-**What IT cannot see**
-
--   Call and web history
-
--	Location
-
--   Email and text messages
-
--   Contacts
-
--	Passwords
-
--   Calendar
-
--   Camera roll
-
-**What IT can see**
-
--   Model
-
--   Serial number
-
--   Operating system
-
--   App names
-
--   Owner
-
--   Device name
 
 When your device is enrolled, your IT admin can:
 
