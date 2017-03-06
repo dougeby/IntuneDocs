@@ -6,7 +6,7 @@ description: Use this topic to synchronize, then deploy app to Android for Work 
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -69,6 +69,8 @@ Typically, Intune will synchronize twice a day with the Google Play for Work sto
 2. On the **Android for Work Mobile Device Management Setup** page, choose **Sync Now**.
 3. The page also displays the time and status of the last sync.
 
-When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** workspace, you can [deploy it just like you would any other app](deploy-apps-in-microsoft-intune.md). You can deploy the app to groups of users only. Currently, you can only select the **Required** and **Uninstall** actions. From October 2016, we will begin adding the **Available** deployment action to new tenants.
+When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** workspace, you can [deploy it just like you would any other app](deploy-apps-in-microsoft-intune.md). You can deploy the app to groups of users only. Currently, you can only select the **Required** and **Uninstall** actions.
+
+This feature leverages the new grouping and targeting experience. Newly provisioned Intune service accounts will be able to use this feature upon release. Existing Intune customers can use this feature once their tenant has been migrated to the Intune Azure portal. Existing customers are welcome to create a trial Intune account to plan for and test this feature until their tenant has been migrated.
 
 After you deploy the app, it will be installed on the devices you targeted. The user of the device will not be asked for approval.
