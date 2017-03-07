@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 58f2a207-88cf-446c-ac9f-ad10a124e4e2searchScope: - Company Portal
+ms.assetid: 58f2a207-88cf-446c-ac9f-ad10a124e4e2searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: chrisgre
