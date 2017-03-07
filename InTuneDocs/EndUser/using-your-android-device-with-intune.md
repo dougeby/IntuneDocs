@@ -14,11 +14,11 @@ ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 searchScope:
- - Company Portal
+ - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: arnab
