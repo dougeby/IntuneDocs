@@ -15,7 +15,7 @@ ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 #ms.reviewer: natgreen

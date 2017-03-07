@@ -15,7 +15,7 @@ ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: mamoriss

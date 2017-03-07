@@ -15,7 +15,7 @@ ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: priyar

@@ -15,7 +15,7 @@ ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: chrisbal

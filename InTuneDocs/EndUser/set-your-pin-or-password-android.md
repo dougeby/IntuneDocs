@@ -15,7 +15,7 @@ ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: arnab

@@ -15,7 +15,7 @@ ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 #ms.reviewer: chrisbal

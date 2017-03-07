@@ -15,7 +15,7 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533esearchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: maxles

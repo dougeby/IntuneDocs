@@ -15,7 +15,7 @@ ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cbsearchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW 
+ROBOTS:   
 #audience:
 #ms.devlang:
 ms.reviewer: chrisgre

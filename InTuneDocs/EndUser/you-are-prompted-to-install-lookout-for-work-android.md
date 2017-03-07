@@ -15,7 +15,7 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fcsearchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 #ms.reviewer: jeffgilb

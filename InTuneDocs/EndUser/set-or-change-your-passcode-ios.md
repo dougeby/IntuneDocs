@@ -15,7 +15,7 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 #ms.reviewer: esmich
