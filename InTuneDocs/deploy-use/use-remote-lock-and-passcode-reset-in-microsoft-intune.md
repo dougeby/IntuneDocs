@@ -4,7 +4,7 @@ description: Intune provides both remote lock and passcode reset capabilities.
 keywords:
 author: NathBarnms.author: NathBarn
 manager: angrobe
-ms.date: 02/16/17
+ms.date: 03/06/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,6 +37,7 @@ The following table lists how remote lock works on different mobile platforms.
 |macOS|Not supported|
 |iOS|Supported|
 |Android|Supported|
+|Android for Work|Supported|
 |Windows 10 (mobile)|Supported|
 |Windows 10 (desktop)|Not supported|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
@@ -64,6 +65,7 @@ If a user forgets a passcode, you can help by removing the passcode from a devic
 |macOS|Not supported|
 |iOS|Supported for clearing the passcode from a device. Does not create a new temporary passcode.|
 |Android|Supported on versions earlier than Android 7.0. Creates a temporary passcode.|
+|Android for Work|Not supported|
 |Windows 10 Mobile|Supported|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
 |Windows RT 8.1|Not Supported|
