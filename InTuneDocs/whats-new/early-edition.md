@@ -4,10 +4,10 @@
 title: Early edition | Microsoft Docs
 description:
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,10 +43,10 @@ This page is updated periodically. Check back for additional updates.
 The Company Portal app for Android will be updating its user interface for a more modern look and feel, and better user experience. The notable updates are:
 
 - Colors: Company Portal tab headers are colored in IT-defined branding.
-- Apps: In the Apps tab, the Featured Apps and All Apps buttons are updated.
-- Search: In the Apps tab, the Search button is a floating action button.
-- Navigating Apps: All Apps view shows a tabbed view of Featured, All and Categories for easier navigation.
-- Support: My Devices and Contact IT tabs are updated to improve readability.
+- Apps: In the **Apps** tab, the **Featured Apps** and **All Apps** buttons are updated.
+- Search: In the **Apps** tab, the **Search** button is a floating action button.
+- Navigating Apps: **All Apps** view shows a tabbed view of **Featured**, **All**, and **Categories** for easier navigation.
+- Support: **My Devices** and **Contact IT** tabs are updated to improve readability.
 
 More details these changes can be found on the [app UI updates page](whats-new-in-intune-app-ui.md].
 
@@ -61,10 +61,13 @@ Due to the absence of the Google Play Store in China, Android devices must obtai
 - [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
 - [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 - [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
-- [Lenovo](needs fwlink)
 
 ### New MDM server address for Windows devices <!--893007-->
 Windows and Windows Phone users attempting to enroll a device will fail if they enter __manage.microsoft.com__ as the MDM server address (if prompted). The MDM server address is changing from __manage.microsoft.com__ to __enrollment.manage.microsoft.com__. Notify your user to use __enrollment.manage.microsoft.com__ as the MDM server address if prompted for it while enrolling a Windows or and Windows Phone device. This update will require any CNAME in DNS that redirects __EnterpriseEnrollment.contoso.com__ to __manage.microsoft.com__ to be replaced with a CNAME in DNS that redirects __EnterpriseEnrollment.contoso.com__ to __EnterpriseEnrollment-s.manage.microsoft.com__. For additional information about this change, visit [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange).
+
+### Apple to require updates for Application Transport Security
+
+Beginning in Spring 2017, Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS/macOS Company Portal apps. Review our [Intune support blog](https://aka.ms/compportalats) for more details.
 
 ## Public preview of the new Intune admin experience on Azure <!--736542-->
 
@@ -80,7 +83,7 @@ If you have any questions about the timeline for your tenant’s migration, cont
 
 ### Improvements to Device Actions report <!--677150-->
 
-We’ve made improvements to the Device Actions report to include additional interim states to provide better visibility into the progress of device actions and aid in troubleshooting.
+We’ve made improvements to the Device Actions report to improve performance. Additionally, you can now filter the report by state. For example, you could filter the report to show only device actions that were completed.”
 
 #### Assign LOB apps to users with unenrolled devices <!--748823-->
 
