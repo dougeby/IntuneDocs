@@ -189,9 +189,6 @@ Intune can run either a full or quick malware scan by using Endpoint Protection 
 
 2. Choose the **Remote Tasks** drop-down list, and then select the task to run on the remote computer.
 
-
-
-
 ## Need more help?
 For further help and support, see [Troubleshoot Endpoint Protection in Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
