@@ -16,7 +16,6 @@ ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 searchScope:
  - User help
 
-
 # optional metadata
 
 ROBOTS:  
