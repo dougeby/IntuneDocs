@@ -48,7 +48,7 @@ The Company Portal app for Android will be updating its user interface for a mor
 - Navigating Apps: **All Apps** view shows a tabbed view of **Featured**, **All**, and **Categories** for easier navigation.
 - Support: **My Devices** and **Contact IT** tabs are updated to improve readability.
 
-More details these changes can be found on the [app UI updates page](whats-new-in-intune-app-ui.md].
+More details about these changes can be found on the [app UI updates page](whats-new-in-intune-app-ui.md].
 
 ## Notices
 
@@ -65,7 +65,7 @@ Due to the absence of the Google Play Store in China, Android devices must obtai
 ### New MDM server address for Windows devices <!--893007-->
 Windows and Windows Phone users attempting to enroll a device will fail if they enter __manage.microsoft.com__ as the MDM server address (if prompted). The MDM server address is changing from __manage.microsoft.com__ to __enrollment.manage.microsoft.com__. Notify your user to use __enrollment.manage.microsoft.com__ as the MDM server address if prompted for it while enrolling a Windows or and Windows Phone device. This update will require any CNAME in DNS that redirects __EnterpriseEnrollment.contoso.com__ to __manage.microsoft.com__ to be replaced with a CNAME in DNS that redirects __EnterpriseEnrollment.contoso.com__ to __EnterpriseEnrollment-s.manage.microsoft.com__. For additional information about this change, visit [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange).
 
-### Apple to require updates for Application Transport Security
+### Apple to require updates for Application Transport Security <!--748318-->
 
 Beginning in Spring 2017, Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS/macOS Company Portal apps. Review our [Intune support blog](https://aka.ms/compportalats) for more details.
 
@@ -81,7 +81,7 @@ If you have any questions about the timeline for your tenant’s migration, cont
 
 ### March 2017
 
-### Improvements to Device Actions report <!--677150-->
+#### Improvements to Device Actions report <!--677150-->
 
 We’ve made improvements to the Device Actions report to improve performance. Additionally, you can now filter the report by state. For example, you could filter the report to show only device actions that were completed.”
 
@@ -101,7 +101,8 @@ You can now create an edition upgrade policy to upgrade devices to the following
 - Windows 10 Professional Education N
 
 #### Actions for non-compliance <!--730266-->
-_Actions for non-compliance_ is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
+
+**Actions for non-compliance** is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
 
 #### New compliance reports <!--846671-->
 
