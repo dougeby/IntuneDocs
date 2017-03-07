@@ -4,14 +4,18 @@
 title: Enroll your Android device in Intune | Microsoft Docs
 description: Describes how to enroll an Android device in Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620searchScope: - User help
+ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
+searchScope:
+ - User help
+
 
 # optional metadata
 
@@ -116,5 +120,8 @@ If you get an error while you try to enroll your device in Intune, you can [send
 	![Company access setup complete screen](./media/and-enroll-10-comp-access-setup-complete.png)
 
 Before you try to install company apps, go to **Settings** &gt; **Security**, and turn on **Unknown sources**. If you don't turn on this option before you try to install apps, you'll see the following message: "Install blocked. For security reasons, your device is set to block installations of apps obtained from unknown sources." You can tap **Settings** on the error dialog box to go to the **Unknown sources** option.
+
+> [!Note]
+> If your organization is using telecom expense management software, you will have an additional few steps to complete before your device is fully enrolled. Find out more [here](enroll-your-device-with-telecom-expense-management-android.md).
 
 Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
