@@ -461,7 +461,7 @@ The following are common ways an app can be configured with ADAL. Find your app'
 
 1. **App does not integrate ADAL:**
 
-	|Required ADAL parameter| Value |
+	| Required ADAL parameter | Value |
 	|--|--|
 	| Authority | Desired environment where AAD accounts have been configured |
 	| SkipBroker | True |
@@ -852,17 +852,36 @@ If a multi-identity aware application wishes MAM default selective wipe to be do
 ## MAM Service Enrollment (new!)
 
 ### Overview
-Intune MAM without device enrollment, also known as MAM-WE or MDM-less MAM, allows apps to be managed by Intune without device enrollment with Intune MDM. The Company Portal is still required to be installed on the device, but the user does not need to sign into the Company Portal and enroll the device.
+Intune app protection policy without device enrollment, also known as APP-WE or MAM-WE, allows apps to be managed by Intune without device enrollment with Intune MDM. The Company Portal is still required to be installed on the device, but the user does not need to sign into the Company Portal and enroll the device.
 
-MAM Service enrollment is done on a per-app basis. The app should enroll with the MAM service after authenticating the user, when it's determined the user is corporate/managed. The app should block the user from accessing protected, managed content until the enrollment process completes.
+Apps are now required to support app protection policy without enrollment.
 
-If the user is not licensed for the Intune MAM service, or if enrollment completes successfully, the user can be allowed to access protected content. If the user is licensed but the enrollment process fails, the user should be blocked from accessing protected content until enrollment successfully completes.
+### Requirements
 
-The app should un-enroll with the MAM service when removing the managed user.
+When an app creates a new user account, it should register the account for management with the Intune App SDK. The SDK will handle the details of enrolling the app in the MAM service; if necessary, it will retry any enrollments at appropriate time intervals if failures occur.
+
+The app can also query the Intune App SDK for the status of a registered user to determine if the user should be blocked from accessing corporate content. Multiple accounts may be registered for management, but currently only one account can be actively enrolled with the MAM service at a time. This means only one account on the app can have app protection policy at a time.
+
+The app is required to provide a callback to acquire the appropriate access token from the Azure Active Directory Authentication Library (ADAL) on behalf of the Intune App SDK. It is assumed that the app already uses ADAL for user authentication and to acquire its own access tokens.
+
+When the app removes an account completely, it should unregister that account to indicate that the app should no longer apply policy for that user. If the user was enrolled in the MAM service, the user will be un-enrolled and the app will be wiped.
+
 
 ### MAMEnrollmentManager
 
-The app can enroll in the Intune Mobile Application Management service by calling one of the **MAMEnrollmentManager**'s `enrollApplication()` methods:
+The APP-WE registration API is accessed through the `MAMEnrollmentManager` interface. A reference to the `MAMEnrollmentManager` can be obtained as follows:
+
+```java
+MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
+
+// make use of mgr
+
+```
+
+The `MAMEnrollmentManager` instance returned is guaranteed not to be null. The API methods fall into two categories: **authentication** and **account registration**.
+
+> [!NOTE]
+> `MAMEnrollmentManager` contains some API methods that will be deprecated soon. For clarity, only the relevant methods and result codes are shown in the code block below.
 
 ```java
 package com.microsoft.intune.mam.policy;
@@ -881,63 +900,86 @@ public interface MAMEnrollmentManager {
 		COMPANY_PORTAL_REQUIRED;
 	}
 
-	Result enrollApplication(String identity);
-	Result enrollApplication(String identity, String refreshToken);
-	Result unenrollApplication(String identity);
-	boolean isApplicationEnrolled(String identity);
-
-	void registerADALConnectionDetails(String identity, ADALConnectionDetails adalDetails);
-
+//Authentication methods
+interface MAMServiceAuthenticationCallback {
+		String acquireToken(String upn, String aadId, String resourceId);
 }
+void registerAuthenticationCallback(MAMServiceAuthenticationCallback callback);
+void updateToken(String upn, String aadId, String resourceId, String token);
 
+//Registration methods
+void registerAccountForMAM(String upn, String aadId, String tenantId);
+void unregisterAccountForMAM(String upn);
+Result getRegisteredAccountStatus(String upn);
+}
 ```
 
-A reference to the **MAMEnrollmentManager** interface can be obtained using the code below:
+### Account authentication methods
+
+This section describes the authentication API methods in `MAMEnrollmentManager` and how to use them.
 
 ```java
-MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
-
-// make use of mgr
-
+interface MAMServiceAuthenticationCallback {
+		String acquireToken(String upn, String aadId, String resourceId);
+}
+void registerAuthenticationCallback(MAMServiceAuthenticationCallback callback);
+void updateToken(String upn, String aadId, String resourceId, String token);
 ```
 
-The **MAMEnrollmentManager** instance returned will never be null. If the Company Portal app is not installed on the device, the instance will be an offline version that can check whether the user is Intune-licensed before prompting to install the Company Portal for full enrollment functionality.
+1. The app must implement the `MAMServiceAuthenticationCallback` interface to allow the SDK to request an ADAL token for the given user and resource ID. The callback instance must be provided to the `MAMEnrollmentManager` by calling its `registerAuthenticationCallback()` method. A token may be needed very early in the app lifecycle for enrollment retries or app protection policy refresh check-ins, so the ideal place to register the callback is in the `onMAMCreate()` method of the app's `MAMApplication` sublass.
 
-#### Enroll
+2. The `acquireToken()` method should acquire the access token for the requested resource ID for the given user. If it can't acquire the requested token, it should return null.
 
-Once the **MAMEnrollmentManager** instance is retrieved, the app can enroll by calling one of its `enrollApplication()` methods. The identity argument to these methods is the displayable ID that ADAL stores in the **AuthenticationResult** it returns. The version that takes a single string for the identity of the enrolling user will internally attempt to get the user's ADAL refresh token from the ADAL cache.
+3. In case the app is unable to provide a token when the SDK calls `acquireToken()`  -- for example, if silent authentication fails and it is an inconvenient time to show a UI -- the app can provide a token at a later time by calling the `updateToken()` method. The same UPN, AAD ID, and resource ID that were requested by the prior call to `acquireToken()` must be passed to `updateToken()`, along with the token that was finally acquired. The app should call this method as soon as possible after returning null from the provided callback.
 
-* If the calling app provides its own implementation of ADAL's `ITokenCacheStore` interface, then it may not be possible for the **MAMEnrollmentManager** to obtain the refresh token from ADAL. In this case, the calling app must use the second version of the `enrollApplication()` method that takes both the user identity and the user's refresh token.
+> [!NOTE]
+> The SDK will call `acquireToken()` periodically to get the token, so calling `updateToken()` is not strictly required. However, it is recommended as it can help enrollments and app protection policy check-ins complete in a timely manner.
 
-* **Note:** a valid `refreshToken` must be used if `enrollApplication(..., refreshToken)` is called.
 
-* The `enrollApplication()` methods are otherwise interchangeable, and the app can call the second version of to provide the refresh token if you prefer.
 
-The `enrollApplication()` methods are usually asynchronous. It's possible sometimes for the result to be produced synchronously, so you should be prepared to **receive the result in either manner**.
+### Account registration methods
 
-* In the asynchronous case, the methods returns a Result code of **PENDING** and an SDK Notification will be received, as detailed below, when the enrollment process is complete.
+This section describes the account registration API methods in `MAMEnrollmentManager` and how to use them.
 
-* In case of successful enrollment, if the Intune policy is refreshed, the **REFRESH_POLICY** notification will be sent before the notification of the enrollment success.
+```java
+void registerAccountForMAM(String upn, String aadId, String tenantId);
+void unregisterAccountForMAM(String upn);
+Result getRegisteredAccountStatus(String upn);
+```
 
-* If the app already enrolled for the given user, **ENROLLMENT_SUCCEEDED** will be returned via notification. If the app is already enrolled for a *different user*, **WRONG_USER** will be returned.
+1. To register an account for management, the app should call `registerAccountForMAM()`. A user account is identified by both its UPN and its AAD user ID. The tenant ID is also required to associate enrollment data with the user's AAD tenant. The Intune App SDK may attempt to enroll the app for the given user in the MAM service; if enrollment fails, it will periodically retry enrollment until the account is unregistered. The retry period will typically be 12-24 hours. The SDK provides the status of enrollment attempts asynchronously via notifications.
 
-* **Note:** It is **not** currently possible for the app to be enrolled for more than one user at a time, and all managed apps must be enrolled for the same user (the only managed identity allowed on the device). In order to successfully enroll as a new user, any apps currently enrolled for the previous user must be unenrolled first.
+2. Because AAD authentication is required, the best time to register the user account is after the user has signed into the app and is successfully authenticated using ADAL.
+	* The user's AAD ID and tenant ID are returned from the ADAL authentication call as part of the [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android) object. The tenant ID comes from the `AuthenticationResult.getTenantID()` method.
+	* Information about the user is found in a sub-object of type `UserInfo` that comes from `AuthenticationResult.getUserInfo()`, and the AAD user ID is retrieved from that object by calling `UserInfo.getUserId()`.
 
-#### Unenroll:
+3. To unregister an account from Intune management, the app should call `unregisterAccountForMAM`. If the account has been successfully enrolled and is managed, the SDK will un-enroll the account and wipe its data. Periodic enrollment retries for the account will be stopped. The SDK provides the status of un-enrollment request asynchronously via notifications.
 
-To unenroll from the Intune MAM service, you must call the `unenrollApplication()` method. This method is asynchronous, due in part to the need to synchronously send a wipe notification back from the Company Portal app during unenrollment.
+### Important implementation notes
 
-* The `unenrollApplication()` method will immediately return **PENDING**, and the final result will be delivered via an enrollment notification (UNENROLLMENT_SUCCEEDED or UNENROLLMENT_FAILED).
+#### Authentication notes
 
-* **Note:** It's possible for an app to receive an unenrollment notification without calling `unenrollApplication()` due to a wipe command, MDM-unenroll, or enroll of a different user.
+* When the app calls `registerAccountForMAM`, it may receive a callback on its `MAMServiceAuthenticationCallback` interface shortly thereafter, on a different thread. Ideally, the app acquired its own token from ADAL prior to registering the account to expedite the acquisition of the **MAMService token**. IF the app returns a valid token from the callback, enrollment will proceed and the app will get the final result via a notification.
 
-**Determine if app is enrolled for given user**: Call the `isApplicationEnrolled()` method and pass in the user's UPN.
+* If the app doesn't return a valid AAD token, the final result from the enrollment attempt will be `AUTHENTICATION_NEEDED`. If the app receives this Result via notification, it can expedite the enrollment process by acquiring the **MAMService token** and calling the `updateToken()` method to initiate the enrollment process again. This is _not_ a firm requirement, however, since the SDK retries enrollment periodically and invokes the callback to acquire the token.
 
-### Result codes
+* The app's registered `MAMServiceAuthenticationCallback` will also be called to acquire a token for periodic app protection policy refresh check-ins. If the app is unable to provide a token when requested, it will not get a notification, but it should attempt to acquire a token and call `updateToken()` at the next convenient time to expedite the check-in process. If a token is not provided, the callback will still be called at the next check-in attempt.
+
+#### Registration notes
+
+* For your convenience, the registration methods are idempotent; for example, `registerAccountForMAM`will only register an account and attempt to enroll the app if the account is not already registered, and `unregisterAccountForMAM` will only unregister an account if it is currently registered. Subsequent calls are no-ops, so there is no harm in calling these methods more than once. Additionally, correspondence between calls to these methods and notifications of results are not guaranteed: i.e. if `registerAccountForMAM` is called for an identity that is already registered, the notification may not be sent again for that identity. It is possible that notifications are sent that don't correspond to any calls to these methods, since the SDK may periodically try enrollments in the background, and unenrollments may be triggered by wipe requests received from the Intune service.
+
+* The registration methods can be called for any number of different identities, but currently only one user account can become successfully enrolled. If multiple user accounts that are licensed for Intune and targeted by app protection policy are registered at or near the same time, there is no guarantee on which one will win the race.
+
+* Finally, you can query the `MAMEnrollmentManager` to see if a particular account is registered and to get its current status using the `getRegisteredAccountStatus` method. If the provided account is not registered, this method will return **null**. If the account is registered, this method will return the account's status as one of the members of the `MAMEnrollmentManager.Result` enumeration.
+
+### Result and status codes
+
+When an account is first registered, it begins in the `PENDING` state, indicating that the initial MAM service enrollment attempt is incomplete. After the enrollment attempt finishes, a notification will be sent with one of the Result codes in the table below. In addition, the `getRegisteredAccountStatus()` method will return the account's status so the app can always determine if access to corporate content is blocked for that user. If the enrollment attempt fails, the account's status may change over time as the SDK retries enrollment in the background.
 
 |Result code | Explanation |
 | -- | -- |
-|AUTHORIZATION_NEEDED | Unable to obtain the MAMService token due to an invalid ADAL refresh token.  The app should prompt the user for credentials to obtain a valid refresh token and then try again. |
+|AUTHORIZATION_NEEDED | This result indicates that a token was not provided by the app’s registered `MAMServiceAuthenticationCallbac`k instance, or the provided token was invalid.  The app should acquire a valid token and call `updateToken()` if possible. |
 | NOT_LICENSED | The user is not licensed for the MAMService, or the attempt to contact the location/licensing service failed.  The app should continue as if it were not managed by Intune. |
 | ENROLLMENT_SUCCEEDED | The enrollment attempt succeeded, or the user was already enrolled.  In the case of a successful enrollment, a policy refresh notification will be sent before this notification. |
 | ENROLLMENT_FAILED | The enrollment attempt failed.  Further details can be found in the device logs.  The app should not allow access to protected content in this state, since it was previously determined that the user is licensed for the MAMService. |
