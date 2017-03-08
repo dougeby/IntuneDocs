@@ -10,11 +10,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58csearchScope: - Company Portal
+ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58csearchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: vadona

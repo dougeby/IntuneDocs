@@ -14,11 +14,11 @@ ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 12655728-a1af-4d89-97bc-925fe36c0dc4
 searchScope:
- - Company Portal
+ - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: esmich

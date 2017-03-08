@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ ms.custom: intune-azure
 - **Authentication method** - Select either **Username and Password** or **Certificates** as the authentication method used by the email profile.
 	- If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that will be used to authenticate the Exchange connection.
 - **SSL** - Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server.
-- **S/MIME** - Send outgoing email using S/MIME encryption.
+- **S/MIME** - Send outgoing email using S/MIME signing.
 	- If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that will be used to authenticate the Exchange connection.
 - **Amount of email to synchronize** - Choose the number of days of email that you want to synchronize, or select **Unlimited** to synchronize all available email.
 - **Allow messages to be moved to other email accounts** - This allows users to move email messages between different accounts they have configured on their device.

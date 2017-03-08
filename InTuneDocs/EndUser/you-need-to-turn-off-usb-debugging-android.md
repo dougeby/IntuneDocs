@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71searchScope: - Company Portal
+ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 #ms.reviewer: chrisbal

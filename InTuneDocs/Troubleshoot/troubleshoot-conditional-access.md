@@ -60,7 +60,14 @@ These conditions can be viewed for each device in the Azure Management Portal an
 	 -   An existing email profile created by the user will block the deployment of an Intune admin-created profile. This is a common problem as iOS users will typically create an email profile, then enroll. The company portal will inform the user that they are not compliant due to their manually-configured email profile, and will prompt the user to remove that profile.The user should remove their email profile so that the Intune profile can be deployed. To prevent the problem instruct your users to enroll without installing an email profile and to allow Intune to deploy the profile.
 	 -	 An iOS device may get stuck in a checking-compliance state, preventing the user from initiating another check-in. Restarting the company portal may fix this, and the compliance state will reflect the device state in Intune. After all of the data is collected from a device sync the compliance check is, fast, less than half a second on average.
 
-		Typically, the reason devices stay in this state is because they are having trouble connecting to the service or the sync is taking a long time.  If the problem persists on different network configurations (cellular, Wi-Fi, VPN), through device restarts, and after verifying that the SSP is up-to-date on the device, contact Microsoft Supportas described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+		Typically, the reason devices stay in this state is because they are having trouble connecting to the service or the sync is taking a long time.  If the problem persists on different network configurations (cellular, Wi-Fi, VPN), through device restarts, and after verifying that the SSP is up-to-date on the device, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+
+ - For Android devices:
+ 	- Certain Android devices may seem to be encrypted, but the Company Portal app recognizes these devices as not encrypted. 
+	
+		-	Devices that are in this state require the user to set a secure start-up passcode. The user will see a device notification from the Company Portal app asking to set a start-up passcode for the device. After tapping the device notification and confirming the existing PIN or password, choose the **Require PIN to start device** option on the **Secure start-up** screen. Then, tap the **Check Compliance** button for the device from the Company Portal app. The device should now be detected as encrypted.
+	
+		- 	Some device manufacturers encrypt their devices using a default PIN instead of the secret PIN set by the user. Intune recognizes encryption using the default PIN as insecure because this method of encryption can put the data on the device at risk from malicious users with physical access to the device. If this is the issue, consider using [app protection policies](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## Policy issues
 

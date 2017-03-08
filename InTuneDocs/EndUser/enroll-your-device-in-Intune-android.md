@@ -4,18 +4,21 @@
 title: Enroll your Android device in Intune | Microsoft Docs
 description: Describes how to enroll an Android device in Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620searchScope: - Company Portal
+ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
+searchScope:
+ - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: arnab
@@ -99,7 +102,7 @@ If you get an error while you try to enroll your device in Intune, you can [send
 
 	![Enter PIN or password](./media/and-enroll-6-PIN-native.png)
 
-13.  If you are using a Samsung Knox device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the following screen that shows that your device is being enrolled.
+13.  If you are using a Samsung KNOX device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the following screen that shows that your device is being enrolled.
 
 	![Samsung KNOX privacy policy](./media/and-enroll-7-knox-privacy-policy.png)
 
@@ -116,5 +119,8 @@ If you get an error while you try to enroll your device in Intune, you can [send
 	![Company access setup complete screen](./media/and-enroll-10-comp-access-setup-complete.png)
 
 Before you try to install company apps, go to **Settings** &gt; **Security**, and turn on **Unknown sources**. If you don't turn on this option before you try to install apps, you'll see the following message: "Install blocked. For security reasons, your device is set to block installations of apps obtained from unknown sources." You can tap **Settings** on the error dialog box to go to the **Unknown sources** option.
+
+> [!Note]
+> If your organization is using telecom expense management software, you will have an additional few steps to complete before your device is fully enrolled. Find out more [here](enroll-your-device-with-telecom-expense-management-android.md).
 
 Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.

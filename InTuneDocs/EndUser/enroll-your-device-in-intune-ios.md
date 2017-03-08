@@ -4,18 +4,21 @@
 title: Enroll your iOS device in Intune | Microsoft Docs
 description: Describes how to enroll an iOS device in Intune
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4searchScope: - Company Portal
+ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
+searchScope:
+ - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: esmich
@@ -97,5 +100,8 @@ If your company or school uses Microsoft Intune, you can enroll your iOS device 
 	![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png)
 
 Your device is now enrolled in Intune, and you are taken back to the Company Portal app.
+
+> [!Note]
+> If your organization is using telecom expense management software, you will have an additional few steps to complete before your device is fully enrolled. Find out more [here](enroll-your-device-with-telecom-expense-management-ios.md).
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

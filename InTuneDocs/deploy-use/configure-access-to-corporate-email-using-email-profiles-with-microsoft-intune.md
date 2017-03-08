@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +46,7 @@ You can use email profiles to configure the native email client on the following
 -	Android for Work
 
 >[!NOTE]
->Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate profile.
+>Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate profile. Email apps such as Nine Work might not be free. Review the app’s licensing details or contact the app company with any questions.
 
 In addition to setting up an email account on the device, you can set up how much email to synchronize, and depending on the device type, which content types to synchronize.
 
@@ -110,7 +110,7 @@ The password is not contained in the email profile, so the user needs to supply 
     |**Email address**|How the email address for the user on each device is generated. Select **Primary SMTP Address** to use the primary SMTP address to log into Exchange or use  **User Principal Name** to use the full principal name as the email address.|
     |**Authentication method** (Android for Work, Samsung KNOX and iOS)|Select either **Username and Password** or **Certificates** as the authentication method used by the email profile.|
     |**Select a client certificate for client authentication (Identity Certificate)** (Android for Work, Samsung KNOX and iOS)|Select the client SCEP certificate that you previously created that will be used to authenticate the Exchange connection. For more information about how to use certificate profiles in Intune, see [Secure resource access with  certificate profiles](secure-resource-access-with-certificate-profiles.md). This option is displayed only when the authentication method is **Certificates**.|
-    |**Use S/MIME** (Samsung KNOX and iOS)|Send outgoing email using S/MIME encryption.|
+    |**Use S/MIME** (Samsung KNOX and iOS)|Send outgoing email using S/MIME signing.|
     |**Signing certificate** (Samsung KNOX and iOS)|Select the signing certificate that will be used to sign outgoing email. This option is displayed only when you select **Use S/MIME**.|
     |**Number of days of email to synchronize**|The number of days of email that you want to synchronize, or select **Unlimited** to synchronize all available email.|
     |**Sync schedule** (Android for Work, Samsung KNOX, Windows Phone 8 and later, Windows 10)|Select the schedule by which devices will synchronize data from the Exchange server. You can also select **As Messages arrive**, which synchronizes data as soon as it arrives, or **Manual**, where the user of the device must initiate the synchronization.|

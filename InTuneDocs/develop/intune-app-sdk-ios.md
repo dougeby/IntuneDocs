@@ -31,7 +31,7 @@ ms.custom: intune-classic
 > [!NOTE]
 > You might want to first read the [Get Started with Intune App SDK Guide](intune-app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
 
-The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies--in the form of mobile app management (MAM)--into your iOS app. A MAM-enabled application is one that's integrated with the Intune App SDK. It lets IT admins deploy policies to your mobile app when Intune actively manages the app.
+The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies -- also known as MAM policies -- into your iOS app. A MAM-enabled application is one that is integrated with the Intune App SDK. It lets IT admins deploy app protection policies to your mobile app when Intune actively manages the app.
 
 ## Prerequisites
 
@@ -68,7 +68,6 @@ This guide covers the use of the following components of the Intune App SDK for 
 
 The objective of the Intune App SDK for iOS is to add management capabilities to iOS applications with minimal code changes. The fewer the code changes, the less time to market--without affecting the consistency and stability of your mobile application.
 
-The application needs to be linked to the static library and must include the resource bundle. The MAMDebugSettings.plist file is optional. It can be included in the package to simulate MAM policies being applied to the application without requiring you to deploy the application via Microsoft Intune. Additionally, in debug builds, you can apply the policies in the MAMDebugSettings.plist file by transferring the file to the app’s Documents directory via iTunes file sharing.
 
 ## Build the SDK into your mobile app
 
@@ -155,7 +154,7 @@ To enable the Intune App SDK, follow these steps:
 
 8. If the app defines URL schemes in its Info.plist file, add another scheme, with a `-intunemam` suffix, for each URL scheme.
 
-9. For mobile apps developed for iOS 9+, include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Additionally, for each protocol listed, add a new protocol and append it with `-intunemam`. You must also include `http-intunemam`, `https-intunemam`, and `ms-outlook-intunemam` in the array.
+9. For mobile apps developed on iOS 9+, include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Additionally, for each protocol listed, add a new protocol and append it with `-intunemam`. You must also include `http-intunemam`, `https-intunemam`, and `ms-outlook-intunemam` in the array.
 
 10. If the app has app groups defined in its entitlements, add these groups to the IntuneMAMSettings dictionary under the `AppGroupIdentifiers` key as an array of strings.
 
@@ -169,6 +168,8 @@ To enable the Intune App SDK, follow these steps:
 13. Use the `-force_load PATH_TO_ADAL_LIBRARY` linker option when you're linking to the library.
 
     Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` build configuration setting or **Other Linker Flags** in the UI. `PATH_TO_LIB` should be replaced with the location of the ADAL binaries.
+
+
 
 ## Set up Azure Directory Authentication Library
 
@@ -200,22 +201,14 @@ If you are explicitly setting the ADAL shared cache keychain group, make sure it
 
 **How do I force the Intune App SDK to use ADAL settings that my app already uses?**
 
-If your app already uses ADAL, see the section on IntuneMAMSettings for information on populating the following settings:  
+If your app already uses ADAL, see [Configure settings for the Intune App SDK](#configure-settings-for-the-intune-app-sdk) for information on populating the following settings:  
 
 * ADALClientId
+* ADALAuthority
 * ADALRedirectUri
 * ADALRedirectScheme
 * ADALCacheKeychainGroupOverride
 
-**How do I switch between Azure AD production and internal test environments?**
-
-You can use the `AadAuthorityURI` setting in MAMPolicies.plist to specify the Azure AD environment used for ADAL calls. It’s currently set to use the Azure AD preproduction environment (PPE) by default unless it's overridden.
-
-To test against PPE, you can use a compile-time or runtime switch.
-
-For a compile-time environment switch of MAM service URLs and Azure AD, set the `UsePPE` Boolean flag to true in MAMEnvironment.plist. (Note that there is no support for doing this via Info.plist.)
-
-For a runtime environment switch, set `com.microsoft.intune.mam.useppe` in standard user defaults to “1” to use PPE. This replaces the existing `com.microsoft.intune.mam.AADAuthorityEnvironment` setting.
 
 **How do I override the Azure AD authority URL with a tenant-specific URL supplied at runtime?**
 
@@ -230,9 +223,11 @@ The SDK will continue to use this authority URL for policy refresh and any subse
 
 The following actions are required if the app already uses ADAL for authentication:
 
-* In the project’s Info.plist file, under the IntuneMAMSettings dictionary with the key name `ADALClientId`, specify the client ID to be used for ADAL calls.
+1. In the project’s Info.plist file, under the IntuneMAMSettings dictionary with the key name `ADALClientId`, specify the client ID to be used for ADAL calls.
 
-* In the project’s Info.plist file, under the IntuneMAMSettings dictionary with the key name `ADALRedirectUri`, specify the redirect URI to be used for ADAL calls. You might also need to specify `ADALRedirectScheme`, depending on the format of your app’s redirect URI.
+2. Also under the IntuneMAMSettings dictionary with the key name `ADALAuthority`, specify the Azure AD authority.
+
+3. Also under the IntuneMAMSettings dictionary with the key name `ADALRedirectUri`, specify the redirect URI to be used for ADAL calls. You might also need to specify `ADALRedirectScheme`, depending on the format of your app’s redirect URI.
 
 **What if my app does not already use ADAL for authentication?**
 
@@ -241,22 +236,15 @@ If your app does not use ADAL, the Intune App SDK will provide default values fo
 ## Register your app with the Intune MAM service
 
 ### Use the APIs
-The Intune App SDK now provides the ability for iOS apps to receive MAM policies from Intune without the need to be enrolled with Intune through mobile device management (MDM). To support this new functionality, the SDK provides new APIs that let the app receive MAM policies. To use the new APIs, follow these steps:
+The Intune App SDK now provides the ability for iOS apps to receive app protection policy from Intune without the need to be enrolled with Intune through mobile device management (MDM). To support this new functionality, the SDK provides new APIs that let the app receive app protection policies. To use the new APIs, follow these steps:
 
-1. Use the latest release of the Intune App SDK, which supports management of apps with or without device enrollment. If your app has used an older version of the SDK without this feature, you will need to update the Intune MAM library, as well as update the Headers folder with the headers from the latest SDK.
+1. Use the latest release of the Intune App SDK, which supports management of apps with or without device enrollment. .
 
 2. Add IntuneMAMEnrollment.h to any files that will call the APIs.
 
-3. To test against PPE, you can use a compile-time or runtime switch.
-
-	For a compile-time environment switch of MAM service URLs and Azure AD, set the `UsePPE` Boolean flag to true in MAMEnvironment.plist. (Note that there is no support for doing this via Info.plist.)
-
-	For a runtime environment switch, set `com.microsoft.intune.mam.useppe` in standard user defaults to “1” to use PPE. This replaces the existing `com.microsoft.intune.mam.AADAuthorityEnvironment` setting.
-
-
 ### Register accounts
 
-An app can receive MAM policies from the Intune service if the app is enrolled on behalf of a specified user account. The app is responsible for registering any newly signed-in user with the Intune App SDK. After the new user account has been authenticated, the app should call the `registerAndEnrollAccount` method in Headers/IntuneMAMEnrollment.h:
+An app can receive app protection policy from the Intune service if the app is enrolled on behalf of a specified user account. The app is responsible for registering any newly signed-in user with the Intune App SDK. After the new user account has been authenticated, the app should call the `registerAndEnrollAccount` method in Headers/IntuneMAMEnrollment.h:
 
 ```objc
 /**
@@ -272,7 +260,7 @@ An app can receive MAM policies from the Intune service if the app is enrolled o
 ```
 By calling the `registerAndEnrollAccount` method, the SDK will register the user account and attempt to enroll the app on behalf of this account. If the enrollment fails for any reason, the SDK will automatically retry the enrollment 24 hours later. For debugging purposes, the app can receive notifications, via a delegate, about the results of any enrollment requests.
 
-After this API has been invoked, the application can continue to function as normal. If the enrollment succeeds, the SDK will notify the user that an app restart is required. At that time, the user can immediately restart the app.
+After this API has been invoked, the app can continue to function as normal. If the enrollment succeeds, the SDK will notify the user that an app restart is required. At that time, the user can immediately restart the app.
 
 ### Deregister accounts
 
@@ -280,7 +268,7 @@ Before a user is signed out of an app, the app should deregister the user from t
 
 1. Enrollment retries will no longer happen for the user’s account.
 
-2. If the user has successfully enrolled the application, the user and app will be unenrolled from the Intune MAM service, and MAM policies will be removed.
+2. If the user has successfully enrolled the application, the user and app will be unenrolled from the Intune MAM service, and app protection policy will be removed.
 
 3. If the app initiates a selective wipe (optional), any work-related or school-related data is deleted.
 
@@ -310,9 +298,9 @@ If the app will delete the user’s work-related or school-related data on its o
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
 
-## Enroll without prior sign-in
+### Enroll without prior sign-in
 
-An app that does not sign in the user with Azure Active Directory can still receive MAM policies from the Intune service by calling the API to have the SDK handle that authentication. Apps should use this technique when they have not authenticated a user with Azure AD but still need to retrieve MAM policies to help protect data. An example is if another authentication service is being used for app sign-in, or if the app does not support signing in at all. To do this, the application should call the
+An app that does not sign in the user with Azure Active Directory can still receive app protection policy from the Intune service by calling the API to have the SDK handle that authentication. Apps should use this technique when they have not authenticated a user with Azure AD but still need to retrieve app protection policy to help protect data. An example is if another authentication service is being used for app sign-in, or if the app does not support signing in at all. To do this, the application should call the
 `loginAndEnrollAccount`  method in Headers/IntuneMAMEnrollment.h:
 
 ```objc
@@ -373,66 +361,40 @@ These delegate methods return an `IntuneMAMEnrollmentStatus` object that has the
 - An error string with a description of the status code
 - An `NSError` object
 
-This object is defined in Headers/IntuneMAMEnrollmentStatus.h, along with the specific status codes that can be returned.
+This object is defined in IntuneMAMEnrollmentStatus.h, along with the specific status codes that can be returned.
 
 
 
 
-## Sample code
+### Sample code
 
 These are example implementations of the delegate methods:
 
 ```objc
 - (void)enrollmentRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
     NSLog(@"enrollment result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
 
 - (void)policyRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
-    NSLog(@"policy check-in result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
+	NSLog(@"policy check-in result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
-
 - (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
-
-
 {
-
-
     NSLog(@"un-enroll result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
-
-
-
     NSLog(@"Debug Message: %@", status.errorString);
-
-
 }
 
 ```
 
 ## App restart
 
-When an app receives MAM policies for the first time, it must restart to apply the required hooks. To notify the app that a restart needs to happen, the SDK provides a delegate method in Headers/IntuneMAMPolicyDelegate.h.
+When an app receives app protection policies for the first time, it must restart to apply the required hooks. To notify the app that a restart needs to happen, the SDK provides a delegate method in Headers/IntuneMAMPolicyDelegate.h.
 
 ```objc
  - (BOOL) restartApplication
@@ -440,19 +402,34 @@ When an app receives MAM policies for the first time, it must restart to apply t
 The return value of this method tells the SDK if the application will handle the required restart:   
 
  - If true is returned, the application will handle the restart.   
+
  - If false is returned, the SDK will restart the application after this method returns. The SDK will immediately show a dialog box that tells the user to restart the application.
 
-## Implement save-as controls
+## Customize your app's behavior
 
-Intune lets IT admins select which storage locations a managed app can save data to. Apps can query the Intune App SDK for allowed storage locations by using the **isSaveToAllowedForLocation** API.
+The Intune App SDK has several APIs you can call to get information about the Intune app protection policy deployed to the app. You can use this data to customize your app's behavior. Most app protection policy settings are automatically enforced by the SDK and not the application. The only setting that the app should implement is the Save-as control.
+
+### Get the app protection policy settings
+
+#### IntuneMAMPolicyManager.h
+The IntuneMAMPolicyManager class exposes the Intune app protection policy deployed to the application. Notably, it exposes APIs that are useful for [Enabling multi-identity](#-enable-multi-identity-optional).
+
+#### IntuneMAMPolicy.h
+The IntuneMAMPolicy class exposes the Intune app protection policy deployed to the application. Most the policy settings exposed in this class are enforced by the SDK, but you can always customize your app's behavior based on how policy settings are enforced.
+
+This class exposes some APIs needed to implement save-as controls, detailed in the next section.
+
+### Implement save-as controls
+
+Intune lets IT admins select which storage locations a managed app can save data to. Apps can query the Intune App SDK for allowed storage locations by using the **isSaveToAllowedForLocation** API, defined in **IntuneMAMPolicy.h**.
 
 Before apps can save managed data to a cloud-storage or local location, they must check with the **isSaveToAllowedForLocation** API to know if the IT admin has allowed data to be saved there.
 
 When apps use the **isSaveToAllowedForLocation** API, they must pass in the UPN for the storage location, if it is available.
 
-### Supported save locations
+#### Supported save locations
 
-The **isSaveToAllowedForLocation** API provides constants to check whether the IT admin permits data to be saved to the following locations:
+The **isSaveToAllowedForLocation** API provides constants to check whether the IT admin permits data to be saved to the following locations defined in IntuneMAMPolicy.h:
 
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
@@ -464,45 +441,49 @@ The **isSaveToAllowedForLocation** API provides constants to check whether the I
 
 Apps should use the constants in the **isSaveToAllowedForLocation** API to check if data can be saved to locations considered "managed," like OneDrive for Business, or "personal." Additionally, the API should be used when the app can't check whether a location is "managed" or "personal."
 
-When a location is known to be "personal," apps should use the **IntuneMAMSaveLocationOther** value.
+Locations known to be "personal" are represented by the `IntuneMAMSaveLocationOther` constant.
 
-The **IntuneMAMSaveLocationLocalDrive** constant should be used when the app is saving data to any location on the local device.
+The `IntuneMAMSaveLocationLocalDrive` constant should be used when the app is saving data to any location on the local device.
 
-## Set up the Intune App SDK
+## Configure settings for the Intune App SDK
 
-You use the IntuneMAMSettings dictionary in the application’s Info.plist file to set up the Intune App SDK. The following table lists all supported settings.
+You use the **IntuneMAMSettings** dictionary in the application’s Info.plist file to set up and configure the Intune App SDK. The following table lists all supported settings.
 
 Some of these settings might have been covered in previous sections, and some do not apply to all apps.
 
 Setting  | Type  | Definition | Required?
 --       |  --   |   --       |  --
-ADALClientId  | String  | The app’s Azure AD client identifier. | Required if the app uses ADAL.
-ADALRedirectUri  | String  | The app’s Azure AD redirect URI. | ADALRedirectUri or ADALRedirectScheme is required if the app uses ADAL.
-ADALRedirectScheme  | String  | The app's Azure AD redirect scheme. This can be used in place of ADALRedirectUri if the application's redirect URI is in the format `scheme://bundle_id`. | ADALRedirectUri or ADALRedirectScheme is required if the app uses ADAL.
-ADALLogOverrideDisabled | Boolean  | Specifies whether the SDK will route all ADAL logs (including ADAL calls from the app, if any) to its own log file. Defaults to NO. Set to YES if the app will set its own ADAL log callback. | Optional.
-ADALCacheKeychainGroupOverride | String  | Specifies the keychain group to use for the ADAL cache, instead of “com.microsoft.adalcache." Note that this doesn’t have the app-id prefix. That will be prefixed to the provided string at runtime. | Optional.
-AppGroupIdentifiers | Array of string  | Array of app groups from the app’s entitlements com.apple.security.application-groups section. | Required if the app uses application groups.
-ContainingAppBundleId | String | Specifies the bundle ID of the extension’s containing application. | Required for iOS extensions.
-DebugSettingsEnabled| Boolean | If set to YES, test policies within the Settings bundle can be applied. Applications should *not* be shipped with this setting enabled. | Optional.
-MainNibFile<br>MainNibFile~ipad  | String  | This setting should have the application’s main nib file name.  | Required if the application defines MainNibFile in Info.plist.
-MainStoryboardFile<br>MainStoryboardFile~ipad  | String  | This setting should have the application’s main storyboard file name. | Required if the application defines UIMainStoryboardFile in Info.plist.
-MAMPolicyRequired| Boolean| Specifies whether the app will be blocked from starting if the app does not have an Intune MAM policy. Defaults to NO. | Optional.
-MAMPolicyWarnAbsent | Boolean| Specifies whether the app will warn the user during launch if the app does not have an Intune MAM policy. Note that apps cannot be submitted to the store with this setting set to YES. | Optional.
-MultiIdentity | Boolean| Specifies whether the app is multi-identity aware. | Optional.
-SplashIconFile <br>SplashIconFile~ipad | String  | Specifies the Intune splash (startup) icon file. | Optional.
-SplashDuration | Number | Minimum amount of time, in seconds, that the Intune startup screen will be shown at application launch. Defaults to 1.5. | Optional.
-BackgroundColor| String| Specifies the background color for the startup and PIN screens. Accepts a hexadecimal RGB string in the form of #XXXXXX, where X can range from 0-9 or A-F. The pound sign might be omitted.   | Optional. Defaults to light grey.
-ForegroundColor| String| Specifies the foreground color for the startup and PIN screens, like text color. Accepts a hexadecimal RGB string in the form of #XXXXXX, where X can range from 0-9 or A-F. The pound sign might be omitted.  | Optional. Defaults to black.
-AccentColor | String| Specifies the accent color for the PIN screen, like button text color and box highlight color. Accepts a hexadecimal RGB string in the form of #XXXXXX, where X can range from 0-9 or A-F. The pound sign might be omitted.| Optional. Defaults to system blue.
-MAMTelemetryDisabled| Boolean| Specifies if the SDK will not send any telemetry data to its back end.| Optional.
-MAMTelemetryUsePPE | Boolean | Specifies if the SDK will send data to the PPE back end. Use this when testing your apps with an Intune policy so that test telemetry data does not mix with customer data. | Optional.
+ADALClientId  | String  | The app’s Azure AD client identifier. | Required if the app uses ADAL. |
+ADALAuthority | String | The app's Azure AD authority in use. You should use your own environment where AAD accounts have been configured. | Required if the app uses ADAL. If this value is absent, an Intune default is used.|
+ADALRedirectUri  | String  | The app’s Azure AD redirect URI. | ADALRedirectUri or ADALRedirectScheme is required if the app uses ADAL.  |
+ADALRedirectScheme  | String  | The app's Azure AD redirect scheme. This can be used in place of ADALRedirectUri if the application's redirect URI is in the format `scheme://bundle_id`. | ADALRedirectUri or ADALRedirectScheme is required if the app uses ADAL. |
+ADALLogOverrideDisabled | Boolean  | Specifies whether the SDK will route all ADAL logs (including ADAL calls from the app, if any) to its own log file. Defaults to NO. Set to YES if the app will set its own ADAL log callback. | Optional. |
+ADALCacheKeychainGroupOverride | String  | Specifies the keychain group to use for the ADAL cache, instead of “com.microsoft.adalcache." Note that this doesn’t have the app-id prefix. That will be prefixed to the provided string at runtime. | Optional. |
+AppGroupIdentifiers | Array of string  | Array of app groups from the app’s entitlements com.apple.security.application-groups section. | Required if the app uses application groups. |
+ContainingAppBundleId | String | Specifies the bundle ID of the extension’s containing application. | Required for iOS extensions. |
+DebugSettingsEnabled| Boolean | If set to YES, test policies within the Settings bundle can be applied. Applications should *not* be shipped with this setting enabled. | Optional. |
+MainNibFile<br>MainNibFile~ipad  | String  | This setting should have the application’s main nib file name.  | Required if the application defines MainNibFile in Info.plist. |
+MainStoryboardFile<br>MainStoryboardFile~ipad  | String  | This setting should have the application’s main storyboard file name. | Required if the application defines UIMainStoryboardFile in Info.plist. |
+MAMPolicyRequired| Boolean| Specifies whether the app will be blocked from starting if the app does not have an Intune app protection policy. Defaults to NO. <br><br> Note: apps cannot be submitted to the App Store with MAMPolicyRequired set to YES. | Optional. |
+MAMPolicyWarnAbsent | Boolean| Specifies whether the app will warn the user during launch if the app does not have an Intune app protection policy. Note that apps cannot be submitted to the store with this setting set to YES. | Optional. |
+MultiIdentity | Boolean| Specifies whether the app is multi-identity aware. | Optional. |
+SplashIconFile <br>SplashIconFile~ipad | String  | Specifies the Intune splash (startup) icon file. | Optional. |
+SplashDuration | Number | Minimum amount of time, in seconds, that the Intune startup screen will be shown at application launch. Defaults to 1.5. | Optional. |
+BackgroundColor| String| Specifies the background color for the startup and PIN screens. Accepts a hexadecimal RGB string in the form of #XXXXXX, where X can range from 0-9 or A-F. The pound sign might be omitted.   | Optional. Defaults to light grey. |
+ForegroundColor| String| Specifies the foreground color for the startup and PIN screens, like text color. Accepts a hexadecimal RGB string in the form of #XXXXXX, where X can range from 0-9 or A-F. The pound sign might be omitted.  | Optional. Defaults to black. |
+AccentColor | String| Specifies the accent color for the PIN screen, like button text color and box highlight color. Accepts a hexadecimal RGB string in the form of #XXXXXX, where X can range from 0-9 or A-F. The pound sign might be omitted.| Optional. Defaults to system blue. |
+MAMTelemetryDisabled| Boolean| Specifies if the SDK will not send any telemetry data to its back end.| Optional. |
+
+> [!NOTE]
+> If your app will be released to the App Store, `MAMPolicyRequired` must be set to "NO," per App Store standards.
 
 ## Telemetry
 
 By default, the Intune App SDK for iOS logs telemetry data on the following usage events. This data is sent to Microsoft Intune.
 
 * **App launch**: To help Microsoft Intune learn about MAM-enabled app usage by management type (MAM with MDM, MAM without MDM enrollment, and so on).
-* **EnrollApplication API call**: To help Microsoft Intune learn about success rate and other performance metrics of `enrollApplication` calls from the client side.
+
+* **Enrollment calls**: To help Microsoft Intune learn about success rate and other performance metrics of enrollment calls initiated from the client side.
 
 > [!NOTE]
 > If you choose not to send Intune App SDK telemetry data to Microsoft Intune from your mobile application, you must disable Intune App SDK telemetry capture. Set the property `MAMTelemetryDisabled` to YES in the IntuneMAMSettings dictionary.
@@ -520,12 +501,16 @@ Note that an identity is simply defined as a string. Identities are case-insensi
 An identity is simply the user name of an account (for example, user@contoso.com). Developers can set the identity of the app on the following levels:
 
 * **Process identity**: Sets the process-wide identity and is mainly used for single identity applications. This identity affects all tasks, files, and UI.
+
 * **UI identity**: Determines what policies are applied to UI tasks on the main thread, like cut/copy/paste, PIN, authentication, and data sharing. The UI identity does not affect file tasks like encryption and backup.
+
 * **Thread identity**: Affects what policies are applied on the current thread. This identity affects all tasks, files, and UI.
 
 The app is responsible for setting the identities appropriately, whether or not the user is managed.
 
-At any time, every thread has an effective identity for UI tasks and file tasks. This is the identity that's used to check what policies, if any, should be applied. If the identity is "no identity" or the user is not managed, no policies will be applied.
+At any time, every thread has an effective identity for UI tasks and file tasks. This is the identity that's used to check what policies, if any, should be applied. If the identity is "no identity" or the user is not managed, no policies will be applied. The diagrams below show how the effective identities are determined.
+
+  ![Intune App SDK iOS: linked frameworks and libraries](../media/intune-app-sdk/ios-thread-identities.png)
 
 ### Thread queues
 
@@ -639,7 +624,7 @@ The SDK will stop retrying when it detects that a user has successfully enrolled
 The SDK will take these actions in the background periodically:
 
  - If the application is not yet enrolled, it will try to enroll all registered accounts every 24 hours.
- - If the application is enrolled, the SDK will check for MAM policy updates every 8 hours.
+ - If the application is enrolled, the SDK will check for app protection policy updates every 8 hours.
 
 Deregistering a user notifies the SDK that the user will no longer use the application, and the SDK can stop any of the periodic events for that user account. It also triggers an app unenroll and selective wipe if necessary.
 

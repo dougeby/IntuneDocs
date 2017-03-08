@@ -4,18 +4,21 @@
 title: What happens if you reset your Windows device? | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02asearchScope: - Company Portal
+ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
+searchScope:
+ - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: priyar
@@ -28,7 +31,7 @@ ms.custom: intune-enduser
 
 # What happens if you reset your Windows device using the Company Portal?
 
-When you use the Company Portal app or [Company Portal website](reset-your-device-cpwebsite.md) to reset your Windows device, it resets your device to its factory settings, and deletes all apps, settings, and data, including your personal data. What happens on each device depends on the type of device that you have and how you're using the device (as described in the following table). For instructions on how to reset your lost or stolen device, see [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-windows.md).
+When you use the Company Portal app or [Company Portal website](reset-erase-your-device-cpwebsite.md) to reset your Windows device, it resets your device to its factory settings, and deletes all apps, settings, and data, including your personal data. What happens on each device depends on the type of device that you have and how you're using the device (as described in the following table). For instructions on how to reset your lost or stolen device, see [Reset (erase) your lost or stolen device](reset-erase-your-device-cpwebsite.md).
 
 |Device configuration and management|Device type|
 |---------------------------------------|---------------|
