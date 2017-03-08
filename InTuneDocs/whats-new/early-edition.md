@@ -88,7 +88,7 @@ You can now assign line of business apps from the store to users whether or not 
 
 #### Additional Windows 10 upgrade paths <!--903672-->
 
-You can now create an edition upgrade policy to upgrade devices to the following Windows 10 editions:
+You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
 
 - Windows 10 Professional
 - Windows 10 Professional N
