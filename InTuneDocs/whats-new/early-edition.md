@@ -90,8 +90,6 @@ You can now assign line of business apps from the store to users whether or not 
 
 You can now create an edition upgrade policy to upgrade devices to the following Windows 10 editions:
 
-- Windows 10 Education
-- Windows 10 Education N
 - Windows 10 Professional
 - Windows 10 Professional N
 - Windows 10 Professional Education
