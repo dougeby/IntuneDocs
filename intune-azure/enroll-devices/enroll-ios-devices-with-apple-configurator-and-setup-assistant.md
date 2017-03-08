@@ -4,8 +4,8 @@
 title: Enroll iOS devices- Apple Configurator-Setup AssistanttitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant."
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

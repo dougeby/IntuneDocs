@@ -4,7 +4,7 @@
 title: Troubleshoot client setup | Microsoft Docs
 description: Troubleshoot common client setup problems.
 keywords:
-author: staciebarkerms.author: staciebarker
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article

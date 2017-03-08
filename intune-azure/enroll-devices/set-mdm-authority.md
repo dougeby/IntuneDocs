@@ -4,8 +4,8 @@
 title: Set the mobile device management authoritytitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to set the mobile device management authority in Intune. "
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/06/2016
 ms.topic: article
