@@ -32,14 +32,14 @@ ms.custom: intune-classic
 > [!NOTE]
 > You might want to first read the [Intune App SDK overview](intune-app-sdk.md), which covers the current features of the SDK and describes how to prepare for integration on each supported platform.
 
-The Microsoft Intune App SDK for Android lets you incorporate Intune app protection policies (also known as MAM policies) into your native Android app. An Intune-enlightened application is one that is integrated with the Intune App SDK. Intune administrators can easily deploy app protection policies to your Intune-enlightened app when Intune actively manages the app.
+The Microsoft Intune App SDK for Android lets you incorporate Intune app protection policies (also known as APP or MAM policies) into your native Android app. An Intune-enlightened application is one that is integrated with the Intune App SDK. Intune administrators can easily deploy app protection policies to your Intune-enlightened app when Intune actively manages the app.
 
 
 ## What's in the SDK
 
 The Intune App SDK consists of the following files:  
 
-* **Microsoft.Intune.MAM.SDK.jar**: The interfaces necessary to enable MAM and  interoperability with the Intune Company Portal app. Apps must specify it as an Android library reference.
+* **Microsoft.Intune.MAM.SDK.jar**: The interfaces necessary to enable MAM and interoperability with the Intune Company Portal app. Apps must specify it as an Android library reference.
 
 * **Microsoft.Intune.MAM.SDK.Support.v4.jar**: The interfaces necessary to enable MAM in apps that use the Android v4 support library. Apps that need this support must reference the JAR file directly.
 
@@ -55,7 +55,7 @@ The Intune App SDK consists of the following files:
 
 ## Requirements
 
-The Intune App SDK is a compiled Android project. As a result, it's largely unaffected by the version of Android that the app uses for its minimum or target API versions. The SDK supports Android API 14 (Android 4.0+) to Android API 24.
+The Intune App SDK is a compiled Android project. As a result, it is largely unaffected by the version of Android that the app uses for its minimum or target API versions. The SDK supports Android API 14 (Android 4.0+) to Android API 24.
 
 The Intune App SDK for Android relies on the presence of the [Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) app on the device to enable app protection policies. For app protection without device enrollment, the user is _**not**_ required to enroll the device by using the Company Portal app.
 
@@ -68,7 +68,7 @@ The Intune App SDK is a standard Android library with no external dependencies. 
 
 **Microsoft.Intune.MAM.SDK.jar** must be specified as an Android library reference. To do this, open your app project in Android Studio and go to **File > New > New module** and select **Import .JAR/.AAR Package**. Select our Android archive package Microsoft.Intune.MAM.SDK.jar. To ensure successful export of Activities and Services:
 
-1. (Recommended) Use the [Android manifest merger](https://developer.android.com/studio/build/manifest-merge.html) tool in Android Studio, which is part of the Android Developer Tools v.20 or above.
+1. Use the [Android manifest merger](https://developer.android.com/studio/build/manifest-merge.html) tool in Android Studio, which is part of the Android Developer Tools v.20 or above. (Recommended)
 
 2. Explicitly include the SDK JAR.
 
@@ -77,7 +77,6 @@ The Intune App SDK is a standard Android library with no external dependencies. 
 4. Explicitly include the SDK's resources in every consumer.
 
 Additionally, **Microsoft.Intune.MAM.SDK.Support.v4** and **Microsoft.Intune.MAM.SDK.Support.v7** contain Intune variants of android.support.v4 and android.support.v7 respectively. They are not built into Microsoft.Intune.MAM.SDK in case an app does not want to include the support libraries. They are standard JAR files instead of Android library projects.
-
 
 
 ### Entry points
@@ -112,7 +111,7 @@ Why is the Company Portal app required? When the Company Portal app is installed
 
 
 
-## Replace classes, methods, and activities with their MAM equivalent (required)
+## Replace classes, methods, and activities with their MAM equivalent
 
 Android base classes must be replaced with their respective MAM equivalents. To do so, find all instances of the classes listed in the following table and replace them with the Intune App SDK equivalent.
 
@@ -160,6 +159,7 @@ Android base classes must be replaced with their respective MAM equivalents. To 
 |--|--|
 |android.support.v7.app.ActionBarActivity | MAMActionBarActivity |
 
+
 > [!NOTE]
 > When an Android [entry point](https://developer.android.com/guide/components/fundamentals.html) has been overridden by its MAM equivalent, the MAM version of the entry point's lifecycle must be used (with the exception of the class `MAMApplication`).
 >
@@ -178,7 +178,7 @@ In some cases, a method available in the Android class has been marked as final 
 
 Logging should be initialized early to get the most value out of logged data. Depending on the app, `Application.onMAMCreate` is most likely the best place to initialize logging.
 
-To receive MAM logs in your app, create a [Java Handler](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) and add it to the **MAMLogHandlerWrapper**. This will invoke `publish()` on the application handler for every log message.
+To receive MAM logs in your app, create a [Java Handler](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) and add it to the `MAMLogHandlerWrapper`. This will invoke `publish()` on the application handler for every log message.
 
 ```java
 /**
@@ -212,7 +212,7 @@ public interface MAMLogHandlerWrapper {
 
 ## Enable features that require app participation
 
-There are several app protection policies the SDK cannot implement on its own. The app can control its behavior to achieve these features by using several APIs that you can find in the following **AppPolicy** interface.
+There are several app protection policies the SDK cannot implement on its own. The app can control its behavior to achieve these features by using several APIs that you can find in the following `AppPolicy` interface.
 
 ```java
 /**
@@ -293,7 +293,7 @@ MAMComponents.get(AppPolicy.class).getIsPinRequired();
 
 ### Example: Determine the primary Intune user
 
-In addition to the APIs exposed in AppPolicy, the user principal name (**UPN**) is also exposed by the `getPrimaryUser()` API defined inside the **MAMUserInfo** interface. To get the UPN, call the following:
+In addition to the APIs exposed in AppPolicy, the user principal name (**UPN**) is also exposed by the `getPrimaryUser()` API defined inside the `MAMUserInfo` interface. To get the UPN, call the following:
 
 ```java
 MAMUserInfo info = MAMComponents.get(MAMUserInfo.class);
@@ -357,7 +357,7 @@ MAMComponents.get(AppPolicy.class).getIsSaveToLocationAllowed(SaveLocation.LOCAL
 ### Overview
 The Intune App SDK allows your app to control the behavior of certain policies, such as selective wipe, when they are deployed by the IT administrator. When an IT administrator deploys such a policy, the Intune service sends down a notification to the SDK.
 
-Your app must register for notifications from the SDK by creating a **MAMNotificationReceiver** and  registering it with **MAMNotificationReceiverRegistry**. This is done by providing the receiver and the type of notification desired in  `App.onCreate`, as the example below illustrates:
+Your app must register for notifications from the SDK by creating a `MAMNotificationReceiver` and  registering it with `MAMNotificationReceiverRegistry`. This is done by providing the receiver and the type of notification desired in  `App.onCreate`, as the example below illustrates:
 
 ```java
 @Override
@@ -372,14 +372,14 @@ public void onCreate() {
 
 ### MAMNotificationReceiver
 
-The **MAMNotificationReceiver** interface simply receives notifications from the Intune service. Some notifications are handled by the SDK directly, while others require the app's participation. An app **must** return either true or false from a notification. It must always return true unless some action it tried to take as a result of the notification failed.
+The `MAMNotificationReceiver` interface simply receives notifications from the Intune service. Some notifications are handled by the SDK directly, while others require the app's participation. An app **must** return either true or false from a notification. It must always return true unless some action it tried to take as a result of the notification failed.
 
 * This failure may be reported to the Intune service. An example of a scenario to report is if the app fails to wipe user data after the IT administrator initiates a wipe.
 
 >[!NOTE]
 > It is safe to block in `MAMNotificationReceiver.onReceive` because its callback is not running on the UI thread.
 
-The **MAMNotificationReceiver** interface as defined in the SDK is included below :
+The `MAMNotificationReceiver` interface as defined in the SDK is included below :
 
 ```java
 /**
@@ -505,7 +505,7 @@ Please follow the [ADAL guidelines for generating a secret key](https://github.c
 ### Overview
 By default, the Intune App SDK will apply policy  to the app as a whole. Multi-Identity is an optional Intune app protection feature which can be enabled to allow policy to be applied on a per-identity level. This requires significantly more app participation than other app protection features.
 
-The app **must** inform the SDK when it intends to change the active identity, the SDK will also notify the app when an identity change is required. Once the user enrolls the device or the app, the SDK registers this identity and considers it the primary Intune managed identity. Other users in the app will be treated as unmanaged, with unrestricted policy settings.
+The app _must_ inform the SDK when it intends to change the active identity, the SDK will also notify the app when an identity change is required. Once the user enrolls the device or the app, the SDK registers this identity and considers it the primary Intune managed identity. Other users in the app will be treated as unmanaged, with unrestricted policy settings.
 
 > [!NOTE]
 > Currently, only one Intune managed identity is supported per device.
@@ -596,7 +596,7 @@ You can also set the identity of an activity directly through a method in **MAMA
    public final void switchMAMIdentity(final String newIdentity);
 ```
 
-You can also override a method in **MAMActivity** if you want the app to be notified of the result of attempts to change the identity of that activity.
+You can also override a method in `MAMActivity` if you want the app to be notified of the result of attempts to change the identity of that activity.
 
 ``` java
   public void onSwitchMAMIdentityComplete(final MAMIdentitySwitchResult result);
@@ -623,14 +623,14 @@ In addition to the app's ability to set the identity, a thread or a context's id
 
   **Example:** A user canceling out of an authorization prompt during `Resume` will result in an implicit switch to an empty identity.
 
-  The app is given an opportunity to be made aware of these changes, and, if it must, the app can forbid them. **MAMService** and **MAMContentProvider** expose the following method that subclasses may override:
+  The app is given an opportunity to be made aware of these changes, and, if it must, the app can forbid them. `MAMService` and `MAMContentProvider` expose the following method that subclasses may override:
 
   ```java
   public void onMAMIdentitySwitchRequired(final String identity,
   	final AppIdentitySwitchResultCallback callback);
   ```
 
-  In the **MAMActivity** class , an additional parameter is present in the method:
+  In the `MAMActivity` class , an additional parameter is present in the method:
 
   ```java
   public void onMAMIdentitySwitchRequired(final String identity,
@@ -643,7 +643,7 @@ In addition to the app's ability to set the identity, a thread or a context's id
 
   * The `AppIdentitySwitchResultCallback` is as follows:
 
-  	```
+  	```java
   	public interface AppIdentitySwitchResultCallback {
   		/**
   		 * @param result
@@ -680,7 +680,7 @@ The method `onMAMIdentitySwitchRequired` is called for all implicit identity cha
 
   ### File Protection
 
-  Every file has an identity associated with it at the time of creation, based on thread and process identity. This identity will be used for both file encryption and selective wipe. Only files whose identity is managed and has policy requiring encryption will be encrypted. The SDK's default selective functionality wipe will only wipe files associated with the managed identity for which a wipe has been requested. The app may query or change a file’s identity using the **MAMFileProtectionManager** class.
+  Every file has an identity associated with it at the time of creation, based on thread and process identity. This identity will be used for both file encryption and selective wipe. Only files whose identity is managed and has policy requiring encryption will be encrypted. The SDK's default selective functionality wipe will only wipe files associated with the managed identity for which a wipe has been requested. The app may query or change a file’s identity using the `MAMFileProtectionManager` class.
 
   ```java
 	public final class MAMFileProtectionManager {
@@ -840,13 +840,13 @@ public final class MAMDataProtectionManager {
 
 ### Content Providers
 
-If the app provides corporate data other than a **ParcelFileDescriptor** through a **ContentProvider**, the app must call the **MAMContentProvider** method `isProvideContentAllowed(String)`, passing the owner identity's UPN (user principal name) for the content. If this function returns false, the content *may not* be returned to the caller. File descriptors returned through a content provider are handled automatically based on the file identity.
+If the app provides corporate data other than a **ParcelFileDescriptor** through a **ContentProvider**, the app must call the method `isProvideContentAllowed(String)` in `MAMContentProvider`, passing the owner identity's UPN (user principal name) for the content. If this function returns false, the content *may not* be returned to the caller. File descriptors returned through a content provider are handled automatically based on the file identity.
 
 ### Selective Wipe
 
-If an app registers for the **WIPE_USER_DATA** notification, it will not receive the benefit of the SDK's default selective wipe behavior. For multi-identity aware apps, this loss may be more significant since MAM default selective wipe will wipe only files whose identity is targeted by a wipe.
+If an app registers for the `WIPE_USER_DATA` notification, it will not receive the benefit of the SDK's default selective wipe behavior. For multi-identity aware apps, this loss may be more significant since MAM default selective wipe will wipe only files whose identity is targeted by a wipe.
 
-If a multi-identity aware application wishes MAM default selective wipe to be done _**and**_ wishes to perform its own actions on wipe, it should register for **WIPE_USER_AUXILIARY_DATA** notifications. This notification will be sent immediately by the SDK before it performs the MAM default selective wipe. An app should never register for both WIPE_USER_DATA and WIPE_USER_AUXILIARY_DATA.
+If a multi-identity aware application wishes MAM default selective wipe to be done _**and**_ wishes to perform its own actions on wipe, it should register for `WIPE_USER_AUXILIARY_DATA` notifications. This notification will be sent immediately by the SDK before it performs the MAM default selective wipe. An app should never register for both WIPE_USER_DATA and WIPE_USER_AUXILIARY_DATA.
 
 
 ## MAM Service Enrollment (new!)
@@ -952,7 +952,6 @@ void updateToken(String upn, String aadId, String resourceId, String token);
 > The SDK will call `acquireToken()` periodically to get the token, so calling `updateToken()` is not strictly required. However, it is recommended as it can help enrollments and app protection policy check-ins complete in a timely manner.
 
 
-
 ### Account registration methods
 
 This section describes the account registration API methods in `MAMEnrollmentManager` and how to use them.
@@ -1026,8 +1025,6 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 The `getEnrollmentResult()` method returns the result of the enrollment request.  Since `MAMEnrollmentNotification` extends `MAMUserNotification`, the identity of the user for whom the enrollment was attempted is also available. The app must implement the `MAMNotificationReceiver` interface to receive these notifications, detailed in the [Register for notifications from the SDK](#Register-for-notifications-from-the-SDK) section.
 
 The registered user account's status may change when an enrollment notification is received, but it will not change in some cases (e.g. if `AUTHORIZATION_NEEDED` notification is received after a more informative result such as `WRONG_USER`, the more informative result will be maintained as the account's status)
-
-
 
 
 ## Protecting Backup data
