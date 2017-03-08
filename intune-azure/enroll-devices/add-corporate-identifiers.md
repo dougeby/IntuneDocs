@@ -7,7 +7,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +49,7 @@ In a text editor, the .csv list looks something like this:
 4. Navigate to the IMEI CSV file, and select **Add**.
 
 > [!IMPORTANT]
-> If you are importing IMEI numbers for Android devices, be aware that some Android devices can have multiple IMEI numbers. If you import an IMEI number but it is not the IMEI reported to Intune by the device, the device will be classifed as a personal device instead of a company-owned device.
+> Some Android devices have multiple IMEI numbers. Intune inventories one IMEI number per device. If you import an IMEI number but it is not the IMEI inventoried by Intune, the device will be classified as a personal device instead of a company-owned device. If you import multiple IMEI numbers for a device, uninventoried numbers will display **Unknown** for enrollment status.
 
 **To delete a .csv list of corporate identifiers**
 
