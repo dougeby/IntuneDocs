@@ -5,7 +5,7 @@
 title: How to get support | Microsoft Docs
 description: Support is available both online and by telephone for paid and trial subscriptions.
 keywords:
-author: staciebarkerms.author: staciebarker
+author: arob98ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
