@@ -4,8 +4,8 @@
 title: Prerequisites for mobile device enrollment | Microsoft Docs
 description: Set up mobile device management (MDM) prerequisites and get ready to enroll different operating systems.
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/21/2017
 ms.topic: article
