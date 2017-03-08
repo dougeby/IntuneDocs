@@ -852,11 +852,12 @@ If a multi-identity aware application wishes MAM default selective wipe to be do
 ## MAM Service Enrollment (new!)
 
 ### Overview
-Intune app protection policy without device enrollment, also known as APP-WE or MAM-WE, allows apps to be managed by Intune without device enrollment with Intune MDM. The Company Portal is still required to be installed on the device, but the user does not need to sign into the Company Portal and enroll the device.
+Intune app protection policy without device enrollment, also known as APP-WE or MAM-WE, allows apps to be managed by Intune without the need for the device to be enrolled Intune MDM. APP-WE works with or without device enrollment. The Company Portal is still required to be installed on the device, but the user does not need to sign into the Company Portal and enroll the device.
 
-Apps are now required to support app protection policy without enrollment.
+> [!NOTE]
+> All apps are required to support app protection policy without enrollment.
 
-### Requirements
+#### Workflow
 
 When an app creates a new user account, it should register the account for management with the Intune App SDK. The SDK will handle the details of enrolling the app in the MAM service; if necessary, it will retry any enrollments at appropriate time intervals if failures occur.
 
@@ -867,9 +868,24 @@ The app is required to provide a callback to acquire the appropriate access toke
 When the app removes an account completely, it should unregister that account to indicate that the app should no longer apply policy for that user. If the user was enrolled in the MAM service, the user will be un-enrolled and the app will be wiped.
 
 
+### Outline of app requirements
+
+1. For authentication and licensing checks, as well as the periodic check-in operations, the app must provide the ADAL parameters as specified in [Configure ADAL](#Configure-Azure-Active-Directory-Authentication-Libraries-(ADAL)).  In particular, the **ClientID** and **Authority** values are required.
+
+2. Since the `MAMEnrollmentManager` has a dependency on ADAL for authentication, the app must use a compatible version of the [ADAL library](https://github.com/AzureAD/azure-activedirectory-library-for-android). It is recommended to use the latest version of ADAL.
+
+3. The app _must_ implement and register an instance of the `MAMServiceAuthenticationCallback` interface. The callback instance should be registered as early as possible in the app's lifecycle (typically in the `onMAMCreate()` method of the application class).
+
+4. When a user account is created and the user successfully signs in with ADAL, the app _must_ call the `registerAccountForMAM()`.
+
+5. When a user account is completely removed, the app should call `unregisterAccountForMAM()` to remove the account from Intune management.
+	> [!NOTE]
+	> If a user signs out of the app temporarily, the app does not need to call `unregisterAccountForMAM()`. The call may initiate a wipe to completely remove corporate data for the user.
+
+
 ### MAMEnrollmentManager
 
-The APP-WE registration API is accessed through the `MAMEnrollmentManager` interface. A reference to the `MAMEnrollmentManager` can be obtained as follows:
+All the necessary authentication and registration APIs can be found in the `MAMEnrollmentManager` interface. A reference to the `MAMEnrollmentManager` can be obtained as follows:
 
 ```java
 MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
@@ -980,36 +996,25 @@ When an account is first registered, it begins in the `PENDING` state, indicatin
 |Result code | Explanation |
 | -- | -- |
 |AUTHORIZATION_NEEDED | This result indicates that a token was not provided by the app’s registered `MAMServiceAuthenticationCallbac`k instance, or the provided token was invalid.  The app should acquire a valid token and call `updateToken()` if possible. |
-| NOT_LICENSED | The user is not licensed for the MAMService, or the attempt to contact the location/licensing service failed.  The app should continue as if it were not managed by Intune. |
-| ENROLLMENT_SUCCEEDED | The enrollment attempt succeeded, or the user was already enrolled.  In the case of a successful enrollment, a policy refresh notification will be sent before this notification. |
-| ENROLLMENT_FAILED | The enrollment attempt failed.  Further details can be found in the device logs.  The app should not allow access to protected content in this state, since it was previously determined that the user is licensed for the MAMService. |
-| WRONG_USER | Only one user per device can enroll apps.  In order to enroll successfully as a different user, all enrolled apps must be unenrolled first.  Otherwise, this app must enroll as the primary user.  This check happens after the license check, so the user should be blocked from accessing protected content until the app is successfully enrolled.|
+| NOT_LICENSED | The user is not licensed for Intune, or the attempt to contact the Intune MAM service failed.  The app should continue in an unmanaged (normal) state and the user should not be blocked.  Enrollments will be retried periodically in case the user becomes licensed in the future. |
+| ENROLLMENT_SUCCEEDED | The enrollment attempt succeeded, or the user is already enrolled.  In the case of a successful enrollment, a policy refresh notification will be sent before this notification.  Access to corporate data should be allowed. |
+| ENROLLMENT_FAILED | The enrollment attempt failed.  Further details can be found in the device logs.  The app should not allow access to corporate in this state, since it was previously determined that the user is licensed for Intune.|
+| WRONG_USER | Only one user per device can enroll an app with the MAM service.  In order to enroll successfully as a different user, all enrolled apps must be unenrolled first.  Otherwise, this app must enroll as the primary user.  This check happens after the license check, so the user should be blocked from accessing corporate data until the app is successfully enrolled.|
 | UNENROLLMENT_SUCCEEDED | Unenrollment was successful.|
 | UNENROLLMENT_FAILED | The unenrollment request failed.  Further details can be found in the device logs. |
-| PENDING | An asynchronous operation has been successfully scheduled.  The final result of the operation will be sent via notification. |
-| COMPANY_PORTAL_REQUIRED | The user is licensed for MAMService, but the app cannot be enrolled until the Company Portal app is installed on the device. |
+| PENDING | The initial enrollment attempt for the user is in progress.  The app can block access to corporate data until the enrollment result is known, but is not required to do so. |
+| COMPANY_PORTAL_REQUIRED | The user is licensed for Intune, but the app cannot be enrolled until the Company Portal app is installed on the device. The Intune App SDK will attempt to block access to the app for the given user and direct them to install the Company Portal app (see below for details). |
 
-
-### Dynamic ADAL configuration (optional)
-
-Normally, the AAD configuration for Intune MAM to use is given in Android Manifest as discussed above. Some applications use multiple AAD authorities and therefore require dynamic configuration.
-
-If your app requires dynamic configuration, you must use the `registerADALConnectionDetails` method in **MAMEnrollmentManager** before calling `enrollApplication`. For example:
-
-```java
-enrollmentManager.registerADALConnectionDetails(userToEnroll,new ADALConnectionDetails(aadAuthority, clientID, nonBrokerRedirectURI, skipBroker));
-
-```
 
 ### Company Portal requirement prompt override (optional)
 
-If the **COMPANY_PORTAL_REQUIRED** result is received, Intune will block use of activities that use the identity for which enrollment was requested. Instead, the SDK will cause those activities to display a prompt to download the Company Portal. If you want to prevent this behavior in your app, activities may implement `MAMActivity.onMAMCompanyPortalRequired`.
+If the `COMPANY_PORTAL_REQUIRED` Result is received, the SDK will block use of activities that use the identity for which enrollment was requested. Instead, the SDK will cause those activities to display a prompt to download the Company Portal. If you want to prevent this behavior in your app, activities may implement `MAMActivity.onMAMCompanyPortalRequired`.
 
-This method is called before the SDK displays its default blocking UI. If the app changes the activity identity or unenrolls the user who attempted to enroll, the SDK will not block the activity. In this situation, it is up to the app to avoid leaking corporate data.
+This method is called before the SDK displays its default blocking UI. If the app changes the activity identity or unregisters the user who attempted to enroll, the SDK will not block the activity. In this situation, it is up to the app to avoid leaking corporate data.
 
 ### Notifications
 
-A new type of **MAMNotification** has been added in order to inform the app that the enrollment request has completed.  The **MAMEnrollmentNotification** will be received through the **MAMNotificationReceiver** interface as described in the [Registering for notifications from the SDK](#Registering-for-notifications-from-the-SDK) section.
+A new type of **MAMNotification** has been added in order to inform the app that the enrollment request has completed.  The **MAMEnrollmentNotification** will be received through the **MAMNotificationReceiver** interface as described in the [Register for notifications from the SDK](#Register-for-notifications-from-the-SDK) section.
 
 ```java
 public interface MAMEnrollmentNotification extends MAMUserNotification {
@@ -1018,21 +1023,10 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 
 ```
 
-The `getEnrollmentResult()` method returns the result of the enrollment request.  Since **MAMEnrollmentNotification** extends **MAMUserNotification**, the identity of the user for whom the enrollment was attempted is also available. The app must implement the **MAMNotificationReceiver** interface to receive these notifications, detailed in the [SDK Notifications](#Registering-for-notifications-from-the-SDK) section.
+The `getEnrollmentResult()` method returns the result of the enrollment request.  Since `MAMEnrollmentNotification` extends `MAMUserNotification`, the identity of the user for whom the enrollment was attempted is also available. The app must implement the `MAMNotificationReceiver` interface to receive these notifications, detailed in the [Register for notifications from the SDK](#Register-for-notifications-from-the-SDK) section.
 
-### App requirements
+The registered user account's status may change when an enrollment notification is received, but it will not change in some cases (e.g. if `AUTHORIZATION_NEEDED` notification is received after a more informative result such as `WRONG_USER`, the more informative result will be maintained as the account's status)
 
-For authentication and licensing checks, as well as the periodic check-in operations, the app must provide the ADAL parameters as specified in the [ADAL section](#Configure-Azure-Active-Directory-Authentication-Libraries-(ADAL)).  In particular, the **ClientID** and **Authority** values are required.
-
-Since the MAMEnrollmentManager has a dependency on ADAL for authentication, the app must use a compatible version of the [ADAL library](https://github.com/AzureAD/azure-activedirectory-library-for-android). This feature cannot be fully supported with versions earlier than 1.1.18.
-
-The app is expected to call the `enrollApplication` method periodically even though it may be already enrolled. Why?
-
-1. If the app is not currently enrolled because the user was not licensed, the app should call `enrollApplication` to determine if the user’s tenant has been onboarded in the past 24 hours.
-
-2.	If the app has successfully enrolled, subsequent calls to `enrollApplication` will update the user’s refresh token.  It is necessary to keep the refresh token up-to-date in order for the Company Portal to perform background check-in operations and pick up any policy updates from the Intune MAM Service.  Therefore `enrollApplication` should be called every time the user’s refresh token is updated, **or every 24 hours at the least**.
-
-3.	If attempting to use a background service to perform this periodic enrollment, please be aware that `enrollApplication` calls can lead to UI elements appearing on screen. Take that into consideration and test heavily if you decide to do so -- it may lead to strange UX elements.
 
 
 
