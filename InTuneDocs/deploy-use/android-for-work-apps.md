@@ -74,3 +74,16 @@ When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** 
 This feature leverages the new grouping and targeting experience. Newly provisioned Intune service accounts will be able to use this feature upon release. Existing Intune customers can use this feature once their tenant has been migrated to the Intune Azure portal. Existing customers are welcome to create a trial Intune account to plan for and test this feature until their tenant has been migrated.
 
 After you deploy the app, it will be installed on the devices you targeted. The user of the device will not be asked for approval.
+
+## Manage app permissions
+Android for Work requires you approve apps in Google's managed Play web console before syncing them to Intune and deploying them to your users.  Because Android for Work allows you to silently and automatically push these apps to users' devices, you must accept the app's permissions on behalf of all your users.  End users will not see any app permissions when they install, so it's important that you read and understand these permissions.
+
+When an app developer publishes a new version of the app with updated permissions, those permissions are not automatically accepted, even if you've approved the previous permissions. Devices that running the old version of the app can still use it, but the app won't be upgraded until the new permissions are approved. Devices without the app installed cannot install the app until you approve the app's new permissions.
+
+### How to update app permissions
+
+You should periodically visit the managed Google Play console to check for new permissions. If you deploy an app and observe it isn't installed on devices, check for new permissions with the following steps:
+
+1. Visit http://play.google.com/work
+2. Sign in with the Google account you used to publish and approve the apps.
+3. Visit the **Updates** tab to see if any apps require an update.  Any listed apps require new permissions and won't deploy until they are.  
