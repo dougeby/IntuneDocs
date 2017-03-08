@@ -4,8 +4,8 @@
 title: What is Microsoft Intune device enrollmenttitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about enrollment for iOS, Android, and Windows devices."
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: get-started-article

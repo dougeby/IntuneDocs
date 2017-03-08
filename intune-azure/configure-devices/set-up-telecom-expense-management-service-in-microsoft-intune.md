@@ -2,8 +2,8 @@
 title: Set up a telecom expense management servicetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Configure the Saaswedo telecom expense management service to integrate with Intune."
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article
