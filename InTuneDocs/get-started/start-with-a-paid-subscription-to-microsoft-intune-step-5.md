@@ -36,7 +36,7 @@ Groups in Intune give you great flexibility for managing your devices and users.
 
 ## Group management moving to Azure AD
 
-**Starting in November 2016**, new accounts will manage user and device groups in the Azure Acitve Directory (AD) portal. In December 2016, the Intune product team will begin to migrate existing customers to the new Azure AD-based group management experience. All user and device groups will be migrated to Azure AD security groups. We won’t start migrations until we can minimize any effect on your day-to-day work, and when we expect there will be no effect on your users. We also will give you notice before we migrate your account.
+**Starting in November 2016**, new accounts will manage user and device groups in the Azure Active Directory (AD) portal. In December 2016, the Intune product team will begin to migrate existing customers to the new Azure AD-based group management experience. All user and device groups will be migrated to Azure AD security groups. We won’t start migrations until we can minimize any effect on your day-to-day work, and when we expect there will be no effect on your users. We also will give you notice before we migrate your account.
 
 
 >[!IMPORTANT]
