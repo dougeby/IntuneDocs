@@ -62,9 +62,6 @@ Due to the absence of the Google Play Store in China, Android devices must obtai
 - [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 - [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 
-### New MDM server address for Windows devices <!--893007-->
-Windows and Windows Phone users attempting to enroll a device will fail if they enter __manage.microsoft.com__ as the MDM server address (if prompted). The MDM server address is changing from __manage.microsoft.com__ to __enrollment.manage.microsoft.com__. Notify your user to use __enrollment.manage.microsoft.com__ as the MDM server address if prompted for it while enrolling a Windows or and Windows Phone device. This update will require any CNAME in DNS that redirects __EnterpriseEnrollment.contoso.com__ to __manage.microsoft.com__ to be replaced with a CNAME in DNS that redirects __EnterpriseEnrollment.contoso.com__ to __EnterpriseEnrollment-s.manage.microsoft.com__. For additional information about this change, visit [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange).
-
 ### Apple to require updates for Application Transport Security <!--748318-->
 
 Beginning in Spring 2017, Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS/macOS Company Portal apps. Review our [Intune support blog](https://aka.ms/compportalats) for more details.
