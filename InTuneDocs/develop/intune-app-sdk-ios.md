@@ -143,9 +143,9 @@ To enable the Intune App SDK, follow these steps:
 
 	![Intune App SDK iOS: keychain sharing](../media/intune-app-sdk-ios-keychain-sharing.png)
 
-    If you're using the entitlement file to create the keychain access group, prepend the keychain access group with `$(AppIdentifierPrefix)` in the entitlement file. For example:  
+    If you're using the entitlement file to create the keychain access group, prepend the keychain access group with `$(AppIdentifierPrefix)` in the entitlement file. For example:
 
-    * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+	  * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
 		* `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
 	> [!NOTE]
@@ -157,10 +157,10 @@ To enable the Intune App SDK, follow these steps:
 
 9. If the app has app groups defined in its entitlements, add these groups to the IntuneMAMSettings dictionary under the `AppGroupIdentifiers` key as an array of strings.
 
-10. Link your mobile application to the Azure Directory Authentication Library (ADAL). The ADAL library for Objective C is [available on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
+10. Link your mobile application to the Azure Directory Authentication Library (ADAL) for iOS. The ADAL library for Objective-C is available on [GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
     > [!NOTE]
-	> The Intune App SDK has been tested against the ADAL broker branch code from June 19, 2015. Please ensure that you are linking with the latest/working version of the ADAL library.
+	> It is recommended that the app links with the latest/working version of ADAL.
 
 11. Include the `ADALiOSBundle.bundle` resource bundle in the project by dragging the resource bundle under **Copy Bundle Resources** within **Build Phases**.
 
@@ -174,7 +174,7 @@ To enable the Intune App SDK, follow these steps:
 
 The Intune App SDK uses ADAL for its authentication and conditional launch scenarios. It also relies on ADAL to register the user identity with the MAM service for management without device enrollment scenarios.
 
-Typically, ADAL requires apps to register with Azure Active Directory (Azure AD) and get a unique ID (known as the client ID), and other identifiers, to guarantee the security of the tokens granted to the app. The Intune App SDK uses default registration values when it contacts Azure AD.  
+Typically, ADAL requires apps to register with Azure Active Directory (AAD) and get a unique ID (Client ID) and other identifiers, to guarantee the security of the tokens granted to the app. The Intune App SDK uses default registration values when it contacts Azure AD.  
 
 If the app itself uses ADAL for its authentication scenario, the app must use its existing registration values and override the Intune App SDK default values. This ensures that users are not prompted for authentication twice (once by the Intune App SDK and once by the app).
 
@@ -190,13 +190,13 @@ Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` 
 
 For more details, see the instructions from [ADAL on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
-**How do I share the ADAL cache with other apps signed with the same provisioning profile?**
+**How do I share the ADAL token cache with other apps signed with the same provisioning profile?**
 
-If your app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
+1. If your app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 
-Enable ADAL single sign-on (SSO) by adding `com.microsoft.adalcache` and `com.microsoft.workplacejoin` access groups in the keychain entitlements.
+2. Enable ADAL single sign-on (SSO) by adding `com.microsoft.adalcache` and `com.microsoft.workplacejoin` access groups in the keychain entitlements.
 
-If you are explicitly setting the ADAL shared cache keychain group, make sure it is set to `<app_id_prefix>.com.microsoft.adalcache`. ADAL will set this for you unless you override it. If you want to specify a custom keychain group to replace `com.microsoft.adalcache`, specify that in the Info.plist file under IntuneMAMSettings, by using the key `ADALCacheKeychainGroupOverride`.
+3. If you are explicitly setting the ADAL shared cache keychain group, make sure it is set to `<app_id_prefix>.com.microsoft.adalcache`. ADAL will set this for you unless you override it. If you want to specify a custom keychain group to replace `com.microsoft.adalcache`, specify that in the Info.plist file under IntuneMAMSettings, by using the key `ADALCacheKeychainGroupOverride`.
 
 **How do I force the Intune App SDK to use ADAL settings that my app already uses?**
 
