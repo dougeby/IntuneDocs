@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3dsearchScope: - Company Portal
+ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3dsearchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 #ms.reviewer: natgreen

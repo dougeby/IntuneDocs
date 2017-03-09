@@ -11,12 +11,12 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504dsearchScope: - Company Portal
+ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504dsearchScope: - User help
 
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 #ms.reviewer: chrisbal

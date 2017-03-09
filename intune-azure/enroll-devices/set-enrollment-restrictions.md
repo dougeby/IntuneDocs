@@ -4,8 +4,8 @@
 title: Set enrollment restrictions in IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Restrict enrollment by platform and set a device enrollment limit in Intune. "
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

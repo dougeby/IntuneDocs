@@ -4,8 +4,8 @@
 title: Enroll Windows devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Enable Intune mobile device management (MDM) for Windows devices."
 keywords:
-author: staciebarker
-manager: stabar
+author: nathbarn
+manager: nathbarn
 ms.date: 02/15/17
 ms.topic: article
 ms.prod:

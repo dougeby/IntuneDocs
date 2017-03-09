@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: fe110bbc-479b-4d11-beeb-70d15b199edasearchScope: - Company Portal
+ms.assetid: fe110bbc-479b-4d11-beeb-70d15b199edasearchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: mamoriss
