@@ -1129,29 +1129,6 @@ If an app registers for the `WIPE_USER_DATA` notification, it will not receive t
 
 If a multi-identity aware application wishes MAM default selective wipe to be done _**and**_ wishes to perform its own actions on wipe, it should register for `WIPE_USER_AUXILIARY_DATA` notifications. This notification will be sent immediately by the SDK before it performs the MAM default selective wipe. An app should never register for both WIPE_USER_DATA and WIPE_USER_AUXILIARY_DATA.
 
-## Application Configuration channel (preview)
-
-As of the MAM Service 4.0 API, Application Configuration data can be provided via MAM Service check-in responses to MAM-WE enabled apps. Certain partners have requested the ability to integrate their own console’s custom settings into normal MAM-WE operation and, so we provide an SDK class to access the data retrieved from these consoles.
-
-Check the Javadoc for **MAMAppConfigManager** and **MAMAppConfig** for more information.
-
-**Sample code:**
-
-```java
-MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
-String identity = “user@contoso.com”
-
-// get the managed user if one exists
-MAMUserInfo userInfo = MAMComponents.get(MAMUserInfo.class);
-if (userInfo != null) {
-   identity = userInfo.getPrimaryUser();
-}
-
-MAMAppConfig appConfig = configManager.getAppConfig(identity);
-LOGGER.info("App Config Data = " + (appConfig == null ? "null" : appConfig.getFullData()));
-
-```
-
 
 ## Style Customization (optional)
 
