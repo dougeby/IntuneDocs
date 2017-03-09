@@ -4,8 +4,8 @@
 title: Full or selective wipe on devices using IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to do a selective wipe of company data on a device or to do a full wipe to factory reset the device."
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

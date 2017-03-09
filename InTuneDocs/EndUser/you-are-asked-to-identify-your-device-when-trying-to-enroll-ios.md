@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6searchScope: - Company Portal
+ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: esmich

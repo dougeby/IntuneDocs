@@ -23,6 +23,24 @@
 
     },
     {
+      "source_path": "InTuneDocs/EndUser/reset-your-device-ios.md",
+      "redirect_url": "https://docs.microsoft.com/intune/enduser/reset-erase-your-device-cpwebsite",
+      "redirect_document_id": false
+
+    },
+    {
+      "source_path": "InTuneDocs/EndUser/reset-your-device-android.md",
+      "redirect_url": "https://docs.microsoft.com/intune/enduser/reset-erase-your-device-cpwebsite",
+      "redirect_document_id": false
+
+    },
+    {
+      "source_path": "InTuneDocs/EndUser/reset-your-device-windows.md",
+      "redirect_url": "https://docs.microsoft.com/intune/enduser/reset-erase-your-device-cpwebsite",
+      "redirect_document_id": false
+
+    },
+    {
       "source_path": "InTuneDocs/enduser/your-device-does-not-meet-the-minimum-security-patch-android.md",
       "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-update-your-device-OS-security-patch-android",
       "redirect_document_id": true

@@ -179,6 +179,7 @@ Intune can display the paths of up to 10 of the most recently detected instances
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** > **All Devices** > **All Computers**.
 2. Right-click the computer whose recent detection paths you want to see and select **Properties**.
 3. Select **Malware** from the tabs across the top.
+
    ![Select the Malware tab and then click the Recent Detection Paths checkbox](../media/malware-path-column.png)
 4. Right-click the column header. A list of available columns appears. Select the **Recent Detection Paths** check box in the list. The **Recent Detection Paths** column appears and displays up to 10 of the most recently monitored malware instances on the device.
 

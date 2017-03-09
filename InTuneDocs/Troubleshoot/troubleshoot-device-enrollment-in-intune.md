@@ -4,8 +4,8 @@
 title: Troubleshoot device enrollment| Microsoft Docs
 description: Suggestions for troubleshooting device enrollment issues.
 keywords:
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/01/2017
 ms.topic: article

@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0fsearchScope: - Company Portal
+ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0fsearchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: esmich

@@ -14,7 +14,7 @@ ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
 searchScope:
- - Company Portal
+ - User help
 
 # optional metadata
 

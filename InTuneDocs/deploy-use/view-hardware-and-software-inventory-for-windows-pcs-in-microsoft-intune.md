@@ -4,7 +4,7 @@
 title: View hardware and software inventory for Windows PCs | Microsoft Docs
 description: How to view hardware and software information about Windows desktops that you manage as PCs with the Intune software client.
 keywords:
-author: staciebarkerms.author: stabar
+author: arob98ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article

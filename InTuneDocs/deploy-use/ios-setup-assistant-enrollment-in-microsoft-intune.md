@@ -4,7 +4,7 @@
 title: Enroll iOS devices with Setup Assistant | Microsoft Docs
 description: Enroll corporate-owned iOS devices by using the Apple Configurator tool to reset the device to factory settings and prepare it to run Setup Assistant.
 keywords:
-author: staciebarkerms.author: stabar
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article

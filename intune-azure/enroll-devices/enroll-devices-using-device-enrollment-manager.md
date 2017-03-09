@@ -4,8 +4,8 @@
 title: Enroll devices - device enrollment managertitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Use the device enrollment manager account to enroll devices in Intune. "
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

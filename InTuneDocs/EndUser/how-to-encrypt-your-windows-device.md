@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463searchScope: - Company Portal
+ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463searchScope: - User help
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS:  
 #audience:
 #ms.devlang:
 ms.reviewer: priyar
