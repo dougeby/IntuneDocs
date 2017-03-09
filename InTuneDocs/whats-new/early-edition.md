@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/07/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,30 +76,28 @@ The admin experience in the Azure portal will use the already announced new grou
 
 If you have any questions about the timeline for your tenant’s migration, contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
-### March 2017
+### Non-managed devices can access assigned apps <!--664691-->
 
-#### Improvements to Device Actions report <!--677150-->
+As part of the design changes on the Company Portal website, iOS and Android users will be able to install apps assigned to them as "available without enrollment" on their non-managed devices. Using their Intune credentials, users will be able to log into the Company Portal website and see the list of apps assigned to them. The app packages of the "available without enrollment" apps are made available for download via the Company Portal website. Apps which require enrollment for installation are not affected by this change, as users will be prompted to enroll their device if they wish to install those apps.
+
+### Improvements to Device Actions report <!--677150-->
 
 We’ve made improvements to the Device Actions report to improve performance. Additionally, you can now filter the report by state. For example, you could filter the report to show only device actions that were completed.”
 
-#### Assign LOB apps to users with unenrolled devices <!--748823-->
-
-You can now assign line of business apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
-
-#### Additional Windows 10 upgrade paths <!--903672-->
-
-You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
-
-- Windows 10 Professional
-- Windows 10 Professional N
-- Windows 10 Professional Education
-- Windows 10 Professional Education N
-
-#### Actions for non-compliance <!--730266-->
+### Actions for non-compliance <!--730266-->
 
 **Actions for non-compliance** is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
 
-#### New compliance reports <!--846671-->
+### Custom app categories <!--748805-->
+
+You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
+See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).
+
+### Assign LOB apps to users with unenrolled devices <!--748823-->
+
+You can now assign line of business apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
+
+### New compliance reports <!--846671-->
 
 You now have compliance reports that give you the compliance posture of devices in your company and allow you to quickly troubleshoot compliance-related issues encountered by your users. You can view information about
 
@@ -109,45 +107,19 @@ You now have compliance reports that give you the compliance posture of devices 
 
 You can also use these reports to drill-down into an individual device to view specific settings and policies that affect that device.
 
-#### Direct access to Apple enrollment scenarios <!--951869-->
+### Additional Windows 10 upgrade paths <!--903672-->
+
+You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
+
+- Windows 10 Professional
+- Windows 10 Professional N
+- Windows 10 Professional Education
+- Windows 10 Professional Education N
+
+
+### Direct access to Apple enrollment scenarios <!--951869-->
 
 For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
-
-### February 2017
-
-#### Ability to restrict mobile device enrollment <!--747600, 795782-->
-Intune is adding new enrollment restrictions that control which mobile device platforms are allowed to enroll. Intune separates mobile device platforms as iOS, macOS, Android, Windows and Windows Mobile.
-
-* Restricting mobile device enrollment does not restrict PC client enrollment.  
-* For iOS and Android only, there is one additional option to block the enrollment of personally owned devices.
-
-Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
-
-#### View all actions on managed devices <!--677150-->
-A new __Device Actions__ report shows who has performed remote actions like factory reset on devices, and additionally shows the status of that action.
-
-#### Non-managed devices can access assigned apps <!--664691-->
-As part of the design changes on the Company Portal website, iOS and Android users will be able to install apps assigned to them as "available without enrollment" on their non-managed devices. Using their Intune credentials, users will be able to log into the Company Portal website and see the list of apps assigned to them. The app packages of the "available without enrollment" apps are made available for download via the Company Portal website. Apps which require enrollment for installation are not affected by this change, as users will be prompted to enroll their device if they wish to install those apps.
-
-#### Custom app categories <!--748805-->
-You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
-See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).
-
-#### Display device categories <!--814654-->
-You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade.
-
-### January 2017
-
-#### Custom app categories <!--748805-->
-You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
-
-#### Assign line of business apps whether or not devices are enrolled <!--748803-->
-You can now assign line of business and apps from the store to users whether or not their devices are enrolled with Intune. If the users device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
-
-### December 2016
-
-#### Telecom expense management integration in public preview of Azure portal<!--747605-->
-We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com). To enable this feature in your trial tenant, please [contact Microsoft support](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
