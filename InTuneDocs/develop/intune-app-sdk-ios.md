@@ -31,7 +31,7 @@ ms.custom: intune-classic
 > [!NOTE]
 > You might want to first read the [Get Started with Intune App SDK Guide](intune-app-sdk-get-started.md) article, which explains how to prepare for integration on each supported platform.
 
-The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies -- also known as MAM policies -- into your iOS app. A MAM-enabled application is one that is integrated with the Intune App SDK. It lets IT admins deploy app protection policies to your mobile app when Intune actively manages the app.
+The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection policies (also known as **APP** or **MAM policies**) into your native iOS app. A MAM-enabled application is one that is integrated with the Intune App SDK. IT administrators can deploy app protection policies to your mobile app when Intune actively manages the app.
 
 ## Prerequisites
 
@@ -92,7 +92,7 @@ To enable the Intune App SDK, follow these steps:
 2. **Option 2**: Link `IntuneMAM.framework` to your project. Drag `IntuneMAM.framework` to the **Linked Frameworks and Libraries** list of the project target.
 
 	> [!NOTE]
-	> If you use the framework, you must manually strip out the simulator architectures from the universal framework before you submit your app to the App Store. See the section "Submitting your app to the App Store."
+	> If you use the framework, you must manually strip out the simulator architectures from the universal framework before you submit your app to the App Store. See the [Submit your app to the App Store](#Submit-your-app-to-the-App-Store)
 
 3. Add these iOS frameworks to the project:
     * MessageUI.framework
@@ -105,10 +105,6 @@ To enable the Intune App SDK, follow these steps:
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-	> [!NOTE]
-	> If the application is targeted for iOS 7, set the `Status` attribute of `LocalAuthentication.framework` to Optional. If `Status` is not set, the application will fail to start on iOS 7.
-	>
-	> Also, Xcode 7 has changed `.dylib` extensions to `.tbd`.
 
 4. Add the `IntuneMAMResources.bundle` resource bundle to the project by dragging the resource bundle under **Copy Bundle Resources** within **Build Phases**.
 
@@ -119,17 +115,14 @@ To enable the Intune App SDK, follow these steps:
     * MainStoryboardFile~ipad
     * MainNibFile
     * MainNibFile~ipad
-
-
-
 	> [!NOTE]
-    > If your mobile app doesn’t define a main nib or storyboard file in its Info.plist file, these settings are not required.
+  > If your mobile app doesn’t define a main nib or storyboard file in its Info.plist file, these settings are not required.
 
 	You can view Info.plist in raw format (to see the key names) by right-clicking anywhere in the document body and changing the view type to **Show Raw Keys/Values**.
 
 6. Enable keychain sharing (if it isn't already enabled) by choosing **Capabilities** in each project target and enabling the **Keychain Sharing** switch. Keychain sharing is required for you to proceed to the next step.
 
-    > [!NOTE]
+  > [!NOTE]
 	> Your provisioning profile needs to support new keychain sharing values. The keychain access groups should support a wildcard character. You can check this by opening the .mobileprovision file in a text editor, searching for **keychain-access-groups**, and ensuring that you have a wildcard. For example:
 	```xml
 	<key>keychain-access-groups</key>
@@ -138,25 +131,25 @@ To enable the Intune App SDK, follow these steps:
 	</array>
 	```
 
-7. After you enable keychain sharing, follow these steps to create a separate access group in which the Intune App SDK data will be stored. You can create a keychain access group by using the UI or by using the entitlements file.
+7. After you enable keychain sharing, follow these steps to create a separate access group in which the Intune App SDK will store its data. You can create a keychain access group by using the UI or by using the entitlements file.
 
     If you're using the UI to create the keychain access group:
 
-    a. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
+    1. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 
-    b. Add the shared keychain group `com.microsoft.intune.mam`. The Intune App SDK uses this access group to store data.
+    2. Add the shared keychain group `com.microsoft.intune.mam`. The Intune App SDK uses this access group to store data.
 
-    c. Add `com.microsoft.adalcache` to your existing access groups.
+    3. Add `com.microsoft.adalcache` to your existing access groups.
 
 	![Intune App SDK iOS: keychain sharing](../media/intune-app-sdk-ios-keychain-sharing.png)
 
     If you're using the entitlement file to create the keychain access group, prepend the keychain access group with `$(AppIdentifierPrefix)` in the entitlement file. For example:  
 
     * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-	* `$(AppIdentifierPrefix)com.microsoft.adalcache`
+		* `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
 	> [!NOTE]
-	> An entitlements file is an XML file that's unique to your mobile application. It's used to specify special permissions and capabilities in your iOS app.
+	> An entitlements file is an XML file that's unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app.
 
 7. If the app defines URL schemes in its Info.plist file, add another scheme, with a `-intunemam` suffix, for each URL scheme.
 
