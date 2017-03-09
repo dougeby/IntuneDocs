@@ -32,7 +32,7 @@ ms.custom: intune-classic
 > [!NOTE]
 > You might want to first read the [Intune App SDK overview](intune-app-sdk.md), which covers the current features of the SDK and describes how to prepare for integration on each supported platform.
 
-The Microsoft Intune App SDK for Android lets you incorporate Intune app protection policies (also known as APP or MAM policies) into your native Android app. An Intune-enlightened application is one that is integrated with the Intune App SDK. Intune administrators can easily deploy app protection policies to your Intune-enlightened app when Intune actively manages the app.
+The Microsoft Intune App SDK for Android lets you incorporate Intune app protection policies (also known as **APP** or MAM policies) into your native Android app. An Intune-enlightened application is one that is integrated with the Intune App SDK. Intune administrators can easily deploy app protection policies to your Intune-enlightened app when Intune actively manages the app.
 
 
 ## What's in the SDK
@@ -408,7 +408,7 @@ public interface MAMNotificationReceiver {
 
 The following notifications are sent to the app and some of them may require app participation:
 
-* **WIPE_USER_DATA**: This notification is sent in a **MAMUserNotification** class. When this notification is received, the app is expected to delete all data associated with the "corporate" identity passed with the **MAMUserNotification**. This notification is currently sent during Intune service un-enrollment. The user's primary name is typically specified during the enrollment process. If you register for this notification, your app must ensure that all the user's data has been deleted. If you don't register for it, the default selective wipe behavior will be performed.
+* **WIPE_USER_DATA**: This notification is sent in a **MAMUserNotification** class. When this notification is received, the app is expected to delete all data associated with the "corporate" identity passed with the **MAMUserNotification**. This notification is currently sent during APP-WE service unenrollment. The user's primary name is typically specified during the enrollment process. If you register for this notification, your app must ensure that all the user's data has been deleted. If you don't register for it, the default selective wipe behavior will be performed.
 
 * **WIPE_USER_AUXILIARY_DATA**: Apps can register for this notification if they'd like the Intune App SDK to perform the default selective wipe behavior, but would still like to remove some auxiliary data when the wipe occurs.  
 
@@ -487,18 +487,299 @@ The following are common ways an app can be configured with ADAL. Find your app'
 
 ### Secret Key
 
-Because AAD authentication requires that a secret key be set for any Android API < 18, apps must override the MAMApplication method `getADALSecretKey`.
+Because AAD authentication requires that a secret key be set for any Android API < 18, apps must override the `MAMApplication` method `getADALSecretKey`.
 
 ```java
 public byte[] getADALSecretKey();
 ```
 
-This is an important step. MAM will request ADAL authentication on behalf of the app in several scenarios, including MAM service enrollment on app startup. Some of these scenarios require the secret key to be set before an app that integrates ADAL would normally set the key (during its own authentication). For the SDK to share the ADAL token cache with the app and reduce the number of user authentication prompts, the app should implement this method **such that it returns a consistent secret key that the app will also use**.
+This is an important step. The SDK will request ADAL authentication on behalf of the app in several scenarios, including [APP-WE service enrollment](#App-protection-policy-without-device-enrollment-new!). Some of these scenarios require the secret key to be set before an app that integrates ADAL would normally set the key (during its own authentication). For the SDK to share the ADAL token cache with the app and reduce the number of user authentication prompts, the app should implement this method **such that it returns a consistent secret key that the app will also use**.
 
 Please follow the [ADAL guidelines for generating a secret key](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library) when overriding `getADALSecretKey`.
 
 > [!NOTE]
 > If your app does not call `AuthenticationSettings.getSecretKey`, or does not integrate ADAL at all, you may simply return null.
+
+
+
+
+## App protection policy without device enrollment (New!)
+
+### Overview
+Intune app protection policy without device enrollment, also known as APP-WE or MAM-WE, allows apps to be managed by Intune without the need for the device to be enrolled Intune MDM. APP-WE works with or without device enrollment. The Company Portal is still required to be installed on the device, but the user does not need to sign into the Company Portal and enroll the device.
+
+> [!NOTE]
+> All apps are required to support app protection policy without enrollment.
+
+#### Workflow
+
+When an app creates a new user account, it should register the account for management with the Intune App SDK. The SDK will handle the details of enrolling the app in the APP-WE service; if necessary, it will retry any enrollments at appropriate time intervals if failures occur.
+
+The app can also query the Intune App SDK for the status of a registered user to determine if the user should be blocked from accessing corporate content. Multiple accounts may be registered for management, but currently only one account can be actively enrolled with the APP-WE service at a time. This means only one account on the app can receive app protection policy at a time.
+
+The app is required to provide a callback to acquire the appropriate access token from the Azure Active Directory Authentication Library (ADAL) on behalf of the SDK. It is assumed that the app already uses ADAL for user authentication and to acquire its own access tokens.
+
+When the app removes an account completely, it should unregister that account to indicate that the app should no longer apply policy for that user. If the user was enrolled in the MAM service, the user will be unenrolled and the app will be wiped.
+
+
+### Outline of app requirements
+
+To implement APP-WE, your app must first **authenticate** the user account, then **register** the user account with the APP-WE service:
+
+1. For authentication and licensing checks, as well as the periodic check-in operations, the app must provide the ADAL parameters as specified in [Configure ADAL](#Configure-Azure-Active-Directory-Authentication-Libraries-(ADAL)).  In particular, the **ClientID** and **Authority** values are required.
+
+2. Since the `MAMEnrollmentManager` interface has a dependency on ADAL for authentication, the app must use a compatible version of the [ADAL library](https://github.com/AzureAD/azure-activedirectory-library-for-android). It is recommended to use the latest version of ADAL.
+
+3. The app _must_ implement and register an instance of the `MAMServiceAuthenticationCallback` interface. The callback instance should be registered as early as possible in the app's lifecycle (typically in the `onMAMCreate()` method of the application class).
+
+4. When a user account is created and the user successfully signs in with ADAL, the app _must_ call the `registerAccountForMAM()`.
+
+5. When a user account is completely removed, the app should call `unregisterAccountForMAM()` to remove the account from Intune management.
+
+	> [!NOTE]
+	> If a user signs out of the app temporarily, the app does not need to call `unregisterAccountForMAM()`. The call may initiate a wipe to completely remove corporate data for the user.
+
+
+### MAMEnrollmentManager
+
+All the necessary authentication and registration APIs can be found in the `MAMEnrollmentManager` interface. A reference to the `MAMEnrollmentManager` can be obtained as follows:
+
+```java
+MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
+
+// make use of mgr
+
+```
+
+The `MAMEnrollmentManager` instance returned is guaranteed not to be null. The API methods fall into two categories: **authentication** and **account registration**.
+
+> [!NOTE]
+> `MAMEnrollmentManager` contains some API methods that will be deprecated soon. For clarity, only the relevant methods and result codes are shown in the code block below.
+
+```java
+package com.microsoft.intune.mam.policy;
+
+public interface MAMEnrollmentManager {
+	public enum Result {
+		AUTHORIZATION_NEEDED,
+		NOT_LICENSED,
+		ENROLLMENT_SUCCEEDED,
+		ENROLLMENT_FAILED,
+		WRONG_USER,
+		MDM_ENROLLED,
+		UNENROLLMENT_SUCCEEDED,
+		UNENROLLMENT_FAILED,
+		PENDING,
+		COMPANY_PORTAL_REQUIRED;
+	}
+
+//Authentication methods
+interface MAMServiceAuthenticationCallback {
+		String acquireToken(String upn, String aadId, String resourceId);
+}
+void registerAuthenticationCallback(MAMServiceAuthenticationCallback callback);
+void updateToken(String upn, String aadId, String resourceId, String token);
+
+//Registration methods
+void registerAccountForMAM(String upn, String aadId, String tenantId);
+void unregisterAccountForMAM(String upn);
+Result getRegisteredAccountStatus(String upn);
+}
+```
+
+### Account authentication
+
+This section describes the authentication API methods in `MAMEnrollmentManager` and how to use them.
+
+```java
+interface MAMServiceAuthenticationCallback {
+		String acquireToken(String upn, String aadId, String resourceId);
+}
+void registerAuthenticationCallback(MAMServiceAuthenticationCallback callback);
+void updateToken(String upn, String aadId, String resourceId, String token);
+```
+
+1. The app must implement the `MAMServiceAuthenticationCallback` interface to allow the SDK to request an ADAL token for the given user and resource ID. The callback instance must be provided to the `MAMEnrollmentManager` by calling its `registerAuthenticationCallback()` method. A token may be needed very early in the app lifecycle for enrollment retries or app protection policy refresh check-ins, so the ideal place to register the callback is in the `onMAMCreate()` method of the app's `MAMApplication` subclass.
+
+2. The `acquireToken()` method should acquire the access token for the requested resource ID for the given user. If it can't acquire the requested token, it should return null.
+
+3. In case the app is unable to provide a token when the SDK calls `acquireToken()`  -- for example, if silent authentication fails and it is an inconvenient time to show a UI -- the app can provide a token at a later time by calling the `updateToken()` method. The same UPN, AAD ID, and resource ID that were requested by the prior call to `acquireToken()` must be passed to `updateToken()`, along with the token that was finally acquired. The app should call this method as soon as possible after returning null from the provided callback.
+
+> [!NOTE]
+> The SDK will call `acquireToken()` periodically to get the token, so calling `updateToken()` is not strictly required. However, it is recommended as it can help enrollments and app protection policy check-ins complete in a timely manner.
+
+
+### Account registration
+
+This section describes the account registration API methods in `MAMEnrollmentManager` and how to use them.
+
+```java
+void registerAccountForMAM(String upn, String aadId, String tenantId);
+void unregisterAccountForMAM(String upn);
+Result getRegisteredAccountStatus(String upn);
+```
+
+1. To register an account for management, the app should call `registerAccountForMAM()`. A user account is identified by both its UPN and its AAD user ID. The tenant ID is also required to associate enrollment data with the user's AAD tenant. The SDK may attempt to enroll the app for the given user in the MAM service; if enrollment fails, it will periodically retry enrollment until the account is unregistered. The retry period will typically be 12-24 hours. The SDK provides the status of enrollment attempts asynchronously via notifications.
+
+2. Because AAD authentication is required, the best time to register the user account is after the user has signed into the app and is successfully authenticated using ADAL.
+	* The user's AAD ID and tenant ID are returned from the ADAL authentication call as part of the [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android) object. The tenant ID comes from the `AuthenticationResult.getTenantID()` method.
+	* Information about the user is found in a sub-object of type `UserInfo` that comes from `AuthenticationResult.getUserInfo()`, and the AAD user ID is retrieved from that object by calling `UserInfo.getUserId()`.
+
+3. To unregister an account from Intune management, the app should call `unregisterAccountForMAM`. If the account has been successfully enrolled and is managed, the SDK will unenroll the account and wipe its data. Periodic enrollment retries for the account will be stopped. The SDK provides the status of unenrollment request asynchronously via notifications.
+
+### Important implementation notes
+
+#### Authentication
+
+* When the app calls `registerAccountForMAM`, it may receive a callback on its `MAMServiceAuthenticationCallback` interface shortly thereafter, on a different thread. Ideally, the app acquired its own token from ADAL prior to registering the account to expedite the acquisition of the **MAMService token**. IF the app returns a valid token from the callback, enrollment will proceed and the app will get the final result via a notification.
+
+* If the app doesn't return a valid AAD token, the final result from the enrollment attempt will be `AUTHENTICATION_NEEDED`. If the app receives this Result via notification, it can expedite the enrollment process by acquiring the **MAMService token** and calling the `updateToken()` method to initiate the enrollment process again. This is _not_ a firm requirement, however, since the SDK retries enrollment periodically and invokes the callback to acquire the token.
+
+* The app's registered `MAMServiceAuthenticationCallback` will also be called to acquire a token for periodic app protection policy refresh check-ins. If the app is unable to provide a token when requested, it will not get a notification, but it should attempt to acquire a token and call `updateToken()` at the next convenient time to expedite the check-in process. If a token is not provided, the callback will still be called at the next check-in attempt.
+
+#### Registration
+
+* For your convenience, the registration methods are idempotent; for example, `registerAccountForMAM`will only register an account and attempt to enroll the app if the account is not already registered, and `unregisterAccountForMAM` will only unregister an account if it is currently registered. Subsequent calls are no-ops, so there is no harm in calling these methods more than once. Additionally, correspondence between calls to these methods and notifications of results are not guaranteed: i.e. if `registerAccountForMAM` is called for an identity that is already registered, the notification may not be sent again for that identity. It is possible that notifications are sent that don't correspond to any calls to these methods, since the SDK may periodically try enrollments in the background, and unenrollments may be triggered by wipe requests received from the Intune service.
+
+* The registration methods can be called for any number of different identities, but currently only one user account can become successfully enrolled. If multiple user accounts that are licensed for Intune and targeted by app protection policy are registered at or near the same time, there is no guarantee on which one will win the race.
+
+* Finally, you can query the `MAMEnrollmentManager` to see if a particular account is registered and to get its current status using the `getRegisteredAccountStatus` method. If the provided account is not registered, this method will return **null**. If the account is registered, this method will return the account's status as one of the members of the `MAMEnrollmentManager.Result` enumeration.
+
+### Result and status codes
+
+When an account is first registered, it begins in the `PENDING` state, indicating that the initial MAM service enrollment attempt is incomplete. After the enrollment attempt finishes, a notification will be sent with one of the Result codes in the table below. In addition, the `getRegisteredAccountStatus()` method will return the account's status so the app can always determine if access to corporate content is blocked for that user. If the enrollment attempt fails, the account's status may change over time as the SDK retries enrollment in the background.
+
+|Result code | Explanation |
+| -- | -- |
+|AUTHORIZATION_NEEDED | This result indicates that a token was not provided by the app’s registered `MAMServiceAuthenticationCallbac`k instance, or the provided token was invalid.  The app should acquire a valid token and call `updateToken()` if possible. |
+| NOT_LICENSED | The user is not licensed for Intune, or the attempt to contact the Intune MAM service failed.  The app should continue in an unmanaged (normal) state and the user should not be blocked.  Enrollments will be retried periodically in case the user becomes licensed in the future. |
+| ENROLLMENT_SUCCEEDED | The enrollment attempt succeeded, or the user is already enrolled.  In the case of a successful enrollment, a policy refresh notification will be sent before this notification.  Access to corporate data should be allowed. |
+| ENROLLMENT_FAILED | The enrollment attempt failed.  Further details can be found in the device logs.  The app should not allow access to corporate in this state, since it was previously determined that the user is licensed for Intune.|
+| WRONG_USER | Only one user per device can enroll an app with the MAM service.  In order to enroll successfully as a different user, all enrolled apps must be unenrolled first.  Otherwise, this app must enroll as the primary user.  This check happens after the license check, so the user should be blocked from accessing corporate data until the app is successfully enrolled.|
+| UNENROLLMENT_SUCCEEDED | Unenrollment was successful.|
+| UNENROLLMENT_FAILED | The unenrollment request failed.  Further details can be found in the device logs. |
+| PENDING | The initial enrollment attempt for the user is in progress.  The app can block access to corporate data until the enrollment result is known, but is not required to do so. |
+| COMPANY_PORTAL_REQUIRED | The user is licensed for Intune, but the app cannot be enrolled until the Company Portal app is installed on the device. The Intune App SDK will attempt to block access to the app for the given user and direct them to install the Company Portal app (see below for details). |
+
+
+### Company Portal requirement prompt override (optional)
+
+If the `COMPANY_PORTAL_REQUIRED` Result is received, the SDK will block use of activities that use the identity for which enrollment was requested. Instead, the SDK will cause those activities to display a prompt to download the Company Portal. If you want to prevent this behavior in your app, activities may implement `MAMActivity.onMAMCompanyPortalRequired`.
+
+This method is called before the SDK displays its default blocking UI. If the app changes the activity identity or unregisters the user who attempted to enroll, the SDK will not block the activity. In this situation, it is up to the app to avoid leaking corporate data.
+
+### Notifications
+
+A new type of **MAMNotification** has been added in order to inform the app that the enrollment request has completed.  The **MAMEnrollmentNotification** will be received through the **MAMNotificationReceiver** interface as described in the [Register for notifications from the SDK](#Register-for-notifications-from-the-SDK) section.
+
+```java
+public interface MAMEnrollmentNotification extends MAMUserNotification {
+	MAMEnrollmentManager.Result getEnrollmentResult();
+}
+
+```
+
+The `getEnrollmentResult()` method returns the result of the enrollment request.  Since `MAMEnrollmentNotification` extends `MAMUserNotification`, the identity of the user for whom the enrollment was attempted is also available. The app must implement the `MAMNotificationReceiver` interface to receive these notifications, detailed in the [Register for notifications from the SDK](#Register-for-notifications-from-the-SDK) section.
+
+The registered user account's status may change when an enrollment notification is received, but it will not change in some cases (e.g. if `AUTHORIZATION_NEEDED` notification is received after a more informative result such as `WRONG_USER`, the more informative result will be maintained as the account's status)
+
+
+## Protecting Backup data
+
+As of Android Marshmallow (API 23), Android has two ways for an app to back up its data. Each option is available to your app and requires different steps to ensure that Intune data protection is correctly implemented. You can review the table below on corresponding actions required for correct data protection behavior.  You can read more about the backup methods in the [Android API guide](http://developer.android.com/guide/topics/data/backup.html).
+
+### Auto Backup for Apps
+
+Android began offering [automatic full backups](https://developer.android.com/guide/topics/data/autobackup.html) to Google Drive for apps on Android Marshmallow devices, regardless of the app's target API. In your AndroidManifest.xml, if you explicitly set `android:allowBackup` to **false**, then your app will never be queued for backups by Android and "corporate" data will stay within the app. In this case, no further action is necessary.
+
+However, by default the `android:allowBackup` attribute is set to true, even if `android:allowBackup` isn't specified in the manifest file. This means all app data is automatically backed up to the user's Google Drive account, a default behavior that poses a **data leak risk**. Therefore, the SDK requires the changes outlined below to ensure that data protection is applied.  It is important to follow the guidelines  below to protect customer data properly if you want your app to run on Android Marshmallow devices.  
+
+Intune allows you to utilize all the [Auto Backup features](https://developer.android.com/guide/topics/data/autobackup.html) available from Android, including the ability to define custom rules in XML, but you must follow the steps below to secure your data:
+
+1. If your app does **not** use its own custom BackupAgent, use the default MAMBackupAgent to allow for automatic full backups that are Intune policy compliant. If you do this, you can ignore the `android:fullBackupOnly` manifest attribute, as it’s not applicable for our backup agent. Place the following in the app manifest:
+
+	```xml
+android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
+	```
+
+2. **[Optional]** If you implemented an optional custom BackupAgent, you need to make sure to use MAMBackupAgent or MAMBackupAgentHelper. See the following sections. Consider switching to using Intune's **MAMDefaultFullBackupAgent** (described in step 1) which provides easy back up on Android M and above.
+
+3. When you decide which type of full backup your app should receive (unfiltered, filtered, or none) you'll need to set the attribute `android:fullBackupContent`  to true, false, or an XML resource in your app.
+
+4. Then, you _**must**_ copy whatever you put into `android:fullBackupContent` into a metadata tag named `com.microsoft.intune.mam.FullBackupContent` in the manifest.
+
+	**Example 1**: If you want your app to have full backups without exclusions, set both the `android:fullBackupContent` attribute and `com.microsoft.intune.mam.FullBackupContent` metadata tag to **true**:
+
+	```xml
+	android:fullBackupContent="true"
+	...
+	<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
+	```
+
+	**Example 2**: If you want your app to use its custom BackupAgent and opt out of full, Intune policy compliant, automatic backups, you must set the attribute and metadata tag to **false**:
+
+	```xml
+	android:fullBackupContent="false"
+	...
+	<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
+	```
+
+	**Example 3**: If you want your app to have full backups according to your custom rules defined in an XML file, please set the attribute and metadata tag to the same XML resource:
+
+	```xml
+	android:fullBackupContent="@xml/my_scheme"
+	...
+	<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:resource="@xml/my_scheme" />  
+	```
+
+
+### Key/Value Backup
+
+The [Key/Value Backup](https://developer.android.com/guide/topics/data/keyvaluebackup.html) option is available to all APIs 8+ and uploads app data to the [Android Backup Service](https://developer.android.com/google/backup/index.html). The amount of data per user of your app is limited to 5MB. If you use Key/Value Backup, you must use a **BackupAgentHelper** or a **BackupAgent**.
+
+### BackupAgentHelper
+
+BackupAgentHelper is easier to implement than BackupAgent both in terms of native Android functionality and Intune MAM integration. BackupAgentHelper allows the developer to register entire files and shared preferences to a **FileBackupHelper** and **SharedPreferencesBackupHelper** (respectively) which are then added to the BackupAgentHelper upon creation. Follow the steps below to use a BackupAgentHelper with Intune MAM:
+
+1. To utilize multi-identity backup with a BackupAgentHelper, follow the Android guide to [Extending BackupAgentHelper](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgentHelper).
+
+2. Have your class extend the MAM equivalent of BackupAgentHelper, FileBackupHelper, and SharedPreferencesBackupHelper.
+
+|Android class | MAM equivalent |
+|--|--|
+|BackupAgentHelper |MAMBackupAgentHelper |
+|FileBackupHelper | MAMFileBackupHelper
+|SharedPreferencesBackupHelper| MAMSharedPreferencesBackupHelper|
+
+Following these guidelines will lead to a successful multi-identity backup and restore.
+
+### BackupAgent
+
+A BackupAgent allows you to be much more explicit about what data is backed up. Because the developer is fairly responsible for the implementation, there are more steps required to ensure appropriate data protection from Intune MAM. Since most of the work is pushed onto you, the developer, Intune MAM integration is slightly more involved.
+
+**Integrate MAM:**
+
+1. Please carefully read the Android guide for [Key/Value Backup](https://developer.android.com/guide/topics/data/keyvaluebackup.html) and specifically [Extending BackupAgent](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent) to ensure your BackupAgent implementation follows Android guidelines.
+
+2. Have your class extend **MAMBackupAgent**.
+
+**Multi-identity Backup:**
+
+1. Before beginning your backup, check that the files or data buffers you plan to back up are indeed **permitted by the IT administrator to be backed up** in multi-identity scenarios. We provide you with the `isBackupAllowed` function in **MAMFileProtectionManager** and **MAMDataProtectionManager** to determine this. If the file or data buffer is not allowed to be backed up, then you should not continue including it in your backup.
+
+2. At some point during your backup, if you want to back up the identities for the files you checked in step 1, you must call `backupMAMFileIdentity(BackupDataOutput data, File … files)` with the files from which you plan to extract data. This will automatically create new backup entities and write them to the **BackupDataOutput** for you. These entities will be automatically consumed upon restore.  
+
+**Multi-identity Restore:**
+
+The Data Backup guide specifies a general algorithm for restoring your application’s data and provides a code sample in the [Extending BackupAgent](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent) section. In order to have a successful multi-identity restore, you must follow the general structure provided in this code sample with special attention to the following:
+
+1.	You must utilize a `while(data.readNextHeader())`* loop to go through the backup entities.
+
+2.	You must call `data.skipEntityData()`* if `data.getKey()`* does not match the key you wrote in `onBackup`. Without performing this step, your restores may not succeed.
+
+3.	Avoid returning while consuming backup entities in the `while(data.readNextHeader())`* construct, as the entities we automatically write will be lost.
+
+* Where `data` is the local variable name for the **BackupDataInput** that is passed to your app upon restore.
 
 ## Multi-Identity (optional)
 
@@ -847,282 +1128,6 @@ If the app provides corporate data other than a **ParcelFileDescriptor** through
 If an app registers for the `WIPE_USER_DATA` notification, it will not receive the benefit of the SDK's default selective wipe behavior. For multi-identity aware apps, this loss may be more significant since MAM default selective wipe will wipe only files whose identity is targeted by a wipe.
 
 If a multi-identity aware application wishes MAM default selective wipe to be done _**and**_ wishes to perform its own actions on wipe, it should register for `WIPE_USER_AUXILIARY_DATA` notifications. This notification will be sent immediately by the SDK before it performs the MAM default selective wipe. An app should never register for both WIPE_USER_DATA and WIPE_USER_AUXILIARY_DATA.
-
-
-## MAM Service Enrollment (new!)
-
-### Overview
-Intune app protection policy without device enrollment, also known as APP-WE or MAM-WE, allows apps to be managed by Intune without the need for the device to be enrolled Intune MDM. APP-WE works with or without device enrollment. The Company Portal is still required to be installed on the device, but the user does not need to sign into the Company Portal and enroll the device.
-
-> [!NOTE]
-> All apps are required to support app protection policy without enrollment.
-
-#### Workflow
-
-When an app creates a new user account, it should register the account for management with the Intune App SDK. The SDK will handle the details of enrolling the app in the MAM service; if necessary, it will retry any enrollments at appropriate time intervals if failures occur.
-
-The app can also query the Intune App SDK for the status of a registered user to determine if the user should be blocked from accessing corporate content. Multiple accounts may be registered for management, but currently only one account can be actively enrolled with the MAM service at a time. This means only one account on the app can have app protection policy at a time.
-
-The app is required to provide a callback to acquire the appropriate access token from the Azure Active Directory Authentication Library (ADAL) on behalf of the Intune App SDK. It is assumed that the app already uses ADAL for user authentication and to acquire its own access tokens.
-
-When the app removes an account completely, it should unregister that account to indicate that the app should no longer apply policy for that user. If the user was enrolled in the MAM service, the user will be un-enrolled and the app will be wiped.
-
-
-### Outline of app requirements
-
-1. For authentication and licensing checks, as well as the periodic check-in operations, the app must provide the ADAL parameters as specified in [Configure ADAL](#Configure-Azure-Active-Directory-Authentication-Libraries-(ADAL)).  In particular, the **ClientID** and **Authority** values are required.
-
-2. Since the `MAMEnrollmentManager` has a dependency on ADAL for authentication, the app must use a compatible version of the [ADAL library](https://github.com/AzureAD/azure-activedirectory-library-for-android). It is recommended to use the latest version of ADAL.
-
-3. The app _must_ implement and register an instance of the `MAMServiceAuthenticationCallback` interface. The callback instance should be registered as early as possible in the app's lifecycle (typically in the `onMAMCreate()` method of the application class).
-
-4. When a user account is created and the user successfully signs in with ADAL, the app _must_ call the `registerAccountForMAM()`.
-
-5. When a user account is completely removed, the app should call `unregisterAccountForMAM()` to remove the account from Intune management.
-	> [!NOTE]
-	> If a user signs out of the app temporarily, the app does not need to call `unregisterAccountForMAM()`. The call may initiate a wipe to completely remove corporate data for the user.
-
-
-### MAMEnrollmentManager
-
-All the necessary authentication and registration APIs can be found in the `MAMEnrollmentManager` interface. A reference to the `MAMEnrollmentManager` can be obtained as follows:
-
-```java
-MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
-
-// make use of mgr
-
-```
-
-The `MAMEnrollmentManager` instance returned is guaranteed not to be null. The API methods fall into two categories: **authentication** and **account registration**.
-
-> [!NOTE]
-> `MAMEnrollmentManager` contains some API methods that will be deprecated soon. For clarity, only the relevant methods and result codes are shown in the code block below.
-
-```java
-package com.microsoft.intune.mam.policy;
-
-public interface MAMEnrollmentManager {
-	public enum Result {
-		AUTHORIZATION_NEEDED,
-		NOT_LICENSED,
-		ENROLLMENT_SUCCEEDED,
-		ENROLLMENT_FAILED,
-		WRONG_USER,
-		MDM_ENROLLED,
-		UNENROLLMENT_SUCCEEDED,
-		UNENROLLMENT_FAILED,
-		PENDING,
-		COMPANY_PORTAL_REQUIRED;
-	}
-
-//Authentication methods
-interface MAMServiceAuthenticationCallback {
-		String acquireToken(String upn, String aadId, String resourceId);
-}
-void registerAuthenticationCallback(MAMServiceAuthenticationCallback callback);
-void updateToken(String upn, String aadId, String resourceId, String token);
-
-//Registration methods
-void registerAccountForMAM(String upn, String aadId, String tenantId);
-void unregisterAccountForMAM(String upn);
-Result getRegisteredAccountStatus(String upn);
-}
-```
-
-### Account authentication methods
-
-This section describes the authentication API methods in `MAMEnrollmentManager` and how to use them.
-
-```java
-interface MAMServiceAuthenticationCallback {
-		String acquireToken(String upn, String aadId, String resourceId);
-}
-void registerAuthenticationCallback(MAMServiceAuthenticationCallback callback);
-void updateToken(String upn, String aadId, String resourceId, String token);
-```
-
-1. The app must implement the `MAMServiceAuthenticationCallback` interface to allow the SDK to request an ADAL token for the given user and resource ID. The callback instance must be provided to the `MAMEnrollmentManager` by calling its `registerAuthenticationCallback()` method. A token may be needed very early in the app lifecycle for enrollment retries or app protection policy refresh check-ins, so the ideal place to register the callback is in the `onMAMCreate()` method of the app's `MAMApplication` sublass.
-
-2. The `acquireToken()` method should acquire the access token for the requested resource ID for the given user. If it can't acquire the requested token, it should return null.
-
-3. In case the app is unable to provide a token when the SDK calls `acquireToken()`  -- for example, if silent authentication fails and it is an inconvenient time to show a UI -- the app can provide a token at a later time by calling the `updateToken()` method. The same UPN, AAD ID, and resource ID that were requested by the prior call to `acquireToken()` must be passed to `updateToken()`, along with the token that was finally acquired. The app should call this method as soon as possible after returning null from the provided callback.
-
-> [!NOTE]
-> The SDK will call `acquireToken()` periodically to get the token, so calling `updateToken()` is not strictly required. However, it is recommended as it can help enrollments and app protection policy check-ins complete in a timely manner.
-
-
-### Account registration methods
-
-This section describes the account registration API methods in `MAMEnrollmentManager` and how to use them.
-
-```java
-void registerAccountForMAM(String upn, String aadId, String tenantId);
-void unregisterAccountForMAM(String upn);
-Result getRegisteredAccountStatus(String upn);
-```
-
-1. To register an account for management, the app should call `registerAccountForMAM()`. A user account is identified by both its UPN and its AAD user ID. The tenant ID is also required to associate enrollment data with the user's AAD tenant. The Intune App SDK may attempt to enroll the app for the given user in the MAM service; if enrollment fails, it will periodically retry enrollment until the account is unregistered. The retry period will typically be 12-24 hours. The SDK provides the status of enrollment attempts asynchronously via notifications.
-
-2. Because AAD authentication is required, the best time to register the user account is after the user has signed into the app and is successfully authenticated using ADAL.
-	* The user's AAD ID and tenant ID are returned from the ADAL authentication call as part of the [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android) object. The tenant ID comes from the `AuthenticationResult.getTenantID()` method.
-	* Information about the user is found in a sub-object of type `UserInfo` that comes from `AuthenticationResult.getUserInfo()`, and the AAD user ID is retrieved from that object by calling `UserInfo.getUserId()`.
-
-3. To unregister an account from Intune management, the app should call `unregisterAccountForMAM`. If the account has been successfully enrolled and is managed, the SDK will un-enroll the account and wipe its data. Periodic enrollment retries for the account will be stopped. The SDK provides the status of un-enrollment request asynchronously via notifications.
-
-### Important implementation notes
-
-#### Authentication notes
-
-* When the app calls `registerAccountForMAM`, it may receive a callback on its `MAMServiceAuthenticationCallback` interface shortly thereafter, on a different thread. Ideally, the app acquired its own token from ADAL prior to registering the account to expedite the acquisition of the **MAMService token**. IF the app returns a valid token from the callback, enrollment will proceed and the app will get the final result via a notification.
-
-* If the app doesn't return a valid AAD token, the final result from the enrollment attempt will be `AUTHENTICATION_NEEDED`. If the app receives this Result via notification, it can expedite the enrollment process by acquiring the **MAMService token** and calling the `updateToken()` method to initiate the enrollment process again. This is _not_ a firm requirement, however, since the SDK retries enrollment periodically and invokes the callback to acquire the token.
-
-* The app's registered `MAMServiceAuthenticationCallback` will also be called to acquire a token for periodic app protection policy refresh check-ins. If the app is unable to provide a token when requested, it will not get a notification, but it should attempt to acquire a token and call `updateToken()` at the next convenient time to expedite the check-in process. If a token is not provided, the callback will still be called at the next check-in attempt.
-
-#### Registration notes
-
-* For your convenience, the registration methods are idempotent; for example, `registerAccountForMAM`will only register an account and attempt to enroll the app if the account is not already registered, and `unregisterAccountForMAM` will only unregister an account if it is currently registered. Subsequent calls are no-ops, so there is no harm in calling these methods more than once. Additionally, correspondence between calls to these methods and notifications of results are not guaranteed: i.e. if `registerAccountForMAM` is called for an identity that is already registered, the notification may not be sent again for that identity. It is possible that notifications are sent that don't correspond to any calls to these methods, since the SDK may periodically try enrollments in the background, and unenrollments may be triggered by wipe requests received from the Intune service.
-
-* The registration methods can be called for any number of different identities, but currently only one user account can become successfully enrolled. If multiple user accounts that are licensed for Intune and targeted by app protection policy are registered at or near the same time, there is no guarantee on which one will win the race.
-
-* Finally, you can query the `MAMEnrollmentManager` to see if a particular account is registered and to get its current status using the `getRegisteredAccountStatus` method. If the provided account is not registered, this method will return **null**. If the account is registered, this method will return the account's status as one of the members of the `MAMEnrollmentManager.Result` enumeration.
-
-### Result and status codes
-
-When an account is first registered, it begins in the `PENDING` state, indicating that the initial MAM service enrollment attempt is incomplete. After the enrollment attempt finishes, a notification will be sent with one of the Result codes in the table below. In addition, the `getRegisteredAccountStatus()` method will return the account's status so the app can always determine if access to corporate content is blocked for that user. If the enrollment attempt fails, the account's status may change over time as the SDK retries enrollment in the background.
-
-|Result code | Explanation |
-| -- | -- |
-|AUTHORIZATION_NEEDED | This result indicates that a token was not provided by the app’s registered `MAMServiceAuthenticationCallbac`k instance, or the provided token was invalid.  The app should acquire a valid token and call `updateToken()` if possible. |
-| NOT_LICENSED | The user is not licensed for Intune, or the attempt to contact the Intune MAM service failed.  The app should continue in an unmanaged (normal) state and the user should not be blocked.  Enrollments will be retried periodically in case the user becomes licensed in the future. |
-| ENROLLMENT_SUCCEEDED | The enrollment attempt succeeded, or the user is already enrolled.  In the case of a successful enrollment, a policy refresh notification will be sent before this notification.  Access to corporate data should be allowed. |
-| ENROLLMENT_FAILED | The enrollment attempt failed.  Further details can be found in the device logs.  The app should not allow access to corporate in this state, since it was previously determined that the user is licensed for Intune.|
-| WRONG_USER | Only one user per device can enroll an app with the MAM service.  In order to enroll successfully as a different user, all enrolled apps must be unenrolled first.  Otherwise, this app must enroll as the primary user.  This check happens after the license check, so the user should be blocked from accessing corporate data until the app is successfully enrolled.|
-| UNENROLLMENT_SUCCEEDED | Unenrollment was successful.|
-| UNENROLLMENT_FAILED | The unenrollment request failed.  Further details can be found in the device logs. |
-| PENDING | The initial enrollment attempt for the user is in progress.  The app can block access to corporate data until the enrollment result is known, but is not required to do so. |
-| COMPANY_PORTAL_REQUIRED | The user is licensed for Intune, but the app cannot be enrolled until the Company Portal app is installed on the device. The Intune App SDK will attempt to block access to the app for the given user and direct them to install the Company Portal app (see below for details). |
-
-
-### Company Portal requirement prompt override (optional)
-
-If the `COMPANY_PORTAL_REQUIRED` Result is received, the SDK will block use of activities that use the identity for which enrollment was requested. Instead, the SDK will cause those activities to display a prompt to download the Company Portal. If you want to prevent this behavior in your app, activities may implement `MAMActivity.onMAMCompanyPortalRequired`.
-
-This method is called before the SDK displays its default blocking UI. If the app changes the activity identity or unregisters the user who attempted to enroll, the SDK will not block the activity. In this situation, it is up to the app to avoid leaking corporate data.
-
-### Notifications
-
-A new type of **MAMNotification** has been added in order to inform the app that the enrollment request has completed.  The **MAMEnrollmentNotification** will be received through the **MAMNotificationReceiver** interface as described in the [Register for notifications from the SDK](#Register-for-notifications-from-the-SDK) section.
-
-```java
-public interface MAMEnrollmentNotification extends MAMUserNotification {
-	MAMEnrollmentManager.Result getEnrollmentResult();
-}
-
-```
-
-The `getEnrollmentResult()` method returns the result of the enrollment request.  Since `MAMEnrollmentNotification` extends `MAMUserNotification`, the identity of the user for whom the enrollment was attempted is also available. The app must implement the `MAMNotificationReceiver` interface to receive these notifications, detailed in the [Register for notifications from the SDK](#Register-for-notifications-from-the-SDK) section.
-
-The registered user account's status may change when an enrollment notification is received, but it will not change in some cases (e.g. if `AUTHORIZATION_NEEDED` notification is received after a more informative result such as `WRONG_USER`, the more informative result will be maintained as the account's status)
-
-
-## Protecting Backup data
-
-As of Android Marshmallow (API 23), Android has two ways for an app to back up its data. Each option is available to your app and requires different steps to ensure that Intune data protection is correctly implemented. You can review the table below on corresponding actions required for correct data protection behavior.  You can read more about the backup methods in the [Android API guide](http://developer.android.com/guide/topics/data/backup.html).
-
-### Auto Backup for Apps
-
-Android began offering [automatic full backups](https://developer.android.com/guide/topics/data/autobackup.html) to Google Drive for apps on Android Marshmallow devices, regardless of the app's target API. In your AndroidManifest.xml, if you explicitly set `android:allowBackup` to **false**, then your app will never be queued for backups by Android and "corporate" data will stay within the app. In this case, no further action is necessary.
-
-However, by default the `android:allowBackup` attribute is set to true, even if `android:allowBackup` isn't specified in the manifest file. This means all app data is automatically backed up to the user's Google Drive account, a default behavior that poses a **data leak risk**. Therefore, the SDK requires the changes outlined below to ensure that data protection is applied.  It is important to follow the guidelines  below to protect customer data properly if you want your app to run on Android Marshmallow devices.  
-
-Intune allows you to utilize all the [Auto Backup features](https://developer.android.com/guide/topics/data/autobackup.html) available from Android, including the ability to define custom rules in XML, but you must follow the steps below to secure your data:
-
-1. If your app does **not** use its own custom BackupAgent, use the default MAMBackupAgent to allow for automatic full backups that are Intune policy compliant. If you do this, you can ignore the `android:fullBackupOnly` manifest attribute, as it’s not applicable for our backup agent. Place the following in the app manifest:
-
-	```xml
-android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
-	```
-
-2. **[Optional]** If you implemented an optional custom BackupAgent, you need to make sure to use MAMBackupAgent or MAMBackupAgentHelper. See the following sections. Consider switching to using Intune's **MAMDefaultFullBackupAgent** (described in step 1) which provides easy back up on Android M and above.
-
-3. When you decide which type of full backup your app should receive (unfiltered, filtered, or none) you'll need to set the attribute `android:fullBackupContent`  to true, false, or an XML resource in your app.
-
-4. Then, you _**must**_ copy whatever you put into `android:fullBackupContent` into a metadata tag named `com.microsoft.intune.mam.FullBackupContent` in the manifest.
-
-	**Example 1**: If you want your app to have full backups without exclusions, set both the `android:fullBackupContent` attribute and `com.microsoft.intune.mam.FullBackupContent` metadata tag to **true**:
-
-	```xml
-	android:fullBackupContent="true"
-	...
-	<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
-	```
-
-	**Example 2**: If you want your app to use its custom BackupAgent and opt out of full, Intune policy compliant, automatic backups, you must set the attribute and metadata tag to **false**:
-
-	```xml
-	android:fullBackupContent="false"
-	...
-	<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
-	```
-
-	**Example 3**: If you want your app to have full backups according to your custom rules defined in an XML file, please set the attribute and metadata tag to the same XML resource:
-
-	```xml
-	android:fullBackupContent="@xml/my_scheme"
-	...
-	<meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:resource="@xml/my_scheme" />  
-	```
-
-
-### Key/Value Backup
-
-The [Key/Value Backup](https://developer.android.com/guide/topics/data/keyvaluebackup.html) option is available to all APIs 8+ and uploads app data to the [Android Backup Service](https://developer.android.com/google/backup/index.html). The amount of data per user of your app is limited to 5MB. If you use Key/Value Backup, you must use a **BackupAgentHelper** or a **BackupAgent**.
-
-### BackupAgentHelper
-
-BackupAgentHelper is easier to implement than BackupAgent both in terms of native Android functionality and Intune MAM integration. BackupAgentHelper allows the developer to register entire files and shared preferences to a **FileBackupHelper** and **SharedPreferencesBackupHelper** (respectively) which are then added to the BackupAgentHelper upon creation. Follow the steps below to use a BackupAgentHelper with Intune MAM:
-
-1. To utilize multi-identity backup with a BackupAgentHelper, follow the Android guide to [Extending BackupAgentHelper](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgentHelper).
-
-2. Have your class extend the MAM equivalent of BackupAgentHelper, FileBackupHelper, and SharedPreferencesBackupHelper.
-
-|Android class | MAM equivalent |
-|--|--|
-|BackupAgentHelper |MAMBackupAgentHelper |
-|FileBackupHelper | MAMFileBackupHelper
-|SharedPreferencesBackupHelper| MAMSharedPreferencesBackupHelper|
-
-Following these guidelines will lead to a successful multi-identity backup and restore.
-
-### BackupAgent
-
-A BackupAgent allows you to be much more explicit about what data is backed up. Because the developer is fairly responsible for the implementation, there are more steps required to ensure appropriate data protection from Intune MAM. Since most of the work is pushed onto you, the developer, Intune MAM integration is slightly more involved.
-
-**Integrate MAM:**
-
-1. Please carefully read the Android guide for [Key/Value Backup](https://developer.android.com/guide/topics/data/keyvaluebackup.html) and specifically [Extending BackupAgent](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent) to ensure your BackupAgent implementation follows Android guidelines.
-
-2. Have your class extend **MAMBackupAgent**.
-
-**Multi-identity Backup:**
-
-1. Before beginning your backup, check that the files or data buffers you plan to back up are indeed **permitted by the IT administrator to be backed up** in multi-identity scenarios. We provide you with the `isBackupAllowed` function in **MAMFileProtectionManager** and **MAMDataProtectionManager** to determine this. If the file or data buffer is not allowed to be backed up, then you should not continue including it in your backup.
-
-2. At some point during your backup, if you want to back up the identities for the files you checked in step 1, you must call `backupMAMFileIdentity(BackupDataOutput data, File … files)` with the files from which you plan to extract data. This will automatically create new backup entities and write them to the **BackupDataOutput** for you. These entities will be automatically consumed upon restore.  
-
-**Multi-identity Restore:**
-
-The Data Backup guide specifies a general algorithm for restoring your application’s data and provides a code sample in the [Extending BackupAgent](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent) section. In order to have a successful multi-identity restore, you must follow the general structure provided in this code sample with special attention to the following:
-
-1.	You must utilize a `while(data.readNextHeader())`* loop to go through the backup entities.
-
-2.	You must call `data.skipEntityData()`* if `data.getKey()`* does not match the key you wrote in `onBackup`. Without performing this step, your restores may not succeed.
-
-3.	Avoid returning while consuming backup entities in the `while(data.readNextHeader())`* construct, as the entities we automatically write will be lost.
-
-* Where `data` is the local variable name for the **BackupDataInput** that is passed to your app upon restore.
 
 ## Application Configuration channel (preview)
 
