@@ -88,10 +88,8 @@ You can now assign line of business apps from the store to users whether or not 
 
 #### Additional Windows 10 upgrade paths <!--903672-->
 
-You can now create an edition upgrade policy to upgrade devices to the following Windows 10 editions:
+You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
 
-- Windows 10 Education
-- Windows 10 Education N
 - Windows 10 Professional
 - Windows 10 Professional N
 - Windows 10 Professional Education
@@ -110,6 +108,10 @@ You now have compliance reports that give you the compliance posture of devices 
 - Compliance state for an individual policy
 
 You can also use these reports to drill-down into an individual device to view specific settings and policies that affect that device.
+
+#### Direct access to Apple enrollment scenarios <!--951869-->
+
+For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
 ### February 2017
 
