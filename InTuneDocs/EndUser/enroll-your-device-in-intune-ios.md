@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/03/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,8 @@ If your company or school uses Microsoft Intune, you can enroll your iOS device 
 
 **Before you start:**
 
-- Make sure that you finish enrolling after you start the steps. If you start but don't finish, enrollment may not work if you come back later and try again.
+- Make sure that you finish enrolling after you start the steps. Pausing for more than a few minutes usually stops the process, and will require you to restart.
+- If your enrollment fails for any reason, you'll need to return to the Company Portal app to try again. 
 - Make sure that your Wi-Fi is working. Otherwise, enrollment will fail.
 - If you blocked Safari on your device, unblock it. You must use Safari to enroll.
 
