@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/10/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,20 @@ ms.custom: intune-azure
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
 
+## March 2017
+
+<!--### Custom app categories <!--748805
+You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
+See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).-->
+
+<!--### Display device categories <!--814654
+You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade.-->
+
+### Configure Windows Update for Business settings
+Windows as a Service is the new way of providing updates for Windows 10. Starting with Windows 10, any new Feature Updates and Quality Updates will contain the contents of all previous updates. This means that as long as you've installed the latest update, you know that your Windows 10 devices are completely up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
+
+By using Windows Update for Business, you can simplify the update management experience so that you don’t need to approve individual updates for groups of devices. You can still manage risk in your environments by configuring an update rollout strategy and Windows Update will make sure that updates are installed at right time. Microsoft Intune provides the ability to configure update settings on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates.Use Intune to configure and manage **Windows 10 update rings**. An update ring contains a group of settings that configure when and how Windows 10 updates get installed. For details, see [Configure Windows Update for Business settings](/intune-azure/configure-devices/how-to-configure-windows-update-for-business).
+
 ## February 2017
 
 ### Ability to restrict mobile device enrollment <!--747600, 795782-->
@@ -51,7 +65,7 @@ You can now create, edit, and assign categories for apps you add to Intune. Curr
 See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).
 
 ### Display device categories <!--814654-->
-You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade. See [How to add an app to Intune](/intune-azure/manage-apps/add-apps). 
+You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade. See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).
 
 ## January 2017
 

@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,5 +40,6 @@ Sometimes issues can occur with your iOS device that may be able to be fixed thr
 - [How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [I need to update my iOS device](you-need-to-update-your-ios-device.md)
 - [My version of iOS isn't yet supported](your-ios-version-isnt-yet-supported.md)
+- [Send logs to your IT admin using email](send-logs-to-your-it-admin-by-email-iOS.md)
 - [I need to install Lookout for Work on my iOS device](you-are-prompted-to-install-lookout-for-work-ios.md)
 - [I need to resolve a threat that Lookout for Work found on my iOS device](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
