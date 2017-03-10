@@ -34,8 +34,9 @@ You can protect access to your company email, Office 365 services like **Exchang
 ## How does conditional access work?
 You can use compliance policy settings to evaluate the compliance of a device. A conditional access policy uses the evaluation to restrict or allow access to a specific service. When you use a conditional access policy in combination with a device compliance policy, only compliant devices are allowed to access the service. The compliance policy and the conditional access policy are deployed to the user. Any device that the user uses to access the services is checked for compliance with the policies.
 
-Keep in mind that the user who is using the device must have a compliance policy that is deployed to them in order for the device to be evaluated for compliance.
-If no compliance policy is deployed to the user, the device is treated as compliant, and no access restrictions are applied.
+> [!IMPORTANT] 
+> Keep in mind that the user who is using the device must have a compliance policy that is deployed to them in order for the device to be evaluated for compliance.
+> If no compliance policy is deployed to the user, the device is treated as compliant, and no access restrictions are applied.
 
 When devices don't meet the conditions that are set in the policies, the end user is guided though the process of enrolling the device and fixing the issue that prevents the device from being compliant.
 

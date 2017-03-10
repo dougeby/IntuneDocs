@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Send logs to your IT admin by email | Microsoft Docs
+title: Send Android logs to your IT admin by email | Microsoft Docs
 description: Send data logs by using email on an Android device
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-enduser
 ---
 
 
-# Send logs to your IT admin using email
+# Send Android logs to your IT admin using email
 
 If you get an error while you’re using the Company Portal app on your Android device, you can help your IT admin troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log__.
 
