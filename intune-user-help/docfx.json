@@ -8,29 +8,42 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE"
+          "**/old-TOC.md"
         ]
       }
     ],
     "resource": [
-      {
-        "files": [
+        {
+          "files": [
+          "**/images/**",
           "**/*.png",
-          "**/*.jpg"
-        ],
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp",
+          "**/*.html",
+          "**/*.css"
+          ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "_themes/**"
         ]
       }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
-    "template": [],
-    "dest": "intune-user-help"
+    "dest": "InTuneDocs",
+    "template": "docs.html",
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumb_path": "/enterprise-mobility/toc.json",
+      "product_feedback_displaytext" : "Intune Feedback",
+      "product_feedback_url": "https://microsoftintune.uservoice.com/",
+      "contributors_to_exclude": [ "herohua", "fenxu" ],
+      "searchScope": ["Intune"],
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "Azure.EndUser",
+          "folder_relative_path_in_docset": "."
+        }
+      }
+    }
   }
 }
