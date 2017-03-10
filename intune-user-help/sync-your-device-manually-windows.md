@@ -56,7 +56,7 @@ There is more than one version of Windows 10, so there are two sets of steps. To
 
 	![Sync steps to follow if you see Access work or school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-	If you see this screen, which shows "Work access," follow the steps in [Steps to follow if you see Work access](#steps-to-follow-if-you-see-your-account).
+	If you see this screen, which shows "Work access," follow the steps in [Steps to follow if you see Work access](#steps-to-follow-if-you-see-work-access).
 
 	![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
 
