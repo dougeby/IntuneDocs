@@ -158,22 +158,11 @@ To enable the Intune App SDK, follow these steps:
 
 9. If the app has app groups defined in its entitlements, add these groups to the **IntuneMAMSettings** dictionary under the `AppGroupIdentifiers` key as an array of strings.
 
-10. Download the [Azure Active Directory Authentication Library (ADAL) for Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) from GitHub, then follow the [instructions](https://github.com/AzureAD/azure-activedirectory-library-for-objc/blob/master/README.md) on how to download ADAL using Git submodules or CocoaPods.
-
-  > [!NOTE]
-	> It is recommended that the app links with the latest/working version of ADAL.
-
-11. Include the `ADALiOSBundle.bundle` resource bundle in the project by dragging the resource bundle under **Copy Bundle Resources** within **Build Phases**.
-
-12. Use the `-force_load PATH_TO_ADAL_LIBRARY` linker option when you're linking to the library.
-
-    Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` build configuration setting or **Other Linker Flags** in the UI. `PATH_TO_LIB` should be replaced with the location of the ADAL binaries.
 
 
+## Configure Azure Active Directory Authentication Library (ADAL)
 
-## Configure Azure Directory Authentication Library (ADAL)
-
-The Intune App SDK uses ADAL for its authentication and conditional launch scenarios. It also relies on ADAL to register the user identity with the MAM service for management without device enrollment scenarios.
+The Intune App SDK uses [Azure Active Directory Authentication Library](https://github.com/AzureAD/azure-activedirectory-library-for-objc) for its authentication and conditional launch scenarios. It also relies on ADAL to register the user identity with the MAM service for management without device enrollment scenarios.
 
 Typically, ADAL requires apps to register with Azure Active Directory (AAD) and get a unique ID (Client ID) and other identifiers, to guarantee the security of the tokens granted to the app. Unless otherwise specified, the Intune App SDK uses default registration values when it contacts Azure AD.  
 
@@ -185,9 +174,15 @@ It is recommended that your app links to the [latest version of ADAL](https://gi
 
 ### Link to ADAL binaries
 
-Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` build configuration setting or **Other Linker Flags** in the UI. `PATH_TO_LIB` should be replaced with the location of the ADAL binaries. Also, make sure to copy the ADAL bundle to your app.  
+Follow the steps below to link your app to the ADAL binaries:
 
-For more details, see the instructions from [ADAL on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
+1. Download the [Azure Active Directory Authentication Library (ADAL) for Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) from GitHub, then follow the [instructions](https://github.com/AzureAD/azure-activedirectory-library-for-objc/blob/master/README.md) on how to download ADAL using Git submodules or CocoaPods.
+
+2. Include the `ADALiOSBundle.bundle` resource bundle in the project by dragging the resource bundle under **Copy Bundle Resources** within **Build Phases**.
+
+3. Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` build configuration setting or **Other Linker Flags** in the UI. `PATH_TO_LIB` should be replaced with the location of the ADAL binaries.
+
+
 
 ### Share the ADAL token cache with other apps signed with the same provisioning profile?**
 
@@ -224,8 +219,6 @@ Additionally, you can override the Azure AD Authority URL with a tenant-specific
 > Setting the AAD Authority URL is required for [APP without device enrollment](#App-protection-policy-without-device-enrollment) to let the SDK reuse the ADAL refresh token fetched by the app.
 
 The SDK will continue to use this authority URL for policy refresh and any subsequent enrollment requests, unless the value is cleared or changed.  Therefore, it is important to clear the value when a managed user signs out of the app and to reset the value when a new managed user signs in.
-
-
 
 ### If your app does not use ADAL
 
@@ -564,27 +557,46 @@ By default, apps are considered single identity. The SDK sets the process identi
 
 	Note that this method is called from a background thread. The app should not return a value until all data for the user has been removed (with the exception of files if the app returns FALSE).
 
-## Debug the Intune App SDK in Xcode
+## Test app protection policy settings in Xcode
 
-Before you manually test your MAM-enabled app with Microsoft Intune, you can use a Settings.bundle file while in Xcode. This will let you set test policies without requiring a connection to Intune. To enable it:
+Before you manually test your Intune-enlightened app in production, you can use a Settings.bundle file while in Xcode. This will let you set app protection policies for testing without requiring a connection to Intune.
 
-1. Add a Settings.bundle file by right-clicking the top-level folder in your project. Choose **Add** > **New File** from the menu. Under **Resources**, choose the **Settings Bundle** template to add.
+### Enable policy testing
 
-2. On debug builds only, copy MAMDebugSettings.plist into Settings.bundle.
+Follow the steps below to enable policy testing in Xcode:
 
-3. In Root.plist (which is in Settings.bundle), add a preference with `Type` = `Child Pane` and `FileName` = `MAMDebugSettings`.
+1. Make sure to be in a debug build. Add a Settings.bundle file by right-clicking the top-level folder in your project. Choose **Add** > **New File** from the menu. Under **Resources**, choose the **Settings Bundle** template.
 
-4. In **Settings** > **Your-App-Name**, turn on **Enable Test Policies**.
+2.  Copy the following block to the Settings.bundle/**Root.plist** file for the debug build:
+	```xml
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>Title</key>
+			<string>MDM Debug Settings</string>
+			<key>Key</key>
+			<string>MAMDebugSettings</string>
+			<key>File</key>
+			<string>MAMDebugSettings</string>
+		</dict>
+	</array>
+	```
 
-5. Start the app (either inside or outside Xcode).
+3. In the **IntuneMAMSettings** dictionary in the app's Info.plist, add a boolean called "DebugSettingsEnabled." Set the value of DebugSettingsEnabled to "YES."
 
-6. In **Settings** > **Your-App-Name** > **Enable Test Policies**, turn on a policy--for example, **PIN**.
 
-7. Start the app (either inside or outside Xcode). Check that the PIN works as expected.
 
-> [!NOTE]
-> You can use **Settings** > **Your-App-Name** > **Enable Test Policies** to enable and switch settings.
+### App protection policy settings
 
+The table below describes the app protection policy settings that you can test using MAMDebugSettings.plist. To turn on a setting, add it in MAMDebugSettings.plist.
+
+| Policy setting name | Description | Possible values |
+| -- | -- | -- |
+| AccessRecheckOfflineTimeout | The length of time in minutes the app can be offline before Intune blocks the app from launching or resuming if authentication is enabled. | Any integer greater than 0 |
+|	AccessRecheckOnlineTimeout | The length of time in minutes the app can run before the user is prompted for PIN or authentication at launch or resume (if authentication or PIN for access is enabled). | Any integer greater than 0 |
+| AppSharingFromLevel | Specifies which apps this app can accept data from. | 0 = | 
 ## iOS best practices
 
 Here are recommended best practices for developing for iOS:
