@@ -221,7 +221,7 @@ If your app already uses ADAL, the following configurations are required:
 Additionally, you can override the Azure AD Authority URL with a tenant-specific URL at runtime. To do this, simply set the `aadAuthorityUriOverride` property on the `IntuneMAMPolicyManager` instance.
 
 > [!NOTE]
-> Setting the AAD Authority URL is required for APP without device enrollment to let the SDK reuse the ADAL refresh token fetched by the app.
+> Setting the AAD Authority URL is required for [APP without device enrollment](#App-protection-policy-without-device-enrollment) to let the SDK reuse the ADAL refresh token fetched by the app.
 
 The SDK will continue to use this authority URL for policy refresh and any subsequent enrollment requests, unless the value is cleared or changed.  Therefore, it is important to clear the value when a managed user signs out of the app and to reset the value when a new managed user signs in.
 
@@ -229,9 +229,9 @@ The SDK will continue to use this authority URL for policy refresh and any subse
 
 ### If your app does not use ADAL
 
-	If your app does not use ADAL, the Intune App SDK will provide default values for ADAL parameters and handle authentication against Azure AD. You do not have to specify any values for the ADAL settings listed above.
+If your app does not use ADAL, the Intune App SDK will provide default values for ADAL parameters and handle authentication against Azure AD. You do not have to specify any values for the ADAL settings listed above.
 
-## App protection policy without device enrollment (new!)
+## App protection policy without device enrollment
 
 ### Overview
 Intune app protection policy without device enrollment, also known as **APP-WE** or MAM-WE, allows apps to be managed by Intune without the need for the device to be enrolled Intune mobile device management (MDM). To support this new functionality, the app must participate to register user accounts for management. To use the new APIs, follow these steps:
