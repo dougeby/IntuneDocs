@@ -36,9 +36,9 @@ Follow the steps below to find the **Intune Device compliance dashboard** in the
 
 1.  Go to the [Azure Portal](https://portal.azure.com), and sign in with your Intune credentials.
 
-2.  Choose **More services** from left menu, then type **Intune** in the text box filter.
+2.  Choose **More services** from the left menu, then type **Intune** in the text box filter.
 
-3.  Choose **Intune** &gt; **Device compliance** &gt; **Overview**, then you can see the **Device compliance dashboard**.
+3.  Choose **Intune** &gt; **Device compliance** &gt; **Overview**, then the **Device compliance dashboard** opens.
 
 > [!IMPORTANT] Devices must be enrolled into Intune to receive device compliance policies.
 
@@ -90,7 +90,7 @@ You can also click the different compliance status on the Device compliance char
 
 ![](http://i.imgur.com/KEOvPPC.png)
 
-##### Filter
+#### Filter
 
 If you click on **Filter button**, the filter fly-out opens with the following options:
 
