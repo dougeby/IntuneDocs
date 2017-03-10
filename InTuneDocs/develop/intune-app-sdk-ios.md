@@ -182,57 +182,57 @@ If the app itself uses ADAL for its authentication scenario, the app must use it
 
 ### ADAL FAQs
 
-**What ADAL binaries should I use?**
+1. **What ADAL binaries should I use?**
 
-The Intune App SDK currently uses the broker branch of [ADAL on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc) to support apps that require conditional access. (These apps therefore depend on the Microsoft Authenticator app.) But the SDK is still compatible with the master branch of ADAL. Use the branch that is appropriate for your app.
+	It is recommended that your app links to the [latest version of ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) on its master branch. The Intune App SDK currently uses the broker branch of ADAL to support apps that require conditional access. (These apps therefore depend on the Microsoft Authenticator app.) But the SDK is still compatible with the master branch of ADAL. Use the branch that is appropriate for your app.
 
-**How do I link to ADAL binaries?**
+2. **How do I link to ADAL binaries?**
 
-Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` build configuration setting or **Other Linker Flags** in the UI. `PATH_TO_LIB` should be replaced with the location of the ADAL binaries. Also, make sure to copy the ADAL bundle to your app.  
+	Add `-force_load {PATH_TO_LIB}/libADALiOS.a` to the project’s `OTHER_LDFLAGS` build configuration setting or **Other Linker Flags** in the UI. `PATH_TO_LIB` should be replaced with the location of the ADAL binaries. Also, make sure to copy the ADAL bundle to your app.  
 
-For more details, see the instructions from [ADAL on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
+	For more details, see the instructions from [ADAL on GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
-**How do I share the ADAL token cache with other apps signed with the same provisioning profile?**
+3. **How do I share the ADAL token cache with other apps signed with the same provisioning profile?**
 
-1. If your app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
+	1. If your app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 
-2. Enable ADAL single sign-on (SSO) by adding `com.microsoft.adalcache` and `com.microsoft.workplacejoin` access groups in the keychain entitlements.
+	2. Enable ADAL single sign-on (SSO) by adding `com.microsoft.adalcache` and `com.microsoft.workplacejoin` access groups in the keychain entitlements.
 
-3. If you are explicitly setting the ADAL shared cache keychain group, make sure it is set to `<app_id_prefix>.com.microsoft.adalcache`. ADAL will set this for you unless you override it. If you want to specify a custom keychain group to replace `com.microsoft.adalcache`, specify that in the Info.plist file under IntuneMAMSettings, by using the key `ADALCacheKeychainGroupOverride`.
+	3. If you are explicitly setting the ADAL shared cache keychain group, make sure it is set to `<app_id_prefix>.com.microsoft.adalcache`. ADAL will set this for you unless you override it. If you want to specify a custom keychain group to replace `com.microsoft.adalcache`, specify that in the Info.plist file under IntuneMAMSettings, by using the key `ADALCacheKeychainGroupOverride`.
 
-**How do I force the Intune App SDK to use ADAL settings that my app already uses?**
+4. **How do I force the Intune App SDK to use ADAL settings that my app already uses?**
 
-If your app already uses ADAL, see [Configure settings for the Intune App SDK](#configure-settings-for-the-intune-app-sdk) for information on populating the following settings:  
+	If your app already uses ADAL, see [Configure settings for the Intune App SDK](#configure-settings-for-the-intune-app-sdk) for information on populating the following settings:  
 
-* ADALClientId
-* ADALAuthority
-* ADALRedirectUri
-* ADALRedirectScheme
-* ADALCacheKeychainGroupOverride
+	* ADALClientId
+	* ADALAuthority
+	* ADALRedirectUri
+	* ADALRedirectScheme
+	* ADALCacheKeychainGroupOverride
 
 
-**How do I override the Azure AD authority URL with a tenant-specific URL supplied at runtime?**
+5. **How do I override the Azure AD authority URL with a tenant-specific URL supplied at runtime?**
 
-Set the `aadAuthorityUriOverride` property on the IntuneMAMPolicyManager instance.
+	Set the `aadAuthorityUriOverride` property on the IntuneMAMPolicyManager instance.
 
-> [!NOTE]
-> This is required APP without device enrollment to let the SDK reuse the ADAL refresh token fetched by the app.
+	> [!NOTE]
+	> This is for required APP without device enrollment to let the SDK reuse the ADAL refresh token fetched by the app.
 
-The SDK will continue to use this authority URL for policy refresh and any subsequent enrollment requests, unless the value is cleared or changed.  So it's important to clear the value when a corporate user signs out of the app and reset it when a new corporate user signs in.
+	The SDK will continue to use this authority URL for policy refresh and any subsequent enrollment requests, unless the value is cleared or changed.  So it's important to clear the value when a corporate user signs out of the app and reset it when a new corporate user signs in.
 
-**What should I do if my app itself uses ADAL for authentication?**
+6. **What should I do if my app itself uses ADAL for authentication?**
 
-The following actions are required if the app already uses ADAL for authentication:
+	The following actions are required if the app already uses ADAL for authentication:
 
-1. In the project’s Info.plist file, under the IntuneMAMSettings dictionary with the key name `ADALClientId`, specify the client ID to be used for ADAL calls.
+	1. In the project’s Info.plist file, under the IntuneMAMSettings dictionary with the key name `ADALClientId`, specify the client ID to be used for ADAL calls.
 
-2. Also under the IntuneMAMSettings dictionary with the key name `ADALAuthority`, specify the Azure AD authority.
+	2. Also under the IntuneMAMSettings dictionary with the key name `ADALAuthority`, specify the Azure AD authority.
 
-3. Also under the IntuneMAMSettings dictionary with the key name `ADALRedirectUri`, specify the redirect URI to be used for ADAL calls. You might also need to specify `ADALRedirectScheme`, depending on the format of your app’s redirect URI.
+	3. Also under the IntuneMAMSettings dictionary with the key name `ADALRedirectUri`, specify the redirect URI to be used for ADAL calls. You might also need to specify `ADALRedirectScheme`, depending on the format of your app’s redirect URI.
 
-**What if my app does not already use ADAL for authentication?**
+7. **What if my app does not already use ADAL for authentication?**
 
-If your app does not use ADAL, the Intune App SDK will provide default values for ADAL parameters and handle authentication against Azure AD.
+	If your app does not use ADAL, the Intune App SDK will provide default values for ADAL parameters and handle authentication against Azure AD.
 
 ## App protection policy without device enrollment
 
