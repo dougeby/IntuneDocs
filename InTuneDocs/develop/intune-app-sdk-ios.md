@@ -175,9 +175,9 @@ To enable the Intune App SDK, follow these steps:
 
 The Intune App SDK uses ADAL for its authentication and conditional launch scenarios. It also relies on ADAL to register the user identity with the MAM service for management without device enrollment scenarios.
 
-Typically, ADAL requires apps to register with Azure Active Directory (AAD) and get a unique ID (Client ID) and other identifiers, to guarantee the security of the tokens granted to the app. The Intune App SDK uses default registration values when it contacts Azure AD.  
+Typically, ADAL requires apps to register with Azure Active Directory (AAD) and get a unique ID (Client ID) and other identifiers, to guarantee the security of the tokens granted to the app. Unless otherwise specified, the Intune App SDK uses default registration values when it contacts Azure AD.  
 
-If the app itself uses ADAL for its authentication scenario, the app must use its existing registration values and override the Intune App SDK default values. This ensures that users are not prompted for authentication twice (once by the Intune App SDK and once by the app).
+If your app already uses ADAL to authenticate users, the app must use its existing registration values and override the Intune App SDK default values. This ensures that users are not prompted for authentication twice (once by the Intune App SDK and once by the app).
 
 ### Recommendations
 
@@ -231,7 +231,7 @@ The SDK will continue to use this authority URL for policy refresh and any subse
 
 	If your app does not use ADAL, the Intune App SDK will provide default values for ADAL parameters and handle authentication against Azure AD. You do not have to specify any values for the ADAL settings listed above.
 
-## App protection policy without device enrollment
+## App protection policy without device enrollment (new!)
 
 ### Overview
 Intune app protection policy without device enrollment, also known as **APP-WE** or MAM-WE, allows apps to be managed by Intune without the need for the device to be enrolled Intune mobile device management (MDM). To support this new functionality, the app must participate to register user accounts for management. To use the new APIs, follow these steps:
