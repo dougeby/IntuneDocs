@@ -74,7 +74,8 @@ It’s a donut chart showing the aggregate compliance state for all Intune enrol
 
     -   **Error**: The device failed to communicate with Intune and Azure AD, and received an error message with the reason.
 
-> [!IMPORTANT] Devices that are enrolled into Intune, but not targeted by any device compliance policies, are included in this report under the **Compliant** bucket.
+> [!IMPORTANT] Devices that are enrolled into Intune, but not targeted by any device compliance 
+> policies will be included in this report under the **Compliant** bucket.
 
 #### Drill-down option
 
