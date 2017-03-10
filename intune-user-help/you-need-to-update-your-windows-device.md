@@ -27,7 +27,7 @@ ms.custom: intune-enduser
 
 # You need to update your Windows device
 
-[!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
+[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
 For mobile devices running Windows, update your device by navigating to **Settings** > **phone update** > **check for updates**.
 

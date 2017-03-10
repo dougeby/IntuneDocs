@@ -29,7 +29,7 @@ ms.custom: intune-enduser
 
 Accidents happen, and sometimes devices can go missing. If your device has been lost or stolen, the first worry you might have is that the information on it could be accessed by anyone, wherever your device is.
 
-[!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
+[!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
 To be safe, you can lock it by using the Remote Lock option on the [Company Portal website](http://portal.manage.microsoft.com). Remote Lock works for:
 

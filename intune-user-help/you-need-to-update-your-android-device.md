@@ -27,7 +27,7 @@ ms.custom: intune-enduser
 
 # You need to update your Android device
 
-[!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
+[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
 Update your Android device by tapping **Settings** > **About phone**. In the __Settings__ section, tap __Check for Updates__ and install the available update.
 

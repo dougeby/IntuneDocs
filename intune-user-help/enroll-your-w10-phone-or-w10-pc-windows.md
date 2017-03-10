@@ -36,15 +36,15 @@ Want to know more? Find out what happens when you [enroll your device in Intune]
 ## Windows 10 desktop devices
 1.	Go to __Start__.
 
- ![Windows Start Menu](../media/windows-start-menu.png).
+ ![Windows Start Menu](media/windows-start-menu.png).
 
 2. Type the phrase "about your PC" into the __search bar__, then select __About your PC__.
 
- ![search settings for about your pc](../media/searching_for_about_your_pc.png)
+ ![search settings for about your pc](media/searching_for_about_your_pc.png)
 
 2.	In your __Settings__, you will see a list of information about the version of Windows 10 that is installed on your PC. Within this list, locate the __Version__.
 
- ![Windows 10 Desktop About Your PC](../media/settings_about_pc.png)
+ ![Windows 10 Desktop About Your PC](media/settings_about_pc.png)
 
 3.	If your version is __1607__, continue with [these steps](enroll-your-w10-device-access-work-or-school.md). If your version is __1511 or less__, continue with [these steps](enroll-your-w10-device-your-account.md).
 

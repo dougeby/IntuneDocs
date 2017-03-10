@@ -27,7 +27,7 @@ ms.custom: intune-enduser
 
 # Your iOS device doesn't have the required minimum operating system version
 
-[!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
+[!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
 
 Update your iOS device by tapping **Settings** > **General** > **Software Update**.
 

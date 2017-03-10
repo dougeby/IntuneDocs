@@ -36,7 +36,7 @@ Getting access to your organization’s apps, data, and resources makes it possi
 1. On your __Dock__, find __Safari__ and open a new window, then open the [Company Portal website](http://portal.manage.microsoft.com).
 2. Log into the Company Portal website with your work or school account.
 
-  [!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
+  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
 3. When you log in, you will see any available __Home__, __Apps__, and __Categories__ tabs. This page will show whatever apps are available for you to install. If you do not have any devices enrolled yet, you'll see a notice that says **We can't show you any apps.** You can proceed by selecting __My Devices__.
 
