@@ -182,7 +182,7 @@
 
     },
     {
-      "source_path": "InTuneDocs/enduser/your-device-does-not-meet-the-minimum-security-patch-android.md",
+      "source_path": "intune-user-help/your-device-does-not-meet-the-minimum-security-patch-android.md",
       "redirect_url": "https://docs.microsoft.com/intune-user-help/you-need-to-update-your-device-OS-security-patch-android",
       "redirect_document_id": true
 
@@ -193,7 +193,7 @@
         "redirect_document_id": true
     },
     {
-        "source_path": "intunedocs/enduser/device-doesnt-comply-with-maximum-operating-system-android.md",
+        "source_path": "intune-user-help/device-doesnt-comply-with-maximum-operating-system-android.md",
         "redirect_url": "https://docs.microsoft.com/intune-user-help/your-android-version-isnt-yet-supported",
         "redirect_document_id": true
     },
