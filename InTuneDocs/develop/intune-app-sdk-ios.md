@@ -133,20 +133,22 @@ To enable the Intune App SDK, follow these steps:
 
 7. After you enable keychain sharing, follow these steps to create a separate access group in which the Intune App SDK will store its data. You can create a keychain access group by using the UI or by using the entitlements file.
 
-    If you're using the UI to create the keychain access group:
+		If you are using the UI to create the keychain access group, make sure to follow the steps below:
 
     1. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 
-    2. Add the shared keychain group `com.microsoft.intune.mam`. The Intune App SDK uses this access group to store data.
+    2. Add the shared keychain group `com.microsoft.intune.mam` to your existing access groups. The Intune App SDK uses this access group to store data.
 
     3. Add `com.microsoft.adalcache` to your existing access groups.
 
+		4. Add `com.microsoft.workplacejoin` to your existing access groups.
+
 	![Intune App SDK iOS: keychain sharing](../media/intune-app-sdk-ios-keychain-sharing.png)
 
-    If you're using the entitlement file to create the keychain access group, prepend the keychain access group with `$(AppIdentifierPrefix)` in the entitlement file. For example:
+  	5. If you are using the entitlement file to create the keychain access group, prepend the keychain access group with `$(AppIdentifierPrefix)` in the entitlement file. For example:
 
-		  * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-		* `$(AppIdentifierPrefix)com.microsoft.adalcache`
+			* `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+			* `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
 	> [!NOTE]
 	> An entitlements file is an XML file that's unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app.
@@ -157,9 +159,9 @@ To enable the Intune App SDK, follow these steps:
 
 9. If the app has app groups defined in its entitlements, add these groups to the IntuneMAMSettings dictionary under the `AppGroupIdentifiers` key as an array of strings.
 
-10. Link your mobile application to the Azure Directory Authentication Library (ADAL) for iOS. The ADAL library for Objective-C is available on [GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
+10. Download the [Azure Active Directory Authentication Library (ADAL) for Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) from GitHub, then follow the [instructions](https://github.com/AzureAD/azure-activedirectory-library-for-objc/blob/master/README.md) on how to download ADAL using Git submodules or CocoaPods.
 
-    > [!NOTE]
+  > [!NOTE]
 	> It is recommended that the app links with the latest/working version of ADAL.
 
 11. Include the `ADALiOSBundle.bundle` resource bundle in the project by dragging the resource bundle under **Copy Bundle Resources** within **Build Phases**.
