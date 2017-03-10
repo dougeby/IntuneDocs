@@ -283,11 +283,6 @@
         "redirect_document_id": true
     },
     {
-        "source_path": "intune-user-help/your-device-does-not-meet-the-minimum-security-patch-android.md",
-        "redirect_url": "https://docs.microsoft.com/intune-user-help/you-need-to-update-your-device-os-security-patch-android",
-        "redirect_document_id": true
-    },
-    {
         "source_path": "intune-user-help/your-device-is-missing-a-required-certificate-android.md",
         "redirect_url": "https://docs.microsoft.com/intune-user-help/your-device-is-missing-a-required-certificate-landing-android",
         "redirect_document_id": true
