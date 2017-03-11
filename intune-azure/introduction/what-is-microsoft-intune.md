@@ -38,7 +38,7 @@ All Intune functionality will eventually move to Azure, but you can perform cert
 
 > [!IMPORTANT]
 > **Don’t see the new portal yet?**<br>
-> We’ve already begun to roll out the preview to select tenants. Existing tenants will be migrated to the new experience starting in early calendar year 2017. You will receive a notification in the Office Message Center prior to your tenant’s migration. If you have any questions about the timeline for your tenant’s migration, contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+> We’ve already begun to roll out the preview to select tenants. Existing tenants will be migrated to the new experience starting in early calendar year 2017. You will receive a notification in the Office Message Center prior to your tenant’s migration.
 
 
 You'll find new product documentation in this library, and it will be continually updated during the preview. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you.

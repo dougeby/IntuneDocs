@@ -97,10 +97,4 @@ Attributes are device properties that may be used in defining groups. This table
 ## What happens to policies and apps you've already deployed?
 
 Policies and apps continue to be deployed to groups, just like before. However, you'll now manage these groups from the Azure portal, instead of the classic Intune console.
-
-
-## How to get more information
-
-Contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).	
-	 
-
+ 
