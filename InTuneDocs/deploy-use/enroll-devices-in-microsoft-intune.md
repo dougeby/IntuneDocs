@@ -6,7 +6,7 @@ description: Mobile device management (MDM) uses enrollment to bring devices int
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,7 +41,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 - **Wipe** - Indicates whether the device needs to be wiped before users can enroll the device. The term "wipe" means a factory reset of the device, which removes all data. For more information, see [Retire devices](retire-devices-from-microsoft-intune-management.md).
 - **Affinity** - Associates devices with users. Required for mobile application management (MAM) and conditional access to company data. For more information, see [User affinity](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Lock** - Indicates if users are prevented from unenrolling their devices using native operating system menus. Users can unenroll their devices on all platforms by using their Company Portal app. 
+- **Lock** - Indicates if users are prevented from unenrolling their devices using native operating system menus. Users can unenroll their devices on all platforms by using their Company Portal app.
 
 **iOS enrollment methods**
 
@@ -57,7 +57,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Yes|	Yes |	No | [More information](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | No|	Yes |	No | [More information](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|	No |No |No	|[More information](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android enrollment methods**
@@ -78,7 +78,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Yes|	Yes |	No | [More information](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | No|	Yes |	No | [More information](prerequisites-for-enrollment.md)|
 
 
 For a series of questions that help you find the right method, see [Choose how to enroll devices](/intune/get-started/choose-how-to-enroll-devices1).
