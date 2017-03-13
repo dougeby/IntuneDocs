@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Send logs to the Company Portal developers for iOS devices
 
-Sometimes the Company Portal app may close unexpectedly. This is an issue that the app developers want to hear about, as it can help us make it work better for you and prevent this kind of thing from happening in the future. This information is kept on your device in a special document called a _diagnostic log__.
+Sometimes the Company Portal app may close unexpectedly. This is an issue that the app developers want to hear about, as it can help us make it work better for you and prevent this kind of thing from happening in the future. This information is kept on your device in a special document called a _diagnostic log_.
 
 If this is happening to you, the Company Portal team needs some information to try and diagnose the root cause. Here’s what we need you to do:
 

@@ -28,7 +28,7 @@ ms.custom: intune-enduser
 
 # Send logs to your IT admin using email
 
-If you get an error while you’re using the Company Portal app on your Android device, you can help your IT admin troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log__.
+If you get an error while you’re using the Company Portal app on your Android device, you can help your IT admin troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
 
 > [!Note]
 > To make it easier for your IT admin to figure out the issue, you should turn on _verbose logging_. Verbose logging includes all relevant details in the report. Find out how to [turn on verbose logging here](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
