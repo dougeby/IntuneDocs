@@ -31,36 +31,23 @@ Before you can access your work, your IT admin needs you to install the Skycure 
 
 If you have trouble with the installation, try the troublshooting steps at the end of this topic.
 
-
 **What you need to do:**
 
-1.	Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Skycure from Play Store**.
+1.	Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Skycure from Play Store**. You can also find this inside of the Company Portal app under __Compliance Details__.
 
-	![you are required to install Skycure](./media/lookout-required-app-install-android.png)
+	![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)
 
 	You are taken to the Skycure installation page in the Play Store.
 
 2.	Install Skycure, and then tap **ACCEPT** to let Skycure access your device.
 
-	![tap accept to let Skycure access your device](./media/lookout-accept-store-permissions-android.png)
-
-3. Open Skycure, and then tap **ACTIVATE**.
-
-	![open Skycure and tap Activate](./media/lookout-activate-button-android.png)
+3. Open Skycure, and then tap **VERIFY**.
 
 4. Tap **Sign in with Azure Active Directory**, and then enter the account that you use to access work or school email and files.
 
-	![sign in with your work or school account](./media/lookout-sign-in-azure-android.png)
-
 5. Select the account that you use to access work or school email and files, and then tap **ADD ACCOUNT**.
 
-	![select your work or school account and tap Add Account](./media/lookout-pick-account-android.png)
-
 6. Tap **Accept** to give Skycure permission to sign you in and read your profile.
-
-	![tap Accept to give Skycure permission to read your profile](./media/lookout-needs-permission-to-view-profile-android.png)
-
-	A screen shows that Skycure is connecting to the Lookout Security Cloud.
 
 7. Review the items about how Lookout protects your device, and then tap **OK**.
 
@@ -82,6 +69,6 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
 **If the installation doesn't work**
 
-Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Skycure manually from the Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise)
+Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Skycure [manually from the Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
