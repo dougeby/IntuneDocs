@@ -7,7 +7,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,11 +30,11 @@ ms.custom: intune-classic
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-The section of the guide should be used in parallel with other topics in Section 2. This design will be based on the information you are collecting and decisions you will be making completing the previous sections of this guide. In this design section, we’ll focus on Intune standalone, which is a Microsoft cloud-based service which resides in the cloud.
+The section of the guide should be used in parallel with other topics in Section 2. This design will be based on the information you are collecting and decisions you will be making completing the previous sections of this guide. In this design section, we’ll focus on Intune standalone, which is a Microsoft cloud-based service.
 
-Although there’s minimal on-premises infrastructure requirements, it’s still recommended to work on a design plan to make sure you’ll have the right mobile device management solution that meets your goals, objectives, and requirements.
+Although there’s minimal on-premises infrastructure requirements, work on a design plan to make sure you’ll have the right mobile device management solution that meets your goals, objectives, and requirements.
 
-Additionally, it’s common to have design changes during the implementation and testing phases, make sure to document all these changes, and the rationale behind it as they occur. We’ll be discussing the following areas:
+Additionally, it’s common to have design changes during the implementation and testing phases, make sure to document these changes, and the rationale behind it as they occur. We’ll be discussing the following areas:
 
 -   The current environment
 
