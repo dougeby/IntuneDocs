@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3dsearchScope: - User help
 ROBOTS:  
 #audience:
 #ms.devlang:
-#ms.reviewer: jeffgilb
+#ms.reviewer: heenamac
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
