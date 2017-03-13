@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,6 +32,7 @@ ms.suite: ems
 
 Sometimes issues can occur with your Android device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your IT admin through their contact information on the [Company Portal website](http://portal.manage.microsoft.com).
 
+- [Check compliance on your Android device](check-compliance-on-your-device-android.md)
 - [Use Verbose Logging to help your IT administrator fix device issues](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Send logs to your IT admin using email](send-logs-to-your-it-admin-by-email-android.md)
 - [Send logs to your IT admin using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
