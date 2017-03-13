@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,8 +38,8 @@ For example, assume that you want to provision all iOS devices with the settings
 
 You can create VPN profiles using the following connection types:
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |Connection type|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |Pulse Secure|Yes|Yes|Yes|Yes|Yes|Yes|
 |Cisco (IPSec)|No|Yes|No|No|No|No|
