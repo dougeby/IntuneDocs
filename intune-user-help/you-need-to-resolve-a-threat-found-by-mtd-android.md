@@ -27,27 +27,16 @@ ms.custom: intune-enduser
 
 # You need to resolve a threat found by a Mobile Threat Defense app
 
-Mobile Threat Defense has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see might look something like this one:
+Mobile Threat Defense has found a potential threat on your Android device, and you must fix the issue to regain access to your company or school email, apps, and files. Depending on how your IT admin has set up Mobile Threat Defense, you will use one of the following apps to resolve these kinds of issues.
 
-![Out of compliance message from Lookout from Work](./media/ios-lfw-noncompliant-in-ssp.png)
+* [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
+* [Skycure](you-need-to-resolve-a-threat-found-by-skycure-android.md)
 
 To resolve the issue, open the Mobile Threat Defense app, and follow the instructions shown in the app.
 
-## What you might see if your enrolled device is blocked from accessing email or files
-
-If there is a virus or other security threat on your enrolled device, and you try to access your company email or files, you might see a message like this one:
-
-![Mobile Threat Defense error message with link to Company Portal website](./media/lookout-go-to-device-management-portal-android.png)
-
-Tap the **device management portal** link to go to the [Company Portal website](http://portal.manage.microsoft.com), where you will see instructions on how to fix the issue.
-
 ## Example of an app that Mobile Threat Defense sees as a threat
 
-If you have installed an app that Mobile Threat Defense thinks is a threat, you see a screen that is similar to this one:
-
-![example of Mobile Threat Defense virus alert message](./media/ios-lfw-threat-example.png)
-
-If you see something like this, tap the app name shown at the top of your screen, and follow the instructions to remove the threat.
+If you have installed an app that Mobile Threat Defense thinks is a threat, you will see a screen that tells you what the threatening app is. If you see something like this, tap the app name shown at the top of your screen, and follow the instructions to remove the threat.
 
 After you uninstall the app, you regain access to your email and other company or school data right away. If you ignore the request to uninstall the app, you will lose access to your company email and data until you uninstall the app.
 
