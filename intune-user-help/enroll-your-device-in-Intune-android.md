@@ -63,6 +63,9 @@ If you get an error while you try to enroll your device in Intune, you can [send
 
 	![Company access setup screen](./media/and-enroll-4a-comp-access-setup.png)
 
+> [!NOTE]
+> The yellow triangles don't mean you've already got an error. Those icons indicate that there are still steps to be completed in the enrollment process.
+
 7.  On the **Why enroll your device?** screen, read about what you can do when you enroll your device, and then tap **CONTINUE**.
 
 	![Why enroll your device screen](./media/and-enroll-4b-why-enroll.png)
