@@ -50,6 +50,10 @@ The Company Portal app for Android will be updating its user interface for a mor
 
 More details about these changes can be found on the [app UI updates page](whats-new-in-intune-app-ui.md].
 
+### Signing Script for Windows 10 Company Portal <!--941642-->
+
+For customers who need to download and sideload the Windows 10 Company Portal app, you can now use a script to simplify and streamline the app-signing process for your organization.   To download the script and the instructions for using it, see  [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) on TechNet Gallery. For more details about this announcement, see [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) on the Intune Support Team Blog. 
+
 ## Notices
 
 ### Improved support for Android users based in China <!--720444-->
