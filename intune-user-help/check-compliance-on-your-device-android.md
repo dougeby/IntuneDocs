@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,6 @@ ms.suite: ems
 ms.custom: intune-enduser
 
 ---
-
 
 # Check compliance on your Android device
 

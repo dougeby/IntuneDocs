@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/03/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -62,6 +62,9 @@ If you get an error while you try to enroll your device in Intune, you can [send
 6.  On the **Company Access Setup** screen, tap **BEGIN**.
 
 	![Company access setup screen](./media/and-enroll-4a-comp-access-setup.png)
+
+> [!NOTE]
+> The yellow triangles don't mean you've already got an error. Those icons indicate that there are still steps to be completed in the enrollment process.
 
 7.  On the **Why enroll your device?** screen, read about what you can do when you enroll your device, and then tap **CONTINUE**.
 
@@ -123,4 +126,4 @@ Before you try to install company apps, go to **Settings** &gt; **Security**, an
 > [!Note]
 > If your organization is using telecom expense management software, you will have an additional few steps to complete before your device is fully enrolled. Find out more [here](enroll-your-device-with-telecom-expense-management-android.md).
 
-Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the Microsoft Android team at wintunedroidfbk@microsoft.com.
+Still need help? Contact your IT admin (check the [Company Portal website](http://portal.manage.microsoft.com) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.

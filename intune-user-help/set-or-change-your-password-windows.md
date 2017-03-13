@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 11/29/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-enduser
 
 # Make your device safer with the right password
 
-Accessing corporate resources, such as email and documents, is something that people need to do every day from their Windows devices. Your organization wants to make sure that your device is doing this safely. One way to make sure that your device is securely accessing these resources is requiring devices to use a password.
+Accessing corporate resources, such as email and documents, is something that people need to do every day from their Windows devices. Your organization wants to make sure that your device is doing this safely. One way to make sure that your device is securely accessing these resources is requiring devices to use a password. These passwords are used, for example, to access your device from the lock screen.
 
 If your Windows device doesn't comply with your IT admin's password policy, you will see a message that briefly describes the issue and explains what you need to do to make your password meet the requirements.
 
