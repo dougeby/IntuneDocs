@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-enduser
 
 # Set your PIN or password
 
-Your IT administrator might require you to set a PIN or password on your Android device when you're using Intune to access your work or school data. You might also see messages that require you to make your PIN or password longer or more complex so that it's more secure.  
+Your IT administrator might require you to set a PIN or password on your Android device when you're using Intune to access your work or school data. You might also see messages that require you to make your PIN or password longer or more complex so that it's more secure. These passcodes are used, for example, to access your device from the lock screen.
 
 You can use the following steps to set a PIN or password.
 

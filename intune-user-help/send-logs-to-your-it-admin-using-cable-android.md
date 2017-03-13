@@ -28,7 +28,7 @@ ms.custom: intune-enduser
 
 # Send logs to your IT admin using a USB cable
 
-If you get an error while you’re using the Company Portal app on your Android device, you can help your IT admin troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log__.
+If you get an error while you’re using the Company Portal app on your Android device, you can help your IT admin troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
 
 > [!Note]
 > Before you start, make sure that you have your IT admin's email address handy. You can find this on the [Company Portal website](http://portal.manage.microsoft.com) or in your Company Portal app.

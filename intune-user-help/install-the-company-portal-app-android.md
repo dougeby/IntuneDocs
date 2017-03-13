@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ The Company Portal is an app that gives you access to your company or school app
 
 1.  Tap **Home** > **Play Store**.
 
-2.  In the **Search** box, type **company portal**.
+2.  In the **Search** box, type **intune company portal**.
 
 3.  Tap **Intune Company Portal**.
 
