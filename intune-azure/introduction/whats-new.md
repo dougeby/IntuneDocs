@@ -30,7 +30,8 @@ ms.custom: intune-azure
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
 
-
+> [!Note]
+> We’re rolling out the changes listed on this page for the Azure portal preview. However, the changes may not be available right away due to how the Intune service is updated.  Several components of the service must be updated sequentially over a period of days, and this process can cause delays in the availability of new portal features. Look for these changes as they roll out later this month. 
 
 ## March 2017
 
