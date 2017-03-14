@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,14 +26,14 @@ ms.custom: intune-azure
 
 ---
 
-# Get an Apple MDM push certificate 
+# Get an Apple MDM push certificate
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune enables mobile device management (MDM) of iPads, iPhones, and Mac OS X devices and gives users access to company email and apps. An Apple Push Notification service (APNs) certificate is required for Intune to manage iOS and Mac devices. After you add the certificate to Intune, your users can install the Company Portal app to enroll their devices, or you can set up corporate-owned iOS device management.
+Intune enables mobile device management (MDM) of iPads, iPhones, and Mac computers and gives users access to company email and apps. An MDM Push certificate is required for Intune to manage iOS and Mac devices. After you add the certificate to Intune, your users can install the Company Portal app to enroll their devices. You can also set up corporate-owned iOS device management with Apple's Device Enrollment Program or enroll devices using Apple Configurator, for example. For more information about enrollment options, see [Choose how to enroll iOS devices](https://docs.microsoft.com/intune-azure/enroll-devices/choose-ios-enrollment-method).
 
 ## Steps to get your certificate
-In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Apple MDM Push Certificate**, and then follow the numbered steps in the Azure portal, which are shown below.
+In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Apple Enrollment** **Apple MDM Push Certificate**, and then follow the numbered steps in the Azure portal, which are shown below.
 
 **Step 1. Download the Intune certificate signing request required to create an Apple MDM push certificate.**<br>
 Select **Download your CSR** to download and save the .csr file locally. The .csr file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
