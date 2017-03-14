@@ -3,7 +3,7 @@
 
 title: Manage devices with Intune
 titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to view the devices you manage with Intune, and perform various operations on them."
+description: "Intune Azure preview: Learn how to see the devices you manage with Intune, and perform various operations on them."
 keywords:
 author: robstackmsft
 ms.author: robstack
