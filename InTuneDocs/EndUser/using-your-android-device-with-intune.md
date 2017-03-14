@@ -46,7 +46,6 @@ There are a number of things you can do with Intune to make your work life easie
 - [Set your PIN or password](set-your-pin-or-password-android.md)
 - [Install your company's Virtual Private Network (VPN)](install-your-companys-virtual-private-network-VPN-android.md)
 - [Set the amount of time before your device is locked](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Reset (erase) your lost or stolen device](reset-erase-your-device-cpwebsite.md)
 - [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-android.md)
 - [Unenroll your device from Intune](unenroll-your-device-from-intune-android.md)

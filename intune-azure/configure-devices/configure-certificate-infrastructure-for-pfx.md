@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -87,12 +87,12 @@ In this task, you will publish the certificate template.
     -   On the **Extensions** tab, ensure the **Description of Application Policies** includes **Client Authentication**.
 
         > [!IMPORTANT]
-        > For iOS and Mac OS X certificate templates, on the **Extensions** tab, edit **Key Usage** and ensure that **Signature is proof of origin** is not selected.
+        > For iOS and macOS certificate templates, on the **Extensions** tab, edit **Key Usage** and ensure that **Signature is proof of origin** is not selected.
 
 2.  Review the **Validity period** on the **General** tab of the template. By default, Intune uses the value configured in the template. However, you have the option to configure the CA to allow the requester to specify a different value, which you can then set from within the Intune Administrator console. If you want to always use the value in the template, skip the remainder of this step.
 
     > [!IMPORTANT]
-    > The iOS and Mac OS X platforms always uses the value set in the template, regardless of other configurations you make.
+    > iOS and macOS always use the value set in the template, regardless of other configurations you make.
 
     To configure the CA to allow the requester to specify the validity period, run the following commands on the CA:
 

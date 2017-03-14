@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,3 +53,6 @@ ms.custom: intune-azure
 8. When you are done, on the **Add App** blade, choose **Save**.
 
 The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
+
+## Sign the Windows 10 Company Portal app
+For customers who need to download and sideload the Windows 10 Company Portal app, you can now use a script to simplify and streamline the app-signing process for your organization. To download the script and the instructions for using it, see [Microsoft Intune Signing Script](https://aka.ms/win10cpscript) for Windows 10 Company Portal on TechNet Gallery.

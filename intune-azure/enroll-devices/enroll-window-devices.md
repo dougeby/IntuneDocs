@@ -6,7 +6,7 @@ description: "Intune Azure preview: Enable Intune mobile device management (MDM)
 keywords:
 author: nathbarn
 manager: nathbarn
-ms.date: 02/15/17
+ms.date: 03/15/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Enroll Windows devices 
+# Enroll Windows devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -36,7 +36,7 @@ Use one of the following methods to set up enrollment for Windows devices:
  -  You must have Azure Active Directory Premium to use this method. Otherwise, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
  -  If you choose not to enable automatic enrollment, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
 
-- [**Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname)
+- [**Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME**](#simplify-enrollment-by-configuring-cname)
  - You must use this method to enroll Windows 8.1 and Windows Phone 8.1 devices.
 
 
@@ -51,7 +51,7 @@ If some of the following prerequisites aren't in the Intune Azure preview yet, y
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## Set up Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME
+## Simplify enrollment by configuring CNAME
 
 You can let users install and enroll their devices by using the Intune Company Portal. If you create DNS CNAME resource records,  users connect and enroll in Intune without entering a server name.
 

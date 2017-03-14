@@ -63,7 +63,7 @@ For more information about how to upload and publish Android apps, see the [Goog
 
 ## Deploy an Android for Work app
 
-Typically, Intune will synchronize twice a day with the Google Play for Work store. If you have approved an app from the store and don't yet see it in the **Volume-Purchased Apps** node of the **Apps** workspace, you can force an immediate sync as follows:
+If you have approved an app from the store and don't yet see it in the **Volume-Purchased Apps** node of the **Apps** workspace, you can force an immediate sync as follows:
 
 1. In the [Intune administrator console](https://manage.microsoft.com), choose **Admin** > **Mobile Device Management** > **Android for Work**.
 2. On the **Android for Work Mobile Device Management Setup** page, choose **Sync Now**.
@@ -71,7 +71,7 @@ Typically, Intune will synchronize twice a day with the Google Play for Work sto
 
 When the app is displayed in the **Volume-Purchased Apps** node of the **Apps** workspace, you can [deploy it just like you would any other app](deploy-apps-in-microsoft-intune.md). You can deploy the app to groups of users only. Currently, you can only select the **Required** and **Uninstall** actions.
 
-This feature leverages the new grouping and targeting experience. Newly provisioned Intune service accounts will be able to use this feature upon release. Existing Intune customers can use this feature once their tenant has been migrated to the Intune Azure portal. Existing customers are welcome to create a trial Intune account to plan for and test this feature until their tenant has been migrated.
+The ability to deploy an app as **Available** leverages the new grouping and targeting experience. Newly provisioned Intune service accounts will be able to use this feature upon release. Existing Intune customers can use this feature once their tenant has been migrated to the Intune Azure portal. Existing customers are welcome to create a trial Intune account to plan for and test this feature until their tenant has been migrated.
 
 After you deploy the app, it will be installed on the devices you targeted. The user of the device will not be asked for approval.
 
