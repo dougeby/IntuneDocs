@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/10/2017
+ms.date: 03/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,19 +30,48 @@ ms.custom: intune-azure
 
 As the public preview progresses, and more features are added, we'll let you know about them here.
 
+
+
 ## March 2017
 
-<!--### Custom app categories <!--748805
+### Improvements to Device Actions report <!--677150-->
+
+We’ve made improvements to the Device Actions report to improve performance. Additionally, you can now filter the report by state. For example, you could filter the report to show only device actions that were completed.”
+
+### Actions for non-compliance <!--730266-->
+
+**Actions for non-compliance** is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
+
+### Custom app categories <!--748805-->
+
 You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
-See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).-->
+See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).
 
-<!--### Display device categories <!--814654
-You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade.-->
+### Assign LOB apps to users with unenrolled devices <!--748823-->
 
-### Configure Windows Update for Business settings
-Windows as a Service is the new way of providing updates for Windows 10. Starting with Windows 10, any new Feature Updates and Quality Updates will contain the contents of all previous updates. This means that as long as you've installed the latest update, you know that your Windows 10 devices are completely up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
+You can now assign line of business apps from the store to users whether or not their devices are enrolled with Intune. If the user's device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
 
-By using Windows Update for Business, you can simplify the update management experience so that you don’t need to approve individual updates for groups of devices. You can still manage risk in your environments by configuring an update rollout strategy and Windows Update will make sure that updates are installed at right time. Microsoft Intune provides the ability to configure update settings on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates.Use Intune to configure and manage **Windows 10 update rings**. An update ring contains a group of settings that configure when and how Windows 10 updates get installed. For details, see [Configure Windows Update for Business settings](/intune-azure/configure-devices/how-to-configure-windows-update-for-business).
+### New compliance reports <!--846671-->
+
+You now have compliance reports that give you the compliance posture of devices in your company and allow you to quickly troubleshoot compliance-related issues encountered by your users. You can view information about
+
+- Overall compliance state of devices
+- Compliance state for an individual setting
+- Compliance state for an individual policy
+
+You can also use these reports to drill-down into an individual device to view specific settings and policies that affect that device.
+
+You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
+
+- Windows 10 Professional
+- Windows 10 Professional N
+- Windows 10 Professional Education
+- Windows 10 Professional Education N
+
+### Direct access to Apple enrollment scenarios <!--951869-->
+
+For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
+
 
 ## February 2017
 
@@ -66,6 +95,12 @@ See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).
 
 ### Display device categories <!--814654-->
 You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade. See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).
+
+### Configure Windows Update for Business settings <!--776716-->
+
+Windows as a Service is the new way of providing updates for Windows 10. Starting with Windows 10, any new Feature Updates and Quality Updates will contain the contents of all previous updates. This means that as long as you've installed the latest update, you know that your Windows 10 devices are completely up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
+
+By using Windows Update for Business, you can simplify the update management experience so that you don’t need to approve individual updates for groups of devices. You can still manage risk in your environments by configuring an update rollout strategy and Windows Update will make sure that updates are installed at right time. Microsoft Intune provides the ability to configure update settings on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates.Use Intune to configure and manage **Windows 10 update rings**. An update ring contains a group of settings that configure when and how Windows 10 updates get installed. For details, see [Configure Windows Update for Business settings](/intune-azure/configure-devices/how-to-configure-windows-update-for-business).
 
 ## January 2017
 
