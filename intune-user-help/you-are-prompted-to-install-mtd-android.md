@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: You need to install Mobile Threat Detection on your iOS device | Microsoft Docs
+title: You need to install Mobile Threat Defense on your iOS device | Microsoft Docs
 description:
 keywords:
 author: barlanmsftms.author: barlan
@@ -25,9 +25,9 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to install Mobile Threat Detection on your Android device
+# You need to install Mobile Threat Defense on your Android device
 
-Before you can access your work, your IT administrator needs you to install the Mobile Threat Detection app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your IT admin set up Mobile Threat Detection.
+Before you can access your work, your IT administrator needs you to install the Mobile Threat Defense app, which helps to protect your device by finding potential security threats. You might see different prompts on your device, depending on how your IT admin set up Mobile Threat Defense.
 
 * [Lookout for Work](you-are-prompted-to-install-lookout-for-work-android.md)
 * [Skycure](you-are-prompted-to-install-skycure-android.md)
