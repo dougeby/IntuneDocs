@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Actions for non-compliance
+# Create Actions for non-compliance
 
 The **Actions for non-compliance** allow you to configure a time-ordered sequence of actions that are applied to devices that fall out of compliance. For example, you can notify users of non-compliant devices via e-mail or block those devices from accessing corporate resources through conditional access.
 

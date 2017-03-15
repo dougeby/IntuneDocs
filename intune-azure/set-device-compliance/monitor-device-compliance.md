@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: intune-azure
 
 ---
-# How to monitor compliance in Intune Azure preview
+# How to monitor device compliance in Intune Azure preview
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 

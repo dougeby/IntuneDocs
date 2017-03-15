@@ -169,6 +169,8 @@
 ### [Create Android for Work compliance policy](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Create iOS compliance policy](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Create Windows compliance policy](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)
+### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 
