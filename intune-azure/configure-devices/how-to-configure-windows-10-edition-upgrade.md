@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Configure Windows 10 edition upgrades with IntunetitleSuffix: "Intune Azure preview"
+title: Configure Windows 10 edition upgrades with Intune
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to use Intune to upgrade Windows 10 devices you manage."
 keywords:
 author: robstackmsft
@@ -35,10 +36,6 @@ Use the information in this topic to learn how to configure a Windows 10 edition
 - Windows 10 Home
 - Windows 10 Holographic
 - Windows 10 Mobile
-- Windows 10 Pro
-- Windows 10 Pro N
-- Windows 10 Pro Education
-- Windows 10 Pro Education N
 
 
 The following upgrade paths are supported:
@@ -47,18 +44,6 @@ The following upgrade paths are supported:
 - From Windows 10 Home to Windows 10 Education
 - From Windows 10 Mobile to Windows 10 Mobile Enterprise
 - From Windows 10 Holographic Pro to Windows 10 Holographic Enterprise
-- From Windows 10 Pro to Windows 10 Education
-- From Windows 10 Pro Education to Windows 10 Education
-- From Windows 10 Pro N to Windows 10 Education N
-- From Windows 10 Pro Education N to Windows 10 Education N
-- From Windows 10 Home to Windows 10 Pro Education
-- From Windows 10 Pro to Windows 10 Pro Education
-- From Windows 10 Home N to Windows 10 Pro Education N
-- From Windows 10 Pro N to Windows 10 Pro Education N
-- From Windows 10 Cloud to Windows 10 Pro
-- From Windows 10 Cloud N to Windows 10 Pro N
-- From Windows 10 Cloud to Windows 10 Pro Education
-- From Windows 10 Cloud N to Windows 10 Pro Education N
 
 
 ## Before you start
