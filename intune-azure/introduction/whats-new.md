@@ -31,9 +31,17 @@ ms.custom: intune-azure
 As the public preview progresses, and more features are added, we'll let you know about them here.
 
 > [!Note]
-> We’re rolling out the changes listed on this page for the Azure portal preview. However, the changes may not be available right away due to how the Intune service is updated.  Several components of the service must be updated sequentially over a period of days, and this process can cause delays in the availability of new portal features. Look for these changes as they roll out later this month. 
+> We’re rolling out the changes listed on this page for the Azure portal preview. However, the changes may not be available right away due to how the Intune service is updated.  Several components of the service must be updated sequentially before the new portal features are available. Look for these changes as they roll out later this month.
 
 ## March 2017
+
+### Support for iOS Lost Mode <!--431695-->
+
+For iOS 9.3 and later devices, Intune added support for **Lost Mode**. You can now lock down a device to prevent all use and display a message and contact phone number of the device lock screen.
+
+The end user will not be able to unlock the device until an admin disables Lost Mode. When Lost Mode is enabled, you can use the Locate device action to display the geographical location of the device on a map in the Intune console.
+
+For more information, see [What is Microsoft Intune device management](/intune-azure/manage-devices/what-is)?
 
 ### Improvements to Device Actions report <!--677150-->
 
