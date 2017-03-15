@@ -75,7 +75,7 @@ From the **Device compliance policies** blade:
 
 1.  Under **Manage**, choose **Notifications**, the Notification message templates blade opens.
 
-    ![](http://i.imgur.com/hBYhcsU.png)
+    ![How to add a notification template](../media/afnc-1.png)
 
 2.  Choose **Add**, then you’ll need to define the following:
 
@@ -93,7 +93,7 @@ From the **Device compliance policies** blade:
 
     g.  E-mail footer – Include contact information
 
-       ![](http://i.imgur.com/ofQ2Wik.png)
+     ![The notification message template](../media/afnc-2.png)
 
 After you’re done adding the information, you can click on **Create**. The Notification message template is available for use.
 
@@ -108,13 +108,13 @@ You can add an action by the time you’re creating a new device compliance poli
 
 2.  Choose a device compliance policy by clicking on it.
 
-    ![](http://i.imgur.com/6ZracjU.png)
+    ![Compliance policies](../media/afnc-3.png)
 
 3.  The **device compliance policy properties** blade opens, choose **Actions for noncompliance**.
 
 4.  The Actions for noncompliance blade opens, choose **Add** to specify action parameters.
 
-    ![](http://i.imgur.com/Hudchft.png)
+    ![Actions for noncompliance blade](../media/afnc-4.png)
 
 The Actions for non-compliance are:
 
@@ -132,7 +132,7 @@ To add this action for non-compliance:
 
 3.  On **Schedule**, you can specify the number of days (0 to 255) to enforce the conditional access policy. If you specify **0** number of days, this means conditional access must **immediately** block access to corporate resources once the devices are not-compliant with device compliance policies.
 
-    ![](http://i.imgur.com/ngWDNe5.png)
+    ![Schedule Actions for noncompliance](../media/afnc-5.png)
 
 4.  Choose **Add**, then choose **OK** from the **Actions** blade.
 
@@ -150,7 +150,7 @@ To add this action for non-compliance:
 
 3.  Choose a message template previously created, by clicking on **Message template**. You can view the Message template content, then choose **Select**.
 
-    ![](http://i.imgur.com/ijZ6RPh.png)
+    ![Message template](../media/afnc-6.png)
 
 > [!NOTE] 
 > You can view the message template, but you can’t edit it. If you want to edit the Message template, you need to go back to the **Notifications** blade.
