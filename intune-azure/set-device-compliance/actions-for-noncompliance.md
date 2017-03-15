@@ -152,8 +152,8 @@ To add this action for non-compliance:
 
     ![](http://i.imgur.com/ijZ6RPh.png)
 
-> [!NOTE] You can view the message template, but you can’t edit it. If you want to edit the Message template, 
-> you need to go back to the **Notifications** blade.
+> [!NOTE] 
+> You can view the message template, but you can’t edit it. If you want to edit the Message template, you need to go back to the **Notifications** blade.
 
 1.  On **Schedule**, enter the number of days after non-compliance the e-mail should be sent to users. If you specify **0** number of days, this means the e-mail will be **immediately** sent.
 
