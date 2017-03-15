@@ -63,7 +63,7 @@ You need to have at least one device compliance policy created to set up actions
 
     -   [Windows](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-windows)
 
-You need to have EMS conditional access set up when planning to use device compliance policies to block devices from using corporate resources.
+You need to have EMS conditional access set up ready when planning to use device compliance policies to block devices from using corporate resources.
 
 - Learn [how to setup EMS conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
 
