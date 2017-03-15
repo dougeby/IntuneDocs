@@ -70,12 +70,12 @@ You now have compliance reports that give you the compliance posture of devices 
 
 You can also use these reports to drill-down into an individual device to view specific settings and policies that affect that device.
 
-You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
+<!--- You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
 
 - Windows 10 Professional
 - Windows 10 Professional N
 - Windows 10 Professional Education
-- Windows 10 Professional Education N
+- Windows 10 Professional Education N --->
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
 
