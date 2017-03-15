@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
+ms.reviewer: coryfe
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -32,9 +32,14 @@ ms.custom: intune-azure
 
 Use the information in this topic to learn how to configure a Windows 10 edition upgrade profile. This profile lets you automatically upgrade devices that run one of the following Windows 10 versions to a newer edition:
 
-- Windows 10 Desktop
+- Windows 10 Home
 - Windows 10 Holographic
 - Windows 10 Mobile
+- Windows 10 Pro
+- Windows 10 Pro N
+- Windows 10 Pro Education
+- Windows 10 Pro Education N
+
 
 The following upgrade paths are supported:
 
@@ -42,6 +47,19 @@ The following upgrade paths are supported:
 - From Windows 10 Home to Windows 10 Education
 - From Windows 10 Mobile to Windows 10 Mobile Enterprise
 - From Windows 10 Holographic Pro to Windows 10 Holographic Enterprise
+- From Windows 10 Pro to Windows 10 Education
+- From Windows 10 Pro Education to Windows 10 Education
+- From Windows 10 Pro N to Windows 10 Education N
+- From Windows 10 Pro Education N to Windows 10 Education N
+- From Windows 10 Home to Windows 10 Pro Education
+- From Windows 10 Pro to Windows 10 Pro Education
+- From Windows 10 Home N to Windows 10 Pro Education N
+- From Windows 10 Pro N to Windows 10 Pro Education N
+- From Windows 10 Cloud to Windows 10 Pro
+- From Windows 10 Cloud N to Windows 10 Pro N
+- From Windows 10 Cloud to Windows 10 Pro Education
+- From Windows 10 Cloud N to Windows 10 Pro Education N
+
 
 ## Before you start
 Before you begin to upgrade devices to the latest version, you will need one of the following:

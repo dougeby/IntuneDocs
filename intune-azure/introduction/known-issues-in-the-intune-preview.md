@@ -40,3 +40,6 @@ If you want to request a new feature be added to Intune, consider filing a repor
 ## Administration and accounts
 
 - Global Admins (also referred to as Tenant Admins) can continue to do day-to-day administration tasks without a separate Intune or Enterprise Mobility Suite (EMS) license. However, if Global Admins want to use the service, such as to enroll their own device, a corporate device, or use the Intune Company Portal, they will need an Intune or EMS license just like any other user.
+
+## Apple enrollment profile migration
+- In the next few months, Intune will enable managing your Apple Device Enrollment Program and Apple Configurator enrollments through the new Azure Portal. If you delete the Apple Device Enrollment Program token and do not upload an updated token, the original token will be restored in the new Azure Portal as part of migrating your Intune account. To remove this token and prevent DEP enrollment, simply delete the token in the Azure Portal. 
