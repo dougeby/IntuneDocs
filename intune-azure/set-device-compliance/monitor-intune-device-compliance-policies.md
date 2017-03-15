@@ -40,7 +40,8 @@ Follow the steps below to find the **Intune Device compliance dashboard** in the
 
 3.  Choose **Intune** &gt; **Device compliance** &gt; **Overview**, then the **Device compliance dashboard** opens.
 
-> [!IMPORTANT] Devices must be enrolled into Intune to receive device compliance policies.
+> [!IMPORTANT] 
+> Devices must be enrolled into Intune to receive device compliance policies.
 
 ## Device compliance dashboard
 
@@ -74,8 +75,8 @@ It’s a donut chart showing the aggregate compliance state for all Intune enrol
 
     -   **Error**: The device failed to communicate with Intune and Azure AD, and received an error message with the reason.
 
-> [!IMPORTANT] Devices that are enrolled into Intune, but not targeted by any device compliance 
-> policies will be included in this report under the **Compliant** bucket.
+> [!IMPORTANT] 
+> Devices that are enrolled into Intune, but not targeted by any device compliance policies will be included in this report under the **Compliant** bucket.
 
 #### Drill-down option
 
