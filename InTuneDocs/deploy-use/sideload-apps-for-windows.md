@@ -160,7 +160,7 @@ You can manually deploy the Windows 10 Company Portal app directly from Intune, 
  > [!NOTE]
  > This option will require deploying manual updates each time an app update is released.
 
-1. Log in to your account in the Windows Store for Business and acquire the **offline license** version of the Company Portal app.  
+1. Log in to your account in the [Windows Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
 2. Once the app has been acquired, select the app in the **Inventory** page.  
 3. Select **Windows 10 all devices** as the **Platform**, then the appropriate **Architecture** and download. An app license file is not needed for this app.
 ![Image of Windows 10 all devices and Architecture X86 Package details for Download](../media/Win10CP-all-devices.png)
