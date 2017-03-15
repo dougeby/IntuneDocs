@@ -97,7 +97,8 @@ From the **Device compliance policies** blade:
 
 After you’re done adding the information, you can click on **Create**. The Notification message template is available for use.
 
-> [!NOTE] You can also edit a Notification template previously created.
+> [!NOTE] 
+> You can also edit a Notification template previously created.
 
 ## To create actions for non-compliance
 
