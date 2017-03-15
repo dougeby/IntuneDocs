@@ -6,7 +6,7 @@ description: "Intune Azure preview: Enable Intune mobile device management (MDM)
 keywords:
 author: nathbarn
 manager: nathbarn
-ms.date: 02/15/17
+ms.date: 03/15/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Enroll Windows devices 
+# Enroll Windows devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -36,8 +36,9 @@ Use one of the following methods to set up enrollment for Windows devices:
  -  You must have Azure Active Directory Premium to use this method. Otherwise, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
  -  If you choose not to enable automatic enrollment, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
 
-- [**Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname)
+- [**Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME**](#simplify-enrollment-by-configuring-cname)
  - You must use this method to enroll Windows 8.1 and Windows Phone 8.1 devices.
+ - You can also use this method if you don't have Azure Active Directory (AD) Premium.
 
 
 ## Prerequisites
@@ -51,9 +52,9 @@ If some of the following prerequisites aren't in the Intune Azure preview yet, y
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## Set up Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME
+## Enable Windows workplace enrollment
 
-You can let users install and enroll their devices by using the Intune Company Portal. If you create DNS CNAME resource records,  users connect and enroll in Intune without entering a server name.
+You can let users install and enroll their devices without Azure AD Premium automatic enrollment. If you create DNS CNAME resource records,  users connect and enroll in Intune without entering a server name.
 
 1. **Create CNAMEs** (optional)<br>
  Create **CNAME** DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
@@ -71,19 +72,15 @@ You can let users install and enroll their devices by using the Intune Company P
 
   `EnterpriseEnrollment-s.manage.microsoft.com` – Supports a redirect to the Intune service with domain recognition from the email’s domain name
 
-  `EnterpriseRegistration.windows.net` – Supports Windows 8.1 and Windows 10 Mobile devices that will register with Azure Active Directory by using their work or school account
-
   If your company uses multiple domains for user credentials, create CNAME records for each domain.
 
   For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to EnterpriseEnrollment-s.manage.microsoft.com. Changes to DNS records might take up to 72 hours to propagate. You cannot verify the DNS change in Intune until the DNS record propagates.
 
-2.  **Verify CNAME**<br>In the [Intune administration console](http://manage.microsoft.com), choose **Administration** &gt; **Mobile Device Management** &gt; **Windows Phone**. Enter the URL of the verified domain of the company website in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.
+2.  **Verify CNAME**<br>In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Windows Enrollment**. Enter the URL of the verified domain of the company website in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.
 
-3.  **Optional steps**<br>The **Add Sideloading keys** step is not needed for Windows 10. <br>The **Upload Code-Signing Certificate** step is needed only if you are distributing to devices the line-of-business (LOB) apps that are not available from the Windows Store.
+3.  **Tell your users how to enroll their devices and what to expect after their devices are under management.**
 
-4.  **Tell your users how to enroll their devices and what to expect after their devices are under management.**
-
-	For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/en-us/intune/enduser/enroll-your-device-in-intune-windows). You can also send users to [What can my IT admin see on my devic](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+	For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows). You can also send users to [What can my IT admin see on my devic](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
 	For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
 
