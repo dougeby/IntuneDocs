@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,6 @@ ms.suite: ems
 ms.custom: intune-enduser
 
 ---
-
 
 # Use managed apps on your iOS device
 
@@ -63,6 +62,5 @@ Here are some examples of options that your IT admin can manage in an app, and t
 -   Ability to take screenshots
 
 -   Data encryption requirements
-
 
 Contact your IT admin for more information about the managed apps on your device. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
