@@ -596,7 +596,7 @@ The table below describes the app protection policy settings that you can test u
 | -- | -- | -- |
 | AccessRecheckOfflineTimeout | The length of time in minutes the app can be offline before Intune blocks the app from launching or resuming if authentication is enabled. | Any integer greater than 0 |
 |	AccessRecheckOnlineTimeout | The length of time in minutes the app can run before the user is prompted for PIN or authentication at launch or resume (if authentication or PIN for access is enabled). | Any integer greater than 0 |
-| AppSharingFromLevel | Specifies which apps this app can accept data from. | 0 = | 
+| AppSharingFromLevel | Specifies which apps this app can accept data from. | 0 = |
 ## iOS best practices
 
 Here are recommended best practices for developing for iOS:
