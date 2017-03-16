@@ -47,7 +47,7 @@ Use the information in this topic to learn the basics about configuring an email
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Configure devices**.
+3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the email profile.
