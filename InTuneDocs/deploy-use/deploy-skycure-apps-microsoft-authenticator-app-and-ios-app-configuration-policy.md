@@ -54,19 +54,19 @@ ms.custom: intune-classic
 
     c.  Skycure app for iOS
 
-       ![Intune classic console all apps to deploy](./media/mtp/skycure-deploy-app-1.png)
+       ![Intune classic console all apps to deploy](../media/mtp/skycure-deploy-app-1.png)
 
 3.  Choose **Manage Deployments,** select the Azure AD security group that has the Skycure users, then click **Next**.
 
 4.  On the **Deployment Action** page, select the option **Required Install** from the **Approval** drop-down list, then click **Next**.
 
-    ![Intune classic console Deployment Action](./media/mtp/skycure-deploy-app-2.png)
+    ![Intune classic console Deployment Action](../media/mtp/skycure-deploy-app-2.png)
 
 5.  On the **VPN profile** page, select the option **None** from the **VPN Policy** drop-down list, then click **Next**.
 
 6.  On the **Mobile App Configuration** page, select the iOS App Configuration Policy previously created from the **App Configuration Policy** drop-down list, then click **Finish**.
 
-    ![Intune classic console Mobile app configuration](./media/mtp/skycure-deploy-app-3.png)
+    ![Intune classic console Mobile app configuration](../media/mtp/skycure-deploy-app-3.png)
 
 ## Next steps
 

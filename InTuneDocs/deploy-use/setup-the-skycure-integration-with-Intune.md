@@ -70,15 +70,15 @@ Skycure supports two modes of integration with Intune:
 
 4.  On the **iOS App** label, click on **Add to Active Directory**.
 
-    ![iOS app on Skycure Management console](./media/skycure-setup-1.png)
+    ![iOS app on Skycure Management console](../media/mtp/skycure-setup-1.png)
 
 5.  Login page opens, enter your Intune credentials, then click **Accept**.
 
-    ![iOS app Intune login prompt](./media/skycure-setup-2.png)
+    ![iOS app Intune login prompt](../media/mtp/skycure-setup-2.png)
 
 6.  Once the app is added into Azure AD, you can see an indication that the app was successfully added into Azure AD on the Skycure Management console.
 
-    ![iOS app completation screen](./media/skycure-setup-3.png)
+    ![iOS app completation screen](../media/mtp/skycure-setup-3.png)
 
 [!NOTE] Repeat the same process for the **Skycure Android** and **Management** apps.
 
@@ -88,11 +88,11 @@ You need to add an Azure AD security group that contains all devices running Sky
 
 1.  Enter and select all the security groups of devices that are running Skycure, then click on **Apply changes**.
 
-    ![Configure security group Skycure Management console](./media/skycure-setup-4.png)
+    ![Configure security group Skycure Management console](../media/mtp/skycure-setup-4.png)
 
 Skycure syncs the devices running its Mobile Threat Defense service with the Azure AD security groups.
 
-![Security group configuration completed on Skycure management console](./media/skycure-setup-5.png)
+![Security group configuration completed on Skycure management console](../media/mtp/skycure-setup-5.png)
 
 ## Set up the full integration between Intune and Skycure
 
@@ -110,7 +110,7 @@ Skycure syncs the devices running its Mobile Threat Defense service with the Azu
 
 5.  Click on **Apply changes**.
 
-    ![Skycure full integration completed](./media/skycure-setup-6.png)
+    ![Skycure full integration completed](../media/mtp/skycure-setup-6.png)
 
 ## Next steps
 

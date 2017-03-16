@@ -54,11 +54,11 @@ Additionally, you need the [Microsoft Authenticator](https://docs.microsoft.com/
 
 2.  On the **Software setup** page, choose **External link**, then paste the [Skycure app for Android url](https://play.google.com/store/apps/details?id=com.skycure.skycure) under **Specify the URL**.
 
-    ![Intune Software Publisher Specify the URL](./media/skycure-add-apps-1.png)
+    ![Intune Software Publisher Specify the URL](../media/mtp/skycure-add-apps-1.png)
 
 3.  On the **Software description** page, enter the **Publisher**, **Name** and **Description**, select the option **Display this as a featured app and highlight it in the company portal**, then click **Next**.
 
-    ![Intune Software Publisher Software description](./media/skycure-add-apps-2.png)
+    ![Intune Software Publisher Software description](../media/mtp/skycure-add-apps-2.png)
 
 4.  Click **Upload**, then **Close**.
 
@@ -68,11 +68,11 @@ Additionally, you need the [Microsoft Authenticator](https://docs.microsoft.com/
 
 2.  On the **Software setup** page, choose **Managed iOS App from the App Store**, then paste the [Skycure app for iOS url](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) under **Specify the URL**.
 
-    ![Intune Software Publisher Managed iOS app](./media/skycure-add-apps-3.png)
+    ![Intune Software Publisher Managed iOS app](../media/mtp/skycure-add-apps-3.png)
 
 3.  On the **Software description** page, enter the **Publisher**, **Name** and **Description**, select the option **Display this as a featured app and highlight it in the company portal**, then click **Next**.
 
-    ![Intune Software Publisher options](./media/skycure-add-apps-4.png)
+    ![Intune Software Publisher options](../media/mtp/skycure-add-apps-4.png)
 
 4.  On the **Requirements** page, select the option **Any** under **Mobile device type**, then click **Next**.
 
@@ -84,11 +84,11 @@ Additionally, you need the [Microsoft Authenticator](https://docs.microsoft.com/
 
 2.  On the **Software setup** page, choose **Managed iOS App from the App Store**, then paste the [Microsoft Authenticator app for iOS url](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) under **Specify the URL**.
 
-    ![Intune Software Publisher Managed iOS app 2](./media/skycure-add-apps-5.png)
+    ![Intune Software Publisher Managed iOS app 2](../media/mtp/skycure-add-apps-5.png)
 
 3.  On the **Software description** page, enter the **Publisher**, **Name** and **Description**, select the option **Display this as a featured app and highlight it in the company portal**, then click **Next**.
 
-    ![Intune Software Publisher Managed iOS app 3](./media/skycure-add-apps-6.png)
+    ![Intune Software Publisher Managed iOS app 3](../media/mtp/skycure-add-apps-6.png)
 
 4.  On the **Requirements** page, select the option **Any** under **Mobile device type**, then click **Next**.
 
@@ -100,13 +100,13 @@ Additionally, you need the [Microsoft Authenticator](https://docs.microsoft.com/
 
 2.  In the list of policies, expand **iOS**, choose **Mobile App Configuration Policy (iOS 8.0 and later)**, then choose **Create Policy**.
 
-    ![iOS app configuration policy](./media/skycure-add-apps-7.png)
+    ![iOS app configuration policy](../media/mtp/skycure-add-apps-7.png)
 
 3.  In the **General** section of the **Create Policy** page, supply a name and an optional description for the iOS app configuration policy.
 
     a.  Open the **skycure\_configuration.plist** file using a text editor like notepad, copy the content and paste it into the **Mobile App Configuration Policy** body, choose **Validate**, then choose **Save Policy**.
 
-       ![iOS app configuration policy 2](./media/skycure-add-apps-8.png)
+       ![iOS app configuration policy 2](../media/mtp/skycure-add-apps-8.png)
 
 ## Next steps
 
