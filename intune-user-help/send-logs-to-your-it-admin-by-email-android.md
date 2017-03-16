@@ -6,7 +6,7 @@ description: Send data logs by using email on an Android device
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

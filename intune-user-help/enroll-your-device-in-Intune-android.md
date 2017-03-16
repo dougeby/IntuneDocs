@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +49,7 @@ If you get an error while you try to enroll your device in Intune, you can [send
 
 3.  On the Company Portal **Welcome** screen, tap **Sign in**, and then sign in with your work or school account.
 
-	![android-company-portal-sign-in](./media/and-enroll-0-welcome-screen.png)   
+	![The Company Portal app for Android welcome screen, which asks the user to sign in with their required work or school account. It also cautions that Microsoft accounts and other personal accounts are not accepted.](./media/and-enroll-0-welcome-screen.png)   
 
 4.  If your IT admin set up company terms and conditions, tap **ACCEPT** to accept the terms.
 
@@ -111,11 +111,19 @@ If you get an error while you try to enroll your device in Intune, you can [send
 
 	This screen shows that your device is being enrolled.
 
-	![Enrolling device screen](./media/and-enroll-8-device-enrolling.png)
+  	![Enrolling device screen](./media/and-enroll-8-device-enrolling.png)
 
 14. When the **Company Access Setup** screen appears, tap **CONTINUE**. If a message indicates that your device is out of compliance, follow the instructions to fix the issue, and then tap **CONTINUE**.
 
-	![Company access setup screen](./media/and-enroll-9-comp-access-setup.png)  
+  ![Device is not compliant but is enrolled](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+
+  ![Device compliance issues appear that need resolution](./media/and-enroll-9b-resolve-compliance-issues.png)
+
+You can find out more about the issues by tapping on them. 
+
+  ![Device compliance issues expanded](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+
+	![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
 
 11. On the **Company Access Setup complete** screen, tap **DONE**. Your device is now enrolled.
 
