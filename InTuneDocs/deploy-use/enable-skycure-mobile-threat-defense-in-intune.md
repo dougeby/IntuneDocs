@@ -38,7 +38,7 @@ To enable the Skycure malicious threat protection (MTD) connection in Intune, yo
 
 2.  Choose **Admin** &gt; **Third Party Service Integration**, then choose **Skycure Status** and enable **Synchronization with MTD** using the toggle button.
 
-	![Enable Skycure toggle in Intune classic console](./media/enable-skycure-1.png)
+	![Enable Skycure toggle in Intune classic console](../media/mtp/enable-skycure-1.png)
 
 > [!IMPORTANT] You must configure the Skycure apps before creating compliance policy rules and configuring
 > conditional access. This ensures that the app is ready and available for end users to install before they can get
