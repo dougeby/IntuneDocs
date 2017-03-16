@@ -6,7 +6,7 @@ description: Describes the Company Portal website and provides links to steps fo
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ Users can do the following tasks from the Company Portal website:
 
 -   [Remotely lock a device](remote-lock-your-device-cpwebsite.md)
 
--	[Sync your device manually to speed up slow app installations](sync-your-device-manually-cpwebsite.md)
+-	[Sync your device manually to get apps to install more quickly](sync-your-device-manually-cpwebsite.md)
 
 -   Find the IT admin's contact information, if you configured it
 
