@@ -168,7 +168,7 @@ The Azure Active Directory Authentication Library ([ADAL](https://azure.microsof
 
 ## Logging
 
-Logging should be initialized early to get the most value out of logged data. `Application.onMAMCreate()` is most likely the best place to initialize logging.
+Logging should be initialized early to get the most value out of logged data. `Application.onMAMCreate()` is typically the best place to initialize logging.
 
 To receive MAM logs in your app, create a [Java Handler](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) and add it to the `MAMLogHandlerWrapper`. This will invoke `publish()` on the application handler for every log message.
 
@@ -280,7 +280,6 @@ String toString();
 If the app has its own PIN user experience, you might want to disable it if the IT administrator has configured the SDK to prompt for an app PIN. To determine if the IT administrator has deployed the app PIN policy to this app, for the current end user, call the following method:
 
 ```java
-
 MAMComponents.get(AppPolicy.class).getIsPinRequired();
 ```
 
@@ -451,7 +450,7 @@ To configure your app and enable proper authentication, add the following to the
 * **SkipBroker** is used in case the ClientID has not been configured to use the broker redirect URI. The default value is "false."
 	* For apps that **do not integrate ADAL** and **do not want to participate in device-wide brokered authentication/SSO**, this should be set to "true." When this value is "true," the only redirect URI that will be used is NonBrokerRedirectURI.
 
-	* For apps that do support device-wide SSO brokering, this should be "false." When the value is "false," the SDK will select a broker between the result of [`com.microsoft.aad.adal.AuthenticationContext.getRedirectUriForBroker()`](https://github.com/AzureAD/azure-activedirectory-library-for-android) and NonBrokerRedirectURI, based on the availability of the broker on the system. In general, the broker will be available from the Company Portal or Azure Authenticator.
+	* For apps that do support device-wide SSO brokering, this should be "false." When the value is "false," the SDK will select a broker between the result of [`com.microsoft.aad.adal.AuthenticationContext.getRedirectUriForBroker()`](https://github.com/AzureAD/azure-activedirectory-library-for-android) and NonBrokerRedirectURI, based on the availability of the broker on the system. In general, the broker will be available from the Company Portal app or Azure Authenticator app.
 
 ### Common ADAL configurations
 
@@ -502,9 +501,9 @@ The app is required to provide a callback to acquire the appropriate access toke
 When the app removes an account completely, it should unregister that account to indicate that the app should no longer apply policy for that user. If the user was enrolled in the MAM service, the user will be unenrolled and the app will be wiped.
 
 
-### Outline of app requirements
+### Overview of app requirements
 
-To implement APP-WE integration, your app must **register** the user account with the MAM SDK:
+To implement APP-WE integration, your app must register the user account with the MAM SDK:
 
 1. The app _must_ implement and register an instance of the `MAMServiceAuthenticationCallback` interface. The callback instance should be registered as early as possible in the app's lifecycle (typically in the `onMAMCreate()` method of the application class).
 
@@ -646,7 +645,7 @@ This method is called before the SDK displays its default blocking UI. If the ap
 
 ### Notifications
 
-A new type of `MAMNotification` has been added in order to inform the app that the enrollment request has completed.  The `MAMEnrollmentNotification` will be received through the `MAMNotificationReceiver` interface as described in the [Register for notifications from the SDK](#Register-for-notifications-from-the-SDK) section.
+A new type of `MAMNotification` has been added in order to inform the app that the enrollment request has completed.  The `MAMEnrollmentNotification` will be received through the `MAMNotificationReceiver` interface as described in the [Register for notifications from the SDK](#register-for-notifications-from-the-sdk) section.
 
 ```java
 public interface MAMEnrollmentNotification extends MAMUserNotification {
@@ -1156,7 +1155,7 @@ Below is the complete list of allowed style attributes, the UI elements they con
 
 ### File Size limitations
 
-For large code bases that run without [ProGuard](http://proguard.sourceforge.net/), the limitations of the Dalvik executable file format become an isssue. Specifically, the following limitations may occur:
+For large code bases that run without [ProGuard](http://proguard.sourceforge.net/), the limitations of the Dalvik executable file format become an issue. Specifically, the following limitations may occur:
 
 1.	The 65K limit on fields.
 2.	The 65K limit on methods.
