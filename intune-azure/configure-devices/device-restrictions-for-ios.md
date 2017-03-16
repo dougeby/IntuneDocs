@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -225,7 +225,7 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 - 	**iCloud Photo Library** - If set to **No**, disables the use of iCloud photo library which lets users store photos and videos in the cloud.	Any photos not fully downloaded from iCloud Photo Library to the device will be removed from the device if this is set to **No**.
 - 	**Managed apps sync to cloud** - Allow apps that you manage with Intune to sync data to the user's iCloud account.
 - 	**Shared photo stream** - Set to **No** to disable **iCloud Photo Sharing** on the device..
-- 	**Activity continuation** - Allow the user to continue work that they started on an iOS device on another iOS or Mac OS X device (Handoff).
+- 	**Activity continuation** - Allow the user to continue work that they started on an iOS device on another iOS or macOS device (Handoff).
 
 ## Kiosk
 - 	**Activation Lock** - Enable Activation Lock on supervised iOS devices.

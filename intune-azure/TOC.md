@@ -6,7 +6,7 @@
 ## [What's new](introduction/whats-new.md)
 ## [Known issues](introduction/known-issues-in-the-intune-preview.md)
 ## [Get support](introduction/how-to-get-support-for-microsoft-intune.md)
-<!--- 
+<!---
 
 ## [Related resources](introduction/related-resources.md)
 
@@ -138,6 +138,7 @@
 #### [Windows 8.1 & Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [Configure Windows 10 edition upgrade settings](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [Configure Windows Update for Business settings](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Configure certificates](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
@@ -168,6 +169,8 @@
 ### [Create Android for Work compliance policy](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Create iOS compliance policy](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Create Windows compliance policy](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)
+### [Monitor device compliance](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 
