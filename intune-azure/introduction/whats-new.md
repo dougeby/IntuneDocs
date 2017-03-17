@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,9 @@ As the public preview progresses, and more features are added, we'll let you kno
 
 For iOS 9.3 and later devices, Intune added support for **Lost Mode**. You can now lock down a device to prevent all use and display a message and contact phone number of the device lock screen.
 
-The end user will not be able to unlock the device until an admin disables Lost Mode. When Lost Mode is enabled, you can use the Locate device action to display the geographical location of the device on a map in the Intune console.
+The end user will not be able to unlock the device until an admin disables Lost Mode. When Lost Mode is enabled, you can use the **Locate device** action to display the geographical location of the device on a map in the Intune console.
+
+The device must be a corporate-owned iOS device, enrolled through DEP, that is in supervised mode.
 
 For more information, see [What is Microsoft Intune device management](/intune-azure/manage-devices/what-is)?
 
