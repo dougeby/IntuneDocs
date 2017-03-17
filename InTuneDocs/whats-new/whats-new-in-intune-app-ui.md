@@ -32,8 +32,6 @@ Learn what updates we've made to the UI for apps that your end users will see in
 > [!Note]
 > Please note that the images below are previews, and the announced product may differ from the presented versions.
 
-## What's coming
-
 ### February 2017
 
 #### New user experience for the Company Portal app for Android <!--621622, announced 1702-->

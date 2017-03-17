@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,7 +54,8 @@ ms.custom: intune-azure
 - 	**Keyboard shortcuts (supervised only)** - Allows use of keyboard shortcuts.
 - 	**Wrist detection for paired Apple watch** - When enabled, the Apple Watch won't display notifications when it is not being worn.
 - **Require AirPlay outgoing requests pairing password** - Require a pairing password when the user uses AirPlay to stream content to other Apple devices.
-- **Account modification (supervised only)** - Allow the user to change account settings such as email configurations.
+- **Account modification (supervised only)** - When blocked, this prevents the user from modifying device-specific settings from the iOS settings app, like creating new device accounts, and changing the user name or password.
+This also applies to settings accessible from the iOS settings app like Mail, Contacts, Calendar, Facebook, and Twitter. This does not apply to apps with account settings that are not configurable from the iOS settings app, for example, the Microsoft Outlook app.
 - **Apple Watch pairing (supervised only)** - Allow the device to pair with an Apple Watch.
 - **Bluetooth modification (supervised only)** - Block the end user from changing Bluetooth settings on the device.
 - **Remote screen observation by Classroom app (supervised only)** - Allow or block the Classroom app from observing the screen on remote devices.
