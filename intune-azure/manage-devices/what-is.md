@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -78,9 +78,10 @@ If an iOS device has been lost or stolen, you can enable lost mode. This lets yo
 2.	On the **Lost mode** blade, enable lost mode, enter the message that will be displayed, and optionally, a contact phone number.
 3.	Click **OK**.
 When you enable lost mode, you block all use of the device. The end user cannot access the device until you disable lost mode. While lost mode is enabled, you can use the **Locate device** action to find out where the device is.
+To use lost mode, the device must be a corporate-owned iOS device, enrolled through DEP, that is in supervised mode.
 
 ### **Locate device**
-Use this remote action to display the location of a lost or stolen iOS device on a map. The device must be a corporate-owned iOS device that is in supervised mode. Before you use this action, the device must have been placed into lost mode.
+Use this remote action to display the location of a lost or stolen iOS device on a map. The device must be a corporate-owned iOS device, enrolled through DEP, that is in supervised mode. Before you use this action, the device must have been placed into lost mode.
 1.	On the properties blade for an iOS device, choose **More** > **Locate device**.
 2.	After the device has been located, it's location is displayed on the **Locate device** blade. 
 	![Locate device blade](./media/locate-device.png)
