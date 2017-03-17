@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -107,25 +107,27 @@ If you get an error while you try to enroll your device in Intune, you can [send
 
 13.  If you are using a Samsung KNOX device, tap **Confirm**, and you’ll see a message that your device is being enrolled. If you are using a native Android device, just notice the following screen that shows that your device is being enrolled.
 
-	![Samsung KNOX privacy policy](./media/and-enroll-7-knox-privacy-policy.png)
+![Samsung KNOX privacy policy](./media/and-enroll-7-knox-privacy-policy.png)
 
-	This screen shows that your device is being enrolled.
+This screen shows that your device is being enrolled.
 
-  	![Enrolling device screen](./media/and-enroll-8-device-enrolling.png)
+![Enrolling device screen](./media/and-enroll-8-device-enrolling.png)
 
 14. When the **Company Access Setup** screen appears, tap **CONTINUE**. If a message indicates that your device is out of compliance, follow the instructions to fix the issue, and then tap **CONTINUE**.
 
-  ![Device is not compliant but is enrolled](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+![Device is not compliant but is enrolled](./media/and-enroll-9a-noncompliant-enrolled-device.png)
 
-  ![Device compliance issues appear that need resolution](./media/and-enroll-9b-resolve-compliance-issues.png)
+![Device compliance issues appear that need resolution](./media/and-enroll-9b-resolve-compliance-issues.png)
 
-You can find out more about the issues by tapping on them. 
+You can find out more about the issues by tapping on them.
 
-  ![Device compliance issues expanded](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+![Device compliance issues expanded](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
 
-	![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
 
-11. On the **Company Access Setup complete** screen, tap **DONE**. Your device is now enrolled.
+
+![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
+
+15. On the **Company Access Setup complete** screen, tap **DONE**. Your device is now enrolled.
 
 	![Company access setup complete screen](./media/and-enroll-10-comp-access-setup-complete.png)
 
