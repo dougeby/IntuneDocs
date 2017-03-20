@@ -54,7 +54,6 @@ To reset your passcode:
 
 Different devices have different types of passcodes.
 
-
 |Device Type|What Happens When You Reset|
 |------------|-----------|
 |Android|Removes the existing passcode and creates a temporary passcode with both letters and numbers|

@@ -34,7 +34,7 @@ Users can do the following tasks from the Company Portal website:
 
 -   [Remove your device](remove-your-device-cpwebsite.md)
 
--   [Reset your device](reset-your-device-cpwebsite.md)
+-   [Reset (erase) your device](reset-erase-your-device-cpwebsite.md)
 
 -   [Reset your device passcode](reset-your-passcode-cpwebsite.md)
 
