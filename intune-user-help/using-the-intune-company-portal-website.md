@@ -18,7 +18,7 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852esearchScope: - User help
 ROBOTS:   
 #audience:
 #ms.devlang:
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -34,7 +34,7 @@ Users can do the following tasks from the Company Portal website:
 
 -   [Remove your device](remove-your-device-cpwebsite.md)
 
--   [Reset your device](reset-your-device-cpwebsite.md)
+-   [Reset (erase) your device](reset-erase-your-device-cpwebsite.md)
 
 -   [Reset your device passcode](reset-your-passcode-cpwebsite.md)
 
