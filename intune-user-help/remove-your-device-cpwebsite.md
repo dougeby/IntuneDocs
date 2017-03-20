@@ -18,7 +18,7 @@ ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226searchScope: - User help
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
