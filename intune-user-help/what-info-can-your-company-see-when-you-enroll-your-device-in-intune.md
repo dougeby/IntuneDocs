@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,3 +52,4 @@ When you enroll a device into management, you are giving your company's IT depar
 -   Owner
 -   Device name
 -   Manufacturer (for devices not made by Apple)
+-   Phone number (for work devices, the whole number. For personal devices, just the last four digits.)

@@ -30,19 +30,19 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-You can control mobile device access to corporate resources based on risk assessment conducted by Lookout, a device threat protection solution integrated with Microsoft Intune. Risk is assessed based on telemetry collected from devices by the Lookout service including:
+You can control mobile device access to corporate resources based on risk assessment conducted by Lookout, a Mobile Threat Defense solution integrated with Microsoft Intune. Risk is assessed based on telemetry collected from devices by the Lookout service including:
 - Operating system vulnerabilities
 - Malicious apps installed
 - Malicious network profiles
 
 You can  configure conditional access policies based on Lookout's risk assessment enabled through Intune compliance policies. Settings let you allow or block non-compliant devices based on detected threats.
 
-## How do Intune and Lookout device threat protection help protect company resources?
+## How do Intune and Lookout Mobile Threat Defense help protect company resources?
 Lookout’s mobile app, **Lookout for work**, is installed and run on mobile devices. This app captures file system, network stack, and device and application telemetry where available, then sends it to the Lookout cloud service to assess the device's risk for mobile threats. You can change risk level classifications for threats in the Lookout console to suit your requirements.  
 
-The compliance policy in Intune includes a rule for Lookout mobile threat protection based on Lookout risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled.
+The compliance policy in Intune includes a rule for Lookout Mobile Threat Defense based on Lookout risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled.
 
-If the device is found noncompliant, access to resources like Exchange Online and SharePoint Online can blocked. Users on blocked devices receive a steps to resolve the issue and regain access. Guidance is launched from the Lookout for work app.
+If the device is found non-compliant, access to resources like Exchange Online and SharePoint Online can blocked. Users on blocked devices receive a steps to resolve the issue and regain access. Guidance is launched from the Lookout for work app.
 
 ## Supported platforms:
 The following platforms are supported for Lookout when enrolled in Intune:
@@ -97,8 +97,8 @@ Detect threats to your network such as Man-in-the-middle attacks, and prevent sy
 
 ## Next steps
 Here are the main steps you must do to implement this solution:
-1.	[Set up your subscription with device threat protection](device-threat-protection-subscription-setup.md)
-2.	[Enable device threat protection connection in Intune](device-threat-protection-enable.md)
-3.  [Configure and deploy the device threat protection app](device-threat-protection-apps.md)
-4.	[Configure device threat protection compliance policy](device-threat-protection-policy.md)
-5.	[Troubleshoot device threat protection integration](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
+1.	[Set up your Lookout subscription](device-threat-protection-subscription-setup.md)
+2.	[Enable Lookout Mobile Threat Defense in Intune](device-threat-protection-enable.md)
+3.  [Configure and deploy Lookout Mobile Threat Defense app](device-threat-protection-apps.md)
+4.	[Configure Lookout device compliance policy](device-threat-protection-policy.md)
+5.	[Troubleshoot Lookout Mobile Threat Defense integration](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
