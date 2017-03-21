@@ -6,7 +6,7 @@ description: Enable mobile device management (MDM) for Windows devices with Micr
 keywords:
 author: NathBarn
 manager: angrobe
-ms.date: 02/26/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -77,9 +77,9 @@ In the [Intune administration console](http://manage.microsoft.com), choose **Ad
 
 ### Step 4: Tell your users how to enroll their devices and what to expect after they're brought into management.
 
-   For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows).
+   For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows).
 
-   For more information about end-user tasks, see [How to educate your end users about Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) and [End user guidance for Windows devices](../enduser/using-your-windows-device-with-intune.md).
+   For more information about end-user tasks, see [How to educate your end users about Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) and [End user guidance for Windows devices](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune).
 
 ### See also
 [Prerequisites for enrolling devices in Microsoft Intune](prerequisites-for-enrollment.md)
