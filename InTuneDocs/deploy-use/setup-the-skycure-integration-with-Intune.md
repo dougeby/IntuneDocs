@@ -36,7 +36,7 @@ You need to add Skycure apps into Azure AD to have Single Sign On capabilities.
 
 ### Azure AD account used to integrate Intune and Skycure
 
--   Make sure you have the Azure AD account properly configured in the [Skycure Management console](https://mc.skycure.com), before starting the Skycure Basic setup process.
+-   Make sure you have the Azure AD account properly configured in the [Skycure Management console](https://aad.skycure.com), before starting the Skycure Basic setup process.
 
 ### Full integration vs. Read-only
 
@@ -62,7 +62,7 @@ Skycure supports two modes of integration with Intune:
 > Directory, otherwise the login will fail. Skycure uses Azure Active Directory to authenticate its admin using
 > Single Sign On (SSO).
 
-1.  Go to [Skycure Management Console](https://mc.skycure.com).
+1.  Go to [Skycure Management Console](https://aad.skycure.com).
 
 2.  Enter your **Skycure admin credentials**, then click **Continue**.
 
@@ -96,7 +96,7 @@ Skycure syncs the devices running its Mobile Threat Defense service with the Azu
 
 ## Set up the full integration between Intune and Skycure
 
-1.  Go to [Skycure Management Console](https://mc.skycure.com).
+1.  Go to [Skycure Management Console](https://aad.skycure.com).
 
 2.  Enter your **Skycure admin credentials**, then click **Continue**.
 

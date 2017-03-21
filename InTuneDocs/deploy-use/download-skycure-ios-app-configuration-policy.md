@@ -39,7 +39,7 @@ You need to log in to the Skycure Management Console to perform the next steps.
 
 ## To download the iOS app configuration policy
 
-1.  Go to [Skycure Management Console](https://mc.skycure.com).
+1.  Go to [Skycure Management Console](https://aad.skycure.com).
 
 2.  Enter your **Skycure admin credentials**, then click **Continue**.
 

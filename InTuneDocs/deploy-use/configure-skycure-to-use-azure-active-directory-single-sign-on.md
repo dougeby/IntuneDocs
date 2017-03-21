@@ -78,7 +78,7 @@ You might want to create a dedicated user group which contain users running Skyc
 
 ## Configure the Azure AD account to integrate Intune with Skycure
 
-1.  From the [Skycure Management Console](https://mc.skycure.com/), enter the Azure Active Directory Tenant ID previously saved in the text file.
+1.  From the [Skycure Management Console](https://aad.skycure.com/), enter the Azure Active Directory Tenant ID previously saved in the text file.
 
 ![Skycure Management console Azure AD Tenant ID field](../media/mtp/skycure-sso-5.png)
 

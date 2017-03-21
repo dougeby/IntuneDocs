@@ -110,7 +110,7 @@ Detect threats like **Man-in-the-middle** in network, and prevent synchronizatio
 
 ## Pre-requisites
 
--   Azure Active Directory
+-   Azure Active Directory Premium
 
 -   Microsoft Intune subscription
 
