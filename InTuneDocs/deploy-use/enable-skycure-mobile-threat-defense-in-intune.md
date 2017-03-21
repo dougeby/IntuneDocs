@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-To enable the Skycure malicious threat protection (MTD) connection in Intune, you should have already configured the [Intune Connector in the Skycure console](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune).
+To enable the Skycure mobile threat defense (MTD) connection in Intune, you should have already configured the [Intune Connector in the Skycure console](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune).
 
 ## To enable the Skycure MTD connection in Intune
 

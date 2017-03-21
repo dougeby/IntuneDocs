@@ -167,7 +167,7 @@
 ##### [Deploy apps to be used with Lookout](deploy-use/device-threat-protection-apps.md)
 ##### [Create Lookout compliance policy in Intune](deploy-use/device-threat-protection-policy.md)
 #### [Skycure Mobile Threat Defense connector](deploy-use/skycure-mobile-threat-defense-connector.md)
-##### [Configure Azure AD SSO](deploy-use/device-threat-protection-subscription-setup.md)
+##### [Configure Azure AD SSO](deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on.md)
 ##### [Download iOS app configuration policy](deploy-use/download-skycure-ios-app-configuration-policy.md)
 ##### [Add and configure apps](deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy.md)
 ##### [Deploy apps to be used with Skycure](deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy.md)
