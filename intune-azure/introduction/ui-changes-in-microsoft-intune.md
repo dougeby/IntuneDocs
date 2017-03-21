@@ -94,21 +94,25 @@ This lists serial numbers for both Apple DEP and Configurator enrollment in a si
 
 In the classic console, you can pre-list the IMEI numbers of devices to mark them as corporate when they enrolled to Intune:
 
-**NEED ART**
+![Image of classic list of IMEI numbers](./media/ui-changes/12-classic-corp-imei.png)
 
 In the Azure console, you must upload the same IMEI to the Corporate Device Identifiers list with a comma-separated-values (CSV) file. The new portal will not support manual entry of IMEI numbers:
 
-**NEED ART**
+![Image of Azure list of IMEI number](./media/ui-changes/13-azure-corp-imei.png)
 
 Intune in the Azure portal is future-proofed to support other types of identifiers beside IMEI, but currently only allows IMEI numbers for pre-listing.
 
 ## Corporate Device Enrollment profiles separated by type
 To enroll iOS devices through the Apple Device Enrollment Program or with the Apple Configurator tool, you must supply a Corporate Device Enrollment profile to be assigned the device. In the classic console, the creation and management of these profiles was located in a single list:
 
-**NEED ART**
+![Image of classic device enrollment profiles](./media/ui-changes/14-classic-corp-profiles.png)
 
 This list shows profiles enabled for use with the Apple Device Enrollment Program (**DEP On**) and profile only enabled for use with the Apple Configurator tool (**DEP Off**).
 
 To reduce confusion between the two profile types and potential mis-matched assignments (DEP profile to Configurator devices and vice-versa), we have separated creation and management of Enrollment Program profiles (support both Apples Device Enrollment Program and Apple School Manager) and Apple Configurator profiles:
 
-**NEED 2 ART**
+**DEP profiles**
+![Image of Azure DEP profiles](./media/ui-changes/15-azure-dep-profiles.png)
+
+**Apple Configurator profiles**
+![Image of Azure Apple Configurator profiles](./media/ui-changes/16-azure-ac-profiles.png)
