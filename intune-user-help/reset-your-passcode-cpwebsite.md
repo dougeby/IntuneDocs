@@ -4,14 +4,17 @@
 title: How to reset your passcode from the Company Portal website | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 03/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86searchScope: - User help
+ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -54,12 +57,13 @@ To reset your passcode:
 
 Different devices have different types of passcodes.
 
-|Device Type|What Happens When You Reset|
-|------------|-----------|
-|Android|Removes the existing passcode and creates a temporary passcode with both letters and numbers|
-|iOS|Removes the existing passcode and does not create a temporary passcode. If you're using the Touch ID fingerprint scanner for opening your device or making purchases, you'll need to set it up again.|
-|Windows 10 Mobile|Removes the existing passcode and creates a temporary passcode with both letters and numbers. If you're using Windows Hello facial recognition to log in, it will still be supported.|
-|Windows Phone 8.1|Removes the existing passcode and creates a temporary passcode with numbers.|
+  **Android**: Removes the existing passcode and creates a temporary passcode with both letters and numbers
+
+  **iOS**: Removes the existing passcode and does not create a temporary passcode. If you're using the Touch ID fingerprint 		scanner for opening your device or making purchases, you'll need to set it up again.
+
+  **Windows 10 Mobile**: Removes the existing passcode and creates a temporary passcode with both letters and numbers. If you're 		using Windows Hello facial recognition to log in, it will still be supported.
+	
+  **Windows Phone 8.1**: Removes the existing passcode and creates a temporary passcode with numbers
 
 6.  Unlock your device and set a new passcode, or change the temporary passcode by going to your device **Settings**.
 
