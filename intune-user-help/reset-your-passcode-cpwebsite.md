@@ -55,7 +55,7 @@ To reset your passcode:
 
   ![The second reset passcode banner with its warning about resetting device passcode and how the passcode will be removed from the device. It also advises how to set a new passcode by going to device settings to do so.](./media/iwp-reset-passcode-2nd-popup.png)
 
-Different devices have different types of passcodes.
+  Different devices have different types of passcodes.
 
   **Android**: Removes the existing passcode and creates a temporary passcode with both letters and numbers
 
