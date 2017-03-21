@@ -6,7 +6,7 @@ description: "Intune Azure preview: Enable Intune mobile device management (MDM)
 keywords:
 author: nathbarn
 manager: nathbarn
-ms.date: 03/15/17
+ms.date: 03/21/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,23 +36,13 @@ Use one of the following methods to set up enrollment for Windows devices:
  -  You must have Azure Active Directory Premium to use this method. Otherwise, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
  -  If you choose not to enable automatic enrollment, use the enrollment method for Windows 8.1 and Windows Phone 8.1.
 
-- [**Windows 8.1 and Windows Phone 8.1 enrollment by configuring CNAME**](#simplify-enrollment-by-configuring-cname)
+- [**Enrollment without Azure AD Premium automatic enrollment**](#enable-windows-enrollment-without-azure-ad-premium)
  - You must use this method to enroll Windows 8.1 and Windows Phone 8.1 devices.
- - You can also use this method if you don't have Azure Active Directory (AD) Premium.
-
-
-## Prerequisites
-
-If some of the following prerequisites aren't in the Intune Azure preview yet, you'll need to do them from the classic Intune admin console.
-
-- [Configure a custom domain name](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Set the mobile device management (MDM) authority](set-mdm-authority.md) as **Microsoft Intune**
-- [Configure the Company Portal app](/intune-azure/manage-apps/company-portal-app.md)
-- Assign licenses to users
+ - You can use this method for Windows 8.1 and later devices if you don't want to use Azure Active Directory (AD) Premium.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## Enable Windows workplace enrollment
+## Enable Windows enrollment without Azure AD Premium
 
 You can let users install and enroll their devices without Azure AD Premium automatic enrollment. If you create DNS CNAME resource records,  users connect and enroll in Intune without entering a server name.
 
