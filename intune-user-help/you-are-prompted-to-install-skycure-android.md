@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to install Skycure
+# You need to install Skycure on your Android device
 
 Before you can access your work, your IT admin needs you to install the Skycure app, which helps to protect your device by finding potential security threats.
 
@@ -49,23 +49,25 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
 6. Tap **Accept** to give Skycure permission to sign you in and read your profile.
 
-7. Review the items about how Lookout protects your device, and then tap **OK**.
+7. Review the items about how Skycure protects your device, and then tap **OK**. Skycure will take a few moments to set up, then will begin to check for security threats on your device.
 
-	![review how Skycure protects your device](./media/lookout-how-it-protects-your-device-android.png)
+  Skycure starts to check right away for security threats on your device.
 
-	When you see the following screen, Lookout is now set up and connected.
+  ![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)
 
-	![you are now connected to Skycure](./media/lookout-you-are-now-connected-android.png)
+  If Skycure finds a security threat on your device, you will see instructions about how to fix the issue.
 
-	Skycure starts to check right away for security threats on your device. If no threats are found, you’ll see the following screen.
+  ![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)
 
-	![Skycure found no security threats](./media/lookout-scan-no-threats-found-android.png)
+  If no threats are found, all three threat types will appear green.
 
 	The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
 	![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
 
-	If Skycure finds a security threat on your device, you will see instructions about how to fix the issue.
+
+
+
 
 **If the installation doesn't work**
 

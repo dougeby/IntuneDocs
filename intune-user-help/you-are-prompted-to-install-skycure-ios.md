@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +46,6 @@ Before you can access your work, your IT administrator needs you to install the 
 4. At the prompt asking you to allow Skycure to send you notifications, tap **Allow**.
 
 	![Tap Settings and then Location Services](./media/ios-lfw-allow-notifications.png)
-
 
 Skycure finishes installing, and you see the following screen if no security threats are found on your device.
 
