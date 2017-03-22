@@ -41,9 +41,7 @@ To enable the Skycure mobile threat defense (MTD) connection in Intune, you shou
 	![Enable Skycure toggle in Intune classic console](../media/mtp/enable-skycure-1.png)
 
 > [!IMPORTANT] 
-> You must configure the Skycure apps before creating compliance policy rules and configuring
-> conditional access. This ensures that the app is ready and available for end users to install before they can get
-> access to email or other company resources.
+> You must configure the Skycure apps before creating compliance policy rules and configuring conditional access. This ensures that the app is ready and available for end users to install before they can get access to email or other company resources.
 
 This completes the setup of the Skycure and Intune integration in the Intune administrator console. The next few steps to implement this solution involve deploying the Skycure for Work apps and setting up the compliance policy.
 

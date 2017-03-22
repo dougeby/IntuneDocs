@@ -60,9 +60,8 @@ As part of the Skycure Mobile Threat Defense setup, in the Skycure console, you 
 
     d.  **High**: This is the least secure. This allows all threat levels, and uses Skycure mobile threat defense for reporting purposes only.
 
-> [!IMPORTANT] If you create conditional access policies for Office 365 or other services, this compliance
-> evaluation is assessed and non-compliant devices are blocked from accessing those services until the threat is
-> resolved.
+> [!IMPORTANT] 
+> If you create conditional access policies for Office 365 or other services, this compliance evaluation is assessed and non-compliant devices are blocked from accessing those services until the threat is resolved.
 
 ## <span id="monitor-device-threats" class="anchor"><span id="next-steps" class="anchor"><span id="_Toc477360344" class="anchor"></span></span></span>Next steps
 
