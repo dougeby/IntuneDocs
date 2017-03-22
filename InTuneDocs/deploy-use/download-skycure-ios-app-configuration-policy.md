@@ -34,8 +34,8 @@ ms.custom: intune-classic
 
 You need to log in to the Skycure Management Console to perform the next steps.
 
-> [!TIP] If using Microsoft Internet explorer 11 or Edge, you might need to open the
-> Skycure Management console using In-Private mode.
+> [!TIP] 
+> If using Microsoft Internet explorer 11 or Edge, you might need to open the Skycure Management console using In-Private mode.
 
 ## To download the iOS app configuration policy
 
