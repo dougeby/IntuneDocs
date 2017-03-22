@@ -58,9 +58,8 @@ Skycure supports two modes of integration with Intune:
 
 ## To set up the read-only integration between Intune and Skycure
 
-> [!IMPORTANT] The Skycure admin credentials is an e-mail that must belong to a valid user in the Azure Active
-> Directory, otherwise the login will fail. Skycure uses Azure Active Directory to authenticate its admin using
-> Single Sign On (SSO).
+> [!IMPORTANT] 
+> The Skycure admin credentials is an e-mail that must belong to a valid user in the Azure Active Directory, otherwise the login will fail. Skycure uses Azure Active Directory to authenticate its admin using Single Sign On (SSO).
 
 1.  Go to [Skycure Management Console](https://aad.skycure.com).
 
@@ -80,7 +79,8 @@ Skycure supports two modes of integration with Intune:
 
     ![iOS app completation screen](../media/mtp/skycure-setup-3.png)
 
-> [!NOTE] Repeat the same process for the **Skycure Android** and **Management** apps.
+> [!NOTE] 
+> Repeat the same process for the **Skycure Android** and **Management** apps.
 
 ### Add an Azure AD Security group into Skycure
 
