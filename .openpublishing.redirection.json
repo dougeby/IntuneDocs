@@ -291,7 +291,7 @@
         "source_path": "intune-azure/enroll-devices/enroll-window-devices.md",
         "redirect_url": "https://docs.microsoft.com/intune-azure/enroll-devices/enroll-windows-devices",
         "redirect_document_id": true
-    }
+    },
     {
         "source_path": "intune-azure/enroll-devices/set-up-windows-phone-management.md",
         "redirect_url": "https://docs.microsoft.com/intune-azure/enroll-devices/enroll-windows-devices",
