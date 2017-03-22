@@ -79,7 +79,7 @@ In the [Intune administration console](http://manage.microsoft.com), choose **Ad
 
    For end-user enrollment instructions, see [Enroll your Windows device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows).
 
-   For more information about end-user tasks, see [How to educate your end users about Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) and [End user guidance for Windows devices](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune).
+   For more information about end-user tasks, see [How to educate your end users about Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) and [End user guidance for Windows devices](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune).
 
 ### See also
 [Prerequisites for enrolling devices in Microsoft Intune](prerequisites-for-enrollment.md)

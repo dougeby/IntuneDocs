@@ -202,6 +202,8 @@
 
 ## [How to educate your end users about Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
 ### [Company Portal messages end users see](deploy-use/help-end-users-understand-company-portal-app-messages.md)
+### [End user experience for Android with MAM-enabled apps](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+### [End user experience for iOS with MAM-enabled apps](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 ### [How your Android users get their apps](deploy-use/how-your-android-users-get-their-apps.md)
 ### [How your iOS users get their apps](deploy-use/how-your-ios-users-get-their-apps.md)
 ### [How your Windows users get their apps](deploy-use/how-your-windows-users-get-their-apps.md)

@@ -74,7 +74,8 @@ You might want to create a dedicated user group which contain users running Skyc
 
 -   Learn more [how to create a group and add members in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
 
-> [!NOTE] You can also use an existing Azure AD security group.
+> [!NOTE] 
+> You can also use an existing Azure AD security group.
 
 ## Configure the Azure AD account to integrate Intune with Skycure
 
@@ -82,8 +83,8 @@ You might want to create a dedicated user group which contain users running Skyc
 
 ![Skycure Management console Azure AD Tenant ID field](../media/mtp/skycure-sso-5.png)
 
-> [!IMPORTANT] Skycure validates if the Azure AD Tenant ID exists by querying
-> Azure AD, once Skycure finds it, the admin can proceed to next step, which is the Basic setup.
+> [!IMPORTANT] 
+> Skycure validates if the Azure AD Tenant ID exists by querying Azure AD, once Skycure finds it, the admin can proceed to next step, which is the Basic setup.
 
 ## Next steps
 
