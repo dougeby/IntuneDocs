@@ -45,9 +45,8 @@ You need to log in to the Skycure Management Console to perform the next steps.
 
 	![Skycure Management console login](../media/mtp/skycure-ios-app-1.png)
 
-	> [!IMPORTANT] The Skycure admin username is an e-mail account that must be a valid
-	> user account in the Azure Active Directory, otherwise the login will fail. Skycure uses Azure
-	> Active Directory to authenticate its admin username using Single Sign On (SSO).
+	> [!IMPORTANT] 
+	> The Skycure admin username is an e-mail account that must be a valid user account in the Azure Active Directory, otherwise the login will fail. Skycure uses Azure Active Directory to authenticate its admin username using Single Sign On (SSO).
 
 3.  Go to **Settings** &gt; **Device Management Integrations** &gt; **EMM Integration Selection**, choose **Microsoft Intune**, then save your selection.
 
