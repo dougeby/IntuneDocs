@@ -33,17 +33,17 @@ We took the opportunity to organize some tasks more logically as we moved Intune
 |------------||---------------|---------------|
 |Device Enrollment Program (DEP) |Admin > Mobile Device Management > iOS and Mac OS X > Device Enrollment Program|[Enroll Devices > Apple Enrollment > Enrollment Program Token](#Where-did-Apple-DEP-go) |
 |Device Enrollment Program (DEP)| Admin > Mobile Device Management > iOS and Mac OS X > Device Enrollment Program |[Enroll Devices > Apple Enrollment > Enrollment Program Serial Numbers](#Where-did-Apple-DEP-go) |
-|Enrollment Rules |Admin > Mobile Device Management > Enrollment Rules|[Enroll Devices > Enrollment Restrictions](#Where-did-enrollment-rules-go-?) |
-|Groups by iOS Serial Number |Groups > All Devices > Corporate Pre-enrolled devices > By iOS Serial Number|[Enroll Devices > Apple Enrollment > Enrollment Program Serial Numbers](#Where-did-corporate-pre-enrolled-devices-go-?) |
-|Groups by iOS Serial Number |Groups > All Devices > Corporate Pre-enrolled devices > By iOS Serial Number| [Enroll Devices > Apple Enrollment > AC Serial numbers](#Where-did-corporate-pre-enrolled-devices-go-?)|
+|Enrollment Rules |Admin > Mobile Device Management > Enrollment Rules|[Enroll Devices > Enrollment Restrictions](#Where-did-enrollment-rules-go) |
+|Groups by iOS Serial Number |Groups > All Devices > Corporate Pre-enrolled devices > By iOS Serial Number|[Enroll Devices > Apple Enrollment > Enrollment Program Serial Numbers](#Where-did-corporate-pre-enrolled-devices-go) |
+|Groups by iOS Serial Number |Groups > All Devices > Corporate Pre-enrolled devices > By iOS Serial Number| [Enroll Devices > Apple Enrollment > AC Serial numbers](#Where-did-corporate-pre-enrolled-devices-go)|
 || Groups > All Devices > Corporate Pre-enrolled devices > By IMEI (All platforms) | Enroll Devices > Corporate Device Identifiers|
-| | Policy > Corporate Device Enrollment | [Enroll Devices > Apple Enrollment > Enrollment Program Profiles](#Where-did-corporate-pre-enrolled-devices-go-?) |
-| | Policy > Corporate Device Enrollment | [Enroll Devices > Apple Enrollment > AC Profiles](#Where-did-corporate-pre-enrolled-devices-go-?) |
+| | Policy > Corporate Device Enrollment | [Enroll Devices > Apple Enrollment > Enrollment Program Profiles](#Where-did-corporate-pre-enrolled-devices-go) |
+| | Policy > Corporate Device Enrollment | [Enroll Devices > Apple Enrollment > AC Profiles](#Where-did-corporate-pre-enrolled-devices-go) |
 
-## Where do I manage groups?
+## Where do I manage groups
 Intune on Azure uses [Azure Active Directory (AD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-create-azure-portal) to manage groups.
 
-## Where did enrollment rules go?
+## Where did enrollment rules go
 In the classic console, you could set rules governing the MDM enrollment of mobile and modern Windows and macOS devices:
 
 ![Image of classic mobile device enrollment rules](./media/ui-changes/01-classic-rules.png)
@@ -66,7 +66,7 @@ The ability to allow or block personally owned devices is now managed under the 
 
 New restriction capabilities will be added to the Azure Portal only.
 
-## Where did Apple DEP go?
+## Where did Apple DEP go
 In the classic console, you could set up Intune to integrate with Apple’s Device Enrollment Program and manually request synchronization with Apple’s service:
 
 ![Image of classic DEP token](./media/ui-changes/06-classic-dep-token.png)
@@ -79,7 +79,7 @@ However the **Sync** option in the classic console has been moved to the serial 
 
 ![Image of Azure DEP sync](./media/ui-changes/08-azure-dep-sync.png)
 
-## Where did corporate pre-enrolled devices go?
+## Where did corporate pre-enrolled devices go
 ### By iOS serial number
 In the classic console, you can enroll iOS devices through the Apple Device Enrollment Program (DEP) and the Apple Configurator tool. Both methods offer device pre-enrollment by serial number and involve the assignment of special Corporate Device Enrollment profiles. Prior to enrollment, the enrollment profile assignment can be managed through the **Corporate Pre-enrolled Device by iOS Serial Number** device group:
 
@@ -105,7 +105,7 @@ In the Azure console, you must upload the same IMEI to the Corporate Device Iden
 
 Intune in the Azure portal is future-proofed to support other types of identifiers beside IMEI, but currently only allows IMEI numbers for pre-listing.
 
-## Where did corporate Device Enrollment profiles go?
+## Where did corporate Device Enrollment profiles go
 To enroll iOS devices through the Apple Device Enrollment Program or with the Apple Configurator tool, you must supply a Corporate Device Enrollment profile to be assigned the device. In the classic console, the creation and management of these profiles was located in a single list:
 
 ![Image of classic device enrollment profiles](./media/ui-changes/14-classic-corp-profiles.png)
