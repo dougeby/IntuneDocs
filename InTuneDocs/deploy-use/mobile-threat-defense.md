@@ -45,14 +45,15 @@ The connector protects company resources by creating a channel of communication 
 
 When a device is considered infected by the Mobile Threat Defense solution:
 
-![](http://i.imgur.com/kF8tI42.png)
+![Mobile Threat Defense infected device](../media/mtp/MTD-image-1.png)
 
 Access is granted when the device is remediated:
 
-![](http://i.imgur.com/zG4ZrzX.png)
+![Mobile Threat Defense Access granted](../media/mtp/MTD-image-2.png)
 
 ## Mobile Threat Defense partners
 
 Learn how to protect access to company resource based on device, network, and application risk with:
 
 - [Lookout](https://docs.microsoft.com/intune/deploy-use/lookout-mobile-threat-defense-connector)
+- [Skycure](https://docs.microsoft.com/intune/deploy-use/mobile-threat-defense)
