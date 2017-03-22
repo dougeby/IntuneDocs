@@ -80,7 +80,7 @@ Skycure supports two modes of integration with Intune:
 
     ![iOS app completation screen](../media/mtp/skycure-setup-3.png)
 
-[!NOTE] Repeat the same process for the **Skycure Android** and **Management** apps.
+> [!NOTE] Repeat the same process for the **Skycure Android** and **Management** apps.
 
 ### Add an Azure AD Security group into Skycure
 

@@ -68,8 +68,8 @@ As part of the Skycure Mobile Threat Defense setup, in the Skycure console, you 
 
 -   Create a conditional access policy for:
 
-	-   [Exchange Online](file:///C:\Users\andredm\Desktop\temp-writting\2017\March\Intune\Skycure\restrict-access-to-exchange-online-with-microsoft-intune.md)
-	-   [Exchange On-premises](file:///C:\Users\andredm\Desktop\temp-writting\2017\March\Intune\Skycure\restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-	-   [SharePoint Online](file:///C:\Users\andredm\Desktop\temp-writting\2017\March\Intune\Skycure\restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-	-   [Skype for Business Online](file:///C:\Users\andredm\Desktop\temp-writting\2017\March\Intune\Skycure\restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-	-   [Dynamics CRM](file:///C:\Users\andredm\Desktop\temp-writting\2017\March\Intune\Skycure\restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+	-   [Exchange Online](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
+	-   [Exchange On-premises](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
+	-   [SharePoint Online](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune)
+	-   [Skype for Business Online](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)
+	-   [Dynamics CRM](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune)
