@@ -41,10 +41,10 @@ We took the opportunity to organize some tasks more logically as we moved Intune
 | | Policy > Corporate Device Enrollment | [Enroll Devices > Apple Enrollment > AC Profiles](#where-did-corporate-pre-enrolled-devices-go) |
 
 
-## Where do I manage groups
+## Where do I manage groups?
 Intune on Azure uses [Azure Active Directory (AD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-create-azure-portal) to manage groups.
 
-## Where did enrollment rules go
+## Where did enrollment rules go?
 In the classic console, you could set rules governing the MDM enrollment of mobile and modern Windows and macOS devices:
 
 ![Image of classic mobile device enrollment rules](./media/ui-changes/01-classic-rules.png)
@@ -80,7 +80,7 @@ However the **Sync** option in the classic console has been moved to the serial 
 
 ![Image of Azure DEP sync](./media/ui-changes/08-azure-dep-sync.png)
 
-## Where did corporate pre-enrolled devices go
+## Where did corporate pre-enrolled devices go?
 ### By iOS serial number
 In the classic console, you can enroll iOS devices through the Apple Device Enrollment Program (DEP) and the Apple Configurator tool. Both methods offer device pre-enrollment by serial number and involve the assignment of special Corporate Device Enrollment profiles. Prior to enrollment, the enrollment profile assignment can be managed through the **Corporate Pre-enrolled Device by iOS Serial Number** device group:
 
@@ -106,7 +106,7 @@ In the Azure console, you must upload the same IMEI to the Corporate Device Iden
 
 Intune in the Azure portal is future-proofed to support other types of identifiers beside IMEI, but currently only allows IMEI numbers for pre-listing.
 
-## Where did corporate Device Enrollment profiles go
+## Where did corporate Device Enrollment profiles go?
 To enroll iOS devices through the Apple Device Enrollment Program or with the Apple Configurator tool, you must supply a Corporate Device Enrollment profile to be assigned the device. In the classic console, the creation and management of these profiles was located in a single list:
 
 ![Image of classic device enrollment profiles](./media/ui-changes/14-classic-corp-profiles.png)
