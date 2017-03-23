@@ -40,6 +40,7 @@ We took the opportunity to organize some tasks more logically as we moved Intune
 | | Policy > Corporate Device Enrollment | [Enroll Devices > Apple Enrollment > Enrollment Program Profiles](#where-did-corporate-pre-enrolled-devices-go-?) |
 | | Policy > Corporate Device Enrollment | [Enroll Devices > Apple Enrollment > AC Profiles](#where-did-corporate-pre-enrolled-devices-go-?) |
 
+
 ## Where do I manage groups?
 Intune on Azure uses [Azure Active Directory (AD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-create-azure-portal) to manage groups.
 
