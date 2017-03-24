@@ -51,7 +51,7 @@ If you get an error while you try to enroll your device in Intune, you can [send
 
     ![The Company Portal app for Android welcome screen, which asks the user to sign in with their required work or school account. It also cautions that Microsoft accounts and other personal accounts are not accepted.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  If your IT admin set up company terms and conditions, tap **ACCEPT** to accept the terms.
+4.  If your IT admin set up company terms and conditions, tap **ACCEPT** to accept the terms. This screen may differ slightly from the image below based on the version of Android you're currently using.
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
