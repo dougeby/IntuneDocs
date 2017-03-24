@@ -36,17 +36,17 @@ To resolve the issue, open the Skycure app, and follow the instructions shown in
 ## What you might see if your enrolled device is blocked from accessing email or files
 
 If there is a virus or other security threat on your enrolled device, and you try to access your company email or files, you might see a message like this one:
-
+<!--- - 
 ![Skycure error message with link to Company Portal website](./media/lookout-go-to-device-management-portal-android.png)
-
+--->
 Tap the **device management portal** link to go to the [Company Portal website](http://portal.manage.microsoft.com), where you will see instructions on how to fix the issue.
 
 ## Example of an app that Skycure sees as a threat
 
 If you have installed an app that Skycure thinks is a threat, you see a screen that is similar to this one:
-
+<!--- - 
 ![example of Skycure virus alert message](./media/ios-lfw-threat-example.png)
-
+--->
 If you see something like this, tap the app name shown at the top of your screen, and follow the instructions to remove the threat.
 
 After you uninstall the app, you regain access to your email and other company or school data right away. If you ignore the request to uninstall the app, you will lose access to your company email and data until you uninstall the app.
