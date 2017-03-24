@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -82,6 +82,6 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
 **If the installation doesn't work**
 
-Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work manually from the Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise)
+Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing Lookout for Work [manually from the Play Store](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).
