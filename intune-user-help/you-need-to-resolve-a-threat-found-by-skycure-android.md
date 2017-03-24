@@ -44,8 +44,8 @@ Tap the **device management portal** link to go to the [Company Portal website](
 ## Example of an app that Skycure sees as a threat
 
 If you have installed an app that Skycure thinks is a threat, you'll see a screen that is similar to this one:
-
-![example of Skycure virus alert message](./media/lookout-virus-alert-android.png)
+<!--- - 
+![example of Skycure virus alert message](./media/lookout-virus-alert-android.png)--->
 
 After you uninstall the app, you regain access to your company email and data right away. If you ignore the request to uninstall the app, you will lose access to your email and data until you uninstall the app.
 
