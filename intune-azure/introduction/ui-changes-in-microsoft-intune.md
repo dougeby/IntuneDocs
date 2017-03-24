@@ -36,7 +36,7 @@ We took the opportunity to organize some tasks more logically as we moved Intune
 |Enrollment Rules |Admin > Mobile Device Management > Enrollment Rules|[Enroll Devices > Enrollment Restrictions](#where-did-enrollment-rules-go) |
 |Groups by iOS Serial Number |Groups > All Devices > Corporate Pre-enrolled devices > By iOS Serial Number|[Enroll Devices > Apple Enrollment > Enrollment Program Serial Numbers](#where-did-corporate-pre-enrolled-devices-go) |
 |Groups by iOS Serial Number |Groups > All Devices > Corporate Pre-enrolled devices > By iOS Serial Number| [Enroll Devices > Apple Enrollment > AC Serial numbers](#where-did-corporate-pre-enrolled-devices-go)|
-|Groups by IMEI (all platforms)| Groups > All Devices > Corporate Pre-enrolled devices > By IMEI (All platforms) | Enroll Devices > Corporate Device Identifiers|
+|Groups by IMEI (all platforms)| Groups > All Devices > Corporate Pre-enrolled devices > By IMEI (All platforms) | [Enroll Devices > Corporate Device Identifiers](#by-imei-all-platforms)|
 | Corporate Device Enrollment profile| Policy > Corporate Device Enrollment | [Enroll Devices > Apple Enrollment > Enrollment Program Profiles](#where-did-corporate-pre-enrolled-devices-go) |
 | Corporate Device Enrollment profile | Policy > Corporate Device Enrollment | [Enroll Devices > Apple Enrollment > AC Profiles](#where-did-corporate-pre-enrolled-devices-go) |
 
