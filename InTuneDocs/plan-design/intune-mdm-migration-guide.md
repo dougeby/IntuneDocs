@@ -26,7 +26,7 @@ ms.custom: intune-classic
 
 ---
 
-# Intune mobile device management (MDM) Migration Guide
+# Intune migration guide
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
