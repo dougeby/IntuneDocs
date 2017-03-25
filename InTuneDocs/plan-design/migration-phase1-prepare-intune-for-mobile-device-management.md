@@ -30,7 +30,7 @@ ms.custom: intune-classic
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-Before diving into the details of setting up Intune, let’s review the mobile device management requirements of your organization. It might be helpful to run reports of active users in your current MDM provider to identify the critical user groups, then you can begin addressing the questions under the [Assess MDM requirements section](https://docs.microsoft.com/intune/plan-design/migration-phase1-setup-intune-mobile-device-management#assess-mdm-requirements).
+Before diving into the details of setting up Intune, let’s review the mobile device management requirements of your organization. It might be helpful to run reports of active users in your current MDM provider to identify the critical user groups, then you can begin addressing the questions under the [Assess MDM requirements section](https://docs.microsoft.com/intune/plan-design/migration-phase1-prepare-intune-for-mobile-device-management#assess-mdm-requirements).
 
 ## Assess MDM requirements
 
