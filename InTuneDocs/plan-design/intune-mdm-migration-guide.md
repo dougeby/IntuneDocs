@@ -74,4 +74,4 @@ It's important to recognize that your new Intune deployment might be different f
 
 ## Next steps
 
-[Phase 1: Setup Intune for mobile device management (MDM)](https://docs.microsoft.com/intune/plan-design/migration-phase1-setup-intune-mobile-device-management)
+[Phase 1: Prepare Intune for mobile device management (MDM)](https://docs.microsoft.com/intune/plan-design/migration-phase1-setup-intune-mobile-device-management)
