@@ -64,7 +64,10 @@ This guide includes two phases, both of which include tasks, strategies, and tac
 
 -   You've already evaluated Intune in a proof of concept (PoC) environment, and have decided to use it as the MDM solution in your organization.
 
--   You are already familiar with Intune and its features. Check the [Intune evaluation guide](https://docs.microsoft.com/intune/understand-explore/sign-up-for-30-day-trial-microsoft-intune), if you want to get more familiar with Intune and its features before you migrate.
+-   You are already familiar with Intune and its features. 
+
+> [!NOTE]
+> Check out the [Intune evaluation guide](https://docs.microsoft.com/intune/understand-explore/sign-up-for-30-day-trial-microsoft-intune), if you want to get more familiar with Intune before you migrate.
 
 ## Before you begin
 
