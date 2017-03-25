@@ -52,7 +52,7 @@
 ### [Phase 2: Migration campaign](plan-design/migration-phase2-migration-campaign.md)
 #### [Communication plan](plan-design/migration-phase2-communication-plan.md)
 #### [Drive adoption](plan-design/migration-phase2-drive-end-user-adoption-with-conditional-access.md)
-#### [Typical migration cycle](plan-design/migration-phase2-typical-migration-cycle)
+#### [Typical migration cycle](plan-design/migration-phase2-typical-migration-cycle.md)
 
 # [What's new](whats-new/whats-new-in-microsoft-intune.md)
 ## [What's new in app UI](whats-new/whats-new-in-intune-app-ui.md)
