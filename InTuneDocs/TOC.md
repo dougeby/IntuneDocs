@@ -32,7 +32,7 @@
 ### [Simplify email configuration on mobile devices](get-started/simplify-email-configuration-on-mobile-devices.md)
 ### [Protect Windows PCs against malware threats](get-started/protect-pcs-against-malware-threats.md)
 
-# [Plan and Design](plan-design/introduction.md)
+# Plan and Design
 ## [Deployment planning, design and implementation](introduction.md)
 ### [Section 1: Determine deployment goals, objectives and challenges](plan-design/section-1-determine-deployment-goals-objectives-challenges.md)
 ### [Section 2: Identify use case scenarios](plan-design/section-2-identify-use-case-scenarios.md)
