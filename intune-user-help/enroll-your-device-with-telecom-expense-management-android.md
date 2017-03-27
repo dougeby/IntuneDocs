@@ -32,7 +32,7 @@ ms.custom: intune-enduser
 
 Your organization may be using telecom expense management software to ensure that their data and voice plans are being used within acceptable limits. Once you have completed enrolling your device, you will then be prompted to select the best category for that device.
 
-![A screenshot of the "selecting the best category for a device" screen on an iOS device. It shows a selection of corporate or personal enrollment.](./media/and-enroll-11-tem-select-best-category.png)
+![A screenshot of the "selecting the best category for a device" screen on an iOS device. It shows a selection of corporate or personal enrollment.](./media/and-enroll-11-tem-select-category.png)
 
 1. Select the appropriate option, and you will receive a notification to install the [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) app from the Google Play Store. The Datalert app is how your organization can measure data usage. Tap the __next__ arrow at the top right corner of the screen to proceed.
 
