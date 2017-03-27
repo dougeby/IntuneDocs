@@ -90,6 +90,12 @@ If you have been using the Intune classic admin console, note the following diff
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
+##  Migration from Intune classic console to Intune Azure preview portal
+
+Device compliance policies created in the [Intune classic console](https://manage.microsoft.com) will not appear in the new [Intune Azure portal](https://portal.azure.com). However, they’ll still be targeted to users and manageable via the Intune classic console.
+
+If you want to take advantage of the new device compliance related features in the Intune Azure portal, you’ll need to create new device compliance policies in the Intune Azure portal itself. If you assign a new device compliance policy in the Intune Azure portal to a user whose also has been assigned with a device compliance policy from the Intune classic portal, then the device compliance policies from the Intune Azure portal takes precedence over the ones created in the Intune classic console.
+
 ##  Next steps
 
 [Get started on device compliance policies](get-started-with-device-compliance.md)
