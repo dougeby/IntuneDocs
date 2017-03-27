@@ -6,7 +6,7 @@ description: Decide how to enroll mobile devices in Intune by answering a few si
 keywords:
 author: NathBarnms.author: nathbarn
 manager: angrobe
-ms.date: 02/16/2017
+ms.date: 03/27/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,6 @@ ms.custom: intune-classic EXPIERIMENT
 
 Your answers to this series of questions will help determine the best enrollment method for the devices you manage.
 
-
 ## **How will you manage shared iOS devices?**
 
 > [!div class="button"]
@@ -46,5 +45,5 @@ Your answers to this series of questions will help determine the best enrollment
 
   - **Device Enrollment Manager** - Intune's device enrollment manager (DEM) allows a manager or administrator to enroll many mobile devices with a single user account. These devices cannot have user affinity (i.e. dedicated users) and must enroll by installing and signing in to the Company Portal app.
 
-  > [!div class="button"]
-  [< Back](choose-how-to-enroll-devices3.md)
+> [!div class="button"]
+[< Back](choose-how-to-enroll-devices3.md)

@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Enroll iOS devices with Apple Configurator and Setup Assistant 
+# Enroll iOS devices with Apple Configurator and Setup Assistant
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -105,50 +105,39 @@ After you create the profile and assign serial numbers, you have to export the p
 3. On the blade for the profile, select **Export Profile**.
 
 4. Copy the profile URL into [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12), with the iOs device attached. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
-
   To support Apple Configurator 2, the 2.0 Profile URL must be edited. To do so, replace this code:
     ```
     https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
     ```
     With this code:
-
     ```
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
     ```
-
-   You will upload this profile URL to the Apple DEP service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
+You will upload this profile URL to the Apple DEP service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
 
 5. Upload this profile URL to the Apple DEP service using Apple Configurator to define the Intune profile used by iOS devices.
+ 1.  On a Mac computer, open **Apple Configurator 2**. In the menu bar, choose **Apple Configurator 2**, and then choose **Preferences**.
 
+  > [!WARNING]
+  > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. Devices should be at the **Hello** screen when you connect the device.
 
-    1.  On a Mac computer, open **Apple Configurator 2**. In the menu bar, choose **Apple Configurator 2**, and then choose **Preferences**.
+  2. In the **preference**s pane, select **Servers** and choose the plus symbol (+) to launch the MDM Server wizard. Choose **Next**.
 
-         > [!WARNING]
-         > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. Devices should be at the **Hello** screen when you connect the device.
+  3. Enter the **Name** and **Enrollment URL** for the MDM server from Step #6 under Setup Assistant enrollment for iOS devices with Microsoft Intune. For the Enrollment URL, enter the enrollment profile URL exported from Intune. Choose **Next**.  
 
-    2. In the **preference**s pane, select **Servers** and choose the plus symbol (+) to launch the MDM Server wizard. Choose **Next**.
+  You can safely disregard a warning stating "server URL is not verified." To continue, choose **Next** until the wizard is finished.
 
-    3. Enter the **Name** and **Enrollment URL** for the MDM server from Step #6 under Setup Assistant enrollment for iOS devices with Microsoft Intune. For the Enrollment URL, enter the enrollment profile URL exported from Intune. Choose **Next**.  
+  4.  Connect the iOS mobile devices to the Mac computer with a USB adapter.
 
-       You can safely disregard a warning stating "server URL is not verified." To continue, choose **Next** until the wizard is finished.
+  > [!WARNING]
+  > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. Devices should be at the **Hello** screen when you start Setup Assistant.
 
-    4.  Connect the iOS mobile devices to the Mac computer with a USB adapter.
-
-        > [!WARNING]
-        > The devices will be reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. Devices should be at the **Hello** screen when you start Setup Assistant.
-
-    5.  Choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual** and then choose **Next**.
-
-    6. On the **Enroll in MDM Server** pane, select the server name you created, and then choose **Next**.
-
-    7. On the **Supervise Devices** pane, select the level of supervision, and then choose **Next**.
-
-    8. On the **Create an Organization** pane, choose the **Organization** or create a new organization, and then choose **Next**.
-
-    9. On the **Configure iOS Setup Assistant** pane, choose the steps to be presented to the user, and then choose **Prepare**. If prompted, authenticate to update trust settings.  
-
-    10. When the iOS device finishes preparing, disconnect the USB cable.  
-
+  5.  Choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual** and then choose **Next**.
+  6. On the **Enroll in MDM Server** pane, select the server name you created, and then choose **Next**.
+  7. On the **Supervise Devices** pane, select the level of supervision, and then choose **Next**.
+  8. On the **Create an Organization** pane, choose the **Organization** or create a new organization, and then choose **Next**.
+  9. On the **Configure iOS Setup Assistant** pane, choose the steps to be presented to the user, and then choose **Prepare**. If prompted, authenticate to update trust settings.  
+  10. When the iOS device finishes preparing, disconnect the USB cable.  
 6.  **Distribute devices**.
     The devices are now ready for corporate enrollment. Turn off the devices and distribute them to users. When users turn on their devices, Setup Assistant will start.
 

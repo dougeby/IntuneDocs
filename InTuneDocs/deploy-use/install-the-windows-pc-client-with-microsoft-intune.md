@@ -7,7 +7,7 @@ description: Use this guide to help you get your Windows PCs managed by the Micr
 keywords:
 author: nathbarn
 ms.author: nathbarn
-ms.date: 02/22/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -110,7 +110,7 @@ You can deploy the Intune client software to computers as part of an operating s
 
 ## Instruct users to self-enroll
 
-Users install the Intune client software by going to the [Company Portal website](http://portal.manage.microsoft.com). The exact information that users see in the web portal varies, depending on your account's MDM Authority and the OS platform/version of the user's PC. 
+Users install the Intune client software by going to the [Company Portal website](http://portal.manage.microsoft.com). The exact information that users see in the web portal varies, depending on your account's MDM Authority and the OS platform/version of the user's PC.
 
 If users haven't been assigned an Intune license or if the organization's MDM Authority hasn't been set to Intune, users aren't shown any options to enroll.
 
@@ -204,7 +204,7 @@ Using an elevated command prompt, run one of the following commands.
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
     ```
 
-**Method 2** note that not all of these agents are installed on every SKU of Windows):
+**Method 2**<br>Note that all of these agents are installed on every SKU of Windows:
 
     ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
@@ -251,7 +251,7 @@ Check "%ProgramFiles%\Microsoft\OnlineManagement" and ensure that only the follo
 - AgentInstaller
 - Logs
 - Updates
-- Common 
+- Common
 
 ### Remove the OnlineManagement folder
 
