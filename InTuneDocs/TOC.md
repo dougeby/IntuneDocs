@@ -33,7 +33,7 @@
 ### [Protect Windows PCs against malware threats](get-started/protect-pcs-against-malware-threats.md)
 
 # Plan and Design
-## [Deployment planning, design and implementation](introduction.md)
+## [Deployment planning, design and implementation](plan-design/introduction.md)
 ### [Section 1: Determine deployment goals, objectives and challenges](plan-design/section-1-determine-deployment-goals-objectives-challenges.md)
 ### [Section 2: Identify use case scenarios](plan-design/section-2-identify-use-case-scenarios.md)
 ### [Section 3: Determine use case scenario requirements](plan-design/section-3-determine-use-case-requirements.md)
