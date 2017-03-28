@@ -4,14 +4,17 @@
 title: You need to install Skycure on your Android device | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 03/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3dsearchScope: - User help
+ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -33,11 +36,11 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
 **What you need to do:**
 
-1.	Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Skycure from Play Store**. You can also find this inside of the Company Portal app under __Compliance Details__.
+1. Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Skycure from Play Store**. You can also find this inside of the Company Portal app under __Compliance Details__.
 
-	![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)
+  ![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)
 
-2.		You are taken to the Skycure installation page in the Play Store. Install Skycure, and then tap **ACCEPT** to let Skycure access your device.
+2. You are taken to the Skycure installation page in the Play Store. Install Skycure, and then tap **ACCEPT** to let Skycure access your device.
 
 3. Open Skycure, and then tap **VERIFY**.
 
@@ -62,10 +65,6 @@ If you have trouble with the installation, try the troublshooting steps at the e
   The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
   ![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
-
-
-
-
 
 **If the installation doesn't work**
 
