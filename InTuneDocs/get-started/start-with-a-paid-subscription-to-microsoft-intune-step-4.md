@@ -45,7 +45,7 @@ You can use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698
 4. The user account now has the permissions needed to use the service and enroll devices into management.
 
 > [!NOTE]
-> Note: Users will appear in the Admin console only after they have enrolled a device.
+> Users will appear in the Admin console only after they have enrolled a device.
 
 > You can select a group of users to edit at once, either selecting to add or replace a license for all selected users.
 
