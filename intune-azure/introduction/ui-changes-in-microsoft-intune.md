@@ -3,12 +3,12 @@
 
 title: Where did my Intune feature go in Azure?
 titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Helps you find Intune features in the Azure console"
+description: "Intune Azure preview: Helps you find Intune features in the Azure console."
 keywords:
-author: lindavr
+author: dagerrit
 ms.author: dagerrit
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/31/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
