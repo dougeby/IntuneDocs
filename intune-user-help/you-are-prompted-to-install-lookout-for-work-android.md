@@ -4,14 +4,17 @@
 title: You need to install Lookout for Work on your Android device | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fcsearchScope: - User help
+ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
+searchScope:
+ - User help
 
 # optional metadata
 
@@ -63,15 +66,15 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
   When you see the following screen, Lookout is now set up and connected.
 
-	![you are now connected to Lookout for Work](./media/lookout-you-are-now-connected-android.png)
+  ![you are now connected to Lookout for Work](./media/lookout-you-are-now-connected-android.png)
 
   Lookout for Work starts to check right away for security threats on your device. If no threats are found, you’ll see the following screen.
 
-	![Lookout for Work found no security threats](./media/lookout-scan-no-threats-found-android.png)
+  ![Lookout for Work found no security threats](./media/lookout-scan-no-threats-found-android.png)
 
   The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
-	![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
+  ![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
 
   If Lookout for Work finds a security threat on your device, you will see instructions about how to fix the issue.
 
