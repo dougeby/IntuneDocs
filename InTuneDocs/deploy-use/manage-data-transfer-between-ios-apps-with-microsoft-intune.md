@@ -35,7 +35,7 @@ Protecting your company data includes making sure that file transfers are restri
 
 -   You can also deploy and manage apps through the **MDM channel**.  This requires that the devices are enrolled in the MDM solution. These can be **policy-managed**  apps or other managed  apps.
 
-The **Open in management** feature for iOS devices can limit file transfers between apps that are deployed through the **MDM channel**. Open in management restrictions are set in configuration settings and deployed using your MDM solution.  When the user installs the deployed app, the restrictions you set are applied.
+The **Open-in management** feature for iOS devices can limit file transfers between apps that are deployed through the **MDM channel**. Open-in management restrictions are set in configuration settings and deployed using your MDM solution.  When the user installs the deployed app, the restrictions you set are applied.
 
 ##  Manage data transfer between iOS apps
 App protection policies can be used with the iOS **Open in management** feature to protect company data in the following ways:
@@ -79,9 +79,9 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 |Third-party MDM provider| Configuration Key | Value Type | Configuration Value|
 | ------- | ---- | ---- | ---- |
-|VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
-
+| VMware AirWatch | IntuneMAMUPN | String | {UserPrincipalName}|
+| MobileIron Core | IntuneMAMUPN | String | $EMAIL$ **or** $USER_UPN$ |
+| MobileIron Cloud | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
 
 ### Example 2: End-user experience
 
