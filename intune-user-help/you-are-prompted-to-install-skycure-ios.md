@@ -33,7 +33,7 @@ Before you can access your work, your IT administrator needs you to install the 
 
 1.	If you see the following prompt, tap **Install** to allow Skycure to be installed on your device.
 <!--- - 
-	![Tap install to install Skycure](./media/ios-lfw-install-app-request.png)
+	![Tap install to install Skycure](./media/ios-mtd-install-app-request.png)
 --->
 2. When you see the following message, tap **Settings**, turn on **Location Services**, and then tap **Continue**.
 <!--- - 
