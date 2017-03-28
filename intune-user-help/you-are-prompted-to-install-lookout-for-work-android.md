@@ -37,7 +37,7 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
   ![you are required to install Lookout for Work](./media/lookout-required-app-install-android.png)
 
-	You are taken to the Lookout for Work installation page in the Play Store.
+  You are taken to the Lookout for Work installation page in the Play Store.
 
 2.	Install Lookout for Work, and then tap **ACCEPT** to let Lookout for Work access your device.
 
@@ -59,25 +59,25 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
   ![tap Accept to give Lookout for Work permission to read your profile](./media/lookout-needs-permission-to-view-profile-android.png)
 
-	A screen shows that Lookout for Work is connecting to the Lookout Security Cloud.
+  A screen shows that Lookout for Work is connecting to the Lookout Security Cloud.
 
 7. Review the items about how Lookout protects your device, and then tap **OK**.
 
 	![review how Lookout for Work protects your device](./media/lookout-how-it-protects-your-device-android.png)
 
-	When you see the following screen, Lookout is now set up and connected.
+  When you see the following screen, Lookout is now set up and connected.
 
 	![you are now connected to Lookout for Work](./media/lookout-you-are-now-connected-android.png)
 
-	Lookout for Work starts to check right away for security threats on your device. If no threats are found, you’ll see the following screen.
+  Lookout for Work starts to check right away for security threats on your device. If no threats are found, you’ll see the following screen.
 
 	![Lookout for Work found no security threats](./media/lookout-scan-no-threats-found-android.png)
 
-	The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
+  The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
 	![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
 
-	If Lookout for Work finds a security threat on your device, you will see instructions about how to fix the issue.
+  If Lookout for Work finds a security threat on your device, you will see instructions about how to fix the issue.
 
 **If the installation doesn't work**
 
