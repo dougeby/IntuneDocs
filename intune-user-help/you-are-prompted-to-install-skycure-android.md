@@ -2,11 +2,11 @@
 # required metadata
 
 title: You need to install Skycure on your Android device | Microsoft Docs
-description:
+description: 
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 03/21/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -61,13 +61,9 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
   If no threats are found, all three threat types will appear green.
 
-	The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
+	The **Device Details** screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
-	![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
-
-
-
-
+	![Your device is now in compliance with policies](./media/mtd-device-now-compliant-android.png)
 
 **If the installation doesn't work**
 
