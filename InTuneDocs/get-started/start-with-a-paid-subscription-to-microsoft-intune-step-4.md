@@ -45,7 +45,7 @@ You can use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698
 4. The user account now has the permissions needed to use the service and enroll devices into management.
 
 > [!NOTE]
-> Users will appear in the Admin console only after they have enrolled a device. Also, you can select a group of users to edit at once, > either selecting to add or replace a license for all selected users.
+> Users will appear in the Admin console only after they have enrolled a device. Also, you can select a group of users to edit at once,  either selecting to add or replace a license for all selected users.
 
 ## Use PowerShell to selectively manage EMS user licenses
 Organizations that use Microsoft Enterprise Mobility + Security (formerly Enterprise Mobility Suite) might have users who only require Azure Active Directory Premium or Intune services in the EMS package. You can assign one or a subset of services using [Azure Active Directory PowerShell cmdlets](https://msdn.microsoft.com/library/jj151815.aspx).
