@@ -82,7 +82,7 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 <br></br>
 -   Do you need to support Virtual Private Network (VPN) at the device or app level?
 
-    -   Intune can provision VPN configurations for third-party MDM providers.
+    -   Intune can provision VPN configurations for third-party VPN providers.
 <br></br>
 -   Can temporary exceptions be made for certain requirements to avoid down time? Or must devices with access always comply with all security requirements?
 

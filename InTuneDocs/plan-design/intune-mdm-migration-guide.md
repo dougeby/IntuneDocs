@@ -42,7 +42,7 @@ This guide includes two phases, both of which include tasks, strategies, and tac
 
 -   [Phase 1: Prepare Intune for Mobile device management (MDM)](https://docs.microsoft.com/intune/plan-design/migration-phase1-prepare-intune-for-mobile-device-management)
 
-    -   [Assess your MDM migration requirements](https://docs.microsoft.com/intune/plan-design/migration-phase1-setup-intune-mobile-device-management#assess-mdm-requirements)
+    -   [Assess your MDM migration requirements](https://docs.microsoft.com/intune/plan-design/migration-phase1-prepare-intune-for-mobile-device-management#assess-mdm-requirements)
 
     -   [Basic setup](https://docs.microsoft.com/intune/plan-design/migration-phase1-basic-setup)
 
