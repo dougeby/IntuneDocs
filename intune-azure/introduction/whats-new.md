@@ -1,10 +1,11 @@
 ---
 # required metadata
-title: What's new in the Microsoft Intune PreviewtitleSuffix: "Intune Azure preview"
+title: What's new in the Microsoft Intune Preview
+titleSuffix: "Intune Azure preview"
 description: Find out what's new in the Intune Azure preview
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 03/17/2017
 ms.topic: get-started-article
