@@ -37,9 +37,7 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
   ![you are required to install Lookout for Work](./media/lookout-required-app-install-android.png)
 
-  You are taken to the Lookout for Work installation page in the Play Store.
-
-2.	Install Lookout for Work, and then tap **ACCEPT** to let Lookout for Work access your device.
+2.	You are taken to the Lookout for Work installation page in the Play Store. Install Lookout for Work, and then tap **ACCEPT** to let Lookout for Work access your device.
 
   ![tap accept to let Lookout for Work access your device](./media/lookout-accept-store-permissions-android.png)
 
@@ -55,15 +53,13 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
   ![select your work or school account and tap Add Account](./media/lookout-pick-account-android.png)
 
-6. Tap **Accept** to give Lookout for Work permission to sign you in and read your profile.
+6. Tap **Accept** to give Lookout for Work permission to sign you in and read your profile. A screen shows that Lookout for Work is connecting to the Lookout Security Cloud.
 
   ![tap Accept to give Lookout for Work permission to read your profile](./media/lookout-needs-permission-to-view-profile-android.png)
 
-  A screen shows that Lookout for Work is connecting to the Lookout Security Cloud.
-
 7. Review the items about how Lookout protects your device, and then tap **OK**.
 
-	![review how Lookout for Work protects your device](./media/lookout-how-it-protects-your-device-android.png)
+  ![review how Lookout for Work protects your device](./media/lookout-how-it-protects-your-device-android.png)
 
   When you see the following screen, Lookout is now set up and connected.
 

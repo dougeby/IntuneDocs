@@ -37,9 +37,7 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
 	![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)
 
-	You are taken to the Skycure installation page in the Play Store.
-
-2.	Install Skycure, and then tap **ACCEPT** to let Skycure access your device.
+2.		You are taken to the Skycure installation page in the Play Store. Install Skycure, and then tap **ACCEPT** to let Skycure access your device.
 
 3. Open Skycure, and then tap **VERIFY**.
 
@@ -61,9 +59,9 @@ If you have trouble with the installation, try the troublshooting steps at the e
 
   If no threats are found, all three threat types will appear green.
 
-	The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
+  The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
-	![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
+  ![your device is now in compliance with policies](./media/lookout-device-now-compliant-android.png)
 
 
 
