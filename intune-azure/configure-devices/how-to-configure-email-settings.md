@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,8 @@ The built-in mail client is supported for most platforms. Most third-party email
 
 You can use email profiles to configure the native email client on the following device types:
 
-- Android 4.0 and later
+- Android Samsung KNOX Standard 4.0 and later
+- Android for Work
 - iOS 8.0 and later
 - Windows Phone 8.1 and later
 - Windows 10 (desktop) and Windows 10 Mobile
