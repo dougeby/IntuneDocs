@@ -162,7 +162,7 @@ This step synchronizes devices with the Apple DEP Service, and makes the devices
 Your corporate-owned devices can now be distributed to users. When an iOS device is turned on it will be enrolled for management by Intune. The user device limit applies to DEP-managed devices.
 
 >[!NOTE]
->If a user attempts to enroll a DEP device but has exceeded her device limit, enrollment will fail silently without warning the user. 
+>If a user attempts to enroll a DEP device but has exceeded the device limit, enrollment will fail without warning.
 
 ## Changes to Intune group assignments
 
