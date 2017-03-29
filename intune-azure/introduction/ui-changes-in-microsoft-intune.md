@@ -42,7 +42,7 @@ We took the opportunity to organize some tasks more logically as we moved Intune
 
 
 ## Where do I manage groups?
-Intune on Azure uses [Azure Active Directory (AD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-groups-create-azure-portal) to manage groups.
+Intune on Azure uses [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) to manage groups.
 
 ## Where did enrollment rules go?
 In the classic console, you could set rules governing the MDM enrollment of mobile and modern Windows and macOS devices:
