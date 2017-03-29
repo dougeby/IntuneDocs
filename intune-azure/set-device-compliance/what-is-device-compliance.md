@@ -94,7 +94,7 @@ If you have been using the Intune classic admin console, note the following diff
 
 Device compliance policies created in the [Intune classic console](https://manage.microsoft.com) will not appear in the new [Intune Azure portal](https://portal.azure.com). However, they’ll still be targeted to users and manageable via the Intune classic console.
 
-If you want to take advantage of the new device compliance related features in the Intune Azure portal, you’ll need to create new device compliance policies in the Intune Azure portal itself. If you assign a new device compliance policy in the Intune Azure portal to a user whose also has been assigned with a device compliance policy from the Intune classic portal, then the device compliance policies from the Intune Azure portal takes precedence over the ones created in the Intune classic console.
+If you want to take advantage of the new device compliance related features in the Intune Azure portal, you’ll need to create new device compliance policies in the Intune Azure portal itself. If you assign a new device compliance policy in the Intune Azure portal to a user who also has been assigned with a device compliance policy from the Intune classic portal, then the device compliance policies from the Intune Azure portal takes precedence over the ones created in the Intune classic console.
 
 ##  Next steps
 
