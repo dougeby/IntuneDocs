@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -57,7 +57,7 @@ If the user has installed an email profile prior to set up of a profile by Intun
 
 Since Samsung KNOX does not use host name to identify the profile, we recommend that you not create multiple email profiles to use on the same email address on different hosts, as these overwrite each other.
 
-**Android for Work**<br>Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, install in the device work profile, and support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate profile. Email apps such as Nine Work might not be free. Review the app’s licensing details or contact the app company with any questions.
+**Android for Work**<br>Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and install in the device work profile, so they can't result in duplicate profiles. Both apps support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate email profile. Email apps such as Nine Work might not be free. Review the app’s licensing details or contact the app company with any questions.
 
 ## Secure email profiles
 You can secure email profiles using either a certificate or a password.
