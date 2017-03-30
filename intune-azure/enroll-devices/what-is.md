@@ -63,7 +63,7 @@ The following table shows Intune enrollment methods and the supported capabiliti
 
 | **Method** |	**Wipe required?** |	**Affinity**	|	**Lock** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Yes|	Yes |	No | More information coming soon|
+|**[BYOD](#byod)** | No |	Yes |	No | More information coming soon|
 |**[DEM](#dem)**|	No |No |No	|[More information](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android enrollment methods**

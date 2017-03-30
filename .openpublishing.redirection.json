@@ -286,6 +286,31 @@
         "source_path": "intune-user-help/your-device-is-missing-a-required-certificate-android.md",
         "redirect_url": "https://docs.microsoft.com/intune-user-help/your-device-is-missing-a-required-certificate-landing-android",
         "redirect_document_id": true
+    },
+    {
+        "source_path": "intune-azure/enroll-devices/enroll-window-devices.md",
+        "redirect_url": "https://docs.microsoft.com/intune-azure/enroll-devices/enroll-windows-devices",
+        "redirect_document_id": true
+    },
+    {
+        "source_path": "intune-azure/enroll-devices/set-up-windows-phone-management.md",
+        "redirect_url": "https://docs.microsoft.com/intune-azure/enroll-devices/enroll-windows-devices",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "intune-azure/enroll-devices/set-up-windows-device-management.md",
+        "redirect_url": "https://docs.microsoft.com/intune-azure/enroll-devices/enroll-windows-devices",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "intune-azure/enroll-devices/enroll-windows-pcs-as-mobile-devices.md",
+        "redirect_url": "https://docs.microsoft.com/intune-azure/enroll-devices/enroll-windows-devices",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "intune-azure/enroll-devices/ios-device-enrollment-program-devices.md",
+        "redirect_url": "https://docs.microsoft.com/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program",
+        "redirect_document_id": true
     }
   ]
 }

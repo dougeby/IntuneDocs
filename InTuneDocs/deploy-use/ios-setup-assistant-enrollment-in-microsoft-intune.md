@@ -6,7 +6,7 @@ description: Enroll corporate-owned iOS devices by using the Apple Configurator 
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -88,7 +88,7 @@ A device enrollment profile defines the settings applied to a group of devices.
 
 ### Add iOS devices to enroll with Setup Assistant
 
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices**, and then choose **Add devices**. 
+1. In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Groups** &gt; **All Devices** &gt; **All Corporate-owned Devices** &gt; **All Devices**, and then choose **Add devices**.
 
    You can add devices in two ways:
 
@@ -110,13 +110,13 @@ A device enrollment profile defines the settings applied to a group of devices.
 
   -  **Manually add device details**&mdash;Enter the serial number and any notes or details for up to 15 devices.
 
-  On the **Review Devices** pane, you can confirm the serial numbers. You can also decide whether to overwrite the **Details** for serial numbers that are being imported again, or you can uncheck the **Overwrite** box to preserve the Current details. 
+  On the **Review Devices** pane, you can confirm the serial numbers. You can also decide whether to overwrite the **Details** for serial numbers that are being imported again, or you can uncheck the **Overwrite** box to preserve the Current details.
 
-> [!NOTE] 
+> [!NOTE]
 > In the existing Intune administrator console, admins can accept associated details from an uploaded CSV and overwrite the existing details for individual serial numbers. In the new Azure portal, you’ll only be able to overwrite the details for all serial numbers or to ignore new details for all serial numbers.
 
-  > [!NOTE]
-  > If you want to remove corporate-owned devices from Intune management later, you might need to go to **By iOS Serial Number** device group under **Corporate Pre-enrolled devices** and remove the device serial number from Intune in order to disable device enrollment. If Intune performs a disaster recovery procedure on or around the time you remove serial numbers, you'll need to verify that only active devices’ serial numbers are present in that group.
+> [!NOTE]
+> If you want to remove corporate-owned devices from Intune management later, you might need to go to **By iOS Serial Number** device group under **Corporate Pre-enrolled devices** and remove the device serial number from Intune in order to disable device enrollment. If Intune performs a disaster recovery procedure on or around the time you remove serial numbers, you'll need to verify that only active devices’ serial numbers are present in that group.
 
 2. Choose **Next**.
 
@@ -131,23 +131,22 @@ Specify the profile to assign to added devices from the list of available profil
 
 ### Export a profile to deploy to iOS devices
 
-1. In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then select the device profile to deploy to mobile devices. 
+1. In the [Microsoft Intune administration console](http://manage.microsoft.com), go to **Policy** &gt; **Corporate Device Enrollment**, and then select the device profile to deploy to mobile devices.
 
 2. Choose **Export** in the taskbar. Copy and save the **Profile URL**. You will upload it in Apple Configurator later to define the Intune profile used by iOS devices.
 
   To support Apple Configurator 2, the 2.0 Profile URL must be edited. To do so, replace this code:
-    ```
-    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```
-    With this code:
 
-    ```
-    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-    ```
+  ```
+  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+  ```
+  With this code:
+
+  ```
+  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+  ```
 
    You will upload this profile URL to the Apple DEP service using Apple Configurator in the following procedure to define the Intune profile used by iOS devices.
-
-
 
 ### Prepare the device with Apple Configurator
 
@@ -183,9 +182,10 @@ iOS devices are connected to the Mac computer and enrolled for mobile device man
 
 ### Distribute devices
 
-The devices are now ready for corporate enrollment. 
+The devices are now ready for corporate enrollment. Turn off the devices and distribute them to users. When users turn on their devices, Setup Assistant will start.
 
-Turn off the devices and distribute them to users. When users turn on their devices, Setup Assistant will start.
+>[!NOTE]
+>If a user attempts to enroll a DEP device but has exceeded her device limit, enrollment will fail silently without warning the user.
 
 
 ### See also

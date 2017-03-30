@@ -6,7 +6,7 @@ description: Describes how to encrypt an Android device
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

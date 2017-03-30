@@ -33,6 +33,7 @@
 ### [Get an Apple DEP token](enroll-devices/get-apple-dep-token.md)
 ### [Choose how to enroll iOS devices](enroll-devices/choose-ios-enrollment-method.md)
 ## How to
+### [Assign licenses to users](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Enroll Android devices](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Enroll iOS devices
 #### [Enroll iOS devices using Setup Assistant](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
@@ -41,7 +42,7 @@
 #### [Enroll iOS devices using the device enrollment program](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Enroll devices using device enrollment manager](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Enroll macOS devices](enroll-devices/enroll-macos-devices.md)
-### [Enroll Windows devices](enroll-devices/enroll-window-devices.md)
+### [Enroll Windows devices](enroll-devices/enroll-windows-devices.md)
 ### Manage device enrollment
 #### [Create terms and conditions](enroll-devices/create-terms-and-conditions.md)
 #### [Set enrollment restrictions](enroll-devices/set-enrollment-restrictions.md)
@@ -108,6 +109,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## How to
 ### [Configure device profiles](configure-devices/how-to-create-device-profiles.md)
+
+### [Configure device features](configure-devices/how-to-configure-device-features.md)
+#### [iOS](configure-devices/device-features-for-ios.md)
+#### [macOS](configure-devices/device-features-for-macos.md)
+
 ### [Configure device restrictions](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)

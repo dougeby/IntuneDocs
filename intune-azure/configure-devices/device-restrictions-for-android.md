@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,32 +31,43 @@ ms.custom: intune-azure
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## General
-- 	**Camera** - Allows the use of the device camera.
-- 	**Copy and paste** - Allows copy and paste functions on the device.
-- 	**Clipboard sharing between apps** - Allows use of the clipboard to copy and paste between apps (Samsung KNOX Standard only).
-- 	**Diagnostic data submission** - Stops the user from submitting diagnostic data from the device.	
-- 	**Factory reset** - Allows the user to perform a factory reset on the device.
-- 	**Geolocation** - Allows the device to utilize location information (Samsung KNOX Standard only).
-- 	**Power off** - Allows the user to power off the device.<br>If this setting is disabled, the setting **Number of sign in failures before wiping device** for Samsung KNOX Standard devices does not function.
-- 	**Screen capture** - Lets the user capture the screen contents as an image.
-- 	**Voice assistant** - Allows the use of voice assistant software on the device (Samsung KNOX Standard only).
-- 	**YouTube** - Allows the use of the YouTube app on the device (Samsung KNOX Standard only).
+
+|||||
+|-|-|-|-|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
+|**Camera**|Allows the use of the device camera.|Yes|Yes|
+|**Copy and paste**|Allows copy and paste functions on the device.|No|Yes|
+|**Clipboard sharing between apps**|Allows use of the clipboard to copy and paste between apps.|No|Yes|
+|**Diagnostic data submission**|Stops the user from submitting diagnostic data from the device.|No|Yes|
+|**Factory reset**|Allows the user to perform a factory reset on the device.|No|Yes|
+|**Geolocation**|Allows the device to utilize location information (Samsung KNOX Standard only).|No|Yes|
+|**Power off**|Allows the user to power off the device.<br>If this setting is disabled, the setting **Number of sign in failures before wiping device** for Samsung KNOX Standard devices does not function.|No|Yes|
+|**Screen capture**|Lets the user capture the screen contents as an image.|No|Yes|
+|**Voice assistant**|Allows the use of voice assistant software on the device.|No|Yes|
+|**YouTube**|Allows the use of the YouTube app on the device.|No|Yes|
 
 ## Password
-- 	**Password required** - Require the end user to enter a password to access the device.
-- 	**Minimum password length**	- Enter the minimum length of password a user must configure (between 4 and 16 characters).
-- 	**Maximum minutes of inactivity until screen locks** - Specifies the number of minutes of inactivity before the device automatically locks.
-- 	**Number of sign-in failures before wiping device** - Specifies the number of sign-in failures to allow before the device is wiped.
-- 	**Password expiration (days)** - Specifies the number of days before the device password must be changed.
-- 	**Required password type** - Specifies the password complexity level that's required and whether biometric devices can be used.
-- 	**Prevent reuse of previous passwords** - Stops the end user from creating a password they have used before.
-- 	**Fingerprint unlock** - Allows the use of a fingerprint to unlock supported devices.
-- 	**Smart Lock and other trust agents** - Lets you control the Smart Lock feature on compatible Android devices (Samsung KNOX Standard 5.0 and later). This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag.) You can use this setting to prevent users from configuring Smart Lock.
-- 	**Encryption** - Requires that files on the device are encrypted.
+
+|||||
+|-|-|-|-|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
+|**Password**|Require the end user to enter a password to access the device.|Yes|Yes|
+|**Minimum password length**|Enter the minimum length of password a user must configure (between 4 and 16 characters).|Yes|Yes|
+|**Maximum minutes of inactivity until screen locks**|Specifies the number of minutes of inactivity before the device automatically locks.|Yes|Yes|
+|**Number of sign-in failures before wiping device**|Specifies the number of sign-in failures to allow before the device is wiped.|Yes|Yes|
+|**Password expiration (days)**|Specifies the number of days before the device password must be changed.|Yes|Yes|
+|**Required password type**|Specifies the password complexity level that's required and whether biometric devices can be used.|Yes|Yes|
+|**Prevent reuse of previous passwords**|Stops the end user from creating a password they have used before.|Yes|Yes|
+|**Fingerprint unlock**|Allows the use of a fingerprint to unlock supported devices.|No|Yes|
+|**Smart Lock and other trust agents**|Lets you control the Smart Lock feature on compatible Android devices (Samsung KNOX Standard 5.0 and later). This phone capability, sometimes known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location (for example, when it's connected to a specific Bluetooth device, or when it's close to an NFC tag.) You can use this setting to prevent users from configuring Smart Lock.|Yes (5.0 and later)|No|
+|**Encryption**|Requires that files on the device are encrypted.|Yes|Yes|
 
 ## Google Play Store
 
-- 	**Google Play store** - Allows the user to access the Google Play store on the device (Samsung KNOX Standard only).
+|||||
+|-|-|-|-|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
+|**Google Play store**|Allows the user to access the Google Play store on the device|No|Yes|
 
 ## Restricted apps
 
@@ -83,29 +94,41 @@ Example: Search Google Play for Microsoft Office Mobile. The URL you use will be
 You can also click **Import** to populate the list from a csv file in the format <*app url*>, <*app name*>, <*app publisher*> or click **Export** to create a csv file containing the contents of the restricted apps list in the same format.		
 
 ## Browser
-- 	**Web browser** - Specifies whether the device's default web browser can be used.
-- 	**Autofill** - Allows the autofill function of the web browser to be used.
-- 	**Cookies** - Allows the device web browser to use cookies.
-- 	**Javascript** - Allows the device web browser to run Java scripts.
-- 	**Pop-ups** - Allows the use of the pop-up blocker in the web browser.
+|||||
+|-|-|-|-|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
+|**Web browser**|Specifies whether the device's default web browser can be used.|No|Yes|
+|**Autofill**|Allows the autofill function of the web browser to be used.|No|Yes|
+|**Cookies**|Allows the device web browser to use cookies.|No|Yes|
+|**Javascript**|Allows the device web browser to run Java scripts.|No|Yes|
+|**Pop-ups**|Allows the use of the pop-up blocker in the web browser.|No|Yes|
 
 ## Cloud and Storage
-- 	**Google backup** - Allows the use of Google backup.
-- 	**Google account auto sync** - Allows Google account settings to be automatically synchronized.
-- 	**Removable storage** - Allows the device to use removable storage, like an SD card (Samsung KNOX Standard only).
-- 	**Encryption on storage cards** - Specifies whether the device storage card must be encrypted.
+|||||
+|-|-|-|-|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
+|**Google backup**|Allows the use of Google backup.|No|Yes|
+|**Google account auto sync**|Allows Google account settings to be automatically synchronized.|No|Yes|
+|**Removable storage**|Allows the device to use removable storage, like an SD card.|No|Yes|
+|**Encryption on storage cards**|Specifies whether the device storage card must be encrypted.|No|Yes|
 
 ## Cellular and Connectivity
-- 	**Data roaming** - Allows data roaming when the device is on a cellular network (Samsung KNOX Standard only).
-- 	**SMS/MMS messaging** - Allows the use of SMS and MMS messaging on the device (Samsung KNOX Standard only).
-- 	**Voice dialing** - Enables or disables the voice dialing feature on the device (Samsung KNOX Standard only).
-- 	**Voice roaming** - Allows voice roaming when the device is on a cellular network (Samsung KNOX Standard only).
-- 	**Bluetooth** - Allows the use of Bluetooth on the device (Samsung KNOX Standard only).
-- 	**NFC** - Allows operations that use near field communication if the device supports it (Samsung KNOX Standard only).
-- 	**Wi-Fi** - Allows the use of the Wi-Fi capabilities of the device (Samsung KNOX Standard only).
-- 	**Wi-Fi tethering** - Allows the use of Wi-Fi tethering on the device (Samsung KNOX Standard only).
+|||||
+|-|-|-|-|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
+|**Data roaming**|Allows data roaming when the device is on a cellular network).|No|Yes|
+|**SMS/MMS messaging**|Allows the use of SMS and MMS messaging on the device.|No|Yes|
+|**Voice dialing**|Enables or disables the voice dialing feature on the device.|No|Yes|
+|**Voice roaming**|Allows voice roaming when the device is on a cellular network.|No|Yes|
+|**Bluetooth**|Allows the use of Bluetooth on the device.|No|Yes|
+|**NFC**|Allows operations that use near field communication if the device supports it.|No|Yes|
+|**Wi-Fi**|Allows the use of the Wi-Fi capabilities of the device.|No|Yes|
+|**Wi-Fi tethering**|Allows the use of Wi-Fi tethering on the device.|No|Yes|
 
 ## Kiosk
-- 	**Select a managed app** - Browse to, then select a managed app that can run when the device is in kiosk mode (apps specified as a link to the store are not currently supported). No other apps will be allowed to run on the device.
-- 	**Screen sleep button**	- Enables or disables the screen sleep wake button on the device.
-- 	**Volume buttons** - Enables or disables the use of the volume buttons on the device.
+|||||
+|-|-|-|-|
+|Setting name|Details|Android 4.0+|Samsung KNOX Standard|
+|**Select a managed app**|Browse to, then select a managed app that can run when the device is in kiosk mode (apps specified as a link to the store are not currently supported). No other apps will be allowed to run on the device.|No|Yes|
+|**Screen sleep button**|Enables or disables the screen sleep wake button on the device.|No|Yes|
+|**Volume buttons**|Enables or disables the use of the volume buttons on the device.|No|Yes|

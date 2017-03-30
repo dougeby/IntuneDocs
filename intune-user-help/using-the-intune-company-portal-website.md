@@ -6,7 +6,7 @@ description: Describes the Company Portal website and provides links to steps fo
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852esearchScope: - User help
 ROBOTS:   
 #audience:
 #ms.devlang:
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -34,13 +34,13 @@ Users can do the following tasks from the Company Portal website:
 
 -   [Remove your device](remove-your-device-cpwebsite.md)
 
--   [Reset your device](reset-your-device-cpwebsite.md)
+-   [Reset (erase) your device](reset-erase-your-device-cpwebsite.md)
 
 -   [Reset your device passcode](reset-your-passcode-cpwebsite.md)
 
 -   [Remotely lock a device](remote-lock-your-device-cpwebsite.md)
 
--	[Sync your device manually to speed up slow app installations](sync-your-device-manually-cpwebsite.md)
+-	[Sync your device manually to get apps to install more quickly](sync-your-device-manually-cpwebsite.md)
 
 -   Find the IT admin's contact information, if you configured it
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ To fix the issue, open the Lookout for Work app, and follow the instructions sho
 
 If there is a virus or other security threat on your enrolled device, and you try to access your company email or files, you might see a message like this one:
 
-![Lookout for Work error message with link to Company Portal website](./media/lookout-go-to-device-management-portal-android.png)
+![Lookout for Work error message with link to Company Portal website](./media/mtd-go-to-device-management-portal-android.png)
 
 Tap the **device management portal** link to go to the [Company Portal website](http://portal.manage.microsoft.com), where you will see instructions on how to fix the issue.
 

@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,11 +42,11 @@ By default, Android devices are allowed to enroll in Intune. To block Android de
 
 3.  **Tell your users how to enroll their devices to get access to company resources.**
 
-	For end-user enrollment instructions, see [Enroll your Android device in Intune](../enduser/enroll-your-device-in-intune-android.md). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
+	For end-user enrollment instructions, see [Enroll your Android device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
 
 	For information about other end-user tasks, see these articles:
   - [Resources about the end-user experience with Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
-  - [End user guidance for Android devices](../enduser/using-your-android-device-with-intune.md)
+  - [End user guidance for Android devices](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 Due to the absence of Google Play Store in China, Android devices must obtain the Company Portal from Chinese app marketplaces. The Company Portal app for Android will be available for download on the following stores:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
