@@ -423,9 +423,6 @@ The **isSaveToAllowedForLocation** API provides constants to check whether the I
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
-* IntuneMAMSaveLocationBox
-* IntuneMAMSaveLocationDropbox
-* IntuneMAMSaveLocationGoogleDrive
 * IntuneMAMSaveLocationLocalDrive
 
 Apps should use the constants in the **isSaveToAllowedForLocation** API to check if data can be saved to locations considered "managed," like OneDrive for Business, or "personal." Additionally, the API should be used when the app can't check whether a location is "managed" or "personal."
