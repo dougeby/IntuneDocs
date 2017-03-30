@@ -1041,11 +1041,11 @@ description: Learn to use Microsoft Intune (FIXME)
             </ul>
         </li>
         <li>
-            <a href="#moreres">More resources</a>
-            <ul id="moreres">
+            <a href="#community">Community</a>
+            <ul id="community">
                 <li>
-                    <a href="#moreres-all">All</a>
-                    <ul id="moreres-all" class="cardsF">
+                    <a href="#community-all">All</a>
+                    <ul id="community-all" class="cardsF">
                         <li>
                             <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">
                             <div class="cardSize">
