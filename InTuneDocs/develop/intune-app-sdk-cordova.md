@@ -35,7 +35,7 @@ ms.custom: intune-classic
 
 The [Intune App SDK Cordova Plugin](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam) enables [Intune mobile app protection policy](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) in iOS and Android apps built with Cordova. The plugin allows developers to integrate Intune app and data protection features into their Cordova-based app.
 
-You will find that you can enable SDK features without changing your app's behavior. Once you've built the plugin into your iOS or Android mobile app, the IT admin will be able to deploy policy via Microsoft Intune Mobile Application Management (MAM) supporting a variety of data protection features. We have built the plugin so that most of the steps are automatically performed in the Cordova build process. As a result, you should be able to get your app enabled for Intune management quickly. To get started, follow the steps below based on your target platform.
+You will find that you can enable SDK features without changing your app's behavior. Once you have built the plugin into your iOS or Android app, the Microsoft Intune administrator will be able to deploy Intune app protection policy, which consists of a variety of data protection features. The plugin is built so that most of the steps are automatically performed in the Cordova build process. As a result, you should be able to get your app enabled for Intune app protection quickly. To get started, follow the steps below based on your target platform.
 
 ## Supported Platforms
 
@@ -99,7 +99,7 @@ This setup only supports a single target and will perform the configuration on t
 
 1. Import this plugin with the latest Cordova tools. The plugin will be automatically invoked as an `after_compile` step.
 
-2. The plugin will create a MAM enabled version of a built apk (Android API 14+) at the end of the build process. The build output will contain a `[Project]-intunewrapped-[Build_Configuration].apk` (e.g. `helloWorld-intunewrapped-debug.apk`).
+2. The plugin will create a Intune-enabled version of a built apk (Android API 14+) at the end of the build process. The build output will contain a `[Project]-intunewrapped-[Build_Configuration].apk` (e.g. `helloWorld-intunewrapped-debug.apk`).
 
 > [!NOTE]
 > The plugin only supports gradle builds.
