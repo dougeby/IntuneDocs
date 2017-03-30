@@ -85,7 +85,7 @@ After you complete Step 1 above, your connection should be automatically enabled
 
 2. Choose **More Services** > **Monitoring + Management** > **Intune**.
 
-3. On the **Intune** blade, choose **Configure devices**.
+3. On the **Intune** blade, choose **Device configuration**.
 
 4. On the **Device Configuration** blade, choose **Setup** > **Telecom Expense Management**. 
 

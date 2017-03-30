@@ -38,7 +38,7 @@ These settings can only be used by devices that run Samsung KNOX Standard.
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Configure devices**.
+3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 2. In the list of profiles blade, choose **Create Profile**.
 3. On the **Create Profile** blade, enter a **Name** and optional **Description** for this device profile.

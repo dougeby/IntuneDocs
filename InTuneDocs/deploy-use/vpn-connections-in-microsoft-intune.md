@@ -175,6 +175,7 @@ You can configure on-demand VPN for iOS 8.0 and later devices.
 	  a. **Domain action**  - choose **Connect if needed** or **Never connect**
 	  b. **Comma-separated list of domains** - you configure this only if you choose a **Domain action** of **Connect if needed**
       c. **Required URL string probe** - an HTTP or HTTPS (preferred) URL, such as *https://vpntestprobe.contoso.com*. The rule will check to see if there's a response from this address. If not, and the **Domain action** is **Connect if needed**, the VPN will be triggered.
+      
      > [!TIP]
      >
      >An example of when you might use this action is when some sites on your corporate network require a direct or VPN corporate network connection, but others do not. If you list in **Comma-separated list of DNS search domains** *corp.contoso.com*, you can choose **Connect if needed** and then list specific sites within that network that may require VPN, such as *sharepoint.corp.contoso.com*. The rule will then check if *vpntestprobe.contoso.com* can be reached. If it can't, the VPN will be triggered for the sharepoint site.

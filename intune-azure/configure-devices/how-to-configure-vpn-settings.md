@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,8 +38,8 @@ For example, assume that you want to provision all iOS devices with the settings
 
 You can create VPN profiles using the following connection types:
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |Connection type|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |Pulse Secure|Yes|Yes|Yes|Yes|Yes|Yes|
 |Cisco (IPSec)|No|Yes|No|No|No|No|
@@ -64,7 +64,7 @@ Learn how to  create custom VPN profiles by using URI settings in [Create custom
 
 1. Sign into the Azure portal.
 2. Choose **More Services** > **Other** > **Intune**.
-3. On the **Intune** blade, choose **Configure devices**.
+3. On the **Intune** blade, choose **Device configuration**.
 2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 3. On the profiles blade, choose **Create Profile**.
 4. On the **Create Profile** blade, enter a **Name** and **Description** for the VPN profile.

@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 The Company Portal is an app that you install on your iOS device to give you access to your company or school apps, email, and network.  Before you can get access, you must install the Company Portal app, and then  use the app to enroll your device in Microsoft Intune. For more information, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
-1.  Open the **App Store** and search for **intune**.
+1.  Open the **App Store** and search for **intune company portal**.
 
 2.  Download the **Microsoft Intune Company Portal** app.
 

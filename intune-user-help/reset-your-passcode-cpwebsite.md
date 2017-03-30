@@ -1,24 +1,27 @@
 ---
 # required metadata
 
-title: How to reset your  passcode from the Company Portal website | Microsoft Docs
+title: How to reset your passcode from the Company Portal website | Microsoft Docs
 description:
 keywords:
-author: barlanmsftms.author: barlan
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86searchScope: - User help
+ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+searchScope:
+ - User help
 
 # optional metadata
 
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -48,22 +51,22 @@ To reset your passcode:
 
   ![The reset passcode banner with its warning about resetting device passcode and how the user will be logged out. The buttons for user input are Sign Out and Cancel.](./media/iwp-reset-passcode-popup.png)
 
-4.  Select **Sign out**, and you will receive on final message letting you know about the removal of the passcode from the device. If you do not have the device with you, do not remove the passcode, as whomever has physical access to the device will be able to access most of the information on it - personal or corporate.
+5.  Select **Sign out**, and you will receive on final message letting you know about the removal of the passcode from the device. If you do not have the device with you, do not remove the passcode, as whomever has physical access to the device will be able to access most of the information on it - personal or corporate.
 
   ![The second reset passcode banner with its warning about resetting device passcode and how the passcode will be removed from the device. It also advises how to set a new passcode by going to device settings to do so.](./media/iwp-reset-passcode-2nd-popup.png)
 
+  Different devices have different types of passcodes.
 
-As different devices have different types of passcodes, you can find out how resetting your passcode could impact your specific device in the table below. 
+  **Android**: Removes the existing passcode and creates a temporary passcode with both letters and numbers
 
-    |Device Type|What Happens When You Reset|
-    |------------|-----------|
-    |Android|Removes the existing passcode and creates a temporary passcode with both letters and numbers|
-    |iOS|Removes the existing passcode and does not create a temporary passcode. If you're using the Touch ID fingerprint scanner for opening your device or making purchases, you'll need to set it up again.|
-    |Windows 10 Mobile|Removes the existing passcode and creates a temporary passcode with both letters and numbers. If you're using Windows Hello facial recognition to log in, it will still be supported.|
-    |Windows Phone 8.1|Removes the existing passcode and creates a temporary passcode with numbers.|
+  **iOS**: Removes the existing passcode and does not create a temporary passcode. If you're using the Touch ID fingerprint 		scanner for opening your device or making purchases, you'll need to set it up again.
 
-    5.  Unlock your device and set a new passcode, or change the temporary passcode by going to your device **Settings**.
+  **Windows 10 Mobile**: Removes the existing passcode and creates a temporary passcode with both letters and numbers. If you're 		using Windows Hello facial recognition to log in, it will still be supported.
+	
+  **Windows Phone 8.1**: Removes the existing passcode and creates a temporary passcode with numbers
 
-    To see a notification confirming that your password was reset successfully, click the notification flag at the top right of the Company Portal website.
+6.  Unlock your device and set a new passcode, or change the temporary passcode by going to your device **Settings**.
+
+To see a notification confirming that your password was reset successfully, click the notification flag at the top right of the Company Portal website.
 
 Still need help? Contact your IT admin. For contact information, check the [Company Portal website](http://portal.manage.microsoft.com).

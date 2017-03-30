@@ -7,7 +7,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,9 +39,9 @@ Before you begin troubleshooting, check to make sure that you've configured Intu
 
 -	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -	[Set up iOS and Mac device management](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--	[Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -	[Set up Windows device management](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-	[Set up Android device management](/intune/deploy-use/set-up-android-management-with-microsoft-intune) - No additional steps required
+-	[Set up Android for Work device management](/intune/deploy-use/set-up-android-for-work)
 
 Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
 
@@ -286,6 +286,18 @@ To fix the issue, users must select the **Set up** button, which is to the right
   ![Company Access Setup screen](./media/ios_cp_app_company_access_setup.png)
 
 Once enrolled, the devices return to a healthy state and regain access to company resources.
+
+### Verify WS-Trust 1.3 is enabled
+**Issue** Device Enrollment Program (DEP) iOS devices cannot be enrolled
+
+Enrolling Device Enrollment Program devices with user affinity requires WS-Trust 1.3 Username/Mixed endpoint to be enabled to request user tokens. Active Directory enables this endpoint by default. You get a list of enabled endpoints by using the Get-AdfsEndpoint PowerShell cmdlet and looking for the trust/13/UsernameMixed endpoint. For example:
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+For more information, see [Get-AdfsEndpoint documentation](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+For more information, see [Best practices for securing Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). If you need additional assistance in determining if WS-Trust 1.3 Username/Mixed is enabled in your identity federation provider, please contact Microsoft Support if you use ADFS, or your 3rd party identity vendor.
+
 
 ### Profile installation failed
 **Issue:** A user receives a **Profile installation failed** error on an iOS device.

@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,11 +34,11 @@ ms.custom: intune-azure
 
 Microsoft Intune is moving to the Azure portal and this means that the workflows and functionality you are used to will change.
 The new portal offers you a preview of new and updated functionality in the Azure portal where you can manage your organization's mobile devices, PCs, and apps.
-All Intune functionality will eventually move to Azure, but you can perform certain Intune tasks in the Azure portal today. Because this new experience is in preview, some functionality might not yet be present in the portal. Review the [What’s new in the preview](#what's-new-in-the-preview) section for details.
+All Intune functionality will eventually move to Azure, but you can perform many Intune tasks in the Azure portal today. Because this new experience is in preview, some functionality might not yet be present in the portal. Review the [What’s new](#what's-new) section for details.
 
 > [!IMPORTANT]
 > **Don’t see the new portal yet?**<br>
-> We’ve already begun to roll out the preview to select tenants. Existing tenants will be migrated to the new experience starting in early calendar year 2017. You will receive a notification in the Office Message Center prior to your tenant’s migration. If you have any questions about the timeline for your tenant’s migration, contact our migration team at [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+> We’ve already begun to roll out the preview to select tenants. Existing tenants will be migrated to the new experience starting in early calendar year 2017. You will receive a notification in the Office Message Center prior to your tenant’s migration.
 
 
 You'll find new product documentation in this library, and it will be continually updated during the preview. If you have suggestions you'd like to see, please leave feedback in the topic comments. We'd love to hear from you.
@@ -78,24 +78,25 @@ The documentation reflects the layout of the Intune portal to make it easier to 
 
 ![Azure portal workloads](./media/azure-portal-workloads.png)
 
-<!--- ### Plan and design
-Information to help you plan and design your Intune environment.
-[Read more](/intune-azure/plan-and-design/get-started) --->
-### Enroll devices
+### Introduction and get started
+This section contains information about [what's new](/intune-azure/introduction/whats-new), [known issues](/intune-azure/introduction/known-issues-in-the-intune-preview), [how to get support](/intune-azure/introduction/how-to-get-support-for-microsoft-intune) and how to [get started with a free trial](/intune-azure/introduction/sign-up-free-trial-microsoft-intune) of Intune.
+### Plan and design
+Information to help you [plan and design](/intune-azure/plan-and-design/get-started) your Intune environment.
+### Device enrollment
 [How to get your devices managed by Intune](/intune-azure/enroll-devices/what-is).
-### Devices & Groups
+### Devices
 [Get to know the devices you manage with inventory and reports](/intune-azure/manage-devices/what-is).
-### Manage users
-[Learn about the users of devices you manage](/intune-azure/manage-users/what-is).
+### Manage users and groups
+[Learn about the users of devices you manage and sort resources into groups](/intune-azure/manage-users/what-is).
 ### Manage apps
 [How to publish, manage, configure, and protect apps](/intune-azure/manage-apps/what-is-app-management).
-### Configure devices
+### Device configuration
 [Understand the profiles you can use to configure settings and features on devices you manage](/intune-azure/configure-devices/what-are-device-profiles).
-### Set device compliance
+### Device compliance
 [Define a compliance level for your devices, then report about any devices which are not compliant](/intune-azure/set-device-compliance/what-is-device-compliance).
 ### Conditional access
 [Restrict access to Exchange services depending on conditions you specify](/intune-azure/conditional-access/what-is-conditional-access).
-### Access control
+### Intune roles
 [Control who can perform various Intune actions, and who those actions apply to](/intune-azure/access-control/role-based-access-control). You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles.
 
 
