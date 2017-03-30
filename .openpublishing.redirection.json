@@ -311,6 +311,11 @@
         "source_path": "intune-azure/enroll-devices/ios-device-enrollment-program-devices.md",
         "redirect_url": "https://docs.microsoft.com/intune-azure/enroll-devices/enroll-ios-devices-using-device-enrollment-program",
         "redirect_document_id": true
+    },
+    {
+        "source_path": "intunedocs/deploy-use/whats-coming-in-intune.md",
+        "redirect_url": "https://docs.microsoft.com/intunedocs/whats-new/early-edition",
+        "redirect_document_id": false
     }
   ]
 }
