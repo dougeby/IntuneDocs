@@ -313,6 +313,11 @@
         "redirect_document_id": true
     },
     {
+        "source_path": "intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune.md",
+        "redirect_url": "https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune",
+        "redirect_document_id": false
+    },
+    {
         "source_path": "intunedocs/deploy-use/whats-coming-in-intune.md",
         "redirect_url": "https://docs.microsoft.com/intunedocs/whats-new/early-edition",
         "redirect_document_id": false
