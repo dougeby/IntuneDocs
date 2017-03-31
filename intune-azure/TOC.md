@@ -1,5 +1,6 @@
 # Introduction
 ## [What is the Azure portal preview?](introduction/what-is-microsoft-intune.md)
+## [Intune features in Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Get started
 <!---(introduction/get-started.md) --->
 ### [Sign up for a free trial](introduction/sign-up-free-trial-microsoft-intune.md)
