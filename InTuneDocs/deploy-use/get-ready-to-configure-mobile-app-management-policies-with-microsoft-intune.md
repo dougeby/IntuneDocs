@@ -62,9 +62,10 @@ For instructions about how to create an app policy on the Intune admin console, 
 ##  Supported platforms
 - iOS 8.1 or later
 - Android 4 or later
+- Windows 10
 
 >[!NOTE]
->Windows devices don’t support these app protection policies. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>Beginning with version 1703, app protection policies can be defined for Windows 10 devices in the MAM without enrollment scenario. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  Supported apps
 * **Microsoft apps:** These apps have the Intune App SDK built in and require no further processing before you apply app protection policies.
