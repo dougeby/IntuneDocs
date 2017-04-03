@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 04/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-classic
 ---
 
 
-# The early edition for Microsoft Intune - March 2017
+# The early edition for Microsoft Intune - April 2017
 
 The **Early Edition** provides a list of features that are coming in upcoming releases of Microsoft Intune. This information is provided under NDA on an extremely limited basis and is subject to change. Some features listed here are at risk of not making the cutoff dates and may be delayed until a future release. Other features are being tested in a pilot (flighting) to ensure they're customer-ready. Please reach out to your Intune/PM buddy if you have any questions or concerns.
 
@@ -38,33 +38,36 @@ This page is updated periodically. Check back for additional updates.
 
 ## New Capabilities
 
-### New user experience for the Company Portal app for Android <!--621622-->
+### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 
-The Company Portal app for Android will be updating its user interface for a more modern look and feel, and better user experience. The notable updates are:
+The Windows 10 Company Portal app will now provide app install progress bar for all modern app installs begun from the Company Portal.
 
-- Colors: Company Portal tab headers are colored in IT-defined branding.
-- Apps: In the **Apps** tab, the **Featured Apps** and **All Apps** buttons are updated.
-- Search: In the **Apps** tab, the **Search** button is a floating action button.
-- Navigating Apps: **All Apps** view shows a tabbed view of **Featured**, **All**, and **Categories** for easier navigation.
-- Support: **My Devices** and **Contact IT** tabs are updated to improve readability.
+### Improved status messaging in the Company Portal app for iOS <!--744866-->
 
-More details about these changes can be found on the [app UI updates page](whats-new-in-intune-app-ui.md].
+New, more specific error messages will now be displayed within the Company Portal app for iOS to provide more accessible information about what is happening on devices. These error cases were previously included in a general error message titled "Company Portal Temporarily Unavailable". Additionally, if a user launches the Company Portal on iOS when they do not have an Internet connection, they will now see a persistent status bar on the homepage saying "No Internet Connection."
 
-### Signing Script for Windows 10 Company Portal <!--941642-->
+### MyApps available for Managed Browser <!--822308, 822303-->
 
-For customers who need to download and sideload the Windows 10 Company Portal app, you can now use a script to simplify and streamline the app-signing process for your organization.   To download the script and the instructions for using it, see  [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) on TechNet Gallery. For more details about this announcement, see [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) on the Intune Support Team Blog. 
+Microsoft MyApps now have better support within the Managed Browser. Managed Browser users who are not targeted for management will be brought directly to the MyApps service, where they can access their admin-provisioned SaaS apps. Users who are targeted for Intune management will continue to be able to access MyApps from the built-in Managed Browser bookmark.
+
+The Managed Browser has updated its user experience to better support Microsoft MyApps. Managed Browser users who are not targeted for Intune management will be brought directly to the MyApps service, where they can access all of their admin-provisioned SaaS applications. Users who are targeted for Intune management will continue to be able to access MyApps from the built-in Managed Browser bookmark.
+
+### Single sign-on support from the Company Portal for iOS to Outlook for iOS <!--834012-->
+
+Users no longer have to sign in to the Outlook app if they are signed in to the Company Portal app for iOS on the same device with the same account. When users launch the Outlook app, they will be able to select their account and automatically sign in. We are also working toward adding this functionality for other Microsoft apps.
+
+### New icons for the Managed Browser <!--918433, 918431-->
+The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S).
+
+The Managed Browser is updating its home screen icon. The new icon will contain the updated Intune badge, and is more consistent with other EM+S app icons.
+
+### Sign-in progress indicator in Android Company Portal <!--953374-->
+
+An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app.
+
 
 ## Notices
 
-### Improved support for Android users based in China <!--720444-->
-
-Due to the absence of the Google Play Store in China, Android devices must obtain apps from Chinese marketplaces. The Company Portal will support this workflow by redirecting Android users in China to download the Company Portal and Outlook apps from local app stores. This will improve the user experience when Conditional Access policies are enabled, both for Mobile Device Management and for Mobile Application Management. The Company Portal and Outlook apps for Android are available on the following Chinese app stores:
-
-- [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
-- [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
-- [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
-- [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
-- [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 
 ### Apple to require updates for Application Transport Security <!--748318-->
 
@@ -78,46 +81,58 @@ New trial tenants will start to see the public preview of the new admin experien
 
 The admin experience in the Azure portal will use the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, if you want to test or look at any of the new functionality until your tenant is migrated, sign up for a new Intune trial account or take a look at the [new documentation](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
 
-### Non-managed devices can access assigned apps <!--664691-->
+### Support for managed configuration options for Android apps <!-- 621621 -->
 
-As part of the design changes on the Company Portal website, iOS and Android users will be able to install apps assigned to them as "available without enrollment" on their non-managed devices. Using their Intune credentials, users will be able to log into the Company Portal website and see the list of apps assigned to them. The app packages of the "available without enrollment" apps are made available for download via the Company Portal website. Apps which require enrollment for installation are not affected by this change, as users will be prompted to enroll their device if they wish to install those apps.
+Android apps in the Play store that support managed configuration options can be configure by Intune.  This feature lets IT view the list of configuration values supported by an app, and provides a guided, first-class UI to allow them to configure those values.
 
-### Improvements to Device Actions report <!--677150-->
+### Remote assistance for Android devices <!-- 675418 -->
 
-We’ve made improvements to the Device Actions report to improve performance. Additionally, you can now filter the report by state. For example, you could filter the report to show only device actions that were completed.”
+Intune will use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Android devices.
 
-### Actions for non-compliance <!--730266-->
+###  New policies for iOS devices <!-- 723774, 723815, 723826, 723830, 723832 -->
 
-**Actions for non-compliance** is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.
+- **Apps on Home screen** - You can use a device policy to control which apps users see on the Home screen of their iOS device. This policy changes the layout of the Home screen, but does not deploy any apps you specified that are not installed.
 
-### Custom app categories <!--748805-->
+- **Connections to AirPrint devices** - You can use an Intune device policy to control which AirPrint devices (network printers) that end users of iOS device can connect to.
 
-You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
-See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).
+- **Connections to AirPlay devices** - You can use an Intune device policy to control which AirPlay devices (like Apple TV) that end users of iOS device can connect to.
 
-### Assign LOB apps to users with unenrolled devices <!--748823-->
+- **Custom lock screen message** - You can configure a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message.
 
-You can now assign line of business apps from the store to users whether or not their devices are enrolled with Intune. If the user's device is not enrolled with Intune, they must go to the Company Portal website to install it, instead of the Company Portal app.
+- **Web content filter** - You can control which websites users of iOS devices can visit using one of the following two methods:
 
-### New compliance reports <!--846671-->
+  - Add permitted, and blocked URLs using Apples built-in web content filter.
+  - Allow only specified websites to be accessed by the Safari browser. Bookmarks will be created in Safari for each site you specify.
 
-You now have compliance reports that give you the compliance posture of devices in your company and allow you to quickly troubleshoot compliance-related issues encountered by your users. You can view information about
+### VPP apps available in iOS Company Portal <!-- 748782 -->
 
-- Overall compliance state of devices
-- Compliance state for an individual setting
-- Compliance state for an individual policy
+You can assign iOS volume-purchased (VPP) apps as **Available** installs to end users. End users will need an Apple Store account to install the app.
 
-You can also use these reports to drill-down into an individual device to view specific settings and policies that affect that device.
+### Shared shift worker devices for Samsung KNOX Standard devices <!-- 773753 -->
 
-### Additional Windows 10 upgrade paths <!--903672-->
+You can configure a Samsung KNOX Standard device as a shared shift worker device in the Intune portal. Once the device is in shared mode, the apps, policies and email on that device are tied to the identify of the user who is logging on to the Company Portal.
+Users can log into the Company Portal app using their Azure  Active Directory credentials, and their apps, policies, and email settings will be automatically applied to the device.
 
-You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
+### Synchronize eBooks from Apple VPP Store <!-- 800878 -->
 
-- Windows 10 Professional
-- Windows 10 Professional N
-- Windows 10 Professional Education
-- Windows 10 Professional Education N
+You can synchronize books you purchased from the Apple volume-purchase program store with Intune, and assign these to users.
 
+### Additional Windows device restriction settings <!-- 818566 -->
+
+We've added support for additional Windows device restriction settings like additional Edge browser support, device lock screen customization, start menu customizations, Windows Spotlight search set wallpaper, and proxy setting.
+
+### Fresh Start for Windows 10 PCs<!-- 1004830 -->
+
+In this release, we’ve added a new Fresh Start device action for Windows 10 PCs.  When you issue this action, any apps that were installed on the PC are removed, and the PC is automatically updated to the latest version of Windows. This can be used to help remove pre-installed OEM apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
+
+### Data sharing between work and personal profiles in Android for Work <!-- 1045102 -->
+
+We've updated the setting **Data sharing between work and personal profiles** in an Android for Work device restriction profile with new options to help you configure data sharing between work and personal profiles.
+
+
+### Assign LOB apps to iOS and Android devices <!-- 1057568 -->
+
+“You can assign line of business apps for iOS (.ipa files) and Android (.apk files) to users or devices.
 
 ### Direct access to Apple enrollment scenarios <!--951869-->
 
