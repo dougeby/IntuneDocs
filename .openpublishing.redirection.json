@@ -326,7 +326,7 @@
         "source_path": "intune-user-help/you-need-to-resolve-a-threat-found-by-device-threat-protection-android",
         "redirect_url": "https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-mtd-android",
         "redirect_document_id": false
-    }
+    },
     {
         "source_path": "intune-user-help/you-are-prompted-to-install-device-threat-protection-android",
         "redirect_url": "https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-mtd-android",
