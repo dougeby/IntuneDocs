@@ -55,7 +55,7 @@ ms.custom: intune-azure
 The app you have created will be displayed in the apps list where you can assign it to the groups you choose. For help, see [How to assign apps to groups](/intune-azure/manage-apps/deploy-apps).
 
 ## Manually deploy Windows 10 Company Portal app
-You can manually deploy the Windows 10 Company Portal app directly from Intune, even if you haven’t integrated Intune with the Windows Store for Business.
+End users can install the Company Portal app from the Windows Store to manage devices and install apps. If, however, your business needs require that you deploy the Company Portal app, you can manually deploy the Windows 10 Company Portal app directly from Intune, even if you haven’t integrated Intune with the Windows Store for Business.
 
  > [!NOTE]
  > This option will require deploying manual updates each time an app update is released.
