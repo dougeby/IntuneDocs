@@ -37,42 +37,33 @@ This topic helps IT administrators enroll company-owned iOS devices purchased th
 >Also, if users enroll their iOS devices using the Company Portal app and those devices' serial numbers are then imported and assigned a DEP profile, the device will be unenrolled from Intune.
 
 **DEP Enrollment steps**
-1. [iOS enrollment prerequisites](#prerequisites)
-2. [Get an Apple DEP token](#get-the-apple-dep-certificate)
-3. [Create a DEP profile](#create-anapple-dep-profile)
-4. [Assign Apple DEP serial numbers to your Intune server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
-5. [Synchronize DEP-managed devices](#synchronize-dep-managed-devices)
+1. [Get an Apple DEP token](#get-the-apple-dep-certificate)
+2. [Create a DEP profile](#create-anapple-dep-profile)
+3. [Assign Apple DEP serial numbers to your Intune server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
+4. [Synchronize DEP-managed devices](#synchronize-dep-managed-devices)
 5. Distribute devices to users
 
-## Prerequisites
 
-Complete the following prerequisites before setting up iOS device enrollment:
 
-- [Configure domains](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Set the MDM Authority](set-mdm-authority.md)
-- [Create groups](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Get an Apple MDM push certificate](get-an-apple-mdm-push-certificate.md)
-
-Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP token from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
+## Get the Apple DEP certificate
+Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP certificate (.p7m) file from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
 
 To manage corporate-owned iOS devices with DEP, your organization must join Apple DEP and get devices through that program. Details of that process are available at: https://deploy.apple.com. Advantages of the program include hands-free setup of devices without using a USB cable to connect each device to a computer.
 
 > [!NOTE]
 > If your Intune tenant was migrated from the Intune classic console to the Azure portal and you deleted an Apple DEP token from the Intune administration console during the migration period, that the DEP token might have been restored to your Intune account. You can delete the DEP token agaom from the Azure portal.
 
-## Get the Apple DEP certificate
-An Apple DEP certificate (.p7m) file is used to establish a trust relationship between Intune and Apple’s Device Enrollment Program servers. This certificate is downloaded from Apple and imported into Intune. The DEP certificate must be renewed once per year.
 
-In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Apple DEP Token**, and then follow the numbered steps in the Azure portal, which are shown below.
+
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
-Select **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Apple DEP Token**.
+2. Select **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
 
 **Step 2. Download an Apple DEP token from the appropriate Apple website.**<br>
 Select [Create a DEP token via Apple Deployment Programs](https://deploy.apple.com) (https://deploy.apple.com), and sign in with your company Apple ID. You must use this Apple ID to renew your DEP token.
 
-   1.  In the [Device Enrollment Program Portal](https://deploy.apple.com), go to **Device Enrollment Program** &gt; **Manage Servers**, and then choose **Add MDM Server**.
+   1.  In Apple's [Device Enrollment Program Portal](https://deploy.apple.com), go to **Device Enrollment Program** &gt; **Manage Servers**, and then choose **Add MDM Server**.
    2.  Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
    3.  The **Add &lt;ServerName&gt;** dialog box opens. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
    4.  The **Add &lt;ServerName&gt;** dialog box shows a **Your Server Token** link. Download the server token (.p7m) file to your computer, and then choose **Done**.
