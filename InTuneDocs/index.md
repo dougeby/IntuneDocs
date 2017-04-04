@@ -21,17 +21,17 @@ description: Learn to use Microsoft Intune (FIXME)
                     <ul id="manage-featured" class="cardsC">
                         <li>
                             <div>
-                                <h3>Popular articles</h3>
+                                <h3 style="font-size: 1.4rem; margin-top: 0px; margin-left: 11px;">Popular articles</h3>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <h3>Recommended articles</h3>
+                                <h3 style="font-size: 1.4rem; margin-top: 0px; margin-left: 11px;">Recommended articles</h3>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <h3>New articles</h3>
+                                <h3 style="font-size: 1.4rem; margin-top: 0px; margin-left: 11px;">New articles</h3>
                             </div>
                         </li>
                         <li>
@@ -112,7 +112,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="http://fasttrack.microsoft.com/ems">150+ licenses? Leverage your FastTrack benefits</a></h3>
+                                            <h3><a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">150+ licenses? Leverage your FastTrack benefits</a></h3>
                                             <p>Work with Microsoft specialists to access, remediate, enable, and drive usage of your services.</p>
                                         </div>
                                     </div>
