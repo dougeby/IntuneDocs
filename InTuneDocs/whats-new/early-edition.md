@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/03/2017
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,24 +50,17 @@ New, more specific error messages will now be displayed within the Company Porta
 
 Microsoft MyApps now have better support within the Managed Browser. Managed Browser users who are not targeted for management will be brought directly to the MyApps service, where they can access their admin-provisioned SaaS apps. Users who are targeted for Intune management will continue to be able to access MyApps from the built-in Managed Browser bookmark.
 
-The Managed Browser has updated its user experience to better support Microsoft MyApps. Managed Browser users who are not targeted for Intune management will be brought directly to the MyApps service, where they can access all of their admin-provisioned SaaS applications. Users who are targeted for Intune management will continue to be able to access MyApps from the built-in Managed Browser bookmark.
+### New icons for the Managed Browser <!--918433, 918431-->
+The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S).
 
 ### Single sign-on support from the Company Portal for iOS to Outlook for iOS <!--834012-->
 
 Users no longer have to sign in to the Outlook app if they are signed in to the Company Portal app for iOS on the same device with the same account. When users launch the Outlook app, they will be able to select their account and automatically sign in. We are also working toward adding this functionality for other Microsoft apps.
 
-### New icons for the Managed Browser <!--918433, 918431-->
-The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S).
-
-The Managed Browser is updating its home screen icon. The new icon will contain the updated Intune badge, and is more consistent with other EM+S app icons.
-
 ### Sign-in progress indicator in Android Company Portal <!--953374-->
 
 An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app.
 
-### Microsoft Office (Word, Excel, PowerPoint) now support Multi-Identity <!-- 1056967 -->
-
-The newest release of the Microsoft Office apps on Android devices now support multi-identity. Multi-Identity ensures corporate data remains secure while personal data remains untouched by the Intune app management. This new functionality matches what is already offered on iOS devices.
 
 ## Notices
 
@@ -78,6 +71,22 @@ Beginning in Spring 2017, Apple has announced that they will enforce specific re
 ### Direct access to Apple enrollment scenarios <!--951869-->
 
 For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
+
+### What's coming for Appx
+
+As part of the migration to Intune on Azure, we are making three appx changes:
+
+1. Adding a new appx app type in the classic Intune console that can only be deployed to MDM-enrolled devices.
+2. Repurposing the existing appx app type to only be targeted to PCs managed through the Intune PC agent.
+3. Converting all existing appxs into MDM appxs with the migration.
+
+#### How does this affect me?
+
+This will not impact any of your existing deployments to devices that are managed through the Intune PC agent. However, after migration, you will not be able to deploy those migrated appxs to any new devices that are managed through the Intune PC agent that were not previously targeted.
+
+#### What action do I need to take
+
+After migration, you will need to re-upload the appx again as a PC appx if you want to do new PC deployments. To learn more, see [Appx changes in Intune on Azure](https://aka.ms/appxchange) on the Intune Support team blog.  
 
 
 ## Public preview of the new Intune admin experience on Azure <!--736542-->
@@ -188,6 +197,28 @@ We've added supported for multi-user management for devices that run the Windows
 
 In this release, we’ve added a new Fresh Start device action for Windows 10 PCs.  When you issue this action, any apps that were installed on the PC are removed, and the PC is automatically updated to the latest version of Windows. This can be used to help remove pre-installed OEM apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
 
+### Additional Windows 10 upgrade paths <!-- 903672 -->
+
+You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
+
+- Windows 10 Professional
+- Windows 10 Professional N
+- Windows 10 Professional Education
+- Windows 10 Professional Education N
+
+### New MAM settings for PIN and managed storage locations <!-- 736644 -->
+
+Two new app settings are available to help you with mobile application management (MAM) scenarios:
+
+- **Disable app PIN when device PIN is managed** - Detects if a device PIN is present, and if so, bypass the app PIN triggered by the app protection policies.
+
+- **Select which storage services corporate data can be saved to** -Allows you to specify which storage locations in which to save corporate data. Users can save to the selected storage location services, which means all other storage location services not listed will be blocked.
+
+  List of supported storage location services:
+
+  - OneDrive
+  - Business SharePoint Online
+  - Local storage
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
