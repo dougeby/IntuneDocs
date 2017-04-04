@@ -33,14 +33,14 @@ ms.custom: intune-azure
 This topic helps IT administrators enroll company-owned iOS devices purchased through [Apple's Device Enrollment Program (DEP)](https://deploy.apple.com). Microsoft Intune can deploy an enrollment profile that enrolls DEP “over the air” so the administrator never has to touch each managed device. A DEP profile contains management settings that you want to apply to devices during enrollment. The enrollment package can include Setup Assistant options for the device.
 
 >[!NOTE]
->DEP enrollment can't be used with the [device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
+>DEP enrollment can't be used with the [device enrollment manager](enroll-devices-using-device-enrollment-manager.md).
 >Also, if users enroll their iOS devices using the Company Portal app and those devices' serial numbers are then imported and assigned a DEP profile, the device will be unenrolled from Intune.
 
 **DEP Enrollment steps**
 1. [iOS enrollment prerequisites](#prerequisites)
-2. Get an Apple DEP token
-3. Create a DEP profile
-4. [Assign Apple DEP serial numbers to your Intune server](#assign-apple-dep-serial-numbers-to-your-MDM-server)
+2. [Get an Apple DEP token](#get-the-apple-dep-certificate)
+3. [Create a DEP profile](#create-anapple-dep-profile)
+4. [Assign Apple DEP serial numbers to your Intune server](#assign-apple-dep-serial-numbers-to-your-mdm-server)
 5. [Synchronize DEP-managed devices](#synchronize-dep-managed-devices)
 5. Distribute devices to users
 
@@ -53,8 +53,6 @@ Complete the following prerequisites before setting up iOS device enrollment:
 - [Create groups](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](get-an-apple-mdm-push-certificate.md)
-- [Get an Apple DEP token](get-apple-dep-token.md)
-
 
 Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment Program (DEP), you need a DEP token from Apple. This token lets Intune sync information about DEP-participating devices that your corporation owns. It also permits Intune to perform enrollment profile uploads to Apple and to assign devices to those profiles.
 
