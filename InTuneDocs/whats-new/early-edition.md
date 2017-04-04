@@ -72,7 +72,7 @@ Beginning in Spring 2017, Apple has announced that they will enforce specific re
 
 For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure Preview portal. Previously, the Apple enrollment preview was only accessible from links in the classic Intune portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
-### What's coming for Appx
+### What's coming for Appx in Intune on Azure <!-- 1000270 -->
 
 As part of the migration to Intune on Azure, we are making three appx changes:
 
@@ -205,6 +205,10 @@ You can now create an edition upgrade policy to upgrade devices to the following
 - Windows 10 Professional N
 - Windows 10 Professional Education
 - Windows 10 Professional Education N
+
+### Bulk Enroll Windows 10 devices <!-- 747607 -->
+
+You can join large numbers of Windows 10 devices to Azure Active Directory and Intune with IT automation tools. To enable automatic MDM enrollment for your Azure AD tenant, create a provisioning package that joins the device to your Azure AD tenant using Windows Configuration Designer. Apply that package to corporate-owned devices you'd like to bulk enroll and manage.  Once the package is applied, devices connect to Azure AD, enroll in Intune, and are ready for your Azure AD users to log on.
 
 ### New MAM settings for PIN and managed storage locations <!-- 736644 -->
 
