@@ -19,7 +19,7 @@ Automatic enrollment lets users enroll either company-owned or personal Windows 
 
 3. Select **Microsoft Intune**.
 
-![Screenshot of the Azure portal](../media/auto-enroll-intune.png)
+  ![Screenshot of the Azure portal](../media/auto-enroll-intune.png)
 
 4. Configure which users will automatically enroll.
 
