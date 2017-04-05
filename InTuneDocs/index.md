@@ -7,7 +7,7 @@ ms.service: microsoft-intune
 ms.assetid: 99e91b60-d6a5-44a8-908f-442161fbb077
 ms.topic: hub-page
 title: Microsoft Intune Documentation | Microsoft Docs
-description: Learn to use Microsoft Intune (FIXME)
+description: Learn to use Microsoft Intune.
 ---
 <div id="main" class="v2">
 <div class="container">
@@ -21,17 +21,17 @@ description: Learn to use Microsoft Intune (FIXME)
                     <ul id="manage-featured" class="cardsC">
                         <li>
                             <div>
-                                <h3>Popular articles</h3>
+                                <h3 style="font-size: 1.4rem; margin-top: 0px; margin-left: 11px;">Popular articles</h3>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <h3>Recommended articles</h3>
+                                <h3 style="font-size: 1.4rem; margin-top: 0px; margin-left: 11px;">Recommended articles</h3>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <h3>New articles</h3>
+                                <h3 style="font-size: 1.4rem; margin-top: 0px; margin-left: 11px;">New articles</h3>
                             </div>
                         </li>
                         <li>
@@ -39,7 +39,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-featured-portalpreview.svg" alt="" />
                                             </div>
                                         </div>
@@ -56,7 +56,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-featured-deploymentplanning.svg" alt="" />
                                             </div>
                                         </div>
@@ -73,7 +73,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-featured-educateusers.svg" alt="" />
                                             </div>
                                         </div>
@@ -90,7 +90,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-featured-microsoftgraph.svg" alt="" />
                                             </div>
                                         </div>
@@ -107,12 +107,12 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-featured-fasttrack.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="http://fasttrack.microsoft.com/ems">150+ licenses? Leverage your FastTrack benefits</a></h3>
+                                            <h3><a href="https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">150+ licenses? Leverage your FastTrack benefits</a></h3>
                                             <p>Work with Microsoft specialists to access, remediate, enable, and drive usage of your services.</p>
                                         </div>
                                     </div>
@@ -124,7 +124,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-featured-faq.svg" alt="" />
                                             </div>
                                         </div>
@@ -203,7 +203,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-intro-whatisintune.svg" alt="" />
                                             </div>
                                         </div>
@@ -222,7 +222,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-intro-scenarios.svg" alt="" />
                                             </div>
                                         </div>
@@ -241,7 +241,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-intro-devicemgmt.svg" alt="" />
                                             </div>
                                         </div>
@@ -451,7 +451,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-deployments-goals.svg" alt="" />
                                             </div>
                                         </div>
@@ -470,7 +470,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
                                             </div>
                                         </div>
@@ -489,7 +489,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
                                             </div>
                                         </div>
@@ -575,7 +575,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-howto-conditionalpolicy.svg" alt="" />
                                             </div>
                                         </div>
@@ -594,7 +594,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-howto-mdm.svg" alt="" />
                                             </div>
                                         </div>
@@ -613,7 +613,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-howto-configuredevice.svg" alt="" />
                                             </div>
                                         </div>
@@ -632,7 +632,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-howto-configurerestrictions.svg" alt="" />
                                             </div>
                                         </div>
@@ -651,7 +651,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-howto-manageapps.svg" alt="" />
                                             </div>
                                         </div>
@@ -670,7 +670,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-howto-protectaccess.svg" alt="" />
                                             </div>
                                         </div>
@@ -756,7 +756,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-troubleshoot-getsupport.svg" alt="" />
                                             </div>
                                         </div>
@@ -775,7 +775,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-troubleshoot-knownissues.svg" alt="" />
                                             </div>
                                         </div>
@@ -794,7 +794,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-troubleshoot-appdeployment.svg" alt="" />
                                             </div>
                                         </div>
@@ -813,7 +813,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-troubleshoot-deviceentrollment.svg" alt="" />
                                             </div>
                                         </div>
@@ -832,7 +832,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-troubleshoot-deviceprofiles.svg" alt="" />
                                             </div>
                                         </div>
@@ -851,7 +851,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-troubleshoot-emailprofiles.svg" alt="" />
                                             </div>
                                         </div>
@@ -885,7 +885,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-getstarted-overview.svg" alt="" />
                                             </div>
                                         </div>
@@ -904,7 +904,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-sdk-getstarted.svg" alt="" />
                                             </div>
                                         </div>
@@ -923,7 +923,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-sdk-iosguide.svg" alt="" />
                                             </div>
                                         </div>
@@ -942,7 +942,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-sdk-androidguide.svg" alt="" />
                                             </div>
                                         </div>
@@ -961,7 +961,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-featured-microsoftgraph.svg" alt="" />
                                             </div>
                                         </div>
@@ -980,7 +980,7 @@ description: Learn to use Microsoft Intune (FIXME)
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
-                                            <div class="cardImage">
+                                            <div class="cardImage bgdAccent1">
                                                 <img src="/media/hubs/intune/intune-mam.svg" alt="" />
                                             </div>
                                         </div>
@@ -1041,11 +1041,11 @@ description: Learn to use Microsoft Intune (FIXME)
             </ul>
         </li>
         <li>
-            <a href="#moreres">More resources</a>
-            <ul id="moreres">
+            <a href="#community">Community</a>
+            <ul id="community">
                 <li>
-                    <a href="#moreres-all">All</a>
-                    <ul id="moreres-all" class="cardsF">
+                    <a href="#community-all">All</a>
+                    <ul id="community-all" class="cardsF">
                         <li>
                             <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">
                             <div class="cardSize">
