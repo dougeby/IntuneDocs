@@ -86,6 +86,6 @@ Here you’ll identify the mobile device platforms associated with each use case
 | BYOD | Information worker | Marketing, Sales | iOS |                                                           
 | BYOD | Executives | Marketing, Sales | iOS |
 
-## Next Section
+## Next steps
 
 The next section provides guidance on [how to identify the Intune requirements for each use case scenario](section-3-determine-use-case-requirements.md).
