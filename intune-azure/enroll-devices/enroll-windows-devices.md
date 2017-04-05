@@ -29,19 +29,11 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-This topic helps IT administrators simplify Windows enrollment for their users.  Windows devices can be enrolled without any additional steps, but the following methods are available to make enrollment easier.
+This topic helps IT administrators simplify Windows enrollment for their users.  Windows devices can be enrolled without any additional steps, but you can make enrollment easier for users.
 
-Methods to simplify Windows devices enrollment:
-
-- [**Windows 10 automatic enrollment with Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
- -  This method is only available for Windows 10 devices.
- -  You must have Azure Active Directory Premium to use this method.
- -  You can let users enroll devices without automatic enrollment.
-
-- [**Enrollment without Azure AD Premium automatic enrollment**](#enable-windows-enrollment-without-azure-ad-premium)<br>
-  This enrollment method requires additional users steps to enroll Windows devices.
- - Simplifies Windows 8.1 and Windows Phone 8.1 devices enrollment experience.
- - You can use this method for Windows 8.1 and later devices if you don't want to use Azure Active Directory (AD) Premium automatic enrollment.
+Two factors determine how you'll enroll Windows devices:
+- **Do you use Azure Active Directory Premium?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) is included with Enterprise Mobility + Security and other licensing plans.
+- **What versions of Windows clients will enroll?** <br>Windows 10 devices can automatically enroll by adding a work or school account. Earlier versions must enroll using the Company Portal app.
 
 ||**Azure AD Premium**|**Other AD**|
 |----------|---------------|---------------|  
