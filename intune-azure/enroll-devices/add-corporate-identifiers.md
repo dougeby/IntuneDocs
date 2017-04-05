@@ -31,6 +31,8 @@ ms.custom: intune-azure
 
 As an IT admin you can create and import a comma-separated value (.csv) file that lists International Mobile Equipment Identity (IMEI) numbers to identify corporate-owned devices. Each IMEI number can have details specified in the list for administrative purposes.
 
+When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. 
+
 ## Create a .csv file
 To create the list, create a two-column, comma-separated value (.csv) list without a header. Add the IMEI identifier in the left column, and the details in the right column. Details are limited to 128 characters. The current limit is 500 rows per .csv file.
 
