@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/04/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,8 +50,11 @@ New, more specific error messages will now be displayed within the Company Porta
 
 Microsoft MyApps now have better support within the Managed Browser. Managed Browser users who are not targeted for management will be brought directly to the MyApps service, where they can access their admin-provisioned SaaS apps. Users who are targeted for Intune management will continue to be able to access MyApps from the built-in Managed Browser bookmark.
 
-### New icons for the Managed Browser <!--918433, 918431-->
+### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
+
 The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S).
+
+The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app. The new icon will contain the updated person silhouette to make it more consistent with other apps in EM+S.
 
 ### Single sign-on support from the Company Portal for iOS to Outlook for iOS <!--834012-->
 
