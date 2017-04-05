@@ -30,13 +30,13 @@ ms.custom: intune-classic
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-Mobile device management use case scenarios describe the user type or role and the ownership of their device (e.g. company or personal). User case scenarios are helpful because they let you to segment your users into manageable groups. Identifying your use case scenarios is an important part of the planning process for a successful Intune deployment.
+Mobile device management use case scenarios describe the user type or role and the ownership of their device (e.g. company or personal). User case scenarios are helpful because they let you segment your users into manageable groups. Identifying your use case scenarios is an important part of the planning process for a successful Intune deployment.
 
 Let’s discuss a few examples to help your organization identify Intune use case scenarios, as well as organizational groups, and mobile device platforms associated with each use case.
 
 ## Use case scenarios
 
-You can begin by referring to your organizations Intune deployment goals and objectives to help identity the main use case scenarios for your deployment. Within the scope of your Intune deployment plan, you will need to answer the following questions:
+You can begin by referring to your organization's Intune deployment goals and objectives to help identity the main use case scenarios for your deployment. Within the scope of your Intune deployment plan, you will need to answer the following questions:
 
 -   Are you planning to support corporate owned devices?
 
@@ -52,7 +52,7 @@ After identifying your main use case scenarios, you’ll need to determine if ea
 
 -   Kiosk
 
-Here are a few examples of use case and sub use case scenarios. You can utilize the table below to enter your organization’s use case, and sub use case scenarios:
+Here are a few examples of use case and sub use case scenarios. You can use the table below to enter your organization’s use case, and sub use case scenarios:
 
 | **Use cases** | **Sub use cases** |
 |:---:|:---:|
