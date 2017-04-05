@@ -213,11 +213,11 @@ You can now create an edition upgrade policy to upgrade devices to the following
 
 You can join large numbers of Windows 10 devices to Azure Active Directory and Intune with IT automation tools. To enable automatic MDM enrollment for your Azure AD tenant, create a provisioning package that joins the device to your Azure AD tenant using Windows Configuration Designer. Apply that package to corporate-owned devices you'd like to bulk enroll and manage.  Once the package is applied, devices connect to Azure AD, enroll in Intune, and are ready for your Azure AD users to log on.
 
-### New MAM settings for PIN and managed storage locations <!-- 736644 -->
+### New MAM settings for PIN and managed storage locations <!-- 58112, 736644 -->
 
 Two new app settings are available to help you with mobile application management (MAM) scenarios:
 
-- **Disable app PIN when device PIN is managed** - Detects if a device PIN is present, and if so, bypass the app PIN triggered by the app protection policies.
+- **Disable app PIN when device PIN is managed** - Detects if a device PIN is present on the enrolled device, and if so, bypasses the app PIN triggered by the app protection policies. This setting will allow for a reduction in the number of times a PIN prompt is displayed to users opening a MAM-enabled application on an enrolled device. This feature is available for both Android and iOS.
 
 - **Select which storage services corporate data can be saved to** -Allows you to specify which storage locations in which to save corporate data. Users can save to the selected storage location services, which means all other storage location services not listed will be blocked.
 
@@ -226,6 +226,7 @@ Two new app settings are available to help you with mobile application managemen
   - OneDrive
   - Business SharePoint Online
   - Local storage
+
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
