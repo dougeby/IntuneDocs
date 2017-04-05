@@ -54,7 +54,7 @@ Microsoft MyApps now have better support within the Managed Browser. Managed Bro
 
 The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S).
 
-The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app. The new icon will contain the updated person silhouette to make it more consistent with other apps in EM+S.
+The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
 
 ### Single sign-on support from the Company Portal for iOS to Outlook for iOS <!--834012-->
 
