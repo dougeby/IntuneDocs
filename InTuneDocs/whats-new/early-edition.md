@@ -194,7 +194,7 @@ We've added support for additional Windows device restriction settings like addi
 
 ### Multi-user support for Windows 10 Creators Update <!-- 822547 -->
 
-We've added supported for multi-user management for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different users log onto the device with their AAD credentials, they will receive any apps and policies that were assigned to their user name.
+We've added support for multi-user management for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different users log onto the device with their AAD credentials, they will receive any apps and policies that were assigned to their user name.
 
 ### Fresh Start for Windows 10 PCs<!-- 1004830 -->
 
