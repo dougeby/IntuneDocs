@@ -29,11 +29,11 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-As an IT admin you can create and import a comma-separated value (.csv) file that lists International Mobile Equipment Identity (IMEI) numbers and iOS serial numbers to identify corporate-owned devices. Each IMEI number can have details specified in the list for administrative purposes.
+As an IT admin you can create and import a comma-separated value (.csv) file that lists International Mobile Equipment Identity (IMEI) numbers to identify corporate-owned devices. Each IMEI number can have details specified in the list for administrative purposes.
 
-When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned.
+<!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
-## Create a .csv file
+## Add corporate identifiers
 To create the list, create a two-column, comma-separated value (.csv) list without a header. Add the IMEI identifier in the left column, and the details in the right column. Details are limited to 128 characters and are for administrative use only. Details aren't displayed on the device. The current limit is 500 rows per .csv file.
 
 **Upload a .csv file that has serial numbers** – Create a two-column, comma-separated value (.csv) list without a header, and limit the list to 5,000 devices or 5 MB per .csv file.
@@ -66,7 +66,7 @@ This .csv file when viewed in a text editor appears as:
 
 Once imported, these devices might or might not be enrolled, and can have a state of either **Enrolled** or **Not contacted**. **Not contacted** means that the device has never communicated in with the Intune service.
 
-## Delete a .csv list
+## Delete  corporate identifiers
 
 1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
