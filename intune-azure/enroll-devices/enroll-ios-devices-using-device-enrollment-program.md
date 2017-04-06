@@ -51,17 +51,17 @@ Before you can enroll corporate-owned iOS devices with Apple's Device Enrollment
 To manage corporate-owned iOS devices with DEP, your organization must join Apple DEP and get devices through that program. Details of that process are available at: https://deploy.apple.com. Advantages of the program include hands-free setup of devices without using a USB cable to connect each device to a computer.
 
 > [!NOTE]
-> If your Intune tenant was migrated from the Intune classic console to the Azure portal and you deleted an Apple DEP token from the Intune administration console during the migration period, that the DEP token might have been restored to your Intune account. You can delete the DEP token agaom from the Azure portal.
+> If your Intune tenant was migrated from the Intune classic console to the Azure portal and you deleted an Apple DEP token from the Intune administration console during the migration period, that the DEP token might have been restored to your Intune account. You can delete the DEP token again from the Azure portal.
 
 
 
 
 **Step 1. Download an Intune public key certificate required to create an Apple DEP token.**<br>
-1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Apple DEP Token**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Device enrollment** > **Apple DEP Token**.
 2. Select **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
 
 **Step 2. Download an Apple DEP token from the appropriate Apple website.**<br>
-Select [Create a DEP token via Apple Deployment Programs](https://deploy.apple.com) (https://deploy.apple.com), and sign in with your company Apple ID. You must use this Apple ID to renew your DEP token.
+Select [Create a DEP token via Apple Deployment Programs](https://deploy.apple.com) (https://deploy.apple.com), and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
 
    1.  In Apple's [Device Enrollment Program Portal](https://deploy.apple.com), go to **Device Enrollment Program** &gt; **Manage Servers**, and then choose **Add MDM Server**.
    2.  Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
