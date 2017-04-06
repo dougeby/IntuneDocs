@@ -7,7 +7,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/04/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ This page is updated periodically. Check back for additional updates.
 > [!Note]
 > The following changes are under development for Intune. All of these features will eventually be supported for hybrid customers' deployments (Configuration Manager with Intune). For more information about new hybrid features, check out our [hybrid What’s New page](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
-## New Capabilities
+## New capabilities
 
 ### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 
@@ -50,8 +50,11 @@ New, more specific error messages will now be displayed within the Company Porta
 
 Microsoft MyApps now have better support within the Managed Browser. Managed Browser users who are not targeted for management will be brought directly to the MyApps service, where they can access their admin-provisioned SaaS apps. Users who are targeted for Intune management will continue to be able to access MyApps from the built-in Managed Browser bookmark.
 
-### New icons for the Managed Browser <!--918433, 918431-->
+### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
+
 The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S).
+
+The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
 
 ### Single sign-on support from the Company Portal for iOS to Outlook for iOS <!--834012-->
 
@@ -191,7 +194,7 @@ We've added support for additional Windows device restriction settings like addi
 
 ### Multi-user support for Windows 10 Creators Update <!-- 822547 -->
 
-We've added supported for multi-user management for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different users log onto the device with their AAD credentials, they will receive any apps and policies that were assigned to their user name.
+We've added support for multi-user management for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different users log onto the device with their AAD credentials, they will receive any apps and policies that were assigned to their user name.
 
 ### Fresh Start for Windows 10 PCs<!-- 1004830 -->
 
@@ -210,11 +213,11 @@ You can now create an edition upgrade policy to upgrade devices to the following
 
 You can join large numbers of Windows 10 devices to Azure Active Directory and Intune with IT automation tools. To enable automatic MDM enrollment for your Azure AD tenant, create a provisioning package that joins the device to your Azure AD tenant using Windows Configuration Designer. Apply that package to corporate-owned devices you'd like to bulk enroll and manage.  Once the package is applied, devices connect to Azure AD, enroll in Intune, and are ready for your Azure AD users to log on.
 
-### New MAM settings for PIN and managed storage locations <!-- 736644 -->
+### New MAM settings for PIN and managed storage locations <!-- 58112, 736644 -->
 
 Two new app settings are available to help you with mobile application management (MAM) scenarios:
 
-- **Disable app PIN when device PIN is managed** - Detects if a device PIN is present, and if so, bypass the app PIN triggered by the app protection policies.
+- **Disable app PIN when device PIN is managed** - Detects if a device PIN is present on the enrolled device, and if so, bypasses the app PIN triggered by the app protection policies. This setting will allow for a reduction in the number of times a PIN prompt is displayed to users opening a MAM-enabled application on an enrolled device. This feature is available for both Android and iOS.
 
 - **Select which storage services corporate data can be saved to** -Allows you to specify which storage locations in which to save corporate data. Users can save to the selected storage location services, which means all other storage location services not listed will be blocked.
 
@@ -223,6 +226,7 @@ Two new app settings are available to help you with mobile application managemen
   - OneDrive
   - Business SharePoint Online
   - Local storage
+
 
 ### See also
 See [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md) for details on recent developments.
