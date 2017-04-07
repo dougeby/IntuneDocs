@@ -36,7 +36,7 @@ When you encrypt a device, you are encoding the information on it using a secret
 Some Android devices on version 7.0+ encrypt data in ways that is inconsistent with certain Android platform standards. These devices may seem to be encrypted out of the box, but Intune recognizes the methods used as putting the device's information at risk from malicious users who have physical access to the device.
 
 > [!Note]
-> Microsoft works with all listed manufacturers to resolve this issue, and will update this list accordingly any fixes are completed.
+> Microsoft works with all listed manufacturers to resolve this issue, and will update this list accordingly as any fixes are completed.
 
 ## An incomplete list of devices
 
