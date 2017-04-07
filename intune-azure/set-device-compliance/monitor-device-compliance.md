@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: How to monitor device compliancetitleSuffix: "Intune Azure preview"
+title: How to monitor device compliance
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to monitor device compliance."
 keywords:
 author: andredm7
@@ -49,4 +50,4 @@ The setting compliance report provides the details for each compliance settings 
 - Number of devices that are noncompliant with the setting.
 - The platform that the setting is applied to.
 
-You can drill down on each of the setting to see more information about the profiles on which these settings have been enabled, and the configured the value of the setting.
+You can drill down on each of the setting to see more information about the profiles on which these settings have been enabled, and the value of the setting.

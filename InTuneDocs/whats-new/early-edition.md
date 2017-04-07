@@ -179,11 +179,6 @@ You can assign iOS volume-purchased (VPP) apps as **Available** installs to end 
 
 You can synchronize books you purchased from the Apple volume-purchase program store with Intune, and assign these to users.
 
-### Shared shift worker devices for Samsung KNOX Standard devices <!-- 773753 -->
-
-You can configure a Samsung KNOX Standard device as a shared shift worker device in the Intune portal. Once the device is in shared mode, the apps, policies, and email on that device are tied to the identify of the user who is logging on to the Company Portal.
-Users can log into the Company Portal app using their Azure Active Directory credentials, and their apps, policies, and email settings will be automatically applied to the device.
-
 ### Multi-user management for Samsung KNOX Standard devices <!-- 971988 -->
 
 Devices that run Samsung KNOX Standard are now supported for multi-user management by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end users sign-in, they have access to apps and additionally get any policies applied to them. When users sign out, all app data is cleared.
