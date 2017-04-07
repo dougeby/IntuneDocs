@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -73,7 +73,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 2. On the list of apps blade, choose the app you want to assign, and then choose '**...**' > **Assign Groups**.
 3. On the <*app name*> - **Groups Assigned** blade, choose **Manage** > **Groups Assigned**.
 4. Choose **Assign Groups** then, on the **Select groups** blade, choose the Azure AD user or device groups to which you want to assign the app.
-You must choose an assignment action of **Required**. Available installations are not currently supported. Additionally, assignments to device groups are available to new tenants created after January 2017. If your tenant was created before then, and you do not have the option to assign VPP apps to device groups, contact Intune support.
+You must choose an assignment action of **Required**. Additionally, assignments to device groups are available to new tenants created after January 2017. If your tenant was created before then, and you do not have the option to assign VPP apps to device groups, contact Intune support.
 5. Once you are done, choose **Save**.
 
 See [How to monitor apps](monitor-apps.md) for information to help you monitor app assignments.
@@ -85,3 +85,5 @@ When you assign the app as a **Required** installation, each user who installs t
 To reclaim a license, you must change the assignment action to **Uninstall**. The license will be reclaimed after the app is uninstalled.
 
 When a user with an eligible device first tries to install a VPP app, they will be asked to join the Apple Volume Purchase program. They must do this before the app installation proceeds.
+
+When you deploy a VPP app as Available, the app content and license are deployed directly from the app store.
