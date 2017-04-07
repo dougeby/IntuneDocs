@@ -47,7 +47,8 @@ On the **Dock** blade, you can add up to 6 items or folders to the dock at the b
 3. Using the information in the **How to add an app to the list** and **How to add a folder to the list** sections in this topic, configure the apps and folders you want to appear in the dock.
 4. Continue to add items. When you are finished, click **OK** on each blade until you return to the **Create Profile** blade. Choose **Create**.
 
->[!TIP] You can drag and drop items in the apps and folders list to reorder them. 
+>[!TIP]
+> You can drag and drop items in the apps and folders list to reorder them. 
 
 ### Example
 
