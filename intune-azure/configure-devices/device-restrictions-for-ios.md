@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -259,3 +259,20 @@ Use the information in this list to identify the name, publisher, and bundle ID 
 - 	**JavaScript** - Allow Java scripts to run in the browser.
 - 	**Fraud warnings** - Allow fraud warnings in the browser.
 - 	**Pop-ups** - Enable or disable the browser pop-up blocker.
+
+
+## Domains
+
+### Unmarked email domains
+
+In the **Email Domain URL** field, add one or more URLs to the list. When end users receive an email from a domain other than those you configured, the email will be marked as untrusted in the iOS Mail app.
+
+
+### Managed web domains
+
+In the **Web Domain URL** field, add one or more URLs to the list. When documents are downloaded from the domains you specify, they will be considered managed. This setting applies only to documents downloaded using the Safari browser.
+
+
+### Safari password auto fill domains
+
+In the **Domain URL** field, add one or more URLs to the list. Users can only save web passwords from URLs in this list. This setting applies only to the Safari browser, and to iOS 9.3 and later devices in supervised mode. If you don't specify any URLs, then passwords can be saved from all web sites.
