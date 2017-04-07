@@ -111,8 +111,12 @@
 ### [Configure device profiles](configure-devices/how-to-create-device-profiles.md)
 
 ### [Configure device features](configure-devices/how-to-configure-device-features.md)
-#### [iOS](configure-devices/device-features-for-ios.md)
-#### [macOS](configure-devices/device-features-for-macos.md)
+#### [AirPrint for iOS and MacOS](configure-devices/air-print-settings-for-ios-and-macos.md)
+#### [AirPlay for iOS](configure-devices/airplay-settings-for-ios-devices.md)
+#### [Home screen layout for iOS](configure-devices/home-screen-settings-for-ios.md)
+#### [App notifications for iOS](configure-devices/app-notification-settings-for-ios.md)
+#### [Shared devices for iOS](configure-devices/shared-device-settings-for-ios.md)
+#### [Web content filter for iOS](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [Configure device restrictions](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
