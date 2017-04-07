@@ -66,7 +66,8 @@ Use these settings to configure URLs that end users of the Safari browser, on iO
 2. Click **Add** after you enter the information for each website.
 3. When you are finished, click **OK**.
 
->[!IMPORTANT] The following URLs are permitted automatically by Intune.
+>[!IMPORTANT] 
+> The following URLs are permitted automatically by Intune.
 > - www.microsoft.com
 > - www.microsoft.net
 
