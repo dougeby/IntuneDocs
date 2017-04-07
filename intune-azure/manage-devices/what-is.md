@@ -75,7 +75,7 @@ This will remove the activation lock from an iOS device without the user’s App
 ### **Fresh Start**
 
 Removes any apps that were installed on a Windows 10 PC running the Creators Update, then automatically updates the PC to the latest version of Windows.
-This can be used to help remove pre-installed (OEM) apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued.
+This can be used to help remove pre-installed (OEM) apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued. In this case, apps and settings are removed, but the contents of the users Home folder are reained.
 
 
 ### **Lost mode**
