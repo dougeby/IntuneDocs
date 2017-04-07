@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Intune device restriction settings for AndroidtitleSuffix: "Intune Azure preview"
+title: Intune device restriction settings for Android
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the Intune settings you can use to control device settings and functionality on Android devices."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/29/2017
+ms.date: 4/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +46,7 @@ ms.custom: intune-azure
 |**Screen capture**|Lets the user capture the screen contents as an image.|No|Yes|
 |**Voice assistant**|Allows the use of voice assistant software on the device.|No|Yes|
 |**YouTube**|Allows the use of the YouTube app on the device.|No|Yes|
+|**Shared devices**|Configure a managed Samsung KNOX Standard device as shared. In this mode, apps, policies and email on that device are tied to the identify of the user who is logging on to the Company Portal.<br>When a user logs into the Company Portal, Intune will install all apps, policies, and email settings that have been assigned to that user.|No|Yes|
 
 ## Password
 
