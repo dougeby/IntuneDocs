@@ -32,7 +32,7 @@ ms.custom: intune-classic
 
 Having a good deployment plan begins with first identifying your organization’s deployment goals and objectives, along with potential challenges. Each organization is unique and will have their own deployment goals, objectives and challenges. Let’s discuss each area in more detail.
 
-## Deployment Goals
+## Deployment goals
 
 Deployment goals are the long-term achievements intended by implementing Microsoft Intune in an organization. Listed below are some examples of an organization’s Intune deployment goals along with the description and business value for each.
 
@@ -60,7 +60,7 @@ Deployment goals are the long-term achievements intended by implementing Microso
 
     -    **Business value:** The efficient use of resources enables the business to invest in other areas, compete more effectively, and provide better service to clients.
 
-## Deployment Objectives
+## Deployment objectives
 
 Deployment objectives are the actions an organization can take to reach its Microsoft Intune deployment goals. Below are listed some examples of an organization’s deployment objectives, and how each one would be accomplished.
 
@@ -80,7 +80,7 @@ Deployment objectives are the actions an organization can take to reach its Micr
 <br>
     -   **Execution:** Enroll and manage devices with Microsoft Intune, providing the capability to perform a remote wipe of corporate data and resources when appropriate.
 
-## Deployment Challenges
+## Deployment challenges
 
 Deployment challenges are issues that are top of mind for an organization and may have a negative impact on their deployment. Sometimes they may be related to past issues they had experienced with previous projects, and would like to avoid or new issues related to the current deployment effort. Listed below are some examples of an organization’s Microsoft Intune deployment challenges along with potential mitigations.
 
@@ -96,6 +96,6 @@ Deployment challenges are issues that are top of mind for an organization and ma
 <br>
     -   **Mitigation:** While you may be excited to jump into your project, ensure you have a clearly-defined your goals and objectives. Include these in all awareness and training activities to help ensure users understand why your organization selected Intune.
 
-## Next Section
+## Next steps
 
 Now that you have identified your deployment goals, objectives, and potential challenges, let’s move to the next section: [Identify use case scenarios](section-2-identify-use-case-scenarios.md).
