@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -71,6 +71,12 @@ Generates a new passcode for the device which will be displayed on the <*device 
 
 ### **Bypass Activation Lock**
 This will remove the activation lock from an iOS device without the user’s Apple ID and password. Once you bypass the activation lock, the device turns on activation lock again when the Find My iPhone app launches. Only bypass the activation lock if you have physical access to the device.
+
+### **Fresh Start**
+
+Removes any apps that were installed on a Windows 10 PC running the Creators Update, then automatically updates the PC to the latest version of Windows.
+This can be used to help remove pre-installed (OEM) apps that are often delivered with a new PC. You can configure if user data is retained when this device action is issued. In this case, apps and settings are removed, but the contents of the users Home folder are retained.
+
 
 ### **Lost mode**
 If an iOS device has been lost or stolen, you can enable lost mode. This lets you specify a message and a phone number that will be displayed on the lock screen of the device. To do this:
