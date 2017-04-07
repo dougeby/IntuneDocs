@@ -161,6 +161,7 @@
 #### [macOS](configure-devices/custom-for-macos.md)
 #### [Windows Phone 8.1](configure-devices/custom-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/custom-for-windows-10.md)
+#### [Android for Work](configure-devices/custom-android-for-work.md)
 
 ### [Assign device profiles](configure-devices/how-to-assign-device-profiles.md)
 ### [Monitor device profiles](configure-devices/how-to-monitor-device-profiles.md)
