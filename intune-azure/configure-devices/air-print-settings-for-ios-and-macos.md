@@ -44,7 +44,7 @@ The first part of the information is the name of your printer and the last part 
 >6.	Finally, use the IP address and resource path in the AirPrint payload settings. An example IP address might be **10.50.25.21**, and an example resource path might be **/ipp/port1**.
 
 1. On the **Device features** blade choose **AirPrint**.
-2. On the **App Notifications** blade, to add an AirPrint destination, enter its **IP address** and **resource path**, and then click **Add**.
+2. On the **AirPrint** blade, to add an AirPrint destination, enter its **IP address** and **resource path**, and then click **Add**.
 3. Continue to add as many destinations as you need. When you are finished, choose **OK**.
 
 You can also import a list of printers from a comma-separated values (.csv) file or export the list.

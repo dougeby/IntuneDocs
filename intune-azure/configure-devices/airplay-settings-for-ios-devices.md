@@ -34,8 +34,8 @@ ms.custom: intune-azure
 Use these settings to help connect iOS devices you manage to AirPlay compatible devices (like Apple TV's) on your network.
 With this capability you can:
 
-- Provision devices with the name and password of AirPlay devices to let them automatically connect when in range.
-- Configure a list of AirPlay devices (by device ID). End users will only be able to see and connect to the devices you list (for supervised devices only).
+- **Configure a device and password list** - Provision devices with the name and password of AirPlay devices to let them automatically connect when in range. If you supply a password, then end users won't need to supply it when they connect.
+- **Configure allowed destinations** - Configure a list of AirPlay devices (by device ID). End users will only be able to see and connect to the devices you list (for supervised devices only).
 
 ## Get started
 
