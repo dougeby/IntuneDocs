@@ -35,7 +35,7 @@ Use these settings to configure iOS or macOS devices to automatically connect to
 
 > [!TIP]
 > Use this procedure to add AirPrint information to the AirPrint payload so that iOS device users can print to known AirPrint printers.
-  > 	- On a Mac that’s connected to the same local network (subnet) as the Airprint printers, open Terminal (from **/Applications/Utilities**)
+  >   - On a Mac that’s connected to the same local network (subnet) as the Airprint printers, open Terminal (from **/Applications/Utilities**)
   >   - In the Terminal, type **ippfind**, then press enter.
   >   - Make a note of any printer information the command returns, for example: **ipp://myprinter.local.:631/ipp/port1**. The first part of the information is the name of your printer and the last part is the resource path.
   >   - In the Terminal, type **ping myprinter.local**, then press enter.
