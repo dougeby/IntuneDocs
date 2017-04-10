@@ -57,5 +57,5 @@ In this example, you'll create a custom profile that can be used to restrict whe
 	- **Data type** - Select **Boolean** to indicate that the value for this OMA-URI is either **True** or **False**.
 	- **Value** - Select **True**.
 2. You should end up with a setting looking similar to this image.
-![Block copy and paste for Android for Work.](http://i.imgur.com/NlZKqGP.png)
+![Block copy and paste for Android for Work.](./media/custom-policy-afw-copy-paste.png)
 3. Now, when you assign this custom profile to Android for Work devices you manage, copy and paste will be blocked between apps in the work, and personal profiles.
