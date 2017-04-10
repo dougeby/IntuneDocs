@@ -33,10 +33,11 @@ ms.custom: intune-azure
 
 ## Work profile settings
 - 	**Data sharing between work and personal profiles** - Use this setting to control whether apps in the work profile can share data with apps in the personal profile. Choose from: 
-	- 	**Device default**
-	- 	**Data sharing between work and personal profiles**
-	- 	**Apps in work profile can handle sharing request from personal profile**
-	- 	**No restrictions on sharing**
+	- **Default sharing restrictions** - This is the default sharing behavior of the device which varies depending on the version of Android it is running. By default, sharing from the personal to the work profile is allowed. Also by default, sharing between the work profile and personal profile is blocked. This prevents leakage of data from the work to the personal profile. Google does not provide a way to block data going from the personal profile to work profile.  
+	- **Apps in work profile can handle sharing request from personal profile** - Use this option to enable the built-in Android feature that allows sharing from the personal to work profile. When this is enabled, a sharing request initiated from an app in the personal profile will be able to share with apps in the work profile. This is the default behavior for Android devices running versions earlier than 6.0.
+	- **Allow sharing across boundaries** - Enables sharing across the work profile boundary in both directions. When you select this setting, apps in the work profile can share data with unmanaged apps in the personal profile.  Use this setting with care as this allows managed data in the work profile to be transferred to the unmanaged area of the device.
+
+
 - 	**Work profile notifications while device locked** - Control whether apps in the work profile can display on-screen notifications when the device is locked.
 - 	**Default app permissions** - Sets the default permission policy for all apps in the work profile. Starting in Android 6, some permissions required by apps are prompted to the end user at runtime. This policy setting allows you to decide how or if users are prompted to grant permissions for apps in the work profile. 
 For example, you push an app to the work profile that requires location access. Normally that app would pop up a dialog to the user asking if they wanted to grant location access to the app, and the user could approve it or deny it. This policy allows you to decide whether all permissions should be auto-granted without a prompt, auto-denied without a prompt, or let the end user decide. Choose from:
@@ -56,7 +57,7 @@ For example, you push an app to the work profile that requires location access. 
 	- **Low security biometric**
 	- **Required**
 	- **At least numeric**
-	- **Numeric complex**
+	- **Numeric complex** - (repeating, or consecutive numbers like '1111' or '1234' are not allowed)
 	- **At least alphabetic**
 	- **At least alphanumeric**
 	- **At least alphanumeric with symbols**
