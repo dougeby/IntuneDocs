@@ -54,8 +54,6 @@ Make sure to verify the following:
 
 -   You must configure **Exchange ActiveSync** with certificate-based authentication or user credential entry.
 
--   
-
 ### Device compliance requirements
 
 When you configure conditional access policies and target them to a user, before a user can connect to their email, the **device** they use must be:
