@@ -33,9 +33,9 @@ ms.custom: intune-azure
 
 Use these settings to configure URLs that end users of web browsers, on iOS devices, can, or cannot visit. There are two methods you can use to do this.
 
-1. **Configure URLs** - Use Apple’s built in web filter that looks for adult terms like profanity or sexually explicit language. This function evaluates each web page as it is loaded and attempts to identify and block unsuitable content. Additionally, you can configure URLs that will not be checked by the filter, or URLs that will always be blocked, regardless of the filter settings.
+- **Configure URLs** - Use Apple’s built in web filter that looks for adult terms like profanity or sexually explicit language. This function evaluates each web page as it is loaded and attempts to identify and block unsuitable content. Additionally, you can configure URLs that will not be checked by the filter, or URLs that will always be blocked, regardless of the filter settings.
 
-2. **Specific websites only** (for the Safari web browser only) - These URLs are added to the Safari browser’s bookmarks. The user is **only** allowed to visit these sites; no other sites can be accessed. Use this option only if you know the exact list of URLs that can be accessed by users.
+- **Specific websites only** (for the Safari web browser only) - These URLs are added to the Safari browser’s bookmarks. The user is **only** allowed to visit these sites; no other sites can be accessed. Use this option only if you know the exact list of URLs that can be accessed by users.
 If you do not specify any URLs, then end users will not be able to access any websites except for microsoft.com, microsoft.net, and apple.com.
 
 
