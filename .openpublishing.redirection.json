@@ -338,7 +338,7 @@
         "redirect_document_id": false
     },
     {
-        "source_path": "intune-user-help/you-are-prompted-to-install-device-threat-protection-ios",
+        "source_path": "intune-user-help/you-are-prompted-to-install-device-threat-protection-ios.md",
         "redirect_url": "https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-mtd-ios",
         "redirect_document_id": false
     }
