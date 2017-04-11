@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "InTuneDocs/get-started/migrate-to-intune.md",
+      "redirect_url": "https://docs.microsoft.com/intune/plan-design/intune-mdm-migration-guide",
+      "redirect_document_id": true
+    },
+    {
         "source_path": "InTuneDocs/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md",
         "redirect_url": "https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-users-about-microsoft-intune",
         "redirect_document_id": true
