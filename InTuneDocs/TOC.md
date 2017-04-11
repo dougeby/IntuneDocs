@@ -24,7 +24,6 @@
 ### [Customize Company Portal](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Enroll devices](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Post configuration tasks](get-started/post-configuration-tasks.md)
-## [Migrate to Intune](get-started/migrate-to-intune.md)
 ## Next steps
 ### [Prevent company data leaks from Office 365 mobile apps](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Protect company data with data encryption](get-started/protect-data-encryption.md)
