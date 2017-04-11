@@ -36,7 +36,7 @@ The iOS app store lets you purchase multiple licenses for an app that you want t
 Microsoft Intune helps you manage apps that you purchased through this program by importing the license information from the app store, tracking how many of the licenses you have used, and preventing you from installing more copies of the app than you own.
 
 Additionally, you can synchronize, manage, and assign books you purchased from the Apple volume-purchase program store with Intune, and assign these to users. Use the **Books** workload in the Intune portal to manage books. The procedures to manage books are the same as you use for managing apps.
-You must have uploaded an Apple Volume Purchase Program token in order to do this. Currently, you can only assign books as a **Require**d install.
+You must have uploaded an Apple Volume Purchase Program token in order to do this. Currently, you can only assign books as a **Required** install.
 
 
 ## Manage volume-purchased apps for iOS devices
