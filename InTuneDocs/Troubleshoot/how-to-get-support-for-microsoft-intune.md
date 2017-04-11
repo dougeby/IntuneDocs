@@ -7,7 +7,7 @@ description: Support is available both online and by telephone for paid and tria
 keywords:
 author: arob98ms.author: angrobe
 manager: angrobe
-ms.date: 01/27/2016
+ms.date: 04/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,13 +26,16 @@ ms.custom: intune-classic
 
 ---
 
-# How admins get support for Microsoft Intune
+# How to get support for Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
 Support for Intune, and for Intune when used with Configuration Manager, is free of charge. Premier Support customers incur charges for procedure questions (for example, how to go about configuring an Intune feature).
+
+>[!IMPORTANT]
+> For technical support with products that work with Intune, and are not made by Microsoft, for example SaaSwedo, Cisco, or Lookout, contact the supplier of that product first to ensure you have configured it correctly before you open a case with Intune support.
 
 ## Find help without opening a support ticket
 
