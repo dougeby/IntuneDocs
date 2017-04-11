@@ -31,7 +31,7 @@ ms.custom: intune-azure
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## General
-- 	**Screen capture (mobile only)** - Let's the user capture the device screen as an image.
+- 	**Screen capture (mobile only)** - Lets the user capture the device screen as an image.
 - 	**Copy and paste (mobile only)** - Allow copy and paste actions between apps on the device.
 - 	**Manual unenrollment** - Lets the user manually delete the workplace account from the device.
 - 	**Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.
