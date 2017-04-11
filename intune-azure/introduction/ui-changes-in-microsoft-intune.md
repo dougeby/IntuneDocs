@@ -31,14 +31,14 @@ We took the opportunity to organize some tasks more logically as we moved Intune
 ## Quick reference guide
 |Feature |Path in classic console|Path in Intune on Azure|
 |------------||---------------|---------------|
-|Device Enrollment Program (DEP) |Admin > Mobile Device Management > iOS and Mac OS X > Device Enrollment Program|[Enroll Devices > Apple Enrollment > Enrollment Program Token](#where-did-apple-dep-go) |
-|Device Enrollment Program (DEP)| Admin > Mobile Device Management > iOS and Mac OS X > Device Enrollment Program |[Enroll Devices > Apple Enrollment > Enrollment Program Serial Numbers](#where-did-apple-dep-go) |
-|Enrollment Rules |Admin > Mobile Device Management > Enrollment Rules|[Enroll Devices > Enrollment Restrictions](#where-did-enrollment-rules-go) |
-|Groups by iOS Serial Number |Groups > All Devices > Corporate Pre-enrolled devices > By iOS Serial Number|[Enroll Devices > Apple Enrollment > Enrollment Program Serial Numbers](#where-did-corporate-pre-enrolled-devices-go) |
-|Groups by iOS Serial Number |Groups > All Devices > Corporate Pre-enrolled devices > By iOS Serial Number| [Enroll Devices > Apple Enrollment > AC Serial numbers](#where-did-corporate-pre-enrolled-devices-go)|
-|Groups by IMEI (all platforms)| Groups > All Devices > Corporate Pre-enrolled devices > By IMEI (All platforms) | [Enroll Devices > Corporate Device Identifiers](#by-imei-all-platforms)|
-| Corporate Device Enrollment profile| Policy > Corporate Device Enrollment | [Enroll Devices > Apple Enrollment > Enrollment Program Profiles](#where-did-corporate-pre-enrolled-devices-go) |
-| Corporate Device Enrollment profile | Policy > Corporate Device Enrollment | [Enroll Devices > Apple Enrollment > AC Profiles](#where-did-corporate-pre-enrolled-devices-go) |
+|Device Enrollment Program (DEP) |Admin > Mobile Device Management > iOS and Mac OS X > Device Enrollment Program|[Device enrollment > Apple Enrollment > Enrollment Program Token](#where-did-apple-dep-go) |
+|Device Enrollment Program (DEP)| Admin > Mobile Device Management > iOS and Mac OS X > Device Enrollment Program |[Device enrollment > Apple Enrollment > Enrollment Program Serial Numbers](#where-did-apple-dep-go) |
+|Enrollment Rules |Admin > Mobile Device Management > Enrollment Rules|[Device enrollment > Enrollment Restrictions](#where-did-enrollment-rules-go) |
+|Groups by iOS Serial Number |Groups > All Devices > Corporate Pre-enrolled devices > By iOS Serial Number|[Device enrollment > Apple Enrollment > Enrollment Program Serial Numbers](#where-did-corporate-pre-enrolled-devices-go) |
+|Groups by iOS Serial Number |Groups > All Devices > Corporate Pre-enrolled devices > By iOS Serial Number| [Device enrollment > Apple Enrollment > AC Serial numbers](#where-did-corporate-pre-enrolled-devices-go)|
+|Groups by IMEI (all platforms)| Groups > All Devices > Corporate Pre-enrolled devices > By IMEI (All platforms) | [Device enrollment > Corporate Device Identifiers](#by-imei-all-platforms)|
+| Corporate Device Enrollment profile| Policy > Corporate Device Enrollment | [Device enrollment > Apple Enrollment > Enrollment Program Profiles](#where-did-corporate-pre-enrolled-devices-go) |
+| Corporate Device Enrollment profile | Policy > Corporate Device Enrollment | [Device enrollment > Apple Enrollment > AC Profiles](#where-did-corporate-pre-enrolled-devices-go) |
 
 
 ## Where do I manage groups?
