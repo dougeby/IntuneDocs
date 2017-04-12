@@ -6,9 +6,10 @@ title: How to get support for Microsoft Intune
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Support is available both online and by telephone for paid and trial subscriptions."
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,6 +36,10 @@ Microsoft provides global technical, pre-sales, billing, and subscription suppor
 
 Support for Intune, and for Intune when used with Configuration Manager, is free of charge. Premier Support customers incur charges for procedure questions (for example, how to go about configuring an Intune feature).
 
+>[!IMPORTANT]
+> For technical support with products that work with Intune, and are not made by Microsoft, for example SaaSwedo, Cisco, or Lookout, contact the supplier of that product first to ensure you have configured it correctly before you open a case with Intune support.
+
+
 ## Find help without opening a support ticket
 
 Before creating a support ticket, check out the following resources for answers and information. You might also want to review [general troubleshooting tips for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
@@ -44,6 +49,13 @@ Before creating a support ticket, check out the following resources for answers 
 Ask a question or start a discussion with Microsoft technical experts! We provide answers and insights on the searchable [Microsoft Intune TechNet Forum](https://social.technet.microsoft.com/Forums/home).
 
 ![Microsoft Intune TechNet Forum](./media/technet-forum-for-support.png)
+
+### Get started with the forum
+
+1. On the forums page, enter Microsoft Intune in the Forums box, then select it from the list.<br>
+![Intune forum select control](./media/forum-select-intune.png)
+2. You'll now see Microsoft Intune in your list of selected forums.<br>
+![Intune selected in forums control](./media/forum-selected-intune.png)
 
 ### Microsoft Intune UserVoice product feedback site
 

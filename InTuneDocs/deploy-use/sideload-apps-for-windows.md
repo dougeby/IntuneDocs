@@ -164,7 +164,8 @@ You can manually deploy the Windows 10 Company Portal app directly from Intune, 
 2. Once the app has been acquired, select the app in the **Inventory** page.  
 3. Select **Windows 10 all devices** as the **Platform**, then the appropriate **Architecture** and download. An app license file is not needed for this app.
 ![Image of Windows 10 all devices and Architecture X86 Package details for Download](../media/Win10CP-all-devices.png)
-4. Download all the packages under “Required Frameworks”. This must be done for x86, x64 and ARM architectures – resulting in a total of 9 packages as shown below.  
+4. Download all the packages under “Required Frameworks”. This must be done for x86, x64 and ARM architectures – resulting in a total of 9 packages as shown below.
+
 ![Image of dependency files to Download ](../media/Win10CP-dependent-files.png)
 5. Before uploading the Company Portal app to Intune, create a folder (e.g., C:&#92;Company Portal) with the packages structured in the following way:
   1. Place the Company Portal package into C:\Company Portal. Create a Dependencies subfolder in this location as well.  

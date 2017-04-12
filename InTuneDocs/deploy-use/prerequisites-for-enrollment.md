@@ -141,8 +141,8 @@ Set up management for the following platforms:
 - [iOS and Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [Windows PCs and laptops](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 Mobile and Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 Mobile and Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [Windows PCs and laptops](manage-windows-pcs-with-microsoft-intune.md) (Intune client software)
 
 You can also enable [enrollment of corporate-owned devices](manage-corporate-owned-devices.md).
 
@@ -174,7 +174,7 @@ If you are using coexistence, you need to verify both the Intune and Office 365 
 Complete these steps before contacting Microsoft Support to reset your MDM authority.
 
 - Retire all devices from the Intune admin console. Do not try to retire a device from the device itself. 
-- Delete the Service To Service Connector (under **Administration** > **Mobile Device Management** > **Microsoft Exchange**), or disable the Exchange Connector if you have set that up. 
+- Delete the Service To Service Connector (under **Administration** > **Mobile Device Management** > **Microsoft Exchange**), or disable the Exchange Connector if you have set that up.
 - Remove the Device Enrollment Manager role from **Admin** > **Device Enrollment Manager**.
 - Turn off Device Group Mapping in **Admin** > **Mobile Device Management** > **Device Group Mapping**.
 - Delete sideloading keys from **Admin** > **Mobile Device Management** > **Windows** > **Side Loading Keys**.
@@ -191,7 +191,7 @@ Complete these steps before contacting Microsoft Support to reset your MDM autho
 - Remove all users from the Intune User Group. Point the Intune subscription to an empty user collection, or remove all users from the targeted collection.  Confirm in the CloudUserSync.log that users are removed. 
 - Uncheck the iOS platform to purge the APNs certificate.
 - Delete all published applications that are for MDM devices.
-- Delete all polices that are for MDM devices. 
+- Delete all polices that are for MDM devices.
 - Remove the Windows Intune Connector from the Configuration Manager Console (applicable only to R2 SP1 or below).
 -Remove the Intune subscription by right-clicking the subscription and selecting **Delete**.
 - Restart the SMS Executive Service.
@@ -200,17 +200,17 @@ Complete these steps before contacting Microsoft Support to reset your MDM autho
 ### Reset MDM authority from Office 365 to Configuration Manager
 
 1. Navigate to [https://protection.office.com](https://protection.office.com).
-2. Select the **Security Policies** tab, and select **Device Management**. 
+2. Select the **Security Policies** tab, and select **Device Management**.
 3. Retire all devices by choosing **Selective Wipe**. Do not try to retire a device from the device itself. If selective wipe is disabled, no further action is required.
-4. Select the **Security Policies** tab, and select **Device Security Policies**. 
+4. Select the **Security Policies** tab, and select **Device Security Policies**.
 5. Select **Delete** for all existing policies. If the polices are in a pending state, no further action is required.
 
 >[!NOTE]
->The iOS APsN certificate cannot be deleted and remains attached to the account. 
+>The iOS APsN certificate cannot be deleted and remains attached to the account.
 
 ### Next steps for MDM authority resets
 
-Once Microsoft Support verifies the items on the applicable checklist, resetting the MDM authority can take up to three business days, but typically occurs within one day. 
+Once Microsoft Support verifies the items on the applicable checklist, resetting the MDM authority can take up to three business days, but typically occurs within one day.
 
 >[!IMPORTANT]
->Do not try to configure your subscription until Microsoft Support confirms that the reset has completed successfully! Premature configuration may cause corruption and/or impact your ability to use the Intune service. 
+>Do not try to configure your subscription until Microsoft Support confirms that the reset has completed successfully! Premature configuration may cause corruption and/or impact your ability to use the Intune service.
