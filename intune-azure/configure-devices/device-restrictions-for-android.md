@@ -50,8 +50,6 @@ ms.custom: intune-azure
 
 ## Password
 
-## Password
-
 |||||
 |-|-|-|-|
 |Setting name|Details|Android 4.0+|Samsung KNOX Standard|
