@@ -8,7 +8,7 @@ description: "Intune Azure preview: Support is available both online and by tele
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,6 +34,10 @@ ms.custom: intune-classic
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
 Support for Intune, and for Intune when used with Configuration Manager, is free of charge. Premier Support customers incur charges for procedure questions (for example, how to go about configuring an Intune feature).
+
+>[!IMPORTANT]
+> For technical support with products that work with Intune, and are not made by Microsoft, for example SaaSwedo, Cisco, or Lookout, contact the supplier of that product first to ensure you have configured it correctly before you open a case with Intune support.
+
 
 ## Find help without opening a support ticket
 
