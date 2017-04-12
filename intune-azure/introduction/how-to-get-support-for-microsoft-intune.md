@@ -6,7 +6,8 @@ title: How to get support for Microsoft Intune
 titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Support is available both online and by telephone for paid and trial subscriptions."
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 04/12/2017
 ms.topic: article
@@ -51,9 +52,9 @@ Ask a question or start a discussion with Microsoft technical experts! We provid
 
 ### Get started with the forum
 
-1. On the forums page, enter Microsoft Intune in the Forums box, then select it from the list.
+1. On the forums page, enter Microsoft Intune in the Forums box, then select it from the list.<br>
 ![Intune forum select control](./media/forum-select-intune.png)
-2. You'll now see Microsoft Intune in your list of selected forums.
+2. You'll now see Microsoft Intune in your list of selected forums.<br>
 ![Intune selected in forums control](./media/forum-selected-intune.png)
 
 ### Microsoft Intune UserVoice product feedback site
