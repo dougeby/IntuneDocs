@@ -131,9 +131,7 @@ To enable the Intune App SDK, follow these steps:
 	</array>
 	```
 
-7. After you enable keychain sharing, follow these steps to create a separate access group in which the Intune App SDK will store its data. You can create a keychain access group by using the UI or by using the entitlements file.
-
-		If you are using the UI to create the keychain access group, make sure to follow the steps below:
+7. After you enable keychain sharing, follow these steps to create a separate access group in which the Intune App SDK will store its data. You can create a keychain access group by using the UI or by using the entitlements file. If you are using the UI to create the keychain access group, make sure to follow the steps below:
 
     1. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 
