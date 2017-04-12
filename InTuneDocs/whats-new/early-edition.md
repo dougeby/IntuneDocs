@@ -52,7 +52,7 @@ Microsoft MyApps now have better support within the Managed Browser. Managed Bro
 
 ### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
 
-The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S). You can see the new icon for the Managed Browser on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md). 
+The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S). You can see the new icon for the Managed Browser on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md).
 
 The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
 
@@ -62,7 +62,7 @@ Users no longer have to sign in to the Outlook app if they are signed in to the 
 
 ### Sign-in progress indicator in Android Company Portal <!--953374-->
 
-An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app.
+An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app. You can see the new screens for the Company Portal app for Android on the [what's new in Intune app UI page](whats-new-in-intune-app-ui.md). 
 
 
 ## Notices
