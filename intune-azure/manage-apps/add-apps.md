@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/10/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,9 +37,7 @@ Intune supports adding and assigning these app types:
 
 The following platforms are supported. Click one of the topics for more information on how to add each app type.
 
-- [Android line-of-business apps](/intune-azure/manage-apps/android-lob-app)
 - [Android store apps](/intune-azure/manage-apps/android-store-app)
-- [iOS line-of-business apps](/intune-azure/manage-apps/ios-lob-app)
 - [iOS store apps](/intune-azure/manage-apps/ios-store-app)
 - [Web apps (for all platforms)](/intune-azure/manage-apps/web-app)
 - [Windows Phone 8.1 store apps](/intune-azure/manage-apps/windows-phone-8-1-store-app)
