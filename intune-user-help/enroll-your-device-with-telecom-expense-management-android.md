@@ -18,7 +18,7 @@ searchScope:
 
 # optional metadata
 
-ROBOTS: 
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: sumitp
@@ -34,7 +34,9 @@ Your organization may be using telecom expense management software to ensure tha
 
 ![A screenshot of the "selecting the best category for a device" screen on an iOS device. It shows a selection of corporate or personal enrollment.](./media/and-enroll-11-tem-select-best-category.png)
 
-1. Select the appropriate option, and you will receive a notification to install the [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) app from the Google Play Store. The Datalert app is how your organization can measure data usage. Tap the __next__ arrow at the top right corner of the screen to proceed.
+1. Select the appropriate option, and you will receive a notification to install the [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) app from the Google Play Store. The Datalert app is how your organization can measure data usage. If your organization has configured the work or school enrollment option, you will be required to log in with your work or school account. If this hasn't been enabled, you will need to provide information such as your phone number and verify your device using a code to enroll into the Datalert service from the app.
+
+Tap the __next__ arrow at the top right corner of the screen to proceed.
 
   ![A screenshot of the Datalert app welcome screen, which prompts you to move to the next screen after providing a brief explanation about how Datalert can get you the most out of your data plan.](./media/and-enroll-12-tem-datalert-setup.png)
 
