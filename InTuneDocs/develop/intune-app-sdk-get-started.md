@@ -49,7 +49,7 @@ To begin the registration process, fill out the [Microsoft Intune App Partner Qu
 We will use the email addresses listed in your questionnaire response to reach out and continue the registration process. Additionally, we use your registration email address to contact you if we have any concerns.
 
 > [!NOTE]
-> All information collected in the questionnaire and through email correspondence with the Microsoft Intune team will honor the [Microsoft Privacy Statement](https://www.microsoft.comprivacystatement/default.aspx).
+> All information collected in the questionnaire and through email correspondence with the Microsoft Intune team will honor the [Microsoft Privacy Statement](https://www.microsoft.com/privacystatement/default.aspx).
 
 **What to expect in the registration process**:
 
