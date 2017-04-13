@@ -157,7 +157,7 @@ User and device groups determines the target of a deployment. This could include
 
 -   Learn more about [planning your user and device groups](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
--   Learn [how to create user and device groups](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Learn [how to create user and device groups](https://docs.microsoft.com//intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ### Public Key Infrastructure (PKI)
 
@@ -330,7 +330,7 @@ Below is an example of documenting the design of a VPN profile.
 
 Email profiles allow an email client to be automatically setup with connection information and setup email configuration. Intune supports email profiles on some devices.
 
--   Learn more about [email profiles](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) and what platforms are supported.
+-   Learn more about [email profiles](https://docs.microsoft.com//intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) and what platforms are supported.
 
 Below is an example of documenting the design of email profiles:
 

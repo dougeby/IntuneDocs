@@ -74,11 +74,11 @@ This article explains how to configure and deploy the Lookout for Work app for A
 
   For more details, see [Configure a native client application](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
 
-4. Upload the re-signed .ipa file as described in the [Add app for mobile devices in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) topic. Set the minimum OS version to iOS 8.0 or later.
+4. Upload the re-signed .ipa file as described in the [Add app for mobile devices in Microsoft Intune](https://docs.microsoft.com//intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) topic. Set the minimum OS version to iOS 8.0 or later.
 
   ![screenshot of the apps page in the Intune administrator console with the Lookout for work app displayed in the list of apps](../media/mtp/ios-app-uploaded-intune.png)
 
-5. Create the managed app configuration policy as described in the [Configure iOS apps with mobile app configuration policies in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) topic.
+5. Create the managed app configuration policy as described in the [Configure iOS apps with mobile app configuration policies in Microsoft Intune](https://docs.microsoft.com//intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) topic.
 
   ![screenshot of hte create a new policy wizard with the iOS 8.0 or later app configuration policy highlighted](../media/mtp/ios-app-config.png)
 

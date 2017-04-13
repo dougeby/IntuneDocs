@@ -103,9 +103,9 @@ You   already have an [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sub
 
 1.  Sign in to the   [Office portal](http://portal.office.com) with your admin credentials.
 
-2.  Add users as described in the **Steps to complete a 30-day evaluation of Intune** section of the [Intune evaluation guide](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune), and then assign Intune licenses. To give a user the ability to access the Office portal, the Azure AD portal, and the Azure  portal, assign the **Global administrator** role to the user.
+2.  Add users as described in the **Steps to complete a 30-day evaluation of Intune** section of the [Intune evaluation guide](https://docs.microsoft.com//intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune), and then assign Intune licenses. To give a user the ability to access the Office portal, the Azure AD portal, and the Azure  portal, assign the **Global administrator** role to the user.
 
-5.  App protection policies are deployed to user groups in Azure Active Directory. To create user groups for your app protection policies, create a user group as described in the **Create a user group** section of [Create groups to organize evaluation subscription users and devices](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
+5.  App protection policies are deployed to user groups in Azure Active Directory. To create user groups for your app protection policies, create a user group as described in the **Create a user group** section of [Create groups to organize evaluation subscription users and devices](https://docs.microsoft.com//intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
 
 ### Assign roles to non-global admin users
 

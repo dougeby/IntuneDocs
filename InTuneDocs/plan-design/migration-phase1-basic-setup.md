@@ -46,7 +46,7 @@ Intune requires Azure Active Directory (AAD) as the identity and user grouping p
 
 -   Learn more about [planning your user and device groups](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
--   Learn [how to create user and device groups](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Learn [how to create user and device groups](https://docs.microsoft.com//intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 If your organization is already using Office 365, it’s important that Intune uses the same Azure Active Directory environment.
 
