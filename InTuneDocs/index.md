@@ -95,7 +95,7 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_graph_overview">Work with Intune in Microsoft Graph</a></h3>
+                                            <h3><a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">Work with Intune in Microsoft Graph</a></h3>
                                             <p>Use the Microsoft Graph APIs to configure Intune controls and policies.</p>
                                         </div>
                                     </div>
@@ -956,7 +956,7 @@ description: Learn to use Microsoft Intune.
                             </a>
                         </li>
                         <li>
-                            <a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/intune_graph_overview">
+                            <a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
