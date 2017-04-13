@@ -141,7 +141,7 @@ For other issues, our first response for Professional customers is within eight 
 - A single user is experiencing partial disruption, but an acceptable workaround exists.
 
 > [!NOTE]
-> **If you use Microsoft System Center Configuration Manager** or **Microsoft System Center Endpoint Protection:** For technical support with Configuration Manager or Endpoint Protection, contact your partner or visit the [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) and [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) documentation to find rich self-help material. It also offers the option of opening a support request online or over the phone.
+> **If you use Microsoft System Center Configuration Manager** or **Microsoft System Center Endpoint Protection:** For technical support with Configuration Manager or Endpoint Protection, contact your partner or visit the [Microsoft System Center Configuration](https://docs.microsoft.com/sccm/) and [Endpoint Protection](https://technet.microsoft.com/library/hh508836.aspx) documentation to find rich self-help material. It also offers the option of opening a support request online or over the phone.
 >
 > Technical support for System Center Configuration Manager or System Center Endpoint Protection requires either payment or is decremented from your existing licensing or Premier Support agreements.
 
