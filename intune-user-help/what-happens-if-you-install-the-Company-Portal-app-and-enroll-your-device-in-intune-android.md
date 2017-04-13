@@ -6,7 +6,7 @@ description:
 keywords:
 author: barlanmsftms.author: barlan
 manager: angrobe
-ms.date: 03/33/2017
+ms.date: 03/30/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
