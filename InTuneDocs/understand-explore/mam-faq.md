@@ -64,7 +64,7 @@ This article provides answers to some frequently asked questions on Intune mobil
 
   4. The end-user must sign into the app using his or her AAD account.
 
-**What are the additional requirements to use the [Outlook mobile app](https://www.microsoft.comoutlook-com/mobile/)?**
+**What are the additional requirements to use the [Outlook mobile app](https://www.microsoft.com/outlook-com/mobile/)?**
 
   1. The end-user must have the Outlook mobile app installed to their device.
 
