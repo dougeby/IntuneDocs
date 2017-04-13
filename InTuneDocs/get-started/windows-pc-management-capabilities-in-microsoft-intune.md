@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune PC software client capabilities | Microsoft Intune
+title: Intune PC software client capabilities | Microsoft Docs
 description: Learn about the capabilities of Intune when you manage Windows PCs with the Intune software client.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -21,11 +21,14 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Windows PC management capabilities when you use the Intune software client
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In most scenarios, you will enroll your devices with Microsoft Intune, which provides a greater set of capabilities. However, you can also manage PCs by using the Intune software client, which provides the following features:
 
 -   **[Software update management](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - You can keep PCs up to date and decide when updates are applied.

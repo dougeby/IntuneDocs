@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Compliance policy settings for Android devices | Microsoft Intune
+title: Compliance policy settings for Android | Microsoft Docs
 description: This topic describes the device compliance policy settings for Android devices.
 keywords:
 author: andredm7ms.author: andredmmanager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,12 +20,14 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 
 # Compliance policy settings for Android devices in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 The policy settings described in this topic apply to devices that are running Android 4.0 and later or Samsung KNOX 4.0 and later.
 
@@ -33,6 +35,7 @@ If you're looking for information about other platforms, select one of the follo
 > [!div class="op_single_selector"]
 - [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Windows devices](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Compliance policy settings for Android for Work devices](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## System security settings
 ### Password

@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Terms and condition policy settings | Microsoft Intune
+title: Terms and condition policy settings | Microsoft Docs
 description: You can deploy Intune terms and conditions to user groups to explain how enrollment, access to work resources, and using the Company Portal app affect devices and users.
 keywords:
-author: staciebarkerms.author: stabar
+author: nathbarnms.author: nathbarn
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -21,11 +21,14 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Terms and condition policy settings in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can deploy Intune terms and conditions to user groups to explain how enrollment, access to work resources, and the Company Portal app affect devices and users. Users must accept the terms and conditions before they can use the Company Portal to enroll and access their work.
 
 You can create and deploy multiple policies containing different terms and conditions. You can also produce versions of the same terms and conditions in different languages and then deploy these to their appropriate groups.

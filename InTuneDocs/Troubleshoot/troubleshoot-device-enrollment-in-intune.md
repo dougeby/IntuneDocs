@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Troubleshoot device enrollment| Microsoft Intune
+title: Troubleshoot device enrollment| Microsoft Docs
 description: Suggestions for troubleshooting device enrollment issues.
 keywords:
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,13 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Troubleshoot device enrollment in Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 This topic provides suggestions for troubleshooting device enrollment issues. If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
@@ -35,19 +37,16 @@ This topic provides suggestions for troubleshooting device enrollment issues. If
 
 Before you begin troubleshooting, check to make sure that you've configured Intune properly to enable enrollment. You can read about those configuration requirements in:
 
--	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
+-	[Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -	[Set up iOS and Mac device management](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--	[Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -	[Set up Windows device management](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-	[Set up Android device management](/intune/deploy-use/set-up-android-management-with-microsoft-intune) - No additional steps required
+-	[Set up Android for Work device management](/intune/deploy-use/set-up-android-for-work)
 
 Your managed device users can collect enrollment and diagnostic logs for you to review. User instructions for collecting logs are provided in:
 
-- [Send Android diagnostic data logs to your IT administrator using a USB cable](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-- [Send Android diagnostic data logs to your IT administrator using email](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
-- [Send Android enrollment errors to your IT administrator](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-- [Send iOS enrollment errors to your IT administrator](/intune/enduser/send-errors-to-your-it-admin-ios)
-
+- [Send Android enrollment errors to your IT admin](https://docs.microsoft.com/intune/enduser/send-enrollment-errors-to-your-it-admin-android)
+- [Send iOS errors to your IT admin](https://docs.microsoft.com/intune/enduser/send-errors-to-your-it-admin-ios)
 
 
 ## General enrollment issues
@@ -62,9 +61,9 @@ These issues may occur on all device platforms.
 
 1.  Validate in the Intune admin portal that the user has no more than the allowable maximum of 15 devices assigned.
 
-2.  Check in the Intune admin console under Admin\Mobile Device Management\Enrollment Rules that the Device enrollment limit is set to 15.
+2.  Under **Admin** > **Mobile Device Management** > **Enrollment Rules** in the Intune admin console, check that the Device enrollment limit is set to 15.
 
-Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 Administrators can delete devices in the Azure Active Directory portal.
 
@@ -74,7 +73,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 2.  Log in with your Org ID using the link on the left side of the page.
 
-3.  Create an Azure Subscription if you don’t have one. This should not require a credit card or payment if you have a paid account (choose the **Register your free Azure Active Directory** subscription link).
+3.  If you don't already have one, create an Azure subscription by choosing the **Register your free Azure Active Directory** subscription link. If you have a paid account, you shouldn't need to use a credit card or payment.
 
 4.  Select **Active Directory** and then select your organization.
 
@@ -88,12 +87,12 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 > [!NOTE]
 
-> You can avoid the device enrollment cap by using Device Enrollment Managers, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+> You can avoid the device enrollment cap by using Device Enrollment Manager account, as described in [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 >
-> A user account which is added to Device Enrollment Managers group will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
+> A user account that is added to Device Enrollment Managers account will not be able to complete enrollment when Conditional Access policy is enforced for that specific user login.
 
-### Company Portal emporarily Unavailable
-**Issue:** A user receives a **Company Portal Temporarily Unavailable** error on their device.
+### Company Portal Temporarily Unavailable
+**Issue:** Users receive a **Company Portal Temporarily Unavailable** error on their device.
 
 **Resolution:**
 
@@ -101,23 +100,23 @@ Administrators can delete devices in the Azure Active Directory portal.
 
 2.  On the device, open the browser, browse to [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com), and attempt a user login.
 
-3.  If the user fails to log in, have them try another network.
+3.  If the user fails to log in, have her try another network.
 
 4.  If that fails, validate that the user’s credentials have synced correctly with Azure Active Directory.
 
-5.  If the user successfully logs in, an iOS device will prompt you to install the Intune Company Portal app and enroll. On an Android device you will need to manually install the Intune Company Portal app, after which you can retry enrolling.
+5.  If the user successfully logs in, an iOS device will prompt you to install the Intune Company Portal app and enroll. On an Android device, you will need to manually install the Intune Company Portal app, after which you can retry enrolling.
 
 ### MDM authority not defined
 **Issue:** A user receives an **MDM authority not defined** error.
 
 **Resolution:**
 
-1.  Verify that the MDM Authority has been set appropriately for the version of the Intune service you are using  , that is, for Intune, O365 MDM, or System Center Configuration Manager with Intune. For Intune,  the MDM Authority is set in **Admin** &gt; **Mobile Device Management**. For Configuration Manager with Intune, you set it when configuring the Intune connector, and in O365 it's a setting **Mobile Devices**.
+1.  Verify that the MDM Authority has been set appropriately for the type of Intune service you are using (that is, Intune, Office 365, or System Center Configuration Manager with Intune. For Intune, the MDM Authority is set in **Admin** &gt; **Mobile Device Management**. For Configuration Manager with Intune, you set it when configuring the Intune connector, and in Office 365, it's a setting **Mobile Devices**.
 
     > [!NOTE]
-    > Once you set the MDM authority, you can only change it by contacting Support, as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+    > Once you set the MDM authority, you can change it only by contacting Support, as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
-2.  Verify that the user’s credentials have synced correctly with Azure Active Directory, by checking that their UPN matches the Active Directory information in the Account Portal.
+2.  Verify that the user’s credentials have synced correctly with Azure Active Directory by checking that the user's UPN matches the Active Directory information in the Office 365 portal.
     If the UPN does not match the Active Directory information:
 
     1.  Turn off DirSync on the local server.
@@ -156,7 +155,7 @@ Administrators can delete devices in the Azure Active Directory portal.
 **Issue:** When you add a second verified domain to your ADFS, users with the user principal name (UPN) suffix of the second domain may not be able to log into the portals or enroll devices.
 
 
-**Resolution:** Microsoft Office 365 customers who utilize single sign-on (SSO) through AD FS 2.0 and have multiple top level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix.  There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the **SupportMultipleDomain** switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. See [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
+**Resolution:** Microsoft Office 365 customers who use single sign-on (SSO) through AD FS 2.0 and have multiple top level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix. There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the **SupportMultipleDomain** switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. See [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
 
 
 ## Android issues
@@ -227,7 +226,7 @@ If Resolution #2 doesn't work, have your users follow these steps to make Smart 
 
 **Resolution 1**:
 
-- Ask your users to follow the instructions in [Your device is missing a required certificate](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). If the error still appears after users follow the instructions, try Resolution 2.
+Ask your users to follow the instructions in [Your device is missing a required certificate](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). If the error still appears after users follow the instructions, try Resolution 2.
 
 **Resolution 2**:
 
@@ -260,6 +259,46 @@ If the Server certificate is installed correctly, you see all check marks in the
 
 
 ## iOS issues
+
+### Devices are inactive or the admin console cannot communicate with them
+**Issue:** iOS devices aren’t checking in with the Intune service. Devices must check in periodically with the service to maintain access to protected corporate resources. If devices don’t check in:
+
+- They can't receive policy, apps, and remote commands from the Intune service.
+- They show a Management State of **Unhealthy** in the administrator console.
+- Users who are protected by conditional access policies might lose access to corporate resources.
+
+**Resolution:** Share the following resolutions with your end users to help them regain access to corporate resources.
+
+When users start the iOS Company Portal app, it can tell if their device has lost contact with Intune. If it detects that there is no contact, it automatically tries to sync with Intune to reconnect, and users will see the **Trying to sync…** inline notification.
+
+  ![Trying to sync notification](./media/ios_cp_app_trying_to_sync_notification.png)
+
+If the sync is successful, you see a **Sync successful** inline notification in the iOS Company Portal app, indicating that your device is in a healthy state.
+
+  ![Sync successful notification](./media/ios_cp_app_sync_successful_notification.png)
+
+If the sync is unsuccessful, users see an **Unable to sync** inline notification in the iOS Company Portal app.
+
+  ![Unable to sync notification](./media/ios_cp_app_unable_to_sync_notification.png)
+
+To fix the issue, users must select the **Set up** button, which is to the right of the **Unable to sync** notification. The Set up button takes users to the Company Access Setup flow screen, where they can follow the prompts to enroll their device.
+
+  ![Company Access Setup screen](./media/ios_cp_app_company_access_setup.png)
+
+Once enrolled, the devices return to a healthy state and regain access to company resources.
+
+### Verify WS-Trust 1.3 is enabled
+**Issue** Device Enrollment Program (DEP) iOS devices cannot be enrolled
+
+Enrolling Device Enrollment Program devices with user affinity requires WS-Trust 1.3 Username/Mixed endpoint to be enabled to request user tokens. Active Directory enables this endpoint by default. You get a list of enabled endpoints by using the Get-AdfsEndpoint PowerShell cmdlet and looking for the trust/13/UsernameMixed endpoint. For example:
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+For more information, see [Get-AdfsEndpoint documentation](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+For more information, see [Best practices for securing Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). If you need additional assistance in determining if WS-Trust 1.3 Username/Mixed is enabled in your identity federation provider, please contact Microsoft Support if you use ADFS, or your 3rd party identity vendor.
+
+
 ### Profile installation failed
 **Issue:** A user receives a **Profile installation failed** error on an iOS device.
 
@@ -276,32 +315,20 @@ If the Server certificate is installed correctly, you see all check marks in the
 ### Enrolled iOS device doesn't appear in console when using System Center Configuration Manager with Intune
 **Issue:** User enrolls iOS device but it does not appear in the Configuration Manager admin console. The device does not indicate that it's been enrolled. Possible causes:
 
-- You may have enrolled your Intune Connector into one account, and then enrolled it into another account.
+- The Microsoft Intune Connector in your Configuration Manager site isn't communicating with the Intune service.
+- Either the Data Discovery Manager (ddm) component or the State Manager (statmgr) component is not processing messages from the Intune service.
 - You may have downloaded the MDM certificate from one account and used it on another account.
 
 
-**Resolution:** Perform the following steps:
+**Resolution:** Review the following log files for possible errors:
 
-1. Disable iOS inside of the Windows Intune Connector.
-	1. Right-click the Intune subscription and select **Properties**.
-	1. On the "iOS" tab, uncheck "Enable iOS Enrollment".
+- dmpdownloader.log
+- ddm.log
+- statmgr.log
 
-
-
-1. In SQL, run the following steps on the CAS DB
-
-	1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-	1. delete from MDMPolicy where PolicyType = 7
-	1. delete from MDMPolicyAssignment where PolicyType = 7
-	1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-	1. delete from MDMPolicy where PolicyType = 11
-	1. delete from MDMPolicyAssignment where PolicyType = 11
-	1. DELETE Drs_Signals
-1. Restart the SMS Executive Service or Restart the CM Server
+Examples will be added soon about what to look for in these log files.
 
 
-
-1. Get a new APN certificate and upload it: Right-click the Intune subscription in the left pane of Configuration Manager. Select **Create APNs certificate request** and follow the instructions.
 ## Issues when using System Center Configuration Manager with Intune
 ### Mobile devices disappear
 **Issue:** After successfully enrolling a mobile device to Configuration Manager it disappears from the mobile device collection, but the device still has the Management Profile and is listed in CSS Gateway.
@@ -326,7 +353,7 @@ If the Server certificate is installed correctly, you see all check marks in the
 
 
 ### Other iOS enrollment errors
-A list of iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
+A list of iOS enrollment errors is provided in our device-user documentation, in [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-iOS-or-macOS-device-with-intune).
 
 ## PC  Issues
 
@@ -339,15 +366,15 @@ This may be because the computer had been previously enrolled, or has the cloned
 
 **Resolution:**
 
-1. From the **Start** menu, **Run** -> **MMC**.
-1. **File** -> **Add/ Remove Snap-ins**.
-1. Double-click **Certificates**, choose **Computer account**, **Next**, select **Local Computer**.
-1. Double-click **Certificates (Local computer)**, choose **Personal/ Certificates**.
-1. Look for the Intune cert issued by Sc_Online_Issuing, and delete it if present
-1. Delete this registry key if it exists: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** and all sub keys.
-1. Attempt re-enrollment.
-1. If the machine can still not enroll, look for and delete this key, if it exists: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
-1. Attempt re-enrollment.
+1. From the **Start** menu, type **Run** -> **MMC**.
+1. Choose **File** > **Add/ Remove Snap-ins**.
+1. Double-click **Certificates**, choose **Computer account** > **Next**, and select **Local Computer**.
+1. Double-click **Certificates (Local computer)** and choose **Personal/ Certificates**.
+1. Look for the Intune cert issued by Sc_Online_Issuing, and delete it, if present.
+1. If the following registry key exists, delete it: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** and all sub keys.
+1. Try to re-enroll.
+1. If the PC still cannot enroll, look for and delete this key, if it exists: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Try to re-enroll.
 
     > [!IMPORTANT]
     > This section, method, or task contains steps that tell you how to modify the registry. However, serious problems might occur if you modify the registry incorrectly. Therefore, make sure that you follow these steps carefully. For added protection, back up the registry before you modify it. Then, you can restore the registry if a problem occurs.

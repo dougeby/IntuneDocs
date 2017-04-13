@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Use remote wipe to help protect data | Microsoft Intune
+title: Use remote wipe to help protect data | Microsoft Docs
 description: Intune provides selective wipe and full wipe capabilities to remove sensitive corporate data and remove access to many corporate resources.
 keywords:
-author: staciebarkerms.author: staciebarker
+author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,15 +21,18 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Help protect your data with full or selective wipe using Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can wipe apps and data from Intune-managed devices that are no longer needed, are being repurposed, or have gone missing. To do this, Intune provides selective wipe and full wipe capabilities. Users can also issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
 
   > [!NOTE]
-  > This topic is only about wiping devices managed by Intune mobile device management. You can also use the [Azure portal](https://portal.azure.com) to [wipe company data from apps](wipe-managed-company-app-data-with-microsoft-intune.md). You can also [retire computers managed with the Intune client software](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+  > This topic is only about wiping devices managed by Intune mobile device management. You can also use the [Azure portal](https://portal.azure.com) to [wipe company data from apps](wipe-managed-company-app-data-with-microsoft-intune.md). You can also [retire computers managed with the Intune client software](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## Full wipe
 
@@ -119,10 +122,14 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |Wi-Fi and VPN profile settings|Removed.|Removed.|
 |Certificate profile settings|Certificates revoked, but not removed.|Certificates removed and revoked.|
 |Management Agent|Device Administrator privilege is revoked.|Device Administrator privilege is revoked.|
-|Email|Email received by the Microsoft Outlook app for Android is removed.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
-|Outlook|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|Email received by the Microsoft Outlook app for iOS is removed.</br>Exception: If Exchange is hosted on premises, email is not removed.|
+|Email|N/A. See the Outlook item.|Email profiles that are provisioned through Intune are removed, and cached email on the device is deleted.|
+|Outlook|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.</br>Exception: If Exchange is hosted on premises, email is not removed.|Email received by the Microsoft Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook is not wiped on unenrollment.</br>Exception: If Exchange is hosted on premises, email is not removed.|
 |Azure Active Directory (AAD) Unjoin|AAD Record removed.|AAD Record removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
+
+**Android for Work**
+
+Performing selective wipe on an Android for Work device removes all data, apps, and settings in the work profile on that device. This retires the device from management with Intune. Full wipe is not supported for Android for Work.
 
 **Windows**
 

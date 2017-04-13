@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Add apps | Microsoft Intune
+title: Add apps | Microsoft Docs
 description: Before you start deploying apps with Intune, take some time to familiarize yourself with the concepts introduced in this topic.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,11 +21,14 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Add apps with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Before you start deploying apps with Microsoft Intune, take some time to familiarize yourself with the concepts introduced in this topic. These concepts will help you understand which apps you can deploy to which platform. They'll also help you understand the prerequisites that must be in place before you deploy the apps.
 
 ## App types that you can deploy
@@ -34,10 +37,10 @@ Before you start deploying apps with Microsoft Intune, take some time to familia
 
 |App type|Details|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|This type of app must support silent installation with no user input. Your app documentation should include the relevant command-line options to silently install the app (for example, **/q**). You can find a list of common command-line options in [Command-Line Switches for the Microsoft Windows Installer Tool](https://support.microsoft.com/en-us/kb/227091).<br><br>Any additional files and folders that the app’s setup program requires must be available from the location that you specify for the app setup files.<br><br>In most cases, Windows Installer (.msi) and Windows Installer Patch (.msp) files do not require Intune to install any command-line arguments. Check your app documentation.<br><br>If command-line arguments are required, they must be entered as Name=Value pairs (such as TRANSFORMS=custom_transform.mst).|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|This type of app must support silent installation with no user input. Your app documentation should include the relevant command-line options to silently install the app (for example, **/q**). You can find a list of common command-line options in [Command-Line Switches for the Microsoft Windows Installer Tool](https://support.microsoft.com/en-us/kb/227091).<br><br>Any additional files and folders that the app’s setup program requires must be available from the location that you specify for the app setup files.<br><br>In most cases, Windows Installer (.msi) and Windows Installer Patch (.msp) files do not require Intune to install any command-line arguments. Check your app documentation.<br><br>If command-line arguments are required, they must be entered as Name=Value pairs (such as TRANSFORMS=custom_transform.mst).<br><br>This app type applies only to PCs that run the Intune software client.|
 |**App Package for Android (&#42;.apk)**|To deploy Android apps, you must have a valid .apk package.|
 |**App Package for iOS (&#42;.ipa)**|To deploy iOS apps, you must have a valid .ipa package.<br><br>The .ipa package must be signed by Apple, and the expiration date in the provisioning profile must be valid. Intune can distribute enterprise certificate iOS applications.<br><br>Not all Apple developer certificate apps are supported.<br><br>Your company must be registered for the iOS Developer Enterprise Program.<br><br>Make sure that your organization’s firewall allows access to the iOS provisioning and certification websites.<br><br>You don't need to deploy a manifest  file (.plist) with the app.|
-|**Windows Phone app package (&#42;.xap, .appx, .appxbundle)**|To deploy apps, you'll need an enterprise mobile code-signing certificate. For details, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).|
+|**Windows Phone app package (&#42;.xap, .appx, .appxbundle)**|To deploy apps, you'll need an enterprise mobile code-signing certificate. For details, see [Set up Windows Phone management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Windows app package (.appx, .appxbundle)**|To deploy apps, you'll need an enterprise mobile code-signing certificate. For details, see [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
 |**Windows Installer through MDM (&#42;.msi)**|You use this app to create and deploy Windows Installer-based apps to enrolled PCs that run Windows 10. These PCs are managed through mobile device management (MDM).<br /><br />You can upload only a single file with the extension .msi.<br><br>The file's product code and product version are used for app detection.<br><br>The default restart behavior of the app will be used. Intune does not control this.<br><br>Per-user MSI packages will be installed for a single user.<br><br>Per-machine MSI packages will be installed for all users on the device.<br><br>Dual-mode MSI packages are currently installed only for all users on the device.<br><br>App updates are supported when the MSI product code of each version is the same.<br>
 All software installer app types are uploaded to your cloud storage space.
@@ -65,7 +68,7 @@ Before you begin to use the software publisher, you must install the full versio
 ## Cloud storage space
 All apps that you create by using the software installer installation type (for example, a line-of-business app) are  packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. Your full subscription includes 20 GB of storage space.
 
-You can see how much space you are using in the **Storage Use** node of the **Admin** workspace.
+You can see how much space you are using in the **Storage Use** node of the **Admin** workspace. You can purchase additional storage for Intune using your original purchase method.  If you paid by invoice or credit card, visit the [Subscription Management portal](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Otherwise, contact your partner or sales associate.
 
 Requirements for cloud storage space are as follows:
 

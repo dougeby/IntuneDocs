@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Troubleshoot Exchange Connector | Microsoft Intune
+title: Troubleshoot Exchange Connector | Microsoft Docs
 description: Troubleshoot issues related to the Intune Exchange connector.
 keywords:
-author: staciebarkerms.author: stabar
+author: andredm7ms.author: andredm
 manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
@@ -21,11 +21,14 @@ ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Troubleshoot the Exchange Connector
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic describes how to troubleshoot issues that may be related to the Intune Exchange Connector.
 
 ## Steps for checking the Connector configuration 

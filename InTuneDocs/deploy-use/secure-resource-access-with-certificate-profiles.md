@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Certificate profiles for resource access |Microsoft Intune
+title: Certificate profiles for resource access | Microsoft Docs
 description: Secure VPN, Wi-Fi, and email access with a certificate installed on each user device.
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/23/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,14 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Secure resource access with certificate profiles in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 When you give users access to corporate resources through VPN, Wi-Fi, or email profiles, you can secure the access by using a certificate that is installed on each user device. Here's how it works:
 
 1. Make sure you have the right certificate infrastructure in place, as described in [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) and [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md).
@@ -50,7 +53,7 @@ When you give users access to corporate resources through VPN, Wi-Fi, or email p
 
   Use a **SCEP Certificate Profile** for devices running these platforms:
     -   Mac OS X 10.9 and later
-    -   Windows Phone 8.1 
+    -   Windows Phone 8.1
 
 You must create a separate profile for each platform. When you create the profile, associate it with the **Trusted Root Certificate Profile** that you've already created.
 

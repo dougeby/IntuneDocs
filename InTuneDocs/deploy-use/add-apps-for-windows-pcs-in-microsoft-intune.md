@@ -1,12 +1,13 @@
 ---
 # required metadata
 
-title: Add apps for Windows PCs that run the Intune software client| Microsoft Intune
+title: Add apps for Windows PCs that run the Intune software client| Microsoft Docs
 description: Use the information in this topic to learn how to add apps for Windows PCs to Intune before you deploy them.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +22,7 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
@@ -31,6 +32,8 @@ Use the information in this topic to learn how to add apps to Intune before you 
 
 > [!IMPORTANT]
 > The information in this topic helps you add apps for Windows PCs that you manage by using the Intune software client. If you want to add apps for enrolled Windows PCs and other mobile devices, see [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+
+To install apps to PCs, they must be capable of being installed silently, with no user interaction. If this is not the case, the installation will fail.
 
 
 ## Add the app
@@ -45,7 +48,7 @@ You use the Intune Software Publisher to configure the properties of the app and
 
 	- **Select the software installer file type**. This indicates the type of software that you want to deploy. For a Windows PC, choose **Windows Installer**.
     - **Specify the location of the software setup files**. Enter the location of the installation files, or choose **Browse** to select the location from a list.
-    - **Include additional files and subfolders from the same folder**. Some software that uses Windows Installer requires supporting files. These are typically found in the same folder as the installation files. Select this option if you also want to deploy these supporting files.
+    - **Include additional files and subfolders from the same folder**. Some software that uses Windows Installer requires supporting files. These must be located in the same folder as the installation file. Select this option if you also want to deploy these supporting files.
 
 	For example, if you want to publish an app named Application.msi to Intune, the page would look like this:
 	![Software setup page of the publisher](./media/publisher-for-pc.png)
@@ -79,7 +82,11 @@ You use the Intune Software Publisher to configure the properties of the app and
 
     If the app satisfies any of the rules that you have configured, it will not be installed.
 
-6.  For the **Windows Installer** file type only (.msi and .exe): On the **Command line arguments** page, choose whether you want to supply optional command-line arguments for the installer. For example, some installers might support the argument **/q** to install silently with no user intervention.
+6.  For the **Windows Installer** file type only (.msi and .exe): On the **Command line arguments** page, choose whether you want to supply optional command-line arguments for the installer.
+	The following parameters are added automatically by Intune:
+	- For .exe files, **/install** is added.
+	- For .msi files, **/quiet** is added.
+	Note that these options will only work if the creator of the app package enabled functionality for this.
 
 7.  For the **Windows Installer** file type only (.exe only): On the **Return codes** page, you can add new error codes that Intune interprets when the app is installed on a managed Windows PC.
 
@@ -94,3 +101,5 @@ The app is displayed on the **Apps** node of the **Apps** workspace.
 ## Next steps
 
 After you've created an app, the next step is to deploy it. To find out more, see [Deploy apps in Microsoft Intune](deploy-apps.md).
+
+If you want to read more information about tips and tricks to deploy software to Windows PCs, see the blog post [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).

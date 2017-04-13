@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Intune glossary | Microsoft Intune
+title: Intune glossary | Microsoft Docs
 description: Learn about some of the terminology in Microsoft Intune
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 11/17/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -21,11 +22,13 @@ ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 #ms.reviewer: angrobe
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Microsoft Intune glossary
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## A
 
@@ -39,7 +42,7 @@ ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ## B
 |||
 |-|-|
-|BYOD|[Bring your own device](/intune/get-started/choose-how-to-enroll-devices1). Users can install the Intune Company Portal app on their device and then enroll it, gaining access to company resources like email, company apps, company data, and support.| 
+|BYOD|[Bring your own device](/intune/get-started/choose-how-to-enroll-devices1). Users can install the Intune Company Portal app on their device and then enroll it, gaining access to company resources like email, company apps, company data, and support.|
 
 ## C
 |||
@@ -66,7 +69,7 @@ ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 |-|-|
 |Email profile|This policy can be used to set up [email access settings](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) for specific email clients on mobile devices minimizing the amount of setup the end user has to do.|
 |EMS|Microsoft Enterprise Mobility + Security (formerly Enterprise Mobility Suite) keeps your company data protected while enabling your users to [access the apps and content they need](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
-|End user|[Users of devices like phones and PCs](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) that you manage using Intune.|
+|End user|[Users of devices like phones and PCs](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) that are managed using Intune.|
 |Enroll|Microsoft Intune uses [enrollment](/intune/deploy-use/enroll-devices-in-microsoft-intune) to bring devices into management and allow access to resources.|
 
 ## F
@@ -102,7 +105,7 @@ ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 |-|-|
 |Managed Browser|A [web browsing application](/intune/deploy-use/manage-internet-access-using-managed-browser-policies) that you can deploy in your organization by using Microsoft Intune. A managed browser policy configures an allow list or a block list that restricts the websites that users of the managed browser can visit.|
 |Mobile application management|[Mobile application management (MAM)](/intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
-|Mobile device management|[Mobile device management (MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) lets you enroll devices in Intune so that you can provision, configure, monitor, and take actions on those devices. 
+|Mobile device management|[Mobile device management (MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) lets you enroll devices in Intune so that you can provision, configure, monitor, and take actions on those devices.
 |MDM authority|The [MDM authority](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune.|
 |Mobile app provisioning policy|An iOS policy that helps you ensure that [provisioning profiles](/intune/deploy-use/ios-mobile-app-provisioning-profiles) for iOS apps you deploy do not expire.|
 |Mobile app configuration policy|An iOS policy that is used to [supply settings to compatible iOS apps](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) when they are run, for example, a company name, or server address.|
@@ -150,6 +153,3 @@ ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 |||
 |-|-|
 |Wi-Fi profile|A policy that deploys [wireless network settings](/intune/deploy-use/wi-fi-connections-in-microsoft-intune) to devices to let users connect to your company network without needing to know, or configure any settings.
-
-
-

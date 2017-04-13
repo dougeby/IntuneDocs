@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Create policies and publish an app to users | Microsoft Intune
+title: Create policies and publish an app to users | Microsoft Docs
 description: How to create policies and publish an app when you sign up for a free, 30-day evaluation of Intune
 keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,12 +22,15 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 
 # Create policies and publish an app to evaluation users
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. If you are planning to use Intune for devices that you configure for production use after the evaluation, it's absolutely essential that you follow the instructions in [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) and [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 You can perform two types of app installations using Intune. The first is a **required install**, which automatically deploys the app to managed devices. The other is an **available install**, which deploys the app, or a link to the app, to the Intune Company Portal so that users can choose whether to install it on their computers or on their mobile devices.

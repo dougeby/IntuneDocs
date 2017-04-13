@@ -1,11 +1,11 @@
-
 ---
 # required metadata
 
-title: General troubleshooting tips | Microsoft Intune
+title: General troubleshooting tips | Microsoft Docs
 description: General resources to help resolve issues with Intune.
 keywords:
-author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/08/2016
 ms.topic: article
@@ -22,11 +22,14 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # General troubleshooting tips for Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 After you deploy Microsoft Intune, you might encounter problems with your configuration or with client devices. Use the following resources to help you discover what's causing the problem so you can resolve it.
 
 > [!NOTE]

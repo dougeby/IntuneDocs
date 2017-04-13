@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Manage corporate-owned devices | Microsoft Intune
+title: Manage corporate-owned devices | Microsoft Docs
 description: Enroll corporate-owned devices in a variety of ways, based on the type of device, how it was purchased, and the needs of the organization.
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,13 +22,17 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Enroll corporate-owned devices by using Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can enroll organization-owned or corporate-owned devices to manage with Intune in a variety of ways, depending on the type of device, how the device was purchased, and the needs of the organization. You also can install the Company Portal app to enroll and manage corporate-owned devices, like in a "bring your own device" (BYOD) scenario.
+
+By default, devices for all platforms are allowed to enroll in Intune. To block devices from enrolling, sign to the [Microsoft Intune admin portal](http://manage.microsoft.com) with your admin credentials. Choose **Admin** > **Mobile Device Management** > **Enrollment Rules** and then clear the applicable check boxes for the platforms that you want to block.
 
 ## Enroll corporate-owned iOS devices
 

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to monitor device profiles with Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: How to monitor device profiles with IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to monitor assigned Intune device profiles."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,17 +22,21 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# How to monitor device profiles with Microsoft Intune
+# How to monitor device profiles in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 You can monitor the assignment progress of Intune device profiles in two ways:
 
-1. In the **Device Configuration** workload, choose **Manage** > **Profiles**.
+
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Device configuration**.
+2. On the **Device Configuration** blade, choose **Manage** > **Profiles**.
 2. In the list of profiles blade, choose the profile you want to manage, and then, either:
 	- On the <*profile name*> **Reports** blade, choose **Overview** to see basic information about the profile and it's assignments.
 	- On the <*profile name*> **Reports** blade, choose **Reports** to see more detailed information about the profile and its assignments.

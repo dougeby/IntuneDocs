@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Compliance policy settings for Windows devices| Microsoft Intune
+title: Compliance policy settings for Windows devices| Microsoft Docs
 description: This topic describes the rules and settings you can configure for a compliance policy for Windows devices.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,13 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Compliance policy settings for Windows devices in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 The policy settings described in this topic apply to devices running the Windows operating system. The following sections describe the supported Windows versions.
 
@@ -34,7 +36,7 @@ If you are looking for information about other platforms, select one of these:
 > [!div class="op_single_selector"]
 - [Compliance policy settings for iOS devices](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Compliance policy settings for Android for Work](afw-compliance-policy-settings-in-microsoft-intune)
+- [Compliance policy settings for Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## Compliance policy settings for Windows Phone devices
 The settings listed in this section are supported on Windows Phone 8.1 and later.
@@ -89,6 +91,9 @@ character sets that the password must have. The four character sets are:
   -  **BitLocker is enabled**: When BitLocker is on, the device can help protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation. Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data. BitLocker also helps ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that help protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer.
   -  **Code integrity is enabled**: Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel. It also detects whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.
   - **Secure Boot is enabled**: When Secure Boot is enabled, the system is forced to boot to a factory trusted state. Also, when Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
+
+  > [!IMPORTANT]
+  > Windows devices do not support third-party **Early Launch Anti Malware** (ELAM) software installed as part of the Device health attestation.
 
   For information on how the HAS service works, see [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 ###  Device property settings

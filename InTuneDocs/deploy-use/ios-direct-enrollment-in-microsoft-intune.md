@@ -1,12 +1,13 @@
 ---
 # required metadata
 
-title: Direct enrollment for iOS devices | Microsoft Intune
+title: Direct enrollment for iOS devices | Microsoft Docs
 description: Use the Apple Configurator tool to directly enroll corporate-owned iOS devices with a predefined policy by USB-connecting them to a Mac computer.
 keywords:
-author: staciebarkerms.author: stabar
-manager: arob98
-ms.date: 07/19/2016
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,14 +22,20 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Directly enroll iOS devices by using Apple Configurator
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune supports the enrollment of corporate-owned iOS devices by using the [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) tool running on a Mac computer. This process does not factory-reset the device and enrolls the device with a predefined policy. This method is for devices with **No user affinity** and requires you to USB-connect the iOS device to a Mac computer to set up corporate enrollment.
 
 When you're directly enrolling iOS devices, you can enroll a device without acquiring the device's serial number. You can also name the device for identification purposes before Intune captures the device name during enrollment. The Company Portal app is not supported for directly enrolled devices. This guidance assumes you are using Apple Configurator 2.0 on a Mac computer.
+
+>[!NOTE]
+>This enrollment method can't be used with the [device enrollment manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) method.
 
 1.  If you haven't already, create a device enrollment profile for iOS devices enrolled through Apple Configurator. A device enrollment profile defines the settings applied to devices.
 

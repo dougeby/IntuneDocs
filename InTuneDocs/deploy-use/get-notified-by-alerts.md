@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get notified by alerts | Microsoft Intune
+title: Get notified by alerts | Microsoft Docs
 description: Learn how alerts keep you in touch with what's happening in Microsoft Intune.
 keywords:
 author: arob98
@@ -22,11 +22,14 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Get notified by Microsoft Intune alerts
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Alerts keep you in touch with what's happening in Microsoft Intune.
 
 For example, alerts can notify you about the following events:

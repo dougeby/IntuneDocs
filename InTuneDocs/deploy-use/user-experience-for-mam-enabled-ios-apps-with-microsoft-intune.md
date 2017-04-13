@@ -1,11 +1,13 @@
 ---
 # required metadata
 
-title: iOS apps with MAM policies | Microsoft Intune
-description: This topic describes what to expect when your iOS app is managed by mobile app management policies.
+title: iOS apps with app protection policies | Microsoft Docs
+description: This topic describes what to expect when your iOS app is managed by app protection policies.
 keywords:
-author: NathBarnms.author: nathbarnmanager: angrobe
-ms.date: 10/18/2016
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,52 +22,54 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
-# What to expect when your iOS app is managed by MAM policies
- This topic describes the user experience for apps with mobile access management (MAM) policies. MAM  policies are applied only when apps are used in the work context: for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive business location.
+# What to expect when your iOS app is managed by app protection policies
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+ This topic describes the user experience for apps with app protection policies. App protection policies are applied only when apps are used in the work context; for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive business location.
 
 ##  Access apps
 
-If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it.  A restart is required so that MAM polices can be applied to the app. The following screenshot from the Skype app illustrates this restart request:
+If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it.  A restart is required so that app protection polices can be applied to the app. 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
-For devices that are **enrolled for management in Intune**, the user sees a message that their app is now managed:
-
-![Screenshot of the iOS device showing the message that the app is now managed by your company, with PIN prompt](../media/appmanagement/ios-managed-devices-pin-prompt.png)
+For devices that are **enrolled for management in Intune**, the user sees a message that their app is now managed.
 
 ##  Use apps with multi-identity support
 
-MAM polices are only applied in the work context. Therefore, the app might behave differently depending on whether the context is work or personal.
+App protection polices are only applied in the work context. Therefore, the app might behave differently depending on whether the context is work or personal.
 
  For example, the user gets a PIN prompt when accessing work data. For the **Outlook app**, the user is prompted for a PIN when they launch the app. For the **OneDrive app**, the user is prompted for a pin when they type in the work account.  For Microsoft **Word**, **PowerPoint**, and **Excel**, the user is prompted for a pin when they access documents that are stored in the company OneDrive for Business location.
 
 ##  Manage user accounts on the device
 
-Intune supports the deployment of MAM policies to  one user account per device only.
+Intune supports the deployment of app protection policies to  one user account per device only.
 
-* Depending on the app that you are using, the second user might be blocked on the device. However, in all cases, only the first user who gets the MAM policies is affected by the policy.
-  * **Microsoft Word**, **Excel**, and **PowerPoint** don't block a second user account, but the second user account is not affected by the MAM policies.  
+* Depending on the app that you are using, the second user might be blocked on the device. However, in all cases, only the first user who gets the app protection policies is affected by the policy.
+  * **Microsoft Word**, **Excel**, and **PowerPoint** don't block a second user account, but the second user account is not affected by the app protection policies.  
 
   * For **OneDrive** and **Outlook apps**, you can only use one work account. You can't add multiple work accounts for these apps. You can however, remove a user and add a different user on the device.
 
-* If a device has existing multiple user accounts before the MAM policies are deployed, the account that the MAM policies are deployed to first is managed by Intune MAM policies.
+* If a device has existing multiple user accounts before the app protection policies are deployed, the account that the app protection policies are deployed to first is managed by Intune app protection policies.
 
 
 Read the following example scenario to get a deeper understanding of how multiple user accounts are treated.
 
-User A works for two companies—**Company X** and **Company Y**. User A has a work account for each company, and both use Intune to deploy MAM policies. **Company X** deploys MAM policies **before** **Company Y**. The account that's associated with **Company X** gets the MAM policy, but not the account that's associated with Company Y. If you want the user account that's associated with Company Y to be managed by the MAM policies, you must remove the user account that's associated with Company X.
+User A works for two companies—**Company X** and **Company Y**. User A has a work account for each company, and both use Intune to deploy app protection policies. **Company X** deploys app protection policies **before** **Company Y**. The account that's associated with **Company X** gets the app protection policy, but not the account that's associated with Company Y. If you want the user account that's associated with Company Y to be managed by the app protection policies, you must remove the user account that's associated with Company X.
 
 ### Add a second account
 
 If you are using an iOS device, when you try to add a second work account on that device, you might see a blocking message. The accounts will be displayed, and then you can choose the account you want to remove.
 
-![Screenshot of the dialog box with the blocking message and Yes and No options](../media/AppManagement/iOS_SwitchUser.PNG)
 ## Next steps
-[What to expect when your Android app is managed by MAM policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+[What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
 ### See also
 [Create and deploy mobile app management policies with Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

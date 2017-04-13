@@ -7,7 +7,7 @@ keywords: what is Intune
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 03/7/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,18 +22,21 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # What is Intune?
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. With Intune, you can:
 * Manage the mobile devices your workforce uses to access company data.
 * Manage the mobile apps your workforce uses.
 * Protect your company information by helping to control the way your workforce accesses and shares it.
 * Ensure devices and apps are compliant with company security requirements.
 
-Intune integrates closely with Azure Active Directory (Azure AD) for identity and access control, and Azure Rights Management (Azure RMS) for data protection. It is the *management arm* of Microsoft Enterprise Mobility + Security (EMS), while Office 365 is the *productivity arm* of Microsoft’s mobility solution.  
+Intune integrates closely with Azure Active Directory (Azure AD) for identity and access control, and Azure Information Protection for data protection. It is the *management arm* of Microsoft Enterprise Mobility + Security (EMS), while Office 365 is the *productivity arm* of Microsoft’s mobility solution.  
 
 Together, Office 365 and EMS enable your workforce to be productive on all of their devices while keeping your organization's information protected. Office 365 with EMS is a complete, integrated suite for enterprise mobility inclusive of productivity, identity, access control, management, and data protection. It gives you an effective way to deploy and operate a mobility solution in your organization.
 
@@ -98,7 +101,7 @@ Most enterprise mobility management solutions support basic mobile device and mo
 
 Organizations differ to the extent they will adopt “without enrollment” scenarios. Some organizations standardize on it. Some allow it for companion devices such as a personal tablet. Others don’t support it at all. Even in this last case, where an organization requires all employee devices to be enrolled in MDM, these organizations typically support "without enrollment" scenarios for contractors, vendors, and for other devices that have a specific exemption.
 
-You can even use Intune’s “without-enrollment” technology on enrolled devices. For example, a device enrolled in MDM may have open-in protections provided by the mobile operating system. In addition, IT may apply the app protection policy to EMS-managed mobile apps to control save-as or to provide multi-factor authentication.
+You can even use Intune’s “without-enrollment” technology on enrolled devices. For example, a device enrolled in MDM may have open-in protections provided by the mobile operating system. (Open-in protection is an iOS feature that restricts you from opening a document from one app, like Outlook, into another app, like Word, unless both apps are managed by the MDM provider.) In addition, IT may apply the app protection policy to EMS-managed mobile apps to control save-as or to provide multi-factor authentication.
 
 Whatever your organization’s position on enrolled and unenrolled mobile devices and apps, Intune, as a part of EMS, has tools that will help increase your workforce productivity while protecting your corporate data.
 

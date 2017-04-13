@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Configure MAM policies in the Intune console | Microsoft Intune
+title: Configure MAM policies in the Intune console | Microsoft Docs
 description: Mobile application management policies in Microsoft Intune let you modify the functionality of apps that you deploy to help align them with your company's compliance and security policies.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,11 +21,14 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Configure and deploy mobile application management policies in the Microsoft Intune console
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Mobile application management (MAM) policies in Microsoft Intune let you modify the functionality of apps that you deploy to help align them with your company's compliance and security policies. For example, you can restrict cut, copy, and paste operations within a managed app, or configure an app to open all web links inside a managed browser.
 
 Mobile application management policies support:
@@ -140,7 +143,7 @@ After you have verified that the app is uploaded successfully, continue to step 
     |**Require device compliance with corporate policy for access**|This setting allows the app to be used only when the device is not jailbroken or rooted.|
     |**Recheck the access requirements after (minutes)**|In the **Timeout** field, specify the time period before the access requirements for the app are rechecked after the app is opened.|
     |**Offline grace period**|If the device is offline, specify the time period before the access requirements for the app are rechecked.|
-    |**Encrypt app data**|This setting specifies that all data associated with this app will be encrypted. This includes data stored externally, such as in SD cards.<br /><br />**Encryption for iOS**<br /><br />For apps that are associated with an Intune mobile application management policy, data is encrypted at rest through device-level encryption that the OS provides. This is enabled through a device PIN policy that the IT admin sets. When a PIN is required, the data will be encrypted according to the settings in the mobile application management policy. As stated in Apple documentation, [the modules that iOS uses are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Encryption for Android**<br /><br />For apps that are associated with an Intune mobile application management policy, Microsoft provides encryption. Data is encrypted synchronously during file I/O operations.  Content on the device storage will always be encrypted. The encryption method is not FIPS 140-2 certified.|
+    |**Encrypt app data**|This setting specifies that all data associated with this app will be encrypted. This includes data stored externally, such as in SD cards.<br /><br />**Encryption for iOS**<br /><br />For apps that are associated with an Intune mobile application management policy, data is encrypted at rest through device-level encryption that the OS provides. This is enabled through a device PIN policy that the IT admin sets. When a PIN is required, the data will be encrypted according to the settings in the mobile application management policy. As stated in Apple documentation, [the modules that iOS uses are FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Encryption for Android**<br /><br />For apps that are associated with an Intune mobile application management policy, Microsoft provides encryption. Data is encrypted synchronously during file I/O operations.  Content on the device storage will always be encrypted. The encryption method is FIPS 140-2 compliant for Samsung KNOX devices only.|
     |**Block screen capture** (Android devices only)|This setting specifies that the screen capture capabilities of the device are blocked when someone is using this app.|
 
 4. When you are finished, choose **Save Policy**.

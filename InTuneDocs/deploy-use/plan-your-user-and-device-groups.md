@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Plan your user and device groups | Microsoft Intune
+title: Plan your user and device groups | Microsoft Docs
 description: Plan groups to meet your organizational needs.
 keywords:
 author: sanchusa
@@ -21,11 +21,14 @@ ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
 ms.reviewer: lpatha
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Plan your user and device groups
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Groups in Intune give you great flexibility when you're managing your devices and users. You can set up groups to suit your organizational needs according to:
 
 - geographic location

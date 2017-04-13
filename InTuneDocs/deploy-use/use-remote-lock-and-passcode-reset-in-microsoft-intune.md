@@ -1,10 +1,10 @@
 ---
-title: Remote lock and passcode reset | Microsoft Intune
+title: Remote lock and passcode reset | Microsoft Docs
 description: Intune provides both remote lock and passcode reset capabilities.
 keywords:
-author: staciebarkerms.author: staciebarker
+author: NathBarnms.author: NathBarn
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 03/06/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,20 +19,27 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 ---
 # Help protect your devices with remote lock and passcode reset
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune provides both remote lock and passcode reset capabilities.
 
 ## Lock a device remotely
-If a user loses a device, you can lock the device remotely. The following table lists how remote lock works on different mobile platforms.
+If a user loses a device, you can lock the device remotely. The device must already have a PIN or passcode set on it before you can use remote lock.
+
+The following table lists how remote lock works on different mobile platforms.
 
 |Platform|Remote lock|
 |------------|---------------|
 |macOS|Not supported|
 |iOS|Supported|
 |Android|Supported|
-|Windows 10 and Windows 10 Mobile|Supported|
+|Android for Work|Supported|
+|Windows 10 (mobile)|Supported|
+|Windows 10 (desktop)|Not supported|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
 |Windows RT 8.1 and Windows RT|Supported if the current user of the device is the same user who enrolled the device.|
 |Windows 8.1|Supported if the current user of the device is the same user who enrolled the device.|
@@ -58,6 +65,7 @@ If a user forgets a passcode, you can help by removing the passcode from a devic
 |macOS|Not supported|
 |iOS|Supported for clearing the passcode from a device. Does not create a new temporary passcode.|
 |Android|Supported on versions earlier than Android 7.0. Creates a temporary passcode.|
+|Android for Work|Not supported|
 |Windows 10 Mobile|Supported|
 |Windows Phone 8 and Windows Phone 8.1|Supported|
 |Windows RT 8.1|Not Supported|

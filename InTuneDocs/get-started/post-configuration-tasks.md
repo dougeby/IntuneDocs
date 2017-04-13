@@ -1,12 +1,13 @@
 ---
 # required metadata
 
-title: Post-configuration tasks | Microsoft Intune
+title: Post-configuration tasks | Microsoft Docs
 description: Complete optional configuration tasks to enhance mobile device management functionality.
 keywords:
-author: nathbarnms.author: nathbarn
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 12/05/2016
+ms.date: 12/15/2016
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,11 +22,14 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Post-configuration tasks
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 After you complete the initial configuration steps for an Intune  paid subscription, you should consider enabling additional mobile device management functionality.
 
 -   **Connect Exchange to Intune:** For users with mobile devices  that haven't  enrolled in Intune, you can enable Exchange ActiveSync management using a connector for on-premises Exchange and for Exchange Online in  Microsoft Office 365. The Exchange connector connects you to your Exchange deployment and lets you manage mobile devices through the Intune administration console. To learn more about the Exchange connector, see [Mobile device management with Exchange ActiveSync and Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).

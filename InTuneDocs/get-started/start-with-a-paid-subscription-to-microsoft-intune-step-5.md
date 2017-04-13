@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Create groups to organize users and devices | Microsoft Intune
+title: Create groups to organize users and devices | Microsoft Docs
 description: Create users and groups for your Intune subscription
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,17 +21,22 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 
 # Create groups to organize users and devices
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+This topic tells administrators how they can create groups of users in Intune.
+
 Groups in Intune give you great flexibility for managing your devices and users. You can set up groups to suit your organizational needs (for example, by geographic location, department, or hardware characteristics) and use them to perform a wide variety of administrative tasks, from deploying policies for a set of users to deploying applications to a set of devices.
 
 ## Group management moving to Azure AD
 
-**Starting in November 2016**, new accounts will manage user and device groups in the Azure Acitve Directory (AD) portal. In December 2016, the Intune product team will begin to migrate existing customers to the new Azure AD-based group management experience. All user and device groups will be migrated to Azure AD security groups. We won’t start migrations until we can minimize any effect on your day-to-day work, and when we expect there will be no effect on your users. We also will give you notice before we migrate your account.
+**Starting in November 2016**, new accounts will manage user and device groups in the Azure Active Directory (AD) portal. In December 2016, the Intune product team will begin to migrate existing customers to the new Azure AD-based group management experience. All user and device groups will be migrated to Azure AD security groups. We won’t start migrations until we can minimize any effect on your day-to-day work, and when we expect there will be no effect on your users. We also will give you notice before we migrate your account.
 
 
 >[!IMPORTANT]

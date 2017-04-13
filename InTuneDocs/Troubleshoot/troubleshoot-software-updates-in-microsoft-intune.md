@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Troubleshoot software updates | Microsoft Intune
+title: Troubleshoot software updates | Microsoft Docs
 description: Solve software update problems in Microsoft Intune.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,11 +21,14 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Troubleshoot software updates in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the information in this section to help you solve software update problems in Microsoft Intune.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.

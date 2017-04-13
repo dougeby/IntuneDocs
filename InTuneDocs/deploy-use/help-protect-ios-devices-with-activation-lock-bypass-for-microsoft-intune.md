@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Manage iOS Activation Lock on devices | Microsoft Intune
+title: Manage iOS Activation Lock on devices | Microsoft Docs
 description: Microsoft Intune can help you manage iOS Activation Lock, a feature of the Find My iPhone app for iOS 7.1 and later devices.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,11 +21,14 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Help protect iOS devices with Activation Lock bypass for Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune can help you manage iOS Activation Lock, a feature of the Find My iPhone app for iOS 8.0 and later devices. Activation Lock is enabled automatically when a user opens the Find My iPhone app on a device. After it is enabled, the user's Apple ID and password must be entered before anyone can: 
 
 -   Turn off Find My iPhone
@@ -49,7 +52,7 @@ To help solve these problems, Apple introduced Activation Lock bypass in iOS 7.1
 > Supervised mode for iOS devices lets you use Apple Configurator to lock down a device and limit functionality to specific business purposes. Supervised mode is generally only for corporate-owned devices.
 
 ## How Intune helps you manage Activation Lock
-Intune can request the Activation Lock status of both supervised and unsupervised devices that run iOS 8.0 and later. For supervised devices only, Intune can retrieve the Activation Lock bypass code and directly issue it to the device. If the device has been wiped, you can directly access the device by using the code as the user name and a blank password.
+Intune can request the Activation Lock status of supervised devices that run iOS 8.0 and later. For supervised devices only, Intune can retrieve the Activation Lock bypass code and directly issue it to the device. If the device has been wiped, you can directly access the device by using a blank user name and the code as the password.
 
 **The business benefits of this are**:
 

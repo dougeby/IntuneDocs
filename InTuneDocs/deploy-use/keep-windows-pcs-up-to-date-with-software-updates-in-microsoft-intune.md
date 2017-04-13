@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Software updates for Windows PCs | Microsoft Intune
+title: Software updates for Windows PCs | Microsoft Docs
 description: Intune helps you to keep your managed computers up to date by ensuring the latest patches and software updates are quickly installed.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 

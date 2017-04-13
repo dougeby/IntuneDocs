@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Find a package family name (PFN) for per-app VPN | Microsoft Intune
+title: Find a package family name (PFN) for per-app VPN | Microsoft Docs
 description: Find a PFN so that you can configure a per-app VPN.
 keywords:
 author: robstackmsft
@@ -22,11 +22,13 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Find a package family name (PFN) for per-app VPN configuration
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 There are two ways to find a PFN so that you can set up a per-app VPN.
 

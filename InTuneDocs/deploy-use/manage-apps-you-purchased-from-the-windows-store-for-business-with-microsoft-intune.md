@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Manage Windows Store for Business apps | Microsoft Intune
+title: Manage Windows Store for Business apps | Microsoft Docs
 description: Connect Microsoft Intune to the Windows Store for Business if you want to manage and deploy volume-purchased apps from the Intune console
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,14 +18,17 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Manage apps you purchased from the Windows Store for Business with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The [Windows Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Intune console. For example:
 * You can synchronize the list of apps you have purchased from the store with Intune.
 * Apps that are synchronized appear in the Intune administration console, and you can deploy these like any other apps.
@@ -47,6 +50,9 @@ Before you enable synchronization in the Intune console, you must configure your
 1. Ensure that you sign into the Business Store using the same tenant account you use to sign into Intune.
 2. In the Business Store, choose **Settings** > **Management tools**.
 3. On the Management tools page, choose **Add a management tool**, and choose **Microsoft Intune**.
+
+> [!NOTE]
+> If you are using more than one management tool to deploy Windows Store for Business apps, previously, you could only associate one of these with the Windows Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager.
 
 You can now continue, and set up synchronization in the Intune console.
 

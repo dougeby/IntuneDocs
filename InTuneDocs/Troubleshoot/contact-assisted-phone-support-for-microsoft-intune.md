@@ -1,12 +1,13 @@
 ---
 # required metadata
 
-title: Contact Assisted Phone Support | Microsoft Intune
-description: Phone numbers for Intune support
-keywords:
-author: staciebarkerms.author: staciebarker
+title: "Contact assisted phone support | Microsoft Docs"
+description: Phone numbers for Microsoft Intune help.
+keywords: business hours
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,11 +22,13 @@ ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Contact assisted phone support for Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## Phone numbers and business hours
 

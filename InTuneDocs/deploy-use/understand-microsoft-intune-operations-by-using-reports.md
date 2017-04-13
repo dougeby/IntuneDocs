@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Understand operations by using reports | Microsoft Intune
+title: Understand operations by using reports | Microsoft Docs
 description: Create and manage reports about software, hardware, and software licenses in your organization.
 
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,12 +23,15 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 
 ---
 
 # Understand Microsoft Intune operations by using reports
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the information in this topic to help you create and manage Microsoft Intune reports that provide information about software, hardware, and software licenses in your organization.
 
 ## Using reports
@@ -73,5 +76,4 @@ In addition, reports support the following actions:
 |**Load**|On the **Create New Report** page, choose **Load** to retrieve any previously saved sets of report parameters.|
 |**Delete**|In the **Reports** workspace, select the desired report type and choose **Load**. Then, in the list of reports, choose the delete (x) icon next to the report.|
 
-### See also
-[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+

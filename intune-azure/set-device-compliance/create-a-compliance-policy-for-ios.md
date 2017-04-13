@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to create a compliance policy for iOS | Intune Azure preview | Microsoft Docs
+title: How to create a compliance policy for iOStitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to create a compliance policy for iOS devices."
 keywords:
 author: andredm7
@@ -22,11 +22,11 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# How to create a device compliance policy for iOS devices
+# How to create a device compliance policy for iOS devices in Intune Azure preview
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -79,7 +79,7 @@ To assign a compliance policy to users, choose a policy that you have configured
 
 You have applied the policy to users.  The devices used by the users who are targeted by the policy will be evaluated for compliance.
 
-## Compliance policy settings
+<!---## Compliance policy settings--->
 
 ## System security settings
 

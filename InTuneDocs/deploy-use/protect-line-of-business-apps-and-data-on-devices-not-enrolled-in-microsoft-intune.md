@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Protect LOB apps on devices that are not enrolled | Microsoft Intune
+title: Protect LOB apps on devices that are not enrolled | Microsoft Docs
 description: This topic describes how you can prepare your custom line-of-business apps so you can apply mobile application management policies that can help prevent data loss.
 keywords:
 author: mtillmanms.author: mtillmanmanager: angrobe
@@ -20,11 +20,13 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Protect line-of-business apps and data on devices that are not enrolled in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Mobile application management (MAM) policies help protect company data by restricting actions that could leak company data and by enforcing data access requirements, such as an app PIN. To apply MAM policies to iOS and Android line-of-business apps, you must first wrap the app with the Microsoft Intune App Wrapping Tool. App wrapping is the process of applying a management layer to a mobile app without requiring any changes to the underlying application. After the app is wrapped, you can apply MAM policies to it and distribute it to your users.  
 
@@ -33,7 +35,7 @@ This topic explains the steps that are required to apply MAM policies for apps t
 
 ##  Step 1: Prepare the app
 
-Before you can apply MAM policies to an app, you must first wrap the app by using the Microsoft Intune App Wrapping Tool for [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool), or use the [Intune App SDK](/../develop/intune-app-sdk) to manually integrate Intune app protection features.
+Before you can apply MAM policies to an app, you must first wrap the app by using the Microsoft Intune App Wrapping Tool for [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) and [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md), or use the [Intune App SDK](../develop/intune-app-sdk.md) to manually integrate Intune app protection features.
 
 For more information on using the App Wrapping Tool vs. the SDK, see [Decide how to prepare apps for mobile application management with Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 

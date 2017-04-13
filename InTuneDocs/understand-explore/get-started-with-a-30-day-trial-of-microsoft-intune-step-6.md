@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Other options and extras for Intune evaluations | Microsoft Intune
+title: Other options and extras for Intune evaluations | Microsoft Docs
 description: Describes alerts, notification, and reports, plus general Intune capabilities that you need to know about when you sign up for a free, 30-day evaluation of Intune
 keywords:
 author: lindavr
@@ -22,11 +22,13 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 #ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Other options and extras for Intune evaluation subscriptions
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## Alerts, notifications and reports
 In the Intune administration console, **alerts** are used to quickly assess the overall health of managed devices in your organization. You can configure and customize alerts so that they report and display only the information you need for your organization. You can set whether an alert is enabled or disabled, configure the severity, use the display threshold to determine how frequently an alert event must be triggered before an alert is displayed, and also configure settings that are specific to certain types of alerts.

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Compliance policy settings for iOS devices | Microsoft Intune
+title: Compliance policy setting for iOS devices | Microsoft Docs
 description: This topic describes the rules and settings that you can set in a compliance policy for iOS devices.
 keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,19 +22,21 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 
 # Compliance policy settings for iOS devices in Microsoft Intune
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 The policy settings described in this topic apply to devices running iOS 8.0 and later.
 
 If you are looking for information about other platforms, select one of the following:
 > [!div class="op_single_selector"]
 - [Compliance policy settings for Android devices](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Compliance policy settings for Android for work](afw-compliance-policy-settings-in-microsoft-intune)
+- [Compliance policy settings for Android for work](afw-compliance-policy-settings-in-microsoft-intune.md)
 - [Compliance policy settings for Windows devices](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## System security settings

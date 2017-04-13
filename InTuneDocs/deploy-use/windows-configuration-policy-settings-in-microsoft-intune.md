@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Windows policy settings | Microsoft Intune
+title: Windows policy settings | Microsoft Docs
 description: Use the Intune Windows general configuration policy (Windows 8.1 and later) to configure settings for enrolled Windows 8, and Windows 8.1 devices.
 keywords:
 author: robstackmsftms.author: robstack
@@ -21,11 +21,14 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Windows policy settings in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the Microsoft Intune **Windows general configuration policy (Windows 8.1 and later)** to configure the following settings for enrolled Windows 8, Windows 8.1, and Windows RT 8.1 devices:
 
 ## Applicability settings

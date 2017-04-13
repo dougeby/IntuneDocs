@@ -2,7 +2,7 @@
 # required metadata
 
 
-title: Configuration policy reference | Microsoft Intune
+title: Configuration policy reference | Microsoft Docs
 description: Use the information in this topic to help you decide which Microsoft Intune policy you need to use to manage your devices.
 
 keywords:
@@ -23,11 +23,13 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Microsoft Intune configuration policy reference
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Use the information in this topic to help you decide which Microsoft Intune configuration policy you need to use to manage your devices.
 

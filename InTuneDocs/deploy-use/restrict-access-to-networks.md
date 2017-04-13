@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Restrict access to networks with Cisco ISE | Microsoft Intune
+title: Protect access to networks with Cisco ISE | Microsoft Docs
 description: Use Cisco ISE with Intune so that devices are Intune enrolled and policy compliant before they access Wi-Fi and VPN that are controlled by Cisco ISE.
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,14 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Using Cisco ISE with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune integration with Cisco Identity Services Engine (ISE) allows you to author network policies in your ISE environment by using the Intune device-enrollment and compliance state. You can use these policies to ensure that access to your company network is restricted to devices that are managed by Intune and compliant with Intune policies.
 
 ## Configuration steps

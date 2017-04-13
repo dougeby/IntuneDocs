@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Protecting company data with data encryption | Microsoft Intune
+title: Protecting company data with data encryption | Microsoft Docs
 description: This guide can help you protect your company from data loss by forcing a passcode and data encryption using a policy on  mobile apps.
 keywords: encryption, PIN, data
 author: arob98ms.author: angrobe
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -21,11 +21,14 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Quick Start Guide: Protect company data with data encryption
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune can help you prevent data loss from Office mobile apps in a variety of ways, including:
 - By encrypting corporate data with the highest level of device encryption provided by iOS and Android.
 - On iOS and Android devices that, because of privacy or legal requirements, cannot be enrolled in a mobile device management solution.

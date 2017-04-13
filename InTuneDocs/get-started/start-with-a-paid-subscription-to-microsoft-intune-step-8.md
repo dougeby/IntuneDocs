@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Enable device enrollment | Microsoft Intune
+title: Enable device enrollment | Microsoft Docs
 description: Set MDM authority and enable enrollment for iOS, Windows, Android, and Mac devices.
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,11 +21,16 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
-# Enroll mobile devices and install an app
+# Enable enrollment for mobile devices
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+This topic describes how an Intune administrator can enable mobile device enrollment. For help using Intune on your phone, see [using managed devices to get work done](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
+
 To set up mobile device management with Intune, you must first set the *mobile device management authority*, which identifies the service that can manage devices associated with your account. This guidance assumes you will use the Intune service instead of System Center Configuration Manager. Once the MDM authority is set, you can enable management for device platforms, and enroll your devices with the Company Portal app.
 
 ## Enable device enrollment
@@ -48,9 +53,9 @@ Enrollment must be enabled for iOS, Mac, and Android for Work devices establishi
 
 Enable device enrollment for the device platform you want to manage. Depending on your platform, different requirements are needed:
 
--  [iOS and macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
--  [Window PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--  [Window 10 Mobile and Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [iOS and macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Window 10 and Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+- [Window PC](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) (Intune software client)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
 Once enrollment is enabled, users can download the Company Portal app to their device and complete the device enrollment process.
@@ -59,12 +64,11 @@ Once enrollment is enabled, users can download the Company Portal app to their d
 You can also enable a variety of [company-owned device enrollment](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices) scenarios including:
 - [Apple Device Enrollment Program](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Apple Configurator Setup Assistant enrollment](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-- [Apple Configurator Setup Assistant enrollment](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Apple Configurator direct enrollment](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [Device Enrollment Manager](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
 ### Next steps
 Congratulations! You have just completed the last step of the *Intune quick start guide*. Now that your initial configuration is complete, you can consider enabling additional MDM functionality.
 
 >[!div class="step-by-step"]
-
 >[&larr; **Enroll devices**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Post-configuration tasks** &rarr;](.\post-configuration-tasks.md)  

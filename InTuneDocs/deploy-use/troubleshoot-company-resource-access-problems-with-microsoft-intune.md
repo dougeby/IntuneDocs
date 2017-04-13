@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot company resource access problems | Microsoft Intune
+title: Troubleshoot company resource access problems | Microsoft Docs
 description: Error and status codes in this topic to help you troubleshoot resource access problems.
 keywords:
 author: robstackmsft
@@ -21,14 +21,17 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Troubleshoot company resource access problems with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use the error and status codes in this topic to help you troubleshoot problems when a Microsoft Intune action returns an error code.
 
-If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
+If this information does not solve your problem, see [How to get support for Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md) to find more ways to get help.
 
 ## Status codes for MDM managed Windows devices
 
@@ -374,4 +377,4 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016346011|0x87D10065|The specified SyncML command is being carried out, but has not yet completed.|
 
 ### Next steps
-If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md).

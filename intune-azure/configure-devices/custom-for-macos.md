@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune custom settings for macOS devices | Intune Azure preview | Microsoft Docs
+title: Intune custom settings for macOS devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn the settings you can use in a macOS custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# Intune custom settings for macOS devices
+# Custom settings for macOS devices in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -43,4 +43,3 @@ This capability allows you to deploy macOS settings that are not configurable wi
 Ensure that the settings you export from the Apple Configurator tool are compatible with the version of macOS on the devices to which you deploy the macOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) website.
 
 The file you imported will be displayed in the **File contents** area of the blade.
-

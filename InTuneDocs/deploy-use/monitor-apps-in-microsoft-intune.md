@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Monitor app deployments| Microsoft Intune
+title: Monitor app deployments| Microsoft Docs
 description: Learn how to monitor apps you deployed with Intune.
 keywords:
 author: robstackmsftms.author: robstack
@@ -21,12 +21,14 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 
 # Monitor app deployments in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## Monitor an app deployment
 You can see the apps that you manage and the status of any deployments in the Intune administration console. <!---App status is displayed in real-time. You don't have to wait for the device to check-in before you can see this.--->

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Add apps for enrolled devices | Microsoft Intune
+title: Add apps for enrolled devices | Microsoft Docs
 description: Before you can deploy an app, you must add it to Intune. Then it’s available in the Intune console, where you can deploy and manage it.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,11 +21,13 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Add apps for enrolled devices to Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Before you can deploy or manage an app, you must add it to Microsoft Intune. This topic shows you how to add apps for enrolled devices.
 
@@ -62,6 +64,9 @@ You use the Intune Software Publisher to configure the properties of the app and
 		For example, if you want to deploy the Microsoft Word app from the iTunes store to devices, the page would look like this:
 
 		![Intune Software Publisher](./media/publisher-for-mobile.png)
+
+> [!NOTE]
+> When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
 
 3.  On the **Software description** page, configure the following:
 

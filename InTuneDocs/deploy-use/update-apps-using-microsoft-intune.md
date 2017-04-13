@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Update apps | Microsoft Intune
+title: Update apps | Microsoft Docs
 description: Use the information in this topic to understand how to update apps when a new version is required.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,11 +21,14 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Update apps using Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune can help you manage app updates. Use the information in this topic to understand how to update apps when a new version is required.
 
 ## How to update apps

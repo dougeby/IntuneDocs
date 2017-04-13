@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Restore Intune managed iOS devices from backup | Microsoft Intune
+title: Restore Intune managed iOS devices from backup | Microsoft Docs
 description: Provide guidance to end users on how to re-enroll their devices after restoring from backup.
 keywords: restore, managed, iOS
 author: barlanmsft
@@ -22,11 +22,13 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Restore Intune managed iOS devices from backup
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 There will be cases when you or your users will need to restore an iOS device from a backup, such as when a user gets a new device. This topic explains additional steps that you might have to take to set up Intune management after restoring the device.
 

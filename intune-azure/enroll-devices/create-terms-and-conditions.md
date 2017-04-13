@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Set terms and conditions in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: Set terms and conditions in Microsoft IntunetitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Set terms and conditions that users see in the Company Portal for Intune. "
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,10 +22,10 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
-# Set terms and conditions in Microsoft Intune
+# Set terms and conditions 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -35,22 +35,24 @@ You can create and deploy multiple policies containing different terms and condi
 
 **To create terms and conditions**:
 
-1. In the **Enrollment** workload, choose **Terms and Conditions**.
+1. In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**.
 
-2. Select **Create**.
+2. On the Intune blade, choose **Enroll devices**, and then choose **Terms and Conditions**.
 
-3. On the **Create Terms and Conditions** blade, specify the following information:
+3. Select **Create**.
+
+4. On the **Create Terms and Conditions** blade, specify the following information:
 
    - **Display name**: Name to use for the terms. Users see this name in the Company Portal app.
-   
+
    - **Description**: Optional details that help you identify the policy in the Azure portal.
 
-4. Select the arrow next to Define terms of use to open the Terms and Conditions blade, and then enter the following information:
+5. Select the arrow next to Define terms of use to open the Terms and Conditions blade, and then enter the following information:
 
    - **Title**: The title users see in the Company Portal.
-   
+
    - **Summary of Terms**: Text that explains what it means if users accept the terms.
-   
+
    - **Terms and Conditions**: The legal label that users see and must either accept or reject, for example, “I agree to the terms and conditions.”
 
-5. Select **Ok**.
+6. Select **Ok**.

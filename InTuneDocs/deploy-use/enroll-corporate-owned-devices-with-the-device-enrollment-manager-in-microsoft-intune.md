@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Enroll with the device enrollment manager | Microsoft Intune
+title: Enroll with the device enrollment manager | Microsoft Docs
 description: The device enrollment manager (DEM) account can manage large numbers of shared, corporate-owned mobile devices with a single user account.
 keywords:
-author: staciebarkerms.author: stabar
+author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 01/29/17
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,62 +21,73 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 
 # Enroll corporate-owned devices with the device enrollment manager in Microsoft Intune
-Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special Intune account that can enroll up to 1,000 devices. Each enrolled device uses a single license. We recommend that you use devices enrolled through this account as shared devices rather than personal ("BYOD") devices. Users will not be able to use "native" email apps, for example. Licensing for DEM is per-device, not per-user.
 
-As an example, you could assign a device enrollment manager user account to a store manager or supervisor to let them:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
--   Enroll devices in Intune.
+Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special user account that can enroll up to 1,000 devices. You add existing users to the DEM account to give them the special DEM capabilities. Each enrolled device uses a single license. We recommend that you use devices enrolled through this account as shared devices (that is, with no user affinity) rather than personal ("BYOD") devices.  
 
--   Sign in to the Company Portal to get company apps.
+Users must exist in the Azure portal to be added as device enrollment managers. For optimal security, the DEM user should not also be an Intune admin.
 
--   Install and uninstall software.
+>[!NOTE]
+>The DEM enrollment method can't be used with the [Apple Configurator Setup Assistant](ios-setup-assistant-enrollment-in-microsoft-intune.md) or [direct enrollment](ios-direct-enrollment-in-microsoft-intune.md), or the [DEP enrollment method](ios-device-enrollment-program-in-microsoft-intune.md).
 
--   Configure access to company data.
+## Example of a device enrollment manager scenario
 
+A restaurant wants to provide 50 point-of-sale tablets for its wait staff, and order monitors for its kitchen staff. The employees never need to access company data or sign in as users. The Intune admin creates a device enrollment manager account and adds a restaurant supervisor to the DEM account, in effect giving that supervisor DEM capabilities. The supervisor can now enroll the 50 tablets devices by using the DEM credentials.
 
-**A device enrollment manager scenario:**
-A restaurant wants point-of-sale tablets for its wait staff and order monitors for its kitchen staff. The employees never need to access company data or sign in as users. The Intune admin creates a device enrollment manager account and enrolls the company-owned devices by using that account. Alternatively, the admin could give the device enrollment manager credentials to a restaurant manager, which would let the manager enroll and manage the devices.
+Only users in the Intune console can be device enrollment managers. The device enrollment manager user cannot be an Intune admin.
 
-The admin or manager can deploy role-specific apps to the restaurant devices. An admin can also select the device in the Intune console and retire it from mobile device management with the administration console.
+The DEM user can:
+
+-   Enroll up to 1000 devices in Intune
+-   Use the Company Portal app to get company apps
+-   Configure access to company data by deploying role-specific apps to the tablets
+
+## Limitations of devices that are enrolled with a DEM account
 
 Devices that are enrolled with a device enrollment manager account have the following limitations:
-  - There is no specific device "user"—therefore, there is no email or company data access. However VPN, for example, could still provide device apps with access to data.
+
+  - There is no specific device "user." Therefore, there is no email or company data access. However VPN, for example, could still be used to provide device apps with access to data.
+
   - There is no conditional access because these are per-user scenarios.
-  - You can't reset these devices from the Company Portal.
+
+  - The DEM user can't unenroll DEM-enrolled devices on the device itself by using the Company Portal. The Intune admin has this capability, but the DEM user does not.
+
   - Only the local device appears in the Company Portal app or website.
-  - They can't use Apple Volume Purchase Program (VPP) apps because of per-user Apple ID requirements for app management.
-  - (iOS) They can't also be enrolled with Apple Configurator or the Apple Device Enrollment Program (DEP), but DEP or Apple Configurator-managed devices can be enrolled without user affinity.
+
+  - Users can't use Apple Volume Purchase Program (VPP) apps because of per-user Apple ID requirements for app management.
+
+  - (iOS only) If you use DEM to enroll iOS devices, you can't use the Apple Configurator or Apple Device Enrollment Program (DEP) to enroll devices.
 
 > [!NOTE]
 > To deploy company apps to devices that are managed by the device enrollment manager, deploy the Company Portal app as a **Required Install** to the device enrollment manager's user account.
-> To improve performance, viewing the Company Portal app on a DEM device only shows the local device. Remote management of other DEM devices can only be done from the Intune admin console.
+> To improve performance, viewing the Company Portal app on a DEM device shows only the local device. Remote management of other DEM devices can only be done from the Intune admin console.
 
-## Create device enrollment manager accounts
-Device enrollment manager accounts are user accounts with permission to enroll large numbers of corporate-owned devices. Only users in the Intune console can be device enrollment managers.
 
-#### Add a device enrollment manager to Intune
+## Add a device enrollment manager
 
-1.  Go to the [Microsoft Intune account portal](http://go.microsoft.com/fwlink/?LinkId=698854) and sign in to your admin account.
+1.  Ensure that the user that you want to add to the DEM account already exists. If you need to add the user, sign in to the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854), and follow the steps in [Add users individually or in bulk to the Office 365 portal](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-2.  Choose **Add user**.
+2.  Sign in to the [Microsoft Intune administration console](http://manage.microsoft.com) with your admin credentials.
 
-3.  Confirm that the user account that will be a device enrollment manager is listed. If it isn't, add the user by choosing **New** and completing the **Add user** process. A subscription license is required for each user that accesses the service. The device enrollment manager cannot be an Intune admin. Check whether you need to add more licenses before you use this feature.
+3.  In the navigation pane, choose **Admin**, go to **Administrator Management**, and select **Device Enrollment Manager**. The **Device Enrollment Managers** page opens.
 
-4.  Sign in to the [Microsoft Intune administration console](http://manage.microsoft.com) with your admin credentials.
+4.  Choose **Add…**. The **Add Device Enrollment Manager** dialog box opens.
 
-5.  In the navigation pane, choose **Admin**, go to **Administrator Management**, and select **Device Enrollment Manager**. The **Device Enrollment Managers** page opens.
+5.  Enter the **User ID** of the Intune account, and then choose **OK**.
 
-6.  Choose **Add…**. The **Add Device Enrollment Manager** dialog box opens.
+    The DEM user can now enroll mobile devices by using the same procedure that an end user uses for a BYOD scenario in the Company Portal. The manager end user can install the Company Portal app and enroll the device using her DEM credentials on up to 1000 devices. For the end-user enrollment steps for each platform, see:
 
-7.  Enter the **User ID** of the Intune account, and then choose **OK**. The device enrollment manager user cannot be an Intune admin.
-
-8.  The device enrollment manager can now enroll mobile devices by using the same procedure that an end user uses for a BYOD scenario in the Company Portal. The manager end user can install the Company Portal app and enroll the device using her DEM credentials on up to 1000 devices.
+  - [Enroll your iOS device in Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-ios)
+  - [Enroll your macOS device in Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos)
+  - [Enroll your Android device in Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android)
+  - [Enroll your Windows device in Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows)
 
 ## Delete a device enrollment manager from Intune
 

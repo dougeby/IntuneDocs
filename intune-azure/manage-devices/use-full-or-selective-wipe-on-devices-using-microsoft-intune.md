@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Use full or selective wipe on devices using Microsoft Intune | Microsoft Docs
-description: Learn how to do a selective wipe of company data on a device or to do a full wipe to "factory reset" the device.
+title: Full or selective wipe on devices using IntunetitleSuffix: "Intune Azure preview"
+description: "Intune Azure preview: Learn how to do a selective wipe of company data on a device or to do a full wipe to factory reset the device."
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,18 +19,16 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer:
+#ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# Use full or selective wipe on devices using Microsoft Intune
+# Use full or selective wipe
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
-
-# Help protect your data with full or selective wipe using Microsoft Intune
 
 You can wipe apps and data from Intune-managed devices that are no longer needed, are being repurposed, or have gone missing. To do this, Intune provides selective wipe and full wipe capabilities. Users can also issue a remote device wipe command from the Intune Company Portal app on privately owned devices enrolled in Intune.
 
@@ -50,13 +48,13 @@ You can wipe apps and data from Intune-managed devices that are no longer needed
 
 1.  On the **Devices and groups** blade, choose **All devices**.
 
-2.  Choose the name of the device you want to wipe. 
+2.  Choose the name of the device you want to wipe.
 
 3.  On the blade showing the device's name, choose **Factory reset**, and then choose **Yes** to confirm the wipe.
 
 If the device is on and connected, it takes less than 15 minutes for a wipe command to propagate across all device types.
 
-#### To delete devices in the Azure Active Directory portal
+### To delete devices in the Azure Active Directory portal
 
 1.  Browse to [http://aka.ms/accessaad](http://aka.ms/accessaad) or choose **Admin** &gt; **Azure AD** from [https://portal.office.com](https://portal.office.com).
 
@@ -111,6 +109,10 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 |Azure Active Directory (AAD) Unjoin|AAD Record removed.|AAD Record removed.|
 |Contacts | Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.|Contacts synced directly from the app to the native address book are removed.  Any contacts synced from the native address book to another external source cannot be wiped. <br /> <br />Currently, only Outlook app is supported.
 
+**Android for Work**
+
+Performing selective wipe on an Android for Work device removes all data, apps, and settings in the work profile on that device. This retires the device from management with Intune. Full wipe is not supported for Android for Work.
+
 **Windows**
 
 |Data type|Windows 8.1 (MDM) and Windows RT 8.1|Windows RT|Windows Phone 8 and Windows Phone 8.1|Windows 10|
@@ -126,7 +128,7 @@ If the device is on and connected, it takes less than 15 minutes for a wipe comm
 
 1.  On the **Devices and groups** blade, choose **All devices**.
 
-2.  Choose the name of the device you want to wipe. 
+2.  Choose the name of the device you want to wipe.
 
 3.  On the blade showing the device's name, choose **Remove comp...** (stands for Remove company data), and then choose **Yes** to confirm the wipe.
 

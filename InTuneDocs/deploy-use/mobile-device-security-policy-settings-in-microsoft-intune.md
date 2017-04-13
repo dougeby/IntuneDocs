@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile device security policy settings | Microsoft Intune
+title: Mobile device security policy settings | Microsoft Docs
 description: Use Intune to configure a wide range of settings that you can deploy to managed devices in your organization.
 keywords:
 author: robstackmsftms.author: robstack
@@ -21,12 +21,15 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 
 ---
 
 # Mobile device security policy settings in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > Microsoft Intune now features separate configuration policies for each device platform. These policies contain the most up-to-date settings that you can use. You can continue to use the mobile device security policy, and any existing deployments will still work. However, you should plan to migrate to the new configuration policies as soon as possible because the mobile device security policy will be removed in the future.
 

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune custom settings for Windows 10 devices | Intune Azure preview | Microsoft Docs
+title: Intune custom settings for Windows 10 devicestitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about the settings you can use in a Windows 10 custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,11 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# Custom device settings for Windows 10
+# Custom device settings for Windows 10 devices in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -34,8 +34,8 @@ ms.suite: ems
 
 1. Use the instructions in [How to configure custom device settings in Microsoft Intune](how-to-configure-custom-settings.md) to get started.
 2. On the **Create Profile** blade, choose **Settings** to add one or more OMA-URI settings.
-3. On the **Custom OMA-URI Settings** blade, click **Add** to add a new value. You can also click **Export** to create a list of all the values you configured in a comma-seperated values (.csv) file.
-4. For each OMA-URI setting you want to add, enter the following information. Use the list in this topic to learn about the settings you can use: 
+3. On the **Custom OMA-URI Settings** blade, click **Add** to add a new value. You can also click **Export** to create a list of all the values you configured in a comma-separated values (.csv) file.
+4. For each OMA-URI setting you want to add, enter the following information. Use the list in this topic to learn about the settings you can use:
 	- **Setting name** - Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
 	- **Setting description** - Optionally, enter a description for the setting.
 	- **Data type** - Choose from:
@@ -53,7 +53,7 @@ The profile will be created and appears on the profiles list blade.
 ## Example
 In the screenshot below, the setting **Connectivity/AllowVPNOverCellular** has been enabled. This lets a Windows 10 device open a VPN connection when on a cellular network.
 
-> ![Example of a custom policy containing VPN settings](/media/custom-policy-example.png)
+> ![Example of a custom policy containing VPN settings](./media/custom-policy-example.png)
 
 
 ## Policy settings
@@ -173,4 +173,3 @@ In the screenshot below, the setting **Connectivity/AllowVPNOverCellular** has b
 |**Allow Save Password**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Desktop and mobile<br />**Data type:** Integer<br />**Values:**<br>**0** – Password manager is disabled; <br>**1** – Password manager is enabled (default)|
 |**Allow Autofill**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Desktop only<br />**Data type:** Integer<br />**Values:** **0** – Disabled (default), **1** – Enabled|
 |**Configure Enterprise Site List**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Desktop only<br />**Data type:** String<br />**Values:<br>**0** – Not configured<br>**1** – Use IE’s enterprise mode site list if configured (default)<br>**2** – Specify location of the  enterprise site list|
-

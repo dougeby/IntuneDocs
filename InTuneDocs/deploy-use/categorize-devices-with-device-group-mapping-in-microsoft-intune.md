@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Categorize devices with device group mapping | Microsoft Intune
+title: Categorize devices with device group mapping | Microsoft Docs
 description: Use Microsoft Intune device group mapping to group devices into categories that you define, in order to make it easier for you to manage those devices. 
 keywords:
 author: robstackmsft
@@ -22,10 +22,13 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 ---
 
 # Categorize devices with device group mapping in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use Microsoft Intune **device group mapping** to automatically add devices to groups based on categories that you define, in order to make it easier for you to manage those devices. 
 
 Device group mapping uses the following workflow:

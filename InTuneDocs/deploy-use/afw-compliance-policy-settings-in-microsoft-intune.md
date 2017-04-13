@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Compliance policy settings for Android for Work | Microsoft Intune
+title: Compliance settings Android for Work | Microsoft Docs
 description: This topic describes the device compliance policy settings for Android devices that are compatible with Android for Work.
 keywords:
 author: andredm7ms.author: andredm
 manager: angrobe
-ms.date: 11/13/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,14 +21,14 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 
 # Compliance policy settings for Android for Work devices in Microsoft Intune
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 The policy settings described in this topic apply to Android for Work devices.
 
@@ -74,8 +74,8 @@ If you are looking for information about other platforms, select one of the foll
 
 - **Require that USB debugging is  disabled**: You do not have to configure this settings as USB debugging is already disabled on Android for Work devices.
 
-- **Minimum Android security patch level **: Use this setting to specify the minimum Android patch level.  Devices that are not at least at this patch level will be noncompliant. The date must be specified the format: YYYY-MM-DD.
-- **Require device threat protection to be enabled**: Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. Select the maximum allowed threat level, which is one of the following:
+- **Minimum Android security patch level**: Use this setting to specify the minimum Android patch level.  Devices that are not at least at this patch level will be noncompliant. The date must be specified the format: YYYY-MM-DD.
+- **Require device threat protection to be enabled**: Use this setting to take the risk assessment from the device threat protection solution as a condition for compliance. Select the maximum allowed threat level, which is one of the following:
 
   - **None (secured)** This is the most secure. This means that the device cannot have any threats. If the device is detected as having any level of threats, it will be evaluated as non-compliant.
   - **Low:** Device is evaluated as compliant if only low level threats are present. Anything higher puts the device in a non-compliant status.
@@ -85,7 +85,7 @@ If you are looking for information about other platforms, select one of the foll
   For more details, see [Enable device threat protection rule in the compliance policy](enable-device-threat-protection-rule-in-compliance-policy.md).
 
 ## Device property settings
-- **Minimum OS required:** When  a device does not meet the minimum OS version requirement, it is reported as noncompliant.
+- **Minimum OS required:** When a device does not meet the minimum operating system (OS) version requirement, it is reported as noncompliant.
   A link with information on how to upgrade is displayed. The end-user can choose to upgrade their device after which they can access company resources.
 
-- **Maximum OS version allowed:** When a device is using an OS version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot be used to access company resources.
+- **Maximum OS version allowed:** When a device is using an operating system (OS) version later than the one specified in the rule, access to company resources is blocked and the user is asked to contact their IT admin. Until there is a change in the rule to allow the operating system version, this device cannot be used to access company resources.

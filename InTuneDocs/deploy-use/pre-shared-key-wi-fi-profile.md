@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Wi-Fi using PSK | Microsoft Intune
+title: Wi-Fi using PSK | Microsoft Docs
 description: Use Custom Configuration to create a Wi-Fi profile with a pre-shared key.
 keywords:
 author: robstackmsft
@@ -22,11 +22,14 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 
 ---
 # Use a custom policy to create a Wi-Fi profile with a pre-shared key
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Here's how to use Intune’s **Custom Configuration** to create a Wi-Fi profile with a pre-shared key. This topic also has an example of how to create an EAP-based Wi-Fi profile.
 
 > [!NOTE]
@@ -76,24 +79,24 @@ Here’s an example of the XML code for an Android or Windows Wi-Fi profile:
 >  `<hex>53534944</hex>` should be set to the hexadecimal value of `<name><SSID of wifi profile></name>`.
 >  Windows 10 devices may return a false *0x87D1FDE8 Remediation failed* error, but will still be provisioned with the profile.
 
-    <!--
-    <Name of wifi profile> = Name of profile
-    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-    <nonBroadcast><true/false></nonBroadcast>
-    <Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
-    <Type of encryption> = Type of encryption used by the network
-    <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
-    <password> = Password to connect to the network
-	<hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <hex>53534944</hex>
-	    <name><SSID of wifi profile></name>
-        </SSID>
+```
+<!--
+<Name of wifi profile> = Name of profile
+<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+<nonBroadcast><true/false></nonBroadcast>
+<Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
+<Type of encryption> = Type of encryption used by the network
+<protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
+<password> = Password to connect to the network
+<hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
+-->
+<WLANProfile
+xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+  <name><Name of wifi profile></name>
+  <SSIDConfig>
+    <SSID>
+      <hex>53534944</hex>
+ <name><SSID of wifi profile></name>        </SSID>
         <nonBroadcast>false</nonBroadcast>
       </SSIDConfig>
       <connectionType>ESS</connectionType>
@@ -115,10 +118,12 @@ Here’s an example of the XML code for an Android or Windows Wi-Fi profile:
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## EAP-based Wi-Fi profile
 Here’s  an example of the XML code for an EAP-based Wi-Fi profile:
 
+```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name>testcert</name>
       <SSIDConfig>
@@ -196,6 +201,7 @@ Here’s  an example of the XML code for an EAP-based Wi-Fi profile:
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## Create the XML file from an existing Wi-Fi connection
 You can also create an XML file from an existing Wi-Fi connection:

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Sign up or sign in to Intune | Microsoft Intune
+title: Sign up or sign in to Intune | Microsoft Docs
 description: How to sign up for an Intune subscription or sign in to start with your subscription
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,12 +21,17 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 
 # Sign up or sign in to Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+This topic tells system administrators how they can sign up for an Intune account.
+
 Before you can sign in or sign up for Intune, you'll need to determine whether your organization already has a Microsoft Online Services work or school account, or if your organization has an Enterprise Agreement or equivalent volume licensing agreement with Microsoft. A work or school account is provided when you sign a volume licensing agreement with Microsoft or subscribe to other Microsoft cloud services such as Office 365.
 
 If you already have a work or school account, you will be able to simply **sign in** with that account to add Intune to your pre-existing subscription environment. Otherwise, you'll need to **sign up** to create a new account to use to manage Intune for your organization.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage device settings with policies | Microsoft Intune
+title: Manage device settings with policies | Microsoft Docs
 description: Use Intune to create and deploy policies that control settings and features on enrolled devices that you manage.
 keywords:
 author: robstackmsftms.author: robstack
@@ -21,11 +21,14 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Manage settings and features on your devices with Microsoft Intune policies
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune *policies* are groups of settings that control features on mobile devices and computers. You create policies by using templates that contain recommended or custom settings, and then you deploy them to device or user groups.
 
 ## Types of policies

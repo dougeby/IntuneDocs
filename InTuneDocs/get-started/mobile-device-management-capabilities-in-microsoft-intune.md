@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Enrolled device management capabilities | Microsoft Intune
+title: Enrolled device management capabilities | Microsoft Docs
 description: Read this topic to find out how Intune can help you manage devices that you enroll.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
-ms.topic: article
+ms.date: 12/12/2016
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -21,10 +21,12 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: angrobe
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 # Enrolled device management capabilities of Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune lets you manage a range of devices by *enrolling* them into the service. You can enroll some device types yourself, or users can enroll using the *company portal* app. This also lets them perform operations like browsing and installing apps, ensuring that their devices are compliant with company policies, and contacting their IT support.
 

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Customize the Company Portal | Microsoft Intune
+title: Customize the Company Portal | Microsoft Docs
 description: Intune Company Portal lets users do common tasks like enroll devices, install apps, and find IT department info.
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,16 +21,21 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Customize the Company Portal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+This topic tells administrators how they can customize the Intune Company Portal app and Company Portal website.
+
 The Intune Company Portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.
 
 The Intune Company Portal provides users with access to company data and apps. The Company Portal is available in two forms:
 
--   **The Company Portal app**: An application that is available on devices you manage with Intune. Learn more about the Company Portal apps for [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+-   **The Company Portal app**: An application that is available on devices you manage with Intune. Learn more about the Company Portal apps for [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune)
 , and [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
@@ -48,11 +53,6 @@ Some of the tasks that users can do in the Company Portal are:
 -   Remotely lock their device
 -   Download software that is deployed by your organization
 -   Contact the IT department for support
-
-> [!NOTE]
-> The Company Portal app is not yet available in certain countries.
-> __iOS__: The Company Portal app for iOS is published to [all available territories](https://go.microsoft.com/fwlink/?linkid=831284) for the Apple iOS App Store.
-> __Android__: The Company Portal app for Android is not currently available in China. For these countries, an alternative solution is to [sideload the Android version of the Company Portal app](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
 ## Customize Company Portal settings
 Customizing the Company Portal helps provide a familiar and helpful experience for your end users. Log in to the [Microsoft Intune administrator console](https://manage.microsoft.com) as a tenant or service administrator, choose **Admin** &gt; **Company Portal** and configure the Company Portal settings.

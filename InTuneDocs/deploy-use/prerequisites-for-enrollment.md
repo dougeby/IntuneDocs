@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Prerequisites for mobile device enrollment | Microsoft Intune
+title: Prerequisites for mobile device enrollment | Microsoft Docs
 description: Set up mobile device management (MDM) prerequisites and get ready to enroll different operating systems.
 keywords:
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,14 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Prerequisites for mobile device management in Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can enable employees to enroll their mobile devices with Intune requires the following steps. These same steps are required to manage company-owned devices.
 
 |Steps|Details|  
@@ -46,15 +49,14 @@ Looking for Intune with Configuration Manager?
 ## Step 1: Enable connections
 
 Before you enable mobile device enrollment, be sure you've done the following:
-- [Review required network URLs and ports](../get-started/network-infrastructure-requirements-for-microsoft-intune)
-- [Add and verify your domain name](../get-started/domain-names-for-microsoft-intune)
+- [Review required network URLs and ports](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
+- [Add and verify your domain name](../get-started/domain-names-for-microsoft-intune.md)
 
 ## Step 2: Set MDM authority
 The MDM authority defines the management service that has permission to manage a set of devices. The options for the MDM authority include Intune by itself and Configuration Manager with Intune. If you set Configuration Manager as the management authority, no other service can be used for mobile device management.
 
 >[!IMPORTANT]
-> Consider carefully whether you want to manage mobile devices by using Intune only (online service) or System Center Configuration Manager with Intune (on-premises software solution in conjunction with the online service). After you set the mobile device management authority, this cannot be changed.
-
+> Consider carefully whether you want to manage mobile devices by using Intune only (online service) or System Center Configuration Manager with Intune (on-premises software solution in conjunction with the online service). After you set the mobile device management authority, you cannot change it without the help of Microsoft Support. See [What to do if you choose the wrong MDM authority setting](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) for instructions.
 
 
 1.  In the [Microsoft Intune administration console](http://manage.microsoft.com), choose **Admin** &gt; **Mobile Device Management**.
@@ -117,7 +119,7 @@ After you save your changes, you can use the links that are provided at the bott
 
 ## Step 5: Assign user licenses
 
-You use the **Office 365 management portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts that are synchronized from your on-premises Active Directory to Azure Active Directory (Azure AD). You can [synchronize on-premises users to Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
+You use the **Office 365 management portal** to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts that are synchronized from your on-premises Active Directory to Azure Active Directory (Azure AD). You can [synchronize on-premises users to Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Sign in to the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) by using your tenant administrator credentials.
 
@@ -139,10 +141,10 @@ Set up management for the following platforms:
 - [iOS and Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [Windows PCs and laptops](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 Mobile and Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 Mobile and Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [Windows PCs and laptops](manage-windows-pcs-with-microsoft-intune.md) (Intune client software)
 
-You can also enable [enrollment of corporate-owned devices](manage-corporate-owned-devices).
+You can also enable [enrollment of corporate-owned devices](manage-corporate-owned-devices.md).
 
 ## Step 7: Next steps
 
@@ -152,3 +154,63 @@ Now that enrollment is enabled, you should set up management to meet your busine
 - [Enable access to company resources like email, Wi-Fi, and VPN](enable-access-to-company-resources-with-microsoft-intune.md)
 - [Add apps](add-apps.md) and [deploy app](deploy-apps.md) to managed devices
 - [Create device compliance policies](introduction-to-device-compliance-policies-in-microsoft-intune.md) and [restrict access based on compliance](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+
+## What to do if you choose the wrong MDM authority setting
+
+If you decide that you've chosen the wrong MDM authority setting and need to change it, you must contact Microsoft Support. You cannot change the setting yourself. Before contacting Microsoft Support, review the following information, which describes the information that Microsoft Support will need from you to make the change.
+
+There are three possible ways that your MDM authority can be reset. In your Support request, you'll need to choose the way that applies to your situation. If the scenario you are requesting is not listed, follow up with Microsoft Support.
+
+Microsoft Support will ask you to confirm the following information:
+
+- Tenant ID: the domain used to log in to the service (for example, intune.onmicrosoft.com)
+- The MDM authority that you want to change to
+- Confirmation of prerequisite steps that you completed, as listed below
+
+If you are using coexistence, you need to verify both the Intune and Office 365 checklists.
+
+### Reset MDM authority from Intune to Configuration Manager
+
+Complete these steps before contacting Microsoft Support to reset your MDM authority.
+
+- Retire all devices from the Intune admin console. Do not try to retire a device from the device itself. 
+- Delete the Service To Service Connector (under **Administration** > **Mobile Device Management** > **Microsoft Exchange**), or disable the Exchange Connector if you have set that up.
+- Remove the Device Enrollment Manager role from **Admin** > **Device Enrollment Manager**.
+- Turn off Device Group Mapping in **Admin** > **Mobile Device Management** > **Device Group Mapping**.
+- Delete sideloading keys from **Admin** > **Mobile Device Management** > **Windows** > **Side Loading Keys**.
+- Delete the iOS APNs certificate in **Admin** > **Mobile Device Management** > **iOS** page.
+- Delete the iOS DEP token in **Admin** > **Mobile Device Management** > **iOS** page.
+- Delete all polices that are for MDM Devices under **Policy** > **Configuration Policies**.
+- Delete all published applications that are for MDM Devices in **Apps** > **Managed Software**.
+
+### Reset MDM authority from Configuration Manager to Intune
+
+Complete these steps before contacting Microsoft Support to reset your MDM authority.
+
+- Retire all devices (that are managed as mobile devices) from the Configuration Manager Console. Do not try to retire a device from the device itself. 
+- Remove all users from the Intune User Group. Point the Intune subscription to an empty user collection, or remove all users from the targeted collection.  Confirm in the CloudUserSync.log that users are removed. 
+- Uncheck the iOS platform to purge the APNs certificate.
+- Delete all published applications that are for MDM devices.
+- Delete all polices that are for MDM devices.
+- Remove the Windows Intune Connector from the Configuration Manager Console (applicable only to R2 SP1 or below).
+-Remove the Intune subscription by right-clicking the subscription and selecting **Delete**.
+- Restart the SMS Executive Service.
+- Provide us with some example users so that we can verify, after the process completes, that Configuration Manager licenses were removed.
+
+### Reset MDM authority from Office 365 to Configuration Manager
+
+1. Navigate to [https://protection.office.com](https://protection.office.com).
+2. Select the **Security Policies** tab, and select **Device Management**.
+3. Retire all devices by choosing **Selective Wipe**. Do not try to retire a device from the device itself. If selective wipe is disabled, no further action is required.
+4. Select the **Security Policies** tab, and select **Device Security Policies**.
+5. Select **Delete** for all existing policies. If the polices are in a pending state, no further action is required.
+
+>[!NOTE]
+>The iOS APsN certificate cannot be deleted and remains attached to the account.
+
+### Next steps for MDM authority resets
+
+Once Microsoft Support verifies the items on the applicable checklist, resetting the MDM authority can take up to three business days, but typically occurs within one day.
+
+>[!IMPORTANT]
+>Do not try to configure your subscription until Microsoft Support confirms that the reset has completed successfully! Premature configuration may cause corruption and/or impact your ability to use the Intune service.

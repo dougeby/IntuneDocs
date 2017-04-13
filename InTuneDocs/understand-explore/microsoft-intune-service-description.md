@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Service Description | Microsoft Intune
+title: Service Description | Microsoft Docs
 description: Intune is a cloud-based service that helps you manage Windows, iOS, Mac OS X, Android, and Windows Mobile devices.
 keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
 ms.date: 09/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -22,11 +22,13 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Microsoft Intune service description
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune is a cloud-based service that helps you manage devices that run Windows, Mac OS X, iOS, Android, or Windows Mobile. Intune also helps protect corporate applications and data. You can use Intune alone, or you can integrate it with System Center Configuration Manager to extend your management capabilities.
 

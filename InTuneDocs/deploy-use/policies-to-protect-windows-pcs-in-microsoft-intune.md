@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Policies to protect Windows PCs| Microsoft Intune
+title: Policies to protect Windows PCs| Microsoft Docs
 description: Use these policies to help you ensure the security of Windows PCs when they are managed by the Intune client software.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 

@@ -1,13 +1,13 @@
-
 ---
 # required metadata
 
-title: App provisioning profiles | Microsoft Intune
+title: App provisioning profiles | Microsoft Docs
 description: Intune gives you the tools to proactively deploy a new provisioning profile policy to devices that have apps that are nearing expiry.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,12 +22,13 @@ ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Use iOS mobile provisioning profile policies to prevent your apps from expiring
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Apple iOS line of business apps that are deployed to iPhones and iPads are built with an included provisioning profile and code that is signed with a certificate. When the app is run, iOS confirms the integrity of the iOS app and enforces policies that are defined by the provisioning profile. The following validations happen:
 
@@ -55,4 +56,4 @@ After the certificate expires, you must sign the app again with a new certificat
 	- **Description** - Optionally, provide a description for the policy.
 	- **Configuration profile file** - Click **Import**, and then choose an Apple Mobile Configuration Profile file (with the extension **.mobileprovision**) that you downloaded from the Apple Developer website.
 4. When you are done, choose **Save Policy**.
-5. Now, deploy the policy to the required iOS devices. For more information, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+5. Now, deploy the policy to the required iOS devices. For more information, see [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).

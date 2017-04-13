@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune network bandwidth use | Microsoft Intune
+title: Intune network bandwidth use | Microsoft Docs
 description: intune network bandwidth usage
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
-ms.topic: article
+ms.date: 03/07/2017
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -21,11 +21,15 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Intune network bandwidth use
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+This guidance is for system administrators responsible for device management in the enterprise. For help using Intune on your mobile device, see [frequently asked questions about the Intune Company Portal](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Before you set up Microsoft Intune, review this topic and other requirements listed in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
@@ -111,7 +115,9 @@ The following table lists the ports and services that the Intune client accesses
 
 |**Domain**|**Ports**|**IP address**|
 |------|----|---|
-|manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>m.manage.microsoft.com<br>p.manage.microsoft.com<br>portal.manage.microsoft.com<br>r.manage.microsoft.com|80 and 443|134.170.168.254<br>134.170.51.126
+|manage.microsoft.com<br>a.manage.microsoft.com<br>admin.manage.microsoft.com<br>enterpriseenrollment.manage.microsoft.com<br>enterpriseenrollment-s.manage.microsoft.com<br>i.manage.microsoft.com<br>p.manage.microsoft.com<br>r.manage.microsoft.com|80 and 443|134.170.168.254<br>134.170.51.126
+|m.manage.microsoft.com|80 and 443| 13.91.59.243<br>40.68.30.140
+|portal.manage.microsoft.com|80 and 443|40.121.50.69<br>52.169.30.159
 |account.manage.microsoft.com|80 and 443|157.56.13.59
 |fef.msua01.manage.microsoft.com|80 and 443|138.91.243.97
 |fef.msua02.manage.microsoft.com|80 and 443|23.96.112.46
@@ -226,6 +232,7 @@ The following table lists the ports and services that the Intune client accesses
 |Conditional access communication|443|204.79.197.200|
 |Documentation, Help, and support:</br></br>*.livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.microsoft.com<br>www.microsoft.com|80|||
 
+
 >[!div class="step-by-step"]
 
->[&larr; **Prerequisites**](supported-mobile-devices-and-computers.md)     [**Networking** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  
+>[&larr; **Prerequisites**](what-to-know-before-you-start-microsoft-intune.md)     [**Subscription** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)  

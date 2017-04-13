@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: How to deploy apps | Microsoft Intune
+title: How to deploy apps | Microsoft Docs
 description: Use the information in this topic to help you deploy apps with Microsoft Intune.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,9 +21,11 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 ---
 # Deploy apps in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Use the information in this topic to help you deploy apps with Microsoft Intune.
 

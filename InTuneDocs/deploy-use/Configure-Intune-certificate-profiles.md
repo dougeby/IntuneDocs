@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure certificate profiles | Microsoft Intune
+title: Configure certificate profiles | Microsoft Docs
 description: Learn how to create an Intune certificate profile.
 keywords:
 author: robstackmsft
@@ -22,11 +22,14 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Configure Intune certificate profiles
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 After you've configured your infrastructure and certificates as described in [Configure certificate infrastructure for SCEP](configure-certificate-infrastructure-for-scep.md) or [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md), you can create certificate profiles. Here's the process:
 
 - **Task 1**: Export the Trusted Root CA certificate

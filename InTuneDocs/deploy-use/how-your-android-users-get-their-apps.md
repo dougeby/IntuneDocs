@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How your Android users get their apps | Microsoft Intune
+title: How your Android users get their apps | Microsoft Docs
 description: Methods for making Android apps available to end users
 keywords:
 author: barlanmsftms.author: barlan
@@ -21,12 +21,15 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 
 # How your Android users get their apps
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use this information to understand how and where your Android end users get the apps that you distribute through Microsoft Intune. The information can vary by device type (native Android devices or Samsung Knox Standard devices).
 
 ## Native (non-Samsung Knox Standard) Android devices

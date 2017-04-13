@@ -1,11 +1,13 @@
 ---
 # required metadata
 
-title: Validate your MAM setup | Microsoft Intune
+title: Validate your MAM setup | Microsoft Docs
 description: This topics describes how you can test and validate if your MAM policy is set up correctly and working as expected.
 keywords:
-author: NathBarnms.author: nathbarnmanager: angerobe
-ms.date: 08/16/2016
+author: andredm7
+ms.author: andredm
+manager: angerobe
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,11 +22,13 @@ ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 #ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Validating your mobile application management setup
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 This topic provides information on checking for issues after you set up mobile application management (MAM). This guidance applies to MAM policies in the Azure portal.
 
@@ -50,12 +54,12 @@ If testing shows that your MAM policy behavior is not as anticipated, we recomme
 ### What to do
 Here are the actions to take based on the user status:
 
-- If the user is not licensed for MAM, assign an Intune license to the user as described in [Manage Intune licenses](..\get-started\start-with-a-paid-subscription-to-microsoft-intune).
+- If the user is not licensed for MAM, assign an Intune license to the user as described in [Manage Intune licenses](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md).
 - If the user is not licensed for O365 obtain a license for the user.
 - If a user's app is listed as **Not checked in**, check if you've correctly configured a MAM policy for that app.
 - Ensure that these conditions are applied across all users to which you want MAM policies to apply.
 
 ### See also
-[Get ready to configure mobile app management policies with Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+[Get ready to configure mobile app management policies with Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-[Protect app data using mobile app management policies with Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+[Protect app data using mobile app management policies with Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

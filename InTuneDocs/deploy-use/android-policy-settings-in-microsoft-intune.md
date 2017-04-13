@@ -2,12 +2,13 @@
 
 # required metadata
 
-title: Android and Samsung KNOX Standard policy settings | Microsoft Intune
+title: Android and Samsung KNOX policy settings | Microsoft Docs
 description: Create policies that control settings and features on Android devices that you manage with Intune.
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +23,13 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Android and Samsung KNOX Standard policy settings in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune supplies a range of built-in general settings that you can configure on Android devices. Additionally, you can specify Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values to create custom settings that are not available from Intune.
 
@@ -149,6 +152,8 @@ In the **Compliant &amp; Noncompliant Apps** list, specify a list of compliant o
 |**Edit**|Lets you edit the name, publisher, and URL of the selected app.|
 |**Delete**|Deletes the selected app from the list.|
 
+Policies containing compliant and noncompliant app settings must be deployed to groups of users.
+
 ### Kiosk mode settings
 Specify the following settings for **Samsung KNOX Standard devices**:
 
@@ -182,9 +187,7 @@ Example: Search Google Play for Microsoft Office Mobile. The URL you use will be
 Use the Microsoft Intune **Android custom configuration policy** to deploy OMA-URI settings that can be used to control features on Android devices. These are standard settings that many mobile device manufacturers use to control device features.
 
 This capability is intended to allow you to deploy Android settings that are not configurable with Intune policies.
-
-> [!NOTE]
-> Currently, Android custom policies only support configuring Wi-Fi settings for Android devices that include a pre-shared key.
+Intune supports a limited number of Android custom policies at present. See the examples in this topic to find out which policies you can configure.
 
 ### General settings
 

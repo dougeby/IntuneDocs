@@ -1,5 +1,5 @@
 ---
-title: Configure certificate infrastructure for PFX | Microsoft Intune
+title: Configure certificate infrastructure for PFX | Microsoft Docs
 description: Create and deploy .PFX certificate profiles.
 keywords:
 author: robstackmsft
@@ -20,11 +20,14 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 
 ---
 # Configure certificate infrastructure
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 This topic describes what you need in order to create and deploy .PFX certificate profiles.
 
 To do any certificate-based authentication in your organization, you need an Enterprise Certification Authority.

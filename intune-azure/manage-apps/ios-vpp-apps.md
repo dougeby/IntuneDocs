@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Manage iOS VPP apps with Intune | Intune Azure preview | Microsoft Docs
+title: Manage iOS volume-purchased apps
+titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about how you can sync apps you purchased in volume from the iOS store into Intune and then manage and track their usage."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +23,7 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
 
 # How to manage iOS apps you purchased through a volume-purchase program with Microsoft Intune
@@ -33,9 +34,6 @@ ms.suite: ems
 The iOS app store lets you purchase multiple licenses for an app that you want to run in your company. This helps you reduce the administrative overhead of tracking multiple purchased copies of apps.
 
 Microsoft Intune helps you manage apps that you purchased through this program by importing the license information from the app store, tracking how many of the licenses you have used, and preventing you from installing more copies of the app than you own.
-
-> [!Important]
-> Currently, Intune assigns iOS Volume Purchase Program for Business (VPP) app licenses to users and not devices. Because of this, users must enter their Apple ID password to install the app.
 
 ## Manage volume-purchased apps for iOS devices
 You purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) or the [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store). This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
@@ -53,7 +51,10 @@ Before you start, you'll need to get a VPP token from Apple and upload this to y
 
 ## To get and upload an Apple VPP token
 
-1.  In the **Mobile Apps** workload, choose **Setup** > **iOS VPP Tokens**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Manage apps**.
+1.  In the **Manage Apps** workload, choose **Setup** > **iOS VPP Tokens**.
 2.  On the list of VPP tokens blade, click **Add**.
 3.  On the New VPP Token blade, specify the following information:
 	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the Volume Purchase Program for Education. After you sign up, download the Apple VPP token for your account and select it here.
@@ -68,11 +69,11 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 
 ## To assign a volume-purchased app
 
-1. In the **Mobile Apps** workload, choose **Manage** > **Licensed Apps**.
+1. In the **Manage Apps** workload, choose **Manage** > **Licensed Apps**.
 2. On the list of apps blade, choose the app you want to assign, and then choose '**...**' > **Assign Groups**.
 3. On the <*app name*> - **Groups Assigned** blade, choose **Manage** > **Groups Assigned**.
-4. Choose **Assign Groups** then, on the **Select groups** blade, choose the Azure AD groups to which you want to assign the app.
-You must choose an assignment action of **Required**. Available installations are not currently supported.
+4. Choose **Assign Groups** then, on the **Select groups** blade, choose the Azure AD user or device groups to which you want to assign the app.
+You must choose an assignment action of **Required**. Available installations are not currently supported. Additionally, assignments to device groups are available to new tenants created after January 2017. If your tenant was created before then, and you do not have the option to assign VPP apps to device groups, contact Intune support.
 5. Once you are done, choose **Save**.
 
 See [How to monitor apps](monitor-apps.md) for information to help you monitor app assignments.

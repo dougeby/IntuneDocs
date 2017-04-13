@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Deploy policies and apps | Microsoft Intune
+title: Deploy policies and apps | Microsoft Docs
 description: You can enable policy settings and deploy apps that will be applied as soon as devices are enrolled into management.
 keywords:
 author: nathbarnms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,18 +21,23 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Create policies and publish apps
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+This topic tells Intune administrators how they can create policies and publish apps that they can then deploy to managed devices.
+
 Before you start enrolling apps into Intune, you can enable policy settings and apps that will be deployed as soon as those devices come into management. Intune policies provide settings that help you control the security settings on mobile devices, maintain Windows Firewall and Endpoint Protection settings for computers, and deploy applications. You can configure policy, add apps, and deploy those apps so that devices receive settings and apps as soon as they enroll in Intune.
 
 Policies and apps are platform-specific.
 
 ## Manage device settings
 
- Device policy settings are configured and managed on a per-platform basis. You can configure policy for the following platforms:
+ Device policy settings are configured and managed on a per-platform basis. The following links provide lists of available settings for their respective platforms:
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android and Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)

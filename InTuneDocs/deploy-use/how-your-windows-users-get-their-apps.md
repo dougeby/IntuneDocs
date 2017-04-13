@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: How your Windows users get their apps | Microsoft Intune
+title: How your Windows users get their apps | Microsoft Docs
 description: Methods for making Windows apps available to users
 keywords:
 author: barlanmsft
 ms.author: barlan
-manager: arob98
+manager: angrobe
 ms.date: 12/05/2016
 ms.topic: article
 ms.prod:
@@ -22,12 +22,14 @@ ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 
 # How your Windows users get their apps
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Use this information to understand how and where your users get the apps that you distribute through Microsoft Intune.
 

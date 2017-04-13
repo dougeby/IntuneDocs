@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Manage software license agreements for PCs running the Intune software client | Microsoft Intune
+title: Manage software license agreements for PCs running the Intune software client | Microsoft Docs
 description: Intune lets you manage license agreements for software purchased through Microsoft Volume Licensing agreements, and for software that was purchased by other means.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 

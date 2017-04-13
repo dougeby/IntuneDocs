@@ -1,11 +1,13 @@
 ---
 # required metadata
 
-title: Restrict access to Skype for Business Online | Microsoft Intune
+title: Protect Skype for Business Online | Microsoft Docs
 description: Protect and control access to Skype for Business Online by using conditional access.
 keywords:
-author: andredm7ms.author: andredmmanager: angrobe
-ms.date: 10/25/2016
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,16 +22,19 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
-# Restrict access to Skype for Business Online with Microsoft Intune
+# Protect access to Skype for Business Online with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 You can use a conditional access policy for **Skype for Business Online** to control access to Skype for Business Online.
 Conditional access has two components:
 - A device compliance policy that the device must comply with in order to be considered compliant.
 - A conditional access policy where you specify the conditions that the device must meet in order for you to access the service.
-To learn more about how conditional access works, read the [Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
+To learn more about how conditional access works, read the [Protect access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) article.
 
 When a targeted user attempts to use Skype for Business Online on their device, the following evaluation occurs:
 

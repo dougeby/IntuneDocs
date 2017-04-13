@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How your iOS users get their apps | Microsoft Intune
+title: How your iOS users get their apps | Microsoft Docs
 description: Methods for making iOS apps available to end users
 keywords:
 author: barlanmsftms.author: barlan
@@ -21,12 +21,14 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 
 # How your iOS users get their apps
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Use this information to understand how and where your end users get the apps that you distribute through Microsoft Intune.
 

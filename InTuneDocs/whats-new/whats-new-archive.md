@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: What's New Archive | Microsoft Intune
+title: What's new archive | Microsoft Docs
 description: Archived What's New announcements for Microsoft Intune
 keywords:
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
-ms.date: 11/11/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,10 +22,10 @@ ROBOTS: noindex,nofollow
 #ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
-# What's New - Archive
+# What's new archive
 
 This page is a rolling list of the last six months of announcements made in [What’s New in Microsoft Intune](whats-new-in-microsoft-intune.md).
 

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Troubleshoot email profiles | Microsoft Intune
+title: Troubleshoot email profiles | Microsoft Docs
 description: Email profile issues and how to troubleshoot and resolve them.
 keywords:
 author: robstackmsftms.author: robstack
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,11 +21,14 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Troubleshoot email profiles in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Listed here are some email profile issues and how to troubleshoot and resolve them.
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) to find more ways to get help.

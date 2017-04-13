@@ -1,42 +1,42 @@
 ---
 # required metadata
 
-title: What are device profiles in Microsoft Intune | Intune Azure preview | Microsoft Docs
+title: What are device profiles in Microsoft Intune?titleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn about Intune device profiles and how they can help manage and protect devices in your company."
 keywords:
-author: robstackmsftms.author: robstack
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
-ms.topic: article
+ms.date: 03/16/2017
+ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
-ms.assetid: 
+ms.assetid:
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# Configure device settings and features with device profiles in Microsoft Intune
-
+# What are Microsoft Intune device profiles?
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use the Microsoft Intune **Device Configuration** workload to manage settings and features on all of the devices you manage. 
+Use the Microsoft Intune **Device configuration** workload to manage settings and features on all of the devices you manage. You'll mostly use this workload to create device profiles, which let you manage and control a whole range of different features and functionality on the devices you manage.
 
 When you open this workload, you'll see the following options:
 
 - **Overview** - This page gives you status and reports that help you monitor device configurations that you have assigned to users and devices.
 - **Manage Profiles** - This section is where you'll go to create device configuration profiles. You can find a list below of all the profile types you can create.
-- **Setup Certificate Authority** - This workflow walks you though the steps required to configure certificates. You'll need to do this if you want to work with Intune certificate profiles. For more information, see []()
+- **Setup Certificate Authority** - This workflow walks you though the steps required to configure certificates. You'll need to do this if you want to work with Intune certificate profiles.
 
 ## Getting started
 
@@ -44,8 +44,14 @@ The workflow for creating device profiles is similar for all profiles. Read [How
 
 You can manage the following capabilities on your devices:
 
+## Device features
+
+Device features let you control features on iOS and macOS devices like AirPrint, notifications, and shared device configurations.
+For more information, see [How to configure device feature settings](how-to-configure-device-features.md)
+Supports: iOS and macOS.
+
 ## Device restrictions
-Device restrictions let you control a wide range of settings and features you manage across a range of categories including security, browser, hardware, and data sharing settings. For example, you could create a device restriction profile that prevents users of iOS devices from accessing the device camera.
+Device restrictions let you control a wide range of settings on devices you manage across a range of categories including security, browser, hardware, and data sharing settings. For example, you could create a device restriction profile that prevents users of iOS devices from accessing the device camera.
 For more information, see [How to configure device restriction settings](how-to-configure-device-restrictions.md)
 Supports: Android, iOS, macOS, Windows 10 and Windows 10 Team.
 
@@ -64,15 +70,14 @@ Virtual private networks (VPNs) give your users secure remote access to your com
 For more information, see [How to configure VPN settings](how-to-configure-vpn-settings.md).
 Supports: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
 
+## Education
+Lets you configure options for the Windows Take a Test app. When you configure these options, no other apps can run on the device until the test is complete.
+For more information, see [How to configure education settings](how-to-configure-education-settings.md)
+
 ## Certificates
 This profile type lets you configure trusted, SCEP, and PKCS certificates that can be assigned to devices and used to authenticate Wi-Fi, VPN, and email profiles.
 For more information, see [How to configure certificates](how-to-configure-certificates.md)
 Supports: Android, iOS, Windows Phone 8.1, Windows 8.1 and Windows 10.
-
-## Education
-Helps you to specify the correct certificates for using iOS devices in an educational environment.
-For more information, see [How to configure Intune education settings for iOS devices](education-settings-for-ios.md)
-Supports: iOS only.
 
 ## Edition upgrade
 This profile type lets you automatically upgrade devices that run some versions of Windows 10 to a newer edition

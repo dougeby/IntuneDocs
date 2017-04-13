@@ -1,13 +1,14 @@
 ---
 # required metadata
 
-title: Intune custom settings for iOS devices | Intune Azure preview | Microsoft Docs
+title: Intune custom settings for iOS devicestitleSuffix: "Intune Azure preview"
+titleSuffix: Intune Azure preview
 description: "Intune Azure preview: Learn the settings you can use in an iOS custom profile."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +23,11 @@ ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
 ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 
 ---
 
-# Intune custom settings for iOS devices
+# Microsoft Intune custom settings for iOS devices
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -43,5 +44,3 @@ This capability allows you to deploy iOS settings that are not configurable with
 Ensure that the settings you export from the Apple Configurator tool are compatible with the version of iOS on the devices to which you deploy the iOS custom policy. For information about how incompatible settings are resolved, search for **Configuration Profile Reference** and **Mobile Device Management Protocol Reference** on the [Apple Developer](https://developer.apple.com/) website.
 
 The file you imported will be displayed in the **File contents** area of the blade.
-
-

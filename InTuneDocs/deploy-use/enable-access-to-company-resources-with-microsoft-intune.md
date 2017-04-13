@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable access to company resources | Microsoft Intune
+title: Enable access to company resources | Microsoft Docs
 description:  Wi-Fi, VPN, and email profiles work together to help your users gain access to the files and resources they need.
 keywords:
 author: robstackmsft
@@ -22,11 +22,14 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Enable access to company resources with Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune Wi-Fi, VPN, and email profiles work together to help your users gain access to the files and resources that they need to do their work wherever they are. Certificate profiles help secure that access.
 
 ## [Wi-Fi profiles](wi-fi-connections-in-microsoft-intune.md) and supported platforms

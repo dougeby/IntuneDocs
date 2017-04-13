@@ -1,11 +1,11 @@
 ---
-title: Configure certificate infrastructure for SCEP | Intune Azure preview | Microsoft Docs
+title: Configure certificate infrastructure for SCEPtitleSuffix: "Intune Azure preview"
 description: "Intune Azure preview: Learn how to configure your infrastructure before you create and deploy Intune SCEP certificate profiles."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,9 +21,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-azure
 ---
-# Configure certificate infrastructure for SCEP
+# Configure certificate infrastructure for SCEP in Microsoft Intune
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
 This topic describes what infrastructure you need in order to create and deploy SCEP certificate profiles.
 
 ### On-premises infrastructure
@@ -32,7 +34,7 @@ This topic describes what infrastructure you need in order to create and deploy 
 
 -  **Certification Authority** (CA): An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For instructions on how to set up a Certification Authority, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).
     If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
-I
+
 -  **NDES Server**: On a server that runs Windows Server 2012 R2 or later, you must setup up the Network Device Enrollment Service (NDES). Intune does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service. The NDES server must be domain joined to the domain that hosts the CA, and not be on the same server as the CA. More information about deploying the NDES server in a separate forest, isolated network or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/en-us/library/dn473016.aspx).
 
 -  **Microsoft Intune Certificate Connector**: You use the Intune admin console to download the **Certificate Connector** installer (**ndesconnectorssetup.exe**). Then you can run **ndesconnectorssetup.exe** on the computer where you want to install the Certificate Connector.
@@ -47,7 +49,7 @@ I
 
 ### Network requirements
 
-From the Internet to perimeter network, allow port 443 from all hosts/IP addressess on the internet to the NDES server.
+From the Internet to perimeter network, allow port 443 from all hosts/IP addresses on the internet to the NDES server.
 
 From the perimeter network to trusted network, allow all ports and protocols needed for domain access on the domain-joined NDES server. The NDES server needs access to the certificate servers, DNS servers, Configuration Manager servers and domain controllers.
 
@@ -86,9 +88,6 @@ Before you can configure certificate profiles you must complete the following ta
 
 Create a domain user account to use as the NDES service account. You will specify this account when you configure templates on the issuing CA before you install and configure NDES. Make sure the user has the default rights, **Logon Localy**, **Logon as a Service** and **Logon as a batch job** rights. Some organizations have hardening policies that disable those rights.
 
-
-
-
 ### Task 2 - Configure certificate templates on the certification authority
 In this task you will:
 
@@ -96,7 +95,7 @@ In this task you will:
 
 -   Publish the certificate template for NDES
 
-##### To configure the certification authority
+#### To configure the certification authority
 
 1.  Log on as an enterprise administrator.
 
@@ -111,7 +110,7 @@ In this task you will:
     -   On the **Extensions** tab, ensure the **Description of Application Policies** includes **Client Authentication**.
 
         > [!IMPORTANT]
-        > For iOS and Mac OS X certificate templates, on the **Extensions** tab, edit **Key Usage** and ensure **Signature is proof of origin** is not selected.
+        > For iOS and macOS certificate templates, on the **Extensions** tab, edit **Key Usage** and ensure **Signature is proof of origin** is not selected.
 
     -   On the **Security** tab, add the NDES service account, and give it **Enroll** permissions to the template. Intune admins who will create SCEP profiles require **Read** rights so that they can browse to the template when creating SCEP profiles.
 
@@ -121,7 +120,7 @@ In this task you will:
 3.  Review the **Validity period** on the **General** tab of the template. By default, Intune uses the value configured in the template. However, you have the option to configure the CA to allow the requester to specify a different value, which you can then set from within the Intune Administrator console. If you want to always use the value in the template, skip the remainder of this step.
 
     > [!IMPORTANT]
-    > The iOS and Mac OS X platforms always uses the value set in the template regardless of other configurations you make.
+    > iOS and macOS always use the value set in the template regardless of other configurations you make.
 
 Here are screenshots of an example template configuration.
 
@@ -144,7 +143,6 @@ To configure the CA to allow the requester to specify the validity period, on th
 
    1.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
    2.  **net stop certsvc**
-
    3.  **net start certsvc**
 
 4.  On the issuing CA, use the Certification Authority snap-in to publish the certificate template.
@@ -244,12 +242,12 @@ In this task you will:
 
 4. In IIS manager, choose **Default Web Site** -> **Request Filtering** -> **Edit Feature Setting**, and change the **Maximum URL length** and **Maximum query string** to *65534*, as shown.
 
-    ![IIS max URL and query length](\media\SCEP_IIS_max_URL.png)
+    ![IIS max URL and query length](.\media\SCEP_IIS_max_URL.png)
 
 5.  Restart the server. Running **iisreset** on the server will not be sufficient to finalize these changes.
 6. Browse to http://*FQDN*/certsrv/mscep/mscep.dll. You should see an NDES page similar to this:
 
-    ![Test NDES](\media\SCEP_NDES_URL.png)
+    ![Test NDES](.\media\SCEP_NDES_URL.png)
 
     If you get a **503 Service unavailable**, check the eventviewer. It's likely that the application pool is stopped due to a missing right for the NDES user. Those rights are described in Task 1.
 
@@ -308,22 +306,25 @@ Download, install, and configure the Certificate Connector on the NDES Server.
 
 ##### To enable support for the Certificate Connector
 
-1.  Open the [Intune administration console](https://manage.microsoft.com), click **Admin** &gt; **Certificate Connector**.
-
-2.  Click **Configure On-Premises Certificate Connector**.
-
-3.  Select **Enable Certificate Connector**, and then click **OK**.
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+4. On the **Device Configuration** blade, choose **Certification Authority**.
+5.  Select **Enable Certificate Connector**.
 
 ##### To download, install and configure the Certificate Connector
 
-1.  Open the [Intune administration console](https://manage.microsoft.com), and then click **Admin** &gt; **Mobile Device Management** &gt; **Certificate Connector** &gt; **Download Certificate Connector**.
-
-2.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**) on a Windows Server 2012 R2 server. The installer also installs the policy module for NDES and the CRP Web Service. (The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.)
+1. Sign into the Azure portal.
+2. Choose **More Services** > **Other** > **Intune**.
+3. On the **Intune** blade, choose **Configure devices**.
+4. On the **Device Configuration** blade, choose **Certification Authority**.
+5. Choose **Download Certificate Connector**.
+6.  After the download completes, run the downloaded installer (**ndesconnectorssetup.exe**) on a Windows Server 2012 R2 server. The installer also installs the policy module for NDES and the CRP Web Service. (The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.)
 
     > [!NOTE]
     > When you install NDES for standalone Intune, the CRP service automatically installs with the Certificate Connector. When you use Intune with Configuration Manager, you install the Certificate Registration Point as a separate site system role.
 
-3.  When prompted for the client certificate for the Certificate Connector, click **Select**, and select the **client authentication** certificate you installed on your NDES Server in Task 3.
+3.  When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed on your NDES Server in Task 3.
 
     After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, click **Next** to view the properties of that certificate. Then click **Next**, and then click **Install**.
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy and monitor a compliance policy | Microsoft Intune
+title: Deploy and monitor a compliance policy | Microsoft Docs
 description: Use the step-by-step instructions in this topic to deploy and monitor a device compliance policy.
 keywords:
 author: andredm7
@@ -22,11 +22,14 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: intune-classic
 
 ---
 
 # Deploy and monitor a device compliance policy in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## Deploy a compliance policy
 Deploy the compliance policy that you [created](create-a-device-compliance-policy-in-microsoft-intune.md) to one or more groups of users in your organization. When a compliance policy is deployed to a user, the user's devices are checked for compliance.
 
