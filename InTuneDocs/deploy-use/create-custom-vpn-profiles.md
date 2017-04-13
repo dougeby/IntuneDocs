@@ -57,7 +57,7 @@ Then, [deploy the policy](/intune/deploy-use/manage-settings-and-features-on-you
 ## Example URI settings
 
 These settings can be used to create a custom configuration for a VPN in a fictitious company called Contoso.
-For full details about all the settings you can use, see [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
+For full details about all the settings you can use, see [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
 
 Native Contoso VPN (IKEv2):
 ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
