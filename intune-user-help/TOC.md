@@ -1,6 +1,7 @@
 # User help for Intune
 ## [Use managed devices to get work done](use-managed-devices-to-get-work-done.md)
 ## [What information can my company see with Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+## [What happens when I reset my device?](what-happens-if-you-reset-your-device-cpwebsite.md)
 ## [Using your Android device with Intune](using-your-android-device-with-intune.md)
 ### [What happens when you enroll an Android device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Fixing common issues with Android](troubleshoot-your-device-android.md)
