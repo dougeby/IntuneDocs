@@ -54,7 +54,7 @@ From the Internet to perimeter network, allow port 443 from all hosts/IP address
 
 From the perimeter network to trusted network, allow all ports and protocols needed for domain access on the domain-joined NDES server. The NDES server needs access to the certificate servers, DNS servers, Configuration Manager servers and domain controllers.
 
-We recommend publishing the NDES server through a proxy, such as the [Azure AD application proxy](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx), or a third-party proxy.
+We recommend publishing the NDES server through a proxy, such as the [Azure AD application proxy](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/en-us/library/dn584107.aspx), or a third-party proxy.
 
 
 ### <a name="BKMK_CertsAndTemplates"></a>Certificates and Templates

@@ -58,7 +58,7 @@ You cannot rename or remove that initial domain name. However, you can add, veri
 	> [!TIP]
 	> Make sure to create a DNS alias (CNAME) for [Windows devices enrollment](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune), while making changes in your DNS hosting provider.
 
-The steps to add and verify a custom domain can also be [performed in Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
+The steps to add and verify a custom domain can also be [performed in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
 You can learn more [about your initial onmicrosoft.com domain in Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
 

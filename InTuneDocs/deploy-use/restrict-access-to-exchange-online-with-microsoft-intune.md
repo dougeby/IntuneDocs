@@ -42,7 +42,7 @@ To configure conditional access, you must:
 
 -   Have an **Office 365 subscription that includes Exchange Online (such as E3)**, and users must be licensed for Exchange Online.
 
-- Have an **Enterprise Mobility + Security (EMS) subscription** or an **Azure Active Directory (Azure AD) Premium subscription**, and users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Have an **Enterprise Mobility + Security (EMS) subscription** or an **Azure Active Directory (Azure AD) Premium subscription**, and users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/pricing/details/active-directory/).
 
 -  Consider configuring the optional **Intune service-to-service connector**, which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. You don't need to use the connector to use compliance policies or conditional access policies—but it's required to run reports that help evaluate the impact of conditional access.
 	-  Learn more about the [Intune service-to-service connector](intune-service-to-service-exchange-connector.md).
@@ -196,7 +196,7 @@ Only the groups that are targeted by the conditional access policy are evaluated
 >[!NOTE]
 > You can also create a conditional access policy in the Azure AD management console. The Azure AD management console lets you create an Intune device conditional access policy (referred to as the **device-based conditional access policy** in Azure AD), in addition to other conditional access policies like multi-factor authentication.
 
->You can also set conditional access policies for third-party enterprise apps that Azure AD supports, like Salesforce and Box. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory-connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+>You can also set conditional access policies for third-party enterprise apps that Azure AD supports, like Salesforce and Box. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory-connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **Exchange Online Policy**.

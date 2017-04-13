@@ -72,7 +72,7 @@ This article explains how to configure and deploy the Lookout for Work app for A
   4.  Add additional redirect URI: **&lt;companyportal://code/>** followed by a URLencoded version of your original redirect URI.
   5.  Add **Delegated Permissions** to your app.
 
-  For more details, see [Configure a native client application](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
+  For more details, see [Configure a native client application](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
 
 4. Upload the re-signed .ipa file as described in the [Add app for mobile devices in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) topic. Set the minimum OS version to iOS 8.0 or later.
 
