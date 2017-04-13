@@ -43,7 +43,7 @@ Two factors determine how you can simplify Windows device enrollment:
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## Enable Windows enrollment without automatic enrollment
-You can let users install and enroll their devices without Azure AD Premium automatic enrollment. Once you assign a license to users' account, the user can add that account to a Windows device and agree to enroll the device in management. If you create DNS CNAME resource records,  users connect and enroll in Intune without entering a server name.
+You can let users enroll their devices without Azure AD Premium automatic enrollment. Once you assign licenses, users can enroll after adding their work account to their personally-owned devices or joining their corporate-owned devices to your Azure AD. Creating a DNS alias (CNAME record type) makes it easier for users to enroll their devices. If you create DNS CNAME resource records, users connect and enroll in Intune without having to enter the Intune server name.
 
 **Step 1: Create CNAMEs** (optional)<br>
 Create CNAME DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
