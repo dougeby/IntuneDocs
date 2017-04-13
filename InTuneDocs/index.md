@@ -112,7 +112,7 @@ description: Learn to use Microsoft Intune.
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://docs.microsoft.com//enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">150+ licenses? Leverage your FastTrack benefits</a></h3>
+                                            <h3><a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">150+ licenses? Leverage your FastTrack benefits</a></h3>
                                             <p>Work with Microsoft specialists to access, remediate, enable, and drive usage of your services.</p>
                                         </div>
                                     </div>

@@ -120,7 +120,7 @@ Microsoft Intune supports Email, Wi-Fi and VPN profiles. Adding and deploying pr
 
 Microsoft Intune supports the deployment of Web, LOB and Public Store Apps. In addition, managing apps that have integrated the Intune SDK by associated them with MAM policies is supported. Adding and deploying apps are completed in the Intune Admin Portal, App workspace. Adding MAM policies are completed in the Intune Admin Portal, Policy workspace. Add apps as appropriate and deploy to targeted groups based on your Intune deployment use cases and requirements.
 
--   Learn more about [add and deploy applications](https://docs.microsoft.com//intune/deploy-use/deploy-apps).
+-   Learn more about [add and deploy applications](https://docs.microsoft.com/intune/deploy-use/deploy-apps).
 
 #### Task 11: Add and deploy compliance policies
 

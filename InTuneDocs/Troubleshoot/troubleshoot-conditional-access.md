@@ -67,7 +67,7 @@ These conditions can be viewed for each device in the Azure Management Portal an
 	
 		-	Devices that are in this state require the user to set a secure start-up passcode. The user will see a device notification from the Company Portal app asking to set a start-up passcode for the device. After tapping the device notification and confirming the existing PIN or password, choose the **Require PIN to start device** option on the **Secure start-up** screen. Then, tap the **Check Compliance** button for the device from the Company Portal app. The device should now be detected as encrypted.
 	
-		- 	Some device manufacturers encrypt their devices using a default PIN instead of the secret PIN set by the user. Intune recognizes encryption using the default PIN as insecure because this method of encryption can put the data on the device at risk from malicious users with physical access to the device. If this is the issue, consider using [app protection policies](https://docs.microsoft.com//intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+		- 	Some device manufacturers encrypt their devices using a default PIN instead of the secret PIN set by the user. Intune recognizes encryption using the default PIN as insecure because this method of encryption can put the data on the device at risk from malicious users with physical access to the device. If this is the issue, consider using [app protection policies](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## Policy issues
 

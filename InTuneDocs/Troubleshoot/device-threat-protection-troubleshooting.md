@@ -62,7 +62,7 @@ This could happen in either of the following scenarios:
 ### Device reported as **pending**
 
 A device is shown as  **Pending** if the end user has not opened the Lookout for work app and tapped the  **Activate** button. For more details on the device activation with Lookout for work app, see [You are prompted to install Lookout for Work on your Android device](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android) or
-[You are prompted to install Lookout for Work on your iOS device](https://docs.microsoft.com//intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)
+[You are prompted to install Lookout for Work on your iOS device](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)
 
 ## Device whos active, but has no device ID
 In the Lookout MTP console, if an active device has no device ID then the device user is not in the enrollment group. A device can get into this state is if the device user has been removed from the enrollment group or the enrollment group has been removed.
@@ -90,8 +90,8 @@ If the new user is in an  Lookout MTP enrollment group, the device will appear o
 ## Compliance remediation workflows
 - [You are prompted to install Lookout for Work on your Android device]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 - [You need to resolve a threat that Lookout for Work found on your Android device](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-- [You need to resolve a threat that Lookout for Work found on your iOS device](https://docs.microsoft.com//intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
+- [You need to resolve a threat that Lookout for Work found on your iOS device](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### See also
-[Set up you subscription with Lookout MTP](https://docs.microsoft.com//intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
+[Set up you subscription with Lookout MTP](https://docs.microsoft.com/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)

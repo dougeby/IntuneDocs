@@ -90,6 +90,6 @@ Learn more about [Certificate profiles](secure-resource-access-with-certificate-
 Wi-Fi profiles managed by Android for Work are removed when the device is retired from Intune and the work profile is deleted. Learn more about [Wi-Fi profiles](wi-fi-connections-in-microsoft-intune.md).
 
 ## Next steps
-[Enabling Android for Work enrollment](https://docs.microsoft.com//intune/deploy-use/set-up-android-for-work)
+[Enabling Android for Work enrollment](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
-[Deploying apps for Android for Work](https://docs.microsoft.com//intune/deploy-use/android-for-work-apps)
+[Deploying apps for Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps)

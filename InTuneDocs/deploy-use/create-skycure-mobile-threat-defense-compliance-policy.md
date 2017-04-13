@@ -36,7 +36,7 @@ Intune with Skycure Mobile Threat Defense lets you detect threats on mobile devi
 
 Prerequisites for compliance policy with Skycure device threat protection:
 
--   [Setup Skycure integration with Intune](https://docs.microsoft.com//intune/deploy-use/setup-the-skycure-integration-with-Intune)
+-   [Setup Skycure integration with Intune](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
 -   [Enable the Skycure connection in Intune](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
