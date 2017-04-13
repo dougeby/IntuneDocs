@@ -64,7 +64,7 @@ If a condition isn't met, the user sees one of the following messages when they 
 
 -   If the device isn't compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website, where they can find information about the problem and how to remediate it.
 
-**Conditional access doesn't apply to external sharing**. To learn how to prevent external sharing in your tenant or site collection, see [Manage external sharing for your SharePoint Online environment](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
+**Conditional access doesn't apply to external sharing**. To learn how to prevent external sharing in your tenant or site collection, see [Manage external sharing for your SharePoint Online environment](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
 >[!NOTE]
 >If you enable conditional access for SharePoint Online, we recommend that you disable the domain on the list, as described in the [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx) topic.  

@@ -75,7 +75,7 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 **What are the additional requirements to use the [Word, Excel, & PowerPoint](https://products.office.com/business/office) apps?**
 
-  1. The end-user must have a license for [Office 365 Business or Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) linked to their Azure Active Directory account. The subscription must include the Office apps on mobile devices and a cloud storage account with [OneDrive for Business](https://onedrive.live.com/about/business/). Office 365 licenses can be assigned in the [Office portal](http://portal.office.com) following these [instructions](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).
+  1. The end-user must have a license for [Office 365 Business or Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) linked to their Azure Active Directory account. The subscription must include the Office apps on mobile devices and a cloud storage account with [OneDrive for Business](https://onedrive.live.com/about/business/). Office 365 licenses can be assigned in the [Office portal](http://portal.office.com) following these [instructions](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
   2. The end-user must have the [OneDrive](https://onedrive.live.com/about/) app installed to their device and sign in with their AAD account.
 
