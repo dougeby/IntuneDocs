@@ -8,7 +8,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/13/2017
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -91,6 +91,9 @@ Use this remote action to display the location of a lost or stolen iOS device on
 1.	On the properties blade for an iOS device, choose **More** > **Locate device**.
 2.	After the device has been located, it's location is displayed on the **Locate device** blade. 
 	![Locate device blade](./media/locate-device.png)
+
+>[!NOTE]
+>For privacy purposes, the distance you can zoom into the map is limited.
 
 ### **Restart**
 Causes the device to restart. The device owner is not automatically notified of the restart, therefore might lose work.
