@@ -133,7 +133,7 @@ If you want to receive email alerts for threats, sign in to the [Lookout console
 If you no longer want to receive email notifications, set the notifications to **OFF** and save your changes.
 
 ### Configure threat classification
-Lookout Mobile Threat Defense classifies mobile threats of various types. The [Lookout threat classifications](http://personal.support.lookout.com/hc/en-us/articles/114094130693) have default risk levels associated with them. These can be changed at any time to suit your company requirements.
+Lookout Mobile Threat Defense classifies mobile threats of various types. The [Lookout threat classifications](http://personal.support.lookout.com/hc/articles/114094130693) have default risk levels associated with them. These can be changed at any time to suit your company requirements.
 
 ![screenshot of the policy page showing threat and classifications](../media/mtp/lookout-mtp-threat-classification.png)
 

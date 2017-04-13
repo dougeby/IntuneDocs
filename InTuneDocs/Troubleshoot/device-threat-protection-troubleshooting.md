@@ -41,7 +41,7 @@ Lookout MTP only allows users from a configured Azure AD group to access the ser
 
 * Email: enterprisesupport@lookout.com
 * Login to the  [MTP  Console](http://aad.lookout.com), and navigate to the **Support** module.
-* Go to:  https://enterprise.support.lookout.com/hc/en-us/requests and make a support request.
+* Go to: https://enterprise.support.lookout.com/hc/requests and make a support request.
 
 ## Unable to sign in
 You see the following error when the Azure AD global admin user has not accepted the initial Lookout setup.
