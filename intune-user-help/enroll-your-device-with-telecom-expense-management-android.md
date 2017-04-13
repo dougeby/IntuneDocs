@@ -2,12 +2,12 @@
 # required metadata
 
 title: Enroll your Android device in telecom expense management with Intune
-description:
+description: Learn
 keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/03/2017
+ms.date: 04/13/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ searchScope:
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: 
 #audience:
 #ms.devlang:
 ms.reviewer: sumitp
