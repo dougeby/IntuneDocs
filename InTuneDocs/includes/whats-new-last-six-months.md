@@ -366,7 +366,7 @@ For details, see [Use custom policies to allow and block apps for Samsung KNOX d
 __New apps compatible with mobile application management (MAM) policies__
 The Yammer app for [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) and [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) is now compatible with [Intune mobile application management (MAM) policies](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), whether or not the device is enrolled.
 
-For a full list of MAM compatible apps, see the [Microsoft Intune application partners](https://www.microsoft.comcloud-platform/microsoft-intune-partners) site.
+For a full list of MAM compatible apps, see the [Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) site.
 <!--- TFS 1252335 & 1252336 checked--->
 
 __Intune Viewer apps__

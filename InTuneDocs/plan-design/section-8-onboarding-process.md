@@ -66,7 +66,7 @@ Here's an overview of each task when implementing Intune.
 
 As identified in the previous requirements section, an EMS or Intune subscription is required. If your organization does not have an EMS or Intune subscription, please contact Microsoft or your Microsoft Account Team regarding your interest in purchasing Enterprise Mobility + Security (EMS) or Intune.
 
--   Learn more about [how to buy Microsoft Intune](https://www.microsoft.comcloud-platform/microsoft-intune-pricing).
+-   Learn more about [how to buy Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
 #### Task 2: Add Office 365 subscription
 
