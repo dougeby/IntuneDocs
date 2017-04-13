@@ -46,7 +46,7 @@ When you migrate from classic Intune to the Azure Portal, you might see a new gr
 
 In preparation for migration, your groups are copied from Intune to Azure AD. Any further changes you make in the classic Intune portal will be updated in the Azure AD group. However, any changes made in Azure AD will not be synchronized back to the classic Intune console. This might result in your migration to the Azure portal failing, and delays to your migration.
 
-##Compliance policies from Intune will not show up in new console. 
+## Compliance policies from Intune will not show up in new console. 
 
 Any compliance policies you created in the classic Intune portal are migrated, but are not displayed in the Azure portal. This is because of design change in the Azure portal. Compliance policies you created in the classic Intune portal are still enforced, but you must view and edit them in the classic portal.
 Additionally, new compliance policies you create in the Azure portal will not be visible in the classic portal.
