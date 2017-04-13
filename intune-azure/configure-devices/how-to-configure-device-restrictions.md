@@ -7,7 +7,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,6 +58,7 @@ Use the information in this topic to learn the basics about configuring device r
 	- [Windows 8.1](device-restrictions-for-windows-8-1.md)
 	- [Windows 10 settings](device-restrictions-for-windows-10.md)
 	- [Windows 10 Team settings](device-restrictions-for-windows-10-team.md)
+	- [Android for Work settings](device-restrictions-for-afw.md)
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.

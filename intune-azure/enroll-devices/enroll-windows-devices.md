@@ -6,7 +6,7 @@ description: "Intune Azure preview: Enable Intune mobile device management (MDM)
 keywords:
 author: nathbarn
 manager: nathbarn
-ms.date: 03/21/17
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,8 @@ ms.custom: intune-azure
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 This topic helps IT administrators simplify Windows enrollment for their users.  Windows devices can be enrolled without any additional steps, but you can make enrollment easier for users.
+
+Devices that run the Windows 10 Creators Update, and are Azure Active Directory domain-joined, are now supported for multi-user management by Intune. This means that when different users log onto the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name.
 
 Two factors determine how you'll enroll Windows devices:
 - **Do you use Azure Active Directory Premium?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) is included with Enterprise Mobility + Security and other licensing plans.
