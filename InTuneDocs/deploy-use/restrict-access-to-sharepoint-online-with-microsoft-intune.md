@@ -64,7 +64,7 @@ If a condition isn't met, the user sees one of the following messages when they 
 
 -   If the device isn't compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website, where they can find information about the problem and how to remediate it.
 
-**Conditional access doesn't apply to external sharing**. To learn how to prevent external sharing in your tenant or site collection, see [Manage external sharing for your SharePoint Online environment](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
+**Conditional access doesn't apply to external sharing**. To learn how to prevent external sharing in your tenant or site collection, see [Manage external sharing for your SharePoint Online environment](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
 
 >[!NOTE]
 >If you enable conditional access for SharePoint Online, we recommend that you disable the domain on the list, as described in the [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx) topic.  
@@ -97,7 +97,7 @@ The following are supported:
   >[!NOTE]
   >Conditional access is not supported on PCs that are running the Intune computer client.
 
-[Office 365 modern authentication must be enabled](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) and have all the latest Office updates.
+[Office 365 modern authentication must be enabled](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) and have all the latest Office updates.
 
 Modern authentication brings sign-in based on Active Directory Authentication Library (ADAL) to Office 2013 Windows clients and enables better security, like **multi-factor authentication** and **certificate-based authentication**.
 

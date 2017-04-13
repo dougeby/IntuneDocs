@@ -87,7 +87,7 @@ You can protect access to Exchange Online email from **Outlook** and other **app
 **Modern authentication** brings sign-in based on Active Directory Authentication Library (ADAL) to Microsoft Office clients.
 
 -   The ADAL-based authentication enables Office clients to engage in browser-based authentication (also known as passive authentication). To authenticate, a user is directed to a sign-in web page.
--   This new sign-in method enables better security like **multi-factor authentication** and **certificate-based authentication**. For more detailed information, see [How modern authentication works](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). You can set up ADFS claim rules to block non-modern authentication protocols. Detailed instructions are provided in [Scenario 3: Block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
+-   This new sign-in method enables better security like **multi-factor authentication** and **certificate-based authentication**. For more detailed information, see [How modern authentication works](https://support.office.com/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). You can set up ADFS claim rules to block non-modern authentication protocols. Detailed instructions are provided in [Scenario 3: Block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
 
 You can protect access to **Outlook Web Access (OWA)** on Exchange Online when a user accesses it from a browser on **iOS** and **Android** devices. Access is only allowed from supported browsers on compliant devices:
 
@@ -127,7 +127,7 @@ You can set up conditional access for PCs that run Office desktop applications t
   >[!NOTE]
     >Conditional access isn't supported on PCs that are running the Intune computer client.
 
--   [Office 365 modern authentication must be enabled](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) and have all the latest Office updates.
+-   [Office 365 modern authentication must be enabled](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) and have all the latest Office updates.
 
     Modern authentication brings sign-in based on Active Directory Authentication Library (ADAL) to Office 2013/Windows clients. It enables better security like **multi-factor authentication** and **certificate-based authentication**.
 
