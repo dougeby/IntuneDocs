@@ -30,7 +30,13 @@ ms.custom: intune-classic
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. With Intune, you can:
+Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. Intune for Education is designed to accomplish this task while meeting the specific needs of schools and school districts.
+
+Intune for Education currently lets you manage Windows 10 devices with MDM capabilities, with a selection of all policies available in Intune. Intune can manage additional platforms, such as iOS and Android, and is designed to let you access the full set of policies in the same console.
+
+
+
+ With Intune, you can:
 * Manage the mobile devices your workforce uses to access company data.
 * Manage the mobile apps your workforce uses.
 * Protect your company information by helping to control the way your workforce accesses and shares it.
