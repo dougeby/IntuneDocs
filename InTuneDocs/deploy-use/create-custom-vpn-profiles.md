@@ -37,7 +37,7 @@ You can use Intune custom configuration polices to create VPN profiles for:
 * Android for Work devices
 * Enrolled devices that run Windows 8.1 and later
 * Devices that run Windows Phone 8.1 and later
-* Enrolled devices that run Windows 10 desktop 
+* Enrolled devices that run Windows 10 desktop
 * Device that run Windows 10 Mobile
 
 This type of policy can be useful when the standard Intune VPN policies do not contain the settings you want to use.
@@ -115,7 +115,7 @@ Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
 For any questions about how these settings should be used or more details about what they do, customers should refer to the configuration service provider (CSP) documentation:
-https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
+https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## URI settings for Android per-app VPN on PulseSecure
 ### CUSTOM URI FOR PACKAGE LIST
