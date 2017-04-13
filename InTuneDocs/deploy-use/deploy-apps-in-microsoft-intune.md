@@ -52,7 +52,7 @@ In this procedure, you'll deploy an app to selected groups of devices or users.
 
 5. If the app you are deploying can be configured by a mobile application management policy, the **Mobile App Management** page is displayed. On this page, choose the mobile application management policy that you want to associate with this app.
 
-	[See which Microsoft apps are compatible with mobile application management policies.](https://www.microsoft.comserver-cloud/products/microsoft-intune/partners.aspx)
+	[See which Microsoft apps are compatible with mobile application management policies.](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. If the app you are deploying is compatible with Intune VPN profiles, the **VPN Profile** page is displayed. On this page, you can choose to associate iOS apps with a VPN profile that you have deployed. The VPN connection automatically opens when the app is launched. To make a VPN profile available, it must have the **Per-app VPN** profile setting enabled.
  For information about how to configure VPN profiles, including information about how to associate profiles with apps, see [VPN connections in Microsoft Intune](vpn-connections-in-microsoft-intune.md).
