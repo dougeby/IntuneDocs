@@ -75,11 +75,11 @@ Please review the [definition of a support incident](#definition-of-a-support-in
 
 1.  Sign in to the [Office 365 admin center](https://portal.office.com) with your Intune credentials.
 
-	If you are a Premier Support customer, you should open an Intune support ticket on the [Premier support page](https://support.microsoft.com/en-us/premier/contacts) instead.
+	If you are a Premier Support customer, you should open an Intune support ticket on the [Premier support page](https://support.microsoft.com/premier/contacts) instead.
 
 	>[!NOTE]
 	>
-	>Premier Support customers should open an Intune support ticket on the [Premier support page](https://support.microsoft.com/en-us/premier/contacts).
+	>Premier Support customers should open an Intune support ticket on the [Premier support page](https://support.microsoft.com/premier/contacts).
 
 2.  Choose the **Admin** tile.
 3.  On the left, under **Support**, choose **Support** to open a ticket.
