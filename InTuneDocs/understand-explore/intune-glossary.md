@@ -128,7 +128,7 @@ ms.custom: intune-classic
 |Remote lock|An Intune feature that lets you [lock supported devices](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune), even if you are not in possession of the device.|
 |Reports|Intune provides a range of [built-in reports](/intune/deploy-use/understand-microsoft-intune-operations-by-using-reports) that give you information about the devices you manage.|
 |Required install|When you deploy an app with this action, it is installed on the device with [no user intervention](/intune/deploy-use/deploy-apps) (although for some platforms, the end user might have to accept the installation).|
-|Requirements|An [app deployment operation](/en-us/intune/deploy-use/add-apps) that lets you select the requirements that must be met on a device before the app is installed. For example, you could specify the OS version of iOS that must be installed before the app gets installed.|
+|Requirements|An [app deployment operation](/intune/deploy-use/add-apps) that lets you select the requirements that must be met on a device before the app is installed. For example, you could specify the OS version of iOS that must be installed before the app gets installed.|
 
 ## S
 |||
