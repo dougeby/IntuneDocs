@@ -42,7 +42,7 @@ Using Apple Configurator, you can reset an iOS device to factory settings and pr
 
 - Ensure that you have physical access to iOS devices&mdash;devices must be reset to factory settings without password protection
 
-- Get device serial numbers&mdash;see [How to get an iOS serial number](https://support.apple.com/en-us/HT204308)
+- Get device serial numbers&mdash;see [How to get an iOS serial number](https://support.apple.com/HT204308)
 
 - Have USB connection cables on hand
 
