@@ -68,7 +68,7 @@ ms.custom: intune-classic
 |||
 |-|-|
 |Email profile|This policy can be used to set up [email access settings](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) for specific email clients on mobile devices minimizing the amount of setup the end user has to do.|
-|EMS|Microsoft Enterprise Mobility + Security (formerly Enterprise Mobility Suite) keeps your company data protected while enabling your users to [access the apps and content they need](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
+|EMS|Microsoft Enterprise Mobility + Security (formerly Enterprise Mobility Suite) keeps your company data protected while enabling your users to [access the apps and content they need](https://www.microsoft.comcloud-platform/enterprise-mobility).|
 |End user|[Users of devices like phones and PCs](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) that are managed using Intune.|
 |Enroll|Microsoft Intune uses [enrollment](/intune/deploy-use/enroll-devices-in-microsoft-intune) to bring devices into management and allow access to resources.|
 

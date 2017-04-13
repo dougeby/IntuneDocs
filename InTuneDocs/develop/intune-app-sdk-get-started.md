@@ -42,14 +42,14 @@ You *do not need* to register your app. For internal line-of-business apps, the 
 
 You _**must**_ first register your app with Microsoft Intune and agree to the registration terms. IT administrators can then apply app protection policy to the enlightened app, which will be listed as an Intune app partner.
 
-Until registration has been finished and confirmed by the Microsoft Intune team, Intune administrators will not have the option to apply app protection policy to your app's deep link. Microsoft will also add your app to its [Microsoft Intune Partners page](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). There, the app's icon will be displayed to show that it supports Intune app protection policies.
+Until registration has been finished and confirmed by the Microsoft Intune team, Intune administrators will not have the option to apply app protection policy to your app's deep link. Microsoft will also add your app to its [Microsoft Intune Partners page](https://www.microsoft.comcloud-platform/microsoft-intune-apps). There, the app's icon will be displayed to show that it supports Intune app protection policies.
 
 To begin the registration process, fill out the [Microsoft Intune App Partner Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u).
 
 We will use the email addresses listed in your questionnaire response to reach out and continue the registration process. Additionally, we use your registration email address to contact you if we have any concerns.
 
 > [!NOTE]
-> All information collected in the questionnaire and through email correspondence with the Microsoft Intune team will honor the [Microsoft Privacy Statement](https://www.microsoft.com/en-us/privacystatement/default.aspx).
+> All information collected in the questionnaire and through email correspondence with the Microsoft Intune team will honor the [Microsoft Privacy Statement](https://www.microsoft.comprivacystatement/default.aspx).
 
 **What to expect in the registration process**:
 
@@ -57,7 +57,7 @@ We will use the email addresses listed in your questionnaire response to reach o
 
 2. After we receive all necessary information from you, we will send you the Microsoft Intune App Partner Agreement to sign. This agreement describes the terms that your company must accept before it becomes a Microsoft Intune app partner.
 
-3. You will be notified when your app is successfully registered with the Microsoft Intune service and when your app is featured on the [Microsoft Intune partners](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) site.
+3. You will be notified when your app is successfully registered with the Microsoft Intune service and when your app is featured on the [Microsoft Intune partners](https://www.microsoft.comcloud-platform/microsoft-intune-apps) site.
 
 4. Finally, your app's deep link will be added to the next monthly Intune Service update. For example, if the registration information is finished in July, the deep link will be supported in mid-August.
 

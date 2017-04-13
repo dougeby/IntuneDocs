@@ -52,7 +52,7 @@ Use an external link when you have a:
 
 Apps based on external links are not stored in your Intune cloud storage space.
 ### **Managed iOS app from the app store**
-You can use managed iOS apps to manage and deploy iOS apps that are free of charge from the app store. You can also use managed iOS apps to associate [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) with [compatible apps](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) and review their status in the administrator console.<br /><br />Managed iOS apps are not stored in your Intune cloud storage space.
+You can use managed iOS apps to manage and deploy iOS apps that are free of charge from the app store. You can also use managed iOS apps to associate [mobile application management policies](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) with [compatible apps](https://www.microsoft.comserver-cloud/products/microsoft-intune/partners.aspx) and review their status in the administrator console.<br /><br />Managed iOS apps are not stored in your Intune cloud storage space.
 
 > [!TIP]
 > Options for mobile devices are not available until you [set the MDM authority](prerequisites-for-enrollment.md) to Intune.

@@ -42,7 +42,7 @@ To configure conditional access, you must:
 
 -   Have an **Office 365 subscription that includes Exchange Online (such as E3)**, and users must be licensed for Exchange Online.
 
-- Have an **Enterprise Mobility + Security (EMS) subscription** or an **Azure Active Directory (Azure AD) Premium subscription**, and users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Have an **Enterprise Mobility + Security (EMS) subscription** or an **Azure Active Directory (Azure AD) Premium subscription**, and users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.comcloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  Consider configuring the optional **Intune service-to-service connector**, which connects [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] to Exchange Online and helps you manage device information through the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] console. You don't need to use the connector to use compliance policies or conditional access policies—but it's required to run reports that help evaluate the impact of conditional access.
 	-  Learn more about the [Intune service-to-service connector](intune-service-to-service-exchange-connector.md).
