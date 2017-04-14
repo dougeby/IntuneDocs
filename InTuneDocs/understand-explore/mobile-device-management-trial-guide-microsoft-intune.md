@@ -48,8 +48,8 @@ You can do everything in the trial version that you can do in a subscription ver
 ## What's not covered
 |If you're interested in |Read this |
 |------------------------|----------|
-|MDM in a non-test environment | [Getting started](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
-|MDM with Intune and System Center Configuration Manager | [Hybrid mobile device management](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) |
+|MDM in a non-test environment | [Getting started](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|MDM with Intune and System Center Configuration Manager | [Hybrid mobile device management](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 Because the above guides help you set up Intune in production environments, they are longer, with many more decision points you need to work through than in the evaluation guide.
 
@@ -66,7 +66,7 @@ The first step you need to take to manage mobile devices with Intune is to set y
 
 If you are using Intune standalone, as this trial assumes you are, or if you are using Intune as part of an Enterprise Mobility + Security (EMS) subscription, you need to set Intune to be your mobile device management authority. That is, you designate Intune to be the service you use to manage mobile devices in your organization.
 
-Customers who want to use Intune with System Center Configuration Manager to manage mobile devices need to decide whether to use Intune or Configuration Manager as their mobile device management authority. This is an important decision to make in a production environment because it is currently very difficult to change the setting once you make it, but is beyond the scope of this evaluation guide. To learn more about the implications of setting either Intune or Configuration Manager as your MDM authority, see [Choose between standalone Intune and hybrid mobile device management](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Customers who want to use Intune with System Center Configuration Manager to manage mobile devices need to decide whether to use Intune or Configuration Manager as their mobile device management authority. This is an important decision to make in a production environment because it is currently very difficult to change the setting once you make it, but is beyond the scope of this evaluation guide. To learn more about the implications of setting either Intune or Configuration Manager as your MDM authority, see [Choose between standalone Intune and hybrid mobile device management](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 We will set Intune as the MDM authority for the trial; this will not affect your production environment unless you decide to use your trial for your production environment.
 
@@ -91,7 +91,7 @@ Download the APNs (.pem) certificate, and save the file locally. This Apple ID m
 3.	**Add the APNs certificate to Intune**<BR/>
 In the Microsoft Intune administration console, go to **Administration** > **Mobile Device Management** > **iOS and Mac OS X** > **Upload an APNs Certificate**, and then choose **Upload the APNs certificate**. Go to the certificate (.pem) file, choose **Open**, and then enter your Apple ID. With the APNs certificate. Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices.
 4.	**Tell your users how to enroll their devices to get access to company resources.**<br/>
-For end-user enrollment instructions, see [Enroll your iOS device in Intune](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-ios) and [Enroll your Mac OS X device in Intune](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-mac-os-x). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
+For end-user enrollment instructions, see [Enroll your iOS device in Intune](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-ios) and [Enroll your Mac OS X device in Intune](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-mac-os-x). The enrollment process tells users what they can expect, and what IT administrators can and can't see on their devices.
 
 
 ### Learn more about device enrollment

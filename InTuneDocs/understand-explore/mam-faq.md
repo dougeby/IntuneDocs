@@ -37,7 +37,7 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 **What is MAM?** [Intune mobile application management](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md) refers to the suite of Intune management features that lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
 
-**What are the benefits of MAM app protection?** MAM protects an organization's data within an application. With MAM-WE, a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in bring-your-own-device (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, are able to be managed by Intune MAM. See the official list of [Intune-enlightened apps](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) available for public use.
+**What are the benefits of MAM app protection?** MAM protects an organization's data within an application. With MAM-WE, a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in bring-your-own-device (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, are able to be managed by Intune MAM. See the official list of [Intune-enlightened apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) available for public use.
 
 **What device configurations does MAM support?** Intune MAM supports two configurations:
   1. **Intune MDM + MAM**: This is the first configuration supported by MAM when it first launched. IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune standalone console at http://manage.microsoft.com.
@@ -53,7 +53,7 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 ## Apps you can manage with app protection policies
 
-**Which apps can be managed by app protection policies?** Any app that has been enlightened by the [Intune App SDK](../develop/intune-app-sdk.md) or wrapped by the [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) can be managed using Intune app protection policies. See the official list of [Intune-enlightened apps](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) available for public use.
+**Which apps can be managed by app protection policies?** Any app that has been enlightened by the [Intune App SDK](../develop/intune-app-sdk.md) or wrapped by the [Intune App Wrapping Tool](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) can be managed using Intune app protection policies. See the official list of [Intune-enlightened apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) available for public use.
 
 **What are the baseline requirements to use app protection policies on an Intune-enlightened app?**
   1. The end-user must have an Azure Active Directory (AAD) account. See [Add users and give administrative permission to Intune](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md) to learn how to create Intune users in Azure Active Directory.
@@ -64,18 +64,18 @@ This article provides answers to some frequently asked questions on Intune mobil
 
   4. The end-user must sign into the app using his or her AAD account.
 
-**What are the additional requirements to use the [Outlook mobile app](https://www.microsoft.com/en-us/outlook-com/mobile/)?**
+**What are the additional requirements to use the [Outlook mobile app](https://www.microsoft.com/outlook-com/mobile/)?**
 
   1. The end-user must have the Outlook mobile app installed to their device.
 
-  2. The end-user must have an [Office 365 Exchange Online](https://products.office.com/en-us/exchange/exchange-online) mailbox and license linked to their Azure Active Directory account.
+  2. The end-user must have an [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) mailbox and license linked to their Azure Active Directory account.
 
   >[!NOTE]
   > The Outlook mobile app currently only supports Microsoft Exchange Online and does not support Exchange on-premises or Exchange in Office 365 Dedicated.
 
 **What are the additional requirements to use the [Word, Excel, & PowerPoint](https://products.office.com/business/office) apps?**
 
-  1. The end-user must have a license for [Office 365 Business or Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) linked to their Azure Active Directory account. The subscription must include the Office apps on mobile devices and a cloud storage account with [OneDrive for Business](https://onedrive.live.com/about/business/). Office 365 licenses can be assigned in the [Office portal](http://portal.office.com) following these [instructions](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).
+  1. The end-user must have a license for [Office 365 Business or Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) linked to their Azure Active Directory account. The subscription must include the Office apps on mobile devices and a cloud storage account with [OneDrive for Business](https://onedrive.live.com/about/business/). Office 365 licenses can be assigned in the [Office portal](http://portal.office.com) following these [instructions](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
   2. The end-user must have the [OneDrive](https://onedrive.live.com/about/) app installed to their device and sign in with their AAD account.
 
