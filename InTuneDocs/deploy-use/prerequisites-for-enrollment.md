@@ -129,9 +129,9 @@ You use the **Office 365 management portal** to manually add cloud-based users a
 
 ### To synchronize on-premises users with Azure AD
 
-1. [Add the UPN suffix](https://technet.microsoft.com/en-us/library/cc772007.aspx) for your custom domain in your on-premises Active Directory.
+1. [Add the UPN suffix](https://technet.microsoft.com/library/cc772007.aspx) for your custom domain in your on-premises Active Directory.
 2. Set the new UPN suffix for the on-premises users that you plan to import.
-3. Run [Azure AD Connect sync](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) to integrate your on-premises users with Azure AD.
+3. Run [Azure AD Connect sync](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) to integrate your on-premises users with Azure AD.
 4. Once the user account information has successfully synchronized, you can then assign Microsoft Intune licenses using the [Office 365 Management Portal](https://portal.office.com/Admin/Default.aspx).
 
 ## Step 6: Enable enrollment
