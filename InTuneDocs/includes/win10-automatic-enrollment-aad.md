@@ -1,6 +1,6 @@
 ## Enable Windows 10 automatic enrollment
 
-utomatic enrollment lets users enroll their Windows 10 devices in Intune when adding their work account to their personally-owned devices or joining their corporate-owned devices to your Azure Active Directory. In the background, the user's device registers and joins Azure Active Directory. Once registered, the device is managed with Intune.
+Automatic enrollment lets users enroll their Windows 10 devices in Intune when adding their work account to their personally-owned devices or joining their corporate-owned devices to your Azure Active Directory. In the background, the user's device registers and joins Azure Active Directory. Once registered, the device is managed with Intune.
 
 **Prerequisites**
 - Azure Active Directory Premium subscription ([trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845))
