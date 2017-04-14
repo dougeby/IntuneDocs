@@ -3,12 +3,12 @@
 
 title: Configure Windows 10 edition upgrades with Intune
 titleSuffix: "Intune Azure preview"
-description: "Intune Azure preview: Learn how to use Intune to upgrade Windows 10 devices you manage."
+description: "Intune Azure preview: Learn how to use Intune to upgrade Windows 10 devices you manage to a different edition."
 keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use the information in this topic to learn how to configure a Windows 10 edition upgrade profile. This profile lets you automatically upgrade devices that run one of the following Windows 10 versions to a newer edition:
+Use the information in this topic to learn how to configure a Windows 10 edition upgrade profile. This profile lets you automatically upgrade devices that run one of the following Windows 10 versions to a different edition:
 
 - Windows 10 Home
 - Windows 10 Holographic
