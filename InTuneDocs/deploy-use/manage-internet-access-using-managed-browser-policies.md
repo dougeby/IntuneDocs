@@ -45,7 +45,7 @@ You can create managed browser policies for the following device types:
 
 -   Devices that run iOS 8.0 and later
 
-The Intune managed browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+The Intune managed browser supports opening web content from [Microsoft Intune application partners](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx).
 
 ## Create a managed browser policy
 

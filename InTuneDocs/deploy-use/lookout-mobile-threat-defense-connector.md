@@ -48,7 +48,7 @@ If the device is found non-compliant, access to resources like Exchange Online a
 The following platforms are supported for Lookout when enrolled in Intune:
 * **Android 4.1 and later**
 * **iOS 8 and later**
-For additional information about platform and language support, visit the [Lookout website](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
+For additional information about platform and language support, visit the [Lookout website](https://personal.support.lookout.com/hc/articles/114094140253).
 
 ## Prerequisites:
 * Microsoft Intune subscription
