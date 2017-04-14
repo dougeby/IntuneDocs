@@ -45,7 +45,7 @@ When a user attempts to connect to a file by using a supported app such as OneDr
 
 **Before** configuring a conditional access policy for SharePoint Online, you must:
 - Have a **SharePoint Online subscription**, and users must be licensed for SharePoint Online.
-- Have an **Enterprise Mobility + Security (EMS) subscription** or an **Azure Active Directory (Azure AD) Premium subscription**, and users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Have an **Enterprise Mobility + Security (EMS) subscription** or an **Azure Active Directory (Azure AD) Premium subscription**, and users must be licensed for EMS or Azure AD. For more details, see the [Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or the [Azure Active Directory pricing page](https://azure.microsoft.com/pricing/details/active-directory/).
 
 
   To connect to the required files, a device must be:
@@ -64,10 +64,10 @@ If a condition isn't met, the user sees one of the following messages when they 
 
 -   If the device isn't compliant, a message is displayed that directs the user to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] Company Portal website, where they can find information about the problem and how to remediate it.
 
-**Conditional access doesn't apply to external sharing**. To learn how to prevent external sharing in your tenant or site collection, see [Manage external sharing for your SharePoint Online environment](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
+**Conditional access doesn't apply to external sharing**. To learn how to prevent external sharing in your tenant or site collection, see [Manage external sharing for your SharePoint Online environment](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
 >[!NOTE]
->If you enable conditional access for SharePoint Online, we recommend that you disable the domain on the list, as described in the [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) topic.  
+>If you enable conditional access for SharePoint Online, we recommend that you disable the domain on the list, as described in the [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx) topic.  
 
 ## Support for mobile devices
 The following are supported:
@@ -89,7 +89,7 @@ The following are supported:
 > [!NOTE]
 >To use conditional access with Windows 10 PCs, you must update those PCs with the Windows 10 Anniversary Update.
 
-  - You must set up domain-joined PCs to [automatically register](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory. The Azure AD Device Registration service will be activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration service will not see registered devices in on-premises Active Directory.
+  - You must set up domain-joined PCs to [automatically register](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) with Azure Active Directory. The Azure AD Device Registration service will be activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration service will not see registered devices in on-premises Active Directory.
 
   - If the policy is set to require a domain join and the PC isn't domain joined, a message is displayed to contact the IT admin.
 
@@ -97,7 +97,7 @@ The following are supported:
   >[!NOTE]
   >Conditional access is not supported on PCs that are running the Intune computer client.
 
-[Office 365 modern authentication must be enabled](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) and have all the latest Office updates.
+[Office 365 modern authentication must be enabled](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) and have all the latest Office updates.
 
 Modern authentication brings sign-in based on Active Directory Authentication Library (ADAL) to Office 2013 Windows clients and enables better security, like **multi-factor authentication** and **certificate-based authentication**.
 
@@ -134,7 +134,7 @@ Next, configure the policy to require that only managed and compliant devices ca
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> You can also create a conditional access policy for Intune devices in the Azure AD management console (the policy is referred to as the **device-based conditional access policy** in Azure AD). In addition, you can create other conditional access policies like multi-factor authentication. You can also set conditional access policies for third-party enterprise apps that Azure AD supports, like Salesforce and Box. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+> You can also create a conditional access policy for Intune devices in the Azure AD management console (the policy is referred to as the **device-based conditional access policy** in Azure AD). In addition, you can create other conditional access policies like multi-factor authentication. You can also set conditional access policies for third-party enterprise apps that Azure AD supports, like Salesforce and Box. For more details, see [How to set Azure Active Directory device-based conditional access policy for access control to Azure Active Directory connected applications](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Policy** > **Conditional Access** > **SharePoint Online Policy**.

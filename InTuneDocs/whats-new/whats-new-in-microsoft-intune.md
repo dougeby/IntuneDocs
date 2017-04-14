@@ -121,7 +121,7 @@ Beginning in Spring 2017, Apple has announced that they will enforce specific re
 
 ### See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Cloud Platform roadmap](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Cloud Platform roadmap](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [What's new in the Azure preview](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [What's new in the Company Portal UI](https://docs.microsoft.com/intune/whats-new/whats-new-in-company-portal-ui)
 * [What's new archive](whats-new-archive.md)
