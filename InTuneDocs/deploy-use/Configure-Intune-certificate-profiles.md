@@ -112,7 +112,7 @@ After you create a Trusted CA certificate profile, create SCEP or .PFX certifica
 
 	>     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
 
-	> In this example, the admin created a subject name format that, in addition to the `CN` and `E` variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) lists supported strings.
+	> In this example, the admin created a subject name format that, in addition to the `CN` and `E` variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) lists supported strings.
 
 4.  Choose **Save Policy**.
 

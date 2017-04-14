@@ -62,7 +62,7 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 
 -   Are the users familiar with technology and IT in general?
 
-### What is your device security policy? 
+### What is your device security policy?
 
 -   Do you need device-level encryption?
 
@@ -88,7 +88,7 @@ Before diving into the details of setting up Intune, let’s review the mobile d
 
 ## Additional information
 
--   For more detailed examples, review these [case studies](https://customers.microsoft.com/en-US/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) from different industry sectors to see how organizations assessed their requirements for mobile device management.
+-   For more detailed examples, review these [case studies](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) from different industry sectors to see how organizations assessed their requirements for mobile device management.
 
 ## Next steps
 

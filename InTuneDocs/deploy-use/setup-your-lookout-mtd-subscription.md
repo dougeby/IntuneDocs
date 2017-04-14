@@ -59,12 +59,12 @@ Use the following steps to gather the information you need to give to the Lookou
 
 1. Sign in to the [Azure AD management portal](https://manage.windowsazure.com) and select your subscription. 
   ![screenshot of the Azure AD page showing the name of the tenant](../media/mtp/aad_tenant_name.png)
-2. When you choose the name of your subscription, the resulting URL includes the subscription ID.  If you have any issues finding your subscription ID, see this [Microsoft support article](https://support.office.com/en-us/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b?ui=en-US&rs=en-US&ad=US) for tips on finding your subscription ID. 
+2. When you choose the name of your subscription, the resulting URL includes the subscription ID.  If you have any issues finding your subscription ID, see this [Microsoft support article](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) for tips on finding your subscription ID. 
 3. Find your Azure AD Group ID. The Lookout console supports 2 levels of access:  
   * **Full Access:** The Azure AD admin can create a group for users that will have Full Access and optionally create a group for users that will have Restricted Access.  Only users in these groups will be able to login to the **Lookout console**.
   * **Restricted Access:** The users in this group will have no access to several configuration and enrollment related modules of the Lookout console, and have read-only access to the **Security Policy** module of the Lookout console.  
 
-  For more details on the permissions, read [this article](https://personal.support.lookout.com/hc/en-us/articles/114094105653) on the Lookout website.
+  For more details on the permissions, read [this article](https://personal.support.lookout.com/hc/articles/114094105653) on the Lookout website.
 
   The **Group Object ID** is on the **Properties** page of the group in the **Azure AD management console**.
 
@@ -133,7 +133,7 @@ If you want to receive email alerts for threats, sign in to the [Lookout console
 If you no longer want to receive email notifications, set the notifications to **OFF** and save your changes.
 
 ### Configure threat classification
-Lookout Mobile Threat Defense classifies mobile threats of various types. The [Lookout threat classifications](http://personal.support.lookout.com/hc/en-us/articles/114094130693) have default risk levels associated with them. These can be changed at any time to suit your company requirements.
+Lookout Mobile Threat Defense classifies mobile threats of various types. The [Lookout threat classifications](http://personal.support.lookout.com/hc/articles/114094130693) have default risk levels associated with them. These can be changed at any time to suit your company requirements.
 
 ![screenshot of the policy page showing threat and classifications](../media/mtp/lookout-mtp-threat-classification.png)
 
@@ -143,4 +143,4 @@ Lookout Mobile Threat Defense classifies mobile threats of various types. The [L
 ## Watching enrollment
 Once the setup is complete, Lookout Mobile Threat Defense starts to poll Azure AD for devices that correspond to the specified enrollment groups.  You can find information about the devices enrolled on the Devices module.  The initial status for devices is shown as pending.  The device status changes once the Lookout for Work app is installed, opened, and activated on the device.  For details on how to get the Lookout for Work app pushed to the device, see the [Configure and deploy Lookout for work apps](configure-and-deploy-lookout-for-work-apps.md) topic.
 ## Next steps
-[Enable Lookout MTP connection Intune](enable-lookout-mtp-connection-in-intune.md)
+[Enable Lookout MTP connection Intune](https://docs.microsoft.com/intune/deploy-use/enable-lookout-mtd-connection)
