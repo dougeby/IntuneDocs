@@ -525,7 +525,7 @@
 	{
 		"source_path": "InTuneDocs/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md",
 		"redirect_url": "https://docs.microsoft.com/intune/understand-explore/sign-up-for-30-day-trial-microsoft-intune",
-		"redirect_document_id": true
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "InTuneDocs/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md",
