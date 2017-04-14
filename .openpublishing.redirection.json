@@ -470,7 +470,7 @@
 	{
 		"source_path": "InTuneDocs/get-started/choose-how-to-enroll-devices.md",
 		"redirect_url": "https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices1",
-		"redirect_document_id": true
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "InTuneDocs/get-started/decide-how-to-enroll-devices.md",
@@ -500,7 +500,7 @@
 	{
 		"source_path": "InTuneDocs/get-started/supported-mobile-devices-and-computers.md",
 		"redirect_url": "https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices",
-		"redirect_document_id": true
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "InTuneDocs/get-started/supported-web-browsers.md",
@@ -530,12 +530,12 @@
 	{
 		"source_path": "InTuneDocs/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md",
 		"redirect_url": "https://docs.microsoft.com/intune/understand-explore/sign-up-for-30-day-trial-microsoft-intune",
-		"redirect_document_id": true
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "InTuneDocs/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md",
 		"redirect_url": "https://docs.microsoft.com/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune",
-		"redirect_document_id": true
+		"redirect_document_id": false
 	},
 	{
 		"source_path": "InTuneDocs/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune.md",
