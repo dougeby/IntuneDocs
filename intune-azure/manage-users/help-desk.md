@@ -37,7 +37,7 @@ Help desk users are Intune users with permission to view the Troubleshoot worksp
 
 1. As an Intune administrator, login to the [Azure portal](https:portal.azure.com), select **More Services** > **Monitoring + Management** > **Intune**.
 2. In the left navigation blade, select **Troubleshoot**.
-![Screenshot of the Windows Configuration Designer app Store screenshots and description](media/help-desk-user.png)
+![Screenshot of the Intune Troubleshoot workspace with Select User link](media/help-desk-user.png)
 3. Click **Select user** and then select one or more users to give help desk permissions.
 4. Click **Select**. Selected users now have help desk permissions in Intune.
 
