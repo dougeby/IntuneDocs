@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-As an IT administrator, you can give users permission to view a help desk troubleshooting console that can help resolve issues for end users. The following topic explains how to enable help desk users to view the Troubleshooting blade in Intune and provides and overview of the blade.
+As an IT administrator, you can give users permission to view a help desk troubleshooting console that can help resolve issues for end users. The following topic explains how to enable help desk users to view the Troubleshooting blade in Intune and provides an overview of the blade.
 
 Help desk users can view the Troubleshoot workspace in the Intune console but cannot perform other administrative tasks or view other workspaces.
 
