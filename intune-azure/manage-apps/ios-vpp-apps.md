@@ -37,6 +37,7 @@ Microsoft Intune helps you manage apps that you purchased through this program b
 
 Additionally, you can synchronize, manage, and assign books you purchased from the Apple volume-purchase program store with Intune, and assign these to users. Use the **Books** workload in the Intune portal to manage books. The procedures to manage books are the same as you use for managing apps.
 You must have uploaded an Apple Volume Purchase Program token in order to do this. Currently, you can only assign books as a **Required** install.
+When you assign a book to a device, that device must have the built-in iBooks app installed. If it is not, the end user must re-install the app in order to read the book. You cannot currently use Intune to restore removed built-in apps.
 
 
 ## Manage volume-purchased apps for iOS devices

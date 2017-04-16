@@ -31,8 +31,6 @@ ms.custom: intune-azure
 
 Before you can manage and assign apps for your users, you must add them to Intune. Intune supports a wide range of different app types, and the options might be different for each type.
 
-
-
 Intune lets you add and assign these app types:
 
 ![App types supported by Intune](./media/app-types.png)
@@ -49,8 +47,12 @@ The following platforms are supported. Click one of the topics for more informat
 
 Additionally, some Microsoft apps are added automatically by Intune when you set up your tenant. You'll find a list of these later in this topic.
 
-> [!NOTE]
-> When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
+## Before you start
+
+Consider the following points before you begin to add and assign apps.
+
+- When you add and deploy an app from a store, end users must have an account with that store in order to be able to install the app.
+- Some apps or items you deploy might be dependent on built-in iOS apps. For example, if you deploy a book from the iOS store, then the iBooks app must be present on the device. If you have removed the iBooks built-in app, you cannot use Intune to reinstate it.
 
 ## Cloud storage space
 All apps that you create by using the software installer installation type (for example, a line-of-business app) are  packaged and uploaded to Microsoft Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. Your full subscription includes 20 GB of storage space.
