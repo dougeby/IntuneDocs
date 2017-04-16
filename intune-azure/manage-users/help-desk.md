@@ -18,7 +18,7 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: damionw
+ms.reviewer: sumitp
 #ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
@@ -49,10 +49,11 @@ Help desk users can access the Troubleshoot workspace in two ways:
 
 ## Use the troubleshoot console
 
-Help desk users can use the Troubleshoot console to view Intune users and their devices. The details available include the following:
+The helpdesk user can select a user to troubleshoot by clicking **Select User**. User information can be used to help understand the current state of users and their devices.
+
+Help desk users can use the Troubleshoot console to view the following Intune users and devices details:
 - User account information
 - User group membership
 - Device details
-- Failed device enrollments
 
 Help desk users can also perform remote tasks on devices such as **Remote lock**.
