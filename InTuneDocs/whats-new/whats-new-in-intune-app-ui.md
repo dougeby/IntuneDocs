@@ -14,7 +14,6 @@ ms.service: microsoft-intune
 ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 
-
 # optional metadata
 
 #ROBOTS:
