@@ -7,7 +7,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,8 +31,6 @@ Learn what updates we've made to the UI for apps that your end users will see in
 
 > [!Note]
 > Please note that the images below are previews, and the announced product may differ from the presented versions.
-
-## What's coming in Intune App UI
 
 ### April 2017
 
@@ -78,8 +76,6 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
    </table>
 </body>
 </html>
-
-## What's been announced for UI updates for end user apps
 
 ### February 2017
 
