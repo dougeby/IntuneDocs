@@ -7,7 +7,11 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
+<<<<<<< HEAD
 ms.date: 02/15/2017
+=======
+ms.date: 04/18/2017
+>>>>>>> parent of ccdab12... Revert "Merge branch 'release-intune-1704' into master"
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +36,54 @@ Learn what updates we've made to the UI for apps that your end users will see in
 > [!Note]
 > Please note that the images below are previews, and the announced product may differ from the presented versions.
 
+<<<<<<< HEAD
 ## What's coming
+=======
+### April 2017
+
+#### New icons for the Managed Browser and the Company Portal <!--918433, 918431-->
+
+The Managed Browser is receiving updated icons for both the Android and iOS versions of the app. The new icon will contain the updated Intune badge to make it more consistent with other apps in Enterprise Mobility + Security (EM+S).
+
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_manbro_before_042017.png" alt="The previous version of the Managed Browser app icon." width=200 height=366 align=center>
+          </td>
+          <td>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_manbro_after_042017.png" alt="The updated version of the Managed Browser app icon." width=200 height=366 align=center>
+           </td>
+      </tr>
+   </table>
+</body>
+</html>
+
+The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
+
+#### Sign-in progress indicator in Android Company Portal <!--953374-->
+
+An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app.
+
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
+          </td>
+          <td>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
+           </td>
+           <td>
+              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+           </td>
+      </tr>
+   </table>
+</body>
+</html>
+>>>>>>> parent of ccdab12... Revert "Merge branch 'release-intune-1704' into master"
 
 ### February 2017
 

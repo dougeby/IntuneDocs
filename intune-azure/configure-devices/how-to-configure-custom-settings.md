@@ -7,7 +7,11 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
+<<<<<<< HEAD
 ms.date: 02/15/2017
+=======
+ms.date: 04/12/2017
+>>>>>>> parent of ccdab12... Revert "Merge branch 'release-intune-1704' into master"
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,6 +62,7 @@ Use the information in this topic to learn the basics about configuring profiles
 	- [macOS settings](custom-for-macos.md)
 	- [Windows Phone 8.1 settings](custom-for-windows-phone-8-1.md)
 	- [Windows 10 settings](custom-for-windows-10.md)
+	- [Android for Work settings](custom-android-for-work.md)
 8. When you're done, go back to the **Create Profile** blade, and hit **Create**.
 
 The profile will be created and appears on the profiles list blade.
